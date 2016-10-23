@@ -103,14 +103,13 @@ namespace Jarvis
         {
             var ValidTarget_Pos = new List<String>() { "PRP", "PRP$" };
             var ValidReplace_Pos = new List<String>() { "NN", "NNS", "NNP", "NNPS" };
-            var directory = @"D:\Tesis2016\Jarvis\Lincoln\03DocumentExpansion\Input";
+            var directory = @"D:\Tesis2016\Jarvis\Lincoln\02DocumentExpansion\Input";
             foreach (var item in Directory.GetFiles(directory, "*.xml"))
             {
                 var sb_document = new StringBuilder(); 
                 var document = XElement.Load(item);
                 var sentences = GetSentences(document);
-                var references =  GetCoReferences(document, sentences);
-                
+                var references =  GetCoReferences(document, sentences);               
                             
                 foreach (var sentence in sentences)
                 {
@@ -126,11 +125,7 @@ namespace Jarvis
                     
                     //valid_pos.Contains( c.Head.POS)
                     foreach (var core in senreference)
-                    {                        
-
-
-
-
+                    {   
                         var start_token = sentence.Tokens.Where(c => c.SentenceLoc == core.Start).First();
                         var end_token = sentence.Tokens.Where(c => c.SentenceLoc == core.End - 1).First();
                         var cursor = sentence.Tokens.Find(start_token).Next;
@@ -163,7 +158,7 @@ namespace Jarvis
                     }
                     sb_document.AppendLine(sb_sentence.ToString());
                 }
-                File.WriteAllText(Path.GetFileName(item), sb_document.ToString());
+                File.WriteAllText(@"D:\Tesis2016\Jarvis\Lincoln\02DocumentExpansion\Output\document_expansion.txt", sb_document.ToString());
             }            
         }
     }
