@@ -40,7 +40,7 @@ public class JarvisNLP{
         // -annotators tokenize,ssplit,pos,lemma,ner,parse,mention,coref -file example_file.txt
         //props.setProperty("annotators", "tokenize,ssplit,pos,lemma,ner,parse,relation,sentiment,mention,dcoref");
         Properties props = new Properties();
-        props.setProperty("annotators", "tokenize,ssplit,pos,lemma,ner,parse,relation,mention,coref");
+        props.setProperty("annotators", "tokenize,ssplit,pos,lemma,ner,parse,relation,sentiment,mention,coref");
         StanfordCoreNLP pipeline = new StanfordCoreNLP(props);
         pipeline.annotate(document);
         FileOutputStream os = new FileOutputStream(new File("nlp.xml"));

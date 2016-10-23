@@ -9,7 +9,7 @@ import java.util.List;
 public class Program {
     public static void main(String[] Args) throws IOException {
 
-        String InputPath =  "D:/Tesis2016/Jarvis/Lincoln/00Input/input.txt";
+        String InputPath =  "D:/Tesis2016/Jarvis/Lincoln/00Input/inputlincon.txt";
 
         JarvisReader reader =  new JarvisReader();
         JarvisNLP nlp = new JarvisNLP();
