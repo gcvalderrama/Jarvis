@@ -22,20 +22,22 @@ namespace Jarvis
             var query = from c in root.Elements("tokens").Elements("token")
                         select c;
             int index = 1;
-            StringBuilder sb = new StringBuilder(); 
+            StringBuilder sb = new StringBuilder();
+            List<string> result = new List<string>();
             foreach (var token in query)
             {
                 var eduid = int.Parse(token.Attribute("eduidx").Value);
                 if (index != eduid)
                 {
-                    File.WriteAllText(Path.Combine(PathRoot, string.Format("{0}_edu.txt", index)), sb.ToString());
+                    result.Add(sb.ToString()); 
                     sb = new StringBuilder();
                     index++;
                 }
                 sb.Append(token.Attribute("word").Value + " ");
             }
-            File.WriteAllText(Path.Combine(PathRoot, string.Format("{0}_edu.txt", index )), sb.ToString());
-            sb = new StringBuilder();
+            result.Add(sb.ToString()); 
+
+            File.WriteAllLines(Path.Combine(PathRoot, string.Format("edus.txt", index )), result.ToArray());            
         }
 
         static void Main(string[] args)
