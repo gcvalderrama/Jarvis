@@ -9,7 +9,7 @@ namespace Jarvis
 {
     class Program
     {
-        private static string PathRoot = @"D:\Tesis2016\Jarvis\Lincoln\03RST\Output";
+        private static string PathRoot = @"D:\Tesis2016\Jarvis\duc\03RST\Output";
         public static void generateEDUS(XElement root)
         {
 
@@ -42,7 +42,7 @@ namespace Jarvis
 
         static void Main(string[] args)
         {
-            var root = XElement.Load(@"D:\Tesis2016\Jarvis\Lincoln\03RST\Output\rst.xml");
+            var root = XElement.Load(Path.Combine(PathRoot, "rst.xml"));
             generateEDUS(root);
         }
     }
