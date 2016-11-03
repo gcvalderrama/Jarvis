@@ -15,11 +15,13 @@ namespace JarvisRDFToNEO4J
         }
         public Uri Relation { get; set; }
         public bool Direction = true;
+        
+        
         public string RelationName
         {
             get
             {
-                //http://amr.isi.edu/rdf/amr-terms#location
+                
                 string result = null;
                 if (!string.IsNullOrWhiteSpace(this.Relation.Fragment))
                 {
@@ -31,7 +33,7 @@ namespace JarvisRDFToNEO4J
                 }
 
                 if (!Direction)
-                    result = "of-" + result;
+                    result = "OF-" + result;
                 return result; 
 
             }
