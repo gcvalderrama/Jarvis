@@ -1,0 +1,3949 @@
+@prefix GO: <http://amigo.geneontology.org/amigo/term/GO:> .
+@prefix PUBCHEM: <https://pubchem.ncbi.nlm.nih.gov/compound/> .
+@prefix UNIPROT: <http://www.uniprot.org/uniprot/> .
+@prefix amr-core: <http://amr.isi.edu/rdf/core-amr#> .
+@prefix amr-data: <http://amr.isi.edu/amr_data#> .
+@prefix amr-terms: <http://amr.isi.edu/rdf/amr-terms#> .
+@prefix entity-types: <http://amr.isi.edu/entity-types#> .
+@prefix propbank: <http://amr.isi.edu/frames/ld/v1.2.2/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+amr-core:Concept a rdfs:Class ;
+    rdfs:label "AMR-Concept" .
+
+amr-core:Role a rdfs:Class ;
+    rdfs:label "AMR-Role" .
+
+<http://amr.isi.edu/amr_data/1#root01> a amr-core:AMR ;
+    amr-core:has-id "1" ;
+    amr-core:has-sentence "With one out of every two new mothers" ;
+    amr-core:root <http://amr.isi.edu/amr_data/1#x8> .
+
+<http://amr.isi.edu/amr_data/10#root01> a amr-core:AMR ;
+    amr-core:has-id "10" ;
+    amr-core:has-sentence "while other women remain childless" ;
+    amr-core:root <http://amr.isi.edu/amr_data/10#x4> .
+
+<http://amr.isi.edu/amr_data/100#root01> a amr-core:AMR ;
+    amr-core:has-id "100" ;
+    amr-core:has-sentence "that of American nursery schools and day-care centers ." ;
+    amr-core:root <http://amr.isi.edu/amr_data/100#x6> .
+
+<http://amr.isi.edu/amr_data/101#root01> a amr-core:AMR ;
+    amr-core:has-id "101" ;
+    amr-core:has-sentence "Higher wages for child-care workers can be achieved in only three ways ." ;
+    amr-core:root <http://amr.isi.edu/amr_data/101#x6> .
+
+<http://amr.isi.edu/amr_data/101#w> a propbank:work-01 ;
+    propbank:work-01.ARG0 <http://amr.isi.edu/amr_data/101#x5> .
+
+<http://amr.isi.edu/amr_data/102#root01> a amr-core:AMR ;
+    amr-core:has-id "102" ;
+    amr-core:has-sentence "A reduction in overhead expenses would free funds for workers ' pay ," ;
+    amr-core:root <http://amr.isi.edu/amr_data/102#x7> .
+
+<http://amr.isi.edu/amr_data/102#w> a propbank:work-01 ;
+    propbank:work-01.ARG0 <http://amr.isi.edu/amr_data/102#x10> .
+
+<http://amr.isi.edu/amr_data/103#root01> a amr-core:AMR ;
+    amr-core:has-id "103" ;
+    amr-core:has-sentence "but many of these expenses are determined" ;
+    amr-core:root <http://amr.isi.edu/amr_data/103#x1> .
+
+<http://amr.isi.edu/amr_data/104#root01> a amr-core:AMR ;
+    amr-core:has-id "104" ;
+    amr-core:has-sentence "by laws and regulations" ;
+    amr-core:root <http://amr.isi.edu/amr_data/104#x3> .
+
+<http://amr.isi.edu/amr_data/105#root01> a amr-core:AMR ;
+    amr-core:has-id "105" ;
+    amr-core:has-sentence "and there is little chance" ;
+    amr-core:root <http://amr.isi.edu/amr_data/105#x1> .
+
+<http://amr.isi.edu/amr_data/106#root01> a amr-core:AMR ;
+    amr-core:has-id "106" ;
+    amr-core:has-sentence "that this burden will be lifted ." ;
+    amr-core:root <http://amr.isi.edu/amr_data/106#x6> .
+
+<http://amr.isi.edu/amr_data/107#root01> a amr-core:AMR ;
+    amr-core:has-id "107" ;
+    amr-core:has-sentence "A rise in revenue per child would help ," ;
+    amr-core:root <http://amr.isi.edu/amr_data/107#x8> .
+
+<http://amr.isi.edu/amr_data/108#root01> a amr-core:AMR ;
+    amr-core:has-id "108" ;
+    amr-core:has-sentence "but how high can fees go ?" ;
+    amr-core:root <http://amr.isi.edu/amr_data/108#x1> .
+
+<http://amr.isi.edu/amr_data/109#root01> a amr-core:AMR ;
+    amr-core:has-id "109" ;
+    amr-core:has-sentence "An annual charge of $ 10,000 per child would probably put child care beyond the reach of most families ." ;
+    amr-core:root <http://amr.isi.edu/amr_data/109#x10> .
+
+<http://amr.isi.edu/amr_data/11#root01> a amr-core:AMR ;
+    amr-core:has-id "11" ;
+    amr-core:has-sentence "or limit their fertility" ;
+    amr-core:root <http://amr.isi.edu/amr_data/11#x1> .
+
+<http://amr.isi.edu/amr_data/110#g> a propbank:govern-01 ;
+    propbank:govern-01.ARG0 <http://amr.isi.edu/amr_data/110#x1> .
+
+<http://amr.isi.edu/amr_data/110#root01> a amr-core:AMR ;
+    amr-core:has-id "110" ;
+    amr-core:has-sentence "Government subsidies could supplement private payments , but public aid is most appropriately used" ;
+    amr-core:root <http://amr.isi.edu/amr_data/110#x8> .
+
+<http://amr.isi.edu/amr_data/110#s> a propbank:supplement-01 ;
+    propbank:supplement-01.ARG2 <http://amr.isi.edu/amr_data/110#x4> .
+
+<http://amr.isi.edu/amr_data/110#x14> a propbank:use-01 ;
+    propbank:use-01.ARG1 <http://amr.isi.edu/amr_data/110#x10>,
+        <http://amr.isi.edu/amr_data/110#x2> ;
+    amr-terms:manner <http://amr.isi.edu/amr_data/110#x13> ;
+    amr-terms:prep-instead <http://amr.isi.edu/amr_data/110#x4> .
+
+<http://amr.isi.edu/amr_data/111#root01> a amr-core:AMR ;
+    amr-core:has-id "111" ;
+    amr-core:has-sentence "to improve services for poor children , most of whom do not currently receive even the average standard of care ." ;
+    amr-core:root <http://amr.isi.edu/amr_data/111#x14> .
+
+<http://amr.isi.edu/amr_data/112#root01> a amr-core:AMR ;
+    amr-core:has-id "112" ;
+    amr-core:has-sentence "The third possibility , an increase in the child/worker ratio , offers the most scope for change ." ;
+    amr-core:root <http://amr.isi.edu/amr_data/112#x12> .
+
+<http://amr.isi.edu/amr_data/113#root01> a amr-core:AMR ;
+    amr-core:has-id "113" ;
+    amr-core:has-sentence "Failing such a change , wages are likely" ;
+    amr-core:root <http://amr.isi.edu/amr_data/113#x8> .
+
+<http://amr.isi.edu/amr_data/114#root01> a amr-core:AMR ;
+    amr-core:has-id "114" ;
+    amr-core:has-sentence "to stay at their extremely low levels ." ;
+    amr-core:root <http://amr.isi.edu/amr_data/114#x2> .
+
+<http://amr.isi.edu/amr_data/115#root01> a amr-core:AMR ;
+    amr-core:has-id "115" ;
+    amr-core:has-sentence "What is the right way" ;
+    amr-core:root <http://amr.isi.edu/amr_data/115#x5> .
+
+<http://amr.isi.edu/amr_data/116#root01> a amr-core:AMR ;
+    amr-core:has-id "116" ;
+    amr-core:has-sentence "to go ?" ;
+    amr-core:root <http://amr.isi.edu/amr_data/116#x2> .
+
+<http://amr.isi.edu/amr_data/117#e> a propbank:expert-41 ;
+    propbank:expert-41.ARG1 <http://amr.isi.edu/amr_data/117#x10> .
+
+<http://amr.isi.edu/amr_data/117#root01> a amr-core:AMR ;
+    amr-core:has-id "117" ;
+    amr-core:has-sentence "That choice should be made by parents and child-care experts , not economists ." ;
+    amr-core:root <http://amr.isi.edu/amr_data/117#x3> .
+
+<http://amr.isi.edu/amr_data/118#root01> a amr-core:AMR ;
+    amr-core:has-id "118" ;
+    amr-core:has-sentence "Those decisions , however , can not evade or avoid the ABCs of child-care economics ." ;
+    amr-core:root <http://amr.isi.edu/amr_data/118#x9> .
+
+<http://amr.isi.edu/amr_data/119#root01> a amr-core:AMR ;
+    amr-core:has-id "119" ;
+    amr-core:has-sentence "To want simultaneously to hold down the cost of care , reduce the child/worker ratio" ;
+    amr-core:root <http://amr.isi.edu/amr_data/119#x12> .
+
+<http://amr.isi.edu/amr_data/12#root01> a amr-core:AMR ;
+    amr-core:has-id "12" ;
+    amr-core:has-sentence "for the same reason ." ;
+    amr-core:root <http://amr.isi.edu/amr_data/12#x4> .
+
+<http://amr.isi.edu/amr_data/12#x3> a propbank:same-41 ;
+    propbank:same-41.ARG1 <http://amr.isi.edu/amr_data/12#x4> .
+
+<http://amr.isi.edu/amr_data/120#root01> a amr-core:AMR ;
+    amr-core:has-id "120" ;
+    amr-core:has-sentence "and increase the pay" ;
+    amr-core:root <http://amr.isi.edu/amr_data/120#x1> .
+
+<http://amr.isi.edu/amr_data/121#root01> a amr-core:AMR ;
+    amr-core:has-id "121" ;
+    amr-core:has-sentence "and qualifications of child-care workers is to wish for a world" ;
+    amr-core:root <http://amr.isi.edu/amr_data/121#x1> .
+
+<http://amr.isi.edu/amr_data/121#w> a propbank:work-01 ;
+    propbank:work-01.ARG0 <http://amr.isi.edu/amr_data/121#x5> .
+
+<http://amr.isi.edu/amr_data/122#root01> a amr-core:AMR ;
+    amr-core:has-id "122" ;
+    amr-core:has-sentence "that never was and never will be ." ;
+    amr-core:root <http://amr.isi.edu/amr_data/122#x4> .
+
+<http://amr.isi.edu/amr_data/123#root01> a amr-core:AMR ;
+    amr-core:has-id "123" ;
+    amr-core:has-sentence "Mr. Fuchs is a professor of economics at Stanford University and a research associate with the National Bureau of Economic Research ." ;
+    amr-core:root <http://amr.isi.edu/amr_data/123#x11> .
+
+<http://amr.isi.edu/amr_data/13#root01> a amr-core:AMR ;
+    amr-core:has-id "13" ;
+    amr-core:has-sentence "On Thursday , the House of Representatives voted almost 2 to 1" ;
+    amr-core:root <http://amr.isi.edu/amr_data/13#x8> .
+
+<http://amr.isi.edu/amr_data/14#root01> a amr-core:AMR ;
+    amr-core:has-id "14" ;
+    amr-core:has-sentence "to expand federal support of day care at an estimated cost of $ 27 billion over the next five years ." ;
+    amr-core:root <http://amr.isi.edu/amr_data/14#x11> .
+
+<http://amr.isi.edu/amr_data/14#x10> a propbank:estimate-01 ;
+    propbank:estimate-01.ARG1 <http://amr.isi.edu/amr_data/14#x11> .
+
+<http://amr.isi.edu/amr_data/15#root01> a amr-core:AMR ;
+    amr-core:has-id "15" ;
+    amr-core:has-sentence "The House bill is the product of a compromise between those" ;
+    amr-core:root <http://amr.isi.edu/amr_data/15#x6> .
+
+<http://amr.isi.edu/amr_data/16#root01> a amr-core:AMR ;
+    amr-core:has-id "16" ;
+    amr-core:has-sentence "who emphasize putting more money into the hands of parents , and those" ;
+    amr-core:root <http://amr.isi.edu/amr_data/16#x2> .
+
+<http://amr.isi.edu/amr_data/16#x12> a amr-core:and ;
+    amr-terms:op1 <http://amr.isi.edu/amr_data/16#x10> ;
+    amr-terms:part <http://amr.isi.edu/amr_data/16#x8> .
+
+<http://amr.isi.edu/amr_data/17#root01> a amr-core:AMR ;
+    amr-core:has-id "17" ;
+    amr-core:has-sentence "who prefer direct subsidies to daycare providers ." ;
+    amr-core:root <http://amr.isi.edu/amr_data/17#x2> .
+
+<http://amr.isi.edu/amr_data/17#x7> a propbank:provide-01 ;
+    propbank:provide-01.ARG0 <http://amr.isi.edu/amr_data/17#xap0> ;
+    propbank:provide-01.ARG1 <http://amr.isi.edu/amr_data/17#x6> .
+
+<http://amr.isi.edu/amr_data/18#root01> a amr-core:AMR ;
+    amr-core:has-id "18" ;
+    amr-core:has-sentence "The House vote follows a new and not yet released-report of the National Academy of Sciences" ;
+    amr-core:root <http://amr.isi.edu/amr_data/18#x4> .
+
+<http://amr.isi.edu/amr_data/19#g> a propbank:govern-01 ;
+    propbank:govern-01.ARG0 <http://amr.isi.edu/amr_data/19#x4> .
+
+<http://amr.isi.edu/amr_data/19#root01> a amr-core:AMR ;
+    amr-core:has-id "19" ;
+    amr-core:has-sentence "that urges additional government support for child care and recommends a tightening of the standards regulating the number of children" ;
+    amr-core:root <http://amr.isi.edu/amr_data/19#x9> .
+
+<http://amr.isi.edu/amr_data/19#x16> a propbank:regulate-01 ;
+    propbank:regulate-01.ARG0 <http://amr.isi.edu/amr_data/19#x15> ;
+    propbank:regulate-01.ARG1 <http://amr.isi.edu/amr_data/19#x18> .
+
+<http://amr.isi.edu/amr_data/19#x20> a amr-terms:child ;
+    amr-terms:quant <http://amr.isi.edu/amr_data/19#x18> .
+
+<http://amr.isi.edu/amr_data/2#root01> a amr-core:AMR ;
+    amr-core:has-id "2" ;
+    amr-core:has-sentence "returning to paid employment" ;
+    amr-core:root <http://amr.isi.edu/amr_data/2#x1> .
+
+<http://amr.isi.edu/amr_data/2#x3> a propbank:pay-01 ;
+    propbank:pay-01.ARG1 <http://amr.isi.edu/amr_data/2#x4> .
+
+<http://amr.isi.edu/amr_data/20#root01> a amr-core:AMR ;
+    amr-core:has-id "20" ;
+    amr-core:has-sentence "served by each day-care worker ." ;
+    amr-core:root <http://amr.isi.edu/amr_data/20#x1> .
+
+<http://amr.isi.edu/amr_data/20#w> a propbank:work-01 ;
+    propbank:work-01.ARG0 <http://amr.isi.edu/amr_data/20#x5> .
+
+<http://amr.isi.edu/amr_data/21#root01> a amr-core:AMR ;
+    amr-core:has-id "21" ;
+    amr-core:has-sentence "This recommendation may be justified ," ;
+    amr-core:root <http://amr.isi.edu/amr_data/21#x3> .
+
+<http://amr.isi.edu/amr_data/22#root01> a amr-core:AMR ;
+    amr-core:has-id "22" ;
+    amr-core:has-sentence "but should be evaluated in light of the fundamentals of child care economics ." ;
+    amr-core:root <http://amr.isi.edu/amr_data/22#x1> .
+
+<http://amr.isi.edu/amr_data/22#x12> a propbank:care-01 ;
+    propbank:care-01.ARG0 <http://amr.isi.edu/amr_data/22#x13> .
+
+<http://amr.isi.edu/amr_data/23#root01> a amr-core:AMR ;
+    amr-core:has-id "23" ;
+    amr-core:has-sentence "Discussions of child care need" ;
+    amr-core:root <http://amr.isi.edu/amr_data/23#x5> .
+
+<http://amr.isi.edu/amr_data/24#root01> a amr-core:AMR ;
+    amr-core:has-id "24" ;
+    amr-core:has-sentence "to consider two contradictory issues :" ;
+    amr-core:root <http://amr.isi.edu/amr_data/24#x2> .
+
+<http://amr.isi.edu/amr_data/25#root01> a amr-core:AMR ;
+    amr-core:has-id "25" ;
+    amr-core:has-sentence "the high cost of child care and the low pay of childcare workers ," ;
+    amr-core:root <http://amr.isi.edu/amr_data/25#x7> .
+
+<http://amr.isi.edu/amr_data/25#w> a propbank:work-01 ;
+    propbank:work-01.ARG0 <http://amr.isi.edu/amr_data/25#x13> .
+
+<http://amr.isi.edu/amr_data/26#root01> a amr-core:AMR ;
+    amr-core:has-id "26" ;
+    amr-core:has-sentence "whose hourly earnings are the lowest of any major occupation ." ;
+    amr-core:root <http://amr.isi.edu/amr_data/26#x10> .
+
+<http://amr.isi.edu/amr_data/27#root01> a amr-core:AMR ;
+    amr-core:has-id "27" ;
+    amr-core:has-sentence "childcare workers ," ;
+    amr-core:root <http://amr.isi.edu/amr_data/27#x2> .
+
+<http://amr.isi.edu/amr_data/27#w> a propbank:work-01 ;
+    propbank:work-01.ARG0 <http://amr.isi.edu/amr_data/27#x2> .
+
+<http://amr.isi.edu/amr_data/28#root01> a amr-core:AMR ;
+    amr-core:has-id "28" ;
+    amr-core:has-sentence "whose hourly earnings are the lowest of any major occupation earn 30 % to 60 % less per hour than women" ;
+    amr-core:root <http://amr.isi.edu/amr_data/28#x11> .
+
+<http://amr.isi.edu/amr_data/28#xap1> a amr-terms:percentage-entity ;
+    propbank:percentage-entity.ARG0 <http://amr.isi.edu/amr_data/28#xap0> ;
+    amr-terms:value "60" .
+
+<http://amr.isi.edu/amr_data/29#root01> a amr-core:AMR ;
+    amr-core:has-id "29" ;
+    amr-core:has-sentence "who serve children as kindergarten or elementary school teachers ." ;
+    amr-core:root <http://amr.isi.edu/amr_data/29#x2> .
+
+<http://amr.isi.edu/amr_data/29#t> a propbank:teach-01 ;
+    propbank:teach-01.ARG0 <http://amr.isi.edu/amr_data/29#x9> .
+
+<http://amr.isi.edu/amr_data/3#root01> a amr-core:AMR ;
+    amr-core:has-id "3" ;
+    amr-core:has-sentence "before her baby 's first birthday , the call for high quality affordable child care is being heard" ;
+    amr-core:root <http://amr.isi.edu/amr_data/3#x1> .
+
+<http://amr.isi.edu/amr_data/3#x18> a propbank:hear-01 ;
+    propbank:hear-01.ARG1 <http://amr.isi.edu/amr_data/3#x15>,
+        <http://amr.isi.edu/amr_data/3#x9> .
+
+<http://amr.isi.edu/amr_data/30#root01> a amr-core:AMR ;
+    amr-core:has-id "30" ;
+    amr-core:has-sentence "Even more startling ," ;
+    amr-core:root <http://amr.isi.edu/amr_data/30#x3> .
+
+<http://amr.isi.edu/amr_data/31#root01> a amr-core:AMR ;
+    amr-core:has-id "31" ;
+    amr-core:has-sentence "when child-care workers are compared with other women workers at the same levels of education , the differential in hourly earnings is more than 40 % ." ;
+    amr-core:root <http://amr.isi.edu/amr_data/31#x18> .
+
+<http://amr.isi.edu/amr_data/31#w> a propbank:work-01 ;
+    propbank:work-01.ARG0 <http://amr.isi.edu/amr_data/31#x3> .
+
+<http://amr.isi.edu/amr_data/31#w1> a propbank:work-01 ;
+    propbank:work-01.ARG0 <http://amr.isi.edu/amr_data/31#x9> .
+
+<http://amr.isi.edu/amr_data/31#x12> a propbank:same-41 ;
+    propbank:same-41.ARG1 <http://amr.isi.edu/amr_data/31#x13> .
+
+<http://amr.isi.edu/amr_data/31#x5> a propbank:compare-01 ;
+    propbank:compare-01.ARG1 <http://amr.isi.edu/amr_data/31#x3> ;
+    propbank:compare-01.ARG2 <http://amr.isi.edu/amr_data/31#x9> .
+
+<http://amr.isi.edu/amr_data/32#root01> a amr-core:AMR ;
+    amr-core:has-id "32" ;
+    amr-core:has-sentence "Why do child-care workers earn so little ?" ;
+    amr-core:root <http://amr.isi.edu/amr_data/32#x5> .
+
+<http://amr.isi.edu/amr_data/32#w> a propbank:work-01 ;
+    propbank:work-01.ARG0 <http://amr.isi.edu/amr_data/32#x4> .
+
+<http://amr.isi.edu/amr_data/33#root01> a amr-core:AMR ;
+    amr-core:has-id "33" ;
+    amr-core:has-sentence "Their wages , like everyone else 's , are determined by the interplay of many" ;
+    amr-core:root <http://amr.isi.edu/amr_data/33#x10> .
+
+<http://amr.isi.edu/amr_data/34#root01> a amr-core:AMR ;
+    amr-core:has-id "34" ;
+    amr-core:has-sentence "factors" ;
+    amr-core:root <http://amr.isi.edu/amr_data/34#x1> .
+
+<http://amr.isi.edu/amr_data/35#root01> a amr-core:AMR ;
+    amr-core:has-id "35" ;
+    amr-core:has-sentence "which can be analyzed under the familiar categories of demand and supply ." ;
+    amr-core:root <http://amr.isi.edu/amr_data/35#x2> .
+
+<http://amr.isi.edu/amr_data/35#x7> a propbank:familiarize-01 ;
+    propbank:familiarize-01.ARG1 <http://amr.isi.edu/amr_data/35#x8> .
+
+<http://amr.isi.edu/amr_data/36#root01> a amr-core:AMR ;
+    amr-core:has-id "36" ;
+    amr-core:has-sentence "How much are those" ;
+    amr-core:root <http://amr.isi.edu/amr_data/36#x4> .
+
+<http://amr.isi.edu/amr_data/37#root01> a amr-core:AMR ;
+    amr-core:has-id "37" ;
+    amr-core:has-sentence "who buy the services of child-care workers willing and able to pay ?" ;
+    amr-core:root <http://amr.isi.edu/amr_data/37#x2> .
+
+<http://amr.isi.edu/amr_data/37#w> a propbank:work-01 ;
+    propbank:work-01.ARG0 <http://amr.isi.edu/amr_data/37#x7> .
+
+<http://amr.isi.edu/amr_data/38#root01> a amr-core:AMR ;
+    amr-core:has-id "38" ;
+    amr-core:has-sentence "What considerations lead workers to accept the low wages of child care rather than seek higher paying jobs ?" ;
+    amr-core:root <http://amr.isi.edu/amr_data/38#x3> .
+
+<http://amr.isi.edu/amr_data/38#w> a propbank:work-01 ;
+    propbank:work-01.ARG0 <http://amr.isi.edu/amr_data/38#x4> .
+
+<http://amr.isi.edu/amr_data/38#x17> a propbank:pay-01 ;
+    propbank:pay-01.ARG1 <http://amr.isi.edu/amr_data/38#x18> .
+
+<http://amr.isi.edu/amr_data/39#root01> a amr-core:AMR ;
+    amr-core:has-id "39" ;
+    amr-core:has-sentence "The wages" ;
+    amr-core:root <http://amr.isi.edu/amr_data/39#x2> .
+
+<http://amr.isi.edu/amr_data/4#root01> a amr-core:AMR ;
+    amr-core:has-id "4" ;
+    amr-core:has-sentence "with increasing frequency and urgency ." ;
+    amr-core:root <http://amr.isi.edu/amr_data/4#x4> .
+
+<http://amr.isi.edu/amr_data/4#x2> a propbank:increase-01 ;
+    propbank:increase-01.ARG1 <http://amr.isi.edu/amr_data/4#x3> .
+
+<http://amr.isi.edu/amr_data/40#root01> a amr-core:AMR ;
+    amr-core:has-id "40" ;
+    amr-core:has-sentence "that a child-care center can offer its workers depend entirely on three factors :" ;
+    amr-core:root <http://amr.isi.edu/amr_data/40#x9> .
+
+<http://amr.isi.edu/amr_data/40#w> a propbank:work-01 ;
+    propbank:work-01.ARG0 <http://amr.isi.edu/amr_data/40#x8> .
+
+<http://amr.isi.edu/amr_data/41#root01> a amr-core:AMR ;
+    amr-core:has-id "41" ;
+    amr-core:has-sentence "the gross revenue per child , the number of children" ;
+    amr-core:root <http://amr.isi.edu/amr_data/41#x3> .
+
+<http://amr.isi.edu/amr_data/41#x10> a amr-terms:child ;
+    amr-terms:quant <http://amr.isi.edu/amr_data/41#x8> .
+
+<http://amr.isi.edu/amr_data/42#e> a propbank:expend-01 ;
+    propbank:expend-01.ARG0 <http://amr.isi.edu/amr_data/42#x8> .
+
+<http://amr.isi.edu/amr_data/42#root01> a amr-core:AMR ;
+    amr-core:has-id "42" ;
+    amr-core:has-sentence "served by each worker and the overhead expenses ." ;
+    amr-core:root <http://amr.isi.edu/amr_data/42#x1> .
+
+<http://amr.isi.edu/amr_data/42#w> a propbank:work-01 ;
+    propbank:work-01.ARG0 <http://amr.isi.edu/amr_data/42#x4> .
+
+<http://amr.isi.edu/amr_data/43#root01> a amr-core:AMR ;
+    amr-core:has-id "43" ;
+    amr-core:has-sentence "The latter include the costs of management , rent , equipment and supplies , insurance , payroll taxes and interest or return on investment ." ;
+    amr-core:root <http://amr.isi.edu/amr_data/43#x3> .
+
+<http://amr.isi.edu/amr_data/44#root01> a amr-core:AMR ;
+    amr-core:has-id "44" ;
+    amr-core:has-sentence "In well" ;
+    amr-core:root <http://amr.isi.edu/amr_data/44#x2> .
+
+<http://amr.isi.edu/amr_data/45#root01> a amr-core:AMR ;
+    amr-core:has-id "45" ;
+    amr-core:has-sentence "run centers" ;
+    amr-core:root <http://amr.isi.edu/amr_data/45#x2> .
+
+<http://amr.isi.edu/amr_data/46#root01> a amr-core:AMR ;
+    amr-core:has-id "46" ;
+    amr-core:has-sentence "that meet health and safety standards , only about half of gross revenue is available for the wages of the child-care workers ." ;
+    amr-core:root <http://amr.isi.edu/amr_data/46#x2> .
+
+<http://amr.isi.edu/amr_data/46#w> a propbank:work-01 ;
+    propbank:work-01.ARG0 <http://amr.isi.edu/amr_data/46#x22> .
+
+<http://amr.isi.edu/amr_data/47#root01> a amr-core:AMR ;
+    amr-core:has-id "47" ;
+    amr-core:has-sentence "For example , if the revenue per child is $ 5,000 per year , the child/worker ratio is five and the overhead is 50 % , the annual wage for a full-time , year-round worker will be $ 12,500 ." ;
+    amr-core:root <http://amr.isi.edu/amr_data/47#x38> .
+
+<http://amr.isi.edu/amr_data/47#w> a propbank:work-01 ;
+    propbank:work-01.ARG0 <http://amr.isi.edu/amr_data/47#x35> .
+
+<http://amr.isi.edu/amr_data/47#xap1> a amr-terms:percentage-entity ;
+    propbank:percentage-entity.ARG1 <http://amr.isi.edu/amr_data/47#x22> ;
+    propbank:percentage-entity.ARG2 <http://amr.isi.edu/amr_data/47#x17> ;
+    amr-terms:value "50" .
+
+<http://amr.isi.edu/amr_data/48#n> a propbank:nurse-01 ;
+    propbank:nurse-01.ARG0 <http://amr.isi.edu/amr_data/48#x10> .
+
+<http://amr.isi.edu/amr_data/48#root01> a amr-core:AMR ;
+    amr-core:has-id "48" ;
+    amr-core:has-sentence "This is less than half the average wage of nurses or teachers ." ;
+    amr-core:root <http://amr.isi.edu/amr_data/48#x7> .
+
+<http://amr.isi.edu/amr_data/48#t> a propbank:teach-01 ;
+    propbank:teach-01.ARG0 <http://amr.isi.edu/amr_data/48#x12> .
+
+<http://amr.isi.edu/amr_data/49#root01> a amr-core:AMR ;
+    amr-core:has-id "49" ;
+    amr-core:has-sentence "Who are the child-care workers" ;
+    amr-core:root <http://amr.isi.edu/amr_data/49#x5> .
+
+<http://amr.isi.edu/amr_data/49#w> a propbank:work-01 ;
+    propbank:work-01.ARG0 <http://amr.isi.edu/amr_data/49#x5> .
+
+<http://amr.isi.edu/amr_data/49#x4> a amr-terms:child-care ;
+    propbank:child-care.ARG0 <http://amr.isi.edu/amr_data/49#x5> .
+
+<http://amr.isi.edu/amr_data/5#root01> a amr-core:AMR ;
+    amr-core:has-id "5" ;
+    amr-core:has-sentence "Many employed parents complain" ;
+    amr-core:root <http://amr.isi.edu/amr_data/5#x4> .
+
+<http://amr.isi.edu/amr_data/5#x2> a propbank:employ-02 ;
+    propbank:employ-02.ARG1 <http://amr.isi.edu/amr_data/5#x3> .
+
+<http://amr.isi.edu/amr_data/50#root01> a amr-core:AMR ;
+    amr-core:has-id "50" ;
+    amr-core:has-sentence "and why do the child-care workers accept such low wages ?" ;
+    amr-core:root <http://amr.isi.edu/amr_data/50#x1> .
+
+<http://amr.isi.edu/amr_data/50#w> a propbank:work-01 ;
+    propbank:work-01.ARG0 <http://amr.isi.edu/amr_data/50#x6> .
+
+<http://amr.isi.edu/amr_data/50#x5> a amr-terms:child-care ;
+    propbank:child-care.ARG0 <http://amr.isi.edu/amr_data/50#x6> .
+
+<http://amr.isi.edu/amr_data/51#root01> a amr-core:AMR ;
+    amr-core:has-id "51" ;
+    amr-core:has-sentence "Current research by Mary Lydon and me throws light on both these questions ." ;
+    amr-core:root <http://amr.isi.edu/amr_data/51#x8> .
+
+<http://amr.isi.edu/amr_data/52#root01> a amr-core:AMR ;
+    amr-core:has-id "52" ;
+    amr-core:has-sentence "When compared with women workers in general , or specifically with women" ;
+    amr-core:root <http://amr.isi.edu/amr_data/52#x2> .
+
+<http://amr.isi.edu/amr_data/52#w> a propbank:work-01 ;
+    propbank:work-01.ARG0 <http://amr.isi.edu/amr_data/52#x5> .
+
+<http://amr.isi.edu/amr_data/53#root01> a amr-core:AMR ;
+    amr-core:has-id "53" ;
+    amr-core:has-sentence "who are elementary school teachers , we find" ;
+    amr-core:root <http://amr.isi.edu/amr_data/53#x8> .
+
+<http://amr.isi.edu/amr_data/53#t> a propbank:teach-01 ;
+    propbank:teach-01.ARG0 <http://amr.isi.edu/amr_data/53#x5> .
+
+<http://amr.isi.edu/amr_data/54#root01> a amr-core:AMR ;
+    amr-core:has-id "54" ;
+    amr-core:has-sentence "that child-care workers are more" ;
+    amr-core:root <http://amr.isi.edu/amr_data/54#x5> .
+
+<http://amr.isi.edu/amr_data/54#w> a propbank:work-01 ;
+    propbank:work-01.ARG0 <http://amr.isi.edu/amr_data/54#x3> .
+
+<http://amr.isi.edu/amr_data/55#root01> a amr-core:AMR ;
+    amr-core:has-id "55" ;
+    amr-core:has-sentence "likely to be married , more likely to have children" ;
+    amr-core:root <http://amr.isi.edu/amr_data/55#x1> .
+
+<http://amr.isi.edu/amr_data/56#root01> a amr-core:AMR ;
+    amr-core:has-id "56" ;
+    amr-core:has-sentence "and much more likely to have three or more children ." ;
+    amr-core:root <http://amr.isi.edu/amr_data/56#x1> .
+
+<http://amr.isi.edu/amr_data/57#root01> a amr-core:AMR ;
+    amr-core:has-id "57" ;
+    amr-core:has-sentence "Probably" ;
+    amr-core:root <http://amr.isi.edu/amr_data/57#x1> .
+
+<http://amr.isi.edu/amr_data/58#r> a propbank:responsible-41 ;
+    propbank:responsible-41.ARG2 <http://amr.isi.edu/amr_data/58#x6> .
+
+<http://amr.isi.edu/amr_data/58#root01> a amr-core:AMR ;
+    amr-core:has-id "58" ;
+    amr-core:has-sentence "because of their greater family responsibilities , child-care workers stay close to home ." ;
+    amr-core:root <http://amr.isi.edu/amr_data/58#x10> .
+
+<http://amr.isi.edu/amr_data/58#w> a propbank:work-01 ;
+    propbank:work-01.ARG0 <http://amr.isi.edu/amr_data/58#x9> .
+
+<http://amr.isi.edu/amr_data/58#x1> a propbank:cause-01 ;
+    propbank:cause-01.ARG0 <http://amr.isi.edu/amr_data/58#x6> ;
+    propbank:cause-01.ARG1 <http://amr.isi.edu/amr_data/58#x10> .
+
+<http://amr.isi.edu/amr_data/59#root01> a amr-core:AMR ;
+    amr-core:has-id "59" ;
+    amr-core:has-sentence "Their average commute time is much less than that of teachers or other women workers ." ;
+    amr-core:root <http://amr.isi.edu/amr_data/59#x> .
+
+<http://amr.isi.edu/amr_data/59#t> a propbank:teach-01 ;
+    propbank:teach-01.ARG0 <http://amr.isi.edu/amr_data/59#x11> .
+
+<http://amr.isi.edu/amr_data/59#w> a propbank:work-01 ;
+    propbank:work-01.ARG0 <http://amr.isi.edu/amr_data/59#x15> .
+
+<http://amr.isi.edu/amr_data/6#root01> a amr-core:AMR ;
+    amr-core:has-id "6" ;
+    amr-core:has-sentence "that licensed child care is too expensive" ;
+    amr-core:root <http://amr.isi.edu/amr_data/6#x7> .
+
+<http://amr.isi.edu/amr_data/60#root01> a amr-core:AMR ;
+    amr-core:has-id "60" ;
+    amr-core:has-sentence "child-care workers also seem" ;
+    amr-core:root <http://amr.isi.edu/amr_data/60#x4> .
+
+<http://amr.isi.edu/amr_data/60#w> a propbank:work-01 ;
+    propbank:work-01.ARG0 <http://amr.isi.edu/amr_data/60#x2> .
+
+<http://amr.isi.edu/amr_data/61#root01> a amr-core:AMR ;
+    amr-core:has-id "61" ;
+    amr-core:has-sentence "to prefer part-time work ." ;
+    amr-core:root <http://amr.isi.edu/amr_data/61#x2> .
+
+<http://amr.isi.edu/amr_data/62#root01> a amr-core:AMR ;
+    amr-core:has-id "62" ;
+    amr-core:has-sentence "Many of child-care workers do paid work for fewer than 20 hours per week , and most of the others work less than full time ." ;
+    amr-core:root <http://amr.isi.edu/amr_data/62#x16> .
+
+<http://amr.isi.edu/amr_data/62#w> a propbank:work-01 ;
+    propbank:work-01.ARG0 <http://amr.isi.edu/amr_data/62#x4> .
+
+<http://amr.isi.edu/amr_data/62#x2> a propbank:include-91 ;
+    propbank:include-91.ARG1 <http://amr.isi.edu/amr_data/62#x4> .
+
+<http://amr.isi.edu/amr_data/62#x6> a propbank:pay-01 ;
+    propbank:pay-01.ARG1 <http://amr.isi.edu/amr_data/62#x7> .
+
+<http://amr.isi.edu/amr_data/63#root01> a amr-core:AMR ;
+    amr-core:has-id "63" ;
+    amr-core:has-sentence "Generally , occupations" ;
+    amr-core:root <http://amr.isi.edu/amr_data/63#x3> .
+
+<http://amr.isi.edu/amr_data/64#root01> a amr-core:AMR ;
+    amr-core:has-id "64" ;
+    amr-core:has-sentence "that are located in residential areas and afford significant part-time opportunities pay lower wages ." ;
+    amr-core:root <http://amr.isi.edu/amr_data/64#x7> .
+
+<http://amr.isi.edu/amr_data/65#root01> a amr-core:AMR ;
+    amr-core:has-id "65" ;
+    amr-core:has-sentence "Although their average age is the same as other women workers , child-care workers are less" ;
+    amr-core:root <http://amr.isi.edu/amr_data/65#x16> .
+
+<http://amr.isi.edu/amr_data/65#w> a propbank:work-01 ;
+    propbank:work-01.ARG0 <http://amr.isi.edu/amr_data/65#x14> .
+
+<http://amr.isi.edu/amr_data/65#w1> a propbank:work-01 ;
+    propbank:work-01.ARG0 <http://amr.isi.edu/amr_data/65#x11> .
+
+<http://amr.isi.edu/amr_data/66#root01> a amr-core:AMR ;
+    amr-core:has-id "66" ;
+    amr-core:has-sentence "likely than other women" ;
+    amr-core:root <http://amr.isi.edu/amr_data/66#x1> .
+
+<http://amr.isi.edu/amr_data/67#root01> a amr-core:AMR ;
+    amr-core:has-id "67" ;
+    amr-core:has-sentence "to have been at work five years previously , which also helps explain their lower wages ." ;
+    amr-core:root <http://amr.isi.edu/amr_data/67#x12> .
+
+<http://amr.isi.edu/amr_data/68#root01> a amr-core:AMR ;
+    amr-core:has-id "68" ;
+    amr-core:has-sentence "According to the National Academy report , 40 % leave their jobs each year ." ;
+    amr-core:root <http://amr.isi.edu/amr_data/68#xap0> .
+
+<http://amr.isi.edu/amr_data/69#root01> a amr-core:AMR ;
+    amr-core:has-id "69" ;
+    amr-core:has-sentence "Two other differences between childcare workers and elementary school teachers" ;
+    amr-core:root <http://amr.isi.edu/amr_data/69#x3> .
+
+<http://amr.isi.edu/amr_data/69#t> a propbank:teach-01 ;
+    propbank:teach-01.ARG0 <http://amr.isi.edu/amr_data/69#x10> .
+
+<http://amr.isi.edu/amr_data/69#w> a propbank:work-01 ;
+    propbank:work-01.ARG0 <http://amr.isi.edu/amr_data/69#x6> .
+
+<http://amr.isi.edu/amr_data/7#a> a propbank:arrange-01 ;
+    propbank:arrange-01.ARG1 <http://amr.isi.edu/amr_data/7#x11> .
+
+<http://amr.isi.edu/amr_data/7#root01> a amr-core:AMR ;
+    amr-core:has-id "7" ;
+    amr-core:has-sentence "and that other women have to make do with informal arrangements of uncertain quality and dependability ." ;
+    amr-core:root <http://amr.isi.edu/amr_data/7#x1> .
+
+<http://amr.isi.edu/amr_data/70#root01> a amr-core:AMR ;
+    amr-core:has-id "70" ;
+    amr-core:has-sentence "-LRB- but not other women workers -RRB- are important ." ;
+    amr-core:root <http://amr.isi.edu/amr_data/70#x2> .
+
+<http://amr.isi.edu/amr_data/70#w> a propbank:work-01 ;
+    propbank:work-01.ARG0 <http://amr.isi.edu/amr_data/70#x6> .
+
+<http://amr.isi.edu/amr_data/71#root01> a amr-core:AMR ;
+    amr-core:has-id "71" ;
+    amr-core:has-sentence "First , teachers have on average about four more years of schooling ." ;
+    amr-core:root <http://amr.isi.edu/amr_data/71#x6> .
+
+<http://amr.isi.edu/amr_data/71#t> a propbank:teach-01 ;
+    propbank:teach-01.ARG0 <http://amr.isi.edu/amr_data/71#x3> .
+
+<http://amr.isi.edu/amr_data/72#root01> a amr-core:AMR ;
+    amr-core:has-id "72" ;
+    amr-core:has-sentence "But this difference in education explains only about two-fifths of the wage differential ." ;
+    amr-core:root <http://amr.isi.edu/amr_data/72#x1> .
+
+<http://amr.isi.edu/amr_data/73#root01> a amr-core:AMR ;
+    amr-core:has-id "73" ;
+    amr-core:has-sentence "Second , teachers" ;
+    amr-core:root <http://amr.isi.edu/amr_data/73#x3> .
+
+<http://amr.isi.edu/amr_data/73#t> a propbank:teach-01 ;
+    propbank:teach-01.ARG0 <http://amr.isi.edu/amr_data/73#x3> .
+
+<http://amr.isi.edu/amr_data/74#root01> a amr-core:AMR ;
+    amr-core:has-id "74" ;
+    amr-core:has-sentence "-- at least those in the public schools" ;
+    amr-core:root <http://amr.isi.edu/amr_data/74#x8> .
+
+<http://amr.isi.edu/amr_data/75#root01> a amr-core:AMR ;
+    amr-core:has-id "75" ;
+    amr-core:has-sentence "-- are highly unionized ; child-care workers are not ." ;
+    amr-core:root <http://amr.isi.edu/amr_data/75#x> .
+
+<http://amr.isi.edu/amr_data/75#w> a propbank:work-01 ;
+    propbank:work-01.ARG0 <http://amr.isi.edu/amr_data/75#x7> .
+
+<http://amr.isi.edu/amr_data/76#root01> a amr-core:AMR ;
+    amr-core:has-id "76" ;
+    amr-core:has-sentence "But again , this is only a partial explanation , as evidenced by the fact" ;
+    amr-core:root <http://amr.isi.edu/amr_data/76#x1> .
+
+<http://amr.isi.edu/amr_data/77#root01> a amr-core:AMR ;
+    amr-core:has-id "77" ;
+    amr-core:has-sentence "that even non-union teachers in private elementary schools make 20 % to 25 % more than child-care workers" ;
+    amr-core:root <http://amr.isi.edu/amr_data/77#x9> .
+
+<http://amr.isi.edu/amr_data/77#t> a propbank:teach-01 ;
+    propbank:teach-01.ARG0 <http://amr.isi.edu/amr_data/77#x4> .
+
+<http://amr.isi.edu/amr_data/77#w> a propbank:work-01 ;
+    propbank:work-01.ARG0 <http://amr.isi.edu/amr_data/77#x18> .
+
+<http://amr.isi.edu/amr_data/77#xap1> a amr-terms:percentage-entity ;
+    propbank:percentage-entity.ARG0 <http://amr.isi.edu/amr_data/77#xap0> ;
+    amr-terms:value "25" .
+
+<http://amr.isi.edu/amr_data/78#root01> a amr-core:AMR ;
+    amr-core:has-id "78" ;
+    amr-core:has-sentence "-LRB- after controlling for education , experience and many other variables -RRB- ." ;
+    amr-core:root <http://amr.isi.edu/amr_data/78#x2> .
+
+<http://amr.isi.edu/amr_data/79#root01> a amr-core:AMR ;
+    amr-core:has-id "79" ;
+    amr-core:has-sentence "One striking difference between teachers and child-care workers is the reward" ;
+    amr-core:root <http://amr.isi.edu/amr_data/79#x11> .
+
+<http://amr.isi.edu/amr_data/79#t> a propbank:teach-01 ;
+    propbank:teach-01.ARG0 <http://amr.isi.edu/amr_data/79#x5> .
+
+<http://amr.isi.edu/amr_data/79#w> a propbank:work-01 ;
+    propbank:work-01.ARG0 <http://amr.isi.edu/amr_data/79#x8> .
+
+<http://amr.isi.edu/amr_data/8#root01> a amr-core:AMR ;
+    amr-core:has-id "8" ;
+    amr-core:has-sentence "Some mothers say" ;
+    amr-core:root <http://amr.isi.edu/amr_data/8#x3> .
+
+<http://amr.isi.edu/amr_data/80#root01> a amr-core:AMR ;
+    amr-core:has-id "80" ;
+    amr-core:has-sentence "-LRB- or lack of reward -RRB-" ;
+    amr-core:root <http://amr.isi.edu/amr_data/80#x2> .
+
+<http://amr.isi.edu/amr_data/81#root01> a amr-core:AMR ;
+    amr-core:has-id "81" ;
+    amr-core:has-sentence "for additional schooling ." ;
+    amr-core:root <http://amr.isi.edu/amr_data/81#x3> .
+
+<http://amr.isi.edu/amr_data/82#root01> a amr-core:AMR ;
+    amr-core:has-id "82" ;
+    amr-core:has-sentence "The wages of teachers rise appreciably with each additional year of education ." ;
+    amr-core:root <http://amr.isi.edu/amr_data/82#x5> .
+
+<http://amr.isi.edu/amr_data/82#t> a propbank:teach-01 ;
+    propbank:teach-01.ARG0 <http://amr.isi.edu/amr_data/82#x4> .
+
+<http://amr.isi.edu/amr_data/83#root01> a amr-core:AMR ;
+    amr-core:has-id "83" ;
+    amr-core:has-sentence "By contrast , child-care workers" ;
+    amr-core:root <http://amr.isi.edu/amr_data/83#xap0> .
+
+<http://amr.isi.edu/amr_data/83#w> a propbank:work-01 ;
+    propbank:work-01.ARG0 <http://amr.isi.edu/amr_data/83#x5> .
+
+<http://amr.isi.edu/amr_data/83#x4> a amr-terms:child-care ;
+    propbank:child-care.ARG0 <http://amr.isi.edu/amr_data/83#x5> .
+
+<http://amr.isi.edu/amr_data/84#g> a propbank:graduate-01 ;
+    propbank:graduate-01.ARG0 <http://amr.isi.edu/amr_data/84#x4> .
+
+<http://amr.isi.edu/amr_data/84#root01> a amr-core:AMR ;
+    amr-core:has-id "84" ;
+    amr-core:has-sentence "who are college graduates earn only slightly more than those" ;
+    amr-core:root <http://amr.isi.edu/amr_data/84#x4> .
+
+<http://amr.isi.edu/amr_data/84#x3> a amr-terms:college ;
+    propbank:college.ARG0 <http://amr.isi.edu/amr_data/84#x4> .
+
+<http://amr.isi.edu/amr_data/84#x5> a propbank:earn-01 ;
+    propbank:earn-01.ARG1 <http://amr.isi.edu/amr_data/84#x4> ;
+    amr-terms:degree <http://amr.isi.edu/amr_data/84#x8> .
+
+<http://amr.isi.edu/amr_data/85#root01> a amr-core:AMR ;
+    amr-core:has-id "85" ;
+    amr-core:has-sentence "whose education" ;
+    amr-core:root <http://amr.isi.edu/amr_data/85#x2> .
+
+<http://amr.isi.edu/amr_data/86#root01> a amr-core:AMR ;
+    amr-core:has-id "86" ;
+    amr-core:has-sentence "ended in high school ." ;
+    amr-core:root <http://amr.isi.edu/amr_data/86#x1> .
+
+<http://amr.isi.edu/amr_data/87#root01> a amr-core:AMR ;
+    amr-core:has-id "87" ;
+    amr-core:has-sentence "The parents" ;
+    amr-core:root <http://amr.isi.edu/amr_data/87#x2> .
+
+<http://amr.isi.edu/amr_data/88#root01> a amr-core:AMR ;
+    amr-core:has-id "88" ;
+    amr-core:has-sentence "who buy child-care" ;
+    amr-core:root <http://amr.isi.edu/amr_data/88#x2> .
+
+<http://amr.isi.edu/amr_data/89#root01> a amr-core:AMR ;
+    amr-core:has-id "89" ;
+    amr-core:has-sentence "are apparently unwilling or unable" ;
+    amr-core:root <http://amr.isi.edu/amr_data/89#x4> .
+
+<http://amr.isi.edu/amr_data/9#root01> a amr-core:AMR ;
+    amr-core:has-id "9" ;
+    amr-core:has-sentence "that the high cost of child care discourages other women from seeking employment ," ;
+    amr-core:root <http://amr.isi.edu/amr_data/9#x8> .
+
+<http://amr.isi.edu/amr_data/90#root01> a amr-core:AMR ;
+    amr-core:has-id "90" ;
+    amr-core:has-sentence "to pay more" ;
+    amr-core:root <http://amr.isi.edu/amr_data/90#x2> .
+
+<http://amr.isi.edu/amr_data/91#root01> a amr-core:AMR ;
+    amr-core:has-id "91" ;
+    amr-core:has-sentence "for workers with additional schooling ." ;
+    amr-core:root <http://amr.isi.edu/amr_data/91#x2> .
+
+<http://amr.isi.edu/amr_data/91#w> a propbank:work-01 ;
+    propbank:work-01.ARG0 <http://amr.isi.edu/amr_data/91#x2> .
+
+<http://amr.isi.edu/amr_data/92#root01> a amr-core:AMR ;
+    amr-core:has-id "92" ;
+    amr-core:has-sentence "Or , from another perspective , The parents" ;
+    amr-core:root <http://amr.isi.edu/amr_data/92#x1> .
+
+<http://amr.isi.edu/amr_data/93#root01> a amr-core:AMR ;
+    amr-core:has-id "93" ;
+    amr-core:has-sentence "who buy child-care are unwilling" ;
+    amr-core:root <http://amr.isi.edu/amr_data/93#x2> .
+
+<http://amr.isi.edu/amr_data/94#root01> a amr-core:AMR ;
+    amr-core:has-id "94" ;
+    amr-core:has-sentence "to see the child/worker ratio rise in exchange for having workers" ;
+    amr-core:root <http://amr.isi.edu/amr_data/94#x2> .
+
+<http://amr.isi.edu/amr_data/94#w> a propbank:work-01 ;
+    propbank:work-01.ARG0 <http://amr.isi.edu/amr_data/94#x11> .
+
+<http://amr.isi.edu/amr_data/95#root01> a amr-core:AMR ;
+    amr-core:has-id "95" ;
+    amr-core:has-sentence "with more education ." ;
+    amr-core:root <http://amr.isi.edu/amr_data/95#x3> .
+
+<http://amr.isi.edu/amr_data/96#root01> a amr-core:AMR ;
+    amr-core:has-id "96" ;
+    amr-core:has-sentence "This is precisely the trade-off" ;
+    amr-core:root <http://amr.isi.edu/amr_data/96#x5> .
+
+<http://amr.isi.edu/amr_data/97#root01> a amr-core:AMR ;
+    amr-core:has-id "97" ;
+    amr-core:has-sentence "that is made in France ." ;
+    amr-core:root <http://amr.isi.edu/amr_data/97#x3> .
+
+<http://amr.isi.edu/amr_data/98#root01> a amr-core:AMR ;
+    amr-core:has-id "98" ;
+    amr-core:has-sentence "The French system of care for pre-schoolers is often hailed as a model for the United States , partly because the child-care workers are as well educated and as well paid as elementary school teachers ." ;
+    amr-core:root <http://amr.isi.edu/amr_data/98#x10> .
+
+<http://amr.isi.edu/amr_data/98#t> a propbank:teach-01 ;
+    propbank:teach-01.ARG0 <http://amr.isi.edu/amr_data/98#x35> .
+
+<http://amr.isi.edu/amr_data/98#w> a propbank:work-01 ;
+    propbank:work-01.ARG0 <http://amr.isi.edu/amr_data/98#x23> .
+
+<http://amr.isi.edu/amr_data/98#x20> a propbank:cause-01 ;
+    propbank:cause-01.ARG0 <http://amr.isi.edu/amr_data/98#x28> ;
+    propbank:cause-01.ARG1 <http://amr.isi.edu/amr_data/98#x10> .
+
+<http://amr.isi.edu/amr_data/99#root01> a amr-core:AMR ;
+    amr-core:has-id "99" ;
+    amr-core:has-sentence "The child/worker ratio , however , is double" ;
+    amr-core:root <http://amr.isi.edu/amr_data/99#x8> .
+
+propbank:accept-01.ARG0 a propbank:FrameRole .
+
+propbank:accept-01.ARG1 a propbank:FrameRole .
+
+propbank:achieve-01.ARG1 a propbank:FrameRole .
+
+propbank:afford-01.ARG1 a propbank:FrameRole .
+
+propbank:arrange-01.ARG1 a propbank:FrameRole .
+
+propbank:average-01.ARG1 a propbank:FrameRole .
+
+propbank:average.ARG2 a propbank:FrameRole .
+
+propbank:birthday.ARG1 a propbank:FrameRole .
+
+propbank:buy-01.ARG1 a propbank:FrameRole .
+
+propbank:care-01.ARG0 a propbank:FrameRole .
+
+propbank:care.ARG1 a propbank:FrameRole .
+
+propbank:cause-01.ARG0 a propbank:FrameRole .
+
+propbank:cause-01.ARG1 a propbank:FrameRole .
+
+propbank:charge-01.ARG1 a propbank:FrameRole .
+
+propbank:child-care.ARG0 a propbank:FrameRole .
+
+propbank:close-41.ARG4 a propbank:FrameRole .
+
+propbank:college.ARG0 a propbank:FrameRole .
+
+propbank:commute-02.ARG1 a propbank:FrameRole .
+
+propbank:compare-01.ARG1 a propbank:FrameRole .
+
+propbank:compare-01.ARG2 a propbank:FrameRole .
+
+propbank:complain-01.ARG0 a propbank:FrameRole .
+
+propbank:consider-02.ARG1 a propbank:FrameRole .
+
+propbank:contrast-01.ARG1 a propbank:FrameRole .
+
+propbank:contrast-01.ARG2 a propbank:FrameRole .
+
+propbank:control-01.ARG1 a propbank:FrameRole .
+
+propbank:cost-01.ARG1 a propbank:FrameRole .
+
+propbank:cost-01.ARG2 a propbank:FrameRole .
+
+propbank:date-entity.ARG3 a propbank:FrameRole .
+
+propbank:depend-01.ARG1 a propbank:FrameRole .
+
+propbank:determine-01.ARG0 a propbank:FrameRole .
+
+propbank:determine-01.ARG1 a propbank:FrameRole .
+
+propbank:differ-02.ARG1 a propbank:FrameRole .
+
+propbank:differ-02.ARG2 a propbank:FrameRole .
+
+propbank:differential.ARG1 a propbank:FrameRole .
+
+propbank:discourage.ARG1 a propbank:FrameRole .
+
+propbank:discourage.ARG2 a propbank:FrameRole .
+
+propbank:discuss-01.ARG1 a propbank:FrameRole .
+
+propbank:earn-01.ARG0 a propbank:FrameRole .
+
+propbank:earn-01.ARG1 a propbank:FrameRole .
+
+propbank:educate-01.ARG1 a propbank:FrameRole .
+
+propbank:emphasize-01.ARG1 a propbank:FrameRole .
+
+propbank:employ-02.ARG1 a propbank:FrameRole .
+
+propbank:end-01.ARG1 a propbank:FrameRole .
+
+propbank:estimate-01.ARG1 a propbank:FrameRole .
+
+propbank:evade-01.ARG0 a propbank:FrameRole .
+
+propbank:evade-01.ARG1 a propbank:FrameRole .
+
+propbank:evaluate-01.ARG1 a propbank:FrameRole .
+
+propbank:evidence-01.ARG0 a propbank:FrameRole .
+
+propbank:exchange-01.ARG3 a propbank:FrameRole .
+
+propbank:expand-01.ARG1 a propbank:FrameRole .
+
+propbank:expend-01.ARG0 a propbank:FrameRole .
+
+propbank:expend-01.ARG1 a propbank:FrameRole .
+
+propbank:expert-41.ARG1 a propbank:FrameRole .
+
+propbank:explain-01.ARG0 a propbank:FrameRole .
+
+propbank:explain-01.ARG1 a propbank:FrameRole .
+
+propbank:fail-01.ARG1 a propbank:FrameRole .
+
+propbank:familiarize-01.ARG1 a propbank:FrameRole .
+
+propbank:find-02.ARG0 a propbank:FrameRole .
+
+propbank:follow-01.ARG1 a propbank:FrameRole .
+
+propbank:follow-01.ARG2 a propbank:FrameRole .
+
+propbank:free-01.ARG1 a propbank:FrameRole .
+
+propbank:go-01.ARG0 a propbank:FrameRole .
+
+propbank:govern-01.ARG0 a propbank:FrameRole .
+
+propbank:graduate-01.ARG0 a propbank:FrameRole .
+
+propbank:hail-02.ARG1 a propbank:FrameRole .
+
+propbank:hail-02.ARG2 a propbank:FrameRole .
+
+propbank:have-03.ARG0 a propbank:FrameRole .
+
+propbank:have-03.ARG1 a propbank:FrameRole .
+
+propbank:have-org-role-91.ARG0 a propbank:FrameRole .
+
+propbank:have-org-role-91.ARG1 a propbank:FrameRole .
+
+propbank:have-org-role-91.ARG2 a propbank:FrameRole .
+
+propbank:hear-01.ARG1 a propbank:FrameRole .
+
+propbank:help-01.ARG0 a propbank:FrameRole .
+
+propbank:help-01.ARG1 a propbank:FrameRole .
+
+propbank:hold-04.ARG1 a propbank:FrameRole .
+
+propbank:improve-01.ARG1 a propbank:FrameRole .
+
+propbank:include-01.ARG1 a propbank:FrameRole .
+
+propbank:include-91.ARG1 a propbank:FrameRole .
+
+propbank:include-91.ARG2 a propbank:FrameRole .
+
+propbank:increase-01.ARG1 a propbank:FrameRole .
+
+propbank:justified.ARG1 a propbank:FrameRole .
+
+propbank:lack-01.ARG1 a propbank:FrameRole .
+
+propbank:lead-01.ARG0 a propbank:FrameRole .
+
+propbank:lead-01.ARG2 a propbank:FrameRole .
+
+propbank:leave-01.ARG1 a propbank:FrameRole .
+
+propbank:leave-01.ARG2 a propbank:FrameRole .
+
+propbank:less.ARG0 a propbank:FrameRole .
+
+propbank:less.ARG1 a propbank:FrameRole .
+
+propbank:lift-02.ARG1 a propbank:FrameRole .
+
+propbank:limit-01.ARG1 a propbank:FrameRole .
+
+propbank:make-01.ARG0 a propbank:FrameRole .
+
+propbank:make-02.ARG1 a propbank:FrameRole .
+
+propbank:meet-03.ARG0 a propbank:FrameRole .
+
+propbank:meet-03.ARG1 a propbank:FrameRole .
+
+propbank:more.ARG0 a propbank:FrameRole .
+
+propbank:need-01.ARG0 a propbank:FrameRole .
+
+propbank:nurse-01.ARG0 a propbank:FrameRole .
+
+propbank:occupy-01.ARG1 a propbank:FrameRole .
+
+propbank:offer-01.ARG0 a propbank:FrameRole .
+
+propbank:offer-01.ARG1 a propbank:FrameRole .
+
+propbank:pay-01.ARG1 a propbank:FrameRole .
+
+propbank:pay-01.ARG2 a propbank:FrameRole .
+
+propbank:percentage-entity.ARG0 a propbank:FrameRole .
+
+propbank:percentage-entity.ARG1 a propbank:FrameRole .
+
+propbank:percentage-entity.ARG2 a propbank:FrameRole .
+
+propbank:person.ARG0 a propbank:FrameRole .
+
+propbank:person.ARG1 a propbank:FrameRole .
+
+propbank:prefer-01.ARG1 a propbank:FrameRole .
+
+propbank:produce-01.ARG0 a propbank:FrameRole .
+
+propbank:produce-01.ARG1 a propbank:FrameRole .
+
+propbank:provide-01.ARG0 a propbank:FrameRole .
+
+propbank:provide-01.ARG1 a propbank:FrameRole .
+
+propbank:put-01.ARG0 a propbank:FrameRole .
+
+propbank:put-01.ARG1 a propbank:FrameRole .
+
+propbank:put-01.ARG2 a propbank:FrameRole .
+
+propbank:put-01.ARG4 a propbank:FrameRole .
+
+propbank:rate-entity-91.ARG1 a propbank:FrameRole .
+
+propbank:rate-entity-91.ARG2 a propbank:FrameRole .
+
+propbank:reach-02.ARG0 a propbank:FrameRole .
+
+propbank:receive-01.ARG1 a propbank:FrameRole .
+
+propbank:recommend-01.ARG1 a propbank:FrameRole .
+
+propbank:recommend-01.ARG2 a propbank:FrameRole .
+
+propbank:reduce-01.ARG1 a propbank:FrameRole .
+
+propbank:reduce-01.ARG2 a propbank:FrameRole .
+
+propbank:regulate-01.ARG0 a propbank:FrameRole .
+
+propbank:regulate-01.ARG1 a propbank:FrameRole .
+
+propbank:released-report.ARG0 a propbank:FrameRole .
+
+propbank:remain-01.ARG1 a propbank:FrameRole .
+
+propbank:remain-01.ARG3 a propbank:FrameRole .
+
+propbank:report.ARG0 a propbank:FrameRole .
+
+propbank:responsible-41.ARG2 a propbank:FrameRole .
+
+propbank:return-01.ARG4 a propbank:FrameRole .
+
+propbank:revenue.ARG1 a propbank:FrameRole .
+
+propbank:reward-01.ARG0 a propbank:FrameRole .
+
+propbank:rise-01.ARG1 a propbank:FrameRole .
+
+propbank:same-41.ARG1 a propbank:FrameRole .
+
+propbank:same-41.ARG2 a propbank:FrameRole .
+
+propbank:say-01.ARG0 a propbank:FrameRole .
+
+propbank:say-01.ARG1 a propbank:FrameRole .
+
+propbank:see-01.ARG1 a propbank:FrameRole .
+
+propbank:seek-01.ARG0 a propbank:FrameRole .
+
+propbank:seek-01.ARG1 a propbank:FrameRole .
+
+propbank:seem-01.ARG0 a propbank:FrameRole .
+
+propbank:serve-01.ARG0 a propbank:FrameRole .
+
+propbank:serve-01.ARG1 a propbank:FrameRole .
+
+propbank:serve-01.ARG2 a propbank:FrameRole .
+
+propbank:stay-01.ARG0 a propbank:FrameRole .
+
+propbank:stay-01.ARG3 a propbank:FrameRole .
+
+propbank:subsidy.ARG0 a propbank:FrameRole .
+
+propbank:subsidy.ARG2 a propbank:FrameRole .
+
+propbank:supplement-01.ARG2 a propbank:FrameRole .
+
+propbank:support-01.ARG1 a propbank:FrameRole .
+
+propbank:tax-01.ARG1 a propbank:FrameRole .
+
+propbank:teach-01.ARG0 a propbank:FrameRole .
+
+propbank:thing.ARG0 a propbank:FrameRole .
+
+propbank:thing.ARG1 a propbank:FrameRole .
+
+propbank:throw-01.ARG0 a propbank:FrameRole .
+
+propbank:throw-01.ARG1 a propbank:FrameRole .
+
+propbank:tighten-01.ARG1 a propbank:FrameRole .
+
+propbank:urge-01.ARG1 a propbank:FrameRole .
+
+propbank:use-01.ARG1 a propbank:FrameRole .
+
+propbank:vote-01.ARG0 a propbank:FrameRole .
+
+propbank:vote-01.ARG1 a propbank:FrameRole .
+
+propbank:wage-01.ARG0 a propbank:FrameRole .
+
+propbank:wage-01.ARG1 a propbank:FrameRole .
+
+propbank:wage.ARG1 a propbank:FrameRole .
+
+propbank:want-01.ARG1 a propbank:FrameRole .
+
+propbank:wish-01.ARG1 a propbank:FrameRole .
+
+propbank:work-01.ARG0 a propbank:FrameRole .
+
+propbank:work-01.ARG1 a propbank:FrameRole .
+
+amr-terms:degree a amr-core:Role .
+
+amr-terms:direction a amr-core:Role .
+
+amr-terms:domain a amr-core:Role .
+
+amr-terms:duration a amr-core:Role .
+
+amr-terms:example a amr-core:Role .
+
+amr-terms:frequency a amr-core:Role .
+
+amr-terms:location a amr-core:Role .
+
+amr-terms:manner a amr-core:Role .
+
+amr-terms:mod a amr-core:Role .
+
+amr-terms:null_edge a amr-core:Role .
+
+amr-terms:op1 a amr-core:Role .
+
+amr-terms:op2 a amr-core:Role .
+
+amr-terms:op3 a amr-core:Role .
+
+amr-terms:op4 a amr-core:Role .
+
+amr-terms:part a amr-core:Role .
+
+amr-terms:poss a amr-core:Role .
+
+amr-terms:prep-instead a amr-core:Role .
+
+amr-terms:prep-under a amr-core:Role .
+
+amr-terms:prep-with a amr-core:Role .
+
+amr-terms:purpose a amr-core:Role .
+
+amr-terms:quant a amr-core:Role .
+
+amr-terms:range a amr-core:Role .
+
+amr-terms:snt2 a amr-core:Role .
+
+amr-terms:source a amr-core:Role .
+
+amr-terms:time a amr-core:Role .
+
+amr-terms:topic a amr-core:Role .
+
+amr-terms:unit a amr-core:Role .
+
+amr-terms:weekday a amr-core:Role .
+
+amr-terms:x a amr-core:Role .
+
+<http://amr.isi.edu/amr_data/1#x5> a amr-terms:every .
+
+<http://amr.isi.edu/amr_data/1#x7> a amr-terms:new .
+
+<http://amr.isi.edu/amr_data/1#x8> a amr-terms:mother ;
+    amr-terms:mod <http://amr.isi.edu/amr_data/1#x5>,
+        <http://amr.isi.edu/amr_data/1#x7> ;
+    amr-terms:quant "2" .
+
+<http://amr.isi.edu/amr_data/10#x2> a amr-terms:other .
+
+<http://amr.isi.edu/amr_data/10#x3> a amr-terms:woman ;
+    amr-terms:mod <http://amr.isi.edu/amr_data/10#x2> .
+
+<http://amr.isi.edu/amr_data/10#x4> a propbank:remain-01 ;
+    propbank:remain-01.ARG1 <http://amr.isi.edu/amr_data/10#x3> ;
+    propbank:remain-01.ARG3 <http://amr.isi.edu/amr_data/10#x5> .
+
+<http://amr.isi.edu/amr_data/10#x5> a amr-terms:childless .
+
+<http://amr.isi.edu/amr_data/100#x4> a amr-terms:nursery .
+
+<http://amr.isi.edu/amr_data/100#x5> a entity-types:school ;
+    amr-terms:mod <http://amr.isi.edu/amr_data/100#x4> .
+
+<http://amr.isi.edu/amr_data/100#x6> a amr-core:and ;
+    amr-terms:op1 <http://amr.isi.edu/amr_data/100#x5> ;
+    amr-terms:op3 <http://amr.isi.edu/amr_data/100#x8> .
+
+<http://amr.isi.edu/amr_data/100#x7> a amr-terms:day-care .
+
+<http://amr.isi.edu/amr_data/100#x8> a amr-terms:center ;
+    amr-terms:mod <http://amr.isi.edu/amr_data/100#x7> .
+
+<http://amr.isi.edu/amr_data/101#x1> a amr-terms:high .
+
+<http://amr.isi.edu/amr_data/101#x10> a amr-terms:only .
+
+<http://amr.isi.edu/amr_data/101#x12> a amr-terms:way ;
+    amr-terms:mod <http://amr.isi.edu/amr_data/101#x10> ;
+    amr-terms:quant "3" .
+
+<http://amr.isi.edu/amr_data/101#x2> a amr-terms:wage ;
+    amr-terms:mod <http://amr.isi.edu/amr_data/101#x1> ;
+    amr-terms:poss <http://amr.isi.edu/amr_data/101#x5> .
+
+<http://amr.isi.edu/amr_data/101#x4> a amr-terms:child-care .
+
+<http://amr.isi.edu/amr_data/101#x6> a amr-terms:possible ;
+    amr-terms:domain <http://amr.isi.edu/amr_data/101#x8> .
+
+<http://amr.isi.edu/amr_data/101#x8> a propbank:achieve-01 ;
+    propbank:achieve-01.ARG1 <http://amr.isi.edu/amr_data/101#x2> ;
+    amr-terms:direction <http://amr.isi.edu/amr_data/101#x12> .
+
+<http://amr.isi.edu/amr_data/102#x12> a propbank:pay-01 ;
+    amr-terms:poss <http://amr.isi.edu/amr_data/102#x10> .
+
+<http://amr.isi.edu/amr_data/102#x2> a propbank:reduce-01 ;
+    propbank:reduce-01.ARG2 <http://amr.isi.edu/amr_data/102#x5> .
+
+<http://amr.isi.edu/amr_data/102#x4> a amr-terms:overhead .
+
+<http://amr.isi.edu/amr_data/102#x5> a propbank:expend-01 ;
+    propbank:expend-01.ARG1 <http://amr.isi.edu/amr_data/102#x4> .
+
+<http://amr.isi.edu/amr_data/102#x7> a propbank:free-01 ;
+    propbank:free-01.ARG1 <http://amr.isi.edu/amr_data/102#x2>,
+        <http://amr.isi.edu/amr_data/102#x8> .
+
+<http://amr.isi.edu/amr_data/102#x8> a amr-terms:fund ;
+    amr-terms:purpose <http://amr.isi.edu/amr_data/102#x12> .
+
+<http://amr.isi.edu/amr_data/103#x1> a propbank:contrast-01 ;
+    propbank:contrast-01.ARG1 <http://amr.isi.edu/amr_data/103#x7> ;
+    propbank:contrast-01.ARG2 <http://amr.isi.edu/amr_data/103#x5> .
+
+<http://amr.isi.edu/amr_data/103#x2> a amr-terms:many .
+
+<http://amr.isi.edu/amr_data/103#x5> a propbank:expend-01 ;
+    amr-terms:quant <http://amr.isi.edu/amr_data/103#x2> .
+
+<http://amr.isi.edu/amr_data/103#x7> a propbank:determine-01 .
+
+<http://amr.isi.edu/amr_data/104#x2> a entity-types:law .
+
+<http://amr.isi.edu/amr_data/104#x3> a amr-core:and ;
+    amr-terms:op1 <http://amr.isi.edu/amr_data/104#x2> ;
+    amr-terms:op2 <http://amr.isi.edu/amr_data/104#x4> .
+
+<http://amr.isi.edu/amr_data/104#x4> a propbank:regulate-01 .
+
+<http://amr.isi.edu/amr_data/105#x1> a amr-core:and ;
+    amr-terms:op1 <http://amr.isi.edu/amr_data/105#x5> .
+
+<http://amr.isi.edu/amr_data/105#x4> a amr-terms:little .
+
+<http://amr.isi.edu/amr_data/105#x5> a amr-terms:chance ;
+    amr-terms:degree <http://amr.isi.edu/amr_data/105#x4> .
+
+<http://amr.isi.edu/amr_data/106#x2> a amr-terms:this .
+
+<http://amr.isi.edu/amr_data/106#x3> a propbank:burden-01 ;
+    amr-terms:mod <http://amr.isi.edu/amr_data/106#x2> .
+
+<http://amr.isi.edu/amr_data/106#x6> a propbank:lift-02 ;
+    propbank:lift-02.ARG1 <http://amr.isi.edu/amr_data/106#x3> .
+
+<http://amr.isi.edu/amr_data/107#x2> a propbank:rise-01 ;
+    propbank:rise-01.ARG1 <http://amr.isi.edu/amr_data/107#x4>,
+        <http://amr.isi.edu/amr_data/107#x6> .
+
+<http://amr.isi.edu/amr_data/107#x4> a amr-terms:revenue .
+
+<http://amr.isi.edu/amr_data/107#x6> a amr-terms:child .
+
+<http://amr.isi.edu/amr_data/107#x8> a propbank:help-01 ;
+    propbank:help-01.ARG0 <http://amr.isi.edu/amr_data/107#x2> .
+
+<http://amr.isi.edu/amr_data/108#x1> a propbank:contrast-01 ;
+    propbank:contrast-01.ARG1 <http://amr.isi.edu/amr_data/108#x4> ;
+    propbank:contrast-01.ARG2 <http://amr.isi.edu/amr_data/108#x3> .
+
+<http://amr.isi.edu/amr_data/108#x3> a amr-terms:high .
+
+<http://amr.isi.edu/amr_data/108#x4> a amr-terms:possible ;
+    amr-terms:domain <http://amr.isi.edu/amr_data/108#x6> .
+
+<http://amr.isi.edu/amr_data/108#x5> a amr-terms:fee .
+
+<http://amr.isi.edu/amr_data/108#x6> a propbank:go-01 ;
+    propbank:go-01.ARG0 <http://amr.isi.edu/amr_data/108#x5> .
+
+<http://amr.isi.edu/amr_data/109#x10> a amr-terms:probable ;
+    amr-terms:domain <http://amr.isi.edu/amr_data/109#x11> .
+
+<http://amr.isi.edu/amr_data/109#x11> a propbank:put-01 ;
+    propbank:put-01.ARG0 <http://amr.isi.edu/amr_data/109#x3> ;
+    propbank:put-01.ARG1 <http://amr.isi.edu/amr_data/109#x13> ;
+    propbank:put-01.ARG4 <http://amr.isi.edu/amr_data/109#x14> .
+
+<http://amr.isi.edu/amr_data/109#x12> a amr-terms:child .
+
+<http://amr.isi.edu/amr_data/109#x13> a propbank:care-01 ;
+    amr-terms:mod <http://amr.isi.edu/amr_data/109#x12> .
+
+<http://amr.isi.edu/amr_data/109#x14> a amr-terms:beyond ;
+    amr-terms:op1 <http://amr.isi.edu/amr_data/109#x16> .
+
+<http://amr.isi.edu/amr_data/109#x16> a propbank:reach-02 ;
+    propbank:reach-02.ARG0 <http://amr.isi.edu/amr_data/109#x19> .
+
+<http://amr.isi.edu/amr_data/109#x18> a amr-core:most .
+
+<http://amr.isi.edu/amr_data/109#x19> a entity-types:family ;
+    amr-terms:quant <http://amr.isi.edu/amr_data/109#x18> .
+
+<http://amr.isi.edu/amr_data/109#x3> a propbank:charge-01 ;
+    propbank:charge-01.ARG1 <http://amr.isi.edu/amr_data/109#x8> .
+
+<http://amr.isi.edu/amr_data/109#x8> a amr-terms:child .
+
+<http://amr.isi.edu/amr_data/11#x1> a amr-core:or ;
+    amr-terms:op1 <http://amr.isi.edu/amr_data/11#x2> .
+
+<http://amr.isi.edu/amr_data/11#x2> a propbank:limit-01 ;
+    propbank:limit-01.ARG1 <http://amr.isi.edu/amr_data/11#x4> .
+
+<http://amr.isi.edu/amr_data/11#x4> a amr-terms:fertility .
+
+<http://amr.isi.edu/amr_data/110#x10> a propbank:aid-01 ;
+    amr-terms:mod <http://amr.isi.edu/amr_data/110#x9> .
+
+<http://amr.isi.edu/amr_data/110#x12> a amr-core:most .
+
+<http://amr.isi.edu/amr_data/110#x13> a amr-terms:appropriate ;
+    amr-terms:degree <http://amr.isi.edu/amr_data/110#x12> .
+
+<http://amr.isi.edu/amr_data/110#x3> a amr-terms:possible ;
+    amr-terms:domain <http://amr.isi.edu/amr_data/110#x4> .
+
+<http://amr.isi.edu/amr_data/110#x5> a amr-terms:private .
+
+<http://amr.isi.edu/amr_data/110#x6> a amr-terms:payment ;
+    amr-terms:mod <http://amr.isi.edu/amr_data/110#x5> .
+
+<http://amr.isi.edu/amr_data/110#x8> a propbank:contrast-01 ;
+    propbank:contrast-01.ARG2 <http://amr.isi.edu/amr_data/110#x3> .
+
+<http://amr.isi.edu/amr_data/110#x9> a amr-terms:public .
+
+<http://amr.isi.edu/amr_data/111#x13> a amr-terms:current .
+
+<http://amr.isi.edu/amr_data/111#x14> a propbank:receive-01 ;
+    propbank:receive-01.ARG1 <http://amr.isi.edu/amr_data/111#x18>,
+        <http://amr.isi.edu/amr_data/111#x9> ;
+    amr-terms:purpose <http://amr.isi.edu/amr_data/111#x2> ;
+    amr-terms:time <http://amr.isi.edu/amr_data/111#x13> .
+
+<http://amr.isi.edu/amr_data/111#x15> a amr-terms:even .
+
+<http://amr.isi.edu/amr_data/111#x17> a propbank:average-01 .
+
+<http://amr.isi.edu/amr_data/111#x18> a amr-terms:standard ;
+    amr-terms:mod <http://amr.isi.edu/amr_data/111#x15>,
+        <http://amr.isi.edu/amr_data/111#x17> ;
+    amr-terms:topic <http://amr.isi.edu/amr_data/111#x20> .
+
+<http://amr.isi.edu/amr_data/111#x2> a propbank:improve-01 ;
+    propbank:improve-01.ARG1 <http://amr.isi.edu/amr_data/111#x3> .
+
+<http://amr.isi.edu/amr_data/111#x20> a amr-terms:care .
+
+<http://amr.isi.edu/amr_data/111#x3> a amr-terms:service ;
+    amr-terms:mod <http://amr.isi.edu/amr_data/111#x6> .
+
+<http://amr.isi.edu/amr_data/111#x5> a amr-terms:poor .
+
+<http://amr.isi.edu/amr_data/111#x6> a amr-terms:child ;
+    amr-terms:mod <http://amr.isi.edu/amr_data/111#x5> .
+
+<http://amr.isi.edu/amr_data/111#x8> a amr-core:most .
+
+<http://amr.isi.edu/amr_data/111#x9> a propbank:include-91 ;
+    amr-terms:quant <http://amr.isi.edu/amr_data/111#x8> .
+
+<http://amr.isi.edu/amr_data/112#x10> a amr-terms:ratio ;
+    amr-terms:mod "child\\worker" .
+
+<http://amr.isi.edu/amr_data/112#x12> a propbank:offer-01 ;
+    propbank:offer-01.ARG0 <http://amr.isi.edu/amr_data/112#x3> ;
+    propbank:offer-01.ARG1 <http://amr.isi.edu/amr_data/112#x15> .
+
+<http://amr.isi.edu/amr_data/112#x14> a amr-core:most .
+
+<http://amr.isi.edu/amr_data/112#x15> a amr-terms:scope ;
+    amr-terms:mod <http://amr.isi.edu/amr_data/112#x14> ;
+    amr-terms:purpose <http://amr.isi.edu/amr_data/112#x17> .
+
+<http://amr.isi.edu/amr_data/112#x17> a propbank:change-01 .
+
+<http://amr.isi.edu/amr_data/112#x3> a amr-terms:possible ;
+    amr-terms:domain <http://amr.isi.edu/amr_data/112#x6> .
+
+<http://amr.isi.edu/amr_data/112#x6> a propbank:increase-01 ;
+    propbank:increase-01.ARG1 <http://amr.isi.edu/amr_data/112#x10> .
+
+<http://amr.isi.edu/amr_data/113#x1> a propbank:fail-01 ;
+    propbank:fail-01.ARG1 <http://amr.isi.edu/amr_data/113#x4> .
+
+<http://amr.isi.edu/amr_data/113#x2> a amr-terms:such .
+
+<http://amr.isi.edu/amr_data/113#x4> a propbank:change-01 ;
+    amr-terms:mod <http://amr.isi.edu/amr_data/113#x2> .
+
+<http://amr.isi.edu/amr_data/113#x6> a amr-terms:wage .
+
+<http://amr.isi.edu/amr_data/113#x8> a amr-terms:likely ;
+    amr-terms:domain <http://amr.isi.edu/amr_data/113#x1>,
+        <http://amr.isi.edu/amr_data/113#x6> .
+
+<http://amr.isi.edu/amr_data/114#x2> a propbank:stay-01 ;
+    amr-terms:location <http://amr.isi.edu/amr_data/114#x7> .
+
+<http://amr.isi.edu/amr_data/114#x5> a amr-terms:extreme .
+
+<http://amr.isi.edu/amr_data/114#x6> a amr-terms:low ;
+    amr-terms:degree <http://amr.isi.edu/amr_data/114#x5> .
+
+<http://amr.isi.edu/amr_data/114#x7> a amr-terms:level ;
+    amr-terms:mod <http://amr.isi.edu/amr_data/114#x6> .
+
+<http://amr.isi.edu/amr_data/115#x4> a amr-terms:right .
+
+<http://amr.isi.edu/amr_data/115#x5> a amr-terms:way ;
+    amr-terms:mod <http://amr.isi.edu/amr_data/115#x4> .
+
+<http://amr.isi.edu/amr_data/116#x2> a propbank:go-01 .
+
+<http://amr.isi.edu/amr_data/117#x1> a amr-core:that .
+
+<http://amr.isi.edu/amr_data/117#x13> a amr-terms:economist .
+
+<http://amr.isi.edu/amr_data/117#x3> a propbank:recommend-01 ;
+    propbank:recommend-01.ARG1 <http://amr.isi.edu/amr_data/117#x8> ;
+    propbank:recommend-01.ARG2 <http://amr.isi.edu/amr_data/117#x1> .
+
+<http://amr.isi.edu/amr_data/117#x7> a amr-terms:parent ;
+    amr-terms:mod <http://amr.isi.edu/amr_data/117#x9> ;
+    amr-terms:poss <http://amr.isi.edu/amr_data/117#x13> .
+
+<http://amr.isi.edu/amr_data/117#x8> a amr-core:and ;
+    amr-terms:op1 <http://amr.isi.edu/amr_data/117#x7> ;
+    amr-terms:op4 <http://amr.isi.edu/amr_data/117#x10> .
+
+<http://amr.isi.edu/amr_data/117#x9> a amr-terms:child-care .
+
+<http://amr.isi.edu/amr_data/118#x10> a propbank:avoid-01 .
+
+<http://amr.isi.edu/amr_data/118#x12> a entity-types:publication ;
+    rdfs:label "ABCs" ;
+    amr-terms:mod <http://amr.isi.edu/amr_data/118#x15> .
+
+<http://amr.isi.edu/amr_data/118#x14> a amr-terms:child-care .
+
+<http://amr.isi.edu/amr_data/118#x15> a amr-terms:economics ;
+    amr-terms:mod <http://amr.isi.edu/amr_data/118#x14> .
+
+<http://amr.isi.edu/amr_data/118#x2> a propbank:decide-01 .
+
+<http://amr.isi.edu/amr_data/118#x6> a amr-terms:possible ;
+    amr-terms:domain <http://amr.isi.edu/amr_data/118#x8> .
+
+<http://amr.isi.edu/amr_data/118#x8> a propbank:evade-01 ;
+    propbank:evade-01.ARG0 <http://amr.isi.edu/amr_data/118#x2> ;
+    propbank:evade-01.ARG1 <http://amr.isi.edu/amr_data/118#x12> ;
+    amr-terms:purpose <http://amr.isi.edu/amr_data/118#x10> .
+
+<http://amr.isi.edu/amr_data/118#x9> a amr-core:or ;
+    amr-terms:op1 <http://amr.isi.edu/amr_data/118#x6> .
+
+<http://amr.isi.edu/amr_data/119#x10> a amr-terms:care .
+
+<http://amr.isi.edu/amr_data/119#x12> a propbank:reduce-01 ;
+    propbank:reduce-01.ARG1 <http://amr.isi.edu/amr_data/119#x15> ;
+    amr-terms:null_edge <http://amr.isi.edu/amr_data/119#x2> .
+
+<http://amr.isi.edu/amr_data/119#x15> a amr-terms:ratio ;
+    amr-terms:mod "child\\worker" .
+
+<http://amr.isi.edu/amr_data/119#x2> a propbank:want-01 ;
+    propbank:want-01.ARG1 <http://amr.isi.edu/amr_data/119#x5> ;
+    amr-terms:time <http://amr.isi.edu/amr_data/119#x3> .
+
+<http://amr.isi.edu/amr_data/119#x3> a amr-terms:simultaneous .
+
+<http://amr.isi.edu/amr_data/119#x5> a propbank:hold-04 ;
+    propbank:hold-04.ARG1 <http://amr.isi.edu/amr_data/119#x8> .
+
+<http://amr.isi.edu/amr_data/119#x8> a propbank:cost-01 ;
+    propbank:cost-01.ARG1 <http://amr.isi.edu/amr_data/119#x10> .
+
+<http://amr.isi.edu/amr_data/120#x1> a amr-core:and ;
+    amr-terms:op1 <http://amr.isi.edu/amr_data/120#x2> .
+
+<http://amr.isi.edu/amr_data/120#x2> a propbank:increase-01 ;
+    propbank:increase-01.ARG1 <http://amr.isi.edu/amr_data/120#x4> .
+
+<http://amr.isi.edu/amr_data/120#x4> a propbank:pay-01 .
+
+<http://amr.isi.edu/amr_data/121#x1> a amr-core:and ;
+    amr-terms:op2 <http://amr.isi.edu/amr_data/121#x2>,
+        <http://amr.isi.edu/amr_data/121#x8> .
+
+<http://amr.isi.edu/amr_data/121#x11> a amr-terms:world .
+
+<http://amr.isi.edu/amr_data/121#x2> a propbank:qualify-02 ;
+    amr-terms:poss <http://amr.isi.edu/amr_data/121#x5> .
+
+<http://amr.isi.edu/amr_data/121#x4> a amr-terms:child-care .
+
+<http://amr.isi.edu/amr_data/121#x8> a propbank:wish-01 ;
+    propbank:wish-01.ARG1 <http://amr.isi.edu/amr_data/121#x11> .
+
+<http://amr.isi.edu/amr_data/122#x4> a amr-core:and .
+
+<http://amr.isi.edu/amr_data/123#p> a amr-terms:professor .
+
+<http://amr.isi.edu/amr_data/123#x1> a amr-terms:null_tag .
+
+<http://amr.isi.edu/amr_data/123#x11> a amr-core:and ;
+    amr-terms:op1 <http://amr.isi.edu/amr_data/123#x5> ;
+    amr-terms:op2 <http://amr.isi.edu/amr_data/123#x14> .
+
+<http://amr.isi.edu/amr_data/123#x13> a propbank:research-01 .
+
+<http://amr.isi.edu/amr_data/123#x14> a amr-terms:associate ;
+    amr-terms:mod <http://amr.isi.edu/amr_data/123#x13> ;
+    amr-terms:null_edge <http://amr.isi.edu/amr_data/123#x17> .
+
+<http://amr.isi.edu/amr_data/123#x17> a entity-types:government-organization ;
+    rdfs:label "National Bureau of Economic Research" .
+
+<http://amr.isi.edu/amr_data/123#x2> a entity-types:person ;
+    rdfs:label "Fuchs" ;
+    amr-terms:null_edge <http://amr.isi.edu/amr_data/123#x1> .
+
+<http://amr.isi.edu/amr_data/123#x5> a propbank:have-org-role-91 ;
+    propbank:have-org-role-91.ARG0 <http://amr.isi.edu/amr_data/123#x2> ;
+    propbank:have-org-role-91.ARG2 <http://amr.isi.edu/amr_data/123#p> ;
+    amr-terms:location <http://amr.isi.edu/amr_data/123#x9> ;
+    amr-terms:mod <http://amr.isi.edu/amr_data/123#x7> .
+
+<http://amr.isi.edu/amr_data/123#x7> a amr-terms:economics .
+
+<http://amr.isi.edu/amr_data/123#x9> a entity-types:government-organization ;
+    rdfs:label "Stanford University" .
+
+<http://amr.isi.edu/amr_data/13#g> a entity-types:government-organization ;
+    rdfs:label "House of Representatives" .
+
+<http://amr.isi.edu/amr_data/13#x2> a amr-terms:thursday .
+
+<http://amr.isi.edu/amr_data/13#x5> a propbank:have-org-role-91 ;
+    propbank:have-org-role-91.ARG1 <http://amr.isi.edu/amr_data/13#g> .
+
+<http://amr.isi.edu/amr_data/13#x8> a propbank:vote-01 ;
+    propbank:vote-01.ARG0 <http://amr.isi.edu/amr_data/13#x5> ;
+    amr-terms:time <http://amr.isi.edu/amr_data/13#xap0> .
+
+<http://amr.isi.edu/amr_data/13#x9> a amr-terms:almost ;
+    amr-terms:op1 "1" .
+
+<http://amr.isi.edu/amr_data/13#xap0> a amr-core:date-entity ;
+    propbank:date-entity.ARG3 <http://amr.isi.edu/amr_data/13#x9> ;
+    amr-terms:weekday <http://amr.isi.edu/amr_data/13#x2> .
+
+<http://amr.isi.edu/amr_data/14#x16> a amr-terms:over ;
+    amr-terms:op1 <http://amr.isi.edu/amr_data/14#x20> .
+
+<http://amr.isi.edu/amr_data/14#x2> a propbank:expand-01 ;
+    propbank:expand-01.ARG1 <http://amr.isi.edu/amr_data/14#x4> ;
+    amr-terms:time <http://amr.isi.edu/amr_data/14#x16> .
+
+<http://amr.isi.edu/amr_data/14#x20> a amr-terms:temporal-quantity ;
+    amr-terms:quant "5" ;
+    amr-terms:unit <http://amr.isi.edu/amr_data/14#y> .
+
+<http://amr.isi.edu/amr_data/14#x3> a entity-types:government-organization ;
+    rdfs:label "federal" .
+
+<http://amr.isi.edu/amr_data/14#x4> a propbank:support-01 ;
+    propbank:support-01.ARG1 <http://amr.isi.edu/amr_data/14#x7> ;
+    amr-terms:manner <http://amr.isi.edu/amr_data/14#x3> .
+
+<http://amr.isi.edu/amr_data/14#x7> a amr-terms:care .
+
+<http://amr.isi.edu/amr_data/14#y> a amr-core:year .
+
+<http://amr.isi.edu/amr_data/15#x10> a amr-core:between .
+
+<http://amr.isi.edu/amr_data/15#x2> a entity-types:government-organization ;
+    rdfs:label "House" .
+
+<http://amr.isi.edu/amr_data/15#x3> a amr-terms:bill ;
+    amr-terms:mod <http://amr.isi.edu/amr_data/15#x2> .
+
+<http://amr.isi.edu/amr_data/15#x6> a propbank:produce-01 ;
+    propbank:produce-01.ARG0 <http://amr.isi.edu/amr_data/15#x3> ;
+    propbank:produce-01.ARG1 <http://amr.isi.edu/amr_data/15#x9> .
+
+<http://amr.isi.edu/amr_data/15#x9> a propbank:compromise-01 ;
+    amr-terms:mod <http://amr.isi.edu/amr_data/15#x10> .
+
+<http://amr.isi.edu/amr_data/16#x10> a amr-terms:parent .
+
+<http://amr.isi.edu/amr_data/16#x2> a propbank:emphasize-01 ;
+    propbank:emphasize-01.ARG1 <http://amr.isi.edu/amr_data/16#x3> .
+
+<http://amr.isi.edu/amr_data/16#x3> a propbank:put-01 ;
+    propbank:put-01.ARG1 <http://amr.isi.edu/amr_data/16#x5> ;
+    propbank:put-01.ARG2 <http://amr.isi.edu/amr_data/16#x8> .
+
+<http://amr.isi.edu/amr_data/16#x4> a amr-core:more .
+
+<http://amr.isi.edu/amr_data/16#x5> a amr-terms:money ;
+    amr-terms:mod <http://amr.isi.edu/amr_data/16#x4> .
+
+<http://amr.isi.edu/amr_data/17#x2> a propbank:prefer-01 ;
+    propbank:prefer-01.ARG1 <http://amr.isi.edu/amr_data/17#x4> .
+
+<http://amr.isi.edu/amr_data/17#x3> a amr-terms:direct .
+
+<http://amr.isi.edu/amr_data/17#x4> a amr-terms:subsidy ;
+    propbank:subsidy.ARG2 <http://amr.isi.edu/amr_data/17#xap0> ;
+    amr-terms:mod <http://amr.isi.edu/amr_data/17#x3> .
+
+<http://amr.isi.edu/amr_data/17#x6> a amr-terms:daycare .
+
+<http://amr.isi.edu/amr_data/18#g> a entity-types:government-organization ;
+    rdfs:label "House" .
+
+<http://amr.isi.edu/amr_data/18#x10> a amr-terms:released-report ;
+    propbank:released-report.ARG0 <http://amr.isi.edu/amr_data/18#x13> ;
+    amr-terms:mod <http://amr.isi.edu/amr_data/18#x6>,
+        <http://amr.isi.edu/amr_data/18#x9> .
+
+<http://amr.isi.edu/amr_data/18#x13> a entity-types:government-organization ;
+    rdfs:label "National Academy of Sciences" .
+
+<http://amr.isi.edu/amr_data/18#x2> a propbank:have-org-role-91 ;
+    propbank:have-org-role-91.ARG1 <http://amr.isi.edu/amr_data/18#g> .
+
+<http://amr.isi.edu/amr_data/18#x3> a propbank:vote-01 ;
+    propbank:vote-01.ARG1 <http://amr.isi.edu/amr_data/18#x2> .
+
+<http://amr.isi.edu/amr_data/18#x4> a propbank:follow-01 ;
+    propbank:follow-01.ARG1 <http://amr.isi.edu/amr_data/18#x3> ;
+    propbank:follow-01.ARG2 <http://amr.isi.edu/amr_data/18#x10> .
+
+<http://amr.isi.edu/amr_data/18#x6> a amr-terms:new .
+
+<http://amr.isi.edu/amr_data/18#x9> a amr-terms:yet .
+
+<http://amr.isi.edu/amr_data/19#x10> a propbank:recommend-01 ;
+    propbank:recommend-01.ARG1 <http://amr.isi.edu/amr_data/19#x12> .
+
+<http://amr.isi.edu/amr_data/19#x12> a propbank:tighten-01 ;
+    propbank:tighten-01.ARG1 <http://amr.isi.edu/amr_data/19#x15> .
+
+<http://amr.isi.edu/amr_data/19#x2> a propbank:urge-01 ;
+    propbank:urge-01.ARG1 <http://amr.isi.edu/amr_data/19#x5> .
+
+<http://amr.isi.edu/amr_data/19#x3> a amr-terms:additional .
+
+<http://amr.isi.edu/amr_data/19#x5> a propbank:support-01 ;
+    propbank:support-01.ARG1 <http://amr.isi.edu/amr_data/19#x8> ;
+    amr-terms:mod <http://amr.isi.edu/amr_data/19#x4> .
+
+<http://amr.isi.edu/amr_data/19#x7> a amr-terms:child .
+
+<http://amr.isi.edu/amr_data/19#x8> a amr-terms:care ;
+    amr-terms:mod <http://amr.isi.edu/amr_data/19#x7> .
+
+<http://amr.isi.edu/amr_data/19#x9> a amr-core:and ;
+    amr-terms:op1 <http://amr.isi.edu/amr_data/19#x2> ;
+    amr-terms:op2 <http://amr.isi.edu/amr_data/19#x10> .
+
+<http://amr.isi.edu/amr_data/2#x1> a propbank:return-01 ;
+    propbank:return-01.ARG4 <http://amr.isi.edu/amr_data/2#x4> .
+
+<http://amr.isi.edu/amr_data/20#x1> a propbank:serve-01 ;
+    propbank:serve-01.ARG0 <http://amr.isi.edu/amr_data/20#x5> .
+
+<http://amr.isi.edu/amr_data/20#x3> a amr-terms:each .
+
+<http://amr.isi.edu/amr_data/20#x4> a amr-terms:day-care .
+
+<http://amr.isi.edu/amr_data/21#x1> a amr-terms:this .
+
+<http://amr.isi.edu/amr_data/21#x2> a propbank:recommend-01 ;
+    amr-terms:mod <http://amr.isi.edu/amr_data/21#x1> .
+
+<http://amr.isi.edu/amr_data/21#x3> a amr-terms:possible ;
+    amr-terms:domain <http://amr.isi.edu/amr_data/21#x5> .
+
+<http://amr.isi.edu/amr_data/21#x5> a amr-terms:justified ;
+    propbank:justified.ARG1 <http://amr.isi.edu/amr_data/21#x2> .
+
+<http://amr.isi.edu/amr_data/22#x1> a propbank:contrast-01 ;
+    propbank:contrast-01.ARG2 <http://amr.isi.edu/amr_data/22#x2> .
+
+<http://amr.isi.edu/amr_data/22#x11> a amr-terms:child .
+
+<http://amr.isi.edu/amr_data/22#x2> a propbank:recommend-01 ;
+    propbank:recommend-01.ARG1 <http://amr.isi.edu/amr_data/22#x4> .
+
+<http://amr.isi.edu/amr_data/22#x4> a propbank:evaluate-01 ;
+    propbank:evaluate-01.ARG1 <http://amr.isi.edu/amr_data/22#x9> .
+
+<http://amr.isi.edu/amr_data/22#x9> a amr-terms:fundamental ;
+    amr-terms:mod <http://amr.isi.edu/amr_data/22#x13> .
+
+<http://amr.isi.edu/amr_data/23#x1> a propbank:discuss-01 ;
+    propbank:discuss-01.ARG1 <http://amr.isi.edu/amr_data/23#x4> .
+
+<http://amr.isi.edu/amr_data/23#x3> a amr-terms:child .
+
+<http://amr.isi.edu/amr_data/23#x4> a amr-terms:care ;
+    amr-terms:mod <http://amr.isi.edu/amr_data/23#x3> .
+
+<http://amr.isi.edu/amr_data/23#x5> a propbank:need-01 ;
+    propbank:need-01.ARG0 <http://amr.isi.edu/amr_data/23#x1> .
+
+<http://amr.isi.edu/amr_data/24#x2> a propbank:consider-02 ;
+    propbank:consider-02.ARG1 <http://amr.isi.edu/amr_data/24#x5> .
+
+<http://amr.isi.edu/amr_data/24#x4> a amr-terms:contradictory .
+
+<http://amr.isi.edu/amr_data/24#x5> a amr-terms:issue ;
+    amr-terms:mod <http://amr.isi.edu/amr_data/24#x4> ;
+    amr-terms:quant "2" .
+
+<http://amr.isi.edu/amr_data/25#x10> a propbank:pay-01 ;
+    propbank:pay-01.ARG1 <http://amr.isi.edu/amr_data/25#x13> ;
+    amr-terms:mod <http://amr.isi.edu/amr_data/25#x9> .
+
+<http://amr.isi.edu/amr_data/25#x12> a amr-terms:childcare .
+
+<http://amr.isi.edu/amr_data/25#x2> a amr-terms:high .
+
+<http://amr.isi.edu/amr_data/25#x3> a propbank:cost-01 ;
+    propbank:cost-01.ARG1 <http://amr.isi.edu/amr_data/25#x6> ;
+    amr-terms:mod <http://amr.isi.edu/amr_data/25#x2> .
+
+<http://amr.isi.edu/amr_data/25#x5> a amr-terms:child .
+
+<http://amr.isi.edu/amr_data/25#x6> a amr-terms:care ;
+    amr-terms:mod <http://amr.isi.edu/amr_data/25#x5> .
+
+<http://amr.isi.edu/amr_data/25#x7> a amr-core:and ;
+    amr-terms:op1 <http://amr.isi.edu/amr_data/25#x3> ;
+    amr-terms:op2 <http://amr.isi.edu/amr_data/25#x10> .
+
+<http://amr.isi.edu/amr_data/25#x9> a amr-terms:low .
+
+<http://amr.isi.edu/amr_data/26#m> a amr-core:most .
+
+<http://amr.isi.edu/amr_data/26#x10> a propbank:occupy-01 ;
+    propbank:occupy-01.ARG1 <http://amr.isi.edu/amr_data/26#x3> ;
+    amr-terms:mod <http://amr.isi.edu/amr_data/26#x8>,
+        <http://amr.isi.edu/amr_data/26#x9> .
+
+<http://amr.isi.edu/amr_data/26#x2> a amr-terms:hour .
+
+<http://amr.isi.edu/amr_data/26#x3> a propbank:earn-01 ;
+    amr-terms:mod <http://amr.isi.edu/amr_data/26#x6> ;
+    amr-terms:time <http://amr.isi.edu/amr_data/26#x2> .
+
+<http://amr.isi.edu/amr_data/26#x6> a amr-terms:low ;
+    amr-terms:degree <http://amr.isi.edu/amr_data/26#m> .
+
+<http://amr.isi.edu/amr_data/26#x8> a amr-terms:any .
+
+<http://amr.isi.edu/amr_data/26#x9> a amr-terms:major .
+
+<http://amr.isi.edu/amr_data/27#x1> a amr-terms:childcare .
+
+<http://amr.isi.edu/amr_data/28#h> a amr-terms:hour .
+
+<http://amr.isi.edu/amr_data/28#x10> a propbank:occupy-01 ;
+    amr-terms:mod <http://amr.isi.edu/amr_data/28#x6>,
+        <http://amr.isi.edu/amr_data/28#x8>,
+        <http://amr.isi.edu/amr_data/28#x9> .
+
+<http://amr.isi.edu/amr_data/28#x11> a propbank:earn-01 ;
+    propbank:earn-01.ARG1 <http://amr.isi.edu/amr_data/28#x17>,
+        <http://amr.isi.edu/amr_data/28#x3> .
+
+<http://amr.isi.edu/amr_data/28#x17> a amr-terms:less ;
+    propbank:less.ARG1 <http://amr.isi.edu/amr_data/28#x21> ;
+    amr-terms:degree <http://amr.isi.edu/amr_data/28#xap0> ;
+    amr-terms:duration <http://amr.isi.edu/amr_data/28#x19> .
+
+<http://amr.isi.edu/amr_data/28#x19> a amr-terms:temporal-quantity ;
+    amr-terms:unit <http://amr.isi.edu/amr_data/28#h> .
+
+<http://amr.isi.edu/amr_data/28#x2> a amr-terms:hour .
+
+<http://amr.isi.edu/amr_data/28#x21> a amr-terms:woman .
+
+<http://amr.isi.edu/amr_data/28#x3> a propbank:earn-01 ;
+    propbank:earn-01.ARG1 <http://amr.isi.edu/amr_data/28#x10> ;
+    amr-terms:time <http://amr.isi.edu/amr_data/28#x2> .
+
+<http://amr.isi.edu/amr_data/28#x6> a amr-terms:low .
+
+<http://amr.isi.edu/amr_data/28#x8> a amr-terms:any .
+
+<http://amr.isi.edu/amr_data/28#x9> a amr-terms:major .
+
+<http://amr.isi.edu/amr_data/29#x2> a propbank:serve-01 ;
+    propbank:serve-01.ARG1 <http://amr.isi.edu/amr_data/29#x3> ;
+    propbank:serve-01.ARG2 <http://amr.isi.edu/amr_data/29#x6> .
+
+<http://amr.isi.edu/amr_data/29#x3> a amr-terms:child .
+
+<http://amr.isi.edu/amr_data/29#x5> a amr-terms:kindergarten .
+
+<http://amr.isi.edu/amr_data/29#x6> a amr-core:or ;
+    amr-terms:op1 <http://amr.isi.edu/amr_data/29#x5>,
+        <http://amr.isi.edu/amr_data/29#x9> .
+
+<http://amr.isi.edu/amr_data/29#x7> a amr-terms:elementary .
+
+<http://amr.isi.edu/amr_data/29#x8> a entity-types:school ;
+    amr-terms:mod <http://amr.isi.edu/amr_data/29#x7> .
+
+<http://amr.isi.edu/amr_data/3#x1> a amr-terms:before ;
+    amr-terms:op1 <http://amr.isi.edu/amr_data/3#x6> .
+
+<http://amr.isi.edu/amr_data/3#x11> a amr-terms:high .
+
+<http://amr.isi.edu/amr_data/3#x12> a amr-terms:quality .
+
+<http://amr.isi.edu/amr_data/3#x13> a propbank:afford-01 .
+
+<http://amr.isi.edu/amr_data/3#x14> a amr-terms:child .
+
+<http://amr.isi.edu/amr_data/3#x15> a propbank:care-01 ;
+    amr-terms:mod <http://amr.isi.edu/amr_data/3#x11>,
+        <http://amr.isi.edu/amr_data/3#x12>,
+        <http://amr.isi.edu/amr_data/3#x13>,
+        <http://amr.isi.edu/amr_data/3#x14> .
+
+<http://amr.isi.edu/amr_data/3#x3> a amr-terms:baby .
+
+<http://amr.isi.edu/amr_data/3#x6> a amr-terms:birthday ;
+    propbank:birthday.ARG1 <http://amr.isi.edu/amr_data/3#x9> ;
+    amr-terms:poss <http://amr.isi.edu/amr_data/3#x3> .
+
+<http://amr.isi.edu/amr_data/30#x1> a amr-terms:even .
+
+<http://amr.isi.edu/amr_data/30#x2> a amr-core:more ;
+    amr-terms:mod <http://amr.isi.edu/amr_data/30#x1> .
+
+<http://amr.isi.edu/amr_data/30#x3> a amr-terms:startling ;
+    amr-terms:degree <http://amr.isi.edu/amr_data/30#x2> .
+
+<http://amr.isi.edu/amr_data/31#x15> a propbank:educate-01 .
+
+<http://amr.isi.edu/amr_data/31#x18> a amr-terms:differential ;
+    propbank:differential.ARG1 <http://amr.isi.edu/amr_data/31#x21>,
+        <http://amr.isi.edu/amr_data/31#x3> ;
+    amr-terms:quant <http://amr.isi.edu/amr_data/31#x23> .
+
+<http://amr.isi.edu/amr_data/31#x2> a amr-terms:child-care .
+
+<http://amr.isi.edu/amr_data/31#x20> a amr-terms:hour .
+
+<http://amr.isi.edu/amr_data/31#x21> a propbank:earn-01 ;
+    amr-terms:time <http://amr.isi.edu/amr_data/31#x20> .
+
+<http://amr.isi.edu/amr_data/31#x23> a amr-terms:more-than ;
+    amr-terms:op1 <http://amr.isi.edu/amr_data/31#xap0> .
+
+<http://amr.isi.edu/amr_data/31#x7> a amr-terms:other .
+
+<http://amr.isi.edu/amr_data/31#x8> a amr-terms:woman .
+
+<http://amr.isi.edu/amr_data/31#xap0> a amr-terms:percentage-entity ;
+    amr-terms:value "40" .
+
+<http://amr.isi.edu/amr_data/32#x3> a amr-terms:child-care .
+
+<http://amr.isi.edu/amr_data/32#x5> a propbank:earn-01 ;
+    propbank:earn-01.ARG0 <http://amr.isi.edu/amr_data/32#x4> ;
+    amr-terms:null_edge <http://amr.isi.edu/amr_data/32#x7> .
+
+<http://amr.isi.edu/amr_data/32#x6> a amr-terms:so .
+
+<http://amr.isi.edu/amr_data/32#x7> a amr-terms:little ;
+    amr-terms:degree <http://amr.isi.edu/amr_data/32#x6> .
+
+<http://amr.isi.edu/amr_data/33#x10> a propbank:determine-01 ;
+    propbank:determine-01.ARG0 <http://amr.isi.edu/amr_data/33#x13> ;
+    propbank:determine-01.ARG1 <http://amr.isi.edu/amr_data/33#x2> ;
+    amr-terms:null_edge <http://amr.isi.edu/amr_data/33#x5> .
+
+<http://amr.isi.edu/amr_data/33#x13> a amr-terms:interplay ;
+    amr-terms:quant <http://amr.isi.edu/amr_data/33#x15> .
+
+<http://amr.isi.edu/amr_data/33#x15> a amr-terms:many .
+
+<http://amr.isi.edu/amr_data/33#x2> a amr-terms:wage .
+
+<http://amr.isi.edu/amr_data/33#x5> a amr-terms:everyone ;
+    amr-terms:mod <http://amr.isi.edu/amr_data/33#x6> .
+
+<http://amr.isi.edu/amr_data/33#x6> a amr-terms:else .
+
+<http://amr.isi.edu/amr_data/34#x1> a amr-terms:factor .
+
+<http://amr.isi.edu/amr_data/35#x10> a propbank:demand-01 .
+
+<http://amr.isi.edu/amr_data/35#x11> a amr-core:and ;
+    amr-terms:op1 <http://amr.isi.edu/amr_data/35#x10>,
+        <http://amr.isi.edu/amr_data/35#x12> .
+
+<http://amr.isi.edu/amr_data/35#x12> a propbank:supply-01 .
+
+<http://amr.isi.edu/amr_data/35#x2> a amr-terms:possible ;
+    amr-terms:domain <http://amr.isi.edu/amr_data/35#x4> .
+
+<http://amr.isi.edu/amr_data/35#x4> a propbank:analyze-01 ;
+    amr-terms:prep-under <http://amr.isi.edu/amr_data/35#x8> .
+
+<http://amr.isi.edu/amr_data/36#x2> a amr-terms:much .
+
+<http://amr.isi.edu/amr_data/36#x4> a amr-terms:those ;
+    amr-terms:quant <http://amr.isi.edu/amr_data/36#x2> .
+
+<http://amr.isi.edu/amr_data/37#x10> a amr-terms:possible ;
+    amr-terms:domain <http://amr.isi.edu/amr_data/37#x12> .
+
+<http://amr.isi.edu/amr_data/37#x12> a propbank:pay-01 .
+
+<http://amr.isi.edu/amr_data/37#x2> a propbank:buy-01 ;
+    propbank:buy-01.ARG1 <http://amr.isi.edu/amr_data/37#x4> .
+
+<http://amr.isi.edu/amr_data/37#x4> a amr-terms:service ;
+    amr-terms:poss <http://amr.isi.edu/amr_data/37#x7> .
+
+<http://amr.isi.edu/amr_data/37#x6> a amr-terms:child-care .
+
+<http://amr.isi.edu/amr_data/38#x11> a amr-terms:child .
+
+<http://amr.isi.edu/amr_data/38#x12> a amr-terms:care ;
+    amr-terms:mod <http://amr.isi.edu/amr_data/38#x11> .
+
+<http://amr.isi.edu/amr_data/38#x15> a propbank:seek-01 ;
+    propbank:seek-01.ARG0 <http://amr.isi.edu/amr_data/38#x4> ;
+    propbank:seek-01.ARG1 <http://amr.isi.edu/amr_data/38#x18> .
+
+<http://amr.isi.edu/amr_data/38#x16> a amr-terms:high .
+
+<http://amr.isi.edu/amr_data/38#x2> a propbank:consider-01 .
+
+<http://amr.isi.edu/amr_data/38#x3> a propbank:lead-01 ;
+    propbank:lead-01.ARG0 <http://amr.isi.edu/amr_data/38#x2> ;
+    propbank:lead-01.ARG2 <http://amr.isi.edu/amr_data/38#x6> .
+
+<http://amr.isi.edu/amr_data/38#x6> a propbank:accept-01 ;
+    propbank:accept-01.ARG0 <http://amr.isi.edu/amr_data/38#x4> ;
+    propbank:accept-01.ARG1 <http://amr.isi.edu/amr_data/38#x15>,
+        <http://amr.isi.edu/amr_data/38#x9> .
+
+<http://amr.isi.edu/amr_data/38#x8> a amr-terms:low .
+
+<http://amr.isi.edu/amr_data/38#x9> a amr-terms:wage ;
+    propbank:wage.ARG1 <http://amr.isi.edu/amr_data/38#x12> ;
+    amr-terms:mod <http://amr.isi.edu/amr_data/38#x8> .
+
+<http://amr.isi.edu/amr_data/39#x2> a amr-terms:wage .
+
+<http://amr.isi.edu/amr_data/4#x4> a amr-core:and ;
+    amr-terms:op1 <http://amr.isi.edu/amr_data/4#x3> ;
+    amr-terms:op2 <http://amr.isi.edu/amr_data/4#x5> .
+
+<http://amr.isi.edu/amr_data/4#x5> a amr-terms:urgency .
+
+<http://amr.isi.edu/amr_data/40#x10> a amr-terms:entire .
+
+<http://amr.isi.edu/amr_data/40#x13> a amr-terms:factor ;
+    amr-terms:quant "3" .
+
+<http://amr.isi.edu/amr_data/40#x3> a amr-terms:child-care .
+
+<http://amr.isi.edu/amr_data/40#x4> a amr-terms:center ;
+    amr-terms:mod <http://amr.isi.edu/amr_data/40#x3> .
+
+<http://amr.isi.edu/amr_data/40#x5> a amr-terms:possible ;
+    amr-terms:domain <http://amr.isi.edu/amr_data/40#x6> .
+
+<http://amr.isi.edu/amr_data/40#x6> a propbank:offer-01 ;
+    propbank:offer-01.ARG0 <http://amr.isi.edu/amr_data/40#x4> ;
+    propbank:offer-01.ARG1 <http://amr.isi.edu/amr_data/40#x8> .
+
+<http://amr.isi.edu/amr_data/40#x9> a propbank:depend-01 ;
+    propbank:depend-01.ARG1 <http://amr.isi.edu/amr_data/40#x13>,
+        <http://amr.isi.edu/amr_data/40#x5> ;
+    amr-terms:manner <http://amr.isi.edu/amr_data/40#x10> .
+
+<http://amr.isi.edu/amr_data/41#x2> a amr-terms:gross .
+
+<http://amr.isi.edu/amr_data/41#x3> a amr-terms:revenue ;
+    amr-terms:mod <http://amr.isi.edu/amr_data/41#x2>,
+        <http://amr.isi.edu/amr_data/41#x5> ;
+    amr-terms:quant <http://amr.isi.edu/amr_data/41#x8> .
+
+<http://amr.isi.edu/amr_data/41#x5> a amr-terms:child .
+
+<http://amr.isi.edu/amr_data/42#x1> a propbank:serve-01 ;
+    propbank:serve-01.ARG0 <http://amr.isi.edu/amr_data/42#x5> .
+
+<http://amr.isi.edu/amr_data/42#x3> a amr-terms:each .
+
+<http://amr.isi.edu/amr_data/42#x5> a amr-core:and ;
+    amr-terms:op1 <http://amr.isi.edu/amr_data/42#x4> ;
+    amr-terms:op2 <http://amr.isi.edu/amr_data/42#x8> .
+
+<http://amr.isi.edu/amr_data/42#x7> a amr-terms:overhead .
+
+<http://amr.isi.edu/amr_data/43#x11> a amr-terms:equipment .
+
+<http://amr.isi.edu/amr_data/43#x12> a amr-core:and ;
+    amr-terms:op1 <http://amr.isi.edu/amr_data/43#x9> ;
+    amr-terms:op2 <http://amr.isi.edu/amr_data/43#x11>,
+        <http://amr.isi.edu/amr_data/43#x13>,
+        <http://amr.isi.edu/amr_data/43#x15> .
+
+<http://amr.isi.edu/amr_data/43#x13> a propbank:supply-01 .
+
+<http://amr.isi.edu/amr_data/43#x15> a propbank:insure-02 .
+
+<http://amr.isi.edu/amr_data/43#x17> a amr-terms:payroll .
+
+<http://amr.isi.edu/amr_data/43#x18> a propbank:tax-01 ;
+    propbank:tax-01.ARG1 <http://amr.isi.edu/amr_data/43#x17> .
+
+<http://amr.isi.edu/amr_data/43#x19> a amr-core:and ;
+    amr-terms:op1 <http://amr.isi.edu/amr_data/43#x5> ;
+    amr-terms:op2 <http://amr.isi.edu/amr_data/43#x18> .
+
+<http://amr.isi.edu/amr_data/43#x2> a amr-terms:latter .
+
+<http://amr.isi.edu/amr_data/43#x20> a amr-terms:interest .
+
+<http://amr.isi.edu/amr_data/43#x21> a amr-core:or ;
+    amr-terms:op1 <http://amr.isi.edu/amr_data/43#x20> ;
+    amr-terms:op2 <http://amr.isi.edu/amr_data/43#x22> .
+
+<http://amr.isi.edu/amr_data/43#x22> a propbank:return-01 ;
+    propbank:return-01.ARG4 <http://amr.isi.edu/amr_data/43#x24> .
+
+<http://amr.isi.edu/amr_data/43#x24> a propbank:invest-01 .
+
+<http://amr.isi.edu/amr_data/43#x3> a propbank:include-01 ;
+    propbank:include-01.ARG1 <http://amr.isi.edu/amr_data/43#x19>,
+        <http://amr.isi.edu/amr_data/43#xap0> .
+
+<http://amr.isi.edu/amr_data/43#x5> a propbank:cost-01 ;
+    propbank:cost-01.ARG1 <http://amr.isi.edu/amr_data/43#x7> ;
+    propbank:cost-01.ARG2 <http://amr.isi.edu/amr_data/43#x12>,
+        <http://amr.isi.edu/amr_data/43#x21> .
+
+<http://amr.isi.edu/amr_data/43#x7> a propbank:manage-01 .
+
+<http://amr.isi.edu/amr_data/43#x9> a propbank:rent-02 .
+
+<http://amr.isi.edu/amr_data/43#xap0> a entity-types:thing ;
+    amr-terms:mod <http://amr.isi.edu/amr_data/43#x2> .
+
+<http://amr.isi.edu/amr_data/44#x2> a amr-terms:well .
+
+<http://amr.isi.edu/amr_data/45#x1> a propbank:run-02 .
+
+<http://amr.isi.edu/amr_data/45#x2> a amr-terms:center ;
+    amr-terms:mod <http://amr.isi.edu/amr_data/45#x1> .
+
+<http://amr.isi.edu/amr_data/46#x11> a propbank:include-91 ;
+    propbank:include-91.ARG2 <http://amr.isi.edu/amr_data/46#x13> ;
+    amr-terms:mod <http://amr.isi.edu/amr_data/46#x8> .
+
+<http://amr.isi.edu/amr_data/46#x12> a amr-terms:gross .
+
+<http://amr.isi.edu/amr_data/46#x13> a amr-terms:revenue ;
+    amr-terms:mod <http://amr.isi.edu/amr_data/46#x12> .
+
+<http://amr.isi.edu/amr_data/46#x15> a amr-terms:available ;
+    amr-terms:null_edge <http://amr.isi.edu/amr_data/46#x11> ;
+    amr-terms:purpose <http://amr.isi.edu/amr_data/46#x18> .
+
+<http://amr.isi.edu/amr_data/46#x18> a amr-terms:wage ;
+    amr-terms:poss <http://amr.isi.edu/amr_data/46#x22> .
+
+<http://amr.isi.edu/amr_data/46#x2> a propbank:meet-03 ;
+    propbank:meet-03.ARG0 <http://amr.isi.edu/amr_data/46#x15> ;
+    propbank:meet-03.ARG1 <http://amr.isi.edu/amr_data/46#x6> .
+
+<http://amr.isi.edu/amr_data/46#x21> a amr-terms:child-care .
+
+<http://amr.isi.edu/amr_data/46#x3> a amr-terms:health .
+
+<http://amr.isi.edu/amr_data/46#x4> a amr-core:and ;
+    amr-terms:op1 <http://amr.isi.edu/amr_data/46#x3> ;
+    amr-terms:op2 <http://amr.isi.edu/amr_data/46#x5> .
+
+<http://amr.isi.edu/amr_data/46#x5> a propbank:safe-41 .
+
+<http://amr.isi.edu/amr_data/46#x6> a amr-terms:standard ;
+    amr-terms:topic <http://amr.isi.edu/amr_data/46#x4> .
+
+<http://amr.isi.edu/amr_data/46#x8> a amr-terms:only .
+
+<http://amr.isi.edu/amr_data/47#x11> a amr-terms:monetary-quantity ;
+    amr-terms:unit <http://amr.isi.edu/amr_data/47#y1> .
+
+<http://amr.isi.edu/amr_data/47#x13> a amr-core:year .
+
+<http://amr.isi.edu/amr_data/47#x17> a amr-terms:ratio ;
+    amr-terms:mod "child\\worker" .
+
+<http://amr.isi.edu/amr_data/47#x29> a propbank:wage-01 ;
+    propbank:wage-01.ARG1 <http://amr.isi.edu/amr_data/47#x35> .
+
+<http://amr.isi.edu/amr_data/47#x32> a amr-terms:full-time .
+
+<http://amr.isi.edu/amr_data/47#x34> a amr-terms:year-round .
+
+<http://amr.isi.edu/amr_data/47#x38> a entity-types:country ;
+    rdfs:label "$" ;
+    amr-terms:null_edge <http://amr.isi.edu/amr_data/47#x39>,
+        <http://amr.isi.edu/amr_data/47#x6> .
+
+<http://amr.isi.edu/amr_data/47#x39> a amr-terms:monetary-quantity ;
+    amr-terms:unit <http://amr.isi.edu/amr_data/47#y> .
+
+<http://amr.isi.edu/amr_data/47#x6> a amr-terms:revenue ;
+    propbank:revenue.ARG1 <http://amr.isi.edu/amr_data/47#x22> ;
+    amr-terms:frequency <http://amr.isi.edu/amr_data/47#xap0> ;
+    amr-terms:mod <http://amr.isi.edu/amr_data/47#x8> ;
+    amr-terms:quant <http://amr.isi.edu/amr_data/47#x11> .
+
+<http://amr.isi.edu/amr_data/47#x8> a amr-terms:child .
+
+<http://amr.isi.edu/amr_data/47#xap0> a propbank:rate-entity-91 ;
+    propbank:rate-entity-91.ARG1 <http://amr.isi.edu/amr_data/47#x29> ;
+    propbank:rate-entity-91.ARG2 <http://amr.isi.edu/amr_data/47#x13> .
+
+<http://amr.isi.edu/amr_data/47#y> a amr-terms:yuan .
+
+<http://amr.isi.edu/amr_data/47#y1> a amr-terms:yuan .
+
+<http://amr.isi.edu/amr_data/48#x1> a amr-terms:this .
+
+<http://amr.isi.edu/amr_data/48#x11> a amr-core:or ;
+    amr-terms:op1 <http://amr.isi.edu/amr_data/48#x10> ;
+    amr-terms:op2 <http://amr.isi.edu/amr_data/48#x12> .
+
+<http://amr.isi.edu/amr_data/48#x3> a amr-terms:less .
+
+<http://amr.isi.edu/amr_data/48#x7> a propbank:average-01 ;
+    propbank:average-01.ARG1 <http://amr.isi.edu/amr_data/48#x8> .
+
+<http://amr.isi.edu/amr_data/48#x8> a propbank:wage-01 ;
+    propbank:wage-01.ARG0 <http://amr.isi.edu/amr_data/48#x1> ;
+    propbank:wage-01.ARG1 <http://amr.isi.edu/amr_data/48#x11> ;
+    amr-terms:degree <http://amr.isi.edu/amr_data/48#x3> .
+
+<http://amr.isi.edu/amr_data/49#x1> a entity-types:organization ;
+    rdfs:label "Who" .
+
+<http://amr.isi.edu/amr_data/5#x1> a amr-terms:many .
+
+<http://amr.isi.edu/amr_data/5#x4> a propbank:complain-01 ;
+    propbank:complain-01.ARG0 <http://amr.isi.edu/amr_data/5#x3> .
+
+<http://amr.isi.edu/amr_data/50#x1> a amr-core:and ;
+    amr-terms:op1 <http://amr.isi.edu/amr_data/50#x7> .
+
+<http://amr.isi.edu/amr_data/50#x10> a amr-terms:wage ;
+    amr-terms:mod <http://amr.isi.edu/amr_data/50#x8>,
+        <http://amr.isi.edu/amr_data/50#x9> .
+
+<http://amr.isi.edu/amr_data/50#x7> a propbank:accept-01 ;
+    propbank:accept-01.ARG0 <http://amr.isi.edu/amr_data/50#x6> ;
+    propbank:accept-01.ARG1 <http://amr.isi.edu/amr_data/50#x10> .
+
+<http://amr.isi.edu/amr_data/50#x8> a amr-terms:such .
+
+<http://amr.isi.edu/amr_data/50#x9> a amr-terms:low .
+
+<http://amr.isi.edu/amr_data/51#x1> a amr-terms:current .
+
+<http://amr.isi.edu/amr_data/51#x11> a amr-terms:both .
+
+<http://amr.isi.edu/amr_data/51#x13> a propbank:question-01 ;
+    amr-terms:mod <http://amr.isi.edu/amr_data/51#x11> .
+
+<http://amr.isi.edu/amr_data/51#x2> a amr-terms:research ;
+    amr-terms:time <http://amr.isi.edu/amr_data/51#x1> .
+
+<http://amr.isi.edu/amr_data/51#x4> a amr-terms:null_tag .
+
+<http://amr.isi.edu/amr_data/51#x5> a entity-types:person ;
+    rdfs:label "Lydon" ;
+    amr-terms:null_edge <http://amr.isi.edu/amr_data/51#x4> .
+
+<http://amr.isi.edu/amr_data/51#x6> a amr-core:and ;
+    amr-terms:op1 <http://amr.isi.edu/amr_data/51#x5> .
+
+<http://amr.isi.edu/amr_data/51#x8> a propbank:throw-01 ;
+    propbank:throw-01.ARG0 <http://amr.isi.edu/amr_data/51#x2> ;
+    propbank:throw-01.ARG1 <http://amr.isi.edu/amr_data/51#x13>,
+        <http://amr.isi.edu/amr_data/51#x6>,
+        <http://amr.isi.edu/amr_data/51#x9> .
+
+<http://amr.isi.edu/amr_data/51#x9> a amr-terms:light .
+
+<http://amr.isi.edu/amr_data/52#x10> a amr-terms:specific .
+
+<http://amr.isi.edu/amr_data/52#x12> a amr-terms:woman .
+
+<http://amr.isi.edu/amr_data/52#x2> a propbank:compare-01 ;
+    propbank:compare-01.ARG2 <http://amr.isi.edu/amr_data/52#x9> .
+
+<http://amr.isi.edu/amr_data/52#x4> a amr-terms:woman .
+
+<http://amr.isi.edu/amr_data/52#x7> a amr-terms:general .
+
+<http://amr.isi.edu/amr_data/52#x9> a amr-core:or ;
+    amr-terms:op2 <http://amr.isi.edu/amr_data/52#x10>,
+        <http://amr.isi.edu/amr_data/52#x12>,
+        <http://amr.isi.edu/amr_data/52#x5>,
+        <http://amr.isi.edu/amr_data/52#x7> .
+
+<http://amr.isi.edu/amr_data/53#x3> a amr-terms:elementary .
+
+<http://amr.isi.edu/amr_data/53#x4> a entity-types:school .
+
+<http://amr.isi.edu/amr_data/53#x7> a amr-terms:we .
+
+<http://amr.isi.edu/amr_data/53#x8> a propbank:find-02 ;
+    propbank:find-02.ARG0 <http://amr.isi.edu/amr_data/53#x5>,
+        <http://amr.isi.edu/amr_data/53#x7> .
+
+<http://amr.isi.edu/amr_data/54#x2> a amr-terms:child-care .
+
+<http://amr.isi.edu/amr_data/54#x5> a amr-core:more ;
+    propbank:more.ARG0 <http://amr.isi.edu/amr_data/54#x3> .
+
+<http://amr.isi.edu/amr_data/55#x1> a amr-terms:likely ;
+    amr-terms:domain <http://amr.isi.edu/amr_data/55#x4>,
+        <http://amr.isi.edu/amr_data/55#x7> .
+
+<http://amr.isi.edu/amr_data/55#x10> a amr-terms:child .
+
+<http://amr.isi.edu/amr_data/55#x4> a propbank:marry-01 .
+
+<http://amr.isi.edu/amr_data/55#x6> a amr-core:more .
+
+<http://amr.isi.edu/amr_data/55#x7> a amr-terms:likely ;
+    amr-terms:degree <http://amr.isi.edu/amr_data/55#x6> ;
+    amr-terms:domain <http://amr.isi.edu/amr_data/55#x9> .
+
+<http://amr.isi.edu/amr_data/55#x9> a propbank:have-03 ;
+    propbank:have-03.ARG1 <http://amr.isi.edu/amr_data/55#x10> .
+
+<http://amr.isi.edu/amr_data/56#x1> a amr-core:and ;
+    amr-terms:op1 <http://amr.isi.edu/amr_data/56#x4> .
+
+<http://amr.isi.edu/amr_data/56#x10> a amr-terms:child ;
+    amr-terms:quant <http://amr.isi.edu/amr_data/56#x8> .
+
+<http://amr.isi.edu/amr_data/56#x2> a amr-terms:much .
+
+<http://amr.isi.edu/amr_data/56#x3> a amr-core:more ;
+    amr-terms:degree <http://amr.isi.edu/amr_data/56#x2> .
+
+<http://amr.isi.edu/amr_data/56#x4> a amr-terms:likely ;
+    amr-terms:degree <http://amr.isi.edu/amr_data/56#x3> ;
+    amr-terms:domain <http://amr.isi.edu/amr_data/56#x6> .
+
+<http://amr.isi.edu/amr_data/56#x6> a propbank:have-03 ;
+    propbank:have-03.ARG1 <http://amr.isi.edu/amr_data/56#x10> .
+
+<http://amr.isi.edu/amr_data/56#x8> a amr-core:or ;
+    amr-terms:op1 "3" ;
+    amr-terms:op2 <http://amr.isi.edu/amr_data/56#x9> .
+
+<http://amr.isi.edu/amr_data/56#x9> a amr-core:more .
+
+<http://amr.isi.edu/amr_data/57#x1> a amr-terms:probable .
+
+<http://amr.isi.edu/amr_data/58#x11> a propbank:close-41 ;
+    propbank:close-41.ARG4 <http://amr.isi.edu/amr_data/58#x13> .
+
+<http://amr.isi.edu/amr_data/58#x13> a amr-terms:home .
+
+<http://amr.isi.edu/amr_data/58#x4> a amr-terms:great .
+
+<http://amr.isi.edu/amr_data/58#x5> a entity-types:family .
+
+<http://amr.isi.edu/amr_data/58#x8> a amr-terms:child-care .
+
+<http://amr.isi.edu/amr_data/59#x> a amr-terms:xconcept ;
+    amr-terms:x <http://amr.isi.edu/amr_data/59#x12>,
+        <http://amr.isi.edu/amr_data/59#x3> .
+
+<http://amr.isi.edu/amr_data/59#x12> a amr-core:or ;
+    amr-terms:op1 <http://amr.isi.edu/amr_data/59#x11> ;
+    amr-terms:op2 <http://amr.isi.edu/amr_data/59#x15> .
+
+<http://amr.isi.edu/amr_data/59#x13> a amr-terms:other .
+
+<http://amr.isi.edu/amr_data/59#x14> a amr-terms:woman .
+
+<http://amr.isi.edu/amr_data/59#x2> a propbank:average-01 .
+
+<http://amr.isi.edu/amr_data/59#x3> a propbank:commute-02 ;
+    propbank:commute-02.ARG1 <http://amr.isi.edu/amr_data/59#x7> ;
+    amr-terms:mod <http://amr.isi.edu/amr_data/59#x2> .
+
+<http://amr.isi.edu/amr_data/59#x6> a amr-terms:much .
+
+<http://amr.isi.edu/amr_data/59#x7> a amr-terms:less ;
+    amr-terms:degree <http://amr.isi.edu/amr_data/59#xap0> .
+
+<http://amr.isi.edu/amr_data/59#xap0> a amr-core:more ;
+    amr-terms:quant <http://amr.isi.edu/amr_data/59#x6> .
+
+<http://amr.isi.edu/amr_data/6#x2> a amr-terms:licensed .
+
+<http://amr.isi.edu/amr_data/6#x3> a amr-terms:child .
+
+<http://amr.isi.edu/amr_data/6#x4> a propbank:care-01 ;
+    amr-terms:mod <http://amr.isi.edu/amr_data/6#x2>,
+        <http://amr.isi.edu/amr_data/6#x3> .
+
+<http://amr.isi.edu/amr_data/6#x6> a amr-core:too .
+
+<http://amr.isi.edu/amr_data/6#x7> a amr-terms:expensive ;
+    amr-terms:degree <http://amr.isi.edu/amr_data/6#x6> ;
+    amr-terms:domain <http://amr.isi.edu/amr_data/6#x4> .
+
+<http://amr.isi.edu/amr_data/60#x1> a amr-terms:child-care .
+
+<http://amr.isi.edu/amr_data/60#x3> a amr-terms:also .
+
+<http://amr.isi.edu/amr_data/60#x4> a propbank:seem-01 ;
+    propbank:seem-01.ARG0 <http://amr.isi.edu/amr_data/60#x2> ;
+    amr-terms:mod <http://amr.isi.edu/amr_data/60#x3> .
+
+<http://amr.isi.edu/amr_data/61#x2> a propbank:prefer-01 ;
+    propbank:prefer-01.ARG1 <http://amr.isi.edu/amr_data/61#x4> .
+
+<http://amr.isi.edu/amr_data/61#x3> a amr-terms:part-time .
+
+<http://amr.isi.edu/amr_data/61#x4> a propbank:work-01 ;
+    amr-terms:mod <http://amr.isi.edu/amr_data/61#x3> .
+
+<http://amr.isi.edu/amr_data/62#h> a amr-terms:hour .
+
+<http://amr.isi.edu/amr_data/62#w1> a amr-terms:week .
+
+<http://amr.isi.edu/amr_data/62#x1> a amr-terms:many .
+
+<http://amr.isi.edu/amr_data/62#x12> a amr-terms:temporal-quantity ;
+    amr-terms:unit <http://amr.isi.edu/amr_data/62#h> .
+
+<http://amr.isi.edu/amr_data/62#x14> a amr-terms:temporal-quantity ;
+    amr-terms:unit <http://amr.isi.edu/amr_data/62#w1> .
+
+<http://amr.isi.edu/amr_data/62#x16> a amr-core:and ;
+    amr-terms:op1 <http://amr.isi.edu/amr_data/62#x7> ;
+    amr-terms:op3 <http://amr.isi.edu/amr_data/62#x21> .
+
+<http://amr.isi.edu/amr_data/62#x17> a amr-core:most .
+
+<http://amr.isi.edu/amr_data/62#x20> a amr-terms:other ;
+    amr-terms:quant <http://amr.isi.edu/amr_data/62#x17> .
+
+<http://amr.isi.edu/amr_data/62#x21> a propbank:work-01 ;
+    propbank:work-01.ARG0 <http://amr.isi.edu/amr_data/62#x20> ;
+    amr-terms:degree <http://amr.isi.edu/amr_data/62#x22> ;
+    amr-terms:time <http://amr.isi.edu/amr_data/62#x25> .
+
+<http://amr.isi.edu/amr_data/62#x22> a amr-terms:less .
+
+<http://amr.isi.edu/amr_data/62#x24> a amr-terms:full .
+
+<http://amr.isi.edu/amr_data/62#x25> a amr-core:time ;
+    amr-terms:mod <http://amr.isi.edu/amr_data/62#x24> .
+
+<http://amr.isi.edu/amr_data/62#x3> a amr-terms:child-care .
+
+<http://amr.isi.edu/amr_data/62#x9> a amr-terms:few ;
+    amr-terms:op1 "20" .
+
+<http://amr.isi.edu/amr_data/62#xap0> a propbank:rate-entity-91 ;
+    propbank:rate-entity-91.ARG2 <http://amr.isi.edu/amr_data/62#x14> ;
+    amr-terms:range <http://amr.isi.edu/amr_data/62#x12> .
+
+<http://amr.isi.edu/amr_data/63#x1> a amr-terms:general .
+
+<http://amr.isi.edu/amr_data/63#x3> a amr-terms:occupation ;
+    amr-terms:mod <http://amr.isi.edu/amr_data/63#x1> .
+
+<http://amr.isi.edu/amr_data/64#x1> a amr-core:that .
+
+<http://amr.isi.edu/amr_data/64#x10> a amr-terms:part-time .
+
+<http://amr.isi.edu/amr_data/64#x11> a amr-terms:opportunity ;
+    amr-terms:mod <http://amr.isi.edu/amr_data/64#x10>,
+        <http://amr.isi.edu/amr_data/64#x9> .
+
+<http://amr.isi.edu/amr_data/64#x12> a propbank:pay-01 ;
+    propbank:pay-01.ARG1 <http://amr.isi.edu/amr_data/64#x14> .
+
+<http://amr.isi.edu/amr_data/64#x13> a amr-terms:low .
+
+<http://amr.isi.edu/amr_data/64#x14> a amr-terms:wage ;
+    amr-terms:mod <http://amr.isi.edu/amr_data/64#x13> .
+
+<http://amr.isi.edu/amr_data/64#x5> a propbank:reside-01 .
+
+<http://amr.isi.edu/amr_data/64#x6> a amr-terms:area ;
+    amr-terms:mod <http://amr.isi.edu/amr_data/64#x5> .
+
+<http://amr.isi.edu/amr_data/64#x7> a amr-core:and ;
+    amr-terms:op1 <http://amr.isi.edu/amr_data/64#x1> ;
+    amr-terms:op2 <http://amr.isi.edu/amr_data/64#x6>,
+        <http://amr.isi.edu/amr_data/64#x8> .
+
+<http://amr.isi.edu/amr_data/64#x8> a propbank:afford-01 ;
+    propbank:afford-01.ARG1 <http://amr.isi.edu/amr_data/64#x11>,
+        <http://amr.isi.edu/amr_data/64#x12> .
+
+<http://amr.isi.edu/amr_data/64#x9> a amr-terms:significant .
+
+<http://amr.isi.edu/amr_data/65#x10> a amr-terms:woman .
+
+<http://amr.isi.edu/amr_data/65#x13> a amr-terms:child-care .
+
+<http://amr.isi.edu/amr_data/65#x16> a amr-terms:less ;
+    propbank:less.ARG0 <http://amr.isi.edu/amr_data/65#x14> ;
+    amr-terms:time <http://amr.isi.edu/amr_data/65#x7> .
+
+<http://amr.isi.edu/amr_data/65#x3> a propbank:average-01 .
+
+<http://amr.isi.edu/amr_data/65#x4> a amr-core:age ;
+    amr-terms:mod <http://amr.isi.edu/amr_data/65#x3> .
+
+<http://amr.isi.edu/amr_data/65#x7> a propbank:same-41 ;
+    propbank:same-41.ARG1 <http://amr.isi.edu/amr_data/65#x4> ;
+    propbank:same-41.ARG2 <http://amr.isi.edu/amr_data/65#x11> .
+
+<http://amr.isi.edu/amr_data/65#x9> a amr-terms:other .
+
+<http://amr.isi.edu/amr_data/66#x1> a amr-terms:likely ;
+    amr-terms:null_edge <http://amr.isi.edu/amr_data/66#x4> .
+
+<http://amr.isi.edu/amr_data/66#x3> a amr-terms:other .
+
+<http://amr.isi.edu/amr_data/66#x4> a amr-terms:woman ;
+    amr-terms:mod <http://amr.isi.edu/amr_data/66#x3> .
+
+<http://amr.isi.edu/amr_data/67#x11> a amr-terms:also .
+
+<http://amr.isi.edu/amr_data/67#x12> a propbank:help-01 ;
+    propbank:help-01.ARG1 <http://amr.isi.edu/amr_data/67#x13>,
+        <http://amr.isi.edu/amr_data/67#x5> ;
+    amr-terms:mod <http://amr.isi.edu/amr_data/67#x11> .
+
+<http://amr.isi.edu/amr_data/67#x13> a propbank:explain-01 ;
+    propbank:explain-01.ARG1 <http://amr.isi.edu/amr_data/67#x16> .
+
+<http://amr.isi.edu/amr_data/67#x15> a amr-terms:low .
+
+<http://amr.isi.edu/amr_data/67#x16> a amr-terms:wage ;
+    amr-terms:mod <http://amr.isi.edu/amr_data/67#x15> .
+
+<http://amr.isi.edu/amr_data/67#x5> a propbank:work-01 ;
+    amr-terms:time <http://amr.isi.edu/amr_data/67#xap0> .
+
+<http://amr.isi.edu/amr_data/67#x7> a amr-terms:temporal-quantity ;
+    amr-terms:quant "5" ;
+    amr-terms:unit <http://amr.isi.edu/amr_data/67#y> .
+
+<http://amr.isi.edu/amr_data/67#xap0> a amr-terms:before ;
+    amr-terms:quant <http://amr.isi.edu/amr_data/67#x7> .
+
+<http://amr.isi.edu/amr_data/67#y> a amr-core:year .
+
+<http://amr.isi.edu/amr_data/68#x10> a propbank:leave-01 ;
+    propbank:leave-01.ARG1 <http://amr.isi.edu/amr_data/68#x12> ;
+    propbank:leave-01.ARG2 <http://amr.isi.edu/amr_data/68#xap1> ;
+    amr-terms:frequency <http://amr.isi.edu/amr_data/68#xap2> .
+
+<http://amr.isi.edu/amr_data/68#x12> a amr-terms:job .
+
+<http://amr.isi.edu/amr_data/68#x14> a amr-terms:temporal-quantity ;
+    amr-terms:unit <http://amr.isi.edu/amr_data/68#y> .
+
+<http://amr.isi.edu/amr_data/68#x4> a amr-terms:null_tag .
+
+<http://amr.isi.edu/amr_data/68#x5> a entity-types:organization ;
+    rdfs:label "Academy" .
+
+<http://amr.isi.edu/amr_data/68#x6> a amr-terms:report ;
+    propbank:report.ARG0 <http://amr.isi.edu/amr_data/68#x5> ;
+    amr-terms:null_edge <http://amr.isi.edu/amr_data/68#x4> .
+
+<http://amr.isi.edu/amr_data/68#xap0> a propbank:say-01 ;
+    propbank:say-01.ARG0 <http://amr.isi.edu/amr_data/68#x6> ;
+    propbank:say-01.ARG1 <http://amr.isi.edu/amr_data/68#x10> .
+
+<http://amr.isi.edu/amr_data/68#xap1> a amr-terms:percentage-entity ;
+    amr-terms:value "40" .
+
+<http://amr.isi.edu/amr_data/68#xap2> a propbank:rate-entity-91 ;
+    propbank:rate-entity-91.ARG2 <http://amr.isi.edu/amr_data/68#x14> .
+
+<http://amr.isi.edu/amr_data/68#y> a amr-core:year .
+
+<http://amr.isi.edu/amr_data/69#x2> a amr-terms:other .
+
+<http://amr.isi.edu/amr_data/69#x3> a propbank:differ-02 ;
+    propbank:differ-02.ARG1 <http://amr.isi.edu/amr_data/69#x7> ;
+    amr-terms:mod <http://amr.isi.edu/amr_data/69#x2> ;
+    amr-terms:quant "2" .
+
+<http://amr.isi.edu/amr_data/69#x5> a amr-terms:childcare .
+
+<http://amr.isi.edu/amr_data/69#x7> a amr-core:and ;
+    amr-terms:op1 <http://amr.isi.edu/amr_data/69#x6> ;
+    amr-terms:op2 <http://amr.isi.edu/amr_data/69#x10> .
+
+<http://amr.isi.edu/amr_data/69#x8> a amr-terms:elementary .
+
+<http://amr.isi.edu/amr_data/69#x9> a entity-types:school ;
+    amr-terms:mod <http://amr.isi.edu/amr_data/69#x8> .
+
+<http://amr.isi.edu/amr_data/7#x1> a amr-core:and ;
+    amr-terms:op1 <http://amr.isi.edu/amr_data/7#x5> .
+
+<http://amr.isi.edu/amr_data/7#x10> a amr-terms:formal ;
+    amr-terms:polarity "-" .
+
+<http://amr.isi.edu/amr_data/7#x14> a amr-terms:quality ;
+    amr-terms:mod <http://amr.isi.edu/amr_data/7#x13> .
+
+<http://amr.isi.edu/amr_data/7#x15> a amr-core:and ;
+    amr-terms:op1 <http://amr.isi.edu/amr_data/7#x14> ;
+    amr-terms:op2 <http://amr.isi.edu/amr_data/7#x16> .
+
+<http://amr.isi.edu/amr_data/7#x16> a amr-terms:dependability ;
+    amr-terms:mod <http://amr.isi.edu/amr_data/7#x13> .
+
+<http://amr.isi.edu/amr_data/7#x3> a amr-terms:other .
+
+<http://amr.isi.edu/amr_data/7#x4> a amr-terms:woman ;
+    amr-terms:mod <http://amr.isi.edu/amr_data/7#x3> .
+
+<http://amr.isi.edu/amr_data/7#x5> a propbank:have-03 ;
+    propbank:have-03.ARG0 <http://amr.isi.edu/amr_data/7#x11>,
+        <http://amr.isi.edu/amr_data/7#x4> .
+
+<http://amr.isi.edu/amr_data/70#x2> a propbank:contrast-01 ;
+    propbank:contrast-01.ARG1 <http://amr.isi.edu/amr_data/70#x5>,
+        <http://amr.isi.edu/amr_data/70#x6>,
+        <http://amr.isi.edu/amr_data/70#x9> .
+
+<http://amr.isi.edu/amr_data/70#x4> a amr-terms:other .
+
+<http://amr.isi.edu/amr_data/70#x5> a amr-terms:woman .
+
+<http://amr.isi.edu/amr_data/70#x9> a amr-terms:important .
+
+<http://amr.isi.edu/amr_data/71#x10> a amr-core:year ;
+    amr-terms:mod <http://amr.isi.edu/amr_data/71#x9> .
+
+<http://amr.isi.edu/amr_data/71#x12> a amr-terms:schooling ;
+    amr-terms:time <http://amr.isi.edu/amr_data/71#x10> .
+
+<http://amr.isi.edu/amr_data/71#x4> a propbank:have-03 ;
+    propbank:have-03.ARG0 <http://amr.isi.edu/amr_data/71#x3> ;
+    propbank:have-03.ARG1 <http://amr.isi.edu/amr_data/71#x12> .
+
+<http://amr.isi.edu/amr_data/71#x6> a amr-terms:average ;
+    propbank:average.ARG2 <http://amr.isi.edu/amr_data/71#x4> .
+
+<http://amr.isi.edu/amr_data/71#x9> a amr-core:more .
+
+<http://amr.isi.edu/amr_data/72#x1> a propbank:contrast-01 ;
+    propbank:contrast-01.ARG2 <http://amr.isi.edu/amr_data/72#x6> .
+
+<http://amr.isi.edu/amr_data/72#x12> a propbank:wage-01 .
+
+<http://amr.isi.edu/amr_data/72#x13> a amr-terms:differential ;
+    propbank:differential.ARG1 <http://amr.isi.edu/amr_data/72#x12> ;
+    amr-terms:mod <http://amr.isi.edu/amr_data/72#x7> ;
+    amr-terms:time <http://amr.isi.edu/amr_data/72#x8> .
+
+<http://amr.isi.edu/amr_data/72#x2> a amr-terms:this .
+
+<http://amr.isi.edu/amr_data/72#x3> a propbank:differ-02 ;
+    propbank:differ-02.ARG1 <http://amr.isi.edu/amr_data/72#x5> ;
+    amr-terms:mod <http://amr.isi.edu/amr_data/72#x2> .
+
+<http://amr.isi.edu/amr_data/72#x5> a propbank:educate-01 .
+
+<http://amr.isi.edu/amr_data/72#x6> a propbank:explain-01 ;
+    propbank:explain-01.ARG0 <http://amr.isi.edu/amr_data/72#x3> ;
+    propbank:explain-01.ARG1 <http://amr.isi.edu/amr_data/72#x13> .
+
+<http://amr.isi.edu/amr_data/72#x7> a amr-terms:only .
+
+<http://amr.isi.edu/amr_data/72#x8> a amr-terms:about .
+
+<http://amr.isi.edu/amr_data/74#x7> a amr-terms:public .
+
+<http://amr.isi.edu/amr_data/74#x8> a entity-types:school ;
+    amr-terms:mod <http://amr.isi.edu/amr_data/74#x7> .
+
+<http://amr.isi.edu/amr_data/75#x> a amr-terms:xconcept ;
+    amr-terms:x <http://amr.isi.edu/amr_data/75#x5> .
+
+<http://amr.isi.edu/amr_data/75#x3> a amr-terms:high .
+
+<http://amr.isi.edu/amr_data/75#x4> a amr-terms:unionize ;
+    amr-terms:degree <http://amr.isi.edu/amr_data/75#x3> .
+
+<http://amr.isi.edu/amr_data/75#x5> a amr-core:and ;
+    amr-terms:op1 <http://amr.isi.edu/amr_data/75#x4> ;
+    amr-terms:op2 <http://amr.isi.edu/amr_data/75#x7> .
+
+<http://amr.isi.edu/amr_data/75#x6> a amr-terms:child-care .
+
+<http://amr.isi.edu/amr_data/76#x1> a propbank:contrast-01 ;
+    propbank:contrast-01.ARG2 <http://amr.isi.edu/amr_data/76#x9> .
+
+<http://amr.isi.edu/amr_data/76#x12> a propbank:evidence-01 ;
+    propbank:evidence-01.ARG0 <http://amr.isi.edu/amr_data/76#x15> .
+
+<http://amr.isi.edu/amr_data/76#x15> a amr-terms:fact .
+
+<http://amr.isi.edu/amr_data/76#x2> a amr-terms:again .
+
+<http://amr.isi.edu/amr_data/76#x4> a amr-terms:this .
+
+<http://amr.isi.edu/amr_data/76#x6> a amr-terms:only .
+
+<http://amr.isi.edu/amr_data/76#x8> a amr-terms:partial .
+
+<http://amr.isi.edu/amr_data/76#x9> a propbank:explain-01 ;
+    propbank:explain-01.ARG1 <http://amr.isi.edu/amr_data/76#x12> ;
+    amr-terms:domain <http://amr.isi.edu/amr_data/76#x4> ;
+    amr-terms:mod <http://amr.isi.edu/amr_data/76#x2>,
+        <http://amr.isi.edu/amr_data/76#x6>,
+        <http://amr.isi.edu/amr_data/76#x8> .
+
+<http://amr.isi.edu/amr_data/77#x15> a amr-core:more ;
+    amr-terms:degree <http://amr.isi.edu/amr_data/77#xap0> .
+
+<http://amr.isi.edu/amr_data/77#x17> a amr-terms:child-care .
+
+<http://amr.isi.edu/amr_data/77#x2> a amr-terms:even .
+
+<http://amr.isi.edu/amr_data/77#x3> a amr-terms:non-union .
+
+<http://amr.isi.edu/amr_data/77#x6> a amr-terms:private .
+
+<http://amr.isi.edu/amr_data/77#x7> a amr-terms:elementary .
+
+<http://amr.isi.edu/amr_data/77#x8> a entity-types:school ;
+    amr-terms:mod <http://amr.isi.edu/amr_data/77#x6>,
+        <http://amr.isi.edu/amr_data/77#x7> .
+
+<http://amr.isi.edu/amr_data/77#x9> a propbank:make-01 ;
+    propbank:make-01.ARG0 <http://amr.isi.edu/amr_data/77#x4> ;
+    amr-terms:degree <http://amr.isi.edu/amr_data/77#x15> .
+
+<http://amr.isi.edu/amr_data/78#x10> a amr-terms:other .
+
+<http://amr.isi.edu/amr_data/78#x11> a amr-terms:variable ;
+    amr-terms:mod <http://amr.isi.edu/amr_data/78#x10> ;
+    amr-terms:quant <http://amr.isi.edu/amr_data/78#x9> .
+
+<http://amr.isi.edu/amr_data/78#x2> a amr-core:after ;
+    amr-terms:op1 <http://amr.isi.edu/amr_data/78#x3> .
+
+<http://amr.isi.edu/amr_data/78#x3> a propbank:control-01 ;
+    propbank:control-01.ARG1 <http://amr.isi.edu/amr_data/78#x8> .
+
+<http://amr.isi.edu/amr_data/78#x5> a propbank:educate-01 .
+
+<http://amr.isi.edu/amr_data/78#x7> a propbank:experience-01 .
+
+<http://amr.isi.edu/amr_data/78#x8> a amr-core:and ;
+    amr-terms:op1 <http://amr.isi.edu/amr_data/78#x5>,
+        <http://amr.isi.edu/amr_data/78#x7> ;
+    amr-terms:op2 <http://amr.isi.edu/amr_data/78#x11> .
+
+<http://amr.isi.edu/amr_data/78#x9> a amr-terms:many .
+
+<http://amr.isi.edu/amr_data/79#x11> a propbank:reward-01 ;
+    propbank:reward-01.ARG0 <http://amr.isi.edu/amr_data/79#x3> .
+
+<http://amr.isi.edu/amr_data/79#x2> a propbank:strike-01 .
+
+<http://amr.isi.edu/amr_data/79#x3> a propbank:differ-02 ;
+    propbank:differ-02.ARG1 <http://amr.isi.edu/amr_data/79#x6> ;
+    propbank:differ-02.ARG2 <http://amr.isi.edu/amr_data/79#x2> ;
+    amr-terms:quant "1" .
+
+<http://amr.isi.edu/amr_data/79#x6> a amr-core:and ;
+    amr-terms:op1 <http://amr.isi.edu/amr_data/79#x5> ;
+    amr-terms:op2 <http://amr.isi.edu/amr_data/79#x8> .
+
+<http://amr.isi.edu/amr_data/79#x7> a amr-terms:child-care .
+
+<http://amr.isi.edu/amr_data/8#x1> a amr-terms:some .
+
+<http://amr.isi.edu/amr_data/8#x2> a amr-terms:mother ;
+    amr-terms:quant <http://amr.isi.edu/amr_data/8#x1> .
+
+<http://amr.isi.edu/amr_data/8#x3> a propbank:say-01 ;
+    propbank:say-01.ARG0 <http://amr.isi.edu/amr_data/8#x2> .
+
+<http://amr.isi.edu/amr_data/80#x2> a amr-core:or ;
+    amr-terms:op1 <http://amr.isi.edu/amr_data/80#x3> .
+
+<http://amr.isi.edu/amr_data/80#x3> a propbank:lack-01 ;
+    propbank:lack-01.ARG1 <http://amr.isi.edu/amr_data/80#x5> .
+
+<http://amr.isi.edu/amr_data/80#x5> a propbank:reward-01 .
+
+<http://amr.isi.edu/amr_data/81#x2> a amr-terms:additional .
+
+<http://amr.isi.edu/amr_data/81#x3> a amr-terms:schooling ;
+    amr-terms:mod <http://amr.isi.edu/amr_data/81#x2> .
+
+<http://amr.isi.edu/amr_data/82#x12> a propbank:educate-01 ;
+    amr-terms:mod <http://amr.isi.edu/amr_data/82#x8>,
+        <http://amr.isi.edu/amr_data/82#x9> .
+
+<http://amr.isi.edu/amr_data/82#x2> a amr-terms:wage ;
+    amr-terms:poss <http://amr.isi.edu/amr_data/82#x4> .
+
+<http://amr.isi.edu/amr_data/82#x5> a propbank:rise-01 ;
+    propbank:rise-01.ARG1 <http://amr.isi.edu/amr_data/82#x12>,
+        <http://amr.isi.edu/amr_data/82#x2> ;
+    amr-terms:manner <http://amr.isi.edu/amr_data/82#x6> .
+
+<http://amr.isi.edu/amr_data/82#x6> a amr-terms:appreciably .
+
+<http://amr.isi.edu/amr_data/82#x8> a amr-terms:each .
+
+<http://amr.isi.edu/amr_data/82#x9> a amr-terms:additional .
+
+<http://amr.isi.edu/amr_data/83#x2> a propbank:contrast-01 .
+
+<http://amr.isi.edu/amr_data/83#xap0> a amr-terms:multi-sentence ;
+    amr-terms:poss <http://amr.isi.edu/amr_data/83#x5> ;
+    amr-terms:snt2 <http://amr.isi.edu/amr_data/83#x2> .
+
+<http://amr.isi.edu/amr_data/84#x6> a amr-terms:only .
+
+<http://amr.isi.edu/amr_data/84#x7> a amr-terms:slight ;
+    amr-terms:mod <http://amr.isi.edu/amr_data/84#x6> .
+
+<http://amr.isi.edu/amr_data/84#x8> a amr-core:more ;
+    amr-terms:degree <http://amr.isi.edu/amr_data/84#x7> .
+
+<http://amr.isi.edu/amr_data/85#x2> a propbank:educate-01 .
+
+<http://amr.isi.edu/amr_data/86#x1> a propbank:end-01 ;
+    propbank:end-01.ARG1 <http://amr.isi.edu/amr_data/86#x4> .
+
+<http://amr.isi.edu/amr_data/86#x3> a amr-terms:high .
+
+<http://amr.isi.edu/amr_data/86#x4> a entity-types:school ;
+    amr-terms:mod <http://amr.isi.edu/amr_data/86#x3> .
+
+<http://amr.isi.edu/amr_data/87#x2> a amr-terms:parent .
+
+<http://amr.isi.edu/amr_data/88#x2> a propbank:buy-01 ;
+    propbank:buy-01.ARG1 <http://amr.isi.edu/amr_data/88#x3> .
+
+<http://amr.isi.edu/amr_data/88#x3> a amr-terms:child-care .
+
+<http://amr.isi.edu/amr_data/89#x2> a amr-terms:apparent .
+
+<http://amr.isi.edu/amr_data/89#x3> a amr-terms:unwilling ;
+    amr-terms:mod <http://amr.isi.edu/amr_data/89#x2> .
+
+<http://amr.isi.edu/amr_data/89#x4> a amr-core:or ;
+    amr-terms:op1 <http://amr.isi.edu/amr_data/89#x3> ;
+    amr-terms:op2 <http://amr.isi.edu/amr_data/89#x5> .
+
+<http://amr.isi.edu/amr_data/89#x5> a amr-terms:unable .
+
+<http://amr.isi.edu/amr_data/9#x10> a amr-terms:woman ;
+    amr-terms:mod <http://amr.isi.edu/amr_data/9#x9> .
+
+<http://amr.isi.edu/amr_data/9#x12> a propbank:seek-01 ;
+    propbank:seek-01.ARG1 <http://amr.isi.edu/amr_data/9#x13> .
+
+<http://amr.isi.edu/amr_data/9#x13> a amr-terms:employment .
+
+<http://amr.isi.edu/amr_data/9#x3> a amr-terms:high .
+
+<http://amr.isi.edu/amr_data/9#x4> a propbank:cost-01 ;
+    propbank:cost-01.ARG1 <http://amr.isi.edu/amr_data/9#x7> ;
+    amr-terms:mod <http://amr.isi.edu/amr_data/9#x3> .
+
+<http://amr.isi.edu/amr_data/9#x6> a amr-terms:child .
+
+<http://amr.isi.edu/amr_data/9#x7> a amr-terms:care ;
+    amr-terms:mod <http://amr.isi.edu/amr_data/9#x6> .
+
+<http://amr.isi.edu/amr_data/9#x8> a amr-terms:discourage ;
+    propbank:discourage.ARG1 <http://amr.isi.edu/amr_data/9#x10>,
+        <http://amr.isi.edu/amr_data/9#x4> ;
+    propbank:discourage.ARG2 <http://amr.isi.edu/amr_data/9#x12> .
+
+<http://amr.isi.edu/amr_data/9#x9> a amr-terms:other .
+
+<http://amr.isi.edu/amr_data/90#x2> a propbank:pay-01 ;
+    amr-terms:degree <http://amr.isi.edu/amr_data/90#x3> .
+
+<http://amr.isi.edu/amr_data/90#x3> a amr-core:more .
+
+<http://amr.isi.edu/amr_data/91#x4> a amr-terms:additional .
+
+<http://amr.isi.edu/amr_data/91#x5> a amr-terms:schooling ;
+    amr-terms:mod <http://amr.isi.edu/amr_data/91#x4> .
+
+<http://amr.isi.edu/amr_data/92#x1> a amr-core:or ;
+    amr-terms:op2 <http://amr.isi.edu/amr_data/92#x8> .
+
+<http://amr.isi.edu/amr_data/92#x4> a amr-terms:another .
+
+<http://amr.isi.edu/amr_data/92#x5> a amr-terms:perspective ;
+    amr-terms:mod <http://amr.isi.edu/amr_data/92#x4> .
+
+<http://amr.isi.edu/amr_data/92#x8> a amr-terms:parent ;
+    amr-terms:source <http://amr.isi.edu/amr_data/92#x5> .
+
+<http://amr.isi.edu/amr_data/93#x2> a propbank:buy-01 ;
+    propbank:buy-01.ARG1 <http://amr.isi.edu/amr_data/93#x5> .
+
+<http://amr.isi.edu/amr_data/93#x3> a amr-terms:child-care .
+
+<http://amr.isi.edu/amr_data/93#x5> a amr-terms:unwilling ;
+    amr-terms:domain <http://amr.isi.edu/amr_data/93#x3> .
+
+<http://amr.isi.edu/amr_data/94#x10> a propbank:have-03 ;
+    propbank:have-03.ARG1 <http://amr.isi.edu/amr_data/94#x11> .
+
+<http://amr.isi.edu/amr_data/94#x2> a propbank:see-01 ;
+    propbank:see-01.ARG1 <http://amr.isi.edu/amr_data/94#x6> .
+
+<http://amr.isi.edu/amr_data/94#x5> a amr-terms:ratio ;
+    amr-terms:mod <http://amr.isi.edu/amr_data/94#x8>,
+        "child\\worker" .
+
+<http://amr.isi.edu/amr_data/94#x6> a propbank:rise-01 ;
+    propbank:rise-01.ARG1 <http://amr.isi.edu/amr_data/94#x5> .
+
+<http://amr.isi.edu/amr_data/94#x8> a propbank:exchange-01 ;
+    propbank:exchange-01.ARG3 <http://amr.isi.edu/amr_data/94#x10> .
+
+<http://amr.isi.edu/amr_data/95#x2> a amr-core:more .
+
+<http://amr.isi.edu/amr_data/95#x3> a propbank:educate-01 ;
+    amr-terms:degree <http://amr.isi.edu/amr_data/95#x2> .
+
+<http://amr.isi.edu/amr_data/96#x1> a amr-terms:this .
+
+<http://amr.isi.edu/amr_data/96#x3> a amr-terms:precise .
+
+<http://amr.isi.edu/amr_data/96#x5> a amr-terms:trade-off ;
+    amr-terms:domain <http://amr.isi.edu/amr_data/96#x1> ;
+    amr-terms:manner <http://amr.isi.edu/amr_data/96#x3> .
+
+<http://amr.isi.edu/amr_data/97#x1> a amr-core:that .
+
+<http://amr.isi.edu/amr_data/97#x3> a propbank:make-02 ;
+    propbank:make-02.ARG1 <http://amr.isi.edu/amr_data/97#x1> ;
+    amr-terms:location <http://amr.isi.edu/amr_data/97#x5> .
+
+<http://amr.isi.edu/amr_data/97#x5> a entity-types:country ;
+    rdfs:label "France" .
+
+<http://amr.isi.edu/amr_data/98#x13> a amr-terms:model ;
+    amr-terms:prep-with <http://amr.isi.edu/amr_data/98#x16> .
+
+<http://amr.isi.edu/amr_data/98#x16> a entity-types:country ;
+    rdfs:label "United States" .
+
+<http://amr.isi.edu/amr_data/98#x19> a amr-core:part .
+
+<http://amr.isi.edu/amr_data/98#x2> a entity-types:country ;
+    rdfs:label "France" .
+
+<http://amr.isi.edu/amr_data/98#x22> a amr-terms:child-care .
+
+<http://amr.isi.edu/amr_data/98#x27> a propbank:educate-01 ;
+    propbank:educate-01.ARG1 <http://amr.isi.edu/amr_data/98#x23> ;
+    amr-terms:degree <http://amr.isi.edu/amr_data/98#x19> .
+
+<http://amr.isi.edu/amr_data/98#x28> a amr-core:and ;
+    amr-terms:op1 <http://amr.isi.edu/amr_data/98#x27> ;
+    amr-terms:op2 <http://amr.isi.edu/amr_data/98#x31> .
+
+<http://amr.isi.edu/amr_data/98#x3> a amr-terms:system ;
+    amr-terms:mod <http://amr.isi.edu/amr_data/98#x2> ;
+    amr-terms:topic <http://amr.isi.edu/amr_data/98#x5> .
+
+<http://amr.isi.edu/amr_data/98#x31> a propbank:pay-01 ;
+    propbank:pay-01.ARG2 <http://amr.isi.edu/amr_data/98#x35> .
+
+<http://amr.isi.edu/amr_data/98#x33> a amr-terms:elementary .
+
+<http://amr.isi.edu/amr_data/98#x34> a entity-types:school ;
+    amr-terms:mod <http://amr.isi.edu/amr_data/98#x33> .
+
+<http://amr.isi.edu/amr_data/98#x5> a amr-terms:care ;
+    propbank:care.ARG1 <http://amr.isi.edu/amr_data/98#x7> .
+
+<http://amr.isi.edu/amr_data/98#x7> a amr-terms:pre-schooler .
+
+<http://amr.isi.edu/amr_data/98#x9> a amr-terms:often .
+
+<http://amr.isi.edu/amr_data/99#x3> a amr-terms:ratio ;
+    amr-terms:mod "child\\worker" .
+
+<http://amr.isi.edu/amr_data/99#x8> a propbank:double-01 ;
+    amr-terms:domain <http://amr.isi.edu/amr_data/99#x3> .
+
+entity-types:company a amr-core:NamedEntity .
+
+entity-types:law a amr-core:NamedEntity .
+
+entity-types:publication a amr-core:NamedEntity .
+
+propbank:achieve-01 a amr-core:Frame .
+
+propbank:aid-01 a amr-core:Frame .
+
+propbank:analyze-01 a amr-core:Frame .
+
+propbank:arrange-01 a amr-core:Frame .
+
+propbank:avoid-01 a amr-core:Frame .
+
+propbank:burden-01 a amr-core:Frame .
+
+propbank:call-01 a amr-core:Frame .
+
+propbank:charge-01 a amr-core:Frame .
+
+propbank:close-41 a amr-core:Frame .
+
+propbank:commute-02 a amr-core:Frame .
+
+propbank:complain-01 a amr-core:Frame .
+
+propbank:compromise-01 a amr-core:Frame .
+
+propbank:consider-01 a amr-core:Frame .
+
+propbank:consider-02 a amr-core:Frame .
+
+propbank:control-01 a amr-core:Frame .
+
+propbank:decide-01 a amr-core:Frame .
+
+propbank:demand-01 a amr-core:Frame .
+
+propbank:depend-01 a amr-core:Frame .
+
+propbank:discuss-01 a amr-core:Frame .
+
+propbank:double-01 a amr-core:Frame .
+
+propbank:emphasize-01 a amr-core:Frame .
+
+propbank:employ-02 a amr-core:Frame .
+
+propbank:end-01 a amr-core:Frame .
+
+propbank:estimate-01 a amr-core:Frame .
+
+propbank:evade-01 a amr-core:Frame .
+
+propbank:evaluate-01 a amr-core:Frame .
+
+propbank:evidence-01 a amr-core:Frame .
+
+propbank:exchange-01 a amr-core:Frame .
+
+propbank:expand-01 a amr-core:Frame .
+
+propbank:experience-01 a amr-core:Frame .
+
+propbank:expert-41 a amr-core:Frame .
+
+propbank:fail-01 a amr-core:Frame .
+
+propbank:familiarize-01 a amr-core:Frame .
+
+propbank:find-02 a amr-core:Frame .
+
+propbank:follow-01 a amr-core:Frame .
+
+propbank:free-01 a amr-core:Frame .
+
+propbank:graduate-01 a amr-core:Frame .
+
+propbank:hail-02 a amr-core:Frame .
+
+propbank:hear-01 a amr-core:Frame .
+
+propbank:hold-04 a amr-core:Frame .
+
+propbank:improve-01 a amr-core:Frame .
+
+propbank:include-01 a amr-core:Frame .
+
+propbank:insure-02 a amr-core:Frame .
+
+propbank:invest-01 a amr-core:Frame .
+
+propbank:lack-01 a amr-core:Frame .
+
+propbank:lead-01 a amr-core:Frame .
+
+propbank:leave-01 a amr-core:Frame .
+
+propbank:lift-02 a amr-core:Frame .
+
+propbank:limit-01 a amr-core:Frame .
+
+propbank:make-01 a amr-core:Frame .
+
+propbank:make-02 a amr-core:Frame .
+
+propbank:manage-01 a amr-core:Frame .
+
+propbank:marry-01 a amr-core:Frame .
+
+propbank:meet-03 a amr-core:Frame .
+
+propbank:need-01 a amr-core:Frame .
+
+propbank:nurse-01 a amr-core:Frame .
+
+propbank:produce-01 a amr-core:Frame .
+
+propbank:provide-01 a amr-core:Frame .
+
+propbank:qualify-02 a amr-core:Frame .
+
+propbank:question-01 a amr-core:Frame .
+
+propbank:reach-02 a amr-core:Frame .
+
+propbank:receive-01 a amr-core:Frame .
+
+propbank:remain-01 a amr-core:Frame .
+
+propbank:rent-02 a amr-core:Frame .
+
+propbank:research-01 a amr-core:Frame .
+
+propbank:reside-01 a amr-core:Frame .
+
+propbank:responsible-41 a amr-core:Frame .
+
+propbank:run-02 a amr-core:Frame .
+
+propbank:safe-41 a amr-core:Frame .
+
+propbank:see-01 a amr-core:Frame .
+
+propbank:seem-01 a amr-core:Frame .
+
+propbank:strike-01 a amr-core:Frame .
+
+propbank:supplement-01 a amr-core:Frame .
+
+propbank:tax-01 a amr-core:Frame .
+
+propbank:throw-01 a amr-core:Frame .
+
+propbank:tighten-01 a amr-core:Frame .
+
+propbank:urge-01 a amr-core:Frame .
+
+propbank:use-01 a amr-core:Frame .
+
+propbank:want-01 a amr-core:Frame .
+
+propbank:wish-01 a amr-core:Frame .
+
+amr-terms:about a amr-core:Concept .
+
+amr-terms:again a amr-core:Concept .
+
+amr-terms:almost a amr-core:Concept .
+
+amr-terms:another a amr-core:Concept .
+
+amr-terms:apparent a amr-core:Concept .
+
+amr-terms:appreciably a amr-core:Concept .
+
+amr-terms:appropriate a amr-core:Concept .
+
+amr-terms:area a amr-core:Concept .
+
+amr-terms:associate a amr-core:Concept .
+
+amr-terms:available a amr-core:Concept .
+
+amr-terms:average a amr-core:Concept .
+
+amr-terms:baby a amr-core:Concept .
+
+amr-terms:beyond a amr-core:Concept .
+
+amr-terms:bill a amr-core:Concept .
+
+amr-terms:birthday a amr-core:Concept .
+
+amr-terms:both a amr-core:Concept .
+
+amr-terms:category a amr-core:Concept .
+
+amr-terms:chance a amr-core:Concept .
+
+amr-terms:childless a amr-core:Concept .
+
+amr-terms:college a amr-core:Concept .
+
+amr-terms:contradictory a amr-core:Concept .
+
+amr-terms:daycare a amr-core:Concept .
+
+amr-terms:dependability a amr-core:Concept .
+
+amr-terms:direct a amr-core:Concept .
+
+amr-terms:discourage a amr-core:Concept .
+
+amr-terms:economist a amr-core:Concept .
+
+amr-terms:else a amr-core:Concept .
+
+amr-terms:entire a amr-core:Concept .
+
+amr-terms:equipment a amr-core:Concept .
+
+amr-terms:every a amr-core:Concept .
+
+amr-terms:everyone a amr-core:Concept .
+
+amr-terms:expensive a amr-core:Concept .
+
+amr-terms:extreme a amr-core:Concept .
+
+amr-terms:fact a amr-core:Concept .
+
+amr-terms:fee a amr-core:Concept .
+
+amr-terms:fertility a amr-core:Concept .
+
+amr-terms:few a amr-core:Concept .
+
+amr-terms:formal a amr-core:Concept .
+
+amr-terms:full a amr-core:Concept .
+
+amr-terms:full-time a amr-core:Concept .
+
+amr-terms:fund a amr-core:Concept .
+
+amr-terms:fundamental a amr-core:Concept .
+
+amr-terms:great a amr-core:Concept .
+
+amr-terms:hand a amr-core:Concept .
+
+amr-terms:health a amr-core:Concept .
+
+amr-terms:home a amr-core:Concept .
+
+amr-terms:important a amr-core:Concept .
+
+amr-terms:interest a amr-core:Concept .
+
+amr-terms:interplay a amr-core:Concept .
+
+amr-terms:issue a amr-core:Concept .
+
+amr-terms:justified a amr-core:Concept .
+
+amr-terms:kindergarten a amr-core:Concept .
+
+amr-terms:latter a amr-core:Concept .
+
+amr-terms:licensed a amr-core:Concept .
+
+amr-terms:light a amr-core:Concept .
+
+amr-terms:model a amr-core:Concept .
+
+amr-terms:money a amr-core:Concept .
+
+amr-terms:more-than a amr-core:Concept .
+
+amr-terms:multi-sentence a amr-core:Concept .
+
+amr-terms:non-union a amr-core:Concept .
+
+amr-terms:nursery a amr-core:Concept .
+
+amr-terms:occupation a amr-core:Concept .
+
+amr-terms:often a amr-core:Concept .
+
+amr-terms:opportunity a amr-core:Concept .
+
+amr-terms:over a amr-core:Concept .
+
+amr-terms:partial a amr-core:Concept .
+
+amr-terms:payment a amr-core:Concept .
+
+amr-terms:payroll a amr-core:Concept .
+
+amr-terms:perspective a amr-core:Concept .
+
+amr-terms:poor a amr-core:Concept .
+
+amr-terms:pre-schooler a amr-core:Concept .
+
+amr-terms:precise a amr-core:Concept .
+
+amr-terms:professor a amr-core:Concept .
+
+amr-terms:reason a amr-core:Concept .
+
+amr-terms:released-report a amr-core:Concept .
+
+amr-terms:report a amr-core:Concept .
+
+amr-terms:research a amr-core:Concept .
+
+amr-terms:right a amr-core:Concept .
+
+amr-terms:scope a amr-core:Concept .
+
+amr-terms:significant a amr-core:Concept .
+
+amr-terms:simultaneous a amr-core:Concept .
+
+amr-terms:slight a amr-core:Concept .
+
+amr-terms:so a amr-core:Concept .
+
+amr-terms:some a amr-core:Concept .
+
+amr-terms:specific a amr-core:Concept .
+
+amr-terms:startling a amr-core:Concept .
+
+amr-terms:system a amr-core:Concept .
+
+amr-terms:those a amr-core:Concept .
+
+amr-terms:thursday a amr-core:Concept .
+
+amr-terms:trade-off a amr-core:Concept .
+
+amr-terms:unable a amr-core:Concept .
+
+amr-terms:uncertain a amr-core:Concept .
+
+amr-terms:unionize a amr-core:Concept .
+
+amr-terms:urgency a amr-core:Concept .
+
+amr-terms:variable a amr-core:Concept .
+
+amr-terms:we a amr-core:Concept .
+
+amr-terms:week a amr-core:Concept .
+
+amr-terms:well a amr-core:Concept .
+
+amr-terms:world a amr-core:Concept .
+
+amr-terms:year-round a amr-core:Concept .
+
+amr-terms:yet a amr-core:Concept .
+
+amr-core:after a amr-core:Concept .
+
+amr-core:age a amr-core:Concept .
+
+amr-core:between a amr-core:Concept .
+
+amr-core:date-entity a amr-core:Concept .
+
+amr-core:frequency a amr-core:Concept .
+
+amr-core:part a amr-core:Concept .
+
+amr-core:time a amr-core:Concept .
+
+amr-core:too a amr-core:Concept .
+
+<http://amr.isi.edu/amr_data/101#x5> a entity-types:person ;
+    amr-terms:mod <http://amr.isi.edu/amr_data/101#x4> .
+
+<http://amr.isi.edu/amr_data/102#x10> a entity-types:person .
+
+<http://amr.isi.edu/amr_data/110#x1> a entity-types:government-organization .
+
+<http://amr.isi.edu/amr_data/110#x2> a amr-terms:subsidy ;
+    propbank:subsidy.ARG0 <http://amr.isi.edu/amr_data/110#x1> .
+
+<http://amr.isi.edu/amr_data/117#x10> a entity-types:person .
+
+<http://amr.isi.edu/amr_data/12#x4> a amr-terms:reason .
+
+<http://amr.isi.edu/amr_data/121#x5> a entity-types:person ;
+    amr-terms:mod <http://amr.isi.edu/amr_data/121#x4> .
+
+<http://amr.isi.edu/amr_data/14#x11> a propbank:cost-01 ;
+    propbank:cost-01.ARG2 <http://amr.isi.edu/amr_data/14#x2> .
+
+<http://amr.isi.edu/amr_data/16#x8> a amr-terms:hand .
+
+<http://amr.isi.edu/amr_data/17#xap0> a entity-types:company .
+
+<http://amr.isi.edu/amr_data/19#x15> a amr-terms:standard .
+
+<http://amr.isi.edu/amr_data/19#x18> a amr-terms:number .
+
+<http://amr.isi.edu/amr_data/19#x4> a entity-types:government-organization ;
+    amr-terms:mod <http://amr.isi.edu/amr_data/19#x3> .
+
+<http://amr.isi.edu/amr_data/2#x4> a amr-terms:employment .
+
+<http://amr.isi.edu/amr_data/20#x5> a entity-types:person ;
+    amr-terms:mod <http://amr.isi.edu/amr_data/20#x3>,
+        <http://amr.isi.edu/amr_data/20#x4> .
+
+<http://amr.isi.edu/amr_data/22#x13> a amr-terms:economics ;
+    amr-terms:mod <http://amr.isi.edu/amr_data/22#x11> .
+
+<http://amr.isi.edu/amr_data/25#x13> a entity-types:person ;
+    amr-terms:mod <http://amr.isi.edu/amr_data/25#x12> .
+
+<http://amr.isi.edu/amr_data/27#x2> a entity-types:person ;
+    amr-terms:mod <http://amr.isi.edu/amr_data/27#x1> .
+
+<http://amr.isi.edu/amr_data/28#xap0> a amr-terms:percentage-entity ;
+    amr-terms:value "30" .
+
+<http://amr.isi.edu/amr_data/29#x9> a entity-types:person ;
+    amr-terms:mod <http://amr.isi.edu/amr_data/29#x8> .
+
+<http://amr.isi.edu/amr_data/3#x9> a propbank:call-01 .
+
+<http://amr.isi.edu/amr_data/31#x13> a amr-terms:level ;
+    amr-terms:mod <http://amr.isi.edu/amr_data/31#x15> .
+
+<http://amr.isi.edu/amr_data/31#x9> a entity-types:person ;
+    propbank:person.ARG1 <http://amr.isi.edu/amr_data/31#x8> ;
+    amr-terms:location <http://amr.isi.edu/amr_data/31#x13> ;
+    amr-terms:mod <http://amr.isi.edu/amr_data/31#x7> .
+
+<http://amr.isi.edu/amr_data/32#x4> a entity-types:person ;
+    amr-terms:mod <http://amr.isi.edu/amr_data/32#x3> .
+
+<http://amr.isi.edu/amr_data/35#x8> a amr-terms:category ;
+    amr-terms:example <http://amr.isi.edu/amr_data/35#x11> .
+
+<http://amr.isi.edu/amr_data/37#x7> a entity-types:person ;
+    amr-terms:mod <http://amr.isi.edu/amr_data/37#x10>,
+        <http://amr.isi.edu/amr_data/37#x6> .
+
+<http://amr.isi.edu/amr_data/38#x18> a amr-terms:job ;
+    amr-terms:mod <http://amr.isi.edu/amr_data/38#x16> .
+
+<http://amr.isi.edu/amr_data/4#x3> a amr-core:frequency .
+
+<http://amr.isi.edu/amr_data/40#x8> a entity-types:person .
+
+<http://amr.isi.edu/amr_data/41#x8> a amr-terms:number .
+
+<http://amr.isi.edu/amr_data/42#x4> a entity-types:person ;
+    amr-terms:mod <http://amr.isi.edu/amr_data/42#x3> .
+
+<http://amr.isi.edu/amr_data/42#x8> a entity-types:thing ;
+    propbank:thing.ARG1 <http://amr.isi.edu/amr_data/42#x7> .
+
+<http://amr.isi.edu/amr_data/46#x22> a entity-types:person ;
+    amr-terms:mod <http://amr.isi.edu/amr_data/46#x21> .
+
+<http://amr.isi.edu/amr_data/47#x22> a amr-terms:overhead .
+
+<http://amr.isi.edu/amr_data/47#x35> a entity-types:person ;
+    amr-terms:mod <http://amr.isi.edu/amr_data/47#x32>,
+        <http://amr.isi.edu/amr_data/47#x34> .
+
+<http://amr.isi.edu/amr_data/48#x10> a entity-types:person .
+
+<http://amr.isi.edu/amr_data/48#x12> a entity-types:person .
+
+<http://amr.isi.edu/amr_data/5#x3> a amr-terms:parent ;
+    amr-terms:quant <http://amr.isi.edu/amr_data/5#x1> .
+
+<http://amr.isi.edu/amr_data/52#x5> a entity-types:person ;
+    propbank:person.ARG1 <http://amr.isi.edu/amr_data/52#x4> .
+
+<http://amr.isi.edu/amr_data/53#x5> a entity-types:person ;
+    amr-terms:mod <http://amr.isi.edu/amr_data/53#x3>,
+        <http://amr.isi.edu/amr_data/53#x4> .
+
+<http://amr.isi.edu/amr_data/54#x3> a entity-types:person ;
+    amr-terms:mod <http://amr.isi.edu/amr_data/54#x2> .
+
+<http://amr.isi.edu/amr_data/58#x10> a propbank:stay-01 ;
+    propbank:stay-01.ARG0 <http://amr.isi.edu/amr_data/58#x9> ;
+    propbank:stay-01.ARG3 <http://amr.isi.edu/amr_data/58#x11> .
+
+<http://amr.isi.edu/amr_data/58#x6> a entity-types:thing ;
+    amr-terms:mod <http://amr.isi.edu/amr_data/58#x4>,
+        <http://amr.isi.edu/amr_data/58#x5> .
+
+<http://amr.isi.edu/amr_data/58#x9> a entity-types:person ;
+    amr-terms:mod <http://amr.isi.edu/amr_data/58#x8> .
+
+<http://amr.isi.edu/amr_data/59#x11> a entity-types:person .
+
+<http://amr.isi.edu/amr_data/59#x15> a entity-types:person ;
+    propbank:person.ARG1 <http://amr.isi.edu/amr_data/59#x14> ;
+    amr-terms:mod <http://amr.isi.edu/amr_data/59#x13> .
+
+<http://amr.isi.edu/amr_data/60#x2> a entity-types:person ;
+    amr-terms:mod <http://amr.isi.edu/amr_data/60#x1> .
+
+<http://amr.isi.edu/amr_data/62#x7> a propbank:work-01 ;
+    propbank:work-01.ARG0 <http://amr.isi.edu/amr_data/62#x4> ;
+    propbank:work-01.ARG1 <http://amr.isi.edu/amr_data/62#x9> ;
+    amr-terms:frequency <http://amr.isi.edu/amr_data/62#xap0> .
+
+<http://amr.isi.edu/amr_data/65#x11> a entity-types:person ;
+    propbank:person.ARG1 <http://amr.isi.edu/amr_data/65#x10> ;
+    amr-terms:mod <http://amr.isi.edu/amr_data/65#x9> .
+
+<http://amr.isi.edu/amr_data/65#x14> a entity-types:person ;
+    amr-terms:mod <http://amr.isi.edu/amr_data/65#x13> .
+
+<http://amr.isi.edu/amr_data/69#x10> a entity-types:person ;
+    amr-terms:mod <http://amr.isi.edu/amr_data/69#x9> .
+
+<http://amr.isi.edu/amr_data/69#x6> a entity-types:person ;
+    amr-terms:mod <http://amr.isi.edu/amr_data/69#x5> .
+
+<http://amr.isi.edu/amr_data/7#x11> a entity-types:thing ;
+    propbank:thing.ARG1 <http://amr.isi.edu/amr_data/7#x15> ;
+    amr-terms:manner <http://amr.isi.edu/amr_data/7#x10> .
+
+<http://amr.isi.edu/amr_data/7#x13> a amr-terms:uncertain .
+
+<http://amr.isi.edu/amr_data/70#x6> a entity-types:person ;
+    amr-terms:mod <http://amr.isi.edu/amr_data/70#x4> .
+
+<http://amr.isi.edu/amr_data/71#x3> a entity-types:person .
+
+<http://amr.isi.edu/amr_data/73#x3> a entity-types:person .
+
+<http://amr.isi.edu/amr_data/75#x7> a entity-types:person ;
+    amr-terms:mod <http://amr.isi.edu/amr_data/75#x6> .
+
+<http://amr.isi.edu/amr_data/77#x18> a entity-types:person ;
+    amr-terms:mod <http://amr.isi.edu/amr_data/77#x17> .
+
+<http://amr.isi.edu/amr_data/77#x4> a entity-types:person ;
+    amr-terms:location <http://amr.isi.edu/amr_data/77#x8> ;
+    amr-terms:mod <http://amr.isi.edu/amr_data/77#x2>,
+        <http://amr.isi.edu/amr_data/77#x3> .
+
+<http://amr.isi.edu/amr_data/77#xap0> a amr-terms:percentage-entity ;
+    propbank:percentage-entity.ARG1 <http://amr.isi.edu/amr_data/77#x18> ;
+    amr-terms:value "20" .
+
+<http://amr.isi.edu/amr_data/79#x5> a entity-types:person .
+
+<http://amr.isi.edu/amr_data/79#x8> a entity-types:person ;
+    amr-terms:mod <http://amr.isi.edu/amr_data/79#x7> .
+
+<http://amr.isi.edu/amr_data/82#x4> a entity-types:person .
+
+<http://amr.isi.edu/amr_data/91#x2> a entity-types:person ;
+    propbank:person.ARG1 <http://amr.isi.edu/amr_data/91#x5> .
+
+<http://amr.isi.edu/amr_data/94#x11> a entity-types:person .
+
+<http://amr.isi.edu/amr_data/98#x10> a propbank:hail-02 ;
+    propbank:hail-02.ARG1 <http://amr.isi.edu/amr_data/98#x3> ;
+    propbank:hail-02.ARG2 <http://amr.isi.edu/amr_data/98#x13> ;
+    amr-terms:frequency <http://amr.isi.edu/amr_data/98#x9> .
+
+<http://amr.isi.edu/amr_data/98#x23> a entity-types:person ;
+    amr-terms:mod <http://amr.isi.edu/amr_data/98#x22> .
+
+<http://amr.isi.edu/amr_data/98#x35> a entity-types:person ;
+    amr-terms:mod <http://amr.isi.edu/amr_data/98#x34> .
+
+entity-types:family a amr-core:NamedEntity .
+
+entity-types:organization a amr-core:NamedEntity .
+
+propbank:accept-01 a amr-core:Frame .
+
+propbank:afford-01 a amr-core:Frame .
+
+propbank:cause-01 a amr-core:Frame .
+
+propbank:change-01 a amr-core:Frame .
+
+propbank:compare-01 a amr-core:Frame .
+
+propbank:determine-01 a amr-core:Frame .
+
+propbank:go-01 a amr-core:Frame .
+
+propbank:govern-01 a amr-core:Frame .
+
+propbank:help-01 a amr-core:Frame .
+
+propbank:occupy-01 a amr-core:Frame .
+
+propbank:offer-01 a amr-core:Frame .
+
+propbank:prefer-01 a amr-core:Frame .
+
+propbank:put-01 a amr-core:Frame .
+
+propbank:reduce-01 a amr-core:Frame .
+
+propbank:regulate-01 a amr-core:Frame .
+
+propbank:return-01 a amr-core:Frame .
+
+propbank:reward-01 a amr-core:Frame .
+
+propbank:say-01 a amr-core:Frame .
+
+propbank:seek-01 a amr-core:Frame .
+
+propbank:stay-01 a amr-core:Frame .
+
+propbank:supply-01 a amr-core:Frame .
+
+propbank:support-01 a amr-core:Frame .
+
+propbank:vote-01 a amr-core:Frame .
+
+amr-terms:also a amr-core:Concept .
+
+amr-terms:any a amr-core:Concept .
+
+amr-terms:before a amr-core:Concept .
+
+amr-terms:current a amr-core:Concept .
+
+amr-terms:day-care a amr-core:Concept .
+
+amr-terms:differential a amr-core:Concept .
+
+amr-terms:employment a amr-core:Concept .
+
+amr-terms:factor a amr-core:Concept .
+
+amr-terms:general a amr-core:Concept .
+
+amr-terms:gross a amr-core:Concept .
+
+amr-terms:job a amr-core:Concept .
+
+amr-terms:level a amr-core:Concept .
+
+amr-terms:little a amr-core:Concept .
+
+amr-terms:major a amr-core:Concept .
+
+amr-terms:monetary-quantity a amr-core:Concept .
+
+amr-terms:mother a amr-core:Concept .
+
+amr-terms:new a amr-core:Concept .
+
+amr-terms:number a amr-core:Concept .
+
+amr-terms:part-time a amr-core:Concept .
+
+amr-terms:private a amr-core:Concept .
+
+amr-terms:probable a amr-core:Concept .
+
+amr-terms:public a amr-core:Concept .
+
+amr-terms:quality a amr-core:Concept .
+
+amr-terms:service a amr-core:Concept .
+
+amr-terms:subsidy a amr-core:Concept .
+
+amr-terms:such a amr-core:Concept .
+
+amr-terms:unwilling a amr-core:Concept .
+
+amr-terms:way a amr-core:Concept .
+
+amr-terms:xconcept a amr-core:Concept .
+
+amr-terms:yuan a amr-core:Concept .
+
+<http://amr.isi.edu/amr_data/110#x4> a entity-types:thing ;
+    propbank:thing.ARG0 <http://amr.isi.edu/amr_data/110#x2> ;
+    propbank:thing.ARG1 <http://amr.isi.edu/amr_data/110#x6> .
+
+<http://amr.isi.edu/amr_data/31#x3> a entity-types:person ;
+    amr-terms:mod <http://amr.isi.edu/amr_data/31#x2> .
+
+<http://amr.isi.edu/amr_data/38#x4> a entity-types:person .
+
+<http://amr.isi.edu/amr_data/49#x5> a entity-types:person ;
+    propbank:person.ARG0 <http://amr.isi.edu/amr_data/49#x1> .
+
+<http://amr.isi.edu/amr_data/50#x6> a entity-types:person .
+
+<http://amr.isi.edu/amr_data/62#x4> a entity-types:person ;
+    amr-terms:mod <http://amr.isi.edu/amr_data/62#x3> ;
+    amr-terms:quant <http://amr.isi.edu/amr_data/62#x1> .
+
+<http://amr.isi.edu/amr_data/83#x5> a entity-types:person .
+
+propbank:buy-01 a amr-core:Frame .
+
+propbank:differ-02 a amr-core:Frame .
+
+propbank:expend-01 a amr-core:Frame .
+
+propbank:explain-01 a amr-core:Frame .
+
+propbank:have-org-role-91 a amr-core:Frame .
+
+propbank:include-91 a amr-core:Frame .
+
+propbank:increase-01 a amr-core:Frame .
+
+propbank:rate-entity-91 a amr-core:Frame .
+
+propbank:rise-01 a amr-core:Frame .
+
+propbank:same-41 a amr-core:Frame .
+
+propbank:serve-01 a amr-core:Frame .
+
+propbank:wage-01 a amr-core:Frame .
+
+amr-terms:center a amr-core:Concept .
+
+amr-terms:childcare a amr-core:Concept .
+
+amr-terms:each a amr-core:Concept .
+
+amr-terms:economics a amr-core:Concept .
+
+amr-terms:even a amr-core:Concept .
+
+amr-terms:much a amr-core:Concept .
+
+amr-terms:null_tag a amr-core:Concept .
+
+amr-terms:overhead a amr-core:Concept .
+
+amr-terms:schooling a amr-core:Concept .
+
+amr-terms:standard a amr-core:Concept .
+
+amr-core:that a amr-core:Concept .
+
+<http://amr.isi.edu/amr_data/84#x4> a entity-types:person .
+
+entity-types:country a amr-core:NamedEntity .
+
+propbank:average-01 a amr-core:Frame .
+
+propbank:care-01 a amr-core:Frame .
+
+propbank:recommend-01 a amr-core:Frame .
+
+amr-terms:additional a amr-core:Concept .
+
+amr-terms:revenue a amr-core:Concept .
+
+entity-types:thing a amr-core:NamedEntity .
+
+propbank:cost-01 a amr-core:Frame .
+
+propbank:have-03 a amr-core:Frame .
+
+amr-terms:elementary a amr-core:Concept .
+
+amr-terms:hour a amr-core:Concept .
+
+amr-terms:less a amr-core:Concept .
+
+amr-terms:likely a amr-core:Concept .
+
+amr-terms:many a amr-core:Concept .
+
+amr-terms:only a amr-core:Concept .
+
+amr-terms:parent a amr-core:Concept .
+
+amr-terms:ratio a amr-core:Concept .
+
+amr-core:year a amr-core:Concept .
+
+propbank:earn-01 a amr-core:Frame .
+
+amr-terms:temporal-quantity a amr-core:Concept .
+
+amr-terms:this a amr-core:Concept .
+
+amr-core:most a amr-core:Concept .
+
+propbank:educate-01 a amr-core:Frame .
+
+amr-terms:percentage-entity a amr-core:Concept .
+
+entity-types:school a amr-core:NamedEntity .
+
+propbank:contrast-01 a amr-core:Frame .
+
+amr-terms:high a amr-core:Concept .
+
+amr-terms:low a amr-core:Concept .
+
+entity-types:government-organization a amr-core:NamedEntity .
+
+amr-terms:care a amr-core:Concept .
+
+amr-terms:possible a amr-core:Concept .
+
+propbank:pay-01 a amr-core:Frame .
+
+amr-terms:wage a amr-core:Concept .
+
+amr-core:NamedEntity a amr-core:Concept ;
+    rdfs:label "AMR-EntityType",
+        "AMR-Term" .
+
+propbank:teach-01 a amr-core:Frame .
+
+amr-terms:other a amr-core:Concept .
+
+amr-terms:woman a amr-core:Concept .
+
+amr-core:or a amr-core:Concept .
+
+amr-core:more a amr-core:Concept .
+
+amr-terms:child a amr-core:Concept .
+
+amr-terms:child-care a amr-core:Concept .
+
+amr-core:and a amr-core:Concept .
+
+propbank:work-01 a amr-core:Frame .
+
+entity-types:person a amr-core:NamedEntity .
+
+amr-core:Frame a amr-core:Concept ;
+    rdfs:label "AMR-PropBank-Frame" .
+
+propbank:FrameRole a amr-core:Role ;
+    rdfs:label "AMR-PropBank-Role" .
+
