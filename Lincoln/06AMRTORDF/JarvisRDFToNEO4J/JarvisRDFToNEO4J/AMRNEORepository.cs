@@ -44,23 +44,39 @@ namespace JarvisRDFToNEO4J
                     .Where((Document doc) => doc.Id == docs.Id)
                     .AndWhere((EduSentence edunode) => edunode.Id == edu.Id)
                     .Create("(doc)-[:HAS]->(edunode)").ExecuteWithoutResults();
+                                        
+                    SaveNode(client, edu.Root, null,  edu);
 
-                    SaveNode(client, edu.Root, null,  edu);                                       
+                    CreateRootRelation(client, edu, edu.Root);
 
                 }
             }             
         }
-        public void SaveNode(IGraphClient client, AmrNode Node, AmrNode Parent, EduSentence Sentence)
+
+        private void CreateNode(IGraphClient client, AmrNode Node)
         {
-            
             client.Cypher.Merge("(d:AMRNode { Id : {id}})").OnCreate()
                 .Set("d = {newObject}")
                 .WithParams(
-                    new {
+                    new
+                    {
                         id = Node.Id,
                         newObject = new { Id = Node.Id, Name = Node.Name, Node.PropBank, Node.PropBankName, Node.Description, Node.AmrType }
                     }
                 ).ExecuteWithoutResults();
+        }
+        private void CreateRootRelation(IGraphClient client, EduSentence sentence, AmrNode Root)
+        {
+            client.Cypher.Match("(edu:EduSentence)", "(node:AMRNode)")
+                    .Where((EduSentence edu) => edu.Id == sentence.Id)
+                    .AndWhere((AmrNode node) => node.Id == Root.Id)
+                    .Create("(edu)-[:Root]->(node)").ExecuteWithoutResults();
+        }
+
+        public void SaveNode(IGraphClient client, AmrNode Node, AmrNode Parent, EduSentence Sentence)
+        {
+
+            this.CreateNode(client, Node); 
 
 
             client.Cypher.Match("(node:AMRNode)", "(edunode:EduSentence)")

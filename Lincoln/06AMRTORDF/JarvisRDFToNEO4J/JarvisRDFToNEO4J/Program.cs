@@ -19,22 +19,22 @@ namespace JarvisRDFToNEO4J
 
         static void Main(string[] args)
         {
-            
-            //IGraph g = new Graph();
-            //IGraph h = new Graph();
-            //var parser = new VDS.RDF.Parsing.RdfXmlParser();
-            ////   NTriplesParser ntparser = new NTriplesParser();
-            ////Load using a Filename
-            //parser.Load(g, Path.Combine(Root, "output.xml"));
+
+            IGraph g = new Graph();
+            IGraph h = new Graph();
+            var parser = new VDS.RDF.Parsing.RdfXmlParser();
+            //   NTriplesParser ntparser = new NTriplesParser();
+            //Load using a Filename
+            parser.Load(g, Path.Combine(Root, "output.xml"));
 
 
-            //var document = new Document();
-            //document.Load(g);
-            
-            //AMRNEORepository repo = new AMRNEORepository();
-            //repo.SaveDocument(document);
+            var document = new Document();
+            document.Load(g);
 
-                       
+            AMRNEORepository repo = new AMRNEORepository();
+            repo.SaveDocument(document);
+
+
 
             var rstdocument = new RSTDocumentRepository();
             rstdocument.Load(Path.Combine(Root, "rst.xml")); 
