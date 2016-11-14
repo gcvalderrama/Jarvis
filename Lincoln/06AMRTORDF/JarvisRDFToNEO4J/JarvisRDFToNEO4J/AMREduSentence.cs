@@ -10,14 +10,14 @@ using VDS.RDF.Query;
 
 namespace JarvisRDFToNEO4J
 {
-    public class EduSentence
+    public class AMREduSentence
     {
         public int Id { get; set; }
         public Uri urlid { get; set; }
         public string value { get; set; }
-        public AmrNode Root { get; set; }
-
-        public void LoadData(IGraph graph, AmrNode Target) {
+        public AMRNode Root { get; set; }
+        
+        public void LoadData(IGraph graph, AMRNode Target) {
             SparqlQueryParser qparser = new SparqlQueryParser();
             StringBuilder querystr = new StringBuilder();
             querystr.AppendLine("PREFIX amr-core: <http://amr.isi.edu/rdf/core-amr#>");
@@ -59,14 +59,10 @@ namespace JarvisRDFToNEO4J
             }
 
         }
-
-
-
-
-
-        public List<AmrNode> FindInvertNodes(IGraph graph, AmrNode Parent, List<AmrNode> Historic)
+        
+        private List<AMRNode> FindInvertNodes(IGraph graph, AMRNode Parent, List<AMRNode> Historic)
         {
-            List<AmrNode> response = new List<AmrNode>(); 
+            List<AMRNode> response = new List<AMRNode>(); 
             SparqlQueryParser qparser = new SparqlQueryParser();
             StringBuilder querystr = new StringBuilder();
             querystr.AppendLine("PREFIX amr-core: <http://amr.isi.edu/rdf/core-amr#>");
@@ -92,7 +88,7 @@ namespace JarvisRDFToNEO4J
             {
                 foreach (var result in rset.Results)
                 {
-                    var child = new AmrNode();
+                    var child = new AMRNode();
                     foreach (var r in result)
                     {
                         if (r.Key == "child")
@@ -130,7 +126,7 @@ namespace JarvisRDFToNEO4J
             return response;
         }
 
-        public void LoadChildren(IGraph graph, AmrNode Parent, List<AmrNode> Historic)
+        private void LoadChildren(IGraph graph, AMRNode Parent, List<AMRNode> Historic)
         {
             //if (Parent.Id.ToString() == "http://amr.isi.edu/amr_data/3#x5")
             //    Debugger.Break();
@@ -159,7 +155,7 @@ namespace JarvisRDFToNEO4J
             {
                 foreach (var result in rset.Results)
                 {
-                    var child = new AmrNode();
+                    var child = new AMRNode();
                     foreach (var r in result)
                     {
                         if (r.Key == "child")
@@ -236,14 +232,38 @@ namespace JarvisRDFToNEO4J
             {
                 foreach (var result in rset.Results)
                 {
-                    this.Root = new AmrNode();
+                    this.Root = new AMRNode();
                     this.Root.Id = ((UriNode)result.ElementAt(0).Value).Uri;                    
                     LoadData(graph, this.Root);
-                    LoadChildren(graph, this.Root, new List<AmrNode>() { this.Root });                                        
+                    LoadChildren(graph, this.Root, new List<AMRNode>() { this.Root });                                        
                 }
             }
+        }
+
+        private List<AMRNode> ToList()
+        {
+            List<AMRNode> result = new List<AMRNode>();
+            ToList(this.Root, result);
+            return result;
+        }
+        private void ToList(AMRNode node, List<AMRNode> state)
+        {
+            if (state.Contains(node))
+                return;
+            state.Add(node);
+            foreach (var item in node.Nodes)
+            {
+                ToList(item, state);
+            }
+        }
+        public void ApplyRSTWeight(double score)
+        {
+            var list = this.ToList();
+            foreach (var item in list)
+            {
+                item.RSTWeight = score;
+            }
         }        
-        
     }    
  
 }

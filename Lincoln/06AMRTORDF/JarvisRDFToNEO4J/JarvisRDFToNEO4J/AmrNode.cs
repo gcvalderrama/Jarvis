@@ -6,17 +6,20 @@ using System.Threading.Tasks;
 
 namespace JarvisRDFToNEO4J
 {
-    public class AmrNode
+    public class AMRNode
     {
-
-        public AmrNode()
-        {
-            this.Nodes = new List<AmrNode>();
-        }
+        public List<AMRNode> Nodes { get; set; }
         public Uri Relation { get; set; }
         public bool Direction = true;
-        
-        
+        public double RSTWeight { get; set; }
+        public Uri Id { get; set; }
+        public Uri AmrTypeUri { get; set; }
+        public string AmrType { get; set; }
+        public Uri PropBank { get; set; }
+        public AMRNode()
+        {
+            this.Nodes = new List<AMRNode>();
+        }        
         public string RelationName
         {
             get
@@ -38,7 +41,7 @@ namespace JarvisRDFToNEO4J
 
             }
         }
-        public Uri Id { get; set; }
+        
         public string Name
         {
             get
@@ -46,10 +49,7 @@ namespace JarvisRDFToNEO4J
                 return Id.Fragment.Replace("#", "").Replace("-", "_");
             }
         }
-        public Uri AmrTypeUri { get; set; }
-        public string AmrType { get; set; }
-        public Uri PropBank { get; set; }
-        
+                
         public string PropBankName
         {
             get
@@ -73,7 +73,20 @@ namespace JarvisRDFToNEO4J
             }
         }
 
-        public List<AmrNode> Nodes { get; set; }
+
+        #region Functions
+
+        public void ApplyRSTWeight(double weight, List<AMRNode> State)
+        {
+            this.RSTWeight = weight;
+            foreach (var item in this.Nodes)
+            {
+                ApplyRSTWeight(weight, State);
+            }
+        }       
+
+        #endregion
+
 
     }
 }

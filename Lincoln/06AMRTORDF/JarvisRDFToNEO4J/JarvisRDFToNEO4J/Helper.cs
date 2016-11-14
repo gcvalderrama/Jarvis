@@ -12,7 +12,7 @@ namespace JarvisRDFToNEO4J
     public static class Helper
     {
 
-        public static String GetSentence(IGraph g, EduSentence sentence)
+        public static String GetSentence(IGraph g, AMREduSentence sentence)
         {
             String result = string.Empty;
             SparqlQueryParser qparser = new SparqlQueryParser();
@@ -32,7 +32,7 @@ namespace JarvisRDFToNEO4J
             }
             return result;
         }
-        public static String GetAmrNode(IGraph g, EduSentence sentence)
+        public static String GetAmrNode(IGraph g, AMREduSentence sentence)
         {
             String result = string.Empty;
             SparqlQueryParser qparser = new SparqlQueryParser();
@@ -52,7 +52,7 @@ namespace JarvisRDFToNEO4J
             }
             return result;
         }
-        public static String GetAmrNode(IGraph g, AmrNode Parent)
+        public static String GetAmrNode(IGraph g, AMRNode Parent)
         {
             String result = string.Empty;
             SparqlQueryParser qparser = new SparqlQueryParser();
@@ -81,9 +81,9 @@ namespace JarvisRDFToNEO4J
 
 
         
-        public static List<EduSentence> ReadIds(IGraph g)
+        public static List<AMREduSentence> ReadIds(IGraph g)
         {
-            var result = new List<EduSentence>();
+            var result = new List<AMREduSentence>();
             SparqlQueryParser qparser = new SparqlQueryParser();
             //Then we can parse a SPARQL string into a query
             SparqlQuery q = qparser.ParseFromString("SELECT ?s ?p WHERE { ?s <http://amr.isi.edu/rdf/core-amr#has-id> ?p }");
@@ -95,7 +95,7 @@ namespace JarvisRDFToNEO4J
             {
                 foreach (var set in rset.Results)
                 {
-                    var sentence = new EduSentence();
+                    var sentence = new AMREduSentence();
                     foreach (var r in set)
                     {
                         if (r.Key == "s")

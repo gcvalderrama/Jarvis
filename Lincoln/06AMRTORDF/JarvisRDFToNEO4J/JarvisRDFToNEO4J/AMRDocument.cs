@@ -9,14 +9,14 @@ using VDS.RDF.Query;
 
 namespace JarvisRDFToNEO4J
 {
-    public class Document
+    public class AMRDocument
     {
-        public Document()
+        public AMRDocument()
         {
-            this.EDUSentences = new List<EduSentence>(); 
+            this.EDUSentences = new List<AMREduSentence>(); 
         }
         public string Id { get; set; }
-        public List<EduSentence> EDUSentences { get; set; }
+        public List<AMREduSentence> EDUSentences { get; set; }
         
         public void Load(IGraph graph)
         {
@@ -41,7 +41,7 @@ namespace JarvisRDFToNEO4J
             {
                 foreach (var result in rset.Results)
                 {
-                    var sentence = new EduSentence();
+                    var sentence = new AMREduSentence();
                     foreach (var r in result)
                     {
                         if (r.Key == "s")
