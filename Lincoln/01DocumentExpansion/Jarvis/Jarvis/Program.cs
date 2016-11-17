@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CommandLine;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -7,7 +8,22 @@ using System.Threading.Tasks;
 using System.Xml.Linq;
 namespace Jarvis
 {
-        
+
+    class Options
+    {
+        [Option('i', "input", Required = true,
+          HelpText = "Input file to be processed.")]
+        public string InputFile { get; set; }
+
+        [Option('o', "output", Required =true,
+          HelpText = "Prints all messages to standard output.")]
+        public string OutputFile { get; set; }
+
+        [Option('d', "debug", DefaultValue = false, Required = false,
+          HelpText = "Prints all messages to standard output.")]
+        public bool Debug { get; set; }
+
+    }
     class Program
     {        
         public class Coreference
@@ -103,63 +119,77 @@ namespace Jarvis
         {
             var ValidTarget_Pos = new List<String>() { "PRP", "PRP$" };
             var ValidReplace_Pos = new List<String>() { "NN", "NNS", "NNP", "NNPS" };
-            var directory = @"D:\Tesis2016\Jarvis\Lincoln\02DocumentExpansion\Input";
-            foreach (var item in Directory.GetFiles(directory, "*.xml"))
+
+            var options = new Options();
+            if (CommandLine.Parser.Default.ParseArguments(args, options))
             {
-                var sb_document = new StringBuilder(); 
-                var document = XElement.Load(item);
-                var sentences = GetSentences(document);
-                var references =  GetCoReferences(document, sentences);               
-                            
-                foreach (var sentence in sentences)
+                foreach (var item in Directory.GetFiles(options.InputFile))
                 {
-                    #region coreference 
+                    var sb_document = new StringBuilder();
+                    var document = XElement.Load(item);
+                    var sentences = GetSentences(document);
+                    var references = GetCoReferences(document, sentences);
 
-                    var senreference  = from c in references.SelectMany(x => x.Mentions)
-                                where c.Sentence == sentence.Id &&
-                                      c.Enable
-                                      && ValidTarget_Pos.Contains(c.Head.POS)
-                                      && ValidReplace_Pos.Contains(c.Root.Head.POS)
-                                select c;
-
-                    
-                    //valid_pos.Contains( c.Head.POS)
-                    foreach (var core in senreference)
-                    {   
-                        var start_token = sentence.Tokens.Where(c => c.SentenceLoc == core.Start).First();
-                        var end_token = sentence.Tokens.Where(c => c.SentenceLoc == core.End - 1).First();
-                        var cursor = sentence.Tokens.Find(start_token).Next;
-                        var replace = new List<Token>();
-                        for (int i = 0; i < core.GetLen() - 1; i++)
-                        {
-                            replace.Add(cursor.Value);
-                            cursor = cursor.Next;
-                        }
-                        foreach (var del in replace)
-                        {
-                            sentence.Tokens.Remove(del);
-                        }
-
-                        cursor = sentence.Tokens.Find(start_token);
-                        cursor.Value = new Token()
-                        {
-                            Id = start_token.Id,
-                            CharacterOffsetBegin = start_token.CharacterOffsetBegin,
-                            CharacterOffsetEnd = end_token.CharacterOffsetEnd,
-                            //Word =  string.Format("[{0}({1})| {2}({3})]", core.Text, core.Head.POS, core.Root.Text, core.Root.Head.POS)
-                            Word =  core.Root.Text
-                        };
-                    }
-                    #endregion
-                    StringBuilder sb_sentence = new StringBuilder();
-                    foreach (var token in sentence.Tokens)
+                    foreach (var sentence in sentences)
                     {
-                        sb_sentence.Append(token.Word + " ");
+                        #region coreference 
+
+                        var senreference = from c in references.SelectMany(x => x.Mentions)
+                                           where c.Sentence == sentence.Id &&
+                                                 c.Enable
+                                                 && ValidTarget_Pos.Contains(c.Head.POS)
+                                                 && ValidReplace_Pos.Contains(c.Root.Head.POS)
+                                           select c;
+
+
+                        //valid_pos.Contains( c.Head.POS)
+                        foreach (var core in senreference)
+                        {
+                            var start_token = sentence.Tokens.Where(c => c.SentenceLoc == core.Start).First();
+                            var end_token = sentence.Tokens.Where(c => c.SentenceLoc == core.End - 1).First();
+                            var cursor = sentence.Tokens.Find(start_token).Next;
+                            var replace = new List<Token>();
+                            for (int i = 0; i < core.GetLen() - 1; i++)
+                            {
+                                replace.Add(cursor.Value);
+                                cursor = cursor.Next;
+                            }
+                            foreach (var del in replace)
+                            {
+                                sentence.Tokens.Remove(del);
+                            }
+
+                            cursor = sentence.Tokens.Find(start_token);
+
+                            cursor.Value = new Token()
+                            {
+                                Id = start_token.Id,
+                                CharacterOffsetBegin = start_token.CharacterOffsetBegin,
+                                CharacterOffsetEnd = end_token.CharacterOffsetEnd
+                            };
+                            if (options.Debug)
+                            {
+                                cursor.Value.Word = string.Format("[{0}({1})| {2}({3})]", core.Text, core.Head.POS, core.Root.Text, core.Root.Head.POS);
+                            }
+                            else
+                            {
+                                cursor.Value.Word = core.Root.Text;
+                            }
+                        }
+                        #endregion
+                        StringBuilder sb_sentence = new StringBuilder();
+                        foreach (var token in sentence.Tokens)
+                        {
+                            sb_sentence.Append(token.Word + " ");
+                        }
+                        sb_document.AppendLine(sb_sentence.ToString());
                     }
-                    sb_document.AppendLine(sb_sentence.ToString());
+                    var ouputfile = Path.Combine(options.OutputFile, Path.GetFileNameWithoutExtension(item));
+                    File.WriteAllText(ouputfile + ".txt", sb_document.ToString());
                 }
-                File.WriteAllText(@"D:\Tesis2016\Jarvis\Lincoln\02DocumentExpansion\Output\document_expansion.txt", sb_document.ToString());
-            }            
+
+            }
+             
         }
     }
 }
