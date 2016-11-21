@@ -1,4 +1,5 @@
-﻿using System;
+﻿using JarvisSummarization.CG;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -43,11 +44,16 @@ namespace JarvisSummarization
 
             amrdoc.Digest(); 
 
-            manager.DeleteAllAMR();
+            //manager.DeleteAllAMR();
 
-            manager.SaveAMR(amrdoc); 
+            //manager.SaveAMR(amrdoc);
 
+            CGGraph cgraph = new CGGraph("lincon");
+            cgraph.ReadAMR(amrdoc);
+            cgraph.Digest();
 
+            manager.DeleteAllCG(); 
+            manager.SaveCG(cgraph); 
 
             //RSTReader reader = new RSTReader();
 

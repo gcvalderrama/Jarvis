@@ -21,8 +21,23 @@ namespace JarvisSummarization.AMR
         public string kind { get; set; } //verb , concept
 
         public string description { get; set; }
-        
-        
+
+        public AMRNode Clone(int pid, int pname)
+        {
+            return new AMRNode() {
+                id = pid,
+                graphid =  this.graphid,
+                name = pname,
+                description = this.description,
+                isleaf = this.isleaf,
+                kind = this.kind,
+                label = this.label,
+                nosuffix  = this.nosuffix,
+                rstweight =  this.rstweight,
+                text = this.text
+            };
+        }
+               
         public void ReadXML(XElement nodeelement, int graphid)
         {
             this.graphid = graphid; 

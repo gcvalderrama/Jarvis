@@ -1,30 +1,38 @@
-﻿using System;
+﻿using JarvisSummarization.AMR;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Xml.Linq;
 
-namespace JarvisSummarization.AMR
+namespace JarvisSummarization.CG
 {
-    public class AMRRelation
+    public class CGRelation
     {
         public int Head { get; set; }
         public int Tail { get; set; }
-        public string label { get; set; }        
+        public string label { get; set; }
         public string vncls { get; set; }
         public string vntheta { get; set; }
         public string description { get; set; }
         public string f { get; set; }
-        public void ReadXML(XElement xmlrelation)
+        public CGRelation()
         {
-            this.Head = int.Parse(xmlrelation.Attribute("head").Value);
-            this.Tail = int.Parse(xmlrelation.Attribute("tail").Value);
-            this.label= xmlrelation.Attribute("label").Value;
+
         }
-        public AMRRelation Clone()
+        public CGRelation(AMRRelation relation)
         {
-            var rel = new AMRRelation();
+            this.Head = relation.Head;
+            this.Tail = relation.Tail;
+            this.label = relation.label;
+            this.vncls = relation.vncls;
+            this.vntheta = relation.vntheta;
+            this.description = relation.description;
+            this.f = relation.f;
+        }
+        public CGRelation Clone()
+        {
+            var rel = new CGRelation();
             rel.Head = this.Head;
             rel.Tail = this.Tail;
             rel.label = this.label;

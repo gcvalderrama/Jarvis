@@ -11,7 +11,7 @@ namespace JarvisSummarization.AMR
     public class AMRDocument
     {
         public List<AMRGraph> Graphs { get; set; }
-        public WordNet.WordNetEngine _wordNetEngine = new WordNet.WordNetEngine(@"D:\Tesis2016\WordnetAPI\resources\", false);
+        
         private string propbankPath;
         public AMRDocument(string propbankPath)
         {
@@ -60,62 +60,68 @@ namespace JarvisSummarization.AMR
             {
                 foreach (var node in g.Nodes.Where(c=>c.kind== "verb").ToList())
                 {
-                    var str = File.ReadAllText(Path.Combine(this.propbankPath, node.nosuffix) + ".xml");
+                    var relations = g.Relations.Where(c =>
+                            c.Head == node.name && c.label.Contains("ARG")).ToList();
+
+                    var currentPath = Path.Combine(this.propbankPath, node.nosuffix) + ".xml";
+
+                    if (!File.Exists(currentPath))
+                    {
+                        node.description = "unknow";
+                        foreach (var relation in relations)
+                        {
+                            relation.description = "unknow-propbank";                            
+                            relation.f = "unknow";
+                        }
+                        continue;
+                    }
+
+                    var str = File.ReadAllText(currentPath);
 
                     var propbankelements = XElement.Parse(str);
 
-                    var propbankelement = (from c in propbankelements.Elements("predicate").Elements("roleset")
-                                where c.Attribute("id").Value == node.text.Replace("-", ".")
-                                select c).First();
+                    var propbankelement = (from c in propbankelements.Elements("predicate").Elements("roleset")                                
+                                select c).ElementAt( int.Parse(node.text.Replace(node.nosuffix + "-", "")) -1 );
 
                     node.description = propbankelement.Attribute("name").Value;
-
-                    var relations = g.Relations.Where(c => 
-                            c.Head == node.name && c.label.Contains("ARG") ).ToList();                    
-
+                    
                     foreach (var relation in relations)
                     {
-                        var number = relation.label.Replace("ARG", "");
-
-                        var roleelement = (from c in propbankelement.Elements("roles").Elements("role")
-                                          where c.Attribute("n").Value == number
-                                          select c).First();
-
-                        relation.description = roleelement.Attribute("descr").Value;
-                        relation.role = roleelement.Attribute("f").Value;
-                        var vnx = roleelement.Element("vnrole");
-                        if (vnx != null)
+                        if (!relation.label.Contains("-of"))
                         {
-                            relation.vncls = vnx.Attribute("vncls").Value;
-                            relation.vntheta = vnx.Attribute("vntheta").Value;
+                            var number = relation.label.Replace("ARG", "");
+
+                            var roleelement = (from c in propbankelement.Elements("roles").Elements("role")
+                                               where c.Attribute("n").Value == number
+                                               select c).First();
+
+                            relation.description = roleelement.Attribute("descr").Value.Replace("/", "").Replace("'", "").Replace(@"\", "");
+                            relation.f = roleelement.Attribute("f").Value.ToLower();
+
+                            var tail = g.Nodes.Where(c => c.name == relation.Tail).First();
+                            
+                            var vnx = roleelement.Element("vnrole");
+                            if (vnx != null)
+                            {
+                                relation.vncls = vnx.Attribute("vncls").Value;
+                                relation.vntheta = vnx.Attribute("vntheta").Value;
+                            }
+                        }
+                        else
+                        {
+                            relation.description = "unknow-of";                            
+                            relation.f = "unknow";
                         }
                     }                   
                 }                
             }
         }
 
-        //we will create a virtual AMRGraph that has access to all nodes and guarantee a minimum conection 
-        public void ProcessARGOf()
-        {
-            foreach (var g in this.Graphs)
-            {
-                var relations = from c in g.Relations.Where(c => c.label.Contains("-of"))
-                                select c;
-
-                foreach (var item in relations)
-                {
-                    item.label = item.label.Replace("-of", "");
-                    var tmp = item.Head;
-                    item.Head = item.Tail;
-                    item.Tail = tmp;                     
-                }
-            }
-        }
+        //we will create a virtual AMRGraph that has access to all nodes and guarantee a minimum conection                  
         public void Digest()
-        {
-            ProcessARGOf();
-            ProcessKind();
-        //    ProcessRole();
+        {   
+            ProcessKind();            
+            ProcessRole();
         }
         public void LoadRSTInformation(RST.RSTDocument Document)
         {

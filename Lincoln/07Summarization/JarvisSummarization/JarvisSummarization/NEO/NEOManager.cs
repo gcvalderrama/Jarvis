@@ -1,4 +1,5 @@
-﻿using JarvisSummarization.RST;
+﻿using JarvisSummarization.CG;
+using JarvisSummarization.RST;
 using Neo4j.Driver.V1;
 using Neo4jClient;
 using System;
@@ -246,7 +247,7 @@ namespace JarvisSummarization.NEO
                         client.Cypher.Match("(a:AMRNode)", "(n:AMRNode)")
                         .Where((AMR.AMRNode a) => a.id == headnode.id)
                         .AndWhere((AMR.AMRNode n) => n.id == tailnode.id)
-                        .CreateUnique(string.Format("(a)-[r:amrrelation {{ kind: '{0}'}} ]->(n)", relation.label))
+                        .CreateUnique(string.Format("(a)-[r:amrrelation {{ kind: '{0}', description: '{1}', f:'{2}', vntheta:'{3}' }} ]->(n)", relation.label, relation.description, relation.f, relation.vntheta ))
                         .ExecuteWithoutResults();
                     }
                 }                
@@ -254,5 +255,63 @@ namespace JarvisSummarization.NEO
         }
         #endregion
 
+        #region conceptual graph
+        public void DeleteAllCG()
+        {
+            using (var driver = this.CreateDriver())
+            {
+                using (var session = driver.Session())
+                {
+                    var tran = session.BeginTransaction();
+                    tran.Run("MATCH(n:CGNode) OPTIONAL MATCH (n) -[r] - () DELETE n, r");
+                    tran.Success();
+                }
+                using (var session = driver.Session())
+                {
+                    var tran = session.BeginTransaction();
+                    tran.Run("MATCH(n:CGGraph) OPTIONAL MATCH (n) -[r] - () DELETE n, r");
+                    tran.Success();
+                }
+            }
+        }
+        public void SaveCG(CGGraph Graph)
+        {
+            using (var client = this.CreateClient())
+            {
+                client.Connect();
+
+                client.Cypher.Create("(a:CGGraph {newObject})")
+                  .WithParam("newObject", Graph)
+                  .ExecuteWithoutResults();
+
+                client.Cypher.Match("(a:CGGraph)", "(d:Document)")
+                     .Where((CGGraph a) => a.name == Graph.name)
+                     .AndWhere((Common.Document d) => d.name == Graph.name)
+                     .CreateUnique(string.Format("(d)-[:cg]->(a)"))
+                     .ExecuteWithoutResults();
+
+                foreach (var node in Graph.Nodes)
+                {
+                    client.Cypher.Create("(n:CGNode {newObject})")
+                        .WithParam("newObject", node)
+                        .ExecuteWithoutResults();
+
+                    client.Cypher.Match("(a:CGGraph)", "(n:CGNode)")
+                       .Where((CGGraph a) => a.name == Graph.name)
+                       .AndWhere((CGNode n) => n.id == node.id)
+                       .CreateUnique(string.Format("(a)-[:has]->(n)"))
+                       .ExecuteWithoutResults();
+                }
+                foreach (var relation in Graph.Relations)
+                {                    
+                    client.Cypher.Match("(a:CGNode)", "(n:CGNode)")
+                    .Where((CGNode a) => a.id == relation.Head)
+                    .AndWhere((CGNode n) => n.id == relation.Tail)
+                    .CreateUnique(string.Format("(a)-[r:gcrelation {{ kind: '{0}', description: '{1}', f:'{2}', vntheta:'{3}' }} ]->(n)", relation.label, relation.description, relation.f, relation.vntheta))
+                    .ExecuteWithoutResults();
+                }
+            }
+        }
+        #endregion
     }
 }
