@@ -127,14 +127,11 @@ namespace JarvisSummarization.AMR
         {
             foreach (var graph in this.Graphs)
             {
-                var tokens = Document.Tokens.Where(c => c.sentence == graph.name).OrderBy(c=>c.sentencepos).ToList();
+                
+                var weight = Document.Tokens.Where(c => c.eduid == graph.name).Max(c => c.rstweight);
                 foreach (var node in graph.Nodes)
-                {
-                    var token = tokens.Where(c => c.lemma == node.nosuffix).OrderByDescending(c=>c.rstweight).FirstOrDefault();
-                    if (token != null)
-                    {
-                        node.rstweight = token.rstweight;
-                    }
+                {                    
+                    node.rstweight = weight;                    
                 }
             }            
         }

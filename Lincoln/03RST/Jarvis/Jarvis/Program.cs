@@ -67,6 +67,7 @@ namespace Jarvis
                     }
                     it = next;
                 }
+
                 result.Add(sb.ToString());
             }
             return result; 

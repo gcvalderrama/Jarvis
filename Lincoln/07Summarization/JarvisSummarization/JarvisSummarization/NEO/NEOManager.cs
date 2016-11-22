@@ -222,6 +222,13 @@ namespace JarvisSummarization.NEO
                    .WithParam("newObject", graph)
                    .ExecuteWithoutResults();
 
+                    
+                    client.Cypher.Match("(a:AMRGraph)", "(s:RSTEdu)")
+                        .Where((AMR.AMRGraph a) => a.name == graph.name)
+                        .AndWhere((RSTEdu s) => s.name == graph.name)
+                        .CreateUnique(string.Format("(s)-[:hasedu]->(a)"))
+                        .ExecuteWithoutResults();
+
                     client.Cypher.Match("(a:AMRGraph)", "(s:Sentence)")
                         .Where((AMR.AMRGraph a) => a.name == graph.name)
                         .AndWhere((Common.Sentence s) => s.name == graph.name)

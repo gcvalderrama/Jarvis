@@ -16,8 +16,8 @@ namespace JarvisSummarization
             NEO.NEOManager manager = new NEO.NEOManager();
             //manager.DeleteAllNodes();
 
-            POS.POSReader posreader = new POS.POSReader();
-            var inputpath = @"D:\Tesis2016\Jarvis\Lincoln\02POS\Output\lincon.xml";
+            //POS.POSReader posreader = new POS.POSReader();
+            var inputpath = @"D:\Tesis2016\Jarvis\Lincoln\02SintacticAnalysis\Output\lincon.xml";
             //var document = posreader.Load(inputpath);
             //manager.SaveDocument(document);
 
@@ -29,31 +29,30 @@ namespace JarvisSummarization
 
             rstdocument.EvaluateODonell();
 
-            ////Console.WriteLine( rstdocument.Summarize());
+            //Console.WriteLine( rstdocument.Summarize());
 
-            //manager.DeleteAllRST();
-            //manager.SaveDocumentRST(rstdocument);
+            manager.DeleteAllRST();
+            manager.SaveDocumentRST(rstdocument);
 
 
-            var reader = new AMR.AMRReader();
-            
-            var amrdoc = reader.ReadXML(@"D:\Tesis2016\Jarvis\Lincoln\05AMRParsing\Output\amr-graph.xml",
+            var reader = new AMR.AMRReader();            
+            var amrdoc = reader.ReadXML(@"D:/Tesis2016/Jarvis/Lincoln/05AMRParsing/Output/amr-graph.xml",
                 @"D:\Tesis2016\Propbank\frames");
                         
             amrdoc.LoadRSTInformation(rstdocument);
 
             amrdoc.Digest(); 
 
-            //manager.DeleteAllAMR();
+            manager.DeleteAllAMR();
 
-            //manager.SaveAMR(amrdoc);
+            manager.SaveAMR(amrdoc);
 
-            CGGraph cgraph = new CGGraph("lincon");
-            cgraph.ReadAMR(amrdoc);
-            cgraph.Digest();
+            //CGGraph cgraph = new CGGraph("lincon");
+            //cgraph.ReadAMR(amrdoc);
+            //cgraph.Digest();
 
-            manager.DeleteAllCG(); 
-            manager.SaveCG(cgraph); 
+            //manager.DeleteAllCG(); 
+            //manager.SaveCG(cgraph); 
 
             //RSTReader reader = new RSTReader();
 
