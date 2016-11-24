@@ -18,7 +18,7 @@ namespace JarvisSummarization.AMR
         public string nosuffix { get; set; }
         public bool isleaf { get; set; }
         public double rstweight { get; set; }
-        public string kind { get; set; } //verb , concept
+        
 
         public string description { get; set; }
 
@@ -29,8 +29,7 @@ namespace JarvisSummarization.AMR
                 graphid =  this.graphid,
                 name = pname,
                 description = this.description,
-                isleaf = this.isleaf,
-                kind = this.kind,
+                isleaf = this.isleaf,                
                 label = this.label,
                 nosuffix  = this.nosuffix,
                 rstweight =  this.rstweight,
@@ -47,8 +46,6 @@ namespace JarvisSummarization.AMR
             this.label = nodeelement.Attribute("label").Value;
             this.nosuffix= nodeelement.Attribute("nosuffix").Value;
             this.isleaf = bool.Parse(nodeelement.Attribute("isleaf").Value);
-            this.kind = "root";
-
         }
         
     }

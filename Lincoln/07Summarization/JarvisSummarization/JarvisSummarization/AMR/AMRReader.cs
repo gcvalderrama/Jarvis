@@ -10,9 +10,9 @@ namespace JarvisSummarization.AMR
 {
     public class AMRReader
     {
-        public AMRDocument ReadXML(string path, string propbankpath)
+        public AMRDocument ReadXML(string path)
         {
-            AMRDocument document = new AMRDocument(propbankpath);
+            AMRDocument document = new AMRDocument();
             var str = File.ReadAllText(path);
             var amrelement = XElement.Parse(str);
             var grapselement = from c in amrelement.Elements("graph")

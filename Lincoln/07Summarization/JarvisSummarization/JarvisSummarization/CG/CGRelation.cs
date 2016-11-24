@@ -16,6 +16,7 @@ namespace JarvisSummarization.CG
         public string vntheta { get; set; }
         public string description { get; set; }
         public string f { get; set; }
+        public string log { get; set; }
         public CGRelation()
         {
 
@@ -24,11 +25,7 @@ namespace JarvisSummarization.CG
         {
             this.Head = relation.Head;
             this.Tail = relation.Tail;
-            this.label = relation.label;
-            this.vncls = relation.vncls;
-            this.vntheta = relation.vntheta;
-            this.description = relation.description;
-            this.f = relation.f;
+            this.label = relation.label;            
         }
         public CGRelation Clone()
         {

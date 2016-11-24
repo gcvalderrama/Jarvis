@@ -11,11 +11,9 @@ namespace JarvisSummarization.AMR
     {
         public int Head { get; set; }
         public int Tail { get; set; }
-        public string label { get; set; }        
-        public string vncls { get; set; }
-        public string vntheta { get; set; }
-        public string description { get; set; }
-        public string f { get; set; }
+        public string label { get; set; }                
+        
+        
         public void ReadXML(XElement xmlrelation)
         {
             this.Head = int.Parse(xmlrelation.Attribute("head").Value);
@@ -27,11 +25,7 @@ namespace JarvisSummarization.AMR
             var rel = new AMRRelation();
             rel.Head = this.Head;
             rel.Tail = this.Tail;
-            rel.label = this.label;
-            rel.vncls = this.vncls;
-            rel.vntheta = this.vntheta;
-            rel.description = this.description;
-            rel.f = this.f;
+            rel.label = this.label;            
             return rel;
         }
     }

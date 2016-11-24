@@ -254,7 +254,7 @@ namespace JarvisSummarization.NEO
                         client.Cypher.Match("(a:AMRNode)", "(n:AMRNode)")
                         .Where((AMR.AMRNode a) => a.id == headnode.id)
                         .AndWhere((AMR.AMRNode n) => n.id == tailnode.id)
-                        .CreateUnique(string.Format("(a)-[r:amrrelation {{ kind: '{0}', description: '{1}', f:'{2}', vntheta:'{3}' }} ]->(n)", relation.label, relation.description, relation.f, relation.vntheta ))
+                        .CreateUnique(string.Format("(a)-[r:amrrelation {{ label : '{0}' }} ]->(n)", relation.label ))
                         .ExecuteWithoutResults();
                     }
                 }                
@@ -314,7 +314,7 @@ namespace JarvisSummarization.NEO
                     client.Cypher.Match("(a:CGNode)", "(n:CGNode)")
                     .Where((CGNode a) => a.id == relation.Head)
                     .AndWhere((CGNode n) => n.id == relation.Tail)
-                    .CreateUnique(string.Format("(a)-[r:gcrelation {{ kind: '{0}', description: '{1}', f:'{2}', vntheta:'{3}' }} ]->(n)", relation.label, relation.description, relation.f, relation.vntheta))
+                    .CreateUnique(string.Format("(a)-[r:gcrelation {{ label: '{0}', description: '{1}', f:'{2}', vntheta:'{3}', log:'{4}'}} ]->(n)", relation.label, relation.description, relation.f, relation.vntheta, relation.log))
                     .ExecuteWithoutResults();
                 }
             }

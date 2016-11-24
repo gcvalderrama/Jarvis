@@ -161,6 +161,10 @@
       <HintPath>..\packages\Stanford.NLP.CoreNLP.3.6.0.0\lib\jollyday.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="LAIR.Collections, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\WordnetAPI\Libraries\LAIR.Collections.dll</HintPath>
+    </Reference>
     <Reference Include="Neo4j.Driver, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Neo4j.Driver.1.0.2\lib\dotnet\Neo4j.Driver.dll</HintPath>
       <Private>True</Private>
@@ -212,11 +216,31 @@
     <Compile Include="CG\CGGraph.cs" />
     <Compile Include="CG\CGNode.cs" />
     <Compile Include="CG\CGRelation.cs" />
+    <Compile Include="CG\StrategyCompressGraph.cs" />
+    <Compile Include="CG\StrategyDomain.cs" />
+    <Compile Include="CG\StrategyDuration.cs" />
+    <Compile Include="CG\StrategyFusionLocation.cs" />
+    <Compile Include="CG\StrategyLocation.cs" />
+    <Compile Include="CG\StrategyManner.cs" />
+    <Compile Include="CG\StrategyMod.cs" />
+    <Compile Include="CG\StrategyNameFusion.cs" />
+    <Compile Include="CG\StrategyPageRank.cs" />
+    <Compile Include="CG\StrategySynonym.cs" />
+    <Compile Include="CG\StrategyAssignSemanticRelation.cs" />
+    <Compile Include="CG\StrategyAssignSemanticRole.cs" />
+    <Compile Include="CG\StrategySolveNullEdgeRelations.cs" />
+    <Compile Include="CG\StrategySolveNullNodes.cs" />
+    <Compile Include="CG\StrategySolveOfRelations.cs" />
+    <Compile Include="CG\StrategySplitSemanticRole.cs" />
+    <Compile Include="CG\StrategyTime.cs" />
     <Compile Include="Common\Document.cs" />
     <Compile Include="Common\Sentence.cs" />
     <Compile Include="Common\Token.cs" />
     <Compile Include="NEO\NEOManager.cs" />
     <Compile Include="NEO\NEORSTNode.cs" />
+    <Compile Include="PageRank\KnowledgeGraph.cs" />
+    <Compile Include="PageRank\PageRank.cs" />
+    <Compile Include="PageRank\PRVertex.cs" />
     <Compile Include="POS\POSReader.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

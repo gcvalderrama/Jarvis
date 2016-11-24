@@ -1,4 +1,5 @@
 ﻿using JarvisSummarization.CG;
+using JarvisSummarization.PageRank;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -31,29 +32,30 @@ namespace JarvisSummarization
 
             //Console.WriteLine( rstdocument.Summarize());
 
-            manager.DeleteAllRST();
-            manager.SaveDocumentRST(rstdocument);
+            //manager.DeleteAllRST();
+            //manager.SaveDocumentRST(rstdocument);
 
 
             var reader = new AMR.AMRReader();            
-            var amrdoc = reader.ReadXML(@"D:/Tesis2016/Jarvis/Lincoln/05AMRParsing/Output/amr-graph.xml",
-                @"D:\Tesis2016\Propbank\frames");
+            var amrdoc = reader.ReadXML(@"D:/Tesis2016/Jarvis/Lincoln/05AMRParsing/Output/amr-graph.xml");
                         
-            amrdoc.LoadRSTInformation(rstdocument);
+            amrdoc.LoadRSTInformation(rstdocument);            
 
-            amrdoc.Digest(); 
+            //manager.DeleteAllAMR();
 
-            manager.DeleteAllAMR();
+            //manager.SaveAMR(amrdoc);
 
-            manager.SaveAMR(amrdoc);
-
-            //CGGraph cgraph = new CGGraph("lincon");
-            //cgraph.ReadAMR(amrdoc);
-            //cgraph.Digest();
+            CGGraph cgraph = new CGGraph("lincon", @"D:\Tesis2016\Propbank\frames");
+            cgraph.ReadAMR(amrdoc);
+            cgraph.Digest();
 
             //manager.DeleteAllCG(); 
             //manager.SaveCG(cgraph); 
 
+            
+
+
+            
             //RSTReader reader = new RSTReader();
 
             //var tree =  reader.ReadRSTTree();
