@@ -28,7 +28,8 @@ namespace JarvisSummarization.CG
         public List<CGRelation> Relations { get; set; }
 
         [JsonIgnore]
-        public List<CGInformativeAspect> InformativeAspects { get; set; }
+        public List<CGInformativeAspect> InformativeAspects { get; protected set; }
+        
 
         public CGGraph(string name, string propbankPath)
         {
@@ -112,6 +113,7 @@ namespace JarvisSummarization.CG
                     Who_affected = this.Nodes.Where(c => pos_patients.Contains(c.id)).ToList(),
                     Why = this.Nodes.Where(c => pos_gols.Contains(c.id)).ToList()
                 };
+                aspect.name = this.InformativeAspects.Count + 1;
                 this.InformativeAspects.Add(aspect);
             }
         }

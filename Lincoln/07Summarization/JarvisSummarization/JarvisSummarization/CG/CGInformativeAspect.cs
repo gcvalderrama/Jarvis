@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -14,10 +15,15 @@ namespace JarvisSummarization.CG
                     this.Who_affected.Select(c=>c.pagerank).Sum() +
                     this.Why.Select(c=>c.pagerank).Sum();
             } }
+        [JsonIgnore]
         public List<CGNode> Who { get; set; } //agent
+        [JsonIgnore]
         public List<CGNode> What { get; set; } // rel
+        [JsonIgnore]
         public List<CGNode> Who_affected { get; set; } // patient or gol
+        [JsonIgnore]
         public List<CGNode> Why { get; set; }
+        public int name { get; set; }
         public CGInformativeAspect()
         {
             this.Who = new List<CGNode>();

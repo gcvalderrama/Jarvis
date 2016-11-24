@@ -276,6 +276,12 @@ namespace JarvisSummarization.NEO
                 using (var session = driver.Session())
                 {
                     var tran = session.BeginTransaction();
+                    tran.Run("MATCH(n:CGAspect) OPTIONAL MATCH (n) -[r] - () DELETE n, r");
+                    tran.Success();
+                }
+                using (var session = driver.Session())
+                {
+                    var tran = session.BeginTransaction();
                     tran.Run("MATCH(n:CGGraph) OPTIONAL MATCH (n) -[r] - () DELETE n, r");
                     tran.Success();
                 }
@@ -316,6 +322,51 @@ namespace JarvisSummarization.NEO
                     .AndWhere((CGNode n) => n.id == relation.Tail)
                     .CreateUnique(string.Format("(a)-[r:gcrelation {{ label: '{0}', description: '{1}', f:'{2}', vntheta:'{3}', log:'{4}'}} ]->(n)", relation.label, relation.description, relation.f, relation.vntheta, relation.log))
                     .ExecuteWithoutResults();
+                }
+                foreach (var aspect in Graph.InformativeAspects)
+                {
+                    client.Cypher.Create("(n:CGAspect {newObject})")
+                        .WithParam("newObject", aspect)
+                        .ExecuteWithoutResults();
+
+                    client.Cypher.Match("(a:CGGraph)", "(n:CGAspect)")
+                       .Where((CGGraph a) => a.name == Graph.name)
+                       .AndWhere((CGInformativeAspect n) => n.name == aspect.name)
+                       .CreateUnique(string.Format("(a)-[:hasaspect]->(n)"))
+                       .ExecuteWithoutResults();
+
+                    foreach (var item in aspect.Who)
+                    {
+                        client.Cypher.Match("(a:CGAspect)", "(n:CGNode)")
+                       .Where((CGInformativeAspect a) => a.name == aspect.name)
+                       .AndWhere((CGNode n)=> n.id == item.id)
+                       .CreateUnique(string.Format("(a)-[r:aspect {{ role:'{0}' }} ]->(n)", "who"))
+                       .ExecuteWithoutResults();
+                    }
+                    foreach (var item in aspect.What)
+                    {
+                        client.Cypher.Match("(a:CGAspect)", "(n:CGNode)")
+                       .Where((CGInformativeAspect a) => a.name == aspect.name)
+                       .AndWhere((CGNode n) => n.id == item.id)
+                       .CreateUnique(string.Format("(a)-[r:aspect {{ role:'{0}' }} ]->(n)", "what"))
+                       .ExecuteWithoutResults();
+                    }
+                    foreach (var item in aspect.Who_affected)
+                    {
+                        client.Cypher.Match("(a:CGAspect)", "(n:CGNode)")
+                       .Where((CGInformativeAspect a) => a.name == aspect.name)
+                       .AndWhere((CGNode n) => n.id == item.id)
+                       .CreateUnique(string.Format("(a)-[r:aspect {{ role:'{0}' }} ]->(n)", "who_affected"))
+                       .ExecuteWithoutResults();
+                    }
+                    foreach (var item in aspect.Why)
+                    {
+                        client.Cypher.Match("(a:CGAspect)", "(n:CGNode)")
+                       .Where((CGInformativeAspect a) => a.name == aspect.name)
+                       .AndWhere((CGNode n) => n.id == item.id)
+                       .CreateUnique(string.Format("(a)-[r:aspect {{ role:'{0}' }} ]->(n)", "why"))
+                       .ExecuteWithoutResults();
+                    }
                 }
             }
         }

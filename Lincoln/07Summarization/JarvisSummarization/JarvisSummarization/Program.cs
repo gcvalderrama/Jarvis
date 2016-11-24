@@ -49,21 +49,14 @@ namespace JarvisSummarization
             cgraph.ReadAMR(amrdoc);
             cgraph.Digest();
             cgraph.GenerateInformativeAspects();
-
-
-            foreach (var item in cgraph.InformativeAspects.OrderByDescending(c=>c.weight))
-            {
-                Console.WriteLine(item);
-            }
-
-            //manager.DeleteAllCG(); 
-            //manager.SaveCG(cgraph); 
-
-
-
-
-
-                        
+            
+            //foreach (var item in cgraph.InformativeAspects.OrderByDescending(c=>c.weight))
+            //{
+            //    Console.WriteLine(item);
+            //}
+            manager.DeleteAllCG(); 
+            manager.SaveCG(cgraph); 
+                                    
             //RSTReader reader = new RSTReader();
             //var tree =  reader.ReadRSTTree();
             //tree.Reduce();
