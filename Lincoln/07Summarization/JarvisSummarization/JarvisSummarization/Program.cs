@@ -48,21 +48,25 @@ namespace JarvisSummarization
             CGGraph cgraph = new CGGraph("lincon", @"D:\Tesis2016\Propbank\frames");
             cgraph.ReadAMR(amrdoc);
             cgraph.Digest();
+            cgraph.GenerateInformativeAspects();
+
+
+            foreach (var item in cgraph.InformativeAspects.OrderByDescending(c=>c.weight))
+            {
+                Console.WriteLine(item);
+            }
 
             //manager.DeleteAllCG(); 
             //manager.SaveCG(cgraph); 
 
-            
 
 
-            
+
+
+                        
             //RSTReader reader = new RSTReader();
-
             //var tree =  reader.ReadRSTTree();
-
             //tree.Reduce();
-
-
             //Console.WriteLine(tree.Root.text);
 
             Console.ReadLine(); 

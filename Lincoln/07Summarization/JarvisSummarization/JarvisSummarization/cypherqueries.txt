@@ -1,0 +1,2 @@
+﻿//get nodes with semantic role rel
+match(a:CGNode) where ANY ( item in a.semanticroles where item = 'rel')   return  a order by a.pagerank DESC;

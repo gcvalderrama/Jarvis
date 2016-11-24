@@ -26,12 +26,17 @@ namespace JarvisSummarization.CG
         public List<CGNode> Nodes { get; set; }
         [JsonIgnore]
         public List<CGRelation> Relations { get; set; }
+
+        [JsonIgnore]
+        public List<CGInformativeAspect> InformativeAspects { get; set; }
+
         public CGGraph(string name, string propbankPath)
         {
             this.propbankPath = propbankPath;
             this.name = name; 
             this.Nodes = new List<CGNode>();
             this.Relations = new List<CGRelation>();
+            this.InformativeAspects = new List<CGInformativeAspect>(); 
         }
         
         private void PruneRelationErrors()
@@ -88,6 +93,27 @@ namespace JarvisSummarization.CG
             new StrategyAssignSemanticRole().Execute(this);
             new StrategySynonym().Execute(this);
             new StrategyPageRank(this).Execute(); 
+        }
+
+        
+
+        public void GenerateInformativeAspects()
+        {
+            var rels = this.Nodes.Where(c => c.semanticroles.Contains("rel")).OrderByDescending(c=>c.pagerank).ToList();
+            foreach (var item in rels)
+            {
+                var pos_agents = this.Relations.Where(c => c.Head == item.id && c.f == "pag").Select(c=>c.Tail);
+                var pos_patients = this.Relations.Where(c => c.Head == item.id && c.f == "ppt").Select(c => c.Tail);
+                var pos_gols = this.Relations.Where(c => c.Head == item.id && c.f == "gol").Select(c => c.Tail);
+                var aspect = new CGInformativeAspect()
+                {
+                    Who = this.Nodes.Where(c => pos_agents.Contains(c.id)).ToList(),
+                    What = new List<CGNode>() { item },
+                    Who_affected = this.Nodes.Where(c => pos_patients.Contains(c.id)).ToList(),
+                    Why = this.Nodes.Where(c => pos_gols.Contains(c.id)).ToList()
+                };
+                this.InformativeAspects.Add(aspect);
+            }
         }
         public void ReadAMR(AMRDocument Document)
         {
