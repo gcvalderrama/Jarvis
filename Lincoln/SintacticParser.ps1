@@ -30,6 +30,7 @@ Get-ChildItem $Output01Dir -Filter *.txt |
 }
 
 & "D:\Tesis2016\Jarvis\Lincoln\01DocumentExpansion\Jarvis\Jarvis\bin\release\Jarvis.exe" -i $Output00Dir -o $Output01Dir 
+#-d
 
 
 $OutputSintactic = 'D:\Tesis2016\Jarvis\Lincoln\02SintacticAnalysis\Output'

@@ -28,11 +28,10 @@ public class Main {
         NPPhraseSpec subject = nlgFactory.createNounPhrase("father");
         VPPhraseSpec verb = nlgFactory.createVerbPhrase("bring");
         AdjPhraseSpec adj = nlgFactory.createAdjectivePhrase("nation");
-
         p.setSubject(subject);
         p.setVerb(verb);
         p.setObject(adj);
-        p.addComplement("for this " + "continent");
+        p.addComplement("continent");
         output =  realiser.realiseSentence(p);
         System.out.println(output);
 
