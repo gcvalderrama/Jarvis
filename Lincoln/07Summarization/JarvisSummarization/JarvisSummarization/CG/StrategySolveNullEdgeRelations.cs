@@ -12,7 +12,7 @@ namespace JarvisSummarization.CG
         {
             foreach (var item in graph.Relations.Where(c=>c.label == "null_edge").ToList())
             {
-                graph.Relations.Remove(item);
+                graph.RemoveRelation(item);
             }            
         }
     }

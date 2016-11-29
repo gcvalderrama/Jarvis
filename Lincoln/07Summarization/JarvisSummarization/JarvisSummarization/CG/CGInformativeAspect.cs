@@ -7,29 +7,138 @@ using System.Threading.Tasks;
 
 namespace JarvisSummarization.CG
 {
+    public class CGWhy
+    {
+        public double pagerank
+        {
+            get
+            {
+                return this.Items.Sum(c => c.Item1.pagerank + c.Item2.Sum(d => d.pagerank));
+            }
+        }
+        public List<Tuple<CGNode, IEnumerable<CGNode>>> Items { get; set; }
+        public CGWhy()
+        {
+            this.Items = new List<Tuple<CGNode, IEnumerable<CGNode>>>();
+        }
+        public override string ToString()
+        {
+            StringBuilder sb = new StringBuilder();
+            foreach (var item in this.Items)
+            {
+                sb.Append("why :" + item.Item1.text);
+                foreach (var modifier in item.Item2)
+                {
+                    sb.Append("why modifier " + modifier.text);
+                }
+            }
+            return sb.ToString();
+        }
+    }
+
+    public class CGWhoAffected
+    {
+        public double pagerank
+        {
+            get
+            {
+                return this.Items.Sum(c => c.Item1.pagerank + c.Item2.Sum(d => d.pagerank));
+            }
+        }
+        public List<Tuple<CGNode, IEnumerable<CGNode>>> Items { get; set; }
+        public CGWhoAffected()
+        {
+            this.Items = new List<Tuple<CGNode, IEnumerable<CGNode>>>();
+        }
+        public override string ToString()
+        {
+            StringBuilder sb = new StringBuilder();
+            foreach (var item in this.Items)
+            {
+                sb.AppendLine("who affected:" + item.Item1.text);
+                foreach (var modifier in item.Item2)
+                {
+                    sb.AppendLine("who affected modifier " + modifier.text);
+                }
+            }
+            return sb.ToString();
+        }
+    }
+    public class CGWho
+    {        
+        public double pagerank { get {
+                return this.Items.Sum(c => c.Item1.pagerank + c.Item2.Sum(d => d.pagerank));
+            } }
+        public List<Tuple<CGNode, IEnumerable<CGNode>>> Items { get; set; }
+        public CGWho()
+        {
+            this.Items = new List<Tuple<CGNode, IEnumerable<CGNode>>>();
+        }
+        public override string ToString()
+        {
+            StringBuilder sb = new StringBuilder();
+            foreach (var item in this.Items)
+            {
+                sb.Append("who :" + item.Item1.text);
+                foreach (var modifier in item.Item2)
+                {
+                    sb.Append("who modifier " + modifier.text);
+                }
+            }
+            return sb.ToString();
+        }
+    }
+    public class CGWhat
+    {
+        public double pagerank
+        {
+            get
+            {
+                return this.Items.Sum(c => c.Item1.pagerank + c.Item2.Sum(d => d.pagerank));
+            }
+        }
+        public List<Tuple<CGNode, IEnumerable<CGNode>>> Items { get; set; }
+        public CGWhat()
+        {
+            this.Items = new List<Tuple<CGNode, IEnumerable<CGNode>>>();
+        }
+        public override string ToString()
+        {
+            StringBuilder sb = new StringBuilder();
+            foreach (var item in this.Items)
+            {
+                sb.Append("what :" + item.Item1.text);
+                foreach (var modifier in item.Item2)
+                {
+                    sb.Append("what modifier " + modifier.text);
+                }
+            }
+            return sb.ToString();
+        }
+    }
     public class CGInformativeAspect
     {
         public double weight { get {
-                return this.Who.Select(c => c.pagerank).Sum() + 
-                    this.What.Select(c => c.pagerank).Sum() + 
-                    this.Who_affected.Select(c=>c.pagerank).Sum() +
-                    this.Why.Select(c=>c.pagerank).Sum();
+                return this.Who.pagerank + 
+                    this.What.pagerank + 
+                    this.Who_affected.pagerank  +
+                    this.Why.pagerank;
             } }
         [JsonIgnore]
-        public List<CGNode> Who { get; set; } //agent
+        public CGWho Who { get; set; } //agent
         [JsonIgnore]
-        public List<CGNode> What { get; set; } // rel
+        public CGWhat What { get; set; } // rel
         [JsonIgnore]
-        public List<CGNode> Who_affected { get; set; } // patient or gol
+        public CGWhoAffected Who_affected { get; set; } // patient or gol
         [JsonIgnore]
-        public List<CGNode> Why { get; set; }
+        public CGWhy Why { get; set; }
         public int name { get; set; }
         public CGInformativeAspect()
         {
-            this.Who = new List<CGNode>();
-            this.What = new List<CGNode>();
-            this.Who_affected = new List<CGNode>();
-            this.Why = new List<CGNode>();
+            this.Who = new CGWho(); 
+            this.What = new CGWhat();
+            this.Who_affected = new CGWhoAffected();
+            this.Why = new CGWhy();
         }
 
         //pending 
@@ -39,23 +148,14 @@ namespace JarvisSummarization.CG
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
-            foreach (var item in this.Who)
-            {
-                sb.Append(string.Format(" who: {0} ({1}) ", item.nosuffix , item.id));
-            }
-            foreach (var item in this.What)
-            {
-                sb.Append(string.Format(" what: {0} ({1}) ", item.nosuffix, item.id));
-            }
-            foreach (var item in this.Who_affected)
-            {
-                sb.Append(string.Format(" who_a: {0} ({1}) ", item.nosuffix, item.id));
-            }
-            foreach (var item in this.Why)
-            {
-                sb.Append(string.Format(" why: {0} ({1}) ", item.nosuffix, item.id));
-            }
-            return string.Format(" {0} : {1}  ", this.weight, sb.ToString());
+            sb.AppendLine("==========================================================================");
+            sb.AppendLine(this.Who.ToString());            
+            sb.AppendLine(this.What.ToString());
+            sb.AppendLine(this.Who_affected.ToString());
+            sb.AppendLine(this.Why.ToString());
+            sb.AppendLine(string.Format("weight {0}", this.weight) );
+            sb.AppendLine("==========================================================================");
+            return sb.ToString();
         }
 
     }

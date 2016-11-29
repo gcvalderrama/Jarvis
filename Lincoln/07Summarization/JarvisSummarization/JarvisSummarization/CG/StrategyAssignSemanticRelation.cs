@@ -10,23 +10,16 @@ namespace JarvisSummarization.CG
     class StrategyAssignSemanticRelation
     {
         private string propbankPath = @"D:\Tesis2016\Propbank\frames";
-
         private CGGraph graph;
         public StrategyAssignSemanticRelation(CGGraph graph)
         {
             this.graph = graph;            
-        }
-
-        //private void ExecuteForNonVerbs(IEnumerable<CGRelation> out_relations)
-        //{   
-        //    foreach (var item in out_relations)
-        //    {
-        //        item.description = item.label;
-        //        item.f = item.label;
-        //    }            
-        //}
+        }        
         private void ManageRelation(CGRelation relation)
         {
+            var head = this.graph.Nodes.Where(c => c.id == relation.Head).First();
+            var tail = this.graph.Nodes.Where(c => c.id == relation.Tail).First();
+                        
             if (relation.label == "ARG0")
             {
                 relation.description = "non prop bank found relation, default arg0 agent";
@@ -34,46 +27,22 @@ namespace JarvisSummarization.CG
             }
             else if (relation.label == "ARG1")
             {
-                relation.description = "non prop bank found relation, default arg11 patient";
+                relation.description = "non prop bank found relation, default arg1 patient";
                 relation.f = "ppt";
             }
             else if (relation.label == "ARG2")
             {
                 //instrument/attribute
-                relation.description = "non prop bank found relation, default arg11 gol";
+                relation.description = "non prop bank found relation, default arg2 gol";
                 relation.f = "gol";
             }
-            else if (relation.label == "mod")
+            else if (relation.label == "ARG3")
             {
-                relation.description = relation.label;
-                relation.f = relation.label;
+                //instrument/attribute
+                relation.description = "non prop bank found relation, default arg3 start";
+                relation.f = "start";
             }
-            else if (relation.label == "location")
-            {
-                relation.description = relation.label;
-                relation.f = relation.label;
-            }
-            else if (relation.label == "domain")
-            {
-                relation.description = relation.label;
-                relation.f = relation.label;
-            }
-            else if (relation.label == "duration")
-            {
-                relation.description = relation.label;
-                relation.f = relation.label;
-            }
-            else if (relation.label == "part")
-            {
-                relation.description = relation.label;
-                relation.f = relation.label;
-            }
-            else if (relation.label == "manner")
-            {
-                relation.description = relation.label;
-                relation.f = relation.label;
-            }
-            else
+            else if ( string.IsNullOrWhiteSpace(relation.f))
             {
                 relation.description = "unknow-propbank";
                 relation.f = "unknow";
@@ -85,19 +54,23 @@ namespace JarvisSummarization.CG
             //if node is not a verb we can not assign any role
             var currentPath = System.IO.Path.Combine(this.propbankPath, node.nosuffix) + ".xml";
             if (!node.text.Contains("-0") || !System.IO.File.Exists(currentPath))
-            {                
+            {
                 foreach (var relation in out_relations)
                 {
-                    ManageRelation(relation);  
+                    ManageRelation(relation);
                 }
                 return;
             }
+            
             var str = System.IO.File.ReadAllText(currentPath);
 
             var propbankelements = XElement.Parse(str);
             
             var propbankelement = (from c in propbankelements.Elements("predicate").Elements("roleset")
                                    select c).ElementAt(int.Parse(node.text.Replace(node.nosuffix + "-", "")) - 1);                        
+
+
+
 
             foreach (var relation in out_relations)
             {
@@ -107,16 +80,22 @@ namespace JarvisSummarization.CG
 
                     var roleelement = (from c in propbankelement.Elements("roles").Elements("role")
                                        where c.Attribute("n").Value == number
-                                       select c).First();
-
-                    relation.description = roleelement.Attribute("descr").Value.Replace("/", "").Replace("'", "").Replace(@"\", "");
-                    relation.f = roleelement.Attribute("f").Value.ToLower();
-
-                    var vnx = roleelement.Element("vnrole");
-                    if (vnx != null)
+                                       select c).FirstOrDefault();
+                    if (roleelement != null)
                     {
-                        relation.vncls = vnx.Attribute("vncls").Value;
-                        relation.vntheta = vnx.Attribute("vntheta").Value;
+                        relation.description = roleelement.Attribute("descr").Value.Replace("/", "").Replace("'", "").Replace(@"\", "");
+                        relation.f = roleelement.Attribute("f").Value.ToLower();
+
+                        var vnx = roleelement.Element("vnrole");
+                        if (vnx != null)
+                        {
+                            relation.vncls = vnx.Attribute("vncls").Value;
+                            relation.vntheta = vnx.Attribute("vntheta").Value;
+                        }
+                    }
+                    else
+                    {
+                        ManageRelation(relation);
                     }
                 }
                 else
@@ -140,6 +119,8 @@ namespace JarvisSummarization.CG
             {
                 if (item.f.Contains("unknow"))
                 {
+                    var head = this.graph.Nodes.Where(c => c.id == item.Head).First();
+                    var tail = this.graph.Nodes.Where(c => c.id == item.Tail).First();
                     throw new ApplicationException("error");
                 }
             }

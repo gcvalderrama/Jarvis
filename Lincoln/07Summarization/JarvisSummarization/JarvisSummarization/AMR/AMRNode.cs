@@ -11,22 +11,20 @@ namespace JarvisSummarization.AMR
     public class AMRNode
     {
         public int id { get; set; }
-        public int graphid { get; set; }
+        public int sentenceid { get; set; }
         public int name { get; set; }
         public string text { get; set; }
         public string label { get; set; }
         public string nosuffix { get; set; }
         public bool isleaf { get; set; }
         public double rstweight { get; set; }
-        
-
         public string description { get; set; }
 
         public AMRNode Clone(int pid, int pname)
         {
             return new AMRNode() {
                 id = pid,
-                graphid =  this.graphid,
+                sentenceid =  this.sentenceid,
                 name = pname,
                 description = this.description,
                 isleaf = this.isleaf,                
@@ -39,7 +37,7 @@ namespace JarvisSummarization.AMR
                
         public void ReadXML(XElement nodeelement, int graphid)
         {
-            this.graphid = graphid; 
+            this.sentenceid = graphid; 
             this.id = int.Parse(nodeelement.Attribute("gid").Value);
             this.name = int.Parse(nodeelement.Attribute("id").Value);
             this.text = nodeelement.Attribute("text").Value;

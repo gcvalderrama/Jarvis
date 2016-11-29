@@ -335,38 +335,38 @@ namespace JarvisSummarization.NEO
                        .CreateUnique(string.Format("(a)-[:hasaspect]->(n)"))
                        .ExecuteWithoutResults();
 
-                    foreach (var item in aspect.Who)
-                    {
-                        client.Cypher.Match("(a:CGAspect)", "(n:CGNode)")
-                       .Where((CGInformativeAspect a) => a.name == aspect.name)
-                       .AndWhere((CGNode n)=> n.id == item.id)
-                       .CreateUnique(string.Format("(a)-[r:aspect {{ role:'{0}' }} ]->(n)", "who"))
-                       .ExecuteWithoutResults();
-                    }
-                    foreach (var item in aspect.What)
-                    {
-                        client.Cypher.Match("(a:CGAspect)", "(n:CGNode)")
-                       .Where((CGInformativeAspect a) => a.name == aspect.name)
-                       .AndWhere((CGNode n) => n.id == item.id)
-                       .CreateUnique(string.Format("(a)-[r:aspect {{ role:'{0}' }} ]->(n)", "what"))
-                       .ExecuteWithoutResults();
-                    }
-                    foreach (var item in aspect.Who_affected)
-                    {
-                        client.Cypher.Match("(a:CGAspect)", "(n:CGNode)")
-                       .Where((CGInformativeAspect a) => a.name == aspect.name)
-                       .AndWhere((CGNode n) => n.id == item.id)
-                       .CreateUnique(string.Format("(a)-[r:aspect {{ role:'{0}' }} ]->(n)", "who_affected"))
-                       .ExecuteWithoutResults();
-                    }
-                    foreach (var item in aspect.Why)
-                    {
-                        client.Cypher.Match("(a:CGAspect)", "(n:CGNode)")
-                       .Where((CGInformativeAspect a) => a.name == aspect.name)
-                       .AndWhere((CGNode n) => n.id == item.id)
-                       .CreateUnique(string.Format("(a)-[r:aspect {{ role:'{0}' }} ]->(n)", "why"))
-                       .ExecuteWithoutResults();
-                    }
+                    //foreach (var item in aspect.Who)
+                    //{
+                    //    client.Cypher.Match("(a:CGAspect)", "(n:CGNode)")
+                    //   .Where((CGInformativeAspect a) => a.name == aspect.name)
+                    //   .AndWhere((CGNode n)=> n.id == item.id)
+                    //   .CreateUnique(string.Format("(a)-[r:aspect {{ role:'{0}' }} ]->(n)", "who"))
+                    //   .ExecuteWithoutResults();
+                    //}
+                    //foreach (var item in aspect.What)
+                    //{
+                    //    client.Cypher.Match("(a:CGAspect)", "(n:CGNode)")
+                    //   .Where((CGInformativeAspect a) => a.name == aspect.name)
+                    //   .AndWhere((CGNode n) => n.id == item.id)
+                    //   .CreateUnique(string.Format("(a)-[r:aspect {{ role:'{0}' }} ]->(n)", "what"))
+                    //   .ExecuteWithoutResults();
+                    //}
+                    //foreach (var item in aspect.Who_affected)
+                    //{
+                    //    client.Cypher.Match("(a:CGAspect)", "(n:CGNode)")
+                    //   .Where((CGInformativeAspect a) => a.name == aspect.name)
+                    //   .AndWhere((CGNode n) => n.id == item.id)
+                    //   .CreateUnique(string.Format("(a)-[r:aspect {{ role:'{0}' }} ]->(n)", "who_affected"))
+                    //   .ExecuteWithoutResults();
+                    //}
+                    //foreach (var item in aspect.Why)
+                    //{
+                    //    client.Cypher.Match("(a:CGAspect)", "(n:CGNode)")
+                    //   .Where((CGInformativeAspect a) => a.name == aspect.name)
+                    //   .AndWhere((CGNode n) => n.id == item.id)
+                    //   .CreateUnique(string.Format("(a)-[r:aspect {{ role:'{0}' }} ]->(n)", "why"))
+                    //   .ExecuteWithoutResults();
+                    //}
                 }
             }
         }

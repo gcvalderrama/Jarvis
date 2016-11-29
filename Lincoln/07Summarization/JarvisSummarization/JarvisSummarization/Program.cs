@@ -17,20 +17,20 @@ namespace JarvisSummarization
             NEO.NEOManager manager = new NEO.NEOManager();
             //manager.DeleteAllNodes();
 
-            //POS.POSReader posreader = new POS.POSReader();
-            var inputpath = @"D:\Tesis2016\Jarvis\Lincoln\02SintacticAnalysis\Output\lincon.xml";
-            //var document = posreader.Load(inputpath);
+            POS.POSReader posreader = new POS.POSReader();
+            var inputpath = @"D:\Tesis2016\Jarvis\Lincoln\02SintacticAnalysis\Output\WSJ9004020112.xml";
+            var document = posreader.Load(inputpath);
             //manager.SaveDocument(document);
 
             RST.RSTReader rstreader = new RST.RSTReader();
 
             var rstdocument =  
-                rstreader.ReadDocument(@"D:\Tesis2016\Jarvis\Lincoln\03RST\Input\lincon.txt.xml.jarvis", 
+                rstreader.ReadDocument(@"D:\Tesis2016\Jarvis\Lincoln\03RST\Input\WSJ9004020112.txt.xml.jarvis", 
                 Path.GetFileNameWithoutExtension(inputpath));
 
             rstdocument.EvaluateODonell();
 
-            //Console.WriteLine( rstdocument.Summarize());
+            Console.WriteLine( rstdocument.Summarize());
 
             //manager.DeleteAllRST();
             //manager.SaveDocumentRST(rstdocument);
@@ -47,10 +47,10 @@ namespace JarvisSummarization
 
             CGGraph cgraph = new CGGraph("lincon", @"D:\Tesis2016\Propbank\frames");
             cgraph.ReadAMR(amrdoc);
-            cgraph.Digest();
-            cgraph.GenerateInformativeAspects();
+            cgraph.Digest();            
+            //cgraph.GenerateInformativeAspects();
             
-            //foreach (var item in cgraph.InformativeAspects.OrderByDescending(c=>c.weight))
+            //foreach (var item in cgraph.InformativeAspects)
             //{
             //    Console.WriteLine(item);
             //}

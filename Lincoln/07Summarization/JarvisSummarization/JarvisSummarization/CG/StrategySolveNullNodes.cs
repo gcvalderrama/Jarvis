@@ -18,11 +18,11 @@ namespace JarvisSummarization.CG
                     deletes.Add(node);
                     foreach (var inR in graph.Relations.Where(c=>c.Head == node.id).ToList())
                     {
-                        graph.Relations.Remove(inR);
+                        graph.RemoveRelation(inR);
                     }
                     foreach (var outR in graph.Relations.Where(c => c.Tail == node.id).ToList())
                     {
-                        graph.Relations.Remove(outR);
+                        graph.RemoveRelation(outR);
                     }
                 }
             }

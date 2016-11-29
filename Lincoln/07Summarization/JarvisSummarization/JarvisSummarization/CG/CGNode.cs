@@ -17,20 +17,21 @@ namespace JarvisSummarization.CG
         public double rstweight { get; set; }                
         public double pagerank { get; set; }
         public string constant { get; set; }
-        public int eduid { get; set; }        
+        public int  sentenceid { get; set; }        
+        public bool IsPatientVerb { get; set; }
         public string description { get; set; }
         public List<string> semanticroles { get; protected set; }        
-        public List<int> FusionNodes { get; protected set; }
+        public List<string> FusionNodes { get; protected set; }
         
         public string hypernym { get; set; }
 
         public string log { get; set; }
         public CGNode() {
             this.semanticroles = new List<string>();
-            this.FusionNodes = new List<int>(); 
+            this.FusionNodes = new List<string>(); 
         }
-        public CGNode(AMRNode node, int eduid) : this() {            
-            this.eduid = eduid;
+        public CGNode(AMRNode node, int sentenceid) : this() {            
+            this.sentenceid = sentenceid;
             this.id = node.id;
             this.label = node.label;
             this.nosuffix = node.nosuffix;
@@ -44,11 +45,12 @@ namespace JarvisSummarization.CG
                 this.semanticroles.Add(role); 
             }
         }
-        public void AddFusionNode(int Node)
+        public void AddFusionNode(CGNode Node)
         {
-            if (!this.FusionNodes.Contains(Node))
+            string format = string.Format("{0}:{1}:{2}",Node.sentenceid, Node.id, Node.nosuffix);
+            if (!this.FusionNodes.Contains(format))
             {
-                this.FusionNodes.Add(Node);
+                this.FusionNodes.Add(format);
             }
         }
         public CGNode Clone(int pid)
@@ -56,7 +58,7 @@ namespace JarvisSummarization.CG
             return new CGNode()
             {
                 id = pid,
-                eduid = this.eduid,                                
+                sentenceid = this.sentenceid,                                
                 label = this.label,
                 nosuffix = this.nosuffix,
                 rstweight = this.rstweight,

@@ -17,6 +17,7 @@ namespace JarvisSummarization.CG
         public string description { get; set; }
         public string f { get; set; }
         public string log { get; set; }
+        public int ocurrences { get; set; }
         public CGRelation()
         {
 

@@ -18,10 +18,6 @@ namespace JarvisSummarization.CG
         {
             _wordNetEngine = new WordNet.WordNetEngine(@"D:\Tesis2016\WordnetAPI\resources\", false);
             _semanticSimilarityModel = new LAIR.ResourceAPIs.WordNet.WordNetSimilarityModel(_wordNetEngine);
-
-
-
-
         }
         private Dictionary<string, WordNet.SynSet> SynSets = new Dictionary<string, WordNet.SynSet>();
         private void GraphFusion(CGGraph graph, IEnumerable<IGrouping<string, CGNode>> groups)
@@ -30,22 +26,41 @@ namespace JarvisSummarization.CG
             {
                 //survivor
                 List<CGNode> deletes = new List<CGNode>();
+                List<CGRelation> relations_deletes = new List<CGRelation>();
+                List<CGRelation> relations_news = new List<CGRelation>();
+
                 var max = g.OrderByDescending(c => c.rstweight).First();
                 foreach (var node in g)
                 {
                     if (node.id == max.id) continue;
-                    max.AddFusionNode(node.id); 
+                    max.AddFusionNode(node); 
                     deletes.Add(node);
                     var inrelations = from c in graph.Relations where c.Tail == node.id select c;
+                    
                     foreach (var item in inrelations)
                     {
-                        item.Tail = max.id;
+                        var n = item.Clone();
+                        n.Tail = max.id;
+                        relations_deletes.Add(item);
+                        relations_news.Add(n);
+                        
                     }
                     var outrelations = from c in graph.Relations where c.Head == node.id select c;
                     foreach (var item in outrelations)
                     {
-                        item.Head = max.id;
+                        var n = item.Clone();
+                        n.Head = max.id;
+                        relations_deletes.Add(item);
+                        relations_news.Add(n);                        
                     }
+                }
+                foreach (var item in relations_news)
+                {
+                    graph.AddRelation(item); 
+                }
+                foreach (var item in relations_deletes)
+                {
+                    graph.RemoveRelation(item);
                 }
                 foreach (var item in deletes)
                 {

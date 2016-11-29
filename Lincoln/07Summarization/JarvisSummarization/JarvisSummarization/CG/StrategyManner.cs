@@ -24,10 +24,8 @@ namespace JarvisSummarization.CG
             }
             foreach (var item in deletes)
             {
-                graph.Relations.Remove(item);
+                graph.RemoveRelation(item);
             }
         }
-
-
     }
 }

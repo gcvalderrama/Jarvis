@@ -18,16 +18,21 @@ namespace JarvisSummarization.AMR
         }
         
         public void LoadRSTInformation(RST.RSTDocument Document)
-        {
+        {            
             foreach (var graph in this.Graphs)
             {
-                
-                var weight = Document.Tokens.Where(c => c.eduid == graph.name).Max(c => c.rstweight);
+                var tokens = Document.Tokens.Where(c => c.sentence == graph.name)
+                    .OrderBy(c => c.sentencepos).ToList();
                 foreach (var node in graph.Nodes)
-                {                    
-                    node.rstweight = weight;                    
+                {
+                    var token = tokens.Where(c => c.lemma == node.nosuffix)
+                        .OrderByDescending(c => c.rstweight).FirstOrDefault();
+                    if (token != null)
+                    {
+                        node.rstweight = token.rstweight;
+                    }
                 }
-            }            
+            }
         }
     }
 }

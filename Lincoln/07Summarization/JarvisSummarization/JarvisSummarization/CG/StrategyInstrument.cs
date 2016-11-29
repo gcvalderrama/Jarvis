@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace JarvisSummarization.CG
 {
-    class StrategyLocation
+    class StrategyInstrument
     {
         private CGGraph graph;
 
-        public StrategyLocation(CGGraph graph)
+        public StrategyInstrument(CGGraph graph)
         {
             this.graph = graph;
         }
@@ -19,7 +19,7 @@ namespace JarvisSummarization.CG
             List<CGRelation> deletes = new List<CGRelation>();
             foreach (var item in this.graph.Relations)
             {
-                if (item.label.StartsWith("location"))
+                if (item.label.StartsWith("instrument"))
                     deletes.Add(item);
             }
             foreach (var item in deletes)

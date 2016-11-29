@@ -30,7 +30,7 @@ namespace JarvisSummarization.CG
             }
             foreach (var item in deletes)
             {
-                this.graph.Relations.Remove(item); 
+                this.graph.RemoveRelation(item); 
             }
 
         }
