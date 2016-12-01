@@ -18,6 +18,8 @@ namespace JarvisSummarization.CG
         public string f { get; set; }
         public string log { get; set; }
         public int ocurrences { get; set; }
+        public string conceptualrole { get; set; }
+        
         public CGRelation()
         {
 
@@ -37,6 +39,7 @@ namespace JarvisSummarization.CG
             rel.vncls = this.vncls;
             rel.vntheta = this.vntheta;
             rel.description = this.description;
+            rel.conceptualrole = this.conceptualrole;
             rel.f = this.f;
             return rel;
         }

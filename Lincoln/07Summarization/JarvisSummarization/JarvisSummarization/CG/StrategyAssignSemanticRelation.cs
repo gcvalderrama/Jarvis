@@ -14,64 +14,46 @@ namespace JarvisSummarization.CG
         public StrategyAssignSemanticRelation(CGGraph graph)
         {
             this.graph = graph;            
-        }        
-        private void ManageRelation(CGRelation relation)
+        }
+        
+        private void ManageNotFoundArg(CGRelation item)
         {
-            var head = this.graph.Nodes.Where(c => c.id == relation.Head).First();
-            var tail = this.graph.Nodes.Where(c => c.id == relation.Tail).First();
-                        
-            if (relation.label == "ARG0")
+            item.description = "arg not found in propbank";
+            if (item.label == "ARG0")
             {
-                relation.description = "non prop bank found relation, default arg0 agent";
-                relation.f = "pag";
+                item.f = "pag";
+                item.conceptualrole = "agent";
             }
-            else if (relation.label == "ARG1")
+            else if (item.label == "ARG1")
             {
-                relation.description = "non prop bank found relation, default arg1 patient";
-                relation.f = "ppt";
+                item.f = "ppt";
+                item.conceptualrole = "patient";
             }
-            else if (relation.label == "ARG2")
+            else if (item.label == "ARG2")
             {
-                //instrument/attribute
-                relation.description = "non prop bank found relation, default arg2 gol";
-                relation.f = "gol";
+                item.f = "gol";
+                item.conceptualrole = "goal";
             }
-            else if (relation.label == "ARG3")
-            {
-                //instrument/attribute
-                relation.description = "non prop bank found relation, default arg3 start";
-                relation.f = "start";
-            }
-            else if ( string.IsNullOrWhiteSpace(relation.f))
-            {
-                relation.description = "unknow-propbank";
-                relation.f = "unknow";
-            }
-
         }
         private void ExecuteForVerbs(CGNode node, IEnumerable<CGRelation> out_relations)
         {
             //if node is not a verb we can not assign any role
-            var currentPath = System.IO.Path.Combine(this.propbankPath, node.nosuffix) + ".xml";
-            if (!node.text.Contains("-0") || !System.IO.File.Exists(currentPath))
+            var currentPath = System.IO.Path.Combine(this.propbankPath, node.nosuffix) + ".xml";            
+             if (!System.IO.File.Exists(currentPath))
             {
-                foreach (var relation in out_relations)
+                foreach (var item in out_relations)
                 {
-                    ManageRelation(relation);
-                }
+                    ManageNotFoundArg(item);
+                }        
                 return;
-            }
-            
+            }            
             var str = System.IO.File.ReadAllText(currentPath);
 
             var propbankelements = XElement.Parse(str);
             
             var propbankelement = (from c in propbankelements.Elements("predicate").Elements("roleset")
                                    select c).ElementAt(int.Parse(node.text.Replace(node.nosuffix + "-", "")) - 1);                        
-
-
-
-
+                        
             foreach (var relation in out_relations)
             {
                 if (relation.label.Contains("ARG"))
@@ -91,33 +73,30 @@ namespace JarvisSummarization.CG
                         {
                             relation.vncls = vnx.Attribute("vncls").Value;
                             relation.vntheta = vnx.Attribute("vntheta").Value;
+                            relation.conceptualrole = relation.vntheta.ToLower();
+                        }
+                        else
+                        {
+                            ManageNotFoundArg(relation);                            
                         }
                     }
-                    else
-                    {
-                        ManageRelation(relation);
-                    }
+                    
                 }
-                else
-                {
-                    ManageRelation(relation);
-                }
+                
             }
         }
 
         public void Execute()
-        {
-            
+        {            
             //only to verbs
-            foreach (var node in graph.Nodes)
+            foreach (var node in graph.Nodes.Where(c=>c.text.Contains("-0")))
             {
                 var out_relations_verbs = graph.Relations.Where(c => c.Head == node.id).ToList();
                 this.ExecuteForVerbs(node, out_relations_verbs);                
             }
-
             foreach (var item in graph.Relations)
             {
-                if (item.f.Contains("unknow"))
+                if (string.IsNullOrWhiteSpace("unknow") || string.IsNullOrWhiteSpace(item.conceptualrole))
                 {
                     var head = this.graph.Nodes.Where(c => c.id == item.Head).First();
                     var tail = this.graph.Nodes.Where(c => c.id == item.Tail).First();

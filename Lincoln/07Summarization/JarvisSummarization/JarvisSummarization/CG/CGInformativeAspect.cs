@@ -7,111 +7,33 @@ using System.Threading.Tasks;
 
 namespace JarvisSummarization.CG
 {
-    public class CGWhy
-    {
-        public double pagerank
-        {
-            get
-            {
-                return this.Items.Sum(c => c.Item1.pagerank + c.Item2.Sum(d => d.pagerank));
-            }
-        }
-        public List<Tuple<CGNode, IEnumerable<CGNode>>> Items { get; set; }
-        public CGWhy()
-        {
-            this.Items = new List<Tuple<CGNode, IEnumerable<CGNode>>>();
-        }
-        public override string ToString()
-        {
-            StringBuilder sb = new StringBuilder();
-            foreach (var item in this.Items)
-            {
-                sb.Append("why :" + item.Item1.text);
-                foreach (var modifier in item.Item2)
-                {
-                    sb.Append("why modifier " + modifier.text);
-                }
-            }
-            return sb.ToString();
-        }
-    }
+    
 
-    public class CGWhoAffected
-    {
-        public double pagerank
+    public class CGConcept {
+        public double rank { get; protected set;   }
+        public CGNode text { get; protected set; }
+        public List<CGNode> mods { get; protected set; }
+        public CGConcept()
         {
-            get
-            {
-                return this.Items.Sum(c => c.Item1.pagerank + c.Item2.Sum(d => d.pagerank));
-            }
+            this.mods = new List<CGNode>();  
         }
-        public List<Tuple<CGNode, IEnumerable<CGNode>>> Items { get; set; }
-        public CGWhoAffected()
+        public void AddText(CGNode node)
         {
-            this.Items = new List<Tuple<CGNode, IEnumerable<CGNode>>>();
+            this.text = node;
+            this.rank += node.pagerank;
         }
-        public override string ToString()
+        public void AddMod(CGNode mod)
         {
-            StringBuilder sb = new StringBuilder();
-            foreach (var item in this.Items)
-            {
-                sb.AppendLine("who affected:" + item.Item1.text);
-                foreach (var modifier in item.Item2)
-                {
-                    sb.AppendLine("who affected modifier " + modifier.text);
-                }
-            }
-            return sb.ToString();
-        }
-    }
-    public class CGWho
-    {        
-        public double pagerank { get {
-                return this.Items.Sum(c => c.Item1.pagerank + c.Item2.Sum(d => d.pagerank));
-            } }
-        public List<Tuple<CGNode, IEnumerable<CGNode>>> Items { get; set; }
-        public CGWho()
-        {
-            this.Items = new List<Tuple<CGNode, IEnumerable<CGNode>>>();
+            this.mods.Add(mod);
+            this.rank += mod.pagerank;
         }
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
-            foreach (var item in this.Items)
+            sb.AppendLine(string.Format("ID  {0} Text :{1}" , this.text.id,  this.text.text));
+            foreach (var item in this.mods)
             {
-                sb.Append("who :" + item.Item1.text);
-                foreach (var modifier in item.Item2)
-                {
-                    sb.Append("who modifier " + modifier.text);
-                }
-            }
-            return sb.ToString();
-        }
-    }
-    public class CGWhat
-    {
-        public double pagerank
-        {
-            get
-            {
-                return this.Items.Sum(c => c.Item1.pagerank + c.Item2.Sum(d => d.pagerank));
-            }
-        }
-        public List<Tuple<CGNode, IEnumerable<CGNode>>> Items { get; set; }
-        public CGWhat()
-        {
-            this.Items = new List<Tuple<CGNode, IEnumerable<CGNode>>>();
-        }
-        public override string ToString()
-        {
-            StringBuilder sb = new StringBuilder();
-            foreach (var item in this.Items)
-            {
-                sb.Append("what :" + item.Item1.text);
-                foreach (var modifier in item.Item2)
-                {
-                    sb.Append("what modifier " + modifier.text);
-                }
+                sb.AppendLine("modifier " + item);
             }
             return sb.ToString();
         }
@@ -119,27 +41,34 @@ namespace JarvisSummarization.CG
     public class CGInformativeAspect
     {
         public double weight { get {
-                return this.Who.pagerank + 
-                    this.What.pagerank + 
-                    this.Who_affected.pagerank  +
-                    this.Why.pagerank;
-            } }
+                return
+                    this.Agents.Sum(c => c.rank) +
+                    this.What.Sum(c => c.rank) +                    
+                    this.Patients.Sum(c => c.rank) +
+                    this.Themes.Sum(c=>c.rank) + 
+                    this.Goals.Sum(c => c.rank);
+            } }        
+        
+        
+        
+
         [JsonIgnore]
-        public CGWho Who { get; set; } //agent
-        [JsonIgnore]
-        public CGWhat What { get; set; } // rel
-        [JsonIgnore]
-        public CGWhoAffected Who_affected { get; set; } // patient or gol
-        [JsonIgnore]
-        public CGWhy Why { get; set; }
+        public List<CGConcept> What { get; set; } // rel
+        public List<CGConcept> Agents { get; set; } // rel
+        public List<CGConcept> Patients { get; set; } 
+        public List<CGConcept> Themes { get; protected set; }
+        public List<CGConcept> Goals { get; protected set; }
         public int name { get; set; }
         public CGInformativeAspect()
-        {
-            this.Who = new CGWho(); 
-            this.What = new CGWhat();
-            this.Who_affected = new CGWhoAffected();
-            this.Why = new CGWhy();
+        {            
+            this.What = new List<CGConcept>();                        
+            this.Themes = new List<CGConcept>();
+            this.Goals = new List<CGConcept>();
+            this.Patients = new List<CGConcept>();
+            this.Agents = new List<CGConcept>();
         }
+
+        
 
         //pending 
         public string Where { get; set; }        
@@ -149,10 +78,31 @@ namespace JarvisSummarization.CG
         {
             StringBuilder sb = new StringBuilder();
             sb.AppendLine("==========================================================================");
-            sb.AppendLine(this.Who.ToString());            
-            sb.AppendLine(this.What.ToString());
-            sb.AppendLine(this.Who_affected.ToString());
-            sb.AppendLine(this.Why.ToString());
+            sb.AppendLine("Agents");
+            foreach (var item in this.Agents)
+            {
+                sb.AppendLine(item.ToString());
+            }
+            sb.AppendLine("What");
+            foreach (var item in this.What)
+            {
+                sb.AppendLine(item.ToString());
+            }
+            sb.AppendLine("Patients");
+            foreach (var item in this.Patients)
+            {
+                sb.AppendLine(item.ToString());
+            }
+            sb.AppendLine("Theme");
+            foreach (var item in this.Themes)
+            {
+                sb.AppendLine(item.ToString());
+            }
+            sb.AppendLine("Goals");
+            foreach (var item in this.Goals)
+            {
+                sb.AppendLine(item.ToString());
+            }
             sb.AppendLine(string.Format("weight {0}", this.weight) );
             sb.AppendLine("==========================================================================");
             return sb.ToString();

@@ -20,11 +20,11 @@ namespace JarvisSummarization.CG
             foreach (var item in this.graph.Relations)
             {
                 if (item.label.StartsWith("instrument"))
-                    deletes.Add(item);
-            }
-            foreach (var item in deletes)
-            {
-                graph.RemoveRelation(item);
+                {
+                    item.description = item.label;
+                    item.f = item.label;
+                    item.conceptualrole = item.label;
+                }
             }
         }
     }

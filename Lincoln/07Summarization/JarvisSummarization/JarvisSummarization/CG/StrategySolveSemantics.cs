@@ -21,21 +21,10 @@ namespace JarvisSummarization.CG
                 var head = this.graph.Nodes.Where(c => c.id == relation.Head).First();
                 var tail = this.graph.Nodes.Where(c => c.id == relation.Tail).First();
 
-                if (relation.f == "pag" &&
-                    head.semanticroles.Contains("pag") &&
-                    tail.semanticroles.Contains("rel"))
+                if (!head.text.Contains("-0") && relation.label.Contains("ARG"))
                 {
-                    deletes.Add(relation); 
-                }
-                if ( ( relation.f == "pag" || relation.f == "ppt" ) && !head.semanticroles.Contains("rel"))
-                {
-                    deletes.Add(relation); 
-                }
-
-                if (relation.f == "pag" && head.semanticroles.Contains("rel") && tail.semanticroles.Contains("rel"))
-                {
-                    throw new ApplicationException("strange case verb agent ");
-                }
+                    deletes.Add(relation);                     
+                }                
             }
             foreach (var item in deletes)
             {

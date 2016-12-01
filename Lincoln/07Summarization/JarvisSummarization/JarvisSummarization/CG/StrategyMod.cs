@@ -14,17 +14,38 @@ namespace JarvisSummarization.CG
         {
             this.graph = graph;
         }
+        private List<string> stopwords = new List<string>() { "so", "any", "that", "this"};
         public void Execute()
         {
-            List<CGRelation> deletes = new List<CGRelation>();
+
+            List<CGNode> deletes = new List<CGNode>();
+            List<CGRelation> delete_relations = new List<CGRelation>(); 
+                
             foreach (var item in this.graph.Relations)
-            {
+            {                
                 if (item.label.StartsWith("mod"))
-                    deletes.Add(item);
+                {
+                    var tail = this.graph.Nodes.Where(c => c.id == item.Tail).Single();
+
+                    if (stopwords.Contains(tail.label))
+                    {
+                        delete_relations.Add(item);
+                        deletes.Add(tail); 
+                    }
+                    else {
+                        item.description = "mod";
+                        item.f = "mod";
+                        item.conceptualrole = "mod";
+                    }                    
+                }
+            }
+            foreach (var item in delete_relations)
+            {
+                this.graph.RemoveRelation(item);
             }
             foreach (var item in deletes)
             {
-                graph.RemoveRelation(item);
+                this.graph.RemoveNode(item); 
             }
         }
     }

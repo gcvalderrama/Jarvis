@@ -20,7 +20,15 @@ namespace JarvisSummarization.CG
             foreach (var item in this.graph.Relations)
             {
                 if (item.label.StartsWith("domain"))
-                    deletes.Add(item);
+                {
+                    item.label = "mod";
+                    var tmp = item.Head;
+                    item.Head = item.Tail;
+                    item.Tail = tmp;
+                    item.f = item.label;
+                    item.description = item.label;
+                    item.conceptualrole = item.label;
+                }                    
             }
             foreach (var item in deletes)
             {

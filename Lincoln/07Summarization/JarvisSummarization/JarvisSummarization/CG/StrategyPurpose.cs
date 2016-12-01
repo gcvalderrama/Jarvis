@@ -20,6 +20,7 @@ namespace JarvisSummarization.CG
             {
                 item.description = "purpose relation";
                 item.f = "purpose";
+                item.conceptualrole = "purpose";
             }
         }
     }

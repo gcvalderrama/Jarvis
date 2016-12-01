@@ -26,7 +26,7 @@ namespace JarvisSummarization.CG
             }
             foreach (var item in deletes)
             {
-                this.graph.Nodes.Remove(item); 
+                this.graph.RemoveNode(item); 
             }
         }
     }

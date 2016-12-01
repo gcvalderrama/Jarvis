@@ -15,17 +15,16 @@ namespace JarvisSummarization.CG
             this.graph = graph;
         }
         public void Execute()
-        {
-            List<CGRelation> deletes = new List<CGRelation>();
+        {            
             foreach (var item in this.graph.Relations)
             {
                 if (item.label.StartsWith("manner"))
-                    deletes.Add(item);
-            }
-            foreach (var item in deletes)
-            {
-                graph.RemoveRelation(item);
-            }
+                {
+                    item.description = item.label;
+                    item.f = item.label;
+                    item.conceptualrole = item.label;
+                }
+            }            
         }
     }
 }

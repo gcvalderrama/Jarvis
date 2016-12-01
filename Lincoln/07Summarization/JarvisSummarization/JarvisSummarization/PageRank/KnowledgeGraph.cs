@@ -11,7 +11,7 @@ namespace JarvisSummarization.PageRank
     public class PRKnowledgeGraph
     {
         public int Size { get; set; }
-        private List<CG.CGNode> vertexs;
+        private IEnumerable<CG.CGNode> vertexs;
         public double[][] matrix;
 
         public double GetRSTWeight(int pos)
@@ -63,7 +63,7 @@ namespace JarvisSummarization.PageRank
          * This method returns the list of vertexs
          * @return
          */
-        public List<CG.CGNode> getVertexs()
+        public IEnumerable<CG.CGNode> getVertexs()
         {
             return vertexs;
         }

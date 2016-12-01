@@ -16,7 +16,7 @@ namespace JarvisSummarization.CG
         public string nosuffix { get; set; }
         public double rstweight { get; set; }                
         public double pagerank { get; set; }
-        public string constant { get; set; }
+        
         public int  sentenceid { get; set; }        
         public bool IsPatientVerb { get; set; }
         public string description { get; set; }
@@ -40,6 +40,8 @@ namespace JarvisSummarization.CG
         }
         public void AddSemanticRole(string role)
         {
+            if (string.IsNullOrWhiteSpace(role))
+                throw new ApplicationException("error");
             if (!this.semanticroles.Contains(role))
             {
                 this.semanticroles.Add(role); 

@@ -6,6 +6,28 @@ using System.Threading.Tasks;
 
 namespace JarvisSummarization.CG
 {
+    class StrategyRange
+    {
+        private CGGraph graph;
+
+        public StrategyRange(CGGraph graph)
+        {
+            this.graph = graph;
+        }
+        public void Execute()
+        {
+            List<CGRelation> deletes = new List<CGRelation>();
+            foreach (var item in this.graph.Relations)
+            {
+                if (item.label.StartsWith("range"))
+                    deletes.Add(item);
+            }
+            foreach (var item in deletes)
+            {
+                graph.RemoveRelation(item);
+            }
+        }
+    }
     class StrategyLocation
     {
         private CGGraph graph;
@@ -20,7 +42,11 @@ namespace JarvisSummarization.CG
             foreach (var item in this.graph.Relations)
             {
                 if (item.label.StartsWith("location"))
-                    deletes.Add(item);
+                {
+                    item.description = item.label;
+                    item.f = item.label;
+                    item.conceptualrole = item.label;
+                }
             }
             foreach (var item in deletes)
             {

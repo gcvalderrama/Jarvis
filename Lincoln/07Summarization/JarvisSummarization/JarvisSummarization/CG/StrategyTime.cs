@@ -6,6 +6,113 @@ using System.Threading.Tasks;
 
 namespace JarvisSummarization.CG
 {
+
+    
+    public class StrategyExample
+    {
+        private CGGraph graph;
+
+        public StrategyExample(CGGraph graph)
+        {
+            this.graph = graph;
+        }
+        public void Execute()
+        {
+            foreach (var item in this.graph.Relations)
+            {
+                if (item.label.StartsWith("example"))
+                {
+                    item.description = item.label;
+                    item.f = item.label;
+                    item.conceptualrole = item.label;
+                }
+            }
+        }
+    }
+    public class StrategyTopic
+    {
+        private CGGraph graph;
+
+        public StrategyTopic(CGGraph graph)
+        {
+            this.graph = graph;
+        }
+        public void Execute()
+        {
+            foreach (var item in this.graph.Relations)
+            {
+                if (item.label.StartsWith("topic"))
+                {
+                    item.description = item.label;
+                    item.f = item.label;
+                }
+            }
+        }
+    }
+    
+    public class StrategyDirection
+    {
+        private CGGraph graph;
+
+        public StrategyDirection(CGGraph graph)
+        {
+            this.graph = graph;
+        }
+        public void Execute()
+        {
+            foreach (var item in this.graph.Relations)
+            {
+                if (item.label.StartsWith("direction"))
+                {
+                    item.description = item.label;
+                    item.f = item.label;
+                    item.conceptualrole = item.label;
+                }
+            }
+        }
+    }
+    public class StrategySource
+    {
+        private CGGraph graph;
+
+        public StrategySource(CGGraph graph)
+        {
+            this.graph = graph;
+        }
+        public void Execute()
+        {
+            foreach (var item in this.graph.Relations)
+            {
+                if (item.label.StartsWith("source"))
+                {
+                    item.description = item.label;
+                    item.f = item.label;
+                    item.conceptualrole = item.label;
+                }
+            }
+        }
+    }
+    public class StrategyComparedTo
+    {
+        private CGGraph graph;
+
+        public StrategyComparedTo(CGGraph graph)
+        {
+            this.graph = graph;
+        }
+        public void Execute()
+        {
+            foreach (var item in this.graph.Relations)
+            {
+                if (item.label.StartsWith("compared-to"))
+                {
+                    item.description = item.label;
+                    item.f = item.label;
+                    item.conceptualrole = item.label;
+                }
+            }
+        }
+    }
     public class StrategyDegree
     {        
         private CGGraph graph;
@@ -15,6 +122,18 @@ namespace JarvisSummarization.CG
             this.graph = graph;
         }
         public void Execute()
+        {            
+            foreach (var item in this.graph.Relations)
+            {
+                if (item.label.StartsWith("degree"))
+                {
+                    item.description = item.label;
+                    item.f = item.label;
+                    item.conceptualrole = item.label; 
+                }
+            }            
+        }
+        public void ExecuteDelete()
         {
             List<CGRelation> deletes = new List<CGRelation>();
             foreach (var item in this.graph.Relations)
@@ -50,91 +169,7 @@ namespace JarvisSummarization.CG
             }
         }
     }
-    public class StrategyOp
-    {
-        private CGGraph graph;
-        public StrategyOp(CGGraph graph)
-        {
-            this.graph = graph;
-        }
-        private void CleanStart()
-        {
-            List<CGRelation> relations_deletes = new List<CGRelation>();
-            List<CGRelation> relations_news = new List<CGRelation>();
-            //start and or 
-            foreach (var relation in this.graph.Relations)
-            {
-                var head = this.graph.Nodes.Where(c => c.id == relation.Head).First();
-                var in_rels = this.graph.Relations.Where(c => c.Tail == head.id).Count();
-
-                if (in_rels == 0 && (head.nosuffix == "and" || head.nosuffix == "or"))
-                {
-                    var out_rels = this.graph.Relations.Where(c => c.Head == head.id);
-                    relations_deletes.AddRange(out_rels);
-                }
-            }
-            foreach (var item in relations_deletes)
-            {
-                this.graph.RemoveRelation(item);
-            }
-        }
-        private void CleanInternal(List<CGRelation> relations_deletes , List<CGRelation> relations_news)
-        {
-            foreach (var item in relations_news)
-            {
-                this.graph.AddRelation(item);
-
-            }
-            foreach (var item in relations_deletes)
-            {
-                this.graph.RemoveRelation(item);
-            }
-
-            relations_news = new List<CGRelation>();
-            relations_deletes = new List<CGRelation>();  
-
-            foreach (var relation in this.graph.Relations)
-            {
-                var head = this.graph.Nodes.Where(c => c.id == relation.Head).First();
-                var tail = this.graph.Nodes.Where(c => c.id == relation.Tail).First();
-
-                if (tail.nosuffix == "and" || tail.nosuffix == "or")
-                {
-                    var rels = this.graph.Relations.Where(c => c.Head == tail.id && c.label.StartsWith("op")).ToList();
-                    foreach (var item in rels)
-                    {
-                        var target = this.graph.Nodes.Where(c => c.id == item.Tail).First();
-                        var newrel = relation.Clone();
-                        newrel.Tail = item.Tail;
-                        relations_news.Add(newrel);
-                        relations_deletes.Add(item);
-                    }
-                    relations_deletes.Add(relation);
-                    this.CleanInternal(relations_deletes, relations_news);
-                    break;
-                }
-            }
-            
-        }
-        private void SetSemanticRole()
-        {
-            foreach (var item in this.graph.Relations.Where(c => c.label.StartsWith("op")))
-            {
-                item.description = item.label;
-                item.f = "op";
-            }
-        }
-
-        public void Execute()
-        {
-            this.CleanStart();
-            this.CleanInternal(new List<CGRelation>(), new List<CGRelation>());
-            
-            this.SetSemanticRole(); 
-
-        }
-
-    }
+    
     public class StrategyUnit
     {
         private CGGraph graph;
@@ -191,8 +226,9 @@ namespace JarvisSummarization.CG
             {
                 if (item.label == "beneficiary")
                 {
-                    item.f = "beneficiary";
-                    item.description = "beneficiary";
+                    item.f = item.label;
+                    item.description = item.label;
+                    item.conceptualrole = item.label;
                 }
             }
         }
@@ -211,8 +247,9 @@ namespace JarvisSummarization.CG
             {
                 if (item.label == "condition")
                 {
-                    item.f = "condition";
-                    item.description = "condition";
+                    item.f = item.label;
+                    item.description = item.label;
+                    item.conceptualrole = item.label;
                 }
             }
         }
@@ -232,8 +269,9 @@ namespace JarvisSummarization.CG
             {
                 if (item.label == "poss")
                 {
-                    item.f = "poss";
-                    item.description = "poss";
+                    item.f = item.label;
+                    item.description = item.label;
+                    item.conceptualrole = item.label;
                 }
             }            
         }
@@ -273,6 +311,27 @@ namespace JarvisSummarization.CG
             foreach (var item in this.graph.Relations)
             {
                 if (item.label == "value")
+                    deletes.Add(item);
+            }
+            foreach (var item in deletes)
+            {
+                graph.RemoveRelation(item);
+            }
+        }
+    }
+    public class StrategyX
+    {
+        private CGGraph graph;
+        public StrategyX(CGGraph graph)
+        {
+            this.graph = graph;
+        }
+        public void Execute()
+        {
+            List<CGRelation> deletes = new List<CGRelation>();
+            foreach (var item in this.graph.Relations)
+            {
+                if (item.label == "x")
                     deletes.Add(item);
             }
             foreach (var item in deletes)
