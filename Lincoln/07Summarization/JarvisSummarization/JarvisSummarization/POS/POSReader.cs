@@ -43,6 +43,7 @@ namespace JarvisSummarization.POS
                     tokenpos++;
                 }
             }
+            result.NumberOfWords = tokenpos;
             return result; 
         }
     }

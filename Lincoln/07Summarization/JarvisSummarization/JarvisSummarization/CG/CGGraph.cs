@@ -14,6 +14,10 @@ namespace JarvisSummarization.CG
         
         private string propbankPath;
         public string name { get; set; }
+
+        public int NumberOfWords { get; set; }
+
+
         public int numnodes { get {
                 return this.Nodes.Count();
             } }
@@ -59,49 +63,25 @@ namespace JarvisSummarization.CG
         {
             this._Relations.Remove(relation); 
         }
-        public CGGraph(string name, string propbankPath)
+        public CGGraph(string name, string propbankPath, int numberofwords)
         {
             this.propbankPath = propbankPath;
-            this.name = name;             
+            this.name = name;
+            this.NumberOfWords = numberofwords; 
             this._Relations = new List<CGRelation>();
             this.CGSentences = new List<CGSentence>(); 
         }
         
-        private void PruneRelationErrors()
-        {            
-            //var deletes = new List<CGRelation>();
-            //foreach (var item in this.Relations.Where(c => c.label.Contains("ARG")))
-            //{
-            //    var head = this.Nodes.Where(c => c.id == item.Head).First();
-            //    var tail = this.Nodes.Where(c => c.id == item.Tail).First();
-            //    if (item.label.Contains("-of"))
-            //    {
-            //        if (tail.kind != "verb")
-            //        {
-            //            deletes.Add(item);
-            //        }
-            //    }
-            //    else
-            //    {
-            //        if (head.kind != "verb")
-            //        {
-            //            deletes.Add(item);
-            //        }
-            //    }
-            //}
-            //foreach (var item in deletes)
-            //{
-            //    this.Relations.Remove(item);
-            //}            
-        }
-
+      
         //http://es.slideshare.net/underx/semantic-roles        
         
 
         public void Digest()
         {
-
             new StrategyStopWords(this).Execute();
+
+            new StrategyPossibleToVerb(this).Execute(); 
+
             //important last
             new StrategyOp(this).Execute();
             
@@ -109,8 +89,7 @@ namespace JarvisSummarization.CG
             new StrategySolveOfRelations().Execute(this);
             
             //si tenemos un verbo que no es of- y que es el ultimo debe ser un concepto
-            new StrategyVerbToConcept(this).Execute();  
-                       
+            new StrategyVerbToConcept(this).Execute();                        
             
             new StrategyNameFusion(this).Execute();
             new StrategyX(this).Execute();
@@ -155,7 +134,7 @@ namespace JarvisSummarization.CG
             new StrategySynonym(this).Execute();
 
             
-            //new StrategyCompressGraph(this).Execute();
+            new StrategyCompressGraph(this).Execute();
             new StrategyPageRank(this).Execute(); 
             
         }
@@ -288,20 +267,21 @@ namespace JarvisSummarization.CG
 
             return expression;
         }
-        public CGExpression BuildVerbExpression(CGNode target, string role)
+        public CGExpression BuildVerbExpression(CGNode target, string role, CGNode previous)
         {
             CGExpression expression = new CGExpression(target, role);
             expression.Mods = this.FindByHead(target.id, "mod");
             expression.Locations = this.FindByHead(target.id, "location");            
             expression.Degree = this.FindByHead(target.id, "degree");
             expression.Manner = this.FindByHead(target.id, "manner");
-            var ins = this.Relations.Where(c => c.Tail == target.id);
+            var ins = this.Relations.Where(c => c.Tail == target.id &&
+                        (previous != null && c.Head != previous.id));
             foreach (var item in ins)
             {
                 var head = this.Nodes.Where(c => c.id == item.Head).Single();
                 if (item.conceptualrole == "patient")
                 {
-                    var tmp = this.Relations.Where(c => c.Tail == item.Head).Count();
+                    var tmp = this.Relations.Where(c => c.Tail == item.Head ).Count();
                     if (tmp == 0)
                     {
                         expression.Adverbs.Add(head);
@@ -345,28 +325,61 @@ namespace JarvisSummarization.CG
             }
             return expression;
         }
-        public CGVerb BuildVerb(CGNode target, string role)
+        public CGExpression BuildComplexExpression(CGNode verb, string role, CGNode previous)
         {
-            CGVerb result = new CGVerb();
-            result.Verb0 = this.BuildVerbExpression(target, role);
-            return result;
+            var verbexpression = this.BuildVerbExpression(verb, role, previous);
+            CGComplexExpression expression = new CGComplexExpression(verbexpression, role);            
+                                    
+            var patients = this.FindByHead(verb.id, "patient");
+            foreach (var item in patients)
+            {
+                if (!item.semanticroles.Contains("verb"))
+                    expression.Patient.Items.Add(this.BuildPredicateExpression(item, "patient"));
+            }
+            var experiencers = this.FindByHead(verb.id, "experiencer");
+            foreach (var item in experiencers)
+            {
+                if (!item.semanticroles.Contains("verb"))
+                    expression.Patient.Items.Add(this.BuildPredicateExpression(item, "patient"));
+            }
+            var copatients = this.FindByHead(verb.id, "co-patient");
+            foreach (var item in copatients)
+            {
+                if (!item.semanticroles.Contains("verb"))
+                    expression.Patient.Items.Add(this.BuildPredicateExpression(item, "patient"));
+            }
+            var results = this.FindByHead(verb.id, "result");
+            foreach (var item in results)
+            {
+                if (!item.semanticroles.Contains("verb"))
+                    expression.Result.Items.Add(this.BuildPredicateExpression(item, "result"));
+            }
+            return expression;
         }
-        public CGSentence Navigate(CGNode verb)
+        
+        public void Navigate(CGSentence sentence, CGNode verb)
         {
-            CGSentence sentence = new CGSentence();
-
-            sentence.Verb = this.BuildVerb(verb, "rel");
+            sentence.Verb = new CGVerb() { Verb0 = this.BuildVerbExpression(verb, "rel", null) };
 
             var agents = this.FindByHead(verb.id, "agent");
+
             foreach (var item in agents)
             {
                 sentence.Subject.Items.Add(this.BuildSubjectExpression(item, "agent"));
             }
-            var patients = this.FindByHead(verb.id, "patient");
-            
+
+            var patients = this.FindByHead(verb.id, "patient");            
             foreach (var item in patients)
             {
-                sentence.Patient.Items.Add(this.BuildPredicateExpression(item, "patient"));
+                if (item.semanticroles.Contains("verb"))
+                {
+                    sentence.Patient.Items.Add(this.BuildComplexExpression(item, "patient", verb));
+                }
+                else
+                {
+                    sentence.Patient.Items.Add(this.BuildPredicateExpression(item, "patient"));
+                }
+                
             }
             var experiencers = this.FindByHead(verb.id, "experiencer");
             foreach (var item in experiencers)
@@ -381,7 +394,13 @@ namespace JarvisSummarization.CG
             var goals = this.FindByHead(verb.id, "goal");
             foreach (var item in goals)
             {
-                sentence.Goal.Items.Add(this.BuildPredicateExpression(item, "goal"));
+                if (item.semanticroles.Contains("verb"))
+                {
+                    sentence.Goal.Items.Add(this.BuildComplexExpression(item, "goal", verb));
+                }
+                else {
+                    sentence.Goal.Items.Add(this.BuildPredicateExpression(item, "goal"));
+                }
             }
             var results = this.FindByHead(verb.id, "result");
             foreach (var item in results)
@@ -396,21 +415,32 @@ namespace JarvisSummarization.CG
             var themes = this.FindByHead(verb.id, "theme");
             foreach (var item in themes)
             {
-                sentence.Theme.Items.Add(this.BuildPredicateExpression(item, "theme"));
-            }
-
-            return sentence;
+                if (item.semanticroles.Contains("verb"))
+                {
+                    sentence.Theme.Items.Add(this.BuildComplexExpression(item, "theme", verb));
+                }
+                else
+                {
+                    sentence.Theme.Items.Add(this.BuildPredicateExpression(item, "theme"));
+                }                
+            }            
         }
 
         public void GenerateInformativeAspects()
         {
             var rels = this.Nodes.Where(c => c.semanticroles.Contains("verb")).OrderByDescending(c=>c.pagerank).ToList();
             foreach (var item in rels)
-            {                   
-                var aspect = this.Navigate(item);
-                aspect.name = this.CGSentences.Count + 1;
+            {
+                var aspect = new CGSentence();
+                this.Navigate(aspect,item);
+                aspect.name = this.CGSentences.Count + 1;                
                 this.CGSentences.Add( aspect );
             }
+        }
+        public void Summary30()
+        {
+            var numberofterms = this.NumberOfWords * 0.3;            
+            
         }
         public void ReadAMR(AMRDocument Document)
         {

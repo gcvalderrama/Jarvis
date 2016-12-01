@@ -13,6 +13,7 @@ namespace JarvisSummarization.Common
         [Newtonsoft.Json.JsonIgnore]
         public List<Sentence> sentences { get; private set; }
 
+        public int NumberOfWords { get; set; }
         public Document()
         {
             this.sentences = new List<Sentence>();

@@ -88,5 +88,6 @@ def SaveGraphs(graphs):
 
 
 if __name__ == '__main__':
-    graphs = load_amr_graphs('D:/Tesis2016/Jarvis/Lincoln/05AMRParsing/Input/lincon.txt.all.basic-abt-brown-verb.parsed')
+#    graphs = load_amr_graphs('D:/Tesis2016/Jarvis/Lincoln/05AMRParsing/Input/lincon.txt.all.basic-abt-brown-verb.parsed')
+    graphs = load_amr_graphs('D:/Tesis2016/Jarvis/Lincoln/05AMRParsing/Input/WSJ9004020112.txt.all.basic-abt-brown-verb.parsed')
     SaveGraphs(graphs)

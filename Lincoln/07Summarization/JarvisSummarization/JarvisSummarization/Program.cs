@@ -18,18 +18,17 @@ namespace JarvisSummarization
             //manager.DeleteAllNodes();
 
             POS.POSReader posreader = new POS.POSReader();
-            //var inputpath = @"D:\Tesis2016\Jarvis\Lincoln\02SintacticAnalysis\Output\WSJ9004020112.xml";
-            var inputpath = @"D:\Tesis2016\Jarvis\Lincoln\02SintacticAnalysis\Output\lincon.xml";
+            var inputpath = @"D:\Tesis2016\Jarvis\Lincoln\02SintacticAnalysis\Output\WSJ9004020112.xml";
+            //var inputpath = @"D:\Tesis2016\Jarvis\Lincoln\02SintacticAnalysis\Output\lincon.xml";
             
             var document = posreader.Load(inputpath);
             //manager.SaveDocument(document);
 
             RST.RSTReader rstreader = new RST.RSTReader();
 
-            var rstdocument =  
-                rstreader.ReadDocument(@"D:\Tesis2016\Jarvis\Lincoln\03RST\Input\lincon.txt.xml.jarvis", //WSJ9004020112.txt.xml.jarvis",
-                
-                Path.GetFileNameWithoutExtension(inputpath));
+            //var rstdocument =  rstreader.ReadDocument(@"D:\Tesis2016\Jarvis\Lincoln\03RST\Input\lincon.txt.xml.jarvis", Path.GetFileNameWithoutExtension(inputpath));
+
+            var rstdocument = rstreader.ReadDocument(@"D:\Tesis2016\Jarvis\Lincoln\03RST\Input\WSJ9004020112.txt.xml.jarvis", Path.GetFileNameWithoutExtension(inputpath));
 
             rstdocument.EvaluateODonell();
 
@@ -44,10 +43,10 @@ namespace JarvisSummarization
                         
             amrdoc.LoadRSTInformation(rstdocument);            
 
-            //manager.DeleteAllAMR();
-            //manager.SaveAMR(amrdoc);
+            manager.DeleteAllAMR();
+            manager.SaveAMR(amrdoc);
 
-            CGGraph cgraph = new CGGraph("lincon", @"D:\Tesis2016\Propbank\frames");
+            CGGraph cgraph = new CGGraph("lincon", @"D:\Tesis2016\Propbank\frames", document.NumberOfWords);
             cgraph.ReadAMR(amrdoc);
             cgraph.Digest();
 
@@ -61,12 +60,12 @@ namespace JarvisSummarization
             }
 
             cgraph.GenerateInformativeAspects();
-            foreach (var item in cgraph.CGSentences)
+            foreach (var item in cgraph.CGSentences.OrderByDescending(c=>c.rank))
             {
                 Console.WriteLine(item);
             }
-            //manager.DeleteAllCG(); 
-            //manager.SaveCG(cgraph); 
+            manager.DeleteAllCG(); 
+            manager.SaveCG(cgraph); 
 
 
 

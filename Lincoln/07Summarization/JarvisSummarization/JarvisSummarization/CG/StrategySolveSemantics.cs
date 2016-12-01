@@ -20,7 +20,7 @@ namespace JarvisSummarization.CG
             {
                 var head = this.graph.Nodes.Where(c => c.id == relation.Head).First();
                 var tail = this.graph.Nodes.Where(c => c.id == relation.Tail).First();
-
+                
                 if (!head.text.Contains("-0") && relation.label.Contains("ARG"))
                 {
                     deletes.Add(relation);                     

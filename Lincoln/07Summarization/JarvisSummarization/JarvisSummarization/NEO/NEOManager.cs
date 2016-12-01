@@ -325,15 +325,15 @@ namespace JarvisSummarization.NEO
                 }
                 foreach (var aspect in Graph.CGSentences)
                 {
-                    client.Cypher.Create("(n:CGAspect {newObject})")
-                        .WithParam("newObject", aspect)
-                        .ExecuteWithoutResults();
+                    //client.Cypher.Create("(n:CGAspect {newObject})")
+                    //    .WithParam("newObject", aspect)
+                    //    .ExecuteWithoutResults();
 
-                    client.Cypher.Match("(a:CGGraph)", "(n:CGAspect)")
-                       .Where((CGGraph a) => a.name == Graph.name)
-                       .AndWhere((CGInformativeAspect n) => n.name == aspect.name)
-                       .CreateUnique(string.Format("(a)-[:hasaspect]->(n)"))
-                       .ExecuteWithoutResults();
+                    //client.Cypher.Match("(a:CGGraph)", "(n:CGAspect)")
+                    //   .Where((CGGraph a) => a.name == Graph.name)
+                    //   .AndWhere((CGInformativeAspect n) => n.name == aspect.name)
+                    //   .CreateUnique(string.Format("(a)-[:hasaspect]->(n)"))
+                    //   .ExecuteWithoutResults();
 
                     //foreach (var item in aspect.Who)
                     //{

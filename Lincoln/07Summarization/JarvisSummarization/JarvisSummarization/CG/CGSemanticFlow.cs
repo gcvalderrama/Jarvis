@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace JarvisSummarization.CG
 {
+    
     public class CGSentence
     {
         public int name { get; set; }
@@ -16,6 +17,13 @@ namespace JarvisSummarization.CG
         public CGPredicate Goal { get; set; }
         public CGPredicate Destination { get; set; }
         public CGPredicate Theme { get; set; }
+
+        
+
+        public double rank { get {
+                return this.Subject.Items.Sum(c => c.rank);                   
+            } }
+
         public CGSentence()
         {
             this.Subject = new CGSubject();
@@ -37,32 +45,49 @@ namespace JarvisSummarization.CG
             sb.AppendLine("Verb");
             sb.AppendLine(this.Verb.ToString());
             sb.AppendLine("Patients");
-            foreach (var item in this.Patient.Items)
-            {
-                sb.AppendLine(item.ToString());
-            }
+            sb.AppendLine(this.Patient.ToString());
+            
             sb.AppendLine("Theme");
-            foreach (var item in this.Theme.Items)
-            {
-                sb.AppendLine(item.ToString());
-            }
+            sb.AppendLine(this.Theme.ToString());
+            
             sb.AppendLine("Goals");
-            foreach (var item in this.Goal.Items)
-            {
-                sb.AppendLine(item.ToString());
-            }
+            sb.AppendLine(this.Goal.ToString());            
             sb.AppendLine("Destinations");
-            foreach (var item in this.Destination.Items)
-            {
-                sb.AppendLine(item.ToString());
-            }
+            sb.AppendLine(this.Destination.ToString());           
 
-            //sb.AppendLine(string.Format("weight {0}", this.weight));
+            sb.AppendLine(string.Format("weight {0}", this.rank));
             sb.AppendLine("==========================================================================");
             return sb.ToString();
         }
 
 
+    }
+    public class CGComplexExpression : CGExpression
+    {
+        public CGExpression Verb { get; set; }
+        public CGPredicate Patient { get; set; }
+        public CGPredicate Goal { get; set; }
+        public CGPredicate Result { get; set; }
+        public CGComplexExpression(CGExpression expression, string role) :base(expression.Node, role)
+        {
+            this.Verb = expression;
+            this.Patient = new CGPredicate();
+            this.Goal = new CGPredicate();
+            this.Result = new CGPredicate();
+        }
+        public override string ToString()
+        {
+            StringBuilder sb = new StringBuilder();
+
+            sb.AppendLine("complex type");
+            sb.AppendLine(this.Verb.ToString()); 
+            sb.AppendLine(this.Patient.ToString());
+            sb.AppendLine(this.Goal.ToString());
+            sb.AppendLine(this.Result.ToString());
+            sb.AppendLine("end complex type");
+
+            return sb.ToString();
+        }
     }
     public class CGExpression
     {
@@ -71,6 +96,14 @@ namespace JarvisSummarization.CG
         public List<CGNode> Locations { get; set; }
         public List<CGNode> Degree { get; set; }
         public List<CGNode> Manner { get; set; }
+
+        public double rank { get {
+                return this.Node.pagerank +
+                    this.Mods.Sum(c => c.pagerank) +
+                    this.Locations.Sum(c => c.pagerank) +
+                    this.Degree.Sum(c => c.pagerank) +
+                    this.Manner.Sum(c => c.pagerank);
+            } }
 
         public CGNode Node { get; set; }
         public string role { get; set; }
@@ -125,6 +158,15 @@ namespace JarvisSummarization.CG
         public CGPredicate()
         {
             this.Items = new List<CGExpression>();
+        }
+        public override string ToString()
+        {
+            StringBuilder sb = new StringBuilder(); 
+            foreach (var item in this.Items)
+            {
+                sb.AppendLine(item.ToString());
+            }
+            return sb.ToString();
         }
     }
 
