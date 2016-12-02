@@ -21,13 +21,17 @@ namespace JarvisSummarization.CG
             {
                 var head = this.graph.Nodes.Where(c => c.id == item.Head).Single();
                 var tail = this.graph.Nodes.Where(c => c.id == item.Tail).Single();
-                var oprel = this.graph.Relations.Where(c => c.Head == tail.id && c.label == "op1").Single();
-                var tailop = this.graph.Nodes.Where(c => c.id == oprel.Tail).Single();
-                head.text = tailop.text;
+                var oprels = this.graph.Relations.Where(c => c.Head == tail.id && c.label.StartsWith("op")).OrderBy(c=>c.Tail).ToList();
+
+                foreach (var rel in oprels)
+                {
+                    var tailop = this.graph.Nodes.Where(c => c.id == rel.Tail).Single();                    
+                    head.constant += " " + tailop.text;              
+                    deletes_node.Add(tailop);                    
+                    deletes.Add(rel);
+                }
                 deletes_node.Add(tail);
-                deletes_node.Add(tailop);
                 deletes.Add(item);
-                deletes.Add(oprel);
             }
             foreach (var item in deletes_node)
             {

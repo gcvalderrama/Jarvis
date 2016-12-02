@@ -83,7 +83,7 @@ namespace JarvisSummarization.CG
             new StrategyPossibleToVerb(this).Execute(); 
 
             //important last
-            new StrategyOp(this).Execute();
+            new StrategyOperatorAndOr(this).Execute();
             
             //invert of relation
             new StrategySolveOfRelations().Execute(this);
@@ -187,12 +187,14 @@ namespace JarvisSummarization.CG
             expression.Locations = this.FindByHead(target.id, "location");
             expression.Degree = this.FindByHead(target.id, "degree");
             expression.Manner = this.FindByHead(target.id, "manner");
+            expression.Poss = this.FindByHead(target.id, "poss");
 
             var ins = this.Relations.Where(c => c.Tail == target.id);
             foreach (var item in ins)
             {
                 if (item.conceptualrole != "agent" 
                     && item.conceptualrole != "theme"
+                     && item.conceptualrole != "source"
                     && item.conceptualrole != "result"
                     && item.conceptualrole != "experiencer"
                     && item.conceptualrole != "patient")                    
@@ -203,6 +205,7 @@ namespace JarvisSummarization.CG
             foreach (var item in outs)
             {
                 if (item.conceptualrole != "mod" &&
+                    item.conceptualrole != "poss" &&
                     item.conceptualrole != "location")
                     throw new ApplicationException("delete");
             }
@@ -216,6 +219,7 @@ namespace JarvisSummarization.CG
             expression.Locations = this.FindByHead(target.id, "location");
             expression.Degree = this.FindByHead(target.id, "degree");
             expression.Manner = this.FindByHead(target.id, "manner");
+            expression.Poss = this.FindByHead(target.id, "poss");
 
             var ins = this.Relations.Where(c => c.Tail == target.id);
             foreach (var item in ins)
@@ -232,12 +236,15 @@ namespace JarvisSummarization.CG
                 else if (item.conceptualrole != "theme" &&
                     item.conceptualrole != "agent" &&
                     item.conceptualrole != "destination" &&
+                    item.conceptualrole != "attribute" &&
                     item.conceptualrole != "purpose" &&
                     item.conceptualrole != "result" &&
+                    item.conceptualrole != "source" &&
                     item.conceptualrole != "co-patient" &&
                     item.conceptualrole != "experiencer" &&
                     item.conceptualrole != "theme" &&
                     item.conceptualrole != "goal" &&
+                    item.conceptualrole != "asset" &&
                     item.conceptualrole != "instrument" &&
                     item.conceptualrole != "location" &&
                     item.conceptualrole != "mod")
@@ -248,6 +255,7 @@ namespace JarvisSummarization.CG
             foreach (var item in outs)
             {
                 if (item.conceptualrole != "mod" &&
+                    item.conceptualrole != "poss" &&
                     item.conceptualrole != "degree" &&
                     item.conceptualrole != "manner" &&
                     item.conceptualrole != "location"&& 
@@ -306,12 +314,14 @@ namespace JarvisSummarization.CG
             var outs = this.Relations.Where(c => c.Head == target.id);
             foreach (var item in outs)
             {
+                var tail = this.Nodes.Where(c => c.id == item.Tail).Single();
                 if (item.conceptualrole != "mod" &&
                     item.conceptualrole != "location" &&
                     item.conceptualrole != "degree" &&
                     item.conceptualrole != "manner" &&
                     item.conceptualrole != "agent" &&
                     item.conceptualrole != "destination" &&
+                    item.conceptualrole != "stimulus" &&                    
                     item.conceptualrole != "purpose" &&
                     item.conceptualrole != "result" &&
                     item.conceptualrole != "patient" &&
@@ -319,6 +329,8 @@ namespace JarvisSummarization.CG
                     item.conceptualrole != "experiencer" &&
                     item.conceptualrole != "theme" && 
                     item.conceptualrole != "goal" &&
+                    item.conceptualrole != "source" &&
+                    item.conceptualrole != "topic" &&
                     item.conceptualrole != "instrument" &&
                     item.conceptualrole != "op")
                     throw new ApplicationException("delete");

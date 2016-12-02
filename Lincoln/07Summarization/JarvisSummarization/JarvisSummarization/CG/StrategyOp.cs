@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace JarvisSummarization.CG
 {
-    public class StrategyOp
+    public class StrategyOperatorAndOr
     {
         private CGGraph graph;
-        public StrategyOp(CGGraph graph)
+        public StrategyOperatorAndOr(CGGraph graph)
         {
             this.graph = graph;
         }

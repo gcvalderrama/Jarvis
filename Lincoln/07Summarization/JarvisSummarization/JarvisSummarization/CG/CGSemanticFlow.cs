@@ -96,13 +96,16 @@ namespace JarvisSummarization.CG
         public List<CGNode> Locations { get; set; }
         public List<CGNode> Degree { get; set; }
         public List<CGNode> Manner { get; set; }
+        public List<CGNode> Poss { get; set; }
 
         public double rank { get {
                 return this.Node.pagerank +
                     this.Mods.Sum(c => c.pagerank) +
                     this.Locations.Sum(c => c.pagerank) +
                     this.Degree.Sum(c => c.pagerank) +
-                    this.Manner.Sum(c => c.pagerank);
+                    this.Manner.Sum(c => c.pagerank) +
+                    this.Poss.Sum(c=>c.pagerank)
+                    ;
             } }
 
         public CGNode Node { get; set; }
@@ -113,7 +116,9 @@ namespace JarvisSummarization.CG
             this.Locations = new List<CGNode>();        
             this.Adverbs = new List<CGNode>(); 
             this.Manner = new List<CGNode>();
+            this.Poss = new List<CGNode>();
             this.Node = node; this.role = role;
+
         }
         public override string ToString()
         {
@@ -122,6 +127,10 @@ namespace JarvisSummarization.CG
             foreach (var item in this.Mods)
             {
                 sb.AppendLine("mod " + item.nosuffix);
+            }
+            foreach (var item in this.Poss)
+            {
+                sb.AppendLine("poss " + item.nosuffix);
             }
             foreach (var item in this.Adverbs)
             {

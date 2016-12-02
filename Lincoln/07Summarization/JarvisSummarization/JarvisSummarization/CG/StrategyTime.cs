@@ -45,6 +45,7 @@ namespace JarvisSummarization.CG
                 {
                     item.description = item.label;
                     item.f = item.label;
+                    item.conceptualrole = item.label;
                 }
             }
         }
@@ -206,8 +207,9 @@ namespace JarvisSummarization.CG
             {
                 if (item.label == "weekday")
                 {
-                    item.f = "weekday";
-                    item.description = "weekday";
+                    item.f = item.label;
+                    item.description = item.label;
+                    item.conceptualrole = item.label;
                 }
             }
         }

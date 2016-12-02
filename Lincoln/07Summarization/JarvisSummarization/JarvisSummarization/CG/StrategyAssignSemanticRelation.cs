@@ -34,6 +34,16 @@ namespace JarvisSummarization.CG
                 item.f = "gol";
                 item.conceptualrole = "goal";
             }
+            else if (item.label == "ARG3")
+            {
+                item.f = "start";
+                item.conceptualrole = "start";
+            }
+            else if (item.label == "ARG4")
+            {
+                item.f = "end";
+                item.conceptualrole = "end";
+            }
         }
         private void ExecuteForVerbs(CGNode node, IEnumerable<CGRelation> out_relations)
         {
@@ -77,8 +87,19 @@ namespace JarvisSummarization.CG
                         }
                         else
                         {
-                            ManageNotFoundArg(relation);                            
+                            if (relation.f == "pag") relation.conceptualrole = "agent";
+                            if (relation.f == "ppt") relation.conceptualrole = "patient";
+                            if (relation.f == "gol") relation.conceptualrole = "goal";
+                            if (relation.f == "loc") relation.conceptualrole = "location";
+                            if (relation.f == "dir") relation.conceptualrole = "direction";
+                            if (relation.f == "ext") relation.conceptualrole = "extend";
+                            if (relation.f == "prd") relation.conceptualrole = "location";
+                            if (relation.f == "mnr") relation.conceptualrole = "manner";
                         }
+                    }
+                    else
+                    {
+                        ManageNotFoundArg(relation);
                     }
                     
                 }
