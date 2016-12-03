@@ -122,7 +122,7 @@ namespace JarvisSummarization.CG
         {
             this.graph = graph;
         }
-        public void Execute()
+        public void ExecuteAdd()
         {            
             foreach (var item in this.graph.Relations)
             {
@@ -134,7 +134,7 @@ namespace JarvisSummarization.CG
                 }
             }            
         }
-        public void ExecuteDelete()
+        public void Execute()
         {
             List<CGRelation> deletes = new List<CGRelation>();
             foreach (var item in this.graph.Relations)
@@ -207,10 +207,12 @@ namespace JarvisSummarization.CG
             {
                 if (item.label == "weekday")
                 {
-                    item.f = item.label;
-                    item.description = item.label;
-                    item.conceptualrole = item.label;
+                    deletes.Add(item);                    
                 }
+            }
+            foreach (var item in deletes)
+            {
+                this.graph.RemoveRelation(item);
             }
         }
     }

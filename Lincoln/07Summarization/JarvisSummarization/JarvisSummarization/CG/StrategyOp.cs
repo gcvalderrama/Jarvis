@@ -84,11 +84,9 @@ namespace JarvisSummarization.CG
 
         public void Execute()
         {
-            this.CleanStart();
-            this.CleanInternal(new List<CGRelation>(), new List<CGRelation>());
-
+            //this.CleanStart();
+            //this.CleanInternal(new List<CGRelation>(), new List<CGRelation>());
             this.SetSemanticRole();
-
         }
 
     }

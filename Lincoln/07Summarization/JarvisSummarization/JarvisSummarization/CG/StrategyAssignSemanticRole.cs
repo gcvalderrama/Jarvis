@@ -15,13 +15,27 @@ namespace JarvisSummarization.CG
         {
             this.graph = graph;
         }
+        private List<string> Terms = new List<string>() {
+            "or", "and",
+            "every",  "many" , "this", "any", "less" };
         public void Execute()
         {
             foreach (var item in this.graph.Nodes)
             {
+                var in_rels = this.graph.Relations.Where(c => c.Tail == item.id);
+                var out_rels = this.graph.Relations.Where(c => c.Head == item.id);
+
+                int number;
                 if (item.text.Contains("-0"))
                 {
                     item.AddSemanticRole("verb");
+                }
+                else if (Terms.Contains(item.nosuffix) 
+                    || int.TryParse(item.nosuffix, out number) 
+                    || item.text.StartsWith("prep-")
+                    )
+                {
+                    item.AddSemanticRole("term");
                 }
                 else
                 {

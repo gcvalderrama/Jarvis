@@ -21,10 +21,12 @@ namespace JarvisSummarization.CG
             {
                 if (item.label.StartsWith("frequency"))
                 {
-                    item.f = item.label;
-                    item.description = item.label;
-                    item.conceptualrole = item.label;
+                    deletes.Add(item); 
                 }
+            }
+            foreach (var item in deletes)
+            {
+                this.graph.RemoveRelation(item);
             }
         }
     }

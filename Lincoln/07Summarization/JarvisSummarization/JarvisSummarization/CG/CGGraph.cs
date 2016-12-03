@@ -78,25 +78,21 @@ namespace JarvisSummarization.CG
 
         public void Digest()
         {
-            new StrategyStopWords(this).Execute();
-
+            //new StrategyStopWords(this).Execute();
+            //convert  possible to can verb 
             new StrategyPossibleToVerb(this).Execute(); 
-
             //important last
-            new StrategyOperatorAndOr(this).Execute();
-            
+            new StrategyOperatorAndOr(this).Execute();            
             //invert of relation
-            new StrategySolveOfRelations().Execute(this);
-            
+            new StrategySolveOfRelations().Execute(this);            
             //si tenemos un verbo que no es of- y que es el ultimo debe ser un concepto
-            new StrategyVerbToConcept(this).Execute();                        
+            new StrategyVerbToConcept(this).Execute();                       
             
             new StrategyNameFusion(this).Execute();
             new StrategyX(this).Execute();
-            new StrategyDegree(this).Execute(); 
+            
             //no polarity
             new StrategyPolarity(this).Execute();
-
             new StrategySource(this).Execute();
             new StrategyDirection(this).Execute();  
             //no unit
@@ -104,10 +100,10 @@ namespace JarvisSummarization.CG
             new StrategyPoss(this).Execute();
             new StrategyCondition(this).Execute();
             new StrategyBeneficiary(this).Execute();
-            new StrategyWeekday(this).Execute(); 
+            
             new StrategyQuant(this).Execute();
             new StrategyValue(this).Execute();
-            new StrategyFrequency(this).Execute();
+            
             new StrategyTime(this).Execute();
             new StrategyExample(this).Execute(); 
             new StrategyTopic(this).Execute(); 
@@ -121,10 +117,14 @@ namespace JarvisSummarization.CG
             new StrategyPurpose(this).Execute();
             new StrategyPart(this).Execute();
             new StrategyManner(this).Execute();
-            new StrategyInstrument(this).Execute();  
+            new StrategyInstrument(this).Execute();
+
+            //deletes 
+            new StrategyFrequency(this).Execute();
+            new StrategyDegree(this).Execute();
             new StrategySolveNullNodes().Execute(this);
             new StrategySolveNullEdgeRelations().Execute(this);
-
+            new StrategyWeekday(this).Execute();
             //solve semantics
             new StrategySolveSemantics(this).Execute();            
             new StrategyAssignSemanticRelation(this).Execute();
@@ -192,12 +192,27 @@ namespace JarvisSummarization.CG
             var ins = this.Relations.Where(c => c.Tail == target.id);
             foreach (var item in ins)
             {
+                var head = this.Nodes.Where(c => c.id == item.Head).Single(); 
                 if (item.conceptualrole != "agent" 
                     && item.conceptualrole != "theme"
-                     && item.conceptualrole != "source"
+                    && item.conceptualrole != "source"
                     && item.conceptualrole != "result"
                     && item.conceptualrole != "experiencer"
-                    && item.conceptualrole != "patient")                    
+                    && item.conceptualrole != "patient" 
+                    && item.conceptualrole != "manner"
+                    && item.conceptualrole != "mod"
+                    && item.conceptualrole != "location"
+                    && item.conceptualrole != "attribute"
+                    && item.conceptualrole != "prep-to"
+                    && item.conceptualrole != "asset"
+                    && item.conceptualrole != "co-patient"
+                    && item.conceptualrole != "poss"
+                    && item.conceptualrole != "op"
+                    && item.conceptualrole != "pivot"
+                    && item.conceptualrole != "topic"
+                    && item.conceptualrole != "goal"
+                    && item.conceptualrole != "compared-to"
+                    )                    
                     throw new ApplicationException("delete");
 
             }
@@ -206,7 +221,8 @@ namespace JarvisSummarization.CG
             {
                 if (item.conceptualrole != "mod" &&
                     item.conceptualrole != "poss" &&
-                    item.conceptualrole != "location")
+                    item.conceptualrole != "location" &&
+                    item.conceptualrole != "asset")
                     throw new ApplicationException("delete");
             }
 
@@ -247,7 +263,19 @@ namespace JarvisSummarization.CG
                     item.conceptualrole != "asset" &&
                     item.conceptualrole != "instrument" &&
                     item.conceptualrole != "location" &&
-                    item.conceptualrole != "mod")
+                    item.conceptualrole != "mod" &&
+                    item.conceptualrole != "prep-to" &&
+                    item.conceptualrole != "op" &&
+                    item.conceptualrole != "poss" &&
+                    item.conceptualrole != "pivot" &&
+                    item.conceptualrole != "topic" &&
+                    item.conceptualrole != "stimulus" &&
+                    item.conceptualrole != "co-agent" &&
+                    item.conceptualrole != "product" &&
+                    item.conceptualrole != "manner" &&
+                    item.conceptualrole != "prep-instead" &&                    
+                    item.conceptualrole != "compared-to" 
+                    )
                     throw new ApplicationException("delete");
 
             }
@@ -269,6 +297,9 @@ namespace JarvisSummarization.CG
                     item.conceptualrole != "theme" &&
                     item.conceptualrole != "goal" &&
                     item.conceptualrole != "instrument" &&
+                    item.conceptualrole != "topic" &&
+                    item.conceptualrole != "prep-to" &&
+                    item.conceptualrole != "prep-instead" &&
                     item.conceptualrole != "op")
                     throw new ApplicationException("delete");
             }
@@ -331,8 +362,13 @@ namespace JarvisSummarization.CG
                     item.conceptualrole != "goal" &&
                     item.conceptualrole != "source" &&
                     item.conceptualrole != "topic" &&
+                    item.conceptualrole != "asset" &&
                     item.conceptualrole != "instrument" &&
-                    item.conceptualrole != "op")
+                    item.conceptualrole != "op" &&
+                    item.conceptualrole != "attribute" &&
+                    item.conceptualrole != "prep-under" &&
+                    item.conceptualrole != "predicate" &&
+                    item.conceptualrole != "end")
                     throw new ApplicationException("delete");
             }
             return expression;
@@ -438,6 +474,116 @@ namespace JarvisSummarization.CG
             }            
         }
 
+        public void Validate()
+        {
+            var relations = this.Relations.Where(c => c.conceptualrole == "mod");
+            var agents = new List<CGNode>();
+            foreach (var item in relations)
+            {
+                //var head = this.Nodes.Where(c => c.id == item.Head).Single();
+                //var tail = this.Nodes.Where(c => c.id == item.Tail).Single();
+                //if (tail.semanticroles.Contains("verb"))
+                //{
+                //    throw new Exception("not valid");
+                //}
+            }
+
+        }
+
+        public void GenerateInformation()
+        {
+            Console.WriteLine("Concepts");
+            foreach (var item in this.Nodes.Where(c=>c.semanticroles.Contains("concept")))
+            {
+                Console.WriteLine(item.text);
+            }
+            Console.WriteLine("Relations");
+            foreach (var item in this.Relations.Select(c=>c.conceptualrole).Distinct())
+            {
+             //   Console.WriteLine(item);
+            }
+            Console.WriteLine("Verbs");
+
+            foreach (var item in this.Nodes.Where(c=>c.semanticroles.Contains("verb")).OrderByDescending(c=>c.pagerank))
+            {
+                Console.WriteLine(item.pagerank + "  " + item.text);
+            }
+
+            Console.WriteLine("Muti Verbs");
+            Console.WriteLine("=====================================================");
+
+            foreach (var item in this.Relations)
+            {
+                var head = this.Nodes.Where(c => c.id == item.Head).Single();
+                var tail = this.Nodes.Where(c => c.id == item.Tail).Single();
+                if (head.semanticroles.Contains("verb") && tail.semanticroles.Contains("verb"))
+                {                    
+                    
+                    Console.WriteLine(head.text + " - " +  item.conceptualrole + " : "  +item.label +" -> " + tail.text);
+
+                    var outs = this.Relations.Where(c => c.Head == head.id);
+                    foreach (var rel in outs)
+                    {
+                        var outtail = this.Nodes.Where(c => c.id == rel.Tail).Single();
+                        Console.WriteLine("     " + rel.conceptualrole + " : " + rel.label + " = " + outtail.semanticroles.Single()+ " > " + outtail.text);
+                    }
+                }
+            }
+            Console.WriteLine("=====================================================");
+            foreach (var item in this.Nodes.Where(c => c.semanticroles.Contains("verb")).OrderByDescending(c => c.pagerank))
+            {
+                Console.WriteLine(item.pagerank + "  " + item.text);
+            }
+
+            Console.WriteLine("Agents");
+
+
+            var agents_relations = this.Relations.Where(c => c.conceptualrole == "agent" ).Select(c=>c.Tail).Distinct();
+            var agents = new List<CGNode>();
+            foreach (var item in agents_relations)
+            {
+                var tail = this.Nodes.Where(c => c.id == item).Single();
+                agents.Add(tail); 
+            }
+
+            foreach (var item in agents.OrderByDescending(c=>c.pagerank))
+            {
+                Console.WriteLine(item.pagerank +"  "+ item.text); 
+            }
+
+            Console.WriteLine("themes");
+            
+            var theme_relations = this.Relations.Where(c => c.conceptualrole == "theme").Select(c => c.Tail).Distinct();
+            var themes = new List<CGNode>();
+            foreach (var item in theme_relations)
+            {
+                var tail = this.Nodes.Where(c => c.id == item).Single();
+                themes.Add(tail);
+            }
+
+            foreach (var item in themes.OrderByDescending(c => c.pagerank))
+            {
+                Console.WriteLine(item.pagerank + "  " + item.text);
+            }
+
+        }
+        public void GenerateInformativeAspectsv2()
+        {
+            var verbs = this.Nodes.Where(c => c.semanticroles.Contains("verb")).OrderByDescending(c => c.pagerank).ToList();
+            foreach (var verb in verbs.Where(c=>c.IsPatientVerb))
+            {
+                var out_relations = this.Relations.Where(c => c.Head == verb.id);
+                foreach (var out_rel in out_relations)
+                {
+                    var tail = this.Nodes.Where(c => c.id == out_rel.Tail).Single();
+                    Console.WriteLine( verb.id.ToString() + ":" +verb.text + " - " + out_rel.conceptualrole + " -> " + tail.semanticroles.Single() + ":"+ tail.text);
+                }
+
+
+
+             
+            }
+        }
         public void GenerateInformativeAspects()
         {
             var rels = this.Nodes.Where(c => c.semanticroles.Contains("verb")).OrderByDescending(c=>c.pagerank).ToList();

@@ -19,9 +19,21 @@ namespace JarvisSummarization.CG
 
             foreach (var item in nodes)
             {
-                item.nosuffix = "can";                
-                item.log += "change possible to can";
-                item.text = "can-01";
+
+                var in_rels = this.graph.Relations.Where(c => c.Tail == item.id);
+                var out_rels = this.graph.Relations.Where(c => c.Head == item.id);
+
+
+                if (in_rels.Union(out_rels).Where(c => c.label == "mod" || c.label == "domain").ToList().Count() > 0)
+                {
+
+                }
+                else
+                {
+                    item.nosuffix = "can";
+                    item.log += "change possible to can";
+                    item.text = "can-01";
+                }               
             }
         }
     }
