@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace JarvisSummarization.CG
 {
-    public class StrategyNameFusion
+    public class StrategyEntity
     {
         private CGGraph graph;
-        public StrategyNameFusion(CGGraph graph)
+        public StrategyEntity(CGGraph graph)
         {
             this.graph = graph;
         }
@@ -17,21 +17,24 @@ namespace JarvisSummarization.CG
         {
             List<CGRelation> deletes = new List<CGRelation>();
             List<CGNode> deletes_node = new List<CGNode>();
-            foreach (var item in this.graph.Relations.Where(c=>c.label=="name"))
+            foreach (var namerelation in this.graph.Relations.Where(c=>c.label=="name"))
             {
-                var head = this.graph.Nodes.Where(c => c.id == item.Head).Single();
-                var tail = this.graph.Nodes.Where(c => c.id == item.Tail).Single();
+                var head = this.graph.Nodes.Where(c => c.id == namerelation.Head).Single();
+                var tail = this.graph.Nodes.Where(c => c.id == namerelation.Tail).Single();
                 var oprels = this.graph.Relations.Where(c => c.Head == tail.id && c.label.StartsWith("op")).OrderBy(c=>c.Tail).ToList();
 
+                head.IsEntity = true;
+                head.text += " named ";
                 foreach (var rel in oprels)
                 {
                     var tailop = this.graph.Nodes.Where(c => c.id == rel.Tail).Single();                    
-                    head.constant += " " + tailop.text;              
+                    head.text += " " + tailop.text;              
                     deletes_node.Add(tailop);                    
                     deletes.Add(rel);
                 }
+                head.nosuffix = head.text;
                 deletes_node.Add(tail);
-                deletes.Add(item);
+                deletes.Add(namerelation);
             }
             foreach (var item in deletes_node)
             {

@@ -43,6 +43,9 @@ namespace JarvisSummarization.CG
                 foreach (var node in g)
                 {
                     if (node.id == max.id) continue;
+
+                    
+
                     var inrelations = from c in graph.Relations where c.Tail == node.id select c;
                     foreach (var item in inrelations)
                     {

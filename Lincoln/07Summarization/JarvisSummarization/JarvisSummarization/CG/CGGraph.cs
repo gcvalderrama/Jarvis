@@ -57,12 +57,25 @@ namespace JarvisSummarization.CG
         }
         public void RemoveNode(CGNode Node)
         {
+            var in_rels = this.Relations.Where(c => c.Tail == Node.id).ToList();
+            var out_rels = this.Relations.Where(c => c.Head == Node.id).ToList();
+
+            
+            foreach (var item in in_rels)
+            {
+                this.RemoveRelation(item);
+            }
+            foreach (var item in out_rels)
+            {
+                this.RemoveRelation(item);
+            }
             this._Nodes.Remove(Node); 
         }
         public void RemoveRelation(CGRelation relation)
         {
             this._Relations.Remove(relation); 
         }
+        
         public CGGraph(string name, string propbankPath, int numberofwords)
         {
             this.propbankPath = propbankPath;
@@ -83,14 +96,16 @@ namespace JarvisSummarization.CG
             new StrategyPossibleToVerb(this).Execute(); 
             //important last
             new StrategyOperatorAndOr(this).Execute();            
-            //invert of relation
-            new StrategySolveOfRelations().Execute(this);            
+            
             //si tenemos un verbo que no es of- y que es el ultimo debe ser un concepto
-            new StrategyVerbToConcept(this).Execute();                       
-            
-            new StrategyNameFusion(this).Execute();
-            new StrategyX(this).Execute();
-            
+            //new StrategyVerbToConcept(this).Execute();                                   
+            new StrategyEntity(this).Execute();
+            new StrategyPersonFusion(this).Execute(); 
+            //new StrategyX(this).Execute();
+
+            //invert of relation
+            //new StrategySolveOfRelations().Execute(this);
+
             //no polarity
             new StrategyPolarity(this).Execute();
             new StrategySource(this).Execute();
@@ -134,7 +149,7 @@ namespace JarvisSummarization.CG
             new StrategySynonym(this).Execute();
 
             
-            new StrategyCompressGraph(this).Execute();
+            //new StrategyCompressGraph(this).Execute();
             new StrategyPageRank(this).Execute(); 
             
         }

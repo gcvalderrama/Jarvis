@@ -19,9 +19,10 @@ namespace JarvisSummarization.CG
         
         public int  sentenceid { get; set; }        
         public bool IsPatientVerb { get; set; }
+        public bool IsEntity { get; set; }
         public string description { get; set; }
-
-        public string constant { get; set; }
+        
+        
 
         public List<string> semanticroles { get; protected set; }        
         public List<string> FusionNodes { get; protected set; }
@@ -50,6 +51,7 @@ namespace JarvisSummarization.CG
                 this.semanticroles.Add(role); 
             }
         }
+
         public void AddFusionNode(CGNode Node)
         {
             string format = string.Format("{0}:{1}:{2}",Node.sentenceid, Node.id, Node.nosuffix);

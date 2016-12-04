@@ -1,0 +1,192 @@
+nodes
+match (n:CGNode) return count(n)
+relations
+match (n:CGNode)-[r]->() return count(r)
+finding leaf nodes
+match (n:CGNode)-[r:cgrelation]->(m) where not ((m)-->()) return m;
+finding root nodes
+match (m)-[r:cgrelation]->(n:CGNode) where not (()-->(m)) return m;
+
+finding triangle 
+match (a)-[:cgrelation]->(b)-[:cgrelation]->(c)-[:cgrelation]->(a) return a,b,c
+
+neigboard
+match (a)-[:cgrelation*..3]-(b) where a.text = 'great' return distinct a, b
+match (a)<-[:cgrelation*..1]-(b) where a.text = 'great' return distinct a, b
+
+obtain label
+
+match (n:CGNode) where n.text = 'great' return labels(n);
+relation type
+match (n:CGNode)<-[r:cgrelation]-(m) where n.text = 'great' return distinct type(r);
+find loop 
+match (n:CGNode)-[r:cgrelation]->(n:CGNode) return n,r limit 10
+
+multigraph 
+match (n:CGNode)-[r1:cgrelation]->(m:CGNode),(n:CGNode)-[r2:cgrelation]->(m:CGNode) return n,r1,r2,m limit 10
+
+//Viewing the graph
+
+match (n:MyNode)-[r]->(m)
+
+return n, r, m
+
+//Finding paths between specific nodes*:
+
+match p=(a)-[:TO*]-(c)
+
+where a.Name='H' and c.Name='P'
+
+return p limit 1
+//find a path
+match p=(n:CGNode)-[r:cgrelation*]->(m:CGNode) where n.id = 678 and m.id = 193 return p;
+
+//shortest path
+match p=(a)-[:TO*]-(c) where a.Name='H' and c.Name='P' return p order by length(p) asc limit 1 
+match p=(n:CGNode)-[r:cgrelation*]->(m:CGNode) where n.id = 678 and m.id = 193 return length(p);
+
+
+//Finding the length between specific nodes:
+
+match p=(a)-[:TO*]-(c)
+
+where a.Name='H' and c.Name='P'
+
+return length(p) limit 1
+
+//Finding a shortest path between specific nodes:
+
+match p=shortestPath((a)-[:TO*]-(c))
+
+where a.Name='A' and c.Name='P'
+
+return p, length(p) limit 1
+
+//All Shortest Paths:
+
+MATCH p = allShortestPaths((source)-[r:TO*]-(destination))
+
+WHERE source.Name='A' AND destination.Name = 'P'
+
+RETURN EXTRACT(n IN NODES(p)| n.Name) AS Paths
+
+//All Shortest Paths with Path Conditions:
+
+MATCH p = allShortestPaths((source)-[r:TO*]->(destination))
+
+WHERE source.Name='A' AND destination.Name = 'P' AND LENGTH(NODES(p)) > 5
+
+RETURN EXTRACT(n IN NODES(p)| n.Name) AS Paths,length(p)
+
+//Diameter of the graph:
+
+match (n:MyNode), (m:MyNode)
+
+where n <> m
+
+with n, m
+
+match p=shortestPath((n)-[*]->(m))
+
+return n.Name, m.Name, length(p)
+
+order by length(p) desc limit 1
+
+//Extracting and computing with node and properties:
+
+match p=(a)-[:TO*]-(c)
+
+where a.Name='H' and c.Name='P'
+
+return extract(n in nodes(p)|n.Name) as Nodes, length(p) as pathLength,
+
+reduce(s=0, e in relationships(p)| s + toInt(e.dist)) as pathDist limit 1
+
+//Dijkstra's algorithm for a specific target node:
+
+MATCH (from: MyNode {Name:'A'}), (to: MyNode {Name:'P'}),
+
+path = shortestPath((from)-[:TO*]->(to))
+
+WITH REDUCE(dist = 0, rel in rels(path) | dist + toInt(rel.dist)) AS distance, path
+
+RETURN path, distance
+
+//Dijkstra's algorithm SSSP:
+
+MATCH (from: MyNode {Name:'A'}), (to: MyNode),
+
+path = shortestPath((from)-[:TO*]->(to))
+
+WITH REDUCE(dist = 0, rel in rels(path) | dist + toInt(rel.dist)) AS distance, path, from, to
+
+RETURN from, to, path, distance order by distance desc
+
+//Graph not containing a selected node:
+
+match (n)-[r:TO]->(m)
+
+where n.Name <> 'D' and m.Name <> 'D'
+
+return n, r, m
+
+//Shortest path over a Graph not containing a selected node:
+
+match p=shortestPath((a {Name: 'A'})-[:TO*]-(b {Name: 'P'}))
+
+where not('D' in (extract(n in nodes(p)|n.Name)))
+
+return p, length(p)
+
+//Graph not containing the immediate neighborhood of a specified node:
+
+match (d {Name:'D'})-[:TO]-(b)
+
+with collect(distinct b.Name) as neighbors
+
+match (n)-[r:TO]->(m)
+
+where
+
+not (n.Name in (neighbors+'D'))
+
+and
+
+not (m.Name in (neighbors+'D'))
+
+return n, r, m
+
+;
+
+match (d {Name:'D'})-[:TO]-(b)-[:TO]->(leaf)
+
+where not((leaf)-->())
+
+return (leaf)
+
+;
+
+match (d {Name:'D'})-[:TO]-(b)<-[:TO]-(root)
+
+where not((root)<--())
+
+return (root)
+
+//Graph not containing a selected neighborhood:
+
+match (a {Name: 'F'})-[:TO*..2]-(b)
+
+with collect(distinct b.Name) as MyList
+
+match (n)-[r:TO]->(m)
+
+where not(n.Name in MyList) and not (m.Name in MyList)
+
+return distinct n, r, m
+
+
+match (n:CGNode), (m:CGNode) where n <> m with n, m match p=shortestPath((n)-[*]->(m)) return n.text, m.text, length(p)order by length(p) desc limit 1
+
+
+
+

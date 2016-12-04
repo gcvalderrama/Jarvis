@@ -64,8 +64,8 @@ namespace JarvisSummarization
             //{
             //    Console.WriteLine(item);
             //}
-            //manager.DeleteAllCG(); 
-            //manager.SaveCG(cgraph); 
+            manager.DeleteAllCG(); 
+            manager.SaveCG(cgraph); 
 
 
 

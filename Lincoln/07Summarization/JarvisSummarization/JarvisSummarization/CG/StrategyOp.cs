@@ -77,8 +77,8 @@ namespace JarvisSummarization.CG
             foreach (var item in this.graph.Relations.Where(c => c.label.StartsWith("op")))
             {
                 item.description = item.label;
-                item.f = "op";
-                item.conceptualrole = "op";
+                item.f = item.label;
+                item.conceptualrole = item.label;
             }
         }
 

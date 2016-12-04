@@ -13,7 +13,7 @@ namespace JarvisSummarization.CG
         {
             this.graph = graph;
         }
-        public List<string> StopWords = new List<string>() { "this", "that" };
+        public List<string> StopWords = new List<string>() { "this", "that", "also" };
         public void Execute()
         {
             var deletes = new List<CGRelation>();
