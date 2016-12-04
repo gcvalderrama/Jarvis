@@ -1,79 +1,107 @@
 # ::id 1
-# ::snt With one out of every two new mothers returning to paid employment before her baby 's first birthday , the call for high quality affordable child care is being heard with increasing frequency and urgency .
-(x30 / hear-01
-	:ARG2 (x8 / mother
-		:quant 1
-		:mod (x5 / every)
-		:quant 2
-		:mod (x7 / new)
-		:ARG0-of (x9 / return-01
-			:ARG4 (x12 / employment
-				:ARG1-of (x11 / pay-01))
-			:time (x13 / before
-				:op1 (x18 / birthday
-					:poss (x15 / baby)))))
-	:ARG1 (x21 / call-01
-		:ARG1 (x27 / care
-			:mod (x23 / high)
-			:mod (x24 / quality)
-			:mod (x25 / afford-01)
-			:mod (x26 / child)))
-	:ARG1 (x32 / increase-01
-		:ARG1 (x34 / and
-			:op1 (x33 / frequency)
-			:op2 (x35 / urgency))))
+# ::snt With one out of every two new mothers
+(x8 / mother
+	:quant 1
+	:mod (x5 / every)
+	:quant 2
+	:mod (x7 / new))
 
 # ::id 2
-# ::snt Many employed parents complain that licensed child care is too expensive and that they have to make do with informal arrangements of uncertain quality and dependability .
+# ::snt returning to paid employment
+(x1 / return-01
+	:ARG4 (x4 / employment
+		:ARG1-of (x3 / pay-01)))
+
+# ::id 3
+# ::snt before her baby's first birthday, the call for high quality affordable child care is being heard
+(x1 / before
+	:op1 (x6 / birthday
+		:poss (x3 / baby)
+		:ARG1 (x9 / call-01
+			:ARG1-of (x18 / hear-01
+				:ARG1 (x15 / care-01
+					:mod (x11 / high)
+					:mod (x12 / quality)
+					:mod (x13 / afford-01)
+					:mod (x14 / child))))))
+
+# ::id 4
+# ::snt with increasing frequency and urgency.
+(x4 / and
+	:op1 (x3 / frequency
+		:ARG1-of (x2 / increase-01))
+	:op2 (x5 / urgency))
+
+# ::id 5
+# ::snt Many employed parents complain
 (x4 / complain-01
 	:ARG0 (x3 / parent
 		:quant (x1 / many)
-		:ARG1-of (x2 / employ-02))
-	:ARG1 (x12 / and
-		:op1 (x11 / expensive
-			:domain (x8 / care-01
-				:mod (x6 / licensed)
-				:mod (x7 / child))
-			:degree (x10 / too)
-			:domain (x21 / thing
-				:ARG1-of (a / arrange-01)
-				:manner (x20 / formal
-					:polarity -)
-				:ARG1 (x25 / and
-					:op1 (x24 / quality
-						:mod (x23 / uncertain))
-					:op2 (x26 / dependability
-						:mod x23))))))
+		:ARG1-of (x2 / employ-02)))
 
-# ::id 3
-# ::snt Some mothers say that the high cost of child care discourages Some mothers from seeking employment , while other women remain childless or limit other women fertility for the same reason .
+# ::id 6
+# ::snt that licensed child care is too expensive
+(x7 / expensive
+	:domain (x4 / care-01
+		:mod (x2 / licensed)
+		:mod (x3 / child))
+	:degree (x6 / too))
+
+# ::id 7
+# ::snt and that they have
+(x1 / and
+	:op1 (x4 / have-03
+		:ARG0 (x3 / they)))
+
+# ::id 8
+# ::snt to make do with informal arrangements of uncertain quality and dependability.
+(x6 / thing
+	:ARG1-of (a / arrange-01)
+	:purpose (x2 / make-02)
+	:manner (x5 / formal
+		:polarity -)
+	:ARG1 (x10 / and
+		:op1 (x9 / quality
+			:mod (x8 / uncertain))
+		:op2 (x11 / dependability
+			:mod x8)))
+
+# ::id 9
+# ::snt Some mothers say
 (x3 / say-01
 	:ARG0 (x2 / mother
-		:quant (x1 / some))
-	:ARG1 (x11 / discourage
-		:ARG1 (x7 / cost-01
-			:mod (x6 / high)
-			:ARG1 (x10 / care
-				:mod (x9 / child)))
-		:ARG1 (x13 / mother
-			:quant (x12 / some))
-		:ARG2 (x15 / seek-01
-			:ARG1 (x16 / employment))
-		:ARG1 (x21 / remain-01
-			:ARG1 (x20 / woman
-				:mod (x19 / other))
-			:ARG3 (x23 / or
-				:op1 (x22 / childless)
-				:op2 (x24 / limit-01
-					:ARG1 x20
-					:ARG1 (x27 / fertility
-						:mod (x25 / other)
-						:ARG1 (x26 / woman))
-					:ARG1 (x31 / reason
-						:ARG1-of (x30 / same-41)))))))
+		:quant (x1 / some)))
 
-# ::id 4
-# ::snt On Thursday , the House of Representatives voted almost 2 to 1 to expand federal support of day care at an estimated cost of $ 27 billion over the next five years .
+# ::id 10
+# ::snt that the high cost of child care discourages Some mothers from seeking employment,
+(x8 / discourage
+	:ARG1 (x4 / cost-01
+		:mod (x3 / high)
+		:ARG1 (x7 / care
+			:mod (x6 / child)))
+	:ARG1 (x10 / mother
+		:quant (x9 / some))
+	:ARG2 (x12 / seek-01
+		:ARG1 (x13 / employment)))
+
+# ::id 11
+# ::snt while other women remain childless or limit other women fertility for the same reason.
+(x10 / fertility
+	:condition (x4 / remain-01
+		:ARG1 (x3 / woman
+			:mod (x2 / other))
+		:ARG1 (x6 / or
+			:op1 (x5 / childless)
+			:op2 (x7 / limit-01
+				:ARG1 x3))
+		:ARG1 (x9 / woman
+			:mod (x8 / other)))
+	:ARG0 x9
+	:beneficiary (x14 / reason
+		:ARG1-of (x13 / same-41)))
+
+# ::id 12
+# ::snt On Thursday, the House of Representatives voted almost 2 to 1
 (x8 / vote-01
 	:ARG0 (x5 / have-org-role-91
 		:ARG1 (g / government-organization
@@ -81,179 +109,215 @@
 				:op1 "House"
 				:op2 "of"
 				:op3 "Representatives")))
-	:ARG1 (x9 / almost
-		:op1 1)
-	:purpose (x14 / expand-01
-		:ARG0 x5
-		:ARG1 (x16 / support-01
-			:manner (x15 / government-organization
-				:name (n1 / name
+	:time (xap0 / date-entity
+		:weekday (x2 / thursday)
+		:ARG3 (x9 / almost
+			:op1 1)))
+
+# ::id 13
+# ::snt to expand federal support of day care at an estimated cost of $27 billion over the next five years.
+(x11 / cost-01
+	:ARG2 (x2 / expand-01
+		:ARG1 (x4 / support-01
+			:manner (x3 / government-organization
+				:name (n / name
 					:op1 "federal"))
-			:ARG1 (x19 / care))
-		:ARG1-of (x23 / cost-01
-			:ARG1-of (x22 / estimate-01))
-		:time (x28 / over
-			:op1 (x32 / temporal-quantity
+			:ARG1 (x7 / care))
+		:time (x16 / over
+			:op1 (x20 / temporal-quantity
 				:unit (y / year)
 				:quant 5)))
-	:time (xap0 / date-entity
-		:weekday (x2 / thursday)))
+	:ARG1-of (x10 / estimate-01))
 
-# ::id 5
-# ::snt The House bill is the product of a compromise between those who emphasize putting more money into the hands of parents , and those who prefer direct subsidies to daycare providers .
+# ::id 14
+# ::snt The House bill is the product of a compromise between those
 (x6 / produce-01
 	:ARG0 (x3 / bill
 		:mod (x2 / government-organization
 			:name (n / name
 				:op1 "House")))
 	:ARG1 (x9 / compromise-01
-		:ARG0-of (x13 / emphasize-01
-			:ARG0-of (x14 / put-01
-				:ARG1 (x16 / money
-					:mod (x15 / more))
-				:ARG2 (x19 / hand
-					:part-of (x21 / parent)))
-			:ARG1 (x23 / and)
-			:ARG0-of (x26 / prefer-01
-				:ARG1 (x28 / subsidy
-					:manner (x27 / direct))
-				:ARG2 (xap0 / company
-					:ARG0-of (x31 / provide-01
-						:ARG1 (x30 / daycare)))))))
+		:mod (x10 / between)))
 
-# ::id 6
-# ::snt The House vote follows a new and not yet released-report of the National Academy of Sciences that urges additional government support for child care and recommends a tightening of the standards regulating the number of children served by each day-care worker .
+# ::id 15
+# ::snt who emphasize putting more money into the hands of parents, and those
+(x2 / emphasize-01
+	:ARG1 (x3 / put-01
+		:ARG1 (x5 / money
+			:mod (x4 / more))
+		:ARG2 (x8 / hand
+			:part-of (x12 / and
+				:op1 (x10 / parent)))))
+
+# ::id 16
+# ::snt who prefer direct subsidies to daycare providers.
+(x2 / prefer-01
+	:ARG1 (x4 / subsidy
+		:mod (x3 / direct)
+		:ARG2 (xap0 / company
+			:ARG0-of (x7 / provide-01
+				:ARG1 (x6 / daycare)))))
+
+# ::id 17
+# ::snt The House vote follows a new and not yet released-report of the National Academy of Sciences
 (x4 / follow-01
 	:ARG1 (x3 / vote-01
 		:ARG1 (x2 / have-org-role-91
 			:ARG1 (g / government-organization
 				:name (n / name
 					:op1 "House"))))
-	:ARG1 (x7 / and
-		:op1 (x6 / new-41
-			:part-of (x13 / government-organization
-				:name (n1 / name
-					:op1 "National"
-					:op2 "Academy"
-					:op3 "of"
-					:op4 "Sciences")
-				:mod (x9 / yet)
-				:ARG0-of (x18 / urge-01
-					:ARG2 (x25 / and
-						:op1 (x21 / support-01
-							:mod (x19 / additional)
-							:mod (x20 / government-organization
-								:ARG0-of (g1 / govern-01))
-							:ARG1 (x24 / care
-								:mod (x23 / child)))
-						:op1 (x26 / recommend-01
-							:ARG1 (x28 / tighten-01
-								:ARG1 (x31 / standard
-									:ARG0-of (x32 / regulate-01
-										:ARG1 (x34 / number
-											:quant-of (x36 / child
-												:ARG1-of (x37 / serve-01
-													:ARG0 (x41 / person
-														:ARG0-of (w / work-01)
-														:mod (x39 / each)
-														:mod (x40 / day-care)))))))))))))))
+	:ARG2 (x10 / released-report
+		:mod (x6 / new)
+		:mod (x9 / yet)
+		:ARG0 (x13 / government-organization
+			:name (n1 / name
+				:op1 "National"
+				:op2 "Academy"
+				:op3 "of"
+				:op4 "Sciences"))))
 
-# ::id 7
-# ::snt This recommendation may be justified , but should be evaluated in light of the fundamentals of child care economics .
-(x / xconcept
-	:x (x7 / contrast-01
-		:ARG1 (x3 / possible
-			:domain (x5 / justified
-				:ARG1 (x2 / recommend-01
-					:mod (x1 / this)))))
-	:x (x8 / recommend-01
-		:ARG1 (x10 / evaluate-01
-			:ARG1 (x15 / fundamental
-				:mod (x19 / economics
-					:mod (x17 / child)
-					:ARG0-of (x18 / care-01))))))
+# ::id 18
+# ::snt that urges additional government support for child care and recommends a tightening of the standards regulating the number of children
+(x9 / and
+	:op1 (x2 / urge-01
+		:ARG1 (x5 / support-01
+			:mod (x4 / government-organization
+				:ARG0-of (g / govern-01)
+				:mod (x3 / additional))
+			:ARG1 (x8 / care
+				:mod (x7 / child))))
+	:op2 (x10 / recommend-01
+		:ARG1 (x12 / tighten-01
+			:ARG1 (x15 / standard
+				:ARG0-of (x16 / regulate-01
+					:ARG1 (x18 / number
+						:quant-of (x20 / child)))))))
 
-# ::id 8
-# ::snt Discussions of child care need to consider two contradictory issues : the high cost of child care and the low pay of childcare workers , whose hourly earnings are the lowest of any major occupation .
+# ::id 19
+# ::snt served by each day-care worker.
+(x1 / serve-01
+	:ARG0 (x5 / person
+		:ARG0-of (w / work-01)
+		:mod (x3 / each)
+		:mod (x4 / day-care)))
+
+# ::id 20
+# ::snt This recommendation may be justified,
+(x3 / possible
+	:domain (x5 / justified
+		:ARG1 (x2 / recommend-01
+			:mod (x1 / this))))
+
+# ::id 21
+# ::snt but should be evaluated in light of the fundamentals of child care economics.
+(x1 / contrast-01
+	:ARG2 (x2 / recommend-01
+		:ARG1 (x4 / evaluate-01
+			:ARG1 (x9 / fundamental
+				:mod (x13 / economics
+					:mod (x11 / child)
+					:ARG0-of (x12 / care-01))))))
+
+# ::id 22
+# ::snt Discussions of child care need
 (x5 / need-01
 	:ARG0 (x1 / discuss-01
 		:ARG1 (x4 / care
-			:mod (x3 / child)))
-	:ARG1 (x7 / consider-02
-		:ARG1 (x10 / issue
-			:quant 2
-			:mod (x9 / contradictory)
-			:topic (x18 / and
-				:op1 (x14 / cost-01
-					:mod (x13 / high)
-					:ARG1 (x17 / care
-						:mod (x16 / child)))
-				:op2 (x21 / pay-01
-					:mod (x20 / low)
-					:ARG1 (x24 / person
-						:ARG0-of (w / work-01)
-						:mod (x23 / childcare)
-						:ARG1 (x28 / earn-01
-							:time (x27 / hour)
-							:ARG1 (x35 / occupy-01
-								:mod (x31 / low)
-								:mod (x33 / any)
-								:mod (x34 / major)))))))))
+			:mod (x3 / child))))
 
-# ::id 9
-# ::snt childcare workers , whose hourly earnings are the lowest of any major occupation earn 30 % to 60 % less per hour than women who serve children as kindergarten or elementary school teachers .
-(x14 / earn-01
-	:ARG0 (x2 / person
-		:ARG0-of (w / work-01)
-		:mod (x1 / childcare)
-		:ARG1 (x6 / earn-01
-			:time (x5 / hour)
-			:ARG1 (x13 / occupy-01
-				:mod (x9 / low)
-				:mod (x11 / any)
-				:mod (x12 / major))))
-	:ARG1 (x20 / less
-		:duration (x22 / temporal-quantity
+# ::id 23
+# ::snt to consider two contradictory issues :
+(x2 / consider-02
+	:ARG1 (x5 / issue
+		:quant 2
+		:mod (x4 / contradictory)))
+
+# ::id 24
+# ::snt the high cost of child care and the low pay of childcare workers,
+(x7 / and
+	:op1 (x3 / cost-01
+		:mod (x2 / high)
+		:ARG1 (x6 / care
+			:mod (x5 / child)))
+	:op2 (x10 / pay-01
+		:mod (x9 / low)
+		:ARG1 (x13 / person
+			:ARG0-of (w / work-01)
+			:mod (x12 / childcare))))
+
+# ::id 25
+# ::snt whose hourly earnings are the lowest of any major occupation.
+(x10 / occupy-01
+	:ARG1 (x3 / earn-01
+		:time (x2 / hour)
+		:mod (x6 / low
+			:degree (m / most)))
+	:mod (x8 / any)
+	:mod (x9 / major))
+
+# ::id 26
+# ::snt childcare workers,
+(x2 / person
+	:ARG0-of (w / work-01)
+	:mod (x1 / childcare))
+
+# ::id 27
+# ::snt whose hourly earnings are the lowest of any major occupation earn 30% to 60% less per hour than women
+(x11 / earn-01
+	:ARG1 (x3 / earn-01
+		:time (x2 / hour)
+		:ARG1 (x10 / occupy-01
+			:mod (x6 / low)
+			:mod (x8 / any)
+			:mod (x9 / major)))
+	:ARG1 (x17 / less
+		:duration (x19 / temporal-quantity
 			:unit (h / hour))
-		:ARG1 (x24 / woman
-			:ARG0-of (x26 / serve
-				:ARG1 (x27 / child)
-				:ARG2 (x30 / or
-					:op1 (x29 / kindergarten)
-					:op1 (x33 / person
-						:ARG0-of (t / teach-01)
-						:mod (x32 / school
-							:mod (x31 / elementary))))))
+		:ARG1 (x21 / woman)
 		:degree (xap0 / percentage-entity
 			:value 30
 			:ARG0-of (xap1 / percentage-entity
 				:value 60))))
 
-# ::id 10
-# ::snt Even more startling , when child-care workers are compared with other women workers at the same levels of education , the differential in hourly earnings is more than 40 % .
-(x22 / differential
-	:mod (x3 / startling
-		:degree (x2 / more
-			:mod (x1 / even)))
-	:ARG1 (x7 / person
+# ::id 28
+# ::snt who serve children as kindergarten or elementary school teachers.
+(x2 / serve-01
+	:ARG1 (x3 / child)
+	:ARG2 (x6 / or
+		:op1 (x5 / kindergarten)
+		:op1 (x9 / person
+			:ARG0-of (t / teach-01)
+			:mod (x8 / school
+				:mod (x7 / elementary)))))
+
+# ::id 29
+# ::snt Even more startling,
+(x3 / startling
+	:degree (x2 / more
+		:mod (x1 / even)))
+
+# ::id 30
+# ::snt when child-care workers are compared with other women workers at the same levels of education, the differential in hourly earnings is more than 40%.
+(x18 / differential
+	:ARG1 (x3 / person
 		:ARG0-of (w / work-01)
-		:mod (x6 / child-care)
-		:ARG1-of (x9 / compare-01
-			:ARG2 (x13 / person
+		:mod (x2 / child-care)
+		:ARG1-of (x5 / compare-01
+			:ARG2 (x9 / person
 				:ARG0-of (w1 / work-01)
-				:mod (x11 / other)
-				:ARG1 (x12 / woman)
-				:location (x17 / level
-					:ARG1-of (x16 / same-41)
-					:mod (x19 / educate-01)))))
-	:ARG1 (x25 / earn-01
-		:time (x24 / hour))
-	:quant (x27 / more-than
+				:mod (x7 / other)
+				:ARG1 (x8 / woman)
+				:location (x13 / level
+					:ARG1-of (x12 / same-41)
+					:mod (x15 / educate-01)))))
+	:ARG1 (x21 / earn-01
+		:time (x20 / hour))
+	:quant (x23 / more-than
 		:op1 (xap0 / percentage-entity
 			:value 40)))
 
-# ::id 11
-# ::snt Why do child-care workers earn so little ?
+# ::id 31
+# ::snt Why do child-care workers earn so little?
 (x5 / earn-01
 	:ARG0 (x4 / person
 		:ARG0-of (w / work-01)
@@ -261,39 +325,52 @@
 	:null_edge (x7 / little
 		:degree (x6 / so)))
 
-# ::id 12
-# ::snt the child-care workers wages , like everyone else 's , are determined by the interplay of many factors which can be analyzed under the familiar categories of demand and supply .
-(x12 / determine-01
-	:ARG1 (x4 / wage
-		:poss (x3 / person
-			:ARG0-of (w / work-01)
-			:mod (x2 / child-care)))
-	:null_edge (x7 / everyone
-		:mod (x8 / else))
-	:ARG0 (x15 / interplay
-		:ARG1 (x18 / factor
-			:quant (x17 / many)
-			:ARG1-of (x22 / analyze-01
-				:mod (x20 / possible)
-				:prep-under (x26 / category
-					:ARG1-of (x25 / familiarize-01)
-					:example (x29 / and
-						:op1 (x28 / demand-01)
-						:op1 (x30 / supply-01)))))))
+# ::id 32
+# ::snt the child-care workers wages,
+(x4 / wage
+	:ARG3 (x3 / person
+		:ARG0-of (w / work-01)
+		:mod (x2 / child-care)))
 
-# ::id 13
-# ::snt How much are those who buy the services of child-care workers willing and able to pay ?
-(x6 / buy-01
-	:ARG1 (x8 / service
-		:quant (x2 / much)
-		:poss (x11 / person
-			:ARG0-of (w / work-01)
-			:mod (x10 / child-care)
-			:mod (x14 / possible
-				:domain (x16 / pay-01)))))
+# ::id 33
+# ::snt like everyone else's, are determined by the interplay of many
+(x7 / determine-01
+	:null_edge (x2 / everyone
+		:mod (x3 / else))
+	:ARG0 (x10 / interplay
+		:quant (x12 / many)))
 
-# ::id 14
-# ::snt What considerations lead workers to accept the low wages of child care rather than seek higher paying jobs ?
+# ::id 34
+# ::snt factors
+(x1 / factor)
+
+# ::id 35
+# ::snt which can be analyzed under the familiar categories of demand and supply.
+(x2 / possible
+	:domain (x4 / analyze-01
+		:prep-under (x8 / category
+			:ARG1-of (x7 / familiarize-01)
+			:example (x11 / and
+				:op1 (x10 / demand-01)
+				:op1 (x12 / supply-01)))))
+
+# ::id 36
+# ::snt How much are those
+(x4 / those
+	:quant (x2 / much))
+
+# ::id 37
+# ::snt who buy the services of child-care workers willing and able to pay?
+(x2 / buy-01
+	:ARG1 (x4 / service
+		:poss (x7 / person
+			:ARG0-of (w / work-01)
+			:mod (x6 / child-care)
+			:mod (x10 / possible
+				:domain (x12 / pay-01)))))
+
+# ::id 38
+# ::snt What considerations lead workers to accept the low wages of child care rather than seek higher paying jobs?
 (x3 / lead-01
 	:ARG0 (x2 / consider-01)
 	:ARG2 (x6 / accept-01
@@ -309,35 +386,44 @@
 				:mod (x16 / high)
 				:ARG1-of (x17 / pay-01)))))
 
-# ::id 15
-# ::snt The wages that a child-care center can offer its workers depend entirely on three factors : the gross revenue per child , the number of children served by each worker and the overhead expenses .
-(x11 / depend-01
-	:ARG1 (x2 / wage
-		:ARG0-of (x8 / offer-01
-			:ARG0 (x6 / center
-				:mod (x5 / child-care))
-			:mod (x7 / possible)
-			:ARG1 (x10 / person
-				:ARG0-of (w / work-01))))
-	:manner (x12 / entire)
-	:ARG1 (x15 / factor
-		:quant 3)
-	:ARG1 (x31 / and
-		:op1 (x19 / revenue
-			:mod (x18 / gross)
-			:prep-to (x21 / child))
-		:op2 (x24 / number
-			:quant-of (x26 / child
-				:ARG1-of (x27 / serve-01
-					:ARG0 (x30 / person
-						:ARG0-of (w1 / work-01)
-						:mod (x29 / each)))))
-		:op2 (x34 / thing
-			:ARG0-of (e / expend-01)
-			:ARG1 (x33 / overhead))))
+# ::id 39
+# ::snt The wages
+(x2 / wage)
 
-# ::id 16
-# ::snt The latter include the costs of management , rent , equipment and supplies , insurance , payroll taxes and interest or return on investment .
+# ::id 40
+# ::snt that a child-care center can offer its workers depend entirely on three factors :
+(x9 / depend-01
+	:ARG1 (x5 / possible
+		:domain (x6 / offer-01
+			:ARG0 (x4 / center
+				:mod (x3 / child-care))
+			:ARG1 (x8 / person
+				:ARG0-of (w / work-01))))
+	:manner (x10 / entire)
+	:ARG1 (x13 / factor
+		:quant 3))
+
+# ::id 41
+# ::snt the gross revenue per child, the number of children
+(x3 / revenue
+	:mod (x2 / gross)
+	:mod (x5 / child)
+	:quant (x8 / number
+		:quant-of (x10 / child)))
+
+# ::id 42
+# ::snt served by each worker and the overhead expenses.
+(x1 / serve-01
+	:ARG0 (x5 / and
+		:op1 (x4 / person
+			:ARG0-of (w / work-01)
+			:mod (x3 / each))
+		:op2 (x8 / thing
+			:ARG0-of (e / expend-01)
+			:ARG1 (x7 / overhead))))
+
+# ::id 43
+# ::snt The latter include the costs of management, rent, equipment and supplies, insurance, payroll taxes and interest or return on investment.
 (x3 / include-01
 	:ARG1 (x19 / and
 		:op1 (x5 / cost-01
@@ -356,27 +442,34 @@
 	:ARG1 (xap0 / thing
 		:mod (x2 / latter)))
 
-# ::id 17
-# ::snt In well run centers that meet health and safety standards , only about half of gross revenue is available for the wages of the child-care workers .
-(x19 / available
-	:location (x4 / center
-		:ARG1-of (x3 / run-01)
-		:ARG0-of (x6 / meet-03
-			:ARG1 (x10 / standard
-				:topic (x8 / and
-					:op1 (x7 / health)
-					:op2 (x9 / safe-41)))))
-	:purpose (x22 / wage
-		:poss (x26 / person
-			:ARG0-of (w / work-01)
-			:ARG1-of (x15 / include-91
-				:mod (x12 / only)
-				:ARG2 (x17 / revenue
-					:mod (x16 / gross)))
-			:mod (x25 / child-care))))
+# ::id 44
+# ::snt In well
+(x2 / well)
 
-# ::id 18
-# ::snt For example , if the revenue per child is $ 5,000 per year , the child/worker ratio is five and the overhead is 50 % , the annual wage for a full-time , year-round worker will be $ 12,500 .
+# ::id 45
+# ::snt run centers
+(x2 / center
+	:mod (x1 / run-02))
+
+# ::id 46
+# ::snt that meet health and safety standards, only about half of gross revenue is available for the wages of the child-care workers.
+(x2 / meet-03
+	:ARG1 (x6 / standard
+		:topic (x4 / and
+			:op1 (x3 / health)
+			:op2 (x5 / safe-41)))
+	:ARG0 (x15 / available
+		:null_edge (x11 / include-91
+			:mod (x8 / only)
+			:ARG2 (x13 / revenue
+				:mod (x12 / gross)))
+		:purpose (x18 / wage
+			:poss (x22 / person
+				:ARG0-of (w / work-01)
+				:mod (x21 / child-care)))))
+
+# ::id 47
+# ::snt For example, if the revenue per child is $5,000 per year, the child/worker ratio is five and the overhead is 50%, the annual wage for a full-time, year-round worker will be $12,500.
 (x38 / country
 	:name (n / name
 		:op1 "$")
@@ -399,8 +492,8 @@
 	:null_edge (x39 / monetary-quantity
 		:unit (y / yuan)))
 
-# ::id 19
-# ::snt This is less than half the average wage of nurses or teachers .
+# ::id 48
+# ::snt This is less than half the average wage of nurses or teachers.
 (x7 / average-01
 	:ARG1 (x8 / wage-01
 		:ARG0 (x1 / this)
@@ -411,25 +504,28 @@
 			:op2 (x12 / person
 				:ARG0-of (t / teach-01)))))
 
-# ::id 20
-# ::snt Who are the child-care workers and why do the child-care workers accept such low wages ?
-(x6 / and
-	:op2 (x5 / person
-		:ARG0-of (w / work-01)
-		:ARG0 (x1 / organization
-			:name (n / name
-				:op1 "Who"))
-		:mod (x4 / child-care))
-	:op1 (x12 / accept-01
-		:ARG0 (x11 / person
-			:ARG0-of (w1 / work-01)
-			:ARG0-of (x10 / child-care))
-		:ARG1 (x15 / wage
-			:mod (x13 / such)
-			:mod (x14 / low))))
+# ::id 49
+# ::snt Who are the child-care workers
+(x5 / person
+	:ARG0-of (w / work-01)
+	:ARG0 (x1 / organization
+		:name (n / name
+			:op1 "Who"))
+	:ARG0-of (x4 / child-care))
 
-# ::id 21
-# ::snt Current research by Mary Lydon and me throws light on both these questions .
+# ::id 50
+# ::snt and why do the child-care workers accept such low wages?
+(x1 / and
+	:op1 (x7 / accept-01
+		:ARG0 (x6 / person
+			:ARG0-of (w / work-01)
+			:ARG0-of (x5 / child-care))
+		:ARG1 (x10 / wage
+			:mod (x8 / such)
+			:mod (x9 / low))))
+
+# ::id 51
+# ::snt Current research by Mary Lydon and me throws light on both these questions.
 (x8 / throw-01
 	:ARG0 (x2 / research
 		:time (x1 / current))
@@ -442,63 +538,78 @@
 	:ARG1 (x13 / question-01
 		:mod (x11 / both)))
 
-# ::id 22
-# ::snt When compared with women workers in general , or specifically with women who are elementary school teachers , we find that child-care workers are more likely to be married , more likely to have children and much more likely to have three or more children .
-(x20 / find-02
-	:condition (x2 / compare-01
-		:ARG2 (x9 / or
-			:op2 (x5 / person
-				:ARG0-of (w / work-01)
-				:ARG1 (x4 / woman)
-				:mod (x7 / general))
-			:op2 (x12 / woman
-				:mod (x10 / specific)
-				:op7 (x17 / person
-					:ARG0-of (t / teach-01)
-					:mod (x15 / elementary)
-					:mod (x16 / school)))))
-	:ARG0 (x19 / we)
-	:ARG1 (x36 / and
-		:op1 (x26 / likely
-			:domain (x23 / person
-				:ARG0-of (w1 / work-01)
-				:mod (x22 / child-care))
-			:degree (x25 / more)
-			:domain (x29 / marry-01))
-		:op2 (x32 / likely
-			:degree (x31 / more)
-			:domain (x34 / have-03
-				:ARG1 (x35 / child)))
-		:op2 (x39 / likely
-			:degree (x38 / more
-				:degree (x37 / much))
-			:domain (x41 / have-03
-				:ARG1 (x45 / child
-					:quant (x43 / or
-						:op1 3
-						:op2 (x44 / more)))))))
-
-# ::id 23
-# ::snt Probably because of other women workers greater family responsibilities , child-care workers stay close to home .
-(x2 / cause-01
-	:ARG1 (x13 / stay-01
-		:mod (x1 / probable
-			:ARG1 (x9 / thing
-				:ARG2-of (r / responsible-41)
-				:mod (x7 / great
-					:ARG1 (x6 / person
-						:ARG0-of (w1 / work-01)
-						:mod (x4 / other)
-						:ARG1 (x5 / woman)))
-				:mod (x8 / family)))
-		:ARG0 (x12 / person
+# ::id 52
+# ::snt When compared with women workers in general, or specifically with women
+(x2 / compare-01
+	:ARG2 (x9 / or
+		:op2 (x5 / person
 			:ARG0-of (w / work-01)
-			:mod (x11 / child-care))
-		:ARG3 (x14 / close-41
-			:ARG4 (x16 / home))))
+			:ARG1 (x4 / woman))
+		:op2 (x7 / general)
+		:op2 (x10 / specific)
+		:op2 (x12 / woman)))
 
-# ::id 24
-# ::snt other women workers average commute time is much less than that of teachers or other women workers .
+# ::id 53
+# ::snt who are elementary school teachers, we find
+(x8 / find-02
+	:ARG0 (x5 / person
+		:ARG0-of (t / teach-01)
+		:mod (x3 / elementary)
+		:mod (x4 / school))
+	:ARG0 (x7 / we))
+
+# ::id 54
+# ::snt that child-care workers are more
+(x5 / more
+	:ARG0 (x3 / person
+		:ARG0-of (w / work-01)
+		:mod (x2 / child-care)))
+
+# ::id 55
+# ::snt likely to be married, more likely to have children
+(x1 / likely
+	:domain (x4 / marry-01)
+	:domain (x7 / likely
+		:degree (x6 / more)
+		:domain (x9 / have-03
+			:ARG1 (x10 / child))))
+
+# ::id 56
+# ::snt and much more likely to have three or more children.
+(x1 / and
+	:op1 (x4 / likely
+		:degree (x3 / more
+			:degree (x2 / much))
+		:domain (x6 / have-03
+			:ARG1 (x10 / child
+				:quant (x8 / or
+					:op1 3
+					:op2 (x9 / more))))))
+
+# ::id 57
+# ::snt Probably
+(x1 / probable)
+
+# ::id 58
+# ::snt because of other women workers greater family responsibilities, child-care workers stay close to home.
+(x12 / stay-01
+	:ARG1-of (x1 / cause-01
+		:ARG0 (x8 / thing
+			:ARG2-of (r / responsible-41)
+			:mod (x6 / great
+				:ARG1 (x5 / person
+					:ARG0-of (w1 / work-01)
+					:mod (x3 / other)
+					:ARG1 (x4 / woman)))
+			:mod (x7 / family)))
+	:ARG0 (x11 / person
+		:ARG0-of (w / work-01)
+		:mod (x10 / child-care))
+	:ARG3 (x13 / close-41
+		:ARG4 (x15 / home)))
+
+# ::id 59
+# ::snt other women workers average commute time is much less than that of teachers or other women workers.
 (x4 / average-01
 	:ARG0 (x3 / person
 		:ARG0-of (w / work-01)
@@ -515,21 +626,23 @@
 		:degree (xap0 / more
 			:quant (x8 / much))))
 
-# ::id 25
-# ::snt other women workers also seem to prefer part-time work .
+# ::id 60
+# ::snt other women workers also seem
 (x5 / seem-01
 	:ARG0 (x3 / person
 		:ARG0-of (w / work-01)
 		:mod (x1 / other)
 		:ARG1 (x2 / woman))
-	:mod (x4 / also)
-	:ARG1 (x7 / prefer-01
-		:ARG0 x3
-		:ARG1 (x9 / work-01
-			:mod (x8 / part-time))))
+	:mod (x4 / also))
 
-# ::id 26
-# ::snt Many of them do paid work for fewer than 20 hours per week , and most of the others work less than full time .
+# ::id 61
+# ::snt to prefer part-time work.
+(x2 / prefer-01
+	:ARG1 (x4 / work-01
+		:mod (x3 / part-time)))
+
+# ::id 62
+# ::snt Many of them do paid work for fewer than 20 hours per week, and most of the others work less than full time.
 (x / xconcept
 	:x (x2 / include-91)
 	:x (x6 / work-01
@@ -550,51 +663,60 @@
 			:ARG2 (x13 / temporal-quantity
 				:unit (w / week)))))
 
-# ::id 27
-# ::snt Generally , occupations that are located in residential areas and afford significant part-time opportunities pay lower wages .
-(x15 / pay-01
-	:mod (x1 / general)
-	:ARG0 (x3 / occupation
-		:example (x10 / and
-			:op2 (x9 / area
-				:mod (x8 / reside-01))
-			:op2 (x11 / afford-01
-				:ARG1 (x14 / opportunity
-					:mod (x12 / significant)
-					:mod (x13 / part-time)))))
-	:ARG1 (x17 / wage
-		:mod (x16 / low)))
+# ::id 63
+# ::snt Generally, occupations
+(x3 / occupation
+	:mod (x1 / general))
 
-# ::id 28
-# ::snt Although their average age is the same as other women workers , child-care workers are less likely than other women to have been at work five years previously , which also helps explain their lower wages .
-(x17 / likely
-	:domain (x7 / same-41
+# ::id 64
+# ::snt that are located in residential areas and afford significant part-time opportunities pay lower wages.
+(x7 / and
+	:op1 (x1 / that)
+	:op2 (x6 / area
+		:mod (x5 / reside-01))
+	:op2 (x8 / afford-01
+		:ARG1 (x11 / opportunity
+			:mod (x9 / significant)
+			:mod (x10 / part-time))
+		:ARG1 (x12 / pay-01
+			:ARG1 (x14 / wage
+				:mod (x13 / low)))))
+
+# ::id 65
+# ::snt Although their average age is the same as other women workers, child-care workers are less
+(x16 / less
+	:time (x7 / same-41
 		:ARG1 (x4 / age
 			:mod (x3 / average-01))
 		:ARG2 (x11 / person
 			:ARG0-of (w1 / work-01)
 			:mod (x9 / other)
 			:ARG1 (x10 / woman)))
-	:domain (x14 / person
+	:ARG0 (x14 / person
 		:ARG0-of (w / work-01)
-		:mod (x13 / child-care))
-	:degree (x16 / less)
-	:domain (xap1 / and
-		:ARG2 (x25 / work-01
-			:time (xap0 / before
-				:ARG0 (x20 / woman
-					:mod (x19 / other))
-				:quant (x27 / temporal-quantity
-					:unit (y / year)
-					:quant 5)))
-		:ARG1 (x32 / help-01
-			:mod (x31 / also)
-			:ARG1 (x33 / explain-01
-				:ARG1 (x36 / wage
-					:mod (x35 / low))))))
+		:mod (x13 / child-care)))
 
-# ::id 29
-# ::snt According to the National Academy report , 40 % leave their jobs each year .
+# ::id 66
+# ::snt likely than other women
+(x1 / likely
+	:null_edge (x4 / woman
+		:mod (x3 / other)))
+
+# ::id 67
+# ::snt to have been at work five years previously, which also helps explain their lower wages.
+(x12 / help-01
+	:ARG1 (x5 / work-01
+		:time (xap0 / before
+			:quant (x7 / temporal-quantity
+				:unit (y / year)
+				:quant 5)))
+	:mod (x11 / also)
+	:ARG1 (x13 / explain-01
+		:ARG1 (x16 / wage
+			:mod (x15 / low))))
+
+# ::id 68
+# ::snt According to the National Academy report, 40% leave their jobs each year.
 (xap0 / say-01
 	:ARG0 (x6 / report
 		:null_edge (x4 / null_tag)
@@ -609,28 +731,31 @@
 			:ARG2 (x14 / temporal-quantity
 				:unit (y / year)))))
 
-# ::id 30
-# ::snt Two other differences between childcare workers and elementary school teachers -LRB- but not other women workers -RRB- are important .
-(x19 / important
-	:domain (x3 / differ-02
-		:quant 2
-		:mod (x2 / other)
-		:ARG1 (x7 / and
-			:op1 (x6 / person
-				:ARG0-of (w / work-01)
-				:mod (x5 / childcare))
-			:op2 (x10 / person
-				:ARG0-of (t / teach-01)
-				:mod (x9 / school
-					:mod (x8 / elementary)))
-			:op2 (x12 / contrast-01
-				:ARG1 (x15 / woman)
-				:null_edge (x16 / person
-					:ARG0-of (w1 / work-01)
-					:mod (x14 / other))))))
+# ::id 69
+# ::snt Two other differences between childcare workers and elementary school teachers
+(x3 / differ-02
+	:quant 2
+	:mod (x2 / other)
+	:ARG1 (x7 / and
+		:op1 (x6 / person
+			:ARG0-of (w / work-01)
+			:mod (x5 / childcare))
+		:op2 (x10 / person
+			:ARG0-of (t / teach-01)
+			:mod (x9 / school
+				:mod (x8 / elementary)))))
 
-# ::id 31
-# ::snt First , teachers have on average about four more years of schooling .
+# ::id 70
+# ::snt ( but not other women workers ) are important.
+(x2 / contrast-01
+	:ARG1 (x5 / woman)
+	:ARG1 (x6 / person
+		:ARG0-of (w / work-01)
+		:mod (x4 / other))
+	:ARG1 (x9 / important))
+
+# ::id 71
+# ::snt First, teachers have on average about four more years of schooling.
 (x6 / average
 	:ARG2 (x4 / have-03
 		:ARG0 (x3 / person
@@ -639,8 +764,8 @@
 			:time (x10 / year
 				:mod (x9 / more)))))
 
-# ::id 32
-# ::snt But this difference in education explains only about two-fifths of the wage differential .
+# ::id 72
+# ::snt But this difference in education explains only about two-fifths of the wage differential.
 (x1 / contrast-01
 	:ARG2 (x6 / explain-01
 		:ARG0 (x3 / differ-02
@@ -651,22 +776,28 @@
 			:time (x8 / about)
 			:ARG1 (x12 / wage-01))))
 
-# ::id 33
-# ::snt Second , teachers -- at least those in the public schools -- are highly unionized ; child-care workers are not .
-(x / xconcept
-	:x (x16 / and
-		:op4 (x11 / school
-			:mod (x10 / public))
-		:op2 (x15 / unionize
-			:ARG1 (x3 / person
-				:ARG0-of (t / teach-01))
-			:degree (x14 / high))
-		:op2 (x18 / person
-			:ARG0-of (w / work-01)
-			:mod (x17 / child-care))))
+# ::id 73
+# ::snt Second, teachers
+(x3 / person
+	:ARG0-of (t / teach-01))
 
-# ::id 34
-# ::snt But again , this is only a partial explanation , as evidenced by the fact that even non-union teachers in private elementary schools make 20 % to 25 % more than child-care workers -LRB- after controlling for education , experience and many other variables -RRB- .
+# ::id 74
+# ::snt -- at least those in the public schools
+(x8 / school
+	:mod (x7 / public))
+
+# ::id 75
+# ::snt -- are highly unionized; child-care workers are not.
+(x / xconcept
+	:x (x5 / and
+		:op1 (x4 / unionize
+			:degree (x3 / high))
+		:op2 (x7 / person
+			:ARG0-of (w / work-01)
+			:mod (x6 / child-care))))
+
+# ::id 76
+# ::snt But again, this is only a partial explanation, as evidenced by the fact
 (x1 / contrast-01
 	:ARG2 (x9 / explain-01
 		:mod (x2 / again)
@@ -674,31 +805,40 @@
 		:mod (x6 / only)
 		:mod (x8 / partial)
 		:ARG1 (x12 / evidence-01
-			:time (x35 / after
-				:op1 (x36 / control-01
-					:ARG1 (x41 / and
-						:op1 (x38 / educate-01)
-						:op1 (x40 / experience-01)
-						:op2 (x44 / variable
-							:quant (x42 / many)
-							:mod (x43 / other))
-						:quant (xap0 / percentage-entity
-							:op7 (x19 / person
-								:ARG0-of (t / teach-01)
-								:mod (x17 / even)
-								:mod (x18 / non-union)
-								:location (x23 / school
-									:mod (x21 / private)
-									:mod (x22 / elementary)))
-							:value 20
-							:op6 (x33 / person
-								:ARG0-of (w / work-01)
-								:mod (x32 / child-care))
-							:ARG0-of (xap1 / percentage-entity
-								:value 25))))))))
+			:ARG0 (x15 / fact))))
 
-# ::id 35
-# ::snt One striking difference between teachers and child-care workers is the reward -LRB- or lack of reward -RRB- for additional schooling .
+# ::id 77
+# ::snt that even non-union teachers in private elementary schools make 20% to 25% more than child-care workers
+(x9 / make-01
+	:ARG0 (x4 / person
+		:ARG0-of (t / teach-01)
+		:mod (x2 / even)
+		:mod (x3 / non-union)
+		:location (x8 / school
+			:mod (x6 / private)
+			:mod (x7 / elementary)))
+	:degree (x15 / more
+		:degree (xap0 / percentage-entity
+			:value 20
+			:ARG1 (x18 / person
+				:ARG0-of (w / work-01)
+				:mod (x17 / child-care))
+			:ARG0-of (xap1 / percentage-entity
+				:value 25))))
+
+# ::id 78
+# ::snt ( after controlling for education, experience and many other variables ).
+(x2 / after
+	:op1 (x3 / control-01
+		:ARG1 (x8 / and
+			:op1 (x5 / educate-01)
+			:op1 (x7 / experience-01)
+			:op2 (x11 / variable
+				:quant (x9 / many)
+				:mod (x10 / other)))))
+
+# ::id 79
+# ::snt One striking difference between teachers and child-care workers is the reward
 (x11 / reward-01
 	:ARG0 (x3 / differ-02
 		:quant 1
@@ -708,15 +848,21 @@
 				:ARG0-of (t / teach-01))
 			:op2 (x8 / person
 				:ARG0-of (w / work-01)
-				:mod (x7 / child-care))))
-	:ARG1 (x13 / or
-		:op1 (x14 / lack-01
-			:ARG1 (x16 / reward-01)))
-	:ARG2 (x20 / schooling
-		:mod (x19 / additional)))
+				:mod (x7 / child-care)))))
 
-# ::id 36
-# ::snt The wages of teachers rise appreciably with each additional year of education .
+# ::id 80
+# ::snt ( or lack of reward )
+(x2 / or
+	:op1 (x3 / lack-01
+		:ARG1 (x5 / reward-01)))
+
+# ::id 81
+# ::snt for additional schooling.
+(x3 / schooling
+	:mod (x2 / additional))
+
+# ::id 82
+# ::snt The wages of teachers rise appreciably with each additional year of education.
 (x5 / rise-01
 	:ARG1 (x2 / wage
 		:poss (x4 / person
@@ -726,72 +872,107 @@
 		:mod (x8 / each)
 		:mod (x9 / additional)))
 
-# ::id 37
-# ::snt By contrast , child-care workers who are college graduates earn only slightly more than those whose education ended in high school .
-(x2 / contrast-01
-	:ARG1 (x10 / earn-01
-		:ARG0 (x5 / person
-			:ARG0-of (w / work-01)
-			:mod (x4 / child-care)
-			:ARG0-of (x9 / person
-				:ARG0-of (g / graduate-01)
-				:ARG0-of (x8 / college)))
-		:ARG1 (x13 / more
-			:degree (x12 / slight
-				:mod (x11 / only))
-			:compared-to (x18 / end-01
-				:ARG0-of (x17 / educate-01)
-				:location (x21 / school
-					:mod (x20 / high))))))
+# ::id 83
+# ::snt By contrast, child-care workers
+(xap0 / multi-sentence
+	:snt2 (x2 / contrast-01)
+	:poss (x5 / person
+		:ARG0-of (w / work-01)
+		:ARG0-of (x4 / child-care)))
 
-# ::id 38
-# ::snt The parents who buy child-care are apparently unwilling or unable to pay more for workers with additional schooling .
-(x9 / or
-	:op1 (x8 / unwilling
-		:ARG0 (x2 / parent
-			:ARG1-of (x4 / buy-01
-				:ARG1 (x5 / child-care)))
-		:mod (x7 / apparent))
-	:op2 (x10 / unable)
-	:op1 (x12 / pay-01
-		:ARG1 (x13 / more)
-		:ARG3 (x15 / person
-			:ARG0-of (w / work-01)
-			:ARG1 (x18 / schooling
-				:mod (x17 / additional)))))
+# ::id 84
+# ::snt who are college graduates earn only slightly more than those
+(x4 / person
+	:ARG0-of (g / graduate-01)
+	:ARG0-of (x3 / college)
+	:ARG1-of (x5 / earn-01
+		:degree (x8 / more
+			:degree (x7 / slight
+				:mod (x6 / only)))))
 
-# ::id 39
-# ::snt Or , from another perspective , The parents who buy child-care are unwilling to see the child/worker ratio rise in exchange for having workers with more education .
+# ::id 85
+# ::snt whose education
+(x2 / educate-01)
+
+# ::id 86
+# ::snt ended in high school.
+(x1 / end-01
+	:ARG1 (x4 / school
+		:mod (x3 / high)))
+
+# ::id 87
+# ::snt The parents
+(x2 / parent)
+
+# ::id 88
+# ::snt who buy child-care
+(x2 / buy-01
+	:ARG1 (x3 / child-care))
+
+# ::id 89
+# ::snt are apparently unwilling or unable
+(x4 / or
+	:op1 (x3 / unwilling
+		:mod (x2 / apparent))
+	:op2 (x5 / unable))
+
+# ::id 90
+# ::snt to pay more
+(x2 / pay-01
+	:degree (x3 / more))
+
+# ::id 91
+# ::snt for workers with additional schooling.
+(x2 / person
+	:ARG0-of (w / work-01)
+	:ARG1 (x5 / schooling
+		:mod (x4 / additional)))
+
+# ::id 92
+# ::snt Or, from another perspective, The parents
 (x1 / or
-	:op2 (x13 / unwilling
+	:op2 (x8 / parent
 		:source (x5 / perspective
-			:mod (x4 / another))
-		:prep-to (x15 / see-01
-			:ARG0 (x8 / parent
-				:ARG1-of (x10 / buy-01
-					:ARG1 (x11 / child-care)))
-			:ARG1 (x19 / rise-01
-				:ARG1 (x18 / ratio
-					:mod "child\/worker"
-					:mod (x21 / exchange-01
-						:ARG3 (x23 / have-03
-							:ARG1 (x24 / person
-								:ARG0-of (w / work-01))
-							:ARG1 (x27 / educate-01
-								:degree (x26 / more)))))))))
+			:mod (x4 / another))))
 
-# ::id 40
-# ::snt This is precisely the trade-off that is made in France .
+# ::id 93
+# ::snt who buy child-care are unwilling
+(x2 / buy-01
+	:ARG1 (x5 / unwilling
+		:domain (x3 / child-care)))
+
+# ::id 94
+# ::snt to see the child/worker ratio rise in exchange for having workers
+(x2 / see-01
+	:ARG1 (x6 / rise-01
+		:ARG1 (x5 / ratio
+			:mod "child\/worker"
+			:mod (x8 / exchange-01
+				:ARG3 (x10 / have-03
+					:ARG1 (x11 / person
+						:ARG0-of (w / work-01)))))))
+
+# ::id 95
+# ::snt with more education.
+(x3 / educate-01
+	:degree (x2 / more))
+
+# ::id 96
+# ::snt This is precisely the trade-off
 (x5 / trade-off
 	:domain (x1 / this)
-	:manner (x3 / precise)
-	:ARG0-of (x8 / make-02
-		:location (x10 / country
-			:name (n / name
-				:op1 "France"))))
+	:manner (x3 / precise))
 
-# ::id 41
-# ::snt The French system of care for pre-schoolers is often hailed as a model for the United States , partly because the child-care workers are as well educated and as well paid as elementary school teachers .
+# ::id 97
+# ::snt that is made in France.
+(x3 / make-02
+	:ARG1 (x1 / that)
+	:location (x5 / country
+		:name (n / name
+			:op1 "France")))
+
+# ::id 98
+# ::snt The French system of care for pre-schoolers is often hailed as a model for the United States, partly because the child-care workers are as well educated and as well paid as elementary school teachers.
 (x10 / hail-02
 	:ARG1 (x3 / system
 		:mod (x2 / country
@@ -818,22 +999,22 @@
 					:mod (x34 / school
 						:mod (x33 / elementary)))))))
 
-# ::id 42
-# ::snt The child/worker ratio , however , is double that of American nursery schools and day-care centers .
-(xap0 / product-of
-	:op2 (x3 / ratio
-		:mod "child\/worker")
-	:ARG1 (x14 / and
-		:op1 (x13 / school
-			:mod (x12 / nursery))
-		:op3 (x16 / center
-			:mod (x15 / day-care)))
-	:ARG0-of (xap2 / equal-01
-		:ARG0-of (xap1 / product-of
-			:op1 (x8 / double-01))))
+# ::id 99
+# ::snt The child/worker ratio, however, is double
+(x8 / double-01
+	:domain (x3 / ratio
+		:mod "child\/worker"))
 
-# ::id 43
-# ::snt Higher wages for child-care workers can be achieved in only three ways .
+# ::id 100
+# ::snt that of American nursery schools and day-care centers.
+(x6 / and
+	:op1 (x5 / school
+		:mod (x4 / nursery))
+	:op3 (x8 / center
+		:mod (x7 / day-care)))
+
+# ::id 101
+# ::snt Higher wages for child-care workers can be achieved in only three ways.
 (x6 / possible
 	:domain (x8 / achieve-01
 		:ARG1 (x2 / wage
@@ -845,45 +1026,59 @@
 			:mod (x10 / only)
 			:quant 3)))
 
-# ::id 44
-# ::snt A reduction in overhead expenses would free funds for workers ' pay , but many of these expenses are determined by laws and regulations and there is little chance that this burden will be lifted .
-(x14 / contrast-01
-	:ARG2 (x20 / determine-01
-		:ARG1 (x8 / fund
-			:purpose (x12 / pay-01
-				:poss (x10 / person
-					:ARG0-of (w / work-01))))
-		:ARG1 (x23 / and
-			:op1 (x18 / expend-01
-				:quant (x15 / many))
-			:op1 (x22 / law)
-			:op2 (x24 / regulate-01)))
-	:ARG2 (x25 / and
-		:op1 (x7 / free-01
-			:ARG1 (x2 / reduce-01
-				:ARG2 (x5 / expend-01
-					:ARG1 (x4 / overhead)))
-			:ARG1 x8
-			:ARG1 (x29 / chance
-				:null_edge (x28 / little)
-				:domain (x35 / lift-01
-					:ARG1 (x32 / burden-01
-						:mod (x31 / this)))))))
+# ::id 102
+# ::snt A reduction in overhead expenses would free funds for workers' pay,
+(x7 / free-01
+	:ARG1 (x2 / reduce-01
+		:ARG2 (x5 / expend-01
+			:ARG1 (x4 / overhead)))
+	:ARG1 (x8 / fund
+		:purpose (x12 / pay-01
+			:poss (x10 / person
+				:ARG0-of (w / work-01)))))
 
-# ::id 45
-# ::snt A rise in revenue per child would help , but how high can fees go ?
-(x10 / contrast-01
-	:ARG1 (x8 / help-01
-		:ARG0 (x2 / rise-01
-			:ARG1 (x4 / revenue
-				:ARG1 (x6 / child))))
-	:ARG2 (x13 / possible
-		:domain (x15 / go-01
-			:ARG2 (x12 / high)
-			:ARG0 (x14 / fee))))
+# ::id 103
+# ::snt but many of these expenses are determined
+(x1 / contrast-01
+	:ARG2 (x5 / expend-01
+		:quant (x2 / many))
+	:ARG1 (x7 / determine-01))
 
-# ::id 46
-# ::snt An annual charge of $ 10,000 per child would probably put child care beyond the reach of most families .
+# ::id 104
+# ::snt by laws and regulations
+(x3 / and
+	:op1 (x2 / law)
+	:op2 (x4 / regulate-01))
+
+# ::id 105
+# ::snt and there is little chance
+(x1 / and
+	:op1 (x5 / chance
+		:degree (x4 / little)))
+
+# ::id 106
+# ::snt that this burden will be lifted.
+(x6 / lift-02
+	:ARG1 (x3 / burden-01
+		:mod (x2 / this)))
+
+# ::id 107
+# ::snt A rise in revenue per child would help,
+(x8 / help-01
+	:ARG0 (x2 / rise-01
+		:ARG1 (x4 / revenue)
+		:ARG1 (x6 / child)))
+
+# ::id 108
+# ::snt but how high can fees go?
+(x1 / contrast-01
+	:ARG2 (x3 / high)
+	:ARG1 (x4 / possible
+		:domain (x6 / go-01
+			:ARG0 (x5 / fee))))
+
+# ::id 109
+# ::snt An annual charge of $10,000 per child would probably put child care beyond the reach of most families.
 (x10 / probable
 	:domain (x11 / put-01
 		:ARG0 (x3 / charge-01
@@ -895,8 +1090,8 @@
 				:ARG0 (x19 / family
 					:quant (x18 / most))))))
 
-# ::id 47
-# ::snt Government subsidies could supplement private payments , but public aid is most appropriately used to improve services for poor children , most of whom do not currently receive even the average standard of care .
+# ::id 110
+# ::snt Government subsidies could supplement private payments, but public aid is most appropriately used
 (x8 / contrast-01
 	:ARG2 (x3 / possible
 		:domain (x4 / thing
@@ -911,22 +1106,25 @@
 				:ARG1 (x10 / aid-01
 					:mod (x9 / public))
 				:manner (x13 / appropriate
-					:degree (x12 / most))
-				:ARG2 (x16 / improve-01
-					:ARG1 (x17 / service
-						:mod (x20 / child
-							:mod (x19 / poor)
-							:ARG0-of (x28 / receive-01
-								:ARG1 (x23 / include-91
-									:quant (x22 / most))
-								:time (x27 / current)
-								:ARG1 (x32 / standard
-									:mod (x29 / even)
-									:mod (x31 / average-01)
-									:topic (x34 / care))))))))))
+					:degree (x12 / most))))))
 
-# ::id 48
-# ::snt The third possibility , an increase in the child/worker ratio , offers the most scope for change .
+# ::id 111
+# ::snt to improve services for poor children, most of whom do not currently receive even the average standard of care.
+(x14 / receive-01
+	:purpose (x2 / improve-01
+		:ARG1 (x3 / service
+			:mod (x6 / child
+				:mod (x5 / poor))))
+	:ARG1 (x9 / include-91
+		:quant (x8 / most))
+	:time (x13 / current)
+	:ARG1 (x18 / standard
+		:mod (x15 / even)
+		:mod (x17 / average-01)
+		:topic (x20 / care)))
+
+# ::id 112
+# ::snt The third possibility, an increase in the child/worker ratio, offers the most scope for change.
 (x12 / offer-01
 	:ARG0 (x3 / possible
 		:domain (x6 / increase-01
@@ -936,28 +1134,34 @@
 		:mod (x14 / most)
 		:purpose (x17 / change-01)))
 
-# ::id 49
-# ::snt Failing such a change , wages are likely to stay at poor children extremely low levels .
+# ::id 113
+# ::snt Failing such a change, wages are likely
 (x8 / likely
 	:domain (x1 / fail-01
 		:ARG1 (x4 / change-01
 			:mod (x2 / such)))
-	:domain (x10 / stay-01
-		:ARG0 (x6 / wage)
-		:location (x16 / level
-			:mod (x13 / child
-				:mod (x12 / poor))
-			:mod (x15 / low
-				:degree (x14 / extreme)))))
+	:domain (x6 / wage))
 
-# ::id 50
-# ::snt What is the right way to go ?
+# ::id 114
+# ::snt to stay at poor children extremely low levels.
+(x2 / stay-01
+	:location (x8 / level
+		:mod (x5 / child
+			:mod (x4 / poor))
+		:mod (x7 / low
+			:degree (x6 / extreme))))
+
+# ::id 115
+# ::snt What is the right way
 (x5 / way
-	:mod (x4 / right)
-	:instrument-of (x7 / go-06))
+	:mod (x4 / right))
 
-# ::id 51
-# ::snt That choice should be made by parents and child-care experts , not economists .
+# ::id 116
+# ::snt to go?
+(x2 / go-01)
+
+# ::id 117
+# ::snt That choice should be made by parents and child-care experts, not economists.
 (x3 / recommend-01
 	:ARG2 (x1 / that)
 	:ARG1 (x8 / and
@@ -967,8 +1171,8 @@
 		:op4 (x10 / person
 			:ARG1-of (e / expert-41))))
 
-# ::id 52
-# ::snt Those decisions , however , can not evade or avoid the ABCs of child-care economics .
+# ::id 118
+# ::snt Those decisions, however, can not evade or avoid the ABCs of child-care economics.
 (x9 / or
 	:op1 (x6 / possible
 		:domain (x8 / evade-01
@@ -980,31 +1184,39 @@
 				:mod (x15 / economics
 					:mod (x14 / child-care))))))
 
-# ::id 53
-# ::snt To want simultaneously to hold down the cost of care , reduce the child/worker ratio and increase the pay and qualifications of child-care workers is to wish for a world that never was and never will be .
-(x2 / want-01
-	:time (x3 / simultaneous)
-	:ARG1 (x5 / hold-04
-		:ARG1 (x8 / cost-01
-			:ARG1 (x10 / care)))
-	:ARG1 (x16 / and
-		:op1 (x12 / reduce-01
-			:ARG1 (x15 / ratio
-				:mod "child\/worker"))
-		:op1 (x17 / increase-01
-			:ARG1 (x20 / and
-				:op1 (x19 / pay-01
-					:poss (x24 / person
-						:ARG0-of (w / work-01)
-						:mod (x23 / child-care)))
-				:op2 (x21 / thing
-					:ARG2-of (q / qualify-02)))))
-	:ARG1 (x27 / wish-01
-		:ARG1 (x30 / world
-			:beneficiary (x34 / and))))
+# ::id 119
+# ::snt To want simultaneously to hold down the cost of care, reduce the child/worker ratio
+(x12 / reduce-01
+	:null_edge (x2 / want-01
+		:time (x3 / simultaneous)
+		:ARG1 (x5 / hold-04
+			:ARG1 (x8 / cost-01
+				:ARG1 (x10 / care))))
+	:ARG1 (x15 / ratio
+		:mod "child\/worker"))
 
-# ::id 54
-# ::snt Mr. Fuchs is a professor of economics at Stanford University and a research associate with the National Bureau of Economic Research .
+# ::id 120
+# ::snt and increase the pay
+(x1 / and
+	:op1 (x2 / increase-01
+		:ARG1 (x4 / pay-01)))
+
+# ::id 121
+# ::snt and qualifications of child-care workers is to wish for a world
+(x1 / and
+	:op2 (x2 / qualify-02
+		:poss (x5 / person
+			:ARG0-of (w / work-01)
+			:mod (x4 / child-care)))
+	:op2 (x8 / wish-01
+		:ARG1 (x11 / world)))
+
+# ::id 122
+# ::snt that never was and never will be.
+(x4 / and)
+
+# ::id 123
+# ::snt Mr. Fuchs is a professor of economics at Stanford University and a research associate with the National Bureau of Economic Research.
 (x11 / and
 	:op1 (x5 / have-org-role-91
 		:ARG2 (p / professor)
