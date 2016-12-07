@@ -135,17 +135,15 @@ namespace JarvisSummarization.CG
             }            
         }
         public void Execute()
-        {
-            List<CGRelation> deletes = new List<CGRelation>();
-            foreach (var item in this.graph.Relations)
-            {
+        {            
+            foreach (var item in this.graph.Relations.ToList())
+            {   
                 if (item.label.StartsWith("degree"))
-                    deletes.Add(item);
-            }
-            foreach (var item in deletes)
-            {
-                graph.RemoveRelation(item);
-            }
+                {
+                    var node = this.graph.Nodes.Where(c => c.id == item.Tail).Single();
+                    this.graph.RecursiveRemoveSubGraph(node); 
+                }                
+            }            
         }
     }
     public class StrategyPolarity
@@ -290,10 +288,13 @@ namespace JarvisSummarization.CG
         public void Execute()
         {
             List<CGRelation> deletes = new List<CGRelation>();
-            foreach (var item in this.graph.Relations)
+            foreach (var item in this.graph.Relations.ToList())
             {
-                if (item.label == "quant") 
-                    deletes.Add(item);
+                if (item.label == "quant")
+                {
+                    var node = this.graph.Nodes.Where(c => c.id == item.Tail).Single();
+                    this.graph.RecursiveRemoveSubGraph(node);
+                }
             }
             foreach (var item in deletes)
             {
@@ -354,15 +355,15 @@ namespace JarvisSummarization.CG
         public void Execute()
         {
             List<CGRelation> deletes = new List<CGRelation>();
-            foreach (var item in this.graph.Relations)
+            foreach (var item in this.graph.Relations.ToList())
             {
                 if (item.label == "time")
-                    deletes.Add(item);
+                {
+                    var node = this.graph.Nodes.Where(c => c.id == item.Tail).Single();
+                    this.graph.RecursiveRemoveSubGraph(node);
+                }
             }
-            foreach (var item in deletes)
-            {
-                graph.RemoveRelation(item); 
-            }
+            
         }
     }
 }

@@ -9,17 +9,33 @@ namespace JarvisSummarization.CG
 {
     public class CGNode
     {
-        public int id { get; set; }
+        
 
+        
+
+        public int id { get; set; }
+        
         public string text { get; set; }
         public string label { get; set; }        
         public string nosuffix { get; set; }
+        public bool IsConcept { get; set; }
+        public bool IsDataEntity { get; set; }
+        public bool IsTemporalQuantity { get; set; }
+        public bool IsMonetaryQuantity { get; set; }
         public double rstweight { get; set; }                
         public double pagerank { get; set; }
         
         public int  sentenceid { get; set; }        
         public bool IsPatientVerb { get; set; }
-        public bool IsEntity { get; set; }
+        public bool IsEntity { get {
+                return !string.IsNullOrWhiteSpace(this.Entity);
+            } }
+
+        public int NumberOfWords { get {
+                return this.nosuffix.Split(' ').Count();
+            } }
+
+        public string Entity { get; set; }
         public string description { get; set; }
         
         
@@ -59,6 +75,10 @@ namespace JarvisSummarization.CG
             {
                 this.FusionNodes.Add(format);
             }
+            foreach (var item in Node.semanticroles)
+            {
+                this.AddSemanticRole(item);
+            }            
         }
         public CGNode Clone(int pid)
         {

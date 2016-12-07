@@ -24,22 +24,23 @@ namespace JarvisSummarization.CG
             {
                 var in_rels = this.graph.Relations.Where(c => c.Tail == item.id);
                 var out_rels = this.graph.Relations.Where(c => c.Head == item.id);
-
-                int number;
                 if (item.text.Contains("-0"))
                 {
                     item.AddSemanticRole("verb");
                 }
-                else if (Terms.Contains(item.nosuffix) 
-                    || int.TryParse(item.nosuffix, out number) 
-                    || item.text.StartsWith("prep-")
-                    )
+                foreach (var rel in in_rels)
                 {
-                    item.AddSemanticRole("term");
-                }
-                else
-                {
-                    item.AddSemanticRole("concept");
+                    int number;
+                    if (Terms.Contains(item.nosuffix)  ||
+                        rel.label.StartsWith("prep-")  || 
+                        int.TryParse(item.nosuffix, out number))
+                    {
+                        item.AddSemanticRole("term");
+                    }
+                    else
+                    {
+                        item.AddSemanticRole(rel.conceptualrole); 
+                    }
                 }
             }
             foreach (var node in graph.Nodes.Where(c=>c.semanticroles.Contains("verb")))

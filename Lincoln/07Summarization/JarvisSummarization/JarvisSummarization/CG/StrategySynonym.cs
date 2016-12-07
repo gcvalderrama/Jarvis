@@ -23,6 +23,7 @@ namespace JarvisSummarization.CG
             _semanticSimilarityModel = new LAIR.ResourceAPIs.WordNet.WordNetSimilarityModel(_wordNetEngine);
         }
         private Dictionary<string, WordNet.SynSet> SynSets = new Dictionary<string, WordNet.SynSet>();
+        
         private void GraphFusion(CGGraph graph, IEnumerable<IGrouping<string, CGNode>> groups)
         {
             foreach (var g in groups)
@@ -43,9 +44,7 @@ namespace JarvisSummarization.CG
                 foreach (var node in g)
                 {
                     if (node.id == max.id) continue;
-
                     
-
                     var inrelations = from c in graph.Relations where c.Tail == node.id select c;
                     foreach (var item in inrelations)
                     {
@@ -88,43 +87,63 @@ namespace JarvisSummarization.CG
      
         public void FusionConcepts()
         {
-            var nodes = this.graph.Nodes.Where(c => c.semanticroles.Count() == 1
-                && (c.semanticroles.Contains("concept"))
-                && !c.semanticroles.Contains("rel")).ToList();
+
+            List<string> invalid = new List<string>() { "verb", "mod", "op", "term", "mod-of" };
+
+            var nodes = this.graph.Nodes.Where(c => 
+                    c.semanticroles.Where(d=> invalid.Contains(d)).Count() == 0                
+                ).ToList();
 
             WordNet.WordNetSimilarityModel.Strategy strategy = WordNet.WordNetSimilarityModel.Strategy.WuPalmer1994MostCommon;
 
-            foreach (var current in nodes.OrderByDescending(c => c.rstweight))
+            foreach (var current in nodes.Where(c=>!c.IsConcept && !c.IsEntity).OrderByDescending(c => c.rstweight))
             {
-                var currentset = this.SynSets[current.nosuffix];
+                
+                    var currentset = this.SynSets[current.nosuffix];
 
-                if (currentset == null)
-                {
-                    current.hypernym = current.nosuffix;
-                    continue;
-                }
-
-                //este ciclo incluira el nodo mismo
-                foreach (var node in nodes.Where(c => string.IsNullOrWhiteSpace(c.hypernym)))
-                {
-                    var nodeset = this.SynSets[node.nosuffix];
-                    if (nodeset == null) continue;
-
-                    float sim = _semanticSimilarityModel.GetSimilarity(currentset, nodeset, strategy, WordNet.WordNetEngine.SynSetRelation.Hypernym);
-                    if (sim > 0.9)
+                    if (currentset == null)
                     {
-                        node.hypernym = current.nosuffix;
+                        current.hypernym = current.nosuffix;
+                        continue;
                     }
-                }
+
+                    //este ciclo incluira el nodo mismo
+                    foreach (var node in nodes.Where(c => string.IsNullOrWhiteSpace(c.hypernym)))
+                    {
+                        var nodeset = this.SynSets[node.nosuffix];
+                        if (nodeset == null) continue;
+                    
+                        float sim = _semanticSimilarityModel.GetSimilarity(currentset, nodeset, strategy, WordNet.WordNetEngine.SynSetRelation.Hypernym);
+
+                        if (sim > 0.9)
+                        {
+                            node.hypernym = current.nosuffix;
+                            this.graph.NumberOfFusions += 1;
+                        }
+                    }                
             }
+
             this.GraphFusion(graph, nodes.GroupBy(c => c.hypernym));
 
+            
+
+            var concepts = this.graph.Nodes.Where(c => c.IsConcept);
+            foreach (var current in concepts.GroupBy(c=>c.nosuffix))
+            {
+                var max = current.OrderByDescending(c => c.pagerank).First();
+                this.graph.FusionNodes(max, current.ToList());                
+            }
+
+            var entities = this.graph.Nodes.Where(c => c.IsEntity);
+            foreach (var current in entities.GroupBy(c => c.nosuffix))
+            {
+                var max = current.OrderByDescending(c => c.pagerank).First();
+                this.graph.FusionNodes(max, current.ToList());
+            }
         }
         public void Execute()
         {
-            var nodes = this.graph.Nodes.Where(c => c.semanticroles.Count() == 1
-                && (c.semanticroles.Contains("concept"))
-                && !c.semanticroles.Contains("rel")).ToList();
+            var nodes = this.graph.Nodes.ToList();
 
             foreach (var item in nodes.Select(c => c.nosuffix).Distinct())
             {

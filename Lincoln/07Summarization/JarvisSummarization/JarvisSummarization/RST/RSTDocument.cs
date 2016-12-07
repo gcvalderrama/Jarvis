@@ -120,11 +120,17 @@ namespace JarvisSummarization.RST
                          select c).OrderByDescending(d => d.weight);
 
             var sb = new StringBuilder();
+            int words = 0; 
             foreach (var item in query)
             {
                 foreach (var token in item.edu.tokens)
                 {
-                    sb.Append(string.Format(" {0} ", token.word));
+                    words += 1;    
+                    sb.Append(string.Format(" {0} ", token.word));                    
+                }
+                if (words > 100)
+                {
+                    break;
                 }
                 sb.AppendLine();
             }

@@ -16,14 +16,12 @@ namespace JarvisSummarization.CG
         }
         public void Execute()
         {
-            var nodes = from c in this.graph.Nodes.Where(c => c.text.Contains("-0")) select c;
-
-            foreach (var item in nodes)
+            foreach (var item in this.graph.Nodes.Where(c=>c.text.Contains("-0")))
             {
-                var out_rels = this.graph.Relations.
-                    Where(c => c.Head == item.id).ToList();
-                if (out_rels.Count == 0)
-                    item.text = item.nosuffix; 
+                if (this.graph.IsLeaf(item))
+                {
+                    item.text = item.nosuffix;
+                }                
             }            
         }
     }

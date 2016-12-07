@@ -13,9 +13,9 @@ namespace JarvisSummarization.CG
         private CGGraph graph;
         public StrategyAssignSemanticRelation(CGGraph graph)
         {
-            this.graph = graph;            
+            this.graph = graph;
         }
-        
+
         private void ManageNotFoundArg(CGRelation item)
         {
             item.description = "arg not found in propbank";
@@ -44,26 +44,32 @@ namespace JarvisSummarization.CG
                 item.f = "end";
                 item.conceptualrole = "end";
             }
+            else
+            {
+                item.f = item.label;
+                item.description = item.label;
+                item.conceptualrole = item.label;
+            }
         }
-        private void ExecuteForVerbs(CGNode node, IEnumerable<CGRelation> out_relations)
+        private void ExecuteVerbNode(CGNode node, IEnumerable<CGRelation> out_relations)
         {
             //if node is not a verb we can not assign any role
-            var currentPath = System.IO.Path.Combine(this.propbankPath, node.nosuffix) + ".xml";            
-             if (!System.IO.File.Exists(currentPath))
+            var currentPath = System.IO.Path.Combine(this.propbankPath, node.nosuffix) + ".xml";
+            if (!System.IO.File.Exists(currentPath))
             {
                 foreach (var item in out_relations)
                 {
                     ManageNotFoundArg(item);
-                }        
+                }
                 return;
-            }            
+            }
             var str = System.IO.File.ReadAllText(currentPath);
 
             var propbankelements = XElement.Parse(str);
-            
+
             var propbankelement = (from c in propbankelements.Elements("predicate").Elements("roleset")
-                                   select c).ElementAt(int.Parse(node.text.Replace(node.nosuffix + "-", "")) - 1);                        
-                        
+                                   select c).ElementAt(int.Parse(node.text.Replace(node.nosuffix + "-", "")) - 1);
+
             foreach (var relation in out_relations)
             {
                 if (relation.label.Contains("ARG"))
@@ -101,19 +107,53 @@ namespace JarvisSummarization.CG
                     {
                         ManageNotFoundArg(relation);
                     }
-                    
+
+                }
+                else
+                {
+                    ManageNotFoundArg(relation);
+                }
+
+            }
+        }
+
+        private void ExecuteNonVerbNode(CGNode node, IEnumerable<CGRelation> out_relations)
+        {
+            foreach (var item in out_relations)
+            {
+                if (string.IsNullOrWhiteSpace(item.conceptualrole))
+                {
+                    if (item.label.StartsWith("ARG") ||
+                    item.label.StartsWith("op"))
+                    {
+                        item.description = item.label;
+                        item.f = item.label;
+                        item.conceptualrole = "op";
+                    }
+                    else
+                    {
+                        item.description = item.label;
+                        item.f = item.label;
+                        item.conceptualrole = item.label;
+                    }
                 }
                 
             }
         }
-
         public void Execute()
         {            
             //only to verbs
-            foreach (var node in graph.Nodes.Where(c=>c.text.Contains("-0")))
+            foreach (var node in graph.Nodes)
             {
-                var out_relations_verbs = graph.Relations.Where(c => c.Head == node.id).ToList();
-                this.ExecuteForVerbs(node, out_relations_verbs);                
+                if (node.text.Contains("-0"))
+                {
+                    var out_relations= graph.Relations.Where(c => c.Head == node.id).ToList();
+                    this.ExecuteVerbNode(node, out_relations);
+                }
+                else {
+                    var out_relations = graph.Relations.Where(c => c.Head == node.id).ToList();
+                    this.ExecuteNonVerbNode(node, out_relations);
+                }                
             }
             foreach (var item in graph.Relations)
             {

@@ -1,4 +1,5 @@
 ﻿using JarvisSummarization.AMR;
+using JarvisSummarization.CG.NLG;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
@@ -14,7 +15,7 @@ namespace JarvisSummarization.CG
         
         private string propbankPath;
         public string name { get; set; }
-
+        public int NumberOfFusions { get; set; }
         public int NumberOfWords { get; set; }
 
 
@@ -76,6 +77,9 @@ namespace JarvisSummarization.CG
             this._Relations.Remove(relation); 
         }
         
+
+        
+
         public CGGraph(string name, string propbankPath, int numberofwords)
         {
             this.propbankPath = propbankPath;
@@ -84,72 +88,233 @@ namespace JarvisSummarization.CG
             this._Relations = new List<CGRelation>();
             this.CGSentences = new List<CGSentence>(); 
         }
-        
-      
+
+
+        public string Stadistics()
+        {
+            StringBuilder sb = new StringBuilder();
+            
+            sb.AppendLine("========================Statistics======================");
+            sb.AppendLine(string.Format("number of nodes : {0}", this.Nodes.Count()));
+            sb.AppendLine(string.Format("number of edges : {0}", this.Relations.Count()));
+            sb.AppendLine(string.Format("number of Fusions : {0}", this.NumberOfFusions));
+
+            var verbs = this.Nodes.Where(c => c.semanticroles.Contains("verb"));
+            var nonverbs = this.Nodes.Where(c => !c.semanticroles.Contains("verb"));
+
+            sb.AppendLine("==>verb conceptual relations");
+            var conceptual_relations = verbs.SelectMany(c => this.GetRelations(c.id).Select(d => d.conceptualrole)).Distinct();
+            sb.AppendLine(string.Join(",", conceptual_relations));
+
+            sb.AppendLine("<==");
+            sb.AppendLine("==>non verb conceptual relations");
+            var nonconceptual_relations = nonverbs.SelectMany(c => this.GetRelations(c.id).Select(d => d.conceptualrole)).Distinct();
+            sb.AppendLine(string.Join(",", nonconceptual_relations));
+            return sb.ToString(); 
+
+        }
+
+
         //http://es.slideshare.net/underx/semantic-roles        
-        
+
+        public IEnumerable<CGRelation> GetOutRelations(CGNode Node)
+        {
+            var relations = this.Relations.Where(c => c.Head == Node.id).ToList();
+            return relations;
+        }
+        public IEnumerable<CGRelation> GetOutRelationsByConceptualRole(CGNode Node, params string[] Labels)
+        {
+            var relations = this.Relations.Where(c => c.Head == Node.id && 
+                    Labels.Contains(c.conceptualrole) ).ToList();
+            return relations;
+        }
+        public IEnumerable<CGRelation> GetRelations(int id)
+        {
+            var relations = this.Relations.Where(c => c.Head == id || c.Tail == id).ToList();
+            return relations;  
+        }
+        public  IEnumerable<CGRelation> GetInRelations(CGNode Node)
+        {
+            var relations = this.Relations.Where(c => c.Tail == Node.id).ToList();
+            return relations;
+        }
+        public IEnumerable<CGRelation> GetInRelationsByConceptualRole(CGNode Node, params string[] Labels)
+        {
+            var relations = this.Relations.Where(c => c.Tail == Node.id &&
+                    Labels.Contains(c.conceptualrole)).ToList();
+            return relations;
+        }
+        public bool IsLeaf(CGNode Node)
+        {
+            return this.GetOutRelations(Node).Count() == 0;
+        }
+        public bool IsLeaf(int id)
+        {
+            var node = this.Nodes.Where(c => c.id == id).Single();
+            return this.IsLeaf(node);
+        }
+        public List<CGNode> GetChildren(CGNode Node)
+        {
+            var rels = this.GetOutRelations(Node);
+            var result = new List<CGNode>();
+            foreach (var item in rels)
+            {
+                var it = this.Nodes.Where(c => c.id == item.Tail).Single();
+                result.Add(it);
+            }
+            return result; 
+        }
+        public List<CGNode> GetChildrenByConceptualRole(CGNode Node, params string[] labels)
+        {
+            var rels = this.GetOutRelationsByConceptualRole(Node, labels);
+            var result = new List<CGNode>();
+            foreach (var item in rels)
+            {
+                var it = this.Nodes.Where(c => c.id == item.Tail).Single();
+                result.Add(it);
+            }
+            return result;
+        }
+        public List<CGNode> GetParentsByConceptualRole(CGNode Node, params string[] labels)
+        {
+            var rels = this.GetInRelationsByConceptualRole(Node, labels);
+            var result = new List<CGNode>();
+            foreach (var item in rels)
+            {
+                var it = this.Nodes.Where(c => c.id == item.Head).Single();
+                result.Add(it);
+            }
+            return result;
+        }
+
+        public void FusionNodes(CGNode Root, List<CGNode> Target)
+        {
+            List<CGNode> deletes = new List<CGNode>();
+            List<CGRelation> relations_deletes = new List<CGRelation>();
+            List<CGRelation> relations_news = new List<CGRelation>();
+            foreach (var node in Target)
+            {
+                if (node.id == Root.id) continue; 
+
+                this.NumberOfFusions += 1;
+                Root.AddFusionNode(node);
+
+                deletes.Add(node);
+                var inrelations = (from c in this.Relations where c.Tail == node.id select c).ToList();
+                foreach (var item in inrelations)
+                {
+                    var n = item.Clone();
+                    n.Tail = Root.id;
+                    relations_deletes.Add(item);
+                    if (deletes.Where(c => c.id == n.Head).Count() == 0)
+                    {
+                        relations_news.Add(n);
+                    }
+                }
+                var outrelations = (from c in this.Relations where c.Head == node.id select c).ToList();
+                foreach (var item in outrelations)
+                {
+                    var n = item.Clone();
+                    n.Head = Root.id;
+                    relations_deletes.Add(item);
+                    if (deletes.Where(c => c.id == n.Tail).Count() == 0)
+                    {
+                        relations_news.Add(n);
+                    }
+                }                
+                foreach (var item in relations_deletes)
+                {
+                    this.RemoveRelation(item);
+                }
+                foreach (var item in relations_news)
+                {
+                    this.AddRelation(item);
+                }
+                foreach (var item in deletes)
+                {
+                    this.RemoveNode(item);
+                }
+            }
+
+        }
 
         public void Digest()
         {
             //new StrategyStopWords(this).Execute();
             //convert  possible to can verb 
-            new StrategyPossibleToVerb(this).Execute(); 
+            new StrategyPossibleToVerb(this).Execute();
             //important last
-            new StrategyOperatorAndOr(this).Execute();            
-            
+            //new StrategyOperatorAndOr(this).Execute();            
+
             //si tenemos un verbo que no es of- y que es el ultimo debe ser un concepto
-            //new StrategyVerbToConcept(this).Execute();                                   
+            
+            //leaf mod must be fusion
+            
+
             new StrategyEntity(this).Execute();
-            new StrategyPersonFusion(this).Execute(); 
+            new StrategyPersonFusion(this).Execute();
+            new StrategyDataEntity(this).Execute();
+            new StrategyTemporalQuantity(this).Execute();
+            new StrategyMonetaryQuantity(this).Execute();
+            new StrategyVerbToConcept(this).Execute();
+            
+            new StrategyMod(this).Execute();
+            new StrategyMod(this).Execute();
+            new StrategyMod(this).Execute();
+
+            //new StrategyDependencies(this).Execute();
             //new StrategyX(this).Execute();
 
             //invert of relation
-            //new StrategySolveOfRelations().Execute(this);
+            new StrategySolveOfRelations(this).Execute();
 
             //no polarity
-            new StrategyPolarity(this).Execute();
-            new StrategySource(this).Execute();
-            new StrategyDirection(this).Execute();  
+            //new StrategyPolarity(this).Execute();
+            //new StrategySource(this).Execute();
+            //new StrategyDirection(this).Execute();  
             //no unit
-            new StrategyUnit(this).Execute();
-            new StrategyPoss(this).Execute();
-            new StrategyCondition(this).Execute();
-            new StrategyBeneficiary(this).Execute();
+            //new StrategyUnit(this).Execute();
+            //new StrategyPoss(this).Execute();
+            //new StrategyCondition(this).Execute();
+            //new StrategyBeneficiary(this).Execute();
+                        
+            //new StrategyValue(this).Execute();
+
+
+            //new StrategyExample(this).Execute(); 
+            //new StrategyTopic(this).Execute(); 
+            //new StrategyComparedTo(this).Execute(); 
+            //new StrategyRange(this).Execute();
+            //new StrategyPrep(this).Execute(); 
+            //new StrategyLocation(this).Execute();
             
-            new StrategyQuant(this).Execute();
-            new StrategyValue(this).Execute();
-            
-            new StrategyTime(this).Execute();
-            new StrategyExample(this).Execute(); 
-            new StrategyTopic(this).Execute(); 
-            new StrategyComparedTo(this).Execute(); 
-            new StrategyRange(this).Execute();
-            new StrategyPrep(this).Execute(); 
-            new StrategyLocation(this).Execute();
-            new StrategyMod(this).Execute();
-            new StrategyDomain(this).Execute();
-            new StrategyDuration(this).Execute();
-            new StrategyPurpose(this).Execute();
-            new StrategyPart(this).Execute();
-            new StrategyManner(this).Execute();
-            new StrategyInstrument(this).Execute();
+            //new StrategyDomain(this).Execute();
+            //
+            //new StrategyPurpose(this).Execute();
+            //new StrategyPart(this).Execute();
+            //new StrategyManner(this).Execute();
+            //new StrategyInstrument(this).Execute();
 
             //deletes 
-            new StrategyFrequency(this).Execute();
-            new StrategyDegree(this).Execute();
-            new StrategySolveNullNodes().Execute(this);
+            //new StrategyDuration(this).Execute();
+            //new StrategyFrequency(this).Execute();
+            //new StrategyDegree(this).Execute();
+            //new StrategyTime(this).Execute();
+            //new StrategyQuant(this).Execute();
+            //new StrategySolveNullNodes().Execute(this);
             new StrategySolveNullEdgeRelations().Execute(this);
-            new StrategyWeekday(this).Execute();
+            //new StrategyWeekday(this).Execute();
+            
             //solve semantics
-            new StrategySolveSemantics(this).Execute();            
+            //new StrategySolveSemantics(this).Execute();            
             new StrategyAssignSemanticRelation(this).Execute();
             //new StrategySplitSemanticRole().Execute(this); //we can not have a token with two semantic role assign
             new StrategyAssignSemanticRole(this).Execute();
 
             new StrategySynonym(this).Execute();
 
-            
-            //new StrategyCompressGraph(this).Execute();
+
+            new StrategyCompressGraph(this).Execute();
             new StrategyPageRank(this).Execute(); 
             
         }
@@ -170,7 +335,34 @@ namespace JarvisSummarization.CG
             return result; 
         }
 
-
+        public void RemoveSubGraph(CGNode Start)
+        {
+            this.RecursiveRemoveSubGraph(Start);
+        }
+        //metodo no terminado cuidado
+        public void RecursiveRemoveSubGraph(CGNode Target)
+        {
+            var nodes = new List<CGNode>();
+            var in_relations = this.GetInRelations(Target);            
+            foreach (var item in in_relations)
+            {
+                var head = this.Nodes.Where(c => c.id == item.Head).Single();
+                nodes.Add(head);
+                this.RemoveRelation(item);                
+            }
+            var out_relations = this.GetOutRelations(Target);
+            foreach (var item in out_relations)
+            {
+                var tail = this.Nodes.Where(c => c.id == item.Tail).Single();
+                nodes.Add(tail);
+                this.RemoveRelation(item);
+            }
+            foreach (var item in out_relations)
+            {
+                var tail = this.Nodes.Where(c => c.id == item.Tail).Single();
+                this.RecursiveRemoveSubGraph(tail);
+            }
+        }
         public List<CGNode> FindByTail(int Tail)
         {
             var result = new List<CGNode>();  
@@ -418,77 +610,8 @@ namespace JarvisSummarization.CG
                     expression.Result.Items.Add(this.BuildPredicateExpression(item, "result"));
             }
             return expression;
-        }
+        }       
         
-        public void Navigate(CGSentence sentence, CGNode verb)
-        {
-            sentence.Verb = new CGVerb() { Verb0 = this.BuildVerbExpression(verb, "rel", null) };
-
-            var agents = this.FindByHead(verb.id, "agent");
-
-            foreach (var item in agents)
-            {
-                sentence.Subject.Items.Add(this.BuildSubjectExpression(item, "agent"));
-            }
-
-            var patients = this.FindByHead(verb.id, "patient");            
-            foreach (var item in patients)
-            {
-                if (item.semanticroles.Contains("verb"))
-                {
-                    sentence.Patient.Items.Add(this.BuildComplexExpression(item, "patient", verb));
-                }
-                else
-                {
-                    sentence.Patient.Items.Add(this.BuildPredicateExpression(item, "patient"));
-                }
-                
-            }
-            var experiencers = this.FindByHead(verb.id, "experiencer");
-            foreach (var item in experiencers)
-            {
-                sentence.Patient.Items.Add(this.BuildPredicateExpression(item, "patient"));
-            }
-            var copatients = this.FindByHead(verb.id, "co-patient");
-            foreach (var item in copatients)
-            {
-                sentence.Patient.Items.Add(this.BuildPredicateExpression(item, "patient"));
-            }
-            var goals = this.FindByHead(verb.id, "goal");
-            foreach (var item in goals)
-            {
-                if (item.semanticroles.Contains("verb"))
-                {
-                    sentence.Goal.Items.Add(this.BuildComplexExpression(item, "goal", verb));
-                }
-                else {
-                    sentence.Goal.Items.Add(this.BuildPredicateExpression(item, "goal"));
-                }
-            }
-            var results = this.FindByHead(verb.id, "result");
-            foreach (var item in results)
-            {
-                sentence.Goal.Items.Add(this.BuildPredicateExpression(item, "goal"));
-            }
-            var destinations = this.FindByHead(verb.id, "destination");
-            foreach (var item in destinations)
-            {
-                sentence.Destination.Items.Add(this.BuildPredicateExpression(item, "destination"));
-            }
-            var themes = this.FindByHead(verb.id, "theme");
-            foreach (var item in themes)
-            {
-                if (item.semanticroles.Contains("verb"))
-                {
-                    sentence.Theme.Items.Add(this.BuildComplexExpression(item, "theme", verb));
-                }
-                else
-                {
-                    sentence.Theme.Items.Add(this.BuildPredicateExpression(item, "theme"));
-                }                
-            }            
-        }
-
         public void Validate()
         {
             var relations = this.Relations.Where(c => c.conceptualrole == "mod");
@@ -502,114 +625,78 @@ namespace JarvisSummarization.CG
                 //    throw new Exception("not valid");
                 //}
             }
-
         }
-
         public void GenerateInformation()
         {
             Console.WriteLine("Concepts");
-            foreach (var item in this.Nodes.Where(c=>c.semanticroles.Contains("concept")))
+            foreach (var item in this.Nodes.Where(c => c.IsConcept).OrderByDescending(c => c.pagerank))
             {
-                Console.WriteLine(item.text);
+                Console.WriteLine(string.Format("{0}:{1}-{2}", item.id, string.Join(",", item.semanticroles), item.text));
             }
-            Console.WriteLine("Relations");
-            foreach (var item in this.Relations.Select(c=>c.conceptualrole).Distinct())
+            Console.WriteLine("Entities");
+            foreach (var item in this.Nodes.Where(c => c.IsEntity).OrderByDescending(c => c.pagerank))
             {
-             //   Console.WriteLine(item);
+                Console.WriteLine(string.Format("{0}:{1}-{2}", item.id, string.Join(",", item.semanticroles), item.text));
+            }
+            Console.WriteLine("Agents");
+            foreach (var item in this.Nodes.Where(c => c.semanticroles.Contains("agent")).OrderByDescending(c => c.pagerank))
+            {
+                Console.WriteLine(string.Format("{0}:{1}-{2}", item.id, string.Join(",", item.semanticroles), item.text));
             }
             Console.WriteLine("Verbs");
 
             foreach (var item in this.Nodes.Where(c=>c.semanticroles.Contains("verb")).OrderByDescending(c=>c.pagerank))
             {
-                Console.WriteLine(item.pagerank + "  " + item.text);
+                Console.WriteLine(string.Format("{0}:{1}-{2}", item.id, string.Join(",", item.semanticroles), item.text));
             }
 
-            Console.WriteLine("Muti Verbs");
-            Console.WriteLine("=====================================================");
+            Console.WriteLine("Themes");
 
-            foreach (var item in this.Relations)
+            foreach (var item in this.Nodes.Where(c => c.semanticroles.Contains("theme")).OrderByDescending(c => c.pagerank))
             {
-                var head = this.Nodes.Where(c => c.id == item.Head).Single();
-                var tail = this.Nodes.Where(c => c.id == item.Tail).Single();
-                if (head.semanticroles.Contains("verb") && tail.semanticroles.Contains("verb"))
-                {                    
-                    
-                    Console.WriteLine(head.text + " - " +  item.conceptualrole + " : "  +item.label +" -> " + tail.text);
-
-                    var outs = this.Relations.Where(c => c.Head == head.id);
-                    foreach (var rel in outs)
-                    {
-                        var outtail = this.Nodes.Where(c => c.id == rel.Tail).Single();
-                        Console.WriteLine("     " + rel.conceptualrole + " : " + rel.label + " = " + outtail.semanticroles.Single()+ " > " + outtail.text);
-                    }
-                }
+                Console.WriteLine(string.Format("{0}:{1}-{2}", item.id, string.Join(",", item.semanticroles), item.text));
             }
-            Console.WriteLine("=====================================================");
-            foreach (var item in this.Nodes.Where(c => c.semanticroles.Contains("verb")).OrderByDescending(c => c.pagerank))
+
+            Console.WriteLine("Goal");
+
+            foreach (var item in this.Nodes.Where(c => c.semanticroles.Contains("goal")).OrderByDescending(c => c.pagerank))
             {
-                Console.WriteLine(item.pagerank + "  " + item.text);
+                Console.WriteLine(string.Format("{0}:{1}-{2}", item.id, string.Join(",", item.semanticroles), item.text));
             }
 
-            Console.WriteLine("Agents");
-
-
-            var agents_relations = this.Relations.Where(c => c.conceptualrole == "agent" ).Select(c=>c.Tail).Distinct();
-            var agents = new List<CGNode>();
-            foreach (var item in agents_relations)
-            {
-                var tail = this.Nodes.Where(c => c.id == item).Single();
-                agents.Add(tail); 
-            }
-
-            foreach (var item in agents.OrderByDescending(c=>c.pagerank))
-            {
-                Console.WriteLine(item.pagerank +"  "+ item.text); 
-            }
-
-            Console.WriteLine("themes");
-            
-            var theme_relations = this.Relations.Where(c => c.conceptualrole == "theme").Select(c => c.Tail).Distinct();
-            var themes = new List<CGNode>();
-            foreach (var item in theme_relations)
-            {
-                var tail = this.Nodes.Where(c => c.id == item).Single();
-                themes.Add(tail);
-            }
-
-            foreach (var item in themes.OrderByDescending(c => c.pagerank))
-            {
-                Console.WriteLine(item.pagerank + "  " + item.text);
-            }
 
         }
         public void GenerateInformativeAspectsv2()
         {
-            var verbs = this.Nodes.Where(c => c.semanticroles.Contains("verb")).OrderByDescending(c => c.pagerank).ToList();
-            foreach (var verb in verbs.Where(c=>c.IsPatientVerb))
+            var result = new List<CGVerb>();
+
+            var noverbs = new List<string>() {  };
+
+            var vers = this.Nodes.Where(c => 
+                !noverbs.Contains(c.nosuffix) &&
+                c.semanticroles.Contains("verb")).OrderByDescending(c => c.pagerank).ToList();
+            foreach (var verb in vers)
             {
-                var out_relations = this.Relations.Where(c => c.Head == verb.id);
-                foreach (var out_rel in out_relations)
+                var cgverb = new CGVerb(verb);
+                cgverb.GenerateVerbs(this);
+                cgverb.GenerateAgents(this);
+                cgverb.GeneratePatients(this);
+                cgverb.GenerateThemes(this);
+                cgverb.GenerateGoal(this); 
+                result.Add(cgverb);
+            }
+            int words = 0;
+            foreach (var item in result.OrderByDescending(c=>c.Rank))
+            {
+                words += item.Words;
+                Console.WriteLine(item.Log(true));
+                if ( words > 100)
                 {
-                    var tail = this.Nodes.Where(c => c.id == out_rel.Tail).Single();
-                    Console.WriteLine( verb.id.ToString() + ":" +verb.text + " - " + out_rel.conceptualrole + " -> " + tail.semanticroles.Single() + ":"+ tail.text);
+                    break;
                 }
-
-
-
-             
             }
         }
-        public void GenerateInformativeAspects()
-        {
-            var rels = this.Nodes.Where(c => c.semanticroles.Contains("verb")).OrderByDescending(c=>c.pagerank).ToList();
-            foreach (var item in rels)
-            {
-                var aspect = new CGSentence();
-                this.Navigate(aspect,item);
-                aspect.name = this.CGSentences.Count + 1;                
-                this.CGSentences.Add( aspect );
-            }
-        }
+        
         public void Summary30()
         {
             var numberofterms = this.NumberOfWords * 0.3;            
@@ -619,10 +706,16 @@ namespace JarvisSummarization.CG
         {
             foreach (var gr in Document.Graphs)
             {
-                foreach (var node in gr.Nodes)
+                for (int i = 0; i < gr.Nodes.Count; i++)
                 {
-                    this.AddNode(new CGNode(node, gr.name));
-                }
+                    var node = gr.Nodes.ElementAt(i);
+                    var g = new CGNode(node, gr.name);
+                    if (i == 0)
+                    {
+                        g.AddSemanticRole("root");
+                    }
+                    this.AddNode(g);
+                }                
                 //transform relations 
                 foreach (var relation in gr.Relations)
                 {

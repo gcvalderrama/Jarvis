@@ -16,7 +16,7 @@ namespace JarvisSummarization.PageRank
 
         public double GetRSTWeight(int pos)
         {
-            var result = this.vertexs.Where(c => c.id == pos).FirstOrDefault();
+            var result = this.vertexs.Where(c => c.id == pos).SingleOrDefault();
             if (result != null)
                 return result.rstweight;
             else

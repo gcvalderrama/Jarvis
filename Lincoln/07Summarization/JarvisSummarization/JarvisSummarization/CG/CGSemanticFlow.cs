@@ -11,8 +11,7 @@ namespace JarvisSummarization.CG
     public class CGSentence
     {
         public int name { get; set; }
-        public CGSubject Subject { get; set; }
-        public CGVerb Verb { get; set; }
+        public CGSubject Subject { get; set; }        
         public CGPredicate Patient { get; set;}
         public CGPredicate Goal { get; set; }
         public CGPredicate Destination { get; set; }
@@ -27,7 +26,7 @@ namespace JarvisSummarization.CG
         public CGSentence()
         {
             this.Subject = new CGSubject();
-            this.Verb = new CGVerb();
+            
             this.Patient = new CGPredicate();
             this.Goal = new CGPredicate();
             this.Destination = new CGPredicate();
@@ -43,7 +42,7 @@ namespace JarvisSummarization.CG
                 sb.AppendLine(item.ToString());
             }
             sb.AppendLine("Verb");
-            sb.AppendLine(this.Verb.ToString());
+            
             sb.AppendLine("Patients");
             sb.AppendLine(this.Patient.ToString());
             
@@ -152,14 +151,7 @@ namespace JarvisSummarization.CG
         }
         
     }
-    public class CGVerb
-    {
-        public CGExpression Verb0 { get; set; }
-        public override string ToString()
-        {
-            return this.Verb0.ToString();
-        }
-    }
+    
     
     public class CGPredicate
     {

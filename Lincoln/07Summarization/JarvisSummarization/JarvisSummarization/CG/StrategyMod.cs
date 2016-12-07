@@ -25,17 +25,22 @@ namespace JarvisSummarization.CG
             {                
                 if (item.label.StartsWith("mod"))
                 {
+                    var head = this.graph.Nodes.Where(c => c.id == item.Head).Single();
                     var tail = this.graph.Nodes.Where(c => c.id == item.Tail).Single();
-
-                    if (stopwords.Contains(tail.label))
+                    if (this.graph.IsLeaf(tail))
                     {
-                        delete_relations.Add(item);
-                        deletes.Add(tail); 
-                    }
-                    else {
-                        item.description = "mod";
-                        item.f = "mod";
-                        item.conceptualrole = "mod";
+                        if (stopwords.Contains(tail.label))
+                        {
+                            delete_relations.Add(item);
+                            deletes.Add(tail);
+                        }
+                        else
+                        {
+                            delete_relations.Add(item);
+                            head.log += "mod fussion";
+                            head.text = tail.text +  " "+ head.text;
+                            head.nosuffix = tail.nosuffix + " " + head.nosuffix;                            
+                        }
                     }                    
                 }
             }

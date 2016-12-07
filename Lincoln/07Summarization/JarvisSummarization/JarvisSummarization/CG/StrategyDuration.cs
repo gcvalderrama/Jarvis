@@ -16,16 +16,16 @@ namespace JarvisSummarization.CG
         }
         public void Execute()
         {
-            List<CGRelation> deletes = new List<CGRelation>();
-            foreach (var item in this.graph.Relations)
+            
+            foreach (var item in this.graph.Relations.ToList())
             {
                 if (item.label.StartsWith("duration"))
-                    deletes.Add(item);
+                {
+                    var node = this.graph.Nodes.Where(c => c.id == item.Tail).Single();
+                    this.graph.RecursiveRemoveSubGraph(node);
+                }
             }
-            foreach (var item in deletes)
-            {
-                graph.RemoveRelation(item);
-            }
+            
         }
     }
 }

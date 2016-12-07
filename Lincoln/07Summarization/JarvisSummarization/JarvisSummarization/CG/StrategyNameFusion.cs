@@ -22,8 +22,8 @@ namespace JarvisSummarization.CG
                 var head = this.graph.Nodes.Where(c => c.id == namerelation.Head).Single();
                 var tail = this.graph.Nodes.Where(c => c.id == namerelation.Tail).Single();
                 var oprels = this.graph.Relations.Where(c => c.Head == tail.id && c.label.StartsWith("op")).OrderBy(c=>c.Tail).ToList();
-
-                head.IsEntity = true;
+                
+                head.Entity = head.nosuffix;
                 head.text += " named ";
                 foreach (var rel in oprels)
                 {
