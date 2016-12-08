@@ -1,0 +1,471 @@
+# ::id 1
+# ::snt Kinder-Care Learning Centers Inc. brought back Tull Gearreald as president and chief executive officer after the man who succeeded Tull Gearreald in June resigned .
+(x5 / bring-01
+	:ARG0 (x1 / government-organization
+		:name (n / name
+			:op1 "Kinder-Care"
+			:op2 "Learning"
+			:op3 "Centers"
+			:op4 "Inc."))
+	:direction (x6 / back)
+	:ARG1 (x7 / name
+		:op1 "Tull"
+		:op2 "Gearreald")
+	:time (x15 / after
+		:op1 (x11 / and
+			:op1 (x10 / have-org-role-91
+				:ARG2 (p / president))
+			:op1 (xap0 / person
+				:ARG0-of (x14 / have-org-role-91
+					:ARG2 (o / officer)
+					:mod (x12 / chief)
+					:mod (x13 / executive))))
+		:op1 (x24 / resign-01
+			:ARG1 (x17 / man
+				:ARG1-of (x19 / succeed-01
+					:ARG1 (x20 / name
+						:op1 "Tull"
+						:op2 "Gearreald")
+					:time (x23 / date-entity))))))
+
+# ::id 2
+# ::snt The Montgomery , Ala.-based company gave no reason for the departure of J. Phillip Samper .
+(x6 / give-01
+	:ARG0 (x5 / company
+		:source (x2 / city
+			:name (n / name
+				:op1 "Montgomery")))
+	:ARG1 (x11 / depart-01
+		:polarity -
+		:name (x13 / name
+			:op1 "J."
+			:op2 "Phillip"
+			:op3 "Samper")))
+
+# ::id 3
+# ::snt Mr. Samper , former vice chairman of Eastman Kodak Co. , could n't be reached for comment .
+(x12 / possible
+	:domain (x15 / reach-01
+		:ARG1 (x2 / person
+			:name (n / name
+				:op1 "Samper")
+			:null_edge (x1 / null_tag)
+			:null_edge (x6 / have-org-role-91
+				:ARG2 (c / chairman)
+				:mod (x4 / former)
+				:ARG1 (x8 / government-organization
+					:name (n1 / name
+						:op1 "Eastman"
+						:op2 "Kodak"
+						:op3 "Co."))))
+		:purpose (x17 / comment-01
+			:ARG0 x2)))
+
+# ::id 4
+# ::snt The executive change comes as Kinder-Care , the nation 's largest day-care center operator , struggles to restructure Kinder-Care 's debt after missing interest payments to bank creditors and noteholders .
+(x4 / come-01
+	:ARG1 (x3 / change-01
+		:mod (x2 / executive))
+	:condition (x16 / struggle-01
+		:ARG1 (x6 / kinder-care)
+		:ARG0 (x14 / person
+			:ARG0-of (o / operate-01)
+			:poss (x9 / nation)
+			:mod (x11 / large
+				:degree (m / most))
+			:location (x13 / center
+				:mod (x12 / day-care)))
+		:ARG1 (x18 / restructure-01
+			:ARG0 x6
+			:ARG0 x14
+			:ARG1 (x21 / debt
+				:poss (x19 / organization
+					:name (n / name
+						:op1 "Kinder-Care")))
+			:time (x22 / after
+				:op1 (x23 / miss-01
+					:ARG1 (x24 / interest
+						:ARG2 (x29 / and
+							:op1 (x28 / creditor
+								:mod (x27 / bank))
+							:op2 (x30 / noteholder))))))))
+
+# ::id 5
+# ::snt Mr. Gearreald became involved with Kinder-Care in 1988 when Tull Gearreald merchant banking fund and merger advisory firm , Lodestar Group , acquired a 4.9 % stake in Kinder-Care 's parent company , now called Enstar Group Inc. .
+(x3 / become-01
+	:ARG1 (x2 / person
+		:name (n / name
+			:op1 "Gearreald")
+		:null_edge (x1 / null_tag))
+	:ARG2 (x4 / involve-01
+		:ARG1 x2
+		:ARG2 (x6 / organization
+			:name (n1 / name
+				:op1 "Kinder-Care"))
+		:time (x8 / date-entity
+			:year 1988))
+	:ARG2 (x23 / acquire-01
+		:ARG0 x2
+		:ARG0 (x11 / person
+			:name (n2 / name
+				:op1 "Gearreald"))
+		:ARG0 (x15 / and
+			:op1 (x14 / fund
+				:poss (x10 / person
+					:name (n4 / name
+						:op1 "Tull"))
+				:mod (x13 / banking
+					:mod (x12 / person
+						:ARG0-of (m / merchandise-01)))
+				:name (x20 / name
+					:op1 "Lodestar"
+					:op2 "Group"))
+			:op2 (x18 / firm
+				:mod (x16 / merge-01)
+				:mod (x17 / advise-01)))
+		:ARG0 (x32 / company
+			:null_edge (x25 / percentage-entity)
+			:mod (x29 / organization
+				:name (n3 / name
+					:op1 "Kinder-Care"))
+			:mod (x31 / parent)
+			:name (x36 / name
+				:op1 "Enstar"
+				:op2 "Group"
+				:op3 "Inc."
+				:mod (x34 / now)))))
+
+# ::id 6
+# ::snt Eventually , Lodestar ended up with 63 % of Kinder-Care following a restructuring .
+(x4 / end-01
+	:time (x1 / eventual)
+	:ARG0 (x3 / lodestar)
+	:ARG1-of (x11 / follow-01
+		:ARG2 (x13 / restructure-01))
+	:ARG1 (xap0 / percentage-entity
+		:value 63
+		:poss (x10 / organization
+			:name (n / name
+				:op1 "Kinder-Care"))))
+
+# ::id 7
+# ::snt Mr. Gearreald became interim chief executive officer of Kinder-Care last February , while Tull Gearreald Lodestar partner , Ken Miller , became chairman .
+(x3 / become-01
+	:ARG1 (x2 / person
+		:name (n / name
+			:op1 "Gearreald")
+		:null_edge (x1 / null_tag))
+	:mod (x4 / interim)
+	:ARG2 (x7 / have-org-role-91
+		:ARG2 (o / officer)
+		:ARG0-of (x5 / chief)
+		:ARG0-of (x6 / executive)
+		:ARG1 (x9 / organization
+			:name (n1 / name
+				:op1 "Kinder-Care"))
+		:ARG1 (x17 / partner-01
+			:mod (x16 / organization
+				:name (n2 / name
+					:op1 "Lodestar")
+				:mod (x15 / organization
+					:name (n3 / name
+						:op1 "Gearreald")
+					:mod (x14 / organization
+						:name (n4 / name
+							:op1 "Tull"))))
+			:name (x19 / name
+				:op1 "Ken"
+				:op2 "Miller")
+			:ARG1-of (x22 / become-01
+				:ARG2 (x23 / have-org-role-91
+					:ARG2 (c / chairman)))))
+	:time (x11 / date-entity
+		:mod (xap0 / year
+			:mod (x10 / last))))
+
+# ::id 8
+# ::snt They had a falling-out four months later when Mr. Miller decided Mr. Gearreald should be replaced as chief executive , and Mr. Gearreald left Lodestar .
+(x21 / and
+	:op1 (x1 / they)
+	:op1 (x4 / falling-out
+		:time (x7 / late
+			:op1 (x5 / date-entity))
+		:time (x11 / decide-01
+			:ARG0 (x10 / person
+				:name (n1 / name
+					:op1 "Miller")
+				:null_edge (x9 / null_tag))
+			:ARG1 (x14 / recommend-01
+				:ARG0 x10
+				:ARG1 (x16 / replace-01
+					:ARG2 (x19 / executive
+						:mod (x18 / chief))))))
+	:op2 (x24 / leave-01
+		:ARG0 (x23 / person
+			:name (n / name
+				:op1 "Gearreald")
+			:null_edge (x22 / null_tag))
+		:ARG1 (x25 / lodestar)))
+
+# ::id 9
+# ::snt Mr. Miller said the board hired Mr. Samper in June because Ken Miller was a professional manager .
+(x3 / say-01
+	:ARG0 (x2 / person
+		:name (n / name
+			:op1 "Miller")
+		:null_edge (x1 / null_tag))
+	:ARG1 (x6 / hire-01
+		:ARG0 (x5 / board)
+		:ARG1 (x8 / person
+			:name (n1 / name
+				:op1 "Samper")
+			:null_edge (x7 / null_tag))
+		:time (x10 / date-entity)
+		:ARG1-of (x11 / cause-01
+			:ARG0 (x17 / manage-01
+				:domain (x12 / newspaper
+					:name (n2 / name
+						:op1 "Ken"
+						:op2 "Miller"))
+				:mod (x16 / professional)))))
+
+# ::id 10
+# ::snt `` At the time , the time looked like things were on an even keel .
+(x8 / look-02
+	:time (x7 / time)
+	:ARG1 (x10 / thing
+		:ARG1-of (x15 / keel
+			:mod (x14 / even))))
+
+# ::id 11
+# ::snt The balance sheet problems were challenging but not as daunting as they subsequently appeared . ''
+(x7 / contrast-01
+	:ARG1 (x6 / challenging
+		:ARG1 (x4 / problem
+			:mod (x3 / sheet
+				:mod (x2 / balance-01))))
+	:ARG2 (x10 / daunting)
+	:ARG2 (x14 / appear-02
+		:time (x13 / subsequent)))
+
+# ::id 12
+# ::snt Mr. Samper , according to Napoleon H. Overton , an analyst at Morgan Keegan & Co. , planned to sell and lease back some of Kinder-Care 's day-care centers to generate about $ 100 million and reduce the company 's debt .
+(x18 / plan-01
+	:ARG0 (x2 / person
+		:name (n / name
+			:op1 "Samper")
+		:null_edge (x1 / null_tag))
+	:null_edge (x7 / name
+		:op1 "H."
+		:op2 "Overton"
+		:ARG0-of (x11 / analyze-01
+			:location (x13 / government-organization
+				:name (n1 / name
+					:op1 "Morgan"
+					:op2 "Keegan"
+					:op3 "&"))))
+	:ARG1 (x21 / and
+		:op1 (x20 / sell-01
+			:ARG1 (x29 / center
+				:quant (x24 / some)
+				:poss (x26 / organization
+					:name (n2 / name
+						:op1 "Kinder-Care"))
+				:mod (x28 / day-care))
+			:location (x36 / and
+				:op1 (x31 / generate-01
+					:ARG2 (x32 / about))
+				:op2 (x37 / reduce-01
+					:ARG1 (x41 / debt
+						:poss (x39 / company)))))))
+
+# ::id 13
+# ::snt But bank credit for lease-back deals soon dried up , and the company had to abandon the effort late last year .
+(x1 / contrast-01
+	:ARG2 (x11 / and
+		:op1 (x8 / dry-01
+			:ARG1 (x3 / credit-02
+				:mod (x2 / bank)
+				:ARG2 (x6 / deal-01
+					:mod (x5 / lease-back)))
+			:time (x7 / soon))
+		:op2 (x14 / have-03
+			:ARG0 x3
+			:ARG0 (x13 / company)
+			:ARG1 (x16 / abandon-01
+				:ARG1 (x18 / effort)
+				:time (x19 / late
+					:op1 (x21 / year
+						:mod (x20 / last)))))))
+
+# ::id 14
+# ::snt Mr. Miller said Kinder-Care 's board decided to rehire Mr. Gearreald because Tull Gearreald knows the company 's situation , is `` financially sophisticated '' and is popular with employees .
+(x3 / say-01
+	:ARG0 (x2 / person
+		:name (n / name
+			:op1 "Miller")
+		:null_edge (x1 / null_tag))
+	:ARG1 (x7 / decide-01
+		:ARG0 (x4 / government-organization
+			:name (n1 / name
+				:op1 "Kinder-Care"
+				:op2 "'s"
+				:op3 "board"))
+		:ARG1 (x9 / rehire
+			:ARG0 x4
+			:ARG1 (x11 / person
+				:name (n2 / name
+					:op1 "Gearreald")
+				:null_edge (x10 / null_tag)))
+		:ARG1-of (x12 / cause-01
+			:ARG0 (x15 / know-01
+				:ARG0 (x13 / newspaper
+					:name (n3 / name
+						:op1 "Tull"
+						:op2 "Gearreald"))
+				:ARG1 (x19 / situation
+					:poss (x17 / company))
+				:ARG1 (x26 / and
+					:op2 (x24 / sophisticated
+						:mod (x23 / finance))
+					:op3 (x28 / popular-41
+						:ARG2 (x30 / person
+							:ARG1-of (e / employ-01))))))))
+
+# ::id 15
+# ::snt Mr. Gerreauld , 45 years old , said Gerreauld returned because , `` Mr. Gerreauld , 45 years old have a strong obligation to the shareholders as well as the creditors and employees . ''
+(x8 / say-01
+	:ARG1 (x10 / return-01
+		:ARG1 (x9 / person
+			:name (n / name
+				:op1 "Gerreauld"))
+		:ARG1-of (x11 / cause-01
+			:ARG0 (xap0 / age-01
+				:null_edge (x1 / null_tag)
+				:ARG2 (x5 / temporal-quantity
+					:unit (y / year)
+					:quant 45))
+			:ARG0 (xap1 / age-01
+				:null_edge (x14 / null_tag)
+				:ARG2 (x18 / temporal-quantity
+					:unit (y1 / year)
+					:quant 45))
+			:ARG0 (xap2 / obligate-01
+				:ARG1 (x23 / obligate-01
+					:mod (x22 / strong)
+					:ARG2 (x32 / and
+						:op2 (x26 / shareholder)
+						:op2 (x31 / creditor)
+						:op2 (x33 / person
+							:ARG1-of (e / employ-01))))))))
+
+# ::id 16
+# ::snt Most recently , Mr. Gerreauld has been head of investment banking for UBS Securities Inc. in New York .
+(x8 / head-01
+	:time (x2 / recent
+		:degree (x1 / most))
+	:ARG0 (x5 / person
+		:name (n / name
+			:op1 "Gerreauld")
+		:null_edge (x4 / null_tag))
+	:ARG1 (x11 / bank-01
+		:mod (x10 / invest-01)
+		:beneficiary (x13 / government-organization
+			:name (n1 / name
+				:op1 "UBS"
+				:op2 "Securities"
+				:op3 "Inc.")
+			:location (x18 / country
+				:name (n2 / name
+					:op1 "York")
+				:null_edge (x17 / null_tag)))))
+
+# ::id 17
+# ::snt Mr. Gerreauld , 45 years old remains an investor in Lodestar , which has more than half of its fund invested in Kinder-Care .
+(x7 / remain-01
+	:ARG3 (x9 / invest-01
+		:ARG0 (x2 / person
+			:name (n / name
+				:op1 "Gerreauld")
+			:null_edge (x1 / null_tag))
+		:ARG2 (x11 / country
+			:name (n1 / name
+				:op1 "Lodestar")
+			:ARG0-of (x14 / have-03
+				:ARG1 (x20 / fund
+					:quant (x15 / more-than)
+					:ARG2-of (x21 / invest-01
+						:ARG2 (x23 / organization
+							:name (n2 / name
+								:op1 "Kinder-Care")))))))
+	:ARG1 (xap0 / age-01
+		:ARG2 (x5 / temporal-quantity
+			:unit (y / year)
+			:quant 45)))
+
+# ::id 18
+# ::snt Kinder-Care 's stock closed at 71.875 cents , up 15.625 cents , in national over-the-counter trading yesterday .
+(x4 / close-01
+	:ARG1 (x3 / stock
+		:poss (x1 / organization
+			:name (n / name
+				:op1 "Kinder-Care")))
+	:manner (x9 / up
+		:op1 (x11 / monetary-quantity
+			:unit (c / cent)))
+	:medium (x16 / trade-01
+		:mod (x14 / nation)
+		:mod (x15 / over-the-counter)
+		:time (x17 / yesterday)))
+
+# ::id 19
+# ::snt Mr. Gerreauld said a restructuring study by Coopers & Lybrand is under way , and a plan should be ready for creditors within 60 days .
+(x3 / say-01
+	:ARG0 (x2 / person
+		:name (n / name
+			:op1 "Gerreauld")
+		:null_edge (x1 / null_tag))
+	:ARG1 (x6 / study
+		:mod (x5 / restructure-01)
+		:ARG0 (x8 / government-organization
+			:name (n1 / name
+				:op1 "Coopers"
+				:op2 "&"
+				:op3 "Lybrand"))
+		:location (x12 / under
+			:op1 (x13 / way)))
+	:ARG1 (x18 / recommend-01
+		:ARG1 (x15 / and)
+		:ARG1 (x20 / ready-01
+			:ARG1 (x17 / plan-01)
+			:ARG2 (x22 / creditor)
+			:time (x23 / within
+				:op1 (x25 / temporal-quantity
+					:unit (d / day)
+					:quant 60)))))
+
+# ::id 20
+# ::snt Mr. Gerreauld , 45 years old said the company will conserve cash by opening fewer centers , but will keep investing in Kinder-Care 's parent company 1,258 existing centers .
+(x7 / say-01
+	:ARG1 (x11 / conserve
+		:ARG0 (x9 / company)
+		:ARG1 (x12 / cash)
+		:ARG0 (x14 / open-01
+			:ARG1 (x16 / center
+				:quant (x15 / few)
+				:purpose (x20 / keep-04
+					:ARG0 x9
+					:ARG1 (x21 / invest-01
+						:ARG2 (x29 / center
+							:poss (x23 / organization
+								:name (n / name
+									:op1 "Kinder-Care"))
+							:location (x25 / parent)
+							:quant (x27 / 1,258)
+							:ARG1-of (x28 / exist-01)))))))
+	:ARG1 (xap0 / age-01
+		:null_edge (x1 / null_tag)
+		:ARG2 (x5 / temporal-quantity
+			:unit (y / year)
+			:quant 45)))
+
