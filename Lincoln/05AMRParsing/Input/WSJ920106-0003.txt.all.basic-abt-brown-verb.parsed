@@ -1,0 +1,250 @@
+# ::id 1
+# ::snt The Internal Revenue Service made The Internal Revenue Service easier for day-care providers to claim a tax deduction for the business use of day-care providers homes .
+(x5 / make-02
+	:ARG0 (x2 / government-organization
+		:name (n / name
+			:op1 "Internal"
+			:op2 "Revenue"
+			:op3 "Service"))
+	:ARG1 (x15 / claim-01
+		:ARG0 x2
+		:ARG0 (x7 / government-organization
+			:name (n1 / name
+				:op1 "Internal"
+				:op2 "Revenue"
+				:op3 "Service"))
+		:ARG1 (x10 / easy)
+		:ARG1 (x18 / deduction
+			:source (x17 / tax-01)
+			:ARG1 (x22 / use-01
+				:ARG1 (x21 / business)
+				:ARG1 (x26 / home
+					:mod (x24 / day-care)
+					:poss (xap1 / company
+						:ARG0-of (x25 / provide-01)))))
+		:ARG1 (xap0 / company
+			:ARG0-of (x13 / provide-01
+				:ARG1 (x12 / day-care)))))
+
+# ::id 2
+# ::snt The ruling is designed to clarify a position the IRS took last year that many providers feared would force many providers feared to pay higher taxes and lead to an increase in child-care charges .
+(x4 / design-01
+	:ARG1 (x2 / rule-03)
+	:ARG3 (x6 / clarify-01
+		:ARG0 x2
+		:ARG1 (x8 / position
+			:ARG1 (x10 / organization
+				:name (n / name
+					:op1 "IRS"))
+			:time (x13 / year
+				:mod (x12 / last)))
+		:ARG1 (x19 / force-01
+			:ARG0-of (x21 / provide-01
+				:quant (x20 / many)
+				:ARG1-of (x22 / fear-01
+					:ARG1 (x27 / and
+						:op1 (x24 / pay-01
+							:ARG1 (x26 / tax-01
+								:mod (x25 / high)))
+						:op2 (x28 / lead-03
+							:ARG2 (x31 / increase-01
+								:ARG0 (x34 / charge-05
+									:ARG2 (x33 / child-care))))
+						:op1 (xap0 / company
+							:ARG0-of (x16 / provide-01
+								:quant (x15 / many)
+								:ARG1-of (x17 / fear-01)))))))))
+
+# ::id 3
+# ::snt In essence , the ruling will allow licensed providers to deduct costs associated with any area of their home that is used regularly for day care -- even if the area is not used for day care every hour of the business day .
+(x7 / allow-01
+	:manner (x2 / essence)
+	:ARG0 (x5 / rule-03)
+	:ARG1 (x11 / deduct
+		:ARG1 (x12 / cost-01
+			:ARG1-of (x13 / associate-01
+				:ARG2 (x16 / area
+					:mod (x15 / any)
+					:mod (x19 / home)
+					:location-of (x22 / use-01
+						:manner (x23 / regular)
+						:ARG2 (x26 / care)
+						:ARG1-of (x34 / use-01
+							:mod (x28 / even)
+							:ARG1 (x31 / area)
+							:ARG2 (x37 / care-01
+								:ARG2 (x39 / temporal-quantity
+									:unit (h / hour))
+								:ARG1 (x43 / temporal-quantity
+									:unit (d / day)
+									:mod (x42 / business))))))))
+		:ARG1 (xap0 / company
+			:ARG0-of (x9 / provide-01
+				:ARG1-of (x8 / licensed)))))
+
+# ::id 4
+# ::snt `` A day-care provider is not required to keep records of the specific hours of usage of such a room during business hours , '' the ruling said .
+(x28 / say-01
+	:ARG1 (x7 / require-01
+		:ARG1 (x4 / provide-01
+			:ARG1 (x3 / day-care))
+		:ARG1 (x9 / keep-04
+			:ARG1 (x10 / record
+				:topic (x16 / usage
+					:duration (x14 / temporal-quantity
+						:unit (h1 / hour)
+						:mod (x13 / specific))
+					:ARG1 (x20 / room
+						:mod (x18 / such))))
+			:time (x23 / temporal-quantity
+				:unit (h / hour)
+				:mod (x22 / business))))
+	:ARG0 (x27 / rule-03))
+
+# ::id 5
+# ::snt `` Also , the occasional nonuse of such a room for a business day will not disqualify the room from being considered regularly used . ''
+(x17 / disqualify
+	:mod (x2 / also)
+	:ARG0 (x6 / nonuse
+		:frequency (x5 / occasional)
+		:ARG1 (x10 / room
+			:mod (x8 / such)
+			:duration (x14 / temporal-quantity
+				:unit (d / day)
+				:mod (x13 / business))))
+	:ARG1 (x19 / room)
+	:ARG2 (x22 / consider-01
+		:frequency (x23 / regular)
+		:ARG1-of (x24 / use-01)))
+
+# ::id 6
+# ::snt The new statement , Revenue Ruling 923 , is `` a complete reversal '' of the position the IRS took last April in an audit dispute with one care provider in St. Paul , Minn. , said Tom Copeland of a St. Paul group , Resources for Child Caring .
+(x3 / state-01
+	:mod (x2 / new)
+	:ARG1 (x13 / reverse-01
+		:ARG1 (x6 / rule-03
+			:ARG1 (x5 / revenue)
+			:quant (x7 / 923))
+		:mod (x12 / complete)
+		:ARG1 (x17 / position
+			:ARG1-of (x20 / take-01
+				:ARG0 (x19 / organization
+					:name (n / name
+						:op1 "IRS"))
+				:time (x22 / date-entity
+					:mod (x21 / last))
+				:time (x26 / dispute-01
+					:ARG1 (x25 / audit-01)
+					:ARG2 (x30 / provide-01
+						:quant 1
+						:ARG1 (x29 / care-01))
+					:null_edge (x35 / country
+						:name (n1 / name
+							:op1 "Minn.")
+						:null_edge (x32 / country
+							:name (n2 / name
+								:op1 "St.")
+							:null_edge "Paul"))))))
+	:name (x38 / name
+		:op1 "Tom"
+		:op2 "Copeland")
+	:ARG0 (x44 / group
+		:mod (x42 / st.)
+		:null_edge (x43 / null_tag)
+		:null_edge (x46 / null_tag)))
+
+# ::id 7
+# ::snt `` The language is exactly what we want , '' Tom Copeland of a St. Paul said .
+(x17 / say-01
+	:ARG1 (x3 / language
+		:ARG1-of (x8 / want-01
+			:null_edge (x5 / exact)
+			:ARG0 (x7 / we)))
+	:ARG0 (x11 / newspaper
+		:name (n / name
+			:op1 "Tom"
+			:op2 "Copeland")
+		:ARG1-of (x13 / include-91
+			:null_edge (x16 / null_tag
+				:ARG0-of (x15 / st.)))))
+
+# ::id 8
+# ::snt `` This is the way providers have been doing it for a number of years . ''
+(xap0 / company
+	:domain (x2 / this)
+	:ARG0-of (x6 / provide-01)
+	:op1 (x15 / temporal-quantity
+		:unit (y / year)))
+
+# ::id 9
+# ::snt In the audit dispute , which led to widespread protests and to bills proposed in Congress to foil the IRS , the IRS sought to have the care provider account for each hour of use of each room in her home .
+(x24 / seek-01
+	:time (x4 / dispute-01
+		:ARG2 (x3 / audit-01)
+		:ARG1-of (x7 / lead-02
+			:ARG0 (x13 / bill-01
+				:mod (x9 / widespread)
+				:ARG1-of (x14 / propose-01
+					:location (x16 / government-organization
+						:name (n2 / name
+							:op1 "Congress"))))
+			:purpose (x18 / foil-01
+				:ARG1 (x20 / government-organization
+					:name (n1 / name
+						:op1 "IRS")))))
+	:ARG0 (x23 / organization
+		:name (n / name
+			:op1 "IRS"))
+	:ARG1 (x26 / have-03
+		:ARG1 (x30 / account
+			:mod (x29 / provide-01
+				:mod (x28 / care-01))
+			:mod (x35 / use-01
+				:ARG1 (x38 / room
+					:mod (x37 / each)
+					:location (x41 / home))))))
+
+# ::id 10
+# ::snt `` Instead of providers having to say , for example , that a bedroom was used three hours a day and the kitchen two hours , licensed providers can count the rooms as being used for the total day as long as licensed providers are regularly used and available for day care , '' IRS spokeswoman Gail Ellis said .
+(x59 / say-01
+	:ARG1 (x29 / possible
+		:domain (x30 / count-04
+			:ARG1 (x5 / have-03
+				:ARG1 (xap0 / company
+					:ARG0-of (x4 / provide-01)
+					:ARG2 (x7 / say-01
+						:ARG1 (x16 / use-01
+							:ARG1 (x14 / bedroom)
+							:ARG1 (x21 / and
+								:op1 (x18 / temporal-quantity
+									:unit (h / hour)
+									:quant 3)
+								:op2 (x25 / temporal-quantity
+									:unit (h1 / hour)
+									:duration-of (x23 / kitchen)
+									:quant 2))))))
+			:ARG1 (x32 / room)
+			:ARG0 (xap1 / company
+				:ARG0-of (x28 / provide-01
+					:ARG1-of (x27 / license-01)
+					:ARG1-of (x35 / use-01
+						:duration (x39 / day)
+						:ARG2 (x48 / and
+							:op2 (x49 / available
+								:topic (x52 / care))
+							:op1 (xap3 / as-long-as
+								:domain (x47 / use-01
+									:frequency (x46 / regular)
+									:ARG0 (xap2 / company
+										:ARG0-of (x44 / provide-01
+											:ARG1-of (x43 / licensed)))))))))))
+	:ARG0 (x58 / person
+		:name (n / name
+			:op1 "Ellis")
+		:null_edge (x56 / have-org-role-91
+			:ARG2 (s / spokeswoman)
+			:ARG1 (x55 / organization
+				:name (n1 / name
+					:op1 "IRS")))
+		:null_edge (x57 / null_tag)))
+
