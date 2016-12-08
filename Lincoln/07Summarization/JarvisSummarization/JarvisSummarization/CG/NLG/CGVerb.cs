@@ -336,11 +336,54 @@ namespace JarvisSummarization.CG.NLG
             }
         }
         #endregion 
-
-
-        public string Summary()
+        
+        public string SummaryLemme()
         {
-            return null;
+            StringBuilder sb = new StringBuilder();
+
+            foreach (var agent in this.Agents)
+            {
+                foreach (var item in agent)
+                {
+                    sb.Append(string.Format("{0} ", item.Node.nosuffix));
+                }                
+            }
+            
+            //verb attributes are not valid yet
+            //foreach (var item in this.VerbAttributes)
+            //{
+            //    sb.Append(string.Format(" {0} ", item.Node.nosuffix));
+            //}
+            sb.Append(string.Format(" {0} ", this.Verb.nosuffix));            
+            foreach (var patient in this.Patients)
+            {
+                foreach (var item in patient)
+                {
+                    sb.Append(string.Format(" {0} ", item.Node.nosuffix));
+                }
+            }            
+            foreach (var theme in this.Themes)
+            {
+                foreach (var item in theme)
+                {
+                    sb.Append(string.Format(" {0} ", item.Node.nosuffix));
+                }
+            }            
+            foreach (var gol in this.Goal)
+            {
+                foreach (var item in gol)
+                {
+                    sb.Append(string.Format(" {0} ", item.Node.nosuffix));
+                }
+            }            
+            foreach (var attribute in this.Attributes)
+            {
+                foreach (var item in attribute)
+                {
+                    sb.Append(string.Format(" {0} ", item.Node.nosuffix));
+                }
+            }
+            return sb.ToString();
         }
 
         public string Log(bool debug)

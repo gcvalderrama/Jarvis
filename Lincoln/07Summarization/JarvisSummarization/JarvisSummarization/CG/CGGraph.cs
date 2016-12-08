@@ -654,8 +654,40 @@ namespace JarvisSummarization.CG
 
 
         }
-        public void GenerateInformativeAspectsv2()
+        public string Summary()
         {
+            StringBuilder sb = new StringBuilder();
+
+            var result = new List<CGVerb>();            
+
+            var vers = this.Nodes.Where(c => c.semanticroles.Contains("verb")).OrderByDescending(c => c.pagerank).ToList();
+
+            foreach (var verb in vers)
+            {
+                var cgverb = new CGVerb(verb);
+                cgverb.GenerateVerbs(this);
+                cgverb.GenerateAgents(this);
+                cgverb.GeneratePatients(this);
+                cgverb.GenerateThemes(this);
+                cgverb.GenerateGoal(this);
+                cgverb.GenerateAttribute(this);
+                result.Add(cgverb);
+            }
+            int words = 0;
+            foreach (var item in result.OrderByDescending(c => c.Rank))
+            {
+                words += item.Words;
+                sb.AppendLine(item.SummaryLemme());                
+                if (words > 100)
+                {
+                    break;
+                }
+            }
+            return sb.ToString();
+        }
+        public string GenerateInformativeAspectsv2()
+        {
+            StringBuilder sb = new StringBuilder(); 
             var result = new List<CGVerb>();
 
             var noverbs = new List<string>() {  };
@@ -677,12 +709,13 @@ namespace JarvisSummarization.CG
             foreach (var item in result.OrderByDescending(c=>c.Rank))
             {
                 words += item.Words;
-                Console.WriteLine(item.Log(false));
+                sb.AppendLine(item.Log(false));                
                 if ( words > 100)
                 {
                     break;
                 }
             }
+            return sb.ToString();
         }
                 
         public void ReadAMR(AMRDocument Document)

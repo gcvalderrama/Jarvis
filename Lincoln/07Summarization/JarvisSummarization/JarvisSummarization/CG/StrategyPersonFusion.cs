@@ -23,7 +23,8 @@ namespace JarvisSummarization.CG
                 node.log += "person fusion:";
                 var out_rels = this.graph.Relations.Where(c => c.Head == node.id);
                 if (out_rels.Count() > 0)   
-                {                    
+                {
+                    node.nosuffix = ""; 
                     foreach (var output in out_rels)
                     {                 
                         var tail = this.graph.Nodes.Where(c => c.id == output.Tail).Single();

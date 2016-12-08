@@ -22,17 +22,18 @@ namespace JarvisSummarization.CG
                 var head = this.graph.Nodes.Where(c => c.id == namerelation.Head).Single();
                 var tail = this.graph.Nodes.Where(c => c.id == namerelation.Tail).Single();
                 var oprels = this.graph.Relations.Where(c => c.Head == tail.id && c.label.StartsWith("op")).OrderBy(c=>c.Tail).ToList();
-                
-                head.Entity = head.nosuffix;
+                head.log += "entity fusion";
+                head.Entity = head.nosuffix;                
                 head.text += " named ";
+                head.nosuffix = "";
                 foreach (var rel in oprels)
                 {
                     var tailop = this.graph.Nodes.Where(c => c.id == rel.Tail).Single();                    
-                    head.text += " " + tailop.text;              
+                    head.text += " " + tailop.text;
+                    head.nosuffix += " " + tailop.nosuffix;
                     deletes_node.Add(tailop);                    
                     deletes.Add(rel);
-                }
-                head.nosuffix = head.text;
+                }                
                 deletes_node.Add(tail);
                 deletes.Add(namerelation);
             }
