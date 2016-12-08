@@ -67,8 +67,20 @@ namespace JarvisSummarization.CG
 
             var propbankelements = XElement.Parse(str);
 
+
+            //00 scenarios
+            var index = int.Parse(node.text.Replace(node.nosuffix + "-", "")) - 1;
+            if (index < 0)
+            {
+                this.graph.log += "double zero " + node.text;
+                foreach (var item in out_relations)
+                {
+                    ManageNotFoundArg(item);
+                }
+                return;
+            }
             var propbankelement = (from c in propbankelements.Elements("predicate").Elements("roleset")
-                                   select c).ElementAt(int.Parse(node.text.Replace(node.nosuffix + "-", "")) - 1);
+                                   select c).ElementAt(index);
 
             foreach (var relation in out_relations)
             {
@@ -101,6 +113,10 @@ namespace JarvisSummarization.CG
                             if (relation.f == "ext") relation.conceptualrole = "extend";
                             if (relation.f == "prd") relation.conceptualrole = "location";
                             if (relation.f == "mnr") relation.conceptualrole = "manner";
+                            if (relation.f == "adv") relation.conceptualrole = "adverb";
+                            if (relation.f == "cau") relation.conceptualrole = "cause";
+                            if (relation.f == "vsp") relation.conceptualrole = "vsp";
+                            if (relation.f == "prp") relation.conceptualrole = "purpose";
                         }
                     }
                     else

@@ -13,7 +13,7 @@ namespace JarvisSummarization.CG
             List<CGNode> deletes = new List<CGNode>();
             foreach (var node in graph.Nodes)
             {
-                if (node.text == "null_tag" || node.text == "multi-sentence")
+                if (node.text == "null_tag")
                 {
                     deletes.Add(node);
                     foreach (var inR in graph.Relations.Where(c=>c.Head == node.id).ToList())

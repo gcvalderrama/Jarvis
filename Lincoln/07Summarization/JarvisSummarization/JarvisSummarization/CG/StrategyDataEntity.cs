@@ -38,7 +38,7 @@ namespace JarvisSummarization.CG
                 }
                 else
                 {
-                    throw new ApplicationException();
+                    this.graph.log += "data entity without relations " + node.text;                    
                 }
             }
             foreach (var item in deletes)

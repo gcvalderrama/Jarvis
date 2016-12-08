@@ -50,8 +50,14 @@ namespace JarvisSummarization.CG
                 {
                     var str = System.IO.File.ReadAllText(currentPath);
                     var propbankelements = XElement.Parse(str);
+                    //00 scenarios
+                    var index = int.Parse(node.text.Replace(node.nosuffix + "-", "")) - 1;
+                    if (index < 0)
+                    {
+                        continue;
+                    }
                     var propbankelement = (from c in propbankelements.Elements("predicate").Elements("roleset")
-                                           select c).ElementAt(int.Parse(node.text.Replace(node.nosuffix + "-", "")) - 1);
+                                           select c).ElementAt(index);
 
                     var roleelement = (from c in propbankelement.Elements("roles").Elements("role")
                                        where c.Attribute("n").Value == "0"

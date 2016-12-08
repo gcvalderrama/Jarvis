@@ -19,8 +19,8 @@ namespace JarvisSummarization.CG.NLG
         }
         public override string ToString()
         {            
-            return string.Format(" f:{0} s:{1} id:{2} r:{3} / l:{4} / {5} / {6}", this.Node.FusionNodes.Count() > 0, 
-                this.Node.sentenceid, this.Node.id, this.Relation.conceptualrole, this.Level, this.Node.text, this.Node.nosuffix);
+            return string.Format(" f:{0} s:{1} id:{2} rel:{3}/ pr:{4} / le:{5} / {6} / {7}", this.Node.FusionNodes.Count() > 0, 
+                this.Node.sentenceid, this.Node.id, this.Relation.conceptualrole, this.Node.pagerank, this.Level, this.Node.text, this.Node.nosuffix);
         }
     }
     public class CGVerb
@@ -142,7 +142,8 @@ namespace JarvisSummarization.CG.NLG
                     rel.conceptualrole == "example" ||
                     rel.conceptualrole == "poss")
                 {
-                    if (list.Where(c => c.Node.id == item.id).Count() == 0)
+                    if (list.Where(c => c.Node.id == item.id).Count() == 0 && 
+                        list.Where(c=>c.Node.text == item.text).Count() == 0  )
                     {
                         var wrapper = new CGVerbTerm(item, rel, level + 1);
                         list.Add(wrapper);
@@ -185,8 +186,9 @@ namespace JarvisSummarization.CG.NLG
                     rel.conceptualrole == "direction" ||
                     rel.conceptualrole == "location")
                 {
-                    
-                    if (list.Where(c=>c.Node.id == item.id).Count() == 0 )
+
+                    if (list.Where(c => c.Node.id == item.id).Count() == 0 &&
+                        list.Where(c => c.Node.text == item.text).Count() == 0)
                     {
                         var wrapper = new CGVerbTerm(item, rel, level + 1);
                         list.Add(wrapper);
@@ -230,8 +232,9 @@ namespace JarvisSummarization.CG.NLG
                     rel.conceptualrole == "patient" ||
                     rel.conceptualrole == "purpose")
                 {
-                    
-                    if (list.Where(c => c.Node.id == item.id).Count() == 0)
+
+                    if (list.Where(c => c.Node.id == item.id).Count() == 0 &&
+                        list.Where(c => c.Node.text == item.text).Count() == 0)
                     {
                         var wrapper = new CGVerbTerm(item, rel, level + 1);
                         list.Add(wrapper);
@@ -274,7 +277,8 @@ namespace JarvisSummarization.CG.NLG
                     rel.conceptualrole == "direction" ||
                     rel.conceptualrole == "location")
                 {
-                    if (list.Where(c => c.Node.id == item.id).Count() == 0)
+                    if (list.Where(c => c.Node.id == item.id).Count() == 0 &&
+                        list.Where(c => c.Node.text == item.text).Count() == 0)
                     {
                         var wrapper = new CGVerbTerm(item, rel, level + 1);
                         list.Add(wrapper);
@@ -317,7 +321,8 @@ namespace JarvisSummarization.CG.NLG
                     rel.conceptualrole == "direction" ||
                     rel.conceptualrole == "location")
                 {
-                    if (list.Where(c => c.Node.id == item.id).Count() == 0)
+                    if (list.Where(c => c.Node.id == item.id).Count() == 0 &&
+                        list.Where(c => c.Node.text == item.text).Count() == 0)
                     {
                         var wrapper = new CGVerbTerm(item, rel, level + 1);
                         list.Add(wrapper);

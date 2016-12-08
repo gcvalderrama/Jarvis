@@ -5,7 +5,7 @@ import os
 import amr_graph
 from amr_graph import *
 from re_utils import *
-
+from os import walk
 
 def get_amr_line(input_f):
     """Read the amr file. AMRs are separated by a blank line."""
@@ -54,7 +54,7 @@ def load_amr_graphs(amr_file):
     return graphs
 
 
-def SaveGraphs(graphs):
+def SaveGraphs(outputfile, graphs):
     tmpstr = '<amr>' + '\n'
     gindex = 1
     gnodeid = 0
@@ -82,12 +82,20 @@ def SaveGraphs(graphs):
         gindex += 1
 
     tmpstr += '</amr>'
-    f = open('D:/Tesis2016/Jarvis/Lincoln/05AMRParsing/Output/amr-graph.xml', 'w')
+    f = open(outputfile , 'w')
     f.write(tmpstr)
     f.close()
 
-
 if __name__ == '__main__':
-#    graphs = load_amr_graphs('D:/Tesis2016/Jarvis/Lincoln/05AMRParsing/Input/lincon.txt.all.basic-abt-brown-verb.parsed')
-    graphs = load_amr_graphs('D:/Tesis2016/Jarvis/Lincoln/05AMRParsing/Input/WSJ9004020112.txt.noedu.all.basic-abt-brown-verb.parsed')
-    SaveGraphs(graphs)
+    start = "D:/Tesis2016/Jarvis/Lincoln/05AMRParsing/Input/"
+    end = "D:/Tesis2016/Jarvis/Lincoln/05AMRParsing/Output/"
+    f = []
+    for (dirpath, dirnames, filenames) in walk(start):
+        f.extend(filenames)
+        break
+
+    for file in f:
+        graphs = load_amr_graphs(start + file)
+        SaveGraphs(end + file, graphs)
+        print(file)
+
