@@ -150,7 +150,7 @@ def rouge_files_test():
 
 # split_summaries()
 # lemmatizing_files()
-write_excel = True
+write_excel = False
 rouge_score_files('./generated_summaries/rst/*.txt', 'Manual con RST')
 rouge_score_files('./generated_summaries/conceptual_graph/*.txt', 'Manual con Grafo')
 rouge_score_files('./generated_summaries/nonrst/*.txt', 'Manual con NON-RST')
