@@ -73,10 +73,32 @@ namespace JarvisSummarization.RST
         {
             this.Tokens = new List<Common.Token>();
         }
-        public void EvaluateODonell()
+        public void EvaluateODonell(bool dummy)
         {
-            this.root.weight = 1;
-            EvaluateODonell(this.root);
+            if (dummy)
+            {
+                this.root.weight = 1;
+                this.DummyODonell(this.root, 1); 
+            }
+            else
+            {
+                this.root.weight = 1;
+                EvaluateODonell(this.root);
+            }
+            
+        }
+        private void DummyODonell(RSTNode current, double value)
+        {
+            if (current.edu != null)
+            {
+                current.edu.weight = value;
+                return;
+            }            
+            foreach (var item in current.children)
+            {
+                item.weight = value;
+                DummyODonell(item, value);                    
+            }
         }
         private void EvaluateODonell(RSTNode Current)
         {
@@ -110,6 +132,31 @@ namespace JarvisSummarization.RST
             {
                 TransformList(item, state);
             }
+        }
+        public string SummaryLemma()
+        {
+            List<RSTNode> state = new List<RSTNode>();
+            TransformList(this.root, state);
+            var query = (from c in state
+                         where c.edu != null
+                         select c).OrderByDescending(d => d.weight);
+
+            var sb = new StringBuilder();
+            int words = 0;
+            foreach (var item in query)
+            {
+                foreach (var token in item.edu.tokens)
+                {
+                    words += 1;
+                    sb.Append(string.Format("{0} ", token.lemma));
+                }
+                if (words > 100)
+                {
+                    break;
+                }
+                sb.AppendLine();
+            }
+            return sb.ToString();
         }
         public string Summarize()
         {

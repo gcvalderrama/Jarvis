@@ -18,6 +18,7 @@ namespace JarvisSummarization.CG
         public int NumberOfFusions { get; set; }
         public int NumberOfWords { get; set; }
 
+        public string log { get; set; }
 
         public int numnodes { get {
                 return this.Nodes.Count();
@@ -301,7 +302,7 @@ namespace JarvisSummarization.CG
             //new StrategyDegree(this).Execute();
             //new StrategyTime(this).Execute();
             //new StrategyQuant(this).Execute();
-            //new StrategySolveNullNodes().Execute(this);
+            new StrategySolveNullNodes().Execute(this);
             new StrategySolveNullEdgeRelations().Execute(this);
             //new StrategyWeekday(this).Execute();
             
@@ -612,20 +613,7 @@ namespace JarvisSummarization.CG
             return expression;
         }       
         
-        public void Validate()
-        {
-            var relations = this.Relations.Where(c => c.conceptualrole == "mod");
-            var agents = new List<CGNode>();
-            foreach (var item in relations)
-            {
-                //var head = this.Nodes.Where(c => c.id == item.Head).Single();
-                //var tail = this.Nodes.Where(c => c.id == item.Tail).Single();
-                //if (tail.semanticroles.Contains("verb"))
-                //{
-                //    throw new Exception("not valid");
-                //}
-            }
-        }
+        
         public void GenerateInformation()
         {
             Console.WriteLine("Concepts");
@@ -666,8 +654,40 @@ namespace JarvisSummarization.CG
 
 
         }
-        public void GenerateInformativeAspectsv2()
+        public string Summary()
         {
+            StringBuilder sb = new StringBuilder();
+
+            var result = new List<CGVerb>();            
+
+            var vers = this.Nodes.Where(c => c.semanticroles.Contains("verb")).OrderByDescending(c => c.pagerank).ToList();
+
+            foreach (var verb in vers)
+            {
+                var cgverb = new CGVerb(verb);
+                cgverb.GenerateVerbs(this);
+                cgverb.GenerateAgents(this);
+                cgverb.GeneratePatients(this);
+                cgverb.GenerateThemes(this);
+                cgverb.GenerateGoal(this);
+                cgverb.GenerateAttribute(this);
+                result.Add(cgverb);
+            }
+            int words = 0;
+            foreach (var item in result.OrderByDescending(c => c.Rank))
+            {
+                words += item.Words;
+                sb.AppendLine(item.SummaryLemme());                
+                if (words > 100)
+                {
+                    break;
+                }
+            }
+            return sb.ToString();
+        }
+        public string GenerateInformativeAspectsv2()
+        {
+            StringBuilder sb = new StringBuilder(); 
             var result = new List<CGVerb>();
 
             var noverbs = new List<string>() {  };
@@ -689,19 +709,15 @@ namespace JarvisSummarization.CG
             foreach (var item in result.OrderByDescending(c=>c.Rank))
             {
                 words += item.Words;
-                Console.WriteLine(item.Log(true));
+                sb.AppendLine(item.Log(false));                
                 if ( words > 100)
                 {
                     break;
                 }
             }
+            return sb.ToString();
         }
-        
-        public void Summary30()
-        {
-            var numberofterms = this.NumberOfWords * 0.3;            
-            
-        }
+                
         public void ReadAMR(AMRDocument Document)
         {
             foreach (var gr in Document.Graphs)

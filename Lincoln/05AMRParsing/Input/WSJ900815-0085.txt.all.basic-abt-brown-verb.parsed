@@ -1,0 +1,668 @@
+# ::id 1
+# ::snt A new U.S. Census Bureau survey provides a sweeping look at how children are cared for in the U.S. and increases concern about the ability of low-income families to afford child care .
+(x20 / and
+	:op1 (x7 / provide-01
+		:ARG0 (x6 / survey-01
+			:mod (x2 / new)
+			:ARG0 (x4 / organization
+				:name (n / name
+					:op1 "Census"))
+			:ARG0 (x5 / government-organization
+				:name (n1 / name
+					:op1 "Bureau")))
+		:ARG1 (x10 / look-01
+			:mod (x9 / sweeping)
+			:topic (x15 / care-01
+				:ARG1 (x13 / child)
+				:location (x19 / country
+					:name (n2 / name
+						:op1 "U.S.")))))
+	:op2 (x21 / increase-01
+		:ARG1 (x22 / concern-01
+			:ARG0 (x28 / family
+				:mod (x27 / low-income)
+				:ARG1-of (x30 / afford-01
+					:ARG1 (x32 / care-01
+						:mod (x31 / child)))))))
+
+# ::id 2
+# ::snt The report could bolster child-care legislation under consideration in Congress that would mainly aid low-income families .
+(x3 / possible
+	:domain (x4 / bolster
+		:ARG0 (x2 / report)
+		:ARG1 (x6 / legislate-01
+			:mod (x5 / child-care))
+		:ARG1-of (x8 / consider-02
+			:location (x10 / government-organization
+				:name (n / name
+					:op1 "Congress")))
+		:ARG1 (x14 / aid-01
+			:mod (x13 / main)
+			:ARG2 (x16 / family
+				:mod (x15 / low-income)))))
+
+# ::id 3
+# ::snt The data are `` particularly important , '' says Martin O'Connell , who co-wrote the report , `` especially when one considers the amount of legislation that may be geared to reimbursing payments for child care as a function of income . ''
+(x9 / say-01
+	:ARG1 (x6 / important
+		:domain (x2 / data)
+		:mod (x5 / particular))
+	:ARG0 (x10 / newspaper
+		:name (n / name
+			:op1 "Martin"
+			:op2 "O'Connell")
+		:ARG0-of (x14 / co-write
+			:ARG1 (x16 / report-01)))
+	:ARG1 (x22 / consider-01
+		:mod (x19 / especially)
+		:ARG0 (x21 / one)
+		:ARG1 (x24 / amount
+			:domain (x26 / legislate-01)
+			:ARG1-of (x30 / gear-01
+				:mod (x28 / possible)
+				:ARG2 (x32 / reimburse
+					:ARG1 (x33 / payment
+						:topic (x36 / care
+							:mod (x35 / child)))
+					:ARG2 (x39 / function-01
+						:ARG1 (x41 / income)))))))
+
+# ::id 4
+# ::snt Comparisons with a 1977 survey show that the proportion of children in organized day care has nearly doubled over the decade , to 24 % in 1987 from 13 % in 1977 .
+(x6 / show-01
+	:ARG0 (x1 / compare-01
+		:ARG1 (x5 / survey-01
+			:time (x4 / date-entity
+				:year 1977)
+			:ARG1 (xap1 / percentage-entity
+				:ARG1 (x9 / proportion
+					:ARG1 (x11 / child)
+					:ARG1 (x15 / care
+						:ARG1-of (x13 / organize-01)
+						:manner (x17 / nearly)))
+				:ARG2 (x19 / over)
+				:time (x27 / date-entity
+					:year 1987)
+				:value 13
+				:op1 (x32 / date-entity
+					:year 1977)
+				:snt2 (xap0 / percentage-entity
+					:value 24)))))
+
+# ::id 5
+# ::snt During the same period , the use of relatives as child-care providers declined .
+(x13 / decline-02
+	:time (x4 / period
+		:ARG1-of (x3 / same-41))
+	:ARG0 (x7 / use-01
+		:ARG1 (x9 / relative))
+	:ARG1 (xap0 / company
+		:mod (x11 / child-care)
+		:ARG0-of (x12 / provide-01)))
+
+# ::id 6
+# ::snt Care provided by relatives in the child 's home dropped to 8 % in 1987 from 13 % in 1977 , and a similar decline was seen in child care provided by relatives in their own homes .
+(x22 / and
+	:op1 (x10 / drop-05
+		:ARG0 (x1 / care
+			:ARG1-of (x2 / provide-01
+				:ARG0 (x4 / relative
+					:location (x9 / home))))
+		:time (x15 / date-entity
+			:year 1987)
+		:ARG3 (xap1 / percentage-entity
+			:value 13
+			:op1 (x20 / date-entity
+				:year 1977)))
+	:op2 (x27 / see-01
+		:ARG0 x1
+		:ARG1 (x25 / decline-01
+			:ARG1-of (x24 / resemble-01
+				:op (s / similar)))
+		:ARG2 (x30 / care
+			:mod (x29 / child)
+			:ARG1-of (x31 / provide-01
+				:ARG0 (x33 / relative
+					:location (x37 / home)))))
+	:op1 (xap0 / percentage-entity
+		:value 8))
+
+# ::id 7
+# ::snt The drop probably reflects the sharp increase in the number of working women , which reduces the potential number of female relatives available to care for children .
+(x3 / probable
+	:domain (x4 / reflect-01
+		:ARG0 (x2 / drop-01)
+		:ARG1 (x7 / increase-01
+			:mod (x6 / sharp)
+			:ARG1 (x13 / woman
+				:quant (x10 / number)
+				:ARG0-of (x12 / work-01)
+				:ARG0-of (x16 / reduce-01
+					:ARG0 (x22 / relative
+						:mod (x21 / female)
+						:ARG1 (x25 / care-01
+							:mod (x18 / potential)
+							:mod (x23 / available)
+							:ARG1 (x27 / child))))))))
+
+# ::id 8
+# ::snt About 59 % of the country 's estimated 52 million children under age 15 had mothers who were employed in fall 1987 .
+(x15 / have-03
+	:ARG1 (x1 / about
+		:null_edge (x11 / child
+			:null_edge 59
+			:poss (x6 / country)
+			:ARG1-of (x8 / estimate-01)
+			:ARG1-of (x13 / age
+				:ARG2 15)))
+	:ARG1 (x16 / mother
+		:ARG1-of (x19 / employ-02
+			:time (x22 / date-entity
+				:year 1987
+				:season (x21 / fall)))))
+
+# ::id 9
+# ::snt Working parents with preschool children often have the most critical child-care needs .
+(x12 / need-01
+	:ARG0 (x2 / parent
+		:ARG0-of (x1 / work-01)
+		:poss (x5 / child
+			:mod (x4 / preschool)))
+	:frequency (x6 / often)
+	:mod (x10 / critical
+		:degree (x9 / most))
+	:mod (x11 / child-care))
+
+# ::id 10
+# ::snt In 1987 , 55 % of women with children under age five were employed , up from 35 % a decade earlier .
+(x14 / employ-02
+	:time (x2 / date-entity
+		:year 1987)
+	:ARG2 (xap0 / percentage-entity
+		:value 55
+		:poss (x7 / woman
+			:ARG0-of (x9 / child
+				:ARG1-of (x11 / age
+					:ARG2 5))))
+	:ARG2 (xap1 / percentage-entity
+		:value 35
+		:time (x22 / early
+			:op1 (xap2 / before
+				:op1 (x21 / temporal-quantity
+					:unit (d / decade))))))
+
+# ::id 11
+# ::snt In total , American families with employed mothers spent $ 15.5 billion on all forms of child care in 1987 , at an average weekly cost of $ 49 .
+(x26 / cost-01
+	:ARG2 (x9 / spend-02
+		:ARG0 (x5 / family
+			:ARG1-of (x2 / company
+				:name (n / name
+					:op1 "total"))
+			:mod (x4 / country
+				:name (n1 / name
+					:op1 "American"))
+			:ARG0-of (x8 / mother
+				:ARG1-of (x7 / employ-02)))
+		:ARG1 (x18 / care
+			:quant (x14 / all)
+			:mod (x17 / child))
+		:time (x20 / date-entity
+			:year 1987)
+		:ARG1 (xap0 / rate-entity-91
+			:ARG3 (x25 / temporal-quantity
+				:unit (w / week))))
+	:ARG2 (x24 / average-01))
+
+# ::id 12
+# ::snt That was an increase of $ 8 since the last such survey was taken in the mid-1980s .
+(x4 / increase-01
+	:ARG0 (x1 / that)
+	:li 8
+	:time (x8 / since
+		:op1 (x14 / take-01
+			:ARG1 (x12 / survey-01
+				:mod (x10 / last)
+				:mod (x11 / such))
+			:time (x17 / date-entity))))
+
+# ::id 13
+# ::snt Such costs averaged about $ 35 a week , or 25 % of family income , for families with employed mothers living in poverty .
+(x3 / average-01
+	:ARG1 (x10 / or
+		:op1 (x18 / family
+			:accompanier (x21 / mother
+				:ARG1-of (x20 / employ-02)
+				:ARG0-of (x22 / live-01
+					:location (x24 / poverty))))
+		:frequency (xap1 / rate-entity-91
+			:ARG2 (x8 / temporal-quantity
+				:unit (w / week)))
+		:op1 (xap2 / percentage-entity
+			:value 25
+			:op1 (x15 / income
+				:poss (x14 / family))))
+	:ARG1 (xap0 / monetary-quantity
+		:ARG2-of (x2 / cost-01
+			:mod (x1 / such))))
+
+# ::id 14
+# ::snt By contrast , better-off families paid an average of $ 50 a week , or 6 % of family income .
+(x2 / contrast-01
+	:ARG1-of (x6 / pay-01
+		:ARG0 (x5 / family
+			:mod (x4 / better-off))
+		:ARG1 (x8 / average
+			:ARG2 (xap0 / rate-entity-91
+				:quant 50
+				:ARG2 (x13 / temporal-quantity
+					:unit (w / week))
+				:ARG1 (x15 / or)
+				:ARG2 (xap1 / percentage-entity
+					:value 6
+					:op1 (x20 / income
+						:poss (x19 / family)))))))
+
+# ::id 15
+# ::snt The Census Bureau report is the first to detail officially that poor families pay a higher percentage of family income for child-care services than do better-off families .
+(x9 / detail-01
+	:ARG0 (x4 / report
+		:ARG0 (x3 / government-organization
+			:name (n / name
+				:op1 "Bureau")
+			:mod (x2 / organization
+				:name (n1 / name
+					:op1 "Census"))))
+	:manner (x10 / official)
+	:ARG1 (x14 / pay-01
+		:ARG0 (x13 / family
+			:mod (x12 / poor))
+		:ARG3 (x25 / do-02
+			:ARG1 (x20 / income
+				:mod (x16 / high)
+				:poss (x19 / family)
+				:source (x23 / service
+					:mod (x22 / child-care)))
+			:ARG1 (x27 / family
+				:mod (x26 / better-off)))))
+
+# ::id 16
+# ::snt The legislation now in Congress `` would help with costs and widen choices '' for low-income families , says Helen Blank , a child-care expert with the Children 's Defense Fund , who says the Census Bureau figures confirm earlier estimates about family income and child care .
+(x19 / say-01
+	:ARG1 (x11 / and
+		:op1 (x8 / help-01
+			:ARG0 (x2 / legislation
+				:time (x3 / now)
+				:ARG1 (x5 / government-organization
+					:name (n2 / name
+						:op1 "Congress"))))
+		:op2 (x10 / cost-01)
+		:op2 (x12 / widen-01
+			:ARG0 x2
+			:ARG1 (x13 / choices
+				:poss (x17 / family
+					:mod (x16 / low-income)))))
+	:ARG0 (x20 / person
+		:name (n / name
+			:op1 "Helen")
+		:source (x21 / city
+			:name (n1 / name
+				:op1 "Blank"))
+		:null_edge (x25 / person
+			:ARG1-of (e / expert-41)
+			:ARG2 (x24 / child-care)
+			:ARG1 (x34 / thing
+				:ARG1-of (s / say-01)
+				:ARG1 (x39 / confirm-01
+					:ARG0 (x38 / figure
+						:source (x36 / organization
+							:name (n3 / name
+								:op1 "Census"))
+						:source (x37 / government-organization
+							:name (n4 / name
+								:op1 "Bureau")))
+					:ARG1 (x41 / thing
+						:ARG1-of (e1 / estimate-01)
+						:time (x40 / early)
+						:topic (x45 / and
+							:op1 (x44 / income
+								:poss (x43 / family))
+							:op2 (x47 / care-01
+								:ARG0 x43)))))
+			:ARG2 (xap0 / name
+				:op2 "Children's"
+				:op9 (x31 / fund
+					:mod (x30 / defense))))))
+
+# ::id 17
+# ::snt The report shows that children under age five who live in poverty depended more on in-home care by grandparents and other relatives than did better-off children .
+(x3 / show-01
+	:ARG0 (x2 / report)
+	:ARG1 (x13 / depend-01
+		:ARG0 (x5 / child
+			:ARG1-of (x7 / age
+				:ARG2 5)
+			:ARG0-of (x10 / live-01
+				:location (x12 / poverty)))
+		:degree (x14 / more)
+		:ARG1 (x17 / care
+			:mod (x16 / in-home)
+			:ARG0 (x20 / and
+				:op1 (x19 / grandparent)
+				:op2 (x22 / relative
+					:mod (x21 / other)))
+			:ARG1 (x26 / child
+				:mod (x25 / better-off)))))
+
+# ::id 18
+# ::snt Children of employed mothers with family incomes over $ 45,000 a year were twice as likely to be using organized child-care facilities as were children living in families with annual incomes below $ 15,000 .
+(x16 / likely
+	:domain (x1 / child
+		:poss (x4 / mother
+			:ARG1-of (x3 / employ-02)
+			:ARG1 (x7 / income
+				:mod (x6 / family
+					:ARG1-of (xap0 / rate-entity-91
+						:time (x12 / year))))))
+	:domain (x19 / use-01
+		:ARG1 (x22 / facility
+			:ARG1-of (x20 / organize-01)
+			:mod (x21 / child-care))
+		:ARG2 (x25 / child
+			:ARG0-of (x26 / live-01
+				:location (x28 / family
+					:ARG1 (x31 / income
+						:location (x32 / below
+							:op1 (x34 / monetary-quantity
+								:unit (y / yuan)))))))))
+
+# ::id 19
+# ::snt Organized child care covers day-care centers , nursery schools and preschools .
+(x4 / cover-01
+	:ARG0 (x3 / care-01
+		:mod (x1 / organized)
+		:mod (x2 / child))
+	:ARG1 (x10 / and
+		:op1 (x6 / center
+			:mod (x5 / day-care))
+		:op4 (x9 / school
+			:mod (x8 / nursery))
+		:op2 (x11 / preschool)))
+
+# ::id 20
+# ::snt Ms. Blank says studies have shown that many low-income women would prefer the developmental benefits of center-based preschool care when their children reach the ages of three and four , `` but many low-income women ca n't afford it . ''
+(x3 / say-01
+	:ARG0 (x1 / ms.
+		:source (x2 / city
+			:name (n / name
+				:op1 "Blank")))
+	:ARG1 (x6 / show-01
+		:ARG1 (x12 / prefer-01
+			:ARG0 (x10 / woman
+				:quant (x8 / many)
+				:mod (x9 / low-income))
+			:ARG1 (x15 / benefit-01
+				:mod (x14 / developmental)
+				:ARG1 (x19 / care
+					:mod (x18 / preschool)))))
+	:ARG1 (x32 / contrast-01
+		:ARG2 (x23 / reach-01
+			:ARG0 (x22 / child)
+			:ARG1 (x25 / age
+				:ARG2 (x28 / and
+					:op1 (x27 / person
+						:op (t / three))
+					:op2 4)))
+		:ARG2 (x38 / afford-01
+			:ARG0 (x35 / woman
+				:quant (x33 / many)
+				:mod (x34 / low-income)))))
+
+# ::id 21
+# ::snt Helen Blank recalls tragedies where dozens of children have been grouped together in unsafe , unlicensed but cheap neighborhood day-care homes .
+(x3 / recall-02
+	:ARG0 (x1 / person
+		:name (n / name
+			:op1 "Helen")
+		:source (x2 / city
+			:name (n1 / name
+				:op1 "Blank")))
+	:ARG1 (x4 / tragedy
+		:ARG1-of (x11 / group-01
+			:ARG2 (x8 / child)
+			:location (x21 / home
+				:mod (x17 / contrast-01
+					:ARG1 (x14 / safe
+						:polarity -)
+					:ARG2 (x16 / unlicensed)
+					:ARG2 (x18 / cheap)
+					:ARG1 (x19 / neighborhood))
+				:mod (x20 / day-care)))))
+
+# ::id 22
+# ::snt `` Is that by choice ? ''
+(x3 / that)
+
+# ::id 23
+# ::snt Helen Blank asks .
+(x3 / ask-01
+	:ARG0 (x1 / person
+		:name (n / name
+			:op1 "Helen")
+		:source (x2 / city
+			:name (n1 / name
+				:op1 "Blank"))))
+
+# ::id 24
+# ::snt The report also confirms what many employers have already learned : that worries about child care can cost working parents time and productivity on the job .
+(x4 / confirm-01
+	:ARG0 (x2 / report)
+	:mod (x3 / also)
+	:ARG1 (x10 / learn-01
+		:ARG0 (x7 / employ-01
+			:quant (x6 / many))
+		:time (x9 / already))
+	:ARG1 (x17 / possible
+		:domain (x18 / cost-01
+			:ARG1 (x13 / worry-01
+				:ARG1 (x16 / care
+					:mod (x15 / child)))
+			:ARG2 (x20 / parent
+				:ARG0-of (x19 / work-01))
+			:ARG2 (x22 / and
+				:op1 (x21 / time)
+				:op2 (x23 / productivity))
+			:ARG1 (x26 / job))))
+
+# ::id 25
+# ::snt About 7 % of the nine million women surveyed with children in some kind of child care reported losing some time from work in the previous month as a result of a breakdown in the nine million women surveyed with children in some kind of child child-care arrangement .
+(x18 / report-01
+	:ARG1 (x1 / about)
+	:ARG1 (x8 / woman
+		:quant 7
+		:ARG1-of (x9 / survey-01
+			:ARG0 (x11 / child)
+			:ARG0 (x17 / care
+				:mod (x14 / kind
+					:mod (x13 / some))
+				:mod (x16 / child))))
+	:ARG1 (x19 / lose-03
+		:mod (x20 / some)
+		:ARG0 (x23 / work-01)
+		:time (x27 / month
+			:mod (x26 / previous))
+		:ARG1-of (xap0 / cause-01
+			:ARG1 (x33 / break-12
+				:ARG1 (x38 / woman
+					:ARG1-of (x39 / survey-01
+						:ARG0 (x41 / child)
+						:ARG0 (x48 / arrange-00
+							:mod (x44 / kind
+								:mod (x43 / some))
+							:mod (x46 / child)
+							:mod (x47 / child-care))))))))
+
+# ::id 26
+# ::snt But the report shows that most families with working mothers do n't pay for child-care services .
+(x1 / contrast-01
+	:ARG2 (x4 / show-01
+		:ARG0 (x3 / report))
+	:ARG2 (x13 / pay-01
+		:ARG0 (x7 / family
+			:quant (x6 / most)
+			:accompanier (x10 / mother
+				:ARG0-of (x9 / work-01)))
+		:ARG1 (x16 / service
+			:mod (x15 / child-care))))
+
+# ::id 27
+# ::snt Only about one-third of the 19 million employed women with children under age 15 pay for child-care services , because most of the nine million women surveyed with children in some kind of child have school-age children who are in school most of the day and cared for after school in informal arrangements with friends or neighbors .
+(x1 / only
+	:op1 (x15 / thing
+		:ARG1-of (p / pay-01)
+		:ARG1 (x9 / woman
+			:ARG1-of (x8 / employ-02)
+			:ARG0-of (x11 / child
+				:ARG1-of (x13 / age
+					:ARG2 15)))
+		:ARG1 (x18 / service
+			:mod (x17 / child-care))
+		:ARG1-of (x20 / cause-01
+			:ARG0 (x26 / woman
+				:quant (x21 / most)
+				:ARG1-of (x27 / survey-01
+					:ARG0 (x29 / child)
+					:ARG1 (x34 / child
+						:mod (x32 / kind
+							:mod (x31 / some)))))
+			:ARG0 (x37 / child
+				:mod (x36 / school-age)
+				:ARG1-of (x47 / care-01
+					:ARG1 (x41 / school)
+					:time (x45 / day
+						:mod (x42 / most))
+					:time (x49 / after
+						:op1 (x50 / school))
+					:ARG2 (x53 / thing
+						:ARG1-of (a / arrange-01)
+						:mod (x52 / formal
+							:polarity -)
+						:ARG1 (x56 / or
+							:op1 (x55 / friend)
+							:op2 (x57 / neighbor))))))))
+
+# ::id 28
+# ::snt Most preschool-age children , or 66 % , were cared for in Most preschool-age children own homes or in a provider 's home while Most preschool-age children mothers were at work .
+(x10 / care-01
+	:ARG1 (x5 / or
+		:op1 (x3 / child
+			:quant (x1 / most)
+			:mod (x2 / preschool-age)
+			:quant (xap0 / percentage-entity
+				:value 66)))
+	:time (x18 / or
+		:op1 (x15 / child
+			:quant (x13 / most)
+			:mod (x14 / preschool-age))
+		:op1 (xap1 / company
+			:ARG0-of (x21 / provide-01)))
+	:ARG0 (x28 / mother
+		:quant (x25 / most)
+		:mod (x27 / child
+			:mod (x26 / preschool-age))
+		:location (x31 / work-01)))
+
+# ::id 29
+# ::snt Organized child-care facilities provided the primary care for 2.2 million children under age five .
+(x4 / provide-01
+	:ARG0 (x3 / facility
+		:poss (x1 / organized)
+		:mod (x2 / child-care))
+	:ARG1 (x7 / care-01
+		:mod (x6 / primary)
+		:ARG1 (x11 / child
+			:ARG1-of (x13 / age
+				:ARG2 5))))
+
+# ::id 30
+# ::snt An additional 9 % of preschoolers are cared for by preschoolers mothers while working .
+(x8 / care-01
+	:ARG0 (x12 / mother
+		:mod (x11 / preschooler))
+	:time (x14 / work-01)
+	:ARG2 (xap0 / percentage-entity
+		:mod (x2 / additional)
+		:value 9
+		:ARG1 (x6 / preschooler)))
+
+# ::id 31
+# ::snt About one-fourth of those mothers are employed as private household workers or child-care workers .
+(x7 / employ-02
+	:ARG1 (x5 / mother)
+	:ARG2 (x12 / or
+		:op1 (x11 / person
+			:ARG0-of (w / work-01)
+			:mod (x9 / private)
+			:mod (x10 / household))
+		:op2 (x14 / person
+			:ARG0-of (w1 / work-01)
+			:mod (x13 / child-care))))
+
+# ::id 32
+# ::snt More than one-fourth of the 29 million children of employed mothers also had a second child-care arrangement during the day to cover the time before or after school , based on the data collected in 1987 .
+(x13 / have-03
+	:ARG0 (x8 / child
+		:quant (x1 / more-than)
+		:poss (x11 / mother
+			:ARG1-of (x10 / employ-02)))
+	:mod (x12 / also)
+	:ARG1 (x17 / arrange-01
+		:mod (x16 / child-care))
+	:time (x18 / during)
+	:purpose (x22 / cover-01
+		:ARG1 (x24 / time)
+		:ARG2 (x26 / or
+			:op1 (x25 / before)
+			:op2 (x27 / after)
+			:op1 (x28 / school)))
+	:ARG1-of (x30 / base-02
+		:ARG2 (x33 / data
+			:ARG1-of (x34 / collect-01
+				:time (x36 / date-entity
+					:year 1987)))))
+
+# ::id 33
+# ::snt The report said that 22 % of these children looked after the 29 million children of employed mothers .
+(x3 / say-01
+	:ARG0 (x2 / report)
+	:ARG1 (x10 / look-02
+		:time (x11 / after
+			:op1 (x15 / child
+				:poss (x18 / mother
+					:ARG1-of (x17 / employ-02))))
+		:ARG1 (xap0 / percentage-entity
+			:value 22
+			:ARG1 (x9 / child))))
+
+# ::id 34
+# ::snt That proportion of so-called `` latchkey '' children and most other data on child-care arrangements had n't significantly changed since the last survey in 1984-85 .
+(x19 / change-02
+	:ARG1 (x2 / proportion
+		:mod (x1 / that)
+		:ARG1 (x9 / and
+			:op1 (x6 / latchkey)
+			:op1 (x8 / child)
+			:op3 (x12 / data
+				:quant (x10 / most)
+				:mod (x11 / other)
+				:prep-on (x15 / thing
+					:ARG1-of (a / arrange-01)
+					:mod (x14 / child-care)))))
+	:degree (x18 / significant)
+	:time (x20 / since
+		:op1 (x23 / survey-01
+			:mod (x22 / last)
+			:time (x25 / date-entity
+				:year 1984
+				:month 85))))
+

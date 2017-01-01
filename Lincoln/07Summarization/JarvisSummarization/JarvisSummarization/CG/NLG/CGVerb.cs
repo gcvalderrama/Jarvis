@@ -19,8 +19,8 @@ namespace JarvisSummarization.CG.NLG
         }
         public override string ToString()
         {            
-            return string.Format(" f:{0} s:{1} id:{2} r:{3} / l:{4} / {5} / {6}", this.Node.FusionNodes.Count() > 0, 
-                this.Node.sentenceid, this.Node.id, this.Relation.conceptualrole, this.Level, this.Node.text, this.Node.nosuffix);
+            return string.Format(" f:{0} s:{1} id:{2} rel:{3}/ pr:{4} / le:{5} / {6} / {7}", this.Node.FusionNodes.Count() > 0, 
+                this.Node.sentenceid, this.Node.id, this.Relation.conceptualrole, this.Node.pagerank, this.Level, this.Node.text, this.Node.nosuffix);
         }
     }
     public class CGVerb
@@ -142,7 +142,8 @@ namespace JarvisSummarization.CG.NLG
                     rel.conceptualrole == "example" ||
                     rel.conceptualrole == "poss")
                 {
-                    if (list.Where(c => c.Node.id == item.id).Count() == 0)
+                    if (list.Where(c => c.Node.id == item.id).Count() == 0 && 
+                        list.Where(c=>c.Node.text == item.text).Count() == 0  )
                     {
                         var wrapper = new CGVerbTerm(item, rel, level + 1);
                         list.Add(wrapper);
@@ -185,8 +186,9 @@ namespace JarvisSummarization.CG.NLG
                     rel.conceptualrole == "direction" ||
                     rel.conceptualrole == "location")
                 {
-                    
-                    if (list.Where(c=>c.Node.id == item.id).Count() == 0 )
+
+                    if (list.Where(c => c.Node.id == item.id).Count() == 0 &&
+                        list.Where(c => c.Node.text == item.text).Count() == 0)
                     {
                         var wrapper = new CGVerbTerm(item, rel, level + 1);
                         list.Add(wrapper);
@@ -230,8 +232,9 @@ namespace JarvisSummarization.CG.NLG
                     rel.conceptualrole == "patient" ||
                     rel.conceptualrole == "purpose")
                 {
-                    
-                    if (list.Where(c => c.Node.id == item.id).Count() == 0)
+
+                    if (list.Where(c => c.Node.id == item.id).Count() == 0 &&
+                        list.Where(c => c.Node.text == item.text).Count() == 0)
                     {
                         var wrapper = new CGVerbTerm(item, rel, level + 1);
                         list.Add(wrapper);
@@ -274,7 +277,8 @@ namespace JarvisSummarization.CG.NLG
                     rel.conceptualrole == "direction" ||
                     rel.conceptualrole == "location")
                 {
-                    if (list.Where(c => c.Node.id == item.id).Count() == 0)
+                    if (list.Where(c => c.Node.id == item.id).Count() == 0 &&
+                        list.Where(c => c.Node.text == item.text).Count() == 0)
                     {
                         var wrapper = new CGVerbTerm(item, rel, level + 1);
                         list.Add(wrapper);
@@ -317,7 +321,8 @@ namespace JarvisSummarization.CG.NLG
                     rel.conceptualrole == "direction" ||
                     rel.conceptualrole == "location")
                 {
-                    if (list.Where(c => c.Node.id == item.id).Count() == 0)
+                    if (list.Where(c => c.Node.id == item.id).Count() == 0 &&
+                        list.Where(c => c.Node.text == item.text).Count() == 0)
                     {
                         var wrapper = new CGVerbTerm(item, rel, level + 1);
                         list.Add(wrapper);
@@ -331,11 +336,54 @@ namespace JarvisSummarization.CG.NLG
             }
         }
         #endregion 
-
-
-        public string Summary()
+        
+        public string SummaryLemme()
         {
-            return null;
+            StringBuilder sb = new StringBuilder();
+
+            foreach (var agent in this.Agents)
+            {
+                foreach (var item in agent)
+                {
+                    sb.Append(string.Format("{0} ", item.Node.nosuffix));
+                }                
+            }
+            
+            //verb attributes are not valid yet
+            //foreach (var item in this.VerbAttributes)
+            //{
+            //    sb.Append(string.Format(" {0} ", item.Node.nosuffix));
+            //}
+            sb.Append(string.Format(" {0} ", this.Verb.nosuffix));            
+            foreach (var patient in this.Patients)
+            {
+                foreach (var item in patient)
+                {
+                    sb.Append(string.Format(" {0} ", item.Node.nosuffix));
+                }
+            }            
+            foreach (var theme in this.Themes)
+            {
+                foreach (var item in theme)
+                {
+                    sb.Append(string.Format(" {0} ", item.Node.nosuffix));
+                }
+            }            
+            foreach (var gol in this.Goal)
+            {
+                foreach (var item in gol)
+                {
+                    sb.Append(string.Format(" {0} ", item.Node.nosuffix));
+                }
+            }            
+            foreach (var attribute in this.Attributes)
+            {
+                foreach (var item in attribute)
+                {
+                    sb.Append(string.Format(" {0} ", item.Node.nosuffix));
+                }
+            }
+            return sb.ToString();
         }
 
         public string Log(bool debug)

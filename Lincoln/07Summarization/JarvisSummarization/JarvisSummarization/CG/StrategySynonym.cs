@@ -88,15 +88,16 @@ namespace JarvisSummarization.CG
         public void FusionConcepts()
         {
 
-            List<string> invalid = new List<string>() { "verb", "mod", "op", "term", "mod-of" };
+            List<string> invalid = new List<string>() { "domain", "mod", "op", "term", "mod-of" };
 
             var nodes = this.graph.Nodes.Where(c => 
+                    !c.IsConcept && !c.IsEntity && 
                     c.semanticroles.Where(d=> invalid.Contains(d)).Count() == 0                
                 ).ToList();
 
             WordNet.WordNetSimilarityModel.Strategy strategy = WordNet.WordNetSimilarityModel.Strategy.WuPalmer1994MostCommon;
 
-            foreach (var current in nodes.Where(c=>!c.IsConcept && !c.IsEntity).OrderByDescending(c => c.rstweight))
+            foreach (var current in nodes.OrderByDescending(c => c.rstweight))
             {
                 
                     var currentset = this.SynSets[current.nosuffix];
@@ -125,16 +126,18 @@ namespace JarvisSummarization.CG
 
             this.GraphFusion(graph, nodes.GroupBy(c => c.hypernym));
 
-            
 
-            var concepts = this.graph.Nodes.Where(c => c.IsConcept);
-            foreach (var current in concepts.GroupBy(c=>c.nosuffix))
+
+            var concepts = this.graph.Nodes.Where(c => c.IsConcept
+                && c.semanticroles.Where(d => invalid.Contains(d)).Count() == 0);
+            foreach (var current in concepts.GroupBy(c => c.nosuffix))
             {
                 var max = current.OrderByDescending(c => c.pagerank).First();
-                this.graph.FusionNodes(max, current.ToList());                
+                this.graph.FusionNodes(max, current.ToList());
             }
 
-            var entities = this.graph.Nodes.Where(c => c.IsEntity);
+            var entities = this.graph.Nodes.Where(c => c.IsEntity
+                && c.semanticroles.Where(d => invalid.Contains(d)).Count() == 0);
             foreach (var current in entities.GroupBy(c => c.nosuffix))
             {
                 var max = current.OrderByDescending(c => c.pagerank).First();

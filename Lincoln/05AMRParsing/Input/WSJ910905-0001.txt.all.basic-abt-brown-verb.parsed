@@ -1,0 +1,1294 @@
+# ::id 1
+# ::snt The conventional wisdom is that small companies lack the resources to offer child-care benefits , no matter how much employees crave them .
+(x3 / wisdom
+	:mod (x2 / convention)
+	:ARG2 (x8 / lack-01
+		:ARG0 (x7 / company
+			:mod (x6 / small))
+		:ARG1 (x10 / resource)
+		:ARG1 (x12 / offer-01
+			:ARG0 x7
+			:ARG1 (x14 / benefit-01
+				:mod (x13 / child-care)))
+		:concession (x17 / matter-01
+			:polarity -)
+		:ARG1 (x21 / crave
+			:ARG0 (x20 / person
+				:ARG1-of (e / employ-01)
+				:quant (x19 / much)))))
+
+# ::id 2
+# ::snt But a growing number of small businesses are trying anyway .
+(x1 / contrast-01
+	:ARG2 (x4 / number
+		:ARG1-of (x3 / grow-01)
+		:quant-of (x7 / business
+			:mod (x6 / small)))
+	:ARG2 (x9 / try-01
+		:mod (x10 / anyway)))
+
+# ::id 3
+# ::snt small companies 're finding that small companies small size does create big problems .
+(x4 / find-01
+	:ARG0 (x2 / company
+		:mod (x1 / small))
+	:ARG1 (x11 / create-01
+		:ARG0 (x7 / company
+			:mod (x6 / small)
+			:ARG1-of (x10 / do-02
+				:ARG0 (x9 / size
+					:mod (x8 / small))))
+		:ARG1 (x13 / problem
+			:mod (x12 / big))))
+
+# ::id 4
+# ::snt Yet some are making child care work .
+(x4 / make-02
+	:ARG0 (x2 / some)
+	:ARG1 (x7 / work-01
+		:ARG0 (x6 / care-01
+			:mod (x5 / child))))
+
+# ::id 5
+# ::snt Take Stephen Zink , owner of a Louisville , Ky. , office furniture and supply distributor .
+(x1 / take-01
+	:ARG1 (x2 / name
+		:op1 "Stephen"
+		:op2 "Zink"
+		:ARG0-of (x5 / person
+			:ARG0-of (o / own-01)
+			:ARG1 (x14 / and
+				:op1 (x13 / furniture
+					:name (x8 / name
+						:op1 "Louisville"
+						:op2 ","
+						:op3 "Ky.")
+					:mod (x12 / office))
+				:op2 (x16 / distribute-01
+					:ARG1 (x15 / supply-01))))))
+
+# ::id 6
+# ::snt Stephen Zink personally invested $ 50,000 , plus $ 20,000 in company funds , to convert a house into an on-site day-care center for employees ' children .
+(x4 / invest-01
+	:ARG0 (x1 / newspaper
+		:name (n / name
+			:op1 "Stephen"
+			:op2 "Zink"))
+	:manner (x3 / personal)
+	:ARG1 (x5 / country
+		:name (n1 / name
+			:op1 "$")
+		:quant (x6 / volume-quantity
+			:unit (b / barrel))
+		:null_edge (x10 / monetary-quantity
+			:unit (y / yuan)))
+	:ARG2 (x13 / fund-01
+		:poss (x12 / company))
+	:purpose (x16 / convert-01
+		:ARG1 (x18 / house)
+		:ARG2 (x23 / center
+			:mod (x21 / on-site)
+			:mod (x22 / day-care)
+			:part-of (x27 / child
+				:ARG0 (x25 / person
+					:ARG1-of (e / employ-01))))))
+
+# ::id 7
+# ::snt Then , Stephen Zink faced a problem typical of small employers : With just 100 employees , Stephen Zink could n't attract enough children to fill Stephen Zink center .
+(x5 / face-01
+	:time (x1 / then)
+	:ARG0 (x3 / newspaper
+		:name (n / name
+			:op1 "Stephen"
+			:op2 "Zink"))
+	:ARG1 (x7 / problem
+		:topic (x11 / employ-01
+			:mod (x10 / small)))
+	:null_edge (x20 / possible
+		:domain (x22 / attract-01
+			:ARG2 (x16 / person
+				:ARG1-of (e / employ-01)
+				:quant (x14 / just
+					:op1 100))
+			:ARG0 (x18 / newspaper
+				:name (n1 / name
+					:op1 "Stephen"
+					:op2 "Zink"))
+			:ARG1 (x24 / child
+				:quant (x23 / enough))
+			:purpose (x26 / fill-05
+				:ARG1 (x29 / center
+					:mod (x27 / person
+						:name (n2 / name
+							:op1 "Stephen"))
+					:mod (x28 / person
+						:name (n3 / name
+							:op1 "Zink")))))))
+
+# ::id 8
+# ::snt Consequently , a problem typical of small employers did n't break even as expected .
+(x1 / cause-01
+	:op (c / consequently)
+	:op1 (x11 / break-01
+		:ARG1 (x4 / problem
+			:topic (x8 / employ-01
+				:mod (x7 / small)))
+		:mod (x12 / even)
+		:ARG1 (x14 / expect-01)))
+
+# ::id 9
+# ::snt Since a problem typical of small employers opened two years ago , the center has run up a $ 30,000 deficit -- financed out of Mr. Zink 's pocket and a loan Stephen Zink guaranteed .
+(x16 / run-01
+	:time (x8 / open-01
+		:time (x1 / since)
+		:ARG1 (x3 / problem
+			:topic (x7 / employ-01
+				:mod (x6 / small)))
+		:time (xap0 / before
+			:quant (x10 / temporal-quantity
+				:unit (y1 / year)
+				:null_edge (x9 / null_tag))))
+	:ARG1 (x14 / center)
+	:ARG1 (x21 / deficit
+		:quant (x20 / monetary-quantity
+			:unit (y / yuan))
+		:ARG1-of (x23 / thing
+			:manner-of (f / finance-01)
+			:ARG1 (x30 / and
+				:op1 (x29 / pocket
+					:poss (x27 / person
+						:name (n / name
+							:op1 "Zink")
+						:null_edge (x26 / null_tag)))
+				:op2 (x32 / loan-01
+					:ARG1-of (x35 / guarantee-01
+						:ARG1 (x33 / name
+							:op1 "Stephen"
+							:op2 "Zink")))))))
+
+# ::id 10
+# ::snt Stephen Zink 's now trying a new approach : Stephen Zink aims to market the center to nonemployees ' kids as well .
+(x12 / aim-01
+	:ARG0 (x1 / person
+		:name (n / name
+			:op1 "Stephen"
+			:op2 "Zink"
+			:op3 "'s"
+			:op4 "now"
+			:op5 "trying"
+			:op6 "a"
+			:op7 "new"
+			:op8 "approach"
+			:op9 "-"
+			:op10 "Stephen"
+			:op11 "Zink")
+		:ARG0-of (x5 / try-01
+			:time (x4 / now)
+			:ARG1 (x8 / approach-02
+				:mod (x7 / new))))
+	:ARG1 (x14 / market-01
+		:ARG1 (x16 / center)
+		:ARG2 (x20 / kid)))
+
+# ::id 11
+# ::snt But Stephen Zink says Stephen Zink 's committed to keeping the center open because an on-site day-care center for employees ' children has helped enhance his company 's community image .
+(x1 / contrast-01
+	:ARG2 (x4 / say-01
+		:ARG0 (x2 / newspaper
+			:name (n / name
+				:op1 "Stephen"
+				:op2 "Zink"))
+		:ARG1 (x8 / commit-01
+			:ARG1 (x6 / person
+				:name (n1 / name
+					:op1 "Zink")
+				:null_edge (x5 / person
+					:name (n2 / name
+						:op1 "Stephen")))
+			:ARG2 (x10 / keep-04
+				:ARG0 x6
+				:ARG1 (x12 / center
+					:mod (x13 / open-01))
+				:ARG1-of (x14 / cause-01
+					:ARG0 (x24 / help-01
+						:ARG2 (x18 / center
+							:mod (x16 / on-site)
+							:mod (x17 / day-care)
+							:poss (x22 / child
+								:ARG0 (x20 / person
+									:ARG1-of (e / employ-01))))
+						:ARG1 (x25 / enhance-01
+							:ARG1 (x30 / image
+								:poss (x27 / company)
+								:mod (x29 / community)))))))))
+
+# ::id 12
+# ::snt Mr. Zink 's center is one of 29 small-company programs described in a new report by the New York-based Child Care Action Campaign , a nonprofit child-care advocacy group .
+(x4 / center
+	:poss (x2 / person
+		:name (n / name
+			:op1 "Zink")
+		:null_edge (x1 / null_tag))
+	:mod (x10 / program
+		:quant 29
+		:mod (x9 / small-company)
+		:ARG1-of (x11 / describe-01
+			:ARG2 (x15 / report
+				:mod (x14 / new)
+				:ARG0 (x29 / group
+					:null_edge (x18 / null_tag)
+					:ARG0-of (x27 / child-care)
+					:mod (x28 / advocacy))))))
+
+# ::id 13
+# ::snt The report tells how companies with fewer than 250 employees have experimented in recent years , offering day-care centers , subsidies to employees , referral services , flexible benefit programs and dependent-care assistance plans .
+(x3 / tell-01
+	:ARG0 (x2 / report)
+	:ARG1 (x12 / experiment-01
+		:ARG0 (x5 / company
+			:quant (x7 / few
+				:op1 (x10 / person
+					:ARG1-of (e / employ-01))))
+		:time (x15 / temporal-quantity
+			:unit (y / year)
+			:mod (x14 / recent))
+		:ARG1 (x17 / offer-01
+			:ARG0 x5
+			:ARG1 (x31 / and
+				:op1 (x19 / center
+					:mod (x18 / day-care))
+				:op3 (x21 / subsidy
+					:ARG2 (x23 / person
+						:ARG1-of (e1 / employ-01))
+					:quant (x26 / service
+						:mod (x25 / refer-02)))
+				:op2 x26
+				:op2 (x30 / program
+					:mod (x28 / flexible)
+					:mod (x29 / benefit-01))
+				:op2 (x34 / plan-01
+					:ARG1 (x33 / assist-01))))))
+
+# ::id 14
+# ::snt The small-company owners offering benefits are often parents with child-care needs of The small-company owners offering benefits own , says Barbara Reisman , the advocacy group 's executive director .
+(x20 / say-01
+	:ARG1 (x8 / parent
+		:domain (x3 / person
+			:ARG0-of (o / own-01)
+			:ARG1 (x2 / small-company)
+			:ARG1-of (x4 / offer-01
+				:ARG1 (x5 / benefit-01)))
+		:frequency (x7 / often)
+		:ARG1-of (x11 / need-01
+			:mod (x10 / child-care)
+			:ARG0 (x15 / person
+				:ARG0-of (o1 / own-01)
+				:ARG1 (x14 / small-company)
+				:ARG1-of (x16 / offer-01
+					:ARG1 (x17 / benefit-01)))))
+	:ARG0 (x21 / newspaper
+		:name (n / name
+			:op1 "Barbara"
+			:op2 "Reisman")
+		:ARG0-of (x29 / have-org-role-91
+			:ARG2 (d / director)
+			:ARG1 (x26 / group
+				:mod (x25 / advocacy))
+			:mod (x28 / executive))))
+
+# ::id 15
+# ::snt Many employ a high percentage of women , who , she says , still shoulder the child-care burden in most families .
+(x2 / employ-02
+	:ARG0 (x1 / many)
+	:ARG1 (x5 / percentage
+		:mod (x4 / high)
+		:ARG1 (x7 / woman
+			:ARG0-of (x12 / say-01
+				:ARG1 (x15 / shoulder
+					:mod (x14 / still)
+					:ARG1 (x18 / burden-01
+						:mod (x17 / child-care)
+						:ARG2 (x21 / family
+							:quant (x20 / most))))))))
+
+# ::id 16
+# ::snt And , she adds , some started their programs to help resolve their troubles in recruiting and retaining women employees .
+(x1 / and
+	:op2 (x4 / add-02)
+	:op2 (x7 / start-01
+		:ARG0 (x6 / some)
+		:ARG1 (x9 / program)
+		:ARG1 (x11 / help-01
+			:ARG1 (x12 / resolve-01
+				:ARG1 (x14 / trouble)
+				:ARG1 (x17 / and
+					:op1 (x16 / recruit-01
+						:ARG1 (x20 / person
+							:ARG1-of (e / employ-01)
+							:ARG1 (x19 / woman)))
+					:op2 (x18 / retain-01))))))
+
+# ::id 17
+# ::snt Many small companies mentioned in the report say Many small companies mentioned in the report programs have turned out to be good for business .
+(x8 / say-01
+	:ARG0 (x3 / company
+		:quant (x1 / many)
+		:mod (x2 / small)
+		:ARG1-of (x4 / mention-01
+			:medium (x7 / report)))
+	:ARG1 (x18 / turn-02
+		:ARG0 (x11 / company
+			:quant (x9 / many)
+			:mod (x10 / small)
+			:ARG1-of (x12 / mention-01
+				:ARG3 (x16 / program
+					:mod (x15 / report-01))))
+		:purpose (x22 / good
+			:ARG2 (x24 / business))))
+
+# ::id 18
+# ::snt Employee morale is up since the programs were started , Many small companies mentioned in the report say .
+(x18 / say-01
+	:ARG1 (x2 / morale
+		:ARG1 (x1 / person
+			:ARG1-of (e / employ-01))
+		:time (x5 / since
+			:op1 (x9 / start-01
+				:ARG1 (x7 / program))))
+	:ARG0 (x13 / company
+		:quant (x11 / many)
+		:mod (x12 / small)
+		:ARG1-of (x14 / mention-01
+			:medium (x17 / report))))
+
+# ::id 19
+# ::snt Hiring is easier , maternity leaves have shortened , and turnover is off as much as 50 % .
+(x10 / and
+	:op1 (x3 / easy
+		:domain (x1 / hiring)
+		:domain (x8 / shorten-01
+			:ARG0 (x6 / leaf
+				:mod (x5 / maternity)))
+		:domain (x11 / turnover
+			:quant-of (xap0 / percentage-entity
+				:value 50))))
+
+# ::id 20
+# ::snt Pro Tem Professional Temporary Service Inc. , a clerical agency in Portland , Ore. , says its program has more than paid for itself .
+(x16 / say-01
+	:ARG0 (x10 / agency
+		:domain (x2 / government-organization
+			:name (n / name
+				:op1 "Tem"
+				:op2 "Professional"
+				:op3 "Temporary"
+				:op4 "Service"
+				:op5 "Inc."))
+		:mod (x9 / cleric)
+		:location (x12 / country
+			:name (n1 / name
+				:op1 "Portland")
+			:location (x14 / country
+				:name (n2 / name
+					:op1 "Ore."))))
+	:ARG1 (x22 / pay-01
+		:ARG0 (x18 / program)
+		:degree (x20 / more)))
+
+# ::id 21
+# ::snt The company subsidizes its employees ' child-care expenses by paying an extra 50 cents an hour .
+(x3 / subsidize
+	:ARG0 (x2 / company)
+	:ARG1 (x10 / pay-01)
+	:ARG1 (xap0 / capable-41
+		:op1 (x5 / person
+			:ARG1-of (e / employ-01))
+		:ARG1 (x7 / child-care)))
+
+# ::id 22
+# ::snt Last year , Last year made a profit -- after expenses , including the subsidy -- of nearly $ 50,000 on work done by the 216 parents in the program .
+(x8 / profit-01
+	:time (x2 / year
+		:mod (x1 / last))
+	:time (x5 / year
+		:mod (x4 / last))
+	:time (x10 / after
+		:op1 (x11 / expend-01
+			:ARG2 (x15 / subsidize-01)))
+	:quant (x18 / nearly
+		:op1 (x20 / volume-quantity
+			:unit (b / barrel)))
+	:ARG1 (x22 / work-01
+		:ARG1-of (x23 / do-02
+			:ARG0 (x27 / parent
+				:quant 216
+				:ARG1 (x30 / program)))))
+
+# ::id 23
+# ::snt Still , such small businesses face a tougher time than big companies in offering child-care benefits .
+(x6 / face-01
+	:mod (x1 / still)
+	:ARG0 (x5 / business
+		:mod (x3 / such)
+		:mod (x4 / small))
+	:ARG1 (x12 / company
+		:mod (x8 / tough)
+		:mod (x11 / big))
+	:ARG1 (x14 / offer-01
+		:ARG0 x12
+		:ARG1 (x16 / benefit-01
+			:mod (x15 / child-care))))
+
+# ::id 24
+# ::snt Administrative hassles can sap a small company 's tiny staff .
+(x3 / possible
+	:domain (x4 / sap
+		:ARG0 (x2 / hassle-00
+			:mod (x1 / administrate-01))
+		:ARG1 (x10 / staff
+			:poss (x7 / company
+				:mod (x6 / small))
+			:mod (x9 / tiny))))
+
+# ::id 25
+# ::snt Executives at G.T. Water Products Inc. , a maker of plumbing supplies in Moorpark , Calif. , are still haggling with local officials over zoning and building-code regulations after opening a school four years ago .
+(x20 / haggle
+	:ARG0 (x1 / have-org-role-91
+		:ARG2 (e / executive)
+		:ARG0-of (x9 / make-01
+			:ARG1 (x3 / government-organization
+				:name (n / name
+					:op1 "G.T."
+					:op2 "Water"
+					:op3 "Products"
+					:op4 "Inc."))
+			:ARG1 (x12 / supply-01
+				:ARG1 (x11 / plumbing)
+				:location (x14 / country
+					:name (n1 / name
+						:op1 "Moorpark")
+					:null_edge (x16 / country
+						:name (n2 / name
+							:op1 "Calif."))))))
+	:mod (x19 / still)
+	:ARG0 (x26 / and
+		:op1 (x25 / zoning)
+		:op2 (x27 / building-code)
+		:op2 (x28 / regulate-01))
+	:time (x29 / after
+		:op1 (x30 / open-01
+			:ARG1 (x32 / school)
+			:time (xap1 / before
+				:quant (x34 / temporal-quantity
+					:unit (y / year)
+					:null_edge (x33 / null_tag)))))
+	:ARG0 (xap0 / person
+		:ARG0-of (x23 / have-org-role-91
+			:ARG2 (o / official)
+			:mod (x22 / local))))
+
+# ::id 26
+# ::snt Debra Tash , a vice president , says Debra Tash spent more than a month persuading the city council to give the company special permission to run the school in an industrial zone .
+(x8 / say-01
+	:ARG0 (x1 / newspaper
+		:name (n / name
+			:op1 "Debra"
+			:op2 "Tash")
+		:ARG0-of (x6 / have-org-role-91
+			:ARG2 (p / president)
+			:mod (x5 / vice)))
+	:ARG1 (x11 / spend-00
+		:ARG0 (x9 / newspaper
+			:name (n1 / name
+				:op1 "Debra"
+				:op2 "Tash"))
+		:ARG3 (x12 / more
+			:op1 (x15 / temporal-quantity
+				:unit (m / month)))
+		:ARG3 (x16 / persuade-01
+			:ARG1 (x19 / council
+				:mod (x18 / city))
+			:ARG2 (x21 / give-01
+				:ARG0 (x23 / company)
+				:ARG1 (x25 / permit-01
+					:ARG0 x23
+					:mod (x24 / special)
+					:ARG1 (x27 / run-01
+						:ARG1 (x29 / school)
+						:location (x33 / zone
+							:mod (x32 / industry))))))))
+
+# ::id 27
+# ::snt Debra Tash is still responding to demands by fire-code officials that the company upgrade the facility .
+(x5 / respond-01
+	:ARG0 (x1 / newspaper
+		:name (n / name
+			:op1 "Debra"
+			:op2 "Tash"))
+	:mod (x4 / still)
+	:ARG1 (x7 / demand-01
+		:ARG0 (x14 / upgrade-02
+			:ARG0 (x13 / company)
+			:ARG1 (x16 / facility))
+		:ARG0 (xap0 / person
+			:mod (x9 / fire-code)
+			:ARG0-of (x10 / have-org-role-91
+				:ARG2 (o / official)))))
+
+# ::id 28
+# ::snt So far , his company 's has spent $ 5,000 for new doors , ceiling tiles and dampers .
+(x8 / spend-01
+	:ARG0 (x5 / company
+		:mod (x2 / far))
+	:ARG3 (x9 / country
+		:name (n / name
+			:op1 "$")
+		:quant (x10 / monetary-quantity
+			:unit (y / yuan)))
+	:ARG3 (x17 / and
+		:op1 (x13 / door
+			:mod (x12 / new))
+		:op2 (x16 / tile
+			:mod (x15 / ceiling))
+		:op2 (x18 / damper)))
+
+# ::id 29
+# ::snt `` There are times you can pull your hair out and think this is more trouble than it 's worth , '' Debra Tash says .
+(x25 / say-01
+	:ARG1 (x11 / and
+		:op1 (x7 / pull-06
+			:ARG0 (x5 / you)
+			:mod (x6 / possible)
+			:ARG1 (x9 / hair))
+		:op2 (x12 / think-01
+			:ARG0 x5
+			:ARG1 (x16 / trouble
+				:domain (x13 / this)
+				:degree (x15 / more))))
+	:ARG0 (x23 / newspaper
+		:name (n / name
+			:op1 "Debra"
+			:op2 "Tash")))
+
+# ::id 30
+# ::snt But she and her husband , George Tash , the company 's president , have two children in the school , and they say they 're committed to keeping his company 's open .
+(x1 / contrast-01
+	:ARG2 (x15 / have-03
+		:ARG0 (x3 / and
+			:op1 (x2 / she)
+			:op2 (x5 / husband
+				:name (x7 / name
+					:op1 "George"
+					:op2 "Tash"
+					:ARG0-of (x13 / have-org-role-91
+						:ARG2 (p / president)
+						:ARG0 (x11 / company)))))
+		:ARG1 (x17 / child
+			:quant 2)
+		:ARG1 (x20 / school)
+		:null_edge (x22 / and
+			:op2 (x24 / say-01
+				:ARG1 (x27 / commit-01
+					:ARG2 (x29 / keep-04
+						:ARG1 (x33 / open)))))))
+
+# ::id 31
+# ::snt `` There 's something cheerier in an environment when you hear a bunch of kids laughing , '' Mr. Tash says .
+(x21 / say-01
+	:ARG1 (x4 / something
+		:mod (x5 / cheerier
+			:ARG1 (x8 / environment))
+		:ARG1-of (x11 / hear-01
+			:ARG0 (x10 / you)
+			:ARG1 (x16 / laugh-01
+				:ARG1 (x13 / bunch
+					:consist-of (x15 / kid)))))
+	:ARG0 (x20 / person
+		:name (n / name
+			:op1 "Tash")
+		:null_edge (x19 / null_tag)))
+
+# ::id 32
+# ::snt Small companies face multiple challenges .
+(x3 / face-01
+	:ARG0 (x2 / company
+		:mod (x1 / small))
+	:ARG1 (x5 / thing
+		:ARG2-of (c / challenge-01)
+		:quant (x4 / multiple)))
+
+# ::id 33
+# ::snt small companies must pay closer attention than big concerns to the needs of individual employees .
+(x4 / pay-01
+	:ARG0 (x2 / company
+		:mod (x1 / small))
+	:ARG1 (x9 / concern-01
+		:ARG1 (x6 / attention
+			:mod (x5 / close))
+		:mod (x8 / big))
+	:ARG2 (x12 / need-01
+		:ARG0 (x15 / person
+			:ARG1-of (e / employ-01)
+			:mod (x14 / individual))))
+
+# ::id 34
+# ::snt A large employer , for instance , can start a day-care center by making broad assumptions of needs based on employee demographics , says Jill Foley , an analyst at the Employee Benefit Research Institute in Washington , D.C. .
+(x24 / say-01
+	:ARG1 (x8 / possible
+		:domain (x9 / start-01
+			:ARG0 (x3 / employ-01
+				:mod (x2 / large))
+			:ARG1 (x12 / center
+				:mod (x11 / day-care))
+			:ARG1 (x16 / assumption
+				:mod (x15 / broad)
+				:ARG1-of (x18 / need-01
+					:ARG1-of (x19 / base-02
+						:ARG2 (x22 / demography
+							:ARG0 (x21 / person
+								:ARG1-of (e / employ-01))))))))
+	:ARG0 (x25 / newspaper
+		:name (n / name
+			:op1 "Jill"
+			:op2 "Foley")
+		:ARG0-of (x29 / analyze-01
+			:ARG1 (x32 / government-organization
+				:name (n1 / name
+					:op1 "Employee"
+					:op2 "Benefit"
+					:op3 "Research"
+					:op4 "Institute")
+				:location (x37 / city
+					:name (n2 / name
+						:op1 "Washington")
+					:null_edge (x39 / country
+						:name (n3 / name
+							:op1 "D.C.")))))))
+
+# ::id 35
+# ::snt But a small company must survey employees .
+(x1 / contrast-01
+	:ARG2 (x6 / survey-01
+		:ARG0 (x4 / company
+			:mod (x3 / small))
+		:ARG1 (x7 / person
+			:ARG1-of (e / employ-01))))
+
+# ::id 36
+# ::snt If most of fewer than 250 employees already have satisfactory arrangements , A large employer says , the wrong time to open a center 's probably the wrong time to open a center .
+(x26 / probable
+	:null_edge (x16 / say-01
+		:ARG1 (x11 / arrange-01
+			:ARG0 (x7 / person
+				:ARG1-of (e / employ-01)
+				:quant (x2 / most)
+				:ARG1-of (x3 / include-91
+					:quant (x4 / few)))
+			:time (x8 / already)
+			:mod (x10 / satisfactory))
+		:ARG0 (x15 / employ-01
+			:mod (x14 / large))
+		:ARG1 (x19 / wrong-41
+			:ARG1 (x22 / open-03
+				:ARG1 (x24 / center)))
+		:ARG1 (x28 / wrong-41)
+		:ARG1 (x31 / open-01
+			:ARG1 (x33 / center))))
+
+# ::id 37
+# ::snt Small companies with limited resources must take precautions to limit Small companies with limited resources liability for the safety of children in care programs , says Alan Cleveland , a partner at Sheehan , Phinney , Bass & Green , a Manchester , N.H. , law firm that offers employees a dependent-care assistance plan , which enables employees to use pretax earnings for some of fewer than 250 employees child-care expenses .
+(x7 / take-01
+	:ARG0 (x2 / company
+		:mod (x1 / small)
+		:prep-with (x5 / resource
+			:ARG1-of (x4 / limit-01)))
+	:ARG1 (x8 / precaution-00)
+	:purpose (x10 / limit-01
+		:ARG0 x2
+		:ARG1 (x12 / company
+			:mod (x11 / small)
+			:mod (x16 / liability
+				:ARG1-of (x14 / limit-01)
+				:ARG1 (x15 / resource)
+				:purpose (x19 / safe-41
+					:ARG1 (x21 / child
+						:age (x24 / program
+							:topic (x23 / care-01
+								:ARG1 (x26 / say-01)))))
+				:name (x27 / name
+					:op1 "Alan"
+					:op2 "Cleveland"
+					:ARG0-of (x31 / partner-01
+						:location (x47 / firm
+							:poss (x33 / organization
+								:name (n / name
+									:op1 "Sheehan"
+									:op2 ","
+									:op3 "Phinney"
+									:op4 ","
+									:op5 "Bass"
+									:op6 "&"
+									:op7 "Green"))
+							:mod (x44 / country
+								:name (n1 / name
+									:op1 "N.H.")
+								:null_edge (x42 / country
+									:name (n2 / name
+										:op1 "Manchester")))
+							:mod (x46 / law)
+							:ARG0-of (x49 / offer-01
+								:ARG1 (x54 / plan-01
+									:mod (x52 / dependent-care)
+									:mod (x53 / assist-01)
+									:ARG0-of (x57 / enable-01
+										:ARG1 (x60 / use-01
+											:ARG0 (x58 / person
+												:ARG1-of (e1 / employ-01))
+											:ARG1 (x62 / earn-01
+												:mod (x61 / pretax)
+												:ARG1 (x69 / person
+													:ARG1-of (e2 / employ-01)
+													:quant (x64 / some)
+													:quant (x66 / few)))
+											:ARG1 (x71 / expend-01
+												:ARG0-of (x70 / child-care)))))
+								:ARG1 (xap0 / capable-41
+									:op1 (x50 / person
+										:ARG1-of (e / employ-01)))))))))))
+
+# ::id 38
+# ::snt For on-site day care , where the risk is great , Alan Cleveland advises companies to minimize exposure by avoiding ownership .
+(x14 / advise-01
+	:topic (x4 / care
+		:mod (x2 / on-site)
+		:mod (x10 / great
+			:domain (x8 / risk-01)))
+	:ARG0 (x12 / newspaper
+		:name (n / name
+			:op1 "Alan"
+			:op2 "Cleveland"))
+	:ARG1 (x15 / company)
+	:ARG2 (x17 / minimize-01
+		:ARG1 (x18 / expose-01)
+		:ARG0 (x20 / avoid-01)))
+
+# ::id 39
+# ::snt What 's more , limited budgets typically put a crimp in programs run by small companies .
+(x8 / put-08
+	:degree (x3 / more)
+	:ARG0 (x6 / budget
+		:ARG1-of (x5 / limit-01)
+		:mod (x7 / typical))
+	:ARG2 (x10 / crimp)
+	:ARG2 (x12 / program
+		:ARG1-of (x13 / run-01
+			:ARG0 (x16 / company
+				:mod (x15 / small)))))
+
+# ::id 40
+# ::snt Those operating day-care centers often skimp on staff , for instance .
+(x6 / skimp
+	:ARG0 (x4 / center
+		:ARG1-of (x2 / operate-01)
+		:mod (x3 / day-care))
+	:frequency (x5 / often)
+	:ARG1 (x8 / person
+		:ARG2-of (s / staff-01)))
+
+# ::id 41
+# ::snt William Sturgis , a child-care consultant in Northbrook , Ill. , says staffing is typically so thin that when a day-care teacher gets sick , a small company must scramble to find somebody to fill in .
+(x12 / say-01
+	:ARG0 (x1 / newspaper
+		:name (n / name
+			:op1 "William"
+			:op2 "Sturgis")
+		:ARG0-of (x6 / person
+			:ARG0-of (c / consult-01)
+			:mod (x5 / child-care)
+			:location (x8 / country
+				:name (n1 / name
+					:op1 "Northbrook")
+				:location (x10 / country
+					:name (n2 / name
+						:op1 "Ill.")))))
+	:ARG1 (x17 / thin
+		:domain (x13 / staffing)
+		:mod (x15 / typical)
+		:domain (x30 / scramble
+			:ARG1 (x24 / sick
+				:domain (x22 / person
+					:ARG0-of (t / teach-01)
+					:mod (x21 / day-care)))
+			:ARG0 (x28 / company
+				:mod (x27 / small))
+			:ARG1 (x32 / find-01
+				:ARG0 x24
+				:ARG0 x28
+				:ARG1 (x33 / somebody)
+				:ARG1 (x35 / fill-05)))))
+
+# ::id 42
+# ::snt Limited budgets -- and space -- also mean small companies ca n't satisfy all their employees ' needs .
+(x8 / mean-01
+	:ARG0 (x2 / budget
+		:ARG1-of "Limited")
+	:ARG1 (x4 / and
+		:op1 (x5 / space))
+	:mod (x7 / also)
+	:ARG1 (x13 / satisfy-01
+		:ARG1 (x10 / company
+			:mod (x9 / small))
+		:ARG1 (x18 / need-01
+			:quant (x14 / all)
+			:ARG0 (x16 / person
+				:ARG1-of (e / employ-01)))))
+
+# ::id 43
+# ::snt Edgewood Manor Inc. , a nursing home operator in Portsmouth , N.H. , offers day care for children in the nursing home .
+(x14 / offer-01
+	:ARG0 (x1 / government-organization
+		:name (n / name
+			:op1 "Edgewood"
+			:op2 "Manor"
+			:op3 "Inc.")
+		:ARG0-of (x8 / person
+			:ARG0-of (o / operate-01)
+			:mod (x7 / home
+				:mod (x6 / nursing))
+			:location (x10 / country
+				:name (n1 / name
+					:op1 "Portsmouth")
+				:location (x12 / country
+					:name (n2 / name
+						:op1 "N.H.")))))
+	:ARG1 (x16 / care-01)
+	:ARG1 (x18 / child
+		:location (x22 / home
+			:purpose (x21 / nursing))))
+
+# ::id 44
+# ::snt But employees with sick children must make other arrangements because the company did n't allow space for isolating sick kids .
+(x1 / contrast-01
+	:ARG2 (x2 / person
+		:ARG1-of (e / employ-01)
+		:ARG0 (x5 / child
+			:mod (x4 / sick)))
+	:ARG2 (x9 / arrange-01
+		:mod (x8 / other))
+	:ARG2 (x10 / cause-01)
+	:ARG2 (x15 / allow-01
+		:ARG0 (x12 / company)
+		:ARG1 (x16 / space)
+		:ARG1 (x18 / isolate-01
+			:ARG1 (x20 / kid
+				:mod (x19 / sick)))))
+
+# ::id 45
+# ::snt Edgewoood employees on night shifts miss out on the program , too , because there are n't enough of Edgewoood employees on night shifts to make its program worthwhile for the company to offer round-the-clock care .
+(x6 / miss-03
+	:ARG0 (x2 / person
+		:ARG1-of (e / employ-01)
+		:mod (x1 / country
+			:name (n / name
+				:op1 "Edgewoood"))
+		:ARG1 (x5 / shift-01
+			:time (x4 / night)))
+	:ARG1 (x10 / program)
+	:mod (x12 / too)
+	:ARG1-of (x14 / cause-01
+		:quant (x18 / enough
+			:ARG0 (x21 / person
+				:ARG1-of (e1 / employ-01)
+				:mod (x20 / edgewoood)
+				:ARG1 (x24 / shift-01
+					:time (x23 / night)))
+			:purpose (x26 / make-01
+				:ARG0 x21
+				:ARG1 (x28 / program)
+				:ARG1 (x29 / worthwhile
+					:domain (x34 / offer-01
+						:ARG0 (x32 / company)
+						:ARG1 (x36 / care-01
+							:ARG0 x32
+							:mod (x35 / round-the-clock))))))))
+
+# ::id 46
+# ::snt One possible solution : offering spaces to children of night workers at the local post office .
+(x3 / solution
+	:quant 1
+	:null_edge (x2 / possible)
+	:ARG1 (x5 / offer-01
+		:ARG1 (x6 / space)
+		:ARG1 (x8 / child
+			:poss (x11 / person
+				:ARG0-of (w / work-01)
+				:time (x10 / night)))
+		:location (x16 / office
+			:mod (x14 / local)
+			:mod (x15 / post))))
+
+# ::id 47
+# ::snt Small employers often ca n't afford consultants to guide consultants on the pitfalls of launching new benefits .
+(x6 / afford-01
+	:ARG0 (x2 / employ-01
+		:mod (x1 / small))
+	:frequency (x3 / often)
+	:ARG1 (x7 / person
+		:ARG0-of (c / consult-01))
+	:purpose (x9 / guide-01
+		:ARG0 x2
+		:ARG1 (x10 / person
+			:ARG0-of (c1 / consult-01))
+		:path (x13 / pitfall
+			:ARG1 (x15 / launch-01
+				:ARG1 (x17 / benefit-01
+					:mod (x16 / new))))))
+
+# ::id 48
+# ::snt Watering Inc. , a Bennington , Vt. , publisher of a catalog magazine for antique-car buffs , got gripes from nonparents after Watering Inc. offered subsidies of up to $ 3,000 a year for child care .
+(x18 / get-01
+	:null_edge (x9 / publish-01
+		:ARG0 (x1 / government-organization
+			:name (n / name
+				:op1 "Watering"
+				:op2 "Inc."))
+		:name (x5 / name
+			:op1 "Bennington"
+			:op2 ","
+			:op3 "Vt.")
+		:ARG0 (x13 / magazine
+			:mod (x12 / catalog-01)
+			:ARG1 (x16 / buff
+				:mod (x15 / antique-car))))
+	:ARG1 (x19 / gripe
+		:source (x21 / nonparent))
+	:time (x22 / after
+		:op1 (x25 / offer-01
+			:ARG0 (x23 / government-organization
+				:name (n1 / name
+					:op1 "Watering"
+					:op2 "Inc."))
+			:ARG1 (x26 / subsidy
+				:mod (xap0 / rate-entity-91
+					:time (x33 / year)))
+			:ARG3 (x36 / care
+				:mod (x35 / child)))))
+
+# ::id 49
+# ::snt But Charles Waters , the company 's financial vice president , says the company explained that not everybody takes advantage of any benefit .
+(x1 / contrast-01
+	:ARG2 (x12 / say-01
+		:ARG0 (x2 / newspaper
+			:name (n / name
+				:op1 "Charles"
+				:op2 "Waters")
+			:ARG0-of (x10 / have-org-role-91
+				:ARG2 (p / president)
+				:ARG0 (x6 / company)
+				:ARG1 (x8 / finance)
+				:mod (x9 / vice)))
+		:ARG1 (x15 / explain-01
+			:ARG0 (x14 / company)
+			:ARG1 (x19 / take-04
+				:ARG0 (x18 / everybody)
+				:ARG1 (x20 / advantage)
+				:ARG1 (x23 / benefit-01)))))
+
+# ::id 50
+# ::snt Some companies have found that employees abuse child-care benefits .
+(x4 / find-02
+	:ARG0 (x2 / company
+		:quant (x1 / some))
+	:ARG1 (x7 / abuse-01
+		:ARG0 x2
+		:ARG0 (x6 / person
+			:ARG1-of (e / employ-01))
+		:ARG1 (x9 / benefit-01
+			:mod (x8 / child-care))))
+
+# ::id 51
+# ::snt Prime Publishers Inc. , in Southbury , Conn. , which publishes a local weekly newspaper , discovered parents were calling in sick , leaving the 216 parents in the program children in day care at the company 's expense and going shopping .
+(x17 / discover-01
+	:ARG0 (x3 / government-organization
+		:name (n / name
+			:op1 "Inc.")
+		:null_edge (x1 / null_tag)
+		:null_edge (x2 / null_tag)
+		:location (x6 / country
+			:name (n1 / name
+				:op1 "Southbury")
+			:location (x8 / country
+				:name (n2 / name
+					:op1 "Conn.")))
+		:ARG1-of (x11 / publish-01
+			:medium (x15 / newspaper
+				:mod (x13 / local)
+				:ARG0-of (xap0 / rate-entity-91
+					:ARG3 (x14 / temporal-quantity
+						:unit (w / week))))))
+	:ARG1 (x20 / call-03
+		:ARG1 (x18 / parent)
+		:ARG1 (x22 / sick)
+		:ARG1 (x40 / and
+			:op1 (x24 / leave-02
+				:ARG1 (x30 / program
+					:poss (x27 / parent
+						:quant 216))
+				:ARG1 (x31 / child)
+				:ARG2 (x34 / care)
+				:ARG2 (x39 / expend-01
+					:ARG0 (x37 / company)))
+			:op2 (x41 / go-02
+				:ARG1 (x42 / shop-01)))))
+
+# ::id 52
+# ::snt The company solved the problem by dropping his company 's subsidy when an employee is ill .
+(x3 / solve-01
+	:ARG0 (x2 / company)
+	:ARG1 (x5 / problem)
+	:ARG2 (x7 / drop-04
+		:ARG1 (x11 / subsidy
+			:ARG0 (x9 / company))
+		:time (x16 / ill-41
+			:domain (x14 / person
+				:ARG1-of (e / employ-01)))))
+
+# ::id 53
+# ::snt Not all companies cited in the Child Care Action Campaign 's report are sticking with the 216 parents in the program programs .
+(x14 / stick-01
+	:ARG1 (x3 / company
+		:quant (x2 / all)
+		:ARG0-of (x4 / cite-01
+			:medium (x12 / report
+				:ARG0 (x7 / company
+					:name (n / name
+						:op1 "Child"
+						:op2 "Care"
+						:op3 "Action"
+						:op4 "Campaign")))))
+	:ARG2 (x18 / parent
+		:quant 216)
+	:ARG1 (x22 / program
+		:topic (x21 / program)))
+
+# ::id 54
+# ::snt Judi Wineland , owner of Overseas Adventure Travel Inc. in Cambridge , Mass. , started Judi Wineland child-care program five years ago when Judi Wineland needed care for Judi Wineland growing family .
+(x15 / start-01
+	:ARG0 (x1 / newspaper
+		:name (n / name
+			:op1 "Judi"
+			:op2 "Wineland")
+		:ARG0-of (x4 / person
+			:ARG0-of (o / own-01)
+			:ARG1 (x8 / government-organization
+				:name (n4 / name
+					:op1 "Travel"
+					:op2 "Inc.")
+				:ARG0-of (x7 / have-org-role-91
+					:ARG1 (o1 / organization
+						:name (n7 / name
+							:op1 "Adventure")))
+				:location (x11 / country
+					:name (n8 / name
+						:op1 "Cambridge")
+					:location (x13 / country
+						:name (n9 / name
+							:op1 "Mass."))))))
+	:ARG1 (x19 / program
+		:poss (x16 / person
+			:name (n1 / name
+				:op1 "Judi"))
+		:mod (x17 / person
+			:name (n2 / name
+				:op1 "Wineland"))
+		:mod (x18 / child-care))
+	:time (x26 / need-01
+		:ARG0 (x24 / newspaper
+			:name (n3 / name
+				:op1 "Judi"
+				:op2 "Wineland"))
+		:ARG1 (x27 / care-01)
+		:purpose (x32 / family
+			:poss (x29 / person
+				:name (n5 / name
+					:op1 "Judi"))
+			:poss (x30 / person
+				:name (n6 / name
+					:op1 "Wineland"))
+			:ARG1-of (x31 / grow-01)))
+	:time (xap0 / before
+		:quant (x21 / temporal-quantity
+			:unit (y / year)
+			:null_edge (x20 / null_tag))))
+
+# ::id 55
+# ::snt Judi Wineland hired a care giver to watch Judi Wineland children , plus those of employees and others , in an apartment in the Victorian house where Judi Wineland company has his company 's offices .
+(x3 / hire-01
+	:ARG0 (x1 / newspaper
+		:name (n / name
+			:op1 "Judi"
+			:op2 "Wineland"))
+	:ARG1 (x6 / person
+		:ARG0-of (g / give-01)
+		:topic (x5 / care-01))
+	:ARG2 (x8 / watch-01
+		:ARG1 (x11 / child
+			:mod (x9 / person
+				:name (n1 / name
+					:op1 "Judi"))
+			:mod (x10 / person
+				:name (n2 / name
+					:op1 "Wineland"))
+			:null_edge (x17 / and
+				:op1 (x16 / person
+					:ARG1-of (e / employ-01))
+				:op2 (x18 / other)))
+		:medium (x22 / apartment
+			:location (x26 / house
+				:mod (x25 / organization
+					:name (n3 / name
+						:op1 "Victorian"))
+				:poss (x35 / office
+					:poss (x28 / person
+						:name (n4 / name
+							:op1 "Judi"))
+					:poss (x30 / company
+						:mod (x29 / person
+							:name (n5 / name
+								:op1 "Wineland")))
+					:poss (x33 / company))))))
+
+# ::id 56
+# ::snt But each time a care giver quit , Ms. Wineland and her husband , who runs an affiliated agency , had to fill in .
+(x1 / contrast-01
+	:ARG2 (x7 / quit-01
+		:mod (x2 / each)
+		:ARG1 (x5 / care-01
+			:ARG0 (x6 / person
+				:ARG0-of (g / give-01))))
+	:ARG2 (x9 / ms.)
+	:ARG2 (x11 / and
+		:op2 (x13 / husband
+			:poss (x10 / person
+				:name (n / name
+					:op1 "Wineland"))
+			:ARG0-of (x16 / run-01
+				:ARG1 (x19 / agency
+					:mod (x18 / affiliated)))))
+	:ARG2 (x23 / fill-01))
+
+# ::id 57
+# ::snt `` each time a care giver quit , Ms. Wineland and her husband , who runs an affiliated agency might last a couple of weeks but each time a care giver quit , Ms. Wineland and her husband , who runs an affiliated agency seemed like years , '' says Ms. Wineland .
+(x50 / say-01
+	:null_edge (x21 / null_tag
+		:null_edge (x7 / quit-01
+			:mod (x2 / each)
+			:ARG1 (x5 / care-01
+				:ARG0 (x6 / person
+					:ARG0-of (g / give-01)))
+			:ARG1 (x11 / and
+				:op2 (x13 / husband
+					:ARG1-of (x16 / run-01
+						:ARG1 (x19 / agency
+							:mod (x18 / affiliated))))
+				:op2 (x45 / seem-01
+					:ARG1 (x32 / quit-01
+						:null_edge (x27 / each)
+						:ARG1 (x30 / care-01
+							:ARG0 (x31 / person
+								:ARG0-of (g1 / give-01))))
+					:ARG1 (x36 / and
+						:op2 (x38 / husband
+							:poss (x35 / person
+								:name (n1 / name
+									:op1 "Wineland")
+								:null_edge (x34 / ms.))
+							:ARG0-of (x41 / run-01
+								:ARG1 (x44 / agency
+									:mod (x43 / affiliated)))))
+					:time (xap1 / multiple
+						:op1 (x47 / temporal-quantity
+							:unit (y / year))))
+				:op1 (xap0 / before
+					:quant (x23 / couple
+						:op1 (x25 / week))))))
+	:ARG0 (x52 / person
+		:name (n / name
+			:op1 "Wineland")
+		:null_edge (x51 / ms.)))
+
+# ::id 58
+# ::snt The latest turnover in care givers so distracted Judi Wineland this year that Judi Wineland lost business opportunities .
+(x8 / distract-01
+	:ARG1 (x3 / turnover
+		:time (x2 / late
+			:degree (m / most))
+		:ARG2 (x6 / person
+			:ARG0-of (g / give-01)
+			:ARG1 (x5 / care-01)))
+	:manner (x7 / so)
+	:ARG1 (x9 / name
+		:op1 "Judi"
+		:op2 "Wineland")
+	:time (x12 / year
+		:mod (x11 / this))
+	:ARG1 (x16 / lose-02
+		:ARG0 (x14 / newspaper
+			:name (n / name
+				:op1 "Judi"
+				:op2 "Wineland"))
+		:ARG1 (x18 / opportunity
+			:mod (x17 / business))))
+
+# ::id 59
+# ::snt As a result , Judi Wineland has decided to close the program -- a decision that means Judi Wineland can no longer pause , while working , to hear Judi Wineland two-year-old laughing in the office 's backyard .
+(x3 / result-01
+	:ARG2 (x8 / decide-01
+		:ARG0 (x5 / newspaper
+			:name (n / name
+				:op1 "Judi"
+				:op2 "Wineland"))
+		:ARG1 (x10 / close-01
+			:ARG0 x5
+			:ARG1 (x12 / program)
+			:ARG2 (x15 / thing
+				:ARG1-of (d / decide-01)
+				:ARG0-of (x17 / mean-01
+					:ARG1 (x20 / possible
+						:domain (x23 / pause
+							:ARG0 (x18 / newspaper
+								:name (n1 / name
+									:op1 "Judi"
+									:op2 "Wineland"))
+							:time (x26 / work-01)
+							:ARG1 (x29 / person
+								:ARG0-of (h / hear-01)
+								:name (x30 / name
+									:op1 "Judi"
+									:op2 "Wineland"
+									:mod (x32 / person
+										:name (n2 / name
+											:op1 "two-year-old"))
+									:ARG0-of (x33 / laugh-01))
+								:location (x38 / backyard
+									:poss (x36 / office))))))))))
+
+# ::id 60
+# ::snt `` That 's all gone , '' Judi Wineland says sadly .
+(x10 / say-01
+	:ARG1 (x5 / go-01
+		:ARG1 (x2 / that))
+	:ARG0 (x8 / newspaper
+		:name (n / name
+			:op1 "Judi"
+			:op2 "Wineland")))
+
+# ::id 61
+# ::snt `` Judi Wineland hate a result . ''
+(x4 / hate-01
+	:ARG0 (x2 / newspaper
+		:name (n / name
+			:op1 "Judi"
+			:op2 "Wineland"))
+	:ARG1 (x6 / result-01))
+
