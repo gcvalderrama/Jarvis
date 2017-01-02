@@ -13,7 +13,5 @@ namespace JarvisSummarization
             return input.Replace("&", "&amp;").Replace("%", "&#37;");
 
         }
-
-
     }
 }
