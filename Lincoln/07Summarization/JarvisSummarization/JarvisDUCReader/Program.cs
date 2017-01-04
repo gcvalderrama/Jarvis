@@ -125,8 +125,7 @@ namespace JarvisDUCReader
                         {
                             File.WriteAllText(Path.Combine(DUC_Processed_Summaries, item) + ".txt", sum.Value.TrimStart().TrimEnd());
                         }
-                    }
-                    //Console.WriteLine(element);
+                    }                    
                 }
             }
         }   
