@@ -134,54 +134,104 @@ namespace Jarvis
                     {
                         #region coreference 
 
-                        var senreference = from c in references.SelectMany(x => x.Mentions)
+                        var senreference = (from c in references.SelectMany(x => x.Mentions)
                                            where c.Sentence == sentence.Id &&
                                                  c.Enable
                                                  && ValidTarget_Pos.Contains(c.Head.POS)
                                                  && ValidReplace_Pos.Contains(c.Root.Head.POS)
-                                           select c;
+                                           select c).ToList();
 
 
-                        //valid_pos.Contains( c.Head.POS)
-                        foreach (var core in senreference)
+                        var testinterception = new List<int>();
+                        var abort = false;
+                        foreach (var itemsen in senreference)
                         {
-                            var start_token = sentence.Tokens.Where(c => c.SentenceLoc == core.Start).First();
-                            var end_token = sentence.Tokens.Where(c => c.SentenceLoc == core.End - 1).First();
-                            var cursor = sentence.Tokens.Find(start_token).Next;
-                            var replace = new List<Token>();
-                            for (int i = 0; i < core.GetLen() - 1; i++)
-                            {
-                                replace.Add(cursor.Value);
-                                cursor = cursor.Next;
-                            }
-                            foreach (var del in replace)
-                            {
-                                sentence.Tokens.Remove(del);
-                            }
+                            var tmp = Enumerable.Range(itemsen.Start, itemsen.End - itemsen.Start);
 
-                            cursor = sentence.Tokens.Find(start_token);
-
-                            cursor.Value = new Token()
+                            if (testinterception.Intersect(tmp).Count() == 0)
                             {
-                                Id = start_token.Id,
-                                CharacterOffsetBegin = start_token.CharacterOffsetBegin,
-                                CharacterOffsetEnd = end_token.CharacterOffsetEnd
-                            };
-                            if (options.Debug)
-                            {
-                                cursor.Value.Word = string.Format("[{0}({1})| {2}({3})]", core.Text, core.Head.POS, core.Root.Text, core.Root.Head.POS);
+                                testinterception.AddRange(tmp);
                             }
                             else
                             {
-                                cursor.Value.Word = core.Root.Text;
+                                abort = true;
+                                break;
+                            }                          
+                        }
+                        if (!abort)
+                        {
+                            //valid_pos.Contains( c.Head.POS)
+                            foreach (var core in senreference)
+                            {
+                                var start_token = sentence.Tokens.Where(c => c.SentenceLoc == core.Start).First();
+                                var end_token = sentence.Tokens.Where(c => c.SentenceLoc == core.End - 1).First();
+                                var cursor = sentence.Tokens.Find(start_token).Next;
+                                var replace = new List<Token>();
+                                for (int i = 0; i < core.GetLen() - 1; i++)
+                                {
+                                    replace.Add(cursor.Value);
+                                    cursor = cursor.Next;
+                                }
+                                foreach (var del in replace)
+                                {
+                                    sentence.Tokens.Remove(del);
+                                }
+
+                                cursor = sentence.Tokens.Find(start_token);
+
+                                cursor.Value = new Token()
+                                {
+                                    Id = start_token.Id,
+                                    CharacterOffsetBegin = start_token.CharacterOffsetBegin,
+                                    CharacterOffsetEnd = end_token.CharacterOffsetEnd
+                                };
+                                if (options.Debug)
+                                {
+                                    cursor.Value.Word = string.Format("[{0}({1})| {2}({3})]", core.Text, core.Head.POS, core.Root.Text, core.Root.Head.POS);
+                                }
+                                else
+                                {
+                                    cursor.Value.Word = core.Root.Text;
+                                }
                             }
                         }
+                        
                         #endregion
                         StringBuilder sb_sentence = new StringBuilder();
-                        foreach (var token in sentence.Tokens)
+                        for (int i = 0; i < sentence.Tokens.Count; i++)
                         {
-                            sb_sentence.Append(token.Word + " ");
-                        }
+                            Token next = null;
+                            if (i + 1 < sentence.Tokens.Count)
+                            {
+                                next = sentence.Tokens.ElementAt(i + 1);
+                            }
+                            
+                            var word = sentence.Tokens.ElementAt(i);
+                            if (next != null)
+                            {
+                                if (next.Word == "'s")
+                                {
+                                    sb_sentence.Append(word.Word);
+                                }
+                                else
+                                {
+                                    if (word.Word == "-LRB-")
+                                    {
+                                        sb_sentence.Append("(");
+                                    }
+                                    else if (word.Word == "-RRB-")
+                                    {
+                                        sb_sentence.Append(")");
+                                    }
+                                    else
+                                    {
+                                        sb_sentence.Append(word.Word + " ");
+                                    }
+                                    
+                                }
+                            }
+                            
+                        }                        
                         sb_document.AppendLine(sb_sentence.ToString());
                     }
                     var ouputfile = Path.Combine(options.OutputFile, Path.GetFileNameWithoutExtension(item));

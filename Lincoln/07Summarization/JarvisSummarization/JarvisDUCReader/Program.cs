@@ -78,9 +78,12 @@ namespace JarvisDUCReader
                     else if (file_name.StartsWith("AP"))
                     {
                         var TEXT = (from c in element.Elements("TEXT")
-                                    select c).First();
+                                    select c);
 
-                        sb.AppendLine(TEXT.Value);
+                        foreach (var item in TEXT)
+                        {
+                            sb.AppendLine(item.Value);
+                        }                        
                     }
                     else if (file_name.StartsWith("LA"))
                     {
