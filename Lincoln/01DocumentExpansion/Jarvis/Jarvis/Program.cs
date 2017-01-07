@@ -18,6 +18,7 @@ namespace Jarvis
         [Option('o', "output", Required =true,
           HelpText = "Prints all messages to standard output.")]
         public string OutputFile { get; set; }
+               
 
         [Option('d', "debug", DefaultValue = false, Required = false,
           HelpText = "Prints all messages to standard output.")]
@@ -201,15 +202,16 @@ namespace Jarvis
                         for (int i = 0; i < sentence.Tokens.Count; i++)
                         {
                             Token next = null;
+                            var word = sentence.Tokens.ElementAt(i);
                             if (i + 1 < sentence.Tokens.Count)
                             {
                                 next = sentence.Tokens.ElementAt(i + 1);
                             }
                             
-                            var word = sentence.Tokens.ElementAt(i);
+                            
                             if (next != null)
                             {
-                                if (next.Word == "'s")
+                                if (next.Word == "'s" || next.Word == ",")
                                 {
                                     sb_sentence.Append(word.Word);
                                 }
@@ -222,7 +224,7 @@ namespace Jarvis
                                     else if (word.Word == "-RRB-")
                                     {
                                         sb_sentence.Append(")");
-                                    }
+                                    }                                    
                                     else
                                     {
                                         sb_sentence.Append(word.Word + " ");
@@ -235,7 +237,7 @@ namespace Jarvis
                         sb_document.AppendLine(sb_sentence.ToString());
                     }
                     var ouputfile = Path.Combine(options.OutputFile, Path.GetFileNameWithoutExtension(item));
-                    File.WriteAllText(ouputfile + ".txt", sb_document.ToString());
+                    File.WriteAllText(ouputfile + ".txt", sb_document.ToString().Replace(" 's ", "'s ").Replace("''", "\"").Replace("``", "\""));
                 }
 
             }
