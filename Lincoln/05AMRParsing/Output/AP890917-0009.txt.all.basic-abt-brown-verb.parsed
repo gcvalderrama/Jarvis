@@ -1,0 +1,277 @@
+# ::id 1
+# ::snt A strong earthquake shook the Caspian Sea region of the Soviet Union and Iran before dawn Sunday, the third relatively strong earthquake in the area since Tuesday, Iran's official Islamic Republic News Agency reported
+(x4 / shake-01
+	:ARG0 (x3 / earthquake
+		:mod (x2 / strong))
+	:null_edge (x11 / country
+		:name (n / name
+			:op1 "Soviet"
+			:op2 "Union")
+		:null_edge (x14 / country
+			:name (n1 / name
+				:op1 "Iran")
+			:null_edge "Caspian"))
+	:time (x15 / before
+		:op1 (x16 / dawn))
+	:ARG1 (x23 / earthquake
+		:mod (x22 / strong
+			:mod (x21 / relative))
+		:time (x27 / since
+			:op1 (x37 / report-01
+				:ARG0 (x36 / agency
+					:null_edge (x30 / country
+						:name (n2 / name
+							:op1 "Iran"))
+					:null_edge (x32 / official)
+					:mod (x33 / religious-group
+						:name (n3 / name
+							:op1 "Islamic"))
+					:null_edge (x34 / null_tag)
+					:null_edge (x35 / null_tag))
+				:time (xap1 / date-entity
+					:weekday (x28 / tuesday)))))
+	:time (xap0 / date-entity
+		:weekday (x17 / sunday)))
+
+# ::id 2
+# ::snt There was no word of casualties or damage from the quake centered in Soviet Azerbaijan 250 miles northwest of Tehran, measuring 5.6 on the Richter scale, said the agency monitored in Nicosia
+(x29 / say-01
+	:polarity -
+	:ARG1 (x7 / or
+		:op1 (x6 / casualty)
+		:op2 (x8 / damage-01))
+	:ARG0 (x11 / quake
+		:ARG1-of (x12 / center-01
+			:location (x15 / country
+				:name (n1 / name
+					:op1 "Azerbaijan")
+				:mod (x18 / northwest
+					:null_edge (x20 / city
+						:name (n3 / name
+							:op1 "Tehran"))
+					:ARG1-of (xap1 / country
+						:ARG0-of (xap0 / name
+							:op1 (x14 / country
+								:name (n4 / name
+									:op1 "Soviet")))))))
+		:ARG0-of (x22 / measure-01
+			:ARG1 (x23 / 5.6)
+			:degree (x27 / scale
+				:ARG0 (x26 / person
+					:name (n2 / name
+						:op1 "Richter")))))
+	:ARG1 (x32 / monitor-01
+		:location (x34 / country
+			:name (n / name
+				:op1 "Nicosia"))))
+
+# ::id 3
+# ::snt An observatory in Hong Kong said the quake was centered in the Caspian Sea about 120 miles northeast of the Azerbaijani capital and port city of Baku and measured 6.5 on the Richter scale
+(x6 / say-01
+	:ARG0 (x2 / observatory
+		:location (x4 / city
+			:name (n / name
+				:op1 "Hong"
+				:op2 "Kong")))
+	:ARG1 (x28 / and
+		:op1 (x10 / center-01
+			:ARG1 (x8 / quake))
+		:op2 (x23 / and
+			:location (x18 / northeast
+				:quant (x17 / distance-quantity
+					:unit (m / mile)
+					:null_edge (x15 / about
+						:null_edge 120)))
+			:op1 (x22 / capital
+				:mod (x21 / world-region
+					:name (n1 / name
+						:op1 "Azerbaijani"))
+				:mod (x24 / port)
+				:poss (x27 / country
+					:name (n2 / name
+						:op1 "Baku")))
+			:op2 (x25 / city
+				:ARG1-of (xap0 / name
+					:op1 "Caspian")))
+		:op2 (x29 / measure-01
+			:quant 6.5
+			:manner (x34 / scale
+				:ARG0 (x33 / person
+					:name (n3 / name
+						:op1 "Richter"))))))
+
+# ::id 4
+# ::snt IRNA, monitored in Nicosia, said Tehran and other cities in northern Iran were jolted by the earthquake registered by the Tehran University Geophysics Center at 4:24 a.m. (8:54 p.m. EDT Saturday )
+(x7 / say-01
+	:ARG0 (x1 / publication
+		:name (n / name
+			:op1 "IRNA")
+		:ARG1-of (x3 / monitor-01
+			:location (x5 / country
+				:name (n1 / name
+					:op1 "Nicosia"))))
+	:ARG1 (x16 / jolt
+		:ARG1 (x9 / and
+			:op1 (x8 / city
+				:name (n2 / name
+					:op1 "Tehran"))
+			:op2 (x11 / city
+				:mod (x10 / other)
+				:name (x13 / name
+					:op1 "northern"
+					:part-of (x14 / country
+						:name (n4 / name
+							:op1 "Iran")))))
+		:ARG0 (x19 / earthquake
+			:ARG1-of (x20 / register-02
+				:ARG0 (x23 / government-organization
+					:name (n3 / name
+						:op1 "Tehran"
+						:op2 "University"
+						:op3 "Geophysics"
+						:op4 "Center"))
+				:null_edge (x28 / include-91
+					:weekday (x34 / saturday
+						:null_edge (x31 / include-91)))))))
+
+# ::id 5
+# ::snt IRNA reported Saturday that an earthquake registering 5.5 on the Richter scale shook the region Saturday
+(x2 / report-01
+	:ARG0 (x1 / publication
+		:name (n / name
+			:op1 "IRNA"))
+	:ARG1 (x13 / shake-01
+		:ARG0 (x6 / earthquake
+			:ARG0-of (x7 / register-02
+				:ARG1 5.5
+				:manner (x12 / scale
+					:ARG0 (x11 / person
+						:name (n1 / name
+							:op1 "Richter")))))
+		:ARG1 (x15 / region)
+		:time (xap1 / date-entity
+			:weekday (x16 / saturday)))
+	:time (xap0 / date-entity
+		:weekday (x3 / saturday)))
+
+# ::id 6
+# ::snt The U.S. Geological Survey in Washington said that quake, also with an epicenter east of Baku, registered 6.6
+(x7 / say-01
+	:ARG0 (x4 / survey-01
+		:mod (x3 / organization
+			:name (n / name
+				:op1 "Geological"))
+		:location (x6 / city
+			:name (n1 / name
+				:op1 "Washington")))
+	:ARG1 (x19 / register-01
+		:ARG0 (x9 / quake
+			:mod (x8 / that))
+		:ARG1-of (xap0 / cause-01
+			:ARG1 (x14 / epicenter
+				:mod (x15 / east
+					:null_edge (x17 / country
+						:name (n2 / name
+							:op1 "Baku"))))
+			:quant (x20 / 6.6))))
+
+# ::id 7
+# ::snt Another tremor registering 5.2 shook the area around Gorgan, 185 miles east of Tehran on Tuesday, IRNA said
+(x20 / say-01
+	:ARG1 (x5 / shake-01
+		:ARG1 (x2 / tremor
+			:mod (x1 / another)
+			:ARG0-of (x3 / register-02
+				:ARG1 (x4 / 5.2)))
+		:ARG1 (x7 / area
+			:location (x8 / around
+				:op1 (x9 / country
+					:name (n1 / name
+						:op1 "Gorgan")))
+			:location (x13 / east
+				:op1 (x12 / distance-quantity
+					:unit (m / mile))
+				:null_edge (x15 / city
+					:name (n2 / name
+						:op1 "Tehran"))))
+		:time (xap0 / date-entity
+			:weekday (x17 / tuesday)))
+	:ARG0 (x19 / publication
+		:name (n / name
+			:op1 "IRNA")))
+
+# ::id 8
+# ::snt Iran is shaken by hundreds of earthquakes a year, ranging from 2.4 to 5.5 on the Richter Scale
+(x3 / shake-03
+	:ARG1 (x1 / country
+		:name (n / name
+			:op1 "Iran"))
+	:ARG1 (x7 / earthquake
+		:ARG1-of (x11 / range-01
+			:null_edge (x19 / scale
+				:null_edge 2.4
+				:null_edge 5.5
+				:mod (x18 / richter)))))
+
+# ::id 9
+# ::snt The last major earthquake, registering 7.7, was in September 1978
+(x4 / earthquake
+	:mod (x2 / last)
+	:mod (x3 / major)
+	:ARG1 (x6 / register-02
+		:ARG1 (x7 / 7.7))
+	:time (x11 / date-entity
+		:year 1978))
+
+# ::id 10
+# ::snt The last major earthquake killed 25,000 people
+(x5 / kill-01
+	:ARG0 (x4 / earthquake
+		:mod (x2 / last)
+		:mod (x3 / major))
+	:ARG1 (x6 / 25,000))
+
+# ::id 11
+# ::snt The Richter scale is a measure of energy released by an earthquake as recorded on seismographs
+(x6 / measure
+	:domain (x3 / scale
+		:poss (x2 / person
+			:name (n / name
+				:op1 "Richter")))
+	:mod (x8 / energy
+		:ARG1-of (x9 / release-01
+			:ARG0 (x12 / earthquake)
+			:time (x14 / record-01
+				:topic (x16 / seismograph)))))
+
+# ::id 12
+# ::snt Every increase of one whole number means a tenfold increase in magnitude
+(x7 / mean-01
+	:ARG0 (x2 / increase-01
+		:mod (x1 / every)
+		:ARG1 (x6 / number
+			:quant 1
+			:mod (x5 / whole)))
+	:ARG1 (x10 / increase-01
+		:degree (x9 / tenfold)))
+
+# ::id 13
+# ::snt An earthquake of 5 on the Richter scale can cause serious damage and one of 7 can cause widespread heavy damage
+(x13 / and
+	:op1 (x9 / possible
+		:domain (x10 / cause-01
+			:ARG0 (x2 / earthquake
+				:quant 5
+				:mod (x8 / scale
+					:ARG0 (x7 / person
+						:name (n / name
+							:op1 "Richter"))))
+			:ARG1 (x12 / damage-01
+				:mod (x11 / serious))))
+	:op2 (x17 / possible
+		:domain (x18 / cause-01
+			:ARG1 (x21 / damage-01
+				:quant 7
+				:mod (x19 / widespread)
+				:mod (x20 / heavy)))))
+

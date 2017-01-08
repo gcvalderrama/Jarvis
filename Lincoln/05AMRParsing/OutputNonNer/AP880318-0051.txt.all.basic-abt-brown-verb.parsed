@@ -1,0 +1,780 @@
+# ::id 1
+# ::snt Thousands of peole
+(x3 / peole)
+
+# ::id 2
+# ::snt prayed, cheered, danced, beat drums and observed other traditions
+(x9 / and
+	:op1 (x1 / pray-01)
+	:op2 (x5 / dance-01
+		:ARG2 (x3 / cheer-04))
+	:op3 (x7 / beat-01
+		:ARG1 (x8 / drum))
+	:op2 (x10 / person
+		:ARG1-of (o / observe-01)
+		:ARG1 (x12 / tradition
+			:mod (x11 / other))))
+
+# ::id 3
+# ::snt today as a total eclipse of the sun darkened a wide area of
+(x9 / darken
+	:time (x1 / today)
+	:ARG1 (x5 / eclipse-01
+		:ARG0 (x4 / company
+			:name (n / name
+				:op1 "total")
+			:ARG1 (x8 / sun)))
+	:ARG2 (x11 / wide))
+
+# ::id 4
+# ::snt Indonesia and the southern Philippines.
+(x2 / and
+	:op1 (x4 / south
+		:domain (x1 / country
+			:name (n / name
+				:op1 "Indonesia"))))
+
+# ::id 5
+# ::snt 
+(x4 / black
+	:ARG1 (x2 / sun)
+	:ARG0 (x8 / shadow-01
+		:location (x11 / moon
+			:duration (x13 / up
+				:op1 4))))
+
+# ::id 6
+# ::snt minutes along a 108-mile swath that moved from the Indian Ocean
+(x1 / temporal-quantity
+	:unit (m / minute)
+	:location (x2 / along
+		:op1 (x5 / swath
+			:mod (x4 / 108-mile)
+			:ARG1-of (x7 / move-01
+				:ARG2 (x11 / ocean
+					:mod (x10 / country
+						:name (n / name
+							:op1 "India")))))))
+
+# ::id 7
+# ::snt across Indonesia and the southern Philippine island of Mindanao.
+(x1 / across
+	:op1 (x3 / and
+		:op1 (x2 / country
+			:name (n / name
+				:op1 "Indonesia"))
+		:op2 (x7 / island
+			:mod (x5 / south)
+			:mod (x6 / country
+				:name (n1 / name
+					:op1 "Philippine"))
+			:name (x9 / name
+				:op1 "Mindanao"))))
+
+# ::id 8
+# ::snt A partial eclipse was visible across a wide area of Asia as far
+(x5 / visible
+	:domain (x3 / eclipse-01
+		:mod (x2 / partial))
+	:location (x6 / across
+		:location (x11 / continent
+			:name (n / name
+				:op1 "Asia")
+			:mod (x8 / wide)
+			:mod (x13 / far))))
+
+# ::id 9
+# ::snt west as India _ including Southeast Asia, China, Japan and New
+(x1 / west
+	:null_edge (x4 / _
+		:location (x3 / country
+			:name (n / name
+				:op1 "India"))
+		:ARG2-of (x5 / include-91
+			:ARG1 (x12 / and
+				:op1 (x7 / continent
+					:name (n1 / name
+						:op1 "Asia")
+					:null_edge (x6 / null_tag)
+					:null_edge (x13 / null_tag))
+				:op2 (x9 / country
+					:name (n2 / name
+						:op1 "China"))
+				:op2 (x11 / country
+					:name (n3 / name
+						:op1 "Japan"))))))
+
+# ::id 10
+# ::snt Guinea as well as parts of Australia and the Pacific islands.
+(x1 / country
+	:name (n / name
+		:op1 "Guinea")
+	:null_edge (x8 / and
+		:op1 (x7 / country
+			:name (n1 / name
+				:op1 "Australia"))
+		:op2 (x11 / island)))
+
+# ::id 11
+# ::snt Scientists said the eclipse would end at sunset in the Gulf of
+(x2 / say-01
+	:ARG0 (x1 / have-org-role-91
+		:ARG2 (s / scientist))
+	:ARG1 (x6 / end-01
+		:ARG1 (x4 / eclipse-01)
+		:time (x8 / date-entity)
+		:location (x11 / world-region
+			:name (n / name
+				:op1 "Gulf")
+			:ARG2-of (x12 / include-91))))
+
+# ::id 12
+# ::snt Alaska.
+(x1 / state
+	:name (n / name
+		:op1 "Alaska"))
+
+# ::id 13
+# ::snt Clouds obscured the solar spectacular in Jakarta, Indonesia,
+(x2 / obscure
+	:ARG0 (x1 / cloud)
+	:ARG1 (x5 / spectacle
+		:mod (x4 / solar)
+		:location (x7 / city
+			:name (n / name
+				:op1 "Jakarta"))))
+
+# ::id 14
+# ::snt Hong Kong and in the eastern Mindanao city of Davao, where
+(x3 / and
+	:op1 (x1 / city
+		:name (n / name
+			:op1 "Hong"
+			:op2 "Kong")
+		:location (x8 / city
+			:mod (x6 / east)
+			:name (x7 / name
+				:op1 "Mindanao")
+			:location (x10 / country
+				:name (n1 / name
+					:op1 "Davao")))))
+
+# ::id 15
+# ::snt thousands of tourists and scientists had gathered to observe the
+(x7 / gather-01
+	:ARG1 (x4 / and
+		:op1 (x3 / person
+			:ARG0-of (t / tour-01))
+		:op2 (x5 / scientist))
+	:purpose (x9 / observe-01
+		:ARG0 x4))
+
+# ::id 16
+# ::snt eclipse.
+(x1 / eclipse-01)
+
+# ::id 17
+# ::snt But it was visible for about 3 minutes in this city about 650
+(x1 / contrast-01
+	:ARG2 (x4 / visible
+		:duration (x8 / temporal-quantity
+			:unit (m / minute)
+			:quant (x6 / about
+				:op1 3))
+		:location (x11 / city
+			:mod (x10 / this)
+			:quant (x12 / about
+				:op1 (x13 / 650)))))
+
+# ::id 18
+# ::snt miles southeast of Manila despite early scattered clouds. President
+(x10 / have-org-role-91
+	:ARG2 (p / president)
+	:null_edge (x2 / null_tag
+		:part-of (x4 / city
+			:name (n / name
+				:op1 "Manila"))
+		:concession (x8 / cloud
+			:time (x6 / early)
+			:mod (x7 / scattered))))
+
+# ::id 19
+# ::snt Corazon Aquino flew in to witness the event.
+(x3 / fly-01
+	:ARG0 (x1 / newspaper
+		:name (n / name
+			:op1 "Corazon"
+			:op2 "Aquino"))
+	:ARG1 (x6 / person
+		:ARG0-of (w / witness-01)
+		:ARG1 (x8 / event)))
+
+# ::id 20
+# ::snt Richard Fisher of the High Altitude Observatory in Boulder,
+(x1 / name
+	:op1 "Richard"
+	:op2 "Fisher"
+	:ARG0-of (x7 / observatory
+		:mod (x6 / altitude
+			:mod (x5 / high)
+			:location (x9 / country
+				:name (n / name
+					:op1 "Boulder")))))
+
+# ::id 21
+# ::snt Colo., said that despite scattered clouds, scientists were
+(x3 / say-01
+	:ARG0 (x1 / country
+		:name (n / name
+			:op1 "Colo."))
+	:ARG0 (x9 / scientist
+		:ARG1-of (x7 / cloud
+			:ARG1-of (x6 / scatter-01))))
+
+# ::id 22
+# ::snt confident they had taken useful pictures of the eclipse.
+(x1 / confident-41
+	:ARG1 (x6 / picture
+		:mod (x5 / useful)
+		:ARG1 (x9 / eclipse-01)))
+
+# ::id 23
+# ::snt In Jakarta, Wilson Sinambela of the National Institute of
+(x4 / name
+	:op1 "Wilson"
+	:op2 "Sinambela"
+	:location (x2 / city
+		:name (n / name
+			:op1 "Jakarta"))
+	:ARG0-of (x8 / government-organization
+		:name (n1 / name
+			:op1 "National"
+			:op2 "Institute")
+		:ARG1-of (x10 / include-91)))
+
+# ::id 24
+# ::snt Aeronautics said a total eclipse was observed in several parts of
+(x2 / say-01
+	:ARG1 (x7 / person
+		:ARG1-of (o / observe-01)
+		:ARG1 (x5 / eclipse-01
+			:ARG2-of (x4 / total-01))
+		:location (x10 / part
+			:quant (x9 / several))))
+
+# ::id 25
+# ::snt the country, including by about 1,000 tourists in the South Sumatra
+(x4 / include-91
+	:ARG0 (x2 / country)
+	:ARG2 (x8 / person
+		:ARG0-of (t / tour-01)
+		:quant (x6 / about
+			:op1 (x11 / country
+				:name (n / name
+					:op1 "South"
+					:op2 "Sumatra")))))
+
+# ::id 26
+# ::snt capital Palembang.
+(x2 / country
+	:name (n / name
+		:op1 "Palembang")
+	:mod (x1 / capital))
+
+# ::id 27
+# ::snt He said thousands of Indonesians prayed and beat drums to herald
+(x2 / say-01
+	:ARG0 (x1 / he)
+	:ARG1 (x7 / and
+		:op1 (x6 / pray-01
+			:ARG0 (x5 / publication
+				:name (n / name
+					:op1 "Indonesians")))
+		:op3 (x8 / beat-01
+			:ARG1 (x9 / drum
+				:ARG0-of (x11 / herald)))))
+
+# ::id 28
+# ::snt the start of the eclipse, which began in southwestern Sumatra
+(x2 / start
+	:ARG1 (x5 / eclipse-01
+		:ARG1-of (x8 / begin-01
+			:location (x10 / southwest))))
+
+# ::id 29
+# ::snt before heading on to the Philippines.
+(x1 / before
+	:op1 (x2 / head-01
+		:ARG1 (x6 / country
+			:name (n / name
+				:op1 "Philippines"))))
+
+# ::id 30
+# ::snt In Kuala Lumpur, where a partial eclipse blocked out about 80
+(x / xconcept
+	:x (x3 / country
+		:name (n / name
+			:op1 "Lumpur"))
+	:x (x9 / block-01
+		:location (x2 / country
+			:name (n1 / name
+				:op1 "Kuala"))
+		:ARG1 (x11 / about
+			:op1 (x8 / eclipse-01
+				:mod (x7 / partial))
+			:op1 80)))
+
+# ::id 31
+# ::snt percent of the sun, some Malaysian Hindus visited temples to pray
+(x9 / visit-01
+	:ARG2 (x1 / percentage-entity
+		:poss (x4 / sun))
+	:ARG0 (x8 / newspaper
+		:name (n / name
+			:op1 "Hindus")
+		:mod (x6 / some)
+		:mod (x7 / country
+			:name (n1 / name
+				:op1 "Malaysia")))
+	:ARG1 (x10 / temple
+		:ARG0-of (x12 / pray-01)))
+
+# ::id 32
+# ::snt for protection against harm during the eclipse.
+(x2 / protect-01
+	:prep-against (x4 / harm-01)
+	:time (x5 / during))
+
+# ::id 33
+# ::snt In Kurukshetra, India, an estimated 1 million pilgrims dipped
+(x11 / dip-02
+	:location (x2 / country
+		:name (n / name
+			:op1 "Kurukshetra")
+		:location (x4 / country
+			:name (n1 / name
+				:op1 "India")))
+	:ARG1 (xap0 / 600000000
+		:ARG2-of (x7 / estimate-01)))
+
+# ::id 34
+# ::snt into the waters of the sacred Sannihit and Brahmsarover tanks after
+(x3 / water
+	:ARG1 (x8 / and
+		:op1 (x7 / sannihit
+			:mod (x6 / sacred))
+		:op2 (x10 / tank
+			:mod (x9 / brahmsarover))
+		:time (x11 / after-all)))
+
+# ::id 35
+# ::snt a public address system announced the start of the eclipse. Hymns
+(x5 / announce-01
+	:ARG0 (x4 / system
+		:mod (x3 / address
+			:mod (x2 / public)))
+	:ARG1 (x7 / start
+		:ARG1 (x10 / eclipse-01)
+		:ARG1 (x12 / hymns)))
+
+# ::id 36
+# ::snt were chanted and conch shells blown during the ceremony about 90
+(x2 / chant-01
+	:ARG1 (x3 / and
+		:op1 (x6 / blow-06
+			:ARG1 (x5 / shell
+				:mod (x4 / conch))
+			:time (x9 / ceremony
+				:quant (x10 / about
+					:op1 90)))))
+
+# ::id 37
+# ::snt miles north of New Delhi.
+(x1 / distance-quantity
+	:unit (m / mile)
+	:mod (x2 / north
+		:null_edge (x4 / city
+			:name (n / name
+				:op1 "New"
+				:op2 "Delhi"))))
+
+# ::id 38
+# ::snt Clouds blocked the first moments of the eclipse in General
+(x2 / block-01
+	:ARG0 (x1 / cloud)
+	:ARG1 (x8 / eclipse-01
+		:time (x5 / moment))
+	:location (x10 / general))
+
+# ::id 39
+# ::snt Santos City. But the cloud cover broke, setting off wild cheering
+(x8 / break-08
+	:ARG0 (x2 / city
+		:null_edge (x4 / contrast-01)
+		:ARG0-of (x7 / cover-04
+			:ARG1 (x6 / cloud)))
+	:ARG1 (x10 / set-02
+		:ARG1 (x12 / wild
+			:mod (x13 / cheer-04))))
+
+# ::id 40
+# ::snt among the thousands who watched the phenomenon in a scorching
+(x1 / among
+	:op1 (x3 / thousands
+		:ARG0-of (x5 / watch-01
+			:ARG1 (x7 / phenomenon
+				:location (x10 / scorching)))))
+
+# ::id 41
+# ::snt tropical heat.
+(x2 / heat
+	:mod (x1 / tropic))
+
+# ::id 42
+# ::snt Street lights switched on, and members of the Naragcas tribe, in
+(x6 / and
+	:op1 (x3 / switch-01
+		:ARG0 (x2 / light
+			:null_edge (x1 / null_tag))
+		:ARG0 (xap0 / person
+			:ARG0-of (x7 / have-org-role-91
+				:ARG2 (m / member)
+				:ARG1 (x11 / tribe
+					:mod (x10 / country
+						:name (n / name
+							:op1 "Naragcas")))))))
+
+# ::id 43
+# ::snt the city for a festival, danced in the streets to the beat of drums.
+(x7 / dance-01
+	:ARG1 (x2 / city
+		:purpose (x5 / festival))
+	:location (x10 / street)
+	:ARG2 (x13 / beat-01
+		:consist-of (x15 / drum)))
+
+# ::id 44
+# ::snt In Baguio City, 130 miles north of Manila, pregnant women of the
+(x12 / woman
+	:location (x3 / city
+		:location (xap0 / relative-position
+			:location (x2 / country
+				:name (n / name
+					:op1 "Baguio"))
+			:quant (x6 / distance-quantity
+				:unit (m / mile))
+			:direction (x7 / north)
+			:op1 (x9 / city
+				:name (n1 / name
+					:op1 "Manila"))))
+	:mod (x11 / pregnant))
+
+# ::id 45
+# ::snt local Ilocano community rinsed their hair during the eclipse with
+(x4 / rinse
+	:ARG0 (x3 / community
+		:mod (x1 / local)
+		:mod (x2 / ilocano))
+	:ARG1 (x6 / hair)
+	:time (x7 / during))
+
+# ::id 46
+# ::snt water dripped from burned rice straws in a traditional ritual.
+(x2 / drip
+	:ARG0 (x1 / water)
+	:ARG2 (x6 / straw
+		:ARG1-of (x4 / burn-01)
+		:mod (x5 / rice)
+		:location (x10 / ritual
+			:mod (x9 / tradition))))
+
+# ::id 47
+# ::snt According to local superstition, babies conceived during or
+(x7 / conceive-01
+	:ARG1 (x4 / superstition
+		:mod (x3 / local))
+	:ARG0 (x6 / baby)
+	:time (x9 / or))
+
+# ::id 48
+# ::snt shortly before an eclipse will be deformed unless their mothers
+(x7 / deform
+	:time (x2 / before
+		:mod (x1 / short)
+		:op1 (x4 / eclipse-01))
+	:ARG1 (x10 / mother))
+
+# ::id 49
+# ::snt practice the ritual.
+(x1 / practice
+	:ARG1 (x3 / ritual))
+
+# ::id 50
+# ::snt Many other Filipinos marked the eclipse by going to church. The
+(x4 / mark-01
+	:ARG0 (x2 / other
+		:quant (x1 / many))
+	:ARG1 (x6 / eclipse-01)
+	:ARG1 (x8 / go-01
+		:ARG4 (x10 / church)))
+
+# ::id 51
+# ::snt Philippines is Asia's only predominately Christian country.
+(x8 / country
+	:domain (x1 / country
+		:name (n / name
+			:op1 "Philippines"))
+	:null_edge (x3 / continent
+		:name (n1 / name
+			:op1 "Asia"))
+	:mod (x5 / only)
+	:mod (x6 / predominately)
+	:mod (x7 / religious-group
+		:name (n2 / name
+			:op1 "Christian")))
+
+# ::id 52
+# ::snt "This phenomenon is a clear reminder from God for mankind to
+(x7 / remind-01
+	:domain (x3 / phenomenon
+		:mod (x2 / this))
+	:mod (x6 / clear)
+	:ARG0 (x9 / person
+		:name (n / name
+			:op1 "God")))
+
+# ::id 53
+# ::snt repent its sins," said Theresa Teopengco, a government employee.
+(x6 / say-01
+	:ARG1 (x1 / repent
+		:ARG1 (x3 / sin-01))
+	:ARG0 (x7 / newspaper
+		:name (n / name
+			:op1 "Theresa"
+			:op2 "Teopengco")
+		:ARG0-of (x12 / person
+			:ARG1-of (e / employ-01)
+			:mod (x11 / government-organization
+				:ARG0-of (g / govern-01)))))
+
+# ::id 54
+# ::snt Officials said about 20,000 tourists and scientists from around
+(x2 / say-01
+	:ARG1 (x6 / and
+		:op1 (x5 / person
+			:ARG0-of (t / tour-01)
+			:quant (x3 / about
+				:op1 (x4 / 20,000))
+			:location (x9 / around))
+		:op2 (x7 / scientist))
+	:ARG0 (xap0 / person
+		:ARG0-of (x1 / have-org-role-91
+			:ARG2 (o / official))))
+
+# ::id 55
+# ::snt the world had come to the southern Philippines to watch the
+(x4 / come-01
+	:ARG1 (x2 / world)
+	:ARG2 (x7 / south
+		:part-of (x8 / country
+			:name (n / name
+				:op1 "Philippines")))
+	:purpose (x10 / watch-01
+		:ARG0 x2))
+
+# ::id 56
+# ::snt eclipse, the last one expected here for at least 50 years.
+(x6 / expect-01
+	:ARG0 (x1 / eclipse-01)
+	:time (x4 / last)
+	:location (x7 / here)
+	:duration (x12 / temporal-quantity
+		:unit (y / year)))
+
+# ::id 57
+# ::snt Scientists said the area afforded the best opportunity to
+(x2 / say-01
+	:ARG0 (x1 / have-org-role-91
+		:ARG2 (s / scientist))
+	:ARG1 (x5 / afford-01
+		:ARG0 (x4 / area)
+		:ARG1 (x8 / opportunity
+			:mod (x7 / good
+				:degree (m / most)))))
+
+# ::id 58
+# ::snt witness and study the eclipse because skies are usually clear this
+(x2 / and
+	:op1 (x1 / person
+		:ARG0-of (w / witness-01)
+		:ARG1 (x5 / eclipse-01))
+	:op2 (x3 / study-01)
+	:ARG1-of (x6 / cause-01
+		:ARG0 (x10 / clear
+			:mod (x9 / usual)
+			:ARG1 (x11 / this))))
+
+# ::id 59
+# ::snt time of year.
+(x3 / year)
+
+# ::id 60
+# ::snt But in Davao City, 60 miles to the northeast, morning clouds
+(x1 / contrast-01
+	:ARG2 (x13 / cloud
+		:location (x4 / city
+			:null_edge (x3 / country
+				:name (n / name
+					:op1 "Davao")))
+		:ARG2 (x7 / distance-quantity
+			:unit (m / mile)
+			:quant 60
+			:null_edge (x10 / northeast))
+		:time (x12 / morning)))
+
+# ::id 61
+# ::snt sent hundreds scurrying to the airport for flights to General
+(x1 / send-01
+	:ARG1 (x3 / scurry
+		:ARG4 (x6 / airport)
+		:ARG1 (x8 / fly-01
+			:op (f / flight)
+			:beneficiary (x10 / general))))
+
+# ::id 62
+# ::snt Santos.
+(x1 / person
+	:name (n / name
+		:op1 "Santos"))
+
+# ::id 63
+# ::snt Church bells in Davao tolled while police and civilians set off
+(x5 / toll
+	:ARG0 (x2 / bell
+		:poss (x1 / organization
+			:name (n / name
+				:op1 "Church"))
+		:location (x4 / country
+			:name (n1 / name
+				:op1 "Davao")))
+	:concession (x10 / set-08
+		:ARG1 (x8 / and
+			:op1 (x7 / police)
+			:op2 (x9 / civilian))))
+
+# ::id 64
+# ::snt firecrackers and fired weapons in the air to mark the eclipse.
+(x2 / and
+	:op1 (x3 / fire-01
+		:ARG0 (x1 / firecracker)
+		:ARG1 (x4 / weapon)
+		:location (x7 / air)
+		:purpose (x9 / mark-01
+			:ARG1 (x11 / eclipse-01))))
+
+# ::id 65
+# ::snt In Manila, thousands turned out under clear skies to see the
+(x5 / turn-02
+	:location (x2 / city
+		:name (n / name
+			:op1 "Manila"))
+	:ARG2 (x9 / sky
+		:mod (x8 / clear))
+	:purpose (x11 / see-01))
+
+# ::id 66
+# ::snt partial eclipse that blocked about 75 percent of the sun's surface
+(x4 / block-01
+	:ARG1 (x2 / eclipse-01
+		:mod (x1 / partial))
+	:ARG1 (x5 / about
+		:op1 (x7 / percentage-entity
+			:value 75
+			:poss (x12 / surface
+				:poss (x10 / sun)))))
+
+# ::id 67
+# ::snt at its height.
+(x3 / height)
+
+# ::id 68
+# ::snt Police said four people were injured when a passenger bus
+(x2 / say-01
+	:ARG0 (x1 / police)
+	:ARG1 (x6 / injure-01
+		:ARG1 4
+		:time (x10 / bus
+			:mod (x9 / passenger))))
+
+# ::id 69
+# ::snt collided with a jeep during the eclipse.
+(x1 / collide-01
+	:ARG1 (x4 / jeep)
+	:time (x5 / during))
+
+# ::id 70
+# ::snt "The drivers were probably looking skyward when the accident
+(x6 / look-01
+	:ARG0 (x3 / person
+		:ARG0-of (d / drive-01))
+	:mod (x5 / probable)
+	:manner (x7 / skyward)
+	:time (x10 / accident))
+
+# ::id 71
+# ::snt occurred," said policeman Ricardo Manansala. "It's impossible to
+(x4 / say-01
+	:ARG1 (x1 / occur-01)
+	:ARG0 (x6 / newspaper
+		:name (n / name
+			:op1 "Ricardo"
+			:op2 "Manansala")
+		:ARG0-of (x5 / policeman)))
+
+# ::id 72
+# ::snt gaze at the sky and drive a vehicle at the same time."
+(x5 / and
+	:op1 (x1 / gaze
+		:location (x4 / sky))
+	:op2 (x6 / drive-02
+		:ARG1 (x8 / vehicle)
+		:time (x12 / time
+			:ARG1-of (x11 / same-41))))
+
+# ::id 73
+# ::snt Solar eclipses occur when the moon positions itself between the
+(x2 / eclipse-01
+	:mod (x1 / solar)
+	:ARG1 (x7 / position
+		:ARG0 (x6 / moon)))
+
+# ::id 74
+# ::snt Earth and the sun. The Chinese first recorded a total solar eclipse
+(x2 / and
+	:op1 (x1 / planet
+		:name (n / name
+			:op1 "Earth")
+		:null_edge (x9 / record-01
+			:ARG0 (x7 / country
+				:name (n1 / name
+					:op1 "China"))
+			:ARG2-of (x11 / total-01)
+			:ARG1 (x13 / eclipse-01
+				:mod (x12 / solar))))
+	:op2 (x4 / sun))
+
+# ::id 75
+# ::snt in 2137 B.C., regarding them as signs of a battle to death between
+(x5 / regard-01
+	:time (x2 / date-entity
+		:year 2137)
+	:ARG2 (x8 / sign
+		:ARG1 (x11 / battle-01
+			:ARG1 (x14 / between))))
+
+# ::id 76
+# ::snt the sun and the dragon.
+(x3 / and
+	:op1 (x2 / sun)
+	:op2 (x5 / dragon))
+

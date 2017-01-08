@@ -1,0 +1,548 @@
+# ::id 1
+# ::snt Six organizations are asking news media around
+(x4 / ask-02
+	:ARG0 (x2 / organization
+		:quant 6)
+	:ARG1 (x6 / media
+		:mod (x5 / news))
+	:location (x7 / around))
+
+# ::id 2
+# ::snt the world to publicize the fourth anniversary of Terry Anderson's
+(x4 / publicize-01
+	:ARG0 (x2 / world)
+	:ARG1 (x7 / anniversary
+		:name (x9 / name
+			:op1 "Terry"
+			:op2 "Anderson")))
+
+# ::id 3
+# ::snt kidnapping on Thursday.
+(x1 / kidnap-01
+	:time (xap0 / date-entity
+		:weekday (x3 / thursday)))
+
+# ::id 4
+# ::snt "Today, March 16, 1989, the American journalist Terry Anderson,
+(x2 / today
+	:name (x4 / name
+		:op1 "March"
+		:op2 "16"
+		:op3 ","
+		:op4 "1989")
+	:name (x12 / name
+		:op1 "Terry"
+		:op2 "Anderson"
+		:mod (x10 / country
+			:name (n / name
+				:op1 "American"))
+		:ARG0-of (x11 / journalist)))
+
+# ::id 5
+# ::snt 41, chief Middle East correspondent for The Associated Press in
+(x6 / have-org-role-91
+	:ARG2 (c / correspondent)
+	:null_edge 41
+	:mod (x3 / chief)
+	:ARG1 (x10 / press
+		:null_edge (x8 / null_tag)
+		:null_edge (x9 / null_tag)))
+
+# ::id 6
+# ::snt Beirut, entered his fifth year of captivity as a hostage in
+(x3 / enter-01
+	:ARG0 (x1 / city
+		:name (n / name
+			:op1 "Beirut"))
+	:ARG1 (x8 / captivity
+		:ARG1 (x11 / hostage)))
+
+# ::id 7
+# ::snt Lebanon," said a statement that the groups asked broadcasters to
+(x6 / state-01
+	:ARG1 (x1 / country
+		:name (n / name
+			:op1 "Lebanon"))
+	:ARG1 (x10 / ask-02
+		:ARG2 (x9 / group)
+		:ARG2 (x11 / person
+			:ARG0-of (b / broadcast-01))))
+
+# ::id 8
+# ::snt air and newspapers to use on their front pages.
+(x5 / use-01
+	:ARG1 (x2 / and
+		:op1 (x1 / air)
+		:op2 (x3 / newspaper))
+	:ARG1 (x9 / page
+		:mod (x8 / front)))
+
+# ::id 9
+# ::snt The "statement of solidarity with Anderson" is from "the
+(x3 / state-01
+	:ARG1 (x5 / solidarity
+		:ARG1 (x7 / person
+			:name (n / name
+				:op1 "Anderson"))))
+
+# ::id 10
+# ::snt leading freedom of expression organizations in the Western world,"
+(x1 / lead-01
+	:ARG1 (x2 / free-41
+		:ARG1 (x5 / organization
+			:mod (x4 / expression)
+			:ARG0-of (xap0 / source-02
+				:location (x9 / world
+					:mod (x8 / world-region
+						:name (n / name
+							:op1 "Western")))))))
+
+# ::id 11
+# ::snt Anne Nelson, executive director of the New York-based Committee to
+(x1 / name
+	:op1 "Anne"
+	:op2 "Nelson"
+	:ARG0-of (x5 / have-org-role-91
+		:ARG2 (d / director)
+		:mod (x4 / executive)
+		:ARG1 (x10 / organization
+			:name (n / name
+				:op1 "Committee")
+			:null_edge (x8 / null_tag))))
+
+# ::id 12
+# ::snt Protect Journalists, said Monday.
+(x4 / say-01
+	:ARG1 (x1 / protect-01
+		:ARG1 (x2 / journalist))
+	:time (x5 / monday))
+
+# ::id 13
+# ::snt Ms. Nelson said she also will read the statement Thursday at the
+(x3 / say-01
+	:ARG0 (x2 / person
+		:name (n / name
+			:op1 "Nelson")
+		:null_edge (x1 / ms.))
+	:ARG1 (x9 / state-01
+		:mod (x5 / also)
+		:time (xap0 / date-entity
+			:weekday (x10 / thursday))))
+
+# ::id 14
+# ::snt National Press Club in Washington during a news conference
+(x3 / country
+	:name (n / name
+		:op1 "Club")
+	:null_edge (x1 / null_tag)
+	:null_edge (x2 / null_tag)
+	:location (x5 / city
+		:name (n1 / name
+			:op1 "Washington"))
+	:time (x9 / conference
+		:mod (x8 / news)))
+
+# ::id 15
+# ::snt announcing her group's "annual attacks-on-the-press report."
+(x1 / name
+	:op1 "announcing"
+	:ARG1 (x8 / report-01
+		:ARG0 (x3 / group)
+		:mod (x7 / attacks-on-the-press)))
+
+# ::id 16
+# ::snt A speech by Vice President Dan Quayle on freedom of the press is
+(x2 / speech
+	:ARG0 (x7 / person
+		:name (n / name
+			:op1 "Quayle")
+		:null_edge (x4 / vice)
+		:null_edge (x5 / have-org-role-91
+			:ARG2 (p / president))
+		:null_edge (x6 / null_tag))
+	:ARG1 (x9 / free-41
+		:ARG1 (x12 / press)))
+
+# ::id 17
+# ::snt scheduled at the Press Club later Thursday.
+(x1 / schedule-01
+	:location (x5 / club
+		:mod (x4 / press))
+	:time (x6 / late
+		:op1 (x7 / thursday)))
+
+# ::id 18
+# ::snt "We call on President Bush and Vice President Quayle to use
+(x3 / call-01
+	:ARG0 (x2 / we)
+	:ARG1 (x12 / use-01
+		:ARG1 (x7 / and
+			:op1 (x6 / person
+				:name (n / name
+					:op1 "Bush")
+				:ARG0-of (x5 / have-org-role-91
+					:ARG2 (p / president)))
+			:op2 (x10 / person
+				:name (n1 / name
+					:op1 "Quayle")
+				:ARG0-of (x9 / have-org-role-91
+					:ARG2 (p1 / president)
+					:mod (x8 / vice))))))
+
+# ::id 19
+# ::snt every possible means at their disposal to bring Terry Anderson and
+(x3 / mean
+	:mod (x1 / every)
+	:mod (x2 / possible)
+	:location (x6 / disposal
+		:ARG1 (x11 / and
+			:op1 (x8 / bring-01
+				:ARG1 (x9 / name
+					:op1 "Terry"
+					:op2 "Anderson")))))
+
+# ::id 20
+# ::snt the other hostages home," Ms. Nelson said.
+(x9 / say-01
+	:ARG0 (x3 / hostage
+		:mod (x2 / other)
+		:mod (x4 / home))
+	:ARG0 (x8 / person
+		:name (n / name
+			:op1 "Nelson")
+		:null_edge (x7 / ms.)))
+
+# ::id 21
+# ::snt Other organizations urging publication of the anniversary
+(x2 / organization
+	:mod (x1 / other)
+	:ARG0-of (x3 / urge-01
+		:ARG1 (x4 / publication
+			:ARG1 (x7 / anniversary))))
+
+# ::id 22
+# ::snt statement are: Article 19 of London; International Federation of
+(x1 / state-01
+	:quant 19
+	:ARG0 (x7 / city
+		:name (n / name
+			:op1 "London")))
+
+# ::id 23
+# ::snt Publishers in Paris; the International Federation of Journalists in
+(x / xconcept
+	:x (x4 / and
+		:op1 (x1 / publishers
+			:location (x3 / city
+				:name (n / name
+					:op1 "Paris"))
+			:null_edge (x9 / journalist
+				:mod (x6 / international)))))
+
+# ::id 24
+# ::snt Brussels; Index on Censorship in London; and Observatoire de
+(x / xconcept
+	:x (x2 / and
+		:op1 (x1 / city
+			:name (n / name
+				:op1 "Brussels"))
+		:op2 (x3 / index
+			:null_edge (x5 / have-org-role-91
+				:ARG1 (o / organization
+					:name (n1 / name
+						:op1 "Censorship"))
+				:location (x7 / city
+					:name (n2 / name
+						:op1 "London"))))
+		:op3 (x9 / and))
+	:x (x8 / and
+		:op3 (x10 / have-org-role-91
+			:ARG1 (c / country
+				:name (n3 / name
+					:op1 "Observatoire"
+					:op2 "de")))))
+
+# ::id 25
+# ::snt L'Information in France.
+(x1 / l'information
+	:location (x3 / country
+		:name (n / name
+			:op1 "France")))
+
+# ::id 26
+# ::snt In a separate letter to its members, the 150,000-member
+(x10 / 150,000-member
+	:prep-within (x4 / letter
+		:mod (x3 / separate)
+		:ARG2 (xap0 / person
+			:ARG0-of (x7 / have-org-role-91
+				:ARG2 (m / member)))))
+
+# ::id 27
+# ::snt International Federation of Journalists said: "On March 16, another
+(x5 / say-01
+	:ARG0 (x4 / journalist
+		:mod (x1 / international))
+	:time (x9 / date-entity)
+	:null_edge (x12 / another))
+
+# ::id 28
+# ::snt shameful date in the calendar passes _ the fourth anniversary of
+(x2 / date
+	:mod (x1 / shameful)
+	:ARG2 (x6 / pass
+		:ARG1 (x10 / anniversary
+			:ARG1-of (x11 / include-91))))
+
+# ::id 29
+# ::snt captivity for American journalist Terry Anderson, who is held
+(x1 / captivity
+	:name (x5 / name
+		:op1 "Terry"
+		:op2 "Anderson"
+		:mod (x3 / country
+			:name (n / name
+				:op1 "American"))
+		:ARG0-of (x4 / journalist)
+		:ARG1-of (x10 / hold-04)))
+
+# ::id 30
+# ::snt hostage in Beirut."
+(x1 / hostage
+	:location (x3 / city
+		:name (n / name
+			:op1 "Beirut")))
+
+# ::id 31
+# ::snt The IFJ asked its members in 37 nations to draw attention to the
+(x3 / ask-01
+	:ARG0 (x2 / organization
+		:name (n / name
+			:op1 "IFJ"))
+	:ARG1 (x10 / draw-03
+		:ARG1 (x11 / attention)
+		:ARG0 (xap0 / person
+			:ARG0-of (x5 / have-org-role-91
+				:ARG2 (m / member)
+				:ARG1 (x8 / nation
+					:quant 37))))
+	:ARG0 xap0)
+
+# ::id 32
+# ::snt plight of British journalist John McCarthy, who marked his 1,000th
+(x1 / plight
+	:ARG0 (x4 / journalist
+		:name (x5 / event
+			:name (n / name
+				:op1 "John"
+				:op2 "McCarthy")
+			:mod (x3 / country
+				:name (n1 / name
+					:op1 "Britain"))
+			:ARG0-of (x9 / mark-01
+				:ARG1 (x12 / th)))))
+
+# ::id 33
+# ::snt day of captivity on Jan. 10.
+(x1 / temporal-quantity
+	:unit (d / day)
+	:time-of (x3 / captivity)
+	:time (x5 / date-entity))
+
+# ::id 34
+# ::snt The IFJ said it will place advertisements in Beirut newspapers to
+(x3 / say-01
+	:ARG0 (x2 / organization
+		:name (n / name
+			:op1 "IFJ"))
+	:ARG1 (x6 / place-01
+		:ARG1 (x7 / advertisement
+			:location (x9 / city
+				:name (n1 / name
+					:op1 "Beirut"))
+			:location (x10 / newspaper))))
+
+# ::id 35
+# ::snt urge the release of all hostages.
+(x1 / urge-01
+	:ARG1 (x3 / release-01
+		:ARG1 (x6 / hostage
+			:quant (x5 / all))))
+
+# ::id 36
+# ::snt IFJ members also were urged to send letters requesting diplomatic
+(x5 / urge-01
+	:ARG2 (x2 / have-org-role-91
+		:ARG2 (m / member)
+		:ARG1 (x1 / organization
+			:name (n / name
+				:op1 "IFJ")))
+	:mod (x3 / also)
+	:ARG2 (x7 / send-03
+		:ARG0 x2
+		:ARG1 (x8 / letter
+			:ARG0-of (x9 / request-01
+				:ARG1 (x10 / diplomacy)))))
+
+# ::id 37
+# ::snt initiatives to the ambassadors of the United States, the United
+(x / xconcept
+	:x (x1 / initiate-01)
+	:x (x4 / ambassador
+		:ARG1 (x7 / country
+			:name (n / name
+				:op1 "United"
+				:op2 "States"))
+		:null_edge "United"))
+
+# ::id 38
+# ::snt Kingdom, Syria and Iran and to "publicize the plight of the
+(x / xconcept
+	:x (x4 / and
+		:op1 (x1 / country
+			:name (n / name
+				:op1 "Kingdom")
+			:null_edge (x5 / country
+				:name (n2 / name
+					:op1 "Iran")))
+		:op10 (x3 / country
+			:name (n1 / name
+				:op1 "Syria"))
+		:op4 (x9 / publicize-01
+			:ARG1 (x11 / plight)))
+	:x (x6 / and))
+
+# ::id 39
+# ::snt journalists" in union journals and national media.
+(x1 / journalist
+	:location (x6 / and
+		:op1 (x5 / journal
+			:mod (x4 / union))
+		:op2 (x8 / media
+			:mod (x7 / nation))))
+
+# ::id 40
+# ::snt In London, IFJ Secretary General Aidan White will be accompanied
+(x11 / accompany-01
+	:location (x2 / city
+		:name (n / name
+			:op1 "London"))
+	:ARG1 (x7 / name
+		:op1 "Aidan"
+		:op2 "White"
+		:ARG0-of (x5 / have-org-role-91
+			:ARG2 (s / secretary)
+			:ARG1 (x4 / organization
+				:name (n1 / name
+					:op1 "IFJ")))
+		:ARG0-of (x6 / general)))
+
+# ::id 41
+# ::snt by McCarthy's girlfriend, Gill Morell, and several trade union
+(x9 / and
+	:op1 (x4 / girlfriend
+		:poss (x2 / person
+			:name (n / name
+				:op1 "McCarthy"))
+		:poss (x7 / person
+			:name (n1 / name
+				:op1 "Morell")))
+	:op2 (x12 / union
+		:quant (x10 / several)
+		:ARG1 (x11 / trade-01)))
+
+# ::id 42
+# ::snt leaders when they meet with U.S. Embassy officials.
+(x1 / person
+	:ARG0-of (l / lead-02)
+	:ARG0-of (x4 / meet-03
+		:ARG0 (xap0 / person
+			:ARG0-of (x8 / have-org-role-91
+				:ARG2 (o / official)
+				:ARG1 (x6 / country
+					:name (n / name
+						:op1 "U.S."))
+				:ARG1 (x7 / embassy)))))
+
+# ::id 43
+# ::snt Elsewhere, Charles Dale, the president of the Newspaper Guild of
+(x3 / name
+	:op1 "Charles"
+	:op2 "Dale"
+	:ARG0-of (x1 / elsewhere)
+	:null_edge (x11 / null_tag
+		:mod (x10 / newspaper)))
+
+# ::id 44
+# ::snt the United States and Canada, will lead a delegation to the U.S.
+(x8 / lead-03
+	:ARG0 (x4 / and
+		:op1 (x2 / country
+			:name (n / name
+				:op1 "United"
+				:op2 "States"))
+		:op3 (x5 / country
+			:name (n1 / name
+				:op1 "Canada")))
+	:ARG1 (x10 / delegation
+		:source (x13 / country
+			:name (n2 / name
+				:op1 "U.S."))))
+
+# ::id 45
+# ::snt State Department in Washington on Thursday.
+(x1 / government-organization
+	:name (n / name
+		:op1 "State"
+		:op2 "Department")
+	:location (x4 / city
+		:name (n1 / name
+			:op1 "Washington"))
+	:time (xap0 / date-entity
+		:weekday (x6 / thursday)))
+
+# ::id 46
+# ::snt In Strasbourg, France, Doornaert and French journalist Jean-Paul
+(x7 / and
+	:op1 (x2 / country
+		:name (n / name
+			:op1 "Strasbourg"))
+	:op2 (x4 / country
+		:name (n1 / name
+			:op1 "France"))
+	:op2 (x6 / person
+		:name (n2 / name
+			:op1 "Doornaert"))
+	:op2 (x10 / person
+		:name (n3 / name
+			:op1 "Jean-Paul")
+		:null_edge (x8 / country
+			:name (n4 / name
+				:op1 "France"))
+		:ARG0-of (x9 / journalist)))
+
+# ::id 47
+# ::snt Kauffmann, a former hostage in Lebanon, will meet with European
+(x10 / meet-03
+	:ARG0 (x5 / hostage
+		:domain (x1 / person
+			:name (n / name
+				:op1 "Kauffmann"))
+		:mod (x4 / former)
+		:location (x7 / country
+			:name (n1 / name
+				:op1 "Lebanon")))
+	:null_edge (x12 / name
+		:op1 "European"))
+
+# ::id 48
+# ::snt Parliament leaders to press for the hostages' release.
+(x4 / press-01
+	:ARG0 (x2 / person
+		:ARG0-of (l / lead-02)
+		:ARG1 (x1 / government-organization
+			:name (n / name
+				:op1 "Parliament")))
+	:ARG2 (x9 / release-01
+		:ARG1 (x7 / hostage)))
+

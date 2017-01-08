@@ -1,0 +1,294 @@
+# ::id 1
+# ::snt In a state with few people, the city with the
+(x9 / city
+	:location (x3 / state
+		:location (x5 / few)))
+
+# ::id 2
+# ::snt most wins the power game. In Nevada, that makes Las Vegas the
+(x2 / win-01
+	:degree (x1 / most)
+	:ARG1 (x5 / game
+		:mod (x4 / power))
+	:location (x8 / country
+		:name (n / name
+			:op1 "Nevada"))
+	:ARG0-of (x11 / make-02)
+	:ARG0 (x13 / city
+		:name (n1 / name
+			:op1 "Vegas")
+		:mod (x12 / las)))
+
+# ::id 3
+# ::snt undisputed champ.
+(x2 / champ)
+
+# ::id 4
+# ::snt Las Vegas, which welcomes as many as 6,000 new residents a
+(x2 / city
+	:name (n / name
+		:op1 "Vegas")
+	:mod (x1 / country
+		:name (n1 / name
+			:op1 "Las"))
+	:ARG0-of (x5 / welcome-01
+		:ARG1 (x11 / person
+			:ARG0-of (r / reside-01)
+			:quant (x9 / 6,000
+				:null_edge (x7 / many))
+			:mod (x10 / new)
+			:name (x12 / name
+				:op1 "a"))))
+
+# ::id 5
+# ::snt month, is the reason Nevada is the nation's fastest-growing state.
+(x5 / reason
+	:domain (x1 / temporal-quantity
+		:unit (m / month))
+	:ARG1 (x12 / state
+		:domain (x6 / country
+			:name (n / name
+				:op1 "Nevada"))
+		:poss (x9 / nation)
+		:mod (x11 / fastest-growing)))
+
+# ::id 6
+# ::snt The city's population is expected to reach 1 million by 1995, four
+(x6 / expect-01
+	:ARG1 (x8 / reach-01
+		:ARG0 (x4 / population
+			:poss (x2 / city))
+		:null_edge (x12 / date-entity
+			:year 1995)
+		:ARG1 4))
+
+# ::id 7
+# ::snt times what it was in 1980.
+(x1 / time
+	:null_edge (x6 / date-entity
+		:year 1980))
+
+# ::id 8
+# ::snt An estimated 800,000 people live there now, out of 1.3 million
+(x10 / include-91
+	:ARG3 (x5 / live-01
+		:ARG1-of (x2 / estimate-01
+			:quant (x3 / 800,000))
+		:location (x6 / there)
+		:time (x7 / now)))
+
+# ::id 9
+# ::snt in the state as a whole. The three rural counties fighting Clark
+(x12 / fight-01
+	:location (x3 / state
+		:prep-as (x6 / whole))
+	:ARG0 (x11 / county
+		:quant 3
+		:mod (x10 / rural))
+	:ARG1 (x13 / person
+		:name (n / name
+			:op1 "Clark")))
+
+# ::id 10
+# ::snt County's water plan have a combined population of less than 35,000.
+(x4 / plan-01
+	:ARG0 (x1 / county)
+	:mod (x3 / water)
+	:ARG1 (x8 / population
+		:ARG0-of (x7 / combine-01)
+		:quant (x10 / less-than)))
+
+# ::id 11
+# ::snt That means Clark County controls the Nevada Legislature: 36 of
+(xap0 / multi-sentence
+	:snt3 (x2 / mean-01
+		:ARG0 (x1 / that)
+		:ARG1 (x5 / control-01
+			:ARG0 (x4 / county
+				:null_edge (x3 / country
+					:name (n / name
+						:op1 "Clark")))
+			:ARG1 (x8 / legislature
+				:mod (x7 / country
+					:name (n1 / name
+						:op1 "Nevada"))
+				:null_edge 36))))
+
+# ::id 12
+# ::snt 63 state lawmakers are from the Las Vegas area, and the contingent
+(x2 / state
+	:ARG0 (x3 / lawmaker
+		:null_edge 63
+		:domain (x11 / and
+			:op1 (x9 / area
+				:mod (x7 / country
+					:name (n / name
+						:op1 "Las"))
+				:location (x8 / city
+					:name (n1 / name
+						:op1 "Vegas")))
+			:op2 (x13 / contingent))))
+
+# ::id 13
+# ::snt is sure to grow with next year's reapportionment. So what Clark
+(x4 / grow-03
+	:ARG1 (x9 / reapportionment
+		:time (x7 / year
+			:mod (x6 / next)))
+	:ARG2 (x13 / person
+		:name (n / name
+			:op1 "Clark")))
+
+# ::id 14
+# ::snt County wants, Clark County has the numbers to get.
+(x6 / have-03
+	:ARG1 (x2 / want-01
+		:ARG0 (x1 / county))
+	:ARG0 (x4 / organization
+		:name (n / name
+			:op1 "Clark"
+			:op2 "County"))
+	:ARG1 (x8 / number
+		:quant-of (x10 / get-01)))
+
+# ::id 15
+# ::snt "If there's something in state water law we can hang our hat on
+(x11 / possible
+	:domain (x12 / hang-01
+		:ARG1 (x5 / something
+			:mod (x9 / law
+				:mod (x7 / state)
+				:mod (x8 / water)))
+		:ARG0 (x10 / we)
+		:ARG1 (x14 / hat)))
+
+# ::id 16
+# ::snt to deter this plan, the power is in Las Vegas and Clark County and
+(x2 / deter-01
+	:ARG1 (x4 / plan-01
+		:mod (x3 / this))
+	:ARG1 (x7 / power)
+	:ARG1 (x12 / and
+		:op1 (x11 / city
+			:name (n / name
+				:op1 "Vegas")
+			:mod (x10 / country
+				:name (n1 / name
+					:op1 "Las")))
+		:op2 (x14 / county
+			:null_edge (x13 / country
+				:name (n2 / name
+					:op1 "Clark"))))
+	:ARG1 (x15 / and))
+
+# ::id 17
+# ::snt they'll just go ahead and change the law," said Steve Bradhurst, a
+(x12 / say-01
+	:ARG1 (x6 / and
+		:op1 (x4 / go-01
+			:mod (x3 / just)
+			:ARG2 (x5 / ahead))
+		:op2 (x7 / change-01
+			:ARG1 (x9 / law)))
+	:ARG0 (x13 / newspaper
+		:name (n / name
+			:op1 "Steve"
+			:op2 "Bradhurst")))
+
+# ::id 18
+# ::snt consultant to the rural counties.
+(x1 / person
+	:ARG0-of (c / consult-01)
+	:ARG2 (x5 / county
+		:mod (x4 / rural)))
+
+# ::id 19
+# ::snt Las Vegas also is the state's financial anchor. Last year, Clark
+(x9 / anchor-01
+	:domain (x2 / city
+		:name (n / name
+			:op1 "Vegas")
+		:mod (x1 / country
+			:name (n1 / name
+				:op1 "Las")))
+	:mod (x3 / also)
+	:ARG1 (x6 / state)
+	:mod (x8 / finance)
+	:time (x12 / year
+		:mod (x11 / last)))
+
+# ::id 20
+# ::snt County casinos accounted for 70 percent of the state's $4.6 billion
+(x3 / account-01
+	:ARG0 (x2 / casino
+		:mod (x1 / county))
+	:ARG2 (x6 / percentage-entity
+		:value 70
+		:poss (x9 / state)))
+
+# ::id 21
+# ::snt in gaming revenues. Clark County needs to keep growing for the
+(x7 / need-01
+	:ARG1 (x3 / revenue
+		:mod (x2 / gaming))
+	:ARG0 (x6 / county
+		:null_edge (x5 / country
+			:name (n / name
+				:op1 "Clark")))
+	:ARG1 (x9 / keep-04
+		:ARG0 x6
+		:ARG1 (x10 / grow-03)))
+
+# ::id 22
+# ::snt state's economic health, officials say.
+(x7 / say-01
+	:ARG0 (xap0 / person
+		:ARG0-of (x6 / have-org-role-91
+			:ARG2 (o / official)
+			:ARG1 (x1 / state)
+			:ARG1 (x3 / economy)
+			:ARG1 (x4 / health))))
+
+# ::id 23
+# ::snt "There is one large metropolitan area from which the bulk of
+(x7 / area
+	:quant 1
+	:mod (x5 / large)
+	:mod (x6 / metropolitan)
+	:location-of (x11 / bulk))
+
+# ::id 24
+# ::snt all revenues in this state come, and that's Clark County," said
+(x15 / say-01
+	:ARG1 (x8 / and
+		:op1 (x6 / come-01
+			:ARG1 (x2 / revenue
+				:quant (x1 / all)
+				:location (x5 / state
+					:mod (x4 / this))))))
+
+# ::id 25
+# ::snt Pat Mulroy, manager of the Las Vegas Valley Water District. "If .
+(x1 / name
+	:op1 "Pat"
+	:op2 "Mulroy"
+	:ARG0-of (x4 / manage-01
+		:ARG1 (x7 / government-organization
+			:name (n / name
+				:op1 "Las"
+				:op2 "Vegas"
+				:op3 "Valley"
+				:op4 "Water"
+				:op5 "District"))
+		:mod (x14 / thing
+			:ARG0-of (c / cause-01))))
+
+# ::id 26
+# ::snt .. it goes downhill, the whole state goes downhill."
+(x10 / go-10
+	:ARG1 (x4 / go-01
+		:direction (x5 / downhill))
+	:ARG0 (x9 / state
+		:mod (x8 / whole))
+	:direction (x11 / downhill))
+

@@ -1,0 +1,1221 @@
+# ::id 1
+# ::snt For the past half-year, as the District of
+(x4 / half-year
+	:time (x3 / past)
+	:ARG1 (x8 / district))
+
+# ::id 2
+# ::snt Columbia's murder rate grew ever higher, actor Charlton Heston has
+(x5 / grow-01
+	:ARG1 (x4 / rate
+		:poss (x1 / organization
+			:name (n1 / name
+				:op1 "Columbia"))
+		:mod (x3 / murder-01)
+		:mod (x7 / high
+			:compared-to (x6 / ever)))
+	:ARG1 (x10 / newspaper
+		:name (n / name
+			:op1 "Charlton"
+			:op2 "Heston")
+		:ARG0-of (x9 / actor)))
+
+# ::id 3
+# ::snt noted ironically in a National Rifle Association television ad:
+(x1 / note-01
+	:mod (x2 / ironically)
+	:null_edge (x8 / television
+		:null_edge (x5 / null_tag
+			:null_edge (x6 / organization
+				:name (n / name
+					:op1 "Rifle")
+				:null_edge (x7 / organization
+					:name (n1 / name
+						:op1 "Association")
+					:null_edge "AD")))))
+
+# ::id 4
+# ::snt "They banned guns in this city a decade ago."
+(x3 / ban-01
+	:ARG0 (x2 / they)
+	:ARG1 (x4 / gun)
+	:location (x7 / city
+		:mod (x6 / this))
+	:time (xap0 / before
+		:op1 (x9 / temporal-quantity
+			:unit (d / decade))))
+
+# ::id 5
+# ::snt 
+(x2 / and
+	:op2 (x6 / laugh-01
+		:ARG1 (x4 / criminal)
+		:mod (x5 / just)
+		:ARG1 (x9 / law)
+		:null_edge (x13 / intone)))
+
+# ::id 6
+# ::snt sirens wailing in the background. "That tells me guns aren't the
+(x9 / tell-01
+	:ARG1 (x2 / wail
+		:ARG0 (x1 / siren)
+		:location (x5 / background))
+	:ARG0 (x8 / that)
+	:ARG0 (x11 / gun))
+
+# ::id 7
+# ::snt problem. Criminals are."
+(xap0 / say-01
+	:ARG1 (x1 / problem)
+	:ARG1 (x3 / criminal))
+
+# ::id 8
+# ::snt The District of Columbia has one of the nation's toughest gun
+(x5 / have-03
+	:ARG0 (x2 / government-organization
+		:name (n / name
+			:op1 "District"
+			:op2 "of"
+			:op3 "Columbia"))
+	:ARG1 (x12 / gun
+		:quant 1
+		:poss (x9 / nation)
+		:mod (x11 / tough
+			:degree (m / most))))
+
+# ::id 9
+# ::snt laws, yet armed violence persists. Of the record 438 murders in the
+(x6 / persist-01
+	:ARG1 (x1 / law
+		:topic (x12 / murder-01
+			:mod (x10 / record)
+			:quant (x11 / 438)))
+	:ARG0 (x5 / violence
+		:ARG1-of (x4 / arm-01)))
+
+# ::id 10
+# ::snt nation's capital in 1989, about 78 percent were committed with
+(x3 / capital
+	:poss (x1 / nation)
+	:ARG1-of (x11 / commit-01
+		:time (x5 / date-entity
+			:year 1989)
+		:ARG1 (x7 / about)
+		:ARG1 (x9 / percentage-entity
+			:value 78)))
+
+# ::id 11
+# ::snt firearms, says Metropolitan Police Officer Quintin Peterson.
+(x3 / say-01
+	:ARG1 (x1 / firearm)
+	:ARG0 (x7 / newspaper
+		:name (n / name
+			:op1 "Quintin"
+			:op2 "Peterson")
+		:ARG0-of (x4 / metropolitan)
+		:ARG0-of (x6 / officer
+			:ARG3 x4
+			:ARG1 (x5 / police))))
+
+# ::id 12
+# ::snt In addition, he said, more than 1,300 people were shot and
+(x13 / and
+	:op1 (x12 / shoot-02
+		:ARG1 (x7 / more-than
+			:op1 (x5 / say-01)
+			:op1 (x9 / 1,300))))
+
+# ::id 13
+# ::snt wounded. Police estimate that about 60 percent of the killings were
+(x4 / estimate-01
+	:null_edge (x1 / wound-01)
+	:ARG0 (x3 / police)
+	:ARG2 (x6 / about
+		:op1 (x8 / percentage-entity
+			:value 60))
+	:ARG1 (x11 / kill-01))
+
+# ::id 14
+# ::snt drug-related.
+(xap0 / relate-01
+	:ARG2 (x1 / drug))
+
+# ::id 15
+# ::snt The District of Columbia's Firearms Control Act of 1975,
+(x6 / firearm
+	:null_edge (x2 / null_tag)
+	:null_edge (x7 / null_tag)
+	:time (x10 / date-entity
+		:year 1975))
+
+# ::id 16
+# ::snt implemented in February 1977, banned the sale of handguns with a
+(x1 / implement-01
+	:time (x3 / date-entity
+		:year 1977)
+	:ARG1 (x6 / person
+		:name (n / name
+			:op1 "banned")
+		:ARG1 (x10 / handgun)))
+
+# ::id 17
+# ::snt few exceptions for law enforcement and security personnel and
+(x9 / and
+	:op1 (x2 / except-00
+		:ARG1 (x6 / and
+			:op1 (x1 / few)
+			:op1 (x5 / enforce-01
+				:ARG1 (x4 / law))
+			:op3 (x8 / have-org-role-91
+				:ARG2 (p / personnel)
+				:ARG1 (x7 / security)))))
+
+# ::id 18
+# ::snt required registration of all firearms previously purchased. Those
+(x2 / register-02
+	:ARG1-of (x1 / require-01)
+	:ARG1 (x5 / firearm
+		:quant (x4 / all)
+		:ARG1-of (x7 / purchase-01
+			:time (x6 / previous))))
+
+# ::id 19
+# ::snt seeking to register the weapons also had to submit to a thorough
+(x7 / have-03
+	:ARG2 (x1 / seek-01
+		:ARG1 (x3 / register-02
+			:ARG1 (x5 / weapon)))
+	:mod (x6 / also)
+	:null_edge (x9 / submit-01
+		:ARG2 (x12 / thorough)))
+
+# ::id 20
+# ::snt background check.
+(x2 / check-01
+	:ARG1 (x1 / background))
+
+# ::id 21
+# ::snt So where are these guns coming from?
+(x6 / come-01
+	:mod (x1 / so)
+	:ARG1 (x5 / gun))
+
+# ::id 22
+# ::snt The federal Bureau of Alcohol, Tobacco and Firearms, which
+(x3 / government-organization
+	:name (n / name
+		:op1 "Bureau")
+	:null_edge (x2 / government-organization
+		:name (n1 / name
+			:op1 "federal"))
+	:poss (x5 / organization
+		:name (n2 / name
+			:op1 "Alcohol")
+		:null_edge (x7 / null_tag)
+		:null_edge (x8 / null_tag)
+		:null_edge (x9 / null_tag)))
+
+# ::id 23
+# ::snt compiles an annual report on guns retrieved in crimes in
+(x1 / compile-01
+	:ARG1 (x4 / report-01
+		:topic (x6 / gun
+			:ARG1-of (x7 / retrieve
+				:location (x9 / crime)))))
+
+# ::id 24
+# ::snt Washington, found 52 percent of those collected in 1989 came from
+(x3 / find-02
+	:ARG0 (x1 / government-organization
+		:name (n / name
+			:op1 "Washington"))
+	:ARG1 (x11 / come-03
+		:purpose (x8 / collect-01
+			:quant (x5 / percentage-entity
+				:value 52)
+			:time (x10 / date-entity
+				:year 1989))))
+
+# ::id 25
+# ::snt Virginia, a slight increase over 1988, and 18 percent came from
+(x12 / come-01
+	:ARG1 (x1 / country
+		:name (n / name
+			:op1 "Virginia"))
+	:ARG1 (x5 / increase-01
+		:mod (x4 / slight)
+		:ARG1 (x9 / and
+			:op1 (x7 / date-entity
+				:year 1988)
+			:op2 (x11 / percentage-entity
+				:value 18))))
+
+# ::id 26
+# ::snt Maryland, up from 15 percent from the previous year, said Dick
+(x12 / say-01
+	:ARG0 (x1 / state
+		:name (n / name
+			:op1 "Maryland"))
+	:ARG2 (x6 / percentage-entity
+		:value 15)
+	:time (x10 / year
+		:mod (x9 / previous))
+	:ARG0 (x13 / person
+		:name (n1 / name
+			:op1 "Dick")))
+
+# ::id 27
+# ::snt Pedersen of the ATF office covering Washington, Maryland and
+(x10 / and
+	:op1 (x1 / country
+		:name (n / name
+			:op1 "Pedersen")
+		:poss (x5 / office
+			:mod (x4 / have-org-role-91
+				:ARG1 (o / organization
+					:name (n1 / name
+						:op1 "ATF")))
+			:ARG1-of (x6 / cover-01
+				:ARG1 (x7 / city
+					:name (n2 / name
+						:op1 "Washington"))))))
+
+# ::id 28
+# ::snt Virginia.
+(x1 / country
+	:name (n / name
+		:op1 "Virginia"))
+
+# ::id 29
+# ::snt "If you put them together, you have 70 percent" of the guns,
+(x9 / have-03
+	:condition (x4 / put-01
+		:ARG0 (x3 / you))
+	:ARG0 (x8 / you)
+	:ARG1 (x15 / gun
+		:quant (x11 / percentage-entity
+			:value 70)))
+
+# ::id 30
+# ::snt he said. "You can basically disregard the rest of the country.
+(x2 / say-01
+	:ARG0 (x1 / he)
+	:ARG1 (x6 / possible
+		:domain (x8 / disregard-01
+			:ARG0 (x5 / you)
+			:manner (x7 / basic)
+			:ARG1 (x10 / rest
+				:part-of (x13 / country)))))
+
+# ::id 31
+# ::snt We're looking at ones and twos from rest of the union, people
+(x3 / look-01
+	:ARG0 (x1 / we)
+	:ARG1 (x6 / and
+		:op1 (x5 / one
+			:source (x9 / rest
+				:part-of (x12 / union)))
+		:op2 2))
+
+# ::id 32
+# ::snt moving in and losing their gun, having it stolen."
+(x8 / have-03
+	:ARG1 (x3 / and
+		:op2 (x1 / move-01)
+		:op2 (x4 / lose-02
+			:ARG1 (x6 / gun)))
+	:ARG1 (x10 / steal-01))
+
+# ::id 33
+# ::snt The study is based on traces of several hundred guns each year
+(x4 / base-01
+	:ARG1 (x2 / study)
+	:frequency (xap0 / rate-entity-91
+		:ARG0 (x6 / trace)
+		:null_edge (x8 / several)
+		:ARG2 (x12 / temporal-quantity
+			:unit (y / year))))
+
+# ::id 34
+# ::snt which are randomly selected, he said. A total of 2,333 firearms
+(x7 / say-01
+	:ARG1 (x4 / select-01
+		:manner (x3 / random))
+	:ARG0 (x6 / he)
+	:name (x10 / name
+		:op1 "total"
+		:ARG1 (x13 / firearm)))
+
+# ::id 35
+# ::snt were picked up in Washington last year, he said.
+(x10 / say-01
+	:ARG1 (x2 / pick-05
+		:location (x5 / city
+			:name (n / name
+				:op1 "Washington"))
+		:time (x7 / year
+			:mod (x6 / last)))
+	:ARG0 (x9 / he))
+
+# ::id 36
+# ::snt While some of the weapons are rifles, "This is really a handgun
+(x14 / handgun
+	:ARG1 (x5 / weapon
+		:quant (x2 / some))
+	:domain (x10 / this)
+	:mod (x12 / really))
+
+# ::id 37
+# ::snt city and a handgun area," Pedersen said. "We're finding more than
+(x9 / say-01
+	:ARG1 (x2 / and
+		:op1 (x1 / city)
+		:op2 (x5 / area
+			:mod (x4 / handgun)))
+	:ARG0 (x8 / person
+		:name (n / name
+			:op1 "Pedersen"))
+	:ARG1 (x14 / find-01
+		:ARG0 (x12 / we)
+		:degree (x15 / more)))
+
+# ::id 38
+# ::snt half the guns picked up in crime now are semiautomatic handguns,
+(x11 / handgun
+	:ARG0 (x3 / gun
+		:ARG1-of (x4 / pick-04
+			:mod (x1 / half)
+			:ARG2 (x7 / crime)))
+	:time (x8 / now)
+	:mod (x10 / semiautomatic))
+
+# ::id 39
+# ::snt and that appears to be growing, based on the last couple of years."
+(x1 / and
+	:op1 (x3 / appear-02
+		:ARG1 (x6 / grow-03)
+		:ARG1-of (x8 / base-02
+			:ARG2 (x12 / couple
+				:op1 (x14 / temporal-quantity
+					:unit (y / year))))))
+
+# ::id 40
+# ::snt In many cases, these are not the now-infamous Saturday Night
+(x11 / night
+	:topic (x3 / case
+		:quant (x2 / many))
+	:mod (x9 / now-infamous)
+	:time (xap0 / date-entity
+		:weekday (x10 / saturday)))
+
+# ::id 41
+# ::snt Specials, cheap handguns bought on the spur of the moment.
+(x5 / buy-01
+	:ARG0 (x4 / handgun
+		:null_edge (x1 / null_tag)
+		:mod (x3 / cheap))
+	:ARG1 (x8 / spur
+		:ARG1 (x11 / moment)))
+
+# ::id 42
+# ::snt "We find a lot of high-quality firearms, a direct result of the
+(x3 / find-02
+	:ARG0 (x2 / we)
+	:ARG1 (x8 / firearm
+		:quant (x5 / lot
+			:manner (x11 / direct))
+		:mod (x7 / high)))
+
+# ::id 43
+# ::snt drug trade," Pedersen said. "They can afford high quality, and
+(xap0 / multi-sentence
+	:snt2 (x6 / say-01
+		:ARG0 (x5 / person
+			:name (n / name
+				:op1 "Pedersen")))
+	:snt2 (x10 / possible
+		:domain (x11 / afford-01
+			:ARG0 (x2 / trade-01
+				:ARG1 (x1 / drug))
+			:ARG0 (x9 / they)
+			:ARG1 (x13 / quality
+				:degree (x12 / high))
+			:ARG1 (x15 / and))))
+
+# ::id 44
+# ::snt they buy them."
+(x2 / buy-01
+	:ARG0 (x1 / they))
+
+# ::id 45
+# ::snt Some are the same weapons used by police forces around the
+(x5 / weapon
+	:null_edge (x1 / some)
+	:ARG1-of (x4 / same-41)
+	:ARG1-of (x6 / use-01
+		:ARG0 (x9 / force
+			:mod (x8 / police)
+			:location (x10 / around))))
+
+# ::id 46
+# ::snt country, 9mm semiautomatic handguns that cost $500 to $700 apiece,
+(x1 / country
+	:null_edge (x5 / handgun
+		:mod (x3 / 9mm)
+		:ARG1-of (x7 / cost-01
+			:ARG2 (x13 / apiece))))
+
+# ::id 47
+# ::snt he said. At the same time, many of the guns are small and
+(x2 / say-01
+	:ARG1 (x15 / and
+		:time (x7 / time
+			:ARG1-of (x6 / same-41))
+		:op2 (x12 / gun
+			:quant (x9 / many))))
+
+# ::id 48
+# ::snt concealable .25-caliber semiautomatic pistols that cost about $200,
+(x2 / .25
+	:null_edge (x6 / pistol
+		:mod (x4 / caliber)
+		:ARG1-of (x8 / cost-01
+			:ARG2 (x9 / about))))
+
+# ::id 49
+# ::snt he said.
+(x2 / say-01
+	:ARG0 (x1 / he))
+
+# ::id 50
+# ::snt The NRA contends that Washington's murder rate _ the highest in
+(x3 / contend-00
+	:ARG0 (x2 / organization
+		:name (n / name
+			:op1 "NRA"))
+	:ARG1 (x9 / _
+		:ARG1 (x8 / rate
+			:mod (x7 / murder-01
+				:poss (x5 / city
+					:name (n1 / name
+						:op1 "Washington"))))
+		:ARG1 (x11 / high
+			:degree (m / most))))
+
+# ::id 51
+# ::snt the nation _ demonstrates that gun control doesn't work.
+(x4 / demonstrate-01
+	:ARG0 (x2 / nation)
+	:ARG1 (x10 / work-09
+		:ARG0 (x7 / control-01
+			:ARG1 (x6 / gun))))
+
+# ::id 52
+# ::snt Gun control laws vary widely in the major cities with some of
+(x4 / vary-01
+	:ARG1 (x3 / law
+		:topic (x2 / control-01
+			:ARG1 (x1 / gun)))
+	:degree (x5 / wide)
+	:location (x9 / city
+		:mod (x8 / major)
+		:quant (x11 / some
+			:null_edge (x12 / include-91))))
+
+# ::id 53
+# ::snt the highest murder rates in 1988. The top 12 among the 35 U.S.
+(x4 / rate
+	:mod (x2 / high
+		:degree (m / most))
+	:mod (x3 / murder-01)
+	:time (x6 / date-entity
+		:year 1988)
+	:null_edge (x9 / top
+		:null_edge 12)
+	:null_edge (x14 / country
+		:name (n / name
+			:op1 "U.S.")
+		:null_edge 35))
+
+# ::id 54
+# ::snt cities with 400,000 or more people included four cities with no gun
+(x7 / include-01
+	:ARG1 (x4 / or
+		:op1 (x1 / city)
+		:op1 (x3 / 400,000)
+		:op2 (x5 / more))
+	:ARG1 (x9 / city
+		:quant 4
+		:prep-with (x12 / gun
+			:polarity -)))
+
+# ::id 55
+# ::snt control measures, including Detroit, which has the second highest
+(x2 / measure
+	:instrument-of (x1 / control-01)
+	:ARG2-of (x4 / include-91
+		:ARG1 (x5 / country
+			:name (n / name
+				:op1 "Detroit")
+			:ARG0-of (x8 / have-03
+				:ARG1 (x11 / high
+					:degree (m / most))))))
+
+# ::id 56
+# ::snt murder rate.
+(x2 / rate
+	:mod (x1 / murder-01))
+
+# ::id 57
+# ::snt Seven more of the 12 had relatively strong gun control laws,
+(x6 / have-03
+	:ARG1 (x11 / law
+		:mod (x8 / strong
+			:degree (x2 / more
+				:op1 7
+				:op1 12)
+			:mod (x7 / relative))
+		:topic (x10 / control-01
+			:ARG1 (x9 / gun))))
+
+# ::id 58
+# ::snt while one, Miami, had a three-day cooling off period for a gun
+(x6 / have-03
+	:ARG3 (x2 / one)
+	:ARG0 (x4 / country
+		:name (n / name
+			:op1 "Miami"))
+	:ARG1 (x9 / cool-01
+		:duration (x8 / person
+			:name (n1 / name
+				:op1 "three-day"))
+		:location (x10 / off
+			:op1 (x11 / period
+				:time-of (x14 / gun)))))
+
+# ::id 59
+# ::snt purchase, but no background check on the buyer.
+(x3 / contrast-01
+	:op1 (x1 / purchase-01
+		:purpose (x6 / check-01
+			:polarity -
+			:ARG1 (x5 / background)
+			:ARG1 (x9 / buy-01))))
+
+# ::id 60
+# ::snt At the same time, Honolulu, covered by a strong state gun
+(x8 / cover-01
+	:time (x4 / time
+		:ARG1-of (x3 / same-41))
+	:ARG0 (x6 / country
+		:name (n / name
+			:op1 "Honolulu"))
+	:instrument (x13 / gun
+		:mod (x11 / strong)
+		:mod (x12 / state)))
+
+# ::id 61
+# ::snt control measure, showed the lowest murder rate among the 35 largest
+(x4 / show-01
+	:ARG0 (x2 / measure
+		:mod (x1 / control-01))
+	:ARG1 (x8 / rate
+		:mod (x6 / low
+			:degree (m / most))
+		:mod (x7 / murder-01)
+		:null_edge (x12 / large
+			:degree (m1 / most)
+			:null_edge 35)))
+
+# ::id 62
+# ::snt cities.
+(x1 / city)
+
+# ::id 63
+# ::snt Law enforcement officials and gun control advocates say there's
+(x8 / say-01
+	:ARG1 (x4 / and
+		:op2 (x7 / person
+			:ARG0-of (a / advocate-01)
+			:ARG0-of (x6 / control-01
+				:ARG1 (x5 / gun)))
+		:op1 (xap0 / person
+			:ARG0-of (x3 / have-org-role-91
+				:ARG2 (o / official)
+				:ARG1 (x1 / law)
+				:ARG1 (x2 / enforce-01)))))
+
+# ::id 64
+# ::snt more to the issue than whether an individual city has strong
+(x1 / more
+	:compared-to (x11 / strong
+		:domain (x9 / city
+			:mod (x8 / individual
+				:ARG0-of (x10 / have-03
+					:ARG1 (x4 / issue))))))
+
+# ::id 65
+# ::snt controls.
+(x1 / control-01)
+
+# ::id 66
+# ::snt They say Washington's location _ carved out of Maryland and
+(x2 / say-01
+	:ARG0 (x1 / they)
+	:ARG1 (x7 / carve
+		:ARG0 x1
+		:ARG1 (x5 / location
+			:poss (x3 / city
+				:name (n1 / name
+					:op1 "Washington")))
+		:location (x10 / state
+			:name (n / name
+				:op1 "Maryland"))
+		:ARG1 (x11 / and)))
+
+# ::id 67
+# ::snt Virginia with virtually no natural boundaries other than the easily
+(x1 / country
+	:name (n / name
+		:op1 "Virginia")
+	:location-of (x6 / boundary
+		:mod (x3 / virtual)
+		:polarity -
+		:mod (x5 / natural)
+		:mod (x7 / other)))
+
+# ::id 68
+# ::snt crossed Potomac River _ makes its handgun ban virtually
+(x5 / make-02
+	:ARG0 (x3 / organization
+		:name (n / name
+			:op1 "River"
+			:op2 "_")
+		:ARG0-of (x1 / cross-02)
+		:mod (x2 / country
+			:name (n2 / name
+				:op1 "Potomac")))
+	:ARG0 (x8 / person
+		:name (n1 / name
+			:op1 "ban")
+		:mod (x7 / handgun))
+	:ARG1 (x9 / virtual))
+
+# ::id 69
+# ::snt unenforceable.
+(x1 / unenforceable)
+
+# ::id 70
+# ::snt "In Washington, you can drive across the river and purchase
+(x11 / and
+	:op1 (x6 / possible
+		:domain (x7 / drive-02
+			:location (x3 / city
+				:name (n / name
+					:op1 "Washington"))
+			:ARG0 (x5 / you)
+			:location (x8 / across
+				:op1 (x10 / river))
+			:ARG0 (x12 / purchase-01))))
+
+# ::id 71
+# ::snt handguns," said Susan Whitmore of Handgun Control Inc. "Until
+(x4 / say-01
+	:ARG1 (x1 / handgun)
+	:ARG0 (x5 / newspaper
+		:name (n / name
+			:op1 "Susan"
+			:op2 "Whitmore"))
+	:ARG0 (x8 / government-organization
+		:name (n1 / name
+			:op1 "Handgun"
+			:op2 "Control"
+			:op3 "Inc.")))
+
+# ::id 72
+# ::snt this last year, Virginia had one of the weakest gun laws in the
+(x6 / have-03
+	:time (x3 / year
+		:mod (x1 / this)
+		:mod (x2 / last))
+	:ARG0 (x5 / country
+		:name (n / name
+			:op1 "Virginia"))
+	:ARG1 (x12 / law
+		:mod (x10 / weakest)
+		:topic (x11 / gun)))
+
+# ::id 73
+# ::snt country."
+(x1 / country)
+
+# ::id 74
+# ::snt New York City has the same problem, she said.
+(x10 / say-01
+	:ARG1 (x4 / have-03
+		:ARG0 (x1 / city
+			:name (n / name
+				:op1 "New"
+				:op2 "York"
+				:op3 "City"))
+		:ARG1 (x7 / problem
+			:ARG1-of (x6 / same-41)))
+	:ARG0 (x9 / she))
+
+# ::id 75
+# ::snt "More than 90 percent (of the guns used in New York crimes)
+(x5 / percentage-entity
+	:poss (x9 / gun
+		:ARG1-of (x10 / use-01
+			:ARG1 (x2 / more-than
+				:op1 90)
+			:ARG2 (x14 / crime
+				:mod (x13 / country
+					:name (n / name
+						:op1 "York"))))))
+
+# ::id 76
+# ::snt come from other states with very weak laws," Whitmore said.
+(x12 / say-01
+	:ARG1 (x1 / come-01
+		:ARG1 (x8 / law
+			:mod (x3 / other)
+			:mod (x7 / weak
+				:degree (x6 / very))))
+	:ARG0 (x11 / person
+		:name (n / name
+			:op1 "Whitmore")))
+
+# ::id 77
+# ::snt "That's why we believe we need a national law."
+(x2 / that
+	:time (x6 / believe-01
+		:ARG0 (x5 / we)
+		:ARG1 (x8 / need-01
+			:ARG0 (x7 / we)
+			:ARG1 (x11 / law
+				:mod (x10 / nation)))))
+
+# ::id 78
+# ::snt A new law in Virginia that took effect Nov. 1, 1989, requires an
+(x14 / require-01
+	:ARG0 (x3 / law
+		:mod (x2 / new)
+		:location (x5 / country
+			:name (n / name
+				:op1 "Virginia"))
+		:ARG1 (x8 / effect-01))
+	:ARG2 (x15 / name
+		:op1 "an"))
+
+# ::id 79
+# ::snt immediate background check prior to the purchase of assault-style
+(x3 / check-01
+	:time (x1 / immediate)
+	:ARG1 (x2 / background)
+	:time (x4 / prior-to
+		:op1 (x7 / purchase-01
+			:ARG1 (x9 / assault-style))))
+
+# ::id 80
+# ::snt weapons and most handguns. A person wishing to buy a gun must
+(x2 / and
+	:op1 (x1 / weapon
+		:null_edge (x13 / must
+			:domain (x7 / person
+				:ARG0-of (x8 / wish-01
+					:ARG1 (x10 / buy-01
+						:ARG1 (x12 / gun))))))
+	:op2 (x4 / handgun
+		:quant (x3 / most)))
+
+# ::id 81
+# ::snt complete an application and the gun dealer must call the Virginia
+(x9 / call-01
+	:ARG0 (x4 / and
+		:op1 (x1 / complete)
+		:op1 (x3 / apply-02)
+		:op2 (x7 / person
+			:ARG0-of (d / deal-01)
+			:ARG1 (x6 / gun)))
+	:ARG2 (x11 / country
+		:name (n / name
+			:op1 "Virginia")))
+
+# ::id 82
+# ::snt State Police to get approval for the sale.
+(x4 / get-01
+	:ARG0 (x2 / police
+		:null_edge (x1 / null_tag))
+	:ARG1 (x5 / approve-01))
+
+# ::id 83
+# ::snt As of Dec. 31, 1989, Virginia officials had approved 9,834 sales
+(x11 / approve-01
+	:time (x3 / date-entity
+		:year 1989)
+	:ARG0 (xap0 / person
+		:ARG0-of (x9 / have-org-role-91
+			:ARG2 (o / official)
+			:ARG1 (x8 / country
+				:name (n / name
+					:op1 "Virginia")))))
+
+# ::id 84
+# ::snt _ each of which could involve numerous guns _ and rejected 109
+(x1 / _
+	:ARG2-of (x6 / involve-01
+		:ARG0 (x2 / each
+			:ARG1-of (x3 / include-91))
+		:mod (x5 / possible)
+		:ARG1 (x10 / and
+			:quant (x7 / numerous)
+			:op1 (x9 / _)
+			:op2 (x11 / reject-01
+				:ARG1 (x12 / 109)))))
+
+# ::id 85
+# ::snt applications, said state police Lt. R. Lewis Vass, who runs the
+(x3 / say-01
+	:ARG1 (x1 / application)
+	:name (x7 / name
+		:op1 "R."
+		:op2 "Lewis"
+		:op3 "Vass"
+		:ARG0-of (x4 / state)
+		:ARG0-of (x5 / police)
+		:ARG0-of (x6 / lt.)
+		:ARG0-of (x12 / run-01)))
+
+# ::id 86
+# ::snt program.
+(x1 / program)
+
+# ::id 87
+# ::snt The program has produced an unexpected dividend: the capture of
+(x4 / produce-01
+	:ARG0 (x2 / program)
+	:ARG1 (x7 / dividend
+		:mod (x6 / expect-01
+			:polarity -)
+		:ARG2 (x10 / capture-01)))
+
+# ::id 88
+# ::snt three fugitives, one from Florida and two from New Jersey. By state
+(x2 / fugitive
+	:quant 3
+	:null_edge (x7 / and
+		:source (x6 / country
+			:name (n / name
+				:op1 "Florida"))
+		:null_edge (x11 / country
+			:name (n1 / name
+				:op1 "Jersey")
+			:null_edge 2
+			:null_edge (x10 / null_tag))
+		:op1 (x14 / state)))
+
+# ::id 89
+# ::snt law, police have until the close of business the day after a
+(x1 / law
+	:null_edge (x4 / have-03
+		:ARG0 (x3 / police)
+		:time (x5 / until
+			:op1 (x7 / close-01
+				:ARG1 (x9 / business)
+				:time (x12 / after)))))
+
+# ::id 90
+# ::snt gun-purchase application has been rejected to tell the gun dealer
+(x5 / reject-01
+	:ARG1 (x2 / apply-01
+		:mod (x1 / gun-purchase))
+	:ARG2 (x7 / tell-01
+		:ARG2 (x10 / deal-01
+			:ARG1 (x9 / gun))))
+
+# ::id 91
+# ::snt the rejection is confirmed or a search of records found the sale
+(x5 / or
+	:op1 (x4 / confirm-01
+		:ARG1 (x2 / reject-01))
+	:op2 (x10 / find-01
+		:ARG0 x2
+		:ARG0 (x7 / search-01
+			:ARG1 (x9 / record))))
+
+# ::id 92
+# ::snt could be made. As a result, some people rejected initially have
+(x1 / possible
+	:domain (x3 / make-02
+		:null_edge (x11 / reject-01
+			:ARG2-of (x7 / result-01)
+			:null_edge (x9 / some)
+			:time (x12 / initial)
+			:ARG1 (x13 / have-03
+				:ARG0 x9))))
+
+# ::id 93
+# ::snt returned to gun stores the next day to get the final decision. In
+(x1 / return-01
+	:ARG4 (x4 / store
+		:mod (x3 / gun)
+		:ARG1 (x12 / decide-01
+			:time (x7 / day
+				:mod (x6 / next))
+			:mod (x11 / final))))
+
+# ::id 94
+# ::snt three cases, police were waiting when the fugitives returned, Vass
+(x6 / wait-01
+	:ARG1 (x2 / case
+		:quant 3)
+	:ARG0 (x4 / police)
+	:time (x10 / return-01
+		:ARG1 (x9 / fugitive))
+	:ARG1 (x12 / person
+		:name (n / name
+			:op1 "Vass")))
+
+# ::id 95
+# ::snt said.
+(x1 / say-01)
+
+# ::id 96
+# ::snt Officials also are hoping prosecution of certain gun dealers
+(x4 / hope-01
+	:mod (x2 / also)
+	:ARG1 (x5 / prosecute-01
+		:poss (x9 / person
+			:ARG0-of (d / deal-01)
+			:mod (x7 / certain)
+			:ARG1 (x8 / gun)))
+	:ARG1 (xap0 / person
+		:ARG0-of (x1 / have-org-role-91
+			:ARG2 (o / official))))
+
+# ::id 97
+# ::snt will curb illicit sales. Donald P. Percival, a former U.S. Park
+(x2 / curb-01
+	:null_edge (x6 / name
+		:op1 "Donald"
+		:op2 "P."
+		:op3 "Percival"
+		:ARG0-of (x13 / park-01
+			:mod (x11 / former)
+			:mod (x12 / country
+				:name (n / name
+					:op1 "U.S.")))))
+
+# ::id 98
+# ::snt Police officer who owned gun stores in Virginia, and James S.
+(x2 / have-org-role-91
+	:ARG2 (o / officer)
+	:ARG1 (x1 / police)
+	:ARG1-of (x4 / own-01
+		:ARG1 (x6 / store
+			:mod (x5 / gun)
+			:location (x10 / and
+				:op1 (x8 / country
+					:name (n / name
+						:op1 "Virginia"))
+				:op2 (x11 / name
+					:op1 "James"
+					:op2 "S.")))))
+
+# ::id 99
+# ::snt Chapman, a former D.C. police officer and retired Secret Service
+(x8 / and
+	:op1 (x1 / country
+		:name (n / name
+			:op1 "Chapman")
+		:null_edge (x9 / retire-01
+			:ARG1 (x10 / government-organization
+				:name (n2 / name
+					:op1 "Secret"
+					:op2 "Service"))))
+	:op2 (x7 / have-org-role-91
+		:ARG2 (o / officer)
+		:ARG1 (x5 / country
+			:name (n1 / name
+				:op1 "D.C.")
+			:mod (x4 / former))
+		:ARG1 (x6 / police)))
+
+# ::id 100
+# ::snt uniformed agent, were convicted in November of illegally selling
+(x5 / convict-01
+	:ARG2 (x2 / agent
+		:mod (x1 / uniformed))
+	:time (x7 / date-entity)
+	:ARG2 (x10 / sell-01
+		:ARG0 x2))
+
+# ::id 101
+# ::snt semiautomatic handguns to an 18-year-old drug dealer who resold or
+(x2 / handgun
+	:mod (x1 / semiautomatic)
+	:ARG2 (x7 / person
+		:ARG0-of (d / deal-01)
+		:mod (x5 / person
+			:name (n / name
+				:op1 "18-year-old"))
+		:ARG1 (x6 / drug)
+		:ARG0-of (x9 / resell
+			:ARG1 (x10 / or))))
+
+# ::id 102
+# ::snt traded the weapons for drugs in Washington.
+(x1 / trade-01
+	:ARG1 (x3 / weapon
+		:purpose (x5 / drug))
+	:location (x7 / city
+		:name (n / name
+			:op1 "Washington")))
+
+# ::id 103
+# ::snt While Whitmore said she was encouraged by Virginia's new law,
+(x3 / say-01
+	:ARG0 (x2 / person
+		:name (n / name
+			:op1 "Whitmore"))
+	:ARG1 (x6 / encourage-01
+		:ARG0 (x11 / law
+			:poss (x8 / country
+				:name (n1 / name
+					:op1 "Virginia"))
+			:mod (x10 / new))))
+
+# ::id 104
+# ::snt Pedersen said it's still too early to tell what impact it will have
+(x2 / say-01
+	:ARG0 (x1 / person
+		:name (n / name
+			:op1 "Pedersen"))
+	:ARG1 (x7 / early
+		:mod (x5 / still)
+		:degree (x6 / too)
+		:purpose (x9 / tell-01
+			:ARG2 (x11 / impact-01))))
+
+# ::id 105
+# ::snt on gunfire in Washington, saying the problem occurs when legitimate
+(x6 / say-01
+	:ARG1 (x2 / gunfire
+		:location (x4 / city
+			:name (n / name
+				:op1 "Washington")))
+	:ARG1 (x8 / problem
+		:mod (x11 / legitimate)))
+
+# ::id 106
+# ::snt purchasers in Virginia provide weapons to people who would be
+(x4 / provide-01
+	:ARG0 (x1 / purchaser
+		:location (x3 / country
+			:name (n / name
+				:op1 "Virginia")))
+	:ARG1 (x5 / weapon))
+
+# ::id 107
+# ::snt ineligible to purchase them legally.
+(x1 / ineligible
+	:ARG1 (x3 / purchase-01))
+
+# ::id 108
+# ::snt Gun control groups want national laws, but one law enforcement
+(x4 / want-01
+	:ARG0 (x3 / group
+		:ARG0-of (x2 / control-01
+			:mod (x1 / gun)))
+	:ARG1 (x6 / law
+		:mod (x5 / nation)
+		:ARG0-of (x11 / enforce-01
+			:quant 1
+			:ARG1 (x10 / law)))
+	:ARG1 (x8 / contrast-01))
+
+# ::id 109
+# ::snt official says regional controls might be sufficient.
+(x2 / say-01
+	:ARG1 (x7 / suffice-01
+		:ARG0 (x4 / control-01
+			:mod (x3 / region)))
+	:ARG0 (xap0 / person
+		:ARG0-of (x1 / have-org-role-91
+			:ARG2 (o / official))))
+
+# ::id 110
+# ::snt "If you were in a town that had mountains or deserts around it
+(x7 / town
+	:ARG0 (x3 / you)
+	:mod (x11 / or
+		:op1 (x10 / mountain)
+		:op2 (x12 / desert)
+		:location (x13 / around)))
+
+# ::id 111
+# ::snt and people had to travel four hours and take two interstates to get
+(x1 / and
+	:op2 (x8 / and
+		:op1 (x5 / travel-01
+			:ARG1 (x7 / temporal-quantity
+				:unit (h / hour)
+				:quant 4))
+		:op2 (x9 / take-01
+			:ARG0 x7
+			:ARG1 (x11 / interstate
+				:quant 2)
+			:ARG0 (x13 / get-01))))
+
+# ::id 112
+# ::snt to the area, I can see how you might control a problem like this,"
+(x6 / possible
+	:domain (x7 / see-01
+		:ARG2 (x3 / area)
+		:ARG0 (x5 / i)
+		:ARG1 (x11 / control-01
+			:ARG0 (x9 / you)
+			:ARG1 (x13 / problem
+				:ARG1-of (xap0 / resemble-01
+					:ARG2 (x15 / this))))))
+
+# ::id 113
+# ::snt the officer said. But in Washington, "It's like walking across the
+(x3 / say-01
+	:null_edge (x5 / contrast-01)
+	:ARG1 (x13 / walk-01
+		:location (x7 / city
+			:name (n / name
+				:op1 "Washington"))
+		:ARG0 (x10 / it)
+		:location (x14 / across))
+	:ARG0 (xap0 / person
+		:ARG0-of (x2 / have-org-role-91
+			:ARG2 (o / officer))))
+
+# ::id 114
+# ::snt street to get a hamburger. We're one large urban area here. It's
+(x12 / area
+	:mod (x1 / street)
+	:domain (x3 / get-03
+		:ARG1 (x5 / hamburger))
+	:domain (x7 / we)
+	:quant 1
+	:mod (x10 / large)
+	:mod (x11 / urban)
+	:location (x13 / here)
+	:domain (x15 / it))
+
+# ::id 115
+# ::snt hard to keep guns out of D.C. when there are no natural borders."
+(x1 / hard
+	:domain (x3 / keep-02
+		:ARG1 (x4 / gun)
+		:location (x7 / country
+			:name (n / name
+				:op1 "D.C."))
+		:ARG1 (x13 / border
+			:polarity -
+			:mod (x12 / natural))))
+

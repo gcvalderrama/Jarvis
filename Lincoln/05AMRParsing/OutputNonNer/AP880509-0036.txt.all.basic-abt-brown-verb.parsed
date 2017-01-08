@@ -1,0 +1,451 @@
+# ::id 1
+# ::snt Separate strong earthquakes rocked northern Japan
+(x4 / rock
+	:ARG1 (x3 / earthquake
+		:mod (x1 / separate)
+		:mod (x2 / strong)))
+
+# ::id 2
+# ::snt and the main Philippine island of Luzon today, swaying buildings
+(x1 / and
+	:op1 (x10 / sway-01
+		:ARG0 (x5 / island
+			:mod (x3 / main)
+			:mod (x4 / country
+				:name (n / name
+					:op1 "Philippine"))
+			:mod (x7 / country
+				:name (n1 / name
+					:op1 "Luzon"))
+			:time (x8 / today))
+		:ARG1 (x11 / building)))
+
+# ::id 3
+# ::snt and trees but apparently not causing any serious injuries or
+(x3 / contrast-01
+	:ARG1 (x1 / and
+		:op1 (x2 / tree
+			:ARG0-of (x6 / cause-01
+				:manner (x4 / apparent)
+				:ARG1 (x9 / injure-01
+					:mod (x7 / any)
+					:mod (x8 / serious)))))
+	:ARG1 (x10 / or))
+
+# ::id 4
+# ::snt damage, officials said.
+(x4 / say-01
+	:ARG1 (x1 / damage-01)
+	:ARG0 (xap0 / person
+		:ARG0-of (x3 / have-org-role-91
+			:ARG2 (o / official))))
+
+# ::id 5
+# ::snt The Japanese quake registered a preliminary 5.2 on the Richter
+(x4 / register-01
+	:ARG0 (x3 / quake
+		:mod (x2 / country
+			:name (n1 / name
+				:op1 "Japan")))
+	:ARG1 (x7 / 5.2
+		:mod (x6 / preliminary))
+	:ARG2 (x10 / person
+		:name (n / name
+			:op1 "Richter")))
+
+# ::id 6
+# ::snt scale and was the second strong temblor to hit the northern island
+(x2 / and
+	:op1 (x1 / scale)
+	:op2 (x7 / temblor
+		:mod (x6 / strong)
+		:ARG1-of (x9 / hit-01
+			:ARG1 (x12 / island
+				:mod (x11 / name
+					:op1 "northern")))))
+
+# ::id 7
+# ::snt of Hokkaido in less than three days, Central Meteorological Agency
+(x2 / hokkaido
+	:location (x7 / temporal-quantity
+		:unit (d / day)
+		:null_edge (x4 / less-than
+			:null_edge 3
+			:op1 (x9 / have-org-role-91
+				:ARG1 (g / government-organization
+					:name (n / name
+						:op1 "Central"
+						:op2 "Meteorological"
+						:op3 "Agency"))))))
+
+# ::id 8
+# ::snt officials said.
+(x2 / say-01
+	:ARG0 (xap0 / person
+		:ARG0-of (x1 / have-org-role-91
+			:ARG2 (o / official))))
+
+# ::id 9
+# ::snt They said it struck at 7:44 a.m. (6:44 p.m. Sunday) and was
+(x2 / say-01
+	:ARG0 (x1 / they)
+	:ARG1 (x13 / and
+		:op1 (x4 / person
+			:name (n / name
+				:op1 "struck")
+			:time (xap0 / date-entity
+				:weekday (x11 / sunday
+					:null_edge (x9 / include-91))))))
+
+# ::id 10
+# ::snt centered in the Hidaka mountain range, 45 miles away from
+(x1 / center-01
+	:location (x6 / range
+		:location (x4 / country
+			:name (n / name
+				:op1 "Hidaka"))
+		:mod (x5 / mountain
+			:direction (x10 / away
+				:op1 (x9 / distance-quantity
+					:unit (m / mile)
+					:quant 45)))))
+
+# ::id 11
+# ::snt Saturday's earthquake, which measured a preliminary 6.4 on the
+(x3 / earthquake
+	:ARG1-of (x6 / measure-01
+		:ARG1 (x9 / 6.4
+			:null_edge (x8 / preliminary)))
+	:time (xap0 / date-entity
+		:weekday (x1 / saturday)))
+
+# ::id 12
+# ::snt scale. Local police said there were no immediate reports of damage
+(x5 / say-01
+	:ARG0 (x4 / police
+		:mod (x1 / scale)
+		:mod (x3 / local))
+	:ARG1 (x10 / report-01
+		:polarity -
+		:time (x9 / immediate)
+		:ARG1 (x12 / damage-01)))
+
+# ::id 13
+# ::snt or casualties.
+(x1 / or
+	:op1 (x2 / casualty))
+
+# ::id 14
+# ::snt The pre-dawn Philippine earthquake struck at 3:45 a.m. (3:55
+(x5 / person
+	:name (n / name
+		:op1 "struck")
+	:ARG0 (x4 / earthquake
+		:mod (x2 / pre-dawn)
+		:mod (x3 / country
+			:name (n1 / name
+				:op1 "Philippine")))
+	:time (x7 / include-91
+		:null_edge (x10 / include-91)))
+
+# ::id 15
+# ::snt p.m. Sunday) and registered a preliminary 5.4 Richter reading, the
+(x4 / and
+	:op2 (x10 / read-01
+		:ARG1-of (x5 / register-02)
+		:mod (x7 / preliminary)
+		:quant 5.4
+		:mod (x9 / richter))
+	:time (xap0 / date-entity
+		:weekday (x2 / sunday)))
+
+# ::id 16
+# ::snt Royal Observatory of Hong Kong said. The Philippine Institute of
+(x6 / say-01
+	:ARG0 (x2 / observatory
+		:mod (x1 / royal)
+		:null_edge (x4 / null_tag
+			:null_edge "Kong"))
+	:ARG1 (x10 / country
+		:name (n / name
+			:op1 "Institute")))
+
+# ::id 17
+# ::snt Volcanology and Seismology said it was centered 110 miles northwest
+(x4 / say-01
+	:ARG1 (x2 / and
+		:op1 (x1 / volcanology))
+	:ARG1 (x7 / centered
+		:null_edge (x10 / northwest
+			:quant (x9 / distance-quantity
+				:unit (m / mile)
+				:quant 110))))
+
+# ::id 18
+# ::snt of Manila under the Luzon Sea.
+(x2 / city
+	:name (n / name
+		:op1 "Manila")
+	:location (x6 / sea
+		:null_edge (x5 / country
+			:name (n1 / name
+				:op1 "Luzon"))))
+
+# ::id 19
+# ::snt Earthquakes measuring 5 on the open-ended Richter scale are
+(x2 / measure-01
+	:ARG0 (x1 / earthquake)
+	:ARG1 5
+	:degree (x8 / scale
+		:mod (x6 / open-ended)
+		:ARG0 (x7 / person
+			:name (n / name
+				:op1 "Richter"))))
+
+# ::id 20
+# ::snt classified as strong and capable of causing considerable damage in
+(x1 / classify-01
+	:ARG2 (x4 / and
+		:op1 (x3 / strong
+			:ARG0-of (x7 / cause-01
+				:ARG1 (x9 / damage-01
+					:degree (x8 / considerable))))
+		:op2 (x5 / capable-41)))
+
+# ::id 21
+# ::snt populated areas. However, both quakes were located deep below the
+(x9 / locate-01
+	:ARG1 (x2 / area
+		:mod (x1 / populate-01))
+	:ARG1 (x7 / quake
+		:mod (x6 / both))
+	:location (x11 / below
+		:degree (x10 / deep)))
+
+# ::id 22
+# ::snt earth's surface and therefore caused little damage, officials said.
+(x11 / say-01
+	:ARG1 (x6 / cause-01
+		:ARG1 (x4 / and
+			:op1 (x3 / surface))
+		:ARG1 (x8 / damage-01
+			:degree (x7 / little)))
+	:ARG0 (xap0 / person
+		:ARG0-of (x10 / have-org-role-91
+			:ARG2 (o / official))))
+
+# ::id 23
+# ::snt Both earthquakes also occurred in quake-prone areas where edges
+(x2 / earthquake
+	:mod (x1 / both)
+	:mod (x3 / also)
+	:location (x7 / area
+		:location-of (x9 / edge)))
+
+# ::id 24
+# ::snt of the earth's crustal plates are thought to rub together, a
+(x8 / think-01
+	:ARG1 (x6 / plate
+		:mod (x5 / crustal))
+	:ARG1 (x10 / rub-01
+		:mod (x11 / together)))
+
+# ::id 25
+# ::snt Central Meteorological Agency official said.
+(x5 / say-01
+	:ARG0 (x1 / government-organization
+		:name (n / name
+			:op1 "Central"
+			:op2 "Meteorological"
+			:op3 "Agency")
+		:mod (x4 / official)))
+
+# ::id 26
+# ::snt "It's been some time since we had earthquake activity in that
+(x6 / time
+	:ARG1 (x2 / it)
+	:mod (x5 / some)
+	:time (x7 / since
+		:ARG0 (x8 / we)
+		:ARG1 (x11 / activity
+			:poss (x10 / earthquake))
+		:op1 (x13 / that)))
+
+# ::id 27
+# ::snt area of Hokkaido, so it's not surprising to have some now caused by
+(x9 / surprise-01
+	:ARG0 (x1 / area
+		:mod (x3 / hokkaido))
+	:domain (x11 / have-03
+		:ARG1 (x12 / some
+			:ARG1-of (x14 / cause-01
+				:time (x13 / now)))))
+
+# ::id 28
+# ::snt a build-up of pressure between the plates," he said, speaking on
+(x11 / say-01
+	:ARG1 (x2 / build-05
+		:ARG1 (x4 / pressure-01)
+		:ARG1 (x7 / plate)))
+
+# ::id 29
+# ::snt condition of anonymity.
+(x1 / condition
+	:ARG2 (x3 / anonymity))
+
+# ::id 30
+# ::snt The official said there was no way of knowing whether the
+(x3 / say-01
+	:time (x9 / know-01
+		:polarity -)
+	:ARG0 (xap0 / person
+		:ARG0-of (x2 / have-org-role-91
+			:ARG2 (o / official))))
+
+# ::id 31
+# ::snt 
+(x4 / relate-01
+	:ARG1 (x2 / quake
+		:mod (x1 / country
+			:name (n1 / name
+				:op1 "Japan")))
+	:ARG2 (x10 / country
+		:name (n / name
+			:op1 "Philippines")
+		:null_edge (x12 / 2,250)))
+
+# ::id 32
+# ::snt miles away.
+(x2 / away
+	:op1 (x1 / distance-quantity
+		:unit (m / mile)))
+
+# ::id 33
+# ::snt The Philippine islands are thought to be located on the edge of
+(x5 / think-01
+	:ARG1 (x3 / island
+		:mod (x2 / country
+			:name (n / name
+				:op1 "Philippine")))
+	:ARG1 (x8 / locate-01
+		:ARG2 (x11 / edge)))
+
+# ::id 34
+# ::snt a separate, smaller crustal plate which extends up to southern
+(x6 / plate
+	:mod (x2 / separate)
+	:mod (x4 / small)
+	:mod (x5 / crustal)
+	:ARG1-of (x8 / extend-01
+		:ARG2 (x11 / southern)))
+
+# ::id 35
+# ::snt Japan.
+(x1 / country
+	:name (n / name
+		:op1 "Japan"))
+
+# ::id 36
+# ::snt Institute spokesman Ulpiano Trillanes said the Philippine
+(x5 / say-01
+	:ARG0 (x3 / newspaper
+		:name (n / name
+			:op1 "Ulpiano"
+			:op2 "Trillanes")
+		:ARG0-of (x1 / institute
+			:ARG2-of (xap0 / person
+				:ARG0-of (x2 / have-org-role-91
+					:ARG2 (s / spokesman)))))
+	:ARG1 (x7 / country
+		:name (n1 / name
+			:op1 "Philippine")))
+
+# ::id 37
+# ::snt earthquake affected a wide area of Luzon island, including Manila,
+(x2 / affect-01
+	:ARG0 (x1 / earthquake)
+	:ARG1 (x5 / area
+		:mod (x4 / wide)
+		:ARG2-of (x10 / include-91
+			:ARG1 (x11 / city
+				:name (n1 / name
+					:op1 "Manila"))))
+	:ARG1 (x8 / island
+		:mod (x7 / country
+			:name (n / name
+				:op1 "Luzon"))))
+
+# ::id 38
+# ::snt but apparently caused no serious damage or injuries.
+(x1 / contrast-01
+	:ARG2 (x3 / cause-01
+		:manner (x2 / apparent)
+		:ARG1 (x7 / or
+			:op1 (x6 / damage-01
+				:polarity -
+				:mod (x5 / serious))
+			:op2 (x8 / injure-01))))
+
+# ::id 39
+# ::snt In the past 35 years there have been two major earthquakes in
+(x11 / earthquake
+	:duration (x5 / temporal-quantity
+		:unit (y / year)
+		:mod (x3 / past)
+		:quant 35)
+	:quant 2
+	:mod (x10 / major))
+
+# ::id 40
+# ::snt Hokkaido. In 1968, the Tokachi-Oki earthquake measuring a 7.9 on
+(x1 / hokkaido
+	:time (x4 / date-entity
+		:year 1968)
+	:null_edge (x8 / earthquake
+		:mod (x7 / country
+			:name (n / name
+				:op1 "Tokachi-Oki"))
+		:ARG1-of (x9 / measure-01
+			:ARG1 (x11 / 7.9))))
+
+# ::id 41
+# ::snt the Richter scale killed 52 people.
+(x4 / kill-01
+	:ARG0 (x3 / scale
+		:poss (x2 / person
+			:name (n / name
+				:op1 "Richter")))
+	:ARG1 52)
+
+# ::id 42
+# ::snt The Richter scale measures the total magnitude of an earthquake.
+(x4 / measure-01
+	:ARG0 (x2 / richter)
+	:ARG0 (x3 / scale)
+	:ARG1 (x7 / magnitude
+		:ARG2-of (x6 / total-01)
+		:poss (x10 / earthquake)))
+
+# ::id 43
+# ::snt Every increase of one digit in the scale represents a tenfold
+(x9 / represent-01
+	:ARG0 (x2 / increase-01
+		:mod (x1 / every)
+		:ARG1 (x5 / digit
+			:quant 1)
+		:degree (x8 / scale))
+	:ARG1 (x11 / tenfold))
+
+# ::id 44
+# ::snt increase in magnitude, thus a reading of 4.5 would be 10 times
+(x7 / read-01
+	:ARG2 (x1 / increase-01)
+	:mod (x5 / thus-far)
+	:mod 4.5
+	:li 10)
+
+# ::id 45
+# ::snt stronger than one of 5.5.
+(x1 / strong
+	:compared-to 5.5)
+

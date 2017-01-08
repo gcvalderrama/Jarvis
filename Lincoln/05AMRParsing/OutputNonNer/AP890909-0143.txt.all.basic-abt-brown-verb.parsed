@@ -1,0 +1,1170 @@
+# ::id 1
+# ::snt Thousands of oil-spattered workers
+(x1 / thousands
+	:poss (x4 / person
+		:ARG0-of (w / work-01)
+		:mod (x3 / oil-spattered)))
+
+# ::id 2
+# ::snt hampered by worsening weather have only a few more days to clean
+(x1 / hamper
+	:ARG0 (x4 / weather
+		:mod (x3 / worsen-01))
+	:ARG1 (x5 / have-03
+		:quant (x8 / few
+			:mod (x6 / only)
+			:mod (x9 / more)
+			:op1 (x10 / temporal-quantity
+				:unit (d / day)
+				:mod (x12 / clean-02)))))
+
+# ::id 3
+# ::snt crude oil off Alaska's petroleum-fouled shoreline before Exxon Corp.
+(x2 / oil
+	:mod (x1 / crude)
+	:source (x7 / shoreline
+		:mod (x6 / petroleum-fouled)
+		:time (x8 / before
+			:op1 (x10 / organization
+				:name (n / name
+					:op1 "Corp.")
+				:null_edge (x9 / organization
+					:name (n1 / name
+						:op1 "Exxon"))))))
+
+# ::id 4
+# ::snt stops work for the season.
+(x2 / work-01
+	:ARG0 (x1 / stop-01)
+	:ARG3 (x5 / season))
+
+# ::id 5
+# ::snt Exxon says it will pull out the last of its workers by this
+(x2 / say-01
+	:ARG0 (x1 / organization
+		:name (n / name
+			:op1 "Exxon"))
+	:ARG1 (x5 / pull-03
+		:ARG2 (x11 / person
+			:ARG0-of (w / work-01)
+			:mod (x8 / last))
+		:ARG2 (x13 / this)))
+
+# ::id 6
+# ::snt coming Friday after treating more than 1,000 miles of shoreline
+(x1 / come-01
+	:time (x2 / friday)
+	:time (x3 / after
+		:op1 (x4 / treat-02
+			:ARG2 (x10 / shoreline
+				:quant (x8 / distance-quantity
+					:unit (m / mile)
+					:quant (x7 / 1,000
+						:null_edge (x5 / more-than)))))))
+
+# ::id 7
+# ::snt tainted by the nation's worst oil spill. The company claimed
+(x1 / taint
+	:ARG0 (x8 / spill-01
+		:ARG0 (x4 / nation)
+		:mod (x6 / bad)
+		:ARG1 (x7 / oil)
+		:ARG1-of (x12 / claim-01
+			:ARG0 (x11 / company))))
+
+# ::id 8
+# ::snt Thursday that only four miles remained to be treated, but state and
+(xap0 / date-entity
+	:weekday (x1 / thursday
+		:domain (x5 / distance-quantity
+			:unit (m / mile)
+			:null_edge (x3 / only
+				:null_edge 4)
+			:ARG1-of (x6 / remain-01
+				:null_edge (x9 / treat-03
+					:ARG1 x5
+					:ARG2 (x12 / state
+						:ARG1 (x13 / and)))))))
+
+# ::id 9
+# ::snt federal agencies disagree with Exxon about how much has been cleaned
+(x3 / disagree-01
+	:ARG0 (x2 / agency
+		:mod (x1 / government-organization
+			:name (n1 / name
+				:op1 "federal")))
+	:ARG1 (x5 / organization
+		:name (n / name
+			:op1 "Exxon"))
+	:ARG1 (x11 / clean-02))
+
+# ::id 10
+# ::snt and how well.
+(x1 / and
+	:degree (x3 / well))
+
+# ::id 11
+# ::snt "Our position is that the weather is going to make us go
+(x3 / position
+	:ARG2 (x11 / make-01
+		:ARG0 (x7 / weather)
+		:ARG1 (x13 / go-01)))
+
+# ::id 12
+# ::snt regardless of what the numbers are, regardless of how much is
+(xap0 / and
+	:op1 (x5 / number)
+	:ARG1 (x8 / regardless))
+
+# ::id 13
+# ::snt left," said Exxon spokesman Henry Beathard.
+(x4 / say-01
+	:mod (x1 / left)
+	:ARG0 (x7 / newspaper
+		:name (n / name
+			:op1 "Henry"
+			:op2 "Beathard")
+		:ARG0-of (x6 / have-org-role-91
+			:ARG2 (s / spokesman)
+			:ARG1 (x5 / organization
+				:name (n1 / name
+					:op1 "Exxon")))))
+
+# ::id 14
+# ::snt Exxon said it chose Sept. 15 for the withdrawal of the last of
+(x2 / say-01
+	:ARG0 (x1 / organization
+		:name (n / name
+			:op1 "Exxon"))
+	:ARG1 (x4 / choose-01
+		:time (x5 / name
+			:op1 "Sept."
+			:op2 "15")
+		:purpose (x9 / withdraw-01
+			:ARG1 (x12 / last))))
+
+# ::id 15
+# ::snt its thousands of workers and hundreds of vessels to avoid
+(x10 / avoid-01
+	:ARG1 (x5 / and
+		:op2 (x4 / person
+			:ARG0-of (w / work-01))
+		:op2 (x8 / vessel)))
+
+# ::id 16
+# ::snt increasingly poor weather and reduced hours of daylight. In this
+(x4 / and
+	:op1 (x3 / weather
+		:mod (x2 / poor
+			:ARG1-of (x1 / increase-01))
+		:mod (x11 / this))
+	:op2 (x5 / reduce-01
+		:ARG1 (x6 / temporal-quantity
+			:unit (h / hour)
+			:time (x8 / date-entity))))
+
+# ::id 17
+# ::snt land where winter comes early, the first dusting of snow can already
+(x9 / dust
+	:ARG1 (x1 / land)
+	:time (x4 / come-01
+		:ARG1 (x3 / winter)
+		:time (x5 / early))
+	:ARG1 (x11 / snow)
+	:time (x13 / already))
+
+# ::id 18
+# ::snt be seen in some higher elevations.
+(x2 / see-01
+	:ARG2 (x6 / elevation
+		:quant (x4 / some)
+		:mod (x5 / high)))
+
+# ::id 19
+# ::snt "We have buses and planes set up for them to leave that day,"
+(x3 / have-03
+	:null_edge (x2 / we)
+	:ARG1 (x7 / set-08
+		:ARG0 (x5 / and
+			:op1 (x4 / bus)
+			:op3 (x6 / plane))
+		:condition (x12 / leave-01
+			:ARG1 (x14 / day
+				:mod (x13 / that)))))
+
+# ::id 20
+# ::snt Beathard said. "They don't have the option to take that free trip
+(x2 / say-01
+	:ARG0 (x1 / person
+		:name (n / name
+			:op1 "Beathard"))
+	:ARG1 (x12 / take-01
+		:ARG0 (x5 / they)
+		:ARG1 (x10 / option)
+		:ARG1 (x15 / trip
+			:mod (x13 / that)
+			:ARG1-of (x14 / free-41))))
+
+# ::id 21
+# ::snt three days later." Already, the first fall storm has raked Prince
+(x3 / late
+	:op1 (x1 / date-entity)
+	:null_edge (x13 / rake
+		:time (x6 / already)
+		:ARG0 (x11 / storm
+			:time (xap0 / date-entity
+				:null_edge (x10 / null_tag)))
+		:ARG1 (x14 / prince)))
+
+# ::id 22
+# ::snt William Sound, where the tanker Exxon Valdez spilled nearly 11
+(x1 / name
+	:op1 "William"
+	:op2 "Sound"
+	:ARG0-of (x9 / spill-01
+		:ARG0 (x8 / valdez
+			:null_edge (x6 / tanker))
+		:quant (x10 / nearly
+			:op1 (x11 / person
+				:op 11))))
+
+# ::id 23
+# ::snt million gallons of crude oil on March 24. Gusts to 70 mph and 6-to
+(x5 / oil
+	:quant (x2 / volume-quantity
+		:unit (g / gallon)
+		:time (x7 / date-entity)
+		:null_edge (x10 / null_tag
+			:ARG2 (x13 / mph
+				:quant 70)
+			:ARG1 (x14 / and
+				:op3 (x15 / 6-to))))
+	:mod (x4 / crude))
+
+# ::id 24
+# ::snt 10-foot seas shut down the Point Helen cleanup operation once. On
+(x3 / shut-05
+	:ARG0 (x2 / sea)
+	:ARG1 (x9 / operation
+		:mod (x6 / point)
+		:mod (x8 / cleanup
+			:ARG1 (x7 / person
+				:name (n / name
+					:op1 "Helen"))))
+	:time (x10 / once))
+
+# ::id 25
+# ::snt Smith Island, a test of a solvent Exxon wants to use to clean oily
+(x5 / test-01
+	:name (x1 / name
+		:op1 "Smith"
+		:op2 "Island")
+	:null_edge (x10 / want-01
+		:ARG0 (x9 / organization
+			:name (n / name
+				:op1 "Exxon"))
+		:ARG1 (x12 / use-01
+			:ARG0 x9
+			:ARG1 (x14 / clean-01)
+			:ARG1 (x15 / oily))))
+
+# ::id 26
+# ::snt shores was delayed for at least four days by the storm.
+(x3 / delay-01
+	:ARG1 (x1 / shore)
+	:duration (x8 / temporal-quantity
+		:unit (d / day)
+		:quant (x5 / person
+			:name (n / name
+				:op1 "at")))
+	:ARG0 (x11 / storm))
+
+# ::id 27
+# ::snt Point Helen, one of the last heavily hit shorelines on the
+(x10 / shoreline
+	:mod (x2 / country
+		:name (n / name
+			:op1 "Helen")
+		:ARG0-of (x1 / point))
+	:mod (x7 / last)
+	:ARG1-of (x9 / hit-01
+		:manner (x8 / heavily)))
+
+# ::id 28
+# ::snt cleanup list, was left untouched until after mid-August to avoid
+(x5 / leave-01
+	:ARG1 (x2 / list-01
+		:mod (x1 / cleanup))
+	:ARG2 (x6 / touch-07
+		:polarity -
+		:purpose (x11 / avoid-01
+			:time (x8 / after))))
+
+# ::id 29
+# ::snt disturbing a fish hatchery at Sawmill Bay, officials said.
+(x10 / say-01
+	:ARG1 (x1 / disturb-01
+		:ARG1 (x3 / fish
+			:ARG0-of (x4 / hatchery
+				:location (x7 / country
+					:name (n / name
+						:op1 "Bay")
+					:null_edge (x6 / country
+						:name (n1 / name
+							:op1 "Sawmill"))))))
+	:ARG0 (xap0 / person
+		:ARG0-of (x9 / have-org-role-91
+			:ARG2 (o / official))))
+
+# ::id 30
+# ::snt Weather permitting, the shore will be "environmentally stable,"
+(x10 / stable
+	:domain (x2 / permit-01
+		:ARG0 (x1 / weather))
+	:domain (x5 / shore)
+	:mod (x9 / environmentally))
+
+# ::id 31
+# ::snt if not clean, by Exxon's deadline, the company said.
+(x12 / say-01
+	:time (x3 / clean-02
+		:ARG0 (x8 / deadline
+			:ARG0 (x6 / organization
+				:name (n / name
+					:op1 "Exxon"))))
+	:ARG0 (x11 / company))
+
+# ::id 32
+# ::snt "I'm quite confident we are going to make it _ if we can just
+(x5 / confident-41
+	:ARG1 (x2 / i)
+	:degree (x4 / quite)
+	:ARG1 (x10 / make-01
+		:ARG0 (x6 / we)
+		:ARG1 (x15 / possible
+			:domain (x14 / we)
+			:mod (x16 / just))))
+
+# ::id 33
+# ::snt get a few good days of weather," said beachmaster Warren Winstead
+(x10 / say-01
+	:ARG1 (x1 / get-01
+		:null_edge (x3 / few
+			:op1 (x5 / temporal-quantity
+				:unit (d / day)
+				:mod (x4 / good)
+				:mod (x7 / weather))))
+	:ARG0 (x12 / newspaper
+		:name (n / name
+			:op1 "Warren"
+			:op2 "Winstead")
+		:ARG0-of (x11 / beachmaster)))
+
+# ::id 34
+# ::snt of Baton Rouge, La. "I think if we can get another few days in,
+(x8 / think-01
+	:ARG1 (x3 / country
+		:name (n / name
+			:op1 "Rouge")
+		:null_edge (x2 / country
+			:name (n1 / name
+				:op1 "Baton"))
+		:null_edge (x5 / country
+			:name (n2 / name
+				:op1 "La.")))
+	:ARG0 (x7 / i)
+	:ARG1 (x11 / possible
+		:domain (x12 / get-01
+			:ARG0 (x10 / we)
+			:null_edge (x14 / few
+				:op1 (x15 / temporal-quantity
+					:unit (d / day)
+					:mod (x13 / another))))))
+
+# ::id 35
+# ::snt we'll beat it."
+(x3 / beat-01
+	:ARG0 (x1 / we)
+	:ARG1 (x4 / it))
+
+# ::id 36
+# ::snt But the Alaska Department of Environmental Conservation and Exxon
+(x1 / contrast-01
+	:ARG2 (x3 / government-organization
+		:name (n / name
+			:op1 "Alaska"
+			:op2 "Department"))
+	:ARG2 (x8 / and
+		:op1 (x7 / organization
+			:name (n1 / name
+				:op1 "Conservation")
+			:mod (x6 / organization
+				:name (n3 / name
+					:op1 "Environmental")))
+		:op2 (x9 / organization
+			:name (n2 / name
+				:op1 "Exxon"))))
+
+# ::id 37
+# ::snt dispute just about everything, including how many miles have been
+(x1 / dispute-01
+	:ARG2 (x3 / about)
+	:ARG1 (x4 / everything
+		:mod (x2 / just)
+		:ARG2-of (x6 / include-91)))
+
+# ::id 38
+# ::snt treated, how well the job has been done and whether Exxon plans to
+(x1 / treat-01
+	:ARG1 (x10 / and
+		:op1 (x9 / do-02
+			:ARG1 (x6 / job))
+		:op2 (x13 / plan-01
+			:ARG0 (x12 / organization
+				:name (n / name
+					:op1 "Exxon")))))
+
+# ::id 39
+# ::snt duck out after giving the shore a quick once-over.
+(x1 / duck
+	:time (x3 / after
+		:op1 (x4 / give-01
+			:ARG1 (x6 / shore)
+			:ARG1 (x9 / once-over
+				:mod (x8 / quick)))))
+
+# ::id 40
+# ::snt The state has sued Exxon and a half-dozen other oil companies
+(x4 / sue-01
+	:ARG0 (x2 / state)
+	:ARG1 (x6 / and
+		:op1 (x5 / government-organization
+			:name (n / name
+				:op1 "Exxon"))
+		:op2 (x11 / company
+			:mod (x8 / half-dozen)
+			:mod (x9 / other)
+			:mod (x10 / oil))))
+
+# ::id 41
+# ::snt that get oil from Alaska's North Slope by way of the Alyeska
+(x2 / get-01
+	:ARG1 (x3 / oil
+		:source (x8 / slope
+			:null_edge (x7 / null_tag)))
+	:manner (x10 / way
+		:poss (x13 / country
+			:name (n / name
+				:op1 "Alyeska"))))
+
+# ::id 42
+# ::snt pipeline, claiming they were negligent in preventing and cleaning up
+(x3 / claim-01
+	:ARG1 (x1 / pipeline)
+	:ARG1 (x9 / and
+		:op1 (x8 / prevent-01)
+		:op2 (x10 / clean-02)))
+
+# ::id 43
+# ::snt the spill. The Exxon Valdez was outbound from the pipeline terminal
+(x6 / person
+	:name (n / name
+		:op1 "Valdez")
+	:null_edge (x8 / outbound)
+	:null_edge (x12 / terminal
+		:mod (x11 / pipeline)))
+
+# ::id 44
+# ::snt at Valdez when it ripped its bottom open on a reef.
+(x5 / rip-01
+	:location (x2 / country
+		:name (n / name
+			:op1 "Valdez"))
+	:purpose (x8 / open-01)
+	:ARG1 (x11 / reef))
+
+# ::id 45
+# ::snt On Saturday, environmental and fishing groups took two dozen
+(x8 / take-01
+	:ARG0 (x5 / and)
+	:ARG0 (x7 / group
+		:mod (x4 / environment)
+		:mod (x6 / fishing))
+	:ARG1 (x10 / dozen
+		:quant 2)
+	:time (xap0 / date-entity
+		:weekday (x2 / saturday)))
+
+# ::id 46
+# ::snt boats into Port Valdez for a demonstration demanding greater
+(x1 / boat
+	:purpose (x8 / demand-01
+		:ARG1 (x7 / demonstrate-01
+			:ARG2 (x4 / person
+				:name (n / name
+					:op1 "Valdez")
+				:null_edge (x3 / null_tag)))
+		:ARG1 (x9 / great)))
+
+# ::id 47
+# ::snt protection against oil spills.
+(x1 / protect-01
+	:ARG2 (x4 / spill-01
+		:mod (x3 / oil)))
+
+# ::id 48
+# ::snt Organizers of the event held with Coast Guard permission said
+(x10 / say-01
+	:ARG2 (x9 / permit-01
+		:ARG0 (x1 / person
+			:ARG0-of (o / organize-01))
+		:ARG0 (x8 / organization
+			:name (n / name
+				:op1 "Guard")
+			:name (x7 / have-org-role-91
+				:ARG1 (m / military
+					:name (n1 / name
+						:op1 "Coast"))))))
+
+# ::id 49
+# ::snt their main goal was to draw attention to tankers of foreign registry
+(x3 / goal
+	:mod (x2 / main)
+	:ARG2 (x6 / draw-03
+		:ARG1 (x7 / attention)
+		:ARG2 (x9 / tanker
+			:ARG0 (x12 / registry
+				:mod (x11 / foreign)))))
+
+# ::id 50
+# ::snt that travel in and out of the port, terminus of the trans-Alaska oil
+(x2 / travel-01
+	:ARG0 (x1 / that)
+	:ARG1 (x10 / terminus
+		:mod (x8 / port)
+		:consist-of (x14 / oil
+			:mod (x13 / trans-alaska))))
+
+# ::id 51
+# ::snt pipeline.
+(x1 / pipeline)
+
+# ::id 52
+# ::snt Seven vessels that are registered in Italy, Liberia and Israel
+(x2 / vessel
+	:quant 7
+	:ARG1-of (x5 / register-02
+		:ARG2 (x10 / and
+			:op1 (x7 / country
+				:name (n / name
+					:op1 "Italy"))
+			:op2 (x9 / country
+				:name (n1 / name
+					:op1 "Liberia"))
+			:op3 (x11 / country
+				:name (n2 / name
+					:op1 "Israel")))))
+
+# ::id 53
+# ::snt and use the port are not regulated adequately and do not carry
+(x1 / and
+	:op1 (x2 / use-01
+		:ARG1 (x4 / port))
+	:op2 (x9 / and
+		:op1 (x7 / regulate-01
+			:manner (x8 / adequate))
+		:op2 (x12 / carry-01)))
+
+# ::id 54
+# ::snt sufficient liability insurance for oil-spill compensation, said
+(x8 / say-01
+	:ARG0 (x3 / insure-02
+		:ARG1-of (x1 / suffice-01)
+		:mod (x2 / liability)
+		:ARG1-of (x6 / compensate-01
+			:mod (x5 / oil-spill))))
+
+# ::id 55
+# ::snt Nancy Lethcoe, vice president of the Prince William Sound
+(x1 / name
+	:op1 "Nancy"
+	:op2 "Lethcoe"
+	:ARG0-of (x5 / have-org-role-91
+		:ARG2 (p / president)
+		:mod (x4 / vice)
+		:ARG1 (x10 / person
+			:name (n / name
+				:op1 "Sound")
+			:null_edge (x8 / prince)
+			:null_edge (x9 / person
+				:name (n1 / name
+					:op1 "William")))))
+
+# ::id 56
+# ::snt Conservation Alliance and a partner in a local tourism business. The
+(x3 / and
+	:op1 (x2 / alliance
+		:null_edge (x1 / conservation))
+	:op2 (x5 / partner-01
+		:manner (x10 / business
+			:mod (x8 / local)
+			:mod (x9 / tourism))))
+
+# ::id 57
+# ::snt Coast Guard said a total of 70 tankers use the port.
+(x3 / say-01
+	:ARG0 (x1 / military
+		:name (n / name
+			:op1 "Coast"
+			:op2 "Guard"))
+	:ARG1 (x9 / use-01
+		:ARG0 (x5 / company
+			:name (n1 / name
+				:op1 "total")
+			:ARG1 (x8 / tanker
+				:quant 70))
+		:ARG1 (x11 / port)))
+
+# ::id 58
+# ::snt Crews have removed gross contamination from many shorelines, but
+(x10 / contrast-01
+	:ARG1 (x3 / remove-01
+		:ARG0 (x1 / crew)
+		:ARG1 (x5 / contaminate-01
+			:mod (x4 / gross))
+		:ARG2 (x8 / shoreline
+			:quant (x7 / many))))
+
+# ::id 59
+# ::snt they remain oily. Exxon claims about 244,000 gallons of oil and
+(x6 / claim-01
+	:ARG1 (x2 / remain-01
+		:ARG3 (x3 / oily))
+	:ARG0 (x5 / organization
+		:name (n / name
+			:op1 "Exxon"))
+	:ARG1 (x11 / oil
+		:quant (x9 / volume-quantity
+			:unit (g / gallon)
+			:quant (x7 / about
+				:op1 (x8 / 244,000))))
+	:ARG1 (x12 / and))
+
+# ::id 60
+# ::snt water emulsion have been recovered.
+(x5 / recover-02
+	:ARG1 (x2 / emulsion
+		:mod (x1 / water)))
+
+# ::id 61
+# ::snt Exxon, the DEC and the Coast Guard all have different figures for
+(x10 / have-03
+	:ARG0 (x5 / and
+		:op1 (x1 / exxon)
+		:op2 (x4 / organization
+			:name (n / name
+				:op1 "DEC"))
+		:op2 (x7 / military
+			:name (n1 / name
+				:op1 "Coast"
+				:op2 "Guard"))
+		:quant (x9 / all)
+		:op1 (x12 / figure
+			:ARG1-of (x11 / differ-02))))
+
+# ::id 62
+# ::snt virtually everything, in part because they use different criteria
+(x8 / use-01
+	:ARG1 (x2 / everything
+		:mod (x1 / virtual))
+	:ARG2 (x5 / part)
+	:ARG1-of (x6 / cause-01)
+	:ARG0 (x7 / they)
+	:ARG1 (x10 / criteria
+		:ARG1-of (x9 / differ-02)))
+
+# ::id 63
+# ::snt for measuring contamination and what constitutes an effective
+(x4 / and
+	:op1 (x2 / measure-01
+		:ARG1 (x3 / contaminate-01))
+	:op2 (x6 / constitute-01
+		:ARG1 (x8 / effective)))
+
+# ::id 64
+# ::snt cleanup. The state agency's figures show Exxon claiming to have
+(x1 / cleanup
+	:ARG0-of (x8 / show-01
+		:ARG0 (x7 / figure
+			:ARG0 (x5 / agency
+				:mod (x4 / state)
+				:mod (x10 / claim-01
+					:ARG0 (x9 / organization
+						:name (n / name
+							:op1 "Exxon"))
+					:ARG1 (x12 / have-03
+						:ARG0 x9))))))
+
+# ::id 65
+# ::snt treated more shoreline than was fouled.
+(x1 / treat-01
+	:ARG1 (x3 / shoreline
+		:mod (x2 / more))
+	:time (x6 / foul-01))
+
+# ::id 66
+# ::snt "We're the only people honest about the numbers," said Joe
+(x13 / say-01
+	:ARG1 (x5 / only
+		:ARG1 (x2 / we)
+		:mod (x7 / honest
+			:topic (x10 / number)))
+	:ARG0 (x14 / person
+		:name (n / name
+			:op1 "Joe")))
+
+# ::id 67
+# ::snt Bridgeman, a DEC spokesman. "The numbers are being manipulated to
+(x1 / country
+	:name (n / name
+		:op1 "Bridgeman")
+	:null_edge (x5 / have-org-role-91
+		:ARG2 (s / spokesman)
+		:ARG1 (x4 / event
+			:name (n1 / name
+				:op1 "DEC")))
+	:null_edge (x12 / manipulate-02
+		:ARG1 (x9 / number)))
+
+# ::id 68
+# ::snt show great shoreline progress."
+(x1 / show-01
+	:ARG1 (x4 / progress-01
+		:mod (x2 / great)
+		:ARG1 (x3 / shoreline)))
+
+# ::id 69
+# ::snt Exxon officials acknowledged discrepancies. "I honestly don't
+(x3 / acknowledge-01
+	:ARG1 (x4 / discrepancy)
+	:null_edge (x9 / do-02
+		:ARG0 (x7 / i)
+		:manner (x8 / honest))
+	:ARG0 (xap0 / person
+		:ARG0-of (x2 / have-org-role-91
+			:ARG2 (o / official)
+			:ARG1 (x1 / organization
+				:name (n / name
+					:op1 "Exxon")))))
+
+# ::id 70
+# ::snt have an adequate explantion," said spokesman Karsten Rodvik.
+(x7 / say-01
+	:ARG1 (x4 / explantion
+		:mod (x3 / adequate))
+	:ARG0 (x9 / newspaper
+		:name (n / name
+			:op1 "Karsten"
+			:op2 "Rodvik")
+		:ARG0-of (x8 / have-org-role-91
+			:ARG2 (s / spokesman))))
+
+# ::id 71
+# ::snt As the cleanup operation grinds down from its peak of 12,000
+(x5 / ground-01
+	:ARG1 (x4 / operation
+		:mod (x3 / cleanup))
+	:ARG1 (x9 / peak-01
+		:quant (x11 / 12,000)))
+
+# ::id 72
+# ::snt workers and 1,300 vessels, Valdez officials are bracing for a
+(x9 / brace-01
+	:ARG1 (x2 / and
+		:op1 (x1 / person
+			:ARG0-of (w / work-01))
+		:op2 (x4 / vessel))
+	:ARG2 (x11 / name
+		:op1 "a")
+	:ARG0 (xap0 / person
+		:ARG0-of (x7 / have-org-role-91
+			:ARG2 (o / official)
+			:ARG1 (x6 / country
+				:name (n / name
+					:op1 "Valdez")))))
+
+# ::id 73
+# ::snt shrunken economy.
+(x2 / economy
+	:mod (x1 / shrunken))
+
+# ::id 74
+# ::snt Temporary housing set up by Exxon will close. The Valdez
+(x3 / set-03
+	:ARG0 (x2 / house-01
+		:mod (x1 / temporary))
+	:ARG2 (x8 / close-04
+		:ARG1 (x6 / organization
+			:name (n / name
+				:op1 "Exxon")))
+	:ARG1 (x11 / valdez))
+
+# ::id 75
+# ::snt population likely will plunge from 13,000 to about 4,500.
+(x2 / likely
+	:domain (x4 / plunge
+		:ARG0 (x1 / population)
+		:ARG4 (x6 / 13,000)))
+
+# ::id 76
+# ::snt Public agencies are getting ready to pare their staffs to winter
+(x4 / get-03
+	:ARG1 (x2 / agency
+		:mod (x1 / public))
+	:ARG1 (x5 / ready-01
+		:ARG1 x2
+		:ARG2 (x7 / pare
+			:ARG0 x2
+			:ARG1 (x9 / have-org-role-91
+				:ARG2 (s / staff))
+			:ARG3 (x11 / winter))))
+
+# ::id 77
+# ::snt levels, although some work will continue. Scientists are studying
+(x11 / study-01
+	:ARG1 (x1 / level)
+	:null_edge (x7 / continue-01
+		:ARG1 (x5 / work-01
+			:mod (x4 / some)))
+	:ARG0 (x9 / have-org-role-91
+		:ARG2 (s / scientist)))
+
+# ::id 78
+# ::snt the effects of fertilizer spread on test beaches to stimulate the
+(x5 / spread-01
+	:ARG1 (x2 / thing
+		:ARG1-of (e / effect-01)
+		:ARG1 (x4 / thing
+			:ARG0-of (f / fertilize-01)))
+	:location (x8 / beach
+		:mod (x7 / test-01))
+	:purpose (x10 / stimulate-01))
+
+# ::id 79
+# ::snt growth of oil-eating bacteria. Other agencies plan to collect
+(x8 / plan-01
+	:ARG0 (x1 / grow-01
+		:ARG1 (x4 / bacteria
+			:mod (x3 / oil-eating)))
+	:ARG0 (x7 / agency
+		:mod (x6 / other))
+	:ARG1 (x10 / collect-01
+		:ARG0 x1
+		:ARG0 x7))
+
+# ::id 80
+# ::snt samples and study the environment during the winter.
+(x2 / and
+	:op1 (x3 / study-01
+		:ARG0 (x1 / sample-01)
+		:ARG1 (x5 / environment)
+		:time (x8 / winter)))
+
+# ::id 81
+# ::snt Otter and bird rescue operations are shutting down. More than
+(x7 / shut-05
+	:ARG1 (x2 / and
+		:op1 (x1 / person
+			:name (n / name
+				:op1 "Otter"))
+		:op2 (x3 / bird))
+	:ARG1 (x4 / rescue-01)
+	:degree (x10 / more))
+
+# ::id 82
+# ::snt 32,000 birds and 980 otters died from the spill's effects.
+(x6 / die-01
+	:ARG1 (x3 / and
+		:quant (x1 / 32,000)
+		:op1 (x2 / bird)
+		:op2 (x5 / otter
+			:quant (x4 / 980)))
+	:ARG1 (x11 / effect))
+
+# ::id 83
+# ::snt Exxon has started shipping millions of pounds of equipment to
+(x3 / start-01
+	:ARG0 (x1 / organization
+		:name (n / name
+			:op1 "Exxon"))
+	:ARG1 (x4 / ship-01
+		:ARG0 x1
+		:ARG1 (x7 / monetary-quantity
+			:unit (p / pound)
+			:consist-of (x9 / equipment))))
+
+# ::id 84
+# ::snt winter storage in Anchorage, home of its Alaska headquarters.
+(x2 / store-01
+	:season (x1 / winter)
+	:location (x4 / country
+		:name (n / name
+			:op1 "Anchorage")
+		:location (x6 / home
+			:poss (x10 / headquarters))))
+
+# ::id 85
+# ::snt State environmental officials say Exxon's withdrawal is premature
+(x4 / say-01
+	:ARG1 (x9 / premature
+		:domain (x7 / withdraw-01
+			:ARG1 (x5 / organization
+				:name (n / name
+					:op1 "Exxon"))))
+	:ARG0 (xap0 / person
+		:ARG0-of (x3 / have-org-role-91
+			:ARG2 (o / official)
+			:ARG1 (x1 / state)
+			:ARG1 (x2 / environment))))
+
+# ::id 86
+# ::snt and that it should stay on the job as long as the weather permits.
+(x1 / and
+	:op2 (x4 / recommend-01
+		:ARG1 (x5 / stay-01
+			:ARG1 (x3 / it)
+			:ARG1 (x8 / job)
+			:ARG1 (x14 / permit-01
+				:ARG0 (x13 / weather)))))
+
+# ::id 87
+# ::snt "We don't buy the deadline. We not only want them to come back next
+(x5 / buy-01
+	:ARG0 (x2 / we)
+	:ARG1 (x7 / deadline)
+	:null_edge (x12 / want-01
+		:ARG0 (x9 / we)
+		:mod (x11 / only)
+		:ARG1 (x15 / come-04
+			:direction (x16 / back)
+			:location (x17 / next))))
+
+# ::id 88
+# ::snt year. We want them to work past Sept. 15," Bridgeman said.
+(x14 / say-01
+	:ARG1 (x4 / want-01
+		:ARG0 (x3 / we)
+		:ARG1 (x7 / work-01
+			:ARG0 x3
+			:time (x8 / past
+				:op1 (x9 / date-entity))))
+	:ARG0 (x13 / person
+		:name (n / name
+			:op1 "Bridgeman")))
+
+# ::id 89
+# ::snt Over the winter Exxon plans to monitor how the shoreline looks.
+(x5 / plan-01
+	:time (x1 / over
+		:op1 (x3 / winter))
+	:ARG0 (x4 / organization
+		:name (n / name
+			:op1 "Exxon"))
+	:ARG1 (x7 / monitor-01
+		:ARG0 x4
+		:ARG1 (x11 / look-02
+			:ARG0 (x10 / shoreline))))
+
+# ::id 90
+# ::snt It has made no commitment to come back next summer but says it will
+(x11 / contrast-01
+	:ARG2 (x5 / commit-01
+		:polarity -
+		:ARG2 (x7 / come-01
+			:direction (x8 / back)
+			:time (x10 / summer
+				:mod (x9 / next))))
+	:ARG2 (x12 / say-01
+		:ARG1 (x14 / will)))
+
+# ::id 91
+# ::snt abide by any reasonable decision of the Coast Guard on whether more
+(x1 / abide-01
+	:ARG0 (x5 / decide-01
+		:mod (x3 / any)
+		:mod (x4 / reasonable)
+		:ARG0 (x9 / organization
+			:name (n / name
+				:op1 "Guard")
+			:null_edge (x8 / have-org-role-91
+				:ARG1 (m / military
+					:name (n1 / name
+						:op1 "Coast")))))
+	:ARG1 (x12 / more-than))
+
+# ::id 92
+# ::snt cleanup is necessary.
+(x1 / cleanup)
+
+# ::id 93
+# ::snt The price tag for this summer's cleanup is expected to top $1.2
+(x10 / expect-01
+	:ARG1 (x12 / top-02
+		:ARG0 (x3 / tag
+			:mod (x2 / price-01)
+			:purpose (x8 / cleanup
+				:time (xap0 / date-entity
+					:season (x6 / summer
+						:mod (x5 / this)))))
+		:ARG1 (x13 / country
+			:name (n / name
+				:op1 "$")
+			:quant (x14 / volume-quantity
+				:unit (b / barrel)))))
+
+# ::id 94
+# ::snt billion and the effort has become an industry of its own.
+(x2 / and
+	:op2 (x6 / become-01
+		:ARG1 (x4 / effort)
+		:ARG2 (x8 / industry)))
+
+# ::id 95
+# ::snt Exxon's spending spree was felt statewide and helped lower
+(x8 / and
+	:op1 (x6 / feel-01
+		:ARG1 (x4 / spree
+			:poss (x1 / organization
+				:name (n / name
+					:op1 "Exxon"))
+			:ARG3-of (x3 / spend-01))
+		:time (x7 / statewide))
+	:op2 (x9 / help-01
+		:ARG2 (x10 / low)))
+
+# ::id 96
+# ::snt unemployment, said state labor economist Neal Fried. In Valdez and
+(x3 / say-01
+	:ARG1 (x12 / and
+		:name (x7 / name
+			:op1 "Neal"
+			:op2 "Fried"
+			:ARG0-of (x4 / state)
+			:ARG0-of (x5 / labor-01)
+			:ARG0-of (x6 / economist))
+		:op2 (x11 / country
+			:name (n / name
+				:op1 "Valdez"))))
+
+# ::id 97
+# ::snt Cordova, unemployment was about half the previous year's level.
+(x1 / person
+	:name (n / name
+		:op1 "Cordova")
+	:ARG1-of (x3 / employ-01
+		:polarity -)
+	:topic (x11 / level
+		:time (x9 / year
+			:mod (x8 / previous))))
+
+# ::id 98
+# ::snt Exxon has paid more than $90 million in damage claims so far, and
+(x15 / and
+	:op1 (x3 / pay-01
+		:ARG0 (x1 / organization
+			:name (n / name
+				:op1 "Exxon"))
+		:ARG1 (x4 / more-than)
+		:ARG1 (x11 / claim-01
+			:ARG1 (x10 / damage-01))))
+
+# ::id 99
+# ::snt is paying up to $3 million a day, about two-thirds directly to
+(x2 / pay-01
+	:ARG3 (x12 / two-third)
+	:manner (x13 / direct)
+	:frequency (xap0 / rate-entity-91
+		:ARG2 (x9 / temporal-quantity
+			:unit (d / day))))
+
+# ::id 100
+# ::snt fishermen who were kept in port by oil-covered water.
+(x1 / fisherman
+	:ARG1-of (x4 / keep-01
+		:location (x6 / port)
+		:ARG0 (x9 / water
+			:mod (x8 / oil-covered))))
+
+# ::id 101
+# ::snt Exxon bought 302,000 pairs of rubber gloves, 167,000 sets of rain
+(x2 / buy-01
+	:ARG0 (x1 / organization
+		:name (n / name
+			:op1 "Exxon"))
+	:ARG1 (x7 / glove
+		:mod (x4 / pair)
+		:mod (x6 / rubber)
+		:mod (x10 / set
+			:quant (x9 / 167,000)
+			:consist-of (x12 / rain))))
+
+# ::id 102
+# ::snt gear, 73,000 pairs of rubber boots, 125,000 coveralls and 53,000
+(x1 / gear-01
+	:mod (x4 / pair
+		:quant (x3 / 73,000)
+		:domain (x11 / and
+			:op1 (x7 / boot
+				:mod (x6 / rubber))
+			:op2 (x10 / coverall
+				:quant (x9 / 125,000))
+			:op2 (x12 / 53,000))))
+
+# ::id 103
+# ::snt life vests.
+(x2 / vest
+	:mod (x1 / life))
+
+# ::id 104
+# ::snt The company said it purchased more than 12 million pounds of
+(x3 / say-01
+	:ARG0 (x2 / company)
+	:ARG1 (x5 / purchase-01))
+
+# ::id 105
+# ::snt groceries, amounting to 1,000 cows, 360,000 chickens, 1,000 turkeys
+(x1 / grocery
+	:ARG1-of (x3 / amount-01
+		:ARG2 (x6 / cow
+			:location (x9 / chicken
+				:quant (x8 / 360,000))
+			:location (x12 / turkey))))
+
+# ::id 106
+# ::snt and 700 pigs. Washing machines agitated more than 3 million pounds
+(x1 / and
+	:op1 (x7 / agitate
+		:ARG1 (x3 / pig
+			:quant 700)
+		:ARG0 (x6 / machine
+			:ARG0-of (x5 / wash-01))))
+
+# ::id 107
+# ::snt of laundry, and equipment consumed more than 400,000 gallons of
+(x6 / consume-01
+	:ARG1 (x4 / and
+		:op1 (x2 / laundry)
+		:op2 (x5 / equipment)
+		:op1 (x10 / volume-quantity
+			:unit (g / gallon)
+			:quant (x7 / more-than
+				:op1 (x9 / 400,000)))))
+
+# ::id 108
+# ::snt diesel fuel each week.
+(x2 / fuel-01
+	:mod (x1 / diesel)
+	:frequency (xap0 / rate-entity-91
+		:ARG2 (x4 / temporal-quantity
+			:unit (w / week))))
+

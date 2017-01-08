@@ -1,0 +1,850 @@
+# ::id 1
+# ::snt Michael Milken, the fallen Drexel Burnham Lambert
+(x1 / name
+	:op1 "Michael"
+	:op2 "Milken"
+	:ARG1-of (x5 / fall-01
+		:name (x6 / name
+			:op1 "Drexel"
+			:op2 "Burnham"
+			:op3 "Lambert")))
+
+# ::id 2
+# ::snt financier, is striking out on his own.
+(x4 / person
+	:name (n / name
+		:op1 "striking")
+	:ARG0 (x1 / finance-01))
+
+# ::id 3
+# ::snt But what isn't clear is whether loyal ex-colleagues will follow
+(x1 / contrast-01
+	:ARG2 (x5 / clear)
+	:ARG2 (x11 / follow-02
+		:ARG0 (x9 / ex-colleague
+			:mod (x8 / loyal))))
+
+# ::id 4
+# ::snt the Pied Piper of junk bonds to his new firm _ and how long the
+(x2 / pied
+	:ARG1 (x3 / piper
+		:ARG1 (x6 / bond
+			:mod (x5 / junk))
+		:ARG2 (x12 / and
+			:op1 (x11 / _
+				:mod (x9 / new)
+				:mod (x10 / firm)
+				:mod (x14 / long)))))
+
+# ::id 5
+# ::snt venture will last with Milken facing a lengthy jail term.
+(x3 / last-01
+	:ARG1 (x1 / venture)
+	:ARG2 (x6 / face-01
+		:ARG0 x1
+		:ARG0 (x5 / person
+			:name (n / name
+				:op1 "Milken"))
+		:ARG1 (x10 / term
+			:duration (x8 / lengthy)
+			:mod (x9 / jail))))
+
+# ::id 6
+# ::snt Milken, 42, resigned Thursday after 19 years at Drexel, where he
+(x5 / resign-01
+	:ARG0 (x1 / person
+		:name (n / name
+			:op1 "Milken")
+		:null_edge 42)
+	:time (x7 / after
+		:op1 (x9 / temporal-quantity
+			:unit (y / year)
+			:quant 19))
+	:time (xap0 / date-entity
+		:weekday (x6 / thursday)))
+
+# ::id 7
+# ::snt began a wildly successful career that helped reshape corporate
+(x1 / begin-01
+	:ARG1 (x5 / career
+		:ARG1-of (x4 / succeed-01
+			:mod (x3 / wildly))
+		:ARG0-of (x7 / help-01
+			:ARG1 (x8 / reshape
+				:ARG1 (x9 / corporation)))))
+
+# ::id 8
+# ::snt America in the 1980s through the pioneering use of low-grade
+(x8 / use-01
+	:mod (x7 / pioneering)
+	:ARG1-of (x9 / include-91)
+	:ARG1-of (xap0 / date-entity
+		:decade 1980))
+
+# ::id 9
+# ::snt securities called junk bonds.
+(x2 / call-03
+	:ARG0 (x1 / secure-02)
+	:ARG1 (x4 / bond
+		:mod (x3 / junk)))
+
+# ::id 10
+# ::snt Milken, who made a reported $550 million in 1987, said he is
+(x13 / say-01
+	:ARG0 (x1 / person
+		:name (n / name
+			:op1 "Milken")
+		:ARG1-of (x6 / report-01
+			:ARG1 (x8 / monetary-quantity
+				:unit (y / yuan))
+			:time (x11 / date-entity
+				:year 1987))))
+
+# ::id 11
+# ::snt forming a consulting firm to assist companies that want to raise
+(x1 / form-01
+	:ARG1 (x4 / firm
+		:mod (x3 / consulting)
+		:purpose (x6 / assist-01
+			:ARG1 (x7 / company
+				:ARG0-of (x9 / want-01
+					:ARG1 (x11 / raise-01))))))
+
+# ::id 12
+# ::snt money to start up, grow or stay in business.
+(x7 / or
+	:op1 (x3 / start-01
+		:ARG1 (x1 / money))
+	:op2 (x6 / grow-01
+		:ARG0 x1)
+	:op2 (x8 / stay-01
+		:ARG0 x1
+		:ARG1 (x10 / business)))
+
+# ::id 13
+# ::snt But he faces $1.85 billion in forfeitures of alleged illegal
+(x1 / contrast-01
+	:ARG2 (x3 / face-01
+		:ARG0 (x2 / he)
+		:ARG1 (x8 / forfeiture
+			:null_edge (x5 / monetary-quantity
+				:unit (y / yuan))
+			:mod (x11 / law
+				:polarity -
+				:ARG1-of (x10 / allege-01)))))
+
+# ::id 14
+# ::snt profits and a lengthy jail term if convicted on a 98-count fraud and
+(x2 / and
+	:op1 (x1 / profit-01
+		:ARG0 (x8 / convict-01
+			:duration (x4 / lengthy
+				:location (x5 / jail))
+			:ARG2 (x13 / and
+				:op1 (x12 / defraud-01
+					:op (f / fraud)
+					:mod (x11 / 98-count))))))
+
+# ::id 15
+# ::snt racketeering indictment, the government's largest securities crime
+(x2 / indictment
+	:mod (x1 / racketeer-00)
+	:ARG2 (x9 / crime
+		:poss (x5 / government-organization
+			:ARG0-of (g / govern-01))
+		:mod (x7 / large
+			:degree (m / most))
+		:null_edge (x8 / null_tag)))
+
+# ::id 16
+# ::snt prosecution to date.
+(x3 / date
+	:domain (x1 / prosecution))
+
+# ::id 17
+# ::snt People involved in Milken's plans for the new firm, International
+(x2 / involve-01
+	:ARG1 (x1 / people)
+	:ARG2 (x6 / plan-01
+		:ARG0 (x4 / person
+			:name (n / name
+				:op1 "Milken"))
+		:ARG1 (x10 / firm
+			:mod (x9 / new))))
+
+# ::id 18
+# ::snt Capital Assets Group, said Milken does not intend to raid Drexel's
+(x5 / say-01
+	:ARG0 (x3 / group
+		:null_edge (x1 / capital)
+		:null_edge (x2 / null_tag))
+	:ARG1 (x9 / intend-01
+		:ARG0 (x6 / person
+			:name (n / name
+				:op1 "Milken"))
+		:ARG1 (x11 / raid-01
+			:ARG0 x6
+			:ARG1 (x12 / government-organization
+				:name (n1 / name
+					:op1 "Drexel")))))
+
+# ::id 19
+# ::snt Beverly Hills, Calif., junk bond division, which he founded and ran
+(x2 / country
+	:name (n / name
+		:op1 "Hills")
+	:null_edge (x1 / country
+		:name (n1 / name
+			:op1 "Beverly"))
+	:null_edge (x4 / country
+		:name (n2 / name
+			:op1 "Calif."))
+	:null_edge (x8 / division
+		:purpose (x6 / junk)
+		:mod (x7 / bond))
+	:null_edge (x13 / and
+		:op1 (x12 / found-01)
+		:op2 (x14 / run-02)))
+
+# ::id 20
+# ::snt until his March indictment.
+(x1 / until
+	:op1 (x4 / indictment
+		:null_edge (x3 / null_tag)))
+
+# ::id 21
+# ::snt The principals in the new firm, which now has a handful of
+(x2 / principal
+	:ARG2 (x6 / firm
+		:mod (x5 / new)
+		:ARG0-of (x10 / have-03
+			:time (x9 / now)
+			:ARG1 (x12 / handful))))
+
+# ::id 22
+# ::snt employees and a temporary Los Angeles office, are not going to be
+(x2 / and
+	:op1 (x1 / person
+		:ARG1-of (e / employ-01))
+	:op2 (x7 / office
+		:duration (x4 / temporary)
+		:poss (x5 / country
+			:name (n / name
+				:op1 "Los"))
+		:mod (x6 / country
+			:name (n1 / name
+				:op1 "Angeles"))))
+
+# ::id 23
+# ::snt "Drexel people," Milken associates said.
+(x8 / say-01
+	:ARG0 (x2 / organization
+		:name (n / name
+			:op1 "Drexel"))
+	:ARG0 (x7 / associate
+		:mod (x6 / person
+			:name (n1 / name
+				:op1 "Milken"))))
+
+# ::id 24
+# ::snt But Milken still commands tremendous loyalty among some key junk
+(x1 / contrast-01
+	:ARG2 (x4 / command-02
+		:ARG0 (x2 / person
+			:name (n / name
+				:op1 "Milken"))
+		:mod (x3 / still)
+		:ARG1 (x6 / loyal-41
+			:mod (x5 / tremendous)
+			:ARG1 (x10 / junk
+				:mod (x8 / some)
+				:mod (x9 / key)))))
+
+# ::id 25
+# ::snt bond employees and Drexel clients, and no one is ruling out
+(x / xconcept
+	:x (x3 / and
+		:op1 (x2 / person
+			:ARG1-of (e / employ-01)
+			:mod (x1 / bond))
+		:op2 (x5 / client
+			:mod (x4 / organization
+				:name (n / name
+					:op1 "Drexel")))
+		:op2 (x11 / rule-03
+			:polarity -))
+	:x (x7 / and))
+
+# ::id 26
+# ::snt defections. Milken associates did not release details on his plans,
+(x1 / defection
+	:ARG1 (x7 / release-01
+		:ARG1 (x4 / associate
+			:mod (x3 / person
+				:name (n / name
+					:op1 "Milken")))
+		:ARG1 (x8 / detail-01)
+		:ARG1 (x11 / plan-01)))
+
+# ::id 27
+# ::snt including whether an affiliated brokerage would be formed.
+(x1 / include-91
+	:ARG1 (x8 / form-01
+		:ARG1 (x5 / brokerage
+			:ARG1-of (x4 / affiliated))))
+
+# ::id 28
+# ::snt A Drexel official, speaking on condition of anonymity, said the
+(x11 / say-01
+	:condition (x5 / speak-01
+		:condition (x9 / anonymity))
+	:ARG0 (xap0 / person
+		:ARG0-of (x3 / have-org-role-91
+			:ARG2 (o / official)
+			:ARG1 (x2 / organization
+				:name (n / name
+					:op1 "Drexel")))))
+
+# ::id 29
+# ::snt Wall Street giant does not anticipate conflicts with Milken's new
+(x6 / anticipate-01
+	:ARG0 (x2 / street
+		:null_edge (x1 / null_tag)
+		:mod (x3 / giant))
+	:ARG1 (x7 / conflict-01
+		:ARG0 (x9 / person
+			:name (n / name
+				:op1 "Milken")
+			:null_edge (x11 / new))))
+
+# ::id 30
+# ::snt firm because it will not be in the brokerage business.
+(x1 / firm
+	:ARG1-of (x2 / cause-01
+		:ARG0 (x10 / business
+			:mod (x9 / brokerage))))
+
+# ::id 31
+# ::snt Under Drexel's still-to-be-approved settlement of civil insider
+(x5 / settle-02
+	:ARG0 (x2 / organization
+		:name (n / name
+			:op1 "Drexel"))
+	:mod (x4 / still-to-be-approved)
+	:ARG1 (x8 / insider
+		:mod (x7 / civil)))
+
+# ::id 32
+# ::snt trading and other fraud charges with the Securities and Exchange
+(x2 / and
+	:op1 (x1 / trade-01)
+	:op2 (x5 / thing
+		:ARG1-of (c / charge-01)
+		:mod (x3 / other)
+		:ARG2 (x4 / defraud-01
+			:op (f / fraud))
+		:ARG2 (x9 / and
+			:op1 (x8 / securities)
+			:op2 (x10 / exchange-01))))
+
+# ::id 33
+# ::snt Commission, Drexel and its employees are barred from doing business
+(x8 / bar-01
+	:ARG1 (x4 / and
+		:op1 (x1 / organization
+			:name (n / name
+				:op1 "Commission"))
+		:op2 (x3 / organization
+			:name (n1 / name
+				:op1 "Drexel"))
+		:op2 (x6 / person
+			:ARG1-of (e / employ-01)))
+	:ARG2 (x10 / do-02
+		:ARG0 x4
+		:ARG1 (x11 / business)))
+
+# ::id 34
+# ::snt with Milken, directly or indirectly.
+(x5 / or
+	:op2 (x4 / direct
+		:accompanier (x2 / person
+			:name (n / name
+				:op1 "Milken")))
+	:op1 (x6 / direct))
+
+# ::id 35
+# ::snt The Drexel official said the provision likely will be reviewed on
+(x4 / say-01
+	:ARG1 (x7 / likely
+		:domain (x10 / review-01
+			:ARG1 (x6 / provision)))
+	:ARG0 (xap0 / person
+		:ARG0-of (x3 / have-org-role-91
+			:ARG2 (o / official)
+			:ARG1 (x2 / organization
+				:name (n / name
+					:op1 "Drexel")))))
+
+# ::id 36
+# ::snt a case-by-case basis, so some contact between the New York
+(x3 / basis
+	:mod (x2 / case-by-case)
+	:instrument-of (x7 / contact-01
+		:mod (x6 / some)
+		:ARG0 (x11 / country
+			:name (n / name
+				:op1 "York")
+			:null_edge (x10 / null_tag))))
+
+# ::id 37
+# ::snt investment firm's clients and Milken may occur. For instance, Milken
+(x5 / and
+	:op1 (x4 / client
+		:ARG0 (x2 / firm
+			:mod (x1 / invest-01)
+			:prep-in (x11 / instance
+				:null_edge (x13 / person
+					:name (n1 / name
+						:op1 "Milken")))))
+	:op2 (x7 / possible
+		:domain (x6 / person
+			:name (n / name
+				:op1 "Milken"))))
+
+# ::id 38
+# ::snt may be able to refer clients to Drexel and vice versa but not
+(x1 / possible
+	:time (x9 / and
+		:op1 (x5 / refer-02
+			:ARG1 (x6 / client)
+			:ARG2 (x8 / organization
+				:name (n / name
+					:op1 "Drexel"))
+			:ARG1 (x12 / contrast-01
+				:ARG2 (x11 / versa)))))
+
+# ::id 39
+# ::snt receive any fees.
+(x1 / receive-01
+	:ARG1 (x3 / fee
+		:mod (x2 / any)))
+
+# ::id 40
+# ::snt Milken's resignation ends the relationship between one of the
+(x4 / end-01
+	:ARG1 (x3 / resignation
+		:ARG0 (x1 / person
+			:name (n / name
+				:op1 "Milken")))
+	:ARG1 (x6 / relationship
+		:mod (x7 / between
+			:op1 (x8 / one))))
+
+# ::id 41
+# ::snt most important financial players of the decade and the firm he
+(x4 / person
+	:ARG0-of (p / play-01)
+	:mod (x2 / important
+		:degree (x1 / most))
+	:ARG1 (x10 / firm
+		:mod (x3 / finance)))
+
+# ::id 42
+# ::snt helped boost from a second-tier brokerage to the nation's fifth
+(x1 / help-01
+	:ARG1 (x2 / boost-01
+		:source (x6 / brokerage
+			:mod (x5 / second-tier))))
+
+# ::id 43
+# ::snt largest.
+(x1 / large
+	:degree (m / most))
+
+# ::id 44
+# ::snt "Michael Milken made many important contributions to Drexel
+(x7 / contribute-01
+	:ARG0 (x2 / newspaper
+		:name (n / name
+			:op1 "Michael"
+			:op2 "Milken"))
+	:quant (x5 / many)
+	:mod (x6 / important)
+	:ARG2 (x9 / organization
+		:name (n1 / name
+			:op1 "Drexel")))
+
+# ::id 45
+# ::snt Burnham, and his resignation, although not unexpected, is a sad
+(x3 / and
+	:op2 (x5 / resignation
+		:ARG0 (x1 / person
+			:name (n / name
+				:op1 "Burnham")))
+	:op1 (x13 / sad
+		:domain x1
+		:domain (x9 / expect-01
+			:polarity -)))
+
+# ::id 46
+# ::snt event," Drexel stated. "We wish him well in his new endeavor."
+(x5 / state-01
+	:ARG0 (x1 / event)
+	:ARG0 (x4 / organization
+		:name (n / name
+			:op1 "Drexel"))
+	:ARG1 (x9 / wish-01
+		:ARG0 (x8 / we)
+		:ARG1 (x15 / endeavor-01
+			:mod (x14 / new))))
+
+# ::id 47
+# ::snt Milken widely was credited with creating a $175 billion-a-year
+(x4 / credit-01
+	:ARG1 (x1 / person
+		:name (n / name
+			:op1 "Milken"))
+	:degree (x2 / wide)
+	:ARG2 (x6 / create-01
+		:ARG0 x1
+		:ARG1 (x8 / country
+			:name (n1 / name
+				:op1 "$")
+			:null_edge (x9 / monetary-quantity
+				:unit (y / yuan)))))
+
+# ::id 48
+# ::snt junk bond market. His pitchman sale of the bonds _ previously used
+(x1 / junk
+	:mod (x2 / bond)
+	:ARG1 (x10 / bond
+		:mod (x6 / pitchman)
+		:time (x12 / previous)))
+
+# ::id 49
+# ::snt mainly by companies with low credit ratings _ helped fuel the
+(x9 / help-01
+	:mod (x1 / main)
+	:ARG0 (x3 / company
+		:prep-with (x7 / rate-01
+			:mod (x5 / low)
+			:mod (x6 / credit-02)))
+	:ARG1 (x10 / fuel-01))
+
+# ::id 50
+# ::snt decade's corporate takeover mania by giving smaller companies and
+(x10 / and
+	:op1 (x5 / mania
+		:mod (x4 / take-12
+			:ARG2 (x3 / corporation)))
+	:op2 (x7 / give-01
+		:ARG0 x3
+		:ARG1 (x9 / company
+			:mod (x8 / small))))
+
+# ::id 51
+# ::snt corporate raiders a tool for financing growth, mergers and takeovers.
+(x4 / tool
+	:domain (x2 / raider
+		:ARG1 (x1 / corporation))
+	:purpose (x6 / finance-01
+		:ARG0 x2
+		:ARG1 (x10 / and
+			:op1 (x7 / grow-01)
+			:op2 (x9 / merge-01)
+			:op2 (x11 / take-12))))
+
+# ::id 52
+# ::snt But the federal government alleges Milken used his powers through
+(x1 / contrast-01
+	:ARG2 (x5 / allege-01
+		:ARG0 (x4 / government-organization
+			:ARG0-of (g / govern-01)
+			:ARG1 (x3 / government-organization
+				:name (n / name
+					:op1 "federal")))
+		:ARG1 (x7 / use-01
+			:ARG0 (x6 / person
+				:name (n1 / name
+					:op1 "Milken"))
+			:ARG1 (x9 / power))))
+
+# ::id 53
+# ::snt Drexel to engage in a range of securities crimes, including schemes
+(x3 / engage-01
+	:ARG0 (x1 / organization
+		:name (n / name
+			:op1 "Drexel"))
+	:ARG1 (x6 / range
+		:ARG0 x1
+		:ARG1 (x9 / crime
+			:null_edge (x8 / null_tag))
+		:ARG1 (x12 / scheme-01)))
+
+# ::id 54
+# ::snt with now-jailed stock speculator Ivan Boesky.
+(x5 / name
+	:op1 "Ivan"
+	:op2 "Boesky"
+	:ARG0-of (x2 / now-jailed)
+	:ARG0-of (x4 / speculator
+		:mod (x3 / stock)))
+
+# ::id 55
+# ::snt He also is accused of insider trading in a separate SEC lawsuit.
+(x4 / accuse-01
+	:ARG1 (x1 / he)
+	:mod (x2 / also)
+	:ARG0 (x7 / trade-01
+		:ARG0 x1
+		:ARG1 (x6 / insider)
+		:location (x12 / lawsuit
+			:ARG0 x1
+			:mod (x10 / separate)
+			:mod (x11 / organization
+				:name (n / name
+					:op1 "SEC")))))
+
+# ::id 56
+# ::snt No settlement has been reached and no trial scheduled in that case.
+(x6 / and
+	:op1 (x5 / reach-01
+		:ARG1 (x2 / settle-02))
+	:op2 (x9 / schedule-01
+		:ARG1 (x8 / trial
+			:polarity -)
+		:ARG1 (x12 / case
+			:mod (x11 / that))))
+
+# ::id 57
+# ::snt Milken had been on leave from Drexel since his criminal
+(x5 / left
+	:ARG0 (x1 / person
+		:name (n / name
+			:op1 "Milken"))
+	:ARG0 (x7 / organization
+		:name (n1 / name
+			:op1 "Drexel"))
+	:time (x8 / since
+		:op1 (x10 / criminal)))
+
+# ::id 58
+# ::snt indictment. His brother, Lowell, who also was charged in the case,
+(x1 / indictment
+	:ARG1 (x4 / brother
+		:poss (x6 / person
+			:name (n / name
+				:op1 "Lowell"))
+		:ARG1-of (x11 / charge-01
+			:mod (x9 / also)
+			:ARG2 (x14 / case))))
+
+# ::id 59
+# ::snt announced Thursday he was quitting the firm to return to practicing
+(x1 / announce-01
+	:ARG1 (x5 / quit-01
+		:ARG1 (x7 / firm)
+		:purpose (x9 / return-01
+			:ARG4 (x11 / practice-01)))
+	:time (xap0 / date-entity
+		:weekday (x2 / thursday)))
+
+# ::id 60
+# ::snt law.
+(x1 / law)
+
+# ::id 61
+# ::snt "I am naturally disappointed to be forced to leave Drexel as
+(x5 / disappoint-01
+	:ARG0 (x2 / i)
+	:manner (x4 / natural)
+	:ARG1 (x8 / force-01
+		:ARG2 (x10 / leave-01
+			:ARG1 (x11 / government-organization
+				:name (n / name
+					:op1 "Drexel")))))
+
+# ::id 62
+# ::snt part of the firm's settlement with the government, but I look
+(x6 / settle-02
+	:ARG0 (x4 / firm)
+	:ARG1 (x9 / government-organization
+		:ARG0-of (g / govern-01))
+	:ARG1 (x13 / look-01
+		:ARG0 (x12 / i)))
+
+# ::id 63
+# ::snt forward to the opportunity of helping people build companies,"
+(x1 / forward
+	:ARG2 (x4 / opportunity
+		:consist-of (x6 / help-01
+			:ARG1 (x8 / build-01
+				:ARG1 (x9 / company)))))
+
+# ::id 64
+# ::snt Michael Milken said in a statement.
+(x6 / state-01
+	:ARG0 (x1 / newspaper
+		:name (n / name
+			:op1 "Michael"
+			:op2 "Milken")))
+
+# ::id 65
+# ::snt Milken joined Drexel full-time in 1970 after graduating from the
+(x2 / join-01
+	:ARG0 (x1 / person
+		:name (n / name
+			:op1 "Milken"))
+	:ARG1 (x3 / government-organization
+		:name (n1 / name
+			:op1 "Drexel"))
+	:manner (x4 / full-time)
+	:time (x6 / date-entity
+		:year 1970)
+	:time (x7 / after
+		:op1 (x8 / graduate-01)))
+
+# ::id 66
+# ::snt University of Pennsylvania's Wharton School. In 1978, he moved
+(x12 / move-01
+	:ARG1 (x1 / government-organization
+		:name (n / name
+			:op1 "University"
+			:op2 "of"
+			:op3 "Pennsylvania"
+			:op4 "'s"
+			:op5 "Wharton"
+			:op6 "School"))
+	:time (x9 / date-entity
+		:year 1978)
+	:ARG0 (x11 / he))
+
+# ::id 67
+# ::snt Drexel's junk bond division to Beverly Hills.
+(x5 / division
+	:ARG0 (x4 / bond
+		:poss (x1 / organization
+			:name (n1 / name
+				:op1 "Drexel"))
+		:mod (x3 / junk))
+	:ARG2 (x8 / country
+		:name (n / name
+			:op1 "Hills")
+		:null_edge (x7 / country
+			:name (n2 / name
+				:op1 "Beverly"))))
+
+# ::id 68
+# ::snt Milken's trial in federal court in Manhattan is set for next
+(x10 / set-03
+	:ARG1 (x3 / trial
+		:poss (x1 / person
+			:name (n / name
+				:op1 "Milken"))
+		:location (x6 / court
+			:mod (x5 / government-organization
+				:name (n1 / name
+					:op1 "federal"))
+			:location (x8 / country
+				:name (n2 / name
+					:op1 "Manhattan"))))
+	:purpose (x12 / next))
+
+# ::id 69
+# ::snt March. He is free under a $700 million bond package.
+(x5 / free-01
+	:time (x1 / date-entity)
+	:ARG1 (x3 / he)
+	:ARG2 (x12 / package
+		:mod (x11 / bond)))
+
+# ::id 70
+# ::snt Lawyers close to the case indicated Milken's decision to resign
+(x6 / indicate-01
+	:ARG0 (x1 / lawyer
+		:mod (x2 / close
+			:ARG2 (x5 / case)))
+	:ARG1 (x9 / decide-01
+		:ARG0 (x7 / person
+			:name (n / name
+				:op1 "Milken"))
+		:ARG1 (x11 / resign-01)))
+
+# ::id 71
+# ::snt was calculated. By quitting, Milken pre-empts the firm's agreement
+(x8 / pre-empt
+	:null_edge (x2 / calculate-01)
+	:ARG1 (x5 / quit-01)
+	:ARG0 (x7 / person
+		:name (n / name
+			:op1 "Milken"))
+	:ARG1 (x12 / agree-01
+		:ARG0 (x10 / firm)))
+
+# ::id 72
+# ::snt with the SEC to dismiss him once the settlement is approved by a
+(x5 / dismiss-02
+	:ARG0 (x3 / organization
+		:name (n / name
+			:op1 "SEC"))
+	:condition (x11 / approve-01
+		:ARG1 (x9 / settle-02)))
+
+# ::id 73
+# ::snt federal judge.
+(xap1 / person
+	:ARG0-of (xap0 / have-org-role-91
+		:ARG3 (x2 / judge-01
+			:null_edge (x1 / government-organization
+				:name (n / name
+					:op1 "federal")))))
+
+# ::id 74
+# ::snt With Milken's resignation, lawyers may argue that parts of the
+(x7 / possible
+	:domain (x8 / argue-01
+		:ARG1 (x4 / resignation
+			:ARG0 (x2 / person
+				:name (n / name
+					:op1 "Milken")))
+		:ARG0 (x6 / lawyer)
+		:ARG1 (x10 / part)))
+
+# ::id 75
+# ::snt Drexel pact are moot and mount further challenges. They also are
+(x5 / and
+	:op1 (x4 / moot
+		:domain (x2 / pact
+			:mod (x1 / organization
+				:name (n / name
+					:op1 "Drexel")))
+		:null_edge (x12 / be-02
+			:null_edge (x10 / they
+				:mod (x11 / also))))
+	:op2 (x6 / mount-02
+		:ARG0 x2
+		:ARG1 (x8 / thing
+			:ARG2-of (c / challenge-01)
+			:degree (x7 / further))))
+
+# ::id 76
+# ::snt expected to challenge the provision barring Drexel and Milken from
+(x1 / expect-01
+	:ARG1 (x3 / challenge-01
+		:ARG1 (x5 / provision
+			:ARG0-of (x6 / bar-01
+				:ARG1 (x8 / and
+					:op1 (x7 / government-organization
+						:name (n / name
+							:op1 "Drexel"))
+					:op2 (x9 / person
+						:name (n1 / name
+							:op1 "Milken")))))))
+
+# ::id 77
+# ::snt doing business with the same clients.
+(x1 / do-02
+	:ARG1 (x2 / business)
+	:ARG1 (x6 / client
+		:ARG1-of (x5 / same-41)))
+

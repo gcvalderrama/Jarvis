@@ -1,0 +1,288 @@
+# ::id 1
+# ::snt Illinois Power Co. has agreed to pay
+(x5 / agree-01
+	:ARG0 (x1 / government-organization
+		:name (n / name
+			:op1 "Illinois"
+			:op2 "Power"
+			:op3 "Co."))
+	:ARG1 (x7 / pay-01
+		:ARG0 x1))
+
+# ::id 2
+# ::snt $11.5 million to a couple critically injured in a natural-gas
+(x6 / couple
+	:ARG1-of (x8 / injure-01
+		:manner (x7 / critical)
+		:location (x11 / natural-gas)))
+
+# ::id 3
+# ::snt explosion in their home two years ago.
+(x1 / explode-01
+	:location (x4 / home
+		:time (xap0 / before
+			:quant (x6 / temporal-quantity
+				:unit (y / year)
+				:null_edge (x5 / null_tag)))))
+
+# ::id 4
+# ::snt In a settlement reached Monday, the utility company agreed to pay
+(x10 / agree-01
+	:ARG1 (x3 / settle-02
+		:ARG0-of (x4 / reach-01
+			:time (x5 / monday)))
+	:ARG0 (x9 / company
+		:mod (x8 / utility))
+	:ARG1 (x12 / pay-01
+		:ARG0 x9))
+
+# ::id 5
+# ::snt Jerry Sickmeier, 33, and Lisa Jines, 26, $10 million in damages and
+(x6 / and
+	:op1 (x1 / name
+		:op1 "Jerry"
+		:op2 "Sickmeier"
+		:ARG0-of (x16 / damage))
+	:op2 33
+	:op2 (x7 / name
+		:op1 "Lisa"
+		:op2 "Jines")
+	:op2 (x10 / date-entity)
+	:op2 (x17 / and))
+
+# ::id 6
+# ::snt $1.5 million for medical expenses, said the couple's attorney, C.E.
+(x8 / say-01
+	:ARG1 (x6 / expend-01
+		:mod (x5 / medicine))
+	:ARG0 (x12 / attorney
+		:null_edge (x14 / c.e.)
+		:ARG0-of (xap0 / before
+			:quant (x10 / couple))))
+
+# ::id 7
+# ::snt Heiligenstein.
+(x1 / person
+	:name (n / name
+		:op1 "Heiligenstein"))
+
+# ::id 8
+# ::snt Both sustained burns on over 80 percent of their bodies in the
+(x2 / sustain-01
+	:ARG0 (x1 / both)
+	:ARG1 (x3 / burn-01
+		:quant (x5 / over
+			:op1 80
+			:op1 (x10 / body
+				:quant (x7 / percentage-entity)))))
+
+# ::id 9
+# ::snt Dec. 7, 1986, explosion at their home in Cahokia, a St. Louis
+(x1 / name
+	:op1 "Dec."
+	:op2 "7"
+	:op3 ","
+	:op4 "1986"
+	:op5 ","
+	:op6 "explosion"
+	:ARG4 (x9 / home
+		:location (x11 / country
+			:name (n / name
+				:op1 "Cahokia")
+			:null_edge (x15 / country
+				:name (n1 / name
+					:op1 "Louis")
+				:null_edge (x14 / country
+					:name (n2 / name
+						:op1 "St."))))))
+
+# ::id 10
+# ::snt suburb. They now live in nearby Belleville.
+(x5 / live-01
+	:ARG0 (x1 / suburb)
+	:ARG0 (x3 / they)
+	:time (x4 / now)
+	:location (x8 / country
+		:name (n / name
+			:op1 "Belleville")
+		:mod (x7 / nearby)))
+
+# ::id 11
+# ::snt The settlement was reached on the day a trial in the case was
+(x4 / reach-01
+	:ARG1 (x2 / settle-02)
+	:time (x7 / day
+		:time-of (x12 / case)))
+
+# ::id 12
+# ::snt scheduled to begin.
+(x1 / schedule-01
+	:ARG1 (x3 / begin-01))
+
+# ::id 13
+# ::snt "They are much relieved that this financial ordeal is over with
+(x5 / relieve-01
+	:ARG1 (x2 / they)
+	:degree (x4 / much)
+	:ARG1 (x9 / ordeal
+		:mod (x7 / this)
+		:mod (x8 / finance)))
+
+# ::id 14
+# ::snt and that they can have some lifetime financial security,"
+(x1 / and
+	:op2 (x4 / possible
+		:domain (x5 / have-03
+			:ARG0 (x3 / they)
+			:ARG1 (x9 / security
+				:quant (x6 / some)
+				:mod (x7 / lifetime)
+				:mod (x8 / finance)))))
+
+# ::id 15
+# ::snt Heiligenstein said. "Both suffered severe burns and have severe
+(x2 / say-01
+	:ARG0 (x1 / person
+		:name (n / name
+			:op1 "Heiligenstein"))
+	:ARG1 (x9 / and
+		:op1 (x6 / suffer-01
+			:ARG0 (x5 / both)
+			:ARG1 (x8 / burn-01
+				:mod (x7 / severe)))
+		:op2 (x10 / have-03
+			:manner (x11 / severe))))
+
+# ::id 16
+# ::snt limitations in the limbs."
+(x1 / limit-01
+	:location (x4 / limb))
+
+# ::id 17
+# ::snt Heiligenstein said neither has worked since the explosion.
+(x2 / say-01
+	:ARG0 (x1 / person
+		:name (n / name
+			:op1 "Heiligenstein"))
+	:ARG1 (x5 / work-01
+		:time (x6 / since
+			:op1 (x8 / explode-01))))
+
+# ::id 18
+# ::snt Illinois Power spokeswoman Barbara Lillyman said the utility had
+(x6 / say-01
+	:ARG0 (x4 / newspaper
+		:name (n / name
+			:op1 "Barbara"
+			:op2 "Lillyman")
+		:ARG0-of (x1 / organization
+			:name (n1 / name
+				:op1 "Illinois"))
+		:null_edge (x2 / null_tag)
+		:ARG0-of (x3 / have-org-role-91
+			:ARG2 (s / spokeswoman)))
+	:ARG1 (x9 / have-03
+		:ARG0 (x8 / utility)))
+
+# ::id 19
+# ::snt no comment on the settlement.
+(x2 / comment-01
+	:polarity -
+	:ARG1 (x5 / settle-02))
+
+# ::id 20
+# ::snt The couple alleged that Illinois Power was negligent when it
+(x3 / allege-01
+	:ARG0 (x2 / couple)
+	:ARG1 (x8 / negligent
+		:ARG1 (x5 / government-organization
+			:name (n / name
+				:op1 "Illinois"
+				:op2 "Power"))))
+
+# ::id 21
+# ::snt allowed a natural-gas pipe to deteriorate to the point that it
+(x1 / allow-01
+	:ARG1 (x4 / pipe
+		:mod (x3 / natural-gas))
+	:purpose (x6 / deteriorate-01
+		:ARG1 (x9 / point)))
+
+# ::id 22
+# ::snt ruptured. Gas from the pipe traveled through sewer lines into the
+(x7 / travel-01
+	:ARG0 (x3 / gas
+		:ARG1-of (x1 / rupture)
+		:source (x6 / pipe))
+	:ARG0 (x10 / line
+		:mod (x9 / sewer)))
+
+# ::id 23
+# ::snt home's utility room and was ignited by the pilot light of a
+(x5 / and
+	:op1 (x7 / ignite-01
+		:ARG1 (x4 / room
+			:ARG4 (x1 / home)
+			:mod (x3 / utility))))
+
+# ::id 24
+# ::snt hot-water heater, they said. The explosion occurred as police were
+(x5 / say-01
+	:ARG1 (x2 / heater
+		:mod (x1 / hot-water)
+		:domain (x8 / explode-01)
+		:ARG0 (x11 / police)))
+
+# ::id 25
+# ::snt awakening area residents and telling them to evacuate.
+(x4 / and
+	:op1 (x1 / awaken
+		:ARG1 (x3 / person
+			:ARG0-of (r / reside-01)
+			:ARG1 (x2 / area)))
+	:op2 (x5 / tell-01
+		:ARG1 (x8 / evacuate)))
+
+# ::id 26
+# ::snt Sickmeier was treated for seven months at Massachusetts General
+(x3 / treat-01
+	:ARG1 (x1 / person
+		:name (n / name
+			:op1 "Sickmeier"))
+	:duration (x6 / temporal-quantity
+		:unit (m / month)
+		:quant 7
+		:location (x9 / general)))
+
+# ::id 27
+# ::snt Hospital in Boston for third-degree burns that covered most of his
+(x1 / hospital
+	:location (x3 / city
+		:name (n / name
+			:op1 "Boston"))
+	:ARG1 (x6 / burn-01
+		:mod (x5 / third-degree)
+		:ARG1-of (x8 / cover-01
+			:degree (x9 / most))))
+
+# ::id 28
+# ::snt body. He also suffered burns in his lungs and spent more than two
+(x10 / and
+	:op1 (x5 / suffer-01
+		:ARG0 (x1 / body)
+		:ARG0 (x3 / he)
+		:mod (x4 / also)
+		:ARG1 (x6 / burn-01
+			:location (x9 / lung)))
+	:op2 (x11 / spend-00
+		:ARG0 x1
+		:ARG0 x3
+		:degree (x12 / more
+			:null_edge 2)))
+
+# ::id 29
+# ::snt months on a respirator.
+(x4 / respirator
+	:duration (x1 / temporal-quantity
+		:unit (m / month)))
+

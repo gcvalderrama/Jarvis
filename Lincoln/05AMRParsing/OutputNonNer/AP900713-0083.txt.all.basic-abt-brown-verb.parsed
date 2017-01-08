@@ -1,0 +1,655 @@
+# ::id 1
+# ::snt Former Rep. Thomas Ashley, a longtime friend
+(x8 / friend
+	:name (x3 / name
+		:op1 "Thomas"
+		:op2 "Ashley"
+		:ARG0-of (x1 / former)
+		:ARG0-of (x2 / rep.)))
+
+# ::id 2
+# ::snt of President Bush, confirmed today that he's been giving advice to
+(x5 / confirm-01
+	:ARG0 (x3 / person
+		:name (n / name
+			:op1 "Bush")
+		:ARG0-of (x2 / have-org-role-91
+			:ARG2 (p / president)))
+	:time (x6 / today)
+	:ARG1 (x11 / give-01
+		:ARG1 (x12 / advise-01)))
+
+# ::id 3
+# ::snt Neil Bush since last winter on the controversy surrounding the
+(x1 / name
+	:op1 "Neil"
+	:op2 "Bush"
+	:time (x3 / since
+		:op1 (x5 / winter
+			:mod (x4 / last)
+			:ARG1 (x8 / controversy
+				:ARG1-of (x9 / surround-01)))))
+
+# ::id 4
+# ::snt president son's role in the collapse of a Denver savings and loan.
+(x4 / role
+	:domain (x2 / son
+		:ARG0-of (x1 / have-org-role-91
+			:ARG2 (p / president)))
+	:time (x7 / collapse-01
+		:ARG1 (x12 / and
+			:op1 (x11 / savings
+				:location (x10 / city
+					:name (n / name
+						:op1 "Denver")))
+			:op2 (x13 / loan-01))))
+
+# ::id 5
+# ::snt But Ashley, a banking lobbyist, denied that Bush had asked him
+(x1 / contrast-01
+	:ARG2 (x8 / deny-01
+		:ARG0 (x2 / person
+			:name (n / name
+				:op1 "Ashley")
+			:null_edge (x6 / lobbyist
+				:purpose (x5 / banking)))
+		:ARG1 (x12 / ask-02
+			:ARG0 (x10 / person
+				:name (n1 / name
+					:op1 "Bush")))))
+
+# ::id 6
+# ::snt to contact his son.
+(x2 / contact-01
+	:ARG1 (x4 / son))
+
+# ::id 7
+# ::snt "That is absolutely inaccurate," Ashley said in an interview.
+(x9 / say-01
+	:ARG1 (x5 / inaccurate
+		:ARG1 (x2 / that)
+		:degree (x4 / absolute))
+	:ARG0 (x8 / person
+		:name (n / name
+			:op1 "Ashley"))
+	:time (x12 / interview-01))
+
+# ::id 8
+# ::snt "I'm to smart to do that."
+(x3 / be-02
+	:null_edge (x5 / smart
+		:ARG2 (x7 / do-02
+			:ARG0 (x2 / i))))
+
+# ::id 9
+# ::snt The Denver Post reported in today's editions that Ashley, a
+(x4 / report-01
+	:ARG0 (x3 / post-01
+		:null_edge (x2 / city
+			:name (n1 / name
+				:op1 "Denver")))
+	:medium (x8 / edition
+		:time (x6 / today))
+	:ARG0 (x10 / person
+		:name (n / name
+			:op1 "Ashley")))
+
+# ::id 10
+# ::snt college classmate of George Bush's from Yale, had talked to the
+(x11 / talk-01
+	:ARG0 (x2 / classmate
+		:mod (x1 / college)
+		:name (x4 / name
+			:op1 "George"
+			:op2 "Bush")
+		:source (x8 / organization
+			:name (n / name
+				:op1 "Yale"))))
+
+# ::id 11
+# ::snt younger Bush at the president's behest before Neil Bush was
+(x2 / person
+	:name (n / name
+		:op1 "Bush")
+	:null_edge (x1 / young)
+	:prep-as (x7 / behest
+		:ARG1 (x5 / have-org-role-91
+			:ARG2 (p / president))
+		:time (x8 / before
+			:op1 (x9 / newspaper
+				:name (n1 / name
+					:op1 "Neil"
+					:op2 "Bush")))))
+
+# ::id 12
+# ::snt questioned by federal banking regulators.
+(x1 / question-01
+	:ARG0 (x5 / regulator
+		:mod (x4 / banking
+			:mod (x3 / government-organization
+				:name (n / name
+					:op1 "federal")))))
+
+# ::id 13
+# ::snt The newspaper attributed the report to comments by Neil Bush
+(x3 / attribute-01
+	:ARG0 (x2 / newspaper)
+	:ARG2 (x7 / comment-01
+		:ARG0 (x5 / report-01)
+		:ARG0 (x9 / name
+			:op1 "Neil"
+			:op2 "Bush")))
+
+# ::id 14
+# ::snt himself, contained in a deposition taken by the Office of Thrift
+(x3 / contain-01
+	:location (x6 / deposition
+		:null_edge (x12 / thrift
+			:null_edge "Office")))
+
+# ::id 15
+# ::snt Supervision.
+(x1 / supervision)
+
+# ::id 16
+# ::snt "If Neil thinks his father called me, he's mistaken," Ashley
+(x12 / mistaken
+	:null_edge (x4 / think-01
+		:ARG0 (x3 / person
+			:name (n1 / name
+				:op1 "Neil"))
+		:ARG1 (x7 / call-03
+			:ARG2 (x6 / father)))
+	:domain (x10 / he)
+	:domain (x15 / person
+		:name (n / name
+			:op1 "Ashley")))
+
+# ::id 17
+# ::snt said.
+(x1 / say-01)
+
+# ::id 18
+# ::snt Ashley, 67, a Democrat, is a former congressman from Ohio. He is
+(x11 / have-org-role-91
+	:ARG2 (c / congressman)
+	:ARG0 (x1 / person
+		:name (n / name
+			:op1 "Ashley")
+		:null_edge (x6 / have-org-role-91
+			:ARG1 (p / political-party
+				:name (n2 / name
+					:op1 "Democrat"))))
+	:mod (x10 / former)
+	:null_edge (x13 / country
+		:name (n1 / name
+			:op1 "Ohio"))
+	:ARG1 (x15 / he))
+
+# ::id 19
+# ::snt currently president of the Association of Bank Holding Companies, a
+(x2 / have-org-role-91
+	:ARG2 (p / president)
+	:time (x1 / current)
+	:ARG1 (x5 / government-organization
+		:name (n / name
+			:op1 "Association"
+			:op2 "of"
+			:op3 "Bank"
+			:op4 "Holding"
+			:op5 "Companies")))
+
+# ::id 20
+# ::snt banking lobbying organization based in Washington.
+(x4 / base-01
+	:ARG0 (x3 / organization
+		:mod (x1 / banking)
+		:mod (x2 / lobby-01))
+	:location (x6 / city
+		:name (n / name
+			:op1 "Washington")))
+
+# ::id 21
+# ::snt Neil Bush faces a public disciplinary hearing before federal
+(x3 / face-01
+	:ARG0 (x1 / newspaper
+		:name (n / name
+			:op1 "Neil"
+			:op2 "Bush"))
+	:ARG1 (x7 / hearing
+		:mod (x5 / public)
+		:mod (x6 / discipline)
+		:time (x8 / before
+			:op1 (x9 / government-organization
+				:name (n1 / name
+					:op1 "federal")))))
+
+# ::id 22
+# ::snt regulators in September on his role as a director of the bankrupt
+(x1 / regulator
+	:time (x3 / date-entity)
+	:prep-on (x6 / role)
+	:ARG0-of (x9 / have-org-role-91
+		:ARG2 (d / director)))
+
+# ::id 23
+# ::snt Silverado Banking, Savings and Loan.
+(x1 / country
+	:name (n / name
+		:op1 "Silverado")
+	:null_edge (x2 / country
+		:name (n1 / name
+			:op1 "Banking")
+		:null_edge (x4 / savings)
+		:null_edge (x5 / and)
+		:null_edge (x6 / loan)))
+
+# ::id 24
+# ::snt Ashley said that he contacted Neil Bush on his own last winter
+(x2 / say-01
+	:ARG0 (x1 / person
+		:name (n / name
+			:op1 "Ashley"))
+	:ARG1 (x5 / contact-01
+		:name (x6 / name
+			:op1 "Neil"
+			:op2 "Bush")
+		:time (x12 / winter
+			:mod (x11 / last))))
+
+# ::id 25
+# ::snt after reading about his troubles in the paper.
+(x1 / after
+	:op1 (x2 / read-01
+		:ARG1 (x5 / trouble
+			:location (x8 / paper))))
+
+# ::id 26
+# ::snt Since then, "I've seen Neil a half dozen times. We talk about
+(x15 / talk-01
+	:time (x1 / since
+		:op1 (x7 / see-01
+			:time (x2 / then)
+			:ARG0 (x5 / i)
+			:ARG0 (x8 / person
+				:name (n / name
+					:op1 "Neil")
+				:ARG1-of (x10 / half))))
+	:ARG0 (x14 / we))
+
+# ::id 27
+# ::snt it," Ashley said.
+(x5 / say-01
+	:ARG0 (x4 / person
+		:name (n / name
+			:op1 "Ashley")))
+
+# ::id 28
+# ::snt He said that, although President Bush didn't ask him to contact
+(x2 / say-01
+	:ARG0 (x1 / he)
+	:ARG1 (x10 / ask-01
+		:ARG0 (x7 / person
+			:name (n / name
+				:op1 "Bush")
+			:ARG0-of (x6 / have-org-role-91
+				:ARG2 (p / president)))
+		:ARG1 (x13 / contact-01
+			:ARG0 x7)))
+
+# ::id 29
+# ::snt Neil Bush, the president is aware that he has been counselling the
+(x7 / realize-01
+	:op (a / aware)
+	:ARG0 (x1 / newspaper
+		:name (n / name
+			:op1 "Neil"
+			:op2 "Bush"))
+	:ARG0 (x5 / have-org-role-91
+		:ARG2 (p / president))
+	:ARG1 (x12 / counsel))
+
+# ::id 30
+# ::snt son.
+(x1 / son)
+
+# ::id 31
+# ::snt Bush has pledged not to get personally involved in the
+(x3 / pledge-01
+	:ARG0 (x1 / person
+		:name (n / name
+			:op1 "Bush"))
+	:ARG2 (x8 / involve-01
+		:ARG1 x1
+		:manner (x7 / personal)))
+
+# ::id 32
+# ::snt investigation of his son.
+(x1 / investigate-01
+	:ARG1 (x4 / son))
+
+# ::id 33
+# ::snt Ashley said "I don't think the president has any problem" with
+(x2 / say-01
+	:ARG0 (x1 / person
+		:name (n / name
+			:op1 "Ashley"))
+	:ARG1 (x7 / think-01
+		:ARG0 (x4 / i)
+		:ARG2 (x9 / have-org-role-91
+			:ARG2 (p / president)
+			:ARG1 (x12 / problem
+				:mod (x11 / any)))))
+
+# ::id 34
+# ::snt the fact that he has involved himself in the matter. "What he
+(x2 / fact
+	:ARG1 (x6 / involve-01
+		:ARG2 (x10 / matter))
+	:ARG1 (x14 / he))
+
+# ::id 35
+# ::snt feels is I'm a longtime friend of Neil's."
+(x1 / feel-02
+	:ARG1 (x7 / friend
+		:poss (x9 / person
+			:name (n / name
+				:op1 "Neil"))))
+
+# ::id 36
+# ::snt "Is everyone who is close to the president supposed to stay
+(xap0 / obligate-01
+	:ARG2 (x6 / close-41
+		:ARG2 (x9 / have-org-role-91
+			:ARG2 (p / president)))
+	:ARG1 (x12 / stay-01))
+
+# ::id 37
+# ::snt away from Neil?" Ashley asked.
+(x7 / ask-01
+	:ARG2 (x3 / person
+		:name (n / name
+			:op1 "Neil"))
+	:ARG0 (x6 / person
+		:name (n1 / name
+			:op1 "Ashley")))
+
+# ::id 38
+# ::snt President Bush "doesn't go along with that. He rejects that,"
+(x6 / go-01
+	:ARG1 (x2 / person
+		:name (n / name
+			:op1 "Bush")
+		:ARG0-of (x1 / have-org-role-91
+			:ARG2 (p / president)))
+	:ARG2 (x12 / reject-01
+		:ARG0 (x11 / he)))
+
+# ::id 39
+# ::snt Ashley said.
+(x2 / say-01
+	:ARG0 (x1 / person
+		:name (n / name
+			:op1 "Ashley")))
+
+# ::id 40
+# ::snt "I've talked to the president (about the situation) on a couple
+(x4 / talk-01
+	:ARG0 (x2 / i)
+	:ARG2 (x7 / have-org-role-91
+		:ARG2 (p / president))
+	:ARG1 (x11 / situation))
+
+# ::id 41
+# ::snt of social occasions, when we're alone," including once at Camp
+(x11 / include-91
+	:ARG1 (x3 / occasion
+		:mod (x2 / society))
+	:time (x12 / once)
+	:location (x14 / camp))
+
+# ::id 42
+# ::snt David, Ashley said. "I talk about the kids. Neil's one of the
+(x4 / say-01
+	:ARG0 (x1 / person
+		:name (n / name
+			:op1 "David"))
+	:ARG0 (x3 / person
+		:name (n1 / name
+			:op1 "Ashley"))
+	:ARG1 (x8 / talk-01
+		:ARG0 (x7 / i)
+		:ARG1 (x11 / kid
+			:poss (x13 / person
+				:name (n2 / name
+					:op1 "Neil")))))
+
+# ::id 43
+# ::snt kids."
+(x1 / kid)
+
+# ::id 44
+# ::snt Ashley said that Neil has made his own decisions in the matter.
+(x2 / say-01
+	:ARG0 (x1 / person
+		:name (n / name
+			:op1 "Ashley"))
+	:ARG1 (x9 / decide-01
+		:ARG0 (x4 / person
+			:name (n1 / name
+				:op1 "Neil"))
+		:location (x12 / matter)))
+
+# ::id 45
+# ::snt "What we do is talk about the consequences of one course or
+(x6 / talk-01
+	:ARG1-of (x4 / do-02
+		:ARG0 (x3 / we))
+	:ARG1 (x9 / consequence
+		:topic (x13 / or)))
+
+# ::id 46
+# ::snt another," Ashley said.
+(x5 / say-01
+	:ARG0 (x1 / another)
+	:ARG0 (x4 / person
+		:name (n / name
+			:op1 "Ashley")))
+
+# ::id 47
+# ::snt Ashley said that his own experience in politics and in bank
+(x2 / say-01
+	:ARG0 (x1 / person
+		:name (n / name
+			:op1 "Ashley"))
+	:ARG1 (x6 / experience-01
+		:ARG1 (x8 / politics
+			:location (x11 / bank))))
+
+# ::id 48
+# ::snt regulation make him a good source for advice for Neil Bush.
+(x2 / make-02
+	:ARG0 (x1 / regulate-01)
+	:ARG1 (x6 / source-02
+		:mod (x5 / good)
+		:ARG1 (x8 / advise-01
+			:name (x10 / name
+				:op1 "Neil"
+				:op2 "Bush"))))
+
+# ::id 49
+# ::snt "The situation is such that he can't go to his father and talk
+(x5 / such
+	:ARG1 (x3 / situation)
+	:ARG1 (x14 / and
+		:op1 (x10 / go-01
+			:ARG2 (x13 / father))
+		:op2 (x15 / talk-01)))
+
+# ::id 50
+# ::snt to him," Ashley said.
+(x6 / say-01
+	:ARG0 (x5 / person
+		:name (n / name
+			:op1 "Ashley")))
+
+# ::id 51
+# ::snt "It's not a partisan matter or he wouldn't be coming to a
+(x8 / or
+	:op1 (x7 / matter
+		:mod (x6 / partisan))
+	:op2 (x13 / come-01
+		:ARG1 (x9 / he)))
+
+# ::id 52
+# ::snt Democrat," Ashley added. "It's just a situation where somebody
+(x5 / add-01
+	:ARG0 (x1 / have-org-role-91
+		:ARG1 (p / political-party
+			:name (n / name
+				:op1 "Democrat")))
+	:ARG0 (x4 / person
+		:name (n1 / name
+			:op1 "Ashley"))
+	:ARG1 (x12 / situation
+		:poss (x8 / it)
+		:mod (x10 / just)
+		:mod (x14 / somebody)))
+
+# ::id 53
+# ::snt he's known for a long time is available and has experience in
+(x3 / know-01
+	:ARG1 (x10 / and
+		:mod (x9 / available)))
+
+# ::id 54
+# ::snt matters involving regulatory matters."
+(x1 / matter
+	:ARG2-of (x2 / involve-01
+		:ARG1 (x4 / matter
+			:ARG0-of (x3 / regulate-01))))
+
+# ::id 55
+# ::snt "I'm a good sounding board," Ashley added.
+(x11 / add-01
+	:ARG1 (x7 / board
+		:domain (x2 / i)
+		:mod (x5 / good)
+		:mod (x6 / sound-01))
+	:ARG0 (x10 / person
+		:name (n / name
+			:op1 "Ashley")))
+
+# ::id 56
+# ::snt Ashley said that Neil Bush decided on his own "not to take the
+(x2 / say-01
+	:ARG0 (x1 / person
+		:name (n / name
+			:op1 "Ashley"))
+	:ARG1 (x6 / decide-01
+		:ARG0 (x4 / newspaper
+			:name (n1 / name
+				:op1 "Neil"
+				:op2 "Bush"))
+		:ARG1 (x13 / take-01
+			:ARG0 x4)))
+
+# ::id 57
+# ::snt easy way out" and that he's been the victim of "a little
+(x5 / and
+	:op2 (x2 / way
+		:mod (x1 / easy))
+	:op1 (x11 / victim
+		:mod (x15 / little)))
+
+# ::id 58
+# ::snt selective treatment" from federal regulators.
+(x2 / treat-03
+	:manner (x1 / selective)
+	:ARG2 (x6 / regulator
+		:mod (x5 / government-organization
+			:name (n / name
+				:op1 "federal"))))
+
+# ::id 59
+# ::snt But, Ashley said, "He hasn't whined or complained about that."
+(x / xconcept
+	:x (x1 / contrast-01
+		:ARG2 (x11 / or
+			:op1 (x10 / whine
+				:ARG0 (x7 / he)
+				:topic (x14 / that))
+			:op2 (x12 / complain-01
+				:ARG0 x7)))
+	:x (x4 / say-01
+		:ARG0 (x3 / person
+			:name (n / name
+				:op1 "Ashley"))))
+
+# ::id 60
+# ::snt He said that Neil Bush was concerned that when the Office of
+(x2 / say-01
+	:ARG0 (x1 / he)
+	:ARG1 (x7 / concern-01
+		:ARG1 (x4 / name
+			:op1 "Neil"
+			:op2 "Bush")))
+
+# ::id 61
+# ::snt Thrift Supervision "decided to go public" about the case, "it
+(x4 / decide-01
+	:ARG0 (x2 / supervision
+		:mod (x1 / thrift))
+	:ARG1 (x7 / public
+		:topic (x11 / case)))
+
+# ::id 62
+# ::snt only presented its side of the matter. A thousand pages. It didn't
+(x2 / present-01
+	:mod (x1 / only)
+	:ARG0 (x4 / side
+		:ARG1 (x7 / matter)
+		:part-of (x11 / page)))
+
+# ::id 63
+# ::snt include Neil's defense."
+(x1 / include-01
+	:ARG1 (x4 / defend-01
+		:ARG0 (x2 / person
+			:name (n / name
+				:op1 "Neil"))))
+
+# ::id 64
+# ::snt Ashley and Bush have remained close friends since they were both
+(x5 / remain-01
+	:ARG3 (x2 / and
+		:op1 (x1 / person
+			:name (n / name
+				:op1 "Ashley"))
+		:op2 (x3 / person
+			:name (n1 / name
+				:op1 "Bush")))
+	:ARG2 (x7 / friend
+		:mod (x6 / close)
+		:mod (x11 / both)))
+
+# ::id 65
+# ::snt members of the secret society Skull and Bones while they were
+(xap0 / person
+	:ARG0-of (x1 / have-org-role-91
+		:ARG2 (m / member)
+		:ARG1 (x7 / and
+			:op1 (x6 / skull
+				:mod (x4 / secret)
+				:mod (x5 / society)))))
+
+# ::id 66
+# ::snt undergraduates at Yale University in the late 1940s.
+(x1 / undergraduate
+	:location (x3 / government-organization
+		:name (n / name
+			:op1 "Yale"
+			:op2 "University"))
+	:time (x8 / date-entity
+		:mod (x7 / late)))
+

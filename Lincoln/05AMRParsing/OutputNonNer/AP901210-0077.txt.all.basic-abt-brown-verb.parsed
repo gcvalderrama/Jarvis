@@ -1,0 +1,584 @@
+# ::id 1
+# ::snt A natural gas explosion rocked an apartment
+(x5 / rock
+	:ARG0 (x4 / explode-01
+		:mod (x2 / natural)
+		:mod (x3 / gas))
+	:ARG1 (x7 / apartment))
+
+# ::id 2
+# ::snt complex at an Army base, killing a 5-year-old girl and injuring 17
+(x1 / complex
+	:location (x5 / base
+		:mod (x4 / military
+			:name (n / name
+				:op1 "Army")))
+	:ARG1 (x11 / and
+		:op1 (x7 / kill-01
+			:ARG1 (x10 / girl
+				:mod (x9 / person
+					:name (n1 / name
+						:op1 "5-year-old"))))
+		:op2 (x12 / injure-01
+			:ARG1 (x13 / date-entity))))
+
+# ::id 3
+# ::snt residents and rescuers, authorities said.
+(x6 / say-01
+	:ARG1 (x2 / and
+		:op1 (x1 / person
+			:ARG0-of (r / reside-01))
+		:op2 (x3 / rescue-01))
+	:ARG0 (x5 / authority))
+
+# ::id 4
+# ::snt The girl's remains were discovered in the rubble of the building
+(x6 / discover-01
+	:ARG1 (x4 / remains
+		:ARG1 (x2 / girl))
+	:ARG1 (x12 / building))
+
+# ::id 5
+# ::snt at 9:30 a.m. today, about 12 hours after it blew up, officials at
+(x14 / have-org-role-91
+	:ARG2 (o / official)
+	:null_edge (x2 / include-91
+		:time (x4 / today
+			:time (x9 / after
+				:op1 (x11 / blow-01
+					:ARG1 (x8 / temporal-quantity
+						:unit (h / hour)
+						:quant (x6 / about
+							:op1 12)))))))
+
+# ::id 6
+# ::snt Fort Benjamin Harrison said.
+(x4 / say-01
+	:ARG0 (x2 / newspaper
+		:name (n / name
+			:op1 "Benjamin"
+			:op2 "Harrison")
+		:ARG0-of (x1 / fort)))
+
+# ::id 7
+# ::snt The blast occurred hours after fire authorities arrived to
+(x2 / blast-05
+	:time (x5 / after
+		:op1 (x8 / arrive-01
+			:ARG1 (x4 / temporal-quantity
+				:unit (h / hour))
+			:ARG1 (x7 / authority
+				:mod (x6 / fire-arm)))))
+
+# ::id 8
+# ::snt investigate a gas leak at another building in the complex. That
+(x1 / investigate-01
+	:ARG1 (x4 / leak-01
+		:mod (x3 / gas))
+	:ARG2 (x7 / building
+		:mod (x6 / another)
+		:location (x10 / complex)))
+
+# ::id 9
+# ::snt building was being evacuated when the blast hit several hundred
+(x4 / evacuate
+	:ARG1 (x1 / building)
+	:null_edge (x9 / several
+		:op1 (x8 / hit-01
+			:ARG0 (x7 / blast-05))))
+
+# ::id 10
+# ::snt feet away, authorities said.
+(x5 / say-01
+	:ARG0 (x4 / authority)
+	:ARG1 (xap0 / relative-position
+		:quant (x1 / distance-quantity
+			:unit (f / foot))))
+
+# ::id 11
+# ::snt The explosion, in a housing area for enlisted personnel,
+(x2 / explode-01
+	:ARG1 (x6 / house-01
+		:ARG3 (x10 / have-org-role-91
+			:ARG2 (p / personnel)
+			:ARG1-of (x9 / enlist-01))))
+
+# ::id 12
+# ::snt destroyed a four-family housing unit and damaged another unit, said
+(x6 / and
+	:op1 (x1 / destroy-01
+		:ARG1 (x5 / unit
+			:ARG0-of (x4 / house-01
+				:ARG1-of (x3 / four-family)))
+		:ARG1 (x11 / say-01))
+	:op2 (x7 / damage-01
+		:ARG1 (x9 / unit
+			:mod (x8 / another))))
+
+# ::id 13
+# ::snt post spokesman Maj. Ronald Downing.
+(x1 / post
+	:mod (x3 / maj.
+		:ARG0-of (x2 / have-org-role-91
+			:ARG2 (s / spokesman))))
+
+# ::id 14
+# ::snt "The fire engines were trying to get in and we were trying to
+(x10 / and
+	:op1 (x6 / try-01
+		:ARG0 (x4 / engine
+			:mod (x3 / fire-arm))
+		:ARG1 (x8 / get-01
+			:ARG0 x4
+			:ARG0 x10))
+	:op2 (x13 / try-01
+		:ARG0 x4
+		:ARG0 (x11 / we)))
+
+# ::id 15
+# ::snt get out. It was total chaos," said Joan Adams, a resident of the
+(x10 / say-01
+	:ARG1 (x1 / get-01
+		:ARG1 (x7 / chaos
+			:ARG2-of (x6 / total-01)))
+	:ARG0 (x11 / newspaper
+		:name (n / name
+			:op1 "Joan"
+			:op2 "Adams")
+		:ARG0-of (x15 / reside-01
+			:ARG1 (x16 / include-91))))
+
+# ::id 16
+# ::snt complex. She described people running through streets in their
+(x4 / describe-01
+	:ARG2 (x1 / complex)
+	:ARG0 (x3 / she)
+	:ARG1 (x6 / run-02
+		:location (x8 / street)))
+
+# ::id 17
+# ::snt pajamas, carrying children.
+(x1 / pajamas
+	:ARG0-of (x3 / carry-01
+		:ARG1 (x4 / child)))
+
+# ::id 18
+# ::snt At least 17 residents and firefighters were injured. By midday
+(x8 / injure-01
+	:ARG1 (x5 / and
+		:op1 (x4 / person
+			:ARG0-of (r / reside-01)
+			:quant 17)
+		:op2 (x6 / firefighter))
+	:time (x10 / by))
+
+# ::id 19
+# ::snt today, three people were still listed in critical condition, one of
+(x7 / list-01
+	:time (x1 / today
+		:quant 3)
+	:mod (x6 / still)
+	:ARG2 (x10 / condition
+		:mod (x9 / critical)))
+
+# ::id 20
+# ::snt them a 4-year-old girl, authorities said.
+(x7 / say-01
+	:ARG1 (x4 / girl
+		:mod (x3 / person
+			:name (n / name
+				:op1 "4-year-old")))
+	:ARG0 (x6 / authority))
+
+# ::id 21
+# ::snt Marion County Deputy Coroner Charles W. Green said he could not
+(x8 / say-01
+	:ARG0 (x7 / political-party
+		:name (n / name
+			:op1 "Green")
+		:null_edge (x4 / coroner
+			:mod (x3 / deputy
+				:ARG1 (x1 / country
+					:name (n2 / name
+						:op1 "Marion"))))
+		:null_edge (x5 / person
+			:name (n1 / name
+				:op1 "Charles"))
+		:null_edge (x6 / null_tag))
+	:ARG1 (x10 / possible
+		:domain (x9 / he)))
+
+# ::id 22
+# ::snt conclusively identify the dead child until after dental records
+(x2 / identify-01
+	:manner (x1 / conclusively)
+	:ARG1 (x5 / child
+		:ARG1-of (x4 / die-01
+			:op (d / dead)))
+	:time (x6 / until
+		:op1 (x7 / after
+			:op1 (x9 / record
+				:mod (x8 / dental)))))
+
+# ::id 23
+# ::snt were checked. But base officials said there was little doubt it was
+(x4 / contrast-01
+	:ARG2 (x2 / check-01)
+	:ARG2 (x7 / say-01
+		:ARG1 (x11 / doubt-01
+			:mod (x10 / little))
+		:ARG0 (xap0 / person
+			:ARG0-of (x6 / have-org-role-91
+				:ARG2 (o / official)
+				:ARG1 (x5 / base)))))
+
+# ::id 24
+# ::snt the 5-year-old girl who had been reported missing earlier.
+(x3 / girl
+	:mod (x2 / person
+		:name (n / name
+			:op1 "5-year-old"))
+	:ARG1-of (x7 / report-01
+		:ARG1 (x8 / miss-01)
+		:time (x9 / early)))
+
+# ::id 25
+# ::snt Firefighters and police called off their search through the
+(x4 / call-03
+	:ARG0 (x2 / and
+		:op1 (x1 / firefighter)
+		:op2 (x3 / police))
+	:ARG1 (x7 / search-01))
+
+# ::id 26
+# ::snt smoldering rubble after the body was found. The girl's identity was
+(x1 / smolder
+	:ARG1 (x2 / rubble)
+	:condition (x7 / find-01
+		:time (x3 / after)
+		:ARG1 (x5 / body)
+		:ARG1 (x12 / identity
+			:poss (x10 / girl))))
+
+# ::id 27
+# ::snt not released. Other members of her family were among the injured,
+(x2 / release-01
+	:ARG1 (x12 / injure-01)
+	:ARG1 (xap0 / person
+		:ARG0-of (x5 / have-org-role-91
+			:ARG2 (m / member)
+			:mod (x4 / other)
+			:ARG1 (x8 / family))))
+
+# ::id 28
+# ::snt Downing said.
+(x2 / say-01
+	:ARG0 (x1 / downing))
+
+# ::id 29
+# ::snt The post on the edge of town serves as a processing center for
+(x8 / serve-01
+	:ARG1 (x2 / post
+		:mod (x7 / town))
+	:ARG2 (x12 / center
+		:ARG0-of (x11 / process-01)))
+
+# ::id 30
+# ::snt soldiers en route to the Persian Gulf, although none of those
+(x1 / soldier
+	:location (x7 / world-region
+		:name (n / name
+			:op1 "Gulf")
+		:mod (x6 / country
+			:name (n1 / name
+				:op1 "Persian")))
+	:mod (x10 / none))
+
+# ::id 31
+# ::snt soldiers stayed in the affected area.
+(x2 / stay-01
+	:ARG1 (x1 / soldier)
+	:location (x6 / area
+		:ARG1-of (x5 / affect-01)))
+
+# ::id 32
+# ::snt Fire authorities had been called in about 5:45 p.m., or 3{ hours
+(x5 / call-01
+	:ARG1 (x2 / authority
+		:mod (x1 / fire-02))
+	:ARG2 (x11 / or
+		:op1 (x8 / include-91)
+		:op2 (x14 / temporal-quantity
+			:unit (h / hour)
+			:quant 3)))
+
+# ::id 33
+# ::snt before the blast, after people reported smelling gas, Downing said.
+(x12 / say-01
+	:time (x1 / before
+		:op1 (x3 / blast-05))
+	:time (x5 / after
+		:op1 (x7 / report-01
+			:ARG1 (x8 / smell
+				:ARG1 (x9 / gas))))
+	:ARG0 (x11 / downing))
+
+# ::id 34
+# ::snt He said officials had planned to evacuate the 240-unit Harrison
+(x2 / say-01
+	:ARG0 (x1 / he)
+	:ARG1 (x5 / plan-01
+		:ARG1 (x7 / evacuate
+			:ARG1 (x10 / person
+				:name (n / name
+					:op1 "Harrison")
+				:null_edge (x9 / 240-unit))
+			:ARG0 (xap0 / person
+				:ARG0-of (x3 / have-org-role-91
+					:ARG2 (o / official))))
+		:ARG0 xap0))
+
+# ::id 35
+# ::snt Village complex before the explosion.
+(x2 / complex
+	:mod (x1 / village)
+	:time (x3 / before
+		:op1 (x5 / explode-01)))
+
+# ::id 36
+# ::snt Harley said authorities turned the gas off at one housing unit
+(x2 / say-01
+	:ARG0 (x1 / person
+		:name (n / name
+			:op1 "Harley"))
+	:ARG1 (x4 / turn-02
+		:ARG0 (x3 / authority)
+		:ARG1 (x6 / gas)
+		:ARG2 (x11 / unit
+			:quant 1
+			:ARG0-of (x10 / house-01))))
+
+# ::id 37
+# ::snt where they thought the leak was occurring. But a nearby unit, where
+(x9 / contrast-01
+	:ARG2 (x3 / think-01
+		:ARG1 (x5 / leak-01))
+	:ARG2 (x12 / unit
+		:mod (x11 / nearby)))
+
+# ::id 38
+# ::snt the gas had not been turned off, blew up, he said.
+(x13 / say-01
+	:ARG1 (x9 / blow-01
+		:ARG1-of (x6 / turn-02
+			:ARG1 (x2 / gas)))
+	:ARG0 (x12 / he))
+
+# ::id 39
+# ::snt Some residents complained that they were not adequately warned.
+(x3 / complain-01
+	:ARG0 (x2 / person
+		:ARG0-of (r / reside-01)
+		:quant (x1 / some))
+	:ARG1 (x9 / warn-01
+		:manner (x8 / adequate)))
+
+# ::id 40
+# ::snt Adams, whose husband is a sergeant, said that about two hours
+(x9 / say-01
+	:ARG0 (x4 / husband
+		:poss (x1 / person
+			:name (n / name
+				:op1 "Adams"))
+		:ARG0-of (x7 / sergeant))
+	:ARG1 (x13 / temporal-quantity
+		:unit (h / hour)
+		:quant 2))
+
+# ::id 41
+# ::snt before the explosion, military police began telling residents that
+(x7 / begin-01
+	:time (x1 / before
+		:op1 (x3 / explode-01))
+	:ARG0 (x6 / police
+		:mod (x5 / military))
+	:ARG1 (x8 / tell-01
+		:ARG3 (x9 / person
+			:ARG0-of (r / reside-01))))
+
+# ::id 42
+# ::snt a gas leak had been found elsewhere in the complex and would be
+(x11 / and
+	:op1 (x6 / find-02
+		:ARG1 (x3 / leak-01
+			:mod (x2 / gas))
+		:location (x7 / elsewhere)
+		:location (x10 / complex)))
+
+# ::id 43
+# ::snt fixed.
+(x1 / fix-02)
+
+# ::id 44
+# ::snt "He told us there was no danger for us to stay there," she
+(x3 / tell-01
+	:ARG0 (x2 / he)
+	:ARG2 (x8 / danger
+		:polarity -
+		:purpose (x12 / stay-01
+			:location (x13 / there))))
+
+# ::id 45
+# ::snt said. Her family had planned to leave anyway, because the complex
+(x1 / say-01
+	:ARG1 (x6 / plan-01
+		:ARG0 (x4 / family)
+		:ARG1 (x8 / leave-01
+			:mod (x9 / anyway)
+			:ARG1-of (x11 / cause-01
+				:ARG0 (x13 / complex)))))
+
+# ::id 46
+# ::snt was without heat and hot water, but the explosion happened before
+(x8 / contrast-01
+	:ARG2 (x4 / and
+		:op1 (x3 / heat)
+		:op2 (x6 / water
+			:mod (x5 / hot)))
+	:ARG2 (x11 / happen-01
+		:ARG1 (x10 / explode-01)
+		:time (x12 / before)))
+
+# ::id 47
+# ::snt they did so, she said.
+(x6 / say-01
+	:ARG1 (x2 / do-02)
+	:ARG0 (x5 / she))
+
+# ::id 48
+# ::snt Lt. Col. Bill Carey, provost marshal, said the building where
+(x9 / say-01
+	:ARG0 (x4 / person
+		:name (n / name
+			:op1 "Carey")
+		:null_edge (x1 / lt.)
+		:null_edge (x2 / col.)
+		:null_edge (x3 / person
+			:name (n1 / name
+				:op1 "Bill"))
+		:null_edge (x7 / marshal
+			:mod (x6 / provost)))
+	:ARG1 (x11 / building))
+
+# ::id 49
+# ::snt the leak was detected was evacuated as a precaution, but "we
+(x11 / contrast-01
+	:ARG1 (x4 / detect-01
+		:ARG1 (x2 / leak-01)
+		:ARG1 (x6 / evacuate
+			:ARG2 (x9 / precaution-00)))
+	:ARG2 (x13 / we))
+
+# ::id 50
+# ::snt didn't feel the whole area needed to be evacuated."
+(x3 / feel-01
+	:ARG1 (x7 / need-01
+		:ARG0 (x6 / area
+			:mod (x5 / whole))
+		:ARG1 (x10 / evacuate)))
+
+# ::id 51
+# ::snt However, the blast occurred in another building about 800 to
+(x4 / blast-05
+	:ARG1-of (x8 / building
+		:mod (x7 / another)
+		:quant 800))
+
+# ::id 52
+# ::snt 1,000 feet away, he said, adding that "prior to the explosion, we
+(x6 / say-01
+	:ARG0 (x5 / he)
+	:ARG1 (x8 / add-02
+		:ARG1 (x16 / country
+			:name (n / name
+				:op1 "we")
+			:mod (x11 / prior-to
+				:ARG2 (x14 / explode-01))))
+	:ARG1 (xap0 / relative-position
+		:quant (x2 / distance-quantity
+			:unit (f / foot))))
+
+# ::id 53
+# ::snt had not been to this building."
+(x6 / building
+	:mod (x5 / this))
+
+# ::id 54
+# ::snt The blast was felt more than two miles away. Wood and other
+(x4 / feel-01
+	:ARG1 (x2 / blast-05)
+	:time (x9 / away
+		:op1 (x8 / distance-quantity
+			:unit (m / mile)
+			:null_edge (x5 / more-than
+				:null_edge 2)))
+	:ARG0 (x12 / and
+		:op1 (x11 / wood)
+		:mod (x13 / other)))
+
+# ::id 55
+# ::snt debris were scattered where a two-story building once stood. Rubble
+(x3 / scatter-01
+	:ARG0 (x1 / debris)
+	:ARG0 (x9 / stand-01
+		:ARG1 (x7 / build-01
+			:mod (x6 / two-story))
+		:time (x8 / once)))
+
+# ::id 56
+# ::snt was strewn over four blocks. About 210 families were evacuated
+(x2 / strew
+	:ARG2 (x5 / block
+		:quant 4)
+	:ARG1 (x9 / family
+		:quant (x7 / about
+			:op1 (x8 / 210)))
+	:ARG1 (x11 / evacuate))
+
+# ::id 57
+# ::snt after the explosion.
+(x1 / after
+	:op1 (x3 / explode-01))
+
+# ::id 58
+# ::snt "Insulation was coming down like snow when we got here. One
+(x4 / come-01
+	:ARG1 (x2 / newspaper
+		:name (n / name
+			:op1 "Insulation"))
+	:direction (x5 / down)
+	:ARG1 (x7 / snow)
+	:condition (x10 / get-01
+		:location (x11 / here))
+	:li 1)
+
+# ::id 59
+# ::snt apartment was engulfed in flames and the other building was in
+(x6 / and
+	:op1 (x3 / engulf
+		:ARG1 (x1 / apartment)
+		:ARG2 (x5 / flame)
+		:ARG1 (x9 / build-01
+			:mod (x8 / other))))
+
+# ::id 60
+# ::snt flames," said State Trooper Anthony Blackburn.
+(x4 / say-01
+	:ARG1 (x1 / flame)
+	:ARG0 (x5 / state)
+	:ARG0 (x7 / newspaper
+		:name (n / name
+			:op1 "Anthony"
+			:op2 "Blackburn")
+		:ARG0-of (x6 / trooper)))
+

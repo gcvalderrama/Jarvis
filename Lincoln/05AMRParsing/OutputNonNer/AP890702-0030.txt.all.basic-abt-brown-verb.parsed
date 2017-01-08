@@ -1,0 +1,510 @@
+# ::id 1
+# ::snt More than 200 relatives of
+(x4 / relative
+	:quant (x1 / more-than
+		:op1 200))
+
+# ::id 2
+# ::snt people killed when a U.S. warship shot down an Iranian airliner a
+(x2 / kill-01
+	:time (x7 / shoot-05
+		:ARG0 (x6 / warship
+			:mod (x5 / country
+				:name (n / name
+					:op1 "U.S.")))
+		:ARG1 (x11 / airliner
+			:mod (x10 / country
+				:name (n1 / name
+					:op1 "Iran")))))
+
+# ::id 3
+# ::snt year ago have sued the makers of the ship's radar system, a
+(x4 / sue-01
+	:time (x2 / date-entity)
+	:ARG1 (x6 / make-01
+		:ARG1 (x12 / system
+			:poss (x9 / ship)
+			:mod (x11 / radar))))
+
+# ::id 4
+# ::snt spokesman said Sunday.
+(x2 / say-01
+	:ARG0 (xap0 / person
+		:ARG0-of (x1 / have-org-role-91
+			:ARG2 (s / spokesman)))
+	:time (xap1 / date-entity
+		:weekday (x3 / sunday)))
+
+# ::id 5
+# ::snt Nagib Ghafoor said the suit was filed June 28 in U.S. District
+(x3 / say-01
+	:ARG0 (x1 / newspaper
+		:name (n / name
+			:op1 "Nagib"
+			:op2 "Ghafoor"))
+	:ARG1 (x7 / file-01
+		:ARG1 (x5 / suit-01)
+		:time (x8 / name
+			:op1 "June"
+			:op2 "28")
+		:location (x12 / district
+			:mod (x11 / have-org-role-91
+				:ARG1 (c / country
+					:name (n1 / name
+						:op1 "U.S."))))))
+
+# ::id 6
+# ::snt Court in San Francisco on behalf of relatives of 83 of the 290
+(x1 / court
+	:location (x3 / city
+		:name (n / name
+			:op1 "San"
+			:op2 "Francisco"))
+	:null_edge (x8 / relative
+		:null_edge (x13 / 290
+			:null_edge 83)))
+
+# ::id 7
+# ::snt victims.
+(x1 / victim)
+
+# ::id 8
+# ::snt The announcement of the lawsuit came on the eve of the July 3
+(x6 / come-01
+	:ARG1 (x2 / thing
+		:ARG1-of (a / announce-01)
+		:ARG1 (x5 / lawsuit))
+	:time (x9 / eve
+		:op1 (x12 / date-entity)))
+
+# ::id 9
+# ::snt anniversary of the 1988 tragedy, when an Iran Air Airbus was shot
+(x1 / anniversary
+	:time-of (x13 / shoot-02
+		:ARG1 (x5 / tragedy
+			:time (x4 / date-entity
+				:year 1988))
+		:ARG1 (x11 / company
+			:name (n / name
+				:op1 "Airbus")
+			:null_edge (x10 / null_tag))))
+
+# ::id 10
+# ::snt down by the USS Vincennes in the Persian Gulf.
+(x1 / down
+	:null_edge (x5 / vincennes
+		:null_edge (x4 / null_tag)
+		:location (x9 / world-region
+			:name (n / name
+				:op1 "Gulf")
+			:mod (x8 / country
+				:name (n1 / name
+					:op1 "Persian")))))
+
+# ::id 11
+# ::snt Vincennes crew members said they mistook the airliner for an
+(x4 / say-01
+	:ARG1 (x6 / mistake-01
+		:ARG1 (x8 / airliner)
+		:ARG2 (x10 / name
+			:op1 "an"))
+	:ARG0 (xap0 / person
+		:ARG0-of (x3 / have-org-role-91
+			:ARG2 (m / member)
+			:ARG1 (x1 / country
+				:name (n / name
+					:op1 "Vincennes"))
+			:ARG1 (x2 / crew))))
+
+# ::id 12
+# ::snt Iranian F-14 fighter coming in to attack.
+(x4 / come-01
+	:ARG1 (x3 / fight-01
+		:mod (x2 / world-region
+			:name (n / name
+				:op1 "F-14")
+			:mod (x1 / country
+				:name (n1 / name
+					:op1 "Iran"))))
+	:ARG1 (x7 / attack-01))
+
+# ::id 13
+# ::snt The jetliner was on a commercial flight from the Iranian city of
+(x2 / jetliner
+	:topic (x7 / fly-01
+		:op (f / flight)
+		:mod (x6 / commerce)
+		:source (x11 / city
+			:mod (x10 / country
+				:name (n / name
+					:op1 "Iran"))
+			:ARG1-of (x12 / include-91))))
+
+# ::id 14
+# ::snt Bandar Abbas, where a large air base is located, to Dubai in the
+(x1 / name
+	:op1 "Bandar"
+	:op2 "Abbas"
+	:ARG1-of (xap0 / be-located-at-91
+		:ARG2 (x8 / base
+			:mod (x6 / large)
+			:mod (x7 / air))
+		:location (x13 / city
+			:name (n / name
+				:op1 "Dubai"))))
+
+# ::id 15
+# ::snt southern United Arab Emirates.
+(x / xconcept)
+
+# ::id 16
+# ::snt Ghafoor said the lawsuit was filed against the General Electric
+(x2 / say-01
+	:ARG0 (x1 / person
+		:name (n / name
+			:op1 "Ghafoor"))
+	:ARG1 (x6 / file-01
+		:ARG1 (x4 / lawsuit)
+		:ARG2 (x10 / electric
+			:null_edge (x9 / null_tag))))
+
+# ::id 17
+# ::snt Corp. "and other entities which designed and manufactured the radar
+(x3 / and
+	:op1 (x1 / country
+		:name (n / name
+			:op1 "Corp."))
+	:op2 (x5 / entity
+		:mod (x4 / other)
+		:ARG1 (x8 / and
+			:op1 (x7 / design-01
+				:ARG1 (x11 / radar))
+			:op2 (x9 / manufacture-01))))
+
+# ::id 18
+# ::snt equipment on board the USS Vincennes."
+(x1 / equipment
+	:location (x3 / board)
+	:null_edge (x6 / null_tag
+		:null_edge (x5 / null_tag)))
+
+# ::id 19
+# ::snt GE is based in Fairfield, Conn. "The company has not seen the
+(x3 / base-01
+	:ARG1 (x1 / event
+		:name (n / name
+			:op1 "GE"))
+	:location (x5 / country
+		:name (n1 / name
+			:op1 "Fairfield")
+		:null_edge (x7 / country
+			:name (n2 / name
+				:op1 "Conn.")))
+	:ARG0 (x13 / see-01
+		:ARG0 x1
+		:ARG0 (x10 / company)))
+
+# ::id 20
+# ::snt suit yet, so it's inappropriate to comment," said Jack Batty, a
+(x12 / say-01
+	:ARG1 (x1 / suit-01
+		:mod (x2 / yet)
+		:mod (x7 / inappropriate
+			:domain (x9 / comment-01)))
+	:ARG0 (x13 / newspaper
+		:name (n / name
+			:op1 "Jack"
+			:op2 "Batty")))
+
+# ::id 21
+# ::snt company spokesman.
+(x2 / have-org-role-91
+	:ARG2 (s / spokesman)
+	:ARG1 (x1 / company))
+
+# ::id 22
+# ::snt Most of the passengers aboard the ill-fated Airbus were Iranians.
+(x10 / person
+	:mod (c / country
+		:name (n / name
+			:op1 "Iranians"))
+	:null_edge (x4 / passenger
+		:quant (x1 / most)
+		:location (x5 / aboard
+			:op1 (x8 / company
+				:name (n1 / name
+					:op1 "Airbus")
+				:mod (x7 / ill-fated)))))
+
+# ::id 23
+# ::snt Pentagon analysts have said split-second decisions aboard the
+(x4 / say-01
+	:ARG0 (x2 / person
+		:ARG0-of (a / analyze-01)
+		:ARG1 (x1 / government-organization
+			:name (n / name
+				:op1 "Pentagon")))
+	:ARG1 (x6 / decide-01
+		:ARG1-of (x5 / split-second))
+	:location (x7 / aboard))
+
+# ::id 24
+# ::snt Vincennes were affected by the inability of radar operators to
+(x3 / affect-01
+	:ARG1 (x1 / country
+		:name (n / name
+			:op1 "Vincennes"))
+	:ARG0 (x6 / ability
+		:polarity -
+		:ARG0 (x9 / person
+			:ARG0-of (o / operate-01)
+			:mod (x8 / radar))))
+
+# ::id 25
+# ::snt immediately match the plane's radar trace with digital direction,
+(x2 / match-01
+	:time (x1 / immediate)
+	:ARG1 (x7 / trace-02
+		:ARG1 (x6 / radar
+			:poss (x4 / plane)))
+	:ARG1 (x10 / direction
+		:mod (x9 / digital)))
+
+# ::id 26
+# ::snt altitude and speed information displayed on another screen.
+(x5 / display-01
+	:ARG0 (x4 / information
+		:topic (x2 / and
+			:op1 (x1 / altitude)
+			:op2 (x3 / speed-01)))
+	:ARG1 (xap0 / contrast-01
+		:ARG1 (x8 / screen
+			:mod (x7 / another))))
+
+# ::id 27
+# ::snt Ghafoor said the complaint charged that the radar equipment
+(x2 / say-01
+	:ARG0 (x1 / person
+		:name (n / name
+			:op1 "Ghafoor"))
+	:ARG1 (x5 / charge-05
+		:ARG0 (x4 / complain-01)
+		:ARG2 (x9 / equipment
+			:mod (x8 / radar))))
+
+# ::id 28
+# ::snt indicated the aircraft approaching the Vincennes was an F-14, diving
+(x1 / indicate-01
+	:ARG1 (x9 / f-14
+		:domain (x3 / aircraft
+			:ARG1-of (x4 / approach-01
+				:ARG1 (x6 / country
+					:name (n / name
+						:op1 "Vincennes"))))))
+
+# ::id 29
+# ::snt in an attack mode at an altitude of 4,000 feet, rather than the Iran
+(x4 / mode
+	:manner-of (x3 / attack-01)
+	:location (x7 / altitude
+		:poss (x10 / foot
+			:quant (x9 / 4,000))
+		:mod (x15 / country
+			:name (n / name
+				:op1 "Iran"))))
+
+# ::id 30
+# ::snt Air flight, which was climbing.
+(x2 / fly-01
+	:op (f / flight)
+	:mod (x1 / air)
+	:domain (x6 / climb-01))
+
+# ::id 31
+# ::snt He said claims against the United States on behalf of the
+(x2 / say-01
+	:ARG0 (x1 / he)
+	:ARG1 (x3 / claim-01
+		:ARG1 (x6 / country
+			:name (n / name
+				:op1 "United"
+				:op2 "States"))))
+
+# ::id 32
+# ::snt families "are in the process of being filed as well."
+(x1 / family
+	:ARG1-of (x9 / file-01))
+
+# ::id 33
+# ::snt The Iranian government has been seeking a World Court verdict
+(x6 / seek-01
+	:ARG0 (x3 / government-organization
+		:ARG0-of (g / govern-01)
+		:ARG1 (x2 / country
+			:name (n / name
+				:op1 "Iran")))
+	:ARG1 (x10 / verdict
+		:null_edge (x8 / null_tag)
+		:mod (x9 / court)))
+
+# ::id 34
+# ::snt against the United States and demanded financial compensation for
+(x5 / and
+	:op1 (x3 / country
+		:name (n / name
+			:op1 "United"
+			:op2 "States"))
+	:op2 (x6 / demand-01
+		:ARG1 (x8 / compensate-01
+			:mod (x7 / finance))))
+
+# ::id 35
+# ::snt the 290 dead.
+(x3 / die-01
+	:op (d / dead)
+	:quant (x2 / 290))
+
+# ::id 36
+# ::snt He did not mention any figure for the compensation sought but
+(x4 / mention-01
+	:ARG0 (x1 / he)
+	:ARG1 (x6 / figure
+		:mod (x5 / any)
+		:ARG2 (x9 / compensate-01
+			:ARG1-of (x11 / contrast-01
+				:ARG2 (x10 / seek-01)))))
+
+# ::id 37
+# ::snt said the group would be guided by the amount of compensation the
+(x1 / say-01
+	:ARG1 (x6 / guide-01
+		:ARG1 (x3 / group)
+		:ARG0 (x11 / compensate-01)))
+
+# ::id 38
+# ::snt Iraqi government paid the families of American sailors killed in an
+(x3 / pay-01
+	:ARG0 (x2 / government-organization
+		:ARG0-of (g / govern-01)
+		:ARG1 (x1 / country
+			:name (n / name
+				:op1 "Iraq")))
+	:ARG1 (x5 / family
+		:poss (x8 / person
+			:ARG0-of (s / sail-01)
+			:null_edge (x7 / country
+				:name (n1 / name
+					:op1 "American"))
+			:ARG1-of (x9 / person
+				:ARG1-of (k / kill-01)
+				:location (x11 / name
+					:op1 "an")))))
+
+# ::id 39
+# ::snt Iraqi air strike on the U.S. frigate Stark in the Persian Gulf on
+(x3 / person
+	:name (n / name
+		:op1 "strike")
+	:ARG0 (x1 / country
+		:name (n1 / name
+			:op1 "Iraq"))
+	:mod (x2 / air)
+	:ARG1 (x7 / frigate
+		:ARG0-of (x8 / stark
+			:mod (x6 / country
+				:name (n2 / name
+					:op1 "U.S."))
+			:location (x12 / world-region
+				:name (n3 / name
+					:op1 "Gulf")
+				:mod (x11 / country
+					:name (n4 / name
+						:op1 "Persian"))))))
+
+# ::id 40
+# ::snt May 16, 1987.
+(x1 / person
+	:name (n / name
+		:op1 "May"
+		:op2 "16"
+		:op3 ","
+		:op4 "1987"))
+
+# ::id 41
+# ::snt The Iraqis said the ship was hit because the pilot of a Mirage
+(x3 / say-01
+	:ARG0 (x2 / country
+		:name (n / name
+			:op1 "Iraqis"))
+	:ARG1 (x7 / hit-01
+		:ARG1 (x5 / ship)
+		:ARG1-of (x10 / have-org-role-91
+			:ARG2 (p / pilot)
+			:ARG1 (x13 / mirage))))
+
+# ::id 42
+# ::snt fighter-bomber mistook it for an Iranian warship.
+(x2 / mistake-01
+	:ARG0 (x1 / fighter-bomber)
+	:ARG1 (x3 / it)
+	:ARG1 (x7 / warship
+		:mod (x6 / country
+			:name (n / name
+				:op1 "Iran"))))
+
+# ::id 43
+# ::snt Iraq has agreed to pay $27.3 million to the families of 37 U.S.
+(x3 / agree-01
+	:ARG0 (x1 / country
+		:name (n / name
+			:op1 "Iraq"))
+	:ARG1 (x5 / pay-01
+		:ARG0 x1
+		:ARG2 (x11 / family
+			:poss (x14 / country
+				:name (n1 / name
+					:op1 "U.S.")
+				:null_edge 37))))
+
+# ::id 44
+# ::snt crewmen killed aboard the Stark, meaning each family would receive
+(x2 / kill-01
+	:ARG0 (x1 / crewman)
+	:location (x3 / aboard)
+	:ARG1 (x7 / mean-01
+		:ARG0 x1
+		:ARG1 (x11 / receive-01
+			:ARG0 (x9 / family
+				:mod (x8 / each)))))
+
+# ::id 45
+# ::snt around $740,000.
+(x1 / around
+	:op1 (x3 / monetary-quantity
+		:unit (y / yuan)))
+
+# ::id 46
+# ::snt The United States had asked for $29.6 million for the families,
+(x5 / ask-02
+	:ARG0 (x2 / country
+		:name (n / name
+			:op1 "United"
+			:op2 "States"))
+	:ARG2 (x12 / family
+		:quant (x8 / monetary-quantity
+			:unit (y / yuan))))
+
+# ::id 47
+# ::snt along with an unspecified amount for 21 sailors wounded in the
+(x9 / wound-01
+	:ARG1 (x5 / amount
+		:ARG1-of (x4 / specify-01
+			:polarity -))
+	:ARG1 (x8 / person
+		:ARG0-of (s / sail-01)
+		:quant 21))
+
+# ::id 48
+# ::snt incident.
+(x1 / incident)
+

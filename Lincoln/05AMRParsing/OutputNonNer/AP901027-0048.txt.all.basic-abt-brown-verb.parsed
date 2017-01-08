@@ -1,0 +1,348 @@
+# ::id 1
+# ::snt Hundreds of demonstrators blocked
+(x4 / block-01
+	:ARG1 (x3 / person
+		:ARG0-of (d / demonstrate-01)))
+
+# ::id 2
+# ::snt streets and train tracks today, halting most traffic in the capital
+(x2 / and
+	:op1 (x1 / street
+		:time (x5 / today)
+		:ARG0-of (x7 / halt-01
+			:ARG1 (x9 / traffic
+				:mod (x8 / most)
+				:location (x12 / capital))))
+	:op2 (x4 / track
+		:mod (x3 / train)))
+
+# ::id 3
+# ::snt to press their demands for President Hussain Muhammad Ershad to
+(x2 / press-01
+	:ARG1 (x4 / demand-01
+		:ARG0 (x7 / person
+			:name (n / name
+				:op1 "Hussain"
+				:op2 "Muhammad"
+				:op3 "Ershad")
+			:ARG0-of (x6 / have-org-role-91
+				:ARG2 (p / president)))))
+
+# ::id 4
+# ::snt resign.
+(x1 / resign-01)
+
+# ::id 5
+# ::snt Stores and offices closed, apparently out of fear of attacks,
+(x4 / close-01
+	:ARG0 (x2 / and
+		:op1 (x1 / store)
+		:op2 (x3 / office))
+	:ARG1 (x9 / fear-01
+		:mod (x6 / apparent)
+		:ARG1 (x11 / attack-01)))
+
+# ::id 6
+# ::snt when what was intended to be a blockade of transport turned into a
+(x4 / intend-01
+	:ARG1 (x8 / blockade-01
+		:ARG1 (x10 / transport-01
+			:ARG1-of (x11 / turn-02))))
+
+# ::id 7
+# ::snt general strike.
+(x2 / person
+	:name (n / name
+		:op1 "strike")
+	:mod (x1 / general))
+
+# ::id 8
+# ::snt Groups of about 50 demonstrators staged sit-down strikes at
+(x6 / stage-01
+	:ARG0 (x1 / group
+		:consist-of (x5 / person
+			:ARG0-of (d / demonstrate-01)
+			:quant (x3 / about
+				:op1 50)))
+	:ARG1 (x8 / strike-01
+		:mod (x7 / sit-down)))
+
+# ::id 9
+# ::snt about two dozen rail and road intersections in and around Dhaka, a
+(x5 / and
+	:quant (x1 / about)
+	:op1 (x4 / rail
+		:location (x10 / around
+			:op1 (x11 / country
+				:name (n / name
+					:op1 "Dhaka"))))
+	:op2 (x7 / intersect-01
+		:ARG1 (x6 / road)))
+
+# ::id 10
+# ::snt city of 7 million people.
+(x1 / city)
+
+# ::id 11
+# ::snt Many people walked to work. Even bicycle-powered rickshaws,
+(x3 / walk-01
+	:quant (x1 / many)
+	:purpose (x5 / work-01
+		:ARG0 (x9 / rickshaw))
+	:mod (x7 / even)
+	:ARG1 x9)
+
+# ::id 12
+# ::snt Dhaka's chief mode of transport, stayed off the streets.
+(x8 / stay-01
+	:ARG1 (x4 / mode
+		:poss (x1 / country
+			:name (n / name
+				:op1 "Dhaka"))
+		:mod (x3 / have-org-role-91
+			:ARG2 (c / chief))
+		:ARG1 (x6 / transport-01))
+	:location (x11 / street))
+
+# ::id 13
+# ::snt Protesters paraded through the streets shouting "Down with
+(x2 / parade-01
+	:ARG0 (x1 / person
+		:ARG0-of (p / protest-01))
+	:location (x5 / street
+		:ARG1-of (x6 / shout
+			:ARG1 (x8 / down))))
+
+# ::id 14
+# ::snt Ershad!" and "Days of Autocracy Are Over!"
+(x10 / over
+	:ARG0 (x4 / and
+		:op1 (x1 / ershad)
+		:op1 (x8 / autocracy)))
+
+# ::id 15
+# ::snt United News of Bangladesh said 4,000 police and paramilitary
+(x5 / say-01
+	:ARG0 (x2 / news
+		:null_edge (x1 / null_tag)
+		:null_edge (x4 / country
+			:name (n / name
+				:op1 "Bangladesh")))
+	:ARG1 (x8 / and
+		:quant (x6 / 4,000)
+		:op1 (x7 / police)
+		:op2 (x9 / paramilitary)))
+
+# ::id 16
+# ::snt troops were deployed in Dhaka. There were no reports of violence by
+(x3 / deploy-01
+	:ARG1 (x1 / troop)
+	:location (x5 / country
+		:name (n / name
+			:op1 "Dhaka"))
+	:ARG1 (x10 / report-01
+		:polarity -
+		:ARG1 (x12 / violence)))
+
+# ::id 17
+# ::snt midday.
+(x / xconcept)
+
+# ::id 18
+# ::snt The blockade was the latest tactic in the campaign by opposition
+(x6 / tactic
+	:domain (x2 / blockade-01)
+	:time (x5 / late
+		:degree (m / most))
+	:time (x9 / campaign-01)
+	:ARG0 (x11 / oppose-01))
+
+# ::id 19
+# ::snt parties to force Ershad to quit. At least eight people have been
+(x3 / force-01
+	:ARG0 (x1 / party)
+	:ARG2 (x6 / quit-01
+		:ARG0 x1
+		:ARG0 (x4 / person
+			:name (n / name
+				:op1 "Ershad")))
+	:null_edge 8)
+
+# ::id 20
+# ::snt killed by police since the current round of protests started Oct.
+(x1 / kill-01
+	:ARG0 (x3 / police)
+	:time (x4 / since
+		:op1 (x10 / start-01
+			:ARG1 (x7 / round
+				:time (x6 / current)
+				:mod (x9 / protest-01))
+			:ARG1 (x11 / person
+				:name (n / name
+					:op1 "Oct.")))))
+
+# ::id 21
+# ::snt 10.
+(x1 / person
+	:op 10)
+
+# ::id 22
+# ::snt "We are happy to see that the blockade has turned into a hartal
+(x4 / happy
+	:ARG1 (x2 / we)
+	:null_edge (x6 / see-01
+		:ARG0 x2
+		:ARG1 (x11 / turn-02
+			:ARG0 (x9 / blockade-01))))
+
+# ::id 23
+# ::snt (general strike). This shows popular support for our cause," said
+(x15 / say-01
+	:ARG1 (x7 / show-01
+		:ARG0 (x3 / person
+			:name (n / name
+				:op1 "strike")
+			:mod (x2 / general))
+		:ARG0 (x6 / this)
+		:ARG1 (x9 / support-01
+			:manner (x8 / popular-41)
+			:ARG1 (x12 / cause))))
+
+# ::id 24
+# ::snt Suranjit Sengupta, a top leader of the Democratic Party. It is one
+(x1 / name
+	:op1 "Suranjit"
+	:op2 "Sengupta"
+	:ARG0-of (x6 / lead-02
+		:mod (x5 / top)
+		:ARG1 (x7 / include-91
+			:null_edge (x10 / null_tag
+				:null_edge (x9 / null_tag)))
+		:li 1))
+
+# ::id 25
+# ::snt of eight parties in an alliance headed by the Awami League led by
+(x3 / party
+	:quant 8
+	:ARG0-of (x6 / have-org-role-91
+		:ARG1 (a / alliance)
+		:ARG1-of (x7 / head-01
+			:ARG0 (x11 / league
+				:ARG0-of (x10 / awami)
+				:ARG1-of (x12 / lead-02)))))
+
+# ::id 26
+# ::snt Sheik Hasina, one of the country's main opposition politicians.
+(x1 / name
+	:op1 "Sheik"
+	:op2 "Hasina"
+	:ARG0-of (x11 / politician
+		:poss (x7 / country)
+		:mod (x9 / main)
+		:ARG0-of (x10 / oppose-01)))
+
+# ::id 27
+# ::snt Ershad has dismissed the campaign against him as "the work of a
+(x3 / dismiss-01
+	:ARG0 (x1 / person
+		:name (n / name
+			:op1 "Ershad"))
+	:ARG1 (x5 / campaign-01)
+	:ARG2 (x11 / work-01
+		:ARG1-of (x12 / include-91)))
+
+# ::id 28
+# ::snt handful of violence-mongers who are out to destabilize
+(x3 / violence-monger
+	:quant (x1 / handful)
+	:purpose (x8 / destabilize-01))
+
+# ::id 29
+# ::snt Bangladesh."
+(x1 / country
+	:name (n / name
+		:op1 "Bangladesh"))
+
+# ::id 30
+# ::snt He was an army general when he seized power in a bloodless coup
+(x4 / army
+	:mod (x5 / general
+		:domain (x1 / he)
+		:null_edge (x8 / seize-01
+			:ARG0 x4
+			:ARG1 (x9 / power)
+			:ARG1 (x13 / coup
+				:mod (x12 / blood)))))
+
+# ::id 31
+# ::snt in 1982. He later resigned from the military and was elected
+(x10 / and
+	:op1 (x6 / resign-01
+		:time (x2 / date-entity
+			:year 1982)
+		:ARG0 (x4 / he)
+		:time (x5 / late)
+		:ARG0 (x9 / military))
+	:op2 (x12 / elect-01
+		:ARG0 x4))
+
+# ::id 32
+# ::snt president in 1986 in balloting that opposition parties, foreign
+(x1 / have-org-role-91
+	:ARG2 (p / president)
+	:time (x3 / date-entity
+		:year 1986)
+	:ARG1 (x8 / party
+		:ARG0-of (x7 / oppose-01)))
+
+# ::id 33
+# ::snt diplomats and journalists said was rigged.
+(x4 / say-01
+	:ARG1 (x2 / and
+		:op2 (x3 / journalist)
+		:op1 (xap0 / person
+			:ARG0-of (x1 / have-org-role-91
+				:ARG2 (d / diplomat))))
+	:ARG1 (x6 / rig))
+
+# ::id 34
+# ::snt He plans to seek another five-year term in elections scheduled
+(x2 / plan-01
+	:ARG0 (x1 / he)
+	:ARG1 (x4 / seek-01
+		:ARG0 x1
+		:ARG1 (x7 / term
+			:mod (x5 / another)
+			:mod (x6 / person
+				:name (n / name
+					:op1 "five-year")))
+		:ARG1 (x9 / elect-01
+			:ARG1-of (x10 / schedule-01))))
+
+# ::id 35
+# ::snt for next year. The opposition parties say they will boycott the
+(x8 / say-01
+	:ARG0 (x7 / party
+		:time (x3 / year
+			:mod (x2 / next))
+		:ARG0-of (x6 / oppose-01))
+	:ARG1 (x11 / boycott-01))
+
+# ::id 36
+# ::snt vote unless Ershad resigns and hands over power to a caretaker
+(x1 / vote-01
+	:ARG1 (x5 / and
+		:op1 (x4 / person
+			:ARG0-of (r / resign-01)
+			:ARG0 (x3 / person
+				:name (n / name
+					:op1 "Ershad"))
+			:ARG1 (x8 / power)
+			:prep-to (x11 / caretaker))
+		:op2 (x6 / hand)))
+
+# ::id 37
+# ::snt government.
+(x1 / government-organization
+	:ARG0-of (g / govern-01))
+

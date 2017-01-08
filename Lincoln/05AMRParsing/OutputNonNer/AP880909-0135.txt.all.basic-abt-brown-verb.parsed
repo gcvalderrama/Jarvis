@@ -1,0 +1,440 @@
+# ::id 1
+# ::snt The death rate from leukemia was nearly 60 percent
+(x7 / nearly
+	:domain (x3 / rate
+		:mod (x2 / die-01)
+		:ARG2 (x5 / disease
+			:name (n / name
+				:op1 "leukemia")))
+	:op1 (x9 / percentage-entity))
+
+# ::id 2
+# ::snt higher among smokers of more than 10 cigarettes a day than among
+(x1 / high
+	:compared-to (x8 / cigarette
+		:quant (x5 / more-than
+			:op1 10)))
+
+# ::id 3
+# ::snt non-smokers, according to a study published Friday.
+(xap1 / say-01
+	:ARG1 (x1 / non-smoker)
+	:ARG1 (x6 / study-01
+		:ARG1-of (x7 / publish-01
+			:time (xap0 / date-entity
+				:weekday (x8 / friday)))))
+
+# ::id 4
+# ::snt While no direct link has been established between smoking and
+(x10 / and
+	:op1 (x7 / establish-01
+		:polarity -
+		:ARG1 (x4 / link-01
+			:manner (x3 / direct))
+		:ARG0 (x9 / smoke-02)))
+
+# ::id 5
+# ::snt leukemia, research published in the British Medical Journal showed
+(x10 / show-01
+	:ARG0 (x1 / disease
+		:name (n / name
+			:op1 "leukemia"))
+	:ARG0 (x3 / research
+		:ARG1-of (x4 / publish-01
+			:location (x9 / journal
+				:mod (x7 / person
+					:mod (c / country
+						:name (n1 / name
+							:op1 "British")))
+				:mod (x8 / medical)))))
+
+# ::id 6
+# ::snt that the leukemia death rate among people who smoked fewer than 10
+(x5 / rate
+	:mod (x3 / disease
+		:name (n / name
+			:op1 "leukemia"))
+	:mod (x4 / die-01)
+	:ARG1-of (x9 / smoke-02
+		:ARG1 (x12 / person
+			:op 10
+			:null_edge (x10 / few))))
+
+# ::id 7
+# ::snt cigarettes a day was 34 percent higher than among non-smokers.
+(x7 / high
+	:domain (x1 / cigarette
+		:quant (x3 / temporal-quantity
+			:unit (d / day)))
+	:ARG2 (x6 / percentage-entity
+		:value 34)
+	:compared-to (x10 / non-smoker))
+
+# ::id 8
+# ::snt For smokers of 10 to 20 cigarettes a day it was 57 percent, and
+(x15 / and
+	:op2 (x7 / cigarette
+		:quant 20)
+	:op1 (x13 / percentage-entity
+		:value 57))
+
+# ::id 9
+# ::snt for smokers of 21 or more cigarettes 63 percent, the study showed.
+(x13 / show-01
+	:null_edge (x7 / cigarette
+		:quant (x5 / or
+			:op1 21
+			:op2 (x6 / more)
+			:op1 (x9 / percentage-entity
+				:value 63)))
+	:ARG0 (x12 / study))
+
+# ::id 10
+# ::snt "If the findings in our study represented a direct relationship
+(x8 / represent-01
+	:ARG0-of (x2 / cause-01)
+	:ARG0 (x4 / thing
+		:ARG1-of (f / find-01)
+		:part-of (x7 / study-01))
+	:ARG1 (x11 / relationship
+		:manner (x10 / direct)))
+
+# ::id 11
+# ::snt between smoking and leukemia, then it must follow that smoking is
+(x3 / and
+	:op2 (x4 / disease
+		:name (n / name
+			:op1 "leukemia")
+		:ARG0 (x2 / smoke-02))
+	:op1 (x9 / follow-02
+		:ARG1 (x11 / smoke-02)))
+
+# ::id 12
+# ::snt responsible for more cases of leukemia than all the hitherto
+(x1 / responsible-41
+	:ARG2 (x4 / case
+		:quant (x3 / more)
+		:mod (x6 / disease
+			:name (n / name
+				:op1 "leukemia"))
+		:mod (x10 / hitherto
+			:quant (x8 / all))))
+
+# ::id 13
+# ::snt established causes combined," said Dr. Leo Kinlen, director of the
+(x6 / say-01
+	:ARG1 (x3 / combine-01
+		:ARG1-of (x2 / cause-01
+			:null_edge (x1 / establish-01)))
+	:ARG0 (x8 / newspaper
+		:name (n / name
+			:op1 "Leo"
+			:op2 "Kinlen")
+		:ARG0-of (x11 / have-org-role-91
+			:ARG2 (d / director))))
+
+# ::id 14
+# ::snt Cancer Epidemiology Unit at the University of Edinburgh.
+(x3 / unit
+	:null_edge (x1 / cancer)
+	:null_edge (x2 / epidemiology)
+	:location (x6 / government-organization
+		:name (n / name
+			:op1 "University"
+			:op2 "of"
+			:op3 "Edinburgh")))
+
+# ::id 15
+# ::snt Kinlen conducted the study of 248,000 U.S. military veterans
+(x2 / conduct-01
+	:ARG0 (x1 / newspaper
+		:name (n / name
+			:op1 "Kinlen"))
+	:ARG1 (x4 / study-01
+		:consist-of (x9 / veteran
+			:mod (x8 / military
+				:mod (x7 / country
+					:name (n1 / name
+						:op1 "U.S."))))))
+
+# ::id 16
+# ::snt with E. Rogot, a statistician at the National Heart, Lung and Blood
+(x2 / name
+	:op1 "E."
+	:op2 "Rogot"
+	:ARG0-of (x6 / statistician
+		:time (x13 / and
+			:op1 (x10 / heart
+				:mod (x9 / nation))
+			:op2 (x12 / lung)
+			:op2 (x14 / blood))))
+
+# ::id 17
+# ::snt Institute of the National Institutes of Health in Bethesda,
+(x1 / institute
+	:poss (x4 / government-organization
+		:name (n / name
+			:op1 "National"
+			:op2 "Institutes"
+			:op3 "of"
+			:op4 "Health")
+		:location (x9 / city
+			:name (n1 / name
+				:op1 "Bethesda"))))
+
+# ::id 18
+# ::snt Maryland.
+(x1 / state
+	:name (n / name
+		:op1 "Maryland"))
+
+# ::id 19
+# ::snt They wrote that it was "the largest study of leukemia and
+(x2 / write-01
+	:ARG0 (x1 / they)
+	:ARG1 (x12 / and
+		:op1 (x9 / study-01
+			:mod (x8 / large
+				:degree (m / most)))
+		:op2 (x11 / disease
+			:name (n / name
+				:op1 "leukemia"))))
+
+# ::id 20
+# ::snt smoking habits to date (and) represents additional evidence that
+(x8 / represent-01
+	:ARG0 (x1 / smoke-02
+		:ARG1 (x2 / habit)
+		:null_edge (x3 / null_tag
+			:op1 (x4 / date-entity)))
+	:ARG1 (x6 / and)
+	:ARG1 (x10 / thing
+		:ARG0-of (e / evidence-01)
+		:mod (x9 / additional)
+		:null_edge (x11 / null_tag)))
+
+# ::id 21
+# ::snt leukemia is a smoking-related disease."
+(x5 / disease
+	:domain (x1 / disease
+		:name (n / name
+			:op1 "leukemia"))
+	:mod (x4 / smoking-related))
+
+# ::id 22
+# ::snt In an editorial in the prestigious weekly, Professor Nicholas
+(x3 / editorial
+	:mod (x6 / prestigious
+		:domain (x10 / person
+			:name (n / name
+				:op1 "Nicholas")
+			:ARG0-of (x9 / have-org-role-91
+				:ARG2 (p / professor)))))
+
+# ::id 23
+# ::snt Wald of St. Bartholemew's Hospital in London cautioned that no
+(x9 / caution-01
+	:ARG0 (x1 / organization
+		:name (n / name
+			:op1 "Wald")
+		:part-of (x3 / government-organization
+			:name (n1 / name
+				:op1 "St."
+				:op2 "Bartholemew"
+				:op3 "'s"
+				:op4 "Hospital")
+			:location (x8 / city
+				:name (n2 / name
+					:op1 "London"))))
+	:polarity -)
+
+# ::id 24
+# ::snt cause-and-effect relationship had been established.
+(x5 / establish-01
+	:ARG1 (x2 / relationship))
+
+# ::id 25
+# ::snt But he added: "Whatever the mechanism, the balance of evidence
+(x1 / contrast-01
+	:ARG2 (x3 / add-01
+		:ARG0 (x2 / he)
+		:ARG1 (x8 / mechanism
+			:mod (x6 / whatever)
+			:purpose (x11 / balance
+				:ARG1 (x13 / evidence-01)))))
+
+# ::id 26
+# ::snt suggests that smoking may cause leukemia."
+(x1 / suggest-01
+	:ARG1 (x4 / possible
+		:domain (x5 / cause-01
+			:ARG0 (x3 / smoke-02)
+			:ARG1 (x6 / disease
+				:name (n / name
+					:op1 "leukemia")))))
+
+# ::id 27
+# ::snt It should therefore be added to the World Heath Organization's
+(x2 / recommend-01
+	:ARG1 (x5 / add-02
+		:ARG2 (x10 / organization
+			:null_edge (x8 / null_tag))))
+
+# ::id 28
+# ::snt list of tobacco-related causes of death, he wrote.
+(x9 / write-01
+	:ARG1 (x1 / list-01
+		:consist-of (x4 / cause-01
+			:mod (x3 / tobacco-related)
+			:ARG1 (x6 / die-01))))
+
+# ::id 29
+# ::snt The study was conducted on data collected from 248,000 veterans
+(x6 / data
+	:mod (x2 / study)
+	:ARG1-of (x7 / collect-01
+		:ARG2 (x10 / veteran)))
+
+# ::id 30
+# ::snt between 1954 and 1969, the researchers wrote. During that period
+(x8 / write-01
+	:ARG1 (x1 / between
+		:op1 (x2 / date-entity
+			:year 1954
+			:null_edge (x3 / null_tag
+				:op2 (x4 / date-entity
+					:year 1969))))
+	:ARG0 (x7 / person
+		:ARG0-of (r / research-01))
+	:time (x10 / during))
+
+# ::id 31
+# ::snt 723 died of leukemia. Of these 330 were cigarette smokers, 185 were
+(x2 / die-01
+	:ARG1 (x1 / 723)
+	:ARG1 (x4 / disease
+		:name (n / name
+			:op1 "leukemia"))
+	:ARG1 (x10 / cigarette
+		:quant (x8 / 330)))
+
+# ::id 32
+# ::snt ex-smokers, 46 smoked cigars or and 162 were non-smokers.
+(x6 / or
+	:op1 (x1 / ex-smoker
+		:null_edge (x7 / and))
+	:op2 (x5 / cigar
+		:quant 46
+		:ARG1-of (x4 / smoke-02)))
+
+# ::id 33
+# ::snt The study found that in some types of leukemia, the death rate
+(x3 / find-02
+	:ARG0 (x2 / study)
+	:ARG1 (x13 / rate
+		:mod (x9 / disease
+			:name (n / name
+				:op1 "leukemia")
+			:mod (x7 / type
+				:quant (x6 / some)))
+		:mod (x12 / die-01)))
+
+# ::id 34
+# ::snt among smokers was sharply higher than the average.
+(x5 / high
+	:compared-to (x2 / person
+		:ARG0-of (s / smoke-02))
+	:manner (x4 / sharp)
+	:compared-to (x8 / average))
+
+# ::id 35
+# ::snt Thus for monocytic and myeloid leukemias, the rate among smokers
+(x9 / rate
+	:ARG2 (x11 / person
+		:ARG0-of (s / smoke-02)
+		:ARG1 (x6 / disease
+			:name (n / name
+				:op1 "leukemias")
+			:ARG1 (x4 / and
+				:op1 (x3 / monocytic)
+				:op2 (x5 / myeloid)))))
+
+# ::id 36
+# ::snt of more than 20 cigarettes a day was 93 percent higher, compared
+(x5 / cigarette
+	:quant (x2 / more-than
+		:op1 20)
+	:mod (x11 / high
+		:quant (x10 / percentage-entity
+			:value 93)))
+
+# ::id 37
+# ::snt with 48 percent for lymphatic leukemias.
+(x6 / disease
+	:name (n / name
+		:op1 "leukemias")
+	:quant (x3 / percentage-entity
+		:value 48)
+	:mod (x5 / lymphatic))
+
+# ::id 38
+# ::snt For smokers of 10 to 20 cigarettes a day the rate of death from
+(x11 / rate
+	:poss (x2 / person
+		:ARG0-of (s / smoke-02))
+	:quant 20
+	:mod (x13 / die-01))
+
+# ::id 39
+# ::snt lymphatic leukemia was 76 percent higher, and for one to 10
+(x8 / and
+	:op1 (x6 / high
+		:domain (x2 / disease
+			:name (n / name
+				:op1 "leukemia")
+			:mod (x1 / lymphatic))
+		:ARG2 (x5 / percentage-entity
+			:null_edge (x4 / null_tag)))
+	:op2 10)
+
+# ::id 40
+# ::snt cigarettes, 40 percent higher.
+(x5 / high
+	:null_edge (x1 / cigarette)
+	:ARG2 (x4 / percentage-entity
+		:value 40))
+
+# ::id 41
+# ::snt When the data was broken down into smokers and ex-smokers, it
+(x5 / break-01
+	:ARG1 (x3 / data)
+	:ARG1 (x9 / and
+		:op1 (x8 / person
+			:ARG0-of (s / smoke-02))
+		:op2 (x10 / ex-smoker)))
+
+# ::id 42
+# ::snt suggested that ex-smokers also are significantly more at risk. The
+(x1 / suggest-01
+	:ARG1 (x9 / risk-01
+		:mod (x7 / more
+			:mod (x4 / also)
+			:degree (x6 / significant))))
+
+# ::id 43
+# ::snt death rate among smokers was 53 percent higher, and among
+(x10 / and
+	:op1 (x8 / high
+		:domain (x2 / rate
+			:mod (x1 / die-01)
+			:ARG1 (x4 / person
+				:ARG0-of (s / smoke-02)))
+		:ARG2 (x7 / percentage-entity
+			:value 53)))
+
+# ::id 44
+# ::snt ex-smokers 39 percent.
+(x1 / ex-smoker
+	:ARG1 (x3 / percentage-entity
+		:value 39))
+

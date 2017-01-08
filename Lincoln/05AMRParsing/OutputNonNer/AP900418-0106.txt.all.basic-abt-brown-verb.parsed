@@ -1,0 +1,340 @@
+# ::id 1
+# ::snt An experimental cancer drug that works after a
+(x4 / drug
+	:mod (x2 / experiment-01)
+	:mod (x3 / cancer)
+	:ARG0-of (x6 / work
+		:time (x7 / after)))
+
+# ::id 2
+# ::snt single round of treatment appears to be the most effective medicine
+(x5 / appear-02
+	:ARG1 (x2 / round
+		:mod (x1 / single)
+		:consist-of (x4 / treat-03))
+	:ARG1 (x11 / medicine
+		:mod (x10 / effective
+			:degree (x9 / most))))
+
+# ::id 3
+# ::snt yet for a rare form of leukemia, according to a study.
+(x1 / yet
+	:part-of (x12 / study-01
+		:ARG1 (x5 / form
+			:mod (x4 / rare)
+			:mod (x7 / disease
+				:name (n / name
+					:op1 "leukemia")))))
+
+# ::id 4
+# ::snt The drug _ called 2-chlorodeoxyadenosine, or 2-CdA _ has
+(x7 / or
+	:op1 (x3 / _
+		:domain (x2 / drug)
+		:ARG1-of (x4 / call-01
+			:ARG2 (x5 / 2-chlorodeoxyadenosine)))
+	:op2 (x10 / have-03))
+
+# ::id 5
+# ::snt produced complete remissions in almost all hairy cell leukemia
+(x1 / produce-01
+	:ARG1 (x3 / remission
+		:mod (x2 / complete))
+	:location (x9 / disease
+		:name (n / name
+			:op1 "leukemia")
+		:quant (x6 / all
+			:degree (x5 / almost))
+		:mod (x7 / hairy)
+		:mod (x8 / cell)))
+
+# ::id 6
+# ::snt patients treated, and none has relapsed so far.
+(x4 / and
+	:op1 (x2 / treat-01
+		:ARG0 (x1 / patient))
+	:op2 (x7 / relapse-01
+		:ARG0 x1
+		:ARG0 (x5 / none)))
+
+# ::id 7
+# ::snt Researchers who developed and tested the medicine report that it
+(x8 / report-01
+	:ARG0 (x1 / person
+		:ARG0-of (r / research-01)
+		:ARG1-of (x3 / develop-02
+			:ARG1 (x7 / medicine
+				:ARG1-of (x5 / test-01))))
+	:time (x9 / that))
+
+# ::id 8
+# ::snt "may well be the drug of choice in the treatment of hairy cell
+(x2 / possible
+	:domain (x6 / drug
+		:ARG1-of (x11 / treat-03
+			:ARG1 (x14 / cell
+				:mod (x13 / hairy)))))
+
+# ::id 9
+# ::snt leukemia."
+(x1 / disease
+	:name (n / name
+		:op1 "leukemia"))
+
+# ::id 10
+# ::snt The drug also has been used successfully against chronic
+(x6 / use-01
+	:ARG1 (x2 / drug)
+	:mod (x3 / also)
+	:ARG1-of (x7 / succeed-01)
+	:ARG2 (x9 / chronic))
+
+# ::id 11
+# ::snt lymphocytic leukemia. It, like hairy cell leukemia, is a cancer of
+(x2 / disease
+	:name (n / name
+		:op1 "leukemia")
+	:mod (x1 / lymphocytic)
+	:ARG1 (x13 / cancer
+		:prep-within (x9 / disease
+			:name (n1 / name
+				:op1 "leukemia")
+			:mod (x7 / hairy)
+			:mod (x8 / cell))))
+
+# ::id 12
+# ::snt the white blood cells, which produce disease-fighting antibodies.
+(x4 / cell
+	:null_edge (x2 / white)
+	:mod (x3 / blood)
+	:ARG0-of (x7 / produce-01
+		:ARG1 (x9 / antibody
+			:mod (x8 / disease-fighting))))
+
+# ::id 13
+# ::snt The latest study, published in Thursday's New England Journal of
+(x3 / study-01
+	:time (x2 / late
+		:degree (m / most))
+	:ARG1-of (x5 / publish-01
+		:medium (x11 / journal
+			:null_edge (x9 / null_tag)
+			:poss (x10 / country
+				:name (n / name
+					:op1 "England"))
+			:time (xap0 / date-entity
+				:weekday (x7 / thursday)))))
+
+# ::id 14
+# ::snt Medicine, was directed by Dr. Lawrence D. Piro of the Scripps
+(x4 / direct-01
+	:ARG1 (x1 / medicine)
+	:ARG2 (x7 / name
+		:op1 "Lawrence"
+		:op2 "D."
+		:op3 "Piro"
+		:ARG0-of (x12 / scripps)))
+
+# ::id 15
+# ::snt Clinic and Research Foundation in La Jolla, Calif. Scripps recently
+(x1 / government-organization
+	:name (n / name
+		:op1 "Clinic"
+		:op2 "and"
+		:op3 "Research"
+		:op4 "Foundation"
+		:op5 "in"
+		:op6 "La"
+		:op7 "Jolla"
+		:op8 ","
+		:op9 "Calif."
+		:op10 "."
+		:op11 "Scripps")
+	:location (x7 / country
+		:name (n1 / name
+			:op1 "Jolla")
+		:null_edge (x6 / country
+			:name (n2 / name
+				:op1 "La"))
+		:null_edge (x9 / country
+			:name (n3 / name
+				:op1 "Calif.")))
+	:time (x12 / recent))
+
+# ::id 16
+# ::snt made an agreement with Johnson & Johnson's Ortho Pharmaceuticals to
+(x3 / agree-01
+	:ARG1 (x5 / government-organization
+		:name (n / name
+			:op1 "Johnson"
+			:op2 "&"
+			:op3 "Johnson"
+			:op4 "'s"
+			:op5 "Ortho"
+			:op6 "Pharmaceuticals")))
+
+# ::id 17
+# ::snt produce and distribute the drug once it's approved by the U.S. Food
+(x2 / and
+	:op1 (x1 / produce-01
+		:ARG1 (x5 / drug)
+		:condition (x9 / approve-01
+			:ARG0 (x13 / food)))
+	:op3 (x3 / distribute-01))
+
+# ::id 18
+# ::snt and Drug Administration.
+(x1 / and
+	:op1 (x3 / government-organization
+		:name (n / name
+			:op1 "Administration")
+		:null_edge (x2 / null_tag)))
+
+# ::id 19
+# ::snt In the published work, doctors gave the drug to 12 patients as
+(x4 / work-01
+	:ARG1-of (x3 / publish-01)
+	:ARG0 (x6 / doctor)
+	:ARG1 (x9 / drug)
+	:ARG2 (x12 / patient
+		:quant 12))
+
+# ::id 20
+# ::snt far back as four years ago. In 11, the disease disappeared and they
+(x2 / back-01
+	:degree (x1 / far)
+	:null_edge (x14 / and
+		:op1 (x13 / disappear-01
+			:duration 11
+			:ARG1 (x12 / disease)
+			:time (xap0 / before
+				:quant (x5 / temporal-quantity
+					:unit (y / year)
+					:null_edge (x4 / null_tag))))))
+
+# ::id 21
+# ::snt remain disease free.
+(x1 / remain-01
+	:ARG3 (x3 / free-01
+		:ARG2 (x2 / disease)))
+
+# ::id 22
+# ::snt In all, the Scripps doctors have treated 24 patients with almost
+(x8 / treat-01
+	:ARG0 (x6 / doctor
+		:mod (x5 / organization
+			:name (n / name
+				:op1 "Scripps")))
+	:ARG1 (x10 / patient
+		:quant 24)
+	:ARG2 (x12 / almost))
+
+# ::id 23
+# ::snt complete success. However, they caution that longer follow up will
+(x7 / caution-01
+	:ARG1 (x2 / succeed-01
+		:mod (x1 / complete))
+	:ARG0 (x6 / they)
+	:ARG1 (x12 / will
+		:null_edge (x10 / follow-02)))
+
+# ::id 24
+# ::snt be necessary before they can be sure they have actually cured the
+(x2 / necessary
+	:time (x3 / before
+		:op1 (x5 / possible
+			:domain (x7 / sure)
+			:domain (xap0 / and
+				:op2 (x11 / cure-01
+					:mod (x10 / actual))))))
+
+# ::id 25
+# ::snt disease.
+(x1 / disease)
+
+# ::id 26
+# ::snt Two other treatments for hairy cell leukemia have been developed
+(x10 / develop-02
+	:ARG1 (x3 / treat-03
+		:quant 2
+		:mod (x2 / other)
+		:purpose (x7 / disease
+			:name (n / name
+				:op1 "leukemia")
+			:mod (x5 / hairy)
+			:mod (x6 / cell))))
+
+# ::id 27
+# ::snt in recent years. They are interferon and deoxycoformycin, a drug
+(x8 / and
+	:op1 (x7 / interferon
+		:duration (x3 / temporal-quantity
+			:unit (y / year)
+			:mod (x2 / recent))
+		:domain (x5 / they))
+	:op2 (x9 / deoxycoformycin))
+
+# ::id 28
+# ::snt that is similar to 2-CdA. However, interferon is less effective,
+(x3 / resemble-01
+	:op (s / similar)
+	:ARG1 (x1 / that)
+	:ARG2 (x5 / 2-cda)
+	:null_edge (x12 / effective
+		:domain (x9 / interferon)
+		:degree (x11 / less)))
+
+# ::id 29
+# ::snt and both of those treatments produce serious side effects.
+(x1 / and
+	:op1 (x6 / produce-01
+		:ARG1 (x5 / treat-03)
+		:ARG1 (x9 / effect-01
+			:mod (x7 / serious)
+			:mod (x8 / side))))
+
+# ::id 30
+# ::snt By contrast, the only unwanted effect of 2-CdA was a few days of
+(x7 / effect-01
+	:beneficiary (x2 / contrast-01)
+	:mod (x5 / only)
+	:mod (x6 / unwanted)
+	:ARG1 (x9 / 2-cda)
+	:ARG1 (x12 / few
+		:op1 (x13 / temporal-quantity
+			:unit (d / day)
+			:ARG1-of (x14 / include-91))))
+
+# ::id 31
+# ::snt 
+(x4 / experience-01
+	:ARG0 (x3 / patients
+		:null_edge (x1 / fever))
+	:ARG1 (x12 / or
+		:op1 (x6 / nausea
+			:polarity -
+			:mod (x13 / other))
+		:op2 (x9 / loss
+			:ARG1 (x8 / hair))
+		:op2 (x11 / rash)))
+
+# ::id 32
+# ::snt symptoms typical of cancer therapy. Also unlike other treatments,
+(x1 / symptom
+	:mod (x2 / typify-01
+		:domain (x5 / therapy
+			:mod (x4 / cancer)
+			:ARG3-of (x10 / treat-03
+				:mod (x9 / other)))))
+
+# ::id 33
+# ::snt this one appears to work after a single seven-day course of therapy.
+(x3 / appear-02
+	:ARG1 (x2 / one
+		:mod (x1 / this))
+	:ARG1 (x5 / work-01
+		:ARG0 x2
+		:time (x6 / after
+			:op1 (x10 / course-01
+				:ARG1 (x12 / therapy)))))
+

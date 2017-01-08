@@ -1,0 +1,539 @@
+# ::id 1
+# ::snt Cloudy weather Saturday threatened to
+(x4 / threaten-01
+	:ARG0 (x2 / weather
+		:mod (x1 / cloudy))
+	:ARG1 (x5 / aircraft-type
+		:name (n / name
+			:op1 "to"))
+	:time (xap0 / date-entity
+		:weekday (x3 / saturday)))
+
+# ::id 2
+# ::snt mar the show for thousands of Finnish and foreign skygazers hoping
+(x3 / show-01
+	:ARG1 (x1 / person
+		:name (n / name
+			:op1 "mar"))
+	:purpose (x11 / hope-01
+		:ARG1 (x10 / skygazer
+			:ARG1 (x8 / and
+				:op1 (x7 / organization
+					:name (n1 / name
+						:op1 "Finnish"))
+				:op2 (x9 / foreign)))))
+
+# ::id 3
+# ::snt to glimpse a total solar eclipse in this land of the midnight sun.
+(x6 / eclipse-01
+	:ARG1 (x2 / glimpse)
+	:ARG2-of (x4 / total-01)
+	:ARG1 (x5 / solar
+		:location (x9 / land
+			:mod (x8 / this)
+			:op1 (x13 / sun
+				:mod (x12 / midnight)))))
+
+# ::id 4
+# ::snt The weather forecast took a turn for the worse in the evening,
+(x3 / forecast-01
+	:ARG1 (x2 / weather)
+	:ARG1 (x6 / turn-14
+		:ARG1 (x9 / worsen-01))
+	:time (x12 / evening))
+
+# ::id 5
+# ::snt when the Finnish Meteorological Services predicted cloudy weather
+(x6 / predict-01
+	:ARG0 (x4 / government-organization
+		:name (n / name
+			:op1 "Meteorological"
+			:op2 "Services")
+		:mod (x3 / finnish))
+	:ARG1 (x8 / weather
+		:mod (x7 / cloudy)))
+
+# ::id 6
+# ::snt with a chance of showers for eastern Finland on Sunday.
+(x3 / chance
+	:ARG1 (x5 / shower
+		:duration (x7 / east)
+		:time (xap0 / date-entity
+			:weekday (x10 / sunday))))
+
+# ::id 7
+# ::snt In the eastern town of Joensuu, a television news broadcast late
+(x11 / broadcast-01
+	:location (x4 / town
+		:mod (x3 / east)
+		:part-of (x6 / country
+			:name (n / name
+				:op1 "Joensuu")))
+	:ARG0 (x10 / news
+		:mod (x9 / television))
+	:time (x12 / late))
+
+# ::id 8
+# ::snt Saturday showed it was already cloudy there with a light drizzle
+(x2 / show-01
+	:ARG1 (x6 / cloudy
+		:mod (x5 / already)
+		:prep-with (x11 / drizzle
+			:mod (x10 / light)))
+	:time (xap0 / date-entity
+		:weekday (x1 / saturday)))
+
+# ::id 9
+# ::snt falling.
+(x1 / fall-03)
+
+# ::id 10
+# ::snt The solar eclipse in Finland starts at 4:03 a.m. Sunday (9:03
+(x6 / start-01
+	:ARG1 (x3 / eclipse-01
+		:mod (x2 / solar
+			:location (x5 / country
+				:name (n / name
+					:op1 "Finland"))))
+	:time (xap0 / date-entity
+		:time (x12 / date-entity)
+		:ARG0-of (xap1 / date-entity
+			:weekday (x10 / sunday))))
+
+# ::id 11
+# ::snt p.m. EDT Saturday). At that time, the moon will begin gradually
+(xap0 / and
+	:weekday (x3 / saturday)
+	:op3 (x11 / moon
+		:ARG1-of (x13 / begin-01
+			:null_edge (x8 / time
+				:mod (x7 / that)
+				:ARG1 xap0)
+			:manner (x14 / gradual))))
+
+# ::id 12
+# ::snt moving between the Earth and the sun.
+(x1 / move-01
+	:ARG0 (x5 / and
+		:op1 (x4 / planet
+			:name (n / name
+				:op1 "Earth"))
+		:op2 (x7 / sun)))
+
+# ::id 13
+# ::snt The total eclipse begins at 4:52 a.m. in Helsinki and will last
+(x10 / and
+	:op1 (x4 / begin-01
+		:ARG1 (x3 / eclipse-01
+			:ARG2-of (x2 / total-01))
+		:null_edge (x6 / include-91)
+		:location (x9 / city
+			:name (n / name
+				:op1 "Helsinki")))
+	:op2 (x12 / last-01
+		:ARG1 x3))
+
+# ::id 14
+# ::snt 83 seconds. After the total phase of the eclipse, the moon will
+(x13 / moon
+	:time (x4 / after
+		:op1 (x2 / temporal-quantity
+			:unit (s / second)
+			:quant 83)
+		:op1 (x7 / phase
+			:ARG2-of (x6 / total-01)
+			:part-of (x10 / eclipse-01))))
+
+# ::id 15
+# ::snt move away, uncovering more and more of the sun. The eclipse ends at
+(x1 / move-01
+	:direction (x2 / away)
+	:ARG1 (x4 / uncover-01
+		:ARG1 (x6 / and
+			:op1 (x5 / more
+				:op1 (x10 / sun))
+			:op2 (x7 / more))
+		:ARG1 (x14 / end-01
+			:ARG1 (x13 / eclipse-01))))
+
+# ::id 16
+# ::snt 5:45 a.m. in Helsinki.
+(x1 / include-91
+	:location (x4 / city
+		:name (n / name
+			:op1 "Helsinki")))
+
+# ::id 17
+# ::snt About 10,000 people _ including 3,000 foreigners _ have
+(x9 / have-03
+	:ARG1 (x5 / include-91
+		:ARG1 (x1 / about)
+		:ARG1 (x7 / foreigner
+			:quant (x6 / 3,000)))
+	:manner (x8 / _))
+
+# ::id 18
+# ::snt converged on Joensuu, about 50 miles from the Soviet border. There
+(x1 / converge-01
+	:location (x3 / country
+		:name (n / name
+			:op1 "Joensuu")
+		:null_edge (x7 / distance-quantity
+			:unit (m / mile)
+			:null_edge (x5 / about
+				:null_edge 50
+				:op1 (x11 / border-01
+					:mod (xap1 / country
+						:ARG0-of (xap0 / name
+							:op1 "Soviet")))))))
+
+# ::id 19
+# ::snt conditions there are considered especially good for viewing the
+(x4 / consider-01
+	:ARG1 (x1 / condition
+		:location (x2 / there))
+	:ARG1 (x6 / good
+		:mod (x5 / especially)
+		:ARG2 (x8 / view-01)))
+
+# ::id 20
+# ::snt eclipse _ weather permitting.
+(x4 / permit-01
+	:ARG0 (x3 / weather
+		:mod (x1 / eclipse-01)
+		:mod (x2 / _)))
+
+# ::id 21
+# ::snt In Helsinki, the total eclipse phase will occur 16 minutes after
+(x7 / phase
+	:location (x2 / city
+		:name (n / name
+			:op1 "Helsinki"))
+	:ARG2-of (x5 / total-01)
+	:mod (x6 / eclipse-01)
+	:duration (x11 / temporal-quantity
+		:unit (m / minute)
+		:quant 16)
+	:time (x12 / after))
+
+# ::id 22
+# ::snt sunrise, when the sun is only 1 degree above the horizon. At
+(x1 / date-entity
+	:scale (x9 / degree
+		:domain (x5 / sun
+			:null_edge (x7 / only
+				:null_edge 1))
+		:location (x10 / above
+			:op1 (x12 / horizon))))
+
+# ::id 23
+# ::snt Joensuu, 310 miles northeast of Helsinki, the sun will be 5 degrees
+(x10 / sun
+	:location (x1 / country
+		:name (n / name
+			:op1 "Joensuu"))
+	:location (x7 / city
+		:name (n1 / name
+			:op1 "Helsinki")
+		:mod (x5 / northeast))
+	:quant 5)
+
+# ::id 24
+# ::snt above the horizon in the total phase at a better angle for watchers.
+(x1 / above
+	:op1 (x3 / horizon
+		:mod (x7 / phase
+			:ARG2-of (x6 / total-01)
+			:part-of (x11 / angle
+				:mod (x10 / good)
+				:purpose (x13 / watcher)))))
+
+# ::id 25
+# ::snt The sun rises unusually early during summer in the extreme
+(x3 / rise-01
+	:ARG1 (x2 / sun)
+	:time (x5 / early
+		:ARG1 x2
+		:mod (x4 / usual
+			:polarity -))
+	:ARG1 (x10 / extreme
+		:time (x7 / summer)))
+
+# ::id 26
+# ::snt northern latitudes where Finland is located. The sun comes up
+(x2 / latitudes
+	:name (x1 / name
+		:op1 "northern")
+	:ARG1-of (x6 / locate-01
+		:ARG1 (x4 / country
+			:name (n / name
+				:op1 "Finland"))
+		:null_edge (x10 / come-01
+			:ARG1 (x9 / sun))))
+
+# ::id 27
+# ::snt unusually late during winter.
+(x2 / late
+	:degree (x1 / usual
+		:polarity -)
+	:time (x4 / winter))
+
+# ::id 28
+# ::snt Ten months ago, Joensuu hired an "eclipse secretary" to handle
+(x6 / hire-01
+	:time (x2 / temporal-quantity
+		:unit (m / month)
+		:quant (x1 / date-entity))
+	:ARG0 (x5 / person
+		:name (n / name
+			:op1 "Joensuu"))
+	:ARG1 (x10 / have-org-role-91
+		:ARG2 (s / secretary)
+		:mod (x9 / eclipse-01
+			:ARG1 (x13 / handle-01))))
+
+# ::id 29
+# ::snt arrangements for the expected influx of visitors.
+(x1 / arrange-01
+	:ARG1 (x5 / flux-01
+		:ARG1-of (x4 / expect-01)
+		:ARG0 (x7 / person
+			:ARG0-of (v / visit-01))))
+
+# ::id 30
+# ::snt But that official, Marjut Cadia, said she had underestimated the
+(x8 / say-01
+	:null_edge (x1 / contrast-01)
+	:ARG1 (x11 / underestimate-01)
+	:ARG0 (xap0 / person
+		:mod (x2 / that)
+		:ARG0-of (x3 / have-org-role-91
+			:ARG2 (o / official)
+			:name (x5 / name
+				:op1 "Marjut"
+				:op2 "Cadia"))))
+
+# ::id 31
+# ::snt interest in the event.
+(x1 / interest-01
+	:ARG2 (x4 / event))
+
+# ::id 32
+# ::snt "We completely sold out the 10,000 special eyeglasses we made
+(x4 / sell-01
+	:ARG0 (x2 / we)
+	:manner (x3 / complete)
+	:ARG1 (x9 / eyeglass
+		:mod (x8 / special)
+		:ARG0-of (x11 / make-02
+			:ARG0 (x10 / we))))
+
+# ::id 33
+# ::snt for this event, and our extra stock is finished too," she said in
+(x15 / say-01
+	:ARG1 (x5 / and
+		:op2 (x3 / event
+			:mod (x2 / this))
+		:op2 (x10 / finish-01
+			:ARG1 (x8 / stock
+				:mod (x7 / extra))
+			:degree (x11 / too)))
+	:ARG0 (x14 / she))
+
+# ::id 34
+# ::snt a television interview Saturday.
+(x3 / interview-01
+	:ARG0 (x2 / television)
+	:time (xap0 / date-entity
+		:weekday (x4 / saturday)))
+
+# ::id 35
+# ::snt During the past week, newspapers, television and radio have been
+(x9 / and
+	:time (x4 / week
+		:mod (x3 / past))
+	:op1 (x6 / newspaper)
+	:op2 (x8 / television)
+	:op2 (x10 / radio))
+
+# ::id 36
+# ::snt full of information about solar eclipses, as well as advice for
+(x1 / full
+	:ARG1 (x3 / information
+		:topic (x11 / advise-01
+			:manner (x6 / eclipse-01
+				:mod (x5 / solar)))))
+
+# ::id 37
+# ::snt spectators not to stare directly into the sun.
+(x4 / stare-01
+	:ARG0 (x1 / spectator)
+	:manner (x5 / direct)
+	:null_edge (x8 / sun))
+
+# ::id 38
+# ::snt Some eclipse viewers won't have to worry about the clouds,
+(x6 / have-03
+	:ARG1 (x2 / eclipse-01
+		:ARG0 (x3 / viewer
+			:quant (x1 / some)))
+	:ARG1 (x8 / worry-01
+		:ARG1 (x11 / cloud)))
+
+# ::id 39
+# ::snt because they will be above them. Finnair, the national airline, has
+(x14 / have-03
+	:ARG1-of (x1 / cause-01)
+	:ARG0 (x8 / organization
+		:name (n / name
+			:op1 "Finnair")
+		:null_edge (x12 / airline
+			:mod (x11 / nation))))
+
+# ::id 40
+# ::snt arranged a dozen special flights for eclipse watchers, and private
+(x1 / arrange-01
+	:ARG1 (x5 / fly-01
+		:op (f / flight)
+		:mod (x4 / special))
+	:ARG1 (x10 / and
+		:op1 (x7 / eclipse-01)
+		:op1 (x8 / watcher)
+		:op2 (x11 / private)))
+
+# ::id 41
+# ::snt companies with small planes will provide more.
+(x6 / provide-01
+	:ARG0 (x1 / company
+		:topic (x4 / plane
+			:mod (x3 / small)))
+	:degree (x7 / more))
+
+# ::id 42
+# ::snt The eclipse will be total in an arc about 125 miles wide from
+(x5 / total-01
+	:domain (x2 / eclipse-01)
+	:ARG2 (x8 / arc)
+	:null_edge (x12 / wide
+		:quant (x11 / distance-quantity
+			:unit (m / mile)
+			:null_edge (x9 / about
+				:null_edge 125))))
+
+# ::id 43
+# ::snt the northern Baltic Sea and southeast Finland, across the Kola
+(x5 / and
+	:op1 (x2 / name
+		:op1 "northern"
+		:op2 "Baltic"
+		:op3 "Sea")
+	:op2 (x7 / country
+		:name (n / name
+			:op1 "Finland")
+		:mod (x6 / southeast)
+		:location (x9 / across
+			:op1 (x11 / country
+				:name (n1 / name
+					:op1 "Kola")))))
+
+# ::id 44
+# ::snt Peninsula and northeast Soviet Union, to the Aleutian Islands near
+(x2 / and
+	:op1 (x1 / peninsula)
+	:op2 (x3 / northeast)
+	:op1 (x4 / country
+		:name (n / name
+			:op1 "Soviet"
+			:op2 "Union")
+		:location (x10 / island
+			:mod (x9 / country
+				:name (n1 / name
+					:op1 "Aleutian")))
+		:location (x11 / near)))
+
+# ::id 45
+# ::snt Alaska.
+(x1 / state
+	:name (n / name
+		:op1 "Alaska"))
+
+# ::id 46
+# ::snt Scientists will conduct several experiments during the eclipse,
+(x3 / conduct-01
+	:ARG0 (x1 / have-org-role-91
+		:ARG2 (s / scientist))
+	:ARG1 (x5 / experiment-01
+		:quant (x4 / several))
+	:time (x6 / during))
+
+# ::id 47
+# ::snt including gravity test measurements of the radius of the sun.
+(x1 / include-91
+	:ARG1 (x4 / measurement
+		:ARG1-of (x3 / test-01
+			:mod (x2 / gravity))
+		:part-of (x7 / radius
+			:poss (x10 / sun))))
+
+# ::id 48
+# ::snt However, scientific interest in this eclipse has been less than in
+(x10 / less
+	:domain (x4 / interest-01
+		:manner (x3 / science)))
+
+# ::id 49
+# ::snt longer eclipses, such as the seven-minute eclipse seen from
+(x2 / eclipse-01
+	:ARG1 (x8 / eclipse-01
+		:ARG1-of (x9 / see-01)))
+
+# ::id 50
+# ::snt northern Kenya on June 30, 1973.
+(x1 / northern
+	:mod (x2 / country
+		:name (n / name
+			:op1 "Kenya")
+		:time (x4 / date-entity
+			:year 1973)))
+
+# ::id 51
+# ::snt Seppo Linnaluoto of the Ursa Astronomical Association said the
+(x8 / say-01
+	:ARG0 (x1 / newspaper
+		:name (n / name
+			:op1 "Seppo"
+			:op2 "Linnaluoto")
+		:ARG0-of (x5 / government-organization
+			:name (n1 / name
+				:op1 "Ursa"
+				:op2 "Astronomical"
+				:op3 "Association"))))
+
+# ::id 52
+# ::snt best place for observations of this eclipse will be the northeast
+(x / xconcept
+	:x (x4 / observation
+		:mod (x1 / good
+			:degree (m / most))
+		:ARG1 (x7 / eclipse-01
+			:mod (x6 / this)))
+	:x (x11 / northeast))
+
+# ::id 53
+# ::snt Soviet Union.
+(x1 / country
+	:name (n / name
+		:op1 "Soviet"
+		:op2 "Union"))
+
+# ::id 54
+# ::snt The last total eclipse to be seen in Finland occurred in 1945.
+(x4 / eclipse-01
+	:ARG1-of (x7 / see-01
+		:mod (x2 / last)
+		:ARG0 (x9 / country
+			:name (n / name
+				:op1 "Finland")))
+	:time (x12 / date-entity
+		:year 1945))
+

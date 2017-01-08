@@ -1,0 +1,551 @@
+# ::id 1
+# ::snt U.S. military experts left the Persian
+(x4 / leave-01
+	:ARG1 (x6 / country
+		:name (n / name
+			:op1 "Persian"))
+	:ARG0 (xap0 / person
+		:ARG0 (x2 / military
+			:mod (x1 / country
+				:name (n1 / name
+					:op1 "U.S.")))
+		:ARG0-of (x3 / person
+			:ARG1-of (e / expert-41))))
+
+# ::id 2
+# ::snt Gulf on Thursday after a 3{-week investigation of the destruction
+(x1 / world-region
+	:name (n / name
+		:op1 "Gulf")
+	:time (x4 / after
+		:op1 (x10 / investigate-01
+			:null_edge 3
+			:ARG1 (x13 / destroy-01)))
+	:time (xap0 / date-entity
+		:weekday (x3 / thursday)))
+
+# ::id 3
+# ::snt of an Iranian airliner by an American warship, Navy officials said.
+(x12 / say-01
+	:ARG1 (x8 / warship
+		:mod (x3 / country
+			:name (n / name
+				:op1 "Iran"))
+		:mod (x7 / country
+			:name (n1 / name
+				:op1 "American")))
+	:ARG0 (xap0 / person
+		:ARG0-of (x11 / have-org-role-91
+			:ARG2 (o / official)
+			:ARG1 (x10 / military
+				:name (n2 / name
+					:op1 "Navy")))))
+
+# ::id 4
+# ::snt The team led by Rear Adm. William M. Fogarty arrived July 5, two
+(x2 / team
+	:ARG1-of (x3 / lead-02
+		:ARG0 (x9 / person
+			:name (n / name
+				:op1 "Fogarty")
+			:null_edge (x5 / rear)
+			:null_edge (x6 / adm.)
+			:null_edge (x7 / person
+				:name (n1 / name
+					:op1 "William"))
+			:null_edge (x8 / null_tag)
+			:ARG1-of (x10 / arrive-01
+				:time (x11 / name
+					:op1 "July"
+					:op2 "5"
+					:op3 ","
+					:op4 "two")))))
+
+# ::id 5
+# ::snt days after missiles fired by the cruiser USS Vincennes hit an Iran
+(x1 / temporal-quantity
+	:unit (d / day)
+	:time-of (x10 / hit-01
+		:time (x2 / after)
+		:ARG1 (x3 / missile
+			:ARG1-of (x4 / fire-01
+				:ARG0 (x9 / vincennes
+					:null_edge (x8 / null_tag
+						:mod (x7 / cruiser)))))
+		:ARG1 (x12 / country
+			:name (n / name
+				:op1 "Iran"))))
+
+# ::id 6
+# ::snt 
+(x3 / fly-01
+	:ARG1 (x1 / air)
+	:destination (x6 / strait
+		:null_edge (x8 / country
+			:name (n / name
+				:op1 "Hormuz")))
+	:condition (x10 / person
+		:ARG1-of (k / kill-01)
+		:ARG0 x1
+		:quant (x11 / all
+			:quant (x12 / 290))))
+
+# ::id 7
+# ::snt aboard.
+(x1 / aboard)
+
+# ::id 8
+# ::snt Pentagon officials said officers of the Vincennes mistook the
+(x3 / say-01
+	:ARG1 (x8 / mistake-01
+		:ARG0 (x4 / have-org-role-91
+			:ARG2 (o / officer)
+			:ARG1 (x7 / country
+				:name (n / name
+					:op1 "Vincennes"))))
+	:ARG0 (xap0 / person
+		:ARG0-of (x2 / have-org-role-91
+			:ARG2 (o1 / official)
+			:ARG1 (x1 / government-organization
+				:name (n1 / name
+					:op1 "Pentagon")))))
+
+# ::id 9
+# ::snt Airbus A300 for an Iranian F-14 jet fighter on an attack course.
+(x2 / country
+	:name (n / name
+		:op1 "A300")
+	:name (x1 / name
+		:op1 "Airbus")
+	:null_edge (x8 / fight-01
+		:mod (x7 / jet
+			:mod (x6 / world-region
+				:name (n1 / name
+					:op1 "F-14")
+				:mod (x5 / country
+					:name (n2 / name
+						:op1 "Iran"))))))
+
+# ::id 10
+# ::snt Fogarty's team worked in secret and made no statements before
+(x7 / and
+	:op1 (x4 / work-01
+		:ARG0 (x3 / team
+			:poss (x1 / person
+				:name (n / name
+					:op1 "Fogarty")))
+		:location (x6 / secret)
+		:ARG1 (x10 / thing
+			:ARG1-of (s / state-01)
+			:polarity -
+			:time (x11 / before))))
+
+# ::id 11
+# ::snt leaving.
+(x1 / leave-01)
+
+# ::id 12
+# ::snt The U.S. Navy officials said the report would "work its way up
+(x5 / say-01
+	:ARG1 (x10 / work-09
+		:ARG0 (x7 / report)
+		:ARG1 (x12 / way))
+	:ARG0 (xap0 / person
+		:ARG0-of (x4 / have-org-role-91
+			:ARG2 (o / official)
+			:ARG1 (x3 / military
+				:name (n / name
+					:op1 "Navy")))))
+
+# ::id 13
+# ::snt the chain of command" to Defense Secretary Frank Carlucci. Because
+(x2 / chain
+	:location-of (x4 / command-02)
+	:name (x9 / name
+		:op1 "Frank"
+		:op2 "Carlucci"
+		:null_edge (x7 / null_tag)
+		:ARG0-of (x8 / have-org-role-91
+			:ARG2 (s / secretary))
+		:ARG1-of (x12 / cause-01)))
+
+# ::id 14
+# ::snt 
+(x13 / say-01
+	:ARG0 (x1 / person
+		:name (n / name
+			:op1 "Carlucci")
+		:null_edge (x7 / until
+			:time (x9 / date-entity)))
+	:location (x5 / country
+		:name (n1 / name
+			:op1 "Soviet"
+			:op2 "Union")))
+
+# ::id 15
+# ::snt report could not be released until mid-August.
+(x2 / possible
+	:domain (x5 / release-01
+		:ARG1 (x1 / report)
+		:null_edge (x7 / mid-august)))
+
+# ::id 16
+# ::snt Investigators compiled data from computer tapes on the Vincennes
+(x2 / compile-01
+	:ARG0 (x1 / person
+		:ARG0-of (i / investigate-01))
+	:ARG1 (x3 / data
+		:mod (x6 / tape
+			:mod (x5 / computer)
+			:location (x9 / country
+				:name (n / name
+					:op1 "Vincennes")))))
+
+# ::id 17
+# ::snt and two other U.S. warships that were in the area, the frigate USS
+(x1 / and
+	:op3 (x5 / warship
+		:quant 2
+		:mod (x3 / other)
+		:mod (x4 / country
+			:name (n / name
+				:op1 "U.S."))
+		:location (x10 / area))
+	:op1 (x14 / uss
+		:mod (x13 / frigate)))
+
+# ::id 18
+# ::snt Elmer Montgomery and missile frigate John H. Sides.
+(x8 / country
+	:name (n / name
+		:op1 "Sides")
+	:null_edge (x3 / and
+		:op1 (x1 / newspaper
+			:name (n1 / name
+				:op1 "Elmer"
+				:op2 "Montgomery"))
+		:op2 (x5 / frigate
+			:ARG1 (x4 / missile)
+			:name (x6 / name
+				:op1 "John"
+				:op2 "H."))))
+
+# ::id 19
+# ::snt They also took sworn testimony from the commander of the
+(x5 / testify-01
+	:ARG0 (x1 / they)
+	:mod (x2 / also)
+	:ARG1-of (x4 / swear-01)
+	:source (x8 / have-org-role-91
+		:ARG2 (c / commander)))
+
+# ::id 20
+# ::snt Vincennes, Capt. Will C. Rogers III, and other officers of the
+(x9 / and
+	:op1 (x1 / country
+		:name (n / name
+			:op1 "Vincennes")
+		:name (x4 / name
+			:op1 "Will"
+			:op2 "C."
+			:op3 "Rogers"
+			:op4 "III"
+			:ARG0-of (x3 / capt.)))
+	:op2 (x11 / have-org-role-91
+		:ARG2 (o / officer)
+		:mod (x10 / other)))
+
+# ::id 21
+# ::snt three warships.
+(x2 / warship
+	:quant 3)
+
+# ::id 22
+# ::snt An initial 15-day deadline for the investigation was extended at
+(x9 / extend-01
+	:ARG1 (x4 / deadline
+		:time (x2 / initial)
+		:mod (x3 / person
+			:name (n / name
+				:op1 "15-day"))
+		:purpose (x7 / investigate-01)))
+
+# ::id 23
+# ::snt Fogarty's request.
+(x3 / request-01
+	:ARG0 (x1 / person
+		:name (n / name
+			:op1 "Fogarty")))
+
+# ::id 24
+# ::snt The Navy officials would not give details of the investigations
+(x7 / detail-01
+	:ARG1 (x10 / investigate-01)
+	:example (xap0 / person
+		:ARG0-of (x3 / have-org-role-91
+			:ARG2 (o / official)
+			:ARG1 (x2 / military
+				:name (n / name
+					:op1 "Navy")))))
+
+# ::id 25
+# ::snt and said contact with Iran for information would have to be through
+(x1 / and
+	:op1 (x2 / say-01
+		:ARG1 (x9 / have-03
+			:ARG0 (x3 / contact-01
+				:ARG1 (x5 / country
+					:name (n / name
+						:op1 "Iran"))
+				:ARG1 (x7 / information)))))
+
+# ::id 26
+# ::snt diplomatic channels. The Vincennes has been assigned to the Arabian
+(x2 / channel
+	:mod (x1 / diplomacy)
+	:ARG1-of (x8 / assign-01
+		:ARG1 (x5 / country
+			:name (n / name
+				:op1 "Vincennes"))
+		:ARG2 (x11 / world-region
+			:name (n1 / name
+				:op1 "Arabian"))))
+
+# ::id 27
+# ::snt Sea, just outside the Persian Gulf, and is expected to complete its
+(x9 / and
+	:op2 (x4 / outside
+		:mod (x3 / just)
+		:op1 (x7 / world-region
+			:name (n / name
+				:op1 "Gulf")
+			:mod (x6 / country
+				:name (n1 / name
+					:op1 "Persian"))))
+	:op2 (x11 / expect-01
+		:location (x1 / sea)
+		:ARG1 (x13 / complete-01
+			:ARG1 (x14 / it))))
+
+# ::id 28
+# ::snt tour at the end of summer.
+(x1 / tour-01
+	:time (x4 / end
+		:op1 (xap0 / date-entity
+			:season (x6 / summer))))
+
+# ::id 29
+# ::snt In Ottawa, Iranian diplomat Gholamreza Behtashi said a
+(x8 / say-01
+	:location (x2 / country
+		:name (n / name
+			:op1 "Ottawa"))
+	:ARG0 (x6 / newspaper
+		:name (n1 / name
+			:op1 "Gholamreza"
+			:op2 "Behtashi")
+		:ARG0-of (x5 / diplomat
+			:ARG1 (x4 / country
+				:name (n2 / name
+					:op1 "Iran")))))
+
+# ::id 30
+# ::snt five-member team from the International Civil Aviation Organization
+(x2 / team
+	:mod (x1 / five-member)
+	:poss (x5 / organization
+		:name (n / name
+			:op1 "International"
+			:op2 "Civil"
+			:op3 "Aviation"
+			:op4 "Organization")))
+
+# ::id 31
+# ::snt is expected to arrive Friday in Tehran, Iran's capital, to pursue
+(x2 / expect-01
+	:ARG1 (x4 / arrive-01
+		:location (x11 / capital
+			:location (x7 / city
+				:name (n / name
+					:op1 "Tehran"))
+			:poss (x9 / country
+				:name (n1 / name
+					:op1 "Iran")))
+		:purpose (x14 / pursue-01)
+		:time (xap0 / date-entity
+			:weekday (x5 / friday))))
+
+# ::id 32
+# ::snt its own investigation into the disaster.
+(x3 / investigate-01
+	:ARG1 (x6 / disaster))
+
+# ::id 33
+# ::snt Behtashi, third secretary at the Iranian Embassy, said the team
+(x10 / say-01
+	:ARG0 (x1 / person
+		:name (n / name
+			:op1 "Behtashi")
+		:ARG0-of (x4 / have-org-role-91
+			:ARG2 (s / secretary)
+			:ARG1 (x8 / organization
+				:name (n1 / name
+					:op1 "Embassy"))))
+	:ARG1 (x12 / team))
+
+# ::id 34
+# ::snt is made up of technical personnel from the Montreal-based United
+(x6 / have-org-role-91
+	:ARG2 (p / personnel)
+	:mod (x5 / technical)
+	:null_edge (x7 / from
+		:null_edge (x10 / null_tag
+			:ARG1-of (xap0 / base-01
+				:location (x9 / city
+					:name (n / name
+						:op1 "Montreal-based"))))))
+
+# ::id 35
+# ::snt Nations agency.
+(x2 / agency
+	:null_edge (x1 / null_tag))
+
+# ::id 36
+# ::snt "They will go from Tehran to the Persian Gulf and investigate
+(x11 / and
+	:op1 (x4 / go-01
+		:ARG0 (x2 / they)
+		:ARG4 (x6 / city
+			:name (n / name
+				:op1 "Tehran"))
+		:ARG4 (x10 / world-region
+			:name (n1 / name
+				:op1 "Gulf")
+			:mod (x9 / country
+				:name (n2 / name
+					:op1 "Persian"))))
+	:op2 (x12 / investigate-01
+		:ARG0 x2))
+
+# ::id 37
+# ::snt the various aspects of the incident," Behtashi said.
+(x10 / say-01
+	:ARG0 (x3 / aspect
+		:mod (x2 / various)
+		:poss (x6 / incident))
+	:ARG0 (x9 / person
+		:name (n / name
+			:op1 "Behtashi")))
+
+# ::id 38
+# ::snt Iran asked the governing council of the agency to meet in
+(x2 / ask-01
+	:ARG0 (x1 / country
+		:name (n / name
+			:op1 "Iran"))
+	:ARG1 (x8 / agency
+		:mod (x5 / council
+			:ARG0-of (x4 / govern-01)))
+	:ARG1 (x10 / meet-03))
+
+# ::id 39
+# ::snt special session to condemn the attack, but members refused to
+(x8 / contrast-01
+	:ARG1 (x4 / condemn-01
+		:ARG0 (x2 / session
+			:mod (x1 / special))
+		:ARG1 (x6 / attack-01))
+	:ARG2 (x10 / refuse-01
+		:ARG0 (xap0 / person
+			:ARG0-of (x9 / have-org-role-91
+				:ARG2 (m / member)))))
+
+# ::id 40
+# ::snt censure the United States.
+(x1 / censure-01
+	:ARG1 (x3 / country
+		:name (n / name
+			:op1 "United"
+			:op2 "States")))
+
+# ::id 41
+# ::snt The 33-nation governing council ordered the inquiry on July 14.
+(x5 / order-02
+	:ARG0 (x4 / council
+		:ARG0-of (x3 / govern-01
+			:mod (x2 / 33-nation)))
+	:ARG1 (x7 / inquire-01)
+	:time (x9 / date-entity))
+
+# ::id 42
+# ::snt U.S. delegate Edmund Stohr said the United States will offer the
+(x5 / say-01
+	:ARG0 (x3 / newspaper
+		:name (n / name
+			:op1 "Edmund"
+			:op2 "Stohr")
+		:ARG0-of (x2 / have-org-role-91
+			:ARG2 (d / delegate)
+			:ARG1 (x1 / country
+				:name (n2 / name
+					:op1 "U.S."))))
+	:ARG1 (x10 / offer-01
+		:ARG0 (x7 / country
+			:name (n1 / name
+				:op1 "United"
+				:op2 "States"))))
+
+# ::id 43
+# ::snt investigating team whatever help it can. He said the team had not
+(x9 / say-01
+	:ARG0 (x2 / team
+		:ARG0-of (x1 / investigate-01)
+		:ARG0-of (x4 / help-01
+			:mod (x3 / whatever)))
+	:ARG0 (x8 / he)
+	:ARG1 (x12 / have-03
+		:ARG0 (x11 / team)))
+
+# ::id 44
+# ::snt asked to board the Vincennes, and he didn't know if such a visit
+(x7 / and
+	:op1 (x1 / ask-02
+		:ARG1 (x3 / board-01
+			:ARG1 (x5 / country
+				:name (n / name
+					:op1 "Vincennes"))))
+	:op2 (x11 / know-01
+		:ARG0 x3
+		:ARG1 (x15 / visit-01
+			:mod (x13 / such))))
+
+# ::id 45
+# ::snt would be possible considering the military situation in the gulf.
+(x3 / possible
+	:domain (x4 / consider-02
+		:ARG1 (x7 / situation
+			:mod (x6 / military)
+			:location (x10 / world-region
+				:name (n / name
+					:op1 "gulf")))))
+
+# ::id 46
+# ::snt ICAO is a technical body composed of 159 nations. It sets
+(x6 / compose-01
+	:ARG2 (x5 / body
+		:domain (x1 / organization
+			:name (n / name
+				:op1 "ICAO"))
+		:mod (x4 / technical))
+	:ARG2 (x9 / nation
+		:quant (x8 / 159))
+	:ARG1 (x12 / set-01))
+
+# ::id 47
+# ::snt standards for civil aviation and airline safety.
+(x1 / standard
+	:purpose (x5 / and
+		:op1 (x4 / aviation
+			:mod (x3 / civil))
+		:op2 (x7 / safe-41)))
+

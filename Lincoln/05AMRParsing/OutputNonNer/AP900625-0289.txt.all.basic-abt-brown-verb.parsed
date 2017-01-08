@@ -1,0 +1,479 @@
+# ::id 1
+# ::snt Southern Natural Gas Co. has agreed to
+(x6 / agree-01
+	:ARG0 (x1 / government-organization
+		:name (n / name
+			:op1 "Southern"
+			:op2 "Natural"
+			:op3 "Gas"
+			:op4 "Co.")))
+
+# ::id 2
+# ::snt pay ARCO Oil and Gas Co. more than $300 million for damages that
+(x1 / pay-01
+	:ARG0 (x4 / and
+		:op1 (x2 / government-organization
+			:name (n / name
+				:op1 "ARCO"
+				:op2 "Oil"))
+		:op2 (x5 / government-organization
+			:name (n1 / name
+				:op1 "Gas"
+				:op2 "Co.")))
+	:ARG3 (x7 / more-than)
+	:ARG3 (x13 / damage))
+
+# ::id 3
+# ::snt resulted from an explosion on an ARCO drilling platform in the Gulf
+(x1 / result-01
+	:ARG2 (x4 / explode-01
+		:ARG1 (x9 / platform
+			:mod (x7 / organization
+				:name (n / name
+					:op1 "ARCO"))
+			:location (x12 / world-region
+				:name (n1 / name
+					:op1 "Gulf"))
+			:ARG1-of (xap0 / platform
+				:purpose (x8 / drill-01)))))
+
+# ::id 4
+# ::snt of Mexico last year.
+(x4 / year
+	:poss (x2 / country
+		:name (n / name
+			:op1 "Mexico"))
+	:mod (x3 / last))
+
+# ::id 5
+# ::snt The March 19, 1989, blast and resulting fire killed seven
+(x11 / kill-01
+	:ARG1 (x8 / and
+		:op1 (x2 / festival
+			:name (n / name
+				:op1 "March"
+				:op2 "19"
+				:op3 ","
+				:op4 "1989"))
+		:op1 (x7 / blast-05)
+		:op2 (x10 / fire
+			:ARG2-of (x9 / result-01)))
+	:ARG1 7)
+
+# ::id 6
+# ::snt people, injured 23 and destroyed the platform. The blast occurred
+(x11 / blast-05
+	:location (x5 / and
+		:op1 (x3 / injure-01
+			:ARG1 23)
+		:op2 (x6 / destroy-01
+			:ARG1 (x8 / platform))))
+
+# ::id 7
+# ::snt while workers for Southern Natural Gas were attempting to make
+(x8 / attempt-01
+	:ARG0 (x2 / person
+		:ARG0-of (w / work-01)
+		:beneficiary (x6 / gas
+			:mod (x5 / natural)))
+	:ARG1 (x10 / make-01
+		:ARG0 x2))
+
+# ::id 8
+# ::snt repairs on the platform.
+(x1 / repair-01
+	:prep-on (x4 / platform))
+
+# ::id 9
+# ::snt Representatives agreed on the settlement Monday during a recess
+(x2 / agree-01
+	:ARG0 (x1 / person
+		:ARG0-of (r / represent-01))
+	:ARG1 (x5 / settle-02)
+	:time (x9 / recess)
+	:time (xap0 / date-entity
+		:weekday (x6 / monday)))
+
+# ::id 10
+# ::snt in a civil trial that began June 11 in State District Court in
+(x4 / trial
+	:mod (x3 / civil)
+	:ARG1-of (x6 / begin-01
+		:time (x7 / name
+			:op1 "June"
+			:op2 "11")
+		:location (x12 / court
+			:mod (x10 / state)
+			:null_edge (x11 / null_tag))))
+
+# ::id 11
+# ::snt Madison County.
+(x2 / county
+	:null_edge (x1 / country
+		:name (n / name
+			:op1 "Madison")))
+
+# ::id 12
+# ::snt They presented the agreement to Judge Bill McAdams while he was
+(x2 / present-01
+	:ARG0 (x1 / they)
+	:ARG1 (x4 / agree-01)
+	:ARG2 (x8 / person
+		:name (n / name
+			:op1 "McAdams")
+		:null_edge (x6 / judge-01)
+		:null_edge (x7 / person
+			:name (n1 / name
+				:op1 "Bill"))))
+
+# ::id 13
+# ::snt holding court in neighboring Grimes County.
+(x1 / hold-04
+	:ARG1 (x2 / court)
+	:location (x6 / county
+		:ARG1-of (x4 / neighbor-01)
+		:null_edge (x5 / country
+			:name (n / name
+				:op1 "Grimes"))))
+
+# ::id 14
+# ::snt "We feel we've been adequately compensated for our losses,"
+(x3 / feel-01
+	:ARG0 (x2 / we)
+	:ARG1 (x8 / compensate-01
+		:ARG1 (x4 / we)
+		:manner (x7 / adequate)))
+
+# ::id 15
+# ::snt said Don Riddle, lead counsel for ARCO.
+(x1 / say-01
+	:ARG0 (x3 / person
+		:name (n / name
+			:op1 "Riddle")
+		:null_edge (x2 / person
+			:name (n1 / name
+				:op1 "Don"))
+		:null_edge (x6 / counsel
+			:ARG1-of (x5 / lead-02)
+			:beneficiary (x8 / organization
+				:name (n2 / name
+					:op1 "ARCO")))))
+
+# ::id 16
+# ::snt "Aside from Pennzoil, it's the largest settlement around as far
+(x10 / settle-02
+	:ARG2 (x2 / aside
+		:source (x4 / organization
+			:name (n / name
+				:op1 "Pennzoil")))
+	:domain (x6 / it)
+	:mod (x9 / large
+		:degree (m / most))
+	:location (x11 / around
+		:mod (x13 / far)))
+
+# ::id 17
+# ::snt as anybody knows," Riddle told the Bryan-College Station Eagle.
+(x7 / tell-01
+	:time (x3 / know-01
+		:ARG0 (x2 / anybody))
+	:ARG0 (x6 / person
+		:name (n / name
+			:op1 "Riddle"))
+	:ARG2 (x9 / government-organization
+		:name (n1 / name
+			:op1 "Bryan-College"
+			:op2 "Station"))
+	:ARG2 (x11 / government-organization
+		:name (n2 / name
+			:op1 "Eagle")))
+
+# ::id 18
+# ::snt Pennzoil Co. in 1984 won a $10.3 billion judgment against Texaco
+(x5 / win-01
+	:ARG0 (x1 / government-organization
+		:name (n / name
+			:op1 "Pennzoil"
+			:op2 "Co."))
+	:time (x4 / date-entity
+		:year 1984)
+	:ARG1 (x10 / judge-01
+		:mod (x7 / country
+			:name (n1 / name
+				:op1 "$")
+			:null_edge (x8 / monetary-quantity
+				:unit (y / yuan)))
+		:prep-against (x12 / organization
+			:name (n2 / name
+				:op1 "Texaco"))))
+
+# ::id 19
+# ::snt Inc. after claiming that Texaco had broken up its deal to buy Getty
+(x1 / country
+	:name (n / name
+		:op1 "Inc.")
+	:null_edge (x2 / after
+		:op1 (x3 / claim-01
+			:ARG1 (x7 / break-01
+				:ARG0 (x5 / organization
+					:name (n1 / name
+						:op1 "Texaco"))
+				:ARG1 (x10 / deal-01
+					:ARG1 (x12 / buy-01
+						:ARG1 (x13 / person
+							:name (n2 / name
+								:op1 "Getty"))))))))
+
+# ::id 20
+# ::snt Oil Co. Texaco agreed to settle the case for $3 billion in 1988.
+(x5 / agree-01
+	:null_edge (x1 / null_tag
+		:null_edge "Co.")
+	:ARG0 (x4 / organization
+		:name (n / name
+			:op1 "Texaco"))
+	:ARG1 (x7 / settle-02
+		:null_edge x1
+		:ARG0 x4
+		:ARG1 (x9 / case)
+		:time (x15 / date-entity
+			:year 1988)))
+
+# ::id 21
+# ::snt Houston attorney Randy Wilson, one of about 20 attorneys
+(x3 / name
+	:op1 "Randy"
+	:op2 "Wilson"
+	:ARG0-of (x2 / attorney
+		:ARG1 (x1 / country
+			:name (n / name
+				:op1 "Houston"))
+		:ARG1-of (x7 / include-91
+			:ARG2 (xap0 / and
+				:ARG0-of (x10 / attorney
+					:quant (x8 / about
+						:op1 20))))))
+
+# ::id 22
+# ::snt representing Southern Natural Gas, declined to comment on the
+(x1 / represent-01
+	:name (x2 / name
+		:op1 "Southern"
+		:op2 "Natural"
+		:op3 "Gas")
+	:ARG1 (x6 / decline-01
+		:ARG1 (x8 / comment-01)))
+
+# ::id 23
+# ::snt settlement.
+(x1 / settle-02)
+
+# ::id 24
+# ::snt According to the settlement, Southern Natural Gas made no
+(xap0 / say-01
+	:ARG0 (x4 / settle-02)
+	:ARG1 (x8 / gas
+		:null_edge (x6 / null_tag)
+		:ARG1 (x7 / natural))
+	:polarity -)
+
+# ::id 25
+# ::snt admission of guilt but agreed to pay ARCO $300.5 million by Aug. 6,
+(x4 / contrast-01
+	:ARG1 (x5 / agree-01
+		:ARG0 (x1 / admit-02
+			:ARG1 (x3 / guilt))
+		:ARG1 (x7 / pay-01
+			:ARG3 (x8 / government-organization
+				:name (n / name
+					:op1 "ARCO"))
+			:time (x12 / by
+				:op1 (x13 / date-entity)))))
+
+# ::id 26
+# ::snt and to pay a total of $500,000 to three ARCO employees injured in
+(x1 / and
+	:op1 (x3 / pay-01
+		:ARG1 (x5 / total-01
+			:ARG2 (x8 / monetary-quantity
+				:unit (y / yuan)))
+		:ARG2 (x12 / person
+			:ARG1-of (e / employ-01)
+			:quant 3
+			:mod (x11 / organization
+				:name (n / name
+					:op1 "ARCO"))
+			:ARG1-of (x13 / injure-01))))
+
+# ::id 27
+# ::snt the explosion.
+(x2 / explode-01)
+
+# ::id 28
+# ::snt ARCO was a party to several lawsuits pending against Southern
+(x4 / party
+	:domain (x1 / organization
+		:name (n / name
+			:op1 "ARCO"))
+	:ARG2 (x7 / lawsuit
+		:quant (x6 / several)
+		:ARG1-of (x8 / pend-01)))
+
+# ::id 29
+# ::snt Natural Gas in federal court in Louisiana. The settlement will end
+(x12 / end-01
+	:ARG1 (x2 / gas
+		:mod (x1 / natural)
+		:location (x5 / court
+			:mod (x4 / government-organization
+				:name (n1 / name
+					:op1 "federal")))
+		:location (x7 / country
+			:name (n / name
+				:op1 "Louisiana")))
+	:ARG1 (x10 / settle-02))
+
+# ::id 30
+# ::snt those suits, Riddle said.
+(x5 / say-01
+	:ARG0 (x2 / suit-01)
+	:ARG0 (x4 / person
+		:name (n / name
+			:op1 "Riddle")))
+
+# ::id 31
+# ::snt The settlement will be paid by the gas company's insurance
+(x5 / pay-01
+	:ARG1 (x2 / settle-02)
+	:instrument (x11 / insure-02
+		:ARG0 (x9 / company
+			:mod (x8 / gas))))
+
+# ::id 32
+# ::snt carriers, primarily Lloyd's of London, Riddle said.
+(x10 / say-01
+	:ARG0 (x1 / carrier
+		:mod (x3 / primary)
+		:mod (x4 / person
+			:name (n1 / name
+				:op1 "Lloyd")
+			:null_edge (x7 / city
+				:name (n2 / name
+					:op1 "London"))))
+	:ARG0 (x9 / person
+		:name (n / name
+			:op1 "Riddle")))
+
+# ::id 33
+# ::snt ARCO had asked for between $250 million and $325 million in
+(x3 / ask-02
+	:ARG0 (x1 / organization
+		:name (n / name
+			:op1 "ARCO"))
+	:ARG2 (x5 / between
+		:op1 (x9 / and)
+		:op1 (x11 / monetary-quantity
+			:unit (y / yuan))))
+
+# ::id 34
+# ::snt actual damages and $5 billion in exemplary damages resulting from
+(x3 / and
+	:op1 (x2 / damage
+		:mod (x1 / actual)
+		:ARG1 (x9 / damage
+			:mod (x8 / exemplary)
+			:ARG1-of (x10 / result-01))))
+
+# ::id 35
+# ::snt the explosion on a drilling platform about five miles south of the
+(x2 / explode-01
+	:ARG1 (x6 / platform
+		:location (x10 / south
+			:op1 (x9 / distance-quantity
+				:unit (m / mile)
+				:null_edge (x7 / about
+					:null_edge 5)))
+		:ARG1-of (x11 / include-91)
+		:ARG1-of (xap0 / platform
+			:purpose (x5 / drill-01))))
+
+# ::id 36
+# ::snt mouth of the Mississippi River.
+(x1 / mouth
+	:null_edge (x5 / river
+		:mod (x4 / country
+			:name (n / name
+				:op1 "Mississippi"))))
+
+# ::id 37
+# ::snt In addition to damage to the platform itself, ARCO claimed it
+(x11 / claim-01
+	:ARG1 (x4 / damage-01
+		:ARG1 (x7 / platform)
+		:ARG0 (x10 / organization
+			:name (n / name
+				:op1 "ARCO")))
+	:ARG0 x10
+	:ARG1 (x12 / it))
+
+# ::id 38
+# ::snt lost about $200 million in profits from oil and natural gas sales
+(x1 / lose-02
+	:ARG1 (x7 / profit-01
+		:source (x10 / and
+			:op1 (x9 / oil)
+			:op1 (xap0 / sell-01
+				:ARG1 (x11 / natural)))))
+
+# ::id 39
+# ::snt because the destroyed platform was crucial to a seven-platform oil
+(x6 / crucial
+	:ARG1-of (x1 / cause-01)
+	:domain (x4 / platform
+		:ARG1-of (x3 / destroy-01))
+	:ARG1 (x10 / oil
+		:mod (x9 / seven-platform)))
+
+# ::id 40
+# ::snt field.
+(x1 / field)
+
+# ::id 41
+# ::snt Southern Natural Gas bought natural gas from ARCO and
+(x9 / and
+	:op1 (x4 / buy-01
+		:ARG0 (x3 / gas
+			:null_edge (x1 / null_tag)
+			:mod (x2 / natural))
+		:ARG1 (x6 / gas
+			:mod (x5 / natural))
+		:ARG0 (x8 / organization
+			:name (n / name
+				:op1 "ARCO"))))
+
+# ::id 42
+# ::snt transported it to shore by means of pipeline running from the
+(x1 / transport-01
+	:ARG1 (x2 / it)
+	:ARG1 (x4 / shore
+		:ARG1 (x8 / pipeline
+			:ARG0-of (x9 / run-02))))
+
+# ::id 43
+# ::snt platform. The explosion occurred when subcontractors hired by the
+(x4 / explode-01
+	:ARG1 (x1 / platform)
+	:ARG1 (x8 / hire-01
+		:ARG0 (x7 / subcontractor)))
+
+# ::id 44
+# ::snt gas company cut into the pipeline while trying to make repairs.
+(x3 / cut-02
+	:ARG0 (x2 / company
+		:mod (x1 / gas))
+	:ARG1 (x6 / pipeline)
+	:time (x8 / try-01
+		:ARG0 x2
+		:ARG1 (x10 / make-01
+			:ARG1 (x11 / repair-01))))
+

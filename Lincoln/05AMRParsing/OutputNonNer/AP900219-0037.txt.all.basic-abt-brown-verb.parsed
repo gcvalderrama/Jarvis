@@ -1,0 +1,527 @@
+# ::id 1
+# ::snt Motel guests jumped out of windows and
+(x7 / and
+	:op1 (x3 / jump-06
+		:ARG0 (x2 / guest
+			:mod (x1 / motel))
+		:ARG1 (x6 / window)))
+
+# ::id 2
+# ::snt lowered themselves to the ground using bedsheets to escape fire
+(x1 / lower-01
+	:ARG4 (x5 / ground)
+	:ARG1 (x6 / use-01
+		:ARG1 (x7 / bedsheet)
+		:ARG2 (x9 / escape-01
+			:ARG1 (x10 / fire-01))))
+
+# ::id 3
+# ::snt from an explosion apparently caused by a natural-gas leak that
+(x3 / explode-01
+	:ARG1-of (x5 / cause-01
+		:manner (x4 / apparent)
+		:ARG0 (x9 / leak-01
+			:mod (x8 / natural-gas)
+			:null_edge (x10 / null_tag))))
+
+# ::id 4
+# ::snt killed four and injured 10.
+(x3 / and
+	:op1 (x1 / kill-01
+		:ARG1 4)
+	:op2 (x4 / injure-01
+		:ARG1 (x5 / person
+			:op 10)))
+
+# ::id 5
+# ::snt A night desk clerk was investigating reports of a gas leak at
+(x6 / investigate-01
+	:ARG1 (x7 / report-01
+		:ARG1 (x11 / leak-01
+			:mod (x10 / gas)))
+	:ARG1 (xap0 / person
+		:ARG0-of (x4 / have-org-role-91
+			:ARG2 (c / clerk)
+			:time (x2 / night)
+			:ARG1 (x3 / desk))))
+
+# ::id 6
+# ::snt the 62-unit Super 8 Motel when the explosion occurred early Sunday,
+(x8 / explode-01
+	:time (x10 / early
+		:op1 (xap0 / date-entity
+			:weekday (x11 / sunday))))
+
+# ::id 7
+# ::snt officials said.
+(x2 / say-01
+	:ARG0 (xap0 / person
+		:ARG0-of (x1 / have-org-role-91
+			:ARG2 (o / official))))
+
+# ::id 8
+# ::snt "I had just gotten up to go to the bathroom and had come back
+(x12 / and
+	:op1 (x5 / get-01
+		:ARG0 (x2 / i)
+		:mod (x4 / just)
+		:ARG1 (x8 / go-02
+			:ARG0 x2
+			:ARG4 (x11 / bathroom)))
+	:op2 (x14 / come-01
+		:ARG1 x2
+		:direction (x15 / back)))
+
+# ::id 9
+# ::snt and my wife said, 'Don't you smell the gas?"' said Neal Woodrick,
+(x1 / and
+	:op1 (x4 / say-01
+		:ARG0 (x3 / wife)
+		:ARG1 (x10 / smell
+			:ARG0 (x9 / you)
+			:ARG1 (x12 / gas)))
+	:op1 (x16 / say-01
+		:name (x17 / name
+			:op1 "Neal"
+			:op2 "Woodrick")))
+
+# ::id 10
+# ::snt 60, of Trenton, N.J. "And then it happened."
+(x8 / and
+	:op2 (x11 / happen-01
+		:ARG1 60
+		:ARG2 (x4 / country
+			:name (n / name
+				:op1 "Trenton")
+			:null_edge (x6 / country
+				:name (n1 / name
+					:op1 "N.J.")))
+		:ARG1 (x10 / it)))
+
+# ::id 11
+# ::snt "It sounded just like a bomb had gone off _ boom," said his
+(x15 / say-01
+	:ARG1 (x3 / sound-01
+		:ARG1 (x2 / it)
+		:time (x9 / go-01
+			:ARG1 x2
+			:null_edge (x4 / just)
+			:ARG1 (x7 / bomb)
+			:ARG1 (x12 / boom-02
+				:ARG1-of (x11 / _)))))
+
+# ::id 12
+# ::snt wife, Joan Woodrick, 58.
+(x1 / wife
+	:name (x3 / name
+		:op1 "Joan"
+		:op2 "Woodrick"
+		:quant 58))
+
+# ::id 13
+# ::snt Fire officials were to comb the charred remains of the motel
+(x5 / comb
+	:ARG1 (x8 / remains
+		:ARG1-of (x7 / char)
+		:ARG1 (x11 / motel))
+	:ARG1 (xap0 / person
+		:ARG0-of (x2 / have-org-role-91
+			:ARG2 (o / official)
+			:ARG1 (x1 / fire-02))))
+
+# ::id 14
+# ::snt today for clues to the explosion.
+(x6 / explode-01
+	:time (x1 / today))
+
+# ::id 15
+# ::snt All of the 45 to 50 guests were believed to be accounted for,
+(x9 / believe-01
+	:ARG1 (x7 / guest
+		:quant (x1 / all)
+		:quant 50)
+	:ARG1 (x12 / account-01))
+
+# ::id 16
+# ::snt authorities said.
+(x2 / say-01
+	:ARG0 (x1 / authority))
+
+# ::id 17
+# ::snt Firefighters used a crane, pitch forks and shovels to sift
+(x2 / use-01
+	:ARG0 (x1 / firefighter)
+	:ARG1 (x6 / pitch
+		:consist-of (x4 / crane)
+		:ARG0-of (x11 / sift
+			:ARG1 (x8 / and
+				:op1 (x7 / fork)
+				:op2 (x9 / shovel-01)))))
+
+# ::id 18
+# ::snt through piles of charred mattresses, carpet, pink insulation and
+(x11 / and
+	:op2 (x5 / mattress
+		:mod (x2 / pile-02)
+		:ARG1-of (x4 / char))
+	:op1 (x7 / carpet)
+	:op2 (x10 / insulation
+		:mod (x9 / pink)))
+
+# ::id 19
+# ::snt dry wall left from the fire and explosion, which threw debris as
+(x3 / leave-01
+	:ARG0 (x2 / wall
+		:ARG1-of (x1 / dry-02))
+	:ARG2 (x7 / and
+		:op1 (x6 / fire-01)
+		:op2 (x8 / explode-01)
+		:op1 (x11 / throw-06
+			:ARG1 (x12 / debris))))
+
+# ::id 20
+# ::snt far as 300 feet from the building.
+(x1 / far
+	:beneficiary (x7 / building
+		:quant 300))
+
+# ::id 21
+# ::snt "I'm almost positive it was a natural gas explosion,"
+(x5 / positive
+	:domain (x2 / i)
+	:mod (x4 / almost)
+	:domain (x11 / explode-01
+		:mod (x9 / natural)
+		:mod (x10 / gas)))
+
+# ::id 22
+# ::snt Hagerstown Fire Chief Gary Hawbaker said. "The whole front of the
+(x6 / say-01
+	:ARG0 (x4 / newspaper
+		:name (n / name
+			:op1 "Gary"
+			:op2 "Hawbaker")
+		:ARG0-of (x2 / fire
+			:ARG1 (x1 / country
+				:name (n1 / name
+					:op1 "Hagerstown")))
+		:ARG0-of (x3 / chief))
+	:ARG1 (x11 / front
+		:mod (x10 / whole)))
+
+# ::id 23
+# ::snt building _ first, second and third floors _ was blown out. That
+(x11 / blow-01
+	:ARG1 (x1 / build-01
+		:ARG1 (x8 / floor
+			:mod (x2 / _)))
+	:ARG1 (x9 / _))
+
+# ::id 24
+# ::snt whole chunk was engulfed."
+(x4 / engulf
+	:ARG1 (x2 / chunk
+		:mod (x1 / whole)))
+
+# ::id 25
+# ::snt Hawbaker said there was a natural gas line in the middle of the
+(x2 / say-01
+	:ARG0 (x1 / newspaper
+		:name (n / name
+			:op1 "Hawbaker"))
+	:ARG1 (xap0 / cause-01
+		:ARG1 (x8 / line
+			:mod (x6 / natural)
+			:mod (x7 / gas)
+			:location (x11 / middle))))
+
+# ::id 26
+# ::snt fire, "so we couldn't put out the rest of the fire until the gas
+(x1 / fire-01
+	:null_edge (x6 / possible
+		:domain (x8 / put-01
+			:ARG0 (x5 / we)
+			:ARG2 (x14 / fire-01)
+			:ARG2 (x17 / gas))))
+
+# ::id 27
+# ::snt was shut off." It took firefighters about 30 minutes to shut off
+(x7 / take-01
+	:ARG1 (x2 / shut-05)
+	:ARG0 (x6 / it)
+	:ARG1 (x8 / firefighter)
+	:ARG1 (x11 / temporal-quantity
+		:unit (m / minute)
+		:null_edge (x9 / about
+			:null_edge 30))
+	:purpose (x13 / shut-05
+		:ARG0 x8))
+
+# ::id 28
+# ::snt the gas, he said.
+(x5 / say-01
+	:ARG0 (x2 / gas)
+	:ARG0 (x4 / he))
+
+# ::id 29
+# ::snt Joan Ganje-Fischer, a spokeswoman for Super 8 Motels Inc. of
+(x1 / name
+	:op1 "Joan"
+	:op2 "Ganje-Fischer"
+	:ARG0-of (x5 / have-org-role-91
+		:ARG2 (s / spokeswoman)
+		:ARG1 (x10 / organization
+			:name (n / name
+				:op1 "Inc.")
+			:null_edge (x7 / null_tag)
+			:null_edge 8
+			:null_edge (x9 / null_tag))))
+
+# ::id 30
+# ::snt Aberdeen, S.D., said that after a guest told the clerk that gas was
+(x5 / say-01
+	:ARG0 (x1 / country
+		:name (n / name
+			:op1 "Aberdeen")
+		:null_edge (x3 / country
+			:name (n1 / name
+				:op1 "S.D.")))
+	:time (x7 / after
+		:op1 (x10 / tell-01
+			:ARG0 (x9 / guest)
+			:ARG2 (x12 / have-org-role-91
+				:ARG2 (c / clerk))
+			:ARG1 (x14 / gas))))
+
+# ::id 31
+# ::snt leaking from the laundry room area, the gas company told the clerk
+(x11 / tell-01
+	:ARG1 (x1 / leak-01
+		:condition (x6 / area
+			:location-of (x5 / room
+				:ARG1 (x4 / laundry)))
+		:ARG0 (x10 / company
+			:mod (x9 / gas)))
+	:ARG0 x10
+	:ARG0 (xap0 / person
+		:ARG0-of (x13 / have-org-role-91
+			:ARG2 (c / clerk))))
+
+# ::id 32
+# ::snt to try to turn the gas off.
+(x2 / try-01
+	:ARG1 (x4 / turn-02
+		:ARG1 (x6 / gas)))
+
+# ::id 33
+# ::snt "He was right in the center of the explosion when it
+(x4 / right
+	:ARG1 (x2 / he)
+	:ARG2 (x7 / center
+		:part-of (x10 / explode-01))
+	:null_edge (x12 / null_tag))
+
+# ::id 34
+# ::snt happened," she said. "He came back to the front desk and his hair
+(x5 / say-01
+	:ARG0 (x4 / she)
+	:ARG1 (x9 / come-22
+		:ARG1 (x8 / he)
+		:direction (x10 / back)
+		:ARG2 (x15 / and
+			:op1 (x14 / desk
+				:mod (x13 / front))
+			:op2 (x17 / hair))))
+
+# ::id 35
+# ::snt was on fire. He put his hair out with a towel, pulled the alarm
+(x3 / fire-01
+	:ARG1 (x8 / hair
+		:domain (x5 / he)
+		:ARG1-of (x14 / pull-02
+			:ARG0 x5
+			:ARG1 (x16 / alarm-01))))
+
+# ::id 36
+# ::snt notifying the guests, called 911 and then began evacuating the
+(x7 / and
+	:op1 (x5 / call-01
+		:ARG1 (x1 / notify-01
+			:ARG1 (x3 / guest))
+		:ARG2 (x6 / 911))
+	:op2 (x9 / begin-01
+		:time (x8 / then)
+		:ARG1 (x10 / evacuate)))
+
+# ::id 37
+# ::snt motel."
+(x1 / motel)
+
+# ::id 38
+# ::snt Donald Lee, 39, of Shorewood, Wis., said he awoke, put on pants,
+(x11 / say-01
+	:ARG0 (x1 / newspaper
+		:name (n / name
+			:op1 "Donald"
+			:op2 "Lee")
+		:quant 39
+		:source (x7 / country
+			:name (n1 / name
+				:op1 "Shorewood")
+			:null_edge (x9 / country
+				:name (n2 / name
+					:op1 "Wis."))))
+	:ARG1 (x13 / awake-01
+		:ARG1-of (x15 / put-01
+			:ARG1 (x17 / pants))))
+
+# ::id 39
+# ::snt a shirt and a coat and jumped 12-15 feet out of a second-story
+(x6 / and
+	:op1 (x7 / jump-06
+		:ARG0 (x3 / and
+			:op1 (x2 / shirt
+				:poss (xap0 / and
+					:op1 (x5 / coat))))
+		:ARG1 (x9 / distance-quantity
+			:unit (f / foot)
+			:quant (x8 / 12-15))
+		:ARG1 (x13 / second-story)))
+
+# ::id 40
+# ::snt window, breaking his wrist in the fall.
+(x1 / window
+	:domain (x3 / break-02
+		:ARG1 (x5 / wrist)
+		:time (x8 / fall)))
+
+# ::id 41
+# ::snt "I heard screaming and glass breaking," he said. "A number of
+(x11 / say-01
+	:ARG1 (x3 / hear-01
+		:ARG0 (x2 / i)
+		:ARG1 (x7 / break-01
+			:ARG1 (x5 / and
+				:op1 (x4 / scream)
+				:op2 (x6 / glass))))
+	:ARG0 (x10 / he)
+	:ARG1 (x15 / number))
+
+# ::id 42
+# ::snt people saw flames. A family had their hair singed."
+(x2 / see-01
+	:ARG1 (x3 / flame
+		:op1 (x10 / singe
+			:ARG0 (x6 / family)
+			:ARG0 (x9 / hair))))
+
+# ::id 43
+# ::snt Some guests were moved to a motel across the street, and the Red
+(x4 / move-01
+	:ARG1 (x2 / guest
+		:quant (x1 / some))
+	:ARG2 (x12 / and
+		:op1 (x7 / motel
+			:location (x8 / across
+				:op1 (x10 / street)))
+		:op2 (x14 / country
+			:name (n / name
+				:op1 "Red"))))
+
+# ::id 44
+# ::snt Cross provided food, clothing and shelter.
+(x2 / provide-01
+	:ARG0 (x1 / cross)
+	:ARG1 (x6 / and
+		:op1 (x3 / food)
+		:op2 (x5 / clothe-01)
+		:op2 (x7 / shelter-01)))
+
+# ::id 45
+# ::snt The dead were identified as James G. Scharnek, 34, of Milwaukee,
+(x4 / identify-01
+	:ARG1 (x2 / die-01
+		:op (d / dead))
+	:ARG2 (x6 / name
+		:op1 "James"
+		:op2 "G."
+		:op3 "Scharnek"
+		:quant 34)
+	:ARG0 (x13 / city
+		:name (n / name
+			:op1 "Milwaukee")))
+
+# ::id 46
+# ::snt Wis.; Kristoddie Brown, 25, of Capital Heights; Mercedes Keyes, 26,
+(x / xconcept
+	:x (x2 / and
+		:op1 (x1 / country
+			:name (n / name
+				:op1 "Wis."))
+		:op2 (x3 / name
+			:op1 "Kristoddie"
+			:op2 "Brown"
+			:quant 25
+			:poss (x10 / country
+				:name (n1 / name
+					:op1 "Heights")
+				:mod (x9 / capital))))
+	:x (x11 / and
+		:op3 (x13 / person
+			:name (n2 / name
+				:op1 "Keyes"))
+		:time (x15 / date-entity)))
+
+# ::id 47
+# ::snt of Hagerstown; and Margretta E. Parker, 70, of Richmond, Va.
+(x / xconcept
+	:x (x3 / and
+		:op1 (x1 / include-91
+			:ARG1 (x4 / and
+				:op1 (x2 / country
+					:name (n / name
+						:op1 "Hagerstown"))
+				:op2 (x5 / name
+					:op1 "Margretta"
+					:op2 "E."
+					:op3 "Parker"
+					:quant 70
+					:poss (x12 / country
+						:name (n1 / name
+							:op1 "Richmond")
+						:location (x14 / country
+							:name (n2 / name
+								:op1 "Va."))))))))
+
+# ::id 48
+# ::snt Ten people were treated at Washington County Hospital for smoke
+(x4 / treat-01
+	:location (x8 / country
+		:name (n / name
+			:op1 "Hospital")
+		:null_edge (x6 / city
+			:name (n1 / name
+				:op1 "Washington")))
+	:ARG2 (x10 / smoke))
+
+# ::id 49
+# ::snt inhalation and minor injuries and were released, spokesman John
+(x4 / injure-01
+	:ARG1 (x2 / and
+		:op1 (x1 / inhalation)
+		:op2 (x3 / minor))
+	:ARG1 (x7 / release-01
+		:ARG1 (x5 / and)
+		:ARG0 (x10 / person
+			:name (n / name
+				:op1 "John")
+			:ARG0-of (x9 / have-org-role-91
+				:ARG2 (s / spokesman)))))
+
+# ::id 50
+# ::snt Costopoulos said.
+(x2 / say-01
+	:ARG0 (x1 / person
+		:name (n / name
+			:op1 "Costopoulos")))
+

@@ -1,0 +1,491 @@
+# ::id 1
+# ::snt The Navy announced Friday that 15 crew members
+(x3 / announce-01
+	:ARG0 (x2 / military
+		:name (n / name
+			:op1 "Navy"))
+	:time (xap0 / date-entity
+		:weekday (x4 / friday))
+	:ARG0 (xap1 / person
+		:quant 15
+		:ARG0-of (x8 / have-org-role-91
+			:ARG2 (m / member)
+			:ARG1 (x7 / crew))))
+
+# ::id 2
+# ::snt of the USS Vincennes, the cruiser that shot down an Iranian
+(x7 / cruiser
+	:location (x3 / government-organization
+		:name (n / name
+			:op1 "USS"
+			:op2 "Vincennes"))
+	:ARG0-of (x9 / shoot-02
+		:ARG1 (x12 / country
+			:name (n1 / name
+				:op1 "Iran"))))
+
+# ::id 3
+# ::snt jetliner in the Persian Gulf last summer, will be disciplined for
+(x11 / discipline
+	:ARG1 (x1 / jetliner
+		:location (x5 / world-region
+			:name (n / name
+				:op1 "Gulf")
+			:mod (x4 / country
+				:name (n1 / name
+					:op1 "Persian")))
+		:season (x7 / summer
+			:mod (x6 / last))))
+
+# ::id 4
+# ::snt drug abuse.
+(x2 / abuse-01
+	:ARG1 (x1 / drug))
+
+# ::id 5
+# ::snt "There is no connection now to the July 3 incident in the
+(x5 / connect-01
+	:polarity -
+	:time (x6 / now)
+	:ARG1 (x11 / incident
+		:null_edge 7
+		:null_edge (x10 / null_tag)))
+
+# ::id 6
+# ::snt Persian Gulf to what has happened on board the Vincennes," said
+(x13 / say-01
+	:ARG1 (x2 / world-region
+		:name (n / name
+			:op1 "Gulf")
+		:mod (x1 / country
+			:name (n1 / name
+				:op1 "Persian"))
+		:ARG1-of (x6 / happen-01
+			:location (x8 / board)
+			:ARG1 (x10 / country
+				:name (n2 / name
+					:op1 "Vincennes")))))
+
+# ::id 7
+# ::snt Navy Cmdr. David Dillon, spokesman for Pacific Fleet Surface Force
+(x3 / name
+	:op1 "David"
+	:op2 "Dillon"
+	:ARG0-of (x1 / military
+		:name (n / name
+			:op1 "Navy"))
+	:ARG0-of (x2 / cmdr.)
+	:ARG0-of (x6 / have-org-role-91
+		:ARG2 (s / spokesman)
+		:null_edge (x7 / null_tag
+			:null_edge (x11 / null_tag
+				:null_edge (x8 / null_tag)
+				:poss (x9 / organization
+					:name (n1 / name
+						:op1 "Fleet"))
+				:null_edge (x10 / null_tag)))))
+
+# ::id 8
+# ::snt headquarters.
+(x1 / headquarters)
+
+# ::id 9
+# ::snt The Vincennes, meanwhile, will be shifted to Long Beach Naval
+(x8 / shift-01
+	:ARG1 (x2 / country
+		:name (n / name
+			:op1 "Vincennes"))
+	:time (x4 / meanwhile)
+	:ARG1 (x10 / country
+		:name (n1 / name
+			:op1 "Long"))
+	:ARG2 (x12 / country
+		:name (n2 / name
+			:op1 "Naval")
+		:null_edge (x11 / country
+			:name (n3 / name
+				:op1 "Beach"))))
+
+# ::id 10
+# ::snt Shipyard within five weeks for modifications to correct
+(x1 / shipyard
+	:duration (x4 / temporal-quantity
+		:unit (w / week)
+		:quant 5)
+	:ARG2 (x8 / correct-01
+		:domain (x6 / modify-01)))
+
+# ::id 11
+# ::snt deficiencies in the Aegis electronic combat control system, The
+(x1 / person
+	:prep-with (d / deficiency)
+	:instrument (x8 / system
+		:name (x4 / name
+			:op1 "Aegis")
+		:mod (x5 / electronic)
+		:instrument-of (x7 / control-01
+			:ARG1 (x6 / combat-01))))
+
+# ::id 12
+# ::snt (San Diego) Tribune reported Friday.
+(x6 / report-01
+	:ARG0 (x5 / organization
+		:name (n / name
+			:op1 "Tribune")
+		:null_edge (x2 / name
+			:op1 "San"
+			:op2 "Diego"))
+	:time (xap0 / date-entity
+		:weekday (x7 / friday)))
+
+# ::id 13
+# ::snt Aegis, which would enable a ship like the Vincennes to make
+(x1 / name
+	:op1 "Aegis"
+	:ARG0-of (x5 / enable-01
+		:ARG1 (x12 / make-01
+			:ARG1 (x7 / ship
+				:null_edge (x10 / country
+					:name (n / name
+						:op1 "Vincennes"))))))
+
+# ::id 14
+# ::snt computer-recommended battle decisions for entire fleets, was found
+(x9 / find-02
+	:ARG1 (x3 / decide-01
+		:ARG1 (x2 / battle-01
+			:mod (x1 / computer-recommended))
+		:purpose (x6 / fleet
+			:quant (x5 / entire))))
+
+# ::id 15
+# ::snt flawed in the Persian Gulf confrontation.
+(x1 / flaw-01
+	:location (x6 / confront-01
+		:mod (x4 / country
+			:name (n / name
+				:op1 "Persian"))
+		:ARG1 (x5 / world-region
+			:name (n1 / name
+				:op1 "Gulf"))))
+
+# ::id 16
+# ::snt According to Pentagon analysts, split-second decisions were
+(x7 / decide-01
+	:ARG0 (x4 / person
+		:ARG0-of (a / analyze-01)
+		:ARG1 (x3 / government-organization
+			:name (n / name
+				:op1 "Pentagon")))
+	:mod (x6 / split-second))
+
+# ::id 17
+# ::snt affected by the inability of radar-scope interpreters to
+(x1 / affect-01
+	:ARG1 (x7 / interpreter
+		:mod (x6 / radar-scope)))
+
+# ::id 18
+# ::snt immediately match the plane's "blip" with digital direction,
+(x2 / match-01
+	:time (x1 / immediate)
+	:ARG1 (x7 / blip
+		:poss (x4 / plane))
+	:ARG1 (x11 / direction
+		:mod (x10 / digital)))
+
+# ::id 19
+# ::snt altitude and speed information displayed on another screen.
+(x5 / display-01
+	:ARG0 (x4 / information
+		:topic (x2 / and
+			:op1 (x1 / altitude)
+			:op2 (x3 / speed-01)))
+	:ARG1 (xap0 / contrast-01
+		:ARG1 (x8 / screen
+			:mod (x7 / another))))
+
+# ::id 20
+# ::snt Those problems are one reason the Vincennes will undergo
+(x5 / reason
+	:ARG1 (x2 / problem)
+	:quant 1
+	:ARG1 (x9 / undergo-01
+		:ARG0 (x7 / organization
+			:name (n / name
+				:op1 "Vincennes"))))
+
+# ::id 21
+# ::snt modernization, an unidentified source told The Tribune.
+(x6 / tell-01
+	:ARG2 (x1 / modernize-01)
+	:ARG0 (x5 / source
+		:ARG1-of (x4 / identify-01
+			:polarity -))
+	:ARG2 (x8 / government-organization
+		:name (n / name
+			:op1 "Tribune")))
+
+# ::id 22
+# ::snt None of the sailors involved in the drug sweep were in positions
+(x4 / person
+	:ARG0-of (s / sail-01)
+	:ARG1-of (x5 / involve-01
+		:ARG2 (x9 / sweep-01
+			:ARG1 (x8 / drug)))
+	:poss-of (x12 / position))
+
+# ::id 23
+# ::snt that may have influenced the decision by Capt. Will C. Rogers III
+(x2 / possible
+	:domain (x4 / influence-01
+		:ARG1 (x6 / decide-01)
+		:ARG0 (x9 / company
+			:name (n / name
+				:op1 "Will"
+				:op2 "C."
+				:op3 "Rogers"
+				:op4 "III")
+			:ARG0-of (x8 / capt.))))
+
+# ::id 24
+# ::snt to fire two anti-aircraft missiles at the jetliner, Dillon said.
+(x11 / say-01
+	:time (x2 / fire-02
+		:ARG1 (x5 / missile
+			:quant 2
+			:mod (x4 / anti-aircraft))
+		:location (x8 / jetliner))
+	:ARG0 (x10 / person
+		:name (n / name
+			:op1 "Dillon")))
+
+# ::id 25
+# ::snt All 290 aboard the plane died.
+(x6 / die-01
+	:ARG1 (x5 / plane
+		:quant (x1 / all)))
+
+# ::id 26
+# ::snt Of the 15 sailors, six are being processed for discharge from
+(x9 / process-01
+	:ARG1 (x4 / person
+		:ARG0-of (s / sail-01)
+		:quant 15)
+	:ARG1 6
+	:purpose (x11 / discharge-01))
+
+# ::id 27
+# ::snt the Navy, while six others have been given warnings, Dillon said.
+(x13 / say-01
+	:ARG0 (x2 / military
+		:name (n / name
+			:op1 "Navy"))
+	:time (x9 / give-01
+		:ARG1 (x10 / warn-01
+			:ARG0 (x6 / other
+				:quant 6)))
+	:ARG0 (x12 / person
+		:name (n1 / name
+			:op1 "Dillon")))
+
+# ::id 28
+# ::snt "Three are petty officers who are being investigated for
+(xap0 / person
+	:quant 3
+	:ARG0-of (x5 / have-org-role-91
+		:ARG2 (o / officer)
+		:manner (x4 / petty)
+		:ARG0-of (x9 / investigate-01)))
+
+# ::id 29
+# ::snt possible court-martial in connection with drug sales," he said.
+(x11 / say-01
+	:ARG0 (x2 / court-martial
+		:mod (x1 / possible)
+		:ARG1-of (xap1 / sell-01
+			:ARG0-of (xap0 / sell-01
+				:ARG1 (x6 / drug))))
+	:ARG0 (x10 / he))
+
+# ::id 30
+# ::snt Dillon noted that the 15 sailors represent 3.9 percent of the
+(x2 / note-01
+	:ARG0 (x1 / person
+		:name (n / name
+			:op1 "Dillon"))
+	:ARG1 (x7 / represent-01
+		:ARG0 (x6 / person
+			:ARG0-of (s / sail-01)
+			:quant 15)
+		:ARG1 (x9 / percentage-entity
+			:value 3.9)))
+
+# ::id 31
+# ::snt 384 sailors on board. "That is less than the 5.4 percent average
+(x2 / person
+	:ARG0-of (s / sail-01)
+	:quant (x1 / 384)
+	:location (x4 / board)
+	:ARG0-of (x9 / less-than
+		:null_edge (x13 / percentage-entity
+			:ARG1-of (x14 / average))))
+
+# ::id 32
+# ::snt for the entire Navy," he said.
+(x8 / say-01
+	:ARG2 (x4 / military
+		:name (n / name
+			:op1 "Navy")
+		:mod (x3 / entire))
+	:ARG0 (x7 / he))
+
+# ::id 33
+# ::snt The announcement came as preparations were under way at the
+(x3 / come-01
+	:ARG1 (x2 / thing
+		:ARG1-of (a / announce-01))
+	:ARG1 (x5 / prepare-02
+		:manner (x7 / under
+			:op1 (x8 / way))))
+
+# ::id 34
+# ::snt Naval Station San Diego for Saturday's change of command aboard the
+(x1 / country
+	:name (n / name
+		:op1 "Naval"
+		:op2 "Station"
+		:op3 "San"
+		:op4 "Diego")
+	:location-of (x8 / change-01
+		:ARG1 (x10 / command-02
+			:location (x11 / aboard))
+		:time (xap0 / date-entity
+			:weekday (x6 / saturday))))
+
+# ::id 35
+# ::snt Vincennes.
+(x1 / country
+	:name (n / name
+		:op1 "Vincennes"))
+
+# ::id 36
+# ::snt Rogers will be rotated to a new assignment at the Navy's
+(x4 / rotate-01
+	:ARG1 (x1 / organization
+		:name (n / name
+			:op1 "Rogers"))
+	:ARG2 (x8 / thing
+		:ARG1-of (a / assign-01)
+		:mod (x7 / new)
+		:ARG0 (x11 / military
+			:name (n1 / name
+				:op1 "Navy"))))
+
+# ::id 37
+# ::snt Tactical Training Group in San Diego. The new Vincennes commander
+(x1 / tactical
+	:location (x6 / country
+		:name (n / name
+			:op1 "Diego")
+		:location (x5 / country
+			:name (n1 / name
+				:op1 "San")))
+	:ARG3 (x11 / have-org-role-91
+		:ARG2 (c / commander)
+		:mod (x10 / country
+			:name (n2 / name
+				:op1 "Vincennes")
+			:mod (x9 / new))))
+
+# ::id 38
+# ::snt is Capt. Robert B. Lynch, who had been stationed in Washington,
+(x3 / name
+	:op1 "Robert"
+	:op2 "B."
+	:op3 "Lynch"
+	:ARG0-of (x2 / capt.)
+	:ARG1-of (x10 / station-01
+		:ARG2 (x12 / city
+			:name (n / name
+				:op1 "Washington"))))
+
+# ::id 39
+# ::snt D.C., and is assuming his fifth sea command.
+(x3 / and
+	:op1 (x5 / assume-02
+		:ARG0 (x1 / country
+			:name (n / name
+				:op1 "D.C."))
+		:ARG1 (x9 / command
+			:mod (x8 / sea))))
+
+# ::id 40
+# ::snt Rogers and his wife, Sharon, have been under guard by the Naval
+(x2 / and
+	:op1 (x1 / person
+		:name (n / name
+			:op1 "Rogers"))
+	:op2 (x4 / wife
+		:poss (x6 / person
+			:name (n1 / name
+				:op1 "Sharon")))
+	:time (x11 / person
+		:ARG0-of (g / guard-01))
+	:op1 (x14 / naval))
+
+# ::id 41
+# ::snt Investigative Service since a pipe bomb exploded under the family
+(x2 / country
+	:name (n / name
+		:op1 "Service")
+	:null_edge (x1 / company
+		:name (n1 / name
+			:op1 "Investigative"))
+	:null_edge (x7 / explode-01
+		:time (x3 / since)
+		:ARG1 (x6 / bomb
+			:mod (x5 / pipe))
+		:location (x10 / family)))
+
+# ::id 42
+# ::snt van Mrs. Rogers was driving to her teaching job March 10 in La
+(x5 / drive-02
+	:ARG0 (x3 / person
+		:name (n / name
+			:op1 "Rogers")
+		:null_edge (x1 / null_tag)
+		:ARG0-of (x2 / mrs.))
+	:ARG1 (x9 / job
+		:mod (x8 / teach-01))
+	:time (x10 / name
+		:op1 "March"
+		:op2 "10")
+	:location (x13 / la))
+
+# ::id 43
+# ::snt Jolla. She escaped injury.
+(x4 / escape-01
+	:ARG0 (x1 / person
+		:name (n / name
+			:op1 "Jolla"
+			:op2 "."
+			:op3 "She"))
+	:ARG1 (x5 / injure-01))
+
+# ::id 44
+# ::snt The FBI is investigating the attack as possible terrorist
+(x4 / investigate-01
+	:ARG0 (x2 / government-organization
+		:name (n / name
+			:op1 "FBI"))
+	:ARG1 (x6 / attack-01)
+	:ARG2 (x9 / terrorist
+		:mod (x8 / possible)))
+
+# ::id 45
+# ::snt retaliation for the airliner's destruction.
+(x1 / retaliate-01
+	:purpose (x6 / destroy-01
+		:ARG0 (x4 / airliner)))
+

@@ -1,0 +1,567 @@
+# ::id 1
+# ::snt GOVERNOR Bill Clinton of Arkansas was gambling yesterday that an
+(x7 / gamble
+	:ARG0 (x3 / person
+		:name (n / name
+			:op1 "Clinton")
+		:null_edge (x1 / null_tag)
+		:null_edge (x2 / person
+			:name (n1 / name
+				:op1 "Bill"))
+		:null_edge (x5 / country
+			:name (n2 / name
+				:op1 "Arkansas")))
+	:time (x8 / yesterday)
+	:name (x10 / name
+		:op1 "an"))
+
+# ::id 2
+# ::snt extraordinary prime-time television confession of 'wrongdoing' in his
+(x4 / confession
+	:mod (x1 / extraordinary)
+	:mod (x2 / prime-time)
+	:medium (x3 / television)
+	:ARG1 (x7 / wrongdoing))
+
+# ::id 3
+# ::snt marriage has salvaged his campaign for the Democratic presidential
+(x3 / salvage-01
+	:ARG1 (x1 / marry-01)
+	:ARG1 (x5 / campaign-01)
+	:ARG2 (xap0 / person
+		:ARG0-of (x9 / have-org-role-91
+			:ARG2 (p / president)
+			:mod (x8 / democratic))))
+
+# ::id 4
+# ::snt nomination.
+(x1 / nominate-01)
+
+# ::id 5
+# ::snt During a joint TV appearance with his wife, Hillary, Mr Clinton admitted his
+(x14 / admit-01
+	:purpose (x5 / appear-01
+		:manner (x3 / joint)
+		:null_edge (x4 / null_tag)
+		:ARG1 (x8 / wife
+			:mod (x10 / person
+				:name (n1 / name
+					:op1 "Hillary"))))
+	:ARG0 (x13 / person
+		:name (n / name
+			:op1 "Clinton")
+		:null_edge (x12 / mr)))
+
+# ::id 6
+# ::snt marriage had been rocky, but he denied allegations of a 12-year-long affair
+(x6 / contrast-01
+	:ARG1 (x4 / rocky
+		:domain (x1 / marry-01))
+	:ARG2 (x8 / deny-01
+		:ARG0 x1
+		:ARG1 (x9 / allege-01
+			:ARG1 (x13 / affair
+				:mod (x12 / person
+					:name (n / name
+						:op1 "12-year-long"))))))
+
+# ::id 7
+# ::snt with a former Arkansas state employee and part-time cabaret singer.
+(x7 / and
+	:op1 (x6 / person
+		:ARG1-of (e / employ-01)
+		:mod (x3 / former)
+		:mod (x5 / state
+			:location (x4 / country
+				:name (n / name
+					:op1 "Arkansas"))))
+	:op2 (x10 / sing-01
+		:mod (x8 / part-time)
+		:mod (x9 / cabaret)))
+
+# ::id 8
+# ::snt Ms Gennifer Flowers, the employee, last night held a news conference in New
+(x10 / hold-04
+	:ARG0 (x2 / newspaper
+		:name (n / name
+			:op1 "Gennifer"
+			:op2 "Flowers")
+		:ARG0-of (x1 / ms)
+		:ARG0-of (x6 / person
+			:ARG1-of (e / employ-01)))
+	:time (x9 / night
+		:mod (x8 / last))
+	:ARG1 (x13 / conference
+		:mod (x12 / news)))
+
+# ::id 9
+# ::snt York in which she accused Mr Clinton of lying when he claimed they were just
+(x1 / york
+	:null_edge (x5 / accuse-01
+		:ARG1 (x7 / person
+			:name (n / name
+				:op1 "Clinton"))
+		:ARG2 (x9 / lie-01
+			:ARG0 x7
+			:ARG1-of (x12 / claim-01
+				:mod (x15 / just)))))
+
+# ::id 10
+# ::snt friends. She said: 'I was Bill Clinton's lover for 12 years. . . he is
+(x4 / say-01
+	:ARG0 (x3 / she)
+	:ARG0 (x12 / lover
+		:poss x3
+		:domain (x7 / i)
+		:name (x9 / name
+			:op1 "Bill"
+			:op2 "Clinton")
+		:duration (x15 / temporal-quantity
+			:unit (y / year)
+			:quant 12)))
+
+# ::id 11
+# ::snt absolutely lying. I'm disappointed, but realistically I never thought he'd
+(x8 / contrast-01
+	:ARG1 (x6 / disappointed
+		:ARG1 (x2 / lie-01
+			:manner (x1 / absolute))
+		:domain (x4 / i))
+	:ARG2 (x12 / think-01
+		:ARG0 x4
+		:manner (x9 / realistically)
+		:ARG1 (x14 / would
+			:null_edge (x13 / he))))
+
+# ::id 12
+# ::snt come out and admit it.'
+(x3 / and
+	:op1 (x1 / come-01)
+	:op2 (x4 / admit-01))
+
+# ::id 13
+# ::snt In response to one question, she said the local Republican party in Arkansas
+(x2 / respond-01
+	:ARG1 (x5 / question-01
+		:quant 1)
+	:ARG0 (x7 / she)
+	:ARG1 (x12 / party
+		:mod (x10 / local)
+		:ARG1-of (xap1 / political-party
+			:ARG0-of (xap0 / name
+				:op1 "Republican")))
+	:location (x14 / country
+		:name (n / name
+			:op1 "Arkansas")))
+
+# ::id 14
+# ::snt had offered her money six months ago to reveal her affair with Mr Clinton,
+(x2 / offer-01
+	:ARG1 (x4 / money)
+	:time (x6 / temporal-quantity
+		:unit (m / month)
+		:quant (x5 / null_tag))
+	:purpose (x9 / reveal-01
+		:ARG1 (x11 / affair
+			:prep-with (x14 / person
+				:name (n / name
+					:op1 "Clinton")))))
+
+# ::id 15
+# ::snt but she had refused. She said she had lied to the press to protect him and
+(x7 / say-01
+	:ARG1 (x4 / refuse-01)
+	:ARG0 (x6 / she)
+	:ARG1 (x10 / lie-01
+		:ARG2 (x13 / press)
+		:purpose (x15 / protect-01
+			:ARG1 (x17 / and))))
+
+# ::id 16
+# ::snt that later she sold her story to a supermarket tabloid because he had
+(x4 / sell-01
+	:time (x2 / late)
+	:ARG0 (x3 / she)
+	:ARG1 (x6 / story)
+	:ARG2 (x10 / tabloid
+		:ARG1 (x9 / supermarket))
+	:ARG1-of (x11 / cause-01
+		:ARG0 (x13 / have-03
+			:ARG0 (x12 / he))))
+
+# ::id 17
+# ::snt angered her.
+(x1 / anger-01)
+
+# ::id 18
+# ::snt At the press conference Ms Flowers played 10 minutes of tape-recorded
+(x7 / play-07
+	:time (x4 / conference
+		:mod (x3 / press))
+	:ARG0 (x6 / flowers
+		:null_edge (x5 / ms))
+	:ARG1 (x9 / temporal-quantity
+		:unit (m / minute)
+		:quant 10
+		:mod (x11 / tape-recorded)))
+
+# ::id 19
+# ::snt telephone conversation she said was between her and Mr Clinton. Published
+(x12 / publish-01
+	:ARG1 (x2 / converse-01
+		:mod (x1 / telephone)
+		:ARG0-of (x4 / say-01))
+	:ARG2 (x8 / and))
+
+# ::id 20
+# ::snt excerpts of these tapes have so far proved inconclusive and questions have
+(x10 / and
+	:op1 (x8 / prove-01
+		:ARG0 (x1 / excerpt
+			:ARG1 (x4 / tape))
+		:ARG1 (x9 / inconclusive))
+	:op2 (x12 / have-03
+		:ARG0 x1
+		:ARG1 (x11 / question-01)))
+
+# ::id 21
+# ::snt surfaced about her credibility.
+(x1 / surface
+	:ARG1 (x4 / credibility))
+
+# ::id 22
+# ::snt Ms Flowers maintains she met Mr Clinton in 1979 and 1980 at the Excelsior
+(x3 / maintain-01
+	:ARG1 (x5 / meet-03
+		:ARG1 (x7 / person
+			:name (n / name
+				:op1 "Clinton"))
+		:time (x9 / date-entity
+			:year 1979
+			:part-of (x11 / date-entity
+				:year 1980))
+		:location (x14 / excelsior)))
+
+# ::id 23
+# ::snt Hotel in Little Rock. But the hotel did not open until 1982. She also claims
+(x17 / claim-01
+	:ARG1 (x1 / hotel
+		:location (x4 / country
+			:name (n / name
+				:op1 "Rock")
+			:null_edge (x3 / country
+				:name (n1 / name
+					:op1 "Little")))
+		:null_edge (x6 / contrast-01
+			:ARG2 (x11 / open-03
+				:ARG1 (x8 / hotel)
+				:time (x12 / until
+					:op1 (x13 / date-entity
+						:year 1982)))))
+	:ARG0 (x15 / she)
+	:mod (x16 / also))
+
+# ::id 24
+# ::snt to have reported on Mr Clinton while working with a local TV station, but
+(x15 / contrast-01
+	:ARG1 (x3 / report-01
+		:ARG0 (x6 / person
+			:name (n / name
+				:op1 "Clinton"))
+		:time (x8 / work-01
+			:location (x13 / station
+				:mod (x11 / local)
+				:null_edge (x12 / null_tag)))))
+
+# ::id 25
+# ::snt Little Rock's KARK-TV said it could find no tapes to support this.
+(x5 / say-01
+	:ARG0 (x4 / kark-tv
+		:null_edge (x1 / have-org-role-91
+			:ARG1 (c / country
+				:name (n / name
+					:op1 "Little"
+					:op2 "Rock"))))
+	:ARG1 (x7 / possible
+		:domain (x8 / find-01
+			:ARG1 (x10 / tape
+				:polarity -)
+			:ARG1 (x12 / support-01
+				:ARG1 (x13 / this)))))
+
+# ::id 26
+# ::snt Mr Clinton, the early front-runner for the Democratic nomination, was judged
+(x13 / judge-01
+	:ARG1 (x6 / front-runner
+		:mod (x2 / person
+			:name (n / name
+				:op1 "Clinton")
+			:null_edge (x1 / mr))
+		:time (x5 / early)
+		:purpose (x10 / nominate-01
+			:mod (x9 / democratic))))
+
+# ::id 27
+# ::snt yesterday to have taken a huge gamble by appearing on CBS's programme 'Sixty
+(x9 / appear-02
+	:time (x1 / yesterday)
+	:ARG1 (x7 / gamble
+		:mod (x6 / huge))
+	:ARG1 (x13 / program
+		:poss (x11 / organization
+			:name (n / name
+				:op1 "CBS"))))
+
+# ::id 28
+# ::snt Minutes', which generally attracts more than 30m viewers.
+(x1 / person
+	:name (n / name
+		:op1 "Minutes")
+	:null_edge (x6 / attract-01
+		:mod (x5 / general)
+		:ARG1 (x10 / viewer
+			:quant (x7 / more-than))))
+
+# ::id 29
+# ::snt Although his campaign advisers said the sex scandal rumours were drowning
+(x5 / say-01
+	:ARG0 (x4 / have-org-role-91
+		:ARG2 (p / person
+			:ARG0-of (a / advise-01))
+		:mod (x3 / campaign-01))
+	:ARG1 (x11 / drown
+		:ARG1 (x9 / rumor-01
+			:ARG1 (x8 / scandal
+				:mod (x7 / sex)))))
+
+# ::id 30
+# ::snt out the Arkansas governor's message to voters, the risk was his confessions
+(x14 / confession
+	:instrument (x6 / message
+		:ARG0 (x4 / have-org-role-91
+			:ARG2 (g / governor)
+			:ARG1 (x3 / country
+				:name (n / name
+					:op1 "Arkansas")))
+		:ARG1 (x8 / vote-01))
+	:domain (x11 / risk-01))
+
+# ::id 31
+# ::snt could draw further media scrutiny just three weeks before the critical New
+(x1 / possible
+	:domain (x2 / draw-02
+		:ARG1 (x5 / scrutiny
+			:degree (x3 / further)
+			:ARG0 (x4 / media))
+		:time (x9 / before
+			:mod (x6 / just)
+			:quant (x8 / temporal-quantity
+				:unit (w / week)
+				:quant 3)
+			:null_edge (x12 / null_tag
+				:mod (x11 / critical)))))
+
+# ::id 32
+# ::snt Hampshire primary election.
+(x2 / primary
+	:mod (x1 / country
+		:name (n / name
+			:op1 "Hampshire"))
+	:ARG1 (x3 / elect-01))
+
+# ::id 33
+# ::snt Mr Clinton, 46, appeared calm and good-humoured throughout the interview. 'I
+(x6 / appear-02
+	:ARG1 (x7 / calm
+		:domain (x2 / person
+			:name (n / name
+				:op1 "Clinton")
+			:null_edge (x1 / mr)
+			:null_edge 46)
+		:mod (x9 / good-humoured)
+		:medium (x12 / interview-01))
+	:ARG1 (x8 / and))
+
+# ::id 34
+# ::snt have acknowledged causing pain in my marriage,' he said. 'I have said things
+(x16 / say-01
+	:ARG1 (x11 / say-01
+		:ARG1 (x2 / acknowledge-01
+			:ARG0-of (x3 / cause-01
+				:ARG1 (x4 / pain-01)
+				:ARG1 (x7 / marry-01)))
+		:ARG0 (x14 / i))
+	:ARG0 x14
+	:ARG1 (x17 / thing))
+
+# ::id 35
+# ::snt to you tonight and to the American people from the beginning that no
+(x4 / and
+	:beneficiary (x2 / you
+		:mod (x3 / tonight)
+		:mod (x8 / people
+			:null_edge (x7 / country
+				:name (n / name
+					:op1 "American")))
+		:mod (x9 / from
+			:op2 (x11 / begin-01
+				:polarity -))))
+
+# ::id 36
+# ::snt American politician ever has.' But in response to a question on whether he
+(x7 / contrast-01
+	:ARG1-of (x4 / have-03
+		:ARG0 (x2 / politician)
+		:time (x3 / ever)
+		:ARG2-of (x9 / respond-01
+			:ARG1 (x12 / question-01))))
+
+# ::id 37
+# ::snt had ever committed adultery, Mr Clinton avoided a clear-cut response. 'I'm
+(x8 / avoid-01
+	:ARG1 (x3 / commit-01
+		:time (x2 / ever)
+		:ARG1 (x4 / adultery))
+	:ARG0 (x7 / person
+		:name (n / name
+			:op1 "Clinton")
+		:null_edge (x6 / mr))
+	:ARG1 (x11 / respond-01
+		:manner (x10 / clear-cut))
+	:ARG0 (x14 / i))
+
+# ::id 38
+# ::snt not prepared to say tonight that any married couple should ever discuss that
+(x2 / prepare-02
+	:ARG1 (x4 / say-01
+		:time (x5 / tonight)
+		:ARG1 (x10 / recommend-01
+			:ARG1 (x12 / discuss-01
+				:time (x11 / ever))
+			:ARG1 (xap0 / protect-01
+				:mod (x7 / any)
+				:ARG1 (x8 / person
+					:ARG1-of (m / marry-01))))))
+
+# ::id 39
+# ::snt with anyone but themselves.'
+(x / xconcept
+	:x (x2 / anyone)
+	:x (x3 / contrast-01))
+
+# ::id 40
+# ::snt He appealed to the US public for fairness and urged the media to respect his
+(x9 / and
+	:op1 (x2 / appeal-02
+		:ARG0 (x1 / he)
+		:ARG2 (x6 / public
+			:mod (x5 / country
+				:name (n / name
+					:op1 "US")))
+		:ARG1 (x8 / fair))
+	:op2 (x10 / urge-01
+		:ARG0 x1
+		:ARG1 (x12 / media)
+		:ARG2 (x14 / respect-01)))
+
+# ::id 41
+# ::snt privacy, instead of turning the 1992 campaign into a 'game of gotcha'.
+(x1 / privacy
+	:instrument-of (x5 / turn-02
+		:ARG1 (x8 / campaign-01
+			:time (x7 / date-entity
+				:year 1992))
+		:ARG2 (x12 / game
+			:mod (x14 / gotcha))))
+
+# ::id 42
+# ::snt Mr Clinton saw his popularity fall sharply last week among likely Democratic
+(xap0 / include-91
+	:ARG0 (x3 / see-01
+		:ARG0 (x2 / person
+			:name (n / name
+				:op1 "Clinton")
+			:null_edge (x1 / mr))
+		:ARG1 (x6 / fall-01
+			:ARG1 (x5 / popularity)
+			:manner (x7 / sharp))
+		:time (x9 / week
+			:mod (x8 / last)))
+	:op1 (x12 / democracy
+		:null_edge (x11 / likely)))
+
+# ::id 43
+# ::snt voters in New Hampshire, Reuter reports from Boston.
+(x7 / report-01
+	:ARG1 (x1 / vote-01
+		:location (x4 / country
+			:name (n2 / name
+				:op1 "Hampshire")
+			:null_edge (x3 / null_tag)))
+	:ARG0 (x6 / organization
+		:name (n / name
+			:op1 "Reuter"))
+	:ARG0 (x9 / city
+		:name (n1 / name
+			:op1 "Boston")))
+
+# ::id 44
+# ::snt In a poll by the American Research Group, which has conducted daily surveys
+(x3 / poll-01
+	:time (x4 / by
+		:null_edge (x8 / null_tag
+			:null_edge (x7 / null_tag)
+			:ARG1-of (x12 / conduct-01
+				:ARG1 (x14 / survey-01)))))
+
+# ::id 45
+# ::snt in advance of the February 18 primary, support for Mr Clinton fell 14
+(x13 / fall-01
+	:ARG4 (x2 / advance-01
+		:time (x6 / date-entity
+			:mod 2))
+	:ARG1 (x9 / support-01
+		:ARG0 (x12 / person
+			:name (n / name
+				:op1 "Clinton")))
+	:ARG1 14)
+
+# ::id 46
+# ::snt percentage points in five days last week.
+(x1 / percentage-entity
+	:time (x4 / date-entity
+		:time (x7 / week
+			:mod (x6 / last))))
+
+# ::id 47
+# ::snt The latest polling data put Mr Clinton in second place, with 25 per cent, to
+(x5 / put-01
+	:ARG0 (x4 / data
+		:time (x2 / late
+			:degree (m / most))
+		:mod (x3 / polling))
+	:ARG1 (x7 / person
+		:name (n / name
+			:op1 "Clinton"))
+	:ARG2 (x15 / monetary-quantity
+		:unit (c / cent)
+		:quant 25))
+
+# ::id 48
+# ::snt Mr Paul Tsongas, a former Massachusetts senator, who has 27 per cent of
+(x2 / person
+	:name (n / name
+		:op1 "Paul"
+		:op2 "Tsongas")
+	:ARG0-of (x8 / senator
+		:mod (x6 / former))
+	:ARG0-of (x14 / monetary-quantity
+		:unit (c / cent)
+		:quant (x12 / person
+			:op 27)))
+
+# ::id 49
+# ::snt voters' support.
+(x3 / support-01
+	:ARG1 (x1 / vote-01))
+

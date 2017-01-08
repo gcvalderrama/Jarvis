@@ -1,0 +1,935 @@
+# ::id 1
+# ::snt Columbia Savings & Loan Association has filed a
+(x7 / file-01
+	:ARG0 (x1 / government-organization
+		:name (n / name
+			:op1 "Columbia"
+			:op2 "Savings"
+			:op3 "&"
+			:op4 "Loan"
+			:op5 "Association"))
+	:ARG1 (x8 / name
+		:op1 "a"))
+
+# ::id 2
+# ::snt $6 billion civil lawsuit accusing Michael Milken and other former
+(x5 / lawsuit
+	:mod (x4 / civil)
+	:topic (x6 / accuse-01
+		:ARG2 (x9 / and
+			:op1 (x7 / name
+				:op1 "Michael"
+				:op2 "Milken"
+				:mod (x11 / former
+					:mod (x10 / other))))))
+
+# ::id 3
+# ::snt Drexel Burnham Lambert Inc. officials of fraudulently peddling junk
+(xap0 / person
+	:ARG1 (x1 / person
+		:name (n / name
+			:op1 "Drexel"
+			:op2 "Burnham"
+			:op3 "Lambert"))
+	:ARG0-of (x5 / have-org-role-91
+		:ARG2 (o / official)
+		:ARG1 (x4 / government-organization
+			:name (n1 / name
+				:op1 "Inc."))
+		:ARG1 (x8 / peddle
+			:manner (x7 / fraudulently)
+			:ARG1 (x9 / junk))))
+
+# ::id 4
+# ::snt bonds in the 1980s.
+(x1 / bond
+	:time (xap0 / date-entity
+		:time (x4 / date-entity)))
+
+# ::id 5
+# ::snt The lawsuit, filed Wednesday by the failing savings and loan,
+(x2 / lawsuit
+	:ARG1-of (x4 / file-02
+		:time (x5 / wednesday)
+		:ARG0 (x10 / and
+			:op1 (x9 / savings
+				:ARG1-of (x8 / fail-01))
+			:op2 (x11 / loan-01))))
+
+# ::id 6
+# ::snt claims that Milken and others manipulated and coerced Columbia and
+(x1 / claim-01
+	:ARG1 (x7 / and
+		:op1 (x6 / manipulate-02
+			:ARG0 (x4 / and
+				:op1 (x3 / person
+					:name (n / name
+						:op1 "Milken"))
+				:op2 (x5 / other))
+			:ARG2 (x10 / and
+				:op1 (x8 / coerce-01
+					:ARG1 (x9 / country
+						:name (n1 / name
+							:op1 "Columbia")))))))
+
+# ::id 7
+# ::snt other thrifts into buying billions of dollars worth of the risky
+(x2 / thrift
+	:mod (x1 / other)
+	:ARG2 (x4 / buy-01
+		:ARG1 (x5 / billion
+			:mod (x7 / monetary-quantity
+				:unit (d / dollar)
+				:mod (x11 / risky)))))
+
+# ::id 8
+# ::snt high-yield bonds.
+(x2 / bond
+	:mod (x1 / high-yield))
+
+# ::id 9
+# ::snt "Absent such deceit and manipulations it would have been clear
+(x5 / and
+	:op1 (x4 / deceive-01
+		:mod (x2 / absent-01)
+		:mod (x3 / such))
+	:op2 (x6 / manipulate-01)
+	:op1 (x11 / clear))
+
+# ::id 10
+# ::snt that the market for junk bonds was highly illiquid and that junk
+(x10 / and
+	:op1 (x9 / illiquid
+		:domain (x3 / market
+			:poss (x6 / bond
+				:mod (x5 / junk)))
+		:degree (x8 / high))
+	:op2 (x12 / junk
+		:ARG0 x3))
+
+# ::id 11
+# ::snt bonds were unsuitable investments for savings and loan
+(x4 / invest-01
+	:ARG0 (x1 / bond)
+	:ARG1-of (x3 / suit-01)
+	:ARG2 (x7 / and
+		:op1 (x6 / savings)
+		:op2 (x8 / loan-01)))
+
+# ::id 12
+# ::snt institutions," the suit says.
+(x6 / say-01
+	:ARG1 (x1 / institution)
+	:ARG0 (x5 / suit-01))
+
+# ::id 13
+# ::snt Columbia once was a major Drexel customer. It holds a junk bond
+(x10 / hold-01
+	:ARG0 (x7 / customer
+		:ARG0 (x1 / government-organization
+			:name (n / name
+				:op1 "Columbia"))
+		:mod (x5 / major)
+		:mod (x6 / organization
+			:name (n1 / name
+				:op1 "Drexel")))
+	:ARG0 (x9 / it)
+	:ARG1 (x13 / bond
+		:mod (x12 / junk)))
+
+# ::id 14
+# ::snt portfolio with a face value of over $4 billion, the largest of any
+(x1 / portfolio
+	:ARG2 (x5 / value-01
+		:ARG2 (x7 / over
+			:null_edge (x13 / large
+				:degree (m / most)
+				:ARG1-of (x4 / face-01)
+				:mod (x15 / any)))))
+
+# ::id 15
+# ::snt thrift. Milken had a close business relationship with former
+(x4 / have-03
+	:ARG0 (x3 / person
+		:name (n / name
+			:op1 "Milken")
+		:null_edge (x1 / thrift))
+	:ARG1 (x8 / relationship
+		:mod (x6 / close)
+		:mod (x7 / business)
+		:mod (x10 / former)))
+
+# ::id 16
+# ::snt Columbia chairman Thomas Spiegel, who resigned last year.
+(x3 / name
+	:op1 "Thomas"
+	:op2 "Spiegel"
+	:ARG0-of (x2 / chairman
+		:ARG1 (x1 / government-organization
+			:name (n / name
+				:op1 "Columbia")))
+	:ARG0-of (x7 / person
+		:ARG0-of (r / resign-01)
+		:time (x9 / year
+			:mod (x8 / last))))
+
+# ::id 17
+# ::snt Milken, the former head of Drexel's Beverly Hills, Calif.-based
+(x1 / country
+	:name (n / name
+		:op1 "Milken")
+	:null_edge (x5 / head-01
+		:mod (x4 / former)
+		:ARG1 (x7 / organization
+			:name (n1 / name
+				:op1 "Drexel")
+			:null_edge (x10 / country
+				:name (n2 / name
+					:op1 "Hills")
+				:null_edge (x9 / country
+					:name (n3 / name
+						:op1 "Beverly"))))))
+
+# ::id 18
+# ::snt junk bond department, was sentenced last month to 10 years in
+(x6 / sentence-01
+	:ARG1 (x3 / department
+		:mod (x2 / bond
+			:ARG1 (x1 / junk)))
+	:time (x8 / month
+		:mod (x7 / last))
+	:ARG2 (x11 / temporal-quantity
+		:unit (y / year)
+		:quant 10))
+
+# ::id 19
+# ::snt prison for six felonies related to illegal trading practices. None
+(x11 / none
+	:mod (x1 / prison
+		:duration (x4 / felony
+			:quant 6)
+		:ARG1-of (x5 / relate-01
+			:ARG2 (x9 / practice
+				:mod (x7 / law
+					:polarity -)
+				:mod (x8 / trade-01)))))
+
+# ::id 20
+# ::snt of the charges involved junk bonds.
+(x4 / involve-01
+	:ARG2 (x3 / thing
+		:ARG2-of (c / charge-05))
+	:ARG1 (x6 / bond
+		:mod (x5 / junk)))
+
+# ::id 21
+# ::snt The lawsuit by Columbia, filed in U.S. District Court in Los
+(x2 / lawsuit
+	:ARG0 (x4 / organization
+		:name (n / name
+			:op1 "Columbia"))
+	:ARG1-of (x6 / file-01
+		:location (x9 / government-organization
+			:name (n1 / name
+				:op1 "District"
+				:op2 "Court")
+			:location (x12 / country
+				:name (n2 / name
+					:op1 "Los")))))
+
+# ::id 22
+# ::snt Angeles, names Milken, nine other Drexel officials and more than
+(x10 / and
+	:op1 (x1 / angeles)
+	:op2 (x3 / name-01)
+	:op6 (x11 / more)
+	:op1 (xap0 / person
+		:quant 9
+		:ARG0-of (x9 / have-org-role-91
+			:ARG2 (o / official)
+			:mod (x7 / other)
+			:ARG1 (x8 / organization
+				:name (n / name
+					:op1 "Drexel")))))
+
+# ::id 23
+# ::snt 100 investment partnerships sponsored by the collapsed Wall Street
+(x3 / partner-01
+	:quant 100
+	:mod (x2 / invest-01)
+	:ARG1-of (x4 / sponsor-01
+		:ARG0 (x9 / street
+			:ARG1-of (x7 / collapse-01)
+			:null_edge (x8 / null_tag))))
+
+# ::id 24
+# ::snt firm.
+(x1 / firm)
+
+# ::id 25
+# ::snt It alleges that the thrift lost more than $2 billion on
+(x2 / allege-01
+	:ARG1 (x6 / lose-02
+		:ARG0 (x5 / thrift)
+		:ARG1 (x7 / more-than)))
+
+# ::id 26
+# ::snt investments in junk bonds and seeks three times that amount under
+(x5 / and
+	:op1 (x1 / invest-01
+		:ARG2 (x4 / bond
+			:mod (x3 / junk)))
+	:op2 (x6 / seek-01
+		:ARG1 (x10 / amount-02)))
+
+# ::id 27
+# ::snt federal racketeering and antitrust laws.
+(x3 / and
+	:op1 (x2 / racketeer-00
+		:mod (x1 / government-organization
+			:name (n / name
+				:op1 "federal")))
+	:op2 (x5 / law
+		:mod (x4 / antitrust)))
+
+# ::id 28
+# ::snt Columbia, based in Beverly Hills, said in the lawsuit that
+(x8 / say-01
+	:ARG0 (x1 / country
+		:name (n / name
+			:op1 "Columbia")
+		:ARG1-of (x3 / base-02
+			:location (x6 / country
+				:name (n1 / name
+					:op1 "Hills")
+				:null_edge (x5 / country
+					:name (n2 / name
+						:op1 "Beverly")))))
+	:ARG0 (x11 / lawsuit))
+
+# ::id 29
+# ::snt Milken and other Drexel officials manipulated, coerced and deceived
+(x9 / and
+	:op1 (x6 / manipulate-02
+		:ARG0 (x2 / and
+			:op1 (x1 / person
+				:name (n / name
+					:op1 "Milken")
+				:ARG0-of (x5 / have-org-role-91
+					:ARG2 (o / official)
+					:mod (x3 / other)
+					:ARG1 (x4 / organization
+						:name (n1 / name
+							:op1 "Drexel"))))))
+	:op2 (x8 / coerce-01)
+	:op2 (x10 / deceive-01))
+
+# ::id 30
+# ::snt the thrift by promising that the market for the bonds would remain
+(x2 / thrift
+	:domain (x12 / remain-01
+		:ARG3 (x4 / promise-01
+			:ARG0 (x7 / market
+				:poss (x10 / bond)))
+		:ARG1 x7))
+
+# ::id 31
+# ::snt active and the thrift would make money.
+(x6 / make-02
+	:ARG1 (x2 / and
+		:op1 (x1 / active)
+		:op2 (x4 / thrift))
+	:ARG1 (x7 / money))
+
+# ::id 32
+# ::snt In a statement, a spokesman for Milken said the lawsuit was
+(x3 / state-01
+	:ARG0 (xap0 / person
+		:ARG0-of (x6 / have-org-role-91
+			:ARG2 (s / spokesman)
+			:ARG1 (x8 / person
+				:name (n / name
+					:op1 "Milken"))))
+	:ARG1 (xap1 / have-purpose-91
+		:ARG1 (x11 / lawsuit)))
+
+# ::id 33
+# ::snt without merit. The statement said Columbia was an independent
+(x5 / state-01
+	:manner (x2 / merit-01)
+	:ARG0-of (x10 / depend-01
+		:polarity -
+		:ARG0 (x7 / government-organization
+			:name (n / name
+				:op1 "Columbia"))))
+
+# ::id 34
+# ::snt institution that made its own investment decisions, often in
+(x1 / institution
+	:ARG1 (x7 / decide-01
+		:ARG1 (x6 / invest-01)
+		:frequency (x9 / often)))
+
+# ::id 35
+# ::snt disagreement with Milken.
+(x1 / disagree-01
+	:ARG2 (x3 / person
+		:name (n / name
+			:op1 "Milken")))
+
+# ::id 36
+# ::snt "It is outrageous now to blame Michael Milken for losses as a
+(x4 / outrageous
+	:domain (x2 / it)
+	:time (x5 / now)
+	:domain (x7 / blame-01
+		:ARG1 (x8 / name
+			:op1 "Michael"
+			:op2 "Milken")))
+
+# ::id 37
+# ::snt result of strategies and decisions that were implemented long after
+(x1 / result-01
+	:ARG1 (x4 / and
+		:op1 (x3 / strategy
+			:location-of (x8 / implement-01
+				:duration (x9 / long)
+				:time (x10 / after)))
+		:op2 (x5 / decide-01)))
+
+# ::id 38
+# ::snt he was no longer active at Drexel Burnham Lambert, and which he did
+(x11 / and
+	:op2 (x14 / do-02
+		:mod (x5 / active
+			:domain (x1 / he)
+			:polarity -
+			:location (x7 / government-organization
+				:name (n / name
+					:op1 "Drexel"
+					:op2 "Burnham"
+					:op3 "Lambert")))))
+
+# ::id 39
+# ::snt not endorse or agree with," the statement said.
+(x9 / state-01
+	:ARG1 (x3 / or
+		:op1 (x2 / endorse-01)
+		:op2 (x4 / agree-01)))
+
+# ::id 40
+# ::snt Milken resigned from Drexel last year but the statement said he
+(x7 / contrast-01
+	:ARG1 (x2 / resign-01
+		:ARG0 (x1 / person
+			:name (n / name
+				:op1 "Milken"))
+		:ARG0 (x4 / organization
+			:name (n1 / name
+				:op1 "Drexel"))
+		:time (x6 / year
+			:mod (x5 / last))
+		:ARG1 (x9 / state-01)))
+
+# ::id 41
+# ::snt had gradually reduced his day-to-day activity after he was linked
+(x3 / reduce-01
+	:manner (x2 / gradual)
+	:ARG1 (x6 / activity
+		:mod (x5 / day-to-day))
+	:time (x7 / after
+		:op1 (x10 / link-01)))
+
+# ::id 42
+# ::snt to the government's Wall Street investigation in late 1986.
+(x7 / investigate-01
+	:ARG0 (x3 / government-organization
+		:ARG0-of (g / govern-01))
+	:null_edge (x5 / null_tag)
+	:null_edge (x6 / null_tag)
+	:time (x9 / late
+		:op1 (x10 / date-entity
+			:year 1986)))
+
+# ::id 43
+# ::snt It said the lawsuit amounts to "shifting the blame to the most
+(x2 / say-01
+	:ARG1 (x5 / amount-02
+		:ARG0 (x4 / lawsuit)
+		:ARG1-of (xap0 / cause-01
+			:ARG1 (x8 / shift-01
+				:ARG1 (x10 / blame-01)
+				:ARG2 (x13 / most)))))
+
+# ::id 44
+# ::snt convenient scapegoat on the financial scene - Michael Milken - who
+(x2 / scapegoat-01
+	:mod (x1 / convenient)
+	:time (x6 / scene
+		:mod (x5 / finance))
+	:name (x8 / name
+		:op1 "Michael"
+		:op2 "Milken"))
+
+# ::id 45
+# ::snt has been blamed for every problem facing the U.S. economy except
+(x3 / blame-01
+	:ARG2 (x6 / problem
+		:mod (x5 / every)
+		:ARG1-of (x7 / face-01
+			:ARG1 (x10 / economy
+				:mod (x9 / country
+					:name (n / name
+						:op1 "U.S.")))
+			:ARG2-of (x11 / except-00))))
+
+# ::id 46
+# ::snt the Iraqi invasion of Kuwait."
+(x3 / invade-01
+	:mod (x2 / country
+		:name (n / name
+			:op1 "Iraq"))
+	:ARG1 (x5 / country
+		:name (n1 / name
+			:op1 "Kuwait")))
+
+# ::id 47
+# ::snt The lawsuit joins scores of other civil complaints against
+(x3 / join-01
+	:ARG0 (x2 / lawsuit)
+	:ARG1 (x8 / complain-01
+		:mod (x6 / other)
+		:mod (x7 / civil)))
+
+# ::id 48
+# ::snt Milken for alleged wrongdoing related to his guilty plea as well as
+(x1 / country
+	:name (n / name
+		:op1 "Milken")
+	:null_edge (x4 / wrongdoing
+		:ARG1-of (x3 / allege-01)
+		:ARG1-of (x5 / relate-01
+			:ARG2 (x9 / plead-02
+				:mod (x8 / guilty-41)))))
+
+# ::id 49
+# ::snt other trading activity during his tenure at Drexel, which is now in
+(x3 / activity
+	:mod (x1 / other)
+	:topic (x2 / trade-01)
+	:time (x6 / tenure
+		:location (x8 / organization
+			:name (n / name
+				:op1 "Drexel")
+			:null_edge (x12 / now))))
+
+# ::id 50
+# ::snt federal bankruptcy court proceedings.
+(x4 / proceeding
+	:ARG0 (x1 / government-organization
+		:name (n / name
+			:op1 "federal"))
+	:mod (x2 / bankrupt-01)
+	:mod (x3 / court))
+
+# ::id 51
+# ::snt The 176-page lawsuit by Columbia also claims that Milken and
+(x7 / claim-01
+	:ARG0 (x3 / lawsuit
+		:mod (x2 / 176-page))
+	:ARG0 (x5 / organization
+		:name (n / name
+			:op1 "Columbia"))
+	:mod (x6 / also)
+	:ARG1 (x9 / person
+		:name (n1 / name
+			:op1 "Milken")
+		:mod (x8 / that))
+	:ARG1 (x10 / and))
+
+# ::id 52
+# ::snt other Drexel employees appropriated stock in buyouts for themselves
+(x4 / appropriate-01
+	:ARG0 (x3 / person
+		:ARG1-of (e / employ-01)
+		:mod (x1 / other)
+		:mod (x2 / organization
+			:name (n / name
+				:op1 "Drexel")))
+	:ARG1 (x5 / stock)
+	:location (x7 / buyout))
+
+# ::id 53
+# ::snt via the investment partnerships that should have gone to junk bond
+(x4 / partner-01
+	:ARG1 (x3 / invest-01)
+	:ARG1-of (x6 / recommend-01
+		:ARG1 (x8 / go-13
+			:ARG4 (x11 / bond
+				:mod (x10 / junk)))))
+
+# ::id 54
+# ::snt buyers in the deals.
+(x1 / person
+	:ARG0-of (b / buy-01)
+	:location (x4 / deal-01))
+
+# ::id 55
+# ::snt The suit accuses Milken and others of manipulating the junk bond
+(x3 / accuse-01
+	:ARG0 (x2 / suit-01)
+	:ARG2 (x5 / and
+		:op1 (x4 / person
+			:name (n / name
+				:op1 "Milken"))
+		:op2 (x6 / other))
+	:ARG2 (x8 / manipulate-02
+		:ARG0 x5
+		:ARG1 (x11 / bond
+			:mod (x10 / junk))))
+
+# ::id 56
+# ::snt market, giving bribes and stock investment opportunities to some
+(x1 / market
+	:domain (x3 / give-01
+		:ARG1 (x5 / and
+			:op1 (x4 / bribe-01)
+			:op2 (x8 / opportunity
+				:mod (x7 / invest-01
+					:mod (x6 / stock))))
+		:null_edge (x10 / some)))
+
+# ::id 57
+# ::snt thrift executives, misappropriating valuable stock interests in
+(x4 / misappropriate
+	:ARG1 (x7 / interest
+		:ARG1-of (x5 / value-01)
+		:mod (x6 / stock))
+	:ARG0 (xap0 / person
+		:ARG0-of (x2 / have-org-role-91
+			:ARG2 (e / executive)
+			:ARG1 (x1 / thrift))))
+
+# ::id 58
+# ::snt junk bond deals, skimming profits from junk bond trading, and
+(x12 / and
+	:op1 (x3 / deal-01
+		:ARG1 (x1 / junk)
+		:ARG1 (x2 / bond)
+		:ARG0-of (x5 / skim-01
+			:ARG1 (x6 / profit-01
+				:source (x10 / trade-01
+					:ARG1 (x8 / junk)
+					:ARG1 (x9 / bond))))))
+
+# ::id 59
+# ::snt controlling through illegal means a web of thrifts and other
+(x1 / control-01
+	:ARG1 (x4 / mean
+		:mod (x3 / law
+			:polarity -))
+	:ARG1 (x6 / web
+		:consist-of (x9 / and
+			:op1 (x8 / thrift)
+			:op2 (x10 / other))))
+
+# ::id 60
+# ::snt investors in junk bonds.
+(x4 / bond
+	:mod (x1 / invest-01)
+	:mod (x3 / junk))
+
+# ::id 61
+# ::snt Columbia was one of many savings and loans, big investors and
+(x1 / country
+	:name (n / name
+		:op1 "Columbia")
+	:null_edge (x7 / and
+		:op1 (x6 / savings
+			:quant (x5 / many))
+		:op2 (x8 / loan-01)
+		:op2 (x12 / and
+			:op2 (x11 / person
+				:ARG0-of (i / invest-01)
+				:mod (x10 / big)))))
+
+# ::id 62
+# ::snt other institutions that invested heavily in deals financed or
+(x2 / institution
+	:mod (x1 / other)
+	:ARG2-of (x4 / invest-01
+		:mod (x5 / heavily)
+		:ARG2 (x9 / or
+			:op2 (x7 / deal-01)
+			:op1 (x8 / thing
+				:manner-of (f / finance-01)))))
+
+# ::id 63
+# ::snt supported by Drexel in the 1980s.
+(x1 / support-01
+	:ARG0 (x3 / organization
+		:name (n / name
+			:op1 "Drexel"))
+	:time (xap0 / date-entity
+		:time (x6 / date-entity)))
+
+# ::id 64
+# ::snt Columbia says in the suit that its junk bonds have a total face
+(x2 / say-01
+	:ARG0 (x1 / country
+		:name (n / name
+			:op1 "Columbia"))
+	:ARG0 (x5 / suit-01
+		:ARG0-of (x10 / have-03
+			:ARG0 (x9 / bond
+				:mod (x8 / junk))
+			:ARG1 (x13 / face
+				:mod (x12 / total-01)))))
+
+# ::id 65
+# ::snt value of $4.3 billion, but that it has written down their value to
+(x7 / contrast-01
+	:ARG1 (x1 / value-01)
+	:ARG2 (x11 / write-01
+		:ARG1 (x14 / value-01)))
+
+# ::id 66
+# ::snt $2.5 billion to account for the decline in their market price. It
+(x5 / account
+	:ARG2 (x8 / decline-01
+		:ARG1-of (x12 / price-01
+			:ARG1 (x11 / market)))
+	:mod (x14 / it))
+
+# ::id 67
+# ::snt also says it has suffered actual losses of $200 million through the
+(x2 / say-01
+	:mod (x1 / also)
+	:ARG1 (x5 / suffer-01
+		:mod (x6 / actual)))
+
+# ::id 68
+# ::snt sale of some bonds.
+(x1 / sale
+	:null_edge (x4 / bond
+		:quant (x3 / some)))
+
+# ::id 69
+# ::snt The suit says Columbia was "ill-equipped" to make use of
+(x3 / say-01
+	:ARG0 (x2 / suit-01)
+	:ARG1 (x7 / ill-equipped
+		:domain (x4 / government-organization
+			:name (n / name
+				:op1 "Columbia"))
+		:domain (x11 / use-01
+			:null_edge (x12 / include-91))))
+
+# ::id 70
+# ::snt relaxed federal laws in the early 1980s that allowed thrifts to
+(x1 / relax-01
+	:ARG1 (x3 / law
+		:mod (x2 / government-organization
+			:name (n / name
+				:op1 "federal")))
+	:time (xap0 / date-entity
+		:time (x7 / date-entity
+			:ARG0-of (x9 / allow-01
+				:time (x6 / early)
+				:ARG1 (x10 / thrift)))))
+
+# ::id 71
+# ::snt invest in corporate securities such as junk bonds. It alleges that
+(x11 / allege-01
+	:ARG1 (x1 / invest-01
+		:ARG2 (x4 / thing
+			:ARG0-of (s / secure-02)
+			:mod (x3 / corporation)
+			:example (x8 / bond
+				:mod (x7 / junk)))))
+
+# ::id 72
+# ::snt Milken and the others exploited this weakness.
+(x5 / exploit-01
+	:ARG0 (x2 / and
+		:op1 (x1 / person
+			:name (n / name
+				:op1 "Milken"))
+		:op2 (x4 / other))
+	:ARG1 (x7 / weak-41
+		:mod (x6 / this)))
+
+# ::id 73
+# ::snt The savings and loan is expected to be take over soon by the
+(x6 / expect-01
+	:ARG1 (x3 / and
+		:op1 (x2 / savings)
+		:op2 (x4 / loan-01))
+	:ARG1 (x9 / take-01
+		:mod (x10 / over)
+		:time (x11 / soon)))
+
+# ::id 74
+# ::snt Federal Deposit Insurance Corp. as part of the nation's costly
+(x1 / government-organization
+	:name (n / name
+		:op1 "Federal"
+		:op2 "Deposit"
+		:op3 "Insurance"
+		:op4 "Corp.")
+	:poss (x9 / nation
+		:mod (x11 / costly)))
+
+# ::id 75
+# ::snt thrift bailout.
+(x2 / bail-02
+	:ARG1 (x1 / thrift))
+
+# ::id 76
+# ::snt The FDIC and Resolution Trust Corp., which administers the
+(x3 / and
+	:op1 (x2 / country
+		:name (n / name
+			:op1 "FDIC"))
+	:op2 (x4 / company
+		:name (n1 / name
+			:op1 "Resolution"
+			:op2 "Trust"
+			:op3 "Corp.")
+		:ARG1-of (x9 / administer-01)))
+
+# ::id 77
+# ::snt failed thrifts, already have filed a claim for $4.5 billion against
+(x6 / file-01
+	:ARG0 (x2 / thrift
+		:ARG1-of (x1 / fail-01))
+	:time (x4 / already)
+	:ARG1 (x8 / claim-02)
+	:ARG1 (x13 / against))
+
+# ::id 78
+# ::snt Drexel in federal bankruptcy court alleging that fraudulent junk
+(x6 / allege-01
+	:ARG1 (x1 / country
+		:name (n / name
+			:op1 "Drexel"))
+	:ARG1 (x5 / court
+		:mod (x4 / bankrupt-01
+			:mod (x3 / government-organization
+				:name (n1 / name
+					:op1 "federal"))))
+	:ARG1 (x9 / junk
+		:mod (x8 / fraudulent)))
+
+# ::id 79
+# ::snt bond dealings caused Columbia heavy losses.
+(x3 / cause-01
+	:ARG0 (x2 / deal-01
+		:mod (x1 / bond))
+	:ARG0 (x4 / government-organization
+		:name (n / name
+			:op1 "Columbia")
+		:mod (x5 / heavy)))
+
+# ::id 80
+# ::snt Also named in the Milken lawsuit are former Drexel chief
+(x2 / name-02
+	:mod (x1 / also)
+	:ARG2 (x6 / lawsuit
+		:mod (x5 / person
+			:name (n / name
+				:op1 "Milken")))
+	:ARG2 (x10 / chief
+		:mod (x8 / former)
+		:ARG1 (x9 / organization
+			:name (n1 / name
+				:op1 "Drexel"))))
+
+# ::id 81
+# ::snt executive Frederick Joseph; Milken's brother, Lowell, also a former
+(x / xconcept
+	:x (x4 / and
+		:op1 (x2 / name
+			:op1 "Frederick"
+			:op2 "Joseph"
+			:ARG0-of (x1 / executive))
+		:op3 (x7 / brother
+			:poss (x5 / person
+				:name (n1 / name
+					:op1 "Milken")))
+		:op3 (x9 / person
+			:name (n / name
+				:op1 "Lowell")
+			:null_edge (x13 / former
+				:mod (x11 / also)))))
+
+# ::id 82
+# ::snt Drexel executive; Peter Ackerman, Drexel's former chief of capital
+(x / xconcept
+	:x (x3 / and
+		:op1 (x2 / executive
+			:ARG1 (x1 / organization
+				:name (n / name
+					:op1 "Drexel")))
+		:op2 (x4 / name
+			:op1 "Peter"
+			:op2 "Ackerman"
+			:ARG0-of (x10 / have-org-role-91
+				:ARG2 (c / chief)
+				:ARG1 (x7 / organization
+					:name (n1 / name
+						:op1 "Drexel"))
+				:mod (x9 / former)
+				:ARG1 (x12 / capital)))))
+
+# ::id 83
+# ::snt markets; and other officials.
+(x / xconcept
+	:x (x2 / and
+		:op2 (x3 / and
+			:op1 (x1 / market))
+		:op3 (xap0 / person
+			:ARG0-of (x5 / have-org-role-91
+				:ARG2 (o / official)
+				:mod (x4 / other)))))
+
+# ::id 84
+# ::snt As part of his settlement of criminal and civil charges by the
+(x5 / settle-02
+	:ARG1 (x10 / charge-05
+		:ARG2 (x8 / and
+			:op1 (x7 / crime)
+			:op2 (x9 / civil))))
+
+# ::id 85
+# ::snt government, Milken has agreed to place $400 million in a fund to
+(x5 / agree-01
+	:ARG0 (x1 / government-organization
+		:ARG0-of (g / govern-01))
+	:ARG0 (x3 / person
+		:name (n / name
+			:op1 "Milken"))
+	:ARG1 (x7 / place-01
+		:ARG0 x1
+		:ARG0 x3
+		:prep-in (x13 / fund)))
+
+# ::id 86
+# ::snt compensate investors harmed by his actions. But he would remain
+(x8 / contrast-01
+	:ARG2 (x1 / compensate-01
+		:ARG2 (x2 / person
+			:ARG0-of (i / invest-01)
+			:ARG1-of (x3 / harm-01
+				:ARG0 (x6 / action))))
+	:ARG2 (x11 / remain-01
+		:ARG1 x2
+		:ARG1 (x9 / he)))
+
+# ::id 87
+# ::snt liable for awards exceeding the amount in the fund.
+(x1 / liable-41
+	:ARG2 (x4 / exceed-01
+		:ARG1 (x6 / amount
+			:quant-of (x9 / fund))))
+

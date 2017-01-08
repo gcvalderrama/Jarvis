@@ -1,0 +1,309 @@
+# ::id 1
+# ::snt A form of blood cancer that strikes children
+(x2 / form
+	:mod (x5 / cancer
+		:mod (x4 / blood)
+		:ARG0-of (x7 / person
+			:name (n / name
+				:op1 "strikes")
+			:ARG1 (x8 / child))))
+
+# ::id 2
+# ::snt appears to be sometimes linked with genetic damage that hinders the
+(x1 / appear-02
+	:ARG1 (x5 / link-01
+		:frequency (x4 / sometimes)
+		:ARG1 (x8 / damage-01
+			:ARG1 (x7 / gene)
+			:ARG0-of (x10 / hinder-01))))
+
+# ::id 3
+# ::snt body's ability to make interferon, according to a study published
+(x11 / study-01
+	:ARG0 (x3 / ability
+		:ARG0 (x1 / body)
+		:null_edge (x6 / interferon))
+	:ARG1-of (x12 / publish-01))
+
+# ::id 4
+# ::snt today.
+(x1 / today)
+
+# ::id 5
+# ::snt The researchers speculate that genes that oversee the body's
+(x3 / speculate-01
+	:ARG0 (x2 / person
+		:ARG0-of (r / research-01))
+	:ARG1 (x5 / gene
+		:ARG0-of (x7 / oversee-01
+			:ARG1 (x9 / body))))
+
+# ::id 6
+# ::snt production of interferon, a disease-fighting substance, may play a
+(x9 / possible
+	:domain (x10 / play-01
+		:ARG1 (x3 / interferon
+			:mod (x7 / substance
+				:mod (x6 / disease-fighting)))))
+
+# ::id 7
+# ::snt role in warding off the development of cancer.
+(x1 / role
+	:purpose (x3 / ward-01
+		:ARG1 (x6 / develop-02
+			:ARG1 (x8 / cancer))))
+
+# ::id 8
+# ::snt The researchers speculate that the interferon genes may act as
+(x3 / speculate-01
+	:ARG0 (x2 / person
+		:ARG0-of (r / research-01))
+	:ARG1 (x8 / possible
+		:domain (x9 / act-02
+			:ARG0 (x7 / gene
+				:mod (x6 / interferon)))))
+
+# ::id 9
+# ::snt regulators that stop the body's cells from becoming cancerous.
+(x1 / regulator
+	:ARG0-of (x3 / stop-01
+		:ARG1 (x7 / cell
+			:part-of (x5 / body))
+		:ARG2 (x9 / become-01
+			:ARG2 (x10 / cancerous))))
+
+# ::id 10
+# ::snt The researchers, based at the University of Chicago, found an
+(x11 / find-02
+	:ARG0 (x2 / person
+		:ARG0-of (r / research-01)
+		:ARG1-of (x4 / base-02
+			:location (x7 / government-organization
+				:name (n / name
+					:op1 "University"
+					:op2 "of"
+					:op3 "Chicago")))
+		:quant (x12 / name
+			:op1 "an")))
+
+# ::id 11
+# ::snt association between loss of the genes and development of acute
+(x1 / associate-01
+	:null_edge (x7 / and
+		:op1 (x3 / loss)
+		:op2 (x6 / gene)
+		:op2 (x8 / develop-02
+			:ARG1 (x10 / acute))))
+
+# ::id 12
+# ::snt lymphoblastic leukemia, the most common form of childhood leukemia.
+(x2 / disease
+	:name (n / name
+		:op1 "leukemia")
+	:mod (x1 / lymphoblastic)
+	:condition (x10 / disease
+		:name (n1 / name
+			:op1 "leukemia")
+		:mod (x6 / common
+			:degree (x5 / most))
+		:mod (x9 / childhood)))
+
+# ::id 13
+# ::snt They tested 62 patients with this kind of leukemia and found
+(x10 / and
+	:op1 (x2 / test-01
+		:ARG0 (x1 / they)
+		:ARG1 (x4 / patient
+			:quant 62)
+		:ARG1 (x9 / disease
+			:name (n / name
+				:op1 "leukemia")
+			:mod (x7 / kind
+				:mod (x6 / this))))
+	:op2 (x11 / find-01
+		:ARG0 x1))
+
+# ::id 14
+# ::snt that 29 percent of them were missing the interferon genes.
+(x7 / miss-03
+	:ARG1 (x4 / include-91
+		:ARG3 (x3 / percentage-entity
+			:mod (x1 / that)
+			:value 29))
+	:ARG1 (x10 / gene
+		:mod (x9 / interferon)))
+
+# ::id 15
+# ::snt Their work, directed by Dr. Manuel O. Diaz, was published in the
+(x12 / publish-01
+	:ARG1 (x2 / work-01
+		:ARG1-of (x4 / direct-01
+			:ARG0 (x7 / name
+				:op1 "Manuel"
+				:op2 "O."
+				:op3 "Diaz"))))
+
+# ::id 16
+# ::snt New England Journal of Medicine. It adds to the growing list of
+(x8 / add-02
+	:ARG0 (x3 / journal
+		:null_edge (x1 / null_tag)
+		:poss (x2 / country
+			:name (n / name
+				:op1 "England"))
+		:ARG1 (x5 / medicine))
+	:ARG0 (x7 / it)
+	:ARG2 (x12 / list-01
+		:ARG1-of (x11 / grow-01)
+		:ARG1-of (x13 / include-91)))
+
+# ::id 17
+# ::snt cancers that have been associated with the presence or absence of
+(x1 / cancer
+	:ARG1-of (x5 / associate-01
+		:ARG2 (x9 / or
+			:op1 (x8 / presence
+				:ARG1-of (x11 / include-91))
+			:op2 (x10 / absent-01))))
+
+# ::id 18
+# ::snt particular genes.
+(x2 / gene
+	:mod (x1 / particular))
+
+# ::id 19
+# ::snt Some genes, known oncogenes, are though to trigger cancer.
+(x2 / gene
+	:quant (x1 / some)
+	:polarity (x5 / oncogene
+		:ARG1-of (x4 / know-01))
+	:domain (x10 / trigger-01
+		:ARG1 (x11 / cancer)))
+
+# ::id 20
+# ::snt Cancer can also occur when other genes, known as anti-oncogenes,
+(x / xconcept
+	:x (x1 / cancer
+		:mod (x2 / possible
+			:mod (x3 / also)
+			:domain (x7 / gene
+				:mod (x6 / other))))
+	:x (x9 / know-01
+		:ARG2 (x11 / anti-oncogene)))
+
+# ::id 21
+# ::snt are missing.
+(x2 / miss-03)
+
+# ::id 22
+# ::snt Interferon plays a variety of roles in regulating the body's
+(x2 / play-02
+	:ARG0 (x1 / interferon)
+	:ARG3 (x8 / regulate-01
+		:ARG1 (x4 / variety)
+		:ARG1 (x10 / body)))
+
+# ::id 23
+# ::snt immune defenses and controlling cell growth.
+(x3 / and
+	:op1 (x2 / defense
+		:mod (x1 / immune))
+	:op2 (x6 / grow-01
+		:ARG1 (x5 / cell
+			:mod (x4 / control-01))))
+
+# ::id 24
+# ::snt The production of two forms of interferon, known as alpha and
+(x12 / and
+	:op1 (x2 / produce-01
+		:ARG1 (x7 / interferon
+			:mod (x5 / form
+				:quant 2
+				:ARG1-of (x9 / know-01
+					:ARG2 (x11 / alpha))))))
+
+# ::id 25
+# ::snt beta-1, are controlled by two genes that are close together on
+(x4 / control-01
+	:ARG0 (x7 / gene
+		:quant 2
+		:ARG1-of (x10 / close-41)))
+
+# ::id 26
+# ::snt chromosome 9 in the body's library of genes.
+(x1 / chromosome
+	:quant 9
+	:null_edge (x7 / library
+		:part-of (x5 / body)
+		:ARG1 (x9 / gene)))
+
+# ::id 27
+# ::snt In the latest work, the researchers found that this section of
+(x8 / find-02
+	:location (x4 / work-01
+		:time (x3 / late
+			:degree (m / most)))
+	:ARG0 (x7 / person
+		:ARG0-of (r / research-01))
+	:location (x11 / section
+		:mod (x10 / this)))
+
+# ::id 28
+# ::snt the chromosome was frequently missing in those with acute
+(x5 / miss-03
+	:ARG0 (x2 / chromosome)
+	:frequency (x4 / frequent)
+	:ARG1 (x9 / acute))
+
+# ::id 29
+# ::snt lymphoblastic leukemia. However, they left open the possibility
+(x2 / disease
+	:name (n / name
+		:op1 "leukemia")
+	:mod (x1 / lymphoblastic)
+	:null_edge (x7 / leave-01
+		:mod (x8 / open)
+		:ARG1 (x10 / possible)))
+
+# ::id 30
+# ::snt that some other gene in this region besides those that make
+(x4 / gene
+	:mod (x2 / some)
+	:mod (x3 / other)
+	:location (x7 / region
+		:mod (x6 / this)
+		:ARG0-of (x11 / make-02)))
+
+# ::id 31
+# ::snt interferon could also be the tumor-suppressing gene.
+(x2 / possible
+	:mod (x3 / also)
+	:domain (x7 / gene
+		:ARG0 (x1 / interferon)
+		:mod (x6 / tumor-suppressing)))
+
+# ::id 32
+# ::snt Acute lymphoblastic leukemia accounts for about one-quarter of
+(x4 / account
+	:ARG0 (x3 / disease
+		:name (n / name
+			:op1 "leukemia")
+		:mod (x1 / acute)
+		:mod (x2 / lymphoblastic))
+	:ARG1 (x7 / event
+		:name (n1 / name
+			:op1 "one-quarter")))
+
+# ::id 33
+# ::snt all childhood cancers. It strikes one in every 30,000 children.
+(x3 / cancer
+	:quant (x1 / all)
+	:mod (x2 / childhood)
+	:ARG1 (x6 / person
+		:name (n / name
+			:op1 "strikes")
+		:ARG1 1
+		:ARG1 (x11 / child
+			:mod (x9 / every)
+			:quant (x10 / 30,000))))
+

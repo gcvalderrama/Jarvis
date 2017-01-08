@@ -1,0 +1,784 @@
+# ::id 1
+# ::snt An administrative law judge ruled Tuesday that President Bush's son, Neil, violated conflict-of-interest regulations in the failure of a Denver thrift and recommended that Neil be restricted in any future roles with financial institutions
+(x5 / rule-03
+	:ARG1 (x25 / and
+		:op1 (x15 / violate-01
+			:ARG0 (x11 / son
+				:poss (x9 / person
+					:name (n / name
+						:op1 "Bush")
+					:ARG0-of (x8 / have-org-role-91
+						:ARG2 (p / president)))
+				:mod (x13 / person
+					:name (n1 / name
+						:op1 "Neil")))
+			:ARG1 (x17 / regulate-01
+				:mod (x16 / conflict-of-interest))
+			:manner (x20 / fail-01
+				:ARG1 (x24 / thrift
+					:mod (x23 / city
+						:name (n3 / name
+							:op1 "Denver")))))
+		:op2 (x26 / recommend-01
+			:ARG0 x11
+			:ARG1 (x30 / restrict-01
+				:ARG1 (x28 / person
+					:name (n2 / name
+						:op1 "Neil"))
+				:ARG1 (x37 / institution
+					:mod (x32 / any)
+					:mod (x33 / future)
+					:mod (x36 / finance)))))
+	:ARG0 (xap1 / person
+		:ARG0-of (xap0 / have-org-role-91
+			:ARG3 (x4 / judge-01
+				:mod (x3 / law
+					:mod (x2 / administrate-01)))))
+	:time (xap2 / date-entity
+		:weekday (x6 / tuesday)))
+
+# ::id 2
+# ::snt The judge agreed with federal regulators that Neil Bush failed to properly disclose his business relationships with two of the largest borrowers at Silverado Banking, Savings & Loan Assn., where An administrative law judge was a director for three years
+(x3 / agree-01
+	:ARG1 (x6 / regulator
+		:mod (x5 / government-organization
+			:name (n / name
+				:op1 "federal")))
+	:ARG1 (x10 / fail-01
+		:ARG1 (x8 / newspaper
+			:name (n1 / name
+				:op1 "Neil"
+				:op2 "Bush"))
+		:ARG2 (x13 / disclose-01
+			:ARG0 x8
+			:manner (x12 / proper)
+			:ARG1 (x16 / relationship
+				:mod (x15 / business)
+				:prep-with (x22 / borrower
+					:quant 2
+					:location (xap3 / person
+						:mod (x21 / large
+							:degree (m / most))
+						:value (x30 / organization
+							:name (n2 / name
+								:op1 "Assn.")
+							:null_edge (x25 / political-party
+								:name (n3 / name
+									:op1 "Banking"
+									:op2 ","
+									:op3 "Savings"
+									:op4 "&"
+									:op5 "Loan")
+								:mod (x24 / organization
+									:name (n4 / name
+										:op1 "Silverado"))))
+						:ARG0-of (x39 / have-org-role-91
+							:ARG2 (d / director)
+							:duration (x42 / temporal-quantity
+								:unit (y / year)
+								:quant 3))
+						:ARG0-of (xap2 / have-org-role-91
+							:ARG3 (x36 / judge-01
+								:mod (x35 / law
+									:mod (x34 / administrate-01)))))))))
+	:ARG0 (xap1 / person
+		:ARG0-of (xap0 / have-org-role-91
+			:ARG3 (x2 / judge-01))))
+
+# ::id 3
+# ::snt Bush " engaged in unsafe and unsound practices involving multiple conflicts of interests, " said the judge, who works for the Office of Thrift Supervision, which regulates thrifts and brought the civil charges against Bush
+(x16 / say-01
+	:ARG1 (x3 / engage-01
+		:ARG1 (x1 / person
+			:name (n / name
+				:op1 "Bush"))
+		:ARG2 (x6 / and
+			:op1 (x5 / safe
+				:polarity -)
+			:op2 (x7 / sound
+				:polarity -)
+			:op2 (x8 / practice
+				:ARG2-of (x9 / involve-01
+					:ARG1 (x11 / conflict-01
+						:quant (x10 / multiple)
+						:topic (x13 / interest))))))
+	:ARG0 (xap1 / person
+		:ARG0-of (xap0 / have-org-role-91
+			:ARG3 (x18 / judge-01
+				:ARG1-of (x21 / work
+					:ARG3 (x24 / office
+						:null_edge (x32 / and
+							:op1 (x30 / regulate-01
+								:ARG1 (x31 / thrift
+									:poss (x27 / organization
+										:name (n1 / name
+											:op1 "Supervision")
+										:null_edge (x26 / organization
+											:name (n3 / name
+												:op1 "Thrift")))))
+							:op2 (x33 / bring-01
+								:ARG0 x31
+								:ARG1 (x36 / charge-05
+									:mod (x35 / civil)
+									:ARG1 (x38 / person
+										:name (n2 / name
+											:op1 "Bush")))))))))))
+
+# ::id 4
+# ::snt Bush contested the allegations at a hearing in Denver last September, and his attorney said Tuesday that the judge's decision would be appealed to the director of OTS
+(x13 / and
+	:op1 (x2 / contest-01
+		:ARG0 (x1 / person
+			:name (n / name
+				:op1 "Bush"))
+		:ARG1 (x4 / allege-01)
+		:time (x11 / date-entity
+			:mod (x10 / last)))
+	:time (x7 / hearing
+		:location (x9 / city
+			:name (n1 / name
+				:op1 "Denver")))
+	:op2 (x16 / say-01
+		:ARG0 (x15 / attorney)
+		:ARG1 (x25 / appeal-01
+			:ARG2 (x22 / decide-01
+				:ARG0 (xap2 / person
+					:ARG0-of (xap1 / have-org-role-91
+						:ARG3 (x20 / judge-01))))
+			:ARG2 (x28 / have-org-role-91
+				:ARG2 (d / director)))
+		:time (xap0 / date-entity
+			:weekday (x17 / tuesday))))
+
+# ::id 5
+# ::snt If the ruling is upheld, the attorney said his attorney will take the matter to federal appeals court
+(x9 / say-01
+	:time (x5 / uphold-01
+		:ARG1 (x3 / rule-03))
+	:ARG0 (x8 / attorney)
+	:ARG1 (x13 / take-01
+		:ARG0 (x11 / attorney)
+		:destination (x19 / court
+			:mod (x18 / appeal-01
+				:mod (x17 / government-organization
+					:name (n / name
+						:op1 "federal"))))))
+
+# ::id 6
+# ::snt " James E. Nesland do n't think the ruling sounds any more logical or rational than when OTS argued Office of Thrift Supervision, " said James E. Nesland, Bush's attorney
+(x26 / say-01
+	:ARG1 (x7 / think-01
+		:ARG0 (x2 / person
+			:name (n1 / name
+				:op1 "James"
+				:op2 "E."
+				:op3 "Nesland"))
+		:ARG1 (x10 / sound-01
+			:null_edge (x9 / rule-03)
+			:ARG2 (x14 / or
+				:op1 (x13 / logic
+					:mod (x11 / any)
+					:degree (x12 / more)
+					:compared-to (x19 / argue-02
+						:ARG0 (x18 / organization
+							:name (n3 / name
+								:op1 "OTS"))
+						:ARG1 (x20 / office
+							:topic (x23 / supervision
+								:null_edge (x22 / thrift)))))
+				:op2 (x15 / rational))))
+	:ARG0 (x27 / person
+		:name (n / name
+			:op1 "James"
+			:op2 "E."
+			:op3 "Nesland")
+		:ARG0-of (x33 / attorney
+			:ARG1 (x31 / person
+				:name (n2 / name
+					:op1 "Bush")))))
+
+# ::id 7
+# ::snt " When we go to a real court with real judges, James E. Nesland expect to have a contradictory decision and have a real court with real judges decided on the merits .
+(x16 / expect-01
+	:time (x4 / go-02
+		:ARG1 (x3 / we)
+		:ARG4 (x8 / court
+			:mod (x7 / real))
+		:ARG1 (xap1 / person
+			:ARG0-of (xap0 / have-org-role-91
+				:ARG3 (x11 / judge-01
+					:mod (x10 / real)))))
+	:ARG0 (x13 / person
+		:name (n / name
+			:op1 "James"
+			:op2 "E."
+			:op3 "Nesland"))
+	:ARG1 (x22 / and
+		:op1 (x18 / have-03
+			:ARG1 (x21 / decide-01
+				:mod (x20 / contradictory)))
+		:ARG0-of (x30 / decide-01
+			:ARG0 (x26 / court
+				:mod (x25 / real))
+			:ARG1 (x33 / merit-01)
+			:ARG0 (xap3 / person
+				:ARG0-of (xap2 / have-org-role-91
+					:ARG3 (x29 / judge-01
+						:mod (x28 / real)))))))
+
+# ::id 8
+# ::snt OTS could have sought a ban that would have barred Bush from being involved with a bank or savings institution ever again
+(x2 / possible
+	:domain (x4 / seek-01
+		:ARG0 (x1 / organization
+			:name (n / name
+				:op1 "OTS"))
+		:ARG1 (x6 / ban-01
+			:ARG1-of (x10 / bar-01
+				:ARG1 (x11 / person
+					:name (n1 / name
+						:op1 "Bush"))
+				:ARG2 (x14 / involve-01
+					:ARG1 (x18 / or
+						:op1 (x17 / bank)
+						:op3 (x20 / institution
+							:mod (x19 / savings)))
+					:mod (x22 / again
+						:mod (x21 / ever)))))))
+
+# ::id 9
+# ::snt But the agency had requested only a so-called cease-and-desist order to restrict Bush's activities
+(x1 / contrast-01
+	:ARG2 (x5 / request-01
+		:ARG1 (x12 / restrict-01
+			:ARG1 (x15 / activity
+				:mod (x6 / only)
+				:poss (x13 / person
+					:name (n / name
+						:op1 "Bush"))))))
+
+# ::id 10
+# ::snt Daniel J. Davidson, the administrative law judge, recommended that Bush be required to obtain a lawyer's advice on potential conflicts if a lawyer's takes another position at a financial institution
+(x10 / recommend-01
+	:ARG0 (x3 / person
+		:name (n / name
+			:op1 "Davidson")
+		:null_edge (x1 / null_tag)
+		:null_edge (x2 / null_tag)
+		:null_edge (xap0 / have-org-role-91
+			:ARG3 (x8 / judge-01
+				:mod (x6 / administrate-01)
+				:mod (x7 / law))))
+	:ARG1 (x14 / require-01
+		:ARG1 (x12 / person
+			:name (n1 / name
+				:op1 "Bush"))
+		:ARG1 (x16 / obtain-01
+			:ARG0 x12
+			:ARG1 (x20 / advise-01
+				:ARG2 (x23 / conflict-01
+					:mod (x22 / potential)))
+			:ARG0 (x26 / lawyer
+				:ARG1 (x30 / position
+					:mod (x29 / another))
+				:location (x34 / institution
+					:mod (x33 / finance))))))
+
+# ::id 11
+# ::snt The judge also said Bush should make a full disclosure of his business deals annually and abstain from voting on issues where President Bush's has an interest if President Bush's joins another institution
+(x4 / say-01
+	:mod (x3 / also)
+	:ARG1 (x6 / recommend-01
+		:ARG1 (x7 / make-01
+			:ARG0 (x5 / person
+				:name (n / name
+					:op1 "Bush"))
+			:ARG1 (x10 / disclosure
+				:mod (x9 / full)
+				:ARG1 (x14 / deal-01
+					:mod (x13 / business)))
+			:null_edge (x16 / and
+				:op2 (x17 / abstain-01
+					:ARG0 x5
+					:ARG1 (x19 / vote-01
+						:ARG1 (x21 / issue
+							:topic (x28 / interest-01
+								:ARG0 (x24 / person
+									:name (n1 / name
+										:op1 "Bush")
+									:ARG0-of (x23 / have-org-role-91
+										:ARG2 (p / president)))
+								:ARG2 (x33 / join-02
+									:ARG0 (x31 / person
+										:name (n2 / name
+											:op1 "Bush")
+										:ARG0-of (x30 / have-org-role-91
+											:ARG2 (p1 / president)))
+									:ARG1 (x35 / institution
+										:mod (x34 / another))))))))))
+	:ARG0 (xap1 / person
+		:ARG0-of (xap0 / have-org-role-91
+			:ARG3 (x2 / judge-01))))
+
+# ::id 12
+# ::snt The White House press office said President Bush would have no comment on the judge's findings
+(x6 / say-01
+	:ARG0 (x5 / office
+		:poss (x2 / white)
+		:mod (x4 / press
+			:mod (x3 / government-organization
+				:name (n1 / name
+					:op1 "House"))))
+	:ARG1 (x12 / comment-01
+		:ARG0 (x8 / person
+			:name (n / name
+				:op1 "Bush")
+			:ARG0-of (x7 / have-org-role-91
+				:ARG2 (p / president)))
+		:polarity -
+		:ARG1 (x17 / thing
+			:ARG1-of (f / find-01)
+			:ARG0 (xap1 / person
+				:ARG0-of (xap0 / have-org-role-91
+					:ARG3 (x15 / judge-01))))))
+
+# ::id 13
+# ::snt When the allegations first surfaced, the President said the President had full faith in the President son, but the President vowed to stay out of the legal process
+(x9 / say-01
+	:time (x5 / surface
+		:ARG1 (x3 / allege-01))
+	:ARG0 (x8 / have-org-role-91
+		:ARG2 (p / president))
+	:ARG1 (x20 / contrast-01
+		:null_edge (x11 / have-org-role-91
+			:ARG2 (p1 / president))
+		:ARG2 (x14 / faith
+			:mod (x13 / full))
+		:ARG2 (x18 / son
+			:ARG0-of (x17 / have-org-role-91
+				:ARG2 (p2 / president)))
+		:ARG2 (x23 / vow-01
+			:ARG0 (x22 / have-org-role-91
+				:ARG2 (p3 / president))
+			:ARG1 (x25 / stay-01
+				:ARG0 x22
+				:ARG1 (x30 / process)))))
+
+# ::id 14
+# ::snt Neil Bush, a Denver oilman, was a director of Silverado from 1985 to 1988
+(x10 / have-org-role-91
+	:ARG2 (d / director)
+	:ARG0 (x1 / newspaper
+		:name (n / name
+			:op1 "Neil"
+			:op2 "Bush")
+		:ARG0-of (x6 / oilman
+			:location (x5 / city
+				:name (n1 / name
+					:op1 "Denver"))
+			:ARG1-of (x11 / include-91)))
+	:time (x16 / date-entity
+		:year 1988))
+
+# ::id 15
+# ::snt President Bush's resigned when President Bush's father was nominated to the Republican presidential ticket
+(x4 / resign-01
+	:ARG0 (x2 / person
+		:name (n / name
+			:op1 "Bush")
+		:ARG0-of (x1 / have-org-role-91
+			:ARG2 (p / president)))
+	:time (x11 / nominate-01
+		:ARG2 (x9 / father
+			:poss (x7 / person
+				:name (n1 / name
+					:op1 "Bush")
+				:ARG0-of (x6 / have-org-role-91
+					:ARG2 (p1 / president))))
+		:ARG2 (x16 / ticket
+			:null_edge "Republican"
+			:ARG0 (xap0 / person
+				:ARG0-of (x15 / have-org-role-91
+					:ARG2 (p2 / president))))))
+
+# ::id 16
+# ::snt Later that year, regulators seized Silverado and declared Later that year insolvent
+(x8 / and
+	:op1 (x6 / seize-01
+		:time (x1 / late
+			:time (x3 / year
+				:mod (x2 / that)))
+		:ARG0 (x5 / regulator)
+		:ARG1 (x7 / person
+			:name (n / name
+				:op1 "Silverado"))
+		:ARG1 (x13 / insolvent
+			:ARG1-of (x9 / declare-02)
+			:time (x10 / late
+				:time (x12 / year)))))
+
+# ::id 17
+# ::snt Later that year failure is expected to cost the taxpayers $ 1 billion
+(x6 / expect-01
+	:time (x1 / late
+		:op1 (x3 / year))
+	:ARG1 (x8 / cost-01
+		:ARG1 (x4 / fail-01)))
+
+# ::id 18
+# ::snt At the center of the allegations against Bush were President Bush's relationships with two Colorado developers, Bill L. Walters and Kenneth M. Good
+(x13 / relationship
+	:location (x3 / center
+		:poss (x6 / thing
+			:ARG1-of (a / allege-01)
+			:ARG1 (x8 / person
+				:name (n2 / name
+					:op1 "Bush"))))
+	:poss (x11 / person
+		:name (n / name
+			:op1 "Bush")
+		:ARG0-of (x10 / have-org-role-91
+			:ARG2 (p / president)))
+	:prep-with (x17 / person
+		:ARG0-of (d / develop-02)
+		:quant 2
+		:location (x16 / country
+			:name (n1 / name
+				:op1 "Colorado"))
+		:example (x22 / and
+			:op2 (x19 / name
+				:op1 "Bill"
+				:op2 "L."
+				:op3 "Walters")
+			:op2 (x23 / name
+				:op1 "Kenneth"
+				:op2 "M."
+				:op3 "Good"))))
+
+# ::id 19
+# ::snt The two developers ultimately defaulted on more than $ 100 million in loans from Silverado, which helped bring about its collapse, according to regulators
+(x5 / default
+	:ARG0 (x3 / person
+		:ARG0-of (d / develop-02)
+		:quant 2)
+	:time (x4 / ultimate)
+	:ARG1 (x13 / loan-01
+		:ARG0-of (x18 / help-01
+			:ARG2 (xap0 / say-01
+				:ARG1 (x7 / more-than)
+				:domain (x19 / bring-01
+					:ARG1 (x22 / collapse-01))
+				:ARG0-of (x26 / regulator)))))
+
+# ::id 20
+# ::snt The regulators charged that Neil Bush failed to disclose adequately to his fellow directors that President Bush's had extensive business dealings with the developers at a time that his fellow directors were receiving loans from Silverado
+(x3 / charge-05
+	:ARG0 (x2 / regulator)
+	:ARG1 (x7 / fail-01
+		:ARG1 (x5 / newspaper
+			:name (n / name
+				:op1 "Neil"
+				:op2 "Bush"))
+		:ARG2 (x9 / disclose-01
+			:ARG0 x5
+			:manner (x10 / adequate)
+			:ARG2 (x14 / director
+				:mod (x13 / fellow))
+			:ARG1 (x19 / have-03
+				:ARG0 (x17 / person
+					:name (n1 / name
+						:op1 "Bush")
+					:ARG0-of (x16 / have-org-role-91
+						:ARG2 (p / president)))
+				:ARG1 (x22 / deal-01
+					:mod (x20 / extensive)
+					:mod (x21 / business)
+					:ARG0-of (x34 / receive-01
+						:ARG0 (x25 / person
+							:ARG0-of (d / develop-02))
+						:ARG1 (x32 / director
+							:mod (x31 / fellow))
+						:ARG1 (x35 / loan-01)
+						:ARG0 (x37 / country
+							:name (n2 / name
+								:op1 "Silverado"))))))))
+
+# ::id 21
+# ::snt According to the charges, Neil Bush violated President Bush's duties by voting to approve loans to Walters without disclosing the extent of Bill L. Walters business deals with Walters and President Bush's personally arranged for Walters to receive a $ 900,000 line of credit from Silverado
+(x8 / violate-01
+	:ARG2 (x4 / charge-05)
+	:ARG0 (x6 / newspaper
+		:name (n / name
+			:op1 "Neil"
+			:op2 "Bush"))
+	:ARG1 (x12 / duty
+		:poss (x10 / person
+			:name (n1 / name
+				:op1 "Bush")
+			:ARG0-of (x9 / have-org-role-91
+				:ARG2 (p / president))))
+	:instrument (x14 / vote-01
+		:ARG1 (x16 / approve-01
+			:ARG1 (x17 / loan-01
+				:ARG2 (x19 / person
+					:name (n2 / name
+						:op1 "Walters")))
+			:manner (x21 / disclose-01
+				:ARG1 (x23 / extent
+					:poss (x29 / deal-01
+						:name (x25 / name
+							:op1 "Bill"
+							:op2 "L."
+							:op3 "Walters")
+						:mod (x28 / business)
+						:accompanier (x32 / and
+							:op1 (x31 / person
+								:name (n3 / name
+									:op1 "Walters"))
+							:op2 (x37 / arrange-01
+								:ARG0 (x34 / person
+									:name (n4 / name
+										:op1 "Bush")
+									:ARG0-of (x33 / have-org-role-91
+										:ARG2 (p1 / president)))
+								:manner (x36 / personal)
+								:ARG2 (x41 / receive-01
+									:ARG0 (x39 / person
+										:name (n5 / name
+											:op1 "Walters"))
+									:ARG1 (x45 / line
+										:mod (x43 / country
+											:name (n7 / name
+												:op1 "$")
+											:null_edge (x44 / monetary-quantity
+												:unit (y / yuan)))
+										:mod (x47 / credit-02))
+									:ARG2 (x49 / country
+										:name (n6 / name
+											:op1 "Silverado")))))))))))
+
+# ::id 22
+# ::snt The regulators also accused Bush of failing to tell his fellow directors that Good was preparing to invest $ 3 million in Bush's oil drilling firm at a time Good told Silverado Bush of failing to tell his fellow directors that Good was preparing to invest $ 3 million in Bush's oil drilling firm at a time Good was broke and could not make Bush of failing to tell his fellow directors that Good was preparing to invest $ 3 million in Bush's oil drilling firm at a time Good loan payments
+(x4 / accuse-01
+	:ARG0 (x2 / regulator)
+	:mod (x3 / also)
+	:ARG1 (x5 / person
+		:name (n / name
+			:op1 "Bush"))
+	:ARG2 (x7 / fail-01
+		:ARG2 (x9 / tell-01
+			:ARG1 (x12 / director
+				:mod (x11 / fellow))
+			:ARG1 (x16 / prepare-02
+				:ARG0 (x14 / person
+					:name (n1 / name
+						:op1 "Good"))
+				:ARG1 (x18 / invest-01
+					:ARG2 (x27 / firm
+						:poss (x23 / person
+							:name (n2 / name
+								:op1 "Bush"))
+						:mod (x25 / oil)
+						:purpose (x26 / drill-01))
+					:ARG2 (x32 / tell-01
+						:ARG2 (x34 / person
+							:name (n3 / name
+								:op1 "Bush"))
+						:ARG1 (x36 / fail-01
+							:ARG2 (x38 / tell-01
+								:ARG1 (x41 / director
+									:mod (x40 / fellow))
+								:ARG1 (x45 / prepare-02
+									:ARG0 (x43 / person
+										:name (n4 / name
+											:op1 "Good"))
+									:ARG1 (x47 / invest-01
+										:ARG2 (x56 / firm
+											:poss (x52 / person
+												:name (n5 / name
+													:op1 "Bush"))
+											:mod (x54 / oil)
+											:purpose (x55 / drill-01))
+										:ARG2 (x64 / possible
+											:domain (x60 / person
+												:mod (g / good))
+											:domain (x66 / make-01
+												:ARG1 (x67 / person
+													:name (n6 / name
+														:op1 "Bush"))
+												:ARG0 (x69 / fail-01
+													:ARG2 (x71 / tell-01
+														:ARG1 (x74 / director
+															:mod (x73 / fellow))
+														:ARG1 (x78 / prepare-02
+															:ARG0 (x76 / person
+																:name (n7 / name
+																	:op1 "Good"))
+															:ARG1 (x80 / invest-01
+																:ARG2 (x89 / firm
+																	:poss (x85 / person
+																		:name (n8 / name
+																			:op1 "Bush"))
+																	:mod (x87 / oil)
+																	:purpose (x88 / drill-01))
+																:ARG1 (x95 / payment
+																	:mod (x93 / person
+																		:mod (g1 / good))
+																	:mod (x94 / loan-01))))))))))))))))))
+
+# ::id 23
+# ::snt Good also loaned Bush $ 100,000 that was never repaid
+(x3 / loan-01
+	:ARG0 (x1 / person
+		:mod (g / good))
+	:mod (x2 / also)
+	:ARG0 (x4 / person
+		:name (n / name
+			:op1 "Bush"))
+	:ARG1 (x5 / country
+		:name (n1 / name
+			:op1 "$")
+		:quant (x6 / monetary-quantity
+			:unit (y / yuan)))
+	:ARG1 (x10 / repay-01))
+
+# ::id 24
+# ::snt In Kenneth M. Good ruling, Davidson accepted the agency's allegations concerning the conflict-of-interest violations and said federal regulators constituted unsafe practices
+(x17 / and
+	:op1 (x8 / accept-01
+		:ARG0 (x2 / person
+			:name (n / name
+				:op1 "Kenneth")
+			:ARG0-of (x5 / rule-03
+				:null_edge (x3 / null_tag)
+				:mod (x4 / person
+					:name (n2 / name
+						:op1 "Good"))))
+		:ARG0 (x7 / person
+			:name (n1 / name
+				:op1 "Davidson"))
+		:ARG1 (x12 / allege-01
+			:ARG0-of (x13 / concern-02
+				:ARG1 (x16 / violate-01
+					:ARG1 (x15 / conflict-of-interest)))))
+	:op2 (x18 / say-01
+		:ARG0 x7
+		:ARG1 (x21 / constitute-01
+			:ARG0 (x20 / regulator
+				:mod (x19 / government-organization
+					:name (n3 / name
+						:op1 "federal")))
+			:ARG1 (x23 / practice-01
+				:mod (x22 / safe
+					:polarity -)))))
+
+# ::id 25
+# ::snt Rep. Henry B. Gonzalez (D-Tex .
+(x2 / name
+	:op1 "Henry"
+	:op2 "B."
+	:op3 "Gonzalez"
+	:op4 "-LRB-"
+	:op5 "D-Tex"
+	:ARG0-of (x1 / rep.))
+
+# ::id 26
+# ::snt , chairman of the House Banking Committee, said in an interview that the administrative judge's decision seemed appropriate to the actions of Bush, who testified at hearings conducted earlier this year by the committee
+(x9 / say-01
+	:time (x12 / interview-01
+		:ARG0-of (x2 / have-org-role-91
+			:ARG2 (c / chairman)
+			:ARG1 (x6 / government-organization
+				:name (n / name
+					:op1 "Banking"
+					:op2 "Committee")
+				:ARG0-of (x5 / have-org-role-91
+					:ARG1 (g / government-organization
+						:name (n2 / name
+							:op1 "House"))))))
+	:ARG1 (x19 / seem-01
+		:mod (x20 / appropriate
+			:domain (x18 / thing
+				:ARG1-of (d / decide-01)
+				:ARG0-of (xap0 / have-org-role-91
+					:ARG3 (x16 / judge-01
+						:mod (x15 / administrate-01))))
+			:ARG0 (x25 / person
+				:name (n1 / name
+					:op1 "Bush")
+				:ARG0-of (x28 / testify-01
+					:time (x30 / hearing
+						:ARG1-of (x31 / conduct-01
+							:time (x32 / early
+								:op1 (x34 / year
+									:mod (x33 / this)))
+							:ARG0 (x37 / committee))))))))
+
+# ::id 27
+# ::snt " Frankly, Rep. Henry B. Gonzalez -LRB- D-Tex . -RRB- own opinion is that chairman of the House Banking Committee was a little minnow swimming with a bunch of barracudas, " said Gonzalez
+(x34 / say-01
+	:ARG0 (x13 / opine-01
+		:ARG1 (x25 / minnow
+			:domain (x16 / have-org-role-91
+				:ARG2 (c / chairman)
+				:ARG1 (x20 / government-organization
+					:name (n1 / name
+						:op1 "Banking"
+						:op2 "Committee")
+					:ARG0-of (x19 / have-org-role-91
+						:ARG1 (g / government-organization
+							:name (n2 / name
+								:op1 "House")))))
+			:mod (x24 / little)
+			:ARG1 (x26 / swim-01
+				:ARG2 (x29 / bunch
+					:consist-of (x31 / barracuda)))))
+	:ARG0 (x35 / person
+		:name (n / name
+			:op1 "Gonzalez")))
+
+# ::id 28
+# ::snt Bush and his fellow directors and some former Silverado executives also face a $ 200-million lawsuit by the Federal Deposit Insurance Corp., which accuses Bush and his fellow directors and some former Silverado executives
+(x12 / face-01
+	:ARG0 (x2 / and
+		:op1 (x1 / person
+			:name (n / name
+				:op1 "Bush"))
+		:op2 (x6 / and
+			:op2 (x5 / director
+				:mod (x4 / fellow))
+			:op1 (xap0 / person
+				:ARG0-of (x10 / have-org-role-91
+					:ARG2 (e / executive)
+					:quant (x7 / some)
+					:mod (x8 / former)
+					:ARG1 (x9 / organization
+						:name (n3 / name
+							:op1 "Silverado"))))))
+	:mod (x11 / also)
+	:ARG1 (x16 / lawsuit
+		:mod (x15 / country
+			:name (n1 / name
+				:op1 "200-million"))
+		:ARG0 (x19 / government-organization
+			:name (n2 / name
+				:op1 "Federal"
+				:op2 "Deposit"
+				:op3 "Insurance"
+				:op4 "Corp.")
+			:ARG1-of (x25 / accuse-01
+				:ARG2 (x27 / and
+					:op2 (x31 / and
+						:op1 (x26 / person
+							:name (n4 / name
+								:op1 "Bush"))
+						:op2 (x30 / director
+							:mod (x29 / fellow))
+						:op2 (x35 / have-org-role-91
+							:ARG2 (e1 / executive)
+							:quant (x32 / some)
+							:mod (x33 / former)
+							:ARG1 (x34 / organization
+								:name (n5 / name
+									:op1 "Silverado")))))))))
+

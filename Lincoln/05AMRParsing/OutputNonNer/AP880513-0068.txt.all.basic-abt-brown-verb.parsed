@@ -1,0 +1,511 @@
+# ::id 1
+# ::snt The only remaining U.S. manufacturer of a
+(x3 / remain-01
+	:ARG1 (x5 / manufacture-01
+		:mod (x2 / only)
+		:ARG1 (x4 / country
+			:name (n / name
+				:op1 "U.S."))))
+
+# ::id 2
+# ::snt crucial space shuttle fuel component announced a halt in production
+(x6 / announce-01
+	:ARG0 (x5 / compose-01
+		:mod (x1 / crucial)
+		:ARG1 (x4 / fuel
+			:mod (x3 / shuttle
+				:mod (x2 / space))))
+	:ARG1 (x8 / halt-01
+		:ARG1 (x10 / produce-01)))
+
+# ::id 3
+# ::snt until it can be shown the factory is safe after explosions leveled
+(x3 / possible
+	:domain (x5 / show-01
+		:time (x1 / until)
+		:null_edge (x9 / safe-41
+			:ARG1 (x7 / factory)
+			:time (x10 / after
+				:op1 (x12 / level-03
+					:ARG0 (x11 / explode-01))))))
+
+# ::id 4
+# ::snt another plant last week.
+(x2 / plant
+	:mod (x1 / another)
+	:time (x4 / week
+		:mod (x3 / last)))
+
+# ::id 5
+# ::snt Kerr-McGee Corp. made Thursday's announcement in the face of
+(x6 / announce-01
+	:ARG0 (x1 / government-organization
+		:name (n / name
+			:op1 "Kerr-McGee"
+			:op2 "Corp."))
+	:time (xap0 / date-entity
+		:weekday (x4 / thursday)))
+
+# ::id 6
+# ::snt state pressure.
+(x2 / pressure-01
+	:ARG1 (x1 / state))
+
+# ::id 7
+# ::snt Later in the day, the demolished plant's operator said a leaking
+(x11 / say-01
+	:time (x1 / late
+		:time (x4 / day))
+	:ARG0 (x10 / person
+		:ARG0-of (o / operate-01)
+		:poss (x8 / plant
+			:ARG1-of (x7 / demolish)))
+	:ARG1 (x13 / leak-01))
+
+# ::id 8
+# ::snt natural gas line was responsible for the series of earthquake-force
+(x5 / responsible-41
+	:ARG1 (x3 / line
+		:mod (x1 / natural)
+		:mod (x2 / gas))
+	:ARG2 (x10 / earthquake-force
+		:quant (x8 / series)))
+
+# ::id 9
+# ::snt blasts May 4, which killed two people, injured 326 and did an
+(x1 / blast-05
+	:time (x2 / date-entity)
+	:ARG1 (x12 / and
+		:op1 (x6 / kill-01
+			:ARG1 2)
+		:op2 (x10 / injure-01
+			:ARG1 326)
+		:op2 (x13 / do-02)))
+
+# ::id 10
+# ::snt estimated $73 million in damage.
+(x1 / estimate-01
+	:ARG1 (x6 / damage-01))
+
+# ::id 11
+# ::snt The report by Pacific Engineering and Production Co. was
+(x2 / report
+	:ARG0 (x5 / engineering
+		:null_edge (x4 / null_tag)
+		:null_edge (x6 / null_tag
+			:op2 (x7 / government-organization
+				:name (n / name
+					:op1 "Production"
+					:op2 "Co.")))))
+
+# ::id 12
+# ::snt challenged by Southwest Gas Corp., which said the line ruptured
+(x1 / challenge-01
+	:ARG0 (x8 / say-01
+		:ARG0 (x4 / government-organization
+			:name (n / name
+				:op1 "Gas"
+				:op2 "Corp."))
+		:ARG1 (x11 / rupture
+			:ARG1-of (x10 / line))))
+
+# ::id 13
+# ::snt after the explosions, not before.
+(x6 / before
+	:time (x1 / after
+		:op1 (x3 / explode-01)))
+
+# ::id 14
+# ::snt Kerr-McGee said it would suspend production of ammonium
+(x2 / say-01
+	:ARG0 (x1 / organization
+		:name (n / name
+			:op1 "Kerr-McGee"))
+	:ARG1 (x5 / suspend-01
+		:ARG1 (x6 / produce-01
+			:ARG1 (x8 / ammonium))))
+
+# ::id 15
+# ::snt perchlorate, an oxidizer for solid fuel used in the space shuttle
+(x1 / perchlorate
+	:ARG1 (x4 / oxidizer
+		:prep-for (x7 / fuel
+			:mod (x6 / solid)
+			:ARG1-of (x8 / use-01
+				:ARG2 (x12 / shuttle
+					:mod (x11 / space))))))
+
+# ::id 16
+# ::snt and military rockets, until an independent inspection shows the
+(x1 / and
+	:op1 (x9 / show-01
+		:ARG1 (x3 / rocket
+			:mod (x2 / military))
+		:time (x5 / until)
+		:ARG0 (x8 / inspect-01
+			:manner (x7 / depend-01
+				:polarity -))))
+
+# ::id 17
+# ::snt plant is safe.
+(x3 / safe-41
+	:domain (x1 / plant))
+
+# ::id 18
+# ::snt Paul Gaines, the company's director of governmental relations,
+(x2 / country
+	:name (n / name
+		:op1 "Gaines")
+	:null_edge (x1 / null_tag)
+	:null_edge (x7 / have-org-role-91
+		:ARG2 (d / director)
+		:ARG1 (x5 / company)
+		:ARG1 (x10 / relation
+			:mod (x9 / government-organization
+				:ARG0-of (g / govern-01)))))
+
+# ::id 19
+# ::snt said he hoped production could resume within a few days.
+(x1 / say-01
+	:ARG1 (x3 / hope-01
+		:ARG1 (x5 / possible
+			:domain (x6 / resume-01
+				:ARG1 (x4 / produce-01)
+				:null_edge (x9 / few
+					:op1 (x10 / temporal-quantity
+						:unit (d / day)))))))
+
+# ::id 20
+# ::snt "A prolonged shutdown is not helpful to any of us," Gaines
+(x7 / help-01
+	:ARG0 (x4 / shutdown
+		:mod (x3 / prolonged))
+	:mod (x9 / any)
+	:ARG0 (x14 / person
+		:name (n / name
+			:op1 "Gaines")))
+
+# ::id 21
+# ::snt said.
+(x1 / say-01)
+
+# ::id 22
+# ::snt He said the company has already contracted with a safety
+(x2 / say-01
+	:ARG0 (x1 / he)
+	:ARG1 (x7 / contract-02
+		:ARG0 (x4 / company)
+		:time (x6 / already)
+		:ARG2 (x10 / safe-41)))
+
+# ::id 23
+# ::snt consultant to study the plant, and the inspection could begin by
+(x1 / person
+	:ARG0-of (c / consult-01)
+	:purpose (x7 / and
+		:op1 (x3 / study-01
+			:ARG1 (x5 / plant))
+		:op2 (x10 / possible
+			:domain (x11 / begin-01
+				:ARG0 (x9 / inspect-01)))))
+
+# ::id 24
+# ::snt Monday. Gaines said the plant will continue making other chemicals.
+(x4 / say-01
+	:ARG0 (x3 / person
+		:name (n / name
+			:op1 "Gaines"))
+	:ARG1 (x8 / continue-01
+		:ARG1 (x6 / plant)
+		:ARG1 (x9 / make-02
+			:ARG0 x6
+			:ARG1 (x11 / chemical
+				:mod (x10 / other))))
+	:time (xap0 / date-entity
+		:null_edge (x1 / null_tag)))
+
+# ::id 25
+# ::snt Gov. Richard Bryan announced the shutdown after company
+(x4 / announce-01
+	:ARG0 (x3 / person
+		:name (n / name
+			:op1 "Bryan")
+		:null_edge (x1 / gov.)
+		:null_edge (x2 / null_tag))
+	:ARG1 (x6 / shutdown
+		:time (x7 / after
+			:op1 (x8 / company))))
+
+# ::id 26
+# ::snt officials agreed late Thursday morning to the halt. Bryan said
+(x11 / say-01
+	:ARG1 (x2 / agree-01
+		:time (x5 / morning
+			:time (x3 / late)
+			:time (xap1 / date-entity
+				:null_edge (x4 / null_tag)))
+		:ARG1 (x8 / halt-01)
+		:ARG0 (xap0 / person
+			:ARG0-of (x1 / have-org-role-91
+				:ARG2 (o / official))))
+	:ARG0 (x10 / person
+		:name (n / name
+			:op1 "Bryan")))
+
+# ::id 27
+# ::snt "legal work was being prepared" to force Kerr-McGee to suspend
+(x6 / prepare-02
+	:ARG1 (x3 / work-01)
+	:ARG1 (x9 / force-01
+		:ARG2 (x12 / suspend-01
+			:ARG0 (x10 / organization
+				:name (n / name
+					:op1 "Kerr-McGee")))))
+
+# ::id 28
+# ::snt production before it agreed to the shutdown.
+(x4 / agree-01
+	:ARG1 (x1 / produce-01
+		:time (x2 / before))
+	:ARG1 (x7 / shutdown))
+
+# ::id 29
+# ::snt Local and state officials had expressed outrage when the plant
+(x6 / express-01
+	:ARG0 (x2 / and)
+	:ARG1 (x7 / outrage-01)
+	:ARG1 (x10 / plant)
+	:ARG0 (xap0 / person
+		:mod (x1 / local)
+		:ARG0-of (x4 / have-org-role-91
+			:ARG2 (o / official)
+			:ARG1 (x3 / state))))
+
+# ::id 30
+# ::snt resumed production Tuesday of ammonium perchlorate, particularly
+(x1 / resume-01
+	:ARG1 (x2 / produce-01)
+	:ARG1 (x6 / perchlorate
+		:mod (x5 / ammonium))
+	:manner (x8 / particular)
+	:time (xap0 / date-entity
+		:weekday (x3 / tuesday)))
+
+# ::id 31
+# ::snt since last week plant officials said they would wait until
+(x6 / say-01
+	:time (x1 / since
+		:op1 (x3 / week
+			:mod (x2 / last)))
+	:ARG1 (x9 / wait-01
+		:ARG2 (x10 / until))
+	:ARG0 (xap0 / person
+		:ARG0-of (x5 / have-org-role-91
+			:ARG2 (o / official)
+			:ARG1 (x4 / plant))))
+
+# ::id 32
+# ::snt authorities determined the cause of the blast before reopening.
+(x2 / determine-01
+	:ARG0 (x1 / authority)
+	:ARG1 (x4 / cause
+		:ARG1 (x7 / blast-05))
+	:time (x8 / before
+		:op1 (x9 / reopen-01)))
+
+# ::id 33
+# ::snt Kerr-McGee and Pacific were the only two plants in the country
+(x8 / plant
+	:ARG0 (x2 / and
+		:op1 (x1 / organization
+			:name (n / name
+				:op1 "Kerr-McGee"))
+		:op2 (x3 / ocean
+			:name (n1 / name
+				:op1 "Pacific")))
+	:mod (x6 / only)
+	:quant 2
+	:location (x11 / country))
+
+# ::id 34
+# ::snt to manufacture ammonium perchlorate, and National Aeronautics and
+(x9 / and
+	:op1 (x2 / manufacture-01
+		:ARG1 (x6 / and
+			:op1 (x4 / perchlorate
+				:mod (x3 / ammonium)))))
+
+# ::id 35
+# ::snt Space Administration officials have said the explosion could delay
+(x5 / say-01
+	:ARG1 (x8 / possible
+		:domain (x9 / delay-01
+			:ARG0 (x7 / explode-01)))
+	:ARG0 (xap0 / person
+		:ARG0-of (x3 / have-org-role-91
+			:ARG2 (o / official)
+			:ARG1 (x1 / space)
+			:ARG1 (x2 / government-organization
+				:name (n / name
+					:op1 "Administration")))))
+
+# ::id 36
+# ::snt the space shuttle program..
+(x4 / program
+	:mod (x3 / shuttle
+		:mod (x2 / space)))
+
+# ::id 37
+# ::snt Pacfic Engineering Chairman Fred Gibson said Thursday that a
+(x6 / say-01
+	:ARG0 (x4 / newspaper
+		:name (n / name
+			:op1 "Fred"
+			:op2 "Gibson")
+		:ARG0-of (x1 / organization
+			:name (n1 / name
+				:op1 "Pacfic"))
+		:null_edge (x2 / null_tag)
+		:ARG0-of (x3 / have-org-role-91
+			:ARG2 (c / chairman)))
+	:time (xap0 / date-entity
+		:weekday (x7 / thursday
+			:null_edge (x8 / null_tag)
+			:name (x9 / name
+				:op1 "a"))))
+
+# ::id 38
+# ::snt large natural gas line passing through the plant had been leaking
+(x11 / leak-01
+	:ARG1 (x4 / line
+		:mod (x1 / large)
+		:mod (x2 / natural)
+		:mod (x3 / gas)
+		:ARG1-of (x5 / pass-03
+			:path (x8 / plant))))
+
+# ::id 39
+# ::snt for at least 30 minutes before the first fire broke out at his
+(x5 / temporal-quantity
+	:unit (m / minute)
+	:quant 30
+	:time (x6 / before
+		:op1 (x10 / break-13
+			:ARG0 (x9 / fire-01))))
+
+# ::id 40
+# ::snt company's plant.
+(x3 / plant
+	:poss (x1 / company))
+
+# ::id 41
+# ::snt "The massive gas leak is believed to have saturated the earth
+(x7 / believe-01
+	:ARG1 (x10 / saturate
+		:ARG1 (x5 / leak-01
+			:mod (x3 / massive)
+			:mod (x4 / gas))
+		:ARG1 (x12 / planet
+			:name (n / name
+				:op1 "earth"))))
+
+# ::id 42
+# ::snt below the paved surfaces of the ... plant and to have ignited at
+(x9 / and
+	:op1 (x1 / below
+		:op1 (x4 / surface
+			:ARG1-of (x3 / paved)
+			:part-of (x8 / plant)))
+	:op2 (x12 / ignite-01))
+
+# ::id 43
+# ::snt the point of origin as a result of circumstances unrelated to
+(x7 / result-01
+	:ARG2 (x2 / point
+		:ARG1-of (x4 / originate-01))
+	:ARG1 (x9 / circumstance
+		:mod (x10 / person
+			:ARG1-of (r / relate-01
+				:polarity -))))
+
+# ::id 44
+# ::snt (plant) operations," Gibson said.
+(x8 / say-01
+	:ARG0 (x4 / operation
+		:location (x2 / plant))
+	:ARG0 (x7 / person
+		:name (n / name
+			:op1 "Gibson")))
+
+# ::id 45
+# ::snt "All of the subsequent destructive events were caused by the
+(x9 / cause-01
+	:ARG1 (x7 / event
+		:quant (x2 / all)
+		:time (x5 / subsequent)
+		:mod (x6 / destroy-01)))
+
+# ::id 46
+# ::snt gas leak, the gas fire and the gas explosion," he said.
+(x14 / say-01
+	:ARG1 (x7 / and
+		:op1 (x2 / leak-01
+			:mod (x1 / gas)
+			:mod (x5 / gas))
+		:op2 (x10 / explode-01
+			:mod (x9 / gas)))
+	:ARG0 (x13 / he))
+
+# ::id 47
+# ::snt Southwest Gas spokesman Dennis Hetherington disputed the report.
+(x6 / dispute-01
+	:ARG0 (x4 / newspaper
+		:name (n / name
+			:op1 "Dennis"
+			:op2 "Hetherington")
+		:null_edge (x1 / null_tag)
+		:ARG0-of (x3 / have-org-role-91
+			:ARG2 (s / spokesman)
+			:ARG1 (x2 / organization
+				:name (n1 / name
+					:op1 "Gas"))))
+	:ARG1 (x8 / report-01))
+
+# ::id 48
+# ::snt "As far as we're concerned, our facilities are a victim of the
+(x13 / victim
+	:ARG1-of (x7 / concern-01
+		:ARG1 (x5 / we)
+		:ARG1 (x10 / facility))
+	:ARG1 x10)
+
+# ::id 49
+# ::snt explosion and not the cause," Hetherington said.
+(x9 / say-01
+	:ARG1 (x2 / and
+		:op1 (x1 / explode-01
+			:ARG1 (x5 / cause-01)))
+	:ARG0 (x8 / person
+		:name (n / name
+			:op1 "Hetherington")))
+
+# ::id 50
+# ::snt Fire Chief Roy Parrish said the fire department would withhold
+(x5 / say-01
+	:ARG0 (x3 / newspaper
+		:name (n / name
+			:op1 "Roy"
+			:op2 "Parrish")
+		:ARG0-of (x1 / fire-02)
+		:ARG0-of (x2 / chief))
+	:ARG1 (x10 / withhold-01
+		:ARG0 (x8 / department
+			:mod (x7 / fire-arm))))
+
+# ::id 51
+# ::snt judgment until it completes its own investigation.
+(x4 / complete-01
+	:time (x2 / until
+		:op1 (x1 / judge-01))
+	:ARG1 (x7 / investigate-01))
+

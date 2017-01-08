@@ -1,0 +1,998 @@
+# ::id 1
+# ::snt Exxon crews Tuesday finished pumping the
+(x4 / finish-01
+	:ARG1 (x5 / pump-01)
+	:time (xap0 / date-entity
+		:weekday (x3 / tuesday
+			:mod (x2 / crew
+				:ARG1 (x1 / organization
+					:name (n / name
+						:op1 "Exxon"))))))
+
+# ::id 2
+# ::snt remaining crude oil out of the tanker Exxon Valdez in preparation
+(x1 / remain-01
+	:ARG1 (x3 / oil
+		:mod (x2 / crude))
+	:time (x11 / prepare-01
+		:ARG0 (x9 / person
+			:name (n / name
+				:op1 "Valdez")
+			:null_edge (x7 / tanker))))
+
+# ::id 3
+# ::snt for refloating and removing the source of the nation's worst-ever
+(x3 / and
+	:op1 (x2 / refloat
+		:ARG1 (x6 / source
+			:ARG1 (x9 / nation
+				:mod (x11 / worst-ever))))
+	:op2 (x4 / remove-01))
+
+# ::id 4
+# ::snt oil spill.
+(x2 / spill-01
+	:ARG1 (x1 / oil))
+
+# ::id 5
+# ::snt The fugitive captain of the Exxon Valdez sent signals he was
+(x8 / send-01
+	:ARG0 (x3 / have-org-role-91
+		:ARG2 (c / captain)
+		:ARG1 (x7 / valdez))
+	:ARG1 (x9 / signal))
+
+# ::id 6
+# ::snt ready to surrender to face criminal charges of operating the vessel
+(x1 / ready-01
+	:ARG2 (x3 / surrender-01
+		:purpose (x5 / face-01
+			:ARG1 (x7 / charge-05
+				:mod (x6 / crime)
+				:ARG2 (x9 / operate-01
+					:ARG1 (x11 / vessel))))))
+
+# ::id 7
+# ::snt while drunk.
+(x2 / drink-01)
+
+# ::id 8
+# ::snt Meanwhile, Exxon said placing an oil-catching boom around the
+(x4 / say-01
+	:time (x1 / meanwhile)
+	:ARG0 (x3 / organization
+		:name (n / name
+			:op1 "Exxon"))
+	:ARG1 (x5 / place-01
+		:ARG0 x3
+		:ARG1 (x8 / boom-02
+			:mod (x7 / oil-catching))
+		:time (x9 / around)))
+
+# ::id 9
+# ::snt ship immediately after the grounding could have touched off a giant
+(x1 / ship
+	:mod (x2 / immediate)
+	:time (x3 / after
+		:op1 (x6 / possible
+			:domain (x8 / touch-01
+				:ARG1 (x5 / grounding)
+				:ARG1 (x11 / giant)))))
+
+# ::id 10
+# ::snt explosion of gases from the oil, although that was not the reason
+(x1 / explode-01
+	:ARG1 (x3 / gas
+		:source (x6 / oil)))
+
+# ::id 11
+# ::snt it took 11 hours to set the first containment line.
+(x2 / take-01
+	:ARG1 (x4 / temporal-quantity
+		:unit (h / hour)
+		:quant 11)
+	:purpose (x6 / set-06
+		:ARG1 (x10 / line
+			:ARG1 (x9 / contain-01))))
+
+# ::id 12
+# ::snt "The worst thing we could have done early on was try to boom
+(x6 / possible
+	:mod (x3 / bad)
+	:domain (x8 / do-02
+		:ARG0 (x5 / we)
+		:time (x9 / early))
+	:domain (x12 / try-01
+		:ARG1 (x14 / boom-02)))
+
+# ::id 13
+# ::snt the vessel. We would have lost the vessel," said Exxon Shipping
+(x12 / say-01
+	:ARG1 (x2 / vessel)
+	:ARG1 (x7 / lose-02
+		:ARG0 (x4 / we)
+		:ARG1 (x9 / vessel))
+	:ARG0 (x14 / organization
+		:name (n / name
+			:op1 "Shipping")
+		:mod (x13 / organization
+			:name (n1 / name
+				:op1 "Exxon"))))
+
+# ::id 14
+# ::snt Co. President Frank Iarossi.
+(x1 / null_tag
+	:ARG0-of (x3 / have-org-role-91
+		:ARG2 (p / president)))
+
+# ::id 15
+# ::snt A boom wasn't placed around the vessel for 11 hours because it
+(x5 / place-01
+	:ARG1 (x2 / boom-02)
+	:location (x6 / around
+		:op1 (x8 / vessel))
+	:duration (x11 / temporal-quantity
+		:unit (h / hour)
+		:quant 11)
+	:ARG1-of (x12 / cause-01))
+
+# ::id 16
+# ::snt wasn't available in Valdez, Exxon officials have said.
+(x10 / say-01
+	:ARG1 (x3 / available
+		:location (x5 / country
+			:name (n / name
+				:op1 "Valdez")))
+	:ARG0 (xap0 / person
+		:ARG0-of (x8 / have-org-role-91
+			:ARG2 (o / official)
+			:ARG1 (x7 / organization
+				:name (n1 / name
+					:op1 "Exxon")))))
+
+# ::id 17
+# ::snt Iarossi also said Exxon has changed its policy because of the
+(x3 / say-01
+	:ARG0 (x1 / newspaper
+		:name (n / name
+			:op1 "Iarossi"))
+	:mod (x2 / also)
+	:ARG1 (x6 / change-01
+		:ARG0 (x4 / organization
+			:name (n1 / name
+				:op1 "Exxon"))
+		:ARG1 (x8 / policy)
+		:ARG1-of (x9 / cause-01)))
+
+# ::id 18
+# ::snt spill and now requires crews to be aboard ship, where drinking is
+(x2 / and
+	:op1 (x1 / spill-01)
+	:op2 (x4 / require-01
+		:time (x3 / now)
+		:ARG2 (x5 / crew)
+		:location (x8 / aboard
+			:op1 (x9 / ship
+				:mod (x12 / drink-01)))))
+
+# ::id 19
+# ::snt prohibited, four hours before sailing. Authorities charged the
+(x1 / prohibit-01
+	:time (x5 / before
+		:op1 (x9 / charge-05
+			:ARG1 (x4 / temporal-quantity
+				:unit (h / hour)
+				:quant 4)
+			:ARG0 (x8 / authority
+				:null_edge (x6 / sailing)))))
+
+# ::id 20
+# ::snt captain had been drinking before the Valdez sailed.
+(x4 / drink-01
+	:ARG0 (x1 / have-org-role-91
+		:ARG2 (c / captain))
+	:time (x5 / before
+		:op1 (x8 / sail
+			:ARG0 (x7 / valdez))))
+
+# ::id 21
+# ::snt Thick oil has floated over more than 1,640 square miles and
+(x11 / and
+	:op1 (x4 / float-01
+		:ARG0 (x2 / oil
+			:quant (x1 / thick))
+		:duration (x5 / over
+			:op1 (x10 / distance-quantity
+				:unit (m / mile)
+				:quant (x6 / more-than)))))
+
+# ::id 22
+# ::snt soiled 800 miles of beach. Thousands of animals are known dead,
+(x11 / know-01
+	:time (x1 / soil)
+	:ARG1 (x9 / animal
+		:quant (x3 / distance-quantity
+			:unit (m / mile))
+		:mod (x5 / beach))
+	:ARG1 (x12 / die-01
+		:op (d / dead)))
+
+# ::id 23
+# ::snt including 30 sea otters.
+(x1 / include-91
+	:ARG1 (x4 / otter
+		:quant 30
+		:ARG2 (x3 / sea)))
+
+# ::id 24
+# ::snt Early Tuesday, Exxon said it had finished transferring about 42
+(x5 / say-01
+	:time (x1 / early
+		:op1 (xap0 / date-entity
+			:weekday (x2 / tuesday)))
+	:ARG0 (x4 / organization
+		:name (n / name
+			:op1 "Exxon"))
+	:ARG1 (x8 / finish-01
+		:ARG1 (x9 / transfer-01)))
+
+# ::id 25
+# ::snt million gallons of crude to three other ships. Another 42 million
+(x4 / crude
+	:quant (x2 / volume-quantity
+		:unit (g / gallon))
+	:ARG2 (x8 / ships
+		:quant 3
+		:mod (x7 / other)
+		:mod (x10 / another)))
+
+# ::id 26
+# ::snt gallons of oily waste water remained aboard the Valdez, which
+(x6 / remain-01
+	:ARG1 (x5 / water
+		:quant (x1 / volume-quantity
+			:unit (g / gallon))
+		:mod (x3 / oily)
+		:mod (x4 / waste))
+	:location (x7 / aboard
+		:op1 (x9 / valdez)))
+
+# ::id 27
+# ::snt spilled more than 10 million gallons of crude into Prince William
+(x1 / spill-01
+	:ARG1 (x8 / crude
+		:quant (x6 / volume-quantity
+			:unit (g / gallon)
+			:quant (x2 / more-than)))
+	:null_edge (x11 / person
+		:name (n / name
+			:op1 "William")
+		:ARG0-of (x10 / prince)))
+
+# ::id 28
+# ::snt Sound when it struck a reef March 24.
+(x4 / strike-01
+	:ARG1 (x1 / sound
+		:name (x7 / name
+			:op1 "March"
+			:op2 "24"))
+	:ARG1 (x6 / reef))
+
+# ::id 29
+# ::snt The company said crews would attempt to pump air into the hold
+(x3 / say-01
+	:ARG0 (x2 / company)
+	:ARG1 (x6 / attempt-01
+		:ARG0 x2
+		:ARG0 (x4 / crew)
+		:ARG1 (x8 / pump-01
+			:ARG0 x4
+			:ARG2 (x9 / air)
+			:ARG2 (x12 / hold-03))))
+
+# ::id 30
+# ::snt and refloat the vessel off a reef at high tide Wednesday afternoon.
+(x1 / and
+	:op1 (x2 / refloat
+		:ARG1 (x4 / vessel)
+		:location (x5 / off
+			:op1 (x7 / reef))
+		:ARG1 (x10 / tide
+			:mod (x9 / high))
+		:time (x12 / afternoon
+			:null_edge (x11 / null_tag))))
+
+# ::id 31
+# ::snt If freed, the still-leaking ship, which has eight holes some 20
+(x6 / ship
+	:ARG1-of (x2 / free-01)
+	:mod (x5 / still-leaking)
+	:ARG0-of (x9 / have-03
+		:ARG1 (x11 / hole
+			:quant 8
+			:quant (x12 / some
+				:op1 20))))
+
+# ::id 32
+# ::snt feet long in its hull, will be towed to a remote and already fouled
+(x13 / and
+	:op1 (x9 / tow-01
+		:ARG2 (x5 / hull)
+		:ARG2 (x12 / remote)
+		:location (xap0 / relative-position
+			:quant (x1 / distance-quantity
+				:unit (f / foot))))
+	:op2 (x15 / foul-01
+		:time (x14 / already)))
+
+# ::id 33
+# ::snt cove for repairs.
+(x1 / cove
+	:purpose (x3 / repair-01))
+
+# ::id 34
+# ::snt Exxon then planned to take the ship to a port in the Far East,
+(x3 / plan-01
+	:ARG0 (x1 / organization
+		:name (n / name
+			:op1 "Exxon"))
+	:time (x2 / then)
+	:ARG1 (x5 / take-01
+		:ARG0 x1
+		:ARG1 (x7 / ship)
+		:ARG2 (x10 / port
+			:null_edge (x13 / far
+				:null_edge "East"))))
+
+# ::id 35
+# ::snt or to a Portland, Ore., dry dock. Port officials there said they
+(x14 / say-01
+	:ARG1 (x1 / or
+		:op2 (x9 / dock-01
+			:name (x4 / name
+				:op1 "Portland"
+				:op2 ","
+				:op3 "Ore.")
+			:ARG1-of (x8 / dry-02)))
+	:ARG0 (xap0 / person
+		:ARG0-of (x12 / have-org-role-91
+			:ARG2 (o / official)
+			:ARG1 (x11 / port)
+			:null_edge (x13 / there))))
+
+# ::id 36
+# ::snt weren't sure if they'd allow that, even though the $12 million
+(x3 / sure
+	:null_edge (x7 / allow-01)
+	:null_edge (x13 / country
+		:name (n / name
+			:op1 "$")
+		:mod (x10 / even)))
+
+# ::id 37
+# ::snt repair bill would provide about 200 jobs.
+(x4 / provide-01
+	:ARG0 (x2 / bill
+		:mod (x1 / repair-01))
+	:ARG1 (x7 / job
+		:quant (x5 / about
+			:op1 200)))
+
+# ::id 38
+# ::snt "We're not willing to trade in the environment for jobs,"
+(x5 / will-02
+	:ARG0 (x2 / we)
+	:ARG1 (x7 / trade-01
+		:ARG0 x2
+		:location (x10 / environment)
+		:ARG2 (x12 / job)))
+
+# ::id 39
+# ::snt Portland port spokesman Darrel Buttice said Monday.
+(x6 / say-01
+	:ARG0 (x4 / newspaper
+		:name (n / name
+			:op1 "Darrel"
+			:op2 "Buttice")
+		:ARG0-of (x3 / have-org-role-91
+			:ARG2 (s / spokesman)
+			:ARG1 (x2 / port
+				:ARG1 (x1 / country
+					:name (n1 / name
+						:op1 "Portland")))))
+	:time (x7 / monday))
+
+# ::id 40
+# ::snt Oregon Gov. Neil Goldschmidt said Tuesday there are "a lot of
+(x5 / say-01
+	:ARG0 (x3 / newspaper
+		:name (n / name
+			:op1 "Neil"
+			:op2 "Goldschmidt")
+		:ARG0-of (x1 / oregon)
+		:ARG0-of (x2 / gov.))
+	:time (xap0 / date-entity
+		:weekday (x6 / tuesday)))
+
+# ::id 41
+# ::snt questions that need to be answered" before the Valdez is allowed
+(x1 / question-01
+	:ARG1-of (x3 / need-01
+		:ARG1 (x6 / answer-01
+			:time (x8 / before
+				:op1 (x12 / allow-01
+					:ARG1 (x10 / country
+						:name (n / name
+							:op1 "Valdez")))))))
+
+# ::id 42
+# ::snt in.
+(x1 / in)
+
+# ::id 43
+# ::snt Canadian authorities also asked Exxon for assurances there will
+(x4 / ask-01
+	:ARG0 (x2 / authority
+		:mod (x1 / country
+			:name (n1 / name
+				:op1 "Canada")))
+	:mod (x3 / also)
+	:ARG2 (x5 / government-organization
+		:name (n / name
+			:op1 "Exxon"))
+	:ARG2 (x7 / assure-01
+		:ARG0-of (x9 / will)))
+
+# ::id 44
+# ::snt be no damage to the British Columbia coast if the tanker is towed
+(x3 / damage-01
+	:polarity -
+	:condition (x13 / tow-01
+		:ARG1 (x11 / tanker))
+	:ARG1 (xap2 / be-located-at-91
+		:ARG2 (x8 / coast
+			:mod (x7 / country
+				:name (n / name
+					:op1 "Columbia"))
+			:mod (xap1 / country
+				:ARG0-of (xap0 / name
+					:mod (x6 / country
+						:name (n1 / name
+							:op1 "Britain")))))))
+
+# ::id 45
+# ::snt to Oregon, and the mayor of Valdez said the ship was not welcome
+(x4 / and
+	:op1 (x2 / country
+		:name (n / name
+			:op1 "Oregon"))
+	:op2 (x9 / say-01
+		:ARG0 (x6 / have-org-role-91
+			:ARG2 (m / mayor)
+			:ARG1 (x8 / person
+				:name (n1 / name
+					:op1 "Valdez")))
+		:ARG1 (x14 / welcome-01
+			:ARG1 (x11 / ship))))
+
+# ::id 46
+# ::snt back in the port where it took on the load of crude.
+(x1 / back-01
+	:location (x4 / port
+		:mod (x10 / load-01
+			:ARG1 (x12 / crude))))
+
+# ::id 47
+# ::snt In Washington, Environmental Protection Administrator William
+(x7 / country
+	:name (n / name
+		:op1 "William")
+	:location (x2 / city
+		:name (n1 / name
+			:op1 "Washington"))
+	:null_edge (x4 / environmental)
+	:ARG0-of (x5 / protect-01)
+	:ARG0-of (x6 / administrator))
+
+# ::id 48
+# ::snt Reilly said the spill could put the brakes on petroleum exploration
+(x2 / say-01
+	:ARG0 (x1 / person
+		:name (n / name
+			:op1 "Reilly"))
+	:ARG1 (x5 / possible
+		:domain (x6 / put-01
+			:ARG1 (x8 / brake-01)
+			:ARG2 (x11 / explore-01
+				:ARG1 (x10 / petroleum)))))
+
+# ::id 49
+# ::snt there and in other areas. "We will take apart the environmental
+(x10 / take-01
+	:ARG0 (x2 / and
+		:op1 (x1 / there
+			:location (x5 / area
+				:mod (x4 / other))))
+	:ARG0 (x8 / we)
+	:ARG1 (x13 / environment))
+
+# ::id 50
+# ::snt planning for every aspect of oil development in Alaska and in other
+(x1 / plan-01
+	:ARG1 (x7 / develop-02
+		:ARG1 (x4 / aspect
+			:mod (x3 / every))
+		:ARG1 (x6 / oil)
+		:location (x9 / state
+			:name (n / name
+				:op1 "Alaska")
+			:mod (x12 / other))))
+
+# ::id 51
+# ::snt sensitive areas where the environment potentially could be
+(x2 / area
+	:mod (x1 / sensitive)
+	:ARG1 (x5 / environment
+		:mod (x6 / potential)
+		:mod (x7 / possible)))
+
+# ::id 52
+# ::snt threatened," he told a House appropriations subcommittee.
+(x5 / tell-01
+	:ARG1 (x1 / threaten-01)
+	:ARG0 (x4 / he)
+	:ARG2 (x9 / subcommittee
+		:mod (x8 / appropriate-01
+			:ARG1 (x7 / have-org-role-91
+				:ARG1 (g / government-organization
+					:name (n / name
+						:op1 "House"))))))
+
+# ::id 53
+# ::snt The family of the fired Exxon Valdez captain, Joseph Hazelwood,
+(x2 / family
+	:poss (x8 / have-org-role-91
+		:ARG2 (c / captain)
+		:ARG1-of (x5 / fire-01)
+		:mod (x7 / organization
+			:name (n / name
+				:op1 "Valdez")
+			:name (x6 / organization
+				:name (n1 / name
+					:op1 "Exxon")))
+		:name (x10 / name
+			:op1 "Joseph"
+			:op2 "Hazelwood")))
+
+# ::id 54
+# ::snt said the skipper wants to surrender but is awaiting advice from his
+(x1 / say-01
+	:ARG1 (x4 / want-01
+		:ARG0 (x3 / skipper)
+		:ARG1 (x6 / surrender-01
+			:ARG0 x3)
+		:null_edge (x9 / await-01
+			:ARG0 x3
+			:ARG1 (x10 / advise-01))))
+
+# ::id 55
+# ::snt attorney, according to Lt. Thomas Fazio, commander of the New York
+(x1 / attorney
+	:name (x6 / name
+		:op1 "Thomas"
+		:op2 "Fazio"
+		:ARG0-of (x5 / lt.)
+		:ARG0-of (x9 / have-org-role-91
+			:ARG2 (c / commander)
+			:ARG1 (x13 / country
+				:name (n / name
+					:op1 "York")
+				:null_edge (x12 / null_tag)))))
+
+# ::id 56
+# ::snt State Police on Long Island.
+(x2 / police
+	:mod (x1 / state)
+	:null_edge (x5 / country
+		:name (n / name
+			:op1 "Island")
+		:null_edge (x4 / country
+			:name (n1 / name
+				:op1 "Long"))))
+
+# ::id 57
+# ::snt But after Long Island law enforcement authorities waited a
+(x1 / contrast-01
+	:ARG2 (x8 / wait-01
+		:time (x2 / after
+			:op1 (x4 / country
+				:name (n / name
+					:op1 "Island")
+				:null_edge (x3 / country
+					:name (n1 / name
+						:op1 "Long"))))
+		:ARG0 (x7 / authority
+			:mod (x5 / law)
+			:mod (x6 / enforce-01))))
+
+# ::id 58
+# ::snt second day for Hazelwood to turn himself in, the Suffolk County
+(x2 / temporal-quantity
+	:unit (d / day)
+	:time-of (x6 / turn-01
+		:ARG1 (x4 / person
+			:name (n / name
+				:op1 "Hazelwood"))
+		:ARG1 (x12 / county
+			:mod (x11 / country
+				:name (n1 / name
+					:op1 "Suffolk")))))
+
+# ::id 59
+# ::snt district attorney's office announced there would be no surrender
+(x5 / announce-01
+	:ARG0 (x4 / office
+		:poss (x2 / attorney
+			:mod (x1 / district)))
+	:ARG1 (x10 / surrender-01
+		:polarity -))
+
+# ::id 60
+# ::snt that day.
+(x2 / temporal-quantity
+	:unit (d / day))
+
+# ::id 61
+# ::snt Hazelwood, 42, is accused operating the ship while under the
+(x6 / accuse-01
+	:ARG1 (x1 / person
+		:name (n / name
+			:op1 "Hazelwood")
+		:quant 42
+		:ARG0-of (x7 / operate-01
+			:ARG0 x1
+			:ARG1 (x9 / ship))))
+
+# ::id 62
+# ::snt influence of alcohol, reckless endangerment and negligent discharge
+(x1 / influence-01
+	:ARG1 (x7 / and
+		:op1 (x3 / alcohol)
+		:op2 (x6 / endangerment
+			:mod (x5 / reckless))
+		:op2 (x9 / discharge-01
+			:ARG1-of (x8 / negligent))))
+
+# ::id 63
+# ::snt of oil. Bail was previously set in Valdez at $50,000.
+(x7 / set-03
+	:ARG1 (x2 / oil)
+	:time (x6 / previous)
+	:location (x9 / country
+		:name (n / name
+			:op1 "Valdez"))
+	:ARG2 (x12 / volume-quantity
+		:unit (b / barrel)))
+
+# ::id 64
+# ::snt Of about three dozen oil-soaked otters rescued following the
+(x7 / rescue-01
+	:ARG0 (x6 / otter
+		:quant (x2 / about)
+		:mod (x5 / oil-soaked))
+	:ARG1-of (x8 / follow-01))
+
+# ::id 65
+# ::snt spill, about one-third have died, Alaska Department of Fish and
+(x12 / and
+	:op1 (x1 / spill-01
+		:ARG1 (x6 / die-01
+			:ARG1 (x4 / person
+				:name (n / name
+					:op1 "one-third")))
+		:null_edge (x9 / null_tag
+			:null_edge (x8 / state
+				:name (n1 / name
+					:op1 "Alaska"))
+			:null_edge (x11 / fish))))
+
+# ::id 66
+# ::snt Game spokesman Jon Lyman said. "Dozens of otters are dying before
+(x5 / say-01
+	:ARG0 (x3 / newspaper
+		:name (n / name
+			:op1 "Jon"
+			:op2 "Lyman")
+		:ARG0-of (x1 / game)
+		:ARG0-of (x2 / have-org-role-91
+			:ARG2 (s / spokesman)))
+	:ARG1 (x12 / die-01
+		:ARG1 (x10 / otter)
+		:time (x13 / before)))
+
+# ::id 67
+# ::snt rescuers can get to them," he said. Six otters were flown to Sea
+(x9 / say-01
+	:ARG1 (x2 / possible
+		:domain (x3 / get-01
+			:ARG0 (x1 / rescue-01)))
+	:ARG0 (x8 / he)
+	:ARG1 (x14 / fly-01
+		:ARG1 (x12 / otter
+			:quant 6)
+		:destination (x16 / sea)))
+
+# ::id 68
+# ::snt World in San Diego on Monday for rehabilitation.
+(x1 / world
+	:location (x4 / country
+		:name (n / name
+			:op1 "Diego")
+		:location (x3 / country
+			:name (n1 / name
+				:op1 "San")))
+	:purpose (x8 / rehabilitate-01)
+	:time (xap0 / date-entity
+		:weekday (x6 / monday)))
+
+# ::id 69
+# ::snt Fishermen counting on the sound's $12 million annual herring
+(x2 / count-02
+	:ARG0 (x1 / fisherman)
+	:ARG1 (x11 / herr
+		:mod (x5 / sound)))
+
+# ::id 70
+# ::snt industry were told Monday by the state that it will not allow a
+(x3 / tell-01
+	:ARG2 (x1 / industry)
+	:ARG1 (x4 / monday)
+	:ARG0 (x7 / state)
+	:ARG1 (x12 / allow-01))
+
+# ::id 71
+# ::snt season this year. Sablefish and shrimp fisheries in Prince William
+(x6 / and
+	:op1 (x1 / season)
+	:time (x3 / year
+		:mod (x2 / this))
+	:op2 (x5 / publication
+		:name (n / name
+			:op1 "Sablefish"))
+	:op2 (x8 / fishery
+		:mod (x7 / shrimp
+			:ARG2 (x11 / person
+				:name (n1 / name
+					:op1 "William")
+				:ARG0-of (x10 / prince)))))
+
+# ::id 72
+# ::snt waters also have been closed.
+(x5 / close-01
+	:ARG1 (x1 / water)
+	:mod (x2 / also))
+
+# ::id 73
+# ::snt An effort at Sawmill Bay, 11 miles west of Valdez, to keep oil
+(x2 / effort
+	:location (x5 / country
+		:name (n / name
+			:op1 "Bay")
+		:null_edge (x4 / country
+			:name (n1 / name
+				:op1 "Sawmill"))
+		:location (xap0 / relative-position
+			:quant (x8 / distance-quantity
+				:unit (m / mile)
+				:quant 11)
+			:direction (x9 / west)
+			:ARG1 (x11 / country
+				:name (n2 / name
+					:op1 "Valdez"))))
+	:purpose (x14 / keep-04
+		:ARG1 (x15 / oil)))
+
+# ::id 74
+# ::snt away from a hatchery where 2 million salmon are waiting to be
+(x1 / away
+	:null_edge (x4 / hatchery
+		:ARG0-of (x10 / wait-01
+			:ARG1 (x8 / salmon))))
+
+# ::id 75
+# ::snt released to the sea appeared to be failing. Tendrils of oil had
+(x13 / have-03
+	:null_edge (x5 / appear-02
+		:ARG1 (x1 / release-01
+			:ARG2 (x4 / sea))
+		:ARG1 (x8 / fail-01))
+	:ARG0 (x10 / tendrils
+		:ARG1 (x12 / oil)))
+
+# ::id 76
+# ::snt floated past a boom streched across the bay, said officials.
+(x10 / say-01
+	:ARG1 (x1 / float-01
+		:ARG1 (x4 / boom-02
+			:ARG1-of (x5 / strech
+				:location (x6 / across
+					:op1 (x8 / bay)))))
+	:ARG0 (xap0 / person
+		:ARG0-of (x11 / have-org-role-91
+			:ARG2 (o / official))))
+
+# ::id 77
+# ::snt The spill has shifted public opinion in Alaska about the energy
+(x4 / shift-01
+	:ARG1 (x6 / thing
+		:ARG1-of (o / opine-01)
+		:mod (x5 / public)
+		:location (x8 / state
+			:name (n / name
+				:op1 "Alaska"))
+		:topic (x11 / energy)))
+
+# ::id 78
+# ::snt industry, which has been lobbying for new exploration.
+(x1 / industry
+	:ARG0-of (x6 / lobby-01
+		:ARG1 (x9 / explore-01
+			:mod (x8 / new))))
+
+# ::id 79
+# ::snt U.S. Sen. Frank Murkowski, a champion of oil exploration in
+(x3 / name
+	:op1 "Frank"
+	:op2 "Murkowski"
+	:ARG0-of (x2 / sen.
+		:ARG1 (x1 / country
+			:name (n / name
+				:op1 "U.S.")))
+	:ARG0-of (x7 / champion
+		:ARG1 (x10 / explore-01
+			:ARG1 (x9 / oil))))
+
+# ::id 80
+# ::snt Alaska, asked that plans for drilling in Bristol Bay, the state's
+(x3 / ask-01
+	:ARG0 (x1 / state
+		:name (n / name
+			:op1 "Alaska"))
+	:ARG1 (x5 / plan-01
+		:purpose (x7 / drill-01
+			:location (x10 / country
+				:name (n1 / name
+					:op1 "Bay")
+				:null_edge (x9 / country
+					:name (n2 / name
+						:op1 "Bristol"))
+				:location (x13 / state)))))
+
+# ::id 81
+# ::snt richest fishing grounds, be set aside until the industry can
+(x6 / set-03
+	:ARG1 (x3 / ground
+		:ARG1 (x2 / fishing
+			:mod (x1 / rich
+				:degree (m / most))))
+	:time (x8 / until
+		:op1 (x11 / possible
+			:domain (x10 / industry))))
+
+# ::id 82
+# ::snt demonstrate that it can respond effectively to spills.
+(x1 / demonstrate-01
+	:ARG1 (x4 / possible
+		:domain (x5 / respond-01
+			:manner (x6 / effective)
+			:ARG1 (x8 / spill-01))))
+
+# ::id 83
+# ::snt "The Exxon Valdez accident has taught us that simply having a
+(x7 / teach
+	:ARG0 (x5 / accident
+		:mod (x4 / valdez))
+	:ARG1 (x11 / have-03
+		:mod (x10 / simple)))
+
+# ::id 84
+# ::snt plan is not sufficient," the Alaska Republican said.
+(x10 / say-01
+	:ARG1 (x4 / suffice-01
+		:ARG1 (x1 / plan-01))
+	:ARG0 (x9 / political-party
+		:name (n / name
+			:op1 "Republican")
+		:mod (x8 / state
+			:name (n1 / name
+				:op1 "Alaska"))))
+
+# ::id 85
+# ::snt At the first Valdez City Council meeting since the spill, two
+(x7 / meet-03
+	:mod (x4 / organization
+		:name (n / name
+			:op1 "Valdez"))
+	:null_edge (x5 / null_tag)
+	:null_edge (x6 / null_tag)
+	:time (x8 / since)
+	:quant 2)
+
+# ::id 86
+# ::snt council members and Mayor John Devens expressed concern that anger
+(x7 / express-01
+	:ARG0 (x3 / and
+		:op1 (xap0 / person
+			:ARG0-of (x2 / have-org-role-91
+				:ARG2 (m / member)
+				:ARG1 (x1 / country)
+				:name (x5 / name
+					:op1 "John"
+					:op2 "Devens"
+					:ARG0-of (x4 / have-org-role-91
+						:ARG2 (m1 / mayor))))))
+	:ARG1 (x8 / concern-01)
+	:ARG1 (x10 / anger-01))
+
+# ::id 87
+# ::snt and frustration over the spill was surfacing as harrassment of
+(x1 / and
+	:op1 (x7 / surface
+		:ARG1 (x2 / frustrate-01
+			:duration (x3 / over))
+		:ARG2 (x9 / harrassment)))
+
+# ::id 88
+# ::snt pipeline company workers and their children.
+(x4 / and
+	:op1 (x2 / company
+		:mod (x1 / pipeline))
+	:op1 (x3 / person
+		:ARG0-of (w / work-01))
+	:op2 (x6 / child))
+
+# ::id 89
+# ::snt Meanwhile, a multimillion-dollar class-action lawsuit was filed
+(x8 / file-01
+	:time (x1 / meanwhile)
+	:ARG1 (x6 / lawsuit
+		:mod (x4 / country
+			:name (n / name
+				:op1 "multimillion-dollar"))
+		:mod (x5 / class-action)))
+
+# ::id 90
+# ::snt Monday in federal court in California against Exxon Corp., charging
+(x11 / charge-05
+	:null_edge (x1 / monday)
+	:ARG2 (x4 / court
+		:mod (x3 / government-organization
+			:name (n / name
+				:op1 "federal"))
+		:location (x6 / state
+			:name (n1 / name
+				:op1 "California"))
+		:mod (x9 / organization
+			:name (n2 / name
+				:op1 "Corp.")
+			:null_edge (x8 / organization
+				:name (n3 / name
+					:op1 "Exxon")))))
+
+# ::id 91
+# ::snt that the spill has led to gas prices of 10 to 15 cents more a
+(x5 / lead-02
+	:ARG4 (x8 / price-01
+		:ARG1 (x7 / gas)
+		:ARG0 (x13 / monetary-quantity
+			:unit (c / cent)
+			:null_edge 10
+			:quant 15
+			:null_edge (x14 / more))))
+
+# ::id 92
+# ::snt gallon for California drivers.
+(x1 / volume-quantity
+	:unit (g / gallon)
+	:null_edge (x4 / drive-02))
+

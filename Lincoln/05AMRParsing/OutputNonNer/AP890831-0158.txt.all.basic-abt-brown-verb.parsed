@@ -1,0 +1,303 @@
+# ::id 1
+# ::snt An explosion in a 12-unit, three-story apartment
+(x2 / explode-01
+	:ARG1 (x8 / apartment
+		:mod (x7 / three-story)))
+
+# ::id 2
+# ::snt building less than a mile from Parliament killed a man on Thursday
+(x1 / build-01
+	:ARG1 (x2 / less
+		:op1 (x5 / distance-quantity
+			:unit (m / mile)
+			:location (x7 / government-organization
+				:name (n / name
+					:op1 "Parliament"))))
+	:time (x8 / kill-01
+		:ARG1 (x10 / man
+			:ARG1-of (xap0 / date-entity
+				:weekday (x12 / thursday)))))
+
+# ::id 3
+# ::snt and injured three people, sending rubble flying a full block away.
+(x1 / and
+	:op1 (x2 / injure-01
+		:frequency 3)
+	:purpose (x6 / send-01
+		:ARG1 (x7 / rubble)
+		:ARG2 (x8 / fly-01
+			:ARG1 (x11 / block
+				:mod (x10 / full)))))
+
+# ::id 4
+# ::snt Police believed the explosion was caused either by natural gas or
+(x2 / believe-01
+	:ARG0 (x1 / police)
+	:ARG1 (x6 / cause-01
+		:ARG1 (x4 / explode-01)
+		:ARG1 (x11 / or
+			:op2 (x10 / gas
+				:mod (x9 / natural)))))
+
+# ::id 5
+# ::snt propane.
+(x1 / propane)
+
+# ::id 6
+# ::snt Witnesses said they smelled gas immediately after the blast at
+(x2 / say-01
+	:ARG0 (x1 / person
+		:ARG0-of (w / witness-01))
+	:ARG1 (x4 / smell
+		:ARG1 (x5 / gas)
+		:time (x7 / after
+			:mod (x6 / immediate)
+			:op1 (x9 / blast-05))))
+
+# ::id 7
+# ::snt about 9:30 a.m., but there was no confirmation the explosion was
+(x5 / contrast-01
+	:null_edge (x2 / include-91)
+	:ARG2 (x9 / confirm-01
+		:polarity -
+		:ARG1 (x11 / explode-01)))
+
+# ::id 8
+# ::snt caused by a gas leak.
+(x1 / cause-01
+	:ARG0 (x5 / leak-01
+		:mod (x4 / gas)))
+
+# ::id 9
+# ::snt Two hours after the explosion, firefighters rescued a middle-age
+(x8 / rescue-01
+	:time (x3 / after
+		:op1 (x2 / temporal-quantity
+			:unit (h / hour)
+			:quant 2)
+		:op1 (x5 / explode-01))
+	:ARG0 (x7 / firefighter)
+	:ARG1 (x10 / middle-age))
+
+# ::id 10
+# ::snt woman trapped inside her apartment. She was taken to a hospital.
+(x9 / take-01
+	:ARG1 (x1 / woman
+		:ARG1-of (x2 / trap-01
+			:location (x3 / inside
+				:op1 (x5 / apartment))))
+	:ARG1 (x7 / she)
+	:destination (x12 / hospital))
+
+# ::id 11
+# ::snt Three other people were taken to the Ottawa Civic Hospital
+(xap0 / person
+	:quant 3
+	:mod (x2 / other)
+	:ARG1 (x10 / country
+		:name (n / name
+			:op1 "Hospital")
+		:null_edge (x8 / country
+			:name (n1 / name
+				:op1 "Ottawa"))
+		:null_edge (x9 / country
+			:name (n2 / name
+				:op1 "Civic"))))
+
+# ::id 12
+# ::snt earlier. One man, not identified, was pronounced dead on arrival.
+(x10 / pronounced
+	:ARG1 (x4 / man
+		:time (x1 / early)
+		:quant 1
+		:ARG1-of (x7 / person
+			:ARG1-of (i / identify-01)))
+	:ARG1 (x11 / die-01
+		:op (d / dead)
+		:ARG1 x4
+		:time (x13 / arrive-01)))
+
+# ::id 13
+# ::snt A dog brought in by police searched for more possible victims.
+(x7 / search-01
+	:ARG0 (x2 / dog
+		:ARG1-of (x3 / bring-05
+			:ARG0 (x6 / police)))
+	:ARG2 (x11 / victim
+		:mod (x10 / possible
+			:degree (x9 / more))))
+
+# ::id 14
+# ::snt Flying debris damaged cars and nearby downtown buildings.
+(x3 / damage-01
+	:ARG0 (x2 / debris
+		:mod (x1 / flying))
+	:ARG1 (x5 / and
+		:op1 (x4 / car)
+		:op2 (x8 / building
+			:null_edge (x6 / nearby)
+			:mod (x7 / downtown))))
+
+# ::id 15
+# ::snt Bill Maxwell, the landlord of two nearby buildings, said the
+(x11 / say-01
+	:ARG0 (x2 / person
+		:name (n / name
+			:op1 "Maxwell")
+		:null_edge (x1 / person
+			:name (n1 / name
+				:op1 "Bill"))
+		:ARG0-of (x5 / landlord
+			:ARG1 (x9 / building
+				:quant 2
+				:mod (x8 / nearby)))))
+
+# ::id 16
+# ::snt explosion sent "huge chunks of concrete, the size of television
+(x2 / send-01
+	:ARG0 (x1 / explode-01)
+	:ARG1 (x5 / chunk
+		:mod (x4 / huge)
+		:mod (x7 / concrete)
+		:mod (x10 / size
+			:mod (x12 / television))))
+
+# ::id 17
+# ::snt sets" hurtling through the air.
+(x3 / hurtle
+	:ARG0 (x1 / set)
+	:path (x6 / air))
+
+# ::id 18
+# ::snt Cab driver Steve Legault was returning to his nearby apartment
+(x6 / return-01
+	:ARG1 (x3 / newspaper
+		:name (n / name
+			:op1 "Steve"
+			:op2 "Legault")
+		:ARG0-of (x2 / person
+			:ARG0-of (d / drive-01)
+			:ARG1 (x1 / country
+				:name (n1 / name
+					:op1 "Cab"))))
+	:ARG1 (x10 / apartment
+		:poss x3
+		:mod (x9 / nearby)))
+
+# ::id 19
+# ::snt when he heard the blast. As he ran toward the building, he
+(x3 / hear-01
+	:ARG0 (x2 / he)
+	:ARG1 (x5 / blast-05)
+	:time (x9 / run-07
+		:ARG1 (x12 / building)))
+
+# ::id 20
+# ::snt encountered a dazed and bleeding woman.
+(x1 / encounter-01
+	:ARG0 (x4 / and
+		:op1 (x3 / dazed
+			:ARG1-of (xap0 / cause-01
+				:ARG0 (x5 / bleed-01))))
+	:ARG1 (x6 / woman))
+
+# ::id 21
+# ::snt "She was delirious and was crying that her 7-year-old son was
+(x5 / and
+	:op1 (x4 / delirious
+		:ARG0 (x2 / she))
+	:op2 (x7 / cry-02
+		:ARG0 x2
+		:ARG1 (x11 / son
+			:mod (x10 / person
+				:name (n / name
+					:op1 "7-year-old")))))
+
+# ::id 22
+# ::snt still in the apartment."
+(x1 / still
+	:location (x4 / apartment))
+
+# ::id 23
+# ::snt Legault said he ran into the building and saw a man lying halfway
+(x2 / say-01
+	:ARG0 (x1 / person
+		:name (n / name
+			:op1 "Legault"))
+	:ARG1 (x8 / and
+		:op1 (x4 / run-02
+			:ARG2 (x7 / building))
+		:op2 (x9 / see-01
+			:ARG1 (x11 / man
+				:ARG1-of (x12 / lie-01
+					:manner (x13 / halfway))))))
+
+# ::id 24
+# ::snt out of a doorway in a pool of blood.
+(x4 / doorway
+	:location (x7 / pool
+		:ARG1 (x9 / blood)))
+
+# ::id 25
+# ::snt "He was covered with blood and his head had deep cuts in it. I
+(x7 / and
+	:op1 (x4 / cover-01
+		:ARG1 (x2 / he)
+		:ARG1 (x6 / blood)
+		:ARG2 (x16 / i))
+	:op2 (x10 / have-03
+		:ARG0 x2
+		:ARG2 (x9 / head-01)
+		:ARG1 (x12 / cut-02
+			:mod (x11 / deep))))
+
+# ::id 26
+# ::snt checked and I think he was dead."
+(x2 / and
+	:op1 (x1 / check-01)
+	:op2 (x3 / i)
+	:op2 (x4 / think-01
+		:ARG1 (x7 / die-01
+			:op (d / dead)
+			:domain (x5 / he))))
+
+# ::id 27
+# ::snt John Kalina, 36, who lives one block north, said the explosion
+(x12 / say-01
+	:ARG0 (x2 / person
+		:name (n / name
+			:op1 "Kalina")
+		:mod (x1 / person
+			:name (n1 / name
+				:op1 "John"))
+		:null_edge 36
+		:ARG0-of (x7 / live-01
+			:ARG1 (x9 / block
+				:quant 1)
+			:location (x10 / north)))
+	:ARG1 (x14 / explode-01))
+
+# ::id 28
+# ::snt "sounded like someone was kicking our door in."
+(x2 / sound-01
+	:time (x6 / kick-01
+		:ARG0 (x4 / someone)
+		:ARG1 (x8 / door)))
+
+# ::id 29
+# ::snt The building is in a fashionable neighborhood of renovated older
+(x2 / build-01
+	:location (x7 / neighborhood
+		:mod (x6 / fashionable)
+		:mod (x10 / old
+			:ARG1-of (x9 / renovate))))
+
+# ::id 30
+# ::snt homes, townhouses, boutiques and restaurants.
+(x3 / townhouse
+	:ARG1 (x1 / home
+		:null_edge (x6 / and
+			:condition x3
+			:op2 (x5 / boutique)
+			:op1 (x7 / restaurant))))
+

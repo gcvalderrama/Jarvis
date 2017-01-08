@@ -1,0 +1,499 @@
+# ::id 1
+# ::snt Beginning in December, most private employers
+(x7 / employ-01
+	:quant (x5 / most
+		:time (x1 / begin-01
+			:time (x3 / date-entity)))
+	:mod (x6 / private))
+
+# ::id 2
+# ::snt will be barred by law from using polygraphs and other types of lie
+(x3 / bar-01
+	:ARG0 (x5 / law)
+	:ARG2 (x7 / use-01
+		:ARG1 (x9 / and
+			:op1 (x8 / polygraph
+				:ARG1 (x13 / thing
+					:ARG1-of (l / lie-02)
+					:mod (x11 / type
+						:mod (x10 / other)))))))
+
+# ::id 3
+# ::snt detectors to screen job applicants or test the current employees
+(x1 / detector
+	:ARG2 (x6 / or
+		:op1 (x3 / screen-01)
+		:op2 (x5 / apply-01
+			:mod (x4 / job))
+		:op2 (x7 / test-01
+			:ARG1 (x10 / person
+				:ARG1-of (e / employ-01)
+				:time (x9 / current)))))
+
+# ::id 4
+# ::snt except in rare circumstances.
+(x1 / except-00
+	:ARG1 (x4 / circumstance
+		:mod (x3 / rare)))
+
+# ::id 5
+# ::snt Under new regulations issued Friday by the Labor Department,
+(x3 / regulate-01
+	:mod (x2 / new)
+	:ARG1-of (x4 / issue-01
+		:time (x6 / by
+			:null_edge (x9 / null_tag
+				:mod (x8 / political-party
+					:name (n / name
+						:op1 "Labor"))))
+		:time (xap0 / date-entity
+			:weekday (x5 / friday))))
+
+# ::id 6
+# ::snt employers can be fined up to $10,000 for requiring a job seeker or
+(x2 / possible
+	:domain (x4 / fine-01
+		:ARG1 (x1 / employ-01)
+		:ARG3 (x10 / require-01
+			:ARG0 x1
+			:ARG1 (x14 / or
+				:op2 (x13 / seeker
+					:mod (x12 / job))))))
+
+# ::id 7
+# ::snt employee already on their payrolls to submit to a polygraph exam
+(x1 / person
+	:ARG1-of (e / employ-01)
+	:time (x2 / already)
+	:ARG2 (x5 / payroll)
+	:purpose (x7 / submit-01
+		:ARG2 (x11 / exam
+			:mod (x10 / polygraph))))
+
+# ::id 8
+# ::snt for voice stress analysis.
+(x4 / analyze-01
+	:ARG1 (x2 / voice)
+	:prep-under (x3 / stress))
+
+# ::id 9
+# ::snt The regulations, which take effect Dec. 27, implement
+(x10 / implement-01
+	:ARG0 (x2 / regulate-01
+		:ARG1-of (x5 / take-01
+			:ARG1 (x6 / effect-01)
+			:name (x7 / name
+				:op1 "Dec."
+				:op2 "27"))))
+
+# ::id 10
+# ::snt legislation passed by Congress and signed by President Reagan last
+(x5 / and
+	:op1 (x2 / pass-01
+		:ARG0 (x1 / legislation)
+		:ARG0 (x4 / government-organization
+			:name (n / name
+				:op1 "Congress")))
+	:op2 (x6 / sign-01
+		:ARG0 (x9 / person
+			:name (n1 / name
+				:op1 "Reagan")
+			:ARG0-of (x8 / have-org-role-91
+				:ARG2 (p / president)))
+		:mod (x10 / last)))
+
+# ::id 11
+# ::snt June outlawing about 85 percent of the current use of lie detector
+(x2 / outlaw-01
+	:time (x1 / date-entity)
+	:ARG1 (x3 / about)
+	:ARG1 (x9 / use-01
+		:ARG1 (x5 / percentage-entity
+			:value 85)
+		:time (x8 / current)
+		:ARG1 (x12 / detector
+			:mod (x11 / thing
+				:ARG1-of (l / lie-02)))))
+
+# ::id 12
+# ::snt tests.
+(x1 / test-01)
+
+# ::id 13
+# ::snt The congressional Office of Technology Assessment had estimated
+(x8 / estimate-01
+	:ARG0 (x2 / government-organization
+		:name (n / name
+			:op1 "congressional"
+			:op2 "Office")
+		:poss (x6 / assessment
+			:mod (x5 / technology))))
+
+# ::id 14
+# ::snt that 2 million polygraph examinations were conducted last year _ 90
+(x7 / conduct-01
+	:ARG1 (x5 / examine-01
+		:mod (x4 / polygraph))
+	:time (x9 / year
+		:mod (x8 / last))
+	:ARG1 (x10 / _
+		:quant 90))
+
+# ::id 15
+# ::snt percent of them by private employers.
+(x6 / employ-01
+	:quant (x1 / percentage-entity)
+	:mod (x5 / private))
+
+# ::id 16
+# ::snt Some 7.2 million employers nationwide will be required to put up
+(x8 / require-01
+	:ARG2 (x4 / employ-01
+		:quant (x1 / some)
+		:mod (x5 / nationwide))
+	:ARG1 (x10 / put-01))
+
+# ::id 17
+# ::snt posters in December summarizing the prohibitions and exemptions and
+(x9 / and
+	:op1 (x1 / poster
+		:time (x3 / date-entity))
+	:op2 (x7 / and
+		:op1 (x6 / prohibit-01)
+		:op2 (x8 / exempt-01)))
+
+# ::id 18
+# ::snt outlining the rights of any worker asked to take a lie detector
+(x1 / outline-01
+	:ARG1 (x3 / right
+		:poss (x6 / person
+			:ARG0-of (w / work-01)
+			:mod (x5 / any)
+			:ARG1-of (x7 / ask-02
+				:ARG1 (x9 / take-01
+					:ARG1 (x12 / detector
+						:mod (x11 / thing
+							:ARG1-of (l / lie-02))))))))
+
+# ::id 19
+# ::snt test.
+(x1 / test-01)
+
+# ::id 20
+# ::snt Fred Alvarez, assistant labor secretary for employment
+(x1 / name
+	:op1 "Fred"
+	:op2 "Alvarez"
+	:ARG0-of (x6 / have-org-role-91
+		:ARG2 (s / secretary)
+		:ARG0-of (x4 / assist-01)
+		:ARG1 (x5 / labor-01)
+		:purpose (x8 / employment)))
+
+# ::id 21
+# ::snt standards, said the posters will be mailed out in the next three or
+(x3 / say-01
+	:ARG0 (x1 / standard)
+	:ARG1 (x8 / mail
+		:ARG1 (x5 / poster)
+		:ARG2 (x14 / or
+			:mod (x12 / next))))
+
+# ::id 22
+# ::snt four weeks.
+(x2 / week
+	:quant 4)
+
+# ::id 23
+# ::snt In addition to the fines, anyone required to take the test in
+(x8 / require-01
+	:ARG2 (x5 / fine)
+	:ARG0 (x7 / anyone)
+	:ARG1 (x10 / take-01
+		:ARG1 (x12 / test-01)))
+
+# ::id 24
+# ::snt violation of the new law can sue employers in federal and state
+(x6 / possible
+	:domain (x7 / sue-01
+		:ARG0 (x1 / violate-01
+			:ARG1 (x5 / law
+				:mod (x4 / new)))
+		:ARG1 (x8 / employ-01
+			:location (x11 / and
+				:op1 (x10 / government-organization
+					:name (n / name
+						:op1 "federal"))
+				:op2 (x12 / state)))))
+
+# ::id 25
+# ::snt courts for relief, such as employment reinstatement, promotion and
+(x1 / court
+	:purpose (x3 / relieve-01)
+	:example (x11 / and
+		:op1 (x8 / reinstate-01
+			:ARG1 (x7 / person
+				:ARG1-of (e / employ-01)))
+		:op1 (x10 / promote-01)))
+
+# ::id 26
+# ::snt any payment of lost wages and benefits.
+(x2 / payment
+	:mod (x1 / any)
+	:null_edge (x6 / and
+		:op1 (x5 / wage
+			:ARG1-of (x4 / lose-03))
+		:op2 (x7 / benefit)))
+
+# ::id 27
+# ::snt Exempted from protection under the ban are employees of federal,
+(x1 / exempt
+	:ARG2 (x3 / protect-01
+		:ARG1 (x6 / ban-01))
+	:ARG1 (x8 / person
+		:ARG1-of (e / employ-01)
+		:ARG0 (x10 / government-organization
+			:name (n / name
+				:op1 "federal"))))
+
+# ::id 28
+# ::snt state and local governments or of federal contractors engaged in
+(x2 / and
+	:op2 (x4 / government-organization
+		:ARG0-of (g / govern-01)
+		:ARG1 (x1 / state)
+		:mod (x3 / local)
+		:ARG1 (x5 / or
+			:op1 (x8 / person
+				:ARG0-of (c / contract-02)
+				:mod (x7 / government-organization
+					:name (n / name
+						:op1 "federal"))
+				:ARG1-of (x9 / person
+					:ARG1-of (e / engage-01))))))
+
+# ::id 29
+# ::snt national security, intelligence or top secret activities.
+(x5 / or
+	:op1 (x2 / security
+		:mod (x1 / nation))
+	:op2 (x4 / intelligence)
+	:op2 (x8 / activity
+		:mod (x6 / top)
+		:mod (x7 / secret)))
+
+# ::id 30
+# ::snt Also exempted from the ban are prospective employees of armored
+(x2 / exempt
+	:mod (x1 / also)
+	:ARG2 (x5 / ban-01)
+	:ARG1 (x8 / person
+		:ARG1-of (e / employ-01)
+		:mod (x7 / prospective)
+		:ARG1-of (x10 / armor-01)))
+
+# ::id 31
+# ::snt car, security alarm and security guard firms hired to protect
+(x5 / and
+	:op1 (x4 / alarm-01
+		:ARG1 (x1 / car)
+		:ARG1 (x3 / security)
+		:ARG1-of (x9 / hire-01
+			:purpose (x11 / protect-01)))
+	:op2 (x8 / firm
+		:mod (x7 / guard-01
+			:mod (x6 / security))))
+
+# ::id 32
+# ::snt operations affecting health and safety, national security or money.
+(x2 / affect-01
+	:ARG1 (x1 / operation)
+	:ARG1 (x4 / and
+		:op1 (x3 / health
+			:poss (x9 / or
+				:op2 (x10 / money)))
+		:op2 (x5 / safe-41)
+		:op3 (x8 / security
+			:mod (x7 / nation))))
+
+# ::id 33
+# ::snt Pharmaceutical concerns or companies manufacturing, distributing
+(x5 / manufacture-01
+	:ARG1 (x3 / or
+		:op1 (x2 / concern-01
+			:mod (x1 / pharmaceutical))
+		:op2 (x4 / company)
+		:op2 (x7 / distribute-01)))
+
+# ::id 34
+# ::snt or dispensing controlled substances also can require job applicants
+(x1 / or
+	:op2 (x6 / possible
+		:domain (x7 / require-01
+			:ARG0 (x4 / substance
+				:ARG1-of (x2 / dispense)
+				:ARG1-of (x3 / controlled))
+			:mod (x5 / also)
+			:ARG2 (x9 / apply-01
+				:ARG1 (x8 / job)))))
+
+# ::id 35
+# ::snt to submit to a lie detector test, but only for those people who
+(x2 / submit-01
+	:ARG1-of (xap0 / cause-01
+		:ARG0 (x7 / test-01
+			:ARG1 (x5 / thing
+				:ARG1-of (l / lie-02))
+			:ARG1 (x6 / detector))))
+
+# ::id 36
+# ::snt would have direct access to the drugs.
+(x2 / have-03
+	:ARG1 (x4 / access-01
+		:manner (x3 / direct)
+		:ARG1 (x7 / drug)))
+
+# ::id 37
+# ::snt Polygraphs still can be used by employers to investigate
+(x3 / possible
+	:domain (x5 / use-01
+		:ARG1 (x1 / polygraph)
+		:mod (x2 / still)
+		:ARG0 (x7 / employ-01
+			:ARG0-of (x9 / investigate-01))))
+
+# ::id 38
+# ::snt specific incidents of theft, embezzlement or sabotage, but not a
+(x10 / contrast-01
+	:ARG1 (x2 / incident
+		:mod (x1 / specific)
+		:name (x12 / name
+			:op1 "a"))
+	:ARG2 (x7 / or
+		:op1 (x4 / theft)
+		:op2 (x6 / embezzle-01)
+		:op2 (x8 / sabotage)))
+
+# ::id 39
+# ::snt persistent problem, such as recurring inventory shortages.
+(x2 / problem
+	:ARG1-of (x1 / persist-01)
+	:topic (x8 / short-41
+		:mod (x6 / recur)
+		:mod (x7 / inventory-00)))
+
+# ::id 40
+# ::snt But any workers asked to submit to a polygraph exam under those
+(x1 / contrast-01
+	:ARG2 (x4 / ask-01
+		:ARG0 (x3 / person
+			:ARG0-of (w / work-01)
+			:mod (x2 / any))
+		:ARG1 (x6 / submit-01
+			:ARG2 (x10 / exam
+				:mod (x9 / polygraph)))))
+
+# ::id 41
+# ::snt conditions must be given at least 48 hours advance notice and a
+(x11 / and
+	:op2 (x1 / condition)
+	:op1 (x8 / temporal-quantity
+		:unit (h / hour)
+		:quant (x5 / person
+			:name (n / name
+				:op1 "at"))
+		:quant 48)
+	:op1 (x10 / notice
+		:mod (x9 / advance-01)))
+
+# ::id 42
+# ::snt statement in advance telling them of their rights, including the
+(x4 / tell-01
+	:ARG0 (x1 / state-01
+		:time (x3 / advance-01))
+	:ARG1 (x8 / right)
+	:ARG1 (x10 / include-91))
+
+# ::id 43
+# ::snt right to refuse the test or to terminate it at any time.
+(x6 / or
+	:op1 (x3 / refuse-01
+		:ARG0 (x1 / right))
+	:op2 (x5 / test-01)
+	:op2 (x8 / terminate-01
+		:ARG0 x1))
+
+# ::id 44
+# ::snt The pre-test statement also must explain the specific incident
+(x6 / explain-01
+	:ARG0 (x3 / state-01
+		:ARG0 (x2 / pre-test))
+	:mod (x4 / also)
+	:ARG1 (x9 / incident
+		:mod (x8 / specific)))
+
+# ::id 45
+# ::snt or activity being investigated and the basis for the employer's
+(x1 / or
+	:op2 (x5 / and
+		:op1 (x4 / investigate-01
+			:ARG1 (x2 / activity)
+			:ARG1 (x10 / employ-01))))
+
+# ::id 46
+# ::snt suspicion that the person asked to take the exam was involved in it.
+(x11 / involve-01
+	:ARG2 (x5 / ask-02
+		:ARG0 (x4 / person)
+		:ARG1 (x7 / take-01
+			:ARG0 x4
+			:ARG1 (x9 / exam))))
+
+# ::id 47
+# ::snt Results of a polygraph test or refusal to submit to such an exam
+(x1 / result-01
+	:ARG2 (x6 / or
+		:op1 (x5 / test-01
+			:mod (x4 / polygraph))
+		:op2 (x7 / refuse-01
+			:ARG2 (x9 / submit-01
+				:ARG2 (x13 / exam
+					:mod (x11 / such))))))
+
+# ::id 48
+# ::snt cannot be used alone as a basis for taking any action against an
+(x1 / possible
+	:domain (x4 / use-01
+		:manner (x5 / alone)
+		:ARG2 (x10 / take-01
+			:ARG1 (x12 / action
+				:mod (x11 / any)
+				:name (x14 / name
+					:op1 "an")))))
+
+# ::id 49
+# ::snt employee. The regulations also forbid disclosure of the test
+(x6 / forbid-01
+	:ARG0 (x1 / person
+		:ARG1-of (e / employ-01))
+	:ARG0 (x4 / regulate-01)
+	:mod (x5 / also)
+	:ARG1 (x7 / disclosure
+		:poss (x10 / test-01)))
+
+# ::id 50
+# ::snt results to anyone other than the employee without the employee's
+(x1 / result-01
+	:ARG2 (x3 / anyone
+		:ARG0 (x7 / person
+			:ARG1-of (e / employ-01)
+			:ARG0 (x10 / person
+				:ARG1-of (e1 / employ-01)))))
+
+# ::id 51
+# ::snt consent or a court order.
+(x2 / or
+	:op1 (x1 / consent-01)
+	:op2 (x5 / order
+		:mod (x4 / court)))
+

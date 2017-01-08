@@ -1,0 +1,388 @@
+# ::id 1
+# ::snt A major earthquake registering 7.1 on the Richter scale struck off northeastern Honshu Island early today, officials said
+(x19 / say-01
+	:ARG1 (x10 / person
+		:name (n / name
+			:op1 "struck")
+		:ARG0 (x3 / earthquake
+			:mod (x2 / major)
+			:ARG0-of (x4 / register-02
+				:ARG1 (x5 / 7.1)
+				:manner (x9 / scale
+					:ARG0 (x8 / person
+						:name (n2 / name
+							:op1 "Richter")))))
+		:ARG0 (x12 / northeast
+			:part-of (x13 / country
+				:name (n1 / name
+					:op1 "Honshu")))
+		:time (x15 / early
+			:op1 (x16 / today)))
+	:ARG0 (xap0 / person
+		:ARG0-of (x18 / have-org-role-91
+			:ARG2 (o / official))))
+
+# ::id 2
+# ::snt Three coastal villages were ordered evacuated for fear of tidal waves, officials said
+(x14 / say-01
+	:ARG1 (x5 / order-01
+		:ARG1 (x3 / village
+			:quant 3
+			:location (x2 / coast))
+		:ARG2 (x6 / evacuate
+			:ARG1 (x8 / fear-01
+				:ARG1 (x11 / wave
+					:mod (x10 / tidal)))))
+	:ARG0 (xap0 / person
+		:ARG0-of (x13 / have-org-role-91
+			:ARG2 (o / official))))
+
+# ::id 3
+# ::snt There were no immediate reports of casualties or damage from the quake, which struck at 3:26 a.m. Thursday (1:26 p.m. Wednesday EST )
+(x5 / report-01
+	:polarity -
+	:time (x4 / immediate)
+	:ARG1 (x8 / or
+		:op1 (x7 / casualty)
+		:op2 (x9 / damage-01))
+	:ARG0-of (x15 / strike-01
+		:ARG1 (x12 / quake)
+		:time (xap1 / date-entity
+			:weekday (x19 / thursday
+				:null_edge (x24 / est
+					:quant (x21 / include-91)
+					:time (xap0 / date-entity
+						:null_edge (x23 / null_tag)))))))
+
+# ::id 4
+# ::snt the quake , which struck at 3:26 a.m. Thursday -LRB- 1:26 p.m. Wednesday EST -RRB- was centered about 60 miles off the coast and at a depth of 20 miles, the Central Meteorological Agency in Tokyo said
+(x38 / say-01
+	:ARG1 (x17 / center-01
+		:time (x5 / strike-01
+			:ARG1 (x2 / quake)
+			:null_edge (x7 / include-91)
+			:ARG1 (x14 / est
+				:null_edge (x11 / include-91))
+			:time (xap0 / date-entity
+				:weekday (x9 / thursday))
+			:time (xap1 / date-entity
+				:null_edge (x13 / null_tag)))
+		:ARG2 (x20 / distance-quantity
+			:unit (m / mile)
+			:null_edge (x18 / about
+				:null_edge 60))
+		:ARG2 (x24 / and
+			:op1 (x23 / coast)
+			:op2 (x27 / depth
+				:ARG2 (x30 / distance-quantity
+					:unit (m1 / mile)
+					:quant 20))))
+	:ARG0 (x33 / government-organization
+		:name (n / name
+			:op1 "Central"
+			:op2 "Meteorological"
+			:op3 "Agency")
+		:location (x37 / city
+			:name (n1 / name
+				:op1 "Tokyo"))))
+
+# ::id 5
+# ::snt After the quake, officials closed the major expressway through the affected region for inspection and overnight trains were stopped to check the condition of the rails
+(x16 / and
+	:op1 (x6 / close-01
+		:time (x1 / after
+			:op1 (x3 / quake))
+		:ARG1 (x9 / expressway
+			:mod (x8 / major))
+		:location (x13 / region
+			:ARG1-of (x12 / affect-01))
+		:purpose (x15 / inspect-01)
+		:ARG0 (xap0 / person
+			:ARG0-of (x5 / have-org-role-91
+				:ARG2 (o / official))))
+	:op1 (x20 / stop-01
+		:ARG1 (x18 / train
+			:time (x17 / overnight))
+		:ARG1 (x22 / check-06
+			:ARG1 (x24 / condition
+				:poss (x27 / rail)))))
+
+# ::id 6
+# ::snt The agency warned of a tsunami, or seismic tidal wave, hitting coastal towns on northeast Honshu and the northernmost main island of Hokkaido
+(x3 / warn-01
+	:ARG1 (x8 / or
+		:op1 (x6 / tsunami)
+		:op2 (x11 / wave
+			:mod (x9 / seismic)
+			:mod (x10 / tidal)))
+	:ARG1 (x13 / hit-02
+		:ARG1 (x15 / town
+			:mod (x14 / coast)))
+	:ARG1 (x19 / and
+		:op1 (x18 / country
+			:name (n / name
+				:op1 "Honshu")
+			:mod (x17 / northeast))
+		:op2 (x23 / island
+			:mod (x21 / northernmost)
+			:mod (x22 / main)
+			:mod (x25 / hokkaido))))
+
+# ::id 7
+# ::snt The agency said sea levels two hours after the quake had risen nearly three feet in the region
+(x3 / say-01
+	:ARG1 (x5 / level
+		:mod (x4 / sea))
+	:time (x8 / after
+		:op1 (x12 / rise-01
+			:ARG1 (x7 / temporal-quantity
+				:unit (h / hour)
+				:quant 2)
+			:ARG1 (x10 / quake)
+			:ARG1 (x15 / distance-quantity
+				:unit (f / foot)
+				:mod (x13 / nearly))
+			:location (x18 / region))))
+
+# ::id 8
+# ::snt Officials ordered the evacuation of the villages of Taro, Sanriku and Ozutsu, about 300 miles northeast of Tokyo on Honshu's eastern coast
+(x2 / order-02
+	:ARG1 (x4 / evacuation
+		:ARG1 (x7 / village
+			:location (x12 / and
+				:op1 (x9 / person
+					:name (n / name
+						:op1 "Taro")
+					:location (xap1 / relative-position
+						:quant (x17 / distance-quantity
+							:unit (m / mile)
+							:null_edge (x15 / about
+								:null_edge 300))
+						:op1 (x20 / city
+							:name (n3 / name
+								:op1 "Tokyo"))
+						:ARG1 (xap2 / be-located-at-91
+							:direction (x18 / northeast)
+							:ARG2 (x25 / coast
+								:part-of (x22 / country
+									:name (n4 / name
+										:op1 "Honshu"))
+								:mod (x24 / east)))))
+				:op2 (x11 / country
+					:name (n1 / name
+						:op1 "Sanriku"))
+				:op2 (x13 / country
+					:name (n2 / name
+						:op1 "Ozutsu")))))
+	:ARG0 (xap0 / person
+		:ARG0-of (x1 / have-org-role-91
+			:ARG2 (o / official))))
+
+# ::id 9
+# ::snt The agency said the quake had a magnitude of 7.1 on the Richter scale, the same as the Oct. 17 earthquake that devastated the San Francisco Bay area
+(x3 / say-01
+	:ARG1 (x6 / have-03
+		:ARG0 (x5 / quake)
+		:ARG1 (x8 / magnitude
+			:null_edge (x10 / 7.1
+				:null_edge (x17 / same-41
+					:ARG2 (x14 / scale
+						:ARG0 (x13 / person
+							:name (n / name
+								:op1 "Richter")))
+					:ARG2 (x22 / earthquake
+						:null_edge (x20 / event
+							:name (n1 / name
+								:op1 "Oct."))
+						:time (x21 / date-entity)
+						:ARG0-of (x24 / devastate-01
+							:ARG1 (x26 / name
+								:op1 "San"
+								:op2 "Francisco"
+								:op3 "Bay"))))))))
+
+# ::id 10
+# ::snt In Washington, the U.S. Geological Survey said the quake measured 7.3 on the Richter scale
+(x8 / say-01
+	:location (x2 / city
+		:name (n / name
+			:op1 "Washington"))
+	:ARG0 (x6 / government-organization
+		:name (n1 / name
+			:op1 "Geological"
+			:op2 "Survey"))
+	:ARG1 (x11 / measure-01
+		:ARG0 (x10 / quake)
+		:ARG1 (x12 / 7.3)
+		:degree (x16 / scale
+			:ARG0 (x15 / person
+				:name (n2 / name
+					:op1 "Richter")))))
+
+# ::id 11
+# ::snt U.S. Geological Survey scientists said U.S. Geological Survey scientists recorded an aftershock measuring 5.8 about 10 minutes after the main quake
+(x5 / say-01
+	:ARG0 (x4 / scientist
+		:name (x1 / name
+			:op1 "U.S."
+			:op2 "Geological"
+			:op3 "Survey"))
+	:ARG1 (x10 / record-01
+		:ARG0 (x9 / scientist
+			:name (x6 / name
+				:op1 "U.S."
+				:op2 "Geological"
+				:op3 "Survey"))
+		:ARG1 (x12 / aftershock
+			:ARG1-of (x13 / measure-01
+				:ARG1 (x17 / temporal-quantity
+					:unit (m / minute)
+					:null_edge (x15 / about
+						:null_edge 10))
+				:time (x18 / after
+					:op1 (x21 / quake
+						:mod (x20 / main)))))))
+
+# ::id 12
+# ::snt The main earthquake was the strongest in that region in more than 58 years, since a magnitude 7.7 earthquake March 9, 1931, said Don Finley, a spokesman for the U.S. agency
+(x3 / earthquake
+	:mod (x2 / main)
+	:mod (x6 / strong
+		:degree (m / most)
+		:duration (x14 / temporal-quantity
+			:unit (y / year)
+			:quant (x11 / more-than
+				:op1 58))
+		:time (x16 / since
+			:op1 (x20 / earthquake
+				:mod (x19 / 7.7)
+				:name (x21 / name
+					:op1 "March"
+					:op2 "9"
+					:op3 ","
+					:op4 "1931")
+				:name (x27 / name
+					:op1 "Don"
+					:op2 "Finley"
+					:ARG0-of (x31 / have-org-role-91
+						:ARG2 (s / spokesman)
+						:ARG1 (x35 / agency
+							:mod (x34 / country
+								:name (n / name
+									:op1 "U.S."))))))))
+	:location (x9 / region
+		:mod (x8 / that)))
+
+# ::id 13
+# ::snt The earthquake occurred in the same general area as a series of earlier tremors during the past several weeks
+(x2 / earthquake
+	:location (x8 / area
+		:ARG1-of (x6 / same-41)
+		:mod (x7 / general)
+		:mod (x14 / tremor
+			:quant (x11 / series)
+			:time (x13 / early)
+			:time (x17 / past
+				:null_edge (x18 / several
+					:op1 (x19 / week))))))
+
+# ::id 14
+# ::snt The strongest of the earlier quakes was a magnitude 6.5 on Sunday
+(x9 / magnitude
+	:domain (x6 / quake
+		:mod (x2 / strong
+			:degree (m / most))
+		:time (x5 / early))
+	:null_edge 6.5
+	:time (xap0 / date-entity
+		:weekday (x12 / sunday)))
+
+# ::id 15
+# ::snt The Richter scale is a measure of ground motion as recorded on seismographs
+(x6 / measure
+	:domain (x3 / scale
+		:poss (x2 / person
+			:name (n / name
+				:op1 "Richter")))
+	:ARG1 (x9 / motion
+		:mod (x8 / ground))
+	:ARG1-of (x11 / record-01
+		:ARG1 (x13 / seismograph)))
+
+# ::id 16
+# ::snt Every increase of one number means a tenfold increase in magnitude
+(x6 / mean-01
+	:ARG0 (x2 / increase-01
+		:mod (x1 / every)
+		:ARG1-of (x3 / include-91))
+	:ARG1 (x9 / increase-01
+		:degree (x8 / tenfold)))
+
+# ::id 17
+# ::snt Thus a reading of 7.5 reflects an earthquake 10 times stronger than one of 6.5
+(x6 / reflect-01
+	:ARG2 (x3 / read-01
+		:mod (x5 / 7.5))
+	:ARG1 (x8 / earthquake
+		:null_edge (x11 / strong
+			:null_edge 10)
+		:null_edge 6.5))
+
+# ::id 18
+# ::snt An earthquake of 3.5 on the Richter scale can cause slight damage in the local area, 4 moderate damage, 5 considerable damage, 6 severe damage
+(x9 / possible
+	:domain (x10 / cause-01
+		:ARG0 (x2 / earthquake
+			:mod 3.5
+			:mod (x8 / scale
+				:ARG0 (x7 / person
+					:name (n / name
+						:op1 "Richter"))))
+		:ARG1 (x12 / damage-01
+			:mod (x11 / slight)
+			:ARG1 (x20 / damage-01
+				:location (x16 / area
+					:mod (x15 / local))
+				:quant 4
+				:mod (x19 / moderate))
+			:ARG1 (x24 / damage-01
+				:quant 5
+				:degree (x23 / considerable))
+			:ARG1 (x28 / damage-01
+				:quant 6
+				:degree (x27 / severe)))))
+
+# ::id 19
+# ::snt A 7 reading is a " major " earthquake, capable of widespread heavy damage ; 8 is a " great " quake, capable of tremendous damage
+(x / xconcept
+	:x (x16 / and
+		:op5 (x9 / earthquake
+			:domain (x3 / read-01
+				:quant 7)
+			:mod (x7 / major)
+			:ARG1 (x28 / damage-01
+				:ARG1-of (x11 / capable-41
+					:ARG1 (x15 / damage-01
+						:mod (x13 / widespread)
+						:mod (x14 / heavy)))
+				:quant 8
+				:mod (x21 / great)
+				:mod (x27 / tremendous)))))
+
+# ::id 20
+# ::snt Japan is situated on a major fault line that produces frequent earthquakes, few of which cause serious damage
+(x3 / situate
+	:ARG1 (x1 / country
+		:name (n / name
+			:op1 "Japan"))
+	:ARG2 (x8 / line
+		:mod (x6 / major)
+		:mod (x7 / fault)
+		:ARG0-of (x10 / produce-01
+			:ARG1 (x12 / earthquake
+				:frequency (x11 / frequent)
+				:ARG0-of (x17 / cause-01
+					:ARG0 (x14 / few)
+					:ARG1 (x19 / damage-01
+						:mod (x18 / serious)))))))
+

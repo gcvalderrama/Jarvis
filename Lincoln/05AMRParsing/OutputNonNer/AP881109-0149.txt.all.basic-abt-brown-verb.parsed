@@ -1,0 +1,200 @@
+# ::id 1
+# ::snt The cruise ship Song of America was forced to return
+(x8 / force-01
+	:ARG1 (x3 / ship
+		:mod (x2 / cruise)
+		:mod (x4 / person
+			:name (n / name
+				:op1 "Song"))
+		:poss (x6 / country
+			:name (n1 / name
+				:op1 "America")))
+	:ARG2 (x10 / return-01))
+
+# ::id 2
+# ::snt to port after an engine seized up and started a small fire, but no
+(x14 / contrast-01
+	:ARG1 (x2 / port
+		:time (x3 / after
+			:op1 (x8 / and
+				:op1 (x6 / seize-01
+					:ARG1 (x5 / engine))
+				:op2 (x9 / start-01
+					:ARG1 (x12 / fire-01
+						:mod (x11 / small)))))
+		:polarity -))
+
+# ::id 3
+# ::snt one was hurt, the ship's owner said today.
+(x9 / say-01
+	:ARG1 (x3 / hurt-01)
+	:ARG0 (x8 / person
+		:ARG0-of (o / own-01)
+		:ARG1 (x6 / ship))
+	:time (x10 / today))
+
+# ::id 4
+# ::snt The ship left Miami on Sunday with about 1,300 passengers on a
+(x3 / leave-01
+	:ARG0 (x2 / ship)
+	:ARG1 (x4 / country
+		:name (n / name
+			:op1 "Miami"))
+	:ARG2 (x10 / passenger
+		:quant (x8 / about
+			:op1 (x9 / 1,300)))
+	:time (xap0 / date-entity
+		:weekday (x6 / sunday)))
+
+# ::id 5
+# ::snt Caribbean cruise.
+(x2 / cruise
+	:mod (x1 / country
+		:name (n / name
+			:op1 "Caribbean")))
+
+# ::id 6
+# ::snt On Tuesday, a few hours out of Cozumel, Mexico, one of its four
+(x5 / few
+	:op1 (x6 / temporal-quantity
+		:unit (h / hour)
+		:mod (x9 / country
+			:name (n / name
+				:op1 "Cozumel")
+			:location (x11 / country
+				:name (n1 / name
+					:op1 "Mexico"))))
+	:op1 (xap0 / date-entity
+		:weekday (x2 / tuesday
+			:ARG1-of (x14 / include-91
+				:ARG2 4))))
+
+# ::id 7
+# ::snt engines seized up, touching off a fire in the engine room, said
+(x14 / say-01
+	:ARG1 (x2 / seize-01
+		:ARG1 (x1 / engine)
+		:ARG2 (x5 / touch-01
+			:ARG1 (x8 / fire-01)
+			:location (x12 / room
+				:ARG1 (x11 / engine)))))
+
+# ::id 8
+# ::snt Royal Caribbean Cruise Line spokesman Rich Steck.
+(x1 / royal
+	:ARG0-of (x5 / have-org-role-91
+		:ARG2 (s / spokesman)))
+
+# ::id 9
+# ::snt "Any time you have a fire it's a big deal, but it was quickly
+(x14 / contrast-01
+	:null_edge (x2 / any)
+	:ARG1 (x7 / fire-01
+		:poss (x4 / you)
+		:ARG0-of (x12 / deal-01
+			:mod (x11 / big)))
+	:null_edge (x17 / quick))
+
+# ::id 10
+# ::snt brought under control," Steck said. The passengers were mustered on
+(x7 / say-01
+	:ARG1 (x3 / control-01)
+	:ARG0 (x6 / person
+		:name (n / name
+			:op1 "Steck"))
+	:ARG1 (x12 / muster-01
+		:ARG1 (x10 / passenger)))
+
+# ::id 11
+# ::snt deck while crew members doused the blaze, but then allowed to resume
+(x1 / deck
+	:time (x5 / douse
+		:ARG1 (x7 / blaze)
+		:ARG0 (xap0 / person
+			:ARG0-of (x4 / have-org-role-91
+				:ARG2 (m / member)
+				:ARG1 (x3 / crew))
+			:op2 (x11 / allow-01
+				:time (x10 / then)
+				:ARG1 (x13 / resume-01)))))
+
+# ::id 12
+# ::snt the evening's activities, he said.
+(x7 / say-01
+	:ARG0 (x4 / activity
+		:poss (x2 / evening))
+	:ARG0 (x6 / he))
+
+# ::id 13
+# ::snt The 705-foot ship turned around and returned to Cozumel on its
+(x6 / and
+	:op1 (x4 / turn-02
+		:ARG0 (x3 / ship
+			:mod (x2 / 705-foot))
+		:direction (x5 / around))
+	:op2 (x7 / return-01
+		:ARG4 (x9 / country
+			:name (n / name
+				:op1 "Cozumel"))))
+
+# ::id 14
+# ::snt remaining three engines to replenish firefighting supplies, Steck
+(x1 / remain-01
+	:purpose (x5 / replenish
+		:ARG1 (x3 / engine
+			:quant 3)
+		:ARG1 (x7 / supply-01
+			:ARG1 (x6 / firefighting)
+			:ARG0 (x9 / person
+				:name (n / name
+					:op1 "Steck")))))
+
+# ::id 15
+# ::snt said. Passengers stayed aboard, and the Song of America will return
+(x7 / and
+	:op2 (x1 / say-01)
+	:op1 (x4 / stay-01
+		:location (x5 / aboard))
+	:op2 (x13 / return-01
+		:ARG1 (x9 / person
+			:name (n / name
+				:op1 "Song")
+			:ARG1 (x11 / country
+				:name (n1 / name
+					:op1 "America")))))
+
+# ::id 16
+# ::snt to Miami on Thursday or Friday.
+(x2 / country
+	:name (n / name
+		:op1 "Miami")
+	:location (x5 / or
+		:op2 (xap0 / date-entity
+			:weekday (x6 / friday))
+		:op1 (xap1 / date-entity
+			:weekday (x4 / thursday))))
+
+# ::id 17
+# ::snt All passengers will be offered early flights home, along with
+(x5 / offer-01
+	:ARG1 (x2 / passenger
+		:quant (x1 / all))
+	:ARG1 (x7 / fly-01
+		:op (f / flight)
+		:time (x6 / early))
+	:ARG4 (x8 / home))
+
+# ::id 18
+# ::snt full refunds or the chance to book another cruise, Steck said.
+(x12 / say-01
+	:ARG1 (x3 / or
+		:op1 (x2 / refund
+			:mod (x1 / full))
+		:op2 (x5 / chance
+			:ARG1 (x7 / book
+				:ARG1 (x9 / cruise
+					:mod (x8 / another)))))
+	:ARG0 (x11 / person
+		:name (n / name
+			:op1 "Steck")))
+

@@ -1,0 +1,455 @@
+# ::id 1
+# ::snt Natural gas explosions that leveled two
+(x3 / explode-01
+	:mod (x1 / natural)
+	:mod (x2 / gas)
+	:ARG0-of (x5 / level-03
+		:quant 2))
+
+# ::id 2
+# ::snt homes and damaged a third in two days were called a coincidence by
+(x10 / call-01
+	:ARG1 (x2 / and
+		:op1 (x1 / home
+			:duration (x8 / temporal-quantity
+				:unit (d / day)
+				:quant 2))
+		:op2 (x3 / damage-01))
+	:ARG1 (x12 / coincidence))
+
+# ::id 3
+# ::snt utility officials, but some residents remain unconvinced.
+(x4 / contrast-01
+	:ARG2 (x6 / person
+		:ARG0-of (r / reside-01)
+		:quant (x5 / some))
+	:ARG2 (x7 / remain-01
+		:ARG3 (x8 / unconvinced
+			:ARG0 (xap0 / person
+				:ARG0-of (x2 / have-org-role-91
+					:ARG2 (o / official)
+					:ARG1 (x1 / utility))))))
+
+# ::id 4
+# ::snt Northern Illinois Gas Co. crews reported finding nothing unusual
+(x6 / report-01
+	:ARG0 (x5 / crew
+		:poss (x1 / organization
+			:name (n / name
+				:op1 "Northern"))
+		:ARG1 (x2 / organization
+			:name (n1 / name
+				:op1 "Illinois"))
+		:mod (x3 / organization
+			:name (n2 / name
+				:op1 "Gas"))
+		:null_edge (x4 / null_tag))
+	:ARG1 (x7 / find-01
+		:ARG1 (x8 / nothing
+			:mod (x9 / usual
+				:polarity -))))
+
+# ::id 5
+# ::snt Monday while scouring more than 100 homes and a school within a mile
+(x1 / monday
+	:null_edge (x3 / scour
+		:ARG1 (x8 / and
+			:op1 (x7 / home
+				:quant (x4 / more-than
+					:op1 100))
+			:op4 (x10 / school
+				:time (x11 / within
+					:op1 (x13 / distance-quantity
+						:unit (m / mile)))))))
+
+# ::id 6
+# ::snt radius of the explosions Thursday and Saturday in this town of
+(x1 / radius
+	:domain (x6 / and
+		:op1 (x4 / explode-01)
+		:location (x10 / town
+			:mod (x9 / this)
+			:ARG1-of (x11 / include-91))
+		:time (xap0 / date-entity
+			:weekday (x7 / saturday))
+		:op1 (xap1 / date-entity
+			:null_edge (x5 / null_tag))))
+
+# ::id 7
+# ::snt 17,000 about 60 miles northwest of Chicago.
+(x / xconcept
+	:x (x7 / country
+		:name (n / name
+			:op1 "Chicago"))
+	:x (xap0 / between
+		:quant (x4 / distance-quantity
+			:unit (m / mile)
+			:null_edge (x2 / about
+				:null_edge 60))
+		:direction (x5 / northwest)))
+
+# ::id 8
+# ::snt "It's just a coincidence. No relationship exists between the two
+(x6 / coincidence
+	:domain (x2 / it)
+	:mod (x4 / just)
+	:ARG1-of (x10 / exist-01
+		:ARG1 (x9 / relationship)
+		:quant 2))
+
+# ::id 9
+# ::snt explosions," said utility spokesman Bob Edwards.
+(x4 / say-01
+	:ARG1 (x1 / explode-01)
+	:ARG0 (x7 / newspaper
+		:name (n / name
+			:op1 "Bob"
+			:op2 "Edwards")
+		:mod (x5 / utility)
+		:ARG0-of (x6 / have-org-role-91
+			:ARG2 (s / spokesman))))
+
+# ::id 10
+# ::snt There were no serious injuries, but some residents remain uneasy.
+(x7 / contrast-01
+	:ARG2 (x5 / injure-01
+		:polarity -
+		:mod (x4 / serious)
+		:ARG1 (x10 / remain-01
+			:ARG1 (x9 / person
+				:ARG0-of (r / reside-01)
+				:quant (x8 / some))
+			:ARG3 (x11 / uneasy-41))))
+
+# ::id 11
+# ::snt 
+(x17 / say-01
+	:ARG1 (x10 / possible
+		:domain (x2 / i)
+		:mod (x4 / really)
+		:mod (x6 / really)
+		:domain (x12 / sleep-01
+			:ARG0 (x9 / i)
+			:time (x14 / night
+				:mod (x13 / last)))))
+
+# ::id 12
+# ::snt Angela Carparelli, who lives in the neighborhood.
+(x1 / name
+	:op1 "Angela"
+	:op2 "Carparelli"
+	:ARG0-of (x5 / live-01
+		:location (x8 / neighborhood)))
+
+# ::id 13
+# ::snt One house was leveled following an explosion on Thursday and more
+(x4 / level-03
+	:ARG1 (x2 / house
+		:quant 1)
+	:ARG1-of (x5 / follow-01
+		:ARG2 (x7 / explode-01
+			:ARG1 (x10 / and
+				:op2 (x11 / more)
+				:op1 (xap0 / date-entity
+					:weekday (x9 / thursday))))))
+
+# ::id 14
+# ::snt explosions on Saturday destroyed one house and knocked another off
+(x7 / and
+	:op1 (x4 / destroy-01
+		:ARG0 (x1 / explode-01
+			:time (xap0 / date-entity
+				:weekday (x3 / saturday)))
+		:ARG1 (x6 / house
+			:quant 1))
+	:op2 (x8 / knock-02
+		:ARG0 x1
+		:ARG1 (x9 / another)))
+
+# ::id 15
+# ::snt its foundation.
+(x2 / found-01)
+
+# ::id 16
+# ::snt Fire Chief Richard Nebel said it will probably take investigators
+(x5 / say-01
+	:ARG0 (x4 / person
+		:name (n / name
+			:op1 "Nebel")
+		:null_edge (x1 / fire-02)
+		:null_edge (x2 / chief)
+		:null_edge (x3 / null_tag))
+	:ARG1 (x8 / probable
+		:domain (x9 / take-01
+			:ARG1 (x10 / person
+				:ARG0-of (i / investigate-01)))))
+
+# ::id 17
+# ::snt weeks to determine the causes of the blasts.
+(x3 / determine-01
+	:time (x1 / week)
+	:ARG1 (x5 / cause-01
+		:ARG1 (x8 / blast-05)))
+
+# ::id 18
+# ::snt "The leaks we know of have been stopped," Nebel said late
+(x13 / say-01
+	:ARG1 (x9 / stop-01
+		:ARG1 (x3 / leak-01
+			:ARG0-of (x5 / know-01
+				:ARG0 (x4 / we))))
+	:ARG0 (x12 / person
+		:name (n / name
+			:op1 "Nebel"))
+	:time (x14 / late))
+
+# ::id 19
+# ::snt Monday. "We are taking test bores and no leaks or vapors have been
+(x9 / and
+	:op1 (x6 / take-01
+		:null_edge (x1 / monday)
+		:ARG0 (x4 / we)
+		:ARG1 (x8 / bore
+			:mod (x7 / test-01)))
+	:op2 (x12 / or
+		:op1 (x11 / leak-01
+			:polarity -)
+		:op2 (x13 / vapor)))
+
+# ::id 20
+# ::snt found today."
+(x1 / find-02
+	:time (x2 / today))
+
+# ::id 21
+# ::snt Jerry and Becky Rentschler, whose home was destroyed Saturday,
+(x4 / country
+	:name (n / name
+		:op1 "Rentschler")
+	:null_edge (x2 / and
+		:op1 (x1 / person
+			:name (n1 / name
+				:op1 "Jerry"))
+		:op2 (x3 / person
+			:name (n2 / name
+				:op1 "Becky")))
+	:null_edge (x9 / destroy-01
+		:ARG1 (x7 / home)
+		:time (xap0 / date-entity
+			:weekday (x10 / saturday))))
+
+# ::id 22
+# ::snt said they almost left their youngest children _ Shelly, 13, and
+(x1 / say-01
+	:ARG1 (x13 / and
+		:op1 (x4 / leave-06
+			:mod (x3 / almost)
+			:ARG2 (x7 / child
+				:mod (x6 / youngest))
+			:ARG1 (x9 / person
+				:name (n / name
+					:op1 "Shelly")
+				:ARG0-of (x8 / _
+					:time (x11 / person
+						:op 13))))))
+
+# ::id 23
+# ::snt Matthew, 11 _ home while they went away for the weekend. They
+(x14 / they
+	:null_edge (x1 / person
+		:name (n / name
+			:op1 "Matthew"))
+	:ARG4 (x5 / home
+		:quant 11
+		:poss (x8 / go-02
+			:direction (x9 / away)
+			:time (x12 / weekend))))
+
+# ::id 24
+# ::snt changed their minds at the last minute.
+(x1 / change-02
+	:ARG1 (x3 / mind)
+	:time (x7 / temporal-quantity
+		:unit (m / minute)
+		:mod (x6 / last)))
+
+# ::id 25
+# ::snt "I saw aluminum siding flying through the air and all of a
+(x3 / see-01
+	:ARG0 (x2 / i)
+	:ARG1 (x10 / and
+		:op1 (x5 / siding
+			:ARG1 (x4 / aluminum)
+			:ARG1-of (x6 / fly-01
+				:path (x9 / air)))
+		:quant (x11 / all)))
+
+# ::id 26
+# ::snt sudden there was this big flame," said 12-year-old Lisa Bernau, who
+(x9 / say-01
+	:ARG1 (x6 / flame
+		:mod (x4 / this)
+		:mod (x5 / big))
+	:ARG0 (x10 / person
+		:name (n / name
+			:op1 "12-year-old"))
+	:ARG0 (x11 / newspaper
+		:name (n1 / name
+			:op1 "Lisa"
+			:op2 "Bernau")))
+
+# ::id 27
+# ::snt saw the Rentschlers' house explode. "It was so scary."
+(x1 / see-01
+	:ARG1 (x6 / explode-01)
+	:ARG1 (x12 / scary
+		:domain (x9 / it)
+		:degree (x11 / so)))
+
+# ::id 28
+# ::snt Minutes after another neighbor went outside to see what happened,
+(x5 / go-02
+	:time (x2 / after)
+	:ARG1-of (x4 / neighbor-01
+		:mod (x3 / another))
+	:ARG2 (x6 / outside)
+	:purpose (x8 / see-01
+		:ARG1 (x10 / happen-01)))
+
+# ::id 29
+# ::snt the neighbor's house was blasted from its foundation, said Nebel.
+(x11 / say-01
+	:ARG1 (x6 / blast-05
+		:ARG1 (x4 / house
+			:ARG1-of (x2 / neighbor-01))
+		:ARG2 (x9 / found-01))
+	:ARG0 (x12 / person
+		:name (n / name
+			:op1 "Nebel")))
+
+# ::id 30
+# ::snt On Thursday, James Steurer, 79, was sitting on his bed tying his
+(x10 / sit-01
+	:ARG1 (x4 / newspaper
+		:name (n / name
+			:op1 "James"
+			:op2 "Steurer")
+		:quant (x7 / 79))
+	:ARG2 (x13 / bed)
+	:ARG2 (x14 / tie-01
+		:ARG0 x4)
+	:time (xap0 / date-entity
+		:weekday (x2 / thursday)))
+
+# ::id 31
+# ::snt shoes when a gas explosion leveled his house and sent him and the
+(x1 / shoe-01
+	:domain (x9 / and
+		:op1 (x6 / level-03
+			:ARG0 (x5 / explode-01
+				:mod (x4 / gas))
+			:ARG1 (x8 / house))
+		:op2 (x10 / send-01
+			:ARG1 (x11 / person
+				:domain (h / he)
+				:null_edge (x12 / and)
+				:null_edge (x13 / null_tag)))))
+
+# ::id 32
+# ::snt mattress flying into the driveway. He suffered only cuts and
+(x11 / and
+	:op1 (x8 / suffer-01
+		:null_edge (x2 / fly-01
+			:ARG1 (x1 / mattress)
+			:ARG1 (x5 / driveway))
+		:ARG0 (x7 / he)
+		:ARG1 (x10 / cut-02
+			:mod (x9 / only))))
+
+# ::id 33
+# ::snt scratches, noting "absolutely, I'm lucky."
+(x3 / note-01
+	:ARG0 (x1 / scratch)
+	:ARG1 (x9 / lucky
+		:degree (x5 / absolute)
+		:domain (x7 / i)))
+
+# ::id 34
+# ::snt In addition to being two days apart, the explosions were at sites
+(x10 / explode-01
+	:location (x13 / site
+		:prep-in (x2 / addition
+			:duration (x6 / temporal-quantity
+				:unit (d / day)
+				:quant 2))))
+
+# ::id 35
+# ::snt about six blocks apart and in houses fed by two separate gas lines,
+(x3 / block
+	:domain (x5 / and
+		:op1 (x4 / apart
+			:null_edge (x8 / feed-01
+				:ARG0 (x13 / line
+					:quant (x1 / about
+						:op1 6)
+					:quant 2
+					:mod (x11 / separate)
+					:mod (x12 / gas))))
+		:op1 (x7 / government-organization
+			:name (n / name
+				:op1 "houses"))))
+
+# ::id 36
+# ::snt Nebel said.
+(x2 / say-01
+	:ARG0 (x1 / person
+		:name (n / name
+			:op1 "Nebel")))
+
+# ::id 37
+# ::snt Government and utility officials insist there is no need for
+(x5 / insist-01
+	:ARG1 (x2 / and
+		:op1 (x1 / government-organization
+			:ARG0-of (g / govern-01))
+		:op2 (x3 / utility))
+	:ARG1 (x9 / need-01
+		:polarity -)
+	:ARG0 (xap0 / person
+		:ARG0-of (x4 / have-org-role-91
+			:ARG2 (o / official))))
+
+# ::id 38
+# ::snt residents to worry.
+(x3 / worry-01
+	:ARG0 (x1 / person
+		:ARG0-of (r / reside-01)))
+
+# ::id 39
+# ::snt "It's one of those rare things of Mother Nature or the man
+(x5 / include-91
+	:ARG2 (x8 / thing
+		:mod (x7 / rare)
+		:topic (x12 / or
+			:op1 (x11 / nature
+				:mod (x10 / mother))
+			:op2 (x14 / man))))
+
+# ::id 40
+# ::snt above," said investigator Terry Pitkus of the state fire marshal's
+(x4 / say-01
+	:location (x1 / above)
+	:ARG0 (x6 / newspaper
+		:name (n / name
+			:op1 "Terry"
+			:op2 "Pitkus")
+		:ARG0-of (x5 / person
+			:ARG0-of (i / investigate-01))
+		:ARG0-of (x12 / marshal
+			:mod (x10 / state)
+			:mod (x11 / fire-arm))))
+
+# ::id 41
+# ::snt office.
+(x1 / office)
+

@@ -1,0 +1,420 @@
+# ::id 1
+# ::snt Doctors Wednesday reported a growing number of
+(x3 / report-01
+	:ARG0 (x2 / wednesday
+		:mod (x1 / doctor))
+	:ARG1 (x6 / number
+		:ARG1-of (x5 / grow-01)))
+
+# ::id 2
+# ::snt stress-related illnesses among people in a resort city southwest of
+(x2 / illness
+	:mod (x1 / stress-related)
+	:location (x8 / city
+		:mod (x7 / resort)
+		:mod (x9 / southwest)))
+
+# ::id 3
+# ::snt Tokyo that has been jolted by thousands of tremors and several
+(x1 / city
+	:name (n / name
+		:op1 "Tokyo")
+	:ARG0-of (x5 / jolt
+		:ARG1 (x10 / and
+			:op1 (x9 / tremor)
+			:op2 (x11 / several))))
+
+# ::id 4
+# ::snt volcanic eruptions in the past two weeks.
+(x2 / eruption
+	:mod (x1 / volcanic)
+	:time (x7 / temporal-quantity
+		:unit (w / week)
+		:mod (x5 / past)
+		:quant 2))
+
+# ::id 5
+# ::snt "We've had an increasing number of patients complaining of
+(x4 / have-03
+	:ARG0 (x2 / we)
+	:ARG2 (x9 / patient
+		:quant (x7 / number
+			:ARG1-of (x6 / increase-01))
+		:ARG0-of (x10 / complain-01)))
+
+# ::id 6
+# ::snt insomnia and gastritis due to stress and fear of earthquakes and
+(x / xconcept
+	:x (x2 / and
+		:op1 (x1 / insomnia)
+		:op2 (x3 / gastritis)
+		:op2 (x7 / and
+			:op2 (x8 / fear-01)
+			:op1 (xap0 / i
+				:prep-under (x6 / stress
+					:ARG1 (x10 / earthquake)))))
+	:x (x11 / and))
+
+# ::id 7
+# ::snt volcanic eruptions," said Mikio Kakefu, director of the National
+(x5 / say-01
+	:ARG1 (x2 / eruption
+		:mod (x1 / volcanic))
+	:ARG0 (x6 / newspaper
+		:name (n / name
+			:op1 "Mikio"
+			:op2 "Kakefu")
+		:ARG0-of (x9 / have-org-role-91
+			:ARG2 (d / director)
+			:ARG1 (x12 / national))))
+
+# ::id 8
+# ::snt Hospital in Ito City.
+(x1 / hospital
+	:location (x4 / city
+		:null_edge (x3 / country
+			:name (n / name
+				:op1 "Ito"))))
+
+# ::id 9
+# ::snt Ito, a coastal resort city on the Izu peninsula, about 60 miles
+(x1 / country
+	:name (n / name
+		:op1 "Ito")
+	:null_edge (x6 / city
+		:location (x4 / coast)
+		:mod (x5 / resort)
+		:quant (xap0 / multiple
+			:location (x9 / country
+				:name (n1 / name
+					:op1 "Izu"))
+			:quant (x14 / distance-quantity
+				:unit (m / mile)
+				:null_edge (x12 / about
+					:null_edge 60)))))
+
+# ::id 10
+# ::snt southwest of Tokyo, has had more than 23,000 temblors, including 486
+(x6 / have-03
+	:ARG1 (x10 / temblor
+		:ARG0 (x1 / southwest
+			:poss (x3 / city
+				:name (n / name
+					:op1 "Tokyo")))
+		:quant (x7 / more-than
+			:op1 (x9 / 23,000))
+		:quant (x13 / 486)))
+
+# ::id 11
+# ::snt strong enough to be felt, since June 30.
+(x5 / feel-01
+	:ARG1 (x2 / enough
+		:mod (x1 / strong))
+	:time (x7 / since
+		:op1 (x8 / date-entity)))
+
+# ::id 12
+# ::snt On July 13, an undersea volcano erupted off the Ito coast,
+(x8 / erupt-01
+	:time (x2 / date-entity)
+	:ARG1 (x7 / volcano
+		:mod (x6 / undersea))
+	:ARG2 (x12 / coast))
+
+# ::id 13
+# ::snt creating a mound 82 feet high, according to the Maritime Safety
+(x1 / create-01
+	:ARG1 (x3 / mound
+		:quant (x5 / distance-quantity
+			:unit (f / foot)
+			:quant 82
+			:mod (x6 / high)))
+	:ARG2 (x12 / safety
+		:mod (x11 / maritime)))
+
+# ::id 14
+# ::snt Agency, Japan's coast guard.
+(x1 / agency
+	:null_edge (x6 / guard-01
+		:ARG0 (x3 / country
+			:name (n / name
+				:op1 "Japan"))
+		:ARG2 (x5 / coast)))
+
+# ::id 15
+# ::snt Volcanic activity has slowed since then, and no strong
+(x4 / slow-01
+	:ARG0 (x2 / activity
+		:mod (x1 / volcanic))
+	:time (x5 / since
+		:op1 (x8 / and
+			:op1 (x6 / then)
+			:op2 (x10 / strong
+				:polarity -))))
+
+# ::id 16
+# ::snt earthquakes have been recorded since Sunday. No injuries or damages
+(x4 / record-01
+	:ARG1 (x1 / earthquake)
+	:time (x5 / since
+		:op1 (xap0 / date-entity
+			:weekday (x6 / sunday)))
+	:ARG1 (x10 / or
+		:op1 (x9 / injure-01)
+		:op2 (x11 / damage)))
+
+# ::id 17
+# ::snt were reported after the eruption.
+(x2 / report-01
+	:time (x3 / after
+		:op1 (x5 / eruption)))
+
+# ::id 18
+# ::snt But the Central Meteorological Agency has warned the volcano is
+(x1 / contrast-01
+	:ARG2 (x7 / warn-01
+		:ARG0 (x3 / government-organization
+			:name (n / name
+				:op1 "Central"
+				:op2 "Meteorological"
+				:op3 "Agency"))
+		:ARG2 (x9 / volcano)))
+
+# ::id 19
+# ::snt likely to erupt again because the movement of magma, or molten rock,
+(x1 / likely
+	:domain (x3 / erupt-01
+		:mod (x4 / again)
+		:ARG1-of (x5 / cause-01
+			:ARG0 (x7 / movement
+				:ARG1 (x11 / or
+					:op1 (x9 / magma)
+					:op2 (x13 / rock
+						:mod (x12 / molten)))))))
+
+# ::id 20
+# ::snt continues.
+(x1 / continue-01)
+
+# ::id 21
+# ::snt Kakefu said the hospital, which has an average of 250 outpatients
+(x2 / say-01
+	:ARG0 (x1 / person
+		:name (n / name
+			:op1 "Kakefu"))
+	:ARG1 (x4 / hospital
+		:ARG0-of (x7 / have-03
+			:ARG1 (x9 / average
+				:ARG1 (x12 / outpatient
+					:quant 250)))))
+
+# ::id 22
+# ::snt daily, Monday began receiving more patients with stomach aches,
+(x4 / begin-01
+	:ARG1 (x5 / receive-01
+		:ARG1 (x7 / patient
+			:quant (x6 / more))
+		:ARG1 (x10 / ache
+			:mod (x9 / stomach)))
+	:time (xap0 / date-entity
+		:weekday (x3 / monday)))
+
+# ::id 23
+# ::snt insomnia and diarrhea, "all from fear and stress."
+(x2 / and
+	:op1 (x1 / insomnia
+		:domain (x9 / and
+			:quant (x6 / all)
+			:op1 (x8 / fear-01)
+			:op2 (x10 / stress)))
+	:op2 (x3 / diarrhea))
+
+# ::id 24
+# ::snt "They didn't feel sick for a couple of days after the eruption
+(x5 / feel-01
+	:ARG0 (x2 / they)
+	:ARG1 (x6 / sick)
+	:time (x12 / after
+		:op1 (x11 / temporal-quantity
+			:unit (d / day))
+		:op1 (x14 / eruption)))
+
+# ::id 25
+# ::snt because they were still tense," he said. Kakefu said he does not
+(x12 / say-01
+	:null_edge (x1 / cause-01
+		:ARG0 (x9 / say-01
+			:ARG1 (x5 / tense-01
+				:mod (x4 / still))))
+	:ARG0 (x11 / person
+		:name (n / name
+			:op1 "Kakefu"))
+	:ARG1 (x14 / do-02))
+
+# ::id 26
+# ::snt have any statistics, but indicated the number of such patients is
+(x5 / contrast-01
+	:ARG1 (x3 / statistic
+		:mod (x2 / any))
+	:ARG2 (x6 / indicate-01
+		:ARG2 (x11 / patient
+			:quant (x8 / number)
+			:mod (x10 / such))))
+
+# ::id 27
+# ::snt likely to increase.
+(x1 / likely
+	:domain (x3 / increase-01))
+
+# ::id 28
+# ::snt Pets have also been developing similar symptoms since shortly
+(x5 / develop-02
+	:mod (x3 / also)
+	:ARG1 (x7 / symptom
+		:ARG1-of (x6 / resemble-01
+			:op (s / similar)))
+	:time (x8 / since
+		:mod (x9 / short)))
+
+# ::id 29
+# ::snt after the eruption, said Masaaki Mochizuki, an Ito veterinarian.
+(x5 / say-01
+	:time (x1 / after
+		:op1 (x3 / eruption))
+	:ARG0 (x6 / newspaper
+		:name (n / name
+			:op1 "Masaaki"
+			:op2 "Mochizuki")
+		:ARG0-of (x11 / veterinarian)))
+
+# ::id 30
+# ::snt He said he has examined 129 cats and dogs suffering the
+(x2 / say-01
+	:ARG0 (x1 / he)
+	:ARG1 (x5 / examine-01
+		:ARG0 (x3 / he)
+		:ARG1 (x8 / and
+			:op1 (x7 / cat
+				:quant (x6 / 129))
+			:op2 (x9 / dog)
+			:op2 (x10 / suffer-01))))
+
+# ::id 31
+# ::snt "earthquake syndrome" between July 4 and July 14.
+(x3 / syndrome
+	:mod (x2 / earthquake)
+	:ARG0 (x8 / and
+		:op1 (x6 / date-entity)
+		:op2 (x9 / name
+			:op1 "July"
+			:op2 "14")))
+
+# ::id 32
+# ::snt Symptoms such as nausea, diarrhea and loss of appetite were
+(x1 / symptom
+	:example (x7 / and
+		:op1 (x4 / nausea)
+		:op2 (x6 / diarrhea)
+		:op1 (x10 / appetite)))
+
+# ::id 33
+# ::snt frequent among cats, and many dogs suffered skin problems including
+(x8 / suffer-01
+	:ARG1 (x5 / and
+		:op1 (x3 / cat)
+		:op1 (x7 / dog
+			:quant (x6 / many)))
+	:ARG1 (x10 / problem
+		:mod (x9 / skin)
+		:ARG2-of (x11 / include-91)))
+
+# ::id 34
+# ::snt rashes and hair loss, he said. He said some dogs were also afflicted
+(x10 / say-01
+	:ARG1 (x2 / and
+		:op1 (x1 / rash)
+		:op2 (x4 / loss
+			:consist-of (x3 / hair))
+		:op1 (x7 / say-01))
+	:ARG0 (x9 / he)
+	:ARG1 (x15 / afflict
+		:ARG1 (x12 / dog
+			:quant (x11 / some))
+		:mod (x14 / also)))
+
+# ::id 35
+# ::snt with coughing and trembling due to excessive fear.
+(x3 / and
+	:op1 (x2 / cough
+		:manner (x8 / fear-01
+			:degree (x7 / excessive)))
+	:op2 (x4 / tremble-01))
+
+# ::id 36
+# ::snt "My busiest day was July 14, the day after the eruption,"
+(x4 / day
+	:mod (x3 / busiest)
+	:name (x6 / name
+		:op1 "July"
+		:op2 "14")
+	:time (x11 / after
+		:op1 (x13 / eruption)))
+
+# ::id 37
+# ::snt Mochizuki said. "Symptoms in animals appeared earlier than in
+(x2 / say-01
+	:ARG0 (x1 / person
+		:name (n / name
+			:op1 "Mochizuki"))
+	:ARG1 (x8 / appear-02
+		:ARG1 (x7 / animal)
+		:time (x9 / early)))
+
+# ::id 38
+# ::snt people because animals are more sensitive, and they feel the
+(x1 / people
+	:ARG1-of (x2 / cause-01
+		:ARG0 (x6 / sensitive-41
+			:ARG1 (x3 / animal)
+			:degree (x5 / more)
+			:null_edge (x8 / and
+				:op2 (x10 / feel-01)))))
+
+# ::id 39
+# ::snt temblors and noises more strongly."
+(x2 / and
+	:op1 (x1 / temblor
+		:null_edge (x5 / strong
+			:degree (x4 / more)))
+	:op2 (x3 / noise))
+
+# ::id 40
+# ::snt "We humans have information from the municipal office and the
+(x4 / have-03
+	:ARG1 (x2 / country
+		:name (n / name
+			:op1 "We")
+		:mod (x3 / human))
+	:ARG1 (x5 / information
+		:source (x10 / and
+			:op1 (x9 / office
+				:mod (x8 / municipal)))))
+
+# ::id 41
+# ::snt meteorological centers, which help to relieve our tensions ... but
+(x11 / contrast-01
+	:ARG1 (x2 / center
+		:mod (x1 / meteorological)
+		:ARG0-of (x5 / help-01
+			:ARG1 (x7 / relieve-01
+				:ARG1 (x9 / tension)))))
+
+# ::id 42
+# ::snt such things don't work for animals," he said.
+(x11 / say-01
+	:ARG1 (x5 / work-09
+		:ARG0 (x2 / thing
+			:mod (x1 / such))
+		:ARG1 (x7 / animal))
+	:ARG0 (x10 / he))
+

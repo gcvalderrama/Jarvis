@@ -1,0 +1,318 @@
+# ::id 1
+# ::snt Illinois Power Co. has agreed to pay $ 11.5 million to a couple critically injured in a natural-gas explosion in their home two years ago
+(x5 / agree-01
+	:ARG0 (x1 / government-organization
+		:name (n / name
+			:op1 "Illinois"
+			:op2 "Power"
+			:op3 "Co."))
+	:ARG1 (x7 / pay-01
+		:ARG0 x1
+		:ARG2 (x13 / couple
+			:ARG1-of (x15 / injure-01
+				:manner (x14 / critical)
+				:time (x19 / explode-01
+					:mod (x18 / natural-gas))
+				:location (x22 / home
+					:time (xap0 / before
+						:quant (x24 / temporal-quantity
+							:unit (y / year)
+							:null_edge (x23 / null_tag))))))))
+
+# ::id 2
+# ::snt In a settlement reached Monday, the utility company agreed to pay Jerry Sickmeier, 33, and Lisa Jines, 26, $ 10 million in damages and $ 1.5 million for medical expenses, said the couple's attorney, C.E. Heiligenstein
+(x37 / say-01
+	:ARG1 (x10 / agree-01
+		:ARG1-of (x3 / settle-02
+			:ARG0-of (x4 / reach-01
+				:time (x5 / monday)))
+		:ARG0 (x9 / company
+			:mod (x8 / utility))
+		:ARG1 (x12 / pay-01
+			:ARG0 x9
+			:ARG0 (x18 / and
+				:op1 (x13 / name
+					:op1 "Jerry"
+					:op2 "Sickmeier")
+				:op2 33
+				:op2 (x19 / name
+					:op1 "Lisa"
+					:op2 "Jines"))
+			:time (x22 / date-entity)
+			:ARG1 (x28 / damage
+				:ARG2-of (x35 / expend-01
+					:mod (x34 / medicine)))
+			:ARG0 (x29 / and))
+		:ARG0 x29)
+	:ARG0 (x41 / attorney
+		:name (x43 / name
+			:op1 "C.E."
+			:op2 "Heiligenstein")
+		:ARG0-of (xap0 / before
+			:quant (x39 / couple))))
+
+# ::id 3
+# ::snt Both sustained burns on over 80 percent of Jerry Sickmeier , 33 , and Lisa Jines , 26 , $ 10 million in damages and $ 1.5 million for medical expenses bodies in the Dec. 7, 1986, explosion at their home in Cahokia, a St. Louis suburb
+(x3 / burn-01
+	:mod (x1 / both)
+	:ARG1-of (x2 / sustain-01)
+	:ARG1 (x14 / and
+		:quant (x5 / over
+			:op1 80
+			:op1 (x7 / percentage-entity))
+		:op1 (x9 / name
+			:op1 "Jerry"
+			:op2 "Sickmeier")
+		:op2 33
+		:op2 (x15 / name
+			:op1 "Lisa"
+			:op2 "Jines"
+			:location (x25 / and
+				:time (x18 / date-entity)
+				:op2 (x24 / damage
+					:ARG2-of (x31 / expend-01
+						:mod (x30 / medicine)))
+				:op2 (x32 / body
+					:location (x40 / explode-01
+						:null_edge (x35 / festival
+							:name (n / name
+								:op1 "Dec."
+								:op2 "7"
+								:op3 ","
+								:op4 "1986"))
+						:location (x43 / home
+							:location (x45 / country
+								:name (n1 / name
+									:op1 "Cahokia")
+								:location (x50 / suburb
+									:mod (x48 / country
+										:name (n2 / name
+											:op1 "St."))
+									:mod (x49 / country
+										:name (n3 / name
+											:op1 "Louis")))))))))))
+
+# ::id 4
+# ::snt Jerry Sickmeier , 33 , and Lisa Jines , 26 , $ 10 million in damages and $ 1.5 million for medical expenses now live in nearby Belleville
+(x25 / live-01
+	:ARG0 (x6 / and
+		:op1 (x1 / newspaper
+			:name (n1 / name
+				:op1 "Jerry"
+				:op2 "Sickmeier")
+			:ARG0-of (x16 / damage)
+			:ARG2-of (x23 / expend-01
+				:mod (x22 / medicine)))
+		:op2 33
+		:op2 (x7 / name
+			:op1 "Lisa"
+			:op2 "Jines")
+		:op2 (x10 / date-entity)
+		:op2 (x17 / and))
+	:time (x24 / now)
+	:location (x28 / country
+		:name (n / name
+			:op1 "Belleville")
+		:mod (x27 / nearby)))
+
+# ::id 5
+# ::snt The settlement was reached on the day a trial in the case was scheduled to begin
+(x4 / reach-01
+	:ARG1 (x2 / settle-02)
+	:time (x7 / day
+		:time-of (x14 / schedule-01
+			:ARG1 (x12 / case)
+			:ARG1 (x16 / begin-01))))
+
+# ::id 6
+# ::snt " Jerry Sickmeier , 33 , and Lisa Jines , 26 , $ 10 million in damages and $ 1.5 million for medical expenses are much relieved that this financial ordeal is over with and that Jerry Sickmeier , 33 , and Lisa Jines , 26 , $ 10 million in damages and $ 1.5 million for medical expenses can have some lifetime financial security, " Heiligenstein said
+(x69 / say-01
+	:ARG1 (x27 / relieve-01
+		:ARG0 (x7 / and
+			:op1 (x2 / newspaper
+				:name (n1 / name
+					:op1 "Jerry"
+					:op2 "Sickmeier")
+				:ARG0-of (x17 / damage)
+				:ARG2-of (x24 / expend-01
+					:mod (x23 / medicine)))
+			:op2 33
+			:op2 (x8 / name
+				:op1 "Lisa"
+				:op2 "Jines")
+			:op2 (x11 / date-entity)
+			:op2 (x18 / and))
+		:degree (x26 / much)
+		:ARG1 (x31 / ordeal
+			:mod (x29 / this)
+			:mod (x30 / finance)
+			:prep-with (x35 / and
+				:op1 (x61 / have-03
+					:ARG1 (x42 / and
+						:op1 (x37 / newspaper
+							:name (n2 / name
+								:op1 "Jerry"
+								:op2 "Sickmeier")
+							:ARG0-of (x52 / damage)
+							:ARG2-of (x59 / expend-01
+								:mod (x58 / medicine)))
+						:op2 33
+						:op2 (x43 / name
+							:op1 "Lisa"
+							:op2 "Jines")
+						:op2 (x46 / date-entity)
+						:op2 (x53 / and))
+					:mod (x60 / possible)
+					:ARG1 (x65 / security
+						:quant (x62 / some)
+						:mod (x63 / lifetime)
+						:mod (x64 / finance))))))
+	:ARG0 (x68 / person
+		:name (n / name
+			:op1 "Heiligenstein")))
+
+# ::id 7
+# ::snt " Both suffered severe burns and have severe limitations in the limbs .
+(x6 / and
+	:mod (x2 / both)
+	:op1 (x3 / suffer-01
+		:ARG1 (x5 / burn-01
+			:mod (x4 / severe))
+		:ARG1-of (xap0 / cause-01
+			:ARG0 (x9 / limit-01
+				:mod (x8 / severe))
+			:ARG2 (x12 / limb))))
+
+# ::id 8
+# ::snt Heiligenstein said neither has worked since the explosion
+(x2 / say-01
+	:ARG0 (x1 / person
+		:name (n / name
+			:op1 "Heiligenstein"))
+	:ARG1 (x5 / work-01
+		:time (x6 / since
+			:op1 (x8 / explode-01))))
+
+# ::id 9
+# ::snt Illinois Power spokeswoman Barbara Lillyman said the utility had no comment on the settlement
+(x6 / say-01
+	:ARG0 (x4 / newspaper
+		:name (n / name
+			:op1 "Barbara"
+			:op2 "Lillyman")
+		:ARG0-of (x1 / organization
+			:name (n1 / name
+				:op1 "Illinois"))
+		:null_edge (x2 / null_tag)
+		:ARG0-of (x3 / have-org-role-91
+			:ARG2 (s / spokeswoman)))
+	:ARG1 (x11 / comment-01
+		:ARG0 (x8 / utility)
+		:polarity -
+		:ARG1 (x14 / settle-02)))
+
+# ::id 10
+# ::snt The couple alleged that Illinois Power was negligent when Illinois Power Co. allowed a natural-gas pipe to deteriorate to the point that the point ruptured
+(x3 / allege-01
+	:ARG0 (x2 / couple)
+	:ARG1 (x8 / negligent
+		:ARG1 (x5 / government-organization
+			:name (n / name
+				:op1 "Illinois"
+				:op2 "Power"))
+		:condition (x13 / allow-01
+			:ARG0 (x10 / government-organization
+				:name (n1 / name
+					:op1 "Illinois"
+					:op2 "Power"
+					:op3 "Co."))
+			:ARG1 (x18 / deteriorate-01
+				:ARG1 (x16 / pipe
+					:mod (x15 / natural-gas))
+				:ARG4 (x21 / point
+					:ARG1-of (x25 / rupture))))))
+
+# ::id 11
+# ::snt Gas from the pipe traveled through sewer lines into the home's utility room and was ignited by the pilot light of a hot-water heater, they said
+(x28 / say-01
+	:ARG1 (x15 / and
+		:op1 (x5 / travel-01
+			:ARG0 (x1 / gas
+				:source (x4 / pipe))
+			:ARG1 (x8 / line
+				:mod (x7 / sewer))
+			:ARG1 (x14 / room
+				:mod (x11 / home)
+				:mod (x13 / utility)))
+		:op2 (x17 / ignite-01
+			:ARG1 x1
+			:ARG1 (x25 / heater
+				:ARG1-of (x20 / pilot-01)
+				:mod (x24 / hot-water))))
+	:ARG0 (x27 / they))
+
+# ::id 12
+# ::snt The explosion occurred as police were awakening area residents and telling police to evacuate
+(x2 / explode-01
+	:ARG1 (x10 / and
+		:op1 (x7 / awaken
+			:ARG0 (x5 / police)
+			:ARG1 (x9 / person
+				:ARG0-of (r / reside-01)
+				:ARG1 (x8 / area)))
+		:op2 (x11 / tell-01
+			:ARG0 x5
+			:ARG0 x9
+			:ARG1 (x12 / police)
+			:ARG1 (x14 / evacuate
+				:ARG0 x12))))
+
+# ::id 13
+# ::snt 
+(x3 / treat-01
+	:ARG1 (x1 / person
+		:name (n / name
+			:op1 "Sickmeier"))
+	:duration (x6 / temporal-quantity
+		:unit (m / month)
+		:quant 7)
+	:location (x10 / organization
+		:name (n1 / name
+			:op1 "Hospital")
+		:null_edge (x8 / state
+			:name (n2 / name
+				:op1 "Massachusetts"))
+		:null_edge (x9 / null_tag)
+		:location (x12 / city
+			:name (n3 / name
+				:op1 "Boston")))
+	:ARG3 (x15 / burn-01
+		:mod (x14 / third-degree)
+		:ARG1-of (x17 / cover-01
+			:degree (x18 / most
+				:part-of (x21 / body)))))
+
+# ::id 14
+# ::snt Jerry Sickmeier also suffered burns in Jerry Sickmeier lungs and spent more than two months on a respirator
+(x10 / and
+	:op1 (x4 / suffer-01
+		:ARG0 (x1 / newspaper
+			:name (n / name
+				:op1 "Jerry"
+				:op2 "Sickmeier"))
+		:mod (x3 / also)
+		:ARG1 (x5 / burn-01)
+		:location (x9 / lung
+			:poss (x7 / person
+				:name (n1 / name
+					:op1 "Jerry"))
+			:mod (x8 / person
+				:name (n2 / name
+					:op1 "Sickmeier"))))
+	:op2 (x11 / spend-00
+		:ARG1 (x12 / more-than
+			:op1 (x15 / temporal-quantity
+				:unit (m / month)
+				:quant 2))
+		:ARG1 (x18 / respirator)))
+

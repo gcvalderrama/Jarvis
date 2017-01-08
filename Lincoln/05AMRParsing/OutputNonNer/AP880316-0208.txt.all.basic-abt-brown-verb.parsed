@@ -1,0 +1,443 @@
+# ::id 1
+# ::snt An engine room fire Wednesday disabled a cruise
+(x6 / disable-01
+	:ARG0 (x4 / fire-01
+		:ARG1 (x3 / room
+			:mod (x2 / engine)))
+	:null_edge (x5 / wednesday)
+	:ARG1 (x8 / cruise))
+
+# ::id 2
+# ::snt ship off the Mexican coast, but the crew extinguished the blaze and
+(x7 / contrast-01
+	:ARG1 (x1 / ship
+		:ARG1-of (xap0 / be-located-at-91
+			:ARG2 (x5 / coast
+				:mod (x4 / country
+					:name (n / name
+						:op1 "Mexico")))))
+	:ARG2 (x10 / extinguish
+		:ARG0 (x9 / crew)
+		:ARG1 (x12 / blaze))
+	:ARG2 (x13 / and))
+
+# ::id 3
+# ::snt the ship with 715 people aboard was towed to port.
+(x8 / tow-01
+	:ARG1 (x2 / ship
+		:quant (x4 / 715
+			:null_edge (x6 / aboard)))
+	:ARG2 (x10 / port))
+
+# ::id 4
+# ::snt The Navy cutter Vigilant escorted the 465-foot ship, the
+(x5 / escort
+	:ARG0 (x2 / government-organization
+		:name (n / name
+			:op1 "Navy"
+			:op2 "cutter"
+			:op3 "Vigilant")
+		:mod (x3 / cutter))
+	:ARG1 (x8 / ship
+		:mod (x7 / 465-foot)))
+
+# ::id 5
+# ::snt Scandinavian Star, as a precaution, according to Chief Petty
+(x6 / precaution-00
+	:ARG2 (x2 / star-01
+		:mod (x1 / scandinavian))
+	:ARG2 (x11 / petty
+		:mod (x10 / chief)))
+
+# ::id 6
+# ::snt Officer Luis Diaz of the U.S. Coast Guard in Miami.
+(x2 / name
+	:op1 "Luis"
+	:op2 "Diaz"
+	:ARG0-of (x1 / officer)
+	:poss (x8 / organization
+		:name (n / name
+			:op1 "Guard")
+		:null_edge (x7 / have-org-role-91
+			:ARG1 (m / military
+				:name (n1 / name
+					:op1 "Coast")))
+		:location (x10 / country
+			:name (n2 / name
+				:op1 "Miami"))))
+
+# ::id 7
+# ::snt "The fire is out and the ship is being towed by the Mexican
+(x6 / and
+	:op2 (x3 / fire-01)
+	:op2 (x5 / out-01)
+	:op2 (x11 / tow-01
+		:ARG1 (x8 / ship)
+		:ARG0 (x14 / country
+			:name (n / name
+				:op1 "Mexico"))))
+
+# ::id 8
+# ::snt navy to Cancun," said Diaz.
+(x6 / say-01
+	:ARG1 (x1 / navy
+		:null_edge (x3 / country
+			:name (n1 / name
+				:op1 "Cancun")))
+	:ARG0 (x7 / person
+		:name (n / name
+			:op1 "Diaz")))
+
+# ::id 9
+# ::snt There were no injuries from the fire, but a 71-year-old St.
+(x9 / contrast-01
+	:ARG2 (x12 / st.
+		:domain (x4 / injure-01
+			:polarity -
+			:source (x7 / fire-01))
+		:mod (x11 / person
+			:name (n / name
+				:op1 "71-year-old"))))
+
+# ::id 10
+# ::snt Petersburg man who suffered a heart attack was in stable condition
+(x2 / man
+	:mod (x1 / person
+		:name (n / name
+			:op1 "Petersburg"))
+	:ARG0-of (x4 / suffer-01
+		:ARG1 (x7 / attack-01
+			:mod (x6 / heart)
+			:location (x11 / condition
+				:mod (x10 / stable)))))
+
+# ::id 11
+# ::snt and on his way home aboard a Coast Guard plane.
+(x1 / and
+	:op2 (x5 / home
+		:mod (x4 / way)
+		:poss (x10 / plane
+			:mod (x8 / have-org-role-91
+				:ARG1 (m / military
+					:name (n / name
+						:op1 "Coast")))
+			:mod (x9 / organization
+				:name (n1 / name
+					:op1 "Guard")))))
+
+# ::id 12
+# ::snt A second person who suffered a spinal cord injury was also
+(x3 / person
+	:ARG0-of (x5 / suffer-01
+		:ARG1 (x9 / injure-01
+			:mod (x7 / spinal)
+			:purpose (x8 / cord)))
+	:mod (x11 / also))
+
+# ::id 13
+# ::snt evacuated with the heart attack victim, but Diaz said that injury
+(x8 / contrast-01
+	:ARG1 (x1 / evacuate)
+	:ARG2 (x6 / victim
+		:mod (x4 / heart)
+		:purpose (x5 / attack-01))
+	:ARG2 (x10 / say-01
+		:ARG0 (x9 / person
+			:name (n / name
+				:op1 "Diaz"))
+		:ARG1 (x12 / injure-01)))
+
+# ::id 14
+# ::snt also was apparently not related to the fire.
+(x5 / relate-01
+	:mod (x1 / also)
+	:manner (x3 / apparent)
+	:ARG2 (x8 / fire-01))
+
+# ::id 15
+# ::snt The ship was expected to arrive in Cancun late Wednesday or
+(x11 / or
+	:op1 (x4 / expect-01
+		:ARG1 (x6 / arrive-01
+			:ARG1 (x2 / ship)
+			:ARG4 (x8 / country
+				:name (n / name
+					:op1 "Cancun"))
+			:time (x9 / late
+				:op1 (x10 / wednesday)))))
+
+# ::id 16
+# ::snt Thursday. The 449 passengers will be flown to St. Petersburg, said
+(x13 / say-01
+	:ARG1 (x8 / fly-01
+		:destination (x11 / country
+			:name (n / name
+				:op1 "Petersburg")
+			:null_edge (x10 / country
+				:name (n1 / name
+					:op1 "St.")))
+		:time (xap0 / date-entity
+			:null_edge (x1 / null_tag)
+			:quant (x4 / 449)
+			:mod (x5 / passenger))))
+
+# ::id 17
+# ::snt Jill DeChello, spokesman for the ship's owner, SeaEscape Ltd. of
+(x1 / name
+	:op1 "Jill"
+	:op2 "DeChello"
+	:ARG0-of (x4 / have-org-role-91
+		:ARG2 (s / spokesman)
+		:ARG1 (x9 / person
+			:ARG0-of (o / own-01)
+			:ARG1 (x7 / ship)
+			:name (x11 / name
+				:op1 "SeaEscape"
+				:op2 "Ltd."
+				:ARG2-of (x13 / include-91)))))
+
+# ::id 18
+# ::snt Miami.
+(x1 / country
+	:name (n / name
+		:op1 "Miami"))
+
+# ::id 19
+# ::snt The Scandinavian Star was on a 3-day cruise to Cozumel, Mexico,
+(x3 / star-01
+	:mod (x2 / scandinavian)
+	:mod (x8 / cruise
+		:destination (x10 / country
+			:name (n / name
+				:op1 "Cozumel")
+			:null_edge (x12 / country
+				:name (n1 / name
+					:op1 "Mexico")))))
+
+# ::id 20
+# ::snt and was returning to St. Petersburg when the fire broke out about 1
+(x1 / and
+	:op1 (x3 / return-01
+		:ARG4 (x6 / country
+			:name (n / name
+				:op1 "Petersburg")
+			:null_edge (x5 / country
+				:name (n1 / name
+					:op1 "St.")))
+		:time (x10 / break-08
+			:ARG0 (x9 / fire-01)
+			:ARG2 (x12 / about
+				:op1 1))))
+
+# ::id 21
+# ::snt a.m. EST Wednesday, she said.
+(x6 / say-01
+	:time (x3 / wednesday
+		:null_edge (x2 / est))
+	:ARG0 (x5 / she))
+
+# ::id 22
+# ::snt The crew sealed off the engine room and pumped in carbon dioxide
+(x8 / and
+	:op1 (x3 / military
+		:name (n / name
+			:op1 "sealed")
+		:ARG0 (x2 / crew)
+		:location (x4 / off
+			:op1 (x7 / room
+				:ARG1 (x6 / engine))))
+	:op2 (x9 / pump-01
+		:ARG1 (x12 / dioxide
+			:mod (x11 / carbon))))
+
+# ::id 23
+# ::snt to put out the fire.
+(x2 / put-01
+	:ARG1 (x5 / fire-01))
+
+# ::id 24
+# ::snt "They used all their CO2 and closed off the engine room," said
+(x15 / say-01
+	:ARG1 (x7 / and
+		:op1 (x3 / use-01
+			:ARG0 (x2 / they)
+			:ARG1 (x6 / co2
+				:mod (x4 / all)))
+		:op2 (x8 / close-01
+			:ARG0 x2
+			:ARG1 (x12 / room
+				:mod (x11 / engine)))))
+
+# ::id 25
+# ::snt Diaz. "Then they requested more assistance from the Coast Guard."
+(x6 / request-01
+	:ARG0 (x1 / person
+		:name (n / name
+			:op1 "Diaz"))
+	:time (x4 / then)
+	:ARG0 (x5 / they)
+	:ARG1 (x8 / assist-01
+		:quant (x7 / more))
+	:ARG0 (x12 / organization
+		:name (n1 / name
+			:op1 "Guard")
+		:null_edge (x11 / have-org-role-91
+			:ARG1 (m / military
+				:name (n2 / name
+					:op1 "Coast")))))
+
+# ::id 26
+# ::snt The fire was already extinguished when the Vigilant arrived about
+(x5 / extinguish
+	:ARG1 (x2 / fire-01)
+	:time (x4 / already)
+	:time (x9 / arrive-01
+		:ARG1 (x8 / vigilance)))
+
+# ::id 27
+# ::snt 10 a.m., he added.
+(x5 / add-01
+	:ARG1 10
+	:ARG0 (x4 / he))
+
+# ::id 28
+# ::snt Ms. DeChello said the company did not know what sparked the fire.
+(x3 / say-01
+	:ARG0 (x2 / person
+		:name (n / name
+			:op1 "DeChello")
+		:null_edge (x1 / ms.))
+	:ARG1 (x8 / know-01
+		:ARG0 (x5 / company)
+		:ARG1 (x10 / spark-01
+			:ARG1 (x12 / fire-01))))
+
+# ::id 29
+# ::snt "It will take a week before we know the cause and the extent of
+(x4 / take-01
+	:time (x6 / week)
+	:time (x7 / before
+		:op1 (x9 / know-01
+			:ARG0 (x8 / we)
+			:ARG1 (x12 / and
+				:op1 (x11 / cause)
+				:op2 (x14 / extent)))))
+
+# ::id 30
+# ::snt the damage," said Ms. DeChello.
+(x5 / say-01
+	:ARG1 (x2 / damage-01)
+	:ARG0 (x7 / person
+		:name (n / name
+			:op1 "DeChello")
+		:null_edge (x6 / ms.)))
+
+# ::id 31
+# ::snt In August 1984, a fire struck the Star's sister ship, the
+(x7 / person
+	:name (n / name
+		:op1 "struck")
+	:time (x2 / date-entity
+		:year 1984)
+	:ARG0 (x6 / fire-01)
+	:ARG1 (x12 / ship
+		:poss (x9 / star)
+		:mod (x11 / sister)))
+
+# ::id 32
+# ::snt Scandinavian Sun, in the port of Miami, killing a passenger and a
+(x10 / kill-01
+	:ARG0 (x2 / sun
+		:mod (x1 / scandinavian))
+	:location (x6 / port
+		:mod (x8 / country
+			:name (n / name
+				:op1 "Miami")))
+	:ARG1 (x13 / and
+		:op1 (x12 / passenger)))
+
+# ::id 33
+# ::snt crewman.
+(x1 / crewman)
+
+# ::id 34
+# ::snt "I feel they are two totally different incidents that are in no
+(x3 / feel-01
+	:ARG0 (x2 / i)
+	:ARG1 (x9 / incident
+		:domain (x4 / they)
+		:quant 2
+		:ARG1-of (x8 / differ-02
+			:degree (x7 / total))
+		:polarity -))
+
+# ::id 35
+# ::snt way related," said Ms. DeChello. She said the cruise line was
+(x10 / say-01
+	:ARG1 (x2 / relate-01
+		:ARG2 (x1 / way))
+	:ARG1 (x5 / say-01
+		:ARG0 (x7 / person
+			:name (n / name
+				:op1 "DeChello")
+			:null_edge (x6 / ms.)))
+	:ARG0 (x9 / she)
+	:ARG1 (x13 / line
+		:mod (x12 / cruise)))
+
+# ::id 36
+# ::snt inspected by the Coast Guard and rigorously enforced all safety
+(x6 / and
+	:op1 (x1 / inspect-01
+		:ARG0 (x4 / military
+			:name (n / name
+				:op1 "Coast"
+				:op2 "Guard")))
+	:op2 (x8 / enforce-01
+		:manner (x7 / rigorously)
+		:ARG1 (x10 / safe-41
+			:quant (x9 / all))))
+
+# ::id 37
+# ::snt rules.
+(x1 / rule)
+
+# ::id 38
+# ::snt Wednesday's fire occurred as the Scandinavian Star was about 35
+(x3 / fire-01
+	:null_edge (x1 / wednesday)
+	:ARG2 (x8 / star-01
+		:mod (x7 / scandinavian)
+		:quant (x10 / about)))
+
+# ::id 39
+# ::snt miles off Isla Mujeres, a Mexican island north of the tourist
+(x1 / distance-quantity
+	:unit (m / mile)
+	:null_edge (x2 / off
+		:op1 (x12 / person
+			:ARG0-of (t / tour-01)
+			:mod (x3 / country
+				:name (n / name
+					:op1 "Isla"))
+			:mod (x7 / country
+				:name (n1 / name
+					:op1 "Mexico"))
+			:location (x8 / island))))
+
+# ::id 40
+# ::snt resort Cancun in the Yucatan peninsula, the Coast Guard said.
+(x11 / say-01
+	:ARG1 (x1 / resort
+		:ARG1 (x2 / country
+			:name (n1 / name
+				:op1 "Cancun"))
+		:location (x6 / peninsula
+			:mod (x5 / country
+				:name (n2 / name
+					:op1 "Yucatan"))))
+	:ARG0 (x9 / military
+		:name (n / name
+			:op1 "Coast"
+			:op2 "Guard")))
+

@@ -1,0 +1,693 @@
+# ::id 1
+# ::snt Russian lawmakers cast ballots Friday night in a
+(x3 / cast-01
+	:ARG0 (x2 / lawmaker
+		:mod (x1 / country
+			:name (n / name
+				:op1 "Russia")))
+	:ARG1 (x4 / ballot)
+	:time (x6 / night
+		:mod (xap0 / date-entity
+			:null_edge (x5 / null_tag))))
+
+# ::id 2
+# ::snt vote to determine whether populist Boris N. Yeltsin would become
+(x1 / vote-01
+	:ARG1 (x3 / determine-01
+		:ARG1 (x10 / become-01
+			:ARG1 (x8 / person
+				:name (n / name
+					:op1 "Yeltsin")
+				:null_edge (x5 / populist)
+				:null_edge (x6 / person
+					:name (n1 / name
+						:op1 "Boris"))
+				:null_edge (x7 / null_tag)))))
+
+# ::id 3
+# ::snt president of the Soviet Union's largest republic.
+(x8 / republic
+	:mod (x7 / large
+		:degree (m / most)
+		:compared-to (x4 / country
+			:name (n / name
+				:op1 "Soviet"
+				:op2 "Union"))))
+
+# ::id 4
+# ::snt Yeltsin, a onetime Gorbachev ally ousted two years ago as Moscow
+(x1 / person
+	:name (n / name
+		:op1 "Yeltsin")
+	:prep-as (x6 / ally-01
+		:ARG1-of (x7 / oust
+			:mod (x4 / onetime)
+			:ARG2 (x12 / city
+				:name (n1 / name
+					:op1 "Moscow"))
+			:time (xap0 / before
+				:quant (x9 / temporal-quantity
+					:unit (y / year)
+					:null_edge (x8 / null_tag))))))
+
+# ::id 5
+# ::snt Communist Party chief after calling for faster reform, gained a
+(x3 / have-org-role-91
+	:ARG2 (c / chief)
+	:ARG0 (x1 / political-party
+		:name (n / name
+			:op1 "Communist"
+			:op2 "Party"))
+	:time (x4 / after
+		:op1 (x5 / call-03
+			:ARG1 (x8 / reform-01
+				:manner (x7 / fast)
+				:ARG1 (x10 / gain-02)))))
+
+# ::id 6
+# ::snt double boost Friday. Russian deputies and Soviet media praised a
+(x10 / praise-01
+	:ARG1 (x7 / and
+		:op2 (x9 / media
+			:mod (xap2 / country
+				:ARG0-of (xap1 / name
+					:op1 "Soviet")))
+		:op1 (xap3 / person
+			:ARG0-of (x6 / have-org-role-91
+				:ARG2 (d / deputy)
+				:mod (x5 / country
+					:name (n / name
+						:op1 "Russia")))))
+	:time (xap0 / date-entity
+		:weekday (x3 / friday
+			:time-of (x2 / boost-01
+				:mod (x1 / double-01)))))
+
+# ::id 7
+# ::snt key campaign speech he made, and the candidate backed by President
+(x7 / and
+	:op1 (x3 / speech
+		:mod (x1 / key)
+		:ARG0 (x2 / campaign-01)
+		:ARG0-of (x5 / make-02))
+	:op2 (x9 / candidate
+		:ARG1-of (x10 / back-01
+			:ARG0 (x12 / have-org-role-91
+				:ARG2 (p / president)))))
+
+# ::id 8
+# ::snt Mikhail S. Gorbachev withdrew.
+(x4 / withdraw-01
+	:ARG0 (x1 / person
+		:name (n / name
+			:op1 "Mikhail"
+			:op2 "S."
+			:op3 "Gorbachev")))
+
+# ::id 9
+# ::snt But Yeltsin, 59, needs backing from 531 of the 1,059 members of
+(x1 / contrast-01
+	:ARG2 (x6 / need-01
+		:ARG0 (x2 / person
+			:name (n / name
+				:op1 "Yeltsin")
+			:null_edge 59)
+		:ARG1 (x7 / back-01
+			:null_edge (x10 / include-91
+				:ARG2 (xap0 / person
+					:ARG0-of (x13 / have-org-role-91
+						:ARG2 (m / member)))))))
+
+# ::id 10
+# ::snt the Russian Congress, more than he himself has estimated he could
+(x10 / estimate-01
+	:ARG0 (x3 / government-organization
+		:name (n / name
+			:op1 "Congress")
+		:mod (x2 / country
+			:name (n1 / name
+				:op1 "Russia")))
+	:degree (x5 / more)
+	:ARG1 (x12 / possible
+		:domain (x11 / he)))
+
+# ::id 11
+# ::snt count on. Official results from voting late Friday are expected by
+(x11 / expect-01
+	:ARG1 (x1 / count-04
+		:ARG0 (x5 / result-01
+			:mod (x4 / official)
+			:quant-of (x7 / vote-01
+				:time (x8 / late
+					:op1 (x9 / friday))))))
+
+# ::id 12
+# ::snt Saturday morning.
+(x2 / morning
+	:time (xap0 / date-entity
+		:weekday (x1 / saturday)))
+
+# ::id 13
+# ::snt The candidate backed by Gorbachev, Russian premier Alexander
+(x2 / candidate
+	:ARG1-of (x3 / back-01
+		:ARG0 (x5 / person
+			:name (n / name
+				:op1 "Gorbachev"
+				:op2 ","
+				:op3 "Russian"
+				:op4 "premier"
+				:op5 "Alexander"))
+		:ARG0 (x7 / country
+			:name (n1 / name
+				:op1 "Russia"))
+		:ARG1 (x8 / premier)))
+
+# ::id 14
+# ::snt Vlasov, withdrew from the race after it became clear he lacked
+(x3 / withdraw-01
+	:ARG0 (x1 / person
+		:name (n / name
+			:op1 "Vlasov"))
+	:ARG2 (x6 / race-02
+		:ARG0 x1)
+	:time (x7 / after
+		:op1 (x9 / become-01
+			:ARG2 (x10 / clear)
+			:ARG1-of (xap0 / cause-01
+				:ARG0 (x12 / lack-01
+					:ARG0 (x11 / he))))))
+
+# ::id 15
+# ::snt Yeltsin's popularity.
+(x3 / popularity
+	:poss (x1 / person
+		:name (n / name
+			:op1 "Yeltsin")))
+
+# ::id 16
+# ::snt Vlasov's departure left Ivan Polozkov, a Communist Party chief
+(x4 / leave-01
+	:ARG0 (x3 / depart-01
+		:ARG0 (x1 / person
+			:name (n / name
+				:op1 "Vlasov")))
+	:ARG1 (x5 / name
+		:op1 "Ivan"
+		:op2 "Polozkov"
+		:ARG0-of (x11 / have-org-role-91
+			:ARG2 (c / chief)
+			:ARG1 (x10 / party)
+			:name (xap0 / name
+				:op1 "Communist"))))
+
+# ::id 17
+# ::snt from the southern Russia city of Krasnodar, as Yeltsin's main
+(x12 / main
+	:location (x5 / city
+		:mod (x3 / south)
+		:location (x4 / country
+			:name (n1 / name
+				:op1 "Russia"))
+		:location (x7 / country
+			:name (n2 / name
+				:op1 "Krasnodar")))
+	:poss (x10 / person
+		:name (n / name
+			:op1 "Yeltsin")))
+
+# ::id 18
+# ::snt rival. The third remaining candidate, aviation instructor Vladimir
+(x1 / rival
+	:domain (x6 / candidate
+		:ARG1-of (x5 / remain-01)
+		:poss (x10 / person
+			:name (n / name
+				:op1 "Vladimir")
+			:ARG0-of (x9 / instructor
+				:mod (x8 / aviation)))))
+
+# ::id 19
+# ::snt Morokin, did not appear to have any chance of winning.
+(x5 / appear-02
+	:ARG1 (x7 / have-03
+		:ARG0 (x1 / person
+			:name (n / name
+				:op1 "Morokin"))
+		:ARG1 (x9 / chance
+			:mod (x8 / any)
+			:ARG1 (x11 / win-01))))
+
+# ::id 20
+# ::snt Russia, by far the largest of the Soviet Union's 15 republics,
+(x1 / country
+	:name (n / name
+		:op1 "Russia")
+	:null_edge (x6 / large
+		:degree (m / most)
+		:compared-to (x13 / republic
+			:mod (x9 / country
+				:name (n1 / name
+					:op1 "Soviet"
+					:op2 "Union"))
+			:quant 15)))
+
+# ::id 21
+# ::snt comprises more than two-thirds of the country's territory. It is
+(x1 / comprise-01
+	:ARG1 (x4 / two-third
+		:quant (x2 / more-than)
+		:part-of (x9 / territory
+			:poss (x7 / country))))
+
+# ::id 22
+# ::snt home to half the Soviet populace.
+(x1 / home
+	:ARG2 (x6 / populace
+		:mod (x3 / half)
+		:mod (xap1 / country
+			:ARG0-of (xap0 / name
+				:op1 "Soviet"))))
+
+# ::id 23
+# ::snt A Yeltsin victory would mean an important setback for Gorbachev,
+(x5 / mean-01
+	:ARG0 (x3 / win-01
+		:op (v / victory)
+		:mod (x2 / person
+			:name (n1 / name
+				:op1 "Yeltsin")))
+	:ARG1 (x8 / setback
+		:mod (x7 / important))
+	:ARG1 (x10 / person
+		:name (n / name
+			:op1 "Gorbachev")))
+
+# ::id 24
+# ::snt who has clashed repeatedly with his former protege. Gorbachev spoke
+(x11 / speak-01
+	:ARG1 (x3 / clash-01
+		:ARG1-of (x4 / repeat-01)
+		:ARG1 (x8 / protege
+			:mod (x7 / former)))
+	:ARG0 (x10 / person
+		:name (n / name
+			:op1 "Gorbachev")))
+
+# ::id 25
+# ::snt out Wednesday against Yeltsin's plan for increased Russian
+(x2 / wednesday
+	:ARG1 (x6 / plan-01
+		:ARG0 (x4 / person
+			:name (n / name
+				:op1 "Yeltsin"))
+		:ARG1 (x8 / increase-01
+			:ARG1 (x9 / country
+				:name (n1 / name
+					:op1 "Russia")))))
+
+# ::id 26
+# ::snt autonomy, claiming it would mean "the breakup of the Soviet
+(x1 / autonomy
+	:domain (x3 / claim-01
+		:ARG1 (x6 / mean-01
+			:ARG1 (x9 / break-08
+				:ARG1 (xap1 / country
+					:ARG0-of (xap0 / name
+						:op1 (x12 / country
+							:name (n / name
+								:op1 "Soviet"))))))))
+
+# ::id 27
+# ::snt Union."
+(x / xconcept)
+
+# ::id 28
+# ::snt Yeltsin, however, pledged Friday that if elected, he would
+(x5 / pledge-01
+	:ARG0 (x1 / person
+		:name (n / name
+			:op1 "Yeltsin"))
+	:ARG1-of (x8 / cause-01
+		:ARG1 (x12 / would
+			:null_edge (x9 / elect-01)
+			:null_edge (x11 / he)))
+	:time (xap0 / date-entity
+		:weekday (x6 / friday)))
+
+# ::id 29
+# ::snt defend the republic from Moscow interference while not letting
+(x1 / defend-01
+	:ARG1 (x3 / republic)
+	:prep-against (x6 / interference
+		:location (x5 / city
+			:name (n / name
+				:op1 "Moscow")))
+	:condition (x9 / let-01))
+
+# ::id 30
+# ::snt personal conflicts interfere with his Kremlin dealings.
+(x3 / interfere
+	:ARG0 (x2 / conflict-01
+		:mod (x1 / personal))
+	:ARG1 (x7 / deal-01
+		:mod (x6 / government-organization
+			:name (n / name
+				:op1 "Kremlin"))))
+
+# ::id 31
+# ::snt "I am for business-like relations, dialogue and negotiations
+(x9 / and
+	:op1 (x2 / i)
+	:op1 (x6 / relation
+		:mod (x5 / business-like))
+	:op2 (x8 / dialogue)
+	:op2 (x10 / negotiate-01))
+
+# ::id 32
+# ::snt with the president and the government, but on the principle that
+(x4 / and
+	:op2 (x6 / government-organization
+		:ARG0-of (g / govern-01))
+	:op2 (x11 / principle
+		:mod (x12 / null_tag))
+	:op1 (xap0 / person
+		:ARG0-of (x3 / have-org-role-91
+			:ARG2 (p / president))))
+
+# ::id 33
+# ::snt Russia's sovereignty is not damaged," Yeltsin told the Russian
+(x10 / tell-01
+	:ARG1 (x6 / damage-01
+		:ARG1 (x3 / sovereignty
+			:mod (x1 / country
+				:name (n2 / name
+					:op1 "Russia"))))
+	:ARG0 (x9 / person
+		:name (n / name
+			:op1 "Yeltsin"))
+	:ARG1 (x12 / country
+		:name (n1 / name
+			:op1 "Russia")))
+
+# ::id 34
+# ::snt Congress. The Russians use the term "sovereignty" to mean
+(x5 / use-01
+	:ARG1 (x1 / government-organization
+		:name (n / name
+			:op1 "Congress"))
+	:ARG0 (x4 / person
+		:mod (c / country
+			:name (n1 / name
+				:op1 "Russians")))
+	:ARG1 (x9 / sovereignty
+		:mod (x7 / term)
+		:ARG0-of (x12 / mean-01)))
+
+# ::id 35
+# ::snt increased autonomy _ not secession.
+(x5 / secede-01
+	:ARG1 (x2 / autonomy
+		:ARG1-of (x1 / increase-01)))
+
+# ::id 36
+# ::snt With his bass voice booming through the hall of the Great
+(x5 / boom-02
+	:ARG0 (x4 / voice
+		:mod (x3 / bass))
+	:ARG2 (x8 / hall
+		:poss "Great"))
+
+# ::id 37
+# ::snt Kremlin Palace, Yeltsin pressed a point-by-point program on
+(x5 / press-01
+	:ARG0 (x4 / person
+		:name (n / name
+			:op1 "Yeltsin"))
+	:ARG1 (x8 / program
+		:mod (x7 / point-by-point)))
+
+# ::id 38
+# ::snt promoting for Russian sovereignty, unleashing market forces,
+(x1 / promote-02
+	:ARG2 (x4 / sovereignty
+		:mod (x3 / country
+			:name (n / name
+				:op1 "Russia")))
+	:ARG1 (x6 / unleash
+		:ARG1 (x8 / force
+			:mod (x7 / market))))
+
+# ::id 39
+# ::snt increasing housing and flooding stores with consumer goods.
+(x3 / and
+	:op1 (x1 / increase-01
+		:ARG1 (x2 / house-01))
+	:op2 (x4 / flooding
+		:ARG1 (x5 / store)
+		:ARG1 (x8 / good
+			:mod (x7 / person
+				:ARG0-of (c / consume-01)))))
+
+# ::id 40
+# ::snt "Vremya," the nightly news program on state-run Soviet
+(x8 / program
+	:mod (x2 / vremya)
+	:mod (x7 / news)
+	:topic (xap0 / run-01
+		:ARG0 (x10 / state)
+		:ARG0-of (xap1 / name
+			:op1 (x11 / country
+				:name (n / name
+					:op1 "Soviet")))))
+
+# ::id 41
+# ::snt television, gave Yeltsin high marks for his platform. "Having
+(x3 / give-01
+	:ARG0 (x1 / television)
+	:ARG1 (x6 / mark
+		:ARG0 (x4 / person
+			:name (n / name
+				:op1 "Yeltsin"))
+		:mod (x5 / high))
+	:beneficiary (x9 / platform)
+	:null_edge (x12 / have-03))
+
+# ::id 42
+# ::snt heard all the contenders, I can say his program for the rebirth of
+(x7 / possible
+	:domain (x8 / say-01
+		:ARG1 (x1 / hear-01
+			:ARG0-of (x4 / contend-02
+				:quant (x2 / all)))
+		:ARG0 (x6 / i)
+		:ARG1 (x10 / program
+			:topic (x13 / rebirth))))
+
+# ::id 43
+# ::snt Russia came off the best-argued and thought-through," the Vremya
+(x2 / come-01
+	:ARG1 (x1 / country
+		:name (n / name
+			:op1 "Russia"))
+	:ARG1 (x6 / and
+		:op1 (x5 / best-argued
+			:mod (x11 / vremya))
+		:op2 (x7 / thought-through)))
+
+# ::id 44
+# ::snt report said.
+(x2 / say-01
+	:ARG0 (x1 / report))
+
+# ::id 45
+# ::snt "The people believe in Boris Nikolayevich Yeltsin," deputy
+(x4 / believe-01
+	:name (x6 / name
+		:op1 "Boris"
+		:op2 "Nikolayevich"
+		:op3 "Yeltsin")
+	:ARG0 (x11 / deputy))
+
+# ::id 46
+# ::snt Nina Sivova told the Congress. "His great force of will is needed
+(x3 / tell-01
+	:ARG0 (x1 / newspaper
+		:name (n / name
+			:op1 "Nina"
+			:op2 "Sivova"))
+	:ARG2 (x5 / government-organization
+		:name (n1 / name
+			:op1 "Congress"))
+	:ARG1 (x14 / need-01
+		:ARG1 (x10 / force
+			:mod (x9 / great)
+			:ARG1 (x12 / will))))
+
+# ::id 47
+# ::snt today."
+(x1 / today)
+
+# ::id 48
+# ::snt In an early indication of Yeltsin's plans if he wins, his speech
+(x14 / speech
+	:location (x4 / indicate-01
+		:time (x3 / early)
+		:ARG1 (x8 / plan-01
+			:ARG0 (x6 / person
+				:name (n / name
+					:op1 "Yeltsin")
+				:ARG0-of (x11 / win-01)))))
+
+# ::id 49
+# ::snt blasted the government program announced Thursday for a transition
+(x1 / blast-05
+	:ARG0 (x4 / program
+		:mod (x3 / government-organization
+			:ARG0-of (g / govern-01))
+		:ARG1-of (x5 / announce-01
+			:ARG2 (x9 / transition-01)
+			:time (xap0 / date-entity
+				:weekday (x6 / thursday)))))
+
+# ::id 50
+# ::snt to a free market economy. He said it had "already created panic in
+(x8 / say-01
+	:ARG1 (x5 / economy
+		:ARG1-of (x3 / free-41)
+		:mod (x4 / market))
+	:ARG0 (x7 / he)
+	:ARG1 (x13 / create-01
+		:time (x12 / already)
+		:ARG1 (x14 / panic-01)))
+
+# ::id 51
+# ::snt the stores today."
+(x2 / store
+	:time (x3 / today))
+
+# ::id 52
+# ::snt Instead, he backed an alternative program involving sale of
+(x4 / back-01
+	:mod (x1 / instead)
+	:ARG0 (x3 / he)
+	:ARG1 (x7 / program
+		:mod (x6 / alternative)
+		:ARG2-of (x8 / involve-01)))
+
+# ::id 53
+# ::snt government property, full independence for enterprises, more
+(x2 / property
+	:mod (x1 / government-organization
+		:ARG0-of (g / govern-01)
+		:ARG0 (x7 / enterprise
+			:mod (x4 / full))))
+
+# ::id 54
+# ::snt liberal laws on ownership and foreign loans.
+(x2 / law
+	:mod (x1 / liberal)
+	:topic (x5 / and
+		:op1 (x4 / ownership)
+		:op2 (x7 / loan-01
+			:mod (x6 / foreign))))
+
+# ::id 55
+# ::snt Yeltsin is already a member of the national Congress of People's
+(x5 / have-org-role-91
+	:ARG2 (m / member)
+	:ARG0 (x1 / person
+		:name (n / name
+			:op1 "Yeltsin"))
+	:time (x3 / already)
+	:ARG1 (x9 / company
+		:name (n1 / name
+			:op1 "Congress"
+			:op2 "of"
+			:op3 "People"
+			:op4 "'s")
+		:mod (x8 / nation)))
+
+# ::id 56
+# ::snt Deputies and a member of the Communist Party Central Committee.
+(x2 / and
+	:op1 (x1 / null_tag)
+	:op2 (x4 / member
+		:poss (x7 / political-party
+			:name (n / name
+				:op1 "Communist"
+				:op2 "Party"
+				:op3 "Central"
+				:op4 "Committee"))))
+
+# ::id 57
+# ::snt He has made a remarkable political comeback from disgrace two
+(x3 / make-02
+	:ARG0 (x1 / he)
+	:ARG1 (x7 / comeback
+		:mod (x5 / remarkable)
+		:mod (x6 / politics)
+		:ARG1 (x9 / disgrace
+			:quant 2)))
+
+# ::id 58
+# ::snt years ago, when he was ousted from his post as Moscow party chief
+(xap0 / before
+	:quant (x1 / temporal-quantity
+		:unit (y / year))
+	:snt2 (x7 / oust
+		:ARG1 (x10 / post
+			:ARG2 (x14 / chief
+				:ARG1 (x12 / city
+					:name (n / name
+						:op1 "Moscow"))
+				:mod (x13 / party)))))
+
+# ::id 59
+# ::snt and ostracized by the Kremlin elite, including Gorbachev. Yeltsin
+(x1 / and
+	:op1 (x2 / ostracize-01
+		:ARG0 (x6 / elite
+			:name (x9 / name
+				:op1 "Gorbachev"
+				:op2 "."
+				:op3 "Yeltsin"))))
+
+# ::id 60
+# ::snt has continued to level public blasts of criticism at Gorbachev for
+(x2 / continue-01
+	:ARG1 (x4 / level
+		:ARG1 (x6 / blast-05
+			:mod (x5 / public)
+			:ARG1 (x8 / criticize-01)
+			:time (x10 / person
+				:name (n / name
+					:op1 "Gorbachev")))))
+
+# ::id 61
+# ::snt his "halfway reforms."
+(x4 / reform-01
+	:ARG1-of (x3 / halfway))
+
+# ::id 62
+# ::snt If no one wins more than 50 percent of the vote in the first
+(x4 / win-01
+	:polarity -
+	:ARG2 (x5 / more-than
+		:op1 (x8 / percentage-entity
+			:value 50
+			:poss (x11 / vote-01))))
+
+# ::id 63
+# ::snt round, the election goes into a runoff between the top two
+(x5 / go-10
+	:ARG0 (x1 / round)
+	:ARG1 (x4 / elect-01)
+	:ARG4 (x8 / runoff
+		:null_edge (x11 / top
+			:null_edge 2)))
+
+# ::id 64
+# ::snt vote-getters.
+(x1 / vote-getter)
+

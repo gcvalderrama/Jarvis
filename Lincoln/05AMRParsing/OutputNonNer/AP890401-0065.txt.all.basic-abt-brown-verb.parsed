@@ -1,0 +1,263 @@
+# ::id 1
+# ::snt Here is a chronology of events in the first
+(x6 / event
+	:quant (x4 / chronology
+		:location (x1 / here)))
+
+# ::id 2
+# ::snt few hours after the 12:04 a.m. (local time) March 24 grounding of
+(x1 / few
+	:op1 (x2 / temporal-quantity
+		:unit (h / hour)
+		:time (x3 / after
+			:op1 (x13 / grounding
+				:time (x9 / time
+					:mod (x8 / local))
+				:name (x11 / name
+					:op1 "March"
+					:op2 "24")))))
+
+# ::id 3
+# ::snt the oil tanker Exxon Valdez on a reef in Alaska's Prince William
+(x5 / country
+	:name (n / name
+		:op1 "Valdez")
+	:null_edge (x2 / oil)
+	:null_edge (x3 / tanker)
+	:null_edge (x8 / reef
+		:location (x10 / state
+			:name (n1 / name
+				:op1 "Alaska"))
+		:location (x13 / person
+			:name (n2 / name
+				:op1 "William")
+			:ARG0-of (x12 / prince))))
+
+# ::id 4
+# ::snt Sound, based on Coast Guard transmissions monitored in Washington:
+(x3 / base-01
+	:ARG0 (x1 / sound)
+	:ARG2 (x7 / thing
+		:ARG1-of (t / transmit-01)
+		:mod (x6 / organization
+			:name (n / name
+				:op1 "Guard")
+			:mod (x5 / have-org-role-91
+				:ARG1 (m / military
+					:name (n1 / name
+						:op1 "Coast"))))
+		:ARG1-of (x8 / monitor-01
+			:location (x10 / city
+				:name (n2 / name
+					:op1 "Washington")))))
+
+# ::id 5
+# ::snt 12:28 a.m. _ The Exxon Valdez is reported "hard aground" with
+(x8 / report-01
+	:null_edge (x4 / null_tag
+		:quant (x1 / include-91))
+	:ARG1 (x11 / aground
+		:mod (x10 / hard)))
+
+# ::id 6
+# ::snt 1.26 million barrels of North Slope crude oil and "approximately
+(x9 / and
+	:op1 (x3 / volume-quantity
+		:unit (b / barrel)
+		:poss (x6 / slope
+			:null_edge (x5 / null_tag)))
+	:op2 (x8 / oil
+		:mod (x7 / crude))
+	:quant (x11 / approximately))
+
+# ::id 7
+# ::snt 150,000 barrels" initially released. Initial pollution reports are
+(x9 / report-01
+	:ARG1 (x2 / volume-quantity
+		:unit (b / barrel)
+		:ARG1-of (x5 / release-01
+			:time (x4 / initial)))
+	:time (x7 / initial)
+	:mod (x8 / pollute-01))
+
+# ::id 8
+# ::snt described as "uncertain due to darkness."
+(x1 / describe-01
+	:ARG2 (x7 / darkness))
+
+# ::id 9
+# ::snt 12:30 a.m. _ Coast Guard closes Port Valdez to all traffic and
+(x12 / and
+	:op1 (x6 / close-01
+		:ARG0 (x4 / military
+			:name (n / name
+				:op1 "Coast"
+				:op2 "Guard")
+			:null_edge (x1 / include-91))
+		:ARG1 (x8 / country
+			:name (n1 / name
+				:op1 "Valdez"))
+		:ARG2 (x11 / traffic
+			:quant (x10 / all))))
+
+# ::id 10
+# ::snt dispatches the commercial tug Stalwart from Alyeska Marine Terminal
+(x1 / dispatch-01
+	:ARG1 (x4 / tug
+		:mod (x3 / commerce)
+		:mod (x5 / stalwart
+			:source (x9 / organization
+				:name (n / name
+					:op1 "Terminal")
+				:null_edge (x7 / organization
+					:name (n1 / name
+						:op1 "Alyeska"))
+				:mod (x8 / organization
+					:name (n2 / name
+						:op1 "Marine"))))))
+
+# ::id 11
+# ::snt to assist the Exxon Valdez. Two vessels designed to skim oil off
+(x2 / assist-01
+	:ARG1 (x5 / person
+		:name (n / name
+			:op1 "Valdez"))
+	:ARG1 (x8 / vessel
+		:ARG1-of (x9 / design-01
+			:ARG3 (x11 / skim-02
+				:ARG1 (x12 / oil)))))
+
+# ::id 12
+# ::snt the water are "being prepared ... for delivery and deployment."
+(x6 / prepare-02
+	:ARG1 (x2 / water)
+	:ARG2 (x10 / and
+		:op1 (x9 / deliver-01)
+		:op2 (x11 / deploy-01)))
+
+# ::id 13
+# ::snt 1 a.m. _ A pilot association boat leaves Valdez carrying Coast
+(x8 / leave-01
+	:ARG0 (x3 / _
+		:quant 1)
+	:ARG1 (x7 / boat
+		:ARG1 (x6 / associate-01
+			:mod (x5 / pilot-01)))
+	:ARG1 (x10 / carry-01))
+
+# ::id 14
+# ::snt Guard officers and Alaska Department of Environmental Conservation
+(x3 / and
+	:op1 (x2 / have-org-role-91
+		:ARG2 (o / officer)
+		:ARG0-of (x1 / guard)
+		:poss (x8 / organization
+			:name (n1 / name
+				:op1 "Conservation")
+			:mod (x7 / organization
+				:name (n2 / name
+					:op1 "Environmental"))))
+	:op2 (x4 / government-organization
+		:name (n / name
+			:op1 "Alaska"
+			:op2 "Department")))
+
+# ::id 15
+# ::snt pollution personnel to the Exxon Valdez.
+(x2 / have-org-role-91
+	:ARG2 (p / personnel)
+	:ARG1 (x1 / pollute-01)
+	:ARG2 (x6 / valdez))
+
+# ::id 16
+# ::snt 2:06 a.m. _ The Coast Guard notes that high tide was reached and
+(x7 / note-01
+	:null_edge (x4 / null_tag
+		:quant (x1 / include-91))
+	:ARG1 (x12 / reach-01
+		:ARG1 (x10 / tide
+			:mod (x9 / high))
+		:ARG0 (x13 / and)))
+
+# ::id 17
+# ::snt the ship remained moored on the reef.
+(x3 / remain-01
+	:ARG2 (x4 / moor-01
+		:ARG1 (x2 / ship)
+		:ARG2 (x7 / reef)))
+
+# ::id 18
+# ::snt 2:27 a.m. _ A merchant ship reports the oil slick a half mile
+(x7 / report-01
+	:time (x1 / include-91)
+	:ARG1 (x6 / ship
+		:mod (x5 / person
+			:ARG0-of (m1 / merchandise-01)))
+	:ARG1 (x10 / slick
+		:mod (x9 / oil))
+	:ARG1 (x13 / distance-quantity
+		:unit (m / mile)))
+
+# ::id 19
+# ::snt south of the Exxon Valdez.
+(x / xconcept)
+
+# ::id 20
+# ::snt 2:30 a.m. _ Coast Guard personnel arrive at the Exxon Valdez for
+(x7 / arrive-01
+	:null_edge (x1 / include-91)
+	:ARG0-of (x6 / have-org-role-91
+		:ARG2 (p / personnel)
+		:null_edge (x4 / have-org-role-91
+			:ARG1 (m / military
+				:name (n / name
+					:op1 "Coast")))
+		:poss (x5 / organization
+			:name (n1 / name
+				:op1 "Guard")))
+	:ARG4 (x11 / valdez))
+
+# ::id 21
+# ::snt the first time.
+(x3 / time)
+
+# ::id 22
+# ::snt 3:23 a.m. _ Coast Guard officers aboard the ship report back
+(x10 / report-01
+	:time (x1 / include-91)
+	:ARG0 (x6 / have-org-role-91
+		:ARG2 (o / officer)
+		:ARG1 (x5 / organization
+			:name (n / name
+				:op1 "Guard")
+			:mod (x4 / have-org-role-91
+				:ARG1 (m / military
+					:name (n1 / name
+						:op1 "Coast"))))
+		:location (x7 / aboard
+			:op1 (x9 / ship)))
+	:mod (x11 / back))
+
+# ::id 23
+# ::snt that 138,000 barrels of crude oil has been lost.
+(x9 / lose-02
+	:ARG1 (x6 / oil
+		:quant (x3 / volume-quantity
+			:unit (b / barrel)
+			:null_edge (x1 / null_tag)
+			:quant (x2 / 138,000))
+		:mod (x5 / crude)))
+
+# ::id 24
+# ::snt 4:14 a.m. _ The Exxon Baton Rouge is sent to begin taking oil
+(x9 / send-01
+	:null_edge (x4 / null_tag
+		:quant (x1 / include-91))
+	:ARG1 (x11 / begin-01
+		:ARG1 (x12 / take-01
+			:ARG1 (x13 / oil))))
+
+# ::id 25
+# ::snt from the Valdez.
+(x3 / valdez)
+

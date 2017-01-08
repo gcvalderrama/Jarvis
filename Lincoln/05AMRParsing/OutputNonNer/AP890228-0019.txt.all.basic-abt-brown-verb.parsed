@@ -1,0 +1,675 @@
+# ::id 1
+# ::snt The earthquake that killed 25,000 people in
+(x2 / earthquake
+	:ARG0-of (x4 / kill-01
+		:ARG1 (x5 / 25,000)))
+
+# ::id 2
+# ::snt Armenia pushed last year's earthquake-related death toll worldwide
+(x2 / push-01
+	:ARG0 (x1 / country
+		:name (n / name
+			:op1 "Armenia"))
+	:ARG1 (x8 / toll
+		:time (x4 / year
+			:mod (x3 / last))
+		:mod (x6 / earthquake-related)
+		:mod (x7 / die-01))
+	:ARG1 (x9 / worldwide))
+
+# ::id 3
+# ::snt to the highest level since 1976, when a Chinese earthquake killed at
+(x4 / level
+	:mod (x3 / high
+		:degree (m / most)
+		:time (x5 / since
+			:op1 (x6 / date-entity
+				:year 1976
+				:time-of (x12 / kill-01
+					:ARG0 (x11 / earthquake
+						:mod (x10 / country
+							:name (n / name
+								:op1 "China"))))))))
+
+# ::id 4
+# ::snt least 10 times as many, the U.S. Geological Survey reports.
+(x11 / report-01
+	:ARG1 (x5 / many
+		:null_edge 10)
+	:ARG0 (x9 / government-organization
+		:name (n / name
+			:op1 "Geological"
+			:op2 "Survey")))
+
+# ::id 5
+# ::snt The estimated earthquake death toll in 1988 includes an
+(x8 / include-01
+	:ARG2 (x5 / toll
+		:ARG1-of (x2 / estimate-01)
+		:mod (x4 / die-01
+			:mod (x3 / earthquake))
+		:time (x7 / date-entity
+			:year 1988))
+	:name (x9 / name
+		:op1 "an"))
+
+# ::id 6
+# ::snt additional 2,000 or more people who died in other earthquakes around
+(x3 / or
+	:mod (x1 / additional)
+	:op2 (x7 / die-01
+		:degree (x4 / more)
+		:ARG1 (x10 / earthquake
+			:mod (x9 / other)
+			:location (x11 / around))))
+
+# ::id 7
+# ::snt the world, the Survey reported Monday.
+(x6 / report-01
+	:ARG0 (x2 / world)
+	:time (xap0 / date-entity
+		:weekday (x7 / monday)))
+
+# ::id 8
+# ::snt Although the annual average death toll for earthquakes is about
+(x6 / toll
+	:mod (x5 / die-01
+		:mod (x4 / average-01))
+	:ARG1 (x8 / earthquake))
+
+# ::id 9
+# ::snt 10,000, in 1987 only 1,100 lives were lost.
+(x9 / lose-02
+	:time (x4 / date-entity
+		:year 1987)
+	:ARG1 (x7 / life
+		:mod (x5 / only)
+		:quant (x6 / 1,100)))
+
+# ::id 10
+# ::snt In addition to the deaths, some 13,000 people were injured and
+(x12 / and
+	:op1 (x11 / injure-01
+		:ARG1 (x7 / some
+			:op1 (x8 / 13,000))))
+
+# ::id 11
+# ::snt more than a half-million were left homeless in the Armenian
+(x6 / leave-01
+	:ARG1 (x1 / more
+		:compared-to (x4 / half-million))
+	:ARG1 (x7 / homeless
+		:location (x10 / country
+			:name (n / name
+				:op1 "Armenian"))))
+
+# ::id 12
+# ::snt earthquake, which had a magnitude of 6.8 on the Richter scale. The
+(x4 / have-03
+	:ARG1 (x1 / earthquake)
+	:ARG1 (x6 / magnitude
+		:degree (x12 / scale
+			:quant (x8 / 6.8)
+			:ARG0 (x11 / person
+				:name (n / name
+					:op1 "Richter")))))
+
+# ::id 13
+# ::snt death toll of 25,000 is the most recent reported by the Soviets. The
+(x9 / report-01
+	:time (x8 / recent
+		:ARG0 (x2 / toll
+			:mod (x1 / die-01)
+			:quant (x4 / 25,000))
+		:degree (x7 / most)
+		:null_edge (x14 / null_tag))
+	:ARG0 (x12 / soviets))
+
+# ::id 14
+# ::snt exact toll in unknown.
+(x2 / toll
+	:mod (x1 / exact)
+	:ARG1-of (x4 / know-01
+		:polarity -))
+
+# ::id 15
+# ::snt The main shock was followed within minutes by a second, measuring
+(x5 / follow-01
+	:ARG2 (x3 / shock-01
+		:mod (x2 / main))
+	:time (x6 / within)
+	:ARG2 (x12 / measure-01))
+
+# ::id 16
+# ::snt 5.8 on the Richter scale, which estimates the energy released by an
+(x1 / 5.8
+	:degree (x5 / scale
+		:ARG0 (x4 / person
+			:name (n / name
+				:op1 "Richter")
+			:ARG0-of (x8 / estimate-01
+				:ARG1 (x10 / energy
+					:ARG1-of (x11 / release-01))
+				:name (x13 / name
+					:op1 "an")))))
+
+# ::id 17
+# ::snt earthquake. An earthquake of 5.0 can cause considerable damage, and
+(x12 / and
+	:op1 (x7 / possible
+		:domain (x8 / cause-01
+			:null_edge (x1 / earthquake)
+			:ARG0 (x4 / earthquake
+				:ARG1 (x6 / 5.0))
+			:ARG1 (x10 / damage-01
+				:degree (x9 / considerable)))))
+
+# ::id 18
+# ::snt the strength rises by 10 times for each whole number on the scale.
+(x3 / rise-01
+	:ARG1 (x2 / strength)
+	:null_edge (x13 / scale
+		:null_edge 10
+		:mod (x8 / each)
+		:mod (x9 / whole)))
+
+# ::id 19
+# ::snt Many of the deaths in Armenia were blamed on collapsing
+(x8 / blame-01
+	:ARG1 (x4 / death
+		:quant (x1 / many)
+		:ARG1-of (x2 / include-91)
+		:location (x6 / country
+			:name (n / name
+				:op1 "Armenia")))
+	:ARG2 (x10 / collapse-01))
+
+# ::id 20
+# ::snt buildings, as the earthquake rattled concrete structures until they
+(x6 / rattle-01
+	:ARG1 (x1 / building)
+	:ARG0 (x5 / earthquake)
+	:ARG1 (x8 / structure
+		:mod (x7 / concrete))
+	:time (x9 / until
+		:op1 (x10 / they)))
+
+# ::id 21
+# ::snt fell to the ground, according to subsequent analyses.
+(xap0 / say-01
+	:op1 (x1 / fall-01
+		:ARG4 (x4 / ground))
+	:ARG0 (x9 / analysis
+		:time (x8 / subsequent)))
+
+# ::id 22
+# ::snt Another recent earthquake in the Soviet Union, claiming about
+(x3 / earthquake
+	:mod (x1 / another)
+	:time (x2 / recent)
+	:location (x6 / country
+		:name (n / name
+			:op1 "Soviet"
+			:op2 "Union"))
+	:domain (x9 / claim-01))
+
+# ::id 23
+# ::snt 1,000 lives, struck in Soviet central Asia. That one occurred in
+(x4 / person
+	:name (n / name
+		:op1 "struck")
+	:ARG0 (x2 / life)
+	:location (x8 / continent
+		:name (n1 / name
+			:op1 "Asia")
+		:mod (x7 / central)
+		:mod (xap1 / country
+			:ARG0-of (xap0 / name
+				:op1 "Soviet")))
+	:ARG1 (x12 / occur-01))
+
+# ::id 24
+# ::snt January, however, and so does not count in the 1988 toll.
+(x5 / and
+	:op1 (x1 / date-entity)
+	:op2 (x9 / count-04
+		:ARG1 (x13 / toll
+			:time (x12 / date-entity
+				:year 1988))))
+
+# ::id 25
+# ::snt Last year's second most deadly earthquake occurred Aug. 20 on the
+(x7 / earthquake
+	:time (x2 / year
+		:mod (x1 / last))
+	:mod (x4 / temporal-quantity
+		:unit (s / second)
+		:degree (x5 / most))
+	:name (x9 / name
+		:op1 "Aug."
+		:op2 "20"))
+
+# ::id 26
+# ::snt Nepal-India border, killing 1,000. That earthquake, measuring 6.6 on
+(x10 / measure-01
+	:ARG1 (x2 / border-01
+		:ARG1 (x1 / nepal-india))
+	:condition (x4 / person
+		:ARG1-of (k / kill-01)
+		:ARG1 (x8 / earthquake
+			:mod (x7 / that)))
+	:ARG1 (x11 / 6.6))
+
+# ::id 27
+# ::snt the Richter scale, destroyed thousands of homes and injured many
+(x9 / and
+	:op1 (x5 / destroy-01
+		:ARG0 (x3 / scale
+			:poss (x2 / person
+				:name (n / name
+					:op1 "Richter")))
+		:ARG1 (x8 / home))
+	:op2 (x10 / injure-01
+		:quant (x11 / many)))
+
+# ::id 28
+# ::snt people.
+(x / xconcept)
+
+# ::id 29
+# ::snt On Nov. 6 an earthquake measuring 7.3 on the scale claimed 730
+(x11 / claim-01
+	:time (x2 / date-entity)
+	:ARG0 (x5 / earthquake
+		:ARG1-of (x6 / measure-01
+			:ARG1 (x7 / 7.3)
+			:degree (x10 / scale)))
+	:ARG1 (x12 / 730))
+
+# ::id 30
+# ::snt lives and injured about 4,000 people on the border between Burma and
+(x / xconcept
+	:x (x2 / and
+		:op1 (x1 / life
+			:location (x9 / border-01
+				:ARG2 (x11 / country
+					:name (n / name
+						:op1 "Burma"))))
+		:op2 (x3 / injure-01)
+		:quant (x4 / about
+			:op1 (x5 / 4,000)))
+	:x (x12 / and))
+
+# ::id 31
+# ::snt China, the Geological Survey reported.
+(x6 / report-01
+	:ARG0 (x1 / country
+		:name (n / name
+			:op1 "China"))
+	:ARG0 (x5 / survey
+		:mod (x4 / geological)))
+
+# ::id 32
+# ::snt And on the India-Burma border three deaths were reported in an
+(x1 / and
+	:op2 (x9 / report-01
+		:ARG1 (x5 / border-01
+			:ARG2 (x4 / country
+				:name (n / name
+					:op1 "India-Burma")))
+		:ARG1 (x7 / death
+			:quant 3)
+		:location (x11 / name
+			:op1 "an")))
+
+# ::id 33
+# ::snt Aug. 6 earthquake that caused landslides.
+(x3 / earthquake
+	:name (x1 / name
+		:op1 "Aug."
+		:op2 "6")
+	:ARG0-of (x5 / cause-01
+		:ARG1 (x6 / landslide)))
+
+# ::id 34
+# ::snt The Survey said it recorded 61 significant earthquakes last year,
+(x3 / say-01
+	:ARG0 (x2 / survey-01)
+	:ARG1 (x5 / record-01
+		:ARG1 (x8 / earthquake
+			:quant 61
+			:mod (x7 / significant))
+		:time (x10 / year
+			:mod (x9 / last))))
+
+# ::id 35
+# ::snt 15 fewer than the year before. An earthquake is considered
+(x11 / consider-01
+	:quant 15
+	:ARG1 (x9 / earthquake
+		:mod (x2 / few
+			:compared-to (x5 / year
+				:time (x6 / before)))))
+
+# ::id 36
+# ::snt significant if it has a magnitude of 6.5 on the Richter scale.
+(x1 / significant
+	:ARG1 (x6 / magnitude
+		:null_edge 6.5
+		:mod (x12 / scale
+			:ARG0 (x11 / person
+				:name (n / name
+					:op1 "Richter")))))
+
+# ::id 37
+# ::snt Earthquakes of lesser magnitude are included if they cause
+(x9 / cause-01
+	:ARG0 (x1 / earthquake
+		:ARG1 (x4 / magnitude
+			:mod (x3 / less))))
+
+# ::id 38
+# ::snt casualties or considerable damage.
+(x2 / or
+	:op1 (x1 / casualty)
+	:op2 (x4 / damage-01
+		:degree (x3 / considerable)))
+
+# ::id 39
+# ::snt Three significant earthquakes were recorded in the United States
+(x5 / record-01
+	:ARG1 (x3 / earthquake
+		:quant 3
+		:mod (x2 / significant))
+	:location (x8 / country
+		:name (n / name
+			:op1 "United"
+			:op2 "States")))
+
+# ::id 40
+# ::snt last year, including the strongest shock of the year. That
+(x7 / shock-01
+	:time (x2 / year
+		:mod (x1 / last))
+	:mod (x6 / strong
+		:degree (m / most))
+	:time (x10 / year))
+
+# ::id 41
+# ::snt earthquake, measured at 7.6, occurred March 6 in the Gulf of Alaska
+(x1 / earthquake
+	:ARG1-of (x3 / measure-01
+		:null_edge 7.6)
+	:time (x8 / date-entity)
+	:location (x12 / world-region
+		:name (n / name
+			:op1 "Gulf")
+		:part-of (x14 / state
+			:name (n1 / name
+				:op1 "Alaska"))))
+
+# ::id 42
+# ::snt and resulted in only minor damage.
+(x1 / and
+	:op1 (x2 / result-01
+		:ARG1 (x6 / damage-01
+			:mod (x5 / minor
+				:mod (x4 / only)))))
+
+# ::id 43
+# ::snt The only U.S. earthquake death last year occured when someone
+(xap0 / magnitude
+	:ARG0 (x4 / earthquake
+		:mod (x3 / country
+			:name (n / name
+				:op1 "U.S."))
+		:ARG1 (x5 / die-01
+			:mod (x2 / only)))
+	:time (x7 / year
+		:mod (x6 / last))
+	:ARG0 (x10 / someone))
+
+# ::id 44
+# ::snt suffered a heart attack after an earthquake measuring 4.8 in
+(x1 / suffer-01
+	:ARG1 (x4 / attack-01
+		:mod (x3 / heart))
+	:time (x5 / after
+		:op1 (x7 / earthquake
+			:ARG1-of (x8 / measure-01
+				:ARG1 (x9 / 4.8)))))
+
+# ::id 45
+# ::snt Whittier, Calif., in February. The other significant U.S. earthquake
+(x1 / country
+	:name (n / name
+		:op1 "Whittier")
+	:null_edge (x3 / country
+		:name (n1 / name
+			:op1 "Calif."))
+	:time (x6 / date-entity)
+	:null_edge (x12 / earthquake
+		:mod (x9 / other)
+		:mod (x10 / significant)
+		:mod (x11 / country
+			:name (n2 / name
+				:op1 "U.S."))))
+
+# ::id 46
+# ::snt occurred Dec. 3 in Pasadena, Calif. It was measured at 4.6 on the
+(x2 / name
+	:op1 "Dec."
+	:op2 "3"
+	:location (x5 / country
+		:name (n / name
+			:op1 "Pasadena")
+		:location (x7 / country
+			:name (n1 / name
+				:op1 "Calif."))
+		:ARG1-of (x11 / measure-01
+			:null_edge 4.6)))
+
+# ::id 47
+# ::snt scale and caused some injuries and property damage.
+(x2 / and
+	:op1 (x1 / scale)
+	:op2 (x3 / cause-01
+		:ARG1 (x6 / and
+			:op1 (x5 / injure-01
+				:mod (x4 / some))
+			:op2 (x8 / damage-01
+				:ARG1 (x7 / property)))))
+
+# ::id 48
+# ::snt An earthquake centered in eastern Canada on Nov. 25 was felt
+(x11 / feel-01
+	:ARG1 (x2 / earthquake
+		:ARG1-of (x3 / center-01
+			:location (x5 / east
+				:part-of (x6 / country
+					:name (n / name
+						:op1 "Canada")))
+			:time (x8 / date-entity))))
+
+# ::id 49
+# ::snt widely across that country and in the northeastern United States as
+(x1 / wide
+	:location (x2 / across
+		:op1 (x4 / country)
+		:op1 (x5 / and)
+		:location (x9 / country
+			:name (n / name
+				:op1 "United"
+				:op2 "States")
+			:mod (x8 / northeast))))
+
+# ::id 50
+# ::snt far south as Washington, the Survey reported. It had a magnitude of
+(x2 / south
+	:degree (x1 / far)
+	:op1 (x8 / report-01
+		:ARG0 (x4 / government-organization
+			:name (n / name
+				:op1 "Washington")))
+	:domain (x10 / it))
+
+# ::id 51
+# ::snt 5.7. Earthquakes in the eastern part of North America tend to be
+(x11 / tend-02
+	:ARG1 (x3 / earthquakes
+		:null_edge (x1 / 5.7)))
+
+# ::id 52
+# ::snt felt over larger areas than earthquakes of similar strength in the
+(x1 / feel-01
+	:ARG1 (x6 / earthquake
+		:mod (x3 / large)
+		:ARG1 (x9 / strength
+			:ARG1-of (x8 / resemble-01
+				:op (s / similar)))))
+
+# ::id 53
+# ::snt West.
+(x1 / world-region
+	:name (n / name
+		:op1 "West"))
+
+# ::id 54
+# ::snt Europe recorded three earthquake deaths last year when one rated
+(x2 / record-01
+	:ARG1 (x5 / death
+		:ARG0 (x1 / name
+			:op1 "Europe")
+		:quant 3
+		:ARG1 (x4 / earthquake))
+	:time (x7 / year
+		:mod (x6 / last))
+	:time (x10 / rate-01
+		:ARG0 (x9 / one)))
+
+# ::id 55
+# ::snt at 3.0 killed a group of miners in Czechoslovakia on Sept. 2.
+(x3 / kill-01
+	:location (x2 / 3.0)
+	:ARG1 (x5 / group
+		:consist-of (x7 / person
+			:ARG0-of (m / mine-01)))
+	:location (x9 / country
+		:name (n / name
+			:op1 "Czechoslovakia"))
+	:time (x11 / date-entity))
+
+# ::id 56
+# ::snt In addition an earthquake rated at 5.8 caused several injuries in
+(x8 / cause-01
+	:ARG0 (x4 / earthquake
+		:ARG1-of (x5 / rate-01
+			:location (x7 / 5.8)))
+	:ARG1 (x10 / injure-01
+		:quant (x9 / several)))
+
+# ::id 57
+# ::snt Albania on Jan. 9.
+(x1 / country
+	:name (n / name
+		:op1 "Albania")
+	:null_edge (x3 / date-entity))
+
+# ::id 58
+# ::snt Injuries were also reported from two offshore earthquakes, one in
+(x4 / report-01
+	:ARG0 (x1 / injure-01)
+	:mod (x3 / also)
+	:ARG2 (x8 / earthquake
+		:quant 2
+		:location (x7 / offshore)))
+
+# ::id 59
+# ::snt the Ionian Sea near Greece Oct. 16 and another near the Azores
+(x8 / and
+	:op1 (x2 / name
+		:op1 "Ionian"
+		:op2 "Sea"
+		:location (x4 / near))
+	:op1 (x6 / name
+		:op1 "Oct."
+		:op2 "16")
+	:op2 (x9 / another
+		:location (x10 / near
+			:op1 (x12 / organization
+				:name (n / name
+					:op1 "Azores")))))
+
+# ::id 60
+# ::snt Islands Nov. 21.
+(x1 / island
+	:time (xap0 / date-entity
+		:null_edge (x3 / null_tag)))
+
+# ::id 61
+# ::snt In Africa, eight people working in a gold mine in South Africa
+(x6 / work-01
+	:location (x2 / name
+		:op1 "Africa")
+	:ARG1 (x10 / mine
+		:mod (x9 / gold
+			:quant 8)
+		:location (x12 / country
+			:name (n / name
+				:op1 "South"
+				:op2 "Africa"))))
+
+# ::id 62
+# ::snt died Jan. 5 in an earthquake rated at 5.2.
+(x1 / die-01
+	:time (x2 / name
+		:op1 "Jan."
+		:op2 "5")
+	:location (x6 / earthquake
+		:ARG1-of (x7 / rate-01
+			:location (x9 / 5.2))))
+
+# ::id 63
+# ::snt And Japan, usually very seismically active, recorded only one
+(x1 / and
+	:op2 (x7 / active
+		:mod (x4 / usual)
+		:degree (x5 / very)
+		:degree (x6 / seismically))
+	:op2 (x9 / record-01
+		:ARG0 (x2 / country
+			:name (n / name
+				:op1 "Japan"))
+		:mod (x10 / only
+			:op1 1)))
+
+# ::id 64
+# ::snt significant earthquake last year, the Survey reported. That
+(x8 / report-01
+	:ARG0 (x2 / earthquake
+		:mod (x1 / significant)
+		:ARG1 (x10 / that))
+	:time (x4 / year
+		:mod (x3 / last))
+	:ARG0 (x7 / survey-01))
+
+# ::id 65
+# ::snt earthquake measured 5.4 and resulted in 10 injuries and minor damage
+(x4 / and
+	:op1 (x2 / measure-01
+		:ARG0 (x1 / earthquake))
+	:op2 5.4
+	:op2 (x5 / result-01
+		:ARG2 (x9 / and
+			:op1 (x8 / injure-01
+				:quant 10)
+			:op1 (x11 / damage-01
+				:mod (x10 / minor)))))
+
+# ::id 66
+# ::snt in the Tokyo area.
+(x4 / area
+	:location (x3 / city
+		:name (n / name
+			:op1 "Tokyo")))
+

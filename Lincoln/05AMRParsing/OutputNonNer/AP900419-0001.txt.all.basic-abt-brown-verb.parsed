@@ -1,0 +1,331 @@
+# ::id 1
+# ::snt A single round of treatment with an experimental
+(x3 / round
+	:mod (x2 / single)
+	:mod (x5 / treat-03
+		:manner (x8 / experiment-01)))
+
+# ::id 2
+# ::snt new medicine appears to be highly effective against a rare form of
+(x3 / appear-02
+	:ARG1 (x2 / medicine
+		:mod (x1 / new))
+	:ARG1 (x7 / effective
+		:degree (x6 / high)
+		:prep-against (x11 / form
+			:mod (x10 / rare))))
+
+# ::id 3
+# ::snt leukemia and may help fight other kinds of blood cancer as well,
+(x1 / disease
+	:name (n / name
+		:op1 "leukemia")
+	:domain (x4 / help-01
+		:ARG1 (x2 / and)
+		:mod (x3 / possible)
+		:ARG1 (x5 / fight-01
+			:ARG0 x2
+			:ARG1 (x10 / cancer
+				:mod (x7 / kind
+					:mod (x6 / other))
+				:mod (x9 / blood)))))
+
+# ::id 4
+# ::snt says a study published today.
+(x1 / say-01
+	:ARG0 (x3 / study
+		:ARG1-of (x4 / publish-01
+			:time (x5 / today))))
+
+# ::id 5
+# ::snt The new drug was developed at Scripps Clinic and Research
+(x5 / develop-02
+	:ARG1 (x3 / drug
+		:mod (x2 / new))
+	:location (x7 / government-organization
+		:name (n / name
+			:op1 "Scripps"
+			:op2 "Clinic"
+			:op3 "and"
+			:op4 "Research")))
+
+# ::id 6
+# ::snt Foundation in La Jolla, Calif., where doctors tested it on patients
+(x1 / foundation
+	:location (x4 / country
+		:name (n / name
+			:op1 "Jolla")
+		:null_edge (x3 / country
+			:name (n1 / name
+				:op1 "La"))
+		:null_edge (x6 / country
+			:name (n2 / name
+				:op1 "Calif.")))
+	:ARG1-of (x10 / test-01
+		:ARG0 (x9 / doctor)
+		:ARG2 (x13 / patient)))
+
+# ::id 7
+# ::snt with hairy cell leukemia. In almost every case, the medicine erased
+(x13 / erase
+	:ARG2 (x4 / disease
+		:name (n / name
+			:op1 "leukemia")
+		:mod (x2 / hairy)
+		:mod (x3 / cell))
+	:topic (x9 / case
+		:mod (x8 / every
+			:mod (x7 / almost)))
+	:ARG0 (x12 / medicine))
+
+# ::id 8
+# ::snt all signs of the disease.
+(x2 / sign-01
+	:quant (x1 / all)
+	:ARG1 (x5 / disease))
+
+# ::id 9
+# ::snt 
+(x4 / affect-01
+	:ARG0 (x3 / disease
+		:name (n / name
+			:op1 "leukemia")
+		:mod (x1 / hairy)
+		:ARG1 (x2 / cell))
+	:ARG1 (x8 / cell
+		:null_edge (x6 / white)
+		:mod (x7 / blood)
+		:ARG0-of (x10 / make-02)))
+
+# ::id 10
+# ::snt disease-fighting antibodies. Doctors are also testing the drug
+(x2 / antibody
+	:mod (x1 / disease-fighting)
+	:ARG0-of (x7 / test-01
+		:ARG0 (x4 / doctor)
+		:mod (x6 / also)
+		:ARG1 (x9 / drug)))
+
+# ::id 11
+# ::snt against chronic lymphocytic leukemia, non-Hodgkins lymphoma and
+(x8 / and
+	:mod (x6 / organization
+		:name (n / name
+			:op1 "non-Hodgkins"))
+	:op1 (x7 / lymphoma
+		:ARG1 (x4 / disease
+			:name (n1 / name
+				:op1 "leukemia")
+			:mod (x2 / chronic)
+			:mod (x3 / lymphocytic))))
+
+# ::id 12
+# ::snt cutaneous T cell lymphoma.
+(x4 / lymphoma
+	:mod (x1 / cutaneous)
+	:ARG1 (x3 / cell))
+
+# ::id 13
+# ::snt The Scripps doctors concluded that the medicine, called
+(x4 / conclude-01
+	:ARG0 (x3 / doctor
+		:mod (x2 / scripps))
+	:ARG1 (x9 / call-03
+		:ARG0 (x7 / medicine)))
+
+# ::id 14
+# ::snt 2-chlorodeoxyadenosine, or 2-CdA, "may well be the drug of choice
+(x7 / possible
+	:domain (x11 / drug
+		:domain (x3 / or
+			:op1 (x1 / 2-chlorodeoxyadenosine)
+			:op2 (x4 / 2-cda))))
+
+# ::id 15
+# ::snt in the treatment of hairy cell leukemia."
+(x3 / treat-03
+	:ARG1 (x7 / disease
+		:name (n / name
+			:op1 "leukemia")
+		:mod (x5 / hairy)
+		:mod (x6 / cell)))
+
+# ::id 16
+# ::snt The study was directed by Dr. Lawrence D. Piro and published in
+(x10 / and
+	:op1 (x4 / direct-01
+		:ARG1 (x2 / study)
+		:ARG2 (x7 / name
+			:op1 "Lawrence"
+			:op2 "D."
+			:op3 "Piro"))
+	:op2 (x11 / publish-01))
+
+# ::id 17
+# ::snt the New England Journal of Medicine.
+(x4 / journal
+	:null_edge (x2 / null_tag)
+	:poss (x3 / country
+		:name (n / name
+			:op1 "England"))
+	:null_edge (x6 / medicine))
+
+# ::id 18
+# ::snt In their study, doctors gave the drug to 12 patients. Of these,
+(x6 / give-01
+	:ARG0 (x3 / study-01)
+	:ARG0 (x5 / doctor)
+	:ARG1 (x8 / drug)
+	:ARG2 (x11 / patient
+		:quant 12
+		:ARG1-of (x13 / include-91)))
+
+# ::id 19
+# ::snt 11 have remained completely free of all signs of the disease for
+(x3 / remain-01
+	:ARG1 (x1 / person
+		:op 11)
+	:ARG3 (x5 / free-01
+		:degree (x4 / complete)
+		:ARG2 (x8 / sign
+			:quant (x7 / all)
+			:ARG1 (x11 / disease))))
+
+# ::id 20
+# ::snt periods up to four years.
+(x1 / period
+	:duration (x5 / temporal-quantity
+		:unit (y / year)))
+
+# ::id 21
+# ::snt The doctors cautioned that longer follow-up will be necessary
+(x3 / caution-01
+	:ARG0 (x2 / doctor)
+	:ARG1 (x6 / follow-up))
+
+# ::id 22
+# ::snt before they can be sure they have actually cured the disease.
+(x9 / cure-01
+	:time (x1 / before
+		:op1 (x3 / possible
+			:domain (x5 / sure)))
+	:mod (x8 / actual)
+	:ARG1 (x11 / disease))
+
+# ::id 23
+# ::snt Two other treatments for hairy cell leukemia have been developed
+(x10 / develop-02
+	:ARG1 (x3 / treat-03
+		:quant 2
+		:mod (x2 / other)
+		:purpose (x7 / disease
+			:name (n / name
+				:op1 "leukemia")
+			:mod (x5 / hairy)
+			:mod (x6 / cell))))
+
+# ::id 24
+# ::snt in recent years. They are interferon and deoxycoformycin, a drug
+(x8 / and
+	:op1 (x7 / interferon
+		:duration (x3 / temporal-quantity
+			:unit (y / year)
+			:mod (x2 / recent))
+		:domain (x5 / they))
+	:op2 (x9 / deoxycoformycin))
+
+# ::id 25
+# ::snt that is similar to 2-CdA. However, interferon is less effective,
+(x3 / resemble-01
+	:op (s / similar)
+	:ARG1 (x1 / that)
+	:ARG2 (x5 / 2-cda)
+	:null_edge (x12 / effective
+		:domain (x9 / interferon)
+		:degree (x11 / less)))
+
+# ::id 26
+# ::snt and both of those treatments produce serious side effects.
+(x1 / and
+	:op1 (x6 / produce-01
+		:ARG1 (x5 / treat-03)
+		:ARG1 (x9 / effect-01
+			:mod (x7 / serious)
+			:mod (x8 / side))))
+
+# ::id 27
+# ::snt By contrast, the only unwanted effect of 2-CdA was a few days of
+(x7 / effect-01
+	:beneficiary (x2 / contrast-01)
+	:mod (x5 / only)
+	:mod (x6 / unwanted)
+	:ARG1 (x9 / 2-cda)
+	:ARG1 (x12 / few
+		:op1 (x13 / temporal-quantity
+			:unit (d / day)
+			:ARG1-of (x14 / include-91))))
+
+# ::id 28
+# ::snt fever. Patients experienced no nausea, hair loss, rashes or other
+(x4 / experience-01
+	:ARG0 (x3 / patients
+		:null_edge (x1 / fever))
+	:ARG1 (x12 / or
+		:op1 (x6 / nausea
+			:polarity -
+			:mod (x13 / other))
+		:op2 (x9 / loss
+			:ARG1 (x8 / hair))
+		:op2 (x11 / rash)))
+
+# ::id 29
+# ::snt symptoms typical of cancer therapy. Also unlike other treatments,
+(x1 / symptom
+	:mod (x2 / typify-01
+		:domain (x5 / therapy
+			:mod (x4 / cancer)
+			:ARG3-of (x10 / treat-03
+				:mod (x9 / other)))))
+
+# ::id 30
+# ::snt this one appears to work after a single seven-day course of therapy.
+(x3 / appear-02
+	:ARG1 (x2 / one
+		:mod (x1 / this))
+	:ARG1 (x5 / work-01
+		:ARG0 x2
+		:time (x6 / after
+			:op1 (x10 / course-01
+				:ARG1 (x12 / therapy)))))
+
+# ::id 31
+# ::snt The Scripps Clinic reached an agreement recently with Johnson &
+(x4 / reach-01
+	:ARG0 (x3 / clinic
+		:mod (x2 / scripps))
+	:ARG1 (x6 / agree-01)
+	:time (x7 / recent)
+	:accompanier (x9 / name
+		:op1 "Johnson"
+		:op2 "&"))
+
+# ::id 32
+# ::snt Johnson's Ortho Pharmaceuticals to produce the drug, which is not
+(x6 / produce-01
+	:ARG0 (x4 / organization
+		:name (n / name
+			:op1 "Pharmaceuticals")
+		:null_edge (x1 / person
+			:name (n1 / name
+				:op1 "Johnson"))
+		:null_edge (x3 / organization
+			:name (n2 / name
+				:op1 "Ortho")))
+	:ARG1 (x8 / drug))
+
+# ::id 33
+# ::snt yet approved for routine use.
+(x2 / approve-01
+	:ARG1 (x5 / use-01
+		:mod (x4 / routine)))
+

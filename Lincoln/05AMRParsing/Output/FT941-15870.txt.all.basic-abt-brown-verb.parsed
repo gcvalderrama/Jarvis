@@ -1,0 +1,790 @@
+# ::id 1
+# ::snt While President Bill Clinton has been quaffing Pilsner with Czech President Vaclav Havel in Europe, controversy over the job Mr Clinton investments in Arkansas in the 1980s has continued to ferment, threatening to damage the job Mr Clinton credit with the US public
+(x30 / continue-01
+	:condition (x7 / quaff
+		:ARG0 (x4 / person
+			:name (n / name
+				:op1 "Clinton")
+			:null_edge (x2 / have-org-role-91
+				:ARG2 (p / president))
+			:null_edge (x3 / person
+				:name (n1 / name
+					:op1 "Bill")))
+		:ARG1 (x8 / pilsner)
+		:name (x12 / name
+			:op1 "Vaclav"
+			:op2 "Havel"
+			:ARG0-of (x11 / have-org-role-91
+				:ARG2 (p1 / president)
+				:ARG1 (x10 / country
+					:name (n5 / name
+						:op1 "Czech")))
+			:location (x15 / continent
+				:name (n2 / name
+					:op1 "Europe"))))
+	:ARG1 (x17 / controversy
+		:ARG1-of (x23 / invest-01
+			:ARG0 (x20 / job)
+			:ARG0 (x22 / person
+				:name (n3 / name
+					:op1 "Clinton"))
+			:location (x25 / country
+				:name (n4 / name
+					:op1 "Arkansas"))
+			:time (xap0 / date-entity
+				:time (x28 / date-entity))))
+	:ARG1 (x32 / ferment-01)
+	:ARG1 (x34 / threaten-01
+		:ARG1 (x36 / damage-01
+			:ARG1 (x41 / credit
+				:ARG0 (x38 / job)
+				:mod (x40 / person
+					:name (n6 / name
+						:op1 "Clinton"))
+				:ARG1 (x45 / public
+					:mod (x44 / country
+						:name (n7 / name
+							:op1 "US")))))))
+
+# ::id 2
+# ::snt The controversy is over whether a bankrupt Arkansas savings and loan organisation used Arkansas in the 1980s funds to prop up Mr and Mrs Clinton's investments in an Ozark mountain property venture known as Whitewater or to pay Mr Clinton's campaign debts from Mr 1984 race for the state governorship
+(x2 / controversy
+	:ARG1-of (x13 / use-01
+		:ARG1 (x10 / and
+			:op1 (x9 / savings
+				:ARG1-of (x7 / bankrupt-01)
+				:mod (x8 / organization
+					:name (n1 / name
+						:op1 "Arkansas")))
+			:op2 (x11 / loan-01
+				:ARG2 x8))
+		:ARG1 (x14 / government-organization
+			:name (n / name
+				:op1 "Arkansas"))
+		:ARG0 (x37 / or
+			:op1 (x20 / prop-01
+				:ARG1 (x18 / fund
+					:condition (x33 / venture
+						:mod (x30 / country
+							:name (n3 / name
+								:op1 "Ozark"))
+						:mod (x31 / mountain)
+						:mod (x32 / property)
+						:ARG1-of (x34 / know-01
+							:ARG2 (x36 / whitewater)))))
+			:op2 (x23 / and
+				:op1 (x27 / invest-01
+					:name (x24 / name
+						:op1 "Mrs"
+						:op2 "Clinton")))
+			:op2 (x39 / pay-01
+				:ARG1 x18
+				:ARG3 (x44 / debt
+					:poss (x41 / person
+						:name (n2 / name
+							:op1 "Clinton"))
+					:mod (x43 / campaign-01))
+				:ARG3 (x48 / race-02
+					:time (x47 / date-entity
+						:year 1984))
+				:ARG2 (x52 / governorship
+					:ARG1 (x51 / state))))
+		:time (xap0 / date-entity
+			:decade 1980)))
+
+# ::id 3
+# ::snt Mr and Mrs Clinton made the Dollars 68,900 investment in 1978, in partnership with Mr James McDougal, owner of Madison Guaranty, an Arkansas savings and loan entity
+(x5 / make-02
+	:null_edge (x2 / and
+		:op1 (x1 / mr)
+		:op2 (x3 / mrs)
+		:op1 (x9 / invest-01))
+	:time (x11 / date-entity
+		:year 1978)
+	:instrument (x14 / partner-01
+		:name (x17 / name
+			:op1 "James"
+			:op2 "McDougal")
+		:ARG1 (x28 / and
+			:op2 (x20 / person
+				:ARG0-of (o / own-01))
+			:op1 (x22 / organization
+				:name (n / name
+					:op1 "Madison"))
+			:op2 (x27 / savings
+				:mod (x26 / country
+					:name (n1 / name
+						:op1 "Arkansas")))
+			:op2 (x29 / loan-01)
+			:op2 (x30 / entitle-01))))
+
+# ::id 4
+# ::snt The Clintons say Mr and Mrs Clinton's lost all Mr and Mrs Clinton's money
+(x3 / say-01
+	:ARG0 (x2 / clintons)
+	:ARG1 (x9 / lose-02
+		:ARG1 (x5 / and
+			:op1 (x4 / mr
+				:name (x6 / name
+					:op1 "Mrs"
+					:op2 "Clinton")))
+		:ARG1 (x12 / and
+			:quant (x10 / all)
+			:op1 (x11 / mr)
+			:op2 (x13 / mrs))
+		:ARG1 (x16 / money)))
+
+# ::id 5
+# ::snt Republican critics want an investigation of whether Mr Clinton as governor intervened to delay the shutdown of Madison, which failed in 1989 at a cost to taxpayers of around Dollars 50m
+(x3 / want-01
+	:ARG0 (x2 / person
+		:ARG0-of (c / criticize-01)
+		:null_edge "Republican")
+	:ARG1 (x5 / investigate-01
+		:ARG1 (x12 / intervene-01
+			:ARG0 (x9 / person
+				:name (n / name
+					:op1 "Clinton")
+				:null_edge (x8 / mr)
+				:ARG0-of (x11 / have-org-role-91
+					:ARG2 (g / governor)))
+			:purpose (x14 / delay-01
+				:ARG0 x9
+				:ARG1 (x16 / shutdown
+					:ARG1 (x18 / country
+						:name (n1 / name
+							:op1 "Madison")
+						:ARG1-of (x21 / fail-01
+							:time (x23 / date-entity
+								:year 1989)
+							:location (x26 / cost-01
+								:ARG2 (x28 / taxpayer
+									:quant (x30 / around))))))))))
+
+# ::id 6
+# ::snt Republican critics also want to examine suggestions that Madison money was improperly channelled to Whitewater and to Mr Clinton's 1984 campaign fund
+(x4 / want-01
+	:ARG0 (x2 / person
+		:ARG0-of (c / criticize-01)
+		:null_edge "Republican")
+	:mod (x3 / also)
+	:ARG1 (x6 / examine-01
+		:ARG1 (x7 / suggest-01
+			:ARG1 (x13 / channel-01
+				:ARG1 (x10 / money
+					:mod (x9 / person
+						:name (n1 / name
+							:op1 "Madison")))
+				:manner (x12 / improperly)
+				:ARG2 (x15 / whitewater))
+			:ARG1 (x23 / fund
+				:poss (x19 / person
+					:name (n / name
+						:op1 "Clinton"))
+				:time (x21 / date-entity
+					:year 1984)
+				:ARG0 (x22 / campaign-01)))))
+
+# ::id 7
+# ::snt Mr McDougal denies that the Clintons benefited in any way from Mr James McDougal handling of Madison, and notes that Mr James McDougal was acquitted in 1990 of fraud charges brought by a Republican-appointed prosecutor
+(x19 / and
+	:op1 (x3 / deny-01
+		:ARG0 (x2 / person
+			:name (n / name
+				:op1 "McDougal")
+			:null_edge (x1 / mr))
+		:ARG1 (x7 / benefit-01
+			:ARG0 (x6 / organization
+				:name (n1 / name
+					:op1 "Clintons"))
+			:manner (x10 / way
+				:mod (x9 / any))
+			:ARG1 (x15 / handle-01
+				:name (x13 / name
+					:op1 "James"
+					:op2 "McDougal")
+				:ARG0 (x17 / country
+					:name (n2 / name
+						:op1 "Madison")))))
+	:op2 (x20 / note-01
+		:ARG0 x2
+		:ARG1 (x26 / acquit-01
+			:ARG1 (x23 / name
+				:op1 "James"
+				:op2 "McDougal"
+				:ARG0-of (x22 / mr))
+			:time (x28 / date-entity
+				:year 1990)
+			:ARG2 (x31 / charge-05
+				:ARG2 (x30 / defraud-01
+					:op (f / fraud))
+				:ARG1-of (x32 / bring-05
+					:ARG3 (x36 / prosecute-01
+						:mod (x35 / organization
+							:name (n3 / name
+								:op1 "Republican-appointed"))))))))
+
+# ::id 8
+# ::snt Adding to interest in the case, the Clintons ' Whitewater files were handled by Mr Vincent Foster, the deputy White House counsel who committed suicide last year
+(x1 / add-02
+	:ARG1 (x3 / interest-01
+		:ARG2 (x6 / case)
+		:ARG1 (x14 / handle-01
+			:ARG1 (x12 / file
+				:poss (x9 / organization
+					:name (n / name
+						:op1 "Clintons"))
+				:mod (x11 / whitewater))
+			:ARG0 (x17 / name
+				:op1 "Vincent"
+				:op2 "Foster"
+				:ARG0-of (x24 / counsel
+					:mod (x21 / deputy)
+					:mod (x22 / white)
+					:ARG1 (x23 / government-organization
+						:name (n1 / name
+							:op1 "House"))
+					:ARG1-of (x26 / commit-01
+						:ARG1 (x27 / suicide)
+						:time (x29 / year
+							:mod (x28 / last))))))))
+
+# ::id 9
+# ::snt Despite the intense Republican pressure, neither the Whitewater controversy nor allegations last month by two Arkansas state troopers about Mr Clinton's sex life as governor appear to have damaged his popularity
+(x28 / appear-02
+	:ARG1 (x10 / controversy
+		:ARG1 (x5 / pressure-01
+			:mod (x3 / intense)
+			:ARG0 "Republican")
+		:mod (x9 / whitewater)
+		:ARG0 (x12 / allege-01
+			:time (x14 / month
+				:mod (x13 / last))
+			:ARG0 (x19 / trooper
+				:quant 2
+				:mod (x17 / country
+					:name (n / name
+						:op1 "Arkansas"))
+				:mod (x18 / state)
+				:ARG1 (x25 / life
+					:poss (x22 / person
+						:name (n1 / name
+							:op1 "Clinton"))
+					:mod (x24 / sex)
+					:ARG0-of (x27 / have-org-role-91
+						:ARG2 (g / governor))))))
+	:ARG1 (x31 / damage-01
+		:ARG1 (x33 / popularity)))
+
+# ::id 10
+# ::snt A Washington Post-ABC poll published yesterday showed that 59 per cent of those questioned approved of the job Mr Clinton is doing as president, with 36 per cent disapproving - a rather better rating than the same survey's finding in December, before both sets of allegations boiled over
+(x7 / show-01
+	:ARG0 (x4 / poll-01
+		:ARG0 (x2 / city
+			:name (n / name
+				:op1 "Washington"))
+		:ARG2 (x3 / post-abc)
+		:ARG1-of (x5 / publish-01
+			:time (x6 / yesterday)))
+	:ARG1 (x15 / approve-01
+		:ARG1-of (x14 / question-01)
+		:ARG0 (x18 / job)
+		:ARG0 (x20 / person
+			:name (n1 / name
+				:op1 "Clinton")
+			:ARG0-of (x19 / mr))
+		:condition (x29 / monetary-quantity
+			:unit (c / cent)
+			:null_edge (x24 / have-org-role-91
+				:ARG2 (p / president)
+				:quant 59
+				:time (x45 / before
+					:op1 (x50 / boil
+						:ARG1 (x47 / set
+							:mod (x46 / both)
+							:consist-of (x49 / thing
+								:ARG1-of (a / allege-01))))))
+			:quant 36
+			:mod (x30 / disapprove-01
+				:ARG1 (x35 / rate-01
+					:mod (x34 / good)
+					:medium (x39 / survey-01
+						:ARG1-of (x38 / same-41)
+						:ARG1-of (x41 / find-01
+							:time (x43 / date-entity))))))))
+
+# ::id 11
+# ::snt Another poll published by USA Today and CNN showed Mr Clinton's approval rating holding steady at 54 per cent, and 72 per cent said Whitewater had had no effect on their opinion
+(x22 / and
+	:op1 (x9 / show-01
+		:ARG0 (x2 / poll-01
+			:mod (x1 / another)
+			:ARG1-of (x3 / publish-01
+				:ARG0 (x7 / and
+					:op1 (x6 / organization
+						:name (n1 / name
+							:op1 "Today")
+						:mod (x5 / country
+							:name (n3 / name
+								:op1 "USA")))
+					:op2 (x8 / publication
+						:name (n2 / name
+							:op1 "CNN")))))
+		:ARG1 (x14 / rate-01
+			:ARG0 (x11 / person
+				:name (n / name
+					:op1 "Clinton"))
+			:mod (x13 / approve-01))
+		:ARG1 (x15 / hold-04
+			:ARG2 (x16 / steady)
+			:ARG3 (x20 / monetary-quantity
+				:unit (c1 / cent))))
+	:op2 (x26 / say-01
+		:ARG3 (x25 / monetary-quantity
+			:unit (c / cent)
+			:quant (x23 / 72))
+		:ARG1 (x29 / person
+			:ARG0-of (h / have-org-role-91)
+			:ARG1 (x31 / effect-01
+				:ARG0 (x27 / whitewater)
+				:polarity -
+				:ARG1 (x34 / opine-01)))))
+
+# ::id 12
+# ::snt Nevertheless, White House advisers fear a steady erosion of Mr Clinton's credibility, with both polls showing a decline in the number of people believing in the job Mr Clinton honesty and integrity
+(x6 / fear-01
+	:ARG0 (x5 / have-org-role-91
+		:ARG2 (p / person
+			:ARG0-of (a / advise-01))
+		:ARG1 (x4 / government-organization
+			:name (n / name
+				:op1 "House")
+			:mod (x3 / white)))
+	:ARG1 (x9 / erosion
+		:mod (x8 / steady)
+		:ARG1 (x14 / credibility
+			:poss (x12 / person
+				:name (n1 / name
+					:op1 "Clinton"))))
+	:ARG1 (x19 / show-01
+		:ARG0 (x18 / poll-01
+			:mod (x17 / both))
+		:ARG1 (x21 / decline-01
+			:ARG1 (x24 / number)
+			:ARG1-of (x27 / believe-01
+				:ARG1 (x34 / and
+					:op1 (x33 / honesty
+						:ARG1 (x30 / job)
+						:mod (x31 / mr)
+						:mod (x32 / person
+							:name (n2 / name
+								:op1 "Clinton")))
+					:op2 (x35 / integrity))))))
+
+# ::id 13
+# ::snt The White House strategy for dealing with the Whitewater charges, which were also raised during the 1992 presidential election campaign, had been to stonewall
+(x26 / stonewall
+	:ARG1 (x6 / deal-01
+		:ARG1 (x4 / strategy
+			:mod (x3 / government-organization
+				:name (n / name
+					:op1 "House")
+				:mod (x2 / white))
+			:ARG1-of (x15 / raise-02
+				:mod (x14 / also)
+				:time (x21 / campaign-01
+					:time (x18 / date-entity
+						:year 1992)
+					:ARG1 (x20 / elect-01)
+					:ARG0 (xap0 / person
+						:ARG0-of (x19 / have-org-role-91
+							:ARG2 (p / president))))))
+		:ARG1 (x10 / charge-05
+			:ARG2 (x9 / whitewater))))
+
+# ::id 14
+# ::snt 
+(x31 / do-02
+	:condition (x4 / put-02
+		:ARG0 (x3 / person
+			:name (n1 / name
+				:op1 "Clinton")
+			:null_edge (x2 / mr))
+		:ARG1 (x8 / strategy
+			:mod (x6 / white)
+			:mod (x7 / government-organization
+				:name (n2 / name
+					:op1 "House"))
+			:instrument-of (x10 / deal-01
+				:ARG1 (x14 / charge-05
+					:ARG2 (x13 / whitewater)
+					:location-of (x19 / raise-02
+						:mod (x18 / also)
+						:time (x25 / campaign-01
+							:time (x22 / date-entity
+								:year 1992)
+							:ARG1 (x24 / elect-01)
+							:ARG0 (xap0 / person
+								:ARG0-of (x23 / have-org-role-91
+									:ARG2 (p / president)))))))))
+	:ARG0 (x28 / country
+		:name (n / name
+			:op1 "US"))
+	:ARG1 (x32 / anything
+		:mod (x33 / wrong-41)))
+
+# ::id 15
+# ::snt US made an investment and lost money
+(x5 / and
+	:op1 (x2 / make-02)
+	:op2 (x4 / invest-01
+		:ARG0 (x1 / country
+			:name (n / name
+				:op1 "US")))
+	:op2 (x6 / lose-02
+		:ARG1 (x7 / money)))
+
+# ::id 16
+# ::snt US then spent more money to document that we 'd lost money
+(x3 / spend-02
+	:ARG0 (x1 / country
+		:name (n / name
+			:op1 "US"))
+	:time (x2 / then)
+	:ARG1 (x7 / document-01
+		:ARG1 (x5 / money
+			:mod (x4 / more))
+		:ARG1-of (x11 / lose-02
+			:ARG0 (x9 / we)
+			:ARG1 (x12 / money))))
+
+# ::id 17
+# ::snt All the federal investigators in the world that have looked into this, not a single soul has alleged that US 've done anything wrong .
+(x19 / allege-01
+	:ARG0 (x4 / person
+		:ARG0-of (i / investigate-01)
+		:quant (x1 / all)
+		:mod (x3 / government-organization
+			:name (n / name
+				:op1 "federal"))
+		:location (x7 / world)
+		:ARG1-of (x10 / look-02
+			:ARG1 (x12 / this)))
+	:ARG0 (x17 / soul
+		:mod (x16 / single))
+	:ARG1 (x23 / do-02
+		:ARG0 (x21 / country
+			:name (n1 / name
+				:op1 "US"))
+		:ARG1 (x24 / anything
+			:mod (x25 / wrong-41))))
+
+# ::id 18
+# ::snt The White House and attorney-general Janet Reno had tried to deflect calls for the appointment of a special counsel to investigate the matter, arguing that anyone she named would be viewed as no more independent from her than the career justice department official now in charge of the investigation
+(x9 / try-01
+	:ARG0 (x4 / and
+		:op2 (x2 / white)
+		:op1 (x3 / government-organization
+			:name (n / name
+				:op1 "House"))
+		:op2 (x6 / name
+			:op1 "Janet"
+			:op2 "Reno"
+			:ARG0-of (x5 / attorney-general)))
+	:ARG1 (x11 / deflect-01
+		:ARG1 (x12 / call
+			:ARG1 (x15 / appoint-01
+				:ARG1 (x19 / counsel
+					:mod (x18 / special)
+					:ARG1 (x21 / investigate-01)))
+			:ARG1-of (x25 / argue-01
+				:ARG1 (x32 / view-02
+					:ARG1 (x27 / anyone
+						:ARG0-of (x29 / name-01))
+					:ARG2 (xap0 / person
+						:ARG0-of (x44 / have-org-role-91
+							:ARG2 (o / official)
+							:polarity -
+							:ARG0-of (x36 / depend-01
+								:polarity -
+								:degree (x35 / more
+									:compared-to (x42 / justice
+										:mod (x41 / career))))
+							:null_edge (x43 / null_tag)
+							:time (x45 / now)
+							:ARG1 (x47 / charge-05
+								:ARG1 (x50 / investigate-01)))))))))
+
+# ::id 19
+# ::snt But the move became inevitable after nine Democratic senators joined a chorus of Republicans in urging the president to ask for a special counsel
+(x1 / contrast-01
+	:ARG2 (x4 / become-01
+		:ARG1 (x3 / move-02)
+		:time (x6 / after
+			:op1 (x10 / join-01
+				:ARG0 (x9 / senator
+					:null_edge 9
+					:null_edge (x8 / null_tag))
+				:purpose (x16 / urge-01
+					:ARG1 (x18 / have-org-role-91
+						:ARG2 (p / president))
+					:ARG2 (x20 / ask-01
+						:ARG2 (x24 / counsel
+							:mod (x23 / special))))
+				:ARG1 (xap0 / person
+					:ARG0-of (x14 / have-org-role-91
+						:ARG1 (p1 / political-party
+							:name (n / name
+								:op1 "Republicans"))))))))
+
+# ::id 20
+# ::snt Mr Clinton said in a television interview in Prague that the job Mr Clinton had given all the information the job Mr Clinton had to the Justice Department, but ` then people said ` Well, that's not enough ' ... So US think we have to evaluate that and see where we are .
+(x30 / contrast-01
+	:ARG1 (x3 / say-01
+		:ARG0 (x2 / person
+			:name (n / name
+				:op1 "Clinton")
+			:null_edge (x1 / mr))
+		:time (x7 / interview-01
+			:mod (x6 / television))
+		:location (x9 / country
+			:name (n1 / name
+				:op1 "Prague"))
+		:ARG1 (x16 / give-01
+			:ARG0 (x14 / person
+				:name (n2 / name
+					:op1 "Clinton")
+				:null_edge (x13 / mr
+					:ARG1 (x12 / job)))
+			:ARG1 (x19 / information
+				:quant (x17 / all))
+			:ARG1 (x21 / job
+				:ARG1-of (x24 / have-03
+					:ARG0 (x23 / person
+						:name (n4 / name
+							:op1 "Clinton")
+						:null_edge (x22 / mr))
+					:null_edge (x25 / null_tag
+						:null_edge (x28 / null_tag
+							:null_edge (x27 / null_tag)))))))
+	:ARG2 (x34 / say-01
+		:mod (x36 / well)
+		:ARG1 (x41 / enough
+			:null_edge (x46 / think-01
+				:ARG0 (x45 / country
+					:name (n3 / name
+						:op1 "US"))
+				:ARG1 (x52 / and
+					:op1 (x50 / evaluate-01
+						:ARG0 (x47 / we))
+					:op2 (x53 / see-01
+						:ARG0 (x55 / we)))))))
+
+# ::id 21
+# ::snt Besides reccommending that the job Mr Clinton ask Ms Reno to appoint an independent counsel some White House officials are understood to be urging Mr Clinton to make public all the documents the job Mr Clinton has handed over to the justice department
+(x2 / reccommend
+	:ARG1 (x8 / ask-02
+		:ARG0 (x7 / person
+			:name (n / name
+				:op1 "Clinton")
+			:null_edge (x6 / mr
+				:mod (x5 / job)))
+		:ARG2 (x10 / person
+			:name (n1 / name
+				:op1 "Reno")
+			:null_edge (x9 / ms))
+		:ARG1 (x12 / appoint-01
+			:ARG0 x10
+			:ARG1 (x15 / counsel
+				:ARG0-of (x14 / depend-01
+					:polarity -)
+				:ARG1-of (x21 / understand-01
+					:ARG1 (x24 / urge-01
+						:ARG1 (x26 / person
+							:name (n2 / name
+								:op1 "Clinton"))
+						:ARG2 (x28 / make-01
+							:ARG0 x26
+							:ARG1 (x32 / document
+								:mod (x29 / public)
+								:quant (x30 / all))
+							:ARG1 (x34 / job
+								:ARG1-of (x38 / hand
+									:ARG0 (x36 / person
+										:name (n4 / name
+											:op1 "Clinton")
+										:null_edge (x35 / mr))
+									:ARG2 (x43 / department
+										:mod (x42 / justice))))))
+					:ARG1 (xap0 / person
+						:ARG1 (x18 / government-organization
+							:name (n3 / name
+								:op1 "House"))
+						:ARG0-of (xap1 / person
+							:quant (x16 / some)
+							:ARG0-of (x19 / have-org-role-91
+								:ARG2 (o / official)
+								:ARG1 (x17 / white)))))))))
+
+# ::id 22
+# ::snt Because some White House officials were the object of a subpoena, the documents are currently secret
+(x17 / secret
+	:null_edge (x1 / cause-01
+		:ARG0 (x8 / object
+			:ARG1 (x11 / subpoena)
+			:ARG0 (xap0 / person
+				:quant (x2 / some)
+				:ARG0-of (x5 / have-org-role-91
+					:ARG2 (o / official)
+					:ARG1 (x3 / white)
+					:ARG1 (x4 / government-organization
+						:name (n / name
+							:op1 "House"))))))
+	:domain (x14 / document)
+	:time (x16 / current))
+
+# ::id 23
+# ::snt Ms Reno would have to name the counsel Ms Reno, since the law passed in the wake of the Watergate scandal 20 years ago providing for a special counsel to be named by a judicial panel lapsed last year
+(x6 / name-01
+	:ARG0 (x2 / person
+		:name (n / name
+			:op1 "Reno")
+		:null_edge (x1 / ms))
+	:ARG1 (x10 / person
+		:name (n1 / name
+			:op1 "Reno")
+		:null_edge (x9 / ms
+			:mod (x8 / counsel)))
+	:time (x12 / since
+		:op1 (x15 / pass-01
+			:ARG0 (x14 / law)
+			:time (x18 / wake
+				:op1 (x22 / scandal
+					:mod (x21 / country
+						:name (n2 / name
+							:op1 "Watergate"))))
+			:time (x24 / temporal-quantity
+				:unit (y / year)
+				:null_edge (x23 / null_tag))
+			:ARG1 (x26 / provide-01
+				:ARG2 (x30 / counsel
+					:mod (x29 / special)
+					:ARG1-of (x33 / name-01
+						:ARG0 (x37 / panel
+							:ARG1-of (x38 / lapse
+								:time (x40 / year
+									:mod (x39 / last))))))))))
+
+# ::id 24
+# ::snt Whatever Mr Clinton does, the job Mr Clinton can scarcely win
+(x10 / possible
+	:domain (x12 / win-01
+		:null_edge (x4 / do-02
+			:ARG1 (x1 / whatever)
+			:ARG0 (x3 / person
+				:name (n1 / name
+					:op1 "Clinton")
+				:null_edge (x2 / mr)))
+		:ARG0 (x9 / person
+			:name (n / name
+				:op1 "Clinton")
+			:null_edge (x8 / mr
+				:ARG1 (x7 / job)))
+		:manner (x11 / scarcely-more-than)))
+
+# ::id 25
+# ::snt Keeping the Whitewater documents sealed fuels his political enemies and feeds speculation that the job Mr Clinton might have something to hide
+(x1 / keep-02
+	:ARG1 (x4 / document
+		:mod (x3 / whitewater)
+		:ARG1-of (x5 / military
+			:name (n / name
+				:op1 "sealed")
+			:ARG1 (x10 / and
+				:op1 (x6 / fuel-01
+					:ARG1 (x9 / enemy
+						:mod (x8 / politics)))
+				:op2 (x11 / feed-02
+					:ARG1 (x12 / speculate-01
+						:ARG1 (x19 / have-03
+							:ARG0 (x17 / person
+								:name (n1 / name
+									:op1 "Clinton")
+								:null_edge (x16 / mr
+									:mod (x15 / job)))
+							:ARG1 (x20 / something
+								:mod (x22 / hide-01)))))))))
+
+# ::id 26
+# ::snt Publishing his political enemies will just create a flurry of further news reports
+(x7 / create-01
+	:ARG0 (x1 / publish-01
+		:ARG1 (x4 / enemy
+			:mod (x3 / politics)))
+	:mod (x6 / just)
+	:ARG1 (x13 / report-01
+		:mod (x9 / flurry)
+		:degree (x11 / further)
+		:mod (x12 / news)))
+
+# ::id 27
+# ::snt But with senior members of the job Mr Clinton own party, such as Senators Pat Moynihan and Bill Bradley, urging the job Mr Clinton to ask for a special counsel, Mr Clinton can no longer complain that the furore is just partisan politics - an argument that has carried less weight all along because the Republican attack has been led by the eminently moderate Congressman Jim Leach of Iowa, rather than the party's more rabid tub-thumpers
+(x1 / contrast-01
+	:ARG2 (x22 / urge-01
+		:ARG2 (x4 / have-org-role-91
+			:ARG2 (m / member)
+			:mod (x3 / senior)
+			:null_edge (x9 / person
+				:name (n1 / name
+					:op1 "Clinton")
+				:ARG0-of (x7 / job))
+			:example (x18 / and
+				:op1 (x16 / name
+					:op1 "Pat"
+					:op2 "Moynihan"
+					:null_edge (x15 / null_tag))
+				:op2 (x19 / name
+					:op1 "Bill"
+					:op2 "Bradley")))
+		:ARG2 (x24 / job)
+		:ARG2 (x26 / person
+			:name (n / name
+				:op1 "Clinton")
+			:null_edge (x25 / mr))
+		:ARG2 (x28 / ask-01
+			:ARG2 (x32 / counsel
+				:mod (x31 / special))))
+	:ARG2 (x36 / possible
+		:domain (x39 / complain-01
+			:ARG0 (x35 / person
+				:name (n2 / name
+					:op1 "Clinton")
+				:null_edge (x34 / mr))
+			:ARG1 (x46 / politics
+				:domain (x42 / furore)
+				:mod (x44 / just)
+				:mod (x45 / partisan)
+				:ARG1 (x49 / argument
+					:ARG1-of (x52 / carry-01
+						:ARG1 (x54 / weight
+							:quant (x53 / less))
+						:ARG1-of (x57 / cause-01
+							:ARG0 (x63 / lead-02
+								:ARG1 (x60 / attack-01
+									:mod (x59 / political-party
+										:name (n3 / name
+											:op1 "Republican")))
+								:ARG0 (x69 / name
+									:op1 "Jim"
+									:op2 "Leach"
+									:mod (x67 / moderate
+										:mod (x66 / eminently))
+									:ARG0-of (x68 / have-org-role-91
+										:ARG2 (c / congressman))
+									:ARG0-of (x81 / tub-thumper
+										:location (x72 / state
+											:name (n4 / name
+												:op1 "Iowa"))
+										:mod (x80 / rabid
+											:degree (x79 / more))))))))))))
+

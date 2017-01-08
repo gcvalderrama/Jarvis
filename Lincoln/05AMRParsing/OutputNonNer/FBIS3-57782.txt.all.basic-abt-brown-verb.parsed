@@ -1,0 +1,929 @@
+# ::id 1
+# ::snt On 20 January 1993, Bill Clinton swore his oath of
+(x8 / swear-01
+	:time (x2 / date-entity
+		:year 1993)
+	:ARG0 (x6 / newspaper
+		:name (n / name
+			:op1 "Bill"
+			:op2 "Clinton"))
+	:ARG1 (x10 / oath))
+
+# ::id 2
+# ::snt office. One month afterwards, renowned commentators declared
+(x9 / declare-01
+	:time (x5 / afterwards
+		:op1 (x4 / temporal-quantity
+			:unit (m / month)
+			:mod (x1 / office)
+			:quant 1))
+	:ARG0 (x8 / commentator
+		:mod (x7 / renowned)))
+
+# ::id 3
+# ::snt the administration to be a premature birth without any marked
+(x7 / birth-01
+	:mod (x6 / premature)
+	:manner (x9 / any
+		:ARG1-of (x10 / mark-01))
+	:ARG0 (xap0 / government-organization
+		:ARG0-of (x2 / administrate-01)))
+
+# ::id 4
+# ::snt prospects for survival. Already, during the first week, the
+(x1 / prospect
+	:ARG2 (x3 / survive-01)
+	:time (x5 / already)
+	:time (xap0 / begin-01
+		:duration (x10 / temporal-quantity
+			:unit (w / week)
+			:mod (x9 / first))))
+
+# ::id 5
+# ::snt newly installed President had caused a storm with his
+(x5 / cause-01
+	:ARG0 (x3 / have-org-role-91
+		:ARG2 (p / president)
+		:ARG1-of (x2 / install-01))
+	:ARG1 (x7 / storm))
+
+# ::id 6
+# ::snt ill-considered attempt to lift the ban against homosexuals in
+(x2 / attempt-01
+	:ARG1-of (x1 / ill-considered)
+	:ARG1 (x4 / lift-01
+		:ARG1 (x6 / ban-01
+			:ARG1 (x8 / homosexual))))
+
+# ::id 7
+# ::snt the U.S. Army. Then one blow followed after the other:
+(x8 / follow-01
+	:ARG1 (x3 / military
+		:name (n / name
+			:op1 "Army"))
+	:time (x5 / then)
+	:ARG1 (x7 / blow
+		:quant 1)
+	:time (x9 / after
+		:op1 (x11 / other)))
+
+# ::id 8
+# ::snt Candidates for important offices were rejected; strong words on
+(x / xconcept
+	:x (x7 / and
+		:op2 (x6 / reject-01
+			:ARG1 (x1 / candidate
+				:location (x4 / office
+					:mod (x3 / important)))
+			:ARG1 (x9 / word
+				:mod (x8 / strong)))))
+
+# ::id 9
+# ::snt Haiti and Bosnia during the election campaign were not followed
+(x10 / follow-01
+	:ARG1 (x2 / and
+		:op1 (x1 / country
+			:name (n / name
+				:op1 "Haiti"))
+		:op2 (x3 / country
+			:name (n1 / name
+				:op1 "Bosnia")))
+	:time (x7 / campaign-01
+		:ARG1 (x6 / elect-01)))
+
+# ::id 10
+# ::snt by the promised deeds; the new team in the White House was
+(x4 / deed
+	:ARG1-of (x3 / promise-01))
+
+# ::id 11
+# ::snt extremely clumsy. The man, whom almost two-thirds of all
+(x5 / man
+	:mod (x2 / clumsy
+		:degree (x1 / extreme))
+	:ARG0-of (x9 / two-third
+		:mod (x8 / almost)
+		:quant (x11 / all)))
+
+# ::id 12
+# ::snt Americans trusted -- even though only 43 percent had voted for
+(x2 / trust-01
+	:ARG0 (x1 / person
+		:mod (c / country
+			:name (n / name
+				:op1 "Americans")))
+	:null_edge (x10 / vote-01
+		:mod (x4 / even)
+		:mod (x6 / only)
+		:ARG0 (x8 / percentage-entity
+			:value 43)))
+
+# ::id 13
+# ::snt him -- seemed to flounder like a leaking ship.
+(x1 / he
+	:null_edge (x3 / seem-01
+		:ARG1 (x5 / flounder
+			:ARG1 (x9 / ship
+				:ARG1-of (x8 / leak-01)))))
+
+# ::id 14
+# ::snt How times change! Today Bill Clinton is a President who has
+(x10 / have-org-role-91
+	:ARG2 (p / president)
+	:time (x3 / change-01
+		:ARG0 (x2 / time)
+		:ARG0 (x6 / newspaper
+			:name (n / name
+				:op1 "Bill"
+				:op2 "Clinton")
+			:null_edge (x5 / null_tag)))
+	:ARG0 x6
+	:ARG0-of (x12 / have-03))
+
+# ::id 15
+# ::snt managed to achieve the most important thing within 12 months:
+(x1 / manage-01
+	:ARG1 (x3 / achieve-01
+		:ARG1 (x7 / thing
+			:mod (x6 / important
+				:degree (x5 / most)))
+		:time (x8 / within
+			:op1 (x10 / temporal-quantity
+				:unit (m / month)
+				:quant 12))))
+
+# ::id 16
+# ::snt America feels better again. Hardly any other master in the
+(x2 / feel-02
+	:ARG0 (x1 / country
+		:name (n / name
+			:op1 "America"))
+	:ARG1 (x3 / good)
+	:mod (x4 / again)
+	:name (x9 / name
+		:op1 "master"
+		:mod (x6 / hardly)
+		:mod (x7 / any)
+		:mod (x8 / other)))
+
+# ::id 17
+# ::snt 
+(x6 / cause-01
+	:ARG0 (x2 / government-organization
+		:name (n / name
+			:op1 "House")
+		:mod (x1 / white))
+	:time (x3 / after
+		:op1 (x4 / date-entity
+			:year 1945))
+	:ARG1 (x9 / thing
+		:quant (x8 / many))
+	:ARG1 (x11 / move-01))
+
+# ::id 18
+# ::snt many fields as Clinton. In this he is similar to -- and this
+(x2 / field
+	:quant (x1 / many)
+	:mod (x4 / person
+		:name (n / name
+			:op1 "Clinton")
+		:instrument (x13 / and
+			:ARG1-of (x10 / resemble-01
+				:op (s / similar))
+			:op2 (x14 / this))))
+
+# ::id 19
+# ::snt makes conservatives complain -- Ronald Reagan, the great
+(x1 / make-02
+	:ARG1 (x3 / complain-01
+		:ARG0 (x2 / political-party
+			:name (n / name
+				:op1 "conservatives"))
+		:name (x5 / name
+			:op1 "Ronald"
+			:op2 "Reagan"
+			:mod (x9 / great))))
+
+# ::id 20
+# ::snt changer. And even more: He is popular. After Clinton's
+(x3 / and
+	:op1 (x1 / changer
+		:degree (x5 / more
+			:mod (x4 / even))
+		:time (x11 / after
+			:op1 (x12 / person
+				:name (n / name
+					:op1 "Clinton")
+				:ARG0-of (x9 / popular-41
+					:domain (x7 / he))))))
+
+# ::id 21
+# ::snt popularity rates rose and fell like a roller-coaster, they have
+(x4 / and
+	:op1 (x3 / rise-01
+		:ARG1 (x2 / rate
+			:mod (x1 / popularity)))
+	:op2 (x5 / fall-01
+		:concession (x11 / have-03
+			:ARG0 (x8 / roller-coaster))))
+
+# ::id 22
+# ::snt now almost reached the level of 20 January again. About 60
+(x3 / reach-01
+	:time (x1 / now)
+	:ARG1 (x5 / level
+		:mod (x2 / almost)
+		:mod (x9 / again
+			:null_edge (x7 / null_tag)
+			:null_edge 1
+			:quant (x11 / about
+				:op1 60))))
+
+# ::id 23
+# ::snt percent attest that he is doing good work. One-fifth even
+(x1 / percentage-entity
+	:ARG1-of (x2 / attest-01
+		:ARG1 (x8 / work-01
+			:mod (x7 / good)
+			:ARG0 (x10 / person
+				:name (n / name
+					:op1 "One-fifth"))
+			:mod (x11 / even))))
+
+# ::id 24
+# ::snt declare Clinton to be the person they admire most -- far ahead
+(x1 / declare-02
+	:ARG1 (x6 / person
+		:domain (x2 / person
+			:name (n / name
+				:op1 "Clinton"))
+		:ARG0-of (x8 / admire-01
+			:degree (x9 / most))
+		:time (x12 / ahead)))
+
+# ::id 25
+# ::snt of family members or other authorities.
+(x4 / or
+	:op1 (x6 / authority
+		:mod (x5 / other))
+	:op1 (xap0 / person
+		:ARG0-of (x3 / have-org-role-91
+			:ARG2 (m / member)
+			:ARG1 (x2 / family))))
+
+# ::id 26
+# ::snt What are the successes? First of all, there is the economy.
+(x4 / success
+	:quant (x8 / all)
+	:ARG1 (x13 / economy))
+
+# ::id 27
+# ::snt For 1994, a growth rate like the one in 1988 is predicted,
+(x13 / predict-01
+	:time (x2 / date-entity
+		:year 1994)
+	:ARG1 (x6 / rate
+		:mod (x5 / grow-01))
+	:time (x11 / date-entity
+		:year 1988))
+
+# ::id 28
+# ::snt which is better than for a long time. Prices are stable, the
+(x3 / good
+	:compared-to (x12 / stable
+		:duration (x7 / long)
+		:domain (x10 / thing
+			:ARG2-of (p / price-01))))
+
+# ::id 29
+# ::snt people have confidence in their future and spend more money, on
+(x7 / and
+	:op1 (x2 / have-03
+		:ARG1 (x3 / confident-41
+			:time (x6 / future)))
+	:op2 (x8 / spend-01
+		:ARG1 (x10 / money
+			:mod (x9 / more))))
+
+# ::id 30
+# ::snt consumer goods and investments. At Christmas, business
+(x3 / and
+	:op1 (x2 / good
+		:mod (x1 / person
+			:ARG0-of (c / consume-01)))
+	:op2 (x4 / invest-01)
+	:time (x7 / festival
+		:name (n / name
+			:op1 "Christmas")
+		:mod (x9 / business)))
+
+# ::id 31
+# ::snt purchases with credit cards rose by 25 percent -- an unambiguous
+(x5 / rise-01
+	:ARG1 (x1 / purchase-01
+		:ARG1 (x4 / card
+			:instrument-of (x3 / credit-02)))
+	:ARG4 (x8 / percentage-entity
+		:value 25
+		:mod (x11 / unambiguous)))
+
+# ::id 32
+# ::snt sign that the people incur debts, because they are confident
+(x1 / signal-01
+	:ARG1 (x5 / incur-01
+		:ARG1 (x6 / debt)
+		:ARG1-of (x8 / cause-01
+			:ARG0 (x11 / confident-41))))
+
+# ::id 33
+# ::snt that they will be able to pay them. Because confidence is
+(x5 / possible
+	:domain (x7 / pay-01
+		:ARG0 (x2 / they)
+		:ARG0 (x11 / confident-41
+			:ARG1-of (x10 / cause-01))))
+
+# ::id 34
+# ::snt higher and interest rates are still low, more Americans are
+(x7 / low
+	:domain (x4 / rate
+		:ARG1 (x2 / and
+			:op1 (x1 / high)
+			:op2 (x3 / interest)))
+	:mod (x6 / still)
+	:domain (x10 / person
+		:mod (c / country
+			:name (n / name
+				:op1 "Americans"))
+		:null_edge (x9 / more)))
+
+# ::id 35
+# ::snt buying houses and cars. This creates satisfaction and
+(x9 / and
+	:op1 (x7 / create-01
+		:ARG1 (x1 / buy-01
+			:ARG1 (x3 / and
+				:op1 (x2 / house)
+				:op2 (x4 / car)))
+		:ARG0 (x6 / this)
+		:ARG1 (x8 / satisfy-01)))
+
+# ::id 36
+# ::snt stimulates economic development.
+(x1 / stimulate-01
+	:ARG1 (x3 / develop-02
+		:ARG1 (x2 / economy)))
+
+# ::id 37
+# ::snt Critics claim that all this is a success Clinton has been
+(x2 / claim-01
+	:ARG0 (x1 / person
+		:ARG0-of (c / criticize-01))
+	:ARG1 (x8 / succeed-01
+		:domain (x5 / this
+			:quant (x4 / all))
+		:ARG0 (x9 / person
+			:name (n / name
+				:op1 "Clinton"))))
+
+# ::id 38
+# ::snt given for free; the economy would have recovered with or without
+(x / xconcept
+	:x (x4 / and
+		:op1 (x9 / recover-02
+			:ARG3 (x3 / free-01)
+			:ARG0 (x6 / economy)
+			:ARG1 (x11 / or))))
+
+# ::id 39
+# ::snt Clinton. The opposite cannot be proved, but it is a fact that
+(x5 / possible
+	:domain (x8 / prove-01
+		:ARG0 (x1 / person
+			:name (n / name
+				:op1 "Clinton"))
+		:ARG1 (x4 / opposite)
+		:ARG1 (x14 / fact)))
+
+# ::id 40
+# ::snt the economic climate has clearly improved since the narrow vote
+(x6 / improve-01
+	:ARG1 (x3 / climate
+		:mod (x2 / economy))
+	:manner (x5 / clear)
+	:time (x7 / since
+		:op1 (x10 / vote-01
+			:mod (x9 / narrow))))
+
+# ::id 41
+# ::snt in favor of Clinton's budget and has not deteriorated as the
+(x7 / and
+	:op1 (x2 / favor-01
+		:ARG1 (x6 / budget
+			:poss (x4 / person
+				:name (n / name
+					:op1 "Clinton")))
+		:ARG1 (x10 / deteriorate-01)))
+
+# ::id 42
+# ::snt Republicans predicted pessimistically. Another important sign
+(xap1 / multi-sentence
+	:ARG0 (x2 / predict-01
+		:manner (x3 / pessimistically)
+		:ARG0 (xap0 / person
+			:op1 "Republican"))
+	:snt2 (x7 / signal-01
+		:mod (x5 / another)
+		:mod (x6 / important)))
+
+# ::id 43
+# ::snt is that the annual budget deficit will go down. While, in 1992,
+(x8 / go-01
+	:ARG1 (x6 / deficit
+		:mod (x5 / budget))
+	:time (x14 / date-entity
+		:year 1992))
+
+# ::id 44
+# ::snt Bush's economists predicted a deficit of about $300 billion for
+(x4 / predict-01
+	:ARG0 (x3 / economist
+		:poss (x1 / person
+			:name (n / name
+				:op1 "Bush")))
+	:ARG1 (x6 / deficit
+		:quant (x8 / about)))
+
+# ::id 45
+# ::snt 1994, now it seems that the deficit will go down to about $200
+(x5 / seem-01
+	:time (x1 / date-entity
+		:year 1994)
+	:time (x3 / now)
+	:ARG1 (x10 / go-01
+		:ARG1 (x8 / deficit)
+		:ARG1 (x13 / about)))
+
+# ::id 46
+# ::snt billion in 1994. This is due to the recovery of the economy,
+(x7 / due
+	:time (x3 / date-entity
+		:year 1994)
+	:ARG1 (x10 / recover-01
+		:ARG1 (x5 / this)
+		:ARG1 (x13 / economy)))
+
+# ::id 47
+# ::snt but also to Clinton's thrift measures. Bill Clinton does what
+(x11 / do-02
+	:ARG0 (x10 / person
+		:name (n / name
+			:op1 "Clinton")
+		:null_edge (x9 / person
+			:name (n1 / name
+				:op1 "Bill")
+			:mod (x2 / also
+				:ARG2 (x7 / measure
+					:poss (x4 / person
+						:name (n2 / name
+							:op1 "Clinton"))
+					:mod (x6 / thrift))))))
+
+# ::id 48
+# ::snt Reagan and Bush only promised: The deficit really goes down.
+(xap0 / multi-sentence
+	:snt2 (x10 / go-10
+		:ARG1-of (x5 / promise-01
+			:ARG0 (x2 / and
+				:op1 (x1 / person
+					:name (n / name
+						:op1 "Reagan"))
+				:op2 (x3 / person
+					:name (n1 / name
+						:op1 "Bush")))
+			:mod (x4 / only))
+		:ARG0 (x8 / deficit)
+		:mod (x9 / really)))
+
+# ::id 49
+# ::snt The debts and the economy were the most important topics of the
+(x10 / topic
+	:domain (x3 / and
+		:op1 (x2 / debt)
+		:op3 (x5 / economy))
+	:mod (x9 / important
+		:degree (x8 / most))
+	:ARG1-of (x11 / include-91))
+
+# ::id 50
+# ::snt election campaign. Clinton has not disappointed his voters.
+(x2 / campaign-01
+	:ARG1 (x1 / elect-01)
+	:ARG1 (x7 / disappointed
+		:ARG0 (x4 / person
+			:name (n / name
+				:op1 "Clinton"))
+		:ARG1 (x9 / vote-01)))
+
+# ::id 51
+# ::snt This range of topics also includes the North American Free
+(x6 / include-01
+	:ARG2 (x2 / range
+		:mod (x1 / this)
+		:ARG1 (x4 / topic))
+	:mod (x5 / also)
+	:ARG1 (x10 / country
+		:name (n / name
+			:op1 "Free")
+		:null_edge (x8 / null_tag)
+		:null_edge (x9 / country
+			:name (n1 / name
+				:op1 "American"))))
+
+# ::id 52
+# ::snt Trade Agreement, NAFTA, and the world trade agreement GATT.
+(x6 / and
+	:op1 (x2 / agreement
+		:null_edge (x1 / null_tag)
+		:ARG1 (x10 / agree-01
+			:ARG1 (x9 / trade-01
+				:mod (x8 / world))
+			:ARG1 (x11 / organization
+				:name (n1 / name
+					:op1 "GATT"))))
+	:op2 (x4 / treaty
+		:name (n / name
+			:op1 "NAFTA")))
+
+# ::id 53
+# ::snt With great skill, Clinton brought together a coalition of
+(x6 / bring-01
+	:ARG1 (x3 / skill
+		:mod (x2 / great))
+	:ARG0 (x5 / person
+		:name (n / name
+			:op1 "Clinton"))
+	:ARG1 (x9 / coalition))
+
+# ::id 54
+# ::snt Republicans and Democrats, who pushed the controversial NAFTA
+(x2 / and
+	:op1 (xap0 / name
+		:ARG0-of (x1 / have-org-role-91
+			:ARG1 (p / political-party
+				:name (n / name
+					:op1 "Republicans"))
+			:null_edge (x3 / null_tag)
+			:null_edge (x6 / push-01
+				:ARG1 (x9 / treaty
+					:name (n1 / name
+						:op1 "NAFTA")
+					:mod (x8 / controversy))))))
+
+# ::id 55
+# ::snt treaty through Congress. Even though the president had to
+(x1 / treaty
+	:null_edge (x3 / government-organization
+		:name (n / name
+			:op1 "Congress"))
+	:mod (x5 / even)
+	:ARG2 (x8 / have-org-role-91
+		:ARG2 (p / president)))
+
+# ::id 56
+# ::snt primarily struggle against his own party, he turned out to be a
+(x9 / turn-02
+	:ARG2 (x2 / struggle-01
+		:mod (x1 / primary)
+		:ARG2 (x6 / party))
+	:ARG0 (x8 / he))
+
+# ::id 57
+# ::snt politician with leadership power, who enforces principles, if
+(x1 / politician
+	:prep-with (x4 / power
+		:mod (x3 / lead-02))
+	:ARG1-of (x7 / enforce-01
+		:ARG1 (x8 / principle)))
+
+# ::id 58
+# ::snt necessary also against his friends. Regarding the GATT
+(x2 / also
+	:ARG2 (x5 / friend
+		:ARG0-of (x7 / regard-01
+			:ARG1 (x9 / government-organization
+				:name (n / name
+					:op1 "GATT")))))
+
+# ::id 59
+# ::snt conclusion, the Americans under Clinton and chief negotiator
+(x1 / conclude-01
+	:ARG1 (x7 / and
+		:op1 (x6 / person
+			:name (n / name
+				:op1 "Clinton"))
+		:op2 (x9 / negotiate-01
+			:mod (x8 / chief))))
+
+# ::id 60
+# ::snt Kantor also acted skillfully and, in the end, correctly. A
+(x5 / and
+	:op1 (x3 / act-02
+		:ARG0 (x1 / person
+			:name (n / name
+				:op1 "Kantor"))
+		:mod (x2 / also)
+		:manner (x4 / skillfully)
+		:time (x9 / end)
+		:manner (x11 / correct)))
+
+# ::id 61
+# ::snt pleasant side effect of the NAFTA affair was that the charlatan
+(x3 / effect-01
+	:mod (x1 / pleasant)
+	:ARG0 (x2 / side)
+	:ARG1 (x7 / affair
+		:mod (x6 / treaty
+			:name (n / name
+				:op1 "NAFTA")))
+	:ARG0 (x11 / charlatan))
+
+# ::id 62
+# ::snt Ross Perot was deflated -- above all by Al Gore, the most
+(x4 / deflate
+	:ARG1 (x1 / name
+		:op1 "Ross"
+		:op2 "Perot")
+	:location (x6 / above
+		:quant (x7 / all))
+	:ARG0 (x10 / person
+		:name (n / name
+			:op1 "Gore")
+		:null_edge (x9 / null_tag))
+	:degree (x13 / most))
+
+# ::id 63
+# ::snt influential vice president of the recent past.
+(x3 / have-org-role-91
+	:ARG2 (p / president)
+	:mod (x2 / vice
+		:mod (x1 / influence-01))
+	:time (x7 / past
+		:mod (x6 / recent)))
+
+# ::id 64
+# ::snt There are still a number of other things, for instance a new
+(x8 / thing
+	:mod (x3 / still)
+	:quant (x5 / number)
+	:mod (x7 / other)
+	:prep-for (x11 / instance
+		:mod (x13 / new)))
+
+# ::id 65
+# ::snt weapons law, which Bush and Reagan always blocked; a security
+(x / xconcept
+	:x (x10 / and
+		:op1 (x2 / law
+			:topic (x1 / weapon))
+		:op1 (x9 / block-01
+			:ARG0 (x6 / and
+				:op1 (x5 / person
+					:name (n / name
+						:op1 "Bush"))
+				:op2 (x7 / person
+					:name (n1 / name
+						:op1 "Reagan")))
+			:time (x8 / always))
+		:op3 (x12 / security)))
+
+# ::id 66
+# ::snt package, which will bring, among other things, 100,000
+(x1 / package
+	:ARG0-of (x5 / bring-01
+		:ARG1 (x9 / thing
+			:mod (x8 / other))))
+
+# ::id 67
+# ::snt additional policemen to the streets of the cities; a law that
+(x / xconcept
+	:x (x9 / and
+		:op1 (x2 / policeman
+			:mod (x1 / additional)
+			:ARG2 (x5 / street))
+		:op1 (x8 / city)
+		:op2 (x11 / law)))
+
+# ::id 68
+# ::snt permits young people to work their university loans off through
+(x1 / permit-01
+	:mod (x2 / young)
+	:purpose (x5 / work-01
+		:ARG1 (x8 / loan-01
+			:mod (x7 / university))))
+
+# ::id 69
+# ::snt some kind of alternative national service. And the Clintons,
+(x8 / and
+	:mod (x2 / kind
+		:mod (x1 / some))
+	:op2 (x6 / serve-01
+		:mod (x4 / alternative)
+		:mod (x5 / nation)
+		:null_edge (x10 / null_tag)))
+
+# ::id 70
+# ::snt with First Lady Hillary at the head, have started the struggle
+(x10 / start-01
+	:accompanier (x4 / person
+		:name (n / name
+			:op1 "Hillary")
+		:ARG0-of (x3 / lady)
+		:location (x7 / head))
+	:ARG1 (x12 / struggle-01))
+
+# ::id 71
+# ::snt for a general health insurance. If this struggle were to show
+(x9 / struggle-01
+	:purpose (x5 / insure-02
+		:mod (x3 / general)
+		:mod (x4 / health))
+	:mod (x8 / this)
+	:ARG2 (x12 / show-01))
+
+# ::id 72
+# ::snt success in 1994, this could become a piece of reform that can be
+(x / xconcept
+	:x (x6 / possible
+		:domain (x7 / become-01
+			:ARG1 (x1 / success
+				:time (x3 / date-entity
+					:year 1994)))
+		:domain (x9 / piece
+			:domain x1
+			:domain (x5 / this)
+			:ARG2 (x11 / reform-01)))
+	:x (x13 / possible))
+
+# ::id 73
+# ::snt compared only with the introduction of compulsory social
+(x1 / compare-01
+	:mod (x2 / only)
+	:ARG2 (x5 / introduce-02
+		:ARG1 (x8 / society
+			:mod (x7 / compel-01))))
+
+# ::id 74
+# ::snt insurance more than 50 years ago.
+(x1 / insure-02
+	:time (xap0 / before
+		:quant (x5 / temporal-quantity
+			:unit (y / year)
+			:quant (x2 / more-than
+				:null_edge (x4 / null_tag)))))
+
+# ::id 75
+# ::snt And what about foreign policy? Everyone knows the traps in
+(x1 / and
+	:op2 (x8 / know-01
+		:ARG1 (x5 / policy
+			:mod (x4 / foreign))
+		:ARG0 (x7 / everyone)
+		:ARG1 (x10 / person
+			:ARG1-of (t / trap-01))))
+
+# ::id 76
+# ::snt Somalia, Haiti, North Korea, Bosnia, and Russia. Clinton's men
+(x10 / and
+	:op1 (x1 / country
+		:name (n / name
+			:op1 "Somalia"))
+	:op3 (x3 / country
+		:name (n1 / name
+			:op1 "Haiti"))
+	:op2 (x5 / country
+		:name (n2 / name
+			:op1 "North"
+			:op2 "Korea"))
+	:op2 (x8 / country
+		:name (n3 / name
+			:op1 "Bosnia"))
+	:op5 (x11 / country
+		:name (n4 / name
+			:op1 "Russia"))
+	:op1 (x15 / man
+		:mod (x13 / person
+			:name (n5 / name
+				:op1 "Clinton"))))
+
+# ::id 77
+# ::snt sometimes stumbled, also because they were so inexperienced in
+(x2 / stumble
+	:frequency (x1 / sometimes)
+	:mod (x4 / also)
+	:ARG1-of (x5 / cause-01
+		:ARG0 (x9 / experience-01
+			:polarity -)))
+
+# ::id 78
+# ::snt international matters. However, the team is consolidating
+(x9 / consolidate-01
+	:ARG1 (x2 / matter
+		:null_edge (x1 / international))
+	:ARG0 (x7 / team))
+
+# ::id 79
+# ::snt itself. The change in the Pentagon is one sign of that; Strobe
+(xap0 / multi-sentence
+	:ARG1 (x10 / signal-01
+		:ARG0 (x4 / change-01
+			:location (x7 / government-organization
+				:name (n / name
+					:op1 "Pentagon")))
+		:quant 1
+		:ARG1 (x12 / that)))
+
+# ::id 80
+# ::snt Talbott's appointment as Warren Christopher's deputy is another.
+(x10 / another
+	:domain (x3 / appoint-01
+		:ARG0 (x1 / person
+			:name (n / name
+				:op1 "Talbott"))
+		:example (x8 / have-org-role-91
+			:ARG2 (d / deputy)
+			:name (x5 / name
+				:op1 "Warren"
+				:op2 "Christopher"))))
+
+# ::id 81
+# ::snt Europe must get used to the fact that this administration no
+(x4 / use-01
+	:ARG1 (x1 / continent
+		:name (n / name
+			:op1 "Europe"))
+	:ARG1 (x10 / administrate-01
+		:mod (x9 / this))
+	:polarity -)
+
+# ::id 82
+# ::snt longer claims superiority in all issues, that it defines
+(x3 / superiority
+	:mod (x2 / claim-02)
+	:ARG1 (x6 / issue
+		:quant (x5 / all)
+		:ARG1-of (x10 / define-01)))
+
+# ::id 83
+# ::snt national interest more narrowly and is, therefore, more careful
+(x2 / interest-01
+	:mod (x1 / nation)
+	:ARG1 (x5 / and
+		:op1 (x4 / narrowly
+			:degree (x3 / more))
+		:op2 (x11 / careful
+			:ARG1 x2
+			:degree (x10 / more))))
+
+# ::id 84
+# ::snt with interventions -- political and military ones. One must
+(x10 / must
+	:null_edge (x2 / intervene-01
+		:ARG1 (x5 / and
+			:op1 (x4 / politics)
+			:op2 (x6 / military)))
+	:ARG0 (x9 / one))
+
+# ::id 85
+# ::snt never forget: Bill Clinton has been elected because he is
+(x2 / forget-01
+	:ARG1 (x8 / elect-01
+		:ARG1 (x4 / name
+			:op1 "Bill"
+			:op2 "Clinton")
+		:ARG1-of (x9 / cause-01)))
+
+# ::id 86
+# ::snt supposed to reestablish America's trust in itself. This is the
+(x1 / suppose-02
+	:ARG2 (x3 / reestablish
+		:ARG1 (x6 / trust-01
+			:poss (x4 / country
+				:name (n / name
+					:op1 "America"))))
+	:ARG0 (x10 / this))
+
+# ::id 87
+# ::snt yardstick by which the President and his voters measure success
+(x1 / yardstick
+	:ARG1 (x9 / measure-01
+		:purpose (x6 / and
+			:op1 (x5 / have-org-role-91
+				:ARG2 (p / president))
+			:op2 (x8 / vote-01))
+		:ARG1 (x10 / succeed-01)))
+
+# ::id 88
+# ::snt or failure.
+(x1 / or)
+

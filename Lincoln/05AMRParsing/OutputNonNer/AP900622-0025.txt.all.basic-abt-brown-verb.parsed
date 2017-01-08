@@ -1,0 +1,322 @@
+# ::id 1
+# ::snt The earthquake that struck northern Iran brought
+(x4 / strike-01
+	:ARG0 (x2 / earthquake)
+	:time (x7 / bring-01))
+
+# ::id 2
+# ::snt reminders of another quake that devastated Soviet Armenia in 1988.
+(x1 / thing
+	:ARG0-of (r / remind-01)
+	:ARG1 (x4 / quake
+		:mod (x3 / another)
+		:ARG0-of (x6 / devastate-01
+			:ARG1 (x8 / country
+				:name (n / name
+					:op1 "Armenia")
+				:name (xap0 / name
+					:op1 "Soviet"))
+			:time (x10 / date-entity
+				:year 1988))))
+
+# ::id 3
+# ::snt Like Thursday's earthquake in Iran, the Dec. 7, 1988, earthquake
+(x4 / earthquake
+	:time (xap0 / date-entity
+		:weekday (x2 / thursday))
+	:ARG2 (xap1 / magnitude
+		:poss (x14 / earthquake
+			:ARG0 (x6 / country
+				:name (n / name
+					:op1 "Iran"))
+			:time (x9 / event
+				:name (n1 / name
+					:op1 "Dec.")
+				:null_edge (x10 / null_tag)
+				:null_edge (x12 / date-entity
+					:year 1988)))))
+
+# ::id 4
+# ::snt in Armenia killed about 25,000 people. Most died in structures that
+(x9 / die-01
+	:ARG1 (x3 / kill-01
+		:location (x2 / country
+			:name (n / name
+				:op1 "Armenia"))
+		:ARG1 (x4 / about
+			:op1 (x5 / 25,000)))
+	:ARG1 (x8 / most)
+	:ARG1 (x11 / structure))
+
+# ::id 5
+# ::snt collapsed when the quake hit.
+(x1 / collapse-01
+	:time (x5 / hit-01
+		:ARG0 (x4 / quake)))
+
+# ::id 6
+# ::snt "It's very similar to what we had in Armenia," said Russ
+(x14 / say-01
+	:ARG1 (x5 / resemble-01
+		:op (s / similar)
+		:degree (x4 / very)
+		:ARG2 (x9 / have-03
+			:ARG0 (x8 / we)
+			:ARG2 (x11 / country
+				:name (n1 / name
+					:op1 "Armenia"))))
+	:ARG0 (x15 / person
+		:name (n / name
+			:op1 "Russ")))
+
+# ::id 7
+# ::snt Needham, a geophysicist with the U.S. Geological Survey.
+(x1 / country
+	:name (n / name
+		:op1 "Needham")
+	:null_edge (x4 / geophysicist
+		:ARG1 (x9 / survey
+			:null_edge (x7 / country
+				:name (n1 / name
+					:op1 "U.S."))
+			:mod (x8 / geological))))
+
+# ::id 8
+# ::snt The Armenian quake was measured at 6.9 on the Richter scale, but
+(x13 / contrast-01
+	:ARG1 (x5 / measure-01
+		:ARG1 (x3 / quake
+			:mod (x2 / country
+				:name (n / name
+					:op1 "Armenian"))))
+	:ARG2 (x11 / scale
+		:mod (x10 / richter)))
+
+# ::id 9
+# ::snt Thursday's earthquake shook the earth with a magnitude of 7.7
+(x4 / shake-01
+	:ARG0 (x3 / earthquake
+		:time (xap0 / date-entity
+			:weekday (x1 / thursday)))
+	:ARG1 (x6 / planet
+		:name (n / name
+			:op1 "earth"))
+	:ARG1 (x9 / magnitude
+		:null_edge (x11 / 7.7)))
+
+# ::id 10
+# ::snt according to the U.S. Geological Survey.
+(x6 / survey
+	:null_edge (x4 / country
+		:name (n / name
+			:op1 "U.S."))
+	:mod (x5 / geological))
+
+# ::id 11
+# ::snt In the Iranian quake, the casualty count was pushed up by the
+(x10 / push-01
+	:ARG2 (x4 / quake
+		:mod (x3 / country
+			:name (n / name
+				:op1 "Iran")))
+	:ARG1 (x8 / count-01
+		:ARG1 (x7 / casualty)))
+
+# ::id 12
+# ::snt fact that people were indoors and asleep at the time, just after
+(x1 / fact
+	:ARG1 (x6 / and
+		:op1 (x5 / indoors
+			:time (x13 / after
+				:mod (x12 / just)))
+		:op2 (x7 / asleep)))
+
+# ::id 13
+# ::snt midnight. Many of the victims lived in fragile homes built of a
+(x / xconcept
+	:x (x1 / midnight
+		:ARG2 (x3 / many))
+	:x (x4 / include-91
+		:ARG2 (x6 / victim
+			:ARG1-of (x7 / live-01
+				:location (x10 / home
+					:mod (x9 / fragile)
+					:ARG1-of (x11 / build-01))))))
+
+# ::id 14
+# ::snt ceramic-type brick or adobe that collapses easily.
+(x6 / collapse-01
+	:ARG1 (x3 / or
+		:op1 (x2 / brick
+			:mod (x1 / ceramic-type))
+		:op2 (x5 / that
+			:mod (x4 / adobe))))
+
+# ::id 15
+# ::snt In the Armenian quake, a Soviet parliamentary report later
+(x / xconcept
+	:x (x4 / quake
+		:mod (x3 / country
+			:name (n / name
+				:op1 "Armenian")))
+	:x (x9 / report-01
+		:ARG0 (x8 / government-organization
+			:name (n1 / name
+				:op1 "parliamentary"))
+		:time (x10 / late)
+		:ARG0 (xap1 / country
+			:ARG0-of (xap0 / name
+				:op1 "Soviet"))))
+
+# ::id 16
+# ::snt blamed the high number of fatalities on shoddily built buildings.
+(x1 / blame-01
+	:ARG1 (x4 / number
+		:mod (x3 / high)
+		:quant-of (x6 / fatality))
+	:ARG2 (x10 / building
+		:ARG1-of (x9 / build-01
+			:manner (x8 / shoddily))))
+
+# ::id 17
+# ::snt "Most casualties from earthquakes are caused by something
+(x7 / cause-01
+	:ARG1 (x3 / casualty
+		:quant (x2 / most)
+		:source (x5 / earthquake))
+	:ARG0 (x9 / something))
+
+# ::id 18
+# ::snt falling on top of you," said Needham in a telephone interview from
+(x8 / say-01
+	:ARG1 (x1 / fall-01
+		:null_edge (x4 / include-91
+			:ARG2 (x5 / you)))
+	:ARG0 (x9 / person
+		:name (n / name
+			:op1 "Needham"))
+	:time (x13 / interview-01
+		:mod (x12 / telephone)))
+
+# ::id 19
+# ::snt Golden, Colo.
+(x1 / golden
+	:null_edge (x3 / country
+		:name (n / name
+			:op1 "Colo.")))
+
+# ::id 20
+# ::snt The quake struck an area of Iran where most of the buildings are
+(x3 / person
+	:name (n / name
+		:op1 "struck")
+	:ARG0 (x2 / quake)
+	:ARG1 (x5 / area
+		:mod (x7 / country
+			:name (n1 / name
+				:op1 "Iran"))
+		:ARG1-of (xap0 / be-located-at-91
+			:ARG1 (x12 / building
+				:quant (x9 / most)
+				:ARG1-of (x10 / include-91)))))
+
+# ::id 21
+# ::snt built on a flood plain of loosely deposited soil that shifts in an
+(x1 / build-01
+	:ARG1-of (x5 / plain
+		:mod (x4 / flood-01)
+		:ARG1 (x9 / soil
+			:ARG1-of (x8 / deposit-01
+				:manner (x7 / loosely))
+			:ARG0-of (x11 / shift-01
+				:location (x13 / name
+					:op1 "an")))))
+
+# ::id 22
+# ::snt earthquake and allows structures to collapse, Needham said.
+(x9 / say-01
+	:ARG1 (x2 / and
+		:op1 (x1 / earthquake
+			:ARG1 (x4 / structure)
+			:ARG1 (x6 / collapse-01))
+		:op2 (x3 / allow-01))
+	:ARG0 (x8 / organization
+		:name (n / name
+			:op1 "Needham")))
+
+# ::id 23
+# ::snt The 7.7-magnitude quake was the largest ever recorded in that
+(x3 / quake
+	:mod (x2 / 7.7-magnitude)
+	:mod (x6 / large
+		:degree (m / most))
+	:ARG1-of (x8 / record-01
+		:time (x7 / ever)
+		:location (x10 / that)))
+
+# ::id 24
+# ::snt area, where two major plates of the earth's crust meet, he said.
+(x15 / say-01
+	:ARG1 (x1 / area
+		:ARG0-of (x12 / meet-01
+			:ARG0 (x6 / plate
+				:quant 2
+				:mod (x5 / major)
+				:poss (x11 / crust))))
+	:ARG0 (x14 / he))
+
+# ::id 25
+# ::snt "Iran is in a very active seismic region," he said, and that
+(x13 / say-01
+	:location (x9 / region
+		:name (x2 / country
+			:name (n / name
+				:op1 "Iran"))
+		:mod (x7 / active
+			:degree (x6 / very))
+		:mod (x8 / seismic))
+	:ARG1 (x15 / and
+		:op2 (x16 / that)))
+
+# ::id 26
+# ::snt there have been many smaller quakes.
+(x6 / quake
+	:quant (x4 / many)
+	:mod (x5 / small))
+
+# ::id 27
+# ::snt Twelve earthquakes greater than magnitude 7 have occurred in
+(x2 / earthquake
+	:mod (x3 / great
+		:quant 7))
+
+# ::id 28
+# ::snt Iran during the last 30 years, Needham said.
+(x9 / say-01
+	:ARG0 (x1 / country
+		:name (n / name
+			:op1 "Iran"))
+	:time (x6 / year
+		:mod (x4 / last)
+		:null_edge (x5 / null_tag))
+	:ARG0 (x8 / organization
+		:name (n1 / name
+			:op1 "Needham")))
+
+# ::id 29
+# ::snt A quake of magnitude 7 is considered a major earthquake, capable
+(x7 / consider-01
+	:ARG1 (x2 / quake
+		:quant 7)
+	:ARG1 (x12 / capable-41
+		:ARG2 (x10 / earthquake
+			:mod (x9 / major))))
+
+# ::id 30
+# ::snt of widespread, heavy damage in populated areas.
+(x5 / damage-01
+	:mod (x2 / widespread)
+	:mod (x4 / heavy)
+	:location (x8 / area
+		:mod (x7 / populate-01)))
+

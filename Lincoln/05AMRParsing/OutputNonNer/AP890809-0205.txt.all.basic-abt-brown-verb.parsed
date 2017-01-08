@@ -1,0 +1,759 @@
+# ::id 1
+# ::snt Gen. Colin L. Powell, who is expected to be named
+(x2 / name
+	:op1 "Colin"
+	:op2 "L."
+	:op3 "Powell"
+	:ARG0-of (x8 / expect-01
+		:ARG1 (x11 / name-01)))
+
+# ::id 2
+# ::snt the new chairman of the Joint Chiefs of Staff, is described by
+(x12 / describe-01
+	:ARG2 (x3 / have-org-role-91
+		:ARG2 (c / chairman)
+		:ARG1 (xap0 / person
+			:mod (x2 / new)
+			:null_edge (x7 / null_tag
+				:null_edge (x6 / null_tag)
+				:mod (x9 / staff)))))
+
+# ::id 3
+# ::snt colleagues as a "soldier's soldier" who doesn't particularly like
+(x1 / colleague
+	:prep-as (x7 / soldier
+		:ARG0-of (x5 / have-org-role-91
+			:ARG2 (s / soldier))
+		:ARG0-of (x13 / like
+			:mod (x12 / particular))))
+
+# ::id 4
+# ::snt staff jobs.
+(x2 / job
+	:ARG2-of (x1 / person
+		:ARG2-of (s / staff-01)))
+
+# ::id 5
+# ::snt The four-star Army general, who became national security adviser
+(x7 / become-01
+	:ARG1 (x3 / military
+		:name (n / name
+			:op1 "Army"))
+	:ARG2 (x4 / general
+		:mod (x2 / four-star))
+	:ARG2 (x10 / have-org-role-91
+		:ARG2 (p / person
+			:ARG0-of (a / advise-01))
+		:mod (x8 / nation)
+		:ARG2 (x9 / security)))
+
+# ::id 6
+# ::snt in 1987 and heads the U.S. Forces Command at Fort McPherson in
+(x3 / and
+	:time (x2 / date-entity
+		:year 1987)
+	:op3 (x4 / head-01
+		:ARG1 (x8 / command
+			:null_edge (x7 / null_tag)
+			:null_edge (x11 / mcpherson
+				:mod (x10 / fort)))))
+
+# ::id 7
+# ::snt Atlanta, would become the first black to serve as the nation's
+(x9 / serve-01
+	:ARG1 (x4 / become-01
+		:ARG1 (x1 / country
+			:name (n / name
+				:op1 "Atlanta"))
+		:ARG2 (x7 / black
+			:domain x1))
+	:ARG1 (x12 / nation))
+
+# ::id 8
+# ::snt senior military officer.
+(x3 / have-org-role-91
+	:ARG2 (o / officer)
+	:mod (x1 / senior)
+	:ARG1 (x2 / military))
+
+# ::id 9
+# ::snt The 52-year-old son of Jamaican immigrants, Powell was highly
+(x3 / son
+	:mod (x2 / person
+		:name (n / name
+			:op1 "52-year-old"))
+	:ARG1 (x6 / person
+		:ARG0-of (i / immigrate-01)
+		:manner (x5 / organization
+			:name (n2 / name
+				:op1 "Jamaican")))
+	:domain (x8 / person
+		:name (n1 / name
+			:op1 "Powell"))
+	:degree (x10 / high))
+
+# ::id 10
+# ::snt regarded by President Reagan, succeeding Frank C. Carlucci as
+(x1 / regard-01
+	:ARG0 (x4 / person
+		:name (n / name
+			:op1 "Reagan")
+		:ARG0-of (x3 / have-org-role-91
+			:ARG2 (p / president)))
+	:ARG1 (x6 / succeed-02
+		:ARG1 (x7 / name
+			:op1 "Frank"
+			:op2 "C."
+			:op3 "Carlucci")))
+
+# ::id 11
+# ::snt Reagan's national security adviser.
+(x5 / have-org-role-91
+	:ARG2 (p / person
+		:ARG0-of (a / advise-01))
+	:ARG1 (x1 / person
+		:name (n / name
+			:op1 "Reagan"))
+	:ARG2 (x4 / security
+		:mod (x3 / nation)))
+
+# ::id 12
+# ::snt "He was the general who guided preparations for the Gorbachev
+(x5 / general
+	:domain (x2 / he)
+	:ARG1-of (x7 / guide-01
+		:ARG1 (x8 / prepare-02
+			:ARG1 (x11 / person
+				:name (n / name
+					:op1 "Gorbachev")))))
+
+# ::id 13
+# ::snt summits, who helped restructure and give new direction to the
+(x1 / summit
+	:ARG0-of (x4 / help-01
+		:ARG1 (x6 / and
+			:op1 (x5 / restructure-01
+				:ARG1 (x9 / direction
+					:mod (x8 / new)))
+			:op2 (x7 / give-01))))
+
+# ::id 14
+# ::snt National Security Council following the Iran-Contra investigation,
+(x3 / council
+	:null_edge (x1 / null_tag)
+	:null_edge (x2 / null_tag)
+	:ARG1-of (x4 / follow-01
+		:ARG2 (x7 / investigate-01
+			:ARG1 (x6 / iran-contra))))
+
+# ::id 15
+# ::snt and who, by his personal integrity and commitment, has restored
+(x1 / and
+	:op1 (x12 / restore-01
+		:ARG0 (x8 / and
+			:op1 (x7 / integrity
+				:mod (x6 / personal))
+			:op2 (x9 / commit-01))))
+
+# ::id 16
+# ::snt confidence in the National Security Council itself," said White
+(x10 / say-01
+	:ARG1 (x1 / confidence
+		:poss (x6 / council
+			:null_edge (x4 / null_tag)
+			:null_edge (x5 / null_tag)))
+	:ARG0 (x11 / white))
+
+# ::id 17
+# ::snt House spokesman Marlin Fitzwater.
+(x4 / person
+	:name (n / name
+		:op1 "Fitzwater")
+	:ARG0-of (x1 / government-organization
+		:name (n1 / name
+			:op1 "House"))
+	:ARG0-of (x2 / have-org-role-91
+		:ARG2 (s / spokesman)))
+
+# ::id 18
+# ::snt Those qualities were cited by The Washington Post in calling
+(x10 / call-02
+	:ARG1 (x4 / cite-01
+		:ARG1 (x2 / quality)
+		:ARG0 (x8 / post-01
+			:null_edge (x7 / government-organization
+				:name (n / name
+					:op1 "Washington")))))
+
+# ::id 19
+# ::snt Powell the "antidote to Ollie North," the former NSC aide
+(x4 / antidote
+	:ARG0 (x1 / person
+		:name (n / name
+			:op1 "Powell"))
+	:null_edge (x7 / null_tag
+		:null_edge (x6 / person
+			:name (n1 / name
+				:op1 "Ollie"))
+		:null_edge (x13 / have-org-role-91
+			:ARG2 (a / aide)
+			:mod (x11 / former)
+			:ARG2 (x12 / organization
+				:name (n2 / name
+					:op1 "NSC")))))
+
+# ::id 20
+# ::snt convicted in the Iran-Contra scandal.
+(x1 / convict-01
+	:ARG2 (x5 / scandal
+		:mod (x4 / iran-contra)))
+
+# ::id 21
+# ::snt "Colin gets mad at me when I say this, but I think he should go
+(x9 / say-01
+	:ARG1 (x4 / mad
+		:domain (x2 / colin)
+		:null_edge (x14 / think-01
+			:ARG0 x2
+			:ARG0 (x13 / i)
+			:ARG1 (x16 / recommend-01
+				:ARG1 (x17 / go-01))))
+	:ARG0 (x8 / i)
+	:ARG1 (x10 / this))
+
+# ::id 22
+# ::snt to the very top of the military establishment _ up to and including
+(x8 / establish-01
+	:mod (x3 / very)
+	:mod (x7 / military)
+	:ARG1 (x12 / and
+		:op1 (x9 / _)
+		:op2 (x13 / include-01)))
+
+# ::id 23
+# ::snt chairman of the joint chiefs of staff," Carlucci has said.
+(x12 / say-01
+	:ARG0 (x10 / person
+		:name (n / name
+			:op1 "Carlucci")
+		:ARG0-of (x1 / have-org-role-91
+			:ARG2 (c / chairman)
+			:ARG1 (xap0 / person
+				:ARG0-of (x5 / have-org-role-91
+					:ARG2 (c1 / chief)
+					:mod (x4 / joint)
+					:ARG1 (x7 / person
+						:ARG2-of (s / staff-01)))))))
+
+# ::id 24
+# ::snt A senior administration official said in Washington on Wednesday
+(x5 / say-01
+	:location (x7 / city
+		:name (n / name
+			:op1 "Washington"))
+	:time (x9 / wednesday)
+	:ARG0 (xap1 / person
+		:ARG0-of (x4 / have-org-role-91
+			:ARG2 (o / official)
+			:mod (x2 / senior)
+			:ARG1 (xap0 / government-organization
+				:ARG0-of (x3 / administer-01)))))
+
+# ::id 25
+# ::snt that President Bush is expected to name Powell to the position.
+(x5 / expect-01
+	:null_edge (x2 / have-org-role-91
+		:ARG2 (p / president))
+	:ARG1 (x7 / name-01
+		:ARG1 (x8 / person
+			:name (n / name
+				:op1 "Powell"))
+		:ARG2 (x11 / position)))
+
+# ::id 26
+# ::snt Powell took over U.S. Forces Command, or FORSCOM, in April,
+(x2 / take-01
+	:ARG0 (x1 / person
+		:name (n / name
+			:op1 "Powell"))
+	:null_edge (x8 / or
+		:op1 (x6 / command
+			:null_edge (x5 / null_tag))
+		:op2 (x9 / forscom))
+	:time (x12 / date-entity))
+
+# ::id 27
+# ::snt putting him in charge of troop readiness and deployment for the
+(x1 / put-01
+	:ARG2 (x4 / charge-05
+		:ARG2 (x8 / and
+			:op1 (x7 / ready-01
+				:ARG1 (x6 / troop))
+			:op2 (x9 / deploy-01))))
+
+# ::id 28
+# ::snt U.S. Army. In interviews since then, he has emphasized he's proud
+(x11 / emphasize-01
+	:ARG0 (x2 / military
+		:name (n / name
+			:op1 "Army")
+		:null_edge (x5 / interview-01))
+	:time (x6 / since
+		:op1 (x7 / then))
+	:ARG0 (x9 / he)
+	:ARG1 (x14 / proud-41))
+
+# ::id 29
+# ::snt of the accomplishments of the average U.S. soldier over the years.
+(x3 / accomplish-01
+	:poss (x8 / soldier
+		:mod (x6 / average-01)
+		:mod (x7 / country
+			:name (n / name
+				:op1 "U.S."))
+		:mod (x9 / over
+			:op1 (x11 / temporal-quantity
+				:unit (y / year)))))
+
+# ::id 30
+# ::snt In the old days, Powell said, soldiers would keep a pinball
+(x7 / say-01
+	:ARG0 (x6 / person
+		:name (n / name
+			:op1 "Powell"))
+	:ARG1 (x11 / keep-02
+		:duration (x4 / temporal-quantity
+			:unit (d / day)
+			:mod (x3 / old))
+		:ARG0 (x9 / soldier)
+		:ARG1 (x13 / pinball)))
+
+# ::id 31
+# ::snt machine in a corner of their barracks. "Today there's a computer
+(x1 / machine
+	:location (x4 / corner
+		:consist-of (x7 / barracks
+			:time (x10 / today
+				:ARG1 (x14 / computer)))))
+
+# ::id 32
+# ::snt there."
+(x1 / there)
+
+# ::id 33
+# ::snt On personal level, however, Powell doesn't always keep up with
+(x11 / keep-02
+	:ARG4 (x3 / level
+		:mod (x2 / personal))
+	:ARG0 (x7 / person
+		:name (n / name
+			:op1 "Powell"))
+	:time (x10 / always))
+
+# ::id 34
+# ::snt the times. You'd only know the 1972 Chrysler station wagon parked
+(x2 / time
+	:null_edge (x7 / know-01
+		:ARG0 (x4 / you)
+		:mod (x6 / only)
+		:ARG1 (x12 / wagon
+			:time (x9 / date-entity
+				:year 1972)
+			:ARG1-of (x13 / park-01))))
+
+# ::id 35
+# ::snt in the general's space each day was his by reading the four-star
+(x9 / he
+	:location (x5 / space
+		:mod (x3 / general))
+	:null_edge (x11 / read-01
+		:ARG1 (x13 / four-star))
+	:frequency (xap0 / rate-entity-91
+		:ARG2 (x7 / temporal-quantity
+			:unit (d / day))))
+
+# ::id 36
+# ::snt decal on its front.
+(x1 / decal
+	:prep-on (x4 / front))
+
+# ::id 37
+# ::snt Washington colleagues have described Powell as a "soldier's
+(x4 / describe-01
+	:ARG0 (x2 / colleague
+		:location (x1 / city
+			:name (n1 / name
+				:op1 "Washington")))
+	:ARG1 (x5 / person
+		:name (n / name
+			:op1 "Powell"))
+	:ARG2 (x9 / soldier))
+
+# ::id 38
+# ::snt soldier" who doesn't like staff jobs. Carlucci says that Powell
+(x11 / say-01
+	:ARG0 (x10 / person
+		:name (n / name
+			:op1 "Carlucci"))
+	:ARG0 (x13 / person
+		:name (n1 / name
+			:op1 "Powell")
+		:mod (x12 / that))
+	:ARG1 (xap0 / and
+		:snt2 (x1 / soldier)
+		:snt2 (x6 / like-02
+			:ARG1 (x8 / job
+				:mod (x7 / person
+					:ARG2-of (s / staff-01))))))
+
+# ::id 39
+# ::snt has always been reluctant to be a bureaucrat and that Reagan got
+(x4 / reluctant
+	:time (x2 / always)
+	:ARG1 (x9 / and
+		:op1 (x8 / bureaucrat)
+		:op2 (x12 / get-00
+			:ARG0 (x11 / person
+				:name (n / name
+					:op1 "Reagan")))))
+
+# ::id 40
+# ::snt Powell to accept the job of national security adviser after the
+(x3 / accept-01
+	:ARG0 (x1 / person
+		:name (n / name
+			:op1 "Powell"))
+	:ARG1 (x5 / job
+		:poss (x9 / advise-01
+			:ARG2 (x8 / security
+				:mod (x7 / nation))
+			:time (x10 / after))))
+
+# ::id 41
+# ::snt general had turned Carlucci down several times.
+(x3 / turn-01
+	:ARG0 (x1 / general)
+	:ARG1 (x4 / person
+		:name (n / name
+			:op1 "Carlucci"))
+	:frequency (x6 / several))
+
+# ::id 42
+# ::snt In his time off, he tells young blacks to spend their lives
+(x7 / tell-01
+	:ARG0 (x6 / he)
+	:ARG1 (x9 / person
+		:mod (b / black)
+		:mod (x8 / young))
+	:ARG1 (x11 / spend-01
+		:ARG1 (x13 / life)))
+
+# ::id 43
+# ::snt helping to open doors for minorities.
+(x1 / help-01
+	:ARG1 (x3 / open-01
+		:ARG1 (x4 / door)
+		:ARG3 (x6 / minority)))
+
+# ::id 44
+# ::snt "Don't squander the blood, sweat and tears of those who paved
+(x4 / squander-01
+	:ARG1 (x9 / and
+		:op1 (x6 / blood
+			:ARG1-of (x14 / pave-02))
+		:op2 (x8 / sweat)
+		:op2 (x10 / tear)))
+
+# ::id 45
+# ::snt the way for you," he told Clark Atlanta University graduates this
+(x2 / way
+	:beneficiary (x4 / you)
+	:null_edge (x8 / tell-01
+		:ARG0 (x7 / he)
+		:ARG2 (x12 / graduate-01
+			:ARG1 (x9 / organization
+				:name (n / name
+					:op1 "Clark"))
+			:ARG1 (x10 / organization
+				:name (n1 / name
+					:op1 "Atlanta"))
+			:null_edge (x11 / null_tag))
+		:ARG1 (x13 / this)))
+
+# ::id 46
+# ::snt spring. "The greatest danger ... is complacency."
+(x9 / complacency
+	:ARG0 (x6 / danger
+		:mod (x5 / great
+			:degree (m / most)))
+	:time (xap0 / date-entity
+		:season (x1 / spring)))
+
+# ::id 47
+# ::snt He tells of his battles with racial discrimination, recalling
+(x2 / tell-01
+	:ARG0 (x1 / he)
+	:ARG1 (x5 / battle-01
+		:ARG1 (x8 / discriminate-02))
+	:ARG1 (x10 / recall-02))
+
+# ::id 48
+# ::snt the time an Alabama state trooper pulled him over for speeding in
+(x7 / pull-02
+	:ARG1 (x6 / trooper
+		:mod (x4 / country
+			:name (n / name
+				:op1 "Alabama"))
+		:mod (x5 / state))
+	:time (x9 / over)
+	:ARG2 (x11 / speeding))
+
+# ::id 49
+# ::snt the early 1960s. The trooper looked at the car, complete with New
+(x / xconcept
+	:x (x7 / look-02
+		:ARG0 (x6 / trooper)
+		:ARG1 (x10 / car
+			:mod (x12 / complete
+				:time (x13 / with
+					:null_edge (x14 / null_tag)))))
+	:x (xap0 / date-entity
+		:null_edge (x2 / early
+			:null_edge 1960)))
+
+# ::id 50
+# ::snt York plates and an LBJ bumper sticker, and hissed, "Boy, get out
+(x / xconcept
+	:x (x3 / and
+		:op1 (x2 / plate
+			:ARG0 (x1 / york)
+			:domain (x15 / get-01)))
+	:x (x9 / and
+		:op2 (x7 / sticker
+			:ARG0 x1
+			:mod (x6 / bumper
+				:ARG1 (x5 / have-org-role-91
+					:ARG1 (o / organization
+						:name (n / name
+							:op1 "LBJ")))))))
+
+# ::id 51
+# ::snt of here."
+(x2 / here)
+
+# ::id 52
+# ::snt On the job, Powell emphasizes his commitment to obtaining
+(x6 / emphasize-01
+	:ARG1 (x3 / job)
+	:ARG0 (x5 / person
+		:name (n / name
+			:op1 "Powell"))
+	:ARG1 (x8 / commit-01
+		:ARG2 (x10 / obtain-01)))
+
+# ::id 53
+# ::snt resources for his troops, a task he said was top priority when he
+(x9 / say-01
+	:ARG1 (x1 / resource
+		:poss (x4 / troop))
+	:ARG1 (x12 / priority
+		:mod (x11 / top)))
+
+# ::id 54
+# ::snt became FORSCOM commander.
+(x1 / become-01
+	:ARG2 (x3 / have-org-role-91
+		:ARG2 (c / commander)
+		:mod (x2 / forscom)))
+
+# ::id 55
+# ::snt As leader of Powell is responsible for the training and
+(x10 / and
+	:op1 (x6 / responsible-41
+		:ARG2 (x2 / lead-02
+			:ARG1 (x4 / person
+				:name (n / name
+					:op1 "Powell")))
+		:ARG2 (x9 / train-01)))
+
+# ::id 56
+# ::snt preparedness of more than 1 million active, reserve and National
+(x10 / and
+	:op1 (x7 / active
+		:domain (x1 / prepare-02
+			:quant (x3 / more-than)))
+	:op2 (x9 / reserve-01)
+	:op2 (x11 / have-org-role-91
+		:ARG2 (n / national)))
+
+# ::id 57
+# ::snt Guard troops in the United States.
+(x2 / troop
+	:mod (x1 / guard)
+	:location (x5 / country
+		:name (n / name
+			:op1 "United"
+			:op2 "States")))
+
+# ::id 58
+# ::snt Powell's daily interests are more pressing: Keeping his troops
+(x7 / press-01
+	:ARG0 (x4 / interest-01
+		:poss (x1 / person
+			:name (n / name
+				:op1 "Powell")))
+	:degree (x6 / more)
+	:null_edge (x9 / keep-02
+		:ARG1 (x11 / troop)))
+
+# ::id 59
+# ::snt ready for combat "with the hope they will never be needed."
+(x1 / ready-01
+	:ARG2 (x3 / combat-01)
+	:ARG2 (x7 / hope-01)
+	:time (x12 / need-01))
+
+# ::id 60
+# ::snt And in that position, he keeps a close eye on the Soviet Union.
+(x1 / and
+	:op2 (x7 / keep-01
+		:ARG2 (x4 / position)
+		:ARG0 (x6 / he)
+		:ARG1 (x10 / eye-01
+			:mod (x9 / close)
+			:ARG1 (x13 / country
+				:name (n / name
+					:op1 "Soviet"
+					:op2 "Union")))))
+
+# ::id 61
+# ::snt "The Soviets are going through wrenching historic change,
+(x5 / go-02
+	:ARG2 (x9 / change-01
+		:ARG0 (x3 / soviets)
+		:ARG1-of (x7 / wrenching)
+		:mod (x8 / history)))
+
+# ::id 62
+# ::snt beginning with the irreversible acknowledgement that their system
+(x1 / begin-01
+	:ARG2 (x5 / acknowledgement
+		:mod (x4 / irreversible)
+		:ARG1 (x8 / system)))
+
+# ::id 63
+# ::snt is broken and has to be changed," he said at his FORSCOM
+(x11 / say-01
+	:ARG1 (x3 / and
+		:op1 (x2 / break-01)
+		:op2 (x4 / have-03
+			:ARG2 (x7 / change-01)))
+	:ARG0 (x10 / he)
+	:location (x14 / forscom))
+
+# ::id 64
+# ::snt installation. But "their FORSCOM is strong. We must be strong."
+(x3 / contrast-01
+	:ARG2 (x1 / install-01
+		:null_edge (x8 / strong
+			:domain (x6 / forscom))
+		:null_edge (x13 / strong
+			:domain (x10 / we))))
+
+# ::id 65
+# ::snt Born in New York, Powell completed training in the Airborne and
+(x12 / and
+	:location (x4 / country
+		:name (n / name
+			:op1 "York")
+		:null_edge (x3 / null_tag))
+	:op2 (x7 / complete-01
+		:ARG0 (x6 / person
+			:name (n1 / name
+				:op1 "Powell"))
+		:ARG1 (x8 / train-01
+			:location (x11 / airborne))))
+
+# ::id 66
+# ::snt Ranger schools and served in Germany and Vietnam.
+(x3 / and
+	:op1 (x4 / serve-01
+		:ARG0 (x2 / school
+			:mod (x1 / ranger))
+		:location (x7 / and
+			:op1 (x6 / country
+				:name (n / name
+					:op1 "Germany"))
+			:op2 (x8 / country
+				:name (n1 / name
+					:op1 "Vietnam")))))
+
+# ::id 67
+# ::snt Commissioned in the infantry in 1958, he was wounded twice
+(x10 / wound-01
+	:ARG2 (x4 / infantry
+		:time (x6 / date-entity
+			:year 1958))
+	:ARG1 (x8 / he))
+
+# ::id 68
+# ::snt during two tours in Vietnam, once falling into a trap lined with
+(x8 / fall-03
+	:time (x3 / person
+		:ARG0-of (t / tour-01)
+		:quant 2
+		:location (x5 / country
+			:name (n / name
+				:op1 "Vietnam")))
+	:time (x7 / once)
+	:ARG4 (x11 / person
+		:ARG1-of (t1 / trap-01)
+		:ARG1-of (x12 / line-01)))
+
+# ::id 69
+# ::snt sharpened bamboo sticks and impaling a foot.
+(x4 / and
+	:op1 (x5 / impale
+		:ARG0 (x3 / stick
+			:ARG1-of (x1 / sharpen)
+			:mod (x2 / bamboo))
+		:ARG1 (x7 / distance-quantity
+			:unit (f / foot))))
+
+# ::id 70
+# ::snt His decorations include the Distinguished Service Medal, the
+(x3 / include-01
+	:ARG2 (x2 / decoration)
+	:ARG1 (x7 / medal
+		:mod (x5 / distinguished)
+		:mod (x6 / service)))
+
+# ::id 71
+# ::snt Legion of Merit, the Bronze Star and the Purple Heart.
+(x8 / and
+	:op1 (x1 / legion
+		:null_edge (x3 / merit)
+		:null_edge (x7 / null_tag
+			:mod (x6 / have-org-role-91
+				:ARG1 (o / organization
+					:name (n / name
+						:op1 "Bronze"))))
+		:null_edge (x11 / heart
+			:mod (x10 / purple))))
+
+# ::id 72
+# ::snt Powell and his wife, Alma, have two daughters and a son.
+(x8 / have-03
+	:ARG0 (x2 / and
+		:op1 (x1 / person
+			:name (n / name
+				:op1 "Powell"))
+		:op2 (x4 / wife
+			:poss (x6 / person
+				:name (n1 / name
+					:op1 "Alma"))))
+	:ARG1 (x11 / and
+		:op1 (x10 / daughter
+			:quant 2)
+		:op2 (x13 / son)))
+

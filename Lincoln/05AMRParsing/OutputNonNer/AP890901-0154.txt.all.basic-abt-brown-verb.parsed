@@ -1,0 +1,714 @@
+# ::id 1
+# ::snt A naval commander who had observed the USS
+(x3 / have-org-role-91
+	:ARG2 (c / commander)
+	:ARG1 (x6 / person
+		:ARG1-of (o / observe-01)))
+
+# ::id 2
+# ::snt Vincennes in the Persian Gulf said the ship had "no good reason"
+(x6 / say-01
+	:ARG0 (x1 / country
+		:name (n / name
+			:op1 "Vincennes")
+		:location (x5 / world-region
+			:name (n1 / name
+				:op1 "Gulf")
+			:mod (x4 / country
+				:name (n2 / name
+					:op1 "Persian"))))
+	:ARG1 (x9 / have-03
+		:ARG0 (x8 / ship)
+		:null_edge (x12 / good
+			:null_edge -)))
+
+# ::id 3
+# ::snt for shooting down an Iranian civilian airliner, killing all 290
+(x2 / shoot-02
+	:ARG1 (x7 / airliner
+		:mod (x5 / country
+			:name (n / name
+				:op1 "Iran"))
+		:mod (x6 / civilian))
+	:ARG1 (x9 / person
+		:ARG1-of (k / kill-01)
+		:quant (x10 / all)))
+
+# ::id 4
+# ::snt aboard.
+(x1 / aboard)
+
+# ::id 5
+# ::snt The unusually candid article by Cmdr. David R. Carlson in the
+(x4 / article
+	:mod (x3 / candid
+		:mod (x2 / usual
+			:polarity -))
+	:name (x7 / name
+		:op1 "David"
+		:op2 "R."
+		:op3 "Carlson"
+		:ARG0-of (x6 / cmdr.)))
+
+# ::id 6
+# ::snt U.S. Naval Institute Proceedings magazine this month said others had
+(x8 / say-01
+	:ARG0 (x5 / magazine
+		:poss (x3 / research-institute
+			:name (n / name
+				:op1 "Institute")
+			:mod (x2 / organization
+				:name (n1 / name
+					:op1 "Naval"))))
+	:time (x7 / month
+		:mod (x6 / this))
+	:ARG1 (x10 / have-03
+		:ARG0 (x9 / other)))
+
+# ::id 7
+# ::snt remarked on the agressive behavior of the Vincennes, which had been
+(x1 / remark-01
+	:ARG1 (x5 / behave-01
+		:ARG1-of (x4 / agressive)
+		:ARG1 (x8 / country
+			:name (n / name
+				:op1 "Vincennes"))))
+
+# ::id 8
+# ::snt dubbed "robo cruiser."
+(x4 / cruiser
+	:ARG1-of (x1 / dub)
+	:mod (x3 / robo))
+
+# ::id 9
+# ::snt Carlson, commander of the USS Sides, a frigate that was on the
+(x1 / country
+	:name (n / name
+		:op1 "Carlson")
+	:ARG0-of (x3 / have-org-role-91
+		:ARG2 (c / commander)
+		:ARG1 (x7 / side
+			:null_edge (x6 / null_tag)
+			:mod (x10 / frigate))))
+
+# ::id 10
+# ::snt scene when the USS Vincennes shot down the Airbus on July 3, 1988,
+(x1 / scene
+	:location-of (x6 / shoot-02
+		:ARG0 (x5 / vincennes
+			:null_edge (x4 / null_tag))
+		:ARG1 (x9 / name
+			:op1 "Airbus")
+		:time (x11 / date-entity
+			:year 1988)))
+
+# ::id 11
+# ::snt clearly put the blame on actions taken by the ship and disputed any
+(x4 / blame-01
+	:manner (x1 / clear)
+	:ARG1 (x11 / and
+		:op1 (x7 / take-01
+			:ARG0 (x10 / ship))
+		:op2 (x12 / dispute-01
+			:ARG1 (x13 / any))))
+
+# ::id 12
+# ::snt notion of self-defense.
+(x1 / notion
+	:mod (x3 / self))
+
+# ::id 13
+# ::snt "No profit has come from the pathetic postincident attempts to
+(x5 / come-01
+	:ARG1 (x3 / profit-01)
+	:ARG2 (x10 / attempt-01
+		:mod (x8 / pathetic)))
+
+# ::id 14
+# ::snt place the blame on the victims," he wrote. "View it as you will,
+(x10 / write-01
+	:ARG1 (x3 / blame-01
+		:ARG2 (x6 / victim))
+	:ARG1 (x13 / view
+		:ARG1 (x14 / it)
+		:null_edge (x16 / you)))
+
+# ::id 15
+# ::snt Iran Air Flight 655 was shot down for no good reason.
+(x6 / shoot-02
+	:ARG1 (x3 / flight
+		:null_edge (x2 / null_tag)
+		:quant (x4 / 655))
+	:ARG1 (x11 / reason
+		:polarity -
+		:mod (x10 / good)))
+
+# ::id 16
+# ::snt "Having watched the performance of the Vincennes for a month
+(x3 / watch-01
+	:ARG1 (x5 / perform-01
+		:poss (x8 / country
+			:name (n / name
+				:op1 "Vincennes")
+			:duration (x11 / temporal-quantity
+				:unit (m / month)))))
+
+# ::id 17
+# ::snt before the incident, my impression was clearly that an atmosphere of
+(x6 / impression
+	:time (x1 / before
+		:op1 (x3 / incident))
+	:mod (x8 / clear)
+	:mod (x11 / atmosphere))
+
+# ::id 18
+# ::snt restraint was not her long suit. Her actions appeared to be
+(x10 / appear-01
+	:ARG1 (x6 / suit-01
+		:ARG0 (x1 / restrain-01)
+		:mod (x5 / long))
+	:ARG1 (x9 / action))
+
+# ::id 19
+# ::snt consistently aggressive, and had become a topic of wardroom
+(x4 / and
+	:op1 (x2 / aggressive
+		:manner (x1 / consistent))
+	:op2 (x6 / become-01
+		:ARG2 (x8 / topic
+			:null_edge (x10 / wardroom))))
+
+# ::id 20
+# ::snt conversation."
+(xap0 / multi-sentence
+	:snt1 (x1 / converse-01))
+
+# ::id 21
+# ::snt Capt. Will Rogers, skipper of the Vincennes at the time, said
+(x13 / say-01
+	:ARG0 (x2 / newspaper
+		:name (n / name
+			:op1 "Will"
+			:op2 "Rogers")
+		:ARG0-of (x1 / capt.)
+		:ARG0-of (x5 / skipper
+			:ARG1 (x8 / country
+				:name (n1 / name
+					:op1 "Vincennes")))))
+
+# ::id 22
+# ::snt Carlson's assessment was subjective and not in line with the Navy's
+(x6 / and
+	:op1 (x5 / subjective
+		:domain (x3 / assess-01
+			:ARG0 (x1 / person
+				:name (n / name
+					:op1 "Carlson")))
+		:domain (x9 / line
+			:poss (x12 / military
+				:name (n1 / name
+					:op1 "Navy")))))
+
+# ::id 23
+# ::snt conclusions.
+(x1 / thing
+	:ARG1-of (c / conclude-01))
+
+# ::id 24
+# ::snt "The Navy investigated the events of July 3, 1988, in
+(x4 / investigate-01
+	:ARG0 (x3 / military
+		:name (n / name
+			:op1 "Navy"))
+	:ARG1 (x6 / event)
+	:time (x8 / date-entity
+		:year 1988))
+
+# ::id 25
+# ::snt excruciating detail and published its findings in the Fogarty
+(x3 / and
+	:op1 (x4 / publish-01
+		:ARG0 (x2 / detail-01
+			:ARG1-of (x1 / excruciate))
+		:ARG1 (x6 / thing
+			:ARG1-of (f / find-01))))
+
+# ::id 26
+# ::snt Report," Rogers said in a statement issued by the Navy in San
+(x8 / state-01
+	:ARG0 (x4 / person
+		:name (n / name
+			:op1 "Rogers"))
+	:ARG1-of (x9 / issue-01
+		:ARG0 (x12 / military
+			:name (n1 / name
+				:op1 "Navy")
+			:location (x14 / country
+				:name (n2 / name
+					:op1 "San")))))
+
+# ::id 27
+# ::snt Diego, where he is stationed.
+(x1 / country
+	:name (n / name
+		:op1 "Diego")
+	:ARG1-of (x6 / station-01))
+
+# ::id 28
+# ::snt "Commander Carlson's comments in the magazine article are his
+(x11 / he
+	:ARG0 (x5 / thing
+		:ARG1-of (c / comment-02)
+		:ARG0 (x3 / person
+			:name (n / name
+				:op1 "Carlson")
+			:ARG0-of (x2 / have-org-role-91
+				:ARG2 (c1 / commander)))
+		:ARG1 (x9 / article
+			:mod (x8 / magazine))))
+
+# ::id 29
+# ::snt personal opinions of the Airbus incident," he said. "I fully stand
+(x10 / say-01
+	:ARG0 (x2 / thing
+		:ARG1-of (o / opine-01)
+		:mod (x1 / personal)
+		:ARG1 (x6 / incident
+			:name (x5 / name
+				:op1 "Airbus")))
+	:ARG0 (x9 / he)
+	:ARG1 (x15 / stand-01
+		:ARG1 (x13 / i)
+		:degree (x14 / full)))
+
+# ::id 30
+# ::snt behind the Navy report and the performance of my crew."
+(x1 / behind
+	:op1 (x5 / and
+		:op2 (x7 / perform-01
+			:mod (x10 / crew))
+		:op1 (xap0 / say-01
+			:ARG0 (x4 / report
+				:ARG0 (x3 / military
+					:name (n / name
+						:op1 "Navy"))))))
+
+# ::id 31
+# ::snt Navy spokesman David L. Dillon in San Diego said that the
+(x9 / say-01
+	:ARG0 (x5 / person
+		:name (n / name
+			:op1 "Dillon")
+		:null_edge (x2 / have-org-role-91
+			:ARG2 (s / spokesman)
+			:ARG1 (x1 / military
+				:name (n4 / name
+					:op1 "Navy")))
+		:null_edge (x3 / person
+			:name (n1 / name
+				:op1 "David"))
+		:null_edge (x4 / person
+			:name (n2 / name
+				:op1 "L."))
+		:null_edge (x8 / country
+			:name (n3 / name
+				:op1 "Diego")
+			:location (x7 / country
+				:name (n5 / name
+					:op1 "San")))))
+
+# ::id 32
+# ::snt magazine is not part of the Navy.
+(x1 / magazine
+	:poss (x7 / military
+		:name (n / name
+			:op1 "Navy")))
+
+# ::id 33
+# ::snt "It's published by the Naval Institute, a private self-supported
+(x4 / publish-01
+	:ARG1 (x2 / it)
+	:ARG0 (x7 / government-organization
+		:name (n / name
+			:op1 "Naval"
+			:op2 "Institute")
+		:ARG1-of (x12 / self-supported
+			:mod (x11 / private))))
+
+# ::id 34
+# ::snt non-profit professional society and it's a forum for people to
+(x4 / and
+	:op1 (x3 / society
+		:mod (x2 / professional))
+	:op2 (x8 / forum
+		:domain (x5 / it)
+		:mod (x11 / aircraft-type
+			:name (n / name
+				:op1 "to"))))
+
+# ::id 35
+# ::snt express personal opinions and assertions in various articles related
+(x1 / express-01
+	:ARG1 (x4 / and
+		:op1 (x3 / thing
+			:ARG1-of (o / opine-01)
+			:poss (x2 / personal))
+		:op2 (x5 / assert-03
+			:ARG1 (x8 / article
+				:mod (x7 / various)
+				:ARG1-of (x9 / relate-01)))))
+
+# ::id 36
+# ::snt to Navy issues, but the Naval Institute is not part of the U.S.
+(x7 / government-organization
+	:name (n / name
+		:op1 "Naval"
+		:op2 "Institute")
+	:ARG2 (x3 / issue
+		:topic (x2 / military
+			:name (n2 / name
+				:op1 "Navy")))
+	:poss (x14 / country
+		:name (n1 / name
+			:op1 "U.S.")))
+
+# ::id 37
+# ::snt government, so his comments are his own personal opinion," he said.
+(x14 / say-01
+	:ARG1 (x10 / opine-01
+		:ARG0 (x5 / thing
+			:ARG1-of (c / comment-02)
+			:ARG0 (x1 / government-organization
+				:ARG0-of (g / govern-01))
+			:degree (x3 / so))
+		:mod (x9 / personal))
+	:ARG0 (x13 / he))
+
+# ::id 38
+# ::snt Carlson suggests the crew of the Vincennes wanted to prove the
+(x2 / suggest-01
+	:ARG0 (x1 / person
+		:name (n / name
+			:op1 "Carlson"))
+	:ARG1 (x8 / want-01
+		:ARG0 (x4 / crew
+			:poss (x7 / country
+				:name (n1 / name
+					:op1 "Vincennes")))
+		:ARG1 (x10 / prove-01
+			:ARG0 x4)))
+
+# ::id 39
+# ::snt capability of the ship's Aegis missile-defense system in the Persian
+(x1 / capable-41
+	:ARG2 (x8 / system
+		:poss (x4 / ship)
+		:name (x6 / name
+			:op1 "Aegis")
+		:mod (x7 / missile-defense)
+		:mod (x11 / country
+			:name (n / name
+				:op1 "Persian"))))
+
+# ::id 40
+# ::snt Gulf.
+(x1 / world-region
+	:name (n / name
+		:op1 "Gulf"))
+
+# ::id 41
+# ::snt On the day of the incident, Carlson said, a crewman informed him
+(x9 / say-01
+	:ARG0 (x8 / person
+		:name (n / name
+			:op1 "Carlson"))
+	:ARG1 (x13 / inform-01
+		:time (x3 / day
+			:time-of (x6 / incident))
+		:ARG0 (x12 / crewman)))
+
+# ::id 42
+# ::snt that the Vincennes had classified the plane as an Iranian F-14
+(x5 / classify-01
+	:ARG0 (x3 / country
+		:name (n / name
+			:op1 "Vincennes"))
+	:ARG1 (x7 / plane)
+	:ARG2 (x11 / f-14
+		:mod (x10 / country
+			:name (n1 / name
+				:op1 "Iran"))))
+
+# ::id 43
+# ::snt fighter.
+(x1 / fight-01)
+
+# ::id 44
+# ::snt "I was also prepared to deal with an air threat, but in all
+(x5 / prepare-02
+	:ARG1 (x2 / i)
+	:mod (x4 / also)
+	:ARG1 (x7 / deal-01
+		:ARG1 (x11 / threaten-01
+			:mod (x10 / air)
+			:ARG0 (x15 / all))))
+
+# ::id 45
+# ::snt honesty did not perceive one," Carlson said.
+(x9 / say-01
+	:ARG1 (x4 / perceive-01
+		:ARG0 (x1 / honesty)
+		:ARG1 1)
+	:ARG0 (x8 / person
+		:name (n / name
+			:op1 "Carlson")))
+
+# ::id 46
+# ::snt According to Carlson, the event started with the Vincennes'
+(x7 / start-01
+	:ARG0 (x3 / person
+		:name (n / name
+			:op1 "Carlson"))
+	:ARG0 (x6 / event)
+	:ARG1 (x10 / country
+		:name (n1 / name
+			:op1 "Vincennes")))
+
+# ::id 47
+# ::snt helicopter drawing fire from Iranian speedboats, which he claims
+(x1 / helicopter
+	:purpose (x2 / draw-02
+		:ARG1 (x3 / fire-01)
+		:source (x6 / speedboat
+			:mod (x5 / country
+				:name (n / name
+					:op1 "Iran"))
+			:ARG1-of (x10 / claim-01))))
+
+# ::id 48
+# ::snt were only warning shots.
+(x4 / shot
+	:mod (x2 / only)
+	:ARG0-of (x3 / warn-01))
+
+# ::id 49
+# ::snt "The Vincennes saw an opportunity for action, and pressed hard
+(x10 / and
+	:op1 (x4 / see-01
+		:ARG0 (x3 / organization
+			:name (n / name
+				:op1 "Vincennes"))
+		:ARG1 (x6 / opportunity
+			:mod (x8 / action)))
+	:op2 (x11 / press-01
+		:manner (x12 / hard)))
+
+# ::id 50
+# ::snt for Commander Middle East Force to give permission to fire,"
+(x10 / fire-01
+	:ARG1 (x8 / permit-01
+		:ARG0 (x5 / force
+			:null_edge (x2 / have-org-role-91
+				:ARG2 (c / commander))
+			:null_edge (x3 / null_tag)
+			:null_edge (x4 / null_tag))))
+
+# ::id 51
+# ::snt Carlson said.
+(x2 / say-01
+	:ARG0 (x1 / person
+		:name (n / name
+			:op1 "Carlson")))
+
+# ::id 52
+# ::snt "The tragedy was avoidable, and we must learn from it," he said.
+(x16 / say-01
+	:ARG1 (x7 / and
+		:op1 (x5 / avoidable
+			:domain (x3 / tragedy))
+		:op2 (x10 / learn-01
+			:ARG1 x3
+			:ARG0 (x8 / we)))
+	:ARG0 (x15 / he))
+
+# ::id 53
+# ::snt "A review of the facts is in order," Carlson wrote. "When the
+(x13 / write-01
+	:ARG1 (x9 / order)
+	:ARG0 (x12 / person
+		:name (n / name
+			:op1 "Carlson")))
+
+# ::id 54
+# ::snt decision was made to shoot down the Airbus, the airliner was
+(x1 / decide-01
+	:ARG1 (x5 / shoot-05
+		:ARG1 (x8 / name
+			:op1 "Airbus"))
+	:ARG1 (x11 / airliner))
+
+# ::id 55
+# ::snt climbing, not diving; it was showing the proper identification
+(x / xconcept
+	:x (x5 / and
+		:op2 (x1 / climb-01)
+		:op3 (x8 / show-01
+			:ARG1 (x11 / identify-02
+				:mod (x10 / proper)))))
+
+# ::id 56
+# ::snt friend or foe ... The Vincennes was never under attack by Iranian
+(x10 / attack-01
+	:ARG1 (x2 / or
+		:op1 (x1 / friend)
+		:op2 (x3 / foe))
+	:ARG1 (x6 / country
+		:name (n / name
+			:op1 "Vincennes"))
+	:ARG0 (x12 / country
+		:name (n1 / name
+			:op1 "Iran")))
+
+# ::id 57
+# ::snt aircraft."
+(x1 / aircraft)
+
+# ::id 58
+# ::snt A naval investigator told Congress last September that a series
+(x4 / tell-01
+	:ARG0 (x3 / person
+		:ARG0-of (i / investigate-01))
+	:ARG2 (x5 / government-organization
+		:name (n / name
+			:op1 "Congress"))
+	:time (x7 / date-entity
+		:mod (x6 / last))
+	:ARG2 (x10 / series))
+
+# ::id 59
+# ::snt of errors caused by stress, including misinterpreting electronic
+(x2 / error
+	:ARG1-of (x3 / cause-01
+		:ARG1 (x8 / misinterpret
+			:ARG1 (x9 / electronics)
+			:ARG0 (xap0 / i
+				:prep-under (x5 / stress)))))
+
+# ::id 60
+# ::snt data, caused the mistaken attack on the airliner.
+(x3 / cause-01
+	:ARG0 (x1 / data)
+	:ARG1 (x6 / attack-01
+		:mod (x5 / mistaken)
+		:ARG1 (x9 / airliner)))
+
+# ::id 61
+# ::snt Rear Adm. William M. Fogarty, who headed the Navy's investigating
+(x3 / person
+	:name (n / name
+		:op1 "William"
+		:op2 "M."
+		:op3 "Fogarty")
+	:ARG0-of (x1 / rear)
+	:ARG0-of (x2 / adm.)
+	:ARG0-of (x8 / head-02
+		:ARG1 (x10 / military
+			:name (n1 / name
+				:op1 "Navy")
+			:null_edge (x12 / investigate-01))))
+
+# ::id 62
+# ::snt team, said the captain of the Vincennes, Will Rogers III, ordered
+(x3 / say-01
+	:ARG0 (x1 / team)
+	:ARG1 (x14 / order-01
+		:ARG0 (x5 / have-org-role-91
+			:ARG2 (c / captain)
+			:ARG1 (x8 / country
+				:name (n / name
+					:op1 "Vincennes"))
+			:name (x10 / name
+				:op1 "Will"
+				:op2 "Rogers"
+				:op3 "III"))))
+
+# ::id 63
+# ::snt the ship's missiles fired in the mistaken belief the airliner was an
+(x4 / missile
+	:poss (x2 / ship)
+	:ARG1-of (x5 / fire-01
+		:ARG2 (x9 / believe-01
+			:mod (x8 / mistaken)
+			:name (x13 / name
+				:op1 "an"
+				:ARG0 (x11 / airliner)))))
+
+# ::id 64
+# ::snt Iranian F-14 fighter plane.
+(x4 / plane
+	:mod (x1 / country
+		:name (n / name
+			:op1 "Iran"))
+	:mod (x2 / world-region
+		:name (n1 / name
+			:op1 "F-14"))
+	:ARG0-of (x3 / fight-01))
+
+# ::id 65
+# ::snt Carlson, in his article, puts some of the blame on himself.
+(x7 / put-01
+	:ARG0 (x1 / person
+		:name (n / name
+			:op1 "Carlson"))
+	:ARG2 (x5 / article)
+	:ARG2 (x11 / blame-01))
+
+# ::id 66
+# ::snt "I wondered aloud in disbelief, but I did not do the one thing
+(x8 / contrast-01
+	:ARG1 (x3 / wonder-01
+		:ARG0 (x2 / i)
+		:mod (x4 / aloud)
+		:ARG1 (x6 / disbelief))
+	:ARG2 (x12 / do-02
+		:ARG0 (x9 / i)
+		:ARG1 (x15 / thing
+			:quant 1)))
+
+# ::id 67
+# ::snt that might have helped," he wrote. "I did not push for a
+(x8 / write-01
+	:ARG1 (x4 / help-01)
+	:null_edge (x14 / push-01
+		:ARG0 (x11 / i)
+		:ARG2 (x16 / name
+			:op1 "a")))
+
+# ::id 68
+# ::snt reevaluation.
+(x1 / reevaluation)
+
+# ::id 69
+# ::snt "Had I done so, the information might have come forward quickly
+(x11 / come-01
+	:null_edge (x4 / do-02
+		:ARG0 (x3 / i)
+		:ARG1 (x5 / so))
+	:ARG1 (x8 / information)
+	:direction (x12 / forward)
+	:manner (x13 / quick))
+
+# ::id 70
+# ::snt enough to allow me to attempt to dissuade the Vincennes from
+(x1 / enough
+	:purpose (x3 / allow-01
+		:ARG1 (x6 / attempt-01
+			:ARG1 (x8 / dissuade-01
+				:ARG1 (x10 / country
+					:name (n / name
+						:op1 "Vincennes"))))))
+
+# ::id 71
+# ::snt shooting."
+(x1 / shooting)
+

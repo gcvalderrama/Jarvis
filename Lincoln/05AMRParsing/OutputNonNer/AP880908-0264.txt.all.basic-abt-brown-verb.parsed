@@ -1,0 +1,932 @@
+# ::id 1
+# ::snt Michael Milken, who faces insider
+(x1 / name
+	:op1 "Michael"
+	:op2 "Milken"
+	:ARG0-of (x5 / face-01
+		:ARG1 (x6 / insider)))
+
+# ::id 2
+# ::snt trading charges, is seen as the Wall Street whiz kid who made
+(x1 / trade-01
+	:ARG1 (x2 / charge-05)
+	:ARG1-of (x5 / see-01
+		:ARG2 (x11 / kid
+			:null_edge (x8 / null_tag)
+			:null_edge (x9 / null_tag)
+			:mod (x10 / whiz)
+			:ARG0-of (x13 / make-02))))
+
+# ::id 3
+# ::snt "junk-bond" financing into the tool of choice for corporate
+(x2 / junk-bond
+	:ARG2 (x7 / tool)
+	:purpose (x11 / corporation))
+
+# ::id 4
+# ::snt raiders.
+(x1 / raider)
+
+# ::id 5
+# ::snt In so doing, Milken, 42, transformed Drexel Burnham Lambert Inc.
+(x9 / transform-01
+	:ARG2 (x3 / do-02
+		:manner (x2 / so)
+		:ARG0 (x5 / person
+			:name (n / name
+				:op1 "Milken")
+			:null_edge 42))
+	:ARG0 x5
+	:ARG1 (x10 / government-organization
+		:name (n1 / name
+			:op1 "Drexel"
+			:op2 "Burnham"
+			:op3 "Lambert"
+			:op4 "Inc.")))
+
+# ::id 6
+# ::snt from a minor player on Wall Street into a powerhouse and in the
+(x4 / person
+	:ARG0-of (p / play-08)
+	:mod (x3 / minor)
+	:ARG1 (x7 / street
+		:null_edge (x6 / null_tag))
+	:ARG1 (x10 / powerhouse)
+	:ARG1 (x11 / and))
+
+# ::id 7
+# ::snt process made himself feared, respected and enormously wealthy.
+(x7 / and
+	:op1 (x1 / process)
+	:op2 (x4 / fear-01)
+	:op2 (x6 / respect-01)
+	:op1 (x9 / wealth
+		:degree (x8 / enormous)))
+
+# ::id 8
+# ::snt The 184-page civil complaint filed in U.S. District Court in New
+(x4 / complain-01
+	:mod (x3 / civil)
+	:ARG1 (x5 / file-01
+		:location (x8 / government-organization
+			:name (n / name
+				:op1 "District"
+				:op2 "Court"))))
+
+# ::id 9
+# ::snt York against Milken, Drexel and others on Wednesday followed months
+(x10 / follow-01
+	:ARG1 (x6 / and
+		:op1 (x3 / person
+			:name (n / name
+				:op1 "Milken")
+			:null_edge (x1 / york)
+			:null_edge (x2 / null_tag))
+		:op2 (x5 / organization
+			:name (n1 / name
+				:op1 "Drexel"))
+		:op2 (x7 / other
+			:time (x9 / wednesday)))
+	:ARG2 (x11 / temporal-quantity
+		:unit (m / month)))
+
+# ::id 10
+# ::snt of speculation about Drexel's involvement in the Ivan Boesky
+(x2 / speculate-01
+	:ARG1 (x6 / involve-01
+		:ARG1 (x4 / organization
+			:name (n / name
+				:op1 "Drexel"))
+		:name (x9 / name
+			:op1 "Ivan"
+			:op2 "Boesky")))
+
+# ::id 11
+# ::snt insider trading scandal.
+(x3 / scandal
+	:mod (x1 / insider)
+	:topic (x2 / trade-01))
+
+# ::id 12
+# ::snt Although the move by the Securities and Exchange Commission had
+(x3 / move-02
+	:ARG2 (x8 / exchange-01
+		:null_edge (x7 / null_tag)))
+
+# ::id 13
+# ::snt been anticipated, Milken and others who have made fortunes in junk
+(x2 / anticipate-01
+	:ARG1 (x5 / and
+		:op1 (x4 / person
+			:name (n / name
+				:op1 "Milken"))
+		:op2 (x6 / other
+			:ARG1 (x10 / fortune
+				:ARG1 (x12 / junk)))))
+
+# ::id 14
+# ::snt bonds continued to hold their annual Beverly Hills spring gathering
+(x2 / continue-01
+	:ARG0 (x1 / bond)
+	:ARG1 (x4 / hold-04
+		:ARG0 x1
+		:ARG1 (x10 / organization
+			:name (n / name
+				:op1 "gathering")
+			:mod (x7 / country
+				:name (n1 / name
+					:op1 "Beverly"))
+			:location (x8 / country
+				:name (n2 / name
+					:op1 "Hills"))
+			:time (xap0 / date-entity
+				:season (x9 / spring)))))
+
+# ::id 15
+# ::snt known as the Predators' Ball. The message was clear: Never mind the
+(x14 / mind
+	:ARG0 (x1 / know-01
+		:time (x11 / clear
+			:domain (x9 / message-01
+				:ARG0 (x4 / predator)
+				:ARG0 (x6 / ball)
+				:null_edge (x8 / null_tag)))))
+
+# ::id 16
+# ::snt burgeoning government investigation of insider trading. It was
+(x1 / burgeon-01
+	:ARG1 (x3 / investigate-01
+		:ARG0 (x2 / government-organization
+			:ARG0-of (g / govern-01))
+		:ARG1 (x6 / trade-01
+			:ARG1 (x5 / insider))))
+
+# ::id 17
+# ::snt business as usual at Drexel, and Milken was still king of the junk
+(x7 / and
+	:op1 (x3 / usual
+		:ARG1 (x1 / business)
+		:location (x5 / organization
+			:name (n / name
+				:op1 "Drexel"))
+		:ARG0 (x8 / person
+			:name (n1 / name
+				:op1 "Milken")
+			:ARG0-of (x11 / king
+				:time (x10 / still)
+				:ARG1 (x14 / junk)))))
+
+# ::id 18
+# ::snt bonds _ high-risk, high-yield notes used to finance corporate
+(x2 / _
+	:ARG0 (x1 / bond)
+	:ARG1 (x6 / note
+		:mod (x5 / high-yield
+			:mod (x3 / high-risk))
+		:ARG1-of (x7 / use-01
+			:ARG2 (x9 / finance-01
+				:ARG1 (x10 / corporation)))))
+
+# ::id 19
+# ::snt takeovers.
+(x1 / take-12)
+
+# ::id 20
+# ::snt Milken had refused to comment publicly on the scandal up until
+(x3 / refuse-01
+	:ARG0 (x1 / person
+		:name (n / name
+			:op1 "Milken"))
+	:ARG1 (x5 / comment-01
+		:ARG0 x1
+		:manner (x6 / public)
+		:ARG1 (x9 / scandal
+			:time (x11 / until))))
+
+# ::id 21
+# ::snt Wednesday, when he issued a written statement asserting that "for
+(x5 / issue-01
+	:time (x1 / wednesday)
+	:ARG1 (x8 / state-01
+		:ARG1-of (x7 / write-01)
+		:ARG0-of (x9 / assert-02)))
+
+# ::id 22
+# ::snt the past 22 months I have been the subject of a shadow trial of
+(x9 / subject
+	:op1 (x4 / temporal-quantity
+		:unit (m / month)
+		:mod (x2 / past)
+		:quant (x3 / person
+			:op 22))
+	:ARG1 (x5 / i)
+	:ARG2 (x13 / trial
+		:mod (x12 / shadow-01)))
+
+# ::id 23
+# ::snt systematic leaks and innuendo based on false accusations."
+(x5 / base-01
+	:ARG0 (x3 / and
+		:op1 (x2 / leak-01
+			:mod (x1 / systematic))
+		:op2 (x4 / innuendo))
+	:ARG2 (x8 / accusation
+		:mod (x7 / false)))
+
+# ::id 24
+# ::snt In anticipation of a crisis, Drexel undertook a public-relations
+(x8 / undertake-01
+	:ARG0 (x7 / organization
+		:name (n / name
+			:op1 "Drexel"))
+	:ARG1 (x10 / public-relation)
+	:ARG1-of (xap0 / cause-01
+		:ARG0 (x2 / anticipate-01
+			:ARG1 (x5 / crisis))))
+
+# ::id 25
+# ::snt campaign starting last year to polish its image, stressing the role
+(x1 / campaign-01
+	:ARG1-of (x2 / start-01
+		:time (x4 / year
+			:mod (x3 / last))
+		:purpose (x6 / polish
+			:ARG1 (x8 / image)))
+	:ARG0-of (x10 / stress-01
+		:ARG1 (x12 / role)))
+
+# ::id 26
+# ::snt of junk bonds in helping small companies and downplaying their role
+(x3 / bond
+	:mod (x2 / junk)
+	:location (x8 / and
+		:op1 (x5 / help-01
+			:ARG1 (x7 / company
+				:mod (x6 / small)))
+		:op2 (x9 / downplay-01
+			:ARG1 (x11 / role))))
+
+# ::id 27
+# ::snt in large takeover battles.
+(x4 / battle-01
+	:mod (x2 / large)
+	:mod (x3 / take-12))
+
+# ::id 28
+# ::snt The normally secretive and unreachable Milken himself played a
+(x8 / play-07
+	:ARG1 (x4 / and
+		:op2 (x5 / unreachable))
+	:ARG0 (x6 / person
+		:name (n / name
+			:op1 "Milken")
+		:null_edge (x3 / secretive
+			:mod (x2 / normal))))
+
+# ::id 29
+# ::snt major role in that blitz, accepting speaking engagements. He
+(x2 / role
+	:mod (x1 / major)
+	:topic-of (x5 / blitz
+		:mod (x4 / that))
+	:ARG0-of (x7 / accept-01
+		:ARG1 (x9 / engagement
+			:ARG0-of (x8 / speak-01))
+		:ARG0 (x11 / he)))
+
+# ::id 30
+# ::snt granted selective media interviews _ on condition there would be no
+(x1 / grant-01
+	:ARG1 (x4 / interview-01
+		:mod (x2 / selective)
+		:mod (x3 / media)
+		:ARG1-of (x5 / _
+			:topic (x7 / condition
+				:polarity -))))
+
+# ::id 31
+# ::snt questions about the Securities and Exchange Commission and the
+(x1 / question-01
+	:topic (x8 / and
+		:op2 (x6 / exchange-01
+			:null_edge (x5 / null_tag))
+		:op1 (x7 / have-org-role-91
+			:ARG1 (o / organization
+				:name (n / name
+					:op1 "Commission"))
+			:null_edge (x9 / null_tag))))
+
+# ::id 32
+# ::snt investigation.
+(x1 / investigate-01)
+
+# ::id 33
+# ::snt The speeches and interviews focused almost solely on Milken's
+(x5 / focus-01
+	:ARG0 (x3 / and
+		:op1 (x2 / speech)
+		:op3 (x4 / interview-01))
+	:manner (x7 / sole
+		:mod (x6 / almost))
+	:ARG2 (x9 / person
+		:name (n / name
+			:op1 "Milken")))
+
+# ::id 34
+# ::snt latest pet plan _ to alleviate the Latin American debt crisis by
+(x3 / plan-01
+	:time (x1 / late
+		:degree (m / most))
+	:mod (x2 / pet)
+	:ARG1 (x6 / alleviate-01
+		:ARG1 (x11 / crisis
+			:null_edge (x8 / world-region
+				:name (n / name
+					:op1 "Latin"))
+			:null_edge (x9 / country
+				:name (n1 / name
+					:op1 "American"))
+			:mod (x10 / debt))))
+
+# ::id 35
+# ::snt swapping debt for equity or selling securities backed by those
+(x1 / swap
+	:ARG1 (x2 / debt)
+	:ARG1 (x5 / or
+		:op1 (x4 / equity)
+		:op2 (x6 / sell-01)
+		:op2 (x7 / thing
+			:ARG0-of (s / secure-02)
+			:ARG1-of (x8 / back-01))))
+
+# ::id 36
+# ::snt countries' oil and silver resources.
+(x1 / country
+	:domain (x4 / and
+		:op1 (x3 / oil)
+		:op2 (x6 / resource
+			:mod (x5 / silver))))
+
+# ::id 37
+# ::snt In the years before the insider trading scandal, the financial
+(x11 / finance
+	:duration (x3 / temporal-quantity
+		:unit (y / year)
+		:time (x4 / before
+			:op1 (x8 / scandal
+				:mod (x6 / insider)
+				:mod (x7 / trade-01)))))
+
+# ::id 38
+# ::snt media wrote glowingly of Milken.
+(x2 / write-01
+	:ARG0 (x1 / media)
+	:manner (x3 / glowingly
+		:ARG0 (x5 / person
+			:name (n / name
+				:op1 "Milken"))))
+
+# ::id 39
+# ::snt "A one-man revolution," Forbes magazine headlined one typical
+(x4 / revolution
+	:mod (x3 / one-man)
+	:null_edge (x8 / magazine
+		:ARG1-of (x9 / headline-01
+			:ARG2 (x11 / typify-01
+				:domain (x10 / one)))))
+
+# ::id 40
+# ::snt article.
+(x1 / article)
+
+# ::id 41
+# ::snt "A world-class financial wizard, on a plane with the likes of
+(x5 / wizard
+	:mod (x3 / world-class)
+	:mod (x4 / finance)
+	:topic (x9 / plane
+		:ARG0-of (x12 / likes)))
+
+# ::id 42
+# ::snt Bernard Baruch and Jay Gould ... Mozart of the money markets,"
+(x3 / and
+	:op1 (x1 / name
+		:op1 "Bernard"
+		:op2 "Baruch")
+	:op2 (x4 / name
+		:op1 "Jay"
+		:op2 "Gould")
+	:op2 (x7 / person
+		:name (n / name
+			:op1 "Mozart")
+		:location-of (x11 / market
+			:mod (x10 / money))))
+
+# ::id 43
+# ::snt wrote California Business magazine.
+(x1 / write-01
+	:ARG1 (x4 / magazine
+		:null_edge (x2 / null_tag)
+		:mod (x3 / organization
+			:name (n / name
+				:op1 "Business"))))
+
+# ::id 44
+# ::snt It had been a relatively short road for Milken, from head
+(x7 / road
+	:domain (x1 / it)
+	:mod (x6 / short
+		:degree (x5 / relative))
+	:prep-under (x9 / person
+		:name (n / name
+			:op1 "Milken")
+		:ARG0-of (x12 / head)))
+
+# ::id 45
+# ::snt cheerleader at Birmingham High School in the San Fernando Valley in
+(x1 / cheerleader
+	:location (x4 / government-organization
+		:name (n / name
+			:op1 "High"
+			:op2 "School")
+		:name (x3 / name
+			:op1 "Birmingham")
+		:location (x10 / country
+			:name (n1 / name
+				:op1 "Valley")
+			:null_edge (x9 / country
+				:name (n2 / name
+					:op1 "Fernando")
+				:mod (x8 / country
+					:name (n3 / name
+						:op1 "San"))))))
+
+# ::id 46
+# ::snt 1964 _ actress Sally Field and superagent Michael Ovitz were among
+(x6 / and
+	:op1 (x4 / newspaper
+		:name (n / name
+			:op1 "Sally"
+			:op2 "Field")
+		:time (x1 / date-entity
+			:year 1964)
+		:ARG0-of (x3 / actress
+			:topic (x2 / _)))
+	:op2 (x8 / name
+		:op1 "Michael"
+		:op2 "Ovitz"
+		:ARG0-of (x7 / superagent)))
+
+# ::id 47
+# ::snt his classmates _ to the top of the nation's financial industry.
+(x3 / _
+	:ARG0 (x2 / classmate)
+	:ARG2 (x6 / top
+		:poss (x12 / industry
+			:poss (x9 / nation)
+			:mod (x11 / finance))))
+
+# ::id 48
+# ::snt Milken reportedly pulls down $40 million a year as the head of
+(x3 / pull-01
+	:ARG0 (x1 / person
+		:name (n / name
+			:op1 "Milken"))
+	:ARG1-of (x2 / report-01)
+	:ARG2 (x4 / down)
+	:ARG2 (x12 / head
+		:ARG2-of (x13 / include-91))
+	:ARG1 (xap0 / rate-entity-91
+		:calendar (x9 / year)))
+
+# ::id 49
+# ::snt Drexel's junk-bond operation and his personal fortune has been
+(x5 / and
+	:op1 (x4 / operation
+		:poss (x1 / organization
+			:name (n / name
+				:op1 "Drexel"))
+		:mod (x3 / junk-bond))
+	:op2 (x8 / fortune
+		:mod (x7 / personal)))
+
+# ::id 50
+# ::snt estimated at more than $500 million.
+(x1 / estimate-01
+	:ARG2 (x3 / more-than))
+
+# ::id 51
+# ::snt He lives with his children and wife, Lori _ his high school
+(x2 / live-01
+	:ARG0 (x1 / he)
+	:accompanier (x6 / and
+		:op1 (x5 / child)
+		:op2 (x7 / wife)
+		:op2 (x10 / _
+			:ARG0 (x9 / person
+				:name (n / name
+					:op1 "Lori"))
+			:ARG1 (x13 / school
+				:mod (x12 / high)))))
+
+# ::id 52
+# ::snt sweetheart whom he married at age 22 _ in a house on the former
+(x4 / marry-01
+	:time (x6 / age
+		:ARG2 (x7 / person
+			:op 22))
+	:time (x14 / former))
+
+# ::id 53
+# ::snt estate of the late actor Clark Gable in suburban Encino, an
+(x1 / estate
+	:name (x6 / name
+		:op1 "Clark"
+		:op2 "Gable"
+		:mod (x4 / late)
+		:ARG0-of (x5 / actor)
+		:location (x10 / country
+			:name (n / name
+				:op1 "Encino")
+			:mod (x9 / suburb))))
+
+# ::id 54
+# ::snt upper-middle-class section of the San Fernando Valley two miles
+(x2 / section
+	:mod (x1 / upper-middle-class)
+	:poss (x7 / country
+		:name (n / name
+			:op1 "Valley")
+		:null_edge (x6 / country
+			:name (n1 / name
+				:op1 "Fernando")
+			:mod (x5 / country
+				:name (n2 / name
+					:op1 "San")))))
+
+# ::id 55
+# ::snt from his childhood home.
+(x4 / home
+	:purpose (x3 / childhood))
+
+# ::id 56
+# ::snt Milken's fascination with finance stetches back to his boyhood.
+(x6 / stetch
+	:domain (x3 / fascination
+		:ARG0 (x1 / person
+			:name (n / name
+				:op1 "Milken"))
+		:ARG0-of (x5 / finance))
+	:direction (x7 / back)
+	:ARG2 (x10 / boyhood))
+
+# ::id 57
+# ::snt At age 10, while other boys were giggling over comic books,
+(x9 / giggle
+	:time (x2 / age
+		:ARG2 10)
+	:ARG0 (x7 / boy
+		:mod (x6 / other))
+	:ARG2 (x12 / book
+		:mod (x11 / comic)))
+
+# ::id 58
+# ::snt Michael Robert Milken was enamored of money. A favorite pastime was
+(x5 / enamor
+	:ARG1 (x1 / person
+		:name (n / name
+			:op1 "Michael"
+			:op2 "Robert"
+			:op3 "Milken"))
+	:ARG1 (x7 / money)
+	:ARG1 (x11 / pastime
+		:mod (x10 / favorite)))
+
+# ::id 59
+# ::snt hovering over tax returns being prepared by his father, an
+(x1 / hover
+	:ARG1 (x4 / return-01
+		:mod (x3 / tax-01)
+		:ARG1-of (x6 / prepare-01
+			:ARG2 (x9 / father))))
+
+# ::id 60
+# ::snt accountant.
+(x1 / accountant)
+
+# ::id 61
+# ::snt After studying business at the University of California,
+(x1 / after
+	:op1 (x2 / study-01
+		:ARG1 (x3 / business
+			:destination (x8 / state
+				:name (n / name
+					:op1 "California")))))
+
+# ::id 62
+# ::snt Berkeley, and the University of Pennsylvania's Wharton School,
+(x3 / and
+	:op1 (x1 / city
+		:name (n / name
+			:op1 "Berkeley"))
+	:op2 (x5 / government-organization
+		:name (n1 / name
+			:op1 "University"
+			:op2 "of"
+			:op3 "Pennsylvania"
+			:op4 "'s"
+			:op5 "Wharton"
+			:op6 "School")))
+
+# ::id 63
+# ::snt Milken went to work for Drexel Firestone & Co. in Philadelphia as a
+(x2 / go-02
+	:ARG0 (x1 / person
+		:name (n / name
+			:op1 "Milken"))
+	:purpose (x4 / work-01
+		:ARG0 x1
+		:ARG0 (x6 / organization
+			:name (n1 / name
+				:op1 "Drexel"))
+		:ARG3 (x7 / government-organization
+			:name (n2 / name
+				:op1 "Firestone"
+				:op2 "&")
+			:location (x11 / city
+				:name (n3 / name
+					:op1 "Philadelphia")))))
+
+# ::id 64
+# ::snt junior bond trader.
+(x3 / trader
+	:mod (x1 / junior)
+	:ARG1 (x2 / bond))
+
+# ::id 65
+# ::snt Drexel merged with Burnham & Co. in 1973 and Lambert Brussels
+(x2 / merge-01
+	:ARG0 (x1 / organization
+		:name (n / name
+			:op1 "Drexel"))
+	:ARG1 (x4 / government-organization
+		:name (n1 / name
+			:op1 "Burnham"
+			:op2 "&"))
+	:ARG1 (x9 / and
+		:op1 (x8 / date-entity
+			:year 1973)
+		:op2 (x10 / country
+			:name (n2 / name
+				:op1 "Lambert"))))
+
+# ::id 66
+# ::snt Witter in 1976 to become today's Drexel Burnham Lambert, and
+(x12 / and
+	:op1 (x5 / become-01
+		:ARG2 (x1 / name
+			:op1 "Witter"
+			:op2 "in"
+			:op3 "1976"
+			:op4 "to"
+			:op5 "become"
+			:op6 "today"
+			:op7 "'s"
+			:op8 "Drexel"
+			:op9 "Burnham"
+			:op10 "Lambert")
+		:time (x3 / date-entity
+			:year 1976)
+		:time (x6 / today)))
+
+# ::id 67
+# ::snt Milken's job was moved to New York.
+(x5 / move-01
+	:ARG1 (x3 / job
+		:poss (x1 / person
+			:name (n1 / name
+				:op1 "Milken")))
+	:ARG2 (x8 / country
+		:name (n / name
+			:op1 "York")
+		:null_edge (x7 / null_tag)))
+
+# ::id 68
+# ::snt Milken worked hard to make a name for himself but never got used
+(x10 / contrast-01
+	:ARG1 (x2 / work-01
+		:ARG0 (x1 / person
+			:name (n / name
+				:op1 "Milken"))
+		:manner (x3 / hard)
+		:ARG1 (x7 / name))
+	:ARG2 (x13 / use-01))
+
+# ::id 69
+# ::snt to the East. As the story goes, he wearied of the cold Eastern
+(x11 / weary
+	:ARG4 "East"
+	:time (x8 / go-02
+		:ARG1 (x7 / story))
+	:ARG0 (x10 / he)
+	:ARG0 (x15 / world-region
+		:name (n / name
+			:op1 "Eastern")
+		:mod (x14 / cold)))
+
+# ::id 70
+# ::snt winters that froze his water pipes and kept his two children from
+(x1 / winter
+	:domain (x7 / and
+		:op1 (x3 / freeze-02
+			:ARG1 (x6 / pipe
+				:mod (x5 / water)))
+		:op2 (x8 / keep-01
+			:ARG1 (x11 / child
+				:quant 2))))
+
+# ::id 71
+# ::snt playing outside. He also tired of the long commutes from his home
+(x6 / tire
+	:ARG1 (x1 / play-01
+		:location (x2 / outside))
+	:ARG0 (x4 / he)
+	:mod (x5 / also)
+	:ARG0 (x10 / commute-02
+		:mod (x9 / long)
+		:ARG4 (x13 / home)))
+
+# ::id 72
+# ::snt in suburban Philadelphia to Wall Street.
+(x6 / street
+	:location (x3 / city
+		:name (n / name
+			:op1 "Philadelphia")
+		:mod (x2 / suburb))
+	:null_edge (x5 / null_tag))
+
+# ::id 73
+# ::snt In 1977, he pulled off a coup by convincing Drexel to let him
+(x5 / pull-02
+	:time (x2 / date-entity
+		:year 1977)
+	:ARG0 (x4 / he)
+	:ARG2 (x6 / off)
+	:ARG1 (x8 / coup)
+	:ARG1 (x10 / convince-01
+		:ARG1 (x11 / government-organization
+			:name (n / name
+				:op1 "Drexel"))
+		:ARG2 (x13 / let-01)))
+
+# ::id 74
+# ::snt move the company's junk-bond operations from Wall Street to Beverly
+(x1 / move-01
+	:ARG1 (x6 / operation)
+	:ARG2 (x9 / street
+		:null_edge (x8 / null_tag)
+		:null_edge (x11 / country
+			:name (n / name
+				:op1 "Beverly"))))
+
+# ::id 75
+# ::snt Hills, just off swank Rodeo Drive.
+(x1 / country
+	:name (n / name
+		:op1 "Hills")
+	:null_edge (x7 / drive
+		:mod (x3 / just)
+		:mod (x5 / swank)
+		:mod (x6 / rodeo)))
+
+# ::id 76
+# ::snt His reasoning was simple: He didn't have to be sitting in a tiny
+(x4 / simple
+	:domain (x2 / reason-01)
+	:domain (x9 / have-03
+		:ARG0 (x6 / he)
+		:ARG0 (x12 / sit-01
+			:mod (x15 / tiny))))
+
+# ::id 77
+# ::snt office in Manhattan to make deals. He just had to know the players
+(x10 / have-03
+	:ARG0 (x1 / office
+		:location (x3 / country
+			:name (n / name
+				:op1 "Manhattan"))
+		:consist-of (x6 / deal-01
+			:ARG0 (x8 / he)))
+	:mod (x9 / just)
+	:null_edge (x12 / know-01
+		:ARG1 (x14 / person
+			:ARG0-of (p / play-01))))
+
+# ::id 78
+# ::snt and have their confidence.
+(x1 / and
+	:op1 (x2 / have-03
+		:ARG1 (x4 / confident-41)))
+
+# ::id 79
+# ::snt Milken was enormously successful in that regard, almost
+(x4 / succeed-01
+	:ARG0 (x1 / person
+		:name (n / name
+			:op1 "Milken"))
+	:mod (x3 / enormous)
+	:ARG1-of (x7 / regard-01
+		:mod (x6 / that))
+	:null_edge (x9 / almost))
+
+# ::id 80
+# ::snt single-handedly building a close-knit network of junk-bond
+(x2 / build-01
+	:manner (x1 / single-handedly)
+	:ARG1 (x5 / network
+		:mod (x4 / close-knit)
+		:mod (x7 / junk-bond)))
+
+# ::id 81
+# ::snt investors. Milken no longer has to go on the road to make deals.
+(x6 / have-03
+	:ARG0 (x3 / person
+		:name (n / name
+			:op1 "Milken")
+		:null_edge (x1 / person
+			:ARG0-of (i / invest-01)))
+	:ARG2 (x8 / go-02
+		:ARG4 (x11 / road)
+		:ARG1 (x14 / deal-01)))
+
+# ::id 82
+# ::snt The corporate players come to him.
+(x4 / come-01
+	:ARG1 (x3 / person
+		:ARG0-of (p / play-01)
+		:ARG1 (x2 / corporation)))
+
+# ::id 83
+# ::snt Milken still works hard _ 12 to 13 hours a day, seven days a
+(x3 / work-01
+	:ARG0 (x1 / person
+		:name (n / name
+			:op1 "Milken"))
+	:mod (x2 / still)
+	:manner (x4 / hard)
+	:ARG1 (x5 / _
+		:duration (x9 / temporal-quantity
+			:unit (h / hour)
+			:null_edge 12
+			:quant 13))
+	:ARG3 (x14 / temporal-quantity
+		:unit (d / day)
+		:quant 7))
+
+# ::id 84
+# ::snt week. He once said he had no hobbies "because what I do is fun."
+(x5 / say-01
+	:time (x1 / week)
+	:ARG0 (x3 / he)
+	:time (x4 / once)
+	:null_edge (x11 / cause-01
+		:ARG0 (x6 / he)
+		:ARG0 (x9 / hobby
+			:polarity -)
+		:ARG0 (x16 / fun
+			:ARG1-of (x14 / do-02
+				:ARG0 (x13 / i)))))
+
+# ::id 85
+# ::snt Milken's appearance generally is described as ordinary. He buys
+(x11 / buy-01
+	:null_edge (x6 / describe-01
+		:ARG1 (x3 / appear-01
+			:poss (x1 / person
+				:name (n / name
+					:op1 "Milken")))
+		:mod (x4 / general)
+		:ARG2 (x8 / ordinary))
+	:ARG0 (x10 / he))
+
+# ::id 86
+# ::snt his suits off the rack, and it was only a couple years ago that he
+(x2 / suit-01
+	:location (x3 / off
+		:op1 (x5 / rack
+			:ARG1 (x7 / and)))
+	:time (xap0 / before
+		:quant (x12 / null_tag)
+		:ARG0-of (xap1 / before
+			:quant (x13 / temporal-quantity
+				:unit (y / year)
+				:mod (x10 / only)))))
+
+# ::id 87
+# ::snt traded in his unstylish American car for a Mercedes.
+(x1 / trade-01
+	:location (x6 / car
+		:mod (x5 / country
+			:name (n / name
+				:op1 "American"))))
+

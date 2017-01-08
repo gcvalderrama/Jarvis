@@ -1,0 +1,297 @@
+# ::id 1
+# ::snt Someone set a fire early today in a storage room on the luxury liner Regent Star, five days after the ship ran aground in Delaware Bay because of another fire that cut off power, authorities said
+(x38 / say-01
+	:ARG1 (x2 / set-08
+		:ARG0 (x1 / someone)
+		:ARG1 (x4 / fire-01)
+		:time (x5 / early
+			:op1 (x6 / today))
+		:location (x10 / room
+			:mod (x9 / store-01)
+			:ARG2 (x16 / star
+				:mod (x13 / luxury
+					:mod (x14 / liner))
+				:mod (x15 / regent))
+			:time (x20 / after
+				:quant (x19 / temporal-quantity
+					:unit (d / day)
+					:quant 5)
+				:op1 (x23 / run-02
+					:ARG1 (x22 / ship)
+					:time (x24 / aground)
+					:location (x27 / country
+						:name (n / name
+							:op1 "Bay")
+						:null_edge (x26 / country
+							:name (n1 / name
+								:op1 "Delaware")))
+					:ARG1-of (x28 / cause-01
+						:ARG0 (x31 / fire-01
+							:mod (x30 / another)
+							:ARG0-of (x33 / cut-02
+								:ARG1 (x35 / power))))))))
+	:ARG0 (x37 / authority))
+
+# ::id 2
+# ::snt No passengers were aboard and no injuries were reported in the 5 a.m. blaze, which was controlled within 90 minutes, said Patrick McKee, a dispatcher for the city fire department
+(x5 / and
+	:op2 (x2 / passenger
+		:location (x4 / aboard))
+	:op2 (x9 / report-01
+		:polarity -
+		:ARG1 (x7 / injure-01)
+		:time (x14 / blaze
+			:ARG1-of (x18 / control-01
+				:time (x19 / within
+					:op1 (x21 / temporal-quantity
+						:unit (m / minute)
+						:quant 90
+						:name (x24 / name
+							:op1 "Patrick"
+							:op2 "McKee"
+							:ARG1-of (x23 / say-01)
+							:ARG0-of (x28 / dispatcher
+								:ARG1 (x33 / department
+									:mod (x31 / city)
+									:mod (x32 / fire-arm))))))))))
+
+# ::id 3
+# ::snt " The fire on the Regent Star was started in a maintenance storage room, " said Lt. Jack Christmas, a fire department spokesman
+(x17 / say-01
+	:ARG1 (x9 / start-01
+		:ARG1 (x3 / fire-01
+			:ARG1 (x7 / star
+				:mod (x6 / regent)))
+		:location (x14 / room
+			:mod (x13 / store-01
+				:mod (x12 / maintain-01))))
+	:ARG0 (x19 / newspaper
+		:name (n / name
+			:op1 "Jack"
+			:op2 "Christmas")
+		:ARG0-of (x18 / lt.)
+		:ARG0-of (x25 / have-org-role-91
+			:ARG2 (s / spokesman)
+			:ARG1 (x23 / fire-arm)
+			:ARG1 (x24 / department))))
+
+# ::id 4
+# ::snt " The fire marshal investigating has determined ... that the fire was intentionally set .
+(x7 / determine-01
+	:ARG0 (x4 / marshal
+		:mod (x3 / fire-arm)
+		:ARG0-of (x5 / investigate-01))
+	:ARG1 (x14 / set-08
+		:ARG1 (x11 / fire-01)
+		:frequency (x13 / intentionally)))
+
+# ::id 5
+# ::snt There were no immediate suspects and no immediate evidence to indicate that the fire was linked to the earlier fire, Christmas said
+(x23 / say-01
+	:ARG1 (x6 / and
+		:op1 (x5 / person
+			:ARG2-of (s / suspect-01)
+			:polarity -
+			:mod (x4 / immediate)
+			:ARG0-of (x11 / indicate-01
+				:ARG1 (x16 / link-01
+					:ARG1 (xap0 / and
+						:op2 (x14 / fire-01)
+						:op2 (x20 / fire-01
+							:time (x19 / early))))))
+		:op1 (x9 / evidence-01
+			:polarity -
+			:time (x8 / immediate)))
+	:ARG0 (x22 / festival
+		:name (n / name
+			:op1 "Christmas")))
+
+# ::id 6
+# ::snt The 20,000-ton liner was on The 20,000-ton liner way from Jamaica to Philadelphia on Sunday when a small fire prompted a power loss, allowing the ship to drift onto a sandbar
+(x20 / prompt-02
+	:ARG1 (x3 / liner
+		:mod (x2 / 20,000-ton)
+		:manner (x9 / way
+			:mod (x8 / liner
+				:mod (x7 / 20,000-ton))
+			:source (x11 / country
+				:name (n / name
+					:op1 "Jamaica"))
+			:destination (x13 / city
+				:name (n1 / name
+					:op1 "Philadelphia"))
+			:time (xap0 / date-entity
+				:weekday (x15 / sunday))))
+	:ARG0 (x19 / fire-01
+		:mod (x18 / small))
+	:ARG2 (x25 / allow-01
+		:ARG1 (x29 / drift-01
+			:ARG1 (x27 / ship)
+			:ARG1 (x32 / sandbar))
+		:ARG0 (xap1 / lose-02
+			:ARG1 (x22 / power)))
+	:ARG1 xap1)
+
+# ::id 7
+# ::snt The 885 passengers left the ship by ferry Monday, a day after The 885 passengers were supposed to return
+(x4 / leave-01
+	:ARG0 (x3 / passenger
+		:quant (x2 / 885))
+	:ARG1 (x6 / ship)
+	:time (x7 / by
+		:op1 (xap0 / date-entity
+			:weekday (x9 / monday
+				:mod (x8 / ferry-01)
+				:month (x12 / temporal-quantity
+					:unit (d / day)
+					:time (x13 / after
+						:op1 (x18 / suppose-02
+							:ARG1 (x16 / passenger
+								:quant (x15 / 885))
+							:ARG2 (x20 / return-01))))))))
+
+# ::id 8
+# ::snt No one was injured
+(x4 / injure-01
+	:ARG1 1)
+
+# ::id 9
+# ::snt The liner was freed Tuesday, and the ship was then docked while the Coast Guard makes safety checks
+(x7 / and
+	:op1 (x4 / free-01
+		:ARG1 (x2 / liner)
+		:time (xap0 / date-entity
+			:weekday (x5 / tuesday)))
+	:op2 (x12 / dock-01
+		:ARG1 (x9 / ship)
+		:time (x11 / then)
+		:ARG0-of (x17 / make-02
+			:ARG0 (x15 / military
+				:name (n / name
+					:op1 "Coast"
+					:op2 "Guard"))
+			:ARG1 (x19 / check-01
+				:mod (x18 / safe-41)))))
+
+# ::id 10
+# ::snt Thursday, Coast Guard Petty Officer Ken Beatty said the ship passed all inspections and there was no serious damage from the grounding
+(x9 / say-01
+	:ARG0 (x7 / newspaper
+		:name (n / name
+			:op1 "Ken"
+			:op2 "Beatty")
+		:ARG0-of (x3 / have-org-role-91
+			:ARG1 (m / military
+				:name (n1 / name
+					:op1 "Coast")))
+		:ARG0-of (x5 / petty
+			:ARG1 (x4 / organization
+				:name (n2 / name
+					:op1 "Guard")))
+		:ARG0-of (x6 / officer))
+	:ARG1 (x15 / and
+		:op1 (x12 / pass-01
+			:ARG0 (x11 / ship)
+			:ARG1 (x14 / inspect-01
+				:quant (x13 / all))
+			:ARG1 (x20 / damage-01
+				:polarity -
+				:mod (x19 / serious)
+				:source (x23 / grounding))))
+	:time (xap0 / date-entity
+		:weekday (x1 / thursday)))
+
+# ::id 11
+# ::snt The ship had been due to start on a two-day cruise later today, but that was canceled after the second fire broke out, authorities said
+(x27 / say-01
+	:ARG1 (x7 / start-01
+		:ARG1 (x2 / ship)
+		:ARG1 (x11 / cruise)
+		:time (x12 / late)
+		:time (x13 / today)
+		:ARG1-of (x18 / cancel-01
+			:time (x19 / after
+				:op1 (x23 / break-08
+					:ARG0 (x22 / fire-01)))))
+	:ARG0 (x26 / authority))
+
+# ::id 12
+# ::snt The Coast Guard has said it might be months before a final report on the grounding is complete
+(x5 / say-01
+	:ARG0 (x2 / military
+		:name (n / name
+			:op1 "Coast"
+			:op2 "Guard"))
+	:time (x10 / before
+		:op1 (x9 / temporal-quantity
+			:unit (m / month))
+		:op1 (x18 / complete-01
+			:ARG0 (x13 / report
+				:mod (x12 / final)
+				:topic (x16 / grounding)))))
+
+# ::id 13
+# ::snt An hour after this morning's fire was controlled, about 300 crew members sat or stood in small groups alongside the Port of History Museum where the ship was tied up
+(x9 / control-01
+	:ARG1 (x2 / thing
+		:name (n / name
+			:op1 "hour"
+			:op2 "after")
+		:mod (x7 / fire-01
+			:time (x5 / morning
+				:mod (x4 / this))))
+	:time (x16 / or
+		:op1 (x15 / sit-01
+			:ARG2 (x20 / group
+				:mod (x19 / small))
+			:purpose (x26 / museum
+				:null_edge (x23 / port)
+				:ARG1 (x25 / history)
+				:ARG1-of (x31 / tie-01
+					:ARG1 (x29 / ship))))
+		:op2 (x17 / stand-01)
+		:op1 (xap0 / person
+			:ARG0-of (x14 / have-org-role-91
+				:ARG2 (m / member)
+				:quant (x11 / about
+					:op1 300)
+				:ARG1 (x13 / crew)))))
+
+# ::id 14
+# ::snt Many still wearin the orange life preservers they had put om when they abandoned the ship
+(x3 / wearin
+	:null_edge (x1 / many)
+	:mod (x2 / still)
+	:ARG1 (x7 / preserver
+		:mod (x6 / life
+			:mod (x5 / orange))
+		:ARG1-of (x10 / put-01
+			:ARG1 (x11 / om)
+			:time (x14 / abandon-01
+				:ARG1 (x16 / ship)))))
+
+# ::id 15
+# ::snt Others were sitting on the preservers
+(x3 / sit-01
+	:ARG1 (x1 / person
+		:mod (o / other))
+	:ARG1 (x6 / preserver))
+
+# ::id 16
+# ::snt Many of them said they did n't speak English, and one who did refused to be identified and said he did n't know anything about what happened
+(x4 / say-01
+	:ARG0 (x1 / many
+		:ARG1-of (x2 / include-91))
+	:ARG1 (x11 / and
+		:op1 (x8 / person
+			:ARG0-of (s / speak-01)
+			:name (x9 / name
+				:op1 "English"))
+		:op2 (x15 / refuse-01
+			:ARG1 (x18 / identify-01)
+			:ARG1 (x20 / say-01
+				:ARG1 (x24 / know-01
+					:ARG1 (x25 / anything
+						:topic (x28 / thing
+							:ARG1-of (h / happen-01))))))))
+

@@ -1,0 +1,272 @@
+# ::id 1
+# ::snt Hundreds of thousands of Hindu pilgrims plunged into sacred rivers and pools during a solar eclipse Sunday, believing Hundreds of thousands of Hindu pilgrims would be freed of sin and attain salvation
+(x7 / plunge
+	:ARG2 (x6 / pilgrim)
+	:ARG1 (x11 / and
+		:op1 (x10 / river
+			:mod (x9 / sacred))
+		:op2 (x12 / pool))
+	:time (x16 / eclipse-01
+		:mod (x15 / solar))
+	:purpose (x19 / believe-01
+		:ARG0 x11
+		:ARG1 (x31 / and
+			:op1 (x28 / free-01
+				:ARG2 (x25 / pilgrim)
+				:ARG2 (x30 / sin-01))
+			:op2 (x32 / attain-01
+				:ARG1 (x33 / salvation))))
+	:time (xap0 / date-entity
+		:weekday (x17 / sunday)))
+
+# ::id 2
+# ::snt Authorities said a 12-year-old boy drowned
+(x2 / say-01
+	:ARG0 (x1 / authority)
+	:ARG1 (x6 / drown
+		:ARG0 (x5 / boy
+			:mod (x4 / person
+				:name (n / name
+					:op1 "12-year-old")))))
+
+# ::id 3
+# ::snt As the moon partially passed between the Earth and sun, worshipers chanted hymns and blew conch shells
+(x15 / and
+	:op1 (x13 / chant-01
+		:ARG1 (x12 / worshiper)
+		:ARG1 (x14 / hymn)
+		:ARG1 (xap0 / and
+			:op3 (x3 / moon)
+			:ARG0 (x5 / pass-01
+				:manner (x4 / partial)
+				:ARG1 (x9 / and
+					:op1 (x8 / planet
+						:name (n / name
+							:op1 "Earth"))
+					:op2 (x10 / sun)))))
+	:op2 (x16 / blow-01
+		:ARG0 x12
+		:ARG1 (x18 / shell
+			:mod (x17 / conch))))
+
+# ::id 4
+# ::snt About 3,000 naked holy men waded into the giant sacred pools of Sannihit and Brahmsarovar, followed in turns by an estimated 500,000 men and women, some clothed, others naked
+(x6 / wade
+	:ARG0 (x5 / man
+		:quant (x1 / about)
+		:mod (x4 / holy
+			:mod (x3 / naked)))
+	:ARG2 (x11 / pool
+		:mod (x9 / giant)
+		:mod (x10 / sacred)
+		:location-of (x14 / and
+			:op1 (x13 / country
+				:name (n / name
+					:op1 "Sannihit"))
+			:op2 (x15 / person
+				:name (n1 / name
+					:op1 "Brahmsarovar"))))
+	:ARG1-of (x17 / follow-01
+		:ARG2 (x19 / turn)
+		:ARG2 (x25 / and
+			:op1 (x24 / man
+				:ARG1-of (x22 / estimate-01)
+				:quant (x23 / 500,000)
+				:ARG1-of (x29 / clothe
+					:null_edge (x28 / some)))
+			:op2 (x26 / woman))
+		:ARG2 (x32 / naked
+			:ARG0 (x31 / other))))
+
+# ::id 5
+# ::snt Many carried coconuts, auspicious symbols for Hindus, and set them in the water
+(x10 / and
+	:op1 (x1 / many)
+	:op2 (x3 / coconut
+		:location (x6 / thing
+			:ARG1-of (s / symbolize-01)
+			:mod (x5 / auspicious)))
+	:op2 (x11 / set-03
+		:ARG2 (x15 / water)))
+
+# ::id 6
+# ::snt Others gave alms to beggars or Hindu priests, who offered prayers to the sun
+(x3 / alms
+	:ARG0 (x1 / person
+		:mod (o / other))
+	:ARG2 (x6 / or
+		:op1 (x5 / beggar
+			:ARG1-of (x11 / offer-01
+				:ARG1 (x12 / pray-01
+					:ARG4 (x15 / sun))))
+		:op2 (x8 / priest
+			:mod (x7 / organization
+				:name (n / name
+					:op1 "Hindu")))))
+
+# ::id 7
+# ::snt There is an ancient belief that the sun is in pain during an eclipse and prayers must be offered for an ancient belief relief
+(x5 / thing
+	:ARG1-of (b / believe-01)
+	:mod (x4 / ancient)
+	:ARG1 (x8 / sun
+		:ARG1 (x15 / and
+			:op1 (x11 / pain-01)
+			:op2 (x19 / offer-01
+				:ARG1 (x16 / pray-01)
+				:purpose (x24 / relieve-01
+					:mod (x22 / ancient)
+					:ARG1 (x23 / believe-01))))))
+
+# ::id 8
+# ::snt The scene was repeated, in smaller numbers, at rivers and pools across India
+(x4 / repeat-01
+	:ARG1 (x2 / scene)
+	:location (x12 / and
+		:op1 (x8 / number
+			:mod (x7 / small))
+		:op1 (x11 / river
+			:location (x14 / across
+				:op1 (x15 / country
+					:name (n / name
+						:op1 "India"))))
+		:op2 (x13 / pool)))
+
+# ::id 9
+# ::snt An epic Hindu poem, the " Mahabharata, " promises salvation to those who bathe or give alms at Kurukshetra during a solar eclipse
+(x11 / promise-01
+	:ARG0 (x4 / poem
+		:mod (x3 / religious-group
+			:name (n / name
+				:op1 "Hindu")
+			:mod (x2 / epic)))
+	:ARG1 (x12 / salvation)
+	:ARG2 (x17 / or
+		:op1 (x16 / bathe
+			:ARG1 (x19 / alms)
+			:location (x21 / country
+				:name (n1 / name
+					:op1 "Kurukshetra"))
+			:time (x25 / eclipse-01
+				:mod (x24 / solar)))
+		:op2 (x18 / give-01)))
+
+# ::id 10
+# ::snt Kurukshetra's larger pool, Brahmasarovar, has a two-mile perimeter
+(x4 / pool
+	:ARG0 (x1 / country
+		:name (n / name
+			:op1 "Kurukshetra"))
+	:mod (x3 / large)
+	:ARG1 (x11 / perimeter
+		:direction (x6 / person
+			:name (n1 / name
+				:op1 "Brahmasarovar"))
+		:mod (x10 / two-mile)))
+
+# ::id 11
+# ::snt Sannihit's perimeter is about half that size
+(x8 / size
+	:domain (x3 / perimeter
+		:poss (x1 / person
+			:name (n / name
+				:op1 "Sannihit")))
+	:null_edge (x6 / null_tag)
+	:mod (x7 / that))
+
+# ::id 12
+# ::snt The pools can accomodate 125,000 people
+(x3 / possible
+	:domain (x4 / accomodate
+		:ARG0 (x2 / pool)
+		:ARG1 (x5 / 125,000)))
+
+# ::id 13
+# ::snt Thousands of police stood guard and directed traffic in the town of 25,000 people about 90 miles north of New Delhi
+(x6 / and
+	:op1 (x4 / stand-01
+		:ARG1 (x1 / thousands
+			:ARG1 (x3 / police))
+		:ARG1 (x5 / guard-01))
+	:op2 (x7 / direct-01
+		:ARG1 (x8 / traffic)
+		:ARG2 (x11 / town
+			:ARG1-of (x12 / include-91)
+			:location (x18 / north
+				:quant (x17 / distance-quantity
+					:unit (m / mile)
+					:null_edge (x15 / about
+						:null_edge 90)))
+			:location (x20 / city
+				:name (n / name
+					:op1 "New"
+					:op2 "Delhi")))))
+
+# ::id 14
+# ::snt Divers and lifeguards kept watch over the bathers but could not save the 12-year-old boy from drowning, authorities said
+(x20 / say-01
+	:ARG1 (x9 / contrast-01
+		:ARG2 (x4 / keep-01
+			:ARG0 (x2 / and
+				:op1 (x1 / diver)
+				:op2 (x3 / lifeguard))
+			:ARG1 (x5 / watch-01
+				:ARG0 x2)
+			:ARG2 (x8 / bather))
+		:ARG2 (x10 / possible
+			:domain (x12 / save-02
+				:ARG1 (x15 / boy
+					:mod (x14 / person
+						:name (n / name
+							:op1 "12-year-old")))
+				:ARG2 (x17 / drown))))
+	:ARG0 (x19 / authority))
+
+# ::id 15
+# ::snt The eclipse, which lasted about 90 minutes, was the third in the past year
+(x5 / last-01
+	:ARG1 (x8 / temporal-quantity
+		:unit (m / minute)
+		:null_edge (x6 / about
+			:op1 (x2 / eclipse-01)
+			:null_edge 90
+			:op1 (x16 / year
+				:mod (x15 / past)))))
+
+# ::id 16
+# ::snt The others occurred on March 18 and Sept. 13, 1987
+(x7 / and
+	:op5 (x2 / other)
+	:time (x5 / date-entity)
+	:op2 (x8 / name
+		:op1 "Sept."
+		:op2 "13"
+		:op3 ","
+		:op4 "1987"))
+
+# ::id 17
+# ::snt According to Hindu legend, Kurukshetra was created by the Hindu god Lord Brahma and was the scene of an ancient battle in which Lord Vishnu, the protector of the Hindu diety, pleaded for righteousness
+(x15 / and
+	:op1 (x8 / create-01
+		:ARG2 (x4 / legend)
+		:ARG1 (x6 / country
+			:name (n / name
+				:op1 "Kurukshetra"))
+		:ARG0 (x12 / god
+			:name (x14 / person
+				:name (n1 / name
+					:op1 "Brahma")
+				:null_edge (x11 / religious-group
+					:name (n2 / name
+						:op1 "Hindu"))
+				:null_edge (x13 / null_tag))))
+	:op2 (x18 / scene
+		:part-of (x22 / battle-01
+			:mod (x21 / ancient)
+			:time (x35 / plead-01
+				:ARG0 (x26 / vishnu
+					:null_edge (x25 / null_tag)
+					:null_edge (x29 / protector
+						:poss (x33 / diety)))
+				:ARG1 (x37 / righteousness)))))
+

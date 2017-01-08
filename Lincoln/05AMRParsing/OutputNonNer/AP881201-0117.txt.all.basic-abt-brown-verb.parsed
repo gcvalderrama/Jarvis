@@ -1,0 +1,761 @@
+# ::id 1
+# ::snt President Reagan will nominate national
+(x4 / nominate-01
+	:ARG0 (x2 / person
+		:name (n / name
+			:op1 "Reagan")
+		:ARG0-of (x1 / have-org-role-91
+			:ARG2 (p / president)))
+	:ARG2 (x5 / national))
+
+# ::id 2
+# ::snt security adviser Colin Powell for promotion to four-star rank and
+(x10 / and
+	:op1 (x2 / have-org-role-91
+		:ARG2 (p / person
+			:ARG0-of (a / advise-01))
+		:ARG2 (x1 / security)
+		:ARG1 (x3 / person
+			:name (n / name
+				:op1 "Colin"
+				:op2 "Powell"))
+		:ARG2 (x6 / promote-01)
+		:ARG2 (x9 / person
+			:ARG1-of (r / rank-01)
+			:mod (x8 / four-star))))
+
+# ::id 3
+# ::snt the post of commander-in-chief of the Army's Forces Command, the
+(x2 / post
+	:ARG2 (x4 / commander-in-chief
+		:ARG1 (x10 / command-02
+			:null_edge (x7 / military
+				:name (n / name
+					:op1 "Army")))))
+
+# ::id 4
+# ::snt White House and Pentagon announced today.
+(x5 / announce-01
+	:ARG0 (x3 / and
+		:op1 (x2 / government-organization
+			:name (n / name
+				:op1 "House")
+			:null_edge (x1 / null_tag))
+		:op2 (x4 / government-organization
+			:name (n1 / name
+				:op1 "Pentagon")))
+	:time (x6 / today))
+
+# ::id 5
+# ::snt The promotion would make the 51-year-old Powell, now a lieutenant
+(x2 / promote-02
+	:ARG1 (x7 / person
+		:name (n / name
+			:op1 "Powell")
+		:null_edge (x6 / person
+			:name (n1 / name
+				:op1 "51-year-old"))
+		:ARG0-of (x11 / lieutenant
+			:time (x9 / now))))
+
+# ::id 6
+# ::snt general with three stars, the fourth black officer to attain
+(x1 / general
+	:ARG2 (xap0 / person
+		:quant 3
+		:ARG2 (x4 / star)
+		:mod (x8 / black)
+		:ARG0-of (x9 / have-org-role-91
+			:ARG2 (o / officer)
+			:ARG1 (x11 / attain-01))))
+
+# ::id 7
+# ::snt four-star rank in the U.S. armed forces. One of those four is
+(x2 / rank-01
+	:mod (x1 / four-star)
+	:prep-in (x7 / force
+		:mod (x5 / country
+			:name (n / name
+				:op1 "U.S."))
+		:ARG1-of (x6 / arm-01))
+	:ARG1-of (x10 / include-91
+		:ARG2 4))
+
+# ::id 8
+# ::snt currently on active duty _ Air Force Gen. Bernard P. Randolph.
+(x5 / _
+	:time (x1 / current)
+	:prep-on (x4 / duty
+		:mod (x3 / active
+			:domain (x6 / government-organization
+				:name (n / name
+					:op1 "Air"
+					:op2 "Force"
+					:op3 "Gen."
+					:op4 "Bernard"
+					:op5 "P."
+					:op6 "Randolph")))))
+
+# ::id 9
+# ::snt The promotion requires Senate confirmation.
+(x3 / require-01
+	:ARG0 (x2 / promote-02)
+	:ARG1 (x5 / confirm-01
+		:ARG0 (x4 / government-organization
+			:name (n / name
+				:op1 "Senate"))))
+
+# ::id 10
+# ::snt In the new post, Powell would be in charge of all the Army troops
+(x4 / post
+	:mod (x3 / new)
+	:ARG2 (x10 / charge-05
+		:ARG0 (x6 / person
+			:name (n / name
+				:op1 "Powell"))
+		:poss (x15 / troop
+			:quant (x12 / all)
+			:mod (x14 / military
+				:name (n1 / name
+					:op1 "Army")))))
+
+# ::id 11
+# ::snt in the continental United States. The command is headquartered at
+(x10 / headquarter-01
+	:location (x4 / country
+		:name (n / name
+			:op1 "United"
+			:op2 "States")
+		:mod (x3 / continental))
+	:ARG1 (x8 / command-02))
+
+# ::id 12
+# ::snt Ft. McPherson in Atlanta and has traditionally been a major career
+(x5 / and
+	:op1 (x1 / null_tag
+		:location (x4 / country
+			:name (n / name
+				:op1 "Atlanta")))
+	:op2 (x11 / career
+		:mod (x7 / tradition)
+		:mod (x10 / major)))
+
+# ::id 13
+# ::snt stepping stone for senior Army commanders.
+(x2 / stone
+	:mod (x1 / step)
+	:ARG3 (x6 / have-org-role-91
+		:ARG2 (c / commander)
+		:mod (x4 / senior)))
+
+# ::id 14
+# ::snt "President Reagan has the highest respect and affection for
+(x4 / have-03
+	:ARG0 (x3 / person
+		:name (n / name
+			:op1 "Reagan")
+		:ARG0-of (x2 / have-org-role-91
+			:ARG2 (p / president)))
+	:ARG1 (x8 / and
+		:op1 (x7 / respect-01
+			:mod (x6 / high
+				:degree (m / most)))
+		:op2 (x9 / affection)))
+
+# ::id 15
+# ::snt General Powell and wishes him all success in his Army career,"
+(x3 / and
+	:op1 (x4 / wish-01
+		:ARG0 (x2 / person
+			:name (n / name
+				:op1 "Powell")
+			:ARG0-of (x1 / general))
+		:ARG1 (x7 / success
+			:quant (x6 / all)
+			:location (x11 / career
+				:poss (x10 / military
+					:name (n1 / name
+						:op1 "Army"))))))
+
+# ::id 16
+# ::snt White House spokesman Marlin Fitzwater said in announcing the
+(x6 / say-01
+	:ARG0 (x5 / person
+		:name (n / name
+			:op1 "Fitzwater")
+		:null_edge (x1 / white)
+		:null_edge (x3 / have-org-role-91
+			:ARG2 (s / spokesman)
+			:ARG1 (x2 / government-organization
+				:name (n1 / name
+					:op1 "House"))))
+	:ARG1 (x8 / announce-01))
+
+# ::id 17
+# ::snt nomination. He noted that Powell and Reagan "have had a close
+(x1 / nominate-01
+	:ARG1 (x4 / note-01
+		:ARG0 (x3 / he)
+		:ARG1 (x11 / have-03
+			:ARG0 (x7 / and
+				:op1 (x6 / person
+					:name (n / name
+						:op1 "Powell"))
+				:op2 (x8 / person
+					:name (n1 / name
+						:op1 "Reagan")))
+			:ARG1 (x13 / close-01))))
+
+# ::id 18
+# ::snt personal relationship."
+(x2 / relationship
+	:mod (x1 / personal))
+
+# ::id 19
+# ::snt "He was the general who guided preparations for the Gorbachev
+(x5 / general
+	:domain (x2 / he)
+	:ARG1-of (x7 / guide-01
+		:ARG1 (x8 / prepare-02
+			:ARG1 (x11 / person
+				:name (n / name
+					:op1 "Gorbachev")))))
+
+# ::id 20
+# ::snt summits, who helped restructure and give new direction to the
+(x1 / summit
+	:ARG0-of (x4 / help-01
+		:ARG1 (x6 / and
+			:op1 (x5 / restructure-01
+				:ARG1 (x9 / direction
+					:mod (x8 / new)))
+			:op2 (x7 / give-01))))
+
+# ::id 21
+# ::snt National Security Council following the Iran Contra investigation,
+(x3 / council
+	:null_edge (x1 / null_tag)
+	:null_edge (x2 / null_tag)
+	:ARG1-of (x4 / follow-01
+		:ARG2 (x8 / investigate-01
+			:name (x6 / name
+				:op1 "Iran"))))
+
+# ::id 22
+# ::snt and who, by his personal integrity and commitment, has restored
+(x1 / and
+	:op1 (x12 / restore-01
+		:ARG0 (x8 / and
+			:op1 (x7 / integrity
+				:mod (x6 / personal))
+			:op2 (x9 / commit-01))))
+
+# ::id 23
+# ::snt confidence in the National Seucirty Council itself," Fitzwater told
+(x11 / tell-01
+	:ARG0 (x10 / person
+		:name (n / name
+			:op1 "Fitzwater")
+		:ARG0-of (x1 / confident-41
+			:location (x4 / government-organization
+				:name (n1 / name
+					:op1 "National"
+					:op2 "Seucirty"
+					:op3 "Council")))))
+
+# ::id 24
+# ::snt reporters.
+(x1 / person
+	:ARG0-of (r / report-01))
+
+# ::id 25
+# ::snt "General Powell has been a friend and colleague whose advice and
+(x / xconcept
+	:x (x8 / and
+		:op1 (x7 / friend
+			:domain (x3 / person
+				:name (n / name
+					:op1 "Powell")
+				:null_edge (x2 / general)))
+		:op2 (x9 / colleague))
+	:x (x12 / and
+		:op2 (x11 / advise-01)))
+
+# ::id 26
+# ::snt counsel have been valued by all members of the White House staff. He
+(x4 / value-01
+	:ARG1 (x1 / counsel)
+	:ARG2 (x14 / he)
+	:ARG0 (xap0 / person
+		:quant (x6 / all)
+		:ARG0-of (x7 / have-org-role-91
+			:ARG2 (m / member)
+			:ARG1 (x12 / person
+				:ARG2-of (s / staff-01)
+				:mod (x10 / white
+					:ARG0-of (x11 / government-organization
+						:name (n / name
+							:op1 "House")))))))
+
+# ::id 27
+# ::snt is a man of rare quality and distinction," the spokesman added.
+(x13 / add-01
+	:ARG1 (x7 / and
+		:op1 (x3 / man)
+		:op1 (x6 / quality
+			:mod (x5 / rare))
+		:op2 (x8 / distinction))
+	:ARG0 (xap0 / person
+		:ARG0-of (x12 / have-org-role-91
+			:ARG2 (s / spokesman))))
+
+# ::id 28
+# ::snt The spokesman said that Powell is expected to assume command in
+(x3 / say-01
+	:ARG1 (x7 / expect-01
+		:ARG1 (x9 / assume-02
+			:ARG0 (x5 / person
+				:name (n / name
+					:op1 "Powell"))
+			:ARG1 (x10 / command)))
+	:ARG0 (xap0 / person
+		:ARG0-of (x2 / have-org-role-91
+			:ARG2 (s / spokesman))))
+
+# ::id 29
+# ::snt April, 1989, when the current commander, Gen. Joseph T. Palastra
+(x1 / person
+	:name (n / name
+		:op1 "April"
+		:op2 ","
+		:op3 "1989"
+		:op4 ","
+		:op5 "when"
+		:op6 "the"
+		:op7 "current"
+		:op8 "commander"
+		:op9 ","
+		:op10 "Gen."
+		:op11 "Joseph"
+		:op12 "T."
+		:op13 "Palastra")
+	:mod (x7 / current))
+
+# ::id 30
+# ::snt Jr., retires. Palastra has held the post since June 1986 and is
+(x1 / country
+	:name (n / name
+		:op1 "Jr.")
+	:null_edge (x3 / retire-01)
+	:null_edge (x7 / hold-01
+		:ARG0 (x5 / person
+			:name (n1 / name
+				:op1 "Palastra"))
+		:ARG1 (x9 / post)
+		:time (x10 / since
+			:op1 (x11 / date-entity
+				:year 1986))
+		:ARG2 (x13 / and)))
+
+# ::id 31
+# ::snt retiring after 35 years of active military service.
+(x1 / retire-01
+	:time (x2 / after
+		:op1 (x8 / serve-01
+			:duration (x4 / temporal-quantity
+				:unit (y / year)
+				:quant 35)
+			:mod (x6 / active)
+			:mod (x7 / military))))
+
+# ::id 32
+# ::snt After leaving the White House Powell plans to visit a number of
+(x7 / plan-01
+	:time (x1 / after
+		:op1 (x2 / leave-06
+			:ARG1 (x5 / government-organization
+				:name (n1 / name
+					:op1 "House")
+				:mod (x4 / white))))
+	:ARG0 (x6 / person
+		:name (n / name
+			:op1 "Powell"))
+	:ARG1 (x9 / visit-01
+		:ARG0 x6
+		:ARG1 (x11 / number)))
+
+# ::id 33
+# ::snt army units before assuming his command, Fitzwater said.
+(x9 / say-01
+	:time (x3 / before
+		:op1 (x2 / unit
+			:mod (x1 / army))
+		:op1 (x4 / assume-02
+			:ARG1 (x6 / command)))
+	:ARG0 (x8 / person
+		:name (n / name
+			:op1 "Fitzwater")))
+
+# ::id 34
+# ::snt The spokesman said Powell's new job includes preparing soldiers
+(x3 / say-01
+	:ARG1 (x8 / include-01
+		:ARG2 (x7 / job
+			:poss (x4 / person
+				:name (n / name
+					:op1 "Powell"))
+			:mod (x6 / new))
+		:ARG1 (x9 / prepare-02
+			:ARG1 (x10 / soldier)))
+	:ARG0 (xap0 / person
+		:ARG0-of (x2 / have-org-role-91
+			:ARG2 (s / spokesman))))
+
+# ::id 35
+# ::snt for world-wide deployment and to defend the U.S. continent.
+(x4 / and
+	:op2 (x3 / deploy-01
+		:mod (x2 / world-wide)
+		:ARG1 (x6 / defend-01
+			:ARG1 (x9 / continent
+				:mod (x8 / country
+					:name (n / name
+						:op1 "U.S."))))))
+
+# ::id 36
+# ::snt The upcoming promotion was first reported Thursday by the Cox
+(x6 / report-01
+	:ARG1 (x3 / promote-02
+		:mod (x2 / upcome))
+	:time (xap0 / date-entity
+		:weekday (x7 / thursday)))
+
+# ::id 37
+# ::snt News Service and confirmed a short while later by administration
+(x3 / and
+	:op1 (x4 / confirm-01
+		:ARG0 (x2 / organization
+			:name (n / name
+				:op1 "Service")
+			:null_edge (x1 / null_tag))
+		:time (x8 / late
+			:op1 (x7 / while
+				:mod (x6 / short)))
+		:ARG0 (xap0 / government-organization
+			:ARG0-of (x10 / administrate-01))))
+
+# ::id 38
+# ::snt officials. The Pentagon later released a short statement announcing
+(x1 / have-org-role-91
+	:ARG2 (o / official)
+	:ARG1 (x6 / release-01
+		:ARG0 (x4 / government-organization
+			:name (n / name
+				:op1 "Pentagon"))
+		:time (x5 / late)
+		:ARG1 (x9 / state-01
+			:duration (x8 / short)
+			:ARG0-of (x10 / name
+				:op1 "announcing"))))
+
+# ::id 39
+# ::snt President Reagan's intent to nominate Powell for the job.
+(x6 / nominate-01
+	:ARG0 (x4 / intend-01
+		:ARG0 (x2 / person
+			:name (n1 / name
+				:op1 "Reagan")
+			:ARG0-of (x1 / have-org-role-91
+				:ARG2 (p / president))))
+	:ARG1 (x7 / person
+		:name (n / name
+			:op1 "Powell"))
+	:ARG1 (x10 / job))
+
+# ::id 40
+# ::snt Sources at the Pentagon said the FORSCOM position was one of the
+(x5 / say-01
+	:ARG0 (x1 / source
+		:location (x4 / government-organization
+			:name (n / name
+				:op1 "Pentagon")))
+	:ARG1 (x8 / position
+		:ARG2 (x7 / forscom)))
+
+# ::id 41
+# ::snt few Army four-star posts scheduled to open in the next few months.
+(x5 / schedule-01
+	:ARG1 (x4 / post
+		:quant (x1 / few)
+		:mod (x2 / military
+			:name (n / name
+				:op1 "Army"))
+		:mod (x3 / four-star))
+	:ARG1 (x7 / open-01
+		:null_edge (x11 / few
+			:op1 (x12 / month))))
+
+# ::id 42
+# ::snt Powell succeeded Frank C. Carlucci as President Reagan's national
+(x2 / succeed-01
+	:ARG0 (x1 / person
+		:name (n / name
+			:op1 "Powell"))
+	:ARG1 (x3 / name
+		:op1 "Frank"
+		:op2 "C."
+		:op3 "Carlucci")
+	:null_edge (x8 / person
+		:name (n1 / name
+			:op1 "Reagan")
+		:null_edge (x7 / have-org-role-91
+			:ARG2 (p / president))
+		:null_edge (x10 / nation)))
+
+# ::id 43
+# ::snt security adviser after Carlucci was tapped to replace the retiring
+(x6 / tap
+	:ARG1 (x2 / have-org-role-91
+		:ARG2 (p / person
+			:ARG0-of (a / advise-01))
+		:ARG1 (x1 / security)
+		:time (x3 / after
+			:op1 (x4 / person
+				:name (n / name
+					:op1 "Carlucci"))))
+	:ARG1 (x8 / replace-01
+		:ARG1 (x10 / retire-01)))
+
+# ::id 44
+# ::snt Caspar W. Weinberger.
+(x1 / name
+	:op1 "Caspar"
+	:op2 "W."
+	:op3 "Weinberger")
+
+# ::id 45
+# ::snt Carlucci was called back to government service by President
+(x3 / call-01
+	:ARG1 (x1 / person
+		:name (n / name
+			:op1 "Carlucci"))
+	:direction (x4 / back)
+	:ARG1 (x7 / serve-01
+		:mod (x6 / government-organization
+			:ARG0-of (g / govern-01)))
+	:ARG0 (x9 / have-org-role-91
+		:ARG2 (p / president)))
+
+# ::id 46
+# ::snt Reagan to replace Navy Rear Adm. John M. Poindexter in the wake of
+(x3 / replace-01
+	:ARG0 (x1 / person
+		:name (n / name
+			:op1 "Reagan"))
+	:ARG1 (x4 / military
+		:name (n1 / name
+			:op1 "Navy"))
+	:ARG2 (x7 / name
+		:op1 "John"
+		:op2 "M."
+		:op3 "Poindexter"
+		:ARG0-of (x5 / rear)
+		:ARG0-of (x6 / adm.))
+	:time (x12 / wake))
+
+# ::id 47
+# ::snt the Iran-Contra arms-for-hostages affair. Carlucci immediately
+(x4 / affair
+	:mod (x2 / iran-contra)
+	:null_edge (x3 / null_tag)
+	:domain (x6 / person
+		:name (n / name
+			:op1 "Carlucci"))
+	:mod (x7 / immediate))
+
+# ::id 48
+# ::snt recruited Powell as his deputy, drawing him away from a major
+(x1 / recruit-01
+	:ARG1 (x2 / person
+		:name (n / name
+			:op1 "Powell"))
+	:ARG2 (x5 / have-org-role-91
+		:ARG2 (d / deputy))
+	:ARG2 (x7 / draw-03
+		:ARG0 x2
+		:ARG2 (x12 / major)))
+
+# ::id 49
+# ::snt command in Europe, and Powell moved up to the top White House spot
+(x5 / and
+	:op1 (x1 / command-02
+		:location (x3 / continent
+			:name (n / name
+				:op1 "Europe")))
+	:op2 (x7 / move-01
+		:ARG0 (x6 / person
+			:name (n1 / name
+				:op1 "Powell"))
+		:ARG2 (x14 / spot
+			:mod (x11 / top)
+			:mod (x12 / white)
+			:ARG1 (x13 / government-organization
+				:name (n2 / name
+					:op1 "House")))))
+
+# ::id 50
+# ::snt after Carlucci's move to the Pentagon.
+(x1 / after
+	:op1 (x4 / move-02
+		:ARG0 (x2 / person
+			:name (n / name
+				:op1 "Carlucci"))
+		:ARG2 (x7 / government-organization
+			:name (n1 / name
+				:op1 "Pentagon"))))
+
+# ::id 51
+# ::snt Powell is a graduate of City University in New York and received
+(x4 / person
+	:ARG0-of (g / graduate-01)
+	:domain (x1 / person
+		:name (n / name
+			:op1 "Powell"))
+	:ARG1 (x7 / university
+		:null_edge (x6 / null_tag)
+		:location (x10 / country
+			:name (n1 / name
+				:op1 "York")
+			:null_edge (x9 / null_tag)
+			:null_edge (x12 / receive-01))))
+
+# ::id 52
+# ::snt an MBA degree from George Washington University in Washington.
+(x3 / degree
+	:ARG2 (x5 / government-organization
+		:name (n / name
+			:op1 "George"
+			:op2 "Washington"
+			:op3 "University")
+		:location (x9 / city
+			:name (n1 / name
+				:op1 "Washington"))))
+
+# ::id 53
+# ::snt Commissioned in the infantry, he was wounded during both of his
+(x8 / wound-01
+	:ARG2 (x4 / infantry)
+	:ARG1 (x6 / he)
+	:time (x10 / both))
+
+# ::id 54
+# ::snt two tours in Vietnam, once falling into a trap lined with sharpened
+(x2 / tour-01
+	:quant 2
+	:location (x4 / country
+		:name (n / name
+			:op1 "Vietnam"))
+	:ARG1-of (x7 / fall-01
+		:ARG4 (x10 / person
+			:ARG1-of (t / trap-01)
+			:ARG1-of (x11 / line-01
+				:ARG1-of (x13 / sharpen)))))
+
+# ::id 55
+# ::snt bamboo sticks, impaling a foot.
+(x4 / impale
+	:ARG0 (x2 / stick-01
+		:ARG1 (x1 / bamboo))
+	:ARG1 (x6 / distance-quantity
+		:unit (f / foot)))
+
+# ::id 56
+# ::snt In 1977 Powell was assigned to the Pentagon as an assistant to
+(x5 / assign-01
+	:time (x2 / date-entity
+		:year 1977)
+	:ARG1 (x3 / person
+		:name (n / name
+			:op1 "Powell"))
+	:ARG2 (x8 / government-organization
+		:name (n1 / name
+			:op1 "Pentagon"))
+	:ARG2 (x11 / assist-01))
+
+# ::id 57
+# ::snt the deputy assistant secretary of defense. While later serving as an
+(x10 / serve-01
+	:ARG1 (x4 / have-org-role-91
+		:ARG2 (s / secretary)
+		:mod (x2 / deputy)
+		:ARG0-of (x3 / assist-01)
+		:ARG2-of (x6 / defend-01))
+	:time (x9 / late)
+	:null_edge (x12 / name
+		:op1 "an"))
+
+# ::id 58
+# ::snt assistant to Carlucci in the National Security Council, Powell
+(x1 / assist-01
+	:ARG2 (x3 / person
+		:name (n / name
+			:op1 "Carlucci")
+		:location (x8 / council
+			:null_edge (x6 / null_tag)
+			:null_edge (x7 / null_tag)
+			:null_edge (x10 / person
+				:name (n1 / name
+					:op1 "Powell")))))
+
+# ::id 59
+# ::snt received his first star. He went on to become military assistant to
+(x7 / go-02
+	:ARG1 (x1 / receive-01
+		:ARG1 (x4 / star))
+	:ARG0 (x6 / he)
+	:purpose (x10 / become-01
+		:ARG2 (x12 / assist-01
+			:mod (x11 / military))))
+
+# ::id 60
+# ::snt Weinberger before a stint as commander of the Army's Fifth Corps in
+(x1 / country
+	:name (n / name
+		:op1 "Weinberger")
+	:null_edge (x2 / before
+		:op1 (x4 / stint
+			:example (x6 / have-org-role-91
+				:ARG2 (c / commander)
+				:ARG1 (x11 / organization
+					:name (n1 / name
+						:op1 "Fifth"
+						:op2 "Corps")
+					:poss (x9 / military
+						:name (n2 / name
+							:op1 "Army")))))))
+
+# ::id 61
+# ::snt Europe.
+(x1 / continent
+	:name (n / name
+		:op1 "Europe"))
+
+# ::id 62
+# ::snt Powell's decorations include the Distinguished Service Medal, the
+(x4 / include-01
+	:ARG2 (x3 / decoration
+		:ARG0 (x1 / person
+			:name (n / name
+				:op1 "Powell")))
+	:ARG1 (x8 / medal
+		:mod (x6 / distinguished)
+		:mod (x7 / service)))
+
+# ::id 63
+# ::snt Bronze Star and the Purple Heart.
+(x3 / and
+	:op1 (x2 / star-01
+		:mod (x1 / bronze))
+	:op2 (x6 / heart
+		:mod (x5 / purple)))
+

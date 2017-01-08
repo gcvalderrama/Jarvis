@@ -1,0 +1,229 @@
+# ::id 1
+# ::snt Fire broke out aboard a Soviet passenger liner
+(x2 / break-08
+	:ARG0 (x1 / fire-02)
+	:location (x4 / aboard
+		:op1 (x8 / liner
+			:mod (x7 / passenger)
+			:mod (xap1 / country
+				:ARG0-of (xap0 / name
+					:op1 "Soviet")))))
+
+# ::id 2
+# ::snt carrying French tourists on a cruise of the Mediterranean, but the
+(x1 / carry-01
+	:ARG1 (x3 / person
+		:ARG0-of (t / tour-01)
+		:mod (x2 / country
+			:name (n / name
+				:op1 "France")))
+	:ARG1 (x11 / contrast-01
+		:ARG2 (x6 / cruise
+			:poss (x9 / sea
+				:name (n1 / name
+					:op1 "Mediterranean")))))
+
+# ::id 3
+# ::snt blaze was put out by the crew and no passengers were injured, Tass
+(x8 / and
+	:op1 (x3 / put-01
+		:ARG1 (x1 / blaze)
+		:ARG0 (x7 / crew))
+	:op2 (x12 / injure-01
+		:polarity -
+		:ARG1 (x10 / passenger)
+		:ARG1 (x14 / government-organization
+			:name (n / name
+				:op1 "Tass"))))
+
+# ::id 4
+# ::snt reported Monday.
+(x1 / report-01
+	:ARG1 (x2 / monday))
+
+# ::id 5
+# ::snt The Shota Rustaveli was 25 miles off the island of Malta when a
+(x6 / distance-quantity
+	:unit (m / mile)
+	:ARG0 (x3 / person
+		:name (n / name
+			:op1 "Rustaveli")
+		:null_edge (x2 / person
+			:name (n1 / name
+				:op1 "Shota")))
+	:quant 25
+	:null_edge (x9 / island
+		:poss (x11 / country
+			:name (n2 / name
+				:op1 "Malta"))))
+
+# ::id 6
+# ::snt blaze broke out in the auxiliary engine room, the official news
+(x2 / break-08
+	:ARG0 (x1 / blaze)
+	:location (x8 / room
+		:mod (x6 / auxiliary)
+		:ARG1 (x7 / engine)
+		:mod (x12 / news
+			:mod (x11 / official))))
+
+# ::id 7
+# ::snt agency said.
+(x2 / say-01)
+
+# ::id 8
+# ::snt "The blaze was put out by the crew. There are no casualties
+(x5 / put-01
+	:ARG1 (x3 / blaze)
+	:ARG0 (x9 / crew)
+	:ARG1 (x14 / casualty
+		:polarity -))
+
+# ::id 9
+# ::snt among the passengers," Tass said.
+(x7 / say-01
+	:ARG1 (x3 / passenger)
+	:ARG0 (x6 / organization
+		:name (n / name
+			:op1 "Tass")))
+
+# ::id 10
+# ::snt It cited local news reports as saying the ship had docked at the
+(x2 / cite-01
+	:ARG0 (x1 / it)
+	:ARG1 (x5 / report-01
+		:mod (x4 / news
+			:mod (x3 / local)))
+	:ARG1 (x7 / say-01
+		:ARG1 (x11 / dock-01
+			:ARG0 (x9 / ship))))
+
+# ::id 11
+# ::snt Maltese port of Valletta, and that its passengers had been offered
+(x6 / and
+	:op1 (x2 / port
+		:mod (x1 / organization
+			:name (n / name
+				:op1 "Maltese"))
+		:poss (x4 / country
+			:name (n1 / name
+				:op1 "Valletta")))
+	:op2 (x12 / offer-01
+		:ARG1 (x9 / passenger)))
+
+# ::id 12
+# ::snt sightseeing trips around the island south of Sicily.
+(x2 / trip
+	:purpose (x1 / sightseeing)
+	:location (x3 / around
+		:op1 (x5 / island
+			:mod (x6 / south
+				:ARG1-of (x7 / include-91)))))
+
+# ::id 13
+# ::snt The tourists were expected to continue their voyage on another
+(x4 / expect-01
+	:ARG1 (x6 / continue-01
+		:ARG0 (x2 / person
+			:ARG0-of (t / tour-01))
+		:ARG1 (x8 / voyage
+			:mod (x10 / another))))
+
+# ::id 14
+# ::snt Soviet ship, and the crew of the Shota Rustaveli was to make
+(x4 / and
+	:op1 (x2 / ship
+		:mod (xap1 / country
+			:ARG0-of (xap0 / name
+				:op1 "Soviet")))
+	:op2 (x6 / crew
+		:poss (x9 / person
+			:name (n / name
+				:op1 "Shota"))))
+
+# ::id 15
+# ::snt repairs and bring the ship home, Tass said.
+(x9 / say-01
+	:ARG1 (x2 / and
+		:op1 (x1 / repair-01)
+		:op2 (x3 / bring-01
+			:ARG1 (x5 / ship)
+			:ARG4 (x6 / home)))
+	:ARG0 (x8 / organization
+		:name (n / name
+			:op1 "Tass")))
+
+# ::id 16
+# ::snt It was the second fire aboard a Soviet cruise ship in recent
+(x5 / fire-01
+	:domain (x1 / it)
+	:location (x6 / aboard
+		:op1 (x10 / ship
+			:mod (x9 / cruise)
+			:time (x12 / recent)
+			:mod (xap1 / country
+				:ARG0-of (xap0 / name
+					:op1 "Soviet")))))
+
+# ::id 17
+# ::snt months. On May 18, a blaze broke out on the liner Priamurye while
+(x8 / blaze
+	:time (x1 / temporal-quantity
+		:unit (m / month))
+	:time (x4 / date-entity)
+	:ARG1-of (x9 / break-08
+		:ARG1 (x13 / liner)))
+
+# ::id 18
+# ::snt it was in the Japanese port of Osaka. Eleven Soviets were killed in
+(x6 / port
+	:mod (x5 / country
+		:name (n / name
+			:op1 "Japan"))
+	:name (x8 / name
+		:op1 "Osaka")
+	:ARG1-of (x13 / kill-01
+		:ARG1 (xap1 / country
+			:ARG0-of (xap0 / name
+				:op1 (x10 / eleven)
+				:op1 (x11 / country
+					:name (n1 / name
+						:op1 "Soviets"))))))
+
+# ::id 19
+# ::snt the Priamurye fire, and 26 others hospitalized in critical
+(x5 / and
+	:op1 (x3 / fire-01
+		:null_edge (x2 / country
+			:name (n / name
+				:op1 "Priamurye")))
+	:op2 (x7 / other
+		:ARG1-of (x8 / hospitalize-01
+			:quant 26
+			:location (x10 / critical))))
+
+# ::id 20
+# ::snt condition, Tass reported. The ship was carrying 295 Soviets on a
+(x4 / report-01
+	:ARG0 (x1 / condition)
+	:ARG0 (x3 / organization
+		:name (n / name
+			:op1 "Tass"))
+	:ARG1 (x9 / carry-01
+		:ARG0 (x7 / ship)
+		:ARG1 (xap1 / country
+			:ARG0-of (xap0 / name
+				:op1 (x11 / country
+					:name (n1 / name
+						:op1 "Soviets")
+					:quant (x10 / 295))))))
+
+# ::id 21
+# ::snt youth cruise around Japan.
+(x2 / cruise
+	:mod (x1 / youth)
+	:location (x3 / around
+		:op1 (x4 / country
+			:name (n / name
+				:op1 "Japan"))))
+

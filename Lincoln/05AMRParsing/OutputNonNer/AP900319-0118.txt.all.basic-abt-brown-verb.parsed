@@ -1,0 +1,329 @@
+# ::id 1
+# ::snt Robert H. Bork, who once hoped for a Supreme
+(x1 / name
+	:op1 "Robert"
+	:op2 "H."
+	:op3 "Bork"
+	:ARG1-of (x7 / hope-01
+		:ARG2 (x10 / supreme)))
+
+# ::id 2
+# ::snt Court seat, instead stood before the nation's highest court Monday.
+(x5 / stand-01
+	:ARG1 (x2 / seat-01
+		:mod (x1 / court))
+	:mod (x4 / instead)
+	:time (x6 / before
+		:op1 (x11 / court
+			:poss (x8 / nation)
+			:mod (x10 / high
+				:degree (m / most))))
+	:time (xap0 / date-entity
+		:weekday (x12 / monday)))
+
+# ::id 3
+# ::snt He was there in the capacity of a lawyer _ apparently making him
+(x6 / capacity
+	:domain (x1 / he)
+	:ARG1 (x9 / lawyer
+		:location (x3 / there)
+		:ARG0-of (x10 / _
+			:manner (x11 / apparent)
+			:ARG0-of (x12 / make-02))))
+
+# ::id 4
+# ::snt the first defeated Supreme Court nominee ever to argue before the
+(x6 / person
+	:ARG1-of (n / nominate-01)
+	:ARG1-of (x3 / person
+		:ARG1-of (d / defeat-01))
+	:ARG1 (x4 / government-organization
+		:name (n1 / name
+			:op1 "Supreme"))
+	:null_edge (x5 / null_tag)
+	:purpose (x9 / argue-01
+		:ARG0 x4
+		:time (x7 / ever)
+		:time (x10 / before)))
+
+# ::id 5
+# ::snt justices.
+(x1 / justice)
+
+# ::id 6
+# ::snt Representing Citibank in a big-stakes battle, Bork argued that
+(x9 / argue-01
+	:ARG1 (x6 / battle-01
+		:ARG1 (x2 / government-organization
+			:name (n1 / name
+				:op1 "Citibank"))
+		:mod (x5 / big-stakes))
+	:ARG0 (x8 / person
+		:name (n / name
+			:op1 "Bork")))
+
+# ::id 7
+# ::snt U.S. banks with branch offices overseas should not be required to
+(x7 / recommend-01
+	:ARG1 (x10 / require-01
+		:ARG2 (x2 / bank
+			:mod (x1 / country
+				:name (n / name
+					:op1 "U.S.")))
+		:ARG2 (x5 / office
+			:mod (x4 / branch)
+			:location (x6 / overseas))))
+
+# ::id 8
+# ::snt pay depositors after foreign governments seize or freeze those
+(x1 / pay-01
+	:ARG3 (x2 / depositor)
+	:time (x3 / after
+		:op1 (x7 / or
+			:op1 (x6 / seize-01
+				:ARG0 (x5 / government-organization
+					:ARG0-of (g / govern-01)
+					:mod (x4 / foreign)))
+			:op2 (x8 / freeze-02
+				:ARG0 x5))))
+
+# ::id 9
+# ::snt accounts.
+(x1 / account)
+
+# ::id 10
+# ::snt The Senate rejected Bork's nomination to the high court in 1987
+(x3 / reject-01
+	:ARG0 (x2 / government-organization
+		:name (n / name
+			:op1 "Senate"))
+	:ARG1 (x6 / nominate-01
+		:ARG0 (x4 / person
+			:name (n1 / name
+				:op1 "Bork"))
+		:location (x10 / court
+			:mod (x9 / high))
+		:time (x12 / date-entity
+			:year 1987)))
+
+# ::id 11
+# ::snt after a bitter political battle. He was branded a conservative
+(x9 / brand-01
+	:time (x1 / after
+		:op1 (x5 / battle-01
+			:mod (x3 / bitter)
+			:mod (x4 / politics)))
+	:ARG1 (x7 / he)
+	:ARG1 (x11 / political-party
+		:name (n / name
+			:op1 "conservative")))
+
+# ::id 12
+# ::snt extremist by opponents.
+(x1 / extremism
+	:ARG0 (x3 / person
+		:ARG0-of (o / oppose-01)))
+
+# ::id 13
+# ::snt Bork, nominated by then-President Reagan, has said he was the
+(x9 / say-01
+	:ARG0 (x1 / person
+		:name (n / name
+			:op1 "Bork")
+		:ARG1-of (x3 / nominate-01
+			:ARG0 (x6 / person
+				:name (n1 / name
+					:op1 "Reagan")
+				:null_edge (x5 / then-president))))
+	:null_edge (x12 / null_tag))
+
+# ::id 14
+# ::snt victim of a campaign of lies and distortions led by liberals.
+(x9 / lead-02
+	:ARG0 (x1 / victim
+		:part-of (x4 / campaign-01
+			:ARG1 (x7 / and
+				:op1 (x6 / thing
+					:ARG1-of (l / lie-02))
+				:op2 (x8 / distort-01))))
+	:ARG0 (x11 / liberalism))
+
+# ::id 15
+# ::snt There were no references to that fight Monday as Bork engaged in
+(x11 / engage-01
+	:ARG1 (x4 / reference-01
+		:polarity -
+		:ARG2 (x7 / fight-01))
+	:ARG1 (x10 / person
+		:name (n / name
+			:op1 "Bork"))
+	:time (xap0 / date-entity
+		:weekday (x8 / monday)))
+
+# ::id 16
+# ::snt debate with the justices and opposing lawyers over the complexities
+(x1 / debate-01
+	:ARG1 (x5 / and
+		:op1 (x4 / justice)
+		:op2 (x7 / lawyer
+			:ARG0-of (x6 / oppose-01)))
+	:ARG2 (x10 / complexity))
+
+# ::id 17
+# ::snt of federal banking law and related matters.
+(x1 / include-91
+	:ARG1 (x5 / and
+		:op1 (x4 / law
+			:mod (x3 / banking
+				:mod (x2 / government-organization
+					:name (n / name
+						:op1 "federal"))))
+		:op2 (x7 / matter
+			:ARG1-of (x6 / relate-01))))
+
+# ::id 18
+# ::snt Bork was treated much the same as any attorney who appears
+(x3 / treat-01
+	:ARG1 (x1 / person
+		:name (n / name
+			:op1 "Bork"))
+	:ARG2 (x6 / same-41
+		:degree (x4 / much)
+		:ARG2 (x9 / attorney
+			:mod (x8 / any)
+			:ARG0-of (x11 / appear-01))))
+
+# ::id 19
+# ::snt before the justices. They questioned him vigorously, occasionally
+(x6 / question-01
+	:time (x1 / before
+		:op1 (x3 / justice))
+	:ARG0 (x5 / they)
+	:manner (x8 / vigorous)
+	:frequency (x10 / occasional))
+
+# ::id 20
+# ::snt interrupting him for clarification and elaboration.
+(x1 / interrupt
+	:ARG2 (x5 / and
+		:op1 (x4 / clarification)
+		:op2 (x6 / elaborate-01)))
+
+# ::id 21
+# ::snt Justice Anthony M. Kennedy, who occupies the seat that eluded
+(x2 / name
+	:op1 "Anthony"
+	:op2 "M."
+	:op3 "Kennedy"
+	:ARG0-of (x1 / justice)
+	:ARG0-of (x7 / occupy-01
+		:ARG1 (x9 / seat-01
+			:ARG0-of (x11 / person
+				:ARG0-of (e / elude-01)))))
+
+# ::id 22
+# ::snt Bork, directed a few questions at Bork.
+(x3 / direct-01
+	:ARG0 (x1 / person
+		:name (n / name
+			:op1 "Bork"))
+	:ARG1 (x6 / question-01
+		:quant (x5 / few))
+	:ARG2 (x8 / person
+		:name (n1 / name
+			:op1 "Bork")))
+
+# ::id 23
+# ::snt Bork, 63, a former federal appeals court judge, is a fellow at
+(x14 / fellow
+	:domain (x1 / person
+		:name (n / name
+			:op1 "Bork")
+		:null_edge 63
+		:ARG3 (x10 / judge-01
+			:null_edge (x6 / former)
+			:mod (x9 / court
+				:mod (x8 / appeal-01
+					:mod (x7 / government-organization
+						:name (n1 / name
+							:op1 "federal")))))))
+
+# ::id 24
+# ::snt the American Enterprise Institute and will begin teaching
+(x5 / and
+	:op1 (x3 / government-organization
+		:name (n / name
+			:op1 "Enterprise"
+			:op2 "Institute"))
+	:op2 (x7 / begin-01
+		:ARG1 (x8 / teach)))
+
+# ::id 25
+# ::snt constitutional law in the fall at the George Mason University law
+(x2 / law
+	:mod (x1 / constitution)
+	:prep-under (x11 / law
+		:season (x5 / fall)
+		:poss (x8 / organization
+			:name (n / name
+				:op1 "George"))
+		:poss (x9 / organization
+			:name (n1 / name
+				:op1 "Mason"))
+		:null_edge (x10 / null_tag)))
+
+# ::id 26
+# ::snt school in Arlington, Va.
+(x1 / school
+	:location (x3 / country
+		:name (n / name
+			:op1 "Arlington")
+		:location (x5 / country
+			:name (n1 / name
+				:op1 "Va."))))
+
+# ::id 27
+# ::snt He will be paid $25,000 a year to teach one course each semester
+(x4 / pay-01
+	:ARG1 (x1 / he)
+	:purpose (x10 / teach
+		:ARG0 x1
+		:ARG1 (x14 / semester
+			:mod (x13 / each)))
+	:frequency (xap0 / rate-entity-91
+		:quant (x6 / monetary-quantity
+			:unit (y / yuan))
+		:calendar (x8 / year)))
+
+# ::id 28
+# ::snt as a part-time professor.
+(xap0 / person
+	:ARG0-of (x4 / have-org-role-91
+		:ARG2 (p / professor)
+		:mod (x3 / part-time)))
+
+# ::id 29
+# ::snt Bork was only the sixth man this century to be denied a Supreme
+(x6 / man
+	:domain (x1 / person
+		:name (n / name
+			:op1 "Bork"))
+	:mod (x3 / only)
+	:ARG1-of (x11 / deny-01
+		:duration (x8 / century
+			:mod (x7 / this))
+		:ARG1 (x13 / supreme)))
+
+# ::id 30
+# ::snt Court seat by the Senate and the 26th in its history.
+(x2 / seat-01
+	:mod (x1 / court)
+	:ARG2 (x6 / and
+		:op1 (x5 / government-organization
+			:name (n / name
+				:op1 "Senate"))
+		:op2 (x8 / government-organization
+			:name (n1 / name
+				:op1 "26th")
+			:time (x11 / history))))
+

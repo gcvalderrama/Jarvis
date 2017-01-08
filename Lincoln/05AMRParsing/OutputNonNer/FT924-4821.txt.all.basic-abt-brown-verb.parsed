@@ -1,0 +1,576 @@
+# ::id 1
+# ::snt CHINA yesterday delivered an open challenge to Britain's continued
+(x3 / deliver-01
+	:ARG0 (x1 / organization
+		:name (n / name
+			:op1 "CHINA"))
+	:time (x2 / yesterday)
+	:ARG1 (x6 / challenge-01
+		:mod (x5 / open))
+	:ARG2 (x8 / country
+		:name (n1 / name
+			:op1 "Britain")
+		:ARG1-of (x10 / continue-01)))
+
+# ::id 2
+# ::snt administration of Hong Kong when it said it would repudiate all commercial
+(xap0 / government-organization
+	:ARG0-of (x1 / administrate-01
+		:null_edge (x3 / null_tag
+			:null_edge "Kong")
+		:ARG0-of (x7 / say-01
+			:ARG1 (x10 / repudiate
+				:ARG1 (x12 / commerce
+					:quant (x11 / all))))))
+
+# ::id 3
+# ::snt agreements made by the colonial government that were not first agreed with
+(x1 / agree-01
+	:ARG1-of (x11 / agree-01
+		:ARG0 (x6 / government-organization
+			:ARG0-of (g / govern-01)
+			:manner (x5 / colonize-01))))
+
+# ::id 4
+# ::snt Beijing.
+(x1 / city
+	:name (n / name
+		:op1 "Beijing"))
+
+# ::id 5
+# ::snt The challenge was immediately rejected by the Hong Kong government, which
+(x5 / reject-01
+	:ARG1 (x2 / challenge-01)
+	:time (x4 / immediate)
+	:ARG0 (x10 / government-organization
+		:ARG0-of (g / govern-01)))
+
+# ::id 6
+# ::snt accused China of violating Anglo-Chinese agreements and its own law for Hong
+(x1 / accuse-01
+	:ARG1 (x2 / country
+		:name (n / name
+			:op1 "China"))
+	:ARG2 (x4 / violate-01
+		:ARG0 x2
+		:ARG1 (x7 / and
+			:op1 (x6 / agree-01
+				:mod (x5 / organization
+					:name (n1 / name
+						:op1 "Anglo-Chinese")))
+			:op2 (x10 / law))))
+
+# ::id 7
+# ::snt Kong which comes into force after the colony reverts to Chinese sovereignty
+(x5 / force
+	:time (x6 / after
+		:op1 (x9 / revert
+			:ARG0 (x8 / colony)
+			:ARG2 (x12 / sovereignty
+				:mod (x11 / country
+					:name (n / name
+						:op1 "China"))))))
+
+# ::id 8
+# ::snt in June 1997.
+(x2 / date-entity
+	:year 1997)
+
+# ::id 9
+# ::snt The statement by the Hong Kong and Macao Affairs Office was seen in the
+(x12 / see-01
+	:ARG1 (x2 / thing
+		:ARG1-of (s / state-01)
+		:ARG0 (x7 / and
+			:null_edge (x5 / null_tag
+				:null_edge "Kong")
+			:op3 (x10 / office
+				:null_edge (x8 / city
+					:name (n / name
+						:op1 "Macao"))
+				:null_edge (x9 / null_tag)))))
+
+# ::id 10
+# ::snt colony as an attempt by China to undermine confidence in Hong Kong's economy
+(x1 / colony
+	:prep-as (x4 / attempt-01
+		:ARG0 (x6 / country
+			:name (n / name
+				:op1 "China"))
+		:ARG1 (x8 / undermine-01
+			:ARG1 (x9 / confident-41
+				:ARG2 (x14 / economy
+					:poss (x11 / city
+						:name (n1 / name
+							:op1 "Hong"
+							:op2 "Kong")))))))
+
+# ::id 11
+# ::snt and to defeat proposals by Mr Chris Patten, the governor, for more
+(x1 / and
+	:op1 (x3 / defeat-01
+		:ARG1 (x4 / propose-01
+			:name (x7 / name
+				:op1 "Chris"
+				:op2 "Patten")
+			:quant (x14 / more-than))))
+
+# ::id 12
+# ::snt democratic elections due in 1995. It represents a serious escalation in the
+(x8 / represent-01
+	:ARG1 (x3 / due
+		:null_edge (x5 / date-entity
+			:year 1995))
+	:ARG0 (x7 / it)
+	:ARG1 (x11 / escalation
+		:mod (x10 / serious)))
+
+# ::id 13
+# ::snt row which Beijing has linked to London's change in policy towards Hong
+(x1 / row
+	:ARG1-of (x5 / link-01
+		:ARG0 (x3 / city
+			:name (n / name
+				:op1 "Beijing"))
+		:ARG2 (x9 / change-01
+			:ARG0 x3
+			:ARG0 (x7 / city
+				:name (n1 / name
+					:op1 "London"))
+			:ARG2 (x11 / policy)
+			:location (x12 / towards))))
+
+# ::id 14
+# ::snt Kong's democratic development. Analysts in Hong Kong said it also amounted
+(x10 / say-01
+	:ARG0 (x6 / person
+		:ARG0-of (a / analyze-01)
+		:null_edge (x1 / null_tag)
+		:mod (x3 / democracy)
+		:ARG1 (x4 / develop-02)
+		:location (x8 / city
+			:name (n / name
+				:op1 "Hong"
+				:op2 "Kong")))
+	:ARG1 (x13 / amount-02
+		:mod (x12 / also)))
+
+# ::id 15
+# ::snt to a bid by China for greater involvement in the colony's administration.
+(x3 / bid-01
+	:ARG0 (x5 / country
+		:name (n / name
+			:op1 "China"))
+	:ARG1 (x8 / involve-01
+		:mod (x7 / great)
+		:ARG2 (x13 / administrate-01
+			:ARG1 (x11 / colony))))
+
+# ::id 16
+# ::snt 'They want to bring the government to its knees, if they can,' a senior Hong
+(x18 / senior
+	:null_edge (x3 / want-01
+		:ARG0 (x2 / they)
+		:ARG1 (x5 / bring-01
+			:ARG0 x2
+			:ARG1 (x7 / government-organization
+				:ARG0-of (g / govern-01))
+			:ARG2 (x10 / knee))
+		:condition (x14 / possible)
+		:null_edge "Hong"))
+
+# ::id 17
+# ::snt Kong government official said last night.
+(x4 / say-01
+	:time (x6 / night
+		:mod (x5 / last))
+	:ARG0 (xap0 / person
+		:ARG0-of (x3 / have-org-role-91
+			:ARG2 (o / official)
+			:null_edge (x1 / null_tag)
+			:ARG1 (x2 / government-organization
+				:ARG0-of (g / govern-01)))))
+
+# ::id 18
+# ::snt The Hong Kong and Macao Affairs Office of the Chinese government, in a
+(x4 / and
+	:op1 (x2 / city
+		:name (n / name
+			:op1 "Hong"
+			:op2 "Kong")
+		:null_edge (x13 / null_tag))
+	:op2 (x7 / office
+		:null_edge (x5 / city
+			:name (n1 / name
+				:op1 "Macao"))
+		:null_edge (x6 / null_tag)
+		:ARG1 (x11 / government-organization
+			:ARG0-of (g / govern-01))))
+
+# ::id 19
+# ::snt dispatch released through the Xinhua News Agency in Beijing, said that all
+(x11 / say-01
+	:ARG1 (x1 / dispatch-01
+		:ARG1 (x2 / release-01
+			:medium (x5 / publication
+				:name (n / name
+					:op1 "Xinhua"
+					:op2 "News"
+					:op3 "Agency"))
+			:location (x9 / city
+				:name (n1 / name
+					:op1 "Beijing"))))
+	:ARG1 (x13 / all))
+
+# ::id 20
+# ::snt contracts, leases and agreements signed and ratified by the Hong Kong
+(x7 / and
+	:op1 (x6 / sign-01
+		:ARG0 (x4 / and
+			:op8 (x1 / contract)
+			:op2 (x3 / lease-02)
+			:op2 (x5 / agree-01))
+		:ARG0 (x11 / city
+			:name (n / name
+				:op1 "Hong"
+				:op2 "Kong")))
+	:op2 (x8 / ratify-01))
+
+# ::id 21
+# ::snt government would be invalid after June 30 1997 unless they were first
+(x4 / invalid
+	:domain (x1 / government-organization
+		:ARG0-of (g / govern-01))
+	:time (x5 / after
+		:op1 (x6 / date-entity
+			:year 1997)))
+
+# ::id 22
+# ::snt approved by China.
+(x1 / approve-01
+	:ARG0 (x3 / country
+		:name (n / name
+			:op1 "China")))
+
+# ::id 23
+# ::snt It added, however, that China encouraged foreign investment in Hong Kong.
+(x2 / add-01
+	:ARG0 (x1 / it)
+	:ARG1 (x8 / encourage-01
+		:ARG0 (x7 / country
+			:name (n / name
+				:op1 "China"))
+		:ARG1 (x10 / invest-01
+			:mod (x9 / foreign))
+		:location (x12 / city
+			:name (n1 / name
+				:op1 "Hong"
+				:op2 "Kong"))))
+
+# ::id 24
+# ::snt In London, the Foreign Office rejected Beijing's threat, saying it was
+(x7 / reject-01
+	:location (x2 / city
+		:name (n / name
+			:op1 "London"))
+	:ARG0 (x5 / government-organization
+		:name (n1 / name
+			:op1 "Foreign"
+			:op2 "Office"))
+	:ARG1 (x10 / threaten-01
+		:ARG0 (x8 / city
+			:name (n2 / name
+				:op1 "Beijing"))
+		:ARG1 (x12 / say-01)))
+
+# ::id 25
+# ::snt contrary to the 1990 Basic Law for Hong Kong.
+(x1 / contrary-41
+	:ARG2 (x6 / law
+		:time (x4 / date-entity
+			:year 1990)
+		:mod "Basic"
+		:null_edge (x8 / null_tag
+			:null_edge "Kong")))
+
+# ::id 26
+# ::snt In the absence of a British climbdown on democracy, or the defeat of Mr
+(x3 / absent-01
+	:domain (x11 / or
+		:op1 (x7 / climbdown
+			:ARG1 (x9 / democracy)
+			:mod (xap1 / country
+				:ARG0-of (xap0 / name
+					:ARG1 (x6 / country
+						:name (n / name
+							:op1 "Britain")))))
+		:op2 (x13 / defeat-01
+			:ARG1 (x15 / mr))))
+
+# ::id 27
+# ::snt Patten's proposals on the floor of the local legislature, China's escalating
+(x3 / propose-01
+	:ARG0 (x1 / person
+		:name (n / name
+			:op1 "Patten"))
+	:ARG0 (xap0 / government-organization
+		:ARG0-of (x10 / legislate-01
+			:mod (x9 / local)
+			:mod (x14 / escalate-01
+				:ARG0 (x12 / country
+					:name (n1 / name
+						:op1 "China"))))))
+
+# ::id 28
+# ::snt attacks could undermine some large-scale business ventures in energy,
+(x2 / possible
+	:domain (x3 / undermine-01
+		:ARG0 (x1 / attack-01)
+		:ARG1 (x7 / venture
+			:quant (x4 / some)
+			:mod (x6 / business)
+			:mod (x9 / energy)
+			:mod (xap0 / scale
+				:mod (x5 / large)))))
+
+# ::id 29
+# ::snt communications and trade which are planned for Hong Kong in addition to the
+(x2 / and
+	:op1 (x1 / communicate-01
+		:ARG1-of (x6 / plan-01
+			:null_edge (x8 / null_tag
+				:null_edge "Kong")))
+	:op2 (x3 / trade-01))
+
+# ::id 30
+# ::snt colony's HKDollars 175bn (Pounds 15bn) airport project.
+(x3 / hkdollar
+	:ARG0 (x1 / colony)
+	:ARG1 (x6 / pounds
+		:mod (x4 / 175bn)
+		:ARG1 (x10 / project
+			:mod (x7 / 15bn)
+			:mod (x9 / airport))))
+
+# ::id 31
+# ::snt Hong Kong's financial and business community was last night deeply concerned
+(x12 / concern-01
+	:ARG1 (x5 / and
+		:domain (x1 / city
+			:name (n / name
+				:op1 "Hong"
+				:op2 "Kong"))
+		:op1 (x4 / finance)
+		:op2 (x7 / community
+			:mod (x6 / business)))
+	:time (x10 / night
+		:mod (x9 / last))
+	:extent (x11 / deep))
+
+# ::id 32
+# ::snt about the growing rift between London and Beijing and is expected to voice
+(x9 / and
+	:op1 (x11 / expect-01
+		:ARG1 (x4 / rift
+			:ARG1-of (x3 / grow-01)
+			:ARG0 (x7 / and
+				:op1 (x6 / city
+					:name (n / name
+						:op1 "London"))
+				:op2 (x8 / city
+					:name (n1 / name
+						:op1 "Beijing"))))
+		:ARG1 (x13 / voice)))
+
+# ::id 33
+# ::snt louder calls for Mr Patten to retreat. Liberal politicians said China's
+(x11 / say-01
+	:ARG0 (x2 / call-01
+		:mod (x1 / louder)
+		:ARG0 (x7 / retreat
+			:ARG0 (x5 / person
+				:name (n1 / name
+					:op1 "Patten")
+				:null_edge (x4 / mr))))
+	:ARG0 (x10 / politician
+		:mod (x9 / liberal))
+	:ARG1 (x12 / country
+		:name (n / name
+			:op1 "China")))
+
+# ::id 34
+# ::snt behaviour underlined the need for democracy to protect Hong Kong from the
+(x2 / underline-01
+	:ARG0 (x1 / behave-01)
+	:ARG1 (x4 / need-01
+		:ARG1 (x8 / protect-01
+			:ARG0 (x6 / democracy)
+			:ARG1 (x9 / city
+				:name (n / name
+					:op1 "Hong"
+					:op2 "Kong")))))
+
+# ::id 35
+# ::snt arbitrary exercise of power by Beijing.
+(x4 / power
+	:mod (x1 / arbitrary)
+	:ARG0 (x6 / city
+		:name (n / name
+			:op1 "Beijing")))
+
+# ::id 36
+# ::snt British and US businesses with interests in Hong Kong were more sanguine
+(x12 / sanguine
+	:domain (x4 / business
+		:mod (x3 / country
+			:name (n / name
+				:op1 "US"))
+		:prep-with (x6 / interest
+			:mod x3
+			:location (x8 / city
+				:name (n1 / name
+					:op1 "Hong"
+					:op2 "Kong"))))
+	:degree (x11 / more))
+
+# ::id 37
+# ::snt about prospects for the colony, indicating that Beijing's threat would have
+(x7 / indicate-01
+	:ARG1 (x2 / prospect)
+	:ARG1 (x5 / colonize-01)
+	:ARG1 (x11 / threaten-01
+		:ARG0 (x9 / city
+			:name (n / name
+				:op1 "Beijing"))))
+
+# ::id 38
+# ::snt no impact on investment decisions.
+(x2 / impact-01
+	:polarity -
+	:ARG1 (x5 / decide-01
+		:ARG1 (x4 / invest-01)))
+
+# ::id 39
+# ::snt Share prices on the Hong Kong stock exchange fell nearly 3 per cent in
+(x9 / fall-01
+	:ARG1 (x2 / thing
+		:ARG2-of (p / price-01)
+		:ARG1 (x1 / share)
+		:ARG1 (x8 / exchange-01
+			:ARG1 (x7 / stock)))
+	:ARG4 (x10 / nearly))
+
+# ::id 40
+# ::snt trading yesterday, although this was largely in response to comments by a
+(x1 / trade-01
+	:time (x2 / yesterday)
+	:domain (x5 / this
+		:ARG2-of (x9 / respond-01
+			:ARG1 (x11 / comment-01
+				:mod (x7 / largely)))))
+
+# ::id 41
+# ::snt senior Chinese official late last week over the validity of the award of
+(xap0 / person
+	:ARG0-of (x3 / have-org-role-91
+		:ARG2 (o / official)
+		:mod (x1 / senior)
+		:ARG1 (x2 / country
+			:name (n / name
+				:op1 "China")))
+	:time (x4 / late
+		:time (x6 / week
+			:mod (x5 / last))
+		:op1 (x9 / validity
+			:part-of (x12 / award-01))))
+
+# ::id 42
+# ::snt land to a consortium to build a container terminal in Hong Kong. The warning
+(x1 / land
+	:ARG2 (x4 / consortium
+		:purpose (x6 / build-01
+			:ARG1 (x9 / terminal
+				:mod (x8 / container))
+			:location (x11 / city
+				:name (n / name
+					:op1 "Hong"
+					:op2 "Kong"))
+			:ARG1 (x15 / warn-01))))
+
+# ::id 43
+# ::snt from Beijing yesterday came too late to affect the market.
+(x4 / come-01
+	:ARG4 (x2 / city
+		:name (n / name
+			:op1 "Beijing"))
+	:time (x3 / yesterday)
+	:time (x6 / late
+		:degree (x5 / too))
+	:purpose (x8 / affect-01
+		:ARG1 (x10 / market)))
+
+# ::id 44
+# ::snt The Hong Kong government responded to China's latest attack by declaring
+(x5 / respond-01
+	:ARG0 (x4 / government-organization
+		:ARG0-of (g / govern-01))
+	:ARG2 (x10 / attack-01
+		:ARG0 (x7 / country
+			:name (n / name
+				:op1 "China"))
+		:time (x9 / late
+			:degree (m / most)))
+	:ARG2 (x12 / declare-02))
+
+# ::id 45
+# ::snt that Beijing was in breach of both the 1984 Sino-British Joint Declaration
+(x5 / breach-01
+	:ARG0 (x2 / city
+		:name (n / name
+			:op1 "Beijing"))
+	:ARG1 (x12 / declaration
+		:mod (x7 / both)
+		:time (x9 / date-entity
+			:year 1984)
+		:null_edge (x10 / sino-british)
+		:mod (x11 / joint)))
+
+# ::id 46
+# ::snt on Hong Kong's future and the 1990 Basic Law - the colony's post-1997
+(x6 / and
+	:op1 (x5 / future
+		:poss (x2 / city
+			:name (n / name
+				:op1 "Hong"
+				:op2 "Kong")))
+	:null_edge (x8 / date-entity
+		:year 1990
+		:null_edge "Basic"))
+
+# ::id 47
+# ::snt constitution - drafted by Beijing.
+(x1 / constitution
+	:ARG1-of (x3 / draft-01
+		:ARG0 (x5 / city
+			:name (n / name
+				:op1 "Beijing"))))
+
+# ::id 48
+# ::snt Both documents guarantee the safety of existing contracts after the colony
+(x3 / guarantee-01
+	:ARG0 (x2 / document
+		:mod (x1 / both))
+	:ARG1 (x5 / safe-41
+		:ARG1 (x8 / contract-02
+			:ARG1-of (x7 / exist-01)))
+	:time (x9 / after
+		:op1 (x11 / colonize-01)))
+
+# ::id 49
+# ::snt reverts to Chinese sovereignty.
+(x1 / revert
+	:ARG2 (x4 / sovereignty
+		:mod (x3 / country
+			:name (n / name
+				:op1 "China"))))
+

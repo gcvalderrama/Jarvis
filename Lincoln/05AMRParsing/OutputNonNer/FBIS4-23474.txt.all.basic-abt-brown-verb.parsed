@@ -1,0 +1,336 @@
+# ::id 1
+# ::snt Lilongwe June 6 SAPA -- Three million people will
+(x4 / country
+	:name (n / name
+		:op1 "SAPA")
+	:location (x1 / country
+		:name (n1 / name
+			:op1 "Lilongwe"))
+	:null_edge (x2 / null_tag)
+	:null_edge (x3 / null_tag))
+
+# ::id 2
+# ::snt need emergency food aid in 1994/95 following widespread crop
+(x1 / need-01
+	:ARG1 (x4 / aid-01
+		:ARG1 (x3 / food
+			:ARG1 (x2 / emergency)))
+	:ARG1 (x9 / crop
+		:ARG1-of (x7 / follow-04)
+		:mod (x8 / widespread)))
+
+# ::id 3
+# ::snt failure in central and southern Malawi, the United Nations Food
+(x1 / fail-01
+	:ARG1 (x4 / and
+		:op1 (x3 / central)
+		:op2 (x5 / southern)
+		:location (x6 / country
+			:name (n / name
+				:op1 "Malawi")
+			:null_edge (x10 / null_tag
+				:null_edge (x9 / null_tag)
+				:null_edge (x11 / null_tag)))))
+
+# ::id 4
+# ::snt Aid Organisation [FAO] said on Monday [6 June]. A recent
+(x6 / say-01
+	:ARG0 (x2 / organisation
+		:mod (x1 / disease
+			:name (n / name
+				:op1 "Aid"))
+		:null_edge (x3 / null_tag))
+	:time (xap0 / date-entity
+		:null_edge (x8 / null_tag)
+		:time (x10 / date-entity)
+		:time (x15 / recent)))
+
+# ::id 5
+# ::snt FAO/World Food Programme crop assessment mission blamed the crop
+(x7 / blame-01
+	:ARG0 (x6 / mission
+		:null_edge "fao\/world"
+		:poss (x3 / programme
+			:mod (x2 / food))
+		:mod (x5 / assess-01
+			:ARG1 (x4 / crop)))
+	:ARG1 (x9 / crop))
+
+# ::id 6
+# ::snt failure on erratic and insufficient rainfall.
+(x1 / fail-01
+	:ARG2 (x6 / rain
+		:ARG1 (x4 / and
+			:op1 (x3 / erratic)
+			:op2 (x5 / suffice-01))))
+
+# ::id 7
+# ::snt This year's cereal production among smallholders is
+(x5 / produce-01
+	:time (x2 / year
+		:mod (x1 / this))
+	:ARG1 (x4 / cereal)
+	:ARG0 (x7 / smallholder))
+
+# ::id 8
+# ::snt estimated
+(x1 / estimate-01)
+
+# ::id 9
+# ::snt 
+(x / xconcept
+	:x (x5 / monetary-quantity
+		:unit (c / cent)
+		:null_edge 60
+		:degree (x6 / less
+			:compared-to (x12 / harvest-01
+				:time (x9 / year
+					:mod (x8 / last))
+				:mod (x11 / bumper
+					:mod (x15 / only)))))
+	:x (x14 / and))
+
+# ::id 10
+# ::snt 28 per cent higher than in 1991/92, when drought devasted
+(x3 / monetary-quantity
+	:unit (c / cent)
+	:null_edge 28
+	:mod (x4 / high
+		:compared-to (x11 / devast
+			:ARG0 (x10 / drought))))
+
+# ::id 11
+# ::snt southern Africa. The mission estimated about 493,000 tons of
+(x6 / estimate-01
+	:ARG0 (x5 / mission)
+	:ARG1 (x9 / mass-quantity
+		:unit (t / ton)
+		:quant (x7 / about))
+	:ARG1 (x10 / include-91))
+
+# ::id 12
+# ::snt cereals would have to be imported.
+(x6 / import-01
+	:ARG1 (x1 / cereal))
+
+# ::id 13
+# ::snt Of the cereal food aid requirement, about 175,000 tons would
+(x11 / would
+	:null_edge (x1 / include-91
+		:ARG2 (x6 / thing
+			:ARG1-of (r / require-01)
+			:ARG1 (x3 / cereal)
+			:mod (x4 / food)
+			:ARG1 (x5 / aid-01)))
+	:null_edge (x10 / mass-quantity
+		:unit (t / ton)
+		:quant (x8 / about
+			:op1 (x9 / 175,000))))
+
+# ::id 14
+# ::snt 
+(x2 / need-01
+	:prep-as (x5 / assist-01
+		:mod (x4 / emergency)
+		:ARG2 (x10 / people
+			:null_edge (x7 / some))))
+
+# ::id 15
+# ::snt Another 270,000 tons would be required to be sold in the market
+(x6 / require-01
+	:ARG1 (x3 / mass-quantity
+		:unit (t / ton)
+		:mod (x1 / another)
+		:quant (x2 / 270,000))
+	:ARG1 (x9 / sell-01
+		:ARG1 x3
+		:ARG2 (x12 / market)))
+
+# ::id 16
+# ::snt to stabilise food supply and prices.
+(x2 / stabilise
+	:ARG1 (x5 / and
+		:op1 (x4 / supply-01
+			:ARG1 (x3 / food))
+		:op2 (x6 / thing
+			:ARG2-of (p / price-01))))
+
+# ::id 17
+# ::snt "Food scarcity in the markets leads to riots, hoarding and
+(x7 / lead-03
+	:ARG0 (x3 / scarcity
+		:quant-of (x2 / food)
+		:location (x6 / market))
+	:ARG1 (x9 / riot-01)
+	:ARG1 (x11 / hoard)
+	:ARG2 (x12 / and))
+
+# ::id 18
+# ::snt skyrocketing prices. That happened during the big drought of
+(x1 / skyrocket-01
+	:ARG1 (x2 / price-01
+		:ARG1-of (x5 / happen-01
+			:ARG1 (x4 / that)
+			:time (x9 / drought
+				:mod (x8 / big)))))
+
+# ::id 19
+# ::snt 1992. We attach equal importance to keeping the commercial
+(xap0 / multi-sentence
+	:ARG1 (x4 / attach-01
+		:ARG0 (x3 / we)
+		:ARG2 (x8 / keep-04
+			:ARG2 (x10 / commerce)))
+	:snt2 (x6 / importance
+		:ARG1-of (x5 / equal-01)))
+
+# ::id 20
+# ::snt sector well-supplied," said WFP Director Phillip Ostenso.
+(x5 / say-01
+	:ARG1 (x1 / sector
+		:mod (x2 / well-supplied))
+	:ARG0 (x8 / newspaper
+		:name (n / name
+			:op1 "Phillip"
+			:op2 "Ostenso")
+		:ARG0-of (x7 / have-org-role-91
+			:ARG2 (d / director)
+			:ARG1 (x6 / organization
+				:name (n1 / name
+					:op1 "WFP")))))
+
+# ::id 21
+# ::snt Despite a bumper harvest last year, Malawi has not recovered
+(x11 / recover-02
+	:ARG1 (x4 / harvest-01
+		:mod (x3 / bumper))
+	:time (x6 / year
+		:mod (x5 / last))
+	:ARG0 (x8 / country
+		:name (n / name
+			:op1 "Malawi")))
+
+# ::id 22
+# ::snt from the massive 1991/92 drought. The sharp decline in the
+(x5 / drought
+	:mod (x3 / massive)
+	:ARG1 (x9 / decline-01
+		:manner (x8 / sharp)))
+
+# ::id 23
+# ::snt production of major crops such as tobacco and cotton due to
+(x1 / produce-01
+	:ARG1 (x4 / crop
+		:mod (x3 / major)
+		:example (x8 / and
+			:op1 (x7 / tobacco)
+			:op2 (x9 / cotton-00))
+		:mod (x10 / due)))
+
+# ::id 24
+# ::snt drought means reduced incomes for many rural households.
+(x2 / mean-01
+	:ARG0 (x1 / drought)
+	:ARG1 (x4 / income
+		:ARG1-of (x3 / reduce-01)
+		:ARG3 (x8 / household
+			:quant (x6 / many)
+			:mod (x7 / rural))))
+
+# ::id 25
+# ::snt Malnutrition rates have always been very high in Malawi,
+(x7 / high
+	:domain (x2 / rate
+		:mod (x1 / world-region
+			:name (n1 / name
+				:op1 "Malnutrition")))
+	:null_edge (x3 / person
+		:ARG0-of (h / have-org-role-91))
+	:time (x4 / always)
+	:degree (x6 / very)
+	:location (x9 / country
+		:name (n / name
+			:op1 "Malawi")))
+
+# ::id 26
+# ::snt even
+(x1 / even)
+
+# ::id 27
+# ::snt with good harvests. Studies suggest more than half of rural
+(x6 / suggest-01
+	:ARG1 (x3 / harvest-01
+		:mod (x2 / good))
+	:ARG0 (x5 / study-01)
+	:location (x11 / rural
+		:quant (x7 / more-than)))
+
+# ::id 28
+# ::snt pre-school children suffer from chronic malnutrition. Thus food
+(x3 / suffer-01
+	:ARG0 (x2 / child
+		:mod (x1 / pre-school))
+	:ARG0 (x6 / malnutrition
+		:mod (x5 / chronic))
+	:ARG1 (x9 / food))
+
+# ::id 29
+# ::snt shortages and high prices can quickly aggravate an already
+(x5 / possible
+	:domain (x7 / aggravate-01
+		:ARG0 (x2 / and
+			:op1 (x1 / short-41)
+			:op2 (x4 / thing
+				:ARG2-of (p / price-01)
+				:mod (x3 / high)))
+		:manner (x6 / quick)
+		:time (x9 / already)))
+
+# ::id 30
+# ::snt critical situation.
+(x2 / situation
+	:mod (x1 / critical))
+
+# ::id 31
+# ::snt Although landlocked, Malawi proved in the 1991/92 drought it
+(x5 / prove-01
+	:time (x2 / landlocked)
+	:ARG0 (x4 / country
+		:name (n / name
+			:op1 "Malawi"))
+	:location (x9 / drought))
+
+# ::id 32
+# ::snt was adequately equipped to handle the transportation, storage
+(x3 / equip-01
+	:manner (x2 / adequate)
+	:ARG2 (x5 / handle-01
+		:ARG1 (x9 / store-01
+			:instrument-of (x7 / transport-01))))
+
+# ::id 33
+# ::snt and internal distribution of large volumes of food imported
+(x1 / and
+	:op1 (x3 / distribute-01
+		:mod (x2 / internal)
+		:ARG2 (x8 / food
+			:quant (x6 / volume
+				:mod (x5 / large))))
+	:op1 (x9 / import-01))
+
+# ::id 34
+# ::snt through South Africa, Mozambican or, possibly, Tanzanian ports.
+(x6 / or
+	:op1 (x2 / country
+		:name (n / name
+			:op1 "South"
+			:op2 "Africa")
+		:mod (x8 / possible))
+	:op2 (x5 / country
+		:name (n1 / name
+			:op1 "Mozambican"))
+	:op2 (x11 / port
+		:mod (x10 / country
+			:name (n2 / name
+				:op1 "Tanzanian"))))
+
