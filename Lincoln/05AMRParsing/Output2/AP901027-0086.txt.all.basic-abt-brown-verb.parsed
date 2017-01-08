@@ -1,0 +1,713 @@
+# ::id 1
+# ::snt Lebanese newspapers published birthday letters to American journalist Terry Anderson on Saturday, American journalist Terry Anderson 43rd birthday in captivity
+(x3 / publish-01
+	:ARG0 (x2 / newspaper
+		:mod (x1 / country
+			:name (n / name
+				:op1 "Lebanese")))
+	:ARG1 (x5 / letter
+		:mod (x4 / birthday))
+	:ARG0 (x8 / journalist
+		:name (x9 / name
+			:op1 "Terry"
+			:op2 "Anderson"
+			:mod (x7 / country
+				:name (n1 / name
+					:op1 "American"))))
+	:purpose (x19 / birthday
+		:mod (x15 / journalist
+			:ARG1 (x14 / country
+				:name (n2 / name
+					:op1 "American"))
+			:name (x16 / newspaper
+				:name (n3 / name
+					:op1 "Terry"
+					:op2 "Anderson"))))
+	:location (x21 / captivity)
+	:time (xap0 / date-entity
+		:weekday (x12 / saturday)))
+
+# ::id 2
+# ::snt One newspaper reported that fellow hostage Terry Waite will be freed soon
+(x3 / report-01
+	:ARG0 (x2 / newspaper
+		:quant 1)
+	:ARG1 (x11 / free-01
+		:ARG1 (x7 / name
+			:op1 "Terry"
+			:op2 "Waite"
+			:mod (x5 / fellow)
+			:ARG0-of (x6 / hostage))
+		:time (x12 / soon)))
+
+# ::id 3
+# ::snt Seven newspapers printed birthday greetings to Anderson from American journalist Terry Anderson sister, Peggy Say, his youngest daughter, Sulome, and Madeleine, Sulome's mother
+(x3 / print-01
+	:ARG0 (x2 / newspaper
+		:quant 7)
+	:ARG1 (x5 / greeting
+		:ARG0 (x4 / birthday)
+		:ARG1 (x7 / person
+			:name (n / name
+				:op1 "Anderson"))
+		:ARG0 (x10 / journalist
+			:ARG1 (x9 / country
+				:name (n1 / name
+					:op1 "American")))
+		:source (x24 / and
+			:op1 (x11 / name
+				:op1 "Terry"
+				:op2 "Anderson"
+				:op3 "sister"
+				:op4 ","
+				:op5 "Peggy"
+				:op6 "Say"
+				:mod (x13 / sister))
+			:op2 (x20 / daughter
+				:poss x11
+				:poss x13
+				:mod (x19 / youngest))
+			:op2 (x29 / mother
+				:poss (x25 / person
+					:name (n2 / name
+						:op1 "Madeleine"))))))
+
+# ::id 4
+# ::snt his youngest daughter , Sulome , and Madeleine , Sulome's mother published the original English text so that Anderson, who did not know Arabic when he was kidnapped, would be able to read his youngest daughter , Sulome , and Madeleine , Sulome's mother if American journalist Terry Anderson kidnappers allowed American journalist Terry Anderson to
+(x13 / publish-01
+	:ARG0 (x7 / and
+		:op1 (x3 / daughter
+			:mod (x2 / youngest)
+			:poss (x12 / mother
+				:poss (x8 / person
+					:name (n2 / name
+						:op1 "Madeleine")))))
+	:ARG1 (x17 / text
+		:mod (x15 / original)
+		:null_edge (x16 / country
+			:name (n1 / name
+				:op1 "England")))
+	:ARG0 (x20 / person
+		:name (n / name
+			:op1 "Anderson")
+		:null_edge (x25 / know-01
+			:ARG1 (x26 / name
+				:op1 "Arabic")
+			:ARG1 (x30 / kidnap-01
+				:ARG1 (x28 / he))))
+	:null_edge (x34 / possible
+		:domain (x36 / read-01
+			:ARG1 (x43 / and
+				:op1 (x39 / daughter
+					:mod (x38 / youngest)
+					:poss (x48 / mother
+						:poss (x44 / person
+							:name (n6 / name
+								:op1 "Madeleine")))))
+			:condition (x55 / allow-01
+				:ARG1 (x51 / journalist)
+				:ARG0 (x52 / newspaper
+					:name (n3 / name
+						:op1 "Terry"
+						:op2 "Anderson")
+					:mod (x50 / country
+						:name (n4 / name
+							:op1 "American")))
+				:ARG0 (x54 / kidnapper)
+				:ARG1 (x57 / journalist
+					:name (x58 / newspaper
+						:name (n5 / name
+							:op1 "Terry"
+							:op2 "Anderson")
+						:mod (x56 / country
+							:name (n7 / name
+								:op1 "American"))))))))
+
+# ::id 5
+# ::snt The newspaper ad-Diyar, meanwhile, said British hostage Terry Waite would be freed either " by the end of this month or within the first half of the coming November, at the latest .
+(x7 / say-01
+	:ARG0 (x2 / newspaper
+		:mod (x3 / ad-diyar))
+	:time (x5 / meanwhile)
+	:ARG1 (x14 / free-01
+		:ARG1 (x10 / name
+			:op1 "Terry"
+			:op2 "Waite"
+			:mod (x8 / country
+				:name (n / name
+					:op1 "Britain"))
+			:ARG0-of (x9 / hostage))
+		:mod (x15 / either)
+		:ARG1 (x23 / or
+			:op1 (x19 / end
+				:ARG1 (x22 / month
+					:mod (x21 / this)))
+			:op2 (x24 / within
+				:op1 (x27 / half
+					:time (x30 / date-entity))))
+		:time (x35 / late
+			:degree (m / most))))
+
+# ::id 6
+# ::snt The short, front-page report attributed the information to an unnamed security source
+(x6 / attribute-01
+	:ARG0 (x5 / report
+		:duration (x2 / short)
+		:mod (x4 / front-page))
+	:ARG1 (x8 / information)
+	:ARG2 (x13 / source
+		:ARG1-of (x11 / name-01
+			:polarity -)
+		:ARG1 (x12 / security)))
+
+# ::id 7
+# ::snt The conservative ad-Diyar is not known to have special insight into the hostage issue, but the report was the latest predicting Waite's release since Iran and Britain agreed to restore diplomatic ties Sept. 27
+(x6 / know-01
+	:ARG1 (x3 / ad-diyar
+		:mod (x2 / conservative))
+	:ARG1 (x22 / predict-01
+		:ARG1 (x21 / late
+			:degree (m / most)
+			:ARG0 (x18 / report
+				:ARG1-of (x30 / agree-01
+					:ARG0 (x28 / and
+						:op1 (x14 / issue
+							:topic (x10 / insight
+								:mod (x9 / special))
+							:topic (x13 / hostage))
+						:op1 (x27 / country
+							:name (n1 / name
+								:op1 "Iran"))
+						:op2 (x29 / country
+							:name (n2 / name
+								:op1 "Britain")))
+					:ARG1 (x32 / restore-01
+						:ARG0 x28
+						:ARG1 (x34 / tie-01
+							:mod (x33 / diplomacy))
+						:name (x35 / name
+							:op1 "Sept."
+							:op2 "27")))))
+		:ARG1 (x25 / release-01
+			:ARG1 (x23 / person
+				:name (n / name
+					:op1 "Waite")))))
+
+# ::id 8
+# ::snt Waite, 51, an Anglican Church envoy, was kidnapped Jan. 20, 1987 after leaving fellow hostage Terry Waite west Beirut hotel to negotiate with representatives of Anderson's kidnappers
+(x11 / kidnap-01
+	:ARG1 (x1 / person
+		:name (n / name
+			:op1 "Waite")
+		:null_edge 51
+		:ARG0-of (x8 / have-org-role-91
+			:ARG2 (e / envoy)
+			:ARG1 (x6 / organization
+				:name (n2 / name
+					:op1 "Anglican"))
+			:ARG1 (x7 / organization
+				:name (n3 / name
+					:op1 "Church"))))
+	:ARG1 (x12 / event
+		:name (n1 / name
+			:op1 "Jan."
+			:op2 "20"
+			:op3 ","
+			:op4 "1987"))
+	:time (x16 / after
+		:op1 (x17 / leave-06
+			:ARG2 (x20 / name
+				:op1 "Terry"
+				:op2 "Waite"
+				:mod (x18 / fellow)
+				:ARG0-of (x19 / hostage))
+			:ARG1 (x24 / hotel
+				:mod (x22 / west
+					:name (x23 / city
+						:name (n4 / name
+							:op1 "Beirut"))))
+			:purpose (x26 / negotiate-01
+				:ARG2 (x28 / person
+					:ARG0-of (r / represent-01)
+					:ARG1 (x32 / kidnapper
+						:poss (x30 / person
+							:name (n5 / name
+								:op1 "Anderson"))))))))
+
+# ::id 9
+# ::snt fellow hostage Terry Waite is believed held by Islamic Jihad, the pro-Iranian group that abducted Anderson
+(x6 / believe-01
+	:ARG1 (x7 / hold-01
+		:ARG0 (x3 / name
+			:op1 "Terry"
+			:op2 "Waite"
+			:mod (x1 / fellow)
+			:ARG0-of (x2 / hostage))
+		:ARG0 (x10 / war
+			:name (n / name
+				:op1 "Jihad")
+			:null_edge (x9 / null_tag))
+		:ARG0 (x14 / group
+			:mod (x13 / world-region
+				:name (n1 / name
+					:op1 "pro-Iranian"))
+			:ARG0-of (x16 / abducted
+				:ARG1 (x17 / person
+					:name (n2 / name
+						:op1 "Anderson"))))))
+
+# ::id 10
+# ::snt Anderson, chief Middle East correspondent for The Associated Press, is the longest-held of the 13 Western hostages in Lebanon
+(x14 / longest-held
+	:ARG0 (x1 / person
+		:name (n / name
+			:op1 "Anderson")
+		:null_edge (x6 / have-org-role-91
+			:ARG2 (c / correspondent)
+			:mod (x3 / chief)
+			:ARG1 (x10 / press
+				:null_edge (x8 / null_tag)
+				:null_edge (x9 / null_tag))))
+	:ARG1 (x19 / hostage
+		:quant 13
+		:mod (x18 / world-region
+			:name (n1 / name
+				:op1 "Western"))
+		:location (x21 / country
+			:name (n2 / name
+				:op1 "Lebanon"))))
+
+# ::id 11
+# ::snt American journalist Terry Anderson was kidnapped March 16, 1985
+(x6 / kidnap-01
+	:ARG1 (x2 / journalist
+		:name (x3 / name
+			:op1 "Terry"
+			:op2 "Anderson"
+			:mod (x1 / country
+				:name (n1 / name
+					:op1 "American"))))
+	:ARG1 (x7 / event
+		:name (n / name
+			:op1 "March"
+			:op2 "16"
+			:op3 ","
+			:op4 "1985")))
+
+# ::id 12
+# ::snt American journalist Terry Anderson birthday was marked by his colleagues as well as local and foreign journalists with a somber gathering at the Associated Press bureau
+(x7 / mark-01
+	:ARG0 (x2 / journalist)
+	:ARG1 (x3 / name
+		:op1 "Terry"
+		:op2 "Anderson"
+		:mod (x1 / country
+			:name (n / name
+				:op1 "American")))
+	:ARG1 (x5 / birthday)
+	:ARG1 (x15 / and
+		:op1 (x14 / local)
+		:op2 (x16 / foreign)
+		:op2 (x17 / journalist)
+		:prep-with (x21 / organization
+			:name (n1 / name
+				:op1 "gathering")
+			:mod (x20 / somber)
+			:location (x26 / bureau
+				:null_edge (x24 / null_tag)
+				:null_edge (x25 / null_tag)))))
+
+# ::id 13
+# ::snt Saturday was held in Anderson's office, which American journalist Terry Anderson colleagues refer to as " Terry's Room .
+(x3 / hold-04
+	:location (x7 / office
+		:poss (x5 / person
+			:name (n / name
+				:op1 "Anderson")
+			:ARG0-of (x15 / refer-02
+				:ARG1 (x11 / journalist)
+				:ARG0 (x14 / colleague
+					:null_edge (x10 / country
+						:name (n1 / name
+							:op1 "American"))
+					:null_edge (x12 / person
+						:name (n2 / name
+							:op1 "Terry"))
+					:ARG1 (x13 / person
+						:name (n3 / name
+							:op1 "Anderson")))
+				:ARG1 (x21 / room
+					:null_edge (x19 / person
+						:name (n4 / name
+							:op1 "Terry"))))))
+	:time (xap0 / date-entity
+		:weekday (x1 / saturday)))
+
+# ::id 14
+# ::snt The staff sang " Happy birthday, Dear Terry " and blew out a candle on a white cake
+(x11 / and
+	:op1 (x3 / sing-01
+		:ARG0 (x2 / person
+			:ARG2-of (s / staff-01))
+		:ARG1 (x6 / birthday
+			:mod (x5 / happy)
+			:mod (x8 / dear)
+			:poss (x9 / terry)))
+	:op2 (x12 / blow-01
+		:ARG0 x2
+		:ARG1 (x15 / candle
+			:mod (x19 / cake
+				:mod (x18 / white)))))
+
+# ::id 15
+# ::snt The newspapers also published an Arabic translation of Mrs. Say's open letter to the captors, pleading with them to release Anderson and the other captives
+(x4 / publish-01
+	:ARG0 (x2 / newspaper)
+	:mod (x3 / also)
+	:ARG0-of (x18 / plead-01
+		:ARG1 (x22 / release-01
+			:ARG1 (x24 / and
+				:op1 (x7 / translate-01
+					:mod (x6 / language
+						:name (n1 / name
+							:op1 "Arabic"))
+					:mod (x13 / letter
+						:ARG2 (x9 / mrs.)
+						:ARG1-of (x12 / open)
+						:ARG1 (x16 / captor)))
+				:op1 (x23 / person
+					:name (n / name
+						:op1 "Anderson"))
+				:op2 (x27 / person
+					:ARG1-of (c / capture-01)
+					:mod (x26 / other))))))
+
+# ::id 16
+# ::snt " Mrs. beg The staff to release Terry and the others for humanitarian reasons
+(x3 / beg-01
+	:ARG2 (x2 / mrs.)
+	:ARG1 (x7 / release-01
+		:ARG1 (x5 / staff)
+		:ARG1 (x9 / and
+			:op1 (x8 / person
+				:name (n / name
+					:op1 "Terry"))
+			:op2 (x11 / other)
+			:op1 (x14 / reason
+				:mod (x13 / humanitarian)))))
+
+# ::id 17
+# ::snt Please, in honor of his birthday, give Terry and the others the gift of freedom this year, " Mrs. Say wrote
+(x24 / write-01
+	:ARG1 (x11 / and
+		:op1 (x9 / give-07
+			:manner (x4 / honor
+				:ARG1 (x7 / birthday))
+			:ARG1 (x15 / thing
+				:ARG1-of (g / gift-01)
+				:ARG2 (x17 / free-41))
+			:time (x19 / year
+				:mod (x18 / this)))
+		:op1 (x10 / person
+			:name (n / name
+				:op1 "Terry"))
+		:op2 (x13 / other))
+	:ARG1 (x23 / thing
+		:ARG1-of (s / say-01)
+		:ARG0 (x22 / mrs.)))
+
+# ::id 18
+# ::snt " His daughter Sulome, whom he has never seen, started school last month
+(x12 / start-01
+	:ARG0 (x4 / person
+		:name (n / name
+			:op1 "Sulome")
+		:ARG1-of (x10 / see-01
+			:ARG0 (x3 / daughter)))
+	:ARG1 (x13 / school)
+	:time (x15 / month
+		:mod (x14 / last)))
+
+# ::id 19
+# ::snt His daughter Gabrielle has matured from a child of 8 to a young woman of 14, " Mrs. added
+(x20 / add-01
+	:ARG1 (x5 / mature-01
+		:ARG0 (x3 / person
+			:name (n / name
+				:op1 "Gabrielle")
+			:null_edge (x2 / daughter))
+		:ARG1 (xap0 / seismic-quantity
+			:quant 8
+			:ARG2 (x14 / woman
+				:mod (x13 / young)
+				:quant 14)))
+	:ARG0 (x19 / mrs.))
+
+# ::id 20
+# ::snt 
+(x10 / publish-01
+	:medium (x6 / letter
+		:mod (x5 / hand-written))
+	:ARG0 (x9 / paper
+		:quant (x8 / some))
+	:ARG1 (x13 / draw-02
+		:mod (x12 / pencil)
+		:ARG0 (x16 / child
+			:ARG1-of (x20 / person
+				:ARG1-of (b / bear-02)
+				:duration (x22 / temporal-quantity
+					:unit (d / day)
+					:quant 83)
+				:time (x23 / after
+					:op1 (x30 / abduction
+						:poss (x28 / father
+							:mod (x26 / hand-written)
+							:mod (x27 / letter))))))))
+
+# ::id 21
+# ::snt The drawing showed happy children playing
+(x3 / show-01
+	:ARG0 (x2 / draw-02)
+	:ARG1 (x5 / child
+		:mod (x4 / happy)
+		:ARG0-of (x6 / play-01)))
+
+# ::id 22
+# ::snt " To Dad
+(x3 / dad)
+
+# ::id 23
+# ::snt Sulome's hand-written letter love Mrs.
+(x / xconcept
+	:x (x4 / letter
+		:mod (x3 / hand-written)
+		:ARG2 (x6 / mrs.))
+	:x (x5 / love-01))
+
+# ::id 24
+# ::snt Happy birthday
+(x2 / birthday
+	:mod (x1 / happy))
+
+# ::id 25
+# ::snt Sulome's hand-written letter go to proper school
+(x5 / go-01
+	:ARG1 (x4 / letter
+		:mod (x3 / hand-written))
+	:ARG1 (x8 / school
+		:mod (x7 / proper)))
+
+# ::id 26
+# ::snt Sulome's hand-written letter do work, tracing, art, math
+(x5 / do-02
+	:ARG0 (x4 / letter
+		:mod (x3 / hand-written))
+	:ARG1 (x10 / art
+		:degree (x12 / math
+			:prep-for (x6 / work-01
+				:time (x8 / trace-02)))))
+
+# ::id 27
+# ::snt Sulome's hand-written letter can write and read
+(x5 / possible
+	:domain (x7 / and
+		:op1 (x6 / write-01
+			:ARG0 (x4 / letter
+				:mod (x3 / hand-written)))
+		:op2 (x8 / read-01)))
+
+# ::id 28
+# ::snt Sulome's hand-written letter love Mrs., " Sulome's letter said
+(x / xconcept
+	:x (x4 / letter
+		:mod (x3 / hand-written)
+		:ARG2 (x6 / mrs.
+			:ARG1 (x11 / letter
+				:ARG1-of (x12 / say-01))))
+	:x (x5 / love-01))
+
+# ::id 29
+# ::snt Former Irish hostage Brian Keenan said after Former Irish hostage Brian Keenan release Aug. 24 that Former Irish hostage Brian Keenan had spent part of Former Irish hostage Brian Keenan four years in captivity with Anderson, and Former Irish hostage Brian Keenan noted that Anderson has a photograph of Sulome and was given letters from American journalist Terry Anderson family published in the press
+(x6 / say-01
+	:ARG0 (x4 / newspaper
+		:name (n / name
+			:op1 "Brian"
+			:op2 "Keenan")
+		:mod (x1 / former)
+		:ARG0-of (x3 / hostage
+			:ARG1 (x2 / military
+				:name (n1 / name
+					:op1 "Irish"))))
+	:time (x7 / after
+		:op1 (x13 / release-01
+			:ARG0 (x11 / newspaper
+				:name (n2 / name
+					:op1 "Brian"
+					:op2 "Keenan")
+				:mod (x8 / former)
+				:ARG0-of (x10 / hostage
+					:ARG1 (x9 / military
+						:name (n3 / name
+							:op1 "Irish"))))
+			:name (x14 / name
+				:op1 "Aug."
+				:op2 "24")
+			:ARG1 (x38 / and
+				:op1 (x23 / spend-01
+					:ARG0 (x20 / newspaper
+						:name (n4 / name
+							:op1 "Brian"
+							:op2 "Keenan")
+						:ARG0-of (x17 / former)
+						:ARG0-of (x19 / hostage
+							:ARG1 (x18 / country
+								:name (n8 / name
+									:op1 "Ireland"))))
+					:ARG1 (x24 / participate-01
+						:name (x29 / name
+							:op1 "Brian"
+							:op2 "Keenan"
+							:mod (x26 / former)
+							:ARG0-of (x28 / hostage
+								:ARG1 (x27 / military
+									:name (n10 / name
+										:op1 "Irish")))))
+					:ARG3 (x32 / temporal-quantity
+						:unit (y / year)
+						:quant 4)
+					:ARG1 (x52 / and))
+				:op1 (x34 / captivity
+					:accompanier (x36 / person
+						:name (n5 / name
+							:op1 "Anderson")))
+				:op2 (x44 / note-01
+					:ARG0 (x42 / newspaper
+						:name (n6 / name
+							:op1 "Brian"
+							:op2 "Keenan")
+						:mod (x39 / former)
+						:ARG0-of (x41 / hostage
+							:ARG1 (x40 / military
+								:name (n9 / name
+									:op1 "Irish"))))
+					:ARG1 (x47 / have-03
+						:ARG0 (x46 / person
+							:name (n7 / name
+								:op1 "Anderson"))
+						:ARG1 (x55 / letter
+							:ARG2 (x61 / family
+								:poss (x57 / country
+									:name (n11 / name
+										:op1 "American"))
+								:poss (x58 / journalist)
+								:poss (x59 / person
+									:name (n12 / name
+										:op1 "Terry"))
+								:ARG1-of (x62 / publish-01
+									:medium (x65 / press))))))))))
+
+# ::id 30
+# ::snt " Terry and Former Irish hostage Brian Keenan would sit through those long nights and speak with great pain and remorse and longing for Terry's daughter, " Keenan said
+(x31 / say-01
+	:ARG1 (x15 / and
+		:op1 (x10 / sit-02
+			:ARG1 (x7 / newspaper
+				:name (n1 / name
+					:op1 "Brian"
+					:op2 "Keenan")
+				:ARG0-of (x6 / hostage
+					:topic (x3 / and
+						:op1 (x2 / person
+							:name (n3 / name
+								:op1 "Terry"))
+						:op2 (x4 / former))
+					:ARG1 (x5 / country
+						:name (n2 / name
+							:op1 "Ireland"))))
+			:mod (xap0 / get-13
+				:dayperiod (x14 / night
+					:mod (x13 / long))))
+		:op2 (x16 / speak-01
+			:ARG1 (x19 / pain-01
+				:mod (x18 / great)
+				:ARG0 (x20 / and
+					:op2 (x22 / and
+						:op1 (x21 / remorse
+							:ARG1 (x27 / daughter
+								:poss (x25 / person
+									:name (n4 / name
+										:op1 "Terry"))))
+						:op2 (x23 / longing))))))
+	:ARG0 (x30 / person
+		:name (n / name
+			:op1 "Keenan")))
+
+# ::id 31
+# ::snt Madeleine, addressing " Madeleine Dearest Darling Terry, " wrote : " Another birthday, another year, another letter
+(x11 / write-01
+	:ARG0 (x1 / person
+		:name (n / name
+			:op1 "Madeleine")
+		:ARG0-of (x3 / address-01
+			:ARG1 (x5 / name
+				:op1 "Madeleine"
+				:op2 "Dearest"
+				:op3 "Darling"
+				:op4 "Terry")))
+	:ARG1 (x15 / birthday
+		:mod (x14 / another)
+		:mod (x21 / letter
+			:mod (x20 / another))))
+
+# ::id 32
+# ::snt A question Madeleine ask Terry's and the answer Madeleine always want to give is ` soon, soon . "
+(x2 / question-01
+	:ARG0-of (x4 / ask-01
+		:ARG0 (x3 / person
+			:name (n / name
+				:op1 "Madeleine"))
+		:ARG1 (x7 / and
+			:op1 (x5 / person
+				:name (n1 / name
+					:op1 "Terry"))
+			:op2 (x9 / answer-01
+				:ARG1 (x12 / want-01
+					:ARG0 (x10 / person
+						:name (n2 / name
+							:op1 "Madeleine"))
+					:time (x11 / always)
+					:ARG1 (x14 / give-01)))))
+	:time (x17 / soon)
+	:time (x19 / soon))
+
+# ::id 33
+# ::snt In addition to Anderson and Waite, the Westerners missing in Lebanon are five Americans, three Britons, two Germans and an Italian
+(x22 / and
+	:op2 (x5 / and
+		:op1 (x4 / person
+			:name (n4 / name
+				:op1 "Anderson"))
+		:op2 (x6 / person
+			:name (n5 / name
+				:op1 "Waite")))
+	:op1 (x9 / person
+		:mod (w / world-region
+			:name (n / name
+				:op1 "Westerners"))
+		:ARG1-of (x10 / miss-01
+			:location (x12 / country
+				:name (n6 / name
+					:op1 "Lebanon"))))
+	:quant 5
+	:op2 (x18 / newspaper
+		:name (n1 / name
+			:op1 "Britons")
+		:quant 3)
+	:op3 (x21 / country
+		:name (n2 / name
+			:op1 "Germans")
+		:quant 2)
+	:op2 (x24 / country
+		:name (n3 / name
+			:op1 "Italy")))
+
