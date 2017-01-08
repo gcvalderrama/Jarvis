@@ -239,9 +239,7 @@ namespace Jarvis
                     var ouputfile = Path.Combine(options.OutputFile, Path.GetFileNameWithoutExtension(item));
                     File.WriteAllText(ouputfile + ".txt", sb_document.ToString().Replace(" 's ", "'s ").Replace("''", "\"").Replace("``", "\""));
                 }
-
-            }
-             
+            }             
         }
     }
 }

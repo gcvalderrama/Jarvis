@@ -69,10 +69,10 @@ namespace GenerateDocsFromSintacticParser
                         var word = sentence.Tokens.ElementAt(i);
                         if (next != null)
                         {
-                            if (next.Word == "'s")
+                            if (next.Word == "'s" || next.Word == ",")
                             {
                                 sb_sentence.Append(word.Word);
-                            }
+                            }                                
                             else
                             {
                                 if (word.Word == "-LRB-")
@@ -94,8 +94,8 @@ namespace GenerateDocsFromSintacticParser
                     }
                     sb_document.AppendLine(sb_sentence.ToString());
                 }
-                var ouputfile = Path.Combine(OutputDir, Path.GetFileNameWithoutExtension(item));
-                File.WriteAllText(ouputfile + ".txt", sb_document.ToString());
+                var ouputfile = Path.Combine(OutputDir, Path.GetFileNameWithoutExtension(item));                
+                File.WriteAllText(ouputfile + ".txt", sb_document.ToString().Replace(" 's ", "'s ").Replace("''", "\"").Replace("``", "\""));
             }
         }
     }
