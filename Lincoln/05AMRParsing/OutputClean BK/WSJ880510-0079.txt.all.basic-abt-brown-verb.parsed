@@ -1,0 +1,571 @@
+# ::id 1
+# ::snt Congress soon will consider an increase in the federal minimum wage to $ 5.05 from $ 3.35 an hour
+(x4 / consider-02
+	:ARG0 (x1 / government-organization
+		:name (n / name
+			:op1 "Congress"))
+	:time (x2 / soon)
+	:ARG1 (x6 / increase-01
+		:ARG1 (x11 / wage-01
+			:mod (x10 / minimum
+				:mod (x9 / government-organization
+					:name (n1 / name
+						:op1 "federal"))))
+		:quant (x14 / monetary-quantity
+			:unit (y / yuan))
+		:time (x19 / temporal-quantity
+			:unit (h / hour))))
+
+# ::id 2
+# ::snt Supporters of the increase argue that a major impetus has been recent boosts in many state minimum-wage levels
+(x5 / argue-01
+	:ARG0 (x1 / person
+		:ARG0-of (s / support-01)
+		:ARG1 (x4 / increase-01))
+	:ARG1 (x13 / boost-01
+		:ARG1 (x9 / impetus
+			:mod (x8 / major))
+		:time (x12 / recent)
+		:location (x18 / level
+			:quant (x15 / many)
+			:mod (x16 / state)
+			:mod (x17 / minimum-wage))))
+
+# ::id 3
+# ::snt Last year alone, nine states and the District of Columbia raised their minimum wage above the current federal level, and this year New York, New Jersey and Pennsylvania are considering doing the same
+(x22 / and
+	:time (x2 / year
+		:mod (x1 / last)
+		:mod (x3 / alone))
+	:op2 (x7 / and
+		:op1 (x6 / state
+			:null_edge 9)
+		:op3 (x9 / company
+			:name (n / name
+				:op1 "District"
+				:op2 "of"
+				:op3 "Columbia")))
+	:op2 (x15 / wage-01
+		:mod (x14 / minimum))
+	:op1 (x16 / above
+		:op1 (x20 / level
+			:time (x18 / current)
+			:mod (x19 / government-organization
+				:name (n3 / name
+					:op1 "federal"))))
+	:op2 (x30 / and
+		:time (x24 / year
+			:mod (x23 / this))
+		:op1 (x26 / country
+			:name (n1 / name
+				:op1 "York")
+			:null_edge (x25 / null_tag)
+			:null_edge (x31 / country
+				:name (n4 / name
+					:op1 "Pennsylvania")))
+		:op2 (x29 / country
+			:name (n2 / name
+				:op1 "Jersey"))
+		:op2 (x33 / consider-02
+			:ARG1 (x34 / do-04
+				:ARG0 x30
+				:ARG1 (x36 / same-41)))))
+
+# ::id 4
+# ::snt Yet, state and federal minimum-wage comparisons should be made with a great deal of caution
+(xap0 / multi-sentence
+	:snt2 (x7 / compare-01
+		:ARG0 (x4 / and
+			:op1 (x3 / state)
+			:op2 (x5 / government-organization
+				:name (n / name
+					:op1 "federal")))
+		:mod (x6 / minimum-wage))
+	:snt1 (x8 / recommend-01
+		:ARG1 (x10 / make-02
+			:ARG1 (x14 / deal-01
+				:mod (x13 / great)
+				:ARG1 (x16 / cautious)))))
+
+# ::id 5
+# ::snt There are many loopholes in federal minimum-wage coverage
+(x4 / loophole
+	:quant (x3 / many)
+	:ARG1-of (x8 / cover-01
+		:ARG0 (x6 / government-organization
+			:name (n / name
+				:op1 "federal"))))
+
+# ::id 6
+# ::snt Certain occupations, including casual babysitters and most farm workers, are excluded as well as employees of small businesses and firms not engaged in interstate commerce
+(x13 / exclude-01
+	:ARG1 (x2 / occupation
+		:mod (x1 / certain))
+	:ARG1 (x7 / and
+		:op1 (x6 / babysitter
+			:mod (x5 / casual))
+		:op2 (x10 / person
+			:ARG0-of (w / work-01)
+			:quant (x8 / most)
+			:ARG1 (x9 / farm)))
+	:ARG1 (x17 / person
+		:ARG1-of (e / employ-01)
+		:example (x21 / and
+			:op1 (x20 / business
+				:mod (x19 / small))
+			:op2 (x22 / firm
+				:ARG1-of (x24 / person
+					:ARG1-of (e1 / engage-01)
+					:ARG2 (x27 / commerce
+						:mod (x26 / interstate)))))))
+
+# ::id 7
+# ::snt State minimum-wage laws are intended to cover these workers
+(x5 / intend-01
+	:ARG1 (x3 / law
+		:mod (x1 / state))
+	:ARG2 (x7 / cover-04
+		:ARG1 (x9 / person
+			:ARG0-of (w / work-01))))
+
+# ::id 8
+# ::snt At the same time, if a state's minimum is higher than the federal minimum, the state minimum applies
+(x21 / apply-02
+	:time (x4 / time
+		:ARG1-of (x3 / same-41))
+	:time (x12 / high
+		:domain (x10 / minimum
+			:poss (x8 / state))
+		:compared-to (x16 / minimum
+			:mod (x15 / government-organization
+				:name (n / name
+					:op1 "federal"))))
+	:ARG0 (x20 / minimum
+		:mod (x19 / state)))
+
+# ::id 9
+# ::snt Moreover, the quoted minimum wage for a state is often deceptive
+(x12 / deceptive
+	:domain (x6 / wage-01
+		:ARG1-of (x4 / quote-01)
+		:mod (x5 / minimum)
+		:ARG1 (x9 / state))
+	:frequency (x11 / often))
+
+# ::id 10
+# ::snt Some states offer what is, in reality, a menu of minimum wages rather than a single minimum
+(x3 / offer-01
+	:ARG0 (x2 / state
+		:quant (x1 / some))
+	:ARG1 (x11 / menu
+		:location (x8 / reality)
+		:mod (x14 / wage
+			:mod (x13 / minimum)
+			:quant (x19 / minimum
+				:mod (x18 / single)))))
+
+# ::id 11
+# ::snt The District of Columbia, whose minimum of $ 4.85 is the highest in the country, actually has seven other " minimum wages, " all of which are lower than $ 4.85
+(x19 / have-03
+	:null_edge (x2 / null_tag
+		:mod (x13 / high
+			:degree (m / most)
+			:location (x16 / country
+				:name (x4 / country
+					:name (n / name
+						:op1 "Columbia")))))
+	:null_edge (x10 / monetary-quantity
+		:unit (y / yuan))
+	:mod (x18 / actual)
+	:ARG1 (x24 / wage
+		:quant 7
+		:mod (x21 / other)
+		:mod (x23 / minimum)
+		:mod (x31 / low
+			:quant (x34 / monetary-quantity
+				:unit (y1 / yuan)))))
+
+# ::id 12
+# ::snt Workers in the retail trade and laundry industry, for example, receive a minimum of only $ 3.50
+(x13 / receive-01
+	:ARG0 (x1 / person
+		:ARG0-of (w / work-01)
+		:null_edge (x6 / and
+			:op1 (x5 / trade-01
+				:mod (x4 / retail-01))
+			:op2 (x8 / industry
+				:mod (x7 / laundry))))
+	:ARG1 (x15 / minimum
+		:null_edge (x19 / monetary-quantity
+			:unit (y / yuan)
+			:null_edge (x17 / only))))
+
+# ::id 13
+# ::snt Furthermore, the District of Columbia, like many states, has a subminimum, or " training " wage, of $ 3.35 for employees in some job categories who are under age 18
+(x12 / have-03
+	:ARG1 (x6 / country
+		:name (n / name
+			:op1 "Columbia"))
+	:ARG1 (x16 / or
+		:op1 (x10 / state
+			:quant (x9 / many))
+		:op1 (x14 / subminimum)
+		:op2 (x20 / wage-01
+			:ARG1 (x18 / train-01))
+		:op2 (x24 / monetary-quantity
+			:unit (y / yuan)
+			:null_edge (x26 / person
+				:ARG1-of (e / employ-01)
+				:mod (x34 / age
+					:manner (x30 / category
+						:quant (x28 / some)
+						:mod (x29 / job))
+					:ARG2 18)))))
+
+# ::id 14
+# ::snt (Some states also have subminimums based on age, student status, approved internship programs or for new hires .
+(x5 / have-03
+	:ARG0 (x3 / state
+		:quant (x2 / some))
+	:mod (x4 / also)
+	:ARG1 (x6 / subminimum
+		:ARG1-of (x7 / base-02
+			:ARG2 (x12 / status
+				:mod (x11 / person
+					:ARG0-of (s / study-01))
+				:poss (x17 / or
+					:op2 (x16 / program
+						:ARG1-of (x14 / approve-01)
+						:mod (x15 / internship))
+					:op1 (x20 / hire-01
+						:mod (x19 / new)))))))
+
+# ::id 15
+# ::snt Moreover, 13 states have minimums below the federal level and nine have no minimum at all
+(x11 / and
+	:op1 (x5 / have-03
+		:ARG0 (x4 / state
+			:quant 13))
+	:op1 (x7 / below
+		:op1 (x6 / minimum)
+		:op1 (x10 / level
+			:mod (x9 / government-organization
+				:name (n / name
+					:op1 "federal"))))
+	:op2 (x13 / have-03
+		:null_edge 9
+		:polarity -
+		:ARG1 (x15 / minimum
+			:location (x17 / all))))
+
+# ::id 16
+# ::snt Another frequently overlooked point is that although 16 states have enacted minimum-wage levels above the current federal minimum of $ 3.35, not one has a minimum at or above $ 5.05
+(x4 / point
+	:mod (x1 / another)
+	:ARG1-of (x3 / overlook-01
+		:frequency (x2 / frequent))
+	:domain (x25 / have-03
+		:time (x11 / enact-01
+			:ARG0 (x9 / state
+				:quant 16)
+			:ARG1 (x13 / level
+				:mod (x12 / minimum-wage)
+				:location (x14 / above
+					:op1 (x18 / minimum
+						:time (x16 / current)
+						:mod (x17 / government-organization
+							:name (n / name
+								:op1 "federal"))
+						:quant (x21 / monetary-quantity
+							:unit (y1 / yuan))))))
+		:ARG0 (x24 / one)
+		:ARG1 (x27 / minimum)
+		:null_edge (x32 / monetary-quantity
+			:unit (y / yuan))))
+
+# ::id 17
+# ::snt A minimum wage of $ 5.05 would require even the high-minimum-wage states of California and Connecticut to increase their mandated minimums by 19 %
+(x8 / require-01
+	:ARG0 (x3 / wage-01
+		:mod (x2 / minimum)
+		:quant (x6 / monetary-quantity
+			:unit (y / yuan)))
+	:ARG1 (x18 / increase-01
+		:ARG0 (x12 / state
+			:mod (x9 / even)
+			:mod (x11 / high-minimum-wage)
+			:ARG1 (x15 / and
+				:op1 (x14 / state
+					:name (n / name
+						:op1 "California"))
+				:op2 (x16 / country
+					:name (n1 / name
+						:op1 "Connecticut"))))
+		:ARG1 (x21 / minimum
+			:ARG1-of (x20 / mandate))
+		:ARG2 (xap0 / percentage-entity
+			:value 19)))
+
+# ::id 18
+# ::snt Nonetheless, both Republican and Democrat members of Congress from high-wage states will likely find it difficult to vote against raising the federal minimum wage, since raising it would equalize wage costs among states and increase the competitiveness of labor in high-minimum-wage states
+(x15 / find-02
+	:ARG1 (x5 / and
+		:op1 "Republican"
+		:op2 (x6 / have-org-role-91
+			:ARG1 (p / political-party
+				:name (n / name
+					:op1 "Democrat")))
+		:op1 (xap0 / person
+			:ARG0-of (x7 / have-org-role-91
+				:ARG2 (m / member)
+				:ARG1 (x9 / government-organization
+					:name (n1 / name
+						:op1 "Congress"))
+				:source (x12 / state
+					:mod (x11 / high-wage)))))
+	:mod (x14 / likely)
+	:ARG1 (x17 / difficult
+		:domain (x19 / vote-01
+			:ARG1 (x21 / raise-01
+				:ARG1 (x25 / wage-01
+					:ARG0 (x23 / government-organization
+						:name (n2 / name
+							:op1 "federal"))
+					:mod (x24 / minimum))
+				:time (x27 / since
+					:op1 (x28 / raise-01
+						:ARG1 (x36 / and
+							:op1 (x31 / equalize
+								:ARG1 (x33 / cost-01
+									:ARG1 (x32 / wage-01))
+								:location (x34 / among
+									:op1 (x35 / state)))
+							:op2 (x37 / increase-01
+								:ARG1 (x39 / competitiveness
+									:ARG0 (x41 / political-party
+										:name (n3 / name
+											:op1 "labor")
+										:location (x44 / state
+											:mod (x43 / high-minimum-wage))))))))))))
+
+# ::id 19
+# ::snt Yet the different minimum-wage levels to a large extent reflect regional variations in levels of unemployment and labor demand, as well as costs of living
+(x10 / reflect-01
+	:ARG2 (x5 / level
+		:ARG1-of (x3 / differ-02)
+		:mod (x4 / minimum-wage)
+		:mod (x9 / extent
+			:mod (x8 / large)))
+	:ARG1 (x12 / variation
+		:mod (x11 / region)
+		:location (x14 / level
+			:mod (x19 / demand-01
+				:ARG0 (x17 / and
+					:op1 (x16 / employ-01
+						:polarity -)
+					:op2 (x18 / labor-01)
+					:op2 (x24 / cost-01
+						:ARG1 (x26 / live-01)))))))
+
+# ::id 20
+# ::snt Typically, states with high minimum wages have low levels of unemployment and/or high costs of living
+(x8 / have-03
+	:mod (x1 / typical)
+	:ARG0 (x3 / state
+		:prep-with (x7 / wage
+			:mod (x5 / high)
+			:quant (x6 / minimum)))
+	:ARG1 (x10 / level
+		:mod (x9 / low)
+		:mod (x12 / employ-01
+			:polarity -)
+		:mod (xap0 / monetary-quantity
+			:mod (x14 / high)
+			:ARG2-of (x15 / cost-01
+				:ARG1 (x17 / live-01)))))
+
+# ::id 21
+# ::snt California and Massachusetts, with unemployment rates of 5.6 % and 3.8 % are representative of states with high minimum wages
+(x15 / represent-01
+	:ARG1 (x2 / and
+		:op1 (x1 / state
+			:name (n / name
+				:op1 "California")))
+	:ARG1 (x11 / and
+		:op1 (x7 / rate
+			:mod (x6 / employ-01
+				:polarity -))
+		:op1 (xap0 / percentage-entity
+			:value (x9 / percentage-entity)
+			:value 3.8))
+	:ARG1 (x21 / wage
+		:mod (x19 / high)
+		:quant (x20 / minimum)))
+
+# ::id 22
+# ::snt Compare these unemployment rates to those of Alabama and Louisiana, states that have no minimum wage
+(x1 / compare-01
+	:ARG1 (x4 / rate
+		:mod (x3 / employ-01
+			:polarity -)
+		:location (x9 / and
+			:op1 (x8 / country
+				:name (n / name
+					:op1 "Alabama"))
+			:op2 (x10 / country
+				:name (n1 / name
+					:op1 "Louisiana"))
+			:op2 (x12 / state-01
+				:ARG1 (x14 / have-03
+					:polarity -
+					:ARG1 (x17 / wage-01
+						:mod (x16 / minimum)))))))
+
+# ::id 23
+# ::snt Their unemployment rates are 7.9 % and 12 % respectively
+(x7 / and
+	:domain (x3 / rate
+		:mod (x2 / employ-01
+			:polarity -))
+	:op2 (xap0 / percentage-entity
+		:value (x5 / percentage-entity))
+	:op1 (xap1 / percentage-entity
+		:value 12))
+
+# ::id 24
+# ::snt The advantage of allowing state or regional differences in minimum-wage levels is that the appropriate minimum wage for Connecticut might force massive layoffs in Texas
+(x2 / advantage
+	:domain (x4 / allow-01
+		:ARG1 (x6 / or
+			:op1 (x5 / state)
+			:op2 (x8 / thing
+				:ARG1-of (d / differ-02)
+				:mod (x7 / region))
+			:op1 (x11 / level
+				:mod (x10 / minimum-wage))
+			:domain (x21 / force-01
+				:ARG0 (x17 / wage-01
+					:mod (x15 / appropriate)
+					:mod (x16 / minimum)
+					:ARG2 (x19 / country
+						:name (n / name
+							:op1 "Connecticut")))
+				:ARG1 (x23 / layoff
+					:mod (x22 / massive)
+					:location (x25 / country
+						:name (n1 / name
+							:op1 "Texas")))))))
+
+# ::id 25
+# ::snt Wyoming's minimum of $ 1.60 would be meaningless, even laughable, in Massachusetts, where most employers must pay well above the federal minimum wage to attract applicants for job openings
+(x9 / mean-01
+	:domain (x3 / minimum
+		:poss (x1 / country
+			:name (n1 / name
+				:op1 "Wyoming"))
+		:null_edge (x6 / monetary-quantity
+			:unit (y / yuan)))
+	:mod (x12 / laugh-01
+		:mod (x11 / even))
+	:location (x15 / state
+		:name (n / name
+			:op1 "Massachusetts")
+		:ARG1-of (x21 / pay-02
+			:ARG0 (x19 / employ-01
+				:quant (x18 / most))
+			:location (x23 / above
+				:op1 (x27 / wage-01
+					:mod (x26 / minimum
+						:mod (x25 / government-organization
+							:name (n2 / name
+								:op1 "federal")))))
+			:ARG1 (x29 / attract-01
+				:ARG1 (x30 / apply-01))
+			:ARG3 (x33 / open-02
+				:ARG1 (x32 / job)))))
+
+# ::id 26
+# ::snt Because states are the best judges of local conditions, they are in a better position to set minimum-wage laws
+(x1 / cause-01
+	:ARG0 (x16 / position
+		:mod (x15 / good)
+		:ARG2 (x18 / set-06
+			:ARG1 (x20 / law)))
+	:ARG0 (xap1 / person
+		:ARG0-of (xap0 / have-org-role-91
+			:ARG3 (x6 / judge-01
+				:domain (x2 / state)
+				:mod (x5 / good
+					:degree (m / most))
+				:ARG1 (x9 / condition
+					:mod (x8 / local))))))
+
+# ::id 27
+# ::snt Proponents of a federal increase argue that recent state increases signal grassroots support of the current minimum-wage bill before Congress
+(x6 / argue-01
+	:ARG0 (x1 / proponent
+		:ARG1 (x5 / increase-01
+			:ARG0 (x4 / government-organization
+				:name (n / name
+					:op1 "federal"))))
+	:ARG1 (x11 / signal
+		:ARG0 (x10 / increase-01
+			:time (x8 / recent)
+			:ARG0 (x9 / state))
+		:ARG1 (x13 / support-01
+			:mod (x12 / grassroots)
+			:ARG0 (x18 / bill
+				:time (x16 / current)
+				:time (x19 / before
+					:op1 (x20 / government-organization
+						:name (n1 / name
+							:op1 "Congress")))))))
+
+# ::id 28
+# ::snt Yet 41 states are still at or below the current federal level
+(x3 / state
+	:quant 41
+	:mod (x5 / still)
+	:location (x8 / below
+		:op1 (x12 / level
+			:time (x10 / current)
+			:mod (x11 / government-organization
+				:name (n / name
+					:op1 "federal")))))
+
+# ::id 29
+# ::snt As Robert Martin of the Chamber of Commerce has pointed out : " Most states recognize that what you pay someone is determined by supply and demand .
+(x16 / recognize-02
+	:ARG1-of (x10 / point-02
+		:ARG0 (x2 / newspaper
+			:name (n / name
+				:op1 "Robert"
+				:op2 "Martin"))
+		:ARG0 (x6 / government-organization
+			:name (n1 / name
+				:op1 "Chamber"
+				:op2 "of"
+				:op3 "Commerce")))
+	:ARG0 (x15 / state
+		:quant (x14 / most))
+	:ARG1 (x23 / determine-01
+		:ARG0 (x26 / and
+			:op2 (x20 / pay-01
+				:ARG0 (x19 / you)
+				:ARG1 (x21 / someone))
+			:op1 (x25 / supply-01)
+			:op2 (x27 / demand-01))))
+
+# ::id 30
+# ::snt This is a lesson the folks in Washington could bear learning
+(x4 / lesson
+	:domain (x1 / this)
+	:ARG1 (x9 / possible
+		:domain (x10 / person
+			:ARG1-of (b / bear-02)
+			:ARG0 (x6 / folk
+				:location (x8 / city
+					:name (n / name
+						:op1 "Washington")))
+			:ARG1 (x11 / learn-01))))
+

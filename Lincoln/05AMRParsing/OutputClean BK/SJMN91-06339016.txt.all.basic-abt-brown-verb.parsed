@@ -1,0 +1,547 @@
+# ::id 1
+# ::snt After a stormy three-year tenure, White House Chief of Staff John Sununu resigned Tuesday, saying he did not want to be a " political burden " to President Bush during his 1992 re-election campaign. ; The resignation, effective Dec. 15, capped months of sniping by Democrats and even some Republicans
+(x14 / resign-01
+	:time (x1 / after
+		:op1 (x5 / tenure
+			:mod (x3 / stormy)
+			:mod (x4 / person
+				:name (n1 / name
+					:op1 "three-year"))))
+	:ARG1 (x12 / event
+		:name (n / name
+			:op1 "John"
+			:op2 "Sununu")
+		:ARG0-of (x9 / have-org-role-91
+			:ARG2 (c / chief)
+			:ARG1 (x8 / government-organization
+				:name (n2 / name
+					:op1 "House")
+				:mod (x7 / white)))
+		:ARG0-of (x11 / staff))
+	:instrument (x17 / say-01
+		:ARG0 x12
+		:ARG1 (x21 / want-01
+			:ARG1 (x27 / burden-01
+				:mod (x26 / politics)
+				:ARG2 (x31 / person
+					:name (n3 / name
+						:op1 "Bush")
+					:ARG0-of (x30 / have-org-role-91
+						:ARG2 (p / president)))
+				:time (x36 / campaign-01
+					:time (x34 / date-entity
+						:year 1992)))
+			:null_edge (x46 / cap-02
+				:ARG0 (x40 / resignation)
+				:ARG0 (x49 / snipe
+					:quant (x47 / temporal-quantity
+						:unit (m / month))
+					:ARG0 (x52 / and
+						:op2 (x55 / have-org-role-91
+							:ARG1 (p1 / political-party
+								:name (n4 / name
+									:op1 "Republicans"))
+							:mod (x53 / even)
+							:mod (x54 / some))
+						:op1 (xap1 / name
+							:ARG0-of (x51 / have-org-role-91
+								:ARG1 (p2 / political-party
+									:name (n5 / name
+										:op1 "Democrats")))))))))
+	:time (xap0 / date-entity
+		:weekday (x15 / tuesday)))
+
+# ::id 2
+# ::snt Sununu, whose abrasive style left him with few allies and many important enemies, was undone by political missteps that proved increasingly embarrassing for Bush
+(x17 / undo
+	:ARG1 (x1 / person
+		:name (n / name
+			:op1 "Sununu")
+		:ARG0-of (x6 / leave-06
+			:ARG0 (x5 / style
+				:mod (x4 / abrasive))
+			:ARG2 (x11 / and
+				:op1 (x10 / ally
+					:quant (x9 / few))
+				:op2 (x14 / enemy
+					:quant (x12 / many)
+					:mod (x13 / important)))))
+	:ARG0 (x20 / misstep
+		:mod (x19 / politics)
+		:null_edge (x24 / embarrassing
+			:ARG1-of (x23 / increase-01)
+			:ARG0 (x26 / person
+				:name (n1 / name
+					:op1 "Bush")))))
+
+# ::id 3
+# ::snt Speculation on a successor immediately centered on Transportation Secretary Samuel Skinner, a Bush favorite and loyalist considered hard-nosed but not as curt and combative as Sununu
+(x6 / center-01
+	:ARG0 (x1 / speculate-01
+		:ARG1 (x4 / succeed-02))
+	:time (x5 / immediate)
+	:ARG2 (x10 / name
+		:op1 "Samuel"
+		:op2 "Skinner"
+		:ARG0-of (x9 / have-org-role-91
+			:ARG2 (s / secretary)
+			:ARG1 (x8 / government-organization
+				:name (n / name
+					:op1 "Transportation"))
+			:topic (x16 / and
+				:op2 (x15 / favor-01
+					:mod (x14 / person
+						:name (n1 / name
+							:op1 "Bush"))
+					:mod (x17 / loyalist)
+					:domain (x18 / consider-01
+						:ARG1 x14
+						:ARG1 (x19 / hard-nosed
+							:example (x27 / person
+								:name (n2 / name
+									:op1 "Sununu")))
+						:ARG2 (x24 / and
+							:op1 (x23 / curt)
+							:op2 (x25 / combative))))))))
+
+# ::id 4
+# ::snt Skinner headed Bush's 1988 campaign in Illinois. ; Others mentioned as possible candidates for the job were Defense Secretary Richard Cheney ; Craig Fuller, a Republican consultant who was Bush's chief of staff when he was vice president ; and longtime Bush adviser Frederic Malek. ; As chief of staff, Sununu has been given wide latitude by Bush to manage domestic policy issues while the president devoted his attention to foreign affairs. ; Sununu offered his resignation in a handwritten letter given to Bush as the president was flying on Air Force One from Washington to Bradenton, Fla., on Tuesday morning. ; " I have always said I wanted to serve as chief of staff as long as I could contribute to your success and help deal effectively with both the issues and the arrows, " Sununu wrote
+(x / xconcept
+	:x (x10 / and
+		:op1 (x2 / head-02
+			:ARG0 (x1 / person
+				:name (n / name
+					:op1 "Skinner"))
+			:ARG1 (x6 / campaign-01
+				:ARG0 (x3 / person
+					:name (n2 / name
+						:op1 "Bush"))
+				:time (x5 / date-entity
+					:year 1988))
+			:location (x8 / country
+				:name (n1 / name
+					:op1 "Illinois")))
+		:op1 (x15 / candidate
+			:mod (x14 / possible)))
+	:x (x24 / and
+		:op3 (x22 / name
+			:op1 "Richard"
+			:op2 "Cheney"
+			:ARG0-of (x11 / person
+				:mod (o / other)
+				:ARG1-of (x12 / mention-01
+					:ARG1 (x18 / job)))
+			:null_edge (x20 / null_tag)
+			:ARG0-of (x21 / have-org-role-91
+				:ARG2 (s / secretary))
+			:ARG0-of (x30 / person
+				:ARG0-of (c / consult-01)
+				:name (x25 / name
+					:op1 "Craig"
+					:op2 "Fuller")
+				:mod "Republican"
+				:poss (x33 / person
+					:name (n3 / name
+						:op1 "Bush")
+					:ARG0-of (x35 / have-org-role-91
+						:ARG2 (c1 / chief)
+						:topic (x37 / person
+							:ARG2-of (s2 / staff-01)))))
+			:ARG1-of (x149 / write-01
+				:ARG1 (x117 / thing
+					:ARG1-of (s1 / say-01)
+					:ARG0 (x114 / i)
+					:time (x116 / always)
+					:ARG1 (x119 / want-01
+						:ARG1 (x121 / serve-01
+							:ARG2 (x123 / chief
+								:ARG2-of (x125 / person
+									:ARG2-of (s3 / staff-01))
+								:example (x135 / and
+									:op1 (x131 / contribute-01
+										:duration (x127 / long)
+										:ARG0 (x129 / i)
+										:mod (x130 / possible)
+										:ARG1 (x134 / succeed-01)
+										:ARG2 (x143 / and
+											:op1 (x142 / issue
+												:mod (x140 / both))
+											:op2 (x145 / arrow)))
+									:op2 (x136 / help
+										:ARG1 (x137 / deal-01)
+										:mod (x138 / effective)))))))
+				:ARG0 (x148 / person
+					:name (n4 / name
+						:op1 "Sununu")))))
+	:x (x43 / and
+		:op2 (x44 / and
+			:ARG0-of (x42 / have-org-role-91
+				:ARG2 (p / president)
+				:ARG1 (x62 / latitude
+					:mod (x53 / chief
+						:ARG2-of (x55 / person
+							:ARG2-of (s4 / staff-01)))
+					:ARG1 (x57 / person
+						:name (n5 / name
+							:op1 "Sununu"))
+					:mod (x61 / wide)
+					:ARG0 (x64 / person
+						:name (n6 / name
+							:op1 "Bush"))
+					:ARG0-of (x66 / manage-01
+						:ARG0 x57
+						:ARG1 (x69 / issue
+							:topic (x68 / policy
+								:mod (x67 / domestic)))))))
+		:op2 (x47 / advise-01))
+	:x (x80 / and
+		:op1 (x82 / offer-01
+			:ARG0 (x81 / person
+				:name (n7 / name
+					:op1 "Sununu"))
+			:ARG1 (x84 / resignation
+				:ARG0 x81)
+			:ARG3 (x88 / letter
+				:mod (x87 / handwritten)
+				:ARG1-of (x89 / give-01
+					:ARG2 (x91 / person
+						:name (n8 / name
+							:op1 "Bush"))))))
+	:x (x112 / and
+		:op2 (x73 / devote
+			:ARG1 (x72 / have-org-role-91
+				:ARG2 (p1 / president))
+			:ARG1 (x75 / attention)
+			:ARG2 (x78 / affair
+				:mod (x77 / foreign)))
+		:op1 (x96 / fly-01
+			:ARG1 (x94 / have-org-role-91
+				:ARG2 (p2 / president))
+			:null_edge (x98 / null_tag
+				:null_edge (x99 / null_tag
+					:null_edge 1))
+			:destination (x102 / city
+				:name (n9 / name
+					:op1 "Washington"))
+			:destination (x104 / country
+				:name (n10 / name
+					:op1 "Bradenton")
+				:dayperiod (x110 / morning
+					:time (xap0 / date-entity
+						:weekday (x109 / tuesday)))))
+		:op2 (x106 / country
+			:name (n11 / name
+				:op1 "Fla."))))
+
+# ::id 5
+# ::snt " Until recently, I was convinced that even with the distorted perceptions being created, I could be a strong contributor to your efforts and success. ; " But in politics, especially during the seasons of a political campaign, perceptions that can be effectively dealt with at other times can be -- and will be -- converted into real political negatives
+(x31 / contrast-01
+	:ARG2 (x7 / convince-01
+		:time (x2 / until
+			:op1 (x3 / recent))
+		:ARG1 (x5 / i)
+		:ARG2 (x18 / possible
+			:domain (x22 / contribute-01
+				:condition (x15 / create-01
+					:mod (x9 / even)
+					:ARG1 (x13 / perceive-01
+						:ARG1-of (x12 / distort-01)))
+				:ARG0 (x17 / i)
+				:mod (x21 / strong)
+				:ARG2 (x26 / and
+					:op1 (x25 / effort)
+					:op2 (x27 / succeed-01)))))
+	:ARG2 (x44 / perceive-01
+		:time (x38 / season
+			:ARG1 (x42 / campaign-01
+				:mod (x41 / politics)
+				:ARG1-of (x49 / deal-01
+					:mod (x46 / possible)
+					:manner (x48 / effective)
+					:ARG1 (x57 / and
+						:op2 (x54 / possible)
+						:op1 (x61 / convert-01
+							:mod (x52 / other)
+							:ARG2 (x65 / negative
+								:mod (x63 / real)
+								:mod (x64 / politics)))))))))
+
+# ::id 6
+# ::snt And I would never want to not be contributing positively, much less be a drag on your success .
+(x1 / and
+	:op2 (x5 / want-01
+		:ARG0 (x2 / i)
+		:ARG1 (x9 / contribute-01
+			:manner (x10 / positively)
+			:degree (x13 / less
+				:degree (xap0 / more
+					:quant (x12 / much)))
+			:ARG0 (x16 / drag-01
+				:ARG1 (x19 / succeed-01)))))
+
+# ::id 7
+# ::snt ; Bush, in a " Dear John " letter in response, praised the 52-year-old Sununu and said he wanted him to stay in the White House as a counselor with Cabinet status through March 1. ; " You have never wavered in your loyalty to us and more importantly, your loyalty to the principles and goals of this administration
+(x18 / and
+	:op1 (x14 / praise-01
+		:ARG0 (x10 / letter
+			:mod (x7 / dear)
+			:mod (x8 / john))
+		:ARG2 (x12 / respond-01)
+		:ARG1 (x17 / person
+			:name (n / name
+				:op1 "Sununu")
+			:null_edge (x16 / person
+				:name (n2 / name
+					:op1 "52-year-old"))))
+	:op2 (x19 / say-01
+		:ARG0 (x2 / person
+			:name (n1 / name
+				:op1 "Bush"))
+		:ARG0 x10
+		:ARG1 (x21 / want-01
+			:ARG1 (x24 / stay-01
+				:location (x28 / government-organization
+					:name (n3 / name
+						:op1 "House")
+					:mod (x27 / white))
+				:ARG3 (x31 / counselor)
+				:manner (x34 / status
+					:mod (x33 / government-organization
+						:name (n4 / name
+							:op1 "Cabinet")))))))
+
+# ::id 8
+# ::snt You have indeed helped with the issues and you have intercepted many of the ` arrows ' aimed my way, " Bush said. ; Later, standing beside Sununu on Air Force One, Bush told reporters, " He has taken a lot of hard shots that would have landed on my chin .
+(x / xconcept
+	:x (x26 / and
+		:op1 (x24 / say-01
+			:ARG1 (x8 / and
+				:op1 (x4 / help-01
+					:ARG0 (x1 / you)
+					:manner (x3 / indeed)
+					:ARG1 (x7 / issue))
+				:op2 (x11 / intercept-01
+					:ARG0 (x9 / you)
+					:ARG1 (x16 / arrow
+						:quant (x12 / many)
+						:ARG1-of (x18 / aim-02
+							:ARG1 (x20 / way)))))
+			:ARG0 (x23 / person
+				:name (n / name
+					:op1 "Bush")))
+		:op3 (x34 / force)
+		:op1 (x38 / tell-01
+			:time (x27 / late)
+			:ARG0 (x29 / stand-02
+				:ARG2 (x30 / beside
+					:op1 (x31 / person
+						:name (n2 / name
+							:op1 "Sununu")))
+				:ARG1 (x33 / air))
+			:ARG0 (x37 / person
+				:name (n1 / name
+					:op1 "Bush"))
+			:ARG2 (x39 / person
+				:ARG0-of (r / report-01)))
+		:op2 (x44 / take-01
+			:ARG0 (x42 / he)
+			:ARG1 (x49 / shot
+				:quant (x46 / lot)
+				:mod (x48 / hard)
+				:ARG1-of (x53 / land-01
+					:ARG1 (x56 / chin))))))
+
+# ::id 9
+# ::snt 
+(x / xconcept
+	:x (x1 / and
+		:op2 (x5 / praise-01
+			:ARG1-of (x4 / effusive)
+			:ARG0 (x7 / person
+				:name (n / name
+					:op1 "Bush"))
+			:ARG1 (x11 / resignation
+				:ARG0 (x9 / person
+					:name (n1 / name
+						:op1 "Sununu"))
+				:time (x13 / after
+					:op1 (x20 / inform-01
+						:ARG1 (x16 / son
+							:poss (x14 / person
+								:name (n3 / name
+									:op1 "Bush"))
+							:mod (x18 / person
+								:name (n4 / name
+									:op1 "George")))
+						:ARG1 (x21 / person
+							:name (n2 / name
+								:op1 "Sununu"))
+						:ARG2 (x23 / wednesday
+							:mod (x22 / last))
+						:ARG2 (x27 / become-01
+							:ARG2 (x29 / liability))))))))
+
+# ::id 10
+# ::snt The conversation was reported Tuesday by the Washington Post
+(x4 / report-01
+	:ARG1 (x2 / converse-01)
+	:ARG0 (x9 / post-01
+		:null_edge (x8 / government-organization
+			:name (n / name
+				:op1 "Washington")))
+	:time (xap0 / date-entity
+		:weekday (x5 / tuesday)))
+
+# ::id 11
+# ::snt Many political strategists saw the leak of the conversation as a public signal to Sununu that he should resign. ; GOP consultant Charles Black said it became clear Sununu had to go when he became the story and prevented Bush's own message on the economy and other domestic issues from getting through. ; " Every day the press was writing about Sununu and the president was n't getting anything done ...
+(x66 / and
+	:op1 (x4 / see-01
+		:ARG0 (x3 / strategize-01
+			:quant (x1 / many)
+			:mod (x2 / politics))
+		:ARG1 (x6 / leak-01
+			:poss (x9 / converse-01))
+		:ARG2 (x13 / signal
+			:mod (x12 / public)
+			:ARG1 (x15 / person
+				:name (n1 / name
+					:op1 "Sununu"))
+			:ARG1 (x18 / recommend-01
+				:ARG1 (x19 / resign-01))))
+	:op2 (x63 / write-01
+		:ARG0 x3
+		:ARG0 (x61 / press)
+		:ARG1 (x65 / person
+			:name (n / name
+				:op1 "Sununu"))
+		:frequency (xap0 / rate-entity-91
+			:ARG3 (x59 / temporal-quantity
+				:unit (d / day))))
+	:op2 (x71 / get-04
+		:ARG1 (x68 / have-org-role-91
+			:ARG2 (p / president))
+		:ARG1 (x73 / do-02
+			:ARG1 (x72 / anything))))
+
+# ::id 12
+# ::snt Hopefully the finger-pointing and controversy is over and the president can focus on the domestic agenda, " said Black. ; The resignation came amid Bush's struggle to arrest a sharp decline in his public approval rating, fueled by persistent concerns that the economy is headed into another recession and that the president has been inattentive to domestic needs. ; One Sununu ally, Rep. Henry Hyde, R-Ill., suggested that Bush's popularity problems may have been a factor in Sununu's departure
+(x29 / struggle-01
+	:ARG0 (x27 / person
+		:name (n / name
+			:op1 "Bush"))
+	:ARG1 (x31 / arrest-01
+		:ARG1 (x34 / decline-01
+			:manner (x33 / sharp)
+			:ARG1-of (x41 / fuel-01
+				:ARG1 (x38 / approve-01
+					:mod (x37 / public))
+				:ARG0 (x44 / concern-01
+					:ARG1-of (x43 / persist-01)
+					:ARG1-of (x49 / head-02
+						:ARG1 (x47 / economy)
+						:ARG2 (x53 / and
+							:op1 (x52 / recession
+								:mod (x51 / another)
+								:domain (x56 / have-org-role-91
+									:ARG2 (p / president)
+									:ARG2-of (x59 / inattentive
+										:ARG2 (x62 / need-01
+											:mod (x61 / domestic)))))
+							:op1 (x75 / suggest-01
+								:ARG0 (x67 / ally-01
+									:quant 1
+									:name (x70 / name
+										:op1 "Henry"
+										:op2 "Hyde"
+										:ARG0-of (x69 / rep.)
+										:null_edge (x73 / country
+											:name (n1 / name
+												:op1 "R-Ill."))))
+								:ARG1 (x81 / possible
+									:domain (x85 / factor
+										:domain (x80 / problem
+											:poss (x77 / person
+												:name (n2 / name
+													:op1 "Bush"))
+											:mod (x79 / popularity
+												:ARG1 (x89 / depart-01
+													:ARG0 (x87 / person
+														:name (n3 / name
+															:op1 "Sununu")))))))))))))))
+
+# ::id 13
+# ::snt " I 'd hate to think so, but that's certainly one possibility
+(x4 / hate-01
+	:ARG0 (x2 / i)
+	:ARG1 (x6 / think-01
+		:ARG0 x2
+		:ARG1 (x7 / so))
+	:concession-of (x14 / possible
+		:domain (x10 / that)
+		:mod (x12 / certain)
+		:domain 1))
+
+# ::id 14
+# ::snt That job is the No. 1 flak-catcher, and when you catch enough flak you sometimes get weighted down .
+(x9 / and
+	:op1 (x5 / country
+		:name (n / name
+			:op1 "No.")
+		:null_edge (x2 / job
+			:mod (x1 / that))
+		:null_edge 1
+		:null_edge (x7 / flak-catcher)
+		:null_edge (x18 / weight
+			:condition (x12 / catch-04
+				:ARG0 (x11 / you)
+				:ARG1 (x14 / flak
+					:quant (x13 / enough)))
+			:ARG1 (x15 / you)
+			:frequency (x16 / sometimes))))
+
+# ::id 15
+# ::snt ; House Majority Leader Richard Gephardt, D-Mo., said Bush should n't expect a White House shake-up to reverse his fortunes
+(x10 / say-01
+	:ARG0 (x6 / person
+		:name (n / name
+			:op1 "Gephardt")
+		:null_edge (x2 / have-org-role-91
+			:ARG1 (g / government-organization
+				:name (n1 / name
+					:op1 "House")))
+		:null_edge (x3 / majority)
+		:null_edge (x4 / lead-02)
+		:null_edge (x5 / null_tag)
+		:null_edge (x8 / country
+			:name (n2 / name
+				:op1 "D-Mo.")))
+	:ARG1 (x12 / recommend-01
+		:ARG1 (x14 / expect-01
+			:ARG0 (x11 / person
+				:name (n3 / name
+					:op1 "Bush"))
+			:ARG1 (x20 / reverse-01
+				:ARG0 (x18 / shake-up
+					:mod (x17 / government-organization
+						:name (n4 / name
+							:op1 "House")))
+				:ARG1 (x22 / fortune)))))
+
+# ::id 16
+# ::snt " Changing the nameplate of the president's chief of staff is not going to make good things happen, " he said
+(x23 / say-01
+	:ARG1 (x16 / make-01
+		:ARG0 (x2 / change-01
+			:ARG1 (x4 / nameplate
+				:poss (xap0 / person
+					:ARG0-of (x7 / have-org-role-91
+						:ARG2 (p / president))
+					:mod (x9 / chief
+						:ARG1 (x11 / person
+							:ARG2-of (s / staff-01))))))
+		:ARG1 (x19 / happen-01
+			:ARG1 (x18 / thing
+				:mod (x17 / good)))
+		:ARG0 (x22 / he))
+	:ARG0 x22)
+

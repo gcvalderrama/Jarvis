@@ -1,0 +1,295 @@
+# ::id 1
+# ::snt Typhoon Yunya, packing 80 mph winds, slammed into the eastern coast of Luzon island, which includes Mount Pinatubo, early in the day
+(x9 / slam
+	:ARG0 (x2 / newspaper
+		:name (n / name
+			:op1 "Yunya")
+		:null_edge (x1 / null_tag))
+	:ARG2 (x4 / packing
+		:ARG1 (x7 / wind
+			:quant 80
+			:mod (x6 / mph)))
+	:ARG2 (x13 / coast
+		:mod (x12 / east)
+		:part-of (x16 / island
+			:mod (x15 / country
+				:name (n1 / name
+					:op1 "Luzon"))
+			:ARG2-of (x19 / include-01
+				:ARG1 (x21 / country
+					:name (n2 / name
+						:op1 "Pinatubo")
+					:mod (x20 / country
+						:name (n3 / name
+							:op1 "Mount")))
+				:time (x23 / early
+					:op1 (x26 / day))))))
+
+# ::id 2
+# ::snt But it quickly weakened to a tropical storm with 60 mph winds by the time it was centered about 70 miles east of the volcano. ; Still, heavy rains churned up by the typhoon drenched Manila and the provinces near the volcano, raising fears of mudflows that could bury whole towns up to 25 miles away. ; Meanwhile, President Corazon Aquino dismissed a British newspaper report that Americans had warned her of possible radioactive contamination if the volcano damages nuclear storage sites at Clark Air Base, abandoned Monday by nearly 15,000 Americans. ; The U.S. military began flying home hundreds of the 28,000 Americans who crowded onto Subic Bay Naval Base as a bizarre tropical blizzard of thick volcanic ash caused power failures across the base Friday during a third day of increasingly violent eruptions of Mount Pinatubo. ; Showers of ` mud drops ' ; " It looks like it's snowing outside, " said military spokeswoman Capt. Kim Urie
+(x1 / contrast-01
+	:ARG2 (x4 / weaken-01
+		:ARG0 (x2 / it)
+		:manner (x3 / quick)
+		:ARG2 (x8 / storm
+			:mod (x7 / tropic))
+		:ARG0-of (x18 / center-01
+			:direction (x22 / east)
+			:ARG2 (xap0 / multiple
+				:quant (x21 / distance-quantity
+					:unit (m / mile))))
+		:null_edge (x32 / churn
+			:ARG0 (x31 / rain
+				:mod (x30 / heavy))
+			:purpose (x46 / raise-01
+				:ARG0 x31
+				:ARG1 (x47 / fear-01
+					:ARG1 (x49 / mudflow
+						:mod (x51 / possible
+							:domain (x52 / bury-01
+								:ARG1 (x54 / town
+									:mod (x53 / whole))
+								:ARG2 (x58 / distance-quantity
+									:unit (m1 / mile)
+									:quant 25)))))))
+		:null_edge (x67 / dismiss-01
+			:time (x62 / meanwhile)
+			:ARG0 (x65 / newspaper
+				:name (n / name
+					:op1 "Corazon"
+					:op2 "Aquino")
+				:ARG0-of (x64 / have-org-role-91
+					:ARG2 (p / president)))
+			:ARG1 (x71 / report-01
+				:ARG0 (x70 / newspaper
+					:mod (x69 / country
+						:name (n2 / name
+							:op1 "Britain"))))
+			:ARG1 (x165 / say-01
+				:ARG0 (x170 / person
+					:name (n1 / name
+						:op1 "Urie")
+					:mod (x166 / military)
+					:null_edge (x167 / have-org-role-91
+						:ARG2 (s / spokeswoman))
+					:null_edge (x168 / capt.)))))
+	:ARG2 (x12 / wind
+		:quant 60
+		:mod (x11 / mph)))
+
+# ::id 3
+# ::snt Headlights and street lamps were turned on at midafternoon as a " dark, black cloud " passed over the giant Navy base and dropped a gritty rain of " mud drops, " she said. ; At least four people have died, 24 have been hurt and four have been listed as missing since Pinatubo began erupting Sunday, after lying dormant for six centuries, officials said
+(x36 / say-01
+	:ARG0 (x35 / she)
+	:ARG1 (x50 / and
+		:op1 (x44 / die-01
+			:ARG1 4)
+		:op2 (x49 / hurt-01
+			:ARG1 24)
+		:op2 (x54 / list-01
+			:ARG2 4)))
+
+# ::id 4
+# ::snt About 84,000 people, including Americans, have been evacuated. ; Police said 12 people had been arrested for looting at Clark. ; Five explosions shook the mountain early today, showering ash over a wide area and providing a spectacular pre-dawn display of nature's fireworks against a backdrop of lightning and rain. ; Friday, eight thunderous explosions shot a cloud of ash and steam nearly 19 miles high. ; Friday's eruptions hurled ash over Clark, 10 miles east of the volcano, and Subic, 25 miles southwest, where the Clark personnel had been temporarily housed
+(x / xconcept
+	:x (x12 / and
+		:op2 (x10 / evacuate
+			:ARG1 (x1 / about)
+			:ARG1 (x6 / person
+				:mod (c / country
+					:name (n / name
+						:op1 "Americans")))
+			:ARG1 (x69 / and
+				:op2 (x70 / steam)
+				:op1 (x74 / high
+					:quant (x73 / distance-quantity
+						:unit (m / mile)
+						:null_edge (x71 / nearly
+							:null_edge 19)))
+				:op1 (xap0 / date-entity
+					:weekday (x59 / friday))))
+		:op2 (x14 / say-01
+			:ARG0 (x13 / police)
+			:ARG1 (x40 / and
+				:op1 (x34 / shower
+					:ARG1 (x35 / name
+						:op1 "ash"))
+				:op1 (x36 / over
+					:op1 (x39 / area
+						:mod (x38 / wide)))
+				:op2 (x41 / provide-01
+					:ARG1 (x45 / display
+						:mod (x43 / spectacle)
+						:ARG1-of (x44 / pre-dawn))
+					:ARG1 (x47 / nature)))
+			:ARG1 (x49 / firework
+				:prep-against (x52 / backdrop
+					:ARG1 (x55 / and
+						:op1 (x54 / lightning)))))
+		:op2 (x106 / government-organization
+			:name (n1 / name
+				:op1 "housed")
+			:ARG1 (x102 / have-org-role-91
+				:ARG2 (p / personnel)
+				:name (x101 / thing
+					:name (n2 / name
+						:op1 "Clark")))
+			:duration (x105 / temporary)))
+	:x (x25 / and
+		:op2 (x19 / arrest-01
+			:ARG0 x13
+			:quant 12
+			:ARG2 (x21 / loot-01)
+			:ARG1 (x28 / shake-01
+				:ARG1 (x27 / explode-01
+					:quant 5)
+				:ARG1 (x30 / mountain)
+				:time (x31 / early
+					:op1 (x32 / today))))
+		:op1 (x23 / person
+			:name (n3 / name
+				:op1 "Clark")))
+	:x (x58 / and
+		:op2 (x56 / rain)
+		:op2 (x64 / shoot-05
+			:ARG1 (x63 / explode-01
+				:quant 8
+				:mod (x62 / thunderous))
+			:ARG1 (x66 / cloud
+				:name (x68 / name
+					:op1 "ash"))))
+	:x (x76 / and
+		:op3 (x79 / eruption
+			:ARG1-of (x80 / hurl
+				:ARG1 (x81 / name
+					:op1 "ash")))
+		:op2 (x92 / and
+			:op1 (x83 / person
+				:name (n4 / name
+					:op1 "Clark"))
+			:op2 (x86 / distance-quantity
+				:unit (m1 / mile)
+				:quant 10
+				:null_edge (x87 / null_tag
+					:null_edge (x90 / volcano)))
+			:op2 (x93 / country
+				:name (n5 / name
+					:op1 "Subic"))
+			:op2 (x97 / southwest
+				:quant 25))
+		:op3 (xap1 / date-entity
+			:weekday (x77 / friday))))
+
+# ::id 5
+# ::snt Gray ash also fell in Manila, 60 miles south. ; At Subic, base spokesman Robert Coble said generators had to be shut down from time to time to clean out volcanic ash, plunging the base into darkness. ; River temperatures rising ; Temperatures in local rivers were rising because of the volcanic debris, officials said. ; After sunset, the volcano spewed two streams of orange, glowing material from its crater in what scientists thought was the first appearance of lava during the weeklong eruptions. ; Raymundo Punongbayan, director of the Philippine Institute of Vulcanology and Seismology, said Friday's blasts were part of a single eruption, the largest since Mount Pinatubo awoke Sunday from its 600-year slumber. ; A British newspaper, the Guardian, reported Thursday that the Americans declared a nuclear alert at Clark late Wednesday and informed governments in Manila and Hong Kong that " a nuclear accident in the region was possible .
+(xap0 / between
+	:quant (x9 / distance-quantity
+		:unit (m / mile)
+		:quant 60))
+
+# ::id 6
+# ::snt But Aquino told reporters the story was " baseless and purely fabricated .
+(x1 / contrast-01
+	:ARG2 (x3 / tell-01
+		:ARG0 (x2 / person
+			:name (n / name
+				:op1 "Aquino"))
+		:ARG2 (x4 / person
+			:ARG0-of (r / report-01))
+		:ARG1 (x10 / and
+			:op1 (x9 / base-02
+				:ARG1 (x6 / story))
+			:op2 (x12 / fabricate-01
+				:manner (x11 / pure)))))
+
+# ::id 7
+# ::snt ; The United States refuses to confirm or deny that it stores nuclear weapons in the Philippines. ; Foreign Secretary Raul Manglapus also said the eruption should have no effect on talks on the future of Clark and Subic, where leases expire Sept. 16
+(x25 / say-01
+	:ARG0 (x22 / newspaper
+		:name (n / name
+			:op1 "Raul"
+			:op2 "Manglapus")
+		:ARG0-of (x5 / refuse-01
+			:ARG0 (x3 / country
+				:name (n1 / name
+					:op1 "United"
+					:op2 "States"))
+			:ARG1 (x8 / or
+				:op1 (x7 / confirm-01
+					:ARG1 (x12 / store
+						:ARG1 (x14 / weapon
+							:mod (x13 / nucleus))
+						:location (x17 / country
+							:name (n2 / name
+								:op1 "Philippines"))))
+				:op2 (x9 / deny-01)))
+		:ARG0-of (x20 / foreign)
+		:ARG0-of (x21 / have-org-role-91
+			:ARG2 (s / secretary)))
+	:mod (x24 / also)
+	:ARG1 (x28 / recommend-01
+		:ARG1 (x29 / have-03
+			:ARG0 (x27 / eruption)
+			:polarity -
+			:ARG1 (x31 / effect-01
+				:ARG1 (x33 / talk-01
+					:time (x36 / future
+						:poss (x39 / and
+							:op1 (x38 / person
+								:name (n3 / name
+									:op1 "Clark"))
+							:op2 (x40 / person
+								:name (n4 / name
+									:op1 "Subic"))
+							:ARG0-of (x44 / expire
+								:time (x45 / person
+									:name (n5 / name
+										:op1 "Sept.")
+									:null_edge (x46 / null_tag))))))))))
+
+# ::id 8
+# ::snt The talks are deadlocked over compensation and the duration of a new agreement. ; Punongbayan said Mount Pinatubo could remain active for years if it follows the pattern of similar Philippine volcanoes
+(x / xconcept
+	:x (x15 / and
+		:op1 (x4 / deadlock-01
+			:ARG1 (x2 / talk-01)
+			:ARG1 (x7 / and
+				:op1 (x6 / compensate-01)
+				:op2 (x9 / duration
+					:ARG1 (x13 / agree-01
+						:mod (x12 / new)))))
+		:op2 (x17 / say-01
+			:ARG0 (x16 / person
+				:name (n / name
+					:op1 "Punongbayan"))
+			:ARG1 (x20 / possible
+				:domain (x21 / remain-01
+					:ARG1 (x19 / country
+						:name (n1 / name
+							:op1 "Pinatubo")
+						:location (x18 / country
+							:name (n2 / name
+								:op1 "Mount")))
+					:ARG3 (x22 / active
+						:domain x19)
+					:condition (x27 / follow-04
+						:ARG2 (x29 / pattern
+							:ARG1 (x33 / volcano
+								:ARG1-of (x31 / resemble-01
+									:op (s / similar))
+								:mod (x32 / country
+									:name (n3 / name
+										:op1 "Philippine")))))
+					:duration (xap0 / multiple
+						:op1 (x24 / temporal-quantity
+							:unit (y / year))))))))
+
+# ::id 9
+# ::snt That would leave Clark unusable
+(x3 / leave-01
+	:ARG0 (x1 / that)
+	:ARG2 (x5 / unusable
+		:ARG0 (x4 / person
+			:name (n / name
+				:op1 "Clark"))))
+

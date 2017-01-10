@@ -1,0 +1,1041 @@
+# ::id 1
+# ::snt Between 1978 and 1981, Congress raised the minimum wage four times
+(x7 / raise-01
+	:ARG0 (x1 / between
+		:op1 (x2 / date-entity
+			:year 1978
+			:null_edge (x3 / null_tag
+				:op2 (x4 / date-entity
+					:year 1981))))
+	:ARG0 (x6 / government-organization
+		:name (n / name
+			:op1 "Congress"))
+	:ARG1 (x10 / wage-01
+		:mod (x9 / minimum)))
+
+# ::id 2
+# ::snt Over that period, total U.S. employment rose 9 %
+(x8 / rise-01
+	:time (x1 / over)
+	:ARG1 (x7 / employment
+		:ARG2-of (x5 / total-01)
+		:mod (x6 / country
+			:name (n / name
+				:op1 "U.S.")))
+	:ARG2 (xap0 / percentage-entity
+		:value 9))
+
+# ::id 3
+# ::snt From 1981 through 1986, the minimum wage was n't raised at all
+(x11 / raise-01
+	:time (x4 / date-entity
+		:year 1986)
+	:ARG1 (x8 / wage-01
+		:mod (x7 / minimum))
+	:location (x13 / all))
+
+# ::id 4
+# ::snt And over that period, total U.S. employment also rose by 9 %
+(x10 / rise-01
+	:null_edge (x1 / and)
+	:time (x2 / over)
+	:ARG1 (x8 / employment
+		:ARG2-of (x6 / total-01)
+		:mod (x7 / country
+			:name (n / name
+				:op1 "U.S.")))
+	:mod (x9 / also)
+	:ARG2 (xap0 / percentage-entity
+		:value 9))
+
+# ::id 5
+# ::snt On the face of it, those figures would seem to resolve the age-old debate over whether increases in the minimum wage cost the economy a significant number of lost jobs
+(x10 / seem-01
+	:ARG1 (x12 / resolve-01
+		:ARG1 (x3 / face
+			:null_edge (x4 / include-91
+				:ARG1 (x8 / figure)))
+		:ARG1 (x15 / debate-01
+			:mod (x14 / age-old)
+			:ARG2-of (x23 / cost-01
+				:ARG1 (x18 / increase-01
+					:polarity -
+					:ARG1 (x22 / wage-01
+						:mod (x21 / minimum)))
+				:ARG1 (x25 / economy)
+				:ARG1 (x31 / job
+					:quant (x28 / number
+						:mod (x27 / significant))
+					:ARG1-of (x30 / lose-03))))))
+
+# ::id 6
+# ::snt Yet now, as Congress moves toward raising the $ 3.35-an-hour minimum wage for the first time since 1981, the battle rages just as hot and heavy as ever
+(x6 / move-01
+	:time (x2 / now)
+	:ARG0 (x5 / government-organization
+		:name (n / name
+			:op1 "Congress"))
+	:ARG1 (x8 / raise-01
+		:ARG1 (x13 / wage-01
+			:null_edge (x11 / country
+				:name (n1 / name
+					:op1 "3.35-an-hour"))
+			:mod (x12 / minimum)
+			:time (x18 / since
+				:op1 (x19 / date-entity
+					:year 1981)
+				:op1 (x23 / rage
+					:ARG1 (x22 / battle-01)
+					:ARG1 (x27 / and
+						:op1 (x26 / hot
+							:null_edge (x24 / just)
+							:null_edge (x30 / ever))
+						:op2 (x28 / heavy)))))))
+
+# ::id 7
+# ::snt Conservatives and business groups argue, as they have since the first minimum-wage law took effect in 1938, that employers will seek to cut costs by hiring fewer people -- these days, especially the young and minorities
+(x5 / argue-01
+	:ARG1 (x2 / and
+		:op1 (x1 / political-party
+			:name (n / name
+				:op1 "Conservatives"))
+		:op2 (x4 / group
+			:mod (x3 / business))
+		:op1 (x9 / have-03
+			:ARG1 (x13 / minimum-wage
+				:ARG0 (x14 / law)
+				:ARG1 (x16 / effect-01
+					:time (x18 / date-entity
+						:year 1938)))))
+	:ARG1 (x23 / seek-01
+		:ARG0 (x21 / employ-01)
+		:ARG1 (x25 / cut-04
+			:ARG0 x21
+			:ARG1 (x26 / cost-01)
+			:ARG0 (x28 / hire-01
+				:ARG1 (x38 / and
+					:quant (x29 / few)
+					:op2 (x33 / temporal-quantity
+						:unit (d / day))
+					:op2 (x37 / young
+						:mod (x35 / especially))
+					:op2 (x39 / minority))))))
+
+# ::id 8
+# ::snt " Higher wages ... for some will mean jobs lost for those workers who are trying hardest to break into the labor market, " warns GOP Sen. Dan Quayle of Indiana
+(x26 / warn-01
+	:ARG1 (x3 / wage
+		:mod (x2 / high)
+		:ARG0-of (x8 / mean-01
+			:ARG0 (x6 / some)
+			:ARG1 (x9 / job
+				:ARG1-of (x10 / lose-02
+					:ARG1 (x13 / person
+						:ARG0-of (w / work-01)
+						:ARG1-of (x16 / try-01
+							:ARG1 (x19 / break-06
+								:ARG1 (x23 / market
+									:mod (x22 / labor-01)))))))))
+	:ARG0 (x30 / person
+		:name (n / name
+			:op1 "Quayle")
+		:null_edge (x28 / sen.
+			:ARG1 (x27 / political-party
+				:name (n2 / name
+					:op1 "GOP")))
+		:null_edge (x29 / null_tag))
+	:ARG0 (x32 / country
+		:name (n1 / name
+			:op1 "Indiana")))
+
+# ::id 9
+# ::snt The U.S. Chamber of Commerce forecasts that the proposed wage rise, to $ 4.65 hourly over three years, with further increases later, would cause the loss of 1.9 million jobs by 1995
+(x6 / forecast-01
+	:ARG0 (x3 / government-organization
+		:name (n / name
+			:op1 "Chamber"
+			:op2 "of"
+			:op3 "Commerce"))
+	:ARG1 (x27 / cause-01
+		:ARG0 (x11 / rise-01
+			:ARG1-of (x9 / propose-01)
+			:ARG1 (x10 / wage-01)
+			:null_edge (x15 / monetary-quantity
+				:unit (y / yuan))
+			:duration (x19 / temporal-quantity
+				:unit (y1 / year)
+				:quant 3)
+			:ARG1 (x23 / increase-01
+				:degree (x22 / further)
+				:time (x24 / late)))
+		:ARG1 (x29 / loss
+			:ARG1 (x33 / job))
+		:null_edge (x35 / date-entity
+			:year 1995)))
+
+# ::id 10
+# ::snt Not so, counters University of Pennsylvania economist Gerard Adams
+(x9 / name
+	:op1 "Gerard"
+	:op2 "Adams"
+	:ARG0-of (x2 / so)
+	:null_edge (x4 / null_tag)
+	:ARG0-of (x5 / name
+		:op1 "University"
+		:op2 "of"
+		:op3 "Pennsylvania")
+	:ARG0-of (x8 / economist))
+
+# ::id 11
+# ::snt He says the increase would affect the unemployment rate by less than one-tenth of a percentage point, and adds : " Estimates of dire consequences to the economy as a result of raising the minimum wage do not stand up to scrutiny .
+(x19 / and
+	:op1 (x2 / say-01
+		:ARG0 (x1 / he)
+		:ARG1 (x6 / affect-01
+			:ARG0 (x4 / increase-01)
+			:ARG1 (x9 / rate
+				:mod (x8 / employ-01
+					:polarity -))
+			:degree (x11 / less
+				:ARG2 (x16 / percentage-entity))))
+	:op2 (x20 / add-02
+		:ARG1 (x23 / thing
+			:ARG1-of (e / estimate-01)
+			:domain (x26 / consequence
+				:mod (x25 / dire)))
+		:ARG2 (x29 / economy)
+		:ARG2 (x32 / result-01
+			:ARG1 (x34 / raise-01
+				:ARG1 (x37 / wage-01
+					:mod (x36 / minimum)
+					:ARG2 (x40 / stand-01
+						:ARG2 (x43 / scrutinize-01)))))))
+
+# ::id 12
+# ::snt John Zalusky, an economist at the AFL-CIO, which is strongly pushing the minimum-wage increase, snaps : " The whole issue of job loss comes up every time, and there's never been any jobs lost .
+(x32 / and
+	:op1 (x18 / snap
+		:ARG0 (x1 / person
+			:name (n / name
+				:op1 "John"
+				:op2 "Zalusky")
+			:ARG0-of (x5 / economist
+				:location (x8 / organization
+					:name (n1 / name
+						:op1 "AFL-CIO")
+					:location-of (x13 / push-02
+						:manner (x12 / strong)
+						:ARG1 (x16 / increase-01
+							:ARG1 (x15 / minimum-wage)))))))
+	:op1 (x27 / come-01
+		:ARG1 (x23 / issue
+			:mod (x22 / whole)
+			:topic (x26 / loss
+				:ARG1 (x25 / job)))
+		:ARG1 (x30 / time
+			:mod (x29 / every)))
+	:op2 (x38 / job
+		:ARG1-of (x39 / lose-02)))
+
+# ::id 13
+# ::snt The labor federation notes that since World War II, employment actually increased each time the minimum wage was raised, except in the 1975 recession
+(x4 / note-01
+	:ARG0 (x3 / federation
+		:ARG1 (x2 / labor-01))
+	:ARG1 (x13 / increase-01
+		:time (x6 / since
+			:null_edge (x8 / null_tag
+				:null_edge (x7 / country
+					:name (n / name
+						:op1 "World")
+					:null_edge "II")))
+		:ARG1 (x11 / employment)
+		:mod (x12 / actual)
+		:ARG1-of (x20 / raise-02
+			:mod (x14 / each)
+			:ARG1 (x18 / wage-01
+				:mod (x17 / minimum))
+			:prep-as (x26 / recession
+				:time (x25 / date-entity
+					:year 1975)))))
+
+# ::id 14
+# ::snt The advocates of a higher minimum wage say increases are necessary to offset lost ground
+(x8 / say-01
+	:ARG0 (x2 / person
+		:ARG0-of (a / advocate-01)
+		:ARG1 (x7 / wage-01
+			:mod (x5 / high)
+			:mod (x6 / minimum)))
+	:ARG1 (x9 / increase-01
+		:polarity -
+		:ARG1-of (xap0 / need-01
+			:ARG1 (x13 / thing
+				:manner-of (o / offset-01)
+				:ARG1 (x15 / ground
+					:ARG1-of (x14 / lose-03))))))
+
+# ::id 15
+# ::snt In 1968, the minimum wage was about 53 % of the average hourly wage of a manufacturing employee
+(x6 / wage-01
+	:time (x2 / date-entity
+		:year 1968)
+	:mod (x5 / minimum)
+	:ARG1 (x15 / wage-01
+		:ARG0 (x19 / person
+			:ARG1-of (e / employ-01)
+			:ARG2-of (x13 / average-01)
+			:purpose (x18 / manufacture-01)))
+	:mod (xap0 / percentage-entity
+		:ARG2 (x8 / about)
+		:value 53))
+
+# ::id 16
+# ::snt Now the minimum amounts to only 34 % of the average manufacturing wage
+(x11 / average-01
+	:ARG1 (x13 / wage-01
+		:mod (x3 / minimum)
+		:quant (x4 / amount
+			:mod (x1 / now))
+		:mod (x6 / only)
+		:purpose (x12 / manufacture-01)))
+
+# ::id 17
+# ::snt No longer does the minimum wage keep all those who earn it above the poverty level : A full-time minimum-wage worker earns less than $ 7,000 a year, only 80 % of what the government considers sufficient to keep a family of three out of poverty, and only 60 % of what's needed for a family of four
+(x22 / earn-01
+	:null_edge (x7 / keep-02
+		:ARG0 (x6 / wage-01
+			:mod (x5 / minimum))
+		:ARG1 (x11 / earn-01
+			:quant (x8 / all)
+			:location (x13 / above
+				:op1 (x16 / level
+					:mod (x15 / poverty)))))
+	:ARG0 (x21 / person
+		:ARG0-of (w / work-01)
+		:mod (x20 / minimum-wage
+			:mod (x19 / full-time)))
+	:ARG1 (x49 / and
+		:quant (x23 / less
+			:op1 (x26 / monetary-quantity
+				:unit (y / yuan))
+			:compared-to (x37 / consider-01
+				:mod (x30 / only)
+				:null_edge 80
+				:ARG0 (x36 / government-organization
+					:ARG0-of (g / govern-01))
+				:ARG1 (x38 / suffice-01
+					:ARG1 (x40 / keep-04
+						:ARG1 (x42 / family
+							:poss (x44 / person
+								:op (t / three)))
+						:ARG1 (x47 / poverty))))
+			:frequency (xap0 / rate-entity-91
+				:calendar (x28 / year))
+			:degree (xap1 / percentage-entity
+				:null_edge (x50 / only
+					:null_edge 60)
+				:ARG0 (x56 / need-01
+					:ARG1 (x59 / family
+						:quant 4))))))
+
+# ::id 18
+# ::snt But for single workers, who comprise about two-thirds of all minimum-wage workers, the pay keeps them about 25 % above the poverty level
+(x1 / contrast-01
+	:ARG2 (x16 / pay-01)
+	:ARG2 (x17 / keep-01
+		:ARG3 (x4 / person
+			:ARG0-of (w / work-01)
+			:mod (x3 / single)
+			:ARG1-of (x7 / comprise-01
+				:ARG2 (x9 / two-third
+					:poss (x13 / person
+						:ARG0-of (w1 / work-01)
+						:quant (x11 / all)
+						:mod (x12 / minimum-wage)))))
+		:ARG2 (x19 / about)
+		:location (x22 / above
+			:null_edge 25
+			:op1 (x25 / level
+				:mod (x24 / poverty)))))
+
+# ::id 19
+# ::snt The debate over raising the wage used to focus on the effect on low-paid, male factory workers
+(x2 / debate-01
+	:ARG1 (x4 / raise-01
+		:ARG1 (x6 / wage-01
+			:ARG1-of (x7 / use-01
+				:ARG2 (x9 / focus-01
+					:ARG2 (x12 / effect
+						:ARG1 (x14 / low-paid)
+						:ARG1 (x18 / person
+							:ARG0-of (w / work-01)
+							:mod (x17 / factory
+								:mod (x16 / male)))))))))
+
+# ::id 20
+# ::snt But as the economy has changed, so has the group most affected
+(x1 / contrast-01
+	:ARG1-of (x9 / have-03
+		:condition (x6 / change-01
+			:ARG0 (x4 / economy))
+		:mod (x8 / so)
+		:ARG0 (x11 / group
+			:ARG1-of (x13 / affect-01
+				:degree (x12 / most)))))
+
+# ::id 21
+# ::snt These days, most of those paid the minimum wage are minorities, women, and teen-agers or young adults just entering the work force, often in service jobs
+(x16 / and
+	:op2 (x12 / minority
+		:ARG1 (x2 / temporal-quantity
+			:unit (d / day))
+		:quant (x4 / most
+			:purpose (x7 / pay-01
+				:ARG1 (x10 / wage-01
+					:mod (x9 / minimum))))
+		:ARG1 (x18 / or
+			:op1 (x17 / teen-ager
+				:ARG0-of (x22 / enter-01
+					:mod (x21 / just)
+					:ARG1 (x25 / force
+						:mod (x24 / work-01))))
+			:op2 (x20 / adult
+				:mod (x19 / young)))
+		:location (x30 / job
+			:ARG1 (x29 / service
+				:mod (x27 / often))))
+	:op2 (x14 / woman))
+
+# ::id 22
+# ::snt Opponents of boosting the wage floor argue that it is these jobs that are most at risk
+(x7 / argue-01
+	:ARG0 (x1 / person
+		:ARG0-of (o / oppose-01)
+		:ARG1 (x3 / boost-01
+			:ARG1 (x6 / floor
+				:mod (x5 / wage-01))))
+	:ARG1 (x12 / job)
+	:ARG1 (x17 / risk-01
+		:mod (x15 / most)))
+
+# ::id 23
+# ::snt With youth unemployment nearly three times the overall jobless rate and minority youth unemployment more than six times that rate, " the worst thing we could do is to exacerbate this problem, " says Labor Secretary William Brock
+(x36 / say-01
+	:ARG1 (x31 / exacerbate-01
+		:ARG1 (x3 / employ-01
+			:polarity -
+			:ARG0 (x2 / youth)
+			:quant (x4 / nearly
+				:op1 (x11 / and
+					:op1 (x10 / rate
+						:mod (x8 / overall)
+						:mod (x9 / jobless)
+						:quant (x15 / more-than))
+					:op2 (x20 / rate
+						:mod (x12 / minority)
+						:mod (x14 / employ-01
+							:polarity -
+							:ARG1 (x13 / youth))
+						:mod (x18 / time
+							:quant 6))
+					:op1 (x27 / possible
+						:mod (x24 / bad)
+						:domain (x28 / do-02
+							:ARG0 (x26 / we))))))
+		:ARG1 (x33 / problem
+			:mod (x32 / this)))
+	:ARG0 (x40 / person
+		:name (n / name
+			:op1 "Brock")
+		:null_edge (x38 / have-org-role-91
+			:ARG2 (s / secretary)
+			:ARG1 (x37 / political-party
+				:name (n2 / name
+					:op1 "Labor")))
+		:null_edge (x39 / person
+			:name (n1 / name
+				:op1 "William"))))
+
+# ::id 24
+# ::snt " That is exactly what raising the minimum wage will do .
+(x2 / that
+	:domain (x11 / do-02
+		:manner (x4 / exact)
+		:ARG0 (x6 / raise-01
+			:ARG1 (x9 / wage-01
+				:mod (x8 / minimum)))))
+
+# ::id 25
+# ::snt Ronald Sarasin, a lobbyist for the National Restaurant Association, acknowledges that " we 're going to survive " even if the the wage is increased, but warns of the consequences for low-paid workers : " This is less a business issue than a jobs issue .
+(x12 / acknowledge-01
+	:ARG0 (x1 / newspaper
+		:name (n / name
+			:op1 "Ronald"
+			:op2 "Sarasin")
+		:ARG0-of (x5 / lobbyist
+			:beneficiary (x8 / government-organization
+				:name (n1 / name
+					:op1 "National"
+					:op2 "Restaurant"
+					:op3 "Association"))))
+	:ARG1 (x27 / increase-01
+		:ARG2 (x19 / survive-01
+			:ARG0 (x15 / we)
+			:ARG0 (x44 / issue
+				:mod (x39 / this)
+				:degree (x41 / less)
+				:topic (x43 / business)
+				:topic (x48 / issue
+					:topic (x47 / job))))
+		:mod (x21 / even)
+		:ARG1 (x25 / wage-01
+			:null_edge (x24 / null_tag))
+		:ARG4 (x30 / warn-01
+			:ARG1 (x33 / consequence
+				:poss (x36 / person
+					:ARG0-of (w / work-01)
+					:mod (x35 / low-paid)))
+			:ARG0 x44)
+		:ARG4 x44))
+
+# ::id 26
+# ::snt Yet such arguments are hard to prove, based on past evidence
+(x9 / base-01
+	:ARG1 (x5 / hard
+		:domain (x3 / argument
+			:mod (x2 / such))
+		:domain (x7 / prove-01))
+	:ARG2 (x12 / evidence-01
+		:time (x11 / past)))
+
+# ::id 27
+# ::snt For instance, a 1970 report ordered by then-Labor Secretary George Shultz found that general business conditions are the main influence on teen-age employment, with only " hints " of an adverse effect from the minimum wage showing up in the data
+(x13 / find-02
+	:ARG0 (x6 / report
+		:time (x5 / date-entity
+			:year 1970)
+		:ARG1-of (x7 / order-01
+			:ARG0 (x11 / name
+				:op1 "George"
+				:op2 "Shultz"
+				:ARG0-of (x9 / then-labor)
+				:ARG0-of (x10 / have-org-role-91
+					:ARG2 (s / secretary)))))
+	:ARG1 (x21 / influence-01
+		:ARG0 (x17 / condition
+			:mod (x15 / general)
+			:mod (x16 / business))
+		:mod (x20 / main)
+		:ARG1 (x24 / employment
+			:mod (x23 / teen-age))
+		:ARG1 (x39 / show-01
+			:ARG0 (x29 / hint
+				:mod (x27 / only)
+				:ARG1 (x34 / effect
+					:mod (x33 / adverse)
+					:ARG1 (x38 / wage-01
+						:mod (x37 / minimum)
+						:location (x43 / data)))))))
+
+# ::id 28
+# ::snt In 1981, the staff of the Minimum Wage Study Commission, which was appointed by President Carter, estimated that a 10 % increase in the minimum wage would trim teen-age employment demand by about 1 %, and that rises in that wage have had little impact on overall unemployment
+(x20 / estimate-01
+	:time (x2 / date-entity
+		:year 1981)
+	:ARG1 (x5 / person
+		:ARG2-of (s / staff-01)
+		:poss (x8 / government-organization
+			:name (n / name
+				:op1 "Minimum"
+				:op2 "Wage"))
+		:poss (x10 / government-organization
+			:name (n1 / name
+				:op1 "Study"
+				:op2 "Commission")
+			:ARG1-of (x15 / appoint-01
+				:ARG0 (x18 / person
+					:name (n2 / name
+						:op1 "Carter")
+					:ARG0-of (x17 / have-org-role-91
+						:ARG2 (p / president))))))
+	:ARG1 (x40 / and
+		:op1 (x31 / trim
+			:ARG0 (x25 / increase-01
+				:ARG1 (x29 / wage-01
+					:mod (x28 / minimum))
+				:ARG2 (xap0 / percentage-entity
+					:value 10))
+			:ARG1 (x34 / demand-01
+				:ARG0 (x33 / person
+					:ARG1-of (e / employ-01)
+					:mod (x32 / teen-age))))
+		:op1 (x42 / rise-01
+			:ARG1 (x45 / wage-01)
+			:ARG1 (x49 / impact-01
+				:ARG1 (x48 / little)
+				:ARG0 (x52 / employ-01
+					:polarity -
+					:mod (x51 / overall))))))
+
+# ::id 29
+# ::snt Among adults, the commission found that if increases in the wage floor lowered employment at all -- which it said is n't clear -- the amount may be so small as to be undetectable with any precision
+(x6 / find-02
+	:ARG1 (x2 / adult)
+	:ARG0 (x5 / commission)
+	:ARG1 (x21 / say-01
+		:time (x14 / lower-01
+			:ARG0 (x9 / increase-01
+				:polarity -
+				:location (x13 / floor
+					:mod (x12 / wage-01)))
+			:ARG1 (x15 / employment)
+			:location (x17 / all))
+		:ARG1 (x24 / clear)
+		:ARG1 (x27 / amount
+			:mod (x28 / possible
+				:domain (x31 / small
+					:condition (x35 / undetectable
+						:ARG2 (x38 / precision
+							:mod (x37 / any))))))))
+
+# ::id 30
+# ::snt Studies about whether minimum-wage increases hurt, or help, black workers are " all over the lot, " says University of Michigan economist Charles Brown
+(x21 / say-01
+	:ARG0 (x12 / person
+		:ARG0-of (w / work-01)
+		:mod (x11 / black)
+		:quant (x18 / lot
+			:quant (x15 / all
+				:ARG0 (x1 / study-01
+					:ARG0 (x5 / increase-01
+						:ARG1 (x4 / minimum-wage)
+						:ARG1 (x8 / or
+							:op1 (x6 / hurt-01)
+							:op2 (x9 / help)))))))
+	:ARG0 (x26 / newspaper
+		:name (n / name
+			:op1 "Charles"
+			:op2 "Brown")
+		:ARG0-of (x25 / economist
+			:ARG1 (x22 / name
+				:op1 "University"
+				:op2 "of"
+				:op3 "Michigan"))))
+
+# ::id 31
+# ::snt Opponents of raising the minimum wage insist that past increases have had a substantial effect in both layoffs and " disemployment " -- workers not hired who otherwise would have been
+(x7 / insist-01
+	:ARG1 (x3 / raise-01
+		:ARG1 (x6 / wage-01
+			:mod (x5 / minimum)))
+	:ARG1 (x19 / and
+		:op1 (x10 / increase-01
+			:polarity -
+			:time (x9 / past))
+		:op2 (x15 / effect-01
+			:mod (x14 / substantial))
+		:op1 (x18 / layoff)
+		:op2 (x21 / disemployment)
+		:op2 (x24 / person
+			:ARG0-of (w / work-01)
+			:ARG1-of (x26 / hire-01
+				:ARG2 (x31 / be-02
+					:null_edge (x28 / otherwise))))))
+
+# ::id 32
+# ::snt At the U.S. Chamber of Commerce's annual meeting last April, 29 % of attendees said they 'd trim their employment and 26 % said they 'd delay hiring if the minimum-wage bill becomes law
+(x23 / and
+	:time (x9 / meet-03
+		:ARG0 (x4 / government-organization
+			:name (n / name
+				:op1 "Chamber"
+				:op2 "of"
+				:op3 "Commerce"))
+		:null_edge (x10 / last
+			:null_edge 4))
+	:op1 (x17 / say-01
+		:ARG1 (x20 / trim
+			:ARG1 (x22 / employment))
+		:ARG1 (xap0 / percentage-entity
+			:value 29
+			:ARG0-of (x16 / person
+				:ARG0-of (a / attend-01))))
+	:op2 (x26 / say-01
+		:ARG1 (x29 / delay-01
+			:ARG1 (x30 / hire-01)
+			:ARG1 (x35 / become-01
+				:ARG1 (x34 / bill
+					:mod (x33 / minimum-wage))
+				:ARG2 (x36 / law)))
+		:ARG1 (xap1 / percentage-entity
+			:value 26)))
+
+# ::id 33
+# ::snt William Stone, president of Louisville Plate Glass Co., with 80 workers, says that if the floor is raised, " we have made the decision to pay our current employees overtime during peak workload times rather than hire additional workers .
+(x15 / say-01
+	:ARG0 (x2 / person
+		:name (n / name
+			:op1 "Stone")
+		:null_edge (x1 / person
+			:name (n1 / name
+				:op1 "William"))
+		:ARG0-of (x4 / have-org-role-91
+			:ARG2 (p / president)
+			:ARG1 (x7 / government-organization
+				:name (n2 / name
+					:op1 "Plate"
+					:op2 "Glass"
+					:op3 "Co.")
+				:mod (x6 / organization
+					:name (n3 / name
+						:op1 "Louisville"))
+				:poss (x13 / person
+					:ARG0-of (w / work-01)
+					:null_edge 80))))
+	:ARG1 (x21 / raise-01
+		:ARG1 (x19 / floor)
+		:ARG0 (x24 / we)
+		:ARG1 (x28 / decide-01
+			:ARG1 (x30 / pay-01
+				:ARG2 (x33 / person
+					:ARG1-of (e / employ-01)
+					:mod (x32 / current))
+				:ARG1 (x34 / overtime)
+				:ARG2 (x37 / work-01
+					:time (x36 / peak-01))
+				:ARG1 (x41 / hire-01
+					:ARG0 x33
+					:ARG1 (x43 / person
+						:ARG0-of (w1 / work-01)
+						:mod (x42 / additional)))))))
+
+# ::id 34
+# ::snt Valley Variety, an Ansonia, Conn., dime store that pays employees two cents above the minimum, would forgo its expansion plans for a second store, says owner Richard Armstrong
+(x21 / forgo
+	:ARG2 (x10 / store
+		:ARG0 (x1 / government-organization
+			:name (n / name
+				:op1 "Valley"
+				:op2 "Variety"))
+		:name (x5 / name
+			:op1 "Ansonia"
+			:op2 ","
+			:op3 "Conn.")
+		:mod (x9 / dime)
+		:ARG0-of (x12 / pay-01
+			:ARG1 (x13 / person
+				:ARG1-of (e / employ-01))
+			:location (x16 / above
+				:op1 (x18 / minimum))))
+	:ARG1 (x24 / plan-01
+		:ARG1 (x23 / expand-01))
+	:ARG2 (x28 / store)
+	:ARG1 (x30 / say-01
+		:name (x32 / name
+			:op1 "Richard"
+			:op2 "Armstrong"
+			:ARG0-of (x31 / own-01))))
+
+# ::id 35
+# ::snt In many areas, however, a growing shortage of new workers has resulted in more-generous wages for fast-food, retail and other jobs, making the minimum-wage question irrelevant
+(x14 / result-01
+	:ARG2 (x3 / area
+		:quant (x2 / many))
+	:ARG1 (x9 / short-41
+		:ARG1-of (x8 / grow-01)
+		:poss (x12 / person
+			:ARG0-of (w / work-01)
+			:mod (x11 / new)))
+	:ARG2 (x17 / wage
+		:mod (x16 / more-generous))
+	:ARG2 (x22 / and
+		:op1 (x19 / fast-food
+			:mod (x23 / other))
+		:op2 (x21 / retail-01))
+	:ARG2 (x24 / job)
+	:ARG0-of (x26 / make-02
+		:ARG1 (x30 / irrelevant))
+	:ARG1 (x29 / question-01
+		:mod (x28 / minimum-wage)))
+
+# ::id 36
+# ::snt In recent months, Philip Litman, owner of Bradford Stephen Inc., a Worcester, Mass., company with two gift stores, has seen the wage he must pay to get and keep help climb to $ 6 an hour from $ 4
+(x26 / see-01
+	:time (x3 / month
+		:mod (x2 / recent))
+	:ARG0 (x5 / newspaper
+		:name (n / name
+			:op1 "Philip"
+			:op2 "Litman")
+		:ARG0-of (x8 / person
+			:ARG0-of (o / own-01)
+			:ARG1 (x19 / company
+				:part-of (x10 / government-organization
+					:name (n1 / name
+						:op1 "Bradford"
+						:op2 "Stephen"
+						:op3 "Inc."))
+				:name (x15 / name
+					:op1 "Worcester"
+					:op2 ","
+					:op3 "Mass.")
+				:prep-with (x23 / store
+					:quant 2
+					:mod (x22 / gift-01)))))
+	:ARG1 (x28 / wage-01
+		:ARG1 (x34 / and
+			:op1 (x33 / get-01
+				:ARG1 (x37 / climb-01
+					:ARG1 (x36 / help-01))
+				:time (x42 / temporal-quantity
+					:unit (h / hour))
+				:ARG1 4)
+			:op2 (x35 / keep-04))))
+
+# ::id 37
+# ::snt " The minimum wage has no bearing on what we do -- it's a forgotten issue, " he says
+(xap0 / multi-sentence
+	:ARG1 (x4 / wage-01
+		:mod (x3 / minimum))
+	:snt2 (x21 / say-01
+		:ARG1 (x17 / issue
+			:ARG1-of (x11 / thing
+				:ARG1-of (d / do-02)
+				:ARG1 (x7 / bearing
+					:polarity -)
+				:ARG0 (x10 / we))
+			:domain (x13 / it)
+			:ARG1-of (x16 / forget-01))))
+
+# ::id 38
+# ::snt And while the National Association of Manufacturers is part of the coalition opposing the increase, it does n't even include the bill among its half-dozen legislative priorities
+(x1 / and
+	:op2 (x23 / bill
+		:part-of (x12 / coalition
+			:domain (x4 / government-organization
+				:name (n / name
+					:op1 "National"
+					:op2 "Association"
+					:op3 "of"
+					:op4 "Manufacturers"))
+			:ARG0-of (x13 / oppose-01
+				:ARG1 (x15 / increase-01)))
+		:mod (x20 / even)
+		:prep-among (x28 / priority
+			:mod (x27 / legislate-01))))
+
+# ::id 39
+# ::snt Many association members already pay well above the wage floor, explains Randolph Hale, a vice president : " It's an important issue, but it's not the end of the world .
+(x27 / contrast-01
+	:ARG1 (x12 / explain-01
+		:ARG1 (x5 / pay-01
+			:time (x4 / already)
+			:direction (x7 / above
+				:op1 (x10 / floor
+					:mod (x9 / wage-01)))
+			:ARG0 (xap0 / person
+				:quant (x1 / many)
+				:ARG0-of (x3 / have-org-role-91
+					:ARG2 (m / member)
+					:ARG1 (x2 / associate-01))))
+		:ARG1 (x13 / name
+			:op1 "Randolph"
+			:op2 "Hale"
+			:ARG0-of (x18 / have-org-role-91
+				:ARG2 (p / president)
+				:mod (x17 / vice)))
+		:ARG1 (x25 / issue
+			:domain (x21 / it)
+			:mod (x24 / important)))
+	:ARG2 (x32 / end-01
+		:ARG1 (x35 / world)))
+
+# ::id 40
+# ::snt As a result of those conflicting pressures, Labor Secretary Brock is trying to forge a compromise between the White House and Congress, where the Senate Labor Committee plans to act on a minimum-wage bill this fall, while the House committee plans further hearings
+(x3 / result-01
+	:ARG1 (x7 / pressure-01
+		:ARG0-of (x6 / conflict-01))
+	:ARG1 (x13 / try-01
+		:ARG0 (x11 / person
+			:name (n / name
+				:op1 "Brock")
+			:ARG0-of (x10 / have-org-role-91
+				:ARG2 (s / secretary)
+				:ARG1 (x9 / political-party
+					:name (n1 / name
+						:op1 "Labor"))))
+		:ARG1 (x15 / forge-02
+			:ARG0 x11
+			:ARG1 (x17 / compromise-01
+				:ARG0 (x22 / and
+					:op1 (x21 / government-organization
+						:name (n2 / name
+							:op1 "House"))
+					:op2 (x23 / government-organization
+						:name (n3 / name
+							:op1 "Congress")
+						:null_edge (x30 / plan-01
+							:ARG0 (x27 / military
+								:name (n4 / name
+									:op1 "Senate"
+									:op2 "Labor"))
+							:ARG1 (x32 / act-01
+								:ARG0 x27
+								:ARG1 (x36 / bill)
+								:ARG1 (x38 / fall-01
+									:mod (x37 / this)))
+							:time (x44 / plan-01
+								:ARG0 (x43 / committee
+									:ARG0-of (x42 / have-org-role-91
+										:ARG1 (g / government-organization
+											:name (n5 / name
+												:op1 "House"))))
+								:ARG1 (x46 / hearing
+									:degree (x45 / further))))))))))
+
+# ::id 41
+# ::snt In return for administration agreement to raising the wage, Mr. Brock says, Congress must also allow a " youth differential " wage that's lower than the minimum wage, so as not to discourage employers from hiring untrained new job entrants
+(x18 / allow-01
+	:ARG1 (x5 / agree-01
+		:ARG2 (x7 / raise-01
+			:ARG1 (x9 / wage-01))
+		:ARG0 (xap0 / government-organization
+			:ARG0-of (x4 / administer-01)))
+	:ARG1 (x13 / say-01
+		:ARG0 (x12 / person
+			:name (n1 / name
+				:op1 "Brock")
+			:null_edge (x11 / null_tag)))
+	:ARG0 (x15 / government-organization
+		:name (n / name
+			:op1 "Congress"))
+	:mod (x17 / also)
+	:ARG1 (x24 / wage-01
+		:mod (x21 / youth)
+		:mod (x27 / low
+			:compared-to (x31 / wage-01
+				:mod (x30 / minimum))
+			:compared-to (x37 / discourage
+				:ARG1 (x38 / employ-01)
+				:ARG2 (x40 / hire-01
+					:ARG1 (x44 / entrant
+						:mod (x41 / untrained)
+						:mod (x42 / new)
+						:mod (x43 / job)))))))
+
+# ::id 42
+# ::snt He is also pushing to exempt small business from the wage-floor requirement, and wants legislators to drop a provision that after 1990 would tie the minimum wage to average manufacturing wages
+(x14 / and
+	:op1 (x4 / push-02
+		:ARG0 (x1 / he)
+		:mod (x3 / also)
+		:ARG2 (x6 / exempt
+			:ARG1 (x8 / business
+				:mod (x7 / small))
+			:ARG2 (x12 / thing
+				:ARG1-of (r / require-01)
+				:mod (x11 / wage-floor))))
+	:op2 (x15 / want-01
+		:ARG1 (x18 / drop-04
+			:ARG1 (x16 / legislator)
+			:ARG1 (x20 / provision
+				:ARG0-of (x25 / tie-01
+					:time (x22 / after
+						:op1 (x23 / date-entity
+							:year 1990))
+					:ARG1 (x28 / wage-01
+						:mod (x27 / minimum)
+						:ARG1 (x30 / average-01
+							:ARG1 (x32 / wage
+								:purpose (x31 / manufacture-01)))))))))
+
+# ::id 43
+# ::snt But one way or another, an increase is almost sure to become law
+(x1 / contrast-01
+	:ARG2 (x4 / or
+		:op1 (x3 / way
+			:quant 1)
+		:op2 (x5 / another))
+	:ARG2 (x8 / increase-01)
+	:ARG2 (x13 / become-01
+		:time (x10 / almost)
+		:ARG2 (x14 / law)))
+
+# ::id 44
+# ::snt A survey of voters for the Service Employees International Union in June showed 71 % backing the wage-floor bill ; in a Personnel Journal poll, even 60 % of corporate personnel officials backed a minimum-wage increase
+(x / xconcept
+	:x (x20 / and
+		:time (x12 / date-entity)
+		:op1 (x13 / show-01
+			:ARG0 (x2 / survey-01
+				:ARG1 (x4 / vote-01)
+				:ARG0 (x7 / government-organization
+					:name (n / name
+						:op1 "Service"
+						:op2 "Employees"
+						:op3 "International"
+						:op4 "Union")))
+			:ARG1 (x16 / back-01
+				:ARG1 (x19 / bill)
+				:ARG1 (xap0 / percentage-entity
+					:value 71)))
+		:op1 (x34 / back-01
+			:ARG0 (x25 / poll-01
+				:ARG0 (x23 / organization
+					:name (n1 / name
+						:op1 "Personnel"))
+				:null_edge (x24 / null_tag))
+			:concession (x27 / even
+				:op1 (xap1 / percentage-entity
+					:value 60)
+				:op1 (xap3 / person
+					:ARG0-of (x33 / have-org-role-91
+						:ARG2 (o / official)
+						:ARG1 (x31 / corporation))))
+			:ARG1 (x37 / increase-01
+				:mod (x36 / minimum-wage)))
+		:op2 (xap2 / person
+			:ARG0-of (x32 / have-org-role-91
+				:ARG2 (p / personnel)))))
+
+# ::id 45
+# ::snt Besides, observes Iowa GOP Rep. Fred Grandy, a member of the House Labor Committee : " If members of Congress feel they can raise their own pay but not raise the pay of the average low-paid worker, they 're mistaken .
+(x3 / observe-01
+	:mod (x1 / besides)
+	:ARG1 (x5 / political-party
+		:name (n / name
+			:op1 "GOP")
+		:location (x4 / state
+			:name (n1 / name
+				:op1 "Iowa")))
+	:ARG1 (x7 / name
+		:op1 "Fred"
+		:op2 "Grandy"
+		:ARG0-of (x6 / rep.)
+		:ARG0-of (x11 / member
+			:ARG1 (x15 / political-party
+				:name (n2 / name
+					:op1 "Labor")
+				:null_edge (x14 / have-org-role-91
+					:ARG1 (g / government-organization
+						:name (n3 / name
+							:op1 "House"))))))
+	:ARG1 (x43 / mistake-01
+		:condition (x23 / feel-01
+			:ARG1 (x25 / possible
+				:domain (x26 / raise-01
+					:ARG1 (x29 / pay-01
+						:ARG2 (x32 / raise-01
+							:ARG1 (x34 / pay-01
+								:poss (x39 / person
+									:ARG0-of (w / work-01)
+									:mod (x37 / average-01)
+									:mod (x38 / low-paid)))))))
+			:ARG0 (xap0 / person
+				:ARG0-of (x20 / have-org-role-91
+					:ARG2 (m / member)
+					:ARG1 (x22 / government-organization
+						:name (n4 / name
+							:op1 "Congress")))))))
+

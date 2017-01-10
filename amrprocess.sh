@@ -1,6 +1,6 @@
 AMRDIR="../camr/AMRParsing"
-JARVISDIR="../../Jarvis/Lincoln/05AMRParsing/Output"
-for file in `ls ./Lincoln/01DocumentExpansion/Output/*.txt | sort -V`; do 
+JARVISDIR="../../Jarvis/Lincoln/05AMRParsing/OutputClean"
+for file in `ls ./Lincoln/01DocumentExpansion/OutputClean/*.txt | sort -V`; do 
 	if [ "$(ls -A $AMRDIR)" ]; then
 	    rm -rf $AMRDIR/*.txt
 	    rm -rf $AMRDIR/*.txt.tok
