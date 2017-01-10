@@ -1,0 +1,435 @@
+# ::id 1
+# ::snt The Navy announced Friday that 15 crew members of the USS Vincennes, the cruiser that shot down an Iranian jetliner in the Persian Gulf last summer, will be disciplined for drug abuse
+(x3 / announce-01
+	:ARG0 (x2 / military
+		:name (n / name
+			:op1 "Navy"))
+	:ARG1 (x31 / discipline
+		:ARG1 (x34 / abuse-01
+			:ARG1 (x33 / drug))
+		:ARG0 (xap1 / person
+			:quant 15
+			:ARG0-of (x8 / have-org-role-91
+				:ARG2 (m / member)
+				:ARG1 (x7 / crew))
+			:ARG1 (x17 / shoot-02
+				:null_edge (x11 / name
+					:op1 "USS"
+					:op2 "Vincennes"
+					:op3 ","
+					:op4 "the"
+					:op5 "cruiser")
+				:ARG1 (x21 / jetliner
+					:mod (x20 / country
+						:name (n1 / name
+							:op1 "Iran"))
+					:location (x25 / world-region
+						:name (n2 / name
+							:op1 "Gulf")
+						:mod (x24 / country
+							:name (n3 / name
+								:op1 "Persian"))))
+				:time (x27 / summer
+					:mod (x26 / last)))))
+	:time (xap0 / date-entity
+		:weekday (x4 / friday)))
+
+# ::id 2
+# ::snt " There is no connection now to the July 3 incident in the Persian Gulf to what has happened on board the Vincennes, " said Navy Cmdr. David Dillon, spokesman for Pacific Fleet Surface Force headquarters
+(x26 / say-01
+	:ARG1 (x5 / connect-01
+		:polarity -
+		:time (x6 / now)
+		:ARG1 (x11 / incident
+			:null_edge 7
+			:null_edge (x10 / null_tag)
+			:location (x15 / world-region
+				:name (n2 / name
+					:op1 "Gulf")
+				:mod (x14 / country
+					:name (n4 / name
+						:op1 "Persian")))
+			:ARG1-of (x19 / happen-01
+				:ARG2 (x21 / board)
+				:ARG1 (x23 / country
+					:name (n5 / name
+						:op1 "Vincennes")))))
+	:ARG0 (x30 / person
+		:name (n / name
+			:op1 "Dillon")
+		:null_edge (x28 / cmdr.
+			:ARG1 (x27 / military
+				:name (n3 / name
+					:op1 "Navy")))
+		:null_edge (x29 / person
+			:name (n1 / name
+				:op1 "David"))
+		:null_edge (x32 / have-org-role-91
+			:ARG2 (s / spokesman)
+			:ARG1 (x38 / headquarters
+				:null_edge (x34 / null_tag)
+				:poss (x35 / organization
+					:name (n6 / name
+						:op1 "Fleet"))
+				:null_edge (x36 / null_tag)
+				:null_edge (x37 / null_tag)))))
+
+# ::id 3
+# ::snt The Vincennes, meanwhile, will be shifted to Long Beach Naval Shipyard within five weeks for modifications to correct deficiencies in the Aegis electronic combat control system, The (San Diego )Tribune reported Friday
+(x8 / shift-01
+	:ARG1 (x2 / country
+		:name (n / name
+			:op1 "Vincennes"))
+	:time (x4 / meanwhile)
+	:ARG2 (x13 / country
+		:name (n1 / name
+			:op1 "Shipyard")
+		:null_edge (x10 / country
+			:name (n2 / name
+				:op1 "Long"))
+		:null_edge (x11 / country
+			:name (n3 / name
+				:op1 "Beach"))
+		:null_edge (x12 / country
+			:name (n4 / name
+				:op1 "Naval")))
+	:ARG2 (x18 / modify-01
+		:quant 5
+		:purpose (x20 / correct-01
+			:ARG1 (x21 / person
+				:prep-with (d / deficiency)
+				:instrument-of (x28 / system
+					:name (x24 / name
+						:op1 "Aegis")
+					:mod (x25 / electronic)
+					:instrument-of (x27 / control-01
+						:ARG1 (x26 / combat-01)))
+				:ARG1-of (x36 / report-01
+					:time (xap0 / date-entity
+						:op1 (x32 / name
+							:op1 "San"
+							:op2 "Diego"
+							:op3 "-RRB-"
+							:op4 "Tribune")
+						:weekday (x37 / friday)))))))
+
+# ::id 4
+# ::snt Aegis, which would enable a ship like the Vincennes to make computer-recommended battle decisions for entire fleets, was found flawed in the Persian Gulf confrontation
+(x21 / find-02
+	:ARG1 (x1 / product
+		:name (n / name
+			:op1 "Aegis")
+		:ARG0-of (x5 / enable-01
+			:ARG1 (x7 / ship
+				:null_edge (x10 / country
+					:name (n3 / name
+						:op1 "Vincennes")))
+			:ARG2 (x18 / fleet
+				:ARG1 (x15 / decide-01
+					:ARG0 (x14 / battle-01
+						:mod (x13 / computer-recommended)))
+				:quant (x17 / entire))))
+	:ARG1 (x22 / flaw-01)
+	:location (x27 / confront-01
+		:mod (x25 / country
+			:name (n1 / name
+				:op1 "Persian"))
+		:ARG1 (x26 / world-region
+			:name (n2 / name
+				:op1 "Gulf"))))
+
+# ::id 5
+# ::snt According to Pentagon analysts, split-second decisions were affected by the inability of radar-scope interpreters to immediately match the plane's " blip " with digital direction, altitude and speed information displayed on another screen
+(x9 / affect-01
+	:ARG0 (x4 / person
+		:ARG0-of (a / analyze-01)
+		:ARG1 (x3 / government-organization
+			:name (n / name
+				:op1 "Pentagon")))
+	:ARG1 (x7 / decide-01
+		:mod (x6 / split-second))
+	:ARG1 (x15 / interpreter
+		:mod (x14 / radar-scope)
+		:purpose (x18 / match-01
+			:time (x17 / immediate)
+			:ARG1 (x23 / blip
+				:poss (x20 / plane)
+				:ARG1 (x30 / and
+					:op1 (x27 / direction
+						:mod (x26 / digital))
+					:op2 (x29 / altitude)
+					:op2 (x31 / speed-01)
+					:op2 (xap0 / contrast-01
+						:ARG1 (x32 / information)
+						:ARG1 (x36 / screen
+							:mod (x35 / another))))))))
+
+# ::id 6
+# ::snt Those problems are one reason the Vincennes will undergo modernization, an unidentified source told The Tribune
+(x5 / reason
+	:ARG1 (x2 / problem)
+	:quant 1
+	:ARG1 (x9 / undergo-01
+		:ARG0 (x7 / organization
+			:name (n / name
+				:op1 "Vincennes"))
+		:ARG1 (x10 / modernize-01
+			:ARG1-of (x15 / tell-01
+				:ARG1 (x13 / identify-01
+					:polarity -)
+				:ARG2 (x17 / government-organization
+					:name (n1 / name
+						:op1 "Tribune"))))))
+
+# ::id 7
+# ::snt None of the sailors involved in the drug sweep were in positions that may have influenced the decision by Capt. Will C. Rogers III to fire two anti-aircraft missiles at the jetliner, Dillon said
+(x35 / say-01
+	:ARG0 (x34 / person
+		:name (n / name
+			:op1 "Dillon"))
+	:ARG1 (xap0 / policeman
+		:ARG1-of (x5 / involve-01
+			:ARG2 (x9 / sweep-01
+				:ARG1 (x8 / drug)))
+		:ARG1-of (x12 / position
+			:ARG1-of (x16 / influence-01
+				:mod (x14 / possible)
+				:ARG1 (x18 / decide-01
+					:ARG0 (x21 / company
+						:name (n1 / name
+							:op1 "Will"
+							:op2 "C."
+							:op3 "Rogers"
+							:op4 "III")
+						:ARG0-of (x20 / capt.))
+					:ARG1 (x26 / fire-01
+						:ARG1 (x29 / missile
+							:quant 2
+							:mod (x28 / anti-aircraft))
+						:location (x32 / jetliner)))))))
+
+# ::id 8
+# ::snt All 290 aboard the plane died
+(x6 / die-01
+	:ARG1 (x5 / plane
+		:quant (x1 / all)))
+
+# ::id 9
+# ::snt Of the 15 sailors, six are being processed for discharge from the Navy, while six others have been given warnings, Dillon said
+(x25 / say-01
+	:ARG1 (x9 / process-01
+		:ARG1 (x4 / person
+			:ARG0-of (s / sail-01)
+			:quant 15
+			:quant 6)
+		:purpose (x11 / discharge-01
+			:source (x14 / military
+				:name (n1 / name
+					:op1 "Navy")))
+		:time (x21 / give-01
+			:ARG1 (x22 / warn-01
+				:ARG0 (x18 / other
+					:quant 6))))
+	:ARG0 (x24 / person
+		:name (n / name
+			:op1 "Dillon")))
+
+# ::id 10
+# ::snt " Three are petty officers who are being investigated for possible court-martial in connection with drug sales, " David Dillon said
+(x22 / say-01
+	:ARG0 (x21 / person
+		:name (n / name
+			:op1 "Dillon")
+		:null_edge (x20 / person
+			:name (n1 / name
+				:op1 "David")))
+	:ARG0 (xap2 / person
+		:quant 3
+		:ARG0-of (x5 / have-org-role-91
+			:ARG2 (o / officer)
+			:mod (x4 / petty)
+			:ARG1-of (x9 / investigate-01
+				:ARG2 (x12 / court-martial
+					:mod (x11 / possible))
+				:ARG1 (xap1 / sell-01
+					:ARG0-of (xap0 / sell-01
+						:ARG1 (x16 / drug)))))))
+
+# ::id 11
+# ::snt Dillon noted that the 15 sailors represent 3.9 percent of the 384 sailors on board
+(x2 / note-01
+	:ARG0 (x1 / person
+		:name (n / name
+			:op1 "Dillon"))
+	:ARG1 (x7 / represent-01
+		:ARG0 (x6 / person
+			:ARG0-of (s / sail-01)
+			:quant 15)
+		:ARG1 (x9 / percentage-entity
+			:value 3.9
+			:poss (x13 / person
+				:ARG0-of (s1 / sail-01)
+				:quant (x12 / 384)
+				:location (x15 / board)))))
+
+# ::id 12
+# ::snt " That is less than the 5.4 percent average for the entire Navy, " David Dillon said
+(x18 / say-01
+	:ARG1 (x4 / less
+		:null_edge (x8 / percentage-entity
+			:ARG1-of (x9 / average
+				:ARG1 (x13 / military
+					:name (n2 / name
+						:op1 "Navy")
+					:mod (x12 / entire)))))
+	:ARG0 (x17 / person
+		:name (n / name
+			:op1 "Dillon")
+		:null_edge (x16 / person
+			:name (n1 / name
+				:op1 "David"))))
+
+# ::id 13
+# ::snt The announcement came as preparations were under way at the Naval Station San Diego for Saturday's change of command aboard the Vincennes
+(x3 / come-01
+	:ARG1 (x2 / thing
+		:ARG1-of (a / announce-01))
+	:ARG1 (x5 / prepare-02
+		:manner (x7 / under
+			:op1 (x8 / way))
+		:location (x14 / country
+			:name (n / name
+				:op1 "Diego")
+			:null_edge (x11 / country
+				:name (n1 / name
+					:op1 "Naval"))
+			:null_edge (x12 / country
+				:name (n2 / name
+					:op1 "Station"))
+			:location (x13 / country
+				:name (n3 / name
+					:op1 "San")))
+		:ARG1 (x18 / change-01
+			:ARG1 (x20 / command-02)
+			:location (x21 / aboard
+				:op1 (x23 / country
+					:name (n4 / name
+						:op1 "Vincennes")))
+			:time (xap0 / date-entity
+				:weekday (x16 / saturday)))))
+
+# ::id 14
+# ::snt Rogers will be rotated to a new assignment at the Navy's Tactical Training Group in San Diego
+(x4 / rotate-01
+	:ARG1 (x1 / organization
+		:name (n / name
+			:op1 "Rogers"))
+	:ARG2 (x8 / thing
+		:ARG1-of (a / assign-01)
+		:mod (x7 / new)
+		:ARG0 (x13 / government-organization
+			:name (n1 / name
+				:op1 "Tactical"
+				:op2 "Training"
+				:op3 "Group")
+			:poss (x11 / military
+				:name (n2 / name
+					:op1 "Navy"))
+			:location (x18 / country
+				:name (n3 / name
+					:op1 "Diego")
+				:location (x17 / country
+					:name (n4 / name
+						:op1 "San"))))))
+
+# ::id 15
+# ::snt The new Vincennes commander is Capt. Robert B. Lynch, who had been stationed in Washington, D.C., and is assuming Capt. Robert B. Lynch fifth sea command
+(x / xconcept
+	:x (x4 / have-org-role-91
+		:ARG2 (c / commander)
+		:mod (x2 / new)
+		:ARG1 (x3 / country
+			:name (n / name
+				:op1 "Vincennes")))
+	:x (x20 / and
+		:op1 (x7 / name
+			:op1 "Robert"
+			:op2 "B."
+			:op3 "Lynch"
+			:ARG0-of (x6 / capt.))
+		:op1 (x14 / station-01
+			:ARG2 (x16 / city
+				:name (n1 / name
+					:op1 "Washington")
+				:null_edge (x18 / country
+					:name (n2 / name
+						:op1 "D.C."))))
+		:op2 (x22 / assume-02
+			:ARG1 (x29 / command
+				:name (x24 / name
+					:op1 "Robert"
+					:op2 "B."
+					:op3 "Lynch"
+					:ARG0-of (x23 / capt.))
+				:mod (x28 / sea)))))
+
+# ::id 16
+# ::snt Rogers and his wife, Sharon, have been under guard by the Naval Investigative Service since a pipe bomb exploded under the family van Mrs. Rogers was driving to his wife teaching job March 10 in La Jolla
+(x2 / and
+	:op1 (x1 / person
+		:name (n / name
+			:op1 "Rogers"))
+	:op2 (x4 / wife
+		:poss (x6 / person
+			:name (n2 / name
+				:op1 "Sharon")))
+	:time (x11 / person
+		:ARG0-of (g / guard-01))
+	:op1 (x14 / government-organization
+		:name (n1 / name
+			:op1 "Naval"
+			:op2 "Investigative"
+			:op3 "Service"))
+	:time (x17 / since
+		:op1 (x21 / explode-01
+			:ARG1 (x20 / bomb
+				:mod (x19 / pipe))
+			:ARG1 (x25 / van
+				:mod (x24 / family)
+				:ARG0-of (x29 / drive-02
+					:ARG0 (x27 / person
+						:name (n3 / name
+							:op1 "Rogers")
+						:ARG0-of (x26 / mrs.))
+					:ARG1 (x34 / job
+						:mod (x33 / teach-01
+							:ARG1 (x32 / wife)))
+					:time (x35 / name
+						:op1 "March"
+						:op2 "10")
+					:location (x39 / country
+						:name (n4 / name
+							:op1 "Jolla")
+						:null_edge (x38 / country
+							:name (n5 / name
+								:op1 "La"))))))))
+
+# ::id 17
+# ::snt his wife escaped injury
+(x3 / escape-01
+	:ARG0 (x2 / wife)
+	:ARG1 (x4 / injure-01))
+
+# ::id 18
+# ::snt The FBI is investigating the attack as possible terrorist retaliation for the airliner's destruction
+(x4 / investigate-01
+	:ARG0 (x2 / government-organization
+		:name (n / name
+			:op1 "FBI"))
+	:ARG1 (x6 / attack-01)
+	:prep-as (x10 / retaliate-01
+		:mod (x8 / possible)
+		:mod (x9 / terrorist)
+		:ARG2-of (x15 / destroy-01
+			:ARG0 (x13 / airliner))))
+
