@@ -1,0 +1,891 @@
+# ::id 1
+# ::snt As the summer draws to the summer close, Zimbabwe's farmers are counting the cost of what for most of Zimbabwe's farmers is the worst drought they have ever experienced
+(x14 / count-02
+	:time (x4 / draw-02
+		:ARG2 (x8 / close-01
+			:op1 (xap1 / date-entity
+				:season (x7 / summer)))
+		:time (xap0 / date-entity
+			:season (x3 / summer)))
+	:ARG0 (x12 / person
+		:ARG0-of (f / farm-01)
+		:mod (x10 / country
+			:name (n / name
+				:op1 "Zimbabwe")))
+	:ARG1 (x16 / cost-01
+		:ARG2 (x24 / person
+			:ARG0-of (f1 / farm-01)
+			:quant (x20 / most)
+			:mod (x22 / country
+				:name (n1 / name
+					:op1 "Zimbabwe")))
+		:ARG1 (x28 / drought
+			:mod (x27 / bad)
+			:ARG0-of (x32 / experience-01
+				:time (x31 / ever)))))
+
+# ::id 2
+# ::snt Over the country as a whole, rainfall has been less than half the seasonal average ; in many southern and eastern areas, the country as a whole has been between a tenth and a third of normal levels
+(x / xconcept
+	:x (x17 / and
+		:op1 (x11 / less)
+		:op2 (x16 / average
+			:ARG2 (x3 / country
+				:mod (x6 / whole))
+			:null_edge (x13 / null_tag)
+			:mod (x15 / seasonal)
+			:ARG2 (xap0 / fall-01
+				:ARG1 (x8 / rain)))
+		:op2 (x21 / and
+			:quant (x19 / many)
+			:op1 (x20 / south)
+			:op2 (x22 / world-region
+				:name (n / name
+					:op1 "eastern"))
+			:domain (x26 / country
+				:prep-as (x29 / whole)))
+		:op9 (x35 / and
+			:op1 (x34 / person
+				:name (n1 / name
+					:op1 "tenth"))
+			:op1 (x40 / level
+				:mod (x39 / normal)))))
+
+# ::id 3
+# ::snt Crop production has been devastated, with the exception of drought-resistant tobacco, where output has risen 6 per cent to 180m kg
+(x5 / devastate-01
+	:ARG1 (x2 / produce-01
+		:ARG1 (x1 / crop))
+	:ARG2 (x9 / exception
+		:consist-of (x12 / tobacco
+			:mod (x11 / drought-resistant)
+			:ARG1-of (x17 / rise-01
+				:ARG1 (x15 / output)
+				:ARG4 (x20 / monetary-quantity
+					:unit (c / cent)
+					:quant 6)
+				:ARG4 (x23 / kg)))))
+
+# ::id 4
+# ::snt Maize deliveries to the state-owned grain marketing board will fall by 90 per cent this year to 60,000 tonnes, from more than 600,000 tonnes last year and an annual average of more than 1m tonnes in the late 1980s
+(x10 / fall-01
+	:ARG1 (x2 / deliver-01
+		:ARG1 (x1 / maize)
+		:ARG2 (x8 / board
+			:mod (x7 / market
+				:ARG1 (x6 / grain))
+			:ARG1-of (xap0 / own-01
+				:ARG0 (x5 / state))))
+	:ARG4 (x14 / monetary-quantity
+		:unit (c / cent))
+	:ARG1 (x28 / and
+		:time (x16 / year
+			:mod (x15 / this))
+		:quant (x22 / more-than)
+		:op1 (x25 / mass-quantity
+			:unit (t / tonne))
+		:time (x27 / year
+			:mod (x26 / last))
+		:op2 (x31 / average
+			:ARG1 (x36 / mass-quantity
+				:unit (t1 / tonne)
+				:quant (x33 / more-than)
+				:time (xap1 / date-entity
+					:time (x40 / date-entity
+						:mod (x39 / late)))))
+		:op1 (xap2 / multiple
+			:op1 (x19 / mass-quantity
+				:unit (t2 / tonne)
+				:quant (x18 / 60,000)))))
+
+# ::id 5
+# ::snt Cotton deliveries are forecast at less than 90,000 tonnes, down from 205,000 tonnes in 1991, soyabeans at 30,000 tonnes (133,000 tonnes last year -RRB-, while winter wheat production is expected to fall to less than a third of normal levels
+(x4 / forecast-01
+	:ARG1 (x2 / deliver-01
+		:ARG1 (x1 / cotton-00))
+	:direction (x11 / down
+		:op1 (x14 / mass-quantity
+			:unit (t / tonne)
+			:quant (x13 / 205,000)
+			:time (x16 / date-entity
+				:year 1991)))
+	:ARG1 (x18 / soyabean
+		:quant (xap1 / multiple
+			:op1 (x21 / mass-quantity
+				:unit (t2 / tonne)
+				:quant (x20 / 30,000)
+				:quant (x24 / volume-quantity
+					:unit (t3 / tonne)
+					:quant (x23 / 133,000)
+					:time (x26 / year
+						:mod (x25 / last))))))
+	:ARG1 (x34 / expect-01
+		:ARG1 (x32 / produce-01
+			:season (x30 / winter)
+			:ARG1 (x31 / wheat))
+		:ARG1 (x36 / fall-01
+			:ARG4 (x38 / less
+				:mod (x44 / level
+					:mod (x43 / normal)))))
+	:time (xap0 / multiple
+		:op1 (x9 / mass-quantity
+			:unit (t1 / tonne)
+			:quant (x8 / 90,000
+				:null_edge (x6 / less-than)))))
+
+# ::id 6
+# ::snt In the low veld, where rains have been below normal since 1989, sugar production has come to a halt, turning Zimbabwe from a substantial exporter into a net importer
+(x18 / come-01
+	:prep-in (x4 / veld
+		:mod (x3 / low)
+		:domain (x7 / rain
+			:location (x10 / below
+				:op1 (x11 / normal))
+			:time (x12 / since
+				:op1 (x13 / date-entity
+					:year 1989))))
+	:ARG1 (x16 / produce-01
+		:ARG1 (x15 / sugar))
+	:ARG4 (x21 / halt-01
+		:ARG0-of (x23 / turn-02
+			:ARG1 (x24 / country
+				:name (n / name
+					:op1 "Zimbabwe"))
+			:ARG2 (x28 / export-01
+				:mod (x27 / substantial))
+			:ARG2 (x32 / importer
+				:mod (x31 / net)))))
+
+# ::id 7
+# ::snt At ZDollars 3.7 bn (Pounds 410m )last year, agriculture accounted for almost 20 per cent of gross domestic product, though in real terms, ZDollars 3.7 bn -LRB- Pounds 410m -RRB- was 8 per cent below the mid-1980s peak
+(x13 / account-01
+	:time (x4 / bn
+		:null_edge (x3 / 3.7)
+		:null_edge (x6 / null_tag))
+	:time (x10 / year
+		:mod (x9 / last))
+	:ARG0 (x12 / agriculture)
+	:ARG1 (x22 / product
+		:mod (x15 / almost
+			:op1 20)
+		:mod (x20 / gross)
+		:mod (x21 / domestic))
+	:ARG1 (x27 / term
+		:mod (x26 / real)
+		:time (x43 / peak-01
+			:condition 8
+			:quant (x39 / monetary-quantity
+				:unit (c / cent))
+			:time (x42 / event
+				:name (n / name
+					:op1 "mid-1980s"))))
+	:ARG1 (x31 / bn
+		:null_edge (x30 / 3.7)
+		:null_edge (x33 / null_tag)))
+
+# ::id 8
+# ::snt Flue-cured tobacco accounts for just over half of this, and while there is likely to be some modest growth in the value of its output this year, the rest, with the exceptions of beef and horticulture will fall catastrophically ; so much so that, in real terms, farm output in 1992 is projected to slump to farm output in 1992 lowest levels for 30 years
+(x11 / and
+	:op1 (x3 / account
+		:ARG0 (x2 / tobacco
+			:mod (x1 / flue-cured)))
+	:mod (x9 / this
+		:mod (x5 / just)))
+
+# ::id 9
+# ::snt The impact on the economy will be devastating
+(x8 / devastate-01
+	:ARG1 (x2 / impact-01
+		:ARG1 (x5 / economy)))
+
+# ::id 10
+# ::snt Growth is forecast to decline from 3.6 per cent last year to between minus 4 and minus 5 per cent in 1992
+(x3 / forecast-01
+	:ARG1 (x1 / grow-01)
+	:ARG1 (x5 / decline-01
+		:ARG3 (x9 / monetary-quantity
+			:unit (c / cent)
+			:time (x11 / year
+				:mod (x10 / last))
+			:null_edge (x16 / and
+				:null_edge (x14 / null_tag
+					:null_edge 4)
+				:null_edge (x17 / null_tag
+					:null_edge 5)
+				:op1 (x20 / monetary-quantity
+					:unit (c1 / cent)
+					:null_edge (x22 / date-entity
+						:year 1992))))))
+
+# ::id 11
+# ::snt Following last year's 45 per cent devaluation of the Zimbabwean dollar, exports of farm produce in US dollar terms will be sharply lower, with tobacco earnings of less than USDollars 500m, compared with Dollars 520m in 1991 (28 per cent of total exports )
+(x1 / follow-01
+	:ARG2 (x3 / temporal-quantity
+		:unit (y / year)
+		:mod (x2 / last))
+	:ARG2 (x8 / devalue-01
+		:quant 45
+		:ARG1 (x7 / monetary-quantity
+			:unit (c / cent))
+		:ARG1 (x12 / dollar
+			:mod (x11 / country
+				:name (n / name
+					:op1 "Zimbabwe"))))
+	:ARG1 (x25 / low
+		:domain (x14 / export-01
+			:ARG1 (x17 / produce-01
+				:mod (x16 / farm)
+				:manner (x21 / term
+					:mod (x19 / country
+						:name (n1 / name
+							:op1 "US"))
+					:mod (x20 / monetary-quantity
+						:unit (d / dollar)))))
+		:manner (x24 / sharp)
+		:ARG1 (x29 / earn-01
+			:ARG1 (x28 / tobacco)
+			:quant (x31 / less))
+		:compared-to (x39 / 520m
+			:ARG1 (x48 / export-01
+				:quant 28
+				:ARG2-of (x47 / total-01)))))
+
+# ::id 12
+# ::snt The collapse of sugar, cotton, and maize exports and reduced foreign earnings from coffee and tea will cost the country at least Dollars 150m (10 per cent of exports )over the next 12 months
+(x20 / cost-01
+	:ARG1 (x2 / collapse-01
+		:ARG1 (x8 / and
+			:op1 (x4 / sugar)
+			:op1 (x6 / cotton-00)
+			:op2 (x10 / export-01
+				:ARG1 (x9 / maize)))
+		:ARG1 (x11 / and
+			:op2 (x14 / earn-01
+				:ARG1-of (x12 / reduce-01)
+				:source (x17 / and
+					:mod (x13 / foreign)
+					:op1 (x16 / coffee)
+					:op2 (x18 / tea)))))
+	:ARG1 (x22 / country)
+	:ARG2 (x26 / 150m
+		:null_edge (x25 / null_tag)
+		:ARG1 (x32 / export-01
+			:quant 10))
+	:time (x34 / over
+		:op1 (x37 / date-entity
+			:mod (x36 / next))))
+
+# ::id 13
+# ::snt At the same time, the country will need to import at least Dollars 350m worth of maize, wheat, sugar and possibly, later in the year, dairy products
+(x9 / need-01
+	:time (x4 / time
+		:ARG1-of (x3 / same-41))
+	:ARG0 (x7 / country)
+	:ARG1 (x11 / import-01
+		:ARG0 x7
+		:ARG1 (x15 / 350m
+			:null_edge (x14 / null_tag)
+			:null_edge (x23 / and
+				:op1 (x18 / maize
+					:mod (x24 / possible)
+					:time (x26 / late
+						:time (x29 / year)))
+				:op2 (x22 / sugar-cane
+					:mod (x20 / wheat))
+				:op2 (x32 / product
+					:mod (x31 / dairy))))))
+
+# ::id 14
+# ::snt After allowing for some reduction in other imports and higher exports of manufactures and some minerals, the balance of payments impact will exceed Dollars 300m - at the very least - pushing the current account deficit above Dollars 1bn, or 20 per cent of GDP
+(x24 / exceed-01
+	:time (x1 / after
+		:op1 (x2 / allow-01
+			:ARG1 (x5 / reduce-01
+				:null_edge (x4 / some)
+				:ARG1 (x9 / and
+					:op1 (x8 / import-01
+						:mod (x7 / other))
+					:op2 (x11 / export-01
+						:mod (x10 / high)
+						:ARG1 (x14 / and
+							:op1 (x13 / manufacture-01)
+							:op2 (x16 / mineral
+								:quant (x15 / some))))))))
+	:ARG0 (x19 / balance
+		:ARG1 (x22 / impact-01))
+	:ARG1 (x25 / dollars)
+	:ARG0 (x26 / 300m)
+	:degree (x30 / very)
+	:ARG0 (x33 / push-02
+		:ARG1 (x37 / deficit
+			:time (x35 / current)
+			:mod (x36 / account))
+		:location (x38 / above
+			:op1 (x42 / or
+				:op1 (x40 / 1bn)
+				:null_edge (x45 / monetary-quantity
+					:unit (c / cent)
+					:null_edge 20)))))
+
+# ::id 15
+# ::snt Financing this will be difficult given similar emergency food aid demands in the region from Angola, Malawi, Mozambique and Zambia
+(x5 / difficult
+	:domain (x1 / finance-01
+		:ARG1 (x2 / this))
+	:domain (x11 / demand-01
+		:ARG1-of (x7 / resemble-01
+			:op (s / similar))
+		:ARG0 (x8 / emergency)
+		:ARG0 (x9 / food)
+		:ARG1 (x10 / aid-01)
+		:location (x14 / region)
+		:ARG0 (x21 / and
+			:op1 (x16 / country
+				:name (n / name
+					:op1 "Angola"))
+			:op3 (x18 / country
+				:name (n1 / name
+					:op1 "Malawi"))
+			:op2 (x20 / country
+				:name (n2 / name
+					:op1 "Mozambique"))
+			:op2 (x22 / country
+				:name (n3 / name
+					:op1 "Zambia")))))
+
+# ::id 16
+# ::snt The traditional suppliers of maize to these countries - South Africa and Zimbabwe - will be importing up to 7m tonnes themselves this year (5m tonnes for South Africa and 2m tonnes for Zimbabwe )
+(x17 / import-01
+	:ARG1 (x31 / and
+		:op1 (x21 / volume-quantity
+			:unit (t / tonne)
+			:null_edge (x20 / null_tag))
+		:time (x24 / year
+			:mod (x23 / this))
+		:op1 (x27 / volume-quantity
+			:unit (t1 / tonne)
+			:mod (x26 / 5m)
+			:beneficiary (x29 / country
+				:name (n / name
+					:op1 "South"
+					:op2 "Africa")))
+		:op1 (x33 / volume-quantity
+			:unit (t2 / tonne)
+			:mod (x32 / 2m)
+			:destination (x35 / country
+				:name (n1 / name
+					:op1 "Zimbabwe"))))
+	:ARG1 (xap0 / company
+		:ARG0-of (x3 / thing
+			:ARG0-of (s / supply-01)
+			:mod (x2 / tradition)
+			:ARG1 (x5 / maize)
+			:ARG2 (x8 / country)
+			:ARG1 (x12 / and
+				:op4 (x10 / country
+					:name (n2 / name
+						:op1 "South"
+						:op2 "Africa"))
+				:op3 (x13 / country
+					:name (n3 / name
+						:op1 "Zimbabwe"))))))
+
+# ::id 17
+# ::snt Compensatory funding will be available from the International Monetary Fund, but when this and other aid commitments are taken into account there is certain to be an unfilled gap in the region, which for Zimbabwe will mean diverting other aid funds and export earnings to pay for food
+(x12 / contrast-01
+	:ARG1 (x5 / available
+		:domain (x2 / fund-01
+			:ARG1-of (x1 / compensatory))
+		:domain (x20 / take-01
+			:ARG1 (x15 / and
+				:op1 (x8 / organization
+					:name (n / name
+						:op1 "International"
+						:op2 "Monetary"
+						:op3 "Fund"))
+				:op2 (x18 / commit-01
+					:mod (x16 / other)
+					:instrument-of (x17 / aid-01)))
+			:ARG2 (x22 / account)
+			:ARG2 (x25 / certain
+				:ARG1 (x30 / gap
+					:mod (x29 / unfilled)
+					:location (x33 / region
+						:ARG0-of (x39 / mean-01
+							:beneficiary (x37 / country
+								:name (n1 / name
+									:op1 "Zimbabwe"))
+							:ARG1 (x40 / divert-01
+								:ARG0 x37
+								:ARG1 (x44 / and
+									:op1 (x43 / fund
+										:mod (x41 / other)
+										:poss (x42 / aid-01))
+									:op2 (x46 / earn-01
+										:ARG1 (x45 / export-01))
+									:op1 (x48 / pay-01
+										:ARG3 (x50 / food)))))))))))
+
+# ::id 18
+# ::snt Transport poses an even more formidable challenge than financing
+(x2 / pose-02
+	:ARG0 (x1 / transport-01)
+	:ARG1 (x7 / challenge-01
+		:mod (x6 / formidable
+			:mod (x4 / even)
+			:degree (x5 / more))
+		:ARG1 (x9 / finance-01)))
+
+# ::id 19
+# ::snt The entire southern African region will need an estimated 10m tonnes of food imports this year
+(x7 / need-01
+	:ARG0 (x5 / region
+		:mod (x2 / entire
+			:mod (x3 / southern))
+		:null_edge (x4 / null_tag))
+	:ARG1 (x14 / import-01
+		:quant (x11 / volume-quantity
+			:unit (t / tonne)
+			:ARG1-of (x9 / estimate-01)
+			:time (x16 / year
+				:mod (x15 / this)))
+		:ARG1 (x13 / food)))
+
+# ::id 20
+# ::snt Zimbabwe's needs are put at about 2m tonnes of maize and 500,000 tonnes of wheat, sugar and other products, while Malawi will need at least 1m tonnes and Zambia more than 800,000 tonnes
+(x5 / put-01
+	:ARG1 (x3 / need-01
+		:ARG1 (x1 / country
+			:name (n / name
+				:op1 "Zimbabwe")))
+	:ARG1 (x31 / and
+		:location (x12 / and
+			:op1 (x11 / maize)
+			:op2 (x19 / and
+				:op2 (x14 / volume-quantity
+					:unit (t2 / tonne)
+					:quant (x13 / 500,000))
+				:op1 (x16 / wheat)
+				:op2 (x18 / sugar-cane)
+				:op2 (x21 / product
+					:mod (x20 / other))
+				:op1 (xap0 / multiple
+					:op1 (x9 / mass-quantity
+						:unit (t3 / tonne)
+						:quant (x7 / about
+							:op1 (x8 / 2m))))))
+		:op1 (x26 / need-01
+			:ARG0 (x24 / country
+				:name (n1 / name
+					:op1 "Malawi"))
+			:ARG1 (x30 / volume-quantity
+				:unit (t1 / tonne)
+				:quant (x29 / 1m))
+			:ARG0 (x32 / country
+				:name (n2 / name
+					:op1 "Zambia")))
+		:op2 (x36 / volume-quantity
+			:unit (t / tonne)
+			:quant (x33 / more-than
+				:op1 (x35 / 800,000)))))
+
+# ::id 21
+# ::snt The port of Beira in Mozambique is expected to handle a minimum of 600,000 tonnes of this traffic, while the Zambians expect to bring in some of their requirements from the Tanzanian port of Dar es Salaam
+(x8 / expect-01
+	:ARG1 (x10 / handle-01
+		:ARG0 (x2 / port
+			:poss (x4 / country
+				:name (n1 / name
+					:op1 "Beira"))
+			:location (x6 / country
+				:name (n2 / name
+					:op1 "Mozambique")))
+		:ARG1 (x12 / minimum
+			:mod (x18 / traffic
+				:mod (x17 / this)
+				:duration (xap0 / multiple
+					:op1 (x15 / mass-quantity
+						:unit (t / tonne)
+						:quant (x14 / 600,000))))))
+	:condition (x23 / expect-01
+		:ARG0 (x22 / newspaper
+			:name (n / name
+				:op1 "Zambians"))
+		:ARG1 (x25 / bring-01
+			:ARG1 (x27 / some
+				:null_edge (x28 / include-91
+					:ARG2 (x30 / thing
+						:ARG1-of (r / require-01))))
+			:ARG2 (x34 / port
+				:mod (x33 / country
+					:name (n3 / name
+						:op1 "Tanzanian"))
+				:name (x36 / name
+					:op1 "Dar"
+					:op2 "es"
+					:op3 "Salaam")))))
+
+# ::id 22
+# ::snt But the main burden will fall on South Africa, which has dedicated the ports of Cape Town, Port Elizabeth and East London to regional food imports
+(x1 / contrast-01
+	:ARG2 (x6 / fall-01
+		:ARG1 (x4 / burden-01
+			:mod (x3 / main))
+		:ARG1 (x8 / country
+			:name (n / name
+				:op1 "South"
+				:op2 "Africa")
+			:ARG1-of (x13 / dedicate-01
+				:ARG1 (x15 / port
+					:poss (x22 / and
+						:op1 (x18 / country
+							:name (n1 / name
+								:op1 "Town")
+							:null_edge (x17 / country
+								:name (n4 / name
+									:op1 "Cape")))
+						:op2 (x21 / country
+							:name (n2 / name
+								:op1 "Elizabeth"))
+						:op2 (x24 / city
+							:name (n3 / name
+								:op1 "London"))
+						:op1 (x28 / import-01
+							:ARG1 (x27 / food
+								:mod (x26 / region)))))))))
+
+# ::id 23
+# ::snt Initially, Spoornet, the South African railways, will run two liner trains daily, each carrying 700 tonnes of food, though the frequency will increase later
+(x11 / run-01
+	:time (x1 / initial)
+	:ARG0 (x3 / organization
+		:name (n / name
+			:op1 "Spoornet")
+		:null_edge (x8 / railway
+			:mod (x6 / country
+				:name (n1 / name
+					:op1 "South"
+					:op2 "African"))))
+	:ARG1 (x14 / train
+		:quant 2
+		:mod (x13 / liner)
+		:null_edge (x17 / each
+			:ARG0-of (x18 / carry-01
+				:ARG1 (x22 / food
+					:quant (x20 / volume-quantity
+						:unit (t / tonne)
+						:quant 700)))))
+	:purpose (x28 / increase-01
+		:ARG1 (x26 / frequency)
+		:time (x29 / late)))
+
+# ::id 24
+# ::snt Zimbabwe's authorities will have to grapple with the problems either of running the trains through to the main distribution centres, such as Harare and Bulawayo, or transferring the maize to the Zimbabwe rail and road systems at the Beit Bridge border
+(x7 / grapple
+	:ARG0 (x3 / authority
+		:mod (x1 / country
+			:name (n / name
+				:op1 "Zimbabwe")))
+	:ARG1 (x10 / problem
+		:topic (x29 / or
+			:op1 (x13 / run-01
+				:ARG1 (x15 / train)
+				:ARG2 (x21 / centre
+					:mod (x19 / main)
+					:ARG1-of (x20 / distribute-01)
+					:example (x26 / and
+						:op1 (x25 / country
+							:name (n1 / name
+								:op1 "Harare"))
+						:op2 (x27 / country
+							:name (n2 / name
+								:op1 "Bulawayo")))))
+			:op2 (x30 / transfer-01
+				:ARG1 (x32 / maize)
+				:ARG1 (x37 / and
+					:op1 (x36 / rail
+						:mod (x35 / country
+							:name (n3 / name
+								:op1 "Zimbabwe"))
+						:location (x44 / border-01
+							:ARG2 (x42 / country
+								:name (n4 / name
+									:op1 "Beit"))
+							:ARG2 (x43 / country
+								:name (n5 / name
+									:op1 "Bridge"))))
+					:op2 (x39 / system
+						:mod (x38 / road)))))))
+
+# ::id 25
+# ::snt While transport industry officials expect Spoornet to cope, there are doubts as to the capacity of the regional systems in Malawi, Mozambique, Zambia and, to a lesser degree, Zimbabwe
+(xap1 / multi-sentence
+	:snt1 (x12 / doubt-01
+		:condition (x5 / expect-01
+			:ARG1 (x8 / cope-01
+				:ARG0 (x6 / organization
+					:name (n / name
+						:op1 "Spoornet")))
+			:ARG0 (xap0 / person
+				:ARG0-of (x4 / have-org-role-91
+					:ARG2 (o / official)
+					:ARG1 (x2 / transport-01)
+					:ARG1 (x3 / industry))))
+		:ARG1 (x16 / capacity
+			:poss (x20 / system
+				:mod (x19 / region)
+				:example (x27 / and
+					:op2 (x24 / country
+						:name (n1 / name
+							:op1 "Mozambique"))
+					:op1 (x26 / country
+						:name (n2 / name
+							:op1 "Zambia")
+						:mod (x22 / country
+							:name (n3 / name
+								:op1 "Malawi"))
+						:mod (x31 / less)))))))
+
+# ::id 26
+# ::snt 
+(x25 / impact-01
+	:ARG1 (x5 / capacity
+		:poss (x9 / system
+			:mod (x8 / region)
+			:example (x16 / and
+				:op2 (x13 / country
+					:name (n1 / name
+						:op1 "Mozambique"))
+				:op1 (x15 / country
+					:name (n2 / name
+						:op1 "Zambia")
+					:mod (x11 / country
+						:name (n3 / name
+							:op1 "Malawi"))
+					:mod (x20 / less)))))
+	:manner (x24 / direct)
+	:ARG1 (x27 / agriculture)
+	:ARG0 (x30 / drought)
+	:ARG1 (x34 / consequence
+		:beneficiary (x38 / economy
+			:mod (x37 / country
+				:name (n / name
+					:op1 "Zimbabwe")))))
+
+# ::id 27
+# ::snt The reduced water flow through the Kafue Gorge in neighbouring Zambia has forced Lusaka to suspend electricity exports to Zimbabwe, which next month will impose a 20 per cent electric power cut
+(x / xconcept
+	:x (x4 / name
+		:op1 "flow"
+		:ARG1-of (x2 / reduce-01)
+		:mod (x3 / water)
+		:location (x8 / country
+			:name (n / name
+				:op1 "Gorge")
+			:location (x7 / country
+				:name (n2 / name
+					:op1 "Kafue"))
+			:location (x10 / neighbour
+				:part-of (x11 / country
+					:name (n3 / name
+						:op1 "Zambia")))))
+	:x (x13 / force-01
+		:ARG1 (x14 / country
+			:name (n1 / name
+				:op1 "Lusaka"))
+		:ARG2 (x16 / suspend-01
+			:ARG0 x4
+			:ARG0 x14
+			:ARG1 (x18 / export-01
+				:ARG1 (x17 / electricity)
+				:ARG2 (x20 / country
+					:name (n4 / name
+						:op1 "Zimbabwe")
+					:ARG0-of (x26 / impose-01
+						:time (x24 / month
+							:mod (x23 / next))
+						:ARG1 (x30 / monetary-quantity
+							:unit (c / cent)
+							:quant 20
+							:time-of (x33 / cut-02
+								:ARG1 (x32 / power
+									:mod (x31 / electric))))))))))
+
+# ::id 28
+# ::snt This will have serious repercussions on mining and manufacturing, with mining sources warning that output and exports could fall by as a much as a fifth
+(x3 / have-03
+	:ARG0 (x1 / this)
+	:ARG1 (x5 / repercussion
+		:mod (x4 / serious)
+		:topic (x8 / and
+			:op1 (x7 / mine-01)
+			:op2 (x9 / manufacture-01)
+			:op1 (x14 / warn-01
+				:ARG0 (x13 / source
+					:ARG0-of (x12 / mine-01))
+				:ARG1 (x19 / possible
+					:domain (x20 / fall-01
+						:ARG1 (x17 / and
+							:op1 (x16 / output)
+							:op2 (x18 / export-01))
+						:ARG4 (x24 / much)))))))
+
+# ::id 29
+# ::snt Some mines are also in difficulty because of the water situation, while mineral exports could be jeopardised by transport congestion
+(xap0 / be-located-at-91
+	:ARG1 (x2 / mine
+		:quant (x1 / some))
+	:ARG2 (x6 / difficult
+		:mod (x4 / also))
+	:ARG1-of (x7 / cause-01
+		:ARG0 (x11 / situation
+			:mod (x10 / water)))
+	:snt3 (x16 / possible
+		:domain (x18 / jeopardise
+			:ARG1 (x15 / export-01
+				:ARG1 (x14 / mineral))
+			:ARG1 (x21 / congest-01
+				:mod (x20 / transport-01)))))
+
+# ::id 30
+# ::snt The country's textile and clothing industry - the main exporter of manufactured goods - has warned of production cutbacks and lay-offs unless it is allowed to import cotton this year
+(x17 / warn-01
+	:ARG0 (x5 / and
+		:op1 (x4 / textile
+			:poss (x2 / country)
+			:ARG0-of (x11 / export-01
+				:mod (x10 / main)
+				:ARG1 (x14 / good
+					:ARG1-of (x13 / manufacture-01))))
+		:op2 (x7 / industry
+			:mod (x6 / clothe-01)))
+	:ARG0 (x21 / and
+		:op1 (x20 / cutback
+			:mod (x19 / produce-01))
+		:op2 (x22 / lay-off))
+	:ARG2 (x26 / allow-01
+		:ARG1 (x28 / import-01
+			:ARG1 (x29 / cotton-00)
+			:time (x31 / year
+				:mod (x30 / this)))))
+
+# ::id 31
+# ::snt The banks, already under pressure to contain lending as part of the government's on-off credit squeeze, will be forced to carry farmers ' overdrafts through until the 1993 harvest
+(x22 / force-01
+	:ARG2 (x6 / pressure-01
+		:time (x4 / already)
+		:ARG2 (x8 / contain-00
+			:ARG1 (x9 / lending
+				:ARG3-of (x18 / squeeze-01
+					:ARG0 (x14 / government-organization
+						:ARG0-of (g / govern-01))
+					:mod (x16 / on-off)
+					:mod (x17 / credit-02)))))
+	:ARG1 (x32 / harvest-01
+		:ARG1 (x27 / overdraft
+			:poss (x25 / person
+				:ARG0-of (f / farm-01)))
+		:time (x31 / date-entity
+			:year 1993)))
+
+# ::id 32
+# ::snt Next year's crop and livestock production will remain below average - even if good rains fall - as early plantings will be reduced because of a lack of irrigation
+(x9 / remain-01
+	:ARG1 (x5 / and
+		:op1 (x4 / crop
+			:time (x2 / year
+				:mod (x1 / next)))
+		:op2 (x7 / produce-01
+			:ARG1 (x6 / livestock)))
+	:ARG3 (x11 / average)
+	:concession (x13 / even
+		:op1 (x17 / fall-01
+			:ARG1 (x16 / rain
+				:mod (x15 / good))
+			:ARG4 (x24 / reduce-01
+				:ARG1 (x21 / plant-01
+					:mod (x20 / early)))
+			:ARG4 (x25 / cause-01
+				:ARG0 (x28 / lack-01
+					:ARG1 (x30 / irrigation))))))
+
+# ::id 33
+# ::snt After a drought-induced surge this year caused by destocking, beef production will fall sharply as cattlemen rebuild Zimbabwe's farmers herds
+(x14 / fall-01
+	:time (x1 / after
+		:op1 (x4 / surge-01
+			:time (x6 / year
+				:mod (x5 / this))
+			:ARG1-of (x7 / cause-01
+				:ARG0 (x9 / destocking))))
+	:ARG1 (x12 / produce-01
+		:ARG1 (x11 / beef-00))
+	:manner (x15 / sharp)
+	:condition (x18 / rebuild-01
+		:ARG0 (x17 / cattleman)
+		:ARG1 (x22 / herd
+			:poss (x19 / country
+				:name (n / name
+					:op1 "Zimbabwe"))
+			:ARG0 (x21 / person
+				:ARG0-of (f / farm-01)))))
+
+# ::id 34
+# ::snt The dairy sector, like maize, was in crisis before the drought, because of the government's producer price policy, which has pushed farmers into export crops (such as tobacco -RRB-, horticulture and even game farming
+(x3 / sector
+	:mod (x2 / dairy)
+	:consist-of (x6 / maize)
+	:prep-in (x10 / crisis)
+	:time (x11 / before
+		:op1 (x13 / drought))
+	:ARG1-of (x15 / cause-01
+		:ARG0 (x22 / policy
+			:poss (x18 / government-organization
+				:ARG0-of (g / govern-01))
+			:mod (x21 / price-01
+				:ARG1 (x20 / produce-01))
+			:ARG1-of (x26 / push-01
+				:ARG1 (x27 / person
+					:ARG0-of (f / farm-01))
+				:ARG2 (x38 / and
+					:op1 (x30 / crop
+						:mod (x29 / export-01)
+						:ARG2 (x34 / tobacco)
+						:mod (x39 / even))
+					:op2 (x37 / horticulture)
+					:op1 (xap0 / and
+						:op1 (x41 / farm-01
+							:mod (x40 / game))))))))
+
+# ::id 35
+# ::snt At best, The dairy sector will take the industry until 1994-95 to regain average production levels of the late 1980s, while the economy as a whole is unlikely to recover fully from the drought of 1992 for at least two years
+(x30 / likely
+	:polarity -
+	:domain (x8 / take-01
+		:manner (x2 / good
+			:degree (m / most))
+		:ARG0 (x6 / sector
+			:mod (x5 / dairy))
+		:ARG1 (x10 / industry)
+		:null_edge (x12 / 1994-95)
+		:ARG0 (x14 / regain-01
+			:ARG1 (x17 / level
+				:mod (x15 / average-01)
+				:mod (x16 / produce-01)
+				:mod (xap0 / date-entity
+					:time (x21 / date-entity
+						:mod (x20 / late))))))
+	:domain (x32 / recover-02
+		:ARG0 (x25 / economy
+			:mod (x28 / whole))
+		:extent (x33 / full)
+		:ARG2 (x36 / drought
+			:null_edge (x38 / date-entity
+				:year 1992)
+			:duration (x43 / temporal-quantity
+				:unit (y / year)
+				:quant (x40 / person
+					:name (n / name
+						:op1 "at"))
+				:quant 2))))
+
