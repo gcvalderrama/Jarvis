@@ -16,7 +16,17 @@ namespace JarvisSummarization.AMR
         {            
             this.Graphs = new List<AMRGraph>(); 
         }
-        
+
+        public void LoadDummyRSTInformation()
+        {
+            foreach (var graph in this.Graphs)
+            {                
+                foreach (var node in graph.Nodes)
+                {                    
+                    node.rstweight = 1;
+                }
+            }
+        }
         public void LoadRSTInformation(RST.RSTDocument Document)
         {            
             foreach (var graph in this.Graphs)

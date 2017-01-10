@@ -42,31 +42,7 @@ namespace JarvisSummarization.CG
                         item.AddSemanticRole(rel.conceptualrole); 
                     }
                 }
-            }
-            foreach (var node in graph.Nodes.Where(c=>c.semanticroles.Contains("verb")))
-            {
-                var currentPath = System.IO.Path.Combine(this.propbankPath, node.nosuffix) + ".xml";
-                if (System.IO.File.Exists(currentPath))
-                {
-                    var str = System.IO.File.ReadAllText(currentPath);
-                    var propbankelements = XElement.Parse(str);
-                    //00 scenarios
-                    var index = int.Parse(node.text.Replace(node.nosuffix + "-", "")) - 1;
-                    if (index < 0)
-                    {
-                        continue;
-                    }
-                    var propbankelement = (from c in propbankelements.Elements("predicate").Elements("roleset")
-                                           select c).ElementAt(index);
-
-                    var roleelement = (from c in propbankelement.Elements("roles").Elements("role")
-                                       where c.Attribute("n").Value == "0"
-                                       select c).FirstOrDefault();
-
-                    if (roleelement == null)
-                        node.IsPatientVerb = true;
-                }
-            }                  
+            }                    
         }
     }
 }

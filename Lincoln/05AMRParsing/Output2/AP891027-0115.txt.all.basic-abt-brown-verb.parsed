@@ -1,991 +1,1941 @@
-# ::id 1
-# ::snt Terry Anderson spent a fifth birthday as a hostage today, a grim milestone in his captivity
-(x3 / spend-02
-	:ARG0 (x1 / newspaper
-		:name (n / name
-			:op1 "Terry"
-			:op2 "Anderson"))
-	:ARG1 (x6 / birthday)
-	:time (x10 / today
-		:mod (x9 / hostage)
-		:null_edge (x14 / milestone
-			:mod (x13 / grim)
-			:location (x17 / captivity))))
-
-# ::id 2
-# ::snt Terry Anderson relatives and friends marked the event with a flood of messages and with a Mass in Washington
-(x6 / mark-01
-	:ARG0 (x4 / and
-		:op1 (x3 / relative
-			:poss (x1 / person
-				:name (n / name
-					:op1 "Terry"))
-			:poss (x2 / person
-				:name (n1 / name
-					:op1 "Anderson")))
-		:op2 (x5 / friend
-			:quant x2))
-	:ARG1 (x8 / event)
-	:ARG1 (x11 / flood-01
-		:ARG2 (x13 / message)
-		:ARG2 (x17 / mass
-			:location (x19 / city
-				:name (n2 / name
-					:op1 "Washington")))))
-
-# ::id 3
-# ::snt Radio reports said Lebanon's three television stations would screen a birthday message from Terry Anderson 4-year-old daughter, Sulome
-(x3 / say-01
-	:ARG0 (x2 / report-01
-		:mod (x1 / radio))
-	:ARG1 (x10 / screen-01
-		:ARG0 (x8 / station
-			:mod (x4 / country
-				:name (n / name
-					:op1 "Lebanon"))
-			:quant 3
-			:mod (x7 / television))
-		:ARG1 (x13 / message-01
-			:ARG1 (x12 / birthday))
-		:source (x18 / daughter
-			:name (x15 / name
-				:op1 "Terry"
-				:op2 "Anderson")
-			:mod (x17 / person
-				:name (n1 / name
-					:op1 "4-year-old")))))
-
-# ::id 4
-# ::snt The daily newspapers An-Nahar and As-Safir and the French-language L'Orient-Le Jour published English texts of letters to Anderson, the chief Middle East correspondent of The Associated Press who was abducted March 16, 1985
-(x12 / publish-01
-	:ARG0 (x3 / newspaper)
-	:ARG0 (x5 / and
-		:op2 (x6 / as-safir)
-		:op2 (x7 / and
-			:op1 (x4 / an-nahar)
-			:op2 (x9 / organization
-				:name (n / name
-					:op1 "French-language"
-					:op2 "L'Orient-Le"
-					:op3 "Jour"))))
-	:ARG1 (x14 / text
-		:name (x13 / name
-			:op1 "English")
-		:mod (x16 / letter
-			:ARG1 (x18 / person
-				:name (n1 / name
-					:op1 "Anderson")
-				:null_edge (x24 / have-org-role-91
-					:ARG2 (c / correspondent)
-					:mod (x21 / have-org-role-91
-						:ARG2 (c1 / chief))
-					:ARG1 (x28 / press
-						:null_edge (x26 / null_tag)
-						:null_edge (x27 / null_tag))
-					:ARG1 (x31 / abducted
-						:time (x32 / event
-							:name (n2 / name
-								:op1 "March"
-								:op2 "16"
-								:op3 ","
-								:op4 "1985"))))))))
-
-# ::id 5
-# ::snt An-Nahar sister, Peggy Say, wrote, " In honor of your birthday on Friday, An-Nahar and As-Safir will be in Washington with other hostage families to mark another sad year in which you have been denied your freedom .
-(x7 / write-01
-	:ARG1 (x2 / sister
-		:mod (x1 / an-nahar)
-		:name (x4 / name
-			:op1 "Peggy"
-			:op2 "Say"))
-	:manner (x11 / honor
-		:ARG1 (x14 / birthday
-			:ARG1 (x30 / mark-01
-				:ARG1 (x19 / and
-					:op1 (x18 / an-nahar)
-					:op2 (x20 / as-safir))
-				:location (x24 / city
-					:name (n / name
-						:op1 "Washington"))
-				:ARG1 (x28 / family
-					:mod (x26 / other)
-					:mod (x27 / hostage))
-				:ARG1 (x33 / year
-					:mod (x31 / another)
-					:mod (x32 / sad)
-					:ARG1-of (x39 / deny-01
-						:ARG1 (x36 / you)
-						:ARG1 (x41 / free-41)))
-				:time (xap0 / date-entity
-					:weekday (x16 / friday))))))
-
-# ::id 6
-# ::snt The Journalists ' Committee to Free Terry Anderson, made up of colleagues from all over the United States, wrote : " Please believe that not a day passes when colleagues do not think of you and pray for you .
-(x21 / write-01
-	:ARG0 (x2 / newspaper
-		:name (n / name
-			:op1 "Journalists"
-			:op2 "'"
-			:op3 "Committee"
-			:op4 "to"
-			:op5 "Free"
-			:op6 "Terry"
-			:op7 "Anderson")
-		:mod (x6 / country
-			:name (n1 / name
-				:op1 "Free"))
-		:poss (x13 / colleague
-			:null_edge (x18 / country
-				:name (n2 / name
-					:op1 "United"
-					:op2 "States"))))
-	:ARG1 (x25 / believe-01
-		:ARG1 (x30 / pass-03
-			:ARG1 (x29 / day)
-			:ARG1 (x38 / and
-				:op1 (x35 / think-01
-					:ARG0 (x32 / colleague)
-					:ARG1 (x36 / include-91
-						:ARG2 (x37 / you)))
-				:op2 (x39 / pray-01
-					:ARG0 x32
-					:ARG0 x36
-					:beneficiary (x41 / you))))))
-
-# ::id 7
-# ::snt The Foreign Correspondents Club of Japan said The Foreign Correspondents Club of Japan was sending a 33-foot birthday scroll to Anderson signed by 59 journalists and former colleagues in Tokyo
-(x7 / say-01
-	:ARG0 (x2 / government-organization
-		:name (n / name
-			:op1 "Foreign"
-			:op2 "Correspondents"
-			:op3 "Club")
-		:mod (x6 / country
-			:name (n1 / name
-				:op1 "Japan")))
-	:ARG1 (x15 / send-01
-		:ARG0 (x11 / club
-			:null_edge (x9 / person
-				:mod (f / foreign))
-			:mod (x10 / correspondents)
-			:ARG1 (x13 / country
-				:name (n3 / name
-					:op1 "Japan")))
-		:ARG1 (x19 / scroll
-			:mod (x17 / 33-foot)
-			:mod (x18 / birthday))
-		:ARG2 (x21 / person
-			:name (n2 / name
-				:op1 "Anderson")
-			:ARG1-of (x22 / sign-02
-				:ARG0 (x26 / and
-					:op1 (x25 / journalist
-						:quant 59)
-					:op2 (x28 / colleague
-						:mod (x27 / former)
-						:location (x30 / city
-							:name (n4 / name
-								:op1 "Tokyo"))))))))
-
-# ::id 8
-# ::snt Anderson was a member of the club during a working assignment in Japan 1979-1981
-(x4 / have-org-role-91
-	:ARG2 (m / member)
-	:ARG0 (x1 / person
-		:name (n / name
-			:op1 "Anderson"))
-	:ARG1 (x7 / club)
-	:time (x11 / thing
-		:ARG1-of (a / assign-01)
-		:time (x10 / work-01)
-		:location (x13 / country
-			:name (n1 / name
-				:op1 "Japan"))
-		:time (x14 / date-entity)))
-
-# ::id 9
-# ::snt Prominent journalists, along with representatives of the State Department and the embassies of Lebanon, Algeria and Syria, attended a Mass in Georgetown University's Dahlgren Chapel, where Mrs. Say said such ceremonies ensure Mrs. brother will not be forgotten
-(x21 / attend-01
-	:ARG0 (x2 / journalist
-		:mod (x1 / prominent))
-	:ARG0 (x6 / person
-		:ARG0-of (r / represent-01)
-		:ARG1 (x11 / and
-			:op1 (x10 / null_tag
-				:null_edge (x9 / null_tag))
-			:op2 (x13 / embassy
-				:consist-of (x18 / and
-					:op1 (x15 / country
-						:name (n2 / name
-							:op1 "Lebanon"))
-					:op2 (x17 / country
-						:name (n3 / name
-							:op1 "Algeria"))
-					:op3 (x19 / country
-						:name (n4 / name
-							:op1 "Syria"))))
-			:op2 (x34 / say-01
-				:ARG0 (x25 / government-organization
-					:name (n / name
-						:op1 "Georgetown"
-						:op2 "University"))
-				:location (x28 / country
-					:name (n1 / name
-						:op1 "Dahlgren"))
-				:null_edge (x33 / null_tag
-					:ARG0-of (x32 / mrs.))
-				:ARG1 (x37 / ensure-01
-					:ARG0 (x36 / ceremony
-						:mod (x35 / such))
-					:ARG1 (x43 / forget-01
-						:ARG1 (x39 / brother
-							:mod (x38 / mrs.))))))))
-
-# ::id 10
-# ::snt Gunmen seized the 42-year-old Anderson in Moslem west Beirut after a game of tennis that had been a brief respite from Free Terry Anderson on Lebanon's civil war
-(x2 / seize-01
-	:ARG0 (x1 / gunman)
-	:ARG1 (x5 / person
-		:name (n / name
-			:op1 "Anderson")
-		:null_edge (x4 / person
-			:name (n2 / name
-				:op1 "42-year-old")))
-	:location (x9 / city
-		:name (n1 / name
-			:op1 "Beirut")
-		:mod (x8 / world-region
-			:name (n3 / name
-				:op1 "west")
-			:mod (x7 / country
-				:name (n4 / name
-					:op1 "Moslem"))))
-	:time (x10 / after
-		:op1 (x12 / game
-			:ARG1 (x14 / tennis)
-			:mod (x20 / respite
-				:mod (x19 / brief)
-				:name (x23 / name
-					:op1 "Terry"
-					:op2 "Anderson"
-					:ARG0-of (x22 / free)
-					:ARG0-of (x29 / war
-						:location (x26 / country
-							:name (n5 / name
-								:op1 "Lebanon"))
-						:mod (x28 / civil)))))))
-
-# ::id 11
-# ::snt Free Terry Anderson has not held Sulome, born three months after the morning Free Terry Anderson was kidnapped
-(x6 / hold-04
-	:ARG0 (x2 / newspaper
-		:name (n / name
-			:op1 "Terry"
-			:op2 "Anderson")
-		:ARG0-of (x1 / free))
-	:ARG1 (x7 / sulome
-		:ARG1 (x9 / bear-02
-			:time (x12 / after
-				:op1 (x11 / temporal-quantity
-					:unit (m / month)
-					:quant 3)
-				:op1 (x19 / kidnap-01
-					:ARG1 (x16 / name
-						:op1 "Terry"
-						:op2 "Anderson"
-						:dayperiod (x14 / morning)
-						:ARG0-of (x15 / free)))))))
-
-# ::id 12
-# ::snt Free Terry Anderson probably does not know that Free Terry Anderson father and brother died of cancer
-(x4 / probable
-	:domain (x7 / know-01
-		:ARG0 (x2 / newspaper
-			:name (n / name
-				:op1 "Terry"
-				:op2 "Anderson")
-			:ARG0-of (x1 / free))
-		:ARG1 (x15 / die-01
-			:ARG1 (x13 / and
-				:op1 (x12 / father
-					:name (x10 / name
-						:op1 "Terry"
-						:op2 "Anderson"
-						:ARG0-of (x9 / free)))
-				:op2 (x14 / brother))
-			:ARG1 (x17 / cancer))))
-
-# ::id 13
-# ::snt Anderson's fate now appears to be caught up in a power struggle between Shiite Moslem radicals and moderates
-(x5 / appear-02
-	:ARG1 (x3 / fate
-		:poss (x1 / person
-			:name (n / name
-				:op1 "Anderson")))
-	:time (x4 / now)
-	:ARG1 (x8 / catch-02
-		:ARG2 (x13 / struggle-01
-			:mod (x12 / power)
-			:ARG1 (x18 / and
-				:op1 (x17 / radical
-					:mod (x15 / country
-						:name (n1 / name
-							:op1 "Shiite"))
-					:mod (x16 / country
-						:name (n2 / name
-							:op1 "Moslem")))
-				:op2 (x19 / moderate)))))
-
-# ::id 14
-# ::snt Free Terry Anderson was kidnapped by Islamic Jihad, a group loyal to Iran whose name means Islamic Holy War
-(x5 / kidnap-01
-	:ARG1 (x2 / name
-		:op1 "Terry"
-		:op2 "Anderson"
-		:ARG0-of (x1 / free))
-	:ARG0 (x8 / war
-		:name (n / name
-			:op1 "Jihad")
-		:null_edge (x7 / null_tag))
-	:ARG1 (x11 / group
-		:mod (x12 / loyal
-			:ARG2 (x14 / country
-				:name (n1 / name
-					:op1 "Iran")
-				:ARG0-of (x17 / mean-01
-					:ARG0 (x16 / name)
-					:ARG0 (x19 / have-org-role-91
-						:ARG1 (c / country
-							:name (n2 / name
-								:op1 "Holy"
-								:op2 "War"))
-						:mod (x18 / religious-group
-							:name (n3 / name
-								:op1 "Islamic"))))))))
-
-# ::id 15
-# ::snt Free Terry Anderson abductors demand the release of 15 men imprisoned in Kuwait for bombing the U.S. and French embassies in 1983
-(x5 / demand-01
-	:ARG0 (x4 / abductor
-		:mod (x1 / free)
-		:mod (x2 / person
-			:name (n / name
-				:op1 "Terry"))
-		:mod (x3 / person
-			:name (n1 / name
-				:op1 "Anderson")))
-	:ARG1 (x7 / release-01
-		:ARG1 (x10 / man
-			:quant 15
-			:ARG1-of (x11 / imprison-01
-				:location (x13 / country
-					:name (n2 / name
-						:op1 "Kuwait"))
-				:ARG3 (x15 / bomb-01
-					:ARG1 (x18 / and
-						:op1 (x17 / country
-							:name (n3 / name
-								:op1 "U.S."))
-						:op2 (x19 / country
-							:name (n4 / name
-								:op1 "France"))
-						:op1 (x20 / embassy))
-					:time (x22 / date-entity
-						:year 1983))))))
-
-# ::id 16
-# ::snt Islamic Jihad also holds Thomas Sutherland, 57, an American who was acting dean of agriculture at American University of Beirut
-(x4 / hold-01
-	:ARG0 (x2 / jihad
-		:null_edge (x1 / null_tag))
-	:mod (x3 / also)
-	:ARG1 (x5 / name
-		:op1 "Thomas"
-		:op2 "Sutherland"
-		:quant 57
-		:mod (x11 / country
-			:name (n / name
-				:op1 "American")
-			:ARG0-of (x14 / act-01
-				:ARG1 (x15 / dean
-					:ARG1 (x17 / agriculture))
-				:null_edge (x20 / university
-					:null_edge (x22 / city
-						:name (n1 / name
-							:op1 "Beirut")))))))
-
-# ::id 17
-# ::snt Sutherland was kidnapped June 9, 1985
-(x3 / kidnap-01
-	:ARG1 (x1 / person
-		:name (n / name
-			:op1 "Sutherland"))
-	:ARG1 (x4 / event
-		:name (n1 / name
-			:op1 "June"
-			:op2 "9"
-			:op3 ","
-			:op4 "1985")))
-
-# ::id 18
-# ::snt Police say Lebanese authorities have no information on the whereabouts of Anderson or the 15 other Western hostages in Lebanon
-(x2 / say-01
-	:ARG0 (x1 / police)
-	:ARG1 (x5 / have-03
-		:ARG0 (x4 / authority
-			:mod (x3 / country
-				:name (n / name
-					:op1 "Lebanese")))
-		:polarity -
-		:ARG1 (x7 / information
-			:topic (x10 / whereabouts
-				:ARG1 (x13 / or
-					:op1 (x12 / person
-						:name (n1 / name
-							:op1 "Anderson"))
-					:op2 (x18 / hostage
-						:quant 15
-						:mod (x16 / other)
-						:location (x17 / world-region
-							:name (n2 / name
-								:op1 "Western"))
-						:location (x20 / country
-							:name (n3 / name
-								:op1 "Lebanon"))))))))
-
-# ::id 19
-# ::snt Four days ago, Islamic Jihad made its first statement in a year, reviving an old offer to trade Anderson and Sutherland for Anderson and Sutherland comrades jailed in Kuwait
-(x10 / state-01
-	:time (x1 / date-entity)
-	:ARG0 (x6 / war
-		:name (n / name
-			:op1 "Jihad")
-		:null_edge (x5 / null_tag))
-	:time (x13 / year)
-	:ARG0-of (x15 / revive-01
-		:ARG1 (x18 / offer-01
-			:mod (x17 / old)
-			:ARG1 (x20 / trade-01
-				:ARG1 (x22 / and
-					:op1 (x21 / person
-						:name (n1 / name
-							:op1 "Anderson"))
-					:op2 (x23 / person
-						:name (n2 / name
-							:op1 "Sutherland")))
-				:ARG2 (x26 / and
-					:op1 (x25 / person
-						:name (n3 / name
-							:op1 "Anderson"))
-					:op2 (x27 / person
-						:name (n4 / name
-							:op1 "Sutherland"))
-					:op2 (x28 / comrade
-						:ARG1-of (x29 / jail-01
-							:location (x31 / country
-								:name (n5 / name
-									:op1 "Kuwait")))))))))
-
-# ::id 20
-# ::snt A copy of the statement delivered to a Western news agency in Beirut was accompanied by a photograph of Anderson similar to one released Nov. 4, 1988, after Free Terry Anderson last birthday
-(x15 / accompany-01
-	:ARG1 (x2 / thing
-		:ARG2-of (c / copy-01)
-		:ARG1 (x5 / state-01
-			:ARG1-of (x6 / deliver-01
-				:ARG2 (x11 / agency
-					:null_edge (x9 / world-region
-						:name (n3 / name
-							:op1 "Western"))
-					:mod (x10 / news))
-				:location (x13 / city
-					:name (n2 / name
-						:op1 "Beirut")))))
-	:ARG0 (x18 / photograph
-		:ARG0 (x20 / person
-			:name (n / name
-				:op1 "Anderson"))
-		:ARG1-of (x21 / resemble-01
-			:op (s / similar))
-		:ARG1-of (x24 / release-01
-			:time (x25 / event
-				:name (n1 / name
-					:op1 "Nov."
-					:op2 "4"
-					:op3 ","
-					:op4 "1988"))
-			:time (x30 / after
-				:op1 (x35 / birthday
-					:name (x32 / name
-						:op1 "Terry"
-						:op2 "Anderson"
-						:ARG0-of (x31 / free))
-					:mod (x34 / last))))))
-
-# ::id 21
-# ::snt The statement was seen as a response to a declaration Monday by President Hashemi Rafsanjani of Iran that President Hashemi Rafsanjani of Iran would use its first statement influence to free the hostages if the United States released Iranian assets worth up to $ 12 billion that have been frozen since 1979
-(x4 / see-01
-	:ARG1 (x2 / thing
-		:ARG1-of (s / state-01))
-	:ARG2-of (x7 / respond-01
-		:ARG1 (x10 / declare-02
-			:name (x14 / name
-				:op1 "Hashemi"
-				:op2 "Rafsanjani"
-				:ARG0-of (x13 / have-org-role-91
-					:ARG2 (p / president)
-					:ARG1 (x17 / country
-						:name (n / name
-							:op1 "Iran"))
-					:ARG1 (x25 / use-01
-						:ARG0 (x20 / newspaper
-							:name (n1 / name
-								:op1 "Hashemi"
-								:op2 "Rafsanjani")
-							:ARG0-of (x19 / have-org-role-91
-								:ARG2 (p1 / president)
-								:ARG1 (x23 / country
-									:name (n2 / name
-										:op1 "Iran"))))
-						:ARG1 (x29 / influence-01
-							:ARG0 (x28 / state-01))
-						:ARG2 (x31 / free-01
-							:ARG1 (x33 / hostage)
-							:time (x38 / release-01
-								:ARG0 (x36 / country
-									:name (n3 / name
-										:op1 "United"
-										:op2 "States"))
-								:ARG1 (x40 / asset
-									:ARG1-of (x50 / freeze-02
-										:time (x51 / since
-											:op1 (x52 / date-entity
-												:year 1979)))))))))
-			:time (xap0 / date-entity
-				:weekday (x11 / monday)))))
-
-# ::id 22
-# ::snt Kuwait has refused to free the prsoners, but two members of the group were released in February after completing five-year sentences
-(x3 / refuse-01
-	:ARG0 (x1 / country
-		:name (n / name
-			:op1 "Kuwait"))
-	:ARG1 (x5 / free-01
-		:ARG0 x1
-		:ARG1 (x7 / prsoner)
-		:concession-of (x16 / release-01
-			:ARG0 x1
-			:time (x18 / date-entity)
-			:time (x19 / after
-				:op1 (x20 / complete-01
-					:ARG1 (x22 / sentence-01
-						:mod (x21 / person
-							:name (n1 / name
-								:op1 "five-year")))))
-			:ARG1 (xap0 / person
-				:quant 2
-				:ARG0-of (x11 / have-org-role-91
-					:ARG2 (m / member)
-					:ARG1 (x14 / group))))))
-
-# ::id 23
-# ::snt The United States has said the United States will not negotiate with terrorists
-(x5 / say-01
-	:ARG0 (x2 / country
-		:name (n / name
-			:op1 "United"
-			:op2 "States"))
-	:ARG1 (x11 / negotiate-01
-		:ARG0 (x7 / country
-			:name (n1 / name
-				:op1 "United"
-				:op2 "States"))
-		:ARG2 (x13 / terrorist)))
-
-# ::id 24
-# ::snt Anderson and Sutherland are among eight American hostages, most believed held by pro-Iranians
-(x8 / hostage
-	:ARG1 (x2 / and
-		:op1 (x1 / person
-			:name (n1 / name
-				:op1 "Anderson"))
-		:op2 (x3 / person
-			:name (n2 / name
-				:op1 "Sutherland")))
-	:quant 8
-	:mod (x7 / country
-		:name (n / name
-			:op1 "American"))
-	:ARG1-of (x11 / believe-01
-		:ARG0 (x10 / most)
-		:ARG1 (x12 / hold-01
-			:ARG0 (x14 / organization
-				:name (n3 / name
-					:op1 "pro-Iranians")))))
-
-# ::id 25
-# ::snt Islamic Jihad issued Islamic Jihad statement as the leader of Iran's revolutionary radicals, former Interior Minister Ali Akbar Mohtashemi, was on a three-week visit to Lebanon
-(x6 / state-01
-	:ARG0 (x2 / jihad
-		:null_edge (x1 / null_tag))
-	:null_edge (x4 / null_tag)
-	:ARG0 (x5 / jihad)
-	:ARG1 (x9 / person
-		:ARG0-of (l / lead-02)
-		:ARG1 (x14 / radical
-			:poss (x11 / country
-				:name (n / name
-					:op1 "Iran"))
-			:ARG0-of (x13 / revolution))
-		:name (x19 / name
-			:op1 "Ali"
-			:op2 "Akbar"
-			:op3 "Mohtashemi"
-			:mod (x16 / former)
-			:ARG0-of (x17 / interior)
-			:ARG0-of (x18 / have-org-role-91
-				:ARG2 (m / minister)))
-		:ARG1 (x27 / visit-01
-			:duration (x26 / person
-				:name (n1 / name
-					:op1 "three-week"))
-			:ARG1 (x29 / country
-				:name (n2 / name
-					:op1 "Lebanon")))))
-
-# ::id 26
-# ::snt former Interior Minister Ali Akbar Mohtashemi met with prominent Shiites, including leading figures in Hezbollah, believed to be the umbrella group for kidnap gangs
-(x7 / meet-03
-	:ARG0 (x4 / person
-		:name (n / name
-			:op1 "Ali"
-			:op2 "Akbar"
-			:op3 "Mohtashemi")
-		:mod (x1 / former)
-		:ARG0-of (x3 / have-org-role-91
-			:ARG2 (m / minister)
-			:mod (x2 / interior)))
-	:ARG0 (x10 / publication
-		:name (n1 / name
-			:op1 "Shiites")
-		:mod (x9 / prominent))
-	:ARG1 (x14 / figure
-		:ARG2-of (x12 / include-91)
-		:ARG0-of (x13 / lead-02)
-		:location (x16 / political-party
-			:name (n2 / name
-				:op1 "Hezbollah"))
-		:ARG1-of (x18 / believe-01
-			:ARG1 (x23 / group
-				:mod (x22 / umbrella)
-				:prep-for (x26 / gang
-					:mod (x25 / kidnap-01))))))
-
-# ::id 27
-# ::snt It was not clear why Mohtashemi, Rafsanjani's main political rival, came to Lebanon
-(x4 / clear
-	:time (x14 / come-03
-		:ARG1 (x6 / person
-			:name (n / name
-				:op1 "Mohtashemi")
-			:ARG0-of (x12 / rival
-				:poss (x8 / person
-					:name (n2 / name
-						:op1 "Rafsanjani"))
-				:mod (x10 / main)
-				:mod (x11 / politics)))
-		:ARG4 (x16 / country
-			:name (n1 / name
-				:op1 "Lebanon"))))
-
-# ::id 28
-# ::snt 
-(x1 / contrast-01
-	:ARG2 (x4 / underline-01
-		:ARG0 (x3 / trip-01)
-		:ARG1 (x12 / struggle-01
-			:name (x8 / name
-				:op1 "Ali"
-				:op2 "Akbar"
-				:op3 "Mohtashemi"
-				:mod (x5 / former)
-				:ARG0-of (x6 / interior)
-				:ARG0-of (x7 / have-org-role-91
-					:ARG2 (m / minister)))
-			:mod (x11 / power)
-			:ARG1 (x14 / person
-				:name (n / name
-					:op1 "Rafsanjani")
-				:null_edge (x16 / lead-02
-					:ARG1 (x22 / pragmatist
-						:mod (x20 / moderate
-							:degree (x19 / compare-01))
-						:ARG0-of (x25 / want-01
-							:ARG1 (x27 / restore-01
-								:ARG1 (x28 / relation
-									:prep-with (x31 / world-region
-										:name (n1 / name
-											:op1 "West")))))))))))
-
-# ::id 29
-# ::snt A knowledgeable Shiite said privately the Islamic Jihad statement was " a clear indication that the hostage-holders are not under Rafsanjani's control .
-(x4 / say-01
-	:ARG0 (x3 / organization
-		:name (n / name
-			:op1 "Shiite")
-		:mod (x2 / know-01))
-	:manner (x5 / privately)
-	:ARG1 (x13 / clear
-		:domain (x9 / state-01
-			:null_edge (x7 / null_tag)
-			:ARG0 (x8 / jihad))
-		:domain (x23 / control-01
-			:ARG0 (x21 / person
-				:name (n1 / name
-					:op1 "Rafsanjani")))))
-
-# ::id 30
-# ::snt Hezbollah appears to have split into factions, with the main groups supporting either Rafsanjani or Mohtashemi
-(x2 / appear-02
-	:ARG0 (x1 / political-party
-		:name (n / name
-			:op1 "Hezbollah"))
-	:ARG1 (x5 / split-01
-		:ARG2 (x7 / faction))
-	:ARG1 (x12 / group
-		:mod (x11 / main)
-		:ARG0-of (x13 / support-01
-			:ARG1 (x16 / or
-				:op1 (x15 / person
-					:name (n1 / name
-						:op1 "Rafsanjani"))
-				:op2 (x17 / person
-					:name (n2 / name
-						:op1 "Mohtashemi"))))))
-
-# ::id 31
-# ::snt Rafsanjani dismissed Mohtashemi after Rafsanjani's election as president July 28
-(x2 / dismiss-01
-	:ARG0 (x1 / person
-		:name (n / name
-			:op1 "Rafsanjani"))
-	:ARG1 (x3 / person
-		:name (n1 / name
-			:op1 "Mohtashemi"))
-	:time (x4 / after
-		:op1 (x7 / elect-01
-			:poss (x5 / person
-				:name (n2 / name
-					:op1 "Rafsanjani"))
-			:time (x10 / date-entity
-				:ARG0-of (x9 / have-org-role-91
-					:ARG2 (p / president))))))
-
-# ::id 32
-# ::snt The former interior minister's surprise appearance in Lebanon quashed reports from Tehran that The former interior minister's was under house arrest
-(x10 / quash
-	:ARG0 (x7 / appear-01
-		:ARG0-of (x4 / have-org-role-91
-			:ARG2 (m / minister)
-			:mod (x2 / former)
-			:mod (x3 / interior))
-		:ARG0-of (x6 / surprise-01)
-		:location (x9 / country
-			:name (n / name
-				:op1 "Lebanon")))
-	:ARG1 (x11 / report-01
-		:source (x13 / city
-			:name (n1 / name
-				:op1 "Tehran"))
-		:ARG0-of (x18 / have-org-role-91
-			:ARG2 (m1 / minister)
-			:mod (x16 / former)
-			:topic (x17 / interior))
-		:time (x23 / arrest-01
-			:mod (x22 / house))))
-
-# ::id 33
-# ::snt Mohtashemi returned to Tehran on Wednesday via Damascus, Syria
-(x2 / return-01
-	:ARG1 (x1 / person
-		:name (n / name
-			:op1 "Mohtashemi"))
-	:ARG4 (x4 / city
-		:name (n1 / name
-			:op1 "Tehran"))
-	:time (x6 / wednesday
-		:null_edge (x8 / city
-			:name (n2 / name
-				:op1 "Damascus")
-			:location (x10 / country
-				:name (n3 / name
-					:op1 "Syria")))))
-
-# ::id 34
-# ::snt Since former Interior Minister Ali Akbar Mohtashemi was kidnapped, Anderson has been allowed to write a few letters to former Interior Minister Ali Akbar Mohtashemi family and occasionally to see Lebanese newspaper and television reports about relatives
-(x14 / allow-01
-	:time (x1 / since
-		:op1 (x9 / kidnap-01
-			:ARG1 (x5 / name
-				:op1 "Ali"
-				:op2 "Akbar"
-				:op3 "Mohtashemi"
-				:mod (x2 / former)
-				:ARG0-of (x3 / interior)
-				:ARG0-of (x4 / have-org-role-91
-					:ARG2 (m / minister)))))
-	:ARG1 (x11 / person
-		:name (n / name
-			:op1 "Anderson"))
-	:ARG1 (x28 / and
-		:op1 (x16 / write-01
-			:ARG1 (x19 / letter
-				:quant (x18 / few)
-				:ARG2 (x27 / family
-					:mod (x21 / former)
-					:mod (x22 / interior)
-					:poss (x23 / have-org-role-91
-						:ARG2 (m1 / minister))
-					:null_edge (x24 / null_tag)
-					:poss (x25 / person
-						:name (n1 / name
-							:op1 "Akbar"))
-					:mod (x26 / person
-						:name (n2 / name
-							:op1 "Mohtashemi")))))
-		:op2 (x31 / see-01
-			:mod (x29 / occasional)
-			:ARG1 (x34 / and
-				:op1 (x33 / newspaper
-					:mod (x32 / country
-						:name (n3 / name
-							:op1 "Lebanese"))
-					:poss (x38 / relative))
-				:op2 (x36 / report-01
-					:mod (x35 / television))))))
-
-# ::id 35
-# ::snt American and French hostages who shared former Interior Minister Ali Akbar Mohtashemi captivity and were released have told of former Interior Minister Ali Akbar Mohtashemi courage and fears, how former Interior Minister Ali Akbar Mohtashemi has defied his captors and suffered the agonies of captivity
-(x18 / tell-01
-	:ARG1 (x2 / and)
-	:ARG2 (x3 / country
-		:name (n / name
-			:op1 "France"))
-	:ARG0 (x4 / hostage
-		:null_edge (x1 / country
-			:name (n1 / name
-				:op1 "American"))
-		:ARG1-of (x6 / share-01
-			:ARG1 (x10 / name
-				:op1 "Ali"
-				:op2 "Akbar"
-				:op3 "Mohtashemi"
-				:mod (x7 / former)
-				:ARG0-of (x8 / interior)
-				:ARG0-of (x9 / have-org-role-91
-					:ARG2 (m1 / minister))
-				:ARG0-of (x13 / captivity
-					:ARG1-of (x16 / release-01)))))
-	:ARG1 (x27 / and
-		:op1 (x23 / name
-			:op1 "Ali"
-			:op2 "Akbar"
-			:op3 "Mohtashemi"
-			:mod (x20 / former)
-			:ARG0-of (x22 / have-org-role-91
-				:ARG2 (m / minister)
-				:mod (x21 / interior)))
-		:op1 (x26 / courage)
-		:op2 (x28 / fear-01))
-	:ARG1 (x41 / and
-		:op1 (x38 / defy-01
-			:ARG0 (x34 / person
-				:name (n2 / name
-					:op1 "Ali"
-					:op2 "Akbar"
-					:op3 "Mohtashemi")
-				:mod (x31 / former)
-				:ARG0-of (x32 / interior)
-				:ARG0-of (x33 / have-org-role-91
-					:ARG2 (m2 / minister)))
-			:ARG1 (x40 / captor))
-		:op2 (x42 / suffer-01
-			:ARG1 (x44 / agony
-				:ARG1 (x46 / captivity)))))
-
-# ::id 36
-# ::snt His father, Glenn, and elder brother, Glenn Jr., died of cancer in 1986
-(x13 / die-01
-	:ARG1 (x6 / and
-		:op1 (x2 / father
-			:poss (x4 / person
-				:name (n / name
-					:op1 "Glenn")))
-		:op2 (x8 / brother
-			:mod (x7 / elder)
-			:name (x10 / name
-				:op1 "Glenn"
-				:op2 "Jr.")))
-	:ARG1 (x15 / cancer)
-	:time (x17 / date-entity
-		:year 1986))
-
-# ::id 37
-# ::snt Released hostages said His father did not know of the deaths
-(x3 / say-01
-	:ARG0 (x2 / hostage
-		:ARG1-of (x1 / release-01))
-	:ARG1 (x8 / know-01
-		:ARG0 (x5 / father)))
-
-# ::id 38
-# ::snt Anderson knows Free Terry Anderson daughter, Sulome, was born June 7, 1985, but has seen Sulome only in a few seconds of film Free Terry Anderson captors allowed Free Terry Anderson to watch on Lebanese TV, according to letters from Free Terry Anderson released by the kidnappers
-(x2 / know-01
-	:ARG0 (x1 / person
-		:name (n / name
-			:op1 "Anderson"))
-	:ARG1 (x11 / bear-02
-		:ARG1 (x6 / daughter
-			:name (x4 / name
-				:op1 "Terry"
-				:op2 "Anderson"
-				:ARG0-of (x3 / free)))
-		:ARG1 (x12 / event
-			:name (n1 / name
-				:op1 "June"
-				:op2 "7"
-				:op3 ","
-				:op4 "1985"))
-		:ARG1-of (x19 / see-01
-			:null_edge (x24 / few
-				:op1 (x25 / temporal-quantity
-					:unit (s / second)
-					:mod (x27 / film
-						:mod (x21 / only)
-						:ARG0-of (x32 / allow-01
-							:ARG0 (x31 / captor
-								:mod (x28 / free)
-								:poss (x29 / person
-									:name (n2 / name
-										:op1 "Terry"))
-								:mod (x30 / person
-									:name (n3 / name
-										:op1 "Anderson")))
-							:ARG1 (x37 / watch-01
-								:ARG0 (x34 / newspaper
-									:name (n4 / name
-										:op1 "Terry"
-										:op2 "Anderson")
-									:ARG0-of (x33 / free))
-								:medium (x40 / TV
-									:mod (x39 / country
-										:name (n5 / name
-											:op1 "Lebanese"))))
-							:null_edge (x44 / letter
-								:name (x47 / name
-									:op1 "Terry"
-									:op2 "Anderson"
-									:ARG0-of (x46 / free)
-									:ARG1-of (x49 / release-01
-										:ARG0 (x52 / kidnapper)))))))))))
-
+<amr>
+<graph id="1">
+<nodes>
+<node gid="0" id="0" text="spend-02" label="x3" nosuffix="spend" isleaf="False"></node>
+<node gid="1" id="1" text="newspaper" label="x1" nosuffix="newspaper" isleaf="False"></node>
+<node gid="2" id="2" text="name" label="n" nosuffix="name" isleaf="False"></node>
+<node gid="3" id="3" text="birthday" label="x6" nosuffix="birthday" isleaf="True"></node>
+<node gid="4" id="4" text="today" label="x10" nosuffix="today" isleaf="False"></node>
+<node gid="5" id="5" text="hostage" label="x9" nosuffix="hostage" isleaf="True"></node>
+<node gid="6" id="6" text="milestone" label="x14" nosuffix="milestone" isleaf="False"></node>
+<node gid="7" id="7" text="grim" label="x13" nosuffix="grim" isleaf="True"></node>
+<node gid="8" id="8" text="captivity" label="x17" nosuffix="captivity" isleaf="True"></node>
+<node gid="9" id="9" text="Terry" label="Terry" nosuffix="Terry" isleaf="True"></node>
+<node gid="10" id="10" text="Anderson" label="Anderson" nosuffix="Anderson" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="ARG0" ></edge>
+<edge head="0" tail="3" label="ARG1" ></edge>
+<edge head="0" tail="4" label="time" ></edge>
+<edge head="1" tail="2" label="name" ></edge>
+<edge head="2" tail="9" label="op1" ></edge>
+<edge head="2" tail="10" label="op2" ></edge>
+<edge head="4" tail="5" label="mod" ></edge>
+<edge head="4" tail="6" label="null_edge" ></edge>
+<edge head="6" tail="7" label="mod" ></edge>
+<edge head="6" tail="8" label="location" ></edge>
+</edges>
+</graph>
+<graph id="2">
+<nodes>
+<node gid="11" id="0" text="mark-01" label="x6" nosuffix="mark" isleaf="False"></node>
+<node gid="12" id="1" text="and" label="x4" nosuffix="and" isleaf="False"></node>
+<node gid="13" id="2" text="relative" label="x3" nosuffix="relative" isleaf="False"></node>
+<node gid="14" id="3" text="person" label="x1" nosuffix="person" isleaf="False"></node>
+<node gid="15" id="4" text="name" label="n" nosuffix="name" isleaf="False"></node>
+<node gid="16" id="5" text="person" label="x2" nosuffix="person" isleaf="False"></node>
+<node gid="17" id="6" text="name" label="n1" nosuffix="name" isleaf="False"></node>
+<node gid="18" id="7" text="friend" label="x5" nosuffix="friend" isleaf="False"></node>
+<node gid="19" id="8" text="event" label="x8" nosuffix="event" isleaf="True"></node>
+<node gid="20" id="9" text="flood-01" label="x11" nosuffix="flood" isleaf="False"></node>
+<node gid="21" id="10" text="message" label="x13" nosuffix="message" isleaf="True"></node>
+<node gid="22" id="11" text="mass" label="x17" nosuffix="mass" isleaf="False"></node>
+<node gid="23" id="12" text="city" label="x19" nosuffix="city" isleaf="False"></node>
+<node gid="24" id="13" text="name" label="n2" nosuffix="name" isleaf="False"></node>
+<node gid="25" id="14" text="Terry" label="Terry" nosuffix="Terry" isleaf="True"></node>
+<node gid="26" id="15" text="Anderson" label="Anderson" nosuffix="Anderson" isleaf="True"></node>
+<node gid="27" id="16" text="Washington" label="Washington" nosuffix="Washington" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="ARG0" ></edge>
+<edge head="0" tail="8" label="ARG1" ></edge>
+<edge head="0" tail="9" label="ARG1" ></edge>
+<edge head="1" tail="2" label="op1" ></edge>
+<edge head="1" tail="7" label="op2" ></edge>
+<edge head="2" tail="3" label="poss" ></edge>
+<edge head="2" tail="5" label="poss" ></edge>
+<edge head="3" tail="4" label="name" ></edge>
+<edge head="4" tail="14" label="op1" ></edge>
+<edge head="5" tail="6" label="name" ></edge>
+<edge head="6" tail="15" label="op1" ></edge>
+<edge head="7" tail="5" label="quant" ></edge>
+<edge head="9" tail="10" label="ARG2" ></edge>
+<edge head="9" tail="11" label="ARG2" ></edge>
+<edge head="11" tail="12" label="location" ></edge>
+<edge head="12" tail="13" label="name" ></edge>
+<edge head="13" tail="16" label="op1" ></edge>
+</edges>
+</graph>
+<graph id="3">
+<nodes>
+<node gid="28" id="0" text="say-01" label="x3" nosuffix="say" isleaf="False"></node>
+<node gid="29" id="1" text="report-01" label="x2" nosuffix="report" isleaf="False"></node>
+<node gid="30" id="2" text="radio" label="x1" nosuffix="radio" isleaf="True"></node>
+<node gid="31" id="3" text="screen-01" label="x10" nosuffix="screen" isleaf="False"></node>
+<node gid="32" id="4" text="station" label="x8" nosuffix="station" isleaf="False"></node>
+<node gid="33" id="5" text="country" label="x4" nosuffix="country" isleaf="False"></node>
+<node gid="34" id="6" text="name" label="n" nosuffix="name" isleaf="False"></node>
+<node gid="35" id="7" text="television" label="x7" nosuffix="television" isleaf="True"></node>
+<node gid="36" id="8" text="message-01" label="x13" nosuffix="message" isleaf="False"></node>
+<node gid="37" id="9" text="birthday" label="x12" nosuffix="birthday" isleaf="True"></node>
+<node gid="38" id="10" text="daughter" label="x18" nosuffix="daughter" isleaf="False"></node>
+<node gid="39" id="11" text="name" label="x15" nosuffix="name" isleaf="False"></node>
+<node gid="40" id="12" text="person" label="x17" nosuffix="person" isleaf="False"></node>
+<node gid="41" id="13" text="name" label="n1" nosuffix="name" isleaf="False"></node>
+<node gid="42" id="14" text="3" label="3" nosuffix="3" isleaf="True"></node>
+<node gid="43" id="15" text="Lebanon" label="Lebanon" nosuffix="Lebanon" isleaf="True"></node>
+<node gid="44" id="16" text="Terry" label="Terry" nosuffix="Terry" isleaf="True"></node>
+<node gid="45" id="17" text="Anderson" label="Anderson" nosuffix="Anderson" isleaf="True"></node>
+<node gid="46" id="18" text="4-year-old" label="4-year-old" nosuffix="4" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="ARG0" ></edge>
+<edge head="0" tail="3" label="ARG1" ></edge>
+<edge head="1" tail="2" label="mod" ></edge>
+<edge head="3" tail="4" label="ARG0" ></edge>
+<edge head="3" tail="8" label="ARG1" ></edge>
+<edge head="3" tail="10" label="source" ></edge>
+<edge head="4" tail="5" label="mod" ></edge>
+<edge head="4" tail="14" label="quant" ></edge>
+<edge head="4" tail="7" label="mod" ></edge>
+<edge head="5" tail="6" label="name" ></edge>
+<edge head="6" tail="15" label="op1" ></edge>
+<edge head="8" tail="9" label="ARG1" ></edge>
+<edge head="10" tail="11" label="name" ></edge>
+<edge head="10" tail="12" label="mod" ></edge>
+<edge head="11" tail="16" label="op1" ></edge>
+<edge head="11" tail="17" label="op2" ></edge>
+<edge head="12" tail="13" label="name" ></edge>
+<edge head="13" tail="18" label="op1" ></edge>
+</edges>
+</graph>
+<graph id="4">
+<nodes>
+<node gid="47" id="0" text="publish-01" label="x12" nosuffix="publish" isleaf="False"></node>
+<node gid="48" id="1" text="newspaper" label="x3" nosuffix="newspaper" isleaf="True"></node>
+<node gid="49" id="2" text="and" label="x5" nosuffix="and" isleaf="False"></node>
+<node gid="50" id="3" text="as-safir" label="x6" nosuffix="as" isleaf="True"></node>
+<node gid="51" id="4" text="and" label="x7" nosuffix="and" isleaf="False"></node>
+<node gid="52" id="5" text="an-nahar" label="x4" nosuffix="an" isleaf="True"></node>
+<node gid="53" id="6" text="organization" label="x9" nosuffix="organization" isleaf="False"></node>
+<node gid="54" id="7" text="name" label="n" nosuffix="name" isleaf="False"></node>
+<node gid="55" id="8" text="text" label="x14" nosuffix="text" isleaf="False"></node>
+<node gid="56" id="9" text="name" label="x13" nosuffix="name" isleaf="False"></node>
+<node gid="57" id="10" text="letter" label="x16" nosuffix="letter" isleaf="False"></node>
+<node gid="58" id="11" text="person" label="x18" nosuffix="person" isleaf="False"></node>
+<node gid="59" id="12" text="name" label="n1" nosuffix="name" isleaf="False"></node>
+<node gid="60" id="13" text="have-org-role-91" label="x24" nosuffix="have" isleaf="False"></node>
+<node gid="61" id="14" text="correspondent" label="c" nosuffix="correspondent" isleaf="True"></node>
+<node gid="62" id="15" text="have-org-role-91" label="x21" nosuffix="have" isleaf="False"></node>
+<node gid="63" id="16" text="chief" label="c1" nosuffix="chief" isleaf="True"></node>
+<node gid="64" id="17" text="press" label="x28" nosuffix="press" isleaf="False"></node>
+<node gid="65" id="18" text="null_tag" label="x26" nosuffix="null_tag" isleaf="True"></node>
+<node gid="66" id="19" text="null_tag" label="x27" nosuffix="null_tag" isleaf="True"></node>
+<node gid="67" id="20" text="abducted" label="x31" nosuffix="abducted" isleaf="False"></node>
+<node gid="68" id="21" text="event" label="x32" nosuffix="event" isleaf="False"></node>
+<node gid="69" id="22" text="name" label="n2" nosuffix="name" isleaf="False"></node>
+<node gid="70" id="23" text="French-language" label="French-language" nosuffix="French" isleaf="True"></node>
+<node gid="71" id="24" text="L'Orient-Le" label="L'Orient-Le" nosuffix="L'Orient" isleaf="True"></node>
+<node gid="72" id="25" text="Jour" label="Jour" nosuffix="Jour" isleaf="True"></node>
+<node gid="73" id="26" text="English" label="English" nosuffix="English" isleaf="True"></node>
+<node gid="74" id="27" text="Anderson" label="Anderson" nosuffix="Anderson" isleaf="True"></node>
+<node gid="75" id="28" text="March" label="March" nosuffix="March" isleaf="True"></node>
+<node gid="76" id="29" text="16" label="16" nosuffix="16" isleaf="True"></node>
+<node gid="77" id="30" text="," label="," nosuffix="," isleaf="True"></node>
+<node gid="78" id="31" text="1985" label="1985" nosuffix="1985" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="ARG0" ></edge>
+<edge head="0" tail="2" label="ARG0" ></edge>
+<edge head="0" tail="8" label="ARG1" ></edge>
+<edge head="2" tail="3" label="op2" ></edge>
+<edge head="2" tail="4" label="op2" ></edge>
+<edge head="4" tail="5" label="op1" ></edge>
+<edge head="4" tail="6" label="op2" ></edge>
+<edge head="6" tail="7" label="name" ></edge>
+<edge head="7" tail="23" label="op1" ></edge>
+<edge head="7" tail="24" label="op2" ></edge>
+<edge head="7" tail="25" label="op3" ></edge>
+<edge head="8" tail="9" label="name" ></edge>
+<edge head="8" tail="10" label="mod" ></edge>
+<edge head="9" tail="26" label="op1" ></edge>
+<edge head="10" tail="11" label="ARG1" ></edge>
+<edge head="11" tail="12" label="name" ></edge>
+<edge head="11" tail="13" label="null_edge" ></edge>
+<edge head="12" tail="27" label="op1" ></edge>
+<edge head="13" tail="14" label="ARG2" ></edge>
+<edge head="13" tail="15" label="mod" ></edge>
+<edge head="13" tail="17" label="ARG1" ></edge>
+<edge head="13" tail="20" label="ARG1" ></edge>
+<edge head="15" tail="16" label="ARG2" ></edge>
+<edge head="17" tail="18" label="null_edge" ></edge>
+<edge head="17" tail="19" label="null_edge" ></edge>
+<edge head="20" tail="21" label="time" ></edge>
+<edge head="21" tail="22" label="name" ></edge>
+<edge head="22" tail="28" label="op1" ></edge>
+<edge head="22" tail="29" label="op2" ></edge>
+<edge head="22" tail="30" label="op3" ></edge>
+<edge head="22" tail="31" label="op4" ></edge>
+</edges>
+</graph>
+<graph id="5">
+<nodes>
+<node gid="79" id="0" text="write-01" label="x7" nosuffix="write" isleaf="False"></node>
+<node gid="80" id="1" text="sister" label="x2" nosuffix="sister" isleaf="False"></node>
+<node gid="81" id="2" text="an-nahar" label="x1" nosuffix="an" isleaf="True"></node>
+<node gid="82" id="3" text="name" label="x4" nosuffix="name" isleaf="False"></node>
+<node gid="83" id="4" text="honor" label="x11" nosuffix="honor" isleaf="False"></node>
+<node gid="84" id="5" text="birthday" label="x14" nosuffix="birthday" isleaf="False"></node>
+<node gid="85" id="6" text="mark-01" label="x30" nosuffix="mark" isleaf="False"></node>
+<node gid="86" id="7" text="and" label="x19" nosuffix="and" isleaf="False"></node>
+<node gid="87" id="8" text="an-nahar" label="x18" nosuffix="an" isleaf="True"></node>
+<node gid="88" id="9" text="as-safir" label="x20" nosuffix="as" isleaf="True"></node>
+<node gid="89" id="10" text="city" label="x24" nosuffix="city" isleaf="False"></node>
+<node gid="90" id="11" text="name" label="n" nosuffix="name" isleaf="False"></node>
+<node gid="91" id="12" text="family" label="x28" nosuffix="family" isleaf="False"></node>
+<node gid="92" id="13" text="other" label="x26" nosuffix="other" isleaf="True"></node>
+<node gid="93" id="14" text="hostage" label="x27" nosuffix="hostage" isleaf="True"></node>
+<node gid="94" id="15" text="year" label="x33" nosuffix="year" isleaf="False"></node>
+<node gid="95" id="16" text="another" label="x31" nosuffix="another" isleaf="True"></node>
+<node gid="96" id="17" text="sad" label="x32" nosuffix="sad" isleaf="True"></node>
+<node gid="97" id="18" text="deny-01" label="x39" nosuffix="deny" isleaf="False"></node>
+<node gid="98" id="19" text="you" label="x36" nosuffix="you" isleaf="True"></node>
+<node gid="99" id="20" text="free-41" label="x41" nosuffix="free" isleaf="True"></node>
+<node gid="100" id="21" text="date-entity" label="xap0" nosuffix="date" isleaf="False"></node>
+<node gid="101" id="22" text="friday" label="x16" nosuffix="friday" isleaf="True"></node>
+<node gid="102" id="23" text="Peggy" label="Peggy" nosuffix="Peggy" isleaf="True"></node>
+<node gid="103" id="24" text="Say" label="Say" nosuffix="Say" isleaf="True"></node>
+<node gid="104" id="25" text="Washington" label="Washington" nosuffix="Washington" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="ARG1" ></edge>
+<edge head="0" tail="4" label="manner" ></edge>
+<edge head="1" tail="2" label="mod" ></edge>
+<edge head="1" tail="3" label="name" ></edge>
+<edge head="3" tail="23" label="op1" ></edge>
+<edge head="3" tail="24" label="op2" ></edge>
+<edge head="4" tail="5" label="ARG1" ></edge>
+<edge head="5" tail="6" label="ARG1" ></edge>
+<edge head="6" tail="7" label="ARG1" ></edge>
+<edge head="6" tail="10" label="location" ></edge>
+<edge head="6" tail="12" label="ARG1" ></edge>
+<edge head="6" tail="15" label="ARG1" ></edge>
+<edge head="6" tail="21" label="time" ></edge>
+<edge head="7" tail="8" label="op1" ></edge>
+<edge head="7" tail="9" label="op2" ></edge>
+<edge head="10" tail="11" label="name" ></edge>
+<edge head="11" tail="25" label="op1" ></edge>
+<edge head="12" tail="13" label="mod" ></edge>
+<edge head="12" tail="14" label="mod" ></edge>
+<edge head="15" tail="16" label="mod" ></edge>
+<edge head="15" tail="17" label="mod" ></edge>
+<edge head="15" tail="18" label="ARG1-of" ></edge>
+<edge head="18" tail="19" label="ARG1" ></edge>
+<edge head="18" tail="20" label="ARG1" ></edge>
+<edge head="21" tail="22" label="weekday" ></edge>
+</edges>
+</graph>
+<graph id="6">
+<nodes>
+<node gid="105" id="0" text="write-01" label="x21" nosuffix="write" isleaf="False"></node>
+<node gid="106" id="1" text="newspaper" label="x2" nosuffix="newspaper" isleaf="False"></node>
+<node gid="107" id="2" text="name" label="n" nosuffix="name" isleaf="False"></node>
+<node gid="108" id="3" text="country" label="x6" nosuffix="country" isleaf="False"></node>
+<node gid="109" id="4" text="name" label="n1" nosuffix="name" isleaf="False"></node>
+<node gid="110" id="5" text="colleague" label="x13" nosuffix="colleague" isleaf="False"></node>
+<node gid="111" id="6" text="country" label="x18" nosuffix="country" isleaf="False"></node>
+<node gid="112" id="7" text="name" label="n2" nosuffix="name" isleaf="False"></node>
+<node gid="113" id="8" text="believe-01" label="x25" nosuffix="believe" isleaf="False"></node>
+<node gid="114" id="9" text="pass-03" label="x30" nosuffix="pass" isleaf="False"></node>
+<node gid="115" id="10" text="day" label="x29" nosuffix="day" isleaf="True"></node>
+<node gid="116" id="11" text="and" label="x38" nosuffix="and" isleaf="False"></node>
+<node gid="117" id="12" text="think-01" label="x35" nosuffix="think" isleaf="False"></node>
+<node gid="118" id="13" text="colleague" label="x32" nosuffix="colleague" isleaf="True"></node>
+<node gid="119" id="14" text="include-91" label="x36" nosuffix="include" isleaf="False"></node>
+<node gid="120" id="15" text="you" label="x37" nosuffix="you" isleaf="True"></node>
+<node gid="121" id="16" text="pray-01" label="x39" nosuffix="pray" isleaf="False"></node>
+<node gid="122" id="17" text="you" label="x41" nosuffix="you" isleaf="True"></node>
+<node gid="123" id="18" text="Journalists" label="Journalists" nosuffix="Journalists" isleaf="True"></node>
+<node gid="124" id="19" text="'" label="'" nosuffix="'" isleaf="True"></node>
+<node gid="125" id="20" text="Committee" label="Committee" nosuffix="Committee" isleaf="True"></node>
+<node gid="126" id="21" text="to" label="to" nosuffix="to" isleaf="True"></node>
+<node gid="127" id="22" text="Free" label="Free" nosuffix="Free" isleaf="True"></node>
+<node gid="128" id="23" text="Terry" label="Terry" nosuffix="Terry" isleaf="True"></node>
+<node gid="129" id="24" text="Anderson" label="Anderson" nosuffix="Anderson" isleaf="True"></node>
+<node gid="130" id="25" text="Free" label="Free" nosuffix="Free" isleaf="True"></node>
+<node gid="131" id="26" text="United" label="United" nosuffix="United" isleaf="True"></node>
+<node gid="132" id="27" text="States" label="States" nosuffix="States" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="ARG0" ></edge>
+<edge head="0" tail="8" label="ARG1" ></edge>
+<edge head="1" tail="2" label="name" ></edge>
+<edge head="1" tail="3" label="mod" ></edge>
+<edge head="1" tail="5" label="poss" ></edge>
+<edge head="2" tail="18" label="op1" ></edge>
+<edge head="2" tail="19" label="op2" ></edge>
+<edge head="2" tail="20" label="op3" ></edge>
+<edge head="2" tail="21" label="op4" ></edge>
+<edge head="2" tail="22" label="op5" ></edge>
+<edge head="2" tail="23" label="op6" ></edge>
+<edge head="2" tail="24" label="op7" ></edge>
+<edge head="3" tail="4" label="name" ></edge>
+<edge head="4" tail="25" label="op1" ></edge>
+<edge head="5" tail="6" label="null_edge" ></edge>
+<edge head="6" tail="7" label="name" ></edge>
+<edge head="7" tail="26" label="op1" ></edge>
+<edge head="7" tail="27" label="op2" ></edge>
+<edge head="8" tail="9" label="ARG1" ></edge>
+<edge head="9" tail="10" label="ARG1" ></edge>
+<edge head="9" tail="11" label="ARG1" ></edge>
+<edge head="11" tail="12" label="op1" ></edge>
+<edge head="11" tail="16" label="op2" ></edge>
+<edge head="12" tail="13" label="ARG0" ></edge>
+<edge head="12" tail="14" label="ARG1" ></edge>
+<edge head="14" tail="15" label="ARG2" ></edge>
+<edge head="16" tail="13" label="ARG0" ></edge>
+<edge head="16" tail="14" label="ARG0" ></edge>
+<edge head="16" tail="17" label="beneficiary" ></edge>
+</edges>
+</graph>
+<graph id="7">
+<nodes>
+<node gid="133" id="0" text="say-01" label="x7" nosuffix="say" isleaf="False"></node>
+<node gid="134" id="1" text="government-organization" label="x2" nosuffix="government" isleaf="False"></node>
+<node gid="135" id="2" text="name" label="n" nosuffix="name" isleaf="False"></node>
+<node gid="136" id="3" text="country" label="x6" nosuffix="country" isleaf="False"></node>
+<node gid="137" id="4" text="name" label="n1" nosuffix="name" isleaf="False"></node>
+<node gid="138" id="5" text="send-01" label="x15" nosuffix="send" isleaf="False"></node>
+<node gid="139" id="6" text="club" label="x11" nosuffix="club" isleaf="False"></node>
+<node gid="140" id="7" text="person" label="x9" nosuffix="person" isleaf="False"></node>
+<node gid="141" id="8" text="foreign" label="f" nosuffix="foreign" isleaf="True"></node>
+<node gid="142" id="9" text="correspondents" label="x10" nosuffix="correspondents" isleaf="True"></node>
+<node gid="143" id="10" text="country" label="x13" nosuffix="country" isleaf="False"></node>
+<node gid="144" id="11" text="name" label="n3" nosuffix="name" isleaf="False"></node>
+<node gid="145" id="12" text="scroll" label="x19" nosuffix="scroll" isleaf="False"></node>
+<node gid="146" id="13" text="33-foot" label="x17" nosuffix="33" isleaf="True"></node>
+<node gid="147" id="14" text="birthday" label="x18" nosuffix="birthday" isleaf="True"></node>
+<node gid="148" id="15" text="person" label="x21" nosuffix="person" isleaf="False"></node>
+<node gid="149" id="16" text="name" label="n2" nosuffix="name" isleaf="False"></node>
+<node gid="150" id="17" text="sign-02" label="x22" nosuffix="sign" isleaf="False"></node>
+<node gid="151" id="18" text="and" label="x26" nosuffix="and" isleaf="False"></node>
+<node gid="152" id="19" text="journalist" label="x25" nosuffix="journalist" isleaf="False"></node>
+<node gid="153" id="20" text="colleague" label="x28" nosuffix="colleague" isleaf="False"></node>
+<node gid="154" id="21" text="former" label="x27" nosuffix="former" isleaf="True"></node>
+<node gid="155" id="22" text="city" label="x30" nosuffix="city" isleaf="False"></node>
+<node gid="156" id="23" text="name" label="n4" nosuffix="name" isleaf="False"></node>
+<node gid="157" id="24" text="Foreign" label="Foreign" nosuffix="Foreign" isleaf="True"></node>
+<node gid="158" id="25" text="Correspondents" label="Correspondents" nosuffix="Correspondents" isleaf="True"></node>
+<node gid="159" id="26" text="Club" label="Club" nosuffix="Club" isleaf="True"></node>
+<node gid="160" id="27" text="Japan" label="Japan" nosuffix="Japan" isleaf="True"></node>
+<node gid="161" id="28" text="Japan" label="Japan" nosuffix="Japan" isleaf="True"></node>
+<node gid="162" id="29" text="Anderson" label="Anderson" nosuffix="Anderson" isleaf="True"></node>
+<node gid="163" id="30" text="59" label="59" nosuffix="59" isleaf="True"></node>
+<node gid="164" id="31" text="Tokyo" label="Tokyo" nosuffix="Tokyo" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="ARG0" ></edge>
+<edge head="0" tail="5" label="ARG1" ></edge>
+<edge head="1" tail="2" label="name" ></edge>
+<edge head="1" tail="3" label="mod" ></edge>
+<edge head="2" tail="24" label="op1" ></edge>
+<edge head="2" tail="25" label="op2" ></edge>
+<edge head="2" tail="26" label="op3" ></edge>
+<edge head="3" tail="4" label="name" ></edge>
+<edge head="4" tail="27" label="op1" ></edge>
+<edge head="5" tail="6" label="ARG0" ></edge>
+<edge head="5" tail="12" label="ARG1" ></edge>
+<edge head="5" tail="15" label="ARG2" ></edge>
+<edge head="6" tail="7" label="null_edge" ></edge>
+<edge head="6" tail="9" label="mod" ></edge>
+<edge head="6" tail="10" label="ARG1" ></edge>
+<edge head="7" tail="8" label="mod" ></edge>
+<edge head="10" tail="11" label="name" ></edge>
+<edge head="11" tail="28" label="op1" ></edge>
+<edge head="12" tail="13" label="mod" ></edge>
+<edge head="12" tail="14" label="mod" ></edge>
+<edge head="15" tail="16" label="name" ></edge>
+<edge head="15" tail="17" label="ARG1-of" ></edge>
+<edge head="16" tail="29" label="op1" ></edge>
+<edge head="17" tail="18" label="ARG0" ></edge>
+<edge head="18" tail="19" label="op1" ></edge>
+<edge head="18" tail="20" label="op2" ></edge>
+<edge head="19" tail="30" label="quant" ></edge>
+<edge head="20" tail="21" label="mod" ></edge>
+<edge head="20" tail="22" label="location" ></edge>
+<edge head="22" tail="23" label="name" ></edge>
+<edge head="23" tail="31" label="op1" ></edge>
+</edges>
+</graph>
+<graph id="8">
+<nodes>
+<node gid="165" id="0" text="have-org-role-91" label="x4" nosuffix="have" isleaf="False"></node>
+<node gid="166" id="1" text="member" label="m" nosuffix="member" isleaf="True"></node>
+<node gid="167" id="2" text="person" label="x1" nosuffix="person" isleaf="False"></node>
+<node gid="168" id="3" text="name" label="n" nosuffix="name" isleaf="False"></node>
+<node gid="169" id="4" text="club" label="x7" nosuffix="club" isleaf="True"></node>
+<node gid="170" id="5" text="thing" label="x11" nosuffix="thing" isleaf="False"></node>
+<node gid="171" id="6" text="assign-01" label="a" nosuffix="assign" isleaf="True"></node>
+<node gid="172" id="7" text="work-01" label="x10" nosuffix="work" isleaf="True"></node>
+<node gid="173" id="8" text="country" label="x13" nosuffix="country" isleaf="False"></node>
+<node gid="174" id="9" text="name" label="n1" nosuffix="name" isleaf="False"></node>
+<node gid="175" id="10" text="date-entity" label="x14" nosuffix="date" isleaf="True"></node>
+<node gid="176" id="11" text="Anderson" label="Anderson" nosuffix="Anderson" isleaf="True"></node>
+<node gid="177" id="12" text="Japan" label="Japan" nosuffix="Japan" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="ARG2" ></edge>
+<edge head="0" tail="2" label="ARG0" ></edge>
+<edge head="0" tail="4" label="ARG1" ></edge>
+<edge head="0" tail="5" label="time" ></edge>
+<edge head="2" tail="3" label="name" ></edge>
+<edge head="3" tail="11" label="op1" ></edge>
+<edge head="5" tail="6" label="ARG1-of" ></edge>
+<edge head="5" tail="7" label="time" ></edge>
+<edge head="5" tail="8" label="location" ></edge>
+<edge head="5" tail="10" label="time" ></edge>
+<edge head="8" tail="9" label="name" ></edge>
+<edge head="9" tail="12" label="op1" ></edge>
+</edges>
+</graph>
+<graph id="9">
+<nodes>
+<node gid="178" id="0" text="attend-01" label="x21" nosuffix="attend" isleaf="False"></node>
+<node gid="179" id="1" text="journalist" label="x2" nosuffix="journalist" isleaf="False"></node>
+<node gid="180" id="2" text="prominent" label="x1" nosuffix="prominent" isleaf="True"></node>
+<node gid="181" id="3" text="person" label="x6" nosuffix="person" isleaf="False"></node>
+<node gid="182" id="4" text="represent-01" label="r" nosuffix="represent" isleaf="True"></node>
+<node gid="183" id="5" text="and" label="x11" nosuffix="and" isleaf="False"></node>
+<node gid="184" id="6" text="null_tag" label="x10" nosuffix="null_tag" isleaf="False"></node>
+<node gid="185" id="7" text="null_tag" label="x9" nosuffix="null_tag" isleaf="True"></node>
+<node gid="186" id="8" text="embassy" label="x13" nosuffix="embassy" isleaf="False"></node>
+<node gid="187" id="9" text="and" label="x18" nosuffix="and" isleaf="False"></node>
+<node gid="188" id="10" text="country" label="x15" nosuffix="country" isleaf="False"></node>
+<node gid="189" id="11" text="name" label="n2" nosuffix="name" isleaf="False"></node>
+<node gid="190" id="12" text="country" label="x17" nosuffix="country" isleaf="False"></node>
+<node gid="191" id="13" text="name" label="n3" nosuffix="name" isleaf="False"></node>
+<node gid="192" id="14" text="country" label="x19" nosuffix="country" isleaf="False"></node>
+<node gid="193" id="15" text="name" label="n4" nosuffix="name" isleaf="False"></node>
+<node gid="194" id="16" text="say-01" label="x34" nosuffix="say" isleaf="False"></node>
+<node gid="195" id="17" text="government-organization" label="x25" nosuffix="government" isleaf="False"></node>
+<node gid="196" id="18" text="name" label="n" nosuffix="name" isleaf="False"></node>
+<node gid="197" id="19" text="country" label="x28" nosuffix="country" isleaf="False"></node>
+<node gid="198" id="20" text="name" label="n1" nosuffix="name" isleaf="False"></node>
+<node gid="199" id="21" text="null_tag" label="x33" nosuffix="null_tag" isleaf="False"></node>
+<node gid="200" id="22" text="mrs." label="x32" nosuffix="mrs." isleaf="True"></node>
+<node gid="201" id="23" text="ensure-01" label="x37" nosuffix="ensure" isleaf="False"></node>
+<node gid="202" id="24" text="ceremony" label="x36" nosuffix="ceremony" isleaf="False"></node>
+<node gid="203" id="25" text="such" label="x35" nosuffix="such" isleaf="True"></node>
+<node gid="204" id="26" text="forget-01" label="x43" nosuffix="forget" isleaf="False"></node>
+<node gid="205" id="27" text="brother" label="x39" nosuffix="brother" isleaf="False"></node>
+<node gid="206" id="28" text="mrs." label="x38" nosuffix="mrs." isleaf="True"></node>
+<node gid="207" id="29" text="Lebanon" label="Lebanon" nosuffix="Lebanon" isleaf="True"></node>
+<node gid="208" id="30" text="Algeria" label="Algeria" nosuffix="Algeria" isleaf="True"></node>
+<node gid="209" id="31" text="Syria" label="Syria" nosuffix="Syria" isleaf="True"></node>
+<node gid="210" id="32" text="Georgetown" label="Georgetown" nosuffix="Georgetown" isleaf="True"></node>
+<node gid="211" id="33" text="University" label="University" nosuffix="University" isleaf="True"></node>
+<node gid="212" id="34" text="Dahlgren" label="Dahlgren" nosuffix="Dahlgren" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="ARG0" ></edge>
+<edge head="0" tail="3" label="ARG0" ></edge>
+<edge head="1" tail="2" label="mod" ></edge>
+<edge head="3" tail="4" label="ARG0-of" ></edge>
+<edge head="3" tail="5" label="ARG1" ></edge>
+<edge head="5" tail="6" label="op1" ></edge>
+<edge head="5" tail="8" label="op2" ></edge>
+<edge head="5" tail="16" label="op2" ></edge>
+<edge head="6" tail="7" label="null_edge" ></edge>
+<edge head="8" tail="9" label="consist-of" ></edge>
+<edge head="9" tail="10" label="op1" ></edge>
+<edge head="9" tail="12" label="op2" ></edge>
+<edge head="9" tail="14" label="op3" ></edge>
+<edge head="10" tail="11" label="name" ></edge>
+<edge head="11" tail="29" label="op1" ></edge>
+<edge head="12" tail="13" label="name" ></edge>
+<edge head="13" tail="30" label="op1" ></edge>
+<edge head="14" tail="15" label="name" ></edge>
+<edge head="15" tail="31" label="op1" ></edge>
+<edge head="16" tail="17" label="ARG0" ></edge>
+<edge head="16" tail="19" label="location" ></edge>
+<edge head="16" tail="21" label="null_edge" ></edge>
+<edge head="16" tail="23" label="ARG1" ></edge>
+<edge head="17" tail="18" label="name" ></edge>
+<edge head="18" tail="32" label="op1" ></edge>
+<edge head="18" tail="33" label="op2" ></edge>
+<edge head="19" tail="20" label="name" ></edge>
+<edge head="20" tail="34" label="op1" ></edge>
+<edge head="21" tail="22" label="ARG0-of" ></edge>
+<edge head="23" tail="24" label="ARG0" ></edge>
+<edge head="23" tail="26" label="ARG1" ></edge>
+<edge head="24" tail="25" label="mod" ></edge>
+<edge head="26" tail="27" label="ARG1" ></edge>
+<edge head="27" tail="28" label="mod" ></edge>
+</edges>
+</graph>
+<graph id="10">
+<nodes>
+<node gid="213" id="0" text="seize-01" label="x2" nosuffix="seize" isleaf="False"></node>
+<node gid="214" id="1" text="gunman" label="x1" nosuffix="gunman" isleaf="True"></node>
+<node gid="215" id="2" text="person" label="x5" nosuffix="person" isleaf="False"></node>
+<node gid="216" id="3" text="name" label="n" nosuffix="name" isleaf="False"></node>
+<node gid="217" id="4" text="person" label="x4" nosuffix="person" isleaf="False"></node>
+<node gid="218" id="5" text="name" label="n2" nosuffix="name" isleaf="False"></node>
+<node gid="219" id="6" text="city" label="x9" nosuffix="city" isleaf="False"></node>
+<node gid="220" id="7" text="name" label="n1" nosuffix="name" isleaf="False"></node>
+<node gid="221" id="8" text="world-region" label="x8" nosuffix="world" isleaf="False"></node>
+<node gid="222" id="9" text="name" label="n3" nosuffix="name" isleaf="False"></node>
+<node gid="223" id="10" text="country" label="x7" nosuffix="country" isleaf="False"></node>
+<node gid="224" id="11" text="name" label="n4" nosuffix="name" isleaf="False"></node>
+<node gid="225" id="12" text="after" label="x10" nosuffix="after" isleaf="False"></node>
+<node gid="226" id="13" text="game" label="x12" nosuffix="game" isleaf="False"></node>
+<node gid="227" id="14" text="tennis" label="x14" nosuffix="tennis" isleaf="True"></node>
+<node gid="228" id="15" text="respite" label="x20" nosuffix="respite" isleaf="False"></node>
+<node gid="229" id="16" text="brief" label="x19" nosuffix="brief" isleaf="True"></node>
+<node gid="230" id="17" text="name" label="x23" nosuffix="name" isleaf="False"></node>
+<node gid="231" id="18" text="free" label="x22" nosuffix="free" isleaf="True"></node>
+<node gid="232" id="19" text="war" label="x29" nosuffix="war" isleaf="False"></node>
+<node gid="233" id="20" text="country" label="x26" nosuffix="country" isleaf="False"></node>
+<node gid="234" id="21" text="name" label="n5" nosuffix="name" isleaf="False"></node>
+<node gid="235" id="22" text="civil" label="x28" nosuffix="civil" isleaf="True"></node>
+<node gid="236" id="23" text="Anderson" label="Anderson" nosuffix="Anderson" isleaf="True"></node>
+<node gid="237" id="24" text="42-year-old" label="42-year-old" nosuffix="42" isleaf="True"></node>
+<node gid="238" id="25" text="Beirut" label="Beirut" nosuffix="Beirut" isleaf="True"></node>
+<node gid="239" id="26" text="west" label="west" nosuffix="west" isleaf="True"></node>
+<node gid="240" id="27" text="Moslem" label="Moslem" nosuffix="Moslem" isleaf="True"></node>
+<node gid="241" id="28" text="Terry" label="Terry" nosuffix="Terry" isleaf="True"></node>
+<node gid="242" id="29" text="Anderson" label="Anderson" nosuffix="Anderson" isleaf="True"></node>
+<node gid="243" id="30" text="Lebanon" label="Lebanon" nosuffix="Lebanon" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="ARG0" ></edge>
+<edge head="0" tail="2" label="ARG1" ></edge>
+<edge head="0" tail="6" label="location" ></edge>
+<edge head="0" tail="12" label="time" ></edge>
+<edge head="2" tail="3" label="name" ></edge>
+<edge head="2" tail="4" label="null_edge" ></edge>
+<edge head="3" tail="23" label="op1" ></edge>
+<edge head="4" tail="5" label="name" ></edge>
+<edge head="5" tail="24" label="op1" ></edge>
+<edge head="6" tail="7" label="name" ></edge>
+<edge head="6" tail="8" label="mod" ></edge>
+<edge head="7" tail="25" label="op1" ></edge>
+<edge head="8" tail="9" label="name" ></edge>
+<edge head="8" tail="10" label="mod" ></edge>
+<edge head="9" tail="26" label="op1" ></edge>
+<edge head="10" tail="11" label="name" ></edge>
+<edge head="11" tail="27" label="op1" ></edge>
+<edge head="12" tail="13" label="op1" ></edge>
+<edge head="13" tail="14" label="ARG1" ></edge>
+<edge head="13" tail="15" label="mod" ></edge>
+<edge head="15" tail="16" label="mod" ></edge>
+<edge head="15" tail="17" label="name" ></edge>
+<edge head="17" tail="28" label="op1" ></edge>
+<edge head="17" tail="29" label="op2" ></edge>
+<edge head="17" tail="18" label="ARG0-of" ></edge>
+<edge head="17" tail="19" label="ARG0-of" ></edge>
+<edge head="19" tail="20" label="location" ></edge>
+<edge head="19" tail="22" label="mod" ></edge>
+<edge head="20" tail="21" label="name" ></edge>
+<edge head="21" tail="30" label="op1" ></edge>
+</edges>
+</graph>
+<graph id="11">
+<nodes>
+<node gid="244" id="0" text="hold-04" label="x6" nosuffix="hold" isleaf="False"></node>
+<node gid="245" id="1" text="newspaper" label="x2" nosuffix="newspaper" isleaf="False"></node>
+<node gid="246" id="2" text="name" label="n" nosuffix="name" isleaf="False"></node>
+<node gid="247" id="3" text="free" label="x1" nosuffix="free" isleaf="True"></node>
+<node gid="248" id="4" text="sulome" label="x7" nosuffix="sulome" isleaf="False"></node>
+<node gid="249" id="5" text="bear-02" label="x9" nosuffix="bear" isleaf="False"></node>
+<node gid="250" id="6" text="after" label="x12" nosuffix="after" isleaf="False"></node>
+<node gid="251" id="7" text="temporal-quantity" label="x11" nosuffix="temporal" isleaf="False"></node>
+<node gid="252" id="8" text="month" label="m" nosuffix="month" isleaf="True"></node>
+<node gid="253" id="9" text="kidnap-01" label="x19" nosuffix="kidnap" isleaf="False"></node>
+<node gid="254" id="10" text="name" label="x16" nosuffix="name" isleaf="False"></node>
+<node gid="255" id="11" text="morning" label="x14" nosuffix="morning" isleaf="True"></node>
+<node gid="256" id="12" text="free" label="x15" nosuffix="free" isleaf="True"></node>
+<node gid="257" id="13" text="Terry" label="Terry" nosuffix="Terry" isleaf="True"></node>
+<node gid="258" id="14" text="Anderson" label="Anderson" nosuffix="Anderson" isleaf="True"></node>
+<node gid="259" id="15" text="3" label="3" nosuffix="3" isleaf="True"></node>
+<node gid="260" id="16" text="Terry" label="Terry" nosuffix="Terry" isleaf="True"></node>
+<node gid="261" id="17" text="Anderson" label="Anderson" nosuffix="Anderson" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="ARG0" ></edge>
+<edge head="0" tail="4" label="ARG1" ></edge>
+<edge head="1" tail="2" label="name" ></edge>
+<edge head="1" tail="3" label="ARG0-of" ></edge>
+<edge head="2" tail="13" label="op1" ></edge>
+<edge head="2" tail="14" label="op2" ></edge>
+<edge head="4" tail="5" label="ARG1" ></edge>
+<edge head="5" tail="6" label="time" ></edge>
+<edge head="6" tail="7" label="op1" ></edge>
+<edge head="6" tail="9" label="op1" ></edge>
+<edge head="7" tail="8" label="unit" ></edge>
+<edge head="7" tail="15" label="quant" ></edge>
+<edge head="9" tail="10" label="ARG1" ></edge>
+<edge head="10" tail="16" label="op1" ></edge>
+<edge head="10" tail="17" label="op2" ></edge>
+<edge head="10" tail="11" label="dayperiod" ></edge>
+<edge head="10" tail="12" label="ARG0-of" ></edge>
+</edges>
+</graph>
+<graph id="12">
+<nodes>
+<node gid="262" id="0" text="probable" label="x4" nosuffix="probable" isleaf="False"></node>
+<node gid="263" id="1" text="know-01" label="x7" nosuffix="know" isleaf="False"></node>
+<node gid="264" id="2" text="newspaper" label="x2" nosuffix="newspaper" isleaf="False"></node>
+<node gid="265" id="3" text="name" label="n" nosuffix="name" isleaf="False"></node>
+<node gid="266" id="4" text="free" label="x1" nosuffix="free" isleaf="True"></node>
+<node gid="267" id="5" text="die-01" label="x15" nosuffix="die" isleaf="False"></node>
+<node gid="268" id="6" text="and" label="x13" nosuffix="and" isleaf="False"></node>
+<node gid="269" id="7" text="father" label="x12" nosuffix="father" isleaf="False"></node>
+<node gid="270" id="8" text="name" label="x10" nosuffix="name" isleaf="False"></node>
+<node gid="271" id="9" text="free" label="x9" nosuffix="free" isleaf="True"></node>
+<node gid="272" id="10" text="brother" label="x14" nosuffix="brother" isleaf="True"></node>
+<node gid="273" id="11" text="cancer" label="x17" nosuffix="cancer" isleaf="True"></node>
+<node gid="274" id="12" text="Terry" label="Terry" nosuffix="Terry" isleaf="True"></node>
+<node gid="275" id="13" text="Anderson" label="Anderson" nosuffix="Anderson" isleaf="True"></node>
+<node gid="276" id="14" text="Terry" label="Terry" nosuffix="Terry" isleaf="True"></node>
+<node gid="277" id="15" text="Anderson" label="Anderson" nosuffix="Anderson" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="domain" ></edge>
+<edge head="1" tail="2" label="ARG0" ></edge>
+<edge head="1" tail="5" label="ARG1" ></edge>
+<edge head="2" tail="3" label="name" ></edge>
+<edge head="2" tail="4" label="ARG0-of" ></edge>
+<edge head="3" tail="12" label="op1" ></edge>
+<edge head="3" tail="13" label="op2" ></edge>
+<edge head="5" tail="6" label="ARG1" ></edge>
+<edge head="5" tail="11" label="ARG1" ></edge>
+<edge head="6" tail="7" label="op1" ></edge>
+<edge head="6" tail="10" label="op2" ></edge>
+<edge head="7" tail="8" label="name" ></edge>
+<edge head="8" tail="14" label="op1" ></edge>
+<edge head="8" tail="15" label="op2" ></edge>
+<edge head="8" tail="9" label="ARG0-of" ></edge>
+</edges>
+</graph>
+<graph id="13">
+<nodes>
+<node gid="278" id="0" text="appear-02" label="x5" nosuffix="appear" isleaf="False"></node>
+<node gid="279" id="1" text="fate" label="x3" nosuffix="fate" isleaf="False"></node>
+<node gid="280" id="2" text="person" label="x1" nosuffix="person" isleaf="False"></node>
+<node gid="281" id="3" text="name" label="n" nosuffix="name" isleaf="False"></node>
+<node gid="282" id="4" text="now" label="x4" nosuffix="now" isleaf="True"></node>
+<node gid="283" id="5" text="catch-02" label="x8" nosuffix="catch" isleaf="False"></node>
+<node gid="284" id="6" text="struggle-01" label="x13" nosuffix="struggle" isleaf="False"></node>
+<node gid="285" id="7" text="power" label="x12" nosuffix="power" isleaf="True"></node>
+<node gid="286" id="8" text="and" label="x18" nosuffix="and" isleaf="False"></node>
+<node gid="287" id="9" text="radical" label="x17" nosuffix="radical" isleaf="False"></node>
+<node gid="288" id="10" text="country" label="x15" nosuffix="country" isleaf="False"></node>
+<node gid="289" id="11" text="name" label="n1" nosuffix="name" isleaf="False"></node>
+<node gid="290" id="12" text="country" label="x16" nosuffix="country" isleaf="False"></node>
+<node gid="291" id="13" text="name" label="n2" nosuffix="name" isleaf="False"></node>
+<node gid="292" id="14" text="moderate" label="x19" nosuffix="moderate" isleaf="True"></node>
+<node gid="293" id="15" text="Anderson" label="Anderson" nosuffix="Anderson" isleaf="True"></node>
+<node gid="294" id="16" text="Shiite" label="Shiite" nosuffix="Shiite" isleaf="True"></node>
+<node gid="295" id="17" text="Moslem" label="Moslem" nosuffix="Moslem" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="ARG1" ></edge>
+<edge head="0" tail="4" label="time" ></edge>
+<edge head="0" tail="5" label="ARG1" ></edge>
+<edge head="1" tail="2" label="poss" ></edge>
+<edge head="2" tail="3" label="name" ></edge>
+<edge head="3" tail="15" label="op1" ></edge>
+<edge head="5" tail="6" label="ARG2" ></edge>
+<edge head="6" tail="7" label="mod" ></edge>
+<edge head="6" tail="8" label="ARG1" ></edge>
+<edge head="8" tail="9" label="op1" ></edge>
+<edge head="8" tail="14" label="op2" ></edge>
+<edge head="9" tail="10" label="mod" ></edge>
+<edge head="9" tail="12" label="mod" ></edge>
+<edge head="10" tail="11" label="name" ></edge>
+<edge head="11" tail="16" label="op1" ></edge>
+<edge head="12" tail="13" label="name" ></edge>
+<edge head="13" tail="17" label="op1" ></edge>
+</edges>
+</graph>
+<graph id="14">
+<nodes>
+<node gid="296" id="0" text="kidnap-01" label="x5" nosuffix="kidnap" isleaf="False"></node>
+<node gid="297" id="1" text="name" label="x2" nosuffix="name" isleaf="False"></node>
+<node gid="298" id="2" text="free" label="x1" nosuffix="free" isleaf="True"></node>
+<node gid="299" id="3" text="war" label="x8" nosuffix="war" isleaf="False"></node>
+<node gid="300" id="4" text="name" label="n" nosuffix="name" isleaf="False"></node>
+<node gid="301" id="5" text="null_tag" label="x7" nosuffix="null_tag" isleaf="True"></node>
+<node gid="302" id="6" text="group" label="x11" nosuffix="group" isleaf="False"></node>
+<node gid="303" id="7" text="loyal" label="x12" nosuffix="loyal" isleaf="False"></node>
+<node gid="304" id="8" text="country" label="x14" nosuffix="country" isleaf="False"></node>
+<node gid="305" id="9" text="name" label="n1" nosuffix="name" isleaf="False"></node>
+<node gid="306" id="10" text="mean-01" label="x17" nosuffix="mean" isleaf="False"></node>
+<node gid="307" id="11" text="name" label="x16" nosuffix="name" isleaf="True"></node>
+<node gid="308" id="12" text="have-org-role-91" label="x19" nosuffix="have" isleaf="False"></node>
+<node gid="309" id="13" text="country" label="c" nosuffix="country" isleaf="False"></node>
+<node gid="310" id="14" text="name" label="n2" nosuffix="name" isleaf="False"></node>
+<node gid="311" id="15" text="religious-group" label="x18" nosuffix="religious" isleaf="False"></node>
+<node gid="312" id="16" text="name" label="n3" nosuffix="name" isleaf="False"></node>
+<node gid="313" id="17" text="Terry" label="Terry" nosuffix="Terry" isleaf="True"></node>
+<node gid="314" id="18" text="Anderson" label="Anderson" nosuffix="Anderson" isleaf="True"></node>
+<node gid="315" id="19" text="Jihad" label="Jihad" nosuffix="Jihad" isleaf="True"></node>
+<node gid="316" id="20" text="Iran" label="Iran" nosuffix="Iran" isleaf="True"></node>
+<node gid="317" id="21" text="Holy" label="Holy" nosuffix="Holy" isleaf="True"></node>
+<node gid="318" id="22" text="War" label="War" nosuffix="War" isleaf="True"></node>
+<node gid="319" id="23" text="Islamic" label="Islamic" nosuffix="Islamic" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="ARG1" ></edge>
+<edge head="0" tail="3" label="ARG0" ></edge>
+<edge head="0" tail="6" label="ARG1" ></edge>
+<edge head="1" tail="17" label="op1" ></edge>
+<edge head="1" tail="18" label="op2" ></edge>
+<edge head="1" tail="2" label="ARG0-of" ></edge>
+<edge head="3" tail="4" label="name" ></edge>
+<edge head="3" tail="5" label="null_edge" ></edge>
+<edge head="4" tail="19" label="op1" ></edge>
+<edge head="6" tail="7" label="mod" ></edge>
+<edge head="7" tail="8" label="ARG2" ></edge>
+<edge head="8" tail="9" label="name" ></edge>
+<edge head="8" tail="10" label="ARG0-of" ></edge>
+<edge head="9" tail="20" label="op1" ></edge>
+<edge head="10" tail="11" label="ARG0" ></edge>
+<edge head="10" tail="12" label="ARG0" ></edge>
+<edge head="12" tail="13" label="ARG1" ></edge>
+<edge head="12" tail="15" label="mod" ></edge>
+<edge head="13" tail="14" label="name" ></edge>
+<edge head="14" tail="21" label="op1" ></edge>
+<edge head="14" tail="22" label="op2" ></edge>
+<edge head="15" tail="16" label="name" ></edge>
+<edge head="16" tail="23" label="op1" ></edge>
+</edges>
+</graph>
+<graph id="15">
+<nodes>
+<node gid="320" id="0" text="demand-01" label="x5" nosuffix="demand" isleaf="False"></node>
+<node gid="321" id="1" text="abductor" label="x4" nosuffix="abductor" isleaf="False"></node>
+<node gid="322" id="2" text="free" label="x1" nosuffix="free" isleaf="True"></node>
+<node gid="323" id="3" text="person" label="x2" nosuffix="person" isleaf="False"></node>
+<node gid="324" id="4" text="name" label="n" nosuffix="name" isleaf="False"></node>
+<node gid="325" id="5" text="person" label="x3" nosuffix="person" isleaf="False"></node>
+<node gid="326" id="6" text="name" label="n1" nosuffix="name" isleaf="False"></node>
+<node gid="327" id="7" text="release-01" label="x7" nosuffix="release" isleaf="False"></node>
+<node gid="328" id="8" text="man" label="x10" nosuffix="man" isleaf="False"></node>
+<node gid="329" id="9" text="imprison-01" label="x11" nosuffix="imprison" isleaf="False"></node>
+<node gid="330" id="10" text="country" label="x13" nosuffix="country" isleaf="False"></node>
+<node gid="331" id="11" text="name" label="n2" nosuffix="name" isleaf="False"></node>
+<node gid="332" id="12" text="bomb-01" label="x15" nosuffix="bomb" isleaf="False"></node>
+<node gid="333" id="13" text="and" label="x18" nosuffix="and" isleaf="False"></node>
+<node gid="334" id="14" text="country" label="x17" nosuffix="country" isleaf="False"></node>
+<node gid="335" id="15" text="name" label="n3" nosuffix="name" isleaf="False"></node>
+<node gid="336" id="16" text="country" label="x19" nosuffix="country" isleaf="False"></node>
+<node gid="337" id="17" text="name" label="n4" nosuffix="name" isleaf="False"></node>
+<node gid="338" id="18" text="embassy" label="x20" nosuffix="embassy" isleaf="True"></node>
+<node gid="339" id="19" text="date-entity" label="x22" nosuffix="date" isleaf="False"></node>
+<node gid="340" id="20" text="Terry" label="Terry" nosuffix="Terry" isleaf="True"></node>
+<node gid="341" id="21" text="Anderson" label="Anderson" nosuffix="Anderson" isleaf="True"></node>
+<node gid="342" id="22" text="15" label="15" nosuffix="15" isleaf="True"></node>
+<node gid="343" id="23" text="Kuwait" label="Kuwait" nosuffix="Kuwait" isleaf="True"></node>
+<node gid="344" id="24" text="U.S." label="U.S." nosuffix="U.S." isleaf="True"></node>
+<node gid="345" id="25" text="France" label="France" nosuffix="France" isleaf="True"></node>
+<node gid="346" id="26" text="1983" label="1983" nosuffix="1983" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="ARG0" ></edge>
+<edge head="0" tail="7" label="ARG1" ></edge>
+<edge head="1" tail="2" label="mod" ></edge>
+<edge head="1" tail="3" label="mod" ></edge>
+<edge head="1" tail="5" label="mod" ></edge>
+<edge head="3" tail="4" label="name" ></edge>
+<edge head="4" tail="20" label="op1" ></edge>
+<edge head="5" tail="6" label="name" ></edge>
+<edge head="6" tail="21" label="op1" ></edge>
+<edge head="7" tail="8" label="ARG1" ></edge>
+<edge head="8" tail="22" label="quant" ></edge>
+<edge head="8" tail="9" label="ARG1-of" ></edge>
+<edge head="9" tail="10" label="location" ></edge>
+<edge head="9" tail="12" label="ARG3" ></edge>
+<edge head="10" tail="11" label="name" ></edge>
+<edge head="11" tail="23" label="op1" ></edge>
+<edge head="12" tail="13" label="ARG1" ></edge>
+<edge head="12" tail="19" label="time" ></edge>
+<edge head="13" tail="14" label="op1" ></edge>
+<edge head="13" tail="16" label="op2" ></edge>
+<edge head="13" tail="18" label="op1" ></edge>
+<edge head="14" tail="15" label="name" ></edge>
+<edge head="15" tail="24" label="op1" ></edge>
+<edge head="16" tail="17" label="name" ></edge>
+<edge head="17" tail="25" label="op1" ></edge>
+<edge head="19" tail="26" label="year" ></edge>
+</edges>
+</graph>
+<graph id="16">
+<nodes>
+<node gid="347" id="0" text="hold-01" label="x4" nosuffix="hold" isleaf="False"></node>
+<node gid="348" id="1" text="jihad" label="x2" nosuffix="jihad" isleaf="False"></node>
+<node gid="349" id="2" text="null_tag" label="x1" nosuffix="null_tag" isleaf="True"></node>
+<node gid="350" id="3" text="also" label="x3" nosuffix="also" isleaf="True"></node>
+<node gid="351" id="4" text="name" label="x5" nosuffix="name" isleaf="False"></node>
+<node gid="352" id="5" text="country" label="x11" nosuffix="country" isleaf="False"></node>
+<node gid="353" id="6" text="name" label="n" nosuffix="name" isleaf="False"></node>
+<node gid="354" id="7" text="act-01" label="x14" nosuffix="act" isleaf="False"></node>
+<node gid="355" id="8" text="dean" label="x15" nosuffix="dean" isleaf="False"></node>
+<node gid="356" id="9" text="agriculture" label="x17" nosuffix="agriculture" isleaf="True"></node>
+<node gid="357" id="10" text="university" label="x20" nosuffix="university" isleaf="False"></node>
+<node gid="358" id="11" text="city" label="x22" nosuffix="city" isleaf="False"></node>
+<node gid="359" id="12" text="name" label="n1" nosuffix="name" isleaf="False"></node>
+<node gid="360" id="13" text="Thomas" label="Thomas" nosuffix="Thomas" isleaf="True"></node>
+<node gid="361" id="14" text="Sutherland" label="Sutherland" nosuffix="Sutherland" isleaf="True"></node>
+<node gid="362" id="15" text="57" label="57" nosuffix="57" isleaf="True"></node>
+<node gid="363" id="16" text="American" label="American" nosuffix="American" isleaf="True"></node>
+<node gid="364" id="17" text="Beirut" label="Beirut" nosuffix="Beirut" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="ARG0" ></edge>
+<edge head="0" tail="3" label="mod" ></edge>
+<edge head="0" tail="4" label="ARG1" ></edge>
+<edge head="1" tail="2" label="null_edge" ></edge>
+<edge head="4" tail="13" label="op1" ></edge>
+<edge head="4" tail="14" label="op2" ></edge>
+<edge head="4" tail="15" label="quant" ></edge>
+<edge head="4" tail="5" label="mod" ></edge>
+<edge head="5" tail="6" label="name" ></edge>
+<edge head="5" tail="7" label="ARG0-of" ></edge>
+<edge head="6" tail="16" label="op1" ></edge>
+<edge head="7" tail="8" label="ARG1" ></edge>
+<edge head="7" tail="10" label="null_edge" ></edge>
+<edge head="8" tail="9" label="ARG1" ></edge>
+<edge head="10" tail="11" label="null_edge" ></edge>
+<edge head="11" tail="12" label="name" ></edge>
+<edge head="12" tail="17" label="op1" ></edge>
+</edges>
+</graph>
+<graph id="17">
+<nodes>
+<node gid="365" id="0" text="kidnap-01" label="x3" nosuffix="kidnap" isleaf="False"></node>
+<node gid="366" id="1" text="person" label="x1" nosuffix="person" isleaf="False"></node>
+<node gid="367" id="2" text="name" label="n" nosuffix="name" isleaf="False"></node>
+<node gid="368" id="3" text="event" label="x4" nosuffix="event" isleaf="False"></node>
+<node gid="369" id="4" text="name" label="n1" nosuffix="name" isleaf="False"></node>
+<node gid="370" id="5" text="Sutherland" label="Sutherland" nosuffix="Sutherland" isleaf="True"></node>
+<node gid="371" id="6" text="June" label="June" nosuffix="June" isleaf="True"></node>
+<node gid="372" id="7" text="9" label="9" nosuffix="9" isleaf="True"></node>
+<node gid="373" id="8" text="," label="," nosuffix="," isleaf="True"></node>
+<node gid="374" id="9" text="1985" label="1985" nosuffix="1985" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="ARG1" ></edge>
+<edge head="0" tail="3" label="ARG1" ></edge>
+<edge head="1" tail="2" label="name" ></edge>
+<edge head="2" tail="5" label="op1" ></edge>
+<edge head="3" tail="4" label="name" ></edge>
+<edge head="4" tail="6" label="op1" ></edge>
+<edge head="4" tail="7" label="op2" ></edge>
+<edge head="4" tail="8" label="op3" ></edge>
+<edge head="4" tail="9" label="op4" ></edge>
+</edges>
+</graph>
+<graph id="18">
+<nodes>
+<node gid="375" id="0" text="say-01" label="x2" nosuffix="say" isleaf="False"></node>
+<node gid="376" id="1" text="police" label="x1" nosuffix="police" isleaf="True"></node>
+<node gid="377" id="2" text="have-03" label="x5" nosuffix="have" isleaf="False"></node>
+<node gid="378" id="3" text="authority" label="x4" nosuffix="authority" isleaf="False"></node>
+<node gid="379" id="4" text="country" label="x3" nosuffix="country" isleaf="False"></node>
+<node gid="380" id="5" text="name" label="n" nosuffix="name" isleaf="False"></node>
+<node gid="381" id="6" text="information" label="x7" nosuffix="information" isleaf="False"></node>
+<node gid="382" id="7" text="whereabouts" label="x10" nosuffix="whereabouts" isleaf="False"></node>
+<node gid="383" id="8" text="or" label="x13" nosuffix="or" isleaf="False"></node>
+<node gid="384" id="9" text="person" label="x12" nosuffix="person" isleaf="False"></node>
+<node gid="385" id="10" text="name" label="n1" nosuffix="name" isleaf="False"></node>
+<node gid="386" id="11" text="hostage" label="x18" nosuffix="hostage" isleaf="False"></node>
+<node gid="387" id="12" text="other" label="x16" nosuffix="other" isleaf="True"></node>
+<node gid="388" id="13" text="world-region" label="x17" nosuffix="world" isleaf="False"></node>
+<node gid="389" id="14" text="name" label="n2" nosuffix="name" isleaf="False"></node>
+<node gid="390" id="15" text="country" label="x20" nosuffix="country" isleaf="False"></node>
+<node gid="391" id="16" text="name" label="n3" nosuffix="name" isleaf="False"></node>
+<node gid="392" id="17" text="-" label="-" nosuffix="" isleaf="True"></node>
+<node gid="393" id="18" text="Lebanese" label="Lebanese" nosuffix="Lebanese" isleaf="True"></node>
+<node gid="394" id="19" text="Anderson" label="Anderson" nosuffix="Anderson" isleaf="True"></node>
+<node gid="395" id="20" text="15" label="15" nosuffix="15" isleaf="True"></node>
+<node gid="396" id="21" text="Western" label="Western" nosuffix="Western" isleaf="True"></node>
+<node gid="397" id="22" text="Lebanon" label="Lebanon" nosuffix="Lebanon" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="ARG0" ></edge>
+<edge head="0" tail="2" label="ARG1" ></edge>
+<edge head="2" tail="3" label="ARG0" ></edge>
+<edge head="2" tail="17" label="polarity" ></edge>
+<edge head="2" tail="6" label="ARG1" ></edge>
+<edge head="3" tail="4" label="mod" ></edge>
+<edge head="4" tail="5" label="name" ></edge>
+<edge head="5" tail="18" label="op1" ></edge>
+<edge head="6" tail="7" label="topic" ></edge>
+<edge head="7" tail="8" label="ARG1" ></edge>
+<edge head="8" tail="9" label="op1" ></edge>
+<edge head="8" tail="11" label="op2" ></edge>
+<edge head="9" tail="10" label="name" ></edge>
+<edge head="10" tail="19" label="op1" ></edge>
+<edge head="11" tail="20" label="quant" ></edge>
+<edge head="11" tail="12" label="mod" ></edge>
+<edge head="11" tail="13" label="location" ></edge>
+<edge head="11" tail="15" label="location" ></edge>
+<edge head="13" tail="14" label="name" ></edge>
+<edge head="14" tail="21" label="op1" ></edge>
+<edge head="15" tail="16" label="name" ></edge>
+<edge head="16" tail="22" label="op1" ></edge>
+</edges>
+</graph>
+<graph id="19">
+<nodes>
+<node gid="398" id="0" text="state-01" label="x10" nosuffix="state" isleaf="False"></node>
+<node gid="399" id="1" text="date-entity" label="x1" nosuffix="date" isleaf="True"></node>
+<node gid="400" id="2" text="war" label="x6" nosuffix="war" isleaf="False"></node>
+<node gid="401" id="3" text="name" label="n" nosuffix="name" isleaf="False"></node>
+<node gid="402" id="4" text="null_tag" label="x5" nosuffix="null_tag" isleaf="True"></node>
+<node gid="403" id="5" text="year" label="x13" nosuffix="year" isleaf="True"></node>
+<node gid="404" id="6" text="revive-01" label="x15" nosuffix="revive" isleaf="False"></node>
+<node gid="405" id="7" text="offer-01" label="x18" nosuffix="offer" isleaf="False"></node>
+<node gid="406" id="8" text="old" label="x17" nosuffix="old" isleaf="True"></node>
+<node gid="407" id="9" text="trade-01" label="x20" nosuffix="trade" isleaf="False"></node>
+<node gid="408" id="10" text="and" label="x22" nosuffix="and" isleaf="False"></node>
+<node gid="409" id="11" text="person" label="x21" nosuffix="person" isleaf="False"></node>
+<node gid="410" id="12" text="name" label="n1" nosuffix="name" isleaf="False"></node>
+<node gid="411" id="13" text="person" label="x23" nosuffix="person" isleaf="False"></node>
+<node gid="412" id="14" text="name" label="n2" nosuffix="name" isleaf="False"></node>
+<node gid="413" id="15" text="and" label="x26" nosuffix="and" isleaf="False"></node>
+<node gid="414" id="16" text="person" label="x25" nosuffix="person" isleaf="False"></node>
+<node gid="415" id="17" text="name" label="n3" nosuffix="name" isleaf="False"></node>
+<node gid="416" id="18" text="person" label="x27" nosuffix="person" isleaf="False"></node>
+<node gid="417" id="19" text="name" label="n4" nosuffix="name" isleaf="False"></node>
+<node gid="418" id="20" text="comrade" label="x28" nosuffix="comrade" isleaf="False"></node>
+<node gid="419" id="21" text="jail-01" label="x29" nosuffix="jail" isleaf="False"></node>
+<node gid="420" id="22" text="country" label="x31" nosuffix="country" isleaf="False"></node>
+<node gid="421" id="23" text="name" label="n5" nosuffix="name" isleaf="False"></node>
+<node gid="422" id="24" text="Jihad" label="Jihad" nosuffix="Jihad" isleaf="True"></node>
+<node gid="423" id="25" text="Anderson" label="Anderson" nosuffix="Anderson" isleaf="True"></node>
+<node gid="424" id="26" text="Sutherland" label="Sutherland" nosuffix="Sutherland" isleaf="True"></node>
+<node gid="425" id="27" text="Anderson" label="Anderson" nosuffix="Anderson" isleaf="True"></node>
+<node gid="426" id="28" text="Sutherland" label="Sutherland" nosuffix="Sutherland" isleaf="True"></node>
+<node gid="427" id="29" text="Kuwait" label="Kuwait" nosuffix="Kuwait" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="time" ></edge>
+<edge head="0" tail="2" label="ARG0" ></edge>
+<edge head="0" tail="5" label="time" ></edge>
+<edge head="0" tail="6" label="ARG0-of" ></edge>
+<edge head="2" tail="3" label="name" ></edge>
+<edge head="2" tail="4" label="null_edge" ></edge>
+<edge head="3" tail="24" label="op1" ></edge>
+<edge head="6" tail="7" label="ARG1" ></edge>
+<edge head="7" tail="8" label="mod" ></edge>
+<edge head="7" tail="9" label="ARG1" ></edge>
+<edge head="9" tail="10" label="ARG1" ></edge>
+<edge head="9" tail="15" label="ARG2" ></edge>
+<edge head="10" tail="11" label="op1" ></edge>
+<edge head="10" tail="13" label="op2" ></edge>
+<edge head="11" tail="12" label="name" ></edge>
+<edge head="12" tail="25" label="op1" ></edge>
+<edge head="13" tail="14" label="name" ></edge>
+<edge head="14" tail="26" label="op1" ></edge>
+<edge head="15" tail="16" label="op1" ></edge>
+<edge head="15" tail="18" label="op2" ></edge>
+<edge head="15" tail="20" label="op2" ></edge>
+<edge head="16" tail="17" label="name" ></edge>
+<edge head="17" tail="27" label="op1" ></edge>
+<edge head="18" tail="19" label="name" ></edge>
+<edge head="19" tail="28" label="op1" ></edge>
+<edge head="20" tail="21" label="ARG1-of" ></edge>
+<edge head="21" tail="22" label="location" ></edge>
+<edge head="22" tail="23" label="name" ></edge>
+<edge head="23" tail="29" label="op1" ></edge>
+</edges>
+</graph>
+<graph id="20">
+<nodes>
+<node gid="428" id="0" text="accompany-01" label="x15" nosuffix="accompany" isleaf="False"></node>
+<node gid="429" id="1" text="thing" label="x2" nosuffix="thing" isleaf="False"></node>
+<node gid="430" id="2" text="copy-01" label="c" nosuffix="copy" isleaf="True"></node>
+<node gid="431" id="3" text="state-01" label="x5" nosuffix="state" isleaf="False"></node>
+<node gid="432" id="4" text="deliver-01" label="x6" nosuffix="deliver" isleaf="False"></node>
+<node gid="433" id="5" text="agency" label="x11" nosuffix="agency" isleaf="False"></node>
+<node gid="434" id="6" text="world-region" label="x9" nosuffix="world" isleaf="False"></node>
+<node gid="435" id="7" text="name" label="n3" nosuffix="name" isleaf="False"></node>
+<node gid="436" id="8" text="news" label="x10" nosuffix="news" isleaf="True"></node>
+<node gid="437" id="9" text="city" label="x13" nosuffix="city" isleaf="False"></node>
+<node gid="438" id="10" text="name" label="n2" nosuffix="name" isleaf="False"></node>
+<node gid="439" id="11" text="photograph" label="x18" nosuffix="photograph" isleaf="False"></node>
+<node gid="440" id="12" text="person" label="x20" nosuffix="person" isleaf="False"></node>
+<node gid="441" id="13" text="name" label="n" nosuffix="name" isleaf="False"></node>
+<node gid="442" id="14" text="resemble-01" label="x21" nosuffix="resemble" isleaf="False"></node>
+<node gid="443" id="15" text="similar" label="s" nosuffix="similar" isleaf="True"></node>
+<node gid="444" id="16" text="release-01" label="x24" nosuffix="release" isleaf="False"></node>
+<node gid="445" id="17" text="event" label="x25" nosuffix="event" isleaf="False"></node>
+<node gid="446" id="18" text="name" label="n1" nosuffix="name" isleaf="False"></node>
+<node gid="447" id="19" text="after" label="x30" nosuffix="after" isleaf="False"></node>
+<node gid="448" id="20" text="birthday" label="x35" nosuffix="birthday" isleaf="False"></node>
+<node gid="449" id="21" text="name" label="x32" nosuffix="name" isleaf="False"></node>
+<node gid="450" id="22" text="free" label="x31" nosuffix="free" isleaf="True"></node>
+<node gid="451" id="23" text="last" label="x34" nosuffix="last" isleaf="True"></node>
+<node gid="452" id="24" text="Western" label="Western" nosuffix="Western" isleaf="True"></node>
+<node gid="453" id="25" text="Beirut" label="Beirut" nosuffix="Beirut" isleaf="True"></node>
+<node gid="454" id="26" text="Anderson" label="Anderson" nosuffix="Anderson" isleaf="True"></node>
+<node gid="455" id="27" text="Nov." label="Nov." nosuffix="Nov." isleaf="True"></node>
+<node gid="456" id="28" text="4" label="4" nosuffix="4" isleaf="True"></node>
+<node gid="457" id="29" text="," label="," nosuffix="," isleaf="True"></node>
+<node gid="458" id="30" text="1988" label="1988" nosuffix="1988" isleaf="True"></node>
+<node gid="459" id="31" text="Terry" label="Terry" nosuffix="Terry" isleaf="True"></node>
+<node gid="460" id="32" text="Anderson" label="Anderson" nosuffix="Anderson" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="ARG1" ></edge>
+<edge head="0" tail="11" label="ARG0" ></edge>
+<edge head="1" tail="2" label="ARG2-of" ></edge>
+<edge head="1" tail="3" label="ARG1" ></edge>
+<edge head="3" tail="4" label="ARG1-of" ></edge>
+<edge head="4" tail="5" label="ARG2" ></edge>
+<edge head="4" tail="9" label="location" ></edge>
+<edge head="5" tail="6" label="null_edge" ></edge>
+<edge head="5" tail="8" label="mod" ></edge>
+<edge head="6" tail="7" label="name" ></edge>
+<edge head="7" tail="24" label="op1" ></edge>
+<edge head="9" tail="10" label="name" ></edge>
+<edge head="10" tail="25" label="op1" ></edge>
+<edge head="11" tail="12" label="ARG0" ></edge>
+<edge head="11" tail="14" label="ARG1-of" ></edge>
+<edge head="11" tail="16" label="ARG1-of" ></edge>
+<edge head="12" tail="13" label="name" ></edge>
+<edge head="13" tail="26" label="op1" ></edge>
+<edge head="14" tail="15" label="op" ></edge>
+<edge head="16" tail="17" label="time" ></edge>
+<edge head="16" tail="19" label="time" ></edge>
+<edge head="17" tail="18" label="name" ></edge>
+<edge head="18" tail="27" label="op1" ></edge>
+<edge head="18" tail="28" label="op2" ></edge>
+<edge head="18" tail="29" label="op3" ></edge>
+<edge head="18" tail="30" label="op4" ></edge>
+<edge head="19" tail="20" label="op1" ></edge>
+<edge head="20" tail="21" label="name" ></edge>
+<edge head="20" tail="23" label="mod" ></edge>
+<edge head="21" tail="31" label="op1" ></edge>
+<edge head="21" tail="32" label="op2" ></edge>
+<edge head="21" tail="22" label="ARG0-of" ></edge>
+</edges>
+</graph>
+<graph id="21">
+<nodes>
+<node gid="461" id="0" text="see-01" label="x4" nosuffix="see" isleaf="False"></node>
+<node gid="462" id="1" text="thing" label="x2" nosuffix="thing" isleaf="False"></node>
+<node gid="463" id="2" text="state-01" label="s" nosuffix="state" isleaf="True"></node>
+<node gid="464" id="3" text="respond-01" label="x7" nosuffix="respond" isleaf="False"></node>
+<node gid="465" id="4" text="declare-02" label="x10" nosuffix="declare" isleaf="False"></node>
+<node gid="466" id="5" text="name" label="x14" nosuffix="name" isleaf="False"></node>
+<node gid="467" id="6" text="have-org-role-91" label="x13" nosuffix="have" isleaf="False"></node>
+<node gid="468" id="7" text="president" label="p" nosuffix="president" isleaf="True"></node>
+<node gid="469" id="8" text="country" label="x17" nosuffix="country" isleaf="False"></node>
+<node gid="470" id="9" text="name" label="n" nosuffix="name" isleaf="False"></node>
+<node gid="471" id="10" text="use-01" label="x25" nosuffix="use" isleaf="False"></node>
+<node gid="472" id="11" text="newspaper" label="x20" nosuffix="newspaper" isleaf="False"></node>
+<node gid="473" id="12" text="name" label="n1" nosuffix="name" isleaf="False"></node>
+<node gid="474" id="13" text="have-org-role-91" label="x19" nosuffix="have" isleaf="False"></node>
+<node gid="475" id="14" text="president" label="p1" nosuffix="president" isleaf="True"></node>
+<node gid="476" id="15" text="country" label="x23" nosuffix="country" isleaf="False"></node>
+<node gid="477" id="16" text="name" label="n2" nosuffix="name" isleaf="False"></node>
+<node gid="478" id="17" text="influence-01" label="x29" nosuffix="influence" isleaf="False"></node>
+<node gid="479" id="18" text="state-01" label="x28" nosuffix="state" isleaf="True"></node>
+<node gid="480" id="19" text="free-01" label="x31" nosuffix="free" isleaf="False"></node>
+<node gid="481" id="20" text="hostage" label="x33" nosuffix="hostage" isleaf="True"></node>
+<node gid="482" id="21" text="release-01" label="x38" nosuffix="release" isleaf="False"></node>
+<node gid="483" id="22" text="country" label="x36" nosuffix="country" isleaf="False"></node>
+<node gid="484" id="23" text="name" label="n3" nosuffix="name" isleaf="False"></node>
+<node gid="485" id="24" text="asset" label="x40" nosuffix="asset" isleaf="False"></node>
+<node gid="486" id="25" text="freeze-02" label="x50" nosuffix="freeze" isleaf="False"></node>
+<node gid="487" id="26" text="since" label="x51" nosuffix="since" isleaf="False"></node>
+<node gid="488" id="27" text="date-entity" label="x52" nosuffix="date" isleaf="False"></node>
+<node gid="489" id="28" text="date-entity" label="xap0" nosuffix="date" isleaf="False"></node>
+<node gid="490" id="29" text="monday" label="x11" nosuffix="monday" isleaf="True"></node>
+<node gid="491" id="30" text="Hashemi" label="Hashemi" nosuffix="Hashemi" isleaf="True"></node>
+<node gid="492" id="31" text="Rafsanjani" label="Rafsanjani" nosuffix="Rafsanjani" isleaf="True"></node>
+<node gid="493" id="32" text="Iran" label="Iran" nosuffix="Iran" isleaf="True"></node>
+<node gid="494" id="33" text="Hashemi" label="Hashemi" nosuffix="Hashemi" isleaf="True"></node>
+<node gid="495" id="34" text="Rafsanjani" label="Rafsanjani" nosuffix="Rafsanjani" isleaf="True"></node>
+<node gid="496" id="35" text="Iran" label="Iran" nosuffix="Iran" isleaf="True"></node>
+<node gid="497" id="36" text="United" label="United" nosuffix="United" isleaf="True"></node>
+<node gid="498" id="37" text="States" label="States" nosuffix="States" isleaf="True"></node>
+<node gid="499" id="38" text="1979" label="1979" nosuffix="1979" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="ARG1" ></edge>
+<edge head="0" tail="3" label="ARG2-of" ></edge>
+<edge head="1" tail="2" label="ARG1-of" ></edge>
+<edge head="3" tail="4" label="ARG1" ></edge>
+<edge head="4" tail="5" label="name" ></edge>
+<edge head="4" tail="28" label="time" ></edge>
+<edge head="5" tail="30" label="op1" ></edge>
+<edge head="5" tail="31" label="op2" ></edge>
+<edge head="5" tail="6" label="ARG0-of" ></edge>
+<edge head="6" tail="7" label="ARG2" ></edge>
+<edge head="6" tail="8" label="ARG1" ></edge>
+<edge head="6" tail="10" label="ARG1" ></edge>
+<edge head="8" tail="9" label="name" ></edge>
+<edge head="9" tail="32" label="op1" ></edge>
+<edge head="10" tail="11" label="ARG0" ></edge>
+<edge head="10" tail="17" label="ARG1" ></edge>
+<edge head="10" tail="19" label="ARG2" ></edge>
+<edge head="11" tail="12" label="name" ></edge>
+<edge head="11" tail="13" label="ARG0-of" ></edge>
+<edge head="12" tail="33" label="op1" ></edge>
+<edge head="12" tail="34" label="op2" ></edge>
+<edge head="13" tail="14" label="ARG2" ></edge>
+<edge head="13" tail="15" label="ARG1" ></edge>
+<edge head="15" tail="16" label="name" ></edge>
+<edge head="16" tail="35" label="op1" ></edge>
+<edge head="17" tail="18" label="ARG0" ></edge>
+<edge head="19" tail="20" label="ARG1" ></edge>
+<edge head="19" tail="21" label="time" ></edge>
+<edge head="21" tail="22" label="ARG0" ></edge>
+<edge head="21" tail="24" label="ARG1" ></edge>
+<edge head="22" tail="23" label="name" ></edge>
+<edge head="23" tail="36" label="op1" ></edge>
+<edge head="23" tail="37" label="op2" ></edge>
+<edge head="24" tail="25" label="ARG1-of" ></edge>
+<edge head="25" tail="26" label="time" ></edge>
+<edge head="26" tail="27" label="op1" ></edge>
+<edge head="27" tail="38" label="year" ></edge>
+<edge head="28" tail="29" label="weekday" ></edge>
+</edges>
+</graph>
+<graph id="22">
+<nodes>
+<node gid="500" id="0" text="refuse-01" label="x3" nosuffix="refuse" isleaf="False"></node>
+<node gid="501" id="1" text="country" label="x1" nosuffix="country" isleaf="False"></node>
+<node gid="502" id="2" text="name" label="n" nosuffix="name" isleaf="False"></node>
+<node gid="503" id="3" text="free-01" label="x5" nosuffix="free" isleaf="False"></node>
+<node gid="504" id="4" text="prsoner" label="x7" nosuffix="prsoner" isleaf="True"></node>
+<node gid="505" id="5" text="release-01" label="x16" nosuffix="release" isleaf="False"></node>
+<node gid="506" id="6" text="date-entity" label="x18" nosuffix="date" isleaf="True"></node>
+<node gid="507" id="7" text="after" label="x19" nosuffix="after" isleaf="False"></node>
+<node gid="508" id="8" text="complete-01" label="x20" nosuffix="complete" isleaf="False"></node>
+<node gid="509" id="9" text="sentence-01" label="x22" nosuffix="sentence" isleaf="False"></node>
+<node gid="510" id="10" text="person" label="x21" nosuffix="person" isleaf="False"></node>
+<node gid="511" id="11" text="name" label="n1" nosuffix="name" isleaf="False"></node>
+<node gid="512" id="12" text="person" label="xap0" nosuffix="person" isleaf="False"></node>
+<node gid="513" id="13" text="have-org-role-91" label="x11" nosuffix="have" isleaf="False"></node>
+<node gid="514" id="14" text="member" label="m" nosuffix="member" isleaf="True"></node>
+<node gid="515" id="15" text="group" label="x14" nosuffix="group" isleaf="True"></node>
+<node gid="516" id="16" text="Kuwait" label="Kuwait" nosuffix="Kuwait" isleaf="True"></node>
+<node gid="517" id="17" text="five-year" label="five-year" nosuffix="five" isleaf="True"></node>
+<node gid="518" id="18" text="2" label="2" nosuffix="2" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="ARG0" ></edge>
+<edge head="0" tail="3" label="ARG1" ></edge>
+<edge head="1" tail="2" label="name" ></edge>
+<edge head="2" tail="16" label="op1" ></edge>
+<edge head="3" tail="1" label="ARG0" ></edge>
+<edge head="3" tail="4" label="ARG1" ></edge>
+<edge head="3" tail="5" label="concession-of" ></edge>
+<edge head="5" tail="1" label="ARG0" ></edge>
+<edge head="5" tail="6" label="time" ></edge>
+<edge head="5" tail="7" label="time" ></edge>
+<edge head="5" tail="12" label="ARG1" ></edge>
+<edge head="7" tail="8" label="op1" ></edge>
+<edge head="8" tail="9" label="ARG1" ></edge>
+<edge head="9" tail="10" label="mod" ></edge>
+<edge head="10" tail="11" label="name" ></edge>
+<edge head="11" tail="17" label="op1" ></edge>
+<edge head="12" tail="18" label="quant" ></edge>
+<edge head="12" tail="13" label="ARG0-of" ></edge>
+<edge head="13" tail="14" label="ARG2" ></edge>
+<edge head="13" tail="15" label="ARG1" ></edge>
+</edges>
+</graph>
+<graph id="23">
+<nodes>
+<node gid="519" id="0" text="say-01" label="x5" nosuffix="say" isleaf="False"></node>
+<node gid="520" id="1" text="country" label="x2" nosuffix="country" isleaf="False"></node>
+<node gid="521" id="2" text="name" label="n" nosuffix="name" isleaf="False"></node>
+<node gid="522" id="3" text="negotiate-01" label="x11" nosuffix="negotiate" isleaf="False"></node>
+<node gid="523" id="4" text="country" label="x7" nosuffix="country" isleaf="False"></node>
+<node gid="524" id="5" text="name" label="n1" nosuffix="name" isleaf="False"></node>
+<node gid="525" id="6" text="terrorist" label="x13" nosuffix="terrorist" isleaf="True"></node>
+<node gid="526" id="7" text="United" label="United" nosuffix="United" isleaf="True"></node>
+<node gid="527" id="8" text="States" label="States" nosuffix="States" isleaf="True"></node>
+<node gid="528" id="9" text="United" label="United" nosuffix="United" isleaf="True"></node>
+<node gid="529" id="10" text="States" label="States" nosuffix="States" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="ARG0" ></edge>
+<edge head="0" tail="3" label="ARG1" ></edge>
+<edge head="1" tail="2" label="name" ></edge>
+<edge head="2" tail="7" label="op1" ></edge>
+<edge head="2" tail="8" label="op2" ></edge>
+<edge head="3" tail="4" label="ARG0" ></edge>
+<edge head="3" tail="6" label="ARG2" ></edge>
+<edge head="4" tail="5" label="name" ></edge>
+<edge head="5" tail="9" label="op1" ></edge>
+<edge head="5" tail="10" label="op2" ></edge>
+</edges>
+</graph>
+<graph id="24">
+<nodes>
+<node gid="530" id="0" text="hostage" label="x8" nosuffix="hostage" isleaf="False"></node>
+<node gid="531" id="1" text="and" label="x2" nosuffix="and" isleaf="False"></node>
+<node gid="532" id="2" text="person" label="x1" nosuffix="person" isleaf="False"></node>
+<node gid="533" id="3" text="name" label="n1" nosuffix="name" isleaf="False"></node>
+<node gid="534" id="4" text="person" label="x3" nosuffix="person" isleaf="False"></node>
+<node gid="535" id="5" text="name" label="n2" nosuffix="name" isleaf="False"></node>
+<node gid="536" id="6" text="country" label="x7" nosuffix="country" isleaf="False"></node>
+<node gid="537" id="7" text="name" label="n" nosuffix="name" isleaf="False"></node>
+<node gid="538" id="8" text="believe-01" label="x11" nosuffix="believe" isleaf="False"></node>
+<node gid="539" id="9" text="most" label="x10" nosuffix="most" isleaf="True"></node>
+<node gid="540" id="10" text="hold-01" label="x12" nosuffix="hold" isleaf="False"></node>
+<node gid="541" id="11" text="organization" label="x14" nosuffix="organization" isleaf="False"></node>
+<node gid="542" id="12" text="name" label="n3" nosuffix="name" isleaf="False"></node>
+<node gid="543" id="13" text="8" label="8" nosuffix="8" isleaf="True"></node>
+<node gid="544" id="14" text="Anderson" label="Anderson" nosuffix="Anderson" isleaf="True"></node>
+<node gid="545" id="15" text="Sutherland" label="Sutherland" nosuffix="Sutherland" isleaf="True"></node>
+<node gid="546" id="16" text="American" label="American" nosuffix="American" isleaf="True"></node>
+<node gid="547" id="17" text="pro-Iranians" label="pro-Iranians" nosuffix="pro" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="ARG1" ></edge>
+<edge head="0" tail="13" label="quant" ></edge>
+<edge head="0" tail="6" label="mod" ></edge>
+<edge head="0" tail="8" label="ARG1-of" ></edge>
+<edge head="1" tail="2" label="op1" ></edge>
+<edge head="1" tail="4" label="op2" ></edge>
+<edge head="2" tail="3" label="name" ></edge>
+<edge head="3" tail="14" label="op1" ></edge>
+<edge head="4" tail="5" label="name" ></edge>
+<edge head="5" tail="15" label="op1" ></edge>
+<edge head="6" tail="7" label="name" ></edge>
+<edge head="7" tail="16" label="op1" ></edge>
+<edge head="8" tail="9" label="ARG0" ></edge>
+<edge head="8" tail="10" label="ARG1" ></edge>
+<edge head="10" tail="11" label="ARG0" ></edge>
+<edge head="11" tail="12" label="name" ></edge>
+<edge head="12" tail="17" label="op1" ></edge>
+</edges>
+</graph>
+<graph id="25">
+<nodes>
+<node gid="548" id="0" text="state-01" label="x6" nosuffix="state" isleaf="False"></node>
+<node gid="549" id="1" text="jihad" label="x2" nosuffix="jihad" isleaf="False"></node>
+<node gid="550" id="2" text="null_tag" label="x1" nosuffix="null_tag" isleaf="True"></node>
+<node gid="551" id="3" text="null_tag" label="x4" nosuffix="null_tag" isleaf="True"></node>
+<node gid="552" id="4" text="jihad" label="x5" nosuffix="jihad" isleaf="True"></node>
+<node gid="553" id="5" text="person" label="x9" nosuffix="person" isleaf="False"></node>
+<node gid="554" id="6" text="lead-02" label="l" nosuffix="lead" isleaf="True"></node>
+<node gid="555" id="7" text="radical" label="x14" nosuffix="radical" isleaf="False"></node>
+<node gid="556" id="8" text="country" label="x11" nosuffix="country" isleaf="False"></node>
+<node gid="557" id="9" text="name" label="n" nosuffix="name" isleaf="False"></node>
+<node gid="558" id="10" text="revolution" label="x13" nosuffix="revolution" isleaf="True"></node>
+<node gid="559" id="11" text="name" label="x19" nosuffix="name" isleaf="False"></node>
+<node gid="560" id="12" text="former" label="x16" nosuffix="former" isleaf="True"></node>
+<node gid="561" id="13" text="interior" label="x17" nosuffix="interior" isleaf="True"></node>
+<node gid="562" id="14" text="have-org-role-91" label="x18" nosuffix="have" isleaf="False"></node>
+<node gid="563" id="15" text="minister" label="m" nosuffix="minister" isleaf="True"></node>
+<node gid="564" id="16" text="visit-01" label="x27" nosuffix="visit" isleaf="False"></node>
+<node gid="565" id="17" text="person" label="x26" nosuffix="person" isleaf="False"></node>
+<node gid="566" id="18" text="name" label="n1" nosuffix="name" isleaf="False"></node>
+<node gid="567" id="19" text="country" label="x29" nosuffix="country" isleaf="False"></node>
+<node gid="568" id="20" text="name" label="n2" nosuffix="name" isleaf="False"></node>
+<node gid="569" id="21" text="Iran" label="Iran" nosuffix="Iran" isleaf="True"></node>
+<node gid="570" id="22" text="Ali" label="Ali" nosuffix="Ali" isleaf="True"></node>
+<node gid="571" id="23" text="Akbar" label="Akbar" nosuffix="Akbar" isleaf="True"></node>
+<node gid="572" id="24" text="Mohtashemi" label="Mohtashemi" nosuffix="Mohtashemi" isleaf="True"></node>
+<node gid="573" id="25" text="three-week" label="three-week" nosuffix="three" isleaf="True"></node>
+<node gid="574" id="26" text="Lebanon" label="Lebanon" nosuffix="Lebanon" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="ARG0" ></edge>
+<edge head="0" tail="3" label="null_edge" ></edge>
+<edge head="0" tail="4" label="ARG0" ></edge>
+<edge head="0" tail="5" label="ARG1" ></edge>
+<edge head="1" tail="2" label="null_edge" ></edge>
+<edge head="5" tail="6" label="ARG0-of" ></edge>
+<edge head="5" tail="7" label="ARG1" ></edge>
+<edge head="5" tail="11" label="name" ></edge>
+<edge head="5" tail="16" label="ARG1" ></edge>
+<edge head="7" tail="8" label="poss" ></edge>
+<edge head="7" tail="10" label="ARG0-of" ></edge>
+<edge head="8" tail="9" label="name" ></edge>
+<edge head="9" tail="21" label="op1" ></edge>
+<edge head="11" tail="22" label="op1" ></edge>
+<edge head="11" tail="23" label="op2" ></edge>
+<edge head="11" tail="24" label="op3" ></edge>
+<edge head="11" tail="12" label="mod" ></edge>
+<edge head="11" tail="13" label="ARG0-of" ></edge>
+<edge head="11" tail="14" label="ARG0-of" ></edge>
+<edge head="14" tail="15" label="ARG2" ></edge>
+<edge head="16" tail="17" label="duration" ></edge>
+<edge head="16" tail="19" label="ARG1" ></edge>
+<edge head="17" tail="18" label="name" ></edge>
+<edge head="18" tail="25" label="op1" ></edge>
+<edge head="19" tail="20" label="name" ></edge>
+<edge head="20" tail="26" label="op1" ></edge>
+</edges>
+</graph>
+<graph id="26">
+<nodes>
+<node gid="575" id="0" text="meet-03" label="x7" nosuffix="meet" isleaf="False"></node>
+<node gid="576" id="1" text="person" label="x4" nosuffix="person" isleaf="False"></node>
+<node gid="577" id="2" text="name" label="n" nosuffix="name" isleaf="False"></node>
+<node gid="578" id="3" text="former" label="x1" nosuffix="former" isleaf="True"></node>
+<node gid="579" id="4" text="have-org-role-91" label="x3" nosuffix="have" isleaf="False"></node>
+<node gid="580" id="5" text="minister" label="m" nosuffix="minister" isleaf="True"></node>
+<node gid="581" id="6" text="interior" label="x2" nosuffix="interior" isleaf="True"></node>
+<node gid="582" id="7" text="publication" label="x10" nosuffix="publication" isleaf="False"></node>
+<node gid="583" id="8" text="name" label="n1" nosuffix="name" isleaf="False"></node>
+<node gid="584" id="9" text="prominent" label="x9" nosuffix="prominent" isleaf="True"></node>
+<node gid="585" id="10" text="figure" label="x14" nosuffix="figure" isleaf="False"></node>
+<node gid="586" id="11" text="include-91" label="x12" nosuffix="include" isleaf="True"></node>
+<node gid="587" id="12" text="lead-02" label="x13" nosuffix="lead" isleaf="True"></node>
+<node gid="588" id="13" text="political-party" label="x16" nosuffix="political" isleaf="False"></node>
+<node gid="589" id="14" text="name" label="n2" nosuffix="name" isleaf="False"></node>
+<node gid="590" id="15" text="believe-01" label="x18" nosuffix="believe" isleaf="False"></node>
+<node gid="591" id="16" text="group" label="x23" nosuffix="group" isleaf="False"></node>
+<node gid="592" id="17" text="umbrella" label="x22" nosuffix="umbrella" isleaf="True"></node>
+<node gid="593" id="18" text="gang" label="x26" nosuffix="gang" isleaf="False"></node>
+<node gid="594" id="19" text="kidnap-01" label="x25" nosuffix="kidnap" isleaf="True"></node>
+<node gid="595" id="20" text="Ali" label="Ali" nosuffix="Ali" isleaf="True"></node>
+<node gid="596" id="21" text="Akbar" label="Akbar" nosuffix="Akbar" isleaf="True"></node>
+<node gid="597" id="22" text="Mohtashemi" label="Mohtashemi" nosuffix="Mohtashemi" isleaf="True"></node>
+<node gid="598" id="23" text="Shiites" label="Shiites" nosuffix="Shiites" isleaf="True"></node>
+<node gid="599" id="24" text="Hezbollah" label="Hezbollah" nosuffix="Hezbollah" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="ARG0" ></edge>
+<edge head="0" tail="7" label="ARG0" ></edge>
+<edge head="0" tail="10" label="ARG1" ></edge>
+<edge head="1" tail="2" label="name" ></edge>
+<edge head="1" tail="3" label="mod" ></edge>
+<edge head="1" tail="4" label="ARG0-of" ></edge>
+<edge head="2" tail="20" label="op1" ></edge>
+<edge head="2" tail="21" label="op2" ></edge>
+<edge head="2" tail="22" label="op3" ></edge>
+<edge head="4" tail="5" label="ARG2" ></edge>
+<edge head="4" tail="6" label="mod" ></edge>
+<edge head="7" tail="8" label="name" ></edge>
+<edge head="7" tail="9" label="mod" ></edge>
+<edge head="8" tail="23" label="op1" ></edge>
+<edge head="10" tail="11" label="ARG2-of" ></edge>
+<edge head="10" tail="12" label="ARG0-of" ></edge>
+<edge head="10" tail="13" label="location" ></edge>
+<edge head="10" tail="15" label="ARG1-of" ></edge>
+<edge head="13" tail="14" label="name" ></edge>
+<edge head="14" tail="24" label="op1" ></edge>
+<edge head="15" tail="16" label="ARG1" ></edge>
+<edge head="16" tail="17" label="mod" ></edge>
+<edge head="16" tail="18" label="prep-for" ></edge>
+<edge head="18" tail="19" label="mod" ></edge>
+</edges>
+</graph>
+<graph id="27">
+<nodes>
+<node gid="600" id="0" text="clear" label="x4" nosuffix="clear" isleaf="False"></node>
+<node gid="601" id="1" text="come-03" label="x14" nosuffix="come" isleaf="False"></node>
+<node gid="602" id="2" text="person" label="x6" nosuffix="person" isleaf="False"></node>
+<node gid="603" id="3" text="name" label="n" nosuffix="name" isleaf="False"></node>
+<node gid="604" id="4" text="rival" label="x12" nosuffix="rival" isleaf="False"></node>
+<node gid="605" id="5" text="person" label="x8" nosuffix="person" isleaf="False"></node>
+<node gid="606" id="6" text="name" label="n2" nosuffix="name" isleaf="False"></node>
+<node gid="607" id="7" text="main" label="x10" nosuffix="main" isleaf="True"></node>
+<node gid="608" id="8" text="politics" label="x11" nosuffix="politics" isleaf="True"></node>
+<node gid="609" id="9" text="country" label="x16" nosuffix="country" isleaf="False"></node>
+<node gid="610" id="10" text="name" label="n1" nosuffix="name" isleaf="False"></node>
+<node gid="611" id="11" text="Mohtashemi" label="Mohtashemi" nosuffix="Mohtashemi" isleaf="True"></node>
+<node gid="612" id="12" text="Rafsanjani" label="Rafsanjani" nosuffix="Rafsanjani" isleaf="True"></node>
+<node gid="613" id="13" text="Lebanon" label="Lebanon" nosuffix="Lebanon" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="time" ></edge>
+<edge head="1" tail="2" label="ARG1" ></edge>
+<edge head="1" tail="9" label="ARG4" ></edge>
+<edge head="2" tail="3" label="name" ></edge>
+<edge head="2" tail="4" label="ARG0-of" ></edge>
+<edge head="3" tail="11" label="op1" ></edge>
+<edge head="4" tail="5" label="poss" ></edge>
+<edge head="4" tail="7" label="mod" ></edge>
+<edge head="4" tail="8" label="mod" ></edge>
+<edge head="5" tail="6" label="name" ></edge>
+<edge head="6" tail="12" label="op1" ></edge>
+<edge head="9" tail="10" label="name" ></edge>
+<edge head="10" tail="13" label="op1" ></edge>
+</edges>
+</graph>
+<graph id="28">
+<nodes>
+<node gid="614" id="0" text="contrast-01" label="x1" nosuffix="contrast" isleaf="False"></node>
+<node gid="615" id="1" text="underline-01" label="x4" nosuffix="underline" isleaf="False"></node>
+<node gid="616" id="2" text="trip-01" label="x3" nosuffix="trip" isleaf="True"></node>
+<node gid="617" id="3" text="struggle-01" label="x12" nosuffix="struggle" isleaf="False"></node>
+<node gid="618" id="4" text="name" label="x8" nosuffix="name" isleaf="False"></node>
+<node gid="619" id="5" text="former" label="x5" nosuffix="former" isleaf="True"></node>
+<node gid="620" id="6" text="interior" label="x6" nosuffix="interior" isleaf="True"></node>
+<node gid="621" id="7" text="have-org-role-91" label="x7" nosuffix="have" isleaf="False"></node>
+<node gid="622" id="8" text="minister" label="m" nosuffix="minister" isleaf="True"></node>
+<node gid="623" id="9" text="power" label="x11" nosuffix="power" isleaf="True"></node>
+<node gid="624" id="10" text="person" label="x14" nosuffix="person" isleaf="False"></node>
+<node gid="625" id="11" text="name" label="n" nosuffix="name" isleaf="False"></node>
+<node gid="626" id="12" text="lead-02" label="x16" nosuffix="lead" isleaf="False"></node>
+<node gid="627" id="13" text="pragmatist" label="x22" nosuffix="pragmatist" isleaf="False"></node>
+<node gid="628" id="14" text="moderate" label="x20" nosuffix="moderate" isleaf="False"></node>
+<node gid="629" id="15" text="compare-01" label="x19" nosuffix="compare" isleaf="True"></node>
+<node gid="630" id="16" text="want-01" label="x25" nosuffix="want" isleaf="False"></node>
+<node gid="631" id="17" text="restore-01" label="x27" nosuffix="restore" isleaf="False"></node>
+<node gid="632" id="18" text="relation" label="x28" nosuffix="relation" isleaf="False"></node>
+<node gid="633" id="19" text="world-region" label="x31" nosuffix="world" isleaf="False"></node>
+<node gid="634" id="20" text="name" label="n1" nosuffix="name" isleaf="False"></node>
+<node gid="635" id="21" text="Ali" label="Ali" nosuffix="Ali" isleaf="True"></node>
+<node gid="636" id="22" text="Akbar" label="Akbar" nosuffix="Akbar" isleaf="True"></node>
+<node gid="637" id="23" text="Mohtashemi" label="Mohtashemi" nosuffix="Mohtashemi" isleaf="True"></node>
+<node gid="638" id="24" text="Rafsanjani" label="Rafsanjani" nosuffix="Rafsanjani" isleaf="True"></node>
+<node gid="639" id="25" text="West" label="West" nosuffix="West" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="ARG2" ></edge>
+<edge head="1" tail="2" label="ARG0" ></edge>
+<edge head="1" tail="3" label="ARG1" ></edge>
+<edge head="3" tail="4" label="name" ></edge>
+<edge head="3" tail="9" label="mod" ></edge>
+<edge head="3" tail="10" label="ARG1" ></edge>
+<edge head="4" tail="21" label="op1" ></edge>
+<edge head="4" tail="22" label="op2" ></edge>
+<edge head="4" tail="23" label="op3" ></edge>
+<edge head="4" tail="5" label="mod" ></edge>
+<edge head="4" tail="6" label="ARG0-of" ></edge>
+<edge head="4" tail="7" label="ARG0-of" ></edge>
+<edge head="7" tail="8" label="ARG2" ></edge>
+<edge head="10" tail="11" label="name" ></edge>
+<edge head="10" tail="12" label="null_edge" ></edge>
+<edge head="11" tail="24" label="op1" ></edge>
+<edge head="12" tail="13" label="ARG1" ></edge>
+<edge head="13" tail="14" label="mod" ></edge>
+<edge head="13" tail="16" label="ARG0-of" ></edge>
+<edge head="14" tail="15" label="degree" ></edge>
+<edge head="16" tail="17" label="ARG1" ></edge>
+<edge head="17" tail="18" label="ARG1" ></edge>
+<edge head="18" tail="19" label="prep-with" ></edge>
+<edge head="19" tail="20" label="name" ></edge>
+<edge head="20" tail="25" label="op1" ></edge>
+</edges>
+</graph>
+<graph id="29">
+<nodes>
+<node gid="640" id="0" text="say-01" label="x4" nosuffix="say" isleaf="False"></node>
+<node gid="641" id="1" text="organization" label="x3" nosuffix="organization" isleaf="False"></node>
+<node gid="642" id="2" text="name" label="n" nosuffix="name" isleaf="False"></node>
+<node gid="643" id="3" text="know-01" label="x2" nosuffix="know" isleaf="True"></node>
+<node gid="644" id="4" text="privately" label="x5" nosuffix="privately" isleaf="True"></node>
+<node gid="645" id="5" text="clear" label="x13" nosuffix="clear" isleaf="False"></node>
+<node gid="646" id="6" text="state-01" label="x9" nosuffix="state" isleaf="False"></node>
+<node gid="647" id="7" text="null_tag" label="x7" nosuffix="null_tag" isleaf="True"></node>
+<node gid="648" id="8" text="jihad" label="x8" nosuffix="jihad" isleaf="True"></node>
+<node gid="649" id="9" text="control-01" label="x23" nosuffix="control" isleaf="False"></node>
+<node gid="650" id="10" text="person" label="x21" nosuffix="person" isleaf="False"></node>
+<node gid="651" id="11" text="name" label="n1" nosuffix="name" isleaf="False"></node>
+<node gid="652" id="12" text="Shiite" label="Shiite" nosuffix="Shiite" isleaf="True"></node>
+<node gid="653" id="13" text="Rafsanjani" label="Rafsanjani" nosuffix="Rafsanjani" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="ARG0" ></edge>
+<edge head="0" tail="4" label="manner" ></edge>
+<edge head="0" tail="5" label="ARG1" ></edge>
+<edge head="1" tail="2" label="name" ></edge>
+<edge head="1" tail="3" label="mod" ></edge>
+<edge head="2" tail="12" label="op1" ></edge>
+<edge head="5" tail="6" label="domain" ></edge>
+<edge head="5" tail="9" label="domain" ></edge>
+<edge head="6" tail="7" label="null_edge" ></edge>
+<edge head="6" tail="8" label="ARG0" ></edge>
+<edge head="9" tail="10" label="ARG0" ></edge>
+<edge head="10" tail="11" label="name" ></edge>
+<edge head="11" tail="13" label="op1" ></edge>
+</edges>
+</graph>
+<graph id="30">
+<nodes>
+<node gid="654" id="0" text="appear-02" label="x2" nosuffix="appear" isleaf="False"></node>
+<node gid="655" id="1" text="political-party" label="x1" nosuffix="political" isleaf="False"></node>
+<node gid="656" id="2" text="name" label="n" nosuffix="name" isleaf="False"></node>
+<node gid="657" id="3" text="split-01" label="x5" nosuffix="split" isleaf="False"></node>
+<node gid="658" id="4" text="faction" label="x7" nosuffix="faction" isleaf="True"></node>
+<node gid="659" id="5" text="group" label="x12" nosuffix="group" isleaf="False"></node>
+<node gid="660" id="6" text="main" label="x11" nosuffix="main" isleaf="True"></node>
+<node gid="661" id="7" text="support-01" label="x13" nosuffix="support" isleaf="False"></node>
+<node gid="662" id="8" text="or" label="x16" nosuffix="or" isleaf="False"></node>
+<node gid="663" id="9" text="person" label="x15" nosuffix="person" isleaf="False"></node>
+<node gid="664" id="10" text="name" label="n1" nosuffix="name" isleaf="False"></node>
+<node gid="665" id="11" text="person" label="x17" nosuffix="person" isleaf="False"></node>
+<node gid="666" id="12" text="name" label="n2" nosuffix="name" isleaf="False"></node>
+<node gid="667" id="13" text="Hezbollah" label="Hezbollah" nosuffix="Hezbollah" isleaf="True"></node>
+<node gid="668" id="14" text="Rafsanjani" label="Rafsanjani" nosuffix="Rafsanjani" isleaf="True"></node>
+<node gid="669" id="15" text="Mohtashemi" label="Mohtashemi" nosuffix="Mohtashemi" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="ARG0" ></edge>
+<edge head="0" tail="3" label="ARG1" ></edge>
+<edge head="0" tail="5" label="ARG1" ></edge>
+<edge head="1" tail="2" label="name" ></edge>
+<edge head="2" tail="13" label="op1" ></edge>
+<edge head="3" tail="4" label="ARG2" ></edge>
+<edge head="5" tail="6" label="mod" ></edge>
+<edge head="5" tail="7" label="ARG0-of" ></edge>
+<edge head="7" tail="8" label="ARG1" ></edge>
+<edge head="8" tail="9" label="op1" ></edge>
+<edge head="8" tail="11" label="op2" ></edge>
+<edge head="9" tail="10" label="name" ></edge>
+<edge head="10" tail="14" label="op1" ></edge>
+<edge head="11" tail="12" label="name" ></edge>
+<edge head="12" tail="15" label="op1" ></edge>
+</edges>
+</graph>
+<graph id="31">
+<nodes>
+<node gid="670" id="0" text="dismiss-01" label="x2" nosuffix="dismiss" isleaf="False"></node>
+<node gid="671" id="1" text="person" label="x1" nosuffix="person" isleaf="False"></node>
+<node gid="672" id="2" text="name" label="n" nosuffix="name" isleaf="False"></node>
+<node gid="673" id="3" text="person" label="x3" nosuffix="person" isleaf="False"></node>
+<node gid="674" id="4" text="name" label="n1" nosuffix="name" isleaf="False"></node>
+<node gid="675" id="5" text="after" label="x4" nosuffix="after" isleaf="False"></node>
+<node gid="676" id="6" text="elect-01" label="x7" nosuffix="elect" isleaf="False"></node>
+<node gid="677" id="7" text="person" label="x5" nosuffix="person" isleaf="False"></node>
+<node gid="678" id="8" text="name" label="n2" nosuffix="name" isleaf="False"></node>
+<node gid="679" id="9" text="date-entity" label="x10" nosuffix="date" isleaf="False"></node>
+<node gid="680" id="10" text="have-org-role-91" label="x9" nosuffix="have" isleaf="False"></node>
+<node gid="681" id="11" text="president" label="p" nosuffix="president" isleaf="True"></node>
+<node gid="682" id="12" text="Rafsanjani" label="Rafsanjani" nosuffix="Rafsanjani" isleaf="True"></node>
+<node gid="683" id="13" text="Mohtashemi" label="Mohtashemi" nosuffix="Mohtashemi" isleaf="True"></node>
+<node gid="684" id="14" text="Rafsanjani" label="Rafsanjani" nosuffix="Rafsanjani" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="ARG0" ></edge>
+<edge head="0" tail="3" label="ARG1" ></edge>
+<edge head="0" tail="5" label="time" ></edge>
+<edge head="1" tail="2" label="name" ></edge>
+<edge head="2" tail="12" label="op1" ></edge>
+<edge head="3" tail="4" label="name" ></edge>
+<edge head="4" tail="13" label="op1" ></edge>
+<edge head="5" tail="6" label="op1" ></edge>
+<edge head="6" tail="7" label="poss" ></edge>
+<edge head="6" tail="9" label="time" ></edge>
+<edge head="7" tail="8" label="name" ></edge>
+<edge head="8" tail="14" label="op1" ></edge>
+<edge head="9" tail="10" label="ARG0-of" ></edge>
+<edge head="10" tail="11" label="ARG2" ></edge>
+</edges>
+</graph>
+<graph id="32">
+<nodes>
+<node gid="685" id="0" text="quash" label="x10" nosuffix="quash" isleaf="False"></node>
+<node gid="686" id="1" text="appear-01" label="x7" nosuffix="appear" isleaf="False"></node>
+<node gid="687" id="2" text="have-org-role-91" label="x4" nosuffix="have" isleaf="False"></node>
+<node gid="688" id="3" text="minister" label="m" nosuffix="minister" isleaf="True"></node>
+<node gid="689" id="4" text="former" label="x2" nosuffix="former" isleaf="True"></node>
+<node gid="690" id="5" text="interior" label="x3" nosuffix="interior" isleaf="True"></node>
+<node gid="691" id="6" text="surprise-01" label="x6" nosuffix="surprise" isleaf="True"></node>
+<node gid="692" id="7" text="country" label="x9" nosuffix="country" isleaf="False"></node>
+<node gid="693" id="8" text="name" label="n" nosuffix="name" isleaf="False"></node>
+<node gid="694" id="9" text="report-01" label="x11" nosuffix="report" isleaf="False"></node>
+<node gid="695" id="10" text="city" label="x13" nosuffix="city" isleaf="False"></node>
+<node gid="696" id="11" text="name" label="n1" nosuffix="name" isleaf="False"></node>
+<node gid="697" id="12" text="have-org-role-91" label="x18" nosuffix="have" isleaf="False"></node>
+<node gid="698" id="13" text="minister" label="m1" nosuffix="minister" isleaf="True"></node>
+<node gid="699" id="14" text="former" label="x16" nosuffix="former" isleaf="True"></node>
+<node gid="700" id="15" text="interior" label="x17" nosuffix="interior" isleaf="True"></node>
+<node gid="701" id="16" text="arrest-01" label="x23" nosuffix="arrest" isleaf="False"></node>
+<node gid="702" id="17" text="house" label="x22" nosuffix="house" isleaf="True"></node>
+<node gid="703" id="18" text="Lebanon" label="Lebanon" nosuffix="Lebanon" isleaf="True"></node>
+<node gid="704" id="19" text="Tehran" label="Tehran" nosuffix="Tehran" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="ARG0" ></edge>
+<edge head="0" tail="9" label="ARG1" ></edge>
+<edge head="1" tail="2" label="ARG0-of" ></edge>
+<edge head="1" tail="6" label="ARG0-of" ></edge>
+<edge head="1" tail="7" label="location" ></edge>
+<edge head="2" tail="3" label="ARG2" ></edge>
+<edge head="2" tail="4" label="mod" ></edge>
+<edge head="2" tail="5" label="mod" ></edge>
+<edge head="7" tail="8" label="name" ></edge>
+<edge head="8" tail="18" label="op1" ></edge>
+<edge head="9" tail="10" label="source" ></edge>
+<edge head="9" tail="12" label="ARG0-of" ></edge>
+<edge head="9" tail="16" label="time" ></edge>
+<edge head="10" tail="11" label="name" ></edge>
+<edge head="11" tail="19" label="op1" ></edge>
+<edge head="12" tail="13" label="ARG2" ></edge>
+<edge head="12" tail="14" label="mod" ></edge>
+<edge head="12" tail="15" label="topic" ></edge>
+<edge head="16" tail="17" label="mod" ></edge>
+</edges>
+</graph>
+<graph id="33">
+<nodes>
+<node gid="705" id="0" text="return-01" label="x2" nosuffix="return" isleaf="False"></node>
+<node gid="706" id="1" text="person" label="x1" nosuffix="person" isleaf="False"></node>
+<node gid="707" id="2" text="name" label="n" nosuffix="name" isleaf="False"></node>
+<node gid="708" id="3" text="city" label="x4" nosuffix="city" isleaf="False"></node>
+<node gid="709" id="4" text="name" label="n1" nosuffix="name" isleaf="False"></node>
+<node gid="710" id="5" text="wednesday" label="x6" nosuffix="wednesday" isleaf="False"></node>
+<node gid="711" id="6" text="city" label="x8" nosuffix="city" isleaf="False"></node>
+<node gid="712" id="7" text="name" label="n2" nosuffix="name" isleaf="False"></node>
+<node gid="713" id="8" text="country" label="x10" nosuffix="country" isleaf="False"></node>
+<node gid="714" id="9" text="name" label="n3" nosuffix="name" isleaf="False"></node>
+<node gid="715" id="10" text="Mohtashemi" label="Mohtashemi" nosuffix="Mohtashemi" isleaf="True"></node>
+<node gid="716" id="11" text="Tehran" label="Tehran" nosuffix="Tehran" isleaf="True"></node>
+<node gid="717" id="12" text="Damascus" label="Damascus" nosuffix="Damascus" isleaf="True"></node>
+<node gid="718" id="13" text="Syria" label="Syria" nosuffix="Syria" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="ARG1" ></edge>
+<edge head="0" tail="3" label="ARG4" ></edge>
+<edge head="0" tail="5" label="time" ></edge>
+<edge head="1" tail="2" label="name" ></edge>
+<edge head="2" tail="10" label="op1" ></edge>
+<edge head="3" tail="4" label="name" ></edge>
+<edge head="4" tail="11" label="op1" ></edge>
+<edge head="5" tail="6" label="null_edge" ></edge>
+<edge head="6" tail="7" label="name" ></edge>
+<edge head="6" tail="8" label="location" ></edge>
+<edge head="7" tail="12" label="op1" ></edge>
+<edge head="8" tail="9" label="name" ></edge>
+<edge head="9" tail="13" label="op1" ></edge>
+</edges>
+</graph>
+<graph id="34">
+<nodes>
+<node gid="719" id="0" text="allow-01" label="x14" nosuffix="allow" isleaf="False"></node>
+<node gid="720" id="1" text="since" label="x1" nosuffix="since" isleaf="False"></node>
+<node gid="721" id="2" text="kidnap-01" label="x9" nosuffix="kidnap" isleaf="False"></node>
+<node gid="722" id="3" text="name" label="x5" nosuffix="name" isleaf="False"></node>
+<node gid="723" id="4" text="former" label="x2" nosuffix="former" isleaf="True"></node>
+<node gid="724" id="5" text="interior" label="x3" nosuffix="interior" isleaf="True"></node>
+<node gid="725" id="6" text="have-org-role-91" label="x4" nosuffix="have" isleaf="False"></node>
+<node gid="726" id="7" text="minister" label="m" nosuffix="minister" isleaf="True"></node>
+<node gid="727" id="8" text="person" label="x11" nosuffix="person" isleaf="False"></node>
+<node gid="728" id="9" text="name" label="n" nosuffix="name" isleaf="False"></node>
+<node gid="729" id="10" text="and" label="x28" nosuffix="and" isleaf="False"></node>
+<node gid="730" id="11" text="write-01" label="x16" nosuffix="write" isleaf="False"></node>
+<node gid="731" id="12" text="letter" label="x19" nosuffix="letter" isleaf="False"></node>
+<node gid="732" id="13" text="few" label="x18" nosuffix="few" isleaf="True"></node>
+<node gid="733" id="14" text="family" label="x27" nosuffix="family" isleaf="False"></node>
+<node gid="734" id="15" text="former" label="x21" nosuffix="former" isleaf="True"></node>
+<node gid="735" id="16" text="interior" label="x22" nosuffix="interior" isleaf="True"></node>
+<node gid="736" id="17" text="have-org-role-91" label="x23" nosuffix="have" isleaf="False"></node>
+<node gid="737" id="18" text="minister" label="m1" nosuffix="minister" isleaf="True"></node>
+<node gid="738" id="19" text="null_tag" label="x24" nosuffix="null_tag" isleaf="True"></node>
+<node gid="739" id="20" text="person" label="x25" nosuffix="person" isleaf="False"></node>
+<node gid="740" id="21" text="name" label="n1" nosuffix="name" isleaf="False"></node>
+<node gid="741" id="22" text="person" label="x26" nosuffix="person" isleaf="False"></node>
+<node gid="742" id="23" text="name" label="n2" nosuffix="name" isleaf="False"></node>
+<node gid="743" id="24" text="see-01" label="x31" nosuffix="see" isleaf="False"></node>
+<node gid="744" id="25" text="occasional" label="x29" nosuffix="occasional" isleaf="True"></node>
+<node gid="745" id="26" text="and" label="x34" nosuffix="and" isleaf="False"></node>
+<node gid="746" id="27" text="newspaper" label="x33" nosuffix="newspaper" isleaf="False"></node>
+<node gid="747" id="28" text="country" label="x32" nosuffix="country" isleaf="False"></node>
+<node gid="748" id="29" text="name" label="n3" nosuffix="name" isleaf="False"></node>
+<node gid="749" id="30" text="relative" label="x38" nosuffix="relative" isleaf="True"></node>
+<node gid="750" id="31" text="report-01" label="x36" nosuffix="report" isleaf="False"></node>
+<node gid="751" id="32" text="television" label="x35" nosuffix="television" isleaf="True"></node>
+<node gid="752" id="33" text="Ali" label="Ali" nosuffix="Ali" isleaf="True"></node>
+<node gid="753" id="34" text="Akbar" label="Akbar" nosuffix="Akbar" isleaf="True"></node>
+<node gid="754" id="35" text="Mohtashemi" label="Mohtashemi" nosuffix="Mohtashemi" isleaf="True"></node>
+<node gid="755" id="36" text="Anderson" label="Anderson" nosuffix="Anderson" isleaf="True"></node>
+<node gid="756" id="37" text="Akbar" label="Akbar" nosuffix="Akbar" isleaf="True"></node>
+<node gid="757" id="38" text="Mohtashemi" label="Mohtashemi" nosuffix="Mohtashemi" isleaf="True"></node>
+<node gid="758" id="39" text="Lebanese" label="Lebanese" nosuffix="Lebanese" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="time" ></edge>
+<edge head="0" tail="8" label="ARG1" ></edge>
+<edge head="0" tail="10" label="ARG1" ></edge>
+<edge head="1" tail="2" label="op1" ></edge>
+<edge head="2" tail="3" label="ARG1" ></edge>
+<edge head="3" tail="33" label="op1" ></edge>
+<edge head="3" tail="34" label="op2" ></edge>
+<edge head="3" tail="35" label="op3" ></edge>
+<edge head="3" tail="4" label="mod" ></edge>
+<edge head="3" tail="5" label="ARG0-of" ></edge>
+<edge head="3" tail="6" label="ARG0-of" ></edge>
+<edge head="6" tail="7" label="ARG2" ></edge>
+<edge head="8" tail="9" label="name" ></edge>
+<edge head="9" tail="36" label="op1" ></edge>
+<edge head="10" tail="11" label="op1" ></edge>
+<edge head="10" tail="24" label="op2" ></edge>
+<edge head="11" tail="12" label="ARG1" ></edge>
+<edge head="12" tail="13" label="quant" ></edge>
+<edge head="12" tail="14" label="ARG2" ></edge>
+<edge head="14" tail="15" label="mod" ></edge>
+<edge head="14" tail="16" label="mod" ></edge>
+<edge head="14" tail="17" label="poss" ></edge>
+<edge head="14" tail="19" label="null_edge" ></edge>
+<edge head="14" tail="20" label="poss" ></edge>
+<edge head="14" tail="22" label="mod" ></edge>
+<edge head="17" tail="18" label="ARG2" ></edge>
+<edge head="20" tail="21" label="name" ></edge>
+<edge head="21" tail="37" label="op1" ></edge>
+<edge head="22" tail="23" label="name" ></edge>
+<edge head="23" tail="38" label="op1" ></edge>
+<edge head="24" tail="25" label="mod" ></edge>
+<edge head="24" tail="26" label="ARG1" ></edge>
+<edge head="26" tail="27" label="op1" ></edge>
+<edge head="26" tail="31" label="op2" ></edge>
+<edge head="27" tail="28" label="mod" ></edge>
+<edge head="27" tail="30" label="poss" ></edge>
+<edge head="28" tail="29" label="name" ></edge>
+<edge head="29" tail="39" label="op1" ></edge>
+<edge head="31" tail="32" label="mod" ></edge>
+</edges>
+</graph>
+<graph id="35">
+<nodes>
+<node gid="759" id="0" text="tell-01" label="x18" nosuffix="tell" isleaf="False"></node>
+<node gid="760" id="1" text="and" label="x2" nosuffix="and" isleaf="True"></node>
+<node gid="761" id="2" text="country" label="x3" nosuffix="country" isleaf="False"></node>
+<node gid="762" id="3" text="name" label="n" nosuffix="name" isleaf="False"></node>
+<node gid="763" id="4" text="hostage" label="x4" nosuffix="hostage" isleaf="False"></node>
+<node gid="764" id="5" text="country" label="x1" nosuffix="country" isleaf="False"></node>
+<node gid="765" id="6" text="name" label="n1" nosuffix="name" isleaf="False"></node>
+<node gid="766" id="7" text="share-01" label="x6" nosuffix="share" isleaf="False"></node>
+<node gid="767" id="8" text="name" label="x10" nosuffix="name" isleaf="False"></node>
+<node gid="768" id="9" text="former" label="x7" nosuffix="former" isleaf="True"></node>
+<node gid="769" id="10" text="interior" label="x8" nosuffix="interior" isleaf="True"></node>
+<node gid="770" id="11" text="have-org-role-91" label="x9" nosuffix="have" isleaf="False"></node>
+<node gid="771" id="12" text="minister" label="m1" nosuffix="minister" isleaf="True"></node>
+<node gid="772" id="13" text="captivity" label="x13" nosuffix="captivity" isleaf="False"></node>
+<node gid="773" id="14" text="release-01" label="x16" nosuffix="release" isleaf="True"></node>
+<node gid="774" id="15" text="and" label="x27" nosuffix="and" isleaf="False"></node>
+<node gid="775" id="16" text="name" label="x23" nosuffix="name" isleaf="False"></node>
+<node gid="776" id="17" text="former" label="x20" nosuffix="former" isleaf="True"></node>
+<node gid="777" id="18" text="have-org-role-91" label="x22" nosuffix="have" isleaf="False"></node>
+<node gid="778" id="19" text="minister" label="m" nosuffix="minister" isleaf="True"></node>
+<node gid="779" id="20" text="interior" label="x21" nosuffix="interior" isleaf="True"></node>
+<node gid="780" id="21" text="courage" label="x26" nosuffix="courage" isleaf="True"></node>
+<node gid="781" id="22" text="fear-01" label="x28" nosuffix="fear" isleaf="True"></node>
+<node gid="782" id="23" text="and" label="x41" nosuffix="and" isleaf="False"></node>
+<node gid="783" id="24" text="defy-01" label="x38" nosuffix="defy" isleaf="False"></node>
+<node gid="784" id="25" text="person" label="x34" nosuffix="person" isleaf="False"></node>
+<node gid="785" id="26" text="name" label="n2" nosuffix="name" isleaf="False"></node>
+<node gid="786" id="27" text="former" label="x31" nosuffix="former" isleaf="True"></node>
+<node gid="787" id="28" text="interior" label="x32" nosuffix="interior" isleaf="True"></node>
+<node gid="788" id="29" text="have-org-role-91" label="x33" nosuffix="have" isleaf="False"></node>
+<node gid="789" id="30" text="minister" label="m2" nosuffix="minister" isleaf="True"></node>
+<node gid="790" id="31" text="captor" label="x40" nosuffix="captor" isleaf="True"></node>
+<node gid="791" id="32" text="suffer-01" label="x42" nosuffix="suffer" isleaf="False"></node>
+<node gid="792" id="33" text="agony" label="x44" nosuffix="agony" isleaf="False"></node>
+<node gid="793" id="34" text="captivity" label="x46" nosuffix="captivity" isleaf="True"></node>
+<node gid="794" id="35" text="France" label="France" nosuffix="France" isleaf="True"></node>
+<node gid="795" id="36" text="American" label="American" nosuffix="American" isleaf="True"></node>
+<node gid="796" id="37" text="Ali" label="Ali" nosuffix="Ali" isleaf="True"></node>
+<node gid="797" id="38" text="Akbar" label="Akbar" nosuffix="Akbar" isleaf="True"></node>
+<node gid="798" id="39" text="Mohtashemi" label="Mohtashemi" nosuffix="Mohtashemi" isleaf="True"></node>
+<node gid="799" id="40" text="Ali" label="Ali" nosuffix="Ali" isleaf="True"></node>
+<node gid="800" id="41" text="Akbar" label="Akbar" nosuffix="Akbar" isleaf="True"></node>
+<node gid="801" id="42" text="Mohtashemi" label="Mohtashemi" nosuffix="Mohtashemi" isleaf="True"></node>
+<node gid="802" id="43" text="Ali" label="Ali" nosuffix="Ali" isleaf="True"></node>
+<node gid="803" id="44" text="Akbar" label="Akbar" nosuffix="Akbar" isleaf="True"></node>
+<node gid="804" id="45" text="Mohtashemi" label="Mohtashemi" nosuffix="Mohtashemi" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="ARG1" ></edge>
+<edge head="0" tail="2" label="ARG2" ></edge>
+<edge head="0" tail="4" label="ARG0" ></edge>
+<edge head="0" tail="15" label="ARG1" ></edge>
+<edge head="0" tail="23" label="ARG1" ></edge>
+<edge head="2" tail="3" label="name" ></edge>
+<edge head="3" tail="35" label="op1" ></edge>
+<edge head="4" tail="5" label="null_edge" ></edge>
+<edge head="4" tail="7" label="ARG1-of" ></edge>
+<edge head="5" tail="6" label="name" ></edge>
+<edge head="6" tail="36" label="op1" ></edge>
+<edge head="7" tail="8" label="ARG1" ></edge>
+<edge head="8" tail="37" label="op1" ></edge>
+<edge head="8" tail="38" label="op2" ></edge>
+<edge head="8" tail="39" label="op3" ></edge>
+<edge head="8" tail="9" label="mod" ></edge>
+<edge head="8" tail="10" label="ARG0-of" ></edge>
+<edge head="8" tail="11" label="ARG0-of" ></edge>
+<edge head="8" tail="13" label="ARG0-of" ></edge>
+<edge head="11" tail="12" label="ARG2" ></edge>
+<edge head="13" tail="14" label="ARG1-of" ></edge>
+<edge head="15" tail="16" label="op1" ></edge>
+<edge head="15" tail="21" label="op1" ></edge>
+<edge head="15" tail="22" label="op2" ></edge>
+<edge head="16" tail="40" label="op1" ></edge>
+<edge head="16" tail="41" label="op2" ></edge>
+<edge head="16" tail="42" label="op3" ></edge>
+<edge head="16" tail="17" label="mod" ></edge>
+<edge head="16" tail="18" label="ARG0-of" ></edge>
+<edge head="18" tail="19" label="ARG2" ></edge>
+<edge head="18" tail="20" label="mod" ></edge>
+<edge head="23" tail="24" label="op1" ></edge>
+<edge head="23" tail="32" label="op2" ></edge>
+<edge head="24" tail="25" label="ARG0" ></edge>
+<edge head="24" tail="31" label="ARG1" ></edge>
+<edge head="25" tail="26" label="name" ></edge>
+<edge head="25" tail="27" label="mod" ></edge>
+<edge head="25" tail="28" label="ARG0-of" ></edge>
+<edge head="25" tail="29" label="ARG0-of" ></edge>
+<edge head="26" tail="43" label="op1" ></edge>
+<edge head="26" tail="44" label="op2" ></edge>
+<edge head="26" tail="45" label="op3" ></edge>
+<edge head="29" tail="30" label="ARG2" ></edge>
+<edge head="32" tail="33" label="ARG1" ></edge>
+<edge head="33" tail="34" label="ARG1" ></edge>
+</edges>
+</graph>
+<graph id="36">
+<nodes>
+<node gid="805" id="0" text="die-01" label="x13" nosuffix="die" isleaf="False"></node>
+<node gid="806" id="1" text="and" label="x6" nosuffix="and" isleaf="False"></node>
+<node gid="807" id="2" text="father" label="x2" nosuffix="father" isleaf="False"></node>
+<node gid="808" id="3" text="person" label="x4" nosuffix="person" isleaf="False"></node>
+<node gid="809" id="4" text="name" label="n" nosuffix="name" isleaf="False"></node>
+<node gid="810" id="5" text="brother" label="x8" nosuffix="brother" isleaf="False"></node>
+<node gid="811" id="6" text="elder" label="x7" nosuffix="elder" isleaf="True"></node>
+<node gid="812" id="7" text="name" label="x10" nosuffix="name" isleaf="False"></node>
+<node gid="813" id="8" text="cancer" label="x15" nosuffix="cancer" isleaf="True"></node>
+<node gid="814" id="9" text="date-entity" label="x17" nosuffix="date" isleaf="False"></node>
+<node gid="815" id="10" text="Glenn" label="Glenn" nosuffix="Glenn" isleaf="True"></node>
+<node gid="816" id="11" text="Glenn" label="Glenn" nosuffix="Glenn" isleaf="True"></node>
+<node gid="817" id="12" text="Jr." label="Jr." nosuffix="Jr." isleaf="True"></node>
+<node gid="818" id="13" text="1986" label="1986" nosuffix="1986" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="ARG1" ></edge>
+<edge head="0" tail="8" label="ARG1" ></edge>
+<edge head="0" tail="9" label="time" ></edge>
+<edge head="1" tail="2" label="op1" ></edge>
+<edge head="1" tail="5" label="op2" ></edge>
+<edge head="2" tail="3" label="poss" ></edge>
+<edge head="3" tail="4" label="name" ></edge>
+<edge head="4" tail="10" label="op1" ></edge>
+<edge head="5" tail="6" label="mod" ></edge>
+<edge head="5" tail="7" label="name" ></edge>
+<edge head="7" tail="11" label="op1" ></edge>
+<edge head="7" tail="12" label="op2" ></edge>
+<edge head="9" tail="13" label="year" ></edge>
+</edges>
+</graph>
+<graph id="37">
+<nodes>
+<node gid="819" id="0" text="say-01" label="x3" nosuffix="say" isleaf="False"></node>
+<node gid="820" id="1" text="hostage" label="x2" nosuffix="hostage" isleaf="False"></node>
+<node gid="821" id="2" text="release-01" label="x1" nosuffix="release" isleaf="True"></node>
+<node gid="822" id="3" text="know-01" label="x8" nosuffix="know" isleaf="False"></node>
+<node gid="823" id="4" text="father" label="x5" nosuffix="father" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="ARG0" ></edge>
+<edge head="0" tail="3" label="ARG1" ></edge>
+<edge head="1" tail="2" label="ARG1-of" ></edge>
+<edge head="3" tail="4" label="ARG0" ></edge>
+</edges>
+</graph>
+<graph id="38">
+<nodes>
+<node gid="824" id="0" text="know-01" label="x2" nosuffix="know" isleaf="False"></node>
+<node gid="825" id="1" text="person" label="x1" nosuffix="person" isleaf="False"></node>
+<node gid="826" id="2" text="name" label="n" nosuffix="name" isleaf="False"></node>
+<node gid="827" id="3" text="bear-02" label="x11" nosuffix="bear" isleaf="False"></node>
+<node gid="828" id="4" text="daughter" label="x6" nosuffix="daughter" isleaf="False"></node>
+<node gid="829" id="5" text="name" label="x4" nosuffix="name" isleaf="False"></node>
+<node gid="830" id="6" text="free" label="x3" nosuffix="free" isleaf="True"></node>
+<node gid="831" id="7" text="event" label="x12" nosuffix="event" isleaf="False"></node>
+<node gid="832" id="8" text="name" label="n1" nosuffix="name" isleaf="False"></node>
+<node gid="833" id="9" text="see-01" label="x19" nosuffix="see" isleaf="False"></node>
+<node gid="834" id="10" text="few" label="x24" nosuffix="few" isleaf="False"></node>
+<node gid="835" id="11" text="temporal-quantity" label="x25" nosuffix="temporal" isleaf="False"></node>
+<node gid="836" id="12" text="second" label="s" nosuffix="second" isleaf="True"></node>
+<node gid="837" id="13" text="film" label="x27" nosuffix="film" isleaf="False"></node>
+<node gid="838" id="14" text="only" label="x21" nosuffix="only" isleaf="True"></node>
+<node gid="839" id="15" text="allow-01" label="x32" nosuffix="allow" isleaf="False"></node>
+<node gid="840" id="16" text="captor" label="x31" nosuffix="captor" isleaf="False"></node>
+<node gid="841" id="17" text="free" label="x28" nosuffix="free" isleaf="True"></node>
+<node gid="842" id="18" text="person" label="x29" nosuffix="person" isleaf="False"></node>
+<node gid="843" id="19" text="name" label="n2" nosuffix="name" isleaf="False"></node>
+<node gid="844" id="20" text="person" label="x30" nosuffix="person" isleaf="False"></node>
+<node gid="845" id="21" text="name" label="n3" nosuffix="name" isleaf="False"></node>
+<node gid="846" id="22" text="watch-01" label="x37" nosuffix="watch" isleaf="False"></node>
+<node gid="847" id="23" text="newspaper" label="x34" nosuffix="newspaper" isleaf="False"></node>
+<node gid="848" id="24" text="name" label="n4" nosuffix="name" isleaf="False"></node>
+<node gid="849" id="25" text="free" label="x33" nosuffix="free" isleaf="True"></node>
+<node gid="850" id="26" text="TV" label="x40" nosuffix="TV" isleaf="False"></node>
+<node gid="851" id="27" text="country" label="x39" nosuffix="country" isleaf="False"></node>
+<node gid="852" id="28" text="name" label="n5" nosuffix="name" isleaf="False"></node>
+<node gid="853" id="29" text="letter" label="x44" nosuffix="letter" isleaf="False"></node>
+<node gid="854" id="30" text="name" label="x47" nosuffix="name" isleaf="False"></node>
+<node gid="855" id="31" text="free" label="x46" nosuffix="free" isleaf="True"></node>
+<node gid="856" id="32" text="release-01" label="x49" nosuffix="release" isleaf="False"></node>
+<node gid="857" id="33" text="kidnapper" label="x52" nosuffix="kidnapper" isleaf="True"></node>
+<node gid="858" id="34" text="Anderson" label="Anderson" nosuffix="Anderson" isleaf="True"></node>
+<node gid="859" id="35" text="Terry" label="Terry" nosuffix="Terry" isleaf="True"></node>
+<node gid="860" id="36" text="Anderson" label="Anderson" nosuffix="Anderson" isleaf="True"></node>
+<node gid="861" id="37" text="June" label="June" nosuffix="June" isleaf="True"></node>
+<node gid="862" id="38" text="7" label="7" nosuffix="7" isleaf="True"></node>
+<node gid="863" id="39" text="," label="," nosuffix="," isleaf="True"></node>
+<node gid="864" id="40" text="1985" label="1985" nosuffix="1985" isleaf="True"></node>
+<node gid="865" id="41" text="Terry" label="Terry" nosuffix="Terry" isleaf="True"></node>
+<node gid="866" id="42" text="Anderson" label="Anderson" nosuffix="Anderson" isleaf="True"></node>
+<node gid="867" id="43" text="Terry" label="Terry" nosuffix="Terry" isleaf="True"></node>
+<node gid="868" id="44" text="Anderson" label="Anderson" nosuffix="Anderson" isleaf="True"></node>
+<node gid="869" id="45" text="Lebanese" label="Lebanese" nosuffix="Lebanese" isleaf="True"></node>
+<node gid="870" id="46" text="Terry" label="Terry" nosuffix="Terry" isleaf="True"></node>
+<node gid="871" id="47" text="Anderson" label="Anderson" nosuffix="Anderson" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="ARG0" ></edge>
+<edge head="0" tail="3" label="ARG1" ></edge>
+<edge head="1" tail="2" label="name" ></edge>
+<edge head="2" tail="34" label="op1" ></edge>
+<edge head="3" tail="4" label="ARG1" ></edge>
+<edge head="3" tail="7" label="ARG1" ></edge>
+<edge head="3" tail="9" label="ARG1-of" ></edge>
+<edge head="4" tail="5" label="name" ></edge>
+<edge head="5" tail="35" label="op1" ></edge>
+<edge head="5" tail="36" label="op2" ></edge>
+<edge head="5" tail="6" label="ARG0-of" ></edge>
+<edge head="7" tail="8" label="name" ></edge>
+<edge head="8" tail="37" label="op1" ></edge>
+<edge head="8" tail="38" label="op2" ></edge>
+<edge head="8" tail="39" label="op3" ></edge>
+<edge head="8" tail="40" label="op4" ></edge>
+<edge head="9" tail="10" label="null_edge" ></edge>
+<edge head="10" tail="11" label="op1" ></edge>
+<edge head="11" tail="12" label="unit" ></edge>
+<edge head="11" tail="13" label="mod" ></edge>
+<edge head="13" tail="14" label="mod" ></edge>
+<edge head="13" tail="15" label="ARG0-of" ></edge>
+<edge head="15" tail="16" label="ARG0" ></edge>
+<edge head="15" tail="22" label="ARG1" ></edge>
+<edge head="15" tail="29" label="null_edge" ></edge>
+<edge head="16" tail="17" label="mod" ></edge>
+<edge head="16" tail="18" label="poss" ></edge>
+<edge head="16" tail="20" label="mod" ></edge>
+<edge head="18" tail="19" label="name" ></edge>
+<edge head="19" tail="41" label="op1" ></edge>
+<edge head="20" tail="21" label="name" ></edge>
+<edge head="21" tail="42" label="op1" ></edge>
+<edge head="22" tail="23" label="ARG0" ></edge>
+<edge head="22" tail="26" label="medium" ></edge>
+<edge head="23" tail="24" label="name" ></edge>
+<edge head="23" tail="25" label="ARG0-of" ></edge>
+<edge head="24" tail="43" label="op1" ></edge>
+<edge head="24" tail="44" label="op2" ></edge>
+<edge head="26" tail="27" label="mod" ></edge>
+<edge head="27" tail="28" label="name" ></edge>
+<edge head="28" tail="45" label="op1" ></edge>
+<edge head="29" tail="30" label="name" ></edge>
+<edge head="30" tail="46" label="op1" ></edge>
+<edge head="30" tail="47" label="op2" ></edge>
+<edge head="30" tail="31" label="ARG0-of" ></edge>
+<edge head="30" tail="32" label="ARG1-of" ></edge>
+<edge head="32" tail="33" label="ARG0" ></edge>
+</edges>
+</graph>
+</amr>

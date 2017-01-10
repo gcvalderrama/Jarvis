@@ -1,335 +1,654 @@
-# ::id 1
-# ::snt WHILE Lou Rawls performs at the Golden Nugget and exotic showgirls romp at the Stardust, a packed showroom at the Desert Inn Hotel and Casino is anxiously awaiting the arrival of Mr. Cucumber from Taiwan. ; " Ladies and gentlemen !
-(x / xconcept
-	:x (x38 / and
-		:op1 (x29 / await-01
-			:time (x4 / perform-01
-				:ARG0 (x2 / newspaper
-					:name (n / name
-						:op1 "Lou"
-						:op2 "Rawls"))
-				:null_edge (x9 / and
-					:location (x8 / country
-						:name (n1 / name
-							:op1 "Nugget")
-						:location (x7 / world-region
-							:name (n2 / name
-								:op1 "Golden")))
-					:op2 (x12 / romp
-						:ARG0 (x11 / showgirl
-							:mod (x10 / exotic))
-						:ARG2 (x15 / stardust))))
-			:ARG1 (x19 / showroom
-				:mod (x18 / packed)
-				:location (x25 / and
-					:op1 (x24 / hotel
-						:null_edge (x22 / desert)
-						:mod (x23 / inn))))
-			:manner (x28 / anxious)
-			:ARG2 (x31 / arrive-01
-				:ARG1 (x34 / cucumber
-					:null_edge (x33 / null_tag)))
-			:ARG2 (x36 / country
-				:name (n3 / name
-					:op1 "Taiwan"))
-			:ARG2 (x41 / and
-				:op1 (x40 / ladies)
-				:op2 (x42 / gentleman)))))
-
-# ::id 2
-# ::snt the master of ceremonies shouts in Chinese as the band cranks up
-(x5 / shout
-	:ARG0 (x2 / team
-		:name (n / name
-			:op1 "master")
-		:ARG1 (x4 / ceremony))
-	:ARG1 (x7 / country
-		:name (n1 / name
-			:op1 "China"))
-	:ARG1 (x11 / crank
-		:ARG1 (x10 / band)))
-
-# ::id 3
-# ::snt " That superstar king of Taiwan comedy, Hu Gua !
-(x4 / king
-	:mod (x2 / that)
-	:mod (x3 / superstar)
-	:ARG1 (x7 / comedy
-		:mod (x6 / country
-			:name (n / name
-				:op1 "Taiwan"))
-		:name (x9 / name
-			:op1 "Hu"
-			:op2 "Gua")))
-
-# ::id 4
-# ::snt The crowd cheers
-(x3 / person
-	:ARG0-of (c / cheer-04)
-	:mod (x2 / crowd))
-
-# ::id 5
-# ::snt The tuxedo-clad Chinese performer, whose stage name means " cucumber " in Chinese, storms onto center stage through a flood of pulsating lights and billowing stage smoke. ; Hu Gua, the " Johnny Carson of Taiwan, " launches into a snappy Chinese tune. ; " Oh, Hu Gua , the " Johnny Carson of Taiwan , "'s good, " one woman swoons
-(x / xconcept
-	:x (x31 / and
-		:op1 (x22 / flood-01
-			:ARG1 (x26 / and
-				:op1 (x19 / stage
-					:mod (x18 / center))
-				:op1 (x25 / light
-					:mod (x24 / pulsate))))
-		:op2 (x27 / billow)
-		:op3 (x29 / smoke
-			:mod (x28 / stage))
-		:op7 (x43 / launch-01
-			:ARG0 (x32 / person
-				:name (n2 / name
-					:op1 "Hu"
-					:op2 "Gua"
-					:op3 ","
-					:op4 "the"
-					:op5 "''"
-					:op6 "Johnny"
-					:op7 "Carson")
-				:source (x40 / country
-					:name (n3 / name
-						:op1 "Taiwan")))
-			:prep-into (x48 / tune-01
-				:mod (x46 / snappy)
-				:mod (x47 / country
-					:name (n4 / name
-						:op1 "China")))))
-	:x (x50 / and
-		:op2 (x16 / storm
-			:mod (x52 / oh)
-			:name (x54 / name
-				:op1 "Hu"
-				:op2 "Gua")
-			:name (x59 / name
-				:op1 "Johnny"
-				:op2 "Carson"
-				:source (x62 / country
-					:name (n1 / name
-						:op1 "Taiwan"))))
-		:op1 (x66 / good-42
-			:domain (x4 / performer
-				:null_edge (x2 / tuxedo-clad)
-				:mod (x3 / country
-					:name (n / name
-						:op1 "China"))
-				:ARG0-of (x9 / mean-01
-					:ARG0 (x8 / name
-						:mod (x7 / stage))
-					:ARG1 (x11 / cucumber))))
-		:op1 (x71 / swoon
-			:ARG0 (x70 / woman
-				:quant 1))))
-
-# ::id 6
-# ::snt " " That superstar king's the king .
-(x8 / king
-	:ARG1 (x5 / king
-		:mod (x3 / that)
-		:mod (x4 / superstar)))
-
-# ::id 7
-# ::snt ; center stage is a sign of the changing times on the Las Vegas Strip
-(x / xconcept
-	:x (x1 / and
-		:op1 (x6 / signal-01
-			:ARG0 (x3 / stage
-				:part-of (x2 / center))
-			:ARG3 (x15 / country
-				:name (n / name
-					:op1 "Strip")
-				:null_edge (x13 / country
-					:name (n1 / name
-						:op1 "Las"))
-				:null_edge (x14 / city
-					:name (n2 / name
-						:op1 "Vegas"))))
-		:op4 (x9 / change-01)))
-
-# ::id 8
-# ::snt Where Liberace, Wayne Newton and Sammy Davis Jr. once ruled, the marquees now blare with names such as Hu Gua, Ma Shih-li and Yang Lieh. ; Las Vegas -- that paradigm of American excess and decadence -- has discovered Asia. ; Stung by seesawing oil prices, competition from Atlantic City, N.J., and a moribund U.S. economy, Las Vegas has turned center stage attention toward Japan, Hong Kong, Taiwan and other booming Asian countries in search of gamblers. ; Instead of Middle Eastern potentates or Texas oil barons, center stage is the Asian gambler who has become not only the most sought after high-roller of the '90s, but also, with the growth of the Asian community on the West Coast, the low-roller as well. ; " the No. 1 gamblers in the world gamble every day, the No. 1 gamblers in the world wager against each other, the No. 1 gamblers in the world play hard, " said Terry Lanni, president of Caesars World Inc., which owns Caesars Palace in Las Vegas. ; As the world economy shifts toward the Far East, the ripples are being felt in this opulent outpost in the desert. ; Casinos are courting the Asian gambler with everything from $ 6 overnight bus tours from Los Angeles ' Chinatown to all-expense-paid junkets out of Indonesia, Taiwan and South Korea. ; The largest casinos, such as Caesars Palace and the Mirage, have opened year-round marketing offices in the Far East, and most have introduced Asian games into the No. 1 gamblers in the world repertoire, such as pai gow and sic bo. ; " The business from Asia has just exploded incredibly, " said Desert Inn President Kevin J. Malley
-(x310 / say-01
-	:ARG0 (x314 / person
-		:name (n / name
-			:op1 "Kevin"
-			:op2 "J."
-			:op3 "Malley")
-		:ARG0-of (x311 / desert)
-		:mod (x312 / inn)
-		:ARG0-of (x313 / have-org-role-91
-			:ARG2 (p / president))))
-
-# ::id 9
-# ::snt 
-(x13 / gambler
-	:ARG0 (x5 / gambler
-		:null_edge (x3 / null_tag)
-		:quant 1
-		:location (x8 / world))
-	:null_edge (x11 / null_tag)
-	:quant 1
-	:location (x16 / world)
-	:time (x17 / right
-		:op1 (x18 / now)))
-
-# ::id 10
-# ::snt ; Old-timers around Glitter Gulch say the importance of the Asian gambler to Las Vegas has been mounting for the past two decades. ; Far Eastern gamblers have enjoyed a longstanding reputation as loyal and persistent players, which the No. 1 gamblers in the world attribute to the entrepreneurial spirit that created the Asian economic boom. ; But it was only in the 1980s, as the Japanese gross national product nearly tripled to $ 3.1 trillion and the Taiwan stock market index grew eightfold in four years, that the pursuit of the Far Eastern gambler reached fever pitch. ; In the last five years, casinos have begun scurrying to outdo each other with ever more opulent Asian parties, Asian gaming areas and Asian restaurants. ; Las Vegas also exerts a powerful allure for Asian visitors from the gray industrial centers of the Far East, who are fascinated by not only the gambling (illegal in most of Asia )but also the excessive vision of opulence that pervades the city. ; " Everyone wants to come to America to become wealthy, " said Ling Chuang, a 24-year-old Alhambra student who was on her first visit to Las Vegas
-(x195 / say-01
-	:ARG1 (x6 / say-01
-		:ARG0 (x2 / old-timer
-			:location (x3 / around
-				:op1 (x5 / gulch)))
-		:ARG1 (x18 / mount-02
-			:ARG1 (x8 / important
-				:poss (x12 / gambler
-					:name (x11 / name
-						:op1 "Asian"))
-				:null_edge (x15 / city
-					:name (n3 / name
-						:op1 "Vegas")
-					:mod (x14 / country
-						:name (n5 / name
-							:op1 "Las"))))
-			:duration (x23 / temporal-quantity
-				:unit (d / decade)
-				:mod (x21 / past)
-				:quant 2)))
-	:ARG0 (x196 / newspaper
-		:name (n / name
-			:op1 "Ling"
-			:op2 "Chuang")
-		:ARG0-of (x202 / person
-			:ARG0-of (s / study-01)
-			:mod (x200 / person
-				:name (n1 / name
-					:op1 "24-year-old"))
-			:mod (x201 / country
-				:name (n2 / name
-					:op1 "Alhambra"))
-			:time (x208 / visit-01
-				:ARG1 (x211 / city
-					:name (n4 / name
-						:op1 "Vegas")
-					:mod (x210 / country
-						:name (n6 / name
-							:op1 "Las")))))))
-
-# ::id 11
-# ::snt " This is America
-(x4 / country
-	:name (n / name
-		:op1 "America")
-	:domain (x2 / this))
-
-# ::id 12
-# ::snt It is so prosperous, like an illusion .
-(x4 / prosper-01
-	:domain (x1 / it)
-	:degree (x3 / so)
-	:ARG1 (x8 / illusion))
-
-# ::id 13
-# ::snt ; The biggest casino market is still the domestic one, but Asian gamblers exert a power that far exceeds Asian gamblers numbers. ; Malley estimated that 90 of the casino's top 100 gamblers are Asians and that about 45 percent of the casino's revenue comes from the Pacific Rim. ; " It's not just limited to the Desert Inn, " Malley said
-(x / xconcept
-	:x (x1 / and
-		:op2 (x12 / contrast-01
-			:ARG2 (x5 / market
-				:mod (x3 / big
-					:degree (m / most))
-				:mod (x4 / casino)
-				:mod (x7 / still)
-				:mod (x9 / domestic))
-			:ARG2 (x15 / exert-01
-				:ARG0 (x14 / gambler
-					:name (x13 / name
-						:op1 "Asian"))
-				:ARG1 (x17 / power
-					:ARG0-of (x20 / exceed-01
-						:ARG1 (x23 / number
-							:name (x21 / name
-								:op1 "Asian")
-							:quant-of (x22 / gambler)))))
-			:ARG2 (x27 / estimate-01
-				:ARG0 (x26 / person
-					:name (n / name
-						:op1 "Malley"))
-				:ARG2 (x36 / gambler
-					:quant 90
-					:poss (x32 / casino)
-					:mod (x34 / top)
-					:quant 100))
-			:ARG1 (x69 / say-01
-				:ARG1 (x61 / limit-01
-					:ARG1 (x57 / it)
-					:mod (x60 / just)
-					:ARG2 (x65 / inn
-						:mod (x64 / desert)))
-				:ARG0 (x68 / person
-					:name (n1 / name
-						:op1 "Malley"))))
-		:op2 (x39 / and
-			:op1 (x49 / come-01
-				:ARG1 (x41 / about)
-				:ARG1 (x48 / revenue
-					:ARG1 (x43 / percentage-entity
-						:value 45)
-					:poss (x46 / casino))
-				:ARG4 (x53 / country
-					:name (n2 / name
-						:op1 "Rim"))))))
-
-# ::id 14
-# ::snt " The same is true of Caesars, the Mirage or whatever .
-(x5 / true
-	:domain (x3 / same-41)
-	:domain (x11 / or
-		:op1 (x7 / country
-			:name (n / name
-				:op1 "Caesars"))
-		:op2 (x10 / mirage)
-		:op2 (x12 / whatever)))
-
-# ::id 15
-# ::snt ; The increasing flow of Asian tourists has transformed not just the casinos, but Las Vegas as well. ; The Asian population in town has increased with the demand for bilingual casino workers
-(x9 / transform-01
-	:ARG1 (x4 / name
-		:op1 "flow"
-		:ARG1-of (x3 / increase-01)
-		:ARG1 (x7 / person
-			:ARG0-of (t / tour-01)
-			:name (x6 / name
-				:op1 "Asian")))
-	:ARG1 (x15 / contrast-01
-		:ARG1 (x13 / casino
-			:mod (x11 / just))))
-
-# ::id 16
-# ::snt Sightseeing companies, hotels, restaurants and even escort services regularly advertise in Asian languages now. ; The renowned Chicken Ranch brothel near Las Vegas recently had The renowned Chicken Ranch brothel near Las Vegas sex menu printed in Japanese, leading to such translational challenges as " Fantasy Session " and " Y' all come back now -- y' hear .
-(x12 / advertise
-	:ARG1 (x7 / and
-		:op1 (x2 / company
-			:mod (x1 / sightseeing))
-		:op1 (x6 / restaurant))
-	:frequency (x11 / regular)
-	:ARG1 (x15 / language
-		:name (x14 / name
-			:op1 "Asian"))
-	:time (x16 / now))
-
-# ::id 17
-# ::snt ; But there have been numerous missteps, as well, as businesses have leaped into the race to tap into the Pacific Rim. ; The Mirage had designed a private gambling area with shelves of books along the walls, only to discover later that the Chinese word for " library " is pronounced the same as " room of losses .
-(x2 / contrast-01
-	:ARG2 (x7 / misstep
-		:quant (x6 / numerous)
-		:mod (x10 / well)))
-
-# ::id 18
-# ::snt The books were quickly removed
-(x5 / remove-01
-	:ARG1 (x2 / book)
-	:manner (x4 / quick))
-
+<amr>
+<graph id="1">
+<nodes>
+<node gid="0" id="0" text="xconcept" label="x" nosuffix="xconcept" isleaf="False"></node>
+<node gid="1" id="1" text="and" label="x38" nosuffix="and" isleaf="False"></node>
+<node gid="2" id="2" text="await-01" label="x29" nosuffix="await" isleaf="False"></node>
+<node gid="3" id="3" text="perform-01" label="x4" nosuffix="perform" isleaf="False"></node>
+<node gid="4" id="4" text="newspaper" label="x2" nosuffix="newspaper" isleaf="False"></node>
+<node gid="5" id="5" text="name" label="n" nosuffix="name" isleaf="False"></node>
+<node gid="6" id="6" text="and" label="x9" nosuffix="and" isleaf="False"></node>
+<node gid="7" id="7" text="country" label="x8" nosuffix="country" isleaf="False"></node>
+<node gid="8" id="8" text="name" label="n1" nosuffix="name" isleaf="False"></node>
+<node gid="9" id="9" text="world-region" label="x7" nosuffix="world" isleaf="False"></node>
+<node gid="10" id="10" text="name" label="n2" nosuffix="name" isleaf="False"></node>
+<node gid="11" id="11" text="romp" label="x12" nosuffix="romp" isleaf="False"></node>
+<node gid="12" id="12" text="showgirl" label="x11" nosuffix="showgirl" isleaf="False"></node>
+<node gid="13" id="13" text="exotic" label="x10" nosuffix="exotic" isleaf="True"></node>
+<node gid="14" id="14" text="stardust" label="x15" nosuffix="stardust" isleaf="True"></node>
+<node gid="15" id="15" text="showroom" label="x19" nosuffix="showroom" isleaf="False"></node>
+<node gid="16" id="16" text="packed" label="x18" nosuffix="packed" isleaf="True"></node>
+<node gid="17" id="17" text="and" label="x25" nosuffix="and" isleaf="False"></node>
+<node gid="18" id="18" text="hotel" label="x24" nosuffix="hotel" isleaf="False"></node>
+<node gid="19" id="19" text="desert" label="x22" nosuffix="desert" isleaf="True"></node>
+<node gid="20" id="20" text="inn" label="x23" nosuffix="inn" isleaf="True"></node>
+<node gid="21" id="21" text="anxious" label="x28" nosuffix="anxious" isleaf="True"></node>
+<node gid="22" id="22" text="arrive-01" label="x31" nosuffix="arrive" isleaf="False"></node>
+<node gid="23" id="23" text="cucumber" label="x34" nosuffix="cucumber" isleaf="False"></node>
+<node gid="24" id="24" text="null_tag" label="x33" nosuffix="null_tag" isleaf="True"></node>
+<node gid="25" id="25" text="country" label="x36" nosuffix="country" isleaf="False"></node>
+<node gid="26" id="26" text="name" label="n3" nosuffix="name" isleaf="False"></node>
+<node gid="27" id="27" text="and" label="x41" nosuffix="and" isleaf="False"></node>
+<node gid="28" id="28" text="ladies" label="x40" nosuffix="ladies" isleaf="True"></node>
+<node gid="29" id="29" text="gentleman" label="x42" nosuffix="gentleman" isleaf="True"></node>
+<node gid="30" id="30" text="Lou" label="Lou" nosuffix="Lou" isleaf="True"></node>
+<node gid="31" id="31" text="Rawls" label="Rawls" nosuffix="Rawls" isleaf="True"></node>
+<node gid="32" id="32" text="Nugget" label="Nugget" nosuffix="Nugget" isleaf="True"></node>
+<node gid="33" id="33" text="Golden" label="Golden" nosuffix="Golden" isleaf="True"></node>
+<node gid="34" id="34" text="Taiwan" label="Taiwan" nosuffix="Taiwan" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="x" ></edge>
+<edge head="1" tail="2" label="op1" ></edge>
+<edge head="2" tail="3" label="time" ></edge>
+<edge head="2" tail="15" label="ARG1" ></edge>
+<edge head="2" tail="21" label="manner" ></edge>
+<edge head="2" tail="22" label="ARG2" ></edge>
+<edge head="2" tail="25" label="ARG2" ></edge>
+<edge head="2" tail="27" label="ARG2" ></edge>
+<edge head="3" tail="4" label="ARG0" ></edge>
+<edge head="3" tail="6" label="null_edge" ></edge>
+<edge head="4" tail="5" label="name" ></edge>
+<edge head="5" tail="30" label="op1" ></edge>
+<edge head="5" tail="31" label="op2" ></edge>
+<edge head="6" tail="7" label="location" ></edge>
+<edge head="6" tail="11" label="op2" ></edge>
+<edge head="7" tail="8" label="name" ></edge>
+<edge head="7" tail="9" label="location" ></edge>
+<edge head="8" tail="32" label="op1" ></edge>
+<edge head="9" tail="10" label="name" ></edge>
+<edge head="10" tail="33" label="op1" ></edge>
+<edge head="11" tail="12" label="ARG0" ></edge>
+<edge head="11" tail="14" label="ARG2" ></edge>
+<edge head="12" tail="13" label="mod" ></edge>
+<edge head="15" tail="16" label="mod" ></edge>
+<edge head="15" tail="17" label="location" ></edge>
+<edge head="17" tail="18" label="op1" ></edge>
+<edge head="18" tail="19" label="null_edge" ></edge>
+<edge head="18" tail="20" label="mod" ></edge>
+<edge head="22" tail="23" label="ARG1" ></edge>
+<edge head="23" tail="24" label="null_edge" ></edge>
+<edge head="25" tail="26" label="name" ></edge>
+<edge head="26" tail="34" label="op1" ></edge>
+<edge head="27" tail="28" label="op1" ></edge>
+<edge head="27" tail="29" label="op2" ></edge>
+</edges>
+</graph>
+<graph id="2">
+<nodes>
+<node gid="35" id="0" text="shout" label="x5" nosuffix="shout" isleaf="False"></node>
+<node gid="36" id="1" text="team" label="x2" nosuffix="team" isleaf="False"></node>
+<node gid="37" id="2" text="name" label="n" nosuffix="name" isleaf="False"></node>
+<node gid="38" id="3" text="ceremony" label="x4" nosuffix="ceremony" isleaf="True"></node>
+<node gid="39" id="4" text="country" label="x7" nosuffix="country" isleaf="False"></node>
+<node gid="40" id="5" text="name" label="n1" nosuffix="name" isleaf="False"></node>
+<node gid="41" id="6" text="crank" label="x11" nosuffix="crank" isleaf="False"></node>
+<node gid="42" id="7" text="band" label="x10" nosuffix="band" isleaf="True"></node>
+<node gid="43" id="8" text="master" label="master" nosuffix="master" isleaf="True"></node>
+<node gid="44" id="9" text="China" label="China" nosuffix="China" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="ARG0" ></edge>
+<edge head="0" tail="4" label="ARG1" ></edge>
+<edge head="0" tail="6" label="ARG1" ></edge>
+<edge head="1" tail="2" label="name" ></edge>
+<edge head="1" tail="3" label="ARG1" ></edge>
+<edge head="2" tail="8" label="op1" ></edge>
+<edge head="4" tail="5" label="name" ></edge>
+<edge head="5" tail="9" label="op1" ></edge>
+<edge head="6" tail="7" label="ARG1" ></edge>
+</edges>
+</graph>
+<graph id="3">
+<nodes>
+<node gid="45" id="0" text="king" label="x4" nosuffix="king" isleaf="False"></node>
+<node gid="46" id="1" text="that" label="x2" nosuffix="that" isleaf="True"></node>
+<node gid="47" id="2" text="superstar" label="x3" nosuffix="superstar" isleaf="True"></node>
+<node gid="48" id="3" text="comedy" label="x7" nosuffix="comedy" isleaf="False"></node>
+<node gid="49" id="4" text="country" label="x6" nosuffix="country" isleaf="False"></node>
+<node gid="50" id="5" text="name" label="n" nosuffix="name" isleaf="False"></node>
+<node gid="51" id="6" text="name" label="x9" nosuffix="name" isleaf="False"></node>
+<node gid="52" id="7" text="Taiwan" label="Taiwan" nosuffix="Taiwan" isleaf="True"></node>
+<node gid="53" id="8" text="Hu" label="Hu" nosuffix="Hu" isleaf="True"></node>
+<node gid="54" id="9" text="Gua" label="Gua" nosuffix="Gua" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="mod" ></edge>
+<edge head="0" tail="2" label="mod" ></edge>
+<edge head="0" tail="3" label="ARG1" ></edge>
+<edge head="3" tail="4" label="mod" ></edge>
+<edge head="3" tail="6" label="name" ></edge>
+<edge head="4" tail="5" label="name" ></edge>
+<edge head="5" tail="7" label="op1" ></edge>
+<edge head="6" tail="8" label="op1" ></edge>
+<edge head="6" tail="9" label="op2" ></edge>
+</edges>
+</graph>
+<graph id="4">
+<nodes>
+<node gid="55" id="0" text="person" label="x3" nosuffix="person" isleaf="False"></node>
+<node gid="56" id="1" text="cheer-04" label="c" nosuffix="cheer" isleaf="True"></node>
+<node gid="57" id="2" text="crowd" label="x2" nosuffix="crowd" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="ARG0-of" ></edge>
+<edge head="0" tail="2" label="mod" ></edge>
+</edges>
+</graph>
+<graph id="5">
+<nodes>
+<node gid="58" id="0" text="xconcept" label="x" nosuffix="xconcept" isleaf="False"></node>
+<node gid="59" id="1" text="and" label="x31" nosuffix="and" isleaf="False"></node>
+<node gid="60" id="2" text="flood-01" label="x22" nosuffix="flood" isleaf="False"></node>
+<node gid="61" id="3" text="and" label="x26" nosuffix="and" isleaf="False"></node>
+<node gid="62" id="4" text="stage" label="x19" nosuffix="stage" isleaf="False"></node>
+<node gid="63" id="5" text="center" label="x18" nosuffix="center" isleaf="True"></node>
+<node gid="64" id="6" text="light" label="x25" nosuffix="light" isleaf="False"></node>
+<node gid="65" id="7" text="pulsate" label="x24" nosuffix="pulsate" isleaf="True"></node>
+<node gid="66" id="8" text="billow" label="x27" nosuffix="billow" isleaf="True"></node>
+<node gid="67" id="9" text="smoke" label="x29" nosuffix="smoke" isleaf="False"></node>
+<node gid="68" id="10" text="stage" label="x28" nosuffix="stage" isleaf="True"></node>
+<node gid="69" id="11" text="launch-01" label="x43" nosuffix="launch" isleaf="False"></node>
+<node gid="70" id="12" text="person" label="x32" nosuffix="person" isleaf="False"></node>
+<node gid="71" id="13" text="name" label="n2" nosuffix="name" isleaf="False"></node>
+<node gid="72" id="14" text="country" label="x40" nosuffix="country" isleaf="False"></node>
+<node gid="73" id="15" text="name" label="n3" nosuffix="name" isleaf="False"></node>
+<node gid="74" id="16" text="tune-01" label="x48" nosuffix="tune" isleaf="False"></node>
+<node gid="75" id="17" text="snappy" label="x46" nosuffix="snappy" isleaf="True"></node>
+<node gid="76" id="18" text="country" label="x47" nosuffix="country" isleaf="False"></node>
+<node gid="77" id="19" text="name" label="n4" nosuffix="name" isleaf="False"></node>
+<node gid="78" id="20" text="and" label="x50" nosuffix="and" isleaf="False"></node>
+<node gid="79" id="21" text="storm" label="x16" nosuffix="storm" isleaf="False"></node>
+<node gid="80" id="22" text="oh" label="x52" nosuffix="oh" isleaf="True"></node>
+<node gid="81" id="23" text="name" label="x54" nosuffix="name" isleaf="False"></node>
+<node gid="82" id="24" text="name" label="x59" nosuffix="name" isleaf="False"></node>
+<node gid="83" id="25" text="country" label="x62" nosuffix="country" isleaf="False"></node>
+<node gid="84" id="26" text="name" label="n1" nosuffix="name" isleaf="False"></node>
+<node gid="85" id="27" text="good-42" label="x66" nosuffix="good" isleaf="False"></node>
+<node gid="86" id="28" text="performer" label="x4" nosuffix="performer" isleaf="False"></node>
+<node gid="87" id="29" text="tuxedo-clad" label="x2" nosuffix="tuxedo" isleaf="True"></node>
+<node gid="88" id="30" text="country" label="x3" nosuffix="country" isleaf="False"></node>
+<node gid="89" id="31" text="name" label="n" nosuffix="name" isleaf="False"></node>
+<node gid="90" id="32" text="mean-01" label="x9" nosuffix="mean" isleaf="False"></node>
+<node gid="91" id="33" text="name" label="x8" nosuffix="name" isleaf="False"></node>
+<node gid="92" id="34" text="stage" label="x7" nosuffix="stage" isleaf="True"></node>
+<node gid="93" id="35" text="cucumber" label="x11" nosuffix="cucumber" isleaf="True"></node>
+<node gid="94" id="36" text="swoon" label="x71" nosuffix="swoon" isleaf="False"></node>
+<node gid="95" id="37" text="woman" label="x70" nosuffix="woman" isleaf="False"></node>
+<node gid="96" id="38" text="Hu" label="Hu" nosuffix="Hu" isleaf="True"></node>
+<node gid="97" id="39" text="Gua" label="Gua" nosuffix="Gua" isleaf="True"></node>
+<node gid="98" id="40" text="," label="," nosuffix="," isleaf="True"></node>
+<node gid="99" id="41" text="the" label="the" nosuffix="the" isleaf="True"></node>
+<node gid="100" id="42" text="''" label="''" nosuffix="''" isleaf="True"></node>
+<node gid="101" id="43" text="Johnny" label="Johnny" nosuffix="Johnny" isleaf="True"></node>
+<node gid="102" id="44" text="Carson" label="Carson" nosuffix="Carson" isleaf="True"></node>
+<node gid="103" id="45" text="Taiwan" label="Taiwan" nosuffix="Taiwan" isleaf="True"></node>
+<node gid="104" id="46" text="China" label="China" nosuffix="China" isleaf="True"></node>
+<node gid="105" id="47" text="Hu" label="Hu" nosuffix="Hu" isleaf="True"></node>
+<node gid="106" id="48" text="Gua" label="Gua" nosuffix="Gua" isleaf="True"></node>
+<node gid="107" id="49" text="Johnny" label="Johnny" nosuffix="Johnny" isleaf="True"></node>
+<node gid="108" id="50" text="Carson" label="Carson" nosuffix="Carson" isleaf="True"></node>
+<node gid="109" id="51" text="Taiwan" label="Taiwan" nosuffix="Taiwan" isleaf="True"></node>
+<node gid="110" id="52" text="China" label="China" nosuffix="China" isleaf="True"></node>
+<node gid="111" id="53" text="1" label="1" nosuffix="1" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="x" ></edge>
+<edge head="0" tail="20" label="x" ></edge>
+<edge head="1" tail="2" label="op1" ></edge>
+<edge head="1" tail="8" label="op2" ></edge>
+<edge head="1" tail="9" label="op3" ></edge>
+<edge head="1" tail="11" label="op7" ></edge>
+<edge head="2" tail="3" label="ARG1" ></edge>
+<edge head="3" tail="4" label="op1" ></edge>
+<edge head="3" tail="6" label="op1" ></edge>
+<edge head="4" tail="5" label="mod" ></edge>
+<edge head="6" tail="7" label="mod" ></edge>
+<edge head="9" tail="10" label="mod" ></edge>
+<edge head="11" tail="12" label="ARG0" ></edge>
+<edge head="11" tail="16" label="prep-into" ></edge>
+<edge head="12" tail="13" label="name" ></edge>
+<edge head="12" tail="14" label="source" ></edge>
+<edge head="13" tail="38" label="op1" ></edge>
+<edge head="13" tail="39" label="op2" ></edge>
+<edge head="13" tail="40" label="op3" ></edge>
+<edge head="13" tail="41" label="op4" ></edge>
+<edge head="13" tail="42" label="op5" ></edge>
+<edge head="13" tail="43" label="op6" ></edge>
+<edge head="13" tail="44" label="op7" ></edge>
+<edge head="14" tail="15" label="name" ></edge>
+<edge head="15" tail="45" label="op1" ></edge>
+<edge head="16" tail="17" label="mod" ></edge>
+<edge head="16" tail="18" label="mod" ></edge>
+<edge head="18" tail="19" label="name" ></edge>
+<edge head="19" tail="46" label="op1" ></edge>
+<edge head="20" tail="21" label="op2" ></edge>
+<edge head="20" tail="27" label="op1" ></edge>
+<edge head="20" tail="36" label="op1" ></edge>
+<edge head="21" tail="22" label="mod" ></edge>
+<edge head="21" tail="23" label="name" ></edge>
+<edge head="21" tail="24" label="name" ></edge>
+<edge head="23" tail="47" label="op1" ></edge>
+<edge head="23" tail="48" label="op2" ></edge>
+<edge head="24" tail="49" label="op1" ></edge>
+<edge head="24" tail="50" label="op2" ></edge>
+<edge head="24" tail="25" label="source" ></edge>
+<edge head="25" tail="26" label="name" ></edge>
+<edge head="26" tail="51" label="op1" ></edge>
+<edge head="27" tail="28" label="domain" ></edge>
+<edge head="28" tail="29" label="null_edge" ></edge>
+<edge head="28" tail="30" label="mod" ></edge>
+<edge head="28" tail="32" label="ARG0-of" ></edge>
+<edge head="30" tail="31" label="name" ></edge>
+<edge head="31" tail="52" label="op1" ></edge>
+<edge head="32" tail="33" label="ARG0" ></edge>
+<edge head="32" tail="35" label="ARG1" ></edge>
+<edge head="33" tail="34" label="mod" ></edge>
+<edge head="36" tail="37" label="ARG0" ></edge>
+<edge head="37" tail="53" label="quant" ></edge>
+</edges>
+</graph>
+<graph id="6">
+<nodes>
+<node gid="112" id="0" text="king" label="x8" nosuffix="king" isleaf="False"></node>
+<node gid="113" id="1" text="king" label="x5" nosuffix="king" isleaf="False"></node>
+<node gid="114" id="2" text="that" label="x3" nosuffix="that" isleaf="True"></node>
+<node gid="115" id="3" text="superstar" label="x4" nosuffix="superstar" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="ARG1" ></edge>
+<edge head="1" tail="2" label="mod" ></edge>
+<edge head="1" tail="3" label="mod" ></edge>
+</edges>
+</graph>
+<graph id="7">
+<nodes>
+<node gid="116" id="0" text="xconcept" label="x" nosuffix="xconcept" isleaf="False"></node>
+<node gid="117" id="1" text="and" label="x1" nosuffix="and" isleaf="False"></node>
+<node gid="118" id="2" text="signal-01" label="x6" nosuffix="signal" isleaf="False"></node>
+<node gid="119" id="3" text="stage" label="x3" nosuffix="stage" isleaf="False"></node>
+<node gid="120" id="4" text="center" label="x2" nosuffix="center" isleaf="True"></node>
+<node gid="121" id="5" text="country" label="x15" nosuffix="country" isleaf="False"></node>
+<node gid="122" id="6" text="name" label="n" nosuffix="name" isleaf="False"></node>
+<node gid="123" id="7" text="country" label="x13" nosuffix="country" isleaf="False"></node>
+<node gid="124" id="8" text="name" label="n1" nosuffix="name" isleaf="False"></node>
+<node gid="125" id="9" text="city" label="x14" nosuffix="city" isleaf="False"></node>
+<node gid="126" id="10" text="name" label="n2" nosuffix="name" isleaf="False"></node>
+<node gid="127" id="11" text="change-01" label="x9" nosuffix="change" isleaf="True"></node>
+<node gid="128" id="12" text="Strip" label="Strip" nosuffix="Strip" isleaf="True"></node>
+<node gid="129" id="13" text="Las" label="Las" nosuffix="Las" isleaf="True"></node>
+<node gid="130" id="14" text="Vegas" label="Vegas" nosuffix="Vegas" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="x" ></edge>
+<edge head="1" tail="2" label="op1" ></edge>
+<edge head="1" tail="11" label="op4" ></edge>
+<edge head="2" tail="3" label="ARG0" ></edge>
+<edge head="2" tail="5" label="ARG3" ></edge>
+<edge head="3" tail="4" label="part-of" ></edge>
+<edge head="5" tail="6" label="name" ></edge>
+<edge head="5" tail="7" label="null_edge" ></edge>
+<edge head="5" tail="9" label="null_edge" ></edge>
+<edge head="6" tail="12" label="op1" ></edge>
+<edge head="7" tail="8" label="name" ></edge>
+<edge head="8" tail="13" label="op1" ></edge>
+<edge head="9" tail="10" label="name" ></edge>
+<edge head="10" tail="14" label="op1" ></edge>
+</edges>
+</graph>
+<graph id="8">
+<nodes>
+<node gid="131" id="0" text="say-01" label="x310" nosuffix="say" isleaf="False"></node>
+<node gid="132" id="1" text="person" label="x314" nosuffix="person" isleaf="False"></node>
+<node gid="133" id="2" text="name" label="n" nosuffix="name" isleaf="False"></node>
+<node gid="134" id="3" text="desert" label="x311" nosuffix="desert" isleaf="True"></node>
+<node gid="135" id="4" text="inn" label="x312" nosuffix="inn" isleaf="True"></node>
+<node gid="136" id="5" text="have-org-role-91" label="x313" nosuffix="have" isleaf="False"></node>
+<node gid="137" id="6" text="president" label="p" nosuffix="president" isleaf="True"></node>
+<node gid="138" id="7" text="Kevin" label="Kevin" nosuffix="Kevin" isleaf="True"></node>
+<node gid="139" id="8" text="J." label="J." nosuffix="J." isleaf="True"></node>
+<node gid="140" id="9" text="Malley" label="Malley" nosuffix="Malley" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="ARG0" ></edge>
+<edge head="1" tail="2" label="name" ></edge>
+<edge head="1" tail="3" label="ARG0-of" ></edge>
+<edge head="1" tail="4" label="mod" ></edge>
+<edge head="1" tail="5" label="ARG0-of" ></edge>
+<edge head="2" tail="7" label="op1" ></edge>
+<edge head="2" tail="8" label="op2" ></edge>
+<edge head="2" tail="9" label="op3" ></edge>
+<edge head="5" tail="6" label="ARG2" ></edge>
+</edges>
+</graph>
+<graph id="9">
+<nodes>
+<node gid="141" id="0" text="gambler" label="x13" nosuffix="gambler" isleaf="False"></node>
+<node gid="142" id="1" text="gambler" label="x5" nosuffix="gambler" isleaf="False"></node>
+<node gid="143" id="2" text="null_tag" label="x3" nosuffix="null_tag" isleaf="True"></node>
+<node gid="144" id="3" text="world" label="x8" nosuffix="world" isleaf="True"></node>
+<node gid="145" id="4" text="null_tag" label="x11" nosuffix="null_tag" isleaf="True"></node>
+<node gid="146" id="5" text="world" label="x16" nosuffix="world" isleaf="True"></node>
+<node gid="147" id="6" text="right" label="x17" nosuffix="right" isleaf="False"></node>
+<node gid="148" id="7" text="now" label="x18" nosuffix="now" isleaf="True"></node>
+<node gid="149" id="8" text="1" label="1" nosuffix="1" isleaf="True"></node>
+<node gid="150" id="9" text="1" label="1" nosuffix="1" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="ARG0" ></edge>
+<edge head="0" tail="4" label="null_edge" ></edge>
+<edge head="0" tail="8" label="quant" ></edge>
+<edge head="0" tail="5" label="location" ></edge>
+<edge head="0" tail="6" label="time" ></edge>
+<edge head="1" tail="2" label="null_edge" ></edge>
+<edge head="1" tail="9" label="quant" ></edge>
+<edge head="1" tail="3" label="location" ></edge>
+<edge head="6" tail="7" label="op1" ></edge>
+</edges>
+</graph>
+<graph id="10">
+<nodes>
+<node gid="151" id="0" text="say-01" label="x195" nosuffix="say" isleaf="False"></node>
+<node gid="152" id="1" text="say-01" label="x6" nosuffix="say" isleaf="False"></node>
+<node gid="153" id="2" text="old-timer" label="x2" nosuffix="old" isleaf="False"></node>
+<node gid="154" id="3" text="around" label="x3" nosuffix="around" isleaf="False"></node>
+<node gid="155" id="4" text="gulch" label="x5" nosuffix="gulch" isleaf="True"></node>
+<node gid="156" id="5" text="mount-02" label="x18" nosuffix="mount" isleaf="False"></node>
+<node gid="157" id="6" text="important" label="x8" nosuffix="important" isleaf="False"></node>
+<node gid="158" id="7" text="gambler" label="x12" nosuffix="gambler" isleaf="False"></node>
+<node gid="159" id="8" text="name" label="x11" nosuffix="name" isleaf="False"></node>
+<node gid="160" id="9" text="city" label="x15" nosuffix="city" isleaf="False"></node>
+<node gid="161" id="10" text="name" label="n3" nosuffix="name" isleaf="False"></node>
+<node gid="162" id="11" text="country" label="x14" nosuffix="country" isleaf="False"></node>
+<node gid="163" id="12" text="name" label="n5" nosuffix="name" isleaf="False"></node>
+<node gid="164" id="13" text="temporal-quantity" label="x23" nosuffix="temporal" isleaf="False"></node>
+<node gid="165" id="14" text="decade" label="d" nosuffix="decade" isleaf="True"></node>
+<node gid="166" id="15" text="past" label="x21" nosuffix="past" isleaf="True"></node>
+<node gid="167" id="16" text="newspaper" label="x196" nosuffix="newspaper" isleaf="False"></node>
+<node gid="168" id="17" text="name" label="n" nosuffix="name" isleaf="False"></node>
+<node gid="169" id="18" text="person" label="x202" nosuffix="person" isleaf="False"></node>
+<node gid="170" id="19" text="study-01" label="s" nosuffix="study" isleaf="True"></node>
+<node gid="171" id="20" text="person" label="x200" nosuffix="person" isleaf="False"></node>
+<node gid="172" id="21" text="name" label="n1" nosuffix="name" isleaf="False"></node>
+<node gid="173" id="22" text="country" label="x201" nosuffix="country" isleaf="False"></node>
+<node gid="174" id="23" text="name" label="n2" nosuffix="name" isleaf="False"></node>
+<node gid="175" id="24" text="visit-01" label="x208" nosuffix="visit" isleaf="False"></node>
+<node gid="176" id="25" text="city" label="x211" nosuffix="city" isleaf="False"></node>
+<node gid="177" id="26" text="name" label="n4" nosuffix="name" isleaf="False"></node>
+<node gid="178" id="27" text="country" label="x210" nosuffix="country" isleaf="False"></node>
+<node gid="179" id="28" text="name" label="n6" nosuffix="name" isleaf="False"></node>
+<node gid="180" id="29" text="Asian" label="Asian" nosuffix="Asian" isleaf="True"></node>
+<node gid="181" id="30" text="Vegas" label="Vegas" nosuffix="Vegas" isleaf="True"></node>
+<node gid="182" id="31" text="Las" label="Las" nosuffix="Las" isleaf="True"></node>
+<node gid="183" id="32" text="2" label="2" nosuffix="2" isleaf="True"></node>
+<node gid="184" id="33" text="Ling" label="Ling" nosuffix="Ling" isleaf="True"></node>
+<node gid="185" id="34" text="Chuang" label="Chuang" nosuffix="Chuang" isleaf="True"></node>
+<node gid="186" id="35" text="24-year-old" label="24-year-old" nosuffix="24" isleaf="True"></node>
+<node gid="187" id="36" text="Alhambra" label="Alhambra" nosuffix="Alhambra" isleaf="True"></node>
+<node gid="188" id="37" text="Vegas" label="Vegas" nosuffix="Vegas" isleaf="True"></node>
+<node gid="189" id="38" text="Las" label="Las" nosuffix="Las" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="ARG1" ></edge>
+<edge head="0" tail="16" label="ARG0" ></edge>
+<edge head="1" tail="2" label="ARG0" ></edge>
+<edge head="1" tail="5" label="ARG1" ></edge>
+<edge head="2" tail="3" label="location" ></edge>
+<edge head="3" tail="4" label="op1" ></edge>
+<edge head="5" tail="6" label="ARG1" ></edge>
+<edge head="5" tail="13" label="duration" ></edge>
+<edge head="6" tail="7" label="poss" ></edge>
+<edge head="6" tail="9" label="null_edge" ></edge>
+<edge head="7" tail="8" label="name" ></edge>
+<edge head="8" tail="29" label="op1" ></edge>
+<edge head="9" tail="10" label="name" ></edge>
+<edge head="9" tail="11" label="mod" ></edge>
+<edge head="10" tail="30" label="op1" ></edge>
+<edge head="11" tail="12" label="name" ></edge>
+<edge head="12" tail="31" label="op1" ></edge>
+<edge head="13" tail="14" label="unit" ></edge>
+<edge head="13" tail="15" label="mod" ></edge>
+<edge head="13" tail="32" label="quant" ></edge>
+<edge head="16" tail="17" label="name" ></edge>
+<edge head="16" tail="18" label="ARG0-of" ></edge>
+<edge head="17" tail="33" label="op1" ></edge>
+<edge head="17" tail="34" label="op2" ></edge>
+<edge head="18" tail="19" label="ARG0-of" ></edge>
+<edge head="18" tail="20" label="mod" ></edge>
+<edge head="18" tail="22" label="mod" ></edge>
+<edge head="18" tail="24" label="time" ></edge>
+<edge head="20" tail="21" label="name" ></edge>
+<edge head="21" tail="35" label="op1" ></edge>
+<edge head="22" tail="23" label="name" ></edge>
+<edge head="23" tail="36" label="op1" ></edge>
+<edge head="24" tail="25" label="ARG1" ></edge>
+<edge head="25" tail="26" label="name" ></edge>
+<edge head="25" tail="27" label="mod" ></edge>
+<edge head="26" tail="37" label="op1" ></edge>
+<edge head="27" tail="28" label="name" ></edge>
+<edge head="28" tail="38" label="op1" ></edge>
+</edges>
+</graph>
+<graph id="11">
+<nodes>
+<node gid="190" id="0" text="country" label="x4" nosuffix="country" isleaf="False"></node>
+<node gid="191" id="1" text="name" label="n" nosuffix="name" isleaf="False"></node>
+<node gid="192" id="2" text="this" label="x2" nosuffix="this" isleaf="True"></node>
+<node gid="193" id="3" text="America" label="America" nosuffix="America" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="name" ></edge>
+<edge head="0" tail="2" label="domain" ></edge>
+<edge head="1" tail="3" label="op1" ></edge>
+</edges>
+</graph>
+<graph id="12">
+<nodes>
+<node gid="194" id="0" text="prosper-01" label="x4" nosuffix="prosper" isleaf="False"></node>
+<node gid="195" id="1" text="it" label="x1" nosuffix="it" isleaf="True"></node>
+<node gid="196" id="2" text="so" label="x3" nosuffix="so" isleaf="True"></node>
+<node gid="197" id="3" text="illusion" label="x8" nosuffix="illusion" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="domain" ></edge>
+<edge head="0" tail="2" label="degree" ></edge>
+<edge head="0" tail="3" label="ARG1" ></edge>
+</edges>
+</graph>
+<graph id="13">
+<nodes>
+<node gid="198" id="0" text="xconcept" label="x" nosuffix="xconcept" isleaf="False"></node>
+<node gid="199" id="1" text="and" label="x1" nosuffix="and" isleaf="False"></node>
+<node gid="200" id="2" text="contrast-01" label="x12" nosuffix="contrast" isleaf="False"></node>
+<node gid="201" id="3" text="market" label="x5" nosuffix="market" isleaf="False"></node>
+<node gid="202" id="4" text="big" label="x3" nosuffix="big" isleaf="False"></node>
+<node gid="203" id="5" text="most" label="m" nosuffix="most" isleaf="True"></node>
+<node gid="204" id="6" text="casino" label="x4" nosuffix="casino" isleaf="True"></node>
+<node gid="205" id="7" text="still" label="x7" nosuffix="still" isleaf="True"></node>
+<node gid="206" id="8" text="domestic" label="x9" nosuffix="domestic" isleaf="True"></node>
+<node gid="207" id="9" text="exert-01" label="x15" nosuffix="exert" isleaf="False"></node>
+<node gid="208" id="10" text="gambler" label="x14" nosuffix="gambler" isleaf="False"></node>
+<node gid="209" id="11" text="name" label="x13" nosuffix="name" isleaf="False"></node>
+<node gid="210" id="12" text="power" label="x17" nosuffix="power" isleaf="False"></node>
+<node gid="211" id="13" text="exceed-01" label="x20" nosuffix="exceed" isleaf="False"></node>
+<node gid="212" id="14" text="number" label="x23" nosuffix="number" isleaf="False"></node>
+<node gid="213" id="15" text="name" label="x21" nosuffix="name" isleaf="False"></node>
+<node gid="214" id="16" text="gambler" label="x22" nosuffix="gambler" isleaf="True"></node>
+<node gid="215" id="17" text="estimate-01" label="x27" nosuffix="estimate" isleaf="False"></node>
+<node gid="216" id="18" text="person" label="x26" nosuffix="person" isleaf="False"></node>
+<node gid="217" id="19" text="name" label="n" nosuffix="name" isleaf="False"></node>
+<node gid="218" id="20" text="gambler" label="x36" nosuffix="gambler" isleaf="False"></node>
+<node gid="219" id="21" text="casino" label="x32" nosuffix="casino" isleaf="True"></node>
+<node gid="220" id="22" text="top" label="x34" nosuffix="top" isleaf="True"></node>
+<node gid="221" id="23" text="say-01" label="x69" nosuffix="say" isleaf="False"></node>
+<node gid="222" id="24" text="limit-01" label="x61" nosuffix="limit" isleaf="False"></node>
+<node gid="223" id="25" text="it" label="x57" nosuffix="it" isleaf="True"></node>
+<node gid="224" id="26" text="just" label="x60" nosuffix="just" isleaf="True"></node>
+<node gid="225" id="27" text="inn" label="x65" nosuffix="inn" isleaf="False"></node>
+<node gid="226" id="28" text="desert" label="x64" nosuffix="desert" isleaf="True"></node>
+<node gid="227" id="29" text="person" label="x68" nosuffix="person" isleaf="False"></node>
+<node gid="228" id="30" text="name" label="n1" nosuffix="name" isleaf="False"></node>
+<node gid="229" id="31" text="and" label="x39" nosuffix="and" isleaf="False"></node>
+<node gid="230" id="32" text="come-01" label="x49" nosuffix="come" isleaf="False"></node>
+<node gid="231" id="33" text="about" label="x41" nosuffix="about" isleaf="True"></node>
+<node gid="232" id="34" text="revenue" label="x48" nosuffix="revenue" isleaf="False"></node>
+<node gid="233" id="35" text="percentage-entity" label="x43" nosuffix="percentage" isleaf="False"></node>
+<node gid="234" id="36" text="casino" label="x46" nosuffix="casino" isleaf="True"></node>
+<node gid="235" id="37" text="country" label="x53" nosuffix="country" isleaf="False"></node>
+<node gid="236" id="38" text="name" label="n2" nosuffix="name" isleaf="False"></node>
+<node gid="237" id="39" text="Asian" label="Asian" nosuffix="Asian" isleaf="True"></node>
+<node gid="238" id="40" text="Asian" label="Asian" nosuffix="Asian" isleaf="True"></node>
+<node gid="239" id="41" text="Malley" label="Malley" nosuffix="Malley" isleaf="True"></node>
+<node gid="240" id="42" text="90" label="90" nosuffix="90" isleaf="True"></node>
+<node gid="241" id="43" text="100" label="100" nosuffix="100" isleaf="True"></node>
+<node gid="242" id="44" text="Malley" label="Malley" nosuffix="Malley" isleaf="True"></node>
+<node gid="243" id="45" text="45" label="45" nosuffix="45" isleaf="True"></node>
+<node gid="244" id="46" text="Rim" label="Rim" nosuffix="Rim" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="x" ></edge>
+<edge head="1" tail="2" label="op2" ></edge>
+<edge head="1" tail="31" label="op2" ></edge>
+<edge head="2" tail="3" label="ARG2" ></edge>
+<edge head="2" tail="9" label="ARG2" ></edge>
+<edge head="2" tail="17" label="ARG2" ></edge>
+<edge head="2" tail="23" label="ARG1" ></edge>
+<edge head="3" tail="4" label="mod" ></edge>
+<edge head="3" tail="6" label="mod" ></edge>
+<edge head="3" tail="7" label="mod" ></edge>
+<edge head="3" tail="8" label="mod" ></edge>
+<edge head="4" tail="5" label="degree" ></edge>
+<edge head="9" tail="10" label="ARG0" ></edge>
+<edge head="9" tail="12" label="ARG1" ></edge>
+<edge head="10" tail="11" label="name" ></edge>
+<edge head="11" tail="39" label="op1" ></edge>
+<edge head="12" tail="13" label="ARG0-of" ></edge>
+<edge head="13" tail="14" label="ARG1" ></edge>
+<edge head="14" tail="15" label="name" ></edge>
+<edge head="14" tail="16" label="quant-of" ></edge>
+<edge head="15" tail="40" label="op1" ></edge>
+<edge head="17" tail="18" label="ARG0" ></edge>
+<edge head="17" tail="20" label="ARG2" ></edge>
+<edge head="18" tail="19" label="name" ></edge>
+<edge head="19" tail="41" label="op1" ></edge>
+<edge head="20" tail="42" label="quant" ></edge>
+<edge head="20" tail="21" label="poss" ></edge>
+<edge head="20" tail="22" label="mod" ></edge>
+<edge head="20" tail="43" label="quant" ></edge>
+<edge head="23" tail="24" label="ARG1" ></edge>
+<edge head="23" tail="29" label="ARG0" ></edge>
+<edge head="24" tail="25" label="ARG1" ></edge>
+<edge head="24" tail="26" label="mod" ></edge>
+<edge head="24" tail="27" label="ARG2" ></edge>
+<edge head="27" tail="28" label="mod" ></edge>
+<edge head="29" tail="30" label="name" ></edge>
+<edge head="30" tail="44" label="op1" ></edge>
+<edge head="31" tail="32" label="op1" ></edge>
+<edge head="32" tail="33" label="ARG1" ></edge>
+<edge head="32" tail="34" label="ARG1" ></edge>
+<edge head="32" tail="37" label="ARG4" ></edge>
+<edge head="34" tail="35" label="ARG1" ></edge>
+<edge head="34" tail="36" label="poss" ></edge>
+<edge head="35" tail="45" label="value" ></edge>
+<edge head="37" tail="38" label="name" ></edge>
+<edge head="38" tail="46" label="op1" ></edge>
+</edges>
+</graph>
+<graph id="14">
+<nodes>
+<node gid="245" id="0" text="true" label="x5" nosuffix="true" isleaf="False"></node>
+<node gid="246" id="1" text="same-41" label="x3" nosuffix="same" isleaf="True"></node>
+<node gid="247" id="2" text="or" label="x11" nosuffix="or" isleaf="False"></node>
+<node gid="248" id="3" text="country" label="x7" nosuffix="country" isleaf="False"></node>
+<node gid="249" id="4" text="name" label="n" nosuffix="name" isleaf="False"></node>
+<node gid="250" id="5" text="mirage" label="x10" nosuffix="mirage" isleaf="True"></node>
+<node gid="251" id="6" text="whatever" label="x12" nosuffix="whatever" isleaf="True"></node>
+<node gid="252" id="7" text="Caesars" label="Caesars" nosuffix="Caesars" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="domain" ></edge>
+<edge head="0" tail="2" label="domain" ></edge>
+<edge head="2" tail="3" label="op1" ></edge>
+<edge head="2" tail="5" label="op2" ></edge>
+<edge head="2" tail="6" label="op2" ></edge>
+<edge head="3" tail="4" label="name" ></edge>
+<edge head="4" tail="7" label="op1" ></edge>
+</edges>
+</graph>
+<graph id="15">
+<nodes>
+<node gid="253" id="0" text="transform-01" label="x9" nosuffix="transform" isleaf="False"></node>
+<node gid="254" id="1" text="name" label="x4" nosuffix="name" isleaf="False"></node>
+<node gid="255" id="2" text="increase-01" label="x3" nosuffix="increase" isleaf="True"></node>
+<node gid="256" id="3" text="person" label="x7" nosuffix="person" isleaf="False"></node>
+<node gid="257" id="4" text="tour-01" label="t" nosuffix="tour" isleaf="True"></node>
+<node gid="258" id="5" text="name" label="x6" nosuffix="name" isleaf="False"></node>
+<node gid="259" id="6" text="contrast-01" label="x15" nosuffix="contrast" isleaf="False"></node>
+<node gid="260" id="7" text="casino" label="x13" nosuffix="casino" isleaf="False"></node>
+<node gid="261" id="8" text="just" label="x11" nosuffix="just" isleaf="True"></node>
+<node gid="262" id="9" text="flow" label="flow" nosuffix="flow" isleaf="True"></node>
+<node gid="263" id="10" text="Asian" label="Asian" nosuffix="Asian" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="ARG1" ></edge>
+<edge head="0" tail="6" label="ARG1" ></edge>
+<edge head="1" tail="9" label="op1" ></edge>
+<edge head="1" tail="2" label="ARG1-of" ></edge>
+<edge head="1" tail="3" label="ARG1" ></edge>
+<edge head="3" tail="4" label="ARG0-of" ></edge>
+<edge head="3" tail="5" label="name" ></edge>
+<edge head="5" tail="10" label="op1" ></edge>
+<edge head="6" tail="7" label="ARG1" ></edge>
+<edge head="7" tail="8" label="mod" ></edge>
+</edges>
+</graph>
+<graph id="16">
+<nodes>
+<node gid="264" id="0" text="advertise" label="x12" nosuffix="advertise" isleaf="False"></node>
+<node gid="265" id="1" text="and" label="x7" nosuffix="and" isleaf="False"></node>
+<node gid="266" id="2" text="company" label="x2" nosuffix="company" isleaf="False"></node>
+<node gid="267" id="3" text="sightseeing" label="x1" nosuffix="sightseeing" isleaf="True"></node>
+<node gid="268" id="4" text="restaurant" label="x6" nosuffix="restaurant" isleaf="True"></node>
+<node gid="269" id="5" text="regular" label="x11" nosuffix="regular" isleaf="True"></node>
+<node gid="270" id="6" text="language" label="x15" nosuffix="language" isleaf="False"></node>
+<node gid="271" id="7" text="name" label="x14" nosuffix="name" isleaf="False"></node>
+<node gid="272" id="8" text="now" label="x16" nosuffix="now" isleaf="True"></node>
+<node gid="273" id="9" text="Asian" label="Asian" nosuffix="Asian" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="ARG1" ></edge>
+<edge head="0" tail="5" label="frequency" ></edge>
+<edge head="0" tail="6" label="ARG1" ></edge>
+<edge head="0" tail="8" label="time" ></edge>
+<edge head="1" tail="2" label="op1" ></edge>
+<edge head="1" tail="4" label="op1" ></edge>
+<edge head="2" tail="3" label="mod" ></edge>
+<edge head="6" tail="7" label="name" ></edge>
+<edge head="7" tail="9" label="op1" ></edge>
+</edges>
+</graph>
+<graph id="17">
+<nodes>
+<node gid="274" id="0" text="contrast-01" label="x2" nosuffix="contrast" isleaf="False"></node>
+<node gid="275" id="1" text="misstep" label="x7" nosuffix="misstep" isleaf="False"></node>
+<node gid="276" id="2" text="numerous" label="x6" nosuffix="numerous" isleaf="True"></node>
+<node gid="277" id="3" text="well" label="x10" nosuffix="well" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="ARG2" ></edge>
+<edge head="1" tail="2" label="quant" ></edge>
+<edge head="1" tail="3" label="mod" ></edge>
+</edges>
+</graph>
+<graph id="18">
+<nodes>
+<node gid="278" id="0" text="remove-01" label="x5" nosuffix="remove" isleaf="False"></node>
+<node gid="279" id="1" text="book" label="x2" nosuffix="book" isleaf="True"></node>
+<node gid="280" id="2" text="quick" label="x4" nosuffix="quick" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="ARG1" ></edge>
+<edge head="0" tail="2" label="manner" ></edge>
+</edges>
+</graph>
+</amr>

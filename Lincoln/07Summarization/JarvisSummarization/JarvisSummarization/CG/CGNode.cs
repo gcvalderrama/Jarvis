@@ -26,7 +26,7 @@ namespace JarvisSummarization.CG
         public double pagerank { get; set; }
         
         public int  sentenceid { get; set; }        
-        public bool IsPatientVerb { get; set; }
+        
         public bool IsEntity { get {
                 return !string.IsNullOrWhiteSpace(this.Entity);
             } }

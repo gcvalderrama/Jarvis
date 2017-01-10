@@ -38,7 +38,7 @@ namespace JarvisSummarization.CG
                 }
                 else
                 {
-                    throw new ApplicationException();
+                    //TODO person without data                    
                 }                
             }
             foreach (var item in deletes)

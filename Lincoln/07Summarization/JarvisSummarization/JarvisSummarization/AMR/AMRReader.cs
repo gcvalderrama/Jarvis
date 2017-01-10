@@ -10,13 +10,12 @@ namespace JarvisSummarization.AMR
 {
     public class AMRReader
     {
-        public AMRDocument ReadXML(string path)
+        public AMRDocument ReadContent(string Content)
         {
-            AMRDocument document = new AMRDocument();
-            var str = File.ReadAllText(path);
-            var amrelement = XElement.Parse(str);
+            AMRDocument document = new AMRDocument();            
+            var amrelement = XElement.Parse(Content);
             var grapselement = from c in amrelement.Elements("graph")
-                              select c;
+                               select c;
             foreach (var graphelement in grapselement)
             {
                 var graph = new AMRGraph();
@@ -24,6 +23,12 @@ namespace JarvisSummarization.AMR
                 document.Graphs.Add(graph);
             }
             return document;
+        }
+
+        public AMRDocument ReadXML(string path)
+        {            
+            var str = File.ReadAllText(path);
+            return this.ReadContent(str);
         }
     }
 }

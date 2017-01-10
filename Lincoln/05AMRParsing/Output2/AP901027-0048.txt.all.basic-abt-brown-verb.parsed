@@ -1,330 +1,640 @@
-# ::id 1
-# ::snt Hundreds of demonstrators blocked streets and train tracks today, halting most traffic in the capital to press Hundreds of demonstrators demands for President Hussain Muhammad Ershad to resign
-(x4 / block-01
-	:ARG1 (x3 / person
-		:ARG0-of (d / demonstrate-01))
-	:ARG1 (x6 / and
-		:op1 (x5 / street)
-		:op2 (x8 / track
-			:mod (x7 / train)))
-	:time (x9 / today)
-	:ARG1 (x11 / halt-01
-		:ARG1 (x13 / traffic
-			:mod (x12 / most)
-			:location (x16 / capital
-				:purpose (x18 / press-01
-					:ARG2 (x21 / person
-						:ARG0-of (d1 / demonstrate-01))
-					:ARG1 (x22 / demand-01
-						:ARG1 (x29 / resign-01
-							:ARG0 (x25 / person
-								:name (n / name
-									:op1 "Hussain"
-									:op2 "Muhammad"
-									:op3 "Ershad")
-								:ARG0-of (x24 / have-org-role-91
-									:ARG2 (p / president))))))))))
-
-# ::id 2
-# ::snt Stores and offices closed, apparently out of fear of attacks, when what was intended to be a blockade of transport turned into a general strike
-(x16 / intend-01
-	:time (x4 / close-01
-		:ARG0 (x2 / and
-			:op1 (x1 / store)
-			:op2 (x3 / office))
-		:ARG1 (x9 / fear-01
-			:mod (x6 / apparent)
-			:ARG1 (x11 / attack-01)))
-	:ARG1 (x20 / blockade-01
-		:ARG1 (x22 / transport-01
-			:ARG1-of (x23 / turn-02
-				:ARG2 (x27 / person
-					:name (n / name
-						:op1 "strike")
-					:mod (x26 / general))))))
-
-# ::id 3
-# ::snt Groups of about 50 demonstrators staged sit-down strikes at about two dozen rail and road intersections in and around Dhaka, a city of 7 million people
-(x6 / stage-01
-	:ARG0 (x1 / group
-		:consist-of (x5 / person
-			:ARG0-of (d / demonstrate-01)
-			:quant (x3 / about
-				:op1 50)))
-	:ARG1 (x8 / strike-01
-		:mod (x7 / sit-down))
-	:location (x14 / and
-		:op1 (x13 / rail
-			:location (x19 / around
-				:op1 (x20 / country
-					:name (n / name
-						:op1 "Dhaka")
-					:location (x23 / city
-						:ARG1-of (x24 / include-91
-							:ARG3 (x10 / about))))))
-		:op2 (x16 / intersect-01
-			:ARG1 (x15 / road))))
-
-# ::id 4
-# ::snt Many people walked to work
-(x3 / walk-01
-	:null_edge (x1 / many)
-	:ARG2 (x5 / work-01))
-
-# ::id 5
-# ::snt Even bicycle-powered rickshaws, Dhaka's chief mode of transport, stayed off the streets
-(x12 / stay-01
-	:ARG1 (x3 / rickshaw
-		:mod (x1 / even)
-		:mod (x2 / bicycle-powered))
-	:ARG3 (x8 / mode
-		:poss (x5 / country
-			:name (n / name
-				:op1 "Dhaka"))
-		:mod (x7 / have-org-role-91
-			:ARG2 (c / chief))
-		:instrument-of (x10 / transport-01))
-	:location (x15 / street))
-
-# ::id 6
-# ::snt Protesters paraded through the streets shouting " Down with Ershad !
-(x2 / parade-01
-	:ARG0 (x1 / person
-		:ARG0-of (p / protest-01))
-	:location (x5 / street
-		:ARG1-of (x6 / shout)))
-
-# ::id 7
-# ::snt and " Days of Autocracy Are Over !
-(x1 / and
-	:op1 (x7 / over
-		:instrument (x5 / autocracy)))
-
-# ::id 8
-# ::snt United News of Bangladesh said 4,000 police and paramilitary troops were deployed in Dhaka
-(x5 / say-01
-	:ARG0 (x2 / news
-		:null_edge (x1 / null_tag)
-		:null_edge (x4 / country
-			:name (n / name
-				:op1 "Bangladesh")))
-	:ARG1 (x12 / deploy-01
-		:ARG1 (x8 / and
-			:op1 (x7 / police)
-			:op1 (xap0 / person
-				:quant (x6 / 4,000)
-				:mod (x9 / paramilitary)
-				:poss (x10 / troop)))
-		:location (x14 / country
-			:name (n1 / name
-				:op1 "Dhaka"))))
-
-# ::id 9
-# ::snt There were no reports of violence by midday
-(x4 / report-01
-	:polarity -
-	:ARG1 (x6 / violence))
-
-# ::id 10
-# ::snt The blockade was the latest tactic in the campaign by opposition parties to force Ershad to quit
-(x6 / tactic
-	:domain (x2 / blockade-01)
-	:time (x5 / late
-		:degree (m / most))
-	:time (x9 / campaign-01)
-	:ARG0 (x12 / party
-		:ARG0-of (x11 / oppose-01)
-		:ARG2-of (x14 / force-01
-			:ARG2 (x17 / quit-01
-				:ARG0 (x15 / person
-					:name (n / name
-						:op1 "Ershad"))))))
-
-# ::id 11
-# ::snt At least eight people have been killed by police since the current round of protests started Oct. 10
-(x7 / kill-01
-	:ARG1 8
-	:ARG0 (x9 / police)
-	:time (x10 / since
-		:op1 (x16 / start-01
-			:ARG1 (x13 / round
-				:time (x12 / current)
-				:mod (x15 / protest-01))
-			:time (x17 / name
-				:op1 "Oct."
-				:op2 "10"))))
-
-# ::id 12
-# ::snt " At least eight people are happy to see that the blockade has turned into a hartal (general strike )
-(x7 / happy
-	:null_edge 8
-	:null_edge (x9 / see-01
-		:ARG1 (x14 / turn-02
-			:ARG0 (x12 / blockade-01)
-			:ARG0 (x20 / person
-				:name (n / name
-					:op1 "strike")
-				:mod (x17 / hartal)
-				:mod (x19 / general)))))
-
-# ::id 13
-# ::snt This shows popular support for At least eight people cause, " said Suranjit Sengupta, a top leader of the Democratic Party
-(x13 / say-01
-	:ARG1 (x2 / show-01
-		:ARG0 (x1 / this)
-		:ARG1 (x4 / support-01
-			:manner (x3 / popular-41)
-			:quant 8
-			:ARG1 (x10 / cause-01)))
-	:ARG0 (x14 / newspaper
-		:name (n / name
-			:op1 "Suranjit"
-			:op2 "Sengupta")
-		:ARG0-of (x19 / lead-02
-			:mod (x18 / top)
-			:ARG1 (x20 / include-91
-				:null_edge (x23 / null_tag
-					:null_edge (x22 / null_tag))))))
-
-# ::id 14
-# ::snt It is one of eight parties in an alliance headed by the Awami League led by Sheik Hasina, one of the country's main opposition politicians
-(x6 / party
-	:ARG1 (x1 / it)
-	:quant 8
-	:ARG0-of (x9 / have-org-role-91
-		:ARG1 (a / alliance)
-		:ARG1-of (x10 / head-01
-			:ARG0 (x13 / political-party
-				:name (n / name
-					:op1 "Awami"
-					:op2 "League")
-				:ARG1-of (x15 / lead-02
-					:ARG0 (x17 / name
-						:op1 "Sheik"
-						:op2 "Hasina"))
-				:mod (x20 / one
-					:null_edge (x27 / politician
-						:poss (x23 / country)
-						:mod (x25 / main)
-						:ARG0-of (x26 / oppose-01)))))))
-
-# ::id 15
-# ::snt 
-(x3 / dismiss-01
-	:ARG0 (x1 / person
-		:name (n / name
-			:op1 "Ershad"))
-	:ARG1 (x5 / campaign-01
-		:name (x8 / name
-			:op1 "Hussain"
-			:op2 "Muhammad"
-			:op3 "Ershad"
-			:ARG0-of (x7 / have-org-role-91
-				:ARG2 (p / president))))
-	:ARG2 (x14 / work-01
-		:null_edge (x19 / violence-monger
-			:quant (x17 / handful
-				:purpose (x24 / destabilize-01
-					:ARG1 (x25 / country
-						:name (n1 / name
-							:op1 "Bangladesh")))))))
-
-# ::id 16
-# ::snt President Hussain Muhammad Ershad was an army general when President Hussain Muhammad Ershad seized power in a bloodless coup in 1982
-(x7 / army
-	:mod (x8 / general
-		:domain (x2 / person
-			:name (n / name
-				:op1 "Hussain"
-				:op2 "Muhammad"
-				:op3 "Ershad")
-			:ARG0-of (x1 / have-org-role-91
-				:ARG2 (p / president)))
-		:null_edge (x14 / seize-01
-			:ARG0 x2
-			:ARG0 x7
-			:ARG0 (x11 / person
-				:name (n1 / name
-					:op1 "Hussain"
-					:op2 "Muhammad"
-					:op3 "Ershad")
-				:ARG0-of (x10 / have-org-role-91
-					:ARG2 (p1 / president)))
-			:ARG1 (x15 / power)
-			:ARG1 (x19 / coup
-				:mod (x18 / blood)
-				:time (x21 / date-entity
-					:year 1982)))))
-
-# ::id 17
-# ::snt President Hussain Muhammad Ershad later resigned from the military and was elected president in 1986 in balloting that opposition parties, foreign diplomats and journalists said was rigged
-(x10 / and
-	:op1 (x6 / resign-01
-		:ARG0 (x2 / person
-			:name (n / name
-				:op1 "Hussain"
-				:op2 "Muhammad"
-				:op3 "Ershad")
-			:ARG0-of (x1 / have-org-role-91
-				:ARG2 (p1 / president)))
-		:time (x5 / late)
-		:ARG0 (x9 / military))
-	:op1 (x26 / say-01
-		:ARG1 (x13 / have-org-role-91
-			:ARG2 (p / president))
-		:time (x15 / date-entity
-			:year 1986)
-		:ARG1 (x24 / and
-			:op1 (x17 / balloting)
-			:op1 (x20 / party
-				:ARG0-of (x19 / oppose-01))
-			:op2 (x25 / journalist)
-			:op1 (xap0 / person
-				:mod (x22 / foreign)
-				:ARG0-of (x23 / have-org-role-91
-					:ARG2 (d / diplomat))))
-		:ARG1 (x28 / rig)))
-
-# ::id 18
-# ::snt President Hussain Muhammad Ershad plans to seek another five-year term in elections scheduled for next year
-(x5 / plan-01
-	:ARG0 (x2 / person
-		:name (n / name
-			:op1 "Hussain"
-			:op2 "Muhammad"
-			:op3 "Ershad")
-		:ARG0-of (x1 / have-org-role-91
-			:ARG2 (p / president)))
-	:ARG1 (x7 / seek-01
-		:ARG0 x2
-		:ARG1 (x10 / term
-			:mod (x8 / another)
-			:mod (x9 / person
-				:name (n1 / name
-					:op1 "five-year")))
-		:ARG1 (x12 / elect-01
-			:ARG1-of (x13 / schedule-01
-				:duration (x16 / year
-					:mod (x15 / next))))))
-
-# ::id 19
-# ::snt The opposition parties say The opposition parties will boycott the vote unless Ershad resigns and hands over power to a caretaker government
-(x4 / say-01
-	:ARG0 (x3 / party
-		:ARG0-of (x2 / oppose-01))
-	:ARG1 (x9 / boycott-01
-		:ARG0 (x7 / party
-			:ARG0-of (x6 / oppose-01))
-		:ARG1 (x11 / vote-01)
-		:ARG1 (x15 / and
-			:op1 (x14 / person
-				:ARG0-of (r / resign-01)
-				:ARG0 (x13 / person
-					:name (n / name
-						:op1 "Ershad"))
-				:ARG1 (x18 / power)
-				:ARG1 (x22 / government-organization
-					:ARG0-of (g / govern-01)
-					:mod (x21 / caretaker)))
-			:op2 (x16 / hand))))
-
+<amr>
+<graph id="1">
+<nodes>
+<node gid="0" id="0" text="block-01" label="x4" nosuffix="block" isleaf="False"></node>
+<node gid="1" id="1" text="person" label="x3" nosuffix="person" isleaf="False"></node>
+<node gid="2" id="2" text="demonstrate-01" label="d" nosuffix="demonstrate" isleaf="True"></node>
+<node gid="3" id="3" text="and" label="x6" nosuffix="and" isleaf="False"></node>
+<node gid="4" id="4" text="street" label="x5" nosuffix="street" isleaf="True"></node>
+<node gid="5" id="5" text="track" label="x8" nosuffix="track" isleaf="False"></node>
+<node gid="6" id="6" text="train" label="x7" nosuffix="train" isleaf="True"></node>
+<node gid="7" id="7" text="today" label="x9" nosuffix="today" isleaf="True"></node>
+<node gid="8" id="8" text="halt-01" label="x11" nosuffix="halt" isleaf="False"></node>
+<node gid="9" id="9" text="traffic" label="x13" nosuffix="traffic" isleaf="False"></node>
+<node gid="10" id="10" text="most" label="x12" nosuffix="most" isleaf="True"></node>
+<node gid="11" id="11" text="capital" label="x16" nosuffix="capital" isleaf="False"></node>
+<node gid="12" id="12" text="press-01" label="x18" nosuffix="press" isleaf="False"></node>
+<node gid="13" id="13" text="person" label="x21" nosuffix="person" isleaf="False"></node>
+<node gid="14" id="14" text="demonstrate-01" label="d1" nosuffix="demonstrate" isleaf="True"></node>
+<node gid="15" id="15" text="demand-01" label="x22" nosuffix="demand" isleaf="False"></node>
+<node gid="16" id="16" text="resign-01" label="x29" nosuffix="resign" isleaf="False"></node>
+<node gid="17" id="17" text="person" label="x25" nosuffix="person" isleaf="False"></node>
+<node gid="18" id="18" text="name" label="n" nosuffix="name" isleaf="False"></node>
+<node gid="19" id="19" text="have-org-role-91" label="x24" nosuffix="have" isleaf="False"></node>
+<node gid="20" id="20" text="president" label="p" nosuffix="president" isleaf="True"></node>
+<node gid="21" id="21" text="Hussain" label="Hussain" nosuffix="Hussain" isleaf="True"></node>
+<node gid="22" id="22" text="Muhammad" label="Muhammad" nosuffix="Muhammad" isleaf="True"></node>
+<node gid="23" id="23" text="Ershad" label="Ershad" nosuffix="Ershad" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="ARG1" ></edge>
+<edge head="0" tail="3" label="ARG1" ></edge>
+<edge head="0" tail="7" label="time" ></edge>
+<edge head="0" tail="8" label="ARG1" ></edge>
+<edge head="1" tail="2" label="ARG0-of" ></edge>
+<edge head="3" tail="4" label="op1" ></edge>
+<edge head="3" tail="5" label="op2" ></edge>
+<edge head="5" tail="6" label="mod" ></edge>
+<edge head="8" tail="9" label="ARG1" ></edge>
+<edge head="9" tail="10" label="mod" ></edge>
+<edge head="9" tail="11" label="location" ></edge>
+<edge head="11" tail="12" label="purpose" ></edge>
+<edge head="12" tail="13" label="ARG2" ></edge>
+<edge head="12" tail="15" label="ARG1" ></edge>
+<edge head="13" tail="14" label="ARG0-of" ></edge>
+<edge head="15" tail="16" label="ARG1" ></edge>
+<edge head="16" tail="17" label="ARG0" ></edge>
+<edge head="17" tail="18" label="name" ></edge>
+<edge head="17" tail="19" label="ARG0-of" ></edge>
+<edge head="18" tail="21" label="op1" ></edge>
+<edge head="18" tail="22" label="op2" ></edge>
+<edge head="18" tail="23" label="op3" ></edge>
+<edge head="19" tail="20" label="ARG2" ></edge>
+</edges>
+</graph>
+<graph id="2">
+<nodes>
+<node gid="24" id="0" text="intend-01" label="x16" nosuffix="intend" isleaf="False"></node>
+<node gid="25" id="1" text="close-01" label="x4" nosuffix="close" isleaf="False"></node>
+<node gid="26" id="2" text="and" label="x2" nosuffix="and" isleaf="False"></node>
+<node gid="27" id="3" text="store" label="x1" nosuffix="store" isleaf="True"></node>
+<node gid="28" id="4" text="office" label="x3" nosuffix="office" isleaf="True"></node>
+<node gid="29" id="5" text="fear-01" label="x9" nosuffix="fear" isleaf="False"></node>
+<node gid="30" id="6" text="apparent" label="x6" nosuffix="apparent" isleaf="True"></node>
+<node gid="31" id="7" text="attack-01" label="x11" nosuffix="attack" isleaf="True"></node>
+<node gid="32" id="8" text="blockade-01" label="x20" nosuffix="blockade" isleaf="False"></node>
+<node gid="33" id="9" text="transport-01" label="x22" nosuffix="transport" isleaf="False"></node>
+<node gid="34" id="10" text="turn-02" label="x23" nosuffix="turn" isleaf="False"></node>
+<node gid="35" id="11" text="person" label="x27" nosuffix="person" isleaf="False"></node>
+<node gid="36" id="12" text="name" label="n" nosuffix="name" isleaf="False"></node>
+<node gid="37" id="13" text="general" label="x26" nosuffix="general" isleaf="True"></node>
+<node gid="38" id="14" text="strike" label="strike" nosuffix="strike" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="time" ></edge>
+<edge head="0" tail="8" label="ARG1" ></edge>
+<edge head="1" tail="2" label="ARG0" ></edge>
+<edge head="1" tail="5" label="ARG1" ></edge>
+<edge head="2" tail="3" label="op1" ></edge>
+<edge head="2" tail="4" label="op2" ></edge>
+<edge head="5" tail="6" label="mod" ></edge>
+<edge head="5" tail="7" label="ARG1" ></edge>
+<edge head="8" tail="9" label="ARG1" ></edge>
+<edge head="9" tail="10" label="ARG1-of" ></edge>
+<edge head="10" tail="11" label="ARG2" ></edge>
+<edge head="11" tail="12" label="name" ></edge>
+<edge head="11" tail="13" label="mod" ></edge>
+<edge head="12" tail="14" label="op1" ></edge>
+</edges>
+</graph>
+<graph id="3">
+<nodes>
+<node gid="39" id="0" text="stage-01" label="x6" nosuffix="stage" isleaf="False"></node>
+<node gid="40" id="1" text="group" label="x1" nosuffix="group" isleaf="False"></node>
+<node gid="41" id="2" text="person" label="x5" nosuffix="person" isleaf="False"></node>
+<node gid="42" id="3" text="demonstrate-01" label="d" nosuffix="demonstrate" isleaf="True"></node>
+<node gid="43" id="4" text="about" label="x3" nosuffix="about" isleaf="False"></node>
+<node gid="44" id="5" text="strike-01" label="x8" nosuffix="strike" isleaf="False"></node>
+<node gid="45" id="6" text="sit-down" label="x7" nosuffix="sit" isleaf="True"></node>
+<node gid="46" id="7" text="and" label="x14" nosuffix="and" isleaf="False"></node>
+<node gid="47" id="8" text="rail" label="x13" nosuffix="rail" isleaf="False"></node>
+<node gid="48" id="9" text="around" label="x19" nosuffix="around" isleaf="False"></node>
+<node gid="49" id="10" text="country" label="x20" nosuffix="country" isleaf="False"></node>
+<node gid="50" id="11" text="name" label="n" nosuffix="name" isleaf="False"></node>
+<node gid="51" id="12" text="city" label="x23" nosuffix="city" isleaf="False"></node>
+<node gid="52" id="13" text="include-91" label="x24" nosuffix="include" isleaf="False"></node>
+<node gid="53" id="14" text="about" label="x10" nosuffix="about" isleaf="True"></node>
+<node gid="54" id="15" text="intersect-01" label="x16" nosuffix="intersect" isleaf="False"></node>
+<node gid="55" id="16" text="road" label="x15" nosuffix="road" isleaf="True"></node>
+<node gid="56" id="17" text="50" label="50" nosuffix="50" isleaf="True"></node>
+<node gid="57" id="18" text="Dhaka" label="Dhaka" nosuffix="Dhaka" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="ARG0" ></edge>
+<edge head="0" tail="5" label="ARG1" ></edge>
+<edge head="0" tail="7" label="location" ></edge>
+<edge head="1" tail="2" label="consist-of" ></edge>
+<edge head="2" tail="3" label="ARG0-of" ></edge>
+<edge head="2" tail="4" label="quant" ></edge>
+<edge head="4" tail="17" label="op1" ></edge>
+<edge head="5" tail="6" label="mod" ></edge>
+<edge head="7" tail="8" label="op1" ></edge>
+<edge head="7" tail="15" label="op2" ></edge>
+<edge head="8" tail="9" label="location" ></edge>
+<edge head="9" tail="10" label="op1" ></edge>
+<edge head="10" tail="11" label="name" ></edge>
+<edge head="10" tail="12" label="location" ></edge>
+<edge head="11" tail="18" label="op1" ></edge>
+<edge head="12" tail="13" label="ARG1-of" ></edge>
+<edge head="13" tail="14" label="ARG3" ></edge>
+<edge head="15" tail="16" label="ARG1" ></edge>
+</edges>
+</graph>
+<graph id="4">
+<nodes>
+<node gid="58" id="0" text="walk-01" label="x3" nosuffix="walk" isleaf="False"></node>
+<node gid="59" id="1" text="many" label="x1" nosuffix="many" isleaf="True"></node>
+<node gid="60" id="2" text="work-01" label="x5" nosuffix="work" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="null_edge" ></edge>
+<edge head="0" tail="2" label="ARG2" ></edge>
+</edges>
+</graph>
+<graph id="5">
+<nodes>
+<node gid="61" id="0" text="stay-01" label="x12" nosuffix="stay" isleaf="False"></node>
+<node gid="62" id="1" text="rickshaw" label="x3" nosuffix="rickshaw" isleaf="False"></node>
+<node gid="63" id="2" text="even" label="x1" nosuffix="even" isleaf="True"></node>
+<node gid="64" id="3" text="bicycle-powered" label="x2" nosuffix="bicycle" isleaf="True"></node>
+<node gid="65" id="4" text="mode" label="x8" nosuffix="mode" isleaf="False"></node>
+<node gid="66" id="5" text="country" label="x5" nosuffix="country" isleaf="False"></node>
+<node gid="67" id="6" text="name" label="n" nosuffix="name" isleaf="False"></node>
+<node gid="68" id="7" text="have-org-role-91" label="x7" nosuffix="have" isleaf="False"></node>
+<node gid="69" id="8" text="chief" label="c" nosuffix="chief" isleaf="True"></node>
+<node gid="70" id="9" text="transport-01" label="x10" nosuffix="transport" isleaf="True"></node>
+<node gid="71" id="10" text="street" label="x15" nosuffix="street" isleaf="True"></node>
+<node gid="72" id="11" text="Dhaka" label="Dhaka" nosuffix="Dhaka" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="ARG1" ></edge>
+<edge head="0" tail="4" label="ARG3" ></edge>
+<edge head="0" tail="10" label="location" ></edge>
+<edge head="1" tail="2" label="mod" ></edge>
+<edge head="1" tail="3" label="mod" ></edge>
+<edge head="4" tail="5" label="poss" ></edge>
+<edge head="4" tail="7" label="mod" ></edge>
+<edge head="4" tail="9" label="instrument-of" ></edge>
+<edge head="5" tail="6" label="name" ></edge>
+<edge head="6" tail="11" label="op1" ></edge>
+<edge head="7" tail="8" label="ARG2" ></edge>
+</edges>
+</graph>
+<graph id="6">
+<nodes>
+<node gid="73" id="0" text="parade-01" label="x2" nosuffix="parade" isleaf="False"></node>
+<node gid="74" id="1" text="person" label="x1" nosuffix="person" isleaf="False"></node>
+<node gid="75" id="2" text="protest-01" label="p" nosuffix="protest" isleaf="True"></node>
+<node gid="76" id="3" text="street" label="x5" nosuffix="street" isleaf="False"></node>
+<node gid="77" id="4" text="shout" label="x6" nosuffix="shout" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="ARG0" ></edge>
+<edge head="0" tail="3" label="location" ></edge>
+<edge head="1" tail="2" label="ARG0-of" ></edge>
+<edge head="3" tail="4" label="ARG1-of" ></edge>
+</edges>
+</graph>
+<graph id="7">
+<nodes>
+<node gid="78" id="0" text="and" label="x1" nosuffix="and" isleaf="False"></node>
+<node gid="79" id="1" text="over" label="x7" nosuffix="over" isleaf="False"></node>
+<node gid="80" id="2" text="autocracy" label="x5" nosuffix="autocracy" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="op1" ></edge>
+<edge head="1" tail="2" label="instrument" ></edge>
+</edges>
+</graph>
+<graph id="8">
+<nodes>
+<node gid="81" id="0" text="say-01" label="x5" nosuffix="say" isleaf="False"></node>
+<node gid="82" id="1" text="news" label="x2" nosuffix="news" isleaf="False"></node>
+<node gid="83" id="2" text="null_tag" label="x1" nosuffix="null_tag" isleaf="True"></node>
+<node gid="84" id="3" text="country" label="x4" nosuffix="country" isleaf="False"></node>
+<node gid="85" id="4" text="name" label="n" nosuffix="name" isleaf="False"></node>
+<node gid="86" id="5" text="deploy-01" label="x12" nosuffix="deploy" isleaf="False"></node>
+<node gid="87" id="6" text="and" label="x8" nosuffix="and" isleaf="False"></node>
+<node gid="88" id="7" text="police" label="x7" nosuffix="police" isleaf="True"></node>
+<node gid="89" id="8" text="person" label="xap0" nosuffix="person" isleaf="False"></node>
+<node gid="90" id="9" text="4,000" label="x6" nosuffix="4,000" isleaf="True"></node>
+<node gid="91" id="10" text="paramilitary" label="x9" nosuffix="paramilitary" isleaf="True"></node>
+<node gid="92" id="11" text="troop" label="x10" nosuffix="troop" isleaf="True"></node>
+<node gid="93" id="12" text="country" label="x14" nosuffix="country" isleaf="False"></node>
+<node gid="94" id="13" text="name" label="n1" nosuffix="name" isleaf="False"></node>
+<node gid="95" id="14" text="Bangladesh" label="Bangladesh" nosuffix="Bangladesh" isleaf="True"></node>
+<node gid="96" id="15" text="Dhaka" label="Dhaka" nosuffix="Dhaka" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="ARG0" ></edge>
+<edge head="0" tail="5" label="ARG1" ></edge>
+<edge head="1" tail="2" label="null_edge" ></edge>
+<edge head="1" tail="3" label="null_edge" ></edge>
+<edge head="3" tail="4" label="name" ></edge>
+<edge head="4" tail="14" label="op1" ></edge>
+<edge head="5" tail="6" label="ARG1" ></edge>
+<edge head="5" tail="12" label="location" ></edge>
+<edge head="6" tail="7" label="op1" ></edge>
+<edge head="6" tail="8" label="op1" ></edge>
+<edge head="8" tail="9" label="quant" ></edge>
+<edge head="8" tail="10" label="mod" ></edge>
+<edge head="8" tail="11" label="poss" ></edge>
+<edge head="12" tail="13" label="name" ></edge>
+<edge head="13" tail="15" label="op1" ></edge>
+</edges>
+</graph>
+<graph id="9">
+<nodes>
+<node gid="97" id="0" text="report-01" label="x4" nosuffix="report" isleaf="False"></node>
+<node gid="98" id="1" text="violence" label="x6" nosuffix="violence" isleaf="True"></node>
+<node gid="99" id="2" text="-" label="-" nosuffix="" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="2" label="polarity" ></edge>
+<edge head="0" tail="1" label="ARG1" ></edge>
+</edges>
+</graph>
+<graph id="10">
+<nodes>
+<node gid="100" id="0" text="tactic" label="x6" nosuffix="tactic" isleaf="False"></node>
+<node gid="101" id="1" text="blockade-01" label="x2" nosuffix="blockade" isleaf="True"></node>
+<node gid="102" id="2" text="late" label="x5" nosuffix="late" isleaf="False"></node>
+<node gid="103" id="3" text="most" label="m" nosuffix="most" isleaf="True"></node>
+<node gid="104" id="4" text="campaign-01" label="x9" nosuffix="campaign" isleaf="True"></node>
+<node gid="105" id="5" text="party" label="x12" nosuffix="party" isleaf="False"></node>
+<node gid="106" id="6" text="oppose-01" label="x11" nosuffix="oppose" isleaf="True"></node>
+<node gid="107" id="7" text="force-01" label="x14" nosuffix="force" isleaf="False"></node>
+<node gid="108" id="8" text="quit-01" label="x17" nosuffix="quit" isleaf="False"></node>
+<node gid="109" id="9" text="person" label="x15" nosuffix="person" isleaf="False"></node>
+<node gid="110" id="10" text="name" label="n" nosuffix="name" isleaf="False"></node>
+<node gid="111" id="11" text="Ershad" label="Ershad" nosuffix="Ershad" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="domain" ></edge>
+<edge head="0" tail="2" label="time" ></edge>
+<edge head="0" tail="4" label="time" ></edge>
+<edge head="0" tail="5" label="ARG0" ></edge>
+<edge head="2" tail="3" label="degree" ></edge>
+<edge head="5" tail="6" label="ARG0-of" ></edge>
+<edge head="5" tail="7" label="ARG2-of" ></edge>
+<edge head="7" tail="8" label="ARG2" ></edge>
+<edge head="8" tail="9" label="ARG0" ></edge>
+<edge head="9" tail="10" label="name" ></edge>
+<edge head="10" tail="11" label="op1" ></edge>
+</edges>
+</graph>
+<graph id="11">
+<nodes>
+<node gid="112" id="0" text="kill-01" label="x7" nosuffix="kill" isleaf="False"></node>
+<node gid="113" id="1" text="police" label="x9" nosuffix="police" isleaf="True"></node>
+<node gid="114" id="2" text="since" label="x10" nosuffix="since" isleaf="False"></node>
+<node gid="115" id="3" text="start-01" label="x16" nosuffix="start" isleaf="False"></node>
+<node gid="116" id="4" text="round" label="x13" nosuffix="round" isleaf="False"></node>
+<node gid="117" id="5" text="current" label="x12" nosuffix="current" isleaf="True"></node>
+<node gid="118" id="6" text="protest-01" label="x15" nosuffix="protest" isleaf="True"></node>
+<node gid="119" id="7" text="name" label="x17" nosuffix="name" isleaf="False"></node>
+<node gid="120" id="8" text="8" label="8" nosuffix="8" isleaf="True"></node>
+<node gid="121" id="9" text="Oct." label="Oct." nosuffix="Oct." isleaf="True"></node>
+<node gid="122" id="10" text="10" label="10" nosuffix="10" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="8" label="ARG1" ></edge>
+<edge head="0" tail="1" label="ARG0" ></edge>
+<edge head="0" tail="2" label="time" ></edge>
+<edge head="2" tail="3" label="op1" ></edge>
+<edge head="3" tail="4" label="ARG1" ></edge>
+<edge head="3" tail="7" label="time" ></edge>
+<edge head="4" tail="5" label="time" ></edge>
+<edge head="4" tail="6" label="mod" ></edge>
+<edge head="7" tail="9" label="op1" ></edge>
+<edge head="7" tail="10" label="op2" ></edge>
+</edges>
+</graph>
+<graph id="12">
+<nodes>
+<node gid="123" id="0" text="happy" label="x7" nosuffix="happy" isleaf="False"></node>
+<node gid="124" id="1" text="see-01" label="x9" nosuffix="see" isleaf="False"></node>
+<node gid="125" id="2" text="turn-02" label="x14" nosuffix="turn" isleaf="False"></node>
+<node gid="126" id="3" text="blockade-01" label="x12" nosuffix="blockade" isleaf="True"></node>
+<node gid="127" id="4" text="person" label="x20" nosuffix="person" isleaf="False"></node>
+<node gid="128" id="5" text="name" label="n" nosuffix="name" isleaf="False"></node>
+<node gid="129" id="6" text="hartal" label="x17" nosuffix="hartal" isleaf="True"></node>
+<node gid="130" id="7" text="general" label="x19" nosuffix="general" isleaf="True"></node>
+<node gid="131" id="8" text="8" label="8" nosuffix="8" isleaf="True"></node>
+<node gid="132" id="9" text="strike" label="strike" nosuffix="strike" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="8" label="null_edge" ></edge>
+<edge head="0" tail="1" label="null_edge" ></edge>
+<edge head="1" tail="2" label="ARG1" ></edge>
+<edge head="2" tail="3" label="ARG0" ></edge>
+<edge head="2" tail="4" label="ARG0" ></edge>
+<edge head="4" tail="5" label="name" ></edge>
+<edge head="4" tail="6" label="mod" ></edge>
+<edge head="4" tail="7" label="mod" ></edge>
+<edge head="5" tail="9" label="op1" ></edge>
+</edges>
+</graph>
+<graph id="13">
+<nodes>
+<node gid="133" id="0" text="say-01" label="x13" nosuffix="say" isleaf="False"></node>
+<node gid="134" id="1" text="show-01" label="x2" nosuffix="show" isleaf="False"></node>
+<node gid="135" id="2" text="this" label="x1" nosuffix="this" isleaf="True"></node>
+<node gid="136" id="3" text="support-01" label="x4" nosuffix="support" isleaf="False"></node>
+<node gid="137" id="4" text="popular-41" label="x3" nosuffix="popular" isleaf="True"></node>
+<node gid="138" id="5" text="cause-01" label="x10" nosuffix="cause" isleaf="True"></node>
+<node gid="139" id="6" text="newspaper" label="x14" nosuffix="newspaper" isleaf="False"></node>
+<node gid="140" id="7" text="name" label="n" nosuffix="name" isleaf="False"></node>
+<node gid="141" id="8" text="lead-02" label="x19" nosuffix="lead" isleaf="False"></node>
+<node gid="142" id="9" text="top" label="x18" nosuffix="top" isleaf="True"></node>
+<node gid="143" id="10" text="include-91" label="x20" nosuffix="include" isleaf="False"></node>
+<node gid="144" id="11" text="null_tag" label="x23" nosuffix="null_tag" isleaf="False"></node>
+<node gid="145" id="12" text="null_tag" label="x22" nosuffix="null_tag" isleaf="True"></node>
+<node gid="146" id="13" text="8" label="8" nosuffix="8" isleaf="True"></node>
+<node gid="147" id="14" text="Suranjit" label="Suranjit" nosuffix="Suranjit" isleaf="True"></node>
+<node gid="148" id="15" text="Sengupta" label="Sengupta" nosuffix="Sengupta" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="ARG1" ></edge>
+<edge head="0" tail="6" label="ARG0" ></edge>
+<edge head="1" tail="2" label="ARG0" ></edge>
+<edge head="1" tail="3" label="ARG1" ></edge>
+<edge head="3" tail="4" label="manner" ></edge>
+<edge head="3" tail="13" label="quant" ></edge>
+<edge head="3" tail="5" label="ARG1" ></edge>
+<edge head="6" tail="7" label="name" ></edge>
+<edge head="6" tail="8" label="ARG0-of" ></edge>
+<edge head="7" tail="14" label="op1" ></edge>
+<edge head="7" tail="15" label="op2" ></edge>
+<edge head="8" tail="9" label="mod" ></edge>
+<edge head="8" tail="10" label="ARG1" ></edge>
+<edge head="10" tail="11" label="null_edge" ></edge>
+<edge head="11" tail="12" label="null_edge" ></edge>
+</edges>
+</graph>
+<graph id="14">
+<nodes>
+<node gid="149" id="0" text="party" label="x6" nosuffix="party" isleaf="False"></node>
+<node gid="150" id="1" text="it" label="x1" nosuffix="it" isleaf="True"></node>
+<node gid="151" id="2" text="have-org-role-91" label="x9" nosuffix="have" isleaf="False"></node>
+<node gid="152" id="3" text="alliance" label="a" nosuffix="alliance" isleaf="True"></node>
+<node gid="153" id="4" text="head-01" label="x10" nosuffix="head" isleaf="False"></node>
+<node gid="154" id="5" text="political-party" label="x13" nosuffix="political" isleaf="False"></node>
+<node gid="155" id="6" text="name" label="n" nosuffix="name" isleaf="False"></node>
+<node gid="156" id="7" text="lead-02" label="x15" nosuffix="lead" isleaf="False"></node>
+<node gid="157" id="8" text="name" label="x17" nosuffix="name" isleaf="False"></node>
+<node gid="158" id="9" text="one" label="x20" nosuffix="one" isleaf="False"></node>
+<node gid="159" id="10" text="politician" label="x27" nosuffix="politician" isleaf="False"></node>
+<node gid="160" id="11" text="country" label="x23" nosuffix="country" isleaf="True"></node>
+<node gid="161" id="12" text="main" label="x25" nosuffix="main" isleaf="True"></node>
+<node gid="162" id="13" text="oppose-01" label="x26" nosuffix="oppose" isleaf="True"></node>
+<node gid="163" id="14" text="8" label="8" nosuffix="8" isleaf="True"></node>
+<node gid="164" id="15" text="Awami" label="Awami" nosuffix="Awami" isleaf="True"></node>
+<node gid="165" id="16" text="League" label="League" nosuffix="League" isleaf="True"></node>
+<node gid="166" id="17" text="Sheik" label="Sheik" nosuffix="Sheik" isleaf="True"></node>
+<node gid="167" id="18" text="Hasina" label="Hasina" nosuffix="Hasina" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="ARG1" ></edge>
+<edge head="0" tail="14" label="quant" ></edge>
+<edge head="0" tail="2" label="ARG0-of" ></edge>
+<edge head="2" tail="3" label="ARG1" ></edge>
+<edge head="2" tail="4" label="ARG1-of" ></edge>
+<edge head="4" tail="5" label="ARG0" ></edge>
+<edge head="5" tail="6" label="name" ></edge>
+<edge head="5" tail="7" label="ARG1-of" ></edge>
+<edge head="5" tail="9" label="mod" ></edge>
+<edge head="6" tail="15" label="op1" ></edge>
+<edge head="6" tail="16" label="op2" ></edge>
+<edge head="7" tail="8" label="ARG0" ></edge>
+<edge head="8" tail="17" label="op1" ></edge>
+<edge head="8" tail="18" label="op2" ></edge>
+<edge head="9" tail="10" label="null_edge" ></edge>
+<edge head="10" tail="11" label="poss" ></edge>
+<edge head="10" tail="12" label="mod" ></edge>
+<edge head="10" tail="13" label="ARG0-of" ></edge>
+</edges>
+</graph>
+<graph id="15">
+<nodes>
+<node gid="168" id="0" text="dismiss-01" label="x3" nosuffix="dismiss" isleaf="False"></node>
+<node gid="169" id="1" text="person" label="x1" nosuffix="person" isleaf="False"></node>
+<node gid="170" id="2" text="name" label="n" nosuffix="name" isleaf="False"></node>
+<node gid="171" id="3" text="campaign-01" label="x5" nosuffix="campaign" isleaf="False"></node>
+<node gid="172" id="4" text="name" label="x8" nosuffix="name" isleaf="False"></node>
+<node gid="173" id="5" text="have-org-role-91" label="x7" nosuffix="have" isleaf="False"></node>
+<node gid="174" id="6" text="president" label="p" nosuffix="president" isleaf="True"></node>
+<node gid="175" id="7" text="work-01" label="x14" nosuffix="work" isleaf="False"></node>
+<node gid="176" id="8" text="violence-monger" label="x19" nosuffix="violence" isleaf="False"></node>
+<node gid="177" id="9" text="handful" label="x17" nosuffix="handful" isleaf="False"></node>
+<node gid="178" id="10" text="destabilize-01" label="x24" nosuffix="destabilize" isleaf="False"></node>
+<node gid="179" id="11" text="country" label="x25" nosuffix="country" isleaf="False"></node>
+<node gid="180" id="12" text="name" label="n1" nosuffix="name" isleaf="False"></node>
+<node gid="181" id="13" text="Ershad" label="Ershad" nosuffix="Ershad" isleaf="True"></node>
+<node gid="182" id="14" text="Hussain" label="Hussain" nosuffix="Hussain" isleaf="True"></node>
+<node gid="183" id="15" text="Muhammad" label="Muhammad" nosuffix="Muhammad" isleaf="True"></node>
+<node gid="184" id="16" text="Ershad" label="Ershad" nosuffix="Ershad" isleaf="True"></node>
+<node gid="185" id="17" text="Bangladesh" label="Bangladesh" nosuffix="Bangladesh" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="ARG0" ></edge>
+<edge head="0" tail="3" label="ARG1" ></edge>
+<edge head="0" tail="7" label="ARG2" ></edge>
+<edge head="1" tail="2" label="name" ></edge>
+<edge head="2" tail="13" label="op1" ></edge>
+<edge head="3" tail="4" label="name" ></edge>
+<edge head="4" tail="14" label="op1" ></edge>
+<edge head="4" tail="15" label="op2" ></edge>
+<edge head="4" tail="16" label="op3" ></edge>
+<edge head="4" tail="5" label="ARG0-of" ></edge>
+<edge head="5" tail="6" label="ARG2" ></edge>
+<edge head="7" tail="8" label="null_edge" ></edge>
+<edge head="8" tail="9" label="quant" ></edge>
+<edge head="9" tail="10" label="purpose" ></edge>
+<edge head="10" tail="11" label="ARG1" ></edge>
+<edge head="11" tail="12" label="name" ></edge>
+<edge head="12" tail="17" label="op1" ></edge>
+</edges>
+</graph>
+<graph id="16">
+<nodes>
+<node gid="186" id="0" text="army" label="x7" nosuffix="army" isleaf="False"></node>
+<node gid="187" id="1" text="general" label="x8" nosuffix="general" isleaf="False"></node>
+<node gid="188" id="2" text="person" label="x2" nosuffix="person" isleaf="False"></node>
+<node gid="189" id="3" text="name" label="n" nosuffix="name" isleaf="False"></node>
+<node gid="190" id="4" text="have-org-role-91" label="x1" nosuffix="have" isleaf="False"></node>
+<node gid="191" id="5" text="president" label="p" nosuffix="president" isleaf="True"></node>
+<node gid="192" id="6" text="seize-01" label="x14" nosuffix="seize" isleaf="False"></node>
+<node gid="193" id="7" text="person" label="x11" nosuffix="person" isleaf="False"></node>
+<node gid="194" id="8" text="name" label="n1" nosuffix="name" isleaf="False"></node>
+<node gid="195" id="9" text="have-org-role-91" label="x10" nosuffix="have" isleaf="False"></node>
+<node gid="196" id="10" text="president" label="p1" nosuffix="president" isleaf="True"></node>
+<node gid="197" id="11" text="power" label="x15" nosuffix="power" isleaf="True"></node>
+<node gid="198" id="12" text="coup" label="x19" nosuffix="coup" isleaf="False"></node>
+<node gid="199" id="13" text="blood" label="x18" nosuffix="blood" isleaf="True"></node>
+<node gid="200" id="14" text="date-entity" label="x21" nosuffix="date" isleaf="False"></node>
+<node gid="201" id="15" text="Hussain" label="Hussain" nosuffix="Hussain" isleaf="True"></node>
+<node gid="202" id="16" text="Muhammad" label="Muhammad" nosuffix="Muhammad" isleaf="True"></node>
+<node gid="203" id="17" text="Ershad" label="Ershad" nosuffix="Ershad" isleaf="True"></node>
+<node gid="204" id="18" text="Hussain" label="Hussain" nosuffix="Hussain" isleaf="True"></node>
+<node gid="205" id="19" text="Muhammad" label="Muhammad" nosuffix="Muhammad" isleaf="True"></node>
+<node gid="206" id="20" text="Ershad" label="Ershad" nosuffix="Ershad" isleaf="True"></node>
+<node gid="207" id="21" text="1982" label="1982" nosuffix="1982" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="mod" ></edge>
+<edge head="1" tail="2" label="domain" ></edge>
+<edge head="1" tail="6" label="null_edge" ></edge>
+<edge head="2" tail="3" label="name" ></edge>
+<edge head="2" tail="4" label="ARG0-of" ></edge>
+<edge head="3" tail="15" label="op1" ></edge>
+<edge head="3" tail="16" label="op2" ></edge>
+<edge head="3" tail="17" label="op3" ></edge>
+<edge head="4" tail="5" label="ARG2" ></edge>
+<edge head="6" tail="2" label="ARG0" ></edge>
+<edge head="6" tail="0" label="ARG0" ></edge>
+<edge head="6" tail="7" label="ARG0" ></edge>
+<edge head="6" tail="11" label="ARG1" ></edge>
+<edge head="6" tail="12" label="ARG1" ></edge>
+<edge head="7" tail="8" label="name" ></edge>
+<edge head="7" tail="9" label="ARG0-of" ></edge>
+<edge head="8" tail="18" label="op1" ></edge>
+<edge head="8" tail="19" label="op2" ></edge>
+<edge head="8" tail="20" label="op3" ></edge>
+<edge head="9" tail="10" label="ARG2" ></edge>
+<edge head="12" tail="13" label="mod" ></edge>
+<edge head="12" tail="14" label="time" ></edge>
+<edge head="14" tail="21" label="year" ></edge>
+</edges>
+</graph>
+<graph id="17">
+<nodes>
+<node gid="208" id="0" text="and" label="x10" nosuffix="and" isleaf="False"></node>
+<node gid="209" id="1" text="resign-01" label="x6" nosuffix="resign" isleaf="False"></node>
+<node gid="210" id="2" text="person" label="x2" nosuffix="person" isleaf="False"></node>
+<node gid="211" id="3" text="name" label="n" nosuffix="name" isleaf="False"></node>
+<node gid="212" id="4" text="have-org-role-91" label="x1" nosuffix="have" isleaf="False"></node>
+<node gid="213" id="5" text="president" label="p1" nosuffix="president" isleaf="True"></node>
+<node gid="214" id="6" text="late" label="x5" nosuffix="late" isleaf="True"></node>
+<node gid="215" id="7" text="military" label="x9" nosuffix="military" isleaf="True"></node>
+<node gid="216" id="8" text="say-01" label="x26" nosuffix="say" isleaf="False"></node>
+<node gid="217" id="9" text="have-org-role-91" label="x13" nosuffix="have" isleaf="False"></node>
+<node gid="218" id="10" text="president" label="p" nosuffix="president" isleaf="True"></node>
+<node gid="219" id="11" text="date-entity" label="x15" nosuffix="date" isleaf="False"></node>
+<node gid="220" id="12" text="and" label="x24" nosuffix="and" isleaf="False"></node>
+<node gid="221" id="13" text="balloting" label="x17" nosuffix="balloting" isleaf="True"></node>
+<node gid="222" id="14" text="party" label="x20" nosuffix="party" isleaf="False"></node>
+<node gid="223" id="15" text="oppose-01" label="x19" nosuffix="oppose" isleaf="True"></node>
+<node gid="224" id="16" text="journalist" label="x25" nosuffix="journalist" isleaf="True"></node>
+<node gid="225" id="17" text="person" label="xap0" nosuffix="person" isleaf="False"></node>
+<node gid="226" id="18" text="foreign" label="x22" nosuffix="foreign" isleaf="True"></node>
+<node gid="227" id="19" text="have-org-role-91" label="x23" nosuffix="have" isleaf="False"></node>
+<node gid="228" id="20" text="diplomat" label="d" nosuffix="diplomat" isleaf="True"></node>
+<node gid="229" id="21" text="rig" label="x28" nosuffix="rig" isleaf="True"></node>
+<node gid="230" id="22" text="Hussain" label="Hussain" nosuffix="Hussain" isleaf="True"></node>
+<node gid="231" id="23" text="Muhammad" label="Muhammad" nosuffix="Muhammad" isleaf="True"></node>
+<node gid="232" id="24" text="Ershad" label="Ershad" nosuffix="Ershad" isleaf="True"></node>
+<node gid="233" id="25" text="1986" label="1986" nosuffix="1986" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="op1" ></edge>
+<edge head="0" tail="8" label="op1" ></edge>
+<edge head="1" tail="2" label="ARG0" ></edge>
+<edge head="1" tail="6" label="time" ></edge>
+<edge head="1" tail="7" label="ARG0" ></edge>
+<edge head="2" tail="3" label="name" ></edge>
+<edge head="2" tail="4" label="ARG0-of" ></edge>
+<edge head="3" tail="22" label="op1" ></edge>
+<edge head="3" tail="23" label="op2" ></edge>
+<edge head="3" tail="24" label="op3" ></edge>
+<edge head="4" tail="5" label="ARG2" ></edge>
+<edge head="8" tail="9" label="ARG1" ></edge>
+<edge head="8" tail="11" label="time" ></edge>
+<edge head="8" tail="12" label="ARG1" ></edge>
+<edge head="8" tail="21" label="ARG1" ></edge>
+<edge head="9" tail="10" label="ARG2" ></edge>
+<edge head="11" tail="25" label="year" ></edge>
+<edge head="12" tail="13" label="op1" ></edge>
+<edge head="12" tail="14" label="op1" ></edge>
+<edge head="12" tail="16" label="op2" ></edge>
+<edge head="12" tail="17" label="op1" ></edge>
+<edge head="14" tail="15" label="ARG0-of" ></edge>
+<edge head="17" tail="18" label="mod" ></edge>
+<edge head="17" tail="19" label="ARG0-of" ></edge>
+<edge head="19" tail="20" label="ARG2" ></edge>
+</edges>
+</graph>
+<graph id="18">
+<nodes>
+<node gid="234" id="0" text="plan-01" label="x5" nosuffix="plan" isleaf="False"></node>
+<node gid="235" id="1" text="person" label="x2" nosuffix="person" isleaf="False"></node>
+<node gid="236" id="2" text="name" label="n" nosuffix="name" isleaf="False"></node>
+<node gid="237" id="3" text="have-org-role-91" label="x1" nosuffix="have" isleaf="False"></node>
+<node gid="238" id="4" text="president" label="p" nosuffix="president" isleaf="True"></node>
+<node gid="239" id="5" text="seek-01" label="x7" nosuffix="seek" isleaf="False"></node>
+<node gid="240" id="6" text="term" label="x10" nosuffix="term" isleaf="False"></node>
+<node gid="241" id="7" text="another" label="x8" nosuffix="another" isleaf="True"></node>
+<node gid="242" id="8" text="person" label="x9" nosuffix="person" isleaf="False"></node>
+<node gid="243" id="9" text="name" label="n1" nosuffix="name" isleaf="False"></node>
+<node gid="244" id="10" text="elect-01" label="x12" nosuffix="elect" isleaf="False"></node>
+<node gid="245" id="11" text="schedule-01" label="x13" nosuffix="schedule" isleaf="False"></node>
+<node gid="246" id="12" text="year" label="x16" nosuffix="year" isleaf="False"></node>
+<node gid="247" id="13" text="next" label="x15" nosuffix="next" isleaf="True"></node>
+<node gid="248" id="14" text="Hussain" label="Hussain" nosuffix="Hussain" isleaf="True"></node>
+<node gid="249" id="15" text="Muhammad" label="Muhammad" nosuffix="Muhammad" isleaf="True"></node>
+<node gid="250" id="16" text="Ershad" label="Ershad" nosuffix="Ershad" isleaf="True"></node>
+<node gid="251" id="17" text="five-year" label="five-year" nosuffix="five" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="ARG0" ></edge>
+<edge head="0" tail="5" label="ARG1" ></edge>
+<edge head="1" tail="2" label="name" ></edge>
+<edge head="1" tail="3" label="ARG0-of" ></edge>
+<edge head="2" tail="14" label="op1" ></edge>
+<edge head="2" tail="15" label="op2" ></edge>
+<edge head="2" tail="16" label="op3" ></edge>
+<edge head="3" tail="4" label="ARG2" ></edge>
+<edge head="5" tail="1" label="ARG0" ></edge>
+<edge head="5" tail="6" label="ARG1" ></edge>
+<edge head="5" tail="10" label="ARG1" ></edge>
+<edge head="6" tail="7" label="mod" ></edge>
+<edge head="6" tail="8" label="mod" ></edge>
+<edge head="8" tail="9" label="name" ></edge>
+<edge head="9" tail="17" label="op1" ></edge>
+<edge head="10" tail="11" label="ARG1-of" ></edge>
+<edge head="11" tail="12" label="duration" ></edge>
+<edge head="12" tail="13" label="mod" ></edge>
+</edges>
+</graph>
+<graph id="19">
+<nodes>
+<node gid="252" id="0" text="say-01" label="x4" nosuffix="say" isleaf="False"></node>
+<node gid="253" id="1" text="party" label="x3" nosuffix="party" isleaf="False"></node>
+<node gid="254" id="2" text="oppose-01" label="x2" nosuffix="oppose" isleaf="True"></node>
+<node gid="255" id="3" text="boycott-01" label="x9" nosuffix="boycott" isleaf="False"></node>
+<node gid="256" id="4" text="party" label="x7" nosuffix="party" isleaf="False"></node>
+<node gid="257" id="5" text="oppose-01" label="x6" nosuffix="oppose" isleaf="True"></node>
+<node gid="258" id="6" text="vote-01" label="x11" nosuffix="vote" isleaf="True"></node>
+<node gid="259" id="7" text="and" label="x15" nosuffix="and" isleaf="False"></node>
+<node gid="260" id="8" text="person" label="x14" nosuffix="person" isleaf="False"></node>
+<node gid="261" id="9" text="resign-01" label="r" nosuffix="resign" isleaf="True"></node>
+<node gid="262" id="10" text="person" label="x13" nosuffix="person" isleaf="False"></node>
+<node gid="263" id="11" text="name" label="n" nosuffix="name" isleaf="False"></node>
+<node gid="264" id="12" text="power" label="x18" nosuffix="power" isleaf="True"></node>
+<node gid="265" id="13" text="government-organization" label="x22" nosuffix="government" isleaf="False"></node>
+<node gid="266" id="14" text="govern-01" label="g" nosuffix="govern" isleaf="True"></node>
+<node gid="267" id="15" text="caretaker" label="x21" nosuffix="caretaker" isleaf="True"></node>
+<node gid="268" id="16" text="hand" label="x16" nosuffix="hand" isleaf="True"></node>
+<node gid="269" id="17" text="Ershad" label="Ershad" nosuffix="Ershad" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="ARG0" ></edge>
+<edge head="0" tail="3" label="ARG1" ></edge>
+<edge head="1" tail="2" label="ARG0-of" ></edge>
+<edge head="3" tail="4" label="ARG0" ></edge>
+<edge head="3" tail="6" label="ARG1" ></edge>
+<edge head="3" tail="7" label="ARG1" ></edge>
+<edge head="4" tail="5" label="ARG0-of" ></edge>
+<edge head="7" tail="8" label="op1" ></edge>
+<edge head="7" tail="16" label="op2" ></edge>
+<edge head="8" tail="9" label="ARG0-of" ></edge>
+<edge head="8" tail="10" label="ARG0" ></edge>
+<edge head="8" tail="12" label="ARG1" ></edge>
+<edge head="8" tail="13" label="ARG1" ></edge>
+<edge head="10" tail="11" label="name" ></edge>
+<edge head="11" tail="17" label="op1" ></edge>
+<edge head="13" tail="14" label="ARG0-of" ></edge>
+<edge head="13" tail="15" label="mod" ></edge>
+</edges>
+</graph>
+</amr>

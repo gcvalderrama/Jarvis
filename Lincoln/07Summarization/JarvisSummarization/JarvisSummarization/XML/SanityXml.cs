@@ -10,8 +10,7 @@ namespace JarvisSummarization
     {
         public static string Sanity(string input)
         {
-            return input.Replace("&", "&amp;").Replace("%", "&#37;");
-
+            return input.Replace("&", "&amp;").Replace("%", "&#37;").Replace("\"\"\"", "\"'\"").Replace("\"\",\"", "\"',\"").Replace("\")\"\"", "\")'\"").Replace("\"\"'s\"", "\"'s\"");
         }
     }
 }

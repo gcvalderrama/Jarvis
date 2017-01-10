@@ -87,12 +87,14 @@ def SaveGraphs(outputfile, graphs):
     f.close()
 
 if __name__ == '__main__':
-    start = "D:/Tesis2016/Jarvis/Lincoln/05AMRParsing/Input/"
-    end = "D:/Tesis2016/Jarvis/Lincoln/05AMRParsing/Output/"
+    start = "D:/Tesis2016/Jarvis/Lincoln/05AMRParsing/OutputClean/"
+    end = "D:/Tesis2016/Jarvis/Lincoln/05AMRParsing/OutputClean2/"
     f = []
     for (dirpath, dirnames, filenames) in walk(start):
         f.extend(filenames)
         break
+
+    print(len(f))
 
     for file in f:
         graphs = load_amr_graphs(start + file)

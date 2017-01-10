@@ -1,883 +1,1711 @@
-# ::id 1
-# ::snt Volcanoes, which spit ash, ooze lava and create darkness in the middle of the day, are impressive displays of nature's restlessness
-(x21 / display
-	:ARG0 (x1 / volcano
-		:ARG1 (x9 / and
-			:op1 (x4 / spit
-				:ARG1 (x5 / name
-					:op1 "ash"))
-			:op2 (x7 / ooze
-				:ARG1 (x8 / lava))
-			:op2 (x10 / create-01
-				:ARG0 x5
-				:ARG1 (x11 / darkness)
-				:null_edge (x12 / null_tag
-					:null_edge (x14 / null_tag
-						:part-of (x17 / day))))))
-	:ARG1-of (x20 / impressive)
-	:ARG1 (x25 / restlessness
-		:part-of (x23 / nature)))
-
-# ::id 2
-# ::snt They are also life-threatening : more than 28,500 people died from eruptions during the 1980s
-(x4 / life
-	:domain (x1 / they)
-	:mod (x3 / also)
-	:null_edge (x10 / die-01
-		:ARG1 (x6 / more-than
-			:op1 (x8 / 28,500))
-		:ARG1 (x12 / eruption)
-		:time (xap0 / date-entity
-			:time (x15 / date-entity))))
-
-# ::id 3
-# ::snt They can cause millions of dollars in property damage and bring industrial activity to a grinding halt
-(x10 / and
-	:op1 (x2 / possible
-		:domain (x3 / cause-01
-			:ARG0 (x1 / they)
-			:ARG1 (x9 / damage-01
-				:ARG1 (x8 / property)
-				:consist-of (x11 / bring-01
-					:ARG0 x1
-					:ARG1 (x13 / activity
-						:mod (x12 / industry))
-					:ARG4 (x17 / halt-01
-						:ARG1-of (x16 / ground-01)))
-				:ARG1-of (xap0 / multiple
-					:op1 (x6 / monetary-quantity
-						:unit (d / dollar)))))))
-
-# ::id 4
-# ::snt New technology to improve the accuracy of eruption forecasts is helping to minimise the devastation volcanoes can cause
-(x11 / help-01
-	:ARG1 (x4 / improve-01
-		:ARG1 (x2 / technology
-			:null_edge (x1 / null_tag))
-		:ARG1 (x9 / forecast-01
-			:ARG1 (x8 / eruption)))
-	:ARG1 (x13 / minimize-01
-		:ARG1 (x15 / devastation
-			:ARG0-of (x18 / cause-01
-				:ARG0 (x16 / volcano)
-				:mod (x17 / possible)))))
-
-# ::id 5
-# ::snt After the Nevado del Ruiz eruption killed nearly 25,000 people in Colombia in 1986, the US government began taking volcanic forecasting seriously
-(x19 / begin-01
-	:time (x1 / after
-		:op1 (x7 / kill-01
-			:ARG0 (x6 / eruption
-				:mod (x4 / del))
-			:ARG1 (x8 / nearly
-				:op1 (x9 / 25,000))
-			:location (x12 / country
-				:name (n1 / name
-					:op1 "Colombia"))
-			:time (x14 / date-entity
-				:year 1986)))
-	:ARG0 (x18 / government-organization
-		:ARG0-of (g / govern-01)
-		:ARG1 (x17 / country
-			:name (n / name
-				:op1 "US")))
-	:ARG1 (x20 / take-01
-		:ARG0 x18
-		:ARG1 (x22 / forecast-01
-			:mod (x21 / volcanic))
-		:manner (x23 / serious)))
-
-# ::id 6
-# ::snt The US Geological Survey, which tracks volcanic activity around the world, was infused with new funds to create a detailed database and update a detailed database techniques
-(x15 / infuse
-	:ARG1 (x4 / survey
-		:null_edge (x2 / country
-			:name (n / name
-				:op1 "US"))
-		:mod (x3 / geological)
-		:ARG0-of (x7 / track-01
-			:ARG1 (x9 / activity
-				:mod (x8 / volcanic))
-			:location (x10 / around
-				:op1 (x12 / world))))
-	:instrument (x18 / fund-01
-		:mod (x17 / new)
-		:ARG0 (x24 / and
-			:op1 (x20 / create-01
-				:ARG1 (x23 / database
-					:ARG1-of (x22 / detail-01)))
-			:op2 (x25 / update-01
-				:ARG1 (x29 / technique
-					:ARG1-of (x27 / detail-01)
-					:mod (x28 / database))))))
-
-# ::id 7
-# ::snt The new technology will not only help to save thousands of lives, The new technology may also save millions of dollars
-(x7 / help-01
-	:ARG1 (x3 / technology
-		:mod (x2 / new))
-	:mod (x6 / only)
-	:ARG1 (x9 / save-02
-		:ARG1 (x12 / life))
-	:mod (x17 / possible
-		:mod (x18 / also)
-		:domain (x19 / save-02
-			:ARG0 (x16 / technology
-				:mod (x15 / new))
-			:ARG1 (xap0 / multiple
-				:op1 (x22 / monetary-quantity
-					:unit (d / dollar))))))
-
-# ::id 8
-# ::snt According to the Aviation Safety Journal, more than 60 aircraft have been damaged by drifting clouds of volcanic ash since 1980
-(x14 / damage-01
-	:ARG0 (x4 / government-organization
-		:name (n / name
-			:op1 "Aviation"
-			:op2 "Safety"
-			:op3 "Journal"))
-	:ARG1 (x11 / aircraft
-		:quant (x8 / more-than
-			:op1 60))
-	:ARG0 (x16 / drift-01
-		:ARG1 (x17 / cloud
-			:name (x20 / name
-				:op1 "ash"
-				:mod (x19 / volcanic)))
-		:time (x21 / since
-			:op1 (x22 / date-entity
-				:year 1980))))
-
-# ::id 9
-# ::snt The repair of a 747 aircraft damaged during the 1989 eruption from Redoubt Volcano in Alaska cost Dollars 80m (Pounds 53m )
-(x17 / cost-01
-	:ARG1 (x2 / repair-01
-		:ARG1 (x6 / aircraft
-			:quant (x5 / 747)
-			:ARG1-of (x7 / damage-01
-				:ARG0 (x11 / eruption
-					:time (x10 / date-entity
-						:year 1989)
-					:source (x14 / volcano
-						:null_edge (x13 / redoubt))
-					:location (x16 / state
-						:name (n / name
-							:op1 "Alaska"))))))
-	:ARG1 (x19 / 80m))
-
-# ::id 10
-# ::snt The continuous eruption of Hawaii's Kilauea since 1983 has caused more than Dollars 5m in damage, much of The continuous eruption of Hawaii's Kilauea since 1983 to properties and crops affected by the acid-bearing volcanic pollutants
-(x11 / cause-01
-	:ARG0 (x3 / eruption
-		:ARG1-of (x2 / continue-01)
-		:poss (x7 / country
-			:name (n / name
-				:op1 "Kilauea")
-			:name (x5 / name
-				:op1 "Hawaii"))
-		:time (x8 / since
-			:op1 (x9 / date-entity
-				:year 1983)))
-	:ARG1 (x15 / 5m
-		:quant (x12 / more-than))
-	:ARG1 (x17 / damage-01)
-	:ARG1 (x23 / eruption
-		:ARG1-of (x22 / continue-01)
-		:poss (x27 / country
-			:name (n1 / name
-				:op1 "Kilauea")
-			:name (x25 / name
-				:op1 "Hawaii"))
-		:time (x28 / since
-			:op1 (x32 / and
-				:op1 (x31 / property
-					:ARG1-of (x34 / affect-01
-						:ARG0 (x39 / pollutant
-							:mod (x37 / acid-bearing)
-							:mod (x38 / volcanic))))
-				:op2 (x33 / crop)))))
-
-# ::id 11
-# ::snt Mount St Helens in Washington state wiped out thousands of acres of productive timberland
-(x7 / wipe-02
-	:ARG0 (x1 / government-organization
-		:name (n / name
-			:op1 "Mount"
-			:op2 "St"
-			:op3 "Helens")
-		:location (x6 / state
-			:location (x5 / city
-				:name (n1 / name
-					:op1 "Washington"))))
-	:ARG1 (x14 / timberland
-		:op1 (x11 / area-quantity
-			:unit (a / acre))
-		:mod (x13 / productive)))
-
-# ::id 12
-# ::snt Losses from interrupted economic activity are harder to quantify, but may be more devastating
-(x11 / contrast-01
-	:ARG1 (x7 / hard
-		:domain (x1 / loss
-			:source (x5 / activity
-				:ARG1-of (x3 / interrupt-01)
-				:mod (x4 / economy))))
-	:ARG2 (x9 / quantify)
-	:ARG2 (x12 / possible
-		:domain (x15 / devastate-01
-			:degree (x14 / more))))
-
-# ::id 13
-# ::snt Redoubt's eruption, for instance, caused a valuable oil storage terminal to close for several weeks and halted most flights into and out of the region
-(x19 / and
-	:op1 (x8 / cause-01
-		:ARG0 (x3 / eruption)
-		:ARG1 (x13 / terminal
-			:ARG1-of (x10 / value-01)
-			:mod (x11 / oil)
-			:mod (x12 / store-01))
-		:ARG1 (x15 / close-03
-			:duration (x17 / several
-				:op1 (x18 / week)))
-		:location (x28 / region))
-	:op2 (x20 / halt-01
-		:ARG1 (x22 / fly-01
-			:op (f / flight)
-			:quant (x21 / most))))
-
-# ::id 14
-# ::snt Tourism often takes the hardest hit of all
-(x3 / take-01
-	:ARG0 (x1 / tourism)
-	:frequency (x2 / often)
-	:ARG1 (x6 / hit-01
-		:mod (x5 / hardest)
-		:ARG0 (x8 / all)))
-
-# ::id 15
-# ::snt When US geologists issued eruption warnings in California's Long Valley in 1982, the resort area turned into a ghost town almost overnight
-(x18 / turn-02
-	:time (x4 / issue-01
-		:ARG0 (x3 / geologist
-			:mod (x2 / country
-				:name (n2 / name
-					:op1 "US")))
-		:ARG1 (x6 / warn-01
-			:mod (x5 / eruption))
-		:ARG0 (x10 / country
-			:name (n / name
-				:op1 "Long"))
-		:ARG2 (x11 / country
-			:name (n1 / name
-				:op1 "Valley")
-			:null_edge (x8 / state
-				:name (n3 / name
-					:op1 "California")))
-		:time (x13 / date-entity
-			:year 1982))
-	:ARG0 (x17 / area
-		:mod (x16 / resort))
-	:ARG2 (x22 / town
-		:mod (x21 / ghost))
-	:time (x24 / overnight
-		:mod (x23 / almost)))
-
-# ::id 16
-# ::snt And the tourist-based economy of Guadeloupe neared collapse in 1976 after an international group of volcanologists forecast the eruption of La Soufriere
-(x1 / and
-	:op2 (x7 / near-01
-		:ARG1 (x4 / economy
-			:mod (x3 / tourist-based)
-			:poss (x6 / country
-				:name (n / name
-					:op1 "Guadeloupe")))
-		:ARG1 (x8 / collapse-01)
-		:time (x10 / date-entity
-			:year 1976)
-		:time (x11 / after
-			:op1 (x17 / forecast-01
-				:ARG0 (x14 / group
-					:mod (x13 / international)
-					:consist-of (x16 / volcanologist))
-				:ARG1 (x19 / eruption
-					:mod (x22 / soufriere
-						:null_edge (x21 / null_tag)))))))
-
-# ::id 17
-# ::snt The Long Valley and Guadeloupe incidents are tinged with bitterness since the predicted disasters never happened
-(x8 / tinge
-	:ARG1 (x4 / and
-		:op1 (x2 / have-org-role-91
-			:ARG1 (c / country
-				:name (n / name
-					:op1 "Long"
-					:op2 "Valley")))
-		:op2 (x6 / incident
-			:mod (x5 / country
-				:name (n1 / name
-					:op1 "Guadeloupe"))))
-	:ARG2 (x10 / bitterness)
-	:time (x11 / since
-		:op1 (x16 / happen-01
-			:ARG1 (x14 / disaster
-				:ARG1-of (x13 / predict-01)))))
-
-# ::id 18
-# ::snt Guadeloupe evacuated 72,000 people and tourists stayed away
-(x5 / and
-	:op1 (x2 / evacuate
-		:ARG0 (x1 / country
-			:name (n / name
-				:op1 "Guadeloupe"))
-		:ARG1 (x3 / 72,000))
-	:op2 (x7 / stay-01
-		:ARG0 x1
-		:ARG1 (x6 / person
-			:ARG0-of (t / tour-01))
-		:direction (x8 / away)))
-
-# ::id 19
-# ::snt Yet the only crisis that hit the Caribbean island was in the economic sphere
-(x4 / crisis
-	:mod (x3 / only)
-	:ARG1-of (x6 / hit-01
-		:ARG1 (x9 / island
-			:mod (x8 / country
-				:name (n / name
-					:op1 "Caribbean"))))
-	:location (x14 / sphere
-		:mod (x13 / economy)))
-
-# ::id 20
-# ::snt Scientists blame these fiascos on insufficient data
-(x2 / blame-01
-	:ARG0 (x1 / have-org-role-91
-		:ARG2 (s / scientist))
-	:ARG2 (x4 / fiasco)
-	:ARG2 (x7 / data
-		:ARG0-of (x6 / suffice-01
-			:polarity -)))
-
-# ::id 21
-# ::snt 
-(x31 / write-01
-	:ARG1 (x28 / mistake-01
-		:ARG0 (x3 / identify-02
-			:ARG1 (x7 / glass
-				:mod (x5 / fresh)
-				:mod (x6 / volcanic))
-			:name (x11 / name
-				:op1 "ash"
-				:ARG1-of (x10 / erupt-01))
-			:ARG0 (x14 / seem-01
-				:ARG1 (x16 / indicate-01
-					:ARG1 (x19 / volcano
-						:ARG1-of (x23 / erupt-01
-							:manner (x24 / violent)))))))
-	:ARG0 (x32 / newspaper
-		:name (n / name
-			:op1 "Richard"
-			:op2 "Fiske")
-		:ARG0-of (x36 / volcanologist
-			:location (x39 / government-organization
-				:name (n1 / name
-					:op1 "Smithsonian"
-					:op2 "Institution"))))
-	:medium (x44 / incident))
-
-# ::id 22
-# ::snt Volcanologists today use more sophisticated techniques
-(x3 / use-01
-	:ARG0 (x1 / volcanologist)
-	:time (x2 / today)
-	:ARG1 (x6 / technique
-		:mod (x5 / sophisticated
-			:degree (x4 / more))))
-
-# ::id 23
-# ::snt Detailed databases are maintained on all life-threatening volcanoes around the world
-(x4 / maintain-01
-	:ARG1 (x2 / database
-		:ARG1-of (x1 / detail-01))
-	:ARG1 (xap0 / threaten-01
-		:quant (x6 / all)
-		:ARG2 (x7 / life)
-		:location (x9 / around
-			:op1 (x11 / world))))
-
-# ::id 24
-# ::snt High-frequency monitors to measure debris flows are now in place
-(xap0 / have-manner-91
-	:ARG1 (x4 / measure-01
-		:ARG0 (x2 / thing
-			:instrument-of (m / monitor-01)
-			:ARG1-of (x1 / high-frequency))
-		:ARG1 (x6 / name
-			:op1 "flows"
-			:mod (x5 / debris))
-		:time (x8 / now)))
-
-# ::id 25
-# ::snt Earthquakes - often the first warning of volcanic activity - are tracked with increasing accuracy
-(x12 / track-01
-	:ARG1 (x1 / earthquake
-		:ARG0-of (x6 / warn-01
-			:frequency (x3 / often)
-			:ARG1 (x9 / activity
-				:mod (x8 / volcanic))))
-	:ARG2 (x14 / increase-01
-		:ARG1 (x15 / accuracy)))
-
-# ::id 26
-# ::snt And changes in gas composition, electrical conductivity and other clues are carefully monitored
-(x1 / and
-	:op2 (x14 / monitor-01
-		:ARG1 (x2 / change-01
-			:location (x9 / and
-				:op1 (x5 / compose-01
-					:mod (x4 / gas))
-				:op2 (x8 / conductivity
-					:mod (x7 / electricity))
-				:op2 (x11 / clue
-					:mod (x10 / other))))
-		:manner (x13 / careful)))
-
-# ::id 27
-# ::snt As a result, volcanic activity can now be forecast with substantial accuracy, often pinpointing the eruption to within days or even hours of the eruption of La Soufriere actual occurrence
-(x7 / possible
-	:time (x8 / now)
-	:domain (x10 / forecast-01
-		:ARG2 (x3 / result-01)
-		:ARG1 (x6 / activity
-			:mod (x5 / volcanic))
-		:ARG1 (x13 / accuracy
-			:mod (x12 / substantial))
-		:ARG1 (x16 / pinpoint
-			:frequency (x15 / often)
-			:ARG1 (x18 / eruption)
-			:time (x20 / within
-				:op1 (x21 / temporal-quantity
-					:unit (d / day))
-				:op1 (x23 / even))
-			:ARG1 (x24 / temporal-quantity
-				:unit (h / hour))
-			:ARG1 (x32 / occur-01
-				:null_edge (x29 / null_tag)
-				:mod (x31 / actual)))))
-
-# ::id 28
-# ::snt When Redoubt erupted in Alaska in 1989 and Pinatubo blew Redoubt's top in the Philippines in 1991, volcanologists provided important information, not only about the timing of the events, but also about the direction of debris flows and ash blooms - vast clouds formed when tiny pieces of lava or rock are thrown into the air
-(x21 / provide-01
-	:ARG1 (x8 / and
-		:op1 (x3 / erupt-01
-			:ARG0 (x2 / redoubt)
-			:location (x5 / state
-				:name (n / name
-					:op1 "Alaska"))
-			:time (x7 / date-entity
-				:year 1989))
-		:op2 (x10 / blow-01
-			:ARG0 x2
-			:ARG0 (x9 / person
-				:name (n1 / name
-					:op1 "Pinatubo"))
-			:ARG1 (x13 / top)
-			:location (x16 / country
-				:name (n2 / name
-					:op1 "Philippines"))
-			:time (x18 / date-entity
-				:year 1991)))
-	:ARG0 (x20 / volcanologist)
-	:ARG1 (x23 / information
-		:mod (x22 / important)
-		:topic (x29 / timing
-			:ARG1 (x32 / event)
-			:ARG1 (x38 / direction
-				:ARG1 (x42 / and
-					:op1 (x41 / name
-						:op1 "flows"
-						:mod (x40 / debris))
-					:op2 (x44 / bloom
-						:name (x43 / name
-							:op1 "ash"))
-					:op2 (x47 / cloud
-						:mod (x46 / vast)
-						:ARG1-of (x48 / form-02
-							:ARG0 (x54 / or
-								:op1 (x53 / lava)
-								:op2 (x55 / rock))
-							:time (x57 / throw-01
-								:ARG1 (x51 / piece
-									:mod (x50 / tiny))
-								:ARG2 (x60 / air)))))))))
-
-# ::id 29
-# ::snt ` We used information on the ash blooms (during the Redoubt eruption )to know which areas to stay away from, and which were safe to fly through, ' says Greg Witter, a spokesman for Alaska Air
-(x33 / say-01
-	:ARG1 (x3 / use-01
-		:ARG0 (x2 / we)
-		:ARG1 (x4 / information
-			:topic (x8 / bloom
-				:name (x7 / name
-					:op1 "ash"))
-			:topic (x13 / eruption
-				:mod (x12 / country
-					:name (n1 / name
-						:op1 "Redoubt"))))
-		:ARG2 (x16 / know-01
-			:ARG1 (x24 / and
-				:op1 (x20 / stay-01
-					:ARG1 (x18 / area)
-					:direction (x21 / away))
-				:op2 (x27 / safe-41
-					:ARG1 (x29 / fly-01)))))
-	:ARG0 (x34 / newspaper
-		:name (n / name
-			:op1 "Greg"
-			:op2 "Witter")
-		:ARG0-of (x38 / have-org-role-91
-			:ARG2 (s / spokesman)
-			:ARG1 (x41 / air
-				:mod (x40 / state
-					:name (n2 / name
-						:op1 "Alaska"))))))
-
-# ::id 30
-# ::snt Companies can also take advantage of eruption forecasts to move valuable equipment out of the way, and evacuate employees from the area
-(x2 / possible
-	:mod (x3 / also)
-	:domain (x4 / take-01
-		:ARG0 (x1 / company)
-		:destination (x8 / forecast-01
-			:ARG1 (x7 / eruption))
-		:purpose (x18 / and
-			:op1 (x10 / move-01
-				:ARG1 (x12 / equipment
-					:mod (x11 / value-01))
-				:ARG2 (x13 / out
-					:op1 (x16 / way)))
-			:op2 (x19 / evacuate
-				:ARG1 (x20 / person
-					:ARG1-of (e / employ-01))
-				:ARG2 (x23 / area)))))
-
-# ::id 31
-# ::snt ` Businesses with sensitive electronics may want to shut down Companies air filtration system during an ash bloom, ' says Steven Brantley, public information scientist with the US Geological Survey
-(x21 / say-01
-	:ARG1 (x6 / possible
-		:domain (x7 / want-01
-			:ARG0 (x2 / business
-				:mod (x5 / electronic
-					:mod (x4 / sensitive)))
-			:ARG1 (x9 / shut-05
-				:ARG0 x2
-				:ARG1 (x14 / system
-					:poss (x11 / company
-						:mod (x12 / air))
-					:mod (x13 / filtration))
-				:time (x18 / bloom
-					:name (x17 / name
-						:op1 "ash")))))
-	:ARG0 (x22 / newspaper
-		:name (n / name
-			:op1 "Steven"
-			:op2 "Brantley")
-		:ARG0-of (x27 / scientist
-			:mod (x25 / public)
-			:mod (x26 / information)
-			:ARG1 (x32 / survey-01
-				:mod (x31 / organization
-					:name (n1 / name
-						:op1 "Geological"))))))
-
-# ::id 32
-# ::snt Since ash blooms often drift for many miles, Companies can wreak havoc on property well beyond the life-threatening zone of eruption
-(x11 / possible
-	:domain (x12 / wreak-01
-		:time (x5 / drift-01
-			:ARG1 (x3 / bloom
-				:name (x2 / name
-					:op1 "ash"))
-			:frequency (x4 / often)
-			:ARG1 (xap0 / multiple
-				:op1 (x8 / distance-quantity
-					:unit (m / mile))))
-		:ARG0 (x10 / company)
-		:ARG1 (x13 / havoc)
-		:ARG1 (x15 / property)
-		:location (x17 / beyond
-			:op1 (x20 / zone
-				:ARG1-of (x22 / eruption)
-				:ARG1-of (xap1 / threaten-01
-					:ARG2 (x19 / life))))))
-
-# ::id 33
-# ::snt Volcanology can also be used for future planning
-(x2 / possible
-	:domain (x5 / use-01
-		:ARG1 (x1 / volcanology)
-		:mod (x3 / also)
-		:ARG2 (x8 / plan-01
-			:time (x7 / future))))
-
-# ::id 34
-# ::snt After much of Volcanology timber was wiped out during the eruption of Mount St Helens, the paper group Weyerhaeuser consulted experts to decide which areas should be replanted and which avoided as too high-risk
-(x7 / wipe-02
-	:time (x1 / after)
-	:ARG1 (x5 / timber
-		:quant (x2 / much)
-		:mod (x4 / country
-			:name (n / name
-				:op1 "Volcanology")))
-	:time (x11 / eruption
-		:ARG1 (x13 / government-organization
-			:name (n1 / name
-				:op1 "Mount"
-				:op2 "St"
-				:op3 "Helens")
-			:mod (x18 / paper)
-			:ARG1-of (x21 / consult-01
-				:ARG0 (x20 / organization
-					:name (n2 / name
-						:op1 "Weyerhaeuser"))
-				:purpose (x24 / decide-01
-					:ARG0 x20
-					:ARG0 (x22 / person
-						:ARG1-of (e / expert-41))
-					:ARG1 (x27 / recommend-01
-						:ARG1 (x30 / and
-							:op1 (x29 / replant-01
-								:ARG1 (x26 / area))
-							:op2 (x32 / avoid-01
-								:manner (x35 / high-risk
-									:degree (x34 / too))))))))))
-
-# ::id 35
-# ::snt Not all businesses welcome the interference of volcanologists, however
-(x4 / welcome-01
-	:ARG0 (x3 / business
-		:quant (x2 / all))
-	:ARG1 (x6 / interference
-		:ARG1 (x8 / volcanologist)))
-
-# ::id 36
-# ::snt In Long Valley developers have refused to heed warnings in land use planning
-(x6 / refuse-01
-	:ARG0 (x4 / person
-		:ARG0-of (d / develop-02)
-		:null_edge (x2 / country
-			:name (n / name
-				:op1 "Long"))
-		:mod (x3 / country
-			:name (n1 / name
-				:op1 "Valley")))
-	:ARG1 (x8 / heed-01
-		:ARG0 x4
-		:ARG1 (x9 / warn-01
-			:ARG2 (x13 / plan-01
-				:ARG1 (x11 / land)
-				:ARG1 (x12 / use-01)))))
-
-# ::id 37
-# ::snt ` We 've had mixed results, because we ca n't force people to follow our advice, ' says Daniel Miller, a geologist with the US Geological Survey
-(x20 / say-01
-	:ARG1-of (x8 / cause-01
-		:ARG0 (x2 / we)
-		:ARG0 (x6 / thing
-			:ARG2-of (r / result-01)
-			:ARG1-of (x5 / mix-01))
-		:ARG0 (x12 / force-01
-			:ARG0 (x9 / we)
-			:ARG2 (x15 / follow-02
-				:ARG0 x9
-				:ARG1 (x17 / advise-01))))
-	:ARG0 (x22 / person
-		:name (n / name
-			:op1 "Miller")
-		:null_edge (x21 / null_tag)
-		:null_edge (x25 / geologist
-			:ARG1 (x30 / survey-01
-				:mod (x29 / organization
-					:name (n1 / name
-						:op1 "Geological"))))))
-
-# ::id 38
-# ::snt ` We 've had a very negative and unpleasant response from businesses in Long Valley
-(x10 / respond-01
-	:ARG0 (x2 / we)
-	:ARG1 (x8 / and
-		:op1 (x7 / negative
-			:degree (x6 / very))
-		:op2 (x9 / pleasant-41
-			:polarity -))
-	:ARG1 (x12 / business
-		:location (x15 / country
-			:name (n / name
-				:op1 "Valley")
-			:null_edge (x14 / country
-				:name (n1 / name
-					:op1 "Long")))))
-
-# ::id 39
-# ::snt 72,000 people just do n't believe that 72,000 people might be in a risk zone and insist on building things anywhere 72,000 people please .
-(x6 / believe-01
-	:ARG1 (x1 / 72,000)
-	:mod (x3 / just)
-	:ARG1 (x16 / and
-		:quant (x8 / 72,000)
-		:op1 (x15 / zone
-			:ARG1-of (x14 / risk-01))
-		:op2 (x17 / insist-01
-			:ARG1 (x19 / build-01
-				:ARG1 (x20 / thing
-					:location (x21 / anywhere
-						:op1 (x22 / 72,000)))))))
-
-# ::id 40
-# ::snt Developers in the region complain that the volcanologists ' warnings have resulted in higher insurance rates, limited areas of potential development and stoked the fears of tourists
-(x5 / complain-01
-	:ARG0 (x1 / person
-		:ARG0-of (d / develop-02)
-		:location (x4 / region))
-	:ARG1 (x23 / and
-		:op1 (x12 / result-01
-			:ARG1 (x10 / warn-01)
-			:ARG2 (x16 / rate
-				:mod (x14 / high)
-				:mod (x15 / insure-02)))
-		:op2 (x18 / limit-01
-			:ARG1 (x19 / area
-				:mod (x22 / develop-02
-					:mod (x21 / potential))))
-		:op2 (x24 / stoke
-			:ARG1 (x26 / fear-01
-				:ARG1 (x28 / person
-					:ARG0-of (t / tour-01))))))
-
-# ::id 41
-# ::snt The relationship between active volcanoes and the communities that surround Developers in the region is not always confrontational
-(x18 / confrontation
-	:ARG1 (x2 / relationship
-		:ARG1 (x6 / and
-			:op1 (x5 / volcano
-				:mod (x4 / active))
-			:op2 (x8 / community
-				:ARG1-of (x10 / surround-01
-					:ARG1 (x11 / person
-						:ARG0-of (d / develop-02))
-					:location (x14 / region)))))
-	:time (x17 / always))
-
-# ::id 42
-# ::snt Kilauea has become a leading Hawaiian tourist attraction
-(x3 / become-01
-	:ARG1 (x1 / country
-		:name (n / name
-			:op1 "Kilauea"))
-	:ARG2 (x8 / attract-01
-		:ARG0-of (x5 / lead-02)
-		:ARG1 (x6 / organization
-			:name (n1 / name
-				:op1 "Hawaiian"))
-		:mod (x7 / person
-			:ARG0-of (t / tour-01))))
-
-# ::id 43
-# ::snt Hawaii's Kilauea since 1983 is considered the ideal volcano
-(x7 / consider-01
-	:time (x5 / date-entity
-		:year 1983
-		:domain (x1 / country
-			:name (n / name
-				:op1 "Hawaii"
-				:op2 "'s"
-				:op3 "Kilauea"
-				:op4 "since")))
-	:ARG1 (x10 / volcano
-		:ARG1-of (x9 / ideal)))
-
-# ::id 44
-# ::snt Because the eruption is continuous, it is seldom life-threatening and ash blooms are rare
-(x1 / cause-01
-	:ARG0 (x11 / and
-		:op1 (x5 / continue-01
-			:domain (x3 / eruption))
-		:op2 (x15 / rare
-			:domain (x13 / bloom
-				:name (x12 / name
-					:op1 "ash")))
-		:op1 (xap0 / threaten-01
-			:ARG2 (x10 / life
-				:frequency (x9 / seldom)))))
-
-# ::id 45
-# ::snt Instead, the volcano throws up a scenic display of colourful lava, which attracts hikers by day and creates a natural light show at night
-(x5 / throw-01
-	:ARG0 (x4 / volcano)
-	:ARG1 (x9 / display
-		:mod (x8 / scenic)
-		:ARG1 (x12 / lava
-			:mod (x11 / colorful)
-			:ARG1-of (x15 / attract-01
-				:ARG1 (x16 / hiker)
-				:ARG0 (x18 / temporal-quantity
-					:unit (d / day)))
-			:ARG0-of (x20 / create-01
-				:ARG1 (x24 / show
-					:mod (x22 / natural)
-					:mod (x23 / light))
-				:time (x26 / night)))))
-
-# ::id 46
-# ::snt Scientists have gleaned much useful information from the decade-long eruption
-(x3 / glean
-	:ARG0 (x1 / have-org-role-91
-		:ARG2 (s / scientist))
-	:ARG1 (x6 / information
-		:quant (x4 / much)
-		:mod (x5 / useful))
-	:ARG2 (x10 / eruption
-		:mod (x9 / temporal-quantity
-			:unit (d / decade))))
-
-# ::id 47
-# ::snt ` The resorts look to us to provide information on best viewing times, which they pass on to the tourists, ' says David Clague, scientist in charge of the Hawaii Volcano Observatory at Kilauea
-(x24 / say-01
-	:ARG1 (x4 / look-04
-		:ARG0 (x3 / resort)
-		:ARG1 (x8 / provide-01
-			:ARG1 (x9 / information
-				:topic (x12 / viewing
-					:mod (x11 / good
-						:degree (m / most)))
-				:ARG0-of (x17 / person
-					:ARG1-of (p / pass-07)
-					:ARG2 (x21 / person
-						:ARG0-of (t / tour-01))))))
-	:ARG0 (x25 / newspaper
-		:name (n / name
-			:op1 "David"
-			:op2 "Clague")
-		:ARG0-of (x28 / scientist
-			:manner (x30 / charge-05
-				:ARG1 (x35 / observatory
-					:name (x33 / name
-						:op1 "Hawaii")
-					:null_edge (x34 / volcano)
-					:location (x37 / country
-						:name (n1 / name
-							:op1 "Kilauea")))))))
-
-# ::id 48
-# ::snt ` It's generally pretty tame as far as volcano eruptions go, but it's spectacular at night because it's iridescent .
-(x14 / contrast-01
-	:ARG1 (x6 / tame
-		:mod (x4 / general)
-		:degree (x5 / pretty))
-	:ARG2 (x12 / go-02
-		:ARG0 (x11 / eruption
-			:mod (x10 / volcano)))
-	:ARG2 (x17 / spectacle
-		:time (x19 / night)
-		:ARG1-of (x20 / cause-01)))
-
+<amr>
+<graph id="1">
+<nodes>
+<node gid="0" id="0" text="display" label="x21" nosuffix="display" isleaf="False"></node>
+<node gid="1" id="1" text="volcano" label="x1" nosuffix="volcano" isleaf="False"></node>
+<node gid="2" id="2" text="and" label="x9" nosuffix="and" isleaf="False"></node>
+<node gid="3" id="3" text="spit" label="x4" nosuffix="spit" isleaf="False"></node>
+<node gid="4" id="4" text="name" label="x5" nosuffix="name" isleaf="False"></node>
+<node gid="5" id="5" text="ooze" label="x7" nosuffix="ooze" isleaf="False"></node>
+<node gid="6" id="6" text="lava" label="x8" nosuffix="lava" isleaf="True"></node>
+<node gid="7" id="7" text="create-01" label="x10" nosuffix="create" isleaf="False"></node>
+<node gid="8" id="8" text="darkness" label="x11" nosuffix="darkness" isleaf="True"></node>
+<node gid="9" id="9" text="null_tag" label="x12" nosuffix="null_tag" isleaf="False"></node>
+<node gid="10" id="10" text="null_tag" label="x14" nosuffix="null_tag" isleaf="False"></node>
+<node gid="11" id="11" text="day" label="x17" nosuffix="day" isleaf="True"></node>
+<node gid="12" id="12" text="impressive" label="x20" nosuffix="impressive" isleaf="True"></node>
+<node gid="13" id="13" text="restlessness" label="x25" nosuffix="restlessness" isleaf="False"></node>
+<node gid="14" id="14" text="nature" label="x23" nosuffix="nature" isleaf="True"></node>
+<node gid="15" id="15" text="ash" label="ash" nosuffix="ash" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="ARG0" ></edge>
+<edge head="0" tail="12" label="ARG1-of" ></edge>
+<edge head="0" tail="13" label="ARG1" ></edge>
+<edge head="1" tail="2" label="ARG1" ></edge>
+<edge head="2" tail="3" label="op1" ></edge>
+<edge head="2" tail="5" label="op2" ></edge>
+<edge head="2" tail="7" label="op2" ></edge>
+<edge head="3" tail="4" label="ARG1" ></edge>
+<edge head="4" tail="15" label="op1" ></edge>
+<edge head="5" tail="6" label="ARG1" ></edge>
+<edge head="7" tail="4" label="ARG0" ></edge>
+<edge head="7" tail="8" label="ARG1" ></edge>
+<edge head="7" tail="9" label="null_edge" ></edge>
+<edge head="9" tail="10" label="null_edge" ></edge>
+<edge head="10" tail="11" label="part-of" ></edge>
+<edge head="13" tail="14" label="part-of" ></edge>
+</edges>
+</graph>
+<graph id="2">
+<nodes>
+<node gid="16" id="0" text="life" label="x4" nosuffix="life" isleaf="False"></node>
+<node gid="17" id="1" text="they" label="x1" nosuffix="they" isleaf="True"></node>
+<node gid="18" id="2" text="also" label="x3" nosuffix="also" isleaf="True"></node>
+<node gid="19" id="3" text="die-01" label="x10" nosuffix="die" isleaf="False"></node>
+<node gid="20" id="4" text="more-than" label="x6" nosuffix="more" isleaf="False"></node>
+<node gid="21" id="5" text="28,500" label="x8" nosuffix="28,500" isleaf="True"></node>
+<node gid="22" id="6" text="eruption" label="x12" nosuffix="eruption" isleaf="True"></node>
+<node gid="23" id="7" text="date-entity" label="xap0" nosuffix="date" isleaf="False"></node>
+<node gid="24" id="8" text="date-entity" label="x15" nosuffix="date" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="domain" ></edge>
+<edge head="0" tail="2" label="mod" ></edge>
+<edge head="0" tail="3" label="null_edge" ></edge>
+<edge head="3" tail="4" label="ARG1" ></edge>
+<edge head="3" tail="6" label="ARG1" ></edge>
+<edge head="3" tail="7" label="time" ></edge>
+<edge head="4" tail="5" label="op1" ></edge>
+<edge head="7" tail="8" label="time" ></edge>
+</edges>
+</graph>
+<graph id="3">
+<nodes>
+<node gid="25" id="0" text="and" label="x10" nosuffix="and" isleaf="False"></node>
+<node gid="26" id="1" text="possible" label="x2" nosuffix="possible" isleaf="False"></node>
+<node gid="27" id="2" text="cause-01" label="x3" nosuffix="cause" isleaf="False"></node>
+<node gid="28" id="3" text="they" label="x1" nosuffix="they" isleaf="True"></node>
+<node gid="29" id="4" text="damage-01" label="x9" nosuffix="damage" isleaf="False"></node>
+<node gid="30" id="5" text="property" label="x8" nosuffix="property" isleaf="True"></node>
+<node gid="31" id="6" text="bring-01" label="x11" nosuffix="bring" isleaf="False"></node>
+<node gid="32" id="7" text="activity" label="x13" nosuffix="activity" isleaf="False"></node>
+<node gid="33" id="8" text="industry" label="x12" nosuffix="industry" isleaf="True"></node>
+<node gid="34" id="9" text="halt-01" label="x17" nosuffix="halt" isleaf="False"></node>
+<node gid="35" id="10" text="ground-01" label="x16" nosuffix="ground" isleaf="True"></node>
+<node gid="36" id="11" text="multiple" label="xap0" nosuffix="multiple" isleaf="False"></node>
+<node gid="37" id="12" text="monetary-quantity" label="x6" nosuffix="monetary" isleaf="False"></node>
+<node gid="38" id="13" text="dollar" label="d" nosuffix="dollar" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="op1" ></edge>
+<edge head="1" tail="2" label="domain" ></edge>
+<edge head="2" tail="3" label="ARG0" ></edge>
+<edge head="2" tail="4" label="ARG1" ></edge>
+<edge head="4" tail="5" label="ARG1" ></edge>
+<edge head="4" tail="6" label="consist-of" ></edge>
+<edge head="4" tail="11" label="ARG1-of" ></edge>
+<edge head="6" tail="3" label="ARG0" ></edge>
+<edge head="6" tail="7" label="ARG1" ></edge>
+<edge head="6" tail="9" label="ARG4" ></edge>
+<edge head="7" tail="8" label="mod" ></edge>
+<edge head="9" tail="10" label="ARG1-of" ></edge>
+<edge head="11" tail="12" label="op1" ></edge>
+<edge head="12" tail="13" label="unit" ></edge>
+</edges>
+</graph>
+<graph id="4">
+<nodes>
+<node gid="39" id="0" text="help-01" label="x11" nosuffix="help" isleaf="False"></node>
+<node gid="40" id="1" text="improve-01" label="x4" nosuffix="improve" isleaf="False"></node>
+<node gid="41" id="2" text="technology" label="x2" nosuffix="technology" isleaf="False"></node>
+<node gid="42" id="3" text="null_tag" label="x1" nosuffix="null_tag" isleaf="True"></node>
+<node gid="43" id="4" text="forecast-01" label="x9" nosuffix="forecast" isleaf="False"></node>
+<node gid="44" id="5" text="eruption" label="x8" nosuffix="eruption" isleaf="True"></node>
+<node gid="45" id="6" text="minimize-01" label="x13" nosuffix="minimize" isleaf="False"></node>
+<node gid="46" id="7" text="devastation" label="x15" nosuffix="devastation" isleaf="False"></node>
+<node gid="47" id="8" text="cause-01" label="x18" nosuffix="cause" isleaf="False"></node>
+<node gid="48" id="9" text="volcano" label="x16" nosuffix="volcano" isleaf="True"></node>
+<node gid="49" id="10" text="possible" label="x17" nosuffix="possible" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="ARG1" ></edge>
+<edge head="0" tail="6" label="ARG1" ></edge>
+<edge head="1" tail="2" label="ARG1" ></edge>
+<edge head="1" tail="4" label="ARG1" ></edge>
+<edge head="2" tail="3" label="null_edge" ></edge>
+<edge head="4" tail="5" label="ARG1" ></edge>
+<edge head="6" tail="7" label="ARG1" ></edge>
+<edge head="7" tail="8" label="ARG0-of" ></edge>
+<edge head="8" tail="9" label="ARG0" ></edge>
+<edge head="8" tail="10" label="mod" ></edge>
+</edges>
+</graph>
+<graph id="5">
+<nodes>
+<node gid="50" id="0" text="begin-01" label="x19" nosuffix="begin" isleaf="False"></node>
+<node gid="51" id="1" text="after" label="x1" nosuffix="after" isleaf="False"></node>
+<node gid="52" id="2" text="kill-01" label="x7" nosuffix="kill" isleaf="False"></node>
+<node gid="53" id="3" text="eruption" label="x6" nosuffix="eruption" isleaf="False"></node>
+<node gid="54" id="4" text="del" label="x4" nosuffix="del" isleaf="True"></node>
+<node gid="55" id="5" text="nearly" label="x8" nosuffix="nearly" isleaf="False"></node>
+<node gid="56" id="6" text="25,000" label="x9" nosuffix="25,000" isleaf="True"></node>
+<node gid="57" id="7" text="country" label="x12" nosuffix="country" isleaf="False"></node>
+<node gid="58" id="8" text="name" label="n1" nosuffix="name" isleaf="False"></node>
+<node gid="59" id="9" text="date-entity" label="x14" nosuffix="date" isleaf="False"></node>
+<node gid="60" id="10" text="government-organization" label="x18" nosuffix="government" isleaf="False"></node>
+<node gid="61" id="11" text="govern-01" label="g" nosuffix="govern" isleaf="True"></node>
+<node gid="62" id="12" text="country" label="x17" nosuffix="country" isleaf="False"></node>
+<node gid="63" id="13" text="name" label="n" nosuffix="name" isleaf="False"></node>
+<node gid="64" id="14" text="take-01" label="x20" nosuffix="take" isleaf="False"></node>
+<node gid="65" id="15" text="forecast-01" label="x22" nosuffix="forecast" isleaf="False"></node>
+<node gid="66" id="16" text="volcanic" label="x21" nosuffix="volcanic" isleaf="True"></node>
+<node gid="67" id="17" text="serious" label="x23" nosuffix="serious" isleaf="True"></node>
+<node gid="68" id="18" text="Colombia" label="Colombia" nosuffix="Colombia" isleaf="True"></node>
+<node gid="69" id="19" text="1986" label="1986" nosuffix="1986" isleaf="True"></node>
+<node gid="70" id="20" text="US" label="US" nosuffix="US" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="time" ></edge>
+<edge head="0" tail="10" label="ARG0" ></edge>
+<edge head="0" tail="14" label="ARG1" ></edge>
+<edge head="1" tail="2" label="op1" ></edge>
+<edge head="2" tail="3" label="ARG0" ></edge>
+<edge head="2" tail="5" label="ARG1" ></edge>
+<edge head="2" tail="7" label="location" ></edge>
+<edge head="2" tail="9" label="time" ></edge>
+<edge head="3" tail="4" label="mod" ></edge>
+<edge head="5" tail="6" label="op1" ></edge>
+<edge head="7" tail="8" label="name" ></edge>
+<edge head="8" tail="18" label="op1" ></edge>
+<edge head="9" tail="19" label="year" ></edge>
+<edge head="10" tail="11" label="ARG0-of" ></edge>
+<edge head="10" tail="12" label="ARG1" ></edge>
+<edge head="12" tail="13" label="name" ></edge>
+<edge head="13" tail="20" label="op1" ></edge>
+<edge head="14" tail="10" label="ARG0" ></edge>
+<edge head="14" tail="15" label="ARG1" ></edge>
+<edge head="14" tail="17" label="manner" ></edge>
+<edge head="15" tail="16" label="mod" ></edge>
+</edges>
+</graph>
+<graph id="6">
+<nodes>
+<node gid="71" id="0" text="infuse" label="x15" nosuffix="infuse" isleaf="False"></node>
+<node gid="72" id="1" text="survey" label="x4" nosuffix="survey" isleaf="False"></node>
+<node gid="73" id="2" text="country" label="x2" nosuffix="country" isleaf="False"></node>
+<node gid="74" id="3" text="name" label="n" nosuffix="name" isleaf="False"></node>
+<node gid="75" id="4" text="geological" label="x3" nosuffix="geological" isleaf="True"></node>
+<node gid="76" id="5" text="track-01" label="x7" nosuffix="track" isleaf="False"></node>
+<node gid="77" id="6" text="activity" label="x9" nosuffix="activity" isleaf="False"></node>
+<node gid="78" id="7" text="volcanic" label="x8" nosuffix="volcanic" isleaf="True"></node>
+<node gid="79" id="8" text="around" label="x10" nosuffix="around" isleaf="False"></node>
+<node gid="80" id="9" text="world" label="x12" nosuffix="world" isleaf="True"></node>
+<node gid="81" id="10" text="fund-01" label="x18" nosuffix="fund" isleaf="False"></node>
+<node gid="82" id="11" text="new" label="x17" nosuffix="new" isleaf="True"></node>
+<node gid="83" id="12" text="and" label="x24" nosuffix="and" isleaf="False"></node>
+<node gid="84" id="13" text="create-01" label="x20" nosuffix="create" isleaf="False"></node>
+<node gid="85" id="14" text="database" label="x23" nosuffix="database" isleaf="False"></node>
+<node gid="86" id="15" text="detail-01" label="x22" nosuffix="detail" isleaf="True"></node>
+<node gid="87" id="16" text="update-01" label="x25" nosuffix="update" isleaf="False"></node>
+<node gid="88" id="17" text="technique" label="x29" nosuffix="technique" isleaf="False"></node>
+<node gid="89" id="18" text="detail-01" label="x27" nosuffix="detail" isleaf="True"></node>
+<node gid="90" id="19" text="database" label="x28" nosuffix="database" isleaf="True"></node>
+<node gid="91" id="20" text="US" label="US" nosuffix="US" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="ARG1" ></edge>
+<edge head="0" tail="10" label="instrument" ></edge>
+<edge head="1" tail="2" label="null_edge" ></edge>
+<edge head="1" tail="4" label="mod" ></edge>
+<edge head="1" tail="5" label="ARG0-of" ></edge>
+<edge head="2" tail="3" label="name" ></edge>
+<edge head="3" tail="20" label="op1" ></edge>
+<edge head="5" tail="6" label="ARG1" ></edge>
+<edge head="5" tail="8" label="location" ></edge>
+<edge head="6" tail="7" label="mod" ></edge>
+<edge head="8" tail="9" label="op1" ></edge>
+<edge head="10" tail="11" label="mod" ></edge>
+<edge head="10" tail="12" label="ARG0" ></edge>
+<edge head="12" tail="13" label="op1" ></edge>
+<edge head="12" tail="16" label="op2" ></edge>
+<edge head="13" tail="14" label="ARG1" ></edge>
+<edge head="14" tail="15" label="ARG1-of" ></edge>
+<edge head="16" tail="17" label="ARG1" ></edge>
+<edge head="17" tail="18" label="ARG1-of" ></edge>
+<edge head="17" tail="19" label="mod" ></edge>
+</edges>
+</graph>
+<graph id="7">
+<nodes>
+<node gid="92" id="0" text="help-01" label="x7" nosuffix="help" isleaf="False"></node>
+<node gid="93" id="1" text="technology" label="x3" nosuffix="technology" isleaf="False"></node>
+<node gid="94" id="2" text="new" label="x2" nosuffix="new" isleaf="True"></node>
+<node gid="95" id="3" text="only" label="x6" nosuffix="only" isleaf="True"></node>
+<node gid="96" id="4" text="save-02" label="x9" nosuffix="save" isleaf="False"></node>
+<node gid="97" id="5" text="life" label="x12" nosuffix="life" isleaf="True"></node>
+<node gid="98" id="6" text="possible" label="x17" nosuffix="possible" isleaf="False"></node>
+<node gid="99" id="7" text="also" label="x18" nosuffix="also" isleaf="True"></node>
+<node gid="100" id="8" text="save-02" label="x19" nosuffix="save" isleaf="False"></node>
+<node gid="101" id="9" text="technology" label="x16" nosuffix="technology" isleaf="False"></node>
+<node gid="102" id="10" text="new" label="x15" nosuffix="new" isleaf="True"></node>
+<node gid="103" id="11" text="multiple" label="xap0" nosuffix="multiple" isleaf="False"></node>
+<node gid="104" id="12" text="monetary-quantity" label="x22" nosuffix="monetary" isleaf="False"></node>
+<node gid="105" id="13" text="dollar" label="d" nosuffix="dollar" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="ARG1" ></edge>
+<edge head="0" tail="3" label="mod" ></edge>
+<edge head="0" tail="4" label="ARG1" ></edge>
+<edge head="0" tail="6" label="mod" ></edge>
+<edge head="1" tail="2" label="mod" ></edge>
+<edge head="4" tail="5" label="ARG1" ></edge>
+<edge head="6" tail="7" label="mod" ></edge>
+<edge head="6" tail="8" label="domain" ></edge>
+<edge head="8" tail="9" label="ARG0" ></edge>
+<edge head="8" tail="11" label="ARG1" ></edge>
+<edge head="9" tail="10" label="mod" ></edge>
+<edge head="11" tail="12" label="op1" ></edge>
+<edge head="12" tail="13" label="unit" ></edge>
+</edges>
+</graph>
+<graph id="8">
+<nodes>
+<node gid="106" id="0" text="damage-01" label="x14" nosuffix="damage" isleaf="False"></node>
+<node gid="107" id="1" text="government-organization" label="x4" nosuffix="government" isleaf="False"></node>
+<node gid="108" id="2" text="name" label="n" nosuffix="name" isleaf="False"></node>
+<node gid="109" id="3" text="aircraft" label="x11" nosuffix="aircraft" isleaf="False"></node>
+<node gid="110" id="4" text="more-than" label="x8" nosuffix="more" isleaf="False"></node>
+<node gid="111" id="5" text="drift-01" label="x16" nosuffix="drift" isleaf="False"></node>
+<node gid="112" id="6" text="cloud" label="x17" nosuffix="cloud" isleaf="False"></node>
+<node gid="113" id="7" text="name" label="x20" nosuffix="name" isleaf="False"></node>
+<node gid="114" id="8" text="volcanic" label="x19" nosuffix="volcanic" isleaf="True"></node>
+<node gid="115" id="9" text="since" label="x21" nosuffix="since" isleaf="False"></node>
+<node gid="116" id="10" text="date-entity" label="x22" nosuffix="date" isleaf="False"></node>
+<node gid="117" id="11" text="Aviation" label="Aviation" nosuffix="Aviation" isleaf="True"></node>
+<node gid="118" id="12" text="Safety" label="Safety" nosuffix="Safety" isleaf="True"></node>
+<node gid="119" id="13" text="Journal" label="Journal" nosuffix="Journal" isleaf="True"></node>
+<node gid="120" id="14" text="60" label="60" nosuffix="60" isleaf="True"></node>
+<node gid="121" id="15" text="ash" label="ash" nosuffix="ash" isleaf="True"></node>
+<node gid="122" id="16" text="1980" label="1980" nosuffix="1980" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="ARG0" ></edge>
+<edge head="0" tail="3" label="ARG1" ></edge>
+<edge head="0" tail="5" label="ARG0" ></edge>
+<edge head="1" tail="2" label="name" ></edge>
+<edge head="2" tail="11" label="op1" ></edge>
+<edge head="2" tail="12" label="op2" ></edge>
+<edge head="2" tail="13" label="op3" ></edge>
+<edge head="3" tail="4" label="quant" ></edge>
+<edge head="4" tail="14" label="op1" ></edge>
+<edge head="5" tail="6" label="ARG1" ></edge>
+<edge head="5" tail="9" label="time" ></edge>
+<edge head="6" tail="7" label="name" ></edge>
+<edge head="7" tail="15" label="op1" ></edge>
+<edge head="7" tail="8" label="mod" ></edge>
+<edge head="9" tail="10" label="op1" ></edge>
+<edge head="10" tail="16" label="year" ></edge>
+</edges>
+</graph>
+<graph id="9">
+<nodes>
+<node gid="123" id="0" text="cost-01" label="x17" nosuffix="cost" isleaf="False"></node>
+<node gid="124" id="1" text="repair-01" label="x2" nosuffix="repair" isleaf="False"></node>
+<node gid="125" id="2" text="aircraft" label="x6" nosuffix="aircraft" isleaf="False"></node>
+<node gid="126" id="3" text="747" label="x5" nosuffix="747" isleaf="True"></node>
+<node gid="127" id="4" text="damage-01" label="x7" nosuffix="damage" isleaf="False"></node>
+<node gid="128" id="5" text="eruption" label="x11" nosuffix="eruption" isleaf="False"></node>
+<node gid="129" id="6" text="date-entity" label="x10" nosuffix="date" isleaf="False"></node>
+<node gid="130" id="7" text="volcano" label="x14" nosuffix="volcano" isleaf="False"></node>
+<node gid="131" id="8" text="redoubt" label="x13" nosuffix="redoubt" isleaf="True"></node>
+<node gid="132" id="9" text="state" label="x16" nosuffix="state" isleaf="False"></node>
+<node gid="133" id="10" text="name" label="n" nosuffix="name" isleaf="False"></node>
+<node gid="134" id="11" text="80m" label="x19" nosuffix="80m" isleaf="True"></node>
+<node gid="135" id="12" text="1989" label="1989" nosuffix="1989" isleaf="True"></node>
+<node gid="136" id="13" text="Alaska" label="Alaska" nosuffix="Alaska" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="ARG1" ></edge>
+<edge head="0" tail="11" label="ARG1" ></edge>
+<edge head="1" tail="2" label="ARG1" ></edge>
+<edge head="2" tail="3" label="quant" ></edge>
+<edge head="2" tail="4" label="ARG1-of" ></edge>
+<edge head="4" tail="5" label="ARG0" ></edge>
+<edge head="5" tail="6" label="time" ></edge>
+<edge head="5" tail="7" label="source" ></edge>
+<edge head="5" tail="9" label="location" ></edge>
+<edge head="6" tail="12" label="year" ></edge>
+<edge head="7" tail="8" label="null_edge" ></edge>
+<edge head="9" tail="10" label="name" ></edge>
+<edge head="10" tail="13" label="op1" ></edge>
+</edges>
+</graph>
+<graph id="10">
+<nodes>
+<node gid="137" id="0" text="cause-01" label="x11" nosuffix="cause" isleaf="False"></node>
+<node gid="138" id="1" text="eruption" label="x3" nosuffix="eruption" isleaf="False"></node>
+<node gid="139" id="2" text="continue-01" label="x2" nosuffix="continue" isleaf="True"></node>
+<node gid="140" id="3" text="country" label="x7" nosuffix="country" isleaf="False"></node>
+<node gid="141" id="4" text="name" label="n" nosuffix="name" isleaf="False"></node>
+<node gid="142" id="5" text="name" label="x5" nosuffix="name" isleaf="False"></node>
+<node gid="143" id="6" text="since" label="x8" nosuffix="since" isleaf="False"></node>
+<node gid="144" id="7" text="date-entity" label="x9" nosuffix="date" isleaf="False"></node>
+<node gid="145" id="8" text="5m" label="x15" nosuffix="5m" isleaf="False"></node>
+<node gid="146" id="9" text="more-than" label="x12" nosuffix="more" isleaf="True"></node>
+<node gid="147" id="10" text="damage-01" label="x17" nosuffix="damage" isleaf="True"></node>
+<node gid="148" id="11" text="eruption" label="x23" nosuffix="eruption" isleaf="False"></node>
+<node gid="149" id="12" text="continue-01" label="x22" nosuffix="continue" isleaf="True"></node>
+<node gid="150" id="13" text="country" label="x27" nosuffix="country" isleaf="False"></node>
+<node gid="151" id="14" text="name" label="n1" nosuffix="name" isleaf="False"></node>
+<node gid="152" id="15" text="name" label="x25" nosuffix="name" isleaf="False"></node>
+<node gid="153" id="16" text="since" label="x28" nosuffix="since" isleaf="False"></node>
+<node gid="154" id="17" text="and" label="x32" nosuffix="and" isleaf="False"></node>
+<node gid="155" id="18" text="property" label="x31" nosuffix="property" isleaf="False"></node>
+<node gid="156" id="19" text="affect-01" label="x34" nosuffix="affect" isleaf="False"></node>
+<node gid="157" id="20" text="pollutant" label="x39" nosuffix="pollutant" isleaf="False"></node>
+<node gid="158" id="21" text="acid-bearing" label="x37" nosuffix="acid" isleaf="True"></node>
+<node gid="159" id="22" text="volcanic" label="x38" nosuffix="volcanic" isleaf="True"></node>
+<node gid="160" id="23" text="crop" label="x33" nosuffix="crop" isleaf="True"></node>
+<node gid="161" id="24" text="Kilauea" label="Kilauea" nosuffix="Kilauea" isleaf="True"></node>
+<node gid="162" id="25" text="Hawaii" label="Hawaii" nosuffix="Hawaii" isleaf="True"></node>
+<node gid="163" id="26" text="1983" label="1983" nosuffix="1983" isleaf="True"></node>
+<node gid="164" id="27" text="Kilauea" label="Kilauea" nosuffix="Kilauea" isleaf="True"></node>
+<node gid="165" id="28" text="Hawaii" label="Hawaii" nosuffix="Hawaii" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="ARG0" ></edge>
+<edge head="0" tail="8" label="ARG1" ></edge>
+<edge head="0" tail="10" label="ARG1" ></edge>
+<edge head="0" tail="11" label="ARG1" ></edge>
+<edge head="1" tail="2" label="ARG1-of" ></edge>
+<edge head="1" tail="3" label="poss" ></edge>
+<edge head="1" tail="6" label="time" ></edge>
+<edge head="3" tail="4" label="name" ></edge>
+<edge head="3" tail="5" label="name" ></edge>
+<edge head="4" tail="24" label="op1" ></edge>
+<edge head="5" tail="25" label="op1" ></edge>
+<edge head="6" tail="7" label="op1" ></edge>
+<edge head="7" tail="26" label="year" ></edge>
+<edge head="8" tail="9" label="quant" ></edge>
+<edge head="11" tail="12" label="ARG1-of" ></edge>
+<edge head="11" tail="13" label="poss" ></edge>
+<edge head="11" tail="16" label="time" ></edge>
+<edge head="13" tail="14" label="name" ></edge>
+<edge head="13" tail="15" label="name" ></edge>
+<edge head="14" tail="27" label="op1" ></edge>
+<edge head="15" tail="28" label="op1" ></edge>
+<edge head="16" tail="17" label="op1" ></edge>
+<edge head="17" tail="18" label="op1" ></edge>
+<edge head="17" tail="23" label="op2" ></edge>
+<edge head="18" tail="19" label="ARG1-of" ></edge>
+<edge head="19" tail="20" label="ARG0" ></edge>
+<edge head="20" tail="21" label="mod" ></edge>
+<edge head="20" tail="22" label="mod" ></edge>
+</edges>
+</graph>
+<graph id="11">
+<nodes>
+<node gid="166" id="0" text="wipe-02" label="x7" nosuffix="wipe" isleaf="False"></node>
+<node gid="167" id="1" text="government-organization" label="x1" nosuffix="government" isleaf="False"></node>
+<node gid="168" id="2" text="name" label="n" nosuffix="name" isleaf="False"></node>
+<node gid="169" id="3" text="state" label="x6" nosuffix="state" isleaf="False"></node>
+<node gid="170" id="4" text="city" label="x5" nosuffix="city" isleaf="False"></node>
+<node gid="171" id="5" text="name" label="n1" nosuffix="name" isleaf="False"></node>
+<node gid="172" id="6" text="timberland" label="x14" nosuffix="timberland" isleaf="False"></node>
+<node gid="173" id="7" text="area-quantity" label="x11" nosuffix="area" isleaf="False"></node>
+<node gid="174" id="8" text="acre" label="a" nosuffix="acre" isleaf="True"></node>
+<node gid="175" id="9" text="productive" label="x13" nosuffix="productive" isleaf="True"></node>
+<node gid="176" id="10" text="Mount" label="Mount" nosuffix="Mount" isleaf="True"></node>
+<node gid="177" id="11" text="St" label="St" nosuffix="St" isleaf="True"></node>
+<node gid="178" id="12" text="Helens" label="Helens" nosuffix="Helens" isleaf="True"></node>
+<node gid="179" id="13" text="Washington" label="Washington" nosuffix="Washington" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="ARG0" ></edge>
+<edge head="0" tail="6" label="ARG1" ></edge>
+<edge head="1" tail="2" label="name" ></edge>
+<edge head="1" tail="3" label="location" ></edge>
+<edge head="2" tail="10" label="op1" ></edge>
+<edge head="2" tail="11" label="op2" ></edge>
+<edge head="2" tail="12" label="op3" ></edge>
+<edge head="3" tail="4" label="location" ></edge>
+<edge head="4" tail="5" label="name" ></edge>
+<edge head="5" tail="13" label="op1" ></edge>
+<edge head="6" tail="7" label="op1" ></edge>
+<edge head="6" tail="9" label="mod" ></edge>
+<edge head="7" tail="8" label="unit" ></edge>
+</edges>
+</graph>
+<graph id="12">
+<nodes>
+<node gid="180" id="0" text="contrast-01" label="x11" nosuffix="contrast" isleaf="False"></node>
+<node gid="181" id="1" text="hard" label="x7" nosuffix="hard" isleaf="False"></node>
+<node gid="182" id="2" text="loss" label="x1" nosuffix="loss" isleaf="False"></node>
+<node gid="183" id="3" text="activity" label="x5" nosuffix="activity" isleaf="False"></node>
+<node gid="184" id="4" text="interrupt-01" label="x3" nosuffix="interrupt" isleaf="True"></node>
+<node gid="185" id="5" text="economy" label="x4" nosuffix="economy" isleaf="True"></node>
+<node gid="186" id="6" text="quantify" label="x9" nosuffix="quantify" isleaf="True"></node>
+<node gid="187" id="7" text="possible" label="x12" nosuffix="possible" isleaf="False"></node>
+<node gid="188" id="8" text="devastate-01" label="x15" nosuffix="devastate" isleaf="False"></node>
+<node gid="189" id="9" text="more" label="x14" nosuffix="more" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="ARG1" ></edge>
+<edge head="0" tail="6" label="ARG2" ></edge>
+<edge head="0" tail="7" label="ARG2" ></edge>
+<edge head="1" tail="2" label="domain" ></edge>
+<edge head="2" tail="3" label="source" ></edge>
+<edge head="3" tail="4" label="ARG1-of" ></edge>
+<edge head="3" tail="5" label="mod" ></edge>
+<edge head="7" tail="8" label="domain" ></edge>
+<edge head="8" tail="9" label="degree" ></edge>
+</edges>
+</graph>
+<graph id="13">
+<nodes>
+<node gid="190" id="0" text="and" label="x19" nosuffix="and" isleaf="False"></node>
+<node gid="191" id="1" text="cause-01" label="x8" nosuffix="cause" isleaf="False"></node>
+<node gid="192" id="2" text="eruption" label="x3" nosuffix="eruption" isleaf="True"></node>
+<node gid="193" id="3" text="terminal" label="x13" nosuffix="terminal" isleaf="False"></node>
+<node gid="194" id="4" text="value-01" label="x10" nosuffix="value" isleaf="True"></node>
+<node gid="195" id="5" text="oil" label="x11" nosuffix="oil" isleaf="True"></node>
+<node gid="196" id="6" text="store-01" label="x12" nosuffix="store" isleaf="True"></node>
+<node gid="197" id="7" text="close-03" label="x15" nosuffix="close" isleaf="False"></node>
+<node gid="198" id="8" text="several" label="x17" nosuffix="several" isleaf="False"></node>
+<node gid="199" id="9" text="week" label="x18" nosuffix="week" isleaf="True"></node>
+<node gid="200" id="10" text="region" label="x28" nosuffix="region" isleaf="True"></node>
+<node gid="201" id="11" text="halt-01" label="x20" nosuffix="halt" isleaf="False"></node>
+<node gid="202" id="12" text="fly-01" label="x22" nosuffix="fly" isleaf="False"></node>
+<node gid="203" id="13" text="flight" label="f" nosuffix="flight" isleaf="True"></node>
+<node gid="204" id="14" text="most" label="x21" nosuffix="most" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="op1" ></edge>
+<edge head="0" tail="11" label="op2" ></edge>
+<edge head="1" tail="2" label="ARG0" ></edge>
+<edge head="1" tail="3" label="ARG1" ></edge>
+<edge head="1" tail="7" label="ARG1" ></edge>
+<edge head="1" tail="10" label="location" ></edge>
+<edge head="3" tail="4" label="ARG1-of" ></edge>
+<edge head="3" tail="5" label="mod" ></edge>
+<edge head="3" tail="6" label="mod" ></edge>
+<edge head="7" tail="8" label="duration" ></edge>
+<edge head="8" tail="9" label="op1" ></edge>
+<edge head="11" tail="12" label="ARG1" ></edge>
+<edge head="12" tail="13" label="op" ></edge>
+<edge head="12" tail="14" label="quant" ></edge>
+</edges>
+</graph>
+<graph id="14">
+<nodes>
+<node gid="205" id="0" text="take-01" label="x3" nosuffix="take" isleaf="False"></node>
+<node gid="206" id="1" text="tourism" label="x1" nosuffix="tourism" isleaf="True"></node>
+<node gid="207" id="2" text="often" label="x2" nosuffix="often" isleaf="True"></node>
+<node gid="208" id="3" text="hit-01" label="x6" nosuffix="hit" isleaf="False"></node>
+<node gid="209" id="4" text="hardest" label="x5" nosuffix="hardest" isleaf="True"></node>
+<node gid="210" id="5" text="all" label="x8" nosuffix="all" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="ARG0" ></edge>
+<edge head="0" tail="2" label="frequency" ></edge>
+<edge head="0" tail="3" label="ARG1" ></edge>
+<edge head="3" tail="4" label="mod" ></edge>
+<edge head="3" tail="5" label="ARG0" ></edge>
+</edges>
+</graph>
+<graph id="15">
+<nodes>
+<node gid="211" id="0" text="turn-02" label="x18" nosuffix="turn" isleaf="False"></node>
+<node gid="212" id="1" text="issue-01" label="x4" nosuffix="issue" isleaf="False"></node>
+<node gid="213" id="2" text="geologist" label="x3" nosuffix="geologist" isleaf="False"></node>
+<node gid="214" id="3" text="country" label="x2" nosuffix="country" isleaf="False"></node>
+<node gid="215" id="4" text="name" label="n2" nosuffix="name" isleaf="False"></node>
+<node gid="216" id="5" text="warn-01" label="x6" nosuffix="warn" isleaf="False"></node>
+<node gid="217" id="6" text="eruption" label="x5" nosuffix="eruption" isleaf="True"></node>
+<node gid="218" id="7" text="country" label="x10" nosuffix="country" isleaf="False"></node>
+<node gid="219" id="8" text="name" label="n" nosuffix="name" isleaf="False"></node>
+<node gid="220" id="9" text="country" label="x11" nosuffix="country" isleaf="False"></node>
+<node gid="221" id="10" text="name" label="n1" nosuffix="name" isleaf="False"></node>
+<node gid="222" id="11" text="state" label="x8" nosuffix="state" isleaf="False"></node>
+<node gid="223" id="12" text="name" label="n3" nosuffix="name" isleaf="False"></node>
+<node gid="224" id="13" text="date-entity" label="x13" nosuffix="date" isleaf="False"></node>
+<node gid="225" id="14" text="area" label="x17" nosuffix="area" isleaf="False"></node>
+<node gid="226" id="15" text="resort" label="x16" nosuffix="resort" isleaf="True"></node>
+<node gid="227" id="16" text="town" label="x22" nosuffix="town" isleaf="False"></node>
+<node gid="228" id="17" text="ghost" label="x21" nosuffix="ghost" isleaf="True"></node>
+<node gid="229" id="18" text="overnight" label="x24" nosuffix="overnight" isleaf="False"></node>
+<node gid="230" id="19" text="almost" label="x23" nosuffix="almost" isleaf="True"></node>
+<node gid="231" id="20" text="US" label="US" nosuffix="US" isleaf="True"></node>
+<node gid="232" id="21" text="Long" label="Long" nosuffix="Long" isleaf="True"></node>
+<node gid="233" id="22" text="Valley" label="Valley" nosuffix="Valley" isleaf="True"></node>
+<node gid="234" id="23" text="California" label="California" nosuffix="California" isleaf="True"></node>
+<node gid="235" id="24" text="1982" label="1982" nosuffix="1982" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="time" ></edge>
+<edge head="0" tail="14" label="ARG0" ></edge>
+<edge head="0" tail="16" label="ARG2" ></edge>
+<edge head="0" tail="18" label="time" ></edge>
+<edge head="1" tail="2" label="ARG0" ></edge>
+<edge head="1" tail="5" label="ARG1" ></edge>
+<edge head="1" tail="7" label="ARG0" ></edge>
+<edge head="1" tail="9" label="ARG2" ></edge>
+<edge head="1" tail="13" label="time" ></edge>
+<edge head="2" tail="3" label="mod" ></edge>
+<edge head="3" tail="4" label="name" ></edge>
+<edge head="4" tail="20" label="op1" ></edge>
+<edge head="5" tail="6" label="mod" ></edge>
+<edge head="7" tail="8" label="name" ></edge>
+<edge head="8" tail="21" label="op1" ></edge>
+<edge head="9" tail="10" label="name" ></edge>
+<edge head="9" tail="11" label="null_edge" ></edge>
+<edge head="10" tail="22" label="op1" ></edge>
+<edge head="11" tail="12" label="name" ></edge>
+<edge head="12" tail="23" label="op1" ></edge>
+<edge head="13" tail="24" label="year" ></edge>
+<edge head="14" tail="15" label="mod" ></edge>
+<edge head="16" tail="17" label="mod" ></edge>
+<edge head="18" tail="19" label="mod" ></edge>
+</edges>
+</graph>
+<graph id="16">
+<nodes>
+<node gid="236" id="0" text="and" label="x1" nosuffix="and" isleaf="False"></node>
+<node gid="237" id="1" text="near-01" label="x7" nosuffix="near" isleaf="False"></node>
+<node gid="238" id="2" text="economy" label="x4" nosuffix="economy" isleaf="False"></node>
+<node gid="239" id="3" text="tourist-based" label="x3" nosuffix="tourist" isleaf="True"></node>
+<node gid="240" id="4" text="country" label="x6" nosuffix="country" isleaf="False"></node>
+<node gid="241" id="5" text="name" label="n" nosuffix="name" isleaf="False"></node>
+<node gid="242" id="6" text="collapse-01" label="x8" nosuffix="collapse" isleaf="True"></node>
+<node gid="243" id="7" text="date-entity" label="x10" nosuffix="date" isleaf="False"></node>
+<node gid="244" id="8" text="after" label="x11" nosuffix="after" isleaf="False"></node>
+<node gid="245" id="9" text="forecast-01" label="x17" nosuffix="forecast" isleaf="False"></node>
+<node gid="246" id="10" text="group" label="x14" nosuffix="group" isleaf="False"></node>
+<node gid="247" id="11" text="international" label="x13" nosuffix="international" isleaf="True"></node>
+<node gid="248" id="12" text="volcanologist" label="x16" nosuffix="volcanologist" isleaf="True"></node>
+<node gid="249" id="13" text="eruption" label="x19" nosuffix="eruption" isleaf="False"></node>
+<node gid="250" id="14" text="soufriere" label="x22" nosuffix="soufriere" isleaf="False"></node>
+<node gid="251" id="15" text="null_tag" label="x21" nosuffix="null_tag" isleaf="True"></node>
+<node gid="252" id="16" text="Guadeloupe" label="Guadeloupe" nosuffix="Guadeloupe" isleaf="True"></node>
+<node gid="253" id="17" text="1976" label="1976" nosuffix="1976" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="op2" ></edge>
+<edge head="1" tail="2" label="ARG1" ></edge>
+<edge head="1" tail="6" label="ARG1" ></edge>
+<edge head="1" tail="7" label="time" ></edge>
+<edge head="1" tail="8" label="time" ></edge>
+<edge head="2" tail="3" label="mod" ></edge>
+<edge head="2" tail="4" label="poss" ></edge>
+<edge head="4" tail="5" label="name" ></edge>
+<edge head="5" tail="16" label="op1" ></edge>
+<edge head="7" tail="17" label="year" ></edge>
+<edge head="8" tail="9" label="op1" ></edge>
+<edge head="9" tail="10" label="ARG0" ></edge>
+<edge head="9" tail="13" label="ARG1" ></edge>
+<edge head="10" tail="11" label="mod" ></edge>
+<edge head="10" tail="12" label="consist-of" ></edge>
+<edge head="13" tail="14" label="mod" ></edge>
+<edge head="14" tail="15" label="null_edge" ></edge>
+</edges>
+</graph>
+<graph id="17">
+<nodes>
+<node gid="254" id="0" text="tinge" label="x8" nosuffix="tinge" isleaf="False"></node>
+<node gid="255" id="1" text="and" label="x4" nosuffix="and" isleaf="False"></node>
+<node gid="256" id="2" text="have-org-role-91" label="x2" nosuffix="have" isleaf="False"></node>
+<node gid="257" id="3" text="country" label="c" nosuffix="country" isleaf="False"></node>
+<node gid="258" id="4" text="name" label="n" nosuffix="name" isleaf="False"></node>
+<node gid="259" id="5" text="incident" label="x6" nosuffix="incident" isleaf="False"></node>
+<node gid="260" id="6" text="country" label="x5" nosuffix="country" isleaf="False"></node>
+<node gid="261" id="7" text="name" label="n1" nosuffix="name" isleaf="False"></node>
+<node gid="262" id="8" text="bitterness" label="x10" nosuffix="bitterness" isleaf="True"></node>
+<node gid="263" id="9" text="since" label="x11" nosuffix="since" isleaf="False"></node>
+<node gid="264" id="10" text="happen-01" label="x16" nosuffix="happen" isleaf="False"></node>
+<node gid="265" id="11" text="disaster" label="x14" nosuffix="disaster" isleaf="False"></node>
+<node gid="266" id="12" text="predict-01" label="x13" nosuffix="predict" isleaf="True"></node>
+<node gid="267" id="13" text="Long" label="Long" nosuffix="Long" isleaf="True"></node>
+<node gid="268" id="14" text="Valley" label="Valley" nosuffix="Valley" isleaf="True"></node>
+<node gid="269" id="15" text="Guadeloupe" label="Guadeloupe" nosuffix="Guadeloupe" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="ARG1" ></edge>
+<edge head="0" tail="8" label="ARG2" ></edge>
+<edge head="0" tail="9" label="time" ></edge>
+<edge head="1" tail="2" label="op1" ></edge>
+<edge head="1" tail="5" label="op2" ></edge>
+<edge head="2" tail="3" label="ARG1" ></edge>
+<edge head="3" tail="4" label="name" ></edge>
+<edge head="4" tail="13" label="op1" ></edge>
+<edge head="4" tail="14" label="op2" ></edge>
+<edge head="5" tail="6" label="mod" ></edge>
+<edge head="6" tail="7" label="name" ></edge>
+<edge head="7" tail="15" label="op1" ></edge>
+<edge head="9" tail="10" label="op1" ></edge>
+<edge head="10" tail="11" label="ARG1" ></edge>
+<edge head="11" tail="12" label="ARG1-of" ></edge>
+</edges>
+</graph>
+<graph id="18">
+<nodes>
+<node gid="270" id="0" text="and" label="x5" nosuffix="and" isleaf="False"></node>
+<node gid="271" id="1" text="evacuate" label="x2" nosuffix="evacuate" isleaf="False"></node>
+<node gid="272" id="2" text="country" label="x1" nosuffix="country" isleaf="False"></node>
+<node gid="273" id="3" text="name" label="n" nosuffix="name" isleaf="False"></node>
+<node gid="274" id="4" text="72,000" label="x3" nosuffix="72,000" isleaf="True"></node>
+<node gid="275" id="5" text="stay-01" label="x7" nosuffix="stay" isleaf="False"></node>
+<node gid="276" id="6" text="person" label="x6" nosuffix="person" isleaf="False"></node>
+<node gid="277" id="7" text="tour-01" label="t" nosuffix="tour" isleaf="True"></node>
+<node gid="278" id="8" text="away" label="x8" nosuffix="away" isleaf="True"></node>
+<node gid="279" id="9" text="Guadeloupe" label="Guadeloupe" nosuffix="Guadeloupe" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="op1" ></edge>
+<edge head="0" tail="5" label="op2" ></edge>
+<edge head="1" tail="2" label="ARG0" ></edge>
+<edge head="1" tail="4" label="ARG1" ></edge>
+<edge head="2" tail="3" label="name" ></edge>
+<edge head="3" tail="9" label="op1" ></edge>
+<edge head="5" tail="2" label="ARG0" ></edge>
+<edge head="5" tail="6" label="ARG1" ></edge>
+<edge head="5" tail="8" label="direction" ></edge>
+<edge head="6" tail="7" label="ARG0-of" ></edge>
+</edges>
+</graph>
+<graph id="19">
+<nodes>
+<node gid="280" id="0" text="crisis" label="x4" nosuffix="crisis" isleaf="False"></node>
+<node gid="281" id="1" text="only" label="x3" nosuffix="only" isleaf="True"></node>
+<node gid="282" id="2" text="hit-01" label="x6" nosuffix="hit" isleaf="False"></node>
+<node gid="283" id="3" text="island" label="x9" nosuffix="island" isleaf="False"></node>
+<node gid="284" id="4" text="country" label="x8" nosuffix="country" isleaf="False"></node>
+<node gid="285" id="5" text="name" label="n" nosuffix="name" isleaf="False"></node>
+<node gid="286" id="6" text="sphere" label="x14" nosuffix="sphere" isleaf="False"></node>
+<node gid="287" id="7" text="economy" label="x13" nosuffix="economy" isleaf="True"></node>
+<node gid="288" id="8" text="Caribbean" label="Caribbean" nosuffix="Caribbean" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="mod" ></edge>
+<edge head="0" tail="2" label="ARG1-of" ></edge>
+<edge head="0" tail="6" label="location" ></edge>
+<edge head="2" tail="3" label="ARG1" ></edge>
+<edge head="3" tail="4" label="mod" ></edge>
+<edge head="4" tail="5" label="name" ></edge>
+<edge head="5" tail="8" label="op1" ></edge>
+<edge head="6" tail="7" label="mod" ></edge>
+</edges>
+</graph>
+<graph id="20">
+<nodes>
+<node gid="289" id="0" text="blame-01" label="x2" nosuffix="blame" isleaf="False"></node>
+<node gid="290" id="1" text="have-org-role-91" label="x1" nosuffix="have" isleaf="False"></node>
+<node gid="291" id="2" text="scientist" label="s" nosuffix="scientist" isleaf="True"></node>
+<node gid="292" id="3" text="fiasco" label="x4" nosuffix="fiasco" isleaf="True"></node>
+<node gid="293" id="4" text="data" label="x7" nosuffix="data" isleaf="False"></node>
+<node gid="294" id="5" text="suffice-01" label="x6" nosuffix="suffice" isleaf="False"></node>
+<node gid="295" id="6" text="-" label="-" nosuffix="" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="ARG0" ></edge>
+<edge head="0" tail="3" label="ARG2" ></edge>
+<edge head="0" tail="4" label="ARG2" ></edge>
+<edge head="1" tail="2" label="ARG2" ></edge>
+<edge head="4" tail="5" label="ARG0-of" ></edge>
+<edge head="5" tail="6" label="polarity" ></edge>
+</edges>
+</graph>
+<graph id="21">
+<nodes>
+<node gid="296" id="0" text="write-01" label="x31" nosuffix="write" isleaf="False"></node>
+<node gid="297" id="1" text="mistake-01" label="x28" nosuffix="mistake" isleaf="False"></node>
+<node gid="298" id="2" text="identify-02" label="x3" nosuffix="identify" isleaf="False"></node>
+<node gid="299" id="3" text="glass" label="x7" nosuffix="glass" isleaf="False"></node>
+<node gid="300" id="4" text="fresh" label="x5" nosuffix="fresh" isleaf="True"></node>
+<node gid="301" id="5" text="volcanic" label="x6" nosuffix="volcanic" isleaf="True"></node>
+<node gid="302" id="6" text="name" label="x11" nosuffix="name" isleaf="False"></node>
+<node gid="303" id="7" text="erupt-01" label="x10" nosuffix="erupt" isleaf="True"></node>
+<node gid="304" id="8" text="seem-01" label="x14" nosuffix="seem" isleaf="False"></node>
+<node gid="305" id="9" text="indicate-01" label="x16" nosuffix="indicate" isleaf="False"></node>
+<node gid="306" id="10" text="volcano" label="x19" nosuffix="volcano" isleaf="False"></node>
+<node gid="307" id="11" text="erupt-01" label="x23" nosuffix="erupt" isleaf="False"></node>
+<node gid="308" id="12" text="violent" label="x24" nosuffix="violent" isleaf="True"></node>
+<node gid="309" id="13" text="newspaper" label="x32" nosuffix="newspaper" isleaf="False"></node>
+<node gid="310" id="14" text="name" label="n" nosuffix="name" isleaf="False"></node>
+<node gid="311" id="15" text="volcanologist" label="x36" nosuffix="volcanologist" isleaf="False"></node>
+<node gid="312" id="16" text="government-organization" label="x39" nosuffix="government" isleaf="False"></node>
+<node gid="313" id="17" text="name" label="n1" nosuffix="name" isleaf="False"></node>
+<node gid="314" id="18" text="incident" label="x44" nosuffix="incident" isleaf="True"></node>
+<node gid="315" id="19" text="ash" label="ash" nosuffix="ash" isleaf="True"></node>
+<node gid="316" id="20" text="Richard" label="Richard" nosuffix="Richard" isleaf="True"></node>
+<node gid="317" id="21" text="Fiske" label="Fiske" nosuffix="Fiske" isleaf="True"></node>
+<node gid="318" id="22" text="Smithsonian" label="Smithsonian" nosuffix="Smithsonian" isleaf="True"></node>
+<node gid="319" id="23" text="Institution" label="Institution" nosuffix="Institution" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="ARG1" ></edge>
+<edge head="0" tail="13" label="ARG0" ></edge>
+<edge head="0" tail="18" label="medium" ></edge>
+<edge head="1" tail="2" label="ARG0" ></edge>
+<edge head="2" tail="3" label="ARG1" ></edge>
+<edge head="2" tail="6" label="name" ></edge>
+<edge head="2" tail="8" label="ARG0" ></edge>
+<edge head="3" tail="4" label="mod" ></edge>
+<edge head="3" tail="5" label="mod" ></edge>
+<edge head="6" tail="19" label="op1" ></edge>
+<edge head="6" tail="7" label="ARG1-of" ></edge>
+<edge head="8" tail="9" label="ARG1" ></edge>
+<edge head="9" tail="10" label="ARG1" ></edge>
+<edge head="10" tail="11" label="ARG1-of" ></edge>
+<edge head="11" tail="12" label="manner" ></edge>
+<edge head="13" tail="14" label="name" ></edge>
+<edge head="13" tail="15" label="ARG0-of" ></edge>
+<edge head="14" tail="20" label="op1" ></edge>
+<edge head="14" tail="21" label="op2" ></edge>
+<edge head="15" tail="16" label="location" ></edge>
+<edge head="16" tail="17" label="name" ></edge>
+<edge head="17" tail="22" label="op1" ></edge>
+<edge head="17" tail="23" label="op2" ></edge>
+</edges>
+</graph>
+<graph id="22">
+<nodes>
+<node gid="320" id="0" text="use-01" label="x3" nosuffix="use" isleaf="False"></node>
+<node gid="321" id="1" text="volcanologist" label="x1" nosuffix="volcanologist" isleaf="True"></node>
+<node gid="322" id="2" text="today" label="x2" nosuffix="today" isleaf="True"></node>
+<node gid="323" id="3" text="technique" label="x6" nosuffix="technique" isleaf="False"></node>
+<node gid="324" id="4" text="sophisticated" label="x5" nosuffix="sophisticated" isleaf="False"></node>
+<node gid="325" id="5" text="more" label="x4" nosuffix="more" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="ARG0" ></edge>
+<edge head="0" tail="2" label="time" ></edge>
+<edge head="0" tail="3" label="ARG1" ></edge>
+<edge head="3" tail="4" label="mod" ></edge>
+<edge head="4" tail="5" label="degree" ></edge>
+</edges>
+</graph>
+<graph id="23">
+<nodes>
+<node gid="326" id="0" text="maintain-01" label="x4" nosuffix="maintain" isleaf="False"></node>
+<node gid="327" id="1" text="database" label="x2" nosuffix="database" isleaf="False"></node>
+<node gid="328" id="2" text="detail-01" label="x1" nosuffix="detail" isleaf="True"></node>
+<node gid="329" id="3" text="threaten-01" label="xap0" nosuffix="threaten" isleaf="False"></node>
+<node gid="330" id="4" text="all" label="x6" nosuffix="all" isleaf="True"></node>
+<node gid="331" id="5" text="life" label="x7" nosuffix="life" isleaf="True"></node>
+<node gid="332" id="6" text="around" label="x9" nosuffix="around" isleaf="False"></node>
+<node gid="333" id="7" text="world" label="x11" nosuffix="world" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="ARG1" ></edge>
+<edge head="0" tail="3" label="ARG1" ></edge>
+<edge head="1" tail="2" label="ARG1-of" ></edge>
+<edge head="3" tail="4" label="quant" ></edge>
+<edge head="3" tail="5" label="ARG2" ></edge>
+<edge head="3" tail="6" label="location" ></edge>
+<edge head="6" tail="7" label="op1" ></edge>
+</edges>
+</graph>
+<graph id="24">
+<nodes>
+<node gid="334" id="0" text="have-manner-91" label="xap0" nosuffix="have" isleaf="False"></node>
+<node gid="335" id="1" text="measure-01" label="x4" nosuffix="measure" isleaf="False"></node>
+<node gid="336" id="2" text="thing" label="x2" nosuffix="thing" isleaf="False"></node>
+<node gid="337" id="3" text="monitor-01" label="m" nosuffix="monitor" isleaf="True"></node>
+<node gid="338" id="4" text="high-frequency" label="x1" nosuffix="high" isleaf="True"></node>
+<node gid="339" id="5" text="name" label="x6" nosuffix="name" isleaf="False"></node>
+<node gid="340" id="6" text="debris" label="x5" nosuffix="debris" isleaf="True"></node>
+<node gid="341" id="7" text="now" label="x8" nosuffix="now" isleaf="True"></node>
+<node gid="342" id="8" text="flows" label="flows" nosuffix="flows" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="ARG1" ></edge>
+<edge head="1" tail="2" label="ARG0" ></edge>
+<edge head="1" tail="5" label="ARG1" ></edge>
+<edge head="1" tail="7" label="time" ></edge>
+<edge head="2" tail="3" label="instrument-of" ></edge>
+<edge head="2" tail="4" label="ARG1-of" ></edge>
+<edge head="5" tail="8" label="op1" ></edge>
+<edge head="5" tail="6" label="mod" ></edge>
+</edges>
+</graph>
+<graph id="25">
+<nodes>
+<node gid="343" id="0" text="track-01" label="x12" nosuffix="track" isleaf="False"></node>
+<node gid="344" id="1" text="earthquake" label="x1" nosuffix="earthquake" isleaf="False"></node>
+<node gid="345" id="2" text="warn-01" label="x6" nosuffix="warn" isleaf="False"></node>
+<node gid="346" id="3" text="often" label="x3" nosuffix="often" isleaf="True"></node>
+<node gid="347" id="4" text="activity" label="x9" nosuffix="activity" isleaf="False"></node>
+<node gid="348" id="5" text="volcanic" label="x8" nosuffix="volcanic" isleaf="True"></node>
+<node gid="349" id="6" text="increase-01" label="x14" nosuffix="increase" isleaf="False"></node>
+<node gid="350" id="7" text="accuracy" label="x15" nosuffix="accuracy" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="ARG1" ></edge>
+<edge head="0" tail="6" label="ARG2" ></edge>
+<edge head="1" tail="2" label="ARG0-of" ></edge>
+<edge head="2" tail="3" label="frequency" ></edge>
+<edge head="2" tail="4" label="ARG1" ></edge>
+<edge head="4" tail="5" label="mod" ></edge>
+<edge head="6" tail="7" label="ARG1" ></edge>
+</edges>
+</graph>
+<graph id="26">
+<nodes>
+<node gid="351" id="0" text="and" label="x1" nosuffix="and" isleaf="False"></node>
+<node gid="352" id="1" text="monitor-01" label="x14" nosuffix="monitor" isleaf="False"></node>
+<node gid="353" id="2" text="change-01" label="x2" nosuffix="change" isleaf="False"></node>
+<node gid="354" id="3" text="and" label="x9" nosuffix="and" isleaf="False"></node>
+<node gid="355" id="4" text="compose-01" label="x5" nosuffix="compose" isleaf="False"></node>
+<node gid="356" id="5" text="gas" label="x4" nosuffix="gas" isleaf="True"></node>
+<node gid="357" id="6" text="conductivity" label="x8" nosuffix="conductivity" isleaf="False"></node>
+<node gid="358" id="7" text="electricity" label="x7" nosuffix="electricity" isleaf="True"></node>
+<node gid="359" id="8" text="clue" label="x11" nosuffix="clue" isleaf="False"></node>
+<node gid="360" id="9" text="other" label="x10" nosuffix="other" isleaf="True"></node>
+<node gid="361" id="10" text="careful" label="x13" nosuffix="careful" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="op2" ></edge>
+<edge head="1" tail="2" label="ARG1" ></edge>
+<edge head="1" tail="10" label="manner" ></edge>
+<edge head="2" tail="3" label="location" ></edge>
+<edge head="3" tail="4" label="op1" ></edge>
+<edge head="3" tail="6" label="op2" ></edge>
+<edge head="3" tail="8" label="op2" ></edge>
+<edge head="4" tail="5" label="mod" ></edge>
+<edge head="6" tail="7" label="mod" ></edge>
+<edge head="8" tail="9" label="mod" ></edge>
+</edges>
+</graph>
+<graph id="27">
+<nodes>
+<node gid="362" id="0" text="possible" label="x7" nosuffix="possible" isleaf="False"></node>
+<node gid="363" id="1" text="now" label="x8" nosuffix="now" isleaf="True"></node>
+<node gid="364" id="2" text="forecast-01" label="x10" nosuffix="forecast" isleaf="False"></node>
+<node gid="365" id="3" text="result-01" label="x3" nosuffix="result" isleaf="True"></node>
+<node gid="366" id="4" text="activity" label="x6" nosuffix="activity" isleaf="False"></node>
+<node gid="367" id="5" text="volcanic" label="x5" nosuffix="volcanic" isleaf="True"></node>
+<node gid="368" id="6" text="accuracy" label="x13" nosuffix="accuracy" isleaf="False"></node>
+<node gid="369" id="7" text="substantial" label="x12" nosuffix="substantial" isleaf="True"></node>
+<node gid="370" id="8" text="pinpoint" label="x16" nosuffix="pinpoint" isleaf="False"></node>
+<node gid="371" id="9" text="often" label="x15" nosuffix="often" isleaf="True"></node>
+<node gid="372" id="10" text="eruption" label="x18" nosuffix="eruption" isleaf="True"></node>
+<node gid="373" id="11" text="within" label="x20" nosuffix="within" isleaf="False"></node>
+<node gid="374" id="12" text="temporal-quantity" label="x21" nosuffix="temporal" isleaf="False"></node>
+<node gid="375" id="13" text="day" label="d" nosuffix="day" isleaf="True"></node>
+<node gid="376" id="14" text="even" label="x23" nosuffix="even" isleaf="True"></node>
+<node gid="377" id="15" text="temporal-quantity" label="x24" nosuffix="temporal" isleaf="False"></node>
+<node gid="378" id="16" text="hour" label="h" nosuffix="hour" isleaf="True"></node>
+<node gid="379" id="17" text="occur-01" label="x32" nosuffix="occur" isleaf="False"></node>
+<node gid="380" id="18" text="null_tag" label="x29" nosuffix="null_tag" isleaf="True"></node>
+<node gid="381" id="19" text="actual" label="x31" nosuffix="actual" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="time" ></edge>
+<edge head="0" tail="2" label="domain" ></edge>
+<edge head="2" tail="3" label="ARG2" ></edge>
+<edge head="2" tail="4" label="ARG1" ></edge>
+<edge head="2" tail="6" label="ARG1" ></edge>
+<edge head="2" tail="8" label="ARG1" ></edge>
+<edge head="4" tail="5" label="mod" ></edge>
+<edge head="6" tail="7" label="mod" ></edge>
+<edge head="8" tail="9" label="frequency" ></edge>
+<edge head="8" tail="10" label="ARG1" ></edge>
+<edge head="8" tail="11" label="time" ></edge>
+<edge head="8" tail="15" label="ARG1" ></edge>
+<edge head="8" tail="17" label="ARG1" ></edge>
+<edge head="11" tail="12" label="op1" ></edge>
+<edge head="11" tail="14" label="op1" ></edge>
+<edge head="12" tail="13" label="unit" ></edge>
+<edge head="15" tail="16" label="unit" ></edge>
+<edge head="17" tail="18" label="null_edge" ></edge>
+<edge head="17" tail="19" label="mod" ></edge>
+</edges>
+</graph>
+<graph id="28">
+<nodes>
+<node gid="382" id="0" text="provide-01" label="x21" nosuffix="provide" isleaf="False"></node>
+<node gid="383" id="1" text="and" label="x8" nosuffix="and" isleaf="False"></node>
+<node gid="384" id="2" text="erupt-01" label="x3" nosuffix="erupt" isleaf="False"></node>
+<node gid="385" id="3" text="redoubt" label="x2" nosuffix="redoubt" isleaf="True"></node>
+<node gid="386" id="4" text="state" label="x5" nosuffix="state" isleaf="False"></node>
+<node gid="387" id="5" text="name" label="n" nosuffix="name" isleaf="False"></node>
+<node gid="388" id="6" text="date-entity" label="x7" nosuffix="date" isleaf="False"></node>
+<node gid="389" id="7" text="blow-01" label="x10" nosuffix="blow" isleaf="False"></node>
+<node gid="390" id="8" text="person" label="x9" nosuffix="person" isleaf="False"></node>
+<node gid="391" id="9" text="name" label="n1" nosuffix="name" isleaf="False"></node>
+<node gid="392" id="10" text="top" label="x13" nosuffix="top" isleaf="True"></node>
+<node gid="393" id="11" text="country" label="x16" nosuffix="country" isleaf="False"></node>
+<node gid="394" id="12" text="name" label="n2" nosuffix="name" isleaf="False"></node>
+<node gid="395" id="13" text="date-entity" label="x18" nosuffix="date" isleaf="False"></node>
+<node gid="396" id="14" text="volcanologist" label="x20" nosuffix="volcanologist" isleaf="True"></node>
+<node gid="397" id="15" text="information" label="x23" nosuffix="information" isleaf="False"></node>
+<node gid="398" id="16" text="important" label="x22" nosuffix="important" isleaf="True"></node>
+<node gid="399" id="17" text="timing" label="x29" nosuffix="timing" isleaf="False"></node>
+<node gid="400" id="18" text="event" label="x32" nosuffix="event" isleaf="True"></node>
+<node gid="401" id="19" text="direction" label="x38" nosuffix="direction" isleaf="False"></node>
+<node gid="402" id="20" text="and" label="x42" nosuffix="and" isleaf="False"></node>
+<node gid="403" id="21" text="name" label="x41" nosuffix="name" isleaf="False"></node>
+<node gid="404" id="22" text="debris" label="x40" nosuffix="debris" isleaf="True"></node>
+<node gid="405" id="23" text="bloom" label="x44" nosuffix="bloom" isleaf="False"></node>
+<node gid="406" id="24" text="name" label="x43" nosuffix="name" isleaf="False"></node>
+<node gid="407" id="25" text="cloud" label="x47" nosuffix="cloud" isleaf="False"></node>
+<node gid="408" id="26" text="vast" label="x46" nosuffix="vast" isleaf="True"></node>
+<node gid="409" id="27" text="form-02" label="x48" nosuffix="form" isleaf="False"></node>
+<node gid="410" id="28" text="or" label="x54" nosuffix="or" isleaf="False"></node>
+<node gid="411" id="29" text="lava" label="x53" nosuffix="lava" isleaf="True"></node>
+<node gid="412" id="30" text="rock" label="x55" nosuffix="rock" isleaf="True"></node>
+<node gid="413" id="31" text="throw-01" label="x57" nosuffix="throw" isleaf="False"></node>
+<node gid="414" id="32" text="piece" label="x51" nosuffix="piece" isleaf="False"></node>
+<node gid="415" id="33" text="tiny" label="x50" nosuffix="tiny" isleaf="True"></node>
+<node gid="416" id="34" text="air" label="x60" nosuffix="air" isleaf="True"></node>
+<node gid="417" id="35" text="Alaska" label="Alaska" nosuffix="Alaska" isleaf="True"></node>
+<node gid="418" id="36" text="1989" label="1989" nosuffix="1989" isleaf="True"></node>
+<node gid="419" id="37" text="Pinatubo" label="Pinatubo" nosuffix="Pinatubo" isleaf="True"></node>
+<node gid="420" id="38" text="Philippines" label="Philippines" nosuffix="Philippines" isleaf="True"></node>
+<node gid="421" id="39" text="1991" label="1991" nosuffix="1991" isleaf="True"></node>
+<node gid="422" id="40" text="flows" label="flows" nosuffix="flows" isleaf="True"></node>
+<node gid="423" id="41" text="ash" label="ash" nosuffix="ash" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="ARG1" ></edge>
+<edge head="0" tail="14" label="ARG0" ></edge>
+<edge head="0" tail="15" label="ARG1" ></edge>
+<edge head="1" tail="2" label="op1" ></edge>
+<edge head="1" tail="7" label="op2" ></edge>
+<edge head="2" tail="3" label="ARG0" ></edge>
+<edge head="2" tail="4" label="location" ></edge>
+<edge head="2" tail="6" label="time" ></edge>
+<edge head="4" tail="5" label="name" ></edge>
+<edge head="5" tail="35" label="op1" ></edge>
+<edge head="6" tail="36" label="year" ></edge>
+<edge head="7" tail="3" label="ARG0" ></edge>
+<edge head="7" tail="8" label="ARG0" ></edge>
+<edge head="7" tail="10" label="ARG1" ></edge>
+<edge head="7" tail="11" label="location" ></edge>
+<edge head="7" tail="13" label="time" ></edge>
+<edge head="8" tail="9" label="name" ></edge>
+<edge head="9" tail="37" label="op1" ></edge>
+<edge head="11" tail="12" label="name" ></edge>
+<edge head="12" tail="38" label="op1" ></edge>
+<edge head="13" tail="39" label="year" ></edge>
+<edge head="15" tail="16" label="mod" ></edge>
+<edge head="15" tail="17" label="topic" ></edge>
+<edge head="17" tail="18" label="ARG1" ></edge>
+<edge head="17" tail="19" label="ARG1" ></edge>
+<edge head="19" tail="20" label="ARG1" ></edge>
+<edge head="20" tail="21" label="op1" ></edge>
+<edge head="20" tail="23" label="op2" ></edge>
+<edge head="20" tail="25" label="op2" ></edge>
+<edge head="21" tail="40" label="op1" ></edge>
+<edge head="21" tail="22" label="mod" ></edge>
+<edge head="23" tail="24" label="name" ></edge>
+<edge head="24" tail="41" label="op1" ></edge>
+<edge head="25" tail="26" label="mod" ></edge>
+<edge head="25" tail="27" label="ARG1-of" ></edge>
+<edge head="27" tail="28" label="ARG0" ></edge>
+<edge head="27" tail="31" label="time" ></edge>
+<edge head="28" tail="29" label="op1" ></edge>
+<edge head="28" tail="30" label="op2" ></edge>
+<edge head="31" tail="32" label="ARG1" ></edge>
+<edge head="31" tail="34" label="ARG2" ></edge>
+<edge head="32" tail="33" label="mod" ></edge>
+</edges>
+</graph>
+<graph id="29">
+<nodes>
+<node gid="424" id="0" text="say-01" label="x33" nosuffix="say" isleaf="False"></node>
+<node gid="425" id="1" text="use-01" label="x3" nosuffix="use" isleaf="False"></node>
+<node gid="426" id="2" text="we" label="x2" nosuffix="we" isleaf="True"></node>
+<node gid="427" id="3" text="information" label="x4" nosuffix="information" isleaf="False"></node>
+<node gid="428" id="4" text="bloom" label="x8" nosuffix="bloom" isleaf="False"></node>
+<node gid="429" id="5" text="name" label="x7" nosuffix="name" isleaf="False"></node>
+<node gid="430" id="6" text="eruption" label="x13" nosuffix="eruption" isleaf="False"></node>
+<node gid="431" id="7" text="country" label="x12" nosuffix="country" isleaf="False"></node>
+<node gid="432" id="8" text="name" label="n1" nosuffix="name" isleaf="False"></node>
+<node gid="433" id="9" text="know-01" label="x16" nosuffix="know" isleaf="False"></node>
+<node gid="434" id="10" text="and" label="x24" nosuffix="and" isleaf="False"></node>
+<node gid="435" id="11" text="stay-01" label="x20" nosuffix="stay" isleaf="False"></node>
+<node gid="436" id="12" text="area" label="x18" nosuffix="area" isleaf="True"></node>
+<node gid="437" id="13" text="away" label="x21" nosuffix="away" isleaf="True"></node>
+<node gid="438" id="14" text="safe-41" label="x27" nosuffix="safe" isleaf="False"></node>
+<node gid="439" id="15" text="fly-01" label="x29" nosuffix="fly" isleaf="True"></node>
+<node gid="440" id="16" text="newspaper" label="x34" nosuffix="newspaper" isleaf="False"></node>
+<node gid="441" id="17" text="name" label="n" nosuffix="name" isleaf="False"></node>
+<node gid="442" id="18" text="have-org-role-91" label="x38" nosuffix="have" isleaf="False"></node>
+<node gid="443" id="19" text="spokesman" label="s" nosuffix="spokesman" isleaf="True"></node>
+<node gid="444" id="20" text="air" label="x41" nosuffix="air" isleaf="False"></node>
+<node gid="445" id="21" text="state" label="x40" nosuffix="state" isleaf="False"></node>
+<node gid="446" id="22" text="name" label="n2" nosuffix="name" isleaf="False"></node>
+<node gid="447" id="23" text="ash" label="ash" nosuffix="ash" isleaf="True"></node>
+<node gid="448" id="24" text="Redoubt" label="Redoubt" nosuffix="Redoubt" isleaf="True"></node>
+<node gid="449" id="25" text="Greg" label="Greg" nosuffix="Greg" isleaf="True"></node>
+<node gid="450" id="26" text="Witter" label="Witter" nosuffix="Witter" isleaf="True"></node>
+<node gid="451" id="27" text="Alaska" label="Alaska" nosuffix="Alaska" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="ARG1" ></edge>
+<edge head="0" tail="16" label="ARG0" ></edge>
+<edge head="1" tail="2" label="ARG0" ></edge>
+<edge head="1" tail="3" label="ARG1" ></edge>
+<edge head="1" tail="9" label="ARG2" ></edge>
+<edge head="3" tail="4" label="topic" ></edge>
+<edge head="3" tail="6" label="topic" ></edge>
+<edge head="4" tail="5" label="name" ></edge>
+<edge head="5" tail="23" label="op1" ></edge>
+<edge head="6" tail="7" label="mod" ></edge>
+<edge head="7" tail="8" label="name" ></edge>
+<edge head="8" tail="24" label="op1" ></edge>
+<edge head="9" tail="10" label="ARG1" ></edge>
+<edge head="10" tail="11" label="op1" ></edge>
+<edge head="10" tail="14" label="op2" ></edge>
+<edge head="11" tail="12" label="ARG1" ></edge>
+<edge head="11" tail="13" label="direction" ></edge>
+<edge head="14" tail="15" label="ARG1" ></edge>
+<edge head="16" tail="17" label="name" ></edge>
+<edge head="16" tail="18" label="ARG0-of" ></edge>
+<edge head="17" tail="25" label="op1" ></edge>
+<edge head="17" tail="26" label="op2" ></edge>
+<edge head="18" tail="19" label="ARG2" ></edge>
+<edge head="18" tail="20" label="ARG1" ></edge>
+<edge head="20" tail="21" label="mod" ></edge>
+<edge head="21" tail="22" label="name" ></edge>
+<edge head="22" tail="27" label="op1" ></edge>
+</edges>
+</graph>
+<graph id="30">
+<nodes>
+<node gid="452" id="0" text="possible" label="x2" nosuffix="possible" isleaf="False"></node>
+<node gid="453" id="1" text="also" label="x3" nosuffix="also" isleaf="True"></node>
+<node gid="454" id="2" text="take-01" label="x4" nosuffix="take" isleaf="False"></node>
+<node gid="455" id="3" text="company" label="x1" nosuffix="company" isleaf="True"></node>
+<node gid="456" id="4" text="forecast-01" label="x8" nosuffix="forecast" isleaf="False"></node>
+<node gid="457" id="5" text="eruption" label="x7" nosuffix="eruption" isleaf="True"></node>
+<node gid="458" id="6" text="and" label="x18" nosuffix="and" isleaf="False"></node>
+<node gid="459" id="7" text="move-01" label="x10" nosuffix="move" isleaf="False"></node>
+<node gid="460" id="8" text="equipment" label="x12" nosuffix="equipment" isleaf="False"></node>
+<node gid="461" id="9" text="value-01" label="x11" nosuffix="value" isleaf="True"></node>
+<node gid="462" id="10" text="out" label="x13" nosuffix="out" isleaf="False"></node>
+<node gid="463" id="11" text="way" label="x16" nosuffix="way" isleaf="True"></node>
+<node gid="464" id="12" text="evacuate" label="x19" nosuffix="evacuate" isleaf="False"></node>
+<node gid="465" id="13" text="person" label="x20" nosuffix="person" isleaf="False"></node>
+<node gid="466" id="14" text="employ-01" label="e" nosuffix="employ" isleaf="True"></node>
+<node gid="467" id="15" text="area" label="x23" nosuffix="area" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="mod" ></edge>
+<edge head="0" tail="2" label="domain" ></edge>
+<edge head="2" tail="3" label="ARG0" ></edge>
+<edge head="2" tail="4" label="destination" ></edge>
+<edge head="2" tail="6" label="purpose" ></edge>
+<edge head="4" tail="5" label="ARG1" ></edge>
+<edge head="6" tail="7" label="op1" ></edge>
+<edge head="6" tail="12" label="op2" ></edge>
+<edge head="7" tail="8" label="ARG1" ></edge>
+<edge head="7" tail="10" label="ARG2" ></edge>
+<edge head="8" tail="9" label="mod" ></edge>
+<edge head="10" tail="11" label="op1" ></edge>
+<edge head="12" tail="13" label="ARG1" ></edge>
+<edge head="12" tail="15" label="ARG2" ></edge>
+<edge head="13" tail="14" label="ARG1-of" ></edge>
+</edges>
+</graph>
+<graph id="31">
+<nodes>
+<node gid="468" id="0" text="say-01" label="x21" nosuffix="say" isleaf="False"></node>
+<node gid="469" id="1" text="possible" label="x6" nosuffix="possible" isleaf="False"></node>
+<node gid="470" id="2" text="want-01" label="x7" nosuffix="want" isleaf="False"></node>
+<node gid="471" id="3" text="business" label="x2" nosuffix="business" isleaf="False"></node>
+<node gid="472" id="4" text="electronic" label="x5" nosuffix="electronic" isleaf="False"></node>
+<node gid="473" id="5" text="sensitive" label="x4" nosuffix="sensitive" isleaf="True"></node>
+<node gid="474" id="6" text="shut-05" label="x9" nosuffix="shut" isleaf="False"></node>
+<node gid="475" id="7" text="system" label="x14" nosuffix="system" isleaf="False"></node>
+<node gid="476" id="8" text="company" label="x11" nosuffix="company" isleaf="False"></node>
+<node gid="477" id="9" text="air" label="x12" nosuffix="air" isleaf="True"></node>
+<node gid="478" id="10" text="filtration" label="x13" nosuffix="filtration" isleaf="True"></node>
+<node gid="479" id="11" text="bloom" label="x18" nosuffix="bloom" isleaf="False"></node>
+<node gid="480" id="12" text="name" label="x17" nosuffix="name" isleaf="False"></node>
+<node gid="481" id="13" text="newspaper" label="x22" nosuffix="newspaper" isleaf="False"></node>
+<node gid="482" id="14" text="name" label="n" nosuffix="name" isleaf="False"></node>
+<node gid="483" id="15" text="scientist" label="x27" nosuffix="scientist" isleaf="False"></node>
+<node gid="484" id="16" text="public" label="x25" nosuffix="public" isleaf="True"></node>
+<node gid="485" id="17" text="information" label="x26" nosuffix="information" isleaf="True"></node>
+<node gid="486" id="18" text="survey-01" label="x32" nosuffix="survey" isleaf="False"></node>
+<node gid="487" id="19" text="organization" label="x31" nosuffix="organization" isleaf="False"></node>
+<node gid="488" id="20" text="name" label="n1" nosuffix="name" isleaf="False"></node>
+<node gid="489" id="21" text="ash" label="ash" nosuffix="ash" isleaf="True"></node>
+<node gid="490" id="22" text="Steven" label="Steven" nosuffix="Steven" isleaf="True"></node>
+<node gid="491" id="23" text="Brantley" label="Brantley" nosuffix="Brantley" isleaf="True"></node>
+<node gid="492" id="24" text="Geological" label="Geological" nosuffix="Geological" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="ARG1" ></edge>
+<edge head="0" tail="13" label="ARG0" ></edge>
+<edge head="1" tail="2" label="domain" ></edge>
+<edge head="2" tail="3" label="ARG0" ></edge>
+<edge head="2" tail="6" label="ARG1" ></edge>
+<edge head="3" tail="4" label="mod" ></edge>
+<edge head="4" tail="5" label="mod" ></edge>
+<edge head="6" tail="3" label="ARG0" ></edge>
+<edge head="6" tail="7" label="ARG1" ></edge>
+<edge head="6" tail="11" label="time" ></edge>
+<edge head="7" tail="8" label="poss" ></edge>
+<edge head="7" tail="10" label="mod" ></edge>
+<edge head="8" tail="9" label="mod" ></edge>
+<edge head="11" tail="12" label="name" ></edge>
+<edge head="12" tail="21" label="op1" ></edge>
+<edge head="13" tail="14" label="name" ></edge>
+<edge head="13" tail="15" label="ARG0-of" ></edge>
+<edge head="14" tail="22" label="op1" ></edge>
+<edge head="14" tail="23" label="op2" ></edge>
+<edge head="15" tail="16" label="mod" ></edge>
+<edge head="15" tail="17" label="mod" ></edge>
+<edge head="15" tail="18" label="ARG1" ></edge>
+<edge head="18" tail="19" label="mod" ></edge>
+<edge head="19" tail="20" label="name" ></edge>
+<edge head="20" tail="24" label="op1" ></edge>
+</edges>
+</graph>
+<graph id="32">
+<nodes>
+<node gid="493" id="0" text="possible" label="x11" nosuffix="possible" isleaf="False"></node>
+<node gid="494" id="1" text="wreak-01" label="x12" nosuffix="wreak" isleaf="False"></node>
+<node gid="495" id="2" text="drift-01" label="x5" nosuffix="drift" isleaf="False"></node>
+<node gid="496" id="3" text="bloom" label="x3" nosuffix="bloom" isleaf="False"></node>
+<node gid="497" id="4" text="name" label="x2" nosuffix="name" isleaf="False"></node>
+<node gid="498" id="5" text="often" label="x4" nosuffix="often" isleaf="True"></node>
+<node gid="499" id="6" text="multiple" label="xap0" nosuffix="multiple" isleaf="False"></node>
+<node gid="500" id="7" text="distance-quantity" label="x8" nosuffix="distance" isleaf="False"></node>
+<node gid="501" id="8" text="mile" label="m" nosuffix="mile" isleaf="True"></node>
+<node gid="502" id="9" text="company" label="x10" nosuffix="company" isleaf="True"></node>
+<node gid="503" id="10" text="havoc" label="x13" nosuffix="havoc" isleaf="True"></node>
+<node gid="504" id="11" text="property" label="x15" nosuffix="property" isleaf="True"></node>
+<node gid="505" id="12" text="beyond" label="x17" nosuffix="beyond" isleaf="False"></node>
+<node gid="506" id="13" text="zone" label="x20" nosuffix="zone" isleaf="False"></node>
+<node gid="507" id="14" text="eruption" label="x22" nosuffix="eruption" isleaf="True"></node>
+<node gid="508" id="15" text="threaten-01" label="xap1" nosuffix="threaten" isleaf="False"></node>
+<node gid="509" id="16" text="life" label="x19" nosuffix="life" isleaf="True"></node>
+<node gid="510" id="17" text="ash" label="ash" nosuffix="ash" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="domain" ></edge>
+<edge head="1" tail="2" label="time" ></edge>
+<edge head="1" tail="9" label="ARG0" ></edge>
+<edge head="1" tail="10" label="ARG1" ></edge>
+<edge head="1" tail="11" label="ARG1" ></edge>
+<edge head="1" tail="12" label="location" ></edge>
+<edge head="2" tail="3" label="ARG1" ></edge>
+<edge head="2" tail="5" label="frequency" ></edge>
+<edge head="2" tail="6" label="ARG1" ></edge>
+<edge head="3" tail="4" label="name" ></edge>
+<edge head="4" tail="17" label="op1" ></edge>
+<edge head="6" tail="7" label="op1" ></edge>
+<edge head="7" tail="8" label="unit" ></edge>
+<edge head="12" tail="13" label="op1" ></edge>
+<edge head="13" tail="14" label="ARG1-of" ></edge>
+<edge head="13" tail="15" label="ARG1-of" ></edge>
+<edge head="15" tail="16" label="ARG2" ></edge>
+</edges>
+</graph>
+<graph id="33">
+<nodes>
+<node gid="511" id="0" text="possible" label="x2" nosuffix="possible" isleaf="False"></node>
+<node gid="512" id="1" text="use-01" label="x5" nosuffix="use" isleaf="False"></node>
+<node gid="513" id="2" text="volcanology" label="x1" nosuffix="volcanology" isleaf="True"></node>
+<node gid="514" id="3" text="also" label="x3" nosuffix="also" isleaf="True"></node>
+<node gid="515" id="4" text="plan-01" label="x8" nosuffix="plan" isleaf="False"></node>
+<node gid="516" id="5" text="future" label="x7" nosuffix="future" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="domain" ></edge>
+<edge head="1" tail="2" label="ARG1" ></edge>
+<edge head="1" tail="3" label="mod" ></edge>
+<edge head="1" tail="4" label="ARG2" ></edge>
+<edge head="4" tail="5" label="time" ></edge>
+</edges>
+</graph>
+<graph id="34">
+<nodes>
+<node gid="517" id="0" text="wipe-02" label="x7" nosuffix="wipe" isleaf="False"></node>
+<node gid="518" id="1" text="after" label="x1" nosuffix="after" isleaf="True"></node>
+<node gid="519" id="2" text="timber" label="x5" nosuffix="timber" isleaf="False"></node>
+<node gid="520" id="3" text="much" label="x2" nosuffix="much" isleaf="True"></node>
+<node gid="521" id="4" text="country" label="x4" nosuffix="country" isleaf="False"></node>
+<node gid="522" id="5" text="name" label="n" nosuffix="name" isleaf="False"></node>
+<node gid="523" id="6" text="eruption" label="x11" nosuffix="eruption" isleaf="False"></node>
+<node gid="524" id="7" text="government-organization" label="x13" nosuffix="government" isleaf="False"></node>
+<node gid="525" id="8" text="name" label="n1" nosuffix="name" isleaf="False"></node>
+<node gid="526" id="9" text="paper" label="x18" nosuffix="paper" isleaf="True"></node>
+<node gid="527" id="10" text="consult-01" label="x21" nosuffix="consult" isleaf="False"></node>
+<node gid="528" id="11" text="organization" label="x20" nosuffix="organization" isleaf="False"></node>
+<node gid="529" id="12" text="name" label="n2" nosuffix="name" isleaf="False"></node>
+<node gid="530" id="13" text="decide-01" label="x24" nosuffix="decide" isleaf="False"></node>
+<node gid="531" id="14" text="person" label="x22" nosuffix="person" isleaf="False"></node>
+<node gid="532" id="15" text="expert-41" label="e" nosuffix="expert" isleaf="True"></node>
+<node gid="533" id="16" text="recommend-01" label="x27" nosuffix="recommend" isleaf="False"></node>
+<node gid="534" id="17" text="and" label="x30" nosuffix="and" isleaf="False"></node>
+<node gid="535" id="18" text="replant-01" label="x29" nosuffix="replant" isleaf="False"></node>
+<node gid="536" id="19" text="area" label="x26" nosuffix="area" isleaf="True"></node>
+<node gid="537" id="20" text="avoid-01" label="x32" nosuffix="avoid" isleaf="False"></node>
+<node gid="538" id="21" text="high-risk" label="x35" nosuffix="high" isleaf="False"></node>
+<node gid="539" id="22" text="too" label="x34" nosuffix="too" isleaf="True"></node>
+<node gid="540" id="23" text="Volcanology" label="Volcanology" nosuffix="Volcanology" isleaf="True"></node>
+<node gid="541" id="24" text="Mount" label="Mount" nosuffix="Mount" isleaf="True"></node>
+<node gid="542" id="25" text="St" label="St" nosuffix="St" isleaf="True"></node>
+<node gid="543" id="26" text="Helens" label="Helens" nosuffix="Helens" isleaf="True"></node>
+<node gid="544" id="27" text="Weyerhaeuser" label="Weyerhaeuser" nosuffix="Weyerhaeuser" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="time" ></edge>
+<edge head="0" tail="2" label="ARG1" ></edge>
+<edge head="0" tail="6" label="time" ></edge>
+<edge head="2" tail="3" label="quant" ></edge>
+<edge head="2" tail="4" label="mod" ></edge>
+<edge head="4" tail="5" label="name" ></edge>
+<edge head="5" tail="23" label="op1" ></edge>
+<edge head="6" tail="7" label="ARG1" ></edge>
+<edge head="7" tail="8" label="name" ></edge>
+<edge head="7" tail="9" label="mod" ></edge>
+<edge head="7" tail="10" label="ARG1-of" ></edge>
+<edge head="8" tail="24" label="op1" ></edge>
+<edge head="8" tail="25" label="op2" ></edge>
+<edge head="8" tail="26" label="op3" ></edge>
+<edge head="10" tail="11" label="ARG0" ></edge>
+<edge head="10" tail="13" label="purpose" ></edge>
+<edge head="11" tail="12" label="name" ></edge>
+<edge head="12" tail="27" label="op1" ></edge>
+<edge head="13" tail="11" label="ARG0" ></edge>
+<edge head="13" tail="14" label="ARG0" ></edge>
+<edge head="13" tail="16" label="ARG1" ></edge>
+<edge head="14" tail="15" label="ARG1-of" ></edge>
+<edge head="16" tail="17" label="ARG1" ></edge>
+<edge head="17" tail="18" label="op1" ></edge>
+<edge head="17" tail="20" label="op2" ></edge>
+<edge head="18" tail="19" label="ARG1" ></edge>
+<edge head="20" tail="21" label="manner" ></edge>
+<edge head="21" tail="22" label="degree" ></edge>
+</edges>
+</graph>
+<graph id="35">
+<nodes>
+<node gid="545" id="0" text="welcome-01" label="x4" nosuffix="welcome" isleaf="False"></node>
+<node gid="546" id="1" text="business" label="x3" nosuffix="business" isleaf="False"></node>
+<node gid="547" id="2" text="all" label="x2" nosuffix="all" isleaf="True"></node>
+<node gid="548" id="3" text="interference" label="x6" nosuffix="interference" isleaf="False"></node>
+<node gid="549" id="4" text="volcanologist" label="x8" nosuffix="volcanologist" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="ARG0" ></edge>
+<edge head="0" tail="3" label="ARG1" ></edge>
+<edge head="1" tail="2" label="quant" ></edge>
+<edge head="3" tail="4" label="ARG1" ></edge>
+</edges>
+</graph>
+<graph id="36">
+<nodes>
+<node gid="550" id="0" text="refuse-01" label="x6" nosuffix="refuse" isleaf="False"></node>
+<node gid="551" id="1" text="person" label="x4" nosuffix="person" isleaf="False"></node>
+<node gid="552" id="2" text="develop-02" label="d" nosuffix="develop" isleaf="True"></node>
+<node gid="553" id="3" text="country" label="x2" nosuffix="country" isleaf="False"></node>
+<node gid="554" id="4" text="name" label="n" nosuffix="name" isleaf="False"></node>
+<node gid="555" id="5" text="country" label="x3" nosuffix="country" isleaf="False"></node>
+<node gid="556" id="6" text="name" label="n1" nosuffix="name" isleaf="False"></node>
+<node gid="557" id="7" text="heed-01" label="x8" nosuffix="heed" isleaf="False"></node>
+<node gid="558" id="8" text="warn-01" label="x9" nosuffix="warn" isleaf="False"></node>
+<node gid="559" id="9" text="plan-01" label="x13" nosuffix="plan" isleaf="False"></node>
+<node gid="560" id="10" text="land" label="x11" nosuffix="land" isleaf="True"></node>
+<node gid="561" id="11" text="use-01" label="x12" nosuffix="use" isleaf="True"></node>
+<node gid="562" id="12" text="Long" label="Long" nosuffix="Long" isleaf="True"></node>
+<node gid="563" id="13" text="Valley" label="Valley" nosuffix="Valley" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="ARG0" ></edge>
+<edge head="0" tail="7" label="ARG1" ></edge>
+<edge head="1" tail="2" label="ARG0-of" ></edge>
+<edge head="1" tail="3" label="null_edge" ></edge>
+<edge head="1" tail="5" label="mod" ></edge>
+<edge head="3" tail="4" label="name" ></edge>
+<edge head="4" tail="12" label="op1" ></edge>
+<edge head="5" tail="6" label="name" ></edge>
+<edge head="6" tail="13" label="op1" ></edge>
+<edge head="7" tail="1" label="ARG0" ></edge>
+<edge head="7" tail="8" label="ARG1" ></edge>
+<edge head="8" tail="9" label="ARG2" ></edge>
+<edge head="9" tail="10" label="ARG1" ></edge>
+<edge head="9" tail="11" label="ARG1" ></edge>
+</edges>
+</graph>
+<graph id="37">
+<nodes>
+<node gid="564" id="0" text="say-01" label="x20" nosuffix="say" isleaf="False"></node>
+<node gid="565" id="1" text="cause-01" label="x8" nosuffix="cause" isleaf="False"></node>
+<node gid="566" id="2" text="we" label="x2" nosuffix="we" isleaf="True"></node>
+<node gid="567" id="3" text="thing" label="x6" nosuffix="thing" isleaf="False"></node>
+<node gid="568" id="4" text="result-01" label="r" nosuffix="result" isleaf="True"></node>
+<node gid="569" id="5" text="mix-01" label="x5" nosuffix="mix" isleaf="True"></node>
+<node gid="570" id="6" text="force-01" label="x12" nosuffix="force" isleaf="False"></node>
+<node gid="571" id="7" text="we" label="x9" nosuffix="we" isleaf="True"></node>
+<node gid="572" id="8" text="follow-02" label="x15" nosuffix="follow" isleaf="False"></node>
+<node gid="573" id="9" text="advise-01" label="x17" nosuffix="advise" isleaf="True"></node>
+<node gid="574" id="10" text="person" label="x22" nosuffix="person" isleaf="False"></node>
+<node gid="575" id="11" text="name" label="n" nosuffix="name" isleaf="False"></node>
+<node gid="576" id="12" text="null_tag" label="x21" nosuffix="null_tag" isleaf="True"></node>
+<node gid="577" id="13" text="geologist" label="x25" nosuffix="geologist" isleaf="False"></node>
+<node gid="578" id="14" text="survey-01" label="x30" nosuffix="survey" isleaf="False"></node>
+<node gid="579" id="15" text="organization" label="x29" nosuffix="organization" isleaf="False"></node>
+<node gid="580" id="16" text="name" label="n1" nosuffix="name" isleaf="False"></node>
+<node gid="581" id="17" text="Miller" label="Miller" nosuffix="Miller" isleaf="True"></node>
+<node gid="582" id="18" text="Geological" label="Geological" nosuffix="Geological" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="ARG1-of" ></edge>
+<edge head="0" tail="10" label="ARG0" ></edge>
+<edge head="1" tail="2" label="ARG0" ></edge>
+<edge head="1" tail="3" label="ARG0" ></edge>
+<edge head="1" tail="6" label="ARG0" ></edge>
+<edge head="3" tail="4" label="ARG2-of" ></edge>
+<edge head="3" tail="5" label="ARG1-of" ></edge>
+<edge head="6" tail="7" label="ARG0" ></edge>
+<edge head="6" tail="8" label="ARG2" ></edge>
+<edge head="8" tail="7" label="ARG0" ></edge>
+<edge head="8" tail="9" label="ARG1" ></edge>
+<edge head="10" tail="11" label="name" ></edge>
+<edge head="10" tail="12" label="null_edge" ></edge>
+<edge head="10" tail="13" label="null_edge" ></edge>
+<edge head="11" tail="17" label="op1" ></edge>
+<edge head="13" tail="14" label="ARG1" ></edge>
+<edge head="14" tail="15" label="mod" ></edge>
+<edge head="15" tail="16" label="name" ></edge>
+<edge head="16" tail="18" label="op1" ></edge>
+</edges>
+</graph>
+<graph id="38">
+<nodes>
+<node gid="583" id="0" text="respond-01" label="x10" nosuffix="respond" isleaf="False"></node>
+<node gid="584" id="1" text="we" label="x2" nosuffix="we" isleaf="True"></node>
+<node gid="585" id="2" text="and" label="x8" nosuffix="and" isleaf="False"></node>
+<node gid="586" id="3" text="negative" label="x7" nosuffix="negative" isleaf="False"></node>
+<node gid="587" id="4" text="very" label="x6" nosuffix="very" isleaf="True"></node>
+<node gid="588" id="5" text="pleasant-41" label="x9" nosuffix="pleasant" isleaf="False"></node>
+<node gid="589" id="6" text="business" label="x12" nosuffix="business" isleaf="False"></node>
+<node gid="590" id="7" text="country" label="x15" nosuffix="country" isleaf="False"></node>
+<node gid="591" id="8" text="name" label="n" nosuffix="name" isleaf="False"></node>
+<node gid="592" id="9" text="country" label="x14" nosuffix="country" isleaf="False"></node>
+<node gid="593" id="10" text="name" label="n1" nosuffix="name" isleaf="False"></node>
+<node gid="594" id="11" text="-" label="-" nosuffix="" isleaf="True"></node>
+<node gid="595" id="12" text="Valley" label="Valley" nosuffix="Valley" isleaf="True"></node>
+<node gid="596" id="13" text="Long" label="Long" nosuffix="Long" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="ARG0" ></edge>
+<edge head="0" tail="2" label="ARG1" ></edge>
+<edge head="0" tail="6" label="ARG1" ></edge>
+<edge head="2" tail="3" label="op1" ></edge>
+<edge head="2" tail="5" label="op2" ></edge>
+<edge head="3" tail="4" label="degree" ></edge>
+<edge head="5" tail="11" label="polarity" ></edge>
+<edge head="6" tail="7" label="location" ></edge>
+<edge head="7" tail="8" label="name" ></edge>
+<edge head="7" tail="9" label="null_edge" ></edge>
+<edge head="8" tail="12" label="op1" ></edge>
+<edge head="9" tail="10" label="name" ></edge>
+<edge head="10" tail="13" label="op1" ></edge>
+</edges>
+</graph>
+<graph id="39">
+<nodes>
+<node gid="597" id="0" text="believe-01" label="x6" nosuffix="believe" isleaf="False"></node>
+<node gid="598" id="1" text="72,000" label="x1" nosuffix="72,000" isleaf="True"></node>
+<node gid="599" id="2" text="just" label="x3" nosuffix="just" isleaf="True"></node>
+<node gid="600" id="3" text="and" label="x16" nosuffix="and" isleaf="False"></node>
+<node gid="601" id="4" text="72,000" label="x8" nosuffix="72,000" isleaf="True"></node>
+<node gid="602" id="5" text="zone" label="x15" nosuffix="zone" isleaf="False"></node>
+<node gid="603" id="6" text="risk-01" label="x14" nosuffix="risk" isleaf="True"></node>
+<node gid="604" id="7" text="insist-01" label="x17" nosuffix="insist" isleaf="False"></node>
+<node gid="605" id="8" text="build-01" label="x19" nosuffix="build" isleaf="False"></node>
+<node gid="606" id="9" text="thing" label="x20" nosuffix="thing" isleaf="False"></node>
+<node gid="607" id="10" text="anywhere" label="x21" nosuffix="anywhere" isleaf="False"></node>
+<node gid="608" id="11" text="72,000" label="x22" nosuffix="72,000" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="ARG1" ></edge>
+<edge head="0" tail="2" label="mod" ></edge>
+<edge head="0" tail="3" label="ARG1" ></edge>
+<edge head="3" tail="4" label="quant" ></edge>
+<edge head="3" tail="5" label="op1" ></edge>
+<edge head="3" tail="7" label="op2" ></edge>
+<edge head="5" tail="6" label="ARG1-of" ></edge>
+<edge head="7" tail="8" label="ARG1" ></edge>
+<edge head="8" tail="9" label="ARG1" ></edge>
+<edge head="9" tail="10" label="location" ></edge>
+<edge head="10" tail="11" label="op1" ></edge>
+</edges>
+</graph>
+<graph id="40">
+<nodes>
+<node gid="609" id="0" text="complain-01" label="x5" nosuffix="complain" isleaf="False"></node>
+<node gid="610" id="1" text="person" label="x1" nosuffix="person" isleaf="False"></node>
+<node gid="611" id="2" text="develop-02" label="d" nosuffix="develop" isleaf="True"></node>
+<node gid="612" id="3" text="region" label="x4" nosuffix="region" isleaf="True"></node>
+<node gid="613" id="4" text="and" label="x23" nosuffix="and" isleaf="False"></node>
+<node gid="614" id="5" text="result-01" label="x12" nosuffix="result" isleaf="False"></node>
+<node gid="615" id="6" text="warn-01" label="x10" nosuffix="warn" isleaf="True"></node>
+<node gid="616" id="7" text="rate" label="x16" nosuffix="rate" isleaf="False"></node>
+<node gid="617" id="8" text="high" label="x14" nosuffix="high" isleaf="True"></node>
+<node gid="618" id="9" text="insure-02" label="x15" nosuffix="insure" isleaf="True"></node>
+<node gid="619" id="10" text="limit-01" label="x18" nosuffix="limit" isleaf="False"></node>
+<node gid="620" id="11" text="area" label="x19" nosuffix="area" isleaf="False"></node>
+<node gid="621" id="12" text="develop-02" label="x22" nosuffix="develop" isleaf="False"></node>
+<node gid="622" id="13" text="potential" label="x21" nosuffix="potential" isleaf="True"></node>
+<node gid="623" id="14" text="stoke" label="x24" nosuffix="stoke" isleaf="False"></node>
+<node gid="624" id="15" text="fear-01" label="x26" nosuffix="fear" isleaf="False"></node>
+<node gid="625" id="16" text="person" label="x28" nosuffix="person" isleaf="False"></node>
+<node gid="626" id="17" text="tour-01" label="t" nosuffix="tour" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="ARG0" ></edge>
+<edge head="0" tail="4" label="ARG1" ></edge>
+<edge head="1" tail="2" label="ARG0-of" ></edge>
+<edge head="1" tail="3" label="location" ></edge>
+<edge head="4" tail="5" label="op1" ></edge>
+<edge head="4" tail="10" label="op2" ></edge>
+<edge head="4" tail="14" label="op2" ></edge>
+<edge head="5" tail="6" label="ARG1" ></edge>
+<edge head="5" tail="7" label="ARG2" ></edge>
+<edge head="7" tail="8" label="mod" ></edge>
+<edge head="7" tail="9" label="mod" ></edge>
+<edge head="10" tail="11" label="ARG1" ></edge>
+<edge head="11" tail="12" label="mod" ></edge>
+<edge head="12" tail="13" label="mod" ></edge>
+<edge head="14" tail="15" label="ARG1" ></edge>
+<edge head="15" tail="16" label="ARG1" ></edge>
+<edge head="16" tail="17" label="ARG0-of" ></edge>
+</edges>
+</graph>
+<graph id="41">
+<nodes>
+<node gid="627" id="0" text="confrontation" label="x18" nosuffix="confrontation" isleaf="False"></node>
+<node gid="628" id="1" text="relationship" label="x2" nosuffix="relationship" isleaf="False"></node>
+<node gid="629" id="2" text="and" label="x6" nosuffix="and" isleaf="False"></node>
+<node gid="630" id="3" text="volcano" label="x5" nosuffix="volcano" isleaf="False"></node>
+<node gid="631" id="4" text="active" label="x4" nosuffix="active" isleaf="True"></node>
+<node gid="632" id="5" text="community" label="x8" nosuffix="community" isleaf="False"></node>
+<node gid="633" id="6" text="surround-01" label="x10" nosuffix="surround" isleaf="False"></node>
+<node gid="634" id="7" text="person" label="x11" nosuffix="person" isleaf="False"></node>
+<node gid="635" id="8" text="develop-02" label="d" nosuffix="develop" isleaf="True"></node>
+<node gid="636" id="9" text="region" label="x14" nosuffix="region" isleaf="True"></node>
+<node gid="637" id="10" text="always" label="x17" nosuffix="always" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="ARG1" ></edge>
+<edge head="0" tail="10" label="time" ></edge>
+<edge head="1" tail="2" label="ARG1" ></edge>
+<edge head="2" tail="3" label="op1" ></edge>
+<edge head="2" tail="5" label="op2" ></edge>
+<edge head="3" tail="4" label="mod" ></edge>
+<edge head="5" tail="6" label="ARG1-of" ></edge>
+<edge head="6" tail="7" label="ARG1" ></edge>
+<edge head="6" tail="9" label="location" ></edge>
+<edge head="7" tail="8" label="ARG0-of" ></edge>
+</edges>
+</graph>
+<graph id="42">
+<nodes>
+<node gid="638" id="0" text="become-01" label="x3" nosuffix="become" isleaf="False"></node>
+<node gid="639" id="1" text="country" label="x1" nosuffix="country" isleaf="False"></node>
+<node gid="640" id="2" text="name" label="n" nosuffix="name" isleaf="False"></node>
+<node gid="641" id="3" text="attract-01" label="x8" nosuffix="attract" isleaf="False"></node>
+<node gid="642" id="4" text="lead-02" label="x5" nosuffix="lead" isleaf="True"></node>
+<node gid="643" id="5" text="organization" label="x6" nosuffix="organization" isleaf="False"></node>
+<node gid="644" id="6" text="name" label="n1" nosuffix="name" isleaf="False"></node>
+<node gid="645" id="7" text="person" label="x7" nosuffix="person" isleaf="False"></node>
+<node gid="646" id="8" text="tour-01" label="t" nosuffix="tour" isleaf="True"></node>
+<node gid="647" id="9" text="Kilauea" label="Kilauea" nosuffix="Kilauea" isleaf="True"></node>
+<node gid="648" id="10" text="Hawaiian" label="Hawaiian" nosuffix="Hawaiian" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="ARG1" ></edge>
+<edge head="0" tail="3" label="ARG2" ></edge>
+<edge head="1" tail="2" label="name" ></edge>
+<edge head="2" tail="9" label="op1" ></edge>
+<edge head="3" tail="4" label="ARG0-of" ></edge>
+<edge head="3" tail="5" label="ARG1" ></edge>
+<edge head="3" tail="7" label="mod" ></edge>
+<edge head="5" tail="6" label="name" ></edge>
+<edge head="6" tail="10" label="op1" ></edge>
+<edge head="7" tail="8" label="ARG0-of" ></edge>
+</edges>
+</graph>
+<graph id="43">
+<nodes>
+<node gid="649" id="0" text="consider-01" label="x7" nosuffix="consider" isleaf="False"></node>
+<node gid="650" id="1" text="date-entity" label="x5" nosuffix="date" isleaf="False"></node>
+<node gid="651" id="2" text="country" label="x1" nosuffix="country" isleaf="False"></node>
+<node gid="652" id="3" text="name" label="n" nosuffix="name" isleaf="False"></node>
+<node gid="653" id="4" text="volcano" label="x10" nosuffix="volcano" isleaf="False"></node>
+<node gid="654" id="5" text="ideal" label="x9" nosuffix="ideal" isleaf="True"></node>
+<node gid="655" id="6" text="1983" label="1983" nosuffix="1983" isleaf="True"></node>
+<node gid="656" id="7" text="Hawaii" label="Hawaii" nosuffix="Hawaii" isleaf="True"></node>
+<node gid="657" id="8" text="'s" label="'s" nosuffix="'s" isleaf="True"></node>
+<node gid="658" id="9" text="Kilauea" label="Kilauea" nosuffix="Kilauea" isleaf="True"></node>
+<node gid="659" id="10" text="since" label="since" nosuffix="since" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="time" ></edge>
+<edge head="0" tail="4" label="ARG1" ></edge>
+<edge head="1" tail="6" label="year" ></edge>
+<edge head="1" tail="2" label="domain" ></edge>
+<edge head="2" tail="3" label="name" ></edge>
+<edge head="3" tail="7" label="op1" ></edge>
+<edge head="3" tail="8" label="op2" ></edge>
+<edge head="3" tail="9" label="op3" ></edge>
+<edge head="3" tail="10" label="op4" ></edge>
+<edge head="4" tail="5" label="ARG1-of" ></edge>
+</edges>
+</graph>
+<graph id="44">
+<nodes>
+<node gid="660" id="0" text="cause-01" label="x1" nosuffix="cause" isleaf="False"></node>
+<node gid="661" id="1" text="and" label="x11" nosuffix="and" isleaf="False"></node>
+<node gid="662" id="2" text="continue-01" label="x5" nosuffix="continue" isleaf="False"></node>
+<node gid="663" id="3" text="eruption" label="x3" nosuffix="eruption" isleaf="True"></node>
+<node gid="664" id="4" text="rare" label="x15" nosuffix="rare" isleaf="False"></node>
+<node gid="665" id="5" text="bloom" label="x13" nosuffix="bloom" isleaf="False"></node>
+<node gid="666" id="6" text="name" label="x12" nosuffix="name" isleaf="False"></node>
+<node gid="667" id="7" text="threaten-01" label="xap0" nosuffix="threaten" isleaf="False"></node>
+<node gid="668" id="8" text="life" label="x10" nosuffix="life" isleaf="False"></node>
+<node gid="669" id="9" text="seldom" label="x9" nosuffix="seldom" isleaf="True"></node>
+<node gid="670" id="10" text="ash" label="ash" nosuffix="ash" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="ARG0" ></edge>
+<edge head="1" tail="2" label="op1" ></edge>
+<edge head="1" tail="4" label="op2" ></edge>
+<edge head="1" tail="7" label="op1" ></edge>
+<edge head="2" tail="3" label="domain" ></edge>
+<edge head="4" tail="5" label="domain" ></edge>
+<edge head="5" tail="6" label="name" ></edge>
+<edge head="6" tail="10" label="op1" ></edge>
+<edge head="7" tail="8" label="ARG2" ></edge>
+<edge head="8" tail="9" label="frequency" ></edge>
+</edges>
+</graph>
+<graph id="45">
+<nodes>
+<node gid="671" id="0" text="throw-01" label="x5" nosuffix="throw" isleaf="False"></node>
+<node gid="672" id="1" text="volcano" label="x4" nosuffix="volcano" isleaf="True"></node>
+<node gid="673" id="2" text="display" label="x9" nosuffix="display" isleaf="False"></node>
+<node gid="674" id="3" text="scenic" label="x8" nosuffix="scenic" isleaf="True"></node>
+<node gid="675" id="4" text="lava" label="x12" nosuffix="lava" isleaf="False"></node>
+<node gid="676" id="5" text="colorful" label="x11" nosuffix="colorful" isleaf="True"></node>
+<node gid="677" id="6" text="attract-01" label="x15" nosuffix="attract" isleaf="False"></node>
+<node gid="678" id="7" text="hiker" label="x16" nosuffix="hiker" isleaf="True"></node>
+<node gid="679" id="8" text="temporal-quantity" label="x18" nosuffix="temporal" isleaf="False"></node>
+<node gid="680" id="9" text="day" label="d" nosuffix="day" isleaf="True"></node>
+<node gid="681" id="10" text="create-01" label="x20" nosuffix="create" isleaf="False"></node>
+<node gid="682" id="11" text="show" label="x24" nosuffix="show" isleaf="False"></node>
+<node gid="683" id="12" text="natural" label="x22" nosuffix="natural" isleaf="True"></node>
+<node gid="684" id="13" text="light" label="x23" nosuffix="light" isleaf="True"></node>
+<node gid="685" id="14" text="night" label="x26" nosuffix="night" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="ARG0" ></edge>
+<edge head="0" tail="2" label="ARG1" ></edge>
+<edge head="2" tail="3" label="mod" ></edge>
+<edge head="2" tail="4" label="ARG1" ></edge>
+<edge head="4" tail="5" label="mod" ></edge>
+<edge head="4" tail="6" label="ARG1-of" ></edge>
+<edge head="4" tail="10" label="ARG0-of" ></edge>
+<edge head="6" tail="7" label="ARG1" ></edge>
+<edge head="6" tail="8" label="ARG0" ></edge>
+<edge head="8" tail="9" label="unit" ></edge>
+<edge head="10" tail="11" label="ARG1" ></edge>
+<edge head="10" tail="14" label="time" ></edge>
+<edge head="11" tail="12" label="mod" ></edge>
+<edge head="11" tail="13" label="mod" ></edge>
+</edges>
+</graph>
+<graph id="46">
+<nodes>
+<node gid="686" id="0" text="glean" label="x3" nosuffix="glean" isleaf="False"></node>
+<node gid="687" id="1" text="have-org-role-91" label="x1" nosuffix="have" isleaf="False"></node>
+<node gid="688" id="2" text="scientist" label="s" nosuffix="scientist" isleaf="True"></node>
+<node gid="689" id="3" text="information" label="x6" nosuffix="information" isleaf="False"></node>
+<node gid="690" id="4" text="much" label="x4" nosuffix="much" isleaf="True"></node>
+<node gid="691" id="5" text="useful" label="x5" nosuffix="useful" isleaf="True"></node>
+<node gid="692" id="6" text="eruption" label="x10" nosuffix="eruption" isleaf="False"></node>
+<node gid="693" id="7" text="temporal-quantity" label="x9" nosuffix="temporal" isleaf="False"></node>
+<node gid="694" id="8" text="decade" label="d" nosuffix="decade" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="ARG0" ></edge>
+<edge head="0" tail="3" label="ARG1" ></edge>
+<edge head="0" tail="6" label="ARG2" ></edge>
+<edge head="1" tail="2" label="ARG2" ></edge>
+<edge head="3" tail="4" label="quant" ></edge>
+<edge head="3" tail="5" label="mod" ></edge>
+<edge head="6" tail="7" label="mod" ></edge>
+<edge head="7" tail="8" label="unit" ></edge>
+</edges>
+</graph>
+<graph id="47">
+<nodes>
+<node gid="695" id="0" text="say-01" label="x24" nosuffix="say" isleaf="False"></node>
+<node gid="696" id="1" text="look-04" label="x4" nosuffix="look" isleaf="False"></node>
+<node gid="697" id="2" text="resort" label="x3" nosuffix="resort" isleaf="True"></node>
+<node gid="698" id="3" text="provide-01" label="x8" nosuffix="provide" isleaf="False"></node>
+<node gid="699" id="4" text="information" label="x9" nosuffix="information" isleaf="False"></node>
+<node gid="700" id="5" text="viewing" label="x12" nosuffix="viewing" isleaf="False"></node>
+<node gid="701" id="6" text="good" label="x11" nosuffix="good" isleaf="False"></node>
+<node gid="702" id="7" text="most" label="m" nosuffix="most" isleaf="True"></node>
+<node gid="703" id="8" text="person" label="x17" nosuffix="person" isleaf="False"></node>
+<node gid="704" id="9" text="pass-07" label="p" nosuffix="pass" isleaf="True"></node>
+<node gid="705" id="10" text="person" label="x21" nosuffix="person" isleaf="False"></node>
+<node gid="706" id="11" text="tour-01" label="t" nosuffix="tour" isleaf="True"></node>
+<node gid="707" id="12" text="newspaper" label="x25" nosuffix="newspaper" isleaf="False"></node>
+<node gid="708" id="13" text="name" label="n" nosuffix="name" isleaf="False"></node>
+<node gid="709" id="14" text="scientist" label="x28" nosuffix="scientist" isleaf="False"></node>
+<node gid="710" id="15" text="charge-05" label="x30" nosuffix="charge" isleaf="False"></node>
+<node gid="711" id="16" text="observatory" label="x35" nosuffix="observatory" isleaf="False"></node>
+<node gid="712" id="17" text="name" label="x33" nosuffix="name" isleaf="False"></node>
+<node gid="713" id="18" text="volcano" label="x34" nosuffix="volcano" isleaf="True"></node>
+<node gid="714" id="19" text="country" label="x37" nosuffix="country" isleaf="False"></node>
+<node gid="715" id="20" text="name" label="n1" nosuffix="name" isleaf="False"></node>
+<node gid="716" id="21" text="David" label="David" nosuffix="David" isleaf="True"></node>
+<node gid="717" id="22" text="Clague" label="Clague" nosuffix="Clague" isleaf="True"></node>
+<node gid="718" id="23" text="Hawaii" label="Hawaii" nosuffix="Hawaii" isleaf="True"></node>
+<node gid="719" id="24" text="Kilauea" label="Kilauea" nosuffix="Kilauea" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="ARG1" ></edge>
+<edge head="0" tail="12" label="ARG0" ></edge>
+<edge head="1" tail="2" label="ARG0" ></edge>
+<edge head="1" tail="3" label="ARG1" ></edge>
+<edge head="3" tail="4" label="ARG1" ></edge>
+<edge head="4" tail="5" label="topic" ></edge>
+<edge head="4" tail="8" label="ARG0-of" ></edge>
+<edge head="5" tail="6" label="mod" ></edge>
+<edge head="6" tail="7" label="degree" ></edge>
+<edge head="8" tail="9" label="ARG1-of" ></edge>
+<edge head="8" tail="10" label="ARG2" ></edge>
+<edge head="10" tail="11" label="ARG0-of" ></edge>
+<edge head="12" tail="13" label="name" ></edge>
+<edge head="12" tail="14" label="ARG0-of" ></edge>
+<edge head="13" tail="21" label="op1" ></edge>
+<edge head="13" tail="22" label="op2" ></edge>
+<edge head="14" tail="15" label="manner" ></edge>
+<edge head="15" tail="16" label="ARG1" ></edge>
+<edge head="16" tail="17" label="name" ></edge>
+<edge head="16" tail="18" label="null_edge" ></edge>
+<edge head="16" tail="19" label="location" ></edge>
+<edge head="17" tail="23" label="op1" ></edge>
+<edge head="19" tail="20" label="name" ></edge>
+<edge head="20" tail="24" label="op1" ></edge>
+</edges>
+</graph>
+<graph id="48">
+<nodes>
+<node gid="720" id="0" text="contrast-01" label="x14" nosuffix="contrast" isleaf="False"></node>
+<node gid="721" id="1" text="tame" label="x6" nosuffix="tame" isleaf="False"></node>
+<node gid="722" id="2" text="general" label="x4" nosuffix="general" isleaf="True"></node>
+<node gid="723" id="3" text="pretty" label="x5" nosuffix="pretty" isleaf="True"></node>
+<node gid="724" id="4" text="go-02" label="x12" nosuffix="go" isleaf="False"></node>
+<node gid="725" id="5" text="eruption" label="x11" nosuffix="eruption" isleaf="False"></node>
+<node gid="726" id="6" text="volcano" label="x10" nosuffix="volcano" isleaf="True"></node>
+<node gid="727" id="7" text="spectacle" label="x17" nosuffix="spectacle" isleaf="False"></node>
+<node gid="728" id="8" text="night" label="x19" nosuffix="night" isleaf="True"></node>
+<node gid="729" id="9" text="cause-01" label="x20" nosuffix="cause" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="ARG1" ></edge>
+<edge head="0" tail="4" label="ARG2" ></edge>
+<edge head="0" tail="7" label="ARG2" ></edge>
+<edge head="1" tail="2" label="mod" ></edge>
+<edge head="1" tail="3" label="degree" ></edge>
+<edge head="4" tail="5" label="ARG0" ></edge>
+<edge head="5" tail="6" label="mod" ></edge>
+<edge head="7" tail="8" label="time" ></edge>
+<edge head="7" tail="9" label="ARG1-of" ></edge>
+</edges>
+</graph>
+</amr>

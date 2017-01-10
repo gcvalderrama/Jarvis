@@ -6,8 +6,8 @@ import xlsxwriter
 
 ROUGE = './RELEASE-1.5.5/ROUGE-1.5.5.pl'
 DATA_PATH = './RELEASE-1.5.5/data'
-write_excel = True
-workbook = xlsxwriter.Workbook('rouge_test.xlsx')
+#write_excel = True
+#workbook = xlsxwriter.Workbook('rouge_test.xlsx')
 
 def excel_init(name):
     # Create an new Excel file and add a worksheet.
@@ -87,7 +87,7 @@ def lemmatizing_files():
 
 
 def rouge_score_files(summaries_path, text):
-    peer_summaries_path = './peer_summaries/*{0}'
+    peer_summaries_path = 'D:/Tesis2016/Jarvis/Lincoln/LAB/ManualSummaries/*{0}'
     row = 0
 
     excel = excel_init(text)
@@ -117,6 +117,24 @@ def rouge_score_files(summaries_path, text):
                     excel_add_value(0, col, rouge_key, excel)
                 excel_add_value(row, col, rouge_value, excel)
             print(text, score)
+
+def rouge_v2(templateDir, targetDir, excelName):
+
+    row = 0
+    #excel = excel_init(excelName)
+    #
+    # excel_add_value(0, 0, 'Persona', excel)
+    #excel_add_value(0, 1, 'Documento', excel)
+
+    for filename in glob.iglob(templateDir, recursive=True):
+        name = os.path.basename(os.path.normpath(filename))
+        with open(filename, 'r') as file:
+            template_content = file.read()
+        with open(targetDir + name, 'r') as file:
+            target_content = file.read()
+        score = pythonrouge.pythonrouge(template_content, target_content, ROUGE, DATA_PATH)
+        print(score)
+
 
 
 def rouge_files_test():
@@ -151,7 +169,7 @@ def rouge_files_test():
 # split_summaries()
 # lemmatizing_files()
 write_excel = False
-rouge_score_files('./generated_summaries/rst/*.txt', 'Manual con RST')
-rouge_score_files('./generated_summaries/conceptual_graph/*.txt', 'Manual con Grafo')
-rouge_score_files('./generated_summaries/nonrst/*.txt', 'Manual con NON-RST')
-if write_excel: workbook.close()
+
+rouge_v2('D:/Tesis2016/Jarvis/Lincoln/LAB/ManualSummaries/*.txt', 'D:/Tesis2016/Jarvis/Lincoln/LAB/RSTSummaries/', 'Manual')
+
+#if write_excel: workbook.close()

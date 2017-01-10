@@ -10,16 +10,15 @@ namespace JarvisSummarization.RST
 {
     public class RSTReader
     {
-        public RSTDocument ReadDocument(string path, string name)
+        public RSTDocument ReadDocumentContent(string str, string name)
         {
             RSTDocument result = new RSTDocument();
             result.name = name;
-            var str = File.ReadAllText(path);
 
             var documentxml = XElement.Parse(str);
             var tokensquery = from c in documentxml.Elements("tokens").Elements("token")
                               select c;
-                        
+
             foreach (var token in tokensquery)
             {
                 var tk = new Common.Token();
@@ -37,9 +36,14 @@ namespace JarvisSummarization.RST
             var treeReader = new edu.stanford.nlp.trees.PennTreeReader(input);
 
             result.root = new RSTNode();
-            result.root.Load(treeReader.readTree(), result.Tokens);            
-            
+            result.root.Load(treeReader.readTree(), result.Tokens);
+
             return result;
+        }
+        public RSTDocument ReadDocument(string path, string name)
+        {            
+            var str = File.ReadAllText(path);
+            return this.ReadDocumentContent(str, name);
         }
     }
 }

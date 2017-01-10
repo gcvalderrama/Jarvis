@@ -1,604 +1,1180 @@
-# ::id 1
-# ::snt Botanist Linda Leigh, who has spent the last three weeks literally in Linda Leigh element, called Linda Leigh stay in an experimental biosphere a success Wednesday but said Linda Leigh's ready to return to Earth
-(x29 / contrast-01
-	:ARG1 (x18 / call-01
-		:ARG0 (x2 / newspaper
-			:name (n / name
-				:op1 "Linda"
-				:op2 "Leigh")
-			:mod (x1 / country
-				:name (n2 / name
-					:op1 "Botanist"))
-			:ARG1-of (x7 / spend-01
-				:time (x11 / week
-					:mod (x9 / last)
-					:quant 3)
-				:manner (x12 / literal)
-				:ARG2 (x16 / element
-					:mod (x14 / person
-						:name (n5 / name
-							:op1 "Linda"))
-					:mod (x15 / person
-						:name (n6 / name
-							:op1 "Leigh"))))))
-	:ARG2 (x27 / succeed-01
-		:ARG0 (x19 / newspaper
-			:name (n1 / name
-				:op1 "Linda"
-				:op2 "Leigh"))
-		:mod (x24 / experiment-01)
-		:ARG2-of (xap0 / infer-01
-			:ARG1 (x21 / stay-01)))
-	:ARG2 (x28 / wednesday)
-	:ARG2 (x30 / say-01
-		:ARG1 (x34 / ready-01
-			:ARG1 (x32 / person
-				:name (n3 / name
-					:op1 "Leigh")
-				:null_edge (x31 / person
-					:name (n4 / name
-						:op1 "Linda"))))))
-
-# ::id 2
-# ::snt When Ms. Leigh exits Thanksgiving afternoon from 21 days inside an airtight, 17,000-cubic foot glass-and-steel structure, Linda Leigh will have been the longest inhabitant of a completely enclosed ecosystem, with air and water generated and recycled independently of Earth's
-(x26 / inhabit-01
-	:condition (x4 / exit
-		:ARG0 (x3 / person
-			:name (n1 / name
-				:op1 "Leigh")
-			:null_edge (x2 / ms.))
-		:null_edge (x6 / afternoon
-			:mod (x5 / event
-				:name (n2 / name
-					:op1 "Thanksgiving")))
-		:ARG1 (x17 / structure
-			:duration (x9 / temporal-quantity
-				:unit (d / day)
-				:quant 21)
-			:mod (x12 / airtight)
-			:mod (x14 / 17,000-cubic)
-			:mod (x15 / foot)
-			:mod (x16 / glass-and-steel)))
-	:ARG0 (x19 / newspaper
-		:name (n / name
-			:op1 "Linda"
-			:op2 "Leigh"))
-	:null_edge (x25 / long)
-	:ARG1 (x31 / ecosystem
-		:ARG1-of (x30 / enclose
-			:manner (x29 / complete)))
-	:condition (x38 / and
-		:op1 (x37 / generate-01
-			:ARG1 (x35 / and
-				:op1 (x34 / air)
-				:op2 (x36 / water)))
-		:op2 (x39 / recycle-01
-			:manner (x40 / depend-01
-				:polarity -
-				:op1 (x42 / planet
-					:name (n3 / name
-						:op1 "Earth"))))))
-
-# ::id 3
-# ::snt " Linda Leigh 'll be emerging tomorrow at 2 p.m. as scheduled, and everything is rolling, " Linda Leigh said
-(x22 / say-01
-	:ARG1 (x14 / and
-		:op1 (x6 / emerge-01
-			:ARG0 (x3 / person
-				:name (n2 / name
-					:op1 "Leigh")
-				:null_edge (x2 / person
-					:name (n4 / name
-						:op1 "Linda")))
-			:time (x7 / tomorrow)
-			:time (x8 / person
-				:name (n3 / name
-					:op1 "at")))
-		:op2 (x12 / schedule-01)
-		:op2 (x17 / roll-01
-			:ARG1 (x15 / everything)))
-	:ARG0 (x21 / person
-		:name (n / name
-			:op1 "Leigh")
-		:null_edge (x20 / person
-			:name (n1 / name
-				:op1 "Linda"))))
-
-# ::id 4
-# ::snt Ms. Leigh has been living inside a test module for Biosphere II, a $ 30 million project under construction
-(x5 / live-01
-	:ARG0 (x2 / person
-		:name (n / name
-			:op1 "Leigh")
-		:null_edge (x1 / ms.))
-	:location (x6 / inside
-		:op1 (x9 / module
-			:mod (x8 / test-01)
-			:purpose (xap0 / and
-				:null_edge (x11 / country
-					:name (n1 / name
-						:op1 "Biosphere")
-					:null_edge "II")
-				:ARG1 (x18 / project
-					:topic (x20 / construct-01))))))
-
-# ::id 5
-# ::snt Scientists plan to place four men and four women inside a much larger sealed structure for two years to determine whether humans can duplicate Earth's life systems for possible use in space
-(x2 / plan-01
-	:ARG0 (x1 / have-org-role-91
-		:ARG2 (s / scientist))
-	:ARG1 (x4 / place-01
-		:ARG0 x1
-		:ARG1 (x7 / and
-			:op1 (x6 / man
-				:quant 4)
-			:op2 (x9 / woman
-				:quant 4))
-		:location (x10 / inside
-			:op1 (x15 / structure
-				:mod (x13 / large
-					:degree (xap0 / more
-						:degree (x12 / much)))
-				:mod (x14 / sealed)
-				:duration (x18 / temporal-quantity
-					:unit (y / year)
-					:quant 2)
-				:ARG1-of (x20 / determine-01
-					:ARG1 (x23 / possible
-						:domain (x24 / duplicate
-							:ARG0 (x22 / human)
-							:ARG1 (x28 / system
-								:poss (x25 / planet
-									:name (n / name
-										:op1 "Earth"))
-								:mod (x27 / life)
-								:purpose (x31 / use-01
-									:mod (x30 / possible)
-									:location (x33 / space))))))))))
-
-# ::id 6
-# ::snt " The one thing that I really do miss is just companionship, " Ms. Leigh said Wednesday in a telephone interview from within the module, located on a ranch about 30 miles north of Tucson
-(x17 / say-01
-	:ARG1 (x12 / companionship
-		:ARG1-of (x9 / miss-03
-			:null_edge 1
-			:mod (x7 / really))
-		:mod (x11 / just))
-	:ARG0 (x16 / person
-		:name (n / name
-			:op1 "Leigh")
-		:null_edge (x15 / ms.))
-	:time (x18 / wednesday)
-	:ARG1 (x26 / module
-		:part-of (x22 / interview-01
-			:mod (x21 / telephone))
-		:location (x31 / ranch
-			:null_edge (x32 / about
-				:op1 (x34 / distance-quantity
-					:unit (m / mile)))
-			:location (x35 / north
-				:null_edge (x37 / country
-					:name (n1 / name
-						:op1 "Tucson"))))))
-
-# ::id 7
-# ::snt " Linda Leigh do n't think that The one thing that I really do miss's a matter of feeling lonely, but there's just something about direct human contact and sitting with somebody and pouring Scientists a cup of tea or a cup of coffee and having that morning discussion ; morning discussion's very different than doing morning discussion over the phone or over the video, " Linda Leigh said
-(x74 / say-01
-	:ARG1 (x6 / think-01
-		:ARG0 (x3 / person
-			:name (n1 / name
-				:op1 "Leigh")
-			:null_edge (x2 / person
-				:name (n3 / name
-					:op1 "Linda")))
-		:ARG1 (x18 / matter-01
-			:null_edge (x15 / miss-03
-				:null_edge 1
-				:mod (x13 / really))
-			:null_edge (x21 / lonely))
-		:ARG1 (x27 / something
-			:topic (x32 / and
-				:mod (x26 / just)
-				:op1 (x33 / sit-01
-					:ARG1 (x31 / contact-01
-						:mod (x29 / direct)
-						:mod (x30 / human))
-					:ARG2 (x35 / somebody)
-					:ARG1 (x36 / and
-						:op2 (x37 / pour-01
-							:ARG1 (x38 / scientist)
-							:ARG1 (x43 / or
-								:op1 (x40 / cup)
-								:op2 (x42 / tea)
-								:op2 (x45 / cup
-									:ARG1 (x47 / coffee)))))
-					:ARG1 (x48 / and
-						:op2 (x49 / have-03
-							:ARG1 (x52 / discuss-01
-								:time (x51 / morning))))))))
-	:ARG1 (x23 / contrast-01)
-	:ARG0 (x73 / person
-		:name (n / name
-			:op1 "Leigh")
-		:null_edge (x72 / person
-			:name (n2 / name
-				:op1 "Linda"))))
-
-# ::id 8
-# ::snt " Other than that, Linda Leigh 'm quite content on the inside
-(x10 / content-01
-	:ARG2 (x4 / that
-		:ARG0 (x6 / newspaper
-			:name (n / name
-				:op1 "Linda"
-				:op2 "Leigh")))
-	:ARG0 x6
-	:degree (x9 / quite)
-	:ARG2 (x13 / inside
-		:ARG0 x6))
-
-# ::id 9
-# ::snt Linda Leigh feel like Linda Leigh could stay in here indefinitely .
-(x3 / feel-01
-	:ARG0 (x2 / person
-		:name (n / name
-			:op1 "Leigh")
-		:null_edge (x1 / person
-			:name (n1 / name
-				:op1 "Linda")))
-	:ARG1 (x7 / possible
-		:domain (x8 / stay-01
-			:ARG1 (x5 / newspaper
-				:name (n2 / name
-					:op1 "Linda"
-					:op2 "Leigh"))
-			:location (x10 / here)
-			:duration (x11 / indefinite))))
-
-# ::id 10
-# ::snt Since entering the module Nov. 2, Ms. Leigh has been in frequent daily contact with her outside support team by telephone, video conference, two-way radio and just looking through the glass windows
-(x15 / contact-01
-	:time (x1 / since
-		:op1 (x2 / enter-01
-			:ARG1 (x4 / module)
-			:time (x5 / name
-				:op1 "Nov."
-				:op2 "2")))
-	:ARG0 (x9 / person
-		:name (n / name
-			:op1 "Leigh")
-		:null_edge (x8 / ms.))
-	:frequency (x13 / frequent)
-	:ARG1 (x20 / team
-		:ARG0-of (x19 / support-01
-			:ARG1 (x18 / outside)))
-	:ARG0 (x25 / conference
-		:mod (x24 / video)
-		:beneficiary (x29 / and
-			:op1 (x22 / telephone-01)
-			:op2 (x28 / radio
-				:mod (x27 / two-way))
-			:op2 (x31 / look-01
-				:mod (x30 / just)
-				:ARG1 (x35 / window
-					:consist-of (x34 / glass))))))
-
-# ::id 11
-# ::snt Three daily medical checks, including pulse at rest and after exercise, blood pressure, pulmonary function, blood oxygen saturation and urine tests, have shown Linda Leigh health is " unbelievably positive
-(x28 / show-01
-	:ARG0 (x4 / check-01
-		:quant 3
-		:mod (x3 / medicine)
-		:ARG1 (x7 / pulse
-			:location (x9 / rest
-				:time (x11 / after
-					:op1 (x12 / exercise-02
-						:ARG1 (x15 / pressure-01
-							:mod (x14 / blood))))))
-		:topic (x23 / and
-			:op1 (x18 / function-01
-				:mod (x17 / pulmonary))
-			:op2 (x22 / saturation
-				:mod (x20 / blood)
-				:mod (x21 / oxygen))
-			:op2 (x25 / test-01
-				:ARG1 (x24 / urine))))
-	:ARG1 (x31 / health
-		:poss (x29 / person
-			:name (n / name
-				:op1 "Linda"))
-		:mod (x30 / person
-			:name (n1 / name
-				:op1 "Leigh")))
-	:null_edge (x35 / positive
-		:mod (x34 / unbelievably)))
-
-# ::id 12
-# ::snt The physicians on the outside ca n't believe it, " Linda Leigh said
-(x14 / say-01
-	:ARG1 (x8 / believe-01
-		:ARG0 (x2 / physician
-			:location (x5 / outside))
-		:ARG1 (x9 / it))
-	:ARG0 (x13 / person
-		:name (n / name
-			:op1 "Leigh")
-		:null_edge (x12 / person
-			:name (n1 / name
-				:op1 "Linda"))))
-
-# ::id 13
-# ::snt Two people also check Linda Leigh psychologically each day, Ms. Leigh said, " just to make sure that Linda Leigh state of mind or humor is normal .
-(x13 / say-01
-	:ARG1 (x4 / check-01
-		:mod (x3 / also)
-		:ARG1 (x5 / name
-			:op1 "Linda"
-			:op2 "Leigh")
-		:manner (x7 / psychology))
-	:ARG0 (x12 / person
-		:name (n / name
-			:op1 "Leigh")
-		:null_edge (x11 / ms.))
-	:mod (x16 / just)
-	:ARG1 (x19 / sure-fire
-		:null_edge (x29 / normal
-			:domain (x23 / state
-				:ARG0 (x21 / person
-					:name (n1 / name
-						:op1 "Linda"))
-				:mod (x22 / person
-					:name (n2 / name
-						:op1 "Leigh"))
-				:ARG1 (x26 / or
-					:op1 (x25 / mind)
-					:op2 (x27 / humor-01)))))
-	:ARG1 (xap0 / rate-entity-91
-		:ARG2 (x9 / temporal-quantity
-			:unit (d / day))))
-
-# ::id 14
-# ::snt Ms. Leigh baked Linda Leigh a 39th birthday cake on Nov. 12 of sorghum, rice flour and sweet potatoes harvested from Linda Leigh mini-field
-(x3 / baked
-	:ARG0 (x2 / person
-		:name (n / name
-			:op1 "Leigh")
-		:null_edge (x1 / ms.))
-	:name (x4 / name
-		:op1 "Linda"
-		:op2 "Leigh")
-	:ARG1 (x9 / cake
-		:mod (x8 / birthday))
-	:time (x11 / date-entity)
-	:ARG1 (x18 / and
-		:op1 (x14 / sorghum)
-		:op2 (x17 / flour
-			:mod (x16 / rice))
-		:op2 (x20 / potatoe
-			:mod (x19 / sweet)
-			:ARG1-of (x21 / harvest-01
-				:ARG2 (x24 / person
-					:name (n1 / name
-						:op1 "Leigh")
-					:null_edge (x23 / person
-						:name (n2 / name
-							:op1 "Linda"))
-					:ARG0-of (x25 / mini-field))))))
-
-# ::id 15
-# ::snt Linda Leigh colleagues serenaded Linda Leigh with " Happy Birthday " by video and directed Linda Leigh to gifts hidden in her living area
-(x14 / and
-	:op1 (x4 / serenade
-		:ARG0 (x3 / colleague
-			:null_edge (x1 / person
-				:name (n / name
-					:op1 "Linda"))
-			:mod (x2 / person
-				:name (n1 / name
-					:op1 "Leigh")))
-		:ARG1 (x5 / name
-			:op1 "Linda"
-			:op2 "Leigh")
-		:ARG2 (x10 / birthday
-			:mod (x9 / happy))
-		:ARG0 (x13 / video))
-	:op2 (x15 / direct-01
-		:ARG2 (x19 / gift-01
-			:ARG1-of (x20 / hide-01
-				:ARG0 (x16 / name
-					:op1 "Linda"
-					:op2 "Leigh")
-				:location (x24 / area
-					:location-of (x23 / live-01))))))
-
-# ::id 16
-# ::snt Other crops have ranged from jalapeno peppers to kohlrabi
-(x4 / range-01
-	:ARG1 (x2 / crop
-		:mod (x1 / other))
-	:ARG3 (x7 / pepper
-		:ARG2 (x9 / kohlrabi)))
-
-# ::id 17
-# ::snt Lemon grass, mint, tarragon and fennel are among the herbs Linda Leigh has used to season Linda Leigh meals and make tea
-(x4 / mint
-	:ARG1 (x7 / and
-		:op1 (x2 / grass
-			:mod (x1 / lemon))
-		:op2 (x6 / tarragon)
-		:op2 (x8 / fennel)
-		:op1 (x12 / herb
-			:ARG1-of (x16 / use-01
-				:ARG0 (x13 / newspaper
-					:name (n / name
-						:op1 "Linda"
-						:op2 "Leigh"))
-				:ARG2 (x22 / and
-					:op1 (x18 / season)
-					:op1 (x21 / meal
-						:poss (x19 / person
-							:name (n1 / name
-								:op1 "Linda"))
-						:mod (x20 / person
-							:name (n2 / name
-								:op1 "Leigh")))
-					:op2 (x24 / tea))))))
-
-# ::id 18
-# ::snt Linda Leigh also has a tank of talapia fish
-(x4 / have-03
-	:ARG0 (x1 / newspaper
-		:name (n / name
-			:op1 "Linda"
-			:op2 "Leigh"))
-	:mod (x3 / also)
-	:ARG1 (x6 / tank
-		:mod (x9 / fish
-			:mod (x8 / talapium))))
-
-# ::id 19
-# ::snt " Linda Leigh had talapia Vera Cruzana the other night, " Linda Leigh said
-(x15 / say-01
-	:name (x2 / name
-		:op1 "Linda"
-		:op2 "Leigh"
-		:op3 "had"
-		:op4 "talapia"
-		:op5 "Vera"
-		:op6 "Cruzana"
-		:op7 "the"
-		:op8 "other"
-		:op9 "night"
-		:ARG0-of (x5 / talapium)
-		:mod (x9 / other))
-	:ARG0 (x14 / person
-		:name (n / name
-			:op1 "Leigh")
-		:null_edge (x13 / person
-			:name (n1 / name
-				:op1 "Linda"))))
-
-# ::id 20
-# ::snt Water for drinking, cooking and showering is dehumidified from the air
-(x1 / water
-	:ARG1 (x9 / dehumidify
-		:ARG1 (x6 / and
-			:op1 (x3 / drink-01)
-			:op2 (x5 / cooking)
-			:op2 (x7 / showering))
-		:ARG2 (x12 / air)))
-
-# ::id 21
-# ::snt Samples are passed through a special port for outside analysis, along with samples of waste water and Linda Leigh urine
-(x3 / pass-01
-	:ARG1 (x1 / thing
-		:ARG1-of (s / sample-01))
-	:ARG2 (x7 / port
-		:mod (x6 / special)
-		:ARG1-of (x14 / thing
-			:ARG1-of (s1 / sample-01)
-			:ARG0 (x18 / and
-				:op1 (x10 / analyze-01
-					:ARG0 (x9 / outside))
-				:op1 (x17 / water
-					:mod (x16 / waste))
-				:op2 (x21 / urine
-					:poss (x19 / person
-						:name (n / name
-							:op1 "Linda"))
-					:mod (x20 / person
-						:name (n1 / name
-							:op1 "Leigh")))))))
-
-# ::id 22
-# ::snt The rest of the waste water is fed into a marsh recycling system
-(x8 / feed-01
-	:ARG1 (x2 / rest
-		:part-of (x6 / water
-			:mod (x5 / waste)))
-	:ARG2 (x13 / system
-		:mod (x11 / marsh)
-		:mod (x12 / recycle-01)))
-
-# ::id 23
-# ::snt The botanist also has had to be a mechanic and technician, repairing the loose belt of a large fan that heats and cools the module, and fine-tuning the irrigation system
-(x28 / and
-	:op1 (x2 / botanist)
-	:mod (x3 / also)
-	:op1 (x13 / repair-01
-		:ARG1 (x10 / and
-			:op1 (x9 / mechanic)
-			:op2 (x11 / technician))
-		:ARG1 (x16 / belt
-			:mod (x15 / loose-01)
-			:ARG1 (x20 / fan
-				:mod (x19 / large)
-				:ARG1 (x23 / and
-					:op1 (x22 / heat
-						:ARG1 (x26 / module))
-					:op2 (x24 / cool-01)))))
-	:op2 (x29 / fine-tune
-		:ARG1 (x32 / system
-			:mod (x31 / irrigation))))
-
-# ::id 24
-# ::snt Ms. Leigh said Linda Leigh has n't felt isolated because Linda Leigh support team is excellent
-(x3 / say-01
-	:ARG0 (x2 / person
-		:name (n / name
-			:op1 "Leigh")
-		:null_edge (x1 / ms.))
-	:ARG1 (x8 / feel-01
-		:ARG0 (x4 / newspaper
-			:name (n1 / name
-				:op1 "Linda"
-				:op2 "Leigh"))
-		:ARG1-of (x9 / isolate-01
-			:ARG1-of (x10 / cause-01
-				:ARG0 (x16 / excellent
-					:domain (x14 / team
-						:poss (x11 / person
-							:name (n2 / name
-								:op1 "Linda"))
-						:poss (x12 / person
-							:name (n3 / name
-								:op1 "Leigh"))
-						:mod (x13 / support-01)))))))
-
-# ::id 25
-# ::snt In fact, Linda Leigh occasionally has had to pull the curtains in her living area to get away from the observing eyes outside
-(x10 / pull-01
-	:ARG0 (x4 / newspaper
-		:name (n / name
-			:op1 "Linda"
-			:op2 "Leigh"))
-	:mod (x6 / occasional)
-	:ARG1 (x12 / curtain)
-	:ARG2 (x16 / area
-		:location-of (x15 / live-01))
-	:purpose (x18 / get-01
-		:ARG0 x4
-		:ARG2 (x19 / away
-			:op1 (x20 / from
-				:op1 (x24 / outside
-					:op1 (x22 / observe-01)
-					:op1 (x23 / eye))))))
-
-# ::id 26
-# ::snt Either that, " or Linda Leigh go out into what a mechanic and technician call ` the wilderness ' and just stay out within the plants .
-(x21 / and
-	:op1 (x8 / go-01
-		:ARG4 (x5 / or
-			:op2 (x1 / either)
-			:op2 (x6 / name
-				:op1 "Linda"
-				:op2 "Leigh"))
-		:ARG2 (x16 / call-02
-			:ARG1 (x14 / and
-				:op1 (x13 / mechanic)
-				:op2 (x15 / technician))
-			:ARG1 (x19 / wilderness)))
-	:op2 (x23 / stay-01
-		:time (x22 / just)
-		:ARG1 (x27 / plant)))
-
+<amr>
+<graph id="1">
+<nodes>
+<node gid="0" id="0" text="contrast-01" label="x29" nosuffix="contrast" isleaf="False"></node>
+<node gid="1" id="1" text="call-01" label="x18" nosuffix="call" isleaf="False"></node>
+<node gid="2" id="2" text="newspaper" label="x2" nosuffix="newspaper" isleaf="False"></node>
+<node gid="3" id="3" text="name" label="n" nosuffix="name" isleaf="False"></node>
+<node gid="4" id="4" text="country" label="x1" nosuffix="country" isleaf="False"></node>
+<node gid="5" id="5" text="name" label="n2" nosuffix="name" isleaf="False"></node>
+<node gid="6" id="6" text="spend-01" label="x7" nosuffix="spend" isleaf="False"></node>
+<node gid="7" id="7" text="week" label="x11" nosuffix="week" isleaf="False"></node>
+<node gid="8" id="8" text="last" label="x9" nosuffix="last" isleaf="True"></node>
+<node gid="9" id="9" text="literal" label="x12" nosuffix="literal" isleaf="True"></node>
+<node gid="10" id="10" text="element" label="x16" nosuffix="element" isleaf="False"></node>
+<node gid="11" id="11" text="person" label="x14" nosuffix="person" isleaf="False"></node>
+<node gid="12" id="12" text="name" label="n5" nosuffix="name" isleaf="False"></node>
+<node gid="13" id="13" text="person" label="x15" nosuffix="person" isleaf="False"></node>
+<node gid="14" id="14" text="name" label="n6" nosuffix="name" isleaf="False"></node>
+<node gid="15" id="15" text="succeed-01" label="x27" nosuffix="succeed" isleaf="False"></node>
+<node gid="16" id="16" text="newspaper" label="x19" nosuffix="newspaper" isleaf="False"></node>
+<node gid="17" id="17" text="name" label="n1" nosuffix="name" isleaf="False"></node>
+<node gid="18" id="18" text="experiment-01" label="x24" nosuffix="experiment" isleaf="True"></node>
+<node gid="19" id="19" text="infer-01" label="xap0" nosuffix="infer" isleaf="False"></node>
+<node gid="20" id="20" text="stay-01" label="x21" nosuffix="stay" isleaf="True"></node>
+<node gid="21" id="21" text="wednesday" label="x28" nosuffix="wednesday" isleaf="True"></node>
+<node gid="22" id="22" text="say-01" label="x30" nosuffix="say" isleaf="False"></node>
+<node gid="23" id="23" text="ready-01" label="x34" nosuffix="ready" isleaf="False"></node>
+<node gid="24" id="24" text="person" label="x32" nosuffix="person" isleaf="False"></node>
+<node gid="25" id="25" text="name" label="n3" nosuffix="name" isleaf="False"></node>
+<node gid="26" id="26" text="person" label="x31" nosuffix="person" isleaf="False"></node>
+<node gid="27" id="27" text="name" label="n4" nosuffix="name" isleaf="False"></node>
+<node gid="28" id="28" text="Linda" label="Linda" nosuffix="Linda" isleaf="True"></node>
+<node gid="29" id="29" text="Leigh" label="Leigh" nosuffix="Leigh" isleaf="True"></node>
+<node gid="30" id="30" text="Botanist" label="Botanist" nosuffix="Botanist" isleaf="True"></node>
+<node gid="31" id="31" text="3" label="3" nosuffix="3" isleaf="True"></node>
+<node gid="32" id="32" text="Linda" label="Linda" nosuffix="Linda" isleaf="True"></node>
+<node gid="33" id="33" text="Leigh" label="Leigh" nosuffix="Leigh" isleaf="True"></node>
+<node gid="34" id="34" text="Linda" label="Linda" nosuffix="Linda" isleaf="True"></node>
+<node gid="35" id="35" text="Leigh" label="Leigh" nosuffix="Leigh" isleaf="True"></node>
+<node gid="36" id="36" text="Leigh" label="Leigh" nosuffix="Leigh" isleaf="True"></node>
+<node gid="37" id="37" text="Linda" label="Linda" nosuffix="Linda" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="ARG1" ></edge>
+<edge head="0" tail="15" label="ARG2" ></edge>
+<edge head="0" tail="21" label="ARG2" ></edge>
+<edge head="0" tail="22" label="ARG2" ></edge>
+<edge head="1" tail="2" label="ARG0" ></edge>
+<edge head="2" tail="3" label="name" ></edge>
+<edge head="2" tail="4" label="mod" ></edge>
+<edge head="2" tail="6" label="ARG1-of" ></edge>
+<edge head="3" tail="28" label="op1" ></edge>
+<edge head="3" tail="29" label="op2" ></edge>
+<edge head="4" tail="5" label="name" ></edge>
+<edge head="5" tail="30" label="op1" ></edge>
+<edge head="6" tail="7" label="time" ></edge>
+<edge head="6" tail="9" label="manner" ></edge>
+<edge head="6" tail="10" label="ARG2" ></edge>
+<edge head="7" tail="8" label="mod" ></edge>
+<edge head="7" tail="31" label="quant" ></edge>
+<edge head="10" tail="11" label="mod" ></edge>
+<edge head="10" tail="13" label="mod" ></edge>
+<edge head="11" tail="12" label="name" ></edge>
+<edge head="12" tail="32" label="op1" ></edge>
+<edge head="13" tail="14" label="name" ></edge>
+<edge head="14" tail="33" label="op1" ></edge>
+<edge head="15" tail="16" label="ARG0" ></edge>
+<edge head="15" tail="18" label="mod" ></edge>
+<edge head="15" tail="19" label="ARG2-of" ></edge>
+<edge head="16" tail="17" label="name" ></edge>
+<edge head="17" tail="34" label="op1" ></edge>
+<edge head="17" tail="35" label="op2" ></edge>
+<edge head="19" tail="20" label="ARG1" ></edge>
+<edge head="22" tail="23" label="ARG1" ></edge>
+<edge head="23" tail="24" label="ARG1" ></edge>
+<edge head="24" tail="25" label="name" ></edge>
+<edge head="24" tail="26" label="null_edge" ></edge>
+<edge head="25" tail="36" label="op1" ></edge>
+<edge head="26" tail="27" label="name" ></edge>
+<edge head="27" tail="37" label="op1" ></edge>
+</edges>
+</graph>
+<graph id="2">
+<nodes>
+<node gid="38" id="0" text="inhabit-01" label="x26" nosuffix="inhabit" isleaf="False"></node>
+<node gid="39" id="1" text="exit" label="x4" nosuffix="exit" isleaf="False"></node>
+<node gid="40" id="2" text="person" label="x3" nosuffix="person" isleaf="False"></node>
+<node gid="41" id="3" text="name" label="n1" nosuffix="name" isleaf="False"></node>
+<node gid="42" id="4" text="ms." label="x2" nosuffix="ms." isleaf="True"></node>
+<node gid="43" id="5" text="afternoon" label="x6" nosuffix="afternoon" isleaf="False"></node>
+<node gid="44" id="6" text="event" label="x5" nosuffix="event" isleaf="False"></node>
+<node gid="45" id="7" text="name" label="n2" nosuffix="name" isleaf="False"></node>
+<node gid="46" id="8" text="structure" label="x17" nosuffix="structure" isleaf="False"></node>
+<node gid="47" id="9" text="temporal-quantity" label="x9" nosuffix="temporal" isleaf="False"></node>
+<node gid="48" id="10" text="day" label="d" nosuffix="day" isleaf="True"></node>
+<node gid="49" id="11" text="airtight" label="x12" nosuffix="airtight" isleaf="True"></node>
+<node gid="50" id="12" text="17,000-cubic" label="x14" nosuffix="17,000" isleaf="True"></node>
+<node gid="51" id="13" text="foot" label="x15" nosuffix="foot" isleaf="True"></node>
+<node gid="52" id="14" text="glass-and-steel" label="x16" nosuffix="glass" isleaf="True"></node>
+<node gid="53" id="15" text="newspaper" label="x19" nosuffix="newspaper" isleaf="False"></node>
+<node gid="54" id="16" text="name" label="n" nosuffix="name" isleaf="False"></node>
+<node gid="55" id="17" text="long" label="x25" nosuffix="long" isleaf="True"></node>
+<node gid="56" id="18" text="ecosystem" label="x31" nosuffix="ecosystem" isleaf="False"></node>
+<node gid="57" id="19" text="enclose" label="x30" nosuffix="enclose" isleaf="False"></node>
+<node gid="58" id="20" text="complete" label="x29" nosuffix="complete" isleaf="True"></node>
+<node gid="59" id="21" text="and" label="x38" nosuffix="and" isleaf="False"></node>
+<node gid="60" id="22" text="generate-01" label="x37" nosuffix="generate" isleaf="False"></node>
+<node gid="61" id="23" text="and" label="x35" nosuffix="and" isleaf="False"></node>
+<node gid="62" id="24" text="air" label="x34" nosuffix="air" isleaf="True"></node>
+<node gid="63" id="25" text="water" label="x36" nosuffix="water" isleaf="True"></node>
+<node gid="64" id="26" text="recycle-01" label="x39" nosuffix="recycle" isleaf="False"></node>
+<node gid="65" id="27" text="depend-01" label="x40" nosuffix="depend" isleaf="False"></node>
+<node gid="66" id="28" text="planet" label="x42" nosuffix="planet" isleaf="False"></node>
+<node gid="67" id="29" text="name" label="n3" nosuffix="name" isleaf="False"></node>
+<node gid="68" id="30" text="Leigh" label="Leigh" nosuffix="Leigh" isleaf="True"></node>
+<node gid="69" id="31" text="Thanksgiving" label="Thanksgiving" nosuffix="Thanksgiving" isleaf="True"></node>
+<node gid="70" id="32" text="21" label="21" nosuffix="21" isleaf="True"></node>
+<node gid="71" id="33" text="Linda" label="Linda" nosuffix="Linda" isleaf="True"></node>
+<node gid="72" id="34" text="Leigh" label="Leigh" nosuffix="Leigh" isleaf="True"></node>
+<node gid="73" id="35" text="-" label="-" nosuffix="" isleaf="True"></node>
+<node gid="74" id="36" text="Earth" label="Earth" nosuffix="Earth" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="condition" ></edge>
+<edge head="0" tail="15" label="ARG0" ></edge>
+<edge head="0" tail="17" label="null_edge" ></edge>
+<edge head="0" tail="18" label="ARG1" ></edge>
+<edge head="0" tail="21" label="condition" ></edge>
+<edge head="1" tail="2" label="ARG0" ></edge>
+<edge head="1" tail="5" label="null_edge" ></edge>
+<edge head="1" tail="8" label="ARG1" ></edge>
+<edge head="2" tail="3" label="name" ></edge>
+<edge head="2" tail="4" label="null_edge" ></edge>
+<edge head="3" tail="30" label="op1" ></edge>
+<edge head="5" tail="6" label="mod" ></edge>
+<edge head="6" tail="7" label="name" ></edge>
+<edge head="7" tail="31" label="op1" ></edge>
+<edge head="8" tail="9" label="duration" ></edge>
+<edge head="8" tail="11" label="mod" ></edge>
+<edge head="8" tail="12" label="mod" ></edge>
+<edge head="8" tail="13" label="mod" ></edge>
+<edge head="8" tail="14" label="mod" ></edge>
+<edge head="9" tail="10" label="unit" ></edge>
+<edge head="9" tail="32" label="quant" ></edge>
+<edge head="15" tail="16" label="name" ></edge>
+<edge head="16" tail="33" label="op1" ></edge>
+<edge head="16" tail="34" label="op2" ></edge>
+<edge head="18" tail="19" label="ARG1-of" ></edge>
+<edge head="19" tail="20" label="manner" ></edge>
+<edge head="21" tail="22" label="op1" ></edge>
+<edge head="21" tail="26" label="op2" ></edge>
+<edge head="22" tail="23" label="ARG1" ></edge>
+<edge head="23" tail="24" label="op1" ></edge>
+<edge head="23" tail="25" label="op2" ></edge>
+<edge head="26" tail="27" label="manner" ></edge>
+<edge head="27" tail="35" label="polarity" ></edge>
+<edge head="27" tail="28" label="op1" ></edge>
+<edge head="28" tail="29" label="name" ></edge>
+<edge head="29" tail="36" label="op1" ></edge>
+</edges>
+</graph>
+<graph id="3">
+<nodes>
+<node gid="75" id="0" text="say-01" label="x22" nosuffix="say" isleaf="False"></node>
+<node gid="76" id="1" text="and" label="x14" nosuffix="and" isleaf="False"></node>
+<node gid="77" id="2" text="emerge-01" label="x6" nosuffix="emerge" isleaf="False"></node>
+<node gid="78" id="3" text="person" label="x3" nosuffix="person" isleaf="False"></node>
+<node gid="79" id="4" text="name" label="n2" nosuffix="name" isleaf="False"></node>
+<node gid="80" id="5" text="person" label="x2" nosuffix="person" isleaf="False"></node>
+<node gid="81" id="6" text="name" label="n4" nosuffix="name" isleaf="False"></node>
+<node gid="82" id="7" text="tomorrow" label="x7" nosuffix="tomorrow" isleaf="True"></node>
+<node gid="83" id="8" text="person" label="x8" nosuffix="person" isleaf="False"></node>
+<node gid="84" id="9" text="name" label="n3" nosuffix="name" isleaf="False"></node>
+<node gid="85" id="10" text="schedule-01" label="x12" nosuffix="schedule" isleaf="True"></node>
+<node gid="86" id="11" text="roll-01" label="x17" nosuffix="roll" isleaf="False"></node>
+<node gid="87" id="12" text="everything" label="x15" nosuffix="everything" isleaf="True"></node>
+<node gid="88" id="13" text="person" label="x21" nosuffix="person" isleaf="False"></node>
+<node gid="89" id="14" text="name" label="n" nosuffix="name" isleaf="False"></node>
+<node gid="90" id="15" text="person" label="x20" nosuffix="person" isleaf="False"></node>
+<node gid="91" id="16" text="name" label="n1" nosuffix="name" isleaf="False"></node>
+<node gid="92" id="17" text="Leigh" label="Leigh" nosuffix="Leigh" isleaf="True"></node>
+<node gid="93" id="18" text="Linda" label="Linda" nosuffix="Linda" isleaf="True"></node>
+<node gid="94" id="19" text="at" label="at" nosuffix="at" isleaf="True"></node>
+<node gid="95" id="20" text="Leigh" label="Leigh" nosuffix="Leigh" isleaf="True"></node>
+<node gid="96" id="21" text="Linda" label="Linda" nosuffix="Linda" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="ARG1" ></edge>
+<edge head="0" tail="13" label="ARG0" ></edge>
+<edge head="1" tail="2" label="op1" ></edge>
+<edge head="1" tail="10" label="op2" ></edge>
+<edge head="1" tail="11" label="op2" ></edge>
+<edge head="2" tail="3" label="ARG0" ></edge>
+<edge head="2" tail="7" label="time" ></edge>
+<edge head="2" tail="8" label="time" ></edge>
+<edge head="3" tail="4" label="name" ></edge>
+<edge head="3" tail="5" label="null_edge" ></edge>
+<edge head="4" tail="17" label="op1" ></edge>
+<edge head="5" tail="6" label="name" ></edge>
+<edge head="6" tail="18" label="op1" ></edge>
+<edge head="8" tail="9" label="name" ></edge>
+<edge head="9" tail="19" label="op1" ></edge>
+<edge head="11" tail="12" label="ARG1" ></edge>
+<edge head="13" tail="14" label="name" ></edge>
+<edge head="13" tail="15" label="null_edge" ></edge>
+<edge head="14" tail="20" label="op1" ></edge>
+<edge head="15" tail="16" label="name" ></edge>
+<edge head="16" tail="21" label="op1" ></edge>
+</edges>
+</graph>
+<graph id="4">
+<nodes>
+<node gid="97" id="0" text="live-01" label="x5" nosuffix="live" isleaf="False"></node>
+<node gid="98" id="1" text="person" label="x2" nosuffix="person" isleaf="False"></node>
+<node gid="99" id="2" text="name" label="n" nosuffix="name" isleaf="False"></node>
+<node gid="100" id="3" text="ms." label="x1" nosuffix="ms." isleaf="True"></node>
+<node gid="101" id="4" text="inside" label="x6" nosuffix="inside" isleaf="False"></node>
+<node gid="102" id="5" text="module" label="x9" nosuffix="module" isleaf="False"></node>
+<node gid="103" id="6" text="test-01" label="x8" nosuffix="test" isleaf="True"></node>
+<node gid="104" id="7" text="and" label="xap0" nosuffix="and" isleaf="False"></node>
+<node gid="105" id="8" text="country" label="x11" nosuffix="country" isleaf="False"></node>
+<node gid="106" id="9" text="name" label="n1" nosuffix="name" isleaf="False"></node>
+<node gid="107" id="10" text="project" label="x18" nosuffix="project" isleaf="False"></node>
+<node gid="108" id="11" text="construct-01" label="x20" nosuffix="construct" isleaf="True"></node>
+<node gid="109" id="12" text="Leigh" label="Leigh" nosuffix="Leigh" isleaf="True"></node>
+<node gid="110" id="13" text="II" label="II" nosuffix="II" isleaf="True"></node>
+<node gid="111" id="14" text="Biosphere" label="Biosphere" nosuffix="Biosphere" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="ARG0" ></edge>
+<edge head="0" tail="4" label="location" ></edge>
+<edge head="1" tail="2" label="name" ></edge>
+<edge head="1" tail="3" label="null_edge" ></edge>
+<edge head="2" tail="12" label="op1" ></edge>
+<edge head="4" tail="5" label="op1" ></edge>
+<edge head="5" tail="6" label="mod" ></edge>
+<edge head="5" tail="7" label="purpose" ></edge>
+<edge head="7" tail="8" label="null_edge" ></edge>
+<edge head="7" tail="10" label="ARG1" ></edge>
+<edge head="8" tail="9" label="name" ></edge>
+<edge head="8" tail="13" label="null_edge" ></edge>
+<edge head="9" tail="14" label="op1" ></edge>
+<edge head="10" tail="11" label="topic" ></edge>
+</edges>
+</graph>
+<graph id="5">
+<nodes>
+<node gid="112" id="0" text="plan-01" label="x2" nosuffix="plan" isleaf="False"></node>
+<node gid="113" id="1" text="have-org-role-91" label="x1" nosuffix="have" isleaf="False"></node>
+<node gid="114" id="2" text="scientist" label="s" nosuffix="scientist" isleaf="True"></node>
+<node gid="115" id="3" text="place-01" label="x4" nosuffix="place" isleaf="False"></node>
+<node gid="116" id="4" text="and" label="x7" nosuffix="and" isleaf="False"></node>
+<node gid="117" id="5" text="man" label="x6" nosuffix="man" isleaf="False"></node>
+<node gid="118" id="6" text="woman" label="x9" nosuffix="woman" isleaf="False"></node>
+<node gid="119" id="7" text="inside" label="x10" nosuffix="inside" isleaf="False"></node>
+<node gid="120" id="8" text="structure" label="x15" nosuffix="structure" isleaf="False"></node>
+<node gid="121" id="9" text="large" label="x13" nosuffix="large" isleaf="False"></node>
+<node gid="122" id="10" text="more" label="xap0" nosuffix="more" isleaf="False"></node>
+<node gid="123" id="11" text="much" label="x12" nosuffix="much" isleaf="True"></node>
+<node gid="124" id="12" text="sealed" label="x14" nosuffix="sealed" isleaf="True"></node>
+<node gid="125" id="13" text="temporal-quantity" label="x18" nosuffix="temporal" isleaf="False"></node>
+<node gid="126" id="14" text="year" label="y" nosuffix="year" isleaf="True"></node>
+<node gid="127" id="15" text="determine-01" label="x20" nosuffix="determine" isleaf="False"></node>
+<node gid="128" id="16" text="possible" label="x23" nosuffix="possible" isleaf="False"></node>
+<node gid="129" id="17" text="duplicate" label="x24" nosuffix="duplicate" isleaf="False"></node>
+<node gid="130" id="18" text="human" label="x22" nosuffix="human" isleaf="True"></node>
+<node gid="131" id="19" text="system" label="x28" nosuffix="system" isleaf="False"></node>
+<node gid="132" id="20" text="planet" label="x25" nosuffix="planet" isleaf="False"></node>
+<node gid="133" id="21" text="name" label="n" nosuffix="name" isleaf="False"></node>
+<node gid="134" id="22" text="life" label="x27" nosuffix="life" isleaf="True"></node>
+<node gid="135" id="23" text="use-01" label="x31" nosuffix="use" isleaf="False"></node>
+<node gid="136" id="24" text="possible" label="x30" nosuffix="possible" isleaf="True"></node>
+<node gid="137" id="25" text="space" label="x33" nosuffix="space" isleaf="True"></node>
+<node gid="138" id="26" text="4" label="4" nosuffix="4" isleaf="True"></node>
+<node gid="139" id="27" text="4" label="4" nosuffix="4" isleaf="True"></node>
+<node gid="140" id="28" text="2" label="2" nosuffix="2" isleaf="True"></node>
+<node gid="141" id="29" text="Earth" label="Earth" nosuffix="Earth" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="ARG0" ></edge>
+<edge head="0" tail="3" label="ARG1" ></edge>
+<edge head="1" tail="2" label="ARG2" ></edge>
+<edge head="3" tail="1" label="ARG0" ></edge>
+<edge head="3" tail="4" label="ARG1" ></edge>
+<edge head="3" tail="7" label="location" ></edge>
+<edge head="4" tail="5" label="op1" ></edge>
+<edge head="4" tail="6" label="op2" ></edge>
+<edge head="5" tail="26" label="quant" ></edge>
+<edge head="6" tail="27" label="quant" ></edge>
+<edge head="7" tail="8" label="op1" ></edge>
+<edge head="8" tail="9" label="mod" ></edge>
+<edge head="8" tail="12" label="mod" ></edge>
+<edge head="8" tail="13" label="duration" ></edge>
+<edge head="8" tail="15" label="ARG1-of" ></edge>
+<edge head="9" tail="10" label="degree" ></edge>
+<edge head="10" tail="11" label="degree" ></edge>
+<edge head="13" tail="14" label="unit" ></edge>
+<edge head="13" tail="28" label="quant" ></edge>
+<edge head="15" tail="16" label="ARG1" ></edge>
+<edge head="16" tail="17" label="domain" ></edge>
+<edge head="17" tail="18" label="ARG0" ></edge>
+<edge head="17" tail="19" label="ARG1" ></edge>
+<edge head="19" tail="20" label="poss" ></edge>
+<edge head="19" tail="22" label="mod" ></edge>
+<edge head="19" tail="23" label="purpose" ></edge>
+<edge head="20" tail="21" label="name" ></edge>
+<edge head="21" tail="29" label="op1" ></edge>
+<edge head="23" tail="24" label="mod" ></edge>
+<edge head="23" tail="25" label="location" ></edge>
+</edges>
+</graph>
+<graph id="6">
+<nodes>
+<node gid="142" id="0" text="say-01" label="x17" nosuffix="say" isleaf="False"></node>
+<node gid="143" id="1" text="companionship" label="x12" nosuffix="companionship" isleaf="False"></node>
+<node gid="144" id="2" text="miss-03" label="x9" nosuffix="miss" isleaf="False"></node>
+<node gid="145" id="3" text="really" label="x7" nosuffix="really" isleaf="True"></node>
+<node gid="146" id="4" text="just" label="x11" nosuffix="just" isleaf="True"></node>
+<node gid="147" id="5" text="person" label="x16" nosuffix="person" isleaf="False"></node>
+<node gid="148" id="6" text="name" label="n" nosuffix="name" isleaf="False"></node>
+<node gid="149" id="7" text="ms." label="x15" nosuffix="ms." isleaf="True"></node>
+<node gid="150" id="8" text="wednesday" label="x18" nosuffix="wednesday" isleaf="True"></node>
+<node gid="151" id="9" text="module" label="x26" nosuffix="module" isleaf="False"></node>
+<node gid="152" id="10" text="interview-01" label="x22" nosuffix="interview" isleaf="False"></node>
+<node gid="153" id="11" text="telephone" label="x21" nosuffix="telephone" isleaf="True"></node>
+<node gid="154" id="12" text="ranch" label="x31" nosuffix="ranch" isleaf="False"></node>
+<node gid="155" id="13" text="about" label="x32" nosuffix="about" isleaf="False"></node>
+<node gid="156" id="14" text="distance-quantity" label="x34" nosuffix="distance" isleaf="False"></node>
+<node gid="157" id="15" text="mile" label="m" nosuffix="mile" isleaf="True"></node>
+<node gid="158" id="16" text="north" label="x35" nosuffix="north" isleaf="False"></node>
+<node gid="159" id="17" text="country" label="x37" nosuffix="country" isleaf="False"></node>
+<node gid="160" id="18" text="name" label="n1" nosuffix="name" isleaf="False"></node>
+<node gid="161" id="19" text="1" label="1" nosuffix="1" isleaf="True"></node>
+<node gid="162" id="20" text="Leigh" label="Leigh" nosuffix="Leigh" isleaf="True"></node>
+<node gid="163" id="21" text="Tucson" label="Tucson" nosuffix="Tucson" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="ARG1" ></edge>
+<edge head="0" tail="5" label="ARG0" ></edge>
+<edge head="0" tail="8" label="time" ></edge>
+<edge head="0" tail="9" label="ARG1" ></edge>
+<edge head="1" tail="2" label="ARG1-of" ></edge>
+<edge head="1" tail="4" label="mod" ></edge>
+<edge head="2" tail="19" label="null_edge" ></edge>
+<edge head="2" tail="3" label="mod" ></edge>
+<edge head="5" tail="6" label="name" ></edge>
+<edge head="5" tail="7" label="null_edge" ></edge>
+<edge head="6" tail="20" label="op1" ></edge>
+<edge head="9" tail="10" label="part-of" ></edge>
+<edge head="9" tail="12" label="location" ></edge>
+<edge head="10" tail="11" label="mod" ></edge>
+<edge head="12" tail="13" label="null_edge" ></edge>
+<edge head="12" tail="16" label="location" ></edge>
+<edge head="13" tail="14" label="op1" ></edge>
+<edge head="14" tail="15" label="unit" ></edge>
+<edge head="16" tail="17" label="null_edge" ></edge>
+<edge head="17" tail="18" label="name" ></edge>
+<edge head="18" tail="21" label="op1" ></edge>
+</edges>
+</graph>
+<graph id="7">
+<nodes>
+<node gid="164" id="0" text="say-01" label="x74" nosuffix="say" isleaf="False"></node>
+<node gid="165" id="1" text="think-01" label="x6" nosuffix="think" isleaf="False"></node>
+<node gid="166" id="2" text="person" label="x3" nosuffix="person" isleaf="False"></node>
+<node gid="167" id="3" text="name" label="n1" nosuffix="name" isleaf="False"></node>
+<node gid="168" id="4" text="person" label="x2" nosuffix="person" isleaf="False"></node>
+<node gid="169" id="5" text="name" label="n3" nosuffix="name" isleaf="False"></node>
+<node gid="170" id="6" text="matter-01" label="x18" nosuffix="matter" isleaf="False"></node>
+<node gid="171" id="7" text="miss-03" label="x15" nosuffix="miss" isleaf="False"></node>
+<node gid="172" id="8" text="really" label="x13" nosuffix="really" isleaf="True"></node>
+<node gid="173" id="9" text="lonely" label="x21" nosuffix="lonely" isleaf="True"></node>
+<node gid="174" id="10" text="something" label="x27" nosuffix="something" isleaf="False"></node>
+<node gid="175" id="11" text="and" label="x32" nosuffix="and" isleaf="False"></node>
+<node gid="176" id="12" text="just" label="x26" nosuffix="just" isleaf="True"></node>
+<node gid="177" id="13" text="sit-01" label="x33" nosuffix="sit" isleaf="False"></node>
+<node gid="178" id="14" text="contact-01" label="x31" nosuffix="contact" isleaf="False"></node>
+<node gid="179" id="15" text="direct" label="x29" nosuffix="direct" isleaf="True"></node>
+<node gid="180" id="16" text="human" label="x30" nosuffix="human" isleaf="True"></node>
+<node gid="181" id="17" text="somebody" label="x35" nosuffix="somebody" isleaf="True"></node>
+<node gid="182" id="18" text="and" label="x36" nosuffix="and" isleaf="False"></node>
+<node gid="183" id="19" text="pour-01" label="x37" nosuffix="pour" isleaf="False"></node>
+<node gid="184" id="20" text="scientist" label="x38" nosuffix="scientist" isleaf="True"></node>
+<node gid="185" id="21" text="or" label="x43" nosuffix="or" isleaf="False"></node>
+<node gid="186" id="22" text="cup" label="x40" nosuffix="cup" isleaf="True"></node>
+<node gid="187" id="23" text="tea" label="x42" nosuffix="tea" isleaf="True"></node>
+<node gid="188" id="24" text="cup" label="x45" nosuffix="cup" isleaf="False"></node>
+<node gid="189" id="25" text="coffee" label="x47" nosuffix="coffee" isleaf="True"></node>
+<node gid="190" id="26" text="and" label="x48" nosuffix="and" isleaf="False"></node>
+<node gid="191" id="27" text="have-03" label="x49" nosuffix="have" isleaf="False"></node>
+<node gid="192" id="28" text="discuss-01" label="x52" nosuffix="discuss" isleaf="False"></node>
+<node gid="193" id="29" text="morning" label="x51" nosuffix="morning" isleaf="True"></node>
+<node gid="194" id="30" text="contrast-01" label="x23" nosuffix="contrast" isleaf="True"></node>
+<node gid="195" id="31" text="person" label="x73" nosuffix="person" isleaf="False"></node>
+<node gid="196" id="32" text="name" label="n" nosuffix="name" isleaf="False"></node>
+<node gid="197" id="33" text="person" label="x72" nosuffix="person" isleaf="False"></node>
+<node gid="198" id="34" text="name" label="n2" nosuffix="name" isleaf="False"></node>
+<node gid="199" id="35" text="Leigh" label="Leigh" nosuffix="Leigh" isleaf="True"></node>
+<node gid="200" id="36" text="Linda" label="Linda" nosuffix="Linda" isleaf="True"></node>
+<node gid="201" id="37" text="1" label="1" nosuffix="1" isleaf="True"></node>
+<node gid="202" id="38" text="Leigh" label="Leigh" nosuffix="Leigh" isleaf="True"></node>
+<node gid="203" id="39" text="Linda" label="Linda" nosuffix="Linda" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="ARG1" ></edge>
+<edge head="0" tail="30" label="ARG1" ></edge>
+<edge head="0" tail="31" label="ARG0" ></edge>
+<edge head="1" tail="2" label="ARG0" ></edge>
+<edge head="1" tail="6" label="ARG1" ></edge>
+<edge head="1" tail="10" label="ARG1" ></edge>
+<edge head="2" tail="3" label="name" ></edge>
+<edge head="2" tail="4" label="null_edge" ></edge>
+<edge head="3" tail="35" label="op1" ></edge>
+<edge head="4" tail="5" label="name" ></edge>
+<edge head="5" tail="36" label="op1" ></edge>
+<edge head="6" tail="7" label="null_edge" ></edge>
+<edge head="6" tail="9" label="null_edge" ></edge>
+<edge head="7" tail="37" label="null_edge" ></edge>
+<edge head="7" tail="8" label="mod" ></edge>
+<edge head="10" tail="11" label="topic" ></edge>
+<edge head="11" tail="12" label="mod" ></edge>
+<edge head="11" tail="13" label="op1" ></edge>
+<edge head="13" tail="14" label="ARG1" ></edge>
+<edge head="13" tail="17" label="ARG2" ></edge>
+<edge head="13" tail="18" label="ARG1" ></edge>
+<edge head="13" tail="26" label="ARG1" ></edge>
+<edge head="14" tail="15" label="mod" ></edge>
+<edge head="14" tail="16" label="mod" ></edge>
+<edge head="18" tail="19" label="op2" ></edge>
+<edge head="19" tail="20" label="ARG1" ></edge>
+<edge head="19" tail="21" label="ARG1" ></edge>
+<edge head="21" tail="22" label="op1" ></edge>
+<edge head="21" tail="23" label="op2" ></edge>
+<edge head="21" tail="24" label="op2" ></edge>
+<edge head="24" tail="25" label="ARG1" ></edge>
+<edge head="26" tail="27" label="op2" ></edge>
+<edge head="27" tail="28" label="ARG1" ></edge>
+<edge head="28" tail="29" label="time" ></edge>
+<edge head="31" tail="32" label="name" ></edge>
+<edge head="31" tail="33" label="null_edge" ></edge>
+<edge head="32" tail="38" label="op1" ></edge>
+<edge head="33" tail="34" label="name" ></edge>
+<edge head="34" tail="39" label="op1" ></edge>
+</edges>
+</graph>
+<graph id="8">
+<nodes>
+<node gid="204" id="0" text="content-01" label="x10" nosuffix="content" isleaf="False"></node>
+<node gid="205" id="1" text="that" label="x4" nosuffix="that" isleaf="False"></node>
+<node gid="206" id="2" text="newspaper" label="x6" nosuffix="newspaper" isleaf="False"></node>
+<node gid="207" id="3" text="name" label="n" nosuffix="name" isleaf="False"></node>
+<node gid="208" id="4" text="quite" label="x9" nosuffix="quite" isleaf="True"></node>
+<node gid="209" id="5" text="inside" label="x13" nosuffix="inside" isleaf="False"></node>
+<node gid="210" id="6" text="Linda" label="Linda" nosuffix="Linda" isleaf="True"></node>
+<node gid="211" id="7" text="Leigh" label="Leigh" nosuffix="Leigh" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="ARG2" ></edge>
+<edge head="0" tail="2" label="ARG0" ></edge>
+<edge head="0" tail="4" label="degree" ></edge>
+<edge head="0" tail="5" label="ARG2" ></edge>
+<edge head="1" tail="2" label="ARG0" ></edge>
+<edge head="2" tail="3" label="name" ></edge>
+<edge head="3" tail="6" label="op1" ></edge>
+<edge head="3" tail="7" label="op2" ></edge>
+<edge head="5" tail="2" label="ARG0" ></edge>
+</edges>
+</graph>
+<graph id="9">
+<nodes>
+<node gid="212" id="0" text="feel-01" label="x3" nosuffix="feel" isleaf="False"></node>
+<node gid="213" id="1" text="person" label="x2" nosuffix="person" isleaf="False"></node>
+<node gid="214" id="2" text="name" label="n" nosuffix="name" isleaf="False"></node>
+<node gid="215" id="3" text="person" label="x1" nosuffix="person" isleaf="False"></node>
+<node gid="216" id="4" text="name" label="n1" nosuffix="name" isleaf="False"></node>
+<node gid="217" id="5" text="possible" label="x7" nosuffix="possible" isleaf="False"></node>
+<node gid="218" id="6" text="stay-01" label="x8" nosuffix="stay" isleaf="False"></node>
+<node gid="219" id="7" text="newspaper" label="x5" nosuffix="newspaper" isleaf="False"></node>
+<node gid="220" id="8" text="name" label="n2" nosuffix="name" isleaf="False"></node>
+<node gid="221" id="9" text="here" label="x10" nosuffix="here" isleaf="True"></node>
+<node gid="222" id="10" text="indefinite" label="x11" nosuffix="indefinite" isleaf="True"></node>
+<node gid="223" id="11" text="Leigh" label="Leigh" nosuffix="Leigh" isleaf="True"></node>
+<node gid="224" id="12" text="Linda" label="Linda" nosuffix="Linda" isleaf="True"></node>
+<node gid="225" id="13" text="Linda" label="Linda" nosuffix="Linda" isleaf="True"></node>
+<node gid="226" id="14" text="Leigh" label="Leigh" nosuffix="Leigh" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="ARG0" ></edge>
+<edge head="0" tail="5" label="ARG1" ></edge>
+<edge head="1" tail="2" label="name" ></edge>
+<edge head="1" tail="3" label="null_edge" ></edge>
+<edge head="2" tail="11" label="op1" ></edge>
+<edge head="3" tail="4" label="name" ></edge>
+<edge head="4" tail="12" label="op1" ></edge>
+<edge head="5" tail="6" label="domain" ></edge>
+<edge head="6" tail="7" label="ARG1" ></edge>
+<edge head="6" tail="9" label="location" ></edge>
+<edge head="6" tail="10" label="duration" ></edge>
+<edge head="7" tail="8" label="name" ></edge>
+<edge head="8" tail="13" label="op1" ></edge>
+<edge head="8" tail="14" label="op2" ></edge>
+</edges>
+</graph>
+<graph id="10">
+<nodes>
+<node gid="227" id="0" text="contact-01" label="x15" nosuffix="contact" isleaf="False"></node>
+<node gid="228" id="1" text="since" label="x1" nosuffix="since" isleaf="False"></node>
+<node gid="229" id="2" text="enter-01" label="x2" nosuffix="enter" isleaf="False"></node>
+<node gid="230" id="3" text="module" label="x4" nosuffix="module" isleaf="True"></node>
+<node gid="231" id="4" text="name" label="x5" nosuffix="name" isleaf="False"></node>
+<node gid="232" id="5" text="person" label="x9" nosuffix="person" isleaf="False"></node>
+<node gid="233" id="6" text="name" label="n" nosuffix="name" isleaf="False"></node>
+<node gid="234" id="7" text="ms." label="x8" nosuffix="ms." isleaf="True"></node>
+<node gid="235" id="8" text="frequent" label="x13" nosuffix="frequent" isleaf="True"></node>
+<node gid="236" id="9" text="team" label="x20" nosuffix="team" isleaf="False"></node>
+<node gid="237" id="10" text="support-01" label="x19" nosuffix="support" isleaf="False"></node>
+<node gid="238" id="11" text="outside" label="x18" nosuffix="outside" isleaf="True"></node>
+<node gid="239" id="12" text="conference" label="x25" nosuffix="conference" isleaf="False"></node>
+<node gid="240" id="13" text="video" label="x24" nosuffix="video" isleaf="True"></node>
+<node gid="241" id="14" text="and" label="x29" nosuffix="and" isleaf="False"></node>
+<node gid="242" id="15" text="telephone-01" label="x22" nosuffix="telephone" isleaf="True"></node>
+<node gid="243" id="16" text="radio" label="x28" nosuffix="radio" isleaf="False"></node>
+<node gid="244" id="17" text="two-way" label="x27" nosuffix="two" isleaf="True"></node>
+<node gid="245" id="18" text="look-01" label="x31" nosuffix="look" isleaf="False"></node>
+<node gid="246" id="19" text="just" label="x30" nosuffix="just" isleaf="True"></node>
+<node gid="247" id="20" text="window" label="x35" nosuffix="window" isleaf="False"></node>
+<node gid="248" id="21" text="glass" label="x34" nosuffix="glass" isleaf="True"></node>
+<node gid="249" id="22" text="Nov." label="Nov." nosuffix="Nov." isleaf="True"></node>
+<node gid="250" id="23" text="2" label="2" nosuffix="2" isleaf="True"></node>
+<node gid="251" id="24" text="Leigh" label="Leigh" nosuffix="Leigh" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="time" ></edge>
+<edge head="0" tail="5" label="ARG0" ></edge>
+<edge head="0" tail="8" label="frequency" ></edge>
+<edge head="0" tail="9" label="ARG1" ></edge>
+<edge head="0" tail="12" label="ARG0" ></edge>
+<edge head="1" tail="2" label="op1" ></edge>
+<edge head="2" tail="3" label="ARG1" ></edge>
+<edge head="2" tail="4" label="time" ></edge>
+<edge head="4" tail="22" label="op1" ></edge>
+<edge head="4" tail="23" label="op2" ></edge>
+<edge head="5" tail="6" label="name" ></edge>
+<edge head="5" tail="7" label="null_edge" ></edge>
+<edge head="6" tail="24" label="op1" ></edge>
+<edge head="9" tail="10" label="ARG0-of" ></edge>
+<edge head="10" tail="11" label="ARG1" ></edge>
+<edge head="12" tail="13" label="mod" ></edge>
+<edge head="12" tail="14" label="beneficiary" ></edge>
+<edge head="14" tail="15" label="op1" ></edge>
+<edge head="14" tail="16" label="op2" ></edge>
+<edge head="14" tail="18" label="op2" ></edge>
+<edge head="16" tail="17" label="mod" ></edge>
+<edge head="18" tail="19" label="mod" ></edge>
+<edge head="18" tail="20" label="ARG1" ></edge>
+<edge head="20" tail="21" label="consist-of" ></edge>
+</edges>
+</graph>
+<graph id="11">
+<nodes>
+<node gid="252" id="0" text="show-01" label="x28" nosuffix="show" isleaf="False"></node>
+<node gid="253" id="1" text="check-01" label="x4" nosuffix="check" isleaf="False"></node>
+<node gid="254" id="2" text="medicine" label="x3" nosuffix="medicine" isleaf="True"></node>
+<node gid="255" id="3" text="pulse" label="x7" nosuffix="pulse" isleaf="False"></node>
+<node gid="256" id="4" text="rest" label="x9" nosuffix="rest" isleaf="False"></node>
+<node gid="257" id="5" text="after" label="x11" nosuffix="after" isleaf="False"></node>
+<node gid="258" id="6" text="exercise-02" label="x12" nosuffix="exercise" isleaf="False"></node>
+<node gid="259" id="7" text="pressure-01" label="x15" nosuffix="pressure" isleaf="False"></node>
+<node gid="260" id="8" text="blood" label="x14" nosuffix="blood" isleaf="True"></node>
+<node gid="261" id="9" text="and" label="x23" nosuffix="and" isleaf="False"></node>
+<node gid="262" id="10" text="function-01" label="x18" nosuffix="function" isleaf="False"></node>
+<node gid="263" id="11" text="pulmonary" label="x17" nosuffix="pulmonary" isleaf="True"></node>
+<node gid="264" id="12" text="saturation" label="x22" nosuffix="saturation" isleaf="False"></node>
+<node gid="265" id="13" text="blood" label="x20" nosuffix="blood" isleaf="True"></node>
+<node gid="266" id="14" text="oxygen" label="x21" nosuffix="oxygen" isleaf="True"></node>
+<node gid="267" id="15" text="test-01" label="x25" nosuffix="test" isleaf="False"></node>
+<node gid="268" id="16" text="urine" label="x24" nosuffix="urine" isleaf="True"></node>
+<node gid="269" id="17" text="health" label="x31" nosuffix="health" isleaf="False"></node>
+<node gid="270" id="18" text="person" label="x29" nosuffix="person" isleaf="False"></node>
+<node gid="271" id="19" text="name" label="n" nosuffix="name" isleaf="False"></node>
+<node gid="272" id="20" text="person" label="x30" nosuffix="person" isleaf="False"></node>
+<node gid="273" id="21" text="name" label="n1" nosuffix="name" isleaf="False"></node>
+<node gid="274" id="22" text="positive" label="x35" nosuffix="positive" isleaf="False"></node>
+<node gid="275" id="23" text="unbelievably" label="x34" nosuffix="unbelievably" isleaf="True"></node>
+<node gid="276" id="24" text="3" label="3" nosuffix="3" isleaf="True"></node>
+<node gid="277" id="25" text="Linda" label="Linda" nosuffix="Linda" isleaf="True"></node>
+<node gid="278" id="26" text="Leigh" label="Leigh" nosuffix="Leigh" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="ARG0" ></edge>
+<edge head="0" tail="17" label="ARG1" ></edge>
+<edge head="0" tail="22" label="null_edge" ></edge>
+<edge head="1" tail="24" label="quant" ></edge>
+<edge head="1" tail="2" label="mod" ></edge>
+<edge head="1" tail="3" label="ARG1" ></edge>
+<edge head="1" tail="9" label="topic" ></edge>
+<edge head="3" tail="4" label="location" ></edge>
+<edge head="4" tail="5" label="time" ></edge>
+<edge head="5" tail="6" label="op1" ></edge>
+<edge head="6" tail="7" label="ARG1" ></edge>
+<edge head="7" tail="8" label="mod" ></edge>
+<edge head="9" tail="10" label="op1" ></edge>
+<edge head="9" tail="12" label="op2" ></edge>
+<edge head="9" tail="15" label="op2" ></edge>
+<edge head="10" tail="11" label="mod" ></edge>
+<edge head="12" tail="13" label="mod" ></edge>
+<edge head="12" tail="14" label="mod" ></edge>
+<edge head="15" tail="16" label="ARG1" ></edge>
+<edge head="17" tail="18" label="poss" ></edge>
+<edge head="17" tail="20" label="mod" ></edge>
+<edge head="18" tail="19" label="name" ></edge>
+<edge head="19" tail="25" label="op1" ></edge>
+<edge head="20" tail="21" label="name" ></edge>
+<edge head="21" tail="26" label="op1" ></edge>
+<edge head="22" tail="23" label="mod" ></edge>
+</edges>
+</graph>
+<graph id="12">
+<nodes>
+<node gid="279" id="0" text="say-01" label="x14" nosuffix="say" isleaf="False"></node>
+<node gid="280" id="1" text="believe-01" label="x8" nosuffix="believe" isleaf="False"></node>
+<node gid="281" id="2" text="physician" label="x2" nosuffix="physician" isleaf="False"></node>
+<node gid="282" id="3" text="outside" label="x5" nosuffix="outside" isleaf="True"></node>
+<node gid="283" id="4" text="it" label="x9" nosuffix="it" isleaf="True"></node>
+<node gid="284" id="5" text="person" label="x13" nosuffix="person" isleaf="False"></node>
+<node gid="285" id="6" text="name" label="n" nosuffix="name" isleaf="False"></node>
+<node gid="286" id="7" text="person" label="x12" nosuffix="person" isleaf="False"></node>
+<node gid="287" id="8" text="name" label="n1" nosuffix="name" isleaf="False"></node>
+<node gid="288" id="9" text="Leigh" label="Leigh" nosuffix="Leigh" isleaf="True"></node>
+<node gid="289" id="10" text="Linda" label="Linda" nosuffix="Linda" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="ARG1" ></edge>
+<edge head="0" tail="5" label="ARG0" ></edge>
+<edge head="1" tail="2" label="ARG0" ></edge>
+<edge head="1" tail="4" label="ARG1" ></edge>
+<edge head="2" tail="3" label="location" ></edge>
+<edge head="5" tail="6" label="name" ></edge>
+<edge head="5" tail="7" label="null_edge" ></edge>
+<edge head="6" tail="9" label="op1" ></edge>
+<edge head="7" tail="8" label="name" ></edge>
+<edge head="8" tail="10" label="op1" ></edge>
+</edges>
+</graph>
+<graph id="13">
+<nodes>
+<node gid="290" id="0" text="say-01" label="x13" nosuffix="say" isleaf="False"></node>
+<node gid="291" id="1" text="check-01" label="x4" nosuffix="check" isleaf="False"></node>
+<node gid="292" id="2" text="also" label="x3" nosuffix="also" isleaf="True"></node>
+<node gid="293" id="3" text="name" label="x5" nosuffix="name" isleaf="False"></node>
+<node gid="294" id="4" text="psychology" label="x7" nosuffix="psychology" isleaf="True"></node>
+<node gid="295" id="5" text="person" label="x12" nosuffix="person" isleaf="False"></node>
+<node gid="296" id="6" text="name" label="n" nosuffix="name" isleaf="False"></node>
+<node gid="297" id="7" text="ms." label="x11" nosuffix="ms." isleaf="True"></node>
+<node gid="298" id="8" text="just" label="x16" nosuffix="just" isleaf="True"></node>
+<node gid="299" id="9" text="sure-fire" label="x19" nosuffix="sure" isleaf="False"></node>
+<node gid="300" id="10" text="normal" label="x29" nosuffix="normal" isleaf="False"></node>
+<node gid="301" id="11" text="state" label="x23" nosuffix="state" isleaf="False"></node>
+<node gid="302" id="12" text="person" label="x21" nosuffix="person" isleaf="False"></node>
+<node gid="303" id="13" text="name" label="n1" nosuffix="name" isleaf="False"></node>
+<node gid="304" id="14" text="person" label="x22" nosuffix="person" isleaf="False"></node>
+<node gid="305" id="15" text="name" label="n2" nosuffix="name" isleaf="False"></node>
+<node gid="306" id="16" text="or" label="x26" nosuffix="or" isleaf="False"></node>
+<node gid="307" id="17" text="mind" label="x25" nosuffix="mind" isleaf="True"></node>
+<node gid="308" id="18" text="humor-01" label="x27" nosuffix="humor" isleaf="True"></node>
+<node gid="309" id="19" text="rate-entity-91" label="xap0" nosuffix="rate" isleaf="False"></node>
+<node gid="310" id="20" text="temporal-quantity" label="x9" nosuffix="temporal" isleaf="False"></node>
+<node gid="311" id="21" text="day" label="d" nosuffix="day" isleaf="True"></node>
+<node gid="312" id="22" text="Linda" label="Linda" nosuffix="Linda" isleaf="True"></node>
+<node gid="313" id="23" text="Leigh" label="Leigh" nosuffix="Leigh" isleaf="True"></node>
+<node gid="314" id="24" text="Leigh" label="Leigh" nosuffix="Leigh" isleaf="True"></node>
+<node gid="315" id="25" text="Linda" label="Linda" nosuffix="Linda" isleaf="True"></node>
+<node gid="316" id="26" text="Leigh" label="Leigh" nosuffix="Leigh" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="ARG1" ></edge>
+<edge head="0" tail="5" label="ARG0" ></edge>
+<edge head="0" tail="8" label="mod" ></edge>
+<edge head="0" tail="9" label="ARG1" ></edge>
+<edge head="0" tail="19" label="ARG1" ></edge>
+<edge head="1" tail="2" label="mod" ></edge>
+<edge head="1" tail="3" label="ARG1" ></edge>
+<edge head="1" tail="4" label="manner" ></edge>
+<edge head="3" tail="22" label="op1" ></edge>
+<edge head="3" tail="23" label="op2" ></edge>
+<edge head="5" tail="6" label="name" ></edge>
+<edge head="5" tail="7" label="null_edge" ></edge>
+<edge head="6" tail="24" label="op1" ></edge>
+<edge head="9" tail="10" label="null_edge" ></edge>
+<edge head="10" tail="11" label="domain" ></edge>
+<edge head="11" tail="12" label="ARG0" ></edge>
+<edge head="11" tail="14" label="mod" ></edge>
+<edge head="11" tail="16" label="ARG1" ></edge>
+<edge head="12" tail="13" label="name" ></edge>
+<edge head="13" tail="25" label="op1" ></edge>
+<edge head="14" tail="15" label="name" ></edge>
+<edge head="15" tail="26" label="op1" ></edge>
+<edge head="16" tail="17" label="op1" ></edge>
+<edge head="16" tail="18" label="op2" ></edge>
+<edge head="19" tail="20" label="ARG2" ></edge>
+<edge head="20" tail="21" label="unit" ></edge>
+</edges>
+</graph>
+<graph id="14">
+<nodes>
+<node gid="317" id="0" text="baked" label="x3" nosuffix="baked" isleaf="False"></node>
+<node gid="318" id="1" text="person" label="x2" nosuffix="person" isleaf="False"></node>
+<node gid="319" id="2" text="name" label="n" nosuffix="name" isleaf="False"></node>
+<node gid="320" id="3" text="ms." label="x1" nosuffix="ms." isleaf="True"></node>
+<node gid="321" id="4" text="name" label="x4" nosuffix="name" isleaf="False"></node>
+<node gid="322" id="5" text="cake" label="x9" nosuffix="cake" isleaf="False"></node>
+<node gid="323" id="6" text="birthday" label="x8" nosuffix="birthday" isleaf="True"></node>
+<node gid="324" id="7" text="date-entity" label="x11" nosuffix="date" isleaf="True"></node>
+<node gid="325" id="8" text="and" label="x18" nosuffix="and" isleaf="False"></node>
+<node gid="326" id="9" text="sorghum" label="x14" nosuffix="sorghum" isleaf="True"></node>
+<node gid="327" id="10" text="flour" label="x17" nosuffix="flour" isleaf="False"></node>
+<node gid="328" id="11" text="rice" label="x16" nosuffix="rice" isleaf="True"></node>
+<node gid="329" id="12" text="potatoe" label="x20" nosuffix="potatoe" isleaf="False"></node>
+<node gid="330" id="13" text="sweet" label="x19" nosuffix="sweet" isleaf="True"></node>
+<node gid="331" id="14" text="harvest-01" label="x21" nosuffix="harvest" isleaf="False"></node>
+<node gid="332" id="15" text="person" label="x24" nosuffix="person" isleaf="False"></node>
+<node gid="333" id="16" text="name" label="n1" nosuffix="name" isleaf="False"></node>
+<node gid="334" id="17" text="person" label="x23" nosuffix="person" isleaf="False"></node>
+<node gid="335" id="18" text="name" label="n2" nosuffix="name" isleaf="False"></node>
+<node gid="336" id="19" text="mini-field" label="x25" nosuffix="mini" isleaf="True"></node>
+<node gid="337" id="20" text="Leigh" label="Leigh" nosuffix="Leigh" isleaf="True"></node>
+<node gid="338" id="21" text="Linda" label="Linda" nosuffix="Linda" isleaf="True"></node>
+<node gid="339" id="22" text="Leigh" label="Leigh" nosuffix="Leigh" isleaf="True"></node>
+<node gid="340" id="23" text="Leigh" label="Leigh" nosuffix="Leigh" isleaf="True"></node>
+<node gid="341" id="24" text="Linda" label="Linda" nosuffix="Linda" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="ARG0" ></edge>
+<edge head="0" tail="4" label="name" ></edge>
+<edge head="0" tail="5" label="ARG1" ></edge>
+<edge head="0" tail="7" label="time" ></edge>
+<edge head="0" tail="8" label="ARG1" ></edge>
+<edge head="1" tail="2" label="name" ></edge>
+<edge head="1" tail="3" label="null_edge" ></edge>
+<edge head="2" tail="20" label="op1" ></edge>
+<edge head="4" tail="21" label="op1" ></edge>
+<edge head="4" tail="22" label="op2" ></edge>
+<edge head="5" tail="6" label="mod" ></edge>
+<edge head="8" tail="9" label="op1" ></edge>
+<edge head="8" tail="10" label="op2" ></edge>
+<edge head="8" tail="12" label="op2" ></edge>
+<edge head="10" tail="11" label="mod" ></edge>
+<edge head="12" tail="13" label="mod" ></edge>
+<edge head="12" tail="14" label="ARG1-of" ></edge>
+<edge head="14" tail="15" label="ARG2" ></edge>
+<edge head="15" tail="16" label="name" ></edge>
+<edge head="15" tail="17" label="null_edge" ></edge>
+<edge head="15" tail="19" label="ARG0-of" ></edge>
+<edge head="16" tail="23" label="op1" ></edge>
+<edge head="17" tail="18" label="name" ></edge>
+<edge head="18" tail="24" label="op1" ></edge>
+</edges>
+</graph>
+<graph id="15">
+<nodes>
+<node gid="342" id="0" text="and" label="x14" nosuffix="and" isleaf="False"></node>
+<node gid="343" id="1" text="serenade" label="x4" nosuffix="serenade" isleaf="False"></node>
+<node gid="344" id="2" text="colleague" label="x3" nosuffix="colleague" isleaf="False"></node>
+<node gid="345" id="3" text="person" label="x1" nosuffix="person" isleaf="False"></node>
+<node gid="346" id="4" text="name" label="n" nosuffix="name" isleaf="False"></node>
+<node gid="347" id="5" text="person" label="x2" nosuffix="person" isleaf="False"></node>
+<node gid="348" id="6" text="name" label="n1" nosuffix="name" isleaf="False"></node>
+<node gid="349" id="7" text="name" label="x5" nosuffix="name" isleaf="False"></node>
+<node gid="350" id="8" text="birthday" label="x10" nosuffix="birthday" isleaf="False"></node>
+<node gid="351" id="9" text="happy" label="x9" nosuffix="happy" isleaf="True"></node>
+<node gid="352" id="10" text="video" label="x13" nosuffix="video" isleaf="True"></node>
+<node gid="353" id="11" text="direct-01" label="x15" nosuffix="direct" isleaf="False"></node>
+<node gid="354" id="12" text="gift-01" label="x19" nosuffix="gift" isleaf="False"></node>
+<node gid="355" id="13" text="hide-01" label="x20" nosuffix="hide" isleaf="False"></node>
+<node gid="356" id="14" text="name" label="x16" nosuffix="name" isleaf="False"></node>
+<node gid="357" id="15" text="area" label="x24" nosuffix="area" isleaf="False"></node>
+<node gid="358" id="16" text="live-01" label="x23" nosuffix="live" isleaf="True"></node>
+<node gid="359" id="17" text="Linda" label="Linda" nosuffix="Linda" isleaf="True"></node>
+<node gid="360" id="18" text="Leigh" label="Leigh" nosuffix="Leigh" isleaf="True"></node>
+<node gid="361" id="19" text="Linda" label="Linda" nosuffix="Linda" isleaf="True"></node>
+<node gid="362" id="20" text="Leigh" label="Leigh" nosuffix="Leigh" isleaf="True"></node>
+<node gid="363" id="21" text="Linda" label="Linda" nosuffix="Linda" isleaf="True"></node>
+<node gid="364" id="22" text="Leigh" label="Leigh" nosuffix="Leigh" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="op1" ></edge>
+<edge head="0" tail="11" label="op2" ></edge>
+<edge head="1" tail="2" label="ARG0" ></edge>
+<edge head="1" tail="7" label="ARG1" ></edge>
+<edge head="1" tail="8" label="ARG2" ></edge>
+<edge head="1" tail="10" label="ARG0" ></edge>
+<edge head="2" tail="3" label="null_edge" ></edge>
+<edge head="2" tail="5" label="mod" ></edge>
+<edge head="3" tail="4" label="name" ></edge>
+<edge head="4" tail="17" label="op1" ></edge>
+<edge head="5" tail="6" label="name" ></edge>
+<edge head="6" tail="18" label="op1" ></edge>
+<edge head="7" tail="19" label="op1" ></edge>
+<edge head="7" tail="20" label="op2" ></edge>
+<edge head="8" tail="9" label="mod" ></edge>
+<edge head="11" tail="12" label="ARG2" ></edge>
+<edge head="12" tail="13" label="ARG1-of" ></edge>
+<edge head="13" tail="14" label="ARG0" ></edge>
+<edge head="13" tail="15" label="location" ></edge>
+<edge head="14" tail="21" label="op1" ></edge>
+<edge head="14" tail="22" label="op2" ></edge>
+<edge head="15" tail="16" label="location-of" ></edge>
+</edges>
+</graph>
+<graph id="16">
+<nodes>
+<node gid="365" id="0" text="range-01" label="x4" nosuffix="range" isleaf="False"></node>
+<node gid="366" id="1" text="crop" label="x2" nosuffix="crop" isleaf="False"></node>
+<node gid="367" id="2" text="other" label="x1" nosuffix="other" isleaf="True"></node>
+<node gid="368" id="3" text="pepper" label="x7" nosuffix="pepper" isleaf="False"></node>
+<node gid="369" id="4" text="kohlrabi" label="x9" nosuffix="kohlrabi" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="ARG1" ></edge>
+<edge head="0" tail="3" label="ARG3" ></edge>
+<edge head="1" tail="2" label="mod" ></edge>
+<edge head="3" tail="4" label="ARG2" ></edge>
+</edges>
+</graph>
+<graph id="17">
+<nodes>
+<node gid="370" id="0" text="mint" label="x4" nosuffix="mint" isleaf="False"></node>
+<node gid="371" id="1" text="and" label="x7" nosuffix="and" isleaf="False"></node>
+<node gid="372" id="2" text="grass" label="x2" nosuffix="grass" isleaf="False"></node>
+<node gid="373" id="3" text="lemon" label="x1" nosuffix="lemon" isleaf="True"></node>
+<node gid="374" id="4" text="tarragon" label="x6" nosuffix="tarragon" isleaf="True"></node>
+<node gid="375" id="5" text="fennel" label="x8" nosuffix="fennel" isleaf="True"></node>
+<node gid="376" id="6" text="herb" label="x12" nosuffix="herb" isleaf="False"></node>
+<node gid="377" id="7" text="use-01" label="x16" nosuffix="use" isleaf="False"></node>
+<node gid="378" id="8" text="newspaper" label="x13" nosuffix="newspaper" isleaf="False"></node>
+<node gid="379" id="9" text="name" label="n" nosuffix="name" isleaf="False"></node>
+<node gid="380" id="10" text="and" label="x22" nosuffix="and" isleaf="False"></node>
+<node gid="381" id="11" text="season" label="x18" nosuffix="season" isleaf="True"></node>
+<node gid="382" id="12" text="meal" label="x21" nosuffix="meal" isleaf="False"></node>
+<node gid="383" id="13" text="person" label="x19" nosuffix="person" isleaf="False"></node>
+<node gid="384" id="14" text="name" label="n1" nosuffix="name" isleaf="False"></node>
+<node gid="385" id="15" text="person" label="x20" nosuffix="person" isleaf="False"></node>
+<node gid="386" id="16" text="name" label="n2" nosuffix="name" isleaf="False"></node>
+<node gid="387" id="17" text="tea" label="x24" nosuffix="tea" isleaf="True"></node>
+<node gid="388" id="18" text="Linda" label="Linda" nosuffix="Linda" isleaf="True"></node>
+<node gid="389" id="19" text="Leigh" label="Leigh" nosuffix="Leigh" isleaf="True"></node>
+<node gid="390" id="20" text="Linda" label="Linda" nosuffix="Linda" isleaf="True"></node>
+<node gid="391" id="21" text="Leigh" label="Leigh" nosuffix="Leigh" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="ARG1" ></edge>
+<edge head="1" tail="2" label="op1" ></edge>
+<edge head="1" tail="4" label="op2" ></edge>
+<edge head="1" tail="5" label="op2" ></edge>
+<edge head="1" tail="6" label="op1" ></edge>
+<edge head="2" tail="3" label="mod" ></edge>
+<edge head="6" tail="7" label="ARG1-of" ></edge>
+<edge head="7" tail="8" label="ARG0" ></edge>
+<edge head="7" tail="10" label="ARG2" ></edge>
+<edge head="8" tail="9" label="name" ></edge>
+<edge head="9" tail="18" label="op1" ></edge>
+<edge head="9" tail="19" label="op2" ></edge>
+<edge head="10" tail="11" label="op1" ></edge>
+<edge head="10" tail="12" label="op1" ></edge>
+<edge head="10" tail="17" label="op2" ></edge>
+<edge head="12" tail="13" label="poss" ></edge>
+<edge head="12" tail="15" label="mod" ></edge>
+<edge head="13" tail="14" label="name" ></edge>
+<edge head="14" tail="20" label="op1" ></edge>
+<edge head="15" tail="16" label="name" ></edge>
+<edge head="16" tail="21" label="op1" ></edge>
+</edges>
+</graph>
+<graph id="18">
+<nodes>
+<node gid="392" id="0" text="have-03" label="x4" nosuffix="have" isleaf="False"></node>
+<node gid="393" id="1" text="newspaper" label="x1" nosuffix="newspaper" isleaf="False"></node>
+<node gid="394" id="2" text="name" label="n" nosuffix="name" isleaf="False"></node>
+<node gid="395" id="3" text="also" label="x3" nosuffix="also" isleaf="True"></node>
+<node gid="396" id="4" text="tank" label="x6" nosuffix="tank" isleaf="False"></node>
+<node gid="397" id="5" text="fish" label="x9" nosuffix="fish" isleaf="False"></node>
+<node gid="398" id="6" text="talapium" label="x8" nosuffix="talapium" isleaf="True"></node>
+<node gid="399" id="7" text="Linda" label="Linda" nosuffix="Linda" isleaf="True"></node>
+<node gid="400" id="8" text="Leigh" label="Leigh" nosuffix="Leigh" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="ARG0" ></edge>
+<edge head="0" tail="3" label="mod" ></edge>
+<edge head="0" tail="4" label="ARG1" ></edge>
+<edge head="1" tail="2" label="name" ></edge>
+<edge head="2" tail="7" label="op1" ></edge>
+<edge head="2" tail="8" label="op2" ></edge>
+<edge head="4" tail="5" label="mod" ></edge>
+<edge head="5" tail="6" label="mod" ></edge>
+</edges>
+</graph>
+<graph id="19">
+<nodes>
+<node gid="401" id="0" text="say-01" label="x15" nosuffix="say" isleaf="False"></node>
+<node gid="402" id="1" text="name" label="x2" nosuffix="name" isleaf="False"></node>
+<node gid="403" id="2" text="talapium" label="x5" nosuffix="talapium" isleaf="True"></node>
+<node gid="404" id="3" text="other" label="x9" nosuffix="other" isleaf="True"></node>
+<node gid="405" id="4" text="person" label="x14" nosuffix="person" isleaf="False"></node>
+<node gid="406" id="5" text="name" label="n" nosuffix="name" isleaf="False"></node>
+<node gid="407" id="6" text="person" label="x13" nosuffix="person" isleaf="False"></node>
+<node gid="408" id="7" text="name" label="n1" nosuffix="name" isleaf="False"></node>
+<node gid="409" id="8" text="Linda" label="Linda" nosuffix="Linda" isleaf="True"></node>
+<node gid="410" id="9" text="Leigh" label="Leigh" nosuffix="Leigh" isleaf="True"></node>
+<node gid="411" id="10" text="had" label="had" nosuffix="had" isleaf="True"></node>
+<node gid="412" id="11" text="talapia" label="talapia" nosuffix="talapia" isleaf="True"></node>
+<node gid="413" id="12" text="Vera" label="Vera" nosuffix="Vera" isleaf="True"></node>
+<node gid="414" id="13" text="Cruzana" label="Cruzana" nosuffix="Cruzana" isleaf="True"></node>
+<node gid="415" id="14" text="the" label="the" nosuffix="the" isleaf="True"></node>
+<node gid="416" id="15" text="other" label="other" nosuffix="other" isleaf="True"></node>
+<node gid="417" id="16" text="night" label="night" nosuffix="night" isleaf="True"></node>
+<node gid="418" id="17" text="Leigh" label="Leigh" nosuffix="Leigh" isleaf="True"></node>
+<node gid="419" id="18" text="Linda" label="Linda" nosuffix="Linda" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="name" ></edge>
+<edge head="0" tail="4" label="ARG0" ></edge>
+<edge head="1" tail="8" label="op1" ></edge>
+<edge head="1" tail="9" label="op2" ></edge>
+<edge head="1" tail="10" label="op3" ></edge>
+<edge head="1" tail="11" label="op4" ></edge>
+<edge head="1" tail="12" label="op5" ></edge>
+<edge head="1" tail="13" label="op6" ></edge>
+<edge head="1" tail="14" label="op7" ></edge>
+<edge head="1" tail="15" label="op8" ></edge>
+<edge head="1" tail="16" label="op9" ></edge>
+<edge head="1" tail="2" label="ARG0-of" ></edge>
+<edge head="1" tail="3" label="mod" ></edge>
+<edge head="4" tail="5" label="name" ></edge>
+<edge head="4" tail="6" label="null_edge" ></edge>
+<edge head="5" tail="17" label="op1" ></edge>
+<edge head="6" tail="7" label="name" ></edge>
+<edge head="7" tail="18" label="op1" ></edge>
+</edges>
+</graph>
+<graph id="20">
+<nodes>
+<node gid="420" id="0" text="water" label="x1" nosuffix="water" isleaf="False"></node>
+<node gid="421" id="1" text="dehumidify" label="x9" nosuffix="dehumidify" isleaf="False"></node>
+<node gid="422" id="2" text="and" label="x6" nosuffix="and" isleaf="False"></node>
+<node gid="423" id="3" text="drink-01" label="x3" nosuffix="drink" isleaf="True"></node>
+<node gid="424" id="4" text="cooking" label="x5" nosuffix="cooking" isleaf="True"></node>
+<node gid="425" id="5" text="showering" label="x7" nosuffix="showering" isleaf="True"></node>
+<node gid="426" id="6" text="air" label="x12" nosuffix="air" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="ARG1" ></edge>
+<edge head="1" tail="2" label="ARG1" ></edge>
+<edge head="1" tail="6" label="ARG2" ></edge>
+<edge head="2" tail="3" label="op1" ></edge>
+<edge head="2" tail="4" label="op2" ></edge>
+<edge head="2" tail="5" label="op2" ></edge>
+</edges>
+</graph>
+<graph id="21">
+<nodes>
+<node gid="427" id="0" text="pass-01" label="x3" nosuffix="pass" isleaf="False"></node>
+<node gid="428" id="1" text="thing" label="x1" nosuffix="thing" isleaf="False"></node>
+<node gid="429" id="2" text="sample-01" label="s" nosuffix="sample" isleaf="True"></node>
+<node gid="430" id="3" text="port" label="x7" nosuffix="port" isleaf="False"></node>
+<node gid="431" id="4" text="special" label="x6" nosuffix="special" isleaf="True"></node>
+<node gid="432" id="5" text="thing" label="x14" nosuffix="thing" isleaf="False"></node>
+<node gid="433" id="6" text="sample-01" label="s1" nosuffix="sample" isleaf="True"></node>
+<node gid="434" id="7" text="and" label="x18" nosuffix="and" isleaf="False"></node>
+<node gid="435" id="8" text="analyze-01" label="x10" nosuffix="analyze" isleaf="False"></node>
+<node gid="436" id="9" text="outside" label="x9" nosuffix="outside" isleaf="True"></node>
+<node gid="437" id="10" text="water" label="x17" nosuffix="water" isleaf="False"></node>
+<node gid="438" id="11" text="waste" label="x16" nosuffix="waste" isleaf="True"></node>
+<node gid="439" id="12" text="urine" label="x21" nosuffix="urine" isleaf="False"></node>
+<node gid="440" id="13" text="person" label="x19" nosuffix="person" isleaf="False"></node>
+<node gid="441" id="14" text="name" label="n" nosuffix="name" isleaf="False"></node>
+<node gid="442" id="15" text="person" label="x20" nosuffix="person" isleaf="False"></node>
+<node gid="443" id="16" text="name" label="n1" nosuffix="name" isleaf="False"></node>
+<node gid="444" id="17" text="Linda" label="Linda" nosuffix="Linda" isleaf="True"></node>
+<node gid="445" id="18" text="Leigh" label="Leigh" nosuffix="Leigh" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="ARG1" ></edge>
+<edge head="0" tail="3" label="ARG2" ></edge>
+<edge head="1" tail="2" label="ARG1-of" ></edge>
+<edge head="3" tail="4" label="mod" ></edge>
+<edge head="3" tail="5" label="ARG1-of" ></edge>
+<edge head="5" tail="6" label="ARG1-of" ></edge>
+<edge head="5" tail="7" label="ARG0" ></edge>
+<edge head="7" tail="8" label="op1" ></edge>
+<edge head="7" tail="10" label="op1" ></edge>
+<edge head="7" tail="12" label="op2" ></edge>
+<edge head="8" tail="9" label="ARG0" ></edge>
+<edge head="10" tail="11" label="mod" ></edge>
+<edge head="12" tail="13" label="poss" ></edge>
+<edge head="12" tail="15" label="mod" ></edge>
+<edge head="13" tail="14" label="name" ></edge>
+<edge head="14" tail="17" label="op1" ></edge>
+<edge head="15" tail="16" label="name" ></edge>
+<edge head="16" tail="18" label="op1" ></edge>
+</edges>
+</graph>
+<graph id="22">
+<nodes>
+<node gid="446" id="0" text="feed-01" label="x8" nosuffix="feed" isleaf="False"></node>
+<node gid="447" id="1" text="rest" label="x2" nosuffix="rest" isleaf="False"></node>
+<node gid="448" id="2" text="water" label="x6" nosuffix="water" isleaf="False"></node>
+<node gid="449" id="3" text="waste" label="x5" nosuffix="waste" isleaf="True"></node>
+<node gid="450" id="4" text="system" label="x13" nosuffix="system" isleaf="False"></node>
+<node gid="451" id="5" text="marsh" label="x11" nosuffix="marsh" isleaf="True"></node>
+<node gid="452" id="6" text="recycle-01" label="x12" nosuffix="recycle" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="ARG1" ></edge>
+<edge head="0" tail="4" label="ARG2" ></edge>
+<edge head="1" tail="2" label="part-of" ></edge>
+<edge head="2" tail="3" label="mod" ></edge>
+<edge head="4" tail="5" label="mod" ></edge>
+<edge head="4" tail="6" label="mod" ></edge>
+</edges>
+</graph>
+<graph id="23">
+<nodes>
+<node gid="453" id="0" text="and" label="x28" nosuffix="and" isleaf="False"></node>
+<node gid="454" id="1" text="botanist" label="x2" nosuffix="botanist" isleaf="True"></node>
+<node gid="455" id="2" text="also" label="x3" nosuffix="also" isleaf="True"></node>
+<node gid="456" id="3" text="repair-01" label="x13" nosuffix="repair" isleaf="False"></node>
+<node gid="457" id="4" text="and" label="x10" nosuffix="and" isleaf="False"></node>
+<node gid="458" id="5" text="mechanic" label="x9" nosuffix="mechanic" isleaf="True"></node>
+<node gid="459" id="6" text="technician" label="x11" nosuffix="technician" isleaf="True"></node>
+<node gid="460" id="7" text="belt" label="x16" nosuffix="belt" isleaf="False"></node>
+<node gid="461" id="8" text="loose-01" label="x15" nosuffix="loose" isleaf="True"></node>
+<node gid="462" id="9" text="fan" label="x20" nosuffix="fan" isleaf="False"></node>
+<node gid="463" id="10" text="large" label="x19" nosuffix="large" isleaf="True"></node>
+<node gid="464" id="11" text="and" label="x23" nosuffix="and" isleaf="False"></node>
+<node gid="465" id="12" text="heat" label="x22" nosuffix="heat" isleaf="False"></node>
+<node gid="466" id="13" text="module" label="x26" nosuffix="module" isleaf="True"></node>
+<node gid="467" id="14" text="cool-01" label="x24" nosuffix="cool" isleaf="True"></node>
+<node gid="468" id="15" text="fine-tune" label="x29" nosuffix="fine" isleaf="False"></node>
+<node gid="469" id="16" text="system" label="x32" nosuffix="system" isleaf="False"></node>
+<node gid="470" id="17" text="irrigation" label="x31" nosuffix="irrigation" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="op1" ></edge>
+<edge head="0" tail="2" label="mod" ></edge>
+<edge head="0" tail="3" label="op1" ></edge>
+<edge head="0" tail="15" label="op2" ></edge>
+<edge head="3" tail="4" label="ARG1" ></edge>
+<edge head="3" tail="7" label="ARG1" ></edge>
+<edge head="4" tail="5" label="op1" ></edge>
+<edge head="4" tail="6" label="op2" ></edge>
+<edge head="7" tail="8" label="mod" ></edge>
+<edge head="7" tail="9" label="ARG1" ></edge>
+<edge head="9" tail="10" label="mod" ></edge>
+<edge head="9" tail="11" label="ARG1" ></edge>
+<edge head="11" tail="12" label="op1" ></edge>
+<edge head="11" tail="14" label="op2" ></edge>
+<edge head="12" tail="13" label="ARG1" ></edge>
+<edge head="15" tail="16" label="ARG1" ></edge>
+<edge head="16" tail="17" label="mod" ></edge>
+</edges>
+</graph>
+<graph id="24">
+<nodes>
+<node gid="471" id="0" text="say-01" label="x3" nosuffix="say" isleaf="False"></node>
+<node gid="472" id="1" text="person" label="x2" nosuffix="person" isleaf="False"></node>
+<node gid="473" id="2" text="name" label="n" nosuffix="name" isleaf="False"></node>
+<node gid="474" id="3" text="ms." label="x1" nosuffix="ms." isleaf="True"></node>
+<node gid="475" id="4" text="feel-01" label="x8" nosuffix="feel" isleaf="False"></node>
+<node gid="476" id="5" text="newspaper" label="x4" nosuffix="newspaper" isleaf="False"></node>
+<node gid="477" id="6" text="name" label="n1" nosuffix="name" isleaf="False"></node>
+<node gid="478" id="7" text="isolate-01" label="x9" nosuffix="isolate" isleaf="False"></node>
+<node gid="479" id="8" text="cause-01" label="x10" nosuffix="cause" isleaf="False"></node>
+<node gid="480" id="9" text="excellent" label="x16" nosuffix="excellent" isleaf="False"></node>
+<node gid="481" id="10" text="team" label="x14" nosuffix="team" isleaf="False"></node>
+<node gid="482" id="11" text="person" label="x11" nosuffix="person" isleaf="False"></node>
+<node gid="483" id="12" text="name" label="n2" nosuffix="name" isleaf="False"></node>
+<node gid="484" id="13" text="person" label="x12" nosuffix="person" isleaf="False"></node>
+<node gid="485" id="14" text="name" label="n3" nosuffix="name" isleaf="False"></node>
+<node gid="486" id="15" text="support-01" label="x13" nosuffix="support" isleaf="True"></node>
+<node gid="487" id="16" text="Leigh" label="Leigh" nosuffix="Leigh" isleaf="True"></node>
+<node gid="488" id="17" text="Linda" label="Linda" nosuffix="Linda" isleaf="True"></node>
+<node gid="489" id="18" text="Leigh" label="Leigh" nosuffix="Leigh" isleaf="True"></node>
+<node gid="490" id="19" text="Linda" label="Linda" nosuffix="Linda" isleaf="True"></node>
+<node gid="491" id="20" text="Leigh" label="Leigh" nosuffix="Leigh" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="ARG0" ></edge>
+<edge head="0" tail="4" label="ARG1" ></edge>
+<edge head="1" tail="2" label="name" ></edge>
+<edge head="1" tail="3" label="null_edge" ></edge>
+<edge head="2" tail="16" label="op1" ></edge>
+<edge head="4" tail="5" label="ARG0" ></edge>
+<edge head="4" tail="7" label="ARG1-of" ></edge>
+<edge head="5" tail="6" label="name" ></edge>
+<edge head="6" tail="17" label="op1" ></edge>
+<edge head="6" tail="18" label="op2" ></edge>
+<edge head="7" tail="8" label="ARG1-of" ></edge>
+<edge head="8" tail="9" label="ARG0" ></edge>
+<edge head="9" tail="10" label="domain" ></edge>
+<edge head="10" tail="11" label="poss" ></edge>
+<edge head="10" tail="13" label="poss" ></edge>
+<edge head="10" tail="15" label="mod" ></edge>
+<edge head="11" tail="12" label="name" ></edge>
+<edge head="12" tail="19" label="op1" ></edge>
+<edge head="13" tail="14" label="name" ></edge>
+<edge head="14" tail="20" label="op1" ></edge>
+</edges>
+</graph>
+<graph id="25">
+<nodes>
+<node gid="492" id="0" text="pull-01" label="x10" nosuffix="pull" isleaf="False"></node>
+<node gid="493" id="1" text="newspaper" label="x4" nosuffix="newspaper" isleaf="False"></node>
+<node gid="494" id="2" text="name" label="n" nosuffix="name" isleaf="False"></node>
+<node gid="495" id="3" text="occasional" label="x6" nosuffix="occasional" isleaf="True"></node>
+<node gid="496" id="4" text="curtain" label="x12" nosuffix="curtain" isleaf="True"></node>
+<node gid="497" id="5" text="area" label="x16" nosuffix="area" isleaf="False"></node>
+<node gid="498" id="6" text="live-01" label="x15" nosuffix="live" isleaf="True"></node>
+<node gid="499" id="7" text="get-01" label="x18" nosuffix="get" isleaf="False"></node>
+<node gid="500" id="8" text="away" label="x19" nosuffix="away" isleaf="False"></node>
+<node gid="501" id="9" text="from" label="x20" nosuffix="from" isleaf="False"></node>
+<node gid="502" id="10" text="outside" label="x24" nosuffix="outside" isleaf="False"></node>
+<node gid="503" id="11" text="observe-01" label="x22" nosuffix="observe" isleaf="True"></node>
+<node gid="504" id="12" text="eye" label="x23" nosuffix="eye" isleaf="True"></node>
+<node gid="505" id="13" text="Linda" label="Linda" nosuffix="Linda" isleaf="True"></node>
+<node gid="506" id="14" text="Leigh" label="Leigh" nosuffix="Leigh" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="ARG0" ></edge>
+<edge head="0" tail="3" label="mod" ></edge>
+<edge head="0" tail="4" label="ARG1" ></edge>
+<edge head="0" tail="5" label="ARG2" ></edge>
+<edge head="0" tail="7" label="purpose" ></edge>
+<edge head="1" tail="2" label="name" ></edge>
+<edge head="2" tail="13" label="op1" ></edge>
+<edge head="2" tail="14" label="op2" ></edge>
+<edge head="5" tail="6" label="location-of" ></edge>
+<edge head="7" tail="1" label="ARG0" ></edge>
+<edge head="7" tail="8" label="ARG2" ></edge>
+<edge head="8" tail="9" label="op1" ></edge>
+<edge head="9" tail="10" label="op1" ></edge>
+<edge head="10" tail="11" label="op1" ></edge>
+<edge head="10" tail="12" label="op1" ></edge>
+</edges>
+</graph>
+<graph id="26">
+<nodes>
+<node gid="507" id="0" text="and" label="x21" nosuffix="and" isleaf="False"></node>
+<node gid="508" id="1" text="go-01" label="x8" nosuffix="go" isleaf="False"></node>
+<node gid="509" id="2" text="or" label="x5" nosuffix="or" isleaf="False"></node>
+<node gid="510" id="3" text="either" label="x1" nosuffix="either" isleaf="True"></node>
+<node gid="511" id="4" text="name" label="x6" nosuffix="name" isleaf="False"></node>
+<node gid="512" id="5" text="call-02" label="x16" nosuffix="call" isleaf="False"></node>
+<node gid="513" id="6" text="and" label="x14" nosuffix="and" isleaf="False"></node>
+<node gid="514" id="7" text="mechanic" label="x13" nosuffix="mechanic" isleaf="True"></node>
+<node gid="515" id="8" text="technician" label="x15" nosuffix="technician" isleaf="True"></node>
+<node gid="516" id="9" text="wilderness" label="x19" nosuffix="wilderness" isleaf="True"></node>
+<node gid="517" id="10" text="stay-01" label="x23" nosuffix="stay" isleaf="False"></node>
+<node gid="518" id="11" text="just" label="x22" nosuffix="just" isleaf="True"></node>
+<node gid="519" id="12" text="plant" label="x27" nosuffix="plant" isleaf="True"></node>
+<node gid="520" id="13" text="Linda" label="Linda" nosuffix="Linda" isleaf="True"></node>
+<node gid="521" id="14" text="Leigh" label="Leigh" nosuffix="Leigh" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="op1" ></edge>
+<edge head="0" tail="10" label="op2" ></edge>
+<edge head="1" tail="2" label="ARG4" ></edge>
+<edge head="1" tail="5" label="ARG2" ></edge>
+<edge head="2" tail="3" label="op2" ></edge>
+<edge head="2" tail="4" label="op2" ></edge>
+<edge head="4" tail="13" label="op1" ></edge>
+<edge head="4" tail="14" label="op2" ></edge>
+<edge head="5" tail="6" label="ARG1" ></edge>
+<edge head="5" tail="9" label="ARG1" ></edge>
+<edge head="6" tail="7" label="op1" ></edge>
+<edge head="6" tail="8" label="op2" ></edge>
+<edge head="10" tail="11" label="time" ></edge>
+<edge head="10" tail="12" label="ARG1" ></edge>
+</edges>
+</graph>
+</amr>

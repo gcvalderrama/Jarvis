@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -79,51 +80,60 @@ namespace JarvisSummarization.CG
                 }
                 return;
             }
+            
             var propbankelement = (from c in propbankelements.Elements("predicate").Elements("roleset")
-                                   select c).ElementAt(index);
-
+                                   select c).ElementAtOrDefault(index);
+                                                
             foreach (var relation in out_relations)
             {
                 if (relation.label.Contains("ARG"))
                 {
                     var number = relation.label.Replace("ARG", "");
 
-                    var roleelement = (from c in propbankelement.Elements("roles").Elements("role")
-                                       where c.Attribute("n").Value == number
-                                       select c).FirstOrDefault();
-                    if (roleelement != null)
-                    {
-                        relation.description = roleelement.Attribute("descr").Value.Replace("/", "").Replace("'", "").Replace(@"\", "");
-                        relation.f = roleelement.Attribute("f").Value.ToLower();
-
-                        var vnx = roleelement.Element("vnrole");
-                        if (vnx != null)
-                        {
-                            relation.vncls = vnx.Attribute("vncls").Value;
-                            relation.vntheta = vnx.Attribute("vntheta").Value;
-                            relation.conceptualrole = relation.vntheta.ToLower();
-                        }
-                        else
-                        {
-                            if (relation.f == "pag") relation.conceptualrole = "agent";
-                            if (relation.f == "ppt") relation.conceptualrole = "patient";
-                            if (relation.f == "gol") relation.conceptualrole = "goal";
-                            if (relation.f == "loc") relation.conceptualrole = "location";
-                            if (relation.f == "dir") relation.conceptualrole = "direction";
-                            if (relation.f == "ext") relation.conceptualrole = "extend";
-                            if (relation.f == "prd") relation.conceptualrole = "location";
-                            if (relation.f == "mnr") relation.conceptualrole = "manner";
-                            if (relation.f == "adv") relation.conceptualrole = "adverb";
-                            if (relation.f == "cau") relation.conceptualrole = "cause";
-                            if (relation.f == "vsp") relation.conceptualrole = "vsp";
-                            if (relation.f == "prp") relation.conceptualrole = "purpose";
-                        }
-                    }
-                    else
+                    if (propbankelement == null)
                     {
                         ManageNotFoundArg(relation);
                     }
+                    else {
+                        var roleelement = (from c in propbankelement.Elements("roles").Elements("role")
+                                           where c.Attribute("n").Value == number
+                                           select c).FirstOrDefault();
+                        if (roleelement != null)
+                        {
+                            relation.description = roleelement.Attribute("descr").Value.Replace("/", "").Replace("'", "").Replace(@"\", "");
+                            relation.f = roleelement.Attribute("f").Value.ToLower();
 
+                            var vnx = roleelement.Element("vnrole");
+                            if (vnx != null)
+                            {
+                                relation.vncls = vnx.Attribute("vncls").Value;
+                                relation.vntheta = vnx.Attribute("vntheta").Value;
+                                relation.conceptualrole = relation.vntheta.ToLower();
+                            }
+                            else
+                            {
+                                if (relation.f == "pag") relation.conceptualrole = "agent";
+                                else if (relation.f == "ppt") relation.conceptualrole = "patient";
+                                else if (relation.f == "gol") relation.conceptualrole = "goal";
+                                else if (relation.f == "loc") relation.conceptualrole = "location";
+                                else if (relation.f == "dir") relation.conceptualrole = "direction";
+                                else if (relation.f == "ext") relation.conceptualrole = "extend";
+                                else if (relation.f == "prd") relation.conceptualrole = "location";
+                                else if (relation.f == "mnr") relation.conceptualrole = "manner";
+                                else if (relation.f == "adv") relation.conceptualrole = "adverb";
+                                else if (relation.f == "cau") relation.conceptualrole = "cause";
+                                else if (relation.f == "vsp") relation.conceptualrole = "vsp";
+                                else if (relation.f == "prp") relation.conceptualrole = "purpose";
+                                else if (relation.f == "com") relation.conceptualrole = "agent";
+                                else if (relation.f == "tmp") relation.conceptualrole = "tmp";
+                                else throw new ApplicationException("no info");
+                            }
+                        }
+                        else
+                        {
+                            ManageNotFoundArg(relation);
+                        }
+                    }
                 }
                 else
                 {
@@ -157,7 +167,8 @@ namespace JarvisSummarization.CG
             }
         }
         public void Execute()
-        {            
+        {           
+
             //only to verbs
             foreach (var node in graph.Nodes)
             {

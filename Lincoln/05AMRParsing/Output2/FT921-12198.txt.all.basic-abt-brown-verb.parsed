@@ -1,650 +1,1266 @@
-# ::id 1
-# ::snt GOVERNOR Bill Clinton of Arkansas was gambling yesterday that an extraordinary prime-time television confession of ` wrongdoing ' in his marriage has salvaged GOVERNOR Bill Clinton of Arkansas campaign for the Democratic presidential nomination
-(x7 / gamble
-	:ARG0 (x3 / person
-		:name (n / name
-			:op1 "Clinton")
-		:null_edge (x1 / null_tag)
-		:null_edge (x2 / person
-			:name (n1 / name
-				:op1 "Bill"))
-		:null_edge (x5 / country
-			:name (n2 / name
-				:op1 "Arkansas")))
-	:time (x8 / yesterday)
-	:ARG1-of (x23 / salvage-01
-		:ARG0 (x14 / confession
-			:mod (x11 / extraordinary)
-			:mod (x12 / prime-time)
-			:mod (x13 / television)
-			:ARG1 (x17 / wrongdoing
-				:ARG1 (x21 / marry-01)))
-		:ARG1 (x25 / name
-			:op1 "Bill"
-			:op2 "Clinton"
-			:ARG0-of (x24 / governor))
-		:ARG1 (x29 / campaign-01
-			:ARG0 x25
-			:mod (x28 / country
-				:name (n3 / name
-					:op1 "Arkansas"))
-			:ARG1 (x34 / nominate-01
-				:mod (x32 / democratic)
-				:ARG0 (xap0 / person
-					:ARG0-of (x33 / have-org-role-91
-						:ARG2 (p / president)))))))
-
-# ::id 2
-# ::snt During a joint TV appearance with GOVERNOR Bill Clinton of Arkansas wife, Hillary, Mr Clinton admitted GOVERNOR Bill Clinton of Arkansas marriage had been rocky, but GOVERNOR Bill Clinton of Arkansas denied allegations of a 12-year-long affair with a former Arkansas state employee and part-time cabaret singer
-(x29 / contrast-01
-	:ARG2 (x5 / appear-01
-		:manner (x3 / joint)
-		:null_edge (x4 / null_tag)
-		:location (x12 / wife
-			:name (x8 / name
-				:op1 "Bill"
-				:op2 "Clinton"
-				:null_edge (x7 / null_tag))
-			:mod (x11 / country
-				:name (n2 / name
-					:op1 "Arkansas"))
-			:mod (x14 / person
-				:name (n3 / name
-					:op1 "Hillary"))))
-	:ARG1 (x18 / admit-01
-		:ARG0 (x17 / person
-			:name (n / name
-				:op1 "Clinton")
-			:null_edge (x16 / mr))
-		:ARG1 (x27 / rocky
-			:ARG1 (x24 / marry-01
-				:poss (x20 / newspaper
-					:name (n5 / name
-						:op1 "Bill"
-						:op2 "Clinton")
-					:ARG0-of (x19 / governor))
-				:mod (x23 / country
-					:name (n6 / name
-						:op1 "Arkansas")))))
-	:ARG2 (x35 / deny-01
-		:ARG0 (x31 / newspaper
-			:name (n1 / name
-				:op1 "Bill"
-				:op2 "Clinton")
-			:ARG0-of (x30 / governor)
-			:mod (x34 / country
-				:name (n4 / name
-					:op1 "Arkansas")))
-		:ARG1 (x36 / allege-01
-			:ARG1 (x40 / affair
-				:mod (x39 / person
-					:name (n7 / name
-						:op1 "12-year-long"))
-				:prep-with (x47 / and
-					:op1 (x46 / person
-						:ARG1-of (e / employ-01)
-						:mod (x43 / former)
-						:mod (x45 / state
-							:location (x44 / country
-								:name (n8 / name
-									:op1 "Arkansas"))))
-					:op2 (x50 / sing-01
-						:mod (x49 / cabaret
-							:mod (x48 / part-time))))))))
-
-# ::id 3
-# ::snt Ms Gennifer Flowers, the employee, last night held a news conference in New York in which Gennifer Flowers accused Mr Clinton of lying when GOVERNOR Bill Clinton of Arkansas claimed friends were just friends
-(x10 / hold-04
-	:ARG0 (x2 / newspaper
-		:name (n / name
-			:op1 "Gennifer"
-			:op2 "Flowers")
-		:ARG0-of (x1 / ms)
-		:ARG0-of (x6 / person
-			:ARG1-of (e / employ-01)))
-	:time (x9 / night
-		:mod (x8 / last))
-	:ARG1 (x13 / conference
-		:mod (x12 / news)
-		:ARG1-of (x21 / accuse-01
-			:ARG0 (x20 / flowers
-				:mod (x19 / gennifer))
-			:ARG1 (x23 / person
-				:name (n2 / name
-					:op1 "Clinton"))
-			:ARG1 (x25 / lie-01
-				:ARG0 x23
-				:ARG1-of (x32 / claim-01
-					:ARG0 (x28 / newspaper
-						:name (n3 / name
-							:op1 "Bill"
-							:op2 "Clinton")
-						:ARG0-of (x27 / governor)
-						:mod (x31 / country
-							:name (n4 / name
-								:op1 "Arkansas")))
-					:ARG2 (x36 / friend
-						:mod (x35 / just))))))
-	:location (x16 / country
-		:name (n1 / name
-			:op1 "York")
-		:null_edge (x15 / null_tag)))
-
-# ::id 4
-# ::snt Gennifer Flowers said : ' US was Bill Clinton's lover for 12 years ... GOVERNOR Bill Clinton of Arkansas is absolutely lying
-(x3 / say-01
-	:ARG0 (x1 / newspaper
-		:name (n / name
-			:op1 "Gennifer"
-			:op2 "Flowers"))
-	:ARG1 (x11 / lover
-		:poss (x6 / country
-			:name (n1 / name
-				:op1 "US"))
-		:name (x8 / name
-			:op1 "Bill"
-			:op2 "Clinton")
-		:duration (x14 / temporal-quantity
-			:unit (y / year)
-			:quant 12))
-	:ARG1 (x23 / lie-01
-		:ARG0 (x18 / person
-			:name (n2 / name
-				:op1 "Clinton")
-			:null_edge (x16 / governor)
-			:null_edge (x17 / person
-				:name (n3 / name
-					:op1 "Bill"))
-			:null_edge (x20 / country
-				:name (n4 / name
-					:op1 "Arkansas")))
-		:mod (x22 / absolute)))
-
-# ::id 5
-# ::snt US 'm disappointed, but realistically US never thought GOVERNOR Bill Clinton of Arkansas 'd come out and admit 12 years .
-(x5 / contrast-01
-	:ARG1 (x3 / disappointed
-		:ARG0 (x1 / country
-			:name (n / name
-				:op1 "US")))
-	:ARG2 (x9 / think-01
-		:ARG0 x1
-		:manner (x6 / realistically)
-		:ARG0 (x7 / country
-			:name (n1 / name
-				:op1 "US"))
-		:ARG1 (x14 / country
-			:name (n2 / name
-				:op1 "Arkansas"))
-		:ARG1 (x18 / and
-			:op1 (x16 / come-01
-				:ARG1 (x12 / person
-					:name (n3 / name
-						:op1 "Clinton")
-					:null_edge (x10 / governor)
-					:null_edge (x11 / person
-						:name (n4 / name
-							:op1 "Bill"))))
-			:op2 (x19 / admit-01
-				:ARG0 x12
-				:ARG1 (x21 / temporal-quantity
-					:unit (y / year)
-					:quant 12)))))
-
-# ::id 6
-# ::snt In response to one question, Gennifer Flowers said the local Republican party in Arkansas had offered Gennifer Flowers money six months ago to reveal Gennifer Flowers affair with Mr Clinton, but Gennifer Flowers had refused
-(x2 / respond-01
-	:ARG1 (x5 / question-01
-		:quant 1)
-	:ARG0 (x7 / newspaper
-		:name (n / name
-			:op1 "Gennifer"
-			:op2 "Flowers"))
-	:ARG1 (x17 / offer-01
-		:ARG3 (x15 / country
-			:name (n1 / name
-				:op1 "Arkansas")
-			:mod (x11 / local))
-		:ARG1 (x20 / money)
-		:time (x22 / temporal-quantity
-			:unit (m / month)
-			:quant (x21 / null_tag))
-		:purpose (x25 / reveal-01
-			:ARG1 (x28 / affair
-				:prep-with (x31 / person
-					:name (n2 / name
-						:op1 "Clinton")
-					:ARG1-of (x37 / refuse-01
-						:ARG0 (x34 / newspaper
-							:name (n4 / name
-								:op1 "Gennifer"
-								:op2 "Flowers")))))
-			:ARG0 (xap1 / political-party
-				:ARG0-of (xap0 / name
-					:op1 (x12 / political-party
-						:name (n3 / name
-							:op1 "Republican")))))
-		:ARG1-of xap1))
-
-# ::id 7
-# ::snt Gennifer Flowers said Gennifer Flowers had lied to the press to protect Republican and that later Gennifer Flowers sold Gennifer Flowers story to a supermarket tabloid because Republican had angered Gennifer Flowers
-(x3 / say-01
-	:ARG0 (x1 / newspaper
-		:name (n / name
-			:op1 "Gennifer"
-			:op2 "Flowers"))
-	:ARG1 (x14 / and
-		:op1 (x7 / lie-01
-			:ARG0 (x4 / newspaper
-				:name (n1 / name
-					:op1 "Gennifer"
-					:op2 "Flowers"))
-			:ARG2 (x10 / press
-				:ARG0 (xap2 / have-org-role-91
-					:ARG0-of (xap1 / political-party
-						:ARG0-of (xap0 / name
-							:op1 (x13 / political-party
-								:name (n3 / name
-									:op1 "Republican"))))))
-			:purpose (x12 / protect-01
-				:ARG0 x4
-				:ARG0 xap2)
-			:ARG1-of (x27 / cause-01
-				:ARG0 (x30 / anger-01
-					:ARG1 (x31 / name
-						:op1 "Gennifer"
-						:op2 "Flowers")
-					:ARG1 (xap4 / political-party
-						:ARG0-of (xap3 / name
-							:op1 (x28 / political-party
-								:name (n4 / name
-									:op1 "Republican"))))))
-			:ARG1-of xap2)
-		:op2 (x19 / sell-01
-			:ARG0 (x17 / newspaper
-				:name (n2 / name
-					:op1 "Gennifer"
-					:op2 "Flowers")
-				:ARG0-of (x16 / late))
-			:ARG1 (x22 / story)
-			:ARG2 (x26 / tabloid
-				:ARG1 (x25 / supermarket)))))
-
-# ::id 8
-# ::snt At the press conference Ms Flowers played 10 minutes of tape-recorded telephone conversation she said was between Ms Gennifer Flowers and Mr Clinton
-(x7 / play-07
-	:time (x4 / conference
-		:mod (x3 / press))
-	:ARG0 (x6 / flowers
-		:null_edge (x5 / ms))
-	:ARG1 (x13 / converse-01
-		:quant 10
-		:mod (x11 / tape-recorded)
-		:mod (x12 / telephone)
-		:ARG0-of (x15 / say-01
-			:ARG1 (x21 / and
-				:op2 (x19 / gennifer)
-				:op1 (x20 / flowers
-					:null_edge (x18 / ms))
-				:op2 (x23 / person
-					:name (n / name
-						:op1 "Clinton"))))))
-
-# ::id 9
-# ::snt Published excerpts of these tapes have so far proved inconclusive and questions have surfaced about Ms Gennifer Flowers credibility
-(x / xconcept
-	:x (x2 / excerpt
-		:ARG1-of (x1 / publish-01)
-		:ARG1 (x5 / tape))
-	:x (x11 / and
-		:op1 (x9 / prove-01
-			:ARG1 (x10 / inconclusive))
-		:op2 (x14 / surface
-			:ARG1 x2
-			:ARG1 x10
-			:ARG1 (x12 / question-01)
-			:ARG1 (x19 / credibility))))
-
-# ::id 10
-# ::snt Ms Flowers maintains Ms Gennifer Flowers met Mr Clinton in 1979 and 1980 at the Excelsior Hotel in Little Rock
-(x3 / maintain-01
-	:ARG1 (x7 / meet-03
-		:ARG0 (x4 / person
-			:name (n / name
-				:op1 "Ms"
-				:op2 "Gennifer"
-				:op3 "Flowers"))
-		:ARG1 (x9 / person
-			:name (n1 / name
-				:op1 "Clinton"))
-		:time (x11 / date-entity
-			:year 1979
-			:part-of (x13 / date-entity
-				:year 1980))
-		:location (x17 / hotel
-			:mod (x16 / excelsior)
-			:location (x20 / rock
-				:mod (x19 / little)))))
-
-# ::id 11
-# ::snt But the hotel did not open until 1982
-(x1 / contrast-01
-	:ARG2 (x6 / open-01
-		:ARG0 (x3 / hotel)
-		:time (x7 / until
-			:op1 (x8 / date-entity
-				:year 1982))))
-
-# ::id 12
-# ::snt Ms Gennifer Flowers also claims to have reported on Mr Clinton while working with a local TV station, but Little Rock's KARK-TV said Little Rock's KARK-TV could find no tapes to support this
-(x20 / contrast-01
-	:ARG1 (x5 / claim-01
-		:ARG0 (x2 / newspaper
-			:name (n / name
-				:op1 "Gennifer"
-				:op2 "Flowers")
-			:ARG0-of (x1 / ms))
-		:mod (x4 / also)
-		:ARG1 (x8 / report-01
-			:ARG0 x2
-			:ARG0 (x11 / person
-				:name (n1 / name
-					:op1 "Clinton"))
-			:time (x13 / work-01
-				:location (x18 / station
-					:mod (x16 / local)
-					:null_edge (x17 / null_tag))))
-		:ARG0 x11)
-	:ARG2 (x25 / say-01
-		:ARG0 (x24 / kark-tv
-			:null_edge (x21 / have-org-role-91
-				:ARG1 (c / country
-					:name (n2 / name
-						:op1 "Little"
-						:op2 "Rock"))))
-		:ARG1 (x30 / possible
-			:domain (x31 / find-01
-				:ARG0 (x29 / kark-tv
-					:null_edge (x26 / have-org-role-91
-						:ARG1 (c1 / country
-							:name (n3 / name
-								:op1 "Little"
-								:op2 "Rock"))))
-				:ARG1 (x33 / tape
-					:polarity -)
-				:ARG1 (x35 / support-01
-					:ARG0 x29
-					:ARG1 (x36 / this))))))
-
-# ::id 13
-# ::snt Mr Clinton, the early front-runner for the Democratic nomination, was judged yesterday to have taken a huge gamble by appearing on CBS's programme ` Sixty Minutes ', which generally attracts more than 30m viewers
-(x13 / judge-01
-	:ARG1 (x6 / front-runner
-		:mod (x2 / person
-			:name (n / name
-				:op1 "Clinton")
-			:null_edge (x1 / mr))
-		:time (x5 / early)
-		:purpose (x10 / nominate-01
-			:mod (x9 / democratic)))
-	:time (x14 / yesterday)
-	:time (x22 / appear-02
-		:ARG1 (x20 / gamble
-			:mod (x19 / huge))
-		:ARG1 (x26 / program
-			:poss (x24 / organization
-				:name (n1 / name
-					:op1 "CBS"))
-			:time (x28 / more-than)
-			:ARG0-of (x34 / attract-01
-				:mod (x33 / general)
-				:ARG1 (x38 / viewer
-					:quant (x35 / more-than))))))
-
-# ::id 14
-# ::snt Although GOVERNOR Bill Clinton of Arkansas campaign advisers said the sex scandal rumours were drowning out the Arkansas governor's message to voters, the risk was GOVERNOR Bill Clinton of Arkansas confessions could draw further media scrutiny just three weeks before the critical New Hampshire primary election
-(x9 / say-01
-	:ARG1 (x8 / have-org-role-91
-		:ARG2 (p / person
-			:ARG0-of (a / advise-01))
-		:ARG0 (x3 / newspaper
-			:name (n / name
-				:op1 "Bill"
-				:op2 "Clinton")
-			:ARG0-of (x2 / governor))
-		:mod (x6 / country
-			:name (n1 / name
-				:op1 "Arkansas"))
-		:mod (x7 / campaign-01))
-	:ARG1 (x15 / drown
-		:ARG1 (x13 / rumor-01
-			:ARG1 (x12 / scandal
-				:mod (x11 / sex)))
-		:ARG1 (x21 / message-01
-			:ARG0 (x19 / have-org-role-91
-				:ARG2 (g / governor)
-				:ARG1 (x18 / country
-					:name (n2 / name
-						:op1 "Arkansas")))
-			:ARG1 (x23 / vote-01)))
-	:ARG0 (x28 / governor
-		:domain (x26 / risk-01)
-		:null_edge (x34 / possible
-			:domain (x35 / draw-02
-				:ARG0 (x30 / person
-					:name (n3 / name
-						:op1 "Clinton")
-					:null_edge (x29 / person
-						:name (n4 / name
-							:op1 "Bill"))
-					:null_edge (x33 / confession
-						:mod (x32 / country
-							:name (n5 / name
-								:op1 "Arkansas"))))
-				:ARG1 (x38 / scrutiny
-					:mod (x36 / further)
-					:ARG0 (x37 / media))
-				:time (x42 / before
-					:mod (x39 / just)
-					:quant (x41 / temporal-quantity
-						:unit (w / week)
-						:quant 3)
-					:op1 (x48 / elect-01
-						:mod (x44 / critical)
-						:null_edge (x45 / null_tag)
-						:ARG2 (x46 / organization
-							:name (n6 / name
-								:op1 "Hampshire"))))))))
-
-# ::id 15
-# ::snt Mr Clinton, 46, appeared calm and good-humoured throughout the interview .
-(x6 / appear-02
-	:ARG1 (x7 / calm
-		:domain (x2 / person
-			:name (n / name
-				:op1 "Clinton")
-			:null_edge (x1 / mr)
-			:null_edge 46)
-		:mod (x9 / good-humoured)
-		:medium (x12 / interview-01))
-	:ARG1 (x8 / and))
-
-# ::id 16
-# ::snt US have acknowledged causing pain in US marriage, ' GOVERNOR Bill Clinton of Arkansas said .
-(x16 / say-01
-	:ARG1 (x3 / acknowledge-01
-		:ARG0 (x1 / country
-			:name (n1 / name
-				:op1 "US"))
-		:ARG0-of (x4 / cause-01
-			:ARG1 (x5 / pain-01)
-			:location (x7 / country
-				:name (n4 / name
-					:op1 "US"))
-			:ARG1 (x8 / marriage)))
-	:ARG0 (x13 / person
-		:name (n / name
-			:op1 "Clinton")
-		:null_edge (x11 / governor)
-		:null_edge (x12 / person
-			:name (n2 / name
-				:op1 "Bill"))
-		:null_edge (x15 / country
-			:name (n3 / name
-				:op1 "Arkansas"))))
-
-# ::id 17
-# ::snt US have said things to US and to the American people from the beginning that no American politician ever has .
-(x3 / say-01
-	:ARG0 (x1 / country
-		:name (n / name
-			:op1 "US"))
-	:ARG1 (x4 / thing)
-	:ARG0 (x11 / people
-		:null_edge (x10 / country
-			:name (n1 / name
-				:op1 "American")))
-	:time (x12 / from
-		:op2 (x14 / begin-01
-			:ARG0-of (x20 / have-03
-				:polarity -
-				:ARG0 (x18 / politician)
-				:time (x19 / ever)))))
-
-# ::id 18
-# ::snt But in response to a question on whether no American politician had ever committed adultery, Mr Clinton avoided a clear-cut response
-(x1 / contrast-01
-	:ARG2 (x19 / avoid-01
-		:ARG2-of (x3 / respond-01
-			:ARG1 (x6 / question-01
-				:ARG2 (x14 / commit-01
-					:ARG0 (x11 / politician
-						:polarity -)
-					:time (x13 / ever)
-					:ARG1 (x15 / adultery))))
-		:ARG0 (x18 / person
-			:name (n / name
-				:op1 "Clinton")
-			:null_edge (x17 / mr))
-		:ARG1 (x22 / respond-01
-			:manner (x21 / clear-cut))))
-
-# ::id 19
-# ::snt ` US 'm not prepared to say tonight that any married couple should ever discuss that with anyone but themselves .
-(x5 / prepare-02
-	:ARG1 (x7 / say-01
-		:time (x8 / tonight)
-		:ARG1 (x13 / recommend-01
-			:ARG1 (x15 / discuss-01
-				:time (x14 / ever)
-				:ARG1 (x19 / contrast-01
-					:ARG2 (x18 / anyone)))
-			:ARG1 (xap0 / protect-01
-				:mod (x10 / any)
-				:ARG1 (x11 / person
-					:ARG1-of (m / marry-01))))))
-
-# ::id 20
-# ::snt anyone but themselves appealed to the US public for fairness and urged the media to respect anyone but themselves privacy, instead of turning the 1992 campaign into a ` game of gotcha '
-(x11 / and
-	:op1 (x4 / appeal-02
-		:ARG1 (x2 / contrast-01
-			:ARG2 (x1 / anyone))
-		:ARG2 (x8 / public
-			:mod (x7 / country
-				:name (n / name
-					:op1 "US")))
-		:ARG1 (x10 / fair)
-		:ARG1 (x18 / contrast-01))
-	:op2 (x12 / urge-01
-		:ARG1 (x14 / media)
-		:ARG2 (x24 / turn-02
-			:ARG1 (x20 / privacy)
-			:ARG1 (x27 / campaign-01
-				:time (x26 / date-entity
-					:year 1992))
-			:ARG2 (x31 / game
-				:mod (x33 / gotcha)))))
-
-# ::id 21
-# ::snt Mr Clinton saw GOVERNOR Bill Clinton of Arkansas popularity fall sharply last week among likely Democratic voters in New Hampshire, Reuter reports from Boston
-(x / xconcept
-	:x (x3 / see-01
-		:ARG0 (x2 / person
-			:name (n / name
-				:op1 "Clinton")
-			:null_edge (x1 / mr))
-		:ARG1 (x10 / fall-01
-			:null_edge (x5 / newspaper
-				:name (n3 / name
-					:op1 "Bill"
-					:op2 "Clinton")
-				:ARG0-of (x4 / governor)
-				:part-of (x9 / popularity
-					:mod (x8 / country
-						:name (n5 / name
-							:op1 "Arkansas"))))
-			:manner (x11 / sharp)
-			:null_edge (x17 / vote-01
-				:time (x13 / week
-					:mod (x12 / last))
-				:mod (x15 / likely)
-				:mod (x16 / democratic))
-			:location (x20 / country
-				:name (n4 / name
-					:op1 "Hampshire")
-				:null_edge (x19 / null_tag))))
-	:x (x23 / report-01
-		:ARG0 (x22 / organization
-			:name (n1 / name
-				:op1 "Reuter"))
-		:source (x25 / city
-			:name (n2 / name
-				:op1 "Boston"))))
-
-# ::id 22
-# ::snt In a poll by the American Research Group, which has conducted daily surveys in advance of the February 18 primary, support for Mr Clinton fell 14 percentage points in five days last week
-(x27 / fall-01
-	:ARG4 (x3 / poll-01
-		:time (x4 / by
-			:null_edge (x8 / null_tag
-				:null_edge (x7 / null_tag)
-				:ARG1-of (x12 / conduct-01
-					:ARG1 (x14 / survey-01)
-					:ARG1-of (x16 / advance-01
-						:time (x20 / date-entity
-							:mod 2))))))
-	:ARG1 (x23 / support-01
-		:ARG0 (x26 / person
-			:name (n / name
-				:op1 "Clinton")))
-	:ARG4 (x29 / percentage-entity
-		:quant 14)
-	:time (x32 / date-entity
-		:time (x35 / week
-			:mod (x34 / last))))
-
-# ::id 23
-# ::snt The latest polling data put Mr Clinton in second place, with 25 per cent, to Mr Paul Tsongas, a former Massachusetts senator, who has 27 per cent of voters ' support
-(x5 / put-01
-	:ARG0 (x4 / data
-		:time (x2 / late
-			:degree (m / most))
-		:mod (x3 / polling))
-	:ARG1 (x7 / person
-		:name (n / name
-			:op1 "Clinton"))
-	:ARG2 (x15 / monetary-quantity
-		:unit (c / cent)
-		:quant 25)
-	:ARG2 (x20 / person
-		:name (n1 / name
-			:op1 "Tsongas")
-		:null_edge (x19 / null_tag)
-		:null_edge (x25 / senator
-			:mod (x23 / former))
-		:ARG0-of (x35 / support-01
-			:ARG1 (x29 / person
-				:op 27)
-			:ARG0 (x33 / vote-01))))
-
+<amr>
+<graph id="1">
+<nodes>
+<node gid="0" id="0" text="gamble" label="x7" nosuffix="gamble" isleaf="False"></node>
+<node gid="1" id="1" text="person" label="x3" nosuffix="person" isleaf="False"></node>
+<node gid="2" id="2" text="name" label="n" nosuffix="name" isleaf="False"></node>
+<node gid="3" id="3" text="null_tag" label="x1" nosuffix="null_tag" isleaf="True"></node>
+<node gid="4" id="4" text="person" label="x2" nosuffix="person" isleaf="False"></node>
+<node gid="5" id="5" text="name" label="n1" nosuffix="name" isleaf="False"></node>
+<node gid="6" id="6" text="country" label="x5" nosuffix="country" isleaf="False"></node>
+<node gid="7" id="7" text="name" label="n2" nosuffix="name" isleaf="False"></node>
+<node gid="8" id="8" text="yesterday" label="x8" nosuffix="yesterday" isleaf="True"></node>
+<node gid="9" id="9" text="salvage-01" label="x23" nosuffix="salvage" isleaf="False"></node>
+<node gid="10" id="10" text="confession" label="x14" nosuffix="confession" isleaf="False"></node>
+<node gid="11" id="11" text="extraordinary" label="x11" nosuffix="extraordinary" isleaf="True"></node>
+<node gid="12" id="12" text="prime-time" label="x12" nosuffix="prime" isleaf="True"></node>
+<node gid="13" id="13" text="television" label="x13" nosuffix="television" isleaf="True"></node>
+<node gid="14" id="14" text="wrongdoing" label="x17" nosuffix="wrongdoing" isleaf="False"></node>
+<node gid="15" id="15" text="marry-01" label="x21" nosuffix="marry" isleaf="True"></node>
+<node gid="16" id="16" text="name" label="x25" nosuffix="name" isleaf="False"></node>
+<node gid="17" id="17" text="governor" label="x24" nosuffix="governor" isleaf="True"></node>
+<node gid="18" id="18" text="campaign-01" label="x29" nosuffix="campaign" isleaf="False"></node>
+<node gid="19" id="19" text="country" label="x28" nosuffix="country" isleaf="False"></node>
+<node gid="20" id="20" text="name" label="n3" nosuffix="name" isleaf="False"></node>
+<node gid="21" id="21" text="nominate-01" label="x34" nosuffix="nominate" isleaf="False"></node>
+<node gid="22" id="22" text="democratic" label="x32" nosuffix="democratic" isleaf="True"></node>
+<node gid="23" id="23" text="person" label="xap0" nosuffix="person" isleaf="False"></node>
+<node gid="24" id="24" text="have-org-role-91" label="x33" nosuffix="have" isleaf="False"></node>
+<node gid="25" id="25" text="president" label="p" nosuffix="president" isleaf="True"></node>
+<node gid="26" id="26" text="Clinton" label="Clinton" nosuffix="Clinton" isleaf="True"></node>
+<node gid="27" id="27" text="Bill" label="Bill" nosuffix="Bill" isleaf="True"></node>
+<node gid="28" id="28" text="Arkansas" label="Arkansas" nosuffix="Arkansas" isleaf="True"></node>
+<node gid="29" id="29" text="Bill" label="Bill" nosuffix="Bill" isleaf="True"></node>
+<node gid="30" id="30" text="Clinton" label="Clinton" nosuffix="Clinton" isleaf="True"></node>
+<node gid="31" id="31" text="Arkansas" label="Arkansas" nosuffix="Arkansas" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="ARG0" ></edge>
+<edge head="0" tail="8" label="time" ></edge>
+<edge head="0" tail="9" label="ARG1-of" ></edge>
+<edge head="1" tail="2" label="name" ></edge>
+<edge head="1" tail="3" label="null_edge" ></edge>
+<edge head="1" tail="4" label="null_edge" ></edge>
+<edge head="1" tail="6" label="null_edge" ></edge>
+<edge head="2" tail="26" label="op1" ></edge>
+<edge head="4" tail="5" label="name" ></edge>
+<edge head="5" tail="27" label="op1" ></edge>
+<edge head="6" tail="7" label="name" ></edge>
+<edge head="7" tail="28" label="op1" ></edge>
+<edge head="9" tail="10" label="ARG0" ></edge>
+<edge head="9" tail="16" label="ARG1" ></edge>
+<edge head="9" tail="18" label="ARG1" ></edge>
+<edge head="10" tail="11" label="mod" ></edge>
+<edge head="10" tail="12" label="mod" ></edge>
+<edge head="10" tail="13" label="mod" ></edge>
+<edge head="10" tail="14" label="ARG1" ></edge>
+<edge head="14" tail="15" label="ARG1" ></edge>
+<edge head="16" tail="29" label="op1" ></edge>
+<edge head="16" tail="30" label="op2" ></edge>
+<edge head="16" tail="17" label="ARG0-of" ></edge>
+<edge head="18" tail="16" label="ARG0" ></edge>
+<edge head="18" tail="19" label="mod" ></edge>
+<edge head="18" tail="21" label="ARG1" ></edge>
+<edge head="19" tail="20" label="name" ></edge>
+<edge head="20" tail="31" label="op1" ></edge>
+<edge head="21" tail="22" label="mod" ></edge>
+<edge head="21" tail="23" label="ARG0" ></edge>
+<edge head="23" tail="24" label="ARG0-of" ></edge>
+<edge head="24" tail="25" label="ARG2" ></edge>
+</edges>
+</graph>
+<graph id="2">
+<nodes>
+<node gid="32" id="0" text="contrast-01" label="x29" nosuffix="contrast" isleaf="False"></node>
+<node gid="33" id="1" text="appear-01" label="x5" nosuffix="appear" isleaf="False"></node>
+<node gid="34" id="2" text="joint" label="x3" nosuffix="joint" isleaf="True"></node>
+<node gid="35" id="3" text="null_tag" label="x4" nosuffix="null_tag" isleaf="True"></node>
+<node gid="36" id="4" text="wife" label="x12" nosuffix="wife" isleaf="False"></node>
+<node gid="37" id="5" text="name" label="x8" nosuffix="name" isleaf="False"></node>
+<node gid="38" id="6" text="null_tag" label="x7" nosuffix="null_tag" isleaf="True"></node>
+<node gid="39" id="7" text="country" label="x11" nosuffix="country" isleaf="False"></node>
+<node gid="40" id="8" text="name" label="n2" nosuffix="name" isleaf="False"></node>
+<node gid="41" id="9" text="person" label="x14" nosuffix="person" isleaf="False"></node>
+<node gid="42" id="10" text="name" label="n3" nosuffix="name" isleaf="False"></node>
+<node gid="43" id="11" text="admit-01" label="x18" nosuffix="admit" isleaf="False"></node>
+<node gid="44" id="12" text="person" label="x17" nosuffix="person" isleaf="False"></node>
+<node gid="45" id="13" text="name" label="n" nosuffix="name" isleaf="False"></node>
+<node gid="46" id="14" text="mr" label="x16" nosuffix="mr" isleaf="True"></node>
+<node gid="47" id="15" text="rocky" label="x27" nosuffix="rocky" isleaf="False"></node>
+<node gid="48" id="16" text="marry-01" label="x24" nosuffix="marry" isleaf="False"></node>
+<node gid="49" id="17" text="newspaper" label="x20" nosuffix="newspaper" isleaf="False"></node>
+<node gid="50" id="18" text="name" label="n5" nosuffix="name" isleaf="False"></node>
+<node gid="51" id="19" text="governor" label="x19" nosuffix="governor" isleaf="True"></node>
+<node gid="52" id="20" text="country" label="x23" nosuffix="country" isleaf="False"></node>
+<node gid="53" id="21" text="name" label="n6" nosuffix="name" isleaf="False"></node>
+<node gid="54" id="22" text="deny-01" label="x35" nosuffix="deny" isleaf="False"></node>
+<node gid="55" id="23" text="newspaper" label="x31" nosuffix="newspaper" isleaf="False"></node>
+<node gid="56" id="24" text="name" label="n1" nosuffix="name" isleaf="False"></node>
+<node gid="57" id="25" text="governor" label="x30" nosuffix="governor" isleaf="True"></node>
+<node gid="58" id="26" text="country" label="x34" nosuffix="country" isleaf="False"></node>
+<node gid="59" id="27" text="name" label="n4" nosuffix="name" isleaf="False"></node>
+<node gid="60" id="28" text="allege-01" label="x36" nosuffix="allege" isleaf="False"></node>
+<node gid="61" id="29" text="affair" label="x40" nosuffix="affair" isleaf="False"></node>
+<node gid="62" id="30" text="person" label="x39" nosuffix="person" isleaf="False"></node>
+<node gid="63" id="31" text="name" label="n7" nosuffix="name" isleaf="False"></node>
+<node gid="64" id="32" text="and" label="x47" nosuffix="and" isleaf="False"></node>
+<node gid="65" id="33" text="person" label="x46" nosuffix="person" isleaf="False"></node>
+<node gid="66" id="34" text="employ-01" label="e" nosuffix="employ" isleaf="True"></node>
+<node gid="67" id="35" text="former" label="x43" nosuffix="former" isleaf="True"></node>
+<node gid="68" id="36" text="state" label="x45" nosuffix="state" isleaf="False"></node>
+<node gid="69" id="37" text="country" label="x44" nosuffix="country" isleaf="False"></node>
+<node gid="70" id="38" text="name" label="n8" nosuffix="name" isleaf="False"></node>
+<node gid="71" id="39" text="sing-01" label="x50" nosuffix="sing" isleaf="False"></node>
+<node gid="72" id="40" text="cabaret" label="x49" nosuffix="cabaret" isleaf="False"></node>
+<node gid="73" id="41" text="part-time" label="x48" nosuffix="part" isleaf="True"></node>
+<node gid="74" id="42" text="Bill" label="Bill" nosuffix="Bill" isleaf="True"></node>
+<node gid="75" id="43" text="Clinton" label="Clinton" nosuffix="Clinton" isleaf="True"></node>
+<node gid="76" id="44" text="Arkansas" label="Arkansas" nosuffix="Arkansas" isleaf="True"></node>
+<node gid="77" id="45" text="Hillary" label="Hillary" nosuffix="Hillary" isleaf="True"></node>
+<node gid="78" id="46" text="Clinton" label="Clinton" nosuffix="Clinton" isleaf="True"></node>
+<node gid="79" id="47" text="Bill" label="Bill" nosuffix="Bill" isleaf="True"></node>
+<node gid="80" id="48" text="Clinton" label="Clinton" nosuffix="Clinton" isleaf="True"></node>
+<node gid="81" id="49" text="Arkansas" label="Arkansas" nosuffix="Arkansas" isleaf="True"></node>
+<node gid="82" id="50" text="Bill" label="Bill" nosuffix="Bill" isleaf="True"></node>
+<node gid="83" id="51" text="Clinton" label="Clinton" nosuffix="Clinton" isleaf="True"></node>
+<node gid="84" id="52" text="Arkansas" label="Arkansas" nosuffix="Arkansas" isleaf="True"></node>
+<node gid="85" id="53" text="12-year-long" label="12-year-long" nosuffix="12" isleaf="True"></node>
+<node gid="86" id="54" text="Arkansas" label="Arkansas" nosuffix="Arkansas" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="ARG2" ></edge>
+<edge head="0" tail="11" label="ARG1" ></edge>
+<edge head="0" tail="22" label="ARG2" ></edge>
+<edge head="1" tail="2" label="manner" ></edge>
+<edge head="1" tail="3" label="null_edge" ></edge>
+<edge head="1" tail="4" label="location" ></edge>
+<edge head="4" tail="5" label="name" ></edge>
+<edge head="4" tail="7" label="mod" ></edge>
+<edge head="4" tail="9" label="mod" ></edge>
+<edge head="5" tail="42" label="op1" ></edge>
+<edge head="5" tail="43" label="op2" ></edge>
+<edge head="5" tail="6" label="null_edge" ></edge>
+<edge head="7" tail="8" label="name" ></edge>
+<edge head="8" tail="44" label="op1" ></edge>
+<edge head="9" tail="10" label="name" ></edge>
+<edge head="10" tail="45" label="op1" ></edge>
+<edge head="11" tail="12" label="ARG0" ></edge>
+<edge head="11" tail="15" label="ARG1" ></edge>
+<edge head="12" tail="13" label="name" ></edge>
+<edge head="12" tail="14" label="null_edge" ></edge>
+<edge head="13" tail="46" label="op1" ></edge>
+<edge head="15" tail="16" label="ARG1" ></edge>
+<edge head="16" tail="17" label="poss" ></edge>
+<edge head="16" tail="20" label="mod" ></edge>
+<edge head="17" tail="18" label="name" ></edge>
+<edge head="17" tail="19" label="ARG0-of" ></edge>
+<edge head="18" tail="47" label="op1" ></edge>
+<edge head="18" tail="48" label="op2" ></edge>
+<edge head="20" tail="21" label="name" ></edge>
+<edge head="21" tail="49" label="op1" ></edge>
+<edge head="22" tail="23" label="ARG0" ></edge>
+<edge head="22" tail="28" label="ARG1" ></edge>
+<edge head="23" tail="24" label="name" ></edge>
+<edge head="23" tail="25" label="ARG0-of" ></edge>
+<edge head="23" tail="26" label="mod" ></edge>
+<edge head="24" tail="50" label="op1" ></edge>
+<edge head="24" tail="51" label="op2" ></edge>
+<edge head="26" tail="27" label="name" ></edge>
+<edge head="27" tail="52" label="op1" ></edge>
+<edge head="28" tail="29" label="ARG1" ></edge>
+<edge head="29" tail="30" label="mod" ></edge>
+<edge head="29" tail="32" label="prep-with" ></edge>
+<edge head="30" tail="31" label="name" ></edge>
+<edge head="31" tail="53" label="op1" ></edge>
+<edge head="32" tail="33" label="op1" ></edge>
+<edge head="32" tail="39" label="op2" ></edge>
+<edge head="33" tail="34" label="ARG1-of" ></edge>
+<edge head="33" tail="35" label="mod" ></edge>
+<edge head="33" tail="36" label="mod" ></edge>
+<edge head="36" tail="37" label="location" ></edge>
+<edge head="37" tail="38" label="name" ></edge>
+<edge head="38" tail="54" label="op1" ></edge>
+<edge head="39" tail="40" label="mod" ></edge>
+<edge head="40" tail="41" label="mod" ></edge>
+</edges>
+</graph>
+<graph id="3">
+<nodes>
+<node gid="87" id="0" text="hold-04" label="x10" nosuffix="hold" isleaf="False"></node>
+<node gid="88" id="1" text="newspaper" label="x2" nosuffix="newspaper" isleaf="False"></node>
+<node gid="89" id="2" text="name" label="n" nosuffix="name" isleaf="False"></node>
+<node gid="90" id="3" text="ms" label="x1" nosuffix="ms" isleaf="True"></node>
+<node gid="91" id="4" text="person" label="x6" nosuffix="person" isleaf="False"></node>
+<node gid="92" id="5" text="employ-01" label="e" nosuffix="employ" isleaf="True"></node>
+<node gid="93" id="6" text="night" label="x9" nosuffix="night" isleaf="False"></node>
+<node gid="94" id="7" text="last" label="x8" nosuffix="last" isleaf="True"></node>
+<node gid="95" id="8" text="conference" label="x13" nosuffix="conference" isleaf="False"></node>
+<node gid="96" id="9" text="news" label="x12" nosuffix="news" isleaf="True"></node>
+<node gid="97" id="10" text="accuse-01" label="x21" nosuffix="accuse" isleaf="False"></node>
+<node gid="98" id="11" text="flowers" label="x20" nosuffix="flowers" isleaf="False"></node>
+<node gid="99" id="12" text="gennifer" label="x19" nosuffix="gennifer" isleaf="True"></node>
+<node gid="100" id="13" text="person" label="x23" nosuffix="person" isleaf="False"></node>
+<node gid="101" id="14" text="name" label="n2" nosuffix="name" isleaf="False"></node>
+<node gid="102" id="15" text="lie-01" label="x25" nosuffix="lie" isleaf="False"></node>
+<node gid="103" id="16" text="claim-01" label="x32" nosuffix="claim" isleaf="False"></node>
+<node gid="104" id="17" text="newspaper" label="x28" nosuffix="newspaper" isleaf="False"></node>
+<node gid="105" id="18" text="name" label="n3" nosuffix="name" isleaf="False"></node>
+<node gid="106" id="19" text="governor" label="x27" nosuffix="governor" isleaf="True"></node>
+<node gid="107" id="20" text="country" label="x31" nosuffix="country" isleaf="False"></node>
+<node gid="108" id="21" text="name" label="n4" nosuffix="name" isleaf="False"></node>
+<node gid="109" id="22" text="friend" label="x36" nosuffix="friend" isleaf="False"></node>
+<node gid="110" id="23" text="just" label="x35" nosuffix="just" isleaf="True"></node>
+<node gid="111" id="24" text="country" label="x16" nosuffix="country" isleaf="False"></node>
+<node gid="112" id="25" text="name" label="n1" nosuffix="name" isleaf="False"></node>
+<node gid="113" id="26" text="null_tag" label="x15" nosuffix="null_tag" isleaf="True"></node>
+<node gid="114" id="27" text="Gennifer" label="Gennifer" nosuffix="Gennifer" isleaf="True"></node>
+<node gid="115" id="28" text="Flowers" label="Flowers" nosuffix="Flowers" isleaf="True"></node>
+<node gid="116" id="29" text="Clinton" label="Clinton" nosuffix="Clinton" isleaf="True"></node>
+<node gid="117" id="30" text="Bill" label="Bill" nosuffix="Bill" isleaf="True"></node>
+<node gid="118" id="31" text="Clinton" label="Clinton" nosuffix="Clinton" isleaf="True"></node>
+<node gid="119" id="32" text="Arkansas" label="Arkansas" nosuffix="Arkansas" isleaf="True"></node>
+<node gid="120" id="33" text="York" label="York" nosuffix="York" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="ARG0" ></edge>
+<edge head="0" tail="6" label="time" ></edge>
+<edge head="0" tail="8" label="ARG1" ></edge>
+<edge head="0" tail="24" label="location" ></edge>
+<edge head="1" tail="2" label="name" ></edge>
+<edge head="1" tail="3" label="ARG0-of" ></edge>
+<edge head="1" tail="4" label="ARG0-of" ></edge>
+<edge head="2" tail="27" label="op1" ></edge>
+<edge head="2" tail="28" label="op2" ></edge>
+<edge head="4" tail="5" label="ARG1-of" ></edge>
+<edge head="6" tail="7" label="mod" ></edge>
+<edge head="8" tail="9" label="mod" ></edge>
+<edge head="8" tail="10" label="ARG1-of" ></edge>
+<edge head="10" tail="11" label="ARG0" ></edge>
+<edge head="10" tail="13" label="ARG1" ></edge>
+<edge head="10" tail="15" label="ARG1" ></edge>
+<edge head="11" tail="12" label="mod" ></edge>
+<edge head="13" tail="14" label="name" ></edge>
+<edge head="14" tail="29" label="op1" ></edge>
+<edge head="15" tail="13" label="ARG0" ></edge>
+<edge head="15" tail="16" label="ARG1-of" ></edge>
+<edge head="16" tail="17" label="ARG0" ></edge>
+<edge head="16" tail="22" label="ARG2" ></edge>
+<edge head="17" tail="18" label="name" ></edge>
+<edge head="17" tail="19" label="ARG0-of" ></edge>
+<edge head="17" tail="20" label="mod" ></edge>
+<edge head="18" tail="30" label="op1" ></edge>
+<edge head="18" tail="31" label="op2" ></edge>
+<edge head="20" tail="21" label="name" ></edge>
+<edge head="21" tail="32" label="op1" ></edge>
+<edge head="22" tail="23" label="mod" ></edge>
+<edge head="24" tail="25" label="name" ></edge>
+<edge head="24" tail="26" label="null_edge" ></edge>
+<edge head="25" tail="33" label="op1" ></edge>
+</edges>
+</graph>
+<graph id="4">
+<nodes>
+<node gid="121" id="0" text="say-01" label="x3" nosuffix="say" isleaf="False"></node>
+<node gid="122" id="1" text="newspaper" label="x1" nosuffix="newspaper" isleaf="False"></node>
+<node gid="123" id="2" text="name" label="n" nosuffix="name" isleaf="False"></node>
+<node gid="124" id="3" text="lover" label="x11" nosuffix="lover" isleaf="False"></node>
+<node gid="125" id="4" text="country" label="x6" nosuffix="country" isleaf="False"></node>
+<node gid="126" id="5" text="name" label="n1" nosuffix="name" isleaf="False"></node>
+<node gid="127" id="6" text="name" label="x8" nosuffix="name" isleaf="False"></node>
+<node gid="128" id="7" text="temporal-quantity" label="x14" nosuffix="temporal" isleaf="False"></node>
+<node gid="129" id="8" text="year" label="y" nosuffix="year" isleaf="True"></node>
+<node gid="130" id="9" text="lie-01" label="x23" nosuffix="lie" isleaf="False"></node>
+<node gid="131" id="10" text="person" label="x18" nosuffix="person" isleaf="False"></node>
+<node gid="132" id="11" text="name" label="n2" nosuffix="name" isleaf="False"></node>
+<node gid="133" id="12" text="governor" label="x16" nosuffix="governor" isleaf="True"></node>
+<node gid="134" id="13" text="person" label="x17" nosuffix="person" isleaf="False"></node>
+<node gid="135" id="14" text="name" label="n3" nosuffix="name" isleaf="False"></node>
+<node gid="136" id="15" text="country" label="x20" nosuffix="country" isleaf="False"></node>
+<node gid="137" id="16" text="name" label="n4" nosuffix="name" isleaf="False"></node>
+<node gid="138" id="17" text="absolute" label="x22" nosuffix="absolute" isleaf="True"></node>
+<node gid="139" id="18" text="Gennifer" label="Gennifer" nosuffix="Gennifer" isleaf="True"></node>
+<node gid="140" id="19" text="Flowers" label="Flowers" nosuffix="Flowers" isleaf="True"></node>
+<node gid="141" id="20" text="US" label="US" nosuffix="US" isleaf="True"></node>
+<node gid="142" id="21" text="Bill" label="Bill" nosuffix="Bill" isleaf="True"></node>
+<node gid="143" id="22" text="Clinton" label="Clinton" nosuffix="Clinton" isleaf="True"></node>
+<node gid="144" id="23" text="12" label="12" nosuffix="12" isleaf="True"></node>
+<node gid="145" id="24" text="Clinton" label="Clinton" nosuffix="Clinton" isleaf="True"></node>
+<node gid="146" id="25" text="Bill" label="Bill" nosuffix="Bill" isleaf="True"></node>
+<node gid="147" id="26" text="Arkansas" label="Arkansas" nosuffix="Arkansas" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="ARG0" ></edge>
+<edge head="0" tail="3" label="ARG1" ></edge>
+<edge head="0" tail="9" label="ARG1" ></edge>
+<edge head="1" tail="2" label="name" ></edge>
+<edge head="2" tail="18" label="op1" ></edge>
+<edge head="2" tail="19" label="op2" ></edge>
+<edge head="3" tail="4" label="poss" ></edge>
+<edge head="3" tail="6" label="name" ></edge>
+<edge head="3" tail="7" label="duration" ></edge>
+<edge head="4" tail="5" label="name" ></edge>
+<edge head="5" tail="20" label="op1" ></edge>
+<edge head="6" tail="21" label="op1" ></edge>
+<edge head="6" tail="22" label="op2" ></edge>
+<edge head="7" tail="8" label="unit" ></edge>
+<edge head="7" tail="23" label="quant" ></edge>
+<edge head="9" tail="10" label="ARG0" ></edge>
+<edge head="9" tail="17" label="mod" ></edge>
+<edge head="10" tail="11" label="name" ></edge>
+<edge head="10" tail="12" label="null_edge" ></edge>
+<edge head="10" tail="13" label="null_edge" ></edge>
+<edge head="10" tail="15" label="null_edge" ></edge>
+<edge head="11" tail="24" label="op1" ></edge>
+<edge head="13" tail="14" label="name" ></edge>
+<edge head="14" tail="25" label="op1" ></edge>
+<edge head="15" tail="16" label="name" ></edge>
+<edge head="16" tail="26" label="op1" ></edge>
+</edges>
+</graph>
+<graph id="5">
+<nodes>
+<node gid="148" id="0" text="contrast-01" label="x5" nosuffix="contrast" isleaf="False"></node>
+<node gid="149" id="1" text="disappointed" label="x3" nosuffix="disappointed" isleaf="False"></node>
+<node gid="150" id="2" text="country" label="x1" nosuffix="country" isleaf="False"></node>
+<node gid="151" id="3" text="name" label="n" nosuffix="name" isleaf="False"></node>
+<node gid="152" id="4" text="think-01" label="x9" nosuffix="think" isleaf="False"></node>
+<node gid="153" id="5" text="realistically" label="x6" nosuffix="realistically" isleaf="True"></node>
+<node gid="154" id="6" text="country" label="x7" nosuffix="country" isleaf="False"></node>
+<node gid="155" id="7" text="name" label="n1" nosuffix="name" isleaf="False"></node>
+<node gid="156" id="8" text="country" label="x14" nosuffix="country" isleaf="False"></node>
+<node gid="157" id="9" text="name" label="n2" nosuffix="name" isleaf="False"></node>
+<node gid="158" id="10" text="and" label="x18" nosuffix="and" isleaf="False"></node>
+<node gid="159" id="11" text="come-01" label="x16" nosuffix="come" isleaf="False"></node>
+<node gid="160" id="12" text="person" label="x12" nosuffix="person" isleaf="False"></node>
+<node gid="161" id="13" text="name" label="n3" nosuffix="name" isleaf="False"></node>
+<node gid="162" id="14" text="governor" label="x10" nosuffix="governor" isleaf="True"></node>
+<node gid="163" id="15" text="person" label="x11" nosuffix="person" isleaf="False"></node>
+<node gid="164" id="16" text="name" label="n4" nosuffix="name" isleaf="False"></node>
+<node gid="165" id="17" text="admit-01" label="x19" nosuffix="admit" isleaf="False"></node>
+<node gid="166" id="18" text="temporal-quantity" label="x21" nosuffix="temporal" isleaf="False"></node>
+<node gid="167" id="19" text="year" label="y" nosuffix="year" isleaf="True"></node>
+<node gid="168" id="20" text="US" label="US" nosuffix="US" isleaf="True"></node>
+<node gid="169" id="21" text="US" label="US" nosuffix="US" isleaf="True"></node>
+<node gid="170" id="22" text="Arkansas" label="Arkansas" nosuffix="Arkansas" isleaf="True"></node>
+<node gid="171" id="23" text="Clinton" label="Clinton" nosuffix="Clinton" isleaf="True"></node>
+<node gid="172" id="24" text="Bill" label="Bill" nosuffix="Bill" isleaf="True"></node>
+<node gid="173" id="25" text="12" label="12" nosuffix="12" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="ARG1" ></edge>
+<edge head="0" tail="4" label="ARG2" ></edge>
+<edge head="1" tail="2" label="ARG0" ></edge>
+<edge head="2" tail="3" label="name" ></edge>
+<edge head="3" tail="20" label="op1" ></edge>
+<edge head="4" tail="2" label="ARG0" ></edge>
+<edge head="4" tail="5" label="manner" ></edge>
+<edge head="4" tail="6" label="ARG0" ></edge>
+<edge head="4" tail="8" label="ARG1" ></edge>
+<edge head="4" tail="10" label="ARG1" ></edge>
+<edge head="6" tail="7" label="name" ></edge>
+<edge head="7" tail="21" label="op1" ></edge>
+<edge head="8" tail="9" label="name" ></edge>
+<edge head="9" tail="22" label="op1" ></edge>
+<edge head="10" tail="11" label="op1" ></edge>
+<edge head="10" tail="17" label="op2" ></edge>
+<edge head="11" tail="12" label="ARG1" ></edge>
+<edge head="12" tail="13" label="name" ></edge>
+<edge head="12" tail="14" label="null_edge" ></edge>
+<edge head="12" tail="15" label="null_edge" ></edge>
+<edge head="13" tail="23" label="op1" ></edge>
+<edge head="15" tail="16" label="name" ></edge>
+<edge head="16" tail="24" label="op1" ></edge>
+<edge head="17" tail="12" label="ARG0" ></edge>
+<edge head="17" tail="18" label="ARG1" ></edge>
+<edge head="18" tail="19" label="unit" ></edge>
+<edge head="18" tail="25" label="quant" ></edge>
+</edges>
+</graph>
+<graph id="6">
+<nodes>
+<node gid="174" id="0" text="respond-01" label="x2" nosuffix="respond" isleaf="False"></node>
+<node gid="175" id="1" text="question-01" label="x5" nosuffix="question" isleaf="False"></node>
+<node gid="176" id="2" text="newspaper" label="x7" nosuffix="newspaper" isleaf="False"></node>
+<node gid="177" id="3" text="name" label="n" nosuffix="name" isleaf="False"></node>
+<node gid="178" id="4" text="offer-01" label="x17" nosuffix="offer" isleaf="False"></node>
+<node gid="179" id="5" text="country" label="x15" nosuffix="country" isleaf="False"></node>
+<node gid="180" id="6" text="name" label="n1" nosuffix="name" isleaf="False"></node>
+<node gid="181" id="7" text="local" label="x11" nosuffix="local" isleaf="True"></node>
+<node gid="182" id="8" text="money" label="x20" nosuffix="money" isleaf="True"></node>
+<node gid="183" id="9" text="temporal-quantity" label="x22" nosuffix="temporal" isleaf="False"></node>
+<node gid="184" id="10" text="month" label="m" nosuffix="month" isleaf="True"></node>
+<node gid="185" id="11" text="null_tag" label="x21" nosuffix="null_tag" isleaf="True"></node>
+<node gid="186" id="12" text="reveal-01" label="x25" nosuffix="reveal" isleaf="False"></node>
+<node gid="187" id="13" text="affair" label="x28" nosuffix="affair" isleaf="False"></node>
+<node gid="188" id="14" text="person" label="x31" nosuffix="person" isleaf="False"></node>
+<node gid="189" id="15" text="name" label="n2" nosuffix="name" isleaf="False"></node>
+<node gid="190" id="16" text="refuse-01" label="x37" nosuffix="refuse" isleaf="False"></node>
+<node gid="191" id="17" text="newspaper" label="x34" nosuffix="newspaper" isleaf="False"></node>
+<node gid="192" id="18" text="name" label="n4" nosuffix="name" isleaf="False"></node>
+<node gid="193" id="19" text="political-party" label="xap1" nosuffix="political" isleaf="False"></node>
+<node gid="194" id="20" text="name" label="xap0" nosuffix="name" isleaf="False"></node>
+<node gid="195" id="21" text="political-party" label="x12" nosuffix="political" isleaf="False"></node>
+<node gid="196" id="22" text="name" label="n3" nosuffix="name" isleaf="False"></node>
+<node gid="197" id="23" text="1" label="1" nosuffix="1" isleaf="True"></node>
+<node gid="198" id="24" text="Gennifer" label="Gennifer" nosuffix="Gennifer" isleaf="True"></node>
+<node gid="199" id="25" text="Flowers" label="Flowers" nosuffix="Flowers" isleaf="True"></node>
+<node gid="200" id="26" text="Arkansas" label="Arkansas" nosuffix="Arkansas" isleaf="True"></node>
+<node gid="201" id="27" text="Clinton" label="Clinton" nosuffix="Clinton" isleaf="True"></node>
+<node gid="202" id="28" text="Gennifer" label="Gennifer" nosuffix="Gennifer" isleaf="True"></node>
+<node gid="203" id="29" text="Flowers" label="Flowers" nosuffix="Flowers" isleaf="True"></node>
+<node gid="204" id="30" text="Republican" label="Republican" nosuffix="Republican" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="ARG1" ></edge>
+<edge head="0" tail="2" label="ARG0" ></edge>
+<edge head="0" tail="4" label="ARG1" ></edge>
+<edge head="1" tail="23" label="quant" ></edge>
+<edge head="2" tail="3" label="name" ></edge>
+<edge head="3" tail="24" label="op1" ></edge>
+<edge head="3" tail="25" label="op2" ></edge>
+<edge head="4" tail="5" label="ARG3" ></edge>
+<edge head="4" tail="8" label="ARG1" ></edge>
+<edge head="4" tail="9" label="time" ></edge>
+<edge head="4" tail="12" label="purpose" ></edge>
+<edge head="4" tail="19" label="ARG1-of" ></edge>
+<edge head="5" tail="6" label="name" ></edge>
+<edge head="5" tail="7" label="mod" ></edge>
+<edge head="6" tail="26" label="op1" ></edge>
+<edge head="9" tail="10" label="unit" ></edge>
+<edge head="9" tail="11" label="quant" ></edge>
+<edge head="12" tail="13" label="ARG1" ></edge>
+<edge head="12" tail="19" label="ARG0" ></edge>
+<edge head="13" tail="14" label="prep-with" ></edge>
+<edge head="14" tail="15" label="name" ></edge>
+<edge head="14" tail="16" label="ARG1-of" ></edge>
+<edge head="15" tail="27" label="op1" ></edge>
+<edge head="16" tail="17" label="ARG0" ></edge>
+<edge head="17" tail="18" label="name" ></edge>
+<edge head="18" tail="28" label="op1" ></edge>
+<edge head="18" tail="29" label="op2" ></edge>
+<edge head="19" tail="20" label="ARG0-of" ></edge>
+<edge head="20" tail="21" label="op1" ></edge>
+<edge head="21" tail="22" label="name" ></edge>
+<edge head="22" tail="30" label="op1" ></edge>
+</edges>
+</graph>
+<graph id="7">
+<nodes>
+<node gid="205" id="0" text="say-01" label="x3" nosuffix="say" isleaf="False"></node>
+<node gid="206" id="1" text="newspaper" label="x1" nosuffix="newspaper" isleaf="False"></node>
+<node gid="207" id="2" text="name" label="n" nosuffix="name" isleaf="False"></node>
+<node gid="208" id="3" text="and" label="x14" nosuffix="and" isleaf="False"></node>
+<node gid="209" id="4" text="lie-01" label="x7" nosuffix="lie" isleaf="False"></node>
+<node gid="210" id="5" text="newspaper" label="x4" nosuffix="newspaper" isleaf="False"></node>
+<node gid="211" id="6" text="name" label="n1" nosuffix="name" isleaf="False"></node>
+<node gid="212" id="7" text="press" label="x10" nosuffix="press" isleaf="False"></node>
+<node gid="213" id="8" text="have-org-role-91" label="xap2" nosuffix="have" isleaf="False"></node>
+<node gid="214" id="9" text="political-party" label="xap1" nosuffix="political" isleaf="False"></node>
+<node gid="215" id="10" text="name" label="xap0" nosuffix="name" isleaf="False"></node>
+<node gid="216" id="11" text="political-party" label="x13" nosuffix="political" isleaf="False"></node>
+<node gid="217" id="12" text="name" label="n3" nosuffix="name" isleaf="False"></node>
+<node gid="218" id="13" text="protect-01" label="x12" nosuffix="protect" isleaf="False"></node>
+<node gid="219" id="14" text="cause-01" label="x27" nosuffix="cause" isleaf="False"></node>
+<node gid="220" id="15" text="anger-01" label="x30" nosuffix="anger" isleaf="False"></node>
+<node gid="221" id="16" text="name" label="x31" nosuffix="name" isleaf="False"></node>
+<node gid="222" id="17" text="political-party" label="xap4" nosuffix="political" isleaf="False"></node>
+<node gid="223" id="18" text="name" label="xap3" nosuffix="name" isleaf="False"></node>
+<node gid="224" id="19" text="political-party" label="x28" nosuffix="political" isleaf="False"></node>
+<node gid="225" id="20" text="name" label="n4" nosuffix="name" isleaf="False"></node>
+<node gid="226" id="21" text="sell-01" label="x19" nosuffix="sell" isleaf="False"></node>
+<node gid="227" id="22" text="newspaper" label="x17" nosuffix="newspaper" isleaf="False"></node>
+<node gid="228" id="23" text="name" label="n2" nosuffix="name" isleaf="False"></node>
+<node gid="229" id="24" text="late" label="x16" nosuffix="late" isleaf="True"></node>
+<node gid="230" id="25" text="story" label="x22" nosuffix="story" isleaf="True"></node>
+<node gid="231" id="26" text="tabloid" label="x26" nosuffix="tabloid" isleaf="False"></node>
+<node gid="232" id="27" text="supermarket" label="x25" nosuffix="supermarket" isleaf="True"></node>
+<node gid="233" id="28" text="Gennifer" label="Gennifer" nosuffix="Gennifer" isleaf="True"></node>
+<node gid="234" id="29" text="Flowers" label="Flowers" nosuffix="Flowers" isleaf="True"></node>
+<node gid="235" id="30" text="Gennifer" label="Gennifer" nosuffix="Gennifer" isleaf="True"></node>
+<node gid="236" id="31" text="Flowers" label="Flowers" nosuffix="Flowers" isleaf="True"></node>
+<node gid="237" id="32" text="Republican" label="Republican" nosuffix="Republican" isleaf="True"></node>
+<node gid="238" id="33" text="Gennifer" label="Gennifer" nosuffix="Gennifer" isleaf="True"></node>
+<node gid="239" id="34" text="Flowers" label="Flowers" nosuffix="Flowers" isleaf="True"></node>
+<node gid="240" id="35" text="Republican" label="Republican" nosuffix="Republican" isleaf="True"></node>
+<node gid="241" id="36" text="Gennifer" label="Gennifer" nosuffix="Gennifer" isleaf="True"></node>
+<node gid="242" id="37" text="Flowers" label="Flowers" nosuffix="Flowers" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="ARG0" ></edge>
+<edge head="0" tail="3" label="ARG1" ></edge>
+<edge head="1" tail="2" label="name" ></edge>
+<edge head="2" tail="28" label="op1" ></edge>
+<edge head="2" tail="29" label="op2" ></edge>
+<edge head="3" tail="4" label="op1" ></edge>
+<edge head="3" tail="21" label="op2" ></edge>
+<edge head="4" tail="5" label="ARG0" ></edge>
+<edge head="4" tail="7" label="ARG2" ></edge>
+<edge head="4" tail="13" label="purpose" ></edge>
+<edge head="4" tail="14" label="ARG1-of" ></edge>
+<edge head="4" tail="8" label="ARG1-of" ></edge>
+<edge head="5" tail="6" label="name" ></edge>
+<edge head="6" tail="30" label="op1" ></edge>
+<edge head="6" tail="31" label="op2" ></edge>
+<edge head="7" tail="8" label="ARG0" ></edge>
+<edge head="8" tail="9" label="ARG0-of" ></edge>
+<edge head="9" tail="10" label="ARG0-of" ></edge>
+<edge head="10" tail="11" label="op1" ></edge>
+<edge head="11" tail="12" label="name" ></edge>
+<edge head="12" tail="32" label="op1" ></edge>
+<edge head="13" tail="5" label="ARG0" ></edge>
+<edge head="13" tail="8" label="ARG0" ></edge>
+<edge head="14" tail="15" label="ARG0" ></edge>
+<edge head="15" tail="16" label="ARG1" ></edge>
+<edge head="15" tail="17" label="ARG1" ></edge>
+<edge head="16" tail="33" label="op1" ></edge>
+<edge head="16" tail="34" label="op2" ></edge>
+<edge head="17" tail="18" label="ARG0-of" ></edge>
+<edge head="18" tail="19" label="op1" ></edge>
+<edge head="19" tail="20" label="name" ></edge>
+<edge head="20" tail="35" label="op1" ></edge>
+<edge head="21" tail="22" label="ARG0" ></edge>
+<edge head="21" tail="25" label="ARG1" ></edge>
+<edge head="21" tail="26" label="ARG2" ></edge>
+<edge head="22" tail="23" label="name" ></edge>
+<edge head="22" tail="24" label="ARG0-of" ></edge>
+<edge head="23" tail="36" label="op1" ></edge>
+<edge head="23" tail="37" label="op2" ></edge>
+<edge head="26" tail="27" label="ARG1" ></edge>
+</edges>
+</graph>
+<graph id="8">
+<nodes>
+<node gid="243" id="0" text="play-07" label="x7" nosuffix="play" isleaf="False"></node>
+<node gid="244" id="1" text="conference" label="x4" nosuffix="conference" isleaf="False"></node>
+<node gid="245" id="2" text="press" label="x3" nosuffix="press" isleaf="True"></node>
+<node gid="246" id="3" text="flowers" label="x6" nosuffix="flowers" isleaf="False"></node>
+<node gid="247" id="4" text="ms" label="x5" nosuffix="ms" isleaf="True"></node>
+<node gid="248" id="5" text="converse-01" label="x13" nosuffix="converse" isleaf="False"></node>
+<node gid="249" id="6" text="tape-recorded" label="x11" nosuffix="tape" isleaf="True"></node>
+<node gid="250" id="7" text="telephone" label="x12" nosuffix="telephone" isleaf="True"></node>
+<node gid="251" id="8" text="say-01" label="x15" nosuffix="say" isleaf="False"></node>
+<node gid="252" id="9" text="and" label="x21" nosuffix="and" isleaf="False"></node>
+<node gid="253" id="10" text="gennifer" label="x19" nosuffix="gennifer" isleaf="True"></node>
+<node gid="254" id="11" text="flowers" label="x20" nosuffix="flowers" isleaf="False"></node>
+<node gid="255" id="12" text="ms" label="x18" nosuffix="ms" isleaf="True"></node>
+<node gid="256" id="13" text="person" label="x23" nosuffix="person" isleaf="False"></node>
+<node gid="257" id="14" text="name" label="n" nosuffix="name" isleaf="False"></node>
+<node gid="258" id="15" text="10" label="10" nosuffix="10" isleaf="True"></node>
+<node gid="259" id="16" text="Clinton" label="Clinton" nosuffix="Clinton" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="time" ></edge>
+<edge head="0" tail="3" label="ARG0" ></edge>
+<edge head="0" tail="5" label="ARG1" ></edge>
+<edge head="1" tail="2" label="mod" ></edge>
+<edge head="3" tail="4" label="null_edge" ></edge>
+<edge head="5" tail="15" label="quant" ></edge>
+<edge head="5" tail="6" label="mod" ></edge>
+<edge head="5" tail="7" label="mod" ></edge>
+<edge head="5" tail="8" label="ARG0-of" ></edge>
+<edge head="8" tail="9" label="ARG1" ></edge>
+<edge head="9" tail="10" label="op2" ></edge>
+<edge head="9" tail="11" label="op1" ></edge>
+<edge head="9" tail="13" label="op2" ></edge>
+<edge head="11" tail="12" label="null_edge" ></edge>
+<edge head="13" tail="14" label="name" ></edge>
+<edge head="14" tail="16" label="op1" ></edge>
+</edges>
+</graph>
+<graph id="9">
+<nodes>
+<node gid="260" id="0" text="xconcept" label="x" nosuffix="xconcept" isleaf="False"></node>
+<node gid="261" id="1" text="excerpt" label="x2" nosuffix="excerpt" isleaf="False"></node>
+<node gid="262" id="2" text="publish-01" label="x1" nosuffix="publish" isleaf="True"></node>
+<node gid="263" id="3" text="tape" label="x5" nosuffix="tape" isleaf="True"></node>
+<node gid="264" id="4" text="and" label="x11" nosuffix="and" isleaf="False"></node>
+<node gid="265" id="5" text="prove-01" label="x9" nosuffix="prove" isleaf="False"></node>
+<node gid="266" id="6" text="inconclusive" label="x10" nosuffix="inconclusive" isleaf="True"></node>
+<node gid="267" id="7" text="surface" label="x14" nosuffix="surface" isleaf="False"></node>
+<node gid="268" id="8" text="question-01" label="x12" nosuffix="question" isleaf="True"></node>
+<node gid="269" id="9" text="credibility" label="x19" nosuffix="credibility" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="x" ></edge>
+<edge head="0" tail="4" label="x" ></edge>
+<edge head="1" tail="2" label="ARG1-of" ></edge>
+<edge head="1" tail="3" label="ARG1" ></edge>
+<edge head="4" tail="5" label="op1" ></edge>
+<edge head="4" tail="7" label="op2" ></edge>
+<edge head="5" tail="6" label="ARG1" ></edge>
+<edge head="7" tail="1" label="ARG1" ></edge>
+<edge head="7" tail="6" label="ARG1" ></edge>
+<edge head="7" tail="8" label="ARG1" ></edge>
+<edge head="7" tail="9" label="ARG1" ></edge>
+</edges>
+</graph>
+<graph id="10">
+<nodes>
+<node gid="270" id="0" text="maintain-01" label="x3" nosuffix="maintain" isleaf="False"></node>
+<node gid="271" id="1" text="meet-03" label="x7" nosuffix="meet" isleaf="False"></node>
+<node gid="272" id="2" text="person" label="x4" nosuffix="person" isleaf="False"></node>
+<node gid="273" id="3" text="name" label="n" nosuffix="name" isleaf="False"></node>
+<node gid="274" id="4" text="person" label="x9" nosuffix="person" isleaf="False"></node>
+<node gid="275" id="5" text="name" label="n1" nosuffix="name" isleaf="False"></node>
+<node gid="276" id="6" text="date-entity" label="x11" nosuffix="date" isleaf="False"></node>
+<node gid="277" id="7" text="date-entity" label="x13" nosuffix="date" isleaf="False"></node>
+<node gid="278" id="8" text="hotel" label="x17" nosuffix="hotel" isleaf="False"></node>
+<node gid="279" id="9" text="excelsior" label="x16" nosuffix="excelsior" isleaf="True"></node>
+<node gid="280" id="10" text="rock" label="x20" nosuffix="rock" isleaf="False"></node>
+<node gid="281" id="11" text="little" label="x19" nosuffix="little" isleaf="True"></node>
+<node gid="282" id="12" text="Ms" label="Ms" nosuffix="Ms" isleaf="True"></node>
+<node gid="283" id="13" text="Gennifer" label="Gennifer" nosuffix="Gennifer" isleaf="True"></node>
+<node gid="284" id="14" text="Flowers" label="Flowers" nosuffix="Flowers" isleaf="True"></node>
+<node gid="285" id="15" text="Clinton" label="Clinton" nosuffix="Clinton" isleaf="True"></node>
+<node gid="286" id="16" text="1979" label="1979" nosuffix="1979" isleaf="True"></node>
+<node gid="287" id="17" text="1980" label="1980" nosuffix="1980" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="ARG1" ></edge>
+<edge head="1" tail="2" label="ARG0" ></edge>
+<edge head="1" tail="4" label="ARG1" ></edge>
+<edge head="1" tail="6" label="time" ></edge>
+<edge head="1" tail="8" label="location" ></edge>
+<edge head="2" tail="3" label="name" ></edge>
+<edge head="3" tail="12" label="op1" ></edge>
+<edge head="3" tail="13" label="op2" ></edge>
+<edge head="3" tail="14" label="op3" ></edge>
+<edge head="4" tail="5" label="name" ></edge>
+<edge head="5" tail="15" label="op1" ></edge>
+<edge head="6" tail="16" label="year" ></edge>
+<edge head="6" tail="7" label="part-of" ></edge>
+<edge head="7" tail="17" label="year" ></edge>
+<edge head="8" tail="9" label="mod" ></edge>
+<edge head="8" tail="10" label="location" ></edge>
+<edge head="10" tail="11" label="mod" ></edge>
+</edges>
+</graph>
+<graph id="11">
+<nodes>
+<node gid="288" id="0" text="contrast-01" label="x1" nosuffix="contrast" isleaf="False"></node>
+<node gid="289" id="1" text="open-01" label="x6" nosuffix="open" isleaf="False"></node>
+<node gid="290" id="2" text="hotel" label="x3" nosuffix="hotel" isleaf="True"></node>
+<node gid="291" id="3" text="until" label="x7" nosuffix="until" isleaf="False"></node>
+<node gid="292" id="4" text="date-entity" label="x8" nosuffix="date" isleaf="False"></node>
+<node gid="293" id="5" text="1982" label="1982" nosuffix="1982" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="ARG2" ></edge>
+<edge head="1" tail="2" label="ARG0" ></edge>
+<edge head="1" tail="3" label="time" ></edge>
+<edge head="3" tail="4" label="op1" ></edge>
+<edge head="4" tail="5" label="year" ></edge>
+</edges>
+</graph>
+<graph id="12">
+<nodes>
+<node gid="294" id="0" text="contrast-01" label="x20" nosuffix="contrast" isleaf="False"></node>
+<node gid="295" id="1" text="claim-01" label="x5" nosuffix="claim" isleaf="False"></node>
+<node gid="296" id="2" text="newspaper" label="x2" nosuffix="newspaper" isleaf="False"></node>
+<node gid="297" id="3" text="name" label="n" nosuffix="name" isleaf="False"></node>
+<node gid="298" id="4" text="ms" label="x1" nosuffix="ms" isleaf="True"></node>
+<node gid="299" id="5" text="also" label="x4" nosuffix="also" isleaf="True"></node>
+<node gid="300" id="6" text="report-01" label="x8" nosuffix="report" isleaf="False"></node>
+<node gid="301" id="7" text="person" label="x11" nosuffix="person" isleaf="False"></node>
+<node gid="302" id="8" text="name" label="n1" nosuffix="name" isleaf="False"></node>
+<node gid="303" id="9" text="work-01" label="x13" nosuffix="work" isleaf="False"></node>
+<node gid="304" id="10" text="station" label="x18" nosuffix="station" isleaf="False"></node>
+<node gid="305" id="11" text="local" label="x16" nosuffix="local" isleaf="True"></node>
+<node gid="306" id="12" text="null_tag" label="x17" nosuffix="null_tag" isleaf="True"></node>
+<node gid="307" id="13" text="say-01" label="x25" nosuffix="say" isleaf="False"></node>
+<node gid="308" id="14" text="kark-tv" label="x24" nosuffix="kark" isleaf="False"></node>
+<node gid="309" id="15" text="have-org-role-91" label="x21" nosuffix="have" isleaf="False"></node>
+<node gid="310" id="16" text="country" label="c" nosuffix="country" isleaf="False"></node>
+<node gid="311" id="17" text="name" label="n2" nosuffix="name" isleaf="False"></node>
+<node gid="312" id="18" text="possible" label="x30" nosuffix="possible" isleaf="False"></node>
+<node gid="313" id="19" text="find-01" label="x31" nosuffix="find" isleaf="False"></node>
+<node gid="314" id="20" text="kark-tv" label="x29" nosuffix="kark" isleaf="False"></node>
+<node gid="315" id="21" text="have-org-role-91" label="x26" nosuffix="have" isleaf="False"></node>
+<node gid="316" id="22" text="country" label="c1" nosuffix="country" isleaf="False"></node>
+<node gid="317" id="23" text="name" label="n3" nosuffix="name" isleaf="False"></node>
+<node gid="318" id="24" text="tape" label="x33" nosuffix="tape" isleaf="False"></node>
+<node gid="319" id="25" text="support-01" label="x35" nosuffix="support" isleaf="False"></node>
+<node gid="320" id="26" text="this" label="x36" nosuffix="this" isleaf="True"></node>
+<node gid="321" id="27" text="Gennifer" label="Gennifer" nosuffix="Gennifer" isleaf="True"></node>
+<node gid="322" id="28" text="Flowers" label="Flowers" nosuffix="Flowers" isleaf="True"></node>
+<node gid="323" id="29" text="Clinton" label="Clinton" nosuffix="Clinton" isleaf="True"></node>
+<node gid="324" id="30" text="Little" label="Little" nosuffix="Little" isleaf="True"></node>
+<node gid="325" id="31" text="Rock" label="Rock" nosuffix="Rock" isleaf="True"></node>
+<node gid="326" id="32" text="Little" label="Little" nosuffix="Little" isleaf="True"></node>
+<node gid="327" id="33" text="Rock" label="Rock" nosuffix="Rock" isleaf="True"></node>
+<node gid="328" id="34" text="-" label="-" nosuffix="" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="ARG1" ></edge>
+<edge head="0" tail="13" label="ARG2" ></edge>
+<edge head="1" tail="2" label="ARG0" ></edge>
+<edge head="1" tail="5" label="mod" ></edge>
+<edge head="1" tail="6" label="ARG1" ></edge>
+<edge head="1" tail="7" label="ARG0" ></edge>
+<edge head="2" tail="3" label="name" ></edge>
+<edge head="2" tail="4" label="ARG0-of" ></edge>
+<edge head="3" tail="27" label="op1" ></edge>
+<edge head="3" tail="28" label="op2" ></edge>
+<edge head="6" tail="2" label="ARG0" ></edge>
+<edge head="6" tail="7" label="ARG0" ></edge>
+<edge head="6" tail="9" label="time" ></edge>
+<edge head="7" tail="8" label="name" ></edge>
+<edge head="8" tail="29" label="op1" ></edge>
+<edge head="9" tail="10" label="location" ></edge>
+<edge head="10" tail="11" label="mod" ></edge>
+<edge head="10" tail="12" label="null_edge" ></edge>
+<edge head="13" tail="14" label="ARG0" ></edge>
+<edge head="13" tail="18" label="ARG1" ></edge>
+<edge head="14" tail="15" label="null_edge" ></edge>
+<edge head="15" tail="16" label="ARG1" ></edge>
+<edge head="16" tail="17" label="name" ></edge>
+<edge head="17" tail="30" label="op1" ></edge>
+<edge head="17" tail="31" label="op2" ></edge>
+<edge head="18" tail="19" label="domain" ></edge>
+<edge head="19" tail="20" label="ARG0" ></edge>
+<edge head="19" tail="24" label="ARG1" ></edge>
+<edge head="19" tail="25" label="ARG1" ></edge>
+<edge head="20" tail="21" label="null_edge" ></edge>
+<edge head="21" tail="22" label="ARG1" ></edge>
+<edge head="22" tail="23" label="name" ></edge>
+<edge head="23" tail="32" label="op1" ></edge>
+<edge head="23" tail="33" label="op2" ></edge>
+<edge head="24" tail="34" label="polarity" ></edge>
+<edge head="25" tail="20" label="ARG0" ></edge>
+<edge head="25" tail="26" label="ARG1" ></edge>
+</edges>
+</graph>
+<graph id="13">
+<nodes>
+<node gid="329" id="0" text="judge-01" label="x13" nosuffix="judge" isleaf="False"></node>
+<node gid="330" id="1" text="front-runner" label="x6" nosuffix="front" isleaf="False"></node>
+<node gid="331" id="2" text="person" label="x2" nosuffix="person" isleaf="False"></node>
+<node gid="332" id="3" text="name" label="n" nosuffix="name" isleaf="False"></node>
+<node gid="333" id="4" text="mr" label="x1" nosuffix="mr" isleaf="True"></node>
+<node gid="334" id="5" text="early" label="x5" nosuffix="early" isleaf="True"></node>
+<node gid="335" id="6" text="nominate-01" label="x10" nosuffix="nominate" isleaf="False"></node>
+<node gid="336" id="7" text="democratic" label="x9" nosuffix="democratic" isleaf="True"></node>
+<node gid="337" id="8" text="yesterday" label="x14" nosuffix="yesterday" isleaf="True"></node>
+<node gid="338" id="9" text="appear-02" label="x22" nosuffix="appear" isleaf="False"></node>
+<node gid="339" id="10" text="gamble" label="x20" nosuffix="gamble" isleaf="False"></node>
+<node gid="340" id="11" text="huge" label="x19" nosuffix="huge" isleaf="True"></node>
+<node gid="341" id="12" text="program" label="x26" nosuffix="program" isleaf="False"></node>
+<node gid="342" id="13" text="organization" label="x24" nosuffix="organization" isleaf="False"></node>
+<node gid="343" id="14" text="name" label="n1" nosuffix="name" isleaf="False"></node>
+<node gid="344" id="15" text="more-than" label="x28" nosuffix="more" isleaf="True"></node>
+<node gid="345" id="16" text="attract-01" label="x34" nosuffix="attract" isleaf="False"></node>
+<node gid="346" id="17" text="general" label="x33" nosuffix="general" isleaf="True"></node>
+<node gid="347" id="18" text="viewer" label="x38" nosuffix="viewer" isleaf="False"></node>
+<node gid="348" id="19" text="more-than" label="x35" nosuffix="more" isleaf="True"></node>
+<node gid="349" id="20" text="Clinton" label="Clinton" nosuffix="Clinton" isleaf="True"></node>
+<node gid="350" id="21" text="CBS" label="CBS" nosuffix="CBS" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="ARG1" ></edge>
+<edge head="0" tail="8" label="time" ></edge>
+<edge head="0" tail="9" label="time" ></edge>
+<edge head="1" tail="2" label="mod" ></edge>
+<edge head="1" tail="5" label="time" ></edge>
+<edge head="1" tail="6" label="purpose" ></edge>
+<edge head="2" tail="3" label="name" ></edge>
+<edge head="2" tail="4" label="null_edge" ></edge>
+<edge head="3" tail="20" label="op1" ></edge>
+<edge head="6" tail="7" label="mod" ></edge>
+<edge head="9" tail="10" label="ARG1" ></edge>
+<edge head="9" tail="12" label="ARG1" ></edge>
+<edge head="10" tail="11" label="mod" ></edge>
+<edge head="12" tail="13" label="poss" ></edge>
+<edge head="12" tail="15" label="time" ></edge>
+<edge head="12" tail="16" label="ARG0-of" ></edge>
+<edge head="13" tail="14" label="name" ></edge>
+<edge head="14" tail="21" label="op1" ></edge>
+<edge head="16" tail="17" label="mod" ></edge>
+<edge head="16" tail="18" label="ARG1" ></edge>
+<edge head="18" tail="19" label="quant" ></edge>
+</edges>
+</graph>
+<graph id="14">
+<nodes>
+<node gid="351" id="0" text="say-01" label="x9" nosuffix="say" isleaf="False"></node>
+<node gid="352" id="1" text="have-org-role-91" label="x8" nosuffix="have" isleaf="False"></node>
+<node gid="353" id="2" text="person" label="p" nosuffix="person" isleaf="False"></node>
+<node gid="354" id="3" text="advise-01" label="a" nosuffix="advise" isleaf="True"></node>
+<node gid="355" id="4" text="newspaper" label="x3" nosuffix="newspaper" isleaf="False"></node>
+<node gid="356" id="5" text="name" label="n" nosuffix="name" isleaf="False"></node>
+<node gid="357" id="6" text="governor" label="x2" nosuffix="governor" isleaf="True"></node>
+<node gid="358" id="7" text="country" label="x6" nosuffix="country" isleaf="False"></node>
+<node gid="359" id="8" text="name" label="n1" nosuffix="name" isleaf="False"></node>
+<node gid="360" id="9" text="campaign-01" label="x7" nosuffix="campaign" isleaf="True"></node>
+<node gid="361" id="10" text="drown" label="x15" nosuffix="drown" isleaf="False"></node>
+<node gid="362" id="11" text="rumor-01" label="x13" nosuffix="rumor" isleaf="False"></node>
+<node gid="363" id="12" text="scandal" label="x12" nosuffix="scandal" isleaf="False"></node>
+<node gid="364" id="13" text="sex" label="x11" nosuffix="sex" isleaf="True"></node>
+<node gid="365" id="14" text="message-01" label="x21" nosuffix="message" isleaf="False"></node>
+<node gid="366" id="15" text="have-org-role-91" label="x19" nosuffix="have" isleaf="False"></node>
+<node gid="367" id="16" text="governor" label="g" nosuffix="governor" isleaf="True"></node>
+<node gid="368" id="17" text="country" label="x18" nosuffix="country" isleaf="False"></node>
+<node gid="369" id="18" text="name" label="n2" nosuffix="name" isleaf="False"></node>
+<node gid="370" id="19" text="vote-01" label="x23" nosuffix="vote" isleaf="True"></node>
+<node gid="371" id="20" text="governor" label="x28" nosuffix="governor" isleaf="False"></node>
+<node gid="372" id="21" text="risk-01" label="x26" nosuffix="risk" isleaf="True"></node>
+<node gid="373" id="22" text="possible" label="x34" nosuffix="possible" isleaf="False"></node>
+<node gid="374" id="23" text="draw-02" label="x35" nosuffix="draw" isleaf="False"></node>
+<node gid="375" id="24" text="person" label="x30" nosuffix="person" isleaf="False"></node>
+<node gid="376" id="25" text="name" label="n3" nosuffix="name" isleaf="False"></node>
+<node gid="377" id="26" text="person" label="x29" nosuffix="person" isleaf="False"></node>
+<node gid="378" id="27" text="name" label="n4" nosuffix="name" isleaf="False"></node>
+<node gid="379" id="28" text="confession" label="x33" nosuffix="confession" isleaf="False"></node>
+<node gid="380" id="29" text="country" label="x32" nosuffix="country" isleaf="False"></node>
+<node gid="381" id="30" text="name" label="n5" nosuffix="name" isleaf="False"></node>
+<node gid="382" id="31" text="scrutiny" label="x38" nosuffix="scrutiny" isleaf="False"></node>
+<node gid="383" id="32" text="further" label="x36" nosuffix="further" isleaf="True"></node>
+<node gid="384" id="33" text="media" label="x37" nosuffix="media" isleaf="True"></node>
+<node gid="385" id="34" text="before" label="x42" nosuffix="before" isleaf="False"></node>
+<node gid="386" id="35" text="just" label="x39" nosuffix="just" isleaf="True"></node>
+<node gid="387" id="36" text="temporal-quantity" label="x41" nosuffix="temporal" isleaf="False"></node>
+<node gid="388" id="37" text="week" label="w" nosuffix="week" isleaf="True"></node>
+<node gid="389" id="38" text="elect-01" label="x48" nosuffix="elect" isleaf="False"></node>
+<node gid="390" id="39" text="critical" label="x44" nosuffix="critical" isleaf="True"></node>
+<node gid="391" id="40" text="null_tag" label="x45" nosuffix="null_tag" isleaf="True"></node>
+<node gid="392" id="41" text="organization" label="x46" nosuffix="organization" isleaf="False"></node>
+<node gid="393" id="42" text="name" label="n6" nosuffix="name" isleaf="False"></node>
+<node gid="394" id="43" text="Bill" label="Bill" nosuffix="Bill" isleaf="True"></node>
+<node gid="395" id="44" text="Clinton" label="Clinton" nosuffix="Clinton" isleaf="True"></node>
+<node gid="396" id="45" text="Arkansas" label="Arkansas" nosuffix="Arkansas" isleaf="True"></node>
+<node gid="397" id="46" text="Arkansas" label="Arkansas" nosuffix="Arkansas" isleaf="True"></node>
+<node gid="398" id="47" text="Clinton" label="Clinton" nosuffix="Clinton" isleaf="True"></node>
+<node gid="399" id="48" text="Bill" label="Bill" nosuffix="Bill" isleaf="True"></node>
+<node gid="400" id="49" text="Arkansas" label="Arkansas" nosuffix="Arkansas" isleaf="True"></node>
+<node gid="401" id="50" text="3" label="3" nosuffix="3" isleaf="True"></node>
+<node gid="402" id="51" text="Hampshire" label="Hampshire" nosuffix="Hampshire" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="ARG1" ></edge>
+<edge head="0" tail="10" label="ARG1" ></edge>
+<edge head="0" tail="20" label="ARG0" ></edge>
+<edge head="1" tail="2" label="ARG2" ></edge>
+<edge head="1" tail="4" label="ARG0" ></edge>
+<edge head="1" tail="7" label="mod" ></edge>
+<edge head="1" tail="9" label="mod" ></edge>
+<edge head="2" tail="3" label="ARG0-of" ></edge>
+<edge head="4" tail="5" label="name" ></edge>
+<edge head="4" tail="6" label="ARG0-of" ></edge>
+<edge head="5" tail="43" label="op1" ></edge>
+<edge head="5" tail="44" label="op2" ></edge>
+<edge head="7" tail="8" label="name" ></edge>
+<edge head="8" tail="45" label="op1" ></edge>
+<edge head="10" tail="11" label="ARG1" ></edge>
+<edge head="10" tail="14" label="ARG1" ></edge>
+<edge head="11" tail="12" label="ARG1" ></edge>
+<edge head="12" tail="13" label="mod" ></edge>
+<edge head="14" tail="15" label="ARG0" ></edge>
+<edge head="14" tail="19" label="ARG1" ></edge>
+<edge head="15" tail="16" label="ARG2" ></edge>
+<edge head="15" tail="17" label="ARG1" ></edge>
+<edge head="17" tail="18" label="name" ></edge>
+<edge head="18" tail="46" label="op1" ></edge>
+<edge head="20" tail="21" label="domain" ></edge>
+<edge head="20" tail="22" label="null_edge" ></edge>
+<edge head="22" tail="23" label="domain" ></edge>
+<edge head="23" tail="24" label="ARG0" ></edge>
+<edge head="23" tail="31" label="ARG1" ></edge>
+<edge head="23" tail="34" label="time" ></edge>
+<edge head="24" tail="25" label="name" ></edge>
+<edge head="24" tail="26" label="null_edge" ></edge>
+<edge head="24" tail="28" label="null_edge" ></edge>
+<edge head="25" tail="47" label="op1" ></edge>
+<edge head="26" tail="27" label="name" ></edge>
+<edge head="27" tail="48" label="op1" ></edge>
+<edge head="28" tail="29" label="mod" ></edge>
+<edge head="29" tail="30" label="name" ></edge>
+<edge head="30" tail="49" label="op1" ></edge>
+<edge head="31" tail="32" label="mod" ></edge>
+<edge head="31" tail="33" label="ARG0" ></edge>
+<edge head="34" tail="35" label="mod" ></edge>
+<edge head="34" tail="36" label="quant" ></edge>
+<edge head="34" tail="38" label="op1" ></edge>
+<edge head="36" tail="37" label="unit" ></edge>
+<edge head="36" tail="50" label="quant" ></edge>
+<edge head="38" tail="39" label="mod" ></edge>
+<edge head="38" tail="40" label="null_edge" ></edge>
+<edge head="38" tail="41" label="ARG2" ></edge>
+<edge head="41" tail="42" label="name" ></edge>
+<edge head="42" tail="51" label="op1" ></edge>
+</edges>
+</graph>
+<graph id="15">
+<nodes>
+<node gid="403" id="0" text="appear-02" label="x6" nosuffix="appear" isleaf="False"></node>
+<node gid="404" id="1" text="calm" label="x7" nosuffix="calm" isleaf="False"></node>
+<node gid="405" id="2" text="person" label="x2" nosuffix="person" isleaf="False"></node>
+<node gid="406" id="3" text="name" label="n" nosuffix="name" isleaf="False"></node>
+<node gid="407" id="4" text="mr" label="x1" nosuffix="mr" isleaf="True"></node>
+<node gid="408" id="5" text="good-humoured" label="x9" nosuffix="good" isleaf="True"></node>
+<node gid="409" id="6" text="interview-01" label="x12" nosuffix="interview" isleaf="True"></node>
+<node gid="410" id="7" text="and" label="x8" nosuffix="and" isleaf="True"></node>
+<node gid="411" id="8" text="46" label="46" nosuffix="46" isleaf="True"></node>
+<node gid="412" id="9" text="Clinton" label="Clinton" nosuffix="Clinton" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="ARG1" ></edge>
+<edge head="0" tail="7" label="ARG1" ></edge>
+<edge head="1" tail="2" label="domain" ></edge>
+<edge head="1" tail="5" label="mod" ></edge>
+<edge head="1" tail="6" label="medium" ></edge>
+<edge head="2" tail="3" label="name" ></edge>
+<edge head="2" tail="4" label="null_edge" ></edge>
+<edge head="2" tail="8" label="null_edge" ></edge>
+<edge head="3" tail="9" label="op1" ></edge>
+</edges>
+</graph>
+<graph id="16">
+<nodes>
+<node gid="413" id="0" text="say-01" label="x16" nosuffix="say" isleaf="False"></node>
+<node gid="414" id="1" text="acknowledge-01" label="x3" nosuffix="acknowledge" isleaf="False"></node>
+<node gid="415" id="2" text="country" label="x1" nosuffix="country" isleaf="False"></node>
+<node gid="416" id="3" text="name" label="n1" nosuffix="name" isleaf="False"></node>
+<node gid="417" id="4" text="cause-01" label="x4" nosuffix="cause" isleaf="False"></node>
+<node gid="418" id="5" text="pain-01" label="x5" nosuffix="pain" isleaf="True"></node>
+<node gid="419" id="6" text="country" label="x7" nosuffix="country" isleaf="False"></node>
+<node gid="420" id="7" text="name" label="n4" nosuffix="name" isleaf="False"></node>
+<node gid="421" id="8" text="marriage" label="x8" nosuffix="marriage" isleaf="True"></node>
+<node gid="422" id="9" text="person" label="x13" nosuffix="person" isleaf="False"></node>
+<node gid="423" id="10" text="name" label="n" nosuffix="name" isleaf="False"></node>
+<node gid="424" id="11" text="governor" label="x11" nosuffix="governor" isleaf="True"></node>
+<node gid="425" id="12" text="person" label="x12" nosuffix="person" isleaf="False"></node>
+<node gid="426" id="13" text="name" label="n2" nosuffix="name" isleaf="False"></node>
+<node gid="427" id="14" text="country" label="x15" nosuffix="country" isleaf="False"></node>
+<node gid="428" id="15" text="name" label="n3" nosuffix="name" isleaf="False"></node>
+<node gid="429" id="16" text="US" label="US" nosuffix="US" isleaf="True"></node>
+<node gid="430" id="17" text="US" label="US" nosuffix="US" isleaf="True"></node>
+<node gid="431" id="18" text="Clinton" label="Clinton" nosuffix="Clinton" isleaf="True"></node>
+<node gid="432" id="19" text="Bill" label="Bill" nosuffix="Bill" isleaf="True"></node>
+<node gid="433" id="20" text="Arkansas" label="Arkansas" nosuffix="Arkansas" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="ARG1" ></edge>
+<edge head="0" tail="9" label="ARG0" ></edge>
+<edge head="1" tail="2" label="ARG0" ></edge>
+<edge head="1" tail="4" label="ARG0-of" ></edge>
+<edge head="2" tail="3" label="name" ></edge>
+<edge head="3" tail="16" label="op1" ></edge>
+<edge head="4" tail="5" label="ARG1" ></edge>
+<edge head="4" tail="6" label="location" ></edge>
+<edge head="4" tail="8" label="ARG1" ></edge>
+<edge head="6" tail="7" label="name" ></edge>
+<edge head="7" tail="17" label="op1" ></edge>
+<edge head="9" tail="10" label="name" ></edge>
+<edge head="9" tail="11" label="null_edge" ></edge>
+<edge head="9" tail="12" label="null_edge" ></edge>
+<edge head="9" tail="14" label="null_edge" ></edge>
+<edge head="10" tail="18" label="op1" ></edge>
+<edge head="12" tail="13" label="name" ></edge>
+<edge head="13" tail="19" label="op1" ></edge>
+<edge head="14" tail="15" label="name" ></edge>
+<edge head="15" tail="20" label="op1" ></edge>
+</edges>
+</graph>
+<graph id="17">
+<nodes>
+<node gid="434" id="0" text="say-01" label="x3" nosuffix="say" isleaf="False"></node>
+<node gid="435" id="1" text="country" label="x1" nosuffix="country" isleaf="False"></node>
+<node gid="436" id="2" text="name" label="n" nosuffix="name" isleaf="False"></node>
+<node gid="437" id="3" text="thing" label="x4" nosuffix="thing" isleaf="True"></node>
+<node gid="438" id="4" text="people" label="x11" nosuffix="people" isleaf="False"></node>
+<node gid="439" id="5" text="country" label="x10" nosuffix="country" isleaf="False"></node>
+<node gid="440" id="6" text="name" label="n1" nosuffix="name" isleaf="False"></node>
+<node gid="441" id="7" text="from" label="x12" nosuffix="from" isleaf="False"></node>
+<node gid="442" id="8" text="begin-01" label="x14" nosuffix="begin" isleaf="False"></node>
+<node gid="443" id="9" text="have-03" label="x20" nosuffix="have" isleaf="False"></node>
+<node gid="444" id="10" text="politician" label="x18" nosuffix="politician" isleaf="True"></node>
+<node gid="445" id="11" text="ever" label="x19" nosuffix="ever" isleaf="True"></node>
+<node gid="446" id="12" text="US" label="US" nosuffix="US" isleaf="True"></node>
+<node gid="447" id="13" text="American" label="American" nosuffix="American" isleaf="True"></node>
+<node gid="448" id="14" text="-" label="-" nosuffix="" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="ARG0" ></edge>
+<edge head="0" tail="3" label="ARG1" ></edge>
+<edge head="0" tail="4" label="ARG0" ></edge>
+<edge head="0" tail="7" label="time" ></edge>
+<edge head="1" tail="2" label="name" ></edge>
+<edge head="2" tail="12" label="op1" ></edge>
+<edge head="4" tail="5" label="null_edge" ></edge>
+<edge head="5" tail="6" label="name" ></edge>
+<edge head="6" tail="13" label="op1" ></edge>
+<edge head="7" tail="8" label="op2" ></edge>
+<edge head="8" tail="9" label="ARG0-of" ></edge>
+<edge head="9" tail="14" label="polarity" ></edge>
+<edge head="9" tail="10" label="ARG0" ></edge>
+<edge head="9" tail="11" label="time" ></edge>
+</edges>
+</graph>
+<graph id="18">
+<nodes>
+<node gid="449" id="0" text="contrast-01" label="x1" nosuffix="contrast" isleaf="False"></node>
+<node gid="450" id="1" text="avoid-01" label="x19" nosuffix="avoid" isleaf="False"></node>
+<node gid="451" id="2" text="respond-01" label="x3" nosuffix="respond" isleaf="False"></node>
+<node gid="452" id="3" text="question-01" label="x6" nosuffix="question" isleaf="False"></node>
+<node gid="453" id="4" text="commit-01" label="x14" nosuffix="commit" isleaf="False"></node>
+<node gid="454" id="5" text="politician" label="x11" nosuffix="politician" isleaf="False"></node>
+<node gid="455" id="6" text="ever" label="x13" nosuffix="ever" isleaf="True"></node>
+<node gid="456" id="7" text="adultery" label="x15" nosuffix="adultery" isleaf="True"></node>
+<node gid="457" id="8" text="person" label="x18" nosuffix="person" isleaf="False"></node>
+<node gid="458" id="9" text="name" label="n" nosuffix="name" isleaf="False"></node>
+<node gid="459" id="10" text="mr" label="x17" nosuffix="mr" isleaf="True"></node>
+<node gid="460" id="11" text="respond-01" label="x22" nosuffix="respond" isleaf="False"></node>
+<node gid="461" id="12" text="clear-cut" label="x21" nosuffix="clear" isleaf="True"></node>
+<node gid="462" id="13" text="-" label="-" nosuffix="" isleaf="True"></node>
+<node gid="463" id="14" text="Clinton" label="Clinton" nosuffix="Clinton" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="ARG2" ></edge>
+<edge head="1" tail="2" label="ARG2-of" ></edge>
+<edge head="1" tail="8" label="ARG0" ></edge>
+<edge head="1" tail="11" label="ARG1" ></edge>
+<edge head="2" tail="3" label="ARG1" ></edge>
+<edge head="3" tail="4" label="ARG2" ></edge>
+<edge head="4" tail="5" label="ARG0" ></edge>
+<edge head="4" tail="6" label="time" ></edge>
+<edge head="4" tail="7" label="ARG1" ></edge>
+<edge head="5" tail="13" label="polarity" ></edge>
+<edge head="8" tail="9" label="name" ></edge>
+<edge head="8" tail="10" label="null_edge" ></edge>
+<edge head="9" tail="14" label="op1" ></edge>
+<edge head="11" tail="12" label="manner" ></edge>
+</edges>
+</graph>
+<graph id="19">
+<nodes>
+<node gid="464" id="0" text="prepare-02" label="x5" nosuffix="prepare" isleaf="False"></node>
+<node gid="465" id="1" text="say-01" label="x7" nosuffix="say" isleaf="False"></node>
+<node gid="466" id="2" text="tonight" label="x8" nosuffix="tonight" isleaf="True"></node>
+<node gid="467" id="3" text="recommend-01" label="x13" nosuffix="recommend" isleaf="False"></node>
+<node gid="468" id="4" text="discuss-01" label="x15" nosuffix="discuss" isleaf="False"></node>
+<node gid="469" id="5" text="ever" label="x14" nosuffix="ever" isleaf="True"></node>
+<node gid="470" id="6" text="contrast-01" label="x19" nosuffix="contrast" isleaf="False"></node>
+<node gid="471" id="7" text="anyone" label="x18" nosuffix="anyone" isleaf="True"></node>
+<node gid="472" id="8" text="protect-01" label="xap0" nosuffix="protect" isleaf="False"></node>
+<node gid="473" id="9" text="any" label="x10" nosuffix="any" isleaf="True"></node>
+<node gid="474" id="10" text="person" label="x11" nosuffix="person" isleaf="False"></node>
+<node gid="475" id="11" text="marry-01" label="m" nosuffix="marry" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="ARG1" ></edge>
+<edge head="1" tail="2" label="time" ></edge>
+<edge head="1" tail="3" label="ARG1" ></edge>
+<edge head="3" tail="4" label="ARG1" ></edge>
+<edge head="3" tail="8" label="ARG1" ></edge>
+<edge head="4" tail="5" label="time" ></edge>
+<edge head="4" tail="6" label="ARG1" ></edge>
+<edge head="6" tail="7" label="ARG2" ></edge>
+<edge head="8" tail="9" label="mod" ></edge>
+<edge head="8" tail="10" label="ARG1" ></edge>
+<edge head="10" tail="11" label="ARG1-of" ></edge>
+</edges>
+</graph>
+<graph id="20">
+<nodes>
+<node gid="476" id="0" text="and" label="x11" nosuffix="and" isleaf="False"></node>
+<node gid="477" id="1" text="appeal-02" label="x4" nosuffix="appeal" isleaf="False"></node>
+<node gid="478" id="2" text="contrast-01" label="x2" nosuffix="contrast" isleaf="False"></node>
+<node gid="479" id="3" text="anyone" label="x1" nosuffix="anyone" isleaf="True"></node>
+<node gid="480" id="4" text="public" label="x8" nosuffix="public" isleaf="False"></node>
+<node gid="481" id="5" text="country" label="x7" nosuffix="country" isleaf="False"></node>
+<node gid="482" id="6" text="name" label="n" nosuffix="name" isleaf="False"></node>
+<node gid="483" id="7" text="fair" label="x10" nosuffix="fair" isleaf="True"></node>
+<node gid="484" id="8" text="contrast-01" label="x18" nosuffix="contrast" isleaf="True"></node>
+<node gid="485" id="9" text="urge-01" label="x12" nosuffix="urge" isleaf="False"></node>
+<node gid="486" id="10" text="media" label="x14" nosuffix="media" isleaf="True"></node>
+<node gid="487" id="11" text="turn-02" label="x24" nosuffix="turn" isleaf="False"></node>
+<node gid="488" id="12" text="privacy" label="x20" nosuffix="privacy" isleaf="True"></node>
+<node gid="489" id="13" text="campaign-01" label="x27" nosuffix="campaign" isleaf="False"></node>
+<node gid="490" id="14" text="date-entity" label="x26" nosuffix="date" isleaf="False"></node>
+<node gid="491" id="15" text="game" label="x31" nosuffix="game" isleaf="False"></node>
+<node gid="492" id="16" text="gotcha" label="x33" nosuffix="gotcha" isleaf="True"></node>
+<node gid="493" id="17" text="US" label="US" nosuffix="US" isleaf="True"></node>
+<node gid="494" id="18" text="1992" label="1992" nosuffix="1992" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="op1" ></edge>
+<edge head="0" tail="9" label="op2" ></edge>
+<edge head="1" tail="2" label="ARG1" ></edge>
+<edge head="1" tail="4" label="ARG2" ></edge>
+<edge head="1" tail="7" label="ARG1" ></edge>
+<edge head="1" tail="8" label="ARG1" ></edge>
+<edge head="2" tail="3" label="ARG2" ></edge>
+<edge head="4" tail="5" label="mod" ></edge>
+<edge head="5" tail="6" label="name" ></edge>
+<edge head="6" tail="17" label="op1" ></edge>
+<edge head="9" tail="10" label="ARG1" ></edge>
+<edge head="9" tail="11" label="ARG2" ></edge>
+<edge head="11" tail="12" label="ARG1" ></edge>
+<edge head="11" tail="13" label="ARG1" ></edge>
+<edge head="11" tail="15" label="ARG2" ></edge>
+<edge head="13" tail="14" label="time" ></edge>
+<edge head="14" tail="18" label="year" ></edge>
+<edge head="15" tail="16" label="mod" ></edge>
+</edges>
+</graph>
+<graph id="21">
+<nodes>
+<node gid="495" id="0" text="xconcept" label="x" nosuffix="xconcept" isleaf="False"></node>
+<node gid="496" id="1" text="see-01" label="x3" nosuffix="see" isleaf="False"></node>
+<node gid="497" id="2" text="person" label="x2" nosuffix="person" isleaf="False"></node>
+<node gid="498" id="3" text="name" label="n" nosuffix="name" isleaf="False"></node>
+<node gid="499" id="4" text="mr" label="x1" nosuffix="mr" isleaf="True"></node>
+<node gid="500" id="5" text="fall-01" label="x10" nosuffix="fall" isleaf="False"></node>
+<node gid="501" id="6" text="newspaper" label="x5" nosuffix="newspaper" isleaf="False"></node>
+<node gid="502" id="7" text="name" label="n3" nosuffix="name" isleaf="False"></node>
+<node gid="503" id="8" text="governor" label="x4" nosuffix="governor" isleaf="True"></node>
+<node gid="504" id="9" text="popularity" label="x9" nosuffix="popularity" isleaf="False"></node>
+<node gid="505" id="10" text="country" label="x8" nosuffix="country" isleaf="False"></node>
+<node gid="506" id="11" text="name" label="n5" nosuffix="name" isleaf="False"></node>
+<node gid="507" id="12" text="sharp" label="x11" nosuffix="sharp" isleaf="True"></node>
+<node gid="508" id="13" text="vote-01" label="x17" nosuffix="vote" isleaf="False"></node>
+<node gid="509" id="14" text="week" label="x13" nosuffix="week" isleaf="False"></node>
+<node gid="510" id="15" text="last" label="x12" nosuffix="last" isleaf="True"></node>
+<node gid="511" id="16" text="likely" label="x15" nosuffix="likely" isleaf="True"></node>
+<node gid="512" id="17" text="democratic" label="x16" nosuffix="democratic" isleaf="True"></node>
+<node gid="513" id="18" text="country" label="x20" nosuffix="country" isleaf="False"></node>
+<node gid="514" id="19" text="name" label="n4" nosuffix="name" isleaf="False"></node>
+<node gid="515" id="20" text="null_tag" label="x19" nosuffix="null_tag" isleaf="True"></node>
+<node gid="516" id="21" text="report-01" label="x23" nosuffix="report" isleaf="False"></node>
+<node gid="517" id="22" text="organization" label="x22" nosuffix="organization" isleaf="False"></node>
+<node gid="518" id="23" text="name" label="n1" nosuffix="name" isleaf="False"></node>
+<node gid="519" id="24" text="city" label="x25" nosuffix="city" isleaf="False"></node>
+<node gid="520" id="25" text="name" label="n2" nosuffix="name" isleaf="False"></node>
+<node gid="521" id="26" text="Clinton" label="Clinton" nosuffix="Clinton" isleaf="True"></node>
+<node gid="522" id="27" text="Bill" label="Bill" nosuffix="Bill" isleaf="True"></node>
+<node gid="523" id="28" text="Clinton" label="Clinton" nosuffix="Clinton" isleaf="True"></node>
+<node gid="524" id="29" text="Arkansas" label="Arkansas" nosuffix="Arkansas" isleaf="True"></node>
+<node gid="525" id="30" text="Hampshire" label="Hampshire" nosuffix="Hampshire" isleaf="True"></node>
+<node gid="526" id="31" text="Reuter" label="Reuter" nosuffix="Reuter" isleaf="True"></node>
+<node gid="527" id="32" text="Boston" label="Boston" nosuffix="Boston" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="x" ></edge>
+<edge head="0" tail="21" label="x" ></edge>
+<edge head="1" tail="2" label="ARG0" ></edge>
+<edge head="1" tail="5" label="ARG1" ></edge>
+<edge head="2" tail="3" label="name" ></edge>
+<edge head="2" tail="4" label="null_edge" ></edge>
+<edge head="3" tail="26" label="op1" ></edge>
+<edge head="5" tail="6" label="null_edge" ></edge>
+<edge head="5" tail="12" label="manner" ></edge>
+<edge head="5" tail="13" label="null_edge" ></edge>
+<edge head="5" tail="18" label="location" ></edge>
+<edge head="6" tail="7" label="name" ></edge>
+<edge head="6" tail="8" label="ARG0-of" ></edge>
+<edge head="6" tail="9" label="part-of" ></edge>
+<edge head="7" tail="27" label="op1" ></edge>
+<edge head="7" tail="28" label="op2" ></edge>
+<edge head="9" tail="10" label="mod" ></edge>
+<edge head="10" tail="11" label="name" ></edge>
+<edge head="11" tail="29" label="op1" ></edge>
+<edge head="13" tail="14" label="time" ></edge>
+<edge head="13" tail="16" label="mod" ></edge>
+<edge head="13" tail="17" label="mod" ></edge>
+<edge head="14" tail="15" label="mod" ></edge>
+<edge head="18" tail="19" label="name" ></edge>
+<edge head="18" tail="20" label="null_edge" ></edge>
+<edge head="19" tail="30" label="op1" ></edge>
+<edge head="21" tail="22" label="ARG0" ></edge>
+<edge head="21" tail="24" label="source" ></edge>
+<edge head="22" tail="23" label="name" ></edge>
+<edge head="23" tail="31" label="op1" ></edge>
+<edge head="24" tail="25" label="name" ></edge>
+<edge head="25" tail="32" label="op1" ></edge>
+</edges>
+</graph>
+<graph id="22">
+<nodes>
+<node gid="528" id="0" text="fall-01" label="x27" nosuffix="fall" isleaf="False"></node>
+<node gid="529" id="1" text="poll-01" label="x3" nosuffix="poll" isleaf="False"></node>
+<node gid="530" id="2" text="by" label="x4" nosuffix="by" isleaf="False"></node>
+<node gid="531" id="3" text="null_tag" label="x8" nosuffix="null_tag" isleaf="False"></node>
+<node gid="532" id="4" text="null_tag" label="x7" nosuffix="null_tag" isleaf="True"></node>
+<node gid="533" id="5" text="conduct-01" label="x12" nosuffix="conduct" isleaf="False"></node>
+<node gid="534" id="6" text="survey-01" label="x14" nosuffix="survey" isleaf="True"></node>
+<node gid="535" id="7" text="advance-01" label="x16" nosuffix="advance" isleaf="False"></node>
+<node gid="536" id="8" text="date-entity" label="x20" nosuffix="date" isleaf="False"></node>
+<node gid="537" id="9" text="support-01" label="x23" nosuffix="support" isleaf="False"></node>
+<node gid="538" id="10" text="person" label="x26" nosuffix="person" isleaf="False"></node>
+<node gid="539" id="11" text="name" label="n" nosuffix="name" isleaf="False"></node>
+<node gid="540" id="12" text="percentage-entity" label="x29" nosuffix="percentage" isleaf="False"></node>
+<node gid="541" id="13" text="date-entity" label="x32" nosuffix="date" isleaf="False"></node>
+<node gid="542" id="14" text="week" label="x35" nosuffix="week" isleaf="False"></node>
+<node gid="543" id="15" text="last" label="x34" nosuffix="last" isleaf="True"></node>
+<node gid="544" id="16" text="2" label="2" nosuffix="2" isleaf="True"></node>
+<node gid="545" id="17" text="Clinton" label="Clinton" nosuffix="Clinton" isleaf="True"></node>
+<node gid="546" id="18" text="14" label="14" nosuffix="14" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="ARG4" ></edge>
+<edge head="0" tail="9" label="ARG1" ></edge>
+<edge head="0" tail="12" label="ARG4" ></edge>
+<edge head="0" tail="13" label="time" ></edge>
+<edge head="1" tail="2" label="time" ></edge>
+<edge head="2" tail="3" label="null_edge" ></edge>
+<edge head="3" tail="4" label="null_edge" ></edge>
+<edge head="3" tail="5" label="ARG1-of" ></edge>
+<edge head="5" tail="6" label="ARG1" ></edge>
+<edge head="5" tail="7" label="ARG1-of" ></edge>
+<edge head="7" tail="8" label="time" ></edge>
+<edge head="8" tail="16" label="mod" ></edge>
+<edge head="9" tail="10" label="ARG0" ></edge>
+<edge head="10" tail="11" label="name" ></edge>
+<edge head="11" tail="17" label="op1" ></edge>
+<edge head="12" tail="18" label="quant" ></edge>
+<edge head="13" tail="14" label="time" ></edge>
+<edge head="14" tail="15" label="mod" ></edge>
+</edges>
+</graph>
+<graph id="23">
+<nodes>
+<node gid="547" id="0" text="put-01" label="x5" nosuffix="put" isleaf="False"></node>
+<node gid="548" id="1" text="data" label="x4" nosuffix="data" isleaf="False"></node>
+<node gid="549" id="2" text="late" label="x2" nosuffix="late" isleaf="False"></node>
+<node gid="550" id="3" text="most" label="m" nosuffix="most" isleaf="True"></node>
+<node gid="551" id="4" text="polling" label="x3" nosuffix="polling" isleaf="True"></node>
+<node gid="552" id="5" text="person" label="x7" nosuffix="person" isleaf="False"></node>
+<node gid="553" id="6" text="name" label="n" nosuffix="name" isleaf="False"></node>
+<node gid="554" id="7" text="monetary-quantity" label="x15" nosuffix="monetary" isleaf="False"></node>
+<node gid="555" id="8" text="cent" label="c" nosuffix="cent" isleaf="True"></node>
+<node gid="556" id="9" text="person" label="x20" nosuffix="person" isleaf="False"></node>
+<node gid="557" id="10" text="name" label="n1" nosuffix="name" isleaf="False"></node>
+<node gid="558" id="11" text="null_tag" label="x19" nosuffix="null_tag" isleaf="True"></node>
+<node gid="559" id="12" text="senator" label="x25" nosuffix="senator" isleaf="False"></node>
+<node gid="560" id="13" text="former" label="x23" nosuffix="former" isleaf="True"></node>
+<node gid="561" id="14" text="support-01" label="x35" nosuffix="support" isleaf="False"></node>
+<node gid="562" id="15" text="person" label="x29" nosuffix="person" isleaf="False"></node>
+<node gid="563" id="16" text="vote-01" label="x33" nosuffix="vote" isleaf="True"></node>
+<node gid="564" id="17" text="Clinton" label="Clinton" nosuffix="Clinton" isleaf="True"></node>
+<node gid="565" id="18" text="25" label="25" nosuffix="25" isleaf="True"></node>
+<node gid="566" id="19" text="Tsongas" label="Tsongas" nosuffix="Tsongas" isleaf="True"></node>
+<node gid="567" id="20" text="27" label="27" nosuffix="27" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="ARG0" ></edge>
+<edge head="0" tail="5" label="ARG1" ></edge>
+<edge head="0" tail="7" label="ARG2" ></edge>
+<edge head="0" tail="9" label="ARG2" ></edge>
+<edge head="1" tail="2" label="time" ></edge>
+<edge head="1" tail="4" label="mod" ></edge>
+<edge head="2" tail="3" label="degree" ></edge>
+<edge head="5" tail="6" label="name" ></edge>
+<edge head="6" tail="17" label="op1" ></edge>
+<edge head="7" tail="8" label="unit" ></edge>
+<edge head="7" tail="18" label="quant" ></edge>
+<edge head="9" tail="10" label="name" ></edge>
+<edge head="9" tail="11" label="null_edge" ></edge>
+<edge head="9" tail="12" label="null_edge" ></edge>
+<edge head="9" tail="14" label="ARG0-of" ></edge>
+<edge head="10" tail="19" label="op1" ></edge>
+<edge head="12" tail="13" label="mod" ></edge>
+<edge head="14" tail="15" label="ARG1" ></edge>
+<edge head="14" tail="16" label="ARG0" ></edge>
+<edge head="15" tail="20" label="op" ></edge>
+</edges>
+</graph>
+</amr>

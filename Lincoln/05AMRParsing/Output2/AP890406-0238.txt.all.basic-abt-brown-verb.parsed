@@ -1,798 +1,1561 @@
-# ::id 1
-# ::snt President Bush today renewed President Bush threat to veto legislation raising the minimum wage beyond $ 4.25 an hour as Senate Democrats moved to quickly pass a bill raising the wage floor to $ 4.55
-(x4 / renew-01
-	:ARG0 (x2 / person
-		:name (n / name
-			:op1 "Bush")
-		:ARG0-of (x1 / have-org-role-91
-			:ARG2 (p / president)))
-	:time (x3 / today)
-	:ARG1 (x6 / person
-		:name (n1 / name
-			:op1 "Bush")
-		:ARG0-of (x5 / have-org-role-91
-			:ARG2 (p1 / president)))
-	:ARG1 (x7 / threaten-01)
-	:purpose (x9 / veto-01
-		:ARG0 x2
-		:ARG0 x6
-		:ARG1 (x10 / legislate-01
-			:ARG0-of (x11 / raise-01
-				:ARG1 (x14 / wage-01
-					:mod (x13 / minimum))))
-		:ARG2 (x15 / beyond)
-		:time (x23 / move-01
-			:ARG0 (x22 / political-party
-				:name (n2 / name
-					:op1 "Democrats")
-				:mod (x21 / government-organization
-					:name (n3 / name
-						:op1 "Senate")))
-			:purpose (x26 / pass-01
-				:manner (x25 / quick)
-				:ARG1 (x28 / bill
-					:ARG0-of (x29 / raise-01
-						:ARG1 (x32 / floor
-							:mod (x31 / wage-01))
-						:quant (x35 / monetary-quantity
-							:unit (y / yuan))))))))
-
-# ::id 2
-# ::snt House Minority Leader Bob Michel, R-Ill., who met with Bush and relayed President Bush comments to reporters, said the president " made House abundantly clear there will be absolutely no flexibility, not one penny, not one deviation " from the president position on the minimum wage
-(x21 / say-01
-	:ARG0 (x5 / person
-		:name (n / name
-			:op1 "Michel")
-		:null_edge (x1 / government-organization
-			:name (n1 / name
-				:op1 "House"))
-		:null_edge (x2 / minority)
-		:null_edge (x3 / lead-02)
-		:null_edge (x4 / person
-			:name (n2 / name
-				:op1 "Bob"))
-		:null_edge (x7 / country
-			:name (n3 / name
-				:op1 "R-Ill."))
-		:ARG0-of (x10 / meet-03
-			:ARG1 (x12 / person
-				:name (n5 / name
-					:op1 "Bush")
-				:ARG0-of (x14 / relay-01
-					:ARG1 (x16 / person
-						:name (n7 / name
-							:op1 "Bush")
-						:ARG0-of (x15 / have-org-role-91
-							:ARG2 (p1 / president)))
-					:ARG1 (x17 / comment-02)
-					:ARG2 (x19 / person
-						:ARG0-of (r / report-01))))))
-	:ARG1 (x28 / clear
-		:domain (x26 / government-organization
-			:name (n4 / name
-				:op1 "House"))
-		:manner (x27 / abundantly)
-		:domain (x34 / flexibility
-			:mod (x32 / absolute)
-			:polarity -
-			:null_edge (x38 / country
-				:name (n6 / name
-					:op1 "penny")
-				:quant 1)
-			:domain (x42 / deviation
-				:quant 1
-				:ARG1 (x47 / position
-					:ARG2 (x46 / have-org-role-91
-						:ARG2 (p / president))
-					:topic (x51 / wage-01
-						:mod (x50 / minimum)))))))
-
-# ::id 3
-# ::snt Bush met with Republican congressional leaders hours before the Senate opened debate on the legislation
-(x2 / meet-03
-	:ARG0 (x1 / person
-		:name (n / name
-			:op1 "Bush"))
-	:ARG1 (x6 / person
-		:ARG0-of (l / lead-02)
-		:ARG1 "Republican"
-		:ARG1 (x5 / government-organization
-			:name (n1 / name
-				:op1 "congressional")))
-	:time (x8 / before
-		:op1 (x11 / open-01
-			:ARG1 (x7 / temporal-quantity
-				:unit (h / hour))
-			:ARG0 (x10 / government-organization
-				:name (n2 / name
-					:op1 "Senate"))
-			:ARG1 (x12 / debate-01
-				:location (x15 / legislate-01)))))
-
-# ::id 4
-# ::snt The Senate bill, sponsored by Sen. Edward M. Kennedy, D-Mass., would raise the hourly minimum from $ 3.35 to $ 4.65 by January 1992 and contains no provision allowing a lower wage for new workers
-(x28 / and
-	:op1 (x15 / raise-01
-		:ARG0 (x3 / bill
-			:mod (x2 / government-organization
-				:name (n / name
-					:op1 "Senate"))
-			:ARG1-of (x5 / sponsor-01
-				:ARG0 (x8 / name
-					:op1 "Edward"
-					:op2 "M."
-					:op3 "Kennedy"
-					:ARG0-of (x7 / sen.
-						:location (x12 / country
-							:name (n1 / name
-								:op1 "D-Mass."))))))
-		:ARG1 (x18 / minimum
-			:mod (x17 / hour))
-		:null_edge (x24 / monetary-quantity
-			:unit (y / yuan)
-			:null_edge (x21 / monetary-quantity
-				:unit (y1 / yuan)))
-		:time (x26 / date-entity
-			:year 1992)
-		:polarity -)
-	:op2 (x29 / contain-00
-		:ARG1 (x31 / provision
-			:ARG0-of (x32 / allow-01
-				:ARG1 (x35 / wage-01
-					:mod (x34 / low)
-					:poss (x38 / person
-						:ARG0-of (w / work-01)
-						:mod (x37 / new)))))))
-
-# ::id 5
-# ::snt But Kennedy aides said Edward M. Kennedy would offer an amendment making Edward M. Kennedy measure identical to the House bill passed two weeks ago, which has a final wage of $ 4.55 and would allow employers to pay new entrants in the job market a " sub-minimum " for two months
-(x4 / say-01
-	:null_edge (x1 / contrast-01)
-	:ARG1 (x35 / and
-		:op1 (x9 / offer-01
-			:ARG0 (x5 / person
-				:name (n / name
-					:op1 "Edward"
-					:op2 "M."
-					:op3 "Kennedy"))
-			:ARG1 (x11 / amend-01
-				:ARG0-of (x12 / make-02
-					:ARG1 (x16 / measure-01
-						:ARG0 (x15 / person
-							:name (n1 / name
-								:op1 "Kennedy")
-							:null_edge (x13 / person
-								:name (n2 / name
-									:op1 "Edward"))
-							:null_edge (x14 / null_tag))
-						:ARG2-of (x17 / identical-41
-							:ARG2 (x21 / bill
-								:mod (x20 / government-organization
-									:name (n3 / name
-										:op1 "House"))
-								:ARG1-of (x22 / pass-01
-									:time (xap1 / before
-										:quant (x24 / temporal-quantity
-											:unit (w / week)
-											:null_edge (x23 / null_tag))))
-								:ARG1 (x31 / wage-01
-									:mod (x30 / final)
-									:quant (x34 / monetary-quantity
-										:unit (y / yuan)))))))))
-		:op2 (x37 / allow-01
-			:ARG1 (x40 / pay-01
-				:ARG0 (x38 / employ-01)
-				:ARG2 (x42 / entrant
-					:mod (x41 / new)
-					:location (x46 / market
-						:mod (x45 / job)))
-				:ARG1 (x49 / sub-minimum)
-				:duration (x53 / temporal-quantity
-					:unit (m / month)
-					:quant 2))))
-	:ARG0 (xap0 / person
-		:ARG0-of (x3 / have-org-role-91
-			:ARG2 (a / aide))))
-
-# ::id 6
-# ::snt Bush has insisted that employers be allowed to pay any new employees a sub-minimum " training wage " for six months
-(x3 / insist-01
-	:ARG0 (x1 / person
-		:name (n / name
-			:op1 "Bush"))
-	:ARG1 (x7 / allow-01
-		:ARG1 (x5 / employ-01)
-		:ARG1 (x9 / pay-01
-			:ARG0 x5
-			:ARG2 (x12 / person
-				:ARG1-of (e / employ-01)
-				:mod (x10 / any)
-				:mod (x11 / new))
-			:ARG1 (x17 / wage-01
-				:ARG1 (x16 / train-01)
-				:duration (x21 / temporal-quantity
-					:unit (m / month)
-					:quant 6)))))
-
-# ::id 7
-# ::snt The GOP leaders who met with Bush said President Bush also reiterated President Bush opposition to shortening that time frame
-(x8 / say-01
-	:ARG0 (x3 / person
-		:ARG0-of (l / lead-02)
-		:ARG1 (x2 / political-party
-			:name (n / name
-				:op1 "GOP"))
-		:ARG0-of (x5 / meet-03
-			:ARG1 (x7 / person
-				:name (n3 / name
-					:op1 "Bush"))))
-	:ARG1 (x12 / reiterate-01
-		:ARG0 (x10 / person
-			:name (n1 / name
-				:op1 "Bush")
-			:ARG0-of (x9 / have-org-role-91
-				:ARG2 (p / president)))
-		:mod (x11 / also)
-		:ARG0 (x14 / person
-			:name (n2 / name
-				:op1 "Bush")
-			:ARG0-of (x13 / have-org-role-91
-				:ARG2 (p1 / president)))
-		:ARG1 (x15 / oppose-01
-			:ARG1 (x17 / shorten-01
-				:ARG1 (x20 / frame
-					:mod (x18 / that)
-					:mod (x19 / time))))))
-
-# ::id 8
-# ::snt Another of the Republicans with whom Bush met, Sen. Thad Cochran, R-Miss., told reporters afterward that " the message that was given to the president by the Senate (GOP )leadership was that we 're going to stand with the president on the minimum wage issue
-(x16 / tell-01
-	:ARG2 (x17 / person
-		:ARG0-of (r / report-01))
-	:time (x18 / afterward)
-	:ARG1 (x22 / message-01
-		:ARG1 (x28 / have-org-role-91
-			:ARG2 (p / president)
-			:ARG0 (x35 / lead-02
-				:poss (x31 / government-organization
-					:name (n1 / name
-						:op1 "Senate"))))
-		:ARG1 (x42 / stand-up
-			:ARG0 (x38 / we)
-			:ARG2 (x45 / have-org-role-91
-				:ARG2 (p2 / president))
-			:topic (x50 / issue
-				:mod (x48 / minimum)
-				:mod (x49 / wage-01))))
-	:ARG0 (xap0 / person
-		:mod (x1 / person
-			:mod (a / another)
-			:accompanier (x8 / meet-03
-				:ARG0 (x7 / person
-					:name (n2 / name
-						:op1 "Bush")))
-			:name (x11 / name
-				:op1 "Thad"
-				:op2 "Cochran"
-				:ARG0-of (x10 / sen.)
-				:location (x14 / country
-					:name (n3 / name
-						:op1 "R-Miss."))))
-		:ARG0-of (x4 / have-org-role-91
-			:ARG1 (p1 / political-party
-				:name (n / name
-					:op1 "Republicans")))))
-
-# ::id 9
-# ::snt And we urged the Republicans not to back down from the Republicans commitment to $ 4.25 and the six-month training wage .
-(x1 / and
-	:op2 (x3 / urge-01
-		:ARG0 (x2 / we)
-		:ARG2 (x8 / back-01
-			:ARG0 (xap0 / name
-				:op1 "Republican"))
-		:ARG1 (x17 / and
-			:op1 (x13 / commit-01
-				:name (xap1 / name
-					:ARG0-of (x12 / have-org-role-91
-						:ARG1 (p / political-party
-							:name (n / name
-								:op1 "Republicans")))))
-			:quant (x16 / monetary-quantity
-				:unit (y / yuan))
-			:op2 (x21 / wage-01
-				:ARG1 (x20 / train-01)))
-		:ARG2 xap0))
-
-# ::id 10
-# ::snt Republicans could thwart the Democrats ' quick-passage strategy by staging a filibuster, but an aide to one leading GOP senator said there were no plans to do that
-(x14 / contrast-01
-	:ARG2 (x2 / possible
-		:domain (x22 / say-01
-			:ARG1 (x3 / thwart-01
-				:ARG1 (x8 / strategy
-					:poss (x5 / political-party
-						:name (n / name
-							:op1 "Democrats")))
-				:instrument (x10 / stage-01
-					:ARG1 (x12 / filibuster))
-				:ARG0 (xap2 / have-org-role-91
-					:ARG0-of (xap1 / political-party
-						:ARG0-of (xap0 / name
-							:op1 "Republican"))))
-			:ARG0 (x16 / have-org-role-91
-				:ARG2 (a / aide)
-				:ARG1 (x21 / senator
-					:quant 1
-					:ARG0-of (x19 / lead-02)))
-			:ARG0 (x26 / plan-01
-				:polarity -
-				:ARG1 (x28 / do-04)))))
-
-# ::id 11
-# ::snt 
-(x3 / say-01
-	:ARG0 (x2 / have-org-role-91
-		:ARG2 (a / aide))
-	:ARG1 (x9 / appear-02
-		:ARG1 (x8 / strategy
-			:poss (x5 / political-party
-				:name (n / name
-					:op1 "Democrats"))
-			:mod (x7 / quick-passage))
-		:ARG1 (x14 / vote-01
-			:ARG0 (x11 / political-party
-				:name (n1 / name
-					:op1 "Democrats"))
-			:ARG1 (x16 / win-01
-				:ARG1 (x17 / pass-01
-					:ARG1 (x22 / plan-01
-						:ARG0 (x20 / political-party
-							:name (n2 / name
-								:op1 "Democrats"))))
-				:time (x24 / early
-					:op1 (x26 / week
-						:mod (x25 / next)))))))
-
-# ::id 12
-# ::snt Meanwhile, a new poll said there was overwhelming public support for an increase in the minimum wage, which has been at $ 3.35 since 1981
-(x6 / say-01
-	:time (x1 / meanwhile)
-	:ARG0 (x5 / poll-01
-		:mod (x4 / new))
-	:ARG1 (x11 / support-01
-		:manner (x9 / overwhelm-01)
-		:manner (x10 / public)
-		:ARG1 (x14 / increase-01
-			:ARG1 (x18 / wage-01
-				:mod (x17 / minimum)
-				:time (x26 / since
-					:op1 (x25 / monetary-quantity
-						:unit (y / yuan))
-					:op1 (x27 / date-entity
-						:year 1981))))))
-
-# ::id 13
-# ::snt The Washington Post@ABC News survey, conducted March 30 through April 3, said 84 percent of respondents backed an increase while 14 percent did not
-(x14 / say-01
-	:ARG0 (x5 / survey-01
-		:location (x2 / city
-			:name (n / name
-				:op1 "Washington"))
-		:null_edge (x3 / country
-			:name (n1 / name
-				:op1 "Post@ABC"))
-		:name (x8 / name
-			:op1 "March"
-			:op2 "30"
-			:op3 "through"
-			:op4 "April"
-			:op5 "3"))
-	:ARG1 (x19 / back-01
-		:ARG0 (x18 / person
-			:ARG0-of (r / respond-01)
-			:ARG1 (x16 / percentage-entity
-				:value 84))
-		:ARG2 (x21 / increase-01)
-		:ARG2 (x24 / percentage-entity
-			:value 14)))
-
-# ::id 14
-# ::snt Eighty-two percent said respondents favored an increase even if an increase would trigger higher consumer prices
-(x2 / percentage-entity
-	:value (x1 / percentage-entity)
-	:ARG1-of (x3 / say-01
-		:ARG1 (x5 / favor-01
-			:ARG0 (x4 / person
-				:ARG0-of (r / respond-01))
-			:ARG1 (x7 / increase-01)
-			:purpose (x13 / trigger-01
-				:mod (x8 / even)
-				:ARG0 (x11 / increase-01)
-				:ARG1 (x16 / price-01
-					:mod (x14 / high)
-					:ARG1 (x15 / person
-						:ARG0-of (c / consume-01)))))))
-
-# ::id 15
-# ::snt But only about half of the 84 percent who initially favored a higher minimum wage said respondents would hold to that opinion even if that opinion meant businesses would stop hiring, or would fire, workers because of added payroll costs caused by a higher minimum wage
-(x16 / say-01
-	:null_edge (x1 / contrast-01)
-	:mod (x2 / only
-		:op1 (x8 / percentage-entity
-			:value 84
-			:ARG1-of (x11 / favor-01
-				:time (x10 / initial)
-				:ARG1 (x15 / wage-01
-					:mod (x13 / high)
-					:mod (x14 / minimum)))))
-	:ARG1 (x19 / hold-04
-		:ARG0 (x17 / person
-			:ARG0-of (r / respond-01))
-		:ARG2 (x22 / opine-01
-			:mod (x21 / that))
-		:condition (x27 / mean-01
-			:mod (x23 / even)
-			:ARG0 (x26 / opine-01
-				:mod (x25 / that))
-			:ARG1 (x33 / or
-				:op1 (x30 / stop-01
-					:ARG0 (x28 / business)
-					:ARG1 (x31 / hire-01
-						:ARG0 x28)
-					:ARG1-of (x38 / cause-01
-						:ARG0 (x42 / cost-01
-							:ARG1-of (x40 / add-03)
-							:ARG1 (x41 / payroll)
-							:ARG1-of (x43 / cause-01
-								:ARG0 (x48 / wage-01
-									:mod (x46 / high)
-									:mod (x47 / minimum))))))
-				:op2 (x35 / fire-02
-					:ARG0 x28)
-				:op2 (x37 / person
-					:ARG0-of (w / work-01))))))
-
-# ::id 16
-# ::snt The poll had a margin of error of plus or minus 3 percentage points
-(x5 / margin
-	:ARG0 (x2 / poll-01)
-	:mod (x7 / error
-		:ARG1 (x10 / or
-			:op1 (x9 / null_tag)
-			:op2 (xap0 / more
-				:degree (x13 / percentage-entity
-					:null_edge (x11 / null_tag
-						:null_edge 3))))))
-
-# ::id 17
-# ::snt 
-(x17 / avert-01
-	:ARG1 (x2 / agree-01
-		:ARG1 (x4 / amend-01
-			:ARG1 (x6 / bill)))
-	:ARG0 (x8 / person
-		:name (n / name
-			:op1 "Kennedy"))
-	:ARG1 (x10 / provide-01
-		:ARG2 (x14 / win-01
-			:ARG0 (x13 / version
-				:ARG1-of (x12 / amend-01))
-			:ARG1 (x15 / pass-01)))
-	:ARG1 (x19 / need-01
-		:ARG1 (x25 / resolve-01
-			:ARG0 (x23 / committee
-				:mod (x22 / conference))
-			:ARG1 (x26 / thing
-				:ARG1-of (d / differ-02)
-				:ARG1 (x30 / and
-					:op1 (x29 / have-org-role-91
-						:ARG1 (g / government-organization
-							:name (n1 / name
-								:op1 "House")))
-					:op2 (x31 / government-organization
-						:name (n2 / name
-							:op1 "Senate"))
-					:op1 (x32 / version))))))
-
-# ::id 18
-# ::snt A number of other amendments were also expected, including a GOP attempt to substitute Bush's proposal
-(x8 / expect-01
-	:ARG1 (x2 / number
-		:quant-of (x5 / amend-01
-			:mod (x4 / other)))
-	:mod (x7 / also)
-	:ARG1 (x13 / attempt-01
-		:ARG1 (x12 / political-party
-			:name (n / name
-				:op1 "GOP"))
-		:ARG1 (x15 / substitute-01
-			:ARG0 x12
-			:ARG1 (x18 / propose-01
-				:ARG0 (x16 / person
-					:name (n1 / name
-						:op1 "Bush"))))))
-
-# ::id 19
-# ::snt A lobbyist in favor of raising the minimum wage said Bush's repeated veto threats had all but quashed any hopes by Democratic sponsors of avoiding a showdown with the president
-(x10 / say-01
-	:ARG0 (x2 / lobbyist
-		:ARG0-of (x4 / favor-01
-			:ARG1 (x6 / raise-01
-				:ARG1 (x9 / wage-01
-					:mod (x8 / minimum)))))
-	:ARG1 (x18 / contrast-01
-		:quant (x17 / all)
-		:ARG2 (x19 / quash
-			:ARG0 (x15 / threaten-01
-				:ARG0 (x11 / person
-					:name (n / name
-						:op1 "Bush"))
-				:ARG1-of (x13 / repeat-01)
-				:mod (x14 / veto))
-			:ARG1 (x21 / hope-01
-				:mod (x20 / any))
-			:ARG0 (x24 / sponsor-01
-				:null_edge (x23 / null_tag)
-				:ARG2 (x26 / avoid-01
-					:ARG1 (x28 / showdown
-						:ARG1 (x31 / have-org-role-91
-							:ARG2 (p / president))))))))
-
-# ::id 20
-# ::snt " A lobbyist in favor of raising the minimum wage says A lobbyist in favor of raising the minimum wage wo n't compromise so AFL-CIO lobbyist Robert McGlotten do n't see a need for Democratic sponsors of avoiding a showdown with the president to do anything except send A lobbyist in favor of raising the minimum wage Democratic sponsors of avoiding a showdown with the president bill, " said AFL-CIO lobbyist Robert McGlotten
-(x70 / say-01
-	:ARG1 (x11 / thing
-		:ARG1-of (s / say-01)
-		:ARG0 (x3 / lobbyist
-			:ARG1 (x5 / favor-01
-				:ARG1 (x7 / raise-01
-					:ARG1 (x10 / wage-01
-						:mod (x9 / minimum)))))
-		:ARG1 (x23 / compromise-01
-			:ARG0 (x13 / lobbyist
-				:ARG1 (x15 / favor-01
-					:ARG1 (x17 / raise-01
-						:ARG1 (x20 / wage-01
-							:mod (x19 / minimum)))))
-			:time (x31 / see-01
-				:ARG0 (x27 / newspaper
-					:name (n2 / name
-						:op1 "Robert"
-						:op2 "McGlotten")
-					:ARG0-of (x26 / lobbyist
-						:ARG1 (x25 / organization
-							:name (n3 / name
-								:op1 "AFL-CIO"))))
-				:ARG1 (x33 / need-01
-					:topic (x36 / sponsor-01
-						:ARG2 (x38 / avoid-01
-							:ARG1 (x40 / showdown
-								:ARG1 (x43 / have-org-role-91
-									:ARG2 (p / president))
-								:ARG1-of (x45 / do-04
-									:ARG1 (x46 / anything
-										:purpose (x48 / send-03
-											:ARG1 (x50 / lobbyist)
-											:ARG2 (x52 / favor-01
-												:ARG1 (x54 / raise-01
-													:ARG1 (x57 / wage-01
-														:mod (x56 / minimum))
-													:ARG1 (x59 / sponsor-01
-														:null_edge (x58 / null_tag)
-														:topic (x61 / avoid-01
-															:ARG1 (x63 / showdown
-																:ARG1 (x67 / bill
-																	:topic (x66 / have-org-role-91
-																		:ARG2 (p1 / president))))))))))))))))))
-	:ARG0 (x73 / newspaper
-		:name (n / name
-			:op1 "Robert"
-			:op2 "McGlotten")
-		:ARG0-of (x72 / lobbyist
-			:ARG1 (x71 / organization
-				:name (n1 / name
-					:op1 "AFL-CIO")))))
-
-# ::id 21
-# ::snt Bush has been adamant in saying President Bush would veto the House-passed bill and appears to have the votes to sustain a veto in both chambers of Congress
-(x14 / and
-	:op1 (x4 / adamant
-		:ARG0 (x1 / person
-			:name (n / name
-				:op1 "Bush"))
-		:ARG2 (x6 / say-01
-			:ARG0 x1
-			:ARG1 (x10 / veto-01
-				:ARG0 (x8 / person
-					:name (n1 / name
-						:op1 "Bush")
-					:ARG0-of (x7 / have-org-role-91
-						:ARG2 (p / president)))
-				:ARG1 (x13 / bill
-					:mod (x12 / organization
-						:name (n3 / name
-							:op1 "House-passed"))))))
-	:op2 (x15 / appear-02
-		:ARG1 (x19 / vote-01)
-		:ARG1 (x21 / sustain
-			:ARG1 (x23 / veto)
-			:ARG0 (x26 / chamber
-				:part-of (x28 / government-organization
-					:name (n2 / name
-						:op1 "Congress"))))))
-
-# ::id 22
-# ::snt While the House-passed bill cuts the final target of the hourly minimum wage to $ 4.55, their first job _ at $ 3.35 effective Oct. 1 moves up the effective dates of the three increases from Jan. 1 to Oct. 1 _ meaning the first increase would come this year and the last jump would occur Oct. 1, 1992
-(x28 / move-01
-	:ARG0 (x5 / cut-02
-		:ARG0 (x4 / bill
-			:mod (x3 / organization
-				:name (n1 / name
-					:op1 "House-passed")))
-		:ARG1 (x8 / target-01
-			:mod (x7 / final)
-			:ARG1 (x13 / wage-01
-				:mod (x12 / minimum)))
-		:quant (x16 / monetary-quantity
-			:unit (y / yuan)))
-	:ARG1 (x21 / _
-		:ARG1 (x20 / job)
-		:quant (x24 / monetary-quantity
-			:unit (y1 / yuan)))
-	:ARG0 (x26 / person
-		:name (n / name
-			:op1 "Oct."
-			:op2 "1")
-		:mod (x25 / effective))
-	:ARG1 (x32 / date
-		:mod (x31 / effective)
-		:ARG1 (x36 / increase-01
-			:quant 3
-			:null_edge (x38 / date-entity
-				:ARG4 (x41 / date-entity
-					:ARG0-of (x44 / mean-01
-						:ARG1 (x52 / and
-							:op1 (x49 / come-01
-								:ARG1 (x47 / increase-01)
-								:time (x51 / year
-									:mod (x50 / this))
-								:ARG1 (x55 / jump-03
-									:mod (x54 / last))
-								:time (x58 / event
-									:name (n2 / name
-										:op1 "Oct."
-										:op2 "1"
-										:op3 ","
-										:op4 "1992"))))))))))
-
-# ::id 23
-# ::snt 
-(x3 / propose-01
-	:ARG0 (x1 / person
-		:name (n / name
-			:op1 "Bush"))
-	:ARG1 (x6 / increase-01
-		:polarity -
-		:quant 3
-		:mod (x5 / 30-cent)
-		:ARG1 (x10 / wage-01
-			:mod (x9 / minimum)
-			:time (x11 / begin-01
-				:ARG1 (x12 / event
-					:name (n1 / name
-						:op1 "Jan."
-						:op2 "1"
-						:op3 ","
-						:op4 "1990"))
-				:prep-instead-of (x18 / end-01
-					:ARG1 (x25 / minimum
-						:time (x21 / late
-							:null_edge (x19 / date-entity))
-						:mod (x24 / hour)
-						:quant (x28 / monetary-quantity
-							:unit (y / yuan))))))))
-
-# ::id 24
-# ::snt The president said the president support for those increases hinges on a provision allowing employers to pay new workers a sub-minimum wage for six months regardless of any past experience with another employer
-(x3 / say-01
-	:ARG0 (x2 / have-org-role-91
-		:ARG2 (p / president))
-	:ARG1 (x10 / hinge
-		:ARG0 (x6 / support-01
-			:ARG1 (x5 / have-org-role-91
-				:ARG2 (p1 / president))
-			:ARG0 (x9 / increase-01))
-		:ARG1 (x13 / provision
-			:ARG0-of (x14 / allow-01
-				:ARG1 (x17 / pay-01
-					:ARG0 (x15 / employ-01)
-					:ARG3 (x19 / person
-						:ARG0-of (w / work-01)
-						:mod (x18 / new))
-					:ARG1 (x22 / wage-01)
-					:ARG2 (x30 / experience-01
-						:quant (x25 / temporal-quantity
-							:unit (m / month)
-							:quant 6)
-						:mod (x28 / any)
-						:time (x29 / past))
-					:ARG3 (xap0 / have-03
-						:ARG0-of (x33 / employ-01
-							:mod (x32 / another))))))))
-
-# ::id 25
-# ::snt The sub-minimum, under the Bush plan, would be $ 3.35 an hour after the first increase in the minimum wage
-(x14 / temporal-quantity
-	:unit (h / hour)
-	:time (x7 / plan-01
-		:ARG0 (x6 / person
-			:name (n / name
-				:op1 "Bush")))
-	:quant (x12 / monetary-quantity
-		:unit (y / yuan))
-	:time (x15 / after
-		:op1 (x18 / increase-01
-			:ARG1 (x22 / wage-01
-				:mod (x21 / minimum)))))
-
-# ::id 26
-# ::snt It would rise to $ 3.40 an hour by 1992
-(x3 / rise-01
-	:ARG1 (x8 / temporal-quantity
-		:unit (h / hour))
-	:null_edge (x10 / date-entity
-		:year 1992))
-
-# ::id 27
-# ::snt The House-passed bill sets the wage for new hires _ provided their first job _ at $ 3.35 effective Oct. 1 is their first job _ at $ 3.35 effective Oct. 1
-(x4 / set-03
-	:ARG0 (x3 / bill
-		:mod (x2 / organization
-			:name (n / name
-				:op1 "House-passed")))
-	:ARG1 (x6 / wage-01
-		:ARG1 (x9 / hire-01
-			:mod (x8 / new)
-			:ARG1-of (x11 / provide-01
-				:ARG1 (x25 / job
-					:domain (x14 / job
-						:ARG1-of (x15 / _
-							:quant (x18 / monetary-quantity
-								:unit (y1 / yuan))
-							:name (x20 / name
-								:op1 "Oct."
-								:op2 "1"
-								:mod (x19 / effective))))
-					:ARG1-of (x26 / _
-						:quant (x29 / monetary-quantity
-							:unit (y / yuan))
-						:name (x31 / name
-							:op1 "Oct."
-							:op2 "1"
-							:mod (x30 / effective))))))))
-
-# ::id 28
-# ::snt When the subsequent increases in the minimum wage took effect the sub-minimum would rise as well, to 85 percent of the minimum
-(x9 / take-01
-	:ARG0 (x4 / increase-01
-		:polarity -
-		:ARG1-of (x3 / subsequent)
-		:ARG1 (x8 / wage-01
-			:mod (x7 / minimum)))
-	:ARG1 (x10 / effect-01
-		:ARG1 (x14 / rise-01
-			:ARG2 (x20 / percentage-entity
-				:value 85
-				:mod (x23 / minimum)))))
-
-# ::id 29
-# ::snt The provision allowing the new-hire wage would expire on Sept. 30, 1992
-(x8 / expire
-	:ARG0 (x2 / provision
-		:ARG0-of (x3 / allow-01
-			:ARG1 (x6 / wage-01
-				:mod (x5 / new-hire))))
-	:time (x10 / date-entity
-		:year 1992))
-
+<amr>
+<graph id="1">
+<nodes>
+<node gid="0" id="0" text="renew-01" label="x4" nosuffix="renew" isleaf="False"></node>
+<node gid="1" id="1" text="person" label="x2" nosuffix="person" isleaf="False"></node>
+<node gid="2" id="2" text="name" label="n" nosuffix="name" isleaf="False"></node>
+<node gid="3" id="3" text="have-org-role-91" label="x1" nosuffix="have" isleaf="False"></node>
+<node gid="4" id="4" text="president" label="p" nosuffix="president" isleaf="True"></node>
+<node gid="5" id="5" text="today" label="x3" nosuffix="today" isleaf="True"></node>
+<node gid="6" id="6" text="person" label="x6" nosuffix="person" isleaf="False"></node>
+<node gid="7" id="7" text="name" label="n1" nosuffix="name" isleaf="False"></node>
+<node gid="8" id="8" text="have-org-role-91" label="x5" nosuffix="have" isleaf="False"></node>
+<node gid="9" id="9" text="president" label="p1" nosuffix="president" isleaf="True"></node>
+<node gid="10" id="10" text="threaten-01" label="x7" nosuffix="threaten" isleaf="True"></node>
+<node gid="11" id="11" text="veto-01" label="x9" nosuffix="veto" isleaf="False"></node>
+<node gid="12" id="12" text="legislate-01" label="x10" nosuffix="legislate" isleaf="False"></node>
+<node gid="13" id="13" text="raise-01" label="x11" nosuffix="raise" isleaf="False"></node>
+<node gid="14" id="14" text="wage-01" label="x14" nosuffix="wage" isleaf="False"></node>
+<node gid="15" id="15" text="minimum" label="x13" nosuffix="minimum" isleaf="True"></node>
+<node gid="16" id="16" text="beyond" label="x15" nosuffix="beyond" isleaf="True"></node>
+<node gid="17" id="17" text="move-01" label="x23" nosuffix="move" isleaf="False"></node>
+<node gid="18" id="18" text="political-party" label="x22" nosuffix="political" isleaf="False"></node>
+<node gid="19" id="19" text="name" label="n2" nosuffix="name" isleaf="False"></node>
+<node gid="20" id="20" text="government-organization" label="x21" nosuffix="government" isleaf="False"></node>
+<node gid="21" id="21" text="name" label="n3" nosuffix="name" isleaf="False"></node>
+<node gid="22" id="22" text="pass-01" label="x26" nosuffix="pass" isleaf="False"></node>
+<node gid="23" id="23" text="quick" label="x25" nosuffix="quick" isleaf="True"></node>
+<node gid="24" id="24" text="bill" label="x28" nosuffix="bill" isleaf="False"></node>
+<node gid="25" id="25" text="raise-01" label="x29" nosuffix="raise" isleaf="False"></node>
+<node gid="26" id="26" text="floor" label="x32" nosuffix="floor" isleaf="False"></node>
+<node gid="27" id="27" text="wage-01" label="x31" nosuffix="wage" isleaf="True"></node>
+<node gid="28" id="28" text="monetary-quantity" label="x35" nosuffix="monetary" isleaf="False"></node>
+<node gid="29" id="29" text="yuan" label="y" nosuffix="yuan" isleaf="True"></node>
+<node gid="30" id="30" text="Bush" label="Bush" nosuffix="Bush" isleaf="True"></node>
+<node gid="31" id="31" text="Bush" label="Bush" nosuffix="Bush" isleaf="True"></node>
+<node gid="32" id="32" text="Democrats" label="Democrats" nosuffix="Democrats" isleaf="True"></node>
+<node gid="33" id="33" text="Senate" label="Senate" nosuffix="Senate" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="ARG0" ></edge>
+<edge head="0" tail="5" label="time" ></edge>
+<edge head="0" tail="6" label="ARG1" ></edge>
+<edge head="0" tail="10" label="ARG1" ></edge>
+<edge head="0" tail="11" label="purpose" ></edge>
+<edge head="1" tail="2" label="name" ></edge>
+<edge head="1" tail="3" label="ARG0-of" ></edge>
+<edge head="2" tail="30" label="op1" ></edge>
+<edge head="3" tail="4" label="ARG2" ></edge>
+<edge head="6" tail="7" label="name" ></edge>
+<edge head="6" tail="8" label="ARG0-of" ></edge>
+<edge head="7" tail="31" label="op1" ></edge>
+<edge head="8" tail="9" label="ARG2" ></edge>
+<edge head="11" tail="1" label="ARG0" ></edge>
+<edge head="11" tail="6" label="ARG0" ></edge>
+<edge head="11" tail="12" label="ARG1" ></edge>
+<edge head="11" tail="16" label="ARG2" ></edge>
+<edge head="11" tail="17" label="time" ></edge>
+<edge head="12" tail="13" label="ARG0-of" ></edge>
+<edge head="13" tail="14" label="ARG1" ></edge>
+<edge head="14" tail="15" label="mod" ></edge>
+<edge head="17" tail="18" label="ARG0" ></edge>
+<edge head="17" tail="22" label="purpose" ></edge>
+<edge head="18" tail="19" label="name" ></edge>
+<edge head="18" tail="20" label="mod" ></edge>
+<edge head="19" tail="32" label="op1" ></edge>
+<edge head="20" tail="21" label="name" ></edge>
+<edge head="21" tail="33" label="op1" ></edge>
+<edge head="22" tail="23" label="manner" ></edge>
+<edge head="22" tail="24" label="ARG1" ></edge>
+<edge head="24" tail="25" label="ARG0-of" ></edge>
+<edge head="25" tail="26" label="ARG1" ></edge>
+<edge head="25" tail="28" label="quant" ></edge>
+<edge head="26" tail="27" label="mod" ></edge>
+<edge head="28" tail="29" label="unit" ></edge>
+</edges>
+</graph>
+<graph id="2">
+<nodes>
+<node gid="34" id="0" text="say-01" label="x21" nosuffix="say" isleaf="False"></node>
+<node gid="35" id="1" text="person" label="x5" nosuffix="person" isleaf="False"></node>
+<node gid="36" id="2" text="name" label="n" nosuffix="name" isleaf="False"></node>
+<node gid="37" id="3" text="government-organization" label="x1" nosuffix="government" isleaf="False"></node>
+<node gid="38" id="4" text="name" label="n1" nosuffix="name" isleaf="False"></node>
+<node gid="39" id="5" text="minority" label="x2" nosuffix="minority" isleaf="True"></node>
+<node gid="40" id="6" text="lead-02" label="x3" nosuffix="lead" isleaf="True"></node>
+<node gid="41" id="7" text="person" label="x4" nosuffix="person" isleaf="False"></node>
+<node gid="42" id="8" text="name" label="n2" nosuffix="name" isleaf="False"></node>
+<node gid="43" id="9" text="country" label="x7" nosuffix="country" isleaf="False"></node>
+<node gid="44" id="10" text="name" label="n3" nosuffix="name" isleaf="False"></node>
+<node gid="45" id="11" text="meet-03" label="x10" nosuffix="meet" isleaf="False"></node>
+<node gid="46" id="12" text="person" label="x12" nosuffix="person" isleaf="False"></node>
+<node gid="47" id="13" text="name" label="n5" nosuffix="name" isleaf="False"></node>
+<node gid="48" id="14" text="relay-01" label="x14" nosuffix="relay" isleaf="False"></node>
+<node gid="49" id="15" text="person" label="x16" nosuffix="person" isleaf="False"></node>
+<node gid="50" id="16" text="name" label="n7" nosuffix="name" isleaf="False"></node>
+<node gid="51" id="17" text="have-org-role-91" label="x15" nosuffix="have" isleaf="False"></node>
+<node gid="52" id="18" text="president" label="p1" nosuffix="president" isleaf="True"></node>
+<node gid="53" id="19" text="comment-02" label="x17" nosuffix="comment" isleaf="True"></node>
+<node gid="54" id="20" text="person" label="x19" nosuffix="person" isleaf="False"></node>
+<node gid="55" id="21" text="report-01" label="r" nosuffix="report" isleaf="True"></node>
+<node gid="56" id="22" text="clear" label="x28" nosuffix="clear" isleaf="False"></node>
+<node gid="57" id="23" text="government-organization" label="x26" nosuffix="government" isleaf="False"></node>
+<node gid="58" id="24" text="name" label="n4" nosuffix="name" isleaf="False"></node>
+<node gid="59" id="25" text="abundantly" label="x27" nosuffix="abundantly" isleaf="True"></node>
+<node gid="60" id="26" text="flexibility" label="x34" nosuffix="flexibility" isleaf="False"></node>
+<node gid="61" id="27" text="absolute" label="x32" nosuffix="absolute" isleaf="True"></node>
+<node gid="62" id="28" text="country" label="x38" nosuffix="country" isleaf="False"></node>
+<node gid="63" id="29" text="name" label="n6" nosuffix="name" isleaf="False"></node>
+<node gid="64" id="30" text="deviation" label="x42" nosuffix="deviation" isleaf="False"></node>
+<node gid="65" id="31" text="position" label="x47" nosuffix="position" isleaf="False"></node>
+<node gid="66" id="32" text="have-org-role-91" label="x46" nosuffix="have" isleaf="False"></node>
+<node gid="67" id="33" text="president" label="p" nosuffix="president" isleaf="True"></node>
+<node gid="68" id="34" text="wage-01" label="x51" nosuffix="wage" isleaf="False"></node>
+<node gid="69" id="35" text="minimum" label="x50" nosuffix="minimum" isleaf="True"></node>
+<node gid="70" id="36" text="Michel" label="Michel" nosuffix="Michel" isleaf="True"></node>
+<node gid="71" id="37" text="House" label="House" nosuffix="House" isleaf="True"></node>
+<node gid="72" id="38" text="Bob" label="Bob" nosuffix="Bob" isleaf="True"></node>
+<node gid="73" id="39" text="R-Ill." label="R-Ill." nosuffix="R" isleaf="True"></node>
+<node gid="74" id="40" text="Bush" label="Bush" nosuffix="Bush" isleaf="True"></node>
+<node gid="75" id="41" text="Bush" label="Bush" nosuffix="Bush" isleaf="True"></node>
+<node gid="76" id="42" text="House" label="House" nosuffix="House" isleaf="True"></node>
+<node gid="77" id="43" text="-" label="-" nosuffix="" isleaf="True"></node>
+<node gid="78" id="44" text="1" label="1" nosuffix="1" isleaf="True"></node>
+<node gid="79" id="45" text="penny" label="penny" nosuffix="penny" isleaf="True"></node>
+<node gid="80" id="46" text="1" label="1" nosuffix="1" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="ARG0" ></edge>
+<edge head="0" tail="22" label="ARG1" ></edge>
+<edge head="1" tail="2" label="name" ></edge>
+<edge head="1" tail="3" label="null_edge" ></edge>
+<edge head="1" tail="5" label="null_edge" ></edge>
+<edge head="1" tail="6" label="null_edge" ></edge>
+<edge head="1" tail="7" label="null_edge" ></edge>
+<edge head="1" tail="9" label="null_edge" ></edge>
+<edge head="1" tail="11" label="ARG0-of" ></edge>
+<edge head="2" tail="36" label="op1" ></edge>
+<edge head="3" tail="4" label="name" ></edge>
+<edge head="4" tail="37" label="op1" ></edge>
+<edge head="7" tail="8" label="name" ></edge>
+<edge head="8" tail="38" label="op1" ></edge>
+<edge head="9" tail="10" label="name" ></edge>
+<edge head="10" tail="39" label="op1" ></edge>
+<edge head="11" tail="12" label="ARG1" ></edge>
+<edge head="12" tail="13" label="name" ></edge>
+<edge head="12" tail="14" label="ARG0-of" ></edge>
+<edge head="13" tail="40" label="op1" ></edge>
+<edge head="14" tail="15" label="ARG1" ></edge>
+<edge head="14" tail="19" label="ARG1" ></edge>
+<edge head="14" tail="20" label="ARG2" ></edge>
+<edge head="15" tail="16" label="name" ></edge>
+<edge head="15" tail="17" label="ARG0-of" ></edge>
+<edge head="16" tail="41" label="op1" ></edge>
+<edge head="17" tail="18" label="ARG2" ></edge>
+<edge head="20" tail="21" label="ARG0-of" ></edge>
+<edge head="22" tail="23" label="domain" ></edge>
+<edge head="22" tail="25" label="manner" ></edge>
+<edge head="22" tail="26" label="domain" ></edge>
+<edge head="23" tail="24" label="name" ></edge>
+<edge head="24" tail="42" label="op1" ></edge>
+<edge head="26" tail="27" label="mod" ></edge>
+<edge head="26" tail="43" label="polarity" ></edge>
+<edge head="26" tail="28" label="null_edge" ></edge>
+<edge head="26" tail="30" label="domain" ></edge>
+<edge head="28" tail="29" label="name" ></edge>
+<edge head="28" tail="44" label="quant" ></edge>
+<edge head="29" tail="45" label="op1" ></edge>
+<edge head="30" tail="46" label="quant" ></edge>
+<edge head="30" tail="31" label="ARG1" ></edge>
+<edge head="31" tail="32" label="ARG2" ></edge>
+<edge head="31" tail="34" label="topic" ></edge>
+<edge head="32" tail="33" label="ARG2" ></edge>
+<edge head="34" tail="35" label="mod" ></edge>
+</edges>
+</graph>
+<graph id="3">
+<nodes>
+<node gid="81" id="0" text="meet-03" label="x2" nosuffix="meet" isleaf="False"></node>
+<node gid="82" id="1" text="person" label="x1" nosuffix="person" isleaf="False"></node>
+<node gid="83" id="2" text="name" label="n" nosuffix="name" isleaf="False"></node>
+<node gid="84" id="3" text="person" label="x6" nosuffix="person" isleaf="False"></node>
+<node gid="85" id="4" text="lead-02" label="l" nosuffix="lead" isleaf="True"></node>
+<node gid="86" id="5" text="government-organization" label="x5" nosuffix="government" isleaf="False"></node>
+<node gid="87" id="6" text="name" label="n1" nosuffix="name" isleaf="False"></node>
+<node gid="88" id="7" text="before" label="x8" nosuffix="before" isleaf="False"></node>
+<node gid="89" id="8" text="open-01" label="x11" nosuffix="open" isleaf="False"></node>
+<node gid="90" id="9" text="temporal-quantity" label="x7" nosuffix="temporal" isleaf="False"></node>
+<node gid="91" id="10" text="hour" label="h" nosuffix="hour" isleaf="True"></node>
+<node gid="92" id="11" text="government-organization" label="x10" nosuffix="government" isleaf="False"></node>
+<node gid="93" id="12" text="name" label="n2" nosuffix="name" isleaf="False"></node>
+<node gid="94" id="13" text="debate-01" label="x12" nosuffix="debate" isleaf="False"></node>
+<node gid="95" id="14" text="legislate-01" label="x15" nosuffix="legislate" isleaf="True"></node>
+<node gid="96" id="15" text="Bush" label="Bush" nosuffix="Bush" isleaf="True"></node>
+<node gid="97" id="16" text="Republican" label="Republican" nosuffix="Republican" isleaf="True"></node>
+<node gid="98" id="17" text="congressional" label="congressional" nosuffix="congressional" isleaf="True"></node>
+<node gid="99" id="18" text="Senate" label="Senate" nosuffix="Senate" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="ARG0" ></edge>
+<edge head="0" tail="3" label="ARG1" ></edge>
+<edge head="0" tail="7" label="time" ></edge>
+<edge head="1" tail="2" label="name" ></edge>
+<edge head="2" tail="15" label="op1" ></edge>
+<edge head="3" tail="4" label="ARG0-of" ></edge>
+<edge head="3" tail="16" label="ARG1" ></edge>
+<edge head="3" tail="5" label="ARG1" ></edge>
+<edge head="5" tail="6" label="name" ></edge>
+<edge head="6" tail="17" label="op1" ></edge>
+<edge head="7" tail="8" label="op1" ></edge>
+<edge head="8" tail="9" label="ARG1" ></edge>
+<edge head="8" tail="11" label="ARG0" ></edge>
+<edge head="8" tail="13" label="ARG1" ></edge>
+<edge head="9" tail="10" label="unit" ></edge>
+<edge head="11" tail="12" label="name" ></edge>
+<edge head="12" tail="18" label="op1" ></edge>
+<edge head="13" tail="14" label="location" ></edge>
+</edges>
+</graph>
+<graph id="4">
+<nodes>
+<node gid="100" id="0" text="and" label="x28" nosuffix="and" isleaf="False"></node>
+<node gid="101" id="1" text="raise-01" label="x15" nosuffix="raise" isleaf="False"></node>
+<node gid="102" id="2" text="bill" label="x3" nosuffix="bill" isleaf="False"></node>
+<node gid="103" id="3" text="government-organization" label="x2" nosuffix="government" isleaf="False"></node>
+<node gid="104" id="4" text="name" label="n" nosuffix="name" isleaf="False"></node>
+<node gid="105" id="5" text="sponsor-01" label="x5" nosuffix="sponsor" isleaf="False"></node>
+<node gid="106" id="6" text="name" label="x8" nosuffix="name" isleaf="False"></node>
+<node gid="107" id="7" text="sen." label="x7" nosuffix="sen." isleaf="False"></node>
+<node gid="108" id="8" text="country" label="x12" nosuffix="country" isleaf="False"></node>
+<node gid="109" id="9" text="name" label="n1" nosuffix="name" isleaf="False"></node>
+<node gid="110" id="10" text="minimum" label="x18" nosuffix="minimum" isleaf="False"></node>
+<node gid="111" id="11" text="hour" label="x17" nosuffix="hour" isleaf="True"></node>
+<node gid="112" id="12" text="monetary-quantity" label="x24" nosuffix="monetary" isleaf="False"></node>
+<node gid="113" id="13" text="yuan" label="y" nosuffix="yuan" isleaf="True"></node>
+<node gid="114" id="14" text="monetary-quantity" label="x21" nosuffix="monetary" isleaf="False"></node>
+<node gid="115" id="15" text="yuan" label="y1" nosuffix="yuan" isleaf="True"></node>
+<node gid="116" id="16" text="date-entity" label="x26" nosuffix="date" isleaf="False"></node>
+<node gid="117" id="17" text="contain-00" label="x29" nosuffix="contain" isleaf="False"></node>
+<node gid="118" id="18" text="provision" label="x31" nosuffix="provision" isleaf="False"></node>
+<node gid="119" id="19" text="allow-01" label="x32" nosuffix="allow" isleaf="False"></node>
+<node gid="120" id="20" text="wage-01" label="x35" nosuffix="wage" isleaf="False"></node>
+<node gid="121" id="21" text="low" label="x34" nosuffix="low" isleaf="True"></node>
+<node gid="122" id="22" text="person" label="x38" nosuffix="person" isleaf="False"></node>
+<node gid="123" id="23" text="work-01" label="w" nosuffix="work" isleaf="True"></node>
+<node gid="124" id="24" text="new" label="x37" nosuffix="new" isleaf="True"></node>
+<node gid="125" id="25" text="-" label="-" nosuffix="" isleaf="True"></node>
+<node gid="126" id="26" text="Senate" label="Senate" nosuffix="Senate" isleaf="True"></node>
+<node gid="127" id="27" text="Edward" label="Edward" nosuffix="Edward" isleaf="True"></node>
+<node gid="128" id="28" text="M." label="M." nosuffix="M." isleaf="True"></node>
+<node gid="129" id="29" text="Kennedy" label="Kennedy" nosuffix="Kennedy" isleaf="True"></node>
+<node gid="130" id="30" text="D-Mass." label="D-Mass." nosuffix="D" isleaf="True"></node>
+<node gid="131" id="31" text="1992" label="1992" nosuffix="1992" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="op1" ></edge>
+<edge head="0" tail="17" label="op2" ></edge>
+<edge head="1" tail="2" label="ARG0" ></edge>
+<edge head="1" tail="10" label="ARG1" ></edge>
+<edge head="1" tail="12" label="null_edge" ></edge>
+<edge head="1" tail="16" label="time" ></edge>
+<edge head="1" tail="25" label="polarity" ></edge>
+<edge head="2" tail="3" label="mod" ></edge>
+<edge head="2" tail="5" label="ARG1-of" ></edge>
+<edge head="3" tail="4" label="name" ></edge>
+<edge head="4" tail="26" label="op1" ></edge>
+<edge head="5" tail="6" label="ARG0" ></edge>
+<edge head="6" tail="27" label="op1" ></edge>
+<edge head="6" tail="28" label="op2" ></edge>
+<edge head="6" tail="29" label="op3" ></edge>
+<edge head="6" tail="7" label="ARG0-of" ></edge>
+<edge head="7" tail="8" label="location" ></edge>
+<edge head="8" tail="9" label="name" ></edge>
+<edge head="9" tail="30" label="op1" ></edge>
+<edge head="10" tail="11" label="mod" ></edge>
+<edge head="12" tail="13" label="unit" ></edge>
+<edge head="12" tail="14" label="null_edge" ></edge>
+<edge head="14" tail="15" label="unit" ></edge>
+<edge head="16" tail="31" label="year" ></edge>
+<edge head="17" tail="18" label="ARG1" ></edge>
+<edge head="18" tail="19" label="ARG0-of" ></edge>
+<edge head="19" tail="20" label="ARG1" ></edge>
+<edge head="20" tail="21" label="mod" ></edge>
+<edge head="20" tail="22" label="poss" ></edge>
+<edge head="22" tail="23" label="ARG0-of" ></edge>
+<edge head="22" tail="24" label="mod" ></edge>
+</edges>
+</graph>
+<graph id="5">
+<nodes>
+<node gid="132" id="0" text="say-01" label="x4" nosuffix="say" isleaf="False"></node>
+<node gid="133" id="1" text="contrast-01" label="x1" nosuffix="contrast" isleaf="True"></node>
+<node gid="134" id="2" text="and" label="x35" nosuffix="and" isleaf="False"></node>
+<node gid="135" id="3" text="offer-01" label="x9" nosuffix="offer" isleaf="False"></node>
+<node gid="136" id="4" text="person" label="x5" nosuffix="person" isleaf="False"></node>
+<node gid="137" id="5" text="name" label="n" nosuffix="name" isleaf="False"></node>
+<node gid="138" id="6" text="amend-01" label="x11" nosuffix="amend" isleaf="False"></node>
+<node gid="139" id="7" text="make-02" label="x12" nosuffix="make" isleaf="False"></node>
+<node gid="140" id="8" text="measure-01" label="x16" nosuffix="measure" isleaf="False"></node>
+<node gid="141" id="9" text="person" label="x15" nosuffix="person" isleaf="False"></node>
+<node gid="142" id="10" text="name" label="n1" nosuffix="name" isleaf="False"></node>
+<node gid="143" id="11" text="person" label="x13" nosuffix="person" isleaf="False"></node>
+<node gid="144" id="12" text="name" label="n2" nosuffix="name" isleaf="False"></node>
+<node gid="145" id="13" text="null_tag" label="x14" nosuffix="null_tag" isleaf="True"></node>
+<node gid="146" id="14" text="identical-41" label="x17" nosuffix="identical" isleaf="False"></node>
+<node gid="147" id="15" text="bill" label="x21" nosuffix="bill" isleaf="False"></node>
+<node gid="148" id="16" text="government-organization" label="x20" nosuffix="government" isleaf="False"></node>
+<node gid="149" id="17" text="name" label="n3" nosuffix="name" isleaf="False"></node>
+<node gid="150" id="18" text="pass-01" label="x22" nosuffix="pass" isleaf="False"></node>
+<node gid="151" id="19" text="before" label="xap1" nosuffix="before" isleaf="False"></node>
+<node gid="152" id="20" text="temporal-quantity" label="x24" nosuffix="temporal" isleaf="False"></node>
+<node gid="153" id="21" text="week" label="w" nosuffix="week" isleaf="True"></node>
+<node gid="154" id="22" text="null_tag" label="x23" nosuffix="null_tag" isleaf="True"></node>
+<node gid="155" id="23" text="wage-01" label="x31" nosuffix="wage" isleaf="False"></node>
+<node gid="156" id="24" text="final" label="x30" nosuffix="final" isleaf="True"></node>
+<node gid="157" id="25" text="monetary-quantity" label="x34" nosuffix="monetary" isleaf="False"></node>
+<node gid="158" id="26" text="yuan" label="y" nosuffix="yuan" isleaf="True"></node>
+<node gid="159" id="27" text="allow-01" label="x37" nosuffix="allow" isleaf="False"></node>
+<node gid="160" id="28" text="pay-01" label="x40" nosuffix="pay" isleaf="False"></node>
+<node gid="161" id="29" text="employ-01" label="x38" nosuffix="employ" isleaf="True"></node>
+<node gid="162" id="30" text="entrant" label="x42" nosuffix="entrant" isleaf="False"></node>
+<node gid="163" id="31" text="new" label="x41" nosuffix="new" isleaf="True"></node>
+<node gid="164" id="32" text="market" label="x46" nosuffix="market" isleaf="False"></node>
+<node gid="165" id="33" text="job" label="x45" nosuffix="job" isleaf="True"></node>
+<node gid="166" id="34" text="sub-minimum" label="x49" nosuffix="sub" isleaf="True"></node>
+<node gid="167" id="35" text="temporal-quantity" label="x53" nosuffix="temporal" isleaf="False"></node>
+<node gid="168" id="36" text="month" label="m" nosuffix="month" isleaf="True"></node>
+<node gid="169" id="37" text="person" label="xap0" nosuffix="person" isleaf="False"></node>
+<node gid="170" id="38" text="have-org-role-91" label="x3" nosuffix="have" isleaf="False"></node>
+<node gid="171" id="39" text="aide" label="a" nosuffix="aide" isleaf="True"></node>
+<node gid="172" id="40" text="Edward" label="Edward" nosuffix="Edward" isleaf="True"></node>
+<node gid="173" id="41" text="M." label="M." nosuffix="M." isleaf="True"></node>
+<node gid="174" id="42" text="Kennedy" label="Kennedy" nosuffix="Kennedy" isleaf="True"></node>
+<node gid="175" id="43" text="Kennedy" label="Kennedy" nosuffix="Kennedy" isleaf="True"></node>
+<node gid="176" id="44" text="Edward" label="Edward" nosuffix="Edward" isleaf="True"></node>
+<node gid="177" id="45" text="House" label="House" nosuffix="House" isleaf="True"></node>
+<node gid="178" id="46" text="2" label="2" nosuffix="2" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="null_edge" ></edge>
+<edge head="0" tail="2" label="ARG1" ></edge>
+<edge head="0" tail="37" label="ARG0" ></edge>
+<edge head="2" tail="3" label="op1" ></edge>
+<edge head="2" tail="27" label="op2" ></edge>
+<edge head="3" tail="4" label="ARG0" ></edge>
+<edge head="3" tail="6" label="ARG1" ></edge>
+<edge head="4" tail="5" label="name" ></edge>
+<edge head="5" tail="40" label="op1" ></edge>
+<edge head="5" tail="41" label="op2" ></edge>
+<edge head="5" tail="42" label="op3" ></edge>
+<edge head="6" tail="7" label="ARG0-of" ></edge>
+<edge head="7" tail="8" label="ARG1" ></edge>
+<edge head="8" tail="9" label="ARG0" ></edge>
+<edge head="8" tail="14" label="ARG2-of" ></edge>
+<edge head="9" tail="10" label="name" ></edge>
+<edge head="9" tail="11" label="null_edge" ></edge>
+<edge head="9" tail="13" label="null_edge" ></edge>
+<edge head="10" tail="43" label="op1" ></edge>
+<edge head="11" tail="12" label="name" ></edge>
+<edge head="12" tail="44" label="op1" ></edge>
+<edge head="14" tail="15" label="ARG2" ></edge>
+<edge head="15" tail="16" label="mod" ></edge>
+<edge head="15" tail="18" label="ARG1-of" ></edge>
+<edge head="15" tail="23" label="ARG1" ></edge>
+<edge head="16" tail="17" label="name" ></edge>
+<edge head="17" tail="45" label="op1" ></edge>
+<edge head="18" tail="19" label="time" ></edge>
+<edge head="19" tail="20" label="quant" ></edge>
+<edge head="20" tail="21" label="unit" ></edge>
+<edge head="20" tail="22" label="null_edge" ></edge>
+<edge head="23" tail="24" label="mod" ></edge>
+<edge head="23" tail="25" label="quant" ></edge>
+<edge head="25" tail="26" label="unit" ></edge>
+<edge head="27" tail="28" label="ARG1" ></edge>
+<edge head="28" tail="29" label="ARG0" ></edge>
+<edge head="28" tail="30" label="ARG2" ></edge>
+<edge head="28" tail="34" label="ARG1" ></edge>
+<edge head="28" tail="35" label="duration" ></edge>
+<edge head="30" tail="31" label="mod" ></edge>
+<edge head="30" tail="32" label="location" ></edge>
+<edge head="32" tail="33" label="mod" ></edge>
+<edge head="35" tail="36" label="unit" ></edge>
+<edge head="35" tail="46" label="quant" ></edge>
+<edge head="37" tail="38" label="ARG0-of" ></edge>
+<edge head="38" tail="39" label="ARG2" ></edge>
+</edges>
+</graph>
+<graph id="6">
+<nodes>
+<node gid="179" id="0" text="insist-01" label="x3" nosuffix="insist" isleaf="False"></node>
+<node gid="180" id="1" text="person" label="x1" nosuffix="person" isleaf="False"></node>
+<node gid="181" id="2" text="name" label="n" nosuffix="name" isleaf="False"></node>
+<node gid="182" id="3" text="allow-01" label="x7" nosuffix="allow" isleaf="False"></node>
+<node gid="183" id="4" text="employ-01" label="x5" nosuffix="employ" isleaf="True"></node>
+<node gid="184" id="5" text="pay-01" label="x9" nosuffix="pay" isleaf="False"></node>
+<node gid="185" id="6" text="person" label="x12" nosuffix="person" isleaf="False"></node>
+<node gid="186" id="7" text="employ-01" label="e" nosuffix="employ" isleaf="True"></node>
+<node gid="187" id="8" text="any" label="x10" nosuffix="any" isleaf="True"></node>
+<node gid="188" id="9" text="new" label="x11" nosuffix="new" isleaf="True"></node>
+<node gid="189" id="10" text="wage-01" label="x17" nosuffix="wage" isleaf="False"></node>
+<node gid="190" id="11" text="train-01" label="x16" nosuffix="train" isleaf="True"></node>
+<node gid="191" id="12" text="temporal-quantity" label="x21" nosuffix="temporal" isleaf="False"></node>
+<node gid="192" id="13" text="month" label="m" nosuffix="month" isleaf="True"></node>
+<node gid="193" id="14" text="Bush" label="Bush" nosuffix="Bush" isleaf="True"></node>
+<node gid="194" id="15" text="6" label="6" nosuffix="6" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="ARG0" ></edge>
+<edge head="0" tail="3" label="ARG1" ></edge>
+<edge head="1" tail="2" label="name" ></edge>
+<edge head="2" tail="14" label="op1" ></edge>
+<edge head="3" tail="4" label="ARG1" ></edge>
+<edge head="3" tail="5" label="ARG1" ></edge>
+<edge head="5" tail="4" label="ARG0" ></edge>
+<edge head="5" tail="6" label="ARG2" ></edge>
+<edge head="5" tail="10" label="ARG1" ></edge>
+<edge head="6" tail="7" label="ARG1-of" ></edge>
+<edge head="6" tail="8" label="mod" ></edge>
+<edge head="6" tail="9" label="mod" ></edge>
+<edge head="10" tail="11" label="ARG1" ></edge>
+<edge head="10" tail="12" label="duration" ></edge>
+<edge head="12" tail="13" label="unit" ></edge>
+<edge head="12" tail="15" label="quant" ></edge>
+</edges>
+</graph>
+<graph id="7">
+<nodes>
+<node gid="195" id="0" text="say-01" label="x8" nosuffix="say" isleaf="False"></node>
+<node gid="196" id="1" text="person" label="x3" nosuffix="person" isleaf="False"></node>
+<node gid="197" id="2" text="lead-02" label="l" nosuffix="lead" isleaf="True"></node>
+<node gid="198" id="3" text="political-party" label="x2" nosuffix="political" isleaf="False"></node>
+<node gid="199" id="4" text="name" label="n" nosuffix="name" isleaf="False"></node>
+<node gid="200" id="5" text="meet-03" label="x5" nosuffix="meet" isleaf="False"></node>
+<node gid="201" id="6" text="person" label="x7" nosuffix="person" isleaf="False"></node>
+<node gid="202" id="7" text="name" label="n3" nosuffix="name" isleaf="False"></node>
+<node gid="203" id="8" text="reiterate-01" label="x12" nosuffix="reiterate" isleaf="False"></node>
+<node gid="204" id="9" text="person" label="x10" nosuffix="person" isleaf="False"></node>
+<node gid="205" id="10" text="name" label="n1" nosuffix="name" isleaf="False"></node>
+<node gid="206" id="11" text="have-org-role-91" label="x9" nosuffix="have" isleaf="False"></node>
+<node gid="207" id="12" text="president" label="p" nosuffix="president" isleaf="True"></node>
+<node gid="208" id="13" text="also" label="x11" nosuffix="also" isleaf="True"></node>
+<node gid="209" id="14" text="person" label="x14" nosuffix="person" isleaf="False"></node>
+<node gid="210" id="15" text="name" label="n2" nosuffix="name" isleaf="False"></node>
+<node gid="211" id="16" text="have-org-role-91" label="x13" nosuffix="have" isleaf="False"></node>
+<node gid="212" id="17" text="president" label="p1" nosuffix="president" isleaf="True"></node>
+<node gid="213" id="18" text="oppose-01" label="x15" nosuffix="oppose" isleaf="False"></node>
+<node gid="214" id="19" text="shorten-01" label="x17" nosuffix="shorten" isleaf="False"></node>
+<node gid="215" id="20" text="frame" label="x20" nosuffix="frame" isleaf="False"></node>
+<node gid="216" id="21" text="that" label="x18" nosuffix="that" isleaf="True"></node>
+<node gid="217" id="22" text="time" label="x19" nosuffix="time" isleaf="True"></node>
+<node gid="218" id="23" text="GOP" label="GOP" nosuffix="GOP" isleaf="True"></node>
+<node gid="219" id="24" text="Bush" label="Bush" nosuffix="Bush" isleaf="True"></node>
+<node gid="220" id="25" text="Bush" label="Bush" nosuffix="Bush" isleaf="True"></node>
+<node gid="221" id="26" text="Bush" label="Bush" nosuffix="Bush" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="ARG0" ></edge>
+<edge head="0" tail="8" label="ARG1" ></edge>
+<edge head="1" tail="2" label="ARG0-of" ></edge>
+<edge head="1" tail="3" label="ARG1" ></edge>
+<edge head="1" tail="5" label="ARG0-of" ></edge>
+<edge head="3" tail="4" label="name" ></edge>
+<edge head="4" tail="23" label="op1" ></edge>
+<edge head="5" tail="6" label="ARG1" ></edge>
+<edge head="6" tail="7" label="name" ></edge>
+<edge head="7" tail="24" label="op1" ></edge>
+<edge head="8" tail="9" label="ARG0" ></edge>
+<edge head="8" tail="13" label="mod" ></edge>
+<edge head="8" tail="14" label="ARG0" ></edge>
+<edge head="8" tail="18" label="ARG1" ></edge>
+<edge head="9" tail="10" label="name" ></edge>
+<edge head="9" tail="11" label="ARG0-of" ></edge>
+<edge head="10" tail="25" label="op1" ></edge>
+<edge head="11" tail="12" label="ARG2" ></edge>
+<edge head="14" tail="15" label="name" ></edge>
+<edge head="14" tail="16" label="ARG0-of" ></edge>
+<edge head="15" tail="26" label="op1" ></edge>
+<edge head="16" tail="17" label="ARG2" ></edge>
+<edge head="18" tail="19" label="ARG1" ></edge>
+<edge head="19" tail="20" label="ARG1" ></edge>
+<edge head="20" tail="21" label="mod" ></edge>
+<edge head="20" tail="22" label="mod" ></edge>
+</edges>
+</graph>
+<graph id="8">
+<nodes>
+<node gid="222" id="0" text="tell-01" label="x16" nosuffix="tell" isleaf="False"></node>
+<node gid="223" id="1" text="person" label="x17" nosuffix="person" isleaf="False"></node>
+<node gid="224" id="2" text="report-01" label="r" nosuffix="report" isleaf="True"></node>
+<node gid="225" id="3" text="afterward" label="x18" nosuffix="afterward" isleaf="True"></node>
+<node gid="226" id="4" text="message-01" label="x22" nosuffix="message" isleaf="False"></node>
+<node gid="227" id="5" text="have-org-role-91" label="x28" nosuffix="have" isleaf="False"></node>
+<node gid="228" id="6" text="president" label="p" nosuffix="president" isleaf="True"></node>
+<node gid="229" id="7" text="lead-02" label="x35" nosuffix="lead" isleaf="False"></node>
+<node gid="230" id="8" text="government-organization" label="x31" nosuffix="government" isleaf="False"></node>
+<node gid="231" id="9" text="name" label="n1" nosuffix="name" isleaf="False"></node>
+<node gid="232" id="10" text="stand-up" label="x42" nosuffix="stand" isleaf="False"></node>
+<node gid="233" id="11" text="we" label="x38" nosuffix="we" isleaf="True"></node>
+<node gid="234" id="12" text="have-org-role-91" label="x45" nosuffix="have" isleaf="False"></node>
+<node gid="235" id="13" text="president" label="p2" nosuffix="president" isleaf="True"></node>
+<node gid="236" id="14" text="issue" label="x50" nosuffix="issue" isleaf="False"></node>
+<node gid="237" id="15" text="minimum" label="x48" nosuffix="minimum" isleaf="True"></node>
+<node gid="238" id="16" text="wage-01" label="x49" nosuffix="wage" isleaf="True"></node>
+<node gid="239" id="17" text="person" label="xap0" nosuffix="person" isleaf="False"></node>
+<node gid="240" id="18" text="person" label="x1" nosuffix="person" isleaf="False"></node>
+<node gid="241" id="19" text="another" label="a" nosuffix="another" isleaf="True"></node>
+<node gid="242" id="20" text="meet-03" label="x8" nosuffix="meet" isleaf="False"></node>
+<node gid="243" id="21" text="person" label="x7" nosuffix="person" isleaf="False"></node>
+<node gid="244" id="22" text="name" label="n2" nosuffix="name" isleaf="False"></node>
+<node gid="245" id="23" text="name" label="x11" nosuffix="name" isleaf="False"></node>
+<node gid="246" id="24" text="sen." label="x10" nosuffix="sen." isleaf="True"></node>
+<node gid="247" id="25" text="country" label="x14" nosuffix="country" isleaf="False"></node>
+<node gid="248" id="26" text="name" label="n3" nosuffix="name" isleaf="False"></node>
+<node gid="249" id="27" text="have-org-role-91" label="x4" nosuffix="have" isleaf="False"></node>
+<node gid="250" id="28" text="political-party" label="p1" nosuffix="political" isleaf="False"></node>
+<node gid="251" id="29" text="name" label="n" nosuffix="name" isleaf="False"></node>
+<node gid="252" id="30" text="Senate" label="Senate" nosuffix="Senate" isleaf="True"></node>
+<node gid="253" id="31" text="Bush" label="Bush" nosuffix="Bush" isleaf="True"></node>
+<node gid="254" id="32" text="Thad" label="Thad" nosuffix="Thad" isleaf="True"></node>
+<node gid="255" id="33" text="Cochran" label="Cochran" nosuffix="Cochran" isleaf="True"></node>
+<node gid="256" id="34" text="R-Miss." label="R-Miss." nosuffix="R" isleaf="True"></node>
+<node gid="257" id="35" text="Republicans" label="Republicans" nosuffix="Republicans" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="ARG2" ></edge>
+<edge head="0" tail="3" label="time" ></edge>
+<edge head="0" tail="4" label="ARG1" ></edge>
+<edge head="0" tail="17" label="ARG0" ></edge>
+<edge head="1" tail="2" label="ARG0-of" ></edge>
+<edge head="4" tail="5" label="ARG1" ></edge>
+<edge head="4" tail="10" label="ARG1" ></edge>
+<edge head="5" tail="6" label="ARG2" ></edge>
+<edge head="5" tail="7" label="ARG0" ></edge>
+<edge head="7" tail="8" label="poss" ></edge>
+<edge head="8" tail="9" label="name" ></edge>
+<edge head="9" tail="30" label="op1" ></edge>
+<edge head="10" tail="11" label="ARG0" ></edge>
+<edge head="10" tail="12" label="ARG2" ></edge>
+<edge head="10" tail="14" label="topic" ></edge>
+<edge head="12" tail="13" label="ARG2" ></edge>
+<edge head="14" tail="15" label="mod" ></edge>
+<edge head="14" tail="16" label="mod" ></edge>
+<edge head="17" tail="18" label="mod" ></edge>
+<edge head="17" tail="27" label="ARG0-of" ></edge>
+<edge head="18" tail="19" label="mod" ></edge>
+<edge head="18" tail="20" label="accompanier" ></edge>
+<edge head="18" tail="23" label="name" ></edge>
+<edge head="20" tail="21" label="ARG0" ></edge>
+<edge head="21" tail="22" label="name" ></edge>
+<edge head="22" tail="31" label="op1" ></edge>
+<edge head="23" tail="32" label="op1" ></edge>
+<edge head="23" tail="33" label="op2" ></edge>
+<edge head="23" tail="24" label="ARG0-of" ></edge>
+<edge head="23" tail="25" label="location" ></edge>
+<edge head="25" tail="26" label="name" ></edge>
+<edge head="26" tail="34" label="op1" ></edge>
+<edge head="27" tail="28" label="ARG1" ></edge>
+<edge head="28" tail="29" label="name" ></edge>
+<edge head="29" tail="35" label="op1" ></edge>
+</edges>
+</graph>
+<graph id="9">
+<nodes>
+<node gid="258" id="0" text="and" label="x1" nosuffix="and" isleaf="False"></node>
+<node gid="259" id="1" text="urge-01" label="x3" nosuffix="urge" isleaf="False"></node>
+<node gid="260" id="2" text="we" label="x2" nosuffix="we" isleaf="True"></node>
+<node gid="261" id="3" text="back-01" label="x8" nosuffix="back" isleaf="False"></node>
+<node gid="262" id="4" text="name" label="xap0" nosuffix="name" isleaf="False"></node>
+<node gid="263" id="5" text="and" label="x17" nosuffix="and" isleaf="False"></node>
+<node gid="264" id="6" text="commit-01" label="x13" nosuffix="commit" isleaf="False"></node>
+<node gid="265" id="7" text="name" label="xap1" nosuffix="name" isleaf="False"></node>
+<node gid="266" id="8" text="have-org-role-91" label="x12" nosuffix="have" isleaf="False"></node>
+<node gid="267" id="9" text="political-party" label="p" nosuffix="political" isleaf="False"></node>
+<node gid="268" id="10" text="name" label="n" nosuffix="name" isleaf="False"></node>
+<node gid="269" id="11" text="monetary-quantity" label="x16" nosuffix="monetary" isleaf="False"></node>
+<node gid="270" id="12" text="yuan" label="y" nosuffix="yuan" isleaf="True"></node>
+<node gid="271" id="13" text="wage-01" label="x21" nosuffix="wage" isleaf="False"></node>
+<node gid="272" id="14" text="train-01" label="x20" nosuffix="train" isleaf="True"></node>
+<node gid="273" id="15" text="Republican" label="Republican" nosuffix="Republican" isleaf="True"></node>
+<node gid="274" id="16" text="Republicans" label="Republicans" nosuffix="Republicans" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="op2" ></edge>
+<edge head="1" tail="2" label="ARG0" ></edge>
+<edge head="1" tail="3" label="ARG2" ></edge>
+<edge head="1" tail="5" label="ARG1" ></edge>
+<edge head="1" tail="4" label="ARG2" ></edge>
+<edge head="3" tail="4" label="ARG0" ></edge>
+<edge head="4" tail="15" label="op1" ></edge>
+<edge head="5" tail="6" label="op1" ></edge>
+<edge head="5" tail="11" label="quant" ></edge>
+<edge head="5" tail="13" label="op2" ></edge>
+<edge head="6" tail="7" label="name" ></edge>
+<edge head="7" tail="8" label="ARG0-of" ></edge>
+<edge head="8" tail="9" label="ARG1" ></edge>
+<edge head="9" tail="10" label="name" ></edge>
+<edge head="10" tail="16" label="op1" ></edge>
+<edge head="11" tail="12" label="unit" ></edge>
+<edge head="13" tail="14" label="ARG1" ></edge>
+</edges>
+</graph>
+<graph id="10">
+<nodes>
+<node gid="275" id="0" text="contrast-01" label="x14" nosuffix="contrast" isleaf="False"></node>
+<node gid="276" id="1" text="possible" label="x2" nosuffix="possible" isleaf="False"></node>
+<node gid="277" id="2" text="say-01" label="x22" nosuffix="say" isleaf="False"></node>
+<node gid="278" id="3" text="thwart-01" label="x3" nosuffix="thwart" isleaf="False"></node>
+<node gid="279" id="4" text="strategy" label="x8" nosuffix="strategy" isleaf="False"></node>
+<node gid="280" id="5" text="political-party" label="x5" nosuffix="political" isleaf="False"></node>
+<node gid="281" id="6" text="name" label="n" nosuffix="name" isleaf="False"></node>
+<node gid="282" id="7" text="stage-01" label="x10" nosuffix="stage" isleaf="False"></node>
+<node gid="283" id="8" text="filibuster" label="x12" nosuffix="filibuster" isleaf="True"></node>
+<node gid="284" id="9" text="have-org-role-91" label="xap2" nosuffix="have" isleaf="False"></node>
+<node gid="285" id="10" text="political-party" label="xap1" nosuffix="political" isleaf="False"></node>
+<node gid="286" id="11" text="name" label="xap0" nosuffix="name" isleaf="False"></node>
+<node gid="287" id="12" text="have-org-role-91" label="x16" nosuffix="have" isleaf="False"></node>
+<node gid="288" id="13" text="aide" label="a" nosuffix="aide" isleaf="True"></node>
+<node gid="289" id="14" text="senator" label="x21" nosuffix="senator" isleaf="False"></node>
+<node gid="290" id="15" text="lead-02" label="x19" nosuffix="lead" isleaf="True"></node>
+<node gid="291" id="16" text="plan-01" label="x26" nosuffix="plan" isleaf="False"></node>
+<node gid="292" id="17" text="do-04" label="x28" nosuffix="do" isleaf="True"></node>
+<node gid="293" id="18" text="Democrats" label="Democrats" nosuffix="Democrats" isleaf="True"></node>
+<node gid="294" id="19" text="Republican" label="Republican" nosuffix="Republican" isleaf="True"></node>
+<node gid="295" id="20" text="1" label="1" nosuffix="1" isleaf="True"></node>
+<node gid="296" id="21" text="-" label="-" nosuffix="" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="ARG2" ></edge>
+<edge head="1" tail="2" label="domain" ></edge>
+<edge head="2" tail="3" label="ARG1" ></edge>
+<edge head="2" tail="12" label="ARG0" ></edge>
+<edge head="2" tail="16" label="ARG0" ></edge>
+<edge head="3" tail="4" label="ARG1" ></edge>
+<edge head="3" tail="7" label="instrument" ></edge>
+<edge head="3" tail="9" label="ARG0" ></edge>
+<edge head="4" tail="5" label="poss" ></edge>
+<edge head="5" tail="6" label="name" ></edge>
+<edge head="6" tail="18" label="op1" ></edge>
+<edge head="7" tail="8" label="ARG1" ></edge>
+<edge head="9" tail="10" label="ARG0-of" ></edge>
+<edge head="10" tail="11" label="ARG0-of" ></edge>
+<edge head="11" tail="19" label="op1" ></edge>
+<edge head="12" tail="13" label="ARG2" ></edge>
+<edge head="12" tail="14" label="ARG1" ></edge>
+<edge head="14" tail="20" label="quant" ></edge>
+<edge head="14" tail="15" label="ARG0-of" ></edge>
+<edge head="16" tail="21" label="polarity" ></edge>
+<edge head="16" tail="17" label="ARG1" ></edge>
+</edges>
+</graph>
+<graph id="11">
+<nodes>
+<node gid="297" id="0" text="say-01" label="x3" nosuffix="say" isleaf="False"></node>
+<node gid="298" id="1" text="have-org-role-91" label="x2" nosuffix="have" isleaf="False"></node>
+<node gid="299" id="2" text="aide" label="a" nosuffix="aide" isleaf="True"></node>
+<node gid="300" id="3" text="appear-02" label="x9" nosuffix="appear" isleaf="False"></node>
+<node gid="301" id="4" text="strategy" label="x8" nosuffix="strategy" isleaf="False"></node>
+<node gid="302" id="5" text="political-party" label="x5" nosuffix="political" isleaf="False"></node>
+<node gid="303" id="6" text="name" label="n" nosuffix="name" isleaf="False"></node>
+<node gid="304" id="7" text="quick-passage" label="x7" nosuffix="quick" isleaf="True"></node>
+<node gid="305" id="8" text="vote-01" label="x14" nosuffix="vote" isleaf="False"></node>
+<node gid="306" id="9" text="political-party" label="x11" nosuffix="political" isleaf="False"></node>
+<node gid="307" id="10" text="name" label="n1" nosuffix="name" isleaf="False"></node>
+<node gid="308" id="11" text="win-01" label="x16" nosuffix="win" isleaf="False"></node>
+<node gid="309" id="12" text="pass-01" label="x17" nosuffix="pass" isleaf="False"></node>
+<node gid="310" id="13" text="plan-01" label="x22" nosuffix="plan" isleaf="False"></node>
+<node gid="311" id="14" text="political-party" label="x20" nosuffix="political" isleaf="False"></node>
+<node gid="312" id="15" text="name" label="n2" nosuffix="name" isleaf="False"></node>
+<node gid="313" id="16" text="early" label="x24" nosuffix="early" isleaf="False"></node>
+<node gid="314" id="17" text="week" label="x26" nosuffix="week" isleaf="False"></node>
+<node gid="315" id="18" text="next" label="x25" nosuffix="next" isleaf="True"></node>
+<node gid="316" id="19" text="Democrats" label="Democrats" nosuffix="Democrats" isleaf="True"></node>
+<node gid="317" id="20" text="Democrats" label="Democrats" nosuffix="Democrats" isleaf="True"></node>
+<node gid="318" id="21" text="Democrats" label="Democrats" nosuffix="Democrats" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="ARG0" ></edge>
+<edge head="0" tail="3" label="ARG1" ></edge>
+<edge head="1" tail="2" label="ARG2" ></edge>
+<edge head="3" tail="4" label="ARG1" ></edge>
+<edge head="3" tail="8" label="ARG1" ></edge>
+<edge head="4" tail="5" label="poss" ></edge>
+<edge head="4" tail="7" label="mod" ></edge>
+<edge head="5" tail="6" label="name" ></edge>
+<edge head="6" tail="19" label="op1" ></edge>
+<edge head="8" tail="9" label="ARG0" ></edge>
+<edge head="8" tail="11" label="ARG1" ></edge>
+<edge head="9" tail="10" label="name" ></edge>
+<edge head="10" tail="20" label="op1" ></edge>
+<edge head="11" tail="12" label="ARG1" ></edge>
+<edge head="11" tail="16" label="time" ></edge>
+<edge head="12" tail="13" label="ARG1" ></edge>
+<edge head="13" tail="14" label="ARG0" ></edge>
+<edge head="14" tail="15" label="name" ></edge>
+<edge head="15" tail="21" label="op1" ></edge>
+<edge head="16" tail="17" label="op1" ></edge>
+<edge head="17" tail="18" label="mod" ></edge>
+</edges>
+</graph>
+<graph id="12">
+<nodes>
+<node gid="319" id="0" text="say-01" label="x6" nosuffix="say" isleaf="False"></node>
+<node gid="320" id="1" text="meanwhile" label="x1" nosuffix="meanwhile" isleaf="True"></node>
+<node gid="321" id="2" text="poll-01" label="x5" nosuffix="poll" isleaf="False"></node>
+<node gid="322" id="3" text="new" label="x4" nosuffix="new" isleaf="True"></node>
+<node gid="323" id="4" text="support-01" label="x11" nosuffix="support" isleaf="False"></node>
+<node gid="324" id="5" text="overwhelm-01" label="x9" nosuffix="overwhelm" isleaf="True"></node>
+<node gid="325" id="6" text="public" label="x10" nosuffix="public" isleaf="True"></node>
+<node gid="326" id="7" text="increase-01" label="x14" nosuffix="increase" isleaf="False"></node>
+<node gid="327" id="8" text="wage-01" label="x18" nosuffix="wage" isleaf="False"></node>
+<node gid="328" id="9" text="minimum" label="x17" nosuffix="minimum" isleaf="True"></node>
+<node gid="329" id="10" text="since" label="x26" nosuffix="since" isleaf="False"></node>
+<node gid="330" id="11" text="monetary-quantity" label="x25" nosuffix="monetary" isleaf="False"></node>
+<node gid="331" id="12" text="yuan" label="y" nosuffix="yuan" isleaf="True"></node>
+<node gid="332" id="13" text="date-entity" label="x27" nosuffix="date" isleaf="False"></node>
+<node gid="333" id="14" text="1981" label="1981" nosuffix="1981" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="time" ></edge>
+<edge head="0" tail="2" label="ARG0" ></edge>
+<edge head="0" tail="4" label="ARG1" ></edge>
+<edge head="2" tail="3" label="mod" ></edge>
+<edge head="4" tail="5" label="manner" ></edge>
+<edge head="4" tail="6" label="manner" ></edge>
+<edge head="4" tail="7" label="ARG1" ></edge>
+<edge head="7" tail="8" label="ARG1" ></edge>
+<edge head="8" tail="9" label="mod" ></edge>
+<edge head="8" tail="10" label="time" ></edge>
+<edge head="10" tail="11" label="op1" ></edge>
+<edge head="10" tail="13" label="op1" ></edge>
+<edge head="11" tail="12" label="unit" ></edge>
+<edge head="13" tail="14" label="year" ></edge>
+</edges>
+</graph>
+<graph id="13">
+<nodes>
+<node gid="334" id="0" text="say-01" label="x14" nosuffix="say" isleaf="False"></node>
+<node gid="335" id="1" text="survey-01" label="x5" nosuffix="survey" isleaf="False"></node>
+<node gid="336" id="2" text="city" label="x2" nosuffix="city" isleaf="False"></node>
+<node gid="337" id="3" text="name" label="n" nosuffix="name" isleaf="False"></node>
+<node gid="338" id="4" text="country" label="x3" nosuffix="country" isleaf="False"></node>
+<node gid="339" id="5" text="name" label="n1" nosuffix="name" isleaf="False"></node>
+<node gid="340" id="6" text="name" label="x8" nosuffix="name" isleaf="False"></node>
+<node gid="341" id="7" text="back-01" label="x19" nosuffix="back" isleaf="False"></node>
+<node gid="342" id="8" text="person" label="x18" nosuffix="person" isleaf="False"></node>
+<node gid="343" id="9" text="respond-01" label="r" nosuffix="respond" isleaf="True"></node>
+<node gid="344" id="10" text="percentage-entity" label="x16" nosuffix="percentage" isleaf="False"></node>
+<node gid="345" id="11" text="increase-01" label="x21" nosuffix="increase" isleaf="True"></node>
+<node gid="346" id="12" text="percentage-entity" label="x24" nosuffix="percentage" isleaf="False"></node>
+<node gid="347" id="13" text="Washington" label="Washington" nosuffix="Washington" isleaf="True"></node>
+<node gid="348" id="14" text="Post@ABC" label="Post@ABC" nosuffix="Post@ABC" isleaf="True"></node>
+<node gid="349" id="15" text="March" label="March" nosuffix="March" isleaf="True"></node>
+<node gid="350" id="16" text="30" label="30" nosuffix="30" isleaf="True"></node>
+<node gid="351" id="17" text="through" label="through" nosuffix="through" isleaf="True"></node>
+<node gid="352" id="18" text="April" label="April" nosuffix="April" isleaf="True"></node>
+<node gid="353" id="19" text="3" label="3" nosuffix="3" isleaf="True"></node>
+<node gid="354" id="20" text="84" label="84" nosuffix="84" isleaf="True"></node>
+<node gid="355" id="21" text="14" label="14" nosuffix="14" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="ARG0" ></edge>
+<edge head="0" tail="7" label="ARG1" ></edge>
+<edge head="1" tail="2" label="location" ></edge>
+<edge head="1" tail="4" label="null_edge" ></edge>
+<edge head="1" tail="6" label="name" ></edge>
+<edge head="2" tail="3" label="name" ></edge>
+<edge head="3" tail="13" label="op1" ></edge>
+<edge head="4" tail="5" label="name" ></edge>
+<edge head="5" tail="14" label="op1" ></edge>
+<edge head="6" tail="15" label="op1" ></edge>
+<edge head="6" tail="16" label="op2" ></edge>
+<edge head="6" tail="17" label="op3" ></edge>
+<edge head="6" tail="18" label="op4" ></edge>
+<edge head="6" tail="19" label="op5" ></edge>
+<edge head="7" tail="8" label="ARG0" ></edge>
+<edge head="7" tail="11" label="ARG2" ></edge>
+<edge head="7" tail="12" label="ARG2" ></edge>
+<edge head="8" tail="9" label="ARG0-of" ></edge>
+<edge head="8" tail="10" label="ARG1" ></edge>
+<edge head="10" tail="20" label="value" ></edge>
+<edge head="12" tail="21" label="value" ></edge>
+</edges>
+</graph>
+<graph id="14">
+<nodes>
+<node gid="356" id="0" text="percentage-entity" label="x2" nosuffix="percentage" isleaf="False"></node>
+<node gid="357" id="1" text="percentage-entity" label="x1" nosuffix="percentage" isleaf="True"></node>
+<node gid="358" id="2" text="say-01" label="x3" nosuffix="say" isleaf="False"></node>
+<node gid="359" id="3" text="favor-01" label="x5" nosuffix="favor" isleaf="False"></node>
+<node gid="360" id="4" text="person" label="x4" nosuffix="person" isleaf="False"></node>
+<node gid="361" id="5" text="respond-01" label="r" nosuffix="respond" isleaf="True"></node>
+<node gid="362" id="6" text="increase-01" label="x7" nosuffix="increase" isleaf="True"></node>
+<node gid="363" id="7" text="trigger-01" label="x13" nosuffix="trigger" isleaf="False"></node>
+<node gid="364" id="8" text="even" label="x8" nosuffix="even" isleaf="True"></node>
+<node gid="365" id="9" text="increase-01" label="x11" nosuffix="increase" isleaf="True"></node>
+<node gid="366" id="10" text="price-01" label="x16" nosuffix="price" isleaf="False"></node>
+<node gid="367" id="11" text="high" label="x14" nosuffix="high" isleaf="True"></node>
+<node gid="368" id="12" text="person" label="x15" nosuffix="person" isleaf="False"></node>
+<node gid="369" id="13" text="consume-01" label="c" nosuffix="consume" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="value" ></edge>
+<edge head="0" tail="2" label="ARG1-of" ></edge>
+<edge head="2" tail="3" label="ARG1" ></edge>
+<edge head="3" tail="4" label="ARG0" ></edge>
+<edge head="3" tail="6" label="ARG1" ></edge>
+<edge head="3" tail="7" label="purpose" ></edge>
+<edge head="4" tail="5" label="ARG0-of" ></edge>
+<edge head="7" tail="8" label="mod" ></edge>
+<edge head="7" tail="9" label="ARG0" ></edge>
+<edge head="7" tail="10" label="ARG1" ></edge>
+<edge head="10" tail="11" label="mod" ></edge>
+<edge head="10" tail="12" label="ARG1" ></edge>
+<edge head="12" tail="13" label="ARG0-of" ></edge>
+</edges>
+</graph>
+<graph id="15">
+<nodes>
+<node gid="370" id="0" text="say-01" label="x16" nosuffix="say" isleaf="False"></node>
+<node gid="371" id="1" text="contrast-01" label="x1" nosuffix="contrast" isleaf="True"></node>
+<node gid="372" id="2" text="only" label="x2" nosuffix="only" isleaf="False"></node>
+<node gid="373" id="3" text="percentage-entity" label="x8" nosuffix="percentage" isleaf="False"></node>
+<node gid="374" id="4" text="favor-01" label="x11" nosuffix="favor" isleaf="False"></node>
+<node gid="375" id="5" text="initial" label="x10" nosuffix="initial" isleaf="True"></node>
+<node gid="376" id="6" text="wage-01" label="x15" nosuffix="wage" isleaf="False"></node>
+<node gid="377" id="7" text="high" label="x13" nosuffix="high" isleaf="True"></node>
+<node gid="378" id="8" text="minimum" label="x14" nosuffix="minimum" isleaf="True"></node>
+<node gid="379" id="9" text="hold-04" label="x19" nosuffix="hold" isleaf="False"></node>
+<node gid="380" id="10" text="person" label="x17" nosuffix="person" isleaf="False"></node>
+<node gid="381" id="11" text="respond-01" label="r" nosuffix="respond" isleaf="True"></node>
+<node gid="382" id="12" text="opine-01" label="x22" nosuffix="opine" isleaf="False"></node>
+<node gid="383" id="13" text="that" label="x21" nosuffix="that" isleaf="True"></node>
+<node gid="384" id="14" text="mean-01" label="x27" nosuffix="mean" isleaf="False"></node>
+<node gid="385" id="15" text="even" label="x23" nosuffix="even" isleaf="True"></node>
+<node gid="386" id="16" text="opine-01" label="x26" nosuffix="opine" isleaf="False"></node>
+<node gid="387" id="17" text="that" label="x25" nosuffix="that" isleaf="True"></node>
+<node gid="388" id="18" text="or" label="x33" nosuffix="or" isleaf="False"></node>
+<node gid="389" id="19" text="stop-01" label="x30" nosuffix="stop" isleaf="False"></node>
+<node gid="390" id="20" text="business" label="x28" nosuffix="business" isleaf="True"></node>
+<node gid="391" id="21" text="hire-01" label="x31" nosuffix="hire" isleaf="False"></node>
+<node gid="392" id="22" text="cause-01" label="x38" nosuffix="cause" isleaf="False"></node>
+<node gid="393" id="23" text="cost-01" label="x42" nosuffix="cost" isleaf="False"></node>
+<node gid="394" id="24" text="add-03" label="x40" nosuffix="add" isleaf="True"></node>
+<node gid="395" id="25" text="payroll" label="x41" nosuffix="payroll" isleaf="True"></node>
+<node gid="396" id="26" text="cause-01" label="x43" nosuffix="cause" isleaf="False"></node>
+<node gid="397" id="27" text="wage-01" label="x48" nosuffix="wage" isleaf="False"></node>
+<node gid="398" id="28" text="high" label="x46" nosuffix="high" isleaf="True"></node>
+<node gid="399" id="29" text="minimum" label="x47" nosuffix="minimum" isleaf="True"></node>
+<node gid="400" id="30" text="fire-02" label="x35" nosuffix="fire" isleaf="False"></node>
+<node gid="401" id="31" text="person" label="x37" nosuffix="person" isleaf="False"></node>
+<node gid="402" id="32" text="work-01" label="w" nosuffix="work" isleaf="True"></node>
+<node gid="403" id="33" text="84" label="84" nosuffix="84" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="null_edge" ></edge>
+<edge head="0" tail="2" label="mod" ></edge>
+<edge head="0" tail="9" label="ARG1" ></edge>
+<edge head="2" tail="3" label="op1" ></edge>
+<edge head="3" tail="33" label="value" ></edge>
+<edge head="3" tail="4" label="ARG1-of" ></edge>
+<edge head="4" tail="5" label="time" ></edge>
+<edge head="4" tail="6" label="ARG1" ></edge>
+<edge head="6" tail="7" label="mod" ></edge>
+<edge head="6" tail="8" label="mod" ></edge>
+<edge head="9" tail="10" label="ARG0" ></edge>
+<edge head="9" tail="12" label="ARG2" ></edge>
+<edge head="9" tail="14" label="condition" ></edge>
+<edge head="10" tail="11" label="ARG0-of" ></edge>
+<edge head="12" tail="13" label="mod" ></edge>
+<edge head="14" tail="15" label="mod" ></edge>
+<edge head="14" tail="16" label="ARG0" ></edge>
+<edge head="14" tail="18" label="ARG1" ></edge>
+<edge head="16" tail="17" label="mod" ></edge>
+<edge head="18" tail="19" label="op1" ></edge>
+<edge head="18" tail="30" label="op2" ></edge>
+<edge head="18" tail="31" label="op2" ></edge>
+<edge head="19" tail="20" label="ARG0" ></edge>
+<edge head="19" tail="21" label="ARG1" ></edge>
+<edge head="19" tail="22" label="ARG1-of" ></edge>
+<edge head="21" tail="20" label="ARG0" ></edge>
+<edge head="22" tail="23" label="ARG0" ></edge>
+<edge head="23" tail="24" label="ARG1-of" ></edge>
+<edge head="23" tail="25" label="ARG1" ></edge>
+<edge head="23" tail="26" label="ARG1-of" ></edge>
+<edge head="26" tail="27" label="ARG0" ></edge>
+<edge head="27" tail="28" label="mod" ></edge>
+<edge head="27" tail="29" label="mod" ></edge>
+<edge head="30" tail="20" label="ARG0" ></edge>
+<edge head="31" tail="32" label="ARG0-of" ></edge>
+</edges>
+</graph>
+<graph id="16">
+<nodes>
+<node gid="404" id="0" text="margin" label="x5" nosuffix="margin" isleaf="False"></node>
+<node gid="405" id="1" text="poll-01" label="x2" nosuffix="poll" isleaf="True"></node>
+<node gid="406" id="2" text="error" label="x7" nosuffix="error" isleaf="False"></node>
+<node gid="407" id="3" text="or" label="x10" nosuffix="or" isleaf="False"></node>
+<node gid="408" id="4" text="null_tag" label="x9" nosuffix="null_tag" isleaf="True"></node>
+<node gid="409" id="5" text="more" label="xap0" nosuffix="more" isleaf="False"></node>
+<node gid="410" id="6" text="percentage-entity" label="x13" nosuffix="percentage" isleaf="False"></node>
+<node gid="411" id="7" text="null_tag" label="x11" nosuffix="null_tag" isleaf="False"></node>
+<node gid="412" id="8" text="3" label="3" nosuffix="3" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="ARG0" ></edge>
+<edge head="0" tail="2" label="mod" ></edge>
+<edge head="2" tail="3" label="ARG1" ></edge>
+<edge head="3" tail="4" label="op1" ></edge>
+<edge head="3" tail="5" label="op2" ></edge>
+<edge head="5" tail="6" label="degree" ></edge>
+<edge head="6" tail="7" label="null_edge" ></edge>
+<edge head="7" tail="8" label="null_edge" ></edge>
+</edges>
+</graph>
+<graph id="17">
+<nodes>
+<node gid="413" id="0" text="avert-01" label="x17" nosuffix="avert" isleaf="False"></node>
+<node gid="414" id="1" text="agree-01" label="x2" nosuffix="agree" isleaf="False"></node>
+<node gid="415" id="2" text="amend-01" label="x4" nosuffix="amend" isleaf="False"></node>
+<node gid="416" id="3" text="bill" label="x6" nosuffix="bill" isleaf="True"></node>
+<node gid="417" id="4" text="person" label="x8" nosuffix="person" isleaf="False"></node>
+<node gid="418" id="5" text="name" label="n" nosuffix="name" isleaf="False"></node>
+<node gid="419" id="6" text="provide-01" label="x10" nosuffix="provide" isleaf="False"></node>
+<node gid="420" id="7" text="win-01" label="x14" nosuffix="win" isleaf="False"></node>
+<node gid="421" id="8" text="version" label="x13" nosuffix="version" isleaf="False"></node>
+<node gid="422" id="9" text="amend-01" label="x12" nosuffix="amend" isleaf="True"></node>
+<node gid="423" id="10" text="pass-01" label="x15" nosuffix="pass" isleaf="True"></node>
+<node gid="424" id="11" text="need-01" label="x19" nosuffix="need" isleaf="False"></node>
+<node gid="425" id="12" text="resolve-01" label="x25" nosuffix="resolve" isleaf="False"></node>
+<node gid="426" id="13" text="committee" label="x23" nosuffix="committee" isleaf="False"></node>
+<node gid="427" id="14" text="conference" label="x22" nosuffix="conference" isleaf="True"></node>
+<node gid="428" id="15" text="thing" label="x26" nosuffix="thing" isleaf="False"></node>
+<node gid="429" id="16" text="differ-02" label="d" nosuffix="differ" isleaf="True"></node>
+<node gid="430" id="17" text="and" label="x30" nosuffix="and" isleaf="False"></node>
+<node gid="431" id="18" text="have-org-role-91" label="x29" nosuffix="have" isleaf="False"></node>
+<node gid="432" id="19" text="government-organization" label="g" nosuffix="government" isleaf="False"></node>
+<node gid="433" id="20" text="name" label="n1" nosuffix="name" isleaf="False"></node>
+<node gid="434" id="21" text="government-organization" label="x31" nosuffix="government" isleaf="False"></node>
+<node gid="435" id="22" text="name" label="n2" nosuffix="name" isleaf="False"></node>
+<node gid="436" id="23" text="version" label="x32" nosuffix="version" isleaf="True"></node>
+<node gid="437" id="24" text="Kennedy" label="Kennedy" nosuffix="Kennedy" isleaf="True"></node>
+<node gid="438" id="25" text="House" label="House" nosuffix="House" isleaf="True"></node>
+<node gid="439" id="26" text="Senate" label="Senate" nosuffix="Senate" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="ARG1" ></edge>
+<edge head="0" tail="4" label="ARG0" ></edge>
+<edge head="0" tail="6" label="ARG1" ></edge>
+<edge head="0" tail="11" label="ARG1" ></edge>
+<edge head="1" tail="2" label="ARG1" ></edge>
+<edge head="2" tail="3" label="ARG1" ></edge>
+<edge head="4" tail="5" label="name" ></edge>
+<edge head="5" tail="24" label="op1" ></edge>
+<edge head="6" tail="7" label="ARG2" ></edge>
+<edge head="7" tail="8" label="ARG0" ></edge>
+<edge head="7" tail="10" label="ARG1" ></edge>
+<edge head="8" tail="9" label="ARG1-of" ></edge>
+<edge head="11" tail="12" label="ARG1" ></edge>
+<edge head="12" tail="13" label="ARG0" ></edge>
+<edge head="12" tail="15" label="ARG1" ></edge>
+<edge head="13" tail="14" label="mod" ></edge>
+<edge head="15" tail="16" label="ARG1-of" ></edge>
+<edge head="15" tail="17" label="ARG1" ></edge>
+<edge head="17" tail="18" label="op1" ></edge>
+<edge head="17" tail="21" label="op2" ></edge>
+<edge head="17" tail="23" label="op1" ></edge>
+<edge head="18" tail="19" label="ARG1" ></edge>
+<edge head="19" tail="20" label="name" ></edge>
+<edge head="20" tail="25" label="op1" ></edge>
+<edge head="21" tail="22" label="name" ></edge>
+<edge head="22" tail="26" label="op1" ></edge>
+</edges>
+</graph>
+<graph id="18">
+<nodes>
+<node gid="440" id="0" text="expect-01" label="x8" nosuffix="expect" isleaf="False"></node>
+<node gid="441" id="1" text="number" label="x2" nosuffix="number" isleaf="False"></node>
+<node gid="442" id="2" text="amend-01" label="x5" nosuffix="amend" isleaf="False"></node>
+<node gid="443" id="3" text="other" label="x4" nosuffix="other" isleaf="True"></node>
+<node gid="444" id="4" text="also" label="x7" nosuffix="also" isleaf="True"></node>
+<node gid="445" id="5" text="attempt-01" label="x13" nosuffix="attempt" isleaf="False"></node>
+<node gid="446" id="6" text="political-party" label="x12" nosuffix="political" isleaf="False"></node>
+<node gid="447" id="7" text="name" label="n" nosuffix="name" isleaf="False"></node>
+<node gid="448" id="8" text="substitute-01" label="x15" nosuffix="substitute" isleaf="False"></node>
+<node gid="449" id="9" text="propose-01" label="x18" nosuffix="propose" isleaf="False"></node>
+<node gid="450" id="10" text="person" label="x16" nosuffix="person" isleaf="False"></node>
+<node gid="451" id="11" text="name" label="n1" nosuffix="name" isleaf="False"></node>
+<node gid="452" id="12" text="GOP" label="GOP" nosuffix="GOP" isleaf="True"></node>
+<node gid="453" id="13" text="Bush" label="Bush" nosuffix="Bush" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="ARG1" ></edge>
+<edge head="0" tail="4" label="mod" ></edge>
+<edge head="0" tail="5" label="ARG1" ></edge>
+<edge head="1" tail="2" label="quant-of" ></edge>
+<edge head="2" tail="3" label="mod" ></edge>
+<edge head="5" tail="6" label="ARG1" ></edge>
+<edge head="5" tail="8" label="ARG1" ></edge>
+<edge head="6" tail="7" label="name" ></edge>
+<edge head="7" tail="12" label="op1" ></edge>
+<edge head="8" tail="6" label="ARG0" ></edge>
+<edge head="8" tail="9" label="ARG1" ></edge>
+<edge head="9" tail="10" label="ARG0" ></edge>
+<edge head="10" tail="11" label="name" ></edge>
+<edge head="11" tail="13" label="op1" ></edge>
+</edges>
+</graph>
+<graph id="19">
+<nodes>
+<node gid="454" id="0" text="say-01" label="x10" nosuffix="say" isleaf="False"></node>
+<node gid="455" id="1" text="lobbyist" label="x2" nosuffix="lobbyist" isleaf="False"></node>
+<node gid="456" id="2" text="favor-01" label="x4" nosuffix="favor" isleaf="False"></node>
+<node gid="457" id="3" text="raise-01" label="x6" nosuffix="raise" isleaf="False"></node>
+<node gid="458" id="4" text="wage-01" label="x9" nosuffix="wage" isleaf="False"></node>
+<node gid="459" id="5" text="minimum" label="x8" nosuffix="minimum" isleaf="True"></node>
+<node gid="460" id="6" text="contrast-01" label="x18" nosuffix="contrast" isleaf="False"></node>
+<node gid="461" id="7" text="all" label="x17" nosuffix="all" isleaf="True"></node>
+<node gid="462" id="8" text="quash" label="x19" nosuffix="quash" isleaf="False"></node>
+<node gid="463" id="9" text="threaten-01" label="x15" nosuffix="threaten" isleaf="False"></node>
+<node gid="464" id="10" text="person" label="x11" nosuffix="person" isleaf="False"></node>
+<node gid="465" id="11" text="name" label="n" nosuffix="name" isleaf="False"></node>
+<node gid="466" id="12" text="repeat-01" label="x13" nosuffix="repeat" isleaf="True"></node>
+<node gid="467" id="13" text="veto" label="x14" nosuffix="veto" isleaf="True"></node>
+<node gid="468" id="14" text="hope-01" label="x21" nosuffix="hope" isleaf="False"></node>
+<node gid="469" id="15" text="any" label="x20" nosuffix="any" isleaf="True"></node>
+<node gid="470" id="16" text="sponsor-01" label="x24" nosuffix="sponsor" isleaf="False"></node>
+<node gid="471" id="17" text="null_tag" label="x23" nosuffix="null_tag" isleaf="True"></node>
+<node gid="472" id="18" text="avoid-01" label="x26" nosuffix="avoid" isleaf="False"></node>
+<node gid="473" id="19" text="showdown" label="x28" nosuffix="showdown" isleaf="False"></node>
+<node gid="474" id="20" text="have-org-role-91" label="x31" nosuffix="have" isleaf="False"></node>
+<node gid="475" id="21" text="president" label="p" nosuffix="president" isleaf="True"></node>
+<node gid="476" id="22" text="Bush" label="Bush" nosuffix="Bush" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="ARG0" ></edge>
+<edge head="0" tail="6" label="ARG1" ></edge>
+<edge head="1" tail="2" label="ARG0-of" ></edge>
+<edge head="2" tail="3" label="ARG1" ></edge>
+<edge head="3" tail="4" label="ARG1" ></edge>
+<edge head="4" tail="5" label="mod" ></edge>
+<edge head="6" tail="7" label="quant" ></edge>
+<edge head="6" tail="8" label="ARG2" ></edge>
+<edge head="8" tail="9" label="ARG0" ></edge>
+<edge head="8" tail="14" label="ARG1" ></edge>
+<edge head="8" tail="16" label="ARG0" ></edge>
+<edge head="9" tail="10" label="ARG0" ></edge>
+<edge head="9" tail="12" label="ARG1-of" ></edge>
+<edge head="9" tail="13" label="mod" ></edge>
+<edge head="10" tail="11" label="name" ></edge>
+<edge head="11" tail="22" label="op1" ></edge>
+<edge head="14" tail="15" label="mod" ></edge>
+<edge head="16" tail="17" label="null_edge" ></edge>
+<edge head="16" tail="18" label="ARG2" ></edge>
+<edge head="18" tail="19" label="ARG1" ></edge>
+<edge head="19" tail="20" label="ARG1" ></edge>
+<edge head="20" tail="21" label="ARG2" ></edge>
+</edges>
+</graph>
+<graph id="20">
+<nodes>
+<node gid="477" id="0" text="say-01" label="x70" nosuffix="say" isleaf="False"></node>
+<node gid="478" id="1" text="thing" label="x11" nosuffix="thing" isleaf="False"></node>
+<node gid="479" id="2" text="say-01" label="s" nosuffix="say" isleaf="True"></node>
+<node gid="480" id="3" text="lobbyist" label="x3" nosuffix="lobbyist" isleaf="False"></node>
+<node gid="481" id="4" text="favor-01" label="x5" nosuffix="favor" isleaf="False"></node>
+<node gid="482" id="5" text="raise-01" label="x7" nosuffix="raise" isleaf="False"></node>
+<node gid="483" id="6" text="wage-01" label="x10" nosuffix="wage" isleaf="False"></node>
+<node gid="484" id="7" text="minimum" label="x9" nosuffix="minimum" isleaf="True"></node>
+<node gid="485" id="8" text="compromise-01" label="x23" nosuffix="compromise" isleaf="False"></node>
+<node gid="486" id="9" text="lobbyist" label="x13" nosuffix="lobbyist" isleaf="False"></node>
+<node gid="487" id="10" text="favor-01" label="x15" nosuffix="favor" isleaf="False"></node>
+<node gid="488" id="11" text="raise-01" label="x17" nosuffix="raise" isleaf="False"></node>
+<node gid="489" id="12" text="wage-01" label="x20" nosuffix="wage" isleaf="False"></node>
+<node gid="490" id="13" text="minimum" label="x19" nosuffix="minimum" isleaf="True"></node>
+<node gid="491" id="14" text="see-01" label="x31" nosuffix="see" isleaf="False"></node>
+<node gid="492" id="15" text="newspaper" label="x27" nosuffix="newspaper" isleaf="False"></node>
+<node gid="493" id="16" text="name" label="n2" nosuffix="name" isleaf="False"></node>
+<node gid="494" id="17" text="lobbyist" label="x26" nosuffix="lobbyist" isleaf="False"></node>
+<node gid="495" id="18" text="organization" label="x25" nosuffix="organization" isleaf="False"></node>
+<node gid="496" id="19" text="name" label="n3" nosuffix="name" isleaf="False"></node>
+<node gid="497" id="20" text="need-01" label="x33" nosuffix="need" isleaf="False"></node>
+<node gid="498" id="21" text="sponsor-01" label="x36" nosuffix="sponsor" isleaf="False"></node>
+<node gid="499" id="22" text="avoid-01" label="x38" nosuffix="avoid" isleaf="False"></node>
+<node gid="500" id="23" text="showdown" label="x40" nosuffix="showdown" isleaf="False"></node>
+<node gid="501" id="24" text="have-org-role-91" label="x43" nosuffix="have" isleaf="False"></node>
+<node gid="502" id="25" text="president" label="p" nosuffix="president" isleaf="True"></node>
+<node gid="503" id="26" text="do-04" label="x45" nosuffix="do" isleaf="False"></node>
+<node gid="504" id="27" text="anything" label="x46" nosuffix="anything" isleaf="False"></node>
+<node gid="505" id="28" text="send-03" label="x48" nosuffix="send" isleaf="False"></node>
+<node gid="506" id="29" text="lobbyist" label="x50" nosuffix="lobbyist" isleaf="True"></node>
+<node gid="507" id="30" text="favor-01" label="x52" nosuffix="favor" isleaf="False"></node>
+<node gid="508" id="31" text="raise-01" label="x54" nosuffix="raise" isleaf="False"></node>
+<node gid="509" id="32" text="wage-01" label="x57" nosuffix="wage" isleaf="False"></node>
+<node gid="510" id="33" text="minimum" label="x56" nosuffix="minimum" isleaf="True"></node>
+<node gid="511" id="34" text="sponsor-01" label="x59" nosuffix="sponsor" isleaf="False"></node>
+<node gid="512" id="35" text="null_tag" label="x58" nosuffix="null_tag" isleaf="True"></node>
+<node gid="513" id="36" text="avoid-01" label="x61" nosuffix="avoid" isleaf="False"></node>
+<node gid="514" id="37" text="showdown" label="x63" nosuffix="showdown" isleaf="False"></node>
+<node gid="515" id="38" text="bill" label="x67" nosuffix="bill" isleaf="False"></node>
+<node gid="516" id="39" text="have-org-role-91" label="x66" nosuffix="have" isleaf="False"></node>
+<node gid="517" id="40" text="president" label="p1" nosuffix="president" isleaf="True"></node>
+<node gid="518" id="41" text="newspaper" label="x73" nosuffix="newspaper" isleaf="False"></node>
+<node gid="519" id="42" text="name" label="n" nosuffix="name" isleaf="False"></node>
+<node gid="520" id="43" text="lobbyist" label="x72" nosuffix="lobbyist" isleaf="False"></node>
+<node gid="521" id="44" text="organization" label="x71" nosuffix="organization" isleaf="False"></node>
+<node gid="522" id="45" text="name" label="n1" nosuffix="name" isleaf="False"></node>
+<node gid="523" id="46" text="Robert" label="Robert" nosuffix="Robert" isleaf="True"></node>
+<node gid="524" id="47" text="McGlotten" label="McGlotten" nosuffix="McGlotten" isleaf="True"></node>
+<node gid="525" id="48" text="AFL-CIO" label="AFL-CIO" nosuffix="AFL" isleaf="True"></node>
+<node gid="526" id="49" text="Robert" label="Robert" nosuffix="Robert" isleaf="True"></node>
+<node gid="527" id="50" text="McGlotten" label="McGlotten" nosuffix="McGlotten" isleaf="True"></node>
+<node gid="528" id="51" text="AFL-CIO" label="AFL-CIO" nosuffix="AFL" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="ARG1" ></edge>
+<edge head="0" tail="41" label="ARG0" ></edge>
+<edge head="1" tail="2" label="ARG1-of" ></edge>
+<edge head="1" tail="3" label="ARG0" ></edge>
+<edge head="1" tail="8" label="ARG1" ></edge>
+<edge head="3" tail="4" label="ARG1" ></edge>
+<edge head="4" tail="5" label="ARG1" ></edge>
+<edge head="5" tail="6" label="ARG1" ></edge>
+<edge head="6" tail="7" label="mod" ></edge>
+<edge head="8" tail="9" label="ARG0" ></edge>
+<edge head="8" tail="14" label="time" ></edge>
+<edge head="9" tail="10" label="ARG1" ></edge>
+<edge head="10" tail="11" label="ARG1" ></edge>
+<edge head="11" tail="12" label="ARG1" ></edge>
+<edge head="12" tail="13" label="mod" ></edge>
+<edge head="14" tail="15" label="ARG0" ></edge>
+<edge head="14" tail="20" label="ARG1" ></edge>
+<edge head="15" tail="16" label="name" ></edge>
+<edge head="15" tail="17" label="ARG0-of" ></edge>
+<edge head="16" tail="46" label="op1" ></edge>
+<edge head="16" tail="47" label="op2" ></edge>
+<edge head="17" tail="18" label="ARG1" ></edge>
+<edge head="18" tail="19" label="name" ></edge>
+<edge head="19" tail="48" label="op1" ></edge>
+<edge head="20" tail="21" label="topic" ></edge>
+<edge head="21" tail="22" label="ARG2" ></edge>
+<edge head="22" tail="23" label="ARG1" ></edge>
+<edge head="23" tail="24" label="ARG1" ></edge>
+<edge head="23" tail="26" label="ARG1-of" ></edge>
+<edge head="24" tail="25" label="ARG2" ></edge>
+<edge head="26" tail="27" label="ARG1" ></edge>
+<edge head="27" tail="28" label="purpose" ></edge>
+<edge head="28" tail="29" label="ARG1" ></edge>
+<edge head="28" tail="30" label="ARG2" ></edge>
+<edge head="30" tail="31" label="ARG1" ></edge>
+<edge head="31" tail="32" label="ARG1" ></edge>
+<edge head="31" tail="34" label="ARG1" ></edge>
+<edge head="32" tail="33" label="mod" ></edge>
+<edge head="34" tail="35" label="null_edge" ></edge>
+<edge head="34" tail="36" label="topic" ></edge>
+<edge head="36" tail="37" label="ARG1" ></edge>
+<edge head="37" tail="38" label="ARG1" ></edge>
+<edge head="38" tail="39" label="topic" ></edge>
+<edge head="39" tail="40" label="ARG2" ></edge>
+<edge head="41" tail="42" label="name" ></edge>
+<edge head="41" tail="43" label="ARG0-of" ></edge>
+<edge head="42" tail="49" label="op1" ></edge>
+<edge head="42" tail="50" label="op2" ></edge>
+<edge head="43" tail="44" label="ARG1" ></edge>
+<edge head="44" tail="45" label="name" ></edge>
+<edge head="45" tail="51" label="op1" ></edge>
+</edges>
+</graph>
+<graph id="21">
+<nodes>
+<node gid="529" id="0" text="and" label="x14" nosuffix="and" isleaf="False"></node>
+<node gid="530" id="1" text="adamant" label="x4" nosuffix="adamant" isleaf="False"></node>
+<node gid="531" id="2" text="person" label="x1" nosuffix="person" isleaf="False"></node>
+<node gid="532" id="3" text="name" label="n" nosuffix="name" isleaf="False"></node>
+<node gid="533" id="4" text="say-01" label="x6" nosuffix="say" isleaf="False"></node>
+<node gid="534" id="5" text="veto-01" label="x10" nosuffix="veto" isleaf="False"></node>
+<node gid="535" id="6" text="person" label="x8" nosuffix="person" isleaf="False"></node>
+<node gid="536" id="7" text="name" label="n1" nosuffix="name" isleaf="False"></node>
+<node gid="537" id="8" text="have-org-role-91" label="x7" nosuffix="have" isleaf="False"></node>
+<node gid="538" id="9" text="president" label="p" nosuffix="president" isleaf="True"></node>
+<node gid="539" id="10" text="bill" label="x13" nosuffix="bill" isleaf="False"></node>
+<node gid="540" id="11" text="organization" label="x12" nosuffix="organization" isleaf="False"></node>
+<node gid="541" id="12" text="name" label="n3" nosuffix="name" isleaf="False"></node>
+<node gid="542" id="13" text="appear-02" label="x15" nosuffix="appear" isleaf="False"></node>
+<node gid="543" id="14" text="vote-01" label="x19" nosuffix="vote" isleaf="True"></node>
+<node gid="544" id="15" text="sustain" label="x21" nosuffix="sustain" isleaf="False"></node>
+<node gid="545" id="16" text="veto" label="x23" nosuffix="veto" isleaf="True"></node>
+<node gid="546" id="17" text="chamber" label="x26" nosuffix="chamber" isleaf="False"></node>
+<node gid="547" id="18" text="government-organization" label="x28" nosuffix="government" isleaf="False"></node>
+<node gid="548" id="19" text="name" label="n2" nosuffix="name" isleaf="False"></node>
+<node gid="549" id="20" text="Bush" label="Bush" nosuffix="Bush" isleaf="True"></node>
+<node gid="550" id="21" text="Bush" label="Bush" nosuffix="Bush" isleaf="True"></node>
+<node gid="551" id="22" text="House-passed" label="House-passed" nosuffix="House" isleaf="True"></node>
+<node gid="552" id="23" text="Congress" label="Congress" nosuffix="Congress" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="op1" ></edge>
+<edge head="0" tail="13" label="op2" ></edge>
+<edge head="1" tail="2" label="ARG0" ></edge>
+<edge head="1" tail="4" label="ARG2" ></edge>
+<edge head="2" tail="3" label="name" ></edge>
+<edge head="3" tail="20" label="op1" ></edge>
+<edge head="4" tail="2" label="ARG0" ></edge>
+<edge head="4" tail="5" label="ARG1" ></edge>
+<edge head="5" tail="6" label="ARG0" ></edge>
+<edge head="5" tail="10" label="ARG1" ></edge>
+<edge head="6" tail="7" label="name" ></edge>
+<edge head="6" tail="8" label="ARG0-of" ></edge>
+<edge head="7" tail="21" label="op1" ></edge>
+<edge head="8" tail="9" label="ARG2" ></edge>
+<edge head="10" tail="11" label="mod" ></edge>
+<edge head="11" tail="12" label="name" ></edge>
+<edge head="12" tail="22" label="op1" ></edge>
+<edge head="13" tail="14" label="ARG1" ></edge>
+<edge head="13" tail="15" label="ARG1" ></edge>
+<edge head="15" tail="16" label="ARG1" ></edge>
+<edge head="15" tail="17" label="ARG0" ></edge>
+<edge head="17" tail="18" label="part-of" ></edge>
+<edge head="18" tail="19" label="name" ></edge>
+<edge head="19" tail="23" label="op1" ></edge>
+</edges>
+</graph>
+<graph id="22">
+<nodes>
+<node gid="553" id="0" text="move-01" label="x28" nosuffix="move" isleaf="False"></node>
+<node gid="554" id="1" text="cut-02" label="x5" nosuffix="cut" isleaf="False"></node>
+<node gid="555" id="2" text="bill" label="x4" nosuffix="bill" isleaf="False"></node>
+<node gid="556" id="3" text="organization" label="x3" nosuffix="organization" isleaf="False"></node>
+<node gid="557" id="4" text="name" label="n1" nosuffix="name" isleaf="False"></node>
+<node gid="558" id="5" text="target-01" label="x8" nosuffix="target" isleaf="False"></node>
+<node gid="559" id="6" text="final" label="x7" nosuffix="final" isleaf="True"></node>
+<node gid="560" id="7" text="wage-01" label="x13" nosuffix="wage" isleaf="False"></node>
+<node gid="561" id="8" text="minimum" label="x12" nosuffix="minimum" isleaf="True"></node>
+<node gid="562" id="9" text="monetary-quantity" label="x16" nosuffix="monetary" isleaf="False"></node>
+<node gid="563" id="10" text="yuan" label="y" nosuffix="yuan" isleaf="True"></node>
+<node gid="564" id="11" text="_" label="x21" nosuffix="_" isleaf="False"></node>
+<node gid="565" id="12" text="job" label="x20" nosuffix="job" isleaf="True"></node>
+<node gid="566" id="13" text="monetary-quantity" label="x24" nosuffix="monetary" isleaf="False"></node>
+<node gid="567" id="14" text="yuan" label="y1" nosuffix="yuan" isleaf="True"></node>
+<node gid="568" id="15" text="person" label="x26" nosuffix="person" isleaf="False"></node>
+<node gid="569" id="16" text="name" label="n" nosuffix="name" isleaf="False"></node>
+<node gid="570" id="17" text="effective" label="x25" nosuffix="effective" isleaf="True"></node>
+<node gid="571" id="18" text="date" label="x32" nosuffix="date" isleaf="False"></node>
+<node gid="572" id="19" text="effective" label="x31" nosuffix="effective" isleaf="True"></node>
+<node gid="573" id="20" text="increase-01" label="x36" nosuffix="increase" isleaf="False"></node>
+<node gid="574" id="21" text="date-entity" label="x38" nosuffix="date" isleaf="False"></node>
+<node gid="575" id="22" text="date-entity" label="x41" nosuffix="date" isleaf="False"></node>
+<node gid="576" id="23" text="mean-01" label="x44" nosuffix="mean" isleaf="False"></node>
+<node gid="577" id="24" text="and" label="x52" nosuffix="and" isleaf="False"></node>
+<node gid="578" id="25" text="come-01" label="x49" nosuffix="come" isleaf="False"></node>
+<node gid="579" id="26" text="increase-01" label="x47" nosuffix="increase" isleaf="True"></node>
+<node gid="580" id="27" text="year" label="x51" nosuffix="year" isleaf="False"></node>
+<node gid="581" id="28" text="this" label="x50" nosuffix="this" isleaf="True"></node>
+<node gid="582" id="29" text="jump-03" label="x55" nosuffix="jump" isleaf="False"></node>
+<node gid="583" id="30" text="last" label="x54" nosuffix="last" isleaf="True"></node>
+<node gid="584" id="31" text="event" label="x58" nosuffix="event" isleaf="False"></node>
+<node gid="585" id="32" text="name" label="n2" nosuffix="name" isleaf="False"></node>
+<node gid="586" id="33" text="House-passed" label="House-passed" nosuffix="House" isleaf="True"></node>
+<node gid="587" id="34" text="Oct." label="Oct." nosuffix="Oct." isleaf="True"></node>
+<node gid="588" id="35" text="1" label="1" nosuffix="1" isleaf="True"></node>
+<node gid="589" id="36" text="3" label="3" nosuffix="3" isleaf="True"></node>
+<node gid="590" id="37" text="Oct." label="Oct." nosuffix="Oct." isleaf="True"></node>
+<node gid="591" id="38" text="1" label="1" nosuffix="1" isleaf="True"></node>
+<node gid="592" id="39" text="," label="," nosuffix="," isleaf="True"></node>
+<node gid="593" id="40" text="1992" label="1992" nosuffix="1992" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="ARG0" ></edge>
+<edge head="0" tail="11" label="ARG1" ></edge>
+<edge head="0" tail="15" label="ARG0" ></edge>
+<edge head="0" tail="18" label="ARG1" ></edge>
+<edge head="1" tail="2" label="ARG0" ></edge>
+<edge head="1" tail="5" label="ARG1" ></edge>
+<edge head="1" tail="9" label="quant" ></edge>
+<edge head="2" tail="3" label="mod" ></edge>
+<edge head="3" tail="4" label="name" ></edge>
+<edge head="4" tail="33" label="op1" ></edge>
+<edge head="5" tail="6" label="mod" ></edge>
+<edge head="5" tail="7" label="ARG1" ></edge>
+<edge head="7" tail="8" label="mod" ></edge>
+<edge head="9" tail="10" label="unit" ></edge>
+<edge head="11" tail="12" label="ARG1" ></edge>
+<edge head="11" tail="13" label="quant" ></edge>
+<edge head="13" tail="14" label="unit" ></edge>
+<edge head="15" tail="16" label="name" ></edge>
+<edge head="15" tail="17" label="mod" ></edge>
+<edge head="16" tail="34" label="op1" ></edge>
+<edge head="16" tail="35" label="op2" ></edge>
+<edge head="18" tail="19" label="mod" ></edge>
+<edge head="18" tail="20" label="ARG1" ></edge>
+<edge head="20" tail="36" label="quant" ></edge>
+<edge head="20" tail="21" label="null_edge" ></edge>
+<edge head="21" tail="22" label="ARG4" ></edge>
+<edge head="22" tail="23" label="ARG0-of" ></edge>
+<edge head="23" tail="24" label="ARG1" ></edge>
+<edge head="24" tail="25" label="op1" ></edge>
+<edge head="25" tail="26" label="ARG1" ></edge>
+<edge head="25" tail="27" label="time" ></edge>
+<edge head="25" tail="29" label="ARG1" ></edge>
+<edge head="25" tail="31" label="time" ></edge>
+<edge head="27" tail="28" label="mod" ></edge>
+<edge head="29" tail="30" label="mod" ></edge>
+<edge head="31" tail="32" label="name" ></edge>
+<edge head="32" tail="37" label="op1" ></edge>
+<edge head="32" tail="38" label="op2" ></edge>
+<edge head="32" tail="39" label="op3" ></edge>
+<edge head="32" tail="40" label="op4" ></edge>
+</edges>
+</graph>
+<graph id="23">
+<nodes>
+<node gid="594" id="0" text="propose-01" label="x3" nosuffix="propose" isleaf="False"></node>
+<node gid="595" id="1" text="person" label="x1" nosuffix="person" isleaf="False"></node>
+<node gid="596" id="2" text="name" label="n" nosuffix="name" isleaf="False"></node>
+<node gid="597" id="3" text="increase-01" label="x6" nosuffix="increase" isleaf="False"></node>
+<node gid="598" id="4" text="30-cent" label="x5" nosuffix="30" isleaf="True"></node>
+<node gid="599" id="5" text="wage-01" label="x10" nosuffix="wage" isleaf="False"></node>
+<node gid="600" id="6" text="minimum" label="x9" nosuffix="minimum" isleaf="True"></node>
+<node gid="601" id="7" text="begin-01" label="x11" nosuffix="begin" isleaf="False"></node>
+<node gid="602" id="8" text="event" label="x12" nosuffix="event" isleaf="False"></node>
+<node gid="603" id="9" text="name" label="n1" nosuffix="name" isleaf="False"></node>
+<node gid="604" id="10" text="end-01" label="x18" nosuffix="end" isleaf="False"></node>
+<node gid="605" id="11" text="minimum" label="x25" nosuffix="minimum" isleaf="False"></node>
+<node gid="606" id="12" text="late" label="x21" nosuffix="late" isleaf="False"></node>
+<node gid="607" id="13" text="date-entity" label="x19" nosuffix="date" isleaf="True"></node>
+<node gid="608" id="14" text="hour" label="x24" nosuffix="hour" isleaf="True"></node>
+<node gid="609" id="15" text="monetary-quantity" label="x28" nosuffix="monetary" isleaf="False"></node>
+<node gid="610" id="16" text="yuan" label="y" nosuffix="yuan" isleaf="True"></node>
+<node gid="611" id="17" text="Bush" label="Bush" nosuffix="Bush" isleaf="True"></node>
+<node gid="612" id="18" text="-" label="-" nosuffix="" isleaf="True"></node>
+<node gid="613" id="19" text="3" label="3" nosuffix="3" isleaf="True"></node>
+<node gid="614" id="20" text="Jan." label="Jan." nosuffix="Jan." isleaf="True"></node>
+<node gid="615" id="21" text="1" label="1" nosuffix="1" isleaf="True"></node>
+<node gid="616" id="22" text="," label="," nosuffix="," isleaf="True"></node>
+<node gid="617" id="23" text="1990" label="1990" nosuffix="1990" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="ARG0" ></edge>
+<edge head="0" tail="3" label="ARG1" ></edge>
+<edge head="1" tail="2" label="name" ></edge>
+<edge head="2" tail="17" label="op1" ></edge>
+<edge head="3" tail="18" label="polarity" ></edge>
+<edge head="3" tail="19" label="quant" ></edge>
+<edge head="3" tail="4" label="mod" ></edge>
+<edge head="3" tail="5" label="ARG1" ></edge>
+<edge head="5" tail="6" label="mod" ></edge>
+<edge head="5" tail="7" label="time" ></edge>
+<edge head="7" tail="8" label="ARG1" ></edge>
+<edge head="7" tail="10" label="prep-instead-of" ></edge>
+<edge head="8" tail="9" label="name" ></edge>
+<edge head="9" tail="20" label="op1" ></edge>
+<edge head="9" tail="21" label="op2" ></edge>
+<edge head="9" tail="22" label="op3" ></edge>
+<edge head="9" tail="23" label="op4" ></edge>
+<edge head="10" tail="11" label="ARG1" ></edge>
+<edge head="11" tail="12" label="time" ></edge>
+<edge head="11" tail="14" label="mod" ></edge>
+<edge head="11" tail="15" label="quant" ></edge>
+<edge head="12" tail="13" label="null_edge" ></edge>
+<edge head="15" tail="16" label="unit" ></edge>
+</edges>
+</graph>
+<graph id="24">
+<nodes>
+<node gid="618" id="0" text="say-01" label="x3" nosuffix="say" isleaf="False"></node>
+<node gid="619" id="1" text="have-org-role-91" label="x2" nosuffix="have" isleaf="False"></node>
+<node gid="620" id="2" text="president" label="p" nosuffix="president" isleaf="True"></node>
+<node gid="621" id="3" text="hinge" label="x10" nosuffix="hinge" isleaf="False"></node>
+<node gid="622" id="4" text="support-01" label="x6" nosuffix="support" isleaf="False"></node>
+<node gid="623" id="5" text="have-org-role-91" label="x5" nosuffix="have" isleaf="False"></node>
+<node gid="624" id="6" text="president" label="p1" nosuffix="president" isleaf="True"></node>
+<node gid="625" id="7" text="increase-01" label="x9" nosuffix="increase" isleaf="True"></node>
+<node gid="626" id="8" text="provision" label="x13" nosuffix="provision" isleaf="False"></node>
+<node gid="627" id="9" text="allow-01" label="x14" nosuffix="allow" isleaf="False"></node>
+<node gid="628" id="10" text="pay-01" label="x17" nosuffix="pay" isleaf="False"></node>
+<node gid="629" id="11" text="employ-01" label="x15" nosuffix="employ" isleaf="True"></node>
+<node gid="630" id="12" text="person" label="x19" nosuffix="person" isleaf="False"></node>
+<node gid="631" id="13" text="work-01" label="w" nosuffix="work" isleaf="True"></node>
+<node gid="632" id="14" text="new" label="x18" nosuffix="new" isleaf="True"></node>
+<node gid="633" id="15" text="wage-01" label="x22" nosuffix="wage" isleaf="True"></node>
+<node gid="634" id="16" text="experience-01" label="x30" nosuffix="experience" isleaf="False"></node>
+<node gid="635" id="17" text="temporal-quantity" label="x25" nosuffix="temporal" isleaf="False"></node>
+<node gid="636" id="18" text="month" label="m" nosuffix="month" isleaf="True"></node>
+<node gid="637" id="19" text="any" label="x28" nosuffix="any" isleaf="True"></node>
+<node gid="638" id="20" text="past" label="x29" nosuffix="past" isleaf="True"></node>
+<node gid="639" id="21" text="have-03" label="xap0" nosuffix="have" isleaf="False"></node>
+<node gid="640" id="22" text="employ-01" label="x33" nosuffix="employ" isleaf="False"></node>
+<node gid="641" id="23" text="another" label="x32" nosuffix="another" isleaf="True"></node>
+<node gid="642" id="24" text="6" label="6" nosuffix="6" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="ARG0" ></edge>
+<edge head="0" tail="3" label="ARG1" ></edge>
+<edge head="1" tail="2" label="ARG2" ></edge>
+<edge head="3" tail="4" label="ARG0" ></edge>
+<edge head="3" tail="8" label="ARG1" ></edge>
+<edge head="4" tail="5" label="ARG1" ></edge>
+<edge head="4" tail="7" label="ARG0" ></edge>
+<edge head="5" tail="6" label="ARG2" ></edge>
+<edge head="8" tail="9" label="ARG0-of" ></edge>
+<edge head="9" tail="10" label="ARG1" ></edge>
+<edge head="10" tail="11" label="ARG0" ></edge>
+<edge head="10" tail="12" label="ARG3" ></edge>
+<edge head="10" tail="15" label="ARG1" ></edge>
+<edge head="10" tail="16" label="ARG2" ></edge>
+<edge head="10" tail="21" label="ARG3" ></edge>
+<edge head="12" tail="13" label="ARG0-of" ></edge>
+<edge head="12" tail="14" label="mod" ></edge>
+<edge head="16" tail="17" label="quant" ></edge>
+<edge head="16" tail="19" label="mod" ></edge>
+<edge head="16" tail="20" label="time" ></edge>
+<edge head="17" tail="18" label="unit" ></edge>
+<edge head="17" tail="24" label="quant" ></edge>
+<edge head="21" tail="22" label="ARG0-of" ></edge>
+<edge head="22" tail="23" label="mod" ></edge>
+</edges>
+</graph>
+<graph id="25">
+<nodes>
+<node gid="643" id="0" text="temporal-quantity" label="x14" nosuffix="temporal" isleaf="False"></node>
+<node gid="644" id="1" text="hour" label="h" nosuffix="hour" isleaf="True"></node>
+<node gid="645" id="2" text="plan-01" label="x7" nosuffix="plan" isleaf="False"></node>
+<node gid="646" id="3" text="person" label="x6" nosuffix="person" isleaf="False"></node>
+<node gid="647" id="4" text="name" label="n" nosuffix="name" isleaf="False"></node>
+<node gid="648" id="5" text="monetary-quantity" label="x12" nosuffix="monetary" isleaf="False"></node>
+<node gid="649" id="6" text="yuan" label="y" nosuffix="yuan" isleaf="True"></node>
+<node gid="650" id="7" text="after" label="x15" nosuffix="after" isleaf="False"></node>
+<node gid="651" id="8" text="increase-01" label="x18" nosuffix="increase" isleaf="False"></node>
+<node gid="652" id="9" text="wage-01" label="x22" nosuffix="wage" isleaf="False"></node>
+<node gid="653" id="10" text="minimum" label="x21" nosuffix="minimum" isleaf="True"></node>
+<node gid="654" id="11" text="Bush" label="Bush" nosuffix="Bush" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="unit" ></edge>
+<edge head="0" tail="2" label="time" ></edge>
+<edge head="0" tail="5" label="quant" ></edge>
+<edge head="0" tail="7" label="time" ></edge>
+<edge head="2" tail="3" label="ARG0" ></edge>
+<edge head="3" tail="4" label="name" ></edge>
+<edge head="4" tail="11" label="op1" ></edge>
+<edge head="5" tail="6" label="unit" ></edge>
+<edge head="7" tail="8" label="op1" ></edge>
+<edge head="8" tail="9" label="ARG1" ></edge>
+<edge head="9" tail="10" label="mod" ></edge>
+</edges>
+</graph>
+<graph id="26">
+<nodes>
+<node gid="655" id="0" text="rise-01" label="x3" nosuffix="rise" isleaf="False"></node>
+<node gid="656" id="1" text="temporal-quantity" label="x8" nosuffix="temporal" isleaf="False"></node>
+<node gid="657" id="2" text="hour" label="h" nosuffix="hour" isleaf="True"></node>
+<node gid="658" id="3" text="date-entity" label="x10" nosuffix="date" isleaf="False"></node>
+<node gid="659" id="4" text="1992" label="1992" nosuffix="1992" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="ARG1" ></edge>
+<edge head="0" tail="3" label="null_edge" ></edge>
+<edge head="1" tail="2" label="unit" ></edge>
+<edge head="3" tail="4" label="year" ></edge>
+</edges>
+</graph>
+<graph id="27">
+<nodes>
+<node gid="660" id="0" text="set-03" label="x4" nosuffix="set" isleaf="False"></node>
+<node gid="661" id="1" text="bill" label="x3" nosuffix="bill" isleaf="False"></node>
+<node gid="662" id="2" text="organization" label="x2" nosuffix="organization" isleaf="False"></node>
+<node gid="663" id="3" text="name" label="n" nosuffix="name" isleaf="False"></node>
+<node gid="664" id="4" text="wage-01" label="x6" nosuffix="wage" isleaf="False"></node>
+<node gid="665" id="5" text="hire-01" label="x9" nosuffix="hire" isleaf="False"></node>
+<node gid="666" id="6" text="new" label="x8" nosuffix="new" isleaf="True"></node>
+<node gid="667" id="7" text="provide-01" label="x11" nosuffix="provide" isleaf="False"></node>
+<node gid="668" id="8" text="job" label="x25" nosuffix="job" isleaf="False"></node>
+<node gid="669" id="9" text="job" label="x14" nosuffix="job" isleaf="False"></node>
+<node gid="670" id="10" text="_" label="x15" nosuffix="_" isleaf="False"></node>
+<node gid="671" id="11" text="monetary-quantity" label="x18" nosuffix="monetary" isleaf="False"></node>
+<node gid="672" id="12" text="yuan" label="y1" nosuffix="yuan" isleaf="True"></node>
+<node gid="673" id="13" text="name" label="x20" nosuffix="name" isleaf="False"></node>
+<node gid="674" id="14" text="effective" label="x19" nosuffix="effective" isleaf="True"></node>
+<node gid="675" id="15" text="_" label="x26" nosuffix="_" isleaf="False"></node>
+<node gid="676" id="16" text="monetary-quantity" label="x29" nosuffix="monetary" isleaf="False"></node>
+<node gid="677" id="17" text="yuan" label="y" nosuffix="yuan" isleaf="True"></node>
+<node gid="678" id="18" text="name" label="x31" nosuffix="name" isleaf="False"></node>
+<node gid="679" id="19" text="effective" label="x30" nosuffix="effective" isleaf="True"></node>
+<node gid="680" id="20" text="House-passed" label="House-passed" nosuffix="House" isleaf="True"></node>
+<node gid="681" id="21" text="Oct." label="Oct." nosuffix="Oct." isleaf="True"></node>
+<node gid="682" id="22" text="1" label="1" nosuffix="1" isleaf="True"></node>
+<node gid="683" id="23" text="Oct." label="Oct." nosuffix="Oct." isleaf="True"></node>
+<node gid="684" id="24" text="1" label="1" nosuffix="1" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="ARG0" ></edge>
+<edge head="0" tail="4" label="ARG1" ></edge>
+<edge head="1" tail="2" label="mod" ></edge>
+<edge head="2" tail="3" label="name" ></edge>
+<edge head="3" tail="20" label="op1" ></edge>
+<edge head="4" tail="5" label="ARG1" ></edge>
+<edge head="5" tail="6" label="mod" ></edge>
+<edge head="5" tail="7" label="ARG1-of" ></edge>
+<edge head="7" tail="8" label="ARG1" ></edge>
+<edge head="8" tail="9" label="domain" ></edge>
+<edge head="8" tail="15" label="ARG1-of" ></edge>
+<edge head="9" tail="10" label="ARG1-of" ></edge>
+<edge head="10" tail="11" label="quant" ></edge>
+<edge head="10" tail="13" label="name" ></edge>
+<edge head="11" tail="12" label="unit" ></edge>
+<edge head="13" tail="21" label="op1" ></edge>
+<edge head="13" tail="22" label="op2" ></edge>
+<edge head="13" tail="14" label="mod" ></edge>
+<edge head="15" tail="16" label="quant" ></edge>
+<edge head="15" tail="18" label="name" ></edge>
+<edge head="16" tail="17" label="unit" ></edge>
+<edge head="18" tail="23" label="op1" ></edge>
+<edge head="18" tail="24" label="op2" ></edge>
+<edge head="18" tail="19" label="mod" ></edge>
+</edges>
+</graph>
+<graph id="28">
+<nodes>
+<node gid="685" id="0" text="take-01" label="x9" nosuffix="take" isleaf="False"></node>
+<node gid="686" id="1" text="increase-01" label="x4" nosuffix="increase" isleaf="False"></node>
+<node gid="687" id="2" text="subsequent" label="x3" nosuffix="subsequent" isleaf="True"></node>
+<node gid="688" id="3" text="wage-01" label="x8" nosuffix="wage" isleaf="False"></node>
+<node gid="689" id="4" text="minimum" label="x7" nosuffix="minimum" isleaf="True"></node>
+<node gid="690" id="5" text="effect-01" label="x10" nosuffix="effect" isleaf="False"></node>
+<node gid="691" id="6" text="rise-01" label="x14" nosuffix="rise" isleaf="False"></node>
+<node gid="692" id="7" text="percentage-entity" label="x20" nosuffix="percentage" isleaf="False"></node>
+<node gid="693" id="8" text="minimum" label="x23" nosuffix="minimum" isleaf="True"></node>
+<node gid="694" id="9" text="-" label="-" nosuffix="" isleaf="True"></node>
+<node gid="695" id="10" text="85" label="85" nosuffix="85" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="ARG0" ></edge>
+<edge head="0" tail="5" label="ARG1" ></edge>
+<edge head="1" tail="9" label="polarity" ></edge>
+<edge head="1" tail="2" label="ARG1-of" ></edge>
+<edge head="1" tail="3" label="ARG1" ></edge>
+<edge head="3" tail="4" label="mod" ></edge>
+<edge head="5" tail="6" label="ARG1" ></edge>
+<edge head="6" tail="7" label="ARG2" ></edge>
+<edge head="7" tail="10" label="value" ></edge>
+<edge head="7" tail="8" label="mod" ></edge>
+</edges>
+</graph>
+<graph id="29">
+<nodes>
+<node gid="696" id="0" text="expire" label="x8" nosuffix="expire" isleaf="False"></node>
+<node gid="697" id="1" text="provision" label="x2" nosuffix="provision" isleaf="False"></node>
+<node gid="698" id="2" text="allow-01" label="x3" nosuffix="allow" isleaf="False"></node>
+<node gid="699" id="3" text="wage-01" label="x6" nosuffix="wage" isleaf="False"></node>
+<node gid="700" id="4" text="new-hire" label="x5" nosuffix="new" isleaf="True"></node>
+<node gid="701" id="5" text="date-entity" label="x10" nosuffix="date" isleaf="False"></node>
+<node gid="702" id="6" text="1992" label="1992" nosuffix="1992" isleaf="True"></node>
+</nodes>
+<edges>
+<edge head="0" tail="1" label="ARG0" ></edge>
+<edge head="0" tail="5" label="time" ></edge>
+<edge head="1" tail="2" label="ARG0-of" ></edge>
+<edge head="2" tail="3" label="ARG1" ></edge>
+<edge head="3" tail="4" label="mod" ></edge>
+<edge head="5" tail="6" label="year" ></edge>
+</edges>
+</graph>
+</amr>
