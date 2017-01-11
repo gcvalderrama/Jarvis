@@ -6,8 +6,9 @@ import xlsxwriter
 
 ROUGE = './RELEASE-1.5.5/ROUGE-1.5.5.pl'
 DATA_PATH = './RELEASE-1.5.5/data'
-#write_excel = True
-#workbook = xlsxwriter.Workbook('rouge_test.xlsx')
+write_excel = True
+workbook = xlsxwriter.Workbook('rouge_test.xlsx')
+
 
 def excel_init(name):
     # Create an new Excel file and add a worksheet.
@@ -118,14 +119,16 @@ def rouge_score_files(summaries_path, text):
                 excel_add_value(row, col, rouge_value, excel)
             print(text, score)
 
+
 def rouge_v2(templateDir, targetDir, excelName):
-
     row = 0
-    #excel = excel_init(excelName)
-    #
-    # excel_add_value(0, 0, 'Persona', excel)
-    #excel_add_value(0, 1, 'Documento', excel)
-
+    excel = excel_init(excelName)
+    excel_add_value(0, 0, 'Documento', excel)
+    excel_add_value(0, 1, 'ROUGE-2', excel)
+    excel_add_value(0, 2, 'ROUGE-L', excel)
+    excel_add_value(0, 3, 'ROUGE-1', excel)
+    excel_add_value(0, 4, 'ROUGE-SU4', excel)
+    excel_add_value(0, 5, 'ROUGE-3', excel)
     for filename in glob.iglob(templateDir, recursive=True):
         name = os.path.basename(os.path.normpath(filename))
         with open(filename, 'r') as file:
@@ -133,7 +136,15 @@ def rouge_v2(templateDir, targetDir, excelName):
         with open(targetDir + name, 'r') as file:
             target_content = file.read()
         score = pythonrouge.pythonrouge(template_content, target_content, ROUGE, DATA_PATH)
-        print(score)
+
+        row += 1
+        col = 0
+        model_name = os.path.basename(os.path.normpath(filename))
+        excel_add_value(row, 0, model_name, excel)
+        print(model_name)
+        for rouge_key, rouge_value in score.items():
+            col += 1
+            excel_add_value(row, col, rouge_value, excel)
 
 
 
@@ -168,8 +179,11 @@ def rouge_files_test():
 
 # split_summaries()
 # lemmatizing_files()
-write_excel = False
+write_excel = True
 
-rouge_v2('D:/Tesis2016/Jarvis/Lincoln/LAB/ManualSummaries/*.txt', 'D:/Tesis2016/Jarvis/Lincoln/LAB/RSTSummaries/', 'Manual')
-
-#if write_excel: workbook.close()
+rouge_v2('../LAB/ManualSummaries/*.txt', '../LAB/RSTSummaries/', 'RST Rouge')
+rouge_v2('../LAB/ManualSummaries/*.txt', '../LAB/ConceptualSummaries/', 'ConceptualSummariesNer')
+rouge_v2('../LAB/ManualSummaries/*.txt', '../LAB/ConceptualSummariesClean/', 'ConceptualSummaries')
+rouge_v2('../LAB/ManualSummaries/*.txt', '../LAB/AMRRSTSummaries/', 'AMRRST')
+if write_excel:
+    workbook.close()
