@@ -202,7 +202,7 @@ namespace JarvisSummarization
 
 
             var AMRRSTInputDir = @"D:\Tesis2016\Jarvis\Lincoln\05AMRParsing\Output2";
-            var AMRRSTOutputDir = @"D:\Tesis2016\Jarvis\Lincoln\LAB\AMRRSTSummaries";
+            var AMRRSTOutputDir = @"D:\Tesis2016\Jarvis\Lincoln\LAB\AMRRSTSummaries50";
             ClearDirectory(AMRRSTOutputDir);
             ConceptualRSTSummary(ManualSummaryDir, AMRRSTInputDir, AMRRSTOutputDir); 
 
