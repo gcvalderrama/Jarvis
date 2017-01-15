@@ -10,7 +10,7 @@ namespace JarvisSummarization.PageRank
     {
         public PRKnowledgeGraph graph;
 
-        public double damping = 0.95f;
+        public double damping = 0.55f;
         public  int nIterations = 30;
 
         public  List<double> randomSurfing;
