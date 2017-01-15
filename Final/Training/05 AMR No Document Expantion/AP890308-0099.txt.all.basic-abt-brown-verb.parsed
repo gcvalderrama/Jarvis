@@ -1,0 +1,535 @@
+# ::id 1
+# ::snt A partial solar eclipse visible across western North America bored scientists but thrilled crowds that were able to see it despite clouds covering parts of the region
+(x12 / contrast-01
+	:ARG1 (x10 / bore
+		:ARG1 (x4 / eclipse-01
+			:mod (x3 / solar
+				:mod (x2 / partial))
+			:mod (x5 / visible
+				:location (x6 / across
+					:location (x9 / country
+						:name (n / name
+							:op1 "America")
+						:mod (x7 / world-region
+							:name (n1 / name
+								:op1 "western"))
+						:null_edge (x8 / null_tag)))))
+		:ARG1 (x11 / scientist)
+		:ARG1 (xap0 / and
+			:op2 (x13 / thrill-01
+				:ARG1 (x14 / crowd
+					:ARG0-of (x17 / possible
+						:domain (x19 / see-01
+							:ARG1 (x20 / it)
+							:ARG1 (x22 / cloud
+								:ARG0-of (x23 / cover-01
+									:ARG1 (x24 / part
+										:part-of (x27 / region)))))))))))
+
+# ::id 2
+# ::snt " It's fabulous to know this is actually taking place
+(x4 / fabulous
+	:domain (x6 / know-01
+		:ARG1 (x10 / take-01
+			:ARG0 (x7 / this)
+			:mod (x9 / actual))))
+
+# ::id 3
+# ::snt It's very fascinating, " said Edie Lurie, an employee at the California Institute of Technology in Pasadena, where dozens used solar telescopes to watch the moon eclipse 37 percent of the sun at 9:50 a.m. PST Tuesday
+(x7 / say-01
+	:ARG1 (x4 / fascinate-01
+		:degree (x3 / very))
+	:ARG0 (x8 / newspaper
+		:name (n / name
+			:op1 "Edie"
+			:op2 "Lurie")
+		:ARG0-of (x12 / person
+			:ARG1-of (e / employ-01)
+			:location (x15 / government-organization
+				:name (n1 / name
+					:op1 "California"
+					:op2 "Institute"
+					:op3 "of"
+					:op4 "Technology")
+				:location (x20 / country
+					:name (n2 / name
+						:op1 "Pasadena")
+					:ARG1-of (x24 / use-01
+						:ARG2 (x28 / watch-01
+							:ARG1 (x26 / telescope
+								:mod (x25 / solar))
+							:ARG1 (x30 / moon)
+							:ARG1 (x31 / eclipse-01
+								:ARG1 x26
+								:ARG1 (x33 / percentage-entity
+									:value 37
+									:poss (x36 / sun))))
+						:time (xap0 / date-entity
+							:ARG2-of (x40 / include-91)
+							:ARG0-of (xap1 / date-entity
+								:weekday (x41 / tuesday)))))))))
+
+# ::id 4
+# ::snt As the moon passed between the Earth and sun to cause the partial eclipse, it was possible to see mountains on the edge of the moon silhouetted against the sun
+(x18 / possible
+	:domain (x20 / see-01
+		:ARG1 (x21 / mountain)
+		:ARG1 (x24 / edge
+			:location (x27 / moon
+				:ARG1-of (x28 / silhouette
+					:prep-against (x31 / sun)))))
+	:domain (xap0 / and
+		:op3 (x3 / moon)
+		:ARG0 (x4 / pass-01
+			:ARG1 (x8 / and
+				:op1 (x7 / planet
+					:name (n / name
+						:op1 "Earth"))
+				:op2 (x9 / sun
+					:ARG0-of (x11 / cause-01
+						:ARG1 (x14 / eclipse-01
+							:mod (x13 / partial))))))))
+
+# ::id 5
+# ::snt Also visible were gas jets on the sun's surface and a giant group of sunspots that on Monday and Tuesday produced major solar flares _ eruptions of heat and radiation _ including the largest since 1984
+(x2 / visible
+	:mod (x1 / also)
+	:domain (x11 / and
+		:op1 (x5 / jet
+			:mod (x4 / gas)
+			:location (x10 / surface
+				:poss (x8 / sun)))
+		:op2 (x14 / group
+			:mod (x13 / giant)
+			:ARG0-of (x22 / produce-01
+				:ARG1 (x20 / and
+					:op1 (x16 / sunspot)
+					:op2 (xap0 / date-entity
+						:weekday (x21 / tuesday))
+					:op1 (xap1 / date-entity
+						:weekday (x19 / monday)))
+				:ARG1 (x25 / flare
+					:mod (x23 / major)
+					:mod (x24 / solar)
+					:ARG1-of (x26 / _
+						:ARG1 (x27 / eruption
+							:ARG1 (x30 / and
+								:op1 (x29 / heat)
+								:op2 (x31 / radiation)
+								:op2 (x32 / _
+									:ARG2-of (x33 / include-91
+										:null_edge (x35 / large
+											:degree (m / most)
+											:time (x36 / since
+												:op1 (x37 / date-entity
+													:year 1984)))))))))))))
+
+# ::id 6
+# ::snt Clouds over downtown Salt Lake City dashed Hansen Planetarium's plans to set up telescopes to watch the moon block 36 percent of the sun at 11:10 a.m. MST
+(x7 / dash
+	:ARG0 (x1 / cloud
+		:location (x6 / city
+			:null_edge (x4 / country
+				:name (n / name
+					:op1 "Salt")
+				:mod (x3 / downtown))
+			:null_edge (x5 / country
+				:name (n1 / name
+					:op1 "Lake"))))
+	:ARG1 (x11 / plan-01
+		:name (x8 / name
+			:op1 "Hansen"
+			:op2 "Planetarium")
+		:ARG1 (x13 / set-06
+			:ARG0 x8
+			:ARG1 (x15 / telescope
+				:purpose (x17 / watch-01
+					:ARG1 (x20 / block
+						:ARG1 (x19 / moon))
+					:ARG1 (x22 / percentage-entity
+						:value 36
+						:poss (x25 / sun))
+					:null_edge (x27 / include-91))))))
+
+# ::id 7
+# ::snt " It's a bummer, but that's the way it goes, " planetarium spokesman Patrick Wiggins said
+(x20 / say-01
+	:ARG1 (x7 / contrast-01)
+	:ARG1 (x13 / go-06
+		:ARG1 (x5 / bummer)
+		:ARG1 (x8 / that))
+	:ARG0 (x18 / newspaper
+		:name (n / name
+			:op1 "Patrick"
+			:op2 "Wiggins")
+		:ARG0-of (x17 / have-org-role-91
+			:ARG2 (s / spokesman)
+			:ARG1 (x16 / planetarium))))
+
+# ::id 8
+# ::snt The eclipse was visible to at least some extent west of a diagonal line stretching roughly from Mazatlan, Mexico, northeast to Dallas and Chicago
+(x4 / visible
+	:domain (x2 / eclipse-01)
+	:degree (x9 / extent
+		:mod (x8 / some)
+		:ARG1-of (x15 / stretch-01
+			:ARG1 (x10 / west)
+			:ARG1 (x14 / line
+				:mod (x13 / diagonal))
+			:ARG1 (x22 / northeast
+				:source (x18 / country
+					:name (n / name
+						:op1 "Mazatlan")
+					:location (x20 / country
+						:name (n1 / name
+							:op1 "Mexico"))
+					:ARG0-of (xap0 / mean-01
+						:ARG1 (x16 / roughly)
+						:ARG1 (x25 / and
+							:op1 (x24 / country
+								:name (n2 / name
+									:op1 "Dallas"))
+							:op2 (x26 / country
+								:name (n3 / name
+									:op1 "Chicago")))))))))
+
+# ::id 9
+# ::snt Views were best farther west and north
+(x6 / and
+	:op1 (x5 / world-region
+		:name (n / name
+			:op1 "west")
+		:mod (x3 / good
+			:degree (m / most)))
+	:op2 (x7 / north
+		:null_edge x6))
+
+# ::id 10
+# ::snt In sunny Los Angeles, 600 schoolchildren and at least 400 other people watched the eclipse at Griffith Observatory through telescopes and other devices equipped with filters to prevent eye injury
+(x14 / watch-01
+	:location (x3 / organization
+		:name (n / name
+			:op1 "Los"
+			:op2 "Angeles")
+		:mod (x2 / sunny))
+	:ARG1 (x8 / and
+		:op1 (x7 / schoolchildren
+			:quant 600
+			:mod (x12 / other
+				:quant 400)))
+	:ARG1 (x16 / eclipse-01)
+	:location (x18 / government-organization
+		:name (n1 / name
+			:op1 "Griffith"
+			:op2 "Observatory"))
+	:ARG1 (x22 / and
+		:op1 (x21 / telescope)
+		:op1 (x24 / device
+			:mod (x23 / other)
+			:ARG1-of (x25 / equip-01
+				:ARG2 (x27 / filter-02)
+				:purpose (x29 / prevent-01
+					:ARG1 (x31 / injure-01
+						:mod (x30 / eye)))))))
+
+# ::id 11
+# ::snt " There was a childlike delight with the wonder of nature, " observatory Director Ed Krupp said
+(x18 / say-01
+	:ARG1 (x6 / delight
+		:mod (x5 / childlike)
+		:ARG1 (x9 / wonder-01
+			:ARG1 (x11 / nature)))
+	:ARG0 (x16 / newspaper
+		:name (n / name
+			:op1 "Ed"
+			:op2 "Krupp")
+		:ARG0-of (x15 / have-org-role-91
+			:ARG2 (d / director)
+			:ARG1 (x14 / observatory))))
+
+# ::id 12
+# ::snt Most astronomers were unimpressed, saying they were waiting for a total solar eclipse that will sweep across Hawaii, the Pacific Ocean, lower Baja California in Mexico, Central America, Colombia and Brazil on July 11, 1991
+(x4 / unimpressed
+	:ARG1 (x2 / astronomer
+		:quant (x1 / most))
+	:ARG1 (x6 / say-01
+		:ARG1 (x9 / wait-01
+			:ARG2 (x14 / eclipse-01
+				:ARG1 (x17 / sweep-01
+					:ARG2-of (x12 / total-01)
+					:location (x18 / across
+						:op1 (x19 / name
+							:op1 "Hawaii"
+							:location (x23 / country
+								:name (n3 / name
+									:op1 "Ocean"))
+							:part-of (x27 / state
+								:name (n4 / name
+									:op1 "California")
+								:mod (x25 / low)
+								:mod (x26 / country
+									:name (n5 / name
+										:op1 "Baja")))))
+					:ARG2 (x35 / and
+						:op1 (x29 / country
+							:name (n / name
+								:op1 "Mexico"))
+						:op1 (x32 / country
+							:name (n1 / name
+								:op1 "America"))
+						:op2 (x34 / country
+							:name (n2 / name
+								:op1 "Colombia"))
+						:time (x38 / date-entity
+							:year 1991)))))))
+
+# ::id 13
+# ::snt " You can see a partial eclipse every three or four years, " said Caltech astrophysicist Ken Libbrecht
+(x15 / say-01
+	:ARG1 (x3 / possible
+		:domain (x4 / see-01
+			:ARG0 (x2 / you)
+			:ARG1 (x7 / eclipse-01
+				:ARG1 (x6 / partial))
+			:ARG1 (x10 / or
+				:op1 (x8 / every)
+				:op2 (x12 / temporal-quantity
+					:unit (y / year)
+					:quant 3
+					:quant 4))))
+	:ARG0 (x18 / newspaper
+		:name (n / name
+			:op1 "Ken"
+			:op2 "Libbrecht")
+		:ARG0-of (x17 / astrophysicist
+			:ARG1 (x16 / organization
+				:name (n1 / name
+					:op1 "Caltech")))))
+
+# ::id 14
+# ::snt " They 're not that exciting
+(x6 / excite-01
+	:domain (x2 / they)
+	:degree (x5 / that))
+
+# ::id 15
+# ::snt A total eclipse is exciting .
+(x5 / excite-01
+	:domain (x3 / eclipse-01
+		:ARG0 (x2 / company
+			:name (n / name
+				:op1 "total"))))
+
+# ::id 16
+# ::snt In Tucson, dozens of citizens peered through telescopes on the University of Arizona mall to see the moon eclipse 23 percent of the sun at 10:55 a.m. MST, but 90 solar scientists stayed inside, attending a five-day conference titled " The Sun in Time .
+(x31 / contrast-01
+	:ARG1 (x7 / peer
+		:location (x2 / country
+			:name (n / name
+				:op1 "Tucson"))
+		:ARG0 (x6 / citizen)
+		:instrument (x9 / telescope
+			:ARG1 (x15 / mall
+				:name (x12 / name
+					:op1 "University"
+					:op2 "of"
+					:op3 "Arizona")))
+		:purpose (x17 / see-01
+			:ARG1 (x20 / eclipse-01
+				:op3 (x19 / moon)
+				:ARG1 (x22 / percentage-entity
+					:value 23)
+				:time (x29 / date-entity
+					:null_edge (x27 / include-91)))
+			:prep-in (x25 / sun)))
+	:ARG2 (x35 / stay-01
+		:ARG1 (x34 / scientist
+			:quant 90
+			:mod (x33 / solar))
+		:location (x36 / inside)
+		:ARG1 (x38 / attend-01
+			:ARG1 (x41 / conference
+				:ARG1-of (x42 / title-01
+					:ARG1 (x45 / sun
+						:null_edge (x44 / null_tag)
+						:location (x47 / name
+							:op1 "Time")))))))
+
+# ::id 17
+# ::snt " That's partly my fault, " said conference co-organizer Mark Giampapa, an astronomer at the National Solar Observatory
+(x9 / say-01
+	:ARG1 (x6 / fault-01
+		:domain (x2 / that)
+		:mod (x4 / part))
+	:ARG0 (x13 / person
+		:name (n / name
+			:op1 "Giampapa")
+		:null_edge (x11 / co-organizer
+			:ARG1 (x10 / conference))
+		:null_edge (x12 / null_tag)
+		:null_edge (x16 / astronomer
+			:location (x21 / observatory
+				:null_edge (x20 / solar
+					:mod (x19 / nation))))))
+
+# ::id 18
+# ::snt " I should have listed it in the program : ` Partial eclipse, presented by God . "
+(x3 / recommend-01
+	:ARG1 (x5 / list-01
+		:ARG0 (x2 / i)
+		:ARG1 (x6 / it)
+		:ARG2 (x9 / program)
+		:ARG1 (x13 / eclipse-01
+			:mod (x12 / partial)
+			:ARG1-of (x15 / present-01
+				:ARG0 (x17 / person
+					:name (n / name
+						:op1 "God"))))))
+
+# ::id 19
+# ::snt In Anchorage, Alaska, where the moon obscured 80 percent of the sun at 9:13 a.m. AST, the eclipse was watched by 26 students from Bartlett High School, several people wearing welders helmets as filters and Providence Hospital workers who ended a staff meeting early to see the spectacle
+(x23 / watch-01
+	:location (x2 / country
+		:name (n / name
+			:op1 "Anchorage")
+		:location-of (x9 / obscure
+			:ARG0 (x8 / moon)
+			:ARG2 (x11 / percentage-entity
+				:value 80
+				:poss (x14 / sun))
+			:location (x18 / organization
+				:name (n2 / name
+					:op1 "AST")
+				:null_edge (x16 / include-91))))
+	:ARG1 (x21 / eclipse-01)
+	:ARG0 (x26 / person
+		:ARG0-of (s / study-01)
+		:quant 26
+		:source (x29 / government-organization
+			:name (n1 / name
+				:op1 "High"
+				:op2 "School")
+			:mod (x28 / organization
+				:name (n3 / name
+					:op1 "Bartlett"))))
+	:null_edge (x34 / wear-01
+		:ARG1 (x32 / several)
+		:ARG1 (x36 / helmet
+			:mod (x35 / welder))
+		:ARG2 (x39 / and
+			:op1 (x38 / filter-02)
+			:op2 (x42 / person
+				:ARG0-of (w / work-01)
+				:mod (x41 / organization
+					:name (n4 / name
+						:op1 "Hospital")
+					:mod (x40 / organization
+						:name (n5 / name
+							:op1 "Providence")))
+				:ARG0-of (x44 / end-01
+					:ARG1 (x47 / meet-03
+						:topic (x46 / person
+							:ARG2-of (s1 / staff-01)))
+					:time (x48 / early)
+					:purpose (x50 / see-01
+						:ARG1 (x52 / spectacle)))))))
+
+# ::id 20
+# ::snt Clouds parted long enough to allow a glimpse of the eclipse for 100 people outside the Oregon Museum of Science and Industry in often rainy Portland
+(x2 / part-01
+	:ARG0 (x1 / cloud)
+	:duration (x3 / long
+		:degree (x4 / enough
+			:op1 (x6 / allow-01
+				:ARG1 (x8 / glimpse)
+				:ARG1 (x11 / eclipse-01
+					:null_edge (x15 / outside
+						:null_edge 100
+						:op1 (x18 / organization
+							:name (n / name
+								:op1 "Museum")
+							:null_edge (x17 / organization
+								:name (n1 / name
+									:op1 "Oregon"))
+							:null_edge (x21 / and
+								:null_edge (x20 / null_tag)
+								:op2 (x22 / industry))
+							:location (x26 / country
+								:name (n2 / name
+									:op1 "Portland")
+								:mod (x25 / rainy
+									:frequency (x24 / often))))))))))
+
+# ::id 21
+# ::snt " Typical Oregon astronomy, " said amateur astronomer Dan Dunn
+(x7 / say-01
+	:ARG1 (x4 / astronomy
+		:ARG1-of (x2 / typify-01))
+	:ARG0 (x11 / person
+		:name (n / name
+			:op1 "Dunn")
+		:null_edge (x8 / amateur)
+		:null_edge (x9 / astronomer)
+		:null_edge (x10 / null_tag)))
+
+# ::id 22
+# ::snt " You always have to deal with the clouds .
+(x4 / have-03
+	:ARG0 (x2 / you)
+	:time (x3 / always)
+	:ARG1 (x6 / deal-01
+		:ARG0 x2
+		:ARG1 (x9 / cloud)))
+
+# ::id 23
+# ::snt Scientists had warned against staring at the sun directly or through inadequate filters, including smoked glass and photographic film or filters
+(x3 / warn-01
+	:ARG0 (x1 / have-org-role-91
+		:ARG2 (s / scientist))
+	:ARG1 (x5 / stare-01
+		:ARG1 (x8 / sun
+			:mod (x9 / direct)
+			:instrument (x13 / filter-02
+				:ARG1-of (x12 / adequate
+					:polarity -)
+				:ARG2-of (x15 / include-91
+					:ARG1 (x18 / and
+						:op1 (x17 / glass
+							:mod (x16 / smoked)
+							:mod (x21 / or
+								:op1 (x20 / film
+									:mod (x19 / photography))
+								:op2 (x22 / filter-02)))))))))
+
+# ::id 24
+# ::snt Alan MacRobert of Sky & Telescope magazine said 245 eye injuries were reported in the United States after an eclipse in 1970, but warnings about the danger reduced the number to three during a 1984 partial eclipse
+(x8 / say-01
+	:ARG0 (x1 / newspaper
+		:name (n / name
+			:op1 "Alan"
+			:op2 "MacRobert")
+		:ARG0-of (x7 / magazine
+			:name (x4 / name
+				:op1 "Sky"
+				:op2 "&"
+				:op3 "Telescope")))
+	:ARG1 (x13 / report-01
+		:ARG1 (x11 / injure-01
+			:quant 245
+			:mod (x10 / eye))
+		:location (x16 / country
+			:name (n1 / name
+				:op1 "United"
+				:op2 "States"))
+		:time (x18 / after)
+		:time (x22 / date-entity
+			:year 1970)
+		:null_edge (x29 / reduce-01
+			:ARG0 (x25 / warn-01
+				:quant (x26 / about))
+			:ARG1 (x31 / number)
+			:ARG2 (x33 / person
+				:op (t / three))
+			:ARG1 (x38 / eclipse-01
+				:mod (x37 / partial)))))
+

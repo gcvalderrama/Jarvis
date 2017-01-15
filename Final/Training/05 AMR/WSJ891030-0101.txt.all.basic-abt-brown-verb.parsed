@@ -1,0 +1,856 @@
+# ::id 1
+# ::snt Federal Reserve critics used to complain of " stop and go " monetary policies
+(x4 / use-01
+	:ARG0 (x3 / person
+		:ARG0-of (c / criticize-01)
+		:null_edge (x1 / null_tag)
+		:ARG1 (x2 / organization
+			:name (n / name
+				:op1 "Reserve")))
+	:ARG2 (x6 / complain-01
+		:ARG1 (x10 / and
+			:op1 (x9 / stop-01)
+			:op2 (x11 / go-01))
+		:ARG1 (x14 / policy
+			:mod (x13 / monetary))))
+
+# ::id 2
+# ::snt Federal Reserve critics claimed that the Fed would first give a green light to the economy by making credit readily available and then turn on the red and bring growth to a screeching halt
+(x4 / claim-01
+	:ARG0 (x3 / person
+		:ARG0-of (c / criticize-01)
+		:null_edge (x1 / null_tag)
+		:ARG1 (x2 / organization
+			:name (n / name
+				:op1 "Reserve")))
+	:ARG1 (x22 / and
+		:op1 (x10 / give-07
+			:ARG1 (x13 / light
+				:mod (x12 / green))
+			:ARG2 (x16 / economy)
+			:manner (x18 / make-01
+				:ARG1 (x21 / available
+					:domain (x19 / credit-02)
+					:time (x20 / ready)))
+			:ARG1 (x28 / and
+				:op1 (x24 / turn-14
+					:prep-on (x27 / red))
+				:op2 (x29 / bring-01
+					:ARG1 (x30 / grow-01)
+					:ARG2 (x34 / halt-01
+						:mod (x33 / screech)))))))
+
+# ::id 3
+# ::snt But under Alan Greenspan that has changed
+(x1 / contrast-01
+	:ARG2 (x7 / change-01
+		:ARG2 (x3 / name
+			:op1 "Alan"
+			:op2 "Greenspan")))
+
+# ::id 4
+# ::snt A supremely cautious man, the Fed chairman is forever blinking yellow
+(x12 / yellow
+	:domain (x8 / have-org-role-91
+		:ARG2 (c / chairman)
+		:ARG1 (x4 / man
+			:mod (x3 / cautious
+				:mod (x2 / supremely))))
+	:time (x10 / forever)
+	:mod (x11 / blinking))
+
+# ::id 5
+# ::snt Indeed, A supremely cautious man , the Fed chairman caution has become legendary within the government
+(x13 / become-01
+	:ARG2 (x6 / man
+		:mod (x1 / indeed)
+		:mod (x5 / cautious
+			:mod (x4 / supremely)))
+	:ARG1 (x11 / cautious
+		:ARG2 (x10 / chairman
+			:ARG1 x6))
+	:ARG2 (x14 / legendary)
+	:ARG2 (x17 / government-organization
+		:ARG0-of (g / govern-01)))
+
+# ::id 6
+# ::snt A supremely cautious man , the Fed chairman fusses endlessly over economic statistics, dissecting Federal Reserve critics in dozens of ways, probing for hours in search of potential problems
+(x9 / fuss-01
+	:ARG0 (x4 / man
+		:mod (x3 / cautious
+			:mod (x2 / supremely)))
+	:ARG0-of (x8 / have-org-role-91
+		:ARG2 (c / chairman))
+	:manner (x10 / endlessly)
+	:ARG0 (x13 / statistic
+		:mod (x12 / economy))
+	:ARG1 (x15 / dissect
+		:ARG0 x4
+		:ARG0 x8
+		:ARG1 (x18 / person
+			:ARG0-of (c1 / criticize-01)
+			:null_edge (x16 / null_tag)
+			:ARG1 (x17 / organization
+				:name (n / name
+					:op1 "Reserve")))
+		:ARG2 (x22 / way))
+	:ARG1 (x24 / probe-01
+		:ARG0 x4
+		:ARG0 x8
+		:ARG1 (x26 / temporal-quantity
+			:unit (h / hour))
+		:medium (x28 / search-01
+			:ARG1 (x31 / problem
+				:mod (x30 / potential)))))
+
+# ::id 7
+# ::snt After thoroughly digesting reams of information, A supremely cautious man , the Fed chairman often concludes that more data are needed, and when A supremely cautious man , the Fed chairman finally decides to act, A supremely cautious man , the Fed chairman movements sometimes seem excrutiatingly small
+(x24 / and
+	:op1 (x17 / conclude-01
+		:time (x1 / after
+			:op1 (x3 / digest
+				:manner (x2 / thorough)
+				:ARG1 (x6 / information
+					:quant (x4 / ream)
+					:part-of (x11 / man
+						:mod (x10 / cautious
+							:mod (x9 / supremely))))))
+		:ARG0 (x15 / have-org-role-91
+			:ARG2 (c / chairman))
+		:frequency (x16 / often)
+		:ARG1 (x22 / need-01
+			:ARG1 (x20 / data
+				:quant (x19 / more)))
+		:ARG0 (x49 / seem-01
+			:ARG1 (x51 / small
+				:condition (x35 / decide-01
+					:ARG0 (x29 / man
+						:mod (x28 / cautious
+							:mod (x27 / supremely)))
+					:ARG0 (x33 / have-org-role-91
+						:ARG2 (c1 / chairman))
+					:time (x34 / final)
+					:ARG1 (x37 / act-01
+						:ARG0 x29
+						:ARG0 x33))
+				:ARG0 (x47 / move-01
+					:mod (x46 / chairman
+						:ARG1 (x42 / man
+							:mod (x41 / cautious
+								:mod (x40 / supremely)))
+						:ARG1 (x45 / have-org-role-91
+							:ARG1 (g / government-organization
+								:name (n / name
+									:op1 "Fed")))))
+				:frequency (x48 / sometimes)))))
+
+# ::id 8
+# ::snt Such caution was evident after the recent Friday-the-13th stock market plunge
+(x4 / evident
+	:domain (x2 / cautious
+		:mod (x1 / such))
+	:time (x5 / after
+		:op1 (x11 / plunge
+			:time (x7 / recent)
+			:ARG1 (x10 / market
+				:mod (x9 / stock)))))
+
+# ::id 9
+# ::snt Some Bush administration officials urged Mr. Greenspan to make an immediate public announcement of Alan Greenspan plans to provide ample credit to the markets
+(x5 / urge-01
+	:ARG1 (x7 / person
+		:name (n / name
+			:op1 "Greenspan")
+		:null_edge (x6 / null_tag))
+	:ARG2 (x13 / announce-01
+		:time (x11 / immediate)
+		:mod (x12 / public)
+		:ARG0 (x17 / plan-01
+			:ARG0 (x15 / newspaper
+				:name (n1 / name
+					:op1 "Alan"
+					:op2 "Greenspan"))
+			:ARG1 (x19 / provide-01
+				:ARG0 x15
+				:ARG1 (x21 / credit
+					:ARG1-of (x20 / ample))
+				:ARG2 (x24 / market))))
+	:ARG0 (xap1 / person
+		:quant (x1 / some)
+		:ARG0-of (x4 / have-org-role-91
+			:ARG2 (o / official)
+			:ARG1 (xap0 / government-organization
+				:ARG0-of (x3 / administer-01
+					:mod (x2 / person
+						:name (n2 / name
+							:op1 "Bush")))))))
+
+# ::id 10
+# ::snt But Bush refused, claiming that Bush wanted to see what happened Monday morning before making any public statement
+(x1 / contrast-01
+	:ARG2 (x3 / refuse-01
+		:ARG0 (x2 / person
+			:name (n / name
+				:op1 "Bush"))
+		:ARG1 (x5 / claim-01
+			:ARG1 (x8 / want-01
+				:ARG0 (x7 / person
+					:name (n1 / name
+						:op1 "Bush"))
+				:ARG1 (x10 / see-01
+					:ARG0 x7
+					:ARG1 (x12 / happen-01
+						:time (x14 / morning
+							:time (xap0 / date-entity
+								:null_edge (x13 / null_tag)))
+						:time (x15 / before
+							:op1 (x19 / state-01
+								:mod (x17 / any)
+								:ARG0 (x18 / public)))))))))
+
+# ::id 11
+# ::snt 
+(x9 / prompt-02
+	:ARG0 (x4 / thing
+		:ARG1-of (d / decide-01)
+		:ARG0 (x2 / person
+			:name (n / name
+				:op1 "Greenspan")
+			:null_edge (x1 / null_tag))
+		:ARG1 (x6 / keep-04
+			:ARG1 (x7 / quiet)))
+	:mod (x8 / also)
+	:ARG1 (x11 / near-mutiny)
+	:time (x12 / within
+		:op1 (x16 / rank)))
+
+# ::id 12
+# ::snt A " senior Fed official " spoke on Saturday after the market swoon to both the Washington Post and the New York Times, saying the Fed was prepared to provide as much credit as the markets needed
+(x7 / speak-01
+	:time (x10 / after
+		:op1 (x13 / swoon
+			:mod (x12 / market)))
+	:ARG2 (x19 / and
+		:mod (x15 / both)
+		:op1 (x18 / post-01
+			:mod (x17 / government-organization
+				:name (n1 / name
+					:op1 "Washington")))
+		:op2 (x21 / newspaper
+			:name (n / name
+				:op1 "New"
+				:op2 "York"
+				:op3 "Times"))
+		:op1 (x25 / say-01
+			:ARG1 (x29 / prepare-02
+				:ARG1 (x27 / have-org-role-91
+					:ARG1 (g / government-organization
+						:name (n2 / name
+							:op1 "Fed")))
+				:ARG2 (x31 / provide-01
+					:ARG0 x27
+					:ARG1 (x34 / credit
+						:quant (x33 / much))
+					:time (x38 / need-01
+						:ARG0 (x37 / market))))))
+	:ARG0 (xap0 / person
+		:ARG0-of (x5 / have-org-role-91
+			:ARG2 (o / official)
+			:mod (x3 / senior)))
+	:time (xap1 / date-entity
+		:weekday (x9 / saturday)))
+
+# ::id 13
+# ::snt 
+(x7 / contrast-01
+	:ARG1 (x3 / anger-01
+		:ARG0 (x2 / state-01)
+		:ARG1 (x5 / person
+			:name (n / name
+				:op1 "Greenspan")
+			:ARG0-of (x4 / have-org-role-91
+				:ARG2 (c / chairman))))
+	:ARG2 (x11 / greet-01
+		:ARG1 (x9 / thing
+			:ARG1-of (s / state-01))
+		:ARG2 (x13 / applaud-01)
+		:ARG0 (x18 / and
+			:op2 (x21 / market
+				:mod (x20 / finance))
+			:op1 (xap0 / government-organization
+				:mod (x16 / person
+					:name (n1 / name
+						:op1 "Bush"))
+				:ARG0-of (x17 / administrate-01)))))
+
+# ::id 14
+# ::snt And, while the mutinous Fed member has n't gone public, some Fed governors, most notably Vice Chairman Manuel Johnson, are known to have disagreed with the chairman's decision to remain silent
+(x1 / and
+	:op2 (x25 / know-01
+		:ARG2 (x11 / public
+			:ARG0-of (x7 / have-org-role-91
+				:ARG2 (m / member)))
+		:ARG1 (x15 / have-org-role-91
+			:ARG2 (g / governor)
+			:quant (x13 / some)
+			:name (x21 / name
+				:op1 "Manuel"
+				:op2 "Johnson"
+				:mod (x18 / notably
+					:degree (x17 / most))
+				:mod (x19 / vice)
+				:ARG0-of (x20 / have-org-role-91
+					:ARG2 (c / chairman))))
+		:ARG1 (x28 / disagree-01
+			:ARG2 (x33 / decide-01
+				:ARG0 (x31 / have-org-role-91
+					:ARG2 (c1 / chairman))
+				:ARG1 (x35 / remain-01
+					:ARG3 (x36 / silent))))))
+
+# ::id 15
+# ::snt Ironically, the anonymous official's comments have earned some plaudits for Mr. Greenspan, who is mistakenly seen as the source
+(x9 / earn-01
+	:mod (x1 / ironically)
+	:ARG0 (x7 / thing
+		:ARG1-of (c / comment-02)
+		:ARG0 (xap0 / person
+			:mod (x4 / anonymous)
+			:ARG0-of (x5 / have-org-role-91
+				:ARG2 (o / official))))
+	:ARG1 (x11 / plaudit
+		:quant (x10 / some))
+	:ARG2 (x14 / person
+		:name (n / name
+			:op1 "Greenspan")
+		:null_edge (x13 / null_tag)
+		:ARG1-of (x19 / see-01
+			:mod (x18 / mistake-01)
+			:ARG2 (x22 / source))))
+
+# ::id 16
+# ::snt At a hearing last week, Democratic Sen. Chris Dodd of Connecticut told Treasury Secretary Nicholas Brady that " Chairman Greenspan's " announcement over the Oct. 13 weekend was a " very important statement .
+(x13 / tell-01
+	:time (x3 / hearing)
+	:time (x5 / week
+		:mod (x4 / last))
+	:ARG0 (x9 / newspaper
+		:name (n / name
+			:op1 "Chris"
+			:op2 "Dodd")
+		:mod (x7 / democracy)
+		:ARG0-of (x8 / sen.
+			:location (x12 / country
+				:name (n1 / name
+					:op1 "Connecticut"))))
+	:ARG2 (x16 / name
+		:op1 "Nicholas"
+		:op2 "Brady"
+		:ARG0-of (x15 / have-org-role-91
+			:ARG2 (s / secretary)
+			:ARG1 (x14 / government-organization
+				:name (n2 / name
+					:op1 "Treasury"))))
+	:ARG1 (x35 / state-01
+		:domain (x24 / thing
+			:ARG1-of (a / announce-01)
+			:ARG0 (x21 / person
+				:name (n3 / name
+					:op1 "Greenspan")
+				:ARG0-of (x20 / have-org-role-91
+					:ARG2 (c / chairman)))
+			:location (x25 / over
+				:op1 (x28 / date-entity
+					:mod (x27 / event
+						:name (n4 / name
+							:op1 "Oct.")))))
+		:mod (x34 / important
+			:degree (x33 / very))))
+
+# ::id 17
+# ::snt Mr. Brady hesitantly replied that Treasury Secretary Nicholas Brady was n't sure whether Mr. Greenspan " made a statement Alan Greenspan, or whether that was a newspaper report .
+(x4 / reply-01
+	:ARG0 (x2 / person
+		:name (n / name
+			:op1 "Brady")
+		:null_edge (x1 / null_tag))
+	:manner (x3 / hesitantly)
+	:ARG1 (x23 / or
+		:op2 (x19 / state-01
+			:ARG0 (x9 / person
+				:name (n1 / name
+					:op1 "Brady")
+				:null_edge (x7 / have-org-role-91
+					:ARG2 (s / secretary)
+					:ARG1 (x6 / government-organization
+						:name (n3 / name
+							:op1 "Treasury"))
+					:ARG1 (x8 / person
+						:name (n4 / name
+							:op1 "Nicholas"))))
+			:ARG0 (x15 / person
+				:name (n2 / name
+					:op1 "Greenspan")
+				:null_edge (x14 / null_tag))
+			:name (x20 / name
+				:op1 "Alan"
+				:op2 "Greenspan"))
+		:op1 (xap0 / know-01
+			:mod (x29 / report-01
+				:ARG0 (x25 / that)
+				:ARG0 (x28 / newspaper)))))
+
+# ::id 18
+# ::snt The Fed chairman's caution was apparent again on the Monday morning after the market's plunge, when the central bank took only modest steps to aid the markets
+(x7 / apparent
+	:domain (x5 / cautious
+		:ARG0 (x3 / have-org-role-91
+			:ARG2 (c / chairman)))
+	:mod (x8 / again)
+	:time (x12 / morning
+		:ARG1-of (x23 / take-01
+			:ARG0 (x22 / bank
+				:time (x13 / after
+					:op1 (x17 / plunge
+						:ARG1 (x15 / market)))
+				:mod (x21 / central))
+			:ARG1 (x26 / step-01
+				:mod (x24 / only)
+				:mod (x25 / modest)
+				:ARG2 (x28 / aid-01
+					:ARG1 (x30 / market))))
+		:time (xap0 / date-entity
+			:null_edge (x11 / null_tag))))
+
+# ::id 19
+# ::snt A surprisingly small amount of reserves was added to the banking system
+(x8 / add-02
+	:ARG1 (x4 / amount
+		:mod (x3 / small
+			:ARG0-of (x2 / surprise-01))
+		:quant-of (x6 / reserve-01))
+	:ARG2 (x12 / system
+		:mod (x11 / banking)))
+
+# ::id 20
+# ::snt And, by the end of that week, the key federal funds interest rate, which is largely controlled by the Fed, had settled at 8.75 %, barely changed from the level of just under 9 % that prevailed the previous week
+(x1 / and
+	:op2 (x26 / settle-02
+		:time (x5 / end
+			:ARG1 (x8 / temporal-quantity
+				:unit (w / week)))
+		:ARG1 (x15 / rate
+			:mod (x11 / key)
+			:mod (x14 / interest
+				:ARG1 (x13 / fund-01
+					:mod (x12 / government-organization
+						:name (n1 / name
+							:op1 "federal"))))
+			:ARG1-of (x20 / control-01
+				:degree (x19 / largely)
+				:ARG0 (x23 / have-org-role-91
+					:ARG1 (g / government-organization
+						:name (n / name
+							:op1 "Fed")))))
+		:ARG1 (xap0 / percentage-entity
+			:value (x28 / percentage-entity)
+			:ARG1-of (x32 / change-01
+				:manner (x31 / bare)
+				:ARG2 (x35 / level
+					:mod (xap1 / percentage-entity
+						:ARG2 (x38 / under
+							:mod (x37 / just))
+						:value 9))
+				:ARG2 (x42 / prevail-01
+					:time (x45 / week
+						:mod (x44 / previous)))))))
+
+# ::id 21
+# ::snt Bush administration officials appear increasingly concerned that Mr. Greenspan is cautious to a fault
+(x4 / appear-02
+	:ARG1 (x6 / concern-01
+		:ARG1-of (x5 / increase-01)
+		:ARG1 (x11 / cautious
+			:domain (x9 / person
+				:name (n / name
+					:op1 "Greenspan")
+				:null_edge (x8 / null_tag))
+			:ARG2 (x14 / fault-01))
+		:ARG0 (xap1 / person
+			:ARG0-of (x3 / have-org-role-91
+				:ARG2 (o / official)
+				:ARG1 (xap0 / government-organization
+					:ARG0-of (x2 / administer-01
+						:mod (x1 / person
+							:name (n1 / name
+								:op1 "Bush"))))))))
+
+# ::id 22
+# ::snt Signs of growing weakness in the economy, paired with indications that inflation is staying well under control, have caused Some Bush administration officials to wonder why the Fed chairman is so grudging in reducing rates
+(x21 / cause-01
+	:ARG0 (x1 / sign-01
+		:ARG1 (x4 / weak-41
+			:ARG1-of (x3 / grow-01)
+			:ARG1 (x7 / economy))
+		:ARG1-of (x9 / pair
+			:ARG1 (x11 / indicate-01
+				:ARG1 (x15 / stay-01
+					:ARG1 (x13 / inflation)
+					:ARG1 (x18 / control-01)))))
+	:ARG1 (x27 / wonder-01
+		:ARG1 (x34 / grudging
+			:domain (x31 / have-org-role-91
+				:ARG2 (c / chairman))
+			:ARG2 (x36 / reduce-01
+				:ARG0 x31
+				:ARG1 (x37 / rate)))
+		:ARG1 (xap1 / person
+			:quant (x22 / some)
+			:ARG0-of (x25 / have-org-role-91
+				:ARG2 (o / official)
+				:ARG1 (xap0 / government-organization
+					:ARG0-of (x24 / administer-01
+						:mod (x23 / person
+							:name (n / name
+								:op1 "Bush"))))))))
+
+# ::id 23
+# ::snt Those concerns are n't expressed in public
+(x5 / express-01
+	:ARG1 (x2 / concern-01)
+	:manner (x7 / public))
+
+# ::id 24
+# ::snt In fact, the administration and the Fed have been going out of Some Bush administration officials way in the past two weeks to dispel any impression that Some Bush administration officials are at odds, fearing stories about an administration-Fed split added to the stock market's jitters
+(x6 / and
+	:op2 (x8 / have-org-role-91
+		:ARG1 (g / government-organization
+			:name (n / name
+				:op1 "Fed")))
+	:op1 (xap0 / government-organization
+		:ARG0-of (x5 / administrate-01))
+	:op2 (xap4 / person
+		:quant (x14 / some)
+		:ARG0-of (x17 / have-org-role-91
+			:ARG2 (o / official)
+			:ARG1 (x15 / person
+				:name (n1 / name
+					:op1 "Bush"))
+			:ARG1 (xap1 / government-organization
+				:ARG0-of (x16 / administer-01)))
+		:duration (x23 / temporal-quantity
+			:unit (w / week)
+			:mod (x21 / past)
+			:quant 2
+			:null_edge (x25 / dispel
+				:ARG1 (x27 / impression
+					:mod (x26 / any))
+				:ARG2 (x37 / fear-01
+					:ARG1 (x35 / odds)
+					:ARG1 (x38 / story
+						:topic (x42 / split-01
+							:ARG1 (x41 / organization
+								:name (n2 / name
+									:op1 "administration-Fed"))
+							:ARG1-of (x43 / add-01
+								:ARG1 (x49 / jitters
+									:ARG0 (x47 / market
+										:mod (x46 / stock))))))
+					:ARG1 (xap3 / person
+						:quant (x29 / some)
+						:ARG0-of (x32 / have-org-role-91
+							:ARG2 (o1 / official)
+							:ARG1 (xap2 / government-organization
+								:ARG0-of (x31 / administer-01
+									:mod (x30 / person
+										:name (n3 / name
+											:op1 "Bush")))))))))))
+
+# ::id 25
+# ::snt Still, the split is there
+(x4 / split-01)
+
+# ::id 26
+# ::snt The administration's concerns are understandable
+(xap1 / possible
+	:domain (x6 / understand-01
+		:ARG1 (x4 / concern-01
+			:ARG0 (xap0 / government-organization
+				:ARG0-of (x2 / administrate-01)))))
+
+# ::id 27
+# ::snt The economy is showing signs of weakness, particularly among manufacturers
+(x4 / show-01
+	:ARG0 (x2 / economy)
+	:ARG1 (x5 / signal-01
+		:ARG1 (x7 / weak-41)
+		:ARG2 (x11 / manufacture-01
+			:mod (x9 / particular))))
+
+# ::id 28
+# ::snt Exports, which played a key role in fueling growth over the last two years, seem to have stalled
+(x17 / seem-01
+	:ARG1 (x20 / stall-01
+		:ARG0 (x4 / play-07
+			:ARG1 (x7 / role
+				:mod (x6 / key)
+				:ARG0-of (x9 / fuel-01
+					:ARG1 (x10 / grow-01)))
+			:time (x15 / year
+				:mod (x13 / last)
+				:null_edge (x14 / null_tag)))))
+
+# ::id 29
+# ::snt Factory payrolls and production fell in September, and the auto industry and housing are in a severe crunch
+(x9 / and
+	:op1 (x5 / fall-01
+		:ARG1 (x3 / and
+			:op1 (x2 / payroll
+				:mod (x1 / factory))
+			:op2 (x4 / produce-01))
+		:ARG1 (x13 / and
+			:op1 (x12 / industry
+				:mod (x11 / auto))
+			:op2 (x14 / house-01)
+			:op1 (x19 / crunch
+				:mod (x18 / severe))))
+	:time (x7 / date-entity))
+
+# ::id 30
+# ::snt But Mr. Greenspan remains reluctant to loosen policy, partly because Alan Greenspan faces a phalanx of presidents of regional Fed banks who oppose credit easing
+(x1 / contrast-01
+	:ARG2 (x4 / remain-01
+		:ARG3 (x5 / reluctant
+			:ARG1-of (x11 / cause-01
+				:degree (x10 / part)
+				:ARG0 (x14 / face-01
+					:ARG0 (x12 / newspaper
+						:name (n1 / name
+							:op1 "Alan"
+							:op2 "Greenspan"))
+					:ARG1 (x16 / phalanx
+						:consist-of (xap0 / person
+							:ARG0-of (x18 / have-org-role-91
+								:ARG2 (p / president)
+								:ARG1 (x22 / bank
+									:mod (x20 / region))
+								:ARG0-of (x24 / oppose-01
+									:ARG1 (x26 / ease-02
+										:mod (x25 / credit-02)))))))))
+		:null_edge (x7 / loosen-01
+			:ARG0 (x3 / person
+				:name (n / name
+					:op1 "Greenspan")
+				:null_edge (x2 / null_tag))
+			:ARG1 (x8 / policy))))
+
+# ::id 31
+# ::snt In addition, the chairman has a wary eye aimed a year or two down the road
+(x6 / have-03
+	:ARG0 (x5 / have-org-role-91
+		:ARG2 (c / chairman))
+	:ARG1 (x13 / or
+		:op1 (x9 / eye-01
+			:ARG1-of (x8 / wary)
+			:ARG0-of (x10 / aim-02
+				:ARG2 (x17 / road)))
+		:op2 2))
+
+# ::id 32
+# ::snt Inflation may be stable at the moment, running at about 4.5 %
+(x2 / possible
+	:domain (x4 / stable
+		:time (x7 / moment)
+		:domain (x9 / run-02
+			:ARG1 (xap0 / percentage-entity
+				:ARG2 (x11 / about)
+				:value 4.5))))
+
+# ::id 33
+# ::snt But if the Fed eases too soon, Mr. Greenspan fears, prices may begin to accelerate again next year
+(x1 / contrast-01
+	:ARG2 (x14 / possible
+		:domain (x15 / begin-01
+			:time (x5 / ease-02
+				:time (x7 / soon
+					:degree (x6 / too)))
+			:ARG1 (x11 / fear-01
+				:ARG0 (x10 / person
+					:name (n / name
+						:op1 "Greenspan")
+					:null_edge (x9 / null_tag)))
+			:ARG0 (x13 / thing
+				:ARG2-of (p / price-01))
+			:ARG1 (x17 / accelerate-01
+				:ARG0 x13
+				:mod (x18 / again)
+				:time (x20 / year
+					:mod (x19 / next))))))
+
+# ::id 34
+# ::snt Moreover, if the Fed holds tight, it may be able gradually to reduce inflation, moving toward the zero-inflation goal that the Fed chairman embraced in testimony to Congress last week
+(x10 / possible
+	:condition (x6 / hold-01
+		:manner (x7 / tight))
+	:domain (x15 / reduce-01
+		:manner (x13 / gradual)
+		:ARG1 (x16 / inflation)
+		:ARG1 (x18 / move-01
+			:ARG0-of (x27 / embrace-01
+				:ARG1 (x21 / zero-inflation)
+				:ARG0 (x26 / have-org-role-91
+					:ARG2 (c / chairman))
+				:ARG2 (x29 / testify-01
+					:ARG1 (x31 / government-organization
+						:name (n / name
+							:op1 "Congress"))
+					:time (x33 / week
+						:mod (x32 / last)))))))
+
+# ::id 35
+# ::snt So far, Mr. Greenspan's cautious approach to policy has served both him and the nation well
+(x12 / serve-01
+	:time (x2 / far)
+	:ARG0 (x8 / approach-02
+		:ARG0 (x5 / person
+			:name (n / name
+				:op1 "Greenspan")
+			:null_edge (x4 / null_tag))
+		:mod (x7 / cautious)
+		:ARG1 (x10 / policy))
+	:ARG1 (x14 / person
+		:domain (h / he)
+		:null_edge (x15 / and
+			:mod (x13 / both)
+			:op2 (x17 / nation)))
+	:manner (x18 / well))
+
+# ::id 36
+# ::snt Alan Greenspan hand on the monetary tiller seems one reason why the economy next month seems highly likely to begin an unprecedented eighth year of peacetime growth without a recession
+(x8 / seem-01
+	:ARG1 (x7 / tiller
+		:ARG0 (x1 / newspaper
+			:name (n / name
+				:op1 "Alan"
+				:op2 "Greenspan"))
+		:mod (x6 / monetary)
+		:quant 1)
+	:ARG1 (x16 / seem-01
+		:ARG1 (x13 / economy
+			:time (x15 / month
+				:mod (x14 / next)))
+		:ARG1 (x18 / likely
+			:degree (x17 / high)
+			:domain (x20 / begin-01
+				:prep-with (x27 / grow-01
+					:ARG1 (x22 / precedent
+						:polarity -)
+					:ARG1 (x26 / peacetime)
+					:ARG1 (x30 / recession))
+				:manner x30))))
+
+# ::id 37
+# ::snt " We 've gotten through two stock market crashes, and we 've gone through an election without any major problems, " says David Hale, an economist of Kemper Financial Services
+(x24 / say-01
+	:ARG1 (x4 / get-05
+		:ARG0 (x2 / we)
+		:ARG2 (x9 / crash-01
+			:quant 2
+			:mod (x8 / market
+				:mod (x7 / stock)))
+		:ARG0 (x12 / we)
+		:path (x17 / elect-01))
+	:ARG1 (x21 / problem
+		:mod (x19 / any)
+		:mod (x20 / major))
+	:ARG0 (x25 / newspaper
+		:name (n / name
+			:op1 "David"
+			:op2 "Hale")
+		:ARG0-of (x29 / economist
+			:ARG1 (x31 / government-organization
+				:name (n1 / name
+					:op1 "Kemper"
+					:op2 "Financial"
+					:op3 "Services")))))
+
+# ::id 38
+# ::snt " David Hale think you have to give Greenspan a good rating .
+(x4 / think-01
+	:ARG0 (x2 / newspaper
+		:name (n / name
+			:op1 "David"
+			:op2 "Hale"))
+	:ARG1 (x8 / give-01
+		:ARG0 (x5 / you)
+		:ARG2 (x9 / person
+			:name (n1 / name
+				:op1 "Greenspan"))
+		:ARG1 (x12 / rate-01
+			:mod (x11 / good))))
+
+# ::id 39
+# ::snt But such caution is no guarantee against mistakes
+(x1 / contrast-01
+	:ARG2 (x6 / guarantee-01
+		:ARG0 (x3 / cautious
+			:mod (x2 / such))
+		:polarity -
+		:ARG0 (x8 / mistake-01)))
+
+# ::id 40
+# ::snt The Fed's reluctance to ease credit now could be laying the groundwork for a new recession, perhaps starting early next year
+(x9 / possible
+	:domain (x11 / lay-02
+		:ARG0 (x4 / reluctant
+			:ARG1 (x6 / ease-02
+				:ARG1 (x7 / credit)
+				:time (x8 / now)))
+		:ARG1 (x13 / groundwork
+			:topic (x17 / recession
+				:mod (x16 / new)
+				:ARG1-of (x20 / start-01
+					:time (x21 / early
+						:op1 (x23 / year
+							:mod (x22 / next))))))))
+
+# ::id 41
+# ::snt If that happens, Chairman Greenspan could well become an open target
+(x7 / possible
+	:domain (x9 / become-01
+		:time (x3 / happen-01
+			:ARG1 (x2 / that))
+		:ARG1 (x6 / person
+			:name (n / name
+				:op1 "Greenspan")
+			:ARG0-of (x5 / have-org-role-91
+				:ARG2 (c / chairman)))
+		:ARG2 (x12 / target-01
+			:ARG0 x6
+			:mod (x11 / open))))
+
+# ::id 42
+# ::snt Already, Congress is toying with legislation to curb the Fed's independence
+(x5 / toy
+	:time (x1 / already)
+	:ARG1 (x3 / government-organization
+		:name (n / name
+			:op1 "Congress"))
+	:ARG2 (x7 / legislate-01)
+	:purpose (x9 / curb-01
+		:ARG0 x3
+		:ARG1 (x13 / depend-01
+			:polarity -)))
+
+# ::id 43
+# ::snt If the economy turns down, such proposals could gain strong momentum
+(x9 / possible
+	:domain (x10 / gain-02
+		:time (x4 / turn-02
+			:ARG0 (x3 / economy))
+		:ARG0 (x8 / thing
+			:ARG1-of (p / propose-01)
+			:mod (x7 / such))
+		:ARG1 (x12 / momentum
+			:mod (x11 / strong))))
+

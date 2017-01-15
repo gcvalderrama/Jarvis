@@ -131,10 +131,52 @@ namespace JarvisDUCReader
                     }                    
                 }
             }
-        }   
+        }
+
+
+        public static void ProcessSummaries()
+        {
+            var summDir = @"D:\Tesis2016\DUC2001_Summarization_Documents\data\test\duplicate.summaries";
+            var summOutputDir = @"D:\Tesis2016\DUC2001_Summarization_Documents\data\testOutput\";
+
+            foreach (var targetDir in Directory.GetDirectories(summDir))
+            {
+                var file = Directory.GetFiles(targetDir).Where(c=>c.EndsWith("perdocs")).FirstOrDefault();
+
+                var str = "<roo>" + File.ReadAllText(file) + "</roo>";
+                var element = XElement.Parse(SanityXml.Sanity(str));
+                var sums = (from c in element.Elements("SUM")                           
+                           select c).ToList();
+
+                foreach (var sum in sums)
+                {
+                    File.WriteAllText(Path.Combine(summOutputDir, sum.Attribute("DOCREF").Value) + ".txt", sum.Value.TrimStart().TrimEnd());
+                }
+
+                //where c.Attribute("DOCREF").Value == item                                 
+            } 
+        }
+        public static void FixAM()
+        {
+            
+            var summOutputDir = @"D:\Tesis2016\Jarvis\Lincoln\00Input\InputTest";
+            foreach (var item in Directory.GetFiles(summOutputDir))
+            {
+                var content = File.ReadAllText(item);
+
+                content = content.Replace("&amp;", "&");
+
+                File.WriteAllText(item, content);
+            }
+
+            
+        }
         static void Main(string[] args)
         {
-            ProcessTraining();
+            //ProcessTraining();
+            //ProcessSummaries();
+
+            FixAM();
         }
     }
 }

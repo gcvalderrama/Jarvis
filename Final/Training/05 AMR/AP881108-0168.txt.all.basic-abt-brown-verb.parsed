@@ -1,0 +1,584 @@
+# ::id 1
+# ::snt Anti-gun control groups and some U.S. law enforcement officials are questioning the validity of a study that says the Canadian city of Vancouver is safer than Seattle because of gun control laws
+(x11 / question-01
+	:ARG1 (x4 / and
+		:op1 (x3 / group
+			:mod (x1 / anti-gun)
+			:ARG0-of (x2 / control-01))
+		:op1 (xap0 / person
+			:quant (x5 / some)
+			:ARG0-of (x9 / have-org-role-91
+				:ARG2 (o / official)
+				:ARG1 (x6 / country
+					:name (n / name
+						:op1 "U.S."))
+				:ARG1 (x7 / law)
+				:ARG1 (x8 / enforce-01))))
+	:ARG1 (x13 / validity
+		:part-of (x16 / study-01
+			:ARG0-of (x18 / thing
+				:ARG1-of (s / say-01)
+				:ARG1 (x25 / safe
+					:domain (x21 / city
+						:mod (x20 / country
+							:name (n2 / name
+								:op1 "Canada"))
+						:location (x23 / country
+							:name (n3 / name
+								:op1 "Vancouver")))
+					:compared-to (x27 / country
+						:name (n1 / name
+							:op1 "Seattle"))
+					:ARG1-of (x28 / cause-01
+						:ARG0 (x32 / law
+							:topic (x31 / control-01
+								:ARG1 (x30 / gun)))))))))
+
+# ::id 2
+# ::snt A study to be published Thursday in the New England Journal of Medicine concludes that the number of handgun deaths in Vancouver, British Columbia, 120 miles to the north, between 1980 and 1986 was nearly one-fifth that of Seattle
+(x14 / conclude-01
+	:ARG0 (x2 / study
+		:ARG1-of (x5 / publish-01
+			:time (xap0 / date-entity
+				:weekday (x6 / thursday)
+				:op1 (x13 / organization
+					:name (n2 / name
+						:op1 "Medicine")
+					:null_edge (x9 / null_tag)))))
+	:duration (x38 / nearly
+		:op1 (x20 / death
+			:quant (x17 / number
+				:mod (x33 / between
+					:op1 (x34 / date-entity
+						:year 1980
+						:null_edge (x35 / null_tag
+							:op2 (x36 / date-entity
+								:year 1986)))))
+			:mod (x19 / handgun)
+			:location (x22 / country
+				:name (n1 / name
+					:op1 "Vancouver")
+				:location (x25 / country
+					:name (n3 / name
+						:op1 "Columbia")
+					:mod (x24 / country
+						:name (n4 / name
+							:op1 "Britain"))
+					:null_edge (x31 / north))))
+		:location (x42 / country
+			:name (n / name
+				:op1 "Seattle"))))
+
+# ::id 3
+# ::snt Dr. John Henry Sloan, chief investigator for the study, said 388 homicides occurred in Seattle during the study period, while 204 occurred in Vancouver
+(x12 / say-01
+	:ARG0 (x2 / person
+		:name (n / name
+			:op1 "John"
+			:op2 "Henry"
+			:op3 "Sloan")
+		:ARG0-of (x7 / person
+			:ARG0-of (i / investigate-01)
+			:mod (x6 / chief)
+			:purpose (x10 / study-01)))
+	:ARG1 (x14 / homicide
+		:quant (x13 / 388)
+		:location (x17 / country
+			:name (n2 / name
+				:op1 "Seattle"))
+		:time (x21 / period
+			:part-of (x20 / study-01))
+		:null_edge (x24 / 204))
+	:location (x27 / country
+		:name (n1 / name
+			:op1 "Vancouver")))
+
+# ::id 4
+# ::snt The number of gun-related deaths in Seattle was 139, compared with 25 for Vancouver, John Henry Sloan said
+(x20 / say-01
+	:location (x7 / country
+		:name (n / name
+			:op1 "Seattle"))
+	:ARG1 (x9 / 139
+		:null_edge (x11 / compare-01
+			:quant (x2 / number)
+			:ARG2 (x15 / country
+				:name (n2 / name
+					:op1 "Vancouver")
+				:quant 25)))
+	:ARG0 (x17 / person
+		:name (n1 / name
+			:op1 "John"
+			:op2 "Henry"
+			:op3 "Sloan")))
+
+# ::id 5
+# ::snt Sloan, 34, a researcher at the Injury Prevention Research Center at Seattle's Harborview Medical Center, stopped short Tuesday of saying John Henry Sloan findings prove Seattle's laxer handgun control laws cause more deaths, but said " Seattle virtually explains Seattle .
+(x40 / contrast-01
+	:ARG1 (x20 / stop-01
+		:ARG0 (x1 / person
+			:name (n / name
+				:op1 "Sloan")
+			:null_edge 34
+			:ARG0-of (x6 / research-01
+				:location (x9 / government-organization
+					:name (n3 / name
+						:op1 "Injury"
+						:op2 "Prevention"
+						:op3 "Research"
+						:op4 "Center")
+					:location (x16 / government-organization
+						:name (n5 / name
+							:op1 "Harborview"
+							:op2 "Medical"
+							:op3 "Center")
+						:poss (x14 / country
+							:name (n6 / name
+								:op1 "Seattle"))))))
+		:duration (x21 / short-41)
+		:time (xap0 / date-entity
+			:weekday (x22 / tuesday)))
+	:ARG2 (x29 / prove-01
+		:ARG1 (x28 / thing
+			:ARG1-of (f / find-01)
+			:name (x25 / name
+				:op1 "John"
+				:op2 "Henry"
+				:op3 "Sloan"))
+		:ARG1 (x36 / cause-01
+			:ARG0 (x35 / law
+				:poss (x30 / country
+					:name (n4 / name
+						:op1 "Seattle"))
+				:mod (x32 / laxer)
+				:topic (x34 / control-01
+					:ARG1 (x33 / handgun)))
+			:ARG1 (x38 / death
+				:quant (x37 / more))))
+	:ARG2 (x41 / say-01
+		:ARG0 x1
+		:ARG1 (x45 / explain-01
+			:ARG0 (x43 / country
+				:name (n1 / name
+					:op1 "Seattle"))
+			:mod (x44 / virtual)
+			:ARG1 (x46 / country
+				:name (n2 / name
+					:op1 "Seattle")))))
+
+# ::id 6
+# ::snt Gun control activists were quick to seize the opportunity
+(x5 / quick
+	:domain (x3 / activist
+		:ARG0-of (x2 / control-01
+			:ARG1 (x1 / gun)))
+	:domain (x7 / seize-01
+		:ARG0 x3
+		:ARG1 (x9 / opportunity)))
+
+# ::id 7
+# ::snt " Susan Whitmore , spokeswoman for Washington , D.C.,-based Handgun Control Inc. think that the study clearly puts to rest the notion strong handgun control laws do n't have an effect on levels of crime, " said Susan Whitmore, spokeswoman for Washington, D.C.,-based Handgun Control Inc.
+(x38 / say-01
+	:ARG1 (x13 / think-01
+		:ARG0 (x2 / newspaper
+			:name (n1 / name
+				:op1 "Susan"
+				:op2 "Whitmore")
+			:ARG0-of (x5 / have-org-role-91
+				:ARG2 (s1 / spokeswoman)
+				:ARG1 (x10 / government-organization
+					:name (n3 / name
+						:op1 "Handgun"
+						:op2 "Control"
+						:op3 "Inc.")
+					:mod (x9 / d.c.,-based
+						:location (x7 / city
+							:name (n5 / name
+								:op1 "Washington"))))))
+		:ARG1 (x18 / put-01
+			:ARG0 (x16 / study)
+			:manner (x17 / clear)
+			:ARG1 (x20 / rest-02
+				:ARG1 (x22 / notion
+					:ARG0-of (x29 / have-03
+						:ARG1 (x31 / effect-01
+							:ARG1 (x26 / law
+								:mod (x23 / strong)
+								:topic (x25 / control-01
+									:mod (x24 / handgun)))
+							:ARG1 (x33 / level
+								:mod (x35 / crime))))))))
+	:ARG0 (x39 / newspaper
+		:name (n / name
+			:op1 "Susan"
+			:op2 "Whitmore")
+		:ARG0-of (x42 / have-org-role-91
+			:ARG2 (s / spokeswoman)
+			:ARG1 (x47 / government-organization
+				:name (n2 / name
+					:op1 "Handgun"
+					:op2 "Control"
+					:op3 "Inc.")
+				:mod (x46 / d.c.,-based
+					:location (x44 / city
+						:name (n4 / name
+							:op1 "Washington")))))))
+
+# ::id 8
+# ::snt John Hosford, executive director of the Seattle-based Citizen's Committee for the Right to Keep and Bear Arms, dismissed the study as a political ploy to help a gun control initiative on Maryland's ballot
+(x21 / dismiss-01
+	:ARG0 (x1 / person
+		:name (n / name
+			:op1 "John"
+			:op2 "Hosford")
+		:ARG0-of (x5 / have-org-role-91
+			:ARG2 (d / director)
+			:mod (x4 / executive)
+			:ARG1 (x11 / organization
+				:name (n1 / name
+					:op1 "Committee")
+				:null_edge (x8 / organization
+					:name (n2 / name
+						:op1 "Seattle-based"
+						:op2 "Citizen"))
+				:null_edge (x17 / and
+					:op1 (x16 / keep-03
+						:ARG1 (x19 / arm-01))
+					:op2 (x18 / bear)))))
+	:ARG1 (x23 / study-01)
+	:ARG2 (x27 / ploy
+		:mod (x26 / politics)
+		:purpose (x29 / help-01
+			:ARG1 (x33 / initiative
+				:ARG1 (x32 / control-01
+					:ARG1 (x31 / gun))
+				:ARG1 (x37 / ballot
+					:ARG0 (x35 / state
+						:name (n3 / name
+							:op1 "Maryland")))))))
+
+# ::id 9
+# ::snt " the Seattle-based Citizen's Committee for the Right's not new research, " Hosford said
+(x17 / say-01
+	:ARG1 (x13 / research-01
+		:ARG1 (x3 / organization
+			:name (n1 / name
+				:op1 "Seattle-based"
+				:op2 "Citizen"
+				:op3 "'s"
+				:op4 "Committee"
+				:op5 "for"
+				:op6 "the"
+				:op7 "Right"))
+		:mod (x12 / new))
+	:ARG0 (x16 / person
+		:name (n / name
+			:op1 "Hosford")))
+
+# ::id 10
+# ::snt " John Hosford do n't think the study is valid, since A study to be published Thursday in the New England Journal of Medicine does n't take into account the cause and effect of many issues .
+(x6 / think-01
+	:ARG0 (x2 / person
+		:name (n / name
+			:op1 "John"
+			:op2 "Hosford"))
+	:ARG1 (x10 / valid-41
+		:ARG1 (x8 / study)
+		:domain (x28 / take-01
+			:ARG0 (x14 / study
+				:ARG1-of (x17 / publish-01
+					:time (xap0 / date-entity
+						:weekday (x18 / thursday)
+						:op1 (x25 / organization
+							:name (n1 / name
+								:op1 "Medicine")
+							:null_edge (x21 / null_tag)))))
+			:ARG2 (x30 / account)
+			:ARG1 (x33 / and
+				:op1 (x32 / cause
+					:ARG1 (x37 / issue
+						:quant (x36 / many)))
+				:op2 (x34 / thing
+					:ARG1-of (e / effect-01))))))
+
+# ::id 11
+# ::snt And Dr. Paul Blackman, spokesman for the National Rifle Association in Washington, D.C., criticized the study for not looking at the period before Vancouver's new gun control laws went into effect in 1978
+(x1 / and
+	:op2 (x17 / criticize-01
+		:ARG0 (x4 / person
+			:name (n / name
+				:op1 "Blackman")
+			:null_edge (x3 / null_tag)
+			:ARG0-of (x6 / have-org-role-91
+				:ARG2 (s / spokesman)
+				:ARG1 (x9 / government-organization
+					:name (n1 / name
+						:op1 "National"
+						:op2 "Rifle"
+						:op3 "Association")
+					:location (x13 / city
+						:name (n2 / name
+							:op1 "Washington")
+						:null_edge (x15 / country
+							:name (n3 / name
+								:op1 "D.C."))))))
+		:ARG1 (x19 / study-01)
+		:ARG2 (x22 / look-01
+			:time (x25 / period
+				:null_edge (x26 / before
+					:op1 (x33 / go-01
+						:ARG2 (x35 / effect
+							:ARG1 (x32 / law
+								:poss (x27 / country
+									:name (n4 / name
+										:op1 "Vancouver"))
+								:mod (x29 / new)
+								:topic (x31 / control-01
+									:ARG1 (x30 / gun))))
+						:time (x37 / date-entity
+							:year 1978)))))))
+
+# ::id 12
+# ::snt Sloan said Vancouver's laws were made stricter in 1978, but did n't change significantly
+(x2 / say-01
+	:ARG0 (x1 / person
+		:name (n / name
+			:op1 "Sloan"))
+	:ARG1 (x5 / law
+		:poss (x3 / country
+			:name (n1 / name
+				:op1 "Vancouver"))
+		:mod (x8 / strict)
+		:time (x10 / date-entity
+			:year 1978)
+		:mod (x15 / change-01
+			:degree (x16 / significant))))
+
+# ::id 13
+# ::snt In Seattle, handguns may legally be purchased for self defense
+(x5 / possible
+	:domain (x8 / purchase-01
+		:location (x2 / country
+			:name (n / name
+				:op1 "Seattle"))
+		:ARG1 (x4 / handgun)
+		:manner (x6 / legal)
+		:ARG3 (x11 / defend-01)))
+
+# ::id 14
+# ::snt After a 30-day waiting period, a permit can be obtained to carry a handgun as a concealed weapon
+(x9 / possible
+	:domain (x11 / obtain-01
+		:time (x1 / after
+			:op1 (x5 / period
+				:null_edge (x4 / wait-01)))
+		:ARG1 (x8 / permit-01)
+		:purpose (x13 / carry-01
+			:ARG1 (x15 / handgun)
+			:ARG2 (x19 / weapon
+				:ARG1-of (x18 / conceal-01)))))
+
+# ::id 15
+# ::snt Recreational uses are minimally restricted
+(x5 / restrict-01
+	:ARG1 (x2 / use-01
+		:mod (x1 / recreate-00))
+	:manner (x4 / minimally))
+
+# ::id 16
+# ::snt In Vancouver, self-defense is not considered a legal reason to purchase a handgun
+(x7 / consider-01
+	:location (x2 / country
+		:name (n / name
+			:op1 "Vancouver"))
+	:ARG1 (x4 / self)
+	:ARG1 (x12 / purchase-01
+		:ARG1 (x14 / handgun)))
+
+# ::id 17
+# ::snt Concealed weapons are not permitted and recreational use of handguns such as target shooting and collecting are regulated by the province
+(x6 / and
+	:op1 (x5 / permit-01
+		:ARG1 (x2 / weapon
+			:ARG1-of (x1 / conceal-01)))
+	:op2 (x18 / regulate-01
+		:ARG1 (x8 / use-01
+			:mod (x7 / recreate-00)
+			:ARG1 (x10 / handgun
+				:example (x15 / and
+					:op1 (x14 / shooting
+						:ARG1 (x13 / target-01))
+					:op2 (x16 / collect-01))))
+		:ARG1 (x21 / province)))
+
+# ::id 18
+# ::snt The weapons may only be fired at a licensed shooting club
+(x3 / possible
+	:mod (x4 / only)
+	:domain (x6 / fire-01
+		:ARG1 (x2 / weapon)
+		:time (x11 / club
+			:ARG1-of (x9 / licensed)
+			:mod (x10 / shooting))))
+
+# ::id 19
+# ::snt In addition, criminal offenses carry stricter penalties than in the United States, said Vancouver police Sgt. Robert Law
+(x15 / say-01
+	:ARG1 (x5 / offense
+		:mod (x4 / crime)
+		:ARG1 (x8 / penalize-01
+			:mod (x7 / strict))
+		:location (x12 / country
+			:name (n / name
+				:op1 "United"
+				:op2 "States")))
+	:ARG0 (x20 / law
+		:null_edge (x16 / country
+			:name (n1 / name
+				:op1 "Vancouver"))
+		:null_edge (x17 / police)
+		:null_edge (x18 / sgt.)
+		:null_edge (x19 / person
+			:name (n2 / name
+				:op1 "Robert"))))
+
+# ::id 20
+# ::snt Hosford said that what Seattle needs is not more gun control laws, but stricter penalties for people convicted of crimes involving guns
+(x2 / say-01
+	:ARG0 (x1 / person
+		:name (n / name
+			:op1 "Hosford"))
+	:ARG1 (x12 / law
+		:ARG1-of (x6 / need-01
+			:ARG0 (x5 / country
+				:name (n1 / name
+					:op1 "Seattle")))
+		:mod (x9 / more)
+		:topic (x11 / control-01
+			:ARG1 (x10 / gun)
+			:ARG1 (x16 / penalize-01
+				:mod (x15 / strict)
+				:ARG1 (x19 / person
+					:ARG1-of (c / convict-01)
+					:ARG1 (x21 / crime
+						:ARG2-of (x22 / involve-01
+							:ARG1 (x23 / gun))))))))
+
+# ::id 21
+# ::snt Jim Deschane, commander of the Seattle police West Precinct, said Jim Deschane believes the process of allowing people to carry handguns in the city is " far too lax " because police ca n't check applicants ' medical records
+(x12 / say-01
+	:ARG0 (x1 / newspaper
+		:name (n / name
+			:op1 "Jim"
+			:op2 "Deschane")
+		:ARG0-of (x4 / have-org-role-91
+			:ARG2 (c / commander)
+			:ARG1 (x10 / precinct
+				:null_edge (x7 / country
+					:name (n2 / name
+						:op1 "Seattle"))
+				:null_edge (x8 / police)
+				:mod (x9 / world-region
+					:name (n3 / name
+						:op1 "West")))))
+	:ARG1 (x15 / believe-01
+		:ARG0 (x13 / newspaper
+			:name (n1 / name
+				:op1 "Jim"
+				:op2 "Deschane"))
+		:ARG1 (x31 / lax-00
+			:domain (x17 / process
+				:mod (x19 / allow-01
+					:ARG1 (x22 / carry-01
+						:ARG1 (x23 / handgun)
+						:location (x26 / city))))
+			:degree (x30 / too)
+			:ARG1-of (x33 / cause-01)
+			:domain (x37 / check-01
+				:ARG0 (x34 / police)
+				:ARG1 (x41 / record
+					:poss (x38 / apply-01)
+					:mod (x40 / medicine))))))
+
+# ::id 22
+# ::snt Dr. Stanley Abrams, a forensic psychologist who has been involved in investigations of serial murders in Portland, Ore., said easy availablity of guns can cause more deaths, because it is psychologically more difficult for someone to use a knife to kill than to just shoot a gun
+(x22 / say-01
+	:ARG0 (x2 / newspaper
+		:name (n / name
+			:op1 "Stanley"
+			:op2 "Abrams")
+		:ARG0-of (x7 / psychologist
+			:mod (x6 / forensic)
+			:ARG1-of (x11 / involve-01
+				:ARG2 (x13 / investigate-01
+					:ARG1 (x16 / murder-01
+						:mod (x15 / serial)
+						:location (x18 / country
+							:name (n1 / name
+								:op1 "Portland")
+							:location (x20 / country
+								:name (n2 / name
+									:op1 "Ore."))))))))
+	:ARG1 (x27 / possible
+		:domain (x28 / cause-01
+			:ARG0 (x24 / availablity
+				:mod (x23 / easy)
+				:ARG1 (x26 / gun))
+			:ARG1 (x30 / death
+				:quant (x29 / more)
+				:ARG1-of (x32 / cause-01
+					:ARG0 (x37 / difficult
+						:degree (x36 / more
+							:degree (x35 / psychology))
+						:domain (x41 / use-01
+							:ARG0 (x39 / someone)
+							:ARG1 (x43 / knife)
+							:ARG2 (x45 / kill-01
+								:ARG1 (x49 / shoot-05
+									:mod (x48 / just)
+									:ARG1 (x51 / gun))))))))))
+
+# ::id 23
+# ::snt " People who use knives have to be more destructive _ Ore.'s definitely more difficult to kill with a knife, " Abrams said
+(x25 / say-01
+	:ARG1 (x6 / have-03
+		:ARG1 (x4 / use-01
+			:ARG1 (x5 / knife))
+		:ARG1 (x10 / thing
+			:degree-of (d / destroy-01)
+			:degree (x9 / more)
+			:ARG1 (x16 / difficult
+				:domain (x12 / ore.
+					:mod (x11 / _))
+				:mod (x14 / definite)
+				:degree (x15 / more)
+				:domain (x18 / kill-01
+					:ARG0 x12
+					:ARG1 (x21 / knife)))))
+	:ARG0 (x24 / person
+		:name (n / name
+			:op1 "Abrams")))
+
+# ::id 24
+# ::snt And since only 5 percent of murders are planned, a person carrying a gun makes a gun that much more likely a murder will occur, Abrams said
+(x29 / say-01
+	:ARG1 (x16 / make-02
+		:null_edge (x1 / and)
+		:time (x2 / since
+			:op1 (x9 / plan-01
+				:ARG1 (x5 / percentage-entity
+					:mod (x3 / only)
+					:value 5
+					:quant-of (x7 / murder-01))))
+		:ARG0 (x12 / person
+			:ARG0-of (x13 / carry-01
+				:ARG1 (x15 / gun)))
+		:ARG1 (x22 / likely
+			:domain (x18 / gun)
+			:degree (x21 / more
+				:degree (x20 / much))
+			:domain (x24 / murder-01)))
+	:ARG0 (x28 / person
+		:name (n / name
+			:op1 "Abrams")))
+

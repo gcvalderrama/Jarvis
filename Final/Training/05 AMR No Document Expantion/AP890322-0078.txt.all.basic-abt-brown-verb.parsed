@@ -1,0 +1,543 @@
+# ::id 1
+# ::snt Backers of House legislation to raise the minimum wage lowered their target to $ 4.55 an hour on the eve of debate as President Bush declared he had the votes to sustain a veto should Congress go above $ 4.25
+(x10 / lower-01
+	:ARG0 (x1 / organization
+		:name (n / name
+			:op1 "Backers")
+		:null_edge (x4 / legislate-01
+			:ARG0-of (x3 / have-org-role-91
+				:ARG1 (g / government-organization
+					:name (n2 / name
+						:op1 "House"))))
+		:purpose (x6 / raise-01
+			:ARG1 (x9 / wage-01
+				:mod (x8 / minimum))))
+	:ARG1 (x12 / target-01)
+	:ARG1 (x17 / temporal-quantity
+		:unit (h / hour))
+	:time (x26 / declare-02
+		:ARG0 (x25 / person
+			:name (n1 / name
+				:op1 "Bush")
+			:ARG0-of (x24 / have-org-role-91
+				:ARG2 (p / president)
+				:ARG1 (x20 / eve
+					:op1 (x22 / debate-01))))
+		:ARG1 (x30 / vote-01
+			:ARG0 (x27 / he)
+			:ARG0-of (x32 / sustain
+				:ARG1 (x34 / veto)
+				:ARG1 (x35 / recommend-01
+					:ARG1 (x37 / go-02
+						:ARG1 (x36 / government-organization
+							:name (n3 / name
+								:op1 "Congress"))
+						:location (x38 / above
+							:op1 (x40 / monetary-quantity
+								:unit (y / yuan)))))))))
+
+# ::id 2
+# ::snt The Democratic sponsors of the bill, scheduled for floor debate beginning today, also agreed Tuesday to include a sub-minimum training wage in their measure, a 60-day proposal that falls far short of the six-month period demanded by Bush
+(x16 / agree-01
+	:ARG0 (x3 / sponsor-01
+		:mod (x2 / democratic)
+		:ARG0 (x6 / bill)
+		:ARG1-of (x8 / schedule-01
+			:ARG3 (x11 / debate-01
+				:mod (x10 / floor)
+				:ARG1-of (x12 / begin-01
+					:time (x13 / today)))))
+	:mod (x15 / also)
+	:ARG1 (x30 / propose-01
+		:ARG1 (x23 / wage-01
+			:ARG1 (x22 / train-01
+				:ARG2 (x26 / measure)))
+		:ARG0-of (x32 / fall-04
+			:ARG2 (x34 / short
+				:degree (x33 / far)
+				:ARG2 (x38 / period
+					:ARG1-of (x39 / demand-01
+						:ARG0 (x41 / person
+							:name (n / name
+								:op1 "Bush")))))))
+	:time (xap0 / date-entity
+		:weekday (x17 / tuesday)))
+
+# ::id 3
+# ::snt And the president, at a White House meeting with reporters, insisted he had made his best and last offer to raise the wage, which has been frozen for eight years
+(x1 / and
+	:op2 (x13 / insist-01
+		:ARG0 (x3 / have-org-role-91
+			:ARG2 (p / president))
+		:location (x9 / meet-03
+			:mod (x7 / white)
+			:ARG1 (x8 / government-organization
+				:name (n / name
+					:op1 "House"))
+			:ARG0 (x11 / person
+				:ARG0-of (r / report-01)))
+		:ARG1 (x19 / and
+			:op2 (x18 / good
+				:degree (m / most))
+			:op2 (x21 / thing
+				:ARG1-of (o / offer-01)
+				:mod (x20 / last)
+				:ARG1 (x23 / raise-01
+					:ARG1 (x25 / wage-01
+						:ARG1-of (x30 / freeze-02
+							:duration (x33 / temporal-quantity
+								:unit (y / year)
+								:quant 8))))))))
+
+# ::id 4
+# ::snt Bush appeared with Labor Secretary Elizabeth Dole, who was there to deliver a letter from 35 Republican senators who promised to side with Bush should he veto minimum-wage legislation that fails to meet White House guidelines
+(x2 / appear-01
+	:ARG0 (x1 / person
+		:name (n / name
+			:op1 "Bush"))
+	:ARG1 (x6 / name
+		:op1 "Elizabeth"
+		:op2 "Dole"
+		:ARG0-of (x5 / have-org-role-91
+			:ARG2 (s / secretary)
+			:mod (x4 / political-party
+				:name (n1 / name
+					:op1 "Labor")))
+		:ARG0-of (x13 / deliver-01
+			:ARG1 (x15 / letter
+				:source (x19 / senator
+					:null_edge 35
+					:mod (x18 / political-party
+						:name (n2 / name
+							:op1 "Republican"))
+					:ARG0-of (x21 / promise-01
+						:ARG2 (x23 / side-01
+							:instrument (x25 / person
+								:name (n3 / name
+									:op1 "Bush"))
+							:ARG1 (x26 / recommend-01
+								:ARG1 (x28 / veto-01
+									:ARG1 (x30 / legislate-01
+										:mod (x29 / minimum-wage)
+										:ARG0-of (x32 / fail-01
+											:ARG2 (x34 / meet-03
+												:ARG1 (x37 / guideline
+													:mod (x35 / white)
+													:mod (x36 / government-organization
+														:name (n4 / name
+															:op1 "House")))))))))))))))
+
+# ::id 5
+# ::snt The administration guidelines include raising the minimum wage, now at $ 3.35 an hour, to $ 4.25 an hour by 1992, provided employers can pay new hires a " training wage " of $ 3.35 an hour for six months
+(x4 / include-01
+	:ARG2 (x3 / guideline
+		:mod (x2 / administer-01))
+	:ARG1 (x5 / raise-01
+		:ARG1 (x8 / wage-01
+			:mod (x7 / minimum)
+			:time (x10 / now))
+		:ARG1 (x21 / temporal-quantity
+			:unit (h / hour)
+			:null_edge (x23 / date-entity
+				:year 1992))
+		:purpose (x28 / pay-01
+			:ARG0 (x26 / employ-01)
+			:mod (x27 / possible)
+			:ARG1 (x30 / hire-01
+				:mod (x29 / new))
+			:ARG1 (x34 / wage-01
+				:ARG1 (x33 / train-01)
+				:duration (x40 / temporal-quantity
+					:unit (h1 / hour)))
+			:duration (x43 / temporal-quantity
+				:unit (m / month)
+				:quant 6))))
+
+# ::id 6
+# ::snt The administration says the sub-minimum wage is needed for employers to create and fill entry-level jobs
+(x3 / say-01
+	:ARG1 (x8 / need-01
+		:ARG1 (x6 / wage-01)
+		:purpose (x13 / and
+			:op1 (x12 / create-01
+				:ARG0 (x10 / employ-01)
+				:ARG1 (x16 / job
+					:mod (x15 / entry-level)))
+			:op2 (x14 / fill-05
+				:ARG0 x10)))
+	:ARG0 (xap0 / government-organization
+		:ARG0-of (x2 / administrate-01)))
+
+# ::id 7
+# ::snt Mrs. Dole, appearing today on " CBS This Morning, " said, " Many more jobs and job opportunities are saved if you have a six-month training wage .
+(x23 / save-02
+	:ARG1 (x19 / and
+		:op1 (x13 / say-01
+			:ARG0 (x2 / person
+				:name (n / name
+					:op1 "Dole")
+				:ARG0-of (x1 / mrs.)
+				:ARG1-of (x4 / appear-01
+					:time (x5 / today)
+					:time (x10 / morning
+						:mod (x9 / this)))))
+		:op1 (x18 / job
+			:quant (x16 / many)
+			:mod (x17 / more))
+		:op2 (x21 / opportunity
+			:mod (x20 / job))
+		:op1 (x26 / have-03
+			:ARG0 (x25 / you)
+			:ARG1 (x30 / wage-01
+				:purpose (x29 / train-01)))))
+
+# ::id 8
+# ::snt The minimum wage " is not the tool for lifting people out of poverty
+(x8 / tool
+	:domain (x3 / wage-01
+		:mod (x2 / minimum))
+	:ARG2 (x10 / lift-01
+		:ARG1 (x14 / poverty)))
+
+# ::id 9
+# ::snt Most people on minimum wage are very young, they are part-time workers ... they 're living at home and they 're not in poverty, " Mrs. Dole said
+(x30 / say-01
+	:ARG1 (x8 / young
+		:null_edge (x1 / most
+			:compared-to (x5 / wage-01
+				:mod (x4 / minimum)))
+		:degree (x7 / very)
+		:null_edge (x13 / person
+			:ARG0-of (w / work-01)
+			:mod (x12 / part-time))
+		:null_edge (x20 / and
+			:op2 (x17 / live-01
+				:location (x19 / home))
+			:op1 (x25 / poverty)))
+	:ARG0 (x29 / person
+		:name (n / name
+			:op1 "Dole")
+		:ARG0-of (x28 / mrs.)))
+
+# ::id 10
+# ::snt " If we are trying to lift people out of poverty, let's go to other means such as training and education and literacy .
+(x13 / let-01
+	:ARG1 (x5 / try-01
+		:ARG0 (x3 / we)
+		:ARG1 (x7 / lift-01
+			:ARG0 x3
+			:ARG1 (x11 / poverty)))
+	:ARG1 (x15 / go-01
+		:ARG4 (x18 / mean
+			:mod (x17 / other)
+			:example (x22 / and
+				:op1 (x21 / train-01
+					:ARG1 (x24 / and
+						:op2 (x23 / educate-01)
+						:op3 (x25 / literacy)))))))
+
+# ::id 11
+# ::snt " There's enough votes in our grasp here to see that we do n't bust the budget and increase the pressures on inflation by going beyond that which the secretary and I have agreed on, " Bush said Tuesday
+(x40 / say-01
+	:ARG0 (x5 / person
+		:ARG0-of (v / vote-01)
+		:mod (x4 / enough)
+		:prep-in (x8 / grasp-01)
+		:location (x9 / here)
+		:ARG1-of (x11 / see-01
+			:ARG1 (x19 / and
+				:op1 (x16 / bust-02
+					:ARG0 (x13 / we)
+					:ARG1 (x18 / budget))
+				:op2 (x20 / increase-01
+					:ARG0 x13
+					:ARG1 (x22 / pressure-01
+						:topic (x24 / inflation
+							:ARG1-of (x35 / agree-01
+								:ARG0 (x32 / and
+									:op1 (x31 / have-org-role-91
+										:ARG2 (s / secretary))
+									:op1 (x33 / i)))))))))
+	:ARG0 (x39 / person
+		:name (n / name
+			:op1 "Bush"))
+	:time (xap0 / date-entity
+		:weekday (x41 / tuesday)))
+
+# ::id 12
+# ::snt " We 've thought out a level of increase on the minimum wage that would help people and yet would not add gasoline to any inflation fires that are burning .
+(x4 / think-01
+	:ARG0 (x2 / we)
+	:ARG1 (x7 / level
+		:mod (x9 / increase-01
+			:ARG1 (x13 / wage-01
+				:mod (x12 / minimum)))
+		:mod (x18 / and
+			:op1 (x16 / help-01)
+			:op2 (x22 / add-04
+				:time (x19 / yet)
+				:ARG1 (x23 / gasoline)
+				:ARG2 (x27 / fire-02
+					:mod (x25 / any)
+					:ARG0 (x26 / inflation)
+					:ARG0-of (x30 / burn-01
+						:ARG0 (x28 / that)))))))
+
+# ::id 13
+# ::snt The 35 senators, if their support for Bush held, would leave Democrats short of the two-thirds majority needed to override a veto
+(x13 / leave-01
+	:ARG0 (x3 / senator
+		:quant 35)
+	:ARG1 (x10 / hold-01
+		:ARG0 (x7 / support-01
+			:ARG1 (x9 / person
+				:name (n1 / name
+					:op1 "Bush"))))
+	:ARG2 (x15 / short
+		:ARG0 (x14 / political-party
+			:name (n / name
+				:op1 "Democrats"))
+		:ARG2 (x19 / majority
+			:ARG0 x14
+			:ARG1 (x22 / override-01
+				:ARG1-of (x20 / need-01)
+				:ARG1 (x24 / veto)))))
+
+# ::id 14
+# ::snt " For eight years this same coalition of Republican senators has blocked any increase in the minimum wage, " said Sen. Edward M. Kennedy, D-Mass., sponsor of a Senate bill to raise the minimum wage to $ 4.65 by 1992
+(x21 / say-01
+	:ARG1 (x12 / block-01
+		:duration (x4 / temporal-quantity
+			:unit (y / year)
+			:quant 8)
+		:ARG0 (x7 / coalition
+			:mod (x5 / this)
+			:ARG1-of (x6 / same-41)
+			:consist-of (x10 / senator
+				:mod (x9 / political-party
+					:name (n2 / name
+						:op1 "Republican"))))
+		:ARG1 (x14 / increase-01
+			:mod (x13 / any)
+			:ARG1 (x18 / wage-01
+				:mod (x17 / minimum))))
+	:ARG0 (x23 / person
+		:name (n / name
+			:op1 "Edward"
+			:op2 "M."
+			:op3 "Kennedy")
+		:ARG0-of (x22 / sen.
+			:location (x27 / country
+				:name (n1 / name
+					:op1 "D-Mass.")))
+		:ARG0-of (x29 / sponsor-01
+			:ARG0 (x33 / bill
+				:mod (x32 / government-organization
+					:name (n3 / name
+						:op1 "Senate"))
+				:purpose (x35 / raise-01
+					:ARG1 (x38 / wage-01
+						:mod (x37 / minimum))
+					:quant (x41 / monetary-quantity
+						:unit (y1 / yuan)))
+				:time (x43 / date-entity
+					:year 1992)))))
+
+# ::id 15
+# ::snt " Every American who works for a living deserves a living wage, not a sub-poverty wage .
+(x9 / deserve-01
+	:ARG1 (x5 / work-09
+		:mod (x2 / every)
+		:ARG0 (x3 / country
+			:name (n / name
+				:op1 "American"))
+		:ARG3 (x8 / live-01))
+	:ARG1 (x12 / wage-01
+		:mod (x11 / live-01)))
+
+# ::id 16
+# ::snt Senate floor action is still pending on Kennedy's bill
+(x6 / pend-01
+	:ARG1 (x3 / action
+		:poss (x1 / government-organization
+			:name (n / name
+				:op1 "Senate"))
+		:mod (x2 / floor))
+	:mod (x5 / still)
+	:ARG2 (x10 / bill
+		:ARG0 (x8 / person
+			:name (n1 / name
+				:op1 "Kennedy"))))
+
+# ::id 17
+# ::snt The bill due for House debate today calls for raising the minimum wage to $ 4.65 by 1992 and has no provision for a sub-minimum training wage, an idea long opposed by the sponsors and organized labor, which has been lobbying heavily against such proposals
+(x8 / call-03
+	:ARG0 (x2 / bill)
+	:ARG2 (x3 / due
+		:ARG2 (x6 / debate-01
+			:ARG1 (x5 / have-org-role-91
+				:ARG1 (g / government-organization
+					:name (n / name
+						:op1 "House")))))
+	:time (x7 / today)
+	:ARG2 (x10 / raise-01
+		:ARG1 (x13 / wage-01
+			:mod (x12 / minimum))
+		:quant (x16 / monetary-quantity
+			:unit (y / yuan)))
+	:time (x18 / date-entity
+		:year 1992)
+	:ARG1 (x19 / and
+		:op1 (x22 / provision
+			:polarity -
+			:purpose (x27 / wage-01
+				:ARG1 (x26 / train-01))
+			:domain (x30 / idea
+				:ARG1-of (x32 / oppose-01
+					:duration (x31 / long)
+					:ARG0 (x36 / and
+						:op1 (x35 / sponsor-01)
+						:op1 (x38 / labor-01
+							:ARG1-of (x37 / organize-01)))))
+			:ARG0-of (x43 / lobby-01
+				:manner (x44 / heavily)
+				:ARG1 (x47 / thing
+					:ARG1-of (p / propose-01)
+					:mod (x46 / such))))))
+
+# ::id 18
+# ::snt But the sponsors, facing mounting pressure from the White House and moderate Democrats, agreed to scale back the final level to $ 4.55 and add a training wage in an amendment worked out Tuesday that has the support of the House leadership
+(x1 / contrast-01
+	:ARG2 (x16 / agree-01
+		:ARG0 (x3 / sponsor-01)
+		:ARG0 (x5 / face-01
+			:ARG1 (x7 / pressure-01
+				:ARG1-of (x6 / mount-02)
+				:ARG2 (x12 / and
+					:op1 (x11 / government-organization
+						:name (n / name
+							:op1 "House")
+						:null_edge (x10 / null_tag))
+					:op2 (x14 / have-org-role-91
+						:ARG1 (p / political-party
+							:name (n1 / name
+								:op1 "Democrats"))
+						:mod (x13 / moderate))))
+			:ARG0 (x26 / and
+				:op1 (x18 / scale-03
+					:mod (x19 / back)
+					:ARG1 (x22 / level
+						:mod (x21 / final)))
+				:op2 (x25 / monetary-quantity
+					:unit (y / yuan))
+				:op2 (x27 / add-04
+					:ARG1 (x30 / wage-01
+						:ARG1 (x29 / train-01))
+					:ARG2 (x33 / amend-01
+						:ARG0-of (x34 / work-01
+							:time (xap0 / date-entity
+								:weekday (x36 / tuesday)))
+						:ARG0-of (x40 / support-01
+							:ARG1 (x44 / lead-02
+								:ARG0-of (x43 / have-org-role-91
+									:ARG1 (g / government-organization
+										:name (n2 / name
+											:op1 "House")))))))))
+		:ARG1 x26))
+
+# ::id 19
+# ::snt At the same time, however, they said they would move up the effective date of the initial increase, to $ 3.85 an hour, to Oct. 1, three months earlier than had been planned
+(x9 / say-01
+	:time (x4 / time
+		:ARG1-of (x3 / same-41))
+	:ARG0 (x8 / they)
+	:ARG1 (x12 / move-01
+		:ARG1 (x16 / date
+			:mod (x15 / effective)
+			:ARG2-of (x20 / increase-01
+				:time (x19 / initial)))
+		:time (x29 / date-entity)
+		:time (x34 / early
+			:op1 (x32 / date-entity)
+			:op1 (x38 / plan-01))))
+
+# ::id 20
+# ::snt The amendment, to be offered Thursday, calls for then boosting the minimum wage to $ 4.25 on Oct. 1, 1990, and to $ 4.55 a year later
+(x9 / call-03
+	:ARG0 (x2 / amend-01)
+	:ARG1 (x6 / offer-01
+		:time (xap0 / date-entity
+			:weekday (x7 / thursday)))
+	:ARG2 (x12 / boost-01
+		:time (x11 / then)
+		:ARG1 (x15 / wage-01
+			:mod (x14 / minimum))
+		:time (x20 / date-entity
+			:year 1990)
+		:time (xap1 / before
+			:quant (x30 / temporal-quantity
+				:unit (y / year)))))
+
+# ::id 21
+# ::snt The 60-day training wage would apply only to new entrants in the job market, exclude agricultural workers, and expire on Sept. 30, 1992, according to aides
+(xap0 / say-01
+	:ARG1 (x20 / and
+		:op1 (x6 / apply-02
+			:ARG1 (x4 / wage-01
+				:ARG1 (x3 / train-01))
+			:mod (x7 / only)
+			:ARG2 (x10 / entrant
+				:mod (x9 / new)
+				:ARG2 (x14 / market
+					:mod (x13 / job))))
+		:op2 (x16 / exclude-01
+			:ARG1 (x18 / person
+				:ARG0-of (w / work-01)
+				:mod (x17 / agriculture)))
+		:op2 (x21 / expire
+			:time (x23 / date-entity
+				:year 1992)))
+	:ARG0-of (x30 / have-org-role-91
+		:ARG2 (a / aide)))
+
+# ::id 22
+# ::snt The training wage would initially be $ 3.35 an hour but would increase to 85 percent of the subsequent increases in the minimum wage
+(x13 / increase-01
+	:ARG1 (x3 / wage-01
+		:ARG1 (x2 / train-01)
+		:time (x5 / initial)
+		:quant (x8 / monetary-quantity
+			:unit (y / yuan))
+		:duration (x10 / temporal-quantity
+			:unit (h / hour)))
+	:ARG0 (x20 / increase-01
+		:quant (x16 / percentage-entity
+			:value 85)
+		:ARG1-of (x19 / subsequent)
+		:ARG1-of (x24 / wage-01
+			:mod (x23 / minimum))))
+
+# ::id 23
+# ::snt Workers hired to fill jobs that had been vacated by recent layoffs could not be paid the training wage, a provision designed to prevent abuse of the system in order to pay lower wages
+(x13 / possible
+	:domain (x16 / pay-01
+		:ARG1 (x1 / person
+			:ARG0-of (w / work-01)
+			:ARG1-of (x2 / hire-01
+				:ARG2 (x4 / fill-01
+					:ARG1 (x5 / job
+						:ARG1-of (x9 / vacate
+							:ARG0 (x12 / layoff
+								:time (x11 / recent))))))))
+	:domain (xap0 / and
+		:ARG1 (x19 / wage-01
+			:ARG1 (x18 / train-01))
+		:op2 (x22 / provision
+			:ARG1-of (x23 / design-01
+				:purpose (x25 / prevent-01
+					:ARG1 (x26 / abuse-01
+						:ARG0 (x29 / system))
+					:purpose (x33 / pay-01
+						:ARG1 (x35 / wage
+							:mod (x34 / low))))))))
+

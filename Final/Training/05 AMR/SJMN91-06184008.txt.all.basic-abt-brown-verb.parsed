@@ -1,0 +1,530 @@
+# ::id 1
+# ::snt " What are they waiting for
+(x5 / wait-01)
+
+# ::id 2
+# ::snt Does it mean that something's up ?
+(x3 / mean-01
+	:ARG1 (x5 / something))
+
+# ::id 3
+# ::snt asks William Dudley, senior economist at Goldman Sachs & Co. ; Delaying reappointment, say some analysts, is the Bush administration's way of keeping Greenspan on tenterhooks and making sure the central bank does n't assert its independence too strongly. ; Dudley says the fact that Greenspan has n't been reappointed with six weeks left in that Greenspan term " does raise legitimate questions " about the Bush administration's intentions. ; Bush and Bush advisers have often criticized Greenspan's Fed and have implied that the central bank waited too long to cut interest rates at the start of the recession last summer
+(x / xconcept
+	:x (x12 / and
+		:op1 (x1 / ask-01
+			:ARG2 (x2 / name
+				:op1 "William"
+				:op2 "Dudley"
+				:ARG0-of (x6 / economist
+					:mod (x5 / senior)
+					:location (x8 / government-organization
+						:name (n / name
+							:op1 "Goldman"
+							:op2 "Sachs"
+							:op3 "&")))))
+		:op1 (x13 / delay-01)
+		:op1 (x14 / reappointment)
+		:op1 (x55 / reappoint
+			:ARG1 (x51 / person
+				:name (n1 / name
+					:op1 "Greenspan")))
+		:op1 (x59 / leave-06
+			:duration (x58 / temporal-quantity
+				:unit (w / week)
+				:quant 6)
+			:purpose (x66 / raise-01
+				:ARG1 (x68 / question-01
+					:ARG1 (x63 / term
+						:mod (x61 / that)
+						:poss (x62 / person
+							:name (n2 / name
+								:op1 "Greenspan")))
+					:mod (x67 / legitimate)
+					:topic (x75 / intend-01
+						:mod (xap1 / government-organization
+							:mod (x72 / person
+								:name (n3 / name
+									:op1 "Bush"))
+							:ARG0-of (x73 / administrate-01))))))
+		:op1 (x95 / wait-01
+			:ARG0 (x94 / bank
+				:mod (x93 / central))
+			:ARG2 (x97 / long
+				:degree (x96 / too))
+			:ARG2 (x99 / cut-04
+				:ARG0 x94
+				:ARG1 (x101 / rate
+					:mod (x100 / interest))
+				:time (x104 / start-01
+					:ARG1 (x107 / recession
+						:season (x109 / summer
+							:mod (x108 / last)))))))
+	:x (x77 / and
+		:op7 (x25 / way
+			:null_edge (x31 / and
+				:op1 (x16 / say-01
+					:ARG1 (x18 / person
+						:ARG0-of (a / analyze-01)
+						:quant (x17 / some)))
+				:op1 (x27 / keep-04
+					:ARG1 (x28 / person
+						:name (n5 / name
+							:op1 "Greenspan")))
+				:op1 (x30 / tenterhooks)
+				:op2 (x32 / make-02
+					:ARG1 (x39 / assert-02
+						:ARG0 (x36 / bank
+							:mod (x35 / central))
+						:ARG1 (x41 / depend-01
+							:polarity -)
+						:manner (x43 / strong
+							:degree (x42 / too))))
+				:op1 (x47 / say-01
+					:ARG0 (x46 / person
+						:name (n6 / name
+							:op1 "Dudley")))
+				:op1 (x84 / criticize-01
+					:ARG0 (x81 / have-org-role-91
+						:ARG2 (p / person
+							:ARG0-of (a1 / advise-01)))
+					:frequency (x83 / often)
+					:ARG1 (x88 / and
+						:op1 (x87 / have-org-role-91
+							:ARG1 (g / government-organization
+								:name (n7 / name
+									:op1 "Fed"))
+							:null_edge (x85 / person
+								:name (n8 / name
+									:op1 "Greenspan")))
+						:op2 (x90 / imply-01
+							:ARG0 x85))))
+			:ARG0 (xap0 / government-organization
+				:mod (x22 / person
+					:name (n4 / name
+						:op1 "Bush"))
+				:ARG0-of (x23 / administrate-01)))
+		:op2 (x79 / and
+			:op1 (x78 / person
+				:name (n9 / name
+					:op1 "Bush"))
+			:op2 (x80 / person
+				:name (n10 / name
+					:op1 "Bush")))))
+
+# ::id 4
+# ::snt And, in recent weeks, there have been vague rumors in the financial markets that the administration may seek to replace Greenspan. ; One name that has popped up as a prospective candidate is Martin Feldstein, the former chairman of President Reagan's Council of Economic Advisers
+(x1 / and
+	:op2 (x11 / rumor-01
+		:time (x5 / week
+			:mod (x4 / recent))
+		:mod (x10 / vague)
+		:location (x15 / market
+			:mod (x14 / finance))
+		:ARG1 (x20 / seek-01
+			:mod (x19 / possible)
+			:ARG1 (x22 / replace-01
+				:ARG1 (x23 / person
+					:name (n / name
+						:op1 "Greenspan")))
+			:ARG0 (xap0 / government-organization
+				:ARG0-of (x18 / administrate-01)))
+		:name (x37 / name
+			:op1 "Martin"
+			:op2 "Feldstein"
+			:ARG0-of (x30 / pop-04)
+			:ARG0-of (x35 / candidate
+				:mod (x34 / prospective))
+			:ARG0-of (x42 / have-org-role-91
+				:ARG2 (c / chairman)
+				:mod (x41 / former)
+				:ARG1 (x47 / government-organization
+					:name (n1 / name
+						:op1 "Council"
+						:op2 "of"
+						:op3 "Economic"
+						:op4 "Advisers")
+					:poss (x45 / person
+						:name (n2 / name
+							:op1 "Reagan")
+						:ARG0-of (x44 / have-org-role-91
+							:ARG2 (p / president))))))))
+
+# ::id 5
+# ::snt Greenspan. ; One name that has popped up as a prospective candidate is Martin Feldstein , the former chairman of President Reagan's Council of Economic Advisers is rumored to be interested in the Fed chairmanship and supposedly has some backing from within the Bush administration. ; Feldstein did n't return several telephone calls to Martin Feldstein , the former chairman of President Reagan's Council of Economic Advisers office in Cambridge, Mass., where the president is president of the National Bureau of Economic Research. ; However, David Jones, economist at Aubrey G. Lanston & Co., says the idea of Feldstein as Fed chairman is " a little far-fetched .
+(x105 / say-01
+	:ARG0 (x72 / office
+		:name (x1 / name
+			:op1 "Greenspan"
+			:op2 "."
+			:op3 ";"
+			:op4 "One"
+			:op5 "name"
+			:op6 "that"
+			:op7 "has"
+			:op8 "popped"
+			:op9 "up"
+			:op10 "as"
+			:op11 "a"
+			:op12 "prospective"
+			:op13 "candidate"
+			:op14 "is"
+			:op15 "Martin"
+			:op16 "Feldstein"
+			:op17 ","
+			:op18 "the"
+			:op19 "former"
+			:op20 "chairman"
+			:op21 "of"
+			:op22 "President"
+			:op23 "Reagan"
+			:op24 "'s"
+			:op25 "Council"
+			:op26 "of"
+			:op27 "Economic"
+			:op28 "Advisers"
+			:op29 "is"
+			:op30 "rumored"
+			:op31 "to"
+			:op32 "be"
+			:op33 "interested"
+			:op34 "in"
+			:op35 "the"
+			:op36 "Fed"
+			:op37 "chairmanship"
+			:op38 "and"
+			:op39 "supposedly"
+			:op40 "has"
+			:op41 "some"
+			:op42 "backing"
+			:op43 "from"
+			:op44 "within"
+			:op45 "the"
+			:op46 "Bush"
+			:op47 "administration"
+			:op48 "."
+			:op49 ";"
+			:op50 "Feldstein"
+			:op51 "did"
+			:op52 "n't"
+			:op53 "return"
+			:op54 "several"
+			:op55 "telephone"
+			:op56 "calls"
+			:op57 "to"
+			:op58 "Martin"
+			:op59 "Feldstein"
+			:op60 ","
+			:op61 "the"
+			:op62 "former"
+			:op63 "chairman"
+			:op64 "of"
+			:op65 "President"
+			:op66 "Reagan"
+			:op67 "'s"
+			:op68 "Council"
+			:op69 "of"
+			:op70 "Economic"
+			:op71 "Advisers"
+			:ARG0-of (x63 / have-org-role-91
+				:ARG2 (c / chairman)
+				:mod (x62 / former))
+			:null_edge (x65 / have-org-role-91
+				:ARG2 (p / president))
+			:null_edge (x70 / null_tag))
+		:location (x74 / country
+			:name (n1 / name
+				:op1 "Cambridge")
+			:location (x76 / country
+				:name (n2 / name
+					:op1 "Mass."))))
+	:ARG0 (x94 / newspaper
+		:name (n / name
+			:op1 "David"
+			:op2 "Jones")
+		:ARG0-of (x97 / economist
+			:location (x99 / government-organization
+				:name (n3 / name
+					:op1 "Aubrey"
+					:op2 "G."
+					:op3 "Lanston"
+					:op4 "&"))))
+	:ARG1 (x117 / far-fetched
+		:domain (x107 / idea
+			:poss (x109 / person
+				:name (n4 / name
+					:op1 "Feldstein"))
+			:ARG2 (x112 / have-org-role-91
+				:ARG2 (c1 / chairman)))
+		:mod (x116 / little)))
+
+# ::id 6
+# ::snt ; " There's nobody in the wings, in the way that Greenspan was in the wings " when former Fed Chairman Paul Volcker was being considered for reappointment, says Jones. ; Volcker was reappointed June 18, 1983, after considerable public debate
+(x32 / say-01
+	:ARG1 (x8 / wing
+		:ARG0 (x5 / nobody
+			:manner (x12 / way
+				:null_edge (x14 / person
+					:name (n1 / name
+						:op1 "Greenspan")
+					:ARG1-of (x28 / consider-01
+						:ARG1 (x18 / wing)
+						:ARG0 (x24 / person
+							:name (n2 / name
+								:op1 "Paul"
+								:op2 "Volcker")
+							:mod (x21 / former)
+							:ARG0-of (x23 / have-org-role-91
+								:ARG2 (c / chairman)
+								:ARG1 (x22 / have-org-role-91
+									:ARG1 (g / government-organization
+										:name (n3 / name
+											:op1 "Fed")))))
+						:ARG1 (x30 / reappointment))))))
+	:ARG0 (x33 / person
+		:name (n / name
+			:op1 "Jones")))
+
+# ::id 7
+# ::snt Then-President Reagan's Treasury secretary, Donald Regan, opposed Volcker's reappointment, but Volcker's popularity in the financial community pushed Reagan into giving former Fed Chairman Paul Volcker four more years. ; Greenspan also holds the confidence of the financial community. ; " the confidence of the financial community.'s hard to fault that Greenspan performance, in terms of that Greenspan pushing for an ease, while maintaining the credibility of the Fed, " says Goldman's Dudley. ; Even so, the June 18 date Volcker was reappointed was viewed late and that date has long since passed for Greenspan
+(x102 / and
+	:op1 (x100 / view-02
+		:time (x101 / late))
+	:op2 (x108 / pass-05
+		:ARG1 (x104 / date
+			:mod (x103 / that))
+		:time (x107 / since
+			:op1 (x106 / long))
+		:ARG2 (x110 / person
+			:name (n / name
+				:op1 "Greenspan"))))
+
+# ::id 8
+# ::snt Some analysts note, too, that Joint Chiefs of Staff Chairman Gen. Colin Powell, whose term was n't up until October, has already been reappointed. ; " There are reasons to ask questions " about whether a Fed chairman should be retained, says Carol Stone, senior economist at Nomura Securities International Inc. " After all, we 've had a recession .
+(x / xconcept
+	:x (x30 / and
+		:op2 (x3 / note-01
+			:ARG0 (x2 / person
+				:ARG0-of (a / analyze-01)
+				:quant (x1 / some))
+			:mod (x5 / too)
+			:ARG1-of (xap1 / cause-01
+				:ARG1 (x36 / ask-02
+					:ARG1 (x37 / question-01)
+					:ARG2 (x44 / recommend-01
+						:ARG1 (x46 / retain-01
+							:ARG1 (x43 / have-org-role-91
+								:ARG2 (c / chairman))))
+					:ARG1 (x48 / say-01
+						:topic (x67 / recession
+							:time (x60 / after)
+							:domain (x63 / we))))
+				:name (x49 / name
+					:op1 "Carol"
+					:op2 "Stone"
+					:ARG0-of (x53 / economist
+						:mod (x52 / senior)
+						:location (x55 / government-organization
+							:name (n / name
+								:op1 "Nomura"
+								:op2 "Securities"
+								:op3 "International"
+								:op4 "Inc."))))))
+		:op2 (x18 / term
+			:time (x22 / until
+				:op1 (x23 / date-entity)))
+		:op2 (x28 / reappoint
+			:time (x26 / already)
+			:ARG0 (xap0 / person
+				:op1 (x8 / organization
+					:name (n1 / name
+						:op1 "Joint"
+						:op2 "Chiefs")
+					:poss (x15 / person
+						:name (n2 / name
+							:op1 "Powell")
+						:null_edge (x11 / null_tag)
+						:null_edge (x12 / have-org-role-91
+							:ARG2 (c1 / chairman))
+						:null_edge (x14 / person
+							:name (n3 / name
+								:op1 "Colin"))))))))
+
+# ::id 9
+# ::snt ; Indeed, the U.S. economy has been locked in a recession since July 1990. ; But few economists lay the recession at the Fed's doorstep and, Stone says, " The level of satisfaction (with Greenspan )is certainly sufficient to keep that Greenspan on .
+(x18 / contrast-01
+	:ARG2 (x29 / and
+		:op1 (x9 / lock-03
+			:mod (x2 / indeed)
+			:ARG1 (x6 / economy
+				:mod (x5 / country
+					:name (n2 / name
+						:op1 "U.S.")))
+			:ARG2 (x12 / recession
+				:time (x13 / since
+					:op1 (x14 / date-entity
+						:year 1990))))
+		:op2 (x21 / lay-02
+			:ARG1 x6
+			:ARG0 (x20 / economist
+				:quant (x19 / few))
+			:ARG1 (x23 / recession)
+			:ARG2 (x28 / doorstep))
+		:op2 (x32 / say-01
+			:ARG0 (x31 / person
+				:name (n1 / name
+					:op1 "Stone"))))
+	:ARG2 (x36 / level
+		:mod (x38 / satisfy-01
+			:ARG1 (x41 / person
+				:name (n / name
+					:op1 "Greenspan")))
+		:accompanier x41)
+	:ARG2 (x45 / suffice-01
+		:mod (x44 / certain)
+		:ARG1 (x47 / keep-04
+			:ARG0 x36)))
+
+# ::id 10
+# ::snt ; Jones of Lanston, a firm noted for a firm Fed connections, says David Jones , economist at Aubrey G. Lanston & Co. " sources inside the Fed say nobody feels anything other than that Greenspan will be reappointed .
+(x31 / say-01
+	:ARG0 (x27 / source
+		:ARG0-of (x15 / say-01
+			:ARG0 (x2 / person
+				:name (n / name
+					:op1 "Jones"
+					:op2 "of"
+					:op3 "Lanston")))
+		:name (x16 / name
+			:op1 "David"
+			:op2 "Jones"
+			:ARG0-of (x19 / economist
+				:location (x21 / government-organization
+					:name (n2 / name
+						:op1 "Aubrey"
+						:op2 "G."
+						:op3 "Lanston"
+						:op4 "&"))))
+		:location (x28 / inside
+			:op1 (x30 / have-org-role-91
+				:ARG1 (g / government-organization
+					:name (n1 / name
+						:op1 "Fed")))))
+	:ARG1 (x33 / feel-01
+		:ARG0 (x32 / nobody)
+		:ARG1 (x34 / anything)))
+
+# ::id 11
+# ::snt ; If reappointed, Greenspan would have to go through another round of confirmation hearings before the Senate Banking Committee. ; But a Fed spokesman in Washington says those hearings could be scheduled for a date after the Aug. 11 end of the chairman's first term, provided the president said the president wanted Greenspan to carry on. ; Technically, that means Greenspan could be kept in limbo until after his mid-July Humphrey-Hawkins testimony, where the president will give the central bank's economic outlook for the rest of the year
+(x23 / contrast-01
+	:ARG2 (x5 / person
+		:name (n / name
+			:op1 "Greenspan"))
+	:ARG2 (x29 / say-01
+		:ARG1 (x32 / possible
+			:domain (x34 / schedule-01
+				:ARG1 (x31 / hearing)
+				:null_edge (x35 / null_tag
+					:op1 (x37 / date-entity
+						:ARG1-of (x53 / say-01
+							:time (x38 / after
+								:op1 (x41 / date-entity))
+							:ARG1 (xap3 / multi-sentence
+								:ARG0-of (x52 / have-org-role-91
+									:ARG2 (p / president))
+								:ARG1 (x56 / want-01
+									:ARG1 (x59 / carry-01
+										:ARG0 (x57 / person
+											:name (n5 / name
+												:op1 "Greenspan")))
+									:ARG1 (xap2 / person
+										:ARG0-of (x55 / have-org-role-91
+											:ARG2 (p1 / president))))
+								:snt3 (x66 / mean-01
+									:ARG1 (x63 / technically)
+									:ARG0 (x65 / that)
+									:ARG1 (x68 / possible
+										:domain (x70 / keep-01
+											:ARG1 (x67 / person
+												:name (n6 / name
+													:op1 "Greenspan"))
+											:location (x72 / limbo
+												:ARG1 x67)
+											:time (x73 / until
+												:op1 (x74 / after
+													:op1 (x78 / testify-01
+														:ARG0 (x77 / newspaper
+															:name (n7 / name
+																:op1 "Humphrey-Hawkins"))))))))))))))
+		:ARG0 (xap1 / person
+			:ARG0-of (x26 / have-org-role-91
+				:ARG2 (s / spokesman)
+				:ARG1 (x25 / have-org-role-91
+					:ARG1 (g / government-organization
+						:name (n1 / name
+							:op1 "Fed")))
+				:ARG1 (x28 / city
+					:name (n2 / name
+						:op1 "Washington")))))
+	:ARG2 (xap0 / obligate-01
+		:ARG2 (x9 / go-02
+			:ARG4 (x12 / round
+				:mod (x11 / another)
+				:mod (x15 / hearing
+					:mod (x14 / confirm-01)
+					:time (x16 / before
+						:op1 (x19 / government-organization
+							:name (n3 / name
+								:op1 "Banking"
+								:op2 "Committee")
+							:mod (x18 / government-organization
+								:name (n4 / name
+									:op1 "Senate")))))))))
+
+# ::id 12
+# ::snt No date has been set as yet for the semi-annual Humphrey-Hawkins hearing. ; A reappointment delay would sustain the administration's pressure on the Fed chairman not to say or do anything particularly depressing in regard to economic growth. ; " By delaying the reappointment, the administration is able to put considerable political heat on Greenspan, " says Jones
+(x62 / say-01
+	:ARG1 (x5 / set-08
+		:time (x7 / yet)
+		:purpose (x12 / hearing
+			:mod (x10 / temporal-quantity
+				:unit (w / week))
+			:mod (x11 / country
+				:name (n1 / name
+					:op1 "Humphrey-Hawkins"))))
+	:ARG0 (x63 / person
+		:name (n / name
+			:op1 "Jones")))
+
+# ::id 13
+# ::snt " his mid-July Humphrey-Hawkins can lean on the semi-annual Humphrey-Hawkins hearing. a little more strongly .
+(x3 / mid-july
+	:null_edge (x4 / null_tag
+		:mod (x5 / possible
+			:time (x11 / hearing
+				:mod (x9 / temporal-quantity
+					:unit (w / week))
+				:mod (x10 / country
+					:name (n / name
+						:op1 "Humphrey-Hawkins"))))
+		:mod (x14 / little))
+	:null_edge (x16 / strong
+		:degree (x15 / more)))
+
+# ::id 14
+# ::snt ; Certainly, there's been heat on the Fed in the last few months from the administration and from private analysts
+(x / xconcept
+	:x (x1 / and
+		:op1 (x7 / heat
+			:mod (x2 / certain)
+			:location (x10 / have-org-role-91
+				:ARG1 (g / government-organization
+					:name (n / name
+						:op1 "Fed")))
+			:null_edge (x14 / few
+				:op1 (x15 / month
+					:source (x19 / and
+						:op1 (x18 / administrate-01)
+						:op2 (x22 / person
+							:ARG0-of (a / analyze-01)
+							:mod (x21 / private))))))))
+
