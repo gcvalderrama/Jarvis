@@ -184,6 +184,9 @@ write_excel = True
 rouge_v2('../LAB/ManualSummaries/*.txt', '../LAB/RSTSummaries/', 'RST Rouge')
 rouge_v2('../LAB/ManualSummaries/*.txt', '../LAB/ConceptualSummaries/', 'ConceptualSummariesNer')
 rouge_v2('../LAB/ManualSummaries/*.txt', '../LAB/ConceptualSummariesClean/', 'ConceptualSummaries')
+rouge_v2('../LAB/ManualSummaries/*.txt', '../LAB/AMRRSTSummaries50/', 'AMRRST50')
+rouge_v2('../LAB/ManualSummaries/*.txt', '../LAB/AMRRSTSummaries65/', 'AMRRST65')
+rouge_v2('../LAB/ManualSummaries/*.txt', '../LAB/AMRRSTSummaries85/', 'AMRRST85')
 rouge_v2('../LAB/ManualSummaries/*.txt', '../LAB/AMRRSTSummaries/', 'AMRRST')
 if write_excel:
     workbook.close()
