@@ -1,0 +1,308 @@
+# ::id 1
+# ::snt A government scientist says his detailed new analysis disproves the theory that volcanoes are more likely to erupt at certain times of the year
+(x4 / say-01
+	:ARG0 (x3 / have-org-role-91
+		:ARG2 (s / scientist)
+		:ARG1 (x2 / government-organization
+			:ARG0-of (g / govern-01)))
+	:ARG1 (x9 / disprove-01
+		:ARG0 (x8 / analyze-01
+			:ARG1-of (x6 / detail-01)
+			:mod (x7 / new))
+		:ARG1 (x16 / likely
+			:domain (x11 / theory
+				:ARG0 (x13 / volcano))
+			:degree (x15 / more)
+			:domain (x18 / erupt-01
+				:time (x24 / year
+					:mod (x20 / certain))))))
+
+# ::id 2
+# ::snt Historically, volcanoes have erupted slightly more often in some months than others, leading to disputes over whether the variation was enough to constitute a periodic pattern
+(x5 / erupt-01
+	:mod (x1 / historically)
+	:ARG1 (x3 / volcano)
+	:frequency (x8 / often
+		:degree (x6 / slight)
+		:degree (x7 / more))
+	:ARG1 (x13 / other
+		:quant (x10 / some)
+		:quant (x11 / month))
+	:ARG0-of (x15 / lead-03
+		:ARG1 x3
+		:ARG1 (xap0 / possible
+			:ARG0 (x21 / variation)
+			:domain (x25 / constitute-01
+				:ARG1 (x28 / pattern
+					:mod (x27 / periodic))))))
+
+# ::id 3
+# ::snt Richard B. Stothers concluded that it is n't in a report in the May issue of Geophysical Research Letters, published by the American Geophysical Union
+(x4 / conclude-01
+	:ARG0 (x1 / person
+		:name (n / name
+			:op1 "Richard"
+			:op2 "B."
+			:op3 "Stothers"))
+	:medium (x11 / report
+		:name (x14 / name
+			:op1 "May"
+			:op2 "issue"
+			:op3 "of"
+			:op4 "Geophysical"
+			:op5 "Research"
+			:op6 "Letters")
+		:ARG1-of (x21 / publish-01
+			:ARG0 (x25 / government-organization
+				:name (n1 / name
+					:op1 "Geophysical"
+					:op2 "Union")))))
+
+# ::id 4
+# ::snt Stothers, of the National Aeronautics and Space Administration's Goddard Space Flight Center in Greenbelt, Md., compared the dates of recorded strong volcanic eruptions between 1500 and 1980
+(x20 / compare-01
+	:ARG1 (x22 / date
+		:ARG0 (x1 / stothers
+			:poss (x14 / center
+				:null_edge (x5 / government-organization
+					:name (n / name
+						:op1 "National"
+						:op2 "Aeronautics"
+						:op3 "and"
+						:op4 "Space"
+						:op5 "Administration"))
+				:null_edge (x11 / goddard)
+				:null_edge (x12 / space)
+				:null_edge (x13 / flight)
+				:null_edge (x16 / country
+					:name (n1 / name
+						:op1 "Greenbelt")
+					:null_edge (x18 / country
+						:name (n2 / name
+							:op1 "Md.")))))
+		:ARG1 (x27 / eruption
+			:ARG1-of (x24 / record-01)
+			:mod (x25 / strong)
+			:mod (x26 / volcanic)
+			:mod (x28 / between
+				:null_edge (x30 / null_tag
+					:null_edge 1500
+					:op2 (x31 / date-entity
+						:year 1980))))))
+
+# ::id 5
+# ::snt During that time 265 eruptions were recorded in the first half of each calendar year and 236 in the last six months, a difference Stothers said is not statistically significant
+(x27 / say-01
+	:ARG0 (x26 / person
+		:name (n / name
+			:op1 "Stothers"))
+	:ARG1 (x31 / significant
+		:ARG1-of (x7 / record-01
+			:mod (x2 / that)
+			:ARG1 (x5 / eruption
+				:quant (x4 / 265))
+			:ARG0 (x16 / and
+				:op1 (x15 / year
+					:mod (x13 / each))
+				:op2 (x17 / 236))
+			:duration (x22 / temporal-quantity
+				:unit (m / month)
+				:quant 6))
+		:mod (x30 / statistically)))
+
+# ::id 6
+# ::snt 
+(x16 / contrast-01
+	:ARG2 (x1 / break-08
+		:ARG1 (x4 / eruption)
+		:ARG0 (x7 / and
+			:op1 (x6 / temporal-quantity
+				:unit (m / month))
+			:op2 (x8 / area)))
+	:ARG1 (x12 / find-02
+		:ARG0 (x10 / person
+			:name (n / name
+				:op1 "Stothers"))
+		:ARG1 (x14 / clustering
+			:quant (x13 / some)))
+	:ARG2 (x22 / conclude-01
+		:ARG0 x10
+		:ARG1 (x19 / explainable
+			:domain (x17 / this))))
+
+# ::id 7
+# ::snt For example, nearly all eruptions south of 50 degrees south latitude occurred between November and April
+(x7 / south
+	:age (x4 / nearly
+		:op1 (x6 / eruption)
+		:op1 (x12 / latitude
+			:null_edge 50
+			:null_edge (x10 / null_tag))
+		:op1 (x15 / date-entity)))
+
+# ::id 8
+# ::snt This is almost certainly because that is summer in that part of the world, the time of year the nearly uninhabited region is most often visited by outsiders who would record eruptions, Stothers said
+(x36 / say-01
+	:mod (x4 / certain
+		:domain (x1 / this)
+		:mod (x3 / almost)
+		:ARG1-of (x5 / cause-01
+			:ARG0 (xap0 / rate-entity-91
+				:season (x8 / summer)
+				:ARG4 (x27 / visit-01
+					:ARG1 (x23 / region
+						:mod (x22 / uninhabited
+							:compared-to (x14 / world)
+							:degree (x21 / nearly)))
+					:frequency (x26 / often
+						:degree (x25 / most))
+					:ARG0 (x29 / outsider
+						:mod (x32 / record-01
+							:ARG1 (x33 / eruption)))))))
+	:ARG0 (x35 / person
+		:name (n / name
+			:op1 "Stothers")))
+
+# ::id 9
+# ::snt No similar pattern was seen in the far north, where residents are always present to notice eruptions
+(x5 / see-01
+	:ARG1 (x3 / pattern
+		:ARG1-of (x2 / resemble-01
+			:op (s / similar)))
+	:time (x15 / present
+		:mod (x8 / far)
+		:domain (x12 / person
+			:ARG0-of (r / reside-01))
+		:null_edge (x14 / always)
+		:domain (x17 / notice-01
+			:ARG0 x12
+			:ARG1 (x18 / eruption))))
+
+# ::id 10
+# ::snt Stother's monthly analysis found a peak average of 52 eruptions in February between the years 1500 and 1980 and a minimum of 36 eruptions in the months of April and December during that period
+(x5 / find-02
+	:ARG0 (x4 / analyze-01
+		:poss (x1 / person
+			:name (n / name
+				:op1 "Stother"))
+		:frequency (xap0 / rate-entity-91
+			:ARG3 (x3 / temporal-quantity
+				:unit (m / month))))
+	:ARG1 (x20 / and
+		:op1 (x8 / average
+			:mod (x7 / peak-01)
+			:ARG1 (x11 / eruption
+				:quant 52
+				:time (x13 / date-entity)
+				:mod (x14 / between
+					:op1 (x16 / year
+						:quant 1500
+						:null_edge (x18 / null_tag
+							:op2 (x19 / date-entity
+								:year 1980))))))
+		:op2 (x22 / minimum
+			:ARG1 (x25 / eruption
+				:quant 36)))
+	:ARG1 (x31 / and
+		:op1 (x28 / month)
+		:op1 (x30 / date-entity)
+		:op2 12)
+	:time (x33 / during))
+
+# ::id 11
+# ::snt The average number of eruptions in other months fell in between those two, a variation within the range that statisticians would expect to occur in a random sample
+(x9 / fall-01
+	:ARG1 (x5 / eruption
+		:quant (x3 / number
+			:ARG2-of (x2 / average-01))
+		:time (x8 / month
+			:mod (x7 / other)))
+	:null_edge (x29 / thing
+		:ARG1-of (s / sample-01)
+		:null_edge 2
+		:ARG1-of (x23 / expect-01
+			:ARG0 (x16 / variation
+				:ARG1 (x19 / range))
+			:ARG0 (x21 / statistician))
+		:mod (x28 / random)))
+
+# ::id 12
+# ::snt Stother's analysis rebuts several studies done in the late 1800s and early in this century that indicated a seasonality to volcanic eruptions
+(x4 / rebut
+	:ARG0 (x3 / analyze-01
+		:poss (x1 / person
+			:name (n / name
+				:op1 "Stother")))
+	:ARG1 (x6 / study-01
+		:quant (x5 / several)
+		:ARG1-of (x7 / do-02
+			:time (xap0 / date-entity
+				:decade (x11 / winter
+					:time (x10 / late))
+				:time (x13 / early
+					:op1 (x16 / temporal-quantity
+						:unit (c / century)
+						:mod (x15 / this)))))
+		:ARG1-of (x18 / indicate-01
+			:ARG1 (x20 / seasonality
+				:ARG1 (x23 / eruption
+					:mod (x22 / volcanic))))))
+
+# ::id 13
+# ::snt At least one 1917 report speculated that eruptions would cluster around the equinoxes in the spring and fall as a result of changes in the angle of the sun
+(x6 / speculate-01
+	:ARG0 (x5 / report
+		:time (x4 / date-entity
+			:year 1917))
+	:ARG1 (x10 / cluster-01
+		:ARG0 (x8 / eruption)
+		:ARG2 (x11 / around
+			:op1 (x13 / equinox))
+		:time (x17 / and
+			:op2 (x18 / fall-01)
+			:ARG2-of (x21 / result-01
+				:ARG1 (x23 / change-01
+					:ARG1 (x26 / angle
+						:poss (x29 / sun))))
+			:op1 (xap0 / date-entity
+				:season (x16 / spring)))))
+
+# ::id 14
+# ::snt Periodic springtime eruptions of some volcanoes have been associated with melting snow seeping into the ground and reacting with molton lava below the ground, scientists have suggested
+(x9 / associate-01
+	:ARG1 (x3 / eruption
+		:mod (x1 / periodic)
+		:mod (x2 / springtime)
+		:poss (x6 / volcano
+			:quant (x5 / some)))
+	:ARG2 (x17 / and
+		:op1 (x13 / seep
+			:ARG1 (x12 / snow
+				:mod (x11 / melting))
+			:ARG4 (x16 / ground))
+		:op2 (x18 / react-01
+			:ARG0 x12
+			:ARG1 (x21 / lava
+				:mod (x20 / molton)
+				:location (x24 / ground)
+				:ARG0-of (x28 / suggest-01
+					:ARG0 (x26 / scientist))))))
+
+# ::id 15
+# ::snt But seasonality occurring at individual volcanoes disappears when they are averaged in with many others around the world, according to Stother's analysis
+(x1 / contrast-01
+	:ARG2 (x7 / disappear-01
+		:ARG0 (x2 / seasonality
+			:ARG1 (x6 / volcano
+				:mod (x5 / individual))))
+	:ARG2 (xap0 / say-01
+		:ARG2 (x11 / average-01
+			:ARG1 (x15 / other
+				:quant (x14 / many)
+				:location (x16 / around
+					:op1 (x18 / world))))
+		:ARG1 (x24 / analyze-01
+			:ARG0 (x22 / person
+				:name (n / name
+					:op1 "Stother")))))
+

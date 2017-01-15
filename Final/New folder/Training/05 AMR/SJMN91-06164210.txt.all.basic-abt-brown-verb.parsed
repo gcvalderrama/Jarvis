@@ -1,0 +1,595 @@
+# ::id 1
+# ::snt Mount Pinatubo erupted with six thundering explosions today, shooting a giant plume of ash 15 miles high
+(x3 / erupt-01
+	:ARG1 (x2 / country
+		:name (n / name
+			:op1 "Pinatubo")
+		:mod (x1 / country
+			:name (n1 / name
+				:op1 "Mount")))
+	:ARG1 (x7 / explode-01
+		:quant 6
+		:time (x8 / today))
+	:ARG1 (x10 / shoot-05
+		:ARG0 x2
+		:ARG1 (x13 / plume
+			:mod (x12 / giant)
+			:name (x15 / name
+				:op1 "ash"))
+		:manner (x18 / high
+			:quant (x17 / distance-quantity
+				:unit (m / mile)))))
+
+# ::id 2
+# ::snt Molten rock and hot gas poured from the volcano, and nearby residents fled in panic. ; A Filipino serving with the U.S. Navy became the first reported fatality related to the eruption when his car collided with a bus on an ash-slicked road north of the Subic Bay naval base
+(x11 / and
+	:op1 (x6 / pour-01
+		:ARG1 (x3 / and
+			:op1 (x2 / rock
+				:mod (x1 / molten))
+			:op2 (x5 / gas
+				:mod (x4 / hot)))
+		:ARG0 (x9 / volcano))
+	:op2 (x14 / flee-01
+		:ARG1 (x13 / person
+			:ARG0-of (r / reside-01)
+			:mod (x12 / nearby))
+		:manner (x16 / panic-01)))
+
+# ::id 3
+# ::snt Residents of nearby Angeles panicked when a huge, gray-greenish mushroom cloud burst from the volcano and turned day to night
+(x5 / panic-01
+	:ARG0 (x1 / person
+		:ARG0-of (r / reside-01)
+		:ARG1 (x4 / angeles
+			:mod (x3 / nearby)))
+	:time (x18 / turn-02
+		:time (x13 / burst-01
+			:ARG1 (x12 / cloud
+				:mod (x8 / huge)
+				:mod (x11 / mushroom
+					:mod (x10 / gray-greenish)))
+			:ARG2 (x16 / volcano))
+		:time (x19 / day)
+		:ARG2 (x21 / night)))
+
+# ::id 4
+# ::snt Thousands of fleeing people packed roads. ; " Stones as big as Rolly Soria , 18. head were falling down from the mountains, " said Rolly Soria, 18. ; " There was panic everywhere, " said Manuel Romualdo
+(x42 / say-01
+	:ARG1 (x38 / panic-01
+		:location (x39 / everywhere))
+	:ARG0 (x43 / newspaper
+		:name (n / name
+			:op1 "Manuel"
+			:op2 "Romualdo")))
+
+# ::id 5
+# ::snt " Children were crying
+(x4 / cry-02
+	:ARG0 "Children's")
+
+# ::id 6
+# ::snt Thousands of fleeing people had to grab whatever Thousands of fleeing people could .
+(x13 / possible
+	:domain (x1 / thousands
+		:null_edge (x3 / flee-01))
+	:domain (x7 / grab-01)
+	:domain (x9 / thousands
+		:mod (x8 / whatever)
+		:null_edge (x11 / flee-01)))
+
+# ::id 7
+# ::snt ; Scientists warned of more, possibly larger eruptions from the 4,795-foot volcano, which was dormant for six centuries until six centuries began spewing steam in April. ; " This could be only the beginning, " said Raymundo Punongbayan, director of the Philippine Institute of Vulcanology and Seismology. ; Angeles, a city of 300,000, is adjacent to Clark Air Base, but authorities had not ordered a general evacuation there. ; Hundreds of Americans fled Clark, home to 15,000 American military personnel and their families
+(x / xconcept
+	:x (x1 / and
+		:op2 (x40 / say-01
+			:ARG1 (x3 / warn-01
+				:ARG0 (x2 / have-org-role-91
+					:ARG2 (s / scientist))
+				:ARG1 (x9 / eruption
+					:quant (x5 / more)
+					:mod (x8 / large
+						:degree (x7 / possible))
+					:source (x13 / volcano
+						:mod (x12 / 4,795-foot)
+						:mod (x17 / dormant
+							:duration (x20 / temporal-quantity
+								:unit (c1 / century)
+								:quant 6)
+							:time (x21 / until
+								:op1 (x24 / begin-01
+									:ARG1 (x23 / temporal-quantity
+										:unit (c2 / century)
+										:quant 6)
+									:ARG1 (x25 / spew
+										:ARG1 (x26 / steam))
+									:time (x28 / date-entity))))))
+				:ARG1 (x33 / possible
+					:domain (x37 / begin-01
+						:ARG2 (x32 / this)
+						:mod (x35 / only))))
+			:ARG0 (x41 / newspaper
+				:name (n / name
+					:op1 "Raymundo"
+					:op2 "Punongbayan")
+				:ARG0-of (x44 / have-org-role-91
+					:ARG2 (d / director)
+					:ARG1 (x47 / government-organization
+						:name (n3 / name
+							:op1 "Philippine"
+							:op2 "Institute"
+							:op3 "of"
+							:op4 "Vulcanology"))
+					:topic (x51 / and))))
+		:op2 (x69 / contrast-01
+			:ARG1 (x63 / adjacent
+				:ARG0 (x55 / country
+					:name (n1 / name
+						:op1 "Angeles"))
+				:ARG2 (x65 / name
+					:op1 "Clark"
+					:op2 "Air"
+					:op3 "Base")
+				:null_edge (x83 / flee-01
+					:ARG1 (x82 / person
+						:mod (c / country
+							:name (n4 / name
+								:op1 "Americans")))
+					:ARG1 (x84 / person
+						:name (n5 / name
+							:op1 "Clark"))
+					:ARG4 (x86 / home)))
+			:ARG2 (x73 / order-01
+				:ARG0 (x70 / authority)
+				:ARG1 (x76 / evacuation
+					:mod (x75 / general))
+				:location (x77 / there)))
+		:op2 (x92 / and
+			:op1 (x91 / have-org-role-91
+				:ARG2 (p / personnel)
+				:poss (x89 / country
+					:name (n2 / name
+						:op1 "American"))
+				:mod (x90 / military))
+			:op2 (x94 / family)))
+	:x (x54 / and
+		:op2 (x58 / city)
+		:op1 (x60 / 300,000)))
+
+# ::id 8
+# ::snt Most of the base's residents had been evacuated Monday
+(x9 / evacuate
+	:ARG1 (x6 / person
+		:ARG0-of (r / reside-01)
+		:quant (x1 / most))
+	:time (x10 / monday))
+
+# ::id 9
+# ::snt The base did not appear immediately threatened by volcanic flow. ; Seismologists said searing gas, ash and molten rock raced at great speed down the mountain's western and northern slopes
+(x / xconcept
+	:x (x12 / and
+		:op2 (x5 / appear-02
+			:ARG1 (x2 / base))
+		:op1 (x7 / threaten-01
+			:time (x6 / immediate)
+			:ARG0 (x10 / name
+				:op1 "flow"
+				:mod (x9 / volcanic)))
+		:op2 (x14 / say-01
+			:ARG0 (x13 / seismologist))
+		:op1 (x22 / race-02
+			:ARG0 (x19 / and
+				:op1 (x16 / gas
+					:mod (x15 / searing))
+				:op2 (x18 / name
+					:op1 "ash")
+				:op2 (x21 / rock
+					:mod (x20 / molten)))
+			:ARG1-of (x25 / speed
+				:ARG0 x19
+				:mod (x24 / great))
+			:ARG2 (x33 / slope
+				:mod (x28 / mountain)))
+		:op2 (x31 / and
+			:op1 (x30 / world-region
+				:name (n / name
+					:op1 "western"))
+			:op2 (x32 / name
+				:op1 "northern"))))
+
+# ::id 10
+# ::snt Seismologists said most of the debris flowed into the Marella, Maraunot and O'Donnell rivers and that there had been no reports that property or homes had been damaged. ; About 3,000 Aeta tribesman, descendants of the original inhabitants of the Philippines, fled the slopes of Mount Pinatubo. ; At a refugee center in Olongapo, 35 miles southwest of the volcano, survivors told of the sky growing dark, then of hearing a tremendous explosion followed by a rain of ash. ; Seismologists said Seismologists scampered for safety with Seismologists belongings and livestock over roads slippery with ashfall, many wearing cardboard boxes to protect Seismologists from the ash. ; " Seismologists were stunned by the eruption, " television reporter Bert Basa said
+(x2 / say-01
+	:ARG0 (x1 / seismologist)
+	:ARG1 (x16 / and
+		:op1 (x7 / name
+			:op1 "flowed"
+			:ARG1 (x6 / debris
+				:quant (x3 / most))
+			:ARG2 (x15 / river))
+		:op2 (x22 / report-01
+			:polarity -
+			:ARG1 (x29 / damage-01
+				:ARG0 (x25 / or
+					:op1 (x24 / property)
+					:op2 (x26 / home))
+				:ARG0 (x69 / tell-01
+					:null_edge (x46 / flee-01
+						:ARG1 (x41 / inhabit-01
+							:quant (x32 / about
+								:op1 (x33 / 3,000))
+							:mod (x40 / original)
+							:ARG1 (x44 / country
+								:name (n2 / name
+									:op1 "Philippines")))
+						:ARG1 (x48 / slope
+							:poss (x51 / country
+								:name (n3 / name
+									:op1 "Pinatubo")
+								:mod (x50 / country
+									:name (n4 / name
+										:op1 "Mount")))))
+					:ARG2 (x57 / center
+						:mod (x56 / refugee)
+						:location (x59 / country
+							:name (n / name
+								:op1 "Olongapo")))
+					:null_edge (x63 / southwest
+						:null_edge 35)
+					:ARG0 (x68 / person
+						:ARG0-of (s / survive-01))
+					:ARG2 (x132 / say-01
+						:ARG0 x63
+						:ARG1 (x122 / stun-01
+							:time (x78 / hear-01
+								:ARG1 (x81 / explode-01
+									:mod (x80 / tremendous)
+									:ARG1-of (x82 / follow-01
+										:ARG2 (x85 / rain
+											:name (x87 / name
+												:op1 "ash")))))
+							:ARG1 (x120 / seismologist)
+							:ARG0 (x125 / eruption))
+						:ARG0 (x130 / newspaper
+							:name (n1 / name
+								:op1 "Bert"
+								:op2 "Basa")
+							:ARG0-of (x128 / television)
+							:ARG0-of (x129 / report-01))))))))
+
+# ::id 11
+# ::snt " Seismologists faces turned ashen, and it looked like Seismologists hair was standing on end .
+(x7 / and
+	:op1 (x4 / turn-01
+		:ARG0 (x3 / face-01
+			:ARG0 (x2 / seismologist))
+		:ARG2 (x5 / ashen))
+	:op2 (x9 / look-02
+		:ARG1 (x14 / stand-02
+			:ARG1 (x12 / hair
+				:mod (x11 / country
+					:name (n / name
+						:op1 "Seismologists")))
+			:ARG2 (x16 / end))))
+
+# ::id 12
+# ::snt ; Ash was so thick in the air that at noon, motorists were driving with their headlights and windshield wipers on. ; A photographer who circled the volcano in an airplane said an aerial gunnery range at Clark was covered with ash, as were mountains in the Zambales range, normally lush, green tropical peaks. ; Today's first eruption began at 8:40 a.m. with a tremendous blast that sent forth a mushroom cloud
+(x / xconcept
+	:x (x1 / and
+		:op1 (x5 / thick
+			:degree (x4 / so)
+			:location (x8 / air))
+		:op2 (x15 / drive-02
+			:time (x11 / noon)
+			:ARG0 (x13 / motorist)
+			:ARG1 (x19 / and
+				:op1 (x18 / headlight)
+				:op2 (x21 / wiper
+					:mod (x20 / windshield))))
+		:op1 (x40 / person
+			:name (n / name
+				:op1 "Clark"))
+		:op1 (x42 / cover-01
+			:ARG1 (x38 / range
+				:mod (x37 / gunnery))
+			:ARG2 (x44 / name
+				:op1 "ash")
+			:ARG2 (x48 / mountain
+				:location (x52 / range
+					:mod (x51 / country
+						:name (n1 / name
+							:op1 "Zambales")))
+				:mod (x55 / lush
+					:mod (x54 / normal)))
+			:null_edge (x66 / begin-01
+				:ARG1 (x65 / eruption
+					:time (x62 / today))
+				:time (x68 / include-91)))
+		:op2 (x73 / blast-05
+			:mod (x72 / tremendous)
+			:ARG1-of (x75 / send-01
+				:ARG1 (x79 / cloud
+					:mod (x78 / mushroom)))))
+	:x (x24 / and
+		:op2 (x28 / circle-01)
+		:op1 (x34 / say-01
+			:ARG0 (x30 / volcano
+				:location (x33 / airplane))))
+	:x (x61 / and
+		:op2 (x59 / peak-01
+			:mod (x58 / tropic))))
+
+# ::id 13
+# ::snt the air that at noon , motorists were driving with their headlights was followed by a second explosion a few minutes later and a third, smaller blast at 11:49 a.m. ; The huge plume could be seen in Manila, 60 miles to the south, and reporters at the scene said the scene blocked out the sun
+(x48 / and
+	:op1 (x14 / follow-01
+		:ARG2 (x2 / air)
+		:ARG2 (x23 / and
+			:op1 (x18 / explode-01
+				:time (x22 / late
+					:op1 (x20 / few
+						:op1 (x21 / null_tag))))))
+	:op2 (x53 / say-01
+		:ARG0 (x49 / person
+			:ARG0-of (r / report-01))
+		:time (x52 / scene)
+		:ARG1 (x56 / block-01
+			:ARG0 (x55 / scene)
+			:ARG1 (x59 / sun))))
+
+# ::id 14
+# ::snt The cloud drifted westward into the South China Sea. ; Two more thundering explosions rocked Mount Pinatubo late today. ; The Philippine Institute of Vulcanology and Seismology said the explosions occurred at 10:52 p.m. and 11:05 p.m.
+(x / xconcept
+	:x (x11 / and
+		:op2 (x3 / drift-01
+			:ARG0 (x2 / cloud)
+			:manner (x4 / westward)
+			:ARG1 (x28 / and
+				:op1 (x7 / sea
+					:name (n / name
+						:op1 "South"
+						:op2 "China"
+						:op3 "Sea"))
+				:op1 (x16 / rock
+					:ARG0 (x15 / explode-01
+						:quant 2
+						:quant (x13 / more)
+						:mod (x14 / thundering))
+					:ARG1 (x18 / country
+						:name (n2 / name
+							:op1 "Pinatubo")
+						:mod (x17 / country
+							:name (n3 / name
+								:op1 "Mount")))
+					:time (x20 / today
+						:time (x19 / late)))
+				:op1 (x24 / government-organization
+					:name (n1 / name
+						:op1 "Philippine"
+						:op2 "Institute"
+						:op3 "of"
+						:op4 "Vulcanology"))
+				:op1 (x30 / say-01
+					:ARG0 (x32 / explode-01
+						:quant (x35 / include-91
+							:null_edge (x38 / include-91))))))))
+
+# ::id 15
+# ::snt The second explosion sent a plume of ash and steam 80,000 feet into the sky. ; Shortly after midnight, a sixth explosion was reported. ; Seismologists said the volcano had plenty of built-up magma and even more severe eruptions could come later. ; " The crisis has not ended yet, " said Punongbayan, of the Philippine Institute of Vulcanology and Seismology
+(x57 / say-01
+	:ARG1 (x4 / send-01
+		:ARG0 (x3 / explode-01)
+		:ARG1 (x9 / and
+			:op1 (x6 / plume
+				:name (x8 / name
+					:op1 "ash"))
+			:op2 (x10 / steam)
+			:op1 (x30 / say-01
+				:ARG0 (x29 / seismologist)
+				:ARG1 (x38 / and
+					:op2 (x32 / volcano)
+					:op1 (x37 / magma
+						:mod (x36 / built-up))
+					:op1 (x53 / end-03
+						:ARG1 (x50 / crisis)
+						:time (x54 / yet))))))
+	:ARG0 (x58 / person
+		:name (n / name
+			:op1 "Punongbayan"))
+	:ARG0 (x62 / government-organization
+		:name (n1 / name
+			:op1 "Philippine"
+			:op2 "Institute")))
+
+# ::id 16
+# ::snt " Seismologists have signs that the volcano is preparing for another one .
+(x3 / have-03
+	:ARG0 (x2 / seismologist)
+	:ARG1 (x4 / signal-01
+		:ARG1 (x9 / prepare-02
+			:ARG0 (x7 / volcano)
+			:null_edge (x11 / another))))
+
+# ::id 17
+# ::snt ; Punongbayan warned people within a 15-mile radius of Pinatubo to flee. ; " The smoke is very thick like a dark mushroom in the sky, " television reporter Gus Abelgas said in a broadcast from Botolan, near the volcano's western slopes
+(x3 / warn-01
+	:ARG0 (x2 / person
+		:name (n / name
+			:op1 "Punongbayan"))
+	:time (x5 / within
+		:op1 (x8 / radius
+			:mod (x7 / 15-mile)))
+	:ARG1 (x12 / flee-01))
+
+# ::id 18
+# ::snt Raymundo Punongbayan said strong tremors preceded the nighttime eruptions and continued afterward. ; President Corazon Aquino visited refugee centers near Angeles briefly before returning to Manila for independence day celebrations. ; The Americans who fled Clark with a few belongings Monday moved in with sailors and sailors families at Subic Bay naval base, 50 miles to the southwest. ; Clark is one of the biggest U.S. bases overseas
+(x3 / say-01
+	:ARG0 (x1 / newspaper
+		:name (n / name
+			:op1 "Raymundo"
+			:op2 "Punongbayan"))
+	:ARG1 (x10 / and
+		:op1 (x6 / precede-01
+			:ARG0 (x5 / tremor
+				:mod (x4 / strong))
+			:ARG1 (x9 / eruption))
+		:op2 (x11 / continue-01
+			:time (x12 / afterward)))
+	:ARG1 (x37 / flee-01
+		:ARG1 (x38 / person
+			:name (n1 / name
+				:op1 "Clark"))
+		:ARG1 (x42 / belongings
+			:quant (x41 / few)
+			:ARG0 (x64 / person
+				:name (n2 / name
+					:op1 "Clark")))))
+
+# ::id 19
+# ::snt Punongbayan said Tuesday that the site was in the path of the volcanic flow from Mount Pinatubo during its last major eruption, in 1380. ; About 19,000 Filipinos earlier had been evacuated from three provinces near the volcano's slopes and were housed in 25 makeshift evacuation centers outside the projected danger zone. ; Officials said more were evacuated after today's eruption. ; About 10 people in Moraza, a village on the western slope of the mountain, were refusing to leave, relief officials said
+(x2 / say-01
+	:ARG0 (x1 / person
+		:name (n / name
+			:op1 "Punongbayan"))
+	:ARG1 (x62 / evacuate
+		:ARG1 (x6 / site)
+		:ARG1-of (x10 / path
+			:name (x14 / name
+				:op1 "flow"
+				:mod (x13 / volcanic)
+				:source (x17 / country
+					:name (n1 / name
+						:op1 "Pinatubo")
+					:location (x16 / country
+						:name (n2 / name
+							:op1 "Mount")))))
+		:time (x63 / after
+			:time (x64 / today)))
+	:ARG1 (x66 / eruption)
+	:time (xap0 / date-entity
+		:weekday (x3 / tuesday)))
+
+# ::id 20
+# ::snt Officials told rescuers that Officials would not leave Officials livestock and if the animals die, " rescuers will die with 10 people in Moraza .
+(x2 / tell-01
+	:ARG2 (x3 / rescue-01)
+	:ARG1 (x11 / and
+		:op1 (x8 / leave-01
+			:ARG0 (x5 / officials)
+			:ARG1 (x9 / officials)
+			:ARG1 (x10 / livestock))
+		:op2 (x20 / die-01
+			:ARG1 x9
+			:ARG1 (x15 / die-01
+				:ARG1 (x14 / animal))
+			:ARG1 (x18 / rescue-01)
+			:null_edge (x25 / country
+				:name (n / name
+					:op1 "Moraza")
+				:null_edge 10)))
+	:ARG0 (xap0 / person
+		:ARG0-of (x1 / have-org-role-91
+			:ARG2 (o / official))))
+
+# ::id 21
+# ::snt ; On April 2, Pinatubo produced a small hydrothermal explosion caused by underground water meeting hot rocks deep inside
+(x / xconcept
+	:x (x1 / and
+		:op1 (x7 / produce-01
+			:time (x3 / date-entity)
+			:ARG0 (x6 / person
+				:name (n / name
+					:op1 "Pinatubo"))
+			:ARG1 (x11 / explode-01
+				:mod (x9 / small)
+				:mod (x10 / hydrothermal)
+				:ARG1-of (x12 / cause-01
+					:ARG0 (x16 / meet-03
+						:ARG0 (x15 / water
+							:mod (x14 / underground))
+						:location (x20 / inside
+							:mod (x19 / deep))))))
+		:op3 (x18 / rock
+			:mod (x17 / hot))))
+
+# ::id 22
+# ::snt On June 3, the volcano spewed ash in a mild eruption. ; That same day, 4,452-foot Mount Unzen in Japan erupted with an explosion of superheated gas, ashes and rocks that killed 38 people. ; Experts say there is apparently no connection between Unzen and Pinatubo. ; There are about 21 active and 200 dormant volcanoes in the Philippines
+(x / xconcept
+	:x (x14 / and
+		:op1 (x7 / spew
+			:time (x2 / date-entity)
+			:ARG0 (x6 / volcano)
+			:ARG1 (x8 / name
+				:op1 "ash")
+			:ARG1 (x12 / eruption
+				:mod (x11 / mild)))
+		:op1 (x17 / temporal-quantity
+			:unit (d / day)
+			:ARG1-of (x16 / same-41)))
+	:x (x40 / and
+		:op1 (x20 / country
+			:name (n2 / name
+				:op1 "Mount"))
+		:op1 (x24 / erupt-01
+			:ARG1 (x23 / country
+				:name (n / name
+					:op1 "Japan"))
+			:ARG1 (x27 / explode-01
+				:ARG1 (x33 / and
+					:op1 (x30 / gas
+						:mod (x29 / superheated))
+					:op2 (x32 / name
+						:op1 "ashes")
+					:op2 (x34 / rock)
+					:op2 (x36 / kill-01
+						:ARG1 38)))
+			:ARG1 (x50 / and
+				:op1 (x49 / country
+					:name (n1 / name
+						:op1 "Unzen"))))
+		:op1 (x42 / say-01
+			:ARG0 (x41 / person
+				:ARG1-of (e / expert-41))
+			:manner (x45 / apparent
+				:domain (x47 / connect-01
+					:polarity -))))
+	:x (x53 / and
+		:op2 (x51 / person
+			:name (n3 / name
+				:op1 "Pinatubo"))
+		:op2 (x59 / and
+			:op1 (x58 / active
+				:quant 21
+				:location (x65 / country
+					:name (n4 / name
+						:op1 "Philippines")))
+			:op2 (x62 / volcano
+				:quant 200
+				:mod (x61 / dormant)))))
+
+# ::id 23
+# ::snt The last major eruption was the Taal volcano, about 50 miles south of Manila, in 1965
+(x8 / volcano
+	:domain (x4 / eruption
+		:mod (x2 / last)
+		:mod (x3 / major))
+	:mod (x7 / taal)
+	:location (x13 / south
+		:quant (x12 / distance-quantity
+			:unit (m / mile)
+			:null_edge (x10 / about
+				:null_edge 50
+				:op1 (x15 / city
+					:name (n / name
+						:op1 "Manila")))))
+	:time (x18 / date-entity
+		:year 1965))
+
+# ::id 24
+# ::snt That explosion killed about 200 people
+(x3 / kill-01
+	:ARG0 (x2 / explode-01
+		:mod (x1 / that))
+	:ARG1 (x4 / about
+		:op1 200))
+

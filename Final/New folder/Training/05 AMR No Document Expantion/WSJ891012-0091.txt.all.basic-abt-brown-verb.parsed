@@ -1,0 +1,927 @@
+# ::id 1
+# ::snt In their ads, cruise ships are the picture of fun-in-the-sun vacationing on the high seas
+(x9 / picture
+	:location "AD"
+	:ARG0 (x6 / ship
+		:mod (x5 / cruise))
+	:ARG1 (x11 / fun-in-the-sun
+		:time (x12 / vacation-01)
+		:ARG2 (x16 / sea
+			:mod (x15 / high))))
+
+# ::id 2
+# ::snt But according to the U.S. government, the sailing could be treacherous
+(x1 / contrast-01
+	:ARG2 (x10 / possible
+		:domain (x12 / treacherous
+			:domain (x9 / sailing)
+			:ARG1-of (xap0 / say-01
+				:ARG0 (x6 / government-organization
+					:ARG0-of (g / govern-01)
+					:ARG1 (x5 / country
+						:name (n / name
+							:op1 "U.S.")))))))
+
+# ::id 3
+# ::snt Last February, Miami-based Carnival Cruise Lines Inc.'s 700-foot Celebration, registered as a Liberian ship, cut a Cuban freighter in half in a collision off Cuba, killing three Cuban sailors
+(x19 / cut-02
+	:time (x2 / date-entity
+		:mod (x1 / last))
+	:ARG0 (x5 / government-organization
+		:name (n / name
+			:op1 "Carnival"
+			:op2 "Cruise"
+			:op3 "Lines")
+		:ARG1-of (xap0 / base-01
+			:mod (x4 / organization
+				:name (n3 / name
+					:op1 "Miami-based"))))
+	:ARG0 (x11 / celebrate-02
+		:poss (x8 / organization
+			:name (n1 / name
+				:op1 "Inc."))
+		:mod (x10 / 700-foot)
+		:ARG1-of (x13 / register-02
+			:ARG2 (x17 / ship
+				:mod (x16 / world-region
+					:name (n6 / name
+						:op1 "Liberian")))))
+	:ARG1 (x22 / freighter
+		:mod (x21 / country
+			:name (n2 / name
+				:op1 "Cuban")))
+	:time (x24 / half)
+	:purpose (x27 / collide-01
+		:location (x28 / off
+			:op1 (x29 / country
+				:name (n4 / name
+					:op1 "Cuba"))))
+	:purpose (x31 / person
+		:ARG1-of (k / kill-01)
+		:ARG0 x5
+		:ARG0 x11
+		:ARG1 (x34 / sail-01
+			:quant 3
+			:mod (x33 / country
+				:name (n5 / name
+					:op1 "Cuban")))))
+
+# ::id 4
+# ::snt Carnival officials acknowledged that nobody was watching the radar at the time, but have refused to cooperate with a U.S. investigation, despite federal subpoenas
+(x14 / contrast-01
+	:ARG1 (x3 / acknowledge-01
+		:ARG1 (x7 / watch-01
+			:ARG0 (x5 / nobody)
+			:ARG1 (x9 / radar))
+		:ARG0 (xap0 / person
+			:ARG0-of (x2 / have-org-role-91
+				:ARG2 (o / official))))
+	:ARG2 (x16 / refuse-01
+		:ARG1 (x18 / cooperate-01
+			:ARG2 (x22 / investigate-01
+				:ARG0 (x21 / country
+					:name (n1 / name
+						:op1 "U.S."))))
+		:concession (x26 / subpoena
+			:ARG0 (x25 / government-organization
+				:name (n / name
+					:op1 "federal")))))
+
+# ::id 5
+# ::snt In March 1988, an engine fire broke out on SeaEscape's Bahamian cruise ship, the Scandinavian Star, as it headed to St. Petersburg, Fla., from Cozumel, Mexico
+(x8 / break-08
+	:time (x2 / date-entity
+		:year 1988)
+	:ARG0 (x7 / fire-01
+		:ARG1 (x6 / engine))
+	:ARG1 (x15 / ship
+		:null_edge (x11 / seaescape)
+		:mod (x13 / world-region
+			:name (n / name
+				:op1 "Bahamian"))
+		:mod (x14 / cruise)
+		:mod (x19 / star-01
+			:mod (x18 / scandinavian)))
+	:time (x23 / head-02
+		:ARG1 (x26 / country
+			:name (n1 / name
+				:op1 "Petersburg")
+			:null_edge (x25 / country
+				:name (n3 / name
+					:op1 "St."))
+			:null_edge (x28 / country
+				:name (n4 / name
+					:op1 "Fla.")))
+		:ARG1 (x31 / country
+			:name (n2 / name
+				:op1 "Cozumel")
+			:location (x33 / country
+				:name (n5 / name
+					:op1 "Mexico")))))
+
+# ::id 6
+# ::snt Automatic fire extinguishers and the emergency generator failed, plunging much of the smoke-filled ship into darkness
+(x8 / fail-01
+	:ARG1 (x4 / and
+		:op1 (x3 / extinguisher
+			:mod (x1 / automatic)
+			:mod (x2 / fire-arm))
+		:op2 (x7 / generator
+			:mod (x6 / emergency)))
+	:ARG1 (x10 / plunge
+		:ARG0 x4
+		:ARG1 (x15 / ship
+			:mod (x14 / smoke-filled))
+		:location (x17 / darkness)))
+
+# ::id 7
+# ::snt Because many of the crew members spoke no English, they offered little help to the terrified passengers
+(x7 / speak-01
+	:ARG1-of (x1 / cause-01)
+	:ARG1 (x9 / name
+		:op1 "English"
+		:polarity -)
+	:ARG0 (xap0 / person
+		:quant (x2 / many)
+		:ARG0-of (x6 / have-org-role-91
+			:ARG2 (m / member)
+			:ARG1 (x5 / crew))
+		:op1 (x12 / offer-01
+			:ARG1 (x14 / help-01
+				:mod (x13 / little)
+				:ARG2 (x18 / passenger
+					:ARG1-of (x17 / terrify))))))
+
+# ::id 8
+# ::snt One vacationer had to show a crew member how to pull a fire alarm
+(x5 / show-01
+	:ARG1 (x2 / vacationer
+		:quant 1)
+	:ARG2 (x8 / member
+		:mod (x7 / crew))
+	:ARG1 (x11 / pull-01
+		:ARG1 (x14 / alarm-01
+			:ARG1 (x13 / fire-arm))))
+
+# ::id 9
+# ::snt In a voluminous report issued yesterday, the National Transportation Safety Board said these and other incidents carry a clear warning : Many foreign-flag cruise ships that sail from U.S. ports have serious safety problems and the potential for a catastrophic accident is significant
+(x13 / say-01
+	:medium (x4 / report
+		:mod (x3 / voluminous)
+		:ARG1-of (x5 / issue-01
+			:time (x6 / yesterday)))
+	:ARG0 (x9 / government-organization
+		:name (n / name
+			:op1 "National"
+			:op2 "Transportation"
+			:op3 "Safety"
+			:op4 "Board"))
+	:ARG1 (x18 / carry-01
+		:ARG1 (x15 / and
+			:op1 (x14 / these)
+			:op2 (x17 / incident
+				:mod (x16 / other)))
+		:ARG1 (x21 / warn-01
+			:manner (x20 / clear)
+			:ARG1 (x36 / and
+				:op1 (x32 / have-03
+					:ARG0 (x26 / ship
+						:quant (x23 / many)
+						:mod (x24 / foreign-flag)
+						:mod (x25 / cruise)
+						:ARG0-of (x28 / sail
+							:ARG2 (x31 / port
+								:poss (x30 / country
+									:name (n1 / name
+										:op1 "U.S.")))))
+					:ARG1 (x35 / problem
+						:mod (x33 / serious)
+						:mod (x34 / safe-41)))
+				:op2 (x44 / significant
+					:mod (x38 / potential
+						:domain (x42 / accident
+							:mod (x41 / catastrophic))))))))
+
+# ::id 10
+# ::snt " A little bit of laxity, " warns James Burnett, a member of the board, " could cost you -LCB- the lives of -RCB- 1,200 people .
+(x9 / warn-01
+	:ARG1 (x6 / laxity
+		:mod (x4 / bit
+			:degree (x3 / little)))
+	:ARG0 (x10 / newspaper
+		:name (n / name
+			:op1 "James"
+			:op2 "Burnett")
+		:ARG0-of (x14 / member
+			:part-of (x17 / board))
+		:ARG0-of (x20 / possible
+			:domain (x21 / cost-01
+				:ARG2 (x22 / you
+					:mod (x25 / life))
+				:ARG2 (x28 / 1,200)))))
+
+# ::id 11
+# ::snt The board, in sweeping recommendations, is seeking both legislation and voluntary cooperation from the industry to improve cruise-ship safety, which it says is marred by the less-than-exacting rules governing foreign-flag carriers
+(x9 / seek-01
+	:ARG0 (x2 / board)
+	:ARG2 (x6 / thing
+		:ARG1-of (r / recommend-01)
+		:mod (x5 / sweeping))
+	:ARG1 (x12 / and
+		:op1 (x11 / legislate-01)
+		:op2 (x14 / cooperate-01
+			:manner (x13 / volunteer-01)
+			:ARG0 (x17 / industry)
+			:ARG2 (x19 / improve-01
+				:ARG1 (x21 / safe-41
+					:ARG1 (x25 / thing
+						:ARG1-of (s / say-01)
+						:ARG1 (x27 / mar
+							:ARG1 (x31 / rule
+								:ARG0-of (x32 / govern-01
+									:ARG1 (x34 / carrier
+										:mod (x33 / foreign-flag)))))))))))
+
+# ::id 12
+# ::snt Foreign-registered vessels make up the vast majority of cruise ships sailing from U.S. ports and catering to Americans
+(x3 / make-01
+	:ARG0 (x2 / vessel)
+	:ARG1 (x15 / and
+		:mod (x7 / majority
+			:mod (x6 / vast))
+		:op1 (x9 / cruise)
+		:op1 (x11 / sail
+			:ARG2 (x14 / port
+				:poss (x13 / country
+					:name (n1 / name
+						:op1 "U.S."))))
+		:op2 (x16 / cater-01
+			:ARG2 (x18 / person
+				:mod (c / country
+					:name (n / name
+						:op1 "Americans"))))))
+
+# ::id 13
+# ::snt " If these companies are going to have their fleets based in the U.S. and carry primarily U.S. passengers, then they should meet U.S. standards, " says one safety board staffer
+(x29 / say-01
+	:ARG1 (x23 / recommend-01
+		:ARG1 (x24 / meet-01
+			:ARG0 (x15 / and
+				:op1 (x10 / fleet
+					:ARG1-of (x11 / base-02
+						:ARG0 (x4 / company)
+						:location (x14 / country
+							:name (n1 / name
+								:op1 "U.S."))))
+				:op2 (x16 / carry-01
+					:mod (x17 / primary)
+					:ARG1 (x19 / passenger
+						:poss (x18 / country
+							:name (n2 / name
+								:op1 "U.S.")))))
+			:ARG0 (x22 / they
+				:mod (x21 / then))
+			:ARG1 (x26 / standard
+				:poss (x25 / country
+					:name (n / name
+						:op1 "U.S.")))))
+	:ARG0 (x33 / staffer
+		:quant 1
+		:mod (x32 / board
+			:mod (x31 / safe-41))))
+
+# ::id 14
+# ::snt An industry spokeswoman says the cruise-ship companies welcome any safety suggestions but question the need for more regulation
+(x4 / say-01
+	:ARG1 (x8 / welcome-01
+		:ARG0 (x7 / company
+			:mod (x6 / cruise-ship))
+		:ARG1 (x11 / suggest-01
+			:mod (x9 / any)
+			:mod (x10 / safe-41))
+		:ARG1 (x13 / question-01
+			:ARG0 x7
+			:ARG1 (x15 / need-01
+				:ARG1 (x18 / regulate-01
+					:quant (x17 / more)))))
+	:ARG0 (xap0 / person
+		:ARG0-of (x3 / have-org-role-91
+			:ARG2 (s / spokeswoman)
+			:ARG1 (x2 / industry))))
+
+# ::id 15
+# ::snt Diana Orban, a spokeswoman for Cruise Lines International Association, a New York-based group that has 35 members, notes that only two people have been killed on cruise ships serving U.S. ports since 1970
+(x21 / note-01
+	:ARG0 (x1 / newspaper
+		:name (n / name
+			:op1 "Diana"
+			:op2 "Orban")
+		:ARG0-of (x5 / have-org-role-91
+			:ARG2 (s / spokeswoman)
+			:ARG1 (x10 / organization
+				:name (n1 / name
+					:op1 "Association")
+				:null_edge (x7 / null_tag)
+				:null_edge (x8 / null_tag)
+				:null_edge (x9 / null_tag)
+				:null_edge (x13 / city
+					:name (n2 / name
+						:op1 "New"
+						:op2 "York-based"))
+				:null_edge (xap0 / person
+					:quant 35
+					:ARG0-of (x19 / have-org-role-91
+						:ARG2 (m / member))))))
+	:null_edge (x28 / kill-01
+		:null_edge (x23 / only
+			:null_edge 2)
+		:ARG1 (x31 / ships
+			:mod (x30 / cruise)
+			:ARG1-of (x32 / serve-01
+				:ARG1 (x34 / port
+					:poss (x33 / country
+						:name (n3 / name
+							:op1 "U.S.")))))
+		:time (x35 / since
+			:op1 (x36 / date-entity
+				:year 1970))))
+
+# ::id 16
+# ::snt (Both were passengers on the Scandinavian Sun, another Bahamian ship, when it caught fire in August 1984 .
+(x4 / passenger
+	:domain (x2 / both)
+	:location (x12 / ship
+		:mod (x7 / scandinavian)
+		:mod (x8 / sun)
+		:mod (x10 / another)
+		:mod (x11 / world-region
+			:name (n / name
+				:op1 "Bahamian")))
+	:condition (x16 / catch-02
+		:ARG1 (x17 / fire-01)
+		:time (x19 / date-entity
+			:year 1984)))
+
+# ::id 17
+# ::snt " When you look at that track record, it speaks for itself, " she says
+(x17 / say-01
+	:ARG1 (x11 / speak-03
+		:condition (x4 / look-01
+			:ARG0 (x3 / you)
+			:ARG1 (x8 / record
+				:mod (x7 / track)))))
+
+# ::id 18
+# ::snt " We do n't know any record that's better .
+(x5 / know-01
+	:ARG0 (x2 / we)
+	:ARG1 (x7 / record
+		:mod (x6 / any)
+		:mod (x10 / good)))
+
+# ::id 19
+# ::snt But as the booming cruise-ship industry plans ever larger ships -- some on the drawing boards could carry well over 3,000 people -- the safety board's concerns are rising
+(x1 / contrast-01
+	:ARG2 (x30 / rise-01
+		:time (x7 / plan-01
+			:ARG0 (x6 / industry
+				:mod (x4 / booming)
+				:mod (x5 / cruise-ship))
+			:ARG1 (x10 / ship
+				:null_edge (x8 / ever)
+				:mod (x9 / large)))
+		:null_edge (x18 / carry-03
+			:ARG1 (x16 / board
+				:quant (x12 / some)
+				:mod (x15 / draw-02))
+			:mod (x17 / possible)
+			:ARG1 (x20 / over
+				:degree (x19 / well)
+				:op1 (x21 / 3,000)))
+		:ARG1 (x28 / concern-01
+			:part-of (x26 / board
+				:mod (x25 / safe-41)))))
+
+# ::id 20
+# ::snt (Many cruise ships now carry fewer than 1,000 people .
+(x6 / carry-01
+	:ARG0 (x4 / ship
+		:quant (x2 / many)
+		:mod (x3 / cruise))
+	:time (x5 / now)
+	:ARG1 (x9 / 1,000
+		:null_edge (x7 / few)))
+
+# ::id 21
+# ::snt Ships operating from U.S. ports carried about five million passengers last year, and in anticipation of continued growth, 20 cruise ships are under construction around the world
+(x14 / and
+	:op1 (x6 / carry-03
+		:ARG0 (x1 / ship
+			:ARG1-of (x2 / operate-01
+				:source (x5 / port
+					:poss (x4 / country
+						:name (n / name
+							:op1 "U.S.")))))
+		:ARG1 (x10 / passenger)
+		:ARG0 (x23 / ship
+			:quant 20
+			:mod (x22 / cruise)
+			:ARG1-of (x26 / construct-01
+				:location (x27 / around
+					:op1 (x29 / world)))
+			:ARG1-of (xap0 / cause-01
+				:ARG0 (x16 / anticipate-01
+					:ARG1 (x19 / grow-01
+						:ARG1-of (x18 / continue-01))))))
+	:time (x12 / year
+		:mod (x11 / last)))
+
+# ::id 22
+# ::snt Most will ply their trade as foreign-flag carriers in U.S. ports
+(x3 / ply
+	:ARG0 (x1 / most)
+	:ARG1 (x5 / trade-01)
+	:ARG2 (xap0 / vehicle
+		:ARG0-of (x8 / carrier
+			:mod (x7 / foreign-flag)
+			:location (x11 / port
+				:poss (x10 / country
+					:name (n / name
+						:op1 "U.S."))))))
+
+# ::id 23
+# ::snt The problems, the safety board said, include inadequate fire-fighting equipment and crew training, language barriers and lax accident reporting and investigating
+(x9 / include-01
+	:ARG2 (x2 / problem)
+	:ARG1 (x13 / and
+		:op2 (x7 / say-01
+			:ARG0 (x6 / board
+				:mod (x5 / safe-41)))
+		:op2 (x15 / train-01
+			:mod (x14 / crew))
+		:op2 (x19 / and
+			:op1 (x12 / equipment
+				:mod (x10 / adequate
+					:polarity -)
+				:mod (x11 / fire-fighting))
+			:op2 (x18 / barrier
+				:mod (x17 / language))
+			:op2 (x21 / accident
+				:mod (x20 / lax-00)
+				:ARG1 (x23 / and
+					:op1 (x22 / report-01)
+					:op3 (x24 / investigate-01))))))
+
+# ::id 24
+# ::snt But the overriding concern, the board said, is that foreign cruise ships are subject to rules that are less stringent and vigorously enforced than those imposed on U.S. flag vessels
+(x1 / contrast-01
+	:ARG2 (x8 / say-01
+		:ARG0 (x7 / board))
+	:ARG2 (x16 / subject-01
+		:ARG1 (x14 / ship
+			:mod (x12 / foreign)
+			:mod (x13 / cruise))
+		:ARG2 (x18 / rule
+			:topic (x23 / and
+				:op1 (x22 / stringent
+					:degree (x21 / less))
+				:op2 (x25 / enforce-01
+					:manner (x24 / vigorous))
+				:ARG1-of (x28 / impose-01
+					:ARG2 (x32 / vessel
+						:mod (x30 / country
+							:name (n / name
+								:op1 "U.S."))
+						:ARG1 (x31 / flag)))
+				:op1 (xap0 / multi-sentence
+					:ARG0 (x4 / concern-01
+						:ARG1-of (x3 / override-01)))))))
+
+# ::id 25
+# ::snt Many Americans hoping for a bon voyage wrongly assume that ships sailing from U.S. ports operate under the supervision of the U.S. government
+(x9 / assume-01
+	:ARG1 (x3 / hope-01
+		:quant (x1 / many)
+		:ARG3 (x7 / voyage
+			:mod (x6 / bon)))
+	:manner (x8 / wrong)
+	:ARG1 (x16 / operate-01
+		:ARG0 (x11 / ship
+			:ARG1-of (x12 / sail
+				:ARG2 (x15 / port
+					:poss (x14 / country
+						:name (n1 / name
+							:op1 "U.S.")))))
+		:ARG1 (x19 / supervise-01
+			:poss (x23 / government-organization
+				:ARG0-of (g / govern-01)
+				:ARG1 (x22 / country
+					:name (n / name
+						:op1 "U.S."))))))
+
+# ::id 26
+# ::snt But almost all cruise ships operating out of the continental U.S. sail under foreign flags, and the U.S. Coast Guard conducts only cursory inspections of foreign vessels
+(x1 / contrast-01
+	:ARG2 (x17 / and
+		:op1 (x12 / sail
+			:ARG1 (x5 / ship
+				:quant (x2 / almost)
+				:quant (x3 / all)
+				:mod (x4 / cruise)
+				:ARG1-of (x6 / operate-01))
+			:ARG1 (x15 / flag
+				:mod (x14 / foreign)))
+		:op2 (x22 / conduct-01
+			:ARG0 (x20 / military
+				:name (n / name
+					:op1 "Coast"
+					:op2 "Guard"))
+			:ARG1 (x25 / inspect-01
+				:mod (x23 / only)
+				:mod (x24 / cursory)
+				:ARG1 (x28 / vessel
+					:mod (x27 / foreign))))))
+
+# ::id 27
+# ::snt At least 80 foreign cruise ships operate out of U.S. ports, mostly from southern Florida
+(x7 / operate-01
+	:ARG0 (x6 / ship
+		:quant 80
+		:mod (x4 / foreign)
+		:mod (x5 / cruise))
+	:ARG1 (x11 / port
+		:poss (x10 / country
+			:name (n1 / name
+				:op1 "U.S.")))
+	:ARG2 (x16 / country
+		:name (n / name
+			:op1 "Florida")
+		:mod (x13 / most)
+		:mod (x15 / south)))
+
+# ::id 28
+# ::snt Many of them sail under the so-called flags of convenience of Liberia, Panama and the Bahamas
+(x2 / include-91
+	:ARG1 (x4 / sail
+		:ARG0 (x1 / many)
+		:ARG1 (x8 / flag
+			:mod (x10 / convenience
+				:ARG1 (x15 / and
+					:op1 (x12 / country
+						:name (n / name
+							:op1 "Liberia"))
+					:op2 (x14 / country
+						:name (n1 / name
+							:op1 "Panama"))
+					:op2 (x17 / country
+						:name (n2 / name
+							:op1 "Bahamas")))))))
+
+# ::id 29
+# ::snt There are only three U.S. flag cruise ships and they operate in the Hawaiian Islands
+(x9 / and
+	:op2 (x8 / ship
+		:mod (x3 / only)
+		:quant 3
+		:poss (x5 / country
+			:name (n / name
+				:op1 "U.S."))
+		:mod (x6 / flag)
+		:mod (x7 / cruise))
+	:op2 (x11 / operate-01
+		:ARG2 (x15 / island
+			:mod (x14 / country
+				:name (n1 / name
+					:op1 "Hawaiian")))))
+
+# ::id 30
+# ::snt Fire is considered the most deadly threat for cruise ships
+(x3 / consider-01
+	:ARG1 (x1 / fire-02)
+	:ARG1 (x7 / threaten-01
+		:ARG2-of (x6 / kill-01
+			:op (d / deadly)
+			:degree (x5 / most))
+		:ARG0 (x10 / ships
+			:mod (x9 / cruise))))
+
+# ::id 31
+# ::snt The board said there have been at least nine fires on foreign-flag cruise ships in recent years, several of them serious
+(x3 / say-01
+	:ARG0 (x2 / board)
+	:ARG1 (x10 / fire
+		:quant 9
+		:mod (x12 / foreign-flag)
+		:mod (x13 / cruise)
+		:duration (x17 / temporal-quantity
+			:unit (y / year)
+			:mod (x16 / recent))
+		:null_edge (x22 / serious-41
+			:domain (x19 / several))))
+
+# ::id 32
+# ::snt In July 1986, an acetylene-fueled fire erupted in an engine store room on the Panamanian cruise ship Emerald Seas as it was approaching the Berry Islands in the Bahamas
+(x8 / erupt-01
+	:time (x2 / date-entity
+		:year 1986)
+	:ARG1 (x7 / fire-01
+		:ARG2-of (x6 / acetylene-fueled))
+	:location (x13 / room
+		:mod (x12 / store
+			:mod (x11 / engine))
+		:ARG1 (x18 / ship
+			:mod (x16 / world-region
+				:name (n1 / name
+					:op1 "Panamanian"))
+			:mod (x17 / cruise)))
+	:ARG1 (x20 / sea)
+	:time (x24 / approach-01
+		:ARG1 (x27 / island
+			:null_edge (x26 / country
+				:name (n2 / name
+					:op1 "Berry")))
+		:location (x30 / organization
+			:name (n / name
+				:op1 "Bahamas"))))
+
+# ::id 33
+# ::snt Before long, two explosions rocked the vessel
+(x6 / rock
+	:duration (x2 / long)
+	:ARG0 (x5 / explode-01
+		:quant 2)
+	:ARG1 (x8 / vessel))
+
+# ::id 34
+# ::snt Meanwhile, the ventilation system, instead of shutting down, pumped black smoke into the state rooms
+(x12 / pump-01
+	:time (x1 / meanwhile)
+	:ARG0 (x5 / system
+		:mod (x4 / ventilation))
+	:ARG1 (x9 / shut-05)
+	:ARG1 (x14 / smoke
+		:mod (x13 / black))
+	:ARG2 (x18 / room
+		:mod (x17 / state)))
+
+# ::id 35
+# ::snt Forty-one people were treated for smoke inhalation
+(x4 / treat-01
+	:ARG2 (x1 / forty-one)
+	:ARG2 (x7 / inhalation
+		:consist-of (x6 / smoke-01)))
+
+# ::id 36
+# ::snt Language problems aggravate the safety hazards
+(x3 / aggravate-01
+	:ARG0 (x2 / problem
+		:mod (x1 / language))
+	:ARG1 (x6 / hazard
+		:mod (x5 / safe-41)))
+
+# ::id 37
+# ::snt During an emergency drill on the Bahamian vessel Tropicana, the U.S. Coast Guard saw that the Polish officers had trouble communicating with a lifeboat launch team who spoke Spanish
+(x15 / see-01
+	:ARG0 (x9 / tropicana
+		:mod (x3 / emergency)
+		:mod (x7 / world-region
+			:name (n1 / name
+				:op1 "Bahamian"))
+		:mod (x8 / vessel))
+	:ARG0 (x13 / military
+		:name (n / name
+			:op1 "Coast"
+			:op2 "Guard"))
+	:ARG1 (x20 / have-03
+		:ARG1 (x21 / trouble
+			:ARG1 (x19 / have-org-role-91
+				:ARG2 (o / officer)
+				:mod (x18 / world-region
+					:name (n2 / name
+						:op1 "Polish")))
+			:ARG1 (x22 / communicate-01
+				:ARG1 (x27 / team
+					:ARG0-of (x26 / launch-01
+						:ARG1 (x25 / lifeboat))
+					:ARG0-of (x29 / speak-01))))))
+
+# ::id 38
+# ::snt The Coast Guard had to conduct several drills before the ship was permitted to leave port
+(x4 / have-03
+	:ARG0 (x2 / military
+		:name (n / name
+			:op1 "Coast"
+			:op2 "Guard"))
+	:ARG1 (x6 / conduct-01
+		:ARG0 x2
+		:ARG1 (x8 / drill-02
+			:quant (x7 / several))
+		:time (x9 / before
+			:op1 (x13 / permit-01
+				:ARG1 (x11 / ship)
+				:ARG1 (x15 / leave-01
+					:ARG1 (x16 / port))))))
+
+# ::id 39
+# ::snt The location of life jackets is another issue
+(x8 / issue
+	:domain (x2 / location
+		:consist-of (x5 / jacket
+			:mod (x4 / life)))
+	:mod (x7 / another))
+
+# ::id 40
+# ::snt In the 1988 Scandinavian Star accident, passengers were given conflicting information about whether they should go to their cabins or emergency gathering stations to get their life jackets
+(x6 / accident
+	:time (x3 / date-entity
+		:year 1988)
+	:mod (x4 / scandinavian)
+	:null_edge (x5 / null_tag)
+	:mod (x8 / passenger)
+	:ARG1 (x12 / information
+		:ARG0-of (x11 / conflict-01)
+		:topic (x16 / recommend-01
+			:ARG1 (x17 / go-01
+				:ARG4 (x21 / or
+					:op1 (x20 / cabin)
+					:op1 (x24 / station
+						:mod (x22 / emergency)
+						:mod (x23 / organization
+							:name (n / name
+								:op1 "gathering"))))
+				:purpose (x26 / get-01
+					:ARG1 (x29 / jacket
+						:mod (x28 / life)))))))
+
+# ::id 41
+# ::snt In some cases, passengers tried to fight their way through smoke-choked hallways to get back to their cabins to get their safety jackets
+(x6 / try-01
+	:time (x3 / case
+		:quant (x2 / some))
+	:ARG0 (x5 / passenger)
+	:ARG1 (x8 / fight-01
+		:ARG0 x5
+		:ARG2 (x10 / way)
+		:ARG2 (x13 / hallway
+			:mod (x12 / smoke-choked))
+		:purpose (x15 / get-01
+			:ARG2 (x16 / back)
+			:ARG2 (x19 / cabin)
+			:ARG1 (x21 / get-01
+				:ARG1 (x24 / jacket
+					:mod (x23 / safe-41))))))
+
+# ::id 42
+# ::snt To reduce the chances of a cruise-ship disaster, the safety board is pushing for legislation that would give the U.S. Coast Guard the authority to enforce U.S. safety rules on foreign-flag vessels
+(x14 / push-02
+	:condition (x2 / reduce-01
+		:ARG1 (x4 / chance-01
+			:ARG1 (x8 / disaster
+				:mod (x7 / cruise-ship))))
+	:ARG0 (x12 / board
+		:mod (x11 / safe-41))
+	:ARG2 (x16 / legislate-01
+		:ARG0-of (x19 / give-01
+			:ARG2 (x22 / military
+				:name (n / name
+					:op1 "Coast"
+					:op2 "Guard"))
+			:ARG1 (x25 / authority
+				:poss x22
+				:ARG0-of (x27 / enforce-01
+					:ARG1 (x30 / rule
+						:poss (x28 / country
+							:name (n1 / name
+								:op1 "U.S."))
+						:mod (x29 / safe-41)
+						:topic (x33 / vessel
+							:mod (x32 / foreign-flag))))))))
+
+# ::id 43
+# ::snt " The Coast Guard, " says Board Chairman James Kolstad, " needs more teeth " to ensure that the vessels are safe when they leave American ports
+(x14 / need-01
+	:ARG0 (x3 / military
+		:name (n / name
+			:op1 "Coast"
+			:op2 "Guard"))
+	:null_edge (x7 / say-01
+		:ARG1 (x10 / name
+			:op1 "James"
+			:op2 "Kolstad"
+			:ARG0-of (x9 / have-org-role-91
+				:ARG2 (c / chairman)
+				:ARG1 (x8 / board))))
+	:ARG1 (x16 / tooth
+		:quant (x15 / more)
+		:ARG0-of (x19 / ensure-01
+			:ARG1 (x24 / safe-41
+				:ARG1 (x22 / vessel)
+				:condition (x27 / leave-01
+					:ARG1 (x29 / port))))))
+
+# ::id 44
+# ::snt In particular, the board believes the ships should be required to have sophisticated, integrated fire-control systems, including remote fire door releases and fire alarms
+(x6 / believe-01
+	:mod (x2 / particular)
+	:ARG0 (x5 / board)
+	:ARG1 (x9 / recommend-01
+		:ARG1 (x11 / require-01
+			:ARG1 (x8 / ship)
+			:ARG1 (x13 / have-03
+				:ARG0 x8
+				:ARG1 (x18 / system
+					:mod (x14 / sophisticated)
+					:mod (x16 / integrated)
+					:mod (x17 / fire-control)))
+			:ARG1 (x25 / and
+				:op1 (x24 / release-01
+					:mod (x21 / remote)
+					:ARG1 (x22 / fire-arm)
+					:ARG1 (x23 / door))
+				:op2 (x27 / alarm-01
+					:ARG1 (x26 / fire-arm))))))
+
+# ::id 45
+# ::snt The board also wants cruise-ship companies to install floor-level emergency lights like those on airplanes and to hire a full-time marine firefighter on all vessels with more than 500 passengers
+(x4 / want-01
+	:ARG0 (x2 / board)
+	:mod (x3 / also)
+	:ARG1 (x16 / and
+		:op1 (x8 / install-01
+			:ARG0 (x6 / company
+				:mod (x5 / cruise-ship))
+			:ARG1 (x11 / light
+				:mod (x9 / floor-level)
+				:mod (x10 / emergency)
+				:ARG1 (x15 / airplane)))
+		:op2 (x18 / hire-01
+			:ARG0 x6
+			:ARG1 (x22 / firefighter
+				:mod (x20 / full-time)
+				:mod (x21 / have-org-role-91
+					:ARG2 (m / marine))
+				:ARG1 (x25 / vessel
+					:quant (x24 / all)
+					:ARG1 (x30 / passenger
+						:quant (x27 / more-than
+							:op1 500)))))))
+
+# ::id 46
+# ::snt And it believes that at least 75 % of the crew involved in emergency operations should be able to communicate with each other and the passengers
+(x3 / believe-01
+	:ARG1 (x16 / recommend-01
+		:ARG1 (x18 / possible
+			:domain (x20 / communicate-01
+				:ARG2 (x24 / and
+					:op1 (x23 / other)
+					:op2 (x26 / passenger)))
+			:domain (xap0 / percentage-entity
+				:value 75
+				:mod (x11 / crew
+					:ARG1-of (x12 / involve-01
+						:ARG2 (x15 / operation
+							:mod (x14 / emergency))))))))
+
+# ::id 47
+# ::snt Despite its strongly worded report, the NTSB knows it could be years before the safety standards for cruise ships are upgraded
+(x9 / know-01
+	:ARG0 (x5 / report
+		:ARG1-of (x4 / word-01
+			:manner (x3 / strong)))
+	:ARG0 (x8 / organization
+		:name (n / name
+			:op1 "NTSB"))
+	:ARG1 (x11 / possible
+		:domain (x13 / temporal-quantity
+			:unit (y / year)
+			:ARG1-of (x22 / upgrade-02
+				:time (x14 / before)
+				:ARG1 (x17 / standard
+					:mod (x16 / safe-41)
+					:poss (x20 / ships
+						:mod (x19 / cruise)))))))
+
+# ::id 48
+# ::snt But in the meantime, one staff member says, " at least the public can be made aware, when they walk their family across that gangplank, what kind of environment they are going into .
+(x1 / contrast-01
+	:ARG2 (x9 / thing
+		:ARG1-of (s / say-01)
+		:location (x4 / meantime)
+		:ARG0 (x8 / have-org-role-91
+			:ARG2 (m / member)
+			:quant 1
+			:ARG1 (x7 / person
+				:ARG2-of (s1 / staff-01))))
+	:ARG2 (x15 / public)
+	:ARG2 (x16 / possible)
+	:ARG2 (x19 / realize-01
+		:op (a / aware))
+	:ARG2 (x23 / walk-01
+		:ARG1 (x25 / family)
+		:location (x26 / across
+			:op1 (x28 / gangplank
+				:mod (x27 / that)))
+		:ARG1 (x36 / go-00
+			:ARG4 (x33 / environment
+				:mod (x31 / kind)))))
+

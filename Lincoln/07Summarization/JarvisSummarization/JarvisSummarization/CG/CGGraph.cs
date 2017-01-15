@@ -685,6 +685,41 @@ namespace JarvisSummarization.CG
             }
             return sb.ToString();
         }
+        public string GenerateMetadataNLG()
+        {            
+            var temporal = new List<CGVerb>();
+            var noverbs = new List<string>() { };
+            var vers = this.Nodes.Where(c =>
+                !noverbs.Contains(c.nosuffix) &&
+                c.semanticroles.Contains("verb")).OrderByDescending(c => c.pagerank).ToList();
+            foreach (var verb in vers)
+            {
+                var cgverb = new CGVerb(verb);
+                cgverb.GenerateVerbs(this);
+                cgverb.GenerateAgents(this);
+                cgverb.GeneratePatients(this);
+                cgverb.GenerateThemes(this);
+                cgverb.GenerateGoal(this);
+                temporal.Add(cgverb);
+            }
+
+            var result = new List<CGVerb>();
+            foreach (var item in temporal.OrderByDescending(c => c.Rank))
+            {
+                var count = result.Sum(c => c.Words);
+                if (count > 100)
+                {
+                    break;
+                }
+                if (item.Agents.Sum(c => c.Count) > 0 )
+                {
+                    result.Add(item);
+                }                
+            }
+            return JsonConvert.SerializeObject(result); 
+        }
+        
+
         public string GenerateInformativeAspectsv2()
         {
             StringBuilder sb = new StringBuilder(); 
@@ -697,7 +732,7 @@ namespace JarvisSummarization.CG
                 c.semanticroles.Contains("verb")).OrderByDescending(c => c.pagerank).ToList();
             foreach (var verb in vers)
             {
-                var cgverb = new CGVerb(verb);
+                var cgverb = new CGVerb(verb);                
                 cgverb.GenerateVerbs(this);
                 cgverb.GenerateAgents(this);
                 cgverb.GeneratePatients(this);

@@ -1,0 +1,409 @@
+# ::id 1
+# ::snt Two Coast Guard radar watchers testified Monday that they did not notify the skipper of the Exxon Valdez when the vessel sailed off their screens and did not try to track its progress by radio until after the tanker grounded on Bligh Reef
+(x6 / testify-01
+	:ARG0 (x5 / watcher
+		:quant 2
+		:mod (x4 / radar
+			:mod (x3 / guard
+				:mod (x2 / coast))))
+	:ARG1 (x7 / monday)
+	:ARG1 (x26 / and
+		:op1 (x12 / notify-01
+			:ARG1 (x14 / skipper
+				:ARG1 (x18 / valdez))
+			:time (x22 / sail
+				:ARG0 (x21 / vessel)
+				:ARG1 (x25 / screen)))
+		:op2 (x29 / try-01
+			:ARG1 (x31 / track-01
+				:ARG1 (x33 / progress-01)
+				:ARG0 (x35 / radio)
+				:ARG1 (x40 / ground
+					:time (x37 / after)
+					:ARG0 (x39 / tanker)
+					:ARG1 (x43 / organization
+						:name (n / name
+							:op1 "Reef")
+						:mod (x42 / country
+							:name (n1 / name
+								:op1 "Bligh"))))))))
+
+# ::id 2
+# ::snt The Exxon Valdez was the only ship under surveillance by the Coast Guard vessel traffic center for hours before the March 24 wreck, but that failed to guarantee that radar watchers monitored its progress out of treacherous Prince William Sound
+(x25 / contrast-01
+	:ARG1 (x7 / ship
+		:domain (x3 / person
+			:name (n / name
+				:op1 "Valdez"))
+		:mod (x6 / only)
+		:ARG0-of (x9 / surveil-01
+			:op (s / surveillance)
+			:ARG0 (x16 / center
+				:ARG0-of (x12 / have-org-role-91
+					:ARG1 (m / military
+						:name (n1 / name
+							:op1 "Coast"))
+					:name (x13 / organization
+						:name (n3 / name
+							:op1 "Guard")))
+				:poss (x14 / vessel)
+				:mod (x15 / traffic)
+				:duration (x18 / temporal-quantity
+					:unit (h / hour)
+					:time (x19 / before
+						:op1 (x21 / date-entity))))))
+	:ARG2 (x27 / fail-01
+		:ARG2 (x29 / guarantee-01
+			:ARG1 (x33 / monitor-01
+				:ARG0 (x32 / watcher
+					:mod (x31 / radar))
+				:ARG1 (x35 / progress-01)
+				:ARG1 (x40 / event
+					:name (n2 / name
+						:op1 "William"
+						:op2 "Sound")
+					:mod (x38 / treacherous)
+					:ARG0-of (x39 / prince))))))
+
+# ::id 3
+# ::snt The Coast Guard radar watchman who started work 25 minutes before the grounding and 45 minutes before the Exxon Valdez radioed that it was aground said he never even tried to locate the off-course vessel because the earlier watchman, Gordon Taylor, said it had disappeared from radar
+(x5 / watchman
+	:ARG0-of (x2 / have-org-role-91
+		:ARG1 (m / military
+			:name (n / name
+				:op1 "Coast")))
+	:poss (x3 / organization
+		:name (n1 / name
+			:op1 "Guard"))
+	:mod (x4 / radar)
+	:ARG0-of (x7 / start-01
+		:ARG1 (x8 / work-01)
+		:time (x11 / before
+			:op1 (x13 / grounding))
+		:ARG1 (x14 / and
+			:op1 (x10 / temporal-quantity
+				:unit (m1 / minute)
+				:quant 25)
+			:op2 (x16 / temporal-quantity
+				:unit (m2 / minute)
+				:quant 45))
+		:time (x17 / before
+			:op1 (x21 / radio
+				:ARG0 (x19 / government-organization
+					:name (n2 / name
+						:op1 "Exxon"
+						:op2 "Valdez"))
+				:ARG1 (x26 / say-01
+					:mod (x25 / aground)
+					:ARG1 (x30 / try-01
+						:mod (x29 / even)
+						:ARG1 (x32 / locate-02
+							:ARG1 (x35 / vessel
+								:mod (x34 / off-course))
+							:ARG1-of (x36 / cause-01
+								:ARG0 (x44 / say-01
+									:ARG0 (x39 / watchman
+										:time (x38 / early)
+										:name (x41 / name
+											:op1 "Gordon"
+											:op2 "Taylor"))
+									:ARG1 (x47 / disappear-01
+										:ARG2 (x49 / radar)))))))))))
+
+# ::id 4
+# ::snt Bruce Blandford testified in Alaska Superior Court that, at the first radioed report of the wreck, he tried for the first time to find the Exxon Valdez on radar and the grounded tanker showed up perfectly
+(x3 / testify-01
+	:ARG0 (x1 / newspaper
+		:name (n / name
+			:op1 "Bruce"
+			:op2 "Blandford"))
+	:location (x6 / government-organization
+		:name (n1 / name
+			:op1 "Superior"
+			:op2 "Court")
+		:mod (x5 / state
+			:name (n2 / name
+				:op1 "Alaska")))
+	:ARG1 (x32 / and
+		:op1 (x20 / try-01
+			:location (x14 / report
+				:topic (x13 / radio)
+				:ARG1 (x17 / wreck-01))
+			:time (x24 / time)
+			:ARG1 (x26 / find-01
+				:ARG1 (x29 / valdez)
+				:ARG2 (x31 / radar)))
+		:op2 (x36 / show-01
+			:ARG0 (x35 / tanker
+				:ARG1-of (x34 / ground))
+			:manner (x38 / perfect))))
+
+# ::id 5
+# ::snt Defense lawyers capitalized on the testimony to demonstrate that perhaps it was Coast Guard negligence, not the captain's alleged drunken recklessness, that contributed to the grounding
+(x3 / capitalize
+	:ARG0 (x2 / lawyer
+		:ARG0-of (x1 / defend))
+	:ARG2 (x6 / testify-01)
+	:ARG2 (x8 / demonstrate-01
+		:ARG0 x2
+		:ARG1 (x15 / negligence
+			:domain (x13 / have-org-role-91
+				:ARG1 (m / military
+					:name (n / name
+						:op1 "Coast"))
+				:name (x14 / organization
+					:name (n1 / name
+						:op1 "Guard")))
+			:domain (x23 / recklessness
+				:poss (x19 / have-org-role-91
+					:ARG2 (c / captain))
+				:ARG1-of (x21 / allege-01)
+				:mod (x22 / drunken))
+			:ARG0-of (x26 / contribute-01
+				:ARG2 (x29 / grounding)))))
+
+# ::id 6
+# ::snt Lawyers for the Coast Guard and the Justice Department listened intently
+(x10 / listen-01
+	:ARG0 (x1 / lawyer
+		:ARG2 (x6 / and
+			:op1 (x5 / organization
+				:name (n / name
+					:op1 "Guard")
+				:null_edge (x4 / have-org-role-91
+					:ARG1 (m / military
+						:name (n2 / name
+							:op1 "Coast"))))
+			:op2 (x8 / government-organization
+				:name (n1 / name
+					:op1 "Justice"
+					:op2 "Department"))))
+	:manner (x11 / intently))
+
+# ::id 7
+# ::snt The skipper, Joseph Hazelwood, 43, of Huntington, N.Y., faces up to seven years and three months in jail and a $ 61,000 fine if convicted on charges of operating the Exxon Valdez while intoxicated, reckless endangerment, negligent discharge of oil and criminal mischief
+(x14 / face-01
+	:ARG0 (x2 / skipper
+		:name (x4 / name
+			:op1 "Joseph"
+			:op2 "Hazelwood"))
+	:ARG1 43
+	:ARG0 (x10 / country
+		:name (n / name
+			:op1 "Huntington")
+		:null_edge (x12 / country
+			:name (n1 / name
+				:op1 "N.Y.")))
+	:ARG1 (x19 / and
+		:op1 (x18 / temporal-quantity
+			:unit (y / year)
+			:quant 7)
+		:op1 (x21 / temporal-quantity
+			:unit (m / month)
+			:quant 3)
+		:location (x24 / and
+			:op1 (x23 / jail)
+			:op2 (x28 / fine
+				:mod (x26 / country
+					:name (n2 / name
+						:op1 "$")
+					:null_edge (x27 / monetary-quantity
+						:unit (y1 / yuan))))))
+	:condition (x30 / convict-01
+		:ARG1 x2
+		:ARG1 43
+		:ARG2 (x32 / charge-05
+			:ARG2 (x34 / operate-01
+				:ARG1 (x37 / valdez)
+				:ARG1 (x48 / and
+					:op1 (x42 / endangerment
+						:mod (x39 / intoxicated)
+						:mod (x41 / reckless))
+					:op2 (x45 / discharge-01
+						:ARG1-of (x44 / negligent)
+						:ARG0 (x47 / oil))
+					:op2 (x50 / mischief
+						:mod x39
+						:mod (x49 / crime)))))))
+
+# ::id 8
+# ::snt Neither Blandford nor Taylor notified the skipper when his ship disappeared from their radar screens as it sailed on a collision course with Bligh Reef, where it broke open and spilled nearly 11 million gallons of crude oil into Prince William Sound last March 24
+(x5 / notify-01
+	:ARG1 (x7 / skipper)
+	:time (x11 / disappear-01
+		:ARG1 (x10 / ship)
+		:ARG2 (x15 / screen
+			:mod (x14 / radar))
+		:time (x18 / sail
+			:ARG2 (x25 / organization
+				:name (n / name
+					:op1 "Reef")
+				:mod (x24 / country
+					:name (n1 / name
+						:op1 "Bligh"))
+				:ARG1-of (x29 / break-08)
+				:ARG1-of (x32 / spill-01
+					:ARG1 (x39 / oil
+						:quant (x33 / nearly
+							:op1 (x30 / open-01))
+						:quant (x36 / volume-quantity
+							:unit (g / gallon))
+						:mod (x38 / crude))
+					:ARG2 (x43 / country
+						:name (n2 / name
+							:op1 "Sound")
+						:null_edge (x41 / country
+							:name (n3 / name
+								:op1 "Prince"))
+						:null_edge (x42 / country
+							:name (n4 / name
+								:op1 "William")))
+					:name (x45 / name
+						:op1 "March"
+						:op2 "24"
+						:mod (x44 / last)))))))
+
+# ::id 9
+# ::snt The two men revealed that another loaded tanker, the Arco Juneau, had taken a similar detour around ice four hours earlier without any problems, and thus they thought nothing of the Exxon Valdez leaving its prescribed tanker lane
+(x4 / reveal-01
+	:ARG0 (x3 / man
+		:quant 2)
+	:ARG1 (x28 / and
+		:op1 (x15 / take-01
+			:ARG0 (x8 / tanker
+				:mod (x6 / another)
+				:mod (x7 / loaded)
+				:name (x11 / name
+					:op1 "Arco"
+					:op2 "Juneau"))
+			:ARG1 (x18 / detour
+				:ARG1-of (x17 / resemble-01
+					:op (s / similar))
+				:location (x19 / around
+					:op1 (x20 / ice)))
+			:time (x23 / early
+				:op1 (x21 / date-entity))
+			:destination (x26 / problem
+				:mod (x25 / any)))
+		:op2 (x31 / think-01
+			:ARG0 x8
+			:ARG1 (x36 / valdez
+				:mod (x32 / nothing))
+			:ARG1 (x37 / leave-01
+				:ARG1 (x41 / lane
+					:ARG1-of (x39 / prescribe-02)
+					:mod (x40 / tanker))))))
+
+# ::id 10
+# ::snt Blandford said such a detour was considered routine
+(x2 / say-01
+	:ARG0 (x1 / person
+		:name (n / name
+			:op1 "Blandford"))
+	:ARG1 (x7 / consider-01
+		:ARG1 (x5 / detour
+			:mod (x3 / such))
+		:ARG1 (x8 / routine)))
+
+# ::id 11
+# ::snt Taylor and Blandford said the radar was less than reliable, affected by snowstorms and sometimes went on the blink, working off and on near Bligh Reef, 25 miles out
+(x4 / say-01
+	:ARG1 (x2 / and
+		:op1 (x1 / person
+			:name (n / name
+				:op1 "Taylor"))
+		:op2 (x3 / person
+			:name (n1 / name
+				:op1 "Blandford")))
+	:ARG1 (x15 / and
+		:op1 (x8 / less
+			:domain (x6 / radar)
+			:null_edge (x10 / reliable))
+		:op2 (x12 / affect-01
+			:ARG0 (x14 / snow))
+		:op2 (x17 / go-02
+			:ARG0 x6
+			:frequency (x16 / sometimes)
+			:ARG1 (x20 / blink-01)
+			:ARG1 (x22 / work-01
+				:ARG2 (x24 / and
+					:op1 (x23 / off)
+					:op2 (x25 / on)
+					:op1 (x26 / near-01
+						:op1 (x28 / organization
+							:name (n2 / name
+								:op1 "Reef")
+							:mod (x27 / country
+								:name (n3 / name
+									:op1 "Bligh"))
+							:null_edge (x31 / distance-quantity
+								:unit (m / mile)
+								:quant 25))))))))
+
+# ::id 12
+# ::snt Blandford said the radar seemed to be deteriorating
+(x2 / say-01
+	:ARG0 (x1 / person
+		:name (n / name
+			:op1 "Blandford"))
+	:ARG1 (x5 / seem-01
+		:ARG1 (x4 / radar)
+		:ARG1 (x8 / deteriorate-01)))
+
+# ::id 13
+# ::snt Taylor indicated that in the weeks before the wreck, radar " targets were getting harder to hold onto .
+(x2 / indicate-01
+	:ARG0 (x1 / person
+		:name (n / name
+			:op1 "Taylor"))
+	:ARG1 (x16 / hard
+		:time (x6 / week
+			:time (x7 / before
+				:op1 (x9 / wreck-01)))
+		:domain (x13 / target
+			:ARG1 (x11 / radar))
+		:domain (x18 / hold-04)))
+
+# ::id 14
+# ::snt Blandford said the 987-foot Exxon tanker may have shown up on radar after the grounding because by then the radar had a broadside view of the tanker
+(x2 / say-01
+	:ARG0 (x1 / person
+		:name (n / name
+			:op1 "Blandford"))
+	:ARG1 (x7 / possible
+		:domain (x9 / show-01
+			:ARG0 (x6 / tanker
+				:mod (x4 / 987-foot)
+				:mod (x5 / organization
+					:name (n1 / name
+						:op1 "Exxon")))
+			:ARG1 (x12 / radar)
+			:time (x13 / after
+				:op1 (x15 / grounding))
+			:ARG1-of (x16 / cause-01
+				:ARG0 (x17 / by
+					:op1 (x18 / then))
+				:ARG0 (x20 / radar)
+				:ARG0 (x24 / view-02
+					:mod (x23 / broadside)
+					:ARG1 (x27 / tanker))))))
+
+# ::id 15
+# ::snt Shortly after assuming the watch, Blandford said, he left the controls for 5 minutes to get coffee and check the weather
+(x8 / say-01
+	:time (x2 / after
+		:mod (x1 / shortly)
+		:op1 (x3 / assume-02
+			:ARG1 (x5 / watch-01)))
+	:ARG0 (x7 / person
+		:name (n / name
+			:op1 "Blandford"))
+	:ARG0 (x10 / he)
+	:ARG1 (x20 / and
+		:op1 (x13 / control-01)
+		:null_edge 5
+		:op1 (x18 / get-01
+			:ARG1 (x19 / coffee))
+		:op2 (x21 / check-07
+			:ARG1 (x23 / weather))))
+

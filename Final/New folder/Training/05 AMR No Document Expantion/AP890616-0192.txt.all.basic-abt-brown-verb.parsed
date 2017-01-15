@@ -1,0 +1,688 @@
+# ::id 1
+# ::snt Michael Milken, the fallen Drexel Burnham Lambert financier, is striking out on his own
+(x12 / person
+	:name (n / name
+		:op1 "striking")
+	:ARG0 (x1 / newspaper
+		:name (n1 / name
+			:op1 "Michael"
+			:op2 "Milken")
+		:ARG0-of (x9 / finance-01
+			:name (x6 / name
+				:op1 "Drexel"
+				:op2 "Burnham"
+				:op3 "Lambert"
+				:ARG1-of (x5 / fall-01)))))
+
+# ::id 2
+# ::snt But what is n't clear is whether loyal ex-colleagues will follow the Pied Piper of junk bonds to his new firm _ and how long the venture will last with Milken facing a lengthy jail term
+(x1 / contrast-01
+	:ARG2 (x5 / clear)
+	:ARG2 (x11 / follow-02
+		:ARG0 (x9 / ex-colleague
+			:mod (x8 / loyal))
+		:ARG1 (x14 / piper
+			:mod (x13 / pied)
+			:ARG1 (x17 / bond
+				:mod (x16 / junk)
+				:ARG2 (x29 / last-01
+					:ARG2 (x21 / firm
+						:mod (x22 / _
+							:mod (x20 / new)))
+					:ARG2 (x27 / venture)
+					:ARG2 (x32 / face-01
+						:ARG0 x27
+						:ARG0 (x31 / person
+							:name (n / name
+								:op1 "Milken"))
+						:ARG1 (x36 / term
+							:duration (x34 / lengthy)
+							:mod (x35 / jail))))))))
+
+# ::id 3
+# ::snt Milken, 42, resigned Thursday after 19 years at Drexel, where he began a wildly successful career that helped reshape corporate America in the 1980s through the pioneering use of low-grade securities called junk bonds
+(x5 / resign-01
+	:ARG0 (x1 / person
+		:name (n / name
+			:op1 "Milken")
+		:null_edge 42)
+	:time (x7 / after
+		:op1 (x9 / temporal-quantity
+			:unit (y / year)
+			:quant 19))
+	:location (x11 / organization
+		:name (n1 / name
+			:op1 "Drexel")
+		:ARG1-of (x15 / begin-01
+			:ARG0 (x14 / he)
+			:ARG1 (x19 / career
+				:ARG1-of (x18 / succeed-01
+					:mod (x17 / wildly))
+				:ARG0-of (x21 / help-01
+					:ARG1 (x22 / reshape
+						:ARG1 (x23 / corporation)
+						:instrument (x31 / use-01
+							:mod (x30 / pioneering)
+							:ARG1 (x34 / thing
+								:ARG0-of (s / secure-02)
+								:ARG1-of (x35 / call-01
+									:ARG1 (x37 / bond
+										:mod (x36 / junk)))))
+						:time (xap1 / date-entity
+							:decade 1980))))))
+	:time (xap0 / date-entity
+		:weekday (x6 / thursday)))
+
+# ::id 4
+# ::snt Milken, who made a reported $ 550 million in 1987, said he is forming a consulting firm to assist companies that want to raise money to start up, grow or stay in business
+(x13 / say-01
+	:ARG0 (x1 / person
+		:name (n / name
+			:op1 "Milken")
+		:ARG1-of (x6 / report-01
+			:ARG1 (x8 / monetary-quantity
+				:unit (y / yuan))
+			:time (x11 / date-entity
+				:year 1987)))
+	:ARG1 (x16 / form-01
+		:ARG0 (x14 / he)
+		:ARG1 (x19 / firm
+			:mod (x18 / consulting)
+			:purpose (x21 / assist-01
+				:ARG1 (x22 / company
+					:ARG0-of (x24 / want-01
+						:ARG1 (x26 / raise-01
+							:ARG1 (x27 / money)
+							:ARG2 (x33 / or
+								:op1 (x29 / start-01)
+								:op2 (x32 / grow-01)
+								:op2 (x34 / stay-01
+									:ARG1 (x36 / business))))))))))
+
+# ::id 5
+# ::snt But he faces $ 1.85 billion in forfeitures of alleged illegal profits and a lengthy jail term if convicted on a 98-count fraud and racketeering indictment, the government's largest securities crime prosecution to date
+(x1 / contrast-01
+	:ARG2 (x3 / face-01
+		:ARG0 (x2 / he)
+		:ARG1 (x8 / forfeiture
+			:ARG1 (x13 / and
+				:op1 (x12 / profit-01
+					:quant (x5 / monetary-quantity
+						:unit (y / yuan))
+					:ARG1-of (x10 / allege-01)
+					:mod (x11 / law
+						:polarity -)
+					:ARG2-of (x19 / convict-01
+						:duration (x15 / lengthy
+							:location (x16 / jail))
+						:ARG2 (x24 / and
+							:op1 (x23 / defraud-01
+								:op (f / fraud)
+								:mod (x22 / 98-count)
+								:mod (x34 / prosecute-01
+									:poss (x29 / government-organization
+										:ARG0-of (g / govern-01))
+									:mod (x31 / large
+										:degree (m / most))
+									:null_edge (x32 / null_tag)
+									:mod (x33 / crime)
+									:time (x36 / date)))
+							:op2 (x26 / indictment
+								:mod (x25 / racketeer-00)))))))))
+
+# ::id 6
+# ::snt People involved in Milken's plans for the new firm, International Capital Assets Group, said Milken does not intend to raid Drexel's Beverly Hills, Calif., junk bond division, which he founded and ran until his March indictment
+(x17 / say-01
+	:ARG1 (x2 / involve-01
+		:ARG2 (x6 / plan-01
+			:ARG0 (x4 / person
+				:name (n1 / name
+					:op1 "Milken"))
+			:ARG1 (x10 / firm
+				:mod (x9 / new)
+				:poss (x12 / organization
+					:name (n2 / name
+						:op1 "International"
+						:op2 "Capital"
+						:op3 "Assets"
+						:op4 "Group")))))
+	:ARG1 (x21 / intend-01
+		:ARG0 (x18 / person
+			:name (n / name
+				:op1 "Milken"))
+		:ARG1 (x23 / raid-01
+			:ARG0 x18
+			:ARG1 (x33 / division
+				:poss (x24 / organization
+					:name (n3 / name
+						:op1 "Drexel"))
+				:poss (x26 / country
+					:name (n4 / name
+						:op1 "Beverly"
+						:op2 "Hills"
+						:op3 ","
+						:op4 "Calif."))
+				:mod (x32 / bond
+					:ARG1 (x31 / junk))
+				:ARG1 (x38 / and
+					:op1 (x37 / found-01)
+					:op2 (x39 / run-02
+						:duration (x40 / until
+							:op1 (x43 / indictment
+								:null_edge (x42 / null_tag)))))))))
+
+# ::id 7
+# ::snt The principals in the new firm, which now has a handful of employees and a temporary Los Angeles office, are not going to be " Drexel people, " Milken associates said
+(x34 / say-01
+	:ARG0 (x2 / principal
+		:location (x6 / firm
+			:mod (x5 / new)
+			:purpose (x15 / and
+				:time (x9 / now)
+				:op1 (x12 / handful)
+				:op1 (x14 / person
+					:ARG1-of (e / employ-01)))))
+	:ARG1 (x24 / go-02
+		:ARG1 (x28 / organization
+			:name (n / name
+				:op1 "Drexel")))
+	:ARG0 (x33 / associate
+		:mod (x32 / person
+			:name (n1 / name
+				:op1 "Milken"))))
+
+# ::id 8
+# ::snt But Milken still commands tremendous loyalty among some key junk bond employees and Drexel clients, and no one is ruling out defections
+(x1 / contrast-01
+	:ARG2 (x4 / command-02
+		:ARG0 (x2 / person
+			:name (n / name
+				:op1 "Milken"))
+		:mod (x3 / still)
+		:ARG1 (x6 / loyal-41
+			:mod (x5 / tremendous)
+			:ARG1 (x13 / and
+				:op1 (x12 / person
+					:ARG1-of (e / employ-01)
+					:mod (x8 / some)
+					:mod (x9 / key)
+					:mod (x11 / bond
+						:ARG1 (x10 / junk)))
+				:op2 (x15 / client
+					:mod (x14 / organization
+						:name (n1 / name
+							:op1 "Drexel"))))))
+	:ARG2 (x17 / and
+		:op2 (x21 / rule-03
+			:ARG0 x2
+			:polarity -
+			:ARG1 (x23 / defection))))
+
+# ::id 9
+# ::snt Milken associates did not release details on his plans, including whether an affiliated brokerage would be formed
+(x5 / release-01
+	:ARG0 (x2 / associate
+		:mod (x1 / person
+			:name (n / name
+				:op1 "Milken")))
+	:ARG1 (x6 / detail-01
+		:ARG1 (x9 / plan-01
+			:ARG1 (x18 / form-01
+				:ARG1 (x15 / brokerage
+					:ARG1-of (x14 / affiliated))))))
+
+# ::id 10
+# ::snt A Drexel official, speaking on condition of anonymity, said the Wall Street giant does not anticipate conflicts with Milken's new firm because it will not be in the brokerage business
+(x11 / say-01
+	:condition (x5 / speak-01
+		:condition (x9 / anonymity))
+	:ARG1 (x18 / anticipate-01
+		:ARG0 (x14 / street
+			:null_edge (x13 / null_tag)
+			:mod (x15 / giant))
+		:ARG1 (x19 / conflict-01)
+		:ARG1-of (x25 / cause-01
+			:ARG0 (x24 / firm
+				:poss (x21 / person
+					:name (n1 / name
+						:op1 "Milken"))
+				:mod (x23 / new))
+			:ARG0 (x33 / business
+				:mod (x32 / brokerage))))
+	:ARG0 (xap0 / person
+		:ARG0-of (x3 / have-org-role-91
+			:ARG2 (o / official)
+			:ARG1 (x2 / organization
+				:name (n / name
+					:op1 "Drexel")))))
+
+# ::id 11
+# ::snt Under Drexel's still-to-be-approved settlement of civil insider trading and other fraud charges with the Securities and Exchange Commission, Drexel and its employees are barred from doing business with Milken, directly or indirectly
+(x26 / bar-01
+	:prep-under (x5 / settle-02
+		:ARG0 (x2 / organization
+			:name (n / name
+				:op1 "Drexel"))
+		:mod (x4 / still-to-be-approved)
+		:ARG1 (x10 / and
+			:op1 (x9 / trade-01
+				:mod (x7 / civil)
+				:ARG1 (x8 / insider))
+			:op2 (x13 / thing
+				:ARG1-of (c / charge-01)
+				:mod (x11 / other)
+				:ARG2 (x12 / defraud-01
+					:op (f / fraud)))
+			:op4 (x18 / exchange-01
+				:null_edge (x17 / null_tag))))
+	:ARG1 (x22 / and
+		:op1 (x21 / organization
+			:name (n1 / name
+				:op1 "Drexel"))
+		:op2 (x24 / person
+			:ARG1-of (e / employ-01)))
+	:ARG1 (x34 / or
+		:op2 (x29 / business)
+		:op2 (x33 / direct)
+		:op1 (x35 / direct)))
+
+# ::id 12
+# ::snt The Drexel official said the provision likely will be reviewed on a case-by-case basis, so some contact between the New York investment firm's clients and Milken may occur
+(x4 / say-01
+	:ARG1 (x7 / likely
+		:domain (x10 / review-01
+			:ARG1 (x6 / provision)
+			:ARG0 (x24 / firm
+				:poss (x22 / country
+					:name (n1 / name
+						:op1 "York"))
+				:mod (x23 / invest-01))
+			:location (x27 / and
+				:op2 (x26 / client
+					:domain (x18 / contact-01
+						:mod (x17 / some)))
+				:op2 (x29 / possible
+					:domain (x28 / person
+						:name (n2 / name
+							:op1 "Milken"))))))
+	:ARG0 (xap0 / person
+		:ARG0-of (x3 / have-org-role-91
+			:ARG2 (o / official)
+			:ARG1 (x2 / organization
+				:name (n / name
+					:op1 "Drexel")))))
+
+# ::id 13
+# ::snt For instance, Milken may be able to refer clients to Drexel and vice versa but not receive any fees
+(x5 / possible
+	:domain (x4 / person
+		:name (n / name
+			:op1 "Milken"))
+	:domain (x9 / refer-02
+		:ARG1 (x10 / client)
+		:ARG1 (x13 / and
+			:op2 (x12 / organization
+				:name (n1 / name
+					:op1 "Drexel"))
+			:op2 (x15 / versa)))
+	:ARG1-of (x16 / contrast-01
+		:ARG2 (x18 / receive-01
+			:ARG0 x4
+			:ARG1 (x20 / fee
+				:mod (x19 / any)))))
+
+# ::id 14
+# ::snt Milken's resignation ends the relationship between one of the most important financial players of the decade and the firm he helped boost from a second-tier brokerage to the nation's fifth largest
+(x4 / end-01
+	:ARG1 (x3 / resignation
+		:ARG0 (x1 / person
+			:name (n / name
+				:op1 "Milken")))
+	:ARG1 (x6 / relationship
+		:ARG1-of (x9 / include-91
+			:ARG2 (x18 / and
+				:op1 (x14 / person
+					:ARG0-of (p / play-01)
+					:mod (x12 / important
+						:degree (x11 / most))
+					:mod (x13 / finance))
+				:op2 (x20 / firm
+					:ARG0-of (x22 / help-01
+						:ARG1 (x23 / boost-01
+							:ARG2 (x27 / brokerage
+								:mod (x26 / second-tier)
+								:ARG2 (x30 / nation
+									:mod (x33 / large
+										:degree (m / most)))))))))))
+
+# ::id 15
+# ::snt " Michael Milken made many important contributions to Drexel Burnham, and his resignation, although not unexpected, is a sad event, " Drexel stated
+(x27 / state-01
+	:ARG1 (x7 / contribute-01
+		:ARG0 (x2 / newspaper
+			:name (n1 / name
+				:op1 "Michael"
+				:op2 "Milken"))
+		:quant (x5 / many)
+		:mod (x6 / important)
+		:ARG2 (x10 / organization
+			:name (n2 / name
+				:op1 "Burnham")
+			:mod (x9 / organization
+				:name (n3 / name
+					:op1 "Drexel")))
+		:ARG0 (x12 / and
+			:op2 (x23 / event
+				:domain (x14 / resignation)
+				:mod (x22 / sad))))
+	:ARG0 (x26 / organization
+		:name (n / name
+			:op1 "Drexel")))
+
+# ::id 16
+# ::snt " We wish him well in his new endeavor .
+(x3 / wish-01
+	:ARG0 (x2 / we)
+	:ARG1 (x9 / endeavor-01
+		:mod (x8 / new)))
+
+# ::id 17
+# ::snt Milken widely was credited with creating a $ 175 billion-a-year junk bond market
+(x4 / credit-01
+	:ARG1 (x1 / person
+		:name (n / name
+			:op1 "Milken"))
+	:degree (x2 / wide)
+	:ARG2 (x6 / create-01
+		:ARG0 x1
+		:ARG1 (x13 / market
+			:quant (x9 / monetary-quantity
+				:unit (y / yuan))
+			:mod (x11 / junk))))
+
+# ::id 18
+# ::snt His pitchman sale of the bonds _ previously used mainly by companies with low credit ratings _ helped fuel the decade's corporate takeover mania by giving smaller companies and corporate raiders a tool for financing growth, mergers and takeovers
+(x18 / help-01
+	:ARG0 (x6 / bond
+		:ARG1-of (x2 / pitchman)
+		:ARG1-of (x9 / use-01
+			:time (x8 / previous)
+			:mod (x10 / main)
+			:ARG0 (x12 / company)
+			:ARG2 (x16 / rate-01
+				:mod (x14 / low)
+				:mod (x15 / credit-02))))
+	:manner (x17 / _)
+	:ARG1 (x19 / fuel-01
+		:ARG1 (x25 / mania
+			:mod (x23 / corporation)
+			:mod (x24 / take-12))
+		:instrument (x27 / give-01
+			:ARG1 (x30 / and
+				:op2 (x29 / company
+					:mod (x28 / small))
+				:op2 (x32 / raider
+					:mod (x31 / corporation)))
+			:ARG1 (x34 / tool
+				:ARG1 (x36 / finance-01
+					:ARG1 (x40 / and
+						:op1 (x37 / grow-01)
+						:op2 (x39 / merge-01)
+						:op2 (x41 / take-12)))))))
+
+# ::id 19
+# ::snt But the federal government alleges Milken used his powers through Drexel to engage in a range of securities crimes, including schemes with now-jailed stock speculator Ivan Boesky
+(x1 / contrast-01
+	:ARG2 (x5 / allege-01
+		:ARG0 (x4 / government-organization
+			:ARG0-of (g / govern-01)
+			:ARG1 (x3 / government-organization
+				:name (n / name
+					:op1 "federal")))
+		:ARG1 (x7 / use-01
+			:ARG0 (x6 / person
+				:name (n1 / name
+					:op1 "Milken"))
+			:ARG1 (x9 / power)
+			:beneficiary (x11 / organization
+				:name (n2 / name
+					:op1 "Drexel"))
+			:ARG2 (x13 / engage-01
+				:ARG1 (x16 / range
+					:ARG1 (x19 / crime
+						:null_edge (x18 / null_tag))
+					:ARG1 (x22 / scheme-01
+						:name (x27 / name
+							:op1 "Ivan"
+							:op2 "Boesky"
+							:mod (x24 / now-jailed)
+							:ARG0-of (x26 / speculator
+								:mod (x25 / stock)))))))))
+
+# ::id 20
+# ::snt He also is accused of insider trading in a separate SEC lawsuit
+(x4 / accuse-01
+	:ARG1 (x1 / he)
+	:mod (x2 / also)
+	:ARG0 (x7 / trade-01
+		:ARG0 x1
+		:ARG1 (x6 / insider)
+		:ARG1 (x12 / lawsuit
+			:mod (x10 / separate)
+			:mod (x11 / organization
+				:name (n / name
+					:op1 "SEC")))))
+
+# ::id 21
+# ::snt No settlement has been reached and no trial scheduled in that case
+(x6 / and
+	:op1 (x5 / reach-01
+		:ARG1 (x2 / settle-02))
+	:op2 (x9 / schedule-01
+		:ARG1 (x8 / trial
+			:polarity -)
+		:ARG1 (x12 / case
+			:mod (x11 / that))))
+
+# ::id 22
+# ::snt Milken had been on leave from Drexel since his criminal indictment
+(x5 / left
+	:ARG0 (x1 / person
+		:name (n / name
+			:op1 "Milken"))
+	:ARG0 (x7 / organization
+		:name (n1 / name
+			:op1 "Drexel"))
+	:time (x8 / since
+		:op1 (x11 / indictment
+			:mod (x10 / crime))))
+
+# ::id 23
+# ::snt His brother, Lowell, who also was charged in the case, announced Thursday he was quitting the firm to return to practicing law
+(x14 / announce-01
+	:ARG0 (x2 / brother
+		:poss (x4 / person
+			:name (n / name
+				:op1 "Lowell"))
+		:ARG0-of (x9 / charge-01
+			:mod (x7 / also)
+			:ARG2 (x12 / case)
+			:ARG0-of (x18 / quit-01
+				:ARG1 (x20 / firm)
+				:purpose (x22 / return-01
+					:ARG1 (x24 / practice-01
+						:ARG1 (x25 / law))))))
+	:time (xap0 / date-entity
+		:weekday (x15 / thursday)))
+
+# ::id 24
+# ::snt " I am naturally disappointed to be forced to leave Drexel as part of the firm's settlement with the government, but I look forward to the opportunity of helping people build companies, " Michael Milken said in a statement
+(x42 / state-01
+	:ARG1 (x5 / disappoint-01
+		:manner (x4 / natural)
+		:ARG1 (x8 / force-01
+			:ARG2 (x10 / leave-01
+				:ARG1 (x11 / government-organization
+					:name (n1 / name
+						:op1 "Drexel"))
+				:purpose (x18 / settle-02
+					:ARG0 (x16 / firm)
+					:ARG1 (x21 / government-organization
+						:ARG0-of (g / govern-01)))))
+		:condition (x25 / look-01
+			:ARG0 (x24 / i)
+			:direction (x26 / forward)
+			:ARG2 (x29 / opportunity
+				:consist-of (x31 / help-01
+					:ARG1 (x33 / build-01
+						:ARG1 (x34 / company)))))
+		:ARG1 (x37 / newspaper
+			:name (n / name
+				:op1 "Michael"
+				:op2 "Milken")))
+	:ARG0 x37)
+
+# ::id 25
+# ::snt Milken joined Drexel full-time in 1970 after graduating from the University of Pennsylvania's Wharton School
+(x2 / join-01
+	:ARG0 (x1 / person
+		:name (n / name
+			:op1 "Milken"))
+	:ARG1 (x3 / government-organization
+		:name (n1 / name
+			:op1 "Drexel"))
+	:manner (x4 / full-time)
+	:time (x6 / date-entity
+		:year 1970)
+	:time (x7 / after
+		:op1 (x8 / graduate-01
+			:ARG3 (x16 / school
+				:null_edge (x11 / company
+					:name (n2 / name
+						:op1 "University"
+						:op2 "of"
+						:op3 "Pennsylvania"))
+				:null_edge (x15 / organization
+					:name (n3 / name
+						:op1 "Wharton"))))))
+
+# ::id 26
+# ::snt In 1978, he moved Drexel's junk bond division to Beverly Hills
+(x5 / move-01
+	:time (x2 / date-entity
+		:year 1978)
+	:ARG0 (x4 / he)
+	:ARG1 (x10 / division
+		:poss (x6 / organization
+			:name (n1 / name
+				:op1 "Drexel"))
+		:mod (x9 / bond
+			:mod (x8 / junk)))
+	:ARG2 (x13 / country
+		:name (n / name
+			:op1 "Hills")
+		:null_edge (x12 / country
+			:name (n2 / name
+				:op1 "Beverly"))))
+
+# ::id 27
+# ::snt Milken's trial in federal court in Manhattan is set for next March
+(x10 / set-03
+	:ARG1 (x3 / trial
+		:poss (x1 / person
+			:name (n / name
+				:op1 "Milken"))
+		:location (x6 / court
+			:mod (x5 / government-organization
+				:name (n1 / name
+					:op1 "federal"))
+			:location (x8 / country
+				:name (n2 / name
+					:op1 "Manhattan"))))
+	:time (x13 / date-entity
+		:mod (x12 / next)))
+
+# ::id 28
+# ::snt He is free under a $ 700 million bond package
+(x3 / free-01
+	:ARG1 (x1 / he)
+	:ARG2 (x10 / package
+		:mod (x9 / bond)))
+
+# ::id 29
+# ::snt Lawyers close to the case indicated Milken's decision to resign was calculated
+(x6 / indicate-01
+	:ARG0 (x1 / lawyer
+		:mod (x2 / close
+			:ARG2 (x5 / case)))
+	:ARG1 (x13 / calculate-01
+		:ARG1 (x9 / decide-01
+			:ARG0 (x7 / person
+				:name (n / name
+					:op1 "Milken"))
+			:ARG1 (x11 / resign-01
+				:ARG0 x7))))
+
+# ::id 30
+# ::snt By quitting, Milken pre-empts the firm's agreement with the SEC to dismiss him once the settlement is approved by a federal judge
+(x5 / pre-empt
+	:ARG1 (x2 / quit-01)
+	:ARG0 (x4 / person
+		:name (n / name
+			:op1 "Milken"))
+	:ARG1 (x9 / agree-01
+		:ARG0 (x7 / firm)
+		:ARG2 (x12 / organization
+			:name (n1 / name
+				:op1 "SEC"))
+		:ARG1 (x14 / dismiss-01
+			:condition (x20 / approve-01
+				:ARG1 (x18 / settle-02)
+				:ARG0 (xap1 / person
+					:ARG0-of (xap0 / have-org-role-91
+						:ARG0 (x23 / government-organization
+							:name (n2 / name
+								:op1 "federal"))
+						:ARG3 (x24 / judge-01)))))))
+
+# ::id 31
+# ::snt With Milken's resignation, lawyers may argue that parts of the Drexel pact are moot and mount further challenges
+(x7 / possible
+	:domain (x8 / argue-01
+		:ARG1 (x4 / resignation
+			:ARG0 (x2 / person
+				:name (n / name
+					:op1 "Milken")))
+		:ARG0 (x6 / lawyer)
+		:ARG1 (x17 / and
+			:op1 (x16 / moot
+				:domain (x10 / part
+					:part-of (x14 / pact
+						:mod (x13 / organization
+							:name (n1 / name
+								:op1 "Drexel")))))
+			:op2 (x18 / mount-02
+				:ARG0 x10
+				:ARG1 (x20 / thing
+					:ARG2-of (c / challenge-01)
+					:degree (x19 / further))))))
+
+# ::id 32
+# ::snt They also are expected to challenge the provision barring Drexel and Milken from doing business with the same clients
+(x4 / expect-01
+	:ARG1 (x1 / they)
+	:mod (x2 / also)
+	:ARG1 (x6 / challenge-01
+		:ARG1 (x8 / provision
+			:ARG0-of (x9 / bar-01
+				:ARG1 (x11 / and
+					:op1 (x10 / government-organization
+						:name (n / name
+							:op1 "Drexel"))
+					:op2 (x12 / person
+						:name (n1 / name
+							:op1 "Milken")))
+				:ARG1 (x19 / client
+					:ARG1 (x15 / business)
+					:ARG1-of (x18 / same-41))))))
+

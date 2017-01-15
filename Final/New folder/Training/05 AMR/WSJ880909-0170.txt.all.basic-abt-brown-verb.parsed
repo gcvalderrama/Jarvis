@@ -1,0 +1,388 @@
+# ::id 1
+# ::snt Men who smoke heavily are nearly twice as likely as nonsmokers to die from a common form of leukemia, concludes a report by the University of Edinburgh
+(x9 / likely
+	:domain (x1 / man
+		:consist-of (x3 / smoke-02
+			:mod (x4 / heavily)))
+	:degree (x6 / nearly)
+	:domain (x13 / die-01
+		:ARG1 (x21 / conclude-01
+			:mod (x16 / common)
+			:ARG1 (x19 / disease
+				:name (n / name
+					:op1 "leukemia"))
+			:ARG1 (x23 / report-01
+				:ARG0 (x26 / government-organization
+					:name (n1 / name
+						:op1 "University"
+						:op2 "of"
+						:op3 "Edinburgh"))))))
+
+# ::id 2
+# ::snt The analysis, based on a previous study of 248,046 U.S. veterans, offers the firmest link yet between cigarette consumption and the disease
+(x14 / offer-01
+	:ARG0 (x2 / analyze-01
+		:ARG1-of (x4 / base-02
+			:ARG2 (x8 / study-01
+				:time (x7 / previous)
+				:ARG2 (x12 / veteran
+					:mod (x11 / country
+						:name (n / name
+							:op1 "U.S."))))))
+	:ARG1 (x17 / link-01
+		:mod (x16 / firmest)
+		:mod (x18 / yet)
+		:ARG1 (x22 / and
+			:op2 (x20 / cigarette)
+			:op2 (x24 / disease))))
+
+# ::id 3
+# ::snt The finding could add leukemia to the already lengthy list of suspected health risks from smoking
+(x3 / possible
+	:domain (x4 / add-04
+		:ARG0 (x2 / find-01)
+		:ARG1 (x5 / disease
+			:name (n / name
+				:op1 "leukemia"))
+		:ARG2 (x10 / list-01
+			:duration (x9 / lengthy
+				:time (x8 / already))
+			:ARG2 (x14 / risk-01
+				:ARG1-of (x12 / suspect-01)
+				:mod (x13 / health)
+				:ARG0 (x16 / smoke-02)))))
+
+# ::id 4
+# ::snt The report in tomorrow's British Medical Journal " may well have an emotional impact on some people who are vacillating " about quitting smoking " and for one reason or another have a fear of leukemia, " suggested Nicholas Wald, an epidemiologist at the Medical College of St. Bartholomew's Hospital here
+(x40 / suggest-01
+	:ARG1 (x10 / possible
+		:domain (x2 / report
+			:ARG0 (x8 / journal
+				:null_edge (x4 / tomorrow)
+				:null_edge (x7 / null_tag)
+				:null_edge (xap1 / country
+					:ARG0-of (xap0 / name
+						:op2 "Britain"))))
+		:domain (x15 / impact-01
+			:mod (x14 / emotion)
+			:ARG1 (x27 / and
+				:quant (x17 / some)
+				:op1 (x21 / vacillate
+					:ARG1 (x35 / fear-01
+						:ARG1 (x31 / or
+							:op1 (x30 / reason
+								:quant 1)
+							:op2 (x32 / another))
+						:ARG1 (x37 / disease
+							:name (n2 / name
+								:op1 "leukemia"))))
+				:op1 (x24 / quit-01
+					:ARG1 (x25 / smoke-02)))))
+	:ARG0 (x41 / newspaper
+		:name (n / name
+			:op1 "Nicholas"
+			:op2 "Wald")
+		:ARG0-of (x45 / epidemiologist
+			:location (x48 / government-organization
+				:name (n1 / name
+					:op1 "Medical"
+					:op2 "College"
+					:op3 "of"
+					:op4 "St."
+					:op5 "Bartholomew"
+					:op6 "'s"
+					:op7 "Hospital")
+				:location (x55 / here)))))
+
+# ::id 5
+# ::snt " The balance of evidence suggests that smoking may cause leukemia, " Dr. Wald wrote in an accompanying commentary on the analysis, which was conducted by University of Edinburgh epidemiologist Leo Kinlen
+(x16 / write-01
+	:ARG1 (x6 / suggest-01
+		:ARG0 (x3 / balance
+			:ARG1 (x5 / evidence-01))
+		:ARG1 (x9 / possible
+			:domain (x10 / cause-01
+				:ARG0 (x8 / smoke-02)
+				:ARG1 (x11 / disease
+					:name (n1 / name
+						:op1 "leukemia")))))
+	:ARG0 (x15 / person
+		:name (n / name
+			:op1 "Wald"))
+	:medium (x20 / comment-02
+		:ARG0-of (x19 / accompany-01)
+		:topic (x23 / analyze-01
+			:name (x33 / name
+				:op1 "Leo"
+				:op2 "Kinlen"
+				:ARG0-of (x29 / name
+					:op1 "University"
+					:op2 "of"
+					:op3 "Edinburgh")
+				:ARG0-of (x32 / epidemiologist)))))
+
+# ::id 6
+# ::snt Dr. Kinlen, who directs the university's Cancer Epidemiology Unit, examined leukemia deaths from a U.S. study that had tracked veterans ' smoking between 1954 and 1969
+(x13 / examine-01
+	:ARG0 (x2 / person
+		:name (n / name
+			:op1 "Kinlen")
+		:ARG0-of (x5 / direct-01
+			:ARG1 (x11 / unit
+				:null_edge (x7 / university)
+				:null_edge (x9 / null_tag)
+				:ARG0-of (x10 / have-org-role-91
+					:ARG1 (o / organization
+						:name (n3 / name
+							:op1 "Epidemiology"))))))
+	:ARG1 (x15 / death
+		:mod (x14 / disease
+			:name (n1 / name
+				:op1 "leukemia"))
+		:ARG2 (x19 / study-01
+			:source (x18 / country
+				:name (n2 / name
+					:op1 "U.S."))
+			:ARG1-of (x22 / track-01
+				:ARG1 (x25 / smoke-02
+					:poss (x23 / veteran))
+				:ARG2 (x26 / between
+					:op1 (x27 / date-entity
+						:year 1954
+						:null_edge (x28 / null_tag
+							:op2 (x29 / date-entity
+								:year 1969))))))))
+
+# ::id 7
+# ::snt The earlier study tallied overall deaths from various causes, including 723 deaths due to leukemia
+(x4 / tally-01
+	:ARG0 (x3 / study
+		:time (x2 / early))
+	:ARG1 (x6 / death
+		:mod (x5 / overall)
+		:ARG1-of (x9 / cause-01
+			:mod (x8 / various
+				:beneficiary (x13 / death
+					:quant (x12 / 723)
+					:null_edge (x16 / disease
+						:name (n / name
+							:op1 "leukemia")))))))
+
+# ::id 8
+# ::snt Dr. Kinlen found veterans who had smoked more than 21 cigarettes a day were the most likely to die from myeloid leukemia, the most common form of the disease in middle-aged people
+(x3 / find-02
+	:ARG0 (x2 / person
+		:name (n / name
+			:op1 "Kinlen"))
+	:ARG1 (x17 / likely
+		:domain (x4 / veteran
+			:ARG1-of (x7 / smoke-02
+				:ARG1 (x11 / cigarette
+					:quant (x8 / more-than
+						:op1 21))))
+		:degree (x16 / most)
+		:domain (x19 / die-01
+			:ARG2 (x22 / disease
+				:name (n1 / name
+					:op1 "leukemia")
+				:mod (x21 / myeloid)))
+		:domain (x30 / disease
+			:mod (x26 / common
+				:degree (x25 / most)))))
+
+# ::id 9
+# ::snt These heavy smokers had a 93 % greater chance of developing fatal leukemia than the veterans who never had smoked
+(x9 / chance
+	:ARG0 (x3 / person
+		:ARG0-of (s / smoke-02)
+		:mod (x2 / heavy))
+	:degree (x8 / great
+		:value 93)
+	:ARG1 (x11 / develop-02
+		:ARG1 (x13 / disease
+			:name (n / name
+				:op1 "leukemia")
+			:mod (x12 / fatal)
+			:location-of (x16 / veteran
+				:ARG1-of (x20 / smoke-02)))))
+
+# ::id 10
+# ::snt For those smoking between 10 and 20 cigarettes a day, the increased risk was 75 %
+(x14 / risk-01
+	:ARG1 (x3 / smoke-02
+		:domain (x8 / cigarette
+			:mod (x4 / between
+				:null_edge (x6 / and
+					:null_edge 10)
+				:null_edge 20)))
+	:ARG1-of (x13 / increase-01)
+	:ARG1 (xap0 / percentage-entity
+		:value 75))
+
+# ::id 11
+# ::snt And men using fewer than 10 cigarettes daily were 31 % more likely to die from leukemia than nonsmokers, according to the report
+(x / xconcept
+	:x (x1 / and
+		:op2 (x13 / likely
+			:domain (x2 / man
+				:ARG1-of (x3 / use-01
+					:ARG1 (x7 / cigarette
+						:null_edge (x4 / few
+							:null_edge 10))))
+			:degree (x12 / more)
+			:domain (x15 / die-01
+				:ARG2 (x17 / disease
+					:name (n / name
+						:op1 "leukemia"))))
+		:op2 (xap0 / percentage-entity
+			:value 31))
+	:x (xap1 / say-01
+		:ARG1 (x19 / nonsmoker)
+		:ARG0 (x24 / report)))
+
+# ::id 12
+# ::snt Previous studies have observed higher death rates from leukemia among smokers, but either involved fewer patients or did n't compare amounts smoked with incidence of the disease
+(x13 / contrast-01
+	:ARG1 (x4 / observe-01
+		:ARG0 (x2 / study-01
+			:mod (x1 / previous))
+		:ARG1 (x7 / rate
+			:mod (x5 / high)
+			:mod (x6 / die-01))
+		:ARG2 (x9 / disease
+			:name (n / name
+				:op1 "leukemia")
+			:consist-of (x11 / person
+				:ARG0-of (s / smoke-02)))
+		:ARG1 (x18 / or
+			:op2 (x15 / involve-01
+				:mod (x14 / either)
+				:ARG1 (x17 / patient
+					:quant (x16 / few)))
+			:op2 (x21 / compare-01
+				:ARG1 (x22 / amount
+					:ARG1-of (x23 / smoke-02
+						:ARG2 (x25 / incidence
+							:ARG1 (x28 / disease))))))))
+
+# ::id 13
+# ::snt For this reason, leukemia " has in general not been regarded as a a malignancy related to smoking, " Dr. Kinlen wrote
+(x24 / write-01
+	:ARG1 (x12 / regard-01
+		:ARG2 (x3 / reason
+			:mod (x2 / this))
+		:ARG1 (x5 / disease
+			:name (n1 / name
+				:op1 "leukemia"))
+		:ARG2 (x9 / general)
+		:ARG2 (x16 / malignancy
+			:ARG1-of (x17 / relate-01
+				:ARG2 (x19 / smoke-02))))
+	:ARG0 (x23 / person
+		:name (n / name
+			:op1 "Kinlen")))
+
+# ::id 14
+# ::snt The latest analysis does n't prove a causal link, Dr. Kinlen noted in a phone interview
+(x13 / note-01
+	:ARG1 (x6 / prove-01
+		:ARG0 (x3 / analyze-01
+			:time (x2 / late
+				:degree (m / most)))
+		:ARG1 (x9 / link-01
+			:mod (x8 / causal)))
+	:ARG0 (x12 / person
+		:name (n / name
+			:op1 "Kinlen"))
+	:medium (x17 / interview-01
+		:mod (x16 / phone)))
+
+# ::id 15
+# ::snt But " The latest analysis is the best evidence to date that the relationship is genuine .
+(x1 / contrast-01
+	:ARG2 (x9 / thing
+		:ARG0-of (e / evidence-01)
+		:ARG0 (x5 / analyze-01
+			:time (x4 / late
+				:degree (m1 / most)))
+		:mod (x8 / good
+			:degree (m / most))
+		:null_edge (x10 / null_tag
+			:op1 (x11 / date-entity))
+		:null_edge (x16 / genuine
+			:domain (x14 / relationship))))
+
+# ::id 16
+# ::snt If the link is causal, an editorial in the medical journal said, " then smoking is a more important cause of leukemia in adults than all other known causes combined .
+(x13 / say-01
+	:ARG1 (x3 / link-01
+		:mod (x5 / causal))
+	:ARG0 (x8 / editorial
+		:location (x12 / journal
+			:mod (x11 / medicine)))
+	:ARG1 (x22 / cause-01
+		:mod (x16 / then)
+		:ARG0 (x17 / smoke-02)
+		:mod (x21 / important
+			:degree (x20 / more))
+		:ARG1 (x24 / disease
+			:name (n / name
+				:op1 "leukemia")
+			:manner (x26 / adult))
+		:ARG1-of (x30 / know-01
+			:quant (x28 / all)
+			:mod (x29 / other))
+		:condition (x32 / combine-01)))
+
+# ::id 17
+# ::snt Current known causes include radiation and exposure to the chemical benzene
+(x3 / cause-01
+	:time (x1 / current)
+	:ARG1-of (x2 / know-01)
+	:ARG0 (x4 / include-01
+		:ARG1 (x6 / and
+			:op1 (x5 / radiation
+				:ARG2 (x11 / benzene
+					:mod (x10 / chemical)))
+			:op2 (x7 / expose-01))))
+
+# ::id 18
+# ::snt Leukemia is fairly rare
+(x4 / rare
+	:domain (x1 / disease
+		:name (n / name
+			:op1 "Leukemia"))
+	:degree (x3 / fair))
+
+# ::id 19
+# ::snt An estimated 18,100 Americans will die from it this year, making the disease the fifth-greatest cause of cancer deaths
+(x6 / die-01
+	:ARG1-of (x2 / estimate-01)
+	:time (x10 / year
+		:mod (x9 / this))
+	:ARG1-of (x17 / cause-01
+		:ARG0 (x14 / disease)
+		:mod (x20 / death
+			:mod (x19 / cancer))))
+
+# ::id 20
+# ::snt But leukemia represents the third-leading cause of death in U.S. children, behind accidents and birth defects, according to the American Cancer Society
+(x1 / contrast-01
+	:ARG2 (x3 / represent-01
+		:ARG0 (x2 / disease
+			:name (n / name
+				:op1 "leukemia"))
+		:ARG1 (x6 / cause
+			:ARG1 (x8 / die-01)
+			:location (x11 / child
+				:mod (x10 / country
+					:name (n2 / name
+						:op1 "U.S."))))
+		:ARG0 (x23 / government-organization
+			:name (n1 / name
+				:op1 "Cancer"
+				:op2 "Society")))
+	:ARG2 (x15 / and
+		:op1 (x14 / accident)
+		:op2 (x17 / defect)))
+

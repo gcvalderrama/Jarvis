@@ -1,0 +1,286 @@
+# ::id 1
+# ::snt More than 3,000 passengers and crew members were evacuated early Wednesday from the Sovereign of the Seas, one of the world's largest cruise ships, after a fire broke out in a pantry. ; One crewman was treated for smoke inhalation, but there were no other injuries in the fire, which broke out when the ship was moored in San Juan Harbor, Ports Authority spokesman David Rivera said
+(x74 / say-01
+	:ARG1 (x9 / evacuate
+		:ARG1 (x5 / and
+			:op1 (x4 / passenger))
+		:time (x10 / early
+			:op1 (x11 / wednesday))
+		:location (x17 / sea)
+		:time (x28 / after
+			:op1 (x31 / break-08
+				:ARG0 (x30 / fire-01)
+				:ARG1 (x35 / pantry)))
+		:ARG0 (x51 / injure-01
+			:polarity -
+			:mod (x50 / other)
+			:location (x54 / fire-01
+				:ARG1-of (x57 / break-08
+					:time (x63 / moor-01
+						:ARG1 (x61 / ship)
+						:location (x67 / harbor-01
+							:null_edge (x65 / country
+								:name (n2 / name
+									:op1 "San"))
+							:null_edge (x66 / country
+								:name (n3 / name
+									:op1 "Juan"))))))))
+	:ARG0 (x72 / newspaper
+		:name (n / name
+			:op1 "David"
+			:op2 "Rivera")
+		:null_edge (x69 / null_tag)
+		:ARG0-of (x71 / have-org-role-91
+			:ARG2 (s / spokesman)
+			:ARG1 (x70 / organization
+				:name (n1 / name
+					:op1 "Authority")))))
+
+# ::id 2
+# ::snt " There was no panic, " said passenger Tom Vento, 56, of Philadelphia
+(x8 / say-01
+	:ARG1 (x5 / panic-01
+		:polarity -)
+	:ARG0 (x10 / newspaper
+		:name (n / name
+			:op1 "Tom"
+			:op2 "Vento")
+		:ARG0-of (x9 / passenger)
+		:quant 56
+		:location (x16 / city
+			:name (n1 / name
+				:op1 "Philadelphia"))))
+
+# ::id 3
+# ::snt " Tom Vento was surprised that with so many people everyone was so calm. ; " At first, so many people thought it was a joke, but then so many people saw that it was serious .
+(x / xconcept
+	:x (x16 / and
+		:op1 (x14 / calm
+			:null_edge (x9 / many
+				:degree (x8 / so)
+				:degree (x11 / everyone)))
+		:op2 (x35 / see-01
+			:ARG1-of (x24 / think-01
+				:ARG1 (x5 / surprise-01
+					:ARG1 (x2 / name
+						:op1 "Tom"
+						:op2 "Vento"))
+				:ARG1 (x22 / many
+					:degree (x21 / so))
+				:ARG1 (x28 / joke))
+			:time (x31 / then)
+			:ARG1 (x33 / many
+				:degree (x32 / so))
+			:ARG1 (x39 / serious-41))))
+
+# ::id 4
+# ::snt ; The 14-deck, 800-foot luxury liner left Miami on Saturday for a seven-day voyage to La Badee, a private island near Haiti ; Puerto Rico ; and St. Thomas in the U.S. Virgin Islands. ; Rich Steck, a spokesman for Miami-based Royal Caribbean Cruise Line, which owns the ship, said Royal Caribbean Cruise Line would return to Miami on Wednesday night after a Coast Guard safety inspection rather than continue the cruise
+(x / xconcept
+	:x (x1 / and
+		:op1 (x8 / leave-01
+			:ARG0 (x7 / liner
+				:null_edge (x3 / 14-deck)
+				:mod (x6 / luxury
+					:mod (x5 / 800-foot)))
+			:ARG2 (x22 / island
+				:mod (x21 / private)
+				:location (x23 / near
+					:op1 (x24 / country
+						:name (n7 / name
+							:op1 "Haiti"))))
+			:location (x36 / island
+				:null_edge (x35 / country
+					:name (n3 / name
+						:op1 "Virgin")
+					:mod (x34 / country
+						:name (n8 / name
+							:op1 "U.S.")))))
+		:op6 (x15 / voyage
+			:mod (x14 / person
+				:name (n / name
+					:op1 "seven-day"))
+			:ARG1 (x18 / country
+				:name (n1 / name
+					:op1 "Badee")
+				:null_edge (x17 / country
+					:name (n4 / name
+						:op1 "La"))))
+		:op2 (x56 / say-01
+			:ARG0 (x40 / person
+				:name (n2 / name
+					:op1 "Steck")
+				:null_edge (x39 / null_tag)
+				:ARG0-of (x43 / have-org-role-91
+					:ARG2 (s / spokesman)
+					:ARG1 (x46 / organization
+						:name (n9 / name
+							:op1 "Royal"
+							:op2 "Caribbean"
+							:op3 "Cruise"
+							:op4 "Line")
+						:mod (x45 / organization
+							:name (n10 / name
+								:op1 "Miami-based"))))
+				:ARG0-of (x52 / own-01
+					:ARG1 (x54 / ship)))
+			:ARG1 (x62 / return-01
+				:ARG1 (x57 / organization
+					:name (n5 / name
+						:op1 "Royal"
+						:op2 "Caribbean"
+						:op3 "Cruise"
+						:op4 "Line"))
+				:ARG2 (x64 / country
+					:name (n6 / name
+						:op1 "Miami"))
+				:time (x67 / night
+					:mod (xap1 / date-entity
+						:null_edge (x66 / null_tag)))
+				:time (x68 / after
+					:op1 (x76 / continue-01
+						:ARG0 (x73 / inspect-01
+							:ARG0 (x70 / have-org-role-91
+								:ARG1 (m / military
+									:name (n11 / name
+										:op1 "Coast")))
+							:ARG0 (x71 / organization
+								:name (n12 / name
+									:op1 "Guard"))
+							:ARG0 (x72 / safe-41))
+						:ARG1 (x78 / cruise))))))
+	:x (x25 / and
+		:op4 (x27 / country
+			:name (n13 / name
+				:op1 "Rico")
+			:mod (x26 / country
+				:name (n14 / name
+					:op1 "Puerto"))))
+	:x (x28 / and
+		:op1 (x29 / and
+			:op1 (x9 / country
+				:name (n15 / name
+					:op1 "Miami"))
+			:op2 (x31 / person
+				:name (n16 / name
+					:op1 "Thomas")
+				:null_edge (x30 / country
+					:name (n17 / name
+						:op1 "St.")))
+			:time (xap0 / date-entity
+				:weekday (x11 / saturday)))))
+
+# ::id 5
+# ::snt Passengers will be given a full refund, La Badee said. ; In Washington, the National Transportation Safety Board said a two-member team would meet the ship at Miami to investigate the fire. ; The board has been concerned about the potential for accidents in the cruise ship industry and has held hearings around the nation
+(x11 / say-01
+	:ARG1 (x4 / give-01
+		:ARG2 (x1 / passenger)
+		:ARG1 (x7 / refund
+			:mod (x6 / full)))
+	:ARG0 (x10 / person
+		:name (n / name
+			:op1 "Badee")
+		:null_edge (x9 / null_tag))
+	:ARG1 (x53 / and
+		:op1 (x22 / say-01
+			:location (x15 / city
+				:name (n1 / name
+					:op1 "Washington"))
+			:ARG0 (x18 / government-organization
+				:name (n2 / name
+					:op1 "National"
+					:op2 "Transportation"
+					:op3 "Safety"
+					:op4 "Board"))
+			:ARG1 (x27 / meet-01
+				:ARG0 (x25 / team
+					:mod (x24 / two-member))
+				:ARG1 (x29 / ship)
+				:location (x31 / country
+					:name (n3 / name
+						:op1 "Miami"))
+				:purpose (x33 / investigate-01
+					:ARG1 (x35 / fire-01))))
+		:op2 (x42 / concern-01
+			:ARG1 (x39 / board)
+			:ARG0 (x45 / potential
+				:prep-for (x47 / accident
+					:prep-in (x52 / industry
+						:mod (x50 / cruise)
+						:mod (x51 / ship)))))
+		:op2 (x55 / hold-01
+			:ARG1 (x56 / hearing)
+			:location (x57 / around
+				:op1 (x59 / nation)))))
+
+# ::id 6
+# ::snt Last year, Last year placed cruise ships on Last year " most wanted " list of safety improvements. ; Steck said the fire, which started in a pantry between the fifth and seventh decks, apparently was caused by an electrical problem, but no details were available. ; The fire broke out about 1 a.m. and spread to the 1,000-seat Follies Lounge, which was closed at the time
+(x / xconcept
+	:x (x21 / and
+		:op1 (x6 / place-01
+			:time (x2 / year
+				:mod (x1 / last))
+			:time (x5 / year
+				:mod (x4 / last))
+			:ARG1 (x8 / ship
+				:mod (x7 / cruise))
+			:ARG1 (x47 / contrast-01
+				:ARG2 (x41 / cause-01
+					:ARG1 (x25 / fire-01
+						:ARG1-of (x28 / start-01
+							:location (x31 / pantry)))
+					:manner (x39 / apparent)
+					:ARG1 (x45 / problem
+						:mod (x44 / electricity)))))
+		:op4 (x16 / list-01
+			:ARG1-of (x14 / want-01
+				:degree (x13 / most))
+			:ARG2 (x19 / improve-01
+				:mod (x18 / safe-41)))
+		:op2 (x23 / say-01
+			:ARG0 (x22 / person
+				:name (n / name
+					:op1 "Steck")))
+		:op2 (x62 / spread-01
+			:ARG2 (x67 / country
+				:name (n1 / name
+					:op1 "Lounge")
+				:mod (x66 / country
+					:name (n2 / name
+						:op1 "Follies"))
+				:ARG1-of (x71 / close-01))))
+	:x (x53 / and
+		:time (x11 / year
+			:mod (x10 / last))
+		:op2 (x37 / deck)
+		:op2 (x51 / available
+			:domain (x49 / detail
+				:polarity -))
+		:op1 (x56 / break-08
+			:ARG0 (x55 / fire-01)
+			:quant 1)
+		:mod (x65 / organization
+			:name (n3 / name
+				:op1 "1,000-seat"))))
+
+# ::id 7
+# ::snt Last year took about 4 1/2 hours to extinguish the blaze, the Coast Guard said. ; The 2,318 passengers and most of the 818 crew members were evacuated to a nearby port terminal before The 2,318 passengers were allowed to return to the ship at daybreak, Steck said. ; The 74,000-ton Sovereign of the Seas is one of the world's heaviest cruise ships and the largest in terms of its passenger capacity of 2,521, Steck said
+(x81 / say-01
+	:ARG1 (x8 / extinguish
+		:ARG1 (x6 / temporal-quantity
+			:unit (h / hour)
+			:quant (x4 / about))
+		:ARG1 (x10 / blaze))
+	:ARG1 (x68 / and
+		:op1 (x55 / sovereign
+			:mod (x54 / 74,000-ton)
+			:mod (x58 / sea)
+			:mod (x67 / ships
+				:poss (x63 / world)
+				:mod (x65 / heaviest)
+				:mod (x66 / cruise))
+			:mod (x70 / large
+				:degree (m / most))))
+	:ARG0 (x80 / person
+		:name (n / name
+			:op1 "Steck")))
+
