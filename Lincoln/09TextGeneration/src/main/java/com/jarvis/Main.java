@@ -83,13 +83,16 @@ public class Main {
                 String content;
                 Path t = Paths.get(file.getAbsoluteFile().toURI());
                 content = new String(Files.readAllBytes(t));
-                System.out.println(content);
 
                 Gson g = new Gson();
 
                 Type listType = new TypeToken<ArrayList<CGVerb>>(){}.getType();
 
                 ArrayList<CGVerb> terms = g.fromJson(content, listType);
+
+                CoordinatedPhraseElement c = nlgFactory.createCoordinatedPhrase();
+
+
 
                 for ( CGVerb verb :terms ) {
 
@@ -98,33 +101,43 @@ public class Main {
 
                     for (ArrayList<CGVerbTerm> tmpArray: verb.Agents ) {
                         for (CGVerbTerm tmp: tmpArray ) {
-                            p.setSubject(tmp.Node.text);
+                            p.setSubject(tmp.Node.nosuffix);
                         }
                     }
 
-                    p.setVerb( verb.Verb.text );
+                    p.setVerb( verb.Verb.nosuffix);
 
                     for (ArrayList<CGVerbTerm> tmpArray: verb.Patients ) {
                         for (CGVerbTerm tmp: tmpArray ) {
-                            p.setObject(tmp.Node.text);
+                            p.setObject(tmp.Node.nosuffix);
                         }
                     }
-
-
+                    for (ArrayList<CGVerbTerm> tmpArray: verb.Themes ) {
+                        p.setObject("about");
+                        for (CGVerbTerm tmp: tmpArray ) {
+                            p.setObject(tmp.Node.nosuffix);
+                        }
+                    }
+                    for (ArrayList<CGVerbTerm> tmpArray: verb.Goal ) {
+                        p.setObject("target");
+                        for (CGVerbTerm tmp: tmpArray ) {
+                            p.setObject(tmp.Node.nosuffix);
+                        }
+                    }
+                    for (ArrayList<CGVerbTerm> tmpArray: verb.Attributes ) {
+                        p.setObject("with");
+                        for (CGVerbTerm tmp: tmpArray ) {
+                            p.setObject(tmp.Node.nosuffix);
+                        }
+                    }
+                    c.addCoordinate(p);
                     String output =  realiser.realiseSentence(p);
                     System.out.println(output);
-
                 }
-
-
-
-                //System.out.println(g.toJson(person)); // {"name":"John"}
-
-
+                System.out.println("==========================================================================");
             }
         }
-
-
+/*
 
 
         //String output = realiser.realiseSentence(s1);
@@ -149,7 +162,7 @@ public class Main {
         p.addComplement("continent");
         output =  realiser.realiseSentence(p);
         System.out.println(output);
-
+*/
         //Father dedicates thing.
         //Father brings nation for this continent.
 
