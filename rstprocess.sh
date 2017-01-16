@@ -1,5 +1,5 @@
 DIR="./DPLP/data"
-for file in ./home/gregoryrst/Documents/jarvis/Lincoln/01DocumentExpansion/Output/*.txt
+for file in ./home/gregoryrst/Documents/jarvis/Lincoln/01DocumentExpansion/OutputClean/*.txt
 do
 	# do something on $file
 	if [ "$(ls -A $DIR)" ]; then
@@ -27,7 +27,7 @@ do
 
 	cd ..
 	fstart="./DPLP/data/$filename.txt.xml.jarvis"
-	fend="./jarvis/Lincoln/03RST/Input/$filename.txt.xml.jarvis"
+	fend="./jarvis/Lincoln/03RST/InputClean/$filename.txt.xml.jarvis"
 	cp $fstart $fend 
 done
 
