@@ -1,0 +1,319 @@
+# ::id 1
+# ::snt An explosion blasted a natural gas well Tuesday in southeastern Mississippi, killing at least one worker and critically burning four others, authorities said
+(x25 / say-01
+	:ARG1 (x3 / blast-05
+		:ARG0 (x2 / explode-01)
+		:ARG1 (x6 / gas
+			:mod (x5 / natural))
+		:location (x11 / country
+			:name (n / name
+				:op1 "Mississippi")
+			:mod (x10 / southeast))
+		:ARG0 (x18 / and
+			:op1 (x13 / kill-01
+				:ARG1 (x17 / work-01
+					:quant 1))
+			:op2 (x20 / burn-01
+				:manner (x19 / critical)
+				:ARG1 (x22 / other
+					:quant 4)))
+		:time (xap0 / date-entity
+			:weekday (x8 / tuesday)))
+	:ARG0 (x24 / authority))
+
+# ::id 2
+# ::snt A two-mile area around the well was evacuated, affecting about 145 people
+(x8 / evacuate
+	:ARG1 (x3 / area
+		:mod (x2 / two-mile)
+		:location (x4 / around))
+	:ARG0-of (x10 / affect-01
+		:ARG1 (x11 / about
+			:op1 (x12 / 145))))
+
+# ::id 3
+# ::snt Authorities initially evacuated only those within a half-mile, but expanded the plan after the fire went out by itself and then re-ignited, for fear that winds would scatter poisonous hydrogen sulfide gas
+(x10 / contrast-01
+	:ARG1 (x3 / evacuate
+		:ARG0 (x1 / authority)
+		:time (x2 / initial))
+	:ARG2 (x8 / half-mile
+		:mod (x4 / only))
+	:ARG2 (x11 / expand-01
+		:ARG1 (x13 / plan-01)
+		:time (x14 / after
+			:op1 (x21 / and
+				:op1 (x17 / go-02
+					:ARG1 (x16 / fire-01))
+				:op2 (x23 / re-ignite
+					:ARG0 x16
+					:time (x22 / then)
+					:ARG1 (x26 / fear-01
+						:ARG1 (x30 / scatter-01
+							:ARG0 (x28 / wind)
+							:ARG1 (x34 / gas
+								:mod (x31 / poisonous)
+								:mod (x33 / sulfide
+									:mod (x32 / hydrogen))))))))))
+
+# ::id 4
+# ::snt The gas is naturally associated with some gas fields
+(x5 / associate-01
+	:ARG1 (x2 / gas)
+	:manner (x4 / natural)
+	:ARG2 (x9 / field
+		:quant (x7 / some)
+		:mod (x8 / gas)))
+
+# ::id 5
+# ::snt Experts at capping gas wells were to fly in Tuesday night
+(x / xconcept
+	:x (x3 / cap-02
+		:ARG1 (x5 / well
+			:mod (x4 / gas)))
+	:x (x8 / fly-01
+		:ARG0 (x1 / person
+			:ARG1-of (e / expert-41))
+		:time (x11 / night
+			:mod (xap0 / date-entity
+				:weekday (x10 / tuesday)))))
+
+# ::id 6
+# ::snt The explosion occurred at about 2 p.m., authorities said
+(x10 / say-01
+	:ARG0 (x2 / explode-01
+		:quant 2)
+	:ARG0 (x9 / authority))
+
+# ::id 7
+# ::snt The rig collapsed in the initial burst of what sounded like four successive explosions, said Alex Thomas, who lives within a half-mile of the rig
+(x3 / collapse-01
+	:ARG1 (x2 / rig)
+	:ARG1 (x7 / burst-01
+		:time (x6 / initial)
+		:ARG1 (x14 / explode-01
+			:quant 4
+			:ARG1-of (x13 / succeed-03)
+			:name (x17 / name
+				:op1 "Alex"
+				:op2 "Thomas"
+				:ARG0-of (x21 / live-01
+					:manner (x24 / half-mile
+						:ARG1 (x27 / rig)))))))
+
+# ::id 8
+# ::snt Others said there was another explosion later in the afternoon
+(x2 / say-01
+	:ARG0 (x1 / person
+		:mod (o / other))
+	:ARG1 (x6 / explode-01
+		:mod (x5 / another)
+		:time (x7 / late
+			:time (x10 / afternoon))))
+
+# ::id 9
+# ::snt Jim Maher, director of the Mississippi Emergency Management Agency in Jackson, said officials intended to keep the gas escaping from the well afire to burn off the poison
+(x14 / say-01
+	:ARG0 (x1 / newspaper
+		:name (n / name
+			:op1 "Jim"
+			:op2 "Maher")
+		:ARG0-of (x4 / have-org-role-91
+			:ARG2 (d / director)
+			:ARG1 (x7 / government-organization
+				:name (n1 / name
+					:op1 "Mississippi"
+					:op2 "Emergency"
+					:op3 "Management"
+					:op4 "Agency")
+				:location (x12 / person
+					:name (n2 / name
+						:op1 "Jackson")))))
+	:ARG1 (x16 / intend-01
+		:ARG1 (x18 / keep-04
+			:ARG1 (x21 / escape-01
+				:ARG1 (x20 / gas)
+				:manner (x24 / well)
+				:time (x25 / afire)
+				:ARG1 (x27 / burn-01
+					:ARG1 (x30 / poison-02))))
+		:ARG0 (xap0 / person
+			:ARG0-of (x15 / have-org-role-91
+				:ARG2 (o / official)))))
+
+# ::id 10
+# ::snt " What they are going to do is bring a flame thrower-type device to keep the well burning, " Maher said
+(x22 / say-01
+	:ARG1 (x9 / bring-01
+		:ARG3 (x7 / do-02
+			:ARG0 (x3 / they))
+		:ARG1 (x13 / device
+			:mod (x11 / flame)
+			:purpose (x15 / keep-04
+				:ARG1 (x18 / burn-01
+					:mod (x17 / well)))))
+	:ARG0 (x21 / person
+		:name (n / name
+			:op1 "Maher")))
+
+# ::id 11
+# ::snt Roads were closed leading to the well, which is about 75 miles southeast of Jackson, as was a five-mile stretch of U.S. Highway 11
+(x3 / close-01
+	:ARG1 (x1 / road)
+	:ARG0-of (x4 / lead-03
+		:ARG4 (x7 / well
+			:op1 (x13 / distance-quantity
+				:unit (m / mile)
+				:null_edge (x11 / about
+					:null_edge 75)
+				:null_edge (x14 / null_tag
+					:null_edge (x16 / person
+						:name (n / name
+							:op1 "Jackson")))
+				:time (x22 / thing
+					:ARG1-of (s / stretch-01)
+					:mod (x21 / five-mile)
+					:null_edge (x23 / include-91
+						:null_edge (x25 / null_tag
+							:mod (x24 / country
+								:name (n1 / name
+									:op1 "U.S.")))))))))
+
+# ::id 12
+# ::snt " Until we get a firm handle on this and somebody that can tell us with absolute certainty what is going on there, we will continue to take extreme precautions, " said Mississippi Emergency Management Agency spokesman Dusty Perkins
+(x34 / say-01
+	:ARG1 (x27 / continue-01
+		:time (x2 / until
+			:op1 (x4 / get-01
+				:ARG0 (x3 / we)
+				:ARG1 (x6 / firm
+					:ARG1 (x10 / and
+						:ARG2-of (x7 / handle-01)
+						:op2 (x11 / somebody))
+					:purpose (x14 / tell-01
+						:ARG2 x10
+						:mod (x13 / possible)
+						:manner (x18 / certain
+							:degree (x17 / absolute))
+						:ARG1 (x21 / go-00
+							:location (x23 / there))))))
+		:ARG0 (x25 / we)
+		:ARG1 (x29 / take-01
+			:ARG0 x25
+			:ARG1 (x31 / precaution-00
+				:mod (x30 / extreme))))
+	:ARG0 (x41 / person
+		:name (n / name
+			:op1 "Perkins")
+		:null_edge (x39 / have-org-role-91
+			:ARG2 (s / spokesman)
+			:ARG1 (x35 / treaty
+				:name (n2 / name
+					:op1 "Mississippi"
+					:op2 "Emergency"
+					:op3 "Management"
+					:op4 "Agency")))
+		:null_edge (x40 / city
+			:name (n1 / name
+				:op1 "Dusty"))))
+
+# ::id 13
+# ::snt Perkins said the rig was known as Travis No. 3 and was owned by R&H Oil and Gas Inc. of Tickfaw, La.
+(x2 / say-01
+	:ARG0 (x1 / person
+		:name (n / name
+			:op1 "Perkins"))
+	:ARG1 (x11 / and
+		:op1 (x6 / know-01
+			:ARG1 (x4 / rig)
+			:null_edge (x8 / travis
+				:null_edge 3))
+		:op2 (x13 / own-01
+			:ARG0 (x16 / oil
+				:mod (x15 / organization
+					:name (n1 / name
+						:op1 "R&H"))
+				:null_edge (x17 / null_tag
+					:op2 (x18 / government-organization
+						:name (n3 / name
+							:op1 "Gas"
+							:op2 "Inc.")))
+				:null_edge (x21 / country
+					:name (n2 / name
+						:op1 "Tickfaw")
+					:null_edge (x23 / country
+						:name (n4 / name
+							:op1 "La.")))))))
+
+# ::id 14
+# ::snt City Clerk Debbie Logan identified the dead man as Dwayne Kennedy of Heidelberg
+(x5 / identify-01
+	:ARG0 (x3 / newspaper
+		:name (n / name
+			:op1 "Debbie"
+			:op2 "Logan")
+		:ARG0-of (x1 / city)
+		:ARG0-of (x2 / have-org-role-91
+			:ARG2 (c / clerk)))
+	:ARG1 (x8 / man
+		:ARG1-of (x7 / die-01
+			:op (d / dead)))
+	:ARG2 (x10 / name
+		:op1 "Dwayne"
+		:op2 "Kennedy")
+	:ARG0 (x13 / country
+		:name (n1 / name
+			:op1 "Heidelberg")))
+
+# ::id 15
+# ::snt His age and exact job were unavailable
+(x7 / available
+	:polarity -
+	:ARG1 (x3 / and
+		:op1 (x2 / age)
+		:op2 (x5 / job
+			:mod (x4 / exact))))
+
+# ::id 16
+# ::snt The four burn victims were in critical condition and would be moved to burn units in Greenville and in Mobile, Ala., said Lafe Jones, a spokesman for the South Central Regional Medical Center in Laurel
+(x9 / and
+	:op2 (x3 / burn-01
+		:ARG0 (x4 / victim
+			:quant 4))
+	:op2 (x8 / condition
+		:mod (x7 / critical))
+	:op2 (x12 / move-05
+		:purpose (x14 / burn-01
+			:ARG1 (x15 / unit
+				:location (x17 / country
+					:name (n1 / name
+						:op1 "Greenville")))))
+	:op2 (x18 / and)
+	:op2 (x24 / say-01
+		:ARG2 (x20 / mobile
+			:location (x22 / country
+				:name (n / name
+					:op1 "Ala.")))
+		:name (x25 / name
+			:op1 "Lafe"
+			:op2 "Jones"
+			:ARG0-of (x29 / have-org-role-91
+				:ARG2 (s / spokesman)
+				:ARG1 (x36 / organization
+					:name (n2 / name
+						:op1 "Center")
+					:null_edge (x32 / null_tag)
+					:null_edge (x33 / null_tag)
+					:null_edge (x34 / null_tag)
+					:null_edge (x35 / null_tag)
+					:null_edge (x37 / null_tag))))))
+
+# ::id 17
+# ::snt A fifth worker was treated for minor injuries and released
+(x9 / and
+	:op1 (x5 / treat-01
+		:ARG1 (x3 / work-01)
+		:ARG1 (x8 / injure-01
+			:mod (x7 / minor)))
+	:op2 (x10 / release-01))
+

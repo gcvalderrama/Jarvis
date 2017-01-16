@@ -104,6 +104,34 @@ namespace JarvisSummarization
             }
             Console.ReadLine();
         }
+
+
+        public static void ConceptualRSTNLG(string InputDir, string AmrDir, string OutputDir)
+        {
+            var files = Directory.GetFiles(InputDir, "*.txt");
+            foreach (var file in files)
+            {
+                var amrfile = Path.Combine(AmrDir, Path.GetFileNameWithoutExtension(file) + ".txt.all.basic-abt-brown-verb.parsed");
+                if (File.Exists(amrfile))
+                {
+                    var sanity = SanityXml.Sanity(File.ReadAllText(Path.Combine(RSTDir, Path.GetFileNameWithoutExtension(file) + ".txt.xml.jarvis")));
+
+                    RST.RSTReader rstreader = new RST.RSTReader();
+                    var rstdocument = rstreader.ReadDocumentContent(sanity, Path.GetFileNameWithoutExtension(file));
+                    rstdocument.EvaluateODonell(false);
+                    var sanityAMR = SanityXml.Sanity(File.ReadAllText(amrfile));
+                    var reader = new AMR.AMRReader();
+                    var amrdoc = reader.ReadContent(sanityAMR);
+                    amrdoc.LoadRSTInformation(rstdocument);
+                    CGGraph cgraph = new CGGraph(Path.GetFileNameWithoutExtension(file), @"D:\Tesis2016\Propbank\frames", amrdoc.Graphs.Sum(c => c.Nodes.Count));
+                    cgraph.ReadAMR(amrdoc);
+                    cgraph.Digest();
+                    File.WriteAllText(Path.Combine(OutputDir, Path.GetFileNameWithoutExtension(file) + ".txt"), cgraph.GenerateMetadataNLG());
+                }
+            }
+            Console.ReadLine();
+        }
+
         public static void All()
         {
             NEO.NEOManager manager = new NEO.NEOManager();
@@ -178,16 +206,7 @@ namespace JarvisSummarization
         }
         
         static void Main(string[] args)
-        {
-
-            if (!Directory.Exists(RSTSanityDir)) Directory.CreateDirectory(RSTSanityDir);
-            if (!Directory.Exists(AMRSanityDir)) Directory.CreateDirectory(AMRSanityDir);
-            if (!Directory.Exists(RSTSummaryDir)) Directory.CreateDirectory(RSTSummaryDir);
-            if (!Directory.Exists(ConceptualGraphDir)) Directory.CreateDirectory(ConceptualGraphDir);
-            if (!Directory.Exists(ConceptualLogGraphDir)) Directory.CreateDirectory(ConceptualLogGraphDir);
-            if (!Directory.Exists(ConceptualGraphNoRSTDir)) Directory.CreateDirectory(ConceptualGraphNoRSTDir);
-            if (!Directory.Exists(ConceptualLogGraphNoRSTDir)) Directory.CreateDirectory(ConceptualLogGraphNoRSTDir);
-
+        {           
 
             //rst summaries
             var rstSummariesDir = @"D:\Tesis2016\Jarvis\Lincoln\LAB\RSTSummaries";
@@ -202,12 +221,16 @@ namespace JarvisSummarization
 
 
             var AMRRSTInputDir = @"D:\Tesis2016\Jarvis\Lincoln\05AMRParsing\Output2";
-            var AMRRSTOutputDir = @"D:\Tesis2016\Jarvis\Lincoln\LAB\AMRRSTSummaries50";
-            ClearDirectory(AMRRSTOutputDir);
-            ConceptualRSTSummary(ManualSummaryDir, AMRRSTInputDir, AMRRSTOutputDir); 
+            var AMRRSTOutputDir = @"D:\Tesis2016\Jarvis\Lincoln\LAB\AMRRSTSummaries65V70";
+            //ClearDirectory(AMRRSTOutputDir);
+            //ConceptualRSTSummary(ManualSummaryDir, AMRRSTInputDir, AMRRSTOutputDir);
 
 
 
+            var AMRRSTInputNLGDir = @"D:\Tesis2016\Jarvis\Lincoln\05AMRParsing\Output2";
+            var AMRRSTOutputNLGDir = @"D:\Tesis2016\Jarvis\Lincoln\LAB\NLG";
+            ClearDirectory(AMRRSTOutputNLGDir);
+            ConceptualRSTNLG(ManualSummaryDir, AMRRSTInputNLGDir, AMRRSTOutputNLGDir);
         }
     }
 }

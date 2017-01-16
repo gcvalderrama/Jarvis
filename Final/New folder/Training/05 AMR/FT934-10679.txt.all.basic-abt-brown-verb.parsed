@@ -1,0 +1,883 @@
+# ::id 1
+# ::snt Volcanoes, which spit ash, ooze lava and create darkness in the middle of the day, are impressive displays of nature's restlessness
+(x21 / display
+	:ARG0 (x1 / volcano
+		:ARG1 (x9 / and
+			:op1 (x4 / spit
+				:ARG1 (x5 / name
+					:op1 "ash"))
+			:op2 (x7 / ooze
+				:ARG1 (x8 / lava))
+			:op2 (x10 / create-01
+				:ARG0 x5
+				:ARG1 (x11 / darkness)
+				:null_edge (x12 / null_tag
+					:null_edge (x14 / null_tag
+						:part-of (x17 / day))))))
+	:ARG1-of (x20 / impressive)
+	:ARG1 (x25 / restlessness
+		:part-of (x23 / nature)))
+
+# ::id 2
+# ::snt They are also life-threatening : more than 28,500 people died from eruptions during the 1980s
+(x4 / life
+	:domain (x1 / they)
+	:mod (x3 / also)
+	:null_edge (x10 / die-01
+		:ARG1 (x6 / more-than
+			:op1 (x8 / 28,500))
+		:ARG1 (x12 / eruption)
+		:time (xap0 / date-entity
+			:time (x15 / date-entity))))
+
+# ::id 3
+# ::snt They can cause millions of dollars in property damage and bring industrial activity to a grinding halt
+(x10 / and
+	:op1 (x2 / possible
+		:domain (x3 / cause-01
+			:ARG0 (x1 / they)
+			:ARG1 (x9 / damage-01
+				:ARG1 (x8 / property)
+				:consist-of (x11 / bring-01
+					:ARG0 x1
+					:ARG1 (x13 / activity
+						:mod (x12 / industry))
+					:ARG4 (x17 / halt-01
+						:ARG1-of (x16 / ground-01)))
+				:ARG1-of (xap0 / multiple
+					:op1 (x6 / monetary-quantity
+						:unit (d / dollar)))))))
+
+# ::id 4
+# ::snt New technology to improve the accuracy of eruption forecasts is helping to minimise the devastation volcanoes can cause
+(x11 / help-01
+	:ARG1 (x4 / improve-01
+		:ARG1 (x2 / technology
+			:null_edge (x1 / null_tag))
+		:ARG1 (x9 / forecast-01
+			:ARG1 (x8 / eruption)))
+	:ARG1 (x13 / minimize-01
+		:ARG1 (x15 / devastation
+			:ARG0-of (x18 / cause-01
+				:ARG0 (x16 / volcano)
+				:mod (x17 / possible)))))
+
+# ::id 5
+# ::snt After the Nevado del Ruiz eruption killed nearly 25,000 people in Colombia in 1986, the US government began taking volcanic forecasting seriously
+(x19 / begin-01
+	:time (x1 / after
+		:op1 (x7 / kill-01
+			:ARG0 (x6 / eruption
+				:mod (x4 / del))
+			:ARG1 (x8 / nearly
+				:op1 (x9 / 25,000))
+			:location (x12 / country
+				:name (n1 / name
+					:op1 "Colombia"))
+			:time (x14 / date-entity
+				:year 1986)))
+	:ARG0 (x18 / government-organization
+		:ARG0-of (g / govern-01)
+		:ARG1 (x17 / country
+			:name (n / name
+				:op1 "US")))
+	:ARG1 (x20 / take-01
+		:ARG0 x18
+		:ARG1 (x22 / forecast-01
+			:mod (x21 / volcanic))
+		:manner (x23 / serious)))
+
+# ::id 6
+# ::snt The US Geological Survey, which tracks volcanic activity around the world, was infused with new funds to create a detailed database and update a detailed database techniques
+(x15 / infuse
+	:ARG1 (x4 / survey
+		:null_edge (x2 / country
+			:name (n / name
+				:op1 "US"))
+		:mod (x3 / geological)
+		:ARG0-of (x7 / track-01
+			:ARG1 (x9 / activity
+				:mod (x8 / volcanic))
+			:location (x10 / around
+				:op1 (x12 / world))))
+	:instrument (x18 / fund-01
+		:mod (x17 / new)
+		:ARG0 (x24 / and
+			:op1 (x20 / create-01
+				:ARG1 (x23 / database
+					:ARG1-of (x22 / detail-01)))
+			:op2 (x25 / update-01
+				:ARG1 (x29 / technique
+					:ARG1-of (x27 / detail-01)
+					:mod (x28 / database))))))
+
+# ::id 7
+# ::snt The new technology will not only help to save thousands of lives, The new technology may also save millions of dollars
+(x7 / help-01
+	:ARG1 (x3 / technology
+		:mod (x2 / new))
+	:mod (x6 / only)
+	:ARG1 (x9 / save-02
+		:ARG1 (x12 / life))
+	:mod (x17 / possible
+		:mod (x18 / also)
+		:domain (x19 / save-02
+			:ARG0 (x16 / technology
+				:mod (x15 / new))
+			:ARG1 (xap0 / multiple
+				:op1 (x22 / monetary-quantity
+					:unit (d / dollar))))))
+
+# ::id 8
+# ::snt According to the Aviation Safety Journal, more than 60 aircraft have been damaged by drifting clouds of volcanic ash since 1980
+(x14 / damage-01
+	:ARG0 (x4 / government-organization
+		:name (n / name
+			:op1 "Aviation"
+			:op2 "Safety"
+			:op3 "Journal"))
+	:ARG1 (x11 / aircraft
+		:quant (x8 / more-than
+			:op1 60))
+	:ARG0 (x16 / drift-01
+		:ARG1 (x17 / cloud
+			:name (x20 / name
+				:op1 "ash"
+				:mod (x19 / volcanic)))
+		:time (x21 / since
+			:op1 (x22 / date-entity
+				:year 1980))))
+
+# ::id 9
+# ::snt The repair of a 747 aircraft damaged during the 1989 eruption from Redoubt Volcano in Alaska cost Dollars 80m (Pounds 53m )
+(x17 / cost-01
+	:ARG1 (x2 / repair-01
+		:ARG1 (x6 / aircraft
+			:quant (x5 / 747)
+			:ARG1-of (x7 / damage-01
+				:ARG0 (x11 / eruption
+					:time (x10 / date-entity
+						:year 1989)
+					:source (x14 / volcano
+						:null_edge (x13 / redoubt))
+					:location (x16 / state
+						:name (n / name
+							:op1 "Alaska"))))))
+	:ARG1 (x19 / 80m))
+
+# ::id 10
+# ::snt The continuous eruption of Hawaii's Kilauea since 1983 has caused more than Dollars 5m in damage, much of The continuous eruption of Hawaii's Kilauea since 1983 to properties and crops affected by the acid-bearing volcanic pollutants
+(x11 / cause-01
+	:ARG0 (x3 / eruption
+		:ARG1-of (x2 / continue-01)
+		:poss (x7 / country
+			:name (n / name
+				:op1 "Kilauea")
+			:name (x5 / name
+				:op1 "Hawaii"))
+		:time (x8 / since
+			:op1 (x9 / date-entity
+				:year 1983)))
+	:ARG1 (x15 / 5m
+		:quant (x12 / more-than))
+	:ARG1 (x17 / damage-01)
+	:ARG1 (x23 / eruption
+		:ARG1-of (x22 / continue-01)
+		:poss (x27 / country
+			:name (n1 / name
+				:op1 "Kilauea")
+			:name (x25 / name
+				:op1 "Hawaii"))
+		:time (x28 / since
+			:op1 (x32 / and
+				:op1 (x31 / property
+					:ARG1-of (x34 / affect-01
+						:ARG0 (x39 / pollutant
+							:mod (x37 / acid-bearing)
+							:mod (x38 / volcanic))))
+				:op2 (x33 / crop)))))
+
+# ::id 11
+# ::snt Mount St Helens in Washington state wiped out thousands of acres of productive timberland
+(x7 / wipe-02
+	:ARG0 (x1 / government-organization
+		:name (n / name
+			:op1 "Mount"
+			:op2 "St"
+			:op3 "Helens")
+		:location (x6 / state
+			:location (x5 / city
+				:name (n1 / name
+					:op1 "Washington"))))
+	:ARG1 (x14 / timberland
+		:op1 (x11 / area-quantity
+			:unit (a / acre))
+		:mod (x13 / productive)))
+
+# ::id 12
+# ::snt Losses from interrupted economic activity are harder to quantify, but may be more devastating
+(x11 / contrast-01
+	:ARG1 (x7 / hard
+		:domain (x1 / loss
+			:source (x5 / activity
+				:ARG1-of (x3 / interrupt-01)
+				:mod (x4 / economy))))
+	:ARG2 (x9 / quantify)
+	:ARG2 (x12 / possible
+		:domain (x15 / devastate-01
+			:degree (x14 / more))))
+
+# ::id 13
+# ::snt Redoubt's eruption, for instance, caused a valuable oil storage terminal to close for several weeks and halted most flights into and out of the region
+(x19 / and
+	:op1 (x8 / cause-01
+		:ARG0 (x3 / eruption)
+		:ARG1 (x13 / terminal
+			:ARG1-of (x10 / value-01)
+			:mod (x11 / oil)
+			:mod (x12 / store-01))
+		:ARG1 (x15 / close-03
+			:duration (x17 / several
+				:op1 (x18 / week)))
+		:location (x28 / region))
+	:op2 (x20 / halt-01
+		:ARG1 (x22 / fly-01
+			:op (f / flight)
+			:quant (x21 / most))))
+
+# ::id 14
+# ::snt Tourism often takes the hardest hit of all
+(x3 / take-01
+	:ARG0 (x1 / tourism)
+	:frequency (x2 / often)
+	:ARG1 (x6 / hit-01
+		:mod (x5 / hardest)
+		:ARG0 (x8 / all)))
+
+# ::id 15
+# ::snt When US geologists issued eruption warnings in California's Long Valley in 1982, the resort area turned into a ghost town almost overnight
+(x18 / turn-02
+	:time (x4 / issue-01
+		:ARG0 (x3 / geologist
+			:mod (x2 / country
+				:name (n2 / name
+					:op1 "US")))
+		:ARG1 (x6 / warn-01
+			:mod (x5 / eruption))
+		:ARG0 (x10 / country
+			:name (n / name
+				:op1 "Long"))
+		:ARG2 (x11 / country
+			:name (n1 / name
+				:op1 "Valley")
+			:null_edge (x8 / state
+				:name (n3 / name
+					:op1 "California")))
+		:time (x13 / date-entity
+			:year 1982))
+	:ARG0 (x17 / area
+		:mod (x16 / resort))
+	:ARG2 (x22 / town
+		:mod (x21 / ghost))
+	:time (x24 / overnight
+		:mod (x23 / almost)))
+
+# ::id 16
+# ::snt And the tourist-based economy of Guadeloupe neared collapse in 1976 after an international group of volcanologists forecast the eruption of La Soufriere
+(x1 / and
+	:op2 (x7 / near-01
+		:ARG1 (x4 / economy
+			:mod (x3 / tourist-based)
+			:poss (x6 / country
+				:name (n / name
+					:op1 "Guadeloupe")))
+		:ARG1 (x8 / collapse-01)
+		:time (x10 / date-entity
+			:year 1976)
+		:time (x11 / after
+			:op1 (x17 / forecast-01
+				:ARG0 (x14 / group
+					:mod (x13 / international)
+					:consist-of (x16 / volcanologist))
+				:ARG1 (x19 / eruption
+					:mod (x22 / soufriere
+						:null_edge (x21 / null_tag)))))))
+
+# ::id 17
+# ::snt The Long Valley and Guadeloupe incidents are tinged with bitterness since the predicted disasters never happened
+(x8 / tinge
+	:ARG1 (x4 / and
+		:op1 (x2 / have-org-role-91
+			:ARG1 (c / country
+				:name (n / name
+					:op1 "Long"
+					:op2 "Valley")))
+		:op2 (x6 / incident
+			:mod (x5 / country
+				:name (n1 / name
+					:op1 "Guadeloupe"))))
+	:ARG2 (x10 / bitterness)
+	:time (x11 / since
+		:op1 (x16 / happen-01
+			:ARG1 (x14 / disaster
+				:ARG1-of (x13 / predict-01)))))
+
+# ::id 18
+# ::snt Guadeloupe evacuated 72,000 people and tourists stayed away
+(x5 / and
+	:op1 (x2 / evacuate
+		:ARG0 (x1 / country
+			:name (n / name
+				:op1 "Guadeloupe"))
+		:ARG1 (x3 / 72,000))
+	:op2 (x7 / stay-01
+		:ARG0 x1
+		:ARG1 (x6 / person
+			:ARG0-of (t / tour-01))
+		:direction (x8 / away)))
+
+# ::id 19
+# ::snt Yet the only crisis that hit the Caribbean island was in the economic sphere
+(x4 / crisis
+	:mod (x3 / only)
+	:ARG1-of (x6 / hit-01
+		:ARG1 (x9 / island
+			:mod (x8 / country
+				:name (n / name
+					:op1 "Caribbean"))))
+	:location (x14 / sphere
+		:mod (x13 / economy)))
+
+# ::id 20
+# ::snt Scientists blame these fiascos on insufficient data
+(x2 / blame-01
+	:ARG0 (x1 / have-org-role-91
+		:ARG2 (s / scientist))
+	:ARG2 (x4 / fiasco)
+	:ARG2 (x7 / data
+		:ARG0-of (x6 / suffice-01
+			:polarity -)))
+
+# ::id 21
+# ::snt ` The identification of fresh volcanic glass in the erupted ash - which seemed to indicate that the volcano was about to erupt violently - was a mistake, ' wrote Richard Fiske, a volcanologist at the Smithsonian Institution, about the incident
+(x31 / write-01
+	:ARG1 (x28 / mistake-01
+		:ARG0 (x3 / identify-02
+			:ARG1 (x7 / glass
+				:mod (x5 / fresh)
+				:mod (x6 / volcanic))
+			:name (x11 / name
+				:op1 "ash"
+				:ARG1-of (x10 / erupt-01))
+			:ARG0 (x14 / seem-01
+				:ARG1 (x16 / indicate-01
+					:ARG1 (x19 / volcano
+						:ARG1-of (x23 / erupt-01
+							:manner (x24 / violent)))))))
+	:ARG0 (x32 / newspaper
+		:name (n / name
+			:op1 "Richard"
+			:op2 "Fiske")
+		:ARG0-of (x36 / volcanologist
+			:location (x39 / government-organization
+				:name (n1 / name
+					:op1 "Smithsonian"
+					:op2 "Institution"))))
+	:medium (x44 / incident))
+
+# ::id 22
+# ::snt Volcanologists today use more sophisticated techniques
+(x3 / use-01
+	:ARG0 (x1 / volcanologist)
+	:time (x2 / today)
+	:ARG1 (x6 / technique
+		:mod (x5 / sophisticated
+			:degree (x4 / more))))
+
+# ::id 23
+# ::snt Detailed databases are maintained on all life-threatening volcanoes around the world
+(x4 / maintain-01
+	:ARG1 (x2 / database
+		:ARG1-of (x1 / detail-01))
+	:ARG1 (xap0 / threaten-01
+		:quant (x6 / all)
+		:ARG2 (x7 / life)
+		:location (x9 / around
+			:op1 (x11 / world))))
+
+# ::id 24
+# ::snt High-frequency monitors to measure debris flows are now in place
+(xap0 / have-manner-91
+	:ARG1 (x4 / measure-01
+		:ARG0 (x2 / thing
+			:instrument-of (m / monitor-01)
+			:ARG1-of (x1 / high-frequency))
+		:ARG1 (x6 / name
+			:op1 "flows"
+			:mod (x5 / debris))
+		:time (x8 / now)))
+
+# ::id 25
+# ::snt Earthquakes - often the first warning of volcanic activity - are tracked with increasing accuracy
+(x12 / track-01
+	:ARG1 (x1 / earthquake
+		:ARG0-of (x6 / warn-01
+			:frequency (x3 / often)
+			:ARG1 (x9 / activity
+				:mod (x8 / volcanic))))
+	:ARG2 (x14 / increase-01
+		:ARG1 (x15 / accuracy)))
+
+# ::id 26
+# ::snt And changes in gas composition, electrical conductivity and other clues are carefully monitored
+(x1 / and
+	:op2 (x14 / monitor-01
+		:ARG1 (x2 / change-01
+			:location (x9 / and
+				:op1 (x5 / compose-01
+					:mod (x4 / gas))
+				:op2 (x8 / conductivity
+					:mod (x7 / electricity))
+				:op2 (x11 / clue
+					:mod (x10 / other))))
+		:manner (x13 / careful)))
+
+# ::id 27
+# ::snt As a result, volcanic activity can now be forecast with substantial accuracy, often pinpointing the eruption to within days or even hours of the eruption of La Soufriere actual occurrence
+(x7 / possible
+	:time (x8 / now)
+	:domain (x10 / forecast-01
+		:ARG2 (x3 / result-01)
+		:ARG1 (x6 / activity
+			:mod (x5 / volcanic))
+		:ARG1 (x13 / accuracy
+			:mod (x12 / substantial))
+		:ARG1 (x16 / pinpoint
+			:frequency (x15 / often)
+			:ARG1 (x18 / eruption)
+			:time (x20 / within
+				:op1 (x21 / temporal-quantity
+					:unit (d / day))
+				:op1 (x23 / even))
+			:ARG1 (x24 / temporal-quantity
+				:unit (h / hour))
+			:ARG1 (x32 / occur-01
+				:null_edge (x29 / null_tag)
+				:mod (x31 / actual)))))
+
+# ::id 28
+# ::snt When Redoubt erupted in Alaska in 1989 and Pinatubo blew Redoubt's top in the Philippines in 1991, volcanologists provided important information, not only about the timing of the events, but also about the direction of debris flows and ash blooms - vast clouds formed when tiny pieces of lava or rock are thrown into the air
+(x21 / provide-01
+	:ARG1 (x8 / and
+		:op1 (x3 / erupt-01
+			:ARG0 (x2 / redoubt)
+			:location (x5 / state
+				:name (n / name
+					:op1 "Alaska"))
+			:time (x7 / date-entity
+				:year 1989))
+		:op2 (x10 / blow-01
+			:ARG0 x2
+			:ARG0 (x9 / person
+				:name (n1 / name
+					:op1 "Pinatubo"))
+			:ARG1 (x13 / top)
+			:location (x16 / country
+				:name (n2 / name
+					:op1 "Philippines"))
+			:time (x18 / date-entity
+				:year 1991)))
+	:ARG0 (x20 / volcanologist)
+	:ARG1 (x23 / information
+		:mod (x22 / important)
+		:topic (x29 / timing
+			:ARG1 (x32 / event)
+			:ARG1 (x38 / direction
+				:ARG1 (x42 / and
+					:op1 (x41 / name
+						:op1 "flows"
+						:mod (x40 / debris))
+					:op2 (x44 / bloom
+						:name (x43 / name
+							:op1 "ash"))
+					:op2 (x47 / cloud
+						:mod (x46 / vast)
+						:ARG1-of (x48 / form-02
+							:ARG0 (x54 / or
+								:op1 (x53 / lava)
+								:op2 (x55 / rock))
+							:time (x57 / throw-01
+								:ARG1 (x51 / piece
+									:mod (x50 / tiny))
+								:ARG2 (x60 / air)))))))))
+
+# ::id 29
+# ::snt ` We used information on the ash blooms (during the Redoubt eruption )to know which areas to stay away from, and which were safe to fly through, ' says Greg Witter, a spokesman for Alaska Air
+(x33 / say-01
+	:ARG1 (x3 / use-01
+		:ARG0 (x2 / we)
+		:ARG1 (x4 / information
+			:topic (x8 / bloom
+				:name (x7 / name
+					:op1 "ash"))
+			:topic (x13 / eruption
+				:mod (x12 / country
+					:name (n1 / name
+						:op1 "Redoubt"))))
+		:ARG2 (x16 / know-01
+			:ARG1 (x24 / and
+				:op1 (x20 / stay-01
+					:ARG1 (x18 / area)
+					:direction (x21 / away))
+				:op2 (x27 / safe-41
+					:ARG1 (x29 / fly-01)))))
+	:ARG0 (x34 / newspaper
+		:name (n / name
+			:op1 "Greg"
+			:op2 "Witter")
+		:ARG0-of (x38 / have-org-role-91
+			:ARG2 (s / spokesman)
+			:ARG1 (x41 / air
+				:mod (x40 / state
+					:name (n2 / name
+						:op1 "Alaska"))))))
+
+# ::id 30
+# ::snt Companies can also take advantage of eruption forecasts to move valuable equipment out of the way, and evacuate employees from the area
+(x2 / possible
+	:mod (x3 / also)
+	:domain (x4 / take-01
+		:ARG0 (x1 / company)
+		:destination (x8 / forecast-01
+			:ARG1 (x7 / eruption))
+		:purpose (x18 / and
+			:op1 (x10 / move-01
+				:ARG1 (x12 / equipment
+					:mod (x11 / value-01))
+				:ARG2 (x13 / out
+					:op1 (x16 / way)))
+			:op2 (x19 / evacuate
+				:ARG1 (x20 / person
+					:ARG1-of (e / employ-01))
+				:ARG2 (x23 / area)))))
+
+# ::id 31
+# ::snt 
+(x21 / say-01
+	:ARG1 (x6 / possible
+		:domain (x7 / want-01
+			:ARG0 (x2 / business
+				:mod (x5 / electronic
+					:mod (x4 / sensitive)))
+			:ARG1 (x9 / shut-05
+				:ARG0 x2
+				:ARG1 (x14 / system
+					:poss (x11 / company
+						:mod (x12 / air))
+					:mod (x13 / filtration))
+				:time (x18 / bloom
+					:name (x17 / name
+						:op1 "ash")))))
+	:ARG0 (x22 / newspaper
+		:name (n / name
+			:op1 "Steven"
+			:op2 "Brantley")
+		:ARG0-of (x27 / scientist
+			:mod (x25 / public)
+			:mod (x26 / information)
+			:ARG1 (x32 / survey-01
+				:mod (x31 / organization
+					:name (n1 / name
+						:op1 "Geological"))))))
+
+# ::id 32
+# ::snt Since ash blooms often drift for many miles, Companies can wreak havoc on property well beyond the life-threatening zone of eruption
+(x11 / possible
+	:domain (x12 / wreak-01
+		:time (x5 / drift-01
+			:ARG1 (x3 / bloom
+				:name (x2 / name
+					:op1 "ash"))
+			:frequency (x4 / often)
+			:ARG1 (xap0 / multiple
+				:op1 (x8 / distance-quantity
+					:unit (m / mile))))
+		:ARG0 (x10 / company)
+		:ARG1 (x13 / havoc)
+		:ARG1 (x15 / property)
+		:location (x17 / beyond
+			:op1 (x20 / zone
+				:ARG1-of (x22 / eruption)
+				:ARG1-of (xap1 / threaten-01
+					:ARG2 (x19 / life))))))
+
+# ::id 33
+# ::snt Volcanology can also be used for future planning
+(x2 / possible
+	:domain (x5 / use-01
+		:ARG1 (x1 / volcanology)
+		:mod (x3 / also)
+		:ARG2 (x8 / plan-01
+			:time (x7 / future))))
+
+# ::id 34
+# ::snt After much of Volcanology timber was wiped out during the eruption of Mount St Helens, the paper group Weyerhaeuser consulted experts to decide which areas should be replanted and which avoided as too high-risk
+(x7 / wipe-02
+	:time (x1 / after)
+	:ARG1 (x5 / timber
+		:quant (x2 / much)
+		:mod (x4 / country
+			:name (n / name
+				:op1 "Volcanology")))
+	:time (x11 / eruption
+		:ARG1 (x13 / government-organization
+			:name (n1 / name
+				:op1 "Mount"
+				:op2 "St"
+				:op3 "Helens")
+			:mod (x18 / paper)
+			:ARG1-of (x21 / consult-01
+				:ARG0 (x20 / organization
+					:name (n2 / name
+						:op1 "Weyerhaeuser"))
+				:purpose (x24 / decide-01
+					:ARG0 x20
+					:ARG0 (x22 / person
+						:ARG1-of (e / expert-41))
+					:ARG1 (x27 / recommend-01
+						:ARG1 (x30 / and
+							:op1 (x29 / replant-01
+								:ARG1 (x26 / area))
+							:op2 (x32 / avoid-01
+								:manner (x35 / high-risk
+									:degree (x34 / too))))))))))
+
+# ::id 35
+# ::snt Not all businesses welcome the interference of volcanologists, however
+(x4 / welcome-01
+	:ARG0 (x3 / business
+		:quant (x2 / all))
+	:ARG1 (x6 / interference
+		:ARG1 (x8 / volcanologist)))
+
+# ::id 36
+# ::snt In Long Valley developers have refused to heed warnings in land use planning
+(x6 / refuse-01
+	:ARG0 (x4 / person
+		:ARG0-of (d / develop-02)
+		:null_edge (x2 / country
+			:name (n / name
+				:op1 "Long"))
+		:mod (x3 / country
+			:name (n1 / name
+				:op1 "Valley")))
+	:ARG1 (x8 / heed-01
+		:ARG0 x4
+		:ARG1 (x9 / warn-01
+			:ARG2 (x13 / plan-01
+				:ARG1 (x11 / land)
+				:ARG1 (x12 / use-01)))))
+
+# ::id 37
+# ::snt ` We 've had mixed results, because we ca n't force people to follow our advice, ' says Daniel Miller, a geologist with the US Geological Survey
+(x20 / say-01
+	:ARG1-of (x8 / cause-01
+		:ARG0 (x2 / we)
+		:ARG0 (x6 / thing
+			:ARG2-of (r / result-01)
+			:ARG1-of (x5 / mix-01))
+		:ARG0 (x12 / force-01
+			:ARG0 (x9 / we)
+			:ARG2 (x15 / follow-02
+				:ARG0 x9
+				:ARG1 (x17 / advise-01))))
+	:ARG0 (x22 / person
+		:name (n / name
+			:op1 "Miller")
+		:null_edge (x21 / null_tag)
+		:null_edge (x25 / geologist
+			:ARG1 (x30 / survey-01
+				:mod (x29 / organization
+					:name (n1 / name
+						:op1 "Geological"))))))
+
+# ::id 38
+# ::snt ` We 've had a very negative and unpleasant response from businesses in Long Valley
+(x10 / respond-01
+	:ARG0 (x2 / we)
+	:ARG1 (x8 / and
+		:op1 (x7 / negative
+			:degree (x6 / very))
+		:op2 (x9 / pleasant-41
+			:polarity -))
+	:ARG1 (x12 / business
+		:location (x15 / country
+			:name (n / name
+				:op1 "Valley")
+			:null_edge (x14 / country
+				:name (n1 / name
+					:op1 "Long")))))
+
+# ::id 39
+# ::snt 
+(x6 / believe-01
+	:ARG1 (x1 / 72,000)
+	:mod (x3 / just)
+	:ARG1 (x16 / and
+		:quant (x8 / 72,000)
+		:op1 (x15 / zone
+			:ARG1-of (x14 / risk-01))
+		:op2 (x17 / insist-01
+			:ARG1 (x19 / build-01
+				:ARG1 (x20 / thing
+					:location (x21 / anywhere
+						:op1 (x22 / 72,000)))))))
+
+# ::id 40
+# ::snt Developers in the region complain that the volcanologists ' warnings have resulted in higher insurance rates, limited areas of potential development and stoked the fears of tourists
+(x5 / complain-01
+	:ARG0 (x1 / person
+		:ARG0-of (d / develop-02)
+		:location (x4 / region))
+	:ARG1 (x23 / and
+		:op1 (x12 / result-01
+			:ARG1 (x10 / warn-01)
+			:ARG2 (x16 / rate
+				:mod (x14 / high)
+				:mod (x15 / insure-02)))
+		:op2 (x18 / limit-01
+			:ARG1 (x19 / area
+				:mod (x22 / develop-02
+					:mod (x21 / potential))))
+		:op2 (x24 / stoke
+			:ARG1 (x26 / fear-01
+				:ARG1 (x28 / person
+					:ARG0-of (t / tour-01))))))
+
+# ::id 41
+# ::snt The relationship between active volcanoes and the communities that surround Developers in the region is not always confrontational
+(x18 / confrontation
+	:ARG1 (x2 / relationship
+		:ARG1 (x6 / and
+			:op1 (x5 / volcano
+				:mod (x4 / active))
+			:op2 (x8 / community
+				:ARG1-of (x10 / surround-01
+					:ARG1 (x11 / person
+						:ARG0-of (d / develop-02))
+					:location (x14 / region)))))
+	:time (x17 / always))
+
+# ::id 42
+# ::snt Kilauea has become a leading Hawaiian tourist attraction
+(x3 / become-01
+	:ARG1 (x1 / country
+		:name (n / name
+			:op1 "Kilauea"))
+	:ARG2 (x8 / attract-01
+		:ARG0-of (x5 / lead-02)
+		:ARG1 (x6 / organization
+			:name (n1 / name
+				:op1 "Hawaiian"))
+		:mod (x7 / person
+			:ARG0-of (t / tour-01))))
+
+# ::id 43
+# ::snt Hawaii's Kilauea since 1983 is considered the ideal volcano
+(x7 / consider-01
+	:time (x5 / date-entity
+		:year 1983
+		:domain (x1 / country
+			:name (n / name
+				:op1 "Hawaii"
+				:op2 "'s"
+				:op3 "Kilauea"
+				:op4 "since")))
+	:ARG1 (x10 / volcano
+		:ARG1-of (x9 / ideal)))
+
+# ::id 44
+# ::snt Because the eruption is continuous, it is seldom life-threatening and ash blooms are rare
+(x1 / cause-01
+	:ARG0 (x11 / and
+		:op1 (x5 / continue-01
+			:domain (x3 / eruption))
+		:op2 (x15 / rare
+			:domain (x13 / bloom
+				:name (x12 / name
+					:op1 "ash")))
+		:op1 (xap0 / threaten-01
+			:ARG2 (x10 / life
+				:frequency (x9 / seldom)))))
+
+# ::id 45
+# ::snt Instead, the volcano throws up a scenic display of colourful lava, which attracts hikers by day and creates a natural light show at night
+(x5 / throw-01
+	:ARG0 (x4 / volcano)
+	:ARG1 (x9 / display
+		:mod (x8 / scenic)
+		:ARG1 (x12 / lava
+			:mod (x11 / colorful)
+			:ARG1-of (x15 / attract-01
+				:ARG1 (x16 / hiker)
+				:ARG0 (x18 / temporal-quantity
+					:unit (d / day)))
+			:ARG0-of (x20 / create-01
+				:ARG1 (x24 / show
+					:mod (x22 / natural)
+					:mod (x23 / light))
+				:time (x26 / night)))))
+
+# ::id 46
+# ::snt Scientists have gleaned much useful information from the decade-long eruption
+(x3 / glean
+	:ARG0 (x1 / have-org-role-91
+		:ARG2 (s / scientist))
+	:ARG1 (x6 / information
+		:quant (x4 / much)
+		:mod (x5 / useful))
+	:ARG2 (x10 / eruption
+		:mod (x9 / temporal-quantity
+			:unit (d / decade))))
+
+# ::id 47
+# ::snt ` The resorts look to us to provide information on best viewing times, which they pass on to the tourists, ' says David Clague, scientist in charge of the Hawaii Volcano Observatory at Kilauea
+(x24 / say-01
+	:ARG1 (x4 / look-04
+		:ARG0 (x3 / resort)
+		:ARG1 (x8 / provide-01
+			:ARG1 (x9 / information
+				:topic (x12 / viewing
+					:mod (x11 / good
+						:degree (m / most)))
+				:ARG0-of (x17 / person
+					:ARG1-of (p / pass-07)
+					:ARG2 (x21 / person
+						:ARG0-of (t / tour-01))))))
+	:ARG0 (x25 / newspaper
+		:name (n / name
+			:op1 "David"
+			:op2 "Clague")
+		:ARG0-of (x28 / scientist
+			:manner (x30 / charge-05
+				:ARG1 (x35 / observatory
+					:name (x33 / name
+						:op1 "Hawaii")
+					:null_edge (x34 / volcano)
+					:location (x37 / country
+						:name (n1 / name
+							:op1 "Kilauea")))))))
+
+# ::id 48
+# ::snt ` It's generally pretty tame as far as volcano eruptions go, but it's spectacular at night because it's iridescent .
+(x14 / contrast-01
+	:ARG1 (x6 / tame
+		:mod (x4 / general)
+		:degree (x5 / pretty))
+	:ARG2 (x12 / go-02
+		:ARG0 (x11 / eruption
+			:mod (x10 / volcano)))
+	:ARG2 (x17 / spectacle
+		:time (x19 / night)
+		:ARG1-of (x20 / cause-01)))
+

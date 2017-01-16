@@ -1,0 +1,380 @@
+# ::id 1
+# ::snt President Quett Masire of Botswana said Thursday that industrial nations can help relieve drought and hunger in Africa by reducing global warming caused by the greenhouse effect
+(x6 / say-01
+	:ARG0 (x2 / newspaper
+		:name (n / name
+			:op1 "Quett"
+			:op2 "Masire")
+		:ARG0-of (x1 / have-org-role-91
+			:ARG2 (p / president)
+			:ARG1 (x5 / country
+				:name (n1 / name
+					:op1 "Botswana"))))
+	:ARG1 (x11 / possible
+		:domain (x12 / help-01
+			:ARG0 (x10 / nation
+				:mod (x9 / industry))
+			:ARG1 (x13 / relieve-01
+				:ARG1 (x15 / and
+					:op1 (x14 / drought)
+					:op2 (x16 / hunger-01))
+				:location (x18 / name
+					:op1 "Africa")
+				:instrument (x20 / reduce-01
+					:ARG1 (x22 / warm-01
+						:mod (x21 / globe)
+						:ARG1-of (x23 / cause-01
+							:ARG0 (x27 / effect
+								:mod (x26 / greenhouse))))))))
+	:time (xap0 / date-entity
+		:weekday (x7 / thursday)))
+
+# ::id 2
+# ::snt Masire and Dr. Bernard Ledea Ouedraogo, an anti-hunger organizer in Burkina Faso, were honored as co-winners of the 1988 Africa Prize for Leadership for their efforts in averting hunger
+(x16 / honor-01
+	:ARG1 (x2 / and
+		:op1 (x1 / person
+			:name (n / name
+				:op1 "Masire"))
+		:op2 (x10 / person
+			:ARG0-of (o / organize-01)
+			:mod (x9 / anti-hunger)
+			:ARG2 (x13 / person
+				:name (n1 / name
+					:op1 "Faso")
+				:mod (x12 / person
+					:name (n3 / name
+						:op1 "Burkina")))))
+	:ARG1 (x4 / name
+		:op1 "Bernard"
+		:op2 "Ledea"
+		:op3 "Ouedraogo")
+	:ARG2 (x18 / co-winner
+		:null_edge (x28 / effort
+			:null_edge (x22 / continent
+				:name (n2 / name
+					:op1 "Africa")
+				:null_edge (x21 / date-entity
+					:year 1988
+					:null_edge "Prize"))
+			:poss (x25 / leadership)
+			:purpose (x30 / avert-01
+				:ARG1 (x31 / hunger-01)))))
+
+# ::id 3
+# ::snt A severe drought gripped much of Africa from 1981 to 1987, killing millions
+(x4 / grip
+	:ARG0 (x3 / drought
+		:mod (x2 / severe))
+	:ARG1 (x7 / name
+		:op1 "Africa"
+		:quant (x5 / much))
+	:time (x11 / date-entity
+		:year 1987)
+	:ARG2 (x13 / person
+		:ARG1-of (k / kill-01)
+		:ARG0 x7))
+
+# ::id 4
+# ::snt Experts believe that due to the organizing efforts of Masire's government, not one person died of drought-induced famine in Botswana
+(x2 / believe-01
+	:ARG0 (x1 / person
+		:ARG1-of (e / expert-41))
+	:ARG1 (x17 / die-01
+		:ARG1 (x8 / effort
+			:ARG0-of (x7 / organize-01)
+			:poss (x12 / government-organization
+				:ARG0-of (g / govern-01)
+				:poss (x10 / person
+					:name (n1 / name
+						:op1 "Masire"))))
+		:ARG1 (x16 / person
+			:quant 1)
+		:ARG1 (x20 / famine
+			:location (x22 / country
+				:name (n / name
+					:op1 "Botswana")))))
+
+# ::id 5
+# ::snt Through early planning, Botswana organized a nutritional surveillance and warning system and distributed food nationwide
+(x13 / and
+	:op1 (x6 / organize-01
+		:ARG2 (x3 / plan-01
+			:time (x2 / early))
+		:ARG0 (x5 / country
+			:name (n / name
+				:op1 "Botswana"))
+		:ARG1 (x10 / and
+			:op1 (x9 / surveil-01
+				:op (s / surveillance)
+				:mod (x8 / nutritional))
+			:op2 (x12 / system
+				:ARG0-of (x11 / warn-01))))
+	:op2 (x14 / distribute-01
+		:ARG1 (x15 / food)
+		:manner (x16 / nationwide)))
+
+# ::id 6
+# ::snt By the time the drought ended, malnutrition had actually declined
+(x11 / decline-02
+	:time (x6 / end-01
+		:ARG0 (x5 / drought))
+	:ARG0 (x8 / malnutrition)
+	:mod (x10 / actual))
+
+# ::id 7
+# ::snt Before the drought, 25 percent of Botswana's children were underweight
+(x12 / underweight
+	:time (x1 / before
+		:op1 (x3 / drought))
+	:ARG2 (x6 / percentage-entity
+		:value 25
+		:quant-of (x10 / child
+			:ARG1-of (x7 / include-91)
+			:poss (x8 / country
+				:name (n / name
+					:op1 "Botswana")))))
+
+# ::id 8
+# ::snt By 1987, that fell to 15 percent
+(x5 / fall-01
+	:time (x2 / date-entity
+		:year 1987)
+	:ARG4 (x8 / percentage-entity
+		:value 15))
+
+# ::id 9
+# ::snt In his acceptance speech, Masire thanked Western donor governments and private agencies for their help during the drought, but suggested drought and hunger will get worse in Africa if the Earth's climate keeps warming
+(x21 / contrast-01
+	:ARG1 (x7 / thank-01
+		:medium (x4 / speech
+			:ARG2 (x3 / acceptance))
+		:ARG0 (x6 / person
+			:name (n / name
+				:op1 "Masire"))
+		:ARG1 (x11 / and
+			:op1 (x10 / government-organization
+				:ARG0-of (g / govern-01)
+				:mod (x8 / world-region
+					:name (n1 / name
+						:op1 "Western")))
+			:op2 (x13 / agency
+				:mod (x12 / private)))
+		:ARG2 (x16 / help-01))
+	:ARG2 (x19 / drought)
+	:ARG2 (x22 / suggest-01
+		:ARG1 (x28 / worsen-01
+			:domain (x24 / and
+				:op1 (x23 / drought)
+				:op2 (x25 / hunger-01))
+			:name (x30 / name
+				:op1 "Africa")
+			:compared-to (x36 / keep-01
+				:ARG0 (x35 / climate
+					:poss (x33 / planet
+						:name (n2 / name
+							:op1 "Earth")))
+				:ARG1 (x37 / warm-01)))))
+
+# ::id 10
+# ::snt " The semi-arid tropics will have even greater climatic variability as the warming continues, " he said
+(x18 / say-01
+	:ARG1 (x6 / have-03
+		:ARG0 (x4 / tropics
+			:mod (x3 / semi-arid))
+		:ARG1 (x10 / variability
+			:mod (x8 / great
+				:mod (x7 / even))
+			:mod (x9 / climatic))
+		:condition (x14 / continue-01
+			:ARG1 (x13 / warm-01)))
+	:ARG0 (x17 / he))
+
+# ::id 11
+# ::snt " The industrialized countries may do more for Africa in the long run by helping to reduce global warming than by supplying short-term aid, however welcome that is at the time
+(x27 / welcome-01
+	:ARG1 (x5 / possible
+		:domain (x6 / do-02
+			:ARG0 (x4 / country
+				:ARG1-of (x3 / industrialize-01))
+			:ARG1 (x7 / more
+				:name (x9 / name
+					:op1 "Africa"))
+			:instrument (x13 / run
+				:extent (x12 / long)
+				:consist-of (x15 / help-01
+					:ARG1 (x17 / reduce-01
+						:ARG1 (x19 / warm-01
+							:mod (x18 / globe))
+						:instrument (x22 / supply-01
+							:ARG1 (x24 / aid-01
+								:mod (x23 / short-term)))))))))
+
+# ::id 12
+# ::snt " We would prefer to prevent droughts altogether rather than have to learn to deal with them well .
+(x4 / prefer-01
+	:ARG0 (x2 / we)
+	:ARG1 (x6 / prevent-01
+		:ARG0 x2
+		:ARG1 (x7 / drought
+			:mod (x8 / altogether))
+		:ARG1 (x11 / have-03
+			:null_edge (x13 / learn-01
+				:ARG1 (x15 / deal-01)))))
+
+# ::id 13
+# ::snt The warming of the Earth and its lower atmosphere is caused by trapped solar radiation
+(x11 / cause-01
+	:ARG1 (x2 / warm-01
+		:poss (x6 / and
+			:op1 (x5 / planet
+				:name (n / name
+					:op1 "Earth"))
+			:op2 (x9 / atmosphere
+				:mod (x8 / low))))
+	:ARG0 (x15 / radiation
+		:ARG1-of (x13 / trap-01)
+		:mod (x14 / solar)))
+
+# ::id 14
+# ::snt The other Africa Prize-winner, Ouedraogo, has organized about 500,000 peasants in nine countries in Africa to develop their villages based on traditional cooperative village leadership
+(x9 / organize-01
+	:ARG0 (x6 / person
+		:name (n / name
+			:op1 "Ouedraogo")
+		:ARG0-of (x4 / prize-winner
+			:mod (x2 / other)))
+	:ARG1 (x12 / peasant
+		:quant (x10 / about
+			:op1 (x11 / 500,000))
+		:location (x15 / country
+			:null_edge 9
+			:name (x17 / name
+				:op1 "Africa")))
+	:purpose (x19 / develop-02
+		:ARG0 x6
+		:ARG1 (x21 / village
+			:ARG1-of (x22 / base-02
+				:ARG2 (x27 / lead-02
+					:mod (x24 / tradition)
+					:mod (x26 / village
+						:mod (x25 / cooperate-01)))))))
+
+# ::id 15
+# ::snt The villagers in Burkina Faso, Chad, Gambia, Guinea-Bissau, Mali, Mauritania, Niger, Senegal and Togo raise vegetables, learn new farming techniques, improve literacy, fight erosion, replant forests, build roads and improve health care
+(x41 / and
+	:op1 (x22 / raise-01
+		:ARG0 (x2 / villager)
+		:location (x9 / country
+			:name (n / name
+				:op1 "Gambia"))
+		:location (x17 / country
+			:name (n1 / name
+				:op1 "Niger"))
+		:location (x20 / and
+			:op1 (x5 / person
+				:name (n2 / name
+					:op1 "Faso")
+				:mod (x4 / person
+					:name (n9 / name
+						:op1 "Burkina")))
+			:op4 (x7 / country
+				:name (n3 / name
+					:op1 "Chad"))
+			:op5 (x11 / country
+				:name (n4 / name
+					:op1 "Guinea-Bissau"))
+			:op3 (x13 / country
+				:name (n5 / name
+					:op1 "Mali"))
+			:op4 (x15 / country
+				:name (n6 / name
+					:op1 "Mauritania"))
+			:op2 (x19 / country
+				:name (n7 / name
+					:op1 "Senegal"))
+			:op2 (x21 / country
+				:name (n8 / name
+					:op1 "Togo")))
+		:ARG1 (x23 / vegetable))
+	:op2 (x25 / learn-01
+		:ARG0 x2
+		:ARG1 (x28 / technique
+			:mod (x26 / new)
+			:mod (x27 / farm-01)))
+	:op2 (x30 / improve-01
+		:ARG0 x2
+		:ARG1 (x31 / literacy
+			:mod (x34 / erosion
+				:ARG1 (x33 / fight-01
+					:ARG1 (x36 / replant-01
+						:ARG0 x2
+						:ARG1 (x37 / forest))))))
+	:op2 (x39 / build-01
+		:ARG0 x2
+		:ARG1 (x40 / road))
+	:op2 (x42 / improve-01
+		:ARG0 x2
+		:ARG1 (x44 / care-01
+			:mod (x43 / health))))
+
+# ::id 16
+# ::snt The Africa Prize consists of $ 100,000 and a statue, awarded by the New York-based Hunger Project
+(x4 / consist-01
+	:ARG2 (x8 / and
+		:op1 (x2 / continent
+			:name (n / name
+				:op1 "Africa"
+				:op2 "Prize")
+			:ARG1-of (x12 / award-01
+				:ARG0 (x18 / project
+					:null_edge (x15 / city
+						:name (n1 / name
+							:op1 "New"
+							:op2 "York-based"))
+					:mod (x17 / hunger))))
+		:op2 (x7 / monetary-quantity
+			:unit (y / yuan))
+		:op2 (x10 / statue)))
+
+# ::id 17
+# ::snt Ouedraogo said he will ask the peasant farmers he has organized how they would like to use his share of the prize
+(x2 / say-01
+	:ARG0 (x1 / person
+		:name (n / name
+			:op1 "Ouedraogo"))
+	:ARG1 (x5 / ask-02
+		:ARG0 (x3 / he)
+		:ARG2 (x8 / person
+			:ARG0-of (f / farm-01)
+			:mod (x7 / peasant)
+			:ARG0-of (x11 / organize-01))
+		:ARG1 (x15 / like-02
+			:ARG1 (x17 / use-01
+				:ARG1 (x19 / share
+					:ARG1 (x22 / prize-01))))))
+
+# ::id 18
+# ::snt Masire also said he would distribute his share of the award to grass-roots organizers and villagers who made Botswana's victory over famine possible
+(x3 / say-01
+	:ARG0 (x1 / person
+		:name (n / name
+			:op1 "Masire"))
+	:mod (x2 / also)
+	:ARG1 (x6 / distribute-01
+		:ARG1 (x8 / share
+			:ARG1 (x11 / award-01))
+		:ARG2 (x15 / and
+			:op1 (x14 / person
+				:ARG0-of (o / organize-01)
+				:mod (x13 / grass-roots)
+				:ARG0-of (x18 / make-02
+					:ARG1 (x24 / possible
+						:domain (x21 / win-01
+							:op (v / victory)
+							:ARG0 (x19 / country
+								:name (n1 / name
+									:op1 "Botswana"))
+							:ARG0 (x23 / famine)))))
+			:op2 (x16 / villager))))
+

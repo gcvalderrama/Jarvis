@@ -1,0 +1,532 @@
+# ::id 1
+# ::snt House passage of a plan to raise the minimum wage shifts the partisan battle to the Senate, where the leading proponent of an increase is urging President Bush to refrain from further veto threats while Congress settles on a final bill
+(x11 / shift-01
+	:ARG0 (x2 / pass-01
+		:ARG1 (x1 / government-organization
+			:name (n1 / name
+				:op1 "House"))
+		:ARG1 (x5 / plan-01
+			:ARG1 (x7 / raise-01
+				:ARG1 (x10 / wage-01
+					:mod (x9 / minimum)))))
+	:ARG1 (x14 / battle-01
+		:mod (x13 / partisan))
+	:ARG1 (x17 / government-organization
+		:name (n / name
+			:op1 "Senate")
+		:ARG0-of (x27 / urge-01
+			:ARG0 (x22 / proponent
+				:ARG0-of (x21 / lead-02)
+				:ARG1 (x25 / increase-01))
+			:ARG1 (x29 / person
+				:name (n2 / name
+					:op1 "Bush")
+				:ARG0-of (x28 / have-org-role-91
+					:ARG2 (p / president)))
+			:ARG2 (x31 / refrain-01
+				:ARG0 x29
+				:ARG2 (x35 / threaten-01
+					:degree (x33 / further)
+					:ARG1 (x34 / veto))
+				:time (x38 / settle-03
+					:ARG0 (x37 / government-organization
+						:name (n3 / name
+							:op1 "Congress"))
+					:ARG2 (x42 / bill
+						:mod (x41 / final)))))))
+
+# ::id 2
+# ::snt The House voted 248-171 Thursday in favor of legislation that would raise the minimum wage from the current $ 3.35 an hour to $ 4.55 by October 1991, with the first increase taking effect later this year
+(x3 / vote-01
+	:ARG0 (x2 / government-organization
+		:name (n / name
+			:op1 "House"))
+	:ARG1 (x4 / 248-171)
+	:ARG1 (x7 / favor-01
+		:ARG1 (x9 / legislate-01
+			:ARG0-of (x12 / raise-01
+				:ARG1 (x15 / wage-01
+					:mod (x14 / minimum))
+				:null_edge (x25 / monetary-quantity
+					:unit (y / yuan))
+				:time (x26 / by
+					:op1 (x27 / date-entity
+						:year 1991))
+				:ARG1 (xap1 / monetary-quantity
+					:time (x18 / current)
+					:calendar (x22 / temporal-quantity
+						:unit (h / hour))))
+			:ARG1 (x33 / increase-01
+				:ARG1-of (x34 / take-01
+					:ARG1 (x35 / effect-01)
+					:time (x36 / late
+						:op1 (x38 / year
+							:mod (x37 / this)))))))
+	:time (xap0 / date-entity
+		:weekday (x5 / thursday)))
+
+# ::id 3
+# ::snt The House then joined the Senate on an Easter recess that ends April 3
+(x4 / join-01
+	:ARG0 (x2 / government-organization
+		:name (n / name
+			:op1 "House"))
+	:time (x3 / then)
+	:ARG1 (x6 / government-organization
+		:name (n1 / name
+			:op1 "Senate"))
+	:ARG1 (x10 / recess
+		:mod (x9 / island
+			:name (n2 / name
+				:op1 "Easter"))
+		:ARG0-of (x12 / end-01
+			:name (x13 / name
+				:op1 "April"
+				:op2 "3"))))
+
+# ::id 4
+# ::snt High on the Senate agenda when the Senate agenda returns is a bill sponsored by Sen. Edward M. Kennedy, D-Mass., that would raise the minimum wage to $ 4.65 by 1992
+(x13 / bill
+	:time (x10 / return-01
+		:mod (x1 / high
+			:part-of (x5 / agenda
+				:mod (x4 / government-organization
+					:name (n1 / name
+						:op1 "Senate"))))
+		:ARG1 (x9 / agenda
+			:mod (x8 / government-organization
+				:name (n / name
+					:op1 "Senate"))))
+	:ARG1-of (x14 / sponsor-01
+		:ARG0 (x17 / name
+			:op1 "Edward"
+			:op2 "M."
+			:op3 "Kennedy"
+			:ARG0-of (x16 / sen.
+				:location (x21 / country
+					:name (n2 / name
+						:op1 "D-Mass.")))))
+	:ARG0-of (x25 / raise-01
+		:ARG1 (x28 / wage-01
+			:mod (x27 / minimum))
+		:quant (x31 / monetary-quantity
+			:unit (y / yuan))
+		:null_edge (x33 / date-entity
+			:year 1992)))
+
+# ::id 5
+# ::snt Kennedy has said Edward M. Kennedy is open to amending Edward M. Kennedy bill, and in a statement issued after the House vote Edward M. Kennedy asked Bush, who has threatened to veto any attempt to raise the hourly minimum above $ 4.25, to keep an open mind until the House and Senate agree on a bill
+(x3 / say-01
+	:ARG0 (x1 / person
+		:name (n / name
+			:op1 "Kennedy"))
+	:ARG1 (x16 / and
+		:op1 (x6 / person
+			:name (n1 / name
+				:op1 "Kennedy")
+			:null_edge (x4 / person
+				:name (n2 / name
+					:op1 "Edward"))
+			:null_edge (x5 / null_tag))
+		:op1 (x10 / amend-01
+			:ARG1 (x14 / bill
+				:name (x11 / name
+					:op1 "Edward"
+					:op2 "M."
+					:op3 "Kennedy"))
+			:location (x19 / state-01
+				:ARG1-of (x20 / issue-01
+					:time (x21 / after
+						:op1 (x28 / ask-01
+							:ARG1 (x24 / vote-01
+								:ARG1 (x23 / have-org-role-91
+									:ARG1 (g / government-organization
+										:name (n4 / name
+											:op1 "House"))))
+							:ARG2 (x25 / name
+								:op1 "Edward"
+								:op2 "M."
+								:op3 "Kennedy")
+							:ARG2 (x29 / person
+								:name (n3 / name
+									:op1 "Bush")
+								:ARG1-of (x33 / threaten-01
+									:ARG1 (x35 / veto-01
+										:ARG1 (x37 / attempt-01
+											:ARG1 (x39 / raise-01
+												:ARG1 (x42 / minimum
+													:mod (x41 / hour))
+												:location (x43 / above
+													:op1 (x45 / monetary-quantity
+														:unit (y / yuan)))
+												:purpose (x48 / keep-04
+													:ARG1 (x51 / mind
+														:mod (x50 / open))
+													:time (x52 / until
+														:op1 (x57 / agree-01
+															:ARG0 (x54 / organization
+																:name (n5 / name
+																	:op1 "House"
+																	:op2 "and"
+																	:op3 "Senate"))
+															:ARG0 (x55 / and)
+															:ARG1 (x60 / bill))))))))))))))))
+
+# ::id 6
+# ::snt " This is an excellent opportunity for Congress and the administration to demonstrate that they can work together and in doing so achieve a fair increase in the minimum wage and an honest training wage, " Kennedy said
+(x39 / say-01
+	:ARG1 (x6 / opportunity
+		:mod (x2 / this)
+		:mod (x5 / excellent)
+		:prep-to (x19 / and
+			:op1 (x13 / demonstrate-01
+				:ARG0 (x9 / and
+					:op1 (x8 / government-organization
+						:name (n1 / name
+							:op1 "Congress"))
+					:op1 (xap0 / government-organization
+						:ARG0-of (x11 / administrate-01)))
+				:ARG1 (x23 / achieve-01
+					:ARG1 (x26 / increase-01
+						:mod (x25 / fair)
+						:ARG1 (x31 / and
+							:op1 (x30 / wage-01
+								:mod (x29 / minimum))
+							:op2 (x35 / wage-01
+								:mod (x33 / honest)
+								:ARG1 (x34 / train-01))))))
+			:op2 (x16 / possible
+				:domain (x17 / work-09
+					:manner (x18 / together)))))
+	:ARG0 (x38 / person
+		:name (n / name
+			:op1 "Kennedy")))
+
+# ::id 7
+# ::snt Bush has insisted that a six-month sub-minimum training wage covering all newly hired employees be created in any legislation to raise the minimum wage, a provision Bush said will help offset potential job losses caused by raising the minimum
+(x3 / insist-01
+	:ARG0 (x1 / person
+		:name (n / name
+			:op1 "Bush"))
+	:ARG1 (x16 / create-01
+		:ARG1 (x9 / wage-01
+			:ARG1 (x8 / train-01)
+			:ARG0-of (x10 / cover-01
+				:ARG1 (x14 / person
+					:ARG1-of (e / employ-01)
+					:quant (x11 / all)
+					:ARG1-of (x13 / hire-01))))
+		:time (x19 / legislate-01
+			:mod (x18 / any)
+			:purpose (x21 / raise-01
+				:ARG1 (xap0 / and
+					:ARG1 (x24 / wage-01
+						:mod (x23 / minimum))
+					:op2 (x27 / provision
+						:ARG0-of (x29 / say-01
+							:ARG0 (x28 / person
+								:name (n1 / name
+									:op1 "Bush"))
+							:ARG1 (x31 / help-01
+								:ARG1 (x32 / offset-01
+									:ARG1-of (x36 / cause-01
+										:mod (x33 / potential)
+										:ARG1 (x34 / job)
+										:ARG0 (x38 / raise-01
+											:ARG1 (x40 / minimum))))))))))))
+
+# ::id 8
+# ::snt Sponsors of the House bill, while disputing GOP projections of massive job losses, added a provision allowing a sub-minimum wage to be paid to new hires for two months provided the House bill was new hires for two months first job
+(x16 / add-01
+	:ARG0 (x1 / sponsor-01
+		:ARG1 (x5 / bill
+			:mod (x4 / have-org-role-91
+				:ARG1 (g / government-organization
+					:name (n / name
+						:op1 "House")))))
+	:ARG1 (x8 / dispute-01
+		:ARG1 (x10 / project-01
+			:ARG1 (x9 / political-party
+				:name (n1 / name
+					:op1 "GOP"))
+			:ARG1 (x14 / loss
+				:mod (x12 / massive)
+				:ARG1 (x13 / job))))
+	:ARG1 (x18 / provision
+		:ARG0-of (x19 / allow-01
+			:ARG1 (x25 / pay-01
+				:ARG1 (x22 / wage-01)
+				:ARG2 (x28 / hire-01
+					:mod (x27 / new))
+				:duration (x31 / temporal-quantity
+					:unit (m / month)
+					:quant 2
+					:ARG1-of (x32 / provide-01
+						:ARG1 (x38 / hire-01
+							:ARG0 (x35 / bill
+								:mod (x34 / have-org-role-91
+									:ARG1 (g1 / government-organization
+										:name (n2 / name
+											:op1 "House"))))
+							:mod (x37 / new)
+							:ARG2 (x43 / job
+								:duration (x41 / temporal-quantity
+									:unit (m1 / month)
+									:quant 2)))))))))
+
+# ::id 9
+# ::snt That falls far short of the White House demand and, with Kennedy also opposed to Bush's training-wage proposal, that issue likely will be a major sticking point in any attempts to reach a compromise
+(x10 / and
+	:op1 (x2 / fall-03
+		:ARG1 (x1 / that)
+		:ARG2 (x4 / short-41
+			:degree (x3 / far)
+			:ARG1 (x8 / government-organization
+				:name (n / name
+					:op1 "House")
+				:mod (x7 / white)))
+		:null_edge (x15 / oppose-01
+			:ARG0 (x13 / person
+				:name (n1 / name
+					:op1 "Kennedy"))
+			:mod (x14 / also)
+			:ARG1 (x20 / thing
+				:ARG1-of (p / propose-01)
+				:ARG0 (x17 / person
+					:name (n2 / name
+						:op1 "Bush"))
+				:time (x19 / training-wage)))
+		:ARG1 (x23 / issue-01)
+		:ARG1 (x24 / likely
+			:purpose (x33 / attempt-01
+				:mod (x28 / major)
+				:ARG1 (x29 / sticking)
+				:mod (x32 / any)
+				:ARG1 (x35 / reach-01
+					:ARG1 (x37 / compromise-01)))))
+	:op2 (x9 / demand-01))
+
+# ::id 10
+# ::snt Several Republicans insisted that Democrats were going to have to give in to Bush _ who appears to have the votes to sustain a veto _ or let a ninth year pass without any change in the minimum wage
+(x3 / insist-01
+	:ARG1 (x9 / have-03
+		:ARG0 (x5 / political-party
+			:name (n / name
+				:op1 "Democrats"))
+		:ARG0 (x15 / _
+			:ARG1-of (x17 / appear-01
+				:ARG1 (x21 / vote-01
+					:example (x27 / or
+						:op1 (x23 / sustain
+							:ARG1 (x25 / veto))
+						:op2 (x28 / let-01
+							:ARG1 (x32 / pass
+								:ARG0 (x31 / year)
+								:manner (x35 / change-01
+									:mod (x34 / any)
+									:ARG1 (x39 / wage-01
+										:mod (x38 / minimum))))))))))
+	:ARG0 (xap0 / person
+		:quant (x1 / several)
+		:op1 "Republican"))
+
+# ::id 11
+# ::snt " The question is do Edward M. Kennedy want a bill or do Edward M. Kennedy want a political issue ?
+(x5 / do-02
+	:ARG0 (x3 / question-01)
+	:ARG1 (x12 / or
+		:op2 (x9 / want-01
+			:ARG0 (x8 / person
+				:name (n / name
+					:op1 "Kennedy")
+				:null_edge (x6 / person
+					:name (n1 / name
+						:op1 "Edward"))
+				:null_edge (x7 / null_tag))
+			:ARG1 (x11 / bill)
+			:name (x14 / name
+				:op1 "Edward"
+				:op2 "M."
+				:op3 "Kennedy"))
+		:op2 (x17 / want-01
+			:ARG1 (x20 / issue
+				:mod (x19 / politics)))))
+
+# ::id 12
+# ::snt Rep. Steve Gunderson, R-Wis., said during an unsuccessful GOP effort to substitute Bush's proposal for the House leadership's measure
+(x7 / say-01
+	:ARG0 (x2 / newspaper
+		:name (n / name
+			:op1 "Steve"
+			:op2 "Gunderson")
+		:ARG0-of (x1 / rep.)
+		:mod (x5 / country
+			:name (n1 / name
+				:op1 "R-Wis.")))
+	:time (x12 / effort
+		:ARG1-of (x10 / unsuccessful)
+		:poss (x11 / political-party
+			:name (n2 / name
+				:op1 "GOP"))
+		:purpose (x14 / substitute-01
+			:ARG0 x11
+			:ARG1 (x17 / propose-01
+				:ARG0 (x15 / person
+					:name (n3 / name
+						:op1 "Bush"))
+				:topic (x23 / measure
+					:poss (x21 / person
+						:ARG0-of (l / lead-02)
+						:ARG0-of (x20 / have-org-role-91
+							:ARG1 (g / government-organization
+								:name (n4 / name
+									:op1 "House")))))))))
+
+# ::id 13
+# ::snt " If Several Republicans truly want to raise the minimum wage this is the only game in town .
+(x16 / game
+	:condition (x6 / want-01
+		:ARG1 (x8 / raise-01
+			:ARG1 (x11 / wage-01
+				:mod (x10 / minimum)))
+		:ARG0 (xap0 / person
+			:quant (x3 / several)
+			:op1 "Republican"))
+	:domain (x12 / this)
+	:mod (x15 / only
+		:location (x18 / town)))
+
+# ::id 14
+# ::snt But Democrats argued they had given enough by cutting the final increase from $ 4.65 an hour to $ 4.55 and by adding the new-hire wage
+(x1 / contrast-01
+	:ARG2 (x3 / argue-01
+		:ARG0 (x2 / political-party
+			:name (n / name
+				:op1 "Democrats"))
+		:ARG0 (x9 / cut-01
+			:ARG1 (x7 / enough)
+			:ARG1 (x12 / increase-01
+				:mod (x11 / final)
+				:time (x17 / temporal-quantity
+					:unit (h / hour)
+					:quant (x20 / monetary-quantity
+						:unit (y / yuan))))
+			:instrument (x23 / add-02
+				:ARG1 (x26 / wage-01
+					:mod (x25 / new-hire))))))
+
+# ::id 15
+# ::snt As amended, the House bill would boost the minimum wage to $ 3.85 an hour on Oct. 1, to $ 4.25 on Oct. 1, 1990, and to $ 4.55 a year later
+(x8 / boost-01
+	:condition (x2 / amend-01)
+	:ARG0 (x6 / bill
+		:mod (x5 / government-organization
+			:name (n / name
+				:op1 "House")))
+	:ARG1 (x11 / wage-01
+		:mod (x10 / minimum))
+	:ARG1 (x16 / temporal-quantity
+		:unit (h / hour))
+	:time (x18 / date-entity)
+	:time (x25 / date-entity
+		:year 1990)
+	:time (xap0 / before
+		:quant (x35 / temporal-quantity
+			:unit (y / year))))
+
+# ::id 16
+# ::snt The provision for the new-hire wage, to be pegged at 85 percent of the minimum wage, would expire Sept. 30, 1992
+(x20 / expire
+	:ARG0 (x2 / provision
+		:purpose (x6 / wage-01
+			:ARG1-of (x5 / new-hire))
+		:ARG1-of (x10 / peg
+			:ARG2 (x17 / wage-01
+				:quant (x13 / percentage-entity
+					:value 85)
+				:mod (x16 / minimum))))
+	:time (x21 / person
+		:name (n / name
+			:op1 "Sept.")
+		:null_edge (x22 / null_tag)
+		:null_edge (x24 / date-entity
+			:year 1992)))
+
+# ::id 17
+# ::snt The provision for the new-hire wage also would expand exemptions allowing small businesses to pay wages lower than the minimum wage and would allow employers of workers who earn tips to pay them 50 percent of the minimum wage, down from the current 60 percent
+(x22 / and
+	:op1 (x9 / expand-01
+		:ARG0 (x2 / provision
+			:ARG1 (x6 / wage-01
+				:ARG1-of (x5 / new-hire)))
+		:mod (x7 / also)
+		:ARG1 (x10 / exempt-01
+			:ARG0-of (x11 / allow-01
+				:ARG1 (x13 / business
+					:mod (x12 / small))))
+		:purpose (x15 / pay-01
+			:ARG0 x2
+			:ARG1 (x16 / wage
+				:mod (x17 / low
+					:compared-to (x21 / wage-01
+						:mod (x20 / minimum))))))
+	:op2 (x24 / allow-01
+		:ARG0 x2
+		:ARG1 (x32 / pay-01
+			:ARG0 (x25 / employ-01
+				:poss (x27 / person
+					:ARG0-of (w / work-01)
+					:ARG1-of (x29 / earn-01
+						:ARG1 (x30 / tip))))
+			:ARG2 (x35 / percentage-entity
+				:value 50
+				:mod (x41 / down
+					:ARG2 (x46 / percentage-entity
+						:time (x44 / current)
+						:value 60))))
+		:ARG1 (x39 / wage-01
+			:mod (x38 / minimum))))
+
+# ::id 18
+# ::snt Current law exempts service businesses with annual sales of less than $ 362,000 from the minimum-wage law ; the House bill increased that level to $ 500,000
+(x / xconcept
+	:x (x18 / and
+		:op2 (x3 / exempt
+			:ARG0 (x2 / law
+				:time (x1 / current))
+			:ARG1 (x5 / business
+				:ARG1 (x4 / service
+					:poss (x8 / sale
+						:quant (x10 / less
+							:op1 (x13 / monetary-quantity
+								:unit (y / yuan))))))
+			:ARG2 (x17 / law))
+		:op2 (x22 / increase-01
+			:ARG0 (x21 / bill
+				:mod (x20 / have-org-role-91
+					:ARG1 (g / government-organization
+						:name (n / name
+							:op1 "House"))))
+			:ARG1 (x24 / level
+				:mod (x23 / that))
+			:null_edge (x27 / monetary-quantity
+				:unit (y1 / yuan)))))
+
+# ::id 19
+# ::snt The provision is rarely used, however, because of confusing regulations lawmakers say will be simplified in conference committee if the Senate passes a minimum-wage bill
+(x9 / cause-01
+	:ARG1 (x5 / use-01
+		:ARG1 (x2 / provision)
+		:frequency (x4 / rare)
+		:ARG2 (x12 / regulate-01
+			:ARG0-of (x11 / confuse-01)
+			:ARG0-of (x14 / say-01
+				:ARG1 (x17 / simplify-01
+					:time (x20 / committee
+						:ARG0-of (x19 / conference))
+					:time (x24 / pass-01
+						:ARG0 (x23 / government-organization
+							:name (n / name
+								:op1 "Senate"))
+						:ARG2 (x27 / bill)))))))
+
