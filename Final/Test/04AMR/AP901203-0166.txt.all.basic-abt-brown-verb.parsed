@@ -1,0 +1,609 @@
+# ::id 1
+# ::snt At least four moderate earthquakes rattled parts of the world, but there was nary a tremor Monday along the New Madrid Fault, where a scientist said a earthquake was likely to occur
+(x12 / contrast-01
+	:ARG1 (x6 / rattle-01
+		:ARG0 (x5 / earthquake
+			:quant 4
+			:mod (x4 / moderate))
+		:ARG1 (x7 / part
+			:part-of (x10 / world))
+		:ARG1 (x17 / tremor
+			:mod (x15 / nary)
+			:ARG1-of (x28 / say-01
+				:ARG0 (x23 / organization
+					:name (n / name
+						:op1 "Fault")
+					:null_edge (x21 / null_tag)
+					:null_edge (x22 / city
+						:name (n1 / name
+							:op1 "Madrid")))
+				:ARG0 (x27 / have-org-role-91
+					:ARG2 (s / scientist))
+				:ARG1 (x32 / likely
+					:domain (x34 / occur-01
+						:ARG0 (x30 / earthquake))))
+			:time (xap0 / date-entity
+				:weekday (x18 / monday)))))
+
+# ::id 2
+# ::snt " This is just a normal day, " said Waverly Person, chief of the U.S. Geological Survey's National Earthquake Information Center
+(x10 / say-01
+	:ARG1 (x6 / normal
+		:domain (x7 / temporal-quantity
+			:unit (d / day)
+			:null_edge (x2 / this)
+			:mod (x4 / just)))
+	:null_edge (x12 / null_tag
+		:mod (x11 / person
+			:name (n / name
+				:op1 "Waverly"))
+		:ARG0-of (x14 / have-org-role-91
+			:ARG2 (c / chief)
+			:ARG1 (x24 / center
+				:null_edge (x18 / government-organization
+					:name (n1 / name
+						:op1 "Geological"
+						:op2 "Survey"))
+				:null_edge (x21 / nation)
+				:null_edge (x22 / earthquake)
+				:null_edge (x23 / information)))))
+
+# ::id 3
+# ::snt " We 're not backing the prediction at all .
+(x5 / back-01
+	:ARG0 (x2 / we)
+	:ARG1 (x7 / predict-01)
+	:time (x9 / all))
+
+# ::id 4
+# ::snt Along the New Madrid Fault, some schools were canceled and residents purchased earthquake emergency kits and others left town, just in case climatologist Iben Browning was right
+(x11 / and
+	:op1 (x10 / cancel-01
+		:null_edge (x5 / fault
+			:null_edge (x3 / null_tag)
+			:location (x4 / city
+				:name (n / name
+					:op1 "Madrid")))
+		:ARG1 (x8 / school
+			:quant (x7 / some))
+		:ARG1 (x17 / and
+			:op2 (x19 / leave-01
+				:ARG0 (x18 / other)
+				:ARG1 (x20 / town)
+				:ARG1 (x26 / newspaper
+					:name (n1 / name
+						:op1 "Iben"
+						:op2 "Browning")
+					:ARG0-of (x25 / climatologist
+						:mod (x22 / just))))))
+	:op2 (x13 / purchase-01
+		:ARG0 (x12 / person
+			:ARG0-of (r / reside-01))
+		:ARG1 (x16 / kit
+			:poss (x14 / earthquake)
+			:mod (x15 / emergency))))
+
+# ::id 5
+# ::snt Browning said there was a 50-50 chance for a major earthquake early this week along the fault, which stretches from Marked Tree, Ark., northeast through New Marid, Mo., to Cairo, Ill.
+(x2 / say-01
+	:ARG0 (x1 / person
+		:name (n / name
+			:op1 "Browning"))
+	:ARG1 (x7 / chance
+		:null_edge (x6 / 50-50)
+		:ARG1 (x11 / earthquake
+			:mod (x10 / major)
+			:time (x12 / early
+				:op1 (x14 / week
+					:mod (x13 / this)))
+			:ARG1 (x17 / fault-01)
+			:ARG1 (x20 / stretch-01
+				:ARG2 (x23 / tree
+					:mod (x22 / mark-01)
+					:null_edge (x25 / country
+						:name (n2 / name
+							:op1 "Ark."))
+					:null_edge (x27 / northeast)
+					:null_edge (x30 / country
+						:name (n3 / name
+							:op1 "Marid")
+						:null_edge (x29 / null_tag)
+						:null_edge (x32 / country
+							:name (n5 / name
+								:op1 "Mo."))))
+				:ARG2 (x35 / city
+					:name (n1 / name
+						:op1 "Cairo")
+					:location (x37 / country
+						:name (n4 / name
+							:op1 "Ill.")))))))
+
+# ::id 6
+# ::snt case climatologist Iben Browning believes tidal forces can trigger earthquakes, a theory most scientists reject
+(x5 / believe-01
+	:ARG1 (x1 / case
+		:domain (x3 / newspaper
+			:name (n / name
+				:op1 "Iben"
+				:op2 "Browning")
+			:ARG0-of (x2 / climatologist)))
+	:ARG1 (x8 / possible
+		:domain (x9 / trigger-01
+			:ARG0 (x7 / force
+				:mod (x6 / tidal))
+			:ARG1 (x10 / earthquake)
+			:ARG1 (x13 / theory
+				:ARG0-of (x16 / reject-01
+					:ARG0 (x15 / scientist
+						:quant (x14 / most)))))))
+
+# ::id 7
+# ::snt " There's just no way to predict an earthquake precisely, " said Person, who has been with the U.S. Geological Survey for more than 25 years
+(x14 / say-01
+	:concession-of (x6 / way
+		:mod (x4 / just)
+		:instrument-of (x8 / predict-01
+			:polarity -
+			:ARG1 (x10 / earthquake)
+			:manner (x11 / precise)))
+	:null_edge (x15 / null_tag
+		:ARG0-of (x24 / survey-01
+			:mod (x22 / country
+				:name (n / name
+					:op1 "U.S."))
+			:mod (x23 / geological)
+			:ARG2 (x29 / temporal-quantity
+				:unit (y / year)
+				:quant (x26 / more-than
+					:op1 25)))))
+
+# ::id 8
+# ::snt " There are no two earthquakes alike .
+(x6 / earthquake
+	:polarity -
+	:quant 2
+	:location (x7 / alike))
+
+# ::id 9
+# ::snt The center received more than 50 calls about the New Madrid forecast Monday morning and hundreds last week, said Person, who began doing interviews for radio and television stations just after midnight
+(x20 / say-01
+	:ARG0 (x21 / person
+		:ARG1-of (x24 / begin-01
+			:time (x33 / after
+				:op1 (x26 / interview-01
+					:ARG1 (x29 / and
+						:op1 (x3 / receive-01
+							:ARG0 (x2 / center)
+							:ARG1 (x7 / call
+								:quant (x4 / more-than
+									:op1 50)
+								:time (x14 / morning
+									:null_edge (x10 / null_tag)
+									:location (x11 / city
+										:name (n / name
+											:op1 "Madrid"))
+									:ARG1-of (x12 / forecast-01)
+									:time (xap0 / date-entity
+										:null_edge (x13 / null_tag)))
+								:ARG2 (x15 / and
+									:op1 (x16 / hundreds)))
+							:time (x18 / week
+								:mod (x17 / last)))
+						:op1 (x28 / radio)
+						:op2 (x30 / television)
+						:op2 (x31 / station)))
+				:mod (x32 / just)
+				:op1 (x34 / midnight)))))
+
+# ::id 10
+# ::snt As Person talked, 24 seismographs etched out activity recorded by monitoring equipment in different parts of the United States, ranging from Alaska to Tennessee
+(x7 / etch
+	:time (x3 / talk-01)
+	:ARG0 (x6 / seismograph
+		:quant 24)
+	:ARG1 (x9 / activity
+		:ARG1-of (x10 / record-01
+			:ARG1 (x12 / monitor-01
+				:ARG1 (x13 / equipment)
+				:location (x16 / part
+					:ARG1-of (x15 / differ-02)
+					:part-of (x19 / country
+						:name (n / name
+							:op1 "United"
+							:op2 "States"))
+					:ARG1-of (x22 / range-01
+						:ARG3 (x24 / state
+							:name (n1 / name
+								:op1 "Alaska")
+							:null_edge (x26 / country
+								:name (n2 / name
+									:op1 "Tennessee")))))))))
+
+# ::id 11
+# ::snt 
+(x3 / jump-06
+	:ARG1 (x2 / needle)
+	:ARG1 (x6 / distance-quantity
+		:unit (i / inch)
+		:null_edge (x5 / few))
+	:location (x7 / across
+		:op1 (x9 / seismograph
+			:ARG1-of (x10 / connect-01
+				:ARG1 (x12 / monitor-01
+					:ARG1 (x13 / equipment)
+					:location (x15 / country
+						:name (n / name
+							:op1 "Tonopah")
+						:location (x17 / country
+							:name (n1 / name
+								:op1 "Nev."))))))))
+
+# ::id 12
+# ::snt Person scanned the chart and called to a colleague, " a nuclear test may be a nuclear test
+(x5 / and
+	:op1 (x2 / scan-01
+		:ARG0 (x1 / person)
+		:ARG1 (x4 / chart-01))
+	:op2 (x6 / call-01
+		:ARG0 x1
+		:ARG2 (x9 / colleague))
+	:op2 (x15 / possible
+		:domain (x19 / test-01
+			:ARG0 (x14 / test-01
+				:mod (x13 / nucleus))
+			:mod (x18 / nucleus))))
+
+# ::id 13
+# ::snt That's where 24 seismographs etched out activity conduct those tests .
+(x1 / that
+	:purpose (x9 / conduct-01
+		:ARG0 (x5 / seismograph
+			:quant 24
+			:ARG1-of (x6 / etch
+				:ARG2 (x8 / activity)))
+		:ARG1 (x11 / test-01)))
+
+# ::id 14
+# ::snt A few minutes later, the needle jumped again
+(x8 / jump-06
+	:time (x4 / late
+		:op1 (x2 / few
+			:op1 (x3 / null_tag)))
+	:ARG1 (x7 / needle)
+	:mod (x9 / again))
+
+# ::id 15
+# ::snt " That's not a test, " a colleague said
+(x11 / say-01
+	:ARG1 (x6 / test-01
+		:ARG0 (x2 / that))
+	:ARG0 (x10 / colleague))
+
+# ::id 16
+# ::snt " That's a quake .
+(x5 / quake
+	:domain (x2 / that))
+
+# ::id 17
+# ::snt With a measured eye, a colleague estimated the quake was magnitude 2.5 to 3.0 on the Richter scale
+(x8 / estimate-01
+	:ARG1 (x4 / eye
+		:ARG1-of (x3 / measure-01))
+	:ARG0 (x7 / colleague)
+	:ARG1 (x12 / magnitude
+		:domain (x10 / quake)
+		:quant 2.5
+		:null_edge (x15 / 3.0)
+		:degree (x19 / scale
+			:ARG0 (x18 / person
+				:name (n / name
+					:op1 "Richter")))))
+
+# ::id 18
+# ::snt Quick calculations showed the quake was magnitude 3.5, centered about 30 miles southwest of Ely, Nev.
+(x3 / show-01
+	:ARG0 (x2 / calculate-01)
+	:ARG1 (x7 / magnitude
+		:domain (x5 / quake)
+		:null_edge 3.5
+		:ARG1-of (x10 / center-01
+			:ARG2 (x13 / distance-quantity
+				:unit (m / mile)
+				:null_edge (x11 / about
+					:null_edge 30)
+				:mod (x14 / southwest
+					:null_edge (x16 / country
+						:name (n / name
+							:op1 "Ely")
+						:null_edge (x18 / country
+							:name (n1 / name
+								:op1 "Nev."))))))))
+
+# ::id 19
+# ::snt Between midnight and evening, four moderate quakes were recorded at Golden
+(x10 / record-01
+	:time (x1 / between
+		:op1 (x2 / midnight)
+		:op2 (x4 / evening))
+	:ARG1 (x8 / quake
+		:quant 4
+		:mod (x7 / moderate))
+	:location (x12 / golden))
+
+# ::id 20
+# ::snt Three were in the South Pacific, a 5.9-magnitude shaker near New Caledonia, and quakes of 5.1 and 5.0 in the area of Tonga
+(x15 / and
+	:op1 3
+	:op1 (x5 / country
+		:name (n / name
+			:op1 "South"
+			:op2 "Pacific"))
+	:op2 (x10 / shaker
+		:location (x11 / near
+			:op1 (x13 / country
+				:name (n1 / name
+					:op1 "Caledonia")
+				:null_edge (x12 / null_tag))))
+	:op2 (x19 / and
+		:op2 (x16 / quake
+			:location (x23 / area
+				:location (x25 / country
+					:name (n2 / name
+						:op1 "Tonga"))))
+		:op1 (x18 / 5.1)
+		:op2 (x20 / 5.0)))
+
+# ::id 21
+# ::snt The fourth was a 5.9-magnitude temblor in northern Colombia
+(x6 / temblor
+	:mod (x5 / 5.9-magnitude)
+	:name (x8 / name
+		:op1 "northern"
+		:part-of (x9 / country
+			:name (n / name
+				:op1 "Colombia"))))
+
+# ::id 22
+# ::snt A quake of that size can cause considerable damage in a populated area, but are n't considered serious in remote spots
+(x15 / contrast-01
+	:ARG1 (x6 / possible
+		:domain (x7 / cause-01
+			:ARG0 (x2 / quake
+				:mod (x5 / size
+					:mod (x4 / that)))
+			:ARG1 (x9 / damage-01
+				:degree (x8 / considerable))
+			:location (x13 / area
+				:mod (x12 / populate-01))
+			:null_edge (x18 / consider-01
+				:ARG1 (x19 / serious-41
+					:location (x22 / spot
+						:mod (x21 / remote)))))))
+
+# ::id 23
+# ::snt About 800 quakes between magnitudes 5.0 and 5.9 are recorded each year, said USGS spokesman Don Finley in Washington
+(x14 / say-01
+	:ARG1 (x10 / record-01
+		:ARG1 (x3 / quake
+			:quant (x1 / about
+				:op1 800)
+			:ARG0 (x7 / and
+				:op2 (x5 / magnitude
+					:quant (x6 / 5.0))
+				:op2 5.9))
+		:ARG0 (x17 / name
+			:op1 "Don"
+			:op2 "Finley"
+			:ARG0-of (x16 / have-org-role-91
+				:ARG2 (s / spokesman)
+				:ARG1 (x15 / organization
+					:name (n1 / name
+						:op1 "USGS"))))
+		:frequency (xap0 / rate-entity-91
+			:ARG2 (x12 / temporal-quantity
+				:unit (y / year))))
+	:location (x20 / city
+		:name (n / name
+			:op1 "Washington")))
+
+# ::id 24
+# ::snt The Richter scale gauges the amount of energy released by an earthquake
+(x4 / gauge-01
+	:ARG0 (x3 / scale
+		:mod (x2 / richter))
+	:ARG1 (x8 / energy
+		:quant (x6 / amount)
+		:purpose (x12 / earthquake)))
+
+# ::id 25
+# ::snt A quake of magnitude 2 is about the smallest felt by humans
+(x / xconcept
+	:x (x2 / quake
+		:quant 2)
+	:x (x10 / feel-01
+		:ARG1 (x9 / small
+			:degree (m / most))
+		:ARG0 (x12 / human)))
+
+# ::id 26
+# ::snt An earthquake of 3.5 on the Richter scale can cause slight damage in the local area, 4 moderate damage, 5 considerable damage, 6 severe damage
+(x9 / possible
+	:domain (x10 / cause-01
+		:ARG0 (x2 / earthquake
+			:mod 3.5
+			:mod (x8 / scale
+				:ARG0 (x7 / person
+					:name (n / name
+						:op1 "Richter"))))
+		:ARG1 (x12 / damage-01
+			:mod (x11 / slight)
+			:ARG1 (x20 / damage-01
+				:location (x16 / area
+					:mod (x15 / local))
+				:quant 4
+				:mod (x19 / moderate))
+			:ARG1 (x24 / damage-01
+				:quant 5
+				:degree (x23 / considerable))
+			:ARG1 (x28 / damage-01
+				:quant 6
+				:degree (x27 / severe)))))
+
+# ::id 27
+# ::snt 
+(x / xconcept
+	:x (x16 / and
+		:op5 (x9 / earthquake
+			:domain (x3 / read-01
+				:quant 7)
+			:mod (x7 / major)
+			:ARG1 (x28 / damage-01
+				:ARG1-of (x11 / capable-41
+					:ARG1 (x15 / damage-01
+						:mod (x13 / widespread)
+						:mod (x14 / heavy)))
+				:quant 8
+				:mod (x21 / great)
+				:mod (x27 / tremendous)))))
+
+# ::id 28
+# ::snt The big San Francisco Bay area quake last year registered 7.1 on the Richter scale
+(x10 / register-01
+	:ARG0 (x7 / quake
+		:mod (x2 / big)
+		:mod (x3 / country
+			:name (n / name
+				:op1 "San"))
+		:mod (x4 / country
+			:name (n1 / name
+				:op1 "Francisco"))
+		:mod (x5 / country
+			:name (n2 / name
+				:op1 "Bay"))
+		:mod (x6 / area))
+	:ARG0 (x9 / year
+		:mod (x8 / last)
+		:quant (x11 / 7.1))
+	:manner (x15 / scale
+		:ARG0 (x14 / person
+			:name (n3 / name
+				:op1 "Richter"))))
+
+# ::id 29
+# ::snt In 1989, the earthquake center recorded 14,604 earthquakes, with a magnitude 1 or higher, Person said
+(x19 / say-01
+	:ARG1 (x7 / record-01
+		:time (x2 / date-entity
+			:year 1989)
+		:ARG1 (x6 / center
+			:poss (x5 / earthquake))
+		:ARG1 (x9 / earthquake
+			:topic (x15 / or
+				:op1 1
+				:op2 (x16 / high)))))
+
+# ::id 30
+# ::snt An average of 30 a day are recorded
+(x8 / record-01
+	:ARG1 (x2 / average
+		:quant 30))
+
+# ::id 31
+# ::snt This fall, there have been two in the New Madrid Fault area, magnitude 4.6 on Sept. 26 and magnitude 3.5 on Nov. 9, which " is not unusual, " he said
+(x35 / say-01
+	:ARG1 (x20 / and
+		:op2 (x15 / magnitude
+			:null_edge 4.6
+			:time (x18 / date-entity))
+		:op2 (x21 / magnitude
+			:mod 3.5))
+	:null_edge (x24 / date-entity
+		:null_edge (x2 / fall-01
+			:mod (x1 / this)
+			:null_edge 2
+			:location (x13 / area
+				:location (x11 / city
+					:name (n / name
+						:op1 "Madrid"))
+				:mod (x12 / country
+					:name (n1 / name
+						:op1 "Fault"))))
+		:mod (x31 / usual
+			:polarity -))
+	:ARG0 (x34 / he))
+
+# ::id 32
+# ::snt Although earthquakes can be tracked historically, forecasting them is difficult, if not impossible, Person said
+(x18 / say-01
+	:ARG1 (x14 / not
+		:ARG1 (x11 / difficult
+			:extent (x3 / possible
+				:domain (x5 / track-01
+					:ARG1 (x2 / earthquake)
+					:manner (x6 / historically)))
+			:domain (x8 / forecast-01))
+		:ARG1-of (x13 / cause-01)))
+
+# ::id 33
+# ::snt Some people watch precursor activity, but that does n't always lead to an earthquake
+(x7 / contrast-01
+	:ARG1 (x3 / watch-01
+		:ARG0 (x1 / some)
+		:ARG1 (x5 / activity
+			:mod (x4 / precursor)))
+	:ARG2 (x12 / lead-03
+		:time (x11 / always)
+		:ARG2 (x15 / earthquake)))
+
+# ::id 34
+# ::snt Other quakes occur in a swarm over a period of time, he said
+(x14 / say-01
+	:ARG1 (x2 / quake
+		:mod (x1 / other)
+		:location (x6 / swarm-01
+			:location (x7 / over)
+			:time (x11 / time)))
+	:ARG0 (x13 / he))
+
+# ::id 35
+# ::snt Over the years, he has heard countless earthquake predictions
+(x7 / hear-01
+	:time (x1 / over
+		:op1 (x3 / temporal-quantity
+			:unit (y / year)))
+	:ARG0 (x5 / he)
+	:ARG1 (x10 / predict-01
+		:quant (x8 / countless)
+		:ARG1 (x9 / earthquake)))
+
+# ::id 36
+# ::snt One woman called daily, alerting Person that an earthquake was about to occur, based on the number of birds that crossed One woman called daily windshield as One woman called daily drove down the street
+(x3 / call-01
+	:ARG0 (x2 / woman
+		:quant 1)
+	:ARG2 (x6 / alert-01
+		:ARG1 (x7 / person)
+		:ARG2 (x10 / earthquake
+			:ARG1 (x14 / occur-01)
+			:ARG1-of (x16 / base-02
+				:ARG2 (x21 / bird
+					:quant (x19 / number)
+					:ARG0-of (x23 / cross-00
+						:ARG1 (x25 / woman
+							:quant 1
+							:ARG1-of (x26 / call-01
+								:ARG2 (x27 / temporal-quantity
+									:unit (s / second))))
+						:time (x34 / drive-02
+							:ARG1 (x31 / woman
+								:quant 1
+								:ARG1-of (x32 / call-01))
+							:ARG0 (x37 / street))))))))
+
+# ::id 37
+# ::snt The job, he confesses, " is never boring .
+(x10 / bore-02
+	:ARG1 (x2 / job)
+	:null_edge (x5 / confess-01
+		:ARG0 (x4 / he)))
+

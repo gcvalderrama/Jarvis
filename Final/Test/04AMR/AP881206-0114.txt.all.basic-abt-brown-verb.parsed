@@ -1,0 +1,694 @@
+# ::id 1
+# ::snt A B-52 bomber crashed and burst into flames early today on a runway while practicing " touch-and-go " landings at K.I. Sawyer Air Force Base, officials said
+(x28 / say-01
+	:ARG1 (x5 / and
+		:op1 (x4 / crash-01
+			:ARG1 (x3 / bomb-01
+				:ARG0-of (x2 / have-org-role-91
+					:ARG1 (o1 / organization
+						:name (n / name
+							:op1 "B-52"))))
+			:time (x9 / early
+				:op1 (x10 / today))
+			:ARG1 (x13 / runway)
+			:time (x15 / practice-01
+				:ARG1 (x19 / land-01
+					:mod (x17 / touch-and-go))
+				:location (x21 / government-organization
+					:name (n1 / name
+						:op1 "K.I."
+						:op2 "Sawyer"
+						:op3 "Air"
+						:op4 "Force"
+						:op5 "Base"))))
+		:op2 (x6 / burst-01
+			:ARG2 (x8 / flame)))
+	:ARG0 (xap0 / person
+		:ARG0-of (x27 / have-org-role-91
+			:ARG2 (o / official))))
+
+# ::id 2
+# ::snt All eight crew members survived
+(x5 / survive-01
+	:ARG0 (xap0 / person
+		:quant (x1 / all)
+		:quant 8
+		:ARG0-of (x4 / have-org-role-91
+			:ARG2 (m / member)
+			:ARG1 (x3 / crew))))
+
+# ::id 3
+# ::snt The plane, normally equipped to carry nuclear bombs, crashed about 1:15 a.m., said Lt. Naomi Siegal, a spokeswoman at the Strategic Air Command installation
+(x16 / say-01
+	:ARG1 (x11 / crash-01
+		:ARG1 (x2 / plane
+			:ARG1-of (x5 / equip-01
+				:manner (x4 / normal)
+				:purpose (x7 / carry-01
+					:ARG1 (x9 / bomb
+						:mod (x8 / nucleus)))))
+		:time (x13 / include-91))
+	:ARG0 (x18 / newspaper
+		:name (n / name
+			:op1 "Naomi"
+			:op2 "Siegal")
+		:ARG0-of (x17 / lt.)
+		:ARG0-of (x22 / have-org-role-91
+			:ARG2 (s / spokeswoman)
+			:ARG1 (x28 / installation
+				:null_edge (x25 / null_tag)
+				:mod (x26 / air)
+				:mod (x27 / command-02)))))
+
+# ::id 4
+# ::snt No weapons were aboard, said Lt. Col. George Peck, a spokesman for SAC headquarters in Omaha, Neb.
+(x6 / say-01
+	:ARG1 (x2 / weapon
+		:location (x4 / aboard))
+	:ARG0 (x9 / newspaper
+		:name (n / name
+			:op1 "George"
+			:op2 "Peck")
+		:ARG0-of (x7 / lt.)
+		:ARG0-of (x8 / col.)
+		:ARG0-of (x13 / have-org-role-91
+			:ARG2 (s / spokesman)
+			:ARG1 (x16 / headquarters
+				:location (x18 / country
+					:name (n1 / name
+						:op1 "Omaha")
+					:location (x20 / country
+						:name (n2 / name
+							:op1 "Neb.")))))))
+
+# ::id 5
+# ::snt The crew was practicing landings after a seven-hour training flight when SAC headquarters in Omaha , Neb. crashed during one of its touch-and-go approaches, Peck said
+(x27 / say-01
+	:ARG1 (x4 / practice-01
+		:ARG0 (x2 / crew)
+		:ARG1 (x5 / land-01)
+		:time (x6 / after
+			:op1 (x10 / fly-01
+				:op (f / flight)
+				:mod (x8 / person
+					:name (n1 / name
+						:op1 "seven-hour"))
+				:ARG1 (x9 / train-01
+					:ARG0-of (x18 / crash-01
+						:ARG1 (x13 / headquarters
+							:location (x15 / country
+								:name (n2 / name
+									:op1 "Omaha")
+								:location (x17 / country
+									:name (n3 / name
+										:op1 "Neb."))))
+						:ARG1 (x21 / include-91
+							:ARG2 (x24 / approach-02
+								:mod (x23 / touch-and-go))))))))
+	:ARG0 (x26 / person
+		:name (n / name
+			:op1 "Peck")))
+
+# ::id 6
+# ::snt During such maneuvers, landing gears touch the ground but the plane does n't land
+(x10 / contrast-01
+	:ARG1 (x7 / touch-01
+		:ARG1 (x3 / maneuver
+			:mod (x2 / such))
+		:ARG0 (x6 / gear-01
+			:ARG1 (x5 / land-01))
+		:ARG1 (x9 / ground)
+		:ARG1 (xap0 / and
+			:domain (x15 / land-01
+				:ARG1 (x12 / plane)))))
+
+# ::id 7
+# ::snt All three sections of the plane burned on impact, said Senior Airman Tim Sanders, a base spokesman
+(x11 / say-01
+	:ARG1 (x7 / burn-01
+		:ARG0 (x3 / section
+			:quant (x1 / all)
+			:quant 3
+			:poss (x6 / plane))
+		:time (x9 / impact-01))
+	:ARG0 (x14 / newspaper
+		:name (n / name
+			:op1 "Tim"
+			:op2 "Sanders")
+		:mod (x12 / senior)
+		:ARG0-of (x13 / airman)
+		:ARG0-of (x19 / have-org-role-91
+			:ARG2 (s / spokesman)
+			:ARG1 (x18 / base))))
+
+# ::id 8
+# ::snt The crew members crawled or were helped out of the front section of the aircraft, Tim Sanders said
+(x19 / say-01
+	:ARG1 (x5 / or
+		:op1 (x4 / crawl
+			:ARG0 (xap0 / person
+				:ARG0-of (x3 / have-org-role-91
+					:ARG2 (m / member)
+					:ARG1 (x2 / crew))))
+		:op2 (x7 / help-01
+			:ARG1 (x12 / section
+				:mod (x11 / front)
+				:part-of (x15 / aircraft))))
+	:ARG0 (x17 / newspaper
+		:name (n / name
+			:op1 "Tim"
+			:op2 "Sanders")))
+
+# ::id 9
+# ::snt The crew members were taken to Marquette General and base hospitals
+(xap0 / person
+	:ARG0-of (x3 / have-org-role-91
+		:ARG2 (m / member)
+		:ARG1 (x2 / crew))
+	:ARG2 (x7 / organization
+		:name (n / name
+			:op1 "Marquette"))
+	:ARG1 (x9 / and
+		:op1 "General"
+		:op2 (x11 / hospital
+			:mod (x10 / base))))
+
+# ::id 10
+# ::snt Members of the crew suffered broken bones, but no one was burned, said Capt. Paul Bicking, another Sawyer spokesman
+(x15 / say-01
+	:ARG1 (x5 / suffer-01
+		:ARG0 (x1 / member
+			:part-of (x4 / crew))
+		:ARG1 (x7 / bone
+			:ARG1-of (x6 / break-02))
+		:ARG1-of (x13 / burn-01
+			:polarity -))
+	:ARG1 (x9 / contrast-01)
+	:ARG0 (x18 / person
+		:name (n / name
+			:op1 "Bicking")
+		:null_edge (x16 / capt.)
+		:null_edge (x17 / null_tag)
+		:ARG0-of (x22 / have-org-role-91
+			:ARG2 (s / spokesman)
+			:mod (x20 / another)
+			:ARG1 (x21 / person
+				:name (n1 / name
+					:op1 "Sawyer")))))
+
+# ::id 11
+# ::snt Senior Airman Tim Sanders, another base spokesman, said those aboard were Capt. Mark Hartney, 29, an aircraft commander from Mulberry, Fla. ; 1st Lt. Michael S. Debruzzi, 26, a pilot from New Brighton, Minn. ; Capt. Anthony D. Phillips, 28, a radar navigator from Folkston, Ga. ; 1st Lt. James W. Herrmann, 30, a navigator from Sharpsville, Pa. ; 1st Lt. Daniel McCarrick, 25, an electronic warfare officer from Succasunna, N.J. ; Airman 1st Class, Joseph A. Vallie, 20, a gunner from Stephenson, Mich. ; Maj. William R. Kroeger, 52, an instructor pilot from Fountain Hills, Ariz. ; and 1st Lt. Gregory C. Smith, 26, an upgrade pilot from Henning, Minn.
+(x10 / say-01
+	:ARG0 (x3 / newspaper
+		:name (n / name
+			:op1 "Tim"
+			:op2 "Sanders")
+		:mod (x1 / senior)
+		:ARG0-of (x2 / airman)
+		:ARG0-of (x8 / have-org-role-91
+			:ARG2 (s / spokesman)
+			:ARG1 (x7 / base
+				:mod (x6 / another))))
+	:ARG0 (x15 / person
+		:name (n1 / name
+			:op1 "Mark"
+			:op2 "Hartney")
+		:ARG0-of (x12 / aboard)
+		:ARG0-of (x14 / capt.)
+		:quant (x18 / person
+			:op 29)
+		:ARG0-of (x22 / have-org-role-91
+			:ARG2 (c / commander)
+			:mod (x21 / aircraft)
+			:source (x24 / mulberry))))
+
+# ::id 12
+# ::snt All were based at Sawyer
+(x3 / base-01
+	:ARG1 (x1 / all)
+	:location (x5 / country
+		:name (n / name
+			:op1 "Sawyer")))
+
+# ::id 13
+# ::snt Ann Parent, a spokeswoman for Marquette General Hospital, said Hartney and Debruzzi were in fair condition, Phillips and Vallie were in stable condition, McCarrick was in satisfactory condition and Kroeger was in serious condition
+(x11 / say-01
+	:ARG0 (x1 / newspaper
+		:name (n / name
+			:op1 "Ann"
+			:op2 "Parent")
+		:ARG0-of (x5 / have-org-role-91
+			:ARG2 (s / spokeswoman)
+			:ARG1 (x9 / organization
+				:name (n1 / name
+					:op1 "Hospital")
+				:null_edge (x7 / organization
+					:name (n8 / name
+						:op1 "Marquette"))
+				:null_edge (x8 / null_tag))))
+	:ARG1 (x33 / and
+		:op2 (x13 / and
+			:op1 (x12 / person
+				:name (n2 / name
+					:op1 "Hartney"))
+			:op2 (x14 / person
+				:name (n3 / name
+					:op1 "Debruzzi")))
+		:op2 (x18 / condition
+			:mod (x17 / fair))
+		:op2 (x21 / and
+			:op1 (x20 / person
+				:name (n4 / name
+					:op1 "Phillips"))
+			:op2 (x22 / person
+				:name (n5 / name
+					:op1 "Vallie"))
+			:op2 (x26 / condition
+				:mod (x25 / stable)))
+		:op2 (x32 / condition
+			:ARG1 (x28 / person
+				:name (n6 / name
+					:op1 "McCarrick"))
+			:mod (x31 / satisfactory))
+		:op2 (x38 / condition
+			:domain (x34 / person
+				:name (n7 / name
+					:op1 "Kroeger"))
+			:mod (x37 / serious))))
+
+# ::id 14
+# ::snt Herrmann and Smith were listed in stable condition at the base hospital, said Technical Sgt. Anita Bailey
+(x14 / say-01
+	:ARG1 (x5 / list-01
+		:ARG1 (x2 / and
+			:op1 (x1 / person
+				:name (n1 / name
+					:op1 "Herrmann"))
+			:op2 (x3 / person
+				:name (n2 / name
+					:op1 "Smith")))
+		:ARG2 (x8 / condition
+			:mod (x7 / stable))
+		:ARG2 (x12 / hospital
+			:mod (x11 / base)))
+	:ARG0 (x17 / newspaper
+		:name (n / name
+			:op1 "Anita"
+			:op2 "Bailey")
+		:ARG0-of (x15 / technical)
+		:ARG0-of (x16 / sgt.)))
+
+# ::id 15
+# ::snt Hartney was the aircraft commander, but Debruzzi also was qualified to fly the plane, Bailey said
+(x18 / say-01
+	:ARG0 (x1 / person
+		:name (n / name
+			:op1 "Hartney")
+		:ARG1-of (x11 / qualify-02
+			:ARG1 (x5 / have-org-role-91
+				:ARG2 (c / commander)
+				:ARG1 (x4 / aircraft))
+			:ARG1 (x8 / person
+				:name (n2 / name
+					:op1 "Debruzzi"))
+			:mod (x9 / also)
+			:ARG2 (x13 / fly-01
+				:ARG1 (x15 / plane))))
+	:ARG0 (x17 / person
+		:name (n1 / name
+			:op1 "Bailey")))
+
+# ::id 16
+# ::snt Technical Sgt. Anita Bailey did not know who was at the controls at the time of the crash
+(x7 / know-01
+	:ARG0 (x3 / newspaper
+		:name (n / name
+			:op1 "Anita"
+			:op2 "Bailey")
+		:ARG0-of (x1 / technical)
+		:ARG0-of (x2 / sgt.))
+	:ARG1 (x12 / control-01
+		:location (x18 / crash-01)))
+
+# ::id 17
+# ::snt " Hartney are counting Hartney blessings, " Bailey said
+(x10 / say-01
+	:ARG1 (x4 / count-04
+		:ARG0 (x2 / person
+			:name (n1 / name
+				:op1 "Hartney"))
+		:ARG1 (x6 / bless-01
+			:mod (x5 / person
+				:name (n2 / name
+					:op1 "Hartney"))))
+	:ARG0 (x9 / person
+		:name (n / name
+			:op1 "Bailey")))
+
+# ::id 18
+# ::snt " You can put parts of a plane back together, but you can not put people back together .
+(x12 / contrast-01
+	:ARG2 (x3 / possible
+		:domain (x4 / put-01
+			:ARG0 (x2 / you)
+			:ARG1 (x5 / part
+				:part-of (x8 / plane))
+			:manner (x10 / together
+				:mod (x9 / back))
+			:purpose (x14 / possible
+				:domain (x16 / put-01
+					:ARG0 (x13 / you)
+					:ARG2 (x19 / together
+						:mod (x18 / back)))))))
+
+# ::id 19
+# ::snt The accident was classified as the most serious kind, and all aircraft exercises at Sawyer were canceled even though runways other than the one where the crash occurred remained open, Bailey said
+(x34 / say-01
+	:ARG1 (x11 / and
+		:op1 (x4 / classify-01
+			:ARG1 (x2 / accident)
+			:ARG2 (x9 / kind
+				:mod (x8 / serious
+					:degree (x7 / most))))
+		:op2 (x18 / cancel-01
+			:ARG1 x2
+			:ARG1-of (x30 / remain-01
+				:ARG1 (x14 / exercise
+					:quant (x12 / all)
+					:mod (x13 / aircraft)
+					:beneficiary (x16 / person
+						:name (n1 / name
+							:op1 "Sawyer")))
+				:ARG1 (x21 / runway
+					:domain (x28 / crash-01
+						:mod (x22 / other)
+						:ARG1-of (x29 / occur-01)))
+				:ARG3 (x31 / open-01
+					:mod (x19 / even)))))
+	:ARG0 (x33 / person
+		:name (n / name
+			:op1 "Bailey")))
+
+# ::id 20
+# ::snt Peck said a board of officers will investigate the accident, adding weather did not appear to be a factor in the crash
+(x2 / say-01
+	:ARG0 (x1 / person
+		:name (n / name
+			:op1 "Peck"))
+	:ARG1 (x8 / investigate-01
+		:ARG0 (x4 / board
+			:consist-of (xap0 / person
+				:ARG0-of (x6 / have-org-role-91
+					:ARG2 (o / officer))))
+		:ARG1 (x10 / accident
+			:ARG0-of (x12 / add-02
+				:ARG1 (x13 / weather)
+				:ARG1 (x16 / appear-02
+					:ARG1 (x20 / factor
+						:ARG1 x13
+						:location (x23 / crash-01)))))))
+
+# ::id 21
+# ::snt Peck said it was not unusual for B-52 training missions to be out at that hour
+(x2 / say-01
+	:ARG0 (x1 / person
+		:name (n / name
+			:op1 "Peck"))
+	:ARG1 (x6 / usual
+		:polarity -
+		:domain (x10 / mission
+			:mod (x9 / train-01
+				:mod (x8 / world-region
+					:name (n1 / name
+						:op1 "B-52")))
+			:time (x16 / temporal-quantity
+				:unit (h / hour)
+				:mod (x15 / that)))))
+
+# ::id 22
+# ::snt " Crews have to be trained to fly at any time of the day or night in any weather, " George Peck said
+(x24 / say-01
+	:ARG1 (x3 / have-03
+		:ARG2 (x6 / train-01
+			:ARG0 (x2 / crew)
+			:purpose (x8 / fly-01
+				:ARG1 (x15 / or
+					:op1 (x14 / day)
+					:op2 (x16 / night))
+				:location (x19 / weather
+					:mod (x18 / any)))))
+	:ARG0 (x22 / newspaper
+		:name (n / name
+			:op1 "George"
+			:op2 "Peck")))
+
+# ::id 23
+# ::snt The eight-engine B-52, which was deployed in the early 1950s, is the military's biggest bomber, with a wingspan of 185 feet and a maximum takeoff weight of 488,000 pounds
+(x18 / bomb-01
+	:mod (x2 / eight-engine)
+	:ARG1-of (x7 / deploy-01
+		:time (x10 / early
+			:op1 (xap0 / date-entity
+				:decade 1950)))
+	:ARG1 (x15 / military)
+	:mod (x17 / big
+		:degree (m / most))
+	:ARG2 (x26 / and
+		:op1 (x22 / wingspan)
+		:op2 (x25 / foot
+			:quant 185)
+		:op2 (x30 / weight
+			:ARG1 (x29 / take-08
+				:mod (x28 / maximum))
+			:ARG2 (x33 / monetary-quantity
+				:unit (p / pound)))))
+
+# ::id 24
+# ::snt The last B-52 was commissioned in 1962
+(x5 / commission
+	:ARG1 (x3 / event
+		:name (n / name
+			:op1 "B-52")
+		:mod (x2 / last))
+	:time (x7 / date-entity
+		:year 1962))
+
+# ::id 25
+# ::snt In other accidents involving B-52s, a bomber was damaged when a pilot aborted a takeoff and overshot a runway at Castle Air Force Base in central California on Feb. 11
+(x10 / damage-01
+	:time (x3 / accident
+		:mod (x2 / other)
+		:ARG2-of (x4 / involve-01
+			:ARG1 (x5 / b-52)))
+	:ARG1 (x8 / bomb-01)
+	:ARG0 (x17 / and
+		:op1 (x14 / abort
+			:ARG0 (x13 / person
+				:ARG0-of (p / pilot-01))
+			:ARG1 (x16 / take-08
+				:ARG1 x13))
+		:op2 (x18 / overshoot
+			:ARG0 x13
+			:ARG1 (x20 / runway
+				:location (x25 / organization
+					:name (n1 / name
+						:op1 "Base")
+					:null_edge (x22 / null_tag)
+					:null_edge (x23 / null_tag)
+					:null_edge (x24 / null_tag)))
+			:location (x28 / state
+				:name (n / name
+					:op1 "California")
+				:mod (x27 / central))
+			:time (x30 / date-entity))))
+
+# ::id 26
+# ::snt No one was injured
+(x4 / injure-01
+	:ARG1 1)
+
+# ::id 27
+# ::snt A B-52 bomber with radar problems crashed in Arizona'a Monument Valley in October 1984, killing two crew members, after Arizona'a Monument Valley in October 1984 wings clipped a mesa
+(x7 / crash-01
+	:ARG1 (x3 / bomb-01
+		:ARG0-of (x2 / have-org-role-91
+			:ARG1 (o / organization
+				:name (n / name
+					:op1 "B-52")))
+		:ARG1 (x6 / problem
+			:mod (x5 / radar)))
+	:time (x13 / date-entity
+		:year 1984)
+	:ARG1 (x16 / kill-01
+		:ARG1 (x19 / have-org-role-91
+			:ARG2 (m / member)
+			:quant 2
+			:mod (x18 / crew)))
+	:time (x21 / after
+		:op1 (x29 / clip
+			:ARG1 (x28 / wing
+				:time (x26 / date-entity)
+				:time (x27 / date-entity
+					:year 1984))
+			:ARG1 (x31 / mesa))))
+
+# ::id 28
+# ::snt The Air Force has had more trouble recently with the B-52's successor, the B-1B bomber
+(x13 / succeed-02
+	:ARG1 (x3 / force
+		:null_edge (x2 / null_tag))
+	:ARG1 (x7 / trouble
+		:quant (x6 / more))
+	:time (x8 / recent)
+	:ARG0 (x11 / person
+		:name (n / name
+			:op1 "B-52"))
+	:ARG1 (x17 / bomb-01
+		:mod (x16 / b-1b)))
+
+# ::id 29
+# ::snt Although smaller than the B-52, the B-1B can fly at supersonic speeds and carry more bombs
+(x9 / possible
+	:condition (x2 / small
+		:compared-to (x5 / b-52))
+	:domain (x14 / and
+		:op1 (x10 / fly-01
+			:ARG1 (x8 / b-1b)
+			:ARG1 (x13 / speed
+				:mod (x12 / supersonic)))
+		:op2 (x15 / carry-01
+			:ARG1 (x17 / bomb
+				:quant (x16 / more)))))
+
+# ::id 30
+# ::snt Four B-1Bs have crashed in the four years the plane has been flying, including two nine days apart in November
+(x4 / crash-01
+	:ARG0 (x2 / b-1b
+		:quant 4)
+	:duration (x8 / temporal-quantity
+		:unit (y / year)
+		:quant 4
+		:time-of (x13 / fly-01
+			:ARG1 (x10 / plane)
+			:time (x19 / apart
+				:null_edge 2
+				:quant (x18 / temporal-quantity
+					:unit (d / day)
+					:quant 9)
+				:time (x21 / date-entity)))))
+
+# ::id 31
+# ::snt One of the $ 280 million B-1Bs was destroyed after smashing onto a runway at Ellsworth Air Force Base, S.D., during a training flight on Nov. 17
+(x9 / destroy-01
+	:ARG1 (x7 / b-1b
+		:mod (x4 / country
+			:name (n / name
+				:op1 "$")
+			:null_edge (x5 / monetary-quantity
+				:unit (y / yuan))))
+	:time (x10 / after
+		:op1 (x11 / smash
+			:ARG1 (x14 / runway
+				:mod (x16 / organization
+					:name (n1 / name
+						:op1 "Ellsworth"))
+				:location (x19 / organization
+					:name (n2 / name
+						:op1 "Base")
+					:null_edge (x17 / null_tag)
+					:null_edge (x18 / null_tag)
+					:null_edge (x21 / country
+						:name (n3 / name
+							:op1 "S.D."))))
+			:time (x26 / fly-01
+				:op (f / flight)
+				:ARG1 (x25 / train-01)
+				:time (x28 / date-entity)))))
+
+# ::id 32
+# ::snt On Nov. 8, a B-1B crashed and burned in a field near Dyess Air Force Base, Texas
+(x8 / and
+	:op1 (x7 / crash-01
+		:time (x2 / date-entity)
+		:ARG1 (x6 / b-1b))
+	:op2 (x9 / burn-01
+		:ARG0 x6
+		:location (x12 / field
+			:location (x13 / near
+				:op1 (x17 / base
+					:null_edge (x14 / country
+						:name (n / name
+							:op1 "Dyess"))
+					:null_edge (x15 / air)
+					:null_edge (x16 / force)
+					:null_edge (x19 / country
+						:name (n1 / name
+							:op1 "Texas")))))))
+
+# ::id 33
+# ::snt No one was killed in either crash and investigators have not disclosed what caused the accidents
+(x8 / and
+	:op1 (x4 / kill-01
+		:ARG1 1
+		:location (x7 / crash-01)
+		:ARG0-of (x14 / cause-01
+			:ARG0 (x9 / person
+				:ARG0-of (i / investigate-01))
+			:ARG1 (x16 / accident))))
+
+# ::id 34
+# ::snt Six crewmen died and 10 were injured Oct. 11 when an Air Force tanker en route from K.I. Sawyer crashed at Wurtsmith Air Force Base near Oscoda
+(x4 / and
+	:op1 (x3 / die-01
+		:ARG1 (x2 / crewman
+			:quant 6))
+	:op2 (x7 / injure-01
+		:ARG0 x2
+		:ARG1 10
+		:time (x8 / name
+			:op1 "Oct."
+			:op2 "11")
+		:time (x20 / crash-01
+			:ARG1 (x14 / tanker
+				:null_edge (x12 / null_tag)
+				:null_edge (x13 / null_tag)
+				:location (x16 / route))
+			:ARG0 (x19 / person
+				:name (n / name
+					:op1 "Sawyer")
+				:null_edge (x18 / person
+					:name (n1 / name
+						:op1 "K.I.")))
+			:location (x25 / base
+				:null_edge (x22 / wurtsmith)
+				:mod (x23 / air)
+				:mod (x24 / force)
+				:location (x26 / near
+					:op1 (x27 / country
+						:name (n2 / name
+							:op1 "Oscoda")))))))
+
+# ::id 35
+# ::snt The Air Force's investigation of the crash is incomplete
+(x10 / complete-01
+	:polarity -
+	:domain (x5 / investigate-01
+		:null_edge (x2 / null_tag
+			:null_edge "Force")
+		:ARG1 (x8 / crash-01)))
+
+# ::id 36
+# ::snt Wurtsmith and Sawyer are Michigan's two SAC bases
+(x9 / base
+	:domain (x2 / and
+		:op1 (x1 / person
+			:name (n1 / name
+				:op1 "Wurtsmith"))
+		:op2 (x3 / person
+			:name (n2 / name
+				:op1 "Sawyer")))
+	:null_edge (x5 / country
+		:name (n / name
+			:op1 "Michigan"))
+	:quant 2)
+

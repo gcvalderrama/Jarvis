@@ -1,0 +1,1044 @@
+# ::id 1
+# ::snt Though the forms for the 1990 census are already at the printers, Congress is contemplating adding a question : Are you an illegal immigrant
+(x17 / add-02
+	:ARG1 (x19 / question-01
+		:ARG1 (x16 / contemplate-01
+			:ARG1 (x3 / form
+				:purpose (x7 / census
+					:time (x6 / date-entity
+						:year 1990))
+				:time (x9 / already)
+				:location (x12 / printer))
+			:ARG0 (x14 / government-organization
+				:name (n / name
+					:op1 "Congress")))
+		:domain (x25 / immigrate-01
+			:null_edge (x22 / you)
+			:mod (x24 / law
+				:polarity -))))
+
+# ::id 2
+# ::snt The Census Bureau, as Census Bureau has in the past, is planning to count all residents of the nation regardless of legal status
+(x14 / plan-01
+	:ARG0 (x2 / government-organization
+		:name (n / name
+			:op1 "Census"
+			:op2 "Bureau"))
+	:ARG1 (x16 / count-04
+		:ARG0 x2
+		:ARG1 (x18 / person
+			:ARG0-of (r / reside-01)
+			:ARG0-of (x8 / have-03
+				:ARG0 (x6 / government-organization
+					:name (n1 / name
+						:op1 "Census"
+						:op2 "Bureau"))
+				:time (x11 / past))
+			:quant (x17 / all)
+			:ARG1 (x21 / nation))
+		:ARG1 (x25 / status)))
+
+# ::id 3
+# ::snt But the Senate already has voted to force the Census Bureau to exclude illegal immigrants in preparing tallies for congressional reapportionment
+(x1 / contrast-01
+	:ARG2 (x6 / vote-01
+		:ARG0 (x3 / government-organization
+			:name (n / name
+				:op1 "Senate"))
+		:time (x4 / already)
+		:ARG1 (x8 / force-01
+			:ARG2 (x13 / exclude-01
+				:ARG0 (x10 / government-organization
+					:name (n1 / name
+						:op1 "Census"
+						:op2 "Bureau"))
+				:ARG1 (x15 / person
+					:ARG0-of (i / immigrate-01)
+					:mod (x14 / law
+						:polarity -))
+				:instrument (x17 / prepare-02
+					:ARG1 (x18 / tally-01)
+					:ARG2 (x21 / reapportionment
+						:mod (x20 / government-organization
+							:name (n2 / name
+								:op1 "congressional"))))))))
+
+# ::id 4
+# ::snt A majority of the members of the House of Representatives has signaled support
+(x12 / signal
+	:ARG0 (x2 / majority
+		:ARG0-of (x5 / have-org-role-91
+			:ARG2 (m / member)
+			:ARG1 (x8 / have-org-role-91
+				:ARG1 (g / government-organization
+					:name (n / name
+						:op1 "House"
+						:op2 "of"
+						:op3 "Representatives")))))
+	:ARG1 (x13 / support-01))
+
+# ::id 5
+# ::snt " It is wrong to apportion congressional seats by counting people who would be deported if our immigration laws were enforced, " Rep. Thomas Petri (R., Wis. )said in a recent House debate
+(x32 / say-01
+	:ARG1 (x4 / wrong-41
+		:ARG2 (x6 / apportion
+			:ARG1 (x8 / seat
+				:ARG0 (x7 / government-organization
+					:name (n3 / name
+						:op1 "congressional")))
+			:manner (x10 / count-01
+				:ARG1 (x15 / deport-01
+					:time (x21 / enforce-01
+						:ARG1 (x19 / law
+							:mod (x18 / immigrate-01)))))))
+	:ARG0 (x25 / newspaper
+		:name (n / name
+			:op1 "Thomas"
+			:op2 "Petri")
+		:ARG0-of (x24 / rep.)
+		:ARG0-of (x28 / r.
+			:null_edge (x30 / country
+				:name (n2 / name
+					:op1 "Wis."))))
+	:ARG2 (x37 / debate-01
+		:time (x35 / recent)
+		:ARG1 (x36 / have-org-role-91
+			:ARG1 (g / government-organization
+				:name (n1 / name
+					:op1 "House")))))
+
+# ::id 6
+# ::snt Replied Rep. Jim Kolbe (R., Ariz. ): " A very clear reading of the Constitution says that people who would be deported if our immigration laws were enforced shall count all those who are present .
+(x19 / say-01
+	:ARG0 (x3 / newspaper
+		:name (n / name
+			:op1 "Jim"
+			:op2 "Kolbe")
+		:ARG0-of (x1 / reply-01)
+		:ARG0-of (x2 / rep.)
+		:ARG0-of (x6 / r.
+			:null_edge (x8 / country
+				:name (n2 / name
+					:op1 "Ariz."))))
+	:ARG0 (x15 / read-01
+		:mod (x13 / very)
+		:poss (x18 / law
+			:name (n1 / name
+				:op1 "Constitution")))
+	:ARG1 (x33 / count-04
+		:ARG1 (x25 / deport-01)
+		:ARG1-of (x31 / enforce-01
+			:ARG1 (x29 / law
+				:mod (x28 / immigrate-01)))
+		:ARG1 (x34 / all
+			:time (x38 / present))))
+
+# ::id 7
+# ::snt Although the debate is often couched in constitutional arguments, a recent House debate's largely driven by geography
+(x6 / couch
+	:ARG1 (x3 / debate-01)
+	:frequency (x5 / often)
+	:ARG2 (x9 / argument
+		:mod (x8 / constitution))
+	:ARG1 (x14 / debate-01
+		:time (x12 / recent)
+		:ARG1 (x13 / have-org-role-91
+			:ARG1 (g / government-organization
+				:name (n / name
+					:op1 "House")))
+		:ARG1-of (x17 / drive-01
+			:degree (x16 / largely)
+			:ARG0 (x19 / geography))))
+
+# ::id 8
+# ::snt Wisconsin has few illegal immigrants ; Arizona has lots
+(x8 / have-03
+	:ARG0 (x1 / state
+		:name (n / name
+			:op1 "Wisconsin"))
+	:ARG1 (x5 / person
+		:ARG0-of (i / immigrate-01)
+		:quant (x3 / few)
+		:mod (x4 / law
+			:polarity -))
+	:ARG0 (x7 / country
+		:name (n1 / name
+			:op1 "Arizona"))
+	:ARG1 (x9 / lots))
+
+# ::id 9
+# ::snt " Wis. boils down to regional politics, " says Arturo Vargas, census-program director for the Mexican American Legal Defense and Educational Fund, one of several Hispanic organizations lobbying in favor of counting illegal immigrants
+(x10 / say-01
+	:ARG1 (x3 / boil
+		:ARG0 (x2 / wis.)
+		:ARG0 (x7 / politics
+			:mod (x6 / region)))
+	:ARG0 (x11 / newspaper
+		:name (n / name
+			:op1 "Arturo"
+			:op2 "Vargas")
+		:ARG0-of (x15 / have-org-role-91
+			:ARG2 (d / director)
+			:topic (x22 / and
+				:op1 (x21 / defense
+					:mod (x20 / organization
+						:name (n1 / name
+							:op1 "Legal")))
+				:op2 (x24 / fund
+					:null_edge (x23 / educational))
+				:ARG1-of (x27 / include-91
+					:ARG2 (x30 / organization
+						:quant (x28 / several)
+						:mod (x29 / organization
+							:name (n2 / name
+								:op1 "Hispanic"))
+						:ARG0-of (x31 / lobby-01
+							:ARG2 (x33 / favor-01
+								:ARG1 (x35 / count-01
+									:ARG1 (x37 / person
+										:ARG0-of (i / immigrate-01)
+										:mod (x36 / law
+											:polarity -)))))))))))
+
+# ::id 10
+# ::snt Counting illegal immigrants in 1990 is likely to mean one less seat in the House for Pennsylvania and one more for California, according to the private Population Reference Bureau
+(x7 / likely
+	:domain (x1 / count-01
+		:ARG1 (x3 / person
+			:ARG0-of (i / immigrate-01)
+			:mod (x2 / law
+				:polarity -))
+		:time (x5 / date-entity
+			:year 1990))
+	:domain (x9 / mean-01
+		:ARG1 (x18 / and
+			:op1 (x12 / seat-01
+				:quant 1
+				:degree (x11 / less)
+				:poss (x17 / country
+					:name (n2 / name
+						:op1 "Pennsylvania")
+					:location (x15 / government-organization
+						:name (n3 / name
+							:op1 "House"))))
+			:op6 (x20 / more))
+		:ARG1 (x22 / state
+			:name (n1 / name
+				:op1 "California")))
+	:null_edge (x28 / government-organization
+		:name (n / name
+			:op1 "Population"
+			:op2 "Reference"
+			:op3 "Bureau")
+		:mod (x27 / private)))
+
+# ::id 11
+# ::snt The Census Bureau's chief antagonist in the Senate, Sen. Richard Shelby (D., Ala. -RRB-, says seats for Connecticut, Michigan, North Carolina and Alabama also are at risk
+(x20 / say-01
+	:ARG0 (x6 / antagonist
+		:ARG0 (x2 / government-organization
+			:name (n / name
+				:op1 "Census"
+				:op2 "Bureau"))
+		:mod (x5 / have-org-role-91
+			:ARG2 (c / chief))
+		:ARG1 (x9 / government-organization
+			:name (n1 / name
+				:op1 "Senate"))
+		:name (x12 / name
+			:op1 "Richard"
+			:op2 "Shelby"
+			:ARG0-of (x11 / sen.)
+			:ARG0-of (x15 / d.
+				:null_edge (x17 / country
+					:name (n6 / name
+						:op1 "Ala.")))))
+	:ARG1 (x21 / seat
+		:ARG2 (x29 / and
+			:op1 (x23 / country
+				:name (n2 / name
+					:op1 "Connecticut"))
+			:op3 (x25 / country
+				:name (n3 / name
+					:op1 "Michigan"))
+			:op2 (x27 / country
+				:name (n4 / name
+					:op1 "North"
+					:op2 "Carolina"))
+			:op2 (x30 / country
+				:name (n5 / name
+					:op1 "Alabama")))
+		:mod (x31 / also)
+		:location (x34 / risk-01)))
+
+# ::id 12
+# ::snt On the other hand, Texas, Florida and New York could benefit
+(x12 / possible
+	:domain (x13 / benefit-01
+		:ARG0 (x4 / hand
+			:mod (x3 / other))
+		:ARG0 (x9 / and
+			:op1 (x6 / country
+				:name (n / name
+					:op1 "Texas"))
+			:op2 (x8 / country
+				:name (n1 / name
+					:op1 "Florida"))
+			:op2 (x11 / country
+				:name (n2 / name
+					:op1 "York")
+				:null_edge (x10 / null_tag)))))
+
+# ::id 13
+# ::snt " Illegal aliens are actually taking representation away from Americans, " says David Ray, spokesman for the Federation for American Immigration Reform
+(x13 / say-01
+	:ARG1 (x6 / take-01
+		:ARG0 (x3 / alien
+			:mod (x2 / law))
+		:mod (x5 / actual)
+		:ARG1 (x7 / represent-01)
+		:null_edge (x10 / person
+			:mod (c / country
+				:name (n1 / name
+					:op1 "Americans"))))
+	:ARG0 (x14 / newspaper
+		:name (n / name
+			:op1 "David"
+			:op2 "Ray")
+		:ARG0-of (x17 / have-org-role-91
+			:ARG2 (s / spokesman)
+			:ARG1 (x20 / federation
+				:null_edge (x24 / country
+					:name (n2 / name
+						:op1 "Reform")
+					:mod (x23 / country
+						:name (n3 / name
+							:op1 "Immigration")
+						:mod (x22 / country
+							:name (n4 / name
+								:op1 "American"))))))))
+
+# ::id 14
+# ::snt The Census Bureau, based on comparisons of Census Bureau data with figures kept by the Immigration and Naturalization Service, estimates that Census Bureau counted about two million illegal immigrants in 1980, half of them in California
+(x22 / estimate-01
+	:ARG0 (x2 / government-organization
+		:name (n / name
+			:op1 "Census"
+			:op2 "Bureau")
+		:ARG1-of (x5 / base-02
+			:ARG2 (x7 / compare-01
+				:ARG1 (x11 / data
+					:mod (x9 / organization
+						:name (n3 / name
+							:op1 "Census"))
+					:source (x10 / government-organization
+						:name (n4 / name
+							:op1 "Bureau")))
+				:ARG1 (x13 / figure
+					:ARG1-of (x14 / keep-01
+						:ARG0 (x20 / organization
+							:name (n5 / name
+								:op1 "Service")
+							:null_edge (x17 / name
+								:op1 "Immigration"
+								:op2 "and"
+								:op3 "Naturalization")))))))
+	:ARG1 (x26 / count-04
+		:ARG0 (x24 / government-organization
+			:name (n1 / name
+				:op1 "Census"
+				:op2 "Bureau"))
+		:ARG1 (x31 / person
+			:ARG0-of (i / immigrate-01)
+			:mod (x30 / law
+				:polarity -))
+		:time (x35 / half
+			:location (x39 / state
+				:name (n2 / name
+					:op1 "California")))))
+
+# ::id 15
+# ::snt That meant one extra seat in the House for California and New York and one less seat for Indiana and Georgia
+(x2 / mean-01
+	:ARG0 (x1 / that)
+	:ARG1 (x14 / and
+		:op1 (x5 / seat-01
+			:quant 1)
+		:op2 (x11 / and
+			:op1 (x10 / state
+				:name (n / name
+					:op1 "California")
+				:location (x8 / government-organization
+					:name (n2 / name
+						:op1 "House")
+					:mod (x4 / extra)))
+			:op2 (x13 / country
+				:name (n1 / name
+					:op1 "York")
+				:null_edge (x12 / null_tag)))
+		:op2 (x17 / seat-01
+			:quant 1
+			:degree (x16 / less)
+			:ARG2 (x20 / and
+				:op1 (x19 / country
+					:name (n3 / name
+						:op1 "Indiana"))
+				:op2 (x21 / country
+					:name (n4 / name
+						:op1 "Georgia"))))))
+
+# ::id 16
+# ::snt " David Ray , spokesman for the Federation for American Immigration Reform end up diluting the vote when David Ray , spokesman for the Federation for American Immigration Reform start including illegals, " says Rep. Thomas Ridge (R., Pa. -RRB-, who leads the charge against the practice in the House
+(x35 / say-01
+	:name (x2 / name
+		:op1 "David"
+		:op2 "Ray"
+		:ARG0-of (x5 / have-org-role-91
+			:ARG2 (s / spokesman)
+			:ARG1 (x8 / organization
+				:name (n1 / name
+					:op1 "Federation"
+					:op2 "for"
+					:op3 "American"
+					:op4 "Immigration"
+					:op5 "Reform"
+					:op6 "end"
+					:op7 "up"
+					:op8 "diluting"
+					:op9 "the"
+					:op10 "vote"
+					:op11 "when"
+					:op12 "David"
+					:op13 "Ray"
+					:op14 ","
+					:op15 "spokesman"
+					:op16 "for"
+					:op17 "the"
+					:op18 "Federation"
+					:op19 "for"
+					:op20 "American"
+					:op21 "Immigration"
+					:op22 "Reform"
+					:op23 "start")
+				:null_edge (x22 / have-org-role-91
+					:ARG2 (s1 / spokesman)
+					:ARG1 (x25 / organization
+						:name (n3 / name
+							:op1 "Federation"
+							:op2 "for"
+							:op3 "American"
+							:op4 "Immigration"
+							:op5 "Reform")))
+				:ARG2-of (x31 / include-91
+					:ARG1 (x32 / illegal)))))
+	:ARG0 (x37 / newspaper
+		:name (n / name
+			:op1 "Thomas"
+			:op2 "Ridge")
+		:ARG0-of (x36 / rep.)
+		:ARG0-of (x40 / r.
+			:null_edge (x42 / country
+				:name (n2 / name
+					:op1 "Pa.")))
+		:ARG0-of (x46 / lead-03
+			:ARG1 (x48 / charge-05
+				:prep-against (x51 / practice
+					:ARG1 (x54 / government-organization
+						:name (n4 / name
+							:op1 "House")))))))
+
+# ::id 17
+# ::snt Organizations that represent Hispanics are particularly worried about the congressional campaign
+(x1 / organizations
+	:ARG0-of (x3 / represent-01
+		:ARG1 (x7 / worry-02
+			:ARG0 (x4 / newspaper
+				:name (n / name
+					:op1 "Hispanics"))
+			:mod (x6 / particular)
+			:ARG1 (x11 / campaign-01
+				:ARG1 (x10 / government-organization
+					:name (n1 / name
+						:op1 "congressional"))))))
+
+# ::id 18
+# ::snt illegals fear that any attempt to ascertain the legal status of respondents will exacerbate difficulties the Census Bureau already faces in accurately counting Hispanics and blacks
+(x2 / fear-01
+	:ARG0 (x1 / law)
+	:ARG1 (x14 / exacerbate-01
+		:ARG0 (x5 / attempt-01
+			:mod (x4 / any)
+			:ARG1 (x7 / ascertain
+				:ARG1 (x10 / status
+					:poss (x12 / person
+						:ARG0-of (r / respond-01))
+					:concession (x23 / count-01
+						:ARG1 (x15 / difficulty
+							:ARG1-of (x20 / face-01
+								:ARG0 (x17 / government-organization
+									:name (n1 / name
+										:op1 "Census"
+										:op2 "Bureau"))
+								:time (x19 / already)))
+						:manner (x22 / accurate)
+						:ARG1 (x25 / and
+							:op1 (x24 / newspaper
+								:name (n / name
+									:op1 "Hispanics"))
+							:op2 (x26 / person
+								:mod (b / black)))))))))
+
+# ::id 19
+# ::snt " As the legal status of respondents is, the Census Bureau has a tremendous challenge in trying to convince everybody that the census is confidential, " Mr. Vargas says
+(x31 / say-01
+	:ARG1 (x5 / status
+		:poss (x7 / person
+			:ARG0-of (r / respond-01)))
+	:ARG1 (x13 / have-03
+		:ARG0 (x11 / government-organization
+			:name (n1 / name
+				:op1 "Census"
+				:op2 "Bureau"))
+		:time (x18 / try-01
+			:ARG1 (x20 / convince-01
+				:ARG1 (x16 / challenge-01
+					:mod (x15 / tremendous))
+				:ARG1 (x21 / everybody)
+				:ARG2 (x26 / confidence
+					:ARG0 (x24 / census)))))
+	:ARG0 (x30 / person
+		:name (n / name
+			:op1 "Vargas")
+		:null_edge (x29 / null_tag)))
+
+# ::id 20
+# ::snt " If the Census Bureau attempts to ask people people who would be deported if our immigration laws were enforced immigration status, that's going to be even harder .
+(x30 / hard
+	:condition (x6 / attempt-01
+		:ARG0 (x4 / government-organization
+			:name (n / name
+				:op1 "Census"
+				:op2 "Bureau"))
+		:ARG1 (x8 / ask-02
+			:ARG1 (x14 / deport-01))
+		:ARG0 (x20 / enforce-01
+			:ARG1 (x18 / law
+				:mod (x17 / immigrate-01))
+			:ARG1 (x22 / status
+				:mod (x21 / immigrate-01))))
+	:domain (x24 / that)
+	:mod (x29 / even))
+
+# ::id 21
+# ::snt The Census Bureau agrees
+(x4 / agree-01
+	:ARG0 (x2 / government-organization
+		:name (n / name
+			:op1 "Census"
+			:op2 "Bureau")))
+
+# ::id 22
+# ::snt 
+(x3 / tell-01
+	:ARG0 (x2 / we)
+	:null_edge (x6 / put-01
+		:ARG1 (x9 / name-01
+			:ARG0 (x7 / newspaper
+				:name (n / name
+					:op1 "Arturo"
+					:op2 "Vargas"))
+			:ARG1 (x14 / form
+				:mod (x13 / census)))))
+
+# ::id 23
+# ::snt We wo n't report Arturo Vargas to the housing authority -LCB- if there are too many occupants -RCB-, " says Peter Bonpanne, an assistant director
+(x21 / say-01
+	:ARG1 (x4 / report-01
+		:ARG0 (x1 / we)
+		:name (x5 / name
+			:op1 "Arturo"
+			:op2 "Vargas")
+		:ARG2 (x10 / authority
+			:mod (x9 / house-01))
+		:ARG0 (x17 / person
+			:ARG0-of (o / occupy-01)
+			:quant (x16 / many
+				:degree (x15 / too))))
+	:ARG0 (x22 / person
+		:name (n / name
+			:op1 "Peter"
+			:op2 "Bonpanne")
+		:ARG0-of (x27 / have-org-role-91
+			:ARG2 (d / director)
+			:ARG0-of (x26 / assist-01))))
+
+# ::id 24
+# ::snt " If too many occupants see a lot of questions on there about somebody's legal status, that could hurt all kinds of people's participation .
+(x20 / possible
+	:domain (x21 / hurt-01
+		:condition (x6 / see-01
+			:ARG0 (x5 / person
+				:ARG0-of (o / occupy-01)
+				:quant (x4 / many
+					:degree (x3 / too)))
+			:ARG1 (x10 / question-01
+				:quant (x8 / lot))
+			:location (x12 / there
+				:topic (x17 / status
+					:poss (x14 / somebody))))
+		:ARG1 (x27 / participate-01
+			:mod (x23 / kind
+				:quant (x22 / all)))))
+
+# ::id 25
+# ::snt Although the 106 million census forms can be reprinted if Congress acts soon, wording a question so that illegal immigrants answer accurately is a challenge, Mr. Bonpanne says
+(x30 / say-01
+	:ARG1 (x7 / possible
+		:domain (x9 / reprint-01
+			:ARG1 (x6 / form
+				:mod (x5 / census))
+			:condition (x12 / act-01
+				:ARG0 (x11 / government-organization
+					:name (n1 / name
+						:op1 "Congress"))
+				:time (x13 / soon))))
+	:ARG1 (x26 / challenge-01
+		:domain (x15 / wording)
+		:ARG1 (x17 / question-01)
+		:ARG1 (x22 / answer-01
+			:ARG1 x15
+			:ARG1 (x21 / person
+				:ARG0-of (i / immigrate-01)
+				:mod (x20 / law
+					:polarity -))
+			:manner (x23 / accurate)))
+	:ARG0 (x29 / person
+		:name (n / name
+			:op1 "Bonpanne")
+		:null_edge (x28 / null_tag)))
+
+# ::id 26
+# ::snt The bureau already plans to ask one in six respondents if six respondents are citizens
+(x4 / plan-01
+	:ARG0 (x2 / bureau)
+	:time (x3 / already)
+	:ARG1 (x6 / ask-01
+		:ARG0 x2
+		:ARG1 (x10 / person
+			:ARG0-of (r / respond-01)
+			:quant 6)
+		:ARG2 (x15 / citizen
+			:domain (x13 / person
+				:ARG0-of (r1 / respond-01)
+				:quant 6))))
+
+# ::id 27
+# ::snt To satisfy congressional critics, The Census Bureau would have to ask everyone that question, and then ask the legal status of anyone who is n't a citizen
+(x17 / and
+	:op1 (x2 / satisfy-01
+		:ARG1 (x4 / person
+			:ARG0-of (c / criticize-01)
+			:mod (x3 / government-organization
+				:name (n1 / name
+					:op1 "congressional"))))
+	:op1 (x10 / have-03
+		:ARG0 (x7 / government-organization
+			:name (n / name
+				:op1 "Census"
+				:op2 "Bureau"))
+		:null_edge (x12 / ask-01
+			:ARG2 (x13 / everyone)
+			:ARG1 (x15 / question-01)))
+	:op2 (x19 / ask-02
+		:time (x18 / then)
+		:ARG1 (x22 / status
+			:mod (x24 / anyone
+				:ARG0-of (x29 / citizen)))))
+
+# ::id 28
+# ::snt Rep. Ridge dismisses the practical problems
+(x3 / dismiss-02
+	:ARG0 (x2 / person
+		:name (n / name
+			:op1 "Ridge")
+		:null_edge (x1 / rep.))
+	:ARG1 (x6 / problem
+		:mod (x5 / practical)))
+
+# ::id 29
+# ::snt " congressional critics 're spending billions on the census, and the only thing we get is a bunch of belly-aching about how difficult the only thing we get will be, " Rep. Thomas Ridge -LRB- R. , Pa. -RRB- , who leads the charge against the practice in the House complains
+(x11 / and
+	:op2 (x5 / spend-01
+		:ARG0 (x3 / person
+			:ARG0-of (c / criticize-01)
+			:mod (x2 / government-organization
+				:name (n / name
+					:op1 "congressional")))
+		:ARG1 (x9 / census)
+		:name (x35 / name
+			:op1 "Thomas"
+			:op2 "Ridge"
+			:ARG0-of (x34 / rep.)
+			:ARG0-of (x38 / r.
+				:null_edge (x40 / country
+					:name (n1 / name
+						:op1 "Pa.")))
+			:ARG0-of (x44 / lead-03
+				:ARG1 (x46 / charge-05
+					:prep-against (x49 / practice)))))
+	:op2 (x19 / bunch
+		:time-of (x16 / get-02
+			:mod (x13 / only)
+			:ARG0 (x15 / we))
+		:time-of (x29 / get-02
+			:ARG1 (x24 / difficult
+				:domain (x21 / belly-aching))
+			:mod (x26 / only)
+			:ARG0 (x28 / we))))
+
+# ::id 30
+# ::snt " The primary purpose of the census is to distribute political power ... not to gather demographic information .
+(x10 / distribute-01
+	:ARG0 (x7 / census
+		:mod (x3 / primary))
+	:ARG1 (x12 / power
+		:mod (x11 / politics))
+	:purpose (x16 / gather-01
+		:ARG1 (x18 / information
+			:topic (x17 / demography))))
+
+# ::id 31
+# ::snt The Senate, by a vote of 58-41, added a provision to a pending immigration bill to require the government to subtract illegal immigrants when it comes up with figures used for reapportionment
+(x2 / government-organization
+	:name (n / name
+		:op1 "Senate")
+	:instrument (x6 / vote-01
+		:null_edge (x8 / 58-41)
+		:ARG1 (x10 / add-01
+			:ARG1 (x12 / provision
+				:ARG2 (x17 / bill
+					:ARG1-of (x15 / pend-01)
+					:mod (x16 / immigrate-01))
+				:ARG0-of (x19 / require-01
+					:ARG1 (x23 / subtract
+						:ARG0 (x21 / government-organization
+							:ARG0-of (g / govern-01))
+						:ARG1 (x25 / person
+							:ARG0-of (i / immigrate-01)
+							:mod (x24 / law
+								:polarity -))
+						:time (x28 / come-01
+							:ARG2 (x31 / figure
+								:ARG1-of (x32 / use-01
+									:ARG2 (x34 / reapportionment))))))))))
+
+# ::id 32
+# ::snt Because California, Texas and other populous states that benefit from counting the illegal immigrants have such large delegations in the House, the House has always presented a bigger obstacle to the opponents of counting such immigrants
+(x28 / present-01
+	:null_edge (x1 / cause-01
+		:ARG0 (x5 / and
+			:op1 (x2 / state
+				:name (n1 / name
+					:op1 "California"))
+			:op2 (x4 / country
+				:name (n2 / name
+					:op1 "Texas"))
+			:op2 (x8 / state
+				:mod (x6 / other)
+				:mod (x7 / populate-01)
+				:ARG0-of (x10 / benefit-01
+					:null_edge (x12 / count-01
+						:ARG1 (x15 / person
+							:ARG0-of (i1 / immigrate-01)
+							:mod (x14 / law
+								:polarity -))))))
+		:ARG0 (x19 / delegation
+			:mod (x17 / such)
+			:mod (x18 / large)
+			:location (x22 / government-organization
+				:name (n3 / name
+					:op1 "House"))))
+	:ARG0 (x25 / government-organization
+		:name (n / name
+			:op1 "House"))
+	:time (x27 / always)
+	:ARG1 (x31 / obstacle
+		:mod (x30 / big)
+		:prep-from (x36 / count-01
+			:ARG1 (x34 / person
+				:ARG0-of (o / oppose-01))
+			:ARG1 (x38 / person
+				:ARG0-of (i / immigrate-01)
+				:mod (x37 / such)))))
+
+# ::id 33
+# ::snt The House did open the door to an amendment to a spending bill that would have barred census takers from " knowingly " counting any illegal immigrants, but the provision was quickly sidetracked on procedural grounds
+(x34 / sidetrack
+	:ARG1 (x2 / government-organization
+		:name (n / name
+			:op1 "House"))
+	:ARG1 (x4 / open-01
+		:ARG0 x2
+		:ARG1 (x6 / door)
+		:ARG3 (x9 / amend-01
+			:ARG1 (x13 / bill
+				:ARG1 (x12 / spend-01)
+				:ARG1-of (x17 / bar-01
+					:ARG1 (x19 / person
+						:ARG0-of (t / take-01)
+						:mod (x18 / census))
+					:null_edge (x24 / count-01
+						:manner (x22 / knowingly)
+						:ARG1 (x27 / person
+							:ARG0-of (i / immigrate-01)
+							:mod (x25 / any)
+							:mod (x26 / law
+								:polarity -)))))))
+	:ARG1 (x31 / provision)
+	:manner (x33 / quick)
+	:location (x37 / ground
+		:mod (x36 / procedural)))
+
+# ::id 34
+# ::snt All sides in the debate predict a lawsuit no matter what Congress does
+(x6 / predict-01
+	:ARG0 (x2 / side
+		:quant (x1 / all)
+		:ARG1-of (x5 / debate-01))
+	:ARG1 (x8 / lawsuit)
+	:concession (x10 / matter-01
+		:polarity -
+		:null_edge (x13 / do-02
+			:ARG0 (x12 / government-organization
+				:name (n / name
+					:op1 "Congress")))))
+
+# ::id 35
+# ::snt In 1980, a federal appeals court upheld a lower-court decision throwing out a suit that sought to bar the government from counting illegal immigrants
+(x8 / uphold-01
+	:time (x2 / date-entity
+		:year 1980)
+	:ARG0 (x7 / court
+		:ARG2-of (x6 / appeal-01
+			:mod (x5 / government-organization
+				:name (n / name
+					:op1 "federal"))))
+	:ARG1 (x11 / decide-01
+		:ARG0 (x10 / lower-court)
+		:ARG0-of (x12 / throw-01
+			:ARG0 x10
+			:ARG1 (x15 / suit-01
+				:ARG1-of (x17 / seek-01
+					:ARG1 (x19 / bar-01
+						:ARG1 (x21 / government-organization
+							:ARG0-of (g / govern-01))
+						:ARG2 (x23 / count-01
+							:ARG1 (x25 / person
+								:ARG0-of (i / immigrate-01)
+								:mod (x24 / law
+									:polarity -)))))))))
+
+# ::id 36
+# ::snt A similar suit was dismissed this year when a federal district judge in Pittsburgh ruled that the states that sued -- Pennsylvania, Kansas and Alabama -- could n't show the illegal immigrants had been harmed
+(x5 / dismiss-01
+	:ARG1 (x3 / suit-01
+		:ARG1-of (x2 / resemble-01
+			:op (s / similar)))
+	:time (x7 / year
+		:mod (x6 / this))
+	:time (x15 / rule-02
+		:ARG1 (x28 / possible
+			:domain (x30 / show-01
+				:ARG0 (x18 / state
+					:ARG1 (x25 / and
+						:op1 (x20 / sue-01)
+						:name (x22 / name
+							:op1 "Pennsylvania"
+							:op2 ","
+							:op3 "Kansas")
+						:op2 (x26 / country
+							:name (n1 / name
+								:op1 "Alabama"))))
+				:ARG1 (x36 / harm-01
+					:ARG1 (x33 / person
+						:ARG0-of (i / immigrate-01)
+						:mod (x32 / law
+							:polarity -)))))
+		:ARG1 (xap1 / person
+			:ARG0-of (xap0 / have-org-role-91
+				:ARG3 (x12 / judge-01
+					:mod (x11 / district
+						:mod (x10 / government-organization
+							:name (n2 / name
+								:op1 "federal")))
+					:location (x14 / country
+						:name (n / name
+							:op1 "Pittsburgh")))))))
+
+# ::id 37
+# ::snt The Constitution simply calls for apportioning the House on the basis of the " the whole number of persons " in each state
+(x4 / call-03
+	:ARG0 (x2 / law
+		:name (n / name
+			:op1 "Constitution"))
+	:mod (x3 / simple)
+	:ARG2 (x6 / apportion
+		:ARG1 (x8 / government-organization
+			:name (n1 / name
+				:op1 "House"))
+		:ARG1 (x17 / number
+			:mod (x16 / whole)
+			:quant-of (x19 / person
+				:location (x23 / state
+					:mod (x22 / each))))))
+
+# ::id 38
+# ::snt The Constitution originally called for counting " free persons " and indentured servants, and for counting slaves as three-fifths of a person
+(x4 / call-03
+	:ARG0 (x2 / law
+		:name (n / name
+			:op1 "Constitution"))
+	:mod (x3 / original)
+	:ARG1 (x15 / and
+		:purpose (x6 / count-01
+			:ARG1 (x11 / and
+				:op2 (x9 / person
+					:ARG1-of (x8 / free-41))
+				:op3 (x13 / person
+					:ARG0-of (s / serve-02)))
+			:ARG1 (x17 / count-01
+				:ARG1 (x18 / slave
+					:part-of (x23 / person))))))
+
+# ::id 39
+# ::snt That was changed with the passage of the 14th Amendment in 1868
+(x3 / change-01
+	:ARG1 (x1 / that)
+	:ARG2 (x6 / pass-01
+		:ARG1 (x10 / amend-01
+			:time (x12 / date-entity
+				:year 1868))))
+
+# ::id 40
+# ::snt Only " Indians not taxed " were excluded, but no one has fallen into that category since 1940
+(x10 / contrast-01
+	:ARG1 (x8 / exclude-01
+		:ARG1 (x3 / person
+			:mod (c / country
+				:name (n / name
+					:op1 "Indians"))
+			:mod (x1 / only)
+			:ARG1-of (x5 / tax-01)))
+	:ARG2 (x14 / fall-01
+		:ARG4 (x17 / category
+			:mod (x16 / that))
+		:time (x18 / since
+			:op1 (x19 / date-entity
+				:year 1940))))
+
+# ::id 41
+# ::snt Much of the argument in Congress turns on the use of the word " person " in references to the census
+(x7 / turn-02
+	:ARG0 (x1 / much
+		:ARG1 (x4 / argument
+			:location (x6 / government-organization
+				:name (n / name
+					:op1 "Congress"))))
+	:ARG2 (x10 / use-01
+		:ARG0 (x15 / person
+			:mod (x13 / word-01
+				:ARG1 (x18 / reference-01
+					:ARG1 (x21 / census))))))
+
+# ::id 42
+# ::snt Elsewhere in the Constitution, the framers used the word " citizen .
+(x10 / word-01
+	:mod (x1 / elsewhere)
+	:topic (x4 / law
+		:name (n / name
+			:op1 "Constitution"))
+	:ARG1 (x7 / framer)
+	:ARG1 (x12 / citizen))
+
+# ::id 43
+# ::snt the framers wrote, for instance, that only those who have been " seven years a citizen of the United States " can serve in the House
+(x3 / write-01
+	:ARG1 (x2 / framer)
+	:ARG1 (x24 / possible
+		:domain (x25 / serve-01
+			:ARG1 (x18 / citizen
+				:mod (x9 / only)
+				:poss (x21 / country
+					:name (n1 / name
+						:op1 "United"
+						:op2 "States"))
+				:frequency (xap0 / rate-entity-91
+					:op1 (x16 / temporal-quantity
+						:unit (y / year)
+						:quant 7)))
+			:ARG1 (x28 / government-organization
+				:name (n / name
+					:op1 "House")))))
+
+# ::id 44
+# ::snt The word " person " was repeated in the 14th Amendment, which was drafted after the Civil War
+(x7 / repeat-01
+	:ARG1 (x4 / person
+		:mod (x2 / word-01))
+	:location (x11 / amend-01
+		:ARG1-of (x15 / draft-01
+			:time (x16 / after
+				:op1 (x19 / war)))))
+
+# ::id 45
+# ::snt Those in Congress and at the Census Bureau who favor continuing the practice of counting all residents of the U.S. conclude that this language unambiguously resolves the debate
+(x21 / conclude-02
+	:ARG1 (x10 / favor-01
+		:ARG1 (x3 / company
+			:name (n / name
+				:op1 "Congress"
+				:op2 "and"
+				:op3 "at"
+				:op4 "the"
+				:op5 "Census"
+				:op6 "Bureau"))
+		:ARG1 (x11 / continue-01)
+		:ARG1 (x13 / practice-01
+			:ARG1 (x15 / count-01
+				:ARG1 (x17 / person
+					:ARG0-of (r / reside-01)
+					:quant (x16 / all)
+					:ARG1 (x20 / country
+						:name (n1 / name
+							:op1 "U.S."))))))
+	:ARG1 (x26 / resolve-01
+		:ARG1 (x24 / language
+			:mod (x23 / this))
+		:mod (x25 / unambiguously)
+		:ARG1 (x28 / debate-01)))
+
+# ::id 46
+# ::snt Their opponents say the drafters of the Constitution and the 14th Amendment never even considered the concept of an " illegal immigrant, " let alone contemplated the opponents of counting such immigrants current numbers
+(x3 / say-01
+	:ARG0 (x2 / person
+		:ARG0-of (o / oppose-01))
+	:ARG1 (x15 / consider-01
+		:ARG0 (x5 / drafter
+			:poss (x8 / law
+				:name (n / name
+					:op1 "Constitution")))
+		:mod (x14 / even)
+		:ARG1 (x17 / concept
+			:domain (x22 / immigrate-01
+				:manner (x21 / law
+					:polarity -
+					:ARG1-of (x27 / contemplate-01
+						:ARG1 (x29 / person
+							:ARG0-of (o1 / oppose-01)
+							:ARG1 (x31 / count-01
+								:ARG1 (x33 / person
+									:ARG0-of (i / immigrate-01)
+									:mod (x32 / such))
+								:ARG1 (x35 / number
+									:time (x34 / current))))))))))
+

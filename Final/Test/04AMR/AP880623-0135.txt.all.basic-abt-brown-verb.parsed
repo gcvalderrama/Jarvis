@@ -1,0 +1,464 @@
+# ::id 1
+# ::snt Lawmakers clashed Thursday over the question of counting illegal aliens in the 1990 Census, debating whether following the letter of the Constitution results in a system that is unfair to citizens
+(x2 / clash-01
+	:ARG0 (x1 / lawmaker)
+	:ARG1 (x6 / question-01
+		:prep-instead-of (x8 / count-01
+			:ARG1 (x10 / alien
+				:mod (x9 / law
+					:polarity -))
+			:location (x14 / census
+				:time (x13 / date-entity
+					:year 1990))))
+	:purpose (x16 / debate-01
+		:ARG1 (x18 / follow-02
+			:ARG1 (x20 / letter
+				:ARG1 (x24 / result-01
+					:ARG1 (x23 / law
+						:name (n / name
+							:op1 "Constitution"))))
+			:ARG2 (x27 / system
+				:ARG0-of (x30 / fair
+					:polarity -
+					:ARG2 (x32 / citizen)))))
+	:time (xap0 / date-entity
+		:weekday (x3 / thursday)))
+
+# ::id 2
+# ::snt The forum was a Census subcommittee hearing on bills which would require the Census Bureau to figure out whether people are in the country legally and, if not, to delete them from the counts used in reapportioning seats in the House of Representatives
+(x7 / hearing
+	:domain (x2 / forum)
+	:mod (x6 / subcommittee
+		:mod (x5 / census))
+	:ARG1-of (x9 / bill-01
+		:ARG0-of (x12 / require-01
+			:ARG1 (x26 / and
+				:op1 (x17 / figure-01
+					:ARG0 (x14 / government-organization
+						:name (n / name
+							:op1 "Census"
+							:op2 "Bureau"))
+					:location (x24 / country)
+					:ARG1 (xap0 / difficult
+						:domain (x32 / delete-01
+							:ARG0 (x36 / count-01
+								:ARG1-of (x37 / use-01
+									:ARG2 (x39 / reapportion
+										:ARG1 (x40 / seat
+											:location (x43 / have-org-role-91
+												:ARG1 (g / government-organization
+													:name (n1 / name
+														:op1 "House"
+														:op2 "of"
+														:op3 "Representatives"))))))))))))))
+
+# ::id 3
+# ::snt " This is a fairness issue, " said Rep. Thomas J. Ridge, R-Pa., who contended that states with large numbers of illegal aliens benefit unfairly when people large population totals give then extra seats in the House
+(x9 / say-01
+	:ARG1 (x6 / issue
+		:domain (x2 / this)
+		:topic (x5 / fair))
+	:ARG0 (x13 / person
+		:name (n / name
+			:op1 "Ridge")
+		:null_edge (x10 / rep.)
+		:null_edge (x11 / person
+			:name (n1 / name
+				:op1 "Thomas"))
+		:null_edge (x12 / null_tag)
+		:null_edge (x15 / country
+			:name (n2 / name
+				:op1 "R-Pa."))
+		:ARG0-of (x18 / contend-01
+			:ARG1 (x27 / benefit-01
+				:ARG0 (x20 / state)
+				:ARG1 (x23 / number
+					:mod (x22 / large)
+					:quant-of (x26 / alien
+						:mod (x25 / law
+							:polarity -)))
+				:manner (x28 / fair
+					:polarity -)
+				:condition (x34 / give-01
+					:name (x33 / name
+						:op1 "totals"
+						:mod (x31 / large)
+						:ARG1 (x32 / population))
+					:ARG1 (x37 / seat
+						:time (x36 / extra)
+						:location (x40 / government-organization
+							:name (n3 / name
+								:op1 "House"))))))))
+
+# ::id 4
+# ::snt Because there is a 435-seat limit, when one state gains a House member another must lose one
+(x1 / cause-01
+	:ARG0 (x17 / lose-06
+		:ARG0 (x6 / limit-01
+			:mod (x5 / 435-seat))
+		:ARG0 (x10 / state
+			:quant 1)
+		:ARG0 (x13 / have-org-role-91
+			:ARG1 (g / government-organization
+				:name (n / name
+					:op1 "House")))
+		:ARG0 (x15 / another)
+		:null_edge 1))
+
+# ::id 5
+# ::snt Ridge cited the 1980 census, which estimated the number of illegal aliens at 2 million
+(x2 / cite-01
+	:ARG0 (x1 / person
+		:name (n / name
+			:op1 "Ridge"))
+	:ARG1 (x5 / census
+		:time (x4 / date-entity
+			:year 1980)
+		:ARG0-of (x8 / estimate-01
+			:ARG2 (x13 / alien
+				:quant (x10 / number)
+				:mod (x12 / law
+					:polarity -)))))
+
+# ::id 6
+# ::snt The result, Thomas J. Ridge said, was that Georgia and Indiana lost House seats to New York and California
+(x2 / result-01
+	:ARG2 (x14 / lose-02
+		:ARG0 (x12 / and
+			:op2 (x7 / say-01
+				:ARG0 (x6 / person
+					:name (n5 / name
+						:op1 "Ridge")
+					:null_edge (x4 / person
+						:name (n6 / name
+							:op1 "Thomas"))
+					:null_edge (x5 / null_tag)))
+			:op1 (x11 / country
+				:name (n / name
+					:op1 "Georgia"))
+			:op2 (x13 / country
+				:name (n1 / name
+					:op1 "Indiana")))
+		:ARG1 (x16 / seat
+			:ARG0-of (x15 / have-org-role-91
+				:ARG1 (g / government-organization
+					:name (n2 / name
+						:op1 "House"))))
+		:ARG1 (x20 / and
+			:op1 (x19 / country
+				:name (n3 / name
+					:op1 "York")
+				:null_edge (x18 / null_tag))
+			:op2 (x21 / state
+				:name (n4 / name
+					:op1 "California")))))
+
+# ::id 7
+# ::snt Subcommittee Chairman Mervyn M. Dymally, D-Calif., however, said Mervyn M. Dymally is unsure whether the bills backed by Ridge and others are constitutional
+(x11 / say-01
+	:ARG0 (x5 / person
+		:name (n / name
+			:op1 "Dymally")
+		:null_edge (x1 / subcommittee)
+		:null_edge (x2 / have-org-role-91
+			:ARG2 (c / chairman)
+			:ARG1 (x3 / person
+				:name (n3 / name
+					:op1 "Mervyn")))
+		:null_edge (x4 / null_tag)
+		:null_edge (x7 / country
+			:name (n1 / name
+				:op1 "D-Calif.")))
+	:ARG1 (x16 / unsure
+		:ARG0 (x12 / person
+			:name (n2 / name
+				:op1 "Mervyn"
+				:op2 "M."
+				:op3 "Dymally"))
+		:ARG1 (x26 / constitution
+			:domain (x19 / bill
+				:ARG1-of (x20 / back-01
+					:ARG0 (x23 / and
+						:op1 (x22 / person
+							:name (n4 / name
+								:op1 "Ridge"))
+						:op2 (x24 / other)))))))
+
+# ::id 8
+# ::snt The U.S. Constitution requires the Census Bureau to cound all the " persons " in the country every 10 years for purposes of reapportionment
+(x4 / require-01
+	:ARG0 (x3 / law
+		:name (n / name
+			:op1 "Constitution")
+		:mod (x2 / country
+			:name (n1 / name
+				:op1 "U.S.")))
+	:ARG1 (x9 / cound
+		:ARG0 (x6 / government-organization
+			:name (n2 / name
+				:op1 "Census"
+				:op2 "Bureau"))
+		:ARG1 (x13 / person
+			:quant (x10 / all)
+			:location (x17 / country))
+		:duration (x20 / temporal-quantity
+			:unit (y / year)
+			:null_edge (x19 / null_tag)
+			:time (x24 / reapportionment))))
+
+# ::id 9
+# ::snt The U.S. Constitution does n't specify citizens
+(x6 / specify-01
+	:ARG0 (x3 / law
+		:name (n / name
+			:op1 "Constitution")
+		:mod (x2 / country
+			:name (n1 / name
+				:op1 "U.S.")))
+	:ARG1 (x7 / citizen))
+
+# ::id 10
+# ::snt " Mervyn M. Dymally am disturbed by the implication that undocumented residents of the United States are not ` persons, " ' Dymally said
+(x25 / say-01
+	:ARG1 (x6 / disturb-01
+		:ARG1 (x2 / name
+			:op1 "Mervyn"
+			:op2 "M."
+			:op3 "Dymally")
+		:ARG0 (x9 / thing
+			:ARG1-of (i / imply-01)
+			:ARG1 x2
+			:ARG0 (x20 / person
+				:ARG0 (x12 / person
+					:ARG0-of (r / reside-01)
+					:ARG1-of (x11 / undocument)
+					:null_edge (x15 / country
+						:name (n1 / name
+							:op1 "United"
+							:op2 "States"))))))
+	:ARG0 (x24 / person
+		:name (n / name
+			:op1 "Dymally")))
+
+# ::id 11
+# ::snt Noting that at times in the past blacks and Indians have been excluded from participation in government, Mervyn M. Dymally commented : " Mervyn M. Dymally do not want to return to a time when some human beings are considered less than equal in the eyes of the law .
+(x22 / comment-01
+	:ARG0 (x19 / person
+		:name (n / name
+			:op1 "Mervyn"
+			:op2 "M."
+			:op3 "Dymally")
+		:ARG0-of (x1 / note-01
+			:ARG1 (x13 / exclude-01
+				:time (x7 / past)
+				:ARG1 (x9 / and
+					:op1 (x8 / person
+						:mod (b / black))
+					:op2 (x10 / person
+						:mod (c / country
+							:name (n3 / name
+								:op1 "Indians"))))
+				:source (x15 / participate-01
+					:ARG1 (x17 / government-organization
+						:ARG0-of (g / govern-01))))))
+	:ARG1 (x30 / want-01
+		:ARG0 (x27 / person
+			:name (n1 / name
+				:op1 "Dymally")
+			:null_edge (x25 / person
+				:name (n2 / name
+					:op1 "Mervyn"))
+			:null_edge (x26 / null_tag))
+		:ARG1 (x32 / return-01
+			:ARG0 x27
+			:null_edge (x41 / consider-01
+				:ARG1 (x39 / being
+					:quant (x37 / some)
+					:mod (x38 / human))
+				:ARG1 (x42 / less
+					:compared-to (x44 / equal-01))
+				:location (x47 / eye
+					:part-of (x50 / law))))))
+
+# ::id 12
+# ::snt " Every census since the Constitution was adopted has counted all residents of the states, including both legal and illegal aliens, " added Rep. Don Edwards, D-Calif
+(x25 / add-01
+	:ARG1 (x10 / count-04
+		:ARG0 (x3 / census
+			:mod (x2 / every)
+			:ARG1-of (x8 / adopt-01
+				:time (x4 / since)
+				:ARG1 (x6 / law
+					:name (n1 / name
+						:op1 "Constitution"))))
+		:ARG1 (x12 / person
+			:ARG0-of (r / reside-01)
+			:quant (x11 / all)
+			:ARG1 (x15 / state))
+		:ARG2-of (x17 / include-91
+			:ARG1 (x22 / alien
+				:ARG1 (x20 / and
+					:op2 (x21 / law
+						:polarity -)))))
+	:ARG0 (x27 / newspaper
+		:name (n / name
+			:op1 "Don"
+			:op2 "Edwards")
+		:ARG0-of (x26 / rep.)
+		:ARG0-of (x30 / d-calif)))
+
+# ::id 13
+# ::snt " It was never the intent of the framers to include only citizens for apportionment purposes .
+(x6 / intend-01
+	:domain (x2 / it)
+	:ARG1 (x9 / framer)
+	:ARG1 (x11 / include-01
+		:ARG1 (x13 / citizen
+			:mod (x12 / only))))
+
+# ::id 14
+# ::snt And Rep. Albert G. Bustamente, D-Texas, termed the worry over counting aliens " hysterical, " pointing out that the movement of Americans into western and southern states has had a much larger effect on representation than the presence of aliens
+(x1 / and
+	:op2 (x9 / term-01
+		:ARG0 (x3 / person
+			:name (n / name
+				:op1 "Albert"
+				:op2 "G."
+				:op3 "Bustamente")
+			:ARG0-of (x2 / rep.
+				:location (x7 / country
+					:name (n1 / name
+						:op1 "D-Texas"))))
+		:ARG1 (x11 / worry-01)
+		:ARG2 (x19 / point-01
+			:ARG1 (x13 / count-01
+				:ARG1 (x14 / alien)
+				:ARG2 (x16 / hysterical))
+			:ARG0 (x32 / person
+				:ARG0-of (h / have-org-role-91)
+				:ARG0 (x23 / movement
+					:ARG1 (x25 / person
+						:mod (c / country
+							:name (n2 / name
+								:op1 "Americans")))
+					:mod (x26 / into
+						:op1 (x30 / state
+							:ARG1 (x28 / and
+								:op1 (x27 / world-region
+									:name (n3 / name
+										:op1 "western"))
+								:op2 (x29 / southern)))))
+				:ARG1 (x36 / effect-01
+					:mod (x35 / large
+						:degree (xap0 / more
+							:degree (x34 / much)))
+					:ARG1 (x38 / represent-01
+						:ARG0 (x41 / presence
+							:poss (x43 / alien))))))))
+
+# ::id 15
+# ::snt The Census Bureau also opposes the bills, contending that the effort to determine who is an illegal alien could delay and complicate the count and that people would be unlikely to tell the truth anyway
+(x5 / oppose-01
+	:ARG0 (x2 / government-organization
+		:name (n / name
+			:op1 "Census"
+			:op2 "Bureau"))
+	:mod (x4 / also)
+	:ARG1 (x7 / bill
+		:ARG0-of (x9 / contend-01
+			:ARG1 (x20 / possible
+				:domain (x21 / delay-01
+					:ARG0 (x12 / effort
+						:purpose (x14 / determine-01
+							:ARG1 (x19 / alien
+								:mod (x18 / law
+									:polarity -))))
+					:ARG1 (x31 / likely
+						:polarity -
+						:domain (x33 / tell-01
+							:ARG1 (x35 / truth)
+							:mod (x36 / anyway)))))
+			:ARG1 (x22 / and)
+			:ARG1 (x26 / and
+				:op2 (x23 / complicate-01
+					:ARG0 x12
+					:ARG1 (x25 / count-01))))))
+
+# ::id 16
+# ::snt But Reps. Tom Petri, R-Wis
+(x1 / contrast-01
+	:op1 (x3 / person
+		:name (n / name
+			:op1 "Tom"
+			:op2 "Petri"
+			:op3 ","
+			:op4 "R-Wis")
+		:ARG0-of (x2 / reps.)))
+
+# ::id 17
+# ::snt and William F. Goodling, R-Pa., asserted that counting illegal aliens violates citizens ' basic right to equal representation by giving greater voice in Congress to states where the aliens live
+(x1 / and
+	:op1 (x8 / assert-02
+		:ARG0 (x2 / person
+			:name (n / name
+				:op1 "William"
+				:op2 "F."
+				:op3 "Goodling")
+			:location (x6 / country
+				:name (n1 / name
+					:op1 "R-Pa.")))
+		:ARG1 (x13 / violate-01
+			:ARG1 (x10 / count-01
+				:ARG1 (x12 / alien
+					:mod (x11 / law
+						:polarity -)))
+			:ARG1 (x17 / right
+				:ARG0 (x14 / citizen)
+				:mod (x16 / basic)
+				:ARG2 (x20 / represent-01
+					:ARG1 x14
+					:ARG1-of (x19 / equal-01)))
+			:manner (x22 / give-01
+				:ARG1 (x24 / voice
+					:mod (x23 / great)
+					:location (x26 / government-organization
+						:name (n2 / name
+							:op1 "Congress")))
+				:ARG2 (x28 / state
+					:ARG0-of (x32 / live-01
+						:ARG0 (x31 / alien)))))))
+
+# ::id 18
+# ::snt And Rep. Tim Valentine, D-N.C
+(x1 / and
+	:op2 (x3 / name
+		:op1 "Tim"
+		:op2 "Valentine"
+		:ARG0-of (x2 / rep.)
+		:location (x6 / country
+			:name (n / name
+				:op1 "D-N"))))
+
+# ::id 19
+# ::snt , contended that counting aliens " in effect, is granting representation in Congress to individuals who have entered this country by breaking the laws of the United States .
+(x2 / contend-01
+	:ARG1 (x11 / grant-01
+		:ARG1 (x4 / count-01
+			:ARG1 (x5 / alien)
+			:ARG2 (x8 / effect))
+		:ARG1 (x12 / represent-01
+			:ARG1 (x14 / government-organization
+				:name (n / name
+					:op1 "Congress"))
+			:ARG1 (x16 / individual
+				:ARG1-of (x19 / enter-01
+					:ARG1 (x21 / country
+						:mod (x20 / this))
+					:ARG0 (x23 / break-01
+						:ARG1 (x25 / law
+							:poss (x28 / country
+								:name (n1 / name
+									:op1 "United"
+									:op2 "States")))))))
+		:ARG2 x16))
+

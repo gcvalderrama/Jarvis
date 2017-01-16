@@ -1,0 +1,653 @@
+# ::id 1
+# ::snt A United Airlines Boeing 737-200 jetliner carrying 25 passengers and crew members crashed into a dry lake area near Colorado Springs, Colo., municipal airport, apparently killing all aboard
+(x13 / crash-01
+	:ARG1 (x6 / jetliner
+		:null_edge (x2 / null_tag)
+		:null_edge (x3 / null_tag)
+		:poss (x4 / company
+			:name (n / name
+				:op1 "Boeing"))
+		:mod (x5 / 737-200)
+		:ARG0-of (x7 / carry-01
+			:ARG1 (x10 / and
+				:op1 (x9 / passenger
+					:quant 25)
+				:op1 (xap0 / person
+					:ARG0-of (x12 / have-org-role-91
+						:ARG2 (m / member)
+						:ARG1 (x11 / crew))))))
+	:ARG1 (x18 / area
+		:ARG1-of (x16 / dry-02)
+		:location-of (x17 / lake)
+		:location (x19 / near
+			:op1 (x21 / country
+				:name (n1 / name
+					:op1 "Springs")
+				:null_edge (x20 / country
+					:name (n2 / name
+						:op1 "Colorado"))
+				:null_edge (x23 / country
+					:name (n3 / name
+						:op1 "Colo."))))
+		:mod (x26 / airport
+			:mod (x25 / municipal)))
+	:ARG1 (x29 / kill-01
+		:manner (x28 / apparent)
+		:location (x31 / aboard
+			:op1 (x30 / all))))
+
+# ::id 2
+# ::snt As National Transportation Safety Board investigators hurried to the scene, there were n't any early indications on why the jet might have crashed
+(x17 / indicate-01
+	:time (x7 / hurry
+		:ARG0 (x6 / person
+			:ARG0-of (i / investigate-01)
+			:null_edge (x2 / null_tag)
+			:ARG1 (x3 / government-organization
+				:name (n / name
+					:op1 "Transportation"))
+			:ARG1 (x4 / organization
+				:name (n1 / name
+					:op1 "Safety"))
+			:ARG1 (x5 / board))
+		:ARG1 (x10 / scene))
+	:mod (x15 / any)
+	:time (x16 / early)
+	:ARG1 (x24 / crash-01
+		:ARG1 (x21 / jet)))
+
+# ::id 3
+# ::snt One focus of the inquiry, however, is expected to center on whether there were unstable or gusty winds at the time of the crash
+(x10 / expect-01
+	:ARG1 (x18 / or
+		:op1 (x2 / focus-01
+			:quant 1
+			:ARG0 (x5 / inquire-01))
+		:op1 (x17 / stable
+			:polarity -)
+		:op2 (x19 / gusty)
+		:op2 (x20 / wind
+			:location (x26 / crash-01))))
+
+# ::id 4
+# ::snt The plane hit the ground several miles south of the airport at about 11:40 a.m. EST yesterday, UAL Corp.'s United Airlines said
+(x24 / say-01
+	:ARG1 (x3 / hit-01
+		:ARG0 (x2 / plane)
+		:ARG1 (x5 / ground
+			:location (x8 / south
+				:op1 (x7 / distance-quantity
+					:unit (m / mile)
+					:quant (x6 / several))
+				:op1 (x11 / airport)))
+		:time (x16 / date-entity
+			:null_edge (x14 / include-91))
+		:time (x17 / yesterday))
+	:ARG0 (x23 / organization
+		:name (n / name
+			:op1 "Airlines")
+		:null_edge (x19 / government-organization
+			:name (n1 / name
+				:op1 "UAL"
+				:op2 "Corp."))
+		:null_edge (x22 / null_tag)))
+
+# ::id 5
+# ::snt The plane was traveling from Denver
+(x4 / travel-01
+	:ARG0 (x2 / plane)
+	:null_edge (x6 / city
+		:name (n / name
+			:op1 "Denver")))
+
+# ::id 6
+# ::snt Local news reporters quoted witnesses as saying that the plane appeared to nosedive into the earth
+(x4 / quote-01
+	:ARG0 (x3 / person
+		:ARG0-of (r / report-01)
+		:mod (x2 / news
+			:mod (x1 / local)))
+	:ARG1 (x5 / person
+		:ARG0-of (w / witness-01))
+	:ARG1-of (xap0 / cause-01
+		:op2 (x11 / appear-02
+			:ARG1 (x10 / plane)
+			:ARG1 (x13 / nosedive
+				:ARG2 (x16 / earth)))))
+
+# ::id 7
+# ::snt The crash comes at a particularly sensitive time for the travel industry
+(x3 / come-01
+	:ARG1 (x2 / crash-01)
+	:prep-in (x12 / industry
+		:mod (x7 / sensitive
+			:mod (x6 / particular))
+		:mod (x11 / travel-01)))
+
+# ::id 8
+# ::snt Although the average wind speed has always been difficult to measure the effect of crashes on travel, this accident comes just as people were starting to get over fears of terrorism related to the Persian Gulf war
+(xap0 / multi-sentence
+	:ARG2 (x9 / difficult
+		:domain (x5 / speed
+			:mod (x4 / wind
+				:mod (x3 / average-01)))
+		:time (x7 / always)
+		:domain (x11 / measure-01
+			:ARG1 (x13 / effect-01
+				:ARG1 (x15 / crash-01)
+				:ARG1 (x17 / travel-01))))
+	:ARG1 (x20 / accident
+		:mod (x19 / this))
+	:ARG0 (x26 / start-01
+		:time (x22 / just)
+		:ARG1 (x28 / get-01
+			:ARG2 (x30 / fear-01
+				:ARG1 (x32 / terrorism
+					:ARG1-of (x33 / relate-01
+						:ARG2 (x38 / war
+							:ARG0 (x36 / country
+								:name (n / name
+									:op1 "Persian")))))))))
+
+# ::id 9
+# ::snt Airlines have been slashing people flight schedules and laying off employees because of the downturn
+(x8 / and
+	:op1 (x4 / slash-02
+		:ARG0 (x1 / airline)
+		:ARG1 (x7 / schedule-01
+			:mod (x6 / fly-01
+				:op (f / flight))))
+	:op2 (x9 / lay-02
+		:ARG0 x1
+		:ARG1 (x11 / person
+			:ARG1-of (e / employ-01))
+		:ARG1-of (x12 / cause-01
+			:ARG0 (x15 / downturn))))
+
+# ::id 10
+# ::snt 
+(x5 / go-01
+	:ARG0 (x3 / agency
+		:quant (x1 / some)
+		:mod (x2 / travel-01))
+	:ARG4 (x8 / workweek))
+
+# ::id 11
+# ::snt Most of the travel sector has resorted to sharp discounting to spark travel
+(x2 / include-91
+	:ARG2 (x5 / sector
+		:mod (x4 / travel-01
+			:ARG1 (x7 / resort-01
+				:ARG0 (x1 / most)
+				:ARG1 (x10 / discount
+					:manner (x9 / sharp))
+				:ARG1 (x12 / spark-01
+					:ARG0 x1
+					:ARG1 (x13 / travel-01))))))
+
+# ::id 12
+# ::snt This, in fact, may have been one reason why the load on the United flight was light
+(x6 / possible
+	:domain (x1 / this)
+	:prep-in (x4 / fact)
+	:domain 1
+	:domain (x13 / load-01
+		:ARG1 (x17 / fly-01
+			:op (f / flight)
+			:null_edge (x16 / null_tag))))
+
+# ::id 13
+# ::snt The jet, which can hold at least 100 passengers, carried 20 passengers and a crew of two pilots and three flight attendants
+(x12 / carry-03
+	:ARG1 (x15 / and
+		:op1 (x2 / jet
+			:ARG0-of (x6 / hold-04
+				:mod (x5 / possible)
+				:ARG1 (x10 / passenger
+					:quant 100)))
+		:op1 (x14 / passenger
+			:quant 20)
+		:op2 (x17 / crew
+			:consist-of (x21 / and
+				:op1 (x20 / have-org-role-91
+					:ARG2 (p / person
+						:ARG0-of (p1 / pilot-01))
+					:quant 2)
+				:op2 (x24 / attendant
+					:quant 3
+					:mod (x23 / fly-01
+						:op (f / flight)))))))
+
+# ::id 14
+# ::snt Yesterday's marks the third crash of a United jet in the past three years
+(x3 / mark-01
+	:ARG0 (x1 / yesterday)
+	:ARG1 (x6 / crash-01
+		:ARG1 (x10 / jet
+			:null_edge (x9 / null_tag))
+		:duration (x15 / temporal-quantity
+			:unit (y / year)
+			:mod (x13 / past)
+			:quant 3)))
+
+# ::id 15
+# ::snt In July 1988, a United DC-10 crashed in Sioux City, Iowa, after an engine broke apart in flight, killing 112 people
+(x8 / crash-01
+	:time (x2 / date-entity
+		:year 1988)
+	:ARG0 (x7 / dc-10
+		:null_edge (x6 / null_tag))
+	:location (x11 / city
+		:null_edge (x10 / country
+			:name (n / name
+				:op1 "Sioux")))
+	:time (x15 / after
+		:op1 (x18 / break-08
+			:ARG1 (x17 / engine)
+			:location (x21 / fly-01
+				:op (f / flight))
+			:ARG1 (x23 / kill-01
+				:ARG1 (x24 / 112)))))
+
+# ::id 16
+# ::snt 
+(x12 / burst-01
+	:time (x2 / date-entity
+		:year 1989)
+	:ARG1 (x7 / door
+		:mod (x6 / cargo)
+		:duration (x11 / 747
+			:null_edge (x9 / null_tag)))
+	:ARG3 (x13 / open-01)
+	:location (x14 / near
+		:op1 (x15 / name
+			:op1 "Hawaii"))
+	:ARG1 (x17 / tear-01
+		:ARG1 (x20 / hole
+			:mod (x19 / gaping))))
+
+# ::id 17
+# ::snt Nine passengers died
+(x3 / die-01
+	:ARG1 (x2 / passenger
+		:null_edge 9))
+
+# ::id 18
+# ::snt About two hours before yesterday's crash, the National Weather Service in Colorado Springs issued two hours before yesterday's crash first high wind warning for the area since January, according to James Hall, a meteorological technician observer in Colorado Springs
+(x16 / issue-01
+	:null_edge (x4 / null_tag
+		:op1 (x3 / temporal-quantity
+			:unit (h / hour)
+			:time (x1 / date-entity))
+		:op1 (x7 / crash-01))
+	:ARG0 (x10 / government-organization
+		:name (n / name
+			:op1 "National"
+			:op2 "Weather"
+			:op3 "Service")
+		:location (x15 / country
+			:name (n1 / name
+				:op1 "Springs")
+			:null_edge (x14 / country
+				:name (n2 / name
+					:op1 "Colorado"))))
+	:time (x17 / date-entity)
+	:null_edge (x19 / null_tag
+		:op1 (x22 / crash-01))
+	:ARG1 (x26 / warn-01
+		:mod (x25 / wind
+			:mod (x24 / high))
+		:time (x30 / since
+			:op1 (x31 / date-entity)))
+	:null_edge (x35 / name
+		:op1 "James"
+		:op2 "Hall"
+		:ARG0-of (x41 / observe-01
+			:mod (x39 / meteorological)
+			:ARG1 (x40 / technician)
+			:location (x44 / country
+				:name (n3 / name
+					:op1 "Springs")
+				:null_edge (x43 / country
+					:name (n4 / name
+						:op1 "Colorado"))))))
+
+# ::id 19
+# ::snt Moments after the crash, the average wind speed was 23 miles per hour, gusting to 32 mph, Mr. Hall said
+(x23 / say-01
+	:ARG1 (x14 / temporal-quantity
+		:unit (h / hour)
+		:ARG1-of (x9 / speed
+			:time (x2 / after
+				:op1 (x4 / crash-01))
+			:mod (x8 / wind
+				:mod (x7 / average-01)))
+		:quant 23
+		:ARG1-of (x16 / gust
+			:ARG2 (x19 / mph
+				:quant 32)))
+	:ARG0 (x22 / person
+		:name (n / name
+			:op1 "Hall")
+		:null_edge (x21 / null_tag)))
+
+# ::id 20
+# ::snt " When the average wind speed's gusty like that, the conditions are quite choppy
+(x16 / choppy
+	:domain (x13 / condition
+		:condition (x8 / gusty
+			:domain (x6 / speed
+				:mod (x5 / wind
+					:mod (x4 / average-01)))
+			:domain (x10 / that)))
+	:degree (x15 / quite))
+
+# ::id 21
+# ::snt the average wind speed would be like a turbulent river current
+(x4 / speed
+	:ARG1 (x3 / wind
+		:mod (x2 / average-01))
+	:time (x11 / current
+		:mod (x9 / turbulent)
+		:ARG2 (x10 / river)))
+
+# ::id 22
+# ::snt the average wind speed's essentially like water hitting rocks and splashing and foaming over .
+(x4 / speed
+	:mod (x3 / wind
+		:mod (x2 / average-01))
+	:mod (x6 / essentially)
+	:ARG1 (x11 / and
+		:op1 (x9 / hit-02
+			:ARG0 (x8 / water)
+			:ARG1 (x13 / and
+				:op1 (x12 / splashing)
+				:op2 (x14 / foam)))
+		:op2 (x10 / rock)))
+
+# ::id 23
+# ::snt A Federal Aviation Administration official said, " There were some reports of gusting winds but whether or not that had any impact or whether there was any kind of mechanical problem, A Federal Aviation Administration official ca n't speculate .
+(x16 / contrast-01
+	:ARG1 (x6 / say-01
+		:ARG0 (x12 / report-01
+			:mod (x11 / some)
+			:ARG1 (x15 / wind
+				:ARG1-of (x14 / gust)))
+		:ARG0 (xap0 / person
+			:ARG0-of (x5 / have-org-role-91
+				:ARG2 (o / official)
+				:null_edge (x2 / null_tag)
+				:ARG1 (x4 / government-organization
+					:name (n / name
+						:op1 "Administration")
+					:mod (x3 / organization
+						:name (n2 / name
+							:op1 "Aviation"))))))
+	:ARG2 (x41 / speculate-01
+		:ARG1 (x18 / or
+			:op1 (x24 / or
+				:op1 (x21 / have-03
+					:ARG1 (x32 / problem
+						:mod (x29 / kind
+							:mod (x28 / any))
+						:mod (x31 / mechanics)))
+				:op2 (x23 / impact-01
+					:mod (x22 / any))))
+		:ARG0 (xap1 / person
+			:ARG0-of (x38 / have-org-role-91
+				:ARG2 (o1 / official)
+				:null_edge (x35 / null_tag)
+				:ARG1 (x37 / government-organization
+					:name (n1 / name
+						:op1 "Administration")
+					:mod (x36 / organization
+						:name (n3 / name
+							:op1 "Aviation")))))))
+
+# ::id 24
+# ::snt Another FAA official said that although it is too early to pinpoint the cause, " wind shear would be a major area of investigation .
+(x4 / say-01
+	:ARG1 (x23 / area
+		:purpose (x12 / pinpoint
+			:degree (x9 / too)
+			:ARG1 (x14 / cause))
+		:domain (x18 / shear
+			:mod (x17 / wind))
+		:mod (x22 / major)
+		:mod (x25 / investigate-01))
+	:ARG0 (xap0 / person
+		:mod (x1 / another)
+		:ARG0-of (x3 / have-org-role-91
+			:ARG2 (o / official)
+			:ARG1 (x2 / organization
+				:name (n / name
+					:op1 "FAA")))))
+
+# ::id 25
+# ::snt If preliminary reports that there was wind shear in the area are true, then " that would indicate there was some instability in the atmosphere, " Another FAA official added
+(x32 / add-01
+	:ARG1 (x13 / true
+		:domain (x19 / indicate-01
+			:ARG0 (x23 / instability
+				:mod (x22 / some)
+				:location (x26 / atmosphere)))
+		:domain (xap0 / have-frequency-91
+			:ARG1 (x3 / report-01
+				:mod (x2 / preliminary)
+				:ARG1 (x8 / shear
+					:mod (x7 / wind)
+					:location (x11 / area)))))
+	:ARG0 (xap1 / person
+		:mod (x29 / another)
+		:ARG0-of (x31 / have-org-role-91
+			:ARG2 (o / official)
+			:ARG1 (x30 / organization
+				:name (n / name
+					:op1 "FAA")))))
+
+# ::id 26
+# ::snt Wind shear is a sudden, violent shift in wind direction
+(x8 / shift-01
+	:domain (x2 / shear
+		:mod (x1 / wind))
+	:manner (x5 / sudden)
+	:mod (x7 / violent)
+	:ARG2 (x11 / direction
+		:mod (x10 / wind)))
+
+# ::id 27
+# ::snt a sudden , violent shift in wind direction can smash an airplane into the ground
+(x9 / possible
+	:domain (x10 / smash
+		:ARG0 (x5 / shift-01
+			:time (x2 / sudden)
+			:mod (x4 / violent)
+			:direction (x8 / direction
+				:mod (x7 / wind)))
+		:ARG1 (x12 / airplane)
+		:ARG4 (x15 / ground)))
+
+# ::id 28
+# ::snt However, Another FAA official said that wind shear is most dangerous when an aircraft is flying at a very low altitude, either shortly before landing or right after takeoff
+(x6 / say-01
+	:ARG1 (x12 / dangerous
+		:domain (x9 / shear
+			:mod (x8 / wind))
+		:degree (x11 / most)
+		:domain (x17 / fly-01
+			:ARG1 (x15 / aircraft)
+			:location (x22 / altitude
+				:mod (x21 / low
+					:degree (x20 / very))
+				:time (x26 / before
+					:mod (x25 / short)
+					:op1 (x27 / land-01))
+				:time (x30 / after
+					:mod (x29 / right)
+					:op1 (x31 / take-08)))))
+	:ARG0 (xap0 / person
+		:mod (x3 / another)
+		:ARG0-of (x5 / have-org-role-91
+			:ARG2 (o / official)
+			:ARG1 (x4 / organization
+				:name (n / name
+					:op1 "FAA")))))
+
+# ::id 29
+# ::snt In Sunday's crash, the jetliner was a few miles from the airport and so should have been at a somewhat higher altitude
+(x17 / recommend-01
+	:condition (x7 / jetliner
+		:location (x4 / crash-01
+			:time (xap0 / date-entity
+				:weekday (x2 / sunday))))
+	:ARG1 (x11 / distance-quantity
+		:unit (m / mile)
+		:domain x7
+		:null_edge (x10 / few)
+		:null_edge (x14 / airport))
+	:condition (x24 / altitude
+		:mod (x23 / high
+			:degree (x22 / somewhat))))
+
+# ::id 30
+# ::snt The last major U.S. wind shear accident occurred in Dallas in 1985, when a Delta Air Lines jet crashed on approach
+(x7 / accident
+	:mod (x2 / last)
+	:mod (x3 / major)
+	:mod (x5 / wind
+		:mod (x4 / country
+			:name (n1 / name
+				:op1 "U.S.")))
+	:mod (x6 / shear)
+	:location (x10 / country
+		:name (n / name
+			:op1 "Dallas"))
+	:time (x12 / date-entity
+		:year 1985
+		:time-of (x20 / crash-01
+			:ARG1 (x19 / jet
+				:poss (x16 / organization
+					:name (n2 / name
+						:op1 "Delta"))
+				:null_edge (x17 / null_tag)
+				:null_edge (x18 / null_tag))
+			:ARG2 (x22 / approach-02))))
+
+# ::id 31
+# ::snt Since then, the FAA and the industry have revamped pilot training on wind shear and have devoted considerable resources to dealing with the hazard
+(x16 / and
+	:op1 (x10 / revamp
+		:time (x1 / since
+			:op1 (x2 / then))
+		:ARG0 (x6 / and
+			:op1 (x5 / organization
+				:name (n / name
+					:op1 "FAA"))
+			:op2 (x8 / industry))
+		:ARG1 (x12 / train-01
+			:ARG1-of (x11 / pilot-01)
+			:ARG2 (x15 / shear
+				:mod (x14 / wind))))
+	:op2 (x18 / devote
+		:ARG1 (x20 / resource
+			:mod (x19 / considerable))
+		:ARG2 (x22 / deal-01
+			:ARG1 (x25 / hazard))))
+
+# ::id 32
+# ::snt No buildings or structures on the ground were damaged by the crash, according to the El Paso County Sheriffs Department
+(x9 / damage-01
+	:ARG1 (x3 / or
+		:op1 (x2 / building
+			:polarity -
+			:location (x7 / ground))
+		:op2 (x4 / structure
+			:polarity -))
+	:ARG0 (x12 / crash-01)
+	:ARG0 (x17 / government-organization
+		:name (n / name
+			:op1 "El"
+			:op2 "Paso"
+			:op3 "County"
+			:op4 "Sheriffs"
+			:op5 "Department")))
+
+# ::id 33
+# ::snt An eight-year-old girl who was playing nearby, was treated for a head injury and released
+(x15 / and
+	:op1 (x10 / treat-01
+		:ARG1 (x3 / girl
+			:mod (x2 / event
+				:name (n / name
+					:op1 "eight-year-old"))
+			:ARG0-of (x6 / play-01
+				:manner (x7 / nearby)))
+		:ARG2 (x14 / injure-01
+			:mod (x13 / head-01)))
+	:op2 (x16 / release-01
+		:ARG1 x3))
+
+# ::id 34
+# ::snt The jet involved in the crash is almost nine years old
+(x11 / old
+	:domain (x2 / jet
+		:ARG1-of (x3 / involve-01
+			:ARG2 (x6 / crash-01)))
+	:null_edge (x8 / almost
+		:op1 (x10 / temporal-quantity
+			:unit (y / year))))
+
+# ::id 35
+# ::snt The jet involved in the crash was delivered in May 1982 to now-defunct Frontier Airlines
+(x8 / deliver-01
+	:ARG1 (x2 / jet
+		:ARG1-of (x3 / involve-01
+			:ARG2 (x6 / crash-01)))
+	:time (x10 / date-entity
+		:year 1982)
+	:ARG2 (x14 / government-organization
+		:name (n / name
+			:op1 "Frontier"
+			:op2 "Airlines")
+		:mod (x13 / now-defunct)))
+
+# ::id 36
+# ::snt United acquired the plane in June 1986
+(x2 / acquire-01
+	:ARG0 "United"
+	:ARG1 (x4 / plane)
+	:time (x6 / date-entity
+		:year 1986))
+
+# ::id 37
+# ::snt The plane was operated by an engine manufactured by United Technologies Corp.'s Pratt & Whitney division
+(x4 / operate-01
+	:ARG1 (x2 / plane)
+	:ARG0 (x7 / engine
+		:ARG1-of (x8 / manufacture-01
+			:ARG0 (x10 / country
+				:name (n / name
+					:op1 "United"
+					:op2 "Technologies"
+					:op3 "Corp."
+					:op4 "'s"
+					:op5 "Pratt"
+					:op6 "&"))
+			:ARG1 (x17 / division
+				:mod (x16 / organization
+					:name (n1 / name
+						:op1 "Whitney"))))))
+
+# ::id 38
+# ::snt -- Brett Pulley in Chicago contributed to this article
+(x6 / contribute-01
+	:ARG0 (x2 / newspaper
+		:name (n / name
+			:op1 "Brett"
+			:op2 "Pulley")
+		:location (x5 / country
+			:name (n1 / name
+				:op1 "Chicago")))
+	:ARG2 (x9 / article
+		:mod (x8 / this)))
+

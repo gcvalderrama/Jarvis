@@ -1,0 +1,182 @@
+# ::id 1
+# ::snt Elizabeth Taylor will remain in the hospital six more weeks due to complications in her fifth week of treatment for pneumonia, doctors said
+(x24 / say-01
+	:ARG1 (x4 / remain-01
+		:ARG1 (x1 / newspaper
+			:name (n / name
+				:op1 "Elizabeth"
+				:op2 "Taylor"))
+		:location (x7 / hospital)
+		:duration (x10 / temporal-quantity
+			:unit (w / week)
+			:quant 6
+			:mod (x9 / more))
+		:purpose (x19 / treat-03
+			:ARG1 x1)
+		:ARG3 (x21 / pneumonia))
+	:ARG1 (x13 / complication)
+	:ARG0 (x23 / doctor))
+
+# ::id 2
+# ::snt The recovery of Miss Taylor, near death two weeks ago with viral pneumonia, was dealt a setback by bacterial pneumonia and a yeast infection, her doctors said Friday
+(x30 / say-01
+	:ARG1 (x17 / deal-01
+		:ARG1 (x2 / recover-01
+			:poss (x5 / person
+				:name (n / name
+					:op1 "Taylor")
+				:null_edge (x4 / miss))
+			:location (x7 / near
+				:op1 (x8 / die-01
+					:ARG1 (x14 / pneumonia
+						:mod (x13 / viral))
+					:time (xap0 / before
+						:quant (x10 / temporal-quantity
+							:unit (w / week)
+							:null_edge (x9 / null_tag))))))
+		:ARG1 (x19 / setback)
+		:ARG0 (x23 / and
+			:op1 (x22 / pneumonia
+				:mod (x21 / bacterial))
+			:op2 (x26 / infect-01
+				:mod (x25 / yeast))))
+	:ARG0 (x29 / doctor)
+	:time (xap1 / date-entity
+		:weekday (x31 / friday)))
+
+# ::id 3
+# ::snt " This secondary bacterial pneumonia often follows viral pneumonia
+(x7 / follow-01
+	:ARG1 (x5 / pneumonia
+		:mod (x2 / this)
+		:mod (x3 / secondary)
+		:mod (x4 / bacterial))
+	:frequency (x6 / often)
+	:ARG2 (x9 / pneumonia
+		:mod (x8 / viral)))
+
+# ::id 4
+# ::snt Elizabeth Taylor condition is listed as stable and Elizabeth Taylor is improving significantly, " her doctors said in a statement released by St. John's Hospital and Health Center
+(x21 / state-01
+	:ARG1 (x8 / and
+		:op1 (x5 / list-01
+			:ARG1 (x3 / condition
+				:mod (x1 / person
+					:name (n2 / name
+						:op1 "Elizabeth"))
+				:mod (x2 / person
+					:name (n3 / name
+						:op1 "Taylor")))
+			:ARG2 (x7 / stable))
+		:op2 (x12 / improve-01
+			:ARG0 (x9 / newspaper
+				:name (n1 / name
+					:op1 "Elizabeth"
+					:op2 "Taylor"))
+			:degree (x13 / significant)))
+	:ARG0 (x17 / doctor)
+	:ARG1-of (x22 / release-01
+		:ARG0 (x24 / government-organization
+			:name (n / name
+				:op1 "St."
+				:op2 "John"
+				:op3 "'s"
+				:op4 "Hospital"
+				:op5 "and"
+				:op6 "Health"
+				:op7 "Center"))))
+
+# ::id 5
+# ::snt Earlier this week Miss Taylor's New York publicist, Chen Sam, had said the 58-year-old actress was improving and would be released from the hospital this week to recuperate at home
+(x15 / say-01
+	:time (x1 / early
+		:op1 (x3 / week
+			:mod (x2 / this)))
+	:ARG0 (x9 / publicist
+		:name (x4 / name
+			:op1 "Miss"
+			:op2 "Taylor")
+		:mod (x8 / country
+			:name (n / name
+				:op1 "York"))
+		:name (x11 / name
+			:op1 "Chen"
+			:op2 "Sam"))
+	:ARG1 (x21 / and
+		:op1 (x20 / improve-01
+			:ARG0 (x18 / actress
+				:mod (x17 / person
+					:name (n1 / name
+						:op1 "58-year-old"))))
+		:op2 (x24 / release-01
+			:ARG2 (x27 / hospital)
+			:time (x29 / week
+				:mod (x28 / this))
+			:ARG1 (x31 / recuperate
+				:location (x33 / home)))))
+
+# ::id 6
+# ::snt During a news conference last month, Miss Taylor's doctors revealed Elizabeth Taylor was near death on April 22
+(x12 / reveal-01
+	:time (x4 / conference
+		:mod (x3 / news)
+		:time (x6 / month
+			:mod (x5 / last))
+		:poss (x13 / newspaper
+			:name (n / name
+				:op1 "Elizabeth"
+				:op2 "Taylor")
+			:location (x16 / near
+				:op1 (x17 / die-01))
+			:time (x19 / date-entity)))
+	:ARG0 (x11 / doctor
+		:name (x8 / name
+			:op1 "Miss"
+			:op2 "Taylor"))
+	:ARG0 x13)
+
+# ::id 7
+# ::snt The Oscar-winning star of " Who's Afraid of Virginia Woolf ?
+(x3 / star
+	:mod (x2 / organization
+		:name (n / name
+			:op1 "Oscar-winning"))
+	:ARG0 (x6 / organization
+		:name (n1 / name
+			:op1 "Who"
+			:op2 "'s"
+			:op3 "Afraid")
+		:poss (x11 / woolf
+			:mod (x10 / country
+				:name (n2 / name
+					:op1 "Virginia")))))
+
+# ::id 8
+# ::snt and " Butterfield 8 " entered Daniel Freeman Marina Hospital on April 9 with a sinus infection, but her condition deteriorated and she was moved to St. John's for treatment of viral pneumonia
+(x1 / and
+	:op2 (x19 / contrast-01
+		:ARG1 (x6 / enter-01
+			:ARG0 (x3 / butterfield
+				:quant 8)
+			:ARG1 (x7 / person
+				:name (n / name
+					:op1 "Daniel"
+					:op2 "Freeman"
+					:op3 "Marina"
+					:op4 "Hospital"))
+			:time (x12 / date-entity)
+			:ARG0 (x23 / and
+				:op2 (x21 / condition)
+				:op1 (x22 / deteriorated)
+				:op2 (x26 / move-05
+					:ARG1 x21
+					:ARG2 (x29 / person
+						:name (n1 / name
+							:op1 "John")
+						:null_edge (x28 / null_tag))
+					:purpose (x32 / treat-03
+						:ARG1 (x35 / pneumonia
+							:mod (x34 / viral))))))
+		:ARG1 (x17 / infect-01
+			:mod (x16 / sinus))))
+

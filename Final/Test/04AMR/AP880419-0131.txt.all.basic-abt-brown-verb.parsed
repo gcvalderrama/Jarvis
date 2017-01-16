@@ -1,0 +1,794 @@
+# ::id 1
+# ::snt A tornado blasted through this North Florida town before dawn today, destroying several homes and a college library, blowing off rooftops, flipping cars and leaving four people dead and 15 injured, officials said
+(x37 / say-01
+	:ARG1 (x27 / and
+		:op1 (x3 / blast-05
+			:ARG0 (x2 / tornado)
+			:ARG2 (x8 / town
+				:mod (x5 / this)
+				:mod (x7 / country
+					:name (n / name
+						:op1 "Florida")))
+			:time (x9 / before
+				:op1 (x10 / dawn))
+			:time (x11 / today)
+			:ARG2 (x13 / destroy-01
+				:ARG1 (x16 / and
+					:op1 (x15 / home
+						:quant (x14 / several))
+					:op2 (x19 / library
+						:ARG0-of (x18 / college))
+					:op2 (x21 / blow-01
+						:path (x22 / off
+							:op1 (x23 / rooftop))))
+				:ARG0-of (x28 / leave-02
+					:ARG1 (x32 / and
+						:op1 (x31 / die-01
+							:op (d / dead)
+							:ARG2 4)
+						:op2 (x34 / injure-01
+							:quant 15)))))
+		:op2 (x25 / flip-01
+			:ARG1 (x26 / car)))
+	:ARG0 (xap0 / person
+		:ARG0-of (x36 / have-org-role-91
+			:ARG2 (o / official))))
+
+# ::id 2
+# ::snt The tornado touched down at 4:30 a.m. just west of Madison, about 50 miles east of Tallahassee, and cut a 12-mile swath of destruction, authorities said
+(x29 / say-01
+	:ARG1 (x20 / and
+		:op1 (x3 / touch-01
+			:ARG0 (x2 / tornado)
+			:ARG0 (xap0 / relative-position
+				:direction (x9 / west
+					:mod (x8 / just))
+				:ARG1 (x11 / country
+					:name (n / name
+						:op1 "Madison")
+					:null_edge (x16 / east
+						:quant (x15 / distance-quantity
+							:unit (m / mile)
+							:null_edge (x13 / about
+								:null_edge 50
+								:op1 (x18 / country
+									:name (n1 / name
+										:op1 "Tallahassee"))))))))
+		:op2 (x21 / cut-02
+			:ARG1 (x24 / swath
+				:mod (x23 / 12-mile)
+				:ARG2-of (x26 / destroy-01))))
+	:ARG0 (x28 / authority))
+
+# ::id 3
+# ::snt " There was this huge roar and then Marie Prince , a Madison County sheriff's dispatcher heard a tree crack out there and thought authorities were all gone, " said Marie Prince, a Madison County sheriff's dispatcher
+(x32 / say-01
+	:ARG1 (x7 / and
+		:op2 (x6 / roar
+			:mod (x4 / this)
+			:mod (x5 / huge))
+		:op2 (x18 / hear-01
+			:time (x8 / then)
+			:ARG0 (x9 / newspaper
+				:name (n2 / name
+					:op1 "Marie"
+					:op2 "Prince")
+				:ARG0-of (x17 / dispatcher
+					:ARG1 (x15 / sheriff
+						:mod (x13 / country
+							:name (n4 / name
+								:op1 "Madison")))))
+			:ARG1 (x21 / crack-06
+				:mod (x20 / tree))
+			:location (x22 / out
+				:op1 (x23 / there))
+			:ARG1 (x24 / and
+				:op2 (x25 / think-01
+					:ARG1 (x29 / go-01
+						:ARG0 (x26 / authority))))))
+	:ARG0 (x34 / person
+		:name (n / name
+			:op1 "Prince")
+		:null_edge (x33 / person
+			:name (n1 / name
+				:op1 "Marie"))
+		:null_edge (x41 / dispatcher
+			:ARG1 (x39 / sheriff
+				:mod (x37 / country
+					:name (n3 / name
+						:op1 "Madison"))))))
+
+# ::id 4
+# ::snt The tornado passed only four blocks from her office
+(x3 / pass-01
+	:ARG0 (x2 / tornado)
+	:ARG1 (x6 / block
+		:mod (x4 / only)
+		:quant 4
+		:location (x9 / office)))
+
+# ::id 5
+# ::snt Four people were killed north of town, said Sheriff Joe Peavy
+(x9 / say-01
+	:ARG1 (x4 / kill-01
+		:ARG1 4
+		:time (x7 / town))
+	:ARG0 (x11 / newspaper
+		:name (n / name
+			:op1 "Joe"
+			:op2 "Peavy")
+		:ARG0-of (x10 / sheriff)))
+
+# ::id 6
+# ::snt Fifteen people were injured, but none of the injuries was critical, according to Madison County Memorial Hospital administrator Jeannie Baker
+(x6 / contrast-01
+	:ARG1 (x4 / injure-01
+		:ARG1 (x1 / fifteen)
+		:null_edge (x21 / name
+			:op1 "Jeannie"
+			:op2 "Baker"
+			:null_edge (x17 / null_tag
+				:mod (x16 / organization
+					:name (n / name
+						:op1 "Madison")))
+			:ARG0-of (x20 / person
+				:ARG0-of (a / administrate-01)
+				:ARG1 (x19 / organization
+					:name (n1 / name
+						:op1 "Hospital")
+					:mod (x18 / organization
+						:name (n2 / name
+							:op1 "Memorial"))))))
+	:ARG2 (x12 / critique-01
+		:ARG1 (x10 / injure-01
+			:quant (x7 / none))))
+
+# ::id 7
+# ::snt A house-to-house search found no more bodies, but a man and a baby had to be freed from separate homes where a man and a baby were trapped, Peavy said
+(x32 / say-01
+	:ARG1 (x4 / find-01
+		:ARG0 (x3 / search-01
+			:mod (x2 / house-to-house))
+		:ARG1 (x7 / body
+			:quant (x6 / more
+				:polarity -))
+		:ARG1 (x12 / and
+			:op1 (x11 / man)
+			:op2 (x14 / baby)
+			:op2 (x18 / free-01
+				:ARG2 (x21 / home
+					:mod (x20 / separate)
+					:topic (x25 / and
+						:op1 (x24 / man)
+						:op2 (x27 / baby))))))
+	:ARG1 (x9 / contrast-01)
+	:ARG0 (x31 / person
+		:name (n / name
+			:op1 "Peavy")))
+
+# ::id 8
+# ::snt Two of the deaths occurred in mobile homes blown apart by the tornado, and four other houses were seriously damaged as well, said Madison County Civil Defense Director Bernard Wilson
+(x25 / say-01
+	:ARG1 (x15 / and
+		:op1 (x5 / occur-01
+			:ARG4 (x8 / home
+				:mod (x7 / mobile)
+				:ARG1-of (x9 / blow-01
+					:ARG0 (x13 / tornado))))
+		:op2 (x21 / damage-01
+			:ARG1 (x18 / house
+				:quant 4
+				:mod (x17 / other))
+			:manner (x20 / serious)))
+	:ARG0 (x31 / newspaper
+		:name (n / name
+			:op1 "Bernard"
+			:op2 "Wilson")
+		:ARG0-of (x26 / organization
+			:name (n1 / name
+				:op1 "Madison"))
+		:null_edge (x27 / null_tag)
+		:null_edge (x28 / null_tag)
+		:null_edge (x29 / null_tag)
+		:ARG0-of (x30 / have-org-role-91
+			:ARG2 (d / director))))
+
+# ::id 9
+# ::snt " It did n't leave any of it
+(x5 / leave-01
+	:ARG0 (x2 / it)
+	:ARG1 (x6 / any))
+
+# ::id 10
+# ::snt Not even a dish
+(x4 / dish
+	:mod (x2 / even))
+
+# ::id 11
+# ::snt Marie Prince , a Madison County sheriff's dispatcher 'd never know there was a trailer here, " said Dorothy Butler, sister of one of the victims
+(x20 / say-01
+	:ARG1 (x12 / know-01
+		:ARG0 (x1 / newspaper
+			:name (n / name
+				:op1 "Marie"
+				:op2 "Prince")
+			:ARG0-of (x9 / dispatcher
+				:ARG1 (x7 / sheriff
+					:mod (x5 / country
+						:name (n2 / name
+							:op1 "Madison")))))
+		:ARG1 (x16 / trailer
+			:location (x17 / here)))
+	:ARG0 (x24 / sister
+		:poss (x21 / newspaper
+			:name (n1 / name
+				:op1 "Dorothy"
+				:op2 "Butler"))
+		:ARG1-of (x27 / include-91
+			:ARG2 (x29 / victim))))
+
+# ::id 12
+# ::snt Rescue units from adjoining counties were helping out, along with state law enforcement and forestry officials
+(xap1 / opine-01
+	:ARG1 (x7 / help-01
+		:ARG0 (x2 / unit
+			:mod (x1 / rescue-01)
+			:source (x5 / county
+				:mod (x4 / adjoin-01)))
+		:location (x10 / along
+			:op1 (x15 / and
+				:op1 (x14 / enforce-01
+					:ARG1 (x12 / state)
+					:ARG1 (x13 / law))
+				:op1 (xap0 / person
+					:ARG0-of (x17 / have-org-role-91
+						:ARG2 (o / official)
+						:ARG1 (x16 / forestry)))))))
+
+# ::id 13
+# ::snt State prisoners were also on State prisoners way to help with the cleanup, Peavy said
+(x16 / say-01
+	:ARG1 (x2 / prisoner
+		:mod (x1 / state)
+		:mod (x4 / also)
+		:mod (x8 / way
+			:mod (x6 / state))
+		:ARG0-of (x10 / help-01
+			:ARG1 (x13 / cleanup)))
+	:ARG0 (x15 / person
+		:name (n / name
+			:op1 "Peavy")))
+
+# ::id 14
+# ::snt Sheriff Joe Peavy had no estimate of the damage
+(x4 / have-03
+	:ARG0 (x2 / newspaper
+		:name (n / name
+			:op1 "Joe"
+			:op2 "Peavy")
+		:ARG0-of (x1 / sheriff))
+	:ARG1 (x6 / estimate-01
+		:polarity -
+		:ARG1 (x9 / damage-01)))
+
+# ::id 15
+# ::snt The tornado was part of a storm system that struck across the Southeast with high winds, lightning and hail
+(x8 / system
+	:ARG0 (x2 / tornado)
+	:mod (x7 / storm)
+	:ARG0-of (x10 / strike-01
+		:location (x11 / across
+			:null_edge (x13 / null_tag))
+		:ARG1 (x19 / and
+			:op1 (x16 / wind
+				:mod (x15 / high))
+			:op2 (x18 / lightning)
+			:op2 (x20 / hail-02))))
+
+# ::id 16
+# ::snt Trees, roofs and mobile homes were damaged, and at least six other injuries were reported
+(x10 / and
+	:op1 (x8 / damage-01
+		:ARG1 (x4 / and
+			:op1 (x1 / trees)
+			:op2 (x3 / roof)
+			:op2 (x6 / home
+				:mod (x5 / mobile)))
+		:ARG1 (x15 / injure-01
+			:quant 6
+			:mod (x14 / other)))
+	:op2 (x17 / report-01))
+
+# ::id 17
+# ::snt Madison, a town of about 3,500 people, is the county seat of Madison County, a thinly populated tobacco growing area of piney woods, rolling hills and swamps on the border with Georgia
+(x23 / area
+	:location (x16 / county
+		:part (x13 / seat-01
+			:ARG2 (x6 / about
+				:op1 (x4 / town
+					:domain (x1 / person
+						:name (n2 / name
+							:op1 "Madison")))
+				:op1 (x7 / 3,500))
+			:mod (x12 / county))
+		:mod (x15 / country
+			:name (n / name
+				:op1 "Madison")))
+	:mod (x20 / populate-01
+		:degree (x19 / thinly))
+	:location-of (x21 / tobacco)
+	:ARG1-of (x22 / grow-01)
+	:location (xap1 / location
+		:ARG0 (x30 / and
+			:op1 (x26 / wood
+				:mod (x25 / piney))
+			:op2 (x29 / hill
+				:ARG1-of (x28 / roll-01))
+			:op2 (x31 / swamp))
+		:ARG0-of (xap0 / be-located-at-91
+			:ARG1 (x34 / border-01
+				:ARG1 (x36 / country
+					:name (n1 / name
+						:op1 "Georgia"))))))
+
+# ::id 18
+# ::snt The twister's destructive path started in front of a shopping center and then proceeded straight into North Florida Junior College, where The twister's destructive path " totaled the new library and took the roof off the auditorium, " Peavy said
+(x44 / say-01
+	:ARG1 (x13 / and
+		:op1 (x6 / start-01
+			:ARG0 (x5 / path
+				:poss (x2 / twister)
+				:mod (x4 / destroy-01))
+			:location (x12 / center
+				:mod (x11 / shop-01)))
+		:op2 (x15 / proceed-01
+			:time (x14 / then)
+			:manner (x16 / straight)
+			:ARG2 (x21 / college
+				:null_edge (x19 / country
+					:name (n1 / name
+						:op1 "Florida"))
+				:location-of (x34 / and
+					:op1 (x30 / company
+						:name (n2 / name
+							:op1 "totaled")
+						:ARG1 (x28 / path
+							:poss (x25 / twister)
+							:mod (x27 / destroy-01))
+						:ARG1 (x33 / library
+							:mod (x32 / new)))
+					:op2 (x35 / take-01
+						:ARG1 (x37 / roof)
+						:destination (x38 / off
+							:op1 (x40 / auditorium)))))))
+	:ARG0 (x43 / person
+		:name (n / name
+			:op1 "Peavy")))
+
+# ::id 19
+# ::snt The twister blew away several homes, blew the roof off a nearby church, overturned cars and knocked down trees, Peavy said
+(x24 / say-01
+	:ARG1 (x18 / and
+		:op1 (x3 / blow-01
+			:ARG0 (x2 / twister)
+			:ARG1 (x6 / home
+				:quant (x5 / several)))
+		:op2 (x8 / blow-01
+			:ARG0 x2
+			:ARG1 (x10 / roof)
+			:ARG2 (x14 / church
+				:mod (x13 / nearby)))
+		:op2 (x16 / overturn-01
+			:ARG1 (x17 / car))
+		:op2 (x19 / knock-02
+			:ARG0 x2
+			:ARG1 (x21 / tree)))
+	:ARG0 (x23 / person
+		:name (n / name
+			:op1 "Peavy")))
+
+# ::id 20
+# ::snt As far as Sheriff Joe Peavy office knew, all the damage was from one tornado, Peavy said
+(x19 / say-01
+	:ARG1 (x12 / damage-01
+		:ARG1-of (x8 / know-01
+			:ARG0 (x7 / office
+				:poss (x4 / sheriff)
+				:poss (x5 / person
+					:name (n1 / name
+						:op1 "Joe"))))
+		:quant (x10 / all)
+		:ARG0 (x16 / tornado
+			:quant 1))
+	:ARG0 (x18 / person
+		:name (n / name
+			:op1 "Peavy")))
+
+# ::id 21
+# ::snt Sheriff Joe Peavy said the tornado's sweep through town lasted under 30 minutes
+(x4 / say-01
+	:ARG0 (x2 / newspaper
+		:name (n / name
+			:op1 "Joe"
+			:op2 "Peavy")
+		:ARG0-of (x1 / sheriff))
+	:ARG1 (x11 / last-01
+		:ARG1 (x8 / sweep-01
+			:ARG0 (x6 / tornado)
+			:location (x10 / town))
+		:ARG1 (x14 / temporal-quantity
+			:unit (m / minute)
+			:quant 30)))
+
+# ::id 22
+# ::snt Electric company workers were restoring power throughout the area
+(x5 / restore-01
+	:ARG0 (x3 / person
+		:ARG0-of (w / work-01)
+		:mod (x2 / company
+			:mod (x1 / electric)))
+	:ARG1 (x6 / power)
+	:path (x7 / throughout
+		:op1 (x9 / area)))
+
+# ::id 23
+# ::snt Two tornadoes struck near the towns of Malone and Bascom, about 100 miles to the west of Madison, said Jackson County emergency management director John Mader
+(x21 / say-01
+	:ARG1 (x3 / person
+		:name (n / name
+			:op1 "struck")
+		:ARG0 (x2 / tornado
+			:quant 2)
+		:location (x4 / near
+			:op1 (x6 / town))
+		:ARG1 (x9 / and
+			:op1 (x8 / person
+				:name (n2 / name
+					:op1 "Malone"))
+			:op2 (x10 / person
+				:name (n3 / name
+					:op1 "Bascom")
+				:null_edge (x14 / distance-quantity
+					:unit (m / mile)
+					:null_edge (x12 / about
+						:null_edge 100
+						:op1 (xap0 / relative-position
+							:direction (x17 / world-region
+								:name (n5 / name
+									:op1 "west"))
+							:ARG1 (x19 / country
+								:name (n6 / name
+									:op1 "Madison"))))))))
+	:ARG0 (x27 / person
+		:name (n1 / name
+			:op1 "John"
+			:op2 "Mader")
+		:ARG0-of (x24 / emergency
+			:ARG1 (x22 / person
+				:name (n4 / name
+					:op1 "Jackson")))
+		:ARG0-of (x26 / have-org-role-91
+			:ARG2 (d / director)
+			:ARG1 (x25 / manage-01))))
+
+# ::id 24
+# ::snt Three homes and a trailer were destroyed and five homes seriously damaged, Bascom said, and two people were slightly injured
+(x8 / and
+	:op1 (x7 / destroy-01
+		:ARG1 (x3 / and
+			:op1 (x2 / home
+				:quant 3)
+			:op2 (x5 / trailer)))
+	:op1 (x12 / damage-01
+		:ARG0 (x10 / home
+			:quant 5)
+		:manner (x11 / serious))
+	:op2 (x22 / injure-01
+		:location (x17 / and
+			:op2 (x15 / say-01
+				:ARG0 (x14 / person
+					:name (n / name
+						:op1 "Bascom"))))
+		:quant 2
+		:ARG2 (x21 / slight)))
+
+# ::id 25
+# ::snt Many county roads were blocked by fallen trees, Bascom said, and officials were surveying the area by helicopter
+(x13 / and
+	:op1 (x5 / block-01
+		:ARG1 (x3 / road
+			:quant (x1 / many)
+			:mod (x2 / county))
+		:ARG0 (x8 / tree
+			:ARG1-of (x7 / fall-01)))
+	:op2 (x11 / say-01
+		:ARG0 (x10 / person
+			:name (n / name
+				:op1 "Bascom")))
+	:op2 (x16 / survey-01
+		:ARG1 (x18 / area)
+		:ARG0 (x20 / helicopter)
+		:ARG0 (xap0 / person
+			:ARG0-of (x14 / have-org-role-91
+				:ARG2 (o / official)))))
+
+# ::id 26
+# ::snt The tornadoes were spawned by a belt of thunderstorms being pushed by a cold front
+(x4 / spawn
+	:ARG1 (x2 / tornado)
+	:ARG0 (x7 / belt
+		:mod (x9 / thunderstorm
+			:ARG1-of (x11 / push-01
+				:ARG0 (x15 / front
+					:mod (x14 / cold))))))
+
+# ::id 27
+# ::snt Hail the size of golf balls and damaging winds hit Louisiana, Mississippi, Alabama and Georgia
+(x1 / hail-02
+	:ARG1 (x3 / size
+		:ARG1 (x7 / and
+			:op1 (x6 / ball
+				:mod (x5 / golf-01)
+				:ARG1-of (x10 / hit-01
+					:ARG1 (x13 / country
+						:name (n / name
+							:op1 "Mississippi"))
+					:ARG0 (x16 / and
+						:op1 (x11 / country
+							:name (n1 / name
+								:op1 "Louisiana"))
+						:op2 (x15 / country
+							:name (n2 / name
+								:op1 "Alabama"))
+						:op2 (x17 / country
+							:name (n3 / name
+								:op1 "Georgia")))))
+			:op2 (x9 / wind
+				:ARG1-of (x8 / damage-01)))))
+
+# ::id 28
+# ::snt More than one inch of rain fell in one hour this morning in Waycross, Ga., 70 miles northeast of here, and wind gusts of 40 mph were reported in Valdosta, according to the National Weather Service
+(x24 / and
+	:op1 (x7 / fall-01
+		:ARG1 (x4 / distance-quantity
+			:unit (i / inch)
+			:quant (x1 / more-than)
+			:consist-of (x6 / rain))
+		:ARG4 (x10 / temporal-quantity
+			:unit (h / hour)
+			:quant 1)
+		:time (x12 / morning
+			:mod (x11 / this))
+		:location (x14 / country
+			:name (n / name
+				:op1 "Waycross")
+			:location (x16 / country
+				:name (n3 / name
+					:op1 "Ga.")))
+		:ARG2 (x19 / distance-quantity
+			:unit (m / mile))
+		:null_edge (x20 / northeast)
+		:location (x22 / here))
+	:op2 (x31 / report-01
+		:ARG1 (x26 / gust
+			:mod (x25 / wind)
+			:poss (x29 / mph
+				:quant 40))
+		:location (x33 / country
+			:name (n1 / name
+				:op1 "Valdosta"))
+		:ARG0 (x38 / government-organization
+			:name (n2 / name
+				:op1 "National"
+				:op2 "Weather"
+				:op3 "Service"))))
+
+# ::id 29
+# ::snt Elsewhere in Georgia, trees and power lines were reported blown down, a barn was reported destroyed and a tin roof was blown off an old building
+(x19 / and
+	:op1 (x10 / report-01
+		:ARG1 (x6 / and
+			:time (x1 / elsewhere
+				:location (x3 / country
+					:name (n / name
+						:op1 "Georgia")))
+			:op1 (x5 / tree)
+			:op2 (x8 / line
+				:mod (x7 / power)))
+		:ARG1 (x11 / blow-06))
+	:op2 (x17 / report-01
+		:ARG1 (x15 / barn)
+		:ARG1 (x18 / destroy-01))
+	:op2 (x24 / blow-01
+		:ARG1 (x22 / roof
+			:ARG1 (x21 / tin))
+		:location (x25 / off
+			:op1 (x28 / building
+				:mod (x27 / old)))))
+
+# ::id 30
+# ::snt The winds destroyed up to nine mobile homes west of Bainbridge, Ga., Monday night, injuring three people, one seriously
+(x3 / destroy-01
+	:ARG0 (x2 / wind)
+	:ARG1 (x8 / home
+		:quant 9
+		:mod (x7 / mobile)
+		:poss (x9 / west
+			:part-of (x16 / night
+				:name (x11 / name
+					:op1 "Bainbridge"
+					:op2 ","
+					:op3 "Ga.")
+				:mod (xap0 / date-entity
+					:null_edge (x15 / null_tag)))))
+	:ARG1 (x18 / injure-01
+		:quant 3
+		:null_edge 1
+		:manner (x23 / serious)))
+
+# ::id 31
+# ::snt The sheriff's office said the wind left the homes in shreds
+(x5 / say-01
+	:ARG0 (x4 / office
+		:poss (x2 / sheriff))
+	:ARG1 (x8 / leave-06
+		:ARG0 (x7 / wind)
+		:ARG1 (x10 / home)
+		:ARG2 (x12 / shred-01)))
+
+# ::id 32
+# ::snt Bainbridge is 25 miles northwest of Tallahassee
+(xap0 / relative-position
+	:ARG1 (x1 / country
+		:name (n / name
+			:op1 "Bainbridge"))
+	:quant (x4 / distance-quantity
+		:unit (m / mile)
+		:quant 25)
+	:direction (x5 / northwest)
+	:ARG1 (x7 / country
+		:name (n1 / name
+			:op1 "Tallahassee")))
+
+# ::id 33
+# ::snt A 9-year-old girl from Cottonwood, Ala., was injured by lightning as A 9-year-old girl from Cottonwood , Ala. stood near a stove at A 9-year-old girl from Cottonwood , Ala. home Monday night
+(x10 / injure-01
+	:ARG1 (x3 / girl
+		:mod (x2 / person
+			:name (n / name
+				:op1 "9-year-old"))
+		:source (x5 / country
+			:name (n1 / name
+				:op1 "Cottonwood")
+			:null_edge (x7 / country
+				:name (n2 / name
+					:op1 "Ala."))))
+	:ARG0 (x12 / lightning)
+	:time (x21 / stand-01
+		:ARG1 (x16 / girl
+			:mod (x15 / person
+				:name (n3 / name
+					:op1 "9-year-old"))
+			:source (x18 / country
+				:name (n4 / name
+					:op1 "Cottonwood")
+				:null_edge (x20 / country
+					:name (n6 / name
+						:op1 "Ala."))))
+		:ARG2 (x22 / near
+			:op1 (x24 / stove))
+		:ARG2 (x28 / girl
+			:mod (x27 / person
+				:name (n5 / name
+					:op1 "9-year-old"))
+			:time (x35 / night
+				:name (x30 / name
+					:op1 "Cottonwood"
+					:op2 ","
+					:op3 "Ala.")
+				:mod (x33 / home)
+				:mod (xap0 / date-entity
+					:null_edge (x34 / null_tag))))))
+
+# ::id 34
+# ::snt The lightning accompanied a tornado that moved through southern Houston County about 60 miles northwest of Tallahasse
+(x3 / accompany-01
+	:ARG0 (x2 / lightning)
+	:ARG1 (x5 / tornado
+		:ARG1-of (x7 / move-01
+			:concession (xap0 / between
+				:direction (x9 / south)
+				:ARG1 (x10 / country
+					:name (n / name
+						:op1 "Houston"))
+				:quant (x14 / distance-quantity
+					:unit (m / mile)
+					:null_edge (x12 / about
+						:null_edge 60))
+				:direction (x15 / northwest)
+				:ARG1 (x17 / country
+					:name (n1 / name
+						:op1 "Tallahasse"))))))
+
+# ::id 35
+# ::snt In the eastern Georgia's Bulloch County, six mobile homes and one house were heavily damaged shortly after dawn today, but no injuries were reported, the weather service said
+(x32 / say-01
+	:ARG1 (x23 / contrast-01
+		:ARG1 (x17 / damage-01
+			:location (x7 / county
+				:null_edge (x4 / country
+					:name (n / name
+						:op1 "Georgia")
+					:mod (x3 / world-region
+						:name (n2 / name
+							:op1 "eastern")))
+				:mod (x6 / country
+					:name (n1 / name
+						:op1 "Bulloch")))
+			:ARG1 (x12 / and
+				:op1 (x11 / home
+					:quant 6
+					:mod (x10 / mobile))
+				:op2 (x14 / house))
+			:manner (x16 / heavily)
+			:time (x19 / after
+				:mod (x18 / short)
+				:op1 (x20 / dawn
+					:time (x21 / today)))
+			:ARG0 (x25 / injure-01))
+		:ARG2 (x27 / report-01
+			:polarity -))
+	:ARG0 (x31 / service
+		:mod (x30 / weather)))
+
+# ::id 36
+# ::snt Tornado watches were still in effect across 14 southeastern Georgia and 15 northeastern Florida counties until at least five hours after the tornado hit
+(x2 / watch-01
+	:mod (x1 / tornado)
+	:time (x4 / still)
+	:prep-in (x6 / effect)
+	:location (x7 / across
+		:op1 (x11 / and
+			:op1 (x10 / country
+				:name (n / name
+					:op1 "Georgia")
+				:null_edge 14
+				:mod (x9 / southeast))
+			:op2 (x15 / county
+				:quant 15
+				:mod (x13 / northeast)
+				:poss (x14 / country
+					:name (n2 / name
+						:op1 "Florida")))))
+	:time (x16 / until
+		:op1 (x20 / temporal-quantity
+			:unit (h / hour)
+			:quant (x17 / person
+				:name (n1 / name
+					:op1 "at"))))
+	:time (x21 / after
+		:op1 (x24 / hit-01
+			:ARG0 (x23 / tornado))))
+
+# ::id 37
+# ::snt Madison County has been hit by seven tornadoes since 1959 with only one injury reported, according to the National Weather Service
+(x5 / hit-01
+	:ARG1 (x2 / county
+		:mod (x1 / country
+			:name (n1 / name
+				:op1 "Madison")))
+	:ARG0 (x8 / tornado
+		:quant 7)
+	:time (x9 / since
+		:op1 (x10 / date-entity
+			:year 1959))
+	:ARG0 (x14 / injure-01
+		:mod (x12 / only)
+		:quant 1
+		:ARG1-of (x15 / report-01))
+	:ARG0 (x20 / government-organization
+		:name (n / name
+			:op1 "National"
+			:op2 "Weather"
+			:op3 "Service")))
+

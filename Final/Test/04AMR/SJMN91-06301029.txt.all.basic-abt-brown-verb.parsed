@@ -1,0 +1,881 @@
+# ::id 1
+# ::snt Steep hillsides covered with trees and dense brush
+(x2 / hillside
+	:mod (x1 / steep)
+	:ARG1-of (x3 / cover-01
+		:ARG2 (x6 / and
+			:op1 (x5 / tree)
+			:op2 (x8 / brush
+				:ARG1-of (x7 / dense)))))
+
+# ::id 2
+# ::snt Narrow, winding roads
+(x4 / road
+	:mod (x1 / narrow-minded)
+	:mod (x3 / wind-04))
+
+# ::id 3
+# ::snt Wood homes with shake roofs
+(x2 / home
+	:ARG2 (x5 / roof
+		:mod (x4 / shake-01)))
+
+# ::id 4
+# ::snt Uncertain water. ; The conditions are familiar to South Bay firefighters, who know South Bay firefighters may be no more than a careless match away from a blaze as intense and unpredictable as the one that devastated the Oakland hills last Sunday
+(x / xconcept
+	:x (x4 / and
+		:op1 (x2 / water
+			:mod (x1 / uncertain)
+			:ARG1-of (x8 / familiarize-01
+				:ARG2 (x12 / firefighter
+					:null_edge (x10 / null_tag)
+					:ARG1 (x11 / country
+						:name (n / name
+							:op1 "Bay"))
+					:ARG1-of (x15 / know-01
+						:ARG1 (x19 / possible
+							:domain (x22 / more
+								:domain (x18 / firefighter
+									:null_edge (x16 / null_tag)
+									:ARG1 (x17 / country
+										:name (n1 / name
+											:op1 "Bay")))
+								:polarity -
+								:compared-to (x26 / match-01
+									:manner (x25 / care-01)
+									:compared-to (x30 / blaze))))))))
+		:op2 (x33 / and
+			:op1 (x32 / intense)
+			:op2 (xap1 / possible
+				:domain (x34 / predict-01)))
+		:op2 (x39 / devastate-01
+			:ARG1 (x42 / hill
+				:mod (x41 / organization
+					:name (n2 / name
+						:op1 "Oakland")))
+			:time (xap0 / date-entity
+				:weekday (x44 / sunday
+					:mod (x43 / last))))))
+
+# ::id 5
+# ::snt Now, in the wake of that firestorm, local firefighters are looking up at the hills that surround this area and wondering not whether, but only when and where. ; " Saratoga Fire Chief Ernest Kraule know the wake of that firestorm's there, " said Saratoga Fire Chief Ernest Kraule
+(x50 / say-01
+	:ARG1 (x13 / look-04
+		:time (x1 / now)
+		:time (x5 / wake
+			:part-of (x8 / firestorm
+				:mod (x7 / that)))
+		:ARG0 (x11 / firefighter
+			:mod (x10 / local))
+		:location (x17 / hill))
+	:ARG0 (x54 / newspaper
+		:name (n / name
+			:op1 "Ernest"
+			:op2 "Kraule")
+		:ARG0-of (x52 / fire
+			:ARG1 (x51 / country
+				:name (n1 / name
+					:op1 "Saratoga")))
+		:ARG0-of (x53 / chief)))
+
+# ::id 6
+# ::snt " Every fire chief -- there's 12 of us in this county -- knows it's there .
+(x15 / know-01
+	:ARG0 (x4 / have-org-role-91
+		:ARG2 (c / chief)
+		:mod (x2 / every)
+		:mod (x3 / fire-arm)
+		:topic (x13 / county
+			:domain (x8 / person
+				:op 12)
+			:mod (x12 / this)))
+	:ARG1 (x17 / be-02
+		:null_edge (x18 / there)))
+
+# ::id 7
+# ::snt ; The danger is in the Saratoga foothills, where Kraule's department has battled nine deliberately set fires since June -- most recently Oct. 19, the same day Oakland firefighters thought local firefighters had contained a brush fire that a day later blossomed into the deadly firestorm. ; It's in the mountain communities that straddle Highway 9 in Santa Cruz County, isolated by weak bridges that wo n't support some firetrucks and connected by a two-lane road that will hinder escape. ; It's in Los Altos Hills, where residents in 1984 repealed an ordinance requiring fire-retardant roofs ; a year later, a fire destroyed 100 acres and 12 homes, many of which have been rebuilt -- with the same flammable shake roofs. ; In fact, the danger of an Oakland-like inferno is in almost all of the hills that ring the South Bay, where homes often are surrounded by dense brush or stately trees, the fuel of rapidly spreading wildfires. ; And the risk is increasing, as cramped Bay Area residents push farther into the hills and canyons in search of living space and rural atmosphere
+(x15 / battle-01
+	:location (x7 / country
+		:name (n / name
+			:op1 "Saratoga"))
+	:ARG0 (x11 / person
+		:name (n1 / name
+			:op1 "Kraule"))
+	:ARG1 (x13 / department)
+	:ARG1 (x19 / fire
+		:null_edge 9
+		:ARG1-of (x18 / set-08
+			:manner (x17 / deliberate)))
+	:time (x20 / since
+		:op1 (x21 / date-entity))
+	:time (x24 / recent
+		:degree (x23 / most))
+	:time (x25 / name
+		:op1 "Oct."
+		:op2 "19")
+	:ARG1-of (x33 / think-01
+		:ARG0 (x32 / firefighter
+			:null_edge (x30 / null_tag
+				:ARG1-of (x29 / same-41))
+			:ARG1 (x31 / organization
+				:name (n2 / name
+					:op1 "Oakland")))
+		:ARG1 (x37 / contain-01
+			:ARG0 (x35 / firefighter
+				:mod (x34 / local)))))
+
+# ::id 8
+# ::snt State officials say Saratoga's no coincidence that six of California's 10 most damaging wildfires have occurred since 1980. ; " The tendency is to have bigger fires that are much more expensive to put out, with much more property loss, " said Roy Pike, a deputy chief in the California Department of Forestry and Fire Protection's Santa Rosa office. ; Privacy's high price ; Having pushed into these areas, city dwellers do n't understand that the wooded seclusion and natural beauty exact a cost in fire protection, rescue workers complain. ; In cities, a firetruck might respond to an alarm within two or three minutes ; in the Highway 9 communities, State officials hope for 10 minutes
+(x / xconcept
+	:x (x68 / and
+		:op2 (x37 / put-01
+			:ARG2 (x43 / property
+				:mod (x42 / more
+					:degree (x41 / much))
+				:ARG1-of (x47 / say-01)
+				:name (x48 / name
+					:op1 "Roy"
+					:op2 "Pike"
+					:ARG0-of (x53 / have-org-role-91
+						:ARG2 (c / chief)
+						:mod (x52 / deputy)
+						:topic (x60 / and
+							:null_edge (x57 / null_tag
+								:null_edge (x56 / null_tag)
+								:poss (x59 / organization
+									:name (n1 / name
+										:op1 "Forestry")))))
+					:ARG0-of (x84 / understand-01
+						:ARG1-of (x75 / push-01
+							:ARG2 (x76 / into
+								:op1 (x78 / area)))
+						:ARG0 (x81 / dweller
+							:mod (x80 / city))
+						:ARG1 (x110 / respond-01
+							:location (x105 / city)
+							:ARG0 (x108 / firetruck)
+							:ARG1 (x113 / alarm-01
+								:location (x114 / within
+									:op1 (x118 / temporal-quantity
+										:unit (m / minute)
+										:null_edge (x116 / or
+											:null_edge 2)
+										:quant 3))))))))
+		:op2 (x66 / office
+			:poss (x62 / protect-01
+				:null_edge (x61 / fire))
+			:location (x64 / country
+				:name (n2 / name
+					:op1 "Santa"))
+			:poss (x65 / country
+				:name (n3 / name
+					:op1 "Rosa")))
+		:op7 (x92 / exact)
+		:op2 (x128 / hope-01
+			:location (x124 / community
+				:quant 9)
+			:duration (x131 / temporal-quantity
+				:unit (m1 / minute)
+				:quant 10)
+			:ARG0 (xap2 / person
+				:ARG0-of (x127 / have-org-role-91
+					:ARG2 (o1 / official)
+					:ARG1 (x126 / state)))))
+	:x (x73 / and
+		:op2 (x3 / say-01
+			:ARG1 (x7 / coincidence
+				:ARG0 (x4 / person
+					:name (n / name
+						:op1 "Saratoga"))
+				:polarity -
+				:null_edge (x8 / null_tag
+					:time (x19 / since
+						:op1 (x16 / wildfire
+							:quant 6
+							:quant 10
+							:ARG1-of (x15 / damage-01
+								:degree (x14 / most)))
+						:op1 (x20 / date-entity
+							:year 1980))))
+			:ARG1 (x25 / tendency
+				:ARG1 (x30 / fire
+					:mod (x29 / big)
+					:mod (x35 / expensive
+						:degree (x34 / more
+							:degree (x33 / much)))))
+			:ARG0 (xap0 / person
+				:ARG0-of (x2 / have-org-role-91
+					:ARG2 (o / official)
+					:ARG1 (x1 / state))))
+		:op2 (x72 / thing
+			:ARG2-of (p / price-01)
+			:ARG1 (x69 / privacy)
+			:ARG2 (xap1 / monetary-quantity
+				:mod (x71 / high))))
+	:x (x103 / and
+		:op2 (x101 / complain-01
+			:ARG1 (x89 / and
+				:op1 (x88 / seclusion
+					:mod (x87 / wooded))
+				:op2 (x91 / beauty
+					:mod (x90 / natural)))
+			:ARG1-of (x94 / cost-01
+				:ARG1 (x97 / protect-01
+					:ARG1 (x96 / fire-arm)))
+			:ARG0 (x100 / person
+				:ARG0-of (w / work-01)
+				:mod (x99 / rescue-01))))
+	:x (x119 / and
+		:op3 (x122 / highway)))
+
+# ::id 9
+# ::snt Instead of an eight - or 10-inch water main ensuring pressure for fire hoses, the mountains are laced with two-inch pipes. ; " Those are the risks you take when you live in an area like this, " said Dean Lucke, chief of the forestry department's San Mateo-Santa Cruz ranger unit
+(x42 / say-01
+	:ARG0 (x43 / newspaper
+		:name (n / name
+			:op1 "Dean"
+			:op2 "Lucke")
+		:ARG0-of (x46 / have-org-role-91
+			:ARG2 (c / chief)
+			:ARG1 (x56 / unit
+				:poss (x50 / department
+					:mod (x49 / forestry))
+				:poss (x52 / country
+					:name (n1 / name
+						:op1 "San"))
+				:null_edge (x53 / country
+					:name (n2 / name
+						:op1 "Mateo-Santa"))
+				:mod (x54 / country
+					:name (n3 / name
+						:op1 "Cruz"))
+				:mod (x55 / ranger)))))
+
+# ::id 10
+# ::snt 
+(x6 / guarantee-01
+	:ARG0 (x3 / dweller
+		:mod (x2 / city))
+	:ARG1 (x9 / safe-41
+		:mod (x7 / everyone))
+	:location (x11 / here))
+
+# ::id 11
+# ::snt ; In general, firefighters say, the heavily wooded Santa Cruz Mountains are more susceptible to major fires than the grass-covered eastern foothills
+(x6 / say-01
+	:ARG0 (x5 / firefighter)
+	:ARG1 (x19 / fire
+		:mod (x3 / general)
+		:poss (x13 / mountain
+			:mod (x10 / wooded
+				:degree (x9 / heavily))
+			:null_edge (x11 / country
+				:name (n / name
+					:op1 "Santa"))
+			:mod (x12 / country
+				:name (n1 / name
+					:op1 "Cruz")))
+		:quant (x15 / more)
+		:mod (x18 / major)
+		:location (x24 / foothill
+			:mod (x22 / grass-covered)
+			:mod (x23 / east))))
+
+# ::id 12
+# ::snt Take the 1985 fire above Lexington Reservoir, which blazed for six days, scorching nearly 14,000 acres and destroying 42 homes. ; But there are exceptions, such as narrow Kilkare Canyon near Sunol, where 200 homes are strung along a narrow, five-mile dead-end road that empties onto narrow, winding Niles Canyon Road. ; " A large concentration of vegetation, heavy fuel loads, lots of wooden structures, ingress-egress (problems -RRB-, lack of water, local firefighters 're all there, " said Fremont Fire Chief Dan Lydon, whose department would be one of the first called to a fire in Kilkare
+(x93 / say-01
+	:ARG0 (x98 / person
+		:name (n / name
+			:op1 "Lydon")
+		:null_edge (x94 / fremont)
+		:null_edge (x95 / fire)
+		:null_edge (x96 / chief)
+		:null_edge (x97 / null_tag)
+		:ARG0-of (x101 / department
+			:ARG1-of (x105 / include-91
+				:ARG2 (x108 / call-01
+					:ARG1 (x111 / fire-01
+						:location (x113 / country
+							:name (n1 / name
+								:op1 "Kilkare"))))))))
+
+# ::id 13
+# ::snt " If there's an area that has the significant potential for disaster, that's one .
+(x6 / area
+	:ARG1-of (x8 / have-03
+		:ARG1 (x11 / potential
+			:mod (x10 / significant)
+			:prep-for (x13 / disaster))
+		:ARG1 (x15 / that))
+	:quant 1)
+
+# ::id 14
+# ::snt ; Codes rarely enforced ; In the hills, nearly every home is surrounded by thick brush or dense woods
+(x / xconcept
+	:x (x1 / and
+		:op1 (x2 / code
+			:ARG1-of (x14 / surround-01
+				:location (x8 / hill)
+				:ARG1 (x12 / home
+					:mod (x10 / nearly)
+					:mod (x11 / every))
+				:purpose (x18 / or
+					:op1 (x17 / brush
+						:mod (x16 / thick))
+					:op2 (x20 / wood
+						:mod (x19 / dense))))))
+	:x (x5 / and
+		:op2 (x4 / enforce-01
+			:frequency (x3 / rare))))
+
+# ::id 15
+# ::snt Fire codes require residents to keep the trees 30 feet from residents homes, but fire officials admit fire officials rarely enforce fire officials
+(x15 / contrast-01
+	:ARG1 (x3 / require-01
+		:ARG0 (x2 / code
+			:mod (x1 / fire-02))
+		:ARG1 (x4 / person
+			:ARG0-of (r / reside-01))
+		:ARG1 (x6 / keep-04
+			:ARG0 x4
+			:ARG1 (x10 / distance-quantity
+				:unit (f / foot)
+				:quant 30)
+			:ARG4 (x13 / home
+				:poss (x12 / person
+					:ARG0-of (r1 / reside-01)))))
+	:ARG2 (x18 / admit-01
+		:ARG1 (x22 / enforce-01
+			:ARG0 (x20 / have-org-role-91
+				:ARG2 (o / official)
+				:ARG1 (x19 / fire-arm))
+			:frequency (x21 / rare)
+			:ARG0-of (x24 / have-org-role-91
+				:ARG2 (o1 / official)
+				:ARG1 (x23 / fire-arm)))
+		:ARG0 (xap0 / person
+			:ARG0-of (x17 / have-org-role-91
+				:ARG2 (o2 / official)
+				:ARG1 (x16 / fire-arm)))))
+
+# ::id 16
+# ::snt Instead, as residents drive by, some firefighters make mental notes about which homes would be worth saving. ; " Fremont Fire Chief Dan Lydon do this evaluation of what Fremont Fire Chief Dan Lydon think Fremont Fire Chief Dan Lydon 'd be effective at salvaging, " said Don Shaw, a battalion chief for the Palo Alto Fire Department
+(x51 / say-01
+	:ARG1 (x10 / make-00
+		:condition (x5 / drive-02
+			:ARG0 (x4 / person
+				:ARG0-of (r / reside-01)))
+		:ARG0 (x9 / firefighter
+			:null_edge (x8 / some))
+		:ARG1 (x12 / note
+			:mod (x11 / mental)
+			:ARG0-of (x19 / saving
+				:ARG1 (x15 / home)))
+		:null_edge (x28 / do-02
+			:ARG0 (x27 / person
+				:name (n1 / name
+					:op1 "Lydon")
+				:null_edge (x23 / fremont)
+				:mod (x25 / chief
+					:ARG1 (x24 / fire))
+				:null_edge (x26 / null_tag))
+			:ARG1 (x30 / evaluate-01
+				:mod (x29 / this)
+				:ARG1 (x38 / think-01
+					:ARG0 (x37 / person
+						:name (n3 / name
+							:op1 "Lydon")
+						:null_edge (x33 / fremont)
+						:null_edge (x34 / fire)
+						:null_edge (x35 / chief)
+						:null_edge (x36 / null_tag))
+					:ARG1 (x46 / effective
+						:domain (x43 / person
+							:name (n4 / name
+								:op1 "Lydon")
+							:null_edge (x39 / fremont)
+							:null_edge (x41 / chief
+								:ARG1 (x40 / fire))
+							:null_edge (x42 / null_tag))
+						:domain (x48 / salvage-01
+							:ARG0 x43))))))
+	:ARG0 (x52 / newspaper
+		:name (n / name
+			:op1 "Don"
+			:op2 "Shaw")
+		:ARG0-of (x57 / have-org-role-91
+			:ARG2 (c / chief)
+			:mod (x56 / battalion)
+			:ARG1 (x60 / government-organization
+				:name (n2 / name
+					:op1 "Palo"
+					:op2 "Alto"
+					:op3 "Fire"
+					:op4 "Department")))))
+
+# ::id 17
+# ::snt By not trimming dense brush, Fremont Fire Chief Dan Lydon said, some homeowners are " virtually signing a death warrant .
+(x12 / say-01
+	:ARG0 (x11 / person
+		:name (n / name
+			:op1 "Lydon")
+		:null_edge (x7 / fremont)
+		:null_edge (x9 / chief
+			:ARG1 (x8 / fire))
+		:null_edge (x10 / null_tag))
+	:ARG1 (x19 / sign-02
+		:ARG2 (x3 / trim
+			:ARG1 (x5 / brush
+				:mod (x4 / dense)))
+		:ARG0 (x15 / home
+			:quant (x14 / some))
+		:mod (x18 / virtual)
+		:ARG1 (x22 / warrant
+			:mod (x21 / die-01))))
+
+# ::id 18
+# ::snt ; And increasingly, fire officials worry about wildfires spreading into even more heavily populated areas at the base of the foothills, where numerous trees create an " urban forest .
+(x2 / and
+	:op2 (x7 / worry-01
+		:ARG1-of (x3 / increase-01)
+		:ARG0 (x9 / wildfire
+			:ARG1-of (x10 / spread-03
+				:ARG2 (x16 / area
+					:mod (x12 / even)
+					:mod (x15 / populate-01
+						:degree (x13 / more)
+						:degree (x14 / heavily))
+					:part-of (x19 / base
+						:poss (x22 / foothill
+							:ARG0-of (x27 / create-01
+								:ARG0 (x26 / tree
+									:quant (x25 / numerous))
+								:ARG1 (x31 / forest
+									:mod (x30 / urban))))))))
+		:ARG0 (xap0 / person
+			:ARG0-of (x6 / have-org-role-91
+				:ARG2 (o / official)
+				:ARG1 (x5 / fire-arm)))))
+
+# ::id 19
+# ::snt ; " We could have a fire going from rooftop to treetop to rooftop to treetop in any number of areas in this city, if the weather conditions are right, " said San Jose Fire Chief Robert Osby. ; The lesson of the Oakland hills, firefighters say, is to contain and extinguish even the smallest fires as quickly as possible
+(x34 / say-01
+	:ARG1 (x4 / possible
+		:domain (x5 / have-03
+			:ARG0 (x3 / we)
+			:ARG1 (x7 / fire-01
+				:source (x16 / treetop
+					:null_edge (x12 / treetop)
+					:mod (x14 / rooftop))
+				:extent-of (x21 / area
+					:mod (x18 / any))
+				:location (x24 / city
+					:mod (x23 / this))
+				:domain (x29 / condition
+					:mod (x28 / weather)
+					:mod (x31 / right)))))
+	:ARG0 (x35 / organization
+		:name (n / name
+			:op1 "San"))
+	:ARG0 (x39 / newspaper
+		:name (n1 / name
+			:op1 "Robert"
+			:op2 "Osby")
+		:ARG0-of (x37 / fire
+			:ARG1 (x36 / organization
+				:name (n2 / name
+					:op1 "Jose")))
+		:ARG0-of (x38 / chief))
+	:ARG0 (x44 / lesson
+		:ARG1 (x48 / hill
+			:mod (x47 / country
+				:name (n3 / name
+					:op1 "Oakland"))))
+	:ARG1 (x51 / say-01
+		:ARG0 (x50 / firefighter))
+	:ARG1 (x55 / contain-00
+		:ARG1 (x61 / fire
+			:mod (x58 / even)
+			:mod (x60 / small
+				:degree (m / most)))
+		:manner (x63 / quick
+			:degree (x65 / possible))))
+
+# ::id 20
+# ::snt But, often, that means firefighters have to overcome narrow roads, weak bridges, inadequate water pressure and gridlock from fleeing residents. ; Challenge for firefighters ; Many of the South Bay's most vulnerable areas -- such as Redwood Estates above Los Gatos and Emerald Lake Hills above Redwood City -- began as colonies of summer homes, a handful of secluded cottages strung along narrow winding roads
+(x / xconcept
+	:x (x56 / begin-01
+		:ARG1 (x27 / challenge-01
+			:ARG1 (x29 / firefighter
+				:quant (x31 / many))
+			:ARG1 (x39 / area
+				:poss (x34 / country
+					:name (n2 / name
+						:op1 "South"
+						:op2 "Bay"))
+				:quant (x37 / most)
+				:mod (x38 / vulnerable)))
+		:ARG1 (x48 / and
+			:op1 (x43 / government-organization
+				:name (n / name
+					:op1 "Redwood"
+					:op2 "Estates")
+				:location (x45 / above
+					:op1 (x47 / country
+						:name (n5 / name
+							:op1 "Gatos")
+						:null_edge (x46 / country
+							:name (n6 / name
+								:op1 "Los")))))
+			:op2 (x51 / country
+				:name (n1 / name
+					:op1 "Hills")
+				:null_edge (x49 / country
+					:name (n3 / name
+						:op1 "Emerald"))
+				:null_edge (x50 / country
+					:name (n4 / name
+						:op1 "Lake"))
+				:location (x52 / above
+					:op1 (x54 / city
+						:null_edge (x53 / country
+							:name (n7 / name
+								:op1 "Redwood"))))))
+		:ARG2 (x58 / colony
+			:ARG1 (x61 / home
+				:time (xap1 / date-entity
+					:season (x60 / summer))))
+		:ARG1 (x67 / cottage
+			:quant (x64 / handful)
+			:mod (x66 / secluded)
+			:ARG1-of (x68 / string
+				:location (x69 / along
+					:op1 (x72 / road
+						:mod (x70 / narrow)
+						:mod (x71 / wind-04))))))
+	:x (xap0 / multi-sentence
+		:snt2 (x1 / contrast-01)
+		:snt3 (x6 / mean-01
+			:ARG0 (x5 / that)
+			:ARG1 (x10 / overcome-01
+				:ARG0 (x7 / firefighter)
+				:ARG1 (x20 / and
+					:op1 (x12 / road
+						:mod (x11 / narrow))
+					:op2 (x19 / pressure-01
+						:ARG1-of (x17 / adequate
+							:polarity -)
+						:ARG1 (x18 / water)))))))
+
+# ::id 21
+# ::snt Now, these communities are the year-round home for thousands, often still dependent on volunteer firefighters and an overtaxed network of roads and water lines. ; " On a good day, trying to maneuver fire apparatus on those roads is tough, " said Steve Cavallero, a battalion chief for the Redwood City Fire Department, which covers a portion of Emerald Lake Hills
+(x47 / say-01
+	:ARG1 (x8 / home
+		:time (x1 / now)
+		:mod (x7 / year-round)
+		:purpose (x18 / and
+			:frequency (x12 / often)
+			:mod (x13 / still)
+			:op1 (x17 / firefighter
+				:mod (x16 / person
+					:ARG0-of (v / volunteer-01))))
+		:purpose (x35 / try-01
+			:ARG0 (x4 / community)
+			:time (x33 / temporal-quantity
+				:unit (d / day)
+				:mod (x32 / good))
+			:ARG1 (x37 / maneuver
+				:ARG2 (x44 / tough
+					:domain (x38 / fire-arm
+						:ARG1 (x42 / road))))))
+	:ARG0 (x48 / newspaper
+		:name (n / name
+			:op1 "Steve"
+			:op2 "Cavallero")
+		:ARG0-of (x53 / have-org-role-91
+			:ARG2 (c / chief)
+			:mod (x52 / battalion)
+			:ARG1 (x56 / government-organization
+				:name (n1 / name
+					:op1 "Redwood"
+					:op2 "City"
+					:op3 "Fire"
+					:op4 "Department")
+				:ARG1-of (x62 / cover-01
+					:ARG1 (x64 / portion
+						:part-of (x68 / country
+							:name (n2 / name
+								:op1 "Hills")
+							:null_edge (x66 / country
+								:name (n3 / name
+									:op1 "Emerald"))
+							:null_edge (x67 / country
+								:name (n4 / name
+									:op1 "Lake")))))))))
+
+# ::id 22
+# ::snt " Combine that with panic, with people getting out of the way, and you 're setting the stage for disaster .
+(x15 / and
+	:op2 (x18 / set-03
+		:ARG1 (x2 / combine-01
+			:null_edge (x5 / panic-01)
+			:null_edge (x9 / get-01
+				:ARG2 (x10 / out
+					:op1 (x13 / way))))
+		:ARG0 (x16 / you)
+		:ARG1 (x20 / stage)
+		:ARG1 (x22 / disaster)))
+
+# ::id 23
+# ::snt ; An estimated 25,000 people live in the communities along Highway 9 between Santa Cruz and Boulder Creek, the curvy, two-lane road that would be the only way out in the case of a major fire
+(x6 / live-01
+	:ARG1-of (x3 / estimate-01
+		:quant (x4 / 25,000))
+	:location (x9 / community
+		:ARG1 (x11 / highway
+			:quant 9
+			:location (x24 / road
+				:mod (x21 / curvy)
+				:mod (x23 / two-lane)
+				:mod (x38 / fire-01
+					:mod (x29 / only)
+					:mod (x37 / major))))))
+
+# ::id 24
+# ::snt How would all those people escape
+(x6 / escape-01
+	:ARG1 (x3 / all))
+
+# ::id 25
+# ::snt ; " That's a good question, " said O.J. Burrell, chief of fire prevention at the San Mateo-Santa Cruz ranger unit. ; Weak bridges keep firetrucks out of many of those communities, as well as New Almaden Valley south of San Jose, forcing firefighters to carry hoses by hand
+(x10 / say-01
+	:ARG1 (x7 / question-01
+		:domain (x3 / that)
+		:mod (x6 / good)
+		:ARG0 (x11 / name
+			:op1 "O.J."
+			:op2 "Burrell"
+			:ARG0-of (x14 / have-org-role-91
+				:ARG2 (c / chief)
+				:topic (x17 / prevent-01
+					:ARG1 (x16 / fire-arm))))))
+
+# ::id 26
+# ::snt Ed Ekers, chief of the Santa Cruz city fire department, worries about sending Ed Ekers trucks through " a tunnel of fire " if flames were ever to spread across the canopy of trees above Highway 9. ; Will there be water
+(x / xconcept
+	:x (x41 / and
+		:op1 (x13 / worry-01
+			:ARG0 (x1 / newspaper
+				:name (n / name
+					:op1 "Ed"
+					:op2 "Ekers")
+				:ARG0-of (x4 / have-org-role-91
+					:ARG2 (c / chief)
+					:ARG1 (x11 / department
+						:mod (x7 / country
+							:name (n1 / name
+								:op1 "Santa"))
+						:mod (x9 / city
+							:location x7
+							:name (x8 / country
+								:name (n2 / name
+									:op1 "Cruz"))
+							:name (x10 / fire-arm)))))
+			:ARG0 (x15 / send-03
+				:ARG0 x1
+				:ARG1 (x18 / truck
+					:mod (x16 / person
+						:name (n3 / name
+							:op1 "Ed"))
+					:mod (x17 / person
+						:name (n4 / name
+							:op1 "Ekers")))
+				:path (x22 / tunnel
+					:ARG1 (x24 / fire-01))
+				:ARG2 (x27 / flame
+					:mod (x29 / ever)
+					:ARG1 (x31 / spread-02
+						:location (x32 / across
+							:op1 (x34 / canopy
+								:consist-of (x36 / tree)
+								:location (x37 / above
+									:op1 (x38 / highway
+										:quant 9)))))))
+			:ARG0 (x45 / water
+				:location (x43 / there)))))
+
+# ::id 27
+# ::snt ; Even if firetrucks can reach a blaze, firefighters know there may not be any water to fight a blaze
+(x / xconcept
+	:x (x1 / and
+		:op2 (x5 / possible
+			:domain (x6 / reach-01
+				:ARG0 (x4 / firetruck)
+				:ARG1 (x8 / blaze)))
+		:op1 (x11 / know-01
+			:concession (x2 / even)
+			:ARG0 (x10 / firefighter)
+			:ARG1 (x13 / possible
+				:domain (x17 / water
+					:mod (x16 / any)
+					:purpose (x19 / fight-01
+						:ARG1 (x21 / blaze)))))))
+
+# ::id 28
+# ::snt In Oakland, water pressure dropped as electricity failures shut off pumps and thousands of open hydrants and water connections quickly drained reservoirs. ; That could happen even in urbanized areas of Santa Clara County because the major water suppliers rely on a similar system of electric pumps to maintain water pressure in the foothills
+(x / xconcept
+	:x (x25 / and
+		:op1 (x6 / drop-05
+			:location (x2 / country
+				:name (n / name
+					:op1 "Oakland"))
+			:ARG0 (x5 / pressure-01
+				:mod (x4 / water))
+			:ARG1 (x18 / and
+				:op1 (x10 / shut-05
+					:ARG1 (x9 / fail-01
+						:mod (x8 / electricity))
+					:ARG1 (x13 / and
+						:op1 (x12 / pump-01
+							:ARG1 (x17 / hydrant
+								:mod (x16 / open)))
+						:op2 (x14 / thousands)))
+				:op2 (x22 / drain-01
+					:ARG0 (x20 / connect-01
+						:mod (x19 / water))
+					:manner (x21 / quick)
+					:ARG1 (x23 / reservoir))))
+		:op2 (x27 / possible
+			:domain (x28 / happen-01
+				:ARG1 (x26 / that)
+				:location (x32 / area
+					:mod (x29 / even)
+					:mod (x31 / urbanized)
+					:location (x36 / county
+						:null_edge (x34 / country
+							:name (n1 / name
+								:op1 "Santa"))
+						:null_edge (x35 / country
+							:name (n2 / name
+								:op1 "Clara"))))
+				:ARG1-of (x37 / cause-01
+					:ARG0 (x42 / rely-01
+						:ARG1 (x46 / system
+							:ARG1-of (x45 / resemble-01
+								:op (s / similar))
+							:mod (x49 / pump-01
+								:mod (x48 / electric)))
+						:ARG1 (x51 / maintain-01
+							:ARG1 (x53 / pressure-01
+								:ARG0 (x52 / water))
+							:location (x56 / foothill))
+						:ARG0 (xap0 / company
+							:ARG0-of (x41 / thing
+								:ARG0-of (s1 / supply-01)
+								:mod (x39 / major)
+								:ARG1 (x40 / water)))))))))
+
+# ::id 29
+# ::snt " the major water suppliers would face the same situation, " said Sharon Whaley, spokeswoman for the San Jose Water Co., which serves foothill areas in Los Gatos, Saratoga and Almaden. ; In rural areas, water supplies are even chancier
+(x13 / say-01
+	:ARG1 (x7 / face-01
+		:ARG0 (x5 / thing
+			:ARG0-of (s / supply-01)
+			:mod (x3 / major)
+			:mod (x4 / water))
+		:ARG1 (x10 / situation
+			:ARG1-of (x9 / same-41))
+		:ARG0 (x14 / newspaper
+			:name (n / name
+				:op1 "Sharon"
+				:op2 "Whaley")
+			:ARG0-of (x17 / have-org-role-91
+				:ARG2 (s1 / spokeswoman)
+				:ARG1 (x21 / government-organization
+					:name (n1 / name
+						:op1 "Jose"
+						:op2 "Water"
+						:op3 "Co.")
+					:ARG0-of (x26 / serve-01
+						:ARG1 (x28 / area
+							:mod (x27 / foothill)
+							:location (x34 / and
+								:op1 (x30 / organization
+									:name (n3 / name
+										:op1 "Los"
+										:op2 "Gatos"))
+								:op2 (x33 / country
+									:name (n4 / name
+										:op1 "Saratoga")))))
+					:ARG1-of (xap0 / name
+						:op2 (x20 / organization
+							:name (n2 / name
+								:op1 "San")))))))
+	:ARG0 x14)
+
+# ::id 30
+# ::snt In the east foothills and southern Santa Clara County, homeowners have to provide only 5,000 gallons for firefighting, barely enough for five minutes at the rate some firetrucks pump. ; To Mike Balesteri, chief of the forestry department ranger unit in Santa Clara County, the lesson is simple : " Santa Clara County's either bring your own water or find Sharon Whaley , spokeswoman for the San Jose Water Co. , which serves foothill areas in Los Gatos , Saratoga and Almaden. ; In rural areas , water supplies are even chancier own water in some homeowners game .
+(x53 / simple
+	:domain (x51 / lesson))
+
+# ::id 31
+# ::snt ; Taps would go dry quickly ; Even when rural communities have upgraded some homeowners water systems -- as Redwood Estates did -- firefighters say the taps would start to run low if three or four houses were burning at once. ; Local officials say Local officials try to limit fire hazards largely by restricting development in the hills
+(xap1 / multi-sentence
+	:domain (x4 / go-01
+		:ARG1 (x2 / tap)
+		:purpose (x5 / dry-02)
+		:manner (x6 / quick))
+	:snt2 (x25 / say-01
+		:concession (x8 / even
+			:op1 (x13 / upgrade-02
+				:ARG0 (x11 / community
+					:mod (x10 / rural))
+				:ARG1 (x17 / system
+					:quant (x14 / some)
+					:poss (x15 / home)
+					:mod (x16 / water))))
+		:ARG0 (x24 / firefighter)
+		:ARG1 (x29 / start-01
+			:ARG0 (x27 / tap)
+			:ARG1 (x31 / run-01
+				:ARG0 x27
+				:ARG1 (x32 / low))))
+	:snt2 (x46 / say-01
+		:ARG1 (x49 / try-01
+			:ARG1 (x51 / limit-01
+				:ARG1 (x53 / hazard
+					:mod (x52 / fire-arm))
+				:ARG1 (x56 / restrict-01
+					:ARG1 (x57 / develop-02)
+					:location (x60 / hill)))
+			:ARG0 (xap3 / person
+				:mod (x47 / local)
+				:ARG0-of (x48 / have-org-role-91
+					:ARG2 (o1 / official))))
+		:ARG0 (xap2 / person
+			:mod (x44 / local)
+			:ARG0-of (x45 / have-org-role-91
+				:ARG2 (o / official))))
+	:ARG0-of (xap0 / contrast-01
+		:ARG2 (x22 / do-02
+			:ARG0 (x21 / country
+				:name (n / name
+					:op1 "Estates")))))
+
+# ::id 32
+# ::snt But many of the most dangerous areas were built long before modern planning ordinances and building codes. ; And for every community, like Saratoga, that requires fire-retardant roofs, there are others, like Los Altos Hills, unwilling to suffer even that inconvenience. ; Seven years later, the Los Altos Hills revolt against fire-retardant roofs still resonates in the mind of Los Altos Fire Chief Dick Landrum, whose department is charged with protecting the area. ; " Every time Dick Landrum fire marshal starts to talk about amendments to the ... building code, they say, ` Do n't even bring Seven years up, ' " Landrum said. ; " I would hate to say Saratoga, but I 'd anticipate another Oakland .
+(x1 / contrast-01
+	:ARG2 (x124 / hate-01
+		:ARG0 (x2 / many)
+		:ARG0 (x122 / i)
+		:ARG1 (x126 / say-01
+			:ARG0 (x127 / person
+				:name (n1 / name
+					:op1 "Saratoga"))))
+	:ARG2 (x132 / anticipate-01
+		:ARG0 (x130 / i)
+		:ARG1 (x134 / country
+			:name (n / name
+				:op1 "Oakland")
+			:mod (x133 / another))))
+

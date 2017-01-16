@@ -1,0 +1,575 @@
+# ::id 1
+# ::snt " Mad cow " disease, an enigmatic nervous disorder that has killed thousands of cattle in Britain, is causing trade friction in Europe and is threatening the $ 3.7-billion British beef industry
+(x5 / disease
+	:mod "Mad"
+	:mod (x3 / cow)
+	:mod (x10 / disorder
+		:mod (x8 / enigmatic)
+		:mod (x9 / nervous)
+		:condition (x26 / and
+			:op1 (x13 / kill-01
+				:ARG1 (x16 / cattle)
+				:location (x18 / country
+					:name (n / name
+						:op1 "Britain"))
+				:ARG0-of (x21 / cause-01
+					:ARG1 (x23 / friction
+						:ARG1 (x22 / trade-01)
+						:location (x25 / continent
+							:name (n3 / name
+								:op1 "Europe")))))
+			:op2 (x28 / threaten-01
+				:ARG2 (x34 / industry
+					:mod (x31 / country
+						:name (n1 / name
+							:op1 "3.7-billion"))
+					:mod (x32 / country
+						:name (n2 / name
+							:op1 "Britain"))
+					:mod (x33 / beef-00))))))
+
+# ::id 2
+# ::snt On Friday, West Germany joined France in a ban on British beef imports, citing health fears related to the mysterious ailment, whose technical name is bovine spongiform encephalopathy (BSE )
+(x6 / join-01
+	:ARG0 (x4 / organization
+		:name (n / name
+			:op1 "West"
+			:op2 "Germany"))
+	:ARG1 (x7 / country
+		:name (n1 / name
+			:op1 "France"))
+	:instrument (x16 / cite-01
+		:ARG0 x4
+		:ARG1 (x18 / fear-01
+			:mod (x17 / health)
+			:ARG1-of (x19 / relate-01
+				:ARG2 (x23 / ailment
+					:name (x27 / name
+						:mod (x26 / technical)
+						:mod (x30 / spongiform
+							:mod (x29 / bovine))
+						:ARG0 (x33 / person
+							:name (n3 / name
+								:op1 "BSE"))))))
+		:ARG0 (xap3 / infer-01
+			:ARG2 (x10 / ban-01)
+			:ARG1 (x13 / beef-00)
+			:ARG0-of (xap2 / country
+				:ARG0-of (xap1 / name
+					:ARG1 (x12 / country
+						:name (n2 / name
+							:op1 "Britain"))))))
+	:time (xap0 / date-entity
+		:weekday (x2 / friday))
+	:ARG1 xap3)
+
+# ::id 3
+# ::snt Concern that the disease can be transmitted to humans has made the subject Topic A in the pubs and press of Britain, and has put a serious crimp in domestic beef sales
+(x24 / and
+	:op2 (x1 / concern-01
+		:ARG1 (x5 / possible
+			:domain (x7 / transmit-01
+				:ARG1 (x4 / disease)
+				:ARG2 (x9 / human))))
+	:op2 (x14 / topic
+		:ARG1-of (x13 / subject-01))
+	:location (x19 / and
+		:op1 (x18 / pub
+			:null_edge (x22 / country
+				:name (n / name
+					:op1 "Britain")))
+		:op2 (x20 / press))
+	:op2 (x26 / put-05
+		:ARG1 (x28 / serious-41
+			:ARG1 (x29 / crimp))
+		:ARG2 (xap0 / infer-01
+			:ARG1 (x32 / beef-00))))
+
+# ::id 4
+# ::snt Despite assurances from the British government that the beef is safe, consumers and some scientists remain skeptical
+(x17 / remain-01
+	:ARG1 (x18 / skeptical
+		:null_edge (x14 / and
+			:op1 (x2 / assure-01
+				:ARG0 (x6 / government-organization
+					:ARG0-of (g / govern-01)
+					:ARG1 (xap1 / country
+						:ARG0-of (xap0 / name
+							:ARG1 (x5 / country
+								:name (n / name
+									:op1 "Britain")))))
+				:ARG2 (x11 / safe-41
+					:ARG1 (x9 / beef-00)))
+			:op1 (x13 / person
+				:ARG0-of (c / consume-01))
+			:op2 (x16 / scientist
+				:mod (x15 / some)))))
+
+# ::id 5
+# ::snt British officials complain that the French and German import ban is a result of economic, not health, concerns
+(x3 / complain-01
+	:ARG1 (x13 / result-01
+		:ARG1 (x10 / person
+			:name (n / name
+				:op1 "ban")
+			:ARG1 (x7 / and
+				:op1 (x6 / country
+					:name (n1 / name
+						:op1 "France"))
+				:op2 (x8 / country
+					:name (n2 / name
+						:op1 "Germany"))
+				:op1 (x9 / import-01)))
+		:ARG1 (x20 / concern-01
+			:mod (x15 / economy)
+			:mod (x18 / health)))
+	:ARG0 (xap2 / person
+		:ARG0-of (x2 / have-org-role-91
+			:ARG2 (o / official)
+			:ARG1 (xap1 / country
+				:ARG0-of (xap0 / name
+					:ARG1 (x1 / country
+						:name (n3 / name
+							:op1 "Britain")))))))
+
+# ::id 6
+# ::snt The price of British beef is dropping in the wake of the " mad cow " scare
+(x7 / drop-01
+	:ARG1 (x2 / thing
+		:ARG2-of (p / price-01)
+		:ARG2 (xap2 / infer-01
+			:ARG1 (x5 / beef-00)
+			:ARG0-of (xap1 / country
+				:ARG0-of (xap0 / name
+					:ARG1 (x4 / country
+						:name (n / name
+							:op1 "Britain"))))))
+	:time (x10 / wake
+		:op1 (x17 / scare-01
+			:ARG1 (x15 / cow
+				:mod (x14 / mad)))))
+
+# ::id 7
+# ::snt Therefore, British officials believe, France and West Germany imposed the bans to protect British officials domestic sales
+(x11 / impose-01
+	:ARG0 (x8 / and
+		:op1 (x5 / believe-01
+			:ARG1 (xap0 / person
+				:ARG0-of (x4 / have-org-role-91
+					:ARG2 (o1 / official)
+					:ARG1 (x3 / country
+						:name (n3 / name
+							:op1 "Britain")))))
+		:op1 (x7 / country
+			:name (n / name
+				:op1 "France"))
+		:op2 (x9 / organization
+			:name (n1 / name
+				:op1 "West"
+				:op2 "Germany")))
+	:ARG1 (x13 / ban-01)
+	:purpose (x15 / protect-01
+		:manner (x18 / domestic)
+		:ARG1 (xap1 / person
+			:ARG0-of (x17 / have-org-role-91
+				:ARG2 (o / official)
+				:ARG1 (x16 / country
+					:name (n2 / name
+						:op1 "Britain"))))))
+
+# ::id 8
+# ::snt " France in a ban on British beef imports's totally unjustified and illegal, " said Patrick Barrow, spokesman for the Meat and Livestock Commission, a trade organization
+(x17 / say-01
+	:ARG1 (x13 / and
+		:op1 (x12 / unjustified
+			:domain (x2 / country
+				:name (n1 / name
+					:op1 "France"))
+			:degree (x11 / total))
+		:op2 (x14 / law
+			:polarity -)
+		:op2 (xap2 / infer-01
+			:ARG2 (x5 / ban-01)
+			:ARG1 (x8 / beef-00)
+			:ARG0-of (xap1 / country
+				:ARG0-of (xap0 / name
+					:ARG1 (x7 / country
+						:name (n3 / name
+							:op1 "Britain"))))))
+	:ARG0 (x18 / newspaper
+		:name (n / name
+			:op1 "Patrick"
+			:op2 "Barrow")
+		:ARG0-of (x21 / have-org-role-91
+			:ARG2 (s / spokesman)
+			:ARG1 (x25 / and
+				:op1 (x24 / meat)
+				:op2 (x26 / organization
+					:name (n2 / name
+						:op1 "Livestock"))
+				:op2 (x31 / organization
+					:ARG0-of (x27 / have-org-role-91
+						:ARG1 (o / organization
+							:name (n4 / name
+								:op1 "Commission")))
+					:mod (x30 / trade-01))))))
+
+# ::id 9
+# ::snt France accounted for slightly more than half of Britain's beef exports last year, buying 70,000 tons of beef worth $ 264 million
+(x2 / account-01
+	:ARG0 (x1 / country
+		:name (n / name
+			:op1 "France"))
+	:ARG1 (x8 / include-91
+		:ARG3 (x4 / slight)
+		:ARG3 (x5 / more-than)
+		:ARG2 (x12 / export-01
+			:ARG0 (x9 / country
+				:name (n1 / name
+					:op1 "Britain"))
+			:ARG1 (x11 / beef-00)))
+	:time (x14 / year
+		:mod (x13 / last))
+	:ARG1 (x16 / buy-01
+		:ARG1 (x20 / beef-00
+			:quant (x18 / mass-quantity
+				:unit (t / ton))
+			:mod (x21 / worth
+				:null_edge (x23 / monetary-quantity
+					:unit (y / yuan))))))
+
+# ::id 10
+# ::snt West Germany bought $ 50 million worth last year
+(x3 / buy-01
+	:ARG0 (x1 / organization
+		:name (n / name
+			:op1 "West"
+			:op2 "Germany"))
+	:ARG1 (x7 / worth)
+	:time (x9 / year
+		:mod (x8 / last)))
+
+# ::id 11
+# ::snt Although other countries have recently placed some restrictions on British beef and cattle, the French and German moves were the strongest by far
+(x17 / and
+	:condition (x6 / place-01
+		:ARG0 (x3 / country
+			:mod (x2 / other))
+		:time (x5 / recent)
+		:ARG1 (x8 / restrict-01
+			:quant (x7 / some))
+		:ARG1 (x12 / and
+			:op1 (x11 / beef-00)
+			:op2 (x13 / cattle)
+			:op1 (xap1 / country
+				:ARG0-of (xap0 / name
+					:ARG1 (x10 / country
+						:name (n2 / name
+							:op1 "Britain"))))))
+	:op1 (x16 / country
+		:name (n / name
+			:op1 "France"))
+	:op2 (x18 / country
+		:name (n1 / name
+			:op1 "Germany"))
+	:op2 (x19 / move
+		:mod (x22 / strong
+			:degree (m / most))))
+
+# ::id 12
+# ::snt The United States does not import British beef and recently rescinded permits for the importation of live cattle
+(x9 / and
+	:op1 (x6 / import-01
+		:ARG0 (x2 / country
+			:name (n / name
+				:op1 "United"
+				:op2 "States")))
+	:op2 (x11 / rescind
+		:time (x10 / recent)
+		:ARG1 (x12 / permit-01
+			:ARG1 (x15 / importation
+				:ARG1 (x18 / cattle
+					:mod (x17 / live)))))
+	:op1 (xap0 / infer-01
+		:ARG1 (x8 / beef-00
+			:mod (x7 / country
+				:name (n1 / name
+					:op1 "Britain")))))
+
+# ::id 13
+# ::snt British officials have been joined by European Community commissioners in protesting the French and Germany import ban
+(x5 / join-01
+	:ARG0 (x9 / commissioner
+		:null_edge (x7 / organization
+			:name (n / name
+				:op1 "European"))
+		:ARG1 (x8 / organization
+			:name (n1 / name
+				:op1 "Community")))
+	:ARG1 (x11 / protest-01
+		:ARG1 (x14 / and
+			:op1 (x13 / country
+				:name (n2 / name
+					:op1 "France"))
+			:op1 (x17 / ban-01
+				:ARG1 (x16 / import-01))))
+	:ARG1 (xap2 / person
+		:ARG0-of (x2 / have-org-role-91
+			:ARG2 (o / official)
+			:ARG1 (xap1 / country
+				:ARG0-of (xap0 / name
+					:ARG1 (x1 / country
+						:name (n3 / name
+							:op1 "Britain")))))))
+
+# ::id 14
+# ::snt Mad cow disease has been responsible for the deaths of nearly 14,000 cows since Mad cow disease was first noticed in the mid-1980s
+(x6 / responsible-41
+	:ARG1 (x3 / disease
+		:mod "Mad"
+		:mod (x2 / cow))
+	:ARG2 (x13 / cow
+		:quant (x11 / nearly
+			:op1 (x12 / 14,000)
+			:op1 (x20 / notice-01
+				:ARG1 (x17 / disease
+					:mod "Mad"
+					:mod (x16 / cow))
+				:time (x23 / date-entity)))))
+
+# ::id 15
+# ::snt BSE-infected cows " degenerate very quickly, " said a spokeswoman from Britain's Ministry of Agriculture
+(x9 / say-01
+	:ARG1 (x4 / degenerate
+		:ARG0 (x2 / cow
+			:mod (x1 / organization
+				:name (n / name
+					:op1 "BSE-infected")))
+		:manner (x6 / quick
+			:degree (x5 / very)))
+	:ARG0 (xap0 / person
+		:ARG0-of (x11 / have-org-role-91
+			:ARG2 (s / spokeswoman)
+			:source (x15 / government-organization
+				:name (n1 / name
+					:op1 "Ministry")
+				:null_edge (x13 / country
+					:name (n2 / name
+						:op1 "Britain"))
+				:null_edge (x17 / agriculture)))))
+
+# ::id 16
+# ::snt The cows become aggressive and then wobbly-legged before dying
+(x5 / and
+	:op1 (x3 / become-01
+		:ARG1 (x2 / cow)
+		:ARG2 (x4 / aggressive)
+		:ARG2 (x7 / wobbly-legged
+			:domain x2)
+		:time (x8 / before
+			:op1 (x9 / die-01))))
+
+# ::id 17
+# ::snt No one is certain what causes the disease, which affects the cow's brain
+(x6 / cause-01
+	:ARG0 (x2 / one)
+	:ARG1 (x8 / disease
+		:ARG0-of (x11 / affect-01
+			:ARG1 (x15 / brain
+				:part-of (x13 / cow)))))
+
+# ::id 18
+# ::snt But the prime suspect is tainted cow feed
+(x1 / contrast-01
+	:ARG2 (x6 / taint
+		:ARG1 (x4 / suspect
+			:mod (x3 / prime))
+		:ARG1 (x8 / feed-01
+			:mod (x7 / cow))))
+
+# ::id 19
+# ::snt Some experts believe that cattle contracted the disease as a result of eating food contaminated with the remains of sheep infected with a BSE-like disease called scrapie
+(x3 / believe-01
+	:ARG0 (x2 / person
+		:ARG1-of (e / expert-41)
+		:quant (x1 / some))
+	:ARG1 (x6 / contract-02
+		:ARG0 (x5 / cattle)
+		:ARG1 (x8 / disease)
+		:ARG2 (x11 / result-01
+			:ARG1 (x13 / eat-01
+				:ARG1 (x14 / food
+					:ARG1-of (x15 / contaminate
+						:ARG1 (x18 / remains
+							:ARG1 (x20 / sheep)
+							:ARG1-of (x21 / infect-01
+								:ARG2 (x25 / disease
+									:mod (x24 / organization
+										:name (n / name
+											:op1 "BSE-like"))
+									:ARG1-of (x26 / call-01
+										:ARG2 (x27 / scrapie)))))))))))
+
+# ::id 20
+# ::snt Although government and industry officials have been concerned for some time, mad cow disease did not become a household word until recently
+(x18 / become-01
+	:ARG1 (x15 / disease
+		:mod (x13 / mad)
+		:mod (x14 / cow))
+	:ARG2 (x21 / word
+		:ARG1-of (x8 / concern-01
+			:ARG0 (x3 / and
+				:op1 (x2 / government-organization
+					:ARG0-of (g / govern-01))
+				:op2 (x4 / industry))
+			:duration (x11 / time
+				:mod (x10 / some))
+			:ARG1 (xap0 / person
+				:ARG0-of (x5 / have-org-role-91
+					:ARG2 (o / official))))
+		:mod (x20 / household))
+	:time (x23 / recent))
+
+# ::id 21
+# ::snt On May 11, the Ministry of Agriculture revealed that a Siamese cat had died from a disease identical to BSE
+(x9 / reveal-01
+	:time (x2 / date-entity)
+	:ARG0 (x6 / government-organization
+		:name (n / name
+			:op1 "Ministry")
+		:null_edge (x8 / agriculture))
+	:ARG1 (x15 / die-01
+		:ARG1 (x13 / cat
+			:mod (x12 / country
+				:name (n1 / name
+					:op1 "Siamese")))
+		:ARG2 (x18 / disease
+			:mod (x19 / identical-41
+				:ARG2 (x21 / country
+					:name (n2 / name
+						:op1 "BSE"))))))
+
+# ::id 22
+# ::snt The press went wild with the story, suggesting, in boldface, that if cats can get The press, people can too
+(x3 / go-02
+	:ARG0 (x2 / press)
+	:manner (x4 / wild)
+	:ARG1 (x7 / story
+		:ARG0-of (x9 / suggest-01
+			:ARG1 (x17 / possible
+				:domain (x12 / boldface)
+				:domain (x18 / get-01
+					:ARG1 (x16 / cat)
+					:ARG1 (x20 / press)))
+			:ARG1 (x23 / possible
+				:mod (x24 / too)))))
+
+# ::id 23
+# ::snt Panic ensued
+(x2 / ensue
+	:ARG0 (x1 / panic-01))
+
+# ::id 24
+# ::snt " BSE has been around for six or seven years, " said David Lewis of the Meat and Livestock Commission
+(x13 / say-01
+	:location (x5 / around
+		:op1 (x2 / country
+			:name (n1 / name
+				:op1 "BSE"))
+		:op1 (x8 / or
+			:op1 6
+			:op1 (x10 / temporal-quantity
+				:unit (y / year)
+				:quant 7)))
+	:ARG0 (x14 / newspaper
+		:name (n / name
+			:op1 "David"
+			:op2 "Lewis")
+		:ARG0-of (x21 / have-org-role-91
+			:ARG1 (o / organization
+				:name (n2 / name
+					:op1 "Commission"))
+			:purpose (x19 / and
+				:op1 (x18 / meat)
+				:op2 (x20 / organization
+					:name (n3 / name
+						:op1 "Livestock"))))))
+
+# ::id 25
+# ::snt " And until the cat, it had n't been brought into the home .
+(x2 / and
+	:op2 (x11 / bring-01
+		:ARG1 (x5 / cat)
+		:ARG4 (x14 / home)))
+
+# ::id 26
+# ::snt Beef sales dropped, with surveys showing that about a quarter of British households had stopped eating a quarter of British households
+(x3 / drop-05
+	:ARG0 (x2 / sale
+		:mod (x1 / beef-00))
+	:ARG1 (x7 / show-01
+		:ARG0 (x6 / survey-01)
+		:ARG1 (x16 / stop-01
+			:ARG0 (x14 / household
+				:mod (xap1 / country
+					:ARG0-of (xap0 / name
+						:ARG1 (x13 / country
+							:name (n / name
+								:op1 "Britain")))))
+			:ARG1 (x17 / eat-01
+				:ARG1 (x22 / household
+					:mod (xap3 / country
+						:ARG0-of (xap2 / name
+							:ARG1 (x21 / country
+								:name (n1 / name
+									:op1 "Britain")))))))))
+
+# ::id 27
+# ::snt Two thousand schools dropped beef from British households menus
+(x4 / drop-05
+	:ARG0 (x3 / school)
+	:ARG1 (x5 / beef-00)
+	:ARG4 (x9 / menu
+		:mod (x8 / household)
+		:mod (xap1 / country
+			:ARG0-of (xap0 / name
+				:ARG1 (x7 / country
+					:name (n / name
+						:op1 "Britain"))))))
+
+# ::id 28
+# ::snt The government and meat industry fought back
+(x6 / fight-01
+	:ARG1 (x3 / and
+		:op1 (x2 / government-organization
+			:ARG0-of (g / govern-01))
+		:op1 (x5 / industry
+			:mod (x4 / meat))))
+
+# ::id 29
+# ::snt Some regulations were enacted to fight the disease, but more overt was the publicity campaign : Princess Anne said Princess Anne family was still eating British beef
+(x10 / contrast-01
+	:ARG1 (x4 / enact-01
+		:ARG1 (x2 / regulate-01
+			:quant (x1 / some))
+		:ARG1 (x6 / fight-01
+			:ARG1 (x8 / disease)))
+	:ARG2 (x12 / overt
+		:degree (x11 / more))
+	:ARG2 (x20 / say-01
+		:ARG0 (x19 / person
+			:name (n / name
+				:op1 "Anne")
+			:ARG0-of (x18 / have-org-role-91
+				:ARG2 (p / princess)))
+		:ARG1 (x26 / eat-01
+			:ARG0 (x23 / family
+				:poss (x21 / have-org-role-91
+					:ARG2 (p1 / princess))
+				:poss (x22 / person
+					:name (n1 / name
+						:op1 "Anne")))
+			:mod (x25 / still)
+			:ARG1 (x28 / beef-00
+				:mod "Britain"))))
+

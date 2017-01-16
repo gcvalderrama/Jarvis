@@ -1,0 +1,412 @@
+# ::id 1
+# ::snt A single-engine airplane crashed Tuesday into a ditch beside a dirt road on the outskirts of Albuquerque, killing all five people aboard, authorities said
+(x26 / say-01
+	:ARG1 (x4 / crash-01
+		:ARG1 (x3 / airplane
+			:mod (x2 / single-engine))
+		:ARG1 (x8 / ditch)
+		:ARG2 (x9 / beside
+			:op1 (x12 / road
+				:mod (x11 / dirt)
+				:ARG1 (x15 / outskirt
+					:poss (x17 / country
+						:name (n / name
+							:op1 "Albuquerque")))))
+		:ARG1 (x19 / person
+			:ARG1-of (k / kill-01)
+			:quant (x20 / all
+				:quant 5
+				:location (x23 / aboard)))
+		:time (xap0 / date-entity
+			:weekday (x5 / tuesday)))
+	:ARG0 (x25 / authority))
+
+# ::id 2
+# ::snt Four adults and one child died in the crash, which witnesses said occurred about 5 p.m., when it was raining, Albuquerque police Sgt. R.C. Porter said
+(x29 / say-01
+	:ARG1 (x6 / die-01
+		:ARG1 (x3 / and
+			:op1 (x2 / adult
+				:quant 4)
+			:op2 (x5 / child
+				:quant 1))
+		:ARG1-of (x13 / say-01
+			:ARG0 (x12 / person
+				:ARG0-of (w / witness-01))
+			:null_edge 5)
+		:time (x22 / rain-01))
+	:ARG0 (x27 / newspaper
+		:name (n / name
+			:op1 "R.C."
+			:op2 "Porter")
+		:ARG0-of (x25 / police
+			:ARG1 (x24 / country
+				:name (n1 / name
+					:op1 "Albuquerque")))
+		:ARG0-of (x26 / sgt.)))
+
+# ::id 3
+# ::snt The airplane was attempting to land at nearby Coronado Airport, Porter said
+(x13 / say-01
+	:ARG1 (x4 / attempt-01
+		:ARG0 (x2 / airplane)
+		:ARG1 (x6 / land-01
+			:location (x10 / airport
+				:mod (x8 / nearby)
+				:mod (x9 / country
+					:name (n1 / name
+						:op1 "Coronado")))))
+	:ARG0 (x12 / person
+		:name (n / name
+			:op1 "Porter")))
+
+# ::id 4
+# ::snt very high _ maybe 100 feet aborted very high _ maybe 100 feet first attempt and was coming in for a second try when very high _ maybe 100 feet crashed, Albuquerque police Sgt. R.C. Porter said
+(x38 / say-01
+	:ARG1 (x16 / and
+		:op1 (x7 / aborted
+			:ARG1 (x3 / _
+				:mod (x2 / high
+					:degree (x1 / very)))
+			:mod (x4 / maybe
+				:op1 (x6 / foot
+					:quant 100))
+			:ARG1 (x15 / attempt-01))
+		:op2 (x13 / foot
+			:mod (x9 / high
+				:degree (x8 / very))
+			:quant 100)
+		:op2 (x18 / come-01
+			:ARG1 x3
+			:ARG1 x13
+			:purpose (x23 / try-01)
+			:time (x31 / crash-01
+				:ARG1 (x30 / foot
+					:mod (x26 / high
+						:degree (x25 / very))
+					:quant 100))))
+	:ARG0 (x36 / newspaper
+		:name (n / name
+			:op1 "R.C."
+			:op2 "Porter")
+		:ARG0-of (x34 / police
+			:ARG1 (x33 / country
+				:name (n1 / name
+					:op1 "Albuquerque")))
+		:ARG0-of (x35 / sgt.)))
+
+# ::id 5
+# ::snt State police said the red-and-white Cessna P210, which seats six people, was from Salt Lake City
+(x3 / say-01
+	:ARG0 (x2 / police
+		:mod (x1 / state))
+	:ARG1 (x10 / seat
+		:mod (x7 / p210
+			:mod (x5 / red-and-white)
+			:poss (x6 / organization
+				:name (n / name
+					:op1 "Cessna")))
+		:quant 6
+		:location (x18 / city
+			:null_edge (x16 / country
+				:name (n1 / name
+					:op1 "Salt")
+				:mod (x17 / country
+					:name (n2 / name
+						:op1 "Lake"))))))
+
+# ::id 6
+# ::snt Identities of the victims were not immediately available
+(x8 / available
+	:domain (x1 / identity
+		:poss (x4 / victim))
+	:time (x7 / immediate))
+
+# ::id 7
+# ::snt The bodies were taken to the Office of the Medical Investigator in Albuquerque
+(x11 / person
+	:ARG0-of (i / investigate-01)
+	:ARG1 (x2 / body)
+	:null_edge "Office"
+	:mod (x10 / medicine)
+	:location (x13 / country
+		:name (n / name
+			:op1 "Albuquerque")))
+
+# ::id 8
+# ::snt Walter Ramazzini Jr., 17, of Albuquerque, said Walter Ramazzini Jr. was sitting about 100 yards from the airplane when it crashed
+(x10 / say-01
+	:ARG0 (x1 / name
+		:op1 "Walter"
+		:op2 "Ramazzini"
+		:op3 "Jr."
+		:mod (x5 / date-entity))
+	:ARG0 (x8 / country
+		:name (n / name
+			:op1 "Albuquerque"))
+	:ARG1 (x15 / sit-01
+		:ARG0 x1
+		:ARG1 (x18 / yard
+			:null_edge (x16 / about
+				:op1 (x11 / name
+					:op1 "Walter"
+					:op2 "Ramazzini"
+					:op3 "Jr.")
+				:null_edge 100))
+		:ARG2 (x21 / airplane)
+		:time (x24 / crash-01)))
+
+# ::id 9
+# ::snt " Walter Ramazzini Jr. was going east, making a left turn from the airport, " Ramazzini said
+(x19 / say-01
+	:name (x2 / name
+		:op1 "Walter"
+		:op2 "Ramazzini"
+		:op3 "Jr.")
+	:ARG1 (x6 / go-02
+		:ARG0 x2
+		:direction (x7 / east)
+		:null_edge (x9 / make-02
+			:ARG2 x2
+			:ARG1 (x12 / turn-14
+				:mod (x11 / left))
+			:ARG2 (x15 / airport)))
+	:ARG0 (x18 / person
+		:name (n / name
+			:op1 "Ramazzini")))
+
+# ::id 10
+# ::snt " A gust of wind hit Walter Ramazzini Jr. from right to left
+(x6 / hit-01
+	:ARG0 (x3 / gust
+		:ARG1 (x5 / wind))
+	:ARG1 (x7 / name
+		:op1 "Walter"
+		:op2 "Ramazzini"
+		:op3 "Jr.")
+	:source (x13 / left
+		:mod (x11 / right)))
+
+# ::id 11
+# ::snt 
+(x5 / do-02
+	:ARG0 (x2 / name
+		:op1 "Walter"
+		:op2 "Ramazzini"
+		:op3 "Jr.")
+	:ARG1 (x7 / bank
+		:quant 3))
+
+# ::id 12
+# ::snt The wind made Walter Ramazzini Jr. bank to the left 30 degrees or so
+(x13 / or
+	:op1 (x2 / wind)
+	:op2 (x7 / bank
+		:name (x4 / name
+			:op1 "Walter"
+			:op2 "Ramazzini"
+			:op3 "Jr."))
+	:mod (x10 / left)
+	:op2 30
+	:op2 (x14 / so))
+
+# ::id 13
+# ::snt To correct for that, Walter Ramazzini Jr. banked right and Walter Ramazzini Jr. kept going and passed level flight as if to turn right, " Ramazzini said
+(x29 / say-01
+	:name (x6 / name
+		:op1 "Walter"
+		:op2 "Ramazzini"
+		:op3 "Jr.")
+	:ARG1 (x11 / and
+		:op1 (x9 / bank-01
+			:ARG2 (x2 / correct-01
+				:ARG2 (x4 / that))
+			:ARG0 (x17 / and
+				:op1 (x15 / keep-01
+					:ARG0 (x12 / name
+						:op1 "Walter"
+						:op2 "Ramazzini"
+						:op3 "Jr.")
+					:ARG1 (x16 / go-02
+						:ARG0 x12))
+				:op2 (x18 / pass-05
+					:ARG1 (x20 / fly-01
+						:op (f / flight)
+						:mod (x19 / level))
+					:time (x24 / turn-02
+						:manner (x25 / right)))))
+		:op2 (x10 / right-41))
+	:ARG0 (x28 / person
+		:name (n / name
+			:op1 "Ramazzini")))
+
+# ::id 14
+# ::snt " To correct again for that, Walter Ramazzini Jr. went again to the left ... and went nose-first into the ground, " said Ramazzini, a student pilot
+(x25 / say-01
+	:name (x8 / name
+		:op1 "Walter"
+		:op2 "Ramazzini"
+		:op3 "Jr.")
+	:ARG1 (x17 / and
+		:op1 (x11 / go-02
+			:purpose (x3 / correct-01
+				:mod (x4 / again)
+				:ARG2 (x6 / that)
+				:ARG0 x8)
+			:mod (x12 / again)
+			:ARG2 (x15 / left))
+		:op2 (x18 / go-02
+			:direction (x19 / nose-first)
+			:ARG4 (x22 / ground)))
+	:ARG0 (x26 / person
+		:name (n / name
+			:op1 "Ramazzini")
+		:ARG1-of (x30 / pilot-01
+			:mod (x29 / person
+				:ARG0-of (s / study-01)))))
+
+# ::id 15
+# ::snt 
+(x8 / and
+	:op1 (x5 / hit-01
+		:ARG0 (x2 / name
+			:op1 "Walter"
+			:op2 "Ramazzini"
+			:op3 "Jr.")
+		:ARG1 (x7 / ground))
+	:op2 (x9 / cartwheel
+		:mod (x10 / over)))
+
+# ::id 16
+# ::snt " All Ramazzini saw was a puff of smoke, " Ramazzini said
+(x13 / say-01
+	:ARG1 (x7 / puff-01
+		:ARG0 (x3 / person
+			:name (n1 / name
+				:op1 "Ramazzini")
+			:quant (x2 / all))
+		:consist-of (x9 / smoke))
+	:ARG0 (x12 / person
+		:name (n / name
+			:op1 "Ramazzini")))
+
+# ::id 17
+# ::snt 
+(x15 / say-01
+	:ARG1 (x11 / foot
+		:domain (x2 / airplane)
+		:mod (x7 / high
+			:degree (x6 / very))
+		:quant 100)
+	:ARG0 (x14 / person
+		:name (n / name
+			:op1 "Ramazzini")))
+
+# ::id 18
+# ::snt " The weather was gusty and showery
+(x6 / and
+	:op1 (x5 / gusty
+		:domain (x3 / weather)))
+
+# ::id 19
+# ::snt The weather was sprinkling .
+(x4 / sprinkle
+	:ARG0 (x2 / weather))
+
+# ::id 20
+# ::snt Ramazzini said Ramazzini was among the first four people at the crash site
+(x2 / say-01
+	:ARG0 (x1 / person
+		:name (n / name
+			:op1 "Ramazzini"))
+	:ARG0 (x3 / person
+		:name (n1 / name
+			:op1 "Ramazzini")
+		:null_edge (x13 / site
+			:null_edge 4
+			:purpose (x12 / crash-01))))
+
+# ::id 21
+# ::snt " the first four people went up there and there was nobody alive, " Ramazzini said
+(x17 / say-01
+	:ARG1 (x9 / and
+		:ARG1-of (xap0 / cause-01
+			:ARG1 (x6 / go-02
+				:ARG2 4
+				:direction (x7 / up
+					:op1 (x8 / there))
+				:ARG1 (x12 / nobody
+					:mod (x13 / live-01
+						:op (a / alive))))))
+	:ARG0 (x16 / person
+		:name (n / name
+			:op1 "Ramazzini")))
+
+# ::id 22
+# ::snt " You could smell fuel
+(x3 / possible
+	:domain (x4 / smell
+		:ARG0 (x2 / you)
+		:ARG1 (x5 / fuel)))
+
+# ::id 23
+# ::snt the first four people were looking for fire extinguishers .
+(x6 / look-01
+	:ARG1 4
+	:ARG1 (x9 / extinguisher
+		:mod (x8 / fire-arm)))
+
+# ::id 24
+# ::snt He said the witnesses thought the airplane might blow up, so the witnesses retreated
+(x2 / say-01
+	:ARG0 (x1 / he)
+	:ARG1 (x5 / think-01
+		:ARG0 (x4 / person
+			:ARG0-of (w / witness-01))
+		:ARG1 (x9 / blow-01
+			:ARG0 (x7 / airplane)
+			:time (x15 / retreat
+				:ARG1 (x14 / person
+					:ARG0-of (w1 / witness-01))))))
+
+# ::id 25
+# ::snt Firefighters arrived later and sprayed the crumpled airplane with water before rescue crews removed the bodies from the craft
+(x4 / and
+	:op1 (x2 / arrive-01
+		:ARG1 (x1 / firefighter)
+		:time (x3 / late))
+	:op2 (x5 / spray
+		:ARG0 x1
+		:ARG1 (x8 / airplane
+			:mod (x7 / crumpled))
+		:ARG2 (x10 / water)
+		:time (x11 / before
+			:op1 (x14 / remove-01
+				:ARG0 (x13 / crew
+					:mod (x12 / rescue-01))
+				:ARG1 (x16 / body)
+				:ARG2 (x19 / craft-01)))))
+
+# ::id 26
+# ::snt National Transportation Safety Board investigators were en route to the crash site to conduct an investigation with the Federal Aviation Administration
+(x5 / person
+	:ARG0-of (i / investigate-01)
+	:null_edge (x1 / null_tag)
+	:ARG1 (x2 / government-organization
+		:name (n / name
+			:op1 "Transportation"))
+	:ARG1 (x3 / organization
+		:name (n1 / name
+			:op1 "Safety"))
+	:ARG1 (x4 / board)
+	:ARG1 (x8 / route
+		:ARG2 (x12 / site
+			:location-of (x11 / crash-01)))
+	:purpose (x14 / conduct-01
+		:ARG1 (x16 / investigate-01
+			:ARG1 (x19 / government-organization
+				:name (n2 / name
+					:op1 "Federal"
+					:op2 "Aviation"
+					:op3 "Administration")))))
+

@@ -1,0 +1,529 @@
+# ::id 1
+# ::snt Tuberculosis has become the world's deadliest infectious disease, and the toll could soon rise even more dramatically if controls are not initiated quickly, the World Health Organization said Monday
+(x31 / say-01
+	:ARG1 (x3 / become-01
+		:ARG2 (x11 / and
+			:op2 (x9 / disease
+				:ARG0 (x1 / newspaper
+					:name (n1 / name
+						:op1 "Tuberculosis"))
+				:mod (x8 / infectious
+					:compared-to (x5 / world)))
+			:op2 (x14 / possible
+				:domain (x16 / rise-01
+					:ARG1 (x13 / toll)
+					:time (x15 / soon)
+					:manner (x19 / dramatical
+						:degree (x18 / more
+							:mod (x17 / even)))
+					:condition (x24 / initiate-01
+						:ARG1 (x21 / control-01)
+						:manner (x25 / quick))))))
+	:ARG0 (x28 / organization
+		:name (n / name
+			:op1 "World"
+			:op2 "Health"
+			:op3 "Organization"))
+	:time (x32 / monday))
+
+# ::id 2
+# ::snt The U.N. agency, in The U.N. agency first comprehensive look at global tuberculosis in a decade, said the disease kills nearly 3 million people a year, most of nearly 3 million people a year between the ages of 15 and 59, " the segment of the population that is economically most productive .
+(x19 / say-01
+	:ARG0 (x3 / agency
+		:mod (x2 / organization
+			:name (n / name
+				:op1 "U.N.")))
+	:manner (x11 / look-01
+		:ARG0 (x8 / agency
+			:poss (x7 / organization
+				:name (n1 / name
+					:op1 "U.N."))
+			:mod (x9 / first))
+		:mod (x10 / comprehensive)
+		:ARG1 (x14 / tuberculosis
+			:mod (x13 / globe)
+			:time (xap0 / after
+				:op1 (x17 / temporal-quantity
+					:unit (d / decade)))))
+	:ARG1 (x22 / kill-01
+		:ARG0 (x21 / disease)
+		:ARG1 (x23 / nearly
+			:degree (x30 / most))
+		:ARG1 (x48 / segment
+			:duration (x32 / nearly
+				:op1 (x40 / age-01
+					:ARG2 (x43 / and
+						:op1 15
+						:op2 59)))
+			:part-of (x51 / population)
+			:mod (x56 / productive
+				:manner (x54 / economy)
+				:degree (x55 / most)))))
+
+# ::id 3
+# ::snt WHO attributed the sharp rise in part to the growing AIDS epidemic
+(x2 / attribute-01
+	:ARG0 (x1 / organization
+		:name (n / name
+			:op1 "WHO"))
+	:ARG1 (x5 / rise-01
+		:manner (x4 / sharp)
+		:location (x7 / part))
+	:ARG2 (x12 / epidemic
+		:ARG1-of (x10 / grow-01)))
+
+# ::id 4
+# ::snt the sharp rise estimated that about 3 million people worldwide are dually infected with the human immunodeficiency virus (HIV -RRB-, which causes AIDS, and tuberculosis
+(x4 / estimate-01
+	:ARG0 (x3 / rise-01
+		:manner (x2 / sharp))
+	:ARG1 (x13 / infect-01
+		:ARG1 (x9 / people
+			:null_edge (x10 / worldwide))
+		:manner (x12 / dually)
+		:ARG2 (x18 / virus
+			:mod (x16 / human)
+			:mod (x17 / immunodeficiency)
+			:ARG0-of (x24 / cause-01
+				:ARG1 (x27 / and
+					:op1 (x25 / disease
+						:name (n / name
+							:op1 "AIDS"))
+					:op2 (x28 / tuberculosis))))))
+
+# ::id 5
+# ::snt " the sharp rise is becoming a parallel epidemic, and it is this trend that has public health officials worried, " Dr. Hiroshi Nakajima, director general of WHO, said in a statement
+(x36 / state-01
+	:ARG1 (x11 / and
+		:op1 (x6 / become-01
+			:ARG1 (x4 / rise-01
+				:manner (x3 / sharp))
+			:ARG2 (x9 / epidemic))
+		:op2 (x15 / trend-01
+			:mod (x14 / this)
+			:ARG1 (x21 / worry-02
+				:ARG0 (xap0 / person
+					:ARG0-of (x20 / have-org-role-91
+						:ARG2 (o / official)
+						:ARG1 (x19 / health
+							:mod (x18 / public)))))))
+	:ARG0 (x25 / newspaper
+		:name (n / name
+			:op1 "Hiroshi"
+			:op2 "Nakajima")
+		:ARG0-of (x28 / have-org-role-91
+			:ARG2 (d / director)
+			:mod (x29 / general))))
+
+# ::id 6
+# ::snt The agency estimated that between 15 million and 20 million adults will be infected with HIV by the year 2000, and The U.N. agency predicted that the number of cases and deaths from tuberculosis will rise sharply as a result, especially in sub-Saharan Africa, Latin America and Southeast Asia
+(x3 / estimate-01
+	:ARG0 (x2 / agency)
+	:ARG1 (x22 / and
+		:op1 (x14 / infect-01
+			:ARG1 (x11 / adult
+				:null_edge (x10 / numerical-quantity
+					:unit (m / million)
+					:null_edge 15
+					:null_edge 20))
+			:ARG2 (x16 / disease
+				:name (n / name
+					:op1 "HIV"))
+			:time (x17 / by
+				:op1 (x20 / date-entity
+					:year 2000)))
+		:op2 (x26 / predict-01
+			:ARG1 x11
+			:ARG0 (x25 / agency
+				:mod (x24 / organization
+					:name (n1 / name
+						:op1 "U.N.")))
+			:ARG1 (x37 / rise-01
+				:ARG1 (x29 / number
+					:quant-of (x32 / and
+						:op1 (x31 / case)
+						:op2 (x33 / death))
+					:quant-of (x35 / tuberculosis))
+				:manner (x38 / sharp)
+				:ARG1 (x41 / result-01)
+				:ARG1 (x50 / and
+					:mod (x43 / especially)
+					:mod (x45 / sub-saharan)
+					:op2 (x49 / country
+						:name (n2 / name
+							:op1 "America")
+						:null_edge (x48 / country
+							:name (n4 / name
+								:op1 "Latin")))
+					:op2 (x52 / continent
+						:name (n3 / name
+							:op1 "Asia")
+						:null_edge (x51 / null_tag)))))))
+
+# ::id 7
+# ::snt " These new data have been stunning to everyone, because an awful lot of people had thought that tuberculosis had gone away, " said Dr. Barry Bloom, a professor of microbiology at the Albert Einstein College of Medicine in New York and a consultant to the United Nations
+(x26 / say-01
+	:ARG1 (x7 / stunning
+		:ARG0 (x4 / data
+			:mod (x3 / new))
+		:ARG2 (x9 / everyone)
+		:ARG1-of (x11 / cause-01
+			:ARG0 (x18 / think-01
+				:ARG0 (x14 / lot
+					:mod (x13 / awful)
+					:ARG1-of (x15 / include-91))
+				:ARG1 (x22 / go-01
+					:ARG0 (x20 / tuberculosis)
+					:null_edge (x23 / away)))))
+	:ARG0 (x28 / newspaper
+		:name (n / name
+			:op1 "Barry"
+			:op2 "Bloom")
+		:ARG0-of (x32 / have-org-role-91
+			:ARG2 (p / professor)
+			:ARG1 (x34 / microbiology)
+			:location (x37 / government-organization
+				:name (n1 / name
+					:op1 "Albert"
+					:op2 "Einstein"
+					:op3 "College"
+					:op4 "of"
+					:op5 "Medicine")
+				:location (x44 / country
+					:name (n2 / name
+						:op1 "York")
+					:null_edge (x43 / null_tag)))
+			:topic (x45 / and
+				:op3 (x47 / person
+					:ARG0-of (c / consult-01)
+					:null_edge (x48 / null_tag
+						:null_edge (x51 / null_tag
+							:null_edge (x50 / null_tag))))))))
+
+# ::id 8
+# ::snt Tuberculosis is a highly communicable disease of the lungs and other organs caused by a bacterium transmitted through the air when infected people cough or sneeze
+(x6 / disease
+	:domain (x1 / tuberculosis)
+	:mod (x5 / communicable
+		:degree (x4 / high))
+	:ARG1 (x10 / and
+		:op1 (x9 / lung)
+		:op2 (x12 / null_tag
+			:mod (x11 / other)
+			:ARG1-of (x13 / cause-01
+				:ARG0 (x16 / bacteria
+					:ARG1-of (x17 / transmit-01
+						:path (x20 / air
+							:quant (x25 / or
+								:op1 (x24 / cough
+									:ARG1 (x22 / infect-01))
+								:op2 (x26 / sneeze)))))))))
+
+# ::id 9
+# ::snt There are about 8 million new cases of tuberculosis a year, according to the U.N. agency
+(x17 / agency
+	:mod (x9 / tuberculosis
+		:poss-of (x7 / case
+			:mod (x6 / new)
+			:time (x11 / year)))
+	:mod (x16 / organization
+		:name (n / name
+			:op1 "U.N.")))
+
+# ::id 10
+# ::snt About half of these are infectious
+(x6 / infectious
+	:domain (x2 / half
+		:mod (x1 / about)))
+
+# ::id 11
+# ::snt Also, an estimated 1.7 billion individuals worldwide carry the organism but are not infectious to others
+(x12 / contrast-01
+	:ARG1 (x9 / carry-01
+		:mod (x1 / also)
+		:ARG0 (x7 / individual)
+		:null_edge (x8 / worldwide)
+		:ARG1 (x11 / organism)
+		:ARG1 (xap0 / monetary-quantity
+			:ARG1-of (x4 / estimate-01)))
+	:ARG2 (x17 / other
+		:mod (x15 / infectious)))
+
+# ::id 12
+# ::snt In these individuals, the organism can remain dormant without causing active disease for many years unless the immune system is somehow impaired
+(x7 / possible
+	:domain (x8 / remain-01
+		:ARG1 (x6 / organism)
+		:ARG3 (x9 / dormant
+			:null_edge (x3 / individual)
+			:ARG0-of (x11 / cause-01
+				:ARG1 (x13 / disease
+					:mod (x12 / active))
+				:duration (x15 / many
+					:op1 (x16 / temporal-quantity
+						:unit (y / year)))))
+		:ARG3 (x23 / impaired
+			:ARG1 (x20 / system
+				:mod (x19 / immune))
+			:manner (x22 / somehow))))
+
+# ::id 13
+# ::snt AIDS, or acquired immune deficiency syndrome, destroys the body's immune system
+(x9 / destroy-01
+	:ARG0 (x3 / or
+		:op1 (x1 / disease
+			:name (n / name
+				:op1 "AIDS"))
+		:op2 (x7 / syndrome
+			:ARG1-of (x4 / acquire-01)
+			:mod (x5 / immune)
+			:mod (x6 / person
+				:prep-with (d / deficiency))))
+	:ARG1 (x14 / system
+		:part-of (x11 / body)
+		:mod (x13 / immune)))
+
+# ::id 14
+# ::snt An individual does not have to have a damaged immune system to contract an active case of tuberculosis
+(x5 / have-03
+	:ARG0 (x2 / individual)
+	:purpose (x13 / contract-02
+		:ARG1 (x11 / system
+			:ARG1-of (x9 / damaged)
+			:mod (x10 / immune))
+		:ARG1 (x16 / case
+			:mod (x15 / active)
+			:topic (x18 / tuberculosis))))
+
+# ::id 15
+# ::snt But when a case of tuberculosis becomes active, as a case of tuberculosis can in individuals who carry the organism, that person can also infect numerous others
+(x1 / contrast-01
+	:ARG2 (x15 / possible
+		:condition (x7 / become-01
+			:ARG1 (x4 / case
+				:topic (x6 / tuberculosis))
+			:ARG2 (x8 / active)
+			:ARG1 (x12 / case
+				:topic (x14 / tuberculosis)))
+		:location (x17 / individual
+			:ARG0-of (x19 / carry-01
+				:ARG1 (x21 / organism))))
+	:ARG2 (x25 / possible
+		:domain (x27 / infect-01
+			:ARG0 (x24 / person)
+			:mod (x26 / also)
+			:ARG1 (x29 / other
+				:quant (x28 / numerous)))))
+
+# ::id 16
+# ::snt This is what is happening in developing nations, where the AIDS epidemic is raging
+(x5 / happen-01
+	:ARG1 (x1 / this)
+	:location (x8 / nation
+		:ARG1-of (x7 / develop-02)
+		:ARG0-of (x15 / rage
+			:ARG0 (x13 / epidemic
+				:mod (x12 / disease
+					:name (n / name
+						:op1 "AIDS"))))))
+
+# ::id 17
+# ::snt " In many places, more than half the beds in medical wards are patients with tuberculosis, " Bloom said
+(x21 / say-01
+	:ARG1 (x15 / patient
+		:location (x4 / place
+			:quant (x3 / many))
+		:domain (x10 / bed
+			:quant (x6 / more-than)
+			:location (x13 / ward-01
+				:mod (x12 / medicine)))
+		:ARG1 (x17 / tuberculosis))
+	:ARG0 (x20 / person
+		:name (n / name
+			:op1 "Bloom")))
+
+# ::id 18
+# ::snt " Many of these people do, in fact, die of AIDS
+(x3 / include-91
+	:ARG1 (x11 / die-01
+		:ARG1 (x2 / many)
+		:prep-in (x9 / fact)
+		:ARG2 (x13 / disease
+			:name (n / name
+				:op1 "AIDS"))))
+
+# ::id 19
+# ::snt But if they 're not treated for tuberculosis, those people will be spreading the disease (tuberculosis )in their communities
+(x1 / contrast-01
+	:ARG2 (x14 / spread-03
+		:ARG1 (x6 / treat-01
+			:ARG2 (x8 / tuberculosis))
+		:ARG1 (x16 / disease
+			:mod (x18 / tuberculosis))
+		:location (x22 / community)))
+
+# ::id 20
+# ::snt You do n't have to have a depressed immune system to get tuberculosis .
+(x4 / have-03
+	:ARG0 (x1 / you)
+	:purpose (x12 / get-01
+		:ARG1 (x10 / system
+			:ARG1-of (x8 / depress-01)
+			:mod (x9 / immune))
+		:ARG1 (x13 / tuberculosis)))
+
+# ::id 21
+# ::snt In the United States, public health officials began to recognize about five years ago that tuberculosis -- after steadily declining since the 1950s -- was making a surprising comeback as a result of the AIDS epidemic
+(x9 / begin-01
+	:location (x3 / country
+		:name (n / name
+			:op1 "United"
+			:op2 "States"))
+	:ARG1 (x11 / recognize-02
+		:ARG1 (x14 / year
+			:ARG2-of (x33 / result-01
+				:ARG1 (x15 / person
+					:name (n1 / name
+						:op1 "ago"))
+				:ARG1 (x17 / tuberculosis
+					:mod (x16 / that)
+					:time (x19 / after
+						:op1 (x21 / decline-01
+							:manner (x20 / steady)
+							:time (x22 / since
+								:op1 (xap1 / date-entity
+									:time (x24 / date-entity))))))
+				:ARG1 (x30 / comeback
+					:mod (x29 / surprise-01))
+				:ARG2 (x37 / epidemic
+					:mod (x36 / disease
+						:name (n2 / name
+							:op1 "AIDS")))))
+		:ARG0 (xap0 / person
+			:ARG0-of (x8 / have-org-role-91
+				:ARG2 (o / official)
+				:ARG1 (x7 / health
+					:mod (x6 / public)))))
+	:ARG0 xap0)
+
+# ::id 22
+# ::snt At that time, public health officials worried noticed a startling and unexpected drop in the rate of decline of tuberculosis cases
+(x9 / notice-01
+	:time (x3 / time
+		:mod (x2 / that))
+	:ARG1 (x14 / drop-01
+		:ARG1 (x12 / and
+			:op1 (x11 / startling)
+			:op2 (x13 / expect-01
+				:polarity -))
+		:ARG1 (x17 / rate
+			:mod (x19 / decline-01
+				:ARG1 (x22 / case
+					:mod (x21 / tuberculosis)))))
+	:ARG0 (xap0 / person
+		:ARG0-of (x7 / have-org-role-91
+			:ARG2 (o / official)
+			:ARG1 (x6 / health
+				:mod (x5 / public)))
+		:ARG1-of (x8 / worry-01)))
+
+# ::id 23
+# ::snt This year, Bloom said, the number of cases of active tuberculosis in the United States is up nearly 5 % over last year, with 23,495 new cases
+(x5 / say-01
+	:time (x2 / year
+		:mod (x1 / this))
+	:ARG0 (x4 / person
+		:name (n / name
+			:op1 "Bloom"))
+	:ARG1 (x13 / tuberculosis
+		:ARG1 (x10 / case
+			:quant (x8 / number))
+		:mod (x12 / active)
+		:location (x16 / country
+			:name (n1 / name
+				:op1 "United"
+				:op2 "States")))
+	:ARG1 (x19 / up)
+	:ARG1 (x20 / nearly)
+	:time (x25 / year
+		:mod (x24 / last))
+	:ARG1 (x30 / case
+		:mod (x29 / new)))
+
+# ::id 24
+# ::snt The overall incidence of tuberculosis in the United States is 9.5 cases per 100,000 population, Barry Bloom said
+(x19 / say-01
+	:ARG1 (x12 / case
+		:quant (x3 / incidence
+			:mod (x2 / overall)
+			:ARG1 (x5 / tuberculosis
+				:location (x8 / country
+					:name (n1 / name
+						:op1 "United"
+						:op2 "States"))))
+		:quant (x11 / 9.5)
+		:topic (x15 / population))
+	:ARG0 (x17 / newspaper
+		:name (n / name
+			:op1 "Barry"
+			:op2 "Bloom")))
+
+# ::id 25
+# ::snt In New York City, which has the highest number of AIDS cases in the nation, the incidence is 36 per 100,000, Bloom said
+(x26 / say-01
+	:null_edge (x13 / case
+		:mod (x3 / country
+			:name (n1 / name
+				:op1 "York"))
+		:location (x4 / city
+			:null_edge (x2 / null_tag))
+		:quant (x10 / number
+			:mod (x9 / high
+				:degree (m / most)))
+		:mod (x12 / disease
+			:name (n2 / name
+				:op1 "AIDS"))
+		:location (x16 / nation)
+		:quant (x19 / incidence)
+		:null_edge 36)
+	:ARG0 (x25 / person
+		:name (n / name
+			:op1 "Bloom")))
+
+# ::id 26
+# ::snt Effective drugs to combat tuberculosis cost about $ 30 to $ 50 per person, given over six months
+(x6 / cost-01
+	:ARG1 (x2 / drug
+		:mod (x1 / effective))
+	:ARG1 (x14 / person
+		:ARG0-of (x4 / combat-01
+			:ARG1 (x5 / tuberculosis))
+		:quant 50
+		:duration (x17 / over
+			:op1 (x19 / temporal-quantity
+				:unit (m / month)
+				:quant 6))))
+
+# ::id 27
+# ::snt However, the drugs are not always available in developing countries, and compliance is a major problem
+(x13 / and
+	:op1 (x8 / available
+		:domain (x4 / drug)
+		:time (x7 / always)
+		:location (x11 / country
+			:ARG1-of (x10 / develop-02)))
+	:op3 (x18 / problem
+		:ARG0-of (x14 / comply-01)
+		:mod (x17 / major)))
+
+# ::id 28
+# ::snt The drugs must be taken for the entire six months to eliminate the infection
+(x5 / take-01
+	:ARG1 (x2 / drug)
+	:duration (x10 / temporal-quantity
+		:unit (m / month)
+		:mod (x8 / entire)
+		:quant 6)
+	:purpose (x12 / eliminate-01
+		:ARG1 (x14 / infect-01)))
+

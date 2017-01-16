@@ -1,0 +1,747 @@
+# ::id 1
+# ::snt A CEO sneezes in A CEO corporate suite
+(x / xconcept
+	:x (x3 / sneeze
+		:null_edge (x2 / ceo))
+	:x (x8 / suite
+		:mod (x6 / CEO)
+		:mod (x7 / corporation)))
+
+# ::id 2
+# ::snt At the other end of the building, half an hour later, a janitor pauses in a janitor work and yawns. ; The next day, the janitor is sick with the same flu the CEO had
+(x21 / and
+	:op1 (x16 / pause
+		:time (x12 / late
+			:op1 (x11 / temporal-quantity
+				:unit (h / hour)
+				:op1 (x9 / half)))
+		:ARG0 (x15 / janitor)
+		:location (x20 / work-01
+			:ARG1 (x19 / janitor))
+		:null_edge (x32 / sick
+			:time (x27 / day
+				:mod (x26 / next))
+			:prep-with (x36 / flu
+				:ARG1-of (x35 / same-41)
+				:ARG0-of (x39 / have-03
+					:ARG0 (x38 / ceo)))))
+	:op2 (x22 / yawn
+		:ARG0 x15))
+
+# ::id 3
+# ::snt What's the link
+(x4 / link-01)
+
+# ::id 4
+# ::snt A poor ventilation system that does little more than recycle old, stale air from one end of the building to another. ; Millions of American office workers are getting more than Millions of American office workers bargained for when Millions of American office workers inhale in a building that has no fresh air
+(x / xconcept
+	:x (x24 / and
+		:op1 (x4 / system
+			:mod (x2 / poor)
+			:ARG0-of (x3 / ventilation)
+			:degree (x8 / more
+				:degree (x7 / little)
+				:compared-to (x10 / recycle-01
+					:ARG1 (x14 / air
+						:mod (x11 / old)
+						:mod (x13 / stale))
+					:null_edge (x31 / get-03
+						:ARG0 (x25 / million
+							:poss (x29 / person
+								:ARG0-of (w / work-01)
+								:null_edge (x27 / country
+									:name (n / name
+										:op1 "American"))
+								:mod (x28 / office)))
+						:ARG1 (x32 / more
+							:compared-to (x39 / bargain-01
+								:ARG0 (x34 / million
+									:poss (x38 / person
+										:ARG0-of (w1 / work-01)
+										:mod (x37 / office)))
+								:purpose (x47 / inhale-01
+									:ARG0 (x42 / million
+										:poss (x46 / person
+											:ARG0-of (w2 / work-01)
+											:null_edge (x44 / country
+												:name (n1 / name
+													:op1 "American"))
+											:mod (x45 / office)))
+									:ARG2 (x50 / building
+										:ARG0-of (x52 / have-03
+											:polarity -
+											:ARG1 (x55 / air
+												:mod (x54 / fresh)))))))))))
+		:source (x17 / end
+			:quant 1
+			:ARG1 (x20 / building)
+			:ARG2 (x22 / another))))
+
+# ::id 5
+# ::snt Along with oxygen, Millions of American office workers may be getting flu and other infectious bugs from Millions of American office workers co-workers. ; That's because, in today's modern office buildings, recirculated air can mean recycled flu and other airborne infections
+(x / xconcept
+	:x (x26 / and
+		:op1 (x10 / possible
+			:domain (x3 / oxygen)
+			:domain (x12 / get-01
+				:ARG0 (x5 / million
+					:poss (x9 / person
+						:ARG0-of (w / work-01)
+						:null_edge (x7 / country
+							:name (n / name
+								:op1 "American"))
+						:mod (x8 / office)))
+				:ARG1 (x14 / and
+					:op1 (x13 / flu)
+					:op2 (x17 / bug
+						:mod (x15 / other)
+						:mod (x16 / infectious)))
+				:ARG1 (x24 / co-worker
+					:null_edge (x21 / country
+						:name (n1 / name
+							:op1 "American"))
+					:ARG0-of (x23 / person
+						:ARG0-of (w1 / work-01)
+						:ARG1 (x22 / office)))
+				:null_edge (x28 / null_tag
+					:null_edge (x29 / cause-01
+						:ARG1 (x27 / that)
+						:ARG0 (x41 / mean-01
+							:ARG0 (x36 / building
+								:time (x32 / today)
+								:mod (x34 / modern)
+								:mod (x35 / office))
+							:ARG0 (x39 / air
+								:ARG1-of (x38 / recirculate))
+							:ARG1 (x40 / possible)
+							:ARG1 (x44 / and
+								:op1 (x43 / flu
+									:mod (x42 / recycled))
+								:op2 (x47 / infect-01
+									:mod (x45 / other)
+									:mod (x46 / airborne))))))))))
+
+# ::id 6
+# ::snt The evidence comes from various studies of tuberculosis, measles and flu that spread in a manner that can only be explained by poor air ventilation. ; " Modern office buildings are tight, " says Jon Rosenberg, public health officer in California's occupational health program
+(x37 / say-01
+	:ARG0 (x38 / newspaper
+		:name (n / name
+			:op1 "Jon"
+			:op2 "Rosenberg")
+		:ARG0-of (x43 / have-org-role-91
+			:ARG2 (o / officer)
+			:ARG1 (x42 / health
+				:mod (x41 / public))
+			:ARG1 (x49 / program
+				:mod (x47 / occupational)
+				:mod (x48 / health)))))
+
+# ::id 7
+# ::snt " In order to conserve energy, they 're often sealed .
+(x11 / military
+	:name (n / name
+		:op1 "sealed")
+	:ARG1 (x5 / conserve
+		:ARG1 (x6 / energy))
+	:frequency (x10 / often))
+
+# ::id 8
+# ::snt ; Experts say the problem is not the same as " sick building syndrome " -- a situation in which workers are exposed chronically to toxic chemicals and gases emitted from carpets, furniture and other building materials
+(x / xconcept
+	:x (x1 / and
+		:op2 (x3 / say-01
+			:ARG0 (x2 / person
+				:ARG1-of (e / expert-41))
+			:ARG1 (x9 / same-41
+				:ARG1 (x5 / problem)
+				:ARG2 (x14 / syndrome
+					:mod (x12 / sick)
+					:mod (x13 / build-01))))
+		:op7 (x18 / situation
+			:ARG1-of (x23 / expose-01
+				:ARG1 (x21 / person
+					:ARG0-of (w / work-01))
+				:manner (x24 / chronic)))
+		:op2 (x28 / and
+			:op1 (x27 / chemical
+				:mod (x26 / toxic)
+				:ARG1-of (x30 / emit-01
+					:ARG2 (x35 / and
+						:op1 (x32 / carpet)
+						:op2 (x34 / furniture)
+						:op1 (x38 / material
+							:mod (x36 / other)
+							:mod (x37 / build-01)))))
+			:op2 (x29 / gas))))
+
+# ::id 9
+# ::snt Nor is the airtight environment that sets the stage for problems to blame for last month's outbreak in Richmond of Legionnaire's disease -- an illness caused by a bug linked to wet, damp spaces rather than poor ventilation. ; But as in " sick building syndrome, " the airtight environment that sets the stage for problems's the airtight environment that sets the stage for problems
+(x / xconcept
+	:x (x43 / and
+		:op3 (x5 / environment
+			:mod (x4 / airtight)
+			:ARG0-of (x7 / set-02
+				:purpose (x13 / blame-01
+					:ARG0 (x11 / problem)
+					:ARG2 (x18 / outbreak
+						:time (x16 / month
+							:mod (x15 / last))
+						:location (x20 / country
+							:name (n / name
+								:op1 "Richmond"))))
+				:ARG1 (x55 / environment
+					:mod (x54 / airtight)
+					:ARG1-of (x57 / set-02
+						:ARG1 (x65 / environment
+							:ARG1 (x61 / problem)
+							:mod (x64 / airtight)
+							:ARG0-of (x67 / set-02
+								:ARG1 (x69 / stage)
+								:ARG2 (x71 / problem)))))))
+		:op7 (x27 / illness
+			:poss (x22 / person
+				:name (n1 / name
+					:op1 "Legionnaire"))
+			:ARG1-of (x28 / cause-01
+				:ARG0 (x31 / bug
+					:ARG1-of (x32 / link-01))))
+		:op2 (x37 / space
+			:mod (x34 / wet-01)
+			:mod (x36 / damp))
+		:op1 (x41 / ventilation
+			:mod (x40 / poor))
+		:op2 (x44 / contrast-01
+			:ARG2 (x50 / syndrome
+				:mod (x48 / sick)
+				:mod (x49 / build-01)))))
+
+# ::id 10
+# ::snt Lack of windows is not necessarily the culprit
+(x8 / culprit
+	:ARG0 (x1 / lack-01
+		:ARG1 (x3 / window)))
+
+# ::id 11
+# ::snt " If Lack of windows has a good ventilation system ... you do n't necessarily have to have a sick building, " Rosenberg says. ; But, alas, many modern ventilation systems recirculate indoor air with little or no fresh air
+(x28 / contrast-01
+	:ARG2 (x25 / say-01
+		:ARG1 (x18 / have-03
+			:condition (x6 / have-03
+				:ARG0 (x3 / lack-01
+					:ARG1 (x5 / window))
+				:ARG1 (x10 / system
+					:mod (x8 / good)
+					:mod (x9 / ventilation)))
+			:ARG0 (x12 / you)
+			:ARG1 (x21 / building
+				:mod (x20 / sick)))
+		:ARG0 (x24 / person
+			:name (n / name
+				:op1 "Rosenberg"))))
+
+# ::id 12
+# ::snt So the infectious bugs that a worker exhales at one end of the building can end up, via the ventilation system, being inhaled at the other end. ; " The building is not the source
+(x / xconcept
+	:x (x31 / and
+		:op3 (x15 / possible
+			:domain (x16 / end-01
+				:ARG1 (x4 / bug
+					:mod (x3 / infectious)
+					:ARG0-of (x8 / exhale
+						:ARG0 (x7 / person
+							:ARG0-of (w / work-01))
+						:ARG2 (x11 / end
+							:quant 1
+							:ARG1 (x14 / building))))
+				:ARG1 (x22 / system
+					:mod (x21 / ventilation))
+				:ARG1 (x25 / inhale-01
+					:time (x29 / end
+						:mod (x28 / other)))
+				:ARG1 (x38 / source
+					:ARG1 (x34 / build-01))))))
+
+# ::id 13
+# ::snt People are the source, " says Dr. Edward Nardell, who studies airborne infections for the Massachusetts Department of Public Health
+(x7 / say-01
+	:ARG1 (x4 / source
+		:ARG1 (x1 / people))
+	:ARG0 (x9 / newspaper
+		:name (n / name
+			:op1 "Edward"
+			:op2 "Nardell")
+		:ARG0-of (x13 / study-01
+			:ARG1 (x15 / infect-01
+				:mod (x14 / airborne))
+			:ARG0 (x19 / government-organization
+				:name (n1 / name
+					:op1 "Department"
+					:op2 "of"
+					:op3 "Public"
+					:op4 "Health")
+				:mod (x18 / state
+					:name (n2 / name
+						:op1 "Massachusetts"))))))
+
+# ::id 14
+# ::snt " Very bad ventilation makes the system worse .
+(x5 / make-02
+	:ARG0 (x4 / ventilation
+		:manner (x3 / bad
+			:degree (x2 / very)))
+	:ARG1 (x8 / worsen-01
+		:domain (x7 / system)))
+
+# ::id 15
+# ::snt ; In a study published in the August issue of the American Review of Respiratory Diseases, Nardell and colleagues at Harvard Medical School found that an outbreak of tuberculosis documented in one unidentified government building could have been cut in half had the ventilation been better. ; The study found that 40 percent of the building's workers -- or 27 of 47 -- were infected with tuberculosis from one 30-year-old sick employee
+(x25 / find-02
+	:ARG0 (x4 / study
+		:ARG1-of (x5 / publish-01
+			:null_edge (x19 / and
+				:null_edge 8
+				:op1 (x13 / have-org-role-91
+					:ARG1 (o / organization
+						:name (n / name
+							:op1 "Review"
+							:op2 "of"
+							:op3 "Respiratory"
+							:op4 "Diseases"))
+					:mod (x15 / organization
+						:name (n2 / name
+							:op1 "Respiratory")))
+				:op2 (x18 / person
+					:name (n1 / name
+						:op1 "Nardell"))
+				:op2 (x20 / colleague
+					:location (x24 / school
+						:null_edge (x22 / university
+							:name (n3 / name
+								:op1 "Harvard"))
+						:null_edge (x23 / null_tag))))))
+	:ARG1 (x37 / possible
+		:domain (x40 / cut-01
+			:ARG1 (x28 / outbreak
+				:ARG1-of (x31 / document-01
+					:location (x36 / building
+						:quant 1
+						:ARG1-of (x34 / identify-01
+							:polarity -)
+						:mod (x35 / government-organization
+							:ARG0-of (g / govern-01)))))
+			:condition (x47 / good
+				:ARG1 (x45 / ventilation)))))
+
+# ::id 16
+# ::snt The infection rate was as high in some distant parts of the building as The infection rate was next to the sick employee. ; " By recirculating the air, you spread no fresh air throughout the building, " says Nardell
+(x42 / say-01
+	:ARG0 (x43 / person
+		:name (n / name
+			:op1 "Nardell")))
+
+# ::id 17
+# ::snt " People who had no direct contact with this case, might have been exposed in far reaches of the building .
+(x15 / expose-01
+	:null_edge (x4 / have-03
+		:ARG1 (x7 / contact-01
+			:polarity -
+			:mod (x6 / direct)
+			:ARG1 (x10 / case
+				:mod (x9 / this))))
+	:time (x18 / reach-01
+		:null_edge (x17 / null_tag)
+		:ARG1 (x21 / building)))
+
+# ::id 18
+# ::snt ; If tuberculosis can spread in poorly ventilated buildings, so can other infectious bugs
+(x / xconcept
+	:x (x1 / and
+		:op2 (x12 / possible
+			:domain (x4 / possible
+				:domain (x5 / spread-03
+					:ARG0-of (x2 / cause-01)
+					:ARG1 (x3 / tuberculosis)
+					:location (x9 / building
+						:ARG1-of (x8 / ventilate
+							:manner (x7 / poor)))))
+			:mod (x11 / so)
+			:domain (x15 / bug
+				:mod (x13 / other)
+				:mod (x14 / infectious)))))
+
+# ::id 19
+# ::snt Respiratory infection experts say that flu viruses and measles are easier to spread than TB. ; " This particular study deals only with TB, " says Dr. Jonathan Samet, a respiratory-disease expert at the University of New Mexico, " but the observations may apply to other organisms, such as the respiratory viruses that cause flu .
+(x / xconcept
+	:x (x17 / and
+		:op1 (x4 / say-01
+			:ARG0 (x3 / person
+				:ARG1-of (e / expert-41)
+				:ARG2 (x2 / infect-01
+					:mod (x1 / respiratory)))
+			:ARG1 (x11 / easy
+				:domain (x8 / and
+					:op1 (x7 / virus
+						:mod (x6 / flu))
+					:op2 (x9 / measles))
+				:domain (x13 / spread-02
+					:ARG0 x8
+					:ARG1 (x15 / tb)))
+			:null_edge (x28 / say-01
+				:ARG1 (x22 / deal-01
+					:ARG0 (x21 / study
+						:mod (x19 / this)
+						:mod (x20 / particular))
+					:mod (x23 / only)
+					:ARG1 (x25 / tb)
+					:ARG0 (x30 / name
+						:op1 "Jonathan"
+						:op2 "Samet"
+						:ARG1-of (x35 / person
+							:ARG1-of (e1 / expert-41)
+							:ARG1 (x38 / university
+								:null_edge (x41 / country
+									:name (n / name
+										:op1 "Mexico")
+									:null_edge (x40 / null_tag))))))
+				:ARG1 (x48 / apply-02
+					:ARG0 x30
+					:ARG1 (x46 / observation)
+					:mod (x47 / possible)
+					:ARG1 (x51 / organism
+						:mod (x50 / other)
+						:ARG2 (x57 / virus
+							:mod (x56 / respiratory)
+							:ARG0-of (x59 / cause-01
+								:ARG1 (x60 / flu)))))))))
+
+# ::id 20
+# ::snt ; Building workers had complained for years about poor air quality. ; The building's ventilation system permitted circulation of some outdoor air -- 15 cubic feet per minute -- a low level commonly found in buildings since the 1930s
+(x / xconcept
+	:x (x1 / and
+		:op1 (x5 / complain-01
+			:ARG0 (x3 / person
+				:ARG0-of (w / work-01)
+				:mod (x2 / build-01))
+			:ARG1 (x11 / quality
+				:mod (x9 / poor)
+				:mod (x10 / air))
+			:duration (xap0 / multiple
+				:op1 (x7 / temporal-quantity
+					:unit (y / year))))
+		:op3 (xap1 / rate-entity-91
+			:ARG3 (x30 / temporal-quantity
+				:unit (m / minute))))
+	:x (x13 / and
+		:op1 (x15 / building)
+		:op1 (x19 / permit-01
+			:ARG0 (x18 / system
+				:mod (x17 / ventilation))
+			:ARG1 (x20 / circulate-01
+				:poss (x24 / air
+					:quant (x22 / some)
+					:mod (x23 / outdoors)
+					:quant (x28 / foot
+						:quant 15)
+					:mod (x34 / level
+						:mod (x33 / low)
+						:ARG1-of (x36 / find-01
+							:manner (x35 / commonly)
+							:location (x38 / building)
+							:time (x39 / since
+								:op1 (xap2 / date-entity
+									:time (x41 / date-entity))))))))))
+
+# ::id 21
+# ::snt Even lower levels of outdoor air ventilation, below 10 cfm, have become common since 1973, the post-oil embargo era. ; In the study, Nardell estimated that if outdoor air ventilation in the government building had been doubled -- to about 35 cubic feet per minute, a level that Massachusetts recommends for buildings where smoking is permitted -- only half as many workers would have been infected with tuberculosis. ; Other studies have documented : ; (check )Flu spreads quickly on airplanes where ventilation systems consist entirely of recirculated air. ; (check )Measles are transmitted by infectious air in a pediatrician's waiting room. ; (check )Tuberculosis can spread in homeless shelters, prisons and hospitals where ventilation is poor. ; Flu spreads much more easily than TB
+(x / xconcept
+	:x (x24 / and
+		:op2 (x22 / era
+			:mod (x21 / embargo-01)))
+	:x (x76 / and
+		:op2 (x72 / infect-01
+			:ARG1-of (x30 / estimate-01
+				:ARG2 (x27 / study-01)
+				:ARG0 (x29 / person
+					:name (n / name
+						:op1 "Nardell"))
+				:ARG2 (x35 / ventilation
+					:mod (x33 / outdoors)
+					:path (x34 / air)
+					:ARG2 (x39 / building
+						:mod (x38 / government-organization
+							:ARG0-of (g / govern-01)))
+					:ARG1-of (x42 / double-01
+						:ARG1 (x56 / recommend-01
+							:ARG1 (x53 / level
+								:mod (x55 / state
+									:name (n1 / name
+										:op1 "Massachusetts")))
+							:beneficiary (x58 / building
+								:ARG1-of (x62 / permit-01
+									:ARG1 (x60 / smoke-02)))
+							:ARG1 (xap0 / rate-entity-91
+								:ARG2 (x45 / about
+									:op1 35)
+								:ARG2 (x47 / volume-quantity
+									:unit (c / cubic-meter))
+								:op1 (x50 / temporal-quantity
+									:unit (m / minute)))))))
+			:ARG1 (x65 / half
+				:mod (x64 / only)
+				:poss (x68 / person
+					:ARG0-of (w / work-01)
+					:quant (x67 / many))))
+		:op2 (x74 / tuberculosis))
+	:x (x82 / and
+		:op2 (x80 / document-01
+			:mod (x1 / even)
+			:ARG0 (x11 / cfm
+				:quant 10)
+			:ARG0 (x78 / study-01
+				:mod (x77 / other)))
+		:op1 (x87 / spread-02
+			:ARG0 (x86 / flu)
+			:manner (x88 / quick)
+			:ARG1 (x90 / airplane)))
+	:x (x100 / and
+		:op1 (x3 / level
+			:mod (x2 / low)
+			:mod (x7 / ventilation
+				:mod (x5 / outdoors)
+				:path (x6 / air)))
+		:op1 (x9 / below)
+		:op2 (x14 / become-01
+			:ARG1 x3
+			:ARG1 x9
+			:ARG1 x11
+			:ARG2 (x15 / common)
+			:time (x16 / since
+				:op1 (x17 / date-entity
+					:year 1973)))
+		:op1 (x84 / check-01)
+		:op1 (x97 / recirculate
+			:ARG1 (x98 / air))
+		:op1 (x102 / check-01)
+		:op3 (x122 / possible
+			:domain (x123 / spread-03
+				:ARG2 (x129 / and
+					:op1 (x126 / thing
+						:ARG2-of (s / shelter-01)
+						:mod (x125 / home)
+						:mod (x134 / poor
+							:domain (x132 / ventilation)))
+					:op2 (x128 / prison
+						:mod x125)
+					:op2 (x130 / hospital
+						:mod x125)))))
+	:x (x117 / and
+		:op4 (x112 / pediatrician)
+		:op2 (x115 / room)
+		:op1 (x119 / check-01)
+		:op1 (x121 / tuberculosis))
+	:x (x136 / and
+		:op1 (x94 / consist-01
+			:ARG1 (x93 / system
+				:mod (x92 / ventilation))
+			:degree (x95 / entire))
+		:op2 (x137 / flu
+			:ARG1-of (x114 / wait-01))
+		:op2 (x138 / spread-02
+			:ARG1-of (x106 / transmit-01
+				:ARG1 (x104 / measles)
+				:ARG0 (x109 / air
+					:mod (x108 / infectious)))
+			:manner (x141 / easily
+				:degree (x140 / more
+					:degree (x139 / much)))
+			:ARG1 (x143 / tb))))
+
+# ::id 22
+# ::snt " 10 cfm may survive several hours in dry air, " says Vernon Knight, a respiratory virus disease expert at Baylor College of Medicine in Houston
+(x13 / say-01
+	:ARG1 (x4 / possible
+		:domain (x5 / survive-01
+			:ARG1 10
+			:ARG1 (x7 / hour
+				:mod (x6 / several))
+			:location (x10 / air
+				:ARG1-of (x9 / dry-02))))
+	:ARG0 (x14 / newspaper
+		:name (n / name
+			:op1 "Vernon"
+			:op2 "Knight")
+		:ARG1-of (x21 / person
+			:ARG1-of (e / expert-41)
+			:ARG1 (x18 / respiratory)
+			:ARG2 (x19 / virus)
+			:ARG2 (x20 / disease)
+			:ARG1 (x23 / government-organization
+				:name (n1 / name
+					:op1 "Baylor"
+					:op2 "College")
+				:poss (x26 / organization
+					:name (n2 / name
+						:op1 "Medicine"))
+				:location (x28 / country
+					:name (n3 / name
+						:op1 "Houston"))))))
+
+# ::id 23
+# ::snt " In those tight buildings, many workers continue to recirculate 10 cfm, and many workers probably build up .
+(x15 / and
+	:op1 (x9 / continue-01
+		:ARG1 (x5 / building
+			:mod (x4 / tight))
+		:ARG0 (x8 / person
+			:ARG0-of (w / work-01)
+			:quant (x7 / many))
+		:ARG1 (x11 / recirculate
+			:ARG0 x8
+			:ARG1 (x13 / cfm
+				:quant 10)))
+	:op3 (x19 / build-01
+		:ARG0 x8
+		:ARG0 (x17 / person
+			:ARG0-of (w1 / work-01)
+			:quant (x16 / many))
+		:mod (x18 / probable)))
+
+# ::id 24
+# ::snt ; Nardell and others recognize that the solution to this problem -- fixing or replacing ventilation systems to include more fresh air -- can be expensive
+(x / xconcept
+	:x (x1 / and
+		:op3 (x5 / recognize-02
+			:ARG1 (x3 / and
+				:op1 (x2 / person
+					:name (n / name
+						:op1 "Nardell"))
+				:op2 (x4 / other))
+			:ARG1 (x24 / possible
+				:domain (x26 / expensive
+					:domain (x14 / or
+						:op2 (x11 / problem
+							:mod (x10 / this))
+						:op1 (x13 / fix-01
+							:ARG1 (x17 / system
+								:mod (x16 / ventilation))
+							:purpose (x19 / include-01))
+						:op2 (x15 / replace-01)))))
+		:op1 (x22 / air
+			:quant (x20 / more)
+			:mod (x21 / fresh))))
+
+# ::id 25
+# ::snt Flu and colds will probably never be eliminated from the workplace entirely, and the workplace may not make sense to install a new ventilation system unless the air quality is very low. ; In Edward Nardell tuberculosis study, Edward Nardell found that the biggest benefit comes from improving the worst ventilation systems that allow very little fresh air
+(x5 / probable
+	:null_edge (x14 / and
+		:op1 (x8 / eliminate-01
+			:ARG1 (x2 / and
+				:op1 (x1 / flu)
+				:op2 (x3 / null_tag))
+			:ARG0 (x11 / workplace)
+			:degree (x12 / entire))
+		:op2 (x17 / possible
+			:domain (x19 / make-01
+				:ARG0 (x16 / workplace)
+				:ARG1 (x20 / sense)
+				:ARG1 (x22 / install-01
+					:ARG1 (x26 / system
+						:mod (x24 / new)
+						:mod (x25 / ventilation))
+					:ARG2 (x33 / low
+						:domain (x30 / quality
+							:mod (x29 / air))
+						:degree (x32 / very)))))
+		:op2 (x44 / find-01
+			:part-of (x40 / study-01
+				:ARG0 (x38 / person
+					:name (n1 / name
+						:op1 "Nardell"))
+				:mod (x39 / tuberculosis))
+			:ARG0 (x42 / newspaper
+				:name (n / name
+					:op1 "Edward"
+					:op2 "Nardell"))
+			:ARG1 (x49 / come-01
+				:ARG1 (x48 / benefit-01
+					:mod (x47 / big
+						:degree (m / most)))
+				:ARG2 (x51 / improve-01
+					:ARG1 (x55 / system
+						:mod (x53 / bad)
+						:mod (x54 / ventilation)
+						:ARG0-of (x57 / allow-01
+							:ARG1 (x61 / air
+								:null_edge (x59 / little
+									:degree (x58 / very))
+								:mod (x60 / fresh)))))))))
+
+# ::id 26
+# ::snt If the ventilation is moderately effective but not ideal, further improvements yield only a slight decrease in infectious illness. ; " There's only so much Vernon Knight , a respiratory virus disease expert at Baylor College of Medicine in Houston can do, " Nardell says
+(x7 / contrast-01
+	:ARG2 (x6 / effective
+		:domain (x3 / ventilation)
+		:degree (x5 / moderate))
+	:ARG2 (x9 / ideal)
+	:ARG1 (x13 / yield-01
+		:ARG0 (x12 / improve-01
+			:degree (x11 / further))
+		:ARG1 (x17 / decrease-01
+			:mod (x14 / only)
+			:mod (x16 / slight)
+			:ARG1 (x20 / illness
+				:mod (x19 / infectious)))))
+
+# ::id 27
+# ::snt " There's going to be a price of living together in a communal society .
+(x8 / thing
+	:ARG2-of (p / price-01)
+	:ARG1 (x10 / live-01
+		:manner (x11 / together)
+		:location (x15 / society
+			:mod (x14 / communal))))
+
+# ::id 28
+# ::snt ; YOU 'RE INTERESTEDEmployees who think that poor air quality at their workplace is contributing to health problems can call Cal-OSHA, a state agency that monitors worker safety and health
+(x / xconcept
+	:x (x1 / and
+		:op3 (x4 / interestedemployee
+			:ARG0 (x2 / you)
+			:ARG0-of (x6 / think-01
+				:ARG1 (x15 / contribute-01
+					:ARG0 (x10 / quality
+						:mod (x7 / that)
+						:mod (x8 / poor)
+						:mod (x9 / air)
+						:mod (x13 / workplace))
+					:ARG2 (x18 / problem
+						:mod (x17 / health)
+						:ARG0-of (x20 / call-01
+							:mod (x19 / possible)
+							:ARG0 (x25 / agency
+								:poss (x21 / government-organization
+									:name (n / name
+										:op1 "Cal-OSHA"))
+								:mod (x24 / state)
+								:ARG0-of (x27 / monitor-01
+									:ARG1 (x30 / and
+										:op1 (x29 / safe-41
+											:ARG1 (x28 / person
+												:ARG0-of (w / work-01)))
+										:op2 (x31 / health)))))))))))
+
+# ::id 29
+# ::snt In San Jose, Cal-OSHA can be reached at -LRB-408-RRB- 452-7288
+(x6 / possible
+	:domain (x8 / reach-01
+		:location (x3 / country
+			:name (n / name
+				:op1 "Jose")
+			:mod (x2 / country
+				:name (n2 / name
+					:op1 "San")))
+		:ARG1 (x5 / organization
+			:name (n1 / name
+				:op1 "Cal-OSHA"))
+		:location (x11 / 408-rrb)
+		:time (x13 / date-entity)))
+

@@ -1,0 +1,765 @@
+# ::id 1
+# ::snt The epidemic of bovine spongiform encephalopathy or ` mad cow ' disease - which has killed more than 100,000 animals in the UK - is causing a new wave of public concern
+(x26 / cause-01
+	:ARG0 (x2 / epidemic
+		:ARG1-of (x16 / kill-01
+			:ARG1 (x20 / animal
+				:example (x7 / or
+					:op1 (x6 / encephalopathy
+						:mod (x5 / spongiform
+							:mod (x4 / bovine)))
+					:op2 (x12 / disease
+						:mod x5
+						:mod (x9 / mad)
+						:mod (x10 / cow)))
+				:quant (x17 / more-than))
+			:location (x23 / country
+				:name (n / name
+					:op1 "UK"))))
+	:ARG1 (x29 / wave
+		:mod (x28 / new)
+		:ARG0-of (x32 / concern-01
+			:mod (x31 / public))))
+
+# ::id 2
+# ::snt New cases are still running at almost 1,000 a week and last month a second dairy farmer died of Creutzfeld-Jacob Disease, a brain disorder similar to BSE
+(x5 / run-01
+	:ARG1 (x2 / case
+		:null_edge (x1 / null_tag))
+	:time (x4 / still)
+	:null_edge (x7 / almost)
+	:ARG1 (x11 / and
+		:op1 (x10 / temporal-quantity
+			:unit (w / week))
+		:op2 (x13 / month
+			:mod (x12 / last))
+		:op3 (x17 / person
+			:ARG0-of (f / farm-01)
+			:ARG1 (x16 / dairy)
+			:ARG1 (x18 / die-01
+				:ARG1 (x21 / country
+					:name (n / name
+						:op1 "Disease")
+					:null_edge (x20 / country
+						:name (n1 / name
+							:op1 "Creutzfeld-Jacob"))
+					:null_edge (x25 / disorder
+						:mod (x24 / brain)
+						:ARG1-of (x26 / resemble-01
+							:op (s / similar)
+							:ARG2 (x28 / organization
+								:name (n2 / name
+									:op1 "BSE")))))))))
+
+# ::id 3
+# ::snt Richard Lacey, a microbiology professor at Leeds University and the leading critic of government policy on BSE, said the deaths this year of two farmers whose herds had suffered from mad cow disease could not be put down to chance
+(x20 / say-01
+	:ARG0 (x2 / person
+		:name (n / name
+			:op1 "Lacey")
+		:null_edge (x1 / null_tag)
+		:ARG0-of (x6 / have-org-role-91
+			:ARG2 (p / professor)
+			:ARG1 (x5 / microbiology)
+			:ARG1 (x8 / government-organization
+				:name (n1 / name
+					:op1 "Leeds"
+					:op2 "University"))
+			:topic (x10 / and
+				:op3 (x13 / person
+					:ARG0-of (c / criticize-01)
+					:ARG1-of (x12 / lead-02)
+					:ARG1 (x16 / policy
+						:mod (x15 / government-organization
+							:ARG0-of (g / govern-01)
+							:ARG1 (x18 / country
+								:name (n2 / name
+									:op1 "BSE"))))))))
+	:ARG1 (x36 / possible
+		:domain (x39 / put-01
+			:ARG2 (x42 / chance)
+			:ARG2 (xap0 / rate-entity-91
+				:time (x24 / year
+					:mod (x23 / this))
+				:ARG0-of (x31 / suffer-01
+					:quant 2
+					:ARG0 (x29 / herd)
+					:ARG0 (x35 / disease
+						:mod (x33 / mad)
+						:mod (x34 / cow)))))))
+
+# ::id 4
+# ::snt Richard Lacey believes that BSE can trigger human brain disease
+(x3 / believe-01
+	:ARG0 (x2 / person
+		:name (n / name
+			:op1 "Lacey")
+		:null_edge (x1 / null_tag))
+	:ARG1 (x6 / possible
+		:domain (x7 / trigger-01
+			:ARG0 (x5 / country
+				:name (n1 / name
+					:op1 "BSE"))
+			:ARG1 (x10 / disease
+				:mod (x8 / human)
+				:mod (x9 / brain)))))
+
+# ::id 5
+# ::snt ` Our worst predictions are coming true, ' Richard Lacey said .
+(x12 / say-01
+	:ARG1 (x7 / true
+		:domain (x4 / predict-01
+			:mod (x3 / bad)))
+	:ARG0 (x11 / person
+		:name (n / name
+			:op1 "Lacey")
+		:null_edge (x10 / null_tag)))
+
+# ::id 6
+# ::snt I find BSE unbelievable that the government and their hand-picked advisers can go on telling the public there is no danger .
+(x2 / find-02
+	:ARG0 (x1 / i)
+	:ARG1 (x13 / go-02
+		:ARG1 (x3 / newspaper
+			:name (n / name
+				:op1 "BSE"))
+		:mod (x12 / possible
+			:domain (x8 / and
+				:op1 (x7 / government-organization
+					:ARG0-of (g / govern-01))
+				:op2 (x11 / have-org-role-91
+					:ARG2 (p / person
+						:ARG0-of (a / advise-01))
+					:mod (x10 / hand-picked))))
+		:ARG4 (x17 / public
+			:ARG1 (x21 / danger
+				:polarity -))
+		:ARG1 (xap0 / possible
+			:domain (x4 / believe-01))))
+
+# ::id 7
+# ::snt The advisers, led by the government's chief medical officer Kenneth Calman and chief veterinary officer Keith Meldrum, put out a detailed statement to justify their hand-picked advisers view that last month's death of 65-year-old Duncan Templeman - following that of Peter Warhurst, 61, a year ago - showed ` no features that give cause for undue concern '
+(x25 / state-01
+	:ARG0 (x2 / have-org-role-91
+		:ARG2 (p / person
+			:ARG0-of (a / advise-01))
+		:ARG1-of (x4 / lead-02
+			:ARG0 (x14 / and
+				:op1 (x11 / have-org-role-91
+					:ARG2 (o / officer)
+					:poss (x7 / government-organization
+						:ARG0-of (g / govern-01))
+					:mod (x9 / chief)
+					:ARG1 (x10 / medicine)
+					:name (x12 / name
+						:op1 "Kenneth"
+						:op2 "Calman"))
+				:op1 (xap0 / person
+					:ARG0-of (x17 / have-org-role-91
+						:ARG2 (o1 / officer)
+						:mod (x15 / chief)
+						:ARG1 (x16 / veterinary)
+						:name (x18 / name
+							:op1 "Keith"
+							:op2 "Meldrum"))))))
+	:ARG1-of (x24 / detail-01)
+	:ARG1 (x27 / justify-01
+		:ARG1 (x31 / view-02
+			:mod (x29 / hand-picked)
+			:mod (x30 / have-org-role-91
+				:ARG2 (p1 / person
+					:ARG0-of (a1 / advise-01))))
+		:ARG1 (x54 / show-01
+			:ARG0 (x36 / die-01
+				:time (x34 / month
+					:mod (x33 / last))
+				:name (x39 / name
+					:op1 "Duncan"
+					:op2 "Templeman"
+					:mod (x38 / person
+						:name (n / name
+							:op1 "65-year-old")))
+				:ARG1-of (x42 / follow-01
+					:ARG2 (x45 / person
+						:name (n1 / name
+							:op1 "Peter"
+							:op2 "Warhurst")
+						:ARG0-of (xap1 / before
+							:quant (x51 / temporal-quantity
+								:unit (y / year))))))
+			:ARG1 (x57 / feature
+				:polarity -
+				:ARG1-of (x59 / give-01
+					:ARG1 (x60 / cause
+						:ARG1 (x63 / concern-01
+							:mod (x62 / undue))))))))
+
+# ::id 8
+# ::snt The official view is that the deaths are an unfortunate coincidence, even though it is statistically unlikely that two dairy farmers should contract a disease as rare as CJD
+(x13 / even
+	:op1 (x18 / likely
+		:polarity -
+		:ARG1 (x3 / view-02
+			:mod (x2 / official))
+		:domain (x11 / coincidence
+			:mod (x10 / fortunate-41))
+		:manner (x17 / statistically)
+		:domain (x23 / recommend-01
+			:ARG1 (x24 / contract-02
+				:ARG0 (x22 / person
+					:ARG0-of (f / farm-01)
+					:quant 2
+					:ARG1 (x21 / dairy))
+				:ARG1 (x26 / disease
+					:mod (x28 / rare
+						:ARG2 (x30 / have-org-role-91
+							:ARG1 (o / organization
+								:name (n / name
+									:op1 "CJD")))))))))
+
+# ::id 9
+# ::snt Robert Will of Edinburgh's Western General Hospital, who has been monitoring CJD in the UK since 1990 on behalf of the health department, calculated that there was only a five per cent probability of even a single case occurring by chance among dairy farmers with BSE-affected herds
+(x27 / calculate-01
+	:ARG0 (x1 / newspaper
+		:name (n / name
+			:op1 "Robert"
+			:op2 "Will")
+		:ARG0-of (x6 / government-organization
+			:name (n1 / name
+				:op1 "Western"
+				:op2 "General"
+				:op3 "Hospital")
+			:poss (x4 / country
+				:name (n2 / name
+					:op1 "Edinburgh")))
+		:ARG0-of (x13 / monitor-01
+			:ARG1 (x14 / country
+				:name (n3 / name
+					:op1 "CJD"))
+			:location (x17 / country
+				:name (n4 / name
+					:op1 "UK"))
+			:time (x18 / since
+				:op1 (x19 / date-entity
+					:year 1990))
+			:ARG1 (x25 / department
+				:mod (x24 / health))))
+	:ARG1 (x41 / case
+		:mod (x36 / probable
+			:mod (x31 / only)
+			:quant 5
+			:mod (x35 / monetary-quantity
+				:unit (c / cent)))
+		:mod (x38 / even)
+		:mod (x40 / single)
+		:mod (x44 / chance)
+		:poss (x47 / person
+			:ARG0-of (f / farm-01)
+			:ARG1 (x46 / dairy)
+			:ARG1 (x50 / herd
+				:mod (x49 / organization
+					:name (n5 / name
+						:op1 "BSE-affected"))))))
+
+# ::id 10
+# ::snt One argument put forward by the health department is that CJD has such a long incubation period - typically 10 to 20 years - that clinical symptoms would not yet have appeared, even if BSE had triggered any cases of CJD
+(x12 / have-03
+	:ARG1 (x2 / argument
+		:quant 1
+		:ARG1-of (x3 / put-00
+			:ARG2 (x4 / forward)
+			:time (x5 / by
+				:null_edge (x8 / null_tag
+					:null_edge (x7 / null_tag)))))
+	:ARG0 (x11 / organization
+		:name (n / name
+			:op1 "CJD"))
+	:concession (x32 / appear-01
+		:duration (x15 / long
+			:degree (x13 / such))
+		:ARG1 (x16 / incubation)
+		:duration (x23 / temporal-quantity
+			:unit (y / year)
+			:null_edge (x19 / typical)
+			:null_edge 10
+			:quant 20)
+		:ARG1 (x27 / symptom
+			:mod (x26 / clinic))
+		:time (x30 / yet)
+		:concession (x34 / even
+			:op1 (x38 / trigger-01
+				:ARG0 (x36 / country
+					:name (n1 / name
+						:op1 "BSE"))
+				:ARG1 (x40 / case
+					:mod (x39 / any)
+					:null_edge (x42 / have-org-role-91
+						:ARG1 (o / organization
+							:name (n2 / name
+								:op1 "CJD"))))))))
+
+# ::id 11
+# ::snt ` Since the illness of the cows (in Templeman's herd )and the patient occurred within months of each other, the animals and the patient had presumably incubated disease in parallel for some years, ' the health department said
+(x43 / say-01
+	:ARG1 (x31 / incubate
+		:time (x18 / within
+			:op1 (x14 / and
+				:op1 (x4 / illness
+					:poss (x7 / cow))
+				:op1 (x12 / herd
+					:ARG0 (x10 / person
+						:name (n / name
+							:op1 "Templeman")))
+				:op2 (x16 / patient))
+			:op1 (x19 / month
+				:mod (x22 / other)))
+		:ARG0 (x26 / and
+			:op1 (x25 / animal)
+			:op2 (x28 / patient))
+		:mod (x30 / presume-01)
+		:ARG1 (x32 / disease)
+		:prep-in (x34 / parallel)
+		:duration (x37 / temporal-quantity
+			:unit (y / year)
+			:mod (x36 / some)))
+	:ARG0 (x42 / department
+		:mod (x41 / health)))
+
+# ::id 12
+# ::snt ` It is most unlikely therefore that there is any direct link between the cases of BSE and the occurrence of disease in the patient .
+(x5 / likely
+	:polarity -
+	:degree (x4 / most)
+	:ARG1 (x12 / link-01
+		:mod (x10 / any)
+		:manner (x11 / direct)
+		:location (x13 / between
+			:op1 (x15 / case
+				:example (x18 / and
+					:op1 (x17 / country
+						:name (n / name
+							:op1 "BSE"))
+					:op3 (x20 / occur-01
+						:poss (x22 / disease
+							:location (x25 / patient))))))))
+
+# ::id 13
+# ::snt Another reassuring argument is that both farmers showed clinical features typical of the ` sporadic form ' of CJD - of unknown cause - that usually occurs in late middle age
+(x3 / argument
+	:mod (x1 / another)
+	:manner (x2 / reassure-01)
+	:ARG1 (x8 / show-01
+		:ARG0 (x7 / person
+			:ARG0-of (f / farm-01)
+			:mod (x6 / both))
+		:ARG1 (x10 / feature
+			:mod (x9 / clinic)
+			:mod (x11 / typify-01)
+			:mod (x23 / cause
+				:mod (x15 / sporadic)
+				:ARG1 (x19 / cjd)
+				:ARG1-of (x22 / know-01
+					:polarity -)
+				:ARG1 (x31 / age
+					:mod (x26 / usual)
+					:mod (x29 / late)
+					:mod (x30 / middle))))))
+
+# ::id 14
+# ::snt The handful of patients known to have developed CJD through infection (from contaminated human growth hormone )showed a different pattern of symptoms
+(x19 / show-01
+	:ARG2 (x4 / patient
+		:quant (x2 / handful
+			:source (x17 / hormone
+				:ARG1-of (x14 / contaminate)
+				:mod (x15 / human)
+				:mod (x16 / grow-01)))
+		:ARG1-of (x5 / know-01
+			:ARG1 (x8 / develop-02
+				:ARG1 (x11 / infect-01))))
+	:ARG1 (x22 / pattern
+		:ARG1-of (x21 / differ-02)
+		:mod (x24 / symptom)))
+
+# ::id 15
+# ::snt The second annual report of Will's National CJD Surveillance Unit in Edinburgh, published last month, shows what looks at first sight like a disturbing rise in incidence : from 32 UK cases in the year ended April 1991 to 37 in 1991/92 and 46 in 1992/3
+(xap0 / say-01
+	:ARG0 (x4 / report
+		:ARG0 (x8 / government-organization
+			:name (n / name
+				:op1 "National"
+				:op2 "CJD"
+				:op3 "Surveillance"
+				:op4 "Unit")
+			:poss (x6 / will)
+			:location (x13 / country
+				:name (n1 / name
+					:op1 "Edinburgh")))
+		:ARG1-of (x15 / publish-01
+			:time (x17 / month
+				:mod (x16 / last))))
+	:snt3 (x19 / show-01
+		:ARG1 (x21 / look-02
+			:ARG1 (x24 / sight-01)
+			:ARG1 (x28 / rise-01
+				:ARG2 (x27 / disturbing)
+				:ARG2 (x30 / incidence))
+			:ARG1 (x35 / case
+				:quant 32
+				:mod (x34 / country
+					:name (n2 / name
+						:op1 "UK"))
+				:time (x38 / year
+					:ARG1-of (x39 / end-01
+						:ARG4 (x40 / name
+							:op1 "April"
+							:op2 "1991")
+						:ARG4 37
+						:location (x46 / and
+							:op1 (x45 / date-entity)
+							:op2 46)
+						:time (x49 / date-entity)))))))
+
+# ::id 16
+# ::snt But the report says that this is not statistically significant and is probably due to increasing awareness of CJD (some cases were previously attributed to Alzheimer's or other forms of dementia )
+(x1 / contrast-01
+	:ARG2 (x4 / say-01
+		:ARG0 (x3 / report)
+		:ARG1 (x11 / and
+			:op1 (x10 / significant
+				:domain (x6 / this)
+				:degree (x9 / statistically))
+			:op2 (x14 / due
+				:mod (x13 / probable)
+				:ARG2 (x16 / increase-01
+					:ARG1-of (x25 / attribute-01
+						:ARG1 (x22 / case
+							:quant (x21 / some))
+						:time (x24 / previous)
+						:ARG2 (x29 / or
+							:op3 (x33 / dementia
+								:mod (x31 / form
+									:mod (x30 / other))))))))))
+
+# ::id 17
+# ::snt Meanwhile, cattle are succumbing to BSE at a rate of about one per 100 every year
+(x5 / succumb-01
+	:time (x1 / meanwhile)
+	:ARG2 (x10 / rate
+		:ARG1 (xap0 / rate-entity-91
+			:ARG1 (x3 / cattle)
+			:ARG2 (x12 / about)
+			:ARG2 (x17 / temporal-quantity
+				:unit (y / year)))))
+
+# ::id 18
+# ::snt The epidemic continues to defy the ministry of agriculture's predictions that the ministry of agriculture's predictions is about to wane ; so far this year there have been 26,695 reported cases, compared with 25,898 to the same date last year
+(x / xconcept
+	:x (x23 / and
+		:op1 (x3 / continue-01
+			:ARG0 (x2 / epidemic)
+			:ARG1 (x5 / defy-01
+				:ARG0 x2
+				:ARG1 (x7 / ministry
+					:domain (x11 / predict-01
+						:ARG1 (x9 / agriculture)
+						:ARG1 (x14 / ministry
+							:domain (x18 / predict-01
+								:ARG1 (x16 / agriculture))))))
+			:ARG1 (x32 / report-01
+				:ARG1 (x33 / case
+					:mod (x25 / far)
+					:null_edge (x37 / 25,898
+						:null_edge (x38 / null_tag
+							:op1 (x41 / date-entity
+								:ARG1-of (x40 / same-41)))))))
+		:op1 (x22 / wane-01)
+		:time (x27 / year
+			:mod (x26 / this))
+		:time (x43 / year
+			:mod (x42 / last))))
+
+# ::id 19
+# ::snt The source of infection was protein-rich cattle feed contaminated with scrapie, a related brain disease of sheep
+(x8 / feed-01
+	:ARG0 (x2 / source
+		:ARG1 (x4 / infect-01))
+	:ARG0 (x6 / protein-rich)
+	:ARG2 (x7 / cattle)
+	:ARG1-of (x9 / contaminate
+		:ARG2 (x11 / scrapie
+			:domain (x16 / disease
+				:ARG1-of (x14 / relate-01)
+				:mod (x15 / brain)
+				:consist-of (x18 / sheep)))))
+
+# ::id 20
+# ::snt Although sheep-derived feeds were banned from sale in 1988, farmers apparently continued to use existing stocks for longer than the ministry had expected
+(x13 / continue-01
+	:time (x5 / ban-01
+		:ARG2 (x3 / feed-02)
+		:time (x9 / date-entity
+			:year 1988))
+	:ARG0 (x11 / person
+		:ARG0-of (f / farm-01))
+	:manner (x12 / apparent)
+	:ARG1 (x15 / use-01
+		:ARG0 x11
+		:ARG1 (x17 / stock
+			:ARG1-of (x16 / exist-01))
+		:ARG2 (x24 / expect-01
+			:ARG0 (x22 / ministry))))
+
+# ::id 21
+# ::snt The incubation period is also longer than originally expected
+(x6 / long
+	:domain (x3 / period
+		:mod (x2 / incubation))
+	:mod (x5 / also)
+	:ARG1 (x9 / expect-01
+		:mod (x8 / original)))
+
+# ::id 22
+# ::snt Veterinary experts say that almost all of the 102,000 confirmed BSE cases so far can be attributed to scrapie-contaminated feed
+(x3 / say-01
+	:ARG0 (x2 / person
+		:ARG1-of (e / expert-41)
+		:ARG0-of (x1 / veterinary))
+	:ARG1 (x15 / possible
+		:domain (x17 / attribute-01
+			:ARG1 (x12 / case
+				:mod (x5 / almost)
+				:quant (x9 / 102,000)
+				:mod (x10 / confirm-01)
+				:mod (x11 / world-region
+					:name (n / name
+						:op1 "BSE")))
+			:ARG2 (x20 / feed-01
+				:ARG2 (x19 / scrapie-contaminated)))))
+
+# ::id 23
+# ::snt According to Veterinary experts investigations, maternal transmission from cow to calf - which would prolong the epidemic - is very rare or non-existent
+(x23 / or
+	:op1 (x22 / rare
+		:ARG2 (x5 / investigate-01
+			:ARG0 (x4 / person
+				:ARG1-of (e / expert-41)
+				:mod (x3 / veterinary)))
+		:domain (x8 / transmit-01
+			:manner (x7 / maternal)
+			:ARG1 (x10 / cow
+				:ARG1 (x12 / calf))
+			:ARG0-of (x16 / prolong
+				:ARG1 (x18 / epidemic)))
+		:degree (x21 / very))
+	:op2 (x24 / non-existent))
+
+# ::id 24
+# ::snt Scientists trying to understand the epidemic face an unusual problem : BSE, scrapie and CJD are caused by a bizarre, infectious agent, the prion, which does not follow the normal rules of microbiology
+(x7 / face-01
+	:ARG0 (x1 / have-org-role-91
+		:ARG2 (s / scientist)
+		:mod (x4 / understand-01
+			:ARG1-of (x2 / try-01)
+			:ARG1 (x6 / epidemic)))
+	:ARG1 (x10 / problem
+		:mod (x9 / usual
+			:polarity -))
+	:ARG1 (x15 / and
+		:op1 (x12 / country
+			:name (n / name
+				:op1 "BSE"))
+		:op2 (x14 / scrapie)
+		:op2 (x16 / cjd)
+		:op1 (x18 / cause-01
+			:ARG0 (x24 / agent
+				:mod (x21 / bizarre)
+				:mod (x23 / infectious)
+				:mod (x27 / prion)
+				:ARG0-of (x32 / follow-02
+					:ARG1 (x35 / rule
+						:mod (x34 / normal)
+						:topic (x37 / microbiology)))))))
+
+# ::id 25
+# ::snt Recent research shows that the prion is an abnormal form of a protein that is normally present in the brain (though its normal function is not yet known )
+(x3 / show-01
+	:ARG0 (x2 / research
+		:time (x1 / recent))
+	:ARG1 (x10 / form
+		:domain (x6 / prion)
+		:mod (x13 / protein
+			:time (x17 / present
+				:mod (x16 / normal)
+				:ARG2 (x20 / brain)
+				:null_edge (x29 / know-01
+					:ARG1 (x25 / function-01
+						:mod (x24 / normal))
+					:time (x28 / yet))))))
+
+# ::id 26
+# ::snt Unlike viruses and bacteria, prions contain no genetic material of Scientists trying to understand the epidemic face an unusual problem : BSE , scrapie and CJD own
+(x7 / contain-01
+	:ARG1 (x3 / and
+		:op2 (x4 / bacteria)
+		:op1 (xap0 / resemble-01
+			:ARG2 (x2 / virus)))
+	:ARG0 (x6 / prion)
+	:ARG1 (x10 / material
+		:polarity -
+		:mod (x9 / gene)
+		:purpose (x12 / have-org-role-91
+			:ARG2 (s / scientist)
+			:null_edge (x15 / understand-01
+				:ARG1-of (x13 / try-01)
+				:ARG1 (x17 / epidemic
+					:ARG1-of (x18 / face-01
+						:ARG1 (x21 / problem
+							:mod (x20 / usual
+								:polarity -)
+							:topic (x26 / and
+								:op1 (x23 / country
+									:name (n / name
+										:op1 "BSE"))
+								:op2 (x25 / scrapie)
+								:op2 (x27 / cjd)))))))))
+
+# ::id 27
+# ::snt The prion may arise by a genetic mutation (spontaneous or inherited )in the host animal
+(x3 / possible
+	:domain (x4 / arise-01
+		:ARG1 (x2 / prion)
+		:ARG0 (x8 / mutation
+			:mod (x7 / gene)
+			:mod (x11 / or
+				:op1 (x10 / spontaneous)
+				:op2 (x12 / inherit-01
+					:location (x17 / animal
+						:ARG1 (x16 / host-01)))))))
+
+# ::id 28
+# ::snt Or - in the case of BSE - the case of BSE may arrive from another animal
+(x1 / or
+	:op2 (x13 / possible
+		:domain (x14 / arrive-01
+			:ARG1 (x5 / case
+				:mod (x7 / country
+					:name (n / name
+						:op1 "BSE")))
+			:ARG1 (x10 / case
+				:mod (x12 / country
+					:name (n1 / name
+						:op1 "BSE")))
+			:ARG1 (x17 / animal
+				:mod (x16 / another)))))
+
+# ::id 29
+# ::snt Once in place in the victim's brain, place in the victim's brain catalyses what John Collinge, a prion researcher at St Mary's Hospital Medical School, London, called a slow ` chemical chain reaction ', converting the normal protein into the normal protein own abnormal form
+(x16 / catalysis
+	:prep-in (x3 / place
+		:part-of (x8 / brain
+			:part-of (x6 / victim)))
+	:domain (x10 / place
+		:part-of (x15 / brain
+			:part-of (x13 / victim)
+			:ARG1-of (x34 / call-03
+				:ARG0 (x18 / person
+					:name (n / name
+						:op1 "John"
+						:op2 "Collinge")
+					:ARG0-of (x23 / research-01
+						:ARG1 (x22 / prion)
+						:location (x25 / government-organization
+							:name (n1 / name
+								:op1 "St"
+								:op2 "Mary"
+								:op3 "'s"
+								:op4 "Hospital"
+								:op5 "Medical"
+								:op6 "School")
+							:location (x32 / city
+								:name (n2 / name
+									:op1 "London")))))
+				:ARG1 (x40 / react-01
+					:manner (x36 / slow)
+					:mod (x39 / chain
+						:mod (x38 / chemical)))
+				:purpose (x43 / convert-01
+					:ARG1 (x46 / protein
+						:mod (x45 / normal))
+					:ARG2 (x53 / form
+						:mod (x49 / normal)
+						:mod (x50 / protein)))))))
+
+# ::id 30
+# ::snt The prion molecule is folded in a way that makes The prion molecule extremely stable and therefore difficult to destroy by conventional sterilisation
+(x5 / fold
+	:ARG1 (x3 / molecule
+		:mod (x2 / prion))
+	:ARG1 (x16 / and
+		:op1 (x15 / stable
+			:domain (x13 / molecule
+				:mod (x12 / prion))
+			:degree (x14 / extreme))
+		:op2 (x18 / difficult
+			:domain (x20 / destroy-01
+				:ARG0 (x23 / sterilisation
+					:mod (x22 / convention))))))
+
+# ::id 31
+# ::snt Experiments show that BSE can be transmitted between species, for example from cow to monkey, by injecting or eating large amounts of infected tissue
+(x2 / show-01
+	:ARG0 (x1 / experiment-01)
+	:ARG1 (x5 / possible
+		:domain (x7 / transmit-01
+			:ARG1 (x4 / country
+				:name (n / name
+					:op1 "BSE"))
+			:ARG0 (x9 / specie)
+			:ARG2 (x14 / cow
+				:ARG2 (x16 / monkey))
+			:manner (x20 / or
+				:op1 (x19 / inject-01
+					:ARG1 (x26 / tissue
+						:quant (x23 / amount
+							:mod (x22 / large))
+						:ARG1-of (x25 / infect-01)))
+				:op2 (x21 / eat-01)))))
+
+# ::id 32
+# ::snt But ` transmission is dose dependent, ' Collinge says
+(x10 / say-01
+	:ARG1 (x6 / depend-01
+		:null_edge (x1 / contrast-01)
+		:ARG1 (x3 / transmit-01)
+		:ARG1 (x5 / dose-01))
+	:ARG0 (x9 / person
+		:name (n / name
+			:op1 "Collinge")))
+
+# ::id 33
+# ::snt Most independent experts maintain that no human being - dairy farmer or beef eater - is likely to be exposed to BSE in sufficient quantities to develop brain disease
+(x4 / maintain-01
+	:ARG0 (x2 / depend-01
+		:polarity -
+		:ARG0-of (x3 / person
+			:ARG1-of (e / expert-41)
+			:quant (x1 / most)))
+	:ARG1 (x17 / likely
+		:domain (x20 / expose-01
+			:ARG0 (x12 / or
+				:polarity -
+				:op2 (x7 / human)
+				:op1 (x11 / person
+					:ARG0-of (f / farm-01)
+					:mod (x10 / dairy))
+				:op2 (x14 / eater
+					:mod (x13 / beef-00)))
+			:ARG2 (x22 / organization
+				:name (n / name
+					:op1 "BSE"))
+			:ARG2 (x24 / suffice-01
+				:ARG1 (x27 / develop-02
+					:ARG1 (x29 / disease
+						:mod (x28 / brain)))))))
+

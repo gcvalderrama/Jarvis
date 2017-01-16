@@ -1,0 +1,417 @@
+# ::id 1
+# ::snt HURRICANE Andrew, claimed to be the costliest natural disaster in US history, yesterday smashed the costliest natural disaster in US history way through the state of Louisiana, inflicting severe damage on rural communities but narrowly missing the low-lying city of New Orleans
+(x4 / claim-01
+	:ARG0 (x2 / person
+		:name (n / name
+			:op1 "Andrew")
+		:ARG0-of (x1 / hurricane))
+	:ARG1 (x10 / disaster
+		:mod (x8 / costliest)
+		:mod (x9 / natural)
+		:time (x13 / history))
+	:ARG1 (x16 / smash
+		:ARG0 x2
+		:time (x15 / yesterday)
+		:ARG1 (x20 / disaster
+			:mod (x18 / costliest)
+			:mod (x19 / natural)
+			:location (x22 / country
+				:name (n1 / name
+					:op1 "US")))
+		:ARG1 (x24 / way
+			:mod (x23 / history))
+		:instrument (x27 / state
+			:location (x29 / country
+				:name (n2 / name
+					:op1 "Louisiana")))
+		:null_edge (x31 / inflict-01
+			:ARG1 (x33 / damage-01
+				:degree (x32 / severe))
+			:ARG1 (x36 / community
+				:mod (x35 / rural))
+			:prep-instead-of (x39 / miss-01
+				:ARG0 x36
+				:mod (x38 / narrowly)
+				:ARG1 (x42 / city
+					:mod (x41 / low-lying)
+					:poss (x45 / country
+						:name (n3 / name
+							:op1 "Orleans")
+						:null_edge (x44 / null_tag)))))))
+
+# ::id 2
+# ::snt The storm, which brought havoc to southern Florida on Monday and then headed north-west across the Gulf of Mexico, had made landfall late on Tuesday night some 60 miles south-west of the city in the agricultural Cajun country
+(x24 / landfall
+	:ARG1 (x2 / storm
+		:ARG0-of (x5 / bring-01
+			:ARG2 (x9 / country
+				:name (n / name
+					:op1 "Florida")
+				:mod (x8 / south))
+			:ARG2 (xap0 / wreak-01
+				:ARG1 (x6 / havoc
+					:ARG0-of (x14 / head-02
+						:ARG1 (x15 / north-west)
+						:location (x16 / across
+							:op1 (x18 / world-region
+								:name (n1 / name
+									:op1 "Gulf")
+								:part-of (x20 / country
+									:name (n2 / name
+										:op1 "Mexico")))))))
+			:time (xap1 / date-entity
+				:weekday (x11 / monday))))
+	:time (x25 / late)
+	:time (x28 / night
+		:mod (xap2 / date-entity
+			:weekday (x27 / tuesday
+				:unit (x31 / distance-quantity
+					:unit (m / mile)
+					:null_edge (x29 / some
+						:null_edge 60)
+					:null_edge (x32 / south-west
+						:part-of (x35 / city
+							:location (x40 / country
+								:mod (x38 / agriculture)
+								:mod (x39 / world-region
+									:name (n3 / name
+										:op1 "Cajun"))))))))))
+
+# ::id 3
+# ::snt Although the damage from the hurricane's landfall in Florida on Monday was much greater than initially esti mated, insurers ' losses there are likely to total less than Dollars 1bn, well below earlier expectations, a senior member of Lloyd's insurance market said yesterday
+(x / xconcept
+	:x (x47 / say-01
+		:ARG1 (x26 / likely
+			:domain (x21 / insurer)
+			:domain (x28 / total-01
+				:ARG2 (x32 / 1bn
+					:degree (x29 / less)))
+			:domain (x37 / expect-01
+				:time (x36 / early)))
+		:time (x48 / yesterday
+			:ARG0-of (x41 / have-org-role-91
+				:ARG2 (m / member)
+				:mod (x40 / senior)
+				:ARG1 (x46 / market
+					:poss (x43 / person
+						:name (n1 / name
+							:op1 "Lloyd"))
+					:mod (x45 / insure-02)))))
+	:x (xap1 / more
+		:ARG1 (x3 / damage-01
+			:ARG1 (x8 / landfall)
+			:location (x10 / country
+				:name (n / name
+					:op1 "Florida"))
+			:time (xap0 / date-entity
+				:weekday (x12 / monday)))
+		:quant (x14 / much)
+		:ARG1 (x19 / mate
+			:time (x17 / initial))))
+
+# ::id 4
+# ::snt In Louisiana, the hurricane landed with wind speeds of about 120 miles per hour and caused severe damage in small coastal centres such as Morgan City, Franklin and New Iberia
+(x16 / and
+	:op1 (x6 / land-01
+		:location (x2 / country
+			:name (n / name
+				:op1 "Louisiana"))
+		:ARG1 (x5 / hurricane)
+		:ARG1 (x9 / speed
+			:mod (x8 / wind)
+			:quant (x13 / distance-quantity
+				:unit (m / mile)
+				:null_edge (x11 / about
+					:null_edge 120
+					:op1 (x15 / temporal-quantity
+						:unit (h / hour))))))
+	:op2 (x17 / cause-01
+		:ARG1 (x19 / damage-01
+			:mod (x18 / severe))
+		:location (x23 / centre
+			:mod (x21 / small)
+			:ARG1 (x22 / coast)
+			:example (x30 / and
+				:op1 (x27 / city
+					:null_edge (x26 / country
+						:name (n3 / name
+							:op1 "Morgan")))
+				:op2 (x29 / person
+					:name (n1 / name
+						:op1 "Franklin"))
+				:op2 (x32 / country
+					:name (n2 / name
+						:op1 "Iberia"))))))
+
+# ::id 5
+# ::snt Associated tornadoes devastated Laplace, 20 miles west of New Orleans
+(x3 / devastate-01
+	:ARG0 (x2 / tornado
+		:ARG1 (x1 / associate-01))
+	:ARG1 (x4 / country
+		:name (n / name
+			:op1 "Laplace")
+		:location (xap0 / relative-position
+			:direction (x8 / west
+				:quant (x7 / distance-quantity
+					:unit (m / mile)
+					:quant 20))
+			:ARG1 (x11 / country
+				:name (n1 / name
+					:op1 "Orleans")
+				:null_edge (x10 / null_tag)))))
+
+# ::id 6
+# ::snt Then, however, Andrew lost force as it moved north over land
+(x10 / move-01
+	:ARG2 (x6 / lose-02
+		:mod (x1 / then)
+		:ARG0 (x5 / person
+			:name (n / name
+				:op1 "Andrew"))
+		:ARG1 (x7 / force))
+	:direction (x11 / north)
+	:ARG2 (x13 / land))
+
+# ::id 7
+# ::snt By yesterday afternoon, yesterday had been down-graded to tropical storm, in that yesterday sustained windspeeds were below 75 mph
+(x8 / down-grade
+	:time (x3 / afternoon
+		:null_edge (x2 / null_tag))
+	:ARG1 (x5 / yesterday)
+	:ARG2 (x11 / storm
+		:mod (x10 / tropic)
+		:ARG0 (x17 / windspeed
+			:ARG1-of (x16 / sustain
+				:ARG2 (x14 / that)
+				:time (x15 / yesterday))
+			:location (x19 / below
+				:op1 (x21 / mph
+					:quant 75)))))
+
+# ::id 8
+# ::snt Initial reports said at least one person had died, 75 been injured and thousands made homeless along the Louisiana coast, after 14 confirmed deaths in Florida and three in the Bahamas
+(x3 / say-01
+	:ARG0 (x2 / report-01
+		:mod (x1 / initial))
+	:ARG1 (x14 / and
+		:op1 (x9 / die-01
+			:ARG1 (x7 / person
+				:quant 1)
+			:location (x21 / coast
+				:mod (x17 / home)
+				:mod (x20 / country
+					:name (n / name
+						:op1 "Louisiana")))
+			:time (x23 / after
+				:op1 (x25 / confirm-01
+					:ARG0 14
+					:ARG1 (x26 / death
+						:location (x28 / country
+							:name (n2 / name
+								:op1 "Florida"))
+						:null_edge (x29 / and
+							:quant 3))
+					:location (x33 / organization
+						:name (n1 / name
+							:op1 "Bahamas")))))
+		:op2 (x13 / injure-01
+			:ARG1 75)))
+
+# ::id 9
+# ::snt The storm caused little damage to Louisiana's important oil-refining industry, although some plants had to halt production when electricity was cut
+(x3 / cause-01
+	:ARG0 (x2 / storm)
+	:ARG1 (x5 / damage-01
+		:degree (x4 / little)
+		:ARG1 (x11 / industry
+			:poss (x7 / country
+				:name (n / name
+					:op1 "Louisiana"))
+			:mod (x9 / important)
+			:mod (x10 / oil-refining)))
+	:ARG0 (x15 / plant
+		:quant (x14 / some)
+		:ARG1-of (x18 / halt-01
+			:ARG1 (x19 / produce-01
+				:time (x23 / cut-01
+					:ARG1 (x21 / electricity))))))
+
+# ::id 10
+# ::snt The Lloyd's member, in close contact with leading insurers in Florida, said that damage to insured property was remarkably small
+(x15 / say-01
+	:snt3 (x8 / contact-01
+		:ARG0-of (x4 / have-org-role-91
+			:ARG2 (m / member)
+			:ARG0 (x2 / person
+				:name (n / name
+					:op1 "Lloyd")))
+		:mod (x7 / close)
+		:ARG1 (x11 / insurer
+			:ARG0-of (x10 / lead-02)
+			:location (x13 / country
+				:name (n1 / name
+					:op1 "Florida"))))
+	:ARG1 (x23 / small
+		:domain (x17 / damage-01
+			:ARG1 (x20 / property
+				:ARG1-of (x19 / insure-02)))
+		:degree (x22 / remarkably)))
+
+# ::id 11
+# ::snt More than Dollars 15bn of damage may have been caused in all, but was mostly to uninsured property, The Lloyd's member said
+(x25 / say-01
+	:ARG1 (x7 / possible
+		:domain (x10 / cause-01
+			:ARG1 (x1 / more-than
+				:null_edge (x3 / null_tag)
+				:op1 (x6 / damage-01
+					:quant (x12 / all)))
+			:ARG1 (x19 / property
+				:mod (x16 / most)
+				:mod (x18 / uninsured))))
+	:ARG1 (x14 / contrast-01
+		:ARG2 (x24 / have-org-role-91
+			:ARG2 (m / member)
+			:ARG0 (x22 / person
+				:name (n / name
+					:op1 "Lloyd")))))
+
+# ::id 12
+# ::snt In north Miami, damage is minimal
+(x7 / minimal
+	:location (x3 / country
+		:name (n / name
+			:op1 "Miami")
+		:null_edge (x2 / null_tag))
+	:ARG1 (x5 / damage-01))
+
+# ::id 13
+# ::snt Worst affected is one hotel, whose basement was flooded
+(x5 / hotel
+	:domain (x1 / bad
+		:ARG1-of (x2 / affect-01))
+	:quant 1
+	:location-of (x10 / flood-01
+		:ARG1 (x8 / basement)))
+
+# ::id 14
+# ::snt Most of the destruction occurred in a 10-mile band across Homestead, 25 miles to the south of Miami, where a typical house sells for Dollars 100,000 to Dollars 150,000
+(x4 / destroy-01
+	:quant (x1 / most)
+	:ARG1 (x9 / band
+		:mod (x8 / 10-mile)
+		:location (xap0 / relative-position
+			:op1 (x14 / distance-quantity
+				:unit (m / mile)
+				:mod (x11 / homestead)
+				:quant 25)
+			:direction (x17 / south)
+			:ARG1 (x19 / country
+				:name (n / name
+					:op1 "Miami")
+				:ARG1-of (x25 / sell-01
+					:null_edge (x23 / typify-01)
+					:null_edge (x30 / dollars))))))
+
+# ::id 15
+# ::snt US insurers will face a bill in respect of such properties, but Lloyd's exposure there is minimal
+(x13 / contrast-01
+	:ARG1 (x4 / face-01
+		:ARG0 (x2 / insurer
+			:mod (x1 / country
+				:name (n / name
+					:op1 "US")))
+		:ARG1 (x6 / bill)
+		:topic (x8 / respect-01
+			:ARG1 (x11 / property
+				:mod (x10 / such)))
+		:ARG0 (x16 / expose-01
+			:ARG0 (x14 / person
+				:name (n1 / name
+					:op1 "Lloyd"))
+			:mod (x19 / minimal))))
+
+# ::id 16
+# ::snt Many destroyed power lines are thought to be uninsured, as are trees and shrubs uprooted across a wide area
+(x6 / think-01
+	:ARG1 (x4 / line
+		:quant (x1 / many)
+		:ARG1-of (x2 / destroy-01)
+		:mod (x3 / power))
+	:ARG1 (x9 / uninsured)
+	:ARG1 (x14 / and
+		:op1 (x13 / tree)
+		:op2 (x15 / shrub)
+		:op1 (x16 / uproot
+			:location (x17 / across
+				:op1 (x20 / area
+					:mod (x19 / wide))))))
+
+# ::id 17
+# ::snt Only one big hotel in that area has been badly damaged, a Holiday Inn
+(x11 / damage-01
+	:ARG1 (x4 / hotel
+		:mod (x1 / only
+			:op1 1)
+		:mod (x3 / big)
+		:location (x7 / area
+			:mod (x6 / that)))
+	:manner (x10 / badly)
+	:ARG1 (x15 / inn
+		:mod (x14 / holiday)))
+
+# ::id 18
+# ::snt Across Florida, some 2m people remained without electric ity yesterday and health officials were warning the public to boil or chemically treat all water
+(x7 / remain-01
+	:location (x2 / country
+		:name (n / name
+			:op1 "Florida"))
+	:ARG1 (x4 / some
+		:op1 (x5 / 2m))
+	:ARG1 (x12 / and
+		:op2 (x10 / ity
+			:mod (x9 / electric))
+		:op1 (x11 / yesterday)
+		:op2 (x16 / warn-01
+			:ARG1 (x21 / or
+				:op1 (x20 / boil
+					:ARG0 (x18 / public))
+				:op2 (x23 / treat-01
+					:ARG0 x18
+					:manner (x22 / chemically)
+					:ARG1 (x25 / water
+						:quant (x24 / all))))
+			:ARG0 (xap0 / person
+				:ARG0-of (x14 / have-org-role-91
+					:ARG2 (o / official)
+					:ARG1 (x13 / health))))))
+
+# ::id 19
+# ::snt Hurricane Hugo, which devastated much of South Carolina in 1989, cost the insurance industry some Dollars 4.2 bn
+(x13 / cost-01
+	:ARG2 (x2 / hugo
+		:null_edge (x1 / null_tag)
+		:ARG0-of (x5 / devastate-01
+			:ARG0 (x8 / country
+				:name (n / name
+					:op1 "South"
+					:op2 "Carolina"))
+			:time (x11 / date-entity
+				:year 1989)))
+	:ARG2 (x16 / industry
+		:mod (x15 / insure-02))
+	:ARG2 (x18 / dollars
+		:mod (x17 / some)))
+
+# ::id 20
+# ::snt Further uninsured losses may have raised the total to Dollars 6bn-Dollars 10bn
+(x4 / possible
+	:domain (x6 / raise-01
+		:ARG0 (x1 / further
+			:mod (x2 / uninsured))
+		:ARG1 (x8 / total-01
+			:ARG2 (x10 / dollars))
+		:ARG1 (x12 / 10bn
+			:null_edge (x11 / null_tag))))
+

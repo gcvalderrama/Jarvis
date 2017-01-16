@@ -1,0 +1,613 @@
+# ::id 1
+# ::snt Officials warned residents of the U.S. Virgin Islands, Puerto Rico and nearby islands to bolt down everything loose and stock up on food and water Wednesday as Hurricane Dean rumbled through the eastern Caribbean
+(x2 / warn-01
+	:ARG1 (x3 / person
+		:ARG0-of (r / reside-01))
+	:ARG0 (x12 / and
+		:op1 (x8 / island
+			:mod (x7 / country
+				:name (n2 / name
+					:op1 "Virgin")
+				:mod (x6 / country
+					:name (n4 / name
+						:op1 "U.S."))))
+		:op2 (x11 / country
+			:name (n / name
+				:op1 "Rico")
+			:mod (x10 / country
+				:name (n3 / name
+					:op1 "Puerto")))
+		:op2 (x14 / island
+			:mod (x13 / nearby)))
+	:ARG1 (x20 / and
+		:op1 (x16 / bolt
+			:ARG1 (x18 / everything)
+			:mod (x19 / loose-01))
+		:op2 (x21 / stock
+			:ARG1 (x25 / and
+				:op1 (x24 / food)
+				:op2 (x26 / water))))
+	:time (x27 / wednesday)
+	:time (x31 / rumble-01
+		:ARG0 (x30 / dean
+			:null_edge (x29 / null_tag))
+		:ARG2 (x35 / country
+			:name (n1 / name
+				:op1 "Caribbean")
+			:mod (x34 / east)))
+	:ARG0 (xap0 / person
+		:ARG0-of (x1 / have-org-role-91
+			:ARG2 (o / official))))
+
+# ::id 2
+# ::snt Dean was upgraded from a tropical storm to the second hurricane of the Atlantic season Wednesday, and by nightfall the National Weather Center in Puerto Rico reported the hurricane's winds had strengthened to 80 mph
+(x18 / and
+	:op1 (x3 / upgrade-02
+		:ARG1 (x1 / person
+			:name (n / name
+				:op1 "Dean"))
+		:ARG2 (x7 / storm
+			:mod (x6 / tropic))
+		:ARG4 (x11 / hurricane
+			:ARG0 (x15 / season))
+		:ARG1 (x16 / wednesday))
+	:op2 (x28 / report-01
+		:ARG0 x1
+		:ARG0 (x20 / nightfall)
+		:ARG0 (x22 / government-organization
+			:name (n1 / name
+				:op1 "National"
+				:op2 "Weather"
+				:op3 "Center")
+			:location (x27 / country
+				:name (n2 / name
+					:op1 "Rico")
+				:mod (x26 / country
+					:name (n3 / name
+						:op1 "Puerto"))))
+		:ARG1 (x34 / strengthen-01
+			:ARG0 (x32 / wind)
+			:ARG2 (x37 / mph
+				:quant 80))))
+
+# ::id 3
+# ::snt Hurricane warnings were posted for the Leeward Islands from Antigua to the U.S. Virgin Islands and Puerto Rico, said forecasters at the National Hurricane Center near Miami
+(x4 / post-01
+	:ARG1 (x2 / warn-01
+		:null_edge (x1 / null_tag))
+	:ARG2 (x8 / island
+		:null_edge (x7 / country
+			:name (n / name
+				:op1 "Leeward")))
+	:ARG2 (x16 / and
+		:source (x10 / country
+			:name (n1 / name
+				:op1 "Antigua"))
+		:location (x14 / country
+			:name (n2 / name
+				:op1 "Virgin")
+			:mod (x13 / country
+				:name (n4 / name
+					:op1 "U.S.")))
+		:op2 (x18 / country
+			:name (n3 / name
+				:op1 "Rico")
+			:mod (x17 / country
+				:name (n5 / name
+					:op1 "Puerto")))
+		:op1 (x20 / say-01
+			:ARG1 (x21 / forecaster)
+			:location (x26 / center
+				:null_edge (x24 / nation)
+				:null_edge (x25 / null_tag)
+				:location (x27 / near
+					:op1 (x28 / country
+						:name (n6 / name
+							:op1 "Miami")))))))
+
+# ::id 4
+# ::snt At midnight EDT, forecasters reported the center of the hurricane was at latitude 18.5 north and longitude 61.3 west, moving westerly at 15 mph
+(x6 / report-01
+	:time (x2 / midnight
+		:op1 (x3 / date-entity))
+	:ARG0 (x5 / forecaster)
+	:ARG1 (x8 / center
+		:part-of (x11 / hurricane)
+		:location (x14 / latitude
+			:null_edge (x16 / null_tag
+				:null_edge (x15 / 18.5)
+				:domain (x22 / move-01
+					:ARG1 (x23 / westerly)
+					:ARG2 (x26 / mph
+						:quant 15))))
+		:mod (x18 / longitude))
+	:ARG1 (x17 / and))
+
+# ::id 5
+# ::snt midnight EDT latest position was 310 miles east of Puerto Rico, 65 miles northeast of Barbuda and about 240 miles east of St. Thomas
+(x7 / distance-quantity
+	:unit (m / mile)
+	:ARG1 (x4 / position
+		:mod (x1 / midnight)
+		:time (x3 / late
+			:degree (m3 / most)))
+	:null_edge (x8 / east
+		:null_edge (x11 / country
+			:name (n / name
+				:op1 "Rico")
+			:mod (x10 / country
+				:name (n1 / name
+					:op1 "Puerto"))))
+	:quant (x14 / distance-quantity
+		:unit (m1 / mile)
+		:null_edge (x15 / northeast
+			:null_edge (x17 / country
+				:name (n2 / name
+					:op1 "Barbuda"))))
+	:quant (x21 / distance-quantity
+		:unit (m2 / mile)
+		:null_edge (x19 / about
+			:null_edge 240)
+		:null_edge (x22 / east
+			:null_edge (x25 / person
+				:name (n3 / name
+					:op1 "Thomas")
+				:null_edge (x24 / country
+					:name (n4 / name
+						:op1 "St."))))))
+
+# ::id 6
+# ::snt The storm was moving over warm tropical waters at 15 mph, down slightly from the 20 mph a tropical storm had sustained much of the day
+(x4 / move-01
+	:ARG1 (x2 / storm)
+	:ARG2 (x8 / water
+		:mod (x6 / warm)
+		:mod (x7 / tropic))
+	:ARG2 (x11 / mph
+		:quant 15)
+	:manner (x14 / slight
+		:direction (x13 / down)
+		:op1 (x18 / mph
+			:quant 20
+			:location-of (x23 / sustain
+				:ARG0 (x21 / storm
+					:mod (x20 / tropic))
+				:time (x27 / day)))))
+
+# ::id 7
+# ::snt But forecasters said some strengthening was possible in the next 24 hours
+(x1 / contrast-01
+	:ARG2 (x3 / say-01
+		:ARG0 (x2 / forecaster)
+		:ARG1 (x7 / possible
+			:domain (x5 / strengthen-01
+				:mod (x4 / some))
+			:domain (x12 / temporal-quantity
+				:unit (h / hour)
+				:mod (x10 / next)
+				:quant 24))))
+
+# ::id 8
+# ::snt An advisory issued by the National Weather Service in San Juan for the U.S. Virgin Islands and Puerto Rico advised residents to " secure loose objects or move residents of the U.S. Virgin Islands , Puerto Rico and nearby islands indoors, " board or tape windows and stock up on emergency supplies such as drinking water, food that needs no refrigeration and batteries
+(x20 / advise-01
+	:time (x2 / advise-01
+		:ARG1-of (x3 / issue-01
+			:ARG0 (x6 / government-organization
+				:name (n / name
+					:op1 "National"
+					:op2 "Weather"
+					:op3 "Service")
+				:location (x11 / country
+					:name (n1 / name
+						:op1 "Juan")
+					:mod (x10 / country
+						:name (n3 / name
+							:op1 "San"))))
+			:ARG2 (x17 / and
+				:op1 (x16 / island
+					:mod (x15 / country
+						:name (n4 / name
+							:op1 "Virgin")
+						:mod (x14 / country
+							:name (n7 / name
+								:op1 "U.S."))))
+				:op2 (x19 / country
+					:name (n2 / name
+						:op1 "Rico")
+					:mod (x18 / country
+						:name (n5 / name
+							:op1 "Puerto"))))))
+	:ARG1 (x21 / person
+		:ARG0-of (r / reside-01))
+	:ARG1 (x27 / or
+		:op1 (x24 / secure
+			:ARG1 (x26 / object
+				:mod (x25 / loose-01)))
+		:op2 (x28 / move-01
+			:ARG1 (x29 / person
+				:ARG0-of (r1 / reside-01)
+				:ARG1 (x38 / and
+					:op1 (x34 / island
+						:mod (x33 / country
+							:name (n8 / name
+								:op1 "Virgin")
+							:mod (x32 / country
+								:name (n10 / name
+									:op1 "U.S."))))
+					:op2 (x37 / country
+						:name (n6 / name
+							:op1 "Rico")
+						:mod (x36 / country
+							:name (n9 / name
+								:op1 "Puerto")))
+					:op2 (x40 / island
+						:mod (x39 / nearby))))
+			:manner (x41 / indoors)))
+	:ARG1 (x48 / and
+		:op1 (x47 / window
+			:poss (x45 / or
+				:op1 (x44 / board)
+				:op2 (x46 / tape)))
+		:op2 (x49 / stock))
+	:mod (x50 / up)
+	:ARG2 (x53 / supply-01
+		:mod (x52 / emergency)
+		:ARG2 (x57 / water
+			:mod (x56 / drink-01)))
+	:ARG1 (x59 / food
+		:ARG0-of (x61 / need-01
+			:polarity -
+			:ARG1 (x64 / and
+				:op1 (x63 / refrigeration)
+				:op2 (x65 / battery)))))
+
+# ::id 9
+# ::snt " This is a dangerous storm and should not be taken lightly, even though a minimal hurricane is a minimal hurricane, " it said
+(x26 / say-01
+	:ARG1 (x7 / and
+		:op1 (x6 / storm
+			:domain (x2 / this)
+			:mod (x5 / dangerous))
+		:op2 (x8 / recommend-01
+			:ARG1 (x11 / take-01
+				:manner (x12 / light)
+				:condition (x22 / hurricane
+					:mod (x14 / even)
+					:ARG1 (x18 / hurricane
+						:mod (x17 / minimal))
+					:mod (x21 / minimal))))))
+
+# ::id 10
+# ::snt " Do n't take chances
+(x4 / take-01
+	:ARG1 (x5 / chance-01))
+
+# ::id 11
+# ::snt 
+(x4 / possible
+	:domain (x5 / lead-03
+		:ARG0 (x3 / hurricane
+			:mod (x2 / minimal))
+		:ARG2 (x8 / or
+			:op1 (x7 / injure-01)
+			:op2 (x10 / die-01
+				:mod (x9 / even)))))
+
+# ::id 12
+# ::snt In San Juan, a city of 1.1 million people, shoppers formed long lines in supermarkets, workers boarded up windows of the governor's mansion and stores in the tourist district of Old San Juan
+(x13 / form-01
+	:location (x3 / country
+		:name (n / name
+			:op1 "Juan")
+		:location (x6 / city
+			:name (x2 / country
+				:name (n1 / name
+					:op1 "San"))
+			:ARG1-of (x7 / include-91)))
+	:ARG0 (x12 / shopper)
+	:ARG1 (x15 / line
+		:mod (x14 / long)
+		:location (x28 / and
+			:op1 (x17 / supermarket)
+			:op2 (x19 / person
+				:ARG0-of (w / work-01)
+				:ARG1-of (x20 / board
+					:ARG1 (x22 / window
+						:ARG1 (x27 / mansion))))
+			:op2 (x29 / store
+				:location (x33 / district
+					:mod (x32 / person
+						:ARG0-of (t / tour-01))
+					:poss (x37 / country
+						:name (n2 / name
+							:op1 "Juan")
+						:mod (x36 / country
+							:name (n3 / name
+								:op1 "San"))))))))
+
+# ::id 13
+# ::snt A hurricane advisory said aircraft reports indicated Dean's center was moving westward after making a temporary jog northwest
+(x4 / say-01
+	:ARG0 (x3 / advise-01
+		:ARG1 (x2 / hurricane))
+	:ARG1 (x7 / indicate-01
+		:ARG0 (x6 / report-01
+			:mod (x5 / aircraft))
+		:ARG1 (x12 / move-01
+			:ARG1 (x10 / center
+				:poss (x8 / person
+					:name (n / name
+						:op1 "Dean")))
+			:manner (x13 / westward)
+			:time (x14 / after
+				:op1 (x15 / make-01
+					:ARG1 (x18 / jog
+						:mod (x19 / northwest
+							:duration (x17 / temporary))))))))
+
+# ::id 14
+# ::snt " This increases the threat to the northern Leeward islands, " A hurricane advisory said
+(x16 / say-01
+	:ARG1 (x3 / increase-01
+		:ARG0 (x2 / this)
+		:ARG1 (x5 / threaten-01
+			:ARG2 (x10 / island
+				:name (x8 / name
+					:op1 "northern")
+				:mod (x9 / country
+					:name (n / name
+						:op1 "Leeward")))))
+	:ARG0 (x15 / advise-01
+		:ARG1 (x14 / hurricane)))
+
+# ::id 15
+# ::snt Forecasters said the storm was expected to first hit land in Barbuda, the easternmost Leeward Island and move northwest toward the U.S. Virgin Islands and Puerto Rico over the next 24 to 36 hours
+(x2 / say-01
+	:ARG0 (x1 / forecaster)
+	:ARG1 (x6 / expect-01
+		:ARG1 (x4 / storm)
+		:ARG1 (x9 / hit-01
+			:time (x8 / first)
+			:ARG1 (x10 / land)
+			:duration (x35 / temporal-quantity
+				:unit (h / hour)
+				:mod (x31 / next)
+				:quant 36)))
+	:ARG1 (x18 / and
+		:op1 (x12 / country
+			:name (n / name
+				:op1 "Barbuda"))
+		:op2 (x16 / name
+			:op1 "Leeward"
+			:op2 "Island"
+			:mod (x15 / easternmost)
+			:mod (x20 / northwest
+				:ARG1 (x19 / move-02)))
+		:op2 (x26 / and
+			:location (x24 / country
+				:name (n1 / name
+					:op1 "Virgin")
+				:mod (x23 / country
+					:name (n3 / name
+						:op1 "U.S.")))
+			:op2 (x28 / country
+				:name (n2 / name
+					:op1 "Rico")
+				:mod (x27 / country
+					:name (n4 / name
+						:op1 "Puerto"))))))
+
+# ::id 16
+# ::snt Government radio in the twin island state of Antigua and Barbuda said Dean was expected to hit Barbuda on Wednesday night, and warned residents to bar windows, latch down loose objects and stock up on water
+(x12 / say-01
+	:ARG0 (x2 / radio
+		:ARG0 (x1 / government-organization
+			:ARG0-of (g / govern-01))
+		:location (x7 / state
+			:mod (x5 / twin)
+			:location (x6 / island)
+			:ARG1 (x10 / and
+				:op1 (x9 / country
+					:name (n / name
+						:op1 "Antigua"))
+				:op2 (x11 / country
+					:name (n1 / name
+						:op1 "Barbuda")))))
+	:ARG1 (x23 / and
+		:op1 (x15 / expect-01
+			:ARG1 (x17 / hit-01
+				:ARG0 (x13 / person
+					:name (n2 / name
+						:op1 "Dean"))
+				:ARG1 (x18 / country
+					:name (n3 / name
+						:op1 "Barbuda"))
+				:time (x21 / night
+					:mod (xap0 / date-entity
+						:null_edge (x20 / null_tag)))))
+		:op2 (x24 / warn-01
+			:ARG1 (x25 / person
+				:ARG0-of (r / reside-01))
+			:ARG1 (x34 / and
+				:op1 (x27 / bar-01
+					:ARG1 (x28 / window))
+				:op2 (x30 / latch
+					:ARG1 (x33 / object
+						:mod (x32 / loose-01)))
+				:op2 (x35 / stock
+					:ARG1 (x38 / water))))))
+
+# ::id 17
+# ::snt Barbuda is a flat, 62-square-mile coral island with a population of 1,200 and little industry or tourism
+(x8 / island
+	:domain (x1 / country
+		:name (n / name
+			:op1 "Barbuda"))
+	:mod (x4 / flat)
+	:mod (x6 / 62-square-mile)
+	:mod (x7 / coral)
+	:accompanier (x14 / and
+		:op1 (x11 / population
+			:ARG1 (x17 / or
+				:op1 (x16 / industry
+					:mod (x15 / little))
+				:op2 (x18 / tourism)))
+		:quant (x13 / 1,200)))
+
+# ::id 18
+# ::snt A hurricane warning for Guadeloupe was dropped, as was a hurricane watch for Dominica and Martinique
+(x7 / drop-01
+	:ARG1 (x3 / warn-01
+		:ARG1 (x2 / hurricane)
+		:ARG1 (x5 / country
+			:name (n / name
+				:op1 "Guadeloupe")))
+	:condition (x13 / watch-01
+		:ARG1 (x16 / and
+			:op1 (x15 / country
+				:name (n1 / name
+					:op1 "Dominica"))
+			:op2 (x17 / country
+				:name (n2 / name
+					:op1 "Martinique")))))
+
+# ::id 19
+# ::snt 
+(x11 / call-03
+	:ARG0 (x3 / country
+		:name (n / name
+			:op1 "Gables")
+		:null_edge (x2 / country
+			:name (n2 / name
+				:op1 "Coral"))
+		:null_edge (x5 / country
+			:name (n3 / name
+				:op1 "Fla.")))
+	:ARG0 (x9 / newspaper
+		:name (n1 / name
+			:op1 "Jim"
+			:op2 "Gross")
+		:ARG0-of (x8 / person
+			:ARG0-of (s / specialize-01)
+			:ARG1 (x7 / hurricane)))
+	:ARG2 (x15 / hurricane
+		:ARG0 (x12 / dean)
+		:mod (x14 / small))
+	:time (x20 / confine-01
+		:ARG1 (x19 / wind
+			:mod (x18 / hurricane-force))
+		:ARG2 (x27 / center
+			:quant (x24 / distance-quantity
+				:unit (m / mile)
+				:quant 25))))
+
+# ::id 20
+# ::snt Rainfall of 4 to 8 inches and tides 2 to 4 feet above normal were said to be possible in the storm's path
+(x16 / say-01
+	:ARG1 (x7 / and
+		:op1 (x1 / rain)
+		:op1 (x6 / distance-quantity
+			:unit (i / inch)
+			:quant 8)
+		:op2 (x8 / tide
+			:location (x13 / above
+				:op1 (x12 / distance-quantity
+					:unit (f / foot)
+					:quant 4)
+				:op1 (x14 / normal))))
+	:ARG1 (x19 / possible
+		:domain (x24 / path
+			:poss (x22 / storm))))
+
+# ::id 21
+# ::snt Authorities broadcast similar warnings in several nearby islands
+(x2 / broadcast-01
+	:ARG0 (x1 / authority)
+	:ARG1 (x4 / warn-01
+		:ARG2-of (x3 / resemble-01
+			:op (s / similar)))
+	:location (x8 / island
+		:quant (x6 / several)
+		:mod (x7 / nearby)))
+
+# ::id 22
+# ::snt Dean grew from the fifth tropical depression of the season Monday morning into a named storm by Monday night
+(x2 / grow-01
+	:ARG1 (x1 / person
+		:name (n / name
+			:op1 "Dean"))
+	:ARG2 (x7 / depression
+		:mod (x6 / tropic)
+		:ARG1 (x10 / season))
+	:time (x12 / morning
+		:time (xap0 / date-entity
+			:null_edge (x11 / null_tag)))
+	:ARG2 (x16 / storm
+		:ARG1-of (x15 / name-01)
+		:time (x19 / night
+			:mod (xap1 / date-entity
+				:null_edge (x18 / null_tag)))))
+
+# ::id 23
+# ::snt Three other storms have formed since the season began June 1
+(x5 / form-01
+	:ARG0 (x3 / storm
+		:quant 3
+		:mod (x2 / other))
+	:time (x6 / since
+		:op1 (x9 / begin-01
+			:time (x10 / name
+				:op1 "June"
+				:op2 "1"))))
+
+# ::id 24
+# ::snt 
+(x5 / cause-01
+	:ARG0 (x3 / person
+		:name (n / name
+			:op1 "Allison")
+		:null_edge (x1 / tropic))
+	:ARG1 (x7 / flooding
+		:mod (x6 / widespread))
+	:location (x10 / and
+		:op1 (x9 / country
+			:name (n1 / name
+				:op1 "Texas"))
+		:op2 (x11 / country
+			:name (n2 / name
+				:op1 "Louisiana")))
+	:time (x13 / date-entity))
+
+# ::id 25
+# ::snt Barry churned up the open Atlantic last month before dissipating
+(x2 / churn
+	:ARG0 (x1 / person
+		:name (n / name
+			:op1 "Barry"))
+	:time (x8 / month
+		:mod (x7 / last))
+	:null_edge (x9 / null_tag
+		:op1 (x10 / dissipate)))
+
+# ::id 26
+# ::snt Chantal became a hurricane Monday and was downgraded to a tropical depression Tuesday night after hitting land in Texas
+(x6 / and
+	:op1 (x2 / become-01
+		:ARG1 (x5 / monday)
+		:ARG2 (x8 / downgrade
+			:ARG1 (x4 / hurricane
+				:ARG0 (x1 / person
+					:name (n / name
+						:op1 "Chantal")))
+			:ARG2 (x12 / depression
+				:mod (x11 / tropic))
+			:time (x14 / night
+				:mod (xap0 / date-entity
+					:weekday (x13 / tuesday)))
+			:time (x15 / after
+				:op1 (x16 / hit-02
+					:ARG1 (x17 / land
+						:location (x19 / country
+							:name (n1 / name
+								:op1 "Texas"))))))))
+

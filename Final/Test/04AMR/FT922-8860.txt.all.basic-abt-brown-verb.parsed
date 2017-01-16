@@ -1,0 +1,258 @@
+# ::id 1
+# ::snt THE World Bank will link loan volume to the strength of a country's efforts to fight poverty, according to an operational directive to staff issued today by Mr Lewis Preston, the bank's president
+(x5 / link-01
+	:ARG0 (x2 / organization
+		:name (n / name
+			:op1 "World"
+			:op2 "Bank"))
+	:ARG1 (x7 / volume
+		:mod (x6 / loan-01))
+	:ARG2 (x10 / strength
+		:ARG1 (x15 / effort
+			:poss (x13 / country)
+			:purpose (x17 / fight-01
+				:ARG0 x13
+				:ARG1 (x18 / poverty))))
+	:null_edge (x24 / directive
+		:ARG1-of (x23 / operate-01)
+		:topic (x26 / person
+			:ARG2-of (s / staff-01))
+		:name (x31 / name
+			:op1 "Lewis"
+			:op2 "Preston"
+			:time (x28 / today)
+			:ARG0-of (x37 / have-org-role-91
+				:ARG2 (p / president)
+				:ARG0 (x35 / bank)))))
+
+# ::id 2
+# ::snt The link between loans and poverty relief forms part of a new drive to make poverty alleviation the bank's central mission in the 1990s
+(x8 / form
+	:domain (x2 / link-01
+		:ARG1 (x5 / and
+			:op1 (x4 / loan-01)
+			:op2 (x7 / relieve-01
+				:ARG1 (x6 / poverty)))
+		:ARG1 (x13 / drive
+			:mod (x12 / new)
+			:null_edge (x15 / make-01
+				:ARG1 (x22 / mission
+					:domain (x17 / alleviation
+						:ARG1 (x16 / poverty))
+					:mod (x21 / central)
+					:time (xap0 / date-entity
+						:time (x25 / date-entity)))))))
+
+# ::id 3
+# ::snt The shift in priorities is also reflected in a commitment to make comprehensive assessments of the nature and extent of poverty in the third world, allowing the bank to design more effective policies to fight poverty
+(x7 / reflect-01
+	:ARG1 (x2 / shift-01
+		:location (x4 / priority))
+	:mod (x6 / also)
+	:ARG2 (x10 / commit-01
+		:ARG1 (x12 / make-01
+			:ARG1 (x14 / assess-01
+				:mod (x13 / comprehensive)
+				:topic (x18 / and
+					:op1 (x17 / nature
+						:poss (x21 / poverty)
+						:location (x25 / world))
+					:op2 (x19 / extent)))))
+	:ARG2 (x27 / allow-01
+		:ARG1 (x31 / design-01
+			:ARG0 (x29 / bank)
+			:ARG1 (x34 / policy
+				:mod (x33 / effective
+					:degree (x32 / more))
+				:purpose (x36 / fight-01
+					:ARG0 x29
+					:ARG1 (x37 / poverty))))))
+
+# ::id 4
+# ::snt In the directive, Mr Preston says poverty reduction is ` the benchmark by which our performance as a development institution will be measured '
+(x7 / say-01
+	:medium (x3 / directive)
+	:ARG0 (x6 / person
+		:name (n / name
+			:op1 "Preston")
+		:null_edge (x5 / mr))
+	:ARG1 (x13 / benchmark
+		:domain (x9 / reduce-01
+			:ARG1 (x8 / poverty))
+		:ARG1-of (x24 / measure-01
+			:ARG1 (x17 / perform-01
+				:ARG1 (x21 / institution
+					:mod (x20 / develop-02))))))
+
+# ::id 5
+# ::snt Mr Preston adds that the new instructions to staff are intended to ` ensure that these policies are fully reflected in the bank's operations '
+(x3 / add-02
+	:ARG0 (x2 / person
+		:name (n / name
+			:op1 "Preston")
+		:null_edge (x1 / mr))
+	:ARG1 (x11 / intend-01
+		:ARG1 (x7 / instruction
+			:mod (x6 / new)
+			:mod (x9 / person
+				:ARG2-of (s / staff-01)))
+		:ARG2 (x14 / ensure-01
+			:ARG1 (x20 / reflect-01
+				:ARG1 (x17 / policy)
+				:degree (x19 / full)
+				:ARG2 (x25 / operation)))))
+
+# ::id 6
+# ::snt The bank is also publishing a handbook containing examples of past best practice on poverty reduction
+(x5 / publish-01
+	:ARG0 (x2 / bank)
+	:mod (x4 / also)
+	:ARG1 (x7 / handbook
+		:ARG0-of (x8 / contain-01
+			:ARG1 (x9 / example
+				:poss (x13 / practice
+					:time (x11 / past)
+					:mod (x12 / good
+						:degree (m / most))
+					:ARG1 (x16 / reduce-01
+						:ARG1 (x15 / poverty)))))))
+
+# ::id 7
+# ::snt The bank says poverty assessments should be available for most developing countries within two years
+(x3 / say-01
+	:ARG0 (x2 / bank)
+	:ARG1 (x6 / recommend-01
+		:ARG1 (x8 / available
+			:domain (x5 / assess-01
+				:ARG1 (x4 / poverty))
+			:beneficiary (x12 / country
+				:quant (x10 / most)
+				:ARG1-of (x11 / develop-02))
+			:time (x13 / within
+				:op1 (x15 / temporal-quantity
+					:unit (y / year)
+					:quant 2)))))
+
+# ::id 8
+# ::snt These would form the basis for a ` collaborative approach to poverty reduction by country officials and the bank '
+(x3 / form-01
+	:ARG1 (x10 / approach-02
+		:mod (x9 / collaborative)
+		:ARG1 (x13 / reduce-01
+			:ARG1 (x12 / poverty))
+		:ARG0 (x17 / and
+			:op2 (x19 / bank)
+			:op1 (xap0 / person
+				:ARG0-of (x16 / have-org-role-91
+					:ARG2 (o / official)
+					:ARG1 (x15 / country))))))
+
+# ::id 9
+# ::snt The directive signals an attempt to impose a form of ` social conditionality ' on borrowing countries
+(x3 / signal
+	:ARG0 (x2 / directive)
+	:ARG1 (x5 / attempt-01
+		:ARG1 (x7 / impose-01
+			:ARG1 (x9 / form
+				:mod (x13 / conditionality
+					:mod (x12 / society
+						:poss (x17 / country
+							:mod (x16 / borrowing))))))))
+
+# ::id 10
+# ::snt ` Stronger government commitment to poverty reduction warrants greater support ; conversely, weaker commitment to poverty reduction warrants less support, ' Stronger government commitment to poverty reduction warrants greater support ; conversely , weaker commitment to poverty reduction warrants less support says
+(x / xconcept
+	:x (x11 / and
+		:op1 (x8 / warrant
+			:domain (x4 / commit-01
+				:ARG1 (x3 / government-organization
+					:ARG0-of (g / govern-01)
+					:mod (x2 / strong))
+				:ARG2 (x7 / reduce-01
+					:ARG1 (x6 / poverty)))
+			:ARG1 (x10 / support-01
+				:ARG0 x4
+				:degree (x9 / great)))
+		:op3 (x19 / warrant
+			:mod (x12 / conversely)
+			:ARG1 (x21 / support-01
+				:ARG1 (x15 / commit-01
+					:mod (x14 / weak-41)
+					:ARG2 (x18 / reduce-01
+						:ARG1 (x17 / poverty)))
+				:manner (x20 / less)))
+		:op4 (x34 / conversely))
+	:x (x33 / and
+		:op3 (x30 / warrant
+			:domain (x26 / commit-01
+				:ARG1 (x25 / government-organization
+					:ARG0-of (g1 / govern-01)
+					:mod (x24 / strong))
+				:ARG2 (x29 / reduce-01
+					:ARG1 (x28 / poverty)))
+			:ARG1 (x32 / support-01
+				:degree (x31 / great)))
+		:op3 (x41 / warrant
+			:ARG1 (x43 / support-01
+				:ARG1 (x37 / commit-01
+					:mod (x36 / weak-41)
+					:ARG2 (x40 / reduce-01
+						:ARG1 (x39 / poverty)))
+				:degree (x42 / less)
+				:ARG1 (x44 / thing
+					:ARG1-of (s / say-01))))))
+
+# ::id 11
+# ::snt Mr Preston's emphasis on poverty is a reaction to bank policies in the 1980s, when the aim was to improve economic efficiency in developing countries
+(x9 / react-01
+	:domain (x4 / emphasize-01
+		:ARG0 (x2 / person
+			:name (n / name
+				:op1 "Preston"))
+		:ARG1 (x6 / poverty))
+	:ARG1 (x12 / policy
+		:ARG0 (x11 / bank)
+		:time (xap0 / date-entity
+			:decade 1980
+			:ARG1 (x19 / aim-01
+				:ARG1 (x22 / improve-01
+					:ARG1 (x24 / efficiency
+						:mod (x23 / economy))
+					:location (x27 / country
+						:ARG1-of (x26 / develop-02)))))))
+
+# ::id 12
+# ::snt The new directive says structural adjustment lending in the past decade ` overshadowed the bank's poverty reduction objectives '
+(x4 / say-01
+	:ARG0 (x3 / directive
+		:mod (x2 / new))
+	:ARG1 (x13 / overshadow
+		:ARG0 (x7 / lending
+			:mod (x5 / structure)
+			:mod (x6 / adjust-01)
+			:duration (x11 / decade
+				:mod (x10 / past)))
+		:ARG1 (x19 / objective
+			:poss (x15 / bank)
+			:mod (x18 / reduce-01
+				:ARG1 (x17 / poverty)))))
+
+# ::id 13
+# ::snt The bank is also reacting to new evidence suggesting that the number of poor in developing countries will rise during the 1990s, rather than stabilise as had been expected
+(x5 / react-01
+	:ARG0 (x2 / bank)
+	:mod (x4 / also)
+	:ARG1 (x8 / evidence-01
+		:mod (x7 / new)
+		:ARG0-of (x9 / suggest-01
+			:ARG1 (x19 / rise-01
+				:ARG1 (x14 / person
+					:mod (p / poor)
+					:quant (x12 / number
+						:location (x17 / country
+							:ARG1-of (x16 / develop-02))))
+				:ARG1 (x26 / stabilise
+					:ARG2 (x30 / expect-01))
+				:time (xap0 / date-entity
+					:decade 1990)))))
+

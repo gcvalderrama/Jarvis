@@ -1,0 +1,1328 @@
+# ::id 1
+# ::snt The drought of 1988 hit hardest in the upper Midwest _ perhaps nowhere harder than in North Dakota
+(x2 / drought
+	:time (x4 / date-entity
+		:year 1988)
+	:ARG1-of (x5 / hit-01
+		:manner (x6 / hardest)
+		:manner (x14 / hard
+			:mod (x13 / nowhere
+				:mod (x12 / perhaps))
+			:location (x17 / state
+				:name (n1 / name
+					:op1 "North"
+					:op2 "Dakota"))))
+	:location (x10 / organization
+		:name (n / name
+			:op1 "Midwest")
+		:mod (x9 / upper)
+		:mod (x11 / _)))
+
+# ::id 2
+# ::snt More disaster relief aid went there than to any other state
+(x5 / go-02
+	:ARG1 (x4 / aid-01
+		:null_edge (x1 / null_tag)
+		:ARG1 (x2 / disaster)
+		:ARG1 (x3 / relieve-01))
+	:location (x6 / there)
+	:ARG1 (x11 / state
+		:mod (x9 / any)
+		:mod (x10 / other)))
+
+# ::id 3
+# ::snt The third story in a four-part series, " Cashing In on the Drought, " examines how the $ 3.9 billion disaster aid program helped farmers most in need
+(x17 / examine-01
+	:ARG1 (x3 / story
+		:quant (x7 / series
+			:mod (x6 / four-part)))
+	:ARG1 (x10 / cash
+		:ARG1 (x14 / drought))
+	:ARG1 (x26 / help-01
+		:ARG0 (x25 / program
+			:mod (x23 / disaster)
+			:topic (x24 / aid-01))
+		:ARG1 (x27 / person
+			:ARG0-of (f / farm-01))
+		:degree (x28 / most)
+		:ARG1 (x30 / need-01)))
+
+# ::id 4
+# ::snt Carl Grindberg survived the drought with a $ 45,000 dose of federal aid
+(xap0 / have-concession-91
+	:ARG1 (x3 / survive-01
+		:ARG0 (x1 / newspaper
+			:name (n / name
+				:op1 "Carl"
+				:op2 "Grindberg"))
+		:ARG1 (x5 / drought)
+		:ARG2 (x10 / dose-01
+			:mod (x8 / country
+				:name (n1 / name
+					:op1 "$")
+				:null_edge (x9 / monetary-quantity
+					:unit (y / yuan)))
+			:ARG2 (x13 / aid-01
+				:ARG0 (x12 / government-organization
+					:name (n2 / name
+						:op1 "federal"))))))
+
+# ::id 5
+# ::snt But for this farmer and others, a give-and-take bailout : Take the money with one hand , give it away with the other was a give-and-take bailout : Take the money with one hand, give it away with the other
+(x1 / contrast-01
+	:ARG2 (x30 / take-01
+		:ARG2 (x5 / and
+			:op1 (x4 / person
+				:ARG0-of (f / farm-01)
+				:mod (x3 / this))
+			:op2 (x6 / other))
+		:ARG0 (x10 / bail-02
+			:mod (x9 / give-and-take))
+		:ARG2 (x28 / bail-02
+			:ARG1 (x14 / money)
+			:ARG1 (x17 / hand)
+			:mod (x24 / other))
+		:ARG1 (x32 / money)
+		:ARG2 (x35 / hand)
+		:ARG0 (x42 / other)))
+
+# ::id 6
+# ::snt " The guy who sold me $ 5,000 of fuel, The guy who sold me $ 5,000 of fuel got paid, " Grindberg said
+(x26 / say-01
+	:ARG1 (x22 / pay-01
+		:ARG1 (x3 / guy
+			:ARG0-of (x5 / sell-01
+				:ARG1 (x10 / fuel)))
+		:ARG1 (x13 / guy
+			:ARG0-of (x15 / sell-01
+				:ARG1 (x20 / fuel))))
+	:ARG0 (x25 / person
+		:name (n / name
+			:op1 "Grindberg")))
+
+# ::id 7
+# ::snt " The business that sold Carl Grindberg fertilizer and spray and chemicals and tires, this farmer and others got paid
+(x3 / business
+	:ARG0-of (x5 / sell-01
+		:ARG1 (x9 / and
+			:op2 (x10 / spray)
+			:op2 (x11 / and
+				:op2 (x12 / chemical)
+				:op2 (x13 / and)
+				:op2 (x18 / and
+					:op1 (x8 / thing
+						:ARG0-of (f / fertilize-01)
+						:poss (x6 / person
+							:name (n / name
+								:op1 "Carl"))
+						:mod (x7 / person
+							:name (n1 / name
+								:op1 "Grindberg"))
+						:ARG1-of (x21 / pay-01))
+					:op2 (x17 / farm-01
+						:mod (x16 / this))
+					:op2 (x19 / other)))
+			:op2 (x14 / tire))))
+
+# ::id 8
+# ::snt What Carl Grindberg 'm saying is, the farmer got the money directly, but indirectly a lot of others benefited .
+(x21 / benefit-01
+	:ARG0 (x9 / person
+		:ARG0-of (f / farm-01))
+	:ARG0 (x10 / get-01
+		:null_edge (x5 / say-01
+			:ARG0 (x2 / newspaper
+				:name (n / name
+					:op1 "Carl"
+					:op2 "Grindberg"))
+			:ARG0 x9)
+		:ARG0 x9
+		:ARG1 (x12 / money)
+		:mod (x13 / direct))
+	:manner (x16 / direct
+		:polarity -)
+	:ARG0 (x20 / other
+		:quant (x18 / lot)))
+
+# ::id 9
+# ::snt The 1988 drought relief program poured more than $ 400 million into North Dakota, the nation's most agriculturally dependent state
+(x6 / pour-01
+	:ARG0 (x5 / program
+		:time (x2 / date-entity
+			:year 1988)
+		:mod (x3 / drought)
+		:mod (x4 / relieve-01))
+	:ARG1 (x7 / more-than)
+	:null_edge (x14 / country
+		:name (n / name
+			:op1 "Dakota")
+		:location-of (x21 / depend-01
+			:ARG0 (x17 / nation)
+			:degree (x19 / most)
+			:manner (x20 / agriculturally))))
+
+# ::id 10
+# ::snt The money not only helped rescue thousands of farmers ; many say the major source of income for most farmers also kept the state afloat
+(x / xconcept
+	:x (x10 / and
+		:op3 (x2 / money)
+		:mod (x4 / only)
+		:op2 (x5 / help-01
+			:ARG1 (x6 / rescue-01
+				:ARG0 (x9 / person
+					:ARG0-of (f / farm-01))))
+		:op2 (x12 / say-01
+			:ARG0 (x11 / many))
+		:op1 (x22 / keep-01
+			:ARG0 (x15 / source
+				:mod (x14 / major)
+				:ARG1 (x17 / income)
+				:ARG1 (x20 / person
+					:ARG0-of (f1 / farm-01)
+					:quant (x19 / most)))
+			:mod (x21 / also)
+			:ARG1 (x24 / state
+				:location (x25 / afloat)))))
+
+# ::id 11
+# ::snt " the major source of income for most farmers's what carried rescue thousands of farmers through in 1988, " said Cass County extension agent Duane Hauck
+(x22 / say-01
+	:ARG1 (x13 / rescue-01
+		:ARG0 (x4 / source
+			:mod (x3 / major)
+			:ARG1 (x6 / income)
+			:ARG1 (x9 / person
+				:ARG0-of (f1 / farm-01)
+				:quant (x8 / most)))
+		:ARG0 (x16 / person
+			:ARG0-of (f / farm-01))
+		:time (x19 / date-entity
+			:year 1988))
+	:ARG0 (x27 / newspaper
+		:name (n / name
+			:op1 "Duane"
+			:op2 "Hauck")
+		:ARG0-of (x26 / agent
+			:ARG1 (x25 / extension
+				:ARG1 (x23 / country
+					:name (n1 / name
+						:op1 "Cass"))))))
+
+# ::id 12
+# ::snt " If the major source of income for most farmers had n't been for drought aid, the economic situation all through North Dakota would have been disastrous
+(x28 / disastrous
+	:ARG2 (x10 / person
+		:ARG0-of (f / farm-01)
+		:mod (x4 / major)
+		:ARG1 (x7 / income)
+		:quant (x9 / most)
+		:ARG1 (x16 / aid-01
+			:mod (x15 / drought)))
+	:domain (x20 / situation
+		:mod (x19 / economy)
+		:location (x24 / country
+			:name (n / name
+				:op1 "Dakota"))))
+
+# ::id 13
+# ::snt the major source of income for most farmers was the major source of income for most farmers .
+(x12 / source-02
+	:ARG1 (x3 / source
+		:mod (x2 / major)
+		:ARG1 (x5 / income)
+		:ARG1 (x8 / person
+			:ARG0-of (f1 / farm-01)
+			:quant (x7 / most)))
+	:degree (x11 / major)
+	:source-of (x14 / income)
+	:ARG2 (x17 / person
+		:ARG0-of (f / farm-01)
+		:quant (x16 / most)))
+
+# ::id 14
+# ::snt " Carl Grindberg do n't think too many farmers took disaster aid and bought Cadillacs and went on vacation in Carl Grindberg area, " Grindberg added
+(x27 / add-01
+	:ARG1 (x6 / think-01
+		:ARG0 (x2 / newspaper
+			:name (n1 / name
+				:op1 "Carl"
+				:op2 "Grindberg"))
+		:ARG1 (x13 / and
+			:op2 (x14 / buy-01
+				:ARG0 (x9 / person
+					:ARG0-of (f / farm-01)
+					:quant (x8 / many
+						:degree (x7 / too)))
+				:ARG1 (x15 / country
+					:name (n2 / name
+						:op1 "Cadillacs")))
+			:op2 (x16 / and
+				:op1 (x10 / take-19
+					:ARG0 x9
+					:ARG1 (x12 / aid-01
+						:ARG1 (x11 / disaster)))
+				:op2 (x17 / go-02
+					:ARG0 x9
+					:ARG4 (x19 / vacation-01)
+					:ARG1 (x21 / person
+						:name (n3 / name
+							:op1 "Carl"))
+					:location (x23 / area
+						:mod (x22 / person
+							:name (n4 / name
+								:op1 "Grindberg")))))))
+	:ARG0 (x26 / person
+		:name (n / name
+			:op1 "Grindberg")))
+
+# ::id 15
+# ::snt A study of the $ 3.9 billion disaster relief program, conducted by The Associated Press over seven months, found that outside the Midwest drought area, lax rules and requirements led to thousands of farmers collecting millions of dollars for nothing more serious than the normal trials of nature
+(x21 / find-02
+	:ARG0 (x2 / study
+		:topic (x10 / program
+			:mod (x8 / disaster)
+			:topic (x9 / relieve-01))
+		:ARG1-of (x12 / conduct-01
+			:ARG0 (x16 / press
+				:null_edge (x14 / null_tag)
+				:null_edge (x15 / null_tag))
+			:duration (x17 / over
+				:op1 (x19 / temporal-quantity
+					:unit (m / month)
+					:quant 7))))
+	:ARG1 (x33 / lead-02
+		:ARG2 (x23 / outside
+			:op1 (x27 / area
+				:mod (x25 / country
+					:name (n / name
+						:op1 "Midwest"))
+				:mod (x26 / drought)))
+		:ARG0 (x31 / and
+			:op1 (x30 / rule
+				:mod (x29 / lax-00))
+			:op2 (x32 / thing
+				:ARG1-of (r / require-01)))
+		:ARG0 (x37 / person
+			:ARG0-of (f / farm-01)
+			:ARG0-of (x38 / collect-01
+				:ARG2 (x43 / nothing
+					:mod (x45 / serious
+						:degree (x44 / more)
+						:ARG1 (x49 / trial
+							:mod (x48 / normal)
+							:part-of (x51 / nature))))
+				:duration (xap0 / multiple
+					:op1 (x41 / monetary-quantity
+						:unit (d / dollar)))))))
+
+# ::id 16
+# ::snt But money did reach areas Congress most intended to aid, including North Dakota, where Congress most intended to aid kept some farmers on some farmers land and may have prevented some business closures
+(x1 / contrast-01
+	:ARG2 (x4 / reach-01
+		:ARG0 (x2 / money)
+		:ARG1 (x5 / area
+			:ARG2-of (x8 / intend-01
+				:ARG0 (x6 / government-organization
+					:name (n / name
+						:op1 "Congress"))
+				:degree (x7 / most)
+				:ARG1 (x10 / aid-01
+					:ARG0 x6))
+			:ARG2-of (x12 / include-91
+				:ARG1 (x14 / country
+					:name (n1 / name
+						:op1 "Dakota")
+					:null_edge (x13 / null_tag)
+					:ARG2-of (x19 / intend-01
+						:ARG0 (x17 / government-organization
+							:name (n2 / name
+								:op1 "Congress"))
+						:degree (x18 / most)
+						:ARG1 (x21 / aid-01
+							:ARG0 x17
+							:ARG2 (x24 / person
+								:ARG0-of (f / farm-01)
+								:quant (x23 / some)
+								:ARG1 (x28 / land
+									:quant (x26 / some)
+									:poss (x27 / person
+										:ARG0-of (f1 / farm-01)))
+								:ARG1 (x29 / and
+									:op2 (x30 / possible
+										:domain (x32 / prevent-01
+											:ARG1 (x35 / closure
+												:quant (x33 / some)
+												:mod (x34 / business)))))))))))))
+
+# ::id 17
+# ::snt " Carl Grindberg might say Congress most intended to aid kept the state alive, " said Fred Selberg, another farmer in this Red River Valley county
+(x17 / say-01
+	:ARG1 (x5 / thing
+		:ARG1-of (s / say-01)
+		:ARG0 (x2 / newspaper
+			:name (n1 / name
+				:op1 "Carl"
+				:op2 "Grindberg"))
+		:ARG1 (x8 / intend-01
+			:ARG0 (x6 / government-organization
+				:name (n2 / name
+					:op1 "Congress"))
+			:degree (x7 / most)
+			:ARG1 (x10 / aid-01
+				:ARG0 x6
+				:ARG2 (x11 / keep-02
+					:ARG1 (x14 / live-01
+						:op (a / alive)
+						:ARG0 (x13 / state))))))
+	:ARG0 (x18 / newspaper
+		:name (n / name
+			:op1 "Fred"
+			:op2 "Selberg")
+		:ARG0-of (x22 / person
+			:ARG0-of (f / farm-01)
+			:mod (x21 / another)
+			:location (x28 / county
+				:mod (x24 / this)
+				:mod (x27 / country
+					:name (n3 / name
+						:op1 "Valley")
+					:mod (x25 / country
+						:name (n4 / name
+							:op1 "Red")))))))
+
+# ::id 18
+# ::snt " Everyone in North Dakota in some way or another was helped .
+(x12 / help-01
+	:ARG1 (x2 / everyone
+		:location (x4 / state
+			:name (n / name
+				:op1 "North"
+				:op2 "Dakota")
+			:location (x9 / or
+				:op1 (x8 / way
+					:mod (x7 / some))
+				:op2 (x10 / another)))))
+
+# ::id 19
+# ::snt North Dakota, where the drought evoked memories of Dust Bowl days with tumbleweed dancing along the barren horizon, received the most disaster dollars
+(x21 / receive-01
+	:ARG0 (x1 / state
+		:name (n / name
+			:op1 "North"
+			:op2 "Dakota")
+		:ARG1-of (x7 / evoke
+			:ARG0 (x6 / drought)
+			:ARG1 (x12 / temporal-quantity
+				:unit (d1 / day)
+				:mod (x11 / bowl
+					:ARG1 (x10 / dust)))
+			:ARG2 (x15 / dancing
+				:mod (x14 / tumbleweed)
+				:ARG1 (x19 / horizon))))
+	:ARG1 (x25 / monetary-quantity
+		:unit (d / dollar)
+		:quant (x23 / most)
+		:mod (x24 / disaster)))
+
+# ::id 20
+# ::snt More than 49,000 producers shared $ 410.2 million _ about 10.5 percent of the total package
+(x5 / share-01
+	:ARG0 (x4 / person
+		:ARG0-of (p / produce-01)
+		:quant (x1 / more-than
+			:op1 (x3 / 49,000)))
+	:ARG1 (x6 / country
+		:name (n / name
+			:op1 "$")
+		:ARG2 (x16 / package
+			:quant (x10 / about)
+			:mod (x12 / percentage-entity
+				:value (x11 / percentage-entity))
+			:mod (x15 / total-01))))
+
+# ::id 21
+# ::snt Almost all was for crop loss
+(x5 / crop
+	:mod (x1 / almost
+		:quant (x2 / all)))
+
+# ::id 22
+# ::snt The state, the No. 1 producer of hard-red spring wheat, lost two-thirds of North Dakota State 1988 crop ; millions of normally golden acres withered to pathetic rows of shriveled brown stumps
+(x / xconcept
+	:x (x21 / and
+		:op1 (x13 / lose-02
+			:ARG0 (x2 / state
+				:ARG0-of (x7 / produce-01
+					:null_edge (x5 / null_tag)
+					:quant 1
+					:ARG1 (x11 / wheat
+						:mod (x9 / hard-red)
+						:time (xap0 / date-entity
+							:season (x10 / spring)))))
+			:ARG1 (x14 / two-third
+				:poss (x18 / state
+					:null_edge (x16 / null_tag)
+					:poss (x17 / country
+						:name (n / name
+							:op1 "Dakota"))))
+			:ARG1 (x20 / crop
+				:time (x19 / date-entity
+					:year 1988)))
+		:op1 (x26 / area-quantity
+			:unit (a / acre)
+			:mod (x25 / gold
+				:mod (x24 / normal)))
+		:op1 (x27 / wither-01
+			:ARG2 (x30 / row
+				:mod (x29 / pathetic)))
+		:op1 (x32 / shrivel
+			:ARG1 (x34 / stump
+				:mod (x33 / brown)))))
+
+# ::id 23
+# ::snt But drought aid cut farmers ' losses from $ 1.1 billion to $ 706 million, a North Dakota State University study found
+(x / xconcept
+	:x (x1 / contrast-01)
+	:x (x23 / find-02
+		:ARG1 (x4 / cut-02
+			:ARG1 (x3 / aid-01
+				:ARG1 (x2 / drought))
+			:ARG1 (x7 / loss
+				:poss (x5 / person
+					:ARG0-of (f / farm-01))))
+		:ARG0 (x22 / study
+			:null_edge (x18 / null_tag)
+			:source (x19 / organization
+				:name (n / name
+					:op1 "Dakota"))
+			:null_edge (x20 / null_tag)
+			:null_edge (x21 / null_tag))))
+
+# ::id 24
+# ::snt Disaster payments reduced statewide losses to businesses, banks and households from $ 3.4 billion to $ 2.1 billion, the study said
+(x23 / say-01
+	:ARG1 (x3 / reduce-01
+		:ARG0 (x2 / payment
+			:mod (x1 / disaster))
+		:time (x4 / statewide)
+		:ARG2 (x10 / and
+			:op1 (x7 / business)
+			:op2 (x9 / bank)
+			:op2 (x11 / household))
+		:source (x17 / country
+			:name (n / name
+				:op1 "$")
+			:null_edge (x14 / monetary-quantity
+				:unit (y / yuan))
+			:null_edge (x18 / monetary-quantity
+				:unit (y1 / yuan))))
+	:ARG0 (x22 / study))
+
+# ::id 25
+# ::snt Each farm dollar triples as A study of the $ 3.9 billion disaster relief program , conducted by The Associated Press over seven months travels down Main Street into the economy
+(x4 / triple
+	:ARG0-of (x25 / travel-01
+		:ARG0 (x3 / dollar
+			:mod (x1 / each)
+			:mod (x2 / farm))
+		:ARG0 (x7 / study
+			:topic (x15 / program
+				:mod (x13 / disaster)
+				:topic (x14 / relieve-01))
+			:ARG1-of (x17 / conduct-01
+				:ARG0 (x21 / press
+					:null_edge (x19 / null_tag)
+					:null_edge (x20 / null_tag))
+				:duration (x22 / over
+					:op1 (x24 / temporal-quantity
+						:unit (m / month)
+						:quant 7))))
+		:direction (x26 / down
+			:null_edge (x28 / street
+				:mod (x27 / main)))
+		:ARG1 (x31 / economy)))
+
+# ::id 26
+# ::snt Another university survey of 466 farmers said that without drought aid, the average farmer's net cash income would have been just $ 6,300
+(x7 / say-01
+	:ARG0 (x3 / survey-01
+		:mod (x1 / another)
+		:ARG0 (x2 / university)
+		:ARG0 (x6 / person
+			:ARG0-of (f / farm-01)
+			:quant (x5 / 466)))
+	:ARG1 (x19 / income
+		:source (x11 / aid-01
+			:mod (x10 / drought))
+		:poss (x15 / person
+			:ARG0-of (f1 / farm-01)
+			:mod (x14 / average-01))
+		:source (x18 / cash
+			:mod (x17 / net))
+		:mod (x23 / just)
+		:quant (x25 / monetary-quantity
+			:unit (y / yuan))))
+
+# ::id 27
+# ::snt Drought payments added $ 15,000
+(x3 / add-01
+	:ARG0 (x2 / payment
+		:mod (x1 / drought))
+	:ARG1 (x4 / country
+		:name (n / name
+			:op1 "$")
+		:quant (x5 / monetary-quantity
+			:unit (y / yuan))))
+
+# ::id 28
+# ::snt Disaster aid and crop insurance also were critical to other drought-ravaged states, including Iowa, Illinois, Minnesota and Wisconsin
+(x8 / criticize-01
+	:ARG1 (x3 / and
+		:op1 (x2 / aid-01
+			:ARG1 (x1 / disaster))
+		:op1 (x5 / insure-02
+			:ARG1 (x4 / crop)))
+	:mod (x6 / also)
+	:ARG2 (x12 / state
+		:mod (x10 / other)
+		:mod (x11 / drought-ravaged)
+		:ARG2-of (x14 / include-91
+			:ARG1 (x20 / and
+				:op1 (x15 / state
+					:name (n / name
+						:op1 "Iowa"))
+				:op3 (x17 / country
+					:name (n1 / name
+						:op1 "Illinois"))
+				:op2 (x19 / state
+					:name (n2 / name
+						:op1 "Minnesota"))
+				:op2 (x21 / state
+					:name (n3 / name
+						:op1 "Wisconsin"))))))
+
+# ::id 29
+# ::snt The five states together received nearly half the assistance allocated nationwide
+(x5 / receive-01
+	:ARG0 (x3 / state
+		:quant 5)
+	:manner (x4 / together)
+	:ARG1 (x9 / assist-01
+		:ARG2 (x6 / nearly)
+		:ARG1-of (x10 / allocate-01
+			:ARG2 (x11 / nationwide))))
+
+# ::id 30
+# ::snt Disaster aid and crop insurance pumped about $ 500 million into Iowa's economy, an Iowa State University study said
+(x21 / say-01
+	:ARG1 (x6 / pump-01
+		:ARG1 (x3 / and
+			:op1 (x2 / aid-01
+				:ARG1 (x1 / disaster))
+			:op1 (x5 / insure-02
+				:ARG1 (x4 / crop)))
+		:ARG2 (x7 / about)
+		:ARG2 (x14 / economy))
+	:ARG0 (x20 / study
+		:source (x17 / state
+			:name (n / name
+				:op1 "Iowa"))
+		:null_edge (x18 / null_tag)
+		:null_edge (x19 / null_tag)))
+
+# ::id 31
+# ::snt " There was no question it was needed to stave off a major new wave of bankruptcies and financial problems among Corn Belt producers, " said Mark Edelman, a university economist
+(x27 / say-01
+	:ARG1 (x5 / question-01
+		:polarity -
+		:ARG1-of (x8 / need-01
+			:purpose (x10 / stave
+				:ARG1 (x15 / wave
+					:mod (x13 / major)
+					:mod (x14 / new)
+					:consist-of (x18 / and
+						:op1 (x17 / bankruptcy)
+						:op1 (x20 / problem
+							:mod (x19 / finance)))
+					:location (x21 / among
+						:op1 (x24 / person
+							:ARG0-of (p / produce-01)
+							:ARG1 (x23 / belt
+								:mod (x22 / corn))))))))
+	:ARG0 (x29 / person
+		:name (n / name
+			:op1 "Edelman")
+		:null_edge (x28 / null_tag)
+		:null_edge (x33 / economist
+			:ARG1 (x32 / university))))
+
+# ::id 32
+# ::snt " Even the drought assistance for most farmers fell well short of bringing what most farmers income would be with normal yields, but Even the drought assistance for most farmers provided a safety net, " Mark Edelman said
+(x40 / say-01
+	:ARG1 (x9 / fall-01
+		:mod (x2 / even)
+		:ARG1 (x5 / assist-01
+			:mod (x4 / drought)
+			:ARG2 (x8 / person
+				:ARG0-of (f / farm-01)
+				:quant (x7 / most)))
+		:ARG1 (x13 / bring-01
+			:ARG0 x5
+			:duration (x11 / short-41
+				:mod (x10 / well))
+			:ARG1 (x22 / thing
+				:ARG1-of (y / yield-01)
+				:quant (x15 / most)
+				:ARG1 (x17 / income)
+				:mod (x21 / normal)
+				:ARG1-of (x32 / provide-01
+					:ARG0 x17
+					:ARG0 (x28 / assist-01
+						:mod (x25 / even)
+						:mod (x27 / drought)
+						:ARG2 (x31 / person
+							:ARG0-of (f1 / farm-01)
+							:quant (x30 / most)))
+					:ARG1 (x35 / net
+						:mod (x34 / safe-41))))))
+	:ARG0 (x39 / person
+		:name (n / name
+			:op1 "Edelman")
+		:null_edge (x38 / null_tag)))
+
+# ::id 33
+# ::snt Even the drought assistance for most farmers was the same in North Dakota, which has struggled with an exodus of young, educated people, declining revenues, fading small towns and the loss of nearly a fifth of Even the drought assistance for most farmers farms this decade
+(x10 / same-41
+	:domain (x4 / assist-01
+		:mod (x1 / even)
+		:mod (x3 / drought)
+		:ARG2 (x7 / person
+			:ARG0-of (f / farm-01)
+			:quant (x6 / most)))
+	:ARG2 (x17 / struggle-02
+		:null_edge (x12 / null_tag)
+		:ARG2 (x33 / and
+			:op1 (x20 / exodus
+				:mod (x22 / young
+					:ARG1-of (x24 / educate-01))
+				:mod (x37 / nearly
+					:domain (x44 / assist-01
+						:mod (x41 / even)
+						:mod (x43 / drought)
+						:ARG2 (x48 / farm
+							:quant (x46 / most)
+							:poss (x47 / person
+								:ARG0-of (f1 / farm-01))))))
+			:op2 (x28 / revenue
+				:ARG1-of (x27 / decline-01))
+			:op2 (x32 / town
+				:ARG1-of (x30 / fading)
+				:mod (x31 / small)))))
+
+# ::id 34
+# ::snt " From '81 through ' 86, the bottom pretty much fell out of everything, " said Greg Schulz, who farms about five miles from Grindberg
+(x18 / say-01
+	:ARG1 (x12 / fall-01
+		:time (x2 / from
+			:op1 (x6 / date-entity))
+		:ARG1 (x9 / bottom)
+		:ARG1 (x15 / everything)
+		:ARG4 (xap0 / more
+			:quant (x11 / much
+				:degree (x10 / pretty))))
+	:ARG0 (x19 / newspaper
+		:name (n / name
+			:op1 "Greg"
+			:op2 "Schulz")
+		:ARG0-of (x23 / farm-01
+			:ARG2 (x26 / distance-quantity
+				:unit (m / mile)
+				:null_edge (x24 / about
+					:null_edge 5)
+				:source (x28 / organization
+					:name (n1 / name
+						:op1 "Grindberg"))))))
+
+# ::id 35
+# ::snt Good crops the next two years started to reverse the trend, but drought stalled the recovery
+(x13 / contrast-01
+	:ARG1 (x7 / start-01
+		:ARG1 (x2 / crop
+			:mod (x1 / person
+				:mod (g / good)))
+		:ARG1 (x6 / temporal-quantity
+			:unit (y / year)
+			:quant 2)
+		:ARG1 (x9 / reverse-01
+			:ARG1 (x11 / trend-01)))
+	:ARG2 (x15 / stall-01
+		:ARG0 x6
+		:ARG1 (x14 / drought)
+		:ARG1 (x17 / recover-01)))
+
+# ::id 36
+# ::snt " the next two years has a demoralizing effect when Greg Schulz , who farms about five miles from Grindberg have a disaster, " said Dwight Aakre, a North Dakota State economist
+(x26 / say-01
+	:ARG1 (x6 / have-03
+		:ARG1 (x9 / effect-01
+			:time (x5 / year
+				:mod (x3 / next)
+				:null_edge (x4 / null_tag))
+			:mod (x8 / demoralizing)
+			:ARG0-of (x21 / have-03
+				:ARG0 (x11 / newspaper
+					:name (n2 / name
+						:op1 "Greg"
+						:op2 "Schulz")
+					:ARG0-of (x15 / farm-01
+						:ARG2 (x18 / distance-quantity
+							:unit (m / mile)
+							:null_edge (x16 / about
+								:null_edge 5))
+						:ARG2 (x20 / country
+							:name (n3 / name
+								:op1 "Grindberg"))))
+				:ARG1 (x23 / disaster))))
+	:ARG0 (x27 / newspaper
+		:name (n / name
+			:op1 "Dwight"
+			:op2 "Aakre")
+		:ARG0-of (x34 / economist
+			:ARG1 (x32 / country
+				:name (n1 / name
+					:op1 "Dakota"))
+			:mod (x33 / state))))
+
+# ::id 37
+# ::snt " Financial aid helps to alleviate that
+(x4 / help-01
+	:ARG0 (x3 / aid-01
+		:null_edge (x2 / null_tag))
+	:ARG1 (x6 / alleviate-01
+		:ARG0 x3))
+
+# ::id 38
+# ::snt The last thing North Dakota needed is more negatives to push us down .
+(x9 / negative
+	:ARG1 (x3 / thing
+		:mod (x2 / last)
+		:ARG1-of (x6 / need-01
+			:ARG0 (x5 / country
+				:name (n / name
+					:op1 "Dakota"))))
+	:degree (x8 / more)
+	:purpose (x11 / push-01))
+
+# ::id 39
+# ::snt Despite relief and nearly $ 200 million in crop insurance, the state still needs " a good year to get back on our feet, " Hauck said
+(x29 / say-01
+	:ARG1 (x15 / need-01
+		:ARG1 (x3 / and
+			:op1 (x2 / relieve-01)
+			:duration (x4 / nearly
+				:op1 (x10 / insure-02
+					:ARG1 (x9 / crop))))
+		:ARG0 (x13 / state)
+		:mod (x14 / still)
+		:ARG1 (x19 / year
+			:mod (x18 / good))
+		:purpose (x21 / get-01
+			:ARG2 (x22 / back)
+			:prep-on (x25 / foot)))
+	:ARG0 (x28 / person
+		:name (n / name
+			:op1 "Hauck")))
+
+# ::id 40
+# ::snt " We did n't get that in ' 89, " Cass County extension agent Duane Hauck added, referring to continuing drought in North Dakota's west and south-central sections
+(x18 / add-01
+	:ARG1 (x5 / get-01
+		:ARG0 (x2 / we)
+		:time (x9 / date-entity))
+	:ARG0 (x16 / newspaper
+		:name (n / name
+			:op1 "Duane"
+			:op2 "Hauck")
+		:ARG0-of (x15 / agent
+			:mod (x14 / extension
+				:ARG1 (x12 / country
+					:name (n2 / name
+						:op1 "Cass")))))
+	:ARG1 (x20 / refer-01
+		:ARG0 x16
+		:ARG1 (x23 / drought
+			:ARG1-of (x22 / continue-01)
+			:ARG0 (x25 / state
+				:name (n1 / name
+					:op1 "North"
+					:op2 "Dakota"))
+			:location (x31 / section
+				:ARG1 (x29 / and
+					:op1 (x28 / west)
+					:op2 (x30 / south-central))))))
+
+# ::id 41
+# ::snt In fact, while crops statewide are in better shape than 12 months ago, dollar losses will exceed 1988's estimated $ 530 million, Aakre said
+(x28 / say-01
+	:ARG1 (x19 / exceed-01
+		:ARG0 (x10 / shape-01
+			:time (x6 / statewide)
+			:mod (x9 / good)
+			:time (xap0 / before
+				:quant (x12 / date-entity)))
+		:ARG0 (x17 / loss
+			:mod (x16 / monetary-quantity
+				:unit (d / dollar)))
+		:ARG0 (xap1 / 4400000000
+			:ARG1-of (x22 / estimate-01)
+			:value (x24 / monetary-quantity
+				:unit (y / yuan))))
+	:ARG0 (x27 / person
+		:name (n / name
+			:op1 "Aakre")))
+
+# ::id 42
+# ::snt Two reasons why : more acres of wheat were planted this year, and farmers do n't have grain reserves to sell at high prices as virtually all farmers did in 1988 to ease virtually all farmers burden
+(x14 / and
+	:quant 2
+	:op1 (x10 / plant-01
+		:ARG1 (x6 / area-quantity
+			:unit (a / acre)
+			:mod (x5 / more))
+		:ARG1 (x8 / wheat)
+		:time (x12 / year
+			:mod (x11 / this))
+		:purpose (x22 / sell-01
+			:ARG1 (x25 / price-01
+				:mod (x24 / high))
+			:purpose (x34 / ease-02
+				:ARG0 (x29 / person
+					:ARG0-of (f1 / farm-01)
+					:mod (x27 / virtual)
+					:quant (x28 / all))
+				:time (x32 / date-entity
+					:year 1988)
+				:ARG1 (x38 / burden-01
+					:mod (x35 / virtual)
+					:quant (x36 / all)
+					:ARG2 (x37 / person
+						:ARG0-of (f2 / farm-01))))))
+	:op2 (x18 / have-03
+		:ARG0 (x15 / person
+			:ARG0-of (f / farm-01))
+		:ARG1 (x20 / reserve
+			:consist-of (x19 / grain))))
+
+# ::id 43
+# ::snt 
+(x9 / contrast-01
+	:null_edge (x1 / newspaper
+		:name (n / name
+			:op1 "Cass"
+			:op2 "County"))
+	:mod (x3 / also)
+	:ARG1 (x8 / crop
+		:mod (x6 / good)
+		:time (x7 / date-entity
+			:year 1989))
+	:ARG2 (x11 / high
+		:compared-to (x10 / expect-01)
+		:compared-to (x15 / monetary-quantity
+			:unit (d / dollar)
+			:mod (x14 / crop))))
+
+# ::id 44
+# ::snt And while virtually all farmers here received government aid in 1988, far fewer will be eligible a second time
+(x1 / and
+	:op1 (x17 / qualify-02
+		:op (e / eligible)
+		:time (x7 / receive-01
+			:ARG0 (x5 / person
+				:ARG0-of (f / farm-01)
+				:mod (x3 / virtual)
+				:quant (x4 / all))
+			:location (x6 / here)
+			:ARG1 (x9 / aid-01
+				:ARG0 (x8 / government-organization
+					:ARG0-of (g / govern-01)))
+			:time (x11 / date-entity
+				:year 1988))
+		:ARG1 (x14 / few
+			:degree (x13 / far))))
+
+# ::id 45
+# ::snt About $ 19.8 million in 1988 aid was divvied up among 1,847 farms in Cass County, the state's leader in crop acres
+(x9 / divvy
+	:ARG1 (x7 / aid-01
+		:quant (x3 / monetary-quantity
+			:unit (y / yuan))
+		:time (x6 / date-entity
+			:year 1988))
+	:ARG2 (x13 / farm
+		:location (x16 / county
+			:null_edge (x15 / country
+				:name (n / name
+					:op1 "Cass"))
+			:null_edge (x21 / lead-02
+				:ARG1 (x19 / state)
+				:ARG1 (x23 / crop)))))
+
+# ::id 46
+# ::snt Wheat, corn, barley, soybeans, sugar beets and navy and pinto beans are grown here
+(x17 / grow-03
+	:ARG1 (x11 / and
+		:op1 (x7 / soybean
+			:mod (x1 / wheat
+				:ARG1 (x3 / corn)
+				:ARG1 (x5 / barley)))
+		:op2 (x10 / beet
+			:ARG1 (x9 / sugar))
+		:op2 (x15 / bean))
+	:ARG1 (x13 / and
+		:op1 (x12 / navy)
+		:op2 (x14 / pinto))
+	:location (x18 / here))
+
+# ::id 47
+# ::snt Last year, production was 60 percent to 70 percent below normal
+(x4 / produce-01
+	:time (x2 / year
+		:mod (x1 / last))
+	:location (x11 / below
+		:op1 (x10 / percentage-entity
+			:value 60
+			:value (x7 / percentage-entity)
+			:value 70)
+		:op1 (x12 / normal)))
+
+# ::id 48
+# ::snt For Larry Richard, a 36-year-old father of three who farms 1,000 acres near the town of Horace, $ 39,000 in aid, even coupled with $ 55,000 in crop insurance, amounted to " just enough to break even
+(x34 / amount-02
+	:ARG2 (x3 / person
+		:name (n / name
+			:op1 "Richard")
+		:null_edge (x2 / person
+			:name (n1 / name
+				:op1 "Larry"))
+		:null_edge (x7 / father
+			:poss (x9 / person
+				:op (t / three))
+			:ARG0-of (x11 / farm-01
+				:location (x14 / near
+					:op1 (x16 / town
+						:poss (x18 / country
+							:name (n2 / name
+								:op1 "Horace")))))))
+	:ARG2 (x40 / break-01
+		:manner (x38 / enough
+			:mod (x37 / just))
+		:mod (x41 / even))
+	:time (xap0 / psychology
+		:ARG1 (x23 / aid-01)
+		:ARG1-of (x26 / couple-01
+			:mod (x25 / even)
+			:ARG1 (x32 / insure-02
+				:ARG1 (x31 / crop)))))
+
+# ::id 49
+# ::snt We were able to cover all our bills
+(x3 / possible
+	:domain (x5 / cover-04
+		:ARG0 (x1 / we)
+		:ARG1 (x8 / bill
+			:quant (x6 / all))))
+
+# ::id 50
+# ::snt That's all Larry Richard had really hoped for .
+(x8 / hope-01
+	:ARG1 (x1 / that)
+	:ARG0 (x4 / newspaper
+		:name (n / name
+			:op1 "Larry"
+			:op2 "Richard"))
+	:mod (x7 / really))
+
+# ::id 51
+# ::snt If that seems like a lot, Richard, who grows wheat, soybeans and barley, notes a lot costs Larry Richard $ 150,000 for rent, interest, seed, fertilizer, equipment and other necessities
+(x18 / note-01
+	:concession (x3 / seem-01
+		:ARG1 (x6 / lot))
+	:ARG0 (x8 / person
+		:name (n / name
+			:op1 "Richard")
+		:ARG1-of (x11 / person
+			:ARG0-of (g / grow-03)
+			:ARG1 (x15 / and
+				:op1 (x12 / wheat)
+				:op2 (x14 / soybean)
+				:op2 (x16 / barley)
+				:op1 (x21 / cost-01
+					:ARG1 (x20 / lot)
+					:ARG2 (x22 / name
+						:op1 "Larry"
+						:op2 "Richard")
+					:ARG1 (x24 / country
+						:name (n1 / name
+							:op1 "$")
+						:quant (x25 / monetary-quantity
+							:unit (y / yuan)))
+					:ARG2 (x36 / and
+						:op2 (x33 / thing
+							:ARG0-of (f / fertilize-01))
+						:op1 (x35 / equipment
+							:mod (x27 / rent-02)
+							:mod (x29 / interest-01
+								:ARG1 (x31 / seed)))
+						:op2 (x38 / necessity
+							:mod (x37 / other))))))))
+
+# ::id 52
+# ::snt " You throw a lot of expenses way ahead of what your crop is going to be, " Larry Richard said
+(x22 / say-01
+	:ARG1 (x3 / throw-06
+		:ARG0 (x2 / you)
+		:ARG2 (x7 / expend-01
+			:quant (x5 / lot))
+		:time (x9 / ahead
+			:ARG1 (x15 / go-01
+				:ARG1 (x13 / crop))))
+	:ARG0 (x21 / person
+		:name (n / name
+			:op1 "Richard")
+		:null_edge (x20 / person
+			:name (n1 / name
+				:op1 "Larry"))))
+
+# ::id 53
+# ::snt " Our investment in farming is tremendous compared to the average businessman
+(x8 / compare-01
+	:ARG1 (x3 / invest-01
+		:ARG2 (x5 / farm-01))
+	:degree (x7 / tremendous)
+	:ARG2 (x12 / businessman
+		:ARG1-of (x11 / average-01)))
+
+# ::id 54
+# ::snt At least they have a commodity to sell
+(x4 / have-03
+	:ARG0 (x3 / they)
+	:ARG1 (x6 / commodity)
+	:purpose (x8 / sell-01))
+
+# ::id 55
+# ::snt We might not .
+(x2 / might
+	:domain (x1 / we))
+
+# ::id 56
+# ::snt Schulz, who farms 6,000 acres, said that without Greg Schulz $ 100,000 maximum payment Greg Schulz might have been forced to sell equipment or lay off help
+(x8 / say-01
+	:ARG0 (x1 / person
+		:name (n / name
+			:op1 "Schulz")
+		:ARG0-of (x4 / farm-01
+			:ARG1 (x6 / area-quantity
+				:unit (a / acre)
+				:quant (x5 / 6,000))))
+	:ARG1 (x22 / force-01
+		:manner (x16 / payment
+			:ARG0 (x11 / person
+				:name (n1 / name
+					:op1 "Greg"))
+			:degree (x15 / maximum))
+		:ARG1 (x17 / name
+			:op1 "Greg"
+			:op2 "Schulz")
+		:ARG2 (x26 / or
+			:op1 (x24 / sell-01
+				:ARG1 (x25 / equipment))
+			:op2 (x27 / lay-02
+				:ARG1 (x29 / help-01)))))
+
+# ::id 57
+# ::snt Along with crop insurance and the sale of grain reserves, Greg Schulz said, " Greg Schulz was able to mark time in ' 88
+(x20 / possible
+	:domain (x14 / say-01
+		:ARG1 (x5 / and
+			:op1 (x4 / insure-02
+				:ARG1 (x3 / crop))
+			:op2 (x10 / reserve-01
+				:consist-of (x9 / grain)))
+		:ARG0 (x12 / newspaper
+			:name (n / name
+				:op1 "Greg"
+				:op2 "Schulz"))
+		:ARG0 (x17 / newspaper
+			:name (n1 / name
+				:op1 "Greg"
+				:op2 "Schulz")))
+	:domain (x22 / mark-01
+		:ARG1 (x23 / time)
+		:quant 88))
+
+# ::id 58
+# ::snt ... Last year we had a break-even type of year
+(x8 / type
+	:time (x3 / year
+		:mod (x2 / last))
+	:ARG0 (x4 / we)
+	:mod (x7 / break-even)
+	:time (x10 / year))
+
+# ::id 59
+# ::snt This year a good year was break-even
+(x7 / break-even
+	:time (x2 / year
+		:mod (x1 / this))
+	:time (x5 / year
+		:mod (x4 / good)))
+
+# ::id 60
+# ::snt Next year, we 're going to have to start coming around to a profit .
+(x10 / start-01
+	:time (x2 / year
+		:mod (x1 / next))
+	:ARG0 (x4 / we)
+	:ARG1 (x11 / come-03
+		:time (x12 / around)
+		:ARG2 (x15 / profit-01)))
+
+# ::id 61
+# ::snt Grindberg, who farms 900 acres of wheat, soybeans and barley, was in the red last year despite $ 70,000 in aid and insurance
+(x19 / year
+	:domain (x1 / person
+		:name (n / name
+			:op1 "Grindberg")
+		:ARG0-of (x4 / farm-01
+			:ARG1 (x11 / and
+				:op1 (x6 / area-quantity
+					:unit (a / acre)
+					:quant (x5 / 900))
+				:op1 (x8 / wheat)
+				:op2 (x10 / soybean)
+				:op2 (x12 / barley)
+				:mod (x17 / red))))
+	:mod (x18 / last)
+	:null_edge (x25 / and
+		:op1 (x24 / aid-01)
+		:op1 (x26 / insure-02)))
+
+# ::id 62
+# ::snt His 1989 crop was better but still below normal ; Carl Grindberg expects to get only $ 3,000 in relief payments
+(x / xconcept
+	:x (x10 / and
+		:op2 (x6 / contrast-01
+			:ARG1 (x3 / crop
+				:time (x2 / date-entity
+					:year 1989))
+			:ARG1 (x5 / good)
+			:ARG2 (x8 / below
+				:op1 (x9 / normal
+					:mod (x7 / still)))
+			:ARG2 (x13 / expect-01
+				:ARG0 (x11 / newspaper
+					:name (n / name
+						:op1 "Carl"
+						:op2 "Grindberg"))
+				:ARG1 (x15 / get-01
+					:ARG2 (x21 / payment
+						:mod (x16 / only)
+						:quant (x18 / monetary-quantity
+							:unit (y / yuan))
+						:instrument-of (x20 / relieve-01)))))))
+
+# ::id 63
+# ::snt Grindberg, a 40-year farming veteran who also delivers mail part-time, thinks the government last year " pushed he panic button on this disaster thing and went too far
+(x13 / think-01
+	:ARG0 (x1 / person
+		:name (n / name
+			:op1 "Grindberg")
+		:null_edge (x6 / veteran
+			:mod (x5 / farm-01)
+			:ARG0-of (x9 / deliver-01
+				:mod (x8 / also)
+				:ARG1 (x10 / mail
+					:mod (x11 / part-time)))))
+	:ARG1 (x27 / and
+		:op1 (x19 / push-02
+			:ARG0 (x15 / government-organization
+				:ARG0-of (g / govern-01))
+			:ARG0 (x17 / year
+				:mod (x16 / last))
+			:ARG1 (x22 / button
+				:mod (x21 / panic-01))
+			:ARG1 (x26 / thing
+				:mod (x24 / this)
+				:mod (x25 / disaster)))
+		:op2 (x28 / go-02
+			:ARG0 x15
+			:ARG2 (x30 / far
+				:degree (x29 / too)))))
+
+# ::id 64
+# ::snt In ' 89, they went too far the other way Carl Grindberg think .
+(x6 / go-02
+	:time (x3 / date-entity)
+	:ARG0 (x5 / they)
+	:ARG2 (x8 / far
+		:degree (x7 / too))
+	:manner (x11 / way
+		:mod (x10 / other)
+		:ARG0-of (x14 / think-01
+			:ARG0 (x12 / newspaper
+				:name (n / name
+					:op1 "Carl"
+					:op2 "Grindberg")))))
+
+# ::id 65
+# ::snt " Disaster aid is political, " he said
+(x9 / say-01
+	:ARG1 (x5 / politics
+		:domain (x3 / aid-01
+			:ARG1 (x2 / disaster)))
+	:ARG0 (x8 / he))
+
+# ::id 66
+# ::snt " Depending on when you have the disaster depends on whether they sweeten the pot or not
+(x9 / depend-01
+	:ARG1 (x2 / depend-01
+		:ARG1 (x6 / have-03
+			:ARG0 (x5 / you)
+			:ARG1 (x8 / disaster)))
+	:ARG1 (x16 / or
+		:op1 (x13 / sweeten
+			:ARG1 (x15 / pot))))
+
+# ::id 67
+# ::snt 
+(x12 / get-01
+	:ARG1 (x7 / elect-01
+		:time (x3 / elect-01))
+	:ARG0 (x10 / they
+		:quant (x11 / all))
+	:ARG1 (x15 / bandwagon))
+
+# ::id 68
+# ::snt But Grindberg will persist
+(x1 / contrast-01
+	:ARG2 (x4 / persist-01
+		:ARG0 (x2 / person
+			:name (n / name
+				:op1 "Grindberg"))))
+
+# ::id 69
+# ::snt " As long as the banker says go on, " Carl Grindberg said, " next year's always the best year .
+(x14 / say-01
+	:ARG1 (x7 / thing
+		:ARG1-of (s / say-01)
+		:ARG0 (x6 / banker))
+	:ARG0 (x12 / newspaper
+		:name (n / name
+			:op1 "Carl"
+			:op2 "Grindberg"))
+	:time (x18 / year
+		:mod (x17 / next))
+	:time (x20 / always)
+	:mod (x22 / good
+		:degree (m / most)))
+

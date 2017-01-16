@@ -1,0 +1,606 @@
+# ::id 1
+# ::snt US CITIES along the Gulf of Mexico from Alabama to eastern Texas were on storm watch last night as Hurricane Andrew headed west after sweeping across southern Florida, causing at least eight deaths and severe property damage
+(x18 / night
+	:domain (x2 / cities
+		:mod (x1 / country
+			:name (n / name
+				:op1 "US"))
+		:location (x5 / world-region
+			:name (n1 / name
+				:op1 "Gulf")
+			:location (x7 / country
+				:name (n4 / name
+					:op1 "Mexico")))
+		:null_edge (x9 / country
+			:name (n2 / name
+				:op1 "Alabama")
+			:location (x12 / country
+				:name (n5 / name
+					:op1 "Texas")
+				:mod (x11 / east))))
+	:prep-on (x16 / watch-01
+		:ARG1 (x15 / storm))
+	:ARG1-of (x22 / head-02
+		:ARG0 (x21 / person
+			:name (n3 / name
+				:op1 "Andrew")
+			:null_edge (x20 / null_tag))
+		:direction (x23 / west)
+		:time (x24 / after
+			:op1 (x25 / sweep-01
+				:location (x26 / across
+					:op1 (x28 / country
+						:name (n6 / name
+							:op1 "Florida")
+						:mod (x27 / south)))
+				:ARG0-of (x30 / cause-01
+					:ARG1 (x35 / and
+						:quant 8
+						:op2 (x38 / damage-01
+							:mod (x36 / severe)
+							:ARG1 (x37 / property))))))))
+
+# ::id 2
+# ::snt The hurricane was one of the fiercest in the US in decades and the first to hit Miami directly in a quarter of a century
+(x5 / include-91
+	:ARG1 (x2 / hurricane)
+	:ARG1 (x13 / and
+		:op1 (x7 / fierce
+			:location (x10 / country
+				:name (n / name
+					:op1 "US")))
+		:op2 (x17 / hit-01
+			:ARG1 (x18 / country
+				:name (n1 / name
+					:op1 "Miami"))
+			:manner (x19 / direct))
+		:op1 (xap0 / multiple
+			:op1 (x12 / temporal-quantity
+				:unit (d / decade)))))
+
+# ::id 3
+# ::snt In the Bahamas, government spokesman Mr Jimmy Curry said four deaths had been reported on outlying eastern islands
+(x10 / say-01
+	:name (x8 / name
+		:op1 "Jimmy"
+		:op2 "Curry"
+		:ARG0-of (x6 / have-org-role-91
+			:ARG2 (s / spokesman)
+			:ARG1 (x5 / government-organization
+				:ARG0-of (g / govern-01)
+				:location (x3 / organization
+					:name (n / name
+						:op1 "Bahamas"))))
+		:ARG0-of (x7 / mr))
+	:ARG1 (x15 / report-01
+		:ARG2 (x19 / island
+			:mod (x17 / outlying)
+			:mod (x18 / east))
+		:ARG1 (xap0 / have-quant-91
+			:ARG2 4)))
+
+# ::id 4
+# ::snt Mr Justin Balcombe, of UK-based insurance adjuster Balcombe Group, said total losses could exceed Dollars 15bn if business interruption claims were taken into account
+(x12 / say-01
+	:ARG0 (x2 / newspaper
+		:name (n / name
+			:op1 "Justin"
+			:op2 "Balcombe")
+		:ARG0-of (x1 / mr)
+		:ARG0-of (x9 / government-organization
+			:name (n1 / name
+				:op1 "Balcombe"
+				:op2 "Group")
+			:mod (x8 / adjuster
+				:ARG1 (x7 / insure-02
+					:mod (x6 / organization
+						:name (n2 / name
+							:op1 "UK-based"))))))
+	:ARG1 (x15 / possible
+		:domain (x16 / exceed-01
+			:ARG0 (x13 / total-01)
+			:ARG1 (x17 / dollars)
+			:ARG1 (x22 / claim-01
+				:mod (x20 / business)
+				:ARG1 (x21 / interrupt-01)
+				:ARG1 (x26 / account)))))
+
+# ::id 5
+# ::snt That compares with the Dollars 4bn-Dollars 6n (Pounds 2.1bn-Pounds 3.1 bn )of insurance industry losses caused by the last big US hurricane, Hugo, which hit South Carolina in 1989
+(x2 / compare-01
+	:ARG1 (x1 / that)
+	:null_edge (x10 / 2.1bn-pounds
+		:null_edge (x5 / null_tag)
+		:null_edge (x6 / null_tag)
+		:null_edge (x9 / null_tag
+			:ARG1-of (x18 / cause-01
+				:ARG0 (x16 / industry
+					:mod (x15 / insure-02))
+				:ARG0 (x24 / hurricane
+					:mod (x21 / last)
+					:mod (x22 / big)
+					:mod (x23 / country
+						:name (n / name
+							:op1 "US"))
+					:ARG0 (x26 / person
+						:name (n1 / name
+							:op1 "Hugo")
+						:ARG0-of (x29 / hit-01
+							:ARG1 (x30 / country
+								:name (n2 / name
+									:op1 "South"
+									:op2 "Carolina"))
+							:time (x33 / date-entity
+								:year 1989))))))))
+
+# ::id 6
+# ::snt The brunt of the losses are likely to be concentrated among US insurers, industry analysts said yesterday
+(x17 / say-01
+	:ARG1 (x7 / likely
+		:domain (x10 / concentrate
+			:ARG1 (x13 / insurer
+				:mod (x12 / country
+					:name (n / name
+						:op1 "US")))))
+	:ARG0 (x16 / person
+		:ARG0-of (a / analyze-01)
+		:ARG1 (x15 / industry))
+	:time (x18 / yesterday))
+
+# ::id 7
+# ::snt Mr George Lloyd-Roberts, chairman of Lloyd's Underwriters ' Non-Marine Association, said that, unless damage claims exceeded Pounds 3bn, the Lloyd's insurance market would feel little impact
+(x14 / say-01
+	:ARG0 (x2 / newspaper
+		:name (n / name
+			:op1 "George"
+			:op2 "Lloyd-Roberts")
+		:ARG0-of (x1 / mr)
+		:ARG0-of (x5 / have-org-role-91
+			:ARG2 (c / chairman)
+			:ARG1 (x11 / government-organization
+				:name (n1 / name
+					:op1 "Non-Marine"
+					:op2 "Association")
+				:poss (x7 / company
+					:name (n3 / name
+						:op1 "Lloyd"
+						:op2 "'s"
+						:op3 "Underwriters")))))
+	:ARG1 (x30 / feel-01
+		:null_edge (x20 / exceed-01
+			:ARG0 (x19 / claim-01
+				:ARG1 (x18 / damage-01))
+			:ARG1 (x21 / pounds))
+		:ARG0 (x28 / market
+			:poss (x25 / person
+				:name (n2 / name
+					:op1 "Lloyd"))
+			:mod (x27 / insure-02))
+		:ARG1 (x32 / impact-01
+			:ARG1 (x31 / little))))
+
+# ::id 8
+# ::snt Because the reinsurance of reinsurance risk - known as the retrocession market - has shrunk considerably in recent years, US insurers have placed far fewer of US insurers risks through Lloyd's
+(x24 / place-01
+	:null_edge (x1 / cause-01
+		:ARG0 (x15 / shrink-01
+			:ARG1 (x3 / reinsurance
+				:ARG4 (x6 / risk-01
+					:ARG1 (x5 / reinsurance))
+				:ARG1-of (x8 / know-01
+					:ARG2 (x12 / market
+						:mod (x11 / retrocession))))
+			:degree (x16 / considerable)
+			:duration (x19 / temporal-quantity
+				:unit (y / year)
+				:mod (x18 / recent))))
+	:null_edge (x21 / country
+		:name (n / name
+			:op1 "US"))
+	:ARG1 (x30 / risk-01
+		:ARG0 (x28 / country
+			:name (n2 / name
+				:op1 "US"))
+		:mod (x29 / insurer))
+	:null_edge (x32 / person
+		:name (n1 / name
+			:op1 "Lloyd")))
+
+# ::id 9
+# ::snt Mr Roger Hill, insurance analyst at Warburg Securities, said Roger Hill estimated that mainline UK insurers faced no more than Pounds 75m in damage claims so far
+(x11 / say-01
+	:ARG0 (x2 / newspaper
+		:name (n / name
+			:op1 "Roger"
+			:op2 "Hill")
+		:ARG0-of (x1 / mr)
+		:ARG0-of (x6 / analyze-01
+			:ARG1 (x5 / insure-02)
+			:location (x8 / government-organization
+				:name (n2 / name
+					:op1 "Warburg"
+					:op2 "Securities"))))
+	:ARG1 (x14 / estimate-01
+		:ARG0 (x12 / newspaper
+			:name (n1 / name
+				:op1 "Roger"
+				:op2 "Hill"))
+		:ARG2 (x19 / face-01
+			:ARG0 (x18 / insurer
+				:mod (x17 / country
+					:name (n3 / name
+						:op1 "UK")
+					:mod (x16 / mainline)))
+			:ARG1 (x21 / more
+				:polarity -
+				:op1 (x24 / 75m)
+				:location (x27 / claim-01
+					:ARG1 (x23 / pounds)
+					:ARG1 (x26 / damage-01))))))
+
+# ::id 10
+# ::snt ` At the moment we are relaxed about the moment, ' Roger Hill said
+(x15 / say-01
+	:ARG1 (x7 / relax-01
+		:ARG1 (x5 / we)
+		:time (x10 / moment))
+	:ARG0 (x13 / newspaper
+		:name (n / name
+			:op1 "Roger"
+			:op2 "Hill")))
+
+# ::id 11
+# ::snt The real question, Roger Hill added, is the level of reinsurance available to the UK underwriters
+(x11 / level
+	:domain (x3 / question-01
+		:mod (x2 / real))
+	:null_edge (x7 / add-01
+		:ARG0 (x5 / newspaper
+			:name (n / name
+				:op1 "Roger"
+				:op2 "Hill")))
+	:mod (x13 / reinsurance)
+	:mod (x14 / available
+		:domain (x18 / underwriter
+			:location (x17 / country
+				:name (n1 / name
+					:op1 "UK")))))
+
+# ::id 12
+# ::snt Royal Insurance estimated the company's losses at no more than Pounds 20m
+(x3 / estimate-01
+	:ARG0 (x2 / government-organization
+		:name (n / name
+			:op1 "Insurance")
+		:mod (x1 / organization
+			:name (n1 / name
+				:op1 "Royal")))
+	:ARG1 (x7 / loss
+		:poss (x5 / company))
+	:ARG2 (x13 / 20m
+		:null_edge (x12 / null_tag
+			:polarity -
+			:quant (x10 / more-than))))
+
+# ::id 13
+# ::snt Among other UK insurers, Mr Hill estimated that General Accident may face losses of up to Pounds 30m, while Guardian Royal Exchange faced Pounds 5m and Sun Alliance and Commercial Union Pounds 10m each
+(x8 / estimate-01
+	:ARG2 (x4 / insurer
+		:mod (x2 / other)
+		:mod (x3 / country
+			:name (n1 / name
+				:op1 "UK")))
+	:ARG0 (x7 / person
+		:name (n / name
+			:op1 "Hill")
+		:null_edge (x6 / mr))
+	:ARG1 (x12 / possible
+		:domain (x13 / face-01
+			:ARG0 (x11 / accident
+				:mod (x10 / general))
+			:ARG0 (x18 / country
+				:name (n2 / name
+					:op1 "Pounds")
+				:mod (x19 / 30m))
+			:time (x25 / face-01
+				:ARG0 (x24 / exchange-01
+					:null_edge (x22 / newspaper
+						:name (n3 / name
+							:op1 "Guardian"))
+					:mod (x23 / organization
+						:name (n4 / name
+							:op1 "Royal")))
+				:ARG1 (x28 / and
+					:op1 (x27 / 5m
+						:mod (x26 / pounds))
+					:op2 (x31 / and
+						:op2 (x29 / government-organization
+							:name (n5 / name
+								:op1 "Sun"
+								:op2 "Alliance")
+							:mod (x36 / each))
+						:op2 (x35 / 10m
+							:ARG1 (x32 / commercial)
+							:null_edge (x34 / null_tag))))))))
+
+# ::id 14
+# ::snt However, Hurricane Andrew gathered fresh strength as UK moved across the Gulf of Mexico and there was concern last night that last night might head towards New Orleans, which is especially low lying and could suffer severe flood damage
+(x5 / gather-01
+	:ARG0 (x3 / newspaper
+		:name (n / name
+			:op1 "Hurricane"
+			:op2 "Andrew"))
+	:ARG1 (x7 / strength
+		:mod (x6 / fresh))
+	:ARG1 (x16 / and
+		:op1 (x10 / move-01
+			:ARG0 (x9 / country
+				:name (n1 / name
+					:op1 "UK"))
+			:location (x11 / across
+				:op1 (x13 / world-region
+					:name (n2 / name
+						:op1 "Gulf")
+					:part-of (x15 / country
+						:name (n3 / name
+							:op1 "Mexico"))))
+			:ARG1 (x19 / concern-01
+				:time (x21 / night
+					:mod (x20 / last))
+				:ARG0 (x26 / head-01
+					:time (x24 / night
+						:mod (x23 / last))
+					:ARG1 (x29 / country
+						:name (n4 / name
+							:op1 "Orleans")
+						:null_edge (x28 / null_tag)
+						:null_edge (x36 / and
+							:mod (x33 / especially)
+							:op1 (x35 / lie-01)
+							:op2 (x37 / possible
+								:domain (x38 / suffer-01
+									:ARG1 (x41 / damage-01
+										:degree (x39 / severe)
+										:ARG1 (x40 / flood-01)))))))))))
+
+# ::id 15
+# ::snt Scientists said the storm could make landfall anywhere between the Alabama port of Mobile and the Louisiana-Texas border, probably tomorrow night or early Thursday
+(x2 / say-01
+	:ARG0 (x1 / have-org-role-91
+		:ARG2 (s / scientist))
+	:ARG1 (x5 / possible
+		:domain (x4 / storm
+			:mod (x7 / landfall)
+			:location (x8 / anywhere
+				:null_edge (x15 / and
+					:op1 (x12 / port
+						:mod (x11 / country
+							:name (n / name
+								:op1 "Alabama"))
+						:mod (x14 / mobile)
+						:mod (x20 / probable)
+						:mod (x23 / or
+							:op1 (x22 / night
+								:mod (x24 / early
+									:op1 (xap1 / date-entity
+										:weekday (x25 / thursday))))
+							:op1 (xap0 / date-entity
+								:month (x21 / tomorrow))))
+					:op2 (x18 / border-01
+						:ARG1 (x17 / country
+							:name (n1 / name
+								:op1 "Louisiana-Texas"))))))))
+
+# ::id 16
+# ::snt the storm could threaten the large concentration of offshore oil production facilities in the Gulf of Mexico
+(x3 / possible
+	:domain (x4 / threaten-01
+		:ARG0 (x2 / storm)
+		:ARG2 (x7 / concentrate-02
+			:mod (x6 / large)
+			:ARG1 (x12 / facility
+				:location (x9 / offshore)
+				:ARG0-of (x11 / produce-01
+					:ARG1 (x10 / oil))
+				:location (x15 / world-region
+					:name (n / name
+						:op1 "Gulf")
+					:part-of (x17 / country
+						:name (n1 / name
+							:op1 "Mexico")))))))
+
+# ::id 17
+# ::snt Shell Oil was evacuating most of the 900 workers on Shell Oil offshore platforms as a precaution
+(x4 / evacuate
+	:ARG0 (x2 / oil
+		:mod (x1 / organization
+			:name (n / name
+				:op1 "Shell")))
+	:ARG1 (x9 / person
+		:ARG0-of (w / work-01)
+		:quant (x5 / most)
+		:ARG1-of (x6 / include-91)
+		:ARG1 (x14 / platform
+			:quant (x8 / 900)
+			:poss (x11 / organization
+				:name (n1 / name
+					:op1 "Shell"))
+			:null_edge (x12 / null_tag)
+			:location (x13 / offshore)
+			:example (x17 / precaution-00))))
+
+# ::id 18
+# ::snt A substantial part of America's oil refining industry is concentrated on the Gulf coast, in Louisiana and Texas, and officials there were reviewing emergency plans to curtail or shut down plant operations
+(x22 / and
+	:op1 (x11 / concentrate
+		:prep-in (x9 / industry
+			:mod (x2 / substantial)
+			:poss (x5 / country
+				:name (n / name
+					:op1 "America"))
+			:mod (x7 / oil)
+			:mod (x8 / refine-01))
+		:ARG2 (x15 / coast
+			:mod (x14 / world-region
+				:name (n1 / name
+					:op1 "Gulf")))
+		:location (x19 / and
+			:op1 (x18 / country
+				:name (n2 / name
+					:op1 "Louisiana"))
+			:op2 (x20 / country
+				:name (n3 / name
+					:op1 "Texas"))))
+	:op1 (x26 / review-01
+		:ARG0 (x23 / have-org-role-91
+			:ARG2 (o / official)
+			:ARG1 (x24 / there))
+		:ARG1 (x28 / plan-01
+			:mod (x27 / emergency))
+		:ARG1 (x31 / or
+			:op1 (x30 / curtail)
+			:op2 (x32 / shut-05
+				:ARG1 (x35 / operation
+					:ARG1 (x34 / plant))))))
+
+# ::id 19
+# ::snt Andrew, the first Caribbean hurricane of the season, hit the eastern coast of Florida early yesterday, gusting up to 165mph
+(x11 / hit-01
+	:ARG0 (x1 / person
+		:name (n / name
+			:op1 "Andrew")
+		:null_edge (x6 / hurricane
+			:mod (x5 / country
+				:name (n2 / name
+					:op1 "Caribbean"))
+			:time (x9 / season)))
+	:ARG1 (x14 / coast
+		:mod (x13 / east)
+		:part-of (x16 / country
+			:name (n1 / name
+				:op1 "Florida")))
+	:time (x17 / early)
+	:time (x18 / yesterday)
+	:ARG0-of (x20 / gust
+		:ARG2 (x23 / 165mph)))
+
+# ::id 20
+# ::snt the first Caribbean hurricane of the season ripped roofs off houses, smashed cars and trucks, snapped power lines and uprooted trees before heading out over the Gulf
+(x13 / smash
+	:ARG0 (x4 / hurricane
+		:mod (x3 / country
+			:name (n / name
+				:op1 "Caribbean"))
+		:time (x7 / season))
+	:ARG1 (x15 / and
+		:op1 (x14 / car)
+		:op2 (x16 / truck))
+	:ARG1 (x21 / and
+		:op1 (x8 / rip-01
+			:ARG0 x4
+			:ARG1 (x9 / roof)
+			:ARG1 (x11 / house))
+		:op2 (x18 / snap
+			:ARG0 x4
+			:ARG1 (x20 / line
+				:mod (x19 / power)))
+		:op2 (x22 / uproot
+			:ARG0 x4
+			:ARG1 (x23 / tree)
+			:time (x24 / before
+				:op1 (x25 / head-01
+					:ARG1 (x29 / world-region
+						:name (n1 / name
+							:op1 "Gulf")))))))
+
+# ::id 21
+# ::snt A million people had been ordered to flee A million people homes in southern Florida as the hurricane moved in from the Bahamas on Sunday
+(x6 / order-01
+	:ARG2 (x8 / flee-01
+		:ARG1 (x12 / home
+			:null_edge (x11 / null_tag)
+			:location (x15 / country
+				:name (n1 / name
+					:op1 "Florida")
+				:mod (x14 / south))))
+	:time (x19 / move-01
+		:ARG0 (x18 / hurricane)
+		:ARG2 (x23 / organization
+			:name (n / name
+				:op1 "Bahamas"))
+		:time (xap0 / date-entity
+			:weekday (x25 / sunday))))
+
+# ::id 22
+# ::snt The Florida Power and Light company said that about 1.2 m of its customers, or 32 per cent, were without power
+(x7 / say-01
+	:ARG0 (x3 / power
+		:mod (x2 / organization
+			:name (n / name
+				:op1 "Florida"))
+		:null_edge (x4 / null_tag))
+	:ARG0 (x6 / company
+		:mod (x5 / light))
+	:ARG1 (x23 / power
+		:topic (x16 / or
+			:op1 (x11 / m)
+			:op1 (x14 / customer)
+			:op1 (x19 / monetary-quantity
+				:unit (c / cent)
+				:quant 32))))
+
+# ::id 23
+# ::snt Some of the strongest winds were in the affluent suburb of Coral Gables, just south of Miami, where the National Hurricane Center is located
+(x5 / wind
+	:quant (x1 / some)
+	:mod (x4 / strong
+		:degree (m / most))
+	:location (x10 / suburb
+		:mod (x9 / affluence)
+		:location (xap0 / relative-position
+			:direction (x16 / south
+				:op1 (x13 / country
+					:name (n / name
+						:op1 "Gables")
+					:location (x12 / country
+						:name (n1 / name
+							:op1 "Coral"))
+					:location-of (x26 / locate-01
+						:ARG1 (x24 / center
+							:null_edge (x22 / nation)
+							:null_edge (x23 / null_tag))))
+				:mod (x15 / just
+					:op1 (x18 / country
+						:name (n2 / name
+							:op1 "Miami")))))))
+
+# ::id 24
+# ::snt Its radar and satellite antennae were blown away
+(x7 / blow-01
+	:ARG1 (x3 / and
+		:op1 (x2 / radar)
+		:op2 (x5 / antenna
+			:ARG1 (x4 / satellite)))
+	:direction (x8 / away))
+
+# ::id 25
+# ::snt President Bush authorised federal disaster assistance for the affected areas and made plans for an inspection tour of the state
+(x11 / and
+	:op1 (x3 / authorise
+		:ARG0 (x2 / person
+			:name (n / name
+				:op1 "Bush")
+			:ARG0-of (x1 / have-org-role-91
+				:ARG2 (p / president)))
+		:ARG1 (x6 / assist-01
+			:ARG2 (x5 / disaster
+				:mod (x4 / government-organization
+					:name (n1 / name
+						:op1 "federal")))
+			:ARG2 (x10 / area
+				:ARG1-of (x9 / affect-01)))
+		:ARG1 (x13 / plan-01
+			:ARG1 (x17 / tour-01
+				:purpose (x16 / inspect-01)
+				:ARG1 (x20 / state)))))
+

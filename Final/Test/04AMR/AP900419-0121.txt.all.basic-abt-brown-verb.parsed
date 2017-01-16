@@ -1,0 +1,386 @@
+# ::id 1
+# ::snt Actress Elizabeth Taylor, hospitalized with pneumonia, was listed as stable Thursday at St. John's Hospital and Health Center, Elizabeth Taylor publicist said
+(x26 / say-01
+	:ARG1 (x10 / list-01
+		:ARG1 (x2 / name
+			:op1 "Elizabeth"
+			:op2 "Taylor"
+			:ARG0-of (x1 / actress)
+			:ARG1-of (x5 / hospitalize-01
+				:ARG2 (x7 / pneumonia)))
+		:location (x15 / government-organization
+			:name (n / name
+				:op1 "St."
+				:op2 "John"
+				:op3 "'s"
+				:op4 "Hospital"
+				:op5 "and"
+				:op6 "Health"
+				:op7 "Center"))
+		:time (xap0 / date-entity
+			:weekday (x13 / thursday
+				:mod (x12 / stable))))
+	:ARG0 (x25 / publicist
+		:poss (x23 / person
+			:name (n1 / name
+				:op1 "Elizabeth"))
+		:poss (x24 / person
+			:name (n2 / name
+				:op1 "Taylor"))))
+
+# ::id 2
+# ::snt " Elizabeth Taylor's stable
+(x5 / stable
+	:name (x2 / name
+		:op1 "Elizabeth"
+		:op2 "Taylor"))
+
+# ::id 3
+# ::snt Elizabeth Taylor's OK
+(x4 / ok
+	:ARG1 (x1 / name
+		:op1 "Elizabeth"
+		:op2 "Taylor"))
+
+# ::id 4
+# ::snt We have nothing else, " said Lisa Del Favaro, a Taylor spokeswoman with Chen Sam and Associates public relations in New York City
+(x7 / say-01
+	:ARG1 (x2 / have-03
+		:ARG0 (x1 / we)
+		:ARG1 (x3 / nothing
+			:mod (x4 / else)))
+	:ARG0 (x8 / person
+		:name (n / name
+			:op1 "Lisa"
+			:op2 "Del"
+			:op3 "Favaro")
+		:ARG0-of (x14 / have-org-role-91
+			:ARG2 (s / spokeswoman)
+			:ARG1 (x13 / person
+				:name (n1 / name
+					:op1 "Taylor"))
+			:ARG1 (x18 / and
+				:op1 (x17 / person
+					:name (n2 / name
+						:op1 "Sam")
+					:null_edge (x16 / person
+						:name (n3 / name
+							:op1 "Chen"))
+					:null_edge (x19 / null_tag
+						:topic (x21 / relation
+							:mod (x20 / public)
+							:location (x25 / city
+								:null_edge (x23 / null_tag)
+								:null_edge (x24 / country
+									:name (n4 / name
+										:op1 "York"))))))))))
+
+# ::id 5
+# ::snt Inquiries to the hospital were referred to Chen Sam
+(x6 / refer-01
+	:ARG1 (x1 / inquire-01
+		:ARG2 (x4 / hospital))
+	:ARG2 (x9 / person
+		:name (n / name
+			:op1 "Sam")
+		:null_edge (x8 / person
+			:name (n1 / name
+				:op1 "Chen"))))
+
+# ::id 6
+# ::snt Miss Taylor, 58, hospitalized with a sinus infection April 9 at Daniel Freeman Marina Hospital, was transferred to St. John's on Monday because of a persistent fever and pneumonia
+(x20 / transfer-01
+	:ARG1 (x2 / person
+		:name (n / name
+			:op1 "Taylor")
+		:ARG0-of (x1 / miss)
+		:null_edge 58
+		:ARG1-of (x6 / hospitalize-01
+			:ARG1 (x10 / infect-01
+				:mod (x9 / sinus)
+				:time (x11 / name
+					:op1 "April"
+					:op2 "9"))
+			:location (x17 / country
+				:name (n2 / name
+					:op1 "Hospital")
+				:null_edge (x14 / null_tag)
+				:null_edge (x15 / person
+					:name (n3 / name
+						:op1 "Freeman"))
+				:null_edge (x16 / country
+					:name (n4 / name
+						:op1 "Marina")))))
+	:ARG2 (x23 / person
+		:name (n1 / name
+			:op1 "John")
+		:ARG0-of (x22 / st.))
+	:ARG1-of (x27 / cause-01
+		:ARG0 (x32 / and
+			:op1 (x31 / fever
+				:mod (x30 / persist-01))
+			:op2 (x33 / pneumonia)))
+	:time (xap0 / date-entity
+		:weekday (x26 / monday)))
+
+# ::id 7
+# ::snt " Elizabeth Taylor is currently being treated intravenously with antibiotics and will remain hospitalized, " Dr. Patricia Murray, an infectious disease specialist treating Miss Taylor, said in a statement Tuesday
+(x32 / state-01
+	:ARG1 (x11 / and
+		:op1 (x7 / treat-01
+			:name (x2 / name
+				:op1 "Elizabeth"
+				:op2 "Taylor")
+			:time (x5 / current)
+			:manner (x8 / intravenous)
+			:ARG1 (x10 / antibiotic))
+		:op2 (x14 / hospitalize-01
+			:ARG1 (x13 / remain-01)))
+	:ARG0 (x18 / newspaper
+		:name (n / name
+			:op1 "Patricia"
+			:op2 "Murray")
+		:ARG0-of (x24 / person
+			:ARG0-of (s / specialize-01)
+			:ARG1 (x23 / disease
+				:mod (x22 / infectious))
+			:ARG0-of (x25 / treat-02
+				:ARG1 (x27 / person
+					:name (n1 / name
+						:op1 "Taylor")
+					:null_edge (x26 / miss)))))
+	:time (xap0 / date-entity
+		:weekday (x33 / tuesday)))
+
+# ::id 8
+# ::snt Miss Taylor said in the statement : " Miss Taylor , 58 , hospitalized with a sinus infection April 9 at Daniel Freeman Marina Hospital have been advised by Miss Taylor , 58 , hospitalized with a sinus infection April 9 at Daniel Freeman Marina Hospital physician to remain hospitalized and Miss Taylor , 58 , hospitalized with a sinus infection April 9 at Daniel Freeman Marina Hospital expect to make a full recovery .
+(x6 / state-01
+	:ARG0 (x2 / person
+		:name (n / name
+			:op1 "Taylor")
+		:null_edge (x1 / miss))
+	:ARG1 (x28 / advise-01
+		:ARG1 (x10 / person
+			:name (n1 / name
+				:op1 "Taylor")
+			:null_edge (x9 / miss)
+			:null_edge 58
+			:ARG1-of (x14 / hospitalize-01
+				:ARG1 (x18 / infect-01
+					:mod (x17 / sinus)
+					:time (x19 / name
+						:op1 "April"
+						:op2 "9"))
+				:location (x25 / country
+					:name (n2 / name
+						:op1 "Hospital")
+					:null_edge (x22 / null_tag)
+					:null_edge (x23 / person
+						:name (n3 / name
+							:op1 "Freeman"))
+					:null_edge (x24 / country
+						:name (n4 / name
+							:op1 "Marina")))))
+		:ARG0 (x30 / name
+			:op1 "Miss"
+			:op2 "Taylor"
+			:null_edge 58
+			:ARG1-of (x35 / hospitalize-01
+				:ARG1 (x39 / infect-01
+					:mod (x38 / sinus)
+					:time (x40 / name
+						:op1 "April"
+						:op2 "9"))
+				:ARG2 (x47 / physician
+					:null_edge (x43 / null_tag)
+					:poss (x44 / organization
+						:name (n5 / name
+							:op1 "Freeman"))
+					:poss (x45 / organization
+						:name (n6 / name
+							:op1 "Marina"))
+					:poss (x46 / organization
+						:name (n7 / name
+							:op1 "Hospital")))))
+		:ARG2 (x50 / hospitalize-01
+			:ARG1 x10
+			:ARG1 x30
+			:ARG1 (x51 / and
+				:op1 (x49 / remain-01)
+				:op1 (x69 / expect-01
+					:ARG0 (x52 / newspaper
+						:name (n8 / name
+							:op1 "Miss"
+							:op2 "Taylor")
+						:null_edge 58
+						:ARG1-of (x57 / hospitalize-01
+							:ARG1 (x61 / infect-01
+								:mod (x60 / sinus)
+								:time (x62 / name
+									:op1 "April"
+									:op2 "9"))
+							:location (x68 / country
+								:name (n9 / name
+									:op1 "Hospital")
+								:null_edge (x65 / null_tag)
+								:null_edge (x66 / person
+									:name (n10 / name
+										:op1 "Freeman"))
+								:null_edge (x67 / country
+									:name (n11 / name
+										:op1 "Marina")))))
+					:ARG1 (x71 / make-01
+						:ARG1 (x74 / recover-01
+							:degree (x73 / full))))))))
+
+# ::id 9
+# ::snt The actress had a nearly fatal bout of pneumonia in 1961, the year The actress won an Oscar for " Butterfield 8 .
+(x3 / have-03
+	:ARG0 (x2 / actress)
+	:ARG1 (x9 / pneumonia
+		:quant (x7 / bout
+			:mod (x6 / fatal
+				:degree (x5 / nearly))))
+	:time (x11 / date-entity
+		:year 1961
+		:time-of (x17 / win-01
+			:ARG0 (x16 / actress)
+			:ARG1 (x19 / oscar)
+			:ARG2 (x22 / organization
+				:name (n / name
+					:op1 "Butterfield"))
+			:quant 8)))
+
+# ::id 10
+# ::snt Doctors performed a tracheotomy _ inserting an air tube in The actress windpipe at the neck _ to help The actress breathe
+(x2 / perform-01
+	:ARG0 (x1 / doctor)
+	:ARG1 (x4 / tracheotomy)
+	:ARG1 (x5 / _
+		:ARG0-of (x6 / insert-01
+			:ARG0 x4
+			:ARG1 (x9 / tube
+				:mod (x8 / air))
+			:ARG2 (x13 / windpipe
+				:mod (x12 / actress)
+				:location (x16 / neck
+					:ARG0-of (x19 / help-01
+						:ARG1 (x22 / breathe-01
+							:ARG0 (x21 / actress))))))))
+
+# ::id 11
+# ::snt Miss Taylor's health problems started with a fall from a horse when Miss Taylor , 58 , hospitalized with a sinus infection April 9 at Daniel Freeman Marina Hospital was 13 and filming the movie " National Velvet .
+(x6 / start-01
+	:ARG1 (x5 / problem
+		:poss (x2 / person
+			:name (n1 / name
+				:op1 "Taylor"))
+		:mod (x4 / health))
+	:time (x9 / fall)
+	:ARG2 (x12 / horse)
+	:ARG0 (x14 / newspaper
+		:name (n / name
+			:op1 "Miss"
+			:op2 "Taylor")
+		:null_edge 58
+		:ARG1-of (x19 / hospitalize-01
+			:ARG1 (x23 / infect-01
+				:mod (x22 / sinus)
+				:time (x24 / name
+					:op1 "April"
+					:op2 "9"))
+			:location (x27 / person
+				:name (n2 / name
+					:op1 "Daniel"
+					:op2 "Freeman"
+					:op3 "Marina"
+					:op4 "Hospital"))))
+	:ARG1 (x33 / and
+		:op1 13
+		:op2 (x34 / film
+			:ARG1 (x36 / movie)
+			:ARG1 (x39 / velvet
+				:mod (x38 / nation)))))
+
+# ::id 12
+# ::snt Miss Taylor , 58 , hospitalized with a sinus infection April 9 at Daniel Freeman Marina Hospital has had back problems ever since
+(x19 / have-03
+	:ARG0 (x2 / person
+		:name (n / name
+			:op1 "Taylor")
+		:ARG0-of (x1 / miss)
+		:null_edge 58
+		:ARG1-of (x6 / hospitalize-01
+			:ARG1 (x10 / infect-01
+				:mod (x9 / sinus)
+				:time (x11 / name
+					:op1 "April"
+					:op2 "9"))
+			:location (x14 / person
+				:name (n1 / name
+					:op1 "Daniel"
+					:op2 "Freeman"
+					:op3 "Marina"
+					:op4 "Hospital"))))
+	:ARG1 (x21 / problem
+		:mod (x20 / back))
+	:time (x23 / since
+		:mod (x22 / ever)))
+
+# ::id 13
+# ::snt In 1983, Miss Taylor , 58 , hospitalized with a sinus infection April 9 at Daniel Freeman Marina Hospital acknowledged a 35-year addiction to sleeping pills and pain killers prescribed for a wide range of health problems
+(x9 / hospitalize-01
+	:time (x2 / date-entity
+		:year 1983)
+	:ARG0 (x4 / newspaper
+		:name (n / name
+			:op1 "Miss"
+			:op2 "Taylor")
+		:null_edge 58)
+	:ARG1 (x13 / infect-01
+		:mod (x12 / sinus))
+	:name (x14 / name
+		:op1 "April"
+		:op2 "9")
+	:location (x17 / person
+		:name (n1 / name
+			:op1 "Daniel"
+			:op2 "Freeman"
+			:op3 "Marina"
+			:op4 "Hospital")
+		:ARG0-of (x21 / acknowledge-01
+			:ARG1 (x24 / addict-01
+				:mod (x23 / person
+					:name (n2 / name
+						:op1 "35-year"))
+				:ARG2 (x28 / and
+					:op1 (x27 / pill
+						:mod (x26 / sleep-01)
+						:ARG1-of (x31 / prescribe-02
+							:ARG1 (x38 / problem
+								:quant (x35 / range
+									:ARG2 (x34 / wide))
+								:mod (x37 / health))))
+					:op2 (x30 / person
+						:ARG0-of (k / kill-01)
+						:mod (x29 / pain-01)))))))
+
+# ::id 14
+# ::snt Miss Taylor has been treated for alcohol and drug abuse at the Betty Ford Clinic in Rancho Mirage
+(x5 / treat-01
+	:ARG1 (x2 / person
+		:name (n / name
+			:op1 "Taylor")
+		:null_edge (x1 / miss))
+	:ARG1 (x8 / and
+		:op1 (x7 / alcohol)
+		:op2 (x10 / abuse-01
+			:ARG1 (x9 / drug)))
+	:location (x13 / government-organization
+		:name (n1 / name
+			:op1 "Betty"
+			:op2 "Ford"
+			:op3 "Clinic")
+		:location (x18 / mirage
+			:mod (x17 / rancho))))
+
