@@ -222,15 +222,15 @@ namespace JarvisSummarization
 
             var AMRRSTInputDir = @"D:\Tesis2016\Jarvis\Lincoln\05AMRParsing\Output2";
             var AMRRSTOutputDir = @"D:\Tesis2016\Jarvis\Lincoln\LAB\AMRRSTSummaries65V70";
-            ClearDirectory(AMRRSTOutputDir);
-            ConceptualRSTSummary(ManualSummaryDir, AMRRSTInputDir, AMRRSTOutputDir);
+            //ClearDirectory(AMRRSTOutputDir);
+            //ConceptualRSTSummary(ManualSummaryDir, AMRRSTInputDir, AMRRSTOutputDir);
 
 
 
             var AMRRSTInputNLGDir = @"D:\Tesis2016\Jarvis\Lincoln\05AMRParsing\Output2";
             var AMRRSTOutputNLGDir = @"D:\Tesis2016\Jarvis\Lincoln\LAB\NLG";
-            //ClearDirectory(AMRRSTOutputNLGDir);
-            //ConceptualRSTNLG(ManualSummaryDir, AMRRSTInputNLGDir, AMRRSTOutputNLGDir);
+            ClearDirectory(AMRRSTOutputNLGDir);
+            ConceptualRSTNLG(ManualSummaryDir, AMRRSTInputNLGDir, AMRRSTOutputNLGDir);
         }
     }
 }

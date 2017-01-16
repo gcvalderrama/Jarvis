@@ -8,17 +8,16 @@ import simplenlg.phrasespec.*;
 import simplenlg.features.*;
 import sun.misc.IOUtils;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 import java.lang.reflect.Type;
+import java.nio.charset.Charset;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
+import java.util.logging.ConsoleHandler;
 
 
 public class Main {
@@ -80,19 +79,22 @@ public class Main {
 
         for (File file : listOfFiles) {
             if (file.isFile()) {
+
+
                 String content;
                 Path t = Paths.get(file.getAbsoluteFile().toURI());
                 content = new String(Files.readAllBytes(t));
 
                 Gson g = new Gson();
 
+
                 Type listType = new TypeToken<ArrayList<CGVerb>>(){}.getType();
 
                 ArrayList<CGVerb> terms = g.fromJson(content, listType);
-
                 CoordinatedPhraseElement c = nlgFactory.createCoordinatedPhrase();
 
 
+                StringBuilder sb = new StringBuilder();
 
                 for ( CGVerb verb :terms ) {
 
@@ -132,9 +134,17 @@ public class Main {
                     }
                     c.addCoordinate(p);
                     String output =  realiser.realiseSentence(p);
-                    System.out.println(output);
+                    sb.append(output);
+                    sb.append(System.getProperty("line.separator"));
                 }
-                System.out.println("==========================================================================");
+                //String output =  realiser.realiseSentence(c);
+                //sb.append(output);
+                String ta = "D:/Tesis2016/Jarvis/Lincoln/LAB/NLGSummarySentence/" + file.getName();
+                System.out.println(ta);
+                Writer writer = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(ta), "utf-8"));
+                writer.write(sb.toString());
+                writer.close();
+                //Files.write(file, lines, Charset.forName("UTF-8"), StandardOpenOption.APPEND);
             }
         }
 /*

@@ -11,7 +11,7 @@ namespace JarvisSummarization.PageRank
         public PRKnowledgeGraph graph;
 
         public double damping = 0.65f;
-        public  int nIterations = 50;
+        public  int nIterations = 30;
 
         public  List<double> randomSurfing;
         public double[][] transitionMatrix;
