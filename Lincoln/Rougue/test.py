@@ -7,7 +7,7 @@ import xlsxwriter
 ROUGE = './RELEASE-1.5.5/ROUGE-1.5.5.pl'
 DATA_PATH = './RELEASE-1.5.5/data'
 write_excel = True
-workbook = xlsxwriter.Workbook('rouge_per_test.xlsx')
+workbook = xlsxwriter.Workbook('rouge_nlg_test.xlsx')
 
 
 def excel_init(name):
@@ -191,8 +191,11 @@ rouge_v2('../LAB/ManualSummaries/*.txt', '../LAB/AMRRSTSummaries65/', 'AMRRST65V
 #rouge_v2('../LAB/ManualSummaries/*.txt', '../LAB/AMRRSTSummaries95/', 'AMRRST95')
 
 
-rouge_v2('../LAB/ManualSummaries/*.txt', '../LAB/AMRRSTSummaries65V50/', 'AMRRST65V50')
-rouge_v2('../LAB/ManualSummaries/*.txt', '../LAB/AMRRSTSummaries65V70/', 'AMRRST65V70')
+#rouge_v2('../LAB/ManualSummaries/*.txt', '../LAB/AMRRSTSummaries65V50/', 'AMRRST65V50')
+#rouge_v2('../LAB/ManualSummaries/*.txt', '../LAB/AMRRSTSummaries65V70/', 'AMRRST65V70')
+
+rouge_v2('../LAB/ManualSummaries/*.txt', '../LAB/NLGSummary/', 'NLGPARAGRAPH')
+rouge_v2('../LAB/ManualSummaries/*.txt', '../LAB/NLGSummarySentence/', 'NLGSENTENCE')
 
 
 if write_excel:
