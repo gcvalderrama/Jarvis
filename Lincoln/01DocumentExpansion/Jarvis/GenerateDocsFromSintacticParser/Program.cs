@@ -48,8 +48,8 @@ namespace GenerateDocsFromSintacticParser
 
         static void Main(string[] args)
         {
-            string InputDir = @"D:\Tesis2016\Jarvis\Lincoln\00Input\Output";
-            string OutputDir = @"D:\Tesis2016\Jarvis\Lincoln\01DocumentExpansion\OutputClean";
+            string InputDir = @"D:\Tesis2016\Jarvis\Final\Training\01Coreference-Output";
+            string OutputDir = @"D:\Tesis2016\Jarvis\Final\Training\021NoDocumentExpantion";
 
             foreach (var item in Directory.GetFiles(InputDir))
             {
@@ -67,35 +67,78 @@ namespace GenerateDocsFromSintacticParser
                             next = sentence.Tokens.ElementAt(i + 1);
                         }
                         var word = sentence.Tokens.ElementAt(i);
-                        if (next != null)
+
+                        if (word.Word == "-LRB-")
                         {
-                            if (next.Word == "'s" || next.Word == ",")
+                            sb_sentence.Append("(");
+                        }
+                        else if (word.Word == "-RRB-")
+                        {
+                            sb_sentence.Append(")");
+                        }
+                        else if ( string.Compare(word.Word , "'s", true) == 0 && (word.POS == "VBP" || word.POS == "VBZ"))
+                        {
+                            sb_sentence.Append("is ");
+                        }
+                        else if (string.Compare(word.Word, "'re", true)  == 0 && word.POS == "VBP")
+                        {
+                            sb_sentence.Append("are ");
+                        }
+                        else if (string.Compare(word.Word, "'m", true) == 0 && word.POS == "VBP")
+                        {
+                            sb_sentence.Append("am ");
+                        }
+                        else if (word.Word == "'ve" && (word.POS == "VBP" || word.POS == "VB"))
+                        {
+                            sb_sentence.Append("have ");
+                        }
+                        else if (word.Word == "'ll" && word.POS == "MD")
+                        {
+                            sb_sentence.Append("will ");
+                        }
+                        else if (word.Word == "'d" && word.POS == "MD")
+                        {
+                            sb_sentence.Append("would ");
+                        }
+
+                        else if (word.Word == "n't" && word.POS == "RB")
+                        {
+                            sb_sentence.Append("not ");
+                        }
+                        else if (word.Word == "'10s" || word.Word == "'20s" || word.Word == "'30s" || word.Word == "'40s" ||
+                            word.Word == "'50s" || word.Word == "'60s" || word.Word == "'70s" || word.Word == "'80s" ||
+                            word.Word == "'90s")
+                        {
+                            sb_sentence.Append(word.Word.Replace("'", "") + " ");
+                        }
+                        else if (word.Word == "." || word.Word == "`" || word.Word == "'" || word.Word == "''" || word.Word == "``")
+                        {
+
+                        }
+                        else
+                        {                            
+                            if (next != null)
                             {
-                                sb_sentence.Append(word.Word);
-                            }                                
-                            else
-                            {
-                                if (word.Word == "-LRB-")
+                                if (((next.Word == "'s" || next.Word == "'") && next.POS == "POS") || next.Word == ",")
                                 {
-                                    sb_sentence.Append("(");
-                                }
-                                else if (word.Word == "-RRB-")
-                                {
-                                    sb_sentence.Append(")");
+                                    sb_sentence.Append(word.Word);
                                 }
                                 else
                                 {
                                     sb_sentence.Append(word.Word + " ");
                                 }
-
+                            }
+                            else
+                            {
+                                sb_sentence.Append(word.Word + " ");
                             }
                         }
-
+                        
                     }
                     sb_document.AppendLine(sb_sentence.ToString());
                 }
                 var ouputfile = Path.Combine(OutputDir, Path.GetFileNameWithoutExtension(item));                
-                File.WriteAllText(ouputfile + ".txt", sb_document.ToString().Replace(" 's ", "'s ").Replace("''", "\"").Replace("``", "\""));
+                File.WriteAllText(ouputfile + ".txt", sb_document.ToString());
             }
         }
     }

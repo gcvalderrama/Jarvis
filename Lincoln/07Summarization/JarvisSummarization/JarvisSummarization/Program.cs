@@ -76,17 +76,16 @@ namespace JarvisSummarization
             }
             Console.ReadLine();
         }
-        public static void ConceptualRSTSummary(string InputDir, string AmrDir, string OutputDir)
+        public static void ConceptualRSTSummary(string InputDir, string RSTDir2, string AmrDir, string OutputDir)
         {
             var files = Directory.GetFiles(InputDir, "*.txt");
             foreach (var file in files)
             {
-
                 var amrfile = Path.Combine(AmrDir, Path.GetFileNameWithoutExtension(file) + ".txt.all.basic-abt-brown-verb.parsed");
 
                 if (File.Exists(amrfile))
                 {
-                    var sanity = SanityXml.Sanity(File.ReadAllText(Path.Combine(RSTDir, Path.GetFileNameWithoutExtension(file) + ".txt.xml.jarvis")));
+                    var sanity = SanityXml.Sanity(File.ReadAllText(Path.Combine(RSTDir2, Path.GetFileNameWithoutExtension(file) + ".txt.xml.jarvis")));
 
                     RST.RSTReader rstreader = new RST.RSTReader();
                     var rstdocument = rstreader.ReadDocumentContent(sanity, Path.GetFileNameWithoutExtension(file));
@@ -219,6 +218,14 @@ namespace JarvisSummarization
             //ClearDirectory(ConceptualSummaryDir);
             //ConceptualSummary(ManualSummaryDir, amrInputDir, ConceptualSummaryDir);
 
+            var ConceptualSummaryDir2 = @"D:\Tesis2016\Jarvis\Lincoln\LAB\ConceptualSummariesCleanRST";
+            ClearDirectory(ConceptualSummaryDir2);
+            ConceptualRSTSummary(@"D:\Tesis2016\Jarvis\Final\Training\09 Manual Summaries",
+                @"D:\Tesis2016\Jarvis\Final\Training\04 RST No Document Expantion",
+                @"D:\Tesis2016\Jarvis\Final\Training\06 AMR XML No Document Expantion", 
+                ConceptualSummaryDir2);
+            
+
 
             var AMRRSTInputDir = @"D:\Tesis2016\Jarvis\Lincoln\05AMRParsing\Output2";
             var AMRRSTOutputDir = @"D:\Tesis2016\Jarvis\Lincoln\LAB\AMRRSTSummaries65V70";
@@ -229,8 +236,8 @@ namespace JarvisSummarization
 
             var AMRRSTInputNLGDir = @"D:\Tesis2016\Jarvis\Lincoln\05AMRParsing\Output2";
             var AMRRSTOutputNLGDir = @"D:\Tesis2016\Jarvis\Lincoln\LAB\NLG";
-            ClearDirectory(AMRRSTOutputNLGDir);
-            ConceptualRSTNLG(ManualSummaryDir, AMRRSTInputNLGDir, AMRRSTOutputNLGDir);
+            //ClearDirectory(AMRRSTOutputNLGDir);
+            //ConceptualRSTNLG(ManualSummaryDir, AMRRSTInputNLGDir, AMRRSTOutputNLGDir);
         }
     }
 }
