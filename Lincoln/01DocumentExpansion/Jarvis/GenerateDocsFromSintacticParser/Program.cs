@@ -119,7 +119,7 @@ namespace GenerateDocsFromSintacticParser
                         {                            
                             if (next != null)
                             {
-                                if (((next.Word == "'s" || next.Word == "'") && next.POS == "POS") || next.Word == ",")
+                                if (((next.Word == "'s" || next.Word == "'") && next.POS == "POS") )
                                 {
                                     sb_sentence.Append(word.Word);
                                 }
