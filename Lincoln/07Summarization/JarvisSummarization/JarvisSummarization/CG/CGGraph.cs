@@ -723,8 +723,23 @@ namespace JarvisSummarization.CG
             }
             return JsonConvert.SerializeObject(result); 
         }
-        
 
+        public string GenerateJSON()
+        {
+
+            var nodes = new List<object>();
+            var relations = new List<object>();
+
+            foreach (var item in this.Nodes)
+            {
+                nodes.Add(new { item.id, item.text, item.sentenceid, item.rstweight, item.pagerank, item.nosuffix, item.label, item.hypernym });
+            }
+            foreach (var item in this.Relations)
+            {
+                relations.Add(new { item.Head, item.Tail, item.conceptualrole, item.label  });
+            }
+            return JsonConvert.SerializeObject(new { nodes = nodes, relations = relations });
+        }
         public string GenerateInformativeAspectsv2()
         {
             StringBuilder sb = new StringBuilder(); 

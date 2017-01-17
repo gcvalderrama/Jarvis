@@ -76,7 +76,7 @@ namespace JarvisSummarization
             }
             Console.ReadLine();
         }
-        public static void ConceptualRSTSummary(string InputDir, string RSTDir2, string AmrDir, string OutputDir)
+        public static void ConceptualRSTSummary(string InputDir, string RSTDir2, string AmrDir, string ConceptualOutputDir,  string OutputDir)
         {
             var files = Directory.GetFiles(InputDir, "*.txt");
             foreach (var file in files)
@@ -97,9 +97,13 @@ namespace JarvisSummarization
                     CGGraph cgraph = new CGGraph(Path.GetFileNameWithoutExtension(file), @"D:\Tesis2016\Propbank\frames", amrdoc.Graphs.Sum(c => c.Nodes.Count));
                     cgraph.ReadAMR(amrdoc);
                     cgraph.Digest();
+
+                    if (!string.IsNullOrWhiteSpace(ConceptualOutputDir))
+                    {
+                        File.WriteAllText(Path.Combine(ConceptualOutputDir, Path.GetFileNameWithoutExtension(file) + ".json"), cgraph.GenerateJSON());                        
+                    }
                     File.WriteAllText(Path.Combine(OutputDir, Path.GetFileNameWithoutExtension(file) + ".txt"), cgraph.Summary());
                 }
-
             }
             Console.ReadLine();
         }
@@ -218,13 +222,24 @@ namespace JarvisSummarization
             //ClearDirectory(ConceptualSummaryDir);
             //ConceptualSummary(ManualSummaryDir, amrInputDir, ConceptualSummaryDir);
 
-            var ConceptualSummaryDir2 = @"D:\Tesis2016\Jarvis\Lincoln\LAB\ConceptualSummariesCleanRST";
+            //var ConceptualSummaryDir2 = @"D:\Tesis2016\Jarvis\Lincoln\LAB\ConceptualSummariesCleanRST";
+            //ClearDirectory(ConceptualSummaryDir2);
+            //ConceptualRSTSummary(@"D:\Tesis2016\Jarvis\Final\Training\09 Manual Summaries",
+            //    @"D:\Tesis2016\Jarvis\Final\Training\04 RST No Document Expantion",
+            //    @"D:\Tesis2016\Jarvis\Final\Training\06 AMR XML No Document Expantion", 
+            //    ConceptualSummaryDir2);
+
+
+            var ConceptualSummaryDir2 = @"D:\Tesis2016\Jarvis\Lincoln\LAB\ConceptualSummariesNONERV2";
+            var ConceptualSummaryJSONDir = @"D:\Tesis2016\Jarvis\Lincoln\LAB\ConceptualSummariesJSONNONERV2";
             ClearDirectory(ConceptualSummaryDir2);
+            ClearDirectory(ConceptualSummaryJSONDir);
             ConceptualRSTSummary(@"D:\Tesis2016\Jarvis\Final\Training\09 Manual Summaries",
-                @"D:\Tesis2016\Jarvis\Final\Training\04 RST No Document Expantion",
-                @"D:\Tesis2016\Jarvis\Final\Training\06 AMR XML No Document Expantion", 
+                @"D:\Tesis2016\Jarvis\Final\Training\04 RSTNOEXPANTIONV2",
+                @"D:\Tesis2016\Jarvis\Final\Training\05 AMRNOEXPANTIONXMLV2",
+                ConceptualSummaryJSONDir,
                 ConceptualSummaryDir2);
-            
+
 
 
             var AMRRSTInputDir = @"D:\Tesis2016\Jarvis\Lincoln\05AMRParsing\Output2";

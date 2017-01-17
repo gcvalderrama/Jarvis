@@ -87,8 +87,8 @@ def SaveGraphs(outputfile, graphs):
     f.close()
 
 if __name__ == '__main__':
-    start = "D:/Tesis2016/Jarvis/Lincoln/05AMRParsing/OutputClean/"
-    end = "D:/Tesis2016/Jarvis/Lincoln/05AMRParsing/OutputClean2/"
+    start = "D:/Tesis2016/Jarvis/Final/Training/05 AMRNOEXPANTIONV2/"
+    end = "D:/Tesis2016/Jarvis/Final/Training/05 AMRNOEXPANTIONXMLV2/"
     f = []
     for (dirpath, dirnames, filenames) in walk(start):
         f.extend(filenames)
