@@ -1,0 +1,388 @@
+# ::id 1
+# ::snt Anita Hill took a lie detector test Sunday -- and the polygraph expert who administered it said she is telling the truth in accusing Clarence Thomas of sexual harassment. ; Polygraph expert Paul K. Minor told reporters that Hill did not deceive the Senate Judiciary Committee when she testified Friday that Thomas had discussed pornographic material and various sex acts with her
+(x10 / and
+	:op1 (x3 / take-01
+		:ARG0 (x1 / newspaper
+			:name (n / name
+				:op1 "Anita"
+				:op2 "Hill"))
+		:time (xap0 / date-entity
+			:weekday (x8 / sunday)))
+	:op2 (x7 / test-01
+		:mod (x6 / detector))
+	:op2 (x17 / say-01
+		:ARG0 (x13 / person
+			:ARG1-of (e / expert-41)
+			:ARG2 (x12 / polygraph)
+			:ARG1-of (x15 / administer-01))
+		:ARG1 (x20 / tell-01
+			:ARG2 (x22 / truth))))
+
+# ::id 2
+# ::snt Trying to save her name ; Charles Ogletree , a Harvard law professor and one of Hill's lawyers , said Hill wanted to take the test to refute the attacks made on her motives and integrity by Republican senators Saturday. ; However , the significance of polygraph tests is limited
+(xap1 / multi-sentence
+	:snt2 (x21 / say-01
+		:ARG0 (x7 / newspaper
+			:name (n / name
+				:op1 "Charles"
+				:op2 "Ogletree")
+			:ARG0-of (x13 / have-org-role-91
+				:ARG2 (p / professor)
+				:ARG1 (x11 / university
+					:name (n2 / name
+						:op1 "Harvard"))
+				:mod (x12 / law)
+				:topic (x14 / and)
+				:ARG1 (x19 / lawyer
+					:poss (x17 / person
+						:name (n3 / name
+							:op1 "Hill")))))
+		:ARG1 (x23 / want-01
+			:ARG0 x7
+			:ARG0 (x22 / person
+				:name (n1 / name
+					:op1 "Hill"))
+			:ARG1 (x29 / refute-01
+				:ARG0 x22
+				:ARG1 (x27 / test-01)
+				:ARG1 (x31 / attack-01))))
+	:snt2 (x52 / limit-01
+		:ARG1 (x47 / significant)))
+
+# ::id 3
+# ::snt They are not admitted as evidence in most courtrooms because the scientific community believes they are insufficiently reliable and judges believe juries give them too much weight. ; The danger of polygraph tests is that some people are able to fool lie detectors because they believe what they are saying , even though it is not true , Georgetown University criminal law professor Paul Rothstein said. ; What Hill was asked ; Minor , a well known polygraph expert who has taught FBI polygraph operators , said he put four questions to Hill : ; (check )Have you deliberately lied to me about Clarence Thomas ?
+(x / xconcept
+	:x (x97 / and
+		:op1 (x4 / admit-01
+			:ARG1 (x1 / they)
+			:ARG1 (x6 / evidence-01
+				:location (x9 / courtroom
+					:quant (x8 / most)))
+			:ARG1-of (x10 / cause-01
+				:ARG0 (x14 / believe-01
+					:ARG0 (x13 / community
+						:mod (x12 / science))
+					:ARG1 (x18 / reliable
+						:mod (x17 / insufficiently)
+						:domain (x21 / believe-01
+							:ARG1 (x19 / and)
+							:ARG1 (x23 / give-07
+								:ARG0 (x22 / jury)
+								:ARG1 (x27 / weight
+									:mod (x25 / too)
+									:quant (x26 / much)))
+							:ARG0 (xap1 / person
+								:ARG0-of (xap0 / have-org-role-91
+									:ARG3 (x20 / judge-01)))))))
+			:ARG1 (x31 / danger
+				:topic (x34 / test-01
+					:ARG1 (x33 / polygraph))
+				:mod (x40 / possible
+					:domain (x42 / fool-01
+						:ARG1 (x44 / detector
+							:ARG0 (x37 / some)
+							:mod (x43 / thing
+								:ARG1-of (l / lie-02))))
+					:ARG1-of (x45 / cause-01
+						:ARG0 (x47 / believe-01
+							:ARG1 (x67 / say-01
+								:concession (x53 / even
+									:op1 (x58 / true))
+								:ARG0 (x66 / person
+									:name (n / name
+										:op1 "Rothstein")
+									:null_edge (x60 / military
+										:name (n1 / name
+											:op1 "Georgetown"
+											:op2 "University"))
+									:null_edge (x62 / crime)
+									:null_edge (x64 / have-org-role-91
+										:ARG2 (p / professor)
+										:ARG1 (x63 / law))
+									:null_edge (x65 / null_tag))
+								:ARG1 (x73 / ask-02
+									:ARG2 (x71 / person
+										:name (n2 / name
+											:op1 "Hill")))))))))
+		:op2 (x89 / say-01
+			:ARG0 (x75 / minor
+				:ARG1-of (x84 / teach
+					:ARG0 (x81 / person
+						:ARG1-of (e / expert-41)
+						:ARG1-of (x79 / know-01)
+						:ARG2 (x80 / polygraph))
+					:ARG1 (x87 / person
+						:ARG0-of (o / operate-01)
+						:mod (x86 / polygraph)))))
+		:op2 (x91 / put-01
+			:ARG0 (x90 / he)
+			:ARG1 (x93 / question-01
+				:quant 4))
+		:op1 (x99 / check-01)
+		:op1 (x104 / lie-02
+			:ARG0 (x102 / you)
+			:mod (x103 / deliberate)
+			:ARG2 (x108 / person
+				:name (n3 / name
+					:op1 "Clarence"
+					:op2 "Thomas")))))
+
+# ::id 4
+# ::snt ; (check )Are you fabricating the allegation that Clarence Thomas discussed pornographic material with you ?
+(x / xconcept
+	:x (x1 / and
+		:op1 (x3 / check-01)
+		:op1 (x7 / fabricate-01
+			:ARG0 (x6 / you)
+			:ARG1 (x13 / discuss-01
+				:ARG1 (x9 / allege-01)
+				:ARG0 (x12 / person
+					:name (n / name
+						:op1 "Thomas")
+					:null_edge (x11 / person
+						:name (n1 / name
+							:op1 "Clarence")))
+				:ARG1 (x15 / material
+					:mod (x14 / pornography))
+				:ARG1 (x17 / you)))))
+
+# ::id 5
+# ::snt ; (check )Are you lying to me about the various topics that Clarence Thomas mentioned to you regarding specific sexual acts ?
+(x / xconcept
+	:x (x1 / and
+		:op1 (x7 / lie-02
+			:ARG1 (x3 / check-01)
+			:ARG0 (x6 / you)
+			:ARG2 (x13 / topic
+				:mod (x12 / various)
+				:ARG1-of (x17 / mention-01
+					:ARG0 (x16 / person
+						:name (n / name
+							:op1 "Thomas")
+						:null_edge (x15 / person
+							:name (n1 / name
+								:op1 "Clarence")))
+					:ARG2 (x19 / you)
+					:ARG1 (x23 / act-02
+						:mod (x21 / specific)))))))
+
+# ::id 6
+# ::snt ; (check )Are you lying to me about Clarence Thomas making references to you about the size of his penis ?
+(x / xconcept
+	:x (x1 / and
+		:op1 (x7 / lie-02
+			:ARG1 (x3 / check-01)
+			:ARG0 (x6 / you)
+			:ARG1 (x13 / make-01
+				:ARG1 (x14 / reference-01
+					:ARG0 (x12 / person
+						:name (n / name
+							:op1 "Thomas")
+						:null_edge (x11 / person
+							:name (n1 / name
+								:op1 "Clarence")))
+					:ARG0 (x16 / you))
+				:topic (x19 / size
+					:poss (x22 / penis))))))
+
+# ::id 7
+# ::snt ; She answered no to each question
+(x / xconcept
+	:x (x1 / and
+		:op2 (x3 / answer-01
+			:ARG0 (x2 / she)
+			:polarity -
+			:ARG2 (x7 / question-01
+				:mod (x6 / each)))))
+
+# ::id 8
+# ::snt There was no indication of deception to any of the relevant questions , Minor said outside the hearing room
+(x15 / say-01
+	:ARG1 (x4 / indicate-01
+		:polarity -
+		:ARG1 (x6 / deceive-01)
+		:ARG1 (x12 / question-01
+			:mod (x8 / any)
+			:ARG1-of (x11 / relevant-41)))
+	:ARG0 (x14 / minor)
+	:location (x16 / outside
+		:op1 (x19 / room
+			:mod (x18 / hearing))))
+
+# ::id 9
+# ::snt 
+(x5 / opine-01
+	:domain (x1 / it)
+	:ARG0-of (x9 / truthful
+		:domain (x7 / person
+			:name (n / name
+				:op1 "Hill")
+			:null_edge (x6 / ms.))))
+
+# ::id 10
+# ::snt ; Sen. Howard Metzenbaum asked that Hill's polygraph results be placed in the committee record , but chairman Joseph Biden , D-Del. , refused , noting that courts did not accept such evidence and that the test had been produced outside committee control. ; Nevertheless , Rothstein said , polygraphs are 60 to 80 percent reliable , depending upon whom you ask , and Peter Tague , also a Georgetown criminal law specialist , said that Prof. Hill's willingness to take a polygraph test tends to support her credibility
+(x / xconcept
+	:x (x1 / and
+		:op1 (x5 / ask-01
+			:ARG0 (x3 / newspaper
+				:name (n1 / name
+					:op1 "Howard"
+					:op2 "Metzenbaum")
+				:ARG0-of (x2 / sen.))
+			:ARG1 (x12 / place-01
+				:ARG1 (x10 / thing
+					:ARG2-of (r / result-01)
+					:poss (x7 / person
+						:name (n2 / name
+							:op1 "Hill"))
+					:mod (x9 / polygraph))
+				:ARG2 (x15 / committee
+					:mod (x16 / record
+						:name (x20 / name
+							:op1 "Joseph"
+							:op2 "Biden"
+							:ARG0-of (x19 / chairman))))))
+		:op2 (x18 / contrast-01)
+		:op2 (x23 / country
+			:name (n / name
+				:op1 "D-Del"))
+		:op2 (x26 / refuse-01
+			:ARG1 (x28 / note-01
+				:ARG1 (x33 / accept-01
+					:ARG0 (x30 / court)
+					:ARG1 (x35 / thing
+						:ARG0-of (e / evidence-01)
+						:mod (x34 / such)
+						:ARG1 (x36 / and
+							:op2 (x51 / say-01
+								:ARG1 (x39 / test-01)
+								:ARG0 (x50 / person
+									:name (n3 / name
+										:op1 "Rothstein")))
+							:op2 (x67 / and
+								:op1 (x42 / produce-01
+									:ARG1 x39
+									:location (x43 / outside
+										:op1 (x45 / control-01
+											:ARG0 (x44 / committee)))
+									:mod (x59 / reliable
+										:ARG1 x39
+										:ARG0 (x53 / polygraph)
+										:ARG2 (x58 / percentage-entity
+											:null_edge 60
+											:value 80)
+										:ARG0-of (x61 / depend-01
+											:ARG0 x53
+											:ARG1 (x65 / ask-02
+												:ARG0 (x64 / you)))))
+								:op2 (x78 / say-01
+									:ARG1 x39
+									:ARG0 (x68 / person
+										:name (n4 / name
+											:op1 "Peter"
+											:op2 "Tague")
+										:ARG0-of (x76 / person
+											:ARG0-of (s / specialize-01)
+											:mod (x71 / also)
+											:ARG1 (x73 / country
+												:name (n5 / name
+													:op1 "Georgetown"))
+											:mod (x74 / crime)
+											:mod (x75 / law)))
+									:ARG1 (x85 / take-01
+										:ARG0 (x83 / will-02
+											:ARG0 (x81 / person
+												:name (n6 / name
+													:op1 "Hill")
+												:null_edge (x80 / prof.)))))))))))
+		:op1 (x89 / tend-02
+			:ARG1-of (x88 / test-01
+				:mod (x87 / polygraph))
+			:ARG1 (x91 / support-01
+				:ARG0 x88
+				:ARG1 (x93 / credibility)))))
+
+# ::id 11
+# ::snt ; The devices purport to detect untruthful answers by measuring changes in blood pressure , pulse rate and perspiration. ; While he is considered to be a prominent expert in his field , Minor's reputation is not without controversy. ; In July 1980 , Minor , who was then with the FBI , administered two polygraph tests to Herman Sillas , then the U.S. attorney in Sacramento , to determine the veracity of allegations that he had taken a $ 7,500 bribe from a prison inmate several years earlier
+(x / xconcept
+	:x (x1 / and
+		:op1 (x4 / purport-01
+			:ARG1 (x3 / device)
+			:ARG1 (x6 / detect-01
+				:ARG0 x3
+				:ARG1 (x8 / answer-01
+					:mod (x7 / truthful
+						:polarity -))
+				:instrument (x10 / measure-01
+					:ARG1 (x11 / change-01
+						:location (x18 / and
+							:op1 (x14 / pressure-01
+								:mod (x13 / blood))
+							:op2 (x17 / rate
+								:mod (x16 / pulse))))))
+			:condition (x25 / consider-01
+				:ARG1 (x30 / person
+					:ARG1-of (e / expert-41)
+					:domain (x23 / he)
+					:mod (x29 / prominent)
+					:ARG2 (x33 / field))
+				:ARG0 (x37 / reputation
+					:poss (x35 / minor))
+				:ARG1 (x41 / controversy))
+			:null_edge (x73 / determine-01
+				:time (x45 / date-entity
+					:year 1980)
+				:ARG0 (x48 / minor
+					:ARG1-of (x57 / administer-01
+						:ARG0 (x55 / government-organization
+							:name (n / name
+								:op1 "FBI"))
+						:ARG1 (x60 / test-01
+							:quant 2
+							:mod (x59 / polygraph))
+						:ARG2 (xap0 / and
+							:name (x62 / name
+								:op1 "Herman"
+								:op2 "Sillas")
+							:op2 (x68 / attorney
+								:time (x65 / then)
+								:ARG1 (x67 / country
+									:name (n1 / name
+										:op1 "U.S."))
+								:location (x70 / country
+									:name (n2 / name
+										:op1 "Sacramento"))))))
+				:ARG1 (x75 / veracity
+					:ARG1-of (xap1 / cause-01
+						:ARG1 (x77 / thing
+							:ARG1-of (a / allege-01)
+							:ARG1 (x81 / take-01
+								:ARG1 (x85 / bribe-01
+									:mod (x83 / country
+										:name (n3 / name
+											:op1 "$")
+										:null_edge (x84 / monetary-quantity
+											:unit (y / yuan))))
+								:destination (x89 / inmate
+									:mod (x88 / prison)
+									:quant (x90 / several
+										:op1 (x91 / temporal-quantity
+											:unit (y1 / year))
+										:time (x92 / early)))))))))))
+
+# ::id 12
+# ::snt The test was later determined to have been improperly administered. ; Minor could not be reached for comment Sunday
+(x / xconcept
+	:x (x12 / and
+		:op1 (x5 / determine-01
+			:ARG0 (x2 / test-01)
+			:time (x4 / late)
+			:ARG1 (x10 / administer-01
+				:manner (x9 / improperly)))
+		:op2 (x14 / possible
+			:domain (x17 / reach-01
+				:ARG1 (x13 / minor)
+				:purpose (x19 / comment-01)
+				:time (xap0 / date-entity
+					:weekday (x20 / sunday))))))
+

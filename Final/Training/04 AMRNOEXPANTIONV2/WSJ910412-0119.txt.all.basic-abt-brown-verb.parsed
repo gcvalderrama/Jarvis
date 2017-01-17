@@ -1,0 +1,1134 @@
+# ::id 1
+# ::snt The news from Iraq is bad
+(x6 / bad-42
+	:domain (x2 / news
+		:source (x4 / country
+			:name (n / name
+				:op1 "Iraq"))))
+
+# ::id 2
+# ::snt After the brilliant military victory , a colossal human tragedy is emerging that is bringing the U.S. to the edge of a political defeat
+(x12 / emerge-01
+	:time (x1 / after
+		:op1 (x5 / win-01
+			:op (v / victory)
+			:mod (x3 / thing
+				:ARG2-of (b / brilliant-41))
+			:mod (x4 / military)))
+	:ARG0 (x10 / tragedy
+		:mod (x8 / colossal)
+		:mod (x9 / human))
+	:ARG1 (x15 / bring-01
+		:ARG1 (x17 / country
+			:name (n / name
+				:op1 "U.S."))
+		:ARG2 (x20 / edge
+			:ARG1 (x24 / defeat-01
+				:mod (x23 / politics)))))
+
+# ::id 3
+# ::snt For it is the human dimension , we all know , that shapes the verdict of history
+(x6 / dimension
+	:mod (x5 / human)
+	:null_edge (x10 / know-01
+		:ARG0 (x8 / we
+			:quant (x9 / all)))
+	:ARG1-of (x13 / shape-01
+		:ARG1 (x15 / verdict
+			:topic (x17 / history))))
+
+# ::id 4
+# ::snt But do not despair ; the great victory in the Gulf war -- now looking so tattered and tarnished -- can yet be saved
+(x1 / contrast-01)
+
+# ::id 5
+# ::snt 
+(x8 / force-01
+	:ARG0 (x2 / dynamic
+		:poss (x5 / situation))
+	:time (x7 / soon)
+	:ARG1 (x10 / change-01))
+
+# ::id 6
+# ::snt Within days , the United Nations will be compelled to implement a massive intervention in Iraq's internal affairs , under the term of its cease-fire
+(x9 / compel-01
+	:time (x1 / within
+		:op1 (x2 / temporal-quantity
+			:unit (d / day)))
+	:ARG1 (x5 / organization
+		:name (n / name
+			:op1 "United"
+			:op2 "Nations"))
+	:purpose (x11 / implement-01
+		:ARG0 x5
+		:ARG1 (x14 / intervene-01
+			:mod (x13 / massive)
+			:ARG1 (x19 / affair
+				:poss (x16 / country
+					:name (n1 / name
+						:op1 "Iraq"))
+				:mod (x18 / internal)))
+		:prep-under (x23 / term
+			:poss (x26 / cease-fire))))
+
+# ::id 7
+# ::snt If the U.N. fails , it will become irrelevant as the League of Nations did in the 1930s
+(x8 / become-01
+	:condition (x4 / fail-01
+		:ARG0 (x3 / organization
+			:name (n / name
+				:op1 "U.N.")))
+	:ARG2 (x9 / irrelevant)
+	:condition (x15 / do-02
+		:ARG0 (x12 / country
+			:name (n1 / name
+				:op1 "League"))
+		:time (xap0 / date-entity
+			:time (x18 / date-entity))))
+
+# ::id 8
+# ::snt As day follows night , the U.N. will thus move into ever expanding confrontations and conflicts with Saddam Hussein and his remaining military forces
+(x10 / move-01
+	:condition (x3 / follow-04
+		:ARG1 (x2 / day)
+		:time (x4 / night))
+	:ARG0 (x7 / organization
+		:name (n / name
+			:op1 "U.N."))
+	:ARG2 (x13 / expand-01
+		:time (x12 / ever)
+		:ARG1 (x15 / and
+			:op1 (x14 / confront-01)
+			:op2 (x16 / conflict-01))
+		:ARG1 (x20 / and
+			:op1 (x19 / event
+				:name (n1 / name
+					:op1 "Hussein")
+				:null_edge (x18 / null_tag))
+			:op2 (x24 / force
+				:ARG1-of (x22 / remain-01)
+				:mod (x23 / military)))))
+
+# ::id 9
+# ::snt Either Saddam Hussein will win by destroying the credibility and influence of the U.N. , or he will finally make his last mistake
+(x5 / win-01
+	:ARG0 (x3 / person
+		:name (n / name
+			:op1 "Hussein")
+		:mod (x1 / either)
+		:null_edge (x2 / null_tag))
+	:instrument (x7 / destroy-01
+		:ARG0 x3
+		:ARG1 (x10 / and
+			:op1 (x9 / credibility
+				:poss (x14 / organization
+					:name (n1 / name
+						:op1 "U.N.")))
+			:op2 (x11 / influence-01)))
+	:ARG1 (x16 / or)
+	:ARG1 (x23 / mistake
+		:time (x19 / final)
+		:mod (x22 / last)))
+
+# ::id 10
+# ::snt Between the invasion of Kuwait last August and the end of the Gulf war , many brave souls inside and outside the U.S. government worried about clever stratagems that Saddam Hussein might employ to defeat the U.S.
+(x25 / worry-01
+	:ARG1 (x8 / and
+		:op1 (x3 / invade-01
+			:ARG1 (x5 / country
+				:name (n / name
+					:op1 "Kuwait"))
+			:null_edge (x6 / last
+				:null_edge 8))
+		:op2 (x10 / end-01
+			:ARG1 (x14 / war
+				:mod (x13 / world-region
+					:name (n2 / name
+						:op1 "Gulf")))))
+	:ARG1 (x18 / soul
+		:quant (x16 / many)
+		:mod (x17 / brave)
+		:location (x19 / inside
+			:op1 (x21 / outside)
+			:op1 (x24 / government-organization
+				:ARG0-of (g / govern-01)
+				:ARG1 (x23 / country
+					:name (n3 / name
+						:op1 "U.S.")))))
+	:ARG0 (x28 / stratagem
+		:mod (x27 / clever-41)
+		:ARG0-of (x33 / employ-02
+			:ARG0 (x31 / person
+				:name (n1 / name
+					:op1 "Hussein")
+				:null_edge (x30 / null_tag))
+			:ARG2 (x35 / defeat-01
+				:ARG0 x31
+				:ARG1 (x37 / country
+					:name (n4 / name
+						:op1 "U.S."))))))
+
+# ::id 11
+# ::snt What if he split the coalition by making enticing offers ?
+(x4 / split-01
+	:ARG1-of (x2 / cause-01)
+	:ARG0 (x3 / he)
+	:ARG1 (x6 / coalition
+		:ARG0-of (x8 / make-01
+			:ARG1 (x10 / offer-01
+				:ARG0-of (x9 / entice-01)))))
+
+# ::id 12
+# ::snt What if he dragged Israel into the war ?
+(x4 / drag-01
+	:ARG1-of (x2 / cause-01)
+	:ARG0 (x3 / he)
+	:ARG1 (x5 / country
+		:name (n / name
+			:op1 "Israel"))
+	:ARG2 (x8 / war))
+
+# ::id 13
+# ::snt What if he inflicted heavy casualties ?
+(x4 / inflict-01
+	:ARG0 (x3 / he)
+	:ARG1 (x6 / casualty
+		:mod (x5 / heavy)))
+
+# ::id 14
+# ::snt What if he suddenly withdrew from Kuwait to save his huge army and then built nuclear weapons -- as Lenin saved his Bolshevik regime by surrendering a third of Russia to the Germans in the Brest-Litovsk treaty ?
+(x13 / and
+	:op2 (x15 / build-01
+		:ARG0 (x3 / he)
+		:ARG1 (x5 / withdraw-01
+			:ARG1-of (x2 / cause-01)
+			:ARG0 x3
+			:manner (x4 / sudden)
+			:ARG2 (x7 / country
+				:name (n / name
+					:op1 "Kuwait"))
+			:ARG1 (x9 / save-02
+				:ARG0 x3
+				:ARG0 x7
+				:ARG1 (x12 / army
+					:mod (x11 / huge))))
+		:time (x14 / then)
+		:ARG1 (x17 / weapon
+			:mod (x16 / nucleus))
+		:condition (x21 / save-01
+			:ARG0 (x20 / person
+				:name (n1 / name
+					:op1 "Lenin"))
+			:ARG1 (x24 / regime
+				:mod (x23 / country
+					:name (n2 / name
+						:op1 "Bolshevik")))
+			:manner (x26 / surrender-01
+				:ARG0 x20
+				:ARG0 (x30 / country
+					:name (n3 / name
+						:op1 "Russia"))
+				:ARG2 (x33 / publication
+					:name (n4 / name
+						:op1 "Germans"))
+				:instrument (x37 / treaty
+					:mod (x36 / country
+						:name (n5 / name
+							:op1 "Brest-Litovsk")))))))
+
+# ::id 15
+# ::snt Well , Saddam Hussein may be twice as brutal as Lenin , but he is only one-tenth as smart
+(x13 / contrast-01
+	:ARG1 (x5 / possible
+		:domain (x9 / brutal
+			:mod (x1 / well)
+			:domain (x4 / person
+				:name (n / name
+					:op1 "Hussein")
+				:null_edge (x3 / null_tag))
+			:null_edge (x11 / person
+				:name (n1 / name
+					:op1 "Lenin"))
+			:null_edge (x19 / smart
+				:mod (x16 / only)))))
+
+# ::id 16
+# ::snt George Bush , by contrast , developed a coherent strategy to liberate Kuwait ; backed up his diplomacy with a war plan that provided for sufficient force to achieve a clear military objective ; obtained at every step the endorsement not only of America's allies but -- miraculously -- also of the U.N. Security Council ; secured public support at home and the consent of a divided , reluctant Congress ; wisely left military campaigns and tactics to his commanders ; and fended off a last minute attempt by Mikhail Gorbachev to turn Iraq into a Soviet protectorate
+(x5 / contrast-01
+	:name (x1 / name
+		:op1 "George"
+		:op2 "Bush"
+		:ARG0-of (x7 / develop-02
+			:ARG1 (x10 / strategy
+				:mod (x9 / coherent)
+				:ARG0-of (x12 / liberate-01
+					:ARG1 (x13 / country
+						:name (n / name
+							:op1 "Kuwait"))))
+			:time (x83 / and
+				:op1 (x84 / fend
+					:ARG1 (x89 / attempt-01
+						:mod (x87 / last)
+						:duration (x88 / temporal-quantity
+							:unit (m / minute))
+						:name (x91 / name
+							:op1 "Mikhail"
+							:op2 "Gorbachev")
+						:ARG1 (x94 / turn-01
+							:ARG0 x91
+							:ARG1 (x95 / country
+								:name (n1 / name
+									:op1 "Iraq"))
+							:ARG2 (x99 / protectorate
+								:mod (xap1 / country
+									:ARG0-of (xap0 / name
+										:op1 "Soviet"))))))))))
+
+# ::id 17
+# ::snt Now , for the coming final round in Bush vs. Saddam , I certainly would not place my bets on the half-witted Butcher of Baghdad
+(x17 / place-01
+	:time (x1 / now)
+	:beneficiary (x7 / round
+		:ARG1-of (x5 / come-01)
+		:mod (x6 / final))
+	:condition (x9 / person
+		:name (n / name
+			:op1 "Bush"
+			:op2 "vs."
+			:op3 "Saddam"))
+	:ARG0 (x13 / i)
+	:mod (x14 / certain)
+	:ARG1 (x19 / bet
+		:location (x23 / butcher
+			:mod (x22 / half-witted)
+			:ARG1 (x25 / city
+				:name (n1 / name
+					:op1 "Baghdad")))))
+
+# ::id 18
+# ::snt To be sure , many critics now fear President Bush has walked away from this final round , leaving Iraq a vast disaster area , like an abandoned Chernobyl reactor , and condemning Kurds and Shiites to choose between permanent refugee camps , prison or death
+(x8 / fear-01
+	:ARG0 (x6 / person
+		:ARG0-of (c / criticize-01)
+		:mod (x3 / sure-fire)
+		:quant (x5 / many))
+	:time (x7 / now)
+	:ARG1 (x12 / walk-01
+		:ARG0 (x10 / person
+			:name (n / name
+				:op1 "Bush")
+			:ARG0-of (x9 / have-org-role-91
+				:ARG2 (p / president)))
+		:direction (x13 / away)
+		:source (x17 / round
+			:mod (x15 / this)
+			:mod (x16 / final))
+		:ARG1 (x32 / and
+			:op1 (x19 / leave-02
+				:ARG2 (x20 / country
+					:name (n1 / name
+						:op1 "Iraq"))
+				:ARG1 (x24 / area
+					:mod (x22 / vast)
+					:mod (x23 / disaster)
+					:location-of (x30 / reactor
+						:ARG1-of (x28 / abandon-01))))
+			:op2 (x33 / condemn-00
+				:ARG2 (x38 / choose-01
+					:ARG1 (x35 / and
+						:op2 (xap1 / person
+							:mod (x34 / ethnic-group
+								:name (n2 / name
+									:op1 "Kurds"))
+							:ARG0-of (xap0 / person
+								:op2 (x36 / newspaper
+									:name (n3 / name
+										:op1 "Shiites")))))
+					:ARG1 (x45 / or
+						:op1 (x42 / camp
+							:mod (x40 / permanent)
+							:mod (x41 / refugee))
+						:op2 (x44 / prison)
+						:op2 (x46 / die-01)))))))
+
+# ::id 19
+# ::snt Even if the president wanted to , he could not walk away from Iraq's internal affairs
+(x9 / possible
+	:domain (x11 / walk-01
+		:null_edge (x5 / want-01
+			:ARG0 (x8 / he)
+			:ARG1 (xap0 / person
+				:ARG0-of (x4 / have-org-role-91
+					:ARG2 (p / president))))
+		:ARG0 x8
+		:direction (x12 / away
+			:op1 (x17 / affair
+				:poss (x14 / country
+					:name (n / name
+						:op1 "Iraq"))
+				:mod (x16 / internal)))))
+
+# ::id 20
+# ::snt Not without destroying the U.N. , and thus destroying any chance of success for his Middle East peace diplomacy ; not without inscribing his Gulf war on the same tablet as Woodrow Wilson's League of Nations and Lyndon Johnson's war in Vietnam
+(x7 / and
+	:op1 (x3 / destroy-01
+		:ARG1 (x5 / organization
+			:name (n / name
+				:op1 "U.N.")))
+	:op2 (x9 / destroy-01
+		:ARG1 (x11 / chance
+			:mod (x10 / any)
+			:topic (x13 / succeed-01)
+			:prep-for (x19 / diplomacy
+				:null_edge (x16 / null_tag)
+				:mod (x18 / peace))))
+	:op1 (x23 / inscribe
+		:ARG1 (x26 / war
+			:mod (x25 / world-region
+				:name (n1 / name
+					:op1 "Gulf")))
+		:ARG1 (x30 / tablet
+			:ARG1-of (x29 / same-41)
+			:part-of (x35 / organization
+				:name (n2 / name
+					:op1 "League")
+				:null_edge (x33 / person
+					:name (n3 / name
+						:op1 "Wilson"))
+				:null_edge (x42 / war
+					:ARG1 (x38 / and
+						:op1 (x37 / null_tag)
+						:op2 (x39 / person
+							:name (n5 / name
+								:op1 "Lyndon")))
+					:location (x44 / country
+						:name (n4 / name
+							:op1 "Vietnam")))))))
+
+# ::id 21
+# ::snt Saddam Hussein will , of course , try to turn America's victory into a Pyrrhic one
+(x8 / try-01
+	:ARG0 (x2 / person
+		:name (n / name
+			:op1 "Hussein")
+		:null_edge (x1 / null_tag))
+	:ARG1 (x10 / turn-02
+		:ARG0 x2
+		:ARG1 (x13 / win-01
+			:op (v / victory)
+			:ARG0 (x11 / country
+				:name (n1 / name
+					:op1 "America")))))
+
+# ::id 22
+# ::snt In an hour-long speech on March 16 , he praised political pluralism , democracy and Iraq's future contribution to stability in the Middle East
+(x10 / praise-01
+	:time (x4 / speech
+		:mod (x3 / hour-long)
+		:time (x6 / date-entity)
+		:poss (x9 / he))
+	:ARG0 x9
+	:ARG1 (x15 / and
+		:op1 (x12 / pluralism
+			:mod (x11 / politics))
+		:op2 (x14 / democracy)
+		:op2 (x19 / contribute-01
+			:ARG0 (x16 / country
+				:name (n / name
+					:op1 "Iraq"))
+			:time (x18 / future)
+			:ARG2 (x21 / stability
+				:null_edge (x24 / null_tag
+					:null_edge "East")))))
+
+# ::id 23
+# ::snt He was appealing , it seems , to Washington's interest in some balance among Iran , Iraq and Syria ; to Ankara's concern about turmoil on Turkey's southern border ; and perhaps to friendly German arms merchants who would again want to do business with him
+(x / xconcept
+	:x (x21 / and
+		:op2 (x19 / and
+			:op1 (x16 / country
+				:name (n4 / name
+					:op1 "Iran"))
+			:op2 (x18 / country
+				:name (n5 / name
+					:op1 "Iraq"))
+			:op3 (x20 / country
+				:name (n6 / name
+					:op1 "Syria"))))
+	:x (x33 / and
+		:op2 (x3 / appeal-02
+			:ARG0 (x1 / he)
+			:ARG1 (x11 / interest-01
+				:ARG0 (x9 / city
+					:name (n / name
+						:op1 "Washington"))
+				:ARG2 (x14 / balance
+					:mod (x13 / some))
+				:ARG2 (x25 / concern-01
+					:ARG0 (x23 / country
+						:name (n1 / name
+							:op1 "Ankara"))
+					:ARG0 (x27 / turmoil
+						:location (x32 / border-01
+							:null_edge (x29 / country
+								:name (n3 / name
+									:op1 "Turkey"))
+							:mod (x31 / south))))
+				:ARG2 (x40 / person
+					:ARG0-of (m / merchandise-01)
+					:mod (x37 / friendly-41)
+					:mod (x38 / country
+						:name (n2 / name
+							:op1 "Germany"))
+					:ARG1 (x39 / arm)
+					:ARG1-of (x44 / want-01
+						:mod (x43 / again)
+						:ARG1 (x46 / do-02
+							:ARG1 (x47 / business))))))
+		:op2 (x6 / seem-01)))
+
+# ::id 24
+# ::snt But then he hurled at his neighbors and at the world at large acts of mass cruelty that compelled Ankara and London , Tehran and Paris , Bonn and -- yes -- Washington , to recognize that one's own moral integrity is more important than Iraq's territorial integrity
+(x1 / contrast-01
+	:ARG2 (x4 / hurl
+		:time (x2 / then)
+		:ARG0 (x3 / he)
+		:location (x7 / person
+			:ARG1-of (n / neighbor-01)
+			:location (x11 / world))
+		:time (x14 / act-02
+			:mod (x13 / large)
+			:ARG1-of (x19 / compel-01
+				:ARG1 (x21 / and
+					:op1 (x17 / cruel
+						:degree (x16 / mass))
+					:op2 (x25 / and
+						:op1 (x20 / country
+							:name (n1 / name
+								:op1 "Ankara"))
+						:name (x22 / name
+							:op1 "London"
+							:op2 ","
+							:op3 "Tehran")
+						:op2 (x26 / city
+							:name (n2 / name
+								:op1 "Paris"))
+						:op2 (x29 / and
+							:op1 (x28 / city
+								:name (n3 / name
+									:op1 "Bonn")))))
+				:purpose (x36 / recognize-02
+					:ARG0 x21
+					:ARG1 (x45 / important
+						:domain (x42 / integrity
+							:poss (x38 / one)
+							:mod (x41 / moral))
+						:degree (x44 / more)
+						:compared-to (x50 / integrity
+							:poss (x47 / country
+								:name (n4 / name
+									:op1 "Iraq"))
+							:mod (x49 / territory))))))))
+
+# ::id 25
+# ::snt Even though the Bush administration's response to the new challenge has been mysteriously slow and inept , Saddam Hussein's most recent depredations have killed his last chance to plead for magnanimity in victory , or to posture himself as the lesser evil , who would , at least , give us the blessings of stability in Iraq
+(x26 / kill-01
+	:ARG2-of (x7 / respond-01
+		:ARG1 (x11 / challenge-01
+			:mod (x10 / new))
+		:ARG1 (x16 / and
+			:op1 (x15 / slow-02
+				:mod (x1 / even)
+				:mod (x14 / mysteriously))
+			:op2 (x17 / inept))
+		:ARG0 (xap0 / government-organization
+			:mod (x4 / person
+				:name (n1 / name
+					:op1 "Bush"))
+			:ARG0-of (x5 / administrate-01)))
+	:ARG0 (x24 / depredation
+		:poss (x19 / person
+			:name (n / name
+				:op1 "Saddam"
+				:op2 "Hussein"))
+		:time (x23 / recent
+			:degree (x22 / most)))
+	:ARG1 (x29 / chance
+		:mod (x28 / last)
+		:compared-to (x37 / or
+			:op1 (x31 / plead-02
+				:ARG2 (x33 / magnanimity))
+			:op2 (x35 / win-01
+				:op (v / victory))
+			:op2 (x39 / posture
+				:ARG2 (x44 / evil
+					:mod (x43 / less)
+					:ARG2-of (x52 / give-01
+						:ARG1 (x55 / bless-01
+							:mod (x57 / stability
+								:location (x59 / country
+									:name (n2 / name
+										:op1 "Iraq"))))))))))
+
+# ::id 26
+# ::snt He also prevented his few remaining supporters in the U.N. from diluting the tough cease-fire terms
+(x3 / prevent-01
+	:ARG0 (x1 / he)
+	:mod (x2 / also)
+	:ARG1 (x7 / person
+		:ARG0-of (s / support-01)
+		:quant (x5 / few)
+		:ARG1-of (x6 / remain-01)
+		:location (x10 / organization
+			:name (n / name
+				:op1 "U.N.")))
+	:ARG2 (x12 / dilute
+		:ARG1 (x16 / term
+			:mod (x14 / tough)
+			:mod (x15 / cease-fire))))
+
+# ::id 27
+# ::snt Now the U.N. is committed to implementing the destruction of all of Iraq's chemical and biological weapons , longer-range ballistic missiles , and nuclear materials and components
+(x5 / commit-01
+	:time (x1 / now)
+	:ARG1 (x3 / organization
+		:name (n / name
+			:op1 "U.N."))
+	:ARG2 (x7 / implement-01
+		:ARG0 x3
+		:ARG1 (x9 / destroy-01
+			:ARG1 (x24 / and
+				:quant (x11 / all)
+				:op2 (x16 / and
+					:op2 (x15 / chemical)
+					:op2 (x17 / biology))
+				:op1 (x18 / weapon
+					:poss (x13 / country
+						:name (n1 / name
+							:op1 "Iraq")))
+				:op2 (x22 / missile
+					:mod (x20 / longer-range)
+					:mod (x21 / ballistics))
+				:op2 (x27 / and
+					:op2 (x26 / material
+						:mod (x25 / nucleus))
+					:op2 (x28 / component))))))
+
+# ::id 28
+# ::snt And once Iraq is permitted to resume oil exports , it must contribute part of its earnings to a U.N.-administered fund for reparations to Kuwait and other victims of its aggression
+(x / xconcept
+	:x (x1 / and)
+	:x (x13 / contribute-01
+		:condition (x5 / permit-01
+			:ARG1 (x3 / country
+				:name (n / name
+					:op1 "Iraq"))
+			:ARG1 (x7 / resume-01
+				:ARG1 (x9 / export-01
+					:ARG1 (x8 / oil))))
+		:ARG1 (x14 / participate-01
+			:ARG1 (x17 / earn-01))
+		:ARG2 (x26 / and
+			:op1 (x21 / fund
+				:mod (x20 / u.n.-administered))
+			:op1 (x23 / reparation
+				:location (x25 / country
+					:name (n1 / name
+						:op1 "Kuwait")))
+			:op1 (x28 / victim
+				:mod (x27 / other)
+				:mod (x31 / aggression)))))
+
+# ::id 29
+# ::snt It is most implausible that Saddam Hussein could survive as Iraq's dictator and comply with these terms
+(x4 / implausible
+	:degree (x3 / most)
+	:ARG1 (x8 / possible
+		:domain (x14 / and
+			:op1 (x9 / survive-01
+				:ARG0 (x7 / person
+					:name (n / name
+						:op1 "Hussein")
+					:null_edge (x6 / null_tag))
+				:ARG2 (x13 / dictator
+					:poss (x11 / country
+						:name (n1 / name
+							:op1 "Iraq"))))
+			:op2 (x15 / comply-01
+				:ARG0 x7
+				:ARG1 (x18 / term)))))
+
+# ::id 30
+# ::snt To become a law-abiding ward of the U.N. is too alien to his mindset , too contrary to the thuggery that his henchmen are forced to practice
+(x2 / become-01
+	:ARG2 (x5 / ward-01
+		:mod (x4 / law-abiding)
+		:ARG0 (x8 / organization
+			:name (n / name
+				:op1 "U.N.")))
+	:ARG2 (x11 / alien
+		:degree (x10 / too)
+		:null_edge (x17 / contrary-41
+			:degree (x16 / too)
+			:ARG2 (x20 / thuggery
+				:ARG1-of (x25 / force-02
+					:ARG1 (x23 / henchman)
+					:ARG2 (x27 / practice-01)))))
+	:ARG2 (x14 / mindset))
+
+# ::id 31
+# ::snt When Saddam Hussein is told to hand to the U.N. a list of all his prohibited weapons as a first step in complying with the ceasefire , he might well respond by arguing : (1 )Iraq never had any of these weapons , (2 )if it had , American bombing raids have destroyed every one of them , and (3 )if there were remaining weapons , all records have been burned by Kurdish terrorists
+(x77 / burn-01
+	:condition (x5 / tell-01
+		:ARG2 (x2 / person
+			:name (n / name
+				:op1 "Saddam"
+				:op2 "Hussein"))
+		:ARG1 (x12 / list-01
+			:ARG2 (x10 / organization
+				:name (n2 / name
+					:op1 "U.N."))
+			:ARG2 (x17 / weapon
+				:quant (x14 / all)
+				:ARG1-of (x16 / prohibit-01)
+				:example (x21 / step
+					:ARG2 (x23 / comply-01
+						:ARG1 (x26 / ceasefire
+							:ARG1 (x31 / respond-01
+								:instrument (x33 / argue-01
+									:ARG1 (x57 / destroy-01
+										:ARG1 (x40 / have-03
+											:ARG0 (x38 / country
+												:name (n3 / name
+													:op1 "Iraq")
+												:null_edge 1)
+											:ARG1 (x44 / weapon
+												:mod (x41 / any)))
+										:quant 2
+										:time (x51 / have-03)
+										:ARG0 (x55 / raid-01
+											:null_edge (x53 / country
+												:name (n4 / name
+													:op1 "American"))
+											:mod (x54 / bomb-01))
+										:null_edge (x58 / every))))
+							:li 3))))
+			:ARG1 (x71 / weapon
+				:ARG1-of (x70 / remain-01))))
+	:ARG1 (x74 / record
+		:quant (x73 / all))
+	:ARG0 (x80 / terrorist
+		:mod (x79 / country
+			:name (n1 / name
+				:op1 "Kurdish"))))
+
+# ::id 32
+# ::snt But he will not refrain from using more brutal ways as well to obstruct the implementation of the U.N. directives
+(x1 / contrast-01
+	:ARG2 (x5 / refrain-01
+		:ARG0 (x2 / he)
+		:ARG2 (x7 / use-01
+			:ARG1 (x10 / way
+				:mod (x9 / brutal
+					:degree (x8 / more)))
+			:mod (x12 / well)
+			:ARG2 (x14 / obstruct-01
+				:ARG1 (x16 / implement-01
+					:ARG1 (x20 / directive
+						:poss (x19 / organization
+							:name (n / name
+								:op1 "U.N."))))))))
+
+# ::id 33
+# ::snt We should expect unexplained disappearances of U.N. arms control inspectors , crashes (blamed on Kurds )of U.N. helicopters looking for hidden chemical weapons , and the killing of thousands of Iraqi soldiers , scientists and technicians who might reveal the location of prohibited weaponry
+(x2 / recommend-01
+	:ARG1 (x3 / expect-01
+		:ARG0 (x1 / we)
+		:ARG1 (x5 / disappear-01
+			:mod (x4 / unexplained)
+			:ARG1 (x27 / and
+				:op1 (x10 / inspect-01
+					:poss (x7 / organization
+						:name (n / name
+							:op1 "U.N."))
+					:ARG1 (x9 / control-01
+						:ARG1 (x8 / arm
+							:ARG1-of (x14 / blame-01
+								:ARG2 (x16 / person
+									:mod (e / ethnic-group
+										:name (n2 / name
+											:op1 "Kurds")))
+								:ARG2 (x20 / helicopter
+									:ARG0-of (x19 / organization
+										:name (n3 / name
+											:op1 "U.N."))
+									:ARG0-of (x21 / look-01
+										:ARG1 (x25 / weapon
+											:ARG1-of (x23 / hidden)
+											:mod (x24 / chemical))))))))
+				:op2 (x29 / kill-01
+					:ARG1 (x37 / and
+						:op1 (x34 / soldier
+							:ARG1 (x33 / country
+								:name (n1 / name
+									:op1 "Iraq"))
+							:ARG0-of (x41 / reveal-01
+								:ARG1 (x46 / weaponry
+									:ARG1-of (x45 / prohibit-01))))
+						:op2 (x36 / scientist
+							:mod x33)
+						:op2 (x38 / technician
+							:mod x33)))))))
+
+# ::id 34
+# ::snt Saddam Hussein may not realize it , but as he begins to obstruct , violate and sabotage the U.N. implementation of the ceasefire agreement , he must take on not just some bureaucrats at U.N. headquarters and the U.N. flag
+(x8 / contrast-01
+	:ARG2 (x3 / possible
+		:domain (x5 / realize-01
+			:ARG0 (x2 / person
+				:name (n / name
+					:op1 "Hussein")
+				:null_edge (x1 / null_tag))
+			:ARG1 (x6 / it)
+			:ARG0 (x33 / bureaucrat
+				:ARG1-of (x11 / begin-01
+					:ARG1 (x16 / and
+						:op1 (x13 / obstruct-01)
+						:op1 (x15 / violate-01
+							:ARG1 (x20 / implement-01
+								:ARG0 (x19 / organization
+									:name (n3 / name
+										:op1 "U.N."))
+								:ARG1 (x24 / agree-01
+									:ARG1 (x23 / cease-01))))
+						:op2 (x17 / sabotage)))
+				:mod (x31 / just)
+				:null_edge (x32 / some)
+				:location (x37 / and
+					:op1 (x36 / headquarters
+						:mod (x35 / organization
+							:name (n1 / name
+								:op1 "U.N.")))
+					:op2 (x40 / flag
+						:mod (x39 / organization
+							:name (n2 / name
+								:op1 "U.N."))))))))
+
+# ::id 35
+# ::snt He must take on George Bush and Old Glory
+(x3 / take-01
+	:ARG0 (x1 / he)
+	:ARG1 (x7 / and
+		:op1 (x5 / name
+			:op1 "George"
+			:op2 "Bush")
+		:op2 (x9 / country
+			:name (n / name
+				:op1 "Glory"))))
+
+# ::id 36
+# ::snt Since Mr. Bush has just succeeded in turning the U.N. into a useful instrument for enhancing world order , he ca not let Saddam Hussein steal his success
+(x23 / let-01
+	:time (x1 / since
+		:op1 (x6 / succeed-01
+			:ARG0 (x3 / person
+				:name (n1 / name
+					:op1 "Bush")
+				:null_edge (x2 / null_tag))
+			:time (x5 / just)
+			:ARG1 (x8 / turn-02
+				:ARG0 x3
+				:ARG1 (x10 / organization
+					:name (n2 / name
+						:op1 "U.N."))
+				:ARG2 (x14 / instrument
+					:mod (x13 / useful)
+					:ARG0-of (x16 / enhance-01
+						:ARG1 (x18 / order
+							:mod (x17 / world)))))))
+	:ARG1 (x26 / steal-01
+		:ARG0 (x25 / person
+			:name (n / name
+				:op1 "Hussein")
+			:null_edge (x24 / null_tag))
+		:ARG1 (x28 / succeed-01)))
+
+# ::id 37
+# ::snt Moreover , the president will depend on the U.N. to put an end to the Arab-Israeli conflict , a key policy goal he announced after Desert Storm
+(x6 / depend-01
+	:ARG0 (x9 / organization
+		:name (n / name
+			:op1 "U.N."))
+	:ARG1 (x11 / put-01
+		:ARG1 (x13 / end-01
+			:ARG1 (x17 / conflict-01
+				:mod (x16 / country
+					:name (n1 / name
+						:op1 "Arab-Israeli"))
+				:ARG0 (x21 / policy
+					:mod (x20 / key)
+					:ARG1-of (x24 / announce-01
+						:time (x25 / after
+							:op1 (x27 / storm
+								:null_edge (x26 / desert))))))))
+	:ARG0 (xap0 / person
+		:ARG0-of (x4 / have-org-role-91
+			:ARG2 (p / president))))
+
+# ::id 38
+# ::snt Nearly all suggestions for the Arab-Israeli conflict call for territorial concessions by Israel in exchange for internationally guaranteed security arrangements -- the territory for peace principle to which the president referred
+(x8 / call-01
+	:ARG0 (x3 / thing
+		:ARG1-of (s / suggest-01)
+		:mod (x1 / nearly)
+		:quant (x2 / all)
+		:ARG1 (x7 / conflict-01
+			:mod (x6 / country
+				:name (n / name
+					:op1 "Arab-Israeli"))
+			:ARG1 (x15 / exchange-01
+				:ARG2 (x20 / thing
+					:ARG1-of (a / arrange-01)
+					:ARG1-of (x18 / guarantee-01
+						:location (x17 / international))
+					:mod (x19 / security)
+					:ARG1 (x23 / territory
+						:mod (x26 / principle
+							:mod (x25 / peace)
+							:poss (x31 / refer-01
+								:ARG0 (xap1 / person
+									:ARG0-of (x30 / have-org-role-91
+										:ARG2 (p / president))))))))))
+	:ARG1-of (xap0 / cause-01
+		:ARG0 (x11 / concede-01
+			:mod (x10 / territory)
+			:ARG0 (x13 / country
+				:name (n1 / name
+					:op1 "Israel")))))
+
+# ::id 39
+# ::snt How could the U.S. ever help to promote such a deal if it permitted Iraq to violate the U.N. cease-fire terms ?
+(x2 / possible
+	:domain (x6 / help-01
+		:ARG0 (x4 / country
+			:name (n / name
+				:op1 "U.S."))
+		:time (x5 / ever)
+		:ARG1 (x8 / promote-01
+			:ARG0 x4
+			:ARG1 (x11 / deal-01
+				:mod (x9 / such)))
+		:condition (x14 / permit-01
+			:ARG1 (x17 / violate-01
+				:ARG0 (x15 / country
+					:name (n1 / name
+						:op1 "Iraq"))
+				:ARG1 (x21 / term
+					:ARG0 (x19 / organization
+						:name (n2 / name
+							:op1 "U.N."))
+					:mod (x20 / cease-fire))))))
+
+# ::id 40
+# ::snt Since the U.S. achieved total military dominance over the Iraqi forces and now plays a leading role in the U.N. , the conditions for enforcing U.N. prohibitions on armaments are optimal
+(x31 / optimal
+	:condition (x12 / and
+		:op1 (x4 / achieve-01
+			:ARG0 (x3 / country
+				:name (n / name
+					:op1 "U.S."))
+			:ARG1 (x7 / dominate-01
+				:ARG2-of (x5 / total-01)
+				:mod (x6 / military)
+				:ARG1 (x11 / force
+					:mod (x10 / country
+						:name (n3 / name
+							:op1 "Iraq")))))
+		:op2 (x14 / play-01
+			:time (x13 / now)
+			:ARG1 (x17 / role
+				:ARG0-of (x16 / lead-02)
+				:poss (x20 / organization
+					:name (n1 / name
+						:op1 "U.N.")))))
+	:domain (x23 / condition
+		:purpose (x25 / enforce-01
+			:ARG1 (x27 / prohibit-01
+				:ARG0 (x26 / organization
+					:name (n2 / name
+						:op1 "U.N."))
+				:topic (x29 / armament)))))
+
+# ::id 41
+# ::snt If international security guarantees were to fail in this instance , the deal that could be offered to Israel would no longer be territory for peace , but territory for a worthless U.N. document
+(x29 / territory
+	:mod (x24 / territory
+		:domain (x4 / guarantee-01
+			:mod (x2 / international)
+			:mod (x3 / security)
+			:ARG1 (x7 / fail-01
+				:prep-for (x10 / instance
+					:mod (x9 / this))))
+		:null_edge (x15 / possible
+			:domain (x17 / offer-01
+				:ARG2 (x19 / country
+					:name (n1 / name
+						:op1 "Israel"))))
+		:purpose (x26 / peace))
+	:ARG1-of (x34 / document
+		:ARG1-of (x32 / worthless)
+		:mod (x33 / organization
+			:name (n / name
+				:op1 "U.N."))))
+
+# ::id 42
+# ::snt Senior administration officials are saying that the Desert Storm victory opened a window of opportunity for U.S. peace efforts in the Arab-Israeli conflict
+(x5 / say-01
+	:ARG1 (x11 / open-01
+		:ARG1 (x10 / win-01
+			:op (v / victory)
+			:mod (x8 / desert))
+		:ARG1 (x13 / window
+			:part-of (x15 / opportunity)
+			:purpose (x23 / conflict-01
+				:ARG0 (x17 / country
+					:name (n / name
+						:op1 "U.S."))
+				:mod (x18 / peace)
+				:mod (x22 / country
+					:name (n1 / name
+						:op1 "Arab-Israeli")))))
+	:ARG0 (xap1 / person
+		:ARG0-of (x3 / have-org-role-91
+			:ARG2 (o / official)
+			:mod (x1 / senior)
+			:ARG1 (xap0 / government-organization
+				:ARG0-of (x2 / administer-01)))))
+
+# ::id 43
+# ::snt For this to be true , Saddam Hussein must not be allowed to slam the window shut
+(x12 / allow-01
+	:condition (x5 / true
+		:domain (x2 / this))
+	:ARG1 (x7 / person
+		:name (n / name
+			:op1 "Saddam"
+			:op2 "Hussein"))
+	:ARG1 (x17 / shut-05
+		:ARG1 (x14 / slam)
+		:ARG1 (x16 / window)))
+
+# ::id 44
+# ::snt Five weeks ago , in his triumphant speech to Congress , President Bush said that our commitment to peace in the Middle East does not end with the liberation of Kuwait
+(x14 / say-01
+	:medium (x8 / speech
+		:mod (x7 / triumphant)
+		:ARG1 (x10 / government-organization
+			:name (n1 / name
+				:op1 "Congress")))
+	:ARG0 (x13 / person
+		:name (n / name
+			:op1 "Bush")
+		:ARG0-of (x12 / have-org-role-91
+			:ARG2 (p / president)))
+	:ARG1 (x26 / end-01
+		:ARG1 (x17 / commit-01
+			:ARG2 (x19 / peace)
+			:null_edge (x22 / null_tag
+				:null_edge "East"))
+		:ARG1 (x29 / liberate-01
+			:ARG1 (x31 / country
+				:name (n2 / name
+					:op1 "Kuwait"))))
+	:time (xap0 / before
+		:quant (x2 / temporal-quantity
+			:unit (w / week)
+			:null_edge (x1 / null_tag))))
+
+# ::id 45
+# ::snt Indeed , it does not
+(x4 / do-02
+	:mod (x1 / indeed))
+
+# ::id 46
+# ::snt The U.S. is committed to support the U.N. , and the U.N. is now committed to inserting itself deeply into the internal affairs of Iraq
+(x10 / and
+	:op1 (x4 / commit-01
+		:ARG1 (x2 / country
+			:name (n / name
+				:op1 "U.S."))
+		:ARG1 (x6 / support-01
+			:ARG0 x2
+			:ARG1 (x8 / organization
+				:name (n2 / name
+					:op1 "U.N."))))
+	:op2 (x15 / commit-01
+		:ARG0 x2
+		:ARG1 (x12 / organization
+			:name (n1 / name
+				:op1 "U.N."))
+		:time (x14 / now)
+		:ARG2 (x17 / insert-01
+			:ARG0 x12
+			:manner (x19 / deep)
+			:ARG2 (x23 / affair
+				:mod (x22 / internal)
+				:poss (x25 / country
+					:name (n3 / name
+						:op1 "Iraq"))))))
+
+# ::id 47
+# ::snt The success or failure of this endeavor will largely determine the prospects for peace in the Middle East
+(x10 / determine-01
+	:ARG1 (x3 / or
+		:op1 (x2 / success
+			:ARG1 (x7 / endeavor-01
+				:mod (x6 / this)))
+		:op2 (x4 / fail-01))
+	:mod (x9 / largely)
+	:ARG1 (x12 / prospect
+		:purpose (x14 / peace
+			:null_edge (x17 / null_tag
+				:null_edge "East"))))
+
+# ::id 48
+# ::snt It will also determine the final winner in the contest between George Bush and Saddam Hussein
+(x4 / determine-01
+	:ARG0 (x1 / it)
+	:mod (x3 / also)
+	:ARG1 (x7 / winner
+		:mod (x6 / final)
+		:location (x10 / contest-00
+			:ARG0 (x14 / and
+				:op1 (x12 / name
+					:op1 "George"
+					:op2 "Bush")
+				:op2 (x16 / company
+					:name (n / name
+						:op1 "Hussein")
+					:null_edge (x15 / null_tag))))))
+
+# ::id 49
+# ::snt -- Mr. Ikle , now with the Center for Strategic & International Studies in Washington , D.C. , was Undersecretary of Defense in the Reagan Defense Department
+(x3 / person
+	:name (n / name
+		:op1 "Ikle")
+	:null_edge (x2 / null_tag)
+	:ARG0-of (x8 / government-organization
+		:name (n1 / name
+			:op1 "Center"
+			:op2 "for"
+			:op3 "Strategic"
+			:op4 "&"
+			:op5 "International"
+			:op6 "Studies")
+		:time (x5 / now)
+		:location (x15 / city
+			:name (n2 / name
+				:op1 "Washington")
+			:null_edge (x17 / country
+				:name (n3 / name
+					:op1 "D.C."))))
+	:null_edge (x20 / null_tag
+		:topic (x22 / defence)))
+

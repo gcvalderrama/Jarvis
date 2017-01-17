@@ -1,0 +1,521 @@
+# ::id 1
+# ::snt Safety standards may not be stringent enough in the cruise industry , the chairman of a federal agency investigating the March engine-room fire aboard the Scandinavian Star said Wednesday
+(x28 / say-01
+	:ARG1 (x3 / possible
+		:domain (x2 / standard
+			:mod (x1 / safe-41))
+		:domain (x7 / enough
+			:mod (x6 / stringent)
+			:prep-in (x11 / industry
+				:mod (x10 / cruise)))
+		:ARG0-of (x14 / have-org-role-91
+			:ARG2 (c / chairman)
+			:ARG1 (x18 / agency
+				:mod (x17 / government-organization
+					:name (n / name
+						:op1 "federal"))
+				:ARG0-of (x19 / investigate-01
+					:ARG1 (x23 / fire-01
+						:null_edge (x21 / null_tag)
+						:ARG1 (x22 / engine-room)
+						:location (x24 / aboard
+							:op1 (x27 / star
+								:mod (x26 / scandinavian))))))))
+	:time (x29 / wednesday))
+
+# ::id 2
+# ::snt The cruise ship industry is generally not operated under the U.S. flag
+(x8 / operate-01
+	:ARG1 (x4 / industry
+		:mod (x2 / cruise)
+		:mod (x3 / ship))
+	:manner (x6 / general)
+	:ARG1 (x12 / flag
+		:mod (x11 / country
+			:name (n / name
+				:op1 "U.S."))))
+
+# ::id 3
+# ::snt You do have visits by the Coast Guard , but those are paper certifications , said Jim Burnett , chairman of the National Transportation Safety Board
+(x16 / say-01
+	:ARG1 (x4 / visit-01
+		:ARG0 (x1 / you)
+		:ARG0 (x7 / military
+			:name (n1 / name
+				:op1 "Coast"
+				:op2 "Guard"))
+		:ARG1-of (x10 / contrast-01
+			:ARG2 (x14 / certification
+				:ARG0 x1
+				:mod (x13 / paper))))
+	:ARG0 (x17 / newspaper
+		:name (n / name
+			:op1 "Jim"
+			:op2 "Burnett")
+		:ARG0-of (x20 / have-org-role-91
+			:ARG2 (c / chairman)
+			:ARG1 (x23 / government-organization
+				:name (n2 / name
+					:op1 "National"
+					:op2 "Transportation"
+					:op3 "Safety"
+					:op4 "Board")))))
+
+# ::id 4
+# ::snt There may not be sufficient safety standards , he said , adding that his agency has probed fires aboard four cruise ships in the past five years
+(x2 / possible
+	:domain (x7 / standard
+		:ARG0-of (x5 / suffice-01)
+		:mod (x6 / safe-41)
+		:domain (x12 / add-02
+			:ARG1 (x10 / say-01)
+			:ARG1 (x17 / probe-01
+				:ARG1 (x18 / fire))
+			:ARG1 (x22 / ships
+				:quant 4
+				:mod (x21 / cruise)
+				:duration (x27 / temporal-quantity
+					:unit (y / year)
+					:mod (x25 / past)
+					:quant 5)))))
+
+# ::id 5
+# ::snt The potential for loss of life is enormous
+(x8 / enormous
+	:domain (x2 / potential
+		:ARG1 (x4 / loss
+			:part-of (x6 / life))))
+
+# ::id 6
+# ::snt The March 15 engine-room fire aboard the Star , carrying 439 mostly American passengers , was discovered by a crew member as the ship returned from Cozumel , Mexico to its Tampa home port
+(x17 / discover-01
+	:ARG1 (x5 / fire-01
+		:null_edge (x2 / null_tag)
+		:null_edge (x3 / null_tag)
+		:location (x6 / aboard
+			:op1 (x8 / star
+				:ARG1-of (x4 / engine-room)))
+		:ARG0-of (x10 / carry-01
+			:ARG1 (x14 / passenger
+				:quant (x11 / 439)
+				:null_edge (x13 / person
+					:mod (c / country
+						:name (n2 / name
+							:op1 "American"))
+					:null_edge (x12 / most)))))
+	:ARG2 (x21 / have-org-role-91
+		:ARG2 (m / member)
+		:ARG1 (x20 / crew))
+	:time (x25 / return-01
+		:ARG1 (x24 / ship)
+		:ARG4 (x27 / country
+			:name (n / name
+				:op1 "Cozumel")
+			:location (x29 / country
+				:name (n1 / name
+					:op1 "Mexico"))
+			:ARG2 (x34 / port
+				:mod (x32 / country
+					:name (n3 / name
+						:op1 "Tampa"))
+				:mod (x33 / home)))))
+
+# ::id 7
+# ::snt Smoke detectors apparently failed , as did an automatic system to douse flames
+(x4 / fail-01
+	:ARG1 (x2 / detector
+		:consist-of (x1 / smoke-01))
+	:manner (x3 / apparent)
+	:ARG1 (x10 / system
+		:mod (x9 / automatic))
+	:ARG2 (x12 / douse
+		:ARG0 x2
+		:ARG1 (x13 / flame)))
+
+# ::id 8
+# ::snt Also , the ship's emergency generators did not work for an hour , leaving the vessel without power in rough seas in the Yucatan Channel , according to NTSB reports released as the agency's three-day hearing opened here
+(xap0 / say-01
+	:ARG2 (x10 / work-01
+		:mod (x1 / also)
+		:ARG0 (x7 / generator
+			:poss (x4 / ship)
+			:mod (x6 / emergency))
+		:duration (x13 / temporal-quantity
+			:unit (h / hour)))
+	:op2 (x15 / leave-01
+		:ARG1 (x17 / vessel)
+		:ARG1 (x19 / power)
+		:ARG2 (x22 / sea
+			:mod (x21 / rough)
+			:location (x26 / country
+				:name (n1 / name
+					:op1 "Channel")
+				:mod (x25 / country
+					:name (n2 / name
+						:op1 "Yucatan")))))
+	:ARG1 (x31 / report-01
+		:ARG0 (x30 / organization
+			:name (n / name
+				:op1 "NTSB"))
+		:ARG1-of (x32 / release-01
+			:time (x39 / open-01
+				:ARG1 (x38 / hearing
+					:ARG0 (x35 / agency)
+					:mod (x37 / person
+						:name (n3 / name
+							:op1 "three-day")))
+				:location (x40 / here)))))
+
+# ::id 9
+# ::snt Although there were no injuries or deaths , the failure of the vessel's safety systems highlights the potential for a catastrophic loss of life in this accident and future vessel fires , Burnett said
+(x35 / say-01
+	:ARG1 (x17 / highlight-01
+		:ARG1 (x6 / or
+			:op1 (x5 / injure-01
+				:polarity -)
+			:op2 (x7 / death))
+		:ARG0 (x10 / fail-01
+			:ARG1 (x16 / system
+				:poss (x13 / vessel)
+				:mod (x15 / safe-41)))
+		:ARG1 (x19 / potential
+			:purpose (x29 / and
+				:manner (x22 / catastrophic
+					:domain (x25 / life)
+					:location (x28 / accident
+						:mod (x27 / this)))
+				:op2 (x32 / fire
+					:time (x30 / future)
+					:poss (x31 / vessel)))))
+	:ARG0 (x34 / person
+		:name (n / name
+			:op1 "Burnett")))
+
+# ::id 10
+# ::snt The safety board will examine whether the existing Coast Guard procedures and international regulations are adequate to protect passengers or whether more rigorous standards are needed
+(x5 / examine-01
+	:ARG0 (x3 / board
+		:mod (x2 / safe-41))
+	:ARG1 (x20 / or
+		:op1 (x16 / adequate
+			:ARG0 (x12 / and
+				:op1 (x11 / procedure
+					:ARG1-of (x8 / exist-01)
+					:poss (x9 / have-org-role-91
+						:ARG1 (m / military
+							:name (n / name
+								:op1 "Coast")))
+					:poss (x10 / organization
+						:name (n1 / name
+							:op1 "Guard")))
+				:op2 (x14 / regulate-01
+					:mod (x13 / international)))
+			:ARG1 (x18 / protect-01
+				:ARG0 x12
+				:ARG1 (x19 / passenger)))
+		:op2 (x26 / need-01
+			:ARG1 (x24 / standard
+				:mod (x23 / rigorous
+					:degree (x22 / more))))))
+
+# ::id 11
+# ::snt Because the NTSB lacks regulatory authority and because cruise ships are often registered outside the United States , he said his agency can only make recommendations
+(x20 / say-01
+	:null_edge (x1 / cause-01
+		:ARG0 (x7 / and
+			:op1 (x4 / lack-01
+				:ARG0 (x3 / organization
+					:name (n / name
+						:op1 "NTSB"))
+				:ARG1 (x6 / authority
+					:mod (x5 / regulate-01)))
+			:op2 (x13 / register-02
+				:ARG1-of (x8 / cause-01)
+				:ARG1 (x10 / ship
+					:mod (x9 / cruise))
+				:frequency (x12 / often)
+				:ARG2 (x14 / outside
+					:op1 (x16 / country
+						:name (n1 / name
+							:op1 "United"
+							:op2 "States"))))))
+	:ARG0 (x19 / he)
+	:ARG1 (x23 / possible
+		:domain (x25 / make-01
+			:mod (x24 / only)
+			:ARG1 (x26 / recommend-01))))
+
+# ::id 12
+# ::snt These might have to be followed up with congressional action or with new treaties with nations where ships are registered , Burnett said
+(x23 / say-01
+	:ARG1 (x3 / have-03
+		:ARG1-of (x6 / follow-01
+			:ARG2 (x11 / or
+				:op2 (x9 / government-organization
+					:name (n1 / name
+						:op1 "congressional"))
+				:op2 (x14 / treaty
+					:mod (x13 / new)
+					:prep-with (x16 / nation)
+					:ARG1-of (x20 / register-02
+						:ARG1 (x18 / ship))))))
+	:ARG0 (x22 / person
+		:name (n / name
+			:op1 "Burnett")))
+
+# ::id 13
+# ::snt The 465-foot Star , operated by Miami-based SeaEscape Limited , is registered in the Bahamas
+(x12 / register-01
+	:ARG2 (x3 / star-01
+		:mod (x2 / 465-foot)
+		:ARG1-of (x5 / operate-01
+			:ARG0 (x8 / government-organization
+				:name (n1 / name
+					:op1 "SeaEscape"
+					:op2 "Limited"))))
+	:location (x15 / organization
+		:name (n / name
+			:op1 "Bahamas")))
+
+# ::id 14
+# ::snt Its engine room was badly damaged by the fire , and there was smoke and water damage throughout the 17-year-old French-made ship , which has since been repaired
+(x11 / and
+	:op1 (x6 / damage-01
+		:ARG1 (x3 / room
+			:mod (x2 / engine))
+		:manner (x5 / badly)
+		:ARG0 (x9 / fire-01)
+		:ARG1 (x17 / damage-01
+			:ARG1 (x15 / and
+				:op1 (x14 / smoke-01)
+				:op2 (x16 / water)
+				:location (x18 / throughout
+					:op1 (x22 / ship
+						:mod (x20 / person
+							:name (n / name
+								:op1 "17-year-old"))
+						:mod (x21 / organization
+							:name (n1 / name
+								:op1 "French-made"))
+						:ARG1-of (x28 / repair-01
+							:time (x26 / since))))))))
+
+# ::id 15
+# ::snt Burnett estimated damages at about $ 20 million , but SeaEscape officials did not answer questions at the hearing
+(x10 / contrast-01
+	:ARG1 (x2 / estimate-01
+		:ARG0 (x1 / person
+			:name (n / name
+				:op1 "Burnett"))
+		:ARG1 (x3 / damage))
+	:ARG2 (x15 / answer-01
+		:ARG1 (x16 / question-01)
+		:time (x19 / hearing)
+		:ARG0 (xap0 / person
+			:ARG0-of (x12 / have-org-role-91
+				:ARG2 (o / official)
+				:ARG1 (x11 / seaescape)))))
+
+# ::id 16
+# ::snt SeaEscape lawyer Nils Linfors Jr. vowed to challenge in court the NTSB's authority to hold such public hearings as Wednesday's
+(x6 / vow-01
+	:ARG0 (x3 / person
+		:name (n / name
+			:op1 "Nils"
+			:op2 "Linfors"
+			:op3 "Jr.")
+		:ARG0-of (x1 / seaescape)
+		:ARG0-of (x2 / lawyer))
+	:ARG1 (x8 / challenge-01
+		:ARG0 x3
+		:location (x10 / court)
+		:ARG1 (x14 / authority
+			:ARG0 (x12 / organization
+				:name (n1 / name
+					:op1 "NTSB"))
+			:ARG1 (x16 / hold-04
+				:ARG1 (x19 / hearing
+					:mod (x17 / such)
+					:mod (x18 / public)
+					:null_edge (x21 / wednesday))))))
+
+# ::id 17
+# ::snt Atissue is that the board does not permit cross-examinations and contentions that the Bahamian-registered ship is outside the agency's jurisdiction
+(x8 / permit-01
+	:ARG1 (x1 / country
+		:name (n / name
+			:op1 "Atissue"))
+	:ARG0 (x5 / board)
+	:ARG1 (x10 / and
+		:op1 (x9 / cross-examination)
+		:op2 (x11 / contention))
+	:ARG1 (x15 / ship
+		:mod (x14 / organization
+			:name (n1 / name
+				:op1 "Bahamian-registered"))
+		:location (x17 / outside
+			:op1 (x21 / jurisdiction))))
+
+# ::id 18
+# ::snt An NTSB report said the fire ignited when pressurized fuel leaked from a line and sprayed against a hot engine exhaust manifold
+(x4 / say-01
+	:ARG0 (x3 / report
+		:ARG0 (x2 / organization
+			:name (n / name
+				:op1 "NTSB")))
+	:ARG1 (x7 / ignite-01
+		:ARG0 (x6 / fire-01)
+		:ARG1 (x15 / and
+			:op1 (x11 / leak-01
+				:ARG1 (x10 / fuel
+					:ARG1-of (x9 / pressurize))
+				:ARG2 (x14 / line))
+			:op2 (x16 / spray
+				:ARG1 x10
+				:prep-against (x22 / manifold
+					:mod (x19 / hot)
+					:mod (x20 / engine)
+					:mod (x21 / exhaust-01))))))
+
+# ::id 19
+# ::snt 
+(x19 / say-01
+	:ARG1 (x3 / continue-01
+		:ARG1 (x2 / leak-01)
+		:duration (x6 / temporal-quantity
+			:unit (m / minute)
+			:quant 13)
+		:time (x7 / after
+			:op1 (x11 / discover-01
+				:ARG1 (x9 / fire-01)))
+		:ARG1 (x13 / feed-01
+			:ARG0 x2
+			:ARG1 (x15 / flame)))
+	:ARG0 (x18 / report))
+
+# ::id 20
+# ::snt Because smoke detectors apparently were not working , Capt. Peter Schaab said he had to send an officer to the engine room to confirm there was a fire
+(x12 / say-01
+	:null_edge (x1 / cause-01
+		:ARG0 (x7 / work-01
+			:ARG0 (x3 / detector
+				:consist-of (x2 / smoke-01))
+			:manner (x4 / apparent)))
+	:ARG0 (x10 / person
+		:name (n / name
+			:op1 "Peter"
+			:op2 "Schaab")
+		:ARG0-of (x9 / capt.))
+	:ARG1 (x16 / send-03
+		:ARG0 (x13 / he)
+		:ARG1 (x18 / have-org-role-91
+			:ARG2 (o / officer))
+		:ARG2 (x22 / room
+			:ARG1 (x21 / engine))
+		:purpose (x24 / confirm-01
+			:ARG0 x18
+			:ARG0 (x28 / fire-01))))
+
+# ::id 21
+# ::snt Firefighting efforts were hampered when an automatic carbox dioxide extinguishing system failed , and had to be operated by hand
+(x14 / and
+	:op1 (x4 / hamper
+		:ARG1 (x2 / effort
+			:purpose (x1 / firefighting))
+		:ARG2 (x18 / operate-01
+			:ARG1-of (x15 / have-03)
+			:ARG0 (x20 / hand)))
+	:condition (x12 / fail-01
+		:ARG1 (x11 / system
+			:mod (x7 / automatic)
+			:mod (x8 / carbox)
+			:mod (x9 / dioxide)
+			:ARG0-of (x10 / extinguish))))
+
+# ::id 22
+# ::snt But the fire was contained to the engine room
+(x1 / contrast-01
+	:ARG2 (x5 / contain-01
+		:ARG1 (x3 / fire-01)
+		:ARG2 (x9 / room
+			:ARG1 (x8 / engine))))
+
+# ::id 23
+# ::snt There was no further spreading , said Schaab , who was praised by Burnett for his 268-member crew acting quickly to move passengers from ship discos , bars , shows and dining rooms
+(x7 / say-01
+	:ARG1 (x5 / spread-02
+		:degree (x4 / further
+			:polarity -))
+	:ARG0 (x8 / person
+		:name (n / name
+			:op1 "Schaab")
+		:ARG0-of (x12 / praise-01
+			:ARG0 (x14 / person
+				:name (n1 / name
+					:op1 "Burnett"))
+			:ARG2 (x18 / crew
+				:mod (x17 / 268-member)
+				:ARG0-of (x19 / act-02
+					:manner (x20 / quick)
+					:ARG1 (x22 / move-01
+						:ARG1 (x23 / passenger)
+						:ARG2 (x31 / and
+							:op1 (x26 / disco
+								:mod (x25 / ship))
+							:op1 (x28 / bar)
+							:op2 (x30 / show)
+							:op1 (x33 / room
+								:purpose (x32 / dine-01)))))))))
+
+# ::id 24
+# ::snt There were no serious injuries to passengers or crew
+(x5 / injure-01
+	:polarity -
+	:mod (x4 / serious)
+	:ARG2 (x8 / or
+		:op1 (x7 / passenger)
+		:op2 (x9 / crew)))
+
+# ::id 25
+# ::snt NTSB records show that between September 1987 and February 1988 , there were at least six leaks in fuel pipes that feed the engines
+(x3 / show-01
+	:ARG0 (x2 / record
+		:poss (x1 / organization
+			:name (n / name
+				:op1 "NTSB")))
+	:ARG1 (x17 / leak-01
+		:beneficiary (x8 / and
+			:op1 (x6 / date-entity
+				:year 1987)
+			:op2 (x9 / name
+				:op1 "February"
+				:op2 "1988"))
+		:quant 6
+		:location (x20 / pipe
+			:mod (x19 / fuel)
+			:ARG0-of (x22 / feed-01
+				:ARG1 (x24 / engine)))))
+
+# ::id 26
+# ::snt The official analysis of the fire and any recommendations that come out of the hearings will be adopted by the full NTSB board in Washington later this summer
+(x18 / adopt-01
+	:ARG1 (x7 / and
+		:op1 (x3 / analyze-01
+			:mod (x2 / official)
+			:ARG1 (x6 / fire-01))
+		:op2 (x9 / recommend-01
+			:mod (x8 / any)
+			:ARG1-of (x11 / come-01
+				:purpose (x15 / hearing))))
+	:manner (x23 / board
+		:mod (x21 / full)
+		:part-of (x22 / organization
+			:name (n / name
+				:op1 "NTSB"))
+		:location (x25 / city
+			:name (n1 / name
+				:op1 "Washington"))
+		:season (x28 / summer
+			:time (x26 / late)
+			:mod (x27 / this))))
+

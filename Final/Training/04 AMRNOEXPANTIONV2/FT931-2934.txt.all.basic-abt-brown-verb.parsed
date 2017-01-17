@@ -1,0 +1,424 @@
+# ::id 1
+# ::snt CHINA stepped up the war of words over the future of Hong Kong yesterday , threatening to ignore the results of democratic elections proposed by Mr Chris Patten , the colony's governor , once it assumes control in 1997
+(x2 / step-01
+	:ARG0 (x1 / organization
+		:name (n / name
+			:op1 "CHINA"))
+	:ARG1 (x5 / war
+		:ARG1 (x7 / word)
+		:time (x10 / future
+			:null_edge (x12 / null_tag
+				:null_edge "Kong")))
+	:time (x14 / yesterday)
+	:purpose (x16 / threaten-01
+		:ARG1 (x18 / ignore-01
+			:ARG1 (x20 / thing
+				:ARG2-of (r / result-01)
+				:ARG1 (x23 / elect-01
+					:mod (x22 / democracy)
+					:ARG1-of (x24 / propose-01
+						:ARG0 (x27 / name
+							:op1 "Chris"
+							:op2 "Patten"
+							:ARG0-of (x33 / have-org-role-91
+								:ARG2 (g / governor)
+								:ARG1 (x31 / colony))))
+					:time (x37 / assume-02
+						:ARG1 (x38 / control-01)
+						:time (x40 / date-entity
+							:year 1997)))))))
+
+# ::id 2
+# ::snt It also accused him of slamming the door on further talks
+(x3 / accuse-01
+	:ARG0 (x1 / it)
+	:mod (x2 / also)
+	:ARG2 (x6 / slam
+		:ARG1 (x8 / door)
+		:ARG1 (x11 / talk-01
+			:degree (x10 / further))))
+
+# ::id 3
+# ::snt Mr Lu Ping , China's senior official for Hong Kong affairs , said that if Mr Patten pressed ahead with his democratic reforms Beijing would start a new kitchen in 1997 - a Chinese expression which means making a fresh start
+(x14 / say-01
+	:ARG0 (x3 / person
+		:name (n / name
+			:op1 "Ping")
+		:null_edge (x1 / mr)
+		:null_edge (x2 / null_tag)
+		:ARG0-of (x8 / have-org-role-91
+			:ARG2 (o / official)
+			:ARG1 (x5 / country
+				:name (n2 / name
+					:op1 "China"))
+			:mod (x7 / senior)
+			:ARG1 (x12 / affair)))
+	:ARG1 (x27 / start-01
+		:time (x19 / press-01
+			:ARG0 (x18 / person
+				:name (n3 / name
+					:op1 "Patten")
+				:null_edge (x17 / mr))
+			:time (x20 / ahead)
+			:ARG2 (x24 / reform-01)
+			:ARG0 (x25 / city
+				:name (n1 / name
+					:op1 "Beijing")))
+		:ARG0 x25
+		:ARG1 (x30 / kitchen
+			:mod (x29 / new)
+			:mod (x36 / expression
+				:ARG0-of (x38 / mean-01
+					:ARG1 (x39 / make-02
+						:ARG1 (x42 / start
+							:mod (x41 / fresh))))))
+		:time (x32 / date-entity
+			:year 1997)))
+
+# ::id 4
+# ::snt Mr Lu also added his voice to personal criticism of the governor , saying that he would be condemned by history over his handling of the Hong Kong issue
+(x4 / add-01
+	:ARG0 (x2 / person
+		:name (n / name
+			:op1 "Lu")
+		:null_edge (x1 / mr))
+	:mod (x3 / also)
+	:ARG1 (x6 / voice)
+	:ARG2 (x9 / criticize-01
+		:ARG0 (x8 / personal)
+		:ARG0 (x12 / have-org-role-91
+			:ARG2 (g / governor)))
+	:concession (x19 / condemn-00
+		:time (x21 / history)
+		:ARG2 (x24 / handle-01
+			:ARG1 (x29 / issue))))
+
+# ::id 5
+# ::snt Speaking at a Beijing press conference , he left the door open , however , for further contacts with Britain , saying that China always stands for co-operation , and not confrontation
+(x9 / leave-01
+	:condition (x1 / speak-01
+		:location (x6 / conference
+			:location (x4 / city
+				:name (n1 / name
+					:op1 "Beijing"))
+			:mod (x5 / press)))
+	:ARG0 (x8 / he)
+	:ARG1 (x11 / door)
+	:purpose (x12 / open-01)
+	:purpose (x18 / contact-01
+		:degree (x17 / further)
+		:prep-with (x20 / country
+			:name (n / name
+				:op1 "Britain")))
+	:instrument (x22 / say-01
+		:ARG1 (x26 / stand-01
+			:ARG1 (x24 / country
+				:name (n2 / name
+					:op1 "China"))
+			:time (x25 / always)
+			:ARG2 (x30 / and
+				:op2 (x32 / confront-01)))))
+
+# ::id 6
+# ::snt In London , the Foreign Office stressed that it was still offering talks at any time
+(x7 / stress-01
+	:location (x2 / city
+		:name (n / name
+			:op1 "London"))
+	:ARG0 (x6 / office
+		:null_edge (x5 / null_tag))
+	:ARG1 (x12 / offer-01
+		:mod (x11 / still)
+		:ARG1 (x13 / talk-01)))
+
+# ::id 7
+# ::snt An official added : The only sensible way forward is for the two sides to sit down and discuss without preconditions the points of difference between us
+(x3 / add-01
+	:ARG1 (x7 / sensible
+		:mod (x6 / only)
+		:ARG2 (x9 / forward
+			:condition (x16 / sit-02
+				:ARG1 (x14 / side
+					:quant 2)
+				:ARG2 (x19 / discuss-01
+					:ARG0 x14
+					:manner (x21 / precondition)
+					:ARG1 (x23 / point
+						:ARG0 (x25 / differ-02
+							:mod (x26 / between)))))))
+	:ARG0 (xap0 / person
+		:ARG0-of (x2 / have-org-role-91
+			:ARG2 (o / official))))
+
+# ::id 8
+# ::snt The remarks by Mr Lu , head of China's Hong Kong and Macao Affairs office , were greeted with relief by the Hong Kong stock market , which had been bracing itself for a more uncompromising stand
+(x19 / greet-01
+	:ARG1 (x2 / thing
+		:ARG1-of (r / remark-01)
+		:name (x4 / name
+			:op1 "Mr"
+			:op2 "Lu"
+			:ARG0-of (x7 / head-01
+				:topic (x13 / and
+					:null_edge (x15 / null_tag
+						:null_edge (x9 / country
+							:name (n / name
+								:op1 "China")
+							:null_edge (x11 / null_tag
+								:null_edge "Kong"))
+						:mod (x14 / city
+							:name (n1 / name
+								:op1 "Macao")))))))
+	:ARG2 (x21 / relieve-01)
+	:ARG0 (x27 / market
+		:mod (x26 / stock)
+		:ARG0-of (x32 / brace-01
+			:ARG1 (x38 / stand
+				:mod (x37 / uncompromising
+					:degree (x36 / more))))))
+
+# ::id 9
+# ::snt The Hang Seng index was some 200 points down before Mr Lu's press conference , but recovered most of its losses to close at 5,958.33 , down 21.7 on the day
+(x17 / contrast-01
+	:ARG1 (x4 / index
+		:null_edge (x2 / country
+			:name (n / name
+				:op1 "Hang"))
+		:mod (x3 / country
+			:name (n1 / name
+				:op1 "Seng"))
+		:mod (x9 / down
+			:ARG4 (x8 / point
+				:quant (x6 / some
+					:op1 200)))
+		:time (x10 / before
+			:op1 (x15 / conference
+				:poss (x12 / person
+					:name (n2 / name
+						:op1 "Lu"))
+				:mod (x14 / press))))
+	:ARG2 (x18 / recover-02
+		:ARG1 (x19 / most)
+		:ARG1 (x24 / close-03
+			:ARG2 (x28 / down
+				:null_edge (x29 / 21.7))
+			:ARG2 (x32 / day))))
+
+# ::id 10
+# ::snt Mr Lu said : We will construct a kitchen in accordance with the design in the Basic Law
+(x3 / say-01
+	:ARG0 (x2 / person
+		:name (n / name
+			:op1 "Lu")
+		:null_edge (x1 / mr))
+	:ARG1 (x7 / construct-01
+		:ARG0 (x5 / we)
+		:ARG1 (x9 / kitchen)
+		:ARG1 (x14 / design-01)
+		:location (x18 / law
+			:null_edge "Basic")))
+
+# ::id 11
+# ::snt We have to do this because the kitchen started by Mr Chris Patten before 1997 will not converge with the stipulations of the Basic Law after 1997
+(x4 / do-02
+	:ARG0 (x1 / we)
+	:ARG1 (x5 / this)
+	:ARG1-of (x6 / cause-01
+		:ARG0 (x18 / converge-01
+			:ARG0 (x8 / kitchen
+				:ARG1-of (x9 / start-01
+					:time (x14 / before
+						:op1 (x12 / name
+							:op1 "Chris"
+							:op2 "Patten")
+						:op1 (x15 / date-entity
+							:year 1997))))
+			:ARG1 (x21 / stipulate-01
+				:ARG1 (x25 / law
+					:null_edge "Basic"))
+			:time (x26 / after
+				:op1 (x27 / date-entity
+					:year 1997)))))
+
+# ::id 12
+# ::snt 
+(x6 / mini-constitution
+	:domain (x3 / law
+		:null_edge "Basic")
+	:null_edge (x8 / null_tag
+		:null_edge "Kong")
+	:time (x10 / after
+		:op1 (x11 / date-entity
+			:year 1997))
+	:ARG0-of (x14 / approve-01
+		:ARG0 (x18 / government-organization
+			:name (n / name
+				:op1 "parliament")
+			:ARG0 (x16 / country
+				:name (n1 / name
+					:op1 "China")))
+		:time (x20 / date-entity
+			:year 1990)))
+
+# ::id 13
+# ::snt Mr Lu said China would have to make preparations ahead of 1997 for the cancellation of Mr Patten's proposed democratic reforms ; but he stopped short of saying China would set up an alternative administration in Hong Kong before the end of British rule
+(x / xconcept
+	:x (x23 / and
+		:op2 (x24 / contrast-01
+			:ARG1 (x3 / say-01
+				:ARG0 (x2 / person
+					:name (n / name
+						:op1 "Lu")
+					:null_edge (x1 / mr))
+				:ARG1 (x9 / prepare-02
+					:ARG0 (x4 / country
+						:name (n1 / name
+							:op1 "China"))
+					:time (x10 / ahead
+						:op1 (x12 / date-entity
+							:year 1997))
+					:ARG1 (x15 / cancellation
+						:ARG1 (x22 / reform-01
+							:poss (x18 / person
+								:name (n2 / name
+									:op1 "Patten"))
+							:ARG1-of (x20 / propose-01)
+							:mod (x21 / democracy)))))
+			:ARG2 (x26 / stop-01
+				:ARG0 (x25 / he)
+				:ARG1 (x29 / say-01
+					:ARG1 (x32 / set-06
+						:ARG0 (x30 / country
+							:name (n3 / name
+								:op1 "China"))
+						:time (x40 / before
+							:op1 (x42 / end
+								:ARG1 (x45 / rule-03
+									:ARG0 "Britain")))
+						:ARG0 (xap0 / government-organization
+							:mod (x35 / alternative)
+							:ARG0-of (x36 / administrate-01
+								:ARG1 (x38 / city
+									:name (n4 / name
+										:op1 "Hong"
+										:op2 "Kong"))))))))))
+
+# ::id 14
+# ::snt He also refrained from repeating economic threats made by China last year , although it seems unlikely that Britain will win China's agreement to complete Hong Kong's Dollars 175bn (Pounds 123bn )airport project , or further develop the colony's container port
+(x3 / refrain-01
+	:ARG0 (x1 / he)
+	:mod (x2 / also)
+	:ARG1 (x5 / repeat-01
+		:ARG1 (x7 / threaten-01
+			:mod (x6 / economy)
+			:ARG1-of (x16 / seem-01
+				:ARG1 (x10 / country
+					:name (n / name
+						:op1 "China"))
+				:time (x12 / year
+					:mod (x11 / last))
+				:ARG1 (x17 / likely
+					:polarity -
+					:domain (x21 / win-01
+						:ARG0 (x19 / country
+							:name (n1 / name
+								:op1 "Britain"))
+						:ARG1 (x24 / agree-01
+							:ARG0 (x22 / country
+								:name (n2 / name
+									:op1 "China"))
+							:ARG2 (x39 / or
+								:op1 (x26 / complete-01
+									:ARG1 (x37 / project
+										:poss (x27 / city
+											:name (n3 / name
+												:op1 "Hong"
+												:op2 "Kong"))
+										:topic (x30 / dollars)
+										:topic (x31 / 175bn)
+										:topic (x34 / 123bn
+											:null_edge (x33 / null_tag))
+										:mod (x36 / airport)))
+								:op2 (x41 / develop-02
+									:degree (x40 / further)
+									:ARG1 (x46 / port
+										:mod (x45 / container)))))))))))
+
+# ::id 15
+# ::snt In Beijing , Sir Robin McLaren , Britain's ambassador , regretted the continuing personal attacks on Mr Patten
+(x12 / regret-01
+	:location (x2 / city
+		:name (n / name
+			:op1 "Beijing"))
+	:ARG0 (x5 / newspaper
+		:name (n1 / name
+			:op1 "Robin"
+			:op2 "McLaren")
+		:ARG0-of (x4 / sir)
+		:ARG0-of (x10 / have-org-role-91
+			:ARG2 (a / ambassador)
+			:ARG1 (x8 / country
+				:name (n2 / name
+					:op1 "Britain"))))
+	:ARG1 (x14 / continue-01
+		:ARG1 (x16 / attack-01
+			:manner (x15 / personal)
+			:ARG1 (x19 / person
+				:name (n3 / name
+					:op1 "Patten")))))
+
+# ::id 16
+# ::snt He said that decisions over Hong Kong were taken by the British government as a whole
+(x2 / say-01
+	:ARG0 (x1 / he)
+	:ARG1 (x9 / take-01
+		:ARG1 (x4 / decide-01
+			:null_edge (x6 / null_tag
+				:null_edge "Kong"))
+		:ARG0 (x13 / government-organization
+			:ARG0-of (g / govern-01)
+			:prep-as (x16 / whole)
+			:ARG1 (xap1 / country
+				:ARG0-of (xap0 / name
+					:op2 "Britain")))))
+
+# ::id 17
+# ::snt In Hong Kong , Mr Patten reiterated his preparedness to hold talks with China about his proposed 1994-95 elections
+(x7 / reiterate-01
+	:location (x2 / city
+		:name (n / name
+			:op1 "Hong"
+			:op2 "Kong"))
+	:ARG0 (x5 / newspaper
+		:name (n1 / name
+			:op1 "Mr"
+			:op2 "Patten"))
+	:ARG1 (x9 / prepare-02
+		:ARG2 (x11 / hold-04
+			:ARG1 (x12 / talk-01
+				:ARG2 (x14 / country
+					:name (n2 / name
+						:op1 "China"))
+				:ARG1 (x19 / elect-01
+					:ARG1-of (x17 / propose-01)
+					:quant (x18 / 1994-95))))))
+
+# ::id 18
+# ::snt But in spite of the governor's attempts to calm growing concerns over the row with Beijing , local politicians were pessimistic about an early solution
+(x1 / contrast-01
+	:ARG2 (x22 / pessimistic
+		:null_edge (x20 / politician
+			:mod (x19 / local))
+		:topic (x26 / solution
+			:time (x25 / early))
+		:ARG1-of (xap0 / cause-01
+			:ARG0 (x3 / spite
+				:ARG1 (x8 / attempt-01
+					:ARG1 (x10 / calm
+						:ARG1 (x12 / concern-01
+							:ARG1-of (x11 / grow-01)
+							:ARG1 (x15 / row)))
+					:ARG0 (x17 / city
+						:name (n / name
+							:op1 "Beijing")))))))
+

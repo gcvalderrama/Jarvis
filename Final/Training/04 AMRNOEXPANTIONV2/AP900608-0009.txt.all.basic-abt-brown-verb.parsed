@@ -1,0 +1,594 @@
+# ::id 1
+# ::snt Arkansas Gov. Bill Clinton secured a solid majority to win his sixth straight Democratic nomination
+(x5 / secure-01
+	:ARG0 (x3 / newspaper
+		:name (n / name
+			:op1 "Bill"
+			:op2 "Clinton")
+		:ARG0-of (x2 / gov.
+			:ARG1 (x1 / country
+				:name (n1 / name
+					:op1 "Arkansas"))))
+	:ARG1 (x8 / majority
+		:mod (x7 / solid)
+		:ARG1 (x10 / win-01
+			:ARG1 (x15 / nominate-01
+				:mod (x13 / straight)
+				:mod (x14 / democratic)))))
+
+# ::id 2
+# ::snt But , like a boxing champion who slipped by on points , he is being asked to explain the lack of a knockout punch
+(x1 / contrast-01
+	:ARG2 (x16 / ask-02
+		:ARG2 (x6 / champion
+			:topic (x5 / boxing)
+			:ARG0-of (x8 / slip-02
+				:ARG4 (x11 / point)))
+		:ARG2 (x13 / he)
+		:ARG1 (x18 / explain-01
+			:ARG0 x13
+			:ARG1 (x20 / lack-01
+				:ARG1 (x24 / punch
+					:mod (x23 / knockout))))))
+
+# ::id 3
+# ::snt Clinton , 43 , was the nation's youngest governor when first elected in 1978 and he has had a stranglehold on the state's Democratic Party ever since
+(x10 / have-org-role-91
+	:ARG2 (g / governor)
+	:null_edge 43
+	:ARG1 (x7 / nation)
+	:manner (x9 / youngest)
+	:ARG1 (x16 / and
+		:op1 (x13 / elect-01
+			:time (x12 / first)
+			:time (x15 / date-entity
+				:year 1978)
+			:time (x29 / since
+				:op1 (x17 / he)
+				:null_edge (x21 / null_tag
+					:poss (x24 / state))
+				:mod (x28 / ever)))))
+
+# ::id 4
+# ::snt But in last week's primary , he garnered just 55 percent of the vote while Tom McRae , an unpolished campaigner who heads a public policy think tank , earned 39 percent
+(x1 / contrast-01
+	:ARG2 (x6 / primary
+		:time (x4 / week
+			:mod (x3 / last)))
+	:ARG2 (x9 / garner-01
+		:ARG0 (x8 / he)
+		:ARG2 (x12 / percentage-entity
+			:mod (x10 / just)
+			:value 55
+			:poss (x15 / vote-01)))
+	:ARG2 (x31 / earn-01
+		:ARG0 (x17 / newspaper
+			:name (n / name
+				:op1 "Tom"
+				:op2 "McRae")
+			:ARG0-of (x22 / person
+				:ARG0-of (c / campaign-01)
+				:mod (x21 / unpolished)
+				:ARG0-of (x24 / head-02
+					:ARG1 (x29 / tank
+						:mod (x26 / public)
+						:mod (x27 / policy)
+						:mod (x28 / think)))))
+		:ARG2 (x33 / percentage-entity
+			:value 39)))
+
+# ::id 5
+# ::snt Four also-rans divided the rest
+(x3 / divide-02
+	:ARG0 (x2 / also-ran
+		:quant 4)
+	:ARG1 (x5 / rest))
+
+# ::id 6
+# ::snt Clinton , who toyed with the idea of running for the presidency in 1988 and already is talking about 1996 , said he saw no cause for concern in the margin of his primary victory
+(x22 / say-01
+	:ARG0 (x1 / person
+		:name (n / name
+			:op1 "Clinton")
+		:ARG0-of (x4 / toy
+			:ARG1 (x7 / idea
+				:topic (x9 / run-01
+					:ARG1 (x12 / presidency)
+					:time (x14 / date-entity
+						:year 1988)))
+			:ARG1 (x15 / and
+				:op2 (x18 / talk-01
+					:time (x16 / already)
+					:time (x20 / date-entity
+						:year 1996)))))
+	:ARG1 (x24 / see-01
+		:ARG0 (x23 / he)
+		:polarity -
+		:extent (x31 / margin
+			:ARG1 (x35 / win-01
+				:op (v / victory)
+				:mod (x34 / primary)))))
+
+# ::id 7
+# ::snt I did not see how I could get 60 percent , knowing the number of people who were saying in the surveys that they thought I was a good governor but were concerned about the tenure issue , Clinton said recently
+(x40 / say-01
+	:ARG1 (x4 / see-01
+		:ARG0 (x1 / i)
+		:ARG1 (x7 / possible
+			:domain (x8 / get-01
+				:ARG0 (x6 / i)
+				:ARG2 (x10 / percentage-entity
+					:value 60)))
+		:ARG1 (x12 / know-01
+			:ARG1 (x33 / concern-01
+				:ARG1 (x14 / number)
+				:ARG0 (x22 / survey-01)
+				:ARG0 (x25 / think-01
+					:ARG1 (x30 / have-org-role-91
+						:ARG2 (g / governor)
+						:ARG0 (x26 / i)
+						:mod (x29 / good)))
+				:ARG0 (x37 / issue
+					:topic (x36 / tenure)))))
+	:ARG0 (x39 / person
+		:name (n / name
+			:op1 "Clinton"))
+	:time (x41 / recent))
+
+# ::id 8
+# ::snt Tenure was summed up repeatedly by McRae as 10 years is long enough
+(x3 / sum
+	:ARG1 (x1 / tenure)
+	:ARG1-of (x5 / repeat-01)
+	:ARG0 (x7 / publication
+		:name (n / name
+			:op1 "McRae"))
+	:time (xap0 / before
+		:op1 (x10 / temporal-quantity
+			:unit (y / year)
+			:quant 10)
+		:op1 (x13 / enough)))
+
+# ::id 9
+# ::snt Arkansans grow bored with their politicians sooner than voters elsewhere , Clinton said , in part because politics in the state is so personal
+(x13 / say-01
+	:ARG1 (x2 / grow-01
+		:ARG0 (x1 / newspaper
+			:name (n1 / name
+				:op1 "Arkansans"))
+		:ARG1 (x3 / bore
+			:ARG1 x1
+			:ARG0 (x6 / politician
+				:location (x10 / elsewhere
+					:op1 (x9 / vote-01)))
+			:ARG1 x13)
+		:ARG1-of (x17 / cause-01
+			:ARG0 (x24 / personal
+				:degree (x16 / part)
+				:domain (x18 / politics
+					:location (x21 / state)))))
+	:ARG0 (x12 / person
+		:name (n / name
+			:op1 "Clinton")))
+
+# ::id 10
+# ::snt Pumping hands at shopping malls and crawfish festivals is considered as important as running the right television ad
+(x10 / consider-01
+	:ARG1 (x12 / important
+		:domain (x1 / pump-01
+			:ARG1 (x2 / hand)
+			:location (x6 / and
+				:op1 (x5 / mall
+					:location-of (x4 / shop-01))
+				:op2 (x8 / festival)))
+		:domain (x14 / run-01
+			:null_edge (x16 / right
+				:null_edge (x17 / television
+					:null_edge "AD")))))
+
+# ::id 11
+# ::snt I am just trying to tell people that in business they would not fire a 43-year-old with 10 years of experience who is doing a good job , Clinton said days before the primary
+(x30 / say-01
+	:ARG1 (x4 / try-01
+		:mod (x3 / just)
+		:ARG1 (x6 / tell-01
+			:ARG1 (x14 / fire-01
+				:time (x10 / business)
+				:ARG0 (x11 / they)
+				:ARG1 (x16 / person
+					:name (n1 / name
+						:op1 "43-year-old"))
+				:time (x21 / experience-01
+					:duration (x19 / temporal-quantity
+						:unit (y / year)
+						:quant 10))
+				:null_edge (x24 / do-02
+					:ARG0 x11
+					:ARG1 (x27 / job
+						:mod (x26 / good))))))
+	:ARG0 (x29 / person
+		:name (n / name
+			:op1 "Clinton"))
+	:ARG1 (x31 / temporal-quantity
+		:unit (d / day)
+		:time (x32 / before
+			:op1 (x34 / primary))))
+
+# ::id 12
+# ::snt Sheffield Nelson , who upset Rep. Tommy Robinson for the Republican gubernatorial nomination , already is jumping on the theme , saying Arkansas is ready for a change
+(x17 / jump-06
+	:ARG0 (x2 / person
+		:name (n / name
+			:op1 "Nelson")
+		:null_edge (x1 / person
+			:name (n1 / name
+				:op1 "Sheffield"))
+		:ARG0-of (x5 / upset-01
+			:ARG1 (x7 / name
+				:op1 "Tommy"
+				:op2 "Robinson"
+				:ARG0-of (x6 / rep.))
+			:ARG2 (x13 / nominate-01
+				:mod "Republican"
+				:mod (x12 / gubernatorial))))
+	:time (x15 / already)
+	:ARG2 (x20 / theme)
+	:ARG0-of (x22 / say-01
+		:ARG1 (x25 / ready-01
+			:ARG1 (x23 / country
+				:name (n2 / name
+					:op1 "Arkansas"))
+			:ARG2 (x28 / change-01))))
+
+# ::id 13
+# ::snt Clinton , who has focused on improving the state's education system , counters by calling himself the candidate of change
+(x5 / focus-01
+	:ARG0 (x1 / person
+		:name (n / name
+			:op1 "Clinton"))
+	:ARG2 (x7 / improve-01
+		:ARG0 x1
+		:ARG1 (x12 / system
+			:poss (x9 / state)
+			:mod (x11 / education)))
+	:ARG1 (x14 / counter-01
+		:ARG2 (x16 / call-03
+			:ARG1 (x19 / candidate
+				:ARG1-of (x21 / change-01)))))
+
+# ::id 14
+# ::snt Frankly , if you look at what I proposed , compared with the others , it represents more change , he said
+(x22 / say-01
+	:ARG1 (x17 / represent-01
+		:condition (x5 / look-01
+			:time (x1 / frankly)
+			:ARG0 (x4 / you)
+			:ARG1 (x9 / propose-01
+				:ARG0 (x8 / i))
+			:ARG1 (x14 / other))
+		:ARG1 (x19 / change-01
+			:degree (x18 / more)))
+	:ARG0 (x21 / he))
+
+# ::id 15
+# ::snt Ten years is an asset , not a liability
+(x5 / asset
+	:duration (xap0 / multiple
+		:op1 (x2 / temporal-quantity
+			:unit (y / year))))
+
+# ::id 16
+# ::snt Clinton lost his first re-election bid in 1980 to Republican Frank White , but won again in 1982 , 1984 and 1986 , when the gubernatorial term was changed to four years
+(x14 / contrast-01
+	:ARG1 (x2 / lose-02
+		:ARG0 (x1 / person
+			:name (n / name
+				:op1 "Clinton"))
+		:ARG1 (x6 / bid-01)
+		:time (x8 / date-entity
+			:year 1980)
+		:null_edge (x9 / null_tag
+			:null_edge (x12 / null_tag
+				:null_edge "Republican"
+				:mod (x11 / person
+					:name (n1 / name
+						:op1 "Frank")))))
+	:ARG2 (x15 / win-01
+		:mod (x16 / again)
+		:time (x18 / date-entity
+			:year 1982
+			:year 1984
+			:year 1986
+			:ARG1-of (x29 / change-01
+				:ARG2 (x26 / gubernatorial)
+				:ARG2 (x32 / temporal-quantity
+					:unit (y / year)
+					:quant 4)))))
+
+# ::id 17
+# ::snt He has all but promised not to run for the White House in 1992 if re-elected this year
+(x4 / contrast-01
+	:ARG1 (x3 / all)
+	:ARG1 (x5 / promise-01
+		:ARG0 (x1 / he)
+		:ARG2 (x8 / run-01
+			:ARG0 x1
+			:time (x14 / date-entity
+				:year 1992)
+			:purpose (x16 / re-elect
+				:time (x18 / year
+					:mod (x17 / this))))
+		:ARG3 (x12 / government-organization
+			:name (n / name
+				:op1 "House")
+			:null_edge (x11 / null_tag))))
+
+# ::id 18
+# ::snt His showing in this year's primary , largely in line with pre-election polls , was the first time since his political comeback in 1982 that Clinton got less than 60 percent of the primary vote
+(x20 / since
+	:op1 (x2 / show-01
+		:mod (x7 / primary
+			:time (x5 / year
+				:mod (x4 / this))))
+	:degree (x9 / largely
+		:path (x11 / line))
+	:op1 (x14 / poll-01
+		:mod (x13 / pre-election))
+	:op1 (x23 / comeback
+		:mod (x22 / politics)
+		:time (x25 / date-entity
+			:year 1982))
+	:op1 (x36 / vote-01
+		:name (x27 / name
+			:op1 "Clinton"
+			:op2 "got"
+			:op3 "less"
+			:op4 "than"
+			:op5 "60"
+			:op6 "percent"
+			:value 60)
+		:mod (x35 / primary)))
+
+# ::id 19
+# ::snt I am sure the governor would like to have made a better showing , but when you are in office 10 years you have a lot of friends and a lot of enemies , said Bill Paschall , a Little Rock political consultant
+(x15 / contrast-01
+	:null_edge (x1 / i)
+	:ARG2 (x22 / temporal-quantity
+		:unit (y / year)
+		:location (x20 / office)
+		:quant 10)
+	:ARG2 (x24 / have-03
+		:ARG0 x1
+		:ARG0 (x23 / you)
+		:ARG1 (x29 / and
+			:op1 (x26 / lot
+				:ARG1-of (x35 / say-01
+					:ARG1 (x31 / lot)
+					:name (x36 / name
+						:op1 "Bill"
+						:op2 "Paschall"
+						:ARG0-of (x43 / person
+							:ARG0-of (c / consult-01)
+							:location (x40 / country
+								:name (n / name
+									:op1 "Little"))
+							:mod (x41 / country
+								:name (n1 / name
+									:op1 "Rock"))
+							:mod (x42 / politics)))))
+			:op1 (x28 / friend)))
+	:ARG1 (xap0 / and
+		:snt2 (x7 / like-02
+			:ARG0 (x5 / have-org-role-91
+				:ARG2 (g / governor))
+			:ARG1 (x10 / make-01
+				:ARG1 (x13 / show-01
+					:mod (x12 / good))))))
+
+# ::id 20
+# ::snt I do not think it is a death blow that he made 55 (percent ), but it shows him he has to work harder
+(x18 / contrast-01
+	:ARG1 (x4 / think-01
+		:ARG0 (x1 / i))
+	:ARG2 (x12 / make-02
+		:ARG1 (x9 / blow
+			:mod (x8 / die-01))
+		:ARG2 (x15 / percentage-entity))
+	:ARG2 (x20 / show-01
+		:ARG1 (x23 / have-03
+			:ARG2 (x25 / work-01
+				:manner (x26 / hard)))))
+
+# ::id 21
+# ::snt While the biggest complaint against Clinton appears to be that he has been in office too long , the governor also has been accused of being more interested in his national ambitions than state concerns
+(x24 / accuse-01
+	:time (x7 / appear-02
+		:ARG1 (x4 / complain-01
+			:mod (x3 / big
+				:degree (m / most))
+			:prep-against (x6 / person
+				:name (n / name
+					:op1 "Clinton")))
+		:ARG1 (x15 / office
+			:mod (x16 / too)))
+	:ARG1 (x20 / have-org-role-91
+		:ARG2 (g / governor))
+	:mod (x21 / also)
+	:ARG2 (x28 / interest-01
+		:ARG0 x20
+		:degree (x27 / more)
+		:ARG2 (x32 / ambition
+			:mod (x31 / nation))
+		:ARG2 (x35 / concern-01
+			:ARG0 (x34 / state))))
+
+# ::id 22
+# ::snt Clinton's recent troubles with the legislature also have been a sticking point
+(x13 / point
+	:domain (x4 / trouble
+		:ARG0 (x1 / person
+			:name (n / name
+				:op1 "Clinton"))
+		:time (x3 / recent))
+	:mod (x8 / also)
+	:mod (x12 / sticking)
+	:ARG0 (xap0 / government-organization
+		:ARG0-of (x7 / legislate-01)))
+
+# ::id 23
+# ::snt Twice in 1989 he failed to win legislative approval for proposals to increase taxes
+(x5 / fail-01
+	:time (x3 / date-entity
+		:year 1989)
+	:ARG2 (x7 / win-01
+		:ARG1 (x9 / approve-01
+			:manner (x8 / legislate-01)
+			:ARG1 (x11 / thing
+				:ARG1-of (p / propose-01)
+				:purpose (x13 / increase-01
+					:ARG1 (x14 / tax-01))))))
+
+# ::id 24
+# ::snt Nelson , who hopes to paint Clinton as a tax-and-spend Democrat , said the primary election results show the governor is on the ropes
+(x13 / say-01
+	:ARG0 (x1 / person
+		:name (n / name
+			:op1 "Nelson")
+		:ARG0-of (x4 / hope-01
+			:ARG1 (x6 / paint-03
+				:ARG1 (x7 / person
+					:name (n1 / name
+						:op1 "Clinton"))
+				:ARG2 (x11 / have-org-role-91
+					:ARG1 (p / political-party
+						:name (n2 / name
+							:op1 "Democrat"))
+					:null_edge (x10 / tax-and-spend)))))
+	:ARG1 (x18 / show-01
+		:ARG0 (x17 / thing
+			:ARG2-of (r / result-01)
+			:mod (x15 / primary)
+			:ARG1 (x16 / elect-01))
+		:ARG1 (x20 / have-org-role-91
+			:ARG2 (g / governor)
+			:ARG1 (x24 / rope))))
+
+# ::id 25
+# ::snt I would say against an unknown who never held an office , I think that was low
+(x3 / say-01
+	:ARG0 (x1 / i)
+	:ARG1 (x6 / know-01
+		:polarity -
+		:ARG1-of (x9 / hold-04
+			:ARG1 (x11 / office)))
+	:ARG1 (x14 / think-01
+		:ARG0 (x13 / i)
+		:ARG1 (x17 / low
+			:domain (x15 / that))))
+
+# ::id 26
+# ::snt It probably did make some bells go off in his head , Nelson said
+(x14 / say-01
+	:ARG1 (x2 / probable
+		:domain (x4 / make-01
+			:ARG1 (x7 / go-02
+				:ARG0 (x6 / bell
+					:quant (x5 / some))
+				:location (x11 / head))))
+	:ARG0 (x13 / person
+		:name (n / name
+			:op1 "Nelson")))
+
+# ::id 27
+# ::snt Clinton said he would have done better if a large number of traditional Democrats had not crossed over to the GOP primary to vote against Robinson
+(x2 / say-01
+	:ARG0 (x1 / person
+		:name (n / name
+			:op1 "Clinton"))
+	:ARG1 (x6 / do-02
+		:ARG0 (x3 / he)
+		:mod (x7 / good)
+		:time (x17 / cross-02
+			:ARG0 (x14 / have-org-role-91
+				:ARG1 (p / political-party
+					:name (n1 / name
+						:op1 "Democrats"))
+				:quant (x11 / number
+					:mod (x10 / large))
+				:mod (x13 / tradition))
+			:mod (x22 / primary
+				:ARG2 (x21 / political-party
+					:name (n2 / name
+						:op1 "GOP"))
+				:domain (x24 / vote-01
+					:ARG0 x21
+					:ARG1 (x26 / person
+						:name (n3 / name
+							:op1 "Robinson")))))))
+
+# ::id 28
+# ::snt We did poorly in areas where I did not campaign ; where my supporters , in spite of my best interest , believed the polls and did not work ; and where we did a poor job of telling the people what I had done that affected their lives ; and where people knew there was an alternative but did not know much about what the alternative was , Clinton said
+(x71 / say-01
+	:ARG1 (x51 / and
+		:op1 (x1 / we)
+		:manner (x3 / poor)
+		:null_edge (x7 / i)
+		:op1 (x10 / campaign-01)
+		:op2 (x31 / and
+			:op2 (x23 / believe-01
+				:ARG0 x7
+				:ARG0 (x14 / person
+					:ARG0-of (s / support-01)
+					:ARG1 (x17 / spite
+						:ARG1 (x21 / interest-01
+							:mod (x20 / good
+								:degree (m / most)))))))
+		:op2 (x34 / do-02
+			:ARG0 (x33 / we)
+			:ARG1 (x37 / job
+				:mod (x36 / poor))))
+	:ARG0 (x70 / person
+		:name (n / name
+			:op1 "Clinton")))
+
+# ::id 29
+# ::snt Betsey Wright , Clinton's former chief of staff , said the governor's supporters were complacent
+(x11 / say-01
+	:ARG0 (x1 / newspaper
+		:name (n / name
+			:op1 "Betsey"
+			:op2 "Wright")
+		:ARG0-of (x7 / have-org-role-91
+			:ARG2 (c / chief)
+			:ARG0 (x4 / person
+				:name (n1 / name
+					:op1 "Clinton"))
+			:mod (x6 / former)
+			:topic (x9 / person
+				:ARG2-of (s1 / staff-01))))
+	:ARG1 (x17 / complacent
+		:ARG0 (x15 / person
+			:ARG0-of (s / support-01)
+			:ARG0-of (x13 / have-org-role-91
+				:ARG2 (g / governor)))))
+
+# ::id 30
+# ::snt Bill Clinton is always perceived as being so strong that people find it difficult to believe in calls for such cohesion and tight energies , she said of the primary
+(x5 / perceive-01
+	:ARG1 (x1 / name
+		:op1 "Bill"
+		:op2 "Clinton")
+	:time (x4 / always)
+	:ARG1 (x12 / find-01
+		:null_edge (x8 / so)
+		:ARG1 (x14 / difficult
+			:domain (x16 / believe-01
+				:ARG1 (x18 / call-02
+					:ARG2 (x22 / and
+						:op1 (x21 / cohesion
+							:mod (x20 / such))
+						:op1 (x27 / say-01
+							:ARG1 (x24 / energy
+								:mod (x23 / tight))
+							:mod (x30 / primary))))))))
+

@@ -1,0 +1,1367 @@
+# ::id 1
+# ::snt DENVER -- Neil Bush calls it the Smith Smell Test
+(x1 / country
+	:name (n / name
+		:op1 "DENVER")
+	:null_edge (x5 / call-01
+		:ARG0 (x3 / newspaper
+			:name (n1 / name
+				:op1 "Neil"
+				:op2 "Bush"))
+		:ARG2 (x10 / test
+			:mod (x9 / smell))))
+
+# ::id 2
+# ::snt People call up and say , Hey Neil , I have got this great deal , says the president's embattled but still amiable son
+(x17 / say-01
+	:ARG1 (x4 / and
+		:op1 (x2 / call-01
+			:ARG0 (x1 / people))
+		:op2 (x5 / say-01
+			:ARG0 x1
+			:ARG1 (x15 / deal-01
+				:null_edge (x7 / newspaper
+					:name (n / name
+						:op1 "Hey"
+						:op2 "Neil"))
+				:mod (x13 / this)
+				:mod (x14 / great))))
+	:ARG0 (x25 / son
+		:ARG1-of (x22 / contrast-01
+			:ARG1 (x21 / embattled)
+			:ARG2 (x24 / amiable
+				:mod (x23 / still)))))
+
+# ::id 3
+# ::snt The smell test is : If my name were Neil Smith , would they be asking me to engage in this venture with them ?
+(x3 / test-01
+	:ARG1 (x2 / smell)
+	:null_edge (x16 / ask-02
+		:ARG2 (x10 / name
+			:op1 "Neil"
+			:op2 "Smith")
+		:ARG0 (x14 / they)
+		:ARG1 (x19 / engage-01
+			:ARG0 x10
+			:instrument (x22 / venture
+				:mod (x21 / this)))))
+
+# ::id 4
+# ::snt Mr. Bush says he is never violated his smell test by trading on being George Bush's son
+(x3 / say-01
+	:ARG0 (x2 / person
+		:name (n / name
+			:op1 "Bush")
+		:null_edge (x1 / null_tag))
+	:ARG1 (x7 / violate-01
+		:ARG1 (x10 / test-01
+			:ARG1 (x9 / smell))
+		:topic (x12 / trade-01
+			:ARG1 (x18 / son
+				:name (x15 / name
+					:op1 "George"
+					:op2 "Bush")))))
+
+# ::id 5
+# ::snt But with the spotlight on his role in the collapse of Silverado Banking , Savings & Loan Association , which is expected to cost taxpayers $ 1 billion , comparisons inevitably are made with Billy Carter , Donald Nixon and other presidential relatives whose finances brought embarrassment to the White House
+(x1 / contrast-01
+	:ARG2 (x4 / spotlight
+		:ARG1 (x7 / role
+			:op1 (x10 / collapse-01
+				:ARG1 (x18 / organization
+					:name (n1 / name
+						:op1 "Association")
+					:null_edge (x12 / organization
+						:name (n3 / name
+							:op1 "Silverado"))
+					:null_edge (x13 / political-party
+						:name (n4 / name
+							:op1 "Banking"
+							:op2 ","
+							:op3 "Savings"
+							:op4 "&"
+							:op5 "Loan")))
+				:ARG1-of (x22 / expect-01
+					:ARG1 (x24 / cost-01))
+				:time (x31 / inevitably))))
+	:ARG2 (x40 / and
+		:op1 (x36 / person
+			:name (n / name
+				:op1 "Carter")
+			:null_edge (x35 / null_tag))
+		:op2 (x38 / name
+			:op1 "Donald"
+			:op2 "Nixon")
+		:op1 (xap0 / obligate-01
+			:snt2 (x30 / compare-01))
+		:op2 (xap1 / person
+			:ARG0-of (x42 / have-org-role-91
+				:ARG2 (p / president))
+			:op2 (x43 / relative
+				:mod (x41 / other))
+			:op2 (x46 / bring-01
+				:ARG0 (x45 / finance)
+				:ARG1 (x47 / embarrass-01)
+				:ARG2 (x51 / government-organization
+					:name (n2 / name
+						:op1 "House")
+					:mod (x50 / white))))))
+
+# ::id 6
+# ::snt As a former Silverado director , Mr. Bush has come under fire for overseeing loans that involved two investors in his oil company
+(x12 / fire-01
+	:domain (x8 / person
+		:name (n / name
+			:op1 "Bush")
+		:ARG0-of (x5 / have-org-role-91
+			:ARG2 (d / director)
+			:mod (x3 / former)
+			:ARG1 (x4 / organization
+				:name (n1 / name
+					:op1 "Silverado")))
+		:null_edge (x7 / null_tag))
+	:ARG2 (x14 / oversee-01
+		:ARG0 x8
+		:ARG1 (x15 / loan-01
+			:ARG1-of (x17 / involve-01
+				:ARG1 (x19 / person
+					:ARG0-of (i / invest-01)
+					:quant 2)
+				:ARG2 (x23 / company
+					:mod (x22 / oil))))))
+
+# ::id 7
+# ::snt But what has caught public attention is a $ 100,000 loan that Mr. Bush received before joining the Silverado board from Kenneth Good , a Denver real-estate developer and investor in JNB Exploration , Mr. Bush's oil company
+(x1 / contrast-01
+	:ARG2 (x11 / loan-01
+		:ARG1-of (x4 / catch-02
+			:ARG1 (x6 / attention
+				:mod (x5 / public))))
+	:ARG2 (x15 / receive-01
+		:ARG0 (x14 / person
+			:name (n / name
+				:op1 "Bush")
+			:null_edge (x13 / null_tag))
+		:time (x16 / before
+			:op1 (x17 / join-01
+				:ARG1 (x20 / board)
+				:name (x22 / name
+					:op1 "Kenneth"
+					:op2 "Good")
+				:ARG1 (x29 / and
+					:op2 (x28 / person
+						:ARG0-of (d / develop-02)
+						:location (x26 / city
+							:name (n1 / name
+								:op1 "Denver"))
+						:mod (x27 / real-estate)
+						:null_edge (x39 / company
+							:mod (x30 / person
+								:ARG0-of (i / invest-01))
+							:mod (x33 / exploration
+								:mod (x32 / jnb))
+							:mod (x36 / person
+								:name (n2 / name
+									:op1 "Bush")
+								:null_edge (x35 / null_tag))
+							:mod (x38 / oil))))))))
+
+# ::id 8
+# ::snt Mr. Good arranged to invest the money in the commodities market on Mr. Bush's behalf , with the understanding that any profits would be Mr. Bush's , while any losses would be absorbed by Mr. Good
+(x3 / arrange-00
+	:ARG0 (x2 / person
+		:name (n / name
+			:op1 "Good")
+		:null_edge (x1 / null_tag))
+	:ARG1 (x5 / invest-01
+		:ARG1 (x7 / money)
+		:ARG2 (x11 / market
+			:mod (x10 / commodity))
+		:ARG2 (x16 / behalf
+			:ARG0 (x14 / person
+				:name (n1 / name
+					:op1 "Bush")
+				:null_edge (x13 / null_tag)))
+		:manner (x20 / understand-01
+			:ARG1 (x23 / profit-01
+				:mod (x22 / any)
+				:null_edge (x26 / null_tag))
+			:time (x35 / absorb-01
+				:ARG1 (x32 / loss
+					:mod (x31 / any))
+				:ARG0 (x38 / person
+					:name (n2 / name
+						:op1 "Good")
+					:null_edge (x37 / null_tag))))))
+
+# ::id 9
+# ::snt Mr. Bush , who not only looks but also acts like the Jimmy Stewart of Mr. Smith Goes to Washington , made headlines by conceding in congressional testimony that the Good loan sounded a little fishy
+(x28 / testify-01
+	:ARG0 (x2 / person
+		:name (n / name
+			:op1 "Bush")
+		:null_edge (x1 / null_tag)
+		:ARG0-of (x7 / look-02
+			:ARG0 (x13 / person
+				:name (n2 / name
+					:op1 "Jimmy"
+					:op2 "Stewart"
+					:op3 "of"
+					:op4 "Mr."
+					:op5 "Smith")
+				:ARG0-of (x10 / act-02
+					:mod (x6 / only)
+					:mod (x9 / also)
+					:time (x18 / go-02
+						:ARG4 (x20 / city
+							:name (n3 / name
+								:op1 "Washington")))))))
+	:ARG1 (x23 / headline)
+	:ARG0 (x27 / government-organization
+		:name (n1 / name
+			:op1 "congressional"))
+	:ARG1-of (x33 / sound-01
+		:ARG1 (x32 / loan-01
+			:mod (x31 / person
+				:mod (g / good)))
+		:null_edge (x36 / fishy
+			:degree (x35 / little))))
+
+# ::id 10
+# ::snt Mr. Bush's friends say he lacks a sophisticated understanding of the darker forces in life
+(x5 / say-01
+	:ARG0 (x4 / friend
+		:poss (x2 / person
+			:name (n / name
+				:op1 "Bush")
+			:null_edge (x1 / null_tag)))
+	:ARG1 (x7 / lack-01
+		:ARG0 (x6 / he)
+		:ARG1 (x10 / understand-01
+			:mod (x9 / sophisticated)
+			:ARG1 (x14 / force
+				:mod (x13 / darker))
+			:ARG1 (x16 / life))))
+
+# ::id 11
+# ::snt I think there is a refreshing naivete about Neil , says Mr. Bush's adviser , former Democratic Rep. Thomas Ashley , who is known George Bush since his Skull and Bones days at Yale
+(x11 / say-01
+	:ARG1 (x2 / think-01
+		:ARG0 (x1 / i)
+		:ARG1 (x7 / naivete
+			:mod (x6 / refreshing)
+			:ARG0 (x9 / person
+				:name (n / name
+					:op1 "Neil"))))
+	:ARG0 (x15 / advise-01
+		:ARG1-of (x25 / know-01
+			:time (x28 / since
+				:op1 (x31 / and
+					:op1 (x30 / skull
+						:ARG0 (x26 / name
+							:op1 "George"
+							:op2 "Bush"))
+					:op2 (x33 / temporal-quantity
+						:unit (d / day))
+					:op1 (x35 / organization
+						:name (n1 / name
+							:op1 "Yale")))))))
+
+# ::id 12
+# ::snt He is not jaded
+(x4 / jade
+	:ARG1 (x1 / he))
+
+# ::id 13
+# ::snt Since Neil Bush's youth , when he was afflicted with dyslexia -- his brother Marvin recalls that homework would take him a little bit longer than the other Bush children -- he has been known for his good-natured willingness to pitch into any task
+(x36 / know-01
+	:time (x1 / since
+		:op1 (x5 / youth
+			:name (x2 / name
+				:op1 "Neil"
+				:op2 "Bush")
+			:ARG1-of (x10 / afflict
+				:ARG2 (x12 / dyslexia))))
+	:null_edge (x17 / recall-02
+		:ARG0 (x16 / person
+			:name (n / name
+				:op1 "Marvin")
+			:ARG0-of (x15 / brother))
+		:ARG1 (x19 / homework
+			:mod (x26 / longer
+				:degree (x25 / bit
+					:mod (x24 / little))
+				:compared-to (x31 / child
+					:mod (x29 / other)
+					:mod (x30 / person
+						:name (n1 / name
+							:op1 "Bush"))))))
+	:ARG2 (x40 / will-02
+		:ARG1-of (x39 / good-natured)
+		:ARG1 (x42 / pitch
+			:ARG1 (x45 / task-01))))
+
+# ::id 14
+# ::snt While his siblings would scatter when their parents ordered that yard work be done , recalls Marvin Bush , Neil would step up and say , Yeah , great
+(x16 / recall-02
+	:name (x17 / name
+		:op1 "Marvin"
+		:op2 "Bush")
+	:ARG1 (x24 / and
+		:op1 (x22 / step-03
+			:ARG2 (x5 / scatter-01
+				:ARG0 (x3 / sibling)
+				:ARG0 (x9 / order-01
+					:ARG0 (x8 / parent)
+					:ARG2 (x14 / do-02
+						:ARG1 (x12 / work-01
+							:mod (x11 / yard))))
+				:ARG0 (x20 / person
+					:name (n / name
+						:op1 "Neil")))
+			:ARG0 x20
+			:direction (x23 / up))
+		:op2 (x25 / say-01
+			:ARG0 x16
+			:ARG0 x20
+			:ARG1 (x29 / great))))
+
+# ::id 15
+# ::snt Friends and business associates agree that Neil Bush's family name lent him a certain aura within the Denver business community when he settled there after working on his father's 1980 presidential bid
+(x5 / agree-01
+	:ARG0 (x2 / and
+		:op1 (x1 / friend)
+		:op2 (x4 / associate
+			:mod (x3 / business)))
+	:ARG1 (x12 / lend-01
+		:null_edge (x7 / name
+			:op1 "Neil"
+			:op2 "Bush"
+			:ARG0-of (x10 / family))
+		:ARG1 (x21 / community
+			:mod (x16 / aura
+				:mod (x15 / certain))
+			:location (x19 / city
+				:name (n / name
+					:op1 "Denver"))
+			:mod (x20 / business)
+			:ARG0-of (x24 / settle-03
+				:location (x25 / there)
+				:time (x26 / after
+					:op1 (x27 / work-01
+						:ARG1 (x34 / bid-01
+							:ARG0 (x30 / father)
+							:time (x32 / date-entity
+								:year 1980)
+							:ARG0 (xap0 / person
+								:ARG0-of (x33 / have-org-role-91
+									:ARG2 (p / president))))))))))
+
+# ::id 16
+# ::snt 
+(x3 / put-01
+	:ARG0 (x2 / person
+		:name (n / name
+			:op1 "Bush")
+		:null_edge (x1 / null_tag))
+	:ARG2 (x9 / organization
+		:name (n1 / name
+			:op1 "Corp.")
+		:null_edge (x8 / organization
+			:name (n2 / name
+				:op1 "Amoco")))
+	:null_edge (x11 / learn-01
+		:ARG1 (x14 / business
+			:mod (x13 / oil)))
+	:null_edge (x17 / leave-01
+		:ARG1 (x21 / job
+			:null_edge (x20 / country
+				:name (n3 / name
+					:op1 "30,000-a-year")))
+		:purpose (x23 / start-01
+			:ARG1 (x26 / company
+				:mod (x25 / oil-exploration)
+				:ARG1-of (x27 / include-91))))
+	:time (xap0 / after
+		:duration (x6 / temporal-quantity
+			:unit (y / year)
+			:quant 2)))
+
+# ::id 17
+# ::snt Investors were drawn to Mr. Bush partly , I suppose , because he was the son of the vice president , concedes Evans Nash , Neil Bush's former partner
+(x3 / draw-00
+	:ARG1 (x1 / person
+		:ARG0-of (i / invest-01))
+	:ARG0 (x6 / person
+		:name (n / name
+			:op1 "Bush")
+		:null_edge (x5 / null_tag))
+	:null_edge (x10 / suppose-01
+		:mod (x7 / part)
+		:ARG0 (x9 / i))
+	:ARG1-of (x12 / cause-01
+		:ARG0 (x16 / son
+			:ARG0-of (x22 / concede-01
+				:mod (x19 / vice)
+				:name (x23 / name
+					:op1 "Evans"
+					:op2 "Nash"
+					:ARG0-of (x30 / partner-01
+						:name (x26 / name
+							:op1 "Neil"
+							:op2 "Bush")
+						:mod (x29 / former)))))))
+
+# ::id 18
+# ::snt I am sure that helped him meet people
+(x5 / help-01
+	:ARG0 (x1 / i)
+	:ARG1 (x7 / meet-01))
+
+# ::id 19
+# ::snt Even Mr. Bush's lawyer concedes that being George Bush's son raised Neil's profile in Denver
+(x6 / concede-01
+	:ARG0 (x5 / lawyer
+		:mod (x1 / even)
+		:poss (x3 / person
+			:name (n / name
+				:op1 "Bush")
+			:null_edge (x2 / null_tag)))
+	:ARG1 (x13 / raise-01
+		:ARG0 (x12 / son
+			:name (x9 / name
+				:op1 "George"
+				:op2 "Bush"))
+		:ARG1 (x16 / profile-01
+			:poss (x14 / person
+				:name (n1 / name
+					:op1 "Neil"))
+			:location (x18 / city
+				:name (n2 / name
+					:op1 "Denver")))))
+
+# ::id 20
+# ::snt We do not have a lot of celebrities , explains attorney James Nesland
+(x10 / explain-01
+	:ARG0 (x8 / celebrity
+		:ARG1 (x1 / we)
+		:quant (x6 / lot))
+	:ARG0 (x12 / newspaper
+		:name (n / name
+			:op1 "James"
+			:op2 "Nesland")
+		:ARG0-of (x11 / attorney)))
+
+# ::id 21
+# ::snt We had Marvin Davis for a while
+(x2 / have-03
+	:ARG0 (x1 / we)
+	:ARG1 (x3 / name
+		:op1 "Marvin"
+		:op2 "Davis")
+	:duration (x7 / while))
+
+# ::id 22
+# ::snt Now he is gone , he says , registering that oil man's departure for Hollywood with a shrug
+(xap0 / and
+	:snt1 (x4 / go-01
+		:time (x1 / now)
+		:ARG1 (x2 / he)
+		:ARG1 (x9 / register-02
+			:ARG1 (x14 / depart-01
+				:ARG0 (x12 / man
+					:mod (x11 / oil
+						:beneficiary (x16 / country
+							:name (n / name
+								:op1 "Hollywood"))))
+				:time (x19 / shrug))))
+	:snt2 (x7 / say-01))
+
+# ::id 23
+# ::snt Settled in Denver , Neil Bush became a fixture on the local political scene , giving speeches at Lincoln Day dinners and stumping for his father and a variety of local Republican candidates
+(x7 / become-01
+	:ARG2 (x9 / fixture
+		:purpose (x1 / settle-02
+			:location (x3 / city
+				:name (n1 / name
+					:op1 "Denver")))
+		:ARG0 (x5 / newspaper
+			:name (n / name
+				:op1 "Neil"
+				:op2 "Bush"))
+		:ARG1 (x22 / and
+			:op1 (x17 / speech)
+			:op2 (x21 / dinner
+				:null_edge (x19 / country
+					:name (n2 / name
+						:op1 "Lincoln"))
+				:mod (x20 / event
+					:name (n3 / name
+						:op1 "Day")))
+			:op2 (x23 / stump
+				:ARG1 (x27 / and
+					:op1 (x26 / father)
+					:op2 (x29 / variety
+						:consist-of (x33 / candidate
+							:mod (x31 / local)
+							:mod "Republican"))))))
+	:ARG1 (x14 / scene
+		:mod (x12 / local)
+		:mod (x13 / politics)))
+
+# ::id 24
+# ::snt He is an enthusiastic speaker , notes Bruce Benson , chairman of the Colorado Republican Party
+(x7 / note-01
+	:ARG0 (x5 / person
+		:ARG0-of (s / speak-01)
+		:domain (x1 / he)
+		:mod (x4 / enthusiastic))
+	:ARG0 (x8 / newspaper
+		:name (n / name
+			:op1 "Bruce"
+			:op2 "Benson")
+		:ARG0-of (x11 / have-org-role-91
+			:ARG2 (c / chairman)
+			:ARG1 (x14 / government-organization
+				:name (n1 / name
+					:op1 "Colorado"
+					:op2 "Republican"
+					:op3 "Party")
+				:ARG1-of (xap0 / name
+					:op1 (x15 / political-party
+						:name (n2 / name
+							:op1 "Republican")))))))
+
+# ::id 25
+# ::snt He speaks of good Republican values
+(x2 / speak-01
+	:ARG0 (x1 / he)
+	:ARG1 (x6 / value-01
+		:mod (x4 / good)
+		:mod "Republican"))
+
+# ::id 26
+# ::snt Neil Bush can be startlingly blunt in enunciating conservative themes
+(x3 / possible
+	:domain (x6 / blunt
+		:domain (x1 / newspaper
+			:name (n / name
+				:op1 "Neil"
+				:op2 "Bush"))
+		:degree (x5 / startlingly)
+		:ARG2 (x8 / enunciate
+			:ARG1 (x10 / theme
+				:mod (x9 / conservative)))))
+
+# ::id 27
+# ::snt According to one local news account , Mr. Bush told a group of Hispanic voters in 1988 that welfare was worse than slavery
+(xap0 / say-01
+	:ARG2 (x6 / account
+		:quant 1
+		:mod (x4 / local)
+		:mod (x5 / news))
+	:ARG2 (x10 / tell-01
+		:ARG0 (x9 / person
+			:name (n / name
+				:op1 "Bush")
+			:null_edge (x8 / null_tag))
+		:ARG2 (x12 / group
+			:consist-of (x15 / vote-01
+				:mod (x14 / world-region
+					:name (n1 / name
+						:op1 "Hispanic"))))
+		:time (x17 / date-entity
+			:year 1988)
+		:ARG1 (x21 / worsen-01
+			:domain (x19 / welfare)
+			:compared-to (x23 / slavery))))
+
+# ::id 28
+# ::snt Mr. Bush also settled into Denver's social elite
+(x4 / settle-02
+	:ARG0 (x2 / person
+		:name (n / name
+			:op1 "Bush")
+		:null_edge (x1 / null_tag))
+	:mod (x3 / also)
+	:null_edge (x9 / elite
+		:null_edge (x6 / city
+			:name (n1 / name
+				:op1 "Denver"))
+		:mod (x8 / society)))
+
+# ::id 29
+# ::snt With his wife , Sharon , and three children , he lived in suburban seclusion amid rolling greens and humming golf carts inside a walled country-club development
+(x12 / live-01
+	:accompanier (x7 / and
+		:op1 (x3 / wife
+			:poss (x5 / person
+				:name (n / name
+					:op1 "Sharon")))
+		:op2 (x9 / child
+			:quant 3))
+	:ARG0 (x11 / he)
+	:location (x15 / seclusion
+		:mod (x14 / suburb))
+	:accompanier (x19 / and
+		:op2 (x20 / hum
+			:ARG1 (x22 / cart
+				:mod (x21 / golf-01)
+				:location (x23 / inside
+					:op1 (x27 / develop-02
+						:mod (x25 / walled)))))
+		:op2 (xap0 / possible
+			:domain (x17 / roll-01
+				:ARG1 (x18 / green)))))
+
+# ::id 30
+# ::snt The handsome young couple became a fixture at dinner parties and charity events
+(x5 / become-01
+	:ARG1 (x4 / couple
+		:mod (x2 / handsome)
+		:mod (x3 / young))
+	:ARG2 (x7 / fixture)
+	:time (x11 / and
+		:op1 (x10 / party
+			:mod (x9 / dinner))
+		:op1 (x13 / event
+			:ARG1 (x12 / charity))))
+
+# ::id 31
+# ::snt It was at one such party in 1985 that Neil Bush met Michael Wise , chairman of Silverado
+(x12 / meet-03
+	:location (x6 / party
+		:quant 1
+		:mod (x5 / such))
+	:time (x8 / date-entity
+		:year 1985)
+	:ARG0 (x10 / newspaper
+		:name (n / name
+			:op1 "Neil"
+			:op2 "Bush"))
+	:ARG1 (x13 / name
+		:op1 "Michael"
+		:op2 "Wise"
+		:ARG0-of (x16 / have-org-role-91
+			:ARG2 (c / chairman)
+			:ARG1 (x18 / country
+				:name (n1 / name
+					:op1 "Silverado")))))
+
+# ::id 32
+# ::snt 
+(x4 / seek-01
+	:ARG0 (x2 / person
+		:name (n / name
+			:op1 "Wise")
+		:null_edge (x1 / null_tag))
+	:ARG1 (x7 / have-org-role-91
+		:ARG2 (d / director)
+		:mod (x6 / new)
+		:purpose (x11 / board
+			:poss (x9 / person
+				:name (n1 / name
+					:op1 "Silverado")))
+		:ARG1-of (x17 / cause-01
+			:ARG0 (x21 / top-heavy
+				:domain (x19 / board)
+				:ARG1 (xap0 / person
+					:ARG0-of (x24 / have-org-role-91
+						:ARG2 (m / member)
+						:mod (x23 / old))))
+			:ARG0 (x26 / and))
+		:ARG1 (x30 / experience-01
+			:mod (x13 / prefer-01)
+			:mod (x15 / young)
+			:mod (x27 / prefer-01)
+			:ARG1 (x34 / business
+				:mod (x33 / oil)))))
+
+# ::id 33
+# ::snt Mr. Bush accepted
+(x3 / accept-01
+	:ARG0 (x2 / person
+		:name (n / name
+			:op1 "Bush")
+		:null_edge (x1 / null_tag)))
+
+# ::id 34
+# ::snt I considered it a chance to learn , he later told the Denver Post
+(x11 / tell-01
+	:ARG1 (x2 / consider-02
+		:ARG0 (x1 / i)
+		:ARG1 (x5 / chance
+			:ARG1 (x7 / learn-01)))
+	:ARG0 (x9 / he)
+	:time (x10 / late)
+	:ARG2 (x14 / post-01
+		:null_edge (x13 / city
+			:name (n / name
+				:op1 "Denver"))))
+
+# ::id 35
+# ::snt With no experience in banking , Mr. Bush , then 30 years old , nevertheless seemed a logical choice to those close to Mr. Wise
+(x16 / seem-01
+	:time (xap0 / choose-01
+		:ARG0-of (x3 / experience-01
+			:polarity -
+			:prep-in (x5 / bank-01))
+		:poss (x8 / person
+			:name (n / name
+				:op1 "Bush")
+			:null_edge (x7 / null_tag))
+		:quant (x12 / temporal-quantity
+			:unit (y / year)
+			:null_edge (x10 / then
+				:null_edge 30))
+		:manner (x18 / logic)
+		:ARG1-of (x22 / close
+			:ARG2 (x25 / person
+				:name (n1 / name
+					:op1 "Wise")
+				:null_edge (x24 / null_tag)))))
+
+# ::id 36
+# ::snt Mike Wise seemed to like to be a first-class dresser , observes Alexander Walter , a former loan-portfolio manager at Silverado
+(x12 / observe-01
+	:ARG1 (x3 / seem-01
+		:ARG1 (x5 / like-02
+			:ARG1 (x10 / dresser
+				:ARG0 (x1 / newspaper
+					:name (n1 / name
+						:op1 "Mike"
+						:op2 "Wise"))
+				:mod (x9 / first-class))))
+	:ARG1 (x13 / name
+		:op1 "Alexander"
+		:op2 "Walter"
+		:ARG0-of (x19 / manage-01
+			:mod (x17 / former)
+			:location (x21 / country
+				:name (n / name
+					:op1 "Silverado")))))
+
+# ::id 37
+# ::snt His automobile was always impeccably clean
+(x6 / clean-02
+	:domain (x2 / automobile)
+	:time (x4 / always)
+	:manner (x5 / impeccably))
+
+# ::id 38
+# ::snt Neil Bush , Mr. Walter implies , was another such ornament
+(x11 / ornament
+	:domain (x1 / newspaper
+		:name (n / name
+			:op1 "Neil"
+			:op2 "Bush"))
+	:null_edge (x6 / imply-01
+		:ARG0 (x5 / person
+			:name (n1 / name
+				:op1 "Walter")
+			:null_edge (x4 / null_tag)))
+	:mod (x9 / another)
+	:mod (x10 / such))
+
+# ::id 39
+# ::snt Mr. Wise declined to return calls , and through an intermediary referred all inquiries to his lawyer , Bettina Lawton
+(x8 / and
+	:op1 (x3 / decline-02
+		:ARG0 (x2 / person
+			:name (n / name
+				:op1 "Wise")
+			:null_edge (x1 / null_tag))
+		:ARG1 (x5 / return-01
+			:ARG0 x2
+			:ARG1 (x6 / call)))
+	:op2 (x12 / refer-01
+		:ARG0 x2
+		:manner (x11 / intermediary)
+		:ARG1 (x14 / inquire-01
+			:quant (x13 / all))
+		:ARG1 (x17 / lawyer
+			:name (x19 / name
+				:op1 "Bettina"
+				:op2 "Lawton"))))
+
+# ::id 40
+# ::snt Ms. Lawton says Mr. Bush's last name was certainly not a primary consideration when Mr. Wise chose him for the board
+(xap0 / multi-sentence
+	:snt1 (x3 / say-01
+		:ARG0 (x2 / person
+			:name (n / name
+				:op1 "Lawton")
+			:null_edge (x1 / ms.)))
+	:snt2 (x14 / consider-02
+		:name (x8 / name
+			:mod (x7 / last))
+		:mod (x10 / certain)
+		:mod (x13 / primary)
+		:condition (x18 / choose-01
+			:ARG0 (x17 / person
+				:name (n1 / name
+					:op1 "Wise")
+				:null_edge (x16 / null_tag))
+			:purpose (x22 / board))))
+
+# ::id 41
+# ::snt Despite Mr. Bush's youth and inexperience in banking matters , former Silverado officials say Mr. Bush was no less able a board member than the others
+(x15 / say-01
+	:ARG1 (x6 / and
+		:op1 (x5 / youth
+			:location (x10 / matter
+				:topic (x9 / banking)))
+		:op2 (x7 / inexperience))
+	:ARG1 (x21 / possible
+		:domain (x17 / person
+			:name (n / name
+				:op1 "Bush")
+			:null_edge (x16 / null_tag))
+		:polarity -
+		:degree (x20 / less)
+		:domain (x27 / other
+			:location (x23 / board)))
+	:ARG0 (xap0 / person
+		:ARG0-of (x14 / have-org-role-91
+			:ARG2 (o / official)
+			:mod (x12 / former)
+			:ARG1 (x13 / organization
+				:name (n1 / name
+					:op1 "Silverado")))))
+
+# ::id 42
+# ::snt According to Mr. Walter , most had no hands-on experience with the complex Silverado's business
+(x7 / have-03
+	:null_edge (x4 / publication
+		:name (n / name
+			:op1 "Walter")
+		:null_edge (x3 / null_tag))
+	:ARG0 (x6 / most)
+	:ARG1 (x10 / experience-01
+		:polarity -
+		:mod (x9 / hands-on)
+		:ARG1 (x16 / business
+			:mod (x13 / complex
+				:poss (x14 / person
+					:name (n1 / name
+						:op1 "Silverado"))))))
+
+# ::id 43
+# ::snt Former Silverado board member Diane Ingels says Mr. Bush was a very diligent director who met with other directors and with management to enhance his understanding
+(x7 / say-01
+	:ARG0 (x5 / newspaper
+		:name (n / name
+			:op1 "Diane"
+			:op2 "Ingels")
+		:mod (x1 / former)
+		:ARG0-of (x4 / have-org-role-91
+			:ARG2 (m / member)
+			:ARG1 (x3 / board)))
+	:ARG1 (x16 / meet-03
+		:ARG0-of (x14 / have-org-role-91
+			:ARG2 (d / director)
+			:ARG0 (x9 / person
+				:name (n1 / name
+					:op1 "Bush")
+				:null_edge (x8 / null_tag))
+			:mod (x13 / diligent
+				:degree (x12 / very)))
+		:ARG1 (x19 / director
+			:mod (x18 / other)
+			:ARG0-of (x22 / manage-01))
+		:purpose (x24 / enhance-01
+			:ARG0 x14
+			:ARG1 (x26 / understand-01))))
+
+# ::id 44
+# ::snt Still , Mr. Bush remains defensive about his qualifications to sit on Silverado's board
+(x5 / remain-01
+	:ARG3 (x6 / defend-01
+		:ARG0 (x4 / person
+			:name (n / name
+				:op1 "Bush")
+			:null_edge (x3 / null_tag)))
+	:ARG3 (x9 / qualify-01
+		:ARG1-of (x11 / sit-02
+			:ARG2 (x15 / board
+				:poss (x13 / person
+					:name (n1 / name
+						:op1 "Silverado"))))))
+
+# ::id 45
+# ::snt Sitting in his office overlooking downtown Denver , a small bust of his father behind him , he lurches unprompted from discussing his work on a political campaign into a defense of his work on Silverado's board
+(x19 / lurch
+	:ARG1 (x1 / sit-01
+		:ARG2 (x4 / office
+			:ARG0-of (x5 / overlook-01
+				:ARG1 (x7 / city
+					:name (n / name
+						:op1 "Denver")
+					:location (x6 / downtown)))
+			:part-of (x11 / bust-02
+				:mod (x10 / small)
+				:ARG2 (x14 / father)))
+		:ARG2 (x15 / behind))
+	:ARG0 (x18 / he)
+	:ARG1 (x20 / unprompted
+		:ARG2 (x22 / discuss-01
+			:ARG1 (x24 / work-01)
+			:ARG1 (x28 / campaign-01
+				:mod (x27 / politics))
+			:ARG2 (x31 / defend-01
+				:mod (x34 / work-01)
+				:location (x38 / board
+					:poss (x36 / person
+						:name (n1 / name
+							:op1 "Silverado")))))))
+
+# ::id 46
+# ::snt I was just as well prepared to be on that board as anyone , he protests
+(x6 / prepare-02
+	:ARG1 (x1 / i)
+	:mod (x5 / well
+		:mod (x3 / just))
+	:ARG1 (x16 / protest-01
+		:location (x11 / board)
+		:ARG0 (x13 / anyone)))
+
+# ::id 47
+# ::snt Mr. Bush is also emphatic in denying that Mr. Good's risk-free loan violated the Smith Smell Test
+(x5 / emphatic
+	:domain (x2 / person
+		:name (n / name
+			:op1 "Bush")
+		:null_edge (x1 / null_tag))
+	:mod (x4 / also)
+	:ARG2 (x7 / deny-01
+		:ARG0 x2
+		:ARG1 (x14 / violate-01
+			:ARG1 (x13 / loan-01
+				:ARG0 (x10 / person
+					:name (n1 / name
+						:op1 "Good")
+					:null_edge (x9 / null_tag))
+				:mod (x12 / risk-free))
+			:ARG1 (x18 / test
+				:mod (x17 / smell)))))
+
+# ::id 48
+# ::snt It is just his way of having fun , Mr. Bush says
+(x12 / say-01
+	:ARG1 (x5 / way
+		:domain (x1 / it)
+		:mod (x3 / just)
+		:instrument-of (x7 / have-03
+			:ARG1 (x8 / fun)))
+	:ARG0 (x11 / person
+		:name (n / name
+			:op1 "Bush")
+		:null_edge (x10 / null_tag)))
+
+# ::id 49
+# ::snt I was not going to deny him his chance of having fun
+(x6 / deny-01
+	:ARG0 (x1 / i)
+	:ARG1 (x9 / chance
+		:ARG1 (x11 / have-03
+			:ARG1 (x12 / fun))))
+
+# ::id 50
+# ::snt Mr. Bush says Mr. Good set up similar accounts for Mr. Good's secretary and bookkeeper
+(x3 / say-01
+	:ARG0 (x2 / person
+		:name (n / name
+			:op1 "Bush")
+		:null_edge (x1 / null_tag))
+	:ARG1 (x6 / set-08
+		:ARG0 (x5 / person
+			:name (n1 / name
+				:op1 "Good")
+			:null_edge (x4 / null_tag))
+		:ARG1 (x9 / account
+			:ARG1-of (x8 / resemble-01
+				:op (s / similar))
+			:topic (x15 / and
+				:op1 (x14 / have-org-role-91
+					:ARG2 (s1 / secretary)
+					:ARG0 (x12 / person
+						:name (n2 / name
+							:op1 "Good")
+						:null_edge (x11 / null_tag)))
+				:op2 (x16 / bookkeeper)))))
+
+# ::id 51
+# ::snt Mr. Good could not be reached for comment , but in testimony last month before the House Banking Committee , he described the loans as a means of attracting and keeping loyal business associates
+(x / xconcept
+	:x (x3 / possible
+		:domain (x6 / reach-01
+			:ARG1 (x2 / person
+				:name (n / name
+					:op1 "Good")
+				:null_edge (x1 / null_tag))
+			:purpose (x8 / comment-01
+				:ARG0 x2)
+			:null_edge (x22 / describe-01
+				:ARG0 x2
+				:ARG2 (x12 / testify-01
+					:time (x14 / month
+						:mod (x13 / last))
+					:null_edge (x15 / null_tag
+						:op1 (x18 / government-organization
+							:name (n1 / name
+								:op1 "Banking"
+								:op2 "Committee")
+							:part-of (x17 / have-org-role-91
+								:ARG1 (g / government-organization
+									:name (n2 / name
+										:op1 "House"))))))
+				:ARG1 (x24 / loan-01)
+				:ARG2 (x30 / and
+					:op1 (x29 / attract-01
+						:ARG1 (x34 / associate
+							:mod (x32 / loyal)
+							:mod (x33 / business)))
+					:op2 (x31 / keep-02)))))
+	:x (x10 / contrast-01))
+
+# ::id 52
+# ::snt Still , neither of Mr. Bush's two partners at JNB Exploration received such loans
+(x13 / receive-01
+	:ARG1 (x9 / partner
+		:ARG0 (x6 / person
+			:name (n / name
+				:op1 "Bush")
+			:null_edge (x5 / null_tag))
+		:quant 2)
+	:location (x12 / exploration
+		:mod (x11 / jnb))
+	:ARG1 (x15 / loan-01
+		:mod (x14 / such)))
+
+# ::id 53
+# ::snt Mr. Bush says they were not as close to Mr. Good
+(x3 / say-01
+	:ARG0 (x2 / person
+		:name (n / name
+			:op1 "Bush")
+		:null_edge (x1 / null_tag))
+	:ARG1 (x8 / close-41
+		:ARG2 (x11 / person
+			:name (n1 / name
+				:op1 "Good")
+			:null_edge (x10 / null_tag))))
+
+# ::id 54
+# ::snt The money was eventually lost when the commodities investments went sour
+(x5 / lose-02
+	:ARG1 (x2 / money)
+	:time (x4 / eventual)
+	:time (x10 / go-02
+		:ARG0 (x9 / thing
+			:ARG1-of (i / invest-01)
+			:ARG2 (x8 / commodity))
+		:ARG2 (x11 / sour)))
+
+# ::id 55
+# ::snt Meanwhile , Mr. Bush is wrestling against conflict-of-interest charges by the federal Office of Thrift Supervision concerning his service on the Silverado board
+(x6 / wrestle
+	:time (x1 / meanwhile)
+	:ARG0 (x4 / person
+		:name (n / name
+			:op1 "Bush")
+		:null_edge (x3 / null_tag))
+	:ARG1 (x9 / charge-05
+		:ARG1-of (x8 / conflict-of-interest)
+		:ARG0 (x13 / government-organization
+			:name (n1 / name
+				:op1 "Office"
+				:op2 "of"
+				:op3 "Thrift"
+				:op4 "Supervision")
+			:mod (x12 / federal))
+		:ARG0-of (x17 / concern-02
+			:ARG1 (x19 / service
+				:location (x23 / board)))))
+
+# ::id 56
+# ::snt The thrift office has charged that as a Silverado director Mr. Bush voted on loans to William Walters , a Denver real estate agent who was one of two original investors in JNB Exploration
+(x5 / charge-05
+	:ARG0 (x3 / office
+		:mod (x2 / thrift))
+	:ARG1 (x13 / vote-01
+		:ARG0 (x12 / person
+			:name (n / name
+				:op1 "Bush")
+			:ARG0-of (x10 / have-org-role-91
+				:ARG2 (d / director)
+				:ARG1 (x9 / organization
+					:name (n2 / name
+						:op1 "Silverado")))
+			:null_edge (x11 / null_tag))
+		:ARG1 (x15 / loan-01
+			:ARG2 (x18 / person
+				:name (n1 / name
+					:op1 "Walters")
+				:null_edge (x17 / person
+					:name (n3 / name
+						:op1 "William"))
+				:ARG0-of (x24 / agent
+					:null_edge (x21 / city
+						:name (n4 / name
+							:op1 "Denver"))
+					:mod (x22 / real)
+					:mod (x23 / estate
+						:ARG1-of (x28 / include-91
+							:ARG2 (x31 / person
+								:ARG0-of (i / invest-01)
+								:quant 2
+								:mod (x30 / original
+									:ARG2 (x34 / exploration
+										:mod (x33 / jnb)))))))))))
+
+# ::id 57
+# ::snt Mr. Bush answers that there was not any legal requirement that he abstain from the votes
+(x3 / answer-01
+	:ARG0 (x2 / person
+		:name (n / name
+			:op1 "Bush")
+		:null_edge (x1 / null_tag))
+	:ARG1 (x10 / require-01
+		:mod (x8 / any)
+		:ARG1 (x13 / abstain-01
+			:ARG3 (x16 / vote-01))))
+
+# ::id 58
+# ::snt The thrift office also contends that Mr. Bush failed to properly disclose his interest when he helped Mr. Good receive a $ 900,000 line of credit from Silverado in order to assist an Argentine project involving JNB Exploration
+(x5 / contend-00
+	:ARG0 (x3 / office
+		:mod (x2 / thrift))
+	:mod (x4 / also)
+	:ARG1 (x9 / fail-01
+		:ARG1 (x8 / person
+			:name (n / name
+				:op1 "Bush")
+			:null_edge (x7 / null_tag))
+		:ARG2 (x12 / disclose-01
+			:ARG0 x8
+			:manner (x11 / proper)
+			:ARG1 (x14 / interest-01)
+			:time (x17 / help-01
+				:ARG1 (x20 / receive-01
+					:ARG0 (x19 / person
+						:name (n1 / name
+							:op1 "Good")
+						:null_edge (x18 / null_tag))
+					:ARG1 (x24 / line
+						:mod (x22 / country
+							:name (n3 / name
+								:op1 "$")
+							:null_edge (x23 / monetary-quantity
+								:unit (y / yuan)))
+						:mod (x26 / credit-02))
+					:ARG2 (x28 / country
+						:name (n2 / name
+							:op1 "Silverado"))
+					:purpose (x32 / assist-01
+						:ARG1 (x35 / project
+							:mod (x34 / organization
+								:name (n4 / name
+									:op1 "Argentine"))
+							:ARG2-of (x36 / involve-01
+								:ARG1 (x38 / exploration
+									:mod (x37 / jnb))))))))))
+
+# ::id 59
+# ::snt But Mr. Bush produced a memo that appears to demonstrate that his interest was disclosed to the board before it approved the line of credit
+(x1 / contrast-01
+	:ARG2 (x4 / produce-01
+		:ARG0 (x3 / person
+			:name (n / name
+				:op1 "Bush")
+			:null_edge (x2 / null_tag))
+		:ARG1 (x6 / memo
+			:ARG0-of (x8 / appear-01
+				:ARG1 (x10 / demonstrate-01
+					:ARG1 (x15 / disclose-01
+						:ARG1 (x13 / interest-01)
+						:time (x19 / before
+							:op1 (x18 / board)
+							:op1 (x21 / approve-01
+								:ARG1 (x23 / line
+									:mod (x25 / credit-02))))))))))
+
+# ::id 60
+# ::snt These and other charges will be publicly aired at administrative hearings to be held this September in Denver
+(x8 / air-01
+	:ARG1 (x4 / charge-05
+		:ARG2 (x2 / and
+			:op2 (x3 / other)))
+	:manner (x7 / public)
+	:time (x11 / hearing
+		:mod (x10 / administrate-01)
+		:ARG1-of (x14 / hold-04
+			:time (x16 / date-entity
+				:mod (x15 / this))
+			:location (x18 / city
+				:name (n / name
+					:op1 "Denver")))))
+
+# ::id 61
+# ::snt Amid everything , Mr. Bush maintains a self-deprecating wit
+(x6 / maintain-01
+	:ARG1 (x2 / everything)
+	:ARG0 (x5 / person
+		:name (n / name
+			:op1 "Bush")
+		:null_edge (x4 / null_tag))
+	:ARG1 (x9 / wit
+		:mod (x8 / self-deprecating)))
+
+# ::id 62
+# ::snt He has no airs or graces about him , observes Republican political consultant Peter Teeley , who recently phoned Mr. Bush to offer advice and support
+(x10 / observe-01
+	:ARG0 (x14 / person
+		:name (n / name
+			:op1 "Peter"
+			:op2 "Teeley")
+		:ARG0-of (x2 / have-03
+			:ARG0 (x1 / he)
+			:polarity -
+			:ARG1 (x5 / or
+				:op1 (x4 / air-01)
+				:op2 (x6 / grace)))
+		:ARG0-of "Republican"
+		:mod (x12 / politics)
+		:ARG0-of (x13 / person
+			:ARG0-of (c / consult-01))
+		:ARG0-of (x19 / phone-01
+			:time (x18 / recent)
+			:ARG1 (x21 / person
+				:name (n1 / name
+					:op1 "Bush")
+				:null_edge (x20 / null_tag))
+			:ARG1 (x23 / offer-01
+				:ARG1 (x25 / and
+					:op1 (x24 / advise-01)
+					:op2 (x26 / support-01))))))
+
+# ::id 63
+# ::snt Mr. Nesland , the lawyer , says that after he scolded Mr. Bush for his fishy gaffe , Mr. Bush clipped a newspaper photograph of himself at the hearing , with Mr. Nesland and Sharon Bush sitting behind him
+(x7 / say-01
+	:ARG0 (x2 / person
+		:name (n / name
+			:op1 "Nesland")
+		:null_edge (x1 / null_tag)
+		:null_edge (x5 / lawyer))
+	:ARG1 (x21 / clip
+		:time (x9 / after
+			:op1 (x11 / scold
+				:ARG1 (x13 / person
+					:name (n2 / name
+						:op1 "Bush")
+					:null_edge (x12 / null_tag))
+				:ARG2 (x17 / gaffe
+					:mod (x16 / fishy))))
+		:ARG0 (x20 / person
+			:name (n1 / name
+				:op1 "Bush")
+			:null_edge (x19 / null_tag))
+		:ARG1 (x24 / photograph
+			:ARG0 (x23 / newspaper
+				:ARG1-of (x25 / include-91)))
+		:time (x29 / hearing)
+		:manner (x37 / sit-01
+			:ARG1 (x34 / and
+				:op1 (x33 / person
+					:name (n3 / name
+						:op1 "Nesland")
+					:null_edge (x32 / null_tag))
+				:op2 (x36 / person
+					:name (n4 / name
+						:op1 "Bush")))
+			:ARG2 (x38 / behind))))
+
+# ::id 64
+# ::snt I ca not believe he said that , Mr. Bush scribbled in a bubble drawn above Mr. Nesland's head , according to Mr. Nesland
+(x4 / believe-01
+	:ARG0 (x1 / i)
+	:ARG1 (x6 / say-01
+		:ARG1 (x11 / scribble
+			:ARG0 (x10 / person
+				:name (n / name
+					:op1 "Bush")
+				:null_edge (x9 / null_tag))
+			:ARG2 (x14 / bubble
+				:ARG1-of (x15 / draw-03
+					:location (x16 / above
+						:op1 (x18 / person
+							:name (n2 / name
+								:op1 "Nesland")
+							:null_edge (x17 / null_tag)
+							:ARG0-of (x20 / head)))))
+			:ARG0 (x25 / person
+				:name (n1 / name
+					:op1 "Nesland")
+				:null_edge (x24 / null_tag)))))
+
+# ::id 65
+# ::snt Oh no , not again , Mr. Bush wrote in another bubble above his wife
+(x9 / write-01
+	:mod (x1 / oh
+		:polarity -)
+	:mod (x5 / again)
+	:ARG0 (x8 / person
+		:name (n / name
+			:op1 "Bush")
+		:null_edge (x7 / null_tag))
+	:medium (x12 / bubble
+		:mod (x11 / another)
+		:location (x13 / above
+			:op1 (x15 / wife))))
+
+# ::id 66
+# ::snt Indeed , Mr. Bush's spirits are sufficiently buoyant that , in the midst of seeing himself portrayed as a major S&L villain , he can still envision pursuing a career in politics
+(x26 / possible
+	:mod (x1 / indeed)
+	:domain (x6 / spirit
+		:poss (x4 / person
+			:name (n / name
+				:op1 "Bush")
+			:null_edge (x3 / null_tag)))
+	:manner (x8 / suffice-01)
+	:domain (x28 / envision-01
+		:null_edge (x16 / see-01
+			:ARG1 (x18 / portray-01
+				:ARG2 (x23 / villain
+					:mod (x21 / major)
+					:mod (x22 / s&l))))
+		:ARG0 (x25 / he)
+		:mod (x27 / still)
+		:ARG1 (x29 / pursue-01
+			:ARG0 x25
+			:ARG1 (x31 / career
+				:location (x33 / politics)))))
+
+# ::id 67
+# ::snt Ten years from now , he muses , I may be a U.S. senator
+(x / xconcept
+	:x (x7 / muse
+		:ARG0 (x6 / he))
+	:x (x10 / possible
+		:domain (x14 / senator
+			:time (x4 / now
+				:op1 (x2 / temporal-quantity
+					:unit (y / year)
+					:quant (x1 / date-entity)))
+			:domain (x9 / i)
+			:mod (x13 / country
+				:name (n / name
+					:op1 "U.S.")))))
+
+# ::id 68
+# ::snt Who knows ?
+(x2 / know-01
+	:ARG0 (x1 / organization
+		:name (n / name
+			:op1 "Who")))
+

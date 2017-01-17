@@ -1,0 +1,322 @@
+# ::id 1
+# ::snt A lie detector that measures brain waves would be more accurate than polygraphs , which measure bodily functions , says its developer
+(x20 / say-01
+	:ARG1 (x11 / accurate
+		:domain (x3 / detector
+			:mod (x2 / thing
+				:ARG1-of (l / lie-02))
+			:consist-of (x5 / measure-01
+				:ARG1 (x7 / wave
+					:mod (x6 / brain))))
+		:degree (x10 / more)
+		:compared-to (x13 / polygraph
+			:ARG2 (x18 / function
+				:mod (x17 / bodily))))
+	:ARG1 (x22 / person
+		:ARG0-of (d / develop-02)))
+
+# ::id 2
+# ::snt It would probably not falsely accuse any innocent people , and it would probably pick up 70 to 90 percent of guilty people , says J. Peter Rosenfeld , a Northwestern University professor of psychology and of neurobiology and physiology
+(x25 / say-01
+	:ARG1 (x11 / and
+		:op1 (x6 / accuse-01
+			:mod (x3 / probable)
+			:manner (x5 / false)
+			:mod (x7 / any
+				:mod (x8 / person
+					:ARG1-of (i / innocent-41)))
+			:mod (x14 / probable
+				:domain (x15 / pick-01
+					:ARG1 (x22 / guilty-41
+						:ARG2 (x20 / percentage-entity
+							:null_edge 70
+							:value 90))))))
+	:ARG1 (x26 / name
+		:op1 "J."
+		:op2 "Peter"
+		:op3 "Rosenfeld"
+		:ARG0-of (x33 / have-org-role-91
+			:ARG2 (p / professor)
+			:ARG1 (x31 / organization
+				:name (n / name
+					:op1 "Northwestern"))
+			:null_edge (x32 / null_tag)
+			:ARG1 (x35 / psychology
+				:ARG0 (x36 / and
+					:op2 (x39 / and
+						:op1 (x38 / neurobiology)
+						:op2 (x40 / physiology)))))))
+
+# ::id 3
+# ::snt I think that is better than existing units
+(x2 / think-01
+	:ARG0 (x1 / i)
+	:ARG1 (x5 / good
+		:compared-to (x8 / unit
+			:ARG1-of (x7 / exist-01))))
+
+# ::id 4
+# ::snt The American Medical Association and the congressional Office of Technology Assessment have said polygraphs are wrong 15 percent to 50 percent of the time
+(x13 / say-01
+	:ARG1 (x5 / and
+		:op1 (x4 / government-organization
+			:name (n / name
+				:op1 "Association")
+			:null_edge (x3 / null_tag))
+		:op2 (x7 / government-organization
+			:name (n1 / name
+				:op1 "congressional"
+				:op2 "Office")
+			:poss (x11 / organization
+				:name (n2 / name
+					:op1 "Assessment")
+				:null_edge (x10 / null_tag))))
+	:ARG1 (x16 / wrong-41
+		:ARG1 (x14 / polygraph)
+		:ARG2 (x21 / percentage-entity
+			:value (x18 / percentage-entity)
+			:value 50
+			:ARG3-of (x22 / include-91
+				:ARG2 (x24 / time)))))
+
+# ::id 5
+# ::snt Rosenfeld's lie detector picks up brain-wave activity through electrodes attached to the scalp , amplifying the signals and feeding them into a computer , which coordinates the information and displays it on a video screen
+(x5 / pick-01
+	:ARG0 (x4 / detector
+		:poss (x1 / person
+			:name (n / name
+				:op1 "Rosenfeld"))
+		:mod (x3 / thing
+			:ARG1-of (l / lie-02)))
+	:ARG1 (x8 / activity
+		:mod (x7 / brain-wave))
+	:ARG1 (x19 / and
+		:op1 (x10 / electrode
+			:ARG1-of (x11 / attach-01
+				:ARG2 (x14 / scalp)))
+		:op1 (x16 / amplify-01
+			:ARG1 (x18 / signal))
+		:op2 (x20 / feed-01
+			:ARG2 (x24 / computer
+				:location-of (x30 / and
+					:op1 (x27 / coordinate-01
+						:ARG1 (x29 / information))
+					:op2 (x31 / display-01
+						:ARG2 (x36 / screen
+							:mod (x35 / video))))))))
+
+# ::id 6
+# ::snt If sensory information has a special meaning for you ... then your brain will respond with a special kind of trough called the P3 wave , he said
+(x28 / say-01
+	:ARG1 (x15 / respond-01
+		:ARG0-of (x7 / mean-01
+			:ARG0 (x3 / information
+				:mod (x2 / sensory))
+			:mod (x6 / special)
+			:beneficiary (x9 / you))
+		:ARG1 (x13 / brain)
+		:ARG1 (x21 / trough
+			:mod (x19 / kind
+				:mod (x18 / special)
+				:ARG1-of (x22 / call-01
+					:ARG1 (x25 / wave
+						:mod (x24 / p3))))))
+	:ARG0 (x27 / he))
+
+# ::id 7
+# ::snt In tests at Northwestern , subjects have been asked to look at a series of words , most with no special meaning
+(x9 / ask-02
+	:ARG2 (x2 / test-01
+		:location (x4 / northwestern))
+	:ARG2 (x6 / subject)
+	:ARG1 (x11 / look-00
+		:ARG0 x2
+		:ARG0 x6
+		:ARG1 (x16 / word
+			:quant (x14 / series)
+			:quant (x18 / most
+				:ARG0-of (x22 / mean-01
+					:polarity -
+					:mod (x21 / special))))))
+
+# ::id 8
+# ::snt Occasionally , they will see a word that is meaningful , like some anti-social act they are involved in _ cheating on tests or using drugs _ which is sometimes the case here , Rosenfeld said
+(xap1 / multi-sentence
+	:snt1 (x32 / case
+		:frequency (x30 / sometimes)
+		:location (x33 / here))
+	:snt2 (x36 / say-01
+		:ARG1 (x5 / see-01
+			:frequency (x1 / occasional)
+			:ARG0 (x3 / they)
+			:ARG1 (x7 / word
+				:mod (x10 / meaningful
+					:ARG1-of (xap0 / resemble-01
+						:ARG2 (x15 / act-02
+							:mod (x13 / some)
+							:mod (x14 / anti-social)
+							:ARG1-of (x18 / involve-01
+								:ARG2 (x24 / or
+									:op2 (x21 / cheating)
+									:op1 (x23 / test-01)
+									:op2 (x26 / drug
+										:ARG2-of (x25 / use-01)))))))))
+		:ARG0 (x35 / person
+			:name (n / name
+				:op1 "Rosenfeld"))))
+
+# ::id 9
+# ::snt When they see terms like that , their brain waves break into P3 waves
+(x11 / break-01
+	:condition (x3 / see-01
+		:ARG0 (x2 / they)
+		:ARG1 (x4 / term
+			:mod (x6 / that)))
+	:ARG0 (x10 / wave
+		:mod (x9 / brain))
+	:ARG1 (x14 / wave
+		:mod (x13 / p3)))
+
+# ::id 10
+# ::snt Polygraphs measure the physical expression of emotions _ pulse , sweating , blood pressure and breathing , he said
+(x19 / say-01
+	:ARG1 (x2 / measure-01
+		:ARG0 (x1 / polygraph)
+		:ARG1 (x5 / expression
+			:mod (x4 / physical)
+			:ARG1 (x7 / emotion
+				:ARG1-of (x8 / _
+					:ARG1 (x15 / and
+						:op1 (x9 / pulse)
+						:op2 (x11 / sweating)
+						:op2 (x14 / pressure-01
+							:ARG1 x11
+							:mod (x13 / blood))
+						:op2 (x16 / breathe-01))))))
+	:ARG0 (x18 / he))
+
+# ::id 11
+# ::snt Advertising researchers have measured P3 waves to better gauge what consumers want instead of what they say they want , and psychiatrists can detect certain disorders , such as attention deficits , by measuring them , he said
+(x38 / say-01
+	:ARG1 (x9 / gauge-01
+		:ARG0 (x2 / person
+			:ARG0-of (r / research-01)
+			:ARG1 (x1 / advertising))
+		:ARG0 (x6 / wave
+			:mod (x5 / p3))
+		:mod (x8 / good)
+		:time (x21 / and
+			:op1 (x4 / measure-01
+				:ARG0 x2)
+			:op1 (x12 / want-01
+				:ARG0 (x11 / person
+					:ARG0-of (c / consume-01))
+				:ARG1 (x17 / say-01
+					:ARG0 x11
+					:ARG1 (x19 / want-01)))
+			:op2 (x23 / possible
+				:domain (x24 / detect-01
+					:ARG0 (x22 / psychiatrist)
+					:ARG1 (x26 / disorder
+						:mod (x25 / certain)
+						:example (x31 / deficit
+							:mod (x30 / attention)))
+					:instrument (x34 / measure-01))))
+		:ARG0 (x37 / he))
+	:ARG0 x37)
+
+# ::id 12
+# ::snt Rosenfeld has worked on the detector for almost four years and says it could be widely used within three more
+(x3 / work-01
+	:ARG0 (x1 / person
+		:name (n / name
+			:op1 "Rosenfeld"))
+	:ARG1 (x6 / detector)
+	:ARG3 (x8 / almost
+		:op2 (x10 / temporal-quantity
+			:unit (y / year)))
+	:ARG2 (x11 / and
+		:op2 (x12 / say-01
+			:ARG1 (x14 / possible
+				:domain (x17 / use-01
+					:manner (x16 / wide)
+					:ARG2 (x20 / more-than))))))
+
+# ::id 13
+# ::snt He published a study last year and will publish another this summer in the International Journal of Neuroscience
+(x7 / and
+	:op1 (x2 / publish-01
+		:ARG0 (x1 / he)
+		:ARG1 (x4 / study-01)
+		:time (x6 / year
+			:mod (x5 / last)))
+	:op2 (x9 / publish-01
+		:ARG0 x1
+		:time (x12 / summer
+			:mod (x10 / another)
+			:mod (x11 / this))
+		:instrument (x16 / journal
+			:mod (x15 / international)
+			:null_edge (x18 / neuroscience))))
+
+# ::id 14
+# ::snt It is a perfectly valid way of detecting lies , said Sidney Weinstein , a professor of neurology at New York University College of Medicine in New York City and editor of the Danbury , Conn.-based neuroscience journal
+(x11 / say-01
+	:ARG1 (x5 / valid-41
+		:ARG1 (x1 / it)
+		:manner (x4 / perfect)
+		:ARG1 (x8 / detect-01
+			:ARG1 (x9 / thing
+				:ARG1-of (l / lie-02))))
+	:ARG0 (x12 / newspaper
+		:name (n / name
+			:op1 "Sidney"
+			:op2 "Weinstein")
+		:ARG0-of (x16 / have-org-role-91
+			:ARG2 (p / professor)
+			:ARG1 (x18 / neurology)
+			:location (x20 / city
+				:name (n1 / name
+					:op1 "New"
+					:op2 "York"
+					:op3 "University"
+					:op4 "College"
+					:op5 "of"
+					:op6 "Medicine")
+				:location (x29 / city
+					:null_edge (x27 / null_tag)
+					:null_edge (x28 / country
+						:name (n2 / name
+							:op1 "York"))))
+			:topic (x30 / and
+				:op3 (x31 / editor
+					:ARG2-of (x38 / journal
+						:mod (x34 / country
+							:name (n3 / name
+								:op1 "Danbury"))
+						:mod (x37 / neuroscience)))))))
+
+# ::id 15
+# ::snt However , a brain-wave lie detector would probably cost 10 times as much as the $ 500 to $ 600 for a polygraph , and the operator would need a great deal more training , Weinstein said
+(x37 / say-01
+	:ARG1 (x8 / probable
+		:domain (x9 / cost-01
+			:ARG1 (x6 / detector
+				:mod (x4 / brain-wave)
+				:mod (x5 / thing
+					:ARG1-of (l / lie-02)))
+			:ARG2 (x23 / polygraph
+				:quant 10
+				:quant (x13 / much))
+			:ARG2 (x25 / and
+				:op2 (x29 / need-01
+					:ARG0 x6
+					:ARG0 (x27 / person
+						:ARG0-of (o / operate-01))
+					:ARG1 (x34 / train-01
+						:ARG1 (x32 / deal-01
+							:mod (x31 / great)))))))
+	:ARG0 (x36 / person
+		:name (n / name
+			:op1 "Weinstein")))
+

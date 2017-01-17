@@ -1,0 +1,1713 @@
+# ::id 1
+# ::snt A volcano will erupt next month on the fabled Strip : a 60-foot mountain spewing smoke and flame every five minutes
+(x4 / erupt-01
+	:ARG0 (x2 / volcano)
+	:time (x6 / month
+		:mod (x5 / next))
+	:ARG2 (x10 / strip
+		:mod (x9 / fabled))
+	:location (x14 / mountain
+		:mod (x13 / 60-foot)
+		:ARG1-of (x15 / spew
+			:ARG0 (x17 / and
+				:op1 (x16 / smoke)
+				:op2 (x18 / flame))
+			:ARG1 (x21 / temporal-quantity
+				:unit (m / minute)))))
+
+# ::id 2
+# ::snt The man-made inferno will tower over a man-made lagoon with more than four acres of pools , grottoes and waterfalls
+(x3 / inferno
+	:domain (x5 / tower
+		:ARG2 (x9 / lagoon
+			:accompanier (x14 / area-quantity
+				:unit (a / acre)
+				:quant (x11 / more-than
+					:op1 4)
+				:consist-of (x19 / and
+					:op1 (x16 / pool)
+					:op2 (x18 / grotto)
+					:op2 (x20 / waterfall))))))
+
+# ::id 3
+# ::snt Visitors , whisked from the Strip on a moving walkway , will glide over a habitat for rare white tigers , which will star in performances by the famed illusionist team of Siegfried & Roy
+(x13 / glide
+	:ARG0 (x1 / person
+		:ARG0-of (v / visit-01))
+	:ARG1-of (x3 / whisk
+		:source (x6 / strip)
+		:ARG1 (x10 / walkway
+			:ARG1-of (x9 / move-01)))
+	:ARG2 (x16 / habitat
+		:beneficiary (x20 / tiger
+			:mod (x18 / rare)
+			:mod (x19 / white))
+		:ARG2 (x24 / star-01
+			:ARG2 (x26 / thing
+				:ARG1-of (p / perform-01)
+				:ARG0 (x31 / team
+					:mod (x29 / famed)
+					:poss (x33 / government-organization
+						:name (n / name
+							:op1 "Siegfried"
+							:op2 "&"
+							:op3 "Roy")))))))
+
+# ::id 4
+# ::snt Nearby , six dolphins will frolic in a 1.5 million-gallon saltwater aquarium
+(x6 / frolic
+	:time (x1 / nearby)
+	:ARG0 (x4 / dolphin
+		:quant 6)
+	:location (x12 / aquarium
+		:null_edge (x9 / 1.5)
+		:mod (x10 / million-gallon)
+		:mod (x11 / saltwater)))
+
+# ::id 5
+# ::snt At the core of all this stands a hotel
+(x7 / stand-06
+	:ARG1 (x3 / core
+		:mod (x6 / this
+			:quant (x5 / all)))
+	:ARG0 (x9 / hotel))
+
+# ::id 6
+# ::snt In the lobby behind its nine-story , orchid-strewn atrium , a 20,000-gallon aquarium will come alive with sharks , stingrays , angelfish , puffers and other creatures of the deep
+(x15 / come-01
+	:ARG3 (x3 / lobby-01
+		:location (x4 / behind
+			:op1 (x9 / atrium
+				:mod (x6 / nine-story)
+				:mod (x8 / orchid-strewn))))
+	:ARG1 (x13 / aquarium
+		:mod (x12 / 20,000-gallon))
+	:ARG3 (x16 / live-01
+		:op (a / alive)
+		:ARG1 x13
+		:ARG1 (x20 / stingray
+			:null_edge (x25 / and
+				:op1 (x18 / shark)
+				:op2 (x24 / puffer)
+				:op2 (x27 / creature
+					:mod (x26 / other)
+					:mod (x30 / deep))))))
+
+# ::id 7
+# ::snt And oh , yes
+(x1 / and
+	:mod (x2 / oh)
+	:mod (x4 / yes))
+
+# ::id 8
+# ::snt There is a casino , the financial heart of it all
+(x4 / casino
+	:ARG1-of (x9 / include-91
+		:mod (x7 / finance)))
+
+# ::id 9
+# ::snt This is the Mirage , a $ 630 million island-fantasy hotel-casino now being completed for opening in November by Golden Nugget Inc.
+(x4 / mirage
+	:domain (x1 / this)
+	:null_edge (x11 / hotel-casino
+		:null_edge (x7 / country
+			:name (n / name
+				:op1 "$")
+			:null_edge (x8 / monetary-quantity
+				:unit (y / yuan)))
+		:ARG1-of (x14 / complete-01
+			:time (x12 / now))
+		:ARG3 (x16 / open-03
+			:time (x18 / date-entity)
+			:ARG0 (x20 / government-organization
+				:name (n1 / name
+					:op1 "Golden"
+					:op2 "Nugget"
+					:op3 "Inc.")))))
+
+# ::id 10
+# ::snt It is the most stunning example of Las Vegas's concerted effort to transform itself into a world-famous vacation resort for families as well as gamblers
+(x12 / effort
+	:poss (x1 / it)
+	:mod (x5 / stunning
+		:degree (x4 / most))
+	:null_edge (x9 / city
+		:name (n / name
+			:op1 "Vegas")
+		:null_edge (x8 / country
+			:name (n1 / name
+				:op1 "Las")))
+	:mod (x11 / concerted)
+	:purpose (x14 / transform-01
+		:ARG2 (x20 / resort-01
+			:mod (x18 / world-famous)
+			:mod (x19 / vacation-01)
+			:location-of (x26 / gambler
+				:poss (x22 / family)))))
+
+# ::id 11
+# ::snt Las Vegas has seen nothing quite like it before
+(x4 / see-01
+	:ARG0 (x2 / city
+		:name (n / name
+			:op1 "Vegas")
+		:mod (x1 / country
+			:name (n1 / name
+				:op1 "Las")))
+	:ARG1 (x5 / nothing
+		:mod (x6 / quite))
+	:time (x9 / before))
+
+# ::id 12
+# ::snt Not for 15 years has a big new hotel-casino opened here
+(x5 / have-03
+	:duration (x4 / temporal-quantity
+		:unit (y / year)
+		:quant 15)
+	:ARG1 (x9 / hotel-casino
+		:mod (x7 / big)
+		:mod (x8 / new)
+		:ARG1-of (x10 / open-01
+			:location (x11 / here))))
+
+# ::id 13
+# ::snt Now the Mirage and Circus Circus Enterprises Inc.'s $ 290 million Excalibur are going up
+(x4 / and
+	:time (x1 / now)
+	:op1 (x3 / mirage)
+	:op2 (x13 / excalibur
+		:null_edge (x5 / company
+			:name (n / name
+				:op1 "Circus"
+				:op2 "Circus"
+				:op3 "Enterprises"
+				:op4 "Inc."))
+		:null_edge (x10 / country
+			:name (n1 / name
+				:op1 "$")
+			:null_edge (x11 / monetary-quantity
+				:unit (y / yuan)))))
+
+# ::id 14
+# ::snt The Excalibur , with a castlelike hotel , jousting tournaments and other Arthurian attractions , will be able to handle up to 30,000 visitors a day when it opens in 1990
+(x18 / possible
+	:domain (x20 / handle-01
+		:ARG0 (x11 / and
+			:op1 (x7 / hotel
+				:mod (x6 / castlelike))
+			:op2 (x10 / tournament
+				:ARG1-of (x9 / joust))
+			:op2 (x14 / attract-01
+				:mod (x12 / other)
+				:mod (x13 / organization
+					:name (n / name
+						:op1 "Arthurian"))))
+		:ARG1 (xap0 / rate-entity-91
+			:quant (x23 / 30,000)
+			:ARG2 (x26 / temporal-quantity
+				:unit (d / day))))
+	:time (x29 / open-01
+		:time (x31 / date-entity
+			:year 1990)))
+
+# ::id 15
+# ::snt If MGM Grand Inc. proceeds with its plan for an amusement park -- a $ 700 million movieland resort with a working studio , casino and 5,000-room hotel that would become Las Vegas's biggest -- the investment in the three properties will total some $ 1.6 billion
+(x44 / total-01
+	:condition (x5 / proceed-01
+		:ARG0 (x2 / government-organization
+			:name (n / name
+				:op1 "MGM"
+				:op2 "Grand"
+				:op3 "Inc.")
+			:mod (x3 / political-party
+				:name (n2 / name
+					:op1 "Grand")))
+		:ARG1 (x8 / plan-01)
+		:purpose (x12 / park
+			:mod (x11 / amusement)
+			:mod (x19 / resort
+				:null_edge (x26 / and
+					:op1 (x23 / studio)
+					:op1 (x25 / casino)
+					:op3 (x28 / hotel
+						:mod (x22 / work-01)
+						:mod (x27 / 5,000-room))
+					:op2 (x31 / become-01
+						:ARG2 (x33 / city
+							:name (n3 / name
+								:op1 "Vegas")
+							:mod (x32 / country
+								:name (n4 / name
+									:op1 "Las"))
+							:mod (x35 / big
+								:degree (m / most))))
+					:op2 (x38 / invest-01
+						:location (x42 / property
+							:quant 3))))))
+	:ARG2 (x45 / some
+		:op1 (x46 / country
+			:name (n1 / name
+				:op1 "$"))))
+
+# ::id 16
+# ::snt MGM Grand has agreed to buy a 117-acre site for the resort for $ 93 million in cash plus stock currently valued at nearly $ 30 million
+(x4 / agree-01
+	:ARG0 (x2 / grand)
+	:ARG1 (x6 / buy-01
+		:ARG0 x2
+		:ARG1 (x9 / site
+			:mod (x8 / 117-acre)
+			:location-of (x12 / resort-01))
+		:ARG2 (x18 / cash
+			:ARG2-of (x22 / value-01
+				:mod (x20 / stock)
+				:time (x21 / current)
+				:ARG2 (x24 / nearly)))))
+
+# ::id 17
+# ::snt Smaller projects swell the figure to at least $ 2.5 billion
+(x3 / swell
+	:ARG1 (x2 / project
+		:mod (x1 / small))
+	:ARG1 (x5 / figure))
+
+# ::id 18
+# ::snt Still other projects that have been announced but not yet started could put expenditures above $ 3 billion over the next few years
+(x12 / possible
+	:domain (x13 / put-01
+		:ARG0 (x3 / project
+			:mod (x1 / still)
+			:mod (x2 / other)
+			:ARG0-of (x7 / announce-01)
+			:ARG0-of (x11 / start-01
+				:time (x10 / yet)))
+		:null_edge (x22 / few
+			:op1 (x23 / temporal-quantity
+				:unit (y / year)))
+		:ARG1 (xap0 / monetary-quantity
+			:ARG1-of (x14 / expend-01))))
+
+# ::id 19
+# ::snt Stephen A. Wynn , who owns 29.4 % of Golden Nugget's shares , says the Mirage and other projects will help Las Vegas attract a whole new generation of visitors
+(x15 / say-01
+	:ARG0 (x1 / person
+		:name (n / name
+			:op1 "Stephen"
+			:op2 "A."
+			:op3 "Wynn")
+		:ARG0-of (x6 / own-01
+			:ARG1 (xap0 / percentage-entity
+				:value (x7 / percentage-entity)
+				:ARG2 (x13 / share
+					:poss (x10 / government-organization
+						:name (n3 / name
+							:op1 "Golden"
+							:op2 "Nugget"))))))
+	:ARG1 (x22 / help-01
+		:ARG0 (x18 / and
+			:op1 (x17 / mirage)
+			:op2 (x20 / project
+				:mod (x19 / other)))
+		:ARG1 (x25 / attract-01
+			:ARG0 (x24 / city
+				:name (n1 / name
+					:op1 "Vegas")
+				:mod (x23 / country
+					:name (n2 / name
+						:op1 "Las")))
+			:ARG1 (x29 / generation
+				:mod (x27 / whole)
+				:mod (x28 / new)
+				:consist-of (x31 / person
+					:ARG0-of (v / visit-01))))))
+
+# ::id 20
+# ::snt If you create a wonderment , if you create something so exciting that the public dreams of being part of it , then they will come , he says
+(x29 / say-01
+	:ARG1 (x26 / come-01
+		:condition (x3 / create-01
+			:ARG0 (x2 / you)
+			:ARG1 (x5 / wonderment)
+			:condition (x9 / create-01
+				:ARG0 (x8 / you)
+				:ARG1 (x10 / something
+					:mod (x12 / excite-01
+						:domain (x16 / thing
+							:ARG1-of (d / dream-01)
+							:ARG0 (x15 / public)
+							:mod (x19 / part))))))
+		:ARG1 (x24 / they
+			:mod (x23 / then)))
+	:ARG0 (x28 / he))
+
+# ::id 21
+# ::snt The projects already under construction will increase Las Vegas's supply of hotel rooms by 11,795 , or nearly 20 % , to 75,500
+(x7 / increase-01
+	:ARG1 (x2 / project
+		:topic (x5 / construct-01))
+	:time (x3 / already)
+	:ARG1 (x11 / supply-01
+		:ARG0 (x8 / government-organization
+			:name (n / name
+				:op1 "Las"
+				:op2 "Vegas"))
+		:ARG1 (x14 / room
+			:purpose (x13 / hotel)))
+	:instrument (x18 / or
+		:op1 (x16 / 11,795)
+		:op2 (x19 / nearly
+			:op1 20)))
+
+# ::id 22
+# ::snt By a rule of thumb of 1.5 new jobs for each new hotel room , Clark County will have nearly 18,000 new jobs
+(x19 / have-03
+	:time (x3 / rule-03
+		:ARG0 (x5 / thumb)
+		:ARG0 (x9 / job
+			:mod (x8 / new)
+			:purpose (x14 / room
+				:mod (x11 / each)
+				:mod (x12 / new)
+				:mod (x13 / hotel))))
+	:ARG0 (x17 / county
+		:null_edge (x16 / country
+			:name (n / name
+				:op1 "Clark")))
+	:ARG1 (x23 / job
+		:quant (x20 / nearly)
+		:mod (x22 / new)))
+
+# ::id 23
+# ::snt The county at the end of 1988 had 307,000 jobs , 95,400 of them in the tourist industry
+(x8 / have-03
+	:ARG0 (x2 / county)
+	:time (x5 / end
+		:op1 (x7 / date-entity
+			:year 1988))
+	:ARG1 (x10 / job
+		:quant (x12 / 95,400
+			:prep-in (x18 / industry
+				:mod (x17 / person
+					:ARG0-of (t / tour-01))))))
+
+# ::id 24
+# ::snt Projects in the talking or blueprint stage would add a further 48,000 rooms
+(x9 / add-04
+	:ARG0 (x1 / project
+		:topic (x5 / or
+			:op1 (x4 / talk-01)
+			:op2 (x6 / blueprint)
+			:op2 (x7 / stage)))
+	:ARG1 (x13 / room
+		:mod (x11 / further)
+		:quant (x12 / 48,000)))
+
+# ::id 25
+# ::snt Hotel-casino operators play down the possibility of a labor shortage
+(x3 / play-01
+	:ARG0 (x2 / person
+		:ARG0-of (o / operate-01)
+		:ARG1 (x1 / hotel-casino))
+	:ARG1 (x6 / possible
+		:domain (x10 / short-41
+			:ARG2 (x9 / labor-01))))
+
+# ::id 26
+# ::snt After all , 40,000 newcomers a year are settling in the Las Vegas Valley
+(x9 / settle-02
+	:time (x1 / after)
+	:ARG0 (x5 / newcomer
+		:quant (x4 / 40,000))
+	:location (x14 / country
+		:name (n / name
+			:op1 "Valley")
+		:null_edge (x13 / city
+			:name (n1 / name
+				:op1 "Vegas")
+			:location (x12 / country
+				:name (n2 / name
+					:op1 "Las")))))
+
+# ::id 27
+# ::snt But Nevada state labor economists think a shortage is probable
+(x1 / contrast-01
+	:ARG2 (x6 / think-01
+		:ARG0 (x5 / economist
+			:mod (x4 / labor-01
+				:mod (x3 / state
+					:mod (x2 / country
+						:name (n / name
+							:op1 "Nevada")))))
+		:ARG1 (x10 / probable
+			:domain (x8 / short-41))))
+
+# ::id 28
+# ::snt Nobody yet seems to have calculated the total number of slot machines , crap tables or roulette wheels Las Vegas will add to the enormous store that Lady Luck already guards here , much less the ultimate impact of the growth on schools and municipal services
+(x3 / seem-01
+	:ARG0 (x1 / nobody)
+	:time (x2 / yet)
+	:ARG1 (x6 / calculate-01
+		:ARG1 (x9 / number
+			:ARG0-of (x22 / add-04
+				:ARG0 (x20 / city
+					:name (n / name
+						:op1 "Vegas")
+					:mod (x19 / country
+						:name (n1 / name
+							:op1 "Las")))
+				:ARG2 (x26 / store
+					:mod (x25 / enormous)
+					:location-of (x31 / person
+						:ARG0-of (g / guard-01)
+						:ARG0-of (x29 / luck
+							:null_edge (x28 / lady))
+						:time (x30 / already)
+						:location (x32 / here))
+					:ARG0-of (x38 / impact-01
+						:degree (x35 / less
+							:degree (x34 / much))
+						:mod (x37 / ultimate)
+						:ARG0 (x41 / grow-01)
+						:ARG1 (x44 / and
+							:op1 (x43 / school)
+							:op2 (x46 / service
+								:mod (x45 / municipal)))))))
+		:ARG1 (x16 / or
+			:op1 (x12 / machine
+				:ARG1-of (x8 / total-01)
+				:mod (x11 / slot)
+				:mod (x14 / crap
+					:ARG1 (x15 / table)))
+			:op1 (x18 / wheel
+				:mod (x17 / roulette)))))
+
+# ::id 29
+# ::snt Traffic is certainly a concern , as is pollution , water and an adequate labor market , says Frank Sain , executive director of the Las Vegas Convention and Visitors Bureau
+(x18 / say-01
+	:ARG1 (x5 / concern-01
+		:ARG0 (x1 / traffic)
+		:mod (x3 / certain)
+		:ARG0 (x12 / and
+			:op1 (x9 / pollute-01)
+			:op2 (x11 / water)
+			:op2 (x16 / market
+				:mod (x14 / adequate)
+				:mod (x15 / labor-01))))
+	:ARG1 (x19 / name
+		:op1 "Frank"
+		:op2 "Sain"
+		:ARG0-of (x23 / have-org-role-91
+			:ARG2 (d / director)
+			:mod (x22 / executive)
+			:ARG1 (x26 / government-organization
+				:name (n / name
+					:op1 "Las"
+					:op2 "Vegas"
+					:op3 "Convention"
+					:op4 "and"
+					:op5 "Visitors"
+					:op6 "Bureau")))))
+
+# ::id 30
+# ::snt City fathers have managed to push through projects that are crucial for tourist growth , such as the expansion of McCarran International Airport to accommodate the 44 % of Las Vegas tourists who fly here
+(x4 / manage-01
+	:ARG0 (x2 / father
+		:mod (x1 / city))
+	:ARG1 (x6 / thing
+		:ARG0-of (p / push-02)
+		:ARG0 x2
+		:ARG2 (x8 / project
+			:mod (x11 / crucial
+				:prep-for (x14 / grow-01
+					:ARG1 (x13 / person
+						:ARG0-of (t / tour-01))))
+			:example (x19 / expand-01
+				:ARG1 (x23 / airport
+					:mod (x21 / mccarran)
+					:mod (x22 / international))
+				:purpose (x25 / accommodate-01
+					:prep-within (xap0 / percentage-entity
+						:value (x27 / percentage-entity)
+						:poss (x32 / person
+							:ARG0-of (t1 / tour-01)
+							:mod (x30 / country
+								:name (n / name
+									:op1 "Las"))
+							:mod (x31 / city
+								:name (n1 / name
+									:op1 "Vegas"))
+							:ARG0-of (x34 / fly-01
+								:location (x35 / here)))))))))
+
+# ::id 31
+# ::snt This year , by one means of transport or another , more than 18 million people will visit the city
+(x18 / visit-01
+	:time (x2 / year
+		:mod (x1 / this))
+	:ARG0 (x9 / or
+		:op1 (x6 / mean
+			:quant 1
+			:instrument-of (x8 / transport-01))
+		:op2 (x10 / another))
+	:ARG0 (x16 / people
+		:quant (x12 / more-than))
+	:ARG1 (x20 / city))
+
+# ::id 32
+# ::snt The expansion will set off a marketing war among the big hotel-casinos
+(x4 / set-03
+	:ARG0 (x2 / expand-01)
+	:ARG1 (x8 / war
+		:ARG1 (x7 / market)
+		:ARG1 (x12 / hotel-casino
+			:mod (x11 / big))))
+
+# ::id 33
+# ::snt Las Vegas promises , or threatens , to become a giant carnival , with rooms to be had for $ 45 a day or less , for visitors uninspired solely by gambling
+(x3 / promise-01
+	:ARG0 (x2 / city
+		:name (n / name
+			:op1 "Vegas")
+		:mod (x1 / country
+			:name (n1 / name
+				:op1 "Las")))
+	:ARG1 (x5 / or)
+	:ARG1 (x6 / threaten-01)
+	:ARG1 (x9 / become-01
+		:ARG1 x2
+		:ARG2 (x12 / carnival
+			:mod (x11 / giant)
+			:ARG1 (x15 / room)
+			:ARG1 (xap0 / rate-entity-91
+				:ARG2 (x23 / temporal-quantity
+					:unit (d / day))
+				:ARG1 (x24 / or
+					:op2 (x25 / less))
+				:ARG2 (x28 / person
+					:ARG0-of (v / visit-01)
+					:ARG1-of (x29 / uninspired
+						:manner (x30 / sole
+							:ARG1 (x32 / gamble))))))))
+
+# ::id 34
+# ::snt Amid a riot of jousting knights , circus clowns , gold-leaf centurions and creatures of the wild , lesser competitors will fall
+(x22 / fall-01
+	:null_edge (x3 / riot-01
+		:mod (x9 / clown
+			:mod (x5 / joust)
+			:mod (x8 / circus)
+			:ARG1 (x13 / and
+				:op2 (x12 / centurion
+					:mod (x11 / gold-leaf))
+				:op2 (x14 / creature
+					:mod (x17 / wild)))))
+	:ARG1 (xap0 / aircraft
+		:ARG0-of (x20 / compete-01
+			:mod (x19 / less))))
+
+# ::id 35
+# ::snt Caesars World Inc. plans to defend its august reputation by sinking $ 190 million into its opulent Caesars Palace , next door to the new Mirage , and adding a $ 100 million shopping area reminiscent of Rodeo Drive
+(x4 / plan-01
+	:ARG0 (x1 / government-organization
+		:name (n / name
+			:op1 "Caesars"
+			:op2 "World"
+			:op3 "Inc."))
+	:ARG1 (x6 / defend-01
+		:ARG0 x1
+		:null_edge 8
+		:ARG0 (x28 / and
+			:op1 (x11 / sink-01
+				:ARG4 (x19 / organization
+					:name (n1 / name
+						:op1 "Palace")
+					:null_edge (x17 / opulent)
+					:null_edge (x18 / organization
+						:name (n2 / name
+							:op1 "Caesars"))
+					:null_edge (x22 / door
+						:mod (x21 / next)
+						:ARG2 (x26 / mirage
+							:mod (x25 / new)))))
+			:op2 (x29 / add-04
+				:ARG1 (x35 / area
+					:location-of (x34 / shop-01)
+					:mod (x39 / drive
+						:mod (x38 / rodeo)))))))
+
+# ::id 36
+# ::snt 
+(xap0 / know-01
+	:extent (x17 / well
+		:domain (x2 / palace
+			:prep-with (x8 / and
+				:op1 (x7 / fountain
+					:mod (x6 / marble))
+				:op2 (x10 / party
+					:mod (x9 / toga))
+				:op2 (x13 / roller
+					:mod (x12 / high))))
+		:time (x16 / already)
+		:ARG2 (x21 / theme
+			:mod (x20 / organization
+				:name (n / name
+					:op1 "Caesarean")))))
+
+# ::id 37
+# ::snt The Flamingo Hilton , Imperial Palace , Frontier and others are pouring millions of dollars into facelifts , new room towers and casino floor space just to keep up
+(x12 / pour-01
+	:ARG1 (x15 / monetary-quantity
+		:unit (d / dollar))
+	:ARG1 (x17 / facelift
+		:ARG0-of (x20 / room
+			:mod (x21 / tower
+				:mod (x19 / new)))
+		:mod (x25 / space
+			:ARG1 (x23 / casino)
+			:mod (x24 / floor)))
+	:ARG1 (x22 / and
+		:purpose (x28 / keep-04
+			:mod (x26 / just))))
+
+# ::id 38
+# ::snt Where is this huge amount of investment capital coming from ?
+(x8 / capital
+	:quant (x5 / amount
+		:mod (x3 / this)
+		:mod (x4 / huge))
+	:mod (x7 / invest-01))
+
+# ::id 39
+# ::snt Golden Nugget , Drexel Burnham Lambert Inc.'s first casino client , has borrowed on more than $ 600 million worth of mortgage notes , mostly sold to private investors by Drexel , to build the Mirage
+(x14 / borrow-01
+	:ARG0 (x2 / country
+		:name (n / name
+			:op1 "Nugget")
+		:location (x1 / world-region
+			:name (n1 / name
+				:op1 "Golden")))
+	:ARG0 (x11 / client
+		:poss (x4 / company
+			:name (n2 / name
+				:op1 "Drexel"
+				:op2 "Burnham"
+				:op3 "Lambert"
+				:op4 "Inc."))
+		:ARG1 (x10 / casino))
+	:ARG1 (x24 / note
+		:quant (x16 / more-than)
+		:mod (x23 / mortgage-01)
+		:ARG1-of (x27 / sell-01
+			:manner (x26 / most)
+			:ARG2 (x30 / person
+				:ARG0-of (i / invest-01)
+				:mod (x29 / private))
+			:ARG0 (x32 / organization
+				:name (n3 / name
+					:op1 "Drexel"))))
+	:purpose (x35 / build-01
+		:ARG0 x11
+		:ARG1 (x37 / mirage)))
+
+# ::id 40
+# ::snt Other casino owners , Circus Circus among them , are financing their expansion with their own cash and revolving credit lines from local lenders such as First Interstate Bank of Nevada
+(x11 / finance-01
+	:ARG0 (x3 / person
+		:ARG0-of (o / own-01)
+		:mod (x1 / other)
+		:ARG1 (x2 / casino)
+		:location (x6 / circus
+			:null_edge (x5 / circus)))
+	:ARG1 (x13 / expand-01)
+	:ARG1 (x18 / and
+		:op1 (x17 / cash)
+		:op2 (x21 / line
+			:mod (x19 / revolve)
+			:mod (x20 / credit-02)
+			:source (x24 / lender
+				:mod (x23 / local)
+				:example (x27 / government-organization
+					:name (n / name
+						:op1 "First"
+						:op2 "Interstate"
+						:op3 "Bank"
+						:op4 "of"
+						:op5 "Nevada"))))))
+
+# ::id 41
+# ::snt Will the investments pay off ?
+(x4 / pay-01
+	:ARG0 (x3 / thing
+		:ARG1-of (i / invest-01)))
+
+# ::id 42
+# ::snt The growth of Las Vegas tourism in recent years persuades lenders that they will
+(x10 / persuade-01
+	:ARG0 (x2 / grow-01
+		:ARG1 (x6 / tourism
+			:mod (x5 / city
+				:name (n / name
+					:op1 "Vegas")
+				:location (x4 / country
+					:name (n1 / name
+						:op1 "Las"))))
+		:duration (x9 / temporal-quantity
+			:unit (y / year)
+			:mod (x8 / recent)))
+	:ARG1 (x11 / lender)
+	:ARG1 (x14 / will
+		:domain (x13 / they)))
+
+# ::id 43
+# ::snt Casino revenues and hotel occupancy rates are high
+(x8 / high
+	:domain (x3 / and
+		:op1 (x2 / revenue)
+		:op2 (x6 / rate
+			:ARG1 (x4 / hotel)
+			:mod (x5 / occupancy))))
+
+# ::id 44
+# ::snt Last year , the tourists left $ 3 billion with the area's casinos , nearly 10 % more than in 1987
+(x6 / leave-01
+	:time (x2 / year
+		:mod (x1 / last))
+	:ARG0 (x5 / person
+		:ARG0-of (t / tour-01))
+	:ARG2 (x14 / casino
+		:location (x12 / area))
+	:degree (x19 / more
+		:compared-to (x16 / nearly
+			:null_edge 10
+			:op1 26))
+	:time (x22 / date-entity
+		:year 1987))
+
+# ::id 45
+# ::snt The people with a stake in Nevada's gambling industry believe that they have barely tapped the potentially huge family trade
+(x11 / believe-01
+	:ARG1 (x5 / stake-01
+		:prep-in (x10 / industry
+			:mod (x7 / country
+				:name (n / name
+					:op1 "Nevada"))
+			:mod (x9 / gamble-01)))
+	:ARG1 (x16 / tap
+		:manner (x15 / bare)
+		:ARG1 (x21 / trade-01
+			:mod (x19 / huge
+				:mod (x18 / potential))
+			:ARG0 (x20 / family))))
+
+# ::id 46
+# ::snt If you build a better mousetrap , it will catch more mice , says Fred Benninger , chairman of MGM Grand
+(x14 / say-01
+	:ARG1 (x10 / catch-04
+		:condition (x3 / build-01
+			:ARG0 (x2 / you)
+			:ARG1 (x6 / mousetrap
+				:mod (x5 / good)))
+		:ARG1 (x12 / mouse
+			:quant (x11 / more))
+		:ARG0 (x15 / name
+			:op1 "Fred"
+			:op2 "Benninger"
+			:ARG0-of (x18 / have-org-role-91
+				:ARG2 (c / chairman)
+				:ARG1 (x21 / organization
+					:name (n / name
+						:op1 "Grand")
+					:mod (x20 / organization
+						:name (n1 / name
+							:op1 "MGM"))))))
+	:ARG1 x15)
+
+# ::id 47
+# ::snt Ellen Cokely , a tourist from Alton , Ill. , seems inclined to agree
+(x11 / seem-01
+	:ARG1 (x12 / inclined
+		:ARG1 (x14 / agree-01
+			:ARG0 (x1 / newspaper
+				:name (n / name
+					:op1 "Ellen"
+					:op2 "Cokely")
+				:ARG0-of (x5 / person
+					:ARG0-of (t / tour-01)
+					:source (x7 / country
+						:name (n1 / name
+							:op1 "Alton")
+						:null_edge (x9 / country
+							:name (n2 / name
+								:op1 "Ill."))))))))
+
+# ::id 48
+# ::snt I would love it if my daughter had something else to do here , says Ms. Cokely , watching seven-year-old Kristin on the water slide at the Strip's Wet 'n' Wild water park
+(x15 / say-01
+	:ARG1 (x3 / love-01
+		:ARG0 (x1 / i)
+		:ARG1 (x8 / have-03
+			:ARG0 (x7 / daughter)
+			:ARG1 (x9 / something
+				:mod (x10 / else)
+				:ARG1-of (x12 / do-04
+					:location (x13 / here))))
+		:ARG0 (x17 / person
+			:name (n / name
+				:op1 "Cokely")
+			:null_edge (x16 / ms.)))
+	:ARG1 x17
+	:ARG1 (x19 / watch-01
+		:ARG0 x17
+		:ARG1 (x21 / person
+			:name (n1 / name
+				:op1 "Kristin")
+			:mod (x20 / person
+				:name (n2 / name
+					:op1 "seven-year-old")))
+		:medium (x25 / slide-01
+			:ARG1 (x24 / water)
+			:ARG1 (x34 / park
+				:poss (x28 / strip)
+				:mod (x33 / water
+					:mod (x32 / wild))))))
+
+# ::id 49
+# ::snt Two generations ago , Dad came to Las Vegas by himself for a little diversion , says Van Heffner , executive vice president of the Nevada Hotel and Motel Association
+(x6 / come-01
+	:ARG1 (x2 / generation
+		:quant 2)
+	:ARG1 (x5 / dad)
+	:ARG4 (x9 / city
+		:name (n / name
+			:op1 "Vegas")
+		:mod (x8 / country
+			:name (n1 / name
+				:op1 "Las")))
+	:ARG1 (x17 / say-01
+		:ARG1 (x14 / little)
+		:ARG1 (x28 / and
+			:op1 (x18 / name
+				:op1 "Van"
+				:op2 "Heffner"
+				:ARG0-of (x23 / have-org-role-91
+					:ARG2 (p / president)
+					:mod (x21 / executive)
+					:mod (x22 / vice)))
+			:op1 (x27 / organization
+				:name (n2 / name
+					:op1 "Hotel")
+				:mod (x26 / organization
+					:name (n4 / name
+						:op1 "Nevada")))
+			:op2 (x29 / government-organization
+				:name (n3 / name
+					:op1 "Motel"
+					:op2 "Association")))))
+
+# ::id 50
+# ::snt One generation ago , Mom joined Dad
+(x6 / join-01
+	:ARG1 (x2 / generation
+		:quant 1)
+	:ARG0 (x5 / mom)
+	:ARG1 (x7 / dad))
+
+# ::id 51
+# ::snt Now , in the 90s , we are headed toward a total resort environment
+(x9 / head-01
+	:time (x1 / now)
+	:time 90
+	:ARG1 (x7 / we)
+	:ARG1 (x14 / environment
+		:ARG2-of (x12 / total-01)
+		:mod (x13 / resort)))
+
+# ::id 52
+# ::snt Only a decade or so ago , casino managers balked at in-room TV sets and other fripperies that distracted from gambling
+(x10 / balk
+	:ARG1 (x4 / or
+		:op1 (x5 / so)
+		:op1 (xap0 / or-so
+			:op1 (x3 / temporal-quantity
+				:unit (d / decade)
+				:mod (x1 / only))))
+	:ARG0 (x9 / person
+		:ARG0-of (m / manage-01)
+		:ARG1 (x8 / casino))
+	:ARG1 (x15 / and
+		:op1 (x14 / set
+			:mod (x12 / in-room)
+			:null_edge (x13 / null_tag))
+		:op2 (x17 / frippery
+			:mod (x16 / other)
+			:ARG0-of (x19 / distract-01
+				:ARG2 (x21 / gamble)))))
+
+# ::id 53
+# ::snt Casinos today offer bowling alleys , water parks , golf courses , tennis courts , lush swimming pools and other diversions , and more such facilities are being designed
+(x23 / and
+	:op1 (x3 / offer-01
+		:ARG0 (x1 / casino)
+		:time (x2 / today)
+		:ARG1 (x19 / and
+			:op1 (x5 / person
+				:location (a / alley)
+				:mod (x4 / bowl-01))
+			:op2 (x8 / park-01
+				:mod (x7 / water))
+			:op2 (x11 / course
+				:mod (x10 / golf-01))
+			:op2 (x14 / court
+				:mod (x13 / tennis))
+			:op2 (x18 / pool
+				:mod (x16 / lush)
+				:null_edge (x17 / null_tag))
+			:op2 (x21 / diversion
+				:mod (x20 / other))))
+	:op2 (x29 / design-01
+		:ARG1 (x26 / facility
+			:mod (x24 / more)
+			:mod (x25 / such))))
+
+# ::id 54
+# ::snt Despite the new emphasis on the family trade , however , tourists in search of naughtier fun than gambling seem certain to find it , with Las Vegas call girls remaining on the scene
+(x20 / seem-01
+	:ARG1 (x12 / person
+		:ARG0-of (t / tour-01)
+		:ARG0-of (x4 / emphasize-01
+			:mod (x3 / new)
+			:ARG1 (x8 / trade-01
+				:ARG0 (x7 / family)))
+		:location (x14 / search-01
+			:ARG1 (x17 / fun
+				:mod (x16 / naughtier)
+				:ARG1 (x19 / gamble)))))
+
+# ::id 55
+# ::snt A serious economic downturn , pessimists observe , could hurt the expansionists
+(x9 / possible
+	:domain (x10 / hurt-01
+		:ARG0 (x4 / downturn
+			:mod (x2 / serious)
+			:ARG1 (x3 / economy))
+		:null_edge (x7 / observe-01
+			:ARG0 (x6 / pessimist))
+		:ARG1 (x12 / expansionist)))
+
+# ::id 56
+# ::snt For now , however , the naysayersvoices are drowned by the roar of cement mixers and the clanging of construction cranes along the Strip
+(x9 / drown
+	:time (x2 / now)
+	:ARG1 (x7 / naysayersvoice)
+	:ARG0 (x16 / and
+		:op1 (x12 / roar
+			:poss (x15 / mixer
+				:ARG1 (x14 / cement)))
+		:op2 (x18 / clanging
+			:ARG1 (x21 / crane
+				:mod (x20 / construct-01)
+				:location (x22 / along
+					:op1 (x24 / strip))))))
+
+# ::id 57
+# ::snt This is no place for pedestrians , but at 7:30 on a recent morning , when construction choked traffic at the famous Four Corners intersection to one lane , a taxi passenger found it faster to abandon the cab and walk to her destination
+(x8 / contrast-01
+	:ARG2 (x4 / place
+		:domain (x1 / this)
+		:polarity -)
+	:ARG2 (x6 / pedestrian)
+	:ARG2 (x33 / find-01
+		:time (x10 / date-entity)
+		:time (x14 / morning
+			:time (x13 / recent))
+		:time (x18 / choke
+			:ARG1 (x17 / construct-01)
+			:ARG1 (x19 / traffic)
+			:location (x25 / intersect-01
+				:mod (x22 / famous)
+				:quant 4
+				:mod (x24 / world-region
+					:name (n / name
+						:op1 "Corners")))
+			:ARG2 (x28 / lane
+				:quant 1))
+		:ARG0 (x32 / passenger
+			:ARG1 (x31 / taxi))
+		:ARG1 (x35 / fast
+			:domain (x40 / and
+				:op1 (x37 / abandon-01
+					:ARG1 (x39 / cab))
+				:op2 (x41 / person
+					:source (w / walk)
+					:ARG4 (x44 / destination))))))
+
+# ::id 58
+# ::snt The ferocious competition probably will drive some poorly managed properties into bankruptcy or new ownership
+(x4 / probable
+	:domain (x6 / drive-02
+		:ARG0 (x3 / compete-01
+			:mod (x2 / ferocity))
+		:ARG1 (x10 / property
+			:quant (x7 / some)
+			:ARG1-of (x9 / manage-01
+				:manner (x8 / poor)))
+		:ARG2 (x13 / or
+			:op1 (x12 / bankrupt-01)
+			:op2 (x15 / ownership
+				:mod (x14 / new)))))
+
+# ::id 59
+# ::snt It has happened before
+(x3 / happen-01
+	:ARG1 (x1 / it)
+	:time (x4 / before))
+
+# ::id 60
+# ::snt The Dunes , the Aladdin and the Riviera were all acquired by the present owners from bankruptcy proceedings spawned by the last recession , in the early 1980s
+(x11 / acquire-01
+	:ARG1 (x6 / and
+		:op1 (x2 / newspaper
+			:name (n / name
+				:op1 "Dunes"))
+		:op2 (x5 / aladdin)
+		:op2 (x8 / country
+			:name (n1 / name
+				:op1 "Riviera"))
+		:quant (x10 / all))
+	:ARG0 (x15 / person
+		:ARG0-of (o / own-01)
+		:time (x14 / present))
+	:ARG0 (x18 / proceedings
+		:mod (x17 / bankrupt-01)
+		:ARG1-of (x19 / spawn
+			:ARG0 (x23 / recession
+				:mod (x22 / last))
+			:time (xap0 / date-entity
+				:time (x28 / date-entity
+					:mod (x27 / early))))))
+
+# ::id 61
+# ::snt Yet that has not discouraged investors
+(x5 / discourage
+	:ARG0 (x2 / that)
+	:ARG1 (x6 / person
+		:ARG0-of (i / invest-01)))
+
+# ::id 62
+# ::snt Some have bought big chunks of Strip property for what may turn into another wave of building
+(x3 / buy-01
+	:ARG0 (x1 / some)
+	:ARG1 (x5 / chunk
+		:mod (x4 / big)
+		:mod (x8 / property
+			:mod (x7 / strip)))
+	:purpose (x12 / turn-01
+		:mod (x11 / possible)
+		:ARG2 (x15 / wave
+			:mod (x14 / another)
+			:mod (x17 / building))))
+
+# ::id 63
+# ::snt Atlantic City casino owner Donald Trump is scouting the Las Vegas market with an eye toward building an appropriately spectacular place
+(x8 / scout
+	:ARG0 (x5 / newspaper
+		:name (n / name
+			:op1 "Donald"
+			:op2 "Trump")
+		:ARG0-of (x2 / city)
+		:ARG0-of (x4 / own-01
+			:ARG1 (x3 / casino)))
+	:ARG1 (x12 / market
+		:mod (x10 / country
+			:name (n1 / name
+				:op1 "Las"))
+		:mod (x11 / city
+			:name (n2 / name
+				:op1 "Vegas")))
+	:ARG1 (x15 / eye
+		:topic (x17 / build-01
+			:ARG1 (x21 / place
+				:mod (x20 / spectacle
+					:manner (x19 / appropriate))))))
+
+# ::id 64
+# ::snt Even before the huge new projects began , the Strip's recent expansion squeezed smaller competitors
+(x14 / squeeze-01
+	:time (x2 / before
+		:mod (x1 / even)
+		:op1 (x7 / begin-01
+			:ARG0 (x6 / project
+				:mod (x4 / huge)
+				:mod (x5 / new))))
+	:ARG0 (x13 / expand-01
+		:ARG1 (x10 / strip)
+		:time (x12 / recent))
+	:ARG1 (x16 / company
+		:mod (x15 / small)))
+
+# ::id 65
+# ::snt Many blue-collar customers of downtown's no-frills gambling spots have been lured to the Strip or to Laughlin , Nev. , a Colorado River town catering to snowbirds and the recreational-vehicle crowd
+(x12 / lure-01
+	:ARG0 (x3 / customer
+		:quant (x1 / many)
+		:mod (x2 / blue-collar)
+		:poss (x9 / spot
+			:poss (x5 / downtown)
+			:mod (x7 / no-frills)
+			:mod (x8 / gamble-01)))
+	:ARG2 (x16 / or
+		:op1 (x15 / strip)
+		:op2 (x25 / town
+			:location (x20 / country
+				:name (n / name
+					:op1 "Nev."))
+			:mod (x23 / country
+				:name (n1 / name
+					:op1 "Colorado"))
+			:mod (x26 / cater-01
+				:ARG2 (x29 / and
+					:op1 (x28 / snowbird)
+					:op2 (x32 / crowd
+						:mod (x31 / recreational-vehicle)))))))
+
+# ::id 66
+# ::snt Hotel expansion and an influx of more-discriminating tourists have hurt motels
+(x10 / hurt-01
+	:ARG1 (x3 / and
+		:op1 (x2 / expand-01
+			:ARG1 (x1 / hotel))
+		:op2 (x5 / flux-01
+			:poss (x8 / person
+				:ARG0-of (t / tour-01)
+				:mod (x7 / more-discriminating))))
+	:ARG1 (x11 / motel))
+
+# ::id 67
+# ::snt Since 1979 , the number of motel rooms has fallen by 17,000
+(x10 / fall-09
+	:time (x1 / since
+		:op1 (x2 / date-entity
+			:year 1979))
+	:ARG1 (x8 / room
+		:quant (x5 / number)
+		:purpose (x7 / motel))
+	:null_edge (x12 / 17,000))
+
+# ::id 68
+# ::snt Many people here expect a room-rate war as the new projects open
+(x4 / expect-01
+	:ARG0 (x1 / many
+		:location (x3 / here))
+	:ARG1 (x7 / war)
+	:condition (x12 / open-01
+		:ARG0 (x11 / project
+			:mod (x10 / new))))
+
+# ::id 69
+# ::snt There is probably going to be some pressure on occupancy and room rates over the next year , but after that you should see the market return to 80 % - plus occupancy and regular rates , says Paul Rubeli , casino executive at Ramada Inc. , which runs the Tropicana
+(x3 / probable
+	:domain (x8 / pressure-01
+		:mod (x7 / some)
+		:ARG2 (x13 / rate
+			:ARG1 (x11 / and
+				:op1 (x10 / occupancy)
+				:op2 (x12 / room)))
+		:time (x17 / year
+			:mod (x16 / next))
+		:ARG1-of (x19 / contrast-01
+			:ARG1 (x38 / say-01
+				:time (x20 / after
+					:op2 (x23 / recommend-01
+						:purpose (x24 / see-01
+							:ARG0 (x22 / you)
+							:ARG1 (x27 / return-01
+								:ARG1 (x26 / market)
+								:null_edge (x34 / and
+									:op2 (x33 / occupancy)
+									:op2 (x36 / rate
+										:mod (x35 / regular))
+									:op1 (xap0 / percentage-entity
+										:value 80
+										:ARG0 (x39 / name
+											:op1 "Paul"
+											:op2 "Rubeli"
+											:ARG0-of (x43 / have-org-role-91
+												:ARG2 (e / executive)
+												:ARG1 (x42 / casino)
+												:ARG1 (x45 / government-organization
+													:name (n / name
+														:op1 "Ramada"
+														:op2 "Inc.")
+													:ARG1-of (x49 / run-01
+														:location (x51 / country
+															:name (n1 / name
+																:op1 "Tropicana"))))))))))))))))
+
+# ::id 70
+# ::snt Skeptics wonder whether mega-resorts such as the Mirage will be able to squeeze a profit from their cash flow
+(x2 / wonder-01
+	:ARG1 (x11 / possible
+		:domain (x13 / squeeze-01
+			:ARG0 (x4 / mega-resort
+				:example (x8 / mirage))
+			:ARG1 (x15 / profit-01)
+			:source (x19 / name
+				:op1 "flow"
+				:ARG1 (x18 / cash)))))
+
+# ::id 71
+# ::snt The Mirage will cost at least $ 1 million a day to operate
+(x4 / cost-01
+	:ARG1 (x2 / mirage)
+	:ARG2 (x13 / operate-01)
+	:ARG2 (xap0 / rate-entity-91
+		:ARG2 (x11 / temporal-quantity
+			:unit (d / day))))
+
+# ::id 72
+# ::snt Mr. Wynn seems confident that it will produce a healthy profit , but some securities analysts doubt it
+(x3 / seem-01
+	:ARG1 (x4 / confident-41
+		:ARG1 (x2 / person
+			:name (n / name
+				:op1 "Wynn")
+			:null_edge (x1 / null_tag))
+		:ARG1 (x8 / produce-01
+			:ARG1 (x11 / profit-01
+				:manner (x10 / health)))
+		:null_edge (x13 / contrast-01
+			:ARG2 (x17 / doubt-01
+				:ARG0 x2
+				:ARG0 (x16 / person
+					:ARG0-of (a / analyze-01)
+					:quant (x14 / some)
+					:null_edge (x15 / null_tag))
+				:ARG1 (x18 / it)))))
+
+# ::id 73
+# ::snt Competitors and analysts say that among large existing properties Bally Manufacturing Corp.'s Bally Grand hotel-casino probably will be hardest hit among major properties
+(x4 / say-01
+	:ARG1 (x2 / and
+		:op1 (x1 / compete-01)
+		:op2 (x3 / person
+			:ARG0-of (a / analyze-01)))
+	:ARG1 (x17 / probable
+		:domain (x21 / hit-01
+			:ARG0 (x9 / property
+				:mod (x7 / large)
+				:ARG1-of (x8 / exist-01))
+			:ARG1 (x16 / hotel-casino
+				:null_edge (x10 / company
+					:name (n / name
+						:op1 "Bally"
+						:op2 "Manufacturing"
+						:op3 "Corp."))
+				:mod (x15 / grand))
+			:manner (x20 / hardest)
+			:ARG0 (x24 / property
+				:mod (x23 / major)))))
+
+# ::id 74
+# ::snt Bally officials decline to discuss the situation
+(x3 / decline-01
+	:ARG1 (x5 / discuss-01
+		:ARG1 (x7 / situation)
+		:ARG0 (xap0 / person
+			:ARG0-of (x2 / have-org-role-91
+				:ARG2 (o / official)
+				:ARG1 (x1 / organization
+					:name (n / name
+						:op1 "Bally")))))
+	:ARG0 xap0)
+
+# ::id 75
+# ::snt Bally bought the former MGM Grand hotel-casino from Kirk Kerkorian four years ago
+(x2 / buy-01
+	:ARG0 (x1 / organization
+		:name (n / name
+			:op1 "Bally"))
+	:ARG1 (x7 / hotel-casino
+		:mod (x4 / former)
+		:null_edge (x5 / country
+			:name (n1 / name
+				:op1 "MGM"))
+		:mod (x6 / country
+			:name (n2 / name
+				:op1 "Grand")))
+	:ARG2 (x9 / name
+		:op1 "Kirk"
+		:op2 "Kerkorian")
+	:time (x11 / date-entity))
+
+# ::id 76
+# ::snt Only now is it undergoing a badly needed facelift
+(x5 / undergo-01
+	:null_edge (x1 / only
+		:op1 (x2 / now))
+	:ARG1 (x9 / facelift
+		:ARG1-of (x8 / need-01
+			:manner (x7 / badly))))
+
+# ::id 77
+# ::snt Its parking lot is inconvenient , the MGM lion's - head logo still appears in places , and customers still call it the Grand , rather than the Bally Grand
+(x19 / and
+	:op1 (x5 / convenience
+		:domain (x3 / lot
+			:mod (x2 / parking)))
+	:op1 (x15 / appear-02
+		:ARG1 (x13 / logo
+			:poss (x9 / lion
+				:mod (x8 / organization
+					:name (n1 / name
+						:op1 "MGM")))
+			:mod (x12 / head-01))
+		:location (x17 / place
+			:mod (x14 / still)))
+	:op2 (x22 / call-01
+		:ARG1 x3
+		:ARG0 (x20 / customer)
+		:mod (x21 / still)
+		:ARG1 (x23 / it)
+		:ARG2 (x25 / country
+			:name (n / name
+				:op1 "Grand")
+			:poss (x31 / grand))))
+
+# ::id 78
+# ::snt It has a great location , but they are going to have some real problems when everyone around them opens , says Daniel Lee , a Drexel analyst
+(x7 / contrast-01
+	:ARG1-of (x2 / have-03
+		:ARG0 (x1 / it)
+		:ARG1 (x5 / location
+			:mod (x4 / great))
+		:ARG1 (x10 / go-02
+			:time (x20 / open-01
+				:ARG1 (x15 / problem
+					:quant (x13 / some)
+					:mod (x14 / real))
+				:ARG0 (x17 / everyone
+					:location (x18 / around))
+				:ARG1 (x22 / say-01
+					:name (x23 / name
+						:op1 "Daniel"
+						:op2 "Lee"
+						:ARG0-of (x28 / analyze-01
+							:ARG1 (x27 / organization
+								:name (n / name
+									:op1 "Drexel")))))))))
+
+# ::id 79
+# ::snt Older properties that still have a 1950s image are also vulnerable
+(x11 / vulnerable
+	:domain (x2 / property
+		:mod (x1 / old)
+		:ARG0-of (x5 / have-03
+			:mod (x4 / still)
+			:ARG1 (x8 / image
+				:time (xap0 / date-entity
+					:decade 1950))))
+	:mod (x10 / also))
+
+# ::id 80
+# ::snt Any hotel-casino without a strong identity will get whacked by the new competition , says Glenn Schaeffer , senior vice president of Circus Circus
+(x15 / say-01
+	:ARG1 (x9 / whack
+		:ARG1 (x2 / hotel-casino
+			:mod (x1 / any)
+			:manner (x6 / identity
+				:mod (x5 / strong)))
+		:ARG0 (x13 / compete-01
+			:mod (x12 / new)))
+	:ARG1 (x16 / name
+		:op1 "Glenn"
+		:op2 "Schaeffer"
+		:ARG0-of (x21 / have-org-role-91
+			:ARG2 (p / president)
+			:mod (x19 / senior)
+			:mod (x20 / vice)
+			:ARG1 (x24 / circus
+				:null_edge (x23 / circus)))))
+
+# ::id 81
+# ::snt If you do not know what you are , bigger wo not make you better , he says
+(x18 / say-01
+	:ARG1 (x13 / make-01
+		:null_edge (x5 / know-01
+			:ARG0 (x2 / you)
+			:ARG0 (x7 / you))
+		:null_edge (x10 / big)
+		:ARG1 (x15 / good
+			:domain (x14 / you)))
+	:ARG0 (x17 / he))
+
+# ::id 82
+# ::snt But it will sure make you poorer
+(x1 / contrast-01
+	:ARG2 (x4 / sure)
+	:ARG2 (x7 / poor
+		:domain (x6 / you)))
+
+# ::id 83
+# ::snt Circus Circus's flagship casino has become the envy of competitors for its ability to vacuum cash from the pockets of vacationing families
+(x7 / become-01
+	:ARG1 (x5 / casino
+		:poss (x2 / circus
+			:null_edge (x1 / circus))
+		:mod (x4 / flagship))
+	:ARG2 (x9 / envy
+		:null_edge (x11 / company)
+		:purpose (x16 / vacuum
+			:ARG1 (x17 / cash)
+			:ARG2 (x20 / pocket
+				:poss (x23 / family
+					:ARG0-of (x22 / vacation-01))))))
+
+# ::id 84
+# ::snt The Circus Circus lures them with low room rates , inexpensive buffets and entertainment for children at no extra charge
+(x4 / lure-01
+	:ARG0 (x3 / circus
+		:null_edge (x2 / circus))
+	:ARG1 (x13 / and
+		:op1 (x9 / rate
+			:mod (x7 / low)
+			:mod (x8 / room))
+		:op2 (x12 / buffet
+			:mod (x11 / inexpensive))
+		:op2 (x14 / entertain-01
+			:ARG1 (x16 / child
+				:ARG1-of (x20 / charge-05
+					:polarity -
+					:mod (x19 / extra))))))
+
+# ::id 85
+# ::snt The company's Excalibur will also appeal to families , of course
+(x7 / appeal-02
+	:ARG0 (x2 / company)
+	:mod (x6 / also)
+	:ARG2 (x9 / family))
+
+# ::id 86
+# ::snt Its castle , Mr. Schaeffer says , will be the most compelling piece of folk architecture ever built
+(x6 / say-01
+	:ARG0 (x5 / person
+		:name (n / name
+			:op1 "Schaeffer")
+		:null_edge (x4 / null_tag))
+	:ARG1 (x13 / piece
+		:domain (x2 / castle)
+		:mod (x12 / compelling
+			:degree (x11 / most))
+		:mod (x16 / architecture
+			:mod (x15 / folk))
+		:ARG1-of (x18 / build-01
+			:time (x17 / ever))))
+
+# ::id 87
+# ::snt Some casino owners have resisted the temptation to add rooms
+(x5 / resist-01
+	:ARG0 (x3 / person
+		:ARG0-of (o / own-01)
+		:quant (x1 / some)
+		:ARG1 (x2 / casino))
+	:ARG1 (x7 / temptation)
+	:purpose (x9 / add-04
+		:ARG1 (x10 / room)))
+
+# ::id 88
+# ::snt 
+(x5 / spend-01
+	:mod (x1 / instead)
+	:ARG0 (x3 / they)
+	:ARG1 (x7 / reinforce-01
+		:ARG0 x3
+		:ARG1 (x9 / identity
+			:ARG1-of (x12 / believe-01
+				:ARG1 (x13 / attract-01
+					:ARG1 (x15 / customer))))))
+
+# ::id 89
+# ::snt More rooms are not the answer for us , says Caesars World chairman Henry Gluck
+(x10 / say-01
+	:ARG1 (x6 / answer-01
+		:ARG1 (x2 / room
+			:null_edge (x1 / null_tag)))
+	:ARG0 (x14 / newspaper
+		:name (n / name
+			:op1 "Henry"
+			:op2 "Gluck")
+		:ARG0-of (x13 / chairman
+			:ARG1 (x12 / organization
+				:name (n1 / name
+					:op1 "World")
+				:mod (x11 / organization
+					:name (n2 / name
+						:op1 "Caesars"))))))
+
+# ::id 90
+# ::snt 
+(x15 / and
+	:op1 (x7 / build-01
+		:ARG1 (x5 / hotel
+			:poss (x3 / company))
+		:ARG1 (x10 / complex
+			:mod (x9 / retail-01)
+			:location (x14 / style
+				:mod (x12 / country
+					:name (n / name
+						:op1 "Beverly"))
+				:mod (x13 / country
+					:name (n1 / name
+						:op1 "Hills")))))
+	:op2 (x16 / redo
+		:ARG1 (x18 / room
+			:ARG1-of (x17 / exist-01)))
+	:op1 (x22 / decrease-01
+		:ARG1 (x27 / room
+			:quant (x24 / number))))
+
+# ::id 91
+# ::snt Some have been combined into suites for the high rollers
+(x4 / combine-01
+	:ARG1 (x1 / some)
+	:ARG2 (x6 / suite
+		:beneficiary (x10 / roller
+			:mod (x9 / high))))
+
+# ::id 92
+# ::snt 
+(x5 / specialty
+	:ARG1 (x7 / cater-01
+		:ARG0 (x1 / person
+			:name (n / name
+				:op1 "Caesars"))
+		:ARG1 (x10 / roller
+			:mod (x9 / high)
+			:ARG2 (x12 / abroad)
+			:ARG1-of (x19 / court
+				:mod (x16 / also)
+				:manner (x18 / aggressive)
+				:ARG0 (x28 / and
+					:op1 (x22 / mirage)
+					:op2 (x27 / hilton
+						:null_edge (x26 / city
+							:name (n1 / name
+								:op1 "Vegas")))
+					:op2 (x29 / other))))))
+
+# ::id 93
+# ::snt Other , smaller concerns are also pursuing market niches -- Hawaiian tourists , for example , or the local trade
+(x7 / pursue-01
+	:ARG0 (x4 / concern-01
+		:mod (x1 / other)
+		:mod (x3 / small))
+	:mod (x6 / also)
+	:ARG1 (x9 / niche
+		:mod (x8 / market)
+		:example (x17 / or
+			:op1 (x12 / person
+				:ARG0-of (t / tour-01)
+				:mod (x11 / hawaiian)
+				:mod (x20 / trade-01
+					:mod (x19 / local))))))
+
+# ::id 94
+# ::snt There is still room for boutique properties , says James Barrett , president of MarCor Resorts Inc.
+(x9 / say-01
+	:ARG1 (x4 / room
+		:ARG2 (x7 / property
+			:mod (x6 / boutique
+				:mod (x3 / still))))
+	:ARG0 (x10 / newspaper
+		:name (n / name
+			:op1 "James"
+			:op2 "Barrett")
+		:ARG0-of (x13 / have-org-role-91
+			:ARG2 (p / president)
+			:ARG1 (x15 / government-organization
+				:name (n1 / name
+					:op1 "MarCor"
+					:op2 "Resorts"
+					:op3 "Inc.")))))
+
+# ::id 95
+# ::snt Off the Strip , MarCor is building the Rio , a hotel-casino with a Brazilian theme and only 430 rooms -- all of them suites
+(x7 / build-01
+	:manner (x1 / off
+		:op1 (x3 / strip))
+	:ARG0 (x5 / organization
+		:name (n / name
+			:op1 "MarCor"))
+	:ARG1 (x9 / country
+		:name (n1 / name
+			:op1 "Rio")
+		:null_edge (x12 / hotel-casino
+			:accompanier (x17 / and
+				:op2 (x20 / room
+					:mod (x18 / only)
+					:quant (x19 / 430)
+					:poss-of (x25 / suite
+						:quant (x22 / all)))
+				:op1 (xap0 / and
+					:ARG2 (x16 / theme
+						:mod (x15 / country
+							:name (n2 / name
+								:op1 "Brazil"))))))))
+
+# ::id 96
+# ::snt Despite the proliferation of tourist distractions , Las Vegans have not forgot that gambling is still what the town is all about
+(x12 / forget-01
+	:ARG1 (x3 / proliferate-01
+		:ARG0 (x6 / distract-01
+			:mod (x5 / person
+				:ARG0-of (t / tour-01))))
+	:ARG0 (x9 / vegans
+		:null_edge (x8 / las))
+	:ARG1 (x14 / gamble-01
+		:mod (x16 / still)
+		:mod (x19 / town
+			:mod (x21 / all))))
+
+# ::id 97
+# ::snt The days when when the thrust of casinos was all high rollers , with no windows and clocks and lots of red and black decor , are gone , Mr. Sain of the visitorsbureau says
+(x35 / say-01
+	:ARG1 (x28 / go-01
+		:ARG1 (x6 / thrust
+			:ARG1 (x2 / temporal-quantity
+				:unit (d / day))
+			:ARG1 (x8 / casino)
+			:time (x12 / roller
+				:quant (x10 / all)
+				:mod (x11 / high)
+				:ARG2 (x17 / and
+					:op1 (x16 / window
+						:polarity -)
+					:op2 (x18 / clock)
+					:op2 (x19 / and)
+					:op2 (x20 / lots
+						:part-of (x25 / decor
+							:mod (x23 / and
+								:op1 (x22 / red)
+								:op2 (x24 / black))))))))
+	:ARG0 (x31 / person
+		:name (n / name
+			:op1 "Sain")
+		:null_edge (x30 / null_tag)
+		:null_edge (x34 / visitorsbureau)))
+
+# ::id 98
+# ::snt But 93 % of tourists still come for gambling
+(x1 / contrast-01
+	:ARG2 (x7 / come-01
+		:ARG2 (x5 / person
+			:ARG0-of (t / tour-01)
+			:quant 93)
+		:mod (x6 / still)
+		:purpose (x9 / gamble-01)))
+
+# ::id 99
+# ::snt We ca not lose sight of that
+(x4 / lose-02
+	:ARG0 (x1 / we)
+	:ARG1 (x5 / sight
+		:mod (x7 / that)))
+

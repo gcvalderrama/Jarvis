@@ -1,0 +1,258 @@
+# ::id 1
+# ::snt IT has plenty of ice and penguins and krill , and the only thing endangered is the ozone above it
+(x11 / and
+	:op1 (x2 / have-03
+		:ARG0 (x1 / it)
+		:ARG1 (x6 / and
+			:op1 (x5 / ice)
+			:op2 (x8 / and
+				:op2 (x7 / penguin))
+			:op2 (x9 / krill)))
+	:op2 (x18 / ozone
+		:ARG1-of (x15 / endanger-01
+			:mod (x13 / only))))
+
+# ::id 2
+# ::snt So who cares if Arco or Shell sinks a few oil wells in Antarctica ?
+(x3 / care-01
+	:ARG1 (x6 / or)
+	:ARG1 (x8 / sink-01
+		:ARG1 (x5 / government-organization
+			:name (n / name
+				:op1 "Arco"
+				:op2 "or"
+				:op3 "Shell"))
+		:ARG1 (x12 / well
+			:null_edge (x10 / few)
+			:mod (x11 / oil)
+			:location (x14 / continent
+				:name (n1 / name
+					:op1 "Antarctica")))))
+
+# ::id 3
+# ::snt At least no NIMBYs would complain about derricks spoiling the view. ; But oil exploration and mining would ruin Antarctica
+(x14 / contrast-01
+	:ARG2 (x6 / complain-01
+		:ARG0 (x4 / newspaper
+			:name (n / name
+				:op1 "NIMBYs")
+			:polarity -)
+		:ARG0 (x8 / derrick
+			:ARG0-of (x9 / spoil
+				:null_edge (x11 / view-02
+					:ARG1 x8))))
+	:ARG2 (x20 / ruin-01
+		:ARG0 (x17 / and
+			:op1 (x16 / explore-01
+				:ARG1 (x15 / oil))
+			:op2 (x18 / mine-01))
+		:ARG1 (x21 / continent
+			:name (n1 / name
+				:op1 "Antarctica"))))
+
+# ::id 4
+# ::snt Development potentially would disrupt scientific research there , and put at unacceptable risk an unparalleled ecosystem
+(x9 / and
+	:op1 (x4 / disrupt-01
+		:ARG0 (x1 / develop-01)
+		:mod (x2 / potential)
+		:ARG1 (x6 / research-01
+			:ARG1 (x5 / science))
+		:location (x7 / there))
+	:op2 (x10 / put-01
+		:ARG2 (x13 / risk-01
+			:mod (x12 / accept-01))
+		:ARG1 (x16 / ecosystem
+			:mod (x15 / unparalleled))))
+
+# ::id 5
+# ::snt At a just-concluded session in Madrid , Spain , 39 nations reached a tentative compromise on updating the Antarctica Treaty. ; Washington , dragging its feet all the way , needs steady pressure to accept the compromise
+(x / xconcept
+	:x (x22 / and
+		:op2 (x12 / reach-01
+			:time (x4 / session
+				:mod (x3 / just-concluded)
+				:location (x6 / city
+					:name (n / name
+						:op1 "Madrid")
+					:location (x8 / country
+						:name (n1 / name
+							:op1 "Spain"))))
+			:ARG0 (x11 / nation
+				:quant 39)
+			:ARG1 (x15 / compromise-01
+				:mod (x14 / tentative)
+				:ARG1 (x17 / update-01
+					:ARG1 (x20 / treaty))))
+		:op2 (x25 / drag-01
+			:ARG1 (x30 / way
+				:mod (x28 / all)))
+		:op7 (x32 / need-01
+			:ARG0 (x23 / government-organization
+				:name (n2 / name
+					:op1 "Washington"))
+			:ARG1 (x34 / pressure-01
+				:manner (x33 / steady))
+			:null_edge (x36 / accept-01
+				:ARG1 (x38 / compromise-01)))))
+
+# ::id 6
+# ::snt While other nations -- including Japan , Germany and New Zealand -- pushed for a permanent ban on commercial exploitation , U.S. and British delegates held out for a short moratorium. ; Public pressure at home likely nudged the holdouts to accept a 50-year moratorium on mining and mineral exploration
+(x / xconcept
+	:x (x33 / and
+		:op2 (x23 / and
+			:op1 (x22 / country
+				:name (n3 / name
+					:op1 "U.S."))
+			:op1 (xap0 / plane
+				:mod (x24 / country
+					:name (n4 / name
+						:op1 "Britain"))))
+		:op2 (x26 / hold-04
+			:location (x3 / nation
+				:mod (x2 / other)
+				:ARG2-of (x5 / include-91
+					:ARG1 (x9 / and
+						:op1 (x6 / country
+							:name (n / name
+								:op1 "Japan"))
+						:op3 (x8 / country
+							:name (n1 / name
+								:op1 "Germany"))
+						:op3 (x10 / country
+							:name (n2 / name
+								:op1 "New"
+								:op2 "Zealand"))))
+				:ARG1-of (x13 / push-01
+					:ARG2 (x17 / ban-01
+						:mod (x16 / permanent)
+						:ARG1 (x20 / exploit-01
+							:mod (x19 / commerce)))))
+			:ARG0 (x25 / person
+				:ARG2-of (d / delegate-01)))
+		:op1 (x31 / moratorium
+			:mod (x30 / short))
+		:op1 (x39 / nudge
+			:ARG1 (x35 / pressure-01
+				:mod (x34 / public)
+				:location (x37 / home))
+			:ARG1 (x38 / likely)
+			:ARG1 (x41 / holdout))
+		:op1 (x43 / accept-01
+			:ARG1 (x46 / moratorium
+				:mod (x45 / person
+					:name (n5 / name
+						:op1 "50-year"))
+				:ARG1 (x51 / explore-01
+					:ARG1 (x49 / and
+						:op1 (x48 / mine-01)
+						:op2 (x50 / mineral)))))))
+
+# ::id 7
+# ::snt The draft specifies that , when the moratorium expires , it may be lifted only with approval of two-thirds of the signatories. ; Next month , the original Antarctica Treaty will celebrate its 30th anniversary
+(x / xconcept
+	:x (x24 / and
+		:op2 (x3 / specify-01
+			:ARG0 (x2 / draft-01)
+			:null_edge (x33 / celebrate-02
+				:time (x26 / month
+					:mod (x25 / next))
+				:ARG0 (x31 / treaty
+					:mod (x29 / original)
+					:mod (x30 / continent
+						:name (n / name
+							:op1 "Antarctica")))
+				:ARG1 (x36 / anniversary)))
+		:op2 (x12 / possible
+			:domain (x14 / lift-01
+				:condition (x9 / expire
+					:ARG1 (x8 / moratorium))
+				:mod (x15 / only)
+				:ARG1 (x17 / approve-01
+					:ARG0 (x22 / person
+						:ARG0-of (s / sign-02)))))))
+
+# ::id 8
+# ::snt What better way to honor a model international agreement than to continue its tradition of preserving Antarctica for scientific research , and keeping it off-limits to military bases , commercial development and mining. ; Antarctica is as pristine as environments come these days
+(x / xconcept
+	:x (x35 / and
+		:op1 (x39 / pristine
+			:condition (x5 / honor-02
+				:ARG1 (x3 / way
+					:mod (x2 / good))
+				:ARG1 (x9 / agree-01
+					:mod (x7 / model)
+					:mod (x8 / international)
+					:ARG1 (x12 / continue-01
+						:ARG1 (x14 / tradition
+							:ARG1 (x22 / and
+								:op1 (x16 / preserve-01
+									:ARG1 (x17 / continent
+										:name (n / name
+											:op1 "Antarctica"))
+									:ARG3 (x20 / research-01
+										:ARG1 (x19 / science)))
+								:op2 (x23 / keep-02
+									:ARG1 (x25 / off-limits
+										:ARG2 (x32 / and
+											:op1 (x28 / base
+												:mod (x27 / military))
+											:op2 (x31 / develop-02
+												:mod (x30 / commerce))
+											:op2 (x33 / mine-01)))))))))
+			:domain (x36 / continent
+				:name (n1 / name
+					:op1 "Antarctica")))
+		:op2 (x42 / come-01
+			:ARG1 (x41 / environment)
+			:ARG1 (x44 / temporal-quantity
+				:unit (d / day)))))
+
+# ::id 9
+# ::snt With a climate harsher than the Arctic's , it has less capacity for absorbing intervention and abuse. ; The Earth endows us with a wealth worth vastly more than the artificial commodity value of its resources
+(x / xconcept
+	:x (x20 / and
+		:op2 (x11 / have-03
+			:ARG1 (x13 / capable-41
+				:degree (x12 / less)
+				:ARG2 (x15 / absorb-01
+					:ARG1 (x17 / and
+						:op1 (x16 / intervene-01)
+						:op2 (x18 / abuse-01))))
+			:null_edge (x23 / endow)
+			:ARG1-of (xap0 / cause-01
+				:ARG0 (x3 / climate
+					:mod (x4 / harsher
+						:compared-to (x7 / arctic)))))
+		:prep-with (x27 / wealth
+			:quant (x30 / more-than
+				:mod (x29 / vast)
+				:ARG2-of (x35 / value-01
+					:ARG1-of (x33 / artificial)
+					:ARG1 (x34 / commodity)
+					:ARG1 (x38 / resource))))))
+
+# ::id 10
+# ::snt It may turn out that preserving Antarctica will reap humankind more benefits than the yield from digging up and selling off all its gold , silver and oil
+(x2 / possible
+	:domain (x3 / turn-01
+		:ARG1 (x9 / reap-01
+			:ARG1 (x6 / preserve-01
+				:ARG1 (x7 / continent
+					:name (n / name
+						:op1 "Antarctica")))
+			:ARG1 (x12 / benefit-01
+				:degree (x11 / more))
+			:ARG2 (x19 / and
+				:op1 (x17 / dig-01
+					:mod (x18 / up))
+				:op2 (x20 / sell-01
+					:ARG1 (x27 / and
+						:op1 (x24 / gold
+							:mod (x22 / all))
+						:op2 (x26 / silver)
+						:op2 (x28 / oil)))
+				:op1 (xap0 / possible
+					:compared-to (x15 / thing
+						:ARG1-of (y / yield-01)))))))
+

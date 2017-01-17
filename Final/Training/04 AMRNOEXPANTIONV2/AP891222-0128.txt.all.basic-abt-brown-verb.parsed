@@ -1,0 +1,633 @@
+# ::id 1
+# ::snt A prosecutor calls it witchcraft and a psychologist says it is as reliable as a coin toss
+(x6 / and
+	:op1 (x3 / call-03
+		:ARG0 (x2 / prosecute-01)
+		:ARG2 (x5 / witchcraft))
+	:op2 (x9 / say-01
+		:ARG0 x2
+		:ARG0 (x8 / psychologist)
+		:ARG1 (x13 / reliable
+			:ARG2 (x16 / coin))))
+
+# ::id 2
+# ::snt After years of debate , court rulings and federal legislation , use of the polygraph has dropped sharply , despite supporters who insist the test is a good indicator of whether someone is telling a lie
+(x17 / drop-01
+	:ARG0 (x12 / use-01
+		:ARG1 (x15 / polygraph))
+	:manner (x18 / sharp)
+	:ARG2 (x21 / person
+		:ARG0-of (s / support-01)
+		:ARG0-of (x23 / insist-01
+			:ARG1 (x29 / indicate-01
+				:ARG1-of (x25 / test-01)
+				:mod (x28 / good)
+				:ARG2 (x34 / tell-01
+					:ARG0 (x32 / someone)
+					:ARG1 (x36 / thing
+						:ARG1-of (l / lie-02))))))
+	:duration (xap0 / multiple
+		:op1 (x2 / temporal-quantity
+			:unit (y / year))
+		:ARG1 (x8 / and
+			:op1 (x4 / debate-01)
+			:op2 (x7 / thing
+				:ARG1-of (r / rule-01)
+				:mod (x6 / court))
+			:op2 (x10 / legislate-01
+				:ARG0 (x9 / government-organization
+					:name (n / name
+						:op1 "federal"))))))
+
+# ::id 3
+# ::snt They have been useless and give misleading information , said Leonard Saxe , a visiting professor of psychology at Brandeis University and a leading opponent of polygraph testing
+(x10 / say-01
+	:ARG1 (x5 / and
+		:op1 (x4 / useless
+			:domain (x1 / they))
+		:op2 (x6 / give-01
+			:ARG0 x1
+			:ARG1 (x8 / information
+				:mod (x7 / misleading))))
+	:ARG0 (x11 / newspaper
+		:name (n / name
+			:op1 "Leonard"
+			:op2 "Saxe")
+		:ARG0-of (x16 / have-org-role-91
+			:ARG2 (p / professor)
+			:ARG1 (x15 / visit-01)
+			:ARG1 (x18 / psychology)
+			:location (x20 / government-organization
+				:name (n1 / name
+					:op1 "Brandeis"
+					:op2 "University"))
+			:topic (x22 / and
+				:op2 (x25 / person
+					:ARG0-of (o / oppose-01)
+					:ARG1-of (x24 / lead-02)
+					:ARG1-of (x28 / test-01
+						:ARG1 (x27 / polygraph)))))))
+
+# ::id 4
+# ::snt They suggest whether you are guilty or innocent
+(x2 / suggest-01
+	:ARG0 (x1 / they)
+	:ARG1 (x7 / or
+		:op2 (x6 / guilty-41
+			:ARG0 (x4 / you))
+		:op2 (x8 / person
+			:ARG1-of (i / innocent-41)
+			:ARG1 x4)))
+
+# ::id 5
+# ::snt You might as well flip a coin
+(x5 / flip-01
+	:ARG0 (x1 / you)
+	:ARG1 (x7 / coin))
+
+# ::id 6
+# ::snt Last week , the state Supreme Court banned lie detector tests from being introduced as evidence in criminal trials
+(x8 / ban-01
+	:time (x2 / week
+		:mod (x1 / last))
+	:ARG0 (x6 / government-organization
+		:name (n / name
+			:op1 "Supreme"
+			:op2 "Court")
+		:mod (x5 / state))
+	:ARG1 (x11 / test-01
+		:ARG1 (x9 / thing
+			:ARG1-of (l / lie-02))
+		:ARG1 (x10 / detector))
+	:ARG2 (x14 / introduce-02
+		:ARG2 (x16 / evidence-01)
+		:time (xap0 / try-02
+			:mod (x18 / crime))))
+
+# ::id 7
+# ::snt 
+(x16 / use-01
+	:ARG1 (x9 / state
+		:quant (x4 / one)
+		:ARG1-of (x5 / include-91)
+		:mod (x7 / last)
+		:mod (x8 / remaining))
+	:ARG2 (x12 / defendant)
+	:ARG1 (x17 / polygraph)
+	:ARG2 (x19 / support-01
+		:ARG0 x9
+		:ARG0 x12
+		:ARG1 (x21 / alibi)))
+
+# ::id 8
+# ::snt The court , noting polygraph studies have shown success rates varying from 95 percent to just above 50 percent , said : There remains no consensus among experts as to the accuracy of polygraph testing to detect deceit
+(x21 / say-01
+	:ARG0 (x2 / court)
+	:ARG1 (x4 / note-01
+		:ARG1 (x8 / show-01
+			:ARG0 (x6 / study-01
+				:mod (x5 / polygraph))
+			:ARG1 (x10 / rate
+				:mod (x9 / succeed-01)
+				:ARG1-of (x11 / vary-01
+					:ARG2 (x19 / percentage-entity
+						:location (x17 / above
+							:op1 (x14 / percentage-entity
+								:value 95)
+							:mod (x16 / just)
+							:op1 50))))))
+	:ARG1 (x24 / remain-01
+		:ARG1 (x26 / consensus
+			:polarity -
+			:ARG0 (x28 / person
+				:ARG1-of (e / expert-41)
+				:ARG2 (x35 / test-01
+					:ARG1 (x34 / polygraph)
+					:purpose (x37 / detect-01
+						:ARG1 (x38 / deceive-01)))))))
+
+# ::id 9
+# ::snt The court was not alone in deciding against polygraphs , which attempt to determine someone's honesty by their physiological response to certain questions
+(x2 / court
+	:mod (x5 / alone)
+	:ARG3-of (x7 / decide-01
+		:ARG1 (x9 / polygraph
+			:ARG0-of (x12 / attempt-01
+				:ARG1 (x14 / determine-01
+					:ARG1 (x17 / honesty
+						:ARG0 (x15 / someone)
+						:ARG2-of (x21 / respond-01
+							:mod (x20 / physiological)
+							:ARG1 (x24 / question-01
+								:mod (x23 / certain)))))))))
+
+# ::id 10
+# ::snt Last year , Congress prohibited most private sector employers from using lie dectectors to screen job applicants or randomly test workers
+(x5 / prohibit-01
+	:time (x2 / year
+		:mod (x1 / last))
+	:ARG0 (x4 / government-organization
+		:name (n / name
+			:op1 "Congress"))
+	:ARG1 (x9 / employ-01
+		:mod (x7 / private
+			:degree (x6 / most))
+		:mod (x8 / sector))
+	:ARG2 (x11 / use-01
+		:ARG1 (x13 / dectector
+			:topic (x12 / thing
+				:ARG1-of (l / lie-02)))
+		:ARG2 (x15 / screen-01
+			:ARG1 (x18 / or
+				:op1 (x17 / apply-01
+					:mod (x16 / job)
+					:manner (x19 / random))
+				:op2 (x21 / person
+					:ARG0-of (w / work-01)
+					:mod (x20 / test-01))))))
+
+# ::id 11
+# ::snt Exempted from the rules were federal , state and local governments , firms that do sensitive work for agencies like the CIA and FBI , companies that provide security services and those that make or distribute controlled substances
+(x1 / exempt
+	:ARG1 (x4 / rule)
+	:ARG1 (x31 / and
+		:op1 (x11 / government-organization
+			:ARG0-of (g / govern-01)
+			:example (x35 / or
+				:op2 (x9 / and
+					:op1 (x6 / government-organization
+						:name (n / name
+							:op1 "federal"))
+					:op2 (x8 / state)
+					:op2 (x13 / firm
+						:ARG0-of (x17 / work-01
+							:mod (x16 / sensitive)
+							:ARG0 (x19 / agency
+								:example (x23 / and
+									:op1 (x22 / government-organization
+										:name (n1 / name
+											:op1 "CIA"))
+									:op2 (x24 / government-organization
+										:name (n2 / name
+											:op1 "FBI"))))))
+					:op1 (xap0 / press
+						:mod (x10 / local)))
+				:ARG0-of (x34 / make-02
+					:ARG1 (x38 / substance
+						:ARG1-of (x37 / controlled)))
+				:op3 (x36 / distribute-01)))
+		:op2 (x26 / company
+			:ARG0-of (x28 / provide-01
+				:ARG1 (x30 / service
+					:mod (x29 / security))))))
+
+# ::id 12
+# ::snt I think it is appropriate to seek if someone is lying , and the most appropriate way is to seek evidence , said Judy Crockett , who fought on behalf of the federal law for the American Civil Liberties Union
+(x2 / think-01
+	:ARG0 (x1 / i)
+	:ARG1 (x13 / and
+		:op1 (x5 / appropriate
+			:ARG1 (x7 / seek-01
+				:time (x11 / lie-01
+					:ARG0 (x9 / someone))
+				:ARG0 x13)
+			:ARG1-of (x23 / say-01
+				:ARG1 (x16 / appropriate
+					:degree (x15 / most))
+				:ARG1 (x20 / seek-01
+					:ARG0 (x24 / name
+						:op1 "Judy"
+						:op2 "Crockett"
+						:ARG0-of (x28 / fight-01
+							:ARG2 (x34 / law
+								:mod (x33 / government-organization
+									:name (n / name
+										:op1 "federal"))
+								:poss (x39 / government-organization
+									:name (n1 / name
+										:op1 "Liberties"
+										:op2 "Union")))))))
+			:name x24)))
+
+# ::id 13
+# ::snt Polygraphs tend to be an attempt to short-cut investigations
+(x2 / tend-02
+	:ARG1 (x1 / polygraph)
+	:ARG1 (x6 / attempt-01
+		:ARG0 x1
+		:ARG2 (x9 / investigate-01
+			:ARG1 (x8 / short-cut))))
+
+# ::id 14
+# ::snt The federal law , which took effect a year ago , has taken a big bite out of the polygraph business
+(x13 / take-01
+	:ARG0 (x3 / law
+		:mod (x2 / government-organization
+			:name (n / name
+				:op1 "federal"))
+		:ARG1 (x7 / effect-01)
+		:time (xap0 / before
+			:quant (x9 / temporal-quantity
+				:unit (y / year))))
+	:ARG1 (x16 / bite
+		:mod (x15 / big))
+	:ARG1 (x21 / business
+		:mod (x20 / polygraph)))
+
+# ::id 15
+# ::snt There is been a definite decline in the private sector , said Chris Fausett , product manager for Lafayette Instrument Co. , based in Lafayette , Ind. , one of the country's largest makers of polygraph machines
+(x12 / say-01
+	:ARG1 (x6 / decline-01
+		:mod (x5 / definite)
+		:ARG2 (x10 / sector
+			:mod (x9 / private))
+		:ARG0 (x13 / name
+			:op1 "Chris"
+			:op2 "Fausett"
+			:ARG0-of (x17 / manage-01
+				:ARG1 (x16 / product)
+				:ARG1 (x19 / government-organization
+					:name (n / name
+						:op1 "Lafayette"
+						:op2 "Instrument"
+						:op3 "Co.")
+					:ARG1-of (x23 / base-02
+						:location (x25 / country
+							:name (n1 / name
+								:op1 "Lafayette")
+							:location (x27 / country
+								:name (n2 / name
+									:op1 "Ind."))))
+					:ARG1-of (x30 / include-91
+						:ARG2 (x35 / make-01
+							:poss (x32 / country)
+							:mod (x34 / large
+								:degree (m / most))
+							:ARG1 (x38 / machine
+								:mod (x37 / polygraph)))))))))
+
+# ::id 16
+# ::snt He declined to give specific numbers , but he said the drop was about as sharp as you can get
+(x8 / contrast-01
+	:ARG1 (x2 / decline-02
+		:ARG0 (x1 / he)
+		:ARG1 (x4 / give-01
+			:ARG0 x1
+			:ARG1 (x6 / number
+				:mod (x5 / specific))))
+	:ARG2 (x10 / say-01
+		:ARG0 x1
+		:ARG1 (x16 / sharp
+			:domain (x12 / drop-01)
+			:domain (x20 / get-03
+				:ARG0 (x18 / you)
+				:mod (x19 / possible)))))
+
+# ::id 17
+# ::snt 
+(x14 / say-01
+	:ARG1 (x5 / person
+		:ARG0-of (h / have-org-role-91)
+		:ARG0 (x2 / doubt-01)
+		:ARG1 (x7 / abandon-01
+			:ARG0 x2
+			:ARG0 (x3 / business)
+			:ARG1 (x12 / test-01
+				:quant (x8 / percentage-entity)
+				:ARG1 (x11 / polygraph))))
+	:ARG0 (x15 / person
+		:name (n / name
+			:op1 "Joseph"
+			:op2 "Buckley")
+		:ARG0-of (x19 / have-org-role-91
+			:ARG2 (s / spokesman)
+			:ARG1 (x28 / group
+				:beneficiary (x23 / government-organization
+					:name (n1 / name
+						:op1 "Polygraph"
+						:op2 "Association"))
+				:mod (x27 / trade-01)
+				:ARG1-of (x29 / base-02
+					:location (x31 / country
+						:name (n2 / name
+							:op1 "Chattanooga")
+						:location (x33 / country
+							:name (n3 / name
+								:op1 "Tenn."))))))))
+
+# ::id 18
+# ::snt Buckley said his group had about 3,000 members a year ago , but the number has dropped by a third
+(x2 / say-01
+	:ARG0 (x1 / person
+		:name (n / name
+			:op1 "Buckley"))
+	:ARG1 (x13 / contrast-01
+		:ARG2 (x4 / group)
+		:ARG2 (x6 / about
+			:op1 (x8 / have-org-role-91
+				:ARG2 (m / member)))
+		:ARG2 (x17 / drop-01
+			:ARG1 (x15 / number))
+		:time (xap0 / before
+			:quant (x10 / temporal-quantity
+				:unit (y / year)))))
+
+# ::id 19
+# ::snt A lot of them had to change careers , he said
+(x11 / say-01
+	:ARG1 (x7 / change-01
+		:ARG1 (x2 / lot
+			:ARG1-of (x3 / include-91))
+		:ARG1 (x8 / career)
+		:ARG0 (x10 / he))
+	:ARG0 x10)
+
+# ::id 20
+# ::snt However , these trends do not mean polygraph testing is dead
+(x7 / mean-01
+	:ARG0 (x4 / trend)
+	:ARG1 (x11 / die-01
+		:op (d / dead)
+		:ARG1-of (x9 / test-01
+			:mod (x8 / polygraph))))
+
+# ::id 21
+# ::snt Law enforcement agencies use lie detectors to interview witnesses when investigating crimes
+(x4 / use-01
+	:ARG0 (x3 / agency
+		:mod (x1 / law)
+		:ARG0-of (x2 / enforce-01))
+	:ARG1 (x6 / detector
+		:ARG1 (x5 / thing
+			:ARG1-of (l / lie-02)))
+	:ARG2 (x8 / interview-01
+		:ARG1 (x9 / person
+			:ARG0-of (w / witness-01))
+		:time (x11 / investigate-01
+			:ARG1 (x12 / crime))))
+
+# ::id 22
+# ::snt The Department of Defense uses polygraph testing to search for spies , and also to screen job applicants if something suspicious arises in background checks , said spokesman Jim Turner
+(x27 / say-01
+	:ARG1 (x5 / use-01
+		:ARG0 (x2 / department
+			:mod (x4 / defense))
+		:ARG1 (x7 / test-01
+			:mod (x6 / polygraph))
+		:ARG2 (x13 / and
+			:op1 (x9 / search-01
+				:ARG2 (x11 / person
+					:ARG0-of (s1 / spy-01)))
+			:op2 (x16 / screen
+				:mod (x14 / also)
+				:ARG0-of (x18 / apply-01
+					:ARG1 (x17 / job))
+				:purpose (x25 / check-01
+					:ARG1 (x20 / something
+						:mod (x21 / suspicious))
+					:ARG1 (x24 / background)))))
+	:ARG0 (x29 / newspaper
+		:name (n / name
+			:op1 "Jim"
+			:op2 "Turner")
+		:ARG0-of (x28 / have-org-role-91
+			:ARG2 (s / spokesman))))
+
+# ::id 23
+# ::snt Reading from a Defense Department statement regarding the use of polygraphs , Turner said : In all instances the polygraph exam process produced data of important security or criminal significance which was not otherwise obtainable
+(x14 / say-01
+	:ARG0 (x13 / person
+		:name (n / name
+			:op1 "Turner")
+		:ARG0-of (x1 / read-01
+			:ARG3 (x6 / state-01
+				:null_edge (x4 / null_tag)
+				:null_edge (x5 / null_tag)
+				:ARG1 (x9 / use-01
+					:ARG1 (x11 / polygraph)))))
+	:ARG1 (x23 / produce-01
+		:prep-for (x18 / instance
+			:quant (x17 / all))
+		:ARG0 (x22 / process
+			:mod (x20 / polygraph)
+			:mod (x21 / exam))
+		:ARG1 (x24 / data
+			:source (x28 / or
+				:op1 (x27 / security
+					:mod (x26 / important))
+				:op2 (x30 / significant
+					:mod (x29 / crime)))
+			:ARG0-of (x35 / obtainable
+				:mod (x34 / otherwise)))))
+
+# ::id 24
+# ::snt It was also invaluable in establishing the innocence of people confronted with serious accusations
+(x4 / invaluable
+	:mod (x3 / also)
+	:ARG2 (x6 / establish-01
+		:ARG1 (x8 / innocence
+			:ARG1-of (x11 / confront-01
+				:ARG1 (x14 / accusation
+					:mod (x13 / serious))))))
+
+# ::id 25
+# ::snt Many states allow polygraph evidence to be introduced if both the prosecution and defense agree
+(x3 / allow-01
+	:ARG0 (x2 / state
+		:quant (x1 / many))
+	:ARG1 (x8 / introduce-02
+		:ARG1 (x5 / evidence-01
+			:mod (x4 / polygraph))
+		:time (x15 / agree-01
+			:ARG0 (x13 / and
+				:mod (x10 / both)
+				:op1 (x12 / prosecution)
+				:op2 (x14 / defend-01)))))
+
+# ::id 26
+# ::snt New Mexico is the one state where either party can introduce a polygraph examination as evidence , with the trial judge deciding whether the tests meet certain standards
+(x6 / state
+	:domain (x2 / country
+		:name (n / name
+			:op1 "Mexico"))
+	:quant 1
+	:ARG0-of (x11 / introduce-02
+		:ARG0 (x9 / party
+			:mod (x8 / either))
+		:mod (x10 / possible)
+		:ARG1 (x14 / examine-01
+			:mod (x13 / polygraph))
+		:ARG2 (x16 / evidence-01)
+		:prep-instead-of (x22 / decide-01
+			:ARG1 (x26 / meet-03
+				:ARG1-of (x25 / test-01)
+				:ARG1 (x28 / standard
+					:mod (x27 / certain)))
+			:ARG0 (xap1 / person
+				:ARG0-of (xap0 / have-org-role-91
+					:ARG3 (x21 / judge-01))))))
+
+# ::id 27
+# ::snt But not everyone in the state supports it
+(x1 / contrast-01
+	:ARG2 (x7 / support-01
+		:ARG0 (x3 / everyone
+			:location (x6 / state))))
+
+# ::id 28
+# ::snt Timothy Cornish , a prosecutor in the New Mexico attorney general's office , called polygraph exams witchcraft
+(x15 / call-01
+	:ARG0 (x1 / newspaper
+		:name (n / name
+			:op1 "Timothy"
+			:op2 "Cornish")
+		:ARG0-of (x5 / prosecute-01
+			:location (x13 / office
+				:mod (x11 / general
+					:mod (x9 / country
+						:name (n1 / name
+							:op1 "Mexico"))))))
+	:ARG2 (x18 / witchcraft
+		:mod (x17 / exam
+			:mod (x16 / polygraph))))
+
+# ::id 29
+# ::snt It can , if used in an unbridled way , change the entire truth-seeking process , he said
+(x18 / say-01
+	:ARG1 (x2 / possible
+		:domain (x11 / change-01
+			:ARG0 (x1 / it)
+			:ARG0 (x5 / use-02
+				:manner (x8 / unbridled))
+			:ARG1 (x15 / process
+				:mod (x13 / entire))))
+	:ARG0 (x17 / he))
+
+# ::id 30
+# ::snt It replaces the jury
+(x2 / replace-01
+	:ARG1 (x4 / jury))
+
+# ::id 31
+# ::snt David Raskin , a University of Utah psychologist often called upon to support polygraphs in the courtroom , said he favored the federal law because lie detectors were being misused to predict future performance in the workplace
+(x19 / say-01
+	:ARG0 (x1 / newspaper
+		:name (n / name
+			:op1 "David"
+			:op2 "Raskin")
+		:ARG0-of (x8 / psychologist
+			:name (x5 / name
+				:op1 "University"
+				:op2 "of"
+				:op3 "Utah")
+			:ARG1-of (x10 / call-01
+				:frequency (x9 / often)
+				:ARG2 (x13 / support-01
+					:ARG1 (x14 / polygraph)))
+			:location (x17 / courtroom)))
+	:ARG1 (x21 / favor-01
+		:ARG0 (x20 / he)
+		:ARG1 (x24 / law
+			:mod (x23 / government-organization
+				:name (n1 / name
+					:op1 "federal")))
+		:ARG1-of (x25 / cause-01)
+		:condition (x30 / misuse-01
+			:ARG1 (x27 / detector
+				:mod (x26 / thing
+					:ARG1-of (l / lie-02)))
+			:ARG1 (x32 / predict-01
+				:ARG1 (x34 / perform-01
+					:time (x33 / future)
+					:mod (x37 / workplace))))))
+
+# ::id 32
+# ::snt But he said they are reliable tools in determining someone's past actions
+(x1 / contrast-01
+	:ARG2 (x3 / say-01
+		:ARG0 (x2 / he)
+		:ARG1 (x9 / determine-01
+			:ARG1 (x7 / tool)
+			:ARG1 (x13 / action
+				:poss (x10 / someone)
+				:time (x12 / past)))))
+
+# ::id 33
+# ::snt Every piece of evidence has a dose of uncertainty , Raskin said
+(x12 / say-01
+	:ARG1 (x5 / have-03
+		:ARG0 (x2 / piece
+			:mod (x1 / every)
+			:mod (x4 / evidence-01))
+		:ARG1 (x7 / dose-01
+			:topic (x9 / certain
+				:polarity -)))
+	:ARG0 (x11 / person
+		:name (n / name
+			:op1 "Raskin")))
+
+# ::id 34
+# ::snt Jurors are very cautious with polygraph evidence
+(x4 / cautious
+	:domain (x1 / jurors)
+	:degree (x3 / very)
+	:ARG1 (x7 / evidence-01
+		:mod (x6 / polygraph)))
+
+# ::id 35
+# ::snt They are overly skeptical
+(x4 / skeptical
+	:domain (x1 / they)
+	:mod (x3 / overly))
+
+# ::id 36
+# ::snt They do not ignore other evidence and concentrate on the polygraph
+(x7 / and
+	:op2 (x4 / ignore-01
+		:ARG0 (x1 / they)
+		:ARG1 (x6 / thing
+			:ARG0-of (e / evidence-01)
+			:mod (x5 / other)))
+	:op2 (x8 / concentrate
+		:ARG1 (x11 / polygraph)))
+

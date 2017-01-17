@@ -1,0 +1,623 @@
+# ::id 1
+# ::snt After all the lobbying , hand-wringing and Ronald Reagan's endorsement of the Brady gun-control bill , a ditty says it all : Cow kicked Nellie in the barn Did not do her any good , did not do her any harm
+(x25 / kick-01
+	:time (x1 / after
+		:op1 (x7 / and
+			:op1 (x4 / lobby-01
+				:mod (x2 / all))
+			:op2 (x6 / hand-wringing)
+			:op2 (x11 / endorse-01
+				:name (x8 / name
+					:op1 "Ronald"
+					:op2 "Reagan")
+				:ARG1 (x16 / bill
+					:mod (x14 / person
+						:name (n1 / name
+							:op1 "Brady"))
+					:mod (x15 / gun-control)
+					:ARG0-of (x20 / say-01)))))
+	:ARG0 (x24 / cow)
+	:ARG1 (x26 / person
+		:name (n / name
+			:op1 "Nellie"))
+	:ARG2 (x29 / barn
+		:ARG1-of (x32 / do-02
+			:ARG1 (x35 / good)
+			:ARG2 (x42 / harm-01
+				:mod (x41 / any)))))
+
+# ::id 2
+# ::snt Gun-control laws can never substitute for the hard work of apprehending and convicting criminals
+(x3 / possible
+	:domain (x5 / substitute-01
+		:ARG0 (x2 / law)
+		:ARG2 (x9 / work-01
+			:manner (x8 / hard)
+			:ARG1 (x12 / and
+				:op1 (x11 / apprehend-01
+					:ARG1 (x14 / criminal))
+				:op2 (x13 / convict-01)))))
+
+# ::id 3
+# ::snt Still , the Brady bill is a small price to pay if Congress also agrees to the administration's crime bill
+(x9 / price-01
+	:mod (x1 / still)
+	:ARG0 (x5 / bill
+		:mod (x4 / person
+			:name (n / name
+				:op1 "Brady")))
+	:mod (x8 / small)
+	:ARG1-of (x11 / pay-01
+		:ARG3 (x15 / agree-01
+			:ARG0 (x13 / government-organization
+				:name (n1 / name
+					:op1 "Congress"))
+			:mod (x14 / also)
+			:ARG1 (x21 / bill
+				:mod (x20 / crime)
+				:ARG0 (xap0 / government-organization
+					:ARG0-of (x18 / administrate-01))))))
+
+# ::id 4
+# ::snt No one believes that this gun bill would have a measurable effect on violent crime , or even that it would have stopped John Hinkley from buying the gun he used five months later to shoot Mr. Reagan and James Brady
+(x3 / believe-01
+	:ARG1 (x17 / or
+		:op1 (x9 / have-03
+			:ARG0 (x7 / bill
+				:mod (x5 / this)
+				:mod (x6 / gun))
+			:ARG1 (x12 / effect-01
+				:mod (x11 / measure-01)
+				:ARG1 (x15 / crime
+					:mod (x14 / violent))))
+		:mod (x18 / even)
+		:op2 (x23 / stop-01
+			:ARG1 (x27 / buy-01
+				:ARG0 (x24 / name
+					:op1 "John"
+					:op2 "Hinkley")
+				:ARG1 (x29 / gun
+					:ARG1-of (x31 / use-01
+						:time (x34 / late
+							:op1 (x32 / date-entity))
+						:ARG2 (x36 / shoot-05
+							:ARG1 (x39 / and
+								:op1 (x38 / person
+									:name (n / name
+										:op1 "Reagan")
+									:null_edge (x37 / null_tag))
+								:op2 (x40 / name
+									:op1 "James"
+									:op2 "Brady")))))))))
+
+# ::id 5
+# ::snt There would be a seven-day waiting period before any gun dealer sells a handgun to a customer
+(x7 / period
+	:null_edge (x5 / person
+		:name (n / name
+			:op1 "seven-day"))
+	:time-of (x6 / wait-01)
+	:null_edge (x8 / before
+		:op1 (x12 / sell-01
+			:ARG0 (x11 / person
+				:ARG0-of (d / deal-01)
+				:mod (x9 / any)
+				:ARG1 (x10 / gun))
+			:ARG1 (x14 / handgun)
+			:ARG2 (x17 / customer))))
+
+# ::id 6
+# ::snt During that week , state law-enforcement officials can (but would not have to )investigate whether the purchaser is a felon or has spent time in a mental institution
+(x23 / or
+	:op1 (x8 / possible
+		:domain (x16 / investigate-01
+			:time (x3 / temporal-quantity
+				:unit (w / week))
+			:ARG0 (xap0 / person
+				:ARG0-of (x7 / have-org-role-91
+					:ARG2 (o / official)
+					:ARG1 (x5 / state)))))
+	:op1 (x22 / felon)
+	:op2 (x25 / spend-01
+		:ARG1 (x19 / purchaser)
+		:ARG1 (x30 / institution
+			:mod (x29 / mental))))
+
+# ::id 7
+# ::snt The gun could be sold at the end of the week unless the police find the evidence to stop the sale
+(x3 / possible
+	:domain (x5 / sell-01
+		:ARG1 (x2 / gun)
+		:time (x8 / end
+			:ARG1 (x11 / week)))
+	:condition (x15 / find-01
+		:ARG0 (x14 / police)
+		:ARG1 (x17 / thing
+			:ARG0-of (e / evidence-01)
+			:ARG1 (x19 / stop-01))))
+
+# ::id 8
+# ::snt The first problem is that there is no way of knowing who is a felon , much less a mental patient
+(x11 / know-01
+	:ARG1 (x15 / felon
+		:domain (x3 / problem)
+		:ARG2 (x21 / patient
+			:degree (x18 / less
+				:polarity -
+				:degree (x17 / much))
+			:mod (x20 / mental))))
+
+# ::id 9
+# ::snt There is no computer list of the criminal records from the states
+(x5 / list-01
+	:polarity -
+	:source (x4 / computer)
+	:consist-of (x9 / record
+		:mod (x8 / crime)
+		:source (x12 / state)))
+
+# ::id 10
+# ::snt Nine states do not even require that courts report the final disposition of felony cases
+(x6 / require-01
+	:ARG0 (x2 / state
+		:quant 9)
+	:mod (x5 / even)
+	:ARG1 (x9 / report-01
+		:ARG0 (x8 / court)
+		:ARG1 (x12 / disposition
+			:mod (x11 / final)
+			:ARG1 (x15 / case
+				:mod (x14 / felony)))))
+
+# ::id 11
+# ::snt At the federal level , the FBI does not have records showing the final results in half of its arrests
+(x10 / have-03
+	:time (x4 / level
+		:mod (x3 / government-organization
+			:name (n1 / name
+				:op1 "federal")))
+	:ARG0 (x7 / government-organization
+		:name (n / name
+			:op1 "FBI"))
+	:ARG1 (x11 / record
+		:ARG0-of (x12 / show-01
+			:ARG1 (x15 / thing
+				:ARG2-of (r / result-01)
+				:mod (x14 / final)))
+		:topic (x20 / arrest-01)))
+
+# ::id 12
+# ::snt The Brady bill would not create any national record of people who can not buy handguns
+(x6 / create-01
+	:ARG0 (x3 / bill
+		:mod (x2 / person
+			:name (n / name
+				:op1 "Brady")))
+	:ARG1 (x9 / record
+		:mod (x7 / any)
+		:mod (x8 / nation)
+		:condition (x15 / buy-01
+			:mod (x13 / possible)
+			:ARG1 (x16 / handgun))))
+
+# ::id 13
+# ::snt With no list for gun dealers to consult , the bill's effectiveness dims
+(x3 / list-01
+	:null_edge (x8 / consult-01
+		:null_edge -
+		:ARG0 (x6 / person
+			:ARG0-of (d / deal-01)
+			:ARG1 (x5 / gun)))
+	:time (x14 / dim
+		:ARG0 (x13 / effective
+			:ARG0 (x11 / bill))))
+
+# ::id 14
+# ::snt There is also something breathtaking in the claim that crime can be stopped by regulating gun dealers
+(x4 / something
+	:mod (x5 / breathtaking
+		:domain (x8 / claim-01
+			:ARG1 (x11 / possible
+				:mod (x3 / also)
+				:domain (x13 / stop-01
+					:ARG1 (x10 / crime)
+					:manner (x15 / regulate-01
+						:ARG1 (x17 / person
+							:ARG0-of (d / deal-01)
+							:ARG1 (x16 / gun))))))))
+
+# ::id 15
+# ::snt Attorney General Dick Thornburgh calls this the 17 % solution
+(x5 / call-03
+	:ARG0 (x3 / newspaper
+		:name (n / name
+			:op1 "Dick"
+			:op2 "Thornburgh")
+		:ARG0-of (x1 / have-org-role-91
+			:ARG2 (a / attorney))
+		:ARG0-of (x2 / general))
+	:ARG2 (xap0 / percentage-entity
+		:domain (x6 / this)
+		:value (x8 / date-entity)))
+
+# ::id 16
+# ::snt Fewer than one-in-five handguns acquired by felons are bought from gun dealers
+(x9 / buy-01
+	:ARG1 (x1 / few
+		:compared-to (x4 / handgun
+			:ARG1-of (x3 / one-in-five)
+			:ARG1-of (x5 / acquire-01
+				:ARG0 (x7 / felon))))
+	:ARG0 (x12 / person
+		:ARG0-of (d / deal-01)
+		:ARG1 (x11 / gun)))
+
+# ::id 17
+# ::snt There is an active gun market , including rent-a-gun operations in some public-housing projects
+(x6 / market
+	:mod (x4 / active)
+	:mod (x5 / gun)
+	:ARG2-of (x8 / include-91
+		:ARG1 (x10 / operation
+			:ARG1 (x14 / project
+				:quant (x12 / some)
+				:mod (x13 / public-housing)))))
+
+# ::id 18
+# ::snt Making it harder to buy from legitimate dealers will boost street sales
+(x10 / boost-01
+	:ARG0 (x1 / make-02
+		:ARG1 (x3 / hard
+			:compared-to (x5 / buy-01
+				:ARG2 (x8 / person
+					:ARG0-of (d / deal-01)
+					:mod (x7 / legitimate)))))
+	:ARG1 (x12 / sale
+		:mod (x11 / street)))
+
+# ::id 19
+# ::snt Gun control has become the $ 600 toilet seat of the crime debate
+(x4 / become-01
+	:ARG1 (x2 / control-01
+		:ARG0 (x1 / gun))
+	:ARG2 (x9 / seat-01
+		:mod (x8 / toilet)
+		:ARG2 (x13 / debate-01
+			:mod (x12 / crime))))
+
+# ::id 20
+# ::snt Yes , it would be good to keep firearms out of the hands of felons and the mentally incompetent
+(x6 / good
+	:ARG1 (x8 / keep-04
+		:ARG1 (x9 / firearm)
+		:ARG2 (x13 / hand
+			:part-of (x16 / and
+				:op1 (x15 / felon)
+				:op2 (x19 / person
+					:ARG1-of (c / competent-41))))))
+
+# ::id 21
+# ::snt But all the talk about gun control has prevented the serious discussion on crime this country desperately needs to have
+(x1 / contrast-01
+	:ARG2 (x9 / prevent-01
+		:ARG0 (x4 / talk-01
+			:quant (x2 / all)
+			:ARG1 (x7 / control-01
+				:ARG1 (x6 / gun)))
+		:ARG1 (x12 / discuss-01
+			:mod (x11 / serious)
+			:ARG2 (x14 / crime)
+			:ARG0-of (x18 / need-01
+				:ARG0 (x16 / country
+					:mod (x15 / this))
+				:manner (x17 / desperate)
+				:ARG1 (x20 / have-03
+					:ARG0 x16)))))
+
+# ::id 22
+# ::snt For example , why do not we have records of felons ?
+(x8 / have-03
+	:ARG0 (x7 / we)
+	:ARG1 (x9 / record
+		:topic (x11 / felon)))
+
+# ::id 23
+# ::snt Part of the answer is to imagine how long it would take an ACLU affiliate somewhere to file a lawsuit alleging that the rights of felons or certifiably dangerous mental patients would be violated by a national registry
+(x7 / imagine-01
+	:ARG1 (x4 / answer-01)
+	:ARG1 (x18 / file-01
+		:duration (x9 / long)
+		:ARG1 (x15 / affiliate-01
+			:mod (x14 / organization
+				:name (n / name
+					:op1 "ACLU"))
+			:mod (x16 / somewhere))
+		:ARG1 (x20 / lawsuit
+			:ARG0-of (x21 / allege-01
+				:ARG1 (x34 / violate-01
+					:ARG1 (x27 / or
+						:op1 (x26 / felon)
+						:op2 (x31 / patient
+							:mod (x29 / dangerous
+								:mod (x28 / certifiably))
+							:mod (x30 / mental)))
+					:manner (x38 / registry
+						:mod (x37 / nation)))))))
+
+# ::id 24
+# ::snt As with the drug problem , the only solution to crimes with guns is on the demand side
+(xap0 / multi-sentence
+	:snt1 (x9 / solution
+		:mod (x8 / only)
+		:ARG2 (x11 / crime
+			:instrument (x13 / gun)))
+	:ARG2 (x18 / side
+		:domain (x5 / problem
+			:mod (x4 / drug))
+		:mod (x17 / demand-01)))
+
+# ::id 25
+# ::snt Americans own perhaps 150 million firearms ; that is more guns than cars
+(x2 / own-01
+	:ARG0 (x1 / person
+		:mod (c / country
+			:name (n / name
+				:op1 "Americans")))
+	:ARG1 (x6 / firearm)
+	:ARG1 (x13 / car
+		:quant (x10 / more)))
+
+# ::id 26
+# ::snt Even if we somehow banned sales of all weapons from butter knives to imported semi-automatics , the current supply is more than adequate for street crimes
+(x21 / more
+	:condition (x5 / ban-01
+		:mod (x1 / even)
+		:ARG0 (x3 / we)
+		:manner (x4 / somehow)
+		:ARG1 (x12 / knife
+			:quant (x8 / all)
+			:mod (x11 / butter-00)
+			:ARG2-of (x15 / semi
+				:ARG1-of (x14 / import-01))))
+	:domain (x19 / supply-01
+		:time (x18 / current))
+	:compared-to (x23 / adequate
+		:ARG1 x19
+		:ARG1 (x26 / crime
+			:mod (x25 / street))))
+
+# ::id 27
+# ::snt This is why a Brady bill , which wo not work but which also wo not cause much harm , would be a reasonable trade-off for the Bush crime bill
+(x25 / trade-off
+	:domain (x1 / this)
+	:ARG0 (x6 / bill
+		:mod (x5 / person
+			:name (n / name
+				:op1 "Brady"))
+		:ARG0-of (x11 / work-09)
+		:topic (x19 / harm-01
+			:mod (x14 / also)
+			:quant (x18 / much)))
+	:mod (x24 / reasonable)
+	:ARG2 (x30 / bill
+		:mod (x28 / person
+			:name (n1 / name
+				:op1 "Bush"))
+		:mod (x29 / crime)))
+
+# ::id 28
+# ::snt Under the administration's bill , criminals , especially ones who use firearms , would face more certain punishment
+(x16 / face-01
+	:ARG0 (x5 / bill
+		:ARG0 (xap0 / government-organization
+			:ARG0-of (x3 / administrate-01)))
+	:ARG0 (x7 / criminal
+		:ARG1-of (x12 / use-01
+			:ARG0 (x10 / one
+				:null_edge (x9 / especially))
+			:ARG1 (x13 / firearm)))
+	:ARG1 (x19 / punish-01
+		:mod (x18 / certain
+			:degree (x17 / more))))
+
+# ::id 29
+# ::snt The bill would finally limit the endless appeals from death-penalty convictions and create new death penalties for drug-related killings
+(x12 / and
+	:op1 (x5 / limit-01
+		:ARG0 (x2 / bill)
+		:time (x4 / final)
+		:ARG1 (x8 / appeal-02
+			:mod (x7 / endless)
+			:ARG0 (x11 / convict-01)))
+	:op2 (x13 / create-01
+		:ARG1 (x16 / penalize-01
+			:mod (x14 / new)
+			:mod (x15 / die-01)
+			:ARG1 (x19 / kill-01
+				:ARG1-of (xap0 / relate-01
+					:ARG2 (x18 / drug))))))
+
+# ::id 30
+# ::snt Our favorite provision would offer more effective gun control than the Brady bill
+(x5 / offer-01
+	:ARG0 (x3 / provision
+		:mod (x2 / favorite))
+	:ARG1 (x9 / control-01
+		:mod (x7 / effective
+			:degree (x6 / more))
+		:ARG1 (x8 / gun)
+		:ARG1 (x13 / bill
+			:mod (x12 / person
+				:name (n / name
+					:op1 "Brady")))))
+
+# ::id 31
+# ::snt This is Mr. Thornburgh's inclusionary rule to replace the exclusionary rule's absurd result that a criminal goes free because a constable blundered
+(x9 / replace-01
+	:ARG1 (x7 / rule-03
+		:domain (x1 / this)
+		:poss (x4 / person
+			:name (n / name
+				:op1 "Thornburgh")
+			:null_edge (x3 / null_tag))
+		:ARG1-of (x6 / inclusionary))
+	:ARG1 (x15 / result-01
+		:ARG1 (x12 / rule-03
+			:mod (x11 / exclusionary))
+		:mod (x14 / absurd)
+		:ARG1 (x19 / go-01
+			:ARG1 (x18 / crime)
+			:ARG1-of (x20 / free-41)
+			:ARG1-of (x21 / cause-01
+				:ARG0 (x24 / blunder
+					:ARG0 (x23 / constable))))))
+
+# ::id 32
+# ::snt The jury would still get to see the evidence of the gun and convict the criminal even where evidence of a firearm is obtained under a faulty search warrant or some other technical problem
+(x5 / get-01
+	:ARG0 (x2 / jury)
+	:mod (x4 / still)
+	:ARG1 (x13 / and
+		:op1 (x7 / see-01
+			:ARG1 (x9 / thing
+				:ARG0-of (e / evidence-01)
+				:ARG1 (x12 / gun)))
+		:op2 (x14 / person
+			:ARG1-of (c / convict-01)
+			:ARG2-of (x24 / obtain-01
+				:ARG1 (x19 / evidence-01
+					:mod (x17 / even)
+					:ARG1 (x22 / firearm))
+				:ARG2 (x30 / or
+					:op1 (x29 / warrant
+						:mod (x28 / search-01
+							:mod (x27 / faulty)))
+					:op3 (x34 / problem
+						:mod (x31 / some)
+						:mod (x32 / other)
+						:mod (x33 / technical)))))))
+
+# ::id 33
+# ::snt Instead of keeping the truth from jurors , the evidence would be allowed
+(x13 / allow-01
+	:ARG1 (x3 / keep-04
+		:ARG1 (x5 / truth)
+		:ARG2 (x7 / juror))
+	:ARG1 (x10 / evidence-01))
+
+# ::id 34
+# ::snt But to encourage lawful searches , the Justice Department would also set up a system to pay compensation to people who are wrongly searched and to discipline erring officers directly
+(x1 / contrast-01
+	:ARG2 (x12 / set-03
+		:purpose (x3 / encourage-01
+			:ARG1 (x5 / search-01
+				:mod (x4 / lawful)))
+		:ARG0 (x9 / department
+			:null_edge (x8 / null_tag))
+		:mod (x11 / also)
+		:ARG1 (x15 / system
+			:ARG0-of (x18 / compensate-01
+				:ARG1-of (x24 / search-01
+					:manner (x23 / wrong))
+				:ARG1 (x25 / and
+					:op2 (x27 / discipline
+						:manner (x30 / direct)
+						:ARG0 (xap0 / person
+							:ARG0-of (x29 / have-org-role-91
+								:ARG2 (o / officer)
+								:ARG0-of (x28 / erring)))))))))
+
+# ::id 35
+# ::snt Over the past 30 years , everything from Miranda censoring of confessions to activist judges declaring that jails are too crowded has created a reign of lawlessness
+(x23 / create-01
+	:time (x1 / over
+		:op1 (x5 / temporal-quantity
+			:unit (y / year)
+			:mod (x3 / past)
+			:quant 30))
+	:ARG0 (x7 / everything
+		:ARG1-of (x12 / confession
+			:instrument-of (x10 / censoring)
+			:ARG2 (x16 / declare-02
+				:ARG1 (x21 / crowd-00
+					:ARG1 (x18 / jail)
+					:degree (x20 / too))
+				:ARG0 (xap1 / person
+					:ARG0-of (xap0 / have-org-role-91
+						:ARG3 (x15 / judge-01
+							:ARG0-of (x14 / have-org-role-91
+								:ARG2 (a / activist))))))))
+	:ARG1 (x25 / reign
+		:mod (x27 / lawlessness)))
+
+# ::id 36
+# ::snt The chances of a crime leading to an arrest , conviction and serious prison term are well under one-in-100 in many parts of the country
+(x2 / chance
+	:ARG1 (x5 / crime
+		:ARG0-of (x6 / lead-01
+			:ARG2 (x12 / and
+				:op1 (x9 / arrest-01)
+				:op2 (x11 / convict-01)
+				:op2 (x15 / term
+					:mod (x13 / serious)
+					:mod (x14 / prison)))))
+	:prep-under (x19 / one-in-100)
+	:location (x22 / part
+		:quant (x21 / many)
+		:part-of (x25 / country)))
+
+# ::id 37
+# ::snt We may have more people in jail than ever before , but it is still true that a rational criminal can calculate the odds that crime does pay
+(x12 / contrast-01
+	:ARG2 (x2 / possible
+		:domain (x3 / have-03
+			:ARG0 (x1 / we)
+			:ARG1 (x4 / more)
+			:location (x7 / jail)
+			:time (x10 / before
+				:time (x9 / ever))
+			:condition (x21 / possible
+				:mod (x15 / still)
+				:domain (x22 / calculate-01
+					:ARG0 (x20 / criminal
+						:mod (x19 / rational))
+					:ARG1 (x24 / odds
+						:ARG1 (x28 / pay-01
+							:ARG0 (x26 / crime))))))))
+
+# ::id 38
+# ::snt Gun-control proposals only hide the deeper problem that the country still lacks the will to punish criminals
+(x4 / hide-01
+	:ARG0 (x2 / thing
+		:ARG1-of (p / propose-01)
+		:mod (x1 / gun-control))
+	:mod (x3 / only)
+	:ARG1 (x7 / problem
+		:mod (x6 / deep)
+		:ARG0-of (x12 / lack-01
+			:ARG0 (x10 / country)
+			:mod (x11 / still)
+			:purpose (x16 / punish-01
+				:ARG1 (x17 / criminal)))))
+
+# ::id 39
+# ::snt Our idea of real gun and crime control starts with freeing the law-enforcement system from the many procedural hurdles that deter it from providing law , order and justice
+(x9 / start-01
+	:ARG1 (x2 / idea
+		:ARG1 (x6 / and
+			:op1 (x5 / gun
+				:mod (x4 / real))
+			:op2 (x8 / control-01
+				:ARG1 (x7 / crime))))
+	:ARG1 (x11 / free-01
+		:ARG1 (x14 / system)
+		:ARG2 (x19 / hurdle
+			:quant (x17 / many)
+			:mod (x18 / procedural)
+			:ARG0-of (x21 / deter-01
+				:ARG2 (x24 / provide-01
+					:ARG1 (x28 / and
+						:op1 (x25 / law)
+						:op2 (x27 / order)
+						:op2 (x29 / justice)))))))
+

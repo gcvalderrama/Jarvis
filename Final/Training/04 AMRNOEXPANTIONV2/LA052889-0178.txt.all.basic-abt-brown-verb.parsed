@@ -1,0 +1,392 @@
+# ::id 1
+# ::snt Capt. Will C. Rogers III was awarded the Legion of Merit , a top military honor , on Saturday as he stepped down from command of the Vincennes
+(x7 / award-01
+	:ARG1 (x9 / country
+		:name (n / name
+			:op1 "Legion")
+		:null_edge (x11 / country
+			:name (n1 / name
+				:op1 "Merit"))
+		:null_edge (x16 / honor-01
+			:mod (x14 / top)
+			:mod (x15 / military)))
+	:time (x22 / step-01
+		:ARG2 (x25 / command-02
+			:ARG1 (x28 / country
+				:name (n2 / name
+					:op1 "Vincennes"))))
+	:time (xap0 / date-entity
+		:weekday (x19 / saturday)))
+
+# ::id 2
+# ::snt Rogers was given the award for his performance as commanding officer of the guided-missile cruiser , which became the focus of international controversy last July when it mistakenly shot down an Iranian airliner in the Persian Gulf , killing all 290 people aboard
+(x3 / give-01
+	:ARG2 (x1 / person
+		:name (n / name
+			:op1 "Rogers"))
+	:ARG1 (x5 / award-01)
+	:ARG1 (x8 / perform-01
+		:prep-as (x11 / have-org-role-91
+			:ARG2 (o / officer)
+			:ARG0-of (x10 / command-02)
+			:ARG1 (x15 / cruiser
+				:mod (x14 / guided-missile)
+				:ARG1-of (x18 / become-01
+					:ARG2 (x20 / focus-01
+						:ARG0 (x23 / controversy
+							:mod (x22 / international)
+							:null_edge (x24 / last
+								:null_edge 7))
+						:ARG2 (x29 / shoot-05
+							:manner (x28 / mistake-01)
+							:ARG1 (x33 / airliner
+								:mod (x32 / country
+									:name (n2 / name
+										:op1 "Iran")))
+							:location (x37 / world-region
+								:name (n1 / name
+									:op1 "Gulf")
+								:mod (x36 / country
+									:name (n3 / name
+										:op1 "Persian")))
+							:ARG0-of (x39 / person
+								:ARG1-of (k / kill-01)
+								:quant (x40 / all
+									:quant (x41 / 290)
+									:location (x43 / aboard))))))))))
+
+# ::id 3
+# ::snt He has been reassigned to shore duty at the Point Loma Tactical Development and Training Group in what Navy officials describe as a routine transfer
+(x4 / reassign
+	:ARG1 (x1 / he)
+	:ARG2 (x7 / duty
+		:mod (x6 / shore))
+	:location (x11 / government-organization
+		:name (n / name
+			:op1 "Loma"
+			:op2 "Tactical"
+			:op3 "Development"
+			:op4 "and"
+			:op5 "Training"
+			:op6 "Group")
+		:mod (x10 / point)
+		:ARG1-of (x21 / describe-01
+			:ARG2 (x25 / transfer-01
+				:mod (x24 / routine))
+			:ARG1 (xap0 / person
+				:ARG0-of (x20 / have-org-role-91
+					:ARG2 (o / official)
+					:ARG1 (x19 / military
+						:name (n1 / name
+							:op1 "Navy")))))))
+
+# ::id 4
+# ::snt Speaking from the deck of the Vincennes , Rogers paid special tribute to his wife , Sharon , who narrowly escaped death in March when a suspected terrorist bomb destroyed her van as she was driving to her teaching job at an exclusive private school in La Jolla
+(x10 / pay-01
+	:ARG0 (x1 / speak-01
+		:source (x4 / deck
+			:ARG1 (x7 / country
+				:name (n1 / name
+					:op1 "Vincennes"))))
+	:ARG0 (x9 / person
+		:name (n / name
+			:op1 "Rogers"))
+	:ARG1 (x12 / tribute
+		:mod (x11 / special)
+		:ARG1 (x15 / wife
+			:name (x17 / person
+				:name (n2 / name
+					:op1 "Sharon"))
+			:ARG0-of (x21 / escape-01
+				:manner (x20 / narrowly)
+				:ARG1 (x22 / die-01)
+				:time (x24 / date-entity)
+				:time (x30 / destroy-01
+					:ARG0 (x29 / bomb
+						:ARG1-of (x27 / suspect-01)
+						:mod (x28 / terrorist))
+					:ARG1 (x32 / van))
+				:time (x36 / drive-02
+					:ARG1 (x40 / job
+						:ARG1-of (x39 / teach-01))
+					:ARG1 (x45 / school
+						:mod (x43 / exclusive)
+						:mod (x44 / private)
+						:location (x48 / country
+							:name (n3 / name
+								:op1 "Jolla")
+							:null_edge (x47 / country
+								:name (n4 / name
+									:op1 "La")))))))))
+
+# ::id 5
+# ::snt She literally rode the fireball out of the vehicle , sprinted to the curb , combed the shrapnel from her hair and asked a construction worker to call and inform me that she had experienced a minor mechanical difficulty , Rogers said
+(x42 / say-01
+	:ARG1 (x11 / sprint
+		:ARG2 (x14 / curb-01)
+		:ARG1 (x22 / and
+			:op1 (x3 / ride-01
+				:ARG0 (x1 / she)
+				:manner (x2 / literal)
+				:ARG1 (x5 / fireball)
+				:ARG2 (x9 / vehicle))
+			:op2 (x16 / comb
+				:ARG0 x1
+				:ARG1 (x18 / shrapnel)
+				:ARG2 (x21 / hair))
+			:op2 (x23 / ask-02
+				:ARG0 x1
+				:ARG2 (x26 / work-01
+					:ARG1 (x25 / construct-01))
+				:ARG1 (x29 / and
+					:op1 (x28 / call-01
+						:ARG1 (x35 / experience-01
+							:ARG0 (x33 / she)
+							:ARG1 (x39 / difficult
+								:mod (x37 / minor)
+								:mod (x38 / mechanics))))
+					:op2 (x30 / inform-01)))))
+	:ARG0 (x41 / person
+		:name (n / name
+			:op1 "Rogers")))
+
+# ::id 6
+# ::snt When I arrived , she was most concerned , as her lesson plans were in flames and she was going to be late for school
+(x8 / concern-01
+	:condition (x3 / arrive-01
+		:ARG1 (x2 / i))
+	:ARG0 (x5 / she)
+	:degree (x7 / most)
+	:ARG1 (x17 / and
+		:domain (x13 / plan-01
+			:mod (x12 / lesson)
+			:time (x23 / late
+				:ARG1 (x25 / school)))
+		:op2 (x16 / flame)))
+
+# ::id 7
+# ::snt His wife , who was seated among 500 spectators on the pier next to the ship , drew a standing ovation from the crowd as she accepted a bouquet of red roses from the Navy
+(x18 / draw-02
+	:ARG0 (x2 / wife
+		:ARG1-of (x6 / seat-01
+			:ARG0 (x9 / spectator
+				:quant 500
+				:part-of (x12 / pier))
+			:location (x13 / next
+				:ARG2 (x16 / ship))))
+	:ARG1 (x21 / ovation
+		:ARG1-of (x20 / stand-01))
+	:ARG2 (x24 / crowd)
+	:time (x27 / accept-01
+		:ARG0 (x26 / she)
+		:ARG1 (x29 / bouquet
+			:consist-of (x32 / rose
+				:mod (x31 / red)
+				:source (x35 / military
+					:name (n / name
+						:op1 "Navy"))))))
+
+# ::id 8
+# ::snt She was fired by administrators of the exclusive La Jolla Country Day School , who feared that her presence posed a security threat to the children
+(x3 / fire-01
+	:ARG1 (x1 / she)
+	:ARG0 (x5 / person
+		:ARG0-of (a / administrate-01)
+		:ARG1 (x13 / school
+			:null_edge (x8 / exclusive)
+			:null_edge (x9 / null_tag)
+			:null_edge (x10 / jolla)
+			:null_edge (x11 / country)
+			:mod (x12 / event
+				:name (n / name
+					:op1 "Day")))
+		:ARG1-of (x16 / fear-01
+			:ARG1 (x20 / pose-02
+				:ARG0 (x19 / present)
+				:ARG1 (x23 / threaten-01
+					:mod (x22 / security)
+					:ARG0 (x26 / child))))))
+
+# ::id 9
+# ::snt She has since reached a $ 135,000 financial settlement with the school
+(x4 / reach-01
+	:ARG0 (x1 / she)
+	:time (x3 / since)
+	:ARG1 (x9 / settlement
+		:null_edge (x7 / monetary-quantity
+			:unit (y / yuan))
+		:mod (x8 / finance)
+		:ARG1 (x12 / school)))
+
+# ::id 10
+# ::snt Among the guests were a number of children from the fourth-grade class Sharon Rogers taught at the La Jolla Country Day School
+(x3 / guest
+	:ARG1 (x8 / child
+		:quant (x6 / number)
+		:ARG0-of (x15 / teach
+			:ARG0 (x12 / class
+				:mod (x11 / fourth-grade))
+			:ARG0 (x13 / newspaper
+				:name (n / name
+					:op1 "Sharon"
+					:op2 "Rogers"))
+			:location (x22 / school
+				:null_edge (x18 / null_tag)
+				:null_edge (x19 / jolla)
+				:null_edge (x20 / country)
+				:mod (x21 / event
+					:name (n1 / name
+						:op1 "Day"))))))
+
+# ::id 11
+# ::snt Giggling and smiling , the children gathered around her before the ceremony
+(x7 / gather-01
+	:ARG1 (x2 / and
+		:op1 (x1 / giggle)
+		:op2 (x3 / smile-01))
+	:ARG1 (x6 / child)
+	:location (x8 / around)
+	:time (x10 / before
+		:op1 (x12 / ceremony)))
+
+# ::id 12
+# ::snt The ceremony took place amid unusually tight security Saturday
+(x8 / security
+	:ARG1 (x2 / ceremony)
+	:mod (x7 / tight
+		:degree (x6 / usual
+			:polarity -))
+	:time (xap0 / date-entity
+		:weekday (x9 / saturday)))
+
+# ::id 13
+# ::snt Only invited guests were allowed on the base and all had to pass through two security checks and a metal detector
+(x9 / and
+	:op1 (x5 / allow-01
+		:ARG1 (x3 / guest
+			:mod (x1 / only)
+			:ARG1-of (x2 / invite-01))
+		:ARG1 (x8 / base)
+		:ARG1 (x13 / pass-01
+			:ARG2 (x18 / and
+				:quant (x10 / all)
+				:op1 (x17 / check-01
+					:quant 2
+					:mod (x16 / security))
+				:op2 (x21 / detector
+					:mod (x20 / metal))))))
+
+# ::id 14
+# ::snt The Rogerses remain under the constant protection of the Naval Investigative Service
+(x3 / remain-01
+	:ARG1 (x2 / organization
+		:name (n / name
+			:op1 "Rogerses"))
+	:ARG3 (x7 / protect-01
+		:ARG1 x2
+		:manner (x6 / constant)
+		:ARG0 (x12 / organization
+			:name (n1 / name
+				:op1 "Service")
+			:null_edge (x10 / company
+				:name (n2 / name
+					:op1 "Naval"))
+			:null_edge (x11 / company
+				:name (n3 / name
+					:op1 "Investigative")))))
+
+# ::id 15
+# ::snt Capt. Rogers was presented with a letter saying that while on duty in the Persian Gulf , his tactical skills and calm direction enabled his crew to successfully engage seven heavily armed high-speed Iranian surface craft attacking the Vincennes in confined and confused waters
+(x4 / present-01
+	:ARG1 (x2 / person
+		:name (n / name
+			:op1 "Rogers")
+		:null_edge (x1 / capt.))
+	:instrument (x7 / letter
+		:ARG0-of (x8 / say-01
+			:ARG1 (x24 / enable-01
+				:ARG1 (x21 / and
+					:op1 (x12 / duty)
+					:location (x16 / world-region
+						:name (n1 / name
+							:op1 "Gulf")
+						:mod (x15 / country
+							:name (n2 / name
+								:op1 "Persian")))
+					:op2 (x20 / skill
+						:mod (x19 / tactical))
+					:op2 (x23 / direct-01
+						:mod (x22 / calm)))
+				:ARG1 (x29 / engage-01
+					:ARG1 (x26 / crew)
+					:manner (x28 / succeed-01)
+					:ARG2 (x35 / surface
+						:quant 7
+						:ARG1-of (x32 / arm-01
+							:manner (x31 / heavily))
+						:ARG1 (x34 / country
+							:name (n3 / name
+								:op1 "Iran"))
+						:ARG0-of (x37 / attack-01
+							:ARG1 (x39 / country
+								:name (n4 / name
+									:op1 "Vincennes"))
+							:location (x42 / and
+								:op1 (x41 / confine-01)
+								:op2 (x43 / confuse-01)
+								:op2 (x44 / water)
+								:op2 (xap0 / speed
+									:mod (x33 / high))))))))))
+
+# ::id 16
+# ::snt As a result , five craft were destroyed and two retreated
+(x9 / and
+	:op1 (x8 / destroy-01
+		:ARG1 (x6 / craft-01
+			:ARG1-of (x3 / result-01)
+			:quant 5))
+	:op2 (x11 / retreat
+		:quant 2))
+
+# ::id 17
+# ::snt The letter made no mention of the Iranian airliner , which Rogers ordered shot down that day in the mistaken belief that it was an Iranian fighter plane
+(x5 / mention-01
+	:ARG1 (x2 / letter)
+	:polarity -
+	:ARG1 (x9 / airliner
+		:mod (x8 / country
+			:name (n / name
+				:op1 "Iran"))
+		:ARG0-of (x13 / order-01
+			:ARG0 (x12 / person
+				:name (n1 / name
+					:op1 "Rogers"))
+			:ARG2 (x14 / shoot-02
+				:ARG1 (x17 / day
+					:mod (x16 / that))
+				:prep-in (x21 / believe-01
+					:mod (x20 / mistaken)
+					:ARG1 (x28 / plane
+						:mod (x26 / country
+							:name (n2 / name
+								:op1 "Iran"))
+						:ARG0-of (x27 / fight-01)))))))
+
+# ::id 18
+# ::snt Rogers and his crew were cleared of any responsibility for the mistake in a Defense Department investigation last year
+(x6 / clear-01
+	:ARG1 (x2 / and
+		:op1 (x1 / person
+			:name (n / name
+				:op1 "Rogers"))
+		:op2 (x4 / crew))
+	:ARG1 (x9 / responsible-41
+		:ARG1 x2
+		:mod (x8 / any)
+		:ARG2 (x12 / mistake-01))
+	:subevent-of (x17 / investigate-01
+		:null_edge (x15 / null_tag)
+		:null_edge (x16 / null_tag)
+		:time (x19 / year
+			:mod (x18 / last))))
+

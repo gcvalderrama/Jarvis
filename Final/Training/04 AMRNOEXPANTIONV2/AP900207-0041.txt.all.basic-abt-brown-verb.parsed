@@ -1,0 +1,375 @@
+# ::id 1
+# ::snt A grand jury's questioning of a polygraph expert who is helping investigate the bombing of Pan AM Flight 103 indicates the Justice Department's probe is entering a new phase
+(x3 / jury
+	:mod (x2 / grand)
+	:ARG0-of (x5 / question-01
+		:ARG1 (x21 / indicate-01
+			:ARG0 (x9 / person
+				:ARG1-of (e / expert-41)
+				:ARG2 (x8 / polygraph)
+				:ARG0-of (x12 / help-01
+					:ARG1 (x13 / investigate-01
+						:ARG1 (x15 / bomb-01
+							:ARG1 (x19 / fly-01
+								:op (f / flight)
+								:null_edge (x17 / null_tag))))))
+			:ARG1 (x28 / enter-01
+				:ARG0 (x26 / probe-01
+					:ARG0 (x23 / government-organization
+						:name (n / name
+							:op1 "Justice"
+							:op2 "Department")))
+				:ARG1 (x31 / phase
+					:mod (x30 / new))))))
+
+# ::id 2
+# ::snt A federal grand jury in Washington heard testimony last Friday from James Keefe , a polygraph expert for a security consulting firm hired by lawyers representing Pan Am in a civil suit over the Dec. 21 , 1988 bombing
+(x7 / hear-01
+	:ARG0 (x4 / jury
+		:mod (x2 / government-organization
+			:name (n / name
+				:op1 "federal"))
+		:mod (x3 / grand)
+		:location (x6 / city
+			:name (n1 / name
+				:op1 "Washington")))
+	:ARG1 (x8 / testify-01)
+	:ARG2 (x12 / name
+		:op1 "James"
+		:op2 "Keefe"
+		:ARG1-of (x17 / person
+			:ARG1-of (e / expert-41)
+			:ARG2 (x16 / polygraph)
+			:ARG2 (x22 / firm
+				:mod (x20 / security)
+				:mod (x21 / consulting)
+				:ARG1-of (x23 / hire-01
+					:ARG0 (x25 / lawyer
+						:ARG0-of (x26 / represent-01
+							:ARG1 (x27 / government-organization
+								:name (n2 / name
+									:op1 "Pan"
+									:op2 "Am"))
+							:ARG1 (x39 / bomb-01
+								:location (x32 / suit-01
+									:mod (x31 / civil))
+								:null_edge (x35 / festival
+									:name (n3 / name
+										:op1 "Dec."
+										:op2 "21"
+										:op3 ","
+										:op4 "1988")))))))))
+	:time (xap0 / date-entity
+		:weekday (x10 / friday
+			:mod (x9 / last))))
+
+# ::id 3
+# ::snt Keefe testified about giving polygraph tests to three Pan Am baggage handlers in Frankfurt , West Germany , during his appearance before the grand jury , said a source familiar with the case
+(x2 / testify-01
+	:ARG0 (x1 / person
+		:name (n / name
+			:op1 "Keefe"))
+	:ARG1 (x6 / test-01
+		:mod (x5 / polygraph)
+		:ARG1 (x12 / person
+			:ARG0-of (h / handle-01)
+			:quant 3
+			:mod (x9 / organization
+				:name (n1 / name
+					:op1 "Pan"))
+			:mod (x11 / baggage)
+			:location (x14 / country
+				:name (n2 / name
+					:op1 "Frankfurt")
+				:name (x16 / name
+					:op1 "West"
+					:op2 "Germany"))))
+	:time (x21 / appear-01
+		:time (x22 / before
+			:op1 (x25 / jury
+				:mod (x24 / grand))))
+	:ARG1 (x27 / say-01
+		:ARG1 (x29 / source
+			:ARG1-of (x30 / familiarize-01
+				:ARG2 (x33 / case)))))
+
+# ::id 4
+# ::snt Keefe told the panel two of the three baggage handlers failed the polygraph tests when they said they knew nothing about the transfer of a piece of luggage to Flight 103 , said the source , who spoke on the condition of anonymity
+(x2 / tell-01
+	:ARG0 (x1 / person
+		:name (n / name
+			:op1 "Keefe"))
+	:ARG2 (x4 / panel)
+	:ARG1 (x17 / say-01
+		:ARG1 (x11 / fail-01
+			:ARG2 (x10 / person
+				:ARG0-of (h / handle-01)
+				:quant 3
+				:ARG1 (x9 / baggage))
+			:ARG1 (x14 / test-01
+				:mod (x13 / polygraph)))
+		:ARG1 (x19 / know-01
+			:ARG0 (x23 / transfer-01
+				:ARG1 (x26 / piece
+					:part-of (x28 / luggage))
+				:ARG2 (x30 / fly-01
+					:op (f / flight))
+				:ARG1-of (x33 / say-01
+					:ARG0 (x35 / source))
+				:ARG1-of (x38 / speak-01
+					:condition (x43 / anonymity))))))
+
+# ::id 5
+# ::snt The source confirmed a report published in Tuesday's editions of the Syracuse Post Standard
+(x3 / confirm-01
+	:ARG0 (x2 / source)
+	:ARG1 (x5 / report-01
+		:ARG1-of (x6 / publish-01
+			:medium (x10 / edition
+				:part-of (x15 / standard
+					:mod (x14 / post-01
+						:mod (x13 / syracuse)))
+				:time (xap0 / date-entity
+					:weekday (x8 / tuesday))))))
+
+# ::id 6
+# ::snt Keefe's appearance before the grand jury indicates U.S. authorities are stepping up their investigation of the bombing over Lockerbie , Scotland that killed 259 passengers and crew members and 11 people on the ground
+(x8 / indicate-01
+	:ARG0 (x3 / appear-01
+		:ARG0 (x1 / person
+			:name (n / name
+				:op1 "Keefe"))
+		:time (x4 / before
+			:op1 (x7 / jury
+				:mod (x6 / grand))))
+	:ARG1 (x12 / step
+		:ARG0 (x10 / authority
+			:mod (x9 / country
+				:name (n1 / name
+					:op1 "U.S.")))
+		:ARG1 (x15 / investigate-01
+			:ARG1 (x18 / bomb-01
+				:name (x20 / name
+					:op1 "Lockerbie"
+					:location (x22 / country
+						:name (n2 / name
+							:op1 "Scotland")))
+				:ARG0-of (x24 / kill-01
+					:ARG1 (x27 / and
+						:op1 (x26 / passenger)
+						:op2 (x30 / and
+							:op1 (xap0 / person
+								:ARG0-of (x29 / have-org-role-91
+									:ARG2 (m / member)
+									:ARG1 (x28 / crew))
+								:null_edge (x35 / ground
+									:null_edge 11)))))))))
+
+# ::id 7
+# ::snt Anti-terrorism laws give federal prosecutors in Washington jurisdiction to bring cases in acts that occur abroad
+(x3 / give-01
+	:ARG0 (x2 / law)
+	:purpose (x10 / bring-01
+		:ARG0 x2
+		:ARG0 (x5 / person
+			:ARG0-of (p / prosecute-01)
+			:mod (x4 / government-organization
+				:name (n / name
+					:op1 "federal"))
+			:ARG1-of (x8 / jurisdiction
+				:location (x7 / city
+					:name (n1 / name
+						:op1 "Washington"))))
+		:ARG1 (x11 / case)
+		:ARG2 (x13 / act-02)
+		:ARG2 (x16 / abroad)))
+
+# ::id 8
+# ::snt Scottish police believe the bomb was in a suitcase that was placed aboard Pan Am Flight 103 in Frankfurt before it took off for London
+(x3 / believe-01
+	:ARG0 (x2 / police
+		:mod (x1 / country
+			:name (n / name
+				:op1 "Scotland")))
+	:ARG1 (x5 / bomb
+		:location (x9 / suitcase
+			:ARG1-of (x12 / place-01
+				:location (x13 / aboard
+					:op1 (x14 / government-organization
+						:name (n1 / name
+							:op1 "Pan"
+							:op2 "Am"
+							:op3 "Flight"
+							:op4 "103"
+							:op5 "in"
+							:op6 "Frankfurt")))
+				:time (x20 / before
+					:op1 (x22 / take-01
+						:null_edge (x25 / city
+							:name (n2 / name
+								:op1 "London"))))))))
+
+# ::id 9
+# ::snt Passengers and luggage were transferred to a Boeing 747 at London's Heathrow Airport for the trans-Atlantic leg of the trip to New York City
+(x5 / transfer-01
+	:ARG1 (x2 / and
+		:op1 (x1 / passenger)
+		:op2 (x3 / luggage))
+	:ARG1 (x14 / airport
+		:null_edge (x11 / city
+			:name (n / name
+				:op1 "London"))
+		:mod (x13 / country
+			:name (n1 / name
+				:op1 "Heathrow")))
+	:ARG2 (x18 / leg
+		:part-of (x21 / trip
+			:destination (x25 / city
+				:null_edge (x23 / null_tag)
+				:null_edge (x24 / country
+					:name (n2 / name
+						:op1 "York"))))))
+
+# ::id 10
+# ::snt The suitcase is believed to have been brought to Frankfurt aboard a plane from Malta
+(x4 / believe-01
+	:ARG1 (x2 / suitcase
+		:ARG1-of (x8 / bring-01
+			:ARG2 (x10 / country
+				:name (n / name
+					:op1 "Frankfurt"))
+			:destination (x13 / plane
+				:source (x15 / country
+					:name (n1 / name
+						:op1 "Malta"))))))
+
+# ::id 11
+# ::snt Investigators found clothing fragments in Lockerbie that were traced to a clothing store in Malta , according to a federal law enforcement source
+(x2 / find-02
+	:ARG0 (x1 / person
+		:ARG0-of (i / investigate-01))
+	:ARG1 (x4 / fragment
+		:mod (x3 / clothe-01)
+		:name (x6 / name
+			:op1 "Lockerbie")
+		:ARG1-of (x9 / trace-02
+			:ARG2 (x13 / store
+				:mod (x12 / clothe-01)
+				:location (x15 / country
+					:name (n / name
+						:op1 "Malta")))
+			:ARG2 (x23 / source
+				:mod (x21 / law
+					:mod (x20 / government-organization
+						:name (n1 / name
+							:op1 "federal")))
+				:ARG1 (x22 / enforce-01)))))
+
+# ::id 12
+# ::snt The bombing investigation has focused on a number of terrorist organizations , including the Popular Front for the Liberation of Palestine-General Command
+(x5 / focus-01
+	:ARG2 (x3 / investigate-01
+		:ARG1 (x2 / bomb-01))
+	:ARG2 (x11 / organization
+		:quant (x8 / number)
+		:mod (x10 / terrorist)
+		:ARG1 (x15 / government-organization
+			:name (n / name
+				:op1 "Popular"
+				:op2 "Front")
+			:ARG3 (x19 / liberation
+				:ARG1 (x22 / command-02
+					:mod (x21 / palestine-general))))))
+
+# ::id 13
+# ::snt Polygraph tests can not be admitted in court , but the questions Keefe asked the baggage handlers and their responses may provide investigators with new leads in the case
+(x3 / possible
+	:domain (x6 / admit-01
+		:ARG1 (x2 / test
+			:ARG1 (x1 / polygraph))
+		:location (x8 / court)
+		:ARG1 (x18 / and
+			:op2 (x14 / ask-02
+				:ARG2 (x12 / question-01)
+				:ARG0 (x13 / person
+					:name (n / name
+						:op1 "Keefe"))
+				:ARG2 (x17 / person
+					:ARG0-of (h / handle-01)
+					:mod (x16 / baggage))))
+		:ARG1 (x21 / possible
+			:domain (x22 / provide-01
+				:ARG0 (x20 / thing
+					:ARG2-of (r / respond-01))
+				:ARG1 (x23 / person
+					:ARG0-of (i / investigate-01))
+				:ARG1 (x26 / lead-03
+					:mod (x25 / new)
+					:ARG1 (x29 / case))))))
+
+# ::id 14
+# ::snt Keefe works for Interfor Inc. , a New York-based security consulting firm retained by lawyers representing Pan Am's insurance carrier in a $ 300 million damage suit filed by relatives of people killed in the bombing
+(x2 / work-01
+	:ARG0 (x1 / person
+		:name (n / name
+			:op1 "Keefe"))
+	:ARG3 (x12 / firm
+		:poss (x4 / government-organization
+			:name (n1 / name
+				:op1 "Interfor"
+				:op2 "Inc."))
+		:location (x8 / city
+			:name (n2 / name
+				:op1 "New"
+				:op2 "York-based"))
+		:mod (x10 / security)
+		:mod (x11 / consulting)
+		:ARG1-of (x13 / retain-01
+			:ARG0 (x15 / lawyer
+				:ARG0-of (x16 / represent-01
+					:ARG1 (x21 / carry-01
+						:poss (x17 / government-organization
+							:name (n3 / name
+								:op1 "Pan"
+								:op2 "Am"))
+						:mod (x20 / insure-02))
+					:ARG0 (x28 / suit-01
+						:ARG1 (x27 / damage-01)
+						:ARG1-of (x29 / file-01
+							:ARG0 (x31 / relative
+								:ARG1-of (x34 / person
+									:ARG1-of (k / kill-01)
+									:location (x37 / bomb-01))))))))))
+
+# ::id 15
+# ::snt He was served with the grand jury subpoena on Jan. 25 as he stepped off a plane at John F. Kennedy International Airport in New York following his return from Europe , said the source
+(x33 / say-01
+	:ARG1 (x3 / serve-01
+		:ARG1 (x1 / he)
+		:ARG1 (x8 / subpoena
+			:mod (x6 / grand)
+			:mod (x7 / jury))
+		:time (x10 / date-entity)
+		:time (x14 / step-01
+			:ARG1 (x17 / plane)
+			:location (x23 / airport
+				:mod (x19 / country
+					:name (n / name
+						:op1 "John"))
+				:null_edge (x20 / country
+					:name (n1 / name
+						:op1 "F."))
+				:null_edge (x21 / country
+					:name (n2 / name
+						:op1 "Kennedy"))
+				:location (x26 / country
+					:name (n3 / name
+						:op1 "York")
+					:null_edge (x25 / null_tag)))
+			:ARG1-of (x27 / follow-01
+				:ARG2 (x29 / return-01
+					:ARG4 (x31 / continent
+						:name (n4 / name
+							:op1 "Europe"))))))
+	:ARG1 (x35 / source))
+
