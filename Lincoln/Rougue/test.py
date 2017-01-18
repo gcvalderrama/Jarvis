@@ -183,19 +183,19 @@ write_excel = True
 
 #rouge_v2('../LAB/ManualSummaries/*.txt', '../LAB/RSTSummaries/', 'RST Rouge')
 #rouge_v2('../LAB/ManualSummaries/*.txt', '../LAB/ConceptualSummaries/', 'ConceptualSummariesNer')
-#rouge_v2('../LAB/ManualSummaries/*.txt', '../LAB/ConceptualSummariesClean/', 'ConceptualSummaries')
+rouge_v2('../LAB/ManualSummaries/*.txt', '../LAB/ConceptualSummariesClean/', 'ConceptualSummaries')
 #rouge_v2('../LAB/ManualSummaries/*.txt', '../LAB/AMRRSTSummaries55/', 'AMRRST50')
 rouge_v2('../LAB/ManualSummaries/*.txt', '../LAB/AMRRSTSummaries65/', 'AMRRST65V30')
 #rouge_v2('../LAB/ManualSummaries/*.txt', '../LAB/AMRRSTSummaries/', 'AMRRST75')
 #rouge_v2('../LAB/ManualSummaries/*.txt', '../LAB/AMRRSTSummaries85/', 'AMRRST85')
 #rouge_v2('../LAB/ManualSummaries/*.txt', '../LAB/AMRRSTSummaries95/', 'AMRRST95')
 
-
+rouge_v2('../LAB/ManualSummaries/*.txt', '../LAB/ConceptualSummariesNONERV2/', 'ConceptualNONERV2')
 #rouge_v2('../LAB/ManualSummaries/*.txt', '../LAB/AMRRSTSummaries65V50/', 'AMRRST65V50')
 #rouge_v2('../LAB/ManualSummaries/*.txt', '../LAB/AMRRSTSummaries65V70/', 'AMRRST65V70')
 
-rouge_v2('../LAB/ManualSummaries/*.txt', '../LAB/NLGSummary/', 'NLGPARAGRAPH')
-rouge_v2('../LAB/ManualSummaries/*.txt', '../LAB/NLGSummarySentence/', 'NLGSENTENCE')
+#rouge_v2('../LAB/ManualSummaries/*.txt', '../LAB/NLGSummary/', 'NLGPARAGRAPH')
+#rouge_v2('../LAB/ManualSummaries/*.txt', '../LAB/NLGSummarySentence/', 'NLGSENTENCE')
 
 
 if write_excel:
