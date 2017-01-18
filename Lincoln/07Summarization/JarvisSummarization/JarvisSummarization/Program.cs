@@ -217,11 +217,11 @@ namespace JarvisSummarization
             //ClearDirectory(rstSummariesDir); 
             //RSTSummary(ManualSummaryDir, RstInputDIr, rstSummariesDir);
                         
-            var amrInputDir = @"D:\Tesis2016\Jarvis\Lincoln\05AMRParsing\OutputClean2";
-            var ConceptualSummaryDir = @"D:\Tesis2016\Jarvis\Lincoln\LAB\ConceptualSummariesNoNERV2";
+            
+            var ConceptualSummaryDir = @"D:\Tesis2016\Jarvis\Lincoln\LAB\ConceptualSummariesNERV2";
             ClearDirectory(ConceptualSummaryDir);
-            ConceptualSummary(ManualSummaryDir, 
-                @"D:\Tesis2016\Jarvis\Final\Training\05 AMRNOEXPANTIONXMLV2",
+            ConceptualSummary(ManualSummaryDir,
+                @"D:\Tesis2016\Jarvis\Final\Training\05AMREXPANTIONXMLV2",
                 ConceptualSummaryDir);
 
             //var ConceptualSummaryDir2 = @"D:\Tesis2016\Jarvis\Lincoln\LAB\ConceptualSummariesCleanRST";
