@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GenerateDocsFromSintacticParser;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -25,13 +26,20 @@ namespace Jarvis
         {
             return this.Text;
         }
-        public void Read(XElement mention)
+        public void Read(XElement mention, IList<Sentence> sentences)
         {
-            this.Text = mention.Element("text").Value;
+            this.Sentence = int.Parse(mention.Element("sentence").Value);
             this.HeadLoc = int.Parse(mention.Element("head").Value);
             this.Start = int.Parse(mention.Element("start").Value);
             this.End = int.Parse(mention.Element("end").Value);
-            this.Sentence = int.Parse(mention.Element("sentence").Value);            
+            var senInstance = sentences.Where(c => c.Id == this.Sentence).First();
+
+            var sb = new StringBuilder();
+            for (int i = Start-1; i < End-1; i++)
+            {
+                sb.Append(WordHelper.ProcessWord(senInstance, i));
+            }            
+            this.Text = sb.ToString();                        
         }
         public bool Contains(Mention mention)
         {

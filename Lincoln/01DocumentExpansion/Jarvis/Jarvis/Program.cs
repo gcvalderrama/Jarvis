@@ -54,7 +54,7 @@ namespace Jarvis
                 foreach (var mention in mentions)
                 {
                     var m = new Mention();
-                    m.Read(mention);
+                    m.Read(mention, Sentences);
                     m.Head = Sentences.Where(c=>c.Id ==m.Sentence).First().Tokens.Where(c=>c.SentenceLoc == m.HeadLoc).First();
                     if (mention.Attributes("representative").Count() != 0)
                     {
