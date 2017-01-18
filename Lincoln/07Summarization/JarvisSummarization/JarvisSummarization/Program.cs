@@ -218,9 +218,11 @@ namespace JarvisSummarization
             //RSTSummary(ManualSummaryDir, RstInputDIr, rstSummariesDir);
                         
             var amrInputDir = @"D:\Tesis2016\Jarvis\Lincoln\05AMRParsing\OutputClean2";
-            var ConceptualSummaryDir = @"D:\Tesis2016\Jarvis\Lincoln\LAB\ConceptualSummariesClean";
-            //ClearDirectory(ConceptualSummaryDir);
-            //ConceptualSummary(ManualSummaryDir, amrInputDir, ConceptualSummaryDir);
+            var ConceptualSummaryDir = @"D:\Tesis2016\Jarvis\Lincoln\LAB\ConceptualSummariesNoNERV2";
+            ClearDirectory(ConceptualSummaryDir);
+            ConceptualSummary(ManualSummaryDir, 
+                @"D:\Tesis2016\Jarvis\Final\Training\05 AMRNOEXPANTIONXMLV2",
+                ConceptualSummaryDir);
 
             //var ConceptualSummaryDir2 = @"D:\Tesis2016\Jarvis\Lincoln\LAB\ConceptualSummariesCleanRST";
             //ClearDirectory(ConceptualSummaryDir2);
@@ -230,15 +232,15 @@ namespace JarvisSummarization
             //    ConceptualSummaryDir2);
 
 
-            var ConceptualSummaryDir2 = @"D:\Tesis2016\Jarvis\Lincoln\LAB\ConceptualSummariesNONERV2";
-            var ConceptualSummaryJSONDir = @"D:\Tesis2016\Jarvis\Lincoln\LAB\ConceptualSummariesJSONNONERV2";
-            ClearDirectory(ConceptualSummaryDir2);
-            ClearDirectory(ConceptualSummaryJSONDir);
-            ConceptualRSTSummary(@"D:\Tesis2016\Jarvis\Final\Training\09 Manual Summaries",
-                @"D:\Tesis2016\Jarvis\Final\Training\04 RSTNOEXPANTIONV2",
-                @"D:\Tesis2016\Jarvis\Final\Training\05 AMRNOEXPANTIONXMLV2",
-                ConceptualSummaryJSONDir,
-                ConceptualSummaryDir2);
+            //var ConceptualSummaryDir2 = @"D:\Tesis2016\Jarvis\Lincoln\LAB\ConceptualSummariesNONERV2";
+            //var ConceptualSummaryJSONDir = @"D:\Tesis2016\Jarvis\Lincoln\LAB\ConceptualSummariesJSONNONERV2";
+            //ClearDirectory(ConceptualSummaryDir2);
+            //ClearDirectory(ConceptualSummaryJSONDir);
+            //ConceptualRSTSummary(@"D:\Tesis2016\Jarvis\Final\Training\09 Manual Summaries",
+            //    @"D:\Tesis2016\Jarvis\Final\Training\04 RSTNOEXPANTIONV2",
+            //    @"D:\Tesis2016\Jarvis\Final\Training\05 AMRNOEXPANTIONXMLV2",
+            //    ConceptualSummaryJSONDir,
+            //    ConceptualSummaryDir2);
 
 
 
