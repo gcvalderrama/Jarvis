@@ -1,0 +1,743 @@
+# ::id 1
+# ::snt Gen. Colin L. Powell , 52 , won unanimous approval from the Senate Armed Services Committee on Wednesday to be chairman of the Joint Chiefs of Staff , with both Republicans and Democrats hailing Colin L. Powell  as an outstanding choice
+(x8 / win-01
+	:ARG0 (x2 / person
+		:name (n / name
+			:op1 "Colin"
+			:op2 "L."
+			:op3 "Powell"))
+	:null_edge 52
+	:ARG1 (x10 / approve-01
+		:mod (x9 / unanimous)
+		:ARG0 (x16 / organization
+			:name (n1 / name
+				:op1 "Committee")
+			:null_edge (x13 / government-organization
+				:name (n2 / name
+					:op1 "Senate"))
+			:null_edge (x14 / newspaper
+				:name (n3 / name
+					:op1 "Armed"))
+			:null_edge (x15 / null_tag)))
+	:time (x18 / wednesday)
+	:ARG2 (x21 / have-org-role-91
+		:ARG2 (c / chairman)
+		:ARG1 (x34 / hail-02
+			:ARG1 (x32 / and
+				:mod (x30 / both)
+				:op2 (x33 / have-org-role-91
+					:ARG1 (p / political-party
+						:name (n4 / name
+							:op1 "Democrats")))
+				:op1 (xap1 / person
+					:op1 "Republican"))
+			:ARG2 (x41 / choices
+				:null_edge (x40 / outstanding)))
+		:name (x35 / name
+			:op1 "Colin"
+			:op2 "L."
+			:op3 "Powell")
+		:ARG1 (xap0 / person
+			:null_edge (x25 / null_tag
+				:null_edge (x24 / null_tag)
+				:mod (x27 / staff)))))
+
+# ::id 2
+# ::snt The Senate panel voted 20 to 0 to recommend Powell's nomination to the full Senate
+(x4 / vote-01
+	:ARG0 (x3 / panel
+		:poss (x2 / government-organization
+			:name (n / name
+				:op1 "Senate")))
+	:null_edge 20
+	:duration 0
+	:ARG1 (x9 / recommend-01
+		:ARG1 (x12 / nominate-01
+			:ARG0 (x10 / person
+				:name (n1 / name
+					:op1 "Powell"))
+			:poss (x16 / government-organization
+				:name (n2 / name
+					:op1 "Senate")
+				:mod (x15 / full)))))
+
+# ::id 3
+# ::snt If confirmed , Powell , who would be the youngest officer to head the Joint Chiefs , would replace Adm. William J. Crowe Jr. on Oct. 1
+(x19 / replace-01
+	:ARG0 (x4 / person
+		:name (n / name
+			:op1 "Powell")
+		:ARG0-of (x11 / have-org-role-91
+			:ARG2 (o / officer)
+			:ARG1 (x10 / youngest
+				:time (x2 / confirm-01))
+			:ARG1 (xap0 / person
+				:ARG2 (x13 / head-01)
+				:null_edge (x16 / null_tag
+					:null_edge (x15 / null_tag)))))
+	:ARG1 (x21 / person
+		:name (n1 / name
+			:op1 "William"
+			:op2 "J."
+			:op3 "Crowe"
+			:op4 "Jr.")
+		:ARG0-of (x20 / adm.))
+	:time (x26 / date-entity))
+
+# ::id 4
+# ::snt The committee action came after several hours of a confirmation hearing at which Powell told the panel that Colin L. Powell  has some level of confidence that reforms might succeed in the Soviet Union
+(x4 / come-01
+	:ARG1 (x3 / action
+		:ARG0 (x2 / committee))
+	:time (x5 / after
+		:quant (x6 / several
+			:op1 (x7 / temporal-quantity
+				:unit (h / hour)
+				:mod (x11 / hearing
+					:mod (x10 / confirm-01)
+					:ARG1-of (x15 / tell-01
+						:ARG0 (x14 / person
+							:name (n / name
+								:op1 "Powell"))
+						:ARG2 (x17 / panel)
+						:ARG1 (x22 / have-03
+							:ARG0 (x19 / person
+								:name (n1 / name
+									:op1 "Colin"
+									:op2 "L."
+									:op3 "Powell"))
+							:ARG1 (x24 / level
+								:mod (x23 / some)
+								:mod (x26 / confidence)
+								:mod (x30 / succeed-01
+									:ARG0 (x28 / reform-01)
+									:ARG1 (x33 / country
+										:name (n2 / name
+											:op1 "Soviet"
+											:op2 "Union")))))))))))
+
+# ::id 5
+# ::snt Such reforms , Colin L. Powell  said , would give the United States opportunities to reshape our defense programs , our national security policies and our armed forces ...
+(x7 / say-01
+	:ARG0 (x2 / reform-01
+		:mod (x1 / such))
+	:ARG0 (x4 / person
+		:name (n / name
+			:op1 "Colin"
+			:op2 "L."
+			:op3 "Powell"))
+	:ARG1 (x12 / country
+		:name (n1 / name
+			:op1 "United"
+			:op2 "States"))
+	:ARG1 (x14 / opportunity)
+	:ARG1 (x16 / reshape
+		:ARG0 x12
+		:ARG1 (x25 / and
+			:op1 (x19 / program
+				:mod (x18 / defense)
+				:poss (x28 / force
+					:ARG1-of (x27 / arm-01)))
+			:op2 (x24 / policy
+				:mod (x23 / security
+					:mod (x22 / nation))))))
+
+# ::id 6
+# ::snt But Colin L. Powell  warned that changes in Soviet military capabilities , not budget restraints , should prompt the scale-back and called for continued modernization of long-range nuclear weapons
+(x1 / contrast-01
+	:ARG2 (x21 / and
+		:op1 (x5 / warn-01
+			:ARG0 (x3 / newspaper
+				:name (n / name
+					:op1 "L."
+					:op2 "Powell")
+				:ARG0-of (x2 / person
+					:name (n1 / name
+						:op1 "Colin")))
+			:ARG1 (x17 / recommend-01
+				:ARG1 (x18 / prompt-01
+					:ARG0 (x7 / change-01
+						:location (x11 / capable-41
+							:ARG2 (x10 / military)
+							:ARG2 (xap1 / country
+								:ARG0-of (xap0 / name
+									:op1 "Soviet"
+									:op1 (x15 / restrain-01
+										:mod (x14 / budget))))))
+					:ARG1 (x20 / scale-back))))
+		:op2 (x22 / call-01
+			:ARG1 (x25 / modernize-01
+				:ARG1-of (x24 / continue-01)
+				:ARG1 (x29 / weapon
+					:mod (x28 / nucleus)
+					:ARG1-of (xap2 / range-01
+						:ARG2 (x27 / long)))))))
+
+# ::id 7
+# ::snt the scale-back  is very premature to start basing any of our plans and programs and actions on assumptions of Gorbachev's success , said Powell
+(x24 / say-01
+	:ARG1 (x5 / premature
+		:domain (x2 / scale-back)
+		:degree (x4 / very)
+		:domain (x7 / start-01
+			:ARG1 (x8 / base-02
+				:ARG1 (x9 / any)
+				:ARG0 (x13 / and
+					:op1 (x12 / plan-01
+						:ARG1 (x15 / and
+							:op2 (x16 / action)))
+					:op2 (x14 / program))
+				:ARG2 (x18 / assumption
+					:ARG1 (x22 / succeed-01
+						:ARG0 (x20 / person
+							:name (n1 / name
+								:op1 "Gorbachev")))))
+			:ARG1 x13))
+	:ARG0 (x25 / person
+		:name (n / name
+			:op1 "Powell")))
+
+# ::id 8
+# ::snt But Colin L. Powell  think it is not premature to begin thinking about the scale-back
+(x1 / contrast-01
+	:ARG2 (x5 / think-01
+		:ARG0 (x2 / person
+			:name (n / name
+				:op1 "Colin"
+				:op2 "L."
+				:op3 "Powell"))
+		:ARG1 (x9 / premature
+			:domain (x11 / begin-01
+				:ARG1 (x12 / think-01
+					:ARG1 (x15 / scale-back))))))
+
+# ::id 9
+# ::snt Colin L. Powell  comments came as senior Bush Administration officials offered increasingly gloomy assessments of Gorbachev's prospects for success
+(x5 / come-01
+	:ARG1 (x4 / thing
+		:ARG1-of (c / comment-02)
+		:name (x1 / name
+			:op1 "Colin"
+			:op2 "L."
+			:op3 "Powell"))
+	:time (x11 / offer-01
+		:ARG1 (x14 / assess-01
+			:mod (x13 / gloomy
+				:ARG1-of (x12 / increase-01))
+			:ARG1 (x18 / prospect
+				:poss (x16 / person
+					:name (n / name
+						:op1 "Gorbachev"))
+				:mod (x20 / succeed-01)))
+		:ARG0 (xap0 / person
+			:ARG0-of (x10 / have-org-role-91
+				:ARG2 (o / official)
+				:mod (x7 / senior)
+				:ARG1 (x9 / administer-01
+					:mod (x8 / person
+						:name (n1 / name
+							:op1 "Bush")))))))
+
+# ::id 10
+# ::snt On the eve of a key meeting between Secretary of State James A. Baker III and Soviet Foreign Minister Eduard A. Shevardnadze , several U.S. officials have backed away from earlier expressions of active U.S. support for the Soviet leader's reform efforts
+(x28 / back-01
+	:ARG0 (x36 / support-01
+		:ARG1 (x3 / eve
+			:op1 (x7 / meet-03
+				:mod (x6 / key)
+				:topic (x16 / and
+					:op1 (x9 / have-org-role-91
+						:ARG2 (s / secretary)
+						:poss (x12 / company
+							:name (n2 / name
+								:op1 "James"
+								:op2 "A."
+								:op3 "Baker"
+								:op4 "III")
+							:ARG0-of (x11 / state))
+						:name (x20 / name
+							:op1 "Eduard"
+							:op2 "A."
+							:op3 "Shevardnadze"
+							:mod (x17 / country
+								:name (n3 / name
+									:op1 "Soviet"))
+							:ARG0-of (x18 / foreign)
+							:ARG0-of (x19 / have-org-role-91
+								:ARG2 (m / minister)))))))
+		:ARG0 (x32 / expression
+			:time (x31 / early))
+		:manner (x34 / active)
+		:mod (x35 / country
+			:name (n / name
+				:op1 "U.S."))
+		:ARG1 (x43 / effort
+			:null_edge (x40 / lead-02
+				:mod (xap2 / country
+					:ARG0-of (xap1 / name
+						:op1 "Soviet")))
+			:purpose (x42 / reform-01)))
+	:ARG0 (xap0 / person
+		:quant (x24 / several)
+		:ARG0-of (x26 / have-org-role-91
+			:ARG2 (o / official)
+			:ARG1 (x25 / country
+				:name (n1 / name
+					:op1 "U.S.")))))
+
+# ::id 11
+# ::snt Expects Backward Steps Reflecting the rising skepticism , Senate Armed Services Committee Chairman Sam Nunn (D-Ga )
+(x1 / expect-01
+	:ARG1 (x3 / step-01
+		:direction (x2 / backward)
+		:ARG1 (x4 / reflect-01
+			:ARG1 (x7 / skepticism
+				:ARG1-of (x6 / rise-01)
+				:poss (x9 / government-organization
+					:name (n / name
+						:op1 "Senate"))
+				:name (x14 / name
+					:op1 "Sam"
+					:op2 "Nunn"
+					:ARG0-of (x10 / newspaper
+						:name (n1 / name
+							:op1 "Armed"))
+					:null_edge (x11 / null_tag)
+					:ARG0-of (x13 / have-org-role-91
+						:ARG2 (c / chairman)))))))
+
+# ::id 12
+# ::snt told Powell : Expects Backward Steps Reflecting the rising skepticism , Senate Armed Services Committee Chairman Sam Nunn (D-Ga ) certainly , Colin L. Powell  think , have to be prepared for backward steps to occur in the Soviet Union
+(x1 / tell-01
+	:ARG2 (x2 / person
+		:name (n / name
+			:op1 "Powell"))
+	:ARG2 (x12 / government-organization
+		:name (n1 / name
+			:op1 "Senate"))
+	:null_edge (x27 / think-01
+		:condition (x5 / backward)
+		:condition (x7 / reflect-01
+			:ARG0 (x6 / step-01)
+			:ARG1 (x10 / skepticism
+				:ARG1 x6
+				:ARG1-of (x9 / rise-01)))
+		:ARG0 (x17 / newspaper
+			:name (n2 / name
+				:op1 "Sam"
+				:op2 "Nunn")
+			:ARG0-of (x13 / newspaper
+				:name (n4 / name
+					:op1 "Armed"))
+			:null_edge (x14 / null_tag)
+			:ARG0-of (x16 / have-org-role-91
+				:ARG2 (c / chairman)
+				:ARG1 (x15 / committee))
+			:ARG0-of (x20 / d-ga))
+		:mod (x22 / certain)
+		:ARG0 (x24 / person
+			:name (n3 / name
+				:op1 "Colin"
+				:op2 "L."
+				:op3 "Powell")))
+	:ARG1 (x29 / have-03
+		:condition (x32 / prepare-02
+			:ARG2 (x35 / step-01
+				:direction (x34 / backward)
+				:ARG2 (x40 / country
+					:name (n5 / name
+						:op1 "Soviet"
+						:op2 "Union"))))))
+
+# ::id 13
+# ::snt Almost inevitably , Expects Backward Steps Reflecting the rising skepticism , Senate Armed Services Committee Chairman Sam Nunn (D-Ga ) will have disruptions and changes , perhaps with suddenness , perhaps at times with violence
+(x23 / have-03
+	:null_edge (x2 / inevitably
+		:mod (x1 / almost))
+	:null_edge (x4 / expect-01
+		:ARG1 (x6 / step-01
+			:direction (x5 / backward)
+			:ARG1 (x7 / reflect-01
+				:ARG1 (x10 / skepticism
+					:ARG1-of (x9 / rise-01)))))
+	:ARG0 (x17 / newspaper
+		:name (n / name
+			:op1 "Sam"
+			:op2 "Nunn")
+		:ARG0-of (x13 / newspaper
+			:name (n1 / name
+				:op1 "Armed")
+			:ARG1 (x12 / government-organization
+				:name (n2 / name
+					:op1 "Senate")))
+		:null_edge (x14 / null_tag)
+		:ARG0-of (x16 / have-org-role-91
+			:ARG2 (c / chairman)
+			:ARG1 (x15 / committee))
+		:ARG0-of (x20 / d-ga))
+	:ARG1 (x25 / and
+		:op1 (x24 / disruption)
+		:op2 (x26 / change-01)
+		:op1 (x30 / suddenness))
+	:ARG1 (x36 / violence))
+
+# ::id 14
+# ::snt In choosing the 31-year veteran to lead the nation's 2 million troops , President Bush skipped over several more senior military officers
+(x17 / skip-01
+	:purpose (x2 / choose-01
+		:ARG1 (x5 / veteran
+			:ARG1 (x7 / lead-01
+				:ARG1 (x13 / troop
+					:poss (x9 / nation)))))
+	:ARG0 (x16 / person
+		:name (n / name
+			:op1 "Bush")
+		:ARG0-of (x15 / have-org-role-91
+			:ARG2 (p / president)))
+	:ARG0 (xap0 / person
+		:quant (x19 / several)
+		:ARG0-of (x23 / have-org-role-91
+			:ARG2 (o / officer)
+			:mod (x21 / senior
+				:degree (x20 / more))
+			:ARG1 (x22 / military))))
+
+# ::id 15
+# ::snt an easier decision simply to go down a few numbers , as we say , and pick the next senior officer  is an easier decision simply to go down a few numbers , as we say , and pick the next senior officer , said Sen. John W. Warner (R-Va )
+(x25 / thing
+	:ARG1-of (d / decide-01)
+	:ARG0 (x3 / thing
+		:ARG1-of (d1 / decide-01)
+		:ARG1 (x2 / easy)
+		:ARG1 (x16 / and
+			:op1 (x6 / go-06
+				:manner (x4 / simple)
+				:ARG1 (x10 / number
+					:quant (x9 / few)))
+			:op1 (x14 / say-01
+				:ARG0 (x13 / we))
+			:op2 (x17 / pick-01
+				:ARG1 (x21 / have-org-role-91
+					:ARG2 (o1 / officer)
+					:mod (x19 / next)
+					:mod (x20 / senior)))))
+	:ARG1 (x24 / easy)
+	:ARG1 (x38 / and
+		:op1 (x28 / go-06
+			:manner (x26 / simple)
+			:ARG1 (x32 / number
+				:quant (x31 / few)))
+		:op1 (x36 / say-01
+			:ARG0 (x35 / we))
+		:op2 (x39 / pick-01
+			:ARG1 (x43 / have-org-role-91
+				:ARG2 (o / officer)
+				:mod (x41 / next)
+				:mod (x42 / senior)
+				:name (x47 / name
+					:op1 "John"
+					:op2 "W."
+					:op3 "Warner"
+					:ARG0-of (x46 / sen.)
+					:ARG0-of (x51 / r-va))))))
+
+# ::id 16
+# ::snt , the Senate panel's ranking minority member
+(x8 / have-org-role-91
+	:ARG2 (m / member)
+	:time (x4 / panel
+		:poss (x3 / government-organization
+			:name (n / name
+				:op1 "Senate")))
+	:mod (x7 / minority
+		:mod (x6 / rank-01)))
+
+# ::id 17
+# ::snt 
+(x1 / contrast-01
+	:ARG2 (x36 / and
+		:location (x2 / here)
+		:op1 (x6 / select-01
+			:mod (x5 / deep))
+		:op1 (x11 / convey-01
+			:ARG2 (x19 / have-org-role-91
+				:ARG2 (m / member)
+				:time (x15 / panel
+					:poss (x14 / government-organization
+						:name (n / name
+							:op1 "Senate")))
+				:mod (x18 / minority
+					:mod (x17 / rank-01)))
+			:ARG1 (x27 / think-01
+				:ARG0 (x23 / and
+					:op1 (x22 / have-org-role-91
+						:ARG2 (p / president))
+					:op2 (x26 / have-org-role-91
+						:ARG2 (p1 / person
+							:ARG0-of (a / advise-01))
+						:mod (x25 / principal)))
+				:ARG1 (x29 / and
+					:op1 (x28 / careful)
+					:op2 (x30 / long))
+				:ARG1 (x34 / select-01
+					:mod (x32 / this)
+					:mod (x33 / particular))))
+		:op2 (x44 / think-01
+			:ARG0-of (x43 / have-org-role-91
+				:ARG2 (m1 / member)
+				:time (x39 / panel
+					:poss (x38 / government-organization
+						:name (n1 / name
+							:op1 "Senate")))
+				:mod (x42 / minority
+					:ARG1 x39
+					:mod (x41 / rank-01)))
+			:ARG1 (x48 / wise))))
+
+# ::id 18
+# ::snt Echoing praise for Powell , who would be the first black to head the nation's military services , Sen. Albert Gore Jr. (D-Tenn )
+(x1 / echo
+	:ARG1 (x2 / praise-01
+		:ARG1 (x4 / person
+			:name (n / name
+				:op1 "Powell")
+			:null_edge (x11 / black
+				:ARG2 (x13 / head-01
+					:ARG1 (x18 / service
+						:poss (x15 / nation)
+						:mod (x17 / military)))))))
+
+# ::id 19
+# ::snt called Powell's appointment one of the finest appointments that the President and his principal advisers  President has made
+(x1 / call-01
+	:ARG1 (x6 / include-91
+		:ARG1 (x4 / appoint-01
+			:ARG0 (x2 / person
+				:name (n / name
+					:op1 "Powell")))
+		:ARG2 (x9 / appoint-01
+			:mod (x8 / finest)
+			:topic (x13 / and
+				:op1 (x12 / have-org-role-91
+					:ARG2 (p / president))
+				:op2 (x16 / have-org-role-91
+					:ARG2 (p1 / person
+						:ARG0-of (a / advise-01))
+					:mod (x15 / principal))))))
+
+# ::id 20
+# ::snt Nunn said that Powell offered tremendous ... talent , insight , and experience
+(x2 / say-01
+	:ARG0 (x1 / person
+		:name (n / name
+			:op1 "Nunn"))
+	:ARG1 (x5 / offer-01
+		:ARG0 (x4 / person
+			:name (n1 / name
+				:op1 "Powell"))
+		:null_edge (x12 / and
+			:op1 (x8 / talent
+				:mod (x6 / tremendous))
+			:op2 (x10 / insight)
+			:op3 (x13 / experience-01))))
+
+# ::id 21
+# ::snt Powell now serves as commander of the U.S. Forces Command , which oversees all U.S.-based troops
+(x3 / serve-01
+	:ARG0 (x1 / person
+		:name (n / name
+			:op1 "Powell"))
+	:time (x2 / now)
+	:ARG1 (x5 / have-org-role-91
+		:ARG2 (c / commander)
+		:ARG1 (x10 / command-02
+			:null_edge (x8 / country
+				:name (n1 / name
+					:op1 "U.S."))
+			:ARG0-of (x13 / oversee-01
+				:ARG1 (x16 / troop
+					:quant (x14 / all)
+					:ARG1-of (xap0 / base-01
+						:location (x15 / country
+							:name (n2 / name
+								:op1 "U.S.-based"))))))))
+
+# ::id 22
+# ::snt Those include the active and reserve forces that are slated to play a major role in the drug war
+(x2 / include-01
+	:ARG1 (x5 / and
+		:op1 (x4 / active)
+		:op2 (x6 / reserve-01)
+		:op3 (x7 / force
+			:ARG2 (x12 / play-01
+				:ARG1 (x19 / war
+					:mod (x14 / major)
+					:ARG1 (x18 / drug))))))
+
+# ::id 23
+# ::snt Responding to lawmaker's concerns , Powell said that lawmaker's  would make the military's role in the drug war one of his top priorities
+(x8 / say-01
+	:ARG1 (x5 / concern-01)
+	:ARG0 (x7 / person
+		:name (n / name
+			:op1 "Powell"))
+	:ARG1 (x13 / make-01
+		:ARG2 (x17 / role
+			:poss (x15 / military)
+			:topic (x21 / war
+				:ARG1 (x20 / drug)))
+		:ARG1 (x26 / priority
+			:mod (x25 / top))))
+
+# ::id 24
+# ::snt Colin L. Powell  have no reservations and Colin L. Powell  know that none of my colleagues have any reservations , said Powell
+(x21 / say-01
+	:ARG1 (x11 / know-01
+		:ARG0 (x7 / and
+			:op1 (x1 / person
+				:name (n1 / name
+					:op1 "Colin"
+					:op2 "L."
+					:op3 "Powell")
+				:ARG0-of (x4 / have-03
+					:polarity -
+					:ARG1 (x6 / reservation)))
+			:op2 (x8 / name
+				:op1 "Colin"
+				:op2 "L."
+				:op3 "Powell"))
+		:ARG1 (x17 / have-03
+			:ARG0 (x16 / colleague
+				:quant (x13 / none))
+			:ARG1 (x19 / reservation
+				:mod (x18 / any))))
+	:ARG0 (x22 / person
+		:name (n / name
+			:op1 "Powell")))
+
+# ::id 25
+# ::snt The American people have spoken clearly on this one
+(x5 / speak-01
+	:ARG0 (x3 / people
+		:null_edge (x2 / country
+			:name (n / name
+				:op1 "American")))
+	:manner (x6 / clear)
+	:null_edge (x7 / null_tag
+		:location (x9 / one
+			:mod (x8 / this))))
+
+# ::id 26
+# ::snt my colleagues  ought to be concerned about this cancer that is in my colleagues  midst , and Colin L. Powell  think we do have capabilities to bring to this war , Colin L. Powell  added
+(x35 / add-01
+	:ARG1 (x17 / and
+		:op1 (x6 / concern-01
+			:ARG1 (x2 / colleague)
+			:ARG0 (x9 / cancer
+				:mod (x8 / this)
+				:poss (x14 / colleague)))
+		:op2 (x21 / think-01
+			:ARG0 (x18 / person
+				:name (n1 / name
+					:op1 "Colin"
+					:op2 "L."
+					:op3 "Powell"))
+			:ARG1 (x25 / capable-41
+				:ARG1 (x22 / we)
+				:ARG0-of (x27 / bring-01
+					:ARG0 x22
+					:ARG2 (x30 / war
+						:mod (x29 / this))))))
+	:ARG0 (x32 / person
+		:name (n / name
+			:op1 "Colin"
+			:op2 "L."
+			:op3 "Powell")))
+
+# ::id 27
+# ::snt Cooperation Over Border In Forces Command , Colin L. Powell  have got people jumping through The American people  butts right now trying to see which forces that are available ... (that )can be diverted from other missions , other training activities , to work with the Border Patrol and see if we can do a better job of sealing the border between the United States and Mexico , said Powell
+(x71 / say-01
+	:ARG1 (x51 / and
+		:op1 (x1 / cooperate-01
+			:topic (x6 / command-02
+				:name (x8 / name
+					:op1 "Colin"
+					:op2 "L."
+					:op3 "Powell")))
+		:op1 (x46 / work-01
+			:ARG1 (x14 / jump-08
+				:ARG2 (x19 / butt
+					:null_edge (x17 / country
+						:name (n2 / name
+							:op1 "American"))
+					:null_edge (x18 / null_tag)
+					:ARG1-of (x22 / try-01
+						:time (x21 / now
+							:mod (x20 / right))
+						:ARG1 (x24 / see-01
+							:ARG1 (x34 / possible
+								:domain (x36 / divert-01
+									:ARG1 (x26 / force-01
+										:ARG0-of (x29 / available))
+									:ARG2 (x39 / mission
+										:mod (x38 / other)))))))
+				:ARG1 (x43 / activity
+					:mod (x41 / other)
+					:purpose (x42 / train-01)))
+			:ARG0 (x49 / government-organization
+				:name (n1 / name
+					:op1 "Border"
+					:op2 "Patrol")))
+		:op2 (x52 / see-01
+			:ARG0 (x54 / we)
+			:ARG1 (x55 / possible
+				:domain (x56 / do-02
+					:ARG1 (x59 / job
+						:mod (x58 / good)
+						:ARG1 (x61 / military
+							:name (n3 / name
+								:op1 "sealing")
+							:ARG1 (x63 / border
+								:ARG1 (x68 / and
+									:op1 (x66 / country
+										:name (n4 / name
+											:op1 "United"
+											:op2 "States"))
+									:op2 (x69 / country
+										:name (n5 / name
+											:op1 "Mexico"))))))))))
+	:ARG0 (x72 / person
+		:name (n / name
+			:op1 "Powell")))
+
+# ::id 28
+# ::snt Powell told lawmakers that as the President's principal military adviser in a time of shrinking budgets , the President's principal military adviser in a time of shrinking budgets  would rather have (a force )that is smaller , as long as a force  is always ready to perform , as advertised , and when called upon
+(x2 / tell-01
+	:ARG0 (x1 / person
+		:name (n / name
+			:op1 "Powell"))
+	:ARG1 (x33 / have-03
+		:condition (x11 / advise-01
+			:null_edge (x7 / have-org-role-91
+				:ARG2 (p / president))
+			:mod (x9 / principal)
+			:mod (x10 / military)
+			:ARG1 (x17 / budget
+				:ARG1-of (x16 / shrink-01)))
+		:ARG0 (x24 / advise-01
+			:poss (x20 / have-org-role-91
+				:ARG2 (p1 / president))
+			:mod (x23 / military
+				:mod (x22 / principal))
+			:ARG1 (x30 / budget
+				:ARG1-of (x29 / shrink-01)))
+		:ARG1 (x36 / force)
+		:condition (x40 / small
+			:compared-to (x49 / ready-01
+				:ARG1 (x46 / force)
+				:time (x48 / always)
+				:ARG2 (x56 / and
+					:op1 (x51 / perform-01)
+					:op1 (x54 / advertise)
+					:op1 (x58 / call-03))))))
+

@@ -1,0 +1,319 @@
+# ::id 1
+# ::snt Japanese workers at U.S. Navy bases are protesting a policy that requires workers who deal with confidential matters to submit to lie-detector tests
+(x8 / protest-01
+	:ARG0 (x2 / person
+		:ARG0-of (w / work-01)
+		:mod (x1 / country
+			:name (n / name
+				:op1 "Japan"))
+		:location (x6 / base
+			:mod (x5 / military
+				:name (n1 / name
+					:op1 "Navy"))))
+	:ARG1 (x10 / policy
+		:ARG0-of (x12 / require-01
+			:ARG1 (x13 / person
+				:ARG0-of (w1 / work-01)
+				:ARG0-of (x15 / deal-01
+					:ARG1 (x20 / submit-01
+						:ARG1 (x23 / test-01
+							:mod (x22 / lie-detector)))))
+			:ARG2 (x18 / matter
+				:mod (x17 / confidential)))))
+
+# ::id 2
+# ::snt The plan neglects Japanese workers at U.S. Navy bases  basic human rights , said Misao Kamiyama , chairman of the All Japanese Garrison Forces Labor Union , which represents 1,200 workers at the U.S. bases
+(x14 / say-01
+	:ARG1 (x3 / neglect-01
+		:ARG0 (x2 / plan-01)
+		:ARG1 (x5 / person
+			:ARG0-of (w / work-01)
+			:mod (x4 / country
+				:name (n1 / name
+					:op1 "Japan")))
+		:time (x9 / base
+			:mod (x8 / military
+				:name (n2 / name
+					:op1 "Navy"))
+			:mod (x12 / right
+				:mod (x10 / basic)
+				:mod (x11 / human))))
+	:ARG0 (x15 / newspaper
+		:name (n / name
+			:op1 "Misao"
+			:op2 "Kamiyama")
+		:ARG0-of (x18 / have-org-role-91
+			:ARG2 (c / chairman)
+			:ARG1 (x21 / organization
+				:name (n3 / name
+					:op1 "All"
+					:op2 "Japanese"
+					:op3 "Garrison"
+					:op4 "Forces"
+					:op5 "Labor"
+					:op6 "Union")
+				:ARG0-of (x29 / represent-01
+					:ARG1 (x31 / person
+						:ARG0-of (w1 / work-01)
+						:quant (x30 / 1,200))
+					:location (x35 / base
+						:mod (x34 / country
+							:name (n4 / name
+								:op1 "U.S."))))))))
+
+# ::id 3
+# ::snt The union asked the Defense Facilities Administration Agency , which hires Japanese workers for the bases , to urge the U.S. to drop the polygraph requirement
+(x3 / ask-01
+	:ARG0 (x2 / union)
+	:ARG2 (x5 / government-organization
+		:name (n / name
+			:op1 "Defense"
+			:op2 "Facilities"
+			:op3 "Administration"
+			:op4 "Agency")
+		:ARG1-of (x11 / hire-01
+			:ARG1 (x13 / person
+				:ARG0-of (w / work-01)
+				:mod (x12 / country
+					:name (n2 / name
+						:op1 "Japan")))
+			:beneficiary (x16 / base)))
+	:ARG1 (x19 / urge-01
+		:ARG0 x2
+		:ARG1 (x21 / country
+			:name (n1 / name
+				:op1 "U.S."))
+		:ARG2 (x23 / drop-04
+			:ARG0 x21
+			:ARG1 (x26 / thing
+				:ARG1-of (r / require-01)
+				:mod (x25 / polygraph)))))
+
+# ::id 4
+# ::snt In Japan , only criminals get that kind of treatment , Mr. Kamiyama said
+(x14 / say-01
+	:ARG0 (x10 / treat-03
+		:location (x2 / country
+			:name (n1 / name
+				:op1 "Japan"))
+		:ARG2 (x5 / criminal
+			:mod (x4 / only))
+		:mod (x8 / kind))
+	:ARG0 (x13 / person
+		:name (n / name
+			:op1 "Kamiyama")
+		:null_edge (x12 / null_tag)))
+
+# ::id 5
+# ::snt only criminals  are planning a full-scale nationwide protest against the decision if the agency does not respond by today
+(x4 / plan-01
+	:ARG0 (x2 / criminal
+		:mod (x1 / only))
+	:ARG1 (x8 / protest-01
+		:ARG0 x2
+		:mod (x7 / nationwide)
+		:ARG1 (x11 / decide-01)
+		:mod (xap0 / scale
+			:mod (x6 / full)))
+	:ARG1 (x17 / respond-01
+		:ARG0 x2
+		:time (x19 / today)))
+
+# ::id 6
+# ::snt The Navy briefed the workers on the tests in April
+(x3 / brief-01
+	:ARG0 (x2 / military
+		:name (n / name
+			:op1 "Navy"))
+	:ARG1 (x5 / person
+		:ARG0-of (w / work-01))
+	:topic (x8 / test-01
+		:time (x10 / date-entity)))
+
+# ::id 7
+# ::snt Mr. Kamiyama said about 500 Japanese were asked to sign an agreement to take a polygraph examination and were threatened to be transferred to other sections if Japanese workers at U.S. Navy bases  refuse to sign
+(x3 / say-01
+	:ARG0 (x2 / person
+		:name (n / name
+			:op1 "Kamiyama")
+		:null_edge (x1 / null_tag))
+	:ARG1 (x18 / and
+		:op1 (x8 / ask-02
+			:ARG1 (x6 / country
+				:name (n1 / name
+					:op1 "Japan")
+				:quant (x4 / about
+					:op1 500))
+			:ARG1 (x10 / sign-02
+				:ARG0 x6
+				:ARG1 (x12 / agree-01
+					:ARG1 (x14 / take-01
+						:ARG1 (x17 / examine-01
+							:mod (x16 / polygraph))))))
+		:op2 (x20 / threaten-01
+			:ARG1 (x23 / transfer-01
+				:ARG2 (x26 / section
+					:mod (x25 / other))
+				:purpose (x34 / refuse-01
+					:ARG0 (x29 / person
+						:ARG0-of (w / work-01)
+						:mod (x28 / country
+							:name (n2 / name
+								:op1 "Japan"))
+						:location (x33 / base
+							:mod (x32 / military
+								:name (n3 / name
+									:op1 "Navy"))))
+					:ARG1 (x36 / sign-02
+						:ARG0 x29))))))
+
+# ::id 8
+# ::snt The accuracy of polygraph tests is widely disputed
+(x8 / dispute-01
+	:ARG2 (x5 / test-01
+		:ARG1 (x4 / polygraph))
+	:degree (x7 / wide))
+
+# ::id 9
+# ::snt An agency spokesman said The accuracy of polygraph tests  consented to the U.S. plan but expressed concern about the human-rights standpoint of polygraph tests
+(x4 / say-01
+	:ARG1 (x15 / contrast-01
+		:ARG2 (x10 / consent-01
+			:ARG0 (x6 / accuracy
+				:consist-of (x9 / test-01
+					:ARG1 (x8 / polygraph)))
+			:ARG1 (x14 / plan-01
+				:ARG0 (x13 / country
+					:name (n / name
+						:op1 "U.S."))))
+		:ARG2 (x16 / express-01
+			:ARG0 x6
+			:ARG1 (x17 / concern-01
+				:ARG1 (x21 / standpoint
+					:mod (x20 / human-rights)
+					:topic (x24 / test-01
+						:ARG1 (x23 / polygraph))))))
+	:ARG0 (xap0 / person
+		:ARG0-of (x3 / have-org-role-91
+			:ARG2 (s / spokesman)
+			:ARG1 (x2 / agency))))
+
+# ::id 10
+# ::snt The spokesman , who spoke on condition of anonymity , did not elaborate
+(x13 / elaborate-01
+	:ARG0 (xap0 / person
+		:ARG0-of (x2 / have-org-role-91
+			:ARG2 (s / spokesman)
+			:ARG1-of (x5 / speak-01
+				:condition (x9 / anonymity)))))
+
+# ::id 11
+# ::snt The agency acts as liaison between the U.S. military in Japan and the Japanese government
+(x3 / act-01
+	:ARG2 (x5 / liaison
+		:location-of (x12 / and
+			:op1 (x9 / military
+				:mod (x8 / country
+					:name (n / name
+						:op1 "U.S."))
+				:location (x11 / country
+					:name (n1 / name
+						:op1 "Japan")))
+			:op2 (x15 / government-organization
+				:ARG0-of (g / govern-01)))))
+
+# ::id 12
+# ::snt Under the plan , only employees at Navy plants would have to take the tests
+(x3 / plan-01
+	:ARG1 (x6 / person
+		:ARG1-of (e / employ-01)
+		:mod (x5 / only)
+		:location (x9 / plant
+			:mod (x8 / military
+				:name (n / name
+					:op1 "Navy"))))
+	:ARG1 (x13 / take-01
+		:ARG0 x6
+		:ARG1 (x15 / test-01)))
+
+# ::id 13
+# ::snt Since September 1987 , the Navy has been requiring the polygraph test before U.S. Navy  grants limited-access authorization , to personnel , a U.S. military spokesman said
+(x27 / say-01
+	:ARG1 (x9 / require-01
+		:time (x1 / since
+			:op1 (x2 / date-entity
+				:year 1987))
+		:ARG0 (x6 / military
+			:name (n / name
+				:op1 "Navy"))
+		:ARG1 (x12 / test-01
+			:mod (x11 / polygraph))
+		:time (x13 / before
+			:op1 (x16 / grant
+				:ARG0 (x15 / military
+					:name (n2 / name
+						:op1 "Navy"))
+				:ARG1 (x18 / authorize-01
+					:mod (x17 / limited-access))
+				:ARG0-of (x21 / have-org-role-91
+					:ARG2 (p / personnel)))))
+	:ARG0 (xap0 / person
+		:ARG0-of (x26 / have-org-role-91
+			:ARG2 (s / spokesman)
+			:ARG1 (x24 / country
+				:name (n1 / name
+					:op1 "U.S."))
+			:ARG1 (x25 / military))))
+
+# ::id 14
+# ::snt About 500 Japanese base workers are subject to the lie-detector test , the spokesman said
+(x15 / say-01
+	:ARG1 (x7 / subject-01
+		:ARG1 (x5 / person
+			:ARG0-of (w / work-01)
+			:quant (x1 / about
+				:op1 500)
+			:mod (x4 / base
+				:mod (x3 / country
+					:name (n / name
+						:op1 "Japan"))))
+		:ARG2 (x11 / test-01
+			:mod (x10 / lie-detector)))
+	:ARG0 (xap0 / person
+		:ARG0-of (x14 / have-org-role-91
+			:ARG2 (s / spokesman))))
+
+# ::id 15
+# ::snt Most work at ship-repair facilities in Yokosuka and Sasebo
+(x2 / work-01
+	:ARG0 (x1 / most)
+	:location (x5 / facility
+		:mod (x4 / ship-repair)
+		:location (x8 / and
+			:op1 (x7 / country
+				:name (n / name
+					:op1 "Yokosuka"))
+			:op2 (x9 / country
+				:name (n1 / name
+					:op1 "Sasebo")))))
+
+# ::id 16
+# ::snt Mr. Kamiyama said transfers of employees who refused to take the tests could fuel anti-American sentiment
+(x3 / say-01
+	:ARG0 (x2 / person
+		:name (n / name
+			:op1 "Kamiyama")
+		:null_edge (x1 / null_tag))
+	:ARG1 (x13 / possible
+		:domain (x14 / fuel-01
+			:ARG0 (x4 / transfer-01
+				:ARG1 (x6 / person
+					:ARG1-of (e / employ-01)
+					:ARG0-of (x8 / refuse-01
+						:ARG1 (x10 / take-01
+							:ARG1 (x12 / test-01)))))
+			:ARG1 (x16 / sentiment
+				:mod (x15 / organization
+					:name (n1 / name
+						:op1 "anti-American"))))))
+

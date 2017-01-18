@@ -1,0 +1,704 @@
+# ::id 1
+# ::snt A major earthquake rumbled through the jungles of southern Sudan on Sunday near the war-torn region's largest city , but officials said there appeared to be no casualties and little damage
+(x21 / contrast-01
+	:ARG1 (x4 / rumble-01
+		:ARG0 (x3 / earthquake
+			:mod (x2 / major))
+		:location (x7 / jungle
+			:mod (x9 / south
+				:part-of (x10 / country
+					:name (n / name
+						:op1 "Sudan"))))
+		:location (x13 / near
+			:op1 (x19 / city
+				:location (x16 / region)
+				:mod (x18 / large
+					:degree (m / most))))
+		:time (xap0 / date-entity
+			:weekday (x12 / sunday)))
+	:ARG2 (x23 / say-01
+		:ARG1 (x25 / appear-02
+			:ARG1 (x30 / and
+				:op1 (x29 / casualty
+					:polarity -)
+				:op2 (x32 / damage-01
+					:degree (x31 / little))))
+		:ARG0 (xap1 / person
+			:ARG0-of (x22 / have-org-role-91
+				:ARG2 (o / official)))))
+
+# ::id 2
+# ::snt The quake measured 7.5 on the Richter scale
+(x3 / measure-01
+	:ARG0 (x2 / quake)
+	:ARG1 (x4 / 7.5)
+	:manner (x8 / scale
+		:ARG0 (x7 / person
+			:name (n / name
+				:op1 "Richter"))))
+
+# ::id 3
+# ::snt A temblor of that size is capable of causing widespread destruction
+(x7 / capable-41
+	:ARG2 (x9 / cause-01
+		:ARG0 (x2 / temblor
+			:ARG1 (x5 / size
+				:mod (x4 / that)))
+		:ARG1 (x11 / destroy-01
+			:extent (x10 / widespread))))
+
+# ::id 4
+# ::snt The official Sudan News Agency said the earthquake caused no deaths or injuries
+(x6 / say-01
+	:ARG0 (x5 / agency
+		:null_edge (x2 / official)
+		:null_edge (x3 / country
+			:name (n / name
+				:op1 "Sudan"))
+		:null_edge (x4 / null_tag))
+	:ARG1 (x9 / cause-01
+		:ARG0 (x8 / earthquake)
+		:ARG1 (x12 / or
+			:op1 (x11 / death
+				:polarity -)
+			:op2 (x13 / injure-01))))
+
+# ::id 5
+# ::snt But much of the area affected by the quake is so isolated that any news might take days or weeks
+(x1 / contrast-01
+	:ARG1 (x12 / isolate-01
+		:ARG1 (x5 / area
+			:quant (x2 / much)
+			:ARG1-of (x6 / affect-01
+				:ARG0 (x9 / quake)))
+		:degree (x11 / so)
+		:ARG1 (x19 / or
+			:op1 (x15 / news
+				:mod (x14 / any))
+			:op1 (x18 / temporal-quantity
+				:unit (d / day))
+			:op2 (x20 / week))))
+
+# ::id 6
+# ::snt 
+(x11 / distance-quantity
+	:unit (m / mile)
+	:null_edge (x1 / country
+		:name (n / name
+			:op1 "Juba")
+		:null_edge (x7 / city
+			:mod (x6 / large
+				:degree (m1 / most)
+				:compared-to (x4 / country
+					:name (n1 / name
+						:op1 "Sudan")
+					:mod (x3 / southern)))))
+	:quant 60
+	:null_edge (x12 / southwest
+		:ARG1-of (xap0 / cause-01
+			:ARG1 (x18 / epicenter
+				:ARG1-of (x17 / report-01)))))
+
+# ::id 7
+# ::snt The region has been hit by famine as well as fighting between the government and the rebel People's Liberation Army , and Juba is crammed with refugees from the 7-year-old civil war
+(x23 / and
+	:op1 (x5 / hit-01
+		:ARG1 (x2 / region)
+		:ARG0 (x7 / famine
+			:ARG0-of (x11 / fight-01
+				:ARG1 (x15 / and
+					:op1 (x14 / government-organization
+						:ARG0-of (g / govern-01))
+					:op2 (x17 / rebel-01)))))
+	:op2 (x26 / cram
+		:ARG1 (x24 / country
+			:name (n / name
+				:op1 "Juba"))
+		:ARG2 (x28 / refugee
+			:source (x33 / war
+				:mod (x31 / person
+					:name (n1 / name
+						:op1 "7-year-old"))
+				:mod (x32 / civil)))))
+
+# ::id 8
+# ::snt In Nairobi , Kenya , Bob Koepp , a Lutheran World Federation official , said a pilot flying relief supplies to Juba returned late Sunday and said the city had not been seriously affected
+(x15 / say-01
+	:location (x2 / country
+		:name (n / name
+			:op1 "Nairobi")
+		:location (x4 / country
+			:name (n2 / name
+				:op1 "Kenya")))
+	:ARG0 (x6 / newspaper
+		:name (n1 / name
+			:op1 "Bob"
+			:op2 "Koepp")
+		:ARG0-of (x13 / have-org-role-91
+			:ARG2 (o / official)
+			:ARG1 (x10 / organization
+				:name (n3 / name
+					:op1 "Lutheran")
+				:mod (x11 / organization
+					:name (n5 / name
+						:op1 "World")))))
+	:ARG1 (x26 / and
+		:op1 (x23 / return-01
+			:ARG1 (x17 / person
+				:ARG0-of (p / pilot-01)
+				:ARG1-of (x18 / fly-01
+					:ARG1 (x20 / supply-01
+						:ARG1 (x19 / relieve-01))))
+			:ARG4 (x22 / country
+				:name (n4 / name
+					:op1 "Juba"))
+			:time (x24 / late
+				:op1 (xap0 / date-entity
+					:weekday (x25 / sunday))))
+		:op2 (x27 / say-01
+			:ARG0 x17
+			:ARG1 (x34 / affect-01
+				:ARG1 (x29 / city)
+				:manner (x33 / serious)))))
+
+# ::id 9
+# ::snt Bob Koepp  said there was some negligible damage
+(x3 / say-01
+	:ARG0 (x1 / newspaper
+		:name (n / name
+			:op1 "Bob"
+			:op2 "Koepp"))
+	:ARG1 (x8 / damage-01
+		:mod (x6 / some)
+		:mod (x7 / negligible)))
+
+# ::id 10
+# ::snt some negligible damage  was not very heavy at Juba
+(x7 / heavy
+	:domain (x3 / damage-01
+		:mod (x1 / some)
+		:mod (x2 / negligible))
+	:degree (x6 / very)
+	:location (x9 / country
+		:name (n / name
+			:op1 "Juba")))
+
+# ::id 11
+# ::snt The epicenter apparently was in the swamps and the ground may have just soaked the ground  up , Koepp said
+(x20 / say-01
+	:ARG1 (x8 / and
+		:manner (x3 / apparent)
+		:op2 (x11 / possible
+			:domain (x14 / soak-01
+				:ARG0 (x10 / ground
+					:location (x7 / swamp))
+				:mod (x13 / just)
+				:ARG1 (x16 / ground))
+			:domain (xap0 / be-located-at-91
+				:ARG1 (x2 / epicenter))))
+	:ARG0 (x19 / person
+		:name (n / name
+			:op1 "Koepp")))
+
+# ::id 12
+# ::snt Scientists said the quake's epicenter was 700 miles south of Sudan's capital , Khartoum
+(x2 / say-01
+	:ARG0 (x1 / have-org-role-91
+		:ARG2 (s / scientist))
+	:ARG1 (x9 / distance-quantity
+		:unit (m / mile)
+		:ARG1 (x6 / epicenter
+			:null_edge (x4 / quake))
+		:mod (x10 / south
+			:op1 (x14 / capital
+				:poss (x12 / country
+					:name (n / name
+						:op1 "Sudan"))
+				:location (x16 / country
+					:name (n1 / name
+						:op1 "Khartoum"))))))
+
+# ::id 13
+# ::snt the quake's reported epicenter  occurred in sparsely populated territory controlled by the rebels , who hold most of the southern countryside
+(xap0 / cause-01
+	:ARG1 (x5 / epicenter
+		:ARG1 (x2 / quake)
+		:ARG1-of (x4 / report-01))
+	:ARG2 (x10 / territory
+		:mod (x9 / populate-01
+			:mod (x8 / sparsely))
+		:ARG1-of (x11 / control-01
+			:ARG0 (x14 / person
+				:ARG0-of (r / rebel-01)
+				:ARG0-of (x17 / hold-01
+					:ARG0 (x22 / countryside
+						:mod (x18 / most)
+						:mod (x21 / south)))))))
+
+# ::id 14
+# ::snt Relief workers in two rebel-controlled villages , Bor and Torit , apparently told officials in Nairobi , Kenya , the earthquake caused no damage there
+(x22 / cause-01
+	:ARG1 (x13 / tell-01
+		:ARG0 (x2 / person
+			:ARG0-of (w / work-01)
+			:mod (x1 / relief)
+			:location (x6 / village
+				:quant 2
+				:mod (x5 / rebel-controlled)
+				:location (x9 / and
+					:op2 (x8 / bor)
+					:op2 (x10 / country
+						:name (n2 / name
+							:op1 "Torit")))))
+		:manner (x12 / apparent)
+		:ARG0 (xap0 / person
+			:ARG0-of (x14 / have-org-role-91
+				:ARG2 (o / official))
+			:location (x16 / country
+				:name (n / name
+					:op1 "Nairobi")
+				:location (x18 / country
+					:name (n1 / name
+						:op1 "Kenya")))))
+	:ARG0 (x21 / earthquake)
+	:ARG1 (x24 / damage-01
+		:polarity -)
+	:location (x25 / there))
+
+# ::id 15
+# ::snt It is pretty low area over there , with low buildings and quite remote , Koepp said
+(x17 / say-01
+	:ARG1 (x4 / low
+		:degree (x3 / pretty)
+		:domain (x12 / and
+			:op1 (x5 / area
+				:mod (x6 / over)
+				:location (x7 / there)
+				:mod (x11 / building
+					:mod (x10 / low))
+				:mod (x14 / remote
+					:degree (x13 / quite)))))
+	:ARG0 (x16 / person
+		:name (n / name
+			:op1 "Koepp")))
+
+# ::id 16
+# ::snt A crew with Koepp's organization landed in the region with relief supplies two hours after the quake struck at 4:22 a.m. and reported seeing nothing amiss
+(x7 / land-01
+	:ARG1 (x2 / crew
+		:ARG1 (x6 / organization
+			:poss (x4 / person
+				:name (n / name
+					:op1 "Koepp"))))
+	:location (x10 / region)
+	:ARG1 (x13 / supply-01
+		:ARG1 (x12 / relieve-01))
+	:time (x16 / after
+		:op1 (x19 / strike-01
+			:ARG1 (x15 / temporal-quantity
+				:unit (h / hour)
+				:quant 2)
+			:ARG0 (x18 / quake)
+			:time (x21 / include-91)
+			:ARG0 (x23 / and
+				:op2 (x24 / report-01
+					:ARG0 x18
+					:ARG1 (x25 / see-01
+						:ARG1 (x26 / nothing
+							:ARG1-of (x27 / amiss))))))))
+
+# ::id 17
+# ::snt Late Sunday , a Khartoum airport tower operator said flights to the southern city had not been disrupted
+(x9 / say-01
+	:time (x1 / late
+		:op1 (xap0 / date-entity
+			:weekday (x2 / sunday)))
+	:ARG0 (x8 / person
+		:ARG0-of (o / operate-01)
+		:poss (x5 / country
+			:name (n / name
+				:op1 "Khartoum"))
+		:mod (x7 / tower
+			:mod (x6 / airport)))
+	:ARG1 (x18 / disrupt-01
+		:ARG1 (x10 / fly-01
+			:op (f / flight)
+			:poss (x14 / city
+				:mod (x13 / south)))))
+
+# ::id 18
+# ::snt Pierre-Andre Conod of the International Committee of the Red Cross said Pierre-Andre Conod of the International Committee of the Red Cross  had no details about injuries or damage
+(x11 / say-01
+	:ARG0 (x1 / newspaper
+		:name (n / name
+			:op1 "Pierre-Andre"
+			:op2 "Conod")
+		:poss (x6 / organization
+			:name (n1 / name
+				:op1 "Committee")
+			:null_edge (x5 / null_tag)
+			:part-of (x10 / organization
+				:name (n3 / name
+					:op1 "Cross")
+				:part-of (x9 / organization
+					:name (n5 / name
+						:op1 "Red")))))
+	:ARG1 (x24 / detail-01
+		:ARG0 (x12 / newspaper
+			:name (n2 / name
+				:op1 "Pierre-Andre"
+				:op2 "Conod")
+			:poss (x17 / organization
+				:name (n4 / name
+					:op1 "Committee")
+				:null_edge (x16 / null_tag)
+				:part-of (x21 / organization
+					:name (n6 / name
+						:op1 "Cross")
+					:part-of (x20 / organization
+						:name (n7 / name
+							:op1 "Red")))))
+		:polarity -
+		:topic (x27 / or
+			:op1 (x26 / injure-01)
+			:op2 (x28 / damage-01))))
+
+# ::id 19
+# ::snt Pierre-Andre Conod of the International Committee of the Red Cross  said colleagues in Juba had not made their regular radio contact with Khartoum but cautioned that maybe colleagues in Juba  have a problem with the antenna
+(x11 / say-01
+	:ARG0 (x1 / newspaper
+		:name (n / name
+			:op1 "Pierre-Andre"
+			:op2 "Conod")
+		:poss (x6 / organization
+			:name (n1 / name
+				:op1 "Committee")
+			:null_edge (x5 / null_tag)
+			:part-of (x10 / organization
+				:name (n2 / name
+					:op1 "Cross")
+				:part-of (x9 / organization
+					:name (n5 / name
+						:op1 "Red")))))
+	:ARG1 (x25 / caution-01
+		:ARG0 x1
+		:ARG0 (x12 / colleague
+			:location (x14 / country
+				:name (n3 / name
+					:op1 "Juba")))
+		:ARG1 (x21 / contact-01
+			:frequency (x19 / regular)
+			:ARG1 (x20 / radio)
+			:ARG1 (x23 / country
+				:name (n4 / name
+					:op1 "Khartoum")))
+		:ARG1 (x31 / have-03
+			:ARG0 (x28 / colleague
+				:location (x30 / country
+					:name (n6 / name
+						:op1 "Juba")))
+			:ARG1 (x33 / problem
+				:topic (x36 / antenna)))))
+
+# ::id 20
+# ::snt We can not say their regular radio contact  is due to the earthquake
+(x2 / possible
+	:domain (x4 / say-01
+		:ARG0 (x1 / we)
+		:ARG1 (x10 / due
+			:domain (x8 / contact-01
+				:frequency (x6 / regular)
+				:ARG1 (x7 / radio))
+			:ARG2 (x13 / earthquake))))
+
+# ::id 21
+# ::snt People seeking haven from the war and from famine have more than doubled Juba's population of 125,000
+(x13 / double-01
+	:ARG1 (x2 / seek-01
+		:ARG1 (x3 / haven)
+		:ARG2 (x7 / and
+			:op1 (x6 / war)
+			:op2 (x9 / famine)))
+	:degree (x11 / more)
+	:ARG1 (x16 / population
+		:poss (x14 / country
+			:name (n / name
+				:op1 "Juba"))
+		:quant (x18 / 125,000)))
+
+# ::id 22
+# ::snt In recent years , hundreds of thousands have died in southern Sudan , an area the size of Texas
+(x9 / die-01
+	:duration (x3 / temporal-quantity
+		:unit (y / year)
+		:mod (x2 / recent))
+	:ARG1 (x7 / thousands)
+	:location (x15 / area
+		:location (x12 / country
+			:name (n / name
+				:op1 "Sudan")
+			:mod (x11 / southern))
+		:mod (x17 / size
+			:poss (x19 / country
+				:name (n1 / name
+					:op1 "Texas")))))
+
+# ::id 23
+# ::snt Egypt's two principal earthquake monitoring stations , including one at the Aswan High Dam , 600 miles south of Cairo and just north of the Sudan border , recorded the quake at 7.5 on the Richter scale
+(x30 / record-01
+	:ARG0 (x7 / station
+		:mod (x1 / country
+			:name (n / name
+				:op1 "Egypt"))
+		:quant 2
+		:mod (x4 / principal)
+		:ARG0-of (x6 / monitor-01
+			:mod (x5 / earthquake))
+		:ARG0-of (x9 / include-91
+			:ARG1 (x22 / and
+				:op1 (x15 / dam
+					:null_edge (x13 / country
+						:name (n2 / name
+							:op1 "Aswan"))
+					:mod (x14 / country
+						:name (n3 / name
+							:op1 "High"))
+					:null_edge (x24 / null_tag
+						:mod (x23 / just
+							:op1 (x28 / border-01
+								:ARG1 (x27 / country
+									:name (n5 / name
+										:op1 "Sudan"))))))
+				:location (xap0 / relative-position
+					:direction (x19 / south)
+					:op1 (x21 / city
+						:name (n4 / name
+							:op1 "Cairo"))))))
+	:ARG1 (x32 / quake
+		:time (x34 / 7.5))
+	:degree (x38 / scale
+		:ARG0 (x37 / person
+			:name (n1 / name
+				:op1 "Richter"))))
+
+# ::id 24
+# ::snt The U.S. Geological Survey in Menlo Park , Calif. reported an identical reading
+(x10 / report-01
+	:ARG0 (x4 / survey-01
+		:mod (x3 / geological
+			:mod (x2 / country
+				:name (n1 / name
+					:op1 "U.S.")))
+		:location (x7 / country
+			:name (n / name
+				:op1 "Park")
+			:null_edge (x6 / country
+				:name (n2 / name
+					:op1 "Menlo"))
+			:null_edge (x9 / country
+				:name (n3 / name
+					:op1 "Calif."))))
+	:ARG1 (x13 / read-01
+		:mod (x12 / identical-41)))
+
+# ::id 25
+# ::snt The U.S. Geological Survey in Menlo Park , Calif.  is such a big quake that the monitoring stations are saturated with data , said geologist Rashad M. Kebeasy , president of Egypt's National Research Institute of Astronomy and Geophysics
+(x25 / say-01
+	:ARG1 (x15 / quake
+		:domain (x4 / survey-01
+			:mod (x3 / geological
+				:mod (x2 / country
+					:name (n3 / name
+						:op1 "U.S.")))
+			:location (x7 / country
+				:name (n1 / name
+					:op1 "Park")
+				:null_edge (x6 / country
+					:name (n4 / name
+						:op1 "Menlo"))
+				:null_edge (x9 / country
+					:name (n5 / name
+						:op1 "Calif."))))
+		:mod (x12 / such)
+		:mod (x14 / big)
+		:ARG1-of (x21 / saturate
+			:ARG1 (x19 / station
+				:ARG0-of (x18 / monitor-01))
+			:ARG1 (x23 / data)))
+	:ARG0 (x27 / person
+		:name (n / name
+			:op1 "Rashad"
+			:op2 "M."
+			:op3 "Kebeasy")
+		:ARG0-of (x26 / geologist)
+		:ARG0-of (x31 / have-org-role-91
+			:ARG2 (p / president)
+			:ARG1 (x35 / government-organization
+				:name (n2 / name
+					:op1 "National"
+					:op2 "Research"
+					:op3 "Institute")
+				:poss (x33 / country
+					:name (n6 / name
+						:op1 "Egypt"))
+				:poss (x39 / organization
+					:name (n7 / name
+						:op1 "Astronomy")
+					:null_edge (x40 / null_tag
+						:op2 (x41 / organization
+							:name (n8 / name
+								:op1 "Geophysics"))))))))
+
+# ::id 26
+# ::snt This is an extremely dangerous earthquake
+(x6 / earthquake
+	:domain (x1 / this)
+	:mod (x5 / dangerous
+		:degree (x4 / extreme)))
+
+# ::id 27
+# ::snt an extremely dangerous earthquake  is the first time that such a quake has struck this area
+(x14 / strike-01
+	:ARG0 (x4 / earthquake
+		:mod (x3 / dangerous
+			:degree (x2 / extreme)))
+	:ARG0 (x12 / quake
+		:mod (x10 / such))
+	:ARG1 (x16 / area
+		:mod (x15 / this)))
+
+# ::id 28
+# ::snt Rashad M. Kebeasy  said large and very dangerous aftershocks were to be expected for the next two days
+(x4 / say-01
+	:ARG0 (x1 / person
+		:name (n / name
+			:op1 "Rashad"
+			:op2 "M."
+			:op3 "Kebeasy"))
+	:ARG1 (x9 / aftershock
+		:mod (x5 / large
+			:ARG1-of (xap0 / cause-01
+				:ARG1 (x8 / danger
+					:degree (x7 / very))))
+		:ARG1 (x6 / and)
+		:ARG1-of (x13 / expect-01
+			:duration (x18 / temporal-quantity
+				:unit (d / day)
+				:quant 2))))
+
+# ::id 29
+# ::snt The Richter scale is a gauge of energy released by an earthquake as measured by the ground motion recorded on a seismograph
+(x6 / gauge-01
+	:domain (x3 / scale
+		:mod (x2 / richter))
+	:mod (x8 / energy
+		:ARG1-of (x9 / release-01
+			:ARG0 (x12 / earthquake)
+			:time (x14 / measure-01
+				:ARG0 (x18 / motion
+					:mod (x17 / ground)
+					:ARG1-of (x19 / record-01
+						:location (x22 / seismograph)))))))
+
+# ::id 30
+# ::snt Every increase of one number , say from magnitude 5.5 to magnitude 6.6 , means that the ground motion is 10 times greater
+(x15 / mean-01
+	:ARG0 (x2 / increase-01
+		:mod (x1 / every)
+		:ARG1-of (x3 / include-91))
+	:ARG0 (x7 / say-01
+		:ARG1 (x12 / magnitude
+			:null_edge (x13 / 6.6)))
+	:ARG0 (x19 / motion
+		:mod (x18 / ground))
+	:null_edge (x23 / great
+		:quant 10))
+
+# ::id 31
+# ::snt A magnitude of 7 is considered a major earthquake capable of widespread heavy damage
+(x6 / consider-01
+	:ARG1 (x2 / magnitude
+		:null_edge 7)
+	:ARG1 (x14 / damage-01
+		:ARG0 (x9 / earthquake
+			:mod (x8 / major))
+		:mod (x12 / widespread)
+		:mod (x13 / heavy)))
+
+# ::id 32
+# ::snt Magnitude 8 is a great earthquake capable of tremendous damage
+(x6 / earthquake
+	:domain (x1 / magnitude
+		:quant 8)
+	:mod (x5 / great)
+	:ARG1-of (x7 / capable-41
+		:ARG1 (x10 / damage-01
+			:mod (x9 / tremendous))))
+
+# ::id 33
+# ::snt Last October's earthquake near San Francisco registered 7.1 on the Richter scale
+(x8 / register-01
+	:ARG0 (x4 / earthquake
+		:null_edge (x1 / last
+			:null_edge 10)
+		:location (x5 / near
+			:op1 (x6 / city
+				:name (n1 / name
+					:op1 "San"
+					:op2 "Francisco"))))
+	:manner (x13 / scale
+		:quant (x9 / 7.1)
+		:ARG0 (x12 / person
+			:name (n / name
+				:op1 "Richter"))))
+
+# ::id 34
+# ::snt Kebeasy , an expert on earthquakes of northeastern Africa , said the epicenter was just west of the Great African Rift
+(x11 / say-01
+	:ARG0 (x1 / person
+		:name (n / name
+			:op1 "Kebeasy")
+		:null_edge (x4 / person
+			:ARG1-of (e / expert-41)
+			:ARG1 (x6 / earthquake
+				:mod (x8 / northeast))))
+	:ARG1 (x16 / west
+		:domain (x13 / epicenter)
+		:mod (x15 / just)
+		:null_edge (x21 / have-org-role-91
+			:ARG1 (o / organization
+				:name (n1 / name
+					:op1 "Rift"))
+			:null_edge (x19 / great)
+			:null_edge (x20 / null_tag))))
+
+# ::id 35
+# ::snt That earthquake zone stretches 4,000 miles from Mozambique through the Red Sea to Lebanon
+(x4 / stretch-01
+	:ARG1 (x3 / zone
+		:mod (x1 / that)
+		:mod (x2 / earthquake))
+	:ARG2 (x6 / distance-quantity
+		:unit (m / mile)
+		:null_edge (x8 / organization
+			:name (n / name
+				:op1 "Mozambique"
+				:op2 "through"
+				:op3 "the"
+				:op4 "Red"
+				:op5 "Sea"
+				:op6 "to"
+				:op7 "Lebanon"))))
+
+# ::id 36
+# ::snt The proximity to the rift accounts for the quake's magnitude , Kebeasy said
+(x14 / say-01
+	:ARG1 (x6 / account
+		:ARG0 (x2 / proximity
+			:ARG1 (x5 / rift))
+		:ARG1 (x11 / magnitude
+			:poss (x9 / quake)))
+	:ARG0 (x13 / person
+		:name (n / name
+			:op1 "Kebeasy")))
+

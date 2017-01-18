@@ -1,0 +1,280 @@
+# ::id 1
+# ::snt Plans announced by billionaire Kirk Kerkorian to build a 5,000-room resort here would allow Las Vegas to claim the eight largest hotels in the world by 1992 , according to industry statistics
+(x14 / allow-01
+	:ARG0 (x1 / plan-01
+		:ARG1-of (x2 / announce-01
+			:ARG1 (x8 / build-01
+				:ARG0 (x5 / name
+					:op1 "Kirk"
+					:op2 "Kerkorian"
+					:ARG0-of (x4 / billionaire))
+				:ARG1 (x11 / resort
+					:mod (x10 / 5,000-room))
+				:location (x12 / here))))
+	:ARG1 (x18 / claim-01
+		:ARG0 (x16 / city
+			:name (n / name
+				:op1 "Vegas")
+			:mod (x15 / country
+				:name (n1 / name
+					:op1 "Las")))
+		:ARG1 (x22 / hotel
+			:quant 8
+			:mod (x21 / large
+				:degree (m / most)))
+		:location (x25 / world)
+		:time (x27 / date-entity
+			:year 1992)
+		:ARG0 (xap0 / say-01
+			:ARG0 (x32 / statistic
+				:mod (x31 / industry)))))
+
+# ::id 2
+# ::snt Of course , Las Vegasdomination of the list dpends on other cities not building big hotels between now and 1992
+(x9 / dpend
+	:null_edge (x4 / las
+		:location (x8 / list-01))
+	:location (x12 / city
+		:mod (x11 / other)
+		:ARG0-of (x14 / build-01
+			:ARG1 (x16 / hotel
+				:mod (x15 / big))
+			:path (x17 / between
+				:op1 (x18 / now
+					:null_edge (x19 / null_tag
+						:op2 (x20 / date-entity
+							:year 1992)))))))
+
+# ::id 3
+# ::snt The Las Vegas Hilton currently claims the title with 3,174 rooms but will be surpassed next March when an expansion is completed at the Flamingo Hilton , giving that Strip resort 3,530 rooms
+(x12 / contrast-01
+	:ARG1 (x6 / claim-01
+		:ARG0 (x4 / hilton
+			:null_edge (x2 / las)
+			:null_edge (x3 / city
+				:name (n / name
+					:op1 "Vegas")))
+		:time (x5 / current)
+		:ARG1 (x8 / title)
+		:ARG1 (x11 / room))
+	:ARG2 (x15 / surpass-01
+		:ARG0 x4
+		:time (x17 / date-entity
+			:mod (x16 / next))
+		:time (x22 / complete-01
+			:ARG1 (x20 / expand-01)
+			:ARG0 (x25 / organization
+				:name (n1 / name
+					:op1 "Flamingo"))
+			:manner (x28 / give-01
+				:ARG0 x25
+				:ARG2 (x31 / resort
+					:mod (x30 / strip))
+				:ARG1 (x33 / room)))))
+
+# ::id 4
+# ::snt The Flamingo will hold the title only a few months , until the Excalibur opens next summer with 4,032 rooms
+(x4 / hold-04
+	:ARG0 (x2 / flamingo)
+	:ARG1 (x6 / title)
+	:null_edge (x9 / few
+		:mod (x7 / only)
+		:op1 (x10 / temporal-quantity
+			:unit (m / month)))
+	:time (x12 / until
+		:op1 (x15 / open-01
+			:ARG0 (x14 / country
+				:name (n / name
+					:op1 "Excalibur"))
+			:season (x17 / summer
+				:mod (x16 / next))
+			:ARG1 (x20 / room))))
+
+# ::id 5
+# ::snt Steve Wynn's Mirage Hotel opens next month with 3,054 rooms
+(x6 / open-01
+	:ARG0 (x5 / hotel
+		:null_edge (x1 / name
+			:op1 "Steve"
+			:op2 "Wynn")
+		:mod (x4 / mirage))
+	:time (x8 / month
+		:mod (x7 / next))
+	:accompanier (x11 / room))
+
+# ::id 6
+# ::snt 
+(x11 / have-03
+	:ARG0 (x2 / circus
+		:null_edge (x1 / circus)
+		:null_edge (x6 / corporation
+			:ARG0-of (x5 / parent)))
+	:time (x10 / current)
+	:ARG1 (x13 / room
+		:quant (x12 / 2,800)
+		:location (x16 / city
+			:name (n / name
+				:op1 "Vegas")
+			:mod (x15 / country
+				:name (n1 / name
+					:op1 "Las"))))
+	:condition (x19 / do-02
+		:ARG1 (x22 / hotel
+			:ARG0 (x20 / organization
+				:name (n2 / name
+					:op1 "Bally"))
+			:topic (x25 / strip))))
+
+# ::id 7
+# ::snt The Riviera Hotel currently has 2,200 rooms but a planned expansion will give the resort 3,800 rooms by June of 1992
+(x8 / contrast-01
+	:ARG1 (x7 / room
+		:ARG1-of (x5 / have-03
+			:ARG0 (x3 / hotel
+				:mod (x2 / riviera))
+			:time (x4 / current)
+			:null_edge (x13 / give-01
+				:ARG0 (x11 / expand-01
+					:ARG1-of (x10 / plan-01))
+				:ARG2 (x15 / resort)
+				:ARG1 (x17 / room
+					:quant (x16 / 3,800))
+				:time (x18 / by
+					:op1 (x19 / date-entity
+						:year 1992))))
+		:quant (x6 / 2,200)))
+
+# ::id 8
+# ::snt Kerkorian built the International Hotel , now the Las Vegas Hilton , and the MGM Grand , now Bally's
+(x2 / build-01
+	:ARG0 (x1 / person
+		:name (n / name
+			:op1 "Kerkorian"))
+	:ARG1 (x13 / and
+		:op1 (x5 / hotel
+			:mod (x4 / international)
+			:null_edge (x16 / have-org-role-91
+				:ARG1 (c / country
+					:name (n2 / name
+						:op1 "Grand"
+						:op2 ","
+						:op3 "now"
+						:op4 "Bally"))
+				:mod (x15 / country
+					:name (n4 / name
+						:op1 "MGM"))))
+		:op3 (x9 / company
+			:name (n1 / name
+				:op1 "Las"
+				:op2 "Vegas"
+				:op3 "Hilton")
+			:mod (x7 / now)
+			:mod (x10 / city
+				:name (n3 / name
+					:op1 "Vegas")))))
+
+# ::id 9
+# ::snt billionaire Kirk Kerkorian  also owned the Flamingo at one time
+(x5 / own-01
+	:ARG0 (x2 / newspaper
+		:name (n / name
+			:op1 "Kirk"
+			:op2 "Kerkorian")
+		:ARG0-of (x1 / billionaire))
+	:mod (x4 / also)
+	:ARG1 (x7 / flamingo))
+
+# ::id 10
+# ::snt The Hilton Hawaiian Village in Honolulu currently has 2,525 rooms , making The Hilton Hawaiian Village in Honolulu  the largest hotel , in number of rooms , outside of Las Vegas , according to figures in the Hotel and Motel Index
+(x8 / have-03
+	:ARG0 (x4 / country
+		:name (n / name
+			:op1 "Village")
+		:null_edge (x2 / country
+			:name (n1 / name
+				:op1 "Hilton"))
+		:mod (x3 / country
+			:name (n2 / name
+				:op1 "Hawaiian"))
+		:location (x6 / country
+			:name (n3 / name
+				:op1 "Honolulu")))
+	:time (x7 / current)
+	:ARG1 (x10 / room
+		:quant (x9 / 2,525))
+	:name (x14 / name
+		:op1 "Hilton"
+		:op2 "Hawaiian"
+		:op3 "Village"
+		:location (x18 / country
+			:name (n4 / name
+				:op1 "Honolulu")
+			:location (x21 / hotel
+				:mod (x20 / large
+					:degree (m / most))
+				:location-of (x26 / room
+					:quant (x24 / number))))
+		:location (x28 / outside
+			:op1 (x31 / city
+				:name (n5 / name
+					:op1 "Vegas")
+				:mod (x30 / country
+					:name (n6 / name
+						:op1 "Las"))))
+		:ARG1-of (xap0 / say-01
+			:ARG0 (x35 / figure
+				:location (x39 / and
+					:op1 (x38 / hotel)
+					:op2 (x41 / index
+						:null_edge (x40 / country
+							:name (n7 / name
+								:op1 "Motel"))))))))
+
+# ::id 11
+# ::snt The number of rooms at the Hawaiian property is not expected to change in the near future because the hotel recently completed an expansion , according to Las Vegas Hilton spokesman Bruce Banke
+(x11 / expect-01
+	:ARG1 (x4 / room
+		:quant (x2 / number)
+		:part-of (x8 / property
+			:mod (x7 / hawaiian)))
+	:ARG1 (x13 / change-01
+		:time (x17 / future
+			:mod (x16 / near))
+		:ARG1-of (x18 / cause-01
+			:ARG0 (x22 / complete-01
+				:ARG0 (x20 / hotel)
+				:time (x21 / recent)
+				:ARG1 (x24 / expand-01))
+			:ARG0 (x32 / name
+				:op1 "Bruce"
+				:op2 "Banke"
+				:ARG0-of (x31 / have-org-role-91
+					:ARG2 (s / spokesman)
+					:ARG1 (x30 / organization
+						:name (n / name
+							:op1 "Hilton")
+						:mod (x29 / city
+							:name (n1 / name
+								:op1 "Vegas")
+							:mod (x28 / organization
+								:name (n2 / name
+									:op1 "Las")))))))))
+
+# ::id 12
+# ::snt Outside the United States , the New Otani Hotel in Tokyo leads in number of rooms with 2,056
+(x12 / lead-03
+	:ARG0 (x3 / country
+		:name (n / name
+			:op1 "United"
+			:op2 "States"))
+	:ARG0 (x7 / city
+		:name (n1 / name
+			:op1 "New"
+			:op2 "Otani"
+			:op3 "Hotel")
+		:location (x11 / city
+			:name (n2 / name
+				:op1 "Tokyo")))
+	:ARG1 (x16 / room
+		:quant (x14 / number)))
+

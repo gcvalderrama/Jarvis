@@ -1,0 +1,1071 @@
+# ::id 1
+# ::snt WASHINGTON For three years , top administration officials have carped about the performance of Alan Greenspan as chairman of the Federal Reserve Board
+(x10 / carp
+	:ARG0 (x1 / country
+		:name (n / name
+			:op1 "WASHINGTON"))
+	:duration (x4 / temporal-quantity
+		:unit (y / year)
+		:quant 3)
+	:ARG1 (x9 / have-03)
+	:ARG1 (x13 / perform-01
+		:name (x15 / name
+			:op1 "Alan"
+			:op2 "Greenspan")
+		:ARG2 (x18 / have-org-role-91
+			:ARG2 (c / chairman)
+			:ARG2-of (x21 / government-organization
+				:name (n1 / name
+					:op1 "Federal"
+					:op2 "Reserve"
+					:op3 "Board"))))
+	:ARG0 (xap1 / person
+		:ARG0-of (x8 / have-org-role-91
+			:ARG2 (o / official)
+			:mod (x6 / top)
+			:ARG1 (xap0 / government-organization
+				:ARG0-of (x7 / administer-01)))))
+
+# ::id 2
+# ::snt But in the next two months , top administration officials  are likely to pay Alan Greenspan  the ultimate compliment by recommending his reappointment to the powerful post
+(x1 / contrast-01
+	:ARG2 (x12 / likely
+		:time (x6 / temporal-quantity
+			:unit (m / month)
+			:quant 2)
+		:domain (x14 / pay-01
+			:ARG2 (x15 / name
+				:op1 "Alan"
+				:op2 "Greenspan")
+			:ARG1 (x19 / compliment
+				:mod (x18 / ultimate))
+			:instrument (x21 / recommend-01
+				:ARG0 x15
+				:ARG1 (x23 / reappointment)
+				:ARG1 (x27 / post
+					:mod (x26 / powerful))))
+		:domain (xap1 / person
+			:ARG0-of (x10 / have-org-role-91
+				:ARG2 (o / official)
+				:mod (x8 / top)
+				:ARG1 (xap0 / government-organization
+					:ARG0-of (x9 / administer-01))))))
+
+# ::id 3
+# ::snt No decision has been made yet on the fate of Mr. Greenspan , whose four-year term expires Aug. 11
+(x9 / fate
+	:ARG1 (x2 / decide-01)
+	:time (x6 / yet)
+	:poss (x12 / person
+		:name (n / name
+			:op1 "Greenspan")
+		:null_edge (x11 / null_tag)
+		:ARG0-of (x17 / expire
+			:ARG0 (x16 / term
+				:mod (x15 / person
+					:name (n1 / name
+						:op1 "four-year")))
+			:name (x18 / name
+				:op1 "Aug."
+				:op2 "11"))))
+
+# ::id 4
+# ::snt But administration officials familiar with early discussions on the subject say any effort to depose the Fed chairman will probably fail , for three reasons : Mr. Greenspan is well-regarded in financial markets
+(x11 / say-01
+	:null_edge (x1 / contrast-01
+		:ARG2 (x20 / probable
+			:domain (x21 / fail-01
+				:ARG1 (x13 / effort
+					:mod (x12 / any)
+					:purpose (x15 / depose-01
+						:ARG1 (x18 / have-org-role-91
+							:ARG2 (c / chairman))))
+				:ARG1-of (xap2 / cause-01
+					:quant 3
+					:ARG0 (x30 / well-regarded
+						:ARG0 (x28 / person
+							:name (n / name
+								:op1 "Greenspan")
+							:null_edge (x27 / null_tag))
+						:ARG2 (x33 / market
+							:mod (x32 / finance)))))))
+	:ARG0 (xap1 / person
+		:ARG0-of (x3 / have-org-role-91
+			:ARG2 (o / official)
+			:ARG1 (xap0 / government-organization
+				:ARG0-of (x2 / administer-01)))
+		:ARG1-of (x4 / familiarize-01
+			:ARG2 (x7 / discuss-01
+				:time (x6 / early)
+				:ARG1 (x10 / subject)))))
+
+# ::id 5
+# ::snt A poll of financial decision-makers by Wall Street economist Richard Hoey finds 76.5 % favor Wall Street economist Richard Hoey  reappointment ; that is nearly as high as the 76.9 % that favored Paul Volcker's reappointment in May 1983
+(xap2 / multi-sentence
+	:snt1 (x12 / find-01
+		:ARG0 (x2 / poll-01
+			:ARG0 (x5 / decision-maker
+				:mod (x4 / finance))
+			:ARG0 (x7 / organization
+				:name (n / name
+					:op1 "Wall"
+					:op2 "Street"))
+			:name (x10 / name
+				:op1 "Richard"
+				:op2 "Hoey"
+				:ARG0-of (x9 / economist)))
+		:null_edge (x15 / null_tag
+			:ARG1 (x21 / reappointment)
+			:ARG1 (xap0 / percentage-entity
+				:value (x13 / percentage-entity))))
+	:snt2 (x27 / high
+		:domain (x23 / that)
+		:degree (x25 / nearly)
+		:ARG0-of (x33 / favor-01
+			:ARG1 (x37 / reappointment
+				:ARG0 (x34 / person
+					:name (n1 / name
+						:op1 "Paul"
+						:op2 "Volcker")))
+			:time (x39 / date-entity
+				:year 1983
+				:time-of (xap1 / percentage-entity
+					:value (x30 / percentage-entity))))))
+
+# ::id 6
+# ::snt (Ironically , Mr. Greenspan was the decision-makerssecond choice in 1983 with 5.8 % support ; Mr. Volcker is now the second choice , with 8.8 % support )
+(x / xconcept
+	:x (x16 / and
+		:op2 (x15 / support-01
+			:mod (x2 / ironically)
+			:ARG0 (x5 / person
+				:name (n / name
+					:op1 "Greenspan")
+				:null_edge (x4 / null_tag))
+			:time (x11 / date-entity
+				:year 1983)
+			:null_edge (x13 / percentage-entity
+				:null_edge 26)
+			:ARG1 (x28 / support-01
+				:ARG0 x5
+				:ARG0 (x18 / person
+					:name (n1 / name
+						:op1 "Volcker")
+					:null_edge (x17 / null_tag))
+				:time (x20 / now)))))
+
+# ::id 7
+# ::snt While President Bush's top economic advisers have President Bush's top economic advisers  complaints about Mr. Greenspan , President Bush's top economic advisers  are unaware of a replacement President Bush's top economic advisers  all could support
+(x25 / have-org-role-91
+	:ARG2 (p / person
+		:ARG0-of (a / advise-01))
+	:ARG1 (x15 / complain-01
+		:ARG0 (x7 / have-org-role-91
+			:ARG2 (p1 / person
+				:ARG0-of (a1 / advise-01))
+			:poss (x3 / person
+				:name (n2 / name
+					:op1 "Bush")
+				:ARG0-of (x2 / have-org-role-91
+					:ARG2 (p5 / president)))
+			:mod (x5 / top)
+			:mod (x6 / economy))
+		:mod (x14 / have-org-role-91
+			:ARG2 (p2 / person
+				:ARG0-of (a2 / advise-01))
+			:poss (x10 / person
+				:name (n3 / name
+					:op1 "Bush")
+				:ARG0-of (x9 / have-org-role-91
+					:ARG2 (p6 / president)))
+			:mod (x12 / top)
+			:mod (x13 / economy))
+		:ARG0 (x18 / person
+			:name (n1 / name
+				:op1 "Greenspan")
+			:null_edge (x17 / null_tag)))
+	:poss (x21 / person
+		:name (n / name
+			:op1 "Bush")
+		:ARG0-of (x20 / have-org-role-91
+			:ARG2 (p3 / president)))
+	:mod (x23 / top)
+	:mod (x24 / economy
+		:poss (x36 / have-org-role-91
+			:ARG2 (p4 / person
+				:ARG0-of (a3 / advise-01))
+			:poss (x32 / person
+				:name (n4 / name
+					:op1 "Bush")
+				:ARG0-of (x31 / have-org-role-91
+					:ARG2 (p7 / president)
+					:mod (x30 / replace-01)))
+			:mod (x34 / top)
+			:mod (x35 / economy)
+			:ARG0-of (x39 / support-01
+				:ARG0 (x37 / all)
+				:mod (x38 / possible)))))
+
+# ::id 8
+# ::snt Former Fed Vice Chairman Manuel Johnson is a favorite of Budget Director Richard Darman , but has a testy relationship with Treasury Secretary Nicholas Brady
+(x16 / contrast-01
+	:ARG1 (x9 / favorite
+		:ARG0 (x5 / newspaper
+			:name (n / name
+				:op1 "Manuel"
+				:op2 "Johnson")
+			:mod (x1 / former)
+			:ARG0-of (x4 / have-org-role-91
+				:ARG2 (c / chairman)
+				:mod (x3 / vice
+					:ARG1 (x2 / have-org-role-91
+						:ARG1 (g / government-organization
+							:name (n2 / name
+								:op1 "Fed"))))))
+		:poss (x14 / person
+			:name (n1 / name
+				:op1 "Darman")
+			:null_edge (x12 / have-org-role-91
+				:ARG2 (d / director)
+				:ARG1 (x11 / budget))
+			:null_edge (x13 / null_tag))
+		:ARG1 (x20 / relationship
+			:prep-with (x24 / name
+				:op1 "Nicholas"
+				:op2 "Brady"
+				:ARG0-of (x23 / have-org-role-91
+					:ARG2 (s / secretary)
+					:mod (x22 / treasury))))))
+
+# ::id 9
+# ::snt Mr. Brady is friends with New York Fed President Gerald Corrigan , but Mr. Corrigan a Volcker protege would probably be vetoed by Mr. Darman or by the President's top economic adviser , Michael Boskin
+(x4 / friend
+	:ARG0 (x2 / person
+		:name (n / name
+			:op1 "Brady")
+		:null_edge (x1 / null_tag))
+	:null_edge (x6 / city
+		:name (n1 / name
+			:op1 "New"
+			:op2 "York"
+			:op3 "Fed"
+			:op4 "President"
+			:op5 "Gerald"
+			:op6 "Corrigan"))
+	:mod (x20 / probable
+		:domain (x22 / veto-01
+			:ARG1 (x18 / protege
+				:poss (x15 / person
+					:name (n2 / name
+						:op1 "Corrigan")
+					:null_edge (x14 / null_tag)))
+			:ARG1 (x26 / or
+				:op1 (x25 / person
+					:name (n3 / name
+						:op1 "Darman")
+					:null_edge (x24 / null_tag)
+					:ARG0-of (x33 / advise-01
+						:poss (x29 / have-org-role-91
+							:ARG2 (p / president))
+						:mod (x31 / top)
+						:ARG1 (x32 / economy)
+						:name (x35 / name
+							:op1 "Michael"
+							:op2 "Boskin")))))))
+
+# ::id 10
+# ::snt And despite the criticisms by his aides , President Bush still considers Mr. Greenspan a friend and adviser
+(x1 / and
+	:op2 (x12 / consider-01
+		:ARG1 (x4 / criticism
+			:ARG0 (x7 / have-org-role-91
+				:ARG2 (a / aide)))
+		:ARG0 (x10 / person
+			:name (n / name
+				:op1 "Bush")
+			:ARG0-of (x9 / have-org-role-91
+				:ARG2 (p / president)))
+		:mod (x11 / still)
+		:ARG1 (x17 / and
+			:op1 (x16 / friend
+				:poss (x14 / person
+					:name (n1 / name
+						:op1 "Greenspan")
+					:null_edge (x13 / null_tag)))
+			:op2 (x18 / have-org-role-91
+				:ARG2 (p1 / person
+					:ARG0-of (a1 / advise-01))))))
+
+# ::id 11
+# ::snt his aides  have known each other for years , and the president recently issued a statement praising the strong leadership at the Fed
+(x10 / and
+	:op1 (x4 / know-01
+		:ARG1 (x6 / other)
+		:ARG1 (x16 / state-01
+			:time (x13 / recent)
+			:ARG0-of (x17 / praise-01
+				:ARG1 (x20 / lead-02
+					:mod (x19 / strong)
+					:poss (x23 / have-org-role-91
+						:ARG1 (g / government-organization
+							:name (n / name
+								:op1 "Fed")))))
+			:ARG0 (xap1 / person
+				:ARG0-of (x12 / have-org-role-91
+					:ARG2 (p / president))))
+		:duration (xap0 / multiple
+			:op1 (x8 / temporal-quantity
+				:unit (y / year)))))
+
+# ::id 12
+# ::snt In addition , Mr. Greenspan has strong support in the Senate , which must confirm Mr. Greenspan  reappointment
+(x8 / support-01
+	:ARG0 (x5 / person
+		:name (n / name
+			:op1 "Greenspan")
+		:null_edge (x4 / null_tag))
+	:manner (x7 / strong)
+	:ARG1 (x11 / government-organization
+		:name (n1 / name
+			:op1 "Senate")
+		:null_edge (x15 / confirm-01
+			:ARG0 (x17 / person
+				:name (n2 / name
+					:op1 "Greenspan")
+				:null_edge (x16 / null_tag))
+			:ARG1 (x18 / reappointment))))
+
+# ::id 13
+# ::snt Mr. Greenspan's support in financial markets is especially important
+(x10 / important
+	:domain (x4 / support-01
+		:ARG0 (x2 / person
+			:name (n / name
+				:op1 "Greenspan")
+			:null_edge (x1 / null_tag))
+		:location (x7 / market
+			:mod (x6 / finance)))
+	:degree (x9 / especially))
+
+# ::id 14
+# ::snt Past administrations have paid close attention to market sentiment in choosing a Fed chief
+(x4 / pay-01
+	:ARG1 (x2 / administer-01)
+	:ARG1 (x6 / attention
+		:mod (x5 / close))
+	:ARG2 (x9 / sentiment
+		:mod (x8 / market)
+		:topic (x11 / choose-01
+			:ARG1 (x14 / have-org-role-91
+				:ARG2 (c / chief)))))
+
+# ::id 15
+# ::snt A choice that is poorly regarded by the financial community , they feared , would cause market turmoil and possibly higher long-term interest rates , as traders drove up rates out of fear that the new chairman might fuel inflation
+(x16 / cause-01
+	:ARG0 (x2 / choices
+		:ARG1-of (x6 / regard-01
+			:manner (x5 / poor)
+			:ARG0 (x10 / community
+				:mod (x9 / finance))))
+	:ARG1 (x19 / and
+		:op2 (x13 / fear-01)
+		:op1 (x18 / turmoil
+			:mod (x17 / market))
+		:op2 (x24 / rate
+			:mod (x21 / high
+				:mod (x20 / possible))
+			:duration (x22 / long)
+			:mod (x23 / interest)))
+	:time (x28 / drive-02
+		:ARG0 (x27 / trader)
+		:ARG1 (x30 / rate)
+		:ARG1 (x33 / fear-01
+			:ARG1 (x39 / fuel-01
+				:ARG0 (x37 / have-org-role-91
+					:ARG2 (c / chairman)
+					:mod (x36 / new))
+				:ARG1 (x40 / inflation)))))
+
+# ::id 16
+# ::snt The Fed chairman is basically a Wall Street call , says David Jones of Aubrey G. Lanston & Co.
+(x11 / say-01
+	:ARG1 (x9 / thing
+		:ARG2-of (c / call-01)
+		:ARG0 (x3 / have-org-role-91
+			:ARG2 (c1 / chairman))
+		:mod (x5 / basic)
+		:null_edge (x7 / null_tag)
+		:null_edge (x8 / null_tag))
+	:ARG0 (x12 / newspaper
+		:name (n / name
+			:op1 "David"
+			:op2 "Jones")
+		:ARG0-of (x15 / government-organization
+			:name (n1 / name
+				:op1 "Aubrey"
+				:op2 "G."
+				:op3 "Lanston"
+				:op4 "&"))))
+
+# ::id 17
+# ::snt Wall Street's influence was apparent in 1983 , when President Reagan's Treasury secretary , Donald Regan , mounted a strident campaign to keep Mr. Volcker from being reappointed
+(x6 / apparent
+	:domain (x4 / influence-01
+		:null_edge (x1 / null_tag))
+	:time (x20 / mount-02
+		:time (x8 / date-entity
+			:year 1983)
+		:ARG0 (x12 / person
+			:name (n / name
+				:op1 "Reagan")
+			:null_edge (x11 / have-org-role-91
+				:ARG2 (p / president))
+			:ARG0-of (x15 / have-org-role-91
+				:ARG2 (s / secretary)
+				:ARG1 (x14 / government-organization
+					:name (n1 / name
+						:op1 "Treasury"))
+				:name (x17 / name
+					:op1 "Donald"
+					:op2 "Regan")))
+		:ARG1 (x23 / campaign-01
+			:mod (x22 / strident)
+			:ARG1 (x25 / keep-04
+				:ARG1 (x27 / person
+					:name (n2 / name
+						:op1 "Volcker")
+					:null_edge (x26 / null_tag))
+				:ARG2 (x30 / reappoint
+					:ARG1 x27)))))
+
+# ::id 18
+# ::snt Most of the president's top advisers agreed with Mr. Regan ; but in the end , the president reappointed Mr. Volcker anyway , to avoid financial turmoil
+(x / xconcept
+	:x (x12 / and
+		:op2 (x13 / contrast-01
+			:ARG1 (x8 / agree-01
+				:ARG1 (x7 / have-org-role-91
+					:ARG2 (p / person
+						:ARG0-of (a / advise-01))
+					:quant (x1 / most)
+					:mod (x6 / top))
+				:ARG1 (x11 / person
+					:name (n / name
+						:op1 "Regan")
+					:null_edge (x10 / null_tag)))
+			:ARG2 (x20 / reappoint
+				:time (x16 / end)
+				:ARG0 (x19 / have-org-role-91
+					:ARG2 (p2 / president))
+				:ARG1 (x22 / person
+					:name (n1 / name
+						:op1 "Volcker")
+					:null_edge (x21 / null_tag))
+				:mod (x23 / anyway)
+				:purpose (x26 / avoid-01
+					:ARG0 x19
+					:ARG0 x22
+					:ARG1 (x28 / turmoil
+						:mod (x27 / finance)))))
+		:op3 (xap0 / person
+			:ARG0-of (x4 / have-org-role-91
+				:ARG2 (p1 / president)))))
+
+# ::id 19
+# ::snt Mr. Greenspan , appointed by Mr. Reagan in August 1987 , has not made much of an impression on the general public
+(x18 / impression
+	:ARG0 (x2 / person
+		:name (n / name
+			:op1 "Greenspan")
+		:null_edge (x1 / null_tag)
+		:ARG1-of (x4 / appoint-01
+			:ARG0 (x7 / person
+				:name (n1 / name
+					:op1 "Reagan")
+				:null_edge (x6 / null_tag))
+			:time (x9 / date-entity
+				:year 1987)))
+	:quant (x15 / much)
+	:ARG1 (x22 / public
+		:mod (x21 / general)))
+
+# ::id 20
+# ::snt A new Wall Street Journal/NBC News poll shows that 24 % of voters support Alan Greenspan  reappointment and 17 % oppose his reappointment  ; but an overwhelming majority of 59 % do not have an opinion one way or the other
+(x / xconcept
+	:x (x24 / and
+		:op1 (x8 / show-01
+			:ARG0 (x7 / poll-01
+				:mod (x2 / new)
+				:null_edge (x3 / null_tag)
+				:null_edge (x4 / null_tag)
+				:null_edge "journal\/nbc"
+				:null_edge (x6 / null_tag))
+			:ARG1 (x18 / and
+				:op1 (x14 / support-01
+					:name (x15 / name
+						:op1 "Alan"
+						:op2 "Greenspan")
+					:ARG1 (x17 / reappointment)
+					:ARG1 (x36 / opine-01
+						:ARG0 (x28 / majority
+							:mod (x27 / overwhelm-01)
+							:ARG3-of (x29 / include-91
+								:ARG3 (xap2 / percentage-entity
+									:value 59)))
+						:topic (x39 / or
+							:op1 (x38 / way
+								:quant 1
+								:mod (x41 / other))))
+					:ARG1 (xap0 / percentage-entity
+						:value 24
+						:ARG1 (x13 / vote-01)))
+				:op1 (x21 / oppose-01
+					:ARG1 (x23 / reappointment)
+					:prep-within (xap1 / percentage-entity
+						:value 17))))))
+
+# ::id 21
+# ::snt Even in the midst of a recession , it is clear the public does not pay close attention to the Federal Reserve , say pollsters Robert Teeter and Peter Hart
+(x24 / say-01
+	:ARG1 (x11 / clear
+		:time (x4 / midst
+			:part-of (x7 / recession))
+		:domain (x16 / pay-01
+			:ARG0 (x13 / public)
+			:ARG1 (x18 / attention
+				:mod (x17 / close))
+			:ARG2 (x22 / organization
+				:name (n1 / name
+					:op1 "Reserve")
+				:null_edge (x21 / null_tag))))
+	:ARG1 (x25 / pollster)
+	:ARG1 (x28 / and
+		:op1 (x26 / newspaper
+			:name (n / name
+				:op1 "Robert"
+				:op2 "Teeter"))
+		:op2 (x29 / name
+			:op1 "Peter"
+			:op2 "Hart")))
+
+# ::id 22
+# ::snt Among professional economists , opinions are stronger , and generally positive
+(x9 / and
+	:op1 (x7 / strong
+		:compared-to (x3 / economist
+			:mod (x2 / professional))
+		:domain (x5 / thing
+			:ARG1-of (o / opine-01)))
+	:op2 (x11 / positive
+		:mod (x10 / general)))
+
+# ::id 23
+# ::snt James Tobin , Nobel prize-winning economist at Yale University , criticizes the Fed chairman for being too cautious in easing credit , but says : James Tobin  think Alan has a lot of respect among academic economists as a good applied numbers man , who knows the ins and outs of the forecasting business
+(x23 / contrast-01
+	:ARG1 (x11 / criticize-01
+		:ARG0 (x1 / newspaper
+			:name (n / name
+				:op1 "James"
+				:op2 "Tobin")
+			:ARG0-of (x6 / economist
+				:mod (x4 / Nobel)
+				:mod (x5 / prize-winning)
+				:location (x8 / government-organization
+					:name (n2 / name
+						:op1 "Yale"
+						:op2 "University"))))
+		:ARG2 (x14 / have-org-role-91
+			:ARG2 (c / chairman))
+		:ARG2 (x18 / cautious
+			:mod (x17 / too)
+			:ARG1 (x20 / ease-02
+				:ARG1 (x21 / credit))))
+	:ARG2 (x24 / say-01
+		:ARG1 (x28 / think-01
+			:ARG0 (x26 / newspaper
+				:name (n1 / name
+					:op1 "James"
+					:op2 "Tobin"))
+			:ARG1 (x34 / respect-01
+				:ARG0 x26
+				:ARG0 (x29 / person
+					:name (n3 / name
+						:op1 "Alan"))
+				:quant (x32 / lot)
+				:ARG0 (x37 / economist
+					:mod (x36 / academia)
+					:ARG2 (x43 / man
+						:mod (x40 / good)
+						:ARG1-of (x41 / applied)
+						:null_edge (x42 / null_tag)
+						:ARG1-of (x46 / know-01
+							:ARG1 (x49 / and
+								:op1 (x48 / in
+									:poss (x54 / business
+										:mod (x53 / forecast-01)))
+								:op2 (x50 / out)))))))))
+
+# ::id 24
+# ::snt And at the Hoover Institution , economist Milton Friedman , who also won a Nobel prize , says : economist Milton Friedman , who also won a Nobel prize  think on the whole the Fed has done extremely well since Milton Friedman  is taken over
+(x1 / and
+	:op2 (x18 / say-01
+		:location (x5 / organization
+			:name (n / name
+				:op1 "Institution")
+			:mod (x4 / organization
+				:name (n2 / name
+					:op1 "Hoover")))
+		:ARG0 (x8 / newspaper
+			:name (n1 / name
+				:op1 "Milton"
+				:op2 "Friedman")
+			:ARG0-of (x7 / economist)
+			:ARG0-of (x13 / win-01
+				:mod (x12 / also)
+				:ARG1 (x16 / prize
+					:mod (x15 / Nobel))))
+		:ARG1 (x21 / name
+			:op1 "Milton"
+			:op2 "Friedman"
+			:ARG0-of (x20 / economist)
+			:ARG0-of (x26 / win-01
+				:mod (x25 / also)
+				:ARG1 (x29 / prize
+					:mod (x28 / Nobel))
+				:ARG1 (x30 / think-01
+					:ARG2 (x33 / whole
+						:name (x41 / name
+							:op1 "Milton"
+							:op2 "Friedman"
+							:mod (x39 / well
+								:degree (x38 / extreme)))))))))
+
+# ::id 25
+# ::snt Hoover Institution  is hard for economist Milton Friedman , who also won a Nobel prize  to find a period this long in which economist Milton Friedman , who also won a Nobel prize  have as little fault to find with the Fed
+(x4 / hard
+	:domain (x2 / organization
+		:name (n / name
+			:op1 "Institution")
+		:null_edge (x1 / organization
+			:name (n1 / name
+				:op1 "Hoover")))
+	:name (x7 / name
+		:op1 "Milton"
+		:op2 "Friedman"
+		:ARG0-of (x6 / economist)
+		:ARG0-of (x12 / win-01
+			:mod (x11 / also)
+			:ARG1 (x15 / prize
+				:mod (x14 / Nobel)
+				:purpose (x17 / find-01
+					:ARG1 (x19 / period
+						:time-of (x37 / fault-01
+							:mod (x20 / this)
+							:ARG0 (x25 / newspaper
+								:name (n2 / name
+									:op1 "Milton"
+									:op2 "Friedman")
+								:ARG0-of (x24 / economist)
+								:ARG0-of (x30 / win-01
+									:mod (x29 / also)
+									:ARG1 (x33 / prize
+										:mod (x32 / Nobel))))
+							:mod (x36 / little)
+							:ARG1 (x39 / find-01
+								:ARG0 x25
+								:prep-with (x42 / have-org-role-91
+									:ARG1 (g / government-organization
+										:name (n3 / name
+											:op1 "Fed")))))))))))
+
+# ::id 26
+# ::snt Mr. Greenspan draws high praise from academics for his talents as a business and government economist rather than for Mr. Greenspan  academic performance
+(x3 / draw-02
+	:ARG0 (x2 / person
+		:name (n / name
+			:op1 "Greenspan")
+		:null_edge (x1 / null_tag))
+	:ARG1 (x5 / praise-01
+		:degree (x4 / high))
+	:ARG2 (x7 / academic
+		:ARG1 (x10 / talent
+			:example (x14 / and
+				:op1 (x13 / business)
+				:op2 (x15 / government-organization
+					:ARG0-of (g / govern-01))
+				:op2 (x16 / economist
+					:ARG1 (x23 / perform-01
+						:poss (x21 / person
+							:name (n1 / name
+								:op1 "Greenspan")
+							:null_edge (x20 / null_tag))
+						:mod (x22 / academia)))))))
+
+# ::id 27
+# ::snt In fact , Mr. Greenspan  major academic work is obscure
+(x8 / work-01
+	:mod (x6 / major)
+	:mod (x7 / academia)
+	:manner (x10 / obscure
+		:domain (x5 / person
+			:name (n / name
+				:op1 "Greenspan")
+			:null_edge (x4 / null_tag))))
+
+# ::id 28
+# ::snt Unlike most such works , Mr. Greenspan's 1977 doctoral dissertation , a collection of previously written papers , is not available
+(x4 / thing
+	:ARG1-of (w / work-01)
+	:quant (x2 / most)
+	:mod (x3 / such)
+	:mod (x22 / available
+		:domain (x11 / dissertation
+			:ARG0 (x7 / person
+				:name (n / name
+					:op1 "Greenspan")
+				:null_edge (x6 / null_tag))
+			:time (x9 / date-entity
+				:year 1977)
+			:mod (x10 / doctoral)
+			:mod (x14 / collect-01
+				:ARG1 (x18 / paper
+					:ARG1-of (x17 / write-01
+						:time (x16 / previous)))))))
+
+# ::id 29
+# ::snt Librarians at New York University , which awarded the Ph.D. , say it is academics for his talents as a business and government economist  policy to keep a copy of every dissertation , but academics for his talents as a business and government economist  are unable to locate Mr. Greenspan's
+(x12 / say-01
+	:ARG0 (x1 / newspaper
+		:name (n / name
+			:op1 "Librarians")
+		:ARG0-of (x8 / award-01
+			:ARG1 (x10 / ph.d.
+				:location (x4 / government-organization
+					:name (n2 / name
+						:op1 "York"
+						:op2 "University")
+					:null_edge (x3 / null_tag)))))
+	:ARG1 (x15 / academic
+		:null_edge (x48 / locate-02
+			:purpose (x38 / talent
+				:domain (x35 / academic)
+				:domain (x42 / and
+					:op1 (x41 / business)
+					:op2 (x43 / government-organization
+						:ARG0-of (g / govern-01))))
+			:ARG1 (x50 / person
+				:name (n1 / name
+					:op1 "Greenspan")
+				:null_edge (x49 / null_tag))))
+	:ARG1 (x34 / contrast-01
+		:ARG2 (x27 / keep-04
+			:ARG0 (x18 / talent
+				:example (x22 / and
+					:op1 (x21 / business)
+					:op2 (x25 / policy
+						:mod (x24 / economist
+							:ARG1 (x23 / government-organization
+								:ARG0-of (g1 / govern-01))))))
+			:ARG1 (x29 / thing
+				:ARG2-of (c / copy-01)
+				:ARG1 (x32 / dissertation
+					:mod (x31 / every))))))
+
+# ::id 30
+# ::snt University Microfilms in Ann Arbor , Michigan , which keeps microfilmed copies of all doctoral dissertations , also says Michigan  does not have a copy of the paper
+(x19 / say-01
+	:ARG0 (x4 / person
+		:name (n / name
+			:op1 "Ann")
+		:null_edge (x2 / microfilms
+			:ARG1 (x1 / university))
+		:null_edge (x7 / country
+			:name (n1 / name
+				:op1 "Michigan"))
+		:ARG0-of (x10 / keep-01
+			:ARG1 (x12 / copy-01
+				:ARG1 (x16 / dissertation
+					:quant (x14 / all)
+					:mod (x15 / doctoral)))))
+	:mod (x18 / also)
+	:ARG1 (x23 / have-03
+		:ARG0 (x20 / country
+			:name (n2 / name
+				:op1 "Michigan"))
+		:ARG1 (x25 / thing
+			:ARG2-of (c / copy-01)
+			:ARG1 (x28 / paper))))
+
+# ::id 31
+# ::snt Asked about the dissertation , Fed spokesman Joseph Coyne said : academics for his talents as a business and government economist  do not have a copy at the board , but the chairman has a copy in storage in New York
+(x10 / say-01
+	:ARG0 (x8 / person
+		:name (n / name
+			:op1 "Joseph"
+			:op2 "Coyne")
+		:ARG0-of (x1 / ask-02
+			:ARG1 (x4 / dissertation))
+		:ARG0-of (x7 / have-org-role-91
+			:ARG2 (s / spokesman)
+			:ARG1 (x6 / have-org-role-91
+				:ARG1 (g / government-organization
+					:name (n1 / name
+						:op1 "Fed")))))
+	:ARG1 (x31 / contrast-01
+		:ARG2 (x15 / talent
+			:ARG0 (x12 / academic)
+			:topic (x19 / and
+				:op1 (x18 / business)
+				:op2 (x20 / government-organization
+					:ARG0-of (g1 / govern-01))))
+		:ARG1 (x26 / thing
+			:ARG2-of (c / copy-01)
+			:location (x29 / board))
+		:ARG2 (x34 / have-03
+			:ARG0 (x33 / have-org-role-91
+				:ARG2 (c1 / chairman)
+				:ARG1 (x36 / thing
+					:ARG2-of (c2 / copy-01)
+					:ARG2 (x38 / store-01
+						:location (x41 / country
+							:name (n2 / name
+								:op1 "York")
+							:null_edge (x40 / null_tag))))))))
+
+# ::id 32
+# ::snt At times , Mr. Greenspan has come under criticism both from some of Mr. Greenspan  Fed colleagues and from outsiders for being too political , and too willing to succumb to pressure from the Bush administration
+(x7 / come-01
+	:ARG1 (x5 / person
+		:name (n / name
+			:op1 "Greenspan")
+		:null_edge (x4 / null_tag))
+	:prep-under (x9 / criticize-01
+		:ARG0 (x18 / and
+			:op2 (x17 / colleague
+				:quant (x12 / some)
+				:null_edge (x14 / null_tag)
+				:ARG0-of (x16 / have-org-role-91
+					:ARG1 (g / government-organization
+						:name (n1 / name
+							:op1 "Fed"))
+					:mod (x15 / person
+						:name (n2 / name
+							:op1 "Greenspan"))))
+			:op2 (x20 / outsider
+				:purpose (x26 / and
+					:op1 (x24 / politics
+						:degree (x23 / too))
+					:op3 (x28 / will-02
+						:mod (x27 / too)
+						:ARG1 (x30 / succumb-01
+							:ARG2 (x32 / pressure-01
+								:ARG0 (xap0 / government-organization
+									:mod (x35 / person
+										:name (n3 / name
+											:op1 "Bush"))
+									:ARG0-of (x36 / administrate-01))))))))))
+
+# ::id 33
+# ::snt A recent harsh attack came from the Economist magazine of London , which said the timing of last month's decision to cut rates just two days after Secretary Brady's plea to other industrialized nations for global rate cuts was a textbook example of how not to conduct monetary policy because it made the supposedly independent Fed look like it was doing the Treasury's bidding
+(x5 / come-01
+	:ARG1 (x4 / attack-01
+		:time (x2 / recent)
+		:manner (x3 / harsh))
+	:ARG2 (x9 / magazine
+		:mod (x8 / economist)
+		:location (x11 / city
+			:name (n / name
+				:op1 "London")
+			:ARG0-of (x14 / say-01
+				:ARG0 (x16 / timing
+					:ARG1 (x21 / decide-01
+						:time (x19 / month
+							:mod (x18 / last))
+						:ARG1 (x23 / cut-04
+							:ARG1 (x24 / rate)
+							:time (x28 / after
+								:mod (x25 / just)
+								:quant (x27 / temporal-quantity
+									:unit (d / day)
+									:quant 2)
+								:op1 (x32 / plead-02
+									:ARG0 (x30 / person
+										:name (n1 / name
+											:op1 "Brady")
+										:ARG0-of (x29 / have-org-role-91
+											:ARG2 (s / secretary)))
+									:ARG2 (x36 / nation
+										:mod (x34 / other)
+										:ARG1-of (x35 / industrialize-01))
+									:ARG0 (x40 / cut-02
+										:ARG1 (x39 / rate
+											:mod (x38 / globe)))))))
+					:mod (x43 / textbook)
+					:ARG1 (x49 / conduct-02
+						:ARG1 (x51 / policy
+							:mod (x50 / monetary))
+						:ARG1-of (x52 / cause-01
+							:ARG0 (x54 / make-02
+								:ARG1 (x59 / look-02
+									:ARG0 (x58 / have-org-role-91
+										:ARG1 (g / government-organization
+											:name (n2 / name
+												:op1 "Fed"))
+										:ARG0-of (x57 / depend-01
+											:polarity -
+											:mod (x56 / supposedly)))
+									:null_edge (x63 / do-02
+										:ARG0 x58
+										:ARG1 (x67 / bid-01
+											:ARG0 (x65 / organization
+												:name (n3 / name
+													:op1 "Treasury")))))))))))))
+
+# ::id 34
+# ::snt 
+(x6 / say-01
+	:ARG1 (x14 / timing
+		:ARG1 (x8 / person
+			:name (n / name
+				:op1 "Greenspan")
+			:null_edge (x7 / null_tag))
+		:ARG1 (x11 / choices
+			:null_edge (x10 / little))
+		:ARG1 (x18 / cut-02
+			:ARG0 x8
+			:ARG1 (x17 / rate)))
+	:ARG0 (xap0 / person
+		:ARG0-of (x2 / have-org-role-91
+			:ARG2 (o / official))))
+
+# ::id 35
+# ::snt Mr. Greenspan  favored an earlier rate cut but was unable to win the support of three of the five Fed governors Wayne Angell , John LaWare and Edward Kelley
+(x8 / contrast-01
+	:ARG1 (x3 / favor-01
+		:ARG0 (x2 / person
+			:name (n / name
+				:op1 "Greenspan")
+			:null_edge (x1 / null_tag))
+		:ARG1 (x7 / cut-02
+			:time (x5 / early)
+			:ARG1 (x6 / rate)))
+	:ARG1 (xap1 / have-concession-91
+		:ARG0-of (xap0 / possible
+			:ARG2 (x12 / win-01
+				:ARG1 (x14 / support-01
+					:ARG1-of (x17 / include-91
+						:null_edge (x21 / null_tag
+							:quant 5
+							:ARG1 (x27 / and
+								:name (x22 / name
+									:op1 "Wayne"
+									:op2 "Angell")
+								:op2 (x25 / name
+									:op1 "John"
+									:op2 "LaWare")
+								:op2 (x28 / name
+									:op1 "Edward"
+									:op2 "Kelley")))))))))
+
+# ::id 36
+# ::snt On April 30 , prodded by weak economic indicators as well as phone calls from Secretary Brady , Mr. LaWare and Mr. Kelley agreed to support a rate cut
+(x24 / agree-01
+	:time (x2 / date-entity)
+	:ARG1 (x5 / prod
+		:ARG2 (x14 / call
+			:ARG1 (x9 / indicate-01
+				:mod (x7 / weak)
+				:mod (x8 / economy))
+			:mod (x13 / phone)
+			:ARG0 (x17 / person
+				:name (n2 / name
+					:op1 "Brady")
+				:ARG0-of (x16 / have-org-role-91
+					:ARG2 (s / secretary))))
+		:ARG0 (x21 / and
+			:op1 (x20 / person
+				:name (n / name
+					:op1 "LaWare")
+				:null_edge (x19 / null_tag))
+			:op2 (x23 / person
+				:name (n1 / name
+					:op1 "Kelley")
+				:null_edge (x22 / null_tag))))
+	:ARG0 x21
+	:ARG1 (x26 / support-01
+		:ARG0 x5
+		:ARG0 x21
+		:ARG1 (x29 / cut-02
+			:ARG1 (x28 / rate))))
+
+# ::id 37
+# ::snt Fed officials considered delaying the move so Fed officials  would not seem to be succumbing to Mr. Brady's plea
+(x3 / consider-01
+	:ARG1 (x4 / delay-01
+		:ARG1 (x6 / move-02)
+		:purpose (x20 / plead-02
+			:ARG0 (x18 / person
+				:name (n / name
+					:op1 "Brady")
+				:null_edge (x17 / null_tag))
+			:ARG0 (xap1 / person
+				:ARG0-of (x9 / have-org-role-91
+					:ARG2 (o1 / official)))))
+	:ARG1 (xap0 / person
+		:ARG0-of (x2 / have-org-role-91
+			:ARG2 (o / official))))
+
+# ::id 38
+# ::snt But the Treasury's quarterly sale of securities was to be announced the next day
+(x1 / contrast-01
+	:ARG2 (x12 / announce-01
+		:time (x15 / day
+			:mod (x14 / next)))
+	:ARG2 (xap0 / sell-01
+		:ARG0 (x3 / organization
+			:name (n / name
+				:op1 "Treasury"))
+		:ARG3 (x5 / temporal-quantity
+			:unit (w / week))
+		:ARG0 (x8 / thing
+			:ARG0-of (s / secure-02))))
+
+# ::id 39
+# ::snt The Fed generally does not like to disrupt the quarterly refunding operation by changing rates , so that ruled out any action for another two weeks
+(xap0 / and
+	:snt2 (x6 / like-02
+		:ARG0 (x2 / have-org-role-91
+			:ARG1 (g / government-organization
+				:name (n / name
+					:op1 "Fed")))
+		:mod (x3 / general)
+		:ARG1 (x8 / disrupt-01
+			:ARG0 x2
+			:ARG1 (x12 / operation
+				:mod (x11 / refunding))
+			:instrument (x14 / change-01
+				:ARG1 (x15 / rate))))
+	:ARG1 (x19 / rule-02
+		:ARG0 x2
+		:ARG1 (x22 / action
+			:mod (x21 / any)
+			:duration (x26 / temporal-quantity
+				:unit (w / week)
+				:quant 2))))
+
+# ::id 40
+# ::snt Fed officials decided to make Fed officials  move right away , and take the criticism
+(x3 / decide-01
+	:ARG1 (x12 / and
+		:op1 (x8 / move-01
+			:direction (x10 / away
+				:mod (x9 / right))
+			:ARG0 (xap1 / person
+				:ARG0-of (x7 / have-org-role-91
+					:ARG2 (o1 / official))))
+		:op2 (x13 / take-01
+			:ARG1 (x15 / criticize-01)))
+	:ARG0 (xap0 / person
+		:ARG0-of (x2 / have-org-role-91
+			:ARG2 (o / official))))
+

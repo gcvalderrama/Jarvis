@@ -1,0 +1,874 @@
+# ::id 1
+# ::snt A new cancer drug proved strikingly successful with very few side effects in treating a relatively rare form of leukemia , researchers said
+(x23 / say-01
+	:ARG1 (x7 / succeed-01
+		:ARG1 (x4 / drug
+			:mod (x2 / new)
+			:mod (x3 / cancer))
+		:mod (x6 / strikingly)
+		:ARG1 (x12 / effect
+			:quant (x10 / few
+				:degree (x9 / very))
+			:mod (x11 / side))
+		:ARG2 (x14 / treat-02
+			:ARG1 (x18 / form
+				:mod (x17 / rare
+					:degree (x16 / relative))
+				:mod (x20 / disease
+					:name (n / name
+						:op1 "leukemia")))))
+	:ARG0 (x22 / person
+		:ARG0-of (r / research-01)))
+
+# ::id 2
+# ::snt The drug , called 2-CdA , was nearly 100 % effective treating 12 patients with hairy-cell leukemia
+(x11 / effective
+	:domain (x2 / drug
+		:ARG1-of (x4 / call-01))
+	:duration (x8 / nearly)
+	:domain (x12 / treat-02
+		:ARG1 (x14 / patient
+			:quant 12)
+		:ARG2 (x17 / disease
+			:name (n / name
+				:op1 "leukemia")
+			:mod (x16 / hairy-cell))))
+
+# ::id 3
+# ::snt The patients underwent just one seven-day treatment and experienced almost none of the debilitating side effects such as vomiting , hair-loss and kidney and liver problems associated with other chemotherapy
+(x3 / undergo-01
+	:ARG1 (x2 / patient)
+	:ARG1 (x7 / treat-03
+		:quant (x4 / just
+			:op1 1)
+		:duration (x6 / person
+			:name (n / name
+				:op1 "seven-day")))
+	:null_edge (x8 / and
+		:op2 (x9 / experience-01
+			:ARG0 x2
+			:ARG1 (x16 / effect
+				:mod (x11 / none
+					:degree (x10 / almost))
+				:mod (x14 / debilitating)
+				:mod (x15 / side)
+				:example (x22 / and
+					:op1 (x19 / vomiting)
+					:op2 (x21 / hair-loss)
+					:op2 (x24 / and
+						:op1 (x23 / kidney)
+						:op2 (x25 / liver)
+						:op2 (x26 / problem
+							:ARG1-of (x27 / associate-01
+								:ARG2 (x30 / chemotherapy
+									:mod (x29 / other))))))))))
+
+# ::id 4
+# ::snt The results need to be replicated by other researchers before definitive conclusions can be made , and the long-term effect of the treatment remains unknown
+(x3 / need-01
+	:ARG0 (x2 / thing
+		:ARG2-of (r / result-01))
+	:ARG1 (x6 / replicate-01
+		:ARG1 x2
+		:ARG0 (x9 / person
+			:ARG0-of (r1 / research-01)
+			:mod (x8 / other))
+		:time (x10 / before
+			:op1 (x13 / possible
+				:domain (x15 / make-01
+					:ARG1 (x12 / thing
+						:ARG1-of (c / conclude-01)
+						:mod (x11 / definitive))))))
+	:ARG1 (x24 / remain-01
+		:ARG1 (x17 / and)
+		:ARG1 (x20 / effect-01
+			:duration (x19 / long)
+			:ARG0 (x23 / treat-03))
+		:ARG3 (x25 / know-01
+			:polarity -)))
+
+# ::id 5
+# ::snt But the initial experience with the compound is especially promising , and an apparent improvement over other therapy for the disease , scientists said
+(x24 / say-01
+	:ARG1 (x12 / and
+		:op1 (x10 / promising
+			:null_edge (x1 / contrast-01)
+			:domain (x4 / experience
+				:mod (x3 / initial)
+				:ARG1 (x7 / compound-01))
+			:mod (x9 / especially))
+		:op2 (x15 / improve-01
+			:manner (x14 / apparency)
+			:ARG1 (x18 / therapy
+				:mod (x17 / other)
+				:beneficiary (x21 / disease))))
+	:ARG0 (x23 / scientist))
+
+# ::id 6
+# ::snt There are not many -LCB- drugs -RCB- where you can administer one course of treatment and have the disease go away and stay away for as long as four years , says Lawrence Piro , chief of cancer research at Scripps Clinic & Research Foundation , La Jolla , Calif. , where the drug was developed
+(x32 / say-01
+	:ARG1 (x4 / many)
+	:ARG1 (x10 / possible)
+	:ARG1 (x16 / and
+		:op1 (x11 / administer-01
+			:ARG1 (x6 / drug)
+			:ARG0 (x9 / you)
+			:ARG1 (x22 / and
+				:op1 (x20 / go-01
+					:purpose (x15 / treat-03)
+					:ARG1 (x19 / disease))
+				:op2 (x23 / stay-01
+					:direction (x24 / away)
+					:duration (x30 / temporal-quantity
+						:unit (y / year)
+						:null_edge (x27 / long))))))
+	:ARG1 (x33 / name
+		:op1 "Lawrence"
+		:op2 "Piro"
+		:ARG0-of (x36 / have-org-role-91
+			:ARG2 (c / chief)
+			:topic (x39 / research-01
+				:ARG1 (x38 / cancer))
+			:location (x41 / government-organization
+				:name (n / name
+					:op1 "Scripps"
+					:op2 "Clinic"
+					:op3 "&"
+					:op4 "Research"
+					:op5 "Foundation")
+				:location (x48 / country
+					:name (n1 / name
+						:op1 "Jolla")
+					:null_edge (x47 / country
+						:name (n2 / name
+							:op1 "La"))
+					:null_edge (x50 / country
+						:name (n3 / name
+							:op1 "Calif.")))
+				:ARG1-of (x56 / develop-02
+					:ARG1 (x54 / drug))))))
+
+# ::id 7
+# ::snt The leukemia has not come back in any of the patients we treated
+(x5 / come-01
+	:ARG1 (x2 / disease
+		:name (n / name
+			:op1 "leukemia"))
+	:direction (x6 / back)
+	:ARG2 (x11 / patient
+		:mod (x8 / any)
+		:ARG1-of (x13 / treat-01
+			:ARG0 (x12 / we))))
+
+# ::id 8
+# ::snt The study is published in today's New England Journal of Medicine
+(x4 / publish-01
+	:ARG1 (x2 / study)
+	:location (x10 / journal
+		:time (x6 / today)
+		:null_edge (x8 / null_tag)
+		:poss (x9 / country
+			:name (n / name
+				:op1 "England"))
+		:null_edge (x12 / medicine)))
+
+# ::id 9
+# ::snt the most effective treatment for hairy-cell leukemia , in terms of rapidity of response  is without doubt the most effective treatment for hairy-cell leukemia , in terms of rapidity of response , adds Elihu H. Estey , a cancer researcher at the University of Texas-M.D. Anderson Cancer Center , Houston
+(x21 / treat-03
+	:ARG0 (x4 / treat-03
+		:mod (x3 / effective
+			:degree (x2 / most))
+		:ARG2 (x7 / disease
+			:name (n1 / name
+				:op1 "leukemia")
+			:mod (x6 / hairy-cell)))
+	:ARG2 (x12 / rapidity
+		:ARG2-of (x14 / respond-01))
+	:manner (x17 / doubt-01)
+	:mod (x20 / effective
+		:degree (x19 / most))
+	:ARG2 (x24 / disease
+		:name (n / name
+			:op1 "leukemia")
+		:mod (x23 / hairy-cell))
+	:ARG0 (x29 / rapidity
+		:ARG2-of (x31 / respond-01)
+		:ARG1-of (x33 / add-02
+			:name (x34 / name
+				:op1 "Elihu"
+				:op2 "H."
+				:op3 "Estey"
+				:ARG0-of (x40 / research-01
+					:mod (x39 / cancer)
+					:ARG1 (x43 / government-organization
+						:name (n2 / name
+							:op1 "University"
+							:op2 "of"
+							:op3 "Texas-M.D."
+							:op4 "Anderson"
+							:op5 "Cancer"
+							:op6 "Center")
+						:location (x50 / country
+							:name (n3 / name
+								:op1 "Houston"))))))))
+
+# ::id 10
+# ::snt Dr. Estey recently began treating patients with 2-CdA and has had similar results with five patients
+(x9 / and
+	:op1 (x4 / begin-01
+		:ARG0 (x2 / person
+			:name (n / name
+				:op1 "Estey"))
+		:time (x3 / recent)
+		:ARG1 (x5 / treat-02
+			:ARG0 x2
+			:ARG1 (x6 / patient))
+		:ARG1 (x8 / 2-cda)
+		:ARG1 (x13 / thing
+			:ARG2-of (r / result-01)
+			:ARG1-of (x12 / resemble-01
+				:op (s / similar))
+			:ARG2 (x16 / patient
+				:quant 5))))
+
+# ::id 11
+# ::snt It is a striking finding , Elihu H. Estey  says
+(x10 / say-01
+	:ARG1 (x5 / thing
+		:ARG1-of (f / find-01)
+		:mod (x4 / strike-01))
+	:ARG0 (x7 / person
+		:name (n / name
+			:op1 "Elihu"
+			:op2 "H."
+			:op3 "Estey")))
+
+# ::id 12
+# ::snt It is very unlikely to be a fluke
+(x4 / likely
+	:polarity -
+	:degree (x3 / very)
+	:domain (x8 / fluke))
+
+# ::id 13
+# ::snt Hairy-cell leukemia , so-called because of the appearance of the cancerous cells under the microscope , affects about 6,000 people in the U.S. , with 600 new cases a year
+(x17 / affect-01
+	:ARG0 (x2 / disease
+		:name (n / name
+			:op1 "leukemia")
+		:mod (x1 / hairy-cell)
+		:mod (x4 / so-called
+			:ARG1-of (x5 / cause-01
+				:ARG0 (x8 / appear-01
+					:ARG1 (x12 / cell
+						:mod (x11 / cancerous)
+						:part-of (x15 / microscope))))))
+	:ARG1 (x18 / about
+		:op1 (x19 / 6,000))
+	:ARG2 (x28 / case
+		:location (x23 / country
+			:name (n1 / name
+				:op1 "U.S."))
+		:quant 600
+		:mod (x27 / new)))
+
+# ::id 14
+# ::snt As the disease progresses , patients become anemic , are vulnerable to infection and often need blood transfusions
+(x7 / become-01
+	:ARG2 (x4 / progress-01
+		:ARG0 (x3 / disease))
+	:ARG1 (x6 / patient)
+	:ARG1 (x14 / and
+		:op1 (x8 / anemic)
+		:op2 (x11 / vulnerable
+			:prep-to (x13 / infect-01))
+		:op2 (x16 / need-01
+			:ARG0 x6
+			:frequency (x15 / often)
+			:ARG1 (x18 / transfusion
+				:mod (x17 / blood)))))
+
+# ::id 15
+# ::snt Until the mid-1980s , treatments were ineffective , and patients often died of blood problems and infections
+(x9 / and
+	:op1 (x7 / effective
+		:polarity -
+		:time (x1 / until
+			:time (x3 / date-entity))
+		:domain (x5 / treat-03))
+	:op2 (x12 / die-01
+		:ARG1 (x10 / patient)
+		:frequency (x11 / often)
+		:ARG1 (x16 / and
+			:op1 (x15 / problem
+				:mod (x14 / blood))
+			:op2 (x17 / infect-01))))
+
+# ::id 16
+# ::snt Since then , alpha interferon , a drug sold by Hoffmann-La Roche Inc. and Schering-Plough Corp. and an experimental drug called deoxycoformycin have significantly reduced death rates from hairy-cell leukemia
+(x25 / reduce-01
+	:time (x1 / since
+		:op1 (x2 / then))
+	:ARG0 (x17 / and
+		:op1 (x5 / interferon
+			:mod (x4 / alpha))
+		:op2 (x8 / drug
+			:ARG1-of (x9 / sell-01
+				:ARG0 (x14 / and
+					:op1 (x11 / government-organization
+						:name (n1 / name
+							:op1 "Hoffmann-La"
+							:op2 "Roche"
+							:op3 "Inc."))
+					:op2 (x16 / organization
+						:name (n2 / name
+							:op1 "Corp.")
+						:null_edge (x15 / organization
+							:name (n3 / name
+								:op1 "Schering-Plough"))))))
+		:op2 (x20 / drug
+			:mod (x19 / experiment-01)
+			:ARG1-of (x22 / deoxycoformycin)))
+	:degree (x24 / significant)
+	:ARG1 (x27 / rate
+		:mod (x26 / die-01))
+	:ARG2 (x30 / disease
+		:name (n / name
+			:op1 "leukemia")
+		:mod (x29 / hairy-cell)))
+
+# ::id 17
+# ::snt Hoffmann-La Roche is the U.S. subsidiary of F. Hoffmann-La Roche & Co. of Switzerland
+(x6 / subsidiary
+	:domain (x1 / newspaper
+		:name (n / name
+			:op1 "Hoffmann-La"
+			:op2 "Roche"))
+	:mod (x5 / country
+		:name (n1 / name
+			:op1 "U.S."))
+	:part-of (x8 / government-organization
+		:name (n2 / name
+			:op1 "F."
+			:op2 "Hoffmann-La"
+			:op3 "Roche"
+			:op4 "&")
+		:poss (x14 / country
+			:name (n3 / name
+				:op1 "Switzerland"))))
+
+# ::id 18
+# ::snt But neither drug is as effective as 2-CdA appears to be in low doses and both can cause such side effects as nausea , vomiting , skin rashes and nervous-system disorders , researchers say
+(x1 / contrast-01
+	:ARG2 (x6 / effective
+		:domain (x3 / drug))
+	:ARG2 (x15 / and
+		:op1 (x9 / appear-02
+			:ARG1 (x8 / 2-cda)
+			:ARG1 (x14 / dose
+				:mod (x13 / low)))
+		:op2 (x17 / possible
+			:domain (x18 / cause-01
+				:ARG0 (x16 / both)))))
+
+# ::id 19
+# ::snt With the lack of toxicity and the ease with which people go into remission -LCB- with 2-CdA -RCB- , Ellin Berman , a staff leukemia doctor at Memorial Sloan Kettering Cancer Center , New York  think there is something really going on here , says Ellin Berman , a staff leukemia doctor at Memorial Sloan Kettering Cancer Center , New York
+(x45 / say-01
+	:ARG1 (x36 / think-01
+		:ARG0 (x35 / country
+			:name (n / name
+				:op1 "York")
+			:null_edge (x34 / null_tag))
+		:ARG1 (x41 / go-15
+			:ARG1 (x39 / something)
+			:null_edge (x40 / really)
+			:location (x43 / here))
+		:ARG0 (x46 / name
+			:op1 "Ellin"
+			:op2 "Berman"
+			:ARG0-of (x52 / doctor
+				:mod (x50 / person
+					:ARG2-of (s / staff-01))
+				:mod (x51 / disease
+					:name (n1 / name
+						:op1 "leukemia"))
+				:location (x54 / government-organization
+					:name (n2 / name
+						:op1 "Memorial"
+						:op2 "Sloan"
+						:op3 "Kettering"
+						:op4 "Cancer"
+						:op5 "Center")
+					:location (x61 / country
+						:name (n3 / name
+							:op1 "York")
+						:null_edge (x60 / null_tag)))))
+		:ARG0-of (xap0 / cause-01
+			:ARG0 (x3 / lack-01
+				:ARG1 (x5 / toxicity)
+				:ARG1 (x6 / and
+					:op2 (x8 / ease
+						:name (x20 / name
+							:op1 "Ellin"
+							:op2 "Berman"
+							:ARG0-of (x26 / doctor
+								:consist-of (x24 / person
+									:ARG2-of (s1 / staff-01))
+								:mod (x25 / disease
+									:name (n4 / name
+										:op1 "leukemia"))
+								:location (x28 / government-organization
+									:name (n5 / name
+										:op1 "Memorial"
+										:op2 "Sloan"
+										:op3 "Kettering"
+										:op4 "Cancer"
+										:op5 "Center"))))))
+				:time (x12 / go-02
+					:ARG4 (x14 / remission)
+					:manner (x17 / 2-cda)))))
+	:ARG1 x46)
+
+# ::id 20
+# ::snt Scripps said Scripps Clinic & Research Foundation  negotiated an agreement with a subsidiary of Johnson & Johnson , New Brunswick , N.J. , to produce and distribute 2-CdA to other centers for broader clinical trials
+(x2 / say-01
+	:ARG0 (x1 / organization
+		:name (n / name
+			:op1 "Scripps"))
+	:ARG1 (x8 / negotiate-01
+		:ARG0 (x3 / government-organization
+			:name (n1 / name
+				:op1 "Scripps"
+				:op2 "Clinic"
+				:op3 "&"
+				:op4 "Research"
+				:op5 "Foundation"))
+		:ARG1 (x10 / agree-01
+			:ARG1 (x13 / subsidiary
+				:part-of (x15 / company
+					:name (n2 / name
+						:op1 "Johnson"
+						:op2 "&"
+						:op3 "Johnson")
+					:location (x20 / country
+						:name (n3 / name
+							:op1 "Brunswick")
+						:null_edge (x19 / null_tag)
+						:null_edge (x22 / country
+							:name (n4 / name
+								:op1 "N.J.")))))
+			:ARG1 (x26 / and
+				:op1 (x25 / produce-01
+					:ARG1 (x28 / 2-cda)
+					:ARG2 (x31 / center
+						:mod (x30 / other)
+						:ARG2 (x35 / trial
+							:mod (x33 / broad)
+							:mod (x34 / clinic))))
+				:op3 (x27 / distribute-01)))))
+
+# ::id 21
+# ::snt The researchers said the drug is easy to produce and thus is likely to be less expensive than other cancer treatments
+(x3 / say-01
+	:ARG0 (x2 / person
+		:ARG0-of (r / research-01))
+	:ARG1 (x10 / and
+		:op2 (x7 / easy
+			:domain (x5 / drug)
+			:domain (x9 / produce-01))
+		:op2 (x13 / likely
+			:domain (x17 / expensive
+				:degree (x16 / less)
+				:domain (x21 / treat-03
+					:mod (x19 / other)
+					:mod (x20 / cancer))))))
+
+# ::id 22
+# ::snt In the 12-patient study , 2-CdA , short for 2-chlorodeoxyadenosine , was administered continuously for seven days to patients aged 36 to 61
+(x13 / administer-01
+	:part-of (x4 / study-01
+		:mod (x3 / 12-patient))
+	:ARG1 (x6 / 2-cda)
+	:duration (x8 / short
+		:ARG2 (x10 / 2-chlorodeoxyadenosine))
+	:ARG1-of (x14 / continue-01)
+	:duration (x17 / temporal-quantity
+		:unit (d / day)
+		:quant 7)
+	:ARG2 (x19 / patient
+		:ARG1-of (x20 / age-01
+			:ARG1 36
+			:ARG2 61)))
+
+# ::id 23
+# ::snt Within eight to 10 weeks , 11 of the patients had no trace of cancer in 12 patients  blood or bone marrow ; the 12th had a small amount remaining in the marrow , but he declined further bone marrow monitoring , Dr. Piro said
+(x45 / say-01
+	:ARG1 (x35 / contrast-01
+		:time (x1 / within
+			:op1 (x5 / temporal-quantity
+				:unit (w / week)
+				:quant 10))
+		:ARG2 (x10 / patient
+			:quant (x7 / person
+				:op 11)
+			:ARG1-of (x8 / include-91))
+		:polarity -
+		:ARG1 (x15 / cancer
+			:ARG1 (x13 / trace-02))
+		:ARG2 (x20 / or
+			:op1 (x19 / blood
+				:quant 12
+				:mod (x18 / patient))
+			:op4 (x22 / marrow
+				:ARG1 (x21 / bone)))
+		:ARG2 (x29 / amount
+			:mod (x28 / small)
+			:ARG1-of (x30 / remain-01))
+		:ARG2 (x37 / decline-01
+			:ARG1 (x40 / marrow
+				:mod (x38 / further)
+				:mod (x39 / bone))
+			:ARG1 (x41 / monitor-01)))
+	:ARG0 (x44 / person
+		:name (n / name
+			:op1 "Piro")))
+
+# ::id 24
+# ::snt no trace of cancer  blood tests are normal , Dr. Piro added
+(x12 / add-01
+	:ARG1 (x8 / normal
+		:domain (x6 / test-01
+			:ARG1 (x4 / cancer
+				:ARG1 (x2 / trace-02))
+			:ARG1 (x5 / blood)))
+	:ARG0 (x11 / person
+		:name (n / name
+			:op1 "Piro")))
+
+# ::id 25
+# ::snt None of the patients have had a relapse ; complete remission has lasted from seven to 46 months after treatment , according to the study
+(x / xconcept
+	:x (x9 / and
+		:op1 (x6 / have-03
+			:ARG2 (x4 / patient)
+			:ARG1 (x8 / relapse-01))
+		:op2 (x13 / last-01
+			:ARG1 (x11 / remission
+				:mod (x10 / complete))
+			:ARG2 (x18 / temporal-quantity
+				:unit (m / month)
+				:quant 46)
+			:time (x19 / after
+				:op1 (x20 / treat-03))
+			:ARG2 (x25 / study-01))))
+
+# ::id 26
+# ::snt When Ellin Berman , a staff leukemia doctor at Memorial Sloan Kettering Cancer Center , New York  can make all the disease go away with a single infusion of therapy , Ellin Berman , a staff leukemia doctor at Memorial Sloan Kettering Cancer Center , New York  have a disease which may be able to be cured , Dr. Piro said
+(x61 / say-01
+	:ARG1 (x18 / possible
+		:domain (x19 / make-01
+			:ARG0 (x2 / newspaper
+				:name (n2 / name
+					:op1 "Ellin"
+					:op2 "Berman")
+				:ARG0-of (x8 / doctor
+					:consist-of (x6 / person
+						:ARG2-of (s / staff-01))
+					:mod (x7 / disease
+						:name (n3 / name
+							:op1 "leukemia"))
+					:location (x10 / government-organization
+						:name (n4 / name
+							:op1 "Memorial"
+							:op2 "Sloan"
+							:op3 "Kettering"
+							:op4 "Cancer"
+							:op5 "Center")
+						:location (x17 / country
+							:name (n5 / name
+								:op1 "York")
+							:null_edge (x16 / null_tag)))))
+			:ARG1 (x23 / go-01
+				:ARG1 (x22 / disease
+					:quant (x20 / all))
+				:direction (x24 / away)
+				:instrument (x28 / infusion
+					:mod (x27 / single)
+					:ARG1 (x30 / therapy)
+					:name (x32 / name
+						:op1 "Ellin"
+						:op2 "Berman"
+						:ARG0-of (x38 / doctor
+							:consist-of (x36 / person
+								:ARG2-of (s1 / staff-01))
+							:mod (x37 / disease
+								:name (n6 / name
+									:op1 "leukemia"))
+							:location (x40 / government-organization
+								:name (n7 / name
+									:op1 "Memorial"
+									:op2 "Sloan"
+									:op3 "Kettering"
+									:op4 "Cancer"
+									:op5 "Center")))))))
+		:domain (x47 / country
+			:name (n1 / name
+				:op1 "York")
+			:null_edge (x46 / null_tag))
+		:domain (x50 / disease
+			:mod (x54 / possible
+				:mod (x52 / possible)
+				:domain (x57 / cure-01))))
+	:ARG0 (x60 / person
+		:name (n / name
+			:op1 "Piro")))
+
+# ::id 27
+# ::snt But because hairy-cell leukemia proliferates slowly , a relapse could occur long after treatment
+(x1 / contrast-01
+	:ARG2 (x2 / cause-01
+		:ARG0 (x5 / proliferate-01
+			:ARG0 (x4 / disease
+				:name (n / name
+					:op1 "leukemia")
+				:mod (x3 / hairy-cell))
+			:manner (x6 / slow)))
+	:ARG2 (x9 / relapse-01)
+	:ARG2 (x10 / possible
+		:time (x12 / long)
+		:time (x13 / after
+			:op1 (x14 / treat-03))))
+
+# ::id 28
+# ::snt Longer follow-up is necessary to determine whether 2-CdA actually cures the disease
+(x4 / necessary
+	:null_edge (x6 / determine-01
+		:ARG0 (x2 / follow-up
+			:duration (x1 / long))
+		:ARG1 (x10 / thing
+			:ARG3-of (c / cure-01)
+			:ARG0 (x8 / 2-cda)
+			:mod (x9 / actual)
+			:ARG1 (x12 / disease))))
+
+# ::id 29
+# ::snt The drug was first made about 10 years ago at Scripps by Dennis A. Carson , who studied severe combined immunodeficiency disease , made famous a few years ago by the Texas boy that lived in a bubble
+(xap0 / before
+	:ARG1 (x2 / drug)
+	:quant (x8 / temporal-quantity
+		:unit (y / year)
+		:null_edge (x7 / null_tag))
+	:location (x11 / organization
+		:name (n / name
+			:op1 "Scripps"))
+	:ARG0 (x18 / study-01
+		:ARG1 (x22 / disease
+			:mod (x19 / severe)
+			:mod (x20 / combine-01)
+			:mod (x21 / immunodeficiency)
+			:mod (x25 / famous
+				:null_edge (x27 / few
+					:op1 (x28 / temporal-quantity
+						:unit (y1 / year)))
+				:ARG0 (x33 / boy
+					:mod (x32 / country
+						:name (n1 / name
+							:op1 "Texas"))
+					:ARG0-of (x35 / live-01
+						:manner (x38 / bubble)))))))
+
+# ::id 30
+# ::snt People with that disease lack an enzyme that processes deoxyadenosine , a chemical that , without the enzyme , builds up in infection-fighting white blood cells and kills People with that disease
+(x5 / lack-01
+	:ARG1 (x4 / disease
+		:mod (x3 / that))
+	:ARG1 (x7 / enzyme
+		:ARG0-of (x9 / process-01
+			:ARG1 (x10 / deoxyadenosine
+				:mod (x13 / chemical
+					:ARG0-of (x20 / build-01
+						:manner (x18 / enzyme)
+						:location (x26 / cell
+							:ARG1-of (x23 / infection-fighting)
+							:mod (x24 / white)
+							:mod (x25 / blood))
+						:ARG1 (x27 / and
+							:op2 (x28 / kill-01
+								:ARG1 (x29 / people)
+								:ARG1 (x32 / disease
+									:mod (x31 / that))))))))))
+
+# ::id 31
+# ::snt Since cancer patients have the enzyme , Scripps scientists developed a compound that mimics deoxyadenosine , but tricks the enzyme so the enzyme  ca not be processed
+(x10 / develop-02
+	:concession (x4 / have-03
+		:ARG0 (x3 / patient
+			:mod (x2 / cancer))
+		:ARG1 (x6 / enzyme))
+	:ARG0 (x9 / scientist
+		:mod (x8 / organization
+			:name (n / name
+				:op1 "Scripps")))
+	:ARG1 (x12 / compound-01
+		:ARG0-of (x14 / mimic)
+		:mod (x18 / trick
+			:ARG1 (x20 / enzyme)
+			:ARG1-of (x27 / process-01
+				:ARG1 (x23 / enzyme)))))
+
+# ::id 32
+# ::snt The compound then kills the white blood cells , including those that are cancerous
+(x4 / kill-01
+	:ARG0 (x2 / compound-01)
+	:time (x3 / then)
+	:ARG1 (x8 / cell
+		:null_edge (x6 / white)
+		:mod (x7 / blood)
+		:mod (x14 / cancerous)))
+
+# ::id 33
+# ::snt New , normal white cells are then generated in the bone marrow
+(x8 / generate-01
+	:ARG1 (x5 / cell
+		:null_edge (x1 / null_tag)
+		:mod (x3 / normal)
+		:mod (x4 / white))
+	:time (x7 / then)
+	:ARG2 (x12 / marrow
+		:ARG1 (x11 / bone)))
+
+# ::id 34
+# ::snt Because hairy-cell leukemia is rare , a 12-patient study is considered a pretty good series , says Sloan-Kettering's Dr. Berman
+(x17 / say-01
+	:ARG1 (x11 / consider-01
+		:ARG1-of (x1 / cause-01
+			:ARG0 (x5 / rare
+				:domain (x3 / disease
+					:name (n1 / name
+						:op1 "leukemia")
+					:mod (x2 / hairy-cell))))
+		:ARG1 (x9 / study
+			:mod (x8 / 12-patient))
+		:ARG1 (x15 / series
+			:mod (x14 / good
+				:degree (x13 / pretty))))
+	:ARG0 (x21 / person
+		:name (n / name
+			:op1 "Berman")
+		:null_edge (x18 / sloan-kettering)))
+
+# ::id 35
+# ::snt a 12-patient study  is ironic that we have three active drugs for a disease that is fairly rare , but for some of the more common forms of leukemia , we do not yet have good treatments
+(x20 / contrast-01
+	:ARG1 (x5 / irony
+		:domain (x3 / study
+			:mod (x2 / 12-patient))
+		:domain (x8 / have-03
+			:ARG0 (x7 / we)
+			:ARG1 (x11 / drug
+				:quant 3
+				:mod (x10 / active)
+				:purpose (x14 / disease
+					:mod (x18 / rare
+						:degree (x17 / fair)))))
+		:ARG1 (x37 / treat-03
+			:beneficiary (x22 / some)
+			:purpose (x29 / disease
+				:name (n / name
+					:op1 "leukemia")
+				:mod (x27 / form
+					:mod (x26 / common
+						:degree (x25 / more))))
+			:poss (x31 / we)
+			:time (x34 / yet)
+			:mod (x36 / good))))
+
+# ::id 36
+# ::snt Dr. Piro said 2-CdA has also been used effectively in initial trials to treat more common cancers , including chronic lymphocytic leukemia , non-Hodgkins lymphoma and cutaneous T-cell lymphoma
+(x3 / say-01
+	:ARG0 (x2 / person
+		:name (n / name
+			:op1 "Piro"))
+	:ARG1 (x8 / use-01
+		:ARG1 (x4 / 2-cda)
+		:mod (x6 / also)
+		:manner (x9 / effective)
+		:ARG2 (x12 / trial
+			:mod (x11 / initial))
+		:ARG2 (x14 / treat-01
+			:ARG1 (x17 / cancer
+				:mod (x16 / common
+					:degree (x15 / more))
+				:ARG2-of (x19 / include-91
+					:ARG1 (x26 / and
+						:op1 (x22 / disease
+							:name (n1 / name
+								:op1 "leukemia")
+							:mod (x20 / chronic)
+							:mod (x21 / lymphocytic)
+							:mod (x24 / organization
+								:name (n2 / name
+									:op1 "non-Hodgkins")))
+						:op2 (x29 / lymphoma
+							:mod (x27 / cutaneous)
+							:ARG1 (x28 / have-org-role-91
+								:ARG1 (o / organization
+									:name (n3 / name
+										:op1 "T-cell"))))))))))
+
+# ::id 37
+# ::snt About 50 % to 60 % of patients most of whom had failed other treatments responded to the drug , some with complete remission , he said
+(x27 / say-01
+	:ARG0 (x8 / patient
+		:ARG1-of (x13 / fail-01
+			:ARG1 (x10 / include-91
+				:quant (x9 / most))
+			:ARG1 (x15 / treat-03
+				:mod (x14 / other)
+				:ARG1-of (x16 / respond-01
+					:ARG1 (x19 / drug))
+				:instrument-of (x24 / remission
+					:mod (x23 / complete)))
+			:time (xap0 / percentage-entity
+				:value 50))
+		:quant (xap1 / percentage-entity
+			:value 60))
+	:ARG0 (x26 / he))
+
+# ::id 38
+# ::snt Now , patients most of whom had failed other treatments  will use -LCB- 2-CdA -RCB- as a first treatment to see if response and remission are higher , he said
+(x30 / say-01
+	:ARG1 (x12 / use-01
+		:time (x1 / now)
+		:ARG0 (x3 / patient
+			:ARG1-of (x8 / fail-01
+				:ARG1 (x5 / include-91
+					:quant (x4 / most))
+				:ARG1 (x10 / treat-03
+					:mod (x9 / other))))
+		:ARG1 (x14 / 2-cda)
+		:ARG2 (x19 / treat-03)
+		:ARG2 (x21 / see-01
+			:ARG1 (x24 / and
+				:op1 (x23 / respond-01)
+				:op2 (x25 / remission)
+				:op2 (x27 / high))))
+	:ARG0 (x29 / he))
+
+# ::id 39
+# ::snt Meanwhile , researchers at University of California at San Francisco are testing 2-CdA on AIDS-related lymphoma
+(x12 / test-01
+	:time (x1 / meanwhile)
+	:ARG0 (x3 / person
+		:ARG0-of (r / research-01)
+		:location (x7 / state
+			:name (n / name
+				:op1 "California")
+			:location (x9 / city
+				:name (n1 / name
+					:op1 "San"
+					:op2 "Francisco"))))
+	:ARG1 (x13 / 2-cda)
+	:ARG1 (x16 / lymphoma
+		:mod (x15 / aids-related)))
+

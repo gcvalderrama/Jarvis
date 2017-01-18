@@ -1,0 +1,525 @@
+# ::id 1
+# ::snt A total lunar eclipse visible from five continents occurs after sunset Wednesday when the full moon orbits into the shadow of the Earth and slowly turns from a bright silver into a copper or orange disk
+(x4 / eclipse-01
+	:ARG0 (x3 / lunar
+		:ARG2-of (x2 / total-01))
+	:mod (x5 / visible
+		:ARG0 (x8 / continent
+			:quant 5))
+	:time (x10 / after
+		:op1 (x12 / wednesday
+			:null_edge (x11 / thing
+				:name (n / name
+					:op1 "sunset"))))
+	:ARG1 (x24 / and
+		:op1 (x17 / orbit-01
+			:ARG0 (x16 / moon
+				:mod (x15 / full))
+			:ARG2 (x20 / shadow-01
+				:poss (x23 / planet
+					:name (n1 / name
+						:op1 "Earth"))))
+		:op2 (x26 / turn-02
+			:manner (x25 / slow)
+			:ARG2 (x30 / silver
+				:mod (x29 / bright))
+			:ARG2 (x34 / or
+				:op1 (x33 / copper)
+				:op2 (x36 / disk
+					:mod (x35 / orange))))))
+
+# ::id 2
+# ::snt More than a billion people will have a chance to watch as the moon appears to be slowly nibbled away , changing from the normal bright reflected light of a full moon into the colorful glow of eclipse
+(x9 / chance
+	:ARG1 (x1 / more-than)
+	:topic (x11 / watch-01
+		:ARG1 (x15 / appear-02
+			:ARG1 (x19 / nibble
+				:manner (x18 / slow)
+				:direction (x20 / away))
+			:ARG1 (x22 / change-01
+				:ARG1 (x27 / reflect-01
+					:mod (x25 / normal)
+					:mod (x26 / bright)
+					:ARG2 (x36 / glow
+						:mod (x31 / full)
+						:mod (x35 / colorful)
+						:part-of (x38 / eclipse-01)))))))
+
+# ::id 3
+# ::snt The celestial show starts at 8:23 p.m. EDT over the United States and will end about 5 -LCB- hours later
+(x13 / and
+	:op1 (x4 / start-01
+		:ARG0 (x3 / show)
+		:time (x8 / date-entity
+			:null_edge (x6 / include-91))
+		:ARG0 (x11 / country
+			:name (n / name
+				:op1 "United"
+				:op2 "States")))
+	:op1 (x15 / end-01
+		:ARG0 x3
+		:time (x20 / late
+			:op1 (x19 / hour
+				:quant (x16 / about)))))
+
+# ::id 4
+# ::snt The eastern United States will get the best viewing and Alaska will miss the eclipse altogether
+(x10 / and
+	:op1 (x6 / get-01
+		:ARG0 (x3 / country
+			:name (n / name
+				:op1 "United"
+				:op2 "States")
+			:mod (x2 / east))
+		:ARG1 (x9 / viewing
+			:manner (x8 / good
+				:degree (m / most))))
+	:op2 (x13 / miss-03
+		:ARG1 (x15 / eclipse-01)
+		:mod (x16 / altogether)))
+
+# ::id 5
+# ::snt Visible eclipse phases will vary for the central and western parts of the country because of the difference in sunset and moonrise
+(x5 / vary-01
+	:ARG0 (x3 / phase
+		:mod (x1 / visible)
+		:mod (x2 / eclipse-01))
+	:ARG1 (x9 / and
+		:op1 (x8 / central)
+		:op2 (x10 / world-region
+			:name (n / name
+				:op1 "western"))
+		:op3 (x11 / part
+			:part-of (x14 / country)))
+	:ARG1-of (x15 / cause-01
+		:ARG0 (x18 / differ-02
+			:ARG1 (x21 / and
+				:op1 (x20 / date-entity)
+				:op2 (x22 / moonrise)))))
+
+# ::id 6
+# ::snt In Los Angeles , for instance , the eclipse will have started before the sun has set or the moon has risen
+(x12 / start-01
+	:location (x2 / organization
+		:name (n / name
+			:op1 "Los"
+			:op2 "Angeles"))
+	:ARG0 (x9 / eclipse-01)
+	:time (x13 / before
+		:op1 (x18 / or
+			:op1 (x17 / set-08
+				:prep-in (x15 / sun)
+				:ARG1 (xap0 / and
+					:op3 (x20 / moon)
+					:ARG1 (x22 / rise-01))))))
+
+# ::id 7
+# ::snt 
+(xap0 / and
+	:ARG1-of (x7 / darken
+		:degree (x8 / complete)
+		:location (x10 / state
+			:name (n / name
+				:op1 "California"))
+		:time (x15 / already))
+	:op3 (x13 / moon)
+	:snt2 (x24 / eclipse-01
+		:manner (x19 / deep
+			:degree (m / most))))
+
+# ::id 8
+# ::snt For Seattle , the moon will still be below the horizon at mid-eclipse , but will rise during the totality phase
+(x15 / contrast-01
+	:ARG2 (x9 / below
+		:location (x2 / country
+			:name (n / name
+				:op1 "Seattle"))
+		:op1 (x11 / horizon
+			:mod (x7 / still))
+		:location (x13 / mid-eclipse)
+		:domain (xap0 / and
+			:op3 (x5 / moon)
+			:op2 (x17 / rise-01
+				:time (x21 / phase
+					:mod (x20 / totality))))))
+
+# ::id 9
+# ::snt Clouds , of course , could ruin the viewing at any location
+(x6 / possible
+	:domain (x7 / ruin-01
+		:ARG0 (x1 / cloud)
+		:ARG1 (x9 / viewing
+			:location (x12 / location
+				:mod (x11 / any)))))
+
+# ::id 10
+# ::snt With clear skies , though , some phase of the celestial spectacle should be visible to observers in North and South America , western Europe and Africa , and the Antarctic
+(x13 / recommend-01
+	:ARG1 (x15 / visible
+		:prep-without (x3 / sky
+			:mod (x2 / clear))
+		:domain (x8 / phase
+			:mod (x7 / some)
+			:mod (x12 / spectacle))
+		:ARG2 (x17 / person
+			:ARG0-of (o / observe-01)
+			:location (x26 / and
+				:op2 (x20 / and
+					:op1 (x19 / country
+						:name (n2 / name
+							:op1 "North"
+							:op2 "and"
+							:op3 "South")))
+				:op2 (x24 / world-region
+					:name (n / name
+						:op1 "western"
+						:op2 "Europe"))
+				:op2 (x27 / continent
+					:name (n1 / name
+						:op1 "Africa"))
+				:op2 (x29 / and
+					:op1 (x22 / country
+						:name (n3 / name
+							:op1 "America"))
+					:op2 (x31 / organization
+						:name (n4 / name
+							:op1 "Antarctic")))))))
+
+# ::id 11
+# ::snt Sailors at sea in the Atlantic and in the eastern Pacific Ocean also will be able to see part of the eclipse , weather permitting
+(x16 / possible
+	:mod (x13 / also
+		:ARG0 (x1 / sail-01
+			:location (x3 / sea)
+			:location (x12 / country
+				:name (n / name
+					:op1 "Ocean")
+				:mod (x10 / east))))
+	:domain (x18 / see-01
+		:ARG1 (x19 / participate-01)
+		:ARG1 (x22 / eclipse-01))
+	:domain (x25 / permit-01
+		:ARG0 (x24 / weather)))
+
+# ::id 12
+# ::snt A lunar eclipse occurs when the moon passes through the shadow created by the Earth blocking the sun's light
+(x4 / occur-01
+	:time (x8 / pass-01
+		:ARG2 (x11 / shadow-01
+			:ARG1-of (x12 / create-01
+				:ARG0 (x16 / block-01
+					:ARG0 (x15 / planet
+						:name (n / name
+							:op1 "Earth"))
+					:ARG1 (x20 / light
+						:poss (x18 / sun))))))
+	:ARG1 (xap0 / thing
+		:ARG0 (x2 / lunar
+			:domain (x3 / eclipse-01))))
+
+# ::id 13
+# ::snt The moon , in its orbit of the Earth , usually passes above or below this shadowline , but every few years its orbit of the Earth  follows a path that puts its orbit of the Earth  completely in shade for a time
+(x19 / contrast-01
+	:ARG1 (x12 / pass-01
+		:ARG0 (x2 / moon
+			:prep-into (x6 / orbit-01
+				:poss (x9 / planet
+					:name (n / name
+						:op1 "Earth"))))
+		:mod (x11 / usual)
+		:ARG1 (x14 / or
+			:op1 (x13 / above)
+			:op1 (x15 / below)
+			:op1 (x17 / shadowline
+				:mod (x16 / this)))
+		:null_edge (x21 / few
+			:op1 (x22 / temporal-quantity
+				:unit (y / year)
+				:ARG1-of (x28 / person
+					:ARG0-of (f / follow-02)
+					:ARG1 (x24 / orbit-01
+						:poss (x27 / planet
+							:name (n1 / name
+								:op1 "Earth")))
+					:ARG2 (x30 / path
+						:ARG0-of (x32 / put-01
+							:ARG1 (x34 / orbit-01
+								:poss (x37 / planet
+									:name (n2 / name
+										:op1 "Earth")))
+							:manner (x38 / complete)
+							:ARG2 (x40 / shade)
+							:ARG2 (x43 / time))))))))
+
+# ::id 14
+# ::snt When the whole moon passes through the shadow , the shadow created by the Earth blocking the sun's light  is called a total eclipse
+(x22 / call-01
+	:time (x5 / pass-01
+		:ARG0 (x4 / moon
+			:mod (x3 / whole))
+		:ARG2 (x8 / shadow-01))
+	:ARG2 (x12 / create-01
+		:ARG2 (x16 / block-01
+			:ARG0 (x15 / planet
+				:name (n / name
+					:op1 "Earth"))
+			:ARG1 (x20 / light
+				:poss (x18 / sun))))
+	:ARG2 (x25 / eclipse-01
+		:ARG2-of (x24 / total-01)))
+
+# ::id 15
+# ::snt The last total lunar eclipse visible over most of North America occurred in December 1982 , and the next one is not until December 1992
+(x5 / eclipse-01
+	:mod (x4 / lunar
+		:mod (x2 / last)
+		:ARG2-of (x3 / total-01))
+	:ARG2 (x6 / visible
+		:null_edge (x11 / country
+			:name (n / name
+				:op1 "America")
+			:quant (x8 / most)
+			:null_edge (x10 / null_tag))
+		:domain (x17 / and
+			:time (x14 / date-entity
+				:year 1982))
+		:time (x23 / until
+			:op1 (x19 / next)
+			:op1 (x24 / date-entity
+				:year 1992))))
+
+# ::id 16
+# ::snt Astronomers are forecasting that Wednesday's eclipse may be a bright one
+(x8 / possible
+	:domain (x3 / forecast-01
+		:ARG0 (x1 / astronomer))
+	:domain (x7 / eclipse-01
+		:null_edge (x5 / wednesday))
+	:mod (x11 / bright))
+
+# ::id 17
+# ::snt The moon can appear during an eclipse to be a bright coppery red if there is clear , clean air between the lunar surface and the observer on Earth
+(x3 / possible
+	:domain (x2 / moon)
+	:domain (x4 / appear-02
+		:time (x5 / during)
+		:ARG1 (x13 / red
+			:domain x2
+			:mod (x11 / bright)
+			:domain (x20 / air
+				:mod (x17 / clear)
+				:mod (x19 / clean
+					:ARG0 (x25 / and
+						:op1 (x24 / surface)
+						:op2 (x27 / person
+							:ARG0-of (o / observe-01))))))))
+
+# ::id 18
+# ::snt If smoke or dust obscure the view , the moon will diminish to an orange color or perhaps even fade from view altogether
+(x12 / diminish-01
+	:time (x5 / obscure
+		:ARG0 (x3 / or
+			:op1 (x2 / smoke)
+			:op2 (x4 / dust))
+		:ARG1 (x7 / view-02))
+	:ARG0 (x10 / moon)
+	:ARG2 (x17 / or
+		:op1 (x15 / orange
+			:mod (x16 / color))
+		:op2 (x20 / fade
+			:mod (x19 / even
+				:mod (x18 / perhaps))
+			:manner (x22 / view-02)
+			:mod (x23 / altogether))))
+
+# ::id 19
+# ::snt Volcanic eruptions historically have dimmed eclipse viewing by dumping tons of dust into the atmosphere
+(x5 / dim
+	:ARG0 (x2 / eruption
+		:ARG0 (x1 / organization
+			:name (n / name
+				:op1 "Volcanic")))
+	:mod (x3 / historically)
+	:ARG1 (x7 / viewing
+		:mod (x6 / eclipse-01))
+	:ARG0 (x9 / dump
+		:ARG1 (x12 / dust
+			:quant (x10 / mass-quantity
+				:unit (t / ton)))
+		:ARG2 (x15 / atmosphere)))
+
+# ::id 20
+# ::snt But astronomers say enough time has passed since the last major volcanic eruption that most dust has settled
+(x1 / contrast-01
+	:ARG2 (x3 / say-01
+		:ARG0 (x2 / astronomer)
+		:ARG1 (x7 / pass-09
+			:time (x4 / enough)
+			:time (x8 / since
+				:op1 (x13 / eruption
+					:mod (x10 / last)
+					:mod (x11 / major)
+					:mod (x12 / volcanic)
+					:ARG1-of (x18 / settle-03
+						:ARG0 (x16 / dust
+							:mod (x15 / most))))))))
+
+# ::id 21
+# ::snt The eclipse starts when the moon enters what is called the penumbra
+(x3 / start-01
+	:ARG1 (x2 / eclipse-01)
+	:time (x7 / enter-01
+		:ARG1 (x10 / call-03
+			:ARG2 (x12 / penumbra))))
+
+# ::id 22
+# ::snt This outer fringe of the Earth's shadow will show up on the moon as a grayish shading
+(x10 / show-01
+	:ARG0 (x8 / shadow-01
+		:ARG1 (x3 / fringe
+			:mod (x1 / this)
+			:mod (x2 / outer))
+		:poss (x6 / planet
+			:name (n / name
+				:op1 "Earth")))
+	:ARG2 (x14 / moon)
+	:ARG2 (x18 / shading
+		:mod (x17 / grayish)))
+
+# ::id 23
+# ::snt After about half an hour , the moon will edge into the umbra , the dark , central part of the shadow
+(x10 / edge
+	:time (x1 / after
+		:op1 (x5 / temporal-quantity
+			:unit (h / hour)
+			:time (x3 / half)))
+	:op3 (x8 / moon)
+	:ARG2 (x13 / umbra
+		:mod (x16 / dark
+			:ARG1 (x22 / shadow-01
+				:mod (x18 / central)))))
+
+# ::id 24
+# ::snt Total eclipse , when all of the moon is covered by the umbra , will begin at about 10:20 p.m. EDT and last for one hour , 36 minutes
+(x22 / and
+	:op1 (x16 / begin-01
+		:ARG0 (x2 / eclipse-01
+			:ARG0 (x1 / company
+				:name (n / name
+					:op1 "Total"))
+			:ARG1-of (x10 / cover-01
+				:ARG2 (x8 / moon
+					:mod (x5 / all))
+				:ARG0 (x13 / umbra)))
+		:time (x21 / date-entity
+			:null_edge (x19 / include-91)))
+	:op1 (xap0 / between
+		:duration (x26 / temporal-quantity
+			:unit (h / hour)
+			:quant 1)
+		:op1 (x29 / temporal-quantity
+			:unit (m / minute)
+			:quant 36)))
+
+# ::id 25
+# ::snt When the moon leaves the umbra , the events will occur in reverse order
+(x9 / event
+	:time (x4 / leave-01
+		:ARG0 (x3 / moon))
+	:location (x14 / order
+		:ARG1-of (x13 / reverse-01)))
+
+# ::id 26
+# ::snt The eclipse ends about 1:53 a.m. EDT when the moon edges out of the shadow altogether
+(x3 / end-01
+	:ARG1 (x2 / eclipse-01)
+	:ARG1 (x7 / include-91
+		:quant (x5 / include-91))
+	:time (x11 / edge
+		:mod (x16 / altogether))
+	:ARG1 (x15 / shadow-01))
+
+# ::id 27
+# ::snt While a lunar eclipse occurs when the Earth blocks sunlight from the moon , a solar eclipse is caused when the moon blocks sunlight from the Earth
+(x19 / cause-01
+	:ARG1 (x4 / eclipse-01
+		:ARG1 (xap0 / and
+			:ARG2 (x9 / block-01
+				:ARG0 (x8 / planet
+					:name (n1 / name
+						:op1 "Earth"))
+				:ARG1 (x10 / sunlight))
+			:op3 (x13 / moon)))
+	:ARG1 (x17 / eclipse-01
+		:ARG1 (x16 / solar))
+	:time (x23 / block-01
+		:ARG0 (x22 / moon)
+		:ARG1 (x24 / sunlight
+			:location (x27 / planet
+				:name (n / name
+					:op1 "Earth")))))
+
+# ::id 28
+# ::snt To experts , a solar eclipse is more interesting because a solar eclipse  permits unique measurements of the sun
+(x9 / interest-01
+	:ARG0 (x2 / person
+		:ARG1-of (e / expert-41))
+	:domain (x6 / eclipse-01
+		:mod (x5 / solar))
+	:degree (x8 / more)
+	:ARG1-of (x10 / cause-01
+		:ARG0 (x14 / permit-01
+			:ARG1 (x13 / eclipse-01
+				:mod (x12 / solar))
+			:ARG1 (x16 / measurement
+				:mod (x15 / unique)
+				:poss (x19 / sun)))))
+
+# ::id 29
+# ::snt Solar eclipses attract a lot of scientific attention , said John Bangert , a U.S. Naval Observatory astronomer in Washington
+(x10 / say-01
+	:ARG1 (x3 / attract-01
+		:ARG0 (x2 / eclipse-01
+			:mod (x1 / solar))
+		:ARG1 (x8 / attention
+			:quant (x5 / lot)
+			:mod (x7 / science)))
+	:ARG0 (x11 / person
+		:name (n / name
+			:op1 "John"
+			:op2 "Bangert")
+		:ARG0-of (x18 / astronomer
+			:ARG1 (x16 / organization
+				:name (n1 / name
+					:op1 "Naval"))
+			:ARG1 (x17 / organization
+				:name (n2 / name
+					:op1 "Observatory"))
+			:location (x20 / city
+				:name (n3 / name
+					:op1 "Washington")))))
+
+# ::id 30
+# ::snt A lunar eclipse is just a good show
+(x8 / show-01
+	:ARG1 (x3 / eclipse-01)
+	:mod (x5 / just)
+	:mod (x7 / good))
+
+# ::id 31
+# ::snt Here is when the various phases of the eclipse will occur
+(x6 / phase
+	:location (x1 / here)
+	:mod (x5 / various)
+	:mod (x9 / eclipse-01))
+
+# ::id 32
+# ::snt All times are Eastern daylight
+(x5 / date-entity
+	:frequency (x2 / time
+		:quant (x1 / all))
+	:mod (x4 / world-region
+		:name (n / name
+			:op1 "Eastern")))
+

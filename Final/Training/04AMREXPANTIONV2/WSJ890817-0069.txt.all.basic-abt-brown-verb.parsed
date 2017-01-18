@@ -1,0 +1,1532 @@
+# ::id 1
+# ::snt Putting John Sununu and Ted Kennedy to work on a problem is like putting two scorpions in a bottle
+(x1 / put-01
+	:ARG0 (x4 / and
+		:op1 (x2 / name
+			:op1 "John"
+			:op2 "Sununu")
+		:op2 (x5 / name
+			:op1 "Ted"
+			:op2 "Kennedy"))
+	:ARG2 (x8 / work-01
+		:ARG0 x4
+		:ARG1 (x11 / problem))
+	:ARG1-of (xap0 / resemble-01
+		:ARG2 (x14 / put-01
+			:ARG1 (x16 / scorpion
+				:quant 2)
+			:ARG2 (x19 / bottle))))
+
+# ::id 2
+# ::snt Mr. Sununu , President Bush's chief of staff , is a combative , conservative Republican with a history of ambushing liberal Democrats like Sen. Kennedy
+(x2 / person
+	:name (n / name
+		:op1 "Sununu")
+	:null_edge (x1 / null_tag)
+	:null_edge (x7 / have-org-role-91
+		:ARG2 (c / chief)
+		:ARG1 (x5 / person
+			:name (n1 / name
+				:op1 "Bush")
+			:ARG0-of (x4 / have-org-role-91
+				:ARG2 (p / president)))
+		:topic (x9 / person
+			:ARG2-of (s / staff-01)))
+	:null_edge (x15 / conservative
+		:null_edge (x19 / history
+			:null_edge (x13 / combative
+				:null_edge "Republican")
+			:ARG1 (x21 / ambush-01
+				:example (x26 / person
+					:name (n2 / name
+						:op1 "Kennedy")
+					:null_edge (x25 / sen.))
+				:name (xap0 / name
+					:op1 (x23 / democrat
+						:mod (x22 / liberal)))))))
+
+# ::id 3
+# ::snt Yet Mr. Sununu has just finished going head to head with the Massachusetts senator and succeeding in negotiating an agreement on landmark legislation giving sweeping new rights to disabled Americans
+(x6 / finish-01
+	:ARG0 (x3 / person
+		:name (n / name
+			:op1 "Sununu")
+		:null_edge (x2 / null_tag))
+	:time (x5 / just)
+	:ARG1 (x15 / and
+		:op3 (x10 / head
+			:ARG1 (x8 / head-01))
+		:op2 (x14 / senator)
+		:op2 (x16 / succeed-02
+			:ARG1 (x18 / negotiate-01
+				:ARG2 (x20 / agree-01
+					:ARG1 (x23 / legislate-01
+						:mod (x22 / landmark)
+						:ARG0 (xap1 / country
+							:ARG0 (x27 / right
+								:mod (x25 / sweeping)
+								:mod (x26 / new))
+							:ARG0-of (xap0 / name
+								:op4 (x30 / country
+									:name (n1 / name
+										:op1 "Americans")
+									:null_edge (x29 / disable-01))))))))))
+
+# ::id 4
+# ::snt Mr. Sununu was typically tough ; at one point , the relentlessly self-confident Mr. Sununu  tracked down Sen. Kennedy on a boat for a blunt phone conversation to break a logjam in Senate-White House talks
+(x / xconcept
+	:x (x6 / and
+		:op1 (x5 / tough
+			:domain (x2 / person
+				:name (n / name
+					:op1 "Sununu")
+				:null_edge (x1 / null_tag))
+			:mod (x4 / typical)
+			:domain (x16 / track-01
+				:time (x9 / point
+					:quant 1)
+				:ARG0 (x15 / person
+					:name (n1 / name
+						:op1 "Sununu")
+					:null_edge (x13 / self-confident
+						:manner (x12 / relentlessly))
+					:null_edge (x14 / null_tag))
+				:ARG1 (x19 / person
+					:name (n2 / name
+						:op1 "Kennedy")
+					:null_edge (x18 / sen.))
+				:ARG1 (x22 / boat
+					:purpose (x27 / converse-01
+						:mod (x25 / blunt)
+						:mod (x26 / phone)
+						:purpose (x29 / break-08
+							:ARG1 (x31 / logjam
+								:time (x35 / talk-01
+									:location (x33 / senate-white)
+									:ARG1 (x34 / government-organization
+										:name (n3 / name
+											:op1 "House")))))))))))
+
+# ::id 5
+# ::snt Another White House negotiating session ran triple Another White House negotiating session  scheduled length
+(x6 / run-02
+	:ARG0 (x5 / session
+		:mod (x1 / another)
+		:mod (x2 / white)
+		:mod (x4 / negotiate-01
+			:mod (x3 / government-organization
+				:name (n1 / name
+					:op1 "House"))))
+	:manner (x7 / triple)
+	:ARG1 (x12 / session
+		:mod (x8 / another)
+		:mod (x9 / white)
+		:mod (x10 / government-organization
+			:name (n / name
+				:op1 "House"))
+		:mod (x11 / negotiate-01))
+	:ARG1 (x14 / length
+		:ARG1-of (x13 / schedule-01)))
+
+# ::id 6
+# ::snt In the end Mr. Sununu committed the White House's support to the legislation while winning some concessions to minimize the effects on small business and a mutually acceptable bill now is whisking through Congress
+(x6 / commit-01
+	:time (x3 / end)
+	:ARG0 (x5 / person
+		:name (n / name
+			:op1 "Sununu")
+		:null_edge (x4 / null_tag))
+	:ARG1 (x11 / support-01
+		:ARG0 x5
+		:ARG0 (x8 / government-organization
+			:name (n1 / name
+				:op1 "White"
+				:op2 "House")))
+	:ARG2 (x14 / legislate-01)
+	:time (x33 / whisk
+		:ARG0 x5
+		:ARG1 (x16 / win-01
+			:ARG1 (x20 / minimize-01
+				:ARG1 (x22 / effect-01
+					:ARG1 (x26 / and
+						:op1 (x25 / business
+							:mod (x24 / small))
+						:op2 (xap1 / possible
+							:domain (x29 / accept-01
+								:mod (x28 / mutual))))))
+			:ARG0-of (xap0 / cause-01
+				:snt2 (x18 / concede-01
+					:quant (x17 / some))))
+		:time (x31 / now)
+		:ARG1 (x35 / government-organization
+			:name (n2 / name
+				:op1 "Congress"))))
+
+# ::id 7
+# ::snt the relentlessly self-confident Mr. Sununu  role on that -LCB- legislation -RCB- was really impressive , an impressive tour de force , Sen. Kennedy says
+(x24 / say-01
+	:ARG1 (x14 / impressive
+		:domain (x6 / role
+			:mod (x3 / self-confident
+				:manner (x2 / relentlessly))
+			:null_edge (x4 / null_tag)
+			:mod (x5 / person
+				:name (n1 / name
+					:op1 "Sununu"))
+			:topic (x10 / legislate-01))
+		:mod (x13 / really)
+		:domain (x18 / tour
+			:ARG1 (x17 / impressive)
+			:ARG1 (x20 / force)))
+	:ARG0 (x23 / person
+		:name (n / name
+			:op1 "Kennedy")
+		:null_edge (x22 / sen.)))
+
+# ::id 8
+# ::snt Once the relentlessly self-confident Mr. Sununu  got involved , we were able to identify the key issues
+(x12 / possible
+	:domain (x8 / involve-01
+		:ARG1 (x6 / person
+			:name (n / name
+				:op1 "Sununu")
+			:null_edge (x4 / self-confident
+				:manner (x3 / relentlessly))
+			:null_edge (x5 / null_tag)))
+	:domain (x14 / identify-01
+		:ARG0 (x10 / we)
+		:ARG1 (x17 / issue
+			:mod (x16 / key))))
+
+# ::id 9
+# ::snt As that encounter suggests , Mr. Sununu , the brainy former New Hampshire governor , has begun thriving in Washington even though the relentlessly self-confident Mr. Sununu  brusque style still rubs some people the wrong way
+(x17 / begin-01
+	:time (x4 / suggest-01
+		:ARG0 (x3 / encounter-01
+			:mod (x2 / that)))
+	:ARG0 (x7 / person
+		:name (n / name
+			:op1 "Sununu")
+		:null_edge (x6 / null_tag)
+		:ARG0-of (x14 / have-org-role-91
+			:ARG2 (g / governor)
+			:mod (x11 / former)
+			:ARG1 (x13 / country
+				:name (n2 / name
+					:op1 "Hampshire"))))
+	:ARG1 (x18 / thrive-01
+		:location (x20 / city
+			:name (n1 / name
+				:op1 "Washington"))
+		:mod (x21 / even
+			:op1 (x31 / rub-01
+				:ARG0 (x27 / person
+					:name (n3 / name
+						:op1 "Sununu"))
+				:ARG0 (x29 / style
+					:mod (x25 / self-confident
+						:manner (x24 / relentlessly))
+					:null_edge (x26 / null_tag)
+					:mod (x28 / brusque))
+				:mod (x30 / still)
+				:ARG0 (x32 / some)
+				:manner (x35 / wrong-41)))))
+
+# ::id 10
+# ::snt the relentlessly self-confident Mr. Sununu  boss , President Bush , is enjoying high public approval , important legislation is moving ahead and Mr. Sununu's relationship with the president is strong
+(x22 / and
+	:op1 (x12 / enjoy-01
+		:ARG0 (x9 / person
+			:name (n / name
+				:op1 "Bush")
+			:ARG0-of (x6 / boss
+				:mod (x3 / self-confident
+					:manner (x2 / relentlessly))
+				:null_edge (x4 / null_tag)
+				:ARG1 (x5 / person
+					:name (n2 / name
+						:op1 "Sununu")))
+			:ARG0-of (x8 / have-org-role-91
+				:ARG2 (p / president)))
+		:ARG1 (x15 / approve-01
+			:ARG1 x9
+			:degree (x13 / high)
+			:ARG1 (x14 / public)))
+	:op2 (x20 / move-01
+		:ARG0 (x18 / legislation
+			:mod (x17 / important))
+		:time (x21 / ahead))
+	:op2 (x31 / strong
+		:domain (x26 / relationship
+			:ARG0 (x24 / person
+				:name (n1 / name
+					:op1 "Sununu")
+				:null_edge (x23 / null_tag))
+			:ARG0-of (x29 / have-org-role-91
+				:ARG2 (p1 / president)))))
+
+# ::id 11
+# ::snt Inside the administration , aides say Mr. Sununu has grown more relaxed , more willing to delegate responsibility and surprisingly content to play the role of a detached broker in policy debates
+(x6 / say-01
+	:ARG1 (x10 / grow-03
+		:ARG0 (x8 / person
+			:name (n / name
+				:op1 "Sununu")
+			:null_edge (x7 / null_tag))
+		:ARG1 (x19 / and
+			:op1 (x12 / relax-01
+				:degree (x11 / more))
+			:op3 (x15 / will-02
+				:degree (x14 / more)
+				:ARG1 (x17 / delegate-01
+					:ARG1 (x18 / responsible-41)))
+			:op2 (x21 / content-01
+				:ARG0-of (x20 / surprise-01)
+				:ARG2 (x23 / play-01
+					:ARG1 (x25 / role
+						:poss (x29 / person
+							:ARG0-of (b / broker-01)
+							:ARG1-of (x28 / detach)
+							:ARG1 (x32 / debate-01
+								:ARG1 (x31 / policy))))))))
+	:ARG0 (xap0 / government-organization
+		:ARG0-of (x3 / administrate-01))
+	:ARG0 (xap1 / person
+		:ARG0-of (x5 / have-org-role-91
+			:ARG2 (a / aide))))
+
+# ::id 12
+# ::snt This represents a significant change from the administration's rocky opening months , when some wondered whether the new chief of staff would survive
+(x2 / represent-01
+	:ARG0 (x1 / this)
+	:ARG1 (x5 / change-01
+		:degree (x4 / significant)
+		:source (x11 / open-01
+			:ARG0 (xap0 / government-organization
+				:ARG0-of (x8 / administrate-01)
+				:op1 (x12 / month
+					:mod (x10 / rocky)
+					:ARG1-of (x16 / wonder-01
+						:ARG0 (x15 / some)
+						:ARG1 (x24 / survive-01
+							:ARG0 (x20 / have-org-role-91
+								:ARG2 (c / chief)
+								:mod (x19 / new)
+								:topic (x22 / person
+									:ARG2-of (s / staff-01))))))))))
+
+# ::id 13
+# ::snt Mr. Sununu was pilloried as John Tower's nomination as defense secretary went down in flames , as an ill-advised idea to charge fees on savings and loan deposits blew up in the administration's face and as the process of filling government jobs bogged down
+(x4 / pillory
+	:ARG1 (x2 / person
+		:name (n / name
+			:op1 "Sununu")
+		:null_edge (x1 / null_tag))
+	:time (x13 / go-02
+		:ARG1 (x9 / nominate-01
+			:name (x6 / name
+				:op1 "John"
+				:op2 "Tower")
+			:example (x12 / have-org-role-91
+				:ARG2 (s / secretary)
+				:ARG2-of (x11 / defense)))
+		:ARG4 (x16 / flame))
+	:ARG1 (x37 / and
+		:op2 (x23 / charge-01
+			:mod (x20 / ill-advised)
+			:ARG1 (x24 / fee)
+			:ARG2 (x27 / and
+				:op1 (x26 / savings)
+				:op4 (x29 / deposit-01
+					:ARG1-of (x28 / loan-01))))
+		:op1 (x30 / blow-01
+			:location (x36 / face
+				:ARG0 (xap0 / government-organization
+					:ARG0-of (x34 / administrate-01))))
+		:op2 (x45 / bog
+			:ARG1 (x40 / process
+				:mod (x44 / job
+					:ARG1-of (x42 / fill-01)
+					:mod (x43 / government-organization
+						:ARG0-of (g / govern-01)))))))
+
+# ::id 14
+# ::snt Many political analysts here believe that Mr. Sununu has moderated the relentlessly self-confident Mr. Sununu  brash style , and that the former governor has adjusted to the relentlessly self-confident Mr. Sununu  White House role
+(x5 / believe-01
+	:ARG0 (x3 / person
+		:ARG0-of (a / analyze-01)
+		:quant (x1 / many)
+		:mod (x2 / politics))
+	:location (x4 / here)
+	:ARG1 (x19 / and
+		:op1 (x10 / moderate
+			:ARG0 (x8 / person
+				:name (n / name
+					:op1 "Sununu")
+				:null_edge (x7 / null_tag))
+			:ARG1 (x15 / person
+				:name (n1 / name
+					:op1 "Sununu")
+				:null_edge (x13 / self-confident
+					:mod (x12 / relentlessly))
+				:null_edge (x14 / null_tag))
+			:ARG1 (x17 / style
+				:mod (x16 / brash)))
+		:op2 (x25 / adjust-01
+			:ARG0 x8
+			:ARG0 x15
+			:ARG0-of (x23 / have-org-role-91
+				:ARG2 (g / governor)
+				:mod (x22 / former))
+			:ARG2 (x34 / role
+				:mod (x29 / self-confident
+					:manner (x28 / relentlessly))
+				:null_edge (x30 / null_tag)
+				:poss (x31 / person
+					:name (n2 / name
+						:op1 "Sununu"))
+				:mod (x32 / white)
+				:mod (x33 / government-organization
+					:name (n3 / name
+						:op1 "House"))))))
+
+# ::id 15
+# ::snt But the relentlessly self-confident Mr. Sununu claims that it is Washington that has changed that the rest of the city has accustomed the rest of the city  to the deliberate pace that Mr. Bush chose for tackling thorny problems like the savings-and-loan mess , air pollution and arms talks with the Soviets
+(x1 / contrast-01
+	:ARG2 (x7 / claim-01
+		:ARG0 (x6 / person
+			:name (n / name
+				:op1 "Sununu")
+			:null_edge (x4 / self-confident
+				:manner (x3 / relentlessly))
+			:null_edge (x5 / null_tag))
+		:ARG0 (x9 / it)
+		:ARG1 (x11 / city
+			:name (n1 / name
+				:op1 "Washington")
+			:ARG1-of (x14 / change-01
+				:ARG1 (x22 / accustom
+					:ARG0 (x17 / rest
+						:part-of (x20 / city))
+					:ARG1 (x24 / rest
+						:part-of (x27 / city))
+					:ARG2 (x31 / pace
+						:mod (x30 / deliberate)
+						:ARG1-of (x35 / choose-01
+							:ARG0 (x34 / person
+								:name (n2 / name
+									:op1 "Bush")
+								:null_edge (x33 / null_tag))
+							:ARG2 (x37 / tackle-01
+								:ARG1 (x39 / problem
+									:mod (x38 / thorny)
+									:topic (x47 / and
+										:op1 (x43 / mess
+											:mod (x42 / savings-and-loan))
+										:op2 (x46 / pollute-01
+											:ARG1 (x45 / air))
+										:op2 (x49 / talk-01
+											:ARG1 (x48 / arm)
+											:ARG2 (x52 / soviets))))))))))))
+
+# ::id 16
+# ::snt the relentlessly self-confident Mr. Sununu  think this administration takes pains to work hard to make sure the whole is built up of a lot of pieces done in exactly the right way , Mr. Sununu says
+(x36 / say-01
+	:ARG1 (x6 / think-01
+		:ARG0 (x5 / person
+			:name (n1 / name
+				:op1 "Sununu")
+			:null_edge (x3 / self-confident
+				:manner (x2 / relentlessly))
+			:null_edge (x4 / null_tag))
+		:ARG1 (x9 / take-04
+			:ARG1 (x10 / pain-01)
+			:ARG0 (xap0 / government-organization
+				:mod (x7 / this)
+				:ARG0-of (x8 / administrate-01)
+				:ARG0-of (x12 / work-01
+					:manner (x13 / hard)
+					:ARG1 (x15 / make-01
+						:ARG1 (x20 / build-01
+							:ARG1 (x18 / whole)
+							:ARG1 (x26 / piece
+								:quant (x24 / lot)
+								:ARG1-of (x27 / do-02
+									:time (x31 / right
+										:mod (x29 / exact))))))))))
+	:ARG0 (x35 / person
+		:name (n / name
+			:op1 "Sununu")
+		:null_edge (x34 / null_tag)))
+
+# ::id 17
+# ::snt the relentlessly self-confident Mr. Sununu  likens the Bush style to the process of forming a mosaic by carefully putting in place small parts one at a time
+(x6 / liken
+	:ARG0 (x5 / person
+		:name (n / name
+			:op1 "Sununu")
+		:null_edge (x3 / self-confident
+			:manner (x2 / relentlessly))
+		:null_edge (x4 / null_tag))
+	:ARG1 (x9 / style
+		:mod (x8 / person
+			:name (n1 / name
+				:op1 "Bush")))
+	:ARG2 (x12 / process
+		:mod (x14 / form-01
+			:ARG1 (x16 / mosaic)
+			:instrument (x19 / put-01
+				:manner (x18 / careful)
+				:ARG1 (x23 / part
+					:mod (x22 / small))))))
+
+# ::id 18
+# ::snt the relentlessly self-confident Mr. Sununu  hope the good feelings that are out there now are reflective of the fact that people are beginning to appreciate that the pieces are coming together , the relentlessly self-confident Mr. Sununu  says
+(x6 / hope-01
+	:ARG0 (x5 / person
+		:name (n / name
+			:op1 "Sununu")
+		:null_edge (x3 / self-confident
+			:manner (x2 / relentlessly))
+		:null_edge (x4 / null_tag))
+	:ARG1 (x16 / reflective
+		:ARG1 (x9 / thing
+			:ARG1-of (f / feel-01)
+			:mod (x8 / good)
+			:location (x12 / out
+				:op1 (x13 / there)
+				:time (x14 / now)))
+		:ARG1-of (x23 / begin-01
+			:ARG1 (x25 / appreciate-02
+				:ARG1 (x30 / come-01
+					:ARG1 (x28 / piece)
+					:mod (x31 / together)
+					:null_edge (x38 / say-01
+						:ARG0 (x37 / person
+							:name (n1 / name
+								:op1 "Sununu")
+							:null_edge (x35 / self-confident
+								:manner (x34 / relentlessly))
+							:null_edge (x36 / null_tag))))))))
+
+# ::id 19
+# ::snt Mr. Sununu was a hard-charging governor who ran the New Hampshire statehouse with an iron hand , earning Mr. Bush's trust when President Bush's  engineered a crucial victory in the 1988 New Hampshire primary
+(x6 / have-org-role-91
+	:ARG2 (g / governor)
+	:domain (x2 / person
+		:name (n / name
+			:op1 "Sununu")
+		:null_edge (x1 / null_tag))
+	:ARG1 (x5 / hard-charging)
+	:ARG0-of (x8 / run-02
+		:ARG1 (x12 / statehouse
+			:mod (x11 / country
+				:name (n1 / name
+					:op1 "Hampshire")))
+		:manner (x16 / hand)
+		:ARG0-of (x18 / earn-01
+			:ARG1 (x22 / trust-01
+				:ARG0 (x20 / person
+					:name (n3 / name
+						:op1 "Bush")
+					:null_edge (x19 / null_tag)))
+			:ARG1 (x27 / person
+				:name (n2 / name
+					:op1 "engineered")
+				:ARG0 (x25 / person
+					:name (n4 / name
+						:op1 "Bush")
+					:ARG0-of (x24 / have-org-role-91
+						:ARG2 (p / president)))
+				:ARG1 (x30 / win-01
+					:op (v / victory)
+					:mod (x29 / crucial)
+					:mod (x36 / primary
+						:time (x33 / date-entity
+							:year 1988)
+						:null_edge (x34 / null_tag)
+						:mod (x35 / organization
+							:name (n5 / name
+								:op1 "Hampshire"))))))))
+
+# ::id 20
+# ::snt But despite the initial fears of some in Washington , Mr. Sununu insists , he has carefully avoided using his powerful new post to be a gatekeeper who blocks others from the president
+(x1 / contrast-01
+	:ARG2 (x18 / avoid-01
+		:ARG2 (x5 / fear-01
+			:time (x4 / initial)
+			:ARG1 (x7 / some
+				:location (x9 / city
+					:name (n1 / name
+						:op1 "Washington"))))
+		:null_edge (x13 / insist-01
+			:ARG0 (x12 / person
+				:name (n / name
+					:op1 "Sununu")
+				:null_edge (x11 / null_tag)))
+		:ARG0 (x15 / he)
+		:manner (x17 / careful)
+		:ARG1 (x19 / use-01
+			:ARG1 (x23 / post
+				:mod (x21 / powerful)
+				:mod (x22 / new))
+			:purpose (x27 / gatekeeper
+				:ARG0-of (x29 / block-01
+					:ARG1 (x30 / other)))
+			:ARG2 (x33 / have-org-role-91
+				:ARG2 (p / president)))))
+
+# ::id 21
+# ::snt Indeed , cabinet members and other advisers have enjoyed unusually broad access to the president
+(x9 / enjoy-01
+	:mod (x1 / indeed)
+	:ARG0 (x5 / and
+		:op1 (x4 / have-org-role-91
+			:ARG2 (m / member)
+			:ARG1 (x3 / cabinet))
+		:op2 (x7 / have-org-role-91
+			:ARG2 (p / person
+				:ARG0-of (a / advise-01))
+			:mod (x6 / other)))
+	:ARG1 (x12 / access-01
+		:mod (x11 / broad
+			:degree (x10 / usual
+				:polarity -))
+		:ARG1 (x15 / have-org-role-91
+			:ARG2 (p1 / president))))
+
+# ::id 22
+# ::snt Moreover , Mr. Sununu is proving more adept than expected at reining in the relentlessly self-confident Mr. Sununu  personal views and instead brokering compromises among other advisers
+(x6 / prove-01
+	:ARG0 (x4 / person
+		:name (n / name
+			:op1 "Sununu")
+		:null_edge (x3 / null_tag))
+	:ARG1 (x8 / adept
+		:ARG1 x4
+		:degree (x7 / more)
+		:null_edge (x10 / null_tag
+			:ARG1 (x21 / and
+				:op1 (x18 / person
+					:name (n1 / name
+						:op1 "Sununu")
+					:null_edge (x16 / self-confident
+						:manner (x15 / relentlessly))
+					:null_edge (x17 / null_tag))
+				:op1 (x20 / view-02
+					:poss (x19 / personal))
+				:op2 (x24 / compromise-01
+					:ARG1 (x23 / person
+						:ARG0-of (b / broker-01)
+						:ARG1 (x27 / have-org-role-91
+							:ARG2 (p / person
+								:ARG0-of (a / advise-01))
+							:mod (x26 / other))))))))
+
+# ::id 23
+# ::snt In the last stages of preparing Mr. Bush's mammoth Clean Air Act proposals , for instance , Mr. Sununu called together Environmental Protection Agency chief William Reilly and White House staffers for a marathon meeting to craft a compromise settling a dispute over regulations to cut auto emissions
+(x21 / call-01
+	:instrument (x6 / prepare-02
+		:mod (x4 / stage
+			:mod (x3 / last))
+		:name (x12 / name
+			:op1 "Air"
+			:op2 "Act"
+			:poss (x8 / person
+				:name (n1 / name
+					:op1 "Bush")
+				:null_edge (x7 / null_tag))
+			:mod (x10 / mammoth)
+			:mod (x11 / country
+				:name (n2 / name
+					:op1 "Clean")))
+		:ARG1 (x14 / propose-01))
+	:ARG0 (x20 / person
+		:name (n / name
+			:op1 "Sununu")
+		:null_edge (x19 / null_tag))
+	:manner (x22 / together)
+	:ARG1 (x29 / and
+		:op1 (x27 / name
+			:op1 "William"
+			:op2 "Reilly"
+			:ARG0-of (x23 / military
+				:name (n3 / name
+					:op1 "Environmental"
+					:op2 "Protection"
+					:op3 "Agency"))
+			:ARG0-of (x26 / have-org-role-91
+				:ARG2 (c / chief)))
+		:op2 (x32 / staffer
+			:null_edge (x30 / null_tag)
+			:ARG1 (x31 / have-org-role-91
+				:ARG1 (g / government-organization
+					:name (n4 / name
+						:op1 "House")))))
+	:ARG1 (x36 / meet-03
+		:mod (x35 / marathon)
+		:ARG1 (x40 / compromise-01
+			:ARG0-of (x41 / settle-02
+				:ARG1 (x43 / dispute-01
+					:ARG2 (x45 / regulate-01
+						:purpose (x47 / cut-04
+							:ARG1 (x49 / emission
+								:ARG1 (x48 / auto)))))))))
+
+# ::id 24
+# ::snt Mr. Reilly recalls that in a private chat later , Mr. Sununu , an engineer in a private chat later  own right , disclosed that a private chat later  still harbored reservations about one small piece of the bill but had chosen not to push a private chat later  personal view
+(x3 / recall-02
+	:ARG0 (x2 / person
+		:name (n / name
+			:op1 "Reilly")
+		:null_edge (x1 / null_tag))
+	:ARG1 (x24 / disclose-01
+		:ARG1 (x8 / chat-01
+			:mod (x7 / private))
+		:time (x9 / late)
+		:ARG0 (x12 / person
+			:name (n1 / name
+				:op1 "Sununu")
+			:null_edge (x11 / null_tag)
+			:null_edge (x15 / person
+				:name (n2 / name
+					:op1 "engineer")
+				:ARG1 (x19 / chat-01
+					:mod (x18 / private)
+					:mod (x20 / late))))
+		:ARG1 (x31 / harbor-01
+			:ARG1 (x28 / chat-01
+				:mod (x27 / private))
+			:time (x29 / late)
+			:mod (x30 / still)
+			:ARG1 (x32 / reservation
+				:ARG0 (x39 / bill
+					:quant 1
+					:mod (x35 / small)))
+			:ARG1-of (x42 / choose-01
+				:ARG1 (x45 / thing
+					:ARG0-of (p / push-02)
+					:ARG1 (x48 / chat-01
+						:mod (x47 / private))
+					:ARG1 (x51 / view-02
+						:time (x49 / late)
+						:mod (x50 / personal)))))))
+
+# ::id 25
+# ::snt Environmental Protection Agency chief William Reilly and White House staffers for a marathon meeting  are not preparing this legislation for a strong man  or for the relentlessly self-confident Mr. Sununu
+(x17 / prepare-02
+	:ARG0 (x7 / and
+		:op1 (x6 / person
+			:name (n / name
+				:op1 "Reilly")
+			:null_edge (x4 / have-org-role-91
+				:ARG2 (c / chief)
+				:ARG1 (x1 / name
+					:op1 "Environmental"
+					:op2 "Protection"
+					:op3 "Agency"))
+			:null_edge (x5 / person
+				:name (n2 / name
+					:op1 "William")))
+		:op2 (x10 / staffer
+			:null_edge (x8 / null_tag)
+			:ARG1 (x9 / have-org-role-91
+				:ARG1 (g / government-organization
+					:name (n3 / name
+						:op1 "House")))
+			:purpose (x14 / meet-03
+				:mod (x13 / marathon))))
+	:ARG1 (x19 / legislate-01
+		:mod (x18 / this))
+	:ARG2 (x24 / or
+		:op1 (x23 / man
+			:mod (x22 / strong))
+		:op2 (x30 / person
+			:name (n1 / name
+				:op1 "Sununu")
+			:null_edge (x28 / self-confident
+				:manner (x27 / relentlessly))
+			:null_edge (x29 / null_tag))))
+
+# ::id 26
+# ::snt that -LCB- legislation -RCB-  is for a strong man  , Mr. Sununu explained
+(x13 / explain-01
+	:ARG1 (x3 / legislation)
+	:ARG0 (x9 / man
+		:mod (x8 / strong))
+	:ARG0 (x12 / person
+		:name (n / name
+			:op1 "Sununu")
+		:null_edge (x11 / null_tag)))
+
+# ::id 27
+# ::snt Adds Mr. Reilly : Contrary to what some people had feared , that a strong man  would simply impose a strong man  own view because a strong man  is a strong man , William Reilly  do not have the sense that a strong man  did that
+(x1 / add-02
+	:ARG1 (x3 / person
+		:name (n / name
+			:op1 "Reilly")
+		:null_edge (x2 / null_tag))
+	:mod (x5 / contrary-41
+		:ARG2 (x11 / fear-01
+			:ARG1 (x8 / some)))
+	:ARG1 (x19 / impose-01
+		:ARG0 (x16 / man
+			:mod (x15 / strong))
+		:mod (x18 / simple)
+		:ARG2 (x22 / man
+			:mod (x21 / strong))
+		:ARG1 (x24 / view-02)
+		:ARG1-of (x25 / cause-01
+			:ARG0 (x28 / man
+				:mod (x27 / strong))
+			:ARG0 (x32 / man
+				:mod (x31 / strong)
+				:ARG1-of (x45 / do-02
+					:null_edge (x34 / name
+						:op1 "William"
+						:op2 "Reilly")
+					:ARG1 (x40 / sense)
+					:ARG0 (x44 / man
+						:mod (x43 / strong)))))))
+
+# ::id 28
+# ::snt Despite such deft internal maneuvering , though , some Democrats and Republicans alike suspect Mr. Sununu , with the relentlessly self-confident Mr. Sununu  combative style , still may be accumulating too many enemies for the relentlessly self-confident Mr. Sununu  own good
+(x14 / suspect-01
+	:ARG1 (x5 / maneuver-01
+		:mod (x2 / such)
+		:mod (x3 / deft)
+		:mod (x4 / internal))
+	:ARG0 (x11 / and
+		:op1 (x10 / political-party
+			:name (n / name
+				:op1 "Democrats")
+			:null_edge (x9 / some))
+		:op1 (xap0 / person
+			:ARG0-of (x12 / have-org-role-91
+				:ARG1 (p / political-party
+					:name (n1 / name
+						:op1 "Republicans")))))
+	:manner (x13 / alike)
+	:ARG1 (x28 / possible
+		:domain (x30 / accumulate-01
+			:ARG0 (x16 / person
+				:name (n2 / name
+					:op1 "Sununu")
+				:null_edge (x15 / null_tag)
+				:prep-with (x25 / style
+					:mod (x21 / self-confident
+						:manner (x20 / relentlessly))
+					:null_edge (x22 / null_tag)
+					:mod (x23 / person
+						:name (n3 / name
+							:op1 "Sununu"))
+					:mod (x24 / combative)))
+			:mod (x27 / still)
+			:ARG1 (x33 / enemy
+				:quant (x32 / many
+					:degree (x31 / too)))
+			:purpose (x41 / good
+				:mod (x37 / self-confident
+					:manner (x36 / relentlessly))
+				:null_edge (x38 / null_tag)))))
+
+# ::id 29
+# ::snt This was particularly evident during the Tower debacle , when Mr. Sununu privately lashed out at Sam Nunn , the powerful chairman of the Senate Armed Services Committee who led the fight against Sen. Tower , threatening to sour the administration's relations with this critical lawmaker
+(x4 / evident
+	:domain (x1 / this)
+	:mod (x3 / particular)
+	:time (x8 / debacle
+		:mod (x7 / tower)
+		:time (x14 / lash
+			:ARG0 (x12 / person
+				:name (n / name
+					:op1 "Sununu")
+				:null_edge (x11 / null_tag))
+			:manner (x13 / privately))
+		:name (x17 / name
+			:op1 "Sam"
+			:op2 "Nunn"
+			:ARG0-of (x22 / have-org-role-91
+				:ARG2 (c / chairman)
+				:mod (x21 / powerful)
+				:ARG1 (x28 / organization
+					:name (n1 / name
+						:op1 "Committee")
+					:null_edge (x25 / government-organization
+						:name (n2 / name
+							:op1 "Senate"))
+					:null_edge (x26 / newspaper
+						:name (n3 / name
+							:op1 "Armed"))
+					:null_edge (x27 / null_tag))
+				:ARG1-of (x30 / lead-02
+					:ARG1 (x32 / fight-01
+						:ARG1 (x35 / tower
+							:mod (x34 / sen.))
+						:ARG0-of (x37 / threaten-01
+							:ARG2 (x39 / sour
+								:ARG1 (x43 / relation
+									:prep-with (x47 / lawmaker
+										:mod (x45 / this)
+										:mod (x46 / critical))
+									:mod (xap0 / government-organization
+										:ARG0-of (x41 / administrate-01)))))))))))
+
+# ::id 30
+# ::snt And although the White House chief of staff has toned down since that early encounter , in a recent meeting with GOP House members , Mr. Sununu suggested that Republicans attack a crime package proposed by Democratic Sen. Joseph Biden of Delaware chairman of the Senate Judiciary Committee as mostly plagiarism , because a crime package proposed by Democratic Sen. Joseph Biden of Delaware chairman of the Senate Judiciary Committee  allegedly stole ideas from Mr. Bush's plans
+(x1 / and
+	:op2 (x28 / suggest-01
+		:time (x10 / tone
+			:ARG0 (x6 / have-org-role-91
+				:ARG2 (c / chief)
+				:ARG1 (x5 / government-organization
+					:name (n1 / name
+						:op1 "House")
+					:mod (x4 / white))
+				:topic (x8 / person
+					:ARG2-of (s / staff-01)))
+			:time (x12 / since
+				:op1 (x15 / encounter-01
+					:time (x14 / early)))
+			:time (x20 / meet-03
+				:time (x19 / recent)
+				:ARG0-of (x24 / have-org-role-91
+					:ARG2 (m / member)
+					:ARG1 (x22 / political-party
+						:name (n2 / name
+							:op1 "GOP"))
+					:ARG1 (x23 / have-org-role-91
+						:ARG1 (g / government-organization
+							:name (n3 / name
+								:op1 "House"))))))
+		:ARG0 (x27 / person
+			:name (n / name
+				:op1 "Sununu")
+			:null_edge (x26 / null_tag))
+		:ARG1 (x31 / attack-01
+			:ARG1 (x34 / package
+				:mod (x33 / crime)
+				:ARG1-of (x35 / propose-01
+					:ARG0 (x39 / name
+						:op1 "Joseph"
+						:op2 "Biden"
+						:ARG0-of (x38 / sen.
+							:mod (x37 / democracy))
+						:ARG0-of (x43 / have-org-role-91
+							:ARG2 (c1 / chairman)
+							:mod (x42 / country
+								:name (n5 / name
+									:op1 "Delaware"))
+							:ARG1 (x48 / organization
+								:name (n6 / name
+									:op1 "Committee")
+								:null_edge (x46 / government-organization
+									:name (n9 / name
+										:op1 "Senate"))
+								:null_edge (x47 / null_tag))))))
+			:ARG1 (x51 / plagiarism
+				:mod (x50 / most))
+			:ARG1-of (x53 / cause-01
+				:ARG0 (x72 / steal-01
+					:ARG1 (x56 / package
+						:mod (x55 / crime)
+						:ARG1-of (x57 / propose-01))
+					:ARG0 (x61 / name
+						:op1 "Joseph"
+						:op2 "Biden"
+						:ARG0-of (x60 / sen.
+							:mod (x59 / democracy))
+						:ARG0-of (x65 / have-org-role-91
+							:ARG2 (c2 / chairman)
+							:mod (x64 / country
+								:name (n7 / name
+									:op1 "Delaware"))
+							:ARG1 (x70 / organization
+								:name (n8 / name
+									:op1 "Committee")
+								:null_edge (x68 / government-organization
+									:name (n10 / name
+										:op1 "Senate"))
+								:null_edge (x69 / null_tag))))
+					:ARG1-of (x71 / allege-01)
+					:ARG1 (x73 / idea)
+					:ARG0 (x78 / plan-01
+						:ARG0 (x76 / person
+							:name (n4 / name
+								:op1 "Bush")
+							:null_edge (x75 / null_tag)))))
+			:ARG0 (xap0 / person
+				:op1 "Republican"))))
+
+# ::id 31
+# ::snt The charge offended Sen. Biden , whose presidential campaign last year collapsed amid charges that Democratic Sen. Joseph Biden of Delaware  had plagiarized speeches
+(x3 / offend-01
+	:ARG0 (x2 / charge-01)
+	:ARG1 (x5 / person
+		:name (n / name
+			:op1 "Biden")
+		:ARG0-of (x4 / sen.)
+		:ARG0-of (x12 / collapse-01
+			:ARG1 (x9 / campaign-01
+				:ARG0 (xap0 / person
+					:ARG0-of (x8 / have-org-role-91
+						:ARG2 (p / president))))
+			:time (x11 / year
+				:mod (x10 / last))
+			:ARG1 (x14 / charge-05
+				:ARG1 (x23 / plagiarize
+					:ARG0 (x18 / person
+						:name (n1 / name
+							:op1 "Joseph"
+							:op2 "Biden")
+						:mod (x16 / democracy)
+						:ARG0-of (x17 / sen.
+							:location (x21 / country
+								:name (n2 / name
+									:op1 "Delaware"))))
+					:ARG1 (x24 / speech))))))
+
+# ::id 32
+# ::snt The senator was particularly rankled because the Massachusetts senator  carefully backed up the Massachusetts senator  crime plan with a 50-page appendix crediting others with many of the ideas
+(x5 / rankle
+	:ARG1 (x2 / senator)
+	:manner (x4 / particular)
+	:ARG1-of (x6 / cause-01
+		:ARG0 (x11 / back-01
+			:ARG0 (x9 / senator)
+			:manner (x10 / careful)
+			:ARG1 (x17 / plan-01
+				:mod (x16 / crime
+					:ARG1 (x15 / senator)))
+			:ARG1 (x21 / appendix
+				:mod (x20 / 50-page))
+			:ARG0-of (x22 / credit-01
+				:ARG1 (x23 / other)
+				:ARG1 (x28 / idea
+					:quant (x25 / many))))))
+
+# ::id 33
+# ::snt Mr. Sununu's charges reportedly led to an acrimonious telephone confrontation between the two men , who refuse to discuss the episode
+(x6 / lead-02
+	:ARG0 (x4 / thing
+		:ARG2-of (c / charge-05)
+		:ARG0 (x2 / person
+			:name (n / name
+				:op1 "Sununu")
+			:null_edge (x1 / null_tag)))
+	:ARG1-of (x5 / report-01)
+	:ARG2 (x11 / confront-01
+		:mod (x9 / acrimonious)
+		:mod (x10 / telephone)
+		:ARG0 (x15 / man
+			:quant 2)
+		:ARG0-of (x18 / refuse-01
+			:ARG1 (x20 / discuss-01
+				:ARG1 (x22 / episode)))))
+
+# ::id 34
+# ::snt But Sen. Biden does say that when Mr. Sununu has substantive differences with someone , the inclination is to respond with personal attacks which is bush league , no pun intended
+(x5 / say-01
+	:null_edge (x1 / contrast-01)
+	:ARG1 (x4 / do-02
+		:ARG0 (x3 / person
+			:name (n / name
+				:op1 "Biden")
+			:null_edge (x2 / sen.)))
+	:ARG1 (x10 / have-03
+		:ARG0 (x9 / person
+			:name (n1 / name
+				:op1 "Sununu")
+			:null_edge (x8 / null_tag))
+		:ARG1 (x12 / thing
+			:ARG1-of (d / differ-02)
+			:mod (x11 / substantive)
+			:ARG2 (x14 / someone)
+			:purpose (x20 / respond-01
+				:ARG1 (x17 / inclination)
+				:ARG1 (x23 / attack-01
+					:manner (x22 / personal)
+					:instrument (x27 / league
+						:mod (x26 / bush-league)
+						:ARG1-of (x31 / intend-01
+							:polarity -)))))))
+
+# ::id 35
+# ::snt the inclination  surprised Democratic Sen. Joseph Biden of Delaware
+(x3 / surprise-01
+	:ARG1 (x2 / inclination)
+	:ARG1 (x6 / name
+		:op1 "Joseph"
+		:op2 "Biden"
+		:ARG0-of (x4 / democracy)
+		:ARG0-of (x5 / sen.
+			:location (x9 / country
+				:name (n / name
+					:op1 "Delaware")))))
+
+# ::id 36
+# ::snt Mr. Sununu also rankled some Republican congressional leaders by dressing some Republican congressional leaders  down at a recent White House meeting for failing to properly support Mr. Bush's programs
+(x4 / rankle
+	:ARG0 (x2 / person
+		:name (n / name
+			:op1 "Sununu")
+		:null_edge (x1 / null_tag))
+	:mod (x3 / also)
+	:ARG1 (x8 / person
+		:ARG0-of (l / lead-02)
+		:quant (x5 / some)
+		:ARG1 "Republican"
+		:ARG1 (x7 / government-organization
+			:name (n1 / name
+				:op1 "congressional")))
+	:instrument (x10 / dress-01
+		:ARG1 (x14 / person
+			:ARG0-of (l1 / lead-02)
+			:quant (x11 / some)
+			:ARG1 "Republican"
+			:ARG1 (x13 / government-organization
+				:name (n2 / name
+					:op1 "congressional")))
+		:time (x21 / meet-03
+			:time (x18 / recent)
+			:null_edge (x19 / null_tag)
+			:mod (x20 / have-org-role-91
+				:ARG1 (g / government-organization
+					:name (n3 / name
+						:op1 "House")))
+			:topic (x23 / fail-01
+				:ARG2 (x26 / support-01
+					:manner (x25 / proper)
+					:ARG1 (x30 / program))))))
+
+# ::id 37
+# ::snt And a group of conservative supporters was stunned at another meeting when one conservative began raising a concern about personnel issues , only to be cut short by Mr. Sununu , who snapped : Get Democratic Sen. Joseph Biden of Delaware  facts straight
+(x1 / and
+	:op2 (x8 / stun-01
+		:ARG1 (x3 / group
+			:consist-of (x6 / person
+				:ARG0-of (s / support-01)
+				:mod (x5 / conservative)))
+		:location (x11 / meet-03
+			:mod (x10 / another))
+		:time (x15 / begin-01
+			:ARG0 (x14 / political-party
+				:name (n / name
+					:op1 "conservative")
+				:quant 1)
+			:ARG1 (x16 / raise-01
+				:ARG0 x14
+				:ARG1 (x18 / concern-01
+					:ARG1 (x21 / issue
+						:topic (x20 / have-org-role-91
+							:ARG2 (p / personnel)))))
+			:ARG1 (x26 / cut-01
+				:ARG0 x14
+				:mod (x23 / only)
+				:ARG2 (x27 / short-41)
+				:ARG0 (x30 / person
+					:name (n1 / name
+						:op1 "Sununu")
+					:null_edge (x29 / null_tag)
+					:ARG0-of (x33 / snap
+						:ARG1 (x35 / get-01
+							:ARG1 (x42 / fact
+								:name (x38 / name
+									:op1 "Joseph"
+									:op2 "Biden"
+									:ARG0-of (x36 / democracy)
+									:ARG0-of (x37 / sen.))
+								:mod (x41 / country
+									:name (n2 / name
+										:op1 "Delaware"))
+								:mod (x43 / straight)))))))))
+
+# ::id 38
+# ::snt Mr. Sununu suggests that sometimes when the relentlessly self-confident Mr. Sununu  knocks heads the relentlessly self-confident Mr. Sununu  does so because a group of conservative supporters  is part of the job of being the top aide to a president who does not like to knock heads the relentlessly self-confident Mr. Sununu
+(x3 / suggest-01
+	:ARG0 (x2 / person
+		:name (n / name
+			:op1 "Sununu")
+		:null_edge (x1 / null_tag))
+	:ARG1 (x19 / do-02
+		:frequency (x5 / sometimes)
+		:ARG1-of (x21 / cause-01
+			:ARG0 (x12 / knock-02
+				:ARG0 (x11 / person
+					:name (n1 / name
+						:op1 "Sununu")
+					:null_edge (x9 / self-confident
+						:manner (x8 / relentlessly))
+					:null_edge (x10 / null_tag))
+				:ARG2 (x13 / person
+					:ARG0-of (h / head-01)
+					:ARG1 (x18 / person
+						:name (n2 / name
+							:op1 "Sununu")
+						:null_edge (x16 / self-confident
+							:manner (x15 / relentlessly))
+						:null_edge (x17 / null_tag))))
+			:ARG0 (x28 / participate-01
+				:ARG0 (x23 / group
+					:consist-of (x26 / person
+						:ARG0-of (s / support-01)
+						:mod (x25 / conservative)))
+				:ARG1 (x31 / job
+					:consist-of (x36 / have-org-role-91
+						:ARG2 (a / aide)
+						:mod (x35 / top)
+						:ARG1 (xap0 / and
+							:ARG0-of (x39 / have-org-role-91
+								:ARG2 (p / president))
+							:snt2 (x43 / like-02
+								:ARG1 (x45 / knock-02
+									:ARG2 (x46 / person
+										:ARG0-of (h1 / head-01))
+									:ARG1 (x51 / person
+										:name (n3 / name
+											:op1 "Sununu")
+										:null_edge (x49 / self-confident
+											:manner (x48 / relentlessly))
+										:null_edge (x50 / null_tag)))))))))))
+
+# ::id 39
+# ::snt There are natural obligations that the relentlessly self-confident Mr. Sununu  have to be willing to carry out , the relentlessly self-confident Mr. Sununu  says
+(x24 / say-01
+	:ARG1 (x4 / obligate-01
+		:mod (x3 / natural)
+		:condition (x14 / will-02
+			:ARG0 (x10 / person
+				:name (n1 / name
+					:op1 "Sununu")
+				:null_edge (x8 / self-confident
+					:manner (x7 / relentlessly))
+				:null_edge (x9 / null_tag))
+			:ARG1 (x16 / carry-01)))
+	:ARG0 (x23 / person
+		:name (n / name
+			:op1 "Sununu")
+		:null_edge (x21 / self-confident
+			:manner (x20 / relentlessly))
+		:null_edge (x22 / null_tag)))
+
+# ::id 40
+# ::snt a group of conservative supporters  goes with the territory
+(x6 / go-10
+	:ARG0 (x2 / group
+		:consist-of (x5 / person
+			:ARG0-of (s / support-01)
+			:mod (x4 / conservative)))
+	:path (x9 / territory))
+
+# ::id 41
+# ::snt One group Mr. Sununu has generally succeeded in pleasing is conservatives , who view the relentlessly self-confident Mr. Sununu  as conservatives  champion in a generally moderate White House
+(x7 / succeed-01
+	:ARG0 (x2 / group
+		:quant 1
+		:mod (x4 / person
+			:name (n / name
+				:op1 "Sununu")
+			:null_edge (x3 / null_tag)))
+	:manner (x6 / general)
+	:ARG1 (x11 / conservative
+		:domain (x9 / pleasing)
+		:ARG0-of (x14 / view-02
+			:ARG1 (x19 / person
+				:name (n1 / name
+					:op1 "Sununu")
+				:null_edge (x17 / self-confident
+					:manner (x16 / relentlessly))
+				:null_edge (x18 / null_tag))
+			:ARG2 (x22 / champion
+				:ARG0 (x21 / political-party
+					:name (n2 / name
+						:op1 "conservatives")
+					:location (x28 / government-organization
+						:name (n3 / name
+							:op1 "House")
+						:mod (x26 / moderate
+							:mod (x25 / general))
+						:mod (x27 / white)))))))
+
+# ::id 42
+# ::snt Mr. Sununu does appear ready to move in when the relentlessly self-confident Mr. Sununu  thinks conservative principles are not being followed adequately
+(x4 / appear-02
+	:ARG1 (x5 / ready-01
+		:ARG0 (x2 / person
+			:name (n / name
+				:op1 "Sununu")
+			:null_edge (x1 / null_tag))
+		:ARG2 (x7 / move-01
+			:ARG0 x2)
+		:null_edge (x15 / think-01
+			:ARG0 x2
+			:ARG0 (x14 / person
+				:name (n1 / name
+					:op1 "Sununu")
+				:null_edge (x12 / self-confident
+					:manner (x11 / relentlessly))
+				:null_edge (x13 / null_tag))
+			:ARG1 (x21 / follow-01
+				:ARG1 (x17 / principle
+					:mod (x16 / conservative))
+				:ARG2 (x22 / adequate)))))
+
+# ::id 43
+# ::snt When the Supreme Court rendered the Supreme Court  controversial decision curbing abortion rights , for instance , lower-ranking staffers recommended that the White House avoid commenting on the politically explosive decision
+(x20 / recommend-01
+	:time (x5 / render-01
+		:ARG0 (x3 / government-organization
+			:name (n / name
+				:op1 "Supreme"
+				:op2 "Court"))
+		:ARG1 (x10 / decide-01
+			:ARG0 (x7 / government-organization
+				:name (n2 / name
+					:op1 "Supreme"))
+			:null_edge (x8 / null_tag)
+			:mod (x9 / controversy))
+		:ARG1 (x11 / curb-01
+			:ARG0 x3
+			:ARG1 (x12 / abort-01)))
+	:ARG0 (x19 / staffer)
+	:ARG1 (x25 / avoid-01
+		:ARG0 (x24 / government-organization
+			:name (n1 / name
+				:op1 "House")
+			:mod (x23 / white))
+		:ARG1 (x26 / comment-01
+			:ARG0 x24
+			:ARG1 (x31 / decide-01
+				:ARG1-of (x30 / explode-01
+					:mod (x29 / politics))))))
+
+# ::id 44
+# ::snt But Mr. Sununu rejected that advice , ordered up a lengthy statement reiterating Mr. Bush's opposition to abortion , then read the statement personally to reporters
+(x1 / contrast-01
+	:ARG2 (x4 / reject-01
+		:ARG0 (x3 / person
+			:name (n / name
+				:op1 "Sununu")
+			:null_edge (x2 / null_tag))
+		:ARG1 (x6 / advise-01)
+		:ARG0 (x8 / order-01
+			:ARG1 (x12 / state-01
+				:duration (x11 / lengthy)
+				:ARG0-of (x13 / reiterate-01
+					:ARG1 (x17 / oppose-01
+						:ARG1 (x19 / abort-01)))))
+		:ARG1 (x24 / state-01
+			:time (x21 / then)
+			:manner (x25 / personal)
+			:ARG2 (x27 / person
+				:ARG0-of (r / report-01)))))
+
+# ::id 45
+# ::snt And whatever the relentlessly self-confident Mr. Sununu  relations with others , Mr. Sununu's most important relationship the one with President Bush appears sturdy
+(x / xconcept
+	:x (x1 / and)
+	:x (x23 / appear-02
+		:ARG1 (x24 / sturdy
+			:domain (x8 / relation
+				:mod (x2 / whatever)
+				:mod (x5 / self-confident
+					:degree (x4 / relentlessly))
+				:null_edge (x6 / null_tag)
+				:prep-with (x10 / other))
+			:domain (x17 / relationship
+				:ARG0 (x13 / person
+					:name (n / name
+						:op1 "Sununu")
+					:null_edge (x12 / null_tag))
+				:mod (x16 / important
+					:degree (x15 / most))
+				:prep-with (x22 / person
+					:name (n1 / name
+						:op1 "Bush")
+					:ARG0-of (x21 / have-org-role-91
+						:ARG2 (p / president)))))))
+
+# ::id 46
+# ::snt Mr. Sununu is confident enough , for example , to weigh in on foreign-policy as well as domestic issues
+(x4 / confident-41
+	:ARG1 (x2 / person
+		:name (n / name
+			:op1 "Sununu")
+		:null_edge (x1 / null_tag))
+	:degree (x5 / enough)
+	:ARG2 (x11 / weigh-03
+		:ARG1 (x19 / issue
+			:mod (x14 / foreign-policy)
+			:mod (x18 / domestic))))
+
+# ::id 47
+# ::snt the relentlessly self-confident Mr. Sununu  acknowledges arguing that Mr. Bush should propose even deeper cuts in U.S. and Soviet conventional forces than those President Bush's  ultimately proposed this spring
+(x6 / acknowledge-01
+	:ARG0 (x5 / person
+		:name (n / name
+			:op1 "Sununu")
+		:null_edge (x3 / self-confident
+			:manner (x2 / relentlessly))
+		:null_edge (x4 / null_tag))
+	:ARG1 (x7 / argue-01
+		:ARG1 (x11 / recommend-01
+			:ARG1 (x12 / propose-01
+				:ARG0 (x10 / person
+					:name (n1 / name
+						:op1 "Bush")
+					:null_edge (x9 / null_tag))
+				:ARG1 (x15 / cut-02
+					:mod (x14 / deep
+						:mod (x13 / even))
+					:location (x18 / and
+						:op1 (x17 / country
+							:name (n3 / name
+								:op1 "U.S."))
+						:op1 (x21 / force
+							:mod (x20 / convention))
+						:op1 (xap0 / name
+							:op1 (x19 / country
+								:name (n4 / name
+									:op1 "Soviet")))))
+				:time (x28 / propose-01
+					:ARG0 (x25 / person
+						:name (n2 / name
+							:op1 "Bush")
+						:ARG0-of (x24 / have-org-role-91
+							:ARG2 (p / president)))
+					:time (x27 / ultimate)
+					:time (x30 / spring
+						:mod (x29 / this)))))))
+
+# ::id 48
+# ::snt And Mr. Sununu is comfortable enough with Mr. Bush to pull an occasional practical joke
+(x1 / and
+	:op2 (x5 / comfortable
+		:ARG0 (x3 / person
+			:name (n / name
+				:op1 "Sununu")
+			:null_edge (x2 / null_tag))
+		:mod (x6 / enough)
+		:prep-with (x9 / person
+			:name (n1 / name
+				:op1 "Bush")
+			:null_edge (x8 / null_tag))
+		:domain (x11 / pull-01
+			:ARG0 x3
+			:ARG1 (x15 / joke-01
+				:frequency (x13 / occasional)
+				:mod (x14 / practical)))))
+
+# ::id 49
+# ::snt The other day , Mr. Sununu and two other advisers were sitting in front of Mr. Bush's desk waiting for the president
+(x12 / sit-01
+	:ARG1 (x7 / and
+		:op1 (x3 / day
+			:mod (x2 / other))
+		:op2 (x6 / person
+			:name (n / name
+				:op1 "Sununu")
+			:null_edge (x5 / null_tag))
+		:op2 (x10 / have-org-role-91
+			:ARG2 (p / person
+				:ARG0-of (a / advise-01))
+			:quant 2
+			:mod (x9 / other)))
+	:ARG2 (x19 / desk
+		:poss (x17 / person
+			:name (n1 / name
+				:op1 "Bush")
+			:null_edge (x16 / null_tag)))
+	:ARG1 (x20 / wait-01
+		:ARG2 (x23 / have-org-role-91
+			:ARG2 (p1 / president))))
+
+# ::id 50
+# ::snt The other day  occurred to Mr. Sununu that the sight of three aides staring at an empty presidential chair was reminiscent of the Doonesbury cartoon strip that lampoons Mr. Bush by portraying President Bush's  as a transparent wisp of air
+(x3 / day
+	:mod (x2 / other)
+	:ord (xap0 / person
+		:ARG2 (x7 / person
+			:name (n / name
+				:op1 "Sununu")
+			:null_edge (x6 / null_tag))
+		:quant 3
+		:ARG0-of (x13 / have-org-role-91
+			:ARG2 (a / aide))
+		:ARG0 (x14 / stare-01
+			:ARG2 (x19 / chair
+				:mod (x17 / empty)
+				:ARG0 (xap1 / person
+					:ARG0-of (x18 / have-org-role-91
+						:ARG2 (p / president)))))
+		:ARG2 (x26 / strip-01
+			:mod (x24 / country
+				:name (n1 / name
+					:op1 "Doonesbury"))
+			:mod (x25 / cartoon)
+			:ARG0-of (x28 / lampoon
+				:ARG1 (x30 / person
+					:name (n2 / name
+						:op1 "Bush")
+					:null_edge (x29 / null_tag))
+				:ARG1 (x32 / portray-01
+					:ARG1 (x34 / person
+						:name (n3 / name
+							:op1 "Bush")
+						:ARG0-of (x33 / have-org-role-91
+							:ARG2 (p1 / president)))
+					:ARG2 (x41 / air
+						:mod (x38 / transparent)))))))
+
+# ::id 51
+# ::snt So the relentlessly self-confident Mr. Sununu  had a White House photographer snap a shot of the scene , later inscribed the picture accordingly and gave a shot of the scene  to Mr. Bush who was so amused the relentlessly self-confident Mr. Sununu  immediately hurried to the White House press room to show the White House press room  off
+(x24 / and
+	:op1 (x6 / person
+		:name (n / name
+			:op1 "Sununu")
+		:null_edge (x4 / self-confident
+			:manner (x3 / relentlessly))
+		:null_edge (x5 / null_tag))
+	:op1 (x11 / photographer
+		:ARG1 (x10 / government-organization
+			:name (n1 / name
+				:op1 "House")
+			:ARG1 (x9 / white))
+		:ARG0-of (x12 / snap
+			:ARG1 (x14 / shot
+				:ARG0 (x17 / scene))))
+	:op1 (x20 / inscribe
+		:time (x19 / late)
+		:ARG1 (x22 / picture)
+		:manner (x23 / accordingly))
+	:op2 (x25 / give-01
+		:ARG1 (x27 / shot
+			:ARG0 (x30 / scene))
+		:ARG2 (x33 / person
+			:name (n2 / name
+				:op1 "Bush")
+			:null_edge (x32 / null_tag)
+			:ARG1-of (x37 / amuse-01
+				:ARG1 (x44 / hurry
+					:ARG0 (x42 / person
+						:name (n3 / name
+							:op1 "Sununu")
+						:null_edge (x40 / self-confident
+							:manner (x39 / relentlessly))
+						:null_edge (x41 / null_tag))
+					:time (x43 / immediate)
+					:ARG2 (x50 / room
+						:mod (x49 / press
+							:mod (x48 / government-organization
+								:name (n4 / name
+									:op1 "House")
+								:mod (x47 / white))))
+					:ARG1 (x52 / show-01
+						:ARG0 x42
+						:ARG1 (x57 / room
+							:mod (x56 / press
+								:mod (x55 / government-organization
+									:name (n5 / name
+										:op1 "House")
+									:mod (x54 / white))))))))))
+

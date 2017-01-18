@@ -1,0 +1,289 @@
+# ::id 1
+# ::snt Here are key provisions of the legislation Congress passed last year to increase the minimum wage to $ 4.25 an hour and establish a subminimum training wage for certain teen-age workers
+(x4 / provision
+	:location (x1 / here)
+	:mod (x3 / key)
+	:ARG0 (x7 / legislate-01
+		:ARG0-of (x9 / pass-08
+			:ARG0 (x8 / government-organization
+				:name (n / name
+					:op1 "Congress"))
+			:time (x11 / year
+				:mod (x10 / last))
+			:ARG1 (x22 / and
+				:op1 (x13 / increase-01
+					:ARG1 (x16 / wage-01
+						:mod (x15 / minimum))
+					:time (x21 / temporal-quantity
+						:unit (h / hour)))
+				:op2 (x23 / establish-01
+					:ARG1 (x27 / wage-01
+						:ARG1 (x26 / train-01)
+						:poss (x31 / person
+							:ARG0-of (w / work-01)
+							:mod (x29 / certain)
+							:mod (x30 / teen-age))))))))
+
+# ::id 2
+# ::snt 
+(x3 / take-01
+	:ARG0 (x2 / measure)
+	:ARG1 (x4 / effect-01)
+	:time (xap0 / date-entity
+		:weekday (x5 / sunday)))
+
+# ::id 3
+# ::snt The minimum wage , $ 3.35 an hour since January 1981 , increases to $ 3.80 an hour on Sunday and to $ 4.25 an hour on April 1 , 1991
+(x13 / increase-01
+	:ARG1 (x3 / wage-01
+		:mod (x2 / minimum)
+		:time (x8 / temporal-quantity
+			:unit (h / hour)
+			:null_edge (x6 / monetary-quantity
+				:unit (y / yuan))
+			:null_edge (x9 / null_tag
+				:op1 (x10 / date-entity
+					:year 1981))))
+	:time (xap0 / date-entity
+		:weekday (x20 / sunday)
+		:op1 (x26 / temporal-quantity
+			:unit (h1 / hour)
+			:season (x18 / temporal-quantity
+				:unit (h2 / hour))
+			:time (x28 / date-entity
+				:year 1991))))
+
+# ::id 4
+# ::snt An estimated 4 million Americans work for the minimum wage
+(x6 / work-01
+	:ARG0 (x5 / person
+		:mod (c / country
+			:name (n / name
+				:op1 "Americans"))
+		:null_edge (x2 / estimate-01))
+	:ARG3 (x10 / wage-01
+		:mod (x9 / minimum)))
+
+# ::id 5
+# ::snt Workers ages 16 to 19 may be paid a subminimum training wage for their first three months in the work force and for an additional 90 days if the employer has a formal training program
+(x8 / pay-01
+	:ARG1 (x2 / age-01
+		:mod (x1 / person
+			:ARG0-of (w / work-01))
+		:null_edge (x5 / null_tag))
+	:null_edge (x6 / null_tag)
+	:ARG1 (x12 / wage-01
+		:purpose (x11 / train-01)
+		:purpose (x22 / and
+			:op1 (x21 / force
+				:quant (x17 / temporal-quantity
+					:unit (m / month)
+					:quant 3)
+				:mod (x20 / work-01))
+			:op1 (x30 / employ-01
+				:quant (x27 / temporal-quantity
+					:unit (d / day)
+					:mod (x25 / additional)
+					:quant 90)
+				:ARG1-of (x31 / have-03
+					:ARG1 (x35 / program
+						:mod (x33 / formal)
+						:purpose (x34 / train-01)))))))
+
+# ::id 6
+# ::snt The training wage will be $ 3.35 an hour when the minimum wage rises to $ 3.80 an hour and $ 3.62 an hour when the minimum wage reaches $ 4.25 next April
+(x3 / wage-01
+	:ARG1 (x2 / train-01)
+	:quant (x7 / monetary-quantity
+		:unit (y / yuan))
+	:time (x9 / temporal-quantity
+		:unit (h / hour))
+	:condition (x14 / rise-01
+		:ARG1 (x13 / wage-01
+			:mod (x12 / minimum))
+		:ARG2 (x20 / and
+			:op2 (x19 / temporal-quantity
+				:unit (h1 / hour)
+				:null_edge (x22 / monetary-quantity
+					:unit (y1 / yuan)))
+			:time (x29 / reach-01
+				:ARG0 (x28 / wage-01
+					:mod (x27 / minimum))
+				:ARG1 (x30 / country
+					:name (n / name
+						:op1 "$")
+					:null_edge (x31 / monetary-quantity
+						:unit (y2 / yuan)))
+				:time (x33 / date-entity
+					:mod (x32 / next))))))
+
+# ::id 7
+# ::snt Migrant seasonal farmworkers are exempt from the subminimum and the entire subminimum provision expires in April 1993
+(x9 / and
+	:op1 (x5 / exempt
+		:ARG0 (x3 / farmworker
+			:mod (x2 / seasonal
+				:mod (x1 / person
+					:ARG0-of (m / migrate-01))))
+		:null_edge (x8 / subminimum))
+	:op2 (x14 / expire
+		:ARG0 x3
+		:ARG0 (x13 / provision
+			:mod (x11 / entire)
+			:mod (x12 / subminimum))
+		:time (x16 / date-entity
+			:year 1993)))
+
+# ::id 8
+# ::snt After the increase , full-time minimum wage workers would still find full-time minimum wage workers  $ 516 a year short of what the increase  takes to support one adult and one child at the poverty level , according to government figures
+(xap1 / say-01
+	:domain (x11 / find-02
+		:time (x1 / after
+			:op1 (x3 / increase-01))
+		:ARG0 (x8 / person
+			:ARG0-of (w / work-01)
+			:mod (x5 / full-time)
+			:mod (x6 / minimum)
+			:ARG1 (x7 / wage-01))
+		:mod (x10 / still)
+		:ARG1 (x15 / person
+			:ARG0-of (w1 / work-01)
+			:mod (x12 / full-time)
+			:mod (x13 / minimum)
+			:mod (x14 / wage-01))
+		:duration (x20 / short-41
+			:purpose (x27 / support-01
+				:ARG1 (x24 / increase-01)
+				:ARG1 (x30 / and
+					:op1 (x29 / adult
+						:quant 1)
+					:op2 (x32 / child
+						:quant 1)
+					:op1 (x36 / level
+						:mod (x35 / poverty)))))
+		:ARG1 (xap0 / rate-entity-91
+			:quant (x17 / monetary-quantity
+				:unit (y / yuan))
+			:calendar (x19 / year)))
+	:ARG0 (x41 / figure
+		:mod (x40 / government-organization
+			:ARG0-of (g / govern-01))))
+
+# ::id 9
+# ::snt Minimum wage workers would be $ 4,796 below the basic needs level for a family of four
+(x6 / country
+	:name (n / name
+		:op1 "$")
+	:null_edge (x3 / person
+		:ARG0-of (w / work-01)
+		:mod (x1 / minimum)
+		:mod (x2 / wage-01))
+	:null_edge (x7 / monetary-quantity
+		:unit (y / yuan))
+	:null_edge (x8 / below
+		:op1 (x12 / level
+			:mod (x10 / basic)
+			:mod (x11 / need-01)
+			:mod (x15 / family
+				:quant 4))))
+
+# ::id 10
+# ::snt The wage employers are required to pay workers who receive tips will increase from 40 percent of the minimum wage to 45 percent of the minimum wage on April 1
+(x5 / require-01
+	:ARG1 (x7 / pay-01
+		:ARG0 (x3 / employ-01
+			:mod (x2 / wage-01))
+		:ARG3 (x8 / person
+			:ARG0-of (w / work-01)
+			:ARG0-of (x10 / person
+				:ARG0-of (r / receive-01)
+				:ARG1 (x13 / increase-01
+					:ARG0 (x11 / tip-05)
+					:ARG2 (x16 / percentage-entity
+						:value 40)
+					:ARG1 (x20 / wage-01
+						:mod (x19 / minimum))
+					:ARG1 (x27 / wage-01
+						:quant (x23 / percentage-entity
+							:value 45)
+						:mod (x26 / minimum)
+						:time (x29 / date-entity)))))))
+
+# ::id 11
+# ::snt The law requires that tips plus wages must equal the minimum hourly wage
+(x3 / require-01
+	:ARG0 (x2 / law)
+	:ARG1 (x9 / equal-01
+		:ARG1 (x5 / tip-05
+			:ARG1 (x7 / wage))
+		:ARG1 (x13 / wage-01
+			:mod (x11 / minimum))))
+
+# ::id 12
+# ::snt The percentage goes to 50 percent a year from now
+(xap0 / cause-01
+	:snt1 (x3 / go-10
+		:ARG1 (x2 / percentage)
+		:ARG4 (x6 / percentage-entity
+			:value 50)
+		:time (x10 / now)))
+
+# ::id 13
+# ::snt The level at which small businesses are exempt from the federal minimum wage increases from $ 362,500 in gross annual sales to $ 500,000
+(x14 / increase-01
+	:ARG1 (x21 / sale
+		:mod (x2 / level
+			:mod (x8 / exempt
+				:ARG0 (x6 / business
+					:mod (x5 / small)
+					:source (x13 / wage-01
+						:mod (x12 / minimum
+							:mod (x11 / government-organization
+								:name (n / name
+									:op1 "federal")))))))
+		:mod (x19 / gross)
+		:null_edge (x24 / monetary-quantity
+			:unit (y / yuan))))
+
+# ::id 14
+# ::snt Hundreds of special exemptions exist , such as for some farm workers , including tobacco leaf harvesters , casual babysitters , newspaper delivery workers , amusement park employees , wreath makers , employees at small radio stations in cities with fewer than 25,000 residents and mollusk and crustacean harvesters
+(x5 / exist-01
+	:ARG1 (x4 / exempt-01
+		:mod (x3 / special))
+	:ARG1 (x12 / person
+		:ARG0-of (w / work-01)
+		:quant (x10 / some)
+		:mod (x11 / farm)
+		:ARG2-of (x14 / include-91
+			:ARG1 (x45 / and
+				:op1 (x17 / harvester
+					:consist-of (x15 / tobacco)
+					:ARG1 (x16 / leaf))
+				:op2 (x24 / person
+					:ARG0-of (w1 / work-01)
+					:instrument-of (x23 / deliver-01
+						:mod (x22 / newspaper
+							:name (x20 / babysitter
+								:mod (x19 / casual)))))
+				:op2 (x28 / person
+					:ARG1-of (e / employ-01)
+					:null_edge (x27 / null_tag
+						:mod (x26 / amusement)))
+				:op2 (x31 / make-01
+					:quant x28
+					:ARG1 (x30 / wreath))
+				:op2 (x33 / person
+					:ARG1-of (e1 / employ-01)
+					:quant x28
+					:location (x37 / station
+						:mod (x35 / small)
+						:mod (x36 / radio)
+						:location (x39 / city
+							:prep-with (x44 / person
+								:ARG0-of (r / reside-01)
+								:quant (x43 / 25,000
+									:null_edge (x41 / few))))))
+				:op2 (x47 / and
+					:op1 (x46 / mollusk)
+					:op2 (x48 / crustacean))))))
+

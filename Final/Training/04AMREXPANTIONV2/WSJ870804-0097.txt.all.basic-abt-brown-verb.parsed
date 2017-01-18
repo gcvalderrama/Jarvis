@@ -1,0 +1,408 @@
+# ::id 1
+# ::snt By a vote of 91 to 2 , the Senate overwhelmingly approved the nomination of economist Alan Greenspan to become chairman of the Federal Reserve Board , a position often referred to as the second most powerful post in the land
+(x12 / approve-01
+	:ARG1 (x3 / vote-01
+		:ARG1 2)
+	:ARG0 (x10 / government-organization
+		:name (n / name
+			:op1 "Senate"))
+	:ARG2-of (x11 / overwhelm-01)
+	:ARG1 (x14 / nominate-01
+		:name (x17 / name
+			:op1 "Alan"
+			:op2 "Greenspan"
+			:ARG0-of (x16 / economist
+				:domain (x20 / become-01
+					:ARG2 (x21 / have-org-role-91
+						:ARG2 (c / chairman)
+						:ARG1 (x31 / person
+							:ARG1-of (r / refer-01)
+							:ARG0 (x24 / government-organization
+								:name (n1 / name
+									:op1 "Federal"
+									:op2 "Reserve"
+									:op3 "Board"
+									:op4 ","
+									:op5 "a"
+									:op6 "position"))
+							:frequency (x30 / often)
+							:ARG1 (x38 / post
+								:mod (x37 / powerful
+									:degree (x36 / most))
+								:location (x41 / land)))))))))
+
+# ::id 2
+# ::snt Mr. Greenspan will succeed Paul Volcker , whose term as chairman expires Thursday
+(x4 / succeed-01
+	:ARG0 (x2 / person
+		:name (n / name
+			:op1 "Greenspan")
+		:null_edge (x1 / null_tag))
+	:ARG1 (x5 / name
+		:op1 "Paul"
+		:op2 "Volcker"
+		:ARG0-of (x12 / expire
+			:ARG1 (x9 / term
+				:ARG2 (x11 / have-org-role-91
+					:ARG2 (c / chairman)))
+			:time (xap0 / date-entity
+				:weekday (x13 / thursday)))))
+
+# ::id 3
+# ::snt Fed spokesman Joseph Coyne said that Mr. Volcker will stay on in the post until Mr. Greenspan is sworn in , probably next week
+(x5 / say-01
+	:ARG0 (x3 / person
+		:name (n / name
+			:op1 "Joseph"
+			:op2 "Coyne")
+		:ARG0-of (x2 / have-org-role-91
+			:ARG2 (s / spokesman)
+			:ARG1 (x1 / have-org-role-91
+				:ARG1 (g / government-organization
+					:name (n2 / name
+						:op1 "Fed")))))
+	:ARG1 (x10 / stay-01
+		:ARG1 (x8 / person
+			:name (n1 / name
+				:op1 "Volcker")
+			:null_edge (x7 / null_tag))
+		:ARG1 (x14 / post)
+		:time (x15 / until
+			:op1 (x22 / probable
+				:domain (x19 / swear-01
+					:ARG1 (x17 / person
+						:name (n3 / name
+							:op1 "Greenspan")
+						:null_edge (x16 / null_tag))
+					:time (x24 / week
+						:mod (x23 / next)))))))
+
+# ::id 4
+# ::snt A widely respected economist who headed the Council of Economic Advisers under President Ford , Mr. Greenspan comes to the new job with considerable knowledge and experience
+(x18 / come-01
+	:ARG1 (x4 / economist
+		:mod (x3 / respected
+			:degree (x2 / wide))
+		:ARG0-of (x6 / head-02
+			:ARG1 (x8 / government-organization
+				:name (n / name
+					:op1 "Council"
+					:op2 "of"
+					:op3 "Economic"
+					:op4 "Advisers"))
+			:ARG0 (x14 / company
+				:name (n1 / name
+					:op1 "Ford")
+				:null_edge (x13 / have-org-role-91
+					:ARG2 (p / president))
+				:null_edge (x17 / person
+					:name (n2 / name
+						:op1 "Greenspan")
+					:null_edge (x16 / null_tag)))))
+	:ARG1 (x22 / job
+		:mod (x21 / new))
+	:ARG3 (x26 / and
+		:op1 (x25 / know-01
+			:mod (x24 / considerable))))
+
+# ::id 5
+# ::snt In presenting the nomination , however , Senate Banking Committee Chairman William Proxmire (D. , Wis. )questioned whether the new chairman will act independently of the Reagan administration
+(x19 / question-01
+	:ARG2 (x2 / present-01
+		:ARG1 (x4 / nominate-01))
+	:ARG0 (x9 / government-organization
+		:name (n / name
+			:op1 "Banking"
+			:op2 "Committee")
+		:mod (x8 / government-organization
+			:name (n2 / name
+				:op1 "Senate")))
+	:ARG0 (x13 / person
+		:name (n1 / name
+			:op1 "Proxmire")
+		:null_edge (x11 / have-org-role-91
+			:ARG2 (c / chairman))
+		:null_edge (x12 / person
+			:name (n3 / name
+				:op1 "William"))
+		:null_edge (x15 / d.
+			:null_edge (x17 / country
+				:name (n4 / name
+					:op1 "Wis."))))
+	:ARG1 (x25 / act-02
+		:ARG0 (x23 / have-org-role-91
+			:ARG2 (c1 / chairman)
+			:mod (x22 / new))
+		:ARG0 (xap0 / government-organization
+			:ARG0-of (x26 / depend-01
+				:polarity -)
+			:ARG0-of (x30 / administrate-01))))
+
+# ::id 6
+# ::snt Sen. Proxmire also criticized Mr. Greenspan's advocacy of banking deregulation
+(x4 / criticize-01
+	:ARG0 (x2 / person
+		:name (n / name
+			:op1 "Proxmire")
+		:null_edge (x1 / sen.))
+	:mod (x3 / also)
+	:ARG1 (x8 / advocacy
+		:ARG0 (x6 / person
+			:name (n1 / name
+				:op1 "Greenspan")
+			:null_edge (x5 / null_tag))
+		:poss (x11 / deregulation
+			:mod (x10 / banking))))
+
+# ::id 7
+# ::snt The only two senators to vote against Mr. Greenspan were Sen. Kent Conrad (D. , N.D. )and Sen. Bill Bradley (D. , N.J. )
+(x4 / senator
+	:mod (x2 / only)
+	:quant 2
+	:purpose (x6 / vote-01
+		:ARG1 (x9 / person
+			:name (n / name
+				:op1 "Greenspan")
+			:null_edge (x8 / null_tag)))
+	:domain (x19 / and
+		:op1 (x13 / country
+			:name (n1 / name
+				:op1 "Conrad")
+			:null_edge (x11 / sen.)
+			:null_edge (x15 / d.
+				:null_edge (x17 / country
+					:name (n2 / name
+						:op1 "N.D.")))
+			:null_edge (x21 / name
+				:op1 "Bill"
+				:op2 "Bradley"
+				:ARG0-of (x20 / sen.)
+				:ARG0-of (x24 / d.
+					:null_edge (x26 / country
+						:name (n3 / name
+							:op1 "N.J.")))))))
+
+# ::id 8
+# ::snt In a statement , Sen. Bradley said Sen. Bill Bradley (D. , N.J. ) is concerned that the new chairman would move too rapidly toward deregulation and that the new chairman  lacks sufficient international experience
+(x3 / state-01
+	:ARG0 (x6 / person
+		:name (n / name
+			:op1 "Bradley")
+		:null_edge (x5 / sen.))
+	:ARG1 (x17 / concern-01
+		:ARG1 (x9 / name
+			:op1 "Bill"
+			:op2 "Bradley"
+			:ARG0-of (x8 / sen.)
+			:ARG0-of (x12 / d.
+				:null_edge (x14 / country
+					:name (n1 / name
+						:op1 "N.J."))))
+		:ARG0 (x28 / and
+			:op1 (x23 / move-01
+				:ARG0 (x21 / have-org-role-91
+					:ARG2 (c / chairman)
+					:mod (x20 / new))
+				:manner (x25 / rapid
+					:degree (x24 / too))
+				:ARG2 (x27 / deregulation))
+			:op2 (x33 / lack-01
+				:ARG0 x21
+				:ARG0 (x32 / have-org-role-91
+					:ARG2 (c1 / chairman)
+					:mod (x31 / new))
+				:ARG1 (x36 / experience-01
+					:ARG1-of (x34 / suffice-01)
+					:mod (x35 / international))))))
+
+# ::id 9
+# ::snt Sen. Bill Bradley (D. , N.J. ) personal preference , Sen. Bradley said , would have been for the administration to prevail upon Chairman Volcker to stay for another term
+(x14 / say-01
+	:ARG0 (x2 / newspaper
+		:name (n / name
+			:op1 "Bill"
+			:op2 "Bradley")
+		:ARG0-of (x1 / sen.)
+		:ARG0-of (x5 / d.
+			:null_edge (x7 / country
+				:name (n3 / name
+					:op1 "N.J.")))
+		:ARG0-of (x10 / prefer-01
+			:mod (x9 / personal)))
+	:ARG0 (x13 / person
+		:name (n1 / name
+			:op1 "Bradley")
+		:null_edge (x12 / sen.))
+	:time (x23 / prevail-01
+		:ARG1 (x26 / person
+			:name (n2 / name
+				:op1 "Volcker")
+			:ARG0-of (x25 / have-org-role-91
+				:ARG2 (c / chairman)))
+		:purpose (x28 / stay-01
+			:ARG0 x26
+			:ARG3 (xap1 / nominate-01
+				:ARG2 (x31 / term
+					:mod (x30 / another))))
+		:ARG0 (xap0 / government-organization
+			:ARG0-of (x21 / administrate-01))))
+
+# ::id 10
+# ::snt After the vote , Mr. Greenspan said , economist Alan Greenspan  am obviously gratified and economist Alan Greenspan  thank the Senate
+(x7 / say-01
+	:ARG0 (x6 / person
+		:name (n / name
+			:op1 "Greenspan")
+		:null_edge (x5 / null_tag))
+	:ARG1 (x15 / and
+		:op1 (x14 / gratify
+			:time (x1 / after
+				:op1 (x3 / vote-01))
+			:ARG0 (x10 / newspaper
+				:name (n1 / name
+					:op1 "Alan"
+					:op2 "Greenspan")
+				:ARG0-of (x9 / economist))
+			:ARG1-of (x13 / obvious-41))
+		:op2 (x19 / thank-01
+			:ARG0 (x17 / newspaper
+				:name (n2 / name
+					:op1 "Alan"
+					:op2 "Greenspan")
+				:ARG0-of (x16 / economist))
+			:ARG1 (x21 / government-organization
+				:name (n3 / name
+					:op1 "Senate")))))
+
+# ::id 11
+# ::snt As chairman of the Fed , Mr. Greenspan will be in a position to influence monetary policy and affect the economy's performance over the next four years
+(x2 / have-org-role-91
+	:ARG2 (c / chairman)
+	:ARG2-of (x5 / have-org-role-91
+		:ARG1 (g / government-organization
+			:name (n / name
+				:op1 "Fed")))
+	:ARG1 (x8 / person
+		:name (n1 / name
+			:op1 "Greenspan")
+		:null_edge (x7 / null_tag))
+	:ARG1 (x13 / position)
+	:ARG1 (x18 / and
+		:op1 (x15 / influence-01
+			:ARG1 (x17 / policy
+				:mod (x16 / monetary)))
+		:op2 (x19 / affect-01
+			:ARG1 (x23 / perform-01
+				:poss (x21 / economy))
+			:ARG1 (x24 / over
+				:op1 (x28 / year
+					:mod (x26 / next)
+					:null_edge (x27 / null_tag))))))
+
+# ::id 12
+# ::snt chairman of the Fed  has developed a reputation as a determined inflation-fighter , and is generally expected to follow monetary policies similar to those of chairman of the Fed  predecessor
+(x6 / develop-02
+	:ARG2 (x1 / have-org-role-91
+		:ARG2 (c / chairman)
+		:ARG2-of (x4 / have-org-role-91
+			:ARG1 (g / government-organization
+				:name (n / name
+					:op1 "Fed"))))
+	:ARG1 (x8 / reputation
+		:ARG2 (x12 / inflation-fighter
+			:ARG1-of (x11 / determine-01))
+		:consist-of (x14 / and
+			:op2 (x17 / expect-01
+				:mod (x16 / general)
+				:ARG1 (x19 / follow-02
+					:ARG1 (x21 / policy
+						:mod (x20 / monetary)
+						:ARG1-of (x22 / resemble-01
+							:op (s / similar)
+							:ARG2 (x26 / have-org-role-91
+								:ARG2 (c1 / chairman)
+								:ARG1 (x30 / predecessor)))))))))
+
+# ::id 13
+# ::snt President Reagan issued a statement after the vote thanking the Senate for a statement  overwhelming support for Mr. Greenspan
+(x5 / state-01
+	:ARG0 (x2 / person
+		:name (n / name
+			:op1 "Reagan")
+		:ARG0-of (x1 / have-org-role-91
+			:ARG2 (p / president)))
+	:time (x6 / after
+		:op1 (x8 / vote-01
+			:ARG0-of (x9 / thank-01
+				:ARG1 (x11 / government-organization
+					:name (n1 / name
+						:op1 "Senate"))
+				:ARG2 (x14 / state-01
+					:ARG1 (x16 / support-01
+						:ARG1 (x19 / person
+							:name (n2 / name
+								:op1 "Greenspan")
+							:null_edge (x18 / null_tag))))))))
+
+# ::id 14
+# ::snt Mr. Volcker's departure marks the end of a turbulent era at the Fed
+(x5 / mark-01
+	:ARG0 (x4 / depart-01
+		:ARG0 (x2 / person
+			:name (n / name
+				:op1 "Volcker")
+			:null_edge (x1 / null_tag)))
+	:ARG1 (x7 / end-01
+		:ARG1 (x11 / era
+			:mod (x10 / turbulent)
+			:location (x14 / have-org-role-91
+				:ARG1 (g / government-organization
+					:name (n1 / name
+						:op1 "Fed"))))))
+
+# ::id 15
+# ::snt When Paul Volcker  was named chairman in 1979 , inflation was running at double-digit rates
+(x12 / run-01
+	:condition (x5 / name-01
+		:ARG1 (x2 / person
+			:name (n / name
+				:op1 "Paul"
+				:op2 "Volcker"))
+		:ARG1 (x6 / have-org-role-91
+			:ARG2 (c / chairman))
+		:time (x8 / date-entity
+			:year 1979)
+		:ARG1 (x10 / inflation))
+	:ARG0 x10
+	:ARG2 (x15 / rate
+		:mod (x14 / double-digit)))
+
+# ::id 16
+# ::snt By keeping a tight grip on credit , despite severe economic and political pressures , Mr. Volcker and the Fed were able to bring that rate down to less than 2 % last year
+(x22 / possible
+	:domain (x2 / keep-04
+		:ARG1 (x5 / grip
+			:mod (x4 / tight)
+			:topic (x7 / credit-02)))
+	:concession (x14 / pressure-01
+		:null_edge (x10 / severe)
+		:ARG0 (x12 / and
+			:op1 (x11 / economy)
+			:op2 (x13 / politics)))
+	:domain (x18 / and
+		:op1 (x17 / person
+			:name (n / name
+				:op1 "Volcker")
+			:null_edge (x16 / null_tag))
+		:op2 (x20 / have-org-role-91
+			:ARG1 (g / government-organization
+				:name (n1 / name
+					:op1 "Fed"))))
+	:domain (x24 / bring-01
+		:ARG0 x18
+		:ARG1 (x26 / rate)
+		:null_edge (x29 / less-than
+			:null_edge 2
+			:op1 (x34 / year
+				:mod (x33 / last)))))
+

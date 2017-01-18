@@ -1,0 +1,477 @@
+# ::id 1
+# ::snt WASHINGTON A federal regulator said executives of Lincoln Savings & Loan Association offered the government an unusual trade in the days after the feds seized the thrift last April : We will give you loan documents if you give us the art in Lincoln's offices
+(x5 / say-01
+	:ARG0 (x4 / regulator
+		:mod (x3 / government-organization
+			:name (n / name
+				:op1 "federal")))
+	:ARG1 (x13 / offer-01
+		:ARG1 (x18 / trade-01
+			:poss (x15 / government-organization
+				:ARG0-of (g / govern-01))
+			:mod (x17 / usual
+				:polarity -))
+		:time (x22 / after
+			:op1 (x21 / temporal-quantity
+				:unit (d / day))
+			:op1 (x25 / seize-01
+				:ARG0 (x24 / fed)
+				:ARG1 (x27 / thrift)
+				:time (x29 / date-entity
+					:mod (x28 / last))
+				:ARG2 (x33 / give-01
+					:ARG0 (x31 / we)
+					:ARG2 (x34 / you)
+					:ARG1 (x36 / document
+						:mod (x35 / loan-01))
+					:condition (x39 / give-01
+						:ARG0 (x38 / you)
+						:ARG1 (x42 / art
+							:location (x46 / office
+								:poss (x44 / person
+									:name (n2 / name
+										:op1 "Lincoln"))))))))
+		:ARG0 (xap0 / person
+			:ARG0-of (x6 / have-org-role-91
+				:ARG2 (e / executive)
+				:ARG1 (x8 / government-organization
+					:name (n1 / name
+						:op1 "Lincoln"
+						:op2 "Savings"
+						:op3 "&"
+						:op4 "Loan"
+						:op5 "Association"))))))
+
+# ::id 2
+# ::snt Charles Keating , the colorful chairman of Lincoln's parent company , called this yet another ridiculous exaggeration of the real story from incompetent regulators
+(x13 / call-01
+	:ARG0 (x1 / newspaper
+		:name (n / name
+			:op1 "Charles"
+			:op2 "Keating")
+		:ARG0-of (x6 / have-org-role-91
+			:ARG2 (c / chairman)
+			:mod (x5 / colorful)
+			:ARG1 (x11 / company
+				:mod (x8 / person
+					:name (n1 / name
+						:op1 "Lincoln"))
+				:mod (x10 / parent))))
+	:ARG1 (x22 / story
+		:mod (x14 / this)
+		:mod (x15 / yet)
+		:mod (x16 / another)
+		:mod (x17 / ridicule-01)
+		:mod (x21 / real)
+		:topic (x25 / regulator
+			:mod (x24 / incompetence))))
+
+# ::id 3
+# ::snt The takeover was the most chaotic , incredible situation I have been involved in , said regulator Keith Seibold
+(x16 / say-01
+	:ARG1 (x9 / situation
+		:domain (x2 / take-12)
+		:mod (x6 / chaotic
+			:degree (x5 / most))
+		:mod (x8 / incredible)
+		:ARG1-of (x13 / involve-01))
+	:ARG0 (x18 / newspaper
+		:name (n / name
+			:op1 "Keith"
+			:op2 "Seibold")
+		:ARG0-of (x17 / regulator)))
+
+# ::id 4
+# ::snt Mr. Seibold , a 20-year veteran of the Federal Deposit Insurance Corp. , has been in the first wave of regulators in many a bank seizure
+(x19 / wave
+	:ARG0 (x2 / person
+		:name (n / name
+			:op1 "Seibold")
+		:null_edge (x1 / null_tag)
+		:null_edge (x6 / veteran
+			:ARG1 (x9 / government-organization
+				:name (n1 / name
+					:op1 "Federal"
+					:op2 "Deposit"
+					:op3 "Insurance"
+					:op4 "Corp."))))
+	:consist-of (x21 / regulator)
+	:location (x26 / seize-01
+		:quant (x23 / many)
+		:ARG1 (x25 / bank)))
+
+# ::id 5
+# ::snt Testifying in Mr. Keating's court challenge to the takeover , Mr. Seibold said lots of documents loan and credit files were missing when an FDIC team swept through Lincoln's offices in Phoenix , Ariz. , April 14 , 1989
+(x14 / say-01
+	:ARG1 (x1 / testify-01
+		:ARG2 (x7 / challenge-01
+			:ARG0 (x4 / person
+				:name (n1 / name
+					:op1 "Keating")
+				:null_edge (x3 / null_tag))
+			:location (x6 / court)
+			:ARG1 (x10 / take-12)))
+	:ARG0 (x13 / person
+		:name (n / name
+			:op1 "Seibold")
+		:null_edge (x12 / null_tag))
+	:ARG1 (x23 / miss-03
+		:time (x28 / sweep-02
+			:ARG0 (x27 / team
+				:mod (x26 / organization
+					:name (n2 / name
+						:op1 "FDIC")))
+			:instrument (x32 / office
+				:poss (x30 / person
+					:name (n3 / name
+						:op1 "Lincoln"))
+				:location (x34 / country
+					:name (n4 / name
+						:op1 "Phoenix")
+					:location (x36 / country
+						:name (n5 / name
+							:op1 "Ariz."))
+					:name (x38 / name
+						:op1 "April"
+						:op2 "14"
+						:op3 ","
+						:op4 "1989"))))
+		:ARG0 (xap0 / person
+			:quant (x15 / lot
+				:ARG1 (x19 / and
+					:op1 (x18 / loan
+						:mod (x17 / document))
+					:op2 (x21 / file
+						:mod (x20 / credit-02)))))))
+
+# ::id 6
+# ::snt Charles Keating  said that over the next several days , the FDIC managed to retrieve the documents from Lincoln officials in exchange for giving the officials some of the art that decorated Lincoln's offices
+(x3 / say-01
+	:ARG0 (x1 / newspaper
+		:name (n / name
+			:op1 "Charles"
+			:op2 "Keating"))
+	:ARG1 (x13 / manage-02
+		:null_edge (x8 / several
+			:op1 (x9 / day
+				:mod (x7 / next)))
+		:ARG0 (x12 / organization
+			:name (n1 / name
+				:op1 "FDIC"))
+		:ARG1 (x15 / retrieve
+			:ARG0 x12
+			:ARG1 (x17 / document)
+			:ARG1-of (x22 / exchange-01
+				:ARG0 (xap1 / person
+					:ARG0-of (x26 / have-org-role-91
+						:ARG2 (o1 / official))
+					:ARG1 (x30 / art
+						:quant (x27 / some)
+						:ARG1-of (x32 / decorate-01
+							:ARG1 (x35 / office
+								:poss (x33 / person
+									:name (n3 / name
+										:op1 "Lincoln")))))))
+			:ARG0 (xap0 / person
+				:ARG0-of (x20 / have-org-role-91
+					:ARG2 (o / official)
+					:ARG1 (x19 / country
+						:name (n2 / name
+							:op1 "Lincoln")))))))
+
+# ::id 7
+# ::snt Federal District Judge Stanley Sporkin seemed incredulous
+(x6 / seem-01
+	:ARG1 (x7 / incredulous
+		:ARG0 (x4 / newspaper
+			:name (n / name
+				:op1 "Stanley"
+				:op2 "Sporkin")
+			:ARG0-of (x1 / federal)
+			:null_edge (x2 / null_tag)
+			:ARG0-of (x3 / judge-01))))
+
+# ::id 8
+# ::snt Keith Seibold  do not actually mean pictures on the wall ?
+(x6 / mean-01
+	:ARG0 (x1 / newspaper
+		:name (n / name
+			:op1 "Keith"
+			:op2 "Seibold"))
+	:mod (x5 / actual)
+	:ARG1 (x7 / picture
+		:ARG1 (x10 / wall)))
+
+# ::id 9
+# ::snt Keith Seibold  asked
+(x3 / ask-01
+	:ARG0 (x1 / newspaper
+		:name (n / name
+			:op1 "Keith"
+			:op2 "Seibold")))
+
+# ::id 10
+# ::snt Yes , your honor , pictures on the wall , Mr. Seibold replied
+(x13 / reply-01
+	:ARG1 (x6 / picture
+		:domain (x4 / honor-01)
+		:ARG1 (x9 / wall))
+	:ARG0 (x12 / person
+		:name (n / name
+			:op1 "Seibold")
+		:null_edge (x11 / null_tag)))
+
+# ::id 11
+# ::snt But during a break in the trial , Mr. Keating said the suggestion that there was any bartering to get documents back was ridiculous
+(x1 / contrast-01
+	:ARG2 (x11 / say-01
+		:time (x4 / break-01)
+		:ARG0 (x10 / person
+			:name (n / name
+				:op1 "Keating")
+			:null_edge (x9 / null_tag))
+		:ARG1 (x13 / suggest-01
+			:ARG1 (x18 / bartering
+				:mod (x17 / any)
+				:purpose (x20 / get-01
+					:ARG1 (x21 / document)
+					:ARG2 (x22 / back)))
+			:mod (x24 / ridicule-01))))
+
+# ::id 12
+# ::snt Charles Keating  explained that Lincoln's files were spread among two buildings used by Lincoln and by American Continental Corp. , the parent company
+(x3 / explain-01
+	:ARG0 (x1 / newspaper
+		:name (n / name
+			:op1 "Charles"
+			:op2 "Keating"))
+	:ARG1 (x9 / spread-03
+		:ARG1 (x7 / file
+			:poss (x5 / person
+				:name (n1 / name
+					:op1 "Lincoln")))
+		:ARG1 (x12 / building
+			:quant 2
+			:ARG1-of (x13 / use-01
+				:ARG0 (x15 / person
+					:name (n2 / name
+						:op1 "Lincoln")
+					:null_edge (x24 / company
+						:domain (x19 / government-organization
+							:name (n3 / name
+								:op1 "Continental"
+								:op2 "Corp."))
+						:ARG0-of (x23 / parent)))))))
+
+# ::id 13
+# ::snt In sorting out what belonged where after the takeover , Lincoln's files were returned to Lincoln's building
+(x2 / sort-01
+	:ARG0-of (x5 / belong-01
+		:time (x15 / return-01
+			:time (x7 / after
+				:domain (x9 / take-12))
+			:ARG1 (x13 / file
+				:poss (x11 / person
+					:name (n / name
+						:op1 "Lincoln")))
+			:ARG4 (x19 / building
+				:ARG0 (x17 / person
+					:name (n1 / name
+						:op1 "Lincoln"))))))
+
+# ::id 14
+# ::snt Meanwhile , Mr. Keating asked the regulators to return to Charles Keating  a painting , which hung in Lincoln's offices and was given to Lincoln's  by Lincoln's  nephew
+(x5 / ask-01
+	:time (x1 / meanwhile)
+	:ARG0 (x4 / person
+		:name (n / name
+			:op1 "Keating")
+		:null_edge (x3 / null_tag))
+	:ARG2 (x7 / regulator)
+	:ARG1 (x9 / return-01
+		:ARG1 x4
+		:ARG4 (x11 / name
+			:op1 "Charles"
+			:op2 "Keating")
+		:ARG1 (x14 / paint-02
+			:ARG1 (x22 / and
+				:op1 (x17 / hang-04
+					:location (x21 / office
+						:poss (x19 / person
+							:name (n2 / name
+								:op1 "Lincoln"))))
+				:op2 (x24 / give-01
+					:ARG2 (x26 / person
+						:name (n1 / name
+							:op1 "Lincoln"))
+					:ARG0 (x31 / nephew
+						:poss (x29 / person
+							:name (n3 / name
+								:op1 "Lincoln"))))))))
+
+# ::id 15
+# ::snt Mr. Keating also said that Lincoln was required to keep all original loan files at a painting  headquarters in Irvine , Calif.
+(x4 / say-01
+	:ARG0 (x2 / person
+		:name (n / name
+			:op1 "Keating")
+		:null_edge (x1 / null_tag))
+	:mod (x3 / also)
+	:ARG1 (x8 / require-01
+		:ARG1 (x6 / person
+			:name (n1 / name
+				:op1 "Lincoln"))
+		:ARG1 (x10 / keep-04
+			:ARG0 x6
+			:ARG1 (x14 / file
+				:quant (x11 / all)
+				:mod (x12 / original)
+				:mod (x13 / loan-01))
+			:location (x18 / headquarters
+				:ARG1-of (x17 / paint-02)
+				:location (x20 / country
+					:name (n2 / name
+						:op1 "Irvine")
+					:null_edge (x22 / country
+						:name (n3 / name
+							:op1 "Calif.")))))))
+
+# ::id 16
+# ::snt Mr. Seibold would not speak to reporters about Mr. Keating's version of the events
+(x5 / speak-01
+	:ARG0 (x2 / person
+		:name (n / name
+			:op1 "Seibold")
+		:null_edge (x1 / null_tag))
+	:ARG2 (x7 / person
+		:ARG0-of (r / report-01))
+	:prep-as (x12 / version
+		:poss (x10 / person
+			:name (n1 / name
+				:op1 "Keating")
+			:null_edge (x9 / null_tag))
+		:mod (x15 / event)))
+
+# ::id 17
+# ::snt A few blocks away on Capitol Hill , Rep. Henry Gonzalez , who made Mr. Keating something of a celebrity with his hearings on Lincoln last year , called for the Justice Department to freeze the assets of Mr. Keating and other highflyers who have defrauded savings and loans
+(x29 / call-01
+	:ARG1 (x3 / block
+		:quant (x2 / few))
+	:ARG0 (x10 / newspaper
+		:name (n / name
+			:op1 "Henry"
+			:op2 "Gonzalez")
+		:ARG0-of (x9 / rep.
+			:location (x7 / country
+				:name (n1 / name
+					:op1 "Hill")))
+		:ARG0-of (x14 / make-02
+			:ARG0 (x20 / celebrity
+				:ARG0 (x16 / person
+					:name (n2 / name
+						:op1 "Keating")
+					:null_edge (x15 / null_tag))
+				:ARG1 (x23 / hearing
+					:ARG1 (x25 / person
+						:name (n4 / name
+							:op1 "Lincoln")))
+				:time (x27 / year
+					:mod (x26 / last)))))
+	:ARG1 (x35 / freeze-02
+		:ARG0 (x33 / department
+			:null_edge (x32 / null_tag))
+		:ARG1 (x37 / asset
+			:poss (x41 / and
+				:op1 (x40 / person
+					:name (n3 / name
+						:op1 "Keating")
+					:null_edge (x39 / null_tag))
+				:op1 (x46 / defraud-01
+					:ARG1 (x43 / highflyer
+						:mod (x42 / other))
+					:ARG1 (x48 / and
+						:op1 (x47 / savings)
+						:op2 (x49 / loan-01)))))))
+
+# ::id 18
+# ::snt Mr. Keating said Mr. Gonzalez was ignoring the truth of regulatory iniquity that was evident from the trial
+(x3 / say-01
+	:ARG0 (x2 / person
+		:name (n / name
+			:op1 "Keating")
+		:null_edge (x1 / null_tag))
+	:ARG1 (x7 / ignore-01
+		:ARG0 (x5 / person
+			:name (n1 / name
+				:op1 "Gonzalez")
+			:null_edge (x4 / null_tag))
+		:ARG1 (x9 / truth
+			:poss (x12 / iniquity
+				:ARG0-of (x11 / regulate-01))
+			:ARG1-of (x15 / evident))))
+
+# ::id 19
+# ::snt Rep. Henry Gonzalez , who made Mr. Keating something of a celebrity with his hearings on Lincoln last year , called for the Justice Department to freeze the assets of Mr. Keating  prefers Rep. Henry Gonzalez , who made Mr. Keating something of a celebrity with his hearings on Lincoln last year , called for the Justice Department to freeze the assets of Mr. Keating  kangaroo court , Mr. Keating said
+(x21 / call-01
+	:ARG0 (x2 / person
+		:name (n / name
+			:op1 "Henry"
+			:op2 "Gonzalez"
+			:op3 ","
+			:op4 "who"
+			:op5 "made"
+			:op6 "Mr."
+			:op7 "Keating")
+		:ARG0-of (x1 / rep.)
+		:ARG0-of (x6 / make-02
+			:ARG1 (x9 / something
+				:ARG1 (x12 / celebrity
+					:ARG1 (x15 / hearing
+						:ARG1 (x17 / person
+							:name (n2 / name
+								:op1 "Lincoln")))
+					:time (x19 / year
+						:mod (x18 / last))))))
+	:ARG1 (x27 / freeze-02
+		:ARG0 (x25 / department
+			:null_edge (x24 / null_tag))
+		:ARG1 (x29 / asset
+			:poss (x32 / person
+				:name (n1 / name
+					:op1 "Keating")
+				:null_edge (x31 / null_tag)
+				:null_edge (x33 / prefer-01
+					:ARG1 (x35 / name
+						:op1 "Henry"
+						:op2 "Gonzalez"
+						:ARG0-of (x34 / rep.)
+						:ARG0-of (x39 / make-02
+							:ARG1 (x45 / celebrity
+								:ARG0 (x41 / person
+									:name (n3 / name
+										:op1 "Keating")
+									:null_edge (x40 / null_tag))
+								:ARG1 (x48 / hearing
+									:ARG1 (x50 / person
+										:name (n4 / name
+											:op1 "Lincoln"))
+									:time (x52 / year
+										:mod (x51 / last)))
+								:ARG1-of (x54 / call-01
+									:ARG0 x41
+									:ARG1 (x60 / freeze-02
+										:ARG0 (x58 / department
+											:null_edge (x57 / null_tag))
+										:ARG1 (x62 / asset
+											:poss (x67 / court
+												:null_edge (x64 / null_tag)
+												:mod (x65 / person
+													:name (n6 / name
+														:op1 "Keating"))))))
+								:ARG0-of (x71 / say-01
+									:ARG0 x41
+									:ARG0 (x70 / person
+										:name (n5 / name
+											:op1 "Keating")
+										:null_edge (x69 / null_tag)))))))))))
+

@@ -1,0 +1,211 @@
+# ::id 1
+# ::snt An engine fire broke out early today on a cruise ship carrying more than 700 people in the Gulf of Mexico , but the blaze appeared to have been brought under control , according to officials and a nearby ship's captain
+(x4 / break-08
+	:ARG0 (x3 / fire-01
+		:ARG1 (x2 / engine))
+	:time (x6 / early
+		:op1 (x7 / today))
+	:ARG1 (x11 / ship
+		:mod (x10 / cruise)
+		:ARG0-of (x12 / carry-01
+			:ARG1 (x16 / people
+				:quant (x13 / more-than
+					:op1 700))
+			:location (x19 / world-region
+				:name (n / name
+					:op1 "Gulf")
+				:part-of (x21 / country
+					:name (n1 / name
+						:op1 "Mexico")))))
+	:null_edge (x37 / and
+		:op2 (x26 / appear-01
+			:ARG1 (x25 / blaze)
+			:ARG1 (x32 / control-01))
+		:op2 (x42 / have-org-role-91
+			:ARG2 (c / captain)
+			:ARG1 (x40 / ship
+				:mod (x39 / nearby)))
+		:op1 (xap0 / person
+			:ARG0-of (x36 / have-org-role-91
+				:ARG2 (o / official)))))
+
+# ::id 2
+# ::snt No injuries were reported , said Petty Officer Brian Lincoln , of the U.S. Coast Guard's Miami office
+(x6 / say-01
+	:ARG1 (x4 / report-01
+		:ARG1 (x2 / injure-01))
+	:ARG0 (x9 / newspaper
+		:name (n / name
+			:op1 "Brian"
+			:op2 "Lincoln")
+		:ARG0-of (x7 / petty)
+		:ARG0-of (x8 / officer)
+		:ARG0-of (x19 / office
+			:poss (x15 / military
+				:name (n1 / name
+					:op1 "Coast"
+					:op2 "Guard"))
+			:mod (x18 / country
+				:name (n2 / name
+					:op1 "Miami")))))
+
+# ::id 3
+# ::snt The Scandinavian Star was about 35 miles off Isla Mujeres , a Mexican island north of the tourist resort Cancun in the Yucatan peninsula , said Coast Guard Lt. Jim Mazzonna in Miami
+(x26 / say-01
+	:ARG0 (x3 / star-01
+		:mod (x2 / scandinavian))
+	:ARG2 (x7 / distance-quantity
+		:unit (m / mile)
+		:null_edge (x5 / about
+			:null_edge 35)
+		:null_edge (x8 / off
+			:null_edge (x14 / island
+				:mod (x10 / country
+					:name (n1 / name
+						:op1 "Mujeres")
+					:mod (x9 / country
+						:name (n3 / name
+							:op1 "Isla")))
+				:mod (x13 / country
+					:name (n2 / name
+						:op1 "Mexico"))
+				:mod (x19 / resort
+					:null_edge (x15 / null_tag)
+					:mod (x18 / person
+						:ARG0-of (t / tour-01))
+					:location (x20 / country
+						:name (n4 / name
+							:op1 "Cancun")))
+				:location (x24 / peninsula
+					:mod (x23 / country
+						:name (n5 / name
+							:op1 "Yucatan")))
+				:name (x30 / name
+					:op1 "Jim"
+					:op2 "Mazzonna"
+					:ARG0-of (x27 / have-org-role-91
+						:ARG1 (m1 / military
+							:name (n6 / name
+								:op1 "Coast")))
+					:ARG0-of (x29 / lt.
+						:ARG1 (x28 / organization
+							:name (n7 / name
+								:op1 "Guard")))))))
+	:location (x33 / country
+		:name (n / name
+			:op1 "Miami")))
+
+# ::id 4
+# ::snt All more than 700 people  know is that the ship's captain ... is completely out of fire-fighting equipment and has requested additional fire-fighting equipment such as foam , water and CO2 , said Lincoln , referring to carbon dioxide
+(x34 / say-01
+	:ARG1 (x6 / know-01
+		:ARG1 (x1 / all
+			:quant (x2 / more-than
+				:op1 700))
+		:ARG0 (x12 / have-org-role-91
+			:ARG2 (c / captain)
+			:ARG1 (x10 / ship)
+			:ARG1 (x19 / equipment
+				:mod (x18 / fire-fighting
+					:degree (x15 / complete)))
+			:topic (x20 / and
+				:op2 (x22 / request-01
+					:ARG1 (x25 / equipment
+						:mod (x23 / additional)
+						:mod (x24 / fire-fighting)
+						:example (x31 / and
+							:op1 (x28 / foam)
+							:op2 (x30 / water)))))))
+	:ARG1 (x37 / refer-01
+		:ARG0 (x35 / person
+			:name (n / name
+				:op1 "Lincoln"))
+		:ARG1 (x40 / dioxide
+			:mod (x39 / carbon))))
+
+# ::id 5
+# ::snt Coast Guard cutters , the Canada Star cruise ship and the vessel Vera Cruz stood by to assist in evacuating passengers , Lincoln said
+(x24 / say-01
+	:ARG1 (x15 / stand-01
+		:ARG0 (x10 / and
+			:op1 (x3 / cutter
+				:poss (x2 / organization
+					:name (n1 / name
+						:op1 "Guard")
+					:mod (x1 / have-org-role-91
+						:ARG1 (m / military
+							:name (n3 / name
+								:op1 "Coast"))))
+				:name (x13 / name
+					:op1 "Vera"
+					:op2 "Cruz"
+					:ARG0-of (x12 / vessel)))
+			:op2 (x9 / ship
+				:mod (x7 / newspaper
+					:name (n2 / name
+						:op1 "Star"))
+				:mod (x8 / cruise)))
+		:ARG1 (x18 / assist-01
+			:ARG0 x10
+			:ARG2 (x20 / evacuate
+				:ARG1 (x21 / passenger))))
+	:ARG0 (x23 / person
+		:name (n / name
+			:op1 "Lincoln")))
+
+# ::id 6
+# ::snt 
+(x10 / say-01
+	:ARG0 (x5 / have-org-role-91
+		:ARG2 (c / captain)
+		:ARG1 (x3 / organization
+			:name (n / name
+				:op1 "Star"))
+		:name (x7 / name
+			:op1 "Jens"
+			:op2 "Thorn"))
+	:time (x11 / late)
+	:ARG1 (x23 / and
+		:op1 (x15 / appear-02
+			:ARG1 (x14 / fire-01)
+			:ARG1 (x21 / control-01)
+			:ARG1 (x27 / reason
+				:polarity -
+				:purpose (x29 / evacuate)))))
+
+# ::id 7
+# ::snt Coast Guard Petty Officer Richard Esterline said 707 people , including crew , were aboard the ship
+(x7 / say-01
+	:ARG0 (x6 / person
+		:name (n / name
+			:op1 "Esterline")
+		:null_edge (x1 / coast)
+		:null_edge (x2 / guard)
+		:null_edge (x4 / officer
+			:mod (x3 / petty))
+		:null_edge (x5 / null_tag))
+	:time (x8 / 707
+		:mod (x12 / crew
+			:poss (x17 / ship))))
+
+# ::id 8
+# ::snt The Scandinavian Star , owned by SeaEscape Ltd. , offers daily cruises to nowhere out of The Scandinavian Star  port in St. Petersburg , records show
+(x10 / offer-01
+	:ARG0 (x3 / star-01
+		:mod (x2 / scandinavian)
+		:ARG1-of (x5 / own-01
+			:ARG0 (x7 / government-organization
+				:name (n / name
+					:op1 "SeaEscape"
+					:op2 "Ltd."))))
+	:ARG1 (x12 / cruise
+		:ARG2 (x14 / nowhere))
+	:ARG1 (x20 / port
+		:mod (x18 / scandinavian)
+		:null_edge (x19 / null_tag)
+		:ARG1-of (x26 / show-01
+			:location (x22 / country
+				:name (n1 / name
+					:op1 "St."))
+			:mod (x25 / record))))
+

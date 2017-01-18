@@ -1,0 +1,4208 @@
+# ::id 1
+# ::snt MOSCOW For the first time since the overthrow of the Czar in 1917 , the Soviet Union has been seized by the collective will of the first time since the overthrow of the Czar in 1917  people
+(x20 / seize-01
+	:ARG1 (x1 / country
+		:name (n / name
+			:op1 "MOSCOW"))
+	:ARG2 (x8 / overthrow-01
+		:ARG1 (x11 / czar)
+		:time (x13 / date-entity
+			:year 1917))
+	:ARG1 (x16 / country
+		:name (n1 / name
+			:op1 "Soviet"
+			:op2 "Union"))
+	:ARG2 (x31 / overthrow-01
+		:mod (x23 / collective)
+		:ARG1 (x34 / czar)
+		:time (x36 / date-entity
+			:year 1917)))
+
+# ::id 2
+# ::snt In a dramatic climax to the coup in Moscow , the hard-liners who took power Monday were forced to capitulate yesterday by defiant protesters and a determined Russian Parliament that held firm against tanks and threats
+(x18 / force-01
+	:ARG2 (x4 / climax
+		:mod (x3 / dramatic)
+		:ARG1 (x7 / coup)
+		:location (x9 / city
+			:name (n / name
+				:op1 "Moscow")))
+	:ARG1 (x12 / hard-liner
+		:ARG0-of (x14 / take-01
+			:ARG1 (x15 / power)
+			:time (xap0 / date-entity
+				:weekday (x16 / monday))))
+	:ARG2 (x20 / capitulate
+		:ARG0 x12
+		:time (x21 / yesterday)
+		:instrument (x25 / and
+			:op1 (x24 / person
+				:ARG0-of (p / protest-01)
+				:mod (x23 / defiant))
+			:op2 (x27 / determine-01
+				:ARG1 (x35 / and
+					:op1 (x34 / tank)
+					:op2 (x36 / threaten-01))))))
+
+# ::id 3
+# ::snt Boris Yeltsin , the president of the Russian republic , led that resistance from the embattled parliament building in Moscow and seemed to tower over the hard-liners during the tense standoff
+(x21 / and
+	:op1 (x11 / lead-02
+		:ARG0 (x1 / newspaper
+			:name (n / name
+				:op1 "Boris"
+				:op2 "Yeltsin")
+			:ARG0-of (x5 / have-org-role-91
+				:ARG2 (p / president)
+				:ARG1 (x9 / republic
+					:mod (x8 / country
+						:name (n2 / name
+							:op1 "Russia")))))
+		:ARG1 (x13 / resist-01
+			:mod (x12 / that))
+		:ARG2 (x18 / building
+			:mod (x17 / parliament
+				:mod (x16 / embattled))
+			:location (x20 / city
+				:name (n1 / name
+					:op1 "Moscow"))))
+	:op2 (x22 / seem-01
+		:ARG1 (x24 / tower
+			:ARG2 (x27 / hard-liner)
+			:time (x31 / standoff
+				:ARG1-of (x30 / tense-01)))))
+
+# ::id 4
+# ::snt the unabashedly pro-Western Mr. Yeltsin  now emerges as easily the most powerful man in the nation
+(x7 / emerge-01
+	:ARG0 (x5 / person
+		:name (n / name
+			:op1 "Yeltsin")
+		:null_edge (x2 / unabashedly)
+		:null_edge (x4 / null_tag))
+	:time (x6 / now)
+	:ARG2 (x13 / man
+		:mod (x12 / powerful
+			:degree (x11 / most))
+		:location (x16 / nation)))
+
+# ::id 5
+# ::snt By rallying the general public and parts of the army against the eight leaders of the coup , Mr. Yeltsin showed that democratic changes ushered in by President Mikhail Gorbachev over the past six years have had an enormous and perhaps irreversible effect on the U.S.S.R.
+(x21 / show-01
+	:instrument (x2 / rally-01
+		:ARG1 (x6 / and
+			:op1 (x5 / public
+				:mod (x4 / general)
+				:ARG1 (x10 / army)))
+		:ARG1 (x14 / person
+			:ARG0-of (l / lead-02)
+			:quant 8
+			:ARG1 (x17 / coup)))
+	:ARG0 (x20 / person
+		:name (n / name
+			:op1 "Yeltsin")
+		:null_edge (x19 / null_tag))
+	:ARG0 (x37 / person
+		:ARG0-of (h / have-org-role-91)
+		:ARG0 (x24 / change-01
+			:mod (x23 / democracy)
+			:ARG1-of (x25 / usher-01
+				:ARG0 (x29 / name
+					:op1 "Mikhail"
+					:op2 "Gorbachev"
+					:ARG0-of (x28 / have-org-role-91
+						:ARG2 (p / president)))
+				:time (x31 / over
+					:op1 (x35 / temporal-quantity
+						:unit (y / year)
+						:mod (x33 / past)
+						:quant 6))))
+		:ARG1 (x43 / effect-01
+			:ARG1 (x40 / and
+				:op1 (x39 / enormous)
+				:op2 (x42 / irreversible))
+			:ARG1 (x46 / country
+				:name (n1 / name
+					:op1 "U.S.S.R.")))))
+
+# ::id 6
+# ::snt The defeat of the hard-liners is widely expected to speed efforts to transform the Soviet Union into a stronger democracy based on a new federal system of decentralized power and market economics
+(x8 / expect-01
+	:ARG1 (x2 / defeat-01
+		:ARG1 (x5 / hard-liner))
+	:degree (x7 / wide)
+	:ARG1 (x10 / speed-02
+		:ARG1 (x11 / effort
+			:purpose (x13 / transform-01
+				:ARG1 (x15 / country
+					:name (n / name
+						:op1 "Soviet"
+						:op2 "Union"))))
+		:ARG1 (x20 / democracy
+			:mod (x19 / strong)
+			:ARG1-of (x21 / base-02
+				:ARG2 (x26 / system
+					:mod (x24 / new)
+					:mod (x25 / government-organization
+						:name (n1 / name
+							:op1 "federal"))
+					:purpose (x30 / and
+						:op1 (x29 / power
+							:ARG1-of (x28 / decentralized))
+						:op2 (x32 / economics
+							:mod (x31 / market))))))))
+
+# ::id 7
+# ::snt The defeat of the hard-liners  also provides a unique opportunity for the nation's legitimate leaders to purge the remains of the old totalitarian system
+(x7 / provide-01
+	:ARG0 (x2 / defeat-01
+		:ARG1 (x5 / hard-liner))
+	:mod (x6 / also)
+	:ARG1 (x10 / opportunity
+		:mod (x9 / unique)
+		:mod (x18 / purge
+			:ARG2 (x16 / person
+				:ARG0-of (l / lead-02)
+				:ARG1 (x13 / nation)
+				:mod (x15 / legitimate))
+			:ARG1 (x20 / remains
+				:ARG1 (x25 / system
+					:mod (x23 / old)
+					:mod (x24 / totalitarian))))))
+
+# ::id 8
+# ::snt The failure of the coup marks the Soviet Union's transformation into a kind of modern European society , says Francis Fukuyama , a former State Department official who has written about the meaning of the collapse of communism
+(x6 / mark-01
+	:ARG0 (x2 / fail-01
+		:ARG1 (x5 / coup))
+	:ARG1 (x11 / transform-01
+		:ARG1 (x8 / country
+			:name (n / name
+				:op1 "Soviet"
+				:op2 "Union"))
+		:mod (x14 / kind
+			:name (x21 / name
+				:op1 "Francis"
+				:op2 "Fukuyama"
+				:ARG0-of (x28 / have-org-role-91
+					:ARG2 (o / official)
+					:ARG1 (x20 / say-01
+						:ARG1 (x18 / society
+							:mod (x16 / modern)
+							:mod (x17 / continent
+								:name (n1 / name
+									:op1 "European"))))
+					:mod (x25 / former)
+					:null_edge (x26 / null_tag)
+					:null_edge (x27 / null_tag)
+					:ARG1-of (x31 / write-01
+						:ARG0-of (x34 / mean-01
+							:ARG1 (x37 / collapse-01
+								:ARG1 (x39 / communism)))))))))
+
+# ::id 9
+# ::snt The failure of the coup  proves that Gorbachev's revolution has not been just a revolution of elites , that there is been this spontaneous development of a political consensus among Russians
+(x6 / prove-01
+	:ARG0 (x2 / fail-01
+		:ARG1 (x5 / coup))
+	:ARG1 (x16 / revolution
+		:domain (x10 / revolution
+			:ARG0 (x8 / person
+				:name (n / name
+					:op1 "Gorbachev")))
+		:mod (x14 / just)
+		:ARG0 (x18 / elite)
+		:ARG1 (x26 / develop-01
+			:mod (x24 / this)
+			:mod (x25 / spontaneous)
+			:ARG1 (x30 / consensus
+				:mod (x29 / politics)
+				:ARG0 (x32 / person
+					:mod (c / country
+						:name (n1 / name
+							:op1 "Russians")))))))
+
+# ::id 10
+# ::snt But while jubilation filled the streets and squares of cities throughout the country , and while columns of armored vehicles retreated from Moscow's center , many people were cautioning that difficult times lie ahead : The hard-liners may have been ejected , many people  say , but the vast problems of reviving the moribund Soviet economy and streamlining its central government remain
+(x1 / contrast-01
+	:ARG2 (x39 / possible
+		:ARG1-of (x48 / contrast-01
+			:ARG1 (x42 / eject-01
+				:ARG1 (x15 / and
+					:op1 (x4 / fill-01
+						:ARG0 (x3 / jubilation)
+						:ARG1 (x7 / and
+							:op1 (x6 / street
+								:poss (x10 / city))
+							:op2 (x8 / square)
+							:op1 (x11 / throughout
+								:op1 (x13 / country))))
+					:op2 (x30 / caution-01
+						:ARG0 x3
+						:time (x21 / retreat
+							:ARG1 (x17 / column
+								:ARG1 (x20 / vehicle
+									:ARG1-of (x19 / armor-01)))
+							:ARG2 (x25 / center
+								:location (x23 / city
+									:name (n / name
+										:op1 "Moscow"))))
+						:quant (x27 / many)
+						:ARG1 (x34 / lie-01
+							:ARG1 (x32 / difficult)
+							:ARG2 (x35 / ahead))))
+				:ARG1 (x38 / hard-liner))
+			:ARG1 (x46 / say-01
+				:ARG1 (x44 / many))
+			:ARG2 (x63 / remain-01
+				:ARG1 x38
+				:ARG1 (x51 / problem
+					:mod (x50 / vast)
+					:topic (x58 / and
+						:op1 (x53 / revive-01
+							:ARG1 (x57 / economy
+								:mod (x55 / moribund)
+								:mod (xap1 / country
+									:ARG0-of (xap0 / name
+										:op1 "Soviet"))))
+						:op2 (x59 / streamline
+							:ARG1 (x62 / government-organization
+								:ARG0-of (g / govern-01)
+								:mod (x61 / central)))))))))
+
+# ::id 11
+# ::snt Both could take years to accomplish and could usher in new periods of unrest , particularly in Soviet republics eager to exercise autonomy
+(x / xconcept
+	:x (x2 / possible
+		:domain (x3 / take-01
+			:ARG0 (x1 / both)
+			:ARG1 (x4 / year)
+			:purpose (x6 / accomplish-01)
+			:null_edge (x8 / possible
+				:domain (x9 / usher-01
+					:ARG1 (x14 / unrest
+						:mod (x11 / new)
+						:location (x19 / republic
+							:mod (x16 / particular)
+							:mod (x20 / eager-41
+								:ARG1 (x23 / autonomy))
+							:mod (xap1 / country
+								:ARG0-of (xap0 / name
+									:op1 (x18 / country
+										:name (n / name
+											:op1 "Soviet"))))))))))
+	:x (x7 / and))
+
+# ::id 12
+# ::snt There is no stability in the country at the moment , we recognize that fact , said Foreign Minister Alexander Bessmertnykh
+(x17 / say-01
+	:ARG1 (x4 / stability
+		:polarity -
+		:location (x7 / country)
+		:ARG1-of (x13 / recognize-02
+			:time (x10 / moment)
+			:ARG0 (x12 / we)
+			:ARG1 (x15 / fact)))
+	:ARG0 (x20 / newspaper
+		:name (n / name
+			:op1 "Alexander"
+			:op2 "Bessmertnykh")
+		:ARG0-of (x18 / foreign)
+		:ARG0-of (x19 / have-org-role-91
+			:ARG2 (m / minister))))
+
+# ::id 13
+# ::snt Restoring coherence to the economy and government is the greatest task facing us
+(x11 / task-01
+	:domain (x1 / restore-01
+		:ARG1 (x2 / coherence)
+		:ARG2 (x6 / and
+			:op1 (x5 / economy)
+			:op2 (x7 / government-organization
+				:ARG0-of (g / govern-01))))
+	:mod (x10 / great
+		:degree (m / most))
+	:domain (x12 / face-01))
+
+# ::id 14
+# ::snt Mr. Gorbachev's future role in bringing about stability is uncertain
+(x11 / uncertain
+	:domain (x5 / role
+		:poss (x2 / person
+			:name (n / name
+				:op1 "Gorbachev")
+			:null_edge (x1 / null_tag))
+		:time (x4 / future)
+		:ARG0-of (x7 / bring-01
+			:ARG0 x2
+			:ARG1 (x9 / stability))))
+
+# ::id 15
+# ::snt Late last night , Soviet President Mikhail Gorbachev  returned to Moscow from the Crimea , where Soviet President Mikhail Gorbachev  was vacationing when the coup occurred and where Soviet President Mikhail Gorbachev  spent the last three days under house arrest
+(x9 / return-01
+	:time (x3 / night
+		:time (x1 / late)
+		:mod (x2 / last))
+	:ARG1 (x7 / newspaper
+		:name (n / name
+			:op1 "Mikhail"
+			:op2 "Gorbachev")
+		:ARG0-of (x6 / have-org-role-91
+			:ARG2 (p / president)
+			:ARG1 (x5 / country
+				:name (n3 / name
+					:op1 "Soviet"))))
+	:ARG4 (x11 / city
+		:name (n1 / name
+			:op1 "Moscow"))
+	:ARG4 (x14 / country
+		:name (n2 / name
+			:op1 "Crimea")
+		:location-of (x27 / and
+			:op1 (x22 / vacation-01
+				:ARG0 (x19 / newspaper
+					:name (n4 / name
+						:op1 "Mikhail"
+						:op2 "Gorbachev")
+					:ARG0-of (x18 / have-org-role-91
+						:ARG2 (p1 / president)
+						:ARG1 (x17 / country
+							:name (n6 / name
+								:op1 "Soviet"))))
+				:ARG1 (x25 / coup))
+			:op2 (x33 / spend-00
+				:ARG0 (x31 / newspaper
+					:name (n5 / name
+						:op1 "Mikhail"
+						:op2 "Gorbachev")
+					:ARG0-of (x30 / have-org-role-91
+						:ARG2 (p2 / president))
+					:ARG0-of (xap1 / country
+						:ARG0-of (xap0 / name
+							:op1 "Soviet")))
+				:ARG1 (x37 / temporal-quantity
+					:unit (d / day)
+					:mod (x35 / last)
+					:quant 3)
+				:time (x40 / arrest-01
+					:mod (x39 / house))))))
+
+# ::id 16
+# ::snt On arriving at the Moscow airport , Mr. Gorbachev stepped down the stairs from Soviet President Mikhail Gorbachev  plane , shook hands with waiting aides and was taken by motorcade to his home
+(x26 / and
+	:op1 (x10 / step-01
+		:ARG2 (x2 / arrive-01
+			:ARG4 (x6 / airport
+				:location (x5 / city
+					:name (n1 / name
+						:op1 "Moscow"))))
+		:ARG0 (x9 / person
+			:name (n / name
+				:op1 "Gorbachev")
+			:null_edge (x8 / null_tag))
+		:ARG1 (x13 / stair)
+		:ARG2 (x17 / name
+			:op1 "Mikhail"
+			:op2 "Gorbachev"
+			:ARG0-of (x16 / have-org-role-91
+				:ARG2 (p / president)
+				:ARG1 (x15 / country
+					:name (n2 / name
+						:op1 "Soviet"))))
+		:ARG1 (x19 / plane))
+	:op2 (x21 / shake-03
+		:ARG0 x9
+		:ARG1 (x22 / hand)
+		:ARG1 (x25 / have-org-role-91
+			:ARG2 (a / aide)
+			:ARG0-of (x24 / wait-01)))
+	:op2 (x28 / take-01
+		:ARG1 x9
+		:ARG0 (x30 / motorcade)
+		:ARG4 (x33 / home)))
+
+# ::id 17
+# ::snt In a subsequent television broadcast , a tanned and vigorous-looking Mr. Gorbachev called the failure of the coup a great victory for perestroika
+(x13 / call-03
+	:ARG1 (x9 / and
+		:op1 (x5 / broadcast-01
+			:medium (x4 / television
+				:mod (x3 / subsequent)))
+		:op1 (x8 / tan)
+		:op2 (x10 / vigorous-looking)
+		:op1 (x12 / person
+			:name (n / name
+				:op1 "Gorbachev")
+			:null_edge (x11 / null_tag)))
+	:ARG1 (x21 / win-01
+		:op (v / victory)
+		:ARG0 x9
+		:ARG0 (x15 / fail-01
+			:ARG1 (x18 / coup))
+		:mod (x20 / great)
+		:prep-for (x23 / perestroika)))
+
+# ::id 18
+# ::snt a tanned and vigorous-looking Mr. Gorbachev  proclaimed a tanned and vigorous-looking Mr. Gorbachev  respect for the Soviet people and , specifically , Mr. Yeltsin and said a tanned and vigorous-looking Mr. Gorbachev  had been surrounded by troops during his house arrest
+(x25 / and
+	:op1 (x7 / proclaim
+		:ARG1 (x3 / and
+			:op1 (x2 / tan)
+			:op2 (x4 / vigorous-looking)
+			:op1 (x6 / person
+				:name (n / name
+					:op1 "Gorbachev")
+				:null_edge (x5 / null_tag)))
+		:ARG1 (x14 / respect-01
+			:ARG0 (x10 / and
+				:op1 (x9 / tan)
+				:op2 (x11 / vigorous-looking))
+			:null_edge (x12 / null_tag))
+		:ARG1 (x19 / and
+			:manner (x21 / specific)
+			:op2 (x24 / person
+				:name (n1 / name
+					:op1 "Yeltsin")
+				:null_edge (x23 / null_tag))
+			:op2 (xap2 / person
+				:ARG0-of (xap1 / country
+					:ARG0-of (xap0 / name
+						:op1 "Soviet")))))
+	:op2 (x26 / say-01
+		:ARG1 (x35 / surround-01
+			:ARG0 (x29 / and
+				:op1 (x28 / tan)
+				:op2 (x30 / vigorous-looking))
+			:ARG1 (x32 / person
+				:name (n2 / name
+					:op1 "Gorbachev")
+				:null_edge (x31 / null_tag))
+			:ARG0 (x37 / troop
+				:time (x41 / arrest-01
+					:mod (x40 / house))))))
+
+# ::id 19
+# ::snt the Soviet people  wanted to break the will of the president and his family , a tanned and vigorous-looking Mr. Gorbachev  said
+(x22 / say-01
+	:ARG1 (x18 / and
+		:op1 (x4 / want-01
+			:ARG1 (x6 / break-06
+				:ARG1 (x12 / and
+					:op2 (x14 / family)
+					:op1 (xap2 / person
+						:ARG0-of (x11 / have-org-role-91
+							:ARG2 (p / president)))))
+			:ARG1 (xap1 / country
+				:ARG0-of (xap0 / name
+					:op1 "Soviet")))
+		:op1 (x17 / tan)
+		:op2 (x19 / vigorous-looking)
+		:op1 (x21 / person
+			:name (n / name
+				:op1 "Gorbachev")
+			:null_edge (x20 / null_tag))))
+
+# ::id 20
+# ::snt But the Soviet people  lost , the will of the president and his family  just did not happen
+(x1 / contrast-01
+	:ARG2 (x12 / and
+		:op1 (x5 / lose-02
+			:ARG1 (x11 / have-org-role-91
+				:ARG2 (p / president))
+			:ARG1 (xap1 / country
+				:ARG0-of (xap0 / name
+					:op1 "Soviet")))
+		:op2 (x18 / happen-01
+			:ARG1 (x14 / family)
+			:mod (x15 / just))))
+
+# ::id 21
+# ::snt Mr. Gorbachev said Soviet President Mikhail Gorbachev  would describe the details of Soviet President Mikhail Gorbachev  house arrest at a later time when Soviet President Mikhail Gorbachev  convenes a broad conference of Soviet leaders
+(x3 / say-01
+	:ARG0 (x2 / person
+		:name (n / name
+			:op1 "Gorbachev")
+		:null_edge (x1 / null_tag))
+	:ARG1 (x9 / describe-01
+		:ARG0 (x6 / newspaper
+			:name (n1 / name
+				:op1 "Mikhail"
+				:op2 "Gorbachev")
+			:ARG0-of (x5 / have-org-role-91
+				:ARG2 (p / president)
+				:ARG1 (x4 / country
+					:name (n3 / name
+						:op1 "Soviet"))))
+		:ARG1 (x11 / detail-01
+			:name (x15 / name
+				:op1 "Mikhail"
+				:op2 "Gorbachev"
+				:ARG0-of (x14 / have-org-role-91
+					:ARG2 (p1 / president)
+					:ARG1 (x13 / country
+						:name (n4 / name
+							:op1 "Soviet")))))
+		:ARG1 (x18 / arrest-01
+			:mod (x17 / house))
+		:ARG1 (x28 / convene-01
+			:time (x21 / late)
+			:ARG0 (x26 / newspaper
+				:name (n2 / name
+					:op1 "Mikhail"
+					:op2 "Gorbachev")
+				:ARG0-of (x25 / have-org-role-91
+					:ARG2 (p2 / president)
+					:ARG1 (x24 / country
+						:name (n5 / name
+							:op1 "Soviet"))))
+			:ARG1 (x31 / conference
+				:mod (x30 / broad)
+				:topic (x34 / person
+					:ARG0-of (l / lead-02)
+					:mod (xap1 / country
+						:ARG0-of (xap0 / name
+							:op1 "Soviet")))))))
+
+# ::id 22
+# ::snt But the 60-year-old Soviet president may be surprised by the circumstances that greet President  today , for the balance of political power in the country has shifted clearly in Mr. Yeltsin's favor
+(x1 / contrast-01
+	:ARG2 (x8 / surprise-01
+		:mod (x6 / possible)
+		:ARG0 (x11 / circumstance
+			:ARG0-of (x13 / greet-01
+				:ARG1 (x14 / have-org-role-91
+					:ARG2 (p1 / president))
+				:time (x15 / today)
+				:ARG1-of (xap2 / cause-01
+					:ARG1 (x27 / shift-01
+						:ARG1 (x19 / balance
+							:ARG1 (x22 / power
+								:mod (x21 / politics))
+							:location (x25 / country))
+						:manner (x28 / clear)
+						:ARG2 (x33 / favor-01
+							:poss (x31 / person
+								:name (n1 / name
+									:op1 "Yeltsin")
+								:null_edge (x30 / null_tag)))))))
+		:ARG0 (xap1 / country
+			:ARG0-of (x5 / have-org-role-91
+				:ARG2 (p / president)
+				:mod (x3 / person
+					:name (n / name
+						:op1 "60-year-old")))
+			:ARG0-of (xap0 / name
+				:op1 "Soviet"))))
+
+# ::id 23
+# ::snt Thanks to President  popular mandate , the feisty Mr. Yeltsin was able to withstand the very forces that deposed Mr. Gorbachev , Soviet President Mikhail Gorbachev  longtime rival
+(x12 / possible
+	:null_edge (x1 / thank-01
+		:ARG2 (x5 / mandate
+			:null_edge (x3 / have-org-role-91
+				:ARG2 (p / president))
+			:mod (x4 / popular-41)))
+	:domain (x14 / withstand-01
+		:ARG0 (x10 / person
+			:name (n / name
+				:op1 "Yeltsin")
+			:null_edge (x8 / feisty)
+			:null_edge (x9 / null_tag))
+		:ARG1 (x17 / force
+			:mod (x16 / very)
+			:ARG0-of (x19 / depose-01
+				:ARG1 (x21 / person
+					:name (n1 / name
+						:op1 "Gorbachev")
+					:null_edge (x20 / null_tag)
+					:ARG0-of (x28 / rival
+						:name (x25 / name
+							:op1 "Mikhail"
+							:op2 "Gorbachev"
+							:ARG0-of (x24 / have-org-role-91
+								:ARG2 (p1 / president)
+								:ARG1 (x23 / country
+									:name (n2 / name
+										:op1 "Soviet"))))
+						:mod (x27 / longtime)))))))
+
+# ::id 24
+# ::snt As a result , many people in Moscow are starting to talk about Mr. Gorbachev in the past tense , predicting Mr. Gorbachev in the past tense  will play a more symbolic than substantive role in the future
+(x3 / result-01
+	:ARG1 (x10 / start-01
+		:ARG0 (x6 / people
+			:null_edge (x5 / many)
+			:location (x8 / city
+				:name (n / name
+					:op1 "Moscow")))
+		:ARG1 (x12 / talk-01
+			:ARG0 x6
+			:ARG2 (x15 / person
+				:name (n1 / name
+					:op1 "Gorbachev")
+				:null_edge (x14 / null_tag))
+			:manner (x19 / tense-01
+				:time (x18 / past))
+			:ARG1 (x21 / predict-01
+				:ARG0 x15
+				:ARG1 (x29 / play-02
+					:ARG0 (x23 / person
+						:name (n2 / name
+							:op1 "Gorbachev")
+						:null_edge (x22 / null_tag))
+					:ARG1-of (x27 / tense-01
+						:time (x26 / past))
+					:ARG1 (x35 / role
+						:mod (x32 / symbolize-01
+							:degree (x31 / more))
+						:mod (x34 / substantive)
+						:time (x38 / future)))))))
+
+# ::id 25
+# ::snt Some even contend that he will stay on only briefly as an interim figure , and then be forced out by public opinion
+(x3 / contend-01
+	:ARG0 (x1 / some)
+	:mod (x2 / even)
+	:ARG1 (x16 / and
+		:op2 (x19 / force-01
+			:ARG0 (x5 / he)
+			:ARG0 (x23 / opine-01
+				:ARG0 (x22 / public)))
+		:op2 (xap0 / obligate-01
+			:ARG1 (x7 / stay-01
+				:ARG1 x5
+				:ARG1 (x10 / briefly
+					:mod (x9 / only))
+				:ARG1 (x14 / figure
+					:mod (x13 / interim))))))
+
+# ::id 26
+# ::snt Mr. Gorbachev himself helped bring about the coup , these people argue , because Mr. Gorbachev in the past tense  elevated most of its ringleaders to high posts in Mr. Gorbachev in the past tense  government and kept its ringleaders  there despite dire warnings from both Mr. Gorbachev in the past tense  detractors and supporters
+(x4 / help-01
+	:ARG0 (x2 / person
+		:name (n / name
+			:op1 "Gorbachev")
+		:null_edge (x1 / null_tag))
+	:ARG1 (x5 / bring-01
+		:ARG1 (x8 / coup))
+	:null_edge (x12 / argue-02)
+	:ARG1-of (x14 / cause-01
+		:ARG0 (x21 / elevated
+			:ARG0 (x16 / person
+				:name (n1 / name
+					:op1 "Gorbachev")
+				:null_edge (x15 / null_tag)
+				:ARG0-of (x36 / government-organization
+					:ARG0-of (g / govern-01)
+					:time (x34 / past)
+					:ARG1 (x35 / tense-01)))
+			:ARG1-of (x20 / tense-01
+				:time (x19 / past))
+			:ARG1 (x28 / post-01
+				:mod (x27 / high))
+			:ARG0 (x31 / person
+				:name (n2 / name
+					:op1 "Gorbachev")
+				:null_edge (x30 / null_tag))
+			:null_edge (x37 / and
+				:op2 (x38 / keep-01
+					:ARG0 x16
+					:ARG1 (x40 / ring)
+					:null_edge (x41 / there)
+					:concession (x44 / warn-01
+						:mod (x43 / dire)
+						:mod (x46 / both)
+						:ARG1 (x54 / and
+							:null_edge (x47 / null_tag)
+							:op1 (x53 / detractor
+								:time (x51 / past)
+								:mod (x52 / tense-01))
+							:op2 (x55 / person
+								:ARG0-of (s / support-01))))))
+			:ARG1 (xap0 / lead-02
+				:degree (x22 / most)
+				:ARG1 (x25 / ring)))))
+
+# ::id 27
+# ::snt Gorbachev created the possibilities for such a coup to take place , says Valery Lunin , a chemistry professor at Moscow University and member of the Russian Parliament
+(x13 / say-01
+	:ARG1 (x2 / create-01
+		:ARG0 (x1 / person
+			:name (n / name
+				:op1 "Gorbachev"))
+		:ARG1 (x4 / possible)
+		:purpose (x8 / coup
+			:mod (x6 / such)
+			:ARG1-of (x10 / take-01
+				:ARG0 (x14 / name
+					:op1 "Valery"
+					:op2 "Lunin"
+					:ARG0-of (x19 / have-org-role-91
+						:ARG2 (p / professor)
+						:mod (x18 / chemistry)
+						:topic (x23 / and
+							:op3 (x24 / member
+								:ARG1 (x28 / government-organization
+									:name (n1 / name
+										:op1 "Parliament")
+									:ARG1 (x27 / country
+										:name (n2 / name
+											:op1 "Russia")))))))))))
+
+# ::id 28
+# ::snt Soviet President Mikhail Gorbachev  should resign , although perhaps not at once , and allow elections to be held
+(x5 / recommend-01
+	:ARG1 (x6 / resign-01
+		:ARG0 (x3 / newspaper
+			:name (n / name
+				:op1 "Mikhail"
+				:op2 "Gorbachev")
+			:ARG0-of (x2 / have-org-role-91
+				:ARG2 (p / president)
+				:ARG1 (x1 / country
+					:name (n1 / name
+						:op1 "Soviet"))))
+		:null_edge (x10 / not
+			:null_edge (x12 / once))
+		:manner (x15 / allow-01
+			:ARG1 (x19 / hold-04
+				:ARG1 (x16 / elect-01))))
+	:ARG1 (x14 / and))
+
+# ::id 29
+# ::snt Mr. Gorbachev's future now rests largely in Soviet President Mikhail Gorbachev  own hands
+(x6 / rest-01
+	:ARG1 (x4 / future
+		:poss (x2 / person
+			:name (n / name
+				:op1 "Gorbachev")
+			:null_edge (x1 / null_tag)))
+	:time (x5 / now)
+	:extent (x7 / largely)
+	:ARG2 (x14 / hand
+		:name (x11 / name
+			:op1 "Mikhail"
+			:op2 "Gorbachev"
+			:ARG0-of (x10 / have-org-role-91
+				:ARG2 (p / president)
+				:ARG1 (x9 / country
+					:name (n1 / name
+						:op1 "Soviet"))))))
+
+# ::id 30
+# ::snt If Soviet President Mikhail Gorbachev  acts decisively to punish the leaders of the coup and purge Soviet President Mikhail Gorbachev  administration of their supporters , Soviet President Mikhail Gorbachev  could regain some of Soviet President Mikhail Gorbachev  popularity , which eroded as the economy worsened in recent years
+(x30 / possible
+	:domain (x31 / regain-01
+		:ARG1 (x15 / and
+			:op2 (x6 / act-01
+				:ARG0 (x4 / newspaper
+					:name (n1 / name
+						:op1 "Mikhail"
+						:op2 "Gorbachev")
+					:ARG0-of (x3 / have-org-role-91
+						:ARG2 (p2 / president)
+						:ARG1 (x2 / country
+							:name (n4 / name
+								:op1 "Soviet"))))
+				:manner (x7 / decisive)
+				:name (x19 / name
+					:op1 "Mikhail"
+					:op2 "Gorbachev"
+					:ARG0-of (x18 / have-org-role-91
+						:ARG2 (p3 / president))
+					:mod (xap1 / country
+						:ARG0-of (xap0 / name
+							:op1 "Soviet"))))
+			:op1 (x9 / punish-01
+				:ARG1 (x11 / person
+					:ARG0-of (l / lead-02)
+					:ARG1 (x14 / coup)))
+			:op2 (x16 / purge
+				:ARG1 (xap2 / government-organization
+					:ARG0-of (x21 / administrate-01
+						:ARG1 (x24 / person
+							:ARG0-of (s / support-01))))))
+		:ARG0 (x28 / newspaper
+			:name (n / name
+				:op1 "Mikhail"
+				:op2 "Gorbachev")
+			:ARG0-of (x27 / have-org-role-91
+				:ARG2 (p / president)
+				:ARG1 (x26 / country
+					:name (n2 / name
+						:op1 "Soviet"))))
+		:ARG1 (x38 / popularity
+			:poss (x36 / name
+				:op1 "Mikhail"
+				:op2 "Gorbachev"
+				:ARG0-of (x32 / some)
+				:ARG0-of (x35 / have-org-role-91
+					:ARG2 (p1 / president)
+					:ARG1 (x34 / country
+						:name (n3 / name
+							:op1 "Soviet"))))
+			:ARG1-of (x41 / erode
+				:time (x45 / worsen-01
+					:ARG0 (x44 / economy)
+					:duration (x48 / temporal-quantity
+						:unit (y / year)
+						:mod (x47 / recent)))))))
+
+# ::id 31
+# ::snt But any wavering something Soviet President Mikhail Gorbachev  has done often could relegate Soviet President Mikhail Gorbachev  to a minor role
+(x1 / contrast-01
+	:ARG2 (x12 / possible
+		:domain (x13 / relegate
+			:ARG1 (x4 / something
+				:mod (x2 / any)
+				:ARG1-of (x3 / waver-01)
+				:ARG1-of (x10 / do-02
+					:ARG0 (x7 / newspaper
+						:name (n / name
+							:op1 "Mikhail"
+							:op2 "Gorbachev")
+						:ARG0-of (x6 / have-org-role-91
+							:ARG2 (p1 / president))
+						:ARG0-of (xap1 / country
+							:ARG0-of (xap0 / name
+								:op1 "Soviet")))
+					:frequency (x11 / often)))
+			:ARG1 (x16 / name
+				:op1 "Mikhail"
+				:op2 "Gorbachev"
+				:ARG0-of (x15 / have-org-role-91
+					:ARG2 (p / president)
+					:ARG1 (x14 / country
+						:name (n1 / name
+							:op1 "Soviet"))))))
+	:ARG2 (x21 / role
+		:mod (x20 / minor)))
+
+# ::id 32
+# ::snt Whatever Soviet President Mikhail Gorbachev  does , the Soviet Union seems headed for a period of fundamental change that could have a major impact on the way the Soviet Union  deals with the outside world
+(x11 / seem-01
+	:ARG1 (x12 / head-01
+		:null_edge (x6 / do-02
+			:ARG1 (x1 / whatever)
+			:ARG0 (x4 / newspaper
+				:name (n1 / name
+					:op1 "Mikhail"
+					:op2 "Gorbachev")
+				:ARG0-of (x3 / have-org-role-91
+					:ARG2 (p / president))
+				:mod (xap1 / country
+					:ARG0-of (xap0 / name
+						:op1 "Soviet"))))
+		:ARG1 (x9 / country
+			:name (n / name
+				:op1 "Soviet"
+				:op2 "Union"))
+		:ARG1 (x20 / possible
+			:domain (x18 / change-01
+				:mod (x17 / fundamental))
+			:domain (x21 / have-03
+				:ARG1 (x24 / impact-01
+					:mod (x23 / major)
+					:ARG0-of (x31 / deal-01
+						:ARG0 (x29 / country
+							:name (n2 / name
+								:op1 "Soviet"
+								:op2 "Union"))
+						:ARG1 (x35 / world
+							:mod (x34 / outside))))))))
+
+# ::id 33
+# ::snt Mr. Yeltsin , 60 , is expected to press relentlessly for the Kremlin to relinquish most of the Kremlin  administrative powers to the increasingly assertive republics
+(x7 / expect-01
+	:ARG1 (x9 / press-01
+		:ARG0 (x2 / person
+			:name (n / name
+				:op1 "Yeltsin")
+			:null_edge (x1 / null_tag)
+			:null_edge 60)
+		:mod (x10 / relentlessly)
+		:ARG2 (x13 / government-organization
+			:name (n1 / name
+				:op1 "Kremlin"))
+		:ARG1 (x15 / relinquish-01
+			:ARG1 (x21 / power
+				:quant (x16 / most)
+				:poss (x19 / government-organization
+					:name (n2 / name
+						:op1 "Kremlin"))
+				:mod (x20 / administrate-01))
+			:ARG2 (x26 / republic
+				:ARG1-of (x25 / assertive
+					:ARG1-of (x24 / increase-01))))))
+
+# ::id 34
+# ::snt For the nation as a whole , that could create considerable upheaval as newly sovereign republics attempt to build a federal system from the bottom up
+(x9 / possible
+	:domain (x10 / create-01
+		:ARG0 (x3 / nation
+			:prep-as (x6 / whole))
+		:ARG1 (x12 / upheaval
+			:mod (x11 / considerable))
+		:condition (x17 / attempt-01
+			:ARG0 (x16 / republic
+				:mod (x15 / sovereign))
+			:ARG1 (x19 / build-01
+				:ARG0 x16
+				:ARG1 (x22 / system
+					:mod (x21 / government-organization
+						:name (n / name
+							:op1 "federal")))
+				:ARG4 (x25 / bottom)))))
+
+# ::id 35
+# ::snt For the West , the problem of balancing relations with the Kremlin and with individual Soviet republics is likely to worsen
+(x19 / likely
+	:prep-in-addition-to (x3 / world-region
+		:name (n / name
+			:op1 "West"))
+	:domain (x6 / problem
+		:ARG0-of (x8 / balance-01
+			:ARG1 (x9 / relation
+				:prep-with (x12 / government-organization
+					:name (n1 / name
+						:op1 "Kremlin")))
+			:ARG2 (x17 / republic
+				:mod (x15 / individual)
+				:mod (xap1 / country
+					:ARG0-of (xap0 / name
+						:op1 "Soviet")))))
+	:domain (x21 / worsen-01))
+
+# ::id 36
+# ::snt Mr. Yeltsin the unabashedly pro-Western Mr. Yeltsin  , who has sought a greater voice in international affairs , clearly relished the unabashedly pro-Western Mr. Yeltsin  contacts with world leaders during the crisis
+(x20 / relish
+	:ARG0 (x2 / person
+		:name (n / name
+			:op1 "Yeltsin")
+		:null_edge (x1 / null_tag))
+	:ARG0 (x7 / person
+		:name (n1 / name
+			:op1 "Yeltsin")
+		:null_edge (x4 / unabashedly)
+		:null_edge (x6 / null_tag)
+		:ARG1-of (x11 / seek-01
+			:ARG1 (x14 / voice
+				:mod (x13 / great)
+				:location (x17 / affair
+					:mod (x16 / international)))))
+	:manner (x19 / clear)
+	:ARG1 (x26 / contact-01
+		:manner (x22 / unabashedly)
+		:null_edge (x24 / null_tag)
+		:ARG1 (x29 / person
+			:ARG0-of (l / lead-02)
+			:ARG1 (x28 / world)
+			:ARG1 (x32 / crisis))))
+
+# ::id 37
+# ::snt the unabashedly pro-Western Mr. Yeltsin  told the Russian Parliament Wednesday of his conversations with heads of state ranging from President Bush to France's Francois Mitterrand and British Prime Minister John Major , proclaiming proudly that France's Francois Mitterrand and British Prime Minister John Major  all support the Russian leadership
+(x6 / tell-01
+	:ARG0 (x5 / person
+		:name (n / name
+			:op1 "Yeltsin")
+		:null_edge (x2 / unabashedly)
+		:null_edge (x4 / null_tag))
+	:ARG1 (x9 / government-organization
+		:name (n1 / name
+			:op1 "Parliament"
+			:op2 "Wednesday")
+		:mod (x8 / country
+			:name (n2 / name
+				:op1 "Russia")))
+	:ARG2 (x13 / converse-01
+		:prep-with (x15 / person
+			:ARG0-of (h / head-01)
+			:ARG1 (x17 / state)
+			:ARG1-of (x18 / range-01
+				:ARG3 (x27 / and
+					:op1 (x20 / have-org-role-91
+						:ARG2 (p / president))
+					:op1 (x25 / name
+						:op1 "Francois"
+						:op2 "Mitterrand"
+						:mod (x23 / country
+							:name (n3 / name
+								:op1 "France")))
+					:op2 (x31 / name
+						:op1 "John"
+						:op2 "Major"
+						:mod (x28 / country
+							:name (n4 / name
+								:op1 "Britain"))
+						:ARG0-of (x30 / have-org-role-91
+							:ARG2 (m / minister)
+							:mod (x29 / prime))
+						:ARG0-of (x34 / proclaim
+							:manner (x35 / proudly)
+							:ARG1 (x48 / support-01
+								:ARG0 (x41 / and
+									:op1 (x39 / newspaper
+										:name (n5 / name
+											:op1 "Francois"
+											:op2 "Mitterrand")
+										:mod (x37 / country
+											:name (n7 / name
+												:op1 "France")))
+									:op2 (x45 / name
+										:op1 "John"
+										:op2 "Major"
+										:mod (x42 / country
+											:name (n8 / name
+												:op1 "Britain"))
+										:ARG0-of (x44 / have-org-role-91
+											:ARG2 (m1 / minister)
+											:mod (x43 / prime)))
+									:quant (x47 / all))
+								:ARG1 (x51 / lead-02
+									:mod (x50 / country
+										:name (n6 / name
+											:op1 "Russia")))))))))))
+
+# ::id 38
+# ::snt The 64-hour coup disintegrated with astonishing speed
+(x4 / disintegrate-01
+	:ARG1 (x3 / coup
+		:mod (x2 / person
+			:name (n / name
+				:op1 "64-hour")))
+	:manner (x7 / speed
+		:mod (x6 / astonish-01)))
+
+# ::id 39
+# ::snt After seizing power and deposing Mr. Gorbachev at 4 a.m. Monday , the eight-man committee headed by Vice President Gennady Yanayev and including the Soviet prime minister , the defense minister , the interior minister and the KGB chief , soon found the tables turning
+(x42 / find-02
+	:time (x1 / after
+		:op1 (x4 / and
+			:op1 (x2 / seize-01
+				:ARG1 (x3 / power))
+			:op2 (x5 / depose-01
+				:ARG1 (x7 / person
+					:name (n / name
+						:op1 "Gorbachev")
+					:null_edge (x6 / null_tag))
+				:time (x9 / date-entity))))
+	:ARG0 (x15 / committee
+		:mod (x14 / eight-man)
+		:ARG1-of (x16 / head-01
+			:ARG0 (x20 / name
+				:op1 "Gennady"
+				:op2 "Yanayev"
+				:ARG0-of (x18 / vice)
+				:ARG0-of (x19 / have-org-role-91
+					:ARG2 (p / president)))
+			:ARG0 (x22 / and)
+			:ARG1 (x27 / have-org-role-91
+				:ARG2 (m / minister)
+				:mod (x26 / prime)
+				:ARG0-of (x31 / have-org-role-91
+					:ARG2 (m1 / minister)
+					:mod (x30 / defense)
+					:mod (x39 / chief
+						:ARG1 (x38 / organization
+							:name (n1 / name
+								:op1 "KGB")))
+					:ARG1 (xap2 / person
+						:ARG0-of (x35 / have-org-role-91
+							:ARG2 (m2 / minister)
+							:topic (x34 / interior))))
+				:ARG1 (xap1 / country
+					:ARG0-of (xap0 / name
+						:op1 (x25 / country
+							:name (n2 / name
+								:op1 "Soviet")))))
+			:ARG1 (x36 / and)))
+	:time (x41 / soon)
+	:ARG1 (x44 / table
+		:ARG0-of (x45 / turn-02)))
+
+# ::id 40
+# ::snt By Tuesday the regime was under fierce verbal attack not just from Mr. Yeltsin , but from tens of thousands of Soviet protesters , the leaders of many republics , and the governments of virtually every country in the world
+(x4 / regime
+	:location (x1 / by
+		:op1 (xap0 / date-entity
+			:weekday (x2 / tuesday)))
+	:prep-under (x9 / attack-01
+		:mod (x7 / fierce)
+		:mod (x8 / verbal)
+		:ARG0 (x31 / and
+			:null_edge (x13 / null_tag)
+			:op1 (x23 / person
+				:ARG0-of (p / protest-01)
+				:mod (xap2 / country
+					:ARG0-of (xap1 / name
+						:op1 "Soviet")))
+			:op3 (x26 / person
+				:ARG0-of (l / lead-02)
+				:ARG1 (x29 / republic
+					:quant (x28 / many)))
+			:op2 (x33 / govern-01
+				:ARG1 (x37 / country
+					:mod (x36 / every
+						:mod (x35 / virtual))
+					:part-of (x40 / world))))))
+
+# ::id 41
+# ::snt The loyalty of the army was being sorely tested ; a handful of divisions switched sides to protect the Russian leadership in the Russian leadership  parliament building
+(xap0 / multi-sentence
+	:ARG1 (x9 / test-01
+		:ARG1 (x2 / loyal-41
+			:ARG1 (x5 / army))
+		:manner (x8 / sorely))
+	:ARG1 (x15 / switch-01
+		:ARG1 (x14 / division
+			:quant (x12 / handful))
+		:ARG1 (x16 / side)
+		:purpose (x18 / protect-01
+			:ARG0 x16
+			:ARG1 (x21 / lead-02
+				:poss (x20 / country
+					:name (n / name
+						:op1 "Russia"))
+				:beneficiary (x27 / building
+					:ARG1 (x26 / parliament
+						:ARG1 (x25 / lead-02
+							:ARG1 (x24 / country
+								:name (n1 / name
+									:op1 "Russia")))))))))
+
+# ::id 42
+# ::snt Even hard-liners who had been expected to support the junta condemned the junta  for what Even hard-liners who had been expected to support the junta  called the junta  illegal actions
+(x11 / condemn-01
+	:ARG0 (x2 / hard-liner
+		:mod (x1 / even)
+		:ARG1-of (x6 / expect-01
+			:ARG1 (x8 / support-01
+				:ARG1 (x10 / junta))))
+	:ARG1 (x13 / junta
+		:purpose (x26 / call-02
+			:ARG0 (x17 / hard-liner
+				:mod (x16 / even)
+				:ARG1-of (x21 / expect-01
+					:ARG1 (x23 / support-01
+						:ARG1 (x25 / junta))))
+			:ARG2 (x28 / junta
+				:mod (x29 / law
+					:polarity -)))))
+
+# ::id 43
+# ::snt Tuesday night , hundreds of unarmed volunteers stood outside the white parliament building on the Moskva river , nervous about rumors of an imminent armed assault
+(x8 / stand-01
+	:time (x2 / night
+		:mod (xap0 / date-entity
+			:weekday (x1 / tuesday)))
+	:ARG2 (x7 / person
+		:ARG0-of (v / volunteer-01))
+	:ARG2 (x9 / outside
+		:op1 (x13 / building
+			:null_edge (x11 / white)
+			:mod (x12 / parliament)
+			:ARG2 (x17 / river
+				:mod (x16 / moskva))))
+	:ARG2 (x19 / nervous
+		:ARG2 (x21 / rumor-01
+			:ARG1 (x26 / assault-01
+				:mod (x24 / imminent)
+				:ARG1-of (x25 / arm-01)))))
+
+# ::id 44
+# ::snt Tuesday night  never came
+(x4 / come-01
+	:time (x2 / night
+		:mod (xap0 / date-entity
+			:weekday (x1 / tuesday))))
+
+# ::id 45
+# ::snt At least three civilians were killed in a brief clash around midnight , when a column of six light tanks stormed a barricade near the parliament
+(x6 / kill-01
+	:ARG1 (x4 / civilian
+		:quant 3)
+	:time (x10 / clash-01
+		:mod (x9 / brief)
+		:location (x11 / around
+			:op1 (x12 / midnight
+				:ARG0-of (x21 / storm-02
+					:ARG0 (x16 / column
+						:ARG1 (x20 / tank
+							:quant 6
+							:mod (x19 / light)))
+					:ARG1 (x23 / barricade
+						:location (x24 / near
+							:op1 (x26 / government-organization
+								:name (n / name
+									:op1 "parliament")))))))))
+
+# ::id 46
+# ::snt But the troops quickly backed off , and the rest of the night was quiet
+(x1 / contrast-01
+	:ARG2 (x5 / back-01
+		:ARG0 (x3 / troop)
+		:manner (x4 / quick)
+		:ARG0 (x10 / rest
+			:part-of (x13 / night)
+			:mod (x15 / quiet)))
+	:ARG2 (x8 / and))
+
+# ::id 47
+# ::snt The Russian Parliament convened for an emergency session Wednesday , and after three hours of debate , Mr. Yeltsin suddenly announced that the coup leaders were heading to the airport for an unknown destination
+(x11 / and
+	:op1 (x4 / convene-01
+		:ARG0 (x3 / government-organization
+			:name (n / name
+				:op1 "Parliament")
+			:mod (x2 / country
+				:name (n2 / name
+					:op1 "Russia")))
+		:purpose (x8 / session
+			:mod (x7 / emergency))
+		:time (x12 / after
+			:op1 (x16 / debate-01
+				:duration (x14 / temporal-quantity
+					:unit (h1 / hour)
+					:quant 3))))
+	:op1 (x9 / wednesday)
+	:op2 (x21 / announce-01
+		:ARG0 (x19 / person
+			:name (n1 / name
+				:op1 "Yeltsin")
+			:null_edge (x18 / null_tag))
+		:manner (x20 / sudden)
+		:ARG1 (x27 / thing
+			:ARG1-of (h / head-02)
+			:ARG0 x19
+			:ARG0 (x25 / person
+				:ARG0-of (l / lead-02)
+				:ARG1 (x24 / coup))
+			:ARG4 (x30 / airport)
+			:ARG1 (x34 / destination
+				:ARG1-of (x33 / know-01
+					:polarity -)))))
+
+# ::id 48
+# ::snt Amid growing excitement , the unabashedly pro-Western Mr. Yeltsin  ordered the eight coup leaders  to be stopped
+(x10 / order-02
+	:ARG2 (x3 / excitement
+		:ARG1-of (x2 / grow-01))
+	:time (x6 / unabashedly)
+	:ARG0 (x9 / person
+		:name (n / name
+			:op1 "Yeltsin")
+		:null_edge (x8 / null_tag))
+	:ARG1 (x14 / person
+		:ARG0-of (l / lead-02)
+		:quant 8
+		:ARG1 (x13 / coup))
+	:ARG2 (x17 / stop-01))
+
+# ::id 49
+# ::snt Around the same time , the hundreds of tanks and armored cars positioned around the Soviet capital started to withdraw
+(x18 / start-01
+	:time (x1 / around
+		:op1 (x4 / time
+			:ARG1-of (x3 / same-41)))
+	:ARG1 (x10 / and
+		:op1 (x9 / tank
+			:ARG1-of (x13 / position-01
+				:ARG2 (x14 / around
+					:op1 (x17 / capital
+						:mod (xap1 / country
+							:ARG0-of (xap0 / name
+								:op1 "Soviet"))))))
+		:op3 (x12 / car
+			:ARG1-of (x11 / armor-01)))
+	:ARG1 (x20 / withdraw-01))
+
+# ::id 50
+# ::snt Russian officials said top Defense Ministry and general staff brass had issued the order after a brief meeting
+(x3 / say-01
+	:ARG1 (x12 / issue-01
+		:ARG0 (x7 / and
+			:op1 (x5 / government-organization
+				:name (n / name
+					:op1 "Defense"
+					:op2 "Ministry")
+				:mod (x4 / top))
+			:op2 (x10 / brass
+				:mod (x8 / general)
+				:ARG1 (x9 / person
+					:ARG2-of (s / staff-01))))
+		:ARG1 (x14 / order)
+		:time (x15 / after
+			:op1 (x18 / meet-03
+				:manner (x17 / brief))))
+	:ARG0 (xap0 / person
+		:ARG0-of (x2 / have-org-role-91
+			:ARG2 (o / official)
+			:ARG1 (x1 / country
+				:name (n1 / name
+					:op1 "Russia")))))
+
+# ::id 51
+# ::snt Within hours , a delegation of two Russian republic officials and four Gorbachev aides flew to the Crimea to meet with the Soviet president
+(x15 / fly-01
+	:time (x1 / within
+		:op1 (x2 / temporal-quantity
+			:unit (h / hour)))
+	:ARG1 (x11 / and
+		:op2 (x5 / delegation)
+		:op2 (xap1 / person
+			:ARG0-of (x14 / have-org-role-91
+				:ARG2 (a / aide)
+				:ARG1 (xap0 / have-quant-91
+					:ARG2 4)))
+		:op1 (xap2 / person
+			:quant 2
+			:ARG0-of (x10 / have-org-role-91
+				:ARG2 (o / official)
+				:ARG1 (x8 / country
+					:name (n1 / name
+						:op1 "Russia"))
+				:null_edge (x9 / null_tag))))
+	:destination (x18 / country
+		:name (n / name
+			:op1 "Crimea"))
+	:purpose (x20 / meet-03
+		:ARG0 x11
+		:ARG1 (xap4 / country
+			:ARG0-of (x24 / have-org-role-91
+				:ARG2 (p / president))
+			:ARG0-of (xap3 / name
+				:op1 "Soviet"))))
+
+# ::id 52
+# ::snt Soviet President Mikhail Gorbachev  had been held incommunicado since the beginning of the coup , guarded by 32 KGB officers with machine guns in Soviet President Mikhail Gorbachev  spacious yellow dacha in Foros , at the southern tip of the peninsula
+(x7 / hold-04
+	:ARG1 (x3 / name
+		:op1 "Mikhail"
+		:op2 "Gorbachev"
+		:ARG0-of (x2 / have-org-role-91
+			:ARG2 (p / president)
+			:ARG1 (x1 / country
+				:name (n / name
+					:op1 "Soviet"))))
+	:ARG1 (x8 / incommunicado)
+	:time (x9 / since
+		:op1 (x11 / begin-01
+			:ARG1 (x14 / coup)
+			:ARG1-of (x16 / guard-01
+				:ARG0 (x20 / have-org-role-91
+					:ARG2 (o / officer)
+					:quant 32
+					:mod (x19 / organization
+						:name (n1 / name
+							:op1 "KGB"))
+					:ARG1 (x23 / gun
+						:mod (x22 / machine)
+						:location (x31 / dacha
+							:name (x27 / name
+								:op1 "Mikhail"
+								:op2 "Gorbachev"
+								:ARG0-of (x26 / have-org-role-91
+									:ARG2 (p1 / president)
+									:ARG1 (x25 / country
+										:name (n3 / name
+											:op1 "Soviet"))))
+							:mod (x29 / spacious)
+							:mod (x30 / yellow)
+							:location (x33 / country
+								:name (n2 / name
+									:op1 "Foros")))
+						:location (x38 / tip
+							:mod (x37 / south)
+							:ARG1 (x41 / peninsula))))))))
+
+# ::id 53
+# ::snt The hard-line regime had justified its takeover by saying that Mr. Gorbachev was incapacitated by poor health
+(x5 / justify-01
+	:ARG0 (x3 / regime
+		:mod (x2 / hard-line))
+	:ARG1 (x7 / take-12)
+	:ARG2 (x9 / say-01
+		:ARG0 x3
+		:ARG1 (x14 / incapacitate
+			:ARG1 (x12 / person
+				:name (n / name
+					:op1 "Gorbachev")
+				:null_edge (x11 / null_tag))
+			:instrument (x17 / health
+				:mod (x16 / poor)))))
+
+# ::id 54
+# ::snt The officials quickly discovered otherwise
+(x4 / discover-01
+	:manner (x3 / quick)
+	:time (x5 / otherwise)
+	:ARG0 (xap0 / person
+		:ARG0-of (x2 / have-org-role-91
+			:ARG2 (o / official))))
+
+# ::id 55
+# ::snt Arkady Volsky , a Gorbachev aide , declared the health problems a gross invention
+(x8 / declare-01
+	:ARG0 (x1 / person
+		:name (n / name
+			:op1 "Arkady"
+			:op2 "Volsky"))
+	:ARG1 (x11 / problem
+		:mod (x10 / health))
+	:ARG1 (x14 / invent-01
+		:mod (x13 / gross)))
+
+# ::id 56
+# ::snt Arkady Volsky  also reported that the coup had taken place after the eight-man committee had tried and failed to pressure Mr. Gorbachev into signing a statement imposing a state of emergency on the nation
+(x4 / report-01
+	:ARG0 (x1 / person
+		:name (n / name
+			:op1 "Arkady"
+			:op2 "Volsky"))
+	:mod (x3 / also)
+	:ARG1 (x9 / take-01
+		:ARG0 (x7 / coup)
+		:time (x11 / after
+			:op1 (x17 / and
+				:op1 (x16 / try-01
+					:ARG0 (x14 / committee
+						:mod (x13 / eight-man))
+					:ARG1 (x20 / pressure-01
+						:ARG0 x14
+						:ARG1 (x22 / person
+							:name (n1 / name
+								:op1 "Gorbachev")
+							:null_edge (x21 / null_tag))
+						:ARG2 (x24 / sign-02
+							:ARG1 (x26 / state-01
+								:ARG0-of (x27 / impose-01
+									:ARG1 (x29 / state
+										:mod (x31 / emergency))
+									:ARG2 (x34 / nation))))))
+				:op2 (x18 / fail-01)))))
+
+# ::id 57
+# ::snt By 8 p.m. , the coup was officially over and Mr. Gorbachev announced Soviet President Mikhail Gorbachev  was in full control of the situation and -LCB- had -RCB- restored contact with the country , broken off as a result of the adventurist actions of a group of state officials
+(x10 / and
+	:op1 (x9 / over
+		:domain (x6 / coup
+			:time (x1 / by
+				:op1 (x3 / date-entity
+					:null_edge (x2 / null_tag))))
+		:mod (x8 / official))
+	:op2 (x13 / announce-01
+		:ARG0 (x12 / person
+			:name (n / name
+				:op1 "Gorbachev")
+			:null_edge (x11 / null_tag))
+		:ARG0 (x25 / and
+			:op1 (x16 / newspaper
+				:name (n1 / name
+					:op1 "Mikhail"
+					:op2 "Gorbachev")
+				:ARG0-of (x15 / have-org-role-91
+					:ARG2 (p / president))
+				:ARG0-of (xap1 / country
+					:ARG0-of (xap0 / name
+						:op1 "Soviet")))
+			:op2 (x21 / control-01
+				:degree (x20 / full)
+				:ARG1 (x24 / situation))
+			:op2 (x35 / break-08
+				:ARG1 (x30 / contact-01
+					:ARG1-of (x29 / restore-01)
+					:ARG1 (x33 / country))
+				:ARG2-of (x39 / result-01
+					:ARG1 (x42 / adventurist
+						:ARG0 (x46 / group
+							:consist-of (xap2 / person
+								:ARG0-of (x49 / have-org-role-91
+									:ARG2 (o / official)
+									:ARG1 (x48 / state))))))))))
+
+# ::id 58
+# ::snt After telephone conversations with leaders of five of the 15 Soviet republics and with President Bush , Mr. Gorbachev headed for Moscow from the Crimea
+(x20 / head-02
+	:time (x1 / after
+		:op1 (x3 / converse-01
+			:mod (x2 / telephone)
+			:ARG1 (x5 / person
+				:ARG0-of (l / lead-02)
+				:ARG1 (x12 / republic
+					:quant 15
+					:mod (xap1 / country
+						:ARG0-of (xap0 / name
+							:op1 "Soviet")))
+				:ARG1 (x16 / person
+					:name (n3 / name
+						:op1 "Bush")
+					:ARG0-of (x15 / have-org-role-91
+						:ARG2 (p / president))))))
+	:ARG0 (x19 / person
+		:name (n / name
+			:op1 "Gorbachev")
+		:null_edge (x18 / null_tag))
+	:ARG1 (x22 / city
+		:name (n1 / name
+			:op1 "Moscow")
+		:location (x25 / country
+			:name (n2 / name
+				:op1 "Crimea"))))
+
+# ::id 59
+# ::snt 
+(x9 / start-01
+	:time (x2 / before
+		:mod (x1 / even)
+		:op1 (x5 / end-01
+			:ARG1 (x4 / coup)))
+	:ARG0 (x8 / nation)
+	:ARG1 (x10 / return-01
+		:ARG4 (x12 / normal)))
+
+# ::id 60
+# ::snt Soviet television , which had been broadcasting a diet of classical music and black-and-white patriotic movies throughout the previous two days , suddenly switched to showing the Russian Parliament session
+(x2 / television
+	:ARG0-of (x7 / broadcast-01
+		:ARG1 (x9 / diet
+			:ARG1 (x13 / and
+				:op1 (x12 / music
+					:mod (x11 / classical)
+					:path (x17 / throughout
+						:op1 (x21 / temporal-quantity
+							:unit (d / day)
+							:time (x19 / previous)
+							:quant 2
+							:ARG1-of (x24 / switch-01
+								:manner (x23 / sudden)
+								:ARG1 (x26 / show-01
+									:ARG2 (x29 / government-organization
+										:name (n / name
+											:op1 "Parliament")
+										:mod (x28 / country
+											:name (n1 / name
+												:op1 "Russia")))
+									:ARG1 (x30 / session))))))
+				:op2 (x16 / movie
+					:mod (x14 / black-and-white)
+					:mod (x15 / patriotic)))))
+	:mod (xap1 / country
+		:ARG0-of (xap0 / name
+			:op1 "Soviet")))
+
+# ::id 61
+# ::snt Russian radio resumed a diet of classical music  broadcasts , and all restrictions on the media were lifted
+(x11 / and
+	:op1 (x3 / resume-01
+		:ARG0 (x2 / radio
+			:mod (x1 / country
+				:name (n / name
+					:op1 "Russia")))
+		:ARG1 (x5 / diet
+			:ARG1 (x9 / broadcast-01
+				:mod (x7 / classical)
+				:mod (x8 / music))))
+	:op2 (x18 / lift-01
+		:ARG1 (x13 / restrict-01
+			:quant (x12 / all)
+			:ARG1 (x16 / media))))
+
+# ::id 62
+# ::snt In Lithuania , Estonia and Latvia , Soviet troops retreated from television and radio stations Soviet troops  occupied earlier in the week
+(x10 / retreat
+	:location (x5 / and
+		:op1 (x2 / country
+			:name (n / name
+				:op1 "Lithuania"))
+		:op2 (x4 / country
+			:name (n1 / name
+				:op1 "Estonia"))
+		:op2 (x6 / country
+			:name (n2 / name
+				:op1 "Latvia")))
+	:ARG0 (x9 / troop
+		:mod (x8 / country
+			:name (n3 / name
+				:op1 "Soviet")))
+	:ARG1 (x13 / and
+		:op1 (x12 / television)
+		:op2 (x14 / radio)
+		:op2 (x15 / station
+			:ARG1-of (x18 / occupy-01
+				:ARG0 (x17 / troop
+					:mod (xap1 / country
+						:ARG0-of (xap0 / name
+							:op1 "Soviet")))
+				:time (x19 / early
+					:time (x22 / week))))))
+
+# ::id 63
+# ::snt The situation in the Baltic states remained tense , however : According to news wire reports , gunfire was reported in Vilnius , Lithuania , where one person was shot dead , and a Latvian died from injuries received when the Soviets this week took over the radio station where he worked
+(x7 / remain-01
+	:ARG1 (x2 / situation
+		:location (x6 / state
+			:location (x5 / world-region
+				:name (n / name
+					:op1 "Baltic"))))
+	:ARG3 (x8 / tense-01
+		:domain x2)
+	:ARG1-of (x20 / report-01
+		:ARG1 (x18 / gunfire)
+		:ARG1 (x30 / shoot-02
+			:location (x22 / country
+				:name (n1 / name
+					:op1 "Vilnius")
+				:null_edge (x24 / country
+					:name (n2 / name
+						:op1 "Lithuania")))
+			:ARG1 (x28 / person
+				:quant 1)
+			:ARG1 (x31 / die-01
+				:op (d / dead)))
+		:ARG1 (x33 / and
+			:op2 (x36 / die-01
+				:ARG1 (x35 / organization
+					:name (n3 / name
+						:op1 "Latvian"))
+				:ARG1 (x38 / injure-01
+					:ARG1-of (x39 / receive-01
+						:ARG0 (x42 / soviets
+							:time (x44 / week
+								:mod (x43 / this))
+							:part-of (x49 / station
+								:mod (x48 / radio)
+								:ARG0-of (x52 / work-01))))
+					:ARG1 x42))
+			:op1 (xap0 / say-01
+				:ARG0 (x16 / report-01
+					:mod (x14 / news)
+					:mod (x15 / wire-01))))))
+
+# ::id 64
+# ::snt Some U.S. analysts are predicting that the coup and the forces the -LCB- coup -RCB-  has unleashed have dramatically increased the chances that the Baltic states will win their independence
+(x5 / predict-01
+	:ARG0 (x3 / person
+		:ARG0-of (a / analyze-01)
+		:quant (x1 / some)
+		:ARG1 (x2 / country
+			:name (n / name
+				:op1 "U.S.")))
+	:ARG1 (x20 / increase-01
+		:ARG1 (x9 / and
+			:op1 (x8 / coup)
+			:op2 (x11 / force
+				:ARG1-of (x17 / unleash
+					:ARG0 (x14 / coup))))
+		:manner (x19 / dramatical)
+		:ARG1 (x22 / chance-01
+			:ARG2 (x28 / win-01
+				:ARG0 (x26 / state
+					:mod (x25 / world-region
+						:name (n1 / name
+							:op1 "Baltic")))
+				:ARG1 (x30 / depend-01
+					:polarity -)))))
+
+# ::id 65
+# ::snt During the coup , Estonia and Latvia unilaterally declared Some U.S. analysts  independence , a move Lithuania took last year but which Soviet troops thwarted
+(x9 / declare-01
+	:prep-amid (x3 / coup)
+	:ARG0 (x6 / and
+		:op1 (x5 / country
+			:name (n / name
+				:op1 "Estonia"))
+		:op2 (x7 / country
+			:name (n1 / name
+				:op1 "Latvia")))
+	:manner (x8 / unilateral)
+	:ARG1 (x12 / person
+		:ARG0-of (a / analyze-01)
+		:quant (x10 / some)
+		:mod (x11 / country
+			:name (n2 / name
+				:op1 "U.S.")))
+	:ARG1 (x13 / depend-01
+		:polarity -
+		:ARG1 (x16 / move-02
+			:ARG1-of (x18 / take-01
+				:ARG0 (x17 / country
+					:name (n3 / name
+						:op1 "Lithuania"))
+				:time (x20 / year
+					:mod (x19 / last)
+					:time-of (x25 / thwart-01
+						:ARG0 (x24 / troop
+							:mod (x23 / country
+								:name (n4 / name
+									:op1 "Soviet")))))))))
+
+# ::id 66
+# ::snt The Soviet federal prosecutor's office , meanwhile , announced that The Soviet federal prosecutor's office  had started criminal proceedings against the eight coup leaders
+(x10 / announce-01
+	:ARG0 (x6 / office
+		:poss (x4 / prosecute-01
+			:mod (x3 / government-organization
+				:name (n / name
+					:op1 "federal"))
+			:mod (xap1 / country
+				:ARG0-of (xap0 / name
+					:op1 "Soviet"))))
+	:time (x8 / meanwhile)
+	:ARG1 (x19 / start-01
+		:ARG0 (x17 / office
+			:poss (x15 / prosecute-01
+				:mod (x14 / government-organization
+					:name (n1 / name
+						:op1 "federal"))
+				:mod (xap3 / country
+					:ARG0-of (xap2 / name
+						:op1 "Soviet"))))
+		:ARG1 (x21 / proceeding
+			:mod (x20 / crime)
+			:ARG1 (x26 / person
+				:ARG0-of (l / lead-02)
+				:quant 8
+				:ARG1 (x25 / coup)))))
+
+# ::id 67
+# ::snt At one point early yesterday , there were reports that four of the eight had flown to Mr. Gorbachev's vacation home in the Crimea to make a personal appeal to Soviet President Mikhail Gorbachev
+(x9 / report-01
+	:time (x3 / point
+		:quant 1
+		:time (x4 / early))
+	:ARG1 (x16 / fly-01
+		:ARG2 4
+		:null_edge 8
+		:ARG4 (x22 / home
+			:poss (x19 / person
+				:name (n / name
+					:op1 "Gorbachev")
+				:null_edge (x18 / null_tag))
+			:mod (x21 / vacation-01)
+			:location (x25 / country
+				:name (n1 / name
+					:op1 "Crimea")))
+		:purpose (x30 / appeal-02
+			:ARG1 (x29 / personal)
+			:ARG2 (x34 / name
+				:op1 "Mikhail"
+				:op2 "Gorbachev"
+				:ARG0-of (x33 / have-org-role-91
+					:ARG2 (p / president)
+					:ARG1 (x32 / country
+						:name (n2 / name
+							:op1 "Soviet")))))))
+
+# ::id 68
+# ::snt But this could not be confirmed
+(x1 / contrast-01
+	:ARG2 (x3 / possible
+		:domain (x6 / confirm-01
+			:ARG1 (x2 / this))))
+
+# ::id 69
+# ::snt Last night , Reuter reported that Alexander Rutskoi , the vice president of the Russian republic , said one plotter , Vladimir Kryuchkov , chairman of the KGB , had been arrested and would be tried
+(x5 / report-01
+	:time (x2 / night
+		:mod (x1 / last))
+	:ARG0 (x4 / organization
+		:name (n / name
+			:op1 "Reuter"))
+	:ARG1 (x18 / say-01
+		:ARG0 (x7 / newspaper
+			:name (n1 / name
+				:op1 "Alexander"
+				:op2 "Rutskoi")
+			:ARG0-of (x12 / have-org-role-91
+				:ARG2 (p / president)
+				:mod (x11 / vice)
+				:ARG1 (x16 / republic
+					:mod (x15 / country
+						:name (n2 / name
+							:op1 "Russia")))))
+		:ARG1 (x33 / and
+			:op1 (x32 / arrest-01
+				:ARG1 (x20 / plotter
+					:quant 1
+					:name (x22 / name
+						:op1 "Vladimir"
+						:op2 "Kryuchkov"
+						:ARG0-of (x25 / have-org-role-91
+							:ARG2 (c / chairman)
+							:ARG1 (x28 / organization
+								:name (n3 / name
+									:op1 "KGB"))))))
+			:op2 (x36 / try-01))))
+
+# ::id 70
+# ::snt The whereabouts of the other seven leaders of the coup was not immediately known
+(x14 / know-01
+	:ARG1 (x2 / whereabouts
+		:ARG1 (x7 / person
+			:ARG0-of (l / lead-02)
+			:mod (x5 / other)
+			:quant 7
+			:ARG1 (x10 / coup)))
+	:time (x13 / immediate))
+
+# ::id 71
+# ::snt As news of the rapid developments spread , hundreds of jubilant Russians braved the rain and streamed toward the parliament building , which was bedecked in the Russian white , blue and red national tricolor
+(x16 / and
+	:op1 (x13 / brave
+		:time (x7 / spread-03
+			:ARG1 (x2 / news
+				:consist-of (x6 / develop-01
+					:manner (x5 / rapid))))
+		:ARG0 (x12 / person
+			:mod (c / country
+				:name (n / name
+					:op1 "Russians"))
+			:null_edge (x11 / jubilant))
+		:ARG1 (x15 / rain-01))
+	:op2 (x17 / stream-02
+		:ARG2 (x21 / building
+			:ARG1 (x20 / parliament)
+			:ARG1-of (x25 / bedeck
+				:location (x32 / and
+					:null_edge (x29 / white)
+					:op2 (x31 / blue)
+					:op2 (x33 / red)
+					:op2 (x35 / tricolor
+						:poss (x28 / country
+							:name (n1 / name
+								:op1 "Russia"))
+						:mod (x34 / nation)))))))
+
+# ::id 72
+# ::snt hundreds of jubilant Russians  can say that today is the last day of Soviet Communism , and it is a rainy one , one parliament deputy , Yevgeny Ambartsumov , shouted down to the crowd from a first-floor balcony
+(x31 / shout
+	:ARG1 (x5 / possible
+		:domain (x6 / thing
+			:ARG1-of (s / say-01)
+			:ARG0 (x4 / person
+				:mod (c / country
+					:name (n / name
+						:op1 "Russians"))
+				:null_edge (x3 / jubilant))
+			:ARG1 (x12 / day
+				:time (x8 / today)
+				:mod (x11 / last)
+				:poss (x15 / country
+					:name (n1 / name
+						:op1 "Communism")
+					:ARG1 (xap1 / country
+						:ARG0-of (xap0 / name
+							:op1 "Soviet"))))
+			:ARG1 (x17 / and)
+			:ARG1 (x21 / rainy)))
+	:ARG0 (x26 / deputy
+		:quant 1
+		:ARG1 (x25 / parliament)
+		:name (x28 / name
+			:op1 "Yevgeny"
+			:op2 "Ambartsumov"))
+	:ARG2 (x35 / crowd)
+	:ARG2 (x39 / balcony
+		:mod (x38 / first-floor)))
+
+# ::id 73
+# ::snt Yeltsin , Yeltsin , the crowd shouted back
+(x7 / shout
+	:ARG1 (x1 / person
+		:name (n / name
+			:op1 "Yeltsin"))
+	:ARG1 (x3 / person
+		:name (n1 / name
+			:op1 "Yeltsin"))
+	:ARG0 (x6 / crowd)
+	:direction (x8 / back))
+
+# ::id 74
+# ::snt But some were already looking to the future , and sounding more cautious
+(x1 / contrast-01
+	:ARG2 (x5 / look-01
+		:ARG0 (x2 / some)
+		:time (x4 / already)
+		:ARG1 (x8 / future)
+		:ARG1 (x10 / and
+			:op2 (x11 / sound-01
+				:ARG1 (x13 / cautious
+					:degree (x12 / more))))))
+
+# ::id 75
+# ::snt A 70-year nightmare does not end that quickly , said Nikolai Medvedev , a member of the national parliament
+(x10 / say-01
+	:ARG1 (x6 / end-01
+		:ARG1 (x3 / nightmare
+			:mod (x2 / person
+				:name (n1 / name
+					:op1 "70-year")))
+		:manner (x8 / quick
+			:degree (x7 / that)))
+	:ARG0 (x11 / newspaper
+		:name (n / name
+			:op1 "Nikolai"
+			:op2 "Medvedev")
+		:ARG0-of (x15 / member
+			:ARG1 (x19 / government-organization
+				:name (n2 / name
+					:op1 "parliament")
+				:mod (x18 / nation)))))
+
+# ::id 76
+# ::snt As the future takes shape for the Soviet Union , one thing is certain : U.S. relations with the country will never be the same
+(x14 / certain
+	:time (x3 / future
+		:ARG1-of (x5 / shape-01
+			:ARG1 (x8 / country
+				:name (n / name
+					:op1 "Soviet"
+					:op2 "Union"))))
+	:ARG1 (x12 / thing
+		:quant 1)
+	:null_edge (x25 / same-41
+		:ARG1 (x17 / relation
+			:mod (x16 / country
+				:name (n1 / name
+					:op1 "U.S."))
+			:prep-with (x20 / country))))
+
+# ::id 77
+# ::snt Over the last three days , Mr. Bush became a vocal partner of Mr. Yeltsin's in the effort to oust the Communist hardliners who launched the coup
+(x9 / become-01
+	:time (x1 / over
+		:op1 (x5 / temporal-quantity
+			:unit (d / day)
+			:quant 3))
+	:ARG2 (x12 / partner-01
+		:ARG0 (x8 / person
+			:name (n / name
+				:op1 "Bush")
+			:null_edge (x7 / null_tag))
+		:mod (x11 / vocal)
+		:poss (x15 / person
+			:name (n1 / name
+				:op1 "Yeltsin")
+			:null_edge (x14 / null_tag)
+			:null_edge (x21 / oust
+				:ARG1 (x24 / hardliner
+					:mod (x23 / communism)
+					:ARG0-of (x26 / launch-01
+						:ARG1 (x28 / coup)))))))
+
+# ::id 78
+# ::snt The U.S. now seems to be moving inexorably toward recognizing the charismatic Russian leader as the rising force in the Soviet Union
+(x4 / seem-01
+	:ARG1 (x2 / country
+		:name (n / name
+			:op1 "U.S."))
+	:time (x3 / now)
+	:ARG1 (x7 / move-01
+		:ARG0 x2
+		:manner (x8 / inexorably)
+		:ARG1 (x10 / recognize-02
+			:ARG1 (x14 / lead-02
+				:ARG1 (x13 / country
+					:name (n1 / name
+						:op1 "Russia")))
+			:ARG1 (x18 / force
+				:ARG1-of (x17 / rise-01
+					:location (x21 / country
+						:name (n2 / name
+							:op1 "Soviet"
+							:op2 "Union")))))))
+
+# ::id 79
+# ::snt Mr. Bush , who has struggled for two years to balance relations between his friend Mr. Gorbachev and the unabashedly pro-Western Mr. Yeltsin , confirmed that relations with Mr. Yeltsin will now be different
+(x25 / confirm-01
+	:ARG0 (x2 / person
+		:name (n / name
+			:op1 "Bush")
+		:null_edge (x1 / null_tag)
+		:ARG0-of (x6 / struggle-02
+			:ARG1 (x11 / balance-01
+				:duration (x9 / temporal-quantity
+					:unit (y / year)
+					:quant 2)
+				:ARG1 (x12 / relation
+					:mod (x15 / friend)
+					:ARG0 (x18 / and
+						:op1 (x17 / person
+							:name (n2 / name
+								:op1 "Gorbachev")
+							:null_edge (x16 / null_tag))
+						:op2 (x23 / person
+							:name (n3 / name
+								:op1 "Yeltsin")
+							:null_edge (x20 / unabashedly)
+							:null_edge (x22 / null_tag)))))))
+	:ARG1 (x34 / differ-02
+		:ARG1 (x27 / relation
+			:prep-with (x30 / person
+				:name (n1 / name
+					:op1 "Yeltsin")
+				:null_edge (x29 / null_tag)))
+		:time (x32 / now)))
+
+# ::id 80
+# ::snt Mr. Gorbachev and the unabashedly pro-Western Mr. Yeltsin  have taken a quantum leap forward now by this man's displayed courage and by easily the most powerful man in the nation  commitment to democracy , President Bush  said at a press conference
+(x38 / say-01
+	:ARG1 (x10 / take-01
+		:ARG0 (x3 / and
+			:op1 (x2 / person
+				:name (n1 / name
+					:op1 "Gorbachev")
+				:null_edge (x1 / null_tag))
+			:op2 (x8 / person
+				:name (n2 / name
+					:op1 "Yeltsin")
+				:null_edge (x5 / unabashedly)
+				:null_edge (x7 / null_tag)))
+		:ARG1 (x13 / leap
+			:mod (x12 / quantum)
+			:direction (x14 / forward))
+		:time (x15 / now)
+		:destination (x21 / courage
+			:ARG0 (x18 / man
+				:mod (x17 / this))
+			:ARG1-of (x20 / display-01)
+			:ARG0 (x28 / man
+				:mod (x27 / powerful
+					:degree (x26 / most))
+				:ARG1-of (x32 / commit-01
+					:ARG2 (x31 / nation)
+					:ARG1 (x34 / democracy)))))
+	:ARG0 (x37 / person
+		:name (n / name
+			:op1 "Bush")
+		:ARG0-of (x36 / have-org-role-91
+			:ARG2 (p / president)))
+	:time (x42 / conference
+		:mod (x41 / press)))
+
+# ::id 81
+# ::snt By moving closer to Mr. Yeltsin , the U.S. inevitably will also be moving closer to the unabashedly pro-Western Mr. Yeltsin  vision for the Soviet Union , which sees the U.S.S.R. as a political umbrella but Russia and the other Soviet republics with vastly expanded freedoms and power ; some republics , particularly the Baltic states , would acquire Mr. Gorbachev and the unabashedly pro-Western Mr. Yeltsin  complete independence from Moscow
+(x / xconcept
+	:x (x49 / and
+		:op1 (x14 / move-01
+			:ARG1 (x2 / move-02
+				:manner (x3 / close-41)
+				:ARG2 (x6 / person
+					:name (n / name
+						:op1 "Yeltsin")
+					:null_edge (x5 / null_tag)))
+			:ARG1 (x9 / country
+				:name (n1 / name
+					:op1 "U.S."))
+			:manner (x10 / inevitably)
+			:mod (x12 / also)
+			:manner (x15 / close-41)
+			:ARG2 (x22 / see-01
+				:op (v / vision)
+				:mod (x18 / unabashedly)
+				:null_edge (x20 / null_tag)
+				:mod (x21 / person
+					:name (n2 / name
+						:op1 "Yeltsin"))
+				:ARG1 (x25 / country
+					:name (n3 / name
+						:op1 "Soviet"
+						:op2 "Union")
+					:ARG1-of (x29 / see-01
+						:ARG1 (x31 / government-organization
+							:name (n4 / name
+								:op1 "U.S.S.R."))
+						:ARG2 (x35 / umbrella
+							:mod (x34 / politics)
+							:ARG1-of (x36 / contrast-01))))))
+		:op2 (x47 / and
+			:op1 (x46 / free-41)
+			:op2 (x48 / power
+				:ARG1-of (x45 / expand-01
+					:manner (x44 / vast))))
+		:op3 (x51 / republic
+			:mod (x50 / some))
+		:op2 (x56 / state
+			:mod (x53 / particular)
+			:location (x55 / world-region
+				:name (n6 / name
+					:op1 "Baltic")))
+		:op4 (x59 / acquire-01
+			:ARG1 (x38 / and
+				:op1 (x37 / country
+					:name (n5 / name
+						:op1 "Russia"))
+				:op2 (x42 / republic
+					:mod (x40 / other)
+					:ARG1-of x45
+					:mod (xap1 / country
+						:ARG0-of (xap0 / name
+							:op1 "Soviet"))))
+			:ARG1 (x62 / and
+				:op1 (x61 / person
+					:name (n8 / name
+						:op1 "Gorbachev")
+					:null_edge (x60 / null_tag))
+				:op2 (x67 / person
+					:name (n9 / name
+						:op1 "Yeltsin")
+					:null_edge (x64 / unabashedly)
+					:null_edge (x66 / null_tag)))
+			:ARG1 (x69 / depend-01
+				:polarity -
+				:ARG1 x62
+				:mod (x68 / complete))
+			:ARG0 (x71 / city
+				:name (n7 / name
+					:op1 "Moscow")))))
+
+# ::id 82
+# ::snt The triumph of Mr. Yeltsin is also likely to give new impetus to proposals for truly radical shock therapy for the Soviet economy , which Mr. Gorbachev avoided
+(x8 / likely
+	:domain (x2 / triumph
+		:poss (x5 / person
+			:name (n / name
+				:op1 "Yeltsin")
+			:null_edge (x4 / null_tag)))
+	:mod (x7 / also)
+	:domain (x14 / thing
+		:ARG1-of (p / propose-01)
+		:ARG1 (x12 / impetus
+			:mod (x11 / new))
+		:ARG1 (x19 / therapy
+			:mod (x17 / radical)
+			:beneficiary (x23 / economy
+				:ARG1-of (x28 / avoid-01
+					:ARG0 (x27 / person
+						:name (n1 / name
+							:op1 "Gorbachev")
+						:null_edge (x26 / null_tag)))
+				:mod (xap2 / country
+					:ARG0-of (xap1 / name
+						:op1 "Soviet")))
+			:ARG1-of (xap0 / be-destined-for-91
+				:ARG2 (x18 / shock-01)))))
+
+# ::id 83
+# ::snt But a new relationship with Mr. Yeltsin does not mean Mr. Bush will abandon President Bush  friendship with Mr. Gorbachev
+(x1 / contrast-01
+	:ARG2 (x10 / mean-01
+		:ARG0 (x4 / relationship
+			:mod (x3 / new)
+			:prep-with (x7 / person
+				:name (n / name
+					:op1 "Yeltsin")
+				:null_edge (x6 / null_tag)))
+		:ARG1 (x14 / abandon-01
+			:ARG0 (x12 / person
+				:name (n1 / name
+					:op1 "Bush")
+				:null_edge (x11 / null_tag))
+			:ARG1 (x16 / person
+				:name (n2 / name
+					:op1 "Bush")
+				:ARG0-of (x15 / have-org-role-91
+					:ARG2 (p / president)))
+			:ARG1 (x17 / friendship
+				:ARG1 (x20 / person
+					:name (n3 / name
+						:op1 "Gorbachev")
+					:null_edge (x19 / null_tag))))))
+
+# ::id 84
+# ::snt In fact , Mr. Gorbachev and the unabashedly pro-Western Mr. Yeltsin  personal bond was evident yesterday when Mr. Bush spoke with the Soviet leader by phone
+(x15 / evident
+	:ARG1 (x6 / and
+		:op1 (x5 / person
+			:name (n / name
+				:op1 "Gorbachev")
+			:null_edge (x4 / null_tag))
+		:op2 (x11 / person
+			:name (n1 / name
+				:op1 "Yeltsin")
+			:null_edge (x8 / unabashedly)
+			:null_edge (x10 / null_tag)))
+	:domain (x13 / bond
+		:mod (x12 / personal))
+	:time (x16 / yesterday)
+	:time (x20 / speak-01
+		:ARG0 (x19 / person
+			:name (n2 / name
+				:op1 "Bush")
+			:null_edge (x18 / null_tag))
+		:medium (x26 / phone
+			:ARG0-of (x24 / lead-02
+				:mod (xap1 / country
+					:ARG0-of (xap0 / name
+						:op1 "Soviet"))))))
+
+# ::id 85
+# ::snt Mr. Bush was in President Bush  boat in the waters off President Bush  vacation home in Maine when Mr. Gorbachev finally was able to return the repeated calls Mr. Bush had made during the coup
+(x7 / boat
+	:domain (x2 / person
+		:name (n / name
+			:op1 "Bush")
+		:null_edge (x1 / null_tag))
+	:prep-under (x6 / person
+		:name (n1 / name
+			:op1 "Bush")
+		:ARG0-of (x5 / have-org-role-91
+			:ARG2 (p / president)))
+	:location (x10 / water
+		:location (x11 / off
+			:op1 (x15 / home
+				:null_edge (x12 / have-org-role-91
+					:ARG2 (p1 / president))
+				:poss (x13 / person
+					:name (n3 / name
+						:op1 "Bush"))
+				:mod (x14 / vacation-01)
+				:location (x17 / state
+					:name (n4 / name
+						:op1 "Maine")))))
+	:ARG0 (x20 / person
+		:name (n2 / name
+			:op1 "Gorbachev")
+		:null_edge (x19 / null_tag))
+	:condition (x23 / possible
+		:time (x21 / final)
+		:domain (x25 / return-01
+			:ARG1 x20
+			:ARG1 (x28 / call
+				:ARG1-of (x27 / repeat-01)
+				:ARG0 (x30 / person
+					:name (n5 / name
+						:op1 "Bush")
+					:null_edge (x29 / null_tag))
+				:ARG1 (x35 / coup)))))
+
+# ::id 86
+# ::snt Mr. Bush went ashore and took the call in the bedroom of President Bush  home , with Barbara Bush at President Bush  side
+(x5 / and
+	:op1 (x3 / go-02
+		:ARG0 (x2 / person
+			:name (n / name
+				:op1 "Bush")
+			:null_edge (x1 / null_tag))
+		:direction (x4 / ashore)
+		:ARG4 (x18 / name
+			:op1 "Barbara"
+			:op2 "Bush"
+			:ARG0-of (x8 / call-03
+				:ARG2 (x11 / bedroom
+					:poss (x14 / person
+						:name (n2 / name
+							:op1 "Bush")
+						:ARG0-of (x13 / have-org-role-91
+							:ARG2 (p1 / president)))))
+			:ARG0-of (x15 / home)
+			:ARG0-of (x23 / side
+				:null_edge (x21 / have-org-role-91
+					:ARG2 (p / president))
+				:mod (x22 / person
+					:name (n1 / name
+						:op1 "Bush"))))))
+
+# ::id 87
+# ::snt Later , President Bush  told aides the conversation was an emotional one in which Mr. Gorbachev was effusive in his thanks for American support during the unrest
+(xap0 / multi-sentence
+	:snt1 (x5 / tell-01
+		:time (x1 / late)
+		:ARG0 (x4 / person
+			:name (n / name
+				:op1 "Bush")
+			:ARG0-of (x3 / have-org-role-91
+				:ARG2 (p / president)))
+		:ARG2 (x6 / have-org-role-91
+			:ARG2 (a / aide))
+		:time (x11 / emotion
+			:domain (x18 / effusive
+				:domain (x16 / person
+					:name (n1 / name
+						:op1 "Gorbachev")
+					:null_edge (x15 / null_tag))
+				:domain (x24 / support-01
+					:ARG0 x16
+					:ARG1 (x27 / unrest)))))
+	:snt1 (x8 / converse-01))
+
+# ::id 88
+# ::snt The personal thing kicked in , says one administration official
+(x7 / say-01
+	:ARG1 (x4 / kick-03
+		:ARG1 (x3 / thing
+			:mod (x2 / personal)))
+	:ARG0 (xap0 / government-organization
+		:ARG0-of (x9 / administer-01)
+		:ARG0-of (x10 / have-org-role-91
+			:ARG2 (o / official)
+			:quant 1)))
+
+# ::id 89
+# ::snt The personal thing  was emotional for both of his aides
+(x5 / emotion
+	:domain (x3 / thing
+		:mod (x2 / personal))
+	:null_edge (x10 / have-org-role-91
+		:ARG2 (a / aide)))
+
+# ::id 90
+# ::snt Later , an obviously relieved Mr. Bush declared that freedom and democracy have prevailed
+(x8 / declare-01
+	:time (x1 / late)
+	:ARG0 (x7 / person
+		:name (n / name
+			:op1 "Bush")
+		:ARG1-of (x5 / relieve-01
+			:ARG1-of (x4 / obvious-41))
+		:null_edge (x6 / null_tag))
+	:ARG1 (x14 / prevail-01
+		:ARG1 (x11 / and
+			:op1 (x10 / free-41)
+			:op2 (x12 / democracy))))
+
+# ::id 91
+# ::snt And an obviously relieved Mr. Bush  insisted that there is not any Gorbachev versus Yeltsin battle
+(x1 / and
+	:op2 (x7 / insist-01
+		:ARG0 (x6 / person
+			:name (n / name
+				:op1 "Bush")
+			:ARG1-of (x4 / relieve-01
+				:ARG1-of (x3 / obvious-41))
+			:null_edge (x5 / null_tag))
+		:ARG1 (x16 / battle-01
+			:mod (x12 / any)
+			:name (x13 / name
+				:op1 "Gorbachev"
+				:op2 "versus"
+				:op3 "Yeltsin"))))
+
+# ::id 92
+# ::snt Moreover , it is not just Mr. Bush who still has a strong link to Mr. Gorbachev
+(x8 / person
+	:name (n / name
+		:op1 "Bush")
+	:prep-without (x1 / moreover)
+	:domain (x3 / it)
+	:mod (x6 / just)
+	:null_edge (x7 / null_tag)
+	:ARG0-of (x11 / have-03
+		:time (x10 / still)
+		:ARG1 (x14 / link-01
+			:mod (x13 / strong)
+			:ARG1 (x17 / person
+				:name (n1 / name
+					:op1 "Gorbachev")
+				:null_edge (x16 / null_tag)))))
+
+# ::id 93
+# ::snt If anything , West European leaders have been even more committed to Mr. Gorbachev
+(x11 / commit-01
+	:manner (x2 / anything)
+	:ARG1 (x6 / person
+		:ARG0-of (l / lead-02)
+		:ARG1 (x4 / world-region
+			:name (n1 / name
+				:op1 "West"))
+		:ARG1 (x5 / organization
+			:name (n2 / name
+				:op1 "European")))
+	:degree (x10 / more
+		:mod (x9 / even))
+	:ARG2 (x14 / person
+		:name (n / name
+			:op1 "Gorbachev")
+		:null_edge (x13 / null_tag)))
+
+# ::id 94
+# ::snt West European leaders  worry about any push for radical Soviet changes that might produce chaos and instability on West European leaders  eastern borders and a possible halt to the withdrawal of Soviet troops from German soil
+(x4 / worry-01
+	:ARG0 (x3 / person
+		:ARG0-of (l / lead-02)
+		:ARG1 (x1 / world-region
+			:name (n / name
+				:op1 "West"))
+		:ARG1 (x2 / continent
+			:name (n1 / name
+				:op1 "European")))
+	:ARG0 (x7 / thing
+		:ARG0-of (p / push-02)
+		:mod (x6 / any)
+		:ARG2 (x11 / change-01
+			:mod (x9 / radical)
+			:ARG0-of (x14 / produce-01
+				:ARG1 (x16 / and
+					:op1 (x15 / chaos)
+					:op2 (x17 / instability))
+				:ARG1 (x24 / and
+					:op2 (x21 / person
+						:ARG0-of (l1 / lead-02)
+						:ARG1 (x19 / world-region
+							:name (n2 / name
+								:op1 "West"))
+						:ARG1 (x20 / continent
+							:name (n3 / name
+								:op1 "European")))
+					:op1 (x23 / border
+						:mod (x22 / east))
+					:op2 (x27 / halt-01
+						:mod (x26 / possible)
+						:purpose (x30 / withdraw-01
+							:ARG1 (x33 / troop
+								:mod (xap3 / country
+									:ARG0-of (xap2 / name
+										:op1 "Soviet")))
+							:ARG2 (x36 / soil
+								:mod (x35 / country
+									:name (n4 / name
+										:op1 "Germany")))))
+					:op1 (xap1 / country
+						:ARG0-of (xap0 / name
+							:op1 "Soviet")))))))
+
+# ::id 95
+# ::snt That means that an American drift closer to Mr. Yeltsin is not risk-free
+(xap0 / multi-sentence
+	:snt3 (x2 / mean-01
+		:ARG0 (x1 / that)
+		:ARG1 (x13 / risk-free
+			:domain (x6 / drift-01
+				:mod (x5 / country
+					:name (n / name
+						:op1 "American"))
+				:time (x7 / close-06
+					:ARG2 (x10 / person
+						:name (n1 / name
+							:op1 "Yeltsin")
+						:null_edge (x9 / null_tag)))))))
+
+# ::id 96
+# ::snt an American drift  could produce strains and differences in approach between Washington and an American drift  European allies if the drift is too pronounced
+(x4 / possible
+	:domain (x5 / produce-01
+		:ARG0 (x3 / drift-01
+			:mod (x2 / country
+				:name (n / name
+					:op1 "American")))
+		:ARG1 (x7 / and
+			:op1 (x6 / strain
+				:location (x10 / approach-02))
+			:op2 (x8 / differ-02)
+			:op2 (x13 / and
+				:op1 (x12 / city
+					:name (n1 / name
+						:op1 "Washington"))
+				:op2 (x18 / ally-01
+					:null_edge (x15 / country
+						:name (n2 / name
+							:op1 "American"))
+					:ARG1 (x16 / drift-01)
+					:name (x17 / name
+						:op1 "European")))))
+	:condition (x24 / pronounced
+		:domain (x21 / drift-01)
+		:degree (x23 / too)))
+
+# ::id 97
+# ::snt Still , there probably is not any way for Mr. Bush to avoid moving closer to the policies and tactics Mr. Yeltsin espouses
+(x4 / probable
+	:domain (x8 / way
+		:mod (x7 / any)
+		:purpose (x13 / avoid-01
+			:ARG0 (x11 / person
+				:name (n / name
+					:op1 "Bush")
+				:null_edge (x10 / null_tag))
+			:ARG1 (x14 / move-01
+				:manner (x15 / close-41)
+				:ARG2 (x19 / and
+					:op1 (x18 / policy
+						:location-of (x23 / espouse
+							:ARG0 (x22 / person
+								:name (n1 / name
+									:op1 "Yeltsin")
+								:null_edge (x21 / null_tag))))
+					:op2 (x20 / tactic))))))
+
+# ::id 98
+# ::snt Boris Yeltsin's actions during this coup attempt the unabashedly pro-Western Mr. Yeltsin  courage and the unabashedly pro-Western Mr. Yeltsin  ability to exercise charismatic leadership offer the greatest possible hope of some leadership for the future , said Sen. Richard Lugar yesterday
+(x38 / say-01
+	:ARG1 (x26 / offer-01
+		:ARG1 (x30 / hope-01
+			:ARG0 (x1 / name
+				:op1 "Boris"
+				:op2 "Yeltsin"
+				:ARG0-of (x8 / attempt-01
+					:mod (x6 / this)
+					:ARG1 (x7 / coup)
+					:ARG1 (x23 / exercise-01
+						:ARG0 (x15 / and
+							:op1 (x14 / courage
+								:mod (x10 / unabashedly)
+								:null_edge (x12 / null_tag))
+							:op2 (xap0 / capable-41
+								:op1 (x18 / organization
+									:name (n1 / name
+										:op1 "pro-Western")
+									:null_edge (x17 / unabashedly))
+								:null_edge (x19 / null_tag)))
+						:ARG1 (x25 / lead-02
+							:mod (x24 / charisma)))))
+			:mod (x29 / possible
+				:mod (x28 / great
+					:degree (m / most)))
+			:ARG1 (x33 / lead-02
+				:mod (x32 / some)
+				:time (x36 / future))
+			:ARG0 (x41 / person
+				:name (n / name
+					:op1 "Lugar")
+				:null_edge (x39 / sen.)
+				:null_edge (x40 / null_tag))))
+	:time (x42 / yesterday))
+
+# ::id 99
+# ::snt Sen. Richard  own view is that , by and large , Gorbachev is a spent force
+(x4 / view-02
+	:ARG0 (x1 / sen.)
+	:null_edge (x2 / null_tag)
+	:ARG1-of (x15 / spend-00
+		:ARG1 (x16 / force
+			:ARG2 (x9 / and
+				:time (x8 / by)
+				:op2 (x10 / large))
+			:domain (x12 / person
+				:name (n / name
+					:op1 "Gorbachev")))))
+
+# ::id 100
+# ::snt As it became apparent that the coup was falling apart , some of those in the Soviet Union who had supported the -LCB- coup -RCB-  rushed for cover
+(x3 / become-01
+	:ARG2 (x4 / apparent
+		:domain (x9 / fall-01
+			:ARG1 (x7 / coup)))
+	:ARG2 (x26 / rush-01
+		:ARG0 (x12 / some
+			:ARG1-of (x13 / include-91
+				:ARG2 (x21 / support-01
+					:ARG0 (x17 / country
+						:name (n / name
+							:op1 "Soviet"
+							:op2 "Union"))
+					:ARG1 (x24 / coup))))
+		:ARG2 (x28 / cover-04)))
+
+# ::id 101
+# ::snt Prime Minister Valentin Pavlov , a member of the eight-man committee , was said by Valentin Pavlov  deputy to have agreed to take part in the coup because Valentin Pavlov  had been misled by the information on the state of health of the Soviet president
+(x14 / say-01
+	:name (x3 / name
+		:op1 "Valentin"
+		:op2 "Pavlov"
+		:ARG0-of (x2 / have-org-role-91
+			:ARG2 (m / minister)
+			:mod (x1 / prime))
+		:ARG0-of (x7 / member
+			:ARG1 (x11 / committee
+				:mod (x10 / eight-man))))
+	:ARG0 (x16 / person
+		:name (n / name
+			:op1 "Valentin")
+		:ARG0-of (x18 / have-org-role-91
+			:ARG2 (d / deputy)))
+	:ARG1 (x21 / agree-01
+		:ARG1 (x27 / coup)
+		:ARG1-of (x28 / cause-01)
+		:time (x33 / mislead-01
+			:ARG1 (x29 / name
+				:op1 "Valentin"
+				:op2 "Pavlov")
+			:ARG2 (x36 / information
+				:topic (x39 / state
+					:mod (x41 / health
+						:poss (xap1 / country
+							:ARG0-of (x45 / have-org-role-91
+								:ARG2 (p / president))
+							:ARG0-of (xap0 / name
+								:op1 "Soviet"))))))))
+
+# ::id 102
+# ::snt Senior officials of the Soviet Communist Party , which is believed to have played a supporting role in the takeover , quickly distanced Senior officials of the Soviet Communist Party , which is believed to have played a supporting role in the takeover  from the coup leaders and declared the action to have been unlawful
+(x48 / and
+	:op1 (x23 / distance-01
+		:manner (x22 / quick)
+		:ARG2 (x47 / person
+			:ARG0-of (l / lead-02)
+			:ARG1 (x46 / coup))
+		:ARG0 (xap2 / person
+			:ARG0-of (x2 / have-org-role-91
+				:ARG2 (o / official)
+				:mod (x1 / senior)
+				:ARG1 (x6 / political-party
+					:name (n / name
+						:op1 "Communist"
+						:op2 "Party")
+					:ARG1-of (x14 / play-03
+						:ARG1-of (x11 / believe-01)
+						:ARG1 (x17 / role
+							:ARG0-of (x16 / support-01)
+							:domain (x20 / take-12)))
+					:mod (xap1 / country
+						:ARG0-of (xap0 / name
+							:op1 "Soviet")))))
+		:ARG0 (xap5 / person
+			:ARG0-of (x25 / have-org-role-91
+				:ARG2 (o1 / official)
+				:mod (x24 / senior)
+				:ARG1 (x29 / political-party
+					:name (n1 / name
+						:op1 "Communist"
+						:op2 "Party")
+					:ARG1-of (x37 / play-03
+						:ARG1-of (x34 / believe-01)
+						:ARG1 (x40 / role
+							:ARG0-of (x39 / support-01)
+							:domain (x43 / take-12)))
+					:mod (xap4 / country
+						:ARG0-of (xap3 / name
+							:op1 "Soviet"))))))
+	:op2 (x49 / declare-02
+		:ARG1 (x55 / unlawful
+			:domain (x51 / action))))
+
+# ::id 103
+# ::snt Sensing that reprisals could be in the air , Senior officials of the Soviet Communist Party , which is believed to have played a supporting role in the takeover  also warned against jumping to hasty conclusions about who is guilty
+(x31 / warn-01
+	:ARG1 (x1 / sense-01
+		:ARG1 (x3 / reprisal
+			:mod (x4 / possible)
+			:location (x8 / air)))
+	:mod (x30 / also)
+	:ARG1 (x33 / jump-08
+		:ARG1 (x36 / thing
+			:ARG1-of (c / conclude-01)
+			:mod (x35 / hasty)
+			:ARG1 (x40 / guilty-41)))
+	:ARG0 (xap2 / person
+		:ARG0-of (x11 / have-org-role-91
+			:ARG2 (o / official)
+			:mod (x10 / senior)
+			:ARG1 (x15 / political-party
+				:name (n / name
+					:op1 "Communist"
+					:op2 "Party")
+				:ARG1-of (x23 / play-03
+					:ARG1-of (x20 / believe-01)
+					:ARG1 (x26 / role
+						:ARG0-of (x25 / support-01)
+						:domain (x29 / take-12)))
+				:mod (xap1 / country
+					:ARG0-of (xap0 / name
+						:op1 "Soviet"))))))
+
+# ::id 104
+# ::snt Some forces will probably try to use the situation to strike a blow at the Soviet Communist Party , said Sergei Kalashnikov , a nervous secretary of the party's central committee
+(x20 / say-01
+	:ARG1 (x5 / try-01
+		:ARG0 (x2 / force
+			:quant (x1 / some))
+		:mod (x4 / probable)
+		:ARG1 (x7 / use-01
+			:ARG0 x2
+			:ARG1 (x9 / situation)
+			:ARG2 (x11 / strike-01
+				:ARG1 (x13 / blow
+					:location (x17 / political-party
+						:name (n1 / name
+							:op1 "Communist"
+							:op2 "Party")
+						:mod (xap1 / country
+							:ARG0-of (xap0 / name
+								:op1 "Soviet")))))))
+	:ARG0 (x21 / person
+		:name (n / name
+			:op1 "Sergei"
+			:op2 "Kalashnikov")
+		:ARG0-of (x26 / have-org-role-91
+			:ARG2 (s / secretary)
+			:mod (x25 / nervous)
+			:ARG2-of (x32 / committee
+				:part-of (x29 / party)
+				:mod (x31 / central)))))
+
+# ::id 105
+# ::snt Sergei Kalashnikov  said the coup leaders should not be described as a junta , but acknowledged that the eight coup leaders  had blundered in a difficult situation
+(x3 / say-01
+	:ARG0 (x1 / person
+		:name (n / name
+			:op1 "Sergei"
+			:op2 "Kalashnikov"))
+	:null_edge (x15 / contrast-01
+		:ARG2 (x7 / recommend-01
+			:ARG1 (x10 / describe-01
+				:ARG1 (x6 / person
+					:ARG0-of (l / lead-02)
+					:ARG1 (x5 / coup))
+				:ARG2 (x13 / junta)))
+		:ARG2 (x16 / acknowledge-01
+			:ARG1 (x23 / blunder
+				:ARG0 (x21 / person
+					:ARG0-of (l1 / lead-02)
+					:quant 8
+					:ARG1 (x20 / coup))
+				:ARG1 (x27 / situation
+					:mod (x26 / difficult))))))
+
+# ::id 106
+# ::snt In fact , both sympathizers and opponents of the coup were united in a belief that the whole affair had been handled with extraordinary clumsiness
+(x12 / unite-01
+	:ARG1 (x6 / and
+		:op1 (x5 / sympathizer
+			:ARG1 (x10 / coup))
+		:op2 (x7 / person
+			:ARG0-of (o / oppose-01)))
+	:location (x15 / believe-01
+		:ARG1 (x22 / handle-01
+			:ARG1 (x19 / affair
+				:mod (x18 / whole))
+			:ARG1 (x25 / clumsiness
+				:mod (x24 / extraordinary)))))
+
+# ::id 107
+# ::snt The emergency committee clearly failed to anticipate the fierce reaction from Mr. Yeltsin and the general public
+(x5 / fail-01
+	:ARG0 (x3 / committee
+		:mod (x2 / emergency))
+	:manner (x4 / clear)
+	:ARG2 (x7 / anticipate-01
+		:ARG0 x3
+		:ARG1 (x10 / react-01
+			:manner (x9 / fierce)
+			:ARG0 (x14 / and
+				:op1 (x13 / person
+					:name (n / name
+						:op1 "Yeltsin")
+					:null_edge (x12 / null_tag))
+				:op3 (x17 / public
+					:mod (x16 / general))))))
+
+# ::id 108
+# ::snt And once The emergency committee  came , The emergency committee  seemed at a loss as to how to deal with The emergency committee  and lacked the nerve to carry out a bloody assault on the Russian Parliament , the focus of protest
+(x1 / and
+	:op2 (x24 / and
+		:op1 (x11 / seem-01
+			:time (x6 / come-03
+				:ARG1 (x5 / committee
+					:mod (x4 / emergency)))
+			:ARG0 (x10 / committee
+				:mod (x9 / emergency))
+			:time (xap0 / say-01
+				:ARG0 (x19 / deal-01
+					:ARG1 (x23 / committee
+						:mod (x22 / emergency)))))
+		:op2 (x25 / lack-01
+			:ARG0 x10
+			:ARG1 (x27 / nerve)
+			:purpose (x29 / carry-03
+				:ARG1 (x33 / assault-01
+					:mod (x32 / bloody-01)
+					:ARG1 (x37 / government-organization
+						:name (n / name
+							:op1 "Parliament")
+						:ARG1 (x36 / country
+							:name (n1 / name
+								:op1 "Russia"))
+						:ARG2-of (x40 / focus-01
+							:ARG1 (x42 / protest-01))))))))
+
+# ::id 109
+# ::snt Mr. Yeltsin and the general public  must admit that mistakes by the junta let Mr. Yeltsin and the general public  gather people and continue disseminating information , said Gleb Yakunin , a Russian Orthodox priest and reform-minded member of the Russian Parliament
+(x28 / say-01
+	:ARG1 (x8 / admit-01
+		:ARG0 (x3 / and
+			:op1 (x2 / person
+				:name (n1 / name
+					:op1 "Yeltsin")
+				:null_edge (x1 / null_tag))
+			:op2 (x6 / public
+				:mod (x5 / general)))
+		:ARG1 (x14 / let-01
+			:ARG0 (x10 / mistake-01
+				:ARG0 (x13 / junta))
+			:ARG1 (x23 / and
+				:op1 (x21 / gather-01
+					:ARG0 (x17 / and
+						:op1 (x16 / person
+							:name (n6 / name
+								:op1 "Yeltsin")
+							:null_edge (x15 / null_tag))
+						:op2 (x20 / public
+							:mod (x19 / general))))
+				:op2 (x24 / continue-01
+					:ARG1 (x25 / disseminate
+						:ARG1 (x26 / information))))))
+	:ARG1 (x36 / and
+		:op1 (x29 / newspaper
+			:name (n / name
+				:op1 "Gleb"
+				:op2 "Yakunin"))
+		:op2 (x35 / priest
+			:mod (x33 / country
+				:name (n2 / name
+					:op1 "Russia"))
+			:mod (x34 / organization
+				:name (n3 / name
+					:op1 "Orthodox"))
+			:ARG0-of (x38 / member
+				:ARG1 x33
+				:mod (x37 / reform-minded)
+				:ARG1 (x42 / government-organization
+					:name (n4 / name
+						:op1 "Parliament")
+					:ARG1 (x41 / country
+						:name (n5 / name
+							:op1 "Russia")))))))
+
+# ::id 110
+# ::snt The coup leaders also alienated some potential hard-line allies by saying the eight coup leaders  planned to continue with Mr. Gorbachev's policies
+(x5 / alienate-01
+	:ARG0 (x3 / person
+		:ARG0-of (l / lead-02)
+		:ARG1 (x2 / coup))
+	:mod (x4 / also)
+	:ARG1 (x9 / ally
+		:quant (x6 / some)
+		:mod (x7 / potential)
+		:mod (x8 / hard-line))
+	:ARG1 (x16 / plan-01
+		:ARG0 (x15 / person
+			:ARG0-of (l1 / lead-02)
+			:quant 8
+			:ARG1 (x14 / coup))
+		:ARG1 (x18 / continue-01
+			:ARG1 (x23 / policy
+				:poss (x21 / person
+					:name (n / name
+						:op1 "Gorbachev")
+					:null_edge (x20 / null_tag))))))
+
+# ::id 111
+# ::snt The committee was created because of the catastrophic situation in the country caused by Gorbachev's policies , said Col. Viktor Alksnis , a critic of the Soviet president and leader of the Soyuz parliamentary group
+(x19 / say-01
+	:ARG1 (x30 / and
+		:op1 (x4 / create-01
+			:ARG1 (x2 / committee)
+			:ARG1-of (x5 / cause-01
+				:ARG0 (x9 / situation
+					:mod (x8 / catastrophic)
+					:location (x12 / country
+						:ARG1-of (x13 / cause-01
+							:ARG0 (x17 / policy
+								:poss (x15 / person
+									:name (n2 / name
+										:op1 "Gorbachev"))))))))
+		:op1 (x21 / newspaper
+			:name (n / name
+				:op1 "Viktor"
+				:op2 "Alksnis")
+			:ARG0-of (x20 / col.))
+		:op2 (x25 / person
+			:ARG0-of (c / criticize-01)
+			:ARG1 (xap1 / country
+				:ARG0-of (x29 / have-org-role-91
+					:ARG2 (p / president))
+				:ARG0-of (xap0 / name
+					:op1 "Soviet")))
+		:op2 (x31 / lead-02
+			:ARG1 (x36 / group
+				:name (x34 / name
+					:op1 "Soyuz")
+				:mod (x35 / government-organization
+					:name (n1 / name
+						:op1 "parliamentary"))))))
+
+# ::id 112
+# ::snt But Yanayev publicly praised Gorbachev
+(x1 / contrast-01
+	:ARG2 (x4 / praise-01
+		:ARG0 (x2 / person
+			:name (n / name
+				:op1 "Yanayev"))
+		:manner (x3 / public)
+		:ARG1 (x5 / person
+			:name (n1 / name
+				:op1 "Gorbachev"))))
+
+# ::id 113
+# ::snt If Gennady Yanayev  was so good , where was the need to get rid of Gennady Yanayev  ?
+(x6 / good
+	:ARG2 (x2 / newspaper
+		:name (n / name
+			:op1 "Gennady"
+			:op2 "Yanayev"))
+	:ARG2 (x11 / need-01
+		:ARG1 (x13 / get-03
+			:ARG2 (x14 / rid-01
+				:name (x16 / name
+					:op1 "Gennady"
+					:op2 "Yanayev")))))
+
+# ::id 114
+# ::snt According to several sources , Marshal Dmitri Yazov , the defense minister and a member of the eight-man committee , may have played an important role in bringing about the coup's collapse
+(x21 / possible
+	:domain (x23 / play-08
+		:ARG0 (x4 / source
+			:quant (x3 / several))
+		:ARG0 (x7 / newspaper
+			:name (n / name
+				:op1 "Dmitri"
+				:op2 "Yazov")
+			:ARG0-of (x6 / marshal
+				:topic (x13 / and
+					:op1 (x12 / have-org-role-91
+						:ARG2 (m / minister)
+						:mod (x11 / defense))
+					:op2 (x15 / member
+						:ARG1 (x19 / committee
+							:mod (x18 / eight-man))))))
+		:ARG1 (x26 / role
+			:mod (x25 / important)
+			:ARG0-of (x28 / bring-01
+				:ARG2 (x33 / collapse-01
+					:ARG1 (x31 / coup))))))
+
+# ::id 115
+# ::snt Defense Minister Dmitri Yazov  appears to have had major reservations about ordering troops to attack the parliament building
+(x5 / appear-02
+	:ARG1 (x8 / have-org-role-91
+		:ARG0 (x3 / newspaper
+			:name (n / name
+				:op1 "Dmitri"
+				:op2 "Yazov")
+			:ARG0-of (x2 / have-org-role-91
+				:ARG2 (m / minister)
+				:mod (x1 / defense)))
+		:ARG1 (x10 / reservation
+			:mod (x9 / major)
+			:topic (x12 / order-02
+				:ARG1 (x13 / troop)
+				:purpose (x15 / attack-01
+					:ARG0 x13
+					:ARG1 (x18 / building
+						:mod (x17 / parliament)))))))
+
+# ::id 116
+# ::snt It seems to Konstantin Kobets , the head of the Russian defense committee who is well connected with the army's general staff  that Yazov was just sucked into a political game
+(x2 / seem-01
+	:ARG2 (x4 / name
+		:op1 "Konstantin"
+		:op2 "Kobets"
+		:ARG0-of (x8 / head-01
+			:ARG1 (x13 / committee
+				:mod (x12 / defense
+					:ARG1 (x11 / country
+						:name (n / name
+							:op1 "Russia"))))
+			:ARG1-of (x17 / connect-01
+				:ARG1 (x23 / person
+					:ARG2-of (s / staff-01)
+					:poss (x20 / army)
+					:mod (x22 / general)
+					:ARG1-of (x28 / suck-01
+						:ARG1 (x25 / person
+							:name (n1 / name
+								:op1 "Yazov"))
+						:mod (x27 / just)
+						:ARG1 (x32 / game
+							:mod (x31 / politics))))))))
+
+# ::id 117
+# ::snt Defense Minister Dmitri Yazov  did not want bloodshed , said Konstantin Kobets , the head of the Russian defense committee who is well connected with the army's general staff
+(x10 / say-01
+	:ARG1 (x7 / want-01
+		:ARG0 (x3 / newspaper
+			:name (n1 / name
+				:op1 "Dmitri"
+				:op2 "Yazov")
+			:ARG0-of (x2 / have-org-role-91
+				:ARG2 (m / minister)
+				:mod (x1 / defense)))
+		:ARG1 (x8 / blood))
+	:ARG0 (x11 / newspaper
+		:name (n / name
+			:op1 "Konstantin"
+			:op2 "Kobets")
+		:ARG0-of (x15 / head-01
+			:ARG1 (x20 / committee
+				:mod (x19 / defense
+					:ARG1 (x18 / country
+						:name (n2 / name
+							:op1 "Russia"))))
+			:ARG1-of (x24 / connect-01
+				:ARG1 (x30 / person
+					:ARG2-of (s / staff-01)
+					:poss (x27 / army)
+					:mod (x29 / general))))))
+
+# ::id 118
+# ::snt The future of the entire army now seems certain to become a serious point of contention as Mr. Yeltsin , Mr. Gorbachev and leaders of the other republics move to build a new federal structure
+(x8 / seem-01
+	:time (x2 / future
+		:poss (x6 / army
+			:mod (x5 / entire)))
+	:ARG1 (x11 / become-01
+		:time (x7 / now)
+		:ARG2 (x14 / point
+			:mod (x13 / serious)
+			:ARG1-of (x16 / contend-02)
+			:condition (x29 / move-01
+				:ARG0 (x23 / and
+					:op1 (x19 / person
+						:name (n / name
+							:op1 "Yeltsin")
+						:null_edge (x18 / null_tag))
+					:op2 (x22 / person
+						:name (n1 / name
+							:op1 "Gorbachev")
+						:null_edge (x21 / null_tag))
+					:op2 (x24 / person
+						:ARG0-of (l / lead-02)
+						:ARG1 (x28 / republic
+							:mod (x27 / other))))
+				:purpose (x31 / build-01
+					:ARG0 x23
+					:ARG1 (x35 / structure
+						:mod (x33 / new)
+						:mod (x34 / government-organization
+							:name (n2 / name
+								:op1 "federal"))))))))
+
+# ::id 119
+# ::snt Until the failed coup , there had been a tacit agreement to preserve a single army
+(x11 / agree-01
+	:time (x1 / until
+		:op1 (x4 / coup
+			:ARG1-of (x3 / fail-01)))
+	:mod (x10 / tacit)
+	:ARG1 (x13 / preserve-01
+		:ARG1 (x16 / army
+			:mod (x15 / single))))
+
+# ::id 120
+# ::snt But the events of the past few days have driven home to Mr. Yeltsin and his aides how vulnerable Mr. Yeltsin and his aides  are without some defense force of Mr. Yeltsin and his aides  own
+(x1 / contrast-01
+	:ARG2 (x10 / drive-02
+		:ARG0 (x3 / event
+			:time (x6 / past
+				:null_edge (x7 / few
+					:op1 (x8 / temporal-quantity
+						:unit (d / day)))))
+		:ARG4 (x11 / home)
+		:ARG2 (x15 / and
+			:op1 (x14 / person
+				:name (n / name
+					:op1 "Yeltsin")
+				:null_edge (x13 / null_tag))
+			:op2 (x17 / have-org-role-91
+				:ARG2 (a / aide)))
+		:ARG2 (x19 / vulnerable
+			:prep-to (x22 / and
+				:op1 (x21 / person
+					:name (n1 / name
+						:op1 "Yeltsin")
+					:null_edge (x20 / null_tag))
+				:op2 (x24 / have-org-role-91
+					:ARG2 (a1 / aide)))
+			:quant-of (x29 / force
+				:mod (x27 / some)
+				:mod (x28 / defense)
+				:poss (x33 / and
+					:op1 (x32 / person
+						:name (n2 / name
+							:op1 "Yeltsin")
+						:null_edge (x31 / null_tag))
+					:op2 (x35 / have-org-role-91
+						:ARG2 (a2 / aide)))))))
+
+# ::id 121
+# ::snt Mr. Kobets and other top Russian officials now talk about the need to form a Russian national guard
+(x9 / talk-01
+	:ARG0 (x3 / and
+		:op1 (x2 / person
+			:name (n / name
+				:op1 "Kobets")
+			:null_edge (x1 / null_tag)
+			:ARG0-of (x7 / have-org-role-91
+				:ARG2 (o / official)
+				:mod (x4 / other)
+				:mod (x5 / top)
+				:ARG1 (x6 / country
+					:name (n2 / name
+						:op1 "Russia")))))
+	:time (x8 / now)
+	:ARG1 (x12 / need-01
+		:ARG1 (x18 / guard-01
+			:ARG0 (x16 / country
+				:name (n1 / name
+					:op1 "Russia"))
+			:mod (x17 / nation))))
+
+# ::id 122
+# ::snt And some radicals want Mr. Yeltsin to take another , far more critical look at the entire union treaty the unabashedly pro-Western Mr. Yeltsin  , Mr. Gorbachev and two other republican leaders had been expected to sign on Tuesday
+(x1 / and
+	:op2 (x4 / want-01
+		:ARG0 (x3 / radical
+			:quant (x2 / some))
+		:ARG1 (x8 / take-01
+			:ARG0 x3
+			:ARG1 (x14 / look-01
+				:ARG1 (x6 / person
+					:name (n / name
+						:op1 "Yeltsin")
+					:null_edge (x5 / null_tag))
+				:mod (x9 / another)
+				:mod (x13 / critical
+					:degree (x12 / more))
+				:ARG1 (x19 / treaty
+					:mod (x17 / entire)
+					:mod (x18 / union)
+					:ARG2-of (x35 / expect-01
+						:ARG1 (x28 / and
+							:op1 (x24 / person
+								:name (n1 / name
+									:op1 "Yeltsin")
+								:null_edge (x21 / unabashedly)
+								:null_edge (x23 / null_tag))
+							:op2 (x27 / person
+								:name (n2 / name
+									:op1 "Gorbachev")
+								:null_edge (x26 / null_tag))
+							:op3 (x32 / person
+								:ARG0-of (l / lead-02)
+								:quant 2
+								:mod (x30 / other)))
+						:ARG1 (x37 / sign-02
+							:time (xap0 / date-entity
+								:weekday (x39 / tuesday)))))))))
+
+# ::id 123
+# ::snt The treaty is designed to transfer some powers from the central government to the republics , and is believed to have precipitated the coup
+(x17 / and
+	:op1 (x4 / design-01
+		:ARG1 (x2 / treaty)
+		:ARG3 (x6 / transfer-01
+			:ARG0 x2
+			:ARG1 (x8 / power
+				:quant (x7 / some))
+			:ARG2 (x12 / government-organization
+				:ARG0-of (g / govern-01)
+				:mod (x11 / central))
+			:ARG2 (x15 / republic)))
+	:op2 (x19 / believe-01
+		:ARG0 x2
+		:ARG1 (x22 / precipitate
+			:ARG1 (x24 / coup))))
+
+# ::id 124
+# ::snt Many Russian deputies say Many Russian deputies  do not want the treaty to be signed as the entire union treaty  stands , says Sergei Belosertsev , a reformist member of the republic's legislature
+(x23 / say-01
+	:ARG1 (x4 / say-01
+		:ARG1 (x10 / want-01
+			:ARG1 (x15 / sign-01
+				:ARG1 (x12 / treaty)
+				:ARG0 (x21 / stand-06
+					:ARG1 (x20 / treaty
+						:mod (x18 / entire)
+						:mod (x19 / union))))
+			:ARG1 (xap1 / person
+				:quant (x5 / many)
+				:ARG0-of (x7 / have-org-role-91
+					:ARG2 (d1 / deputy)
+					:mod (x6 / country
+						:name (n1 / name
+							:op1 "Russia")))))
+		:ARG0 (x24 / name
+			:op1 "Sergei"
+			:op2 "Belosertsev"
+			:ARG0-of (x29 / member
+				:mod (x28 / person
+					:ARG0-of (r / reform-01))
+				:ARG1 (x34 / legislate-01
+					:part-of (x32 / republic))))
+		:ARG0 (xap0 / person
+			:quant (x1 / many)
+			:ARG0-of (x3 / have-org-role-91
+				:ARG2 (d / deputy)
+				:mod (x2 / country
+					:name (n / name
+						:op1 "Russia"))))))
+
+# ::id 125
+# ::snt The latest events show how much still has to be done , including the clauses on the army
+(x4 / show-01
+	:ARG0 (x3 / event
+		:time (x2 / late
+			:degree (m / most)))
+	:ARG1 (x8 / have-03
+		:degree (x6 / much)
+		:ARG2 (x11 / do-02
+			:mod (x7 / still))
+		:ARG1 (x15 / clause
+			:ARG1 (x18 / army))))
+
+# ::id 126
+# ::snt Yeltsin will be wiser after the -LCB- coup -RCB-
+(x4 / wiser
+	:domain (x1 / person
+		:name (n / name
+			:op1 "Yeltsin"))
+	:time (x5 / after
+		:op1 (x8 / coup)))
+
+# ::id 127
+# ::snt the unabashedly pro-Western Mr. Yeltsin  was in too much of a hurry before
+(x5 / person
+	:name (n / name
+		:op1 "Yeltsin")
+	:null_edge (x2 / unabashedly)
+	:null_edge (x4 / null_tag)
+	:prep-without (x12 / hurry
+		:mod (x8 / too))
+	:time (x13 / before))
+
+# ::id 128
+# ::snt Whatever the fate of the union treaty , Mr. Yeltsin is already confident about one of its key economic clauses
+(x13 / confident-41
+	:condition (x3 / fate
+		:mod (x1 / whatever)
+		:domain (x7 / treaty
+			:mod (x6 / union)))
+	:ARG1 (x10 / person
+		:name (n / name
+			:op1 "Yeltsin")
+		:null_edge (x9 / null_tag))
+	:time (x12 / already)
+	:ARG2 (x20 / clause
+		:mod (x18 / key)
+		:mod (x19 / economy)))
+
+# ::id 129
+# ::snt the unabashedly pro-Western Mr. Yeltsin  told the Russian Parliament that if the treaty had been signed , President Gorbachev would have immediately handed over jurisdiction of all factories in Russia to the republic
+(x6 / tell-01
+	:ARG0 (x5 / person
+		:name (n / name
+			:op1 "Yeltsin")
+		:null_edge (x2 / unabashedly)
+		:null_edge (x4 / null_tag))
+	:ARG2 (x9 / government-organization
+		:name (n1 / name
+			:op1 "Parliament")
+		:mod (x8 / country
+			:name (n2 / name
+				:op1 "Russia")))
+	:ARG1 (x23 / hand-02
+		:time (x16 / sign-01
+			:ARG1 (x13 / treaty)
+			:ARG1 (x19 / person
+				:name (n3 / name
+					:op1 "Gorbachev")
+				:ARG0-of (x18 / have-org-role-91
+					:ARG2 (p / president))))
+		:ARG0 x19
+		:time (x22 / immediate)
+		:ARG2 (x25 / jurisdiction
+			:ARG0 (x28 / factory
+				:quant (x27 / all)
+				:location (x30 / country
+					:name (n4 / name
+						:op1 "Russia"))
+				:location (x33 / republic)))))
+
+# ::id 130
+# ::snt As a determined Russian Parliament that held firm against tanks and threats  turned out , Mr. Yeltsin went ahead and ordered the transfer the unabashedly pro-Western Mr. Yeltsin
+(x20 / and
+	:op1 (x18 / go-02
+		:time (x13 / turn-02
+			:ARG0 (x5 / government-organization
+				:name (n2 / name
+					:op1 "Parliament")
+				:ARG1-of (x3 / determine-01)
+				:ARG1 (x4 / country
+					:name (n3 / name
+						:op1 "Russia"))
+				:ARG1-of (x7 / hold-04
+					:ARG0 (x8 / firm
+						:prep-against (x11 / and
+							:op1 (x10 / tank)
+							:op2 (x12 / threaten-01)))))
+			:ARG0 (x17 / person
+				:name (n / name
+					:op1 "Yeltsin")
+				:null_edge (x16 / null_tag)))
+		:ARG1 x17
+		:time (x19 / ahead))
+	:op2 (x21 / order-01
+		:ARG0 x17
+		:ARG2 (x23 / transfer-01)
+		:ARG1 (x28 / person
+			:name (n1 / name
+				:op1 "Yeltsin")
+			:null_edge (x25 / unabashedly)
+			:null_edge (x27 / null_tag))))
+
+# ::id 131
+# ::snt the unabashedly pro-Western Mr. Yeltsin  also stole a march on the Soviet president by firing the head of state-run TV , a notorious hard-liner
+(x7 / steal-01
+	:ARG0 (x5 / person
+		:name (n / name
+			:op1 "Yeltsin")
+		:null_edge (x2 / unabashedly)
+		:null_edge (x4 / null_tag))
+	:mod (x6 / also)
+	:ARG1 (x9 / march-01
+		:topic (xap1 / country
+			:ARG0-of (x13 / have-org-role-91
+				:ARG2 (p / president))
+			:ARG0-of (xap0 / name
+				:op1 "Soviet")))
+	:ARG1 (x15 / fire-01
+		:ARG1 (x17 / head
+			:ARG1 (x20 / TV
+				:null_edge (x24 / hard-liner
+					:mod (x23 / notorious-41))
+				:ARG1-of (xap2 / run-01
+					:ARG0 (x19 / state))))))
+
+# ::id 132
+# ::snt For many Russians , though , yesterday was a time to celebrate , not to worry about the future
+(x10 / time
+	:null_edge (x3 / person
+		:mod (c / country
+			:name (n / name
+				:op1 "Russians"))
+		:null_edge (x2 / many))
+	:null_edge (x7 / yesterday)
+	:ARG0-of (x12 / celebrate-02
+		:ARG1 (x16 / worry-01
+			:ARG1 (x19 / future))))
+
+# ::id 133
+# ::snt As barricades began to come down , the libations came out
+(x10 / come-01
+	:time (x3 / begin-01
+		:ARG1 (x2 / barricade)
+		:ARG1 (x5 / come-04
+			:ARG1 x2))
+	:ARG1 (x9 / libation))
+
+# ::id 134
+# ::snt Stepan Kisilyov  am drunk , said Stepan Kisilyov , deputy editor of the reformist weekly , Moscow News , which was banned during the coup
+(x6 / say-01
+	:ARG1 (x4 / drink-01
+		:ARG0 (x1 / newspaper
+			:name (n1 / name
+				:op1 "Stepan"
+				:op2 "Kisilyov")))
+	:ARG0 (x7 / newspaper
+		:name (n / name
+			:op1 "Stepan"
+			:op2 "Kisilyov")
+		:ARG0-of (x11 / editor
+			:mod (x10 / deputy)
+			:ARG1 (xap0 / rate-entity-91
+				:ARG3 (x15 / temporal-quantity
+					:unit (w / week))
+				:null_edge (x18 / null_tag
+					:null_edge (x14 / person
+						:ARG0-of (r / reform-01))
+					:ARG1-of (x22 / ban-01
+						:ARG1 (x25 / coup)))))))
+
+# ::id 135
+# ::snt Speaking over the phone in the early hours of Thursday morning , Stepan Kisilyov  added : The whole editorial board has been drinking cognac all night
+(x15 / add-01
+	:ARG1 (x1 / speak-01
+		:ARG0 (x4 / phone)
+		:time (x8 / temporal-quantity
+			:unit (h / hour)
+			:mod (x7 / early)
+			:part-of (x11 / morning
+				:time (xap0 / date-entity
+					:null_edge (x10 / null_tag))))
+		:ARG0 (x13 / newspaper
+			:name (n / name
+				:op1 "Stepan"
+				:op2 "Kisilyov")))
+	:ARG0 x13
+	:ARG1 (x23 / drink-01
+		:ARG0 (x20 / board
+			:mod (x18 / whole)
+			:mod (x19 / editorial))
+		:ARG1 (x24 / cognac)
+		:time (x26 / night
+			:mod (x25 / all))))
+
+# ::id 136
+# ::snt We won -RSB- We won -RSB- THE AUGUST COUP MONDAY , AUG. 19 Around dawn in Moscow , an eight-member State Committee for the State of Emergency , headed by Vice President Gennady Yanayev , says dawn in Moscow , an eight-member  has taken over all power in the Soviet Union
+(x36 / say-01
+	:ARG1 (x2 / win-01
+		:ARG0 (x1 / we)
+		:ARG1 (x5 / win-01
+			:ARG0 (x4 / we)
+			:time (x8 / thing
+				:name (n1 / name
+					:op1 "AUGUST")
+				:mod (x10 / person
+					:name (n3 / name
+						:op1 "MONDAY"
+						:op2 ","
+						:op3 "AUG."
+						:op4 "19")))
+			:time (x15 / dawn
+				:location (x17 / city
+					:name (n4 / name
+						:op1 "Moscow"))
+				:null_edge (x21 / government-organization
+					:name (n5 / name
+						:op1 "State"
+						:op2 "Committee")
+					:mod (x20 / eight-member)
+					:mod (x27 / emergency
+						:ARG1-of (x29 / head-01
+							:ARG0 (x33 / name
+								:op1 "Gennady"
+								:op2 "Yanayev"
+								:ARG0-of (x31 / vice)
+								:ARG0-of (x32 / have-org-role-91
+									:ARG2 (p / president)))))))))
+	:ARG0 (x50 / country
+		:name (n / name
+			:op1 "Soviet"
+			:op2 "Union")
+		:dayperiod (x37 / dawn
+			:location (x39 / city
+				:name (n2 / name
+					:op1 "Moscow"))
+			:time-of (x47 / power
+				:quant (x46 / all)))))
+
+# ::id 137
+# ::snt THE AUGUST COUP MONDAY  Says that Soviet President Mikhail Gorbachev has been replaced because of health reasons
+(x5 / say-01
+	:time (x2 / event
+		:name (n / name
+			:op1 "AUGUST"))
+	:ARG0 (x4 / person
+		:name (n1 / name
+			:op1 "MONDAY"))
+	:ARG1 (x13 / replace-01
+		:ARG1 (x9 / name
+			:op1 "Mikhail"
+			:op2 "Gorbachev"
+			:ARG0-of (x8 / have-org-role-91
+				:ARG2 (p / president)
+				:ARG1 (x7 / country
+					:name (n2 / name
+						:op1 "Soviet"))))
+		:ARG1-of (x14 / cause-01
+			:ARG0 (x17 / reason
+				:mod (x16 / health)))))
+
+# ::id 138
+# ::snt The publication of major independent newspapers is suspended
+(x8 / suspend-01
+	:ARG1 (x2 / publication
+		:poss (x6 / newspaper
+			:mod (x4 / major)
+			:ARG0-of (x5 / depend-01
+				:polarity -))))
+
+# ::id 139
+# ::snt Troops move into Moscow , and later seize radio and television stations in the Baltic republics
+(x6 / and
+	:op1 (x2 / move-01
+		:ARG0 (x1 / troop)
+		:ARG2 (x4 / city
+			:name (n / name
+				:op1 "Moscow")))
+	:op2 (x8 / seize-01
+		:ARG0 x1
+		:time (x7 / late)
+		:ARG1 (x10 / and
+			:op1 (x9 / radio)
+			:op2 (x11 / television)
+			:op2 (x12 / station
+				:location (x16 / republic
+					:location (x15 / world-region
+						:name (n1 / name
+							:op1 "Baltic")))))))
+
+# ::id 140
+# ::snt Thousands of demonstrators assemble around the Russian republic's parliament , where Russian President Boris Yeltsin remains defiant of the coup
+(x4 / assemble-01
+	:ARG0 (x3 / person
+		:ARG0-of (d / demonstrate-01))
+	:location (x5 / around
+		:op1 (x17 / remain-01
+			:ARG1 (x10 / government-organization
+				:name (n / name
+					:op1 "parliament")
+				:ARG1 (x8 / republic
+					:mod (x7 / country
+						:name (n2 / name
+							:op1 "Russia"))))
+			:ARG3 (x18 / defiant
+				:domain (x15 / newspaper
+					:name (n1 / name
+						:op1 "Boris"
+						:op2 "Yeltsin")
+					:ARG0-of (x14 / have-org-role-91
+						:ARG2 (p / president)
+						:ARG1 (x13 / country
+							:name (n3 / name
+								:op1 "Russia"))))
+				:ARG1 (x21 / coup)))))
+
+# ::id 141
+# ::snt Mr. Yeltsin climbs atop a tank outside parliament and urges a general strike to protest the coup
+(x9 / and
+	:op1 (x3 / climb-01
+		:ARG0 (x2 / person
+			:name (n / name
+				:op1 "Yeltsin")
+			:null_edge (x1 / null_tag))
+		:ARG1 (x6 / tank)
+		:ARG1 (x8 / government-organization
+			:name (n1 / name
+				:op1 "parliament")))
+	:op2 (x10 / urge-01
+		:ARG0 x2
+		:ARG1 (x13 / person
+			:name (n2 / name
+				:op1 "strike")
+			:mod (x12 / general))
+		:ARG2 (x15 / protest-01
+			:ARG1 (x17 / coup))))
+
+# ::id 142
+# ::snt the unabashedly pro-Western Mr. Yeltsin  warns that clouds of terror and dictatorship are gathering over the whole country , and calls for the restoration of power of mr. Gorbachev
+(x20 / and
+	:op1 (x6 / warn-01
+		:ARG0 (x5 / person
+			:name (n / name
+				:op1 "Yeltsin")
+			:null_edge (x2 / unabashedly)
+			:null_edge (x4 / null_tag))
+		:ARG1 (x14 / gather-01
+			:ARG0 (x8 / cloud
+				:ARG1 (x11 / and
+					:op1 (x10 / terror)
+					:op2 (x12 / dictatorship)))
+			:ARG2 (x18 / country
+				:mod (x17 / whole))))
+	:op2 (x21 / call-03
+		:ARG0 x5
+		:ARG1 (x24 / restore-02
+			:ARG1 (x26 / power)
+			:ARG1 (x29 / person
+				:name (n1 / name
+					:op1 "Gorbachev")
+				:null_edge (x28 / null_tag)))))
+
+# ::id 143
+# ::snt On Monday morning in Kennebunkport , Maine , President Bush says the coup is disturbing and appears to be extra-constitutional
+(x16 / and
+	:op1 (x11 / say-01
+		:ARG0 (x10 / person
+			:name (n / name
+				:op1 "Bush")
+			:ARG0-of (x9 / have-org-role-91
+				:ARG2 (p / president)))
+		:ARG1 (x15 / disturbing
+			:ARG1 (x13 / coup))
+		:time (xap0 / date-entity
+			:null_edge (x2 / null_tag)
+			:dayperiod (x3 / morning
+				:location (x5 / country
+					:name (n1 / name
+						:op1 "Kennebunkport")
+					:location (x7 / state
+						:name (n2 / name
+							:op1 "Maine"))))))
+	:op2 (x17 / appear-02
+		:ARG1 (x20 / extra-constitutional)))
+
+# ::id 144
+# ::snt President Bush  expresses support for Mr. Gorbachev and says President Bush  will follow the events very carefully as they unfold in order to determine the appropriate response
+(x8 / and
+	:op1 (x3 / express-01
+		:ARG0 (x2 / person
+			:name (n / name
+				:op1 "Bush")
+			:ARG0-of (x1 / have-org-role-91
+				:ARG2 (p / president)))
+		:ARG1 (x4 / support-01
+			:ARG1 (x7 / person
+				:name (n1 / name
+					:op1 "Gorbachev")
+				:null_edge (x6 / null_tag))))
+	:op2 (x9 / say-01
+		:ARG0 x2
+		:ARG1 (x13 / follow-02
+			:ARG0 (x11 / person
+				:name (n2 / name
+					:op1 "Bush")
+				:ARG0-of (x10 / have-org-role-91
+					:ARG2 (p1 / president)))
+			:ARG1 (x15 / event)
+			:manner (x17 / careful
+				:degree (x16 / very))
+			:null_edge (x20 / unfold-01
+				:ARG1 (x24 / determine-01
+					:ARG1 (x27 / respond-01
+						:mod (x26 / appropriate)))))))
+
+# ::id 145
+# ::snt President Bush later issues a statement from Washington stiffening President Bush  criticism and condemning the unconstitutional resort to force
+(x6 / state-01
+	:ARG0 (x2 / person
+		:name (n / name
+			:op1 "Bush")
+		:ARG0-of (x1 / have-org-role-91
+			:ARG2 (p / president)))
+	:time (x3 / late)
+	:ARG0 (x8 / city
+		:name (n1 / name
+			:op1 "Washington"))
+	:ARG1 (x13 / and
+		:op1 (x9 / stiffen-01
+			:ARG0 (x11 / person
+				:name (n2 / name
+					:op1 "Bush")
+				:ARG0-of (x10 / have-org-role-91
+					:ARG2 (p1 / president)))
+			:ARG1 (x12 / criticize-01
+				:ARG1 x11))
+		:op2 (x14 / condemn-00
+			:ARG0 x11
+			:ARG1 (x17 / resort
+				:mod (x16 / unconstitutional)
+				:ARG1 (x19 / force-01)))))
+
+# ::id 146
+# ::snt The statement supports Mr. Yeltsin's call for returning power to legally elected leaders and says the U.S. will avoid in every possible way any actions that would lend legitimacy or support to the coup attempt
+(x15 / and
+	:op1 (x3 / support-01
+		:ARG0 (x2 / state-01)
+		:ARG1 (x7 / call-03
+			:null_edge (x4 / null_tag)
+			:ARG1 (x9 / return-01
+				:ARG1 (x10 / power)
+				:ARG2 (x14 / person
+					:ARG0-of (l / lead-02)
+					:ARG1-of (x13 / elect-01
+						:manner (x12 / legal))))))
+	:op2 (x16 / say-01
+		:ARG0 x2
+		:ARG1 (x20 / avoid-01
+			:ARG0 (x18 / country
+				:name (n / name
+					:op1 "U.S."))
+			:ARG2 (x24 / way
+				:mod (x22 / every)
+				:mod (x23 / possible))
+			:ARG1 (x26 / action
+				:mod (x25 / any)
+				:null_edge (x29 / lend-01
+					:ARG1 (x31 / or
+						:op1 (x30 / legitimacy)
+						:op2 (x32 / support-01))
+					:purpose (x36 / attempt-01
+						:ARG1 (x35 / coup)))))))
+
+# ::id 147
+# ::snt 
+(x1 / person
+	:name (n / name
+		:op1 "TUESDAY")
+	:name (x3 / name
+		:op1 "AUG."
+		:op2 "20"
+		:dayperiod (x7 / morning
+			:ARG0-of (x10 / thing
+				:ARG1-of (s / say-01)
+				:ARG0 (x9 / person
+					:name (n1 / name
+						:op1 "Bush"))
+				:ARG1 (x19 / and
+					:op1 (x15 / speak-01
+						:ARG0 (x12 / person
+							:name (n2 / name
+								:op1 "Bush")
+							:ARG0-of (x11 / have-org-role-91
+								:ARG2 (p / president)))
+						:time (x14 / recent)
+						:prep-with (x18 / person
+							:name (n3 / name
+								:op1 "Yeltsin")
+							:null_edge (x17 / null_tag)))
+					:op2 (x23 / reaffirm-01
+						:ARG0 (x22 / person
+							:name (n4 / name
+								:op1 "Bush")
+							:ARG0-of (x21 / have-org-role-91
+								:ARG2 (p1 / president)))
+						:ARG1 (x25 / support-01
+							:ARG0 (x24 / country
+								:name (n5 / name
+									:op1 "U.S."))
+							:ARG1 (x30 / person
+								:ARG0-of (l / lead-02)
+								:ARG1-of (x28 / choose-01
+									:manner (x27 / constitutionally))
+								:mod (xap1 / country
+									:ARG0-of (xap0 / name
+										:op1 "Soviet"))))))))))
+
+# ::id 148
+# ::snt Mr. Bush adds that there will be no normal relations with the United States as long as this illegal coup remains in effect
+(x3 / add-02
+	:ARG0 (x2 / person
+		:name (n / name
+			:op1 "Bush")
+		:null_edge (x1 / null_tag))
+	:ARG1 (x10 / relation
+		:polarity -
+		:mod (x9 / normal)
+		:prep-with (x13 / country
+			:name (n1 / name
+				:op1 "United"
+				:op2 "States"))
+		:mod (x16 / long
+			:op1 (x21 / remain-01
+				:ARG1 (x20 / coup
+					:mod (x18 / this)
+					:mod (x19 / law
+						:polarity -))
+				:location (x23 / effect)))))
+
+# ::id 149
+# ::snt During the day , allied countries halt aid to the Soviet Union
+(x7 / halt-01
+	:time (x3 / day)
+	:ARG0 (x6 / country)
+	:ARG1 (x8 / aid-01
+		:ARG2 (x11 / country
+			:name (n / name
+				:op1 "Soviet"
+				:op2 "Union")))
+	:ARG0 (xap0 / country
+		:ARG1-of (x5 / ally-01)))
+
+# ::id 150
+# ::snt The European Community freezes action on more than $ 1 billion in technical aid and credit guarantees
+(x4 / freeze-02
+	:ARG0 (x3 / community)
+	:ARG1 (x5 / action)
+	:ARG1 (x15 / and
+		:op1 (x7 / more-than)
+		:op1 (x14 / aid-01
+			:mod (x13 / technical))
+		:op2 (x17 / guarantee-01)))
+
+# ::id 151
+# ::snt The U.S. Export-Import Bank suspends The U.S. Export-Import Bank  new Soviet program , and Japanese Prime Minister Toshiki Kaifu tells Japanese Prime Minister Toshiki Kaifu  parliament that export credits will be put on hold
+(x14 / and
+	:op1 (x5 / suspend-01
+		:ARG0 (x3 / government-organization
+			:name (n / name
+				:op1 "Export-Import"
+				:op2 "Bank"))
+		:ARG1 (x12 / program
+			:poss (x8 / organization
+				:name (n2 / name
+					:op1 "Export-Import"))
+			:null_edge (x9 / null_tag)
+			:mod (x10 / new)
+			:poss (xap1 / country
+				:ARG0-of (xap0 / name
+					:op1 "Soviet"))))
+	:op2 (x20 / tell-01
+		:ARG0 (x18 / newspaper
+			:name (n1 / name
+				:op1 "Toshiki"
+				:op2 "Kaifu")
+			:ARG0-of (x17 / have-org-role-91
+				:ARG2 (m / minister)
+				:ARG1 (x15 / country
+					:name (n4 / name
+						:op1 "Japan"))
+				:mod (x16 / prime)))
+		:ARG2 (x24 / name
+			:op1 "Toshiki"
+			:op2 "Kaifu"
+			:poss (x21 / country
+				:name (n3 / name
+					:op1 "Japan"))
+			:mod (x22 / prime)
+			:ARG0-of (x23 / have-org-role-91
+				:ARG2 (m1 / minister)))
+		:ARG2 (x26 / parliament
+			:ARG1-of (x32 / put-01
+				:ARG1 (x29 / credit
+					:mod (x28 / export-01))
+				:ARG2 (x34 / hold-03)))))
+
+# ::id 152
+# ::snt In Moscow , Soviet television reports that Prime Minister Valentin Pavlov , a member of the emergency committee , has resigned because of poor health
+(x6 / report-01
+	:ARG0 (x5 / television
+		:location (x2 / city
+			:name (n / name
+				:op1 "Moscow"))
+		:mod (x4 / country
+			:name (n1 / name
+				:op1 "Soviet")))
+	:ARG1 (x21 / resign-01
+		:ARG0 (x10 / newspaper
+			:name (n2 / name
+				:op1 "Valentin"
+				:op2 "Pavlov")
+			:ARG0-of (x9 / have-org-role-91
+				:ARG2 (m / minister)
+				:mod (x8 / prime))
+			:ARG0-of (x14 / member
+				:ARG1 (x18 / committee
+					:mod (x17 / emergency))))
+		:ARG1-of (x22 / cause-01
+			:ARG0 (x25 / health
+				:mod (x24 / poor)))))
+
+# ::id 153
+# ::snt Reports also circulate that two other committee members , Defense Minister Dmitri Yazov and KGB chief Vladimir Kryuchkov , have resigned
+(x3 / circulate-01
+	:ARG0 (x1 / report-01)
+	:mod (x2 / also)
+	:ARG1 (x21 / resign-01
+		:ARG1 (x8 / have-org-role-91
+			:ARG2 (m / member)
+			:quant 2
+			:mod (x6 / other)
+			:ARG1 (x7 / committee)
+			:ARG1 (x14 / and
+				:op2 (x12 / name
+					:op1 "Dmitri"
+					:op2 "Yazov"
+					:mod (x10 / defense)
+					:ARG0-of (x11 / have-org-role-91
+						:ARG2 (m1 / minister)))
+				:op2 (x17 / name
+					:op1 "Vladimir"
+					:op2 "Kryuchkov"
+					:ARG0-of (x16 / have-org-role-91
+						:ARG2 (c / chief)
+						:ARG1 (x15 / organization
+							:name (n / name
+								:op1 "KGB"))))))))
+
+# ::id 154
+# ::snt The Soviet Foreign Ministry says Foreign Minister Alexander Bessmertnykh is ill after returing from vacation
+(x5 / say-01
+	:ARG0 (x4 / government-organization
+		:name (n / name
+			:op1 "Ministry")
+		:null_edge (x2 / country
+			:name (n1 / name
+				:op1 "Soviet"))
+		:mod (x3 / foreign))
+	:ARG2 (x11 / ill
+		:time (x12 / after
+			:op1 (x13 / reture
+				:ARG3 (x15 / vacation-01
+					:ARG0 (x8 / newspaper
+						:name (n2 / name
+							:op1 "Alexander"
+							:op2 "Bessmertnykh")
+						:mod (x6 / foreign)
+						:ARG0-of (x7 / have-org-role-91
+							:ARG2 (m / minister))))))))
+
+# ::id 155
+# ::snt Huge crowds in Moldavia , the Ukraine and Leningrad protest the coup , while coal miners go on strike in several regions
+(x10 / protest-01
+	:ARG0 (x2 / crowd
+		:quant (x1 / huge)
+		:location (x8 / and
+			:op1 (x4 / country
+				:name (n1 / name
+					:op1 "Moldavia"))
+			:op5 (x7 / country
+				:name (n2 / name
+					:op1 "Ukraine"))
+			:op2 (x9 / country
+				:name (n3 / name
+					:op1 "Leningrad"))))
+	:ARG1 (x12 / coup)
+	:time (x17 / go-02
+		:ARG0 (x16 / person
+			:ARG0-of (m / mine-01)
+			:ARG1 (x15 / coal))
+		:ARG4 (x19 / person
+			:name (n / name
+				:op1 "strike"))
+		:ARG4 (x22 / region
+			:quant (x21 / several))))
+
+# ::id 156
+# ::snt In the evening in Moscow , demonstrators near the Russian republic's parliament clash with Soviet armored vehicles
+(x7 / person
+	:ARG0-of (d / demonstrate-01)
+	:location (x8 / near
+		:op1 (x14 / clash-01
+			:time (x3 / evening
+				:location (x5 / city
+					:name (n / name
+						:op1 "Moscow")))
+			:ARG0 (x11 / republic
+				:mod (x10 / country
+					:name (n1 / name
+						:op1 "Russia")))
+			:null_edge (x13 / parliament)
+			:ARG1 (x18 / vehicle
+				:ARG1-of (x17 / armor-01)
+				:mod (xap1 / country
+					:ARG0-of (xap0 / name
+						:op1 "Soviet"))))))
+
+# ::id 157
+# ::snt Soviet radio reports that at least three people are killed
+(x3 / report-01
+	:ARG0 (x2 / radio
+		:mod (xap1 / country
+			:ARG0-of (xap0 / name
+				:op1 "Soviet")))
+	:ARG1 (x10 / kill-01
+		:ARG1 3))
+
+# ::id 158
+# ::snt WEDNESDAY , AUG. 21 Troops begin moving out of Moscow
+(x1 / person
+	:name (n / name
+		:op1 "WEDNESDAY")
+	:name (x3 / name
+		:op1 "AUG."
+		:op2 "21"
+		:ARG0-of (x6 / begin-01
+			:ARG0 (x5 / troop)
+			:ARG1 (x7 / move-01
+				:ARG0 x5
+				:ARG2 (x10 / city
+					:name (n1 / name
+						:op1 "Moscow"))))))
+
+# ::id 159
+# ::snt Soon the coup leaders are reported to have left the city
+(x6 / report-01
+	:time (x1 / soon)
+	:ARG1 (x9 / leave-01
+		:ARG1 (x4 / person
+			:ARG0-of (l / lead-02)
+			:ARG1 (x3 / coup))
+		:ARG1 (x11 / city)))
+
+# ::id 160
+# ::snt Leaders of the Soviet parliament demand the reinstatement of Mr. Gorbachev , and the legislature rescinds the emergency committee's decrees
+(x13 / and
+	:op1 (x6 / demand-01
+		:ARG0 (x1 / person
+			:ARG0-of (l / lead-02)
+			:ARG1 (x5 / government-organization
+				:name (n / name
+					:op1 "parliament")
+				:mod (xap1 / country
+					:ARG0-of (xap0 / name
+						:op1 "Soviet"))))
+		:ARG1 (x8 / reinstate-01
+			:ARG1 (x11 / person
+				:name (n1 / name
+					:op1 "Gorbachev")
+				:null_edge (x10 / null_tag))))
+	:op2 (x16 / rescind
+		:ARG1 (x21 / decree
+			:ARG0 (x19 / committee
+				:mod (x18 / emergency)))
+		:ARG0 (xap2 / government-organization
+			:ARG0-of (x15 / legislate-01))))
+
+# ::id 161
+# ::snt At 10:30 in the morning EDT , President Bush says President Bush  has spoken with Mr. Yeltsin , who said that more and more troops appear to be turning against the coup
+(x10 / say-01
+	:ARG0 (x9 / person
+		:name (n / name
+			:op1 "Bush")
+		:ARG0-of (x8 / have-org-role-91
+			:ARG2 (p / president)))
+	:ARG1 (x14 / speak-01
+		:ARG0 (x12 / person
+			:name (n1 / name
+				:op1 "Bush")
+			:ARG0-of (x11 / have-org-role-91
+				:ARG2 (p1 / president)))
+		:ARG1-of (x20 / say-01
+			:null_edge (x16 / null_tag)
+			:ARG1 (x26 / appear-02
+				:ARG1 (x23 / and
+					:op1 (x22 / more)
+					:op2 (x24 / more)
+					:op2 (x25 / troop))
+				:ARG1 (x29 / turn-02
+					:ARG1 x23
+					:ARG1 (x32 / coup)))))
+	:time (xap0 / date-entity
+		:dayperiod (x5 / morning)))
+
+# ::id 162
+# ::snt Mr. Bush declines to say that the crisis is over , but says the situation appears somewhat more positive
+(x12 / contrast-01
+	:ARG1 (x3 / decline-01
+		:ARG0 (x2 / person
+			:name (n / name
+				:op1 "Bush")
+			:null_edge (x1 / null_tag))
+		:ARG1 (x5 / say-01
+			:ARG0 x2
+			:ARG1 (x8 / crisis)))
+	:ARG2 (x13 / say-01
+		:ARG0 x2
+		:ARG1 (x16 / appear-02
+			:ARG1 (x19 / positive
+				:domain (x15 / situation)
+				:degree (x18 / more
+					:degree (x17 / somewhat))))))
+
+# ::id 163
+# ::snt Shortly after noon , Mr. Bush says President Bush  has spoken to Mr. Gorbachev , who tells President Bush  that the constitutional authorities are back in power
+(x7 / say-01
+	:time (x2 / after
+		:mod (x1 / shortly)
+		:op1 (x3 / noon))
+	:ARG0 (x6 / person
+		:name (n / name
+			:op1 "Bush")
+		:null_edge (x5 / null_tag))
+	:ARG1 (x11 / speak-01
+		:ARG0 (x9 / person
+			:name (n1 / name
+				:op1 "Bush")
+			:ARG0-of (x8 / have-org-role-91
+				:ARG2 (p / president)))
+		:ARG0 (x14 / person
+			:name (n2 / name
+				:op1 "Gorbachev")
+			:null_edge (x13 / null_tag)
+			:ARG1-of (x17 / tell-01
+				:ARG1 (x19 / person
+					:name (n3 / name
+						:op1 "Bush")
+					:ARG0-of (x18 / have-org-role-91
+						:ARG2 (p1 / president)))
+				:ARG0 (x23 / authority
+					:mod (x22 / constitution)
+					:mod (x27 / power))))))
+
+# ::id 164
+# ::snt Soviet television broadcasts a statement by Mr. Gorbachev declaring that the coup is dead
+(x3 / broadcast-01
+	:mod (x2 / television
+		:mod (xap1 / country
+			:ARG0-of (xap0 / name
+				:op1 "Soviet")))
+	:ARG1 (x5 / state-01
+		:ARG0 (x8 / person
+			:name (n / name
+				:op1 "Gorbachev")
+			:null_edge (x7 / null_tag))
+		:ARG1 (x14 / die-01
+			:op (d / dead)
+			:ARG1 (x12 / coup))))
+
+# ::id 165
+# ::snt Yeltsin's Agenda With the unabashedly pro-Western Mr. Yeltsin  triumph over the coup plotters , Russian President Boris Yeltsin is in a far stronger position to implement the reform measures for which he has long campaigned
+(x10 / triumph
+	:ARG0 (x1 / person
+		:name (n / name
+			:op1 "Yeltsin"
+			:op2 "'s"
+			:op3 "Agenda"))
+	:manner (x6 / unabashedly)
+	:null_edge (x8 / null_tag)
+	:mod (x9 / person
+		:name (n1 / name
+			:op1 "Yeltsin"))
+	:ARG1 (x14 / plotter
+		:mod (x13 / coup))
+	:ARG0 (x18 / newspaper
+		:name (n2 / name
+			:op1 "Boris"
+			:op2 "Yeltsin")
+		:ARG0-of (x17 / have-org-role-91
+			:ARG2 (p / president)
+			:ARG1 (x16 / country
+				:name (n3 / name
+					:op1 "Russia"))))
+	:ARG1 (x25 / position
+		:mod (x24 / strong)
+		:ARG2 (x27 / implement-01
+			:ARG1 (x30 / measure
+				:instrument-of (x29 / reform-01)
+				:ARG1-of (x36 / campaign-01
+					:duration (x35 / long))))))
+
+# ::id 166
+# ::snt These measures include : Popular Elections to implement a genuine democracy Autonomy for the Soviet republics , a far more decentralized government with vast powers transferred from the Communists-dominated Kremlin Faster transition to a market economy with guarantees of economic freedoms and rapid privatization of agriculture and industry Dismantling of the stultifying central bureaucracy Lower military spending and greater leeway for republics to conduct the coup plotters  own foreign policy
+(x3 / include-01
+	:ARG2 (x2 / measure)
+	:ARG1 (x6 / elect-01
+		:mod (x5 / popular)
+		:purpose (x8 / implement-01
+			:ARG1 (x58 / and
+				:op1 (x12 / autonomy
+					:mod (x10 / genuine)
+					:null_edge (x11 / null_tag)
+					:ARG2 (x16 / republic
+						:mod (xap1 / country
+							:ARG0-of (xap0 / name
+								:op1 "Soviet")))
+					:ARG1 (x25 / power
+						:mod (x24 / vast)
+						:ARG1-of (x26 / transfer-01
+							:ARG2 (x29 / organization
+								:name (n / name
+									:op1 "Communists-dominated"))
+							:ARG1 (x32 / transition-01
+								:mod (x31 / faster))
+							:ARG2 (x36 / economy
+								:mod (x35 / market)
+								:prep-with (x38 / guarantee-01
+									:ARG1 (x41 / free-41
+										:mod (x40 / economy))
+									:ARG1 (x42 / and
+										:op3 (x44 / privatize-01
+											:manner (x43 / rapid)
+											:ARG1 (x47 / and
+												:op1 (x46 / agriculture)
+												:op2 (x48 / industry)))))
+								:mod (x54 / bureaucracy
+									:mod (x52 / stultifying)
+									:mod (x53 / central)
+									:ARG1 (x57 / spend-01
+										:mod (x55 / low)
+										:ARG4 (x56 / military)))))))
+				:op2 (x22 / government-organization
+					:ARG0-of (g / govern-01)
+					:ARG1-of (x21 / decentralized
+						:degree (x20 / more)))
+				:op2 (x60 / leeway
+					:mod (x59 / great)
+					:ARG0 (x62 / republic))))))
+
