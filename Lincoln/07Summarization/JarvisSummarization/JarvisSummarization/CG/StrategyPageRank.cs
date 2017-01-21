@@ -18,8 +18,7 @@ namespace JarvisSummarization.CG
         {
             PRKnowledgeGraph prg = new PRKnowledgeGraph();
             prg.create(this.graph);
-            PageRank.PageRank prank = new PageRank.PageRank(prg);
-            prank.nIterations = 50;            
+            PageRank.PageRank prank = new PageRank.PageRank(prg);                     
             prank.execute();
 
             foreach (var item in this.graph.Nodes)

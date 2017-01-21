@@ -51,8 +51,7 @@ namespace JarvisSummarization.CG.NLG
             } }
         public double Rank {
             get {
-
-                if (this.Agents.Count() + this.Patients.Count() + this.Themes.Count()  + this.Goal.Count() == 0)
+                if (this.Agents.Count() + this.Patients.Count() + this.Themes.Count() + this.Goal.Count() == 0)
                     return 0;
                 if (this.Agents.Count() != 0 && this.Patients.Count() == 0 && this.Themes.Count() == 0 && this.Goal.Count() == 0)
                     return 0;
@@ -62,13 +61,12 @@ namespace JarvisSummarization.CG.NLG
                     return 0;
                 if (this.Agents.Count() == 0 && this.Patients.Count() == 0 && this.Themes.Count() == 0 && this.Goal.Count() != 0)
                     return 0;
-
                 return this.Verb.pagerank + 
-                this.Agents.SelectMany(c => c).Sum(c => c.Node.pagerank) +
-                this.Patients.SelectMany( c=>c).Sum(c=>c.Node.pagerank)  +
-                this.Themes.SelectMany(c=>c).Sum(c=>c.Node.pagerank)      + 
-                this.Goal.SelectMany(c=>c).Sum(c=>c.Node.pagerank)     +
-                this.Attributes.SelectMany(c=>c).Sum(c=>c.Node.pagerank);
+                    this.Agents.SelectMany(c => c).Sum(c => c.Node.pagerank) +
+                    this.Patients.SelectMany( c=>c).Sum(c=>c.Node.pagerank)  +
+                    this.Themes.SelectMany(c=>c).Sum(c=>c.Node.pagerank) + 
+                    this.Goal.SelectMany(c=>c).Sum(c=>c.Node.pagerank)  +
+                    this.Attributes.SelectMany(c=>c).Sum(c=>c.Node.pagerank);
             }
         }
         public CGVerb(CGNode verb)
@@ -140,18 +138,24 @@ namespace JarvisSummarization.CG.NLG
                     rel.conceptualrole == "location"||                    
                     rel.conceptualrole == "direction" ||
                     rel.conceptualrole == "example" ||
-                    rel.conceptualrole == "poss")
+                    rel.conceptualrole == "poss" ||
+                    rel.conceptualrole == "product" ||
+                    rel.conceptualrole == "material" )
+                    //rel.conceptualrole == "agent" ||
+                    //rel.conceptualrole == "destination" ||
+                    //rel.conceptualrole == "time"
+
                 {
                     if (list.Where(c => c.Node.id == item.id).Count() == 0 && 
                         list.Where(c=>c.Node.text == item.text).Count() == 0  )
                     {
                         var wrapper = new CGVerbTerm(item, rel, level + 1);
                         list.Add(wrapper);
-                        NavigatePatient(list, item, graph, level + 1);
+                        NavigateAgent(list, item, graph, level + 1);
                     }
                 }
                 else {
-                    this.AgentsLoss.Add(string.Format("{0} {1} {2}", Target.text,  rel.conceptualrole , item.text));
+                    this.AgentsLoss.Add(string.Format("Text :{0} / conceptualroles:{1} / Item Text: {2} / Level {3}", Target.text, rel.conceptualrole, item.text, level));
                 }
             }
         }
@@ -160,15 +164,15 @@ namespace JarvisSummarization.CG.NLG
         #region Patients 
         public void GeneratePatients(CGGraph graph)
         {
-            var out_agents = graph.GetOutRelationsByConceptualRole(this.Verb, "patient", "co-patient", 
+            var out_patients = graph.GetOutRelationsByConceptualRole(this.Verb, "patient", "co-patient", 
                 "recipient", "predicate");
-            foreach (var rel in out_agents)
+            foreach (var rel in out_patients)
             {                
                 var node = graph.Nodes.Where(c => c.id == rel.Tail).Single();
                 var list = new List<CGVerbTerm>();
                 var wrapper = new CGVerbTerm(node, rel, 0);
                 list.Add(wrapper);
-                NavigateAgent(list, node, graph, 0);                
+                NavigatePatient(list, node, graph, 0);                
                 this.Patients.Add(list);
             }
         }
@@ -184,7 +188,8 @@ namespace JarvisSummarization.CG.NLG
                     rel.conceptualrole == "domain" ||
                     rel.conceptualrole == "poss" ||
                     rel.conceptualrole == "direction" ||
-                    rel.conceptualrole == "location")
+                    rel.conceptualrole == "location"
+                    )
                 {
 
                     if (list.Where(c => c.Node.id == item.id).Count() == 0 &&
@@ -197,7 +202,7 @@ namespace JarvisSummarization.CG.NLG
                 }
                 else
                 {
-                    this.PatientsLoss.Add(string.Format("{0} {1} {2}", Target.text, rel.conceptualrole, item.text));
+                    this.PatientsLoss.Add(string.Format("Text :{0} / conceptualroles:{1} / Item Text: {2} / Level {3}", Target.text, rel.conceptualrole, item.text, level));
                 }
             }            
         }
@@ -243,7 +248,7 @@ namespace JarvisSummarization.CG.NLG
                 }
                 else
                 {
-                    this.ThemesLoss.Add(string.Format("{0} {1} {2}", Target.text, rel.conceptualrole, item.text));
+                    this.ThemesLoss.Add(string.Format("Text :{0} / conceptualroles:{1} / Item Text: {2} / Level {3}", Target.text, rel.conceptualrole, item.text, level));
                 }
             }
         }
@@ -259,7 +264,7 @@ namespace JarvisSummarization.CG.NLG
                 var list = new List<CGVerbTerm>();
                 var wrapper = new CGVerbTerm(node, rel, 0);
                 list.Add(wrapper);
-                NavigateAgent(list, node, graph, 0);
+                NavigateGoal(list, node, graph, 0);
                 this.Goal.Add(list);
             }
         }
@@ -287,7 +292,7 @@ namespace JarvisSummarization.CG.NLG
                 }
                 else
                 {
-                    this.GoalsLoss.Add(string.Format("{0} {1} {2}", Target.text, rel.conceptualrole, item.text));
+                    this.GoalsLoss.Add(string.Format("Text :{0} / conceptualroles:{1} / Item Text: {2} / Level {3}", Target.text, rel.conceptualrole, item.text, level));
                 }
             }
         }
@@ -302,7 +307,7 @@ namespace JarvisSummarization.CG.NLG
                 var list = new List<CGVerbTerm>();
                 var wrapper = new CGVerbTerm(node, rel, 0);
                 list.Add(wrapper);
-                NavigateAgent(list, node, graph, 0);
+                NavigateAttribute(list, node, graph, 0);
                 this.Attributes.Add(list);
             }
         }
@@ -331,12 +336,15 @@ namespace JarvisSummarization.CG.NLG
                 }
                 else
                 {
-                    this.AttributesLoss.Add(string.Format("{0} {1} {2}", Target.text, rel.conceptualrole, item.text));
+                    this.AttributesLoss.Add(string.Format("Text :{0} / conceptualroles:{1} / Item Text: {2} / Level {3}", Target.text, rel.conceptualrole, item.text, level));
                 }
             }
         }
-        #endregion 
+        #endregion
+
+
         
+
         public string SummaryLemme()
         {
             StringBuilder sb = new StringBuilder();
@@ -347,8 +355,7 @@ namespace JarvisSummarization.CG.NLG
                 {
                     sb.Append(string.Format("{0} ", item.Node.nosuffix));
                 }                
-            }
-            
+            }            
             //verb attributes are not valid yet
             //foreach (var item in this.VerbAttributes)
             //{
@@ -376,6 +383,7 @@ namespace JarvisSummarization.CG.NLG
                     sb.Append(string.Format(" {0} ", item.Node.nosuffix));
                 }
             }            
+            
             foreach (var attribute in this.Attributes)
             {
                 foreach (var item in attribute)
@@ -390,108 +398,113 @@ namespace JarvisSummarization.CG.NLG
         {
             StringBuilder sb = new StringBuilder();
 
-            sb.AppendLine("===================================================");
+            //sb.AppendLine("===================================================");
 
-            sb.AppendLine(string.Format("{0} : {1} : {2}", this.Verb.id, this.Verb.text, this.Rank));
+            //sb.AppendLine(string.Format("{0} : {1} : {2}", this.Verb.id, this.Verb.text, this.Rank));
 
-            sb.AppendLine("Attributes==>");
+            //sb.AppendLine("Attributes==>");
 
-            foreach (var item in this.VerbAttributes)
-            {
-                sb.AppendLine(item.ToString());
-            }
+            //foreach (var item in this.VerbAttributes)
+            //{
+            //    sb.AppendLine(item.ToString());
+            //}
 
 
-            sb.AppendLine("Agents==>");
+            //sb.AppendLine("Agents==>");
 
-            foreach (var agent in this.Agents)
-            {
-                sb.AppendLine("====");
+            //foreach (var agent in this.Agents)
+            //{
+            //    sb.AppendLine("====");
 
-                foreach (var item in agent)
-                {
-                    sb.AppendLine(item.ToString());
-                }
-                sb.AppendLine("====");
-            }
+            //    foreach (var item in agent)
+            //    {
+            //        sb.AppendLine(item.ToString());
+            //    }
+            //    sb.AppendLine("====");
+            //}
             
 
-            sb.AppendLine("Patients==>");
+            //sb.AppendLine("Patients==>");
 
-            foreach (var patient in this.Patients)
-            {
-                sb.AppendLine("====");
+            //foreach (var patient in this.Patients)
+            //{
+            //    sb.AppendLine("====");
 
-                foreach (var item in patient)
-                {
-                    sb.AppendLine(item.ToString());
-                }
-                sb.AppendLine("====");
-            }
-            sb.AppendLine("Themes==>");
+            //    foreach (var item in patient)
+            //    {
+            //        sb.AppendLine(item.ToString());
+            //    }
+            //    sb.AppendLine("====");
+            //}
+            //sb.AppendLine("Themes==>");
 
-            foreach (var theme in this.Themes)
-            {
-                sb.AppendLine("====");
+            //foreach (var theme in this.Themes)
+            //{
+            //    sb.AppendLine("====");
 
-                foreach (var item in theme)
-                {
-                    sb.AppendLine(item.ToString());
-                }
-                sb.AppendLine("====");
-            }
-            sb.AppendLine("Goals==>");
+            //    foreach (var item in theme)
+            //    {
+            //        sb.AppendLine(item.ToString());
+            //    }
+            //    sb.AppendLine("====");
+            //}
+            //sb.AppendLine("Goals==>");
 
-            foreach (var goal in this.Goal)
-            {
-                sb.AppendLine("====");
+            //foreach (var goal in this.Goal)
+            //{
+            //    sb.AppendLine("====");
 
-                foreach (var item in goal)
-                {
-                    sb.AppendLine(item.ToString());
-                }
-                sb.AppendLine("====");
-            }
-            sb.AppendLine("Attributes==>");
+            //    foreach (var item in goal)
+            //    {
+            //        sb.AppendLine(item.ToString());
+            //    }
+            //    sb.AppendLine("====");
+            //}
+            //sb.AppendLine("Attributes==>");
 
-            foreach (var attribute in this.Attributes)
-            {
-                sb.AppendLine("====");
+            //foreach (var attribute in this.Attributes)
+            //{
+            //    sb.AppendLine("====");
 
-                foreach (var item in attribute)
-                {
-                    sb.AppendLine(item.ToString());
-                }
-                sb.AppendLine("====");
-            }
+            //    foreach (var item in attribute)
+            //    {
+            //        sb.AppendLine(item.ToString());
+            //    }
+            //    sb.AppendLine("====");
+            //}
 
             if (debug)
             {
-                sb.AppendLine("==========================  Loss Attributes==>");
+                sb.AppendLine("==========================  Loss Attributes ====================>");
                 foreach (var item in this.AttributesLoss)
                 {
                     sb.AppendLine(item);
                 }
-                sb.AppendLine("=================================== Loss Agents==>");
+                sb.AppendLine("==========================  End Loss Attributes ====================>");
+                sb.AppendLine("=================================== Loss Agents =====================>");
                 foreach (var item in this.AgentsLoss)
                 {
                     sb.AppendLine(item);
                 }
+                sb.AppendLine("=================================== End Loss Agents =====================>");
                 sb.AppendLine("=================================== Loss Patients==>");
                 foreach (var item in this.PatientsLoss)
                 {
                     sb.AppendLine(item);
                 }
+                sb.AppendLine("=================================== End Loss Patients =====================>");
                 sb.AppendLine("=================================== Loss Themes==>");
                 foreach (var item in this.ThemesLoss)
                 {
                     sb.AppendLine(item);
                 }
+                sb.AppendLine("=================================== End Loss Themes =====================>");
                 sb.AppendLine("=================================== Loss Goals==>");
                 foreach (var item in this.GoalsLoss)
                 {
                     sb.AppendLine(item);
                 }
+                sb.AppendLine("=================================== End Loss Goals =====================>");
             }
 
             sb.AppendLine("===================================================");

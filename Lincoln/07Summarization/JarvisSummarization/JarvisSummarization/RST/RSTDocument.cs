@@ -133,7 +133,7 @@ namespace JarvisSummarization.RST
                 TransformList(item, state);
             }
         }
-        public string SummaryLemma()
+        public string Summary()
         {
             List<RSTNode> state = new List<RSTNode>();
             TransformList(this.root, state);
@@ -148,7 +148,7 @@ namespace JarvisSummarization.RST
                 foreach (var token in item.edu.tokens)
                 {
                     words += 1;
-                    sb.Append(string.Format("{0} ", token.lemma));
+                    sb.Append(string.Format("{0} ", token.word));
                 }
                 if (words > 100)
                 {
@@ -158,30 +158,6 @@ namespace JarvisSummarization.RST
             }
             return sb.ToString();
         }
-        public string Summarize()
-        {
-            List<RSTNode> state = new List<RSTNode>();
-            TransformList(this.root, state);
-            var query = (from c in state
-                         where c.edu != null
-                         select c).OrderByDescending(d => d.weight);
-
-            var sb = new StringBuilder();
-            int words = 0; 
-            foreach (var item in query)
-            {
-                foreach (var token in item.edu.tokens)
-                {
-                    words += 1;    
-                    sb.Append(string.Format(" {0} ", token.word));                    
-                }
-                if (words > 100)
-                {
-                    break;
-                }
-                sb.AppendLine();
-            }
-            return sb.ToString(); 
-        }
+        
     }
 }
