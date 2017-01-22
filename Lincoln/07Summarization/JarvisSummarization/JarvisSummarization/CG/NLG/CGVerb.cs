@@ -51,16 +51,16 @@ namespace JarvisSummarization.CG.NLG
             } }
         public double Rank {
             get {
-                if (this.Agents.Count() + this.Patients.Count() + this.Themes.Count() + this.Goal.Count() == 0)
-                    return 0;
-                if (this.Agents.Count() != 0 && this.Patients.Count() == 0 && this.Themes.Count() == 0 && this.Goal.Count() == 0)
-                    return 0;
-                if (this.Agents.Count() == 0 && this.Patients.Count() != 0 && this.Themes.Count() == 0 && this.Goal.Count() == 0)
-                    return 0;
-                if (this.Agents.Count() == 0 && this.Patients.Count() == 0 && this.Themes.Count() != 0 && this.Goal.Count() == 0)
-                    return 0;
-                if (this.Agents.Count() == 0 && this.Patients.Count() == 0 && this.Themes.Count() == 0 && this.Goal.Count() != 0)
-                    return 0;
+                //if (this.Agents.Count() + this.Patients.Count() + this.Themes.Count() + this.Goal.Count() == 0)
+                //    return 0;
+                //if (this.Agents.Count() != 0 && this.Patients.Count() == 0 && this.Themes.Count() == 0 && this.Goal.Count() == 0)
+                //    return 0;
+                //if (this.Agents.Count() == 0 && this.Patients.Count() != 0 && this.Themes.Count() == 0 && this.Goal.Count() == 0)
+                //    return 0;
+                //if (this.Agents.Count() == 0 && this.Patients.Count() == 0 && this.Themes.Count() != 0 && this.Goal.Count() == 0)
+                //    return 0;
+                //if (this.Agents.Count() == 0 && this.Patients.Count() == 0 && this.Themes.Count() == 0 && this.Goal.Count() != 0)
+                //    return 0;
                 return this.Verb.pagerank + 
                     this.Agents.SelectMany(c => c).Sum(c => c.Node.pagerank) +
                     this.Patients.SelectMany( c=>c).Sum(c=>c.Node.pagerank)  +

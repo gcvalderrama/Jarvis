@@ -65,8 +65,8 @@ namespace JarvisSummarization.CG
                 else
                 {
                     item.description = item.label;
-                    item.f = "theme-of";
-                    item.conceptualrole = "theme-of";
+                    item.f = "goal-of";
+                    item.conceptualrole = "goal-of";
                 }
                 
             }

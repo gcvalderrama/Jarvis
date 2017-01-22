@@ -32,7 +32,7 @@ namespace JarvisSummarization.CG
             }
             else if (item.label == "ARG2")
             {
-                item.f = "gol";
+                item.f = "g";
                 item.conceptualrole = "goal";
             }
             else if (item.label == "ARG3")

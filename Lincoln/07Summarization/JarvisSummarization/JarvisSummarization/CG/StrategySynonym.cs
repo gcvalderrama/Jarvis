@@ -87,11 +87,10 @@ namespace JarvisSummarization.CG
      
         public void FusionConcepts()
         {
-
-            List<string> invalid = new List<string>() { "domain", "mod", "op", "term", "mod-of" };
+            List<string> invalid = new List<string>() { "domain", "mod", "op", "term", "mod-of" , "verb" };
 
             var nodes = this.graph.Nodes.Where(c => 
-                    !c.IsConcept && !c.IsEntity && 
+                    !c.IsConcept && !c.IsEntity &&
                     c.semanticroles.Where(d=> invalid.Contains(d)).Count() == 0                
                 ).ToList();
 
