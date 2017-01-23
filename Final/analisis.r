@@ -1,16 +1,26 @@
 library(readxl)
 
-rouge_conceptual <- read_excel("D:/Tesis2016/Jarvis/Lincoln/Rougue/rouge_final_conceptual.xlsx", sheet = "RST")
-rouge_no_expantion_conceptual <- read_excel("D:/Tesis2016/Jarvis/Lincoln/Rougue/rouge_final_conceptual.xlsx", 
-                                            sheet = "RSTNoExpantion")
+rouge_conceptual <- read_excel("D:/Tesis2016/Jarvis/Lincoln/Rougue/rouge_final_conceptualbest.xlsx", 
+                               sheet = "ConceptualBest")
+rouge_no_expantion_conceptual <- read_excel("D:/Tesis2016/Jarvis/Lincoln/Rougue/rouge_final_conceptualbest.xlsx", 
+                               sheet = "ConceptualNoExpBest")
 #View(rouge_final_conceptual)
 #View(rouge_conceptual)
 
-rouge1_rst <- rouge_conceptual[,6]
-rouge1_rst_noexp <- rouge_no_expantion_conceptual[,6]
-rouge1_wilconxon = wilcox.test(rouge1_rst, rouge1_rst_noexp)
-print(rouge1_wilconxon)
-boxplot(rouge1_rst, rouge1_rst_noexp)
+first_vector <- rouge_conceptual[,6]
+second_vector <- rouge_no_expantion_conceptual[,6]
+wilconxon = wilcox.test(first_vector, second_vector)
+print(wilconxon)
+
+
+print(round(mean(first_vector),3))
+print(round(mean(second_vector),3))
+
+boxplot(first_vector, second_vector)
+
+
+#qqnorm(rouge1_rst_noexp)
+#qqline(rouge1_rst_noexp)
 
 
 
