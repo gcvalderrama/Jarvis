@@ -254,7 +254,7 @@ namespace JarvisSummarization
             //    @"D:\Tesis2016\Jarvis\Final\Training\06AMRNOEXPANTIONXMLV2",
             //    ConceptualSummaryDir);
 
-            var ConceptualSummaryDir2 = @"D:\Tesis2016\Jarvis\Lincoln\LAB\FinalV3\ConceptualRSTNoExpantion";
+            var ConceptualSummaryDir2 = @"D:\Tesis2016\Jarvis\Lincoln\LAB\FinalV3\ConceptualRSTNoExpantion50";
             ClearDirectory(ConceptualSummaryDir2);
             ConceptualRSTSummary(ManualSummaryDir,
                 @"D:\Tesis2016\Jarvis\Final\Training\04RSTNoExpantionV2",
