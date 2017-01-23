@@ -248,18 +248,18 @@ namespace JarvisSummarization
             //ClearDirectory(rstSummariesDir);
             //RSTSummary(ManualSummaryDir, RstInputDIr, rstSummariesDir);
 
-            var ConceptualSummaryDir = @"D:\Tesis2016\Jarvis\Lincoln\LAB\Final\ConceptualNoExpantionSymmary";
-            ClearDirectory(ConceptualSummaryDir);
-            ConceptualSummary(ManualSummaryDir,
-                @"D:\Tesis2016\Jarvis\Final\Training\06AMRNOEXPANTIONXMLV2",
-                ConceptualSummaryDir);
+            //var ConceptualSummaryDir = @"D:\Tesis2016\Jarvis\Lincoln\LAB\Final\ConceptualNoExpantionNoVERBSymmary";
+            //ClearDirectory(ConceptualSummaryDir);
+            //ConceptualSummary(ManualSummaryDir,
+            //    @"D:\Tesis2016\Jarvis\Final\Training\06AMRNOEXPANTIONXMLV2",
+            //    ConceptualSummaryDir);
 
-            //var ConceptualSummaryDir2 = @"D:\Tesis2016\Jarvis\Lincoln\LAB\ConceptualSummariesCleanRST";
-            //ClearDirectory(ConceptualSummaryDir2);
-            //ConceptualRSTSummary(@"D:\Tesis2016\Jarvis\Final\Training\09 Manual Summaries",
-            //    @"D:\Tesis2016\Jarvis\Final\Training\04 RST No Document Expantion",
-            //    @"D:\Tesis2016\Jarvis\Final\Training\06 AMR XML No Document Expantion", 
-            //    ConceptualSummaryDir2);
+            var ConceptualSummaryDir2 = @"D:\Tesis2016\Jarvis\Lincoln\LAB\Final\ConceptualRSTNoVerbSummary";
+            ClearDirectory(ConceptualSummaryDir2);
+            ConceptualRSTSummary(ManualSummaryDir,
+                @"D:\Tesis2016\Jarvis\Final\Training\04RSTExpantionV2",
+                @"D:\Tesis2016\Jarvis\Final\Training\06AMREXPANTIONXMLV2", null,
+                ConceptualSummaryDir2);
 
 
             //var ConceptualSummaryDir2 = @"D:\Tesis2016\Jarvis\Lincoln\LAB\ConceptualSummariesNONERV2";
