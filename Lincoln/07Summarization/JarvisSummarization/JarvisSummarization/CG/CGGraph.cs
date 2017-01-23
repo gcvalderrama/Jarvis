@@ -739,16 +739,8 @@ namespace JarvisSummarization.CG
                 if (count > 100)
                 {
                     break;
-                }
-                if (item.Agents.Sum(c => c.Count) > 0 && 
-                    (
-                        item.Patients.Sum(c=>c.Count) +
-                        item.Themes.Sum(c=>c.Count) +
-                        item.Goal.Sum(c=>c.Count)
-                    ) >  0)
-                {
-                    result.Add(item);
                 }                
+                result.Add(item);                
             }
             return JsonConvert.SerializeObject(result); 
         }

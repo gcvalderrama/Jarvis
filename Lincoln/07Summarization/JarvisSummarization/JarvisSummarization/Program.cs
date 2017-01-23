@@ -254,12 +254,12 @@ namespace JarvisSummarization
             //    @"D:\Tesis2016\Jarvis\Final\Training\06AMRNOEXPANTIONXMLV2",
             //    ConceptualSummaryDir);
 
-            var ConceptualSummaryDir2 = @"D:\Tesis2016\Jarvis\Lincoln\LAB\FinalV3\ConceptualRSTNoExpantion50";
-            ClearDirectory(ConceptualSummaryDir2);
-            ConceptualRSTSummary(ManualSummaryDir,
-                @"D:\Tesis2016\Jarvis\Final\Training\04RSTNoExpantionV2",
-                @"D:\Tesis2016\Jarvis\Final\Training\06AMRNOEXPANTIONXMLV2", null,
-                ConceptualSummaryDir2);
+            //var ConceptualSummaryDir2 = @"D:\Tesis2016\Jarvis\Lincoln\LAB\FinalV3\ConceptualRSTNoExpantion50";
+            //ClearDirectory(ConceptualSummaryDir2);
+            //ConceptualRSTSummary(ManualSummaryDir,
+            //    @"D:\Tesis2016\Jarvis\Final\Training\04RSTNoExpantionV2",
+            //    @"D:\Tesis2016\Jarvis\Final\Training\06AMRNOEXPANTIONXMLV2", null,
+            //    ConceptualSummaryDir2);
 
 
             //var ConceptualSummaryDir2 = @"D:\Tesis2016\Jarvis\Lincoln\LAB\ConceptualSummariesNONERV2";
@@ -281,10 +281,13 @@ namespace JarvisSummarization
 
 
 
-            var AMRRSTInputNLGDir = @"D:\Tesis2016\Jarvis\Lincoln\05AMRParsing\Output2";
-            var AMRRSTOutputNLGDir = @"D:\Tesis2016\Jarvis\Lincoln\LAB\NLG";
-            //ClearDirectory(AMRRSTOutputNLGDir);
-            //ConceptualRSTNLG(ManualSummaryDir, AMRRSTInputNLGDir, AMRRSTOutputNLGDir);
+            
+            var AMRRSTOutputNLGDir = @"D:\Tesis2016\Jarvis\Final\Training\07NLGMetadata";
+            ClearDirectory(AMRRSTOutputNLGDir);
+            ConceptualRSTNLG(ManualSummaryDir,
+                @"D:\Tesis2016\Jarvis\Final\Training\04RSTExpantionV2",
+                @"D:\Tesis2016\Jarvis\Final\Training\06AMREXPANTIONXMLV2",
+                AMRRSTOutputNLGDir);
         }
     }
 }
