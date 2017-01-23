@@ -124,11 +124,11 @@ def rouge_v2(templateDir, targetDir, excelName):
     row = 0
     excel = excel_init(excelName)
     excel_add_value(0, 0, 'Documento', excel)
-    excel_add_value(0, 1, 'ROUGE-2', excel)
-    excel_add_value(0, 2, 'ROUGE-L', excel)
-    excel_add_value(0, 3, 'ROUGE-1', excel)
-    excel_add_value(0, 4, 'ROUGE-SU4', excel)
-    excel_add_value(0, 5, 'ROUGE-3', excel)
+    excel_add_value(0, 1, 'ROUGE-1', excel)
+    excel_add_value(0, 2, 'ROUGE-2', excel)
+    excel_add_value(0, 3, 'ROUGE-3', excel)
+    excel_add_value(0, 4, 'ROUGE-L', excel)
+    excel_add_value(0, 5, 'ROUGE-SU4', excel)
     for filename in glob.iglob(templateDir, recursive=True):
         name = os.path.basename(os.path.normpath(filename))
         with open(filename, 'r') as file:
@@ -143,7 +143,18 @@ def rouge_v2(templateDir, targetDir, excelName):
         excel_add_value(row, 0, model_name, excel)
         print(model_name)
         for rouge_key, rouge_value in score.items():
-            col += 1
+            if rouge_key == 'ROUGE-1':
+                col = 1
+            elif rouge_key == 'ROUGE-2':
+                col = 2
+            elif rouge_key == 'ROUGE-3':
+                col = 3
+            elif rouge_key == 'ROUGE-L':
+                col = 4
+            elif rouge_key == 'ROUGE-SU4':
+                col = 5
+            else:
+                raise 'pronblem no column'
             excel_add_value(row, col, rouge_value, excel)
 
 
@@ -180,6 +191,11 @@ def rouge_files_test():
 # split_summaries()
 # lemmatizing_files()
 write_excel = True
+
+
+rouge_v2('/Users/gregory/Documents/Github/Jarvis/Final/Training/09ManualSummaries/*.txt', '../LAB/Final/RSTSummary/', 'RST')
+rouge_v2('/Users/gregory/Documents/Github/Jarvis/Final/Training/09ManualSummaries/*.txt', '../LAB/Final/RSTSummary/', 'RST')
+
 
 rouge_v2('/Users/gregory/Documents/Github/Jarvis/Final/Training/09ManualSummaries/*.txt', '../LAB/Final/ConceptualNoExpantionSymmary/', 'ConceptualNoExp')
 rouge_v2('/Users/gregory/Documents/Github/Jarvis/Final/Training/09ManualSummaries/*.txt', '../LAB/Final/ConceptualNoExpantionSymmaryBest30/', 'ConceptualNoExpBest')
