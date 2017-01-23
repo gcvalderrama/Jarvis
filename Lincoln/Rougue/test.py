@@ -7,7 +7,7 @@ import xlsxwriter
 ROUGE = './RELEASE-1.5.5/ROUGE-1.5.5.pl'
 DATA_PATH = './RELEASE-1.5.5/data'
 write_excel = True
-workbook = xlsxwriter.Workbook('rouge_v3_report_01.xlsx')
+workbook = xlsxwriter.Workbook('rouge_v3_conceptual_rst.xlsx')
 
 
 def excel_init(name):
@@ -192,8 +192,8 @@ def rouge_files_test():
 # lemmatizing_files()
 write_excel = True
 
-rouge_v2('/Users/gregory/Documents/Github/Jarvis/Final/Training/09ManualSummaries/*.txt', '../LAB/Final/ConceptualRSTSummary/', 'ConceptualRST')
-rouge_v2('/Users/gregory/Documents/Github/Jarvis/Final/Training/09ManualSummaries/*.txt', '../LAB/Final/ConceptualFullRSTSummary/', 'ConceptualRSTFull')
+rouge_v2('/Users/gregory/Documents/Github/Jarvis/Final/Training/09ManualSummaries/*.txt', '../LAB/FinalV3/ConceptualRSTNoExpantion/', 'ConceptualRSTNoExpV3')
+rouge_v2('/Users/gregory/Documents/Github/Jarvis/Final/Training/09ManualSummaries/*.txt', '../LAB/FinalV3/ConceptualRST/', 'ConceptualRSTV3')
 
 #ConceptualNoExpantionSymmaryBest30
 
