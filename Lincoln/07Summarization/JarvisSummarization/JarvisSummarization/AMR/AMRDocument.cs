@@ -33,13 +33,39 @@ namespace JarvisSummarization.AMR
             {
                 var tokens = Document.Tokens.Where(c => c.sentence == graph.name)
                     .OrderBy(c => c.sentencepos).ToList();
+
+                //foreach (var token in tokens)
+                //{
+                //    var nodes = graph.Nodes.Where(c => c.nosuffix == token.lemma);
+                //    if (nodes.Count() > 0)
+                //    {
+                //        foreach (var node in nodes)
+                //        {                            
+                //            if (node.rstweight < token.rstweight)
+                //                node.rstweight = token.rstweight;
+                //        }
+                //    }
+                //    else
+                //    {
+
+                //        Console.WriteLine("term " + token.lemma);
+                //    }
+
+                //}
+
+                var defaultValue = tokens.OrderBy(c => c.rstweight).First().rstweight;
                 foreach (var node in graph.Nodes)
                 {
                     var token = tokens.Where(c => c.lemma == node.nosuffix)
                         .OrderByDescending(c => c.rstweight).FirstOrDefault();
+
                     if (token != null)
                     {
                         node.rstweight = token.rstweight;
+                    }
+                    else
+                    {
+                        node.rstweight = defaultValue;
                     }
                 }
             }

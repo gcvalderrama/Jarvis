@@ -35,7 +35,7 @@ namespace JarvisSummarization.PageRank
             pr = new List<double>();
             for (int i = 0; i < graph.Size; i++)
             {
-                pr.Add(1d / (float)graph.Size);
+                pr.Add(1d / (double)graph.Size);
             }            
         }
         /**
@@ -79,7 +79,8 @@ namespace JarvisSummarization.PageRank
             }
             for (int i = 0; i < graph.Size; i++)
             {
-                randomSurfing.Add(this.graph.GetRSTWeight(i) / sum);
+                double item = this.graph.GetRSTWeight(i) / sum;
+                randomSurfing.Add(item);
                 //randomSurfing.Add(0.1d);
             }                
             
