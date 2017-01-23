@@ -7,7 +7,7 @@ import xlsxwriter
 ROUGE = './RELEASE-1.5.5/ROUGE-1.5.5.pl'
 DATA_PATH = './RELEASE-1.5.5/data'
 write_excel = True
-workbook = xlsxwriter.Workbook('rouge_v3_report.xlsx')
+workbook = xlsxwriter.Workbook('rouge_v3_report_01.xlsx')
 
 
 def excel_init(name):
@@ -192,16 +192,8 @@ def rouge_files_test():
 # lemmatizing_files()
 write_excel = True
 
-
-rouge_v2('/Users/gregory/Documents/Github/Jarvis/Final/Training/09ManualSummaries/*.txt', '../LAB/Final/RSTSummary/', 'RST')
-rouge_v2('/Users/gregory/Documents/Github/Jarvis/Final/Training/09ManualSummaries/*.txt', '../LAB/Final/RSTNoExpantionSummary/', 'RSTNoEXP')
-rouge_v2('/Users/gregory/Documents/Github/Jarvis/Final/Training/09ManualSummaries/*.txt', '../LAB/Final/ConceptualNoExpantionSymmary/', 'ConceptualNoExp')
-rouge_v2('/Users/gregory/Documents/Github/Jarvis/Final/Training/09ManualSummaries/*.txt', '../LAB/Final/ConceptualNoExpantionSymmaryBest30/', 'ConceptualNoExpBest')
-rouge_v2('/Users/gregory/Documents/Github/Jarvis/Final/Training/09ManualSummaries/*.txt', '../LAB/Final/ConceptualSymmary30/', 'Conceptual')
-rouge_v2('/Users/gregory/Documents/Github/Jarvis/Final/Training/09ManualSummaries/*.txt', '../LAB/Final/ConceptualSymmaryBest30/', 'ConceptualBest')
-rouge_v2('/Users/gregory/Documents/Github/Jarvis/Final/Training/09ManualSummaries/*.txt', '../LAB/Final/ConceptualNoExpantionNoVERBSymmary/', 'ConceptualNoVerb')
 rouge_v2('/Users/gregory/Documents/Github/Jarvis/Final/Training/09ManualSummaries/*.txt', '../LAB/Final/ConceptualRSTSummary/', 'ConceptualRST')
-rouge_v2('/Users/gregory/Documents/Github/Jarvis/Final/Training/09ManualSummaries/*.txt', '../LAB/Final/ConceptualRSTNoVerbSummary/', 'ConceptualRSTNoVerb')
+rouge_v2('/Users/gregory/Documents/Github/Jarvis/Final/Training/09ManualSummaries/*.txt', '../LAB/Final/ConceptualFullRSTSummary/', 'ConceptualRSTFull')
 
 #ConceptualNoExpantionSymmaryBest30
 
