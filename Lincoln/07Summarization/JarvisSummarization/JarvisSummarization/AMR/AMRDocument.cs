@@ -65,7 +65,8 @@ namespace JarvisSummarization.AMR
                     }
                     else
                     {
-                        node.rstweight = defaultValue;
+                        //solo rst value a los elementos que contienen
+                        //node.rstweight = defaultValue;
                     }
                 }
             }

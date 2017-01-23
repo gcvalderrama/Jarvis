@@ -1,9 +1,9 @@
 library(readxl)
 
-rouge_conceptual <- read_excel("D:/Tesis2016/Jarvis/Lincoln/Rougue/rouge_v3_report.xlsx", 
+rouge_conceptual <- read_excel("D:/Tesis2016/Jarvis/Lincoln/Rougue/rouge_v3_report_01.xlsx", 
                                sheet = "ConceptualRST")
-rouge_no_expantion_conceptual <- read_excel("D:/Tesis2016/Jarvis/Lincoln/Rougue/rouge_v3_report.xlsx", 
-                               sheet = "ConceptualBest")
+rouge_no_expantion_conceptual <- read_excel("D:/Tesis2016/Jarvis/Lincoln/Rougue/rouge_v3_report_01.xlsx", 
+                               sheet = "ConceptualRSTFull")
 #View(rouge_final_conceptual)
 #View(rouge_conceptual)
 
