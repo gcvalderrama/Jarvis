@@ -118,13 +118,13 @@ public class Main {
                         }
                     }
                     for (ArrayList<CGVerbTerm> tmpArray: verb.Themes ) {
-                        p.setObject("about");
+                        p.setObject("related with");
                         for (CGVerbTerm tmp: tmpArray ) {
                             p.setObject(tmp.Node.nosuffix);
                         }
                     }
                     for (ArrayList<CGVerbTerm> tmpArray: verb.Goal ) {
-                        p.setObject("target");
+                        p.setObject("with target of");
                         for (CGVerbTerm tmp: tmpArray ) {
                             p.setObject(tmp.Node.nosuffix);
                         }
