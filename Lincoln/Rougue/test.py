@@ -7,7 +7,7 @@ import xlsxwriter
 ROUGE = './RELEASE-1.5.5/ROUGE-1.5.5.pl'
 DATA_PATH = './RELEASE-1.5.5/data'
 write_excel = True
-workbook = xlsxwriter.Workbook('rouge_v3_conceptual_rst_50.xlsx')
+workbook = xlsxwriter.Workbook('rouge_v3_nlg.xlsx')
 
 
 def excel_init(name):
@@ -192,11 +192,20 @@ def rouge_files_test():
 # lemmatizing_files()
 write_excel = True
 
-rouge_v2('/Users/gregory/Documents/Github/Jarvis/Final/Training/09ManualSummaries/*.txt', '../LAB/FinalV3/ConceptualRSTNoExpantion50/', 'ConceptualRSTNoExpV3V50')
-rouge_v2('/Users/gregory/Documents/Github/Jarvis/Final/Training/09ManualSummaries/*.txt', '../LAB/FinalV3/ConceptualRSTNoExpantion/', 'ConceptualRSTNoExpV3')
-rouge_v2('/Users/gregory/Documents/Github/Jarvis/Final/Training/09ManualSummaries/*.txt', '../LAB/FinalV3/ConceptualRST/', 'ConceptualRSTV3')
+rouge_v2('/Users/gregory/Documents/Github/Jarvis/Final/Training/09ManualSummaries/*.txt',
+         '/Users/gregory/Documents/Github/Jarvis/Final/Training/08NLGSentence/', 'NLGSentence')
 
-#ConceptualNoExpantionSymmaryBest30
+
+rouge_v2('/Users/gregory/Documents/Github/Jarvis/Final/Training/09ManualSummaries/*.txt',
+         '/Users/gregory/Documents/Github/Jarvis/Final/Training/08NLGSentenceNoAux/', 'NLGSentenceNoAux')
+
+
+
+rouge_v2('/Users/gregory/Documents/Github/Jarvis/Final/Training/09ManualSummaries/*.txt',
+         '/Users/gregory/Documents/Github/Jarvis/Final/Training/08NLGParagraph/', 'NLGParagraph')
+
+rouge_v2('/Users/gregory/Documents/Github/Jarvis/Final/Training/09ManualSummaries/*.txt',
+         '/Users/gregory/Documents/Github/Jarvis/Final/Training/08NLGParagraphNoAux/', 'NLGParagraphNoAux')
 
 
 if write_excel:
