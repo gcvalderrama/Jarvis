@@ -70,7 +70,12 @@ public class Main {
 
     public static void main(String[] args) throws IOException {
 
-        File folder = new File("D:/Tesis2016/Jarvis/Lincoln/LAB/NLG");
+
+        String inputDir = "D:/Tesis2016/Jarvis/Final/Training/07NLGMetadata/";
+
+        String outputDir =  "D:/Tesis2016/Jarvis/Final/Training/08NLGParagraph/";
+
+        File folder = new File(inputDir);
         File[] listOfFiles = folder.listFiles();
 
         Lexicon lexicon = Lexicon.getDefaultLexicon();
@@ -80,13 +85,11 @@ public class Main {
         for (File file : listOfFiles) {
             if (file.isFile()) {
 
-
                 String content;
                 Path t = Paths.get(file.getAbsoluteFile().toURI());
                 content = new String(Files.readAllBytes(t));
 
                 Gson g = new Gson();
-
 
                 Type listType = new TypeToken<ArrayList<CGVerb>>(){}.getType();
 
@@ -133,13 +136,13 @@ public class Main {
                         }
                     }
                     c.addCoordinate(p);
-                    String output =  realiser.realiseSentence(p);
-                    sb.append(output);
-                    sb.append(System.getProperty("line.separator"));
+                    //String output =  realiser.realiseSentence(p);
+                    //sb.append(output);
+                    //sb.append(System.getProperty("line.separator"));
                 }
-                //String output =  realiser.realiseSentence(c);
-                //sb.append(output);
-                String ta = "D:/Tesis2016/Jarvis/Lincoln/LAB/NLGSummarySentence/" + file.getName();
+                String output =  realiser.realiseSentence(c);
+                sb.append(output);
+                String ta = outputDir + file.getName();
                 System.out.println(ta);
                 Writer writer = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(ta), "utf-8"));
                 writer.write(sb.toString());
