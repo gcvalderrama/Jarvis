@@ -7,7 +7,7 @@ import xlsxwriter
 ROUGE = './RELEASE-1.5.5/ROUGE-1.5.5.pl'
 DATA_PATH = './RELEASE-1.5.5/data'
 write_excel = True
-workbook = xlsxwriter.Workbook('rouge_training_final.xlsx')
+workbook = xlsxwriter.Workbook('rouge_test_recall_final.xlsx')
 
 
 def excel_init(name):
@@ -192,27 +192,18 @@ def rouge_files_test():
 # lemmatizing_files()
 write_excel = True
 
-rouge_v2('/Users/gregory/Documents/Github/Jarvis/Final/Training/09ManualSummaries/*.txt',
-         '/Users/gregory/Documents/Github/Jarvis/Final/Training/04RSTSummaries/', 'RST')
+rouge_v2('/Users/gregory/Documents/Github/Jarvis/Final/Test/09Summaries/*.txt',
+         '/Users/gregory/Documents/Github/Jarvis/Final/Test/04RSTSummaries/', 'RST')
 
-rouge_v2('/Users/gregory/Documents/Github/Jarvis/Final/Training/09ManualSummaries/*.txt',
-         '/Users/gregory/Documents/Github/Jarvis/Final/Training/06ConceptualSummaries/', 'Conceptual')
+rouge_v2('/Users/gregory/Documents/Github/Jarvis/Final/Test/09Summaries/*.txt',
+         '/Users/gregory/Documents/Github/Jarvis/Final/Test/06ConceptualSummaries/', 'Conceptual')
 
-rouge_v2('/Users/gregory/Documents/Github/Jarvis/Final/Training/09ManualSummaries/*.txt',
-         '/Users/gregory/Documents/Github/Jarvis/Final/Training/06ConceptualRSTSummaries/', 'ConceptualRST')
+rouge_v2('/Users/gregory/Documents/Github/Jarvis/Final/Test/09Summaries/*.txt',
+         '/Users/gregory/Documents/Github/Jarvis/Final/Test/06ConceptualRSTSummaries/', 'ConceptualRST')
 
-rouge_v2('/Users/gregory/Documents/Github/Jarvis/Final/Training/09ManualSummaries/*.txt',
-         '/Users/gregory/Documents/Github/Jarvis/Final/Training/08NLGSentence/', 'NLGSentence')
+rouge_v2('/Users/gregory/Documents/Github/Jarvis/Final/Test/09Summaries/*.txt',
+         '/Users/gregory/Documents/Github/Jarvis/Final/Test/08NLGSummaries/', 'NLG')
 
-rouge_v2('/Users/gregory/Documents/Github/Jarvis/Final/Training/09ManualSummaries/*.txt',
-         '/Users/gregory/Documents/Github/Jarvis/Final/Training/08NLGParagraph/', 'NLGParagraph')
-
-
-rouge_v2('/Users/gregory/Documents/Github/Jarvis/Final/Training/09ManualSummaries/*.txt',
-         '/Users/gregory/Documents/Github/Jarvis/Final/Training/08NLGSentenceNoAux2/', '08NLGSentenceNoAux2')
-
-rouge_v2('/Users/gregory/Documents/Github/Jarvis/Final/Training/09ManualSummaries/*.txt',
-         '/Users/gregory/Documents/Github/Jarvis/Final/Training/08NLGSentenceNoCom/', '08NLGSentenceNoCom')
 
 if write_excel:
     workbook.close()
