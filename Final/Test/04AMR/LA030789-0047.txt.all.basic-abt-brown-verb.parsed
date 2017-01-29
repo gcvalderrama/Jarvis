@@ -1,5 +1,5 @@
 # ::id 1
-# ::snt Carl Lewis said Carl Lewis knew Ben Johnson was taking performance-enhancing drugs just after their 100-meter final last fall at the Seoul Olympics
+# ::snt Carl Lewis said Carl Lewis  knew Ben Johnson was taking performance-enhancing drugs just after their 100-meter final last fall at the Seoul Olympics
 (x3 / say-01
 	:ARG0 (x1 / newspaper
 		:name (n / name
@@ -31,89 +31,85 @@
 								:op1 "Seoul"))))))))
 
 # ::id 2
-# ::snt " Ben Johnson got out of those blocks like a caged lion, " Lewis said in an interview Sunday at the Los Angeles Marathon, where Ben Johnson was representing a sponsor
-(x16 / say-01
-	:ARG1 (x4 / get-01
-		:ARG0 (x2 / newspaper
+# ::snt Ben Johnson  got out of those blocks like a caged lion , Lewis said in an interview Sunday at the Los Angeles Marathon , where Ben Johnson  was representing a sponsor
+(x14 / say-01
+	:ARG0 (x11 / lion
+		:ARG0 (x1 / newspaper
 			:name (n2 / name
 				:op1 "Ben"
 				:op2 "Johnson"))
-		:ARG2 (x8 / block
-			:location (x12 / lion
-				:mod (x11 / caged))))
-	:ARG0 (x15 / person
+		:ARG1-of (x7 / block)
+		:mod (x10 / caged))
+	:ARG0 (x13 / person
 		:name (n / name
 			:op1 "Lewis"))
-	:time (x19 / interview-01)
-	:location (x25 / country
+	:time (x17 / interview-01)
+	:location (x23 / country
 		:name (n1 / name
 			:op1 "Marathon")
-		:null_edge (x23 / country
+		:null_edge (x21 / country
 			:name (n3 / name
 				:op1 "Los"))
-		:null_edge (x24 / country
+		:null_edge (x22 / country
 			:name (n4 / name
 				:op1 "Angeles"))
-		:ARG0-of (x31 / person
+		:ARG0-of (x29 / person
 			:ARG0-of (r / represent-01)
-			:ARG0 (x29 / person
+			:ARG0 (x27 / person
 				:name (n5 / name
 					:op1 "Johnson")
-				:null_edge (x28 / person
+				:null_edge (x26 / person
 					:name (n6 / name
 						:op1 "Ben")))
-			:ARG1 (x33 / sponsor-01)))
+			:ARG1 (x31 / sponsor-01)))
 	:time (xap0 / date-entity
-		:weekday (x20 / sunday)))
+		:weekday (x18 / sunday)))
 
 # ::id 3
-# ::snt " How can anybody in the world do that after running all those rounds (preliminary heats )
-(x3 / possible
-	:domain (x8 / do-02
-		:ARG0 (x4 / anybody
-			:location (x7 / world)
-			:time (x10 / after
-				:op1 (x11 / run-01
-					:ARG1 (x14 / round
-						:quant (x12 / all)
-						:mod (x17 / heat
-							:mod (x16 / preliminary))))))))
+# ::snt How can anybody in the world do that after running all those rounds (preliminary heats )?
+(x2 / possible
+	:domain (x7 / do-02
+		:ARG0 (x3 / anybody
+			:location (x6 / world)
+			:time (x9 / after
+				:op1 (x10 / run-01
+					:ARG1 (x13 / round
+						:quant (x11 / all)
+						:mod (x16 / heat
+							:mod (x15 / preliminary))))))))
 
 # ::id 4
-# ::snt " Ben Johnson said, ` Look, Ben Johnson do n't know what Carl Lewis is taking or what Carl Lewis is doing, but Carl Lewis is doing something . '
-(x4 / say-01
-	:ARG0 (x2 / newspaper
+# ::snt Ben Johnson  said , Look , Ben Johnson  do not know what Carl Lewis  is taking or what Carl Lewis  is doing , but Carl Lewis  is doing something
+(x3 / say-01
+	:ARG0 (x1 / newspaper
 		:name (n / name
 			:op1 "Ben"
 			:op2 "Johnson"))
-	:ARG1 (x13 / know-01
-		:null_edge (x7 / look-02)
-		:ARG0 (x9 / newspaper
+	:ARG1 (x11 / know-01
+		:null_edge (x5 / look-02)
+		:ARG0 (x7 / newspaper
 			:name (n1 / name
 				:op1 "Ben"
 				:op2 "Johnson"))
-		:ARG1 (x19 / or
-			:op1 (x18 / take-01
-				:ARG0 (x15 / newspaper
-					:name (n3 / name
+		:ARG1 (x17 / or
+			:op1 (x16 / take-01
+				:ARG0 (x13 / newspaper
+					:name (n2 / name
 						:op1 "Carl"
 						:op2 "Lewis")))
-			:op2 (x24 / do-02
-				:ARG0 (x21 / newspaper
+			:op2 (x28 / do-02
+				:ARG0 (x19 / newspaper
+					:name (n3 / name
+						:op1 "Carl"
+						:op2 "Lewis"))
+				:ARG0 (x25 / newspaper
 					:name (n4 / name
 						:op1 "Carl"
-						:op2 "Lewis"))))
-		:ARG1-of (x26 / contrast-01)
-		:null_edge (x30 / do-02
-			:ARG0 x9
-			:ARG0 (x27 / newspaper
-				:name (n2 / name
-					:op1 "Carl"
-					:op2 "Lewis"))
-			:ARG1 (x31 / something))))
+						:op2 "Lewis"))
+				:ARG1 (x29 / something)))))
 
 # ::id 5
-# ::snt Now Lewis has been implicated in an alleged sabotage of Johnson's drug test, which returned a positive result for the banned anabolic steroid stanozolol
+# ::snt Now Lewis has been implicated in an alleged sabotage of Johnson's drug test , which returned a positive result for the banned anabolic steroid stanozolol
 (x5 / implicate-01
 	:time (x1 / now)
 	:ARG1 (x2 / person
@@ -131,7 +127,7 @@
 				:mod (x26 / stanozolol)))))
 
 # ::id 6
-# ::snt At a Canadian inquiry into drug use in sport Monday at Toronto, Charlie Francis, a Canadian sprint coach, testified that Johnson might have drunk contaminated beer before a urinalysis
+# ::snt At a Canadian inquiry into drug use in sport Monday at Toronto , Charlie Francis , a Canadian sprint coach , testified that Johnson might have drunk contaminated beer before a urinalysis
 (x22 / testify-01
 	:ARG2 (x4 / inquire-01
 		:mod (x3 / country
@@ -167,7 +163,7 @@
 			:op1 (x32 / urinalysis))))
 
 # ::id 7
-# ::snt Francis based Charlie Francis theory on the fact that Johnson took the steroid furazabol three weeks before the Games, not the difficult-to-detect stanozolol
+# ::snt Francis based Charlie Francis  theory on the fact that Johnson took the steroid furazabol three weeks before the Games , not the difficult-to-detect stanozolol
 (x2 / base-01
 	:ARG0 (x1 / person
 		:name (n / name
@@ -195,34 +191,32 @@
 					:op1 "Games")))))
 
 # ::id 8
-# ::snt According to Francis ' testimony, Johnson said that an unidentified man who had been talking with Lewis sat near the beer that was provided for the athletes to facilitate the athletes in providing urine samples
-(x8 / say-01
-	:ARG0 (x7 / person
+# ::snt According to Francistestimony , Johnson said that an unidentified man who had been talking with Lewis sat near the beer that was provided for the athletes to facilitate the athletes  in providing urine samples
+(x6 / say-01
+	:ARG0 (x3 / person
 		:name (n / name
+			:op1 "Francistestimony"))
+	:ARG0 (x5 / person
+		:name (n1 / name
 			:op1 "Johnson"))
-	:ARG1 (x19 / sit-01
-		:ARG0 (x12 / man
-			:ARG1-of (x11 / identify-01
+	:ARG1 (x17 / sit-01
+		:ARG0 (x10 / man
+			:ARG1-of (x9 / identify-01
 				:polarity -)
-			:ARG0-of (x16 / talk-01
-				:ARG2 (x18 / person
-					:name (n1 / name
+			:ARG0-of (x14 / talk-01
+				:ARG2 (x16 / person
+					:name (n2 / name
 						:op1 "Lewis"))))
-		:ARG2 (x20 / near
-			:op1 (x22 / beer
-				:purpose (x30 / facilitate-01
-					:ARG2 (x28 / athlete)
-					:ARG1 (x32 / athletes)
-					:ARG1 (x36 / sample-01
-						:ARG1 (x35 / urine)
-						:ARG0 (xap0 / say-01
-							:ARG0 (x5 / testify-01
-								:ARG0 (x3 / person
-									:name (n2 / name
-										:op1 "Francis"))))))))))
+		:ARG2 (x18 / near
+			:op1 (x20 / beer
+				:purpose (x28 / facilitate-01
+					:ARG2 (x26 / athlete)
+					:ARG1 (x30 / athletes)
+					:ARG1 (x34 / sample-01
+						:ARG1 (x33 / urine)))))))
 
 # ::id 9
-# ::snt Francis said that two witnesses told Charlie Francis that the stranger had spoken with Lewis in another area of the waiting room
+# ::snt Francis said that two witnesses told Charlie Francis  that the stranger had spoken with Lewis in another area of the waiting room
 (x2 / say-01
 	:ARG0 (x1 / person
 		:name (n / name
@@ -247,7 +241,7 @@
 				:ARG0-of (x21 / wait-01)))))
 
 # ::id 10
-# ::snt Lewis had finished second to Johnson, who set a world record of 9.79 seconds in winning the 100-meter gold medal, and subsequently also had to be tested
+# ::snt Lewis had finished second to Johnson , who set a world record of 9.79 seconds in winning the 100-meter gold medal , and subsequently also had to be tested
 (x23 / and
 	:op1 (x3 / finish-01
 		:ARG0 (x1 / person
@@ -273,125 +267,121 @@
 		:mod (x25 / also)))
 
 # ::id 11
-# ::snt " Any allocation or innuendo that Carl Lewis tampered with Ben Johnson's drink or sample is ludicrous, " said David Greifinger, Lewis ' attorney
-(x21 / say-01
-	:ARG1 (x18 / ludicrous
-		:domain (x4 / or
-			:op1 (x3 / allocate-01
-				:mod (x2 / any)
-				:ARG0-of (x9 / tamper
-					:ARG0 (x7 / newspaper
-						:name (n2 / name
+# ::snt Any allocation or innuendo that Carl Lewis tampered with Ben Johnson's drink or sample is ludicrous , said David Greifinger , Lewisattorney
+(x19 / say-01
+	:ARG1 (x17 / ludicrous
+		:domain (x3 / or
+			:op1 (x2 / allocate-01
+				:mod (x1 / any)
+				:ARG0-of (x8 / tamper
+					:ARG0 (x6 / newspaper
+						:name (n1 / name
 							:op1 "Carl"
 							:op2 "Lewis"))
-					:ARG2 (x15 / or
-						:op1 (x14 / drink
-							:name (x11 / name
+					:ARG2 (x14 / or
+						:op1 (x13 / drink
+							:name (x10 / name
 								:op1 "Ben"
 								:op2 "Johnson"))
-						:op2 (x16 / sample-01))))
-			:op2 (x5 / innuendo)))
-	:ARG1 (xap0 / and
-		:ARG2 (x22 / newspaper
-			:name (n / name
-				:op1 "David"
-				:op2 "Greifinger"))
-		:op2 (x27 / attorney
-			:ARG1 (x25 / person
-				:name (n1 / name
-					:op1 "Lewis")))))
+						:op2 (x15 / sample-01))))
+			:op2 (x4 / innuendo)))
+	:ARG0 (x20 / person
+		:name (n / name
+			:op1 "David"
+			:op2 "Greifinger"
+			:op3 ","
+			:op4 "Lewisattorney")))
 
 # ::id 12
-# ::snt " These sound like the last acts of desperate men who know desperate men 've committed wrong and see no other way out other than to continue to lie and to fabricate stories
-(x3 / sound
-	:ARG2 (x7 / act-02
-		:mod (x6 / last)
-		:ARG1 (x10 / man
-			:mod (x9 / desperate)
-			:ARG0-of (x12 / know-01
-				:ARG1 (x19 / see-01
-					:ARG0 (x14 / man
-						:mod (x13 / desperate))
-					:ARG1 (x16 / commit-01
-						:ARG1 x14
-						:manner (x17 / wrong))
+# ::snt These sound like the last acts of desperate men who know desperate men  have committed wrong and see no other way out other than to continue to lie and to fabricate stories
+(x2 / sound
+	:ARG2 (x6 / act-02
+		:mod (x5 / last)
+		:ARG1 (x9 / man
+			:mod (x8 / desperate)
+			:ARG0-of (x11 / know-01
+				:ARG1 (x18 / see-01
+					:ARG0 (x13 / man
+						:mod (x12 / desperate))
+					:ARG1 (x15 / commit-01
+						:ARG1 x13
+						:manner (x16 / wrong))
 					:polarity -
-					:ARG1 (x22 / way
-						:mod (x21 / other))
-					:location (x23 / out)
-					:null_edge (x27 / continue-01
-						:ARG0 x14
-						:ARG1 (x30 / and
-							:op1 (x29 / lie-01)
-							:op2 (x32 / fabricate-01
-								:ARG1 (x33 / story)))))))))
+					:ARG1 (x21 / way
+						:mod (x20 / other))
+					:location (x22 / out)
+					:null_edge (x26 / continue-01
+						:ARG0 x13
+						:ARG1 (x29 / and
+							:op1 (x28 / lie-01)
+							:op2 (x31 / fabricate-01
+								:ARG1 (x32 / story)))))))))
 
 # ::id 13
-# ::snt " Charlie and Ben should own up to the fact that what Charlie and Ben did was wrong, and should promise to never to do the fact again and move on with Charlie and Ben lives
+# ::snt Charlie and Ben should own up to the fact that what Charlie and Ben  did was wrong , and should promise to never to do the fact  again and move on with Charlie and Ben  lives
 (x / xconcept
-	:x (x5 / recommend-01
-		:ARG1 (x6 / own-01
-			:ARG0 (x3 / and
-				:op1 (x2 / person
+	:x (x4 / recommend-01
+		:ARG1 (x5 / own-01
+			:ARG0 (x2 / and
+				:op1 (x1 / person
 					:name (n / name
 						:op1 "Charlie"))
-				:op2 (x4 / person
+				:op2 (x3 / person
 					:name (n1 / name
 						:op1 "Ben")))
-			:null_edge (x18 / wrong-41
-				:ARG2 (x14 / and
-					:op1 (x13 / person
+			:null_edge (x17 / wrong-41
+				:ARG2 (x13 / and
+					:op1 (x12 / person
 						:name (n2 / name
 							:op1 "Charlie"))
-					:op2 (x15 / person
+					:op2 (x14 / person
 						:name (n3 / name
 							:op1 "Ben")))))
-		:ARG1 (x20 / and))
-	:x (x21 / recommend-01
-		:ARG1 (x22 / promise-01
-			:ARG1 (x30 / and
-				:op1 (x28 / fact)
-				:mod (x29 / again)
-				:op2 (x31 / move-01
-					:ARG2 (x37 / life
-						:example (x35 / and
-							:op1 (x34 / person
+		:ARG1 (x19 / and))
+	:x (x20 / recommend-01
+		:ARG1 (x21 / promise-01
+			:ARG1 (x29 / and
+				:op1 (x27 / fact)
+				:mod (x28 / again)
+				:op2 (x30 / move-01
+					:ARG2 (x36 / life
+						:example (x34 / and
+							:op1 (x33 / person
 								:name (n4 / name
 									:op1 "Charlie"))
-							:op2 (x36 / person
+							:op2 (x35 / person
 								:name (n5 / name
 									:op1 "Ben")))))))))
 
 # ::id 14
-# ::snt By continuing Charlie and Ben present course of action Charlie and Ben are just embarrassing Charlie and Ben further .
-(x15 / embarrassing
-	:condition (x2 / continue-01
-		:prep-as (x9 / action
-			:null_edge (x4 / and
-				:op1 (x3 / person
-					:name (n4 / name
-						:op1 "Charlie"))
-				:op2 (x5 / person
-					:name (n5 / name
-						:op1 "Ben")))
-			:time (x6 / present))
-		:ARG0 (x11 / and
-			:op1 (x10 / person
+# ::snt By continuing Charlie and Ben  present course of action Charlie and Ben  are just embarrassing Charlie and Ben  further
+(x2 / continue-01
+	:ARG1 (x7 / course
+		:ARG1 (x4 / and
+			:op1 (x3 / person
 				:name (n / name
 					:op1 "Charlie"))
-			:op2 (x12 / person
+			:op2 (x5 / person
 				:name (n1 / name
-					:op1 "Ben"))))
-	:ARG0 x11
-	:mod (x14 / just)
-	:ARG1 (x17 / and
-		:op1 (x16 / person
-			:name (n2 / name
-				:op1 "Charlie"))
-		:op2 (x18 / person
-			:name (n3 / name
-				:op1 "Ben")))
-	:degree (x19 / further))
+					:op1 "Ben")))
+		:time (x6 / present)
+		:ARG1 (x17 / and
+			:op1 (x15 / embarrassing
+				:domain (x11 / and
+					:op1 (x10 / person
+						:name (n4 / name
+							:op1 "Charlie"))
+					:op2 (x12 / person
+						:name (n5 / name
+							:op1 "Ben")))
+				:mod (x14 / just)
+				:degree (x19 / further))
+			:op1 (x16 / person
+				:name (n2 / name
+					:op1 "Charlie"))
+			:op2 (x18 / person
+				:name (n3 / name
+					:op1 "Ben")))))
 
 # ::id 15
 # ::snt Lewis could not be reached for comment Monday
@@ -405,7 +395,7 @@
 		:ARG1 (x8 / monday)))
 
 # ::id 16
-# ::snt Though Johnson's gold medal and Seoul world-record time were both revoked, Ben Johnson world mark of 9.83 seconds stands
+# ::snt Though Johnson's gold medal and Seoul world-record time were both revoked , Ben Johnson  world mark of 9.83 seconds stands
 (x21 / stand-06
 	:time (x12 / revoke
 		:ARG1 (x6 / and
@@ -429,7 +419,7 @@
 	:ARG1 x17)
 
 # ::id 17
-# ::snt Ben Johnson set the record at the 1987 World Championships at Rome, where Lewis finished second in 9.93 seconds
+# ::snt Ben Johnson  set the record at the 1987 World Championships at Rome , where Lewis finished second in 9.93 seconds
 (x3 / set-03
 	:ARG0 (x1 / newspaper
 		:name (n / name
@@ -456,7 +446,7 @@
 						:quant (x19 / more-than)))))))
 
 # ::id 18
-# ::snt Lewis said Sunday that officials of the International Amateur Athletics Federation should disallow Johnson's world record from Rome because Francis has testified Charlie Francis sprinter took drugs before the World Championships
+# ::snt Lewis said Sunday that officials of the International Amateur Athletics Federation should disallow Johnson's world record from Rome because Francis has testified Charlie Francis  sprinter took drugs before the World Championships
 (x2 / say-01
 	:ARG0 (x1 / person
 		:name (n / name
@@ -505,7 +495,7 @@
 		:weekday (x3 / sunday)))
 
 # ::id 19
-# ::snt If that were to happen, Lewis would replace Johnson as the world record-holder
+# ::snt If that were to happen , Lewis would replace Johnson as the world record-holder
 (x9 / replace-01
 	:ARG1 (x5 / happen-01
 		:ARG1 (x10 / person
@@ -519,7 +509,7 @@
 		:mod (x13 / world)))
 
 # ::id 20
-# ::snt IAAF officials, however, said the record will stand because Johnson passed a drug test after the 1987 race
+# ::snt IAAF officials , however , said the record will stand because Johnson passed a drug test after the 1987 race
 (x6 / say-01
 	:ARG1 (x10 / stand-01
 		:ARG1 (x8 / record)
@@ -543,59 +533,59 @@
 						:op1 "IAAF"))))))
 
 # ::id 21
-# ::snt " If a world record of 9.79 seconds has been proven that Ben Johnson took drugs, Carl Lewis would think that (withdrawing the record )is the responsible thing for the sport, " Lewis said Sunday
-(x38 / say-01
-	:ARG1 (x21 / think-01
-		:condition (x11 / prove-01
-			:ARG1 (x5 / record
-				:mod (x4 / world)
+# ::snt If a world record of 9.79 seconds  has been proven that Ben Johnson  took drugs , Carl Lewis  would think that (withdrawing the record )is the responsible thing for the sport , Lewis said Sunday
+(x36 / say-01
+	:ARG1 (x20 / think-01
+		:condition (x10 / prove-01
+			:ARG1 (x4 / record
+				:mod (x3 / world)
 				:ARG1-of (xap0 / resemble-01
-					:ARG2 (x8 / temporal-quantity
+					:ARG2 (x7 / temporal-quantity
 						:unit (s / second)
-						:quant (x7 / more-than))))
-			:ARG1 (x15 / take-19
-				:ARG0 (x13 / newspaper
+						:quant (x6 / more-than))))
+			:ARG1 (x14 / take-19
+				:ARG0 (x12 / newspaper
 					:name (n2 / name
 						:op1 "Ben"
 						:op2 "Johnson"))
-				:ARG1 (x16 / drug)))
-		:ARG0 (x18 / newspaper
+				:ARG1 (x15 / drug)))
+		:ARG0 (x17 / newspaper
 			:name (n1 / name
 				:op1 "Carl"
 				:op2 "Lewis"))
-		:ARG1 (x30 / responsible-41
-			:ARG2 (x24 / withdraw-01
-				:ARG1 (x26 / record))
-			:ARG2 (x34 / sport)))
-	:ARG0 (x37 / person
+		:ARG1 (x29 / responsible-41
+			:ARG2 (x23 / withdraw-01
+				:ARG1 (x25 / record))
+			:ARG2 (x33 / sport)))
+	:ARG0 (x35 / person
 		:name (n / name
 			:op1 "Lewis"))
 	:time (xap1 / date-entity
-		:weekday (x39 / sunday)))
+		:weekday (x37 / sunday)))
 
 # ::id 22
-# ::snt Lewis also contended that Francis ' testimony painted a false picture as to why Johnson would take performance-enhancing drugs
+# ::snt Lewis also contended that Francistestimony painted a false picture as to why Johnson would take performance-enhancing drugs
 (x3 / contend-01
 	:ARG0 (x1 / person
 		:name (n / name
 			:op1 "Lewis"))
 	:mod (x2 / also)
-	:ARG1 (x8 / paint-03
-		:ARG0 (x7 / testify-01
-			:ARG0 (x5 / person
-				:name (n1 / name
-					:op1 "Francis")))
-		:ARG1 (x11 / picture
-			:mod (x10 / false)
-			:ARG1 (x17 / take-01
-				:ARG0 (x15 / person
+	:ARG1 (x6 / paint-03
+		:ARG0 (x5 / person
+			:name (n1 / name
+				:op1 "Francistestimony"))
+		:ARG1 (x9 / picture
+			:mod (x8 / false)
+			:ARG1 (x15 / take-01
+				:ARG0 x5
+				:ARG0 (x13 / person
 					:name (n2 / name
 						:op1 "Johnson"))
-				:ARG1 (x19 / drug
-					:mod (x18 / performance-enhancing))))))
+				:ARG1 (x17 / drug
+					:mod (x16 / performance-enhancing))))))
 
 # ::id 23
-# ::snt According to testimony, since 1981 Johnson has taken such drugs as furazabol, stanozolol and the human growth hormone, which is taken from the pituitary glands of human cadavers or can be taken in synthetic form
+# ::snt According to testimony , since 1981 Johnson has taken such drugs as furazabol , stanozolol and the human growth hormone , which is taken from the pituitary glands of human cadavers or can be taken in synthetic form
 (x3 / testify-01
 	:time (x5 / since
 		:op1 (x6 / date-entity
@@ -622,7 +612,7 @@
 							:mod (x37 / synthetic))))))))
 
 # ::id 24
-# ::snt The drugs induce the growth of muscle tissue, and some athletes claim, help performances
+# ::snt The drugs induce the growth of muscle tissue , and some athletes claim , help performances
 (x10 / and
 	:op1 (x3 / induce-02
 		:ARG0 (x2 / drug)
@@ -638,47 +628,47 @@
 			:ARG0-of (x15 / help-01))))
 
 # ::id 25
-# ::snt " Ben Johnson is trying to say that everyone was on the growth of muscle tissue, so some athletes got on the growth of muscle tissue, " Lewis said
-(x31 / say-01
-	:ARG1 (x5 / try-01
-		:ARG0 (x2 / newspaper
+# ::snt Ben Johnson  is trying to say that everyone was on the growth of muscle tissue  , so some athletes  got on the growth of muscle tissue  , Lewis said
+(x29 / say-01
+	:ARG1 (x4 / try-01
+		:ARG0 (x1 / newspaper
 			:name (n1 / name
 				:op1 "Ben"
 				:op2 "Johnson"))
-		:ARG1 (x7 / say-01
-			:ARG0 x2
-			:ARG1 (x9 / everyone)
-			:ARG1 (x13 / grow-01
-				:ARG1 (x16 / tissue
-					:mod (x15 / muscle))))
-		:ARG1 (x24 / grow-01
-			:ARG1 (x20 / athletes
-				:quant (x19 / some))
-			:ARG1 (x27 / tissue
-				:mod (x26 / muscle))))
-	:ARG0 (x30 / person
+		:ARG1 (x6 / say-01
+			:ARG0 x1
+			:ARG1 (x8 / everyone)
+			:ARG1 (x12 / grow-01
+				:ARG1 (x15 / tissue
+					:mod (x14 / muscle))))
+		:ARG1 (x23 / grow-01
+			:ARG1 (x19 / athletes
+				:quant (x18 / some))
+			:ARG1 (x26 / tissue
+				:mod (x25 / muscle))))
+	:ARG0 (x28 / person
 		:name (n / name
 			:op1 "Lewis")))
 
 # ::id 26
-# ::snt " That's not true
-(x5 / true
-	:domain (x2 / that))
+# ::snt That is not true
+(x4 / true
+	:domain (x1 / that))
 
 # ::id 27
-# ::snt some athletes wanted to beat people
+# ::snt some athletes  wanted to beat people
 (x3 / want-01
 	:ARG0 (x2 / athletes
 		:quant (x1 / some))
 	:ARG1 (x5 / beat-04))
 
 # ::id 28
-# ::snt That's why some athletes got on drugs .
+# ::snt That is why some athletes  got on drugs
 (x1 / that
 	:time (x6 / get-01
 		:ARG0 (x5 / athletes
 			:quant (x4 / some))
-		:ARG1 (x8 / drug)))
+		:ARG2 (x8 / drug)))
 
 # ::id 29
 # ::snt Lewis said track and field is not infested with steroid users as some are beginning to believe in light of the Canadian inquiry
@@ -703,7 +693,7 @@
 								:op1 "Canada"))))))))
 
 # ::id 30
-# ::snt 
+# ::snt Carl Lewis  said about 90 % of the athletes are drug-free
 (x3 / say-01
 	:ARG0 (x1 / newspaper
 		:name (n / name
@@ -713,25 +703,25 @@
 		:ARG2 (x9 / athlete)))
 
 # ::id 31
-# ::snt " Most of your great athletes are clean, " Lewis said
-(x12 / say-01
-	:ARG1 (x8 / clean-01
-		:ARG0 (x6 / athlete
-			:quant (x2 / most)
-			:ARG1-of (x3 / include-91)
-			:mod (x5 / great)))
-	:ARG0 (x11 / person
+# ::snt Most of your great athletes are clean , Lewis said
+(x10 / say-01
+	:ARG1 (x7 / clean-01
+		:ARG0 (x5 / athlete
+			:quant (x1 / most)
+			:ARG1-of (x2 / include-91)
+			:mod (x4 / great)))
+	:ARG0 (x9 / person
 		:name (n / name
 			:op1 "Lewis")))
 
 # ::id 32
-# ::snt " There are athletes who do have a problem
-(x7 / have-03
-	:ARG0 (x4 / athletes)
-	:ARG1 (x9 / problem))
+# ::snt There are athletes who do have a problem
+(x6 / have-03
+	:ARG0 (x3 / athletes)
+	:ARG1 (x8 / problem))
 
 # ::id 33
-# ::snt Carl Lewis can tell who's on a problem
+# ::snt Carl Lewis  can tell who is on a problem
 (x3 / possible
 	:domain (x4 / tell-01
 		:ARG0 (x1 / newspaper
@@ -741,7 +731,7 @@
 		:ARG1 (x9 / problem)))
 
 # ::id 34
-# ::snt Carl Lewis 've been around a problem too long .
+# ::snt Carl Lewis  have been around a problem  too long
 (x7 / problem
 	:poss (x1 / newspaper
 		:name (n / name
@@ -750,7 +740,7 @@
 	:mod (x8 / too))
 
 # ::id 35
-# ::snt Lewis, however, refused to implicate any of Carl Lewis colleagues
+# ::snt Lewis , however , refused to implicate any of Carl Lewis  colleagues
 (x5 / refuse-01
 	:ARG0 (x1 / person
 		:name (n / name
@@ -767,7 +757,7 @@
 					:op1 "Lewis")))))
 
 # ::id 36
-# ::snt But Lewis defended Evelyn Ashford, a world-class sprinter who was implicated as a steroid user in Francis ' testimony last week
+# ::snt But Lewis defended Evelyn Ashford , a world-class sprinter who was implicated as a steroid user in Francistestimony last week
 (x1 / contrast-01
 	:ARG2 (x3 / defend-01
 		:ARG0 (x2 / person
@@ -782,12 +772,11 @@
 					:ARG2 (x16 / person
 						:ARG0-of (u / use-01)
 						:mod (x15 / steroid))
-					:ARG2 (x20 / testify-01
-						:ARG0 (x18 / person
-							:name (n1 / name
-								:op1 "Francis")))
-					:time (x22 / week
-						:mod (x21 / last)))))))
+					:ARG2 (x18 / country
+						:name (n1 / name
+							:op1 "Francistestimony"))
+					:time (x20 / week
+						:mod (x19 / last)))))))
 
 # ::id 37
 # ::snt Lewis and Ashford are teammates on the Santa Monica Track Club
@@ -807,38 +796,38 @@
 				:op4 "Club"))))
 
 # ::id 38
-# ::snt " No way in the world does Evelyn Ashford take drugs, " Lewis said, pounding a table
-(x15 / say-01
-	:ARG1 (x10 / take-01
-		:ARG2 (x3 / way
-			:location (x6 / world))
-		:ARG0 (x8 / newspaper
-			:name (n1 / name
-				:op1 "Evelyn"
-				:op2 "Ashford"))
-		:ARG1 (x11 / drug))
-	:ARG0 (x14 / person
+# ::snt No way in the world does Evelyn Ashford  take drugs , Lewis said , pounding a table
+(x13 / say-01
+	:ARG1 (x2 / way
+		:location (x5 / world))
+	:ARG0 (x7 / newspaper
 		:name (n / name
+			:op1 "Evelyn"
+			:op2 "Ashford"))
+	:ARG1 (x10 / drug)
+	:ARG0 (x12 / person
+		:name (n1 / name
 			:op1 "Lewis"))
-	:ARG1 (x17 / mass-quantity
+	:ARG1 (x15 / mass-quantity
 		:unit (p / pound)
-		:ARG1 (x19 / table)))
+		:ARG0 x7
+		:ARG1 (x17 / table)))
 
 # ::id 39
-# ::snt " Evelyn Ashford is a victim
-(x6 / victim
-	:ARG0 (x2 / newspaper
+# ::snt Evelyn Ashford  is a victim
+(x5 / victim
+	:ARG0 (x1 / newspaper
 		:name (n / name
 			:op1 "Evelyn"
 			:op2 "Ashford")))
 
 # ::id 40
-# ::snt That's going to happen
+# ::snt That is going to happen
 (x5 / happen-01
 	:ARG1 (x1 / that))
 
 # ::id 41
-# ::snt Carl Lewis do n't think that will hurt Evelyn Ashford image because Evelyn is clean and Evelyn Ashford always stood for being clean
+# ::snt Carl Lewis  do not think that will hurt Evelyn Ashford  image because Evelyn is clean and Evelyn Ashford  always stood for being clean
 (x5 / think-01
 	:ARG0 (x1 / newspaper
 		:name (n / name
@@ -867,7 +856,7 @@
 						:purpose (x23 / clean-02)))))))
 
 # ::id 42
-# ::snt People who know Evelyn Ashford know No way in the world .
+# ::snt People who know Evelyn Ashford  know No way in the world
 (x6 / know-01
 	:ARG0 (x3 / know-01
 		:ARG1 (x4 / name
@@ -877,7 +866,7 @@
 	:location (x11 / world))
 
 # ::id 43
-# ::snt In finishing second at the Olympics, Lewis set a U.S. record of 9.92 seconds
+# ::snt In finishing second at the Olympics , Lewis set a U.S. record of 9.92 seconds
 (x9 / set-03
 	:ARG2 (x2 / finish-01
 		:ARG2 (x6 / game
@@ -898,7 +887,7 @@
 					:unit (y / yuan))))))
 
 # ::id 44
-# ::snt Even before Lewis replaced Johnson as the gold-medal winner two days after the race, the U.S. Olympian said Carl Lewis was happy with Carl Lewis result
+# ::snt Even before Lewis replaced Johnson as the gold-medal winner two days after the race , the U.S. Olympian said Carl Lewis  was happy with Carl Lewis  result
 (x19 / say-01
 	:concession (x1 / even
 		:op1 (x2 / before
@@ -930,47 +919,51 @@
 			:ARG2-of (x27 / result-01))))
 
 # ::id 45
-# ::snt " Carl Lewis 've come to grips with the fact that Carl Lewis 'm the best Carl Lewis can be and Carl Lewis ca n't ask for anything more, " Carl Lewis said
-(x34 / say-01
-	:ARG1 (x5 / come-01
-		:ARG1 (x2 / newspaper
+# ::snt Carl Lewis  have come to grips with the fact that Carl Lewis  am the best Carl Lewis  can be and Carl Lewis  ca not ask for anything more , Carl Lewis  said
+(x32 / say-01
+	:ARG1 (x4 / come-01
+		:ARG1 (x1 / newspaper
 			:name (n1 / name
 				:op1 "Carl"
 				:op2 "Lewis"))
-		:ARG2 (x7 / grip)
-		:null_edge (x26 / ask-02
-			:ARG0 (x21 / and
-				:op1 (x12 / newspaper
-					:name (n2 / name
-						:op1 "Carl"
-						:op2 "Lewis")
-					:mod (x16 / well
-						:degree (m / most)
-						:ARG2 (x20 / be-02
-							:mod (x19 / possible
-								:domain (x17 / newspaper
-									:name (n3 / name
-										:op1 "Carl"
-										:op2 "Lewis"))))))
-				:op2 (x22 / name
-					:op1 "Carl"
-					:op2 "Lewis"))
-			:degree (x29 / more
-				:mod (x28 / anything))))
-	:ARG0 (x32 / newspaper
+		:ARG2 (x6 / grip)
+		:prep-in (x9 / fact
+			:mod (x20 / and
+				:op1 (x15 / good-42
+					:degree (m / most)
+					:domain (x11 / newspaper
+						:name (n2 / name
+							:op1 "Carl"
+							:op2 "Lewis")))
+				:op1 (x19 / be-02
+					:mod (x18 / possible
+						:domain (x16 / newspaper
+							:name (n4 / name
+								:op1 "Carl"
+								:op2 "Lewis"))))
+				:op2 (x25 / ask-02
+					:ARG0 (x21 / newspaper
+						:name (n3 / name
+							:op1 "Carl"
+							:op2 "Lewis"))
+					:ARG2 (x28 / more
+						:mod (x27 / anything))))))
+	:ARG0 (x30 / newspaper
 		:name (n / name
 			:op1 "Carl"
 			:op2 "Lewis")))
 
 # ::id 46
-# ::snt 
-(x2 / name
-	:op1 "Carl"
-	:op2 "Lewis"
-	:ARG0-of (x8 / right-41))
+# ::snt Carl Lewis  am doing what is right
+(x4 / do-02
+	:ARG0 (x1 / newspaper
+		:name (n / name
+			:op1 "Carl"
+			:op2 "Lewis"))
+	:ARG1 (x7 / right-41))
 
 # ::id 47
-# ::snt Carl Lewis have to feel there is some merit to that
+# ::snt Carl Lewis  have to feel there is some merit to that
 (x3 / have-03
 	:ARG0 (x1 / newspaper
 		:name (n / name
@@ -982,7 +975,7 @@
 			:prep-to (x11 / that))))
 
 # ::id 48
-# ::snt some merit to that did n't ease the pain of not winning and feeling he (Johnson )was on drugs
+# ::snt some merit to that  did not ease the pain of not winning and feeling he (Johnson )was on drugs
 (x2 / merit-01
 	:mod (x1 / some)
 	:ARG1 (x7 / ease-02
@@ -994,7 +987,7 @@
 				:op2 (x14 / feel-01)))))
 
 # ::id 49
-# ::snt But some merit to that made Carl Lewis feel like Carl Lewis 'm putting something back into track and field because Carl Lewis 'm setting an example .
+# ::snt But some merit to that  made Carl Lewis  feel like Carl Lewis  am putting something back into track and field because Carl Lewis  am setting an example
 (x1 / contrast-01
 	:ARG2 (x6 / make-02
 		:ARG0 (x3 / merit-01
@@ -1036,46 +1029,46 @@
 					:op1 "Johnson")))))
 
 # ::id 51
-# ::snt " Carl Lewis think Ben is 110 % irresponsible in not coming out and telling kids to stay off drugs, " Carl Lewis said
-(x25 / say-01
-	:ARG1 (x4 / think-01
-		:ARG0 (x2 / newspaper
+# ::snt Carl Lewis  think Ben is 110 % irresponsible in not coming out and telling kids to stay off drugs , Carl Lewis  said
+(x23 / say-01
+	:ARG1 (x3 / think-01
+		:ARG0 (x1 / newspaper
 			:name (n1 / name
 				:op1 "Carl"
 				:op2 "Lewis"))
-		:ARG1 (x9 / irresponsible
-			:null_edge (x5 / person
+		:ARG1 (x8 / irresponsible
+			:null_edge (x4 / person
 				:name (n2 / name
 					:op1 "Ben"))
 			:null_edge 110
-			:null_edge (x14 / and
-				:op1 (x12 / come-01
-					:direction (x13 / out-01)
-					:purpose (x18 / stay-01))
-				:op2 (x15 / tell-01
-					:ARG1 (x16 / kid)
-					:ARG1 (x20 / drug)))))
-	:ARG0 (x23 / newspaper
+			:null_edge (x13 / and
+				:op1 (x11 / come-01
+					:direction (x12 / out-01)
+					:purpose (x17 / stay-01))
+				:op2 (x14 / tell-01
+					:ARG1 (x15 / kid)
+					:ARG1 (x19 / drug)))))
+	:ARG0 (x21 / newspaper
 		:name (n / name
 			:op1 "Carl"
 			:op2 "Lewis")))
 
 # ::id 52
-# ::snt " Ben Johnson needs to stand up and say, ` Do n't do a role model
-(x4 / need-01
-	:ARG0 (x2 / newspaper
+# ::snt Ben Johnson  needs to stand up and say , Do not do a role model
+(x3 / need-01
+	:ARG0 (x1 / newspaper
 		:name (n / name
 			:op1 "Ben"
 			:op2 "Johnson"))
-	:ARG1 (x8 / and
-		:op1 (x6 / stand-up)
-		:op2 (x9 / say-01
-			:ARG1 (x14 / do-02
-				:ARG1 (x17 / model
-					:mod (x16 / role))))))
+	:ARG1 (x7 / and
+		:op1 (x5 / stand-up)
+		:op2 (x8 / say-01
+			:ARG1 (x12 / do-02
+				:ARG1 (x15 / model
+					:mod (x14 / role))))))
 
 # ::id 53
-# ::snt Look what happened to Carl Lewis whether Carl Lewis knew a role model or not, make sure you know
+# ::snt Look what happened to Carl Lewis  whether Carl Lewis  knew a role model  or not , make sure you know
 (x1 / look-02
 	:null_edge (x10 / know-01
 		:ARG2 (x5 / name
@@ -1094,7 +1087,7 @@
 					:ARG0 (x19 / you))))))
 
 # ::id 54
-# ::snt Do n't take a role model unless you know what a role model is .
+# ::snt Do not take a role model  unless you know what a role model  is
 (x3 / take-01
 	:ARG1 (x6 / model
 		:mod (x5 / role))
@@ -1104,16 +1097,16 @@
 			:mod (x12 / role))))
 
 # ::id 55
-# ::snt " But he is perpetuating continued drug use
-(x2 / contrast-01
-	:ARG2 (x5 / perpetuate
-		:ARG0 (x3 / he))
-	:ARG2 (x6 / continue-01
-		:ARG1 (x8 / use-01
-			:ARG1 (x7 / drug))))
+# ::snt But he is perpetuating continued drug use
+(x1 / contrast-01
+	:ARG2 (x4 / perpetuate
+		:ARG0 (x2 / he))
+	:ARG2 (x5 / continue-01
+		:ARG1 (x7 / use-01
+			:ARG1 (x6 / drug))))
 
 # ::id 56
-# ::snt Carl Lewis think he's just lying to himself
+# ::snt Carl Lewis  think he is just lying to himself
 (x3 / think-01
 	:ARG0 (x1 / newspaper
 		:name (n / name
@@ -1140,7 +1133,7 @@
 				:ARG2 (x9 / high)))))
 
 # ::id 59
-# ::snt Some people take steroids because Some people want to run faster
+# ::snt Some people take steroids because Some people  want to run faster
 (x3 / take-01
 	:null_edge (x1 / some)
 	:ARG1 (x4 / steroid)
@@ -1151,7 +1144,7 @@
 				:manner (x11 / fast)))))
 
 # ::id 60
-# ::snt The biggest thing about drug use's the same thing
+# ::snt The biggest thing about drug use  is the same thing
 (x10 / thing
 	:domain (x3 / thing
 		:mod (x2 / big
@@ -1161,7 +1154,7 @@
 	:ARG1-of (x9 / same-41))
 
 # ::id 61
-# ::snt You 're trying to cheat somehow .
+# ::snt You are trying to cheat somehow
 (x3 / try-01
 	:ARG0 (x1 / you)
 	:ARG1 (x5 / cheat-02
@@ -1169,7 +1162,7 @@
 		:manner (x6 / somehow)))
 
 # ::id 62
-# ::snt Lewis, who won four gold medals at the 1984 Summer Games and has been one of the great sprinters and long jumpers in track and field, said Carl Lewis is determined to help the sport's image
+# ::snt Lewis , who won four gold medals at the 1984 Summer Games and has been one of the great sprinters and long jumpers in track and field , said Carl Lewis  is determined to help the sport's image
 (x29 / say-01
 	:ARG0 (x1 / person
 		:name (n / name
@@ -1201,43 +1194,43 @@
 				:poss (x37 / sport)))))
 
 # ::id 63
-# ::snt " That's what people do n't realize, " Carl Lewis said
-(x13 / say-01
-	:ARG1 (x8 / realize-02
-		:ARG0 (x2 / that))
-	:ARG0 (x11 / newspaper
+# ::snt That is what people do not realize , Carl Lewis  said
+(x11 / say-01
+	:ARG1 (x7 / realize-02
+		:ARG0 (x1 / that))
+	:ARG0 (x9 / newspaper
 		:name (n / name
 			:op1 "Carl"
 			:op2 "Lewis")))
 
 # ::id 64
-# ::snt " Carl Lewis could leave it all alone but the thing is, Carl Lewis want track to be a better sport than when Carl Lewis came
-(x9 / contrast-01
-	:ARG2 (x4 / possible)
-	:ARG1 (x5 / leave-01
-		:ARG0 (x2 / newspaper
+# ::snt Carl Lewis  could leave it all alone but the thing is , Carl Lewis  want track to be a better sport than when Carl Lewis  came
+(x8 / contrast-01
+	:ARG2 (x3 / possible)
+	:ARG1 (x4 / leave-01
+		:ARG0 (x1 / newspaper
 			:name (n / name
 				:op1 "Carl"
 				:op2 "Lewis"))
-		:ARG1 (x6 / it)
-		:ARG1 (x16 / want-01
-			:ARG0 (x14 / newspaper
+		:ARG1 (x5 / it)
+		:ARG1 (x15 / want-01
+			:ARG0 (x13 / newspaper
 				:name (n1 / name
 					:op1 "Carl"
 					:op2 "Lewis"))
-			:ARG1 (x17 / track
-				:ARG1 (x22 / sport
-					:mod (x21 / good
-						:ARG1-of (x27 / come-03
-							:ARG1 (x25 / newspaper
+			:ARG1 (x16 / track
+				:ARG1 (x21 / sport
+					:mod (x20 / good
+						:ARG1-of (x26 / come-03
+							:ARG1 (x24 / newspaper
 								:name (n2 / name
 									:op1 "Carl"
 									:op2 "Lewis"))))))))
-	:ARG1 (x7 / all
-		:mod (x8 / alone)))
+	:ARG1 (x6 / all
+		:mod (x7 / alone)))
 
 # ::id 65
-# ::snt If anybody gets what That people deserve in track and field, it's Carl Lewis
+# ::snt If anybody gets what That people  deserve in track and field , it is Carl Lewis
 (x15 / name
 	:op1 "Carl"
 	:op2 "Lewis"
@@ -1251,7 +1244,7 @@
 	:ARG0-of (x13 / it))
 
 # ::id 66
-# ::snt Carl Lewis make the most money, Carl Lewis get the appearances
+# ::snt Carl Lewis  make the most money , Carl Lewis  get the appearances
 (x12 / appear-01
 	:ARG1 (x1 / newspaper
 		:name (n / name
@@ -1265,7 +1258,7 @@
 			:op2 "Lewis")))
 
 # ::id 67
-# ::snt But Carl Lewis still believe that through it all Carl Lewis want to help every single person whether That people make $ 50 a meet or near what Carl Lewis make .
+# ::snt But Carl Lewis  still believe that through it all Carl Lewis  want to help every single person whether That people  make $ 50 a meet or near what Carl Lewis  make
 (x1 / contrast-01
 	:ARG2 (x5 / believe-01
 		:ARG0 (x2 / newspaper
@@ -1284,13 +1277,13 @@
 				:ARG1 (x17 / person
 					:mod (x15 / every)
 					:mod (x16 / single))
-				:ARG1 (x21 / make-00
-					:null_edge (x22 / country
+				:ARG1 (x26 / or
+					:op1 (x22 / country
 						:name (n2 / name
 							:op1 "$")
-						:null_edge 50)
-					:null_edge (x25 / meet-03)
-					:null_edge (x27 / near
+						:quant 50)
+					:op2 (x25 / meet-03)
+					:op2 (x27 / near
 						:op1 (x31 / make-01
 							:ARG0 (x29 / newspaper
 								:name (n3 / name
@@ -1298,7 +1291,7 @@
 									:op2 "Lewis")))))))))
 
 # ::id 68
-# ::snt Lewis said Carl Lewis deep-rooted conviction comes from his parents, who raised Carl Lewis to stand by Carl Lewis beliefs
+# ::snt Lewis said Carl Lewis  deep-rooted conviction comes from his parents , who raised Carl Lewis  to stand by Carl Lewis  beliefs
 (xap0 / multi-sentence
 	:snt1 (x2 / say-01
 		:ARG0 (x1 / person
@@ -1315,7 +1308,7 @@
 			:op2 "Lewis")))
 
 # ::id 69
-# ::snt Lewis said his parents philosophy was inspired by the late Dr. Martin Luther King, who once said it is important to make such sacrifices
+# ::snt Lewis said his parents  philosophy was inspired by the late Dr. Martin Luther King , who once said it is important to make such sacrifices
 (x2 / say-01
 	:ARG0 (x1 / person
 		:name (n / name
@@ -1335,26 +1328,26 @@
 							:mod (x24 / such))))))))
 
 # ::id 70
-# ::snt " That people can not sacrifice for something in That people life, whether a small insignificant thing is a small insignificant thing to others or a big thing to the world, what's the use of living ?
-(x37 / use-01
-	:mod (x4 / possible
-		:domain (x6 / sacrifice-01
-			:ARG1 (x8 / something
-				:part-of (x12 / life
-					:mod (x10 / that)
-					:null_edge (x11 / null_tag)))
-			:mod (x16 / small)
-			:example (x26 / or
-				:op2 (x22 / significant
+# ::snt That people can not sacrifice for something in That people  life , whether a small insignificant thing  is a small insignificant thing to others or a big thing to the world , what is the use of living ?
+(x36 / use-01
+	:mod (x3 / possible
+		:domain (x5 / sacrifice-01
+			:ARG1 (x7 / something
+				:part-of (x11 / life
+					:mod (x9 / that)
+					:null_edge (x10 / null_tag)))
+			:mod (x15 / small)
+			:example (x25 / or
+				:op2 (x21 / significant
 					:polarity -
-					:mod (x17 / significant
+					:mod (x16 / significant
 						:polarity -)
-					:mod (x21 / small))
-				:op2 (x25 / other)
-				:op2 (x29 / thing
-					:null_edge (x28 / big)
-					:ARG2 (x32 / world)))))
-	:ARG1 (x39 / live-01))
+					:mod (x20 / small))
+				:op2 (x24 / other)
+				:op2 (x28 / thing
+					:null_edge (x27 / big)
+					:ARG2 (x31 / world)))))
+	:ARG1 (x38 / live-01))
 
 # ::id 71
 # ::snt Lewis asked
@@ -1364,33 +1357,33 @@
 			:op1 "Lewis")))
 
 # ::id 72
-# ::snt " Carl Lewis feel if Carl Lewis ca n't sacrifice Carl Lewis for the betterment of other people in track and field, well, then Carl Lewis can not leave a legacy that will be remembered .
-(x29 / possible
-	:domain (x4 / feel-01
-		:ARG0 (x2 / newspaper
-			:name (n / name
+# ::snt Carl Lewis  feel if Carl Lewis  ca not sacrifice Carl Lewis  for the betterment of other people in track and field , well , then Carl Lewis  can not leave a legacy that will be remembered
+(x3 / feel-01
+	:ARG0 (x1 / newspaper
+		:name (n / name
+			:op1 "Carl"
+			:op2 "Lewis"))
+	:ARG0 (x9 / sacrifice-01
+		:ARG0 (x5 / newspaper
+			:name (n1 / name
 				:op1 "Carl"
 				:op2 "Lewis"))
-		:ARG1 (x31 / leave-01
-			:purpose (x10 / sacrifice-01
-				:ARG0 (x6 / newspaper
-					:name (n2 / name
-						:op1 "Carl"
-						:op2 "Lewis"))
-				:ARG1 (x11 / name
-					:op1 "Carl"
-					:op2 "Lewis")
-				:ARG1 (x15 / betterment
-					:mod (x17 / other)
-					:location (x21 / and
-						:op1 (x20 / track)
-						:op2 (x22 / field))))
-			:mod (x24 / well)
-			:ARG0 (x27 / newspaper
-				:name (n1 / name
-					:op1 "Carl"
-					:op2 "Lewis")
-				:ARG0-of (x26 / then))
-			:ARG1 (x33 / legacy
-				:ARG1-of (x37 / remember-01)))))
+		:ARG1 (x10 / name
+			:op1 "Carl"
+			:op2 "Lewis")
+		:purpose (x14 / betterment
+			:mod (x16 / other)
+			:location (x20 / and
+				:op1 (x19 / track)
+				:op2 (x21 / field)
+				:op1 (x30 / leave-01
+					:mod (x23 / well)
+					:time (x25 / then)
+					:ARG0 (x26 / newspaper
+						:name (n2 / name
+							:op1 "Carl"
+							:op2 "Lewis"))
+					:mod (x28 / possible)
+					:ARG1 (x32 / legacy
+						:ARG1-of (x36 / remember-01)))))))
 

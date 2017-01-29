@@ -1,37 +1,37 @@
 # ::id 1
-# ::snt LONDON -- A shadow is falling across the light at the British end of the Channel Tunnel
-(x6 / fall-01
+# ::snt LONDON A shadow is falling across the light at the British end of the Channel Tunnel
+(x5 / fall-03
 	:ARG1 (x1 / country
 		:name (n / name
 			:op1 "LONDON"))
-	:ARG1 (x4 / shadow-01
-		:mod (x3 / a))
-	:location (x7 / across
-		:op1 (x13 / end
-			:ARG1 (x17 / tunnel)
+	:ARG1 (x3 / shadow-01
+		:mod (x2 / a))
+	:location (x6 / across
+		:op1 (x12 / end
+			:ARG1 (x16 / tunnel)
 			:ARG1 (xap1 / country
 				:ARG0-of (xap0 / name
 					:op2 "Britain")))))
 
 # ::id 2
-# ::snt Just as prospects brighten for the beleaguered " chunnel, " Britain risks failing to take full advantage of the cross-channel link
-(x13 / risk-01
+# ::snt Just as prospects brighten for the beleaguered chunnel , Britain risks failing to take full advantage of the cross-channel link
+(x11 / risk-01
 	:condition (x4 / brighten
-		:duration (x7 / beleaguer
-			:ARG1 (x9 / chunnel
-				:mod (x1 / just))))
-	:ARG0 (x12 / country
+		:ARG2 (x8 / chunnel
+			:mod (x1 / just)
+			:mod (x7 / beleaguered)))
+	:ARG0 (x10 / country
 		:name (n / name
 			:op1 "Britain"))
-	:ARG1 (x14 / fail-01
-		:ARG2 (x16 / take-01
-			:ARG1 (x22 / link-01
-				:ARG1 (x18 / advantage
-					:mod (x17 / full))
-				:mod (x21 / cross-channel)))))
+	:ARG1 (x12 / fail-01
+		:ARG2 (x14 / take-01
+			:ARG1 (x20 / link-01
+				:ARG1 (x16 / advantage
+					:mod (x15 / full))
+				:mod (x19 / cross-channel)))))
 
 # ::id 3
-# ::snt The Thatcher government's announcement yesterday that The Thatcher government's would n't help fund a high-speed rail link between London and the tunnel has fueled fears that the country's creaky transportation system will isolate Britain on the periphery of Europe
+# ::snt The Thatcher government's announcement yesterday that The Thatcher government's  would not help fund a high-speed rail link between London and the tunnel has fueled fears that the country's creaky transportation system will isolate Britain on the periphery of Europe
 (x6 / yesterday
 	:domain (x5 / announce-01
 		:ARG0 (x3 / government-organization
@@ -68,68 +68,68 @@
 							:mod (x17 / high))))))))
 
 # ::id 4
-# ::snt Sarah Talbot-Williams, a spokeswoman for the Confederation of British Industry, Britain's main employers ' group says, " 1992 is going to produce a much more competitive market
-(x19 / say-01
-	:ARG0 (x1 / newspaper
-		:name (n / name
-			:op1 "Sarah"
-			:op2 "Talbot-Williams")
-		:ARG0-of (x5 / have-org-role-91
-			:ARG2 (s / spokeswoman)
-			:ARG1 (x8 / organization
-				:name (n1 / name
-					:op1 "Confederation")
-				:part-of (x11 / organization
-					:name (n2 / name
-						:op1 "Industry")
-					:null_edge (xap1 / country
-						:ARG0-of (xap0 / name
-							:op2 "Britain"
-							:ARG1 (x18 / group
-								:consist-of (x16 / employ-01
-									:null_edge (x13 / country
-										:name (n3 / name
-											:op1 "Britain"))
-									:mod (x15 / main)))))))))
-	:ARG1 (x26 / produce-01
-		:time (x22 / date-entity
-			:year 1992)
-		:ARG1 (x31 / market
-			:mod (x30 / compete-01
-				:degree (x29 / more
-					:degree (x28 / much))))))
-
-# ::id 5
-# ::snt " If Britain's main employers ' do n't have the infrastructure to get the goods to Europe, Britain's main employers ' 'll continue Britain's main employers ' status as an island .
-(x26 / continue-01
-	:ARG0 (x23 / employ-01
-		:ARG0-of (x10 / have-03
-			:ARG0 (x6 / employ-01
-				:null_edge (x3 / country
-					:name (n2 / name
-						:op1 "Britain"))
-				:mod (x5 / main))
-			:ARG1 (x12 / infrastructure)
-			:purpose (x14 / get-01
-				:ARG1 (x16 / good)
-				:ARG2 (x18 / continent
-					:name (n3 / name
-						:op1 "Europe"))))
-		:null_edge (x20 / country
+# ::snt Sarah Talbot-Williams , a spokeswoman for the Confederation of British Industry , Britain's main employersgroup says , 1992 is going to produce a much more competitive market
+(x17 / say-01
+	:ARG0 (x16 / employersgroup
+		:null_edge (x13 / country
 			:name (n / name
 				:op1 "Britain"))
-		:mod (x22 / main))
-	:ARG1 (x32 / status
-		:ARG0 x23
-		:poss (x30 / employ-01
-			:null_edge (x27 / country
-				:name (n1 / name
-					:op1 "Britain"))
-			:mod (x29 / main)))
-	:ARG1 (x35 / island))
+		:mod (x15 / main))
+	:ARG1 (x23 / produce-01
+		:ARG0 (x1 / newspaper
+			:name (n1 / name
+				:op1 "Sarah"
+				:op2 "Talbot-Williams")
+			:ARG0-of (x5 / have-org-role-91
+				:ARG2 (s / spokeswoman)
+				:ARG1 (x8 / organization
+					:name (n2 / name
+						:op1 "Confederation")
+					:part-of (x11 / organization
+						:name (n3 / name
+							:op1 "Industry")
+						:null_edge (xap1 / country
+							:ARG0-of (xap0 / name
+								:op2 "Britain"))))))
+		:time (x19 / date-entity
+			:year 1992)
+		:ARG1 (x28 / market
+			:mod (x27 / compete-01
+				:degree (x26 / more
+					:degree (x25 / much))))))
+
+# ::id 5
+# ::snt If Britain's main employers do not have the infrastructure to get the goods to Europe , Britain's main employers will continue Britain's main employers status as an island
+(x23 / continue-01
+	:ARG0 (x21 / employ-01
+		:ARG0-of (x8 / have-03
+			:ARG0 (x5 / employ-01
+				:null_edge (x2 / country
+					:name (n2 / name
+						:op1 "Britain"))
+				:mod (x4 / main))
+			:ARG1 (x10 / infrastructure)
+			:purpose (x12 / get-01
+				:ARG0 x5
+				:ARG1 (x14 / good)
+				:ARG2 (x16 / continent
+					:name (n3 / name
+						:op1 "Europe"))))
+		:null_edge (x18 / country
+			:name (n / name
+				:op1 "Britain"))
+		:mod (x20 / main))
+	:ARG1 (x28 / status
+		:ARG0 x21
+		:poss (x24 / country
+			:name (n1 / name
+				:op1 "Britain"))
+		:mod (x26 / main)
+		:null_edge (x27 / null_tag))
+	:ARG1 (x31 / island))
 
 # ::id 6
-# ::snt Long plagued by soaring costs and drilling delays, the tunnel now looks set to open on time in June 1993
+# ::snt Long plagued by soaring costs and drilling delays , the tunnel now looks set to open on time in June 1993
 (x13 / look-02
 	:ARG1 (x2 / plague-01
 		:degree (x1 / long)
@@ -147,7 +147,7 @@
 				:year 1993))))
 
 # ::id 7
-# ::snt British diggers, who once lagged months behind schedule, currently are just one week behind ; British diggers French counterparts are running three months ahead of plan
+# ::snt British diggers , who once lagged months behind schedule , currently are just one week behind ; British diggers  French counterparts are running three months ahead of plan
 (x / xconcept
 	:x (x17 / and
 		:op1 (xap6 / and
@@ -186,7 +186,7 @@
 					:op1 (x28 / plan-01))))))
 
 # ::id 8
-# ::snt And although the project's estimated cost has soared to # 7.66 billion ($ 13.11 billion )from # 4.9 billion, tunnel executives have obtained underwriting for an equity rights offer and preliminary agreement for more bank loans to cover the added cost
+# ::snt And although the project's estimated cost has soared to # 7.66 billion ($ 13.11 billion )from # 4.9 billion , tunnel executives have obtained underwriting for an equity rights offer and preliminary agreement for more bank loans to cover the added cost
 (x1 / and
 	:op2 (x27 / obtain-01
 		:ARG1 (x28 / underwriting
@@ -214,44 +214,44 @@
 				:ARG1 (x24 / tunnel)))))
 
 # ::id 9
-# ::snt " There will be no more talk of crisis, " says Alastair Morton, chief executive officer of Eurotunnel PLC, the consortium building the cross-channel link
-(x12 / say-01
-	:ARG1 (x7 / thing
+# ::snt There will be no more talk of crisis , says Alastair Morton , chief executive officer of Eurotunnel PLC , the consortium building the cross-channel link
+(x10 / say-01
+	:ARG1 (x6 / thing
 		:ARG1-of (t / talk-01)
 		:polarity -
-		:degree (x6 / more)
-		:ARG1 (x9 / crisis))
-	:ARG0 (x13 / newspaper
+		:degree (x5 / more)
+		:ARG1 (x8 / crisis))
+	:ARG0 (x11 / newspaper
 		:name (n / name
 			:op1 "Alastair"
 			:op2 "Morton")
-		:ARG0-of (x18 / have-org-role-91
+		:ARG0-of (x16 / have-org-role-91
 			:ARG2 (o / officer)
-			:mod (x16 / chief)
-			:mod (x17 / executive)
-			:ARG1 (x19 / include-91
-				:ARG3 (x24 / consortium
-					:part-of (x20 / government-organization
+			:mod (x14 / chief)
+			:mod (x15 / executive)
+			:ARG1 (x17 / include-91
+				:ARG3 (x22 / consortium
+					:part-of (x18 / government-organization
 						:name (n1 / name
 							:op1 "Eurotunnel"
 							:op2 "PLC"))
-					:ARG0-of (x25 / build-01
-						:ARG0 x20
-						:ARG1 (x28 / link-01
-							:mod (x27 / cross-channel))))))))
+					:ARG0-of (x23 / build-01
+						:ARG0 x18
+						:ARG1 (x26 / link-01
+							:mod (x25 / cross-channel))))))))
 
 # ::id 10
-# ::snt " The money will be together this year, and the project will be clear from there .
-(x10 / and
-	:op1 (x8 / year
-		:domain (x3 / money)
-		:mod (x7 / this))
-	:op2 (x15 / clear
-		:domain (x12 / project)
-		:ARG2 (x17 / there)))
+# ::snt The money will be together this year , and the project will be clear from there
+(x9 / and
+	:op1 (x7 / year
+		:domain (x2 / money)
+		:mod (x6 / this))
+	:op2 (x14 / clear
+		:domain (x11 / project)
+		:ARG2 (x16 / there)))
 
 # ::id 11
-# ::snt But the lack of a high-speed rail link to London, and improved service beyond, means Britain may miss out on the tunnel's total benefits
+# ::snt But the lack of a high-speed rail link to London , and improved service beyond , means Britain may miss out on the tunnel's total benefits
 (x1 / contrast-01
 	:ARG2 (x17 / mean-01
 		:ARG0 (x3 / lack-01
@@ -276,33 +276,33 @@
 				:mod (x26 / total-01)))))
 
 # ::id 12
-# ::snt " There is a danger of not being able to exploit the tunnel to the tunnel full potential, " says Prof. Christopher Nash, a transport expert at Leeds University in Northern England
-(x21 / say-01
-	:ARG1 (x5 / danger
-		:mod (x9 / possible
-			:domain (x11 / exploit-01
-				:ARG1 (x13 / tunnel)
-				:ARG2 (x16 / tunnel)
-				:ARG1 (x18 / potential
-					:mod (x17 / full)))))
-	:ARG0 (x23 / newspaper
-		:name (n / name
-			:op1 "Christopher"
-			:op2 "Nash")
-		:ARG0-of (x22 / prof.)
-		:ARG1-of (x28 / person
-			:ARG1-of (e / expert-41)
-			:ARG2 (x27 / transport-01)
-			:location (x30 / government-organization
-				:name (n1 / name
-					:op1 "Leeds"
-					:op2 "University")
-				:location (x33 / country
-					:name (n2 / name
-						:op1 "Northern"))
-				:location (x34 / country
-					:name (n3 / name
-						:op1 "England"))))))
+# ::snt There is a danger of not being able to exploit the tunnel to the tunnel  full potential , says Prof. Christopher Nash , a transport expert at Leeds University in Northern England
+(x4 / danger
+	:mod (x8 / possible
+		:domain (x10 / exploit-01
+			:ARG1 (x19 / say-01
+				:ARG1 (x12 / tunnel
+					:mod (x17 / potential
+						:mod (x15 / tunnel)
+						:mod (x16 / full))
+					:poss (x21 / name
+						:op1 "Christopher"
+						:op2 "Nash"
+						:ARG0-of (x20 / prof.)
+						:ARG0-of (x26 / person
+							:ARG1-of (e / expert-41)
+							:ARG2 (x25 / transport-01)
+							:location (x28 / government-organization
+								:name (n / name
+									:op1 "Leeds"
+									:op2 "University")
+								:location (x31 / country
+									:name (n1 / name
+										:op1 "Northern")
+									:part-of (x32 / country
+										:name (n2 / name
+											:op1 "England")))))))
+				:name x21))))
 
 # ::id 13
 # ::snt The government's refusal to help fund a fast rail service between London and the tunnel terminal at Folkestone culminates an 18-month squabble
@@ -331,7 +331,7 @@
 				:op1 "18-month"))))
 
 # ::id 14
-# ::snt European Rail Link Ltd., a consortium formed last November to build the rail link, had asked the government to contribute # 350 million towards the total # 2.6 billion cost of the link
+# ::snt European Rail Link Ltd. , a consortium formed last November to build the rail link , had asked the government to contribute # 350 million towards the total # 2.6 billion cost of the link
 (x18 / ask-02
 	:ARG0 (x1 / organization
 		:name (n / name
@@ -356,7 +356,7 @@
 			:ARG1 (x35 / link-01))))
 
 # ::id 15
-# ::snt Transport Secretary Cecil Parkinson told the House of Commons that the consortium's plans involved " unacceptable " risks for taxpayers
+# ::snt Transport Secretary Cecil Parkinson told the House of Commons that the consortium's plans involved unacceptable risks for taxpayers
 (x5 / tell-01
 	:ARG0 (x4 / person
 		:name (n / name
@@ -373,11 +373,11 @@
 	:ARG1 (x15 / involve-01
 		:ARG1 (x14 / plan-01
 			:ARG1 (x12 / consortium))
-		:ARG1 (x19 / risk-01
-			:mod (x17 / accept-01))))
+		:ARG1 (x17 / risk-01
+			:mod (x16 / accept-01))))
 
 # ::id 16
-# ::snt Transport Secretary Cecil Parkinson said British Rail, which owns 50 % of the consortium, would consider other options for a fast-rail link
+# ::snt Transport Secretary Cecil Parkinson  said British Rail , which owns 50 % of the consortium , would consider other options for a fast-rail link
 (x5 / say-01
 	:ARG0 (x4 / person
 		:name (n / name
@@ -411,7 +411,7 @@
 			:degree (x8 / anytime))))
 
 # ::id 18
-# ::snt Defending the decision, Mrs. Thatcher earlier told Parliament that the government already had earmarked almost # 2 billion for chunnel-related projects, including # 600 million on roads leading to the tunnel and # 1.3 billion in passenger and freight rail services
+# ::snt Defending the decision , Mrs. Thatcher earlier told Parliament that the government already had earmarked almost # 2 billion for chunnel-related projects , including # 600 million on roads leading to the tunnel and # 1.3 billion in passenger and freight rail services
 (x8 / tell-01
 	:ARG2 (x1 / defend-01
 		:ARG1 (x3 / decide-01))
@@ -441,7 +441,7 @@
 									:mod (x42 / rail))))))))))
 
 # ::id 19
-# ::snt But that did n't satisfy opposition legislators
+# ::snt But that did not satisfy opposition legislators
 (x1 / contrast-01
 	:ARG2 (x5 / satisfy-01
 		:ARG0 (x2 / that)
@@ -449,30 +449,30 @@
 			:ARG0-of (x6 / oppose-01))))
 
 # ::id 20
-# ::snt " Britain will enter the 21st century with an inadequate 19th-century railway link, " said John Prescott, the Labour Party's transportation spokesman
-(x16 / say-01
-	:ARG1 (x4 / enter-01
-		:ARG0 (x2 / country
+# ::snt Britain will enter the 21st century with an inadequate 19th-century railway link , said John Prescott , the Labour Party's transportation spokesman
+(x14 / say-01
+	:ARG1 (x3 / enter-01
+		:ARG0 (x1 / country
 			:name (n1 / name
 				:op1 "Britain"))
-		:instrument (x13 / link-01
-			:mod (x10 / adequate
+		:instrument (x12 / link-01
+			:mod (x9 / adequate
 				:polarity -)
-			:time (x11 / date-entity)
-			:ARG1 (x12 / railway)))
-	:ARG0 (x17 / person
+			:time (x10 / date-entity)
+			:ARG1 (x11 / railway)))
+	:ARG0 (x15 / person
 		:name (n / name
 			:op1 "John"
 			:op2 "Prescott")
-		:ARG0-of (x25 / have-org-role-91
+		:ARG0-of (x23 / have-org-role-91
 			:ARG2 (s / spokesman)
-			:ARG1 (x21 / political-party
+			:ARG1 (x19 / political-party
 				:name (n2 / name
 					:op1 "Labor"))
-			:ARG1 (x24 / transport-01))))
+			:ARG1 (x22 / transport-01))))
 
 # ::id 21
-# ::snt As a result of Thursday's decision, the journey time to London from Paris will be about three hours -- 30 minutes longer than with a high-speed rail link
+# ::snt As a result of Thursday's decision , the journey time to London from Paris will be about three hours 30 minutes longer than with a high-speed rail link
 (x / xconcept
 	:x (x3 / result-01
 		:ARG1 (x7 / decide-01
@@ -489,16 +489,16 @@
 			:unit (h / hour)
 			:quant 3))
 	:x (xap1 / between
-		:op1 (x23 / temporal-quantity
+		:op1 (x22 / temporal-quantity
 			:unit (m / minute)
 			:quant 30)
-		:poss (x29 / rail
-			:ARG2-of (x30 / link-01)
+		:poss (x28 / rail
+			:ARG2-of (x29 / link-01)
 			:mod (xap2 / speed
-				:mod (x28 / high)))))
+				:mod (x27 / high)))))
 
 # ::id 22
-# ::snt Passengers boarding high-speed trains in Paris will zoom at 180 miles an hour north to Calais, slow to 100 miles an hour through the tunnel, then crawl at an average of 60 miles an hour across southeast England's crowded commuter belt
+# ::snt Passengers boarding high-speed trains in Paris will zoom at 180 miles an hour north to Calais , slow to 100 miles an hour through the tunnel , then crawl at an average of 60 miles an hour across southeast England's crowded commuter belt
 (x8 / zoom
 	:ARG1 (x1 / passenger
 		:ARG1-of (x2 / board
@@ -534,45 +534,45 @@
 						:ARG0-of (c / commute-01)))))))
 
 # ::id 23
-# ::snt " The traffic will now speed through as far as Passengers boarding high-speed trains in Paris side of the tunnel, and then the men with red flags will lead The traffic on to London, " complains Keith Speed, a Conservative member of Parliament whose constituency is near the tunnel terminal
-(x38 / complain-01
-	:ARG1 (x22 / and
-		:op1 (x6 / speed-02
-			:ARG1 (x3 / traffic)
-			:time (x5 / now)
-			:ARG0 (x11 / passengers
-				:ARG0-of (x12 / board
-					:ARG1 (x14 / train
+# ::snt The traffic will now speed through as far as Passengers boarding high-speed trains in Paris  side of the tunnel , and then the men with red flags will lead The traffic  on to London , complains Keith Speed , a Conservative member of Parliament whose constituency is near the tunnel terminal
+(x36 / complain-01
+	:ARG1 (x21 / and
+		:op1 (x5 / speed-02
+			:ARG1 (x2 / traffic)
+			:time (x4 / now)
+			:ARG0 (x10 / passengers
+				:ARG0-of (x11 / board
+					:ARG1 (x13 / train
 						:mod (xap0 / speed
-							:mod (x13 / high)))
-					:location (x17 / side
-						:mod (x16 / city
+							:mod (x12 / high)))
+					:location (x16 / side
+						:mod (x15 / city
 							:name (n3 / name
 								:op1 "Paris"))
-						:ARG1 (x20 / tunnel)))))
-		:op2 (x30 / lead-03
-			:ARG0 x3
-			:ARG0 (x25 / man
-				:ARG0-of (x28 / flag
-					:mod (x27 / red)))
-			:ARG1 (x32 / traffic
-				:null_edge (x35 / city
+						:ARG1 (x19 / tunnel)))))
+		:op2 (x29 / lead-03
+			:ARG0 x2
+			:ARG0 (x24 / man
+				:ARG0-of (x27 / flag
+					:mod (x26 / red)))
+			:ARG1 (x31 / traffic
+				:null_edge (x34 / city
 					:name (n2 / name
 						:op1 "London")))))
-	:ARG1 (x39 / name
+	:ARG1 (x37 / name
 		:op1 "Keith"
 		:op2 "Speed"
-		:ARG0-of (x44 / member
-			:mod (x43 / political-party
+		:ARG0-of (x42 / member
+			:mod (x41 / political-party
 				:name (n / name
 					:op1 "Conservative"))
-			:ARG1 (x46 / government-organization
+			:ARG1 (x44 / government-organization
 				:name (n1 / name
 					:op1 "Parliament"))
-			:ARG1 (x48 / constituency
-				:location (x50 / near
-					:op1 (x53 / terminal
-						:location (x52 / tunnel)))))))
+			:ARG1 (x46 / constituency
+				:location (x48 / near
+					:op1 (x51 / terminal
+						:location (x50 / tunnel)))))))
 
 # ::id 24
 # ::snt Eurotunnel insists the tunnel will be financially viable without the high-speed rail link
@@ -589,7 +589,7 @@
 				:mod (x11 / high)))))
 
 # ::id 25
-# ::snt The tunnel-building consortium argues that only 39 % of The tunnel-building consortium total revenue will come from direct London-to-Paris trains ; the real money-spinner will be freight traffic hauled by road to the tunnel, then loaded onto special Eurotunnel wagons for the journey under the channel
+# ::snt The tunnel-building consortium argues that only 39 % of The tunnel-building consortium  total revenue will come from direct London-to-Paris trains ; the real money-spinner will be freight traffic hauled by road to the tunnel , then loaded onto special Eurotunnel wagons for the journey under the channel
 (x / xconcept
 	:x (x21 / and
 		:op1 (x4 / argue-01
@@ -624,55 +624,56 @@
 			:prep-as (x47 / channel))))
 
 # ::id 26
-# ::snt " Passengers boarding high-speed trains in Paris make more money on road traffic using Passengers boarding high-speed trains in Paris tunnel, " Mr. Morton says
-(x26 / say-01
-	:ARG0 (x25 / person
+# ::snt Passengers boarding high-speed trains in Paris  make more money on road traffic using Passengers boarding high-speed trains in Paris  tunnel , Mr. Morton says
+(x24 / say-01
+	:ARG1 (x7 / make-00
+		:ARG0 (x1 / passenger
+			:ARG0-of (x2 / board
+				:ARG1 (x4 / train
+					:mod (xap0 / speed
+						:mod (x3 / high)))
+				:location (x6 / city
+					:name (n1 / name
+						:op1 "Paris"))))
+		:ARG1 (x9 / money
+			:mod (x8 / more))
+		:ARG1 (x12 / traffic
+			:mod (x11 / road)
+			:ARG0-of (x13 / use-01
+				:ARG1 (x14 / passengers
+					:ARG0-of (x15 / board
+						:ARG1 (x17 / train
+							:mod (xap1 / speed
+								:mod (x16 / high)))
+						:location (x20 / tunnel
+							:location (x19 / city
+								:name (n2 / name
+									:op1 "Paris"))))))))
+	:ARG0 (x23 / person
 		:name (n / name
 			:op1 "Morton")
-		:null_edge (x24 / null_tag))
-	:ARG1 (xap1 / narcotic
-		:ARG0-of (x3 / board
-			:ARG1 (x5 / train
-				:mod (xap0 / speed
-					:mod (x4 / high)))
-			:location (x7 / city
-				:name (n1 / name
-					:op1 "Paris")))
-		:ARG1 (x10 / money
-			:mod (x9 / more))
-		:topic (x13 / traffic
-			:mod (x12 / road)
-			:ARG0-of (x14 / use-01
-				:ARG1 (x15 / passengers
-					:ARG0-of (x16 / board
-						:ARG1 (x18 / train
-							:mod (xap2 / speed
-								:mod (x17 / high)))))
-				:location (x21 / tunnel
-					:location (x20 / city
-						:name (n2 / name
-							:op1 "Paris")))))))
+		:null_edge (x22 / null_tag)))
 
 # ::id 27
-# ::snt " There is in no sense a feeling Passengers boarding high-speed trains in Paris must have that link to make the tunnel successful .
-(x8 / feel-01
-	:manner (x6 / sense
+# ::snt There is in no sense a feeling Passengers boarding high-speed trains in Paris  must have that link to make the tunnel successful
+(x7 / feel-01
+	:manner (x5 / sense
 		:polarity -)
-	:ARG1 (x18 / link-01
-		:mod (x17 / that)
-		:prep-on (x23 / succeed-01
-			:ARG0 (x22 / tunnel
+	:ARG1 (x17 / link-01
+		:mod (x16 / that)
+		:prep-on (x22 / succeed-01
+			:ARG0 (x21 / tunnel
 				:mod (xap1 / narcotic
-					:ARG0-of (x10 / board
-						:ARG1 (x12 / train
+					:ARG0-of (x9 / board
+						:ARG1 (x11 / train
 							:mod (xap0 / speed
-								:mod (x11 / high)))
-						:location (x14 / city
+								:mod (x10 / high)))
+						:location (x13 / city
 							:name (n / name
 								:op1 "Paris"))))))))
 
 # ::id 28
-# ::snt But Mr. Morton admits Alastair Morton wants to see the high-speed link built, professing the high-speed link built would divert traffic from southeast England's clogged roads
+# ::snt But Mr. Morton admits Alastair Morton  wants to see the high-speed link built , professing the high-speed link built  would divert traffic from southeast England's clogged roads
 (x1 / contrast-01
 	:ARG2 (x4 / admit-01
 		:ARG0 (x3 / person
@@ -704,30 +705,29 @@
 								:mod (x27 / clogged)))))))))
 
 # ::id 29
-# ::snt The high-speed link " will be a benefit for Passengers boarding high-speed trains in Paris, " Alastair Morton says, " but essential for the country .
-(x23 / contrast-01
-	:ARG1 (x20 / say-01
-		:ARG1 (x8 / benefit-01
-			:ARG1 (x3 / link-01)
-			:ARG1-of (x10 / passengers
-				:ARG1-of (x11 / board
-					:ARG1 (x13 / train
-						:mod (xap1 / speed
-							:mod (x12 / high)))
-					:location (x15 / city
-						:name (n1 / name
-							:op1 "Paris"))))
-			:ARG0 (xap0 / speed
-				:mod (x2 / high)))
-		:ARG0 (x18 / newspaper
-			:name (n / name
-				:op1 "Alastair"
-				:op2 "Morton"))
-		:ARG1 (x24 / essential
-			:ARG3 (x27 / country))))
+# ::snt The high-speed link will be a benefit for Passengers boarding high-speed trains in Paris  , Alastair Morton  says , but essential for the country
+(x18 / say-01
+	:ARG1 (x7 / benefit-01
+		:ARG1 (x3 / link-01)
+		:ARG0 (xap0 / speed
+			:mod (x2 / high)))
+	:ARG1 (x10 / board
+		:ARG1 (x9 / passengers)
+		:ARG1 (x12 / train
+			:mod (xap1 / speed
+				:mod (x11 / high)))
+		:location (x14 / city
+			:name (n1 / name
+				:op1 "Paris"))
+		:mod (x21 / essential
+			:purpose (x24 / country)))
+	:ARG0 (x16 / newspaper
+		:name (n / name
+			:op1 "Alastair"
+			:op2 "Morton")))
 
 # ::id 30
-# ::snt Some analysts go further, arguing the tunnel indeed needs better rail links if the tunnel is to compete with improving ferry and air services
+# ::snt Some analysts go further , arguing the tunnel indeed needs better rail links if the tunnel  is to compete with improving ferry and air services
 (x3 / go-02
 	:ARG0 (x2 / person
 		:ARG0-of (a / analyze-01)
@@ -749,68 +749,67 @@
 								:op2 (x24 / air)))))))))
 
 # ::id 31
-# ::snt " A high-speed link which covers -LCB- only -RCB- part of the route proves to be fairly uncompetitive with other transportation modes, " says Bill Steinmetz, vice president of transport for consultants Booz-Allen & Hamilton Inc. in London
-(x25 / say-01
-	:ARG1 (x14 / prove-01
-		:ARG0 (x4 / link-01
-			:ARG0-of (x6 / cover-01
-				:ARG1 (x10 / participate-01
-					:mod (x8 / only)
-					:ARG1 (x13 / route)
+# ::snt A high-speed link which covers -LCB- only -RCB- part of the route proves to be fairly uncompetitive with other transportation modes , says Bill Steinmetz , vice president of transport for consultants Booz-Allen & Hamilton Inc. in London
+(x23 / say-01
+	:ARG1 (x13 / prove-01
+		:ARG0 (x3 / link-01
+			:ARG0-of (x5 / cover-01
+				:ARG1 (x9 / participate-01
+					:mod (x7 / only)
+					:ARG1 (x12 / route)
 					:mod (xap0 / speed
-						:mod (x3 / high)))))
-		:ARG0 (x22 / mode
-			:mod (x17 / fair)
-			:mod (x20 / other)
-			:instrument-of (x21 / transport-01)))
-	:ARG0 (x26 / newspaper
-		:name (n / name
-			:op1 "Bill"
-			:op2 "Steinmetz")
-		:ARG0-of (x30 / have-org-role-91
+						:mod (x2 / high)))))
+		:ARG0 (x21 / mode
+			:mod (x16 / fair)
+			:mod (x19 / other)
+			:instrument-of (x20 / transport-01)))
+	:ARG1 (x24 / name
+		:op1 "Bill"
+		:op2 "Steinmetz"
+		:ARG0-of (x28 / have-org-role-91
 			:ARG2 (p / president)
-			:mod (x29 / vice)
-			:ARG1 (x32 / transport-01)
-			:ARG1 (x35 / government-organization
-				:name (n1 / name
+			:mod (x27 / vice)
+			:ARG1 (x30 / transport-01)
+			:ARG1 (x33 / government-organization
+				:name (n / name
 					:op1 "Booz-Allen"
 					:op2 "&"
 					:op3 "Hamilton"
 					:op4 "Inc.")
-				:mod (x34 / person
+				:mod (x32 / person
 					:ARG0-of (c / consult-01))
-				:location (x40 / city
-					:name (n2 / name
+				:location (x38 / city
+					:name (n1 / name
 						:op1 "London"))))))
 
 # ::id 32
-# ::snt " If you 're going to build high-speed rail, you have to decide how to provide complete links
-(x12 / have-03
-	:ARG1 (x7 / build-01
-		:ARG0 (x3 / you)
-		:ARG1 (x9 / rail
+# ::snt If you are going to build high-speed rail , you have to decide how to provide complete links
+(x11 / have-03
+	:ARG1 (x6 / build-01
+		:ARG0 (x2 / you)
+		:ARG1 (x8 / rail
 			:mod (xap0 / speed
-				:mod (x8 / high))))
-	:ARG0 (x11 / you)
-	:purpose (x14 / decide-01
-		:ARG1 (x19 / link-01
-			:mod (x18 / complete))))
+				:mod (x7 / high))))
+	:ARG0 (x10 / you)
+	:purpose (x13 / decide-01
+		:ARG1 (x18 / link-01
+			:mod (x17 / complete))))
 
 # ::id 33
-# ::snt A high-speed link which covers -LCB- only -RCB- part of the route's like having part of a house built
+# ::snt A high-speed link which covers -LCB- only -RCB- part of the route  is like having part of a house built
 (x3 / link-01
 	:ARG0-of (x5 / cover-01
 		:ARG1 (x9 / participate-01
 			:mod (x7 / only)
-			:ARG1 (x12 / route))
-		:ARG1 (x15 / have-03
-			:ARG2 (x19 / house
-				:ARG1-of (x20 / build-01))))
-	:ARG1 (xap0 / speed
-		:mod (x2 / high)))
+			:ARG1 (x12 / route)
+			:mod (xap0 / speed
+				:mod (x2 / high))))
+	:concession (x15 / have-03
+		:ARG2 (x19 / house
+			:ARG1-of (x20 / build-01))))
 
 # ::id 34
-# ::snt A high-speed link which covers -LCB- only -RCB- part of the route may function, but you do worry about A high-speed link which covers -LCB- only -RCB- part of the route .
+# ::snt A high-speed link which covers -LCB- only -RCB- part of the route  may function , but you do worry about A high-speed link which covers -LCB- only -RCB- part of the route
 (x16 / contrast-01
 	:ARG2 (x13 / possible
 		:domain (x14 / function-01
@@ -833,7 +832,7 @@
 							:mod (x22 / high))))))))
 
 # ::id 35
-# ::snt The worries do n't end in London
+# ::snt The worries do not end in London
 (x5 / end-01
 	:ARG1 (x2 / worry-01)
 	:location (x7 / city
@@ -841,7 +840,7 @@
 			:op1 "London")))
 
 # ::id 36
-# ::snt North of the capital, industrialists fear poor railway links will isolate industrialists on the fringes of the European Community's single market
+# ::snt North of the capital , industrialists fear poor railway links will isolate industrialists  on the fringes of the European Community's single market
 (x7 / fear-01
 	:null_edge (x1 / null_tag)
 	:ARG0 (x6 / industrialist)
@@ -855,51 +854,50 @@
 				:mod (x22 / single)))))
 
 # ::id 37
-# ::snt " The Channel Tunnel is a marvelous addition to the infrastructure, " says David Merrill, corporate-affairs director at Pilkington PLC, the big glass maker based in St. Helens in Northwest England
-(x14 / say-01
-	:ARG1 (x8 / addition
-		:domain (x4 / tunnel
-			:mod (x3 / channel))
-		:mod (x7 / marvelous)
-		:ARG2 (x11 / infrastructure))
-	:ARG0 (x15 / newspaper
-		:name (n / name
+# ::snt The Channel Tunnel is a marvelous addition to the infrastructure , says David Merrill , corporate-affairs director at Pilkington PLC , the big glass maker based in St. Helens in Northwest England
+(x12 / say-01
+	:ARG1 (x7 / addition
+		:domain (x3 / tunnel
+			:mod (x2 / channel))
+		:mod (x6 / marvelous)
+		:ARG2 (x10 / infrastructure)
+		:ARG0 (x13 / name
 			:op1 "David"
-			:op2 "Merrill")
-		:ARG0-of (x19 / have-org-role-91
-			:ARG2 (d / director)
-			:ARG1 (x21 / government-organization
-				:name (n1 / name
-					:op1 "Pilkington"
-					:op2 "PLC")
-				:ARG0-of (x27 / make-01
-					:ARG1 (x26 / glass
-						:mod (x25 / big))
-					:ARG1-of (x28 / base-02
-						:location (x31 / helens
-							:mod (x30 / st.)
-							:location (x33 / country
-								:name (n2 / name
-									:op1 "Northwest"))
-							:location (x34 / country
-								:name (n3 / name
-									:op1 "England")))))))))
+			:op2 "Merrill"
+			:ARG0-of (x17 / have-org-role-91
+				:ARG2 (d / director)
+				:ARG1 (x19 / government-organization
+					:name (n / name
+						:op1 "Pilkington"
+						:op2 "PLC")
+					:ARG0-of (x25 / make-01
+						:ARG1 (x24 / glass
+							:mod (x23 / big))
+						:ARG1-of (x26 / base-02
+							:location (x29 / helens
+								:mod (x28 / st.)
+								:location (x31 / country
+									:name (n1 / name
+										:op1 "Northwest"))
+								:location (x32 / country
+									:name (n2 / name
+										:op1 "England"))))))))))
 
 # ::id 38
-# ::snt But " the Channel Tunnel's important that the quality of the rail network and capacity is improved
+# ::snt But the Channel Tunnel  is important that the quality of the rail network and capacity is improved
 (x1 / contrast-01
-	:ARG2 (x7 / important
-		:domain (x5 / tunnel
-			:mod (x4 / channel))
-		:domain (x18 / improve-01
-			:ARG1 (x10 / quality
-				:poss (x15 / and
-					:op1 (x14 / network
-						:poss (x13 / rail))
-					:op2 (x16 / capacity))))))
+	:ARG2 (x6 / important
+		:domain (x4 / tunnel
+			:mod (x3 / channel))
+		:domain (x17 / improve-01
+			:ARG1 (x9 / quality
+				:poss (x14 / and
+					:op1 (x13 / network
+						:poss (x12 / rail))
+					:op2 (x15 / capacity))))))
 
 # ::id 39
-# ::snt David Merrill do n't think there's any time to lose .
+# ::snt David Merrill  do not think there is any time to lose
 (x5 / think-01
 	:ARG0 (x2 / person
 		:name (n / name

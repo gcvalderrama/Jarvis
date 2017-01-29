@@ -40,34 +40,34 @@
 			:quant 2)))
 
 # ::id 3
-# ::snt Nine years earlier, a " Big One " had stopped Miami's first real-estate boom in Nine years tracks, pushing floodwaters inland to the new jai alai fronton near where Miami International Airport sits today
-(x11 / stop-01
+# ::snt Nine years earlier , a Big One had stopped Miami's first real-estate boom in Nine years  tracks , pushing floodwaters inland to the new jai alai fronton near where Miami International Airport sits today
+(x9 / stop-01
 	:time (x3 / early
 		:quant (x2 / temporal-quantity
 			:unit (y / year)
 			:null_edge (x1 / null_tag)))
-	:ARG1 (x16 / boom-02
-		:poss (x12 / country
+	:ARG1 (x14 / boom-02
+		:poss (x10 / country
 			:name (n / name
 				:op1 "Miami"))
-		:mod (x15 / real-estate)
-		:duration (x19 / temporal-quantity
+		:mod (x13 / real-estate)
+		:duration (x17 / temporal-quantity
 			:unit (y1 / year)))
-	:ARG1 (x20 / track)
-	:ARG1 (x22 / push-02
-		:ARG1 (x23 / floodwater)
-		:ARG2 (x30 / fronton
-			:mod (x27 / new)
-			:mod (x29 / alaus
-				:mod (x28 / jaus))
-			:location (x31 / near
-				:op1 (x36 / sit-01
-					:ARG1 (x35 / airport
-						:null_edge (x33 / country
+	:ARG1 (x18 / track)
+	:ARG1 (x20 / push-02
+		:ARG1 (x21 / floodwater)
+		:ARG2 (x28 / fronton
+			:mod (x25 / new)
+			:mod (x27 / alaus
+				:mod (x26 / jaus))
+			:location (x29 / near
+				:op1 (x34 / sit-01
+					:ARG1 (x33 / airport
+						:null_edge (x31 / country
 							:name (n1 / name
 								:op1 "Miami"))
-						:mod (x34 / international))
-					:time (x37 / today))))))
+						:mod (x32 / international))
+					:time (x35 / today))))))
 
 # ::id 4
 # ::snt Newspaper headlines have documented Miami's subsequent hurricanes
@@ -81,44 +81,45 @@
 		:time (x7 / subsequent)))
 
 # ::id 5
-# ::snt The city was " Lashed " in ' 47, " Slammed " in '49 and " Pounded " in ' 50
-(x16 / and
-	:op1 (x5 / lash
-		:ARG1 (x2 / city))
-	:quant 47
-	:op2 (x12 / slam)
-	:op2 (x18 / mass-quantity
-		:unit (p / pound)
-		:time 50))
+# ::snt The city was Lashed in 47 , Slammed in '49 and Pounded in 50
+(x11 / and
+	:op1 (x4 / lash
+		:ARG1 (x2 / city)
+		:null_edge 47)
+	:op2 (x8 / slam)
+	:op2 (x12 / pounded
+		:null_edge 50))
 
 # ::id 6
-# ::snt The last to hit Miami was Cleo, a small one, in 1964, and the intervening period of calm defies all odds. ; Many folks here worry about the " Big One " just as Californians worry about the Big Quake
-(xap0 / multi-sentence
-	:snt1 (x16 / and
-		:op1 (x4 / hit-01
-			:ARG0 (x2 / last)
-			:ARG1 (x7 / person
-				:name (n / name
-					:op1 "Cleo")
-				:domain (x5 / country
-					:name (n2 / name
-						:op1 "Miami")))
-			:ARG1 (x21 / calm
-				:ARG1 (x18 / intervene-01)
-				:ARG1 (x24 / odds
-					:quant (x23 / all)))))
-	:snt2 (x30 / worry-01
-		:ARG0 (x28 / folk
-			:quant (x27 / many)
-			:location (x29 / here))
-		:ARG0 (x40 / worry-01
-			:mod (x37 / just)
-			:ARG0 (x39 / newspaper
+# ::snt The last to hit Miami was Cleo , a small one , in 1964 , and the intervening period of calm defies all odds. ; Many folks here worry about the Big One just as Californians worry about the Big Quake
+(x16 / and
+	:op1 (x4 / hit-01
+		:ARG0 (x2 / last)
+		:ARG1 (x7 / person
+			:name (n / name
+				:op1 "Cleo")
+			:domain (x5 / country
 				:name (n1 / name
-					:op1 "Californians")))))
+					:op1 "Miami")))
+		:ARG1 (x21 / calm
+			:ARG1 (x18 / intervene-01)
+			:ARG1 (x24 / odds
+				:quant (x23 / all)))
+		:ARG0 (x30 / worry-01
+			:ARG0 (x28 / folk
+				:quant (x27 / many)
+				:location (x29 / here))
+			:ARG1 (x33 / country
+				:name (n2 / name
+					:op1 "Big"))
+			:ARG0 (x38 / worry-01
+				:mod (x35 / just)
+				:ARG0 (x37 / newspaper
+					:name (n3 / name
+						:op1 "Californians"))))))
 
 # ::id 7
-# ::snt What would one of those legendary storms of the past with 200 mph winds pushing huge tidal surges do to this low-lying metropolis on the Atlantic
+# ::snt What would one of those legendary storms of the past with 200 mph winds pushing huge tidal surges do to this low-lying metropolis on the Atlantic ?
 (x19 / do-02
 	:ARG1 (x7 / storm
 		:ARG1-of (x4 / include-91)
@@ -136,7 +137,7 @@
 		:mod (x22 / low-lying)))
 
 # ::id 8
-# ::snt No one is sure. ; Hurricane season officially extends from June 1 through Nov. 30, and scientists at the National Hurricane Center, tucked away on the sixth floor of a nondescript office building in this Miami suburb, are perking up after another winter lull. ; From now until the end of the season, the six hurricane specialists will monitor weather computers 24 hours a day
+# ::snt No one is sure. ; Hurricane season officially extends from June 1 through Nov. 30 , and scientists at the National Hurricane Center , tucked away on the sixth floor of a nondescript office building in this Miami suburb , are perking up after another winter lull. ; From now until the end of the season , the six hurricane specialists will monitor weather computers 24 hours a day
 (x / xconcept
 	:x (x6 / and
 		:op1 (x4 / sure
@@ -186,7 +187,7 @@
 					:mod (x47 / winter))))))
 
 # ::id 9
-# ::snt In this part of the world, technology has made obsolete such disasters as the unnamed hurricane that surprised Galveston, Texas, in 1900, killing 6,000 people. ; The hurricane specialists use the nation's only working geostationary weather satellite to follow developing storms
+# ::snt In this part of the world , technology has made obsolete such disasters as the unnamed hurricane that surprised Galveston , Texas , in 1900 , killing 6,000 people. ; The hurricane specialists use the nation's only working geostationary weather satellite to follow developing storms
 (x / xconcept
 	:x (x31 / and
 		:op4 (x8 / technology
@@ -226,7 +227,7 @@
 					:ARG1-of (x46 / develop-02))))))
 
 # ::id 10
-# ::snt When a disturbance becomes threatening, a specially equipped plane is sent into the storm's heart to measure barometric pressure, wind speed and temperature. ; One of the specialists, Lixion Avila, has begun counting tropical waves that form off the coast of Africa every few days during hurricane season
+# ::snt When a disturbance becomes threatening , a specially equipped plane is sent into the storm's heart to measure barometric pressure , wind speed and temperature. ; One of the specialists , Lixion Avila , has begun counting tropical waves that form off the coast of Africa every few days during hurricane season
 (x / xconcept
 	:x (x28 / and
 		:op2 (x12 / send-01
@@ -265,7 +266,7 @@
 								:op1 "Africa"))))))))
 
 # ::id 11
-# ::snt About 60 of these waves of air, not water, form every year
+# ::snt About 60 of these waves of air , not water , form every year
 (x12 / form
 	:time (x1 / about
 		:op1 (x5 / wave
@@ -277,7 +278,7 @@
 			:unit (y / year))))
 
 # ::id 12
-# ::snt About 20 of the six hurricane specialists intensify into stronger disturbances, ranging from tropical depressions, with wind speeds to 38 mph ; to tropical storms, with winds from 39 to 73 mph ; to hurricanes, with winds exceeding 74 mph. ; Last year, 16 tropical depressions developed in the Atlantic
+# ::snt About 20 of the six hurricane specialists  intensify into stronger disturbances , ranging from tropical depressions , with wind speeds to 38 mph ; to tropical storms , with winds from 39 to 73 mph ; to hurricanes , with winds exceeding 74 mph. ; Last year , 16 tropical depressions developed in the Atlantic
 (x / xconcept
 	:x (x24 / and
 		:op1 (x8 / intensify-01
@@ -316,14 +317,14 @@
 				:mod (x51 / tropic)))))
 
 # ::id 13
-# ::snt Fourteen became tropical storms, seven of which became hurricanes, fewer than usual. ; People who venture into such dubious endeavors as long-term hurricane forecasting said this could be another light year
+# ::snt Fourteen became tropical storms , seven of which became hurricanes , fewer than usual. ; People who venture into such dubious endeavors as long-term hurricane forecasting said this could be another light year
 (x2 / become-01
 	:ARG2 (x4 / storm
 		:quant (x1 / fourteen)
 		:mod (x3 / tropic)))
 
 # ::id 14
-# ::snt But, they said, a relatively quiet year does not guarantee a thing. ; One such year was 1935 -- only six hurricanes formed, but one was the strongest to hit the continent
+# ::snt But , they said , a relatively quiet year does not guarantee a thing. ; One such year was 1935 only six hurricanes formed , but one was the strongest to hit the continent
 (x1 / contrast-01
 	:ARG2 (x4 / say-01)
 	:ARG2 (x12 / guarantee-01
@@ -335,7 +336,7 @@
 			:year 1935)))
 
 # ::id 15
-# ::snt More than 800 workers, brought down to build the Overseas Highway through the Florida Keys, were killed when 200 mph winds knocked More than 800 workers evacuation train off the tracks. ; NO MATTER what long-range forecasters say, scientists at the Hurricane Center know that the laws of probability are closing in on Miami
+# ::snt More than 800 workers , brought down to build the Overseas Highway through the Florida Keys , were killed when 200 mph winds knocked More than 800 workers  evacuation train off the tracks. ; NO MATTER what long-range forecasters say , scientists at the Hurricane Center know that the laws of probability are closing in on Miami
 (x / xconcept
 	:x (x35 / and
 		:op1 (x6 / bring-01
@@ -384,7 +385,7 @@
 		:op2 (x33 / track)))
 
 # ::id 16
-# ::snt More than 800 workers are a conservative bunch, not given to Sunday-supplement scare stories
+# ::snt More than 800 workers  are a conservative bunch , not given to Sunday-supplement scare stories
 (x8 / bunch
 	:domain (x4 / person
 		:ARG0-of (w / work-01)
@@ -396,47 +397,46 @@
 		:mod (x14 / scare-01)))
 
 # ::id 17
-# ::snt Miami has grown immensely since the last major storm and is greatly overdue, More than 800 workers said. ; " Historically, south Florida has had more hurricanes than any other site, " said Jerry Jarrell, a hurricane specialist eyeing Miami's 27-year hiatus nervously
-(x37 / say-01
-	:ARG0 (x39 / person
-		:name (n / name
-			:op1 "Jarrell")
-		:null_edge (x38 / person
-			:name (n1 / name
-				:op1 "Jerry"))
-		:null_edge (x43 / person
-			:ARG0-of (s / specialize-01)
-			:ARG0-of (x44 / eye-01
-				:ARG1 (x48 / hiatus
-					:poss (x45 / country
-						:name (n2 / name
-							:op1 "Miami"))
-					:mod (x47 / person
-						:name (n3 / name
-							:op1 "27-year")))
-				:manner (x49 / nervously)))))
+# ::snt Miami has grown immensely since the last major storm and is greatly overdue , More than 800 workers  said. ; Historically , south Florida has had more hurricanes than any other site , said Jerry Jarrell , a hurricane specialist eyeing Miami's 27-year hiatus nervously
+(x19 / say-01
+	:ARG1 (x10 / and
+		:op1 (x3 / grow-03
+			:ARG0 (x1 / country
+				:name (n / name
+					:op1 "Miami"))
+			:manner (x4 / immensely)
+			:time (x5 / since
+				:op1 (x9 / storm
+					:mod (x7 / last)
+					:mod (x8 / major))))
+		:op2 (x13 / overdue
+			:degree (x12 / great)))
+	:ARG0 (x18 / person
+		:ARG0-of (w / work-01)
+		:quant (x15 / more-than
+			:op1 800)))
 
 # ::id 18
-# ::snt " More than 800 workers would expect a major hurricane to hit within 75 miles of Miami every eight years .
-(x7 / expect-01
-	:ARG0 (x5 / person
+# ::snt More than 800 workers  would expect a major hurricane to hit within 75 miles of Miami every eight years
+(x6 / expect-01
+	:ARG0 (x4 / person
 		:ARG0-of (w / work-01)
-		:quant (x2 / more-than
+		:quant (x1 / more-than
 			:op1 800))
-	:ARG1 (x12 / hit-01
-		:ARG0 (x10 / hurricane
-			:mod (x9 / major))
-		:ARG1 (x15 / distance-quantity
+	:ARG1 (x11 / hit-01
+		:ARG0 (x9 / hurricane
+			:mod (x8 / major))
+		:ARG1 (x14 / distance-quantity
 			:unit (m / mile)
-			:null_edge (x17 / country
+			:null_edge (x16 / country
 				:name (n / name
 					:op1 "Miami")))
-		:duration (x20 / temporal-quantity
+		:duration (x19 / temporal-quantity
 			:unit (y / year)
 			:quant 8)))
 
 # ::id 19
-# ::snt 
+# ::snt ; At the center , scientists built a computer model to calculate what would happen if the 1926 hurricane were to hit Miami today
 (x / xconcept
 	:x (x1 / and
 		:op1 (x7 / build-01
@@ -456,7 +456,7 @@
 						:time (x24 / today)))))))
 
 # ::id 20
-# ::snt That storm was almost exactly the strength of Hurricane Hugo, which hit in South Carolina with 135 mph winds in September 1989
+# ::snt That storm was almost exactly the strength of Hurricane Hugo , which hit in South Carolina with 135 mph winds in September 1989
 (x7 / strength
 	:domain (x2 / storm
 		:mod (x1 / that))
@@ -475,48 +475,46 @@
 					:year 1989)))))
 
 # ::id 21
-# ::snt The scientists took data from Hugo and applied the last major storm to the path taken by the 1926 hurricane into Miami. ; " the last major storm would be a totally different story here, " said Max Mayfield, who collected photos from the 1926 storm to illustrate the model
-(x39 / say-01
+# ::snt The scientists took data from Hugo and applied the last major storm  to the path taken by the 1926 hurricane into Miami. ; the last major storm  would be a totally different story here , said Max Mayfield , who collected photos from the 1926 storm to illustrate the model
+(x37 / say-01
 	:ARG1 (x7 / and
 		:op1 (x3 / take-19
 			:ARG0 (x2 / scientist)
 			:ARG1 (x4 / data)
 			:ARG2 (x6 / person
-				:name (n1 / name
+				:name (n / name
 					:op1 "Hugo"))
-			:ARG1 (x35 / story
-				:ARG0 (x29 / storm
-					:mod (x27 / last)
-					:mod (x28 / major))
-				:ARG1-of (x34 / differ-02
-					:degree (x33 / total))
-				:location (x36 / here)))
+			:ARG1 (x34 / story
+				:ARG0 (x28 / storm
+					:mod (x26 / last)
+					:mod (x27 / major))
+				:ARG1-of (x33 / differ-02
+					:degree (x32 / total))
+				:location (x35 / here)))
 		:op2 (x8 / apply-02
 			:ARG1 (x12 / storm
 				:mod (x10 / last)
 				:mod (x11 / major))
-			:ARG2 (x15 / path)))
-	:ARG0 (x40 / newspaper
-		:name (n / name
-			:op1 "Max"
-			:op2 "Mayfield")
-		:ARG0-of (x44 / collect-01
-			:ARG1 (x45 / photo)
-			:ARG2 (x49 / storm
-				:time (x48 / date-entity
-					:year 1926))
-			:purpose (x51 / illustrate
-				:ARG1 (x53 / model)))))
+			:ARG2 (x15 / path)
+			:ARG0 (x38 / name
+				:op1 "Max"
+				:op2 "Mayfield"
+				:ARG0-of (x42 / collect-01
+					:ARG1 (x43 / photo)
+					:ARG2 (x47 / storm
+						:time (x46 / date-entity
+							:year 1926))
+					:purpose (x49 / illustrate
+						:ARG1 (x51 / model)))))))
 
 # ::id 22
-# ::snt " How many high-rises did The scientists have on those barrier islands up in South Carolina
-(x8 / have-03
-	:ARG2 (x4 / high
-		:quant (x3 / many))
-	:ARG0 (x7 / scientist)
-	:ARG2 (x12 / island
-		:mod (x11 / barrier))
-	:ARG1 (x15 / country
+# ::snt How many high-rises did The scientists  have on those barrier islands up in South Carolina ?
+(x11 / island
+	:ARG1 (x3 / high
+		:quant (x2 / many))
+	:ARG0 (x6 / scientist)
+	:mod (x10 / barrier)
+	:location (x14 / country
 		:name (n / name
 			:op1 "South"
 			:op2 "Carolina")))
@@ -526,7 +524,7 @@
 (x1 / none)
 
 # ::id 24
-# ::snt Max Mayfield think all these folks in The scientists Miami Beach condos are going to be in for a rude awakening .
+# ::snt Max Mayfield  think all these folks in The scientists  Miami Beach condos are going to be in for a rude awakening
 (x3 / think-01
 	:ARG0 (x1 / newspaper
 		:name (n / name
@@ -547,7 +545,7 @@
 			:mod (x20 / rude))))
 
 # ::id 25
-# ::snt ; A worst-case storm, with winds topping 150 mph, would put 5 feet of water in Joe's Stone Crabs restaurant, a Miami Beach landmark, and 9 feet of water on Biscayne Boulevard in downtown Miami
+# ::snt ; A worst-case storm , with winds topping 150 mph , would put 5 feet of water in Joe's Stone Crabs restaurant , a Miami Beach landmark , and 9 feet of water on Biscayne Boulevard in downtown Miami
 (x13 / put-01
 	:ARG0 (x4 / storm
 		:mod (x3 / worst-case))
@@ -592,7 +590,7 @@
 		:location (x39 / downtown)))
 
 # ::id 26
-# ::snt Surging water could reach levels of 13 1/2 feet in low-lying areas south of Miami. ; DESPITE MODERN technology, the specialists can not forecast precisely where a hurricane will hit
+# ::snt Surging water could reach levels of 13 1/2 feet in low-lying areas south of Miami. ; DESPITE MODERN technology , the specialists can not forecast precisely where a hurricane will hit
 (x3 / possible
 	:domain (x4 / reach-01
 		:ARG0 (x1 / surge-01
@@ -611,7 +609,7 @@
 					:ARG0 (x29 / hurricane))))))
 
 # ::id 27
-# ::snt Hurricanes change direction and intensify in a matter of hours and, in 24 hours, the specialists said, the six hurricane specialists could miscalculate one's track by 100 miles
+# ::snt Hurricanes change direction and intensify in a matter of hours and , in 24 hours , the specialists said , the six hurricane specialists  could miscalculate one's track by 100 miles
 (x4 / and
 	:op1 (x2 / change-01
 		:ARG0 (x1 / hurricanes)
@@ -640,7 +638,7 @@
 				:unit (h / hour)))))
 
 # ::id 28
-# ::snt This, and the number of years since the last major storm hit, has spawned a certain complacency among residents that the specialists find disturbing. ; Mayfield went to Miami Beach recently to discuss Max Mayfield model with officials there, and what Max Mayfield heard worried him. ; " The fire department did a survey, and 90 percent of the people they talked to said the people they talked to would n't evacuate for a hurricane, " Mayfield said
+# ::snt This , and the number of years since the last major storm hit , has spawned a certain complacency among residents that the specialists find disturbing. ; Mayfield went to Miami Beach recently to discuss Max Mayfield  model with officials there , and what Max Mayfield  heard worried him. ; The fire department did a survey , and 90 percent of the people they talked to said the people they talked to  would not evacuate for a hurricane , Mayfield said
 (x16 / spawn
 	:ARG1 (x3 / and
 		:op1 (x7 / temporal-quantity
@@ -652,17 +650,21 @@
 						:mod (x11 / major)
 						:ARG1 (x12 / storm))))))
 	:ARG1 (x19 / complacency
-		:mod (x18 / certain)))
+		:mod (x18 / certain)
+		:ARG1-of (x25 / find-01
+			:ARG0 (x24 / person
+				:ARG0-of (s / specialize-01))
+			:ARG1 (x26 / disturbing))))
 
 # ::id 29
-# ::snt " That makes the six hurricane specialists hair stand straight up .
-(x3 / make-02
-	:ARG0 (x2 / that)
-	:ARG1 (x9 / stand-01
-		:ARG1 (x8 / hair
+# ::snt That makes the six hurricane specialists  hair stand straight up
+(x2 / make-02
+	:ARG0 (x1 / that)
+	:ARG1 (x8 / stand-01
+		:ARG1 (x7 / hair
 			:quant 6
-			:mod (x7 / person
+			:mod (x6 / person
 				:ARG0-of (s / specialize-01)
-				:ARG1 (x6 / hurricane)))
-		:manner (x10 / straight)))
+				:ARG1 (x5 / hurricane)))
+		:manner (x9 / straight)))
 

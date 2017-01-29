@@ -1,5 +1,5 @@
 # ::id 1
-# ::snt Scientists and engineers in Chile, which has the distinction of playing host to the largest earthquake ever measured, are waiting with serious interest reports on the Oct. 17 San Francisco earthquake
+# ::snt Scientists and engineers in Chile , which has the distinction of playing host to the largest earthquake ever measured , are waiting with serious interest reports on the Oct. 17 San Francisco earthquake
 (x22 / wait-01
 	:ARG0 (x2 / and
 		:op1 (x1 / have-org-role-91
@@ -35,40 +35,40 @@
 					:op1 "Francisco")))))
 
 # ::id 2
-# ::snt Measured by magnitude, " Chile is the world's most seismic country, " said building engineer Elias Arze, president of the Chilean Seismology and Anti-Seismic Engineering Assn.
-(x16 / say-01
-	:ARG1 (x13 / country
-		:null_edge (x1 / measure-01)
-		:domain (x6 / country
+# ::snt Measured by magnitude , Chile is the world's most seismic country , said building engineer Elias Arze , president of the Chilean Seismology and Anti-Seismic Engineering Assn.
+(x14 / say-01
+	:ARG1 (x12 / country
+		:ARG1-of (x1 / measure-01)
+		:domain (x5 / country
 			:name (n1 / name
 				:op1 "Chile"))
-		:mod (x12 / seismic
-			:compared-to (x9 / world)
-			:degree (x11 / most)))
-	:ARG0 (x19 / newspaper
+		:mod (x11 / seismic
+			:compared-to (x8 / world)
+			:degree (x10 / most)))
+	:ARG0 (x17 / newspaper
 		:name (n / name
 			:op1 "Elias"
 			:op2 "Arze")
-		:ARG0-of (x18 / person
+		:ARG0-of (x16 / person
 			:name (n2 / name
 				:op1 "engineer")
-			:ARG1 (x17 / build-01))
-		:ARG0-of (x22 / have-org-role-91
+			:ARG1 (x15 / build-01))
+		:ARG0-of (x20 / have-org-role-91
 			:ARG2 (p / president)
-			:ARG1 (x27 / and
-				:mod (x25 / person
+			:ARG1 (x25 / and
+				:mod (x23 / person
 					:mod (c / country
 						:name (n3 / name
 							:op1 "Chilean")))
-				:op1 (x26 / seismology)
-				:op2 (x28 / company
+				:op1 (x24 / seismology)
+				:op2 (x26 / company
 					:name (n4 / name
 						:op1 "Anti-Seismic"
 						:op2 "Engineering"
 						:op3 "Assn."))))))
 
 # ::id 3
-# ::snt The San Francisco quake measuring 7.1 was comparable to the earthquake that struck Santiago and central Chile in March, 1985, killing 180 people and toppling some 70,000 homes
+# ::snt The San Francisco quake measuring 7.1 was comparable to the earthquake that struck Santiago and central Chile in March , 1985 , killing 180 people and toppling some 70,000 homes
 (x8 / comparable
 	:ARG1 (x4 / quake
 		:mod (x2 / country
@@ -100,73 +100,69 @@
 							:op1 (x29 / 70,000))))))))
 
 # ::id 4
-# ::snt And like California, Chile is still waiting for another " big one, " an earthquake of magnitude 8 or more
+# ::snt And like California , Chile is still waiting for another big one , an earthquake of magnitude 8 or more
 (x1 / and
 	:op2 (x8 / wait-01
 		:ARG1 (x5 / country
 			:name (n / name
 				:op1 "Chile"))
 		:mod (x7 / still)
-		:ARG2 (x12 / big
+		:ARG2 (x11 / big
 			:mod (x10 / another)
-			:domain (x17 / earthquake
-				:ARG1 (x21 / or
+			:null_edge (x15 / earthquake
+				:ARG1 (x19 / or
 					:op1 8
-					:op2 (x22 / more))))
+					:op2 (x20 / more))))
 		:ARG1-of (xap0 / resemble-01
 			:ARG2 (x3 / state
 				:name (n1 / name
 					:op1 "California")))))
 
 # ::id 5
-# ::snt Both areas are situated along the Pacific " ring of fire, " the huge faults created by the collision of massive plates of the earth's surface
+# ::snt Both areas are situated along the Pacific ring of fire , the huge faults created by the collision of massive plates of the earth's surface
 (x4 / situate
 	:ARG1 (x2 / area
 		:mod (x1 / both))
 	:location (x5 / along
-		:op1 (x9 / ring
-			:mod (x7 / ocean
-				:name (n / name
-					:op1 "Pacific"))
-			:ARG1-of (x11 / fire-01)))
-	:ARG1 (x16 / fault-01
-		:mod (x15 / huge)
-		:ARG1-of (x17 / create-01
-			:ARG0 (x20 / collide-01
-				:ARG1 (x23 / plate
-					:mod (x22 / massive)
-					:ARG2 (x28 / surface))))))
+		:op1 (x8 / ring
+			:ARG1-of (x10 / fire-01)
+			:location (x14 / fault
+				:mod (x13 / huge)
+				:ARG1-of (x15 / create-01
+					:ARG0 (x18 / collide-01
+						:ARG1 (x21 / plate
+							:mod (x20 / massive)
+							:ARG2 (x26 / surface))))))))
 
 # ::id 6
-# ::snt " Chile, along with Alaska, are the sites that have had the biggest seismic occurrences, " said Prof. Edgar Kausel, chairman of the Geophysics Department at the University of Chile
-(x20 / say-01
-	:ARG1 (x10 / site
-		:ARG0 (x2 / country
-			:name (n1 / name
-				:op1 "Chile")
-			:location (x6 / state
-				:name (n2 / name
-					:op1 "Alaska")))
-		:null_edge (x13 / have-org-role-91
-			:ARG1 (x17 / occur-01
-				:mod (x15 / big
-					:degree (m / most))
-				:mod (x16 / seismic))))
-	:ARG0 (x22 / newspaper
+# ::snt Chile , along with Alaska , are the sites that have had the biggest seismic occurrences , said Prof. Edgar Kausel , chairman of the Geophysics Department at the University of Chile
+(x9 / site
+	:ARG0 (x1 / country
 		:name (n / name
-			:op1 "Edgar"
-			:op2 "Kausel")
-		:ARG0-of (x21 / prof.)
-		:ARG0-of (x25 / have-org-role-91
-			:ARG2 (c / chairman)
-			:ARG1 (x28 / government-organization
-				:name (n3 / name
-					:op1 "Geophysics"
-					:op2 "Department")
-				:part-of (x32 / government-organization
-					:name (n4 / name
-						:op1 "University"
-						:op2 "of"))))))
+			:op1 "Chile"))
+	:location (x5 / state
+		:name (n1 / name
+			:op1 "Alaska"))
+	:location-of (x12 / have-org-role-91
+		:ARG1 (x16 / occur-01
+			:mod (x14 / big
+				:degree (m / most))
+			:mod (x15 / seismic)
+			:name (x20 / name
+				:op1 "Edgar"
+				:op2 "Kausel"
+				:ARG0-of (x18 / say-01)
+				:ARG0-of (x19 / prof.)
+				:ARG0-of (x23 / have-org-role-91
+					:ARG2 (c / chairman)
+					:ARG1 (x26 / government-organization
+						:name (n2 / name
+							:op1 "Geophysics"
+							:op2 "Department")
+						:part-of (x30 / government-organization
+							:name (n3 / name
+								:op1 "University"
+								:op2 "of"))))))))
 
 # ::id 7
 # ::snt Chile has about 2,270 miles of its coast along the earthquake fault between the Nazca plate and the South American plate
@@ -246,7 +242,7 @@
 					:time (x32 / during))))))
 
 # ::id 10
-# ::snt Arze said after the 1985 earthquake, teams of foreign experts arrived in Chile to study the effects of the earthquake on buildings
+# ::snt Arze said after the 1985 earthquake , teams of foreign experts arrived in Chile to study the effects of the earthquake on buildings
 (x2 / say-01
 	:ARG0 (x1 / person
 		:name (n / name
@@ -270,22 +266,22 @@
 				:beneficiary (x23 / building)))))
 
 # ::id 11
-# ::snt " Our buildings performed very well, " Elias Arze said
-(x11 / say-01
-	:ARG1 (x4 / perform-01
-		:ARG0 (x3 / building
-			:poss (x2 / country
+# ::snt Our buildings performed very well , Elias Arze  said
+(x9 / say-01
+	:ARG1 (x3 / perform-01
+		:ARG0 (x2 / building
+			:poss (x1 / country
 				:name (n1 / name
 					:op1 "Our")))
-		:manner (x6 / well
-			:degree (x5 / very)))
-	:ARG0 (x9 / newspaper
+		:manner (x5 / well
+			:degree (x4 / very)))
+	:ARG0 (x7 / newspaper
 		:name (n / name
 			:op1 "Elias"
 			:op2 "Arze")))
 
 # ::id 12
-# ::snt Since earthquake building codes were implemented in Chile in the 1930s, only two engineered buildings have collapsed, Elias Arze said
+# ::snt 
 (x22 / say-01
 	:ARG1 (x18 / collapse-01
 		:time (x1 / since
@@ -319,52 +315,50 @@
 			:unit (y / year))))
 
 # ::id 14
-# ::snt " teams of foreign experts arrived in Chile to study the effects of the earthquake on buildings have so many earthquakes in Chile Chile has cleaned up teams of foreign experts arrived in Chile to study the effects of the earthquake on buildings construction, " Arze said
-(x48 / say-01
-	:ARG1 (x6 / arrive-01
-		:ARG1 (x2 / team
-			:consist-of (x5 / person
+# ::snt teams of foreign experts arrived in Chile to study the effects of the earthquake on buildings  have so many earthquakes in Chile Chile  has cleaned up teams of foreign experts arrived in Chile to study the effects of the earthquake on buildings  construction , Arze said
+(x46 / say-01
+	:ARG1 (x20 / earthquake
+		:ARG0 (x1 / team
+			:consist-of (x4 / person
 				:ARG1-of (e / expert-41)
-				:mod (x4 / foreign)))
-		:ARG4 (x8 / country
-			:name (n1 / name
-				:op1 "Chile"))
-		:ARG1 (x10 / study-01
-			:ARG0 x2
-			:ARG1 (x12 / effect-01
-				:poss (x15 / earthquake)
-				:ARG1 (x21 / earthquake
-					:ARG1 (x17 / building)
-					:quant (x20 / many
-						:degree (x19 / so))
-					:location (x23 / country
-						:name (n2 / name
+				:mod (x3 / foreign))
+			:ARG1-of (x5 / arrive-01
+				:ARG4 (x7 / country
+					:name (n2 / name
+						:op1 "Chile"))
+				:purpose (x9 / study-01
+					:ARG1 (x11 / effect-01
+						:poss (x14 / earthquake)
+						:beneficiary (x16 / building)))))
+		:quant (x19 / many
+			:degree (x18 / so))
+		:ARG1 (x25 / clean-01
+			:ARG0 (x23 / country
+				:name (n1 / name
+					:op1 "Chile")
+				:mod (x22 / country
+					:name (n3 / name
+						:op1 "Chile")))
+			:ARG1 (x27 / team
+				:ARG0-of (x30 / person
+					:ARG1-of (e1 / expert-41)
+					:mod (x29 / foreign))
+				:ARG1-of (x31 / arrive-01
+					:ARG4 (x33 / country
+						:name (n4 / name
 							:op1 "Chile"))
-					:ARG1 (x28 / team
-						:ARG1-of (x26 / clean-02
-							:ARG1 (x24 / country
-								:name (n3 / name
-									:op1 "Chile"))
-							:null_edge (x36 / study-01
-								:ARG0 x24
-								:ARG0 x28
-								:ARG1 (x38 / effect-01
-									:poss (x41 / earthquake)
-									:ARG1 (x44 / construct-01
-										:ARG1 (x43 / building)))))
-						:ARG0-of (x31 / person
-							:ARG1-of (e1 / expert-41)
-							:mod (x30 / foreign))
-						:ARG1-of (x32 / arrive-01
-							:ARG4 (x34 / country
-								:name (n4 / name
-									:op1 "Chile"))))))))
-	:ARG0 (x47 / person
+					:ARG1 (x35 / study-01
+						:ARG0 x23
+						:ARG1 (x37 / effect-01
+							:poss (x40 / earthquake)
+							:ARG1 (x43 / construct-01
+								:ARG1 (x42 / building))))))))
+	:ARG0 (x45 / person
 		:name (n / name
 			:op1 "Arze")))
 
 # ::id 15
-# ::snt Chilean earthquakes tend to be sharper and last longer than those of California, leading to differences in building design
+# ::snt Chilean earthquakes tend to be sharper and last longer than those of California , leading to differences in building design
 (x3 / tend-02
 	:ARG1 (x2 / earthquake
 		:mod (x1 / person
@@ -383,7 +377,7 @@
 					:ARG1 (x20 / design-01))))))
 
 # ::id 16
-# ::snt While California engineers have promoted a flexible design of steel framed buildings that allows California engineers to swing in a quake, Chileans opt for stiffer construction
+# ::snt 
 (x24 / opt
 	:condition (x5 / promote-01
 		:ARG0 (x3 / person
@@ -426,22 +420,22 @@
 				:degree (x8 / more)))))
 
 # ::id 18
-# ::snt " California engineers buildings move little compared to (those of )the Americans, " said Arze
-(x17 / say-01
-	:ARG1 (x5 / move-01
-		:ARG1 (x4 / building
-			:mod (x3 / person
+# ::snt California engineers  buildings move little compared to (those of )the Americans , said Arze
+(x15 / say-01
+	:ARG1 (x4 / move-01
+		:ARG1 (x3 / building
+			:mod (x2 / person
 				:name (n1 / name
 					:op1 "engineers")
-				:mod (x2 / state
+				:mod (x1 / state
 					:name (n2 / name
 						:op1 "California"))))
-		:degree (x6 / little)
-		:ARG2 (x14 / person
+		:degree (x5 / little)
+		:ARG2 (x13 / person
 			:mod (c / country
 				:name (n / name
 					:op1 "Americans"))))
-	:ARG0 (x18 / arze))
+	:ARG0 (x16 / arze))
 
 # ::id 19
 # ::snt Descriptions of earthquakes in Chile date back to Spanish settlers in 1575
@@ -456,7 +450,7 @@
 		:year 1575))
 
 # ::id 20
-# ::snt In an 1835 journal entry about a stop the ship the Beagle made in Chile, scientist Charles Darwin described an earthquake scientist Charles Darwin experienced
+# ::snt In an 1835 journal entry about a stop the ship the Beagle made in Chile , scientist Charles Darwin described an earthquake scientist Charles Darwin  experienced
 (x20 / describe-01
 	:time (x3 / date-entity
 		:year 1835
@@ -484,7 +478,7 @@
 					:op2 "Darwin")))))
 
 # ::id 21
-# ::snt Just a few months before the 1906 earthquake in San Francisco, a quake measuring 8.5 struck the central Chilean coast, destroying the city of Valparaiso
+# ::snt Just a few months before the 1906 earthquake in San Francisco , a quake measuring 8.5 struck the central Chilean coast , destroying the city of Valparaiso
 (x17 / person
 	:name (n / name
 		:op1 "struck")
@@ -515,7 +509,7 @@
 					:op1 "Valparaiso")))))
 
 # ::id 22
-# ::snt On May 21, 1960, an earthquake measuring 9.5 struck an area about 600 miles long in southern Chile, releasing energy nearly 1,000 times that of this year's San Francisco quake
+# ::snt On May 21 , 1960 , an earthquake measuring 9.5 struck an area about 600 miles long in southern Chile , releasing energy nearly 1,000 times that of this year's San Francisco quake
 (x11 / person
 	:name (n / name
 		:op1 "struck")
@@ -547,7 +541,7 @@
 						:op1 "Francisco"))))))
 
 # ::id 23
-# ::snt Parts of the coast stretching south from the city of Concepcion, 325 miles south of Santiago, dropped nine feet
+# ::snt Parts of the coast stretching south from the city of Concepcion , 325 miles south of Santiago , dropped nine feet
 (x19 / drop-05
 	:ARG2 (x4 / coast
 		:mod (x1 / part)
@@ -567,31 +561,31 @@
 		:quant 9))
 
 # ::id 24
-# ::snt " the coast stretching south from the city of Concepcion , 325 miles south of Santiago was the biggest registered in the history of seismic instrumention, " said Kausel
-(x29 / say-01
-	:ARG0 (x3 / coast
-		:ARG1-of (x4 / stretch-01
-			:ARG2 (x8 / city
-				:name (x10 / country
+# ::snt the coast stretching south from the city of Concepcion , 325 miles south of Santiago  was the biggest registered in the history of seismic instrumention , said Kausel
+(x27 / say-01
+	:ARG0 (x2 / coast
+		:ARG1-of (x3 / stretch-01
+			:ARG2 (x7 / city
+				:name (x9 / country
 					:name (n1 / name
 						:op1 "Concepcion")
-					:null_edge (x14 / south
-						:null_edge (x13 / null_tag)
-						:part-of (x16 / country
+					:null_edge (x13 / south
+						:null_edge (x12 / null_tag)
+						:part-of (x15 / country
 							:name (n2 / name
 								:op1 "Santiago"))))))
-		:ARG1-of (x20 / register-02
-			:ARG1 (x19 / big
+		:ARG1-of (x19 / register-02
+			:ARG1 (x18 / big
 				:degree (m / most))
-			:time (x23 / history
-				:poss (x26 / instrumention
-					:mod (x25 / seismic)))))
-	:ARG0 (x30 / person
+			:time (x22 / history
+				:poss (x25 / instrumention
+					:mod (x24 / seismic)))))
+	:ARG0 (x28 / person
 		:name (n / name
 			:op1 "Kausel")))
 
 # ::id 25
-# ::snt About 5,000 people were killed in the sparsely populated area, most of About 5,000 people when the coastline dropped
+# ::snt About 5,000 people were killed in the sparsely populated area , most of About 5,000 people  when the coastline dropped
 (x5 / kill-01
 	:ARG1 (x1 / about
 		:op1 (x2 / 5,000))
@@ -605,7 +599,7 @@
 		:ARG0 (x19 / coastline)))
 
 # ::id 26
-# ::snt A tsunami, a tidal wave created by the earthquake, killed others and caused considerable damage in Japan and Hawaii
+# ::snt A tsunami , a tidal wave created by the earthquake , killed others and caused considerable damage in Japan and Hawaii
 (x14 / and
 	:op1 (x12 / kill-01
 		:ARG1 (x13 / other

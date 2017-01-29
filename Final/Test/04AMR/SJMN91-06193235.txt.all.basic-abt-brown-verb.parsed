@@ -1,14 +1,14 @@
 # ::id 1
-# ::snt E-Day's E-Day
+# ::snt E-Day  is E-Day
 (x3 / e-day
-	:ARG1 (x1 / e-day))
+	:ARG0 (x1 / e-day))
 
 # ::id 2
-# ::snt But before you rush out to see whether the moon is blocking the sun, here's a question-and-answer guide to today's eclipse. ; Q What time is the eclipse
+# ::snt But before you rush out to see whether the moon is blocking the sun , here is a question-and-answer guide to today's eclipse. ; Q What time is the eclipse ?
 (x1 / contrast-01)
 
 # ::id 3
-# ::snt A Although television networks were pushing to have the eclipse in prime time, nature refused to cooperate
+# ::snt A Although television networks were pushing to have the eclipse in prime time , nature refused to cooperate
 (x16 / refuse-01
 	:ARG1 (x6 / push-02
 		:ARG1 (x4 / network
@@ -22,7 +22,7 @@
 		:ARG0 x15))
 
 # ::id 4
-# ::snt In San Jose, the eclipse will begin at 10:10 a.m., peak at 11:20 a.m. and end at 12:34 p.m. ; Q What is an eclipse
+# ::snt In San Jose , the eclipse will begin at 10:10 a.m. , peak at 11:20 a.m. and end at 12:34 p.m. ; Q What is an eclipse ?
 (x17 / and
 	:op1 (x8 / begin-01
 		:location (x3 / country
@@ -40,7 +40,7 @@
 		:null_edge (x20 / include-91)))
 
 # ::id 5
-# ::snt ; A A solar eclipse occurs when the Earth's moon moves into a position to impede the sun's rays. ; Q Can I look at the sun
+# ::snt ; A A solar eclipse occurs when the Earth's moon moves into a position to impede the sun's rays. ; Q Can I look at the sun ?
 (xap1 / multi-sentence
 	:snt2 (x12 / move-01
 		:ARG0 (x11 / moon)
@@ -59,11 +59,11 @@
 		:ARG1 (x30 / sun)))
 
 # ::id 6
-# ::snt ; A No, a thousand times no
+# ::snt ; A No , a thousand times no
 (x6 / thousands)
 
 # ::id 7
-# ::snt You 'll burn your retina, causing permanent damage
+# ::snt You will burn your retina , causing permanent damage
 (x3 / burn-01
 	:ARG0 (x1 / you)
 	:ARG1 (x5 / retina)
@@ -72,7 +72,7 @@
 			:mod (x8 / permanent))))
 
 # ::id 8
-# ::snt You should n't look at the sun through film negatives, a camera viewfinder or sunglasses, either
+# ::snt You should not look at the sun through film negatives , a camera viewfinder or sunglasses , either
 (x / xconcept
 	:x (x2 / recommend-01
 		:ARG1 (x4 / look-01
@@ -96,7 +96,7 @@
 		:ARG1 (x9 / shadow-01)))
 
 # ::id 10
-# ::snt Or punch a hole in a piece of paper and look downward at the shadow. ; Q Where can I get those goofy eclipse eyeshades
+# ::snt Or punch a hole in a piece of paper and look downward at the shadow. ; Q Where can I get those goofy eclipse eyeshades ?
 (x1 / or
 	:op2 (x10 / and
 		:op1 (x2 / punch
@@ -134,17 +134,17 @@
 			:manner (x20 / safe))))
 
 # ::id 12
-# ::snt A few welding supply stores offer " Mylar " glasses
+# ::snt A few welding supply stores offer Mylar glasses
 (x6 / offer-01
 	:ARG0 (x5 / store
 		:null_edge (x2 / few)
 		:mod (x3 / welding)
 		:mod (x4 / supply-01))
-	:ARG1 (x10 / glass
-		:mod (x8 / mylar)))
+	:ARG1 (x8 / glass
+		:mod (x7 / mylar)))
 
 # ::id 13
-# ::snt But some astronomers warn that there is no guarantee that even these glasses will prevent eye damage. ; Q Where is the best spot to experience the eclipse
+# ::snt But some astronomers warn that there is no guarantee that even these glasses will prevent eye damage. ; Q Where is the best spot to experience the eclipse ?
 (x1 / contrast-01
 	:ARG2 (x4 / warn-01
 		:ARG0 (x3 / astronomer
@@ -155,10 +155,16 @@
 				:ARG0 (x13 / glass
 					:mod (x11 / even))
 				:ARG1 (x17 / damage-01
-					:ARG1 (x16 / eye))))))
+					:ARG1 (x16 / eye))))
+		:ARG0 (x25 / spot
+			:mod (x24 / good
+				:degree (m / most))
+			:purpose (x27 / experience-01
+				:ARG1 (x29 / eclipse-01))))
+	:ARG2 (x20 / q))
 
 # ::id 14
-# ::snt ; A Contrary to popular belief, you will not get a better sense of the eclipse on a mountaintop or from your roof
+# ::snt ; A Contrary to popular belief , you will not get a better sense of the eclipse on a mountaintop or from your roof
 (x11 / get-01
 	:ARG0 (x8 / you)
 	:ARG1 (x17 / eclipse-01
@@ -168,7 +174,7 @@
 			:source (x24 / roof))))
 
 # ::id 15
-# ::snt The major part of the shadow will fall mostly through Mexico and Hawaii, where The major part of the shadow will get totally dark
+# ::snt The major part of the shadow will fall mostly through Mexico and Hawaii , where The major part of the shadow  will get totally dark
 (x8 / fall-01
 	:ARG4 (x6 / shadow-01
 		:mod (x2 / major))
@@ -185,7 +191,7 @@
 				:degree (x24 / total)))))
 
 # ::id 16
-# ::snt The Bay Area gets cheated and will see the moon block only about half the sun's diameter. ; Q Can I still get to Baja or Hawaii in time
+# ::snt The Bay Area gets cheated and will see the moon block only about half the sun's diameter. ; Q Can I still get to Baja or Hawaii in time ?
 (x6 / and
 	:op2 (x4 / get-01)
 	:op1 (x5 / cheat-01
@@ -194,7 +200,15 @@
 				:op1 "Area")
 			:null_edge (x2 / country
 				:name (n1 / name
-					:op1 "Bay"))))
+					:op1 "Bay")))
+		:ARG1 (x22 / possible
+			:domain (x25 / get-22
+				:ARG0 (x21 / q)
+				:mod (x24 / still)
+				:ARG2 (x28 / or
+					:op1 (x27 / baja
+						:name (x29 / name
+							:op1 "Hawaii"))))))
 	:op2 (x8 / see-01
 		:ARG1 (x11 / block
 			:op3 (x10 / moon)
@@ -215,18 +229,19 @@
 				:quant (x3 / most)))))
 
 # ::id 18
-# ::snt 
+# ::snt And Baja  is too late to make Baja  to Hawaii
 (x1 / and
-	:op1 (x2 / baja
-		:time (x5 / late
-			:degree (x4 / too)
-			:domain (x7 / make-01
-				:ARG1 (x8 / baja)
-				:ARG2 (x10 / name
-					:op1 "Hawaii")))))
+	:op2 (x5 / late
+		:domain (x2 / baja)
+		:degree (x4 / too)
+		:ARG1 (x7 / make-01
+			:ARG0 x2
+			:ARG1 (x8 / baja)
+			:ARG2 (x10 / name
+				:op1 "Hawaii"))))
 
 # ::id 19
-# ::snt So you 're missing 2,000 golfers who will play a shadowy round there with balls that glow in the dark. ; Q Can overcast skies block the eclipse
+# ::snt So you are missing 2,000 golfers who will play a shadowy round there with balls that glow in the dark. ; Q Can overcast skies block the eclipse ?
 (x / xconcept
 	:x (x22 / and
 		:op1 (x4 / miss-03
@@ -241,14 +256,14 @@
 					:ARG1 (x17 / glow))))
 		:op2 (x20 / dark)
 		:op2 (x24 / possible
-			:domain (x23 / q)
 			:domain (x27 / block-01
-				:ARG0 (x26 / sky
-					:mod (x25 / overcast))
+				:ARG0 (x23 / q)
+				:ARG1 (x26 / sky
+					:ARG1-of (x25 / overcast))
 				:ARG1 (x29 / eclipse-01)))))
 
 # ::id 20
-# ::snt ; A In most parts of the Bay Area, skies are expected to be sunny
+# ::snt ; A In most parts of the Bay Area , skies are expected to be sunny
 (x / xconcept
 	:x (x1 / and
 		:op2 (x13 / expect-01
@@ -264,7 +279,7 @@
 				:ARG1 (x11 / sky)))))
 
 # ::id 21
-# ::snt But along the coast, the morning fog is not likely to have cleared
+# ::snt But along the coast , the morning fog is not likely to have cleared
 (x1 / contrast-01
 	:ARG2 (x11 / likely
 		:ARG2 (x4 / coast)
@@ -273,7 +288,7 @@
 		:domain (x14 / clear-01)))
 
 # ::id 22
-# ::snt The eclipse will still be visible through the haze, astronomers say, and the shadows there may actually be more interesting than in sunny San Jose
+# ::snt The eclipse will still be visible through the haze , astronomers say , and the shadows there may actually be more interesting than in sunny San Jose
 (x14 / and
 	:op1 (x6 / visible
 		:domain (x2 / eclipse-01)
@@ -296,7 +311,7 @@
 						:op1 "San"))))))
 
 # ::id 23
-# ::snt Again, do n't stare at the sun, even through fog. ; Q Can children go outside
+# ::snt Again , do not stare at the sun , even through fog. ; Q Can children go outside ?
 (x / xconcept
 	:x (x14 / and
 		:op2 (x16 / possible
@@ -310,21 +325,13 @@
 				:location (x19 / outside)))))
 
 # ::id 24
-# ::snt ; A As long as children do n't look at the sun. ; Q Can I sunbathe in the nude during the eclipse
-(x / xconcept
-	:x (x1 / and
-		:op1 (x4 / long)
-		:op2 (x9 / look-02
-			:ARG0 (x6 / child)
-			:ARG1 (x12 / sun)))
-	:x (x14 / and
-		:op2 (x16 / possible
-			:mod (x15 / q)
-			:domain (x18 / sunbathe
-				:manner (x21 / nude)))))
+# ::snt ; A As long as children  do not look at the sun. ; Q Can I sunbathe in the nude during the eclipse ?
+(x9 / look-02
+	:ARG0 (x6 / child)
+	:ARG1 (x12 / sun))
 
 # ::id 25
-# ::snt ; A As long as you do n't open your eyes. ; Q When is the next major eclipse
+# ::snt ; A As long as you do not open your eyes. ; Q When is the next major eclipse ?
 (xap0 / have-condition-91
 	:op1 (x9 / open-03
 		:ARG0 (x6 / you)
@@ -339,7 +346,7 @@
 			:quant (x5 / more-than))))
 
 # ::id 27
-# ::snt By then, you may be able to shuttle to the moon and watch it from there
+# ::snt By then , you may be able to shuttle to the moon and watch it from there
 (x5 / possible
 	:time (x1 / by)
 	:domain (x4 / you)

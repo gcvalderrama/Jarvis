@@ -1,5 +1,5 @@
 # ::id 1
-# ::snt Public officials throughout California have condemned a U.S. Senate vote Thursday to exclude illegal aliens from the 1990 census, saying the action will shortchange California in Congress and possibly deprive the state of millions of dollars of federal aid for medical emergency services and other programs for poor people
+# ::snt Public officials throughout California have condemned a U.S. Senate vote Thursday to exclude illegal aliens from the 1990 census , saying the action will shortchange California in Congress and possibly deprive the state of millions of dollars of federal aid for medical emergency services and other programs for poor people
 (x6 / condemn-01
 	:ARG1 (x10 / vote-01
 		:ARG0 (x9 / government-organization
@@ -51,33 +51,35 @@
 					:op1 "California")))))
 
 # ::id 2
-# ::snt " Assemblyman Peter Chacon think California's an outrageous piece of legislation and probably unconstitutional, " Assemblyman Peter Chacon said Friday
-(x21 / say-01
-	:ARG1 (x5 / think-01
-		:ARG0 (x3 / person
-			:name (n1 / name
-				:op1 "Peter"
-				:op2 "Chacon")
-			:ARG0-of (x2 / assemblyman))
-		:ARG1 (x13 / and
-			:op1 (x10 / piece
-				:domain (x6 / state
-					:name (n2 / name
-						:op1 "California"))
-				:mod (x9 / outrageous)
-				:part-of (x12 / legislate-01))
-			:op1 (x15 / unconstitutional
-				:mod (x14 / probable))))
-	:ARG0 (x19 / person
+# ::snt Assemblyman Peter Chacon  think California  is an outrageous piece of legislation and probably unconstitutional , Assemblyman Peter Chacon said Friday
+(x4 / think-01
+	:ARG0 (x2 / person
 		:name (n / name
 			:op1 "Peter"
 			:op2 "Chacon")
-		:ARG0-of (x18 / assemblyman))
-	:time (xap0 / date-entity
-		:weekday (x22 / friday)))
+		:ARG0-of (x1 / assemblyman))
+	:ARG1 (x12 / and
+		:op1 (x9 / piece
+			:domain (x5 / state
+				:name (n1 / name
+					:op1 "California"))
+			:mod (x8 / outrageous)
+			:part-of (x11 / legislate-01)
+			:mod (x13 / probable
+				:domain (x14 / unconstitutional)
+				:domain (x19 / say-01
+					:ARG0 (x17 / person
+						:name (n2 / name
+							:op1 "Peter"
+							:op2 "Chacon")
+						:ARG0-of (x16 / person
+							:name (n3 / name
+								:op1 "Assemblyman")))
+					:time (xap0 / date-entity
+						:weekday (x20 / friday)))))))
 
 # ::id 3
-# ::snt Chacon, a San Diego Democrat, is the chairman of the Assembly's Elections, Reapportionment and Constitutional Amendments Committee
+# ::snt Chacon , a San Diego Democrat , is the chairman of the Assembly's Elections , Reapportionment and Constitutional Amendments Committee
 (x1 / person
 	:name (n / name
 		:op1 "Chacon"
@@ -96,7 +98,7 @@
 						:op1 "Constitutional"))))))
 
 # ::id 4
-# ::snt At the same time, the Senate's action has created great confusion and stirred hopes, especially among urban Democrats, that the same time will be overturned by the House of Representatives
+# ::snt At the same time , the Senate's action has created great confusion and stirred hopes , especially among urban Democrats , that the same time  will be overturned by the House of Representatives
 (x14 / and
 	:op1 (x11 / create-01
 		:time (x4 / time
@@ -127,7 +129,7 @@
 							:op3 "Representatives")))))))
 
 # ::id 5
-# ::snt Major Impact If the same time becomes law, the Senate's action could have a major impact on California and other states where the influx of illegal aliens significantly boosts the population and, thus, can affect the size of congressional delegations and the amount of federal aid that is doled out
+# ::snt Major Impact If the same time  becomes law , the Senate's action could have a major impact on California and other states where the influx of illegal aliens significantly boosts the population and , thus , can affect the size of congressional delegations and the amount of federal aid that is doled out
 (x14 / possible
 	:domain (x15 / have-03
 		:null_edge (x7 / become-01
@@ -172,7 +174,7 @@
 													:op1 "federal")))))))))))))
 
 # ::id 6
-# ::snt With an estimated population of about 28 million people, California is thought to have at least 50 % of the nation's 3 million to 8 million illegal aliens
+# ::snt With an estimated population of about 28 million people , California is thought to have at least 50 % of the nation's 3 million to 8 million illegal aliens
 (x13 / think-01
 	:ARG1 (x4 / population
 		:ARG1-of (x3 / estimate-01))
@@ -206,7 +208,7 @@
 						:mod (x25 / last)))))))
 
 # ::id 8
-# ::snt But if illegal aliens are not counted, the experts say the state would not get one of the anticipated seats
+# ::snt But if illegal aliens are not counted , the experts say the state would not get one of the anticipated seats
 (x11 / say-01
 	:null_edge (x1 / contrast-01)
 	:null_edge (x7 / count-01
@@ -223,37 +225,37 @@
 			:ARG1-of (x20 / anticipated))))
 
 # ::id 9
-# ::snt " the state of millions of dollars of federal aid for medical emergency services and other programs for poor people's hard to tell exactly how many congressional seats California will lose
-(x3 / state
-	:ARG1 (x15 / and
-		:op1 (x10 / aid-01
-			:mod (x9 / government-organization
+# ::snt the state of millions of dollars of federal aid for medical emergency services and other programs for poor people  is hard to tell exactly how many congressional seats California will lose
+(x21 / hard
+	:domain (x2 / state)
+	:domain (x23 / tell-01
+		:ARG1 (x31 / lose-02
+			:ARG1 (x28 / seat
+				:quant (x26 / many
+					:mod (x24 / exact))
+				:ARG0 (x27 / government-organization
+					:name (n1 / name
+						:op1 "congressional")))
+			:ARG0 (x29 / state
 				:name (n / name
-					:op1 "federal")))
-		:op2 (x14 / service
-			:mod (x12 / medicine)
-			:mod (x13 / emergency))
-		:op2 (x17 / program
-			:mod (x16 / other)
-			:poss (x22 / hard
-				:mod (x19 / poor)
-				:domain (x24 / tell-01
-					:ARG1 (x32 / lose-02
-						:ARG1 (x29 / seat
-							:quant (x27 / many
-								:mod (x25 / exact))
-							:ARG0 (x28 / government-organization
-								:name (n2 / name
-									:op1 "congressional")))
-						:ARG0 (x30 / state
-							:name (n1 / name
-								:op1 "California"))))))
-		:op1 (xap0 / value-01
-			:ARG2 (x7 / monetary-quantity
-				:unit (d / dollar)))))
+					:op1 "California"))
+			:ARG1-of (xap0 / multiple
+				:op1 (x6 / monetary-quantity
+					:unit (d / dollar))
+				:ARG1 (x14 / and
+					:op1 (x9 / aid-01
+						:mod (x8 / government-organization
+							:name (n2 / name
+								:op1 "federal")))
+					:op2 (x13 / service
+						:mod (x11 / medicine)
+						:mod (x12 / emergency))
+					:op2 (x16 / program
+						:mod (x15 / other)
+						:mod (x18 / poor)))))))
 
 # ::id 10
-# ::snt But illegal aliens could have gotten six or seven additional seats and this could cost illegal aliens one or two
+# ::snt But illegal aliens  could have gotten six or seven additional seats and this could cost illegal aliens  one or two
 (x1 / contrast-01
 	:ARG2 (x12 / and
 		:op1 (x6 / get-01
@@ -276,32 +278,32 @@
 						:op2 2))))))
 
 # ::id 11
-# ::snt It's possible, " said state Sen. Milton Marks, a San Francisco Democrat who chairs the Senate's Elections and Reapportionment Committee
-(x6 / say-01
+# ::snt It is possible , said state Sen. Milton Marks , a San Francisco Democrat who chairs the Senate's Elections and Reapportionment Committee
+(x5 / say-01
 	:ARG1 (x3 / possible)
-	:ARG0 (x7 / state)
-	:ARG0 (x9 / newspaper
+	:ARG0 (x6 / state)
+	:ARG0 (x8 / newspaper
 		:name (n / name
 			:op1 "Milton"
 			:op2 "Marks")
-		:ARG0-of (x8 / sen.)
-		:name (x13 / name
+		:ARG0-of (x7 / sen.)
+		:name (x12 / name
 			:op1 "San"
 			:op2 "Francisco"
 			:op3 "Democrat"
-			:ARG0-of (x17 / chair-01
-				:ARG1 (x21 / treaty
+			:ARG0-of (x16 / chair-01
+				:ARG1 (x20 / treaty
 					:name (n1 / name
 						:op1 "Elections"
 						:op2 "and"
 						:op3 "Reapportionment"
 						:op4 "Committee")
-					:poss (x19 / government-organization
+					:poss (x18 / government-organization
 						:name (n2 / name
 							:op1 "Senate")))))))
 
 # ::id 12
-# ::snt Loss of Funds Feared Jesse R. Huff, the state's financial director, said the state could lose as much as $ 300 million in federal aid that is allocated on the basis of population as determined by census counts
+# ::snt Loss of Funds Feared Jesse R. Huff , the state's financial director , said the state could lose as much as $ 300 million in federal aid that is allocated on the basis of population as determined by census counts
 (x4 / fear-01
 	:ARG0 (x3 / fund)
 	:ARG1 (x15 / say-01
@@ -354,7 +356,7 @@
 					:op1 "Angeles")))))
 
 # ::id 14
-# ::snt In the past, about $ 80 million annually in such services for illegal aliens has been paid out, with about half of that amount paid in Los Angeles County, according to Mark Tajima, a legislative analyst employed by the county's chief administrative officer
+# ::snt In the past , about $ 80 million annually in such services for illegal aliens has been paid out , with about half of that amount paid in Los Angeles County , according to Mark Tajima , a legislative analyst employed by the county's chief administrative officer
 (x18 / pay-01
 	:time (x3 / past)
 	:ARG1 (x12 / service
@@ -385,7 +387,7 @@
 						:ARG0-of (x47 / administrate-01)))))))
 
 # ::id 15
-# ::snt Los Angeles City Atty. James K. Hahn described the Senate's vote as an attempt by " callous, self-serving interests in Washington, D.C., to deny representation and financial resources to minorities and underprivileged in illegal aliens cities .
+# ::snt Los Angeles City Atty. James K. Hahn described the Senate's vote as an attempt by callous , self-serving interests in Washington , D.C. , to deny representation and financial resources to minorities and underprivileged in illegal aliens  cities
 (x8 / describe-01
 	:ARG0 (x1 / organization
 		:name (n / name
@@ -400,30 +402,31 @@
 		:ARG0 (x10 / government-organization
 			:name (n1 / name
 				:op1 "Senate")))
-	:ARG1 (x21 / interest
-		:mod (x18 / callous)
-		:mod (x20 / self-serving)
-		:location (x23 / city
-			:name (n2 / name
-				:op1 "Washington")
-			:null_edge (x25 / country
-				:name (n3 / name
-					:op1 "D.C.")))
-		:purpose (x28 / deny-01
-			:ARG1 (x30 / and
-				:op1 (x29 / represent-01)
-				:op2 (x32 / resource
-					:mod (x31 / finance)))
-			:ARG2 (x35 / and
-				:op2 (x34 / minority)
-				:op2 (x36 / underprivileged
-					:location (x40 / city
-						:mod (x38 / law
-							:polarity -)
-						:mod (x39 / alien)))))))
+	:ARG2 (x15 / attempt-01
+		:ARG0 (x20 / interest
+			:mod (x17 / callous)
+			:mod (x19 / self-serving)
+			:location (x22 / city
+				:name (n2 / name
+					:op1 "Washington")
+				:null_edge (x24 / country
+					:name (n3 / name
+						:op1 "D.C."))))
+		:ARG1 (x27 / deny-01
+			:ARG1 (x29 / and
+				:op1 (x28 / represent-01)
+				:op2 (x31 / resource
+					:mod (x30 / finance)))
+			:ARG2 (x34 / and
+				:op2 (x33 / minority
+					:location (x39 / city
+						:null_edge (x35 / underprivileged
+							:ARG2 (x38 / alien
+								:mod (x37 / law
+									:polarity -)))))))))
 
 # ::id 16
-# ::snt Hahn's office said the city could lose at least $ 20 million in federal aid over the next 10 years -- money that goes for child care, housing rehabilitation, drug counseling and services for homeless people
+# ::snt Hahn's office said the city could lose at least $ 20 million in federal aid over the next 10 years money that goes for child care , housing rehabilitation , drug counseling and services for homeless people
 (x4 / say-01
 	:ARG0 (x3 / office
 		:poss (x1 / person
@@ -440,18 +443,19 @@
 				:op1 (x21 / temporal-quantity
 					:unit (y / year)
 					:quant 10))
-			:ARG1 (x23 / money)))
-	:ARG1 (x35 / and
-		:op1 (x28 / care
-			:mod (x27 / child))
-		:op2 (x31 / rehabilitate-01
-			:mod (x30 / house-01))
-		:op2 (x34 / counsel-01
-			:ARG1 (x33 / drug))
-		:op2 (x36 / service)))
+			:ARG1 (x22 / money
+				:poss x16)))
+	:ARG1 (x34 / and
+		:op1 (x27 / care
+			:mod (x26 / child))
+		:op2 (x30 / rehabilitate-01
+			:mod (x29 / house-01))
+		:op2 (x33 / counsel-01
+			:ARG1 (x32 / drug))
+		:op2 (x35 / service)))
 
 # ::id 17
-# ::snt Immigration Law Overhaul The measure passed by the Senate was part of a larger overhaul of the nation's immigration laws that, if Immigration Law Overhaul The measure passed by the Senate becomes law, would place an annual cap of 630,000 immigrants for each of the next three years and make room for more residents of Western Europe
+# ::snt Immigration Law Overhaul The measure passed by the Senate was part of a larger overhaul of the nation's immigration laws that , if Immigration Law Overhaul The measure passed by the Senate  becomes law , would place an annual cap of 630,000 immigrants for each of the next three years and make room for more residents of Western Europe
 (x1 / immigration
 	:ARG0 (x9 / government-organization
 		:name (n / name
@@ -496,7 +500,7 @@
 											:op1 "Western")))))))))))
 
 # ::id 18
-# ::snt The Senate bill is expected to face tough opposition in the House, where states such as California, New York and Illinois with large alien populations have many votes
+# ::snt The Senate bill is expected to face tough opposition in the House , where states such as California , New York and Illinois with large alien populations have many votes
 (x5 / expect-01
 	:ARG1 (x7 / face-01
 		:ARG0 (x3 / bill
@@ -528,7 +532,7 @@
 								:quant (x29 / many)))))))))
 
 # ::id 19
-# ::snt Moreover, a federal court in Pittsburgh ruled earlier this year that excluding illegal aliens from the census would be unconstitutional
+# ::snt Moreover , a federal court in Pittsburgh ruled earlier this year that excluding illegal aliens from the census would be unconstitutional
 (x8 / rule-03
 	:ARG0 (x5 / court
 		:mod (x4 / government-organization
@@ -548,7 +552,7 @@
 			:ARG1 (x18 / census))))
 
 # ::id 20
-# ::snt But even if the Senate's action were to become law, it is not clear how much impact Action would have on federal aid
+# ::snt But even if the Senate's action were to become law , it is not clear how much impact Action  would have on federal aid
 (x1 / contrast-01
 	:ARG2 (x10 / become-01
 		:mod (x2 / even)
@@ -566,33 +570,33 @@
 					:op1 "federal")))))
 
 # ::id 21
-# ::snt " Michael Myers think the effect is going to be minimal, " said Michael Myers, counsel to the House subcommittee on immigration and refugee affairs
-(x14 / say-01
-	:ARG1 (x4 / think-01
-		:ARG0 (x2 / newspaper
-			:name (n1 / name
-				:op1 "Michael"
-				:op2 "Myers"))
-		:ARG1 (x11 / minimal
-			:ARG1 x2
-			:domain (x6 / effect-01)))
-	:ARG0 (x15 / newspaper
+# ::snt Michael Myers  think the effect is going to be minimal , said Michael Myers , counsel to the House subcommittee on immigration and refugee affairs
+(x3 / think-01
+	:ARG0 (x1 / newspaper
 		:name (n / name
 			:op1 "Michael"
-			:op2 "Myers")
-		:ARG0-of (x18 / counsel
-			:ARG2 (x22 / subcommittee
-				:ARG0-of (x21 / have-org-role-91
-					:ARG1 (g / government-organization
-						:name (n2 / name
-							:op1 "House")))
-				:topic (x25 / and
-					:op1 (x24 / immigrate-01)
-					:op2 (x27 / affair
-						:mod (x26 / refugee)))))))
+			:op2 "Myers"))
+	:ARG1 (x10 / minimal
+		:ARG1 x1
+		:domain (x5 / effect-01))
+	:ARG1 (x12 / say-01
+		:ARG0 x1
+		:name (x13 / name
+			:op1 "Michael"
+			:op2 "Myers"
+			:ARG0-of (x16 / counsel
+				:ARG2 (x20 / subcommittee
+					:ARG0-of (x19 / have-org-role-91
+						:ARG1 (g / government-organization
+							:name (n1 / name
+								:op1 "House")))
+					:topic (x23 / and
+						:op1 (x22 / immigrate-01)
+						:op2 (x25 / affair
+							:mod (x24 / refugee))))))))
 
 # ::id 22
-# ::snt Myers said the measure would prohibit aliens from receiving direct federal benefits, such as Social Security payments
+# ::snt 
 (x2 / say-01
 	:ARG0 (x1 / person
 		:name (n / name
@@ -611,7 +615,7 @@
 					:mod (x17 / security))))))
 
 # ::id 23
-# ::snt But Michael Myers maintained that such ineligibility is already written into a number of federal programs
+# ::snt But Michael Myers  maintained that such ineligibility is already written into a number of federal programs
 (x1 / contrast-01
 	:ARG2 (x4 / maintain-01
 		:ARG0 (x2 / newspaper
@@ -629,7 +633,7 @@
 							:op1 "federal")))))))
 
 # ::id 24
-# ::snt Myers said that most of the assistance that states and cities now receive comes in the form of block grants that do not qualify as direct financial aid and, therefore, would not be affected
+# ::snt Myers said that most of the assistance that states and cities now receive comes in the form of block grants that do not qualify as direct financial aid and , therefore , would not be affected
 (x2 / say-01
 	:ARG0 (x1 / person
 		:name (n / name
@@ -653,7 +657,7 @@
 				:op2 (x36 / affect-01)))))
 
 # ::id 25
-# ::snt Puzzled by Action Still, many local officials remain puzzled by the Senate's action
+# ::snt Puzzled by Action Still , many local officials remain puzzled by the Senate's action
 (x10 / puzzle-01
 	:ARG1 (x1 / puzzle-01
 		:ARG0 (x3 / action))
@@ -669,7 +673,7 @@
 			:ARG2 (o / official))))
 
 # ::id 26
-# ::snt Tajima said Mark Tajima was not sure whether programs such as foster care for abused and neglected children or Supplemental Security Income for aged, blind or disabled people would be vulnerable
+# ::snt Tajima said Mark Tajima  was not sure whether programs such as foster care for abused and neglected children or Supplemental Security Income for aged , blind or disabled people would be vulnerable
 (x2 / say-01
 	:ARG0 (x1 / person
 		:name (n / name
@@ -696,26 +700,26 @@
 				:op2 (x28 / disable-01)))))
 
 # ::id 27
-# ::snt " neglected children all involve direct payments by the county of federal money, " Mark Tajima said
-(x18 / say-01
-	:ARG1 (x5 / involve-01
-		:ARG2 (x3 / child
-			:ARG1-of (x2 / neglect-01)
-			:quant (x4 / all))
-		:ARG1 (x7 / payment
-			:manner (x6 / direct)
-			:ARG0 (x10 / county
-				:consist-of (x13 / money
-					:mod (x12 / government-organization
+# ::snt neglected children  all involve direct payments by the county of federal money , Mark Tajima  said
+(x16 / say-01
+	:ARG1 (x4 / involve-01
+		:ARG2 (x2 / child
+			:ARG1-of (x1 / neglect-01)
+			:quant (x3 / all))
+		:ARG1 (x6 / payment
+			:manner (x5 / direct)
+			:ARG0 (x9 / county
+				:consist-of (x12 / money
+					:mod (x11 / government-organization
 						:name (n1 / name
 							:op1 "federal"))))))
-	:ARG0 (x17 / person
+	:ARG0 (x15 / person
 		:name (n / name
 			:op1 "Tajima")
-		:null_edge (x16 / null_tag)))
+		:null_edge (x14 / null_tag)))
 
 # ::id 28
-# ::snt In Orange County, with the second-largest illegal alien population in the state, officials warned that any effort by the Census Bureau to identify illegals would promote " fear and intimidation " among recent immigrants, both legal and illegal
+# ::snt In Orange County , with the second-largest illegal alien population in the state , officials warned that any effort by the Census Bureau to identify illegals would promote fear and intimidation among recent immigrants , both legal and illegal
 (x16 / warn-01
 	:location (x3 / county
 		:mod (x2 / country
@@ -736,21 +740,21 @@
 						:op1 "Census"
 						:op2 "Bureau"))
 				:ARG1 (x26 / law)))
-		:ARG1 (x31 / and
-			:op1 (x30 / fear-01)
-			:op2 (x32 / intimidate-01)
-			:op1 (x36 / person
-				:ARG0-of (i / immigrate-01)
-				:time (x35 / recent)
-				:ARG2 (x40 / and
-					:op2 (x41 / law
-						:polarity -)))))
+		:ARG1 (x30 / and
+			:op1 (x29 / fear-01)
+			:op2 (x31 / intimidate-01))
+		:instrument (x34 / person
+			:ARG0-of (i / immigrate-01)
+			:time (x33 / recent)
+			:ARG2 (x38 / and
+				:op2 (x39 / law
+					:polarity -))))
 	:ARG0 (xap0 / person
 		:ARG0-of (x15 / have-org-role-91
 			:ARG2 (o / official))))
 
 # ::id 29
-# ::snt Any such effort, officials said, would discourage people from participating in the census and even further reduce official population figures
+# ::snt Any such effort , officials said , would discourage people from participating in the census and even further reduce official population figures
 (x6 / say-01
 	:ARG1 (x16 / and
 		:op1 (x9 / discourage
@@ -770,73 +774,70 @@
 			:ARG2 (o / official))))
 
 # ::id 30
-# ::snt " many local officials counted many local officials in 1980, and now for many local officials to say many local officials wo n't count many local officials in 1990 is ludicrous, " said Angelo Doti, director of financial assistance for the Orange County Social Services Agency
-(x35 / say-01
-	:ARG1 (x12 / and
-		:op1 (x5 / count-04
-			:time (x10 / date-entity
-				:year 1980)
-			:ARG0 (xap0 / person
-				:quant (x2 / many)
-				:ARG0-of (x4 / have-org-role-91
-					:ARG2 (o / official)
-					:mod (x3 / local)))
-			:ARG0 (xap1 / person
-				:quant (x6 / many)
-				:mod (x7 / local)
-				:ARG0-of (x8 / have-org-role-91
-					:ARG2 (o1 / official))))
-		:op2 (x32 / ludicrous
-			:domain (x19 / say-01
-				:time (x13 / now)
-				:ARG1 (x25 / count-04
-					:time (x30 / date-entity
+# ::snt many local officials  counted many local officials  in 1980 , and now for many local officials  to say many local officials  wo not count many local officials  in 1990 is ludicrous , said Angelo Doti , director of financial assistance for the Orange County Social Services Agency
+(x11 / and
+	:op1 (x4 / count-02
+		:time (x9 / date-entity
+			:year 1980)
+		:prep-as (x18 / say-01
+			:time (x12 / now)
+			:ARG1 (x31 / ludicrous
+				:domain (x24 / count-04
+					:time (x29 / date-entity
 						:year 1990)
 					:ARG0 (xap3 / person
-						:quant (x20 / many)
-						:ARG0-of (x22 / have-org-role-91
+						:quant (x19 / many)
+						:ARG0-of (x21 / have-org-role-91
 							:ARG2 (o3 / official)
-							:mod (x21 / local)))
+							:mod (x20 / local)))
 					:ARG0 (xap4 / person
-						:quant (x26 / many)
-						:mod (x27 / local)
-						:ARG0-of (x28 / have-org-role-91
-							:ARG2 (o4 / official))))
-				:ARG0 (xap2 / person
-					:quant (x15 / many)
-					:ARG0-of (x17 / have-org-role-91
-						:ARG2 (o2 / official)
-						:mod (x16 / local))))))
-	:ARG0 (x37 / person
-		:name (n / name
-			:op1 "Doti")
-		:null_edge (x36 / person
-			:name (n1 / name
-				:op1 "Angelo"))
-		:null_edge (x39 / have-org-role-91
-			:ARG2 (d / director)
-			:ARG1 (x42 / assist-01
-				:mod (x41 / finance))
-			:ARG1 (x45 / government-organization
-				:name (n2 / name
-					:op1 "Orange"
-					:op2 "County"
-					:op3 "Social"
-					:op4 "Services"
-					:op5 "Agency")))))
+						:quant (x25 / many)
+						:mod (x26 / local)
+						:ARG0-of (x27 / have-org-role-91
+							:ARG2 (o4 / official)))))
+			:ARG0 (xap2 / person
+				:quant (x14 / many)
+				:ARG0-of (x16 / have-org-role-91
+					:ARG2 (o2 / official)
+					:mod (x15 / local))))
+		:ARG0 (xap0 / person
+			:quant (x1 / many)
+			:ARG0-of (x3 / have-org-role-91
+				:ARG2 (o / official)
+				:mod (x2 / local)))
+		:ARG0 (xap1 / person
+			:quant (x5 / many)
+			:mod (x6 / local)
+			:ARG0-of (x7 / have-org-role-91
+				:ARG2 (o1 / official))))
+	:op2 (x33 / say-01
+		:name (x34 / name
+			:op1 "Angelo"
+			:op2 "Doti"
+			:ARG0-of (x37 / have-org-role-91
+				:ARG2 (d / director)
+				:ARG1 (x40 / assist-01
+					:mod (x39 / finance))
+				:ARG1 (x43 / government-organization
+					:name (n / name
+						:op1 "Orange"
+						:op2 "County"
+						:op3 "Social"
+						:op4 "Services"
+						:op5 "Agency"))))))
 
 # ::id 31
-# ::snt " The fact is many local officials are here
-(x3 / fact
-	:location (x9 / here
+# ::snt The fact is many local officials  are here
+(x2 / fact
+	:location (x8 / here
 		:ARG0 (xap0 / person
-			:quant (x5 / many)
-			:ARG0-of (x7 / have-org-role-91
+			:quant (x4 / many)
+			:ARG0-of (x6 / have-org-role-91
 				:ARG2 (o / official)
-				:mod (x6 / local)))))
+				:mod (x5 / local)))))
 
 # ::id 32
-# ::snt many local officials 're going to stay here
+# ::snt many local officials  are going to stay here
 (xap1 / intend-01
 	:ARG1 (x7 / stay-01
 		:location (x8 / here)
@@ -848,7 +849,7 @@
 	:ARG0-of xap0)
 
 # ::id 33
-# ::snt many local officials pay taxes and are going to avail many local officials of our services
+# ::snt many local officials  pay taxes and are going to avail many local officials  of our services
 (x6 / and
 	:op1 (x4 / pay-01
 		:ARG3 (x5 / tax-01)
@@ -874,8 +875,8 @@
 		:ARG1 (x6 / number)))
 
 # ::id 35
-# ::snt To not count many local officials is to close our eyes, " Doti said
-(x15 / say-01
+# ::snt To not count many local officials  is to close our eyes , Doti said
+(x14 / say-01
 	:ARG1 (x3 / count-04
 		:ARG2 (x9 / close-01
 			:ARG1 (x11 / eye))
@@ -884,7 +885,7 @@
 			:mod (x5 / local)
 			:ARG0-of (x6 / have-org-role-91
 				:ARG2 (o / official))))
-	:ARG0 (x14 / person
+	:ARG0 (x13 / person
 		:name (n / name
 			:op1 "Doti")))
 

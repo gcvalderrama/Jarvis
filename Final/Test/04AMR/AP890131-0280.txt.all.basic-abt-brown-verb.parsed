@@ -1,5 +1,5 @@
 # ::id 1
-# ::snt The Office of Fair Trading said Tuesday The Office of Fair Trading was investigating a complaint alleging anti-competitive practices by a London-based diamond cartel controlled by South Africa's giant De Beers diamond organization
+# ::snt The Office of Fair Trading said Tuesday The Office of Fair Trading  was investigating a complaint alleging anti-competitive practices by a London-based diamond cartel controlled by South Africa's giant De Beers diamond organization
 (x6 / say-01
 	:ARG0 (x2 / office
 		:topic (x5 / trading
@@ -38,28 +38,32 @@
 		:weekday (x7 / tuesday)))
 
 # ::id 2
-# ::snt The watchdog body said De Beers " appeared to have " a monopoly on diamond trading in London and The watchdog body was interested in establishing whether there had been an abuse of the monopoly
+# ::snt The watchdog body said De Beers appeared to have a monopoly on diamond trading in London and The watchdog body  was interested in establishing whether there had been an abuse of the monopoly
 (x4 / say-01
 	:ARG0 (x3 / body
 		:mod (x2 / watchdog))
-	:ARG1 (x19 / and
-		:op1 (x8 / appear-02
-			:ARG1 (x13 / monopoly
-				:topic (x16 / trade-01
-					:null_edge (x15 / null_tag))
-				:location (x18 / city
-					:name (n / name
+	:ARG1 (x17 / and
+		:op1 (x7 / appear-02
+			:ARG1 (x5 / newspaper
+				:name (n / name
+					:op1 "De"
+					:op2 "Beers"))
+			:ARG1 (x11 / monopoly
+				:topic (x14 / trade-01
+					:null_edge (x13 / null_tag))
+				:location (x16 / city
+					:name (n1 / name
 						:op1 "London"))))
-		:op2 (x24 / interest-01
-			:ARG2 (x22 / body
-				:mod (x21 / watchdog))
-			:ARG2 (x26 / establish-01
-				:ARG0 x22
-				:ARG1 (x32 / abuse-01
-					:ARG0 (x35 / monopoly))))))
+		:op2 (x22 / interest-01
+			:ARG2 (x20 / body
+				:mod (x19 / watchdog))
+			:ARG2 (x24 / establish-01
+				:ARG0 x20
+				:ARG1 (x30 / abuse-01
+					:ARG0 (x33 / monopoly))))))
 
 # ::id 3
-# ::snt Consolidated Gold Fields PLC, a British mining concern with no diamond interests, acknowledged that Consolidated Gold Fields PLC filed the complaint as a defensive move against a stalled takeover bid by Luxembourg-based Minorco SA
+# ::snt Consolidated Gold Fields PLC , a British mining concern with no diamond interests , acknowledged that Consolidated Gold Fields PLC  filed the complaint as a defensive move against a stalled takeover bid by Luxembourg-based Minorco SA
 (x15 / acknowledge-01
 	:ARG1 (x9 / concern-01
 		:ARG1 (x1 / government-organization
@@ -95,7 +99,7 @@
 						:op1 "Luxembourg-based"))))))
 
 # ::id 4
-# ::snt Minorco is 60.1 percent owned by Anglo American Corp. of South Africa Ltd. and De Beers Consolidated Mines Ltd., the gold and diamond mining interests controlled by the Oppenheimer family of South Africa
+# ::snt Minorco is 60.1 percent owned by Anglo American Corp. of South Africa Ltd. and De Beers Consolidated Mines Ltd. , the gold and diamond mining interests controlled by the Oppenheimer family of South Africa
 (x4 / percentage-entity
 	:ARG0 (x1 / organization
 		:name (n / name
@@ -132,7 +136,7 @@
 							:ARG0-of (x25 / mine-01))))))))
 
 # ::id 5
-# ::snt The British government is expected to rule in the next few weeks whether to allow Minorco to proceed with Luxembourg-based Minorco SA 2.9 billion-pound (about $ 5.1 billion )bid for Consolidated Gold following an investigation by the Monopolies and Mergers Commission
+# ::snt The British government is expected to rule in the next few weeks whether to allow Minorco to proceed with Luxembourg-based Minorco SA  2.9 billion-pound (about $ 5.1 billion )bid for Consolidated Gold following an investigation by the Monopolies and Mergers Commission
 (x5 / expect-01
 	:ARG1 (x7 / rule-02
 		:ARG0 (x3 / government-organization
@@ -180,7 +184,7 @@
 												:op1 "Mergers"))))))))))))
 
 # ::id 6
-# ::snt A Consolidated Gold spokesman, commenting on condition he was not identified, said the company wanted to point up the " monopolistic tendencies " of South Africa's Anglo-American group of companies
+# ::snt A Consolidated Gold spokesman , commenting on condition he was not identified , said the company wanted to point up the monopolistic tendencies of South Africa's Anglo-American group of companies
 (x14 / say-01
 	:ARG1 (x6 / comment-01
 		:ARG1 (x8 / condition
@@ -188,17 +192,17 @@
 	:ARG1 (x17 / want-01
 		:ARG0 (x16 / company)
 		:ARG1 (x19 / point-01
-			:ARG1 (x24 / tendency
-				:mod (x23 / monopolistic)
-				:ARG1 (x31 / group
-					:poss (x27 / country
+			:ARG1 (x23 / tendency
+				:mod (x22 / monopolistic)
+				:ARG1 (x29 / group
+					:poss (x25 / country
 						:name (n / name
 							:op1 "South"
 							:op2 "Africa"))
-					:mod (x30 / country
+					:mod (x28 / country
 						:name (n1 / name
 							:op1 "Anglo-American"))
-					:consist-of (x33 / company)))))
+					:consist-of (x31 / company)))))
 	:ARG0 (xap0 / person
 		:ARG0-of (x4 / have-org-role-91
 			:ARG2 (s / spokesman)
@@ -206,21 +210,24 @@
 			:ARG1 (x3 / gold))))
 
 # ::id 7
-# ::snt De Beers ' Central Selling Organization, which controls 80 percent of world diamond trading, has been based in London for 60 years
-(x19 / base-01
-	:ARG1 (x4 / central
-		:part-of (x15 / trade-01
-			:mod (x13 / world)
-			:null_edge (x14 / null_tag)))
-	:location (x21 / city
+# ::snt De BeersCentral Selling Organization , which controls 80 percent of world diamond trading , has been based in London for 60 years
+(x17 / base-01
+	:ARG1 (x1 / de
+		:ARG0-of (x7 / control-01
+			:ARG1 (x9 / percentage-entity
+				:value 80
+				:quant-of (x13 / trade-01
+					:mod (x11 / world)
+					:null_edge (x12 / null_tag)))))
+	:location (x19 / city
 		:name (n / name
 			:op1 "London"))
-	:duration (x24 / temporal-quantity
+	:duration (x22 / temporal-quantity
 		:unit (y / year)
 		:quant 60))
 
 # ::id 8
-# ::snt As well as selling the stones mined by De Beers and other South African companies, the organization trades on behalf of diamond producers including Zaire, Australia, Botswana and the Soviet Union
+# ::snt As well as selling the stones mined by De Beers and other South African companies , the organization trades on behalf of diamond producers including Zaire , Australia , Botswana and the Soviet Union
 (x19 / trade-01
 	:topic (x4 / sell-01
 		:ARG1 (x6 / stone
@@ -255,7 +262,7 @@
 						:op2 "Union"))))))
 
 # ::id 9
-# ::snt The Office of Fair Trading said The Office of Fair Trading would first have to establish whether The Office of Fair Trading had jurisdiction over the Central Selling Organization because although The Office of Fair Trading is based in London, De Beers is a South African company
+# ::snt The Office of Fair Trading said The Office of Fair Trading  would first have to establish whether The Office of Fair Trading  had jurisdiction over the Central Selling Organization because although The Office of Fair Trading  is based in London , De Beers is a South African company
 (x6 / say-01
 	:ARG0 (x2 / office
 		:topic (x5 / trading
@@ -307,7 +314,7 @@
 	:ARG1 (x10 / investigate-01))
 
 # ::id 11
-# ::snt After no time limit on the office's investigation is completed, the Office of Fair Trading may decide to refer the complaint to the Monopolies and Mergers Commission
+# ::snt After no time limit on the office's investigation  is completed , the Office of Fair Trading may decide to refer the complaint to the Monopolies and Mergers Commission
 (x18 / possible
 	:domain (x19 / decide-01
 		:time (x1 / after
@@ -336,7 +343,7 @@
 						:op1 "Commission"))))))
 
 # ::id 12
-# ::snt A spokesman for the Central Selling Organization said the Office of Fair Trading notified the organization about the inquiry but had n't yet requested any information
+# ::snt A spokesman for the Central Selling Organization said the Office of Fair Trading notified the organization about the inquiry but had not yet requested any information
 (x8 / say-01
 	:ARG1 (x14 / notify-01
 		:ARG0 (x10 / office
@@ -363,28 +370,33 @@
 					:op3 "Organization")))))
 
 # ::id 13
-# ::snt " De Beers ' Central Selling Organization , which controls 80 percent of world diamond trading's still early " in the investigation, said the spokesman, commenting on condition A spokesman for the Central Selling Organization was not identified
-(x25 / say-01
-	:ARG1 (x19 / early
-		:domain (x6 / selling
-			:mod (x5 / central)
-			:null_edge 80
-			:mod (x16 / trade-01
-				:mod (x14 / world)
-				:null_edge (x15 / null_tag)))
-		:mod (x18 / still)
-		:subevent-of (x23 / investigate-01))
-	:ARG1 (x29 / comment-01
-		:ARG1 (x31 / condition
-			:ARG1-of (x41 / identify-01
+# ::snt De BeersCentral Selling Organization , which controls 80 percent of world diamond trading  is still early in the investigation , said the spokesman , commenting on condition A spokesman for the Central Selling Organization  was not identified
+(x21 / say-01
+	:ARG0 (x4 / organization
+		:null_edge (x1 / de)
+		:ARG0-of (x3 / selling)
+		:ARG0-of (x7 / control-01
+			:ARG1 (x9 / percentage-entity
+				:value 80
+				:poss (x11 / world))
+			:time (x16 / early
+				:ARG1 (x13 / trade-01
+					:null_edge (x12 / null_tag))
+				:mod (x15 / still)
+				:ARG2 (x19 / investigate-01
+					:ARG1 x13))))
+	:ARG1 (x25 / comment-01
+		:ARG0 x4
+		:ARG1 (x27 / condition
+			:ARG1-of (x37 / identify-01
 				:ARG0 (xap1 / person
-					:ARG0-of (x33 / have-org-role-91
+					:ARG0-of (x29 / have-org-role-91
 						:ARG2 (s1 / spokesman)
-						:ARG1 (x38 / organization
-							:ARG0-of (x37 / selling
-								:ARG1 (x36 / central))))))))
+						:ARG1 (x34 / organization
+							:ARG0-of (x33 / selling
+								:ARG1 (x32 / central))))))))
 	:ARG0 (xap0 / person
-		:ARG0-of (x27 / have-org-role-91
+		:ARG0-of (x23 / have-org-role-91
 			:ARG2 (s / spokesman))))
 
 # ::id 14

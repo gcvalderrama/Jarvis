@@ -1,5 +1,5 @@
 # ::id 1
-# ::snt Ben Johnson should be stripped of his world record in the 100-meter dash and his world record should be awarded to Carl Lewis, many U.S. track and field officials and athletes said Wednesday in the aftermath of Johnson admitting to Ben Johnson steroid use
+# ::snt Ben Johnson should be stripped of his world record in the 100-meter dash and his world record  should be awarded to Carl Lewis , many U.S. track and field officials and athletes said Wednesday in the aftermath of Johnson admitting to Ben Johnson  steroid use
 (x33 / say-01
 	:ARG1 (x28 / and
 		:op1 (x3 / recommend-01
@@ -41,7 +41,7 @@
 			:ARG1 (x44 / steroid))))
 
 # ::id 2
-# ::snt Johnson testified this week at a Canadian inquiry that Ben Johnson seven-year involvement with illegal performance-enhancing drugs included injections before the 1987 World Championships in Rome, where Ben Johnson set the existing world record of 9.83 seconds
+# ::snt Johnson testified this week at a Canadian inquiry that Ben Johnson  seven-year involvement with illegal performance-enhancing drugs included injections before the 1987 World Championships in Rome , where Ben Johnson  set the existing world record of 9.83 seconds
 (x2 / testify-01
 	:ARG0 (x1 / person
 		:name (n / name
@@ -87,60 +87,53 @@
 										:quant (x37 / more-than)))))))))))
 
 # ::id 3
-# ::snt " Ollan Cassell would have to see the evidence, but if Ben Johnson was on drugs at the time of the World Championships, Ollan Cassell thought would be to remove Ben Johnson record, " said Ollan Cassell, executive director of The Athletics Congress, the national governing board for the sport
-(x38 / say-01
-	:ARG1 (x11 / contrast-01
-		:null_edge (x2 / newspaper
+# ::snt Ollan Cassell  would have to see the evidence , but if Ben Johnson  was on drugs at the time of the World Championships , Ollan Cassell  thought would be to remove Ben Johnson  record , said Ollan Cassell , executive director of The Athletics Congress , the national governing board for the sport
+(x10 / contrast-01
+	:ARG2 (x1 / newspaper
+		:name (n / name
+			:op1 "Ollan"
+			:op2 "Cassell"))
+	:ARG2 (x6 / see-01
+		:ARG1 (x8 / thing
+			:ARG0-of (e / evidence-01)))
+	:ARG2 (x27 / think-01
+		:ARG1 (x16 / drug
+			:ARG0 (x12 / newspaper
+				:name (n2 / name
+					:op1 "Ben"
+					:op2 "Johnson"))
+			:null_edge (x23 / country
+				:name (n3 / name
+					:op1 "Championships")
+				:null_edge (x22 / country
+					:name (n4 / name
+						:op1 "World"))))
+		:ARG0 (x25 / newspaper
 			:name (n1 / name
 				:op1 "Ollan"
 				:op2 "Cassell"))
-		:ARG2 (x7 / see-01
-			:ARG1 (x9 / thing
-				:ARG0-of (e / evidence-01)))
-		:ARG2 (x28 / think-01
-			:ARG1 (x17 / drug
-				:ARG0 (x13 / newspaper
-					:name (n3 / name
-						:op1 "Ben"
-						:op2 "Johnson"))
-				:null_edge (x24 / country
-					:name (n4 / name
-						:op1 "Championships")
-					:null_edge (x23 / country
-						:name (n5 / name
-							:op1 "World"))))
-			:ARG0 (x26 / newspaper
-				:name (n2 / name
+		:ARG1 (x31 / remove-01
+			:ARG0 x25
+			:ARG1-of (x36 / say-01
+				:ARG0 (x32 / person
+					:name (n5 / name
+						:op1 "Ben"))
+				:name (x37 / name
 					:op1 "Ollan"
-					:op2 "Cassell"))
-			:ARG1 (x32 / remove-01
-				:ARG0 x26
-				:ARG1 (x35 / record
-					:ARG0 (x33 / newspaper
-						:name (n6 / name
-							:op1 "Ben"
-							:op2 "Johnson"))))))
-	:ARG0 (x39 / newspaper
-		:name (n / name
-			:op1 "Ollan"
-			:op2 "Cassell")
-		:ARG0-of (x43 / have-org-role-91
-			:ARG2 (d / director)
-			:mod (x42 / executive)
-			:ARG1 (x55 / sport
-				:name (x46 / name
-					:op1 "Athletics"
-					:op2 "Congress"
-					:op3 ","
-					:op4 "the"
-					:op5 "national"
-					:op6 "governing"
-					:op7 "board"
-					:mod (x50 / nation)
-					:ARG0-of (x51 / govern-01))))))
+					:op2 "Cassell"
+					:ARG0-of (x41 / have-org-role-91
+						:ARG2 (d / director)
+						:mod (x40 / executive)
+						:ARG1 (x44 / government-organization
+							:name (n6 / name
+								:op1 "Athletics"
+								:op2 "Congress"))))
+				:ARG1 (x48 / nation
+					:ARG0-of (x49 / govern-01)))
+			:ARG1 (x53 / sport))))
 
 # ::id 4
-# ::snt Cassell is also a vice president of the International Amateur Athletic Federation, the world governing organization
+# ::snt Cassell is also a vice president of the International Amateur Athletic Federation , the world governing organization
 (x1 / person
 	:name (n / name
 		:op1 "Cassell")
@@ -159,41 +152,39 @@
 			:ARG0-of (x16 / govern-01))))
 
 # ::id 5
-# ::snt The possibility that Johnson could lose Ben Johnson record was raised when the IAAF asked for " an urgent legal opinion " to see what the IAAF could do about records and championships of confessed drug users
-(x2 / possible
+# ::snt The possibility that Johnson could lose Ben Johnson  record was raised when the IAAF asked for an urgent legal opinion to see what the IAAF  could do about records and championships of confessed drug users
+(x11 / raise-01
 	:null_edge (x5 / possible
 		:domain (x6 / lose-02
 			:ARG0 (x4 / person
-				:name (n / name
+				:name (n1 / name
 					:op1 "Johnson"))
-			:ARG0 (x11 / raise-01
-				:ARG2 (x7 / name
-					:op1 "Ben"
-					:op2 "Johnson")
-				:ARG1 (x9 / record)
-				:time (x15 / ask-01
-					:ARG0 (x14 / organization
-						:name (n1 / name
+			:ARG1 (x9 / record
+				:poss (x7 / person
+					:name (n2 / name
+						:op1 "Ben")))))
+	:time (x15 / ask-01
+		:ARG0 (x14 / organization
+			:name (n / name
+				:op1 "IAAF"))
+		:ARG2 (x20 / opine-01
+			:mod (x18 / urgent))
+		:ARG1 (x22 / see-01
+			:ARG1 (x26 / possible
+				:domain (x27 / do-02
+					:ARG0 (x25 / organization
+						:name (n3 / name
 							:op1 "IAAF"))
-					:ARG2 (x21 / opine-01
-						:mod (x19 / urgent))
-					:ARG1 (x24 / see-01
-						:ARG1 (x28 / possible
-							:domain (x29 / do-02
-								:ARG0 (x27 / organization
-									:name (n2 / name
-										:op1 "IAAF"))
-								:ARG4 (x32 / and
-									:op1 (x31 / record)
-									:op2 (x33 / championship)
-									:op2 (xap1 / person
-										:ARG1-of (x35 / confess-01)
-										:ARG0-of (xap0 / use-01
-											:ARG1 (x36 / drug)))))))))))
-	:name x7)
+					:ARG4 (x30 / and
+						:op1 (x29 / record)
+						:op2 (x31 / championship)
+						:op2 (xap1 / person
+							:ARG1-of (x33 / confess-01)
+							:ARG0-of (xap0 / use-01
+								:ARG1 (x34 / drug)))))))))
 
 # ::id 6
-# ::snt The issue would be decided at the IAAF Congress, scheduled for Barcelona, Spain, in September
+# ::snt The issue would be decided at the IAAF Congress , scheduled for Barcelona , Spain , in September
 (x5 / decide-01
 	:ARG1 (x2 / issue)
 	:location (x8 / government-organization
@@ -210,31 +201,32 @@
 			:time (x18 / date-entity))))
 
 # ::id 7
-# ::snt " The ... actions would allow the IAAF, if the IAAF so decided, retroactively to withdraw results obtained and any records achieved by such athletes, " the statement said
-(x31 / state-01
-	:ARG1 (x6 / allow-01
-		:ARG0 (x4 / action)
-		:ARG1 (x18 / withdraw-01
-			:ARG1 (x8 / organization
-				:name (n / name
+# ::snt The ... actions would allow the IAAF , if the IAAF  so decided , retroactively to withdraw results obtained and any records achieved by such athletes , the statement said
+(x29 / state-01
+	:ARG1 (x5 / allow-01
+		:ARG0 (x3 / action)
+		:ARG1 (x7 / government-organization
+			:name (n / name
+				:op1 "IAAF"))
+		:condition (x13 / decide-01
+			:ARG0 (x11 / organization
+				:name (n1 / name
 					:op1 "IAAF"))
-			:location (x16 / retroactively
-				:degree (x14 / decide-01
-					:ARG0 (x12 / organization
-						:name (n1 / name
-							:op1 "IAAF"))))
-			:ARG1 (x21 / and
-				:op1 (x19 / thing
-					:ARG2-of (r / result-01)
-					:ARG1-of (x20 / obtain-01)
-					:ARG2 (x24 / achieve-01
-						:ARG1 (x23 / record
-							:mod (x22 / any))
-						:ARG0 (x27 / athlete
-							:mod (x26 / such))))))))
+			:manner (x15 / retroactively)
+			:ARG1 (x17 / withdraw-01
+				:ARG0 x11
+				:ARG2 (x20 / and
+					:op1 (x18 / thing
+						:ARG2-of (r / result-01)
+						:ARG1-of (x19 / obtain-01)
+						:ARG2 (x23 / achieve-01
+							:ARG1 (x22 / record
+								:mod (x21 / any))
+							:ARG0 (x26 / athlete
+								:mod (x25 / such)))))))))
 
 # ::id 8
-# ::snt It was not clear, however, whether any action taken by the congress would affect Johnson's world mark because effective dates of retroactive sanctions would have to be worked out
+# ::snt It was not clear , however , whether any action taken by the congress would affect Johnson's world mark because effective dates of retroactive sanctions would have to be worked out
 (x4 / clear
 	:domain (x16 / affect-01
 		:ARG0 (x10 / action
@@ -257,7 +249,7 @@
 			:ARG0 (x31 / work-01))))
 
 # ::id 9
-# ::snt Frank Greenberg, TAC president, said : " such athletes 'll wait to see what Canada does, " following the country's inquiry at which 40 persons, among 40 persons Johnson, Ollan Cassell coach, Charlie Francis, and Ollan Cassell physician, Jamie Astaphan, testified
+# ::snt Frank Greenberg , TAC president , said : such athletes  will wait to see what Canada does , following the country's inquiry at which 40 persons , among 40 persons  Johnson , Ollan Cassell  coach , Charlie Francis , and Ollan Cassell  physician , Jamie Astaphan , testified
 (x7 / say-01
 	:ARG0 (x1 / newspaper
 		:name (n / name
@@ -265,73 +257,73 @@
 			:op2 "Greenberg")
 		:ARG0-of (x5 / have-org-role-91
 			:ARG2 (p / president)))
-	:ARG1 (x13 / wait-01
-		:ARG0 (x11 / athletes
-			:mod (x10 / such))
-		:ARG2 (x15 / see-01
-			:ARG1 (x18 / do-02
-				:ARG0 (x17 / country
+	:null_edge (x12 / wait-01
+		:ARG0 (x10 / athletes
+			:mod (x9 / such))
+		:ARG2 (x14 / see-01
+			:ARG1 (x17 / do-02
+				:ARG0 (x16 / country
 					:name (n1 / name
-						:op1 "Canada")))))
-	:ARG1-of (x21 / follow-01
-		:ARG2 (x25 / inquire-01
-			:ARG0 (x23 / country)
-			:ARG1 (x51 / testify-01
-				:ARG0 (x29 / person
-					:quant 40
-					:poss (x33 / person
-						:quant 40)
-					:location (x43 / and
-						:op1 (x34 / person
-							:name (n2 / name
-								:op1 "Johnson"))
-						:op3 (x38 / person
-							:ARG0-of (c / coach-01)
-							:name (x36 / name
-								:op1 "Ollan"
-								:op2 "Cassell")
-							:name (x40 / name
-								:op1 "Charlie"
-								:op2 "Francis"))
-						:op3 (x46 / physician
-							:name (x44 / name
-								:op1 "Ollan"
-								:op2 "Cassell")
-							:name (x48 / name
-								:op1 "Jamie"
-								:op2 "Astaphan"))))))))
+						:op1 "Canada"))
+				:ARG1-of (x19 / follow-01
+					:ARG2 (x23 / inquire-01
+						:ARG0 (x21 / country)
+						:ARG1 (x49 / testify-01
+							:ARG0 (x27 / person
+								:quant 40
+								:poss (x31 / person
+									:quant 40)
+								:location (x41 / and
+									:op1 (x32 / person
+										:name (n2 / name
+											:op1 "Johnson"))
+									:op3 (x36 / person
+										:ARG0-of (c / coach-01)
+										:name (x34 / name
+											:op1 "Ollan"
+											:op2 "Cassell")
+										:name (x38 / name
+											:op1 "Charlie"
+											:op2 "Francis"))
+									:op3 (x44 / physician
+										:name (x42 / name
+											:op1 "Ollan"
+											:op2 "Cassell")
+										:name (x46 / name
+											:op1 "Jamie"
+											:op2 "Astaphan")))))))))))
 
 # ::id 10
-# ::snt " Frank Greenberg feel such athletes will do such athletes best to advocate that such athletes athlete, Carl Lewis, gets the world record, " Greenberg said
-(x29 / say-01
-	:ARG1 (x4 / feel-01
-		:ARG0 (x2 / newspaper
+# ::snt 
+(x27 / say-01
+	:ARG1 (x3 / feel-01
+		:ARG0 (x1 / newspaper
 			:name (n1 / name
 				:op1 "Frank"
 				:op2 "Greenberg"))
-		:ARG1 (x8 / do-02
-			:ARG0 (x6 / athletes
-				:mod (x5 / such))
-			:ARG1 (x10 / athletes
-				:mod (x9 / such))
-			:mod (x11 / good
+		:ARG1 (x7 / do-02
+			:ARG0 (x5 / athletes
+				:mod (x4 / such))
+			:ARG1 (x9 / athletes
+				:mod (x8 / such))
+			:mod (x10 / good
 				:degree (m / most))
-			:ARG1 (x13 / advocate-01
-				:ARG1 (x22 / get-01
-					:ARG0 (x17 / athletes
-						:mod (x15 / such)
-						:mod (x16 / athletes)
-						:name (x19 / name
+			:ARG1 (x12 / advocate-01
+				:ARG1 (x21 / get-01
+					:ARG0 (x16 / athletes
+						:mod (x14 / such)
+						:mod (x15 / athletes)
+						:name (x18 / name
 							:op1 "Carl"
 							:op2 "Lewis"))
-					:ARG1 (x25 / record
-						:mod (x24 / world))))))
-	:ARG0 (x28 / person
+					:ARG1 (x24 / record
+						:mod (x23 / world))))))
+	:ARG0 (x26 / person
 		:name (n / name
 			:op1 "Greenberg")))
 
 # ::id 11
-# ::snt Lewis has the second-fastest legal time in history, 9.92, in finishing second to Johnson at last year's Seoul Olympics
+# ::snt Lewis has the second-fastest legal time in history , 9.92 , in finishing second to Johnson at last year's Seoul Olympics
 (x2 / have-03
 	:ARG0 (x1 / person
 		:name (n / name
@@ -351,7 +343,7 @@
 					:op1 "Seoul")))))
 
 # ::id 12
-# ::snt Johnson, who clocked 9.79 in that race, lost the record and Ben Johnson gold medal, and was barred from competition for two years after testing positive for an anabolic steroid
+# ::snt Johnson , who clocked 9.79 in that race , lost the record and Ben Johnson  gold medal , and was barred from competition for two years after testing positive for an anabolic steroid
 (x19 / and
 	:op1 (x10 / lose-02
 		:ARG0 (x1 / person
@@ -404,7 +396,7 @@
 					:ARG1 (x29 / suspend-01))))))
 
 # ::id 14
-# ::snt Lewis thinks Carl Lewis should
+# ::snt 
 (x2 / think-01
 	:ARG0 (x1 / person
 		:name (n / name
@@ -416,98 +408,98 @@
 	:ARG1 (x5 / recommend-01))
 
 # ::id 15
-# ::snt " Ben Johnson went a long time without telling the truth, but Ben Johnson broke down and Ben Johnson has told the truth, " said Lewis, a six-time Olympic gold medalist
-(x27 / say-01
-	:ARG1 (x13 / contrast-01
-		:ARG2 (x4 / go-02
-			:ARG0 (x2 / newspaper
+# ::snt Ben Johnson  went a long time without telling the truth , but Ben Johnson  broke down and Ben Johnson  has told the truth , said Lewis , a six-time Olympic gold medalist
+(x25 / say-01
+	:ARG1 (x12 / contrast-01
+		:ARG2 (x3 / go-02
+			:ARG0 (x1 / newspaper
 				:name (n1 / name
 					:op1 "Ben"
 					:op2 "Johnson"))
-			:duration (x6 / long)
-			:manner (x9 / tell-01
-				:ARG0 x2
-				:ARG2 (x11 / truth)))
-		:ARG2 (x18 / and
-			:op2 (x16 / break-08
-				:ARG0 (x14 / newspaper
+			:duration (x5 / long)
+			:manner (x8 / tell-01
+				:ARG0 x1
+				:ARG2 (x10 / truth)))
+		:ARG2 (x17 / and
+			:op2 (x15 / break-08
+				:ARG0 (x13 / newspaper
 					:name (n4 / name
 						:op1 "Ben"
 						:op2 "Johnson"))))
-		:ARG2 (x22 / tell-01
-			:ARG0 (x19 / newspaper
+		:ARG2 (x21 / tell-01
+			:ARG0 (x18 / newspaper
 				:name (n2 / name
 					:op1 "Ben"
 					:op2 "Johnson"))
-			:ARG2 (x24 / truth)))
-	:ARG0 (x28 / person
+			:ARG2 (x23 / truth)))
+	:ARG0 (x26 / person
 		:name (n / name
 			:op1 "Lewis")
-		:ARG0-of (x34 / medalist
-			:mod (x31 / six-time)
-			:ARG1 (x32 / game
+		:ARG0-of (x32 / medalist
+			:mod (x29 / six-time)
+			:ARG1 (x30 / game
 				:name (n3 / name
 					:op1 "Olympic"))
-			:consist-of (x33 / gold))))
+			:consist-of (x31 / gold))))
 
 # ::id 16
-# ::snt " Ben Johnson is giving athletes competing this week in the TAC Championships about whether Johnson should be allowed back into the sport after he completes his two-year suspension an opportunity to believe Ben Johnson, to support Ben Johnson
-(x5 / give-01
-	:ARG0 (x2 / newspaper
+# ::snt Ben Johnson  is giving athletes competing this week in the TAC Championships about whether Johnson should be allowed back into the sport after he completes his two-year suspension  an opportunity to believe Ben Johnson  , to support Ben Johnson
+(x4 / give-01
+	:ARG0 (x1 / newspaper
 		:name (n / name
 			:op1 "Ben"
 			:op2 "Johnson"))
-	:ARG1 (x6 / athletes
-		:ARG0-of (x7 / compete-01
-			:time (x9 / week
-				:mod (x8 / this))
-			:ARG2 (x13 / publication
+	:ARG1 (x5 / athletes
+		:ARG0-of (x6 / compete-01
+			:time (x8 / week
+				:mod (x7 / this))
+			:ARG2 (x12 / publication
 				:name (n1 / name
 					:op1 "Championships")
-				:null_edge (x12 / country
+				:null_edge (x11 / country
 					:name (n2 / name
 						:op1 "TAC"))
-				:null_edge (x17 / recommend-01
-					:ARG1 (x19 / allow-01
-						:ARG1 (x16 / person
+				:null_edge (x16 / recommend-01
+					:ARG1 (x18 / allow-01
+						:ARG1 (x15 / person
 							:name (n3 / name
 								:op1 "Johnson"))
-						:direction (x20 / back)
-						:ARG1 (x23 / sport)
-						:time (x24 / after
-							:op1 (x26 / complete-01
-								:ARG1 (x29 / suspend-01)
-								:ARG1 (x31 / opportunity
-									:name (x34 / name
+						:direction (x19 / back)
+						:ARG1 (x22 / sport)
+						:time (x23 / after
+							:op1 (x25 / complete-01
+								:ARG1 (x28 / suspend-01)
+								:ARG1 (x30 / opportunity
+									:name (x33 / name
 										:op1 "Ben"
 										:op2 "Johnson"))
-								:purpose (x38 / support-01
-									:ARG0 x29
-									:ARG1 (x39 / name
+								:purpose (x37 / support-01
+									:ARG0 x28
+									:ARG1 (x38 / name
 										:op1 "Ben"
 										:op2 "Johnson"))))
-						:purpose (x33 / believe-01
-							:ARG0 x16)))))))
+						:purpose (x32 / believe-01
+							:ARG0 x15)))))))
 
 # ::id 17
-# ::snt " Ben Johnson even heard Carl Lewis speaking out against drugs and that's the important thing .
-(x12 / and
-	:op1 (x5 / hear-01
-		:ARG0 (x2 / newspaper
+# ::snt Ben Johnson  even heard Carl Lewis  speaking out against drugs and that is the important thing
+(x11 / and
+	:op1 (x4 / hear-01
+		:ARG0 (x1 / newspaper
 			:name (n / name
 				:op1 "Ben"
 				:op2 "Johnson"))
-		:mod (x4 / even)
-		:mod (x16 / important))
-	:op2 (x8 / speak-01
-		:ARG0 (x6 / newspaper
+		:mod (x3 / even)
+		:mod (x15 / important))
+	:op2 (x7 / speak-01
+		:ARG0 (x5 / newspaper
 			:name (n1 / name
 				:op1 "Carl"
 				:op2 "Lewis"))
-		:ARG1 (x11 / drug)))
+		:ARG1 (x10 / drug)))
 
 # ::id 18
-# ::snt Al Joyner, the 1984 Olympic gold medalist in the triple jump, said Johnson should be allowed to compete again, only because that is the rule
+# ::snt Al Joyner , the 1984 Olympic gold medalist in the triple jump , said Johnson should be allowed to compete again , only because that is the rule
 (x14 / say-01
 	:ARG0 (x2 / person
 		:name (n / name
@@ -536,93 +528,93 @@
 					:domain (x25 / that))))))
 
 # ::id 19
-# ::snt " But all Al Joyner , the 1984 Olympic gold medalist in the triple jump records should be taken because Ben Johnson admitted last year's Seoul Olympics, " Joyner added
-(x2 / contrast-01
-	:op1 (x32 / add-01
-		:ARG1 (x17 / recommend-01
-			:ARG1 (x19 / take-01
-				:ARG1 (x16 / record
-					:quant (x3 / all)
-					:name (x4 / name
+# ::snt But all Al Joyner , the 1984 Olympic gold medalist in the triple jump  records should be taken because Ben Johnson  admitted last year's Seoul Olympics  , Joyner added
+(x1 / contrast-01
+	:op1 (x30 / add-01
+		:ARG1 (x16 / recommend-01
+			:ARG1 (x18 / take-01
+				:ARG1 (x15 / record
+					:quant (x2 / all)
+					:name (x3 / name
 						:op1 "Al"
 						:op2 "Joyner"
-						:ARG0-of (x11 / medalist
-							:time (x8 / date-entity
+						:ARG0-of (x10 / medalist
+							:time (x7 / date-entity
 								:year 1984)
-							:ARG1 (x9 / game
+							:ARG1 (x8 / game
 								:name (n3 / name
 									:op1 "Olympic"))
-							:consist-of (x10 / gold)
-							:ARG1 (x15 / jump-03
-								:mod (x14 / triple)))))
-				:ARG1-of (x20 / cause-01
-					:ARG0 (x23 / admit-01
-						:ARG0 (x21 / newspaper
+							:consist-of (x9 / gold)
+							:ARG1 (x14 / jump-03
+								:mod (x13 / triple)))))
+				:ARG1-of (x19 / cause-01
+					:ARG0 (x22 / admit-01
+						:ARG0 (x20 / newspaper
 							:name (n1 / name
 								:op1 "Ben"
 								:op2 "Johnson"))
-						:ARG1 (x28 / game
+						:ARG1 (x27 / game
 							:name (n2 / name
 								:op1 "Olympics")
-							:time (x25 / year
-								:mod (x24 / last))
-							:part (x27 / city
+							:time (x24 / year
+								:mod (x23 / last))
+							:part (x26 / city
 								:name (n4 / name
 									:op1 "Seoul")))))))
-		:ARG0 (x31 / person
+		:ARG0 (x29 / person
 			:name (n / name
 				:op1 "Joyner"))))
 
 # ::id 20
-# ::snt " Al Joyner , the 1984 Olympic gold medalist in the triple jump killed a lot of fans ... a lot of young kids ... and Ben Johnson almost killed our sport ... Ben Johnson put a dark shadow over a lot of fans ... because of who Ben Johnson was, " Joyner said
-(x55 / say-01
-	:ARG1 (x26 / and
-		:op1 (x14 / kill-01
-			:ARG0 (x3 / person
+# ::snt Al Joyner , the 1984 Olympic gold medalist in the triple jump  killed a lot of fans ... a lot of young kids ... and Ben Johnson  almost killed our sport ... Ben Johnson  put a dark shadow over a lot of fans  ... because of who Ben Johnson  was , Joyner said
+(x53 / say-01
+	:ARG1 (x25 / and
+		:op1 (x13 / kill-01
+			:ARG0 (x2 / person
 				:name (n1 / name
 					:op1 "Joyner")
-				:null_edge (x2 / null_tag)
-				:ARG0-of (x9 / medalist
-					:time (x6 / date-entity
+				:null_edge (x1 / null_tag)
+				:ARG0-of (x8 / medalist
+					:time (x5 / date-entity
 						:year 1984)
-					:ARG1 (x7 / game
+					:ARG1 (x6 / game
 						:name (n5 / name
 							:op1 "Olympic"))
-					:consist-of (x8 / gold)
-					:ARG1 (x13 / jump-03
-						:mod (x12 / triple))))
-			:ARG1 (x18 / fan
-				:quant (x16 / lot
-					:part-of (x24 / kid
-						:mod (x23 / young)))))
-		:op2 (x30 / kill-01
-			:ARG0 x3
-			:ARG0 (x27 / newspaper
+					:consist-of (x7 / gold)
+					:ARG1 (x12 / jump-03
+						:mod (x11 / triple))))
+			:ARG1 (x17 / fan
+				:quant (x15 / lot
+					:part-of (x23 / kid
+						:mod (x22 / young)))))
+		:op2 (x29 / kill-01
+			:ARG0 x2
+			:ARG0 (x26 / newspaper
 				:name (n2 / name
 					:op1 "Ben"
 					:op2 "Johnson"))
-			:mod (x29 / almost)
-			:ARG1 (x32 / sport)
-			:null_edge (x36 / put-01
-				:ARG0 (x34 / newspaper
+			:mod (x28 / almost)
+			:ARG1 (x31 / sport)
+			:null_edge (x35 / put-01
+				:ARG0 (x33 / newspaper
 					:name (n3 / name
 						:op1 "Ben"
 						:op2 "Johnson"))
-				:ARG1 (x39 / shadow-01
-					:mod (x38 / dark))
-				:ARG2 (x44 / fan
-					:quant (x42 / lot)))
-			:ARG1-of (x46 / cause-01
-				:ARG0 (x49 / newspaper
+				:ARG1 (x38 / shadow-01
+					:mod (x37 / dark))
+				:ARG2 (x43 / fan
+					:quant (x41 / lot)))
+			:ARG1-of (x45 / cause-01
+				:ARG0 (x48 / newspaper
 					:name (n4 / name
 						:op1 "Ben"
 						:op2 "Johnson")))))
-	:ARG0 (x54 / person
+	:ARG0 (x52 / person
 		:name (n / name
 			:op1 "Joyner")))
 
 # ::id 21
-# ::snt Sprinter Harvey Glance, a three-time Olympian and president of TAC's Athletes Advisory Committee, said Johnson should be allowed to return after two years
+# ::snt Sprinter Harvey Glance , a three-time Olympian and president of TAC's Athletes Advisory Committee , said Johnson should be allowed to return after two years
 (x17 / say-01
 	:ARG1 (x8 / and
 		:op1 (x2 / newspaper
@@ -657,50 +649,49 @@
 							:quant 2)))))))
 
 # ::id 22
-# ::snt " But if he admits he was on anything (when he set the record -RRB-, then the existing world record of 9.83 seconds should go to the next person, Carl Lewis, " Glance said
-(x38 / say-01
-	:ARG1 (x2 / contrast-01
-		:ARG2 (x26 / recommend-01
-			:ARG1 (x27 / go-01
-				:condition (x5 / admit-01
-					:ARG1 (x13 / set-01
-						:ARG1 (x15 / record)))
-				:ARG1 (x22 / record
-					:time (x18 / then)
-					:mod (x20 / existing)
-					:mod (x21 / world)
+# ::snt But if he admits he was on anything (when he set the record ), then the existing world record of 9.83 seconds  should go to the next person , Carl Lewis , Glance said
+(x36 / say-01
+	:ARG1 (x1 / contrast-01
+		:ARG2 (x25 / recommend-01
+			:ARG1 (x26 / go-01
+				:condition (x4 / admit-01
+					:ARG1 (x12 / set-01
+						:ARG1 (x14 / record)))
+				:ARG1 (x21 / record
+					:time (x17 / then)
+					:mod (x19 / existing)
+					:mod (x20 / world)
 					:ARG1-of (xap0 / resemble-01
-						:ARG2 (x25 / temporal-quantity
+						:ARG2 (x24 / temporal-quantity
 							:unit (s / second)
-							:quant (x24 / more-than))))
-				:ARG2 (x31 / person
-					:mod (x30 / next)
-					:name (x33 / name
+							:quant (x23 / more-than))))
+				:ARG2 (x30 / person
+					:mod (x29 / next)
+					:name (x32 / name
 						:op1 "Carl"
 						:op2 "Lewis")))))
-	:ARG0 (x37 / glance))
+	:ARG0 (x35 / glance))
 
 # ::id 23
-# ::snt " Only the records will show the existing world record of 9.83 seconds and only Ben knows .
-(x14 / and
-	:op1 (x6 / show-01
-		:ARG0 (x4 / record
-			:mod (x2 / only))
-		:ARG1 (x10 / record
-			:mod (x8 / existing)
-			:mod (x9 / world)
-			:ARG1-of (xap0 / resemble-01
-				:ARG2 (x13 / temporal-quantity
-					:unit (s / second)
-					:quant (x12 / more-than)))))
-	:op2 (x17 / know-01
-		:mod (x15 / only)
-		:ARG0 (x16 / person
-			:name (n / name
-				:op1 "Ben"))))
+# ::snt Only the records will show the existing world record of 9.83 seconds  and only Ben knows
+(x5 / show-01
+	:ARG0 (x3 / record
+		:mod (x1 / only))
+	:ARG1 (x9 / record
+		:mod (x7 / existing)
+		:mod (x8 / world)
+		:ARG1 (x13 / and
+			:op1 (x12 / temporal-quantity
+				:unit (s / second)
+				:quant (x11 / more-than))
+			:op2 (x15 / person
+				:name (n / name
+					:op1 "Ben")
+				:mod (x14 / only)
+				:null_edge (x16 / know-01)))))
 
 # ::id 24
-# ::snt Johnson was tested after Ben Johnson world-record run in Rome, but the results were negative
+# ::snt Johnson was tested after Ben Johnson  world-record run in Rome , but the results were negative
 (x12 / contrast-01
 	:ARG1 (x3 / test-01
 		:ARG1 (x1 / person

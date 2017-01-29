@@ -1,5 +1,5 @@
 # ::id 1
-# ::snt The mood in the House majority leader's conference room darkened with each passing moment as leading Democratic congressmen heard one of their party's most prominent pollsters report what the public thought about leading Democratic congressmen
+# ::snt The mood in the House majority leader's conference room darkened with each passing moment as leading Democratic congressmen heard one of their party is most prominent pollsters report what the public thought about leading Democratic congressmen
 (x11 / darken
 	:ARG0 (x2 / mood
 		:location (x10 / room
@@ -18,15 +18,16 @@
 			:ARG2 (c / congressman)
 			:ARG0-of (x17 / lead-02)
 			:mod (x18 / democracy))
-		:medium (x29 / report-01
-			:ARG0 (x24 / party)
-			:mod (x27 / prominent
-				:degree (x26 / most))
-			:ARG0 (x28 / pollster))
-		:ARG0 (x32 / public
-			:null_edge (x37 / have-org-role-91
-				:ARG2 (c1 / congressman)
-				:ARG0-of (x35 / lead-02)))))
+		:ARG1 (x29 / report-01
+			:ARG0 (x24 / party
+				:quant (x21 / one))
+			:ARG0 (x28 / pollster
+				:mod (x27 / prominent
+					:degree (x26 / most)))
+			:ARG0 (x32 / public
+				:ARG0-of (x35 / lead-01
+					:ARG1 (x37 / have-org-role-91
+						:ARG2 (c1 / congressman)))))))
 
 # ::id 2
 # ::snt The ostensible purpose of the recent session with Peter Hart was to discuss the public mood on campaign finance reform
@@ -45,7 +46,7 @@
 			:ARG1 (x19 / finance))))
 
 # ::id 3
-# ::snt Mr. Hart and a Republican cohort, Douglas Bailey, conducted six focus groups in July in three states -- Illinois, Florida and Massachusetts -- to get a deeper feeling of public opinion
+# ::snt Mr. Hart and a Republican cohort , Douglas Bailey , conducted six focus groups in July in three states Illinois , Florida and Massachusetts to get a deeper feeling of public opinion
 (x11 / conduct-01
 	:ARG0 (x3 / and
 		:op1 (x2 / person
@@ -60,20 +61,27 @@
 		:quant 6
 		:ARG0-of (x13 / focus-01))
 	:time (x16 / date-entity)
-	:location (x19 / state
-		:quant 3
-		:ARG1 (x24 / and
-			:op2 (x23 / country
-				:name (n1 / name
-					:op1 "Florida"))))
-	:purpose (x28 / get-01
-		:ARG1 (x31 / feel-01
-			:mod (x30 / deep)
-			:mod (x34 / opine-01
-				:ARG0 (x33 / public)))))
+	:ARG0 (x23 / and
+		:op1 (x19 / state
+			:quant 3)
+		:op1 (x20 / country
+			:name (n1 / name
+				:op1 "Illinois"))
+		:op2 (x22 / country
+			:name (n2 / name
+				:op1 "Florida"))
+		:op2 (x24 / state
+			:name (n3 / name
+				:op1 "Massachusetts")))
+	:purpose (x26 / get-01
+		:ARG0 x23
+		:ARG1 (x29 / feel-01
+			:mod (x28 / deep)
+			:mod (x32 / opine-01
+				:ARG0 (x31 / public)))))
 
 # ::id 4
-# ::snt But as Mr. Hart summarized Mr. Hart and a Republican cohort findings, the discussion quickly centered on the dismay and disgust many voters feel about politics and government these days
+# ::snt But as Mr. Hart summarized Mr. Hart and a Republican cohort  findings , the discussion quickly centered on the dismay and disgust many voters feel about politics and government these days
 (x1 / contrast-01
 	:ARG2 (x17 / center-01
 		:time (x5 / summarize-01
@@ -106,75 +114,75 @@
 					:unit (d / day))))))
 
 # ::id 5
-# ::snt 
-(x8 / include-91
-	:ARG1 (x2 / react-01
-		:location (x5 / room))
-	:ARG2 (x11 / depression
-		:mod (x10 / deep)
-		:ARG1-of (x17 / person
+# ::snt The reaction in the room was one of deep depression , according to one participant
+(x2 / react-01
+	:location (x5 / room)
+	:ARG1 (x10 / depression
+		:mod (x9 / deep))
+	:ARG0-of (x12 / accord-01
+		:ARG2 (x15 / person
 			:ARG0-of (p / participate-01)
 			:quant 1)))
 
 # ::id 6
-# ::snt Another described it as " combustible .
+# ::snt Another described it as combustible
 (x2 / describe-01
 	:ARG0 (x1 / person
 		:mod (a / another))
 	:ARG1 (x3 / it)
-	:ARG2 (x6 / combustible))
+	:ARG2 (x5 / combustible))
 
 # ::id 7
-# ::snt The Hart-Bailey report found the public " downbeat " about the way the country is going, convinced that Washington politicians are " more concerned with political self-preservation " than with the public good
+# ::snt The Hart-Bailey report found the public downbeat about the way the country is going , convinced that Washington politicians are more concerned with political self-preservation than with the public good
 (x4 / find-02
 	:ARG0 (x3 / report
 		:mod (x2 / hart-bailey))
-	:ARG1 (x6 / public
-		:manner (x12 / way
-			:ARG1-of (x18 / convince-01
-				:ARG1 (x14 / country)
-				:ARG2 (x25 / concern-01
-					:null_edge (x21 / politician
-						:location (x20 / city
+	:ARG1 (x7 / downbeat
+		:mod (x6 / public)
+		:ARG2 (x10 / way
+			:ARG1-of (x16 / convince-01
+				:ARG1 (x12 / country)
+				:ARG2 (x22 / concern-01
+					:ARG0 (x19 / politician
+						:location (x18 / city
 							:name (n / name
 								:op1 "Washington")))
-					:degree (x24 / more)
-					:ARG1 (x28 / self-preservation
-						:mod (x27 / politics))
-					:mod (x34 / good
-						:mod (x33 / public)))))))
+					:degree (x21 / more)
+					:ARG1 (x25 / self-preservation
+						:mod (x24 / politics))
+					:mod (x30 / good
+						:mod (x29 / public)))))))
 
 # ::id 8
-# ::snt Average citizens, the pollsters found, believe Average citizens , the pollsters found " simply are not being heard in Washington, " and more and more are losing confidence in the electoral system as a means of influencing government
+# ::snt Average citizens , the pollsters found , believe Average citizens , the pollsters found  simply are not being heard in Washington , and more and more are losing confidence in the electoral system as a means of influencing government
 (x8 / believe-01
 	:ARG0 (x2 / citizen
 		:mod (x1 / average-01))
-	:ARG1 (x25 / and
+	:ARG1 (x23 / and
 		:op1 (x6 / find-02
 			:ARG0 (x5 / pollster))
-		:op1 (x20 / hear-01
+		:op1 (x19 / hear-01
 			:ARG1 (x10 / citizen
 				:mod (x9 / average-01))
 			:ARG1 (x13 / pollster
 				:ARG0-of (x14 / find-01
-					:manner (x16 / simple)))
-			:location (x22 / city
+					:manner (x15 / simple)))
+			:location (x21 / city
 				:name (n / name
 					:op1 "Washington")))
-		:op2 (x30 / lose-02
-			:ARG1 (x27 / and
-				:op1 (x26 / more)
-				:op2 (x28 / more))
-			:ARG1 (x31 / confident-41
-				:ARG2 (x35 / system
-					:mod (x34 / electoral)))
-			:ARG1 (x40 / influence-01
-				:ARG0 x27
-				:ARG0 (x41 / government-organization
-					:ARG0-of (g / govern-01))))))
+		:op2 (x28 / lose-02
+			:ARG1 (x25 / and
+				:op1 (x24 / more)
+				:op2 (x26 / more))
+			:ARG1 (x29 / confident-41
+				:ARG2 (x33 / system
+					:mod (x32 / electoral)
+					:ARG0-of (x38 / influence-01
+						:ARG0 (x39 / government-organization
+							:ARG0-of (g / govern-01))))))))
 
 # ::id 9
-# ::snt Accordingly, these politicians may be in real trouble this year
+# ::snt Accordingly , these politicians may be in real trouble this year
 (x5 / possible
 	:domain (x9 / trouble
 		:mod (x8 / real))
@@ -195,7 +203,7 @@
 		:ARG0-of (x7 / warn-01)))
 
 # ::id 11
-# ::snt True, 96 % of all incumbents were re-elected
+# ::snt True , 96 % of all incumbents were re-elected
 (x9 / re-elect
 	:ARG1 (x1 / true-41)
 	:ARG2 (xap0 / percentage-entity
@@ -204,7 +212,7 @@
 			:quant (x6 / all))))
 
 # ::id 12
-# ::snt But a few days after the election, political analyst Alan Baron offered a revelation : For the first time since World War II the average re-election margin of House incumbents from both parties declined from the previous election
+# ::snt But a few days after the election , political analyst Alan Baron offered a revelation : For the first time since World War II the average re-election margin of House incumbents from both parties declined from the previous election
 (x13 / offer-01
 	:null_edge (x1 / contrast-01)
 	:time (x5 / after
@@ -239,50 +247,44 @@
 						:null_edge "II"))))))
 
 # ::id 13
-# ::snt Normally, when Republicans have a good year, Democrats ' average victory margin declines, and vice versa
-(x17 / and
-	:op2 (x14 / margin
+# ::snt Normally , when Republicans have a good year , Democratsaverage victory margin declines , and vice versa
+(x15 / and
+	:op2 (x12 / margin
 		:mod (x1 / normal)
 		:condition (x5 / have-03
 			:time (x8 / year
 				:mod (x7 / good)))
-		:poss (x10 / political-party
-			:name (n / name
-				:op1 "Democrats"))
-		:mod (x13 / win-01
+		:mod (x11 / win-01
 			:op (v / victory)
-			:mod (x12 / average-01))
-		:mod (x19 / versa)))
+			:mod (x10 / world-region
+				:name (n / name
+					:op1 "Democratsaverage")))
+		:mod (x17 / versa)))
 
 # ::id 14
-# ::snt But in 1990, voters declared a plague on both parties ' houses, underscoring what polls and other focus groups demonstrate : The disaffection with politicians is n't ideological
+# ::snt But in 1990 , voters declared a plague on both partieshouses , underscoring what polls and other focus groups demonstrate : The disaffection with politicians is not ideological
 (x1 / contrast-01
 	:ARG2 (x6 / declare-01
 		:time (x3 / date-entity
 			:year 1990)
 		:ARG0 (x5 / person
 			:ARG0-of (v / vote-01))
-		:name (x7 / name
-			:op1 "a")
 		:ARG1 (x8 / plague-01)
-		:ARG0 (x13 / government-organization
-			:name (n / name
-				:op1 "houses")
-			:poss (x11 / party
-				:mod (x10 / both)))
-		:ARG0-of (x15 / underscore-01
-			:ARG2 (x22 / demonstrate-01
-				:ARG1 (x18 / and
-					:op1 (x17 / poll-01)
-					:op2 (x21 / group
-						:mod (x19 / other)
-						:ARG0-of (x20 / focus-01)))
-				:ARG1 (x30 / ideology
-					:domain (x25 / disaffection
-						:ARG1 (x27 / politician)))))))
+		:ARG2 (x11 / partieshouse
+			:mod (x10 / both))
+		:ARG0-of (x13 / underscore-01
+			:ARG2 (x20 / demonstrate-01
+				:ARG1 (x16 / and
+					:op1 (x15 / poll-01)
+					:op2 (x19 / group
+						:mod (x17 / other)
+						:ARG0-of (x18 / focus-01)))
+				:ARG1 (x28 / ideology
+					:domain (x23 / disaffection
+						:ARG1 (x25 / politician)))))))
 
 # ::id 15
-# ::snt Voters do n't want more conservative or more liberal representation ; disgust many voters want more responsive representation
+# ::snt Voters do not want more conservative or more liberal representation ; disgust many voters  want more responsive representation
 (x / xconcept
 	:x (x11 / and
 		:op1 (x4 / want-01
@@ -304,54 +306,55 @@
 		:op2 (x12 / disgust-01)))
 
 # ::id 16
-# ::snt This helps explain the strong momentum for limiting lawmakers ' terms, a sentiment fueled by the recent disclosures of the House banking and restaurant fiascos
+# ::snt This helps explain the strong momentum for limiting lawmakersterms , a sentiment fueled by the recent disclosures of the House banking and restaurant fiascos
 (x2 / help-01
 	:ARG0 (x1 / this)
 	:ARG1 (x3 / explain-01
 		:ARG1 (x6 / momentum
 			:mod (x5 / strong)
 			:topic (x8 / limit-01
-				:ARG1 (x11 / term))
-			:ARG1-of (x15 / fuel-01
-				:ARG1 (x14 / sentiment)
-				:ARG0 (x19 / disclosure
-					:time (x18 / recent)
-					:ARG0 (x24 / and
-						:op1 (x23 / bank-01
-							:mod (x22 / have-org-role-91
+				:ARG1 (x9 / lawmakersterm))
+			:ARG1-of (x13 / fuel-01
+				:ARG1 (x12 / sentiment)
+				:ARG0 (x17 / disclosure
+					:time (x16 / recent)
+					:ARG0 (x22 / and
+						:op1 (x21 / bank-01
+							:mod (x20 / have-org-role-91
 								:ARG1 (g / government-organization
 									:name (n / name
 										:op1 "House"))))
-						:op2 (x26 / fiasco
-							:ARG1 (x25 / restaurant))))))))
+						:op2 (x24 / fiasco
+							:ARG1 (x23 / restaurant))))))))
 
 # ::id 17
-# ::snt Term limits would accomplish few of their proponents ' goals -- more-independentminded and less-beholden lawmakers -- and would result in many unintended consequences-far more power accruing to unelected staff and special-interest lobbyists
-(x17 / and
+# ::snt Term limits would accomplish few of their proponentsgoals more-independentminded and less-beholden lawmakers and would result in many unintended consequences-far more power accruing to unelected staff and special-interest lobbyists
+(x13 / and
 	:op1 (x4 / accomplish-01
 		:ARG0 (x2 / limit-01
 			:mod (x1 / term))
-		:ARG1 (x13 / and
+		:ARG1 (x10 / and
 			:op1 (x5 / few)
-			:op2 (x14 / less-beholden)
+			:null_edge (x8 / null_tag)
+			:op2 (x11 / less-beholden)
 			:op1 (xap0 / detect-01
-				:mod (x12 / more-independentminded))))
-	:op2 (x19 / result-01
-		:ARG1 (x22 / intend-01
+				:mod (x9 / more-independentminded))))
+	:op2 (x15 / result-01
+		:ARG1 (x18 / intend-01
 			:polarity -
-			:quant (x21 / many))
-		:ARG1 (x25 / power
-			:mod (x24 / more)
-			:ARG0-of (x26 / accrue
-				:ARG2 (x30 / and
-					:op1 (x29 / person
+			:quant (x17 / many))
+		:ARG1 (x21 / power
+			:mod (x20 / more)
+			:ARG0-of (x22 / accrue
+				:ARG2 (x26 / and
+					:op1 (x25 / person
 						:ARG2-of (s / staff-01)
-						:mod (x28 / unelected))
-					:op2 (x32 / lobbyist
-						:mod (x31 / special-interest)))))))
+						:mod (x24 / unelected))
+					:op2 (x28 / lobbyist
+						:mod (x27 / special-interest)))))))
 
 # ::id 18
-# ::snt But that's of little concern to frustrated voters who are lashing out because nothing else seems to work
+# ::snt But that is of little concern to frustrated voters who are lashing out because nothing else seems to work
 (x1 / contrast-01
 	:ARG2 (x2 / that)
 	:ARG2 (x6 / concern-01
@@ -366,7 +369,7 @@
 						:ARG1 (x19 / work-01)))))))
 
 # ::id 19
-# ::snt Plainly, Congress can best address this frustration by doing a better job on the issues bothering people-health care, taxes, jobs
+# ::snt Plainly , Congress can best address this frustration by doing a better job on the issues bothering people-health care , taxes , jobs
 (x4 / possible
 	:domain (x6 / address-01
 		:mod (x1 / plainly)
@@ -387,7 +390,7 @@
 							:ARG1 (x23 / job))))))))
 
 # ::id 20
-# ::snt But there's little consensus among either politicians or the voters either politicians or the voters on these issues
+# ::snt But there is little consensus among either politicians or the voters either politicians or the voters  on these issues
 (x1 / contrast-01
 	:ARG2 (x5 / consensus
 		:degree (x4 / little)
@@ -405,7 +408,7 @@
 	:domain (x2 / progress-01))
 
 # ::id 22
-# ::snt Congress can make some symbolic moves, however
+# ::snt Congress can make some symbolic moves , however
 (x2 / possible
 	:domain (x3 / make-02
 		:ARG1 (x6 / move-02
@@ -416,7 +419,7 @@
 			:ARG1-of (x5 / symbolize-01))))
 
 # ::id 23
-# ::snt Congress can eliminate Congress more indefensible perquisites, such as the free prescription drugs
+# ::snt Congress  can eliminate Congress  more indefensible perquisites , such as the free prescription drugs
 (x2 / possible
 	:domain (x3 / eliminate-01
 		:ARG0 (x1 / government-organization
@@ -433,7 +436,7 @@
 				:mod (x13 / prescribe-02)))))
 
 # ::id 24
-# ::snt More important, lawmakers ought to overhaul the disgraceful campaign-finance system to make congressional elections more competitive, and to reduce the role of money and influence peddlers in campaigns
+# ::snt More important , lawmakers ought to overhaul the disgraceful campaign-finance system to make congressional elections more competitive , and to reduce the role of money and influence peddlers in campaigns
 (x5 / ought
 	:null_edge (x2 / important
 		:degree (x1 / more))
@@ -458,7 +461,7 @@
 					:ARG1 (x30 / campaign-01))))))
 
 # ::id 25
-# ::snt Granted, incumbents have little incentive to work against House incumbents from both parties narrow self-interest
+# ::snt Granted , incumbents have little incentive to work against House incumbents from both parties  narrow self-interest
 (x4 / have-03
 	:ARG1 (x1 / grant-01)
 	:ARG0 (x3 / incumbent)
@@ -507,27 +510,27 @@
 				:mod (x13 / cozy)))))
 
 # ::id 28
-# ::snt The nexus of many of the problems -- entrenched arrogance, more concern for powerful interests than average citizens and the obscene preoccupation with campaign contributions -- is the committee system
-(x31 / system
-	:domain (x2 / nexus
-		:ARG1 (x7 / problem
-			:quant (x4 / many)
-			:topic (x20 / and
-				:op1 (x10 / arrogance
-					:mod (x9 / entrench-01))
-				:op2 (x13 / concern-01
-					:degree (x12 / more)
-					:ARG1 (x16 / interest
-						:mod (x15 / powerful)
-						:poss (x19 / citizen
-							:ARG1-of (x18 / average-01))))
-				:op1 (x26 / contribute-01
-					:mod (x22 / obscene)
-					:ARG0 (x25 / campaign-01)))))
-	:ARG0-of (x30 / committee))
+# ::snt The nexus of many of the problems entrenched arrogance , more concern for powerful interests than average citizens and the obscene preoccupation with campaign contributions is the committee system
+(x2 / nexus
+	:ARG1 (x7 / problem
+		:quant (x4 / many)
+		:poss (x29 / system
+			:purpose (x19 / and
+				:op1 (x9 / arrogance
+					:ARG1-of (x8 / entrench-01))
+				:op2 (x12 / concern-01
+					:degree (x11 / more)
+					:ARG1 (x15 / interest
+						:mod (x14 / powerful)
+						:poss (x18 / citizen
+							:ARG1-of (x17 / average-01))))
+				:op1 (x25 / contribute-01
+					:mod (x21 / obscene)
+					:ARG0 (x24 / campaign-01)))
+			:ARG0-of (x28 / committee))))
 
 # ::id 29
-# ::snt A powerful antidote would be to limit committee service, which would have few of the political and constitutional drawbacks of term limits
+# ::snt A powerful antidote would be to limit committee service , which would have few of the political and constitutional drawbacks of term limits
 (x3 / antidote
 	:mod (x2 / powerful)
 	:ARG0-of (x7 / limit-01
@@ -542,7 +545,7 @@
 						:mod (x22 / term)))))))
 
 # ::id 30
-# ::snt The case is well articulated by two of the most experienced congressional observers : Richard Fenno, a University of Rochester political scientist and author of numerous books on Congress, and Charles Ferris, an attorney who served as chief counsel to both former Senate Majority Leader Mike Mansfield and former House Speaker Thomas P. O'Neill
+# ::snt The case is well articulated by two of the most experienced congressional observers : Richard Fenno , a University of Rochester political scientist and author of numerous books on Congress , and Charles Ferris , an attorney who served as chief counsel to both former Senate Majority Leader Mike Mansfield and former House Speaker Thomas P. O'Neill
 (x5 / articulate
 	:ARG1 (x2 / case)
 	:null_edge (x13 / person
@@ -602,7 +605,7 @@
 								:ARG0-of (x54 / speaker)))))))))
 
 # ::id 31
-# ::snt 
+# ::snt While both men are deeply dismayed at the current state of Congress , both men  see term limits as a cure worse than the illness
 (x16 / see-01
 	:concession (x6 / dismayed
 		:ARG1 (x3 / man
@@ -622,23 +625,23 @@
 		:mod (x21 / cure-01)))
 
 # ::id 32
-# ::snt " Term limits really hit at democracy, " says Prof. Fenno
-(x10 / say-01
-	:ARG1 (x5 / hit-01
-		:ARG0 (x3 / limit-01
-			:mod (x2 / term))
-		:mod (x4 / really)
-		:ARG1 (x7 / democracy))
-	:ARG0 (x12 / person
+# ::snt Term limits really hit at democracy , says Prof. Fenno
+(x8 / say-01
+	:ARG1 (x4 / hit-01
+		:ARG0 (x2 / limit-01
+			:mod (x1 / term))
+		:mod (x3 / really)
+		:ARG1 (x6 / democracy))
+	:ARG0 (x10 / person
 		:name (n / name
 			:op1 "Fenno")
-		:null_edge (x11 / prof.)))
+		:null_edge (x9 / prof.)))
 
 # ::id 33
-# ::snt Argues Mr. Ferris : " Voters never should be prevented from electing a person who disgust many voters think is the best representative of that community .
-(x8 / recommend-01
-	:ARG1 (x10 / prevent-01
-		:ARG1 (x6 / voters
+# ::snt Argues Mr. Ferris : Voters never should be prevented from electing a person who disgust many voters  think is the best representative of that community
+(x7 / recommend-01
+	:ARG1 (x9 / prevent-01
+		:ARG1 (x5 / vote-01
 			:op1 (x1 / newspaper
 				:name (n / name
 					:op1 "Argues"
@@ -646,22 +649,21 @@
 				:ARG0-of (x3 / city
 					:name (n1 / name
 						:op1 "Ferris"))))
-		:ARG3 (x12 / elect-01
-			:ARG1 (x14 / person
-				:ARG0-of (x23 / person
-					:ARG0-of (r / represent-01)
-					:ARG1 (x16 / disgust-01
-						:ARG0-of (x19 / think-01
-							:ARG0 (x18 / person
-								:ARG0-of (v / vote-01)
-								:quant (x17 / many))))
-					:mod (x22 / good
-						:degree (m / most))
-					:ARG1 (x26 / community
-						:mod (x25 / that)))))))
+		:ARG3 (x11 / elect-01
+			:ARG1 (x13 / person
+				:ARG0-of (x18 / think-01
+					:ARG1 (x15 / disgust-01)
+					:ARG0 (x17 / person
+						:ARG0-of (v / vote-01)
+						:quant (x16 / many))
+					:ARG1 (x22 / represent-01
+						:mod (x21 / good
+							:degree (m / most))
+						:ARG1 (x25 / community
+							:mod (x24 / that))))))))
 
 # ::id 34
-# ::snt But disgust many voters see a lot of virtue in limiting committee assignments
+# ::snt But disgust many voters  see a lot of virtue in limiting committee assignments
 (x1 / contrast-01
 	:ARG2 (x2 / disgust-01
 		:ARG0-of (x5 / see-01
@@ -675,50 +677,51 @@
 					:ARG0 (x12 / committee))))))
 
 # ::id 35
-# ::snt " This really would challenge these guys to shake up the system, " says Mr. Fenno, noting that the power of interest groups is centered in committees
-(x15 / say-01
-	:ARG1 (x5 / challenge-01
-		:ARG0 (x2 / this)
-		:mod (x3 / really)
-		:ARG1 (x7 / guy)
-		:ARG1 (x9 / shake-01
-			:ARG1 (x12 / system)))
-	:ARG0 (x17 / person
+# ::snt This really would challenge these guys to shake up the system , says Mr. Fenno , noting that the power of interest groups is centered in committees
+(x13 / say-01
+	:ARG1 (x4 / challenge-01
+		:ARG0 (x1 / this)
+		:mod (x2 / really)
+		:ARG1 (x6 / guy)
+		:ARG1 (x8 / shake-01
+			:ARG1 (x11 / system)))
+	:ARG1 (x15 / person
 		:name (n / name
 			:op1 "Fenno")
-		:null_edge (x16 / null_tag)
-		:ARG0-of (x19 / note-01
-			:ARG1 (x27 / center-01
-				:ARG1 (x22 / power
-					:poss (x25 / group
-						:ARG0-of (x24 / interest)))
-				:location (x29 / committee)))))
+		:null_edge (x14 / null_tag)
+		:ARG0-of (x17 / note-01
+			:ARG0 x15
+			:ARG1 (x25 / center-01
+				:ARG1 (x20 / power
+					:poss (x23 / group
+						:ARG0-of (x22 / interest)))
+				:location (x27 / committee)))))
 
 # ::id 36
-# ::snt Mr. Ferris believes this would " put a vitality in the system " while not resulting, unlike overall term limits, in " a bunch of neophytes who 'd be more dependent on staff and lobbyists .
+# ::snt Mr. Ferris believes this would put a vitality in the system while not resulting , unlike overall term limits , in a bunch of neophytes who would be more dependent on staff and lobbyists
 (x3 / believe-01
 	:ARG0 (x1 / mr.
 		:mod (x2 / city
 			:name (n / name
 				:op1 "Ferris")))
-	:ARG1 (x4 / this)
-	:ARG1 (x7 / put-01
-		:ARG1 (x9 / vitality)
-		:ARG2 (x12 / system)
-		:time (x16 / result-01
-			:ARG1 (x21 / thing
+	:ARG1 (x6 / put-01
+		:ARG0 (x4 / this)
+		:ARG1 (x8 / vitality)
+		:ARG2 (x11 / system)
+		:condition (x14 / result-01
+			:ARG1 (x19 / thing
 				:ARG2-of (l / limit-01)
-				:mod (x19 / overall)
-				:mod (x20 / term))
-			:location-of (x33 / depend-01
-				:degree (x32 / more)
-				:ARG1 (x36 / and
-					:op1 (x35 / person
+				:mod (x17 / overall)
+				:mod (x18 / term))
+			:location-of (x30 / depend-01
+				:degree (x29 / more)
+				:ARG1 (x33 / and
+					:op1 (x32 / person
 						:ARG2-of (s / staff-01))
-					:op2 (x37 / lobbyist))))))
+					:op2 (x34 / lobbyist))))))
 
 # ::id 37
-# ::snt Mr. Ferris notes that the current system, in which a lawmaker gets a cherished committee assignment in a lawmaker first or second term and then stays there for the rest of his tenure, breeds staleness
+# ::snt Mr. Ferris notes that the current system , in which a lawmaker gets a cherished committee assignment in a lawmaker  first or second term and then stays there for the rest of his tenure , breeds staleness
 (x3 / note-01
 	:ARG0 (x1 / mr.
 		:source (x2 / city
@@ -740,39 +743,39 @@
 		:ARG1 (x37 / staleness)))
 
 # ::id 38
-# ::snt " Technology and economics and world dynamics are moving so quickly, but many of these members, while very bright, are locked into outdated beliefs and approaches, " Charles Ferris says
-(x34 / say-01
-	:ARG1 (x9 / move-01
-		:path (x3 / and
-			:op2 (x4 / economics)
-			:op2 (x5 / and
-				:op1 (x2 / technology)
-				:op2 (x7 / dynamic
-					:mod (x6 / world))))
-		:manner (x11 / quick
-			:degree (x10 / so))
-		:path (x24 / lock-03
-			:ARG2 (x21 / bright
-				:degree (x20 / very))
-			:ARG2 (x28 / and
-				:op1 (x27 / thing
+# ::snt Technology and economics and world dynamics are moving so quickly , but many of these members , while very bright , are locked into outdated beliefs and approaches , Charles Ferris  says
+(x32 / say-01
+	:ARG1 (x8 / move-01
+		:path (x2 / and
+			:op2 (x3 / economics)
+			:op2 (x4 / and
+				:op1 (x1 / technology)
+				:op2 (x6 / dynamic
+					:mod (x5 / world))))
+		:manner (x10 / quick
+			:degree (x9 / so))
+		:path (x23 / lock-03
+			:ARG2 (x20 / bright
+				:degree (x19 / very))
+			:ARG2 (x27 / and
+				:op1 (x26 / thing
 					:ARG1-of (b / believe-01)
-					:mod (x26 / outdated))
-				:op2 (x29 / approach-02))
+					:mod (x25 / outdated))
+				:op2 (x28 / approach-02))
 			:ARG1 (xap0 / person
-				:quant (x14 / many)
-				:ARG0-of (x17 / have-org-role-91
+				:quant (x13 / many)
+				:ARG0-of (x16 / have-org-role-91
 					:ARG2 (m / member)))))
-	:ARG0 (x32 / person
+	:ARG0 (x30 / person
 		:name (n / name
 			:op1 "Charles")
-		:source (x33 / city
+		:source (x31 / city
 			:name (n1 / name
 				:op1 "Ferris"))))
 
 # ::id 39
-# ::snt If lawmakers had to change areas of expertise every three or four terms, " less-beholden lawmakers would n't have the luxury of being intellectually lazy .
-(x20 / have-03
+# ::snt If lawmakers had to change areas of expertise every three or four terms , less-beholden lawmakers  would not have the luxury of being intellectually lazy
+(x19 / have-03
 	:condition (x5 / change-01
 		:ARG2 (x6 / area
 			:mod (x8 / expert-41))
@@ -780,14 +783,14 @@
 		:ARG1 (x13 / term
 			:mod (x9 / every
 				:ARG2 4)))
-	:ARG0 (x17 / lawmaker
-		:null_edge (x16 / less-beholden))
-	:ARG1 (x22 / luxury
-		:mod (x26 / lazy
-			:mod (x25 / intellectually))))
+	:ARG0 (x16 / lawmaker
+		:null_edge (x15 / less-beholden))
+	:ARG1 (x21 / luxury
+		:mod (x25 / lazy
+			:mod (x24 / intellectually))))
 
 # ::id 40
-# ::snt Currently, the Intelligence committees in both houses and the House Budget Committee limit members to six or eight years
+# ::snt Currently , the Intelligence committees in both houses and the House Budget Committee limit members to six or eight years
 (x14 / limit-01
 	:time (x1 / current)
 	:ARG1 (x4 / intelligence)
@@ -811,7 +814,7 @@
 			:quant 8)))
 
 # ::id 41
-# ::snt Why should n't the Commerce committees and the tax-writing and appropriations panels be subjected to the same limits
+# ::snt Why should not the Commerce committees and the tax-writing and appropriations panels be subjected to the same limits ?
 (x2 / recommend-01
 	:ARG1 (x14 / subject-01
 		:ARG1 (x7 / and
@@ -826,21 +829,22 @@
 			:ARG1-of (x17 / same-41))))
 
 # ::id 42
-# ::snt Any loss of legislative expertise would be more than offset by new ideas, new receptivity -- new thinking
+# ::snt Any loss of legislative expertise would be more than offset by new ideas , new receptivity new thinking
 (x10 / offset-01
 	:ARG1 (x5 / expert-41
 		:ARG1 (x2 / loss
 			:mod (x1 / any))
 		:ARG0-of (x4 / legislate-01))
 	:degree (x8 / more)
-	:ARG2 (x19 / think-01
+	:ARG0 (x13 / idea
 		:mod (x12 / new)
-		:ARG0 (x16 / receptivity
+		:mod (x16 / receptivity
 			:mod (x15 / new))
-		:mod (x18 / new)))
+		:mod (x18 / think-01
+			:mod (x17 / new))))
 
 # ::id 43
-# ::snt There 'd be one other incalculable benefit
+# ::snt There would be one other incalculable benefit
 (x7 / benefit-01
 	:quant 1
 	:mod (x5 / other)

@@ -1,5 +1,5 @@
 # ::id 1
-# ::snt The Maoist Shining Path guerrillas who dominate Peru's Upper Huallaga River Valley have brought Path guerrillas who dominate Peru's Upper Huallaga River Valley own law and order to a cocaine-corrupted, violence-ridden region
+# ::snt The Maoist Shining Path guerrillas who dominate Peru's Upper Huallaga River Valley have brought Path guerrillas who dominate Peru's Upper Huallaga River Valley  own law and order to a cocaine-corrupted , violence-ridden region
 (x15 / bring-01
 	:ARG0 (x5 / guerrilla
 		:mod (x2 / maoism)
@@ -40,105 +40,103 @@
 				:mod (x32 / cocaine-corrupted)))))
 
 # ::id 2
-# ::snt With a system Path guerrillas who dominate Peru's Upper Huallaga River Valley call " revolutionary justice, " Path guerrillas who dominate Peru's Upper Huallaga River Valley have banned drug abuse, prostitution, homosexuality and thievery from the villages they control
-(x31 / ban-01
-	:prep-under (x3 / system
-		:ARG0-of (x14 / call-01
-			:ARG0 (x5 / guerrilla
-				:mod (x4 / path)
-				:ARG0-of (x7 / dominate-01
-					:ARG1 (x13 / country
-						:name (n4 / name
-							:op1 "Valley")
-						:poss (x8 / country
-							:name (n5 / name
-								:op1 "Peru"))
-						:null_edge (x10 / country
-							:name (n6 / name
-								:op1 "Upper"))
-						:null_edge (x11 / country
-							:name (n7 / name
-								:op1 "Huallaga")))))
-			:ARG1 (x17 / justice
-				:mod (x16 / revolution))))
-	:ARG0 (x21 / guerrilla
-		:mod (x20 / path)
-		:ARG0-of (x23 / dominate-01
-			:ARG1 (x29 / country
+# ::snt With a system Path guerrillas who dominate Peru's Upper Huallaga River Valley  call revolutionary justice , Path guerrillas who dominate Peru's Upper Huallaga River Valley  have banned drug abuse , prostitution , homosexuality and thievery from the villages they control
+(x29 / ban-01
+	:condition (x14 / call-02
+		:ARG0 (x5 / guerrilla
+			:mod (x3 / system)
+			:mod (x4 / path)
+			:ARG0-of (x7 / dominate-01
+				:ARG1 (x13 / country
+					:name (n1 / name
+						:op1 "Valley")
+					:poss (x8 / country
+						:name (n5 / name
+							:op1 "Peru"))
+					:null_edge (x10 / country
+						:name (n6 / name
+							:op1 "Upper"))
+					:null_edge (x11 / country
+						:name (n7 / name
+							:op1 "Huallaga")))))
+		:ARG1 (x16 / justice
+			:mod (x15 / revolution)))
+	:ARG0 (x19 / guerrilla
+		:mod (x18 / path)
+		:ARG0-of (x21 / dominate-01
+			:ARG1 (x27 / country
 				:name (n / name
 					:op1 "Valley")
-				:poss (x24 / country
-					:name (n1 / name
-						:op1 "Peru"))
-				:null_edge (x26 / country
+				:poss (x22 / country
 					:name (n2 / name
-						:op1 "Upper"))
-				:null_edge (x27 / country
+						:op1 "Peru"))
+				:null_edge (x24 / country
 					:name (n3 / name
+						:op1 "Upper"))
+				:null_edge (x25 / country
+					:name (n4 / name
 						:op1 "Huallaga")))))
-	:ARG1 (x38 / and
-		:op1 (x33 / abuse-01
-			:ARG1 (x32 / drug))
-		:op2 (x35 / prostitute-01)
-		:op2 (x37 / homosexuality)
-		:op2 (x39 / thievery)
-		:op1 (x42 / village
-			:ARG0-of (x44 / control-01))))
+	:ARG1 (x36 / and
+		:op1 (x31 / abuse-01
+			:ARG1 (x30 / drug))
+		:op2 (x33 / prostitute-01)
+		:op2 (x35 / homosexuality)
+		:op2 (x37 / thievery)
+		:op1 (x40 / village
+			:ARG0-of (x42 / control-01))))
 
 # ::id 3
-# ::snt " Two years ago you could not travel the roads without being held up, but the ` companeros ' put an end to that, " said cab driver David Nicolas, referring to the guerrillas by the Spanish term for comrades
-(x28 / say-01
-	:ARG1 (x6 / possible
-		:domain (x8 / travel-01
-			:ARG0 (x5 / you)
-			:ARG1 (x10 / road)
-			:manner (x13 / hold-04)
-			:condition (x21 / put-01
-				:ARG0 x5
-				:ARG0 (x19 / companero)
-				:ARG1 (x23 / end-01)
-				:ARG2 (x25 / that))
+# ::snt Two years ago you could not travel the roads without being held up , but the companeros put an end to that , said cab driver David Nicolas , referring to the guerrillas by the Spanish term for comrades
+(x24 / say-01
+	:ARG1 (x5 / possible)
+	:ARG1 (x15 / contrast-01
+		:ARG1 (x7 / travel-01
+			:ARG0 (x4 / you)
+			:ARG1 (x9 / road)
+			:manner (x12 / hold-04)
 			:time (xap0 / before
-				:quant (x2 / date-entity))))
-	:ARG1 (x16 / contrast-01)
-	:ARG0 (x31 / newspaper
-		:name (n / name
+				:quant (x1 / date-entity)))
+		:ARG2 (x18 / put-01
+			:ARG0 x4
+			:ARG0 (x17 / companero)
+			:ARG1 (x20 / end-01)
+			:ARG2 (x22 / that)))
+	:ARG1 (x30 / refer-01
+		:ARG0 (x27 / name
 			:op1 "David"
-			:op2 "Nicolas")
-		:ARG0-of (x30 / person
-			:ARG0-of (d / drive-01)
-			:ARG1 (x29 / cab)))
-	:ARG1 (x34 / refer-01
-		:ARG0 x31
-		:ARG0 (x37 / guerrilla)
-		:ARG1 (x43 / comrade)))
+			:op2 "Nicolas"
+			:ARG0-of (x25 / cab)
+			:ARG0-of (x26 / person
+				:ARG0-of (d / drive-01)))
+		:ARG0 (x33 / guerrilla)
+		:ARG1 (x39 / comrade)))
 
 # ::id 4
-# ::snt " Path guerrillas who dominate Peru's Upper Huallaga River Valley killed a few bandits and the rest got the message .
-(x16 / and
-	:op1 (x12 / kill-01
-		:ARG0 (x3 / guerrilla
-			:mod (x2 / path)
-			:ARG0-of (x5 / dominate-01
-				:ARG1 (x11 / country
+# ::snt Path guerrillas who dominate Peru's Upper Huallaga River Valley  killed a few bandits and the rest got the message
+(x15 / and
+	:op1 (x11 / kill-01
+		:ARG0 (x2 / guerrilla
+			:mod (x1 / path)
+			:ARG0-of (x4 / dominate-01
+				:ARG1 (x10 / country
 					:name (n / name
 						:op1 "Valley")
-					:poss (x6 / country
+					:poss (x5 / country
 						:name (n1 / name
 							:op1 "Peru"))
-					:null_edge (x8 / country
+					:null_edge (x7 / country
 						:name (n2 / name
 							:op1 "Upper"))
-					:null_edge (x9 / country
+					:null_edge (x8 / country
 						:name (n3 / name
 							:op1 "Huallaga")))))
-		:ARG1 (x15 / bandit
-			:null_edge (x14 / few)))
-	:op2 (x21 / message-01
-		:ARG0 (x18 / rest)))
+		:ARG1 (x14 / bandit
+			:null_edge (x13 / few)))
+	:op2 (x20 / message-01
+		:ARG0 (x17 / rest)))
 
 # ::id 5
-# ::snt Much of the appeal of the rebels is rooted in the rebels reputation for almost puritanical honesty
+# ::snt Much of the appeal of the rebels is rooted in the rebels  reputation for almost puritanical honesty
 (x9 / root-02
 	:ARG2 (x4 / appeal-01
 		:ARG1 (x7 / person
@@ -151,7 +149,7 @@
 				:degree (x15 / almost)))))
 
 # ::id 6
-# ::snt Shopkeepers say the guerrillas never fail to pay for the food and supplies Shopkeepers acquire in the villages
+# ::snt Shopkeepers say the guerrillas never fail to pay for the food and supplies Shopkeepers  acquire in the villages
 (x2 / say-01
 	:ARG0 (x1 / shopkeeper)
 	:ARG1 (x6 / fail-01
@@ -179,14 +177,14 @@
 				:ARG1 (x19 / pay-01)))))
 
 # ::id 8
-# ::snt In a rare conversation with reporters, a Shining Path political officer, who spoke only on condition the local police who take what they want without ever offering to pay not be identified, gave an example of the kind of law the guerrillas have laid down : " Do not steal so much as a needle or thread and return what cab driver David Nicolas borrow .
+# ::snt In a rare conversation with reporters , a Shining Path political officer , who spoke only on condition the local police who take what they want without ever offering to pay  not be identified , gave an example of the kind of law the guerrillas have laid down : Do not steal so much as a needle or thread and return what cab driver David Nicolas  borrow
 (x / xconcept
-	:x (x12 / have-org-role-91
-		:ARG2 (o / officer)
-		:ARG1 (x10 / path
-			:ARG0-of (x9 / shine))
-		:ARG1 (x11 / politics))
 	:x (x15 / speak-01
+		:ARG1 (x12 / have-org-role-91
+			:ARG2 (o / officer)
+			:ARG1 (x10 / path
+				:ARG0-of (x9 / shine))
+			:ARG1 (x11 / politics))
 		:ARG4 (x18 / condition
 			:mod (x16 / only))
 		:ARG1 (x21 / police
@@ -195,28 +193,27 @@
 				:ARG1 (x29 / offer-01
 					:time (x28 / ever)
 					:ARG1 (x31 / pay-01
-						:ARG1 (x34 / identify-01
-							:ARG1 (x38 / example
-								:mod (x43 / law
-									:mod (x41 / kind
-										:ARG1-of (x47 / lay-02
-											:ARG0 (x45 / guerrilla)
-											:ARG2 (x61 / and
-												:op1 (x53 / steal-01
-													:ARG1 (x59 / or
-														:degree (x55 / much
-															:degree (x54 / so))
-														:op1 (x58 / needle)
-														:op2 (x60 / thread)))
-												:op2 (x62 / return-01
-													:ARG1 (x68 / borrow-01
-														:ARG0 (x66 / newspaper
-															:name (n / name
-																:op1 "David"
-																:op2 "Nicolas")
-															:ARG0-of (x65 / person
-																:ARG0-of (d / drive-01)
-																:ARG1 (x64 / cab))))))))))))))))
+						:ARG2 (x60 / and
+							:op1 (x34 / identify-01
+								:ARG1 (x38 / example
+									:mod (x43 / law
+										:mod (x41 / kind
+											:ARG1-of (x47 / lay-02
+												:ARG0 (x45 / guerrilla))))
+									:null_edge (x52 / steal-01
+										:ARG1 (x58 / or
+											:mod (x53 / so)
+											:op1 (x57 / needle)
+											:op2 (x59 / thread)))))
+							:op2 (x61 / return-01
+								:ARG1 (x67 / borrow-01
+									:ARG0 (x65 / newspaper
+										:name (n / name
+											:op1 "David"
+											:op2 "Nicolas")
+										:ARG0-of (x64 / person
+											:ARG0-of (d / drive-01)
+											:ARG1 (x63 / cab)))))))))))
 	:x (xap0 / multi-sentence
 		:snt1 (x4 / converse-01
 			:mod (x3 / rare)
@@ -224,7 +221,7 @@
 				:ARG0-of (r / report-01)))))
 
 # ::id 9
-# ::snt In a nation where economic chaos reigns and few laws are respected, the Shining Path is setting down clear rules and making reporters stick
+# ::snt In a nation where economic chaos reigns and few laws are respected , the Shining Path is setting down clear rules and making reporters  stick
 (x22 / and
 	:op1 (x18 / set-03
 		:ARG1 (x8 / and
@@ -245,51 +242,48 @@
 				:ARG0-of (r / report-01)))))
 
 # ::id 10
-# ::snt " In a sense reporters enforce a hyper-Christian morality _ except reporters kill you if you break the rules, " said the Rev. Paul Feeley, a Canadian Roman Catholic priest working in Aucayacu, 255 miles northeast of Lima
-(x22 / say-01
-	:ARG1 (x6 / enforce-01
-		:manner (x4 / sense)
-		:ARG0 (x5 / person
-			:ARG0-of (r / report-01))
-		:ARG1 (x10 / _
-			:mod (x9 / morality
-				:mod (x8 / organization
-					:name (n4 / name
-						:op1 "hyper-Christian"))))
-		:condition (x13 / kill-01
-			:ARG2-of (x11 / except-00)
-			:ARG0 (x12 / person
-				:ARG0-of (r1 / report-01))
-			:ARG1 (x14 / you)
-			:condition (x17 / break-01
-				:ARG1 (x19 / rule))))
-	:ARG0 (x26 / person
-		:name (n / name
-			:op1 "Feeley")
-		:null_edge (x24 / rev.)
-		:null_edge (x25 / null_tag)
-		:null_edge (x32 / priest
-			:mod (x29 / country
-				:name (n1 / name
-					:op1 "Canada"))
-			:mod (x30 / country
-				:name (n2 / name
-					:op1 "Roman"))
-			:mod (x31 / religious-group
-				:name (n3 / name
-					:op1 "Catholic"))
-			:ARG0-of (x33 / work-01
-				:location (x35 / country
-					:name (n5 / name
-						:op1 "Aucayacu")
-					:location (x41 / country
-						:name (n6 / name
-							:op1 "Lima")
-						:null_edge (x39 / northeast
-							:null_edge (x38 / null_tag))))))))
+# ::snt In a sense reporters  enforce a hyper-Christian morality _ except reporters  kill you if you break the rules , said the Rev. Paul Feeley , a Canadian Roman Catholic priest working in Aucayacu , 255 miles northeast of Lima
+(x5 / enforce-01
+	:manner (x3 / sense)
+	:ARG0 (x4 / person
+		:ARG0-of (r / report-01))
+	:ARG1 (x9 / _
+		:mod (x8 / morality
+			:mod (x7 / organization
+				:name (n / name
+					:op1 "hyper-Christian"))))
+	:condition (x12 / kill-01
+		:ARG2-of (x10 / except-00)
+		:ARG0 (x11 / person
+			:ARG0-of (r1 / report-01))
+		:ARG1 (x13 / you)
+		:condition (x16 / break-01
+			:ARG1 (x18 / rule
+				:name (x23 / name
+					:op1 "Paul"
+					:op2 "Feeley"
+					:ARG0-of (x22 / rev.)
+					:ARG0-of (x30 / priest
+						:mod (x27 / country
+							:name (n1 / name
+								:op1 "Canada"))
+						:mod (x28 / country
+							:name (n2 / name
+								:op1 "Roman"))
+						:mod (x29 / religious-group
+							:name (n3 / name
+								:op1 "Catholic"))
+						:ARG0-of (x31 / work-01
+							:location (x33 / country
+								:name (n4 / name
+									:op1 "Aucayacu"))
+							:location (x39 / country
+								:name (n5 / name
+									:op1 "Lima")
+								:mod (x37 / northeast)))))))))
 
 # ::id 11
-# ::snt In late July four young homosexual men who rendezvoused at a bridge a few miles outside Tingo Maria, 35 miles south of here, were set upon and killed by the rebels
+# ::snt In late July four young homosexual men who rendezvoused at a bridge a few miles outside Tingo Maria , 35 miles south of here , were set upon and killed by the rebels
 (x29 / and
 	:op1 (x27 / set-03
 		:time (x2 / late
@@ -314,7 +308,7 @@
 			:ARG0-of (r / rebel-01))))
 
 # ::id 12
-# ::snt late July four young homosexual men who rendezvoused at a bridge a few miles outside Tingo Maria bodies were dumped into the river
+# ::snt late July four young homosexual men who rendezvoused at a bridge a few miles outside Tingo Maria  bodies were dumped into the river
 (x6 / man
 	:time (x1 / late
 		:op1 7)
@@ -361,62 +355,61 @@
 				:mod (x18 / semi-refined)))))
 
 # ::id 14
-# ::snt " People have had to discipline People, " said Raul Aranda, an agronomist in Tingo Maria, explaining the effects of " revolutionary justice .
-(x10 / say-01
-	:ARG1 (x6 / discipline
-		:domain (x2 / people)
-		:ARG1 (x7 / people))
-	:ARG0 (x11 / newspaper
-		:name (n / name
-			:op1 "Raul"
-			:op2 "Aranda")
-		:ARG0-of (x15 / agronomist
-			:location (x18 / country
-				:name (n1 / name
-					:op1 "Maria")
-				:null_edge (x17 / country
-					:name (n2 / name
-						:op1 "Tingo"))))
-		:ARG0-of (x20 / explain-01
-			:ARG1 (x22 / effect-01
-				:ARG1 (x26 / justice
-					:mod (x25 / revolution))))))
+# ::snt People have had to discipline People  , said Raul Aranda , an agronomist in Tingo Maria , explaining the effects of revolutionary justice
+(x8 / say-01
+	:ARG1 (x3 / person
+		:ARG0-of (h / have-org-role-91)
+		:ARG0 (x1 / people)
+		:ARG1 (x5 / discipline
+			:ARG0 (x9 / name
+				:op1 "Raul"
+				:op2 "Aranda"
+				:ARG0-of (x13 / agronomist
+					:location (x16 / country
+						:name (n / name
+							:op1 "Maria")
+						:null_edge (x15 / country
+							:name (n1 / name
+								:op1 "Tingo"))))
+				:ARG0-of (x18 / explain-01
+					:ARG1 (x20 / effect-01
+						:mod (x23 / justice
+							:mod (x22 / revolution))))))))
 
 # ::id 15
-# ::snt " In rural areas a man must be faithful to a man wife and is permitted to go drinking only once a week
-(x4 / area
-	:mod (x3 / rural)
-	:example (x14 / and
-		:op1 (x9 / faithful
-			:ARG0 (x6 / man))
-		:op2 (x13 / wife
-			:poss x6
-			:mod (x12 / man))
-		:op2 (x16 / permit-01
-			:ARG1 (x18 / go-02
-				:ARG1 (x19 / drink-01)
-				:frequency (xap0 / rate-entity-91
-					:mod (x20 / only)
-					:ARG2 (x23 / temporal-quantity
-						:unit (w / week)))))))
+# ::snt In rural areas a man must be faithful to a man  wife and is permitted to go drinking only once a week
+(x13 / and
+	:op1 (x8 / faithful
+		:location (x3 / area
+			:mod (x2 / rural))
+		:ARG0 (x5 / man)
+		:ARG2 (x12 / wife
+			:mod (x11 / man)))
+	:op2 (x15 / permit-01
+		:ARG1 (x17 / go-02
+			:ARG1 (x18 / drink-01)
+			:frequency (xap0 / rate-entity-91
+				:mod (x19 / only)
+				:ARG2 (x22 / temporal-quantity
+					:unit (w / week))))))
 
 # ::id 16
-# ::snt Violators are warned only once .
+# ::snt Violators are warned only once
 (x3 / warn-01
 	:mod (x4 / only
 		:mod (x5 / once)))
 
 # ::id 17
-# ::snt Villagers say Villagers are told, " The revolution has a thousand eyes and a thousand ears .
-(x10 / have-03
-	:ARG1 (x2 / say-01
-		:ARG0 (x1 / villager)
-		:ARG1 (x5 / tell-01
-			:ARG1 (x3 / villager)))
-	:ARG0 (x9 / revolution)
-	:ARG1 (x14 / and
-		:op1 (x13 / eye)
-		:op2 (x17 / ear)))
+# ::snt Villagers say Villagers  are told , The revolution has a thousand eyes and a thousand ears
+(x2 / say-01
+	:ARG0 (x1 / villager)
+	:ARG1 (x5 / tell-01
+		:ARG1 (x3 / villager)
+		:ARG1 (x8 / revolution)
+		:null_edge (x9 / have-03)
+		:ARG1 (x13 / and
+			:op1 (x12 / eye)
+			:op2 (x16 / ear))))
 
 # ::id 18
 # ::snt Peru's elected officials have painted the Shining Path insurgents as lunatic killers
@@ -436,7 +429,7 @@
 					:op1 "Peru")))))
 
 # ::id 19
-# ::snt In the bleak Andean highlands, where the rebels launched the rebels insurgency in May, 1980, the rebels have slain thousands of peasants in attacks on villages the rebels viewed as traitors to the rebel cause
+# ::snt In the bleak Andean highlands , where the rebels launched the rebels  insurgency in May , 1980 , the rebels  have slain thousands of peasants in attacks on villages the rebels  viewed as traitors to the rebel cause
 (x22 / slay-01
 	:location (x5 / highland
 		:mod (x3 / bleak)
@@ -463,20 +456,20 @@
 					:ARG0 (x37 / rebel-01))))))
 
 # ::id 20
-# ::snt But here in the jungle-cloaked Upper Huallaga Valley, the world's largest source of coca leaf, the Shining Path _ " Sendero Luminoso " in Spanish _ enjoys the support of tens of thousands of farmers because the rebels protect the rebels against a U.S.-funded coca eradication program
+# ::snt But here in the jungle-cloaked Upper Huallaga Valley , the world's largest source of coca leaf , the Shining Path _ Sendero Luminoso in Spanish _ enjoys the support of tens of thousands of farmers because the rebels protect the rebels  against a U.S.-funded coca eradication program
 (x / xconcept
 	:x (x1 / contrast-01)
-	:x (x30 / enjoy-01
+	:x (x28 / enjoy-01
 		:location (x2 / here
 			:location (x8 / country
-				:name (n / name
+				:name (n1 / name
 					:op1 "Valley")
 				:null_edge (x5 / jungle-cloaked)
 				:null_edge (x6 / country
-					:name (n2 / name
+					:name (n3 / name
 						:op1 "Upper"))
 				:location (x7 / country
-					:name (n3 / name
+					:name (n4 / name
 						:op1 "Huallaga"))
 				:null_edge (x14 / source
 					:mod (x13 / large
@@ -485,27 +478,30 @@
 					:ARG1 (x17 / leaf
 						:mod (x16 / coca)))))
 		:ARG0 (x21 / path
-			:ARG0-of (x20 / shine)
-			:null_edge (x24 / newspaper
-				:name (n1 / name
-					:op1 "Sendero"
-					:op2 "Luminoso")))
-		:ARG1 (x32 / support-01
-			:ARG0 (x38 / person
+			:ARG0-of (x20 / shine))
+		:ARG0 (x24 / country
+			:name (n / name
+				:op1 "Luminoso")
+			:null_edge (x23 / country
+				:name (n2 / name
+					:op1 "Sendero"))
+			:location (x27 / _))
+		:ARG1 (x30 / support-01
+			:ARG0 (x36 / person
 				:ARG0-of (f / farm-01)))
-		:ARG1-of (x39 / cause-01
-			:ARG0 (x42 / protect-01
-				:ARG0 (x41 / person
+		:ARG1-of (x37 / cause-01
+			:ARG0 (x40 / protect-01
+				:ARG0 (x39 / person
 					:ARG0-of (r / rebel-01))
-				:ARG1 (x44 / person
+				:ARG1 (x42 / person
 					:ARG0-of (r1 / rebel-01))
-				:ARG1 (x50 / program
-					:mod (x47 / u.s.-funded)
-					:mod (x48 / coca)
-					:topic (x49 / eradicate-01))))))
+				:ARG1 (x48 / program
+					:mod (x45 / u.s.-funded)
+					:mod (x46 / coca)
+					:topic (x47 / eradicate-01))))))
 
 # ::id 21
-# ::snt Although tens of thousands of farmers prohibit drug consumption, the guerrillas defend coca production as an important source of income for the peasants
+# ::snt Although tens of thousands of farmers  prohibit drug consumption , the guerrillas defend coca production as an important source of income for the peasants
 (x13 / defend-01
 	:condition (x7 / prohibit-01
 		:ARG2 (x6 / person
@@ -521,7 +517,7 @@
 			:poss (x24 / peasant))))
 
 # ::id 22
-# ::snt 
+# ::snt tens of thousands of farmers  only condition is that the semi-refined coca paste be sent out of Peru
 (x5 / person
 	:ARG0-of (f / farm-01)
 	:ARG1-of (x15 / send-01
@@ -534,45 +530,46 @@
 				:op1 "Peru"))))
 
 # ::id 23
-# ::snt The rebels charge coca farmers a " tax " of 10 to 15 percent on the earnings from the sale of coca farmers crops to drug traffickers, who process the leaf into paste and sell the Shining Path _ " Sendero Luminoso " in Spanish _ to Colombian cocaine dealers
+# ::snt The rebels charge coca farmers a tax of 10 to 15 percent on the earnings from the sale of coca farmers  crops to drug traffickers , who process the leaf into paste and sell the Shining Path _ Sendero Luminoso in Spanish _  to Colombian cocaine dealers
 (x3 / charge-05
 	:ARG1 (x2 / person
 		:ARG0-of (r / rebel-01))
 	:ARG2 (x5 / person
 		:ARG0-of (f / farm-01)
 		:mod (x4 / coca))
-	:ARG1 (x8 / tax-01
-		:ARG1 (x17 / earn-01
-			:quant (x14 / percentage-entity
-				:null_edge 10
-				:value 15)
-			:poss (x23 / person
+	:ARG1 (x7 / tax-01
+		:ARG1 (x12 / percentage-entity
+			:null_edge 10
+			:value 15)
+		:ARG1 (x15 / earn-01
+			:poss (x21 / person
 				:ARG0-of (f1 / farm-01)
-				:mod (x22 / coca
-					:beneficiary (x27 / person
-						:ARG0-of (t / traffic-00)
-						:ARG1 (x26 / drug)
-						:ARG1-of (x30 / process-01
-							:ARG1 (x32 / leaf)
-							:ARG2 (x34 / paste)
-							:purpose (x36 / sell-01
-								:location (x47 / _
-									:ARG0-of (x38 / newspaper
-										:name (n / name
-											:op1 "Shining"))
-									:null_edge (x39 / null_tag)
-									:mod (x46 / country
-										:name (n1 / name
-											:op1 "Spain")))
-								:ARG2 (x51 / person
-									:ARG0-of (d / deal-01)
-									:mod (x49 / country
-										:name (n2 / name
-											:op1 "Colombia"))
-									:ARG1 (x50 / cocaine))))))))))
+				:mod (x20 / coca)
+				:mod (x25 / person
+					:ARG0-of (t / traffic-00)
+					:ARG1 (x24 / drug)
+					:ARG1-of (x28 / process-01
+						:ARG1 (x30 / leaf)
+						:ARG2 (x32 / paste)
+						:purpose (x34 / sell-01
+							:null_edge (x37 / null_tag
+								:ARG0-of (x36 / newspaper
+									:name (n1 / name
+										:op1 "Shining")))
+							:ARG1 (x38 / political-party
+								:name (n / name
+									:op1 "_"
+									:op2 "Sendero"
+									:op3 "Luminoso"))
+							:ARG2 (x47 / person
+								:ARG0-of (d / deal-01)
+								:mod (x45 / country
+									:name (n2 / name
+										:op1 "Colombia"))
+								:ARG1 (x46 / cocaine)))))))))
 
 # ::id 24
-# ::snt The Colombians arrive in small planes at dozens of clandestine airstrips throughout the 150-mile-long valley
+# ::snt 
 (x3 / arrive-01
 	:ARG0 (x2 / newspaper
 		:name (n / name
@@ -601,7 +598,7 @@
 			:ARG1 (x12 / society))))
 
 # ::id 26
-# ::snt People in the Upper Huallaga say People in the Upper Huallaga feel protected from the violence of drug gangs, corrupt local officials and " abusive " police
+# ::snt People in the Upper Huallaga  say People in the Upper Huallaga  feel protected from the violence of drug gangs , corrupt local officials and abusive police
 (x6 / say-01
 	:ARG0 (x1 / people
 		:location (x5 / country
@@ -623,9 +620,9 @@
 				:consist-of (x24 / and
 					:op1 (x19 / gang
 						:ARG2-of (x18 / drug))
-					:op2 (x28 / police
+					:op2 (x26 / police
 						:ARG1-of (xap1 / email
-							:instrument-of (x26 / abuse-01)))
+							:instrument-of (x25 / abuse-01)))
 					:op1 (xap0 / person
 						:ARG1-of (x21 / corrupt-01)
 						:mod (x22 / local)
@@ -633,61 +630,61 @@
 							:ARG2 (o / official))))))))
 
 # ::id 27
-# ::snt 
-(x9 / think-01
-	:ARG0 (x4 / people
-		:location (x8 / country
+# ::snt Why do People in the Upper Huallaga  think people have joined the Shining Path ?
+(x8 / think-01
+	:ARG0 (x3 / people
+		:location (x7 / country
 			:name (n / name
 				:op1 "Huallaga")
-			:mod (x7 / country
+			:mod (x6 / country
 				:name (n1 / name
 					:op1 "Upper"))))
-	:ARG1 (x12 / join-01
-		:ARG1 (x15 / path
-			:ARG0-of (x14 / shine))))
+	:ARG1 (x11 / join-01
+		:ARG1 (x14 / path
+			:ARG0-of (x13 / shine))))
 
 # ::id 28
-# ::snt For the coca and for revenge, " said Carlos Ferrer, a taxi driver who travels the road between Tingo Maria and Aucayacu
-(x9 / say-01
+# ::snt For the coca and for revenge , said Carlos Ferrer , a taxi driver who travels the road between Tingo Maria and Aucayacu
+(x8 / say-01
 	:ARG1 (x4 / and
-		:op2 (x3 / coca)
+		:op1 (x3 / coca)
 		:op2 (x6 / revenge-00))
-	:ARG0 (x10 / newspaper
+	:ARG0 (x9 / newspaper
 		:name (n / name
 			:op1 "Carlos"
 			:op2 "Ferrer")
-		:ARG0-of (x15 / person
+		:ARG0-of (x14 / person
 			:ARG0-of (d / drive-01)
-			:ARG1 (x14 / taxi)
-			:ARG0-of (x17 / travel-01
-				:ARG1 (x19 / road))
-			:purpose (x23 / and
-				:op1 (x22 / country
+			:ARG1 (x13 / taxi)
+			:ARG0-of (x16 / travel-01
+				:ARG1 (x18 / road))
+			:purpose (x22 / and
+				:op1 (x21 / country
 					:name (n1 / name
 						:op1 "Maria")
-					:null_edge (x21 / country
+					:null_edge (x20 / country
 						:name (n3 / name
 							:op1 "Tingo")))
-				:op2 (x24 / country
+				:op2 (x23 / country
 					:name (n2 / name
 						:op1 "Aucayacu"))))))
 
 # ::id 29
-# ::snt " When the government began trying to wipe out coca, police came and mistreated people
-(x14 / and
-	:op1 (x5 / begin-01
-		:ARG0 (x4 / government-organization
+# ::snt When the government began trying to wipe out coca , police came and mistreated people
+(x13 / and
+	:op1 (x4 / begin-01
+		:ARG0 (x3 / government-organization
 			:ARG0-of (g / govern-01))
-		:ARG1 (x6 / try-01
-			:ARG0 x4
-			:ARG1 (x8 / wipe-02
-				:ARG1 (x10 / coca))))
-	:op2 (x12 / police)
-	:op2 (x15 / mistreat
-		:ARG0 x12))
+		:ARG1 (x5 / try-01
+			:ARG0 x3
+			:ARG1 (x7 / wipe-02
+				:ARG1 (x9 / coca))))
+	:op2 (x11 / police)
+	:op2 (x14 / mistreat
+		:ARG0 x11))
 
 # ::id 30
-# ::snt People robbed peasants ; People raped People women .
+# ::snt People  robbed peasants ; People  raped People  women
 (x / xconcept
 	:x (x4 / and
 		:op1 (x2 / rob-01
@@ -699,7 +696,7 @@
 				:mod (x7 / people)))))
 
 # ::id 31
-# ::snt That view of the police as corrupt and abusive of People power is widely held in the valley
+# ::snt That view of the police as corrupt and abusive of People  power is widely held in the valley
 (x15 / hold-04
 	:ARG1 (x2 / view-02
 		:mod (x1 / that)
@@ -731,58 +728,57 @@
 					:op1 "Lima")))))
 
 # ::id 33
-# ::snt 
-(x14 / say-01
-	:ARG1 (x8 / expect-01
-		:ARG0 (x3 / cop
-			:location (x7 / country
+# ::snt A cop in the Huallaga Valley expects to be bribed , said a senior Interior Ministry official , speaking on condition of anonymity
+(x12 / say-01
+	:ARG1 (x7 / expect-01
+		:ARG0 (x2 / cop
+			:location (x6 / country
 				:name (n / name
 					:op1 "Valley")
-				:location (x6 / country
+				:location (x5 / country
 					:name (n1 / name
 						:op1 "Huallaga"))))
-		:ARG1 (x11 / bribe-01))
-	:ARG1 (x21 / speak-01
-		:condition (x25 / anonymity))
+		:ARG1 (x10 / bribe-01))
+	:ARG1 (x19 / speak-01
+		:condition (x23 / anonymity))
 	:ARG0 (xap0 / person
-		:ARG0-of (x19 / have-org-role-91
+		:ARG0-of (x17 / have-org-role-91
 			:ARG2 (o / official)
-			:mod (x16 / senior)
-			:null_edge (x17 / null_tag))))
+			:mod (x14 / senior)
+			:null_edge (x15 / null_tag))))
 
 # ::id 34
-# ::snt 
-(x8 / figure-01
-	:ARG0 (x3 / cop
-		:location (x7 / country
+# ::snt A cop in the Huallaga Valley  figures Peru's Upper Huallaga River Valley  is a right coming to A cop in the Huallaga Valley
+(x16 / right-41
+	:ARG1 (x2 / cop
+		:location (x13 / country
 			:name (n / name
 				:op1 "Valley")
-			:location (x6 / country
+			:null_edge (x7 / figure
+				:location (x5 / have-org-role-91
+					:ARG1 (c / country
+						:name (n5 / name
+							:op1 "Huallaga"
+							:op2 "Valley")))
+				:ARG0 (x8 / country
+					:name (n6 / name
+						:op1 "Peru")))
+			:null_edge (x10 / country
 				:name (n2 / name
+					:op1 "Upper"))
+			:null_edge (x11 / country
+				:name (n3 / name
 					:op1 "Huallaga"))))
-	:ARG1 (x17 / right-41
-		:ARG1 (x14 / country
+	:ARG2 (x20 / cop
+		:location (x24 / country
 			:name (n1 / name
 				:op1 "Valley")
-			:null_edge (x9 / country
-				:name (n3 / name
-					:op1 "Peru"))
-			:null_edge (x11 / country
+			:location (x23 / country
 				:name (n4 / name
-					:op1 "Upper"))
-			:null_edge (x12 / country
-				:name (n5 / name
-					:op1 "Huallaga")))
-		:ARG2 (x21 / cop
-			:location (x25 / country
-				:name (n6 / name
-					:op1 "Valley")
-				:location (x24 / country
-					:name (n7 / name
-						:op1 "Huallaga"))))))
+					:op1 "Huallaga")))))
 
 # ::id 35
-# ::snt A cop in the Huallaga Valley gets off the plane from Lima with A cop in the Huallaga Valley hand out for a payoff .
+# ::snt A cop in the Huallaga Valley  gets off the plane from Lima with A cop in the Huallaga Valley  hand out for a payoff
 (x2 / cop
 	:location (x6 / country
 		:name (n / name
@@ -794,16 +790,13 @@
 		:source (x12 / country
 			:name (n2 / name
 				:op1 "Lima"))
-		:ARG0-of (x15 / cop
-			:location (x19 / country
+		:accompanier (x15 / cop
+			:location (x18 / country
 				:name (n3 / name
-					:op1 "Valley")
-				:location (x18 / country
-					:name (n4 / name
-						:op1 "Huallaga"))))))
+					:op1 "Huallaga")))))
 
 # ::id 36
-# ::snt Official corruption is a problem throughout Peru, but in the Huallaga Valley Peru's Upper Huallaga River Valley seems rampant
+# ::snt Official corruption is a problem throughout Peru , but in the Huallaga Valley Peru's Upper Huallaga River Valley  seems rampant
 (x9 / contrast-01
 	:ARG1 (x5 / problem
 		:topic (x2 / corrupt-01
@@ -832,7 +825,7 @@
 						:op1 "Huallaga"))))))
 
 # ::id 37
-# ::snt A half dozen peasants complained in separate interviews that to obtain a farm loan from the local Banco Agrario A half dozen peasants have to kick back 25 percent of the loan to bank officials
+# ::snt A half dozen peasants complained in separate interviews that to obtain a farm loan from the local Banco Agrario A half dozen peasants  have to kick back 25 percent of the loan to bank officials
 (x5 / complain-01
 	:ARG0 (x4 / peasant
 		:time (x2 / half))
@@ -858,42 +851,37 @@
 									:ARG1 (x34 / bank))))))))))
 
 # ::id 38
-# ::snt " What Paul Feeley 've heard is that if a woman , also the bed want to be named a teacher in the valley, " said Feeley, " the 150-mile-long valley's three months salary as payment
-(x27 / say-01
-	:ARG1 (x6 / hear-01
-		:ARG0 (x3 / person
-			:name (n1 / name
-				:op1 "Paul"
-				:op2 "Feeley"))
-		:ARG1 (x16 / want-01
-			:null_edge (x9 / cause-01
-				:ARG0 (x11 / woman))
-			:ARG0 (x15 / bed
-				:mod (x13 / also))
-			:ARG1 (x19 / name-01
-				:ARG1 (x21 / person
-					:ARG0-of (t / teach-01))
-				:location (x24 / valley))))
-	:ARG0 (x28 / person
+# ::snt What Paul Feeley  have heard is that if a woman  want to be named a teacher in the valley , said Feeley , the 150-mile-long valley  is three months salary as payment
+(x5 / hear-01
+	:ARG0 (x2 / person
 		:name (n / name
-			:op1 "Feeley"))
-	:ARG1 (x37 / salary
-		:ARG0 (x33 / valley
-			:mod (x32 / 150-mile-long))
-		:null_edge (x36 / null_tag)))
+			:op1 "Paul"
+			:op2 "Feeley"))
+	:ARG1 (x21 / say-01
+		:ARG0 (x22 / person
+			:name (n1 / name
+				:op1 "Feeley"))
+		:ARG1 (x30 / salary
+			:condition (x11 / want-01
+				:ARG0 (x10 / woman)
+				:ARG1 (x14 / name-01
+					:ARG1 (x16 / person
+						:ARG0-of (t / teach-01))
+					:location (x19 / valley)))
+			:ARG0 (x26 / valley
+				:mod (x25 / 150-mile-long))
+			:null_edge (x29 / null_tag))))
 
 # ::id 39
-# ::snt And if a woman , also the bed 're a woman, also the bed .
+# ::snt And if a woman  are a woman , also the bed
 (x1 / and
-	:op2 (x11 / woman
-		:condition (x4 / woman)
-		:domain (x8 / bed
-			:mod (x6 / also))
-		:ARG1 (x15 / bed
-			:mod (x13 / also))))
+	:op2 (x7 / woman
+		:ARG0 (x4 / woman)
+		:ARG1 (x11 / bed
+			:mod (x9 / also))))
 
 # ::id 40
-# ::snt The Shining Path has been quick to kill local officials they deemed to be corrupt, according to residents of the valley
+# ::snt The Shining Path has been quick to kill local officials they deemed to be corrupt , according to residents of the valley
 (x6 / quick
 	:domain (x3 / path
 		:ARG0-of (x2 / shine))
@@ -909,34 +897,33 @@
 		:ARG1 (x22 / valley)))
 
 # ::id 41
-# ::snt " If the Shining Path has the image of an organization that's fighting corruption in a very corrupt place, that's going to win local officials they deemed to be corrupt some points, " Feeley said
-(x39 / say-01
-	:ARG1 (x26 / win-01
-		:concession (x6 / have-03
-			:ARG0 (x5 / path
-				:ARG0-of (x4 / shine))
-			:ARG1 (x8 / image
-				:ARG0 (x11 / organization
-					:ARG0-of (x14 / fight-01
-						:ARG1 (x15 / corrupt-01)
-						:location (x20 / place
-							:ARG1-of (x19 / corrupt-01
-								:degree (x18 / very)))))))
-		:ARG0 (x22 / that)
+# ::snt If the Shining Path has the image of an organization that is fighting corruption in a very corrupt place , that is going to win local officials they deemed to be corrupt  some points , Feeley said
+(x37 / say-01
+	:ARG1 (x25 / win-01
+		:concession (x5 / have-03
+			:ARG0 (x4 / path
+				:ARG0-of (x3 / shine))
+			:ARG1 (x7 / image
+				:ARG0 (x10 / organization
+					:ARG0-of (x13 / fight-01
+						:ARG1 (x14 / corrupt-01)
+						:location (x19 / place
+							:ARG1-of (x18 / corrupt-01
+								:degree (x17 / very)))))))
 		:ARG0 (xap0 / person
-			:mod (x27 / local)
-			:ARG0-of (x28 / have-org-role-91
+			:mod (x26 / local)
+			:ARG0-of (x27 / have-org-role-91
 				:ARG2 (o / official))
-			:ARG2 (x33 / corrupt-01
-				:ARG1-of (x30 / deem-01)
-				:ARG1 (x35 / point
-					:quant (x34 / some)))))
-	:ARG0 (x38 / person
+			:ARG2 (x32 / corrupt-01
+				:ARG1-of (x29 / deem-01)
+				:ARG1 (x34 / point
+					:quant (x33 / some)))))
+	:ARG0 (x36 / person
 		:name (n / name
 			:op1 "Feeley")))
 
 # ::id 42
-# ::snt A lawyer in Tingo Maria said A lawyer in Tingo Maria caseload had dropped off dramatically because peasants no longer come into town to seek justice
+# ::snt A lawyer in Tingo Maria said A lawyer in Tingo Maria  caseload had dropped off dramatically because peasants no longer come into town to seek justice
 (x6 / say-01
 	:ARG0 (x2 / lawyer
 		:poss (x5 / person
@@ -961,33 +948,33 @@
 					:ARG1 (x26 / justice))))))
 
 # ::id 43
-# ::snt " Formal justice here is ineffective, corrupt and time consuming, " A lawyer in Tingo Maria said
-(x19 / say-01
-	:ARG1 (x11 / consuming
-		:ARG1 (x3 / justice
-			:mod (x2 / formal))
-		:location (x4 / here)
-		:ARG1 (x9 / and
-			:op1 (x6 / effective
+# ::snt Formal justice here is ineffective , corrupt and time consuming , A lawyer in Tingo Maria  said
+(x17 / say-01
+	:ARG1 (x10 / consuming
+		:ARG1 (x2 / justice
+			:mod (x1 / formal))
+		:location (x3 / here)
+		:ARG1 (x8 / and
+			:op1 (x5 / effective
 				:polarity -)
-			:op2 (x8 / corrupt-01)
-			:op2 (x10 / time)))
-	:ARG0 (x15 / lawyer
-		:poss (x18 / person
+			:op2 (x7 / corrupt-01)
+			:op2 (x9 / time)))
+	:ARG0 (x13 / lawyer
+		:poss (x16 / person
 			:name (n / name
 				:op1 "Maria")
-			:null_edge (x17 / tingo))))
+			:null_edge (x15 / tingo))))
 
 # ::id 44
-# ::snt " The Shining Path's justice is quick, free and very effective .
-(x11 / and
-	:op1 (x8 / quick
-		:domain (x6 / justice
-			:ARG0 (x4 / path
-				:ARG0-of (x3 / shine))))
-	:op2 (x10 / free-41
-		:domain x6)
-	:op2 (x13 / effective
-		:domain x6
-		:degree (x12 / very)))
+# ::snt The Shining Path's justice is quick , free and very effective
+(x10 / and
+	:op1 (x7 / quick
+		:domain (x5 / justice
+			:ARG0 (x3 / path
+				:ARG0-of (x2 / shine))))
+	:op2 (x9 / free-41
+		:domain x5)
+	:op2 (x12 / effective
+		:domain x5
+		:degree (x11 / very)))
 

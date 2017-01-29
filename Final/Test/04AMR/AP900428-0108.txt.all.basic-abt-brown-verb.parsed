@@ -1,5 +1,5 @@
 # ::id 1
-# ::snt Less than a month before elections, the assassination of a third presidential candidate has pushed Colombia to the brink of political chaos
+# ::snt Less than a month before elections , the assassination of a third presidential candidate has pushed Colombia to the brink of political chaos
 (x16 / push-01
 	:time (x1 / less
 		:op1 (x4 / temporal-quantity
@@ -18,7 +18,7 @@
 			:ARG2 (p / president))))
 
 # ::id 2
-# ::snt After the shooting of candidate Carlos Pizarro in a jetliner Thursday, the country's largest newspaper implored the government to " do something, for the love of God .
+# ::snt After the shooting of candidate Carlos Pizarro in a jetliner Thursday , the country's largest newspaper implored the government to do something , for the love of God
 (x18 / implore
 	:time (x1 / after
 		:op1 (x3 / shooting
@@ -26,83 +26,80 @@
 				:op1 "Carlos"
 				:op2 "Pizarro"
 				:ARG0-of (x5 / candidate))
-			:time (xap0 / date-entity
-				:weekday (x11 / thursday
-					:ARG1 (x10 / jetliner)))))
+			:location (x10 / jetliner
+				:time (xap0 / date-entity
+					:weekday (x11 / thursday)))))
 	:ARG0 (x17 / newspaper
 		:poss (x14 / country)
 		:mod (x16 / large
 			:degree (m / most)))
-	:ARG2 (x23 / do-02
+	:ARG2 (x22 / do-02
 		:ARG0 (x20 / government-organization
 			:ARG0-of (g / govern-01))
-		:ARG1 (x24 / something)
-		:ARG1-of (x28 / love-01
-			:ARG1 (x30 / person
+		:ARG1 (x23 / something)
+		:ARG1-of (x27 / love-01
+			:ARG1 (x29 / person
 				:name (n / name
 					:op1 "God")))))
 
 # ::id 3
-# ::snt Addressing President Virgilio Barco, the El Tiempo editorial said : " In your hands, and only in your hands, is the power to avoid the country's dissolution .
+# ::snt Addressing President Virgilio Barco , the El Tiempo editorial said : In your hands , and only in your hands , is the power to avoid the country's dissolution
 (x10 / say-01
 	:ARG0 (x9 / editorial
-		:ARG0 (x3 / name
-			:op1 "Virgilio"
-			:op2 "Barco"
-			:ARG0-of (x2 / have-org-role-91
-				:ARG2 (p / president)))
 		:mod (x7 / country
 			:name (n / name
 				:op1 "El"))
 		:mod (x8 / country
 			:name (n1 / name
 				:op1 "Tiempo")))
-	:ARG1 (x25 / power
-		:ARG1-of (x15 / hand
-			:location (x21 / hand
-				:mod (x18 / only)))
-		:purpose (x27 / avoid-01
-			:ARG1 (x31 / dissolve-01
-				:ARG1 (x29 / country)))))
+	:time (x14 / hand
+		:location (x20 / hand
+			:mod (x17 / only)))
+	:ARG1 (x24 / power
+		:null_edge (x1 / null_tag
+			:ARG0-of (x2 / have-org-role-91
+				:ARG2 (p / president)))
+		:purpose (x26 / avoid-01
+			:ARG1 (x30 / dissolve-01
+				:ARG1 (x28 / country)))))
 
 # ::id 4
-# ::snt " The gravest aspect of Colombia's bloodletting is that the government has no idea how to even slow the government to " do something , for the love of God, " said a member of a regional human rights committee based in Medellin, the cocaine capital
-(x34 / say-01
-	:ARG1 (x4 / aspect
-		:mod (x3 / gravest)
-		:poss (x6 / country
-			:name (n / name
-				:op1 "Colombia")
-			:ARG0-of (x8 / bloodlet))
-		:domain (x13 / have-03
-			:ARG1 (x15 / idea
-				:ARG0 (x12 / government-organization
-					:ARG0-of (g / govern-01))
-				:null_edge -
-				:topic (x19 / slow-03
-					:mod (x18 / even)
-					:ARG1 (x24 / do-02
-						:ARG0 (x21 / government-organization
-							:ARG0-of (g1 / govern-01))
-						:ARG1 (x25 / something))
-					:ARG1 (x29 / love-01
-						:ARG1 (x31 / person
-							:name (n1 / name
-								:op1 "God"))
-						:ARG0 (x36 / member
-							:ARG1 (x40 / human)
-							:ARG1 (x42 / committee
-								:mod (x39 / region)
-								:mod (x41 / right)
-								:ARG1-of (x43 / base-02
-									:location (x49 / capital
-										:poss (x45 / country
-											:name (n2 / name
-												:op1 "Medellin"))
-										:mod (x48 / cocaine)))))))))))
+# ::snt The gravest aspect of Colombia's bloodletting is that the government has no idea how to even slow the government to do something , for the love of God  , said a member of a regional human rights committee based in Medellin , the cocaine capital
+(x3 / aspect
+	:mod (x2 / gravest)
+	:poss (x5 / country
+		:name (n / name
+			:op1 "Colombia")
+		:ARG0-of (x7 / bloodlet))
+	:domain (x12 / have-03
+		:ARG1 (x14 / idea
+			:ARG0 (x11 / government-organization
+				:ARG0-of (g / govern-01))
+			:null_edge -
+			:topic (x18 / slow-03
+				:mod (x17 / even)
+				:ARG1 (x31 / say-01
+					:ARG0 (x20 / government-organization
+						:ARG0-of (g1 / govern-01))
+					:ARG1 (x23 / something
+						:ARG1-of (x27 / love-01
+							:ARG1 (x29 / person
+								:name (n1 / name
+									:op1 "God"))))
+					:ARG2 (x33 / member
+						:ARG1 (x37 / human)
+						:ARG1 (x39 / committee
+							:mod (x36 / region)
+							:mod (x38 / right)
+							:ARG1-of (x40 / base-02
+								:location (x46 / capital
+									:poss (x42 / country
+										:name (n2 / name
+											:op1 "Medellin"))
+									:mod (x45 / cocaine))))))))))
 
 # ::id 5
-# ::snt a member of a regional human rights declined to be identified because a member of a regional human rights was afraid someone might be angered by a member of a regional human rights statements and kill a member of a regional human rights
+# ::snt a member of a regional human rights  declined to be identified because a member of a regional human rights  was afraid someone might be angered by a member of a regional human rights  statements and kill a member of a regional human rights
 (x8 / decline-02
 	:ARG0-of (x2 / have-org-role-91
 		:ARG2 (m / member)
@@ -139,7 +136,7 @@
 		:quant 4))
 
 # ::id 7
-# ::snt In recent interviews, Pizarro, the candidate for the leftist April 19 Movement, or M-19, admitted Pizarro was afraid
+# ::snt In recent interviews , Pizarro , the candidate for the leftist April 19 Movement , or M-19 , admitted Pizarro  was afraid
 (x19 / admit-01
 	:manner (x3 / interview-01
 		:time (x2 / recent))
@@ -158,7 +155,7 @@
 				:op1 "Pizarro"))))
 
 # ::id 8
-# ::snt But Pizarro said his desire to lead Colombia was greater than his fear of assassins ' bullets
+# ::snt But Pizarro  said his desire to lead Colombia was greater than his fear of assassinsbullets
 (x1 / contrast-01
 	:ARG2 (x3 / say-01
 		:ARG0 (x2 / person
@@ -171,11 +168,10 @@
 						:name (n1 / name
 							:op1 "Colombia"))))
 			:compared-to (x13 / fear-01
-				:ARG1 (x17 / bullet
-					:poss (x15 / assassin))))))
+				:ARG1 (x15 / assassinsbullet)))))
 
 # ::id 9
-# ::snt A gunman on a suicide mission shot Pizarro aboard a Colombian jetliner after his desire to lead Colombia was greater than his fear of assassins ' bullets took off from Bogota's airport
+# ::snt A gunman on a suicide mission shot Pizarro aboard a Colombian jetliner after his desire to lead Colombia was greater than his fear of assassinsbullets  took off from Bogota's airport
 (x7 / shot
 	:ARG0 (x2 / gunman
 		:ARG1 (x6 / mission
@@ -195,11 +191,11 @@
 					:ARG1 (x18 / country
 						:name (n2 / name
 							:op1 "Colombia"))))
-			:ARG1 (x23 / fear-01
-				:ARG1 (x27 / bullet
-					:poss (x25 / assassin))
-				:mod (x33 / airport
-					:location (x31 / city
+			:domain (x26 / take-19
+				:ARG1 (x23 / fear-01
+					:ARG1 (x25 / assassinsbullet))
+				:source (x31 / airport
+					:location (x29 / city
 						:name (n3 / name
 							:op1 "Bogota")))))))
 
@@ -231,7 +227,7 @@
 			:ARG2 (p / president))))
 
 # ::id 12
-# ::snt Sen. Luis Carlos Galan of the ruling Liberal Party was gunned down last August at a political rally in Bogota, and Bernardo Jaramillo of the leftist Patriotic Union Party was killed last month at the Bogota airport
+# ::snt Sen. Luis Carlos Galan of the ruling Liberal Party was gunned down last August at a political rally in Bogota , and Bernardo Jaramillo of the leftist Patriotic Union Party was killed last month at the Bogota airport
 (x22 / and
 	:op1 (x11 / gun
 		:ARG1 (x2 / person
@@ -283,7 +279,7 @@
 		:ARG1 (x6 / drug)))
 
 # ::id 14
-# ::snt The media, citing security sources, reported that traffickers were the main suspects in Pizarro's killing as well
+# ::snt The media , citing security sources , reported that traffickers were the main suspects in Pizarro's killing as well
 (x8 / report-01
 	:ARG0 (x2 / media)
 	:ARG2 (x4 / cite-01
@@ -300,7 +296,7 @@
 					:op1 "Pizarro")))))
 
 # ::id 15
-# ::snt But the Medellin cartel denied involvement, and no government official has yet said who was responsible for Pizarro's assassination
+# ::snt But the Medellin cartel denied involvement , and no government official has yet said who was responsible for Pizarro's assassination
 (x1 / contrast-01
 	:ARG2 (x8 / and
 		:op1 (x5 / deny-01
@@ -324,7 +320,7 @@
 						:ARG0-of (g / govern-01)))))))
 
 # ::id 16
-# ::snt On Saturday Antonio Navarro, a longtime guerrilla leader of the April 19 Movement, announced Antonio Navarro would take Pizarro's place as candidate for president
+# ::snt On Saturday Antonio Navarro , a longtime guerrilla leader of the April 19 Movement , announced Antonio Navarro  would take Pizarro's place as candidate for president
 (x16 / announce-01
 	:ARG0 (x4 / person
 		:name (n / name
@@ -376,7 +372,7 @@
 							:op2 (x31 / extradite-01))))))))
 
 # ::id 18
-# ::snt Bombings by the Medellin cartel have caused millions of dollars in property damage, led to the militarization of Medellin and other cities and shattered the nerves of citizens
+# ::snt Bombings by the Medellin cartel have caused millions of dollars in property damage , led to the militarization of Medellin and other cities and shattered the nerves of citizens
 (x24 / and
 	:op1 (x7 / cause-01
 		:ARG0 (x1 / bomb-01)
@@ -404,7 +400,7 @@
 			:ARG0 (x29 / citizen))))
 
 # ::id 19
-# ::snt Pizarro's death appears to have pushed the country to the country's limit
+# ::snt Pizarro's death appears to have pushed the country to the country's  limit
 (x4 / appear-02
 	:ARG1 (x3 / die-01
 		:ARG1 (x1 / person
@@ -417,7 +413,7 @@
 			:ARG0 (x12 / country))))
 
 # ::id 20
-# ::snt For the first time, leading politicians suggested the government the first time might be compromised by the killing
+# ::snt For the first time , leading politicians suggested the government the first time  might be compromised by the killing
 (x8 / suggest-01
 	:time (x4 / time)
 	:ARG0 (x7 / politician
@@ -471,7 +467,7 @@
 				:ARG1-of (x15 / arm-01)))))
 
 # ::id 23
-# ::snt Lopez, of the Liberal Party, was president from 1974 to 1978
+# ::snt Lopez , of the Liberal Party , was president from 1974 to 1978
 (x1 / person
 	:name (n / name
 		:op1 "Lopez"
@@ -511,7 +507,7 @@
 					:ARG1-of (x10 / arm-01))))))
 
 # ::id 25
-# ::snt One of the country's presidential candidates, Alvaro Gomez, said Friday that Barco should name a three-man council to run Colombia's security forces to avoid a military coup
+# ::snt One of the country's presidential candidates , Alvaro Gomez , said Friday that Barco should name a three-man council to run Colombia's security forces to avoid a military coup
 (x12 / say-01
 	:ARG1 (x16 / recommend-01
 		:ARG0 (x9 / name
@@ -543,7 +539,7 @@
 		:weekday (x13 / friday)))
 
 # ::id 26
-# ::snt Alvaro Gomez suggested that Barco had lost control over the armed forces
+# ::snt Alvaro Gomez  suggested that Barco had lost control over the armed forces
 (x3 / suggest-01
 	:ARG0 (x1 / newspaper
 		:name (n / name
@@ -568,29 +564,28 @@
 		:ARG1 (x12 / press)))
 
 # ::id 28
-# ::snt " Never has there been such a great and pathetic image of anarchy, " said Gomez, a presidential candidate of the Conservative Party
-(x16 / say-01
-	:ARG1 (x11 / image
-		:domain (x2 / never)
-		:null_edge (x4 / there)
-		:mod (x6 / such)
-		:topic (x9 / and
-			:op1 (x8 / great)
-			:op2 (x10 / pathetic))
-		:mod (x13 / anarchy))
-	:ARG0 (x17 / person
+# ::snt Never has there been such a great and pathetic image of anarchy , said Gomez , a presidential candidate of the Conservative Party
+(x14 / say-01
+	:ARG1 (x10 / image
+		:null_edge (x3 / there)
+		:mod (x5 / such)
+		:topic (x8 / and
+			:op1 (x7 / great)
+			:op2 (x9 / pathetic))
+		:mod (x12 / anarchy))
+	:ARG0 (x15 / person
 		:name (n / name
 			:op1 "Gomez")
-		:domain-of (x21 / candidate
-			:ARG0-of (x20 / have-org-role-91
+		:domain-of (x19 / candidate
+			:ARG0-of (x18 / have-org-role-91
 				:ARG2 (p / president))
-			:poss (x24 / political-party
+			:poss (x22 / political-party
 				:name (n1 / name
 					:op1 "Conservative"
 					:op2 "Party")))))
 
 # ::id 29
-# ::snt Barco, of the Liberal Party, rejected Gomez's suggestion of a triumvirate, saying the armed forces would be reorganized only if necessary
+# ::snt Barco , of the Liberal Party , rejected Gomez's suggestion of a triumvirate , saying the armed forces would be reorganized only if necessary
 (x8 / reject-01
 	:ARG0 (x1 / person
 		:name (n / name
@@ -614,7 +609,7 @@
 					:null_edge (x23 / only))))))
 
 # ::id 30
-# ::snt Continuing to focus on a military solution to Colombia's problems, Barco said late Friday Virgilio Barco would double the size of a 3,000-man anti-terrorist police unit
+# ::snt Continuing to focus on a military solution to Colombia's problems , Barco said late Friday Virgilio Barco  would double the size of a 3,000-man anti-terrorist police unit
 (x14 / say-01
 	:ARG1 (x1 / continue-01
 		:ARG1 (x3 / focus-01
@@ -642,7 +637,7 @@
 				:ARG0-of (x27 / police)))))
 
 # ::id 31
-# ::snt The unit achieved a 3,000-man anti-terrorist police unit greatest success against drug traffickers when a 3,000-man anti-terrorist police unit killed a Medellin cartel leader, Gonzalo Rodriguez Gacha, in a gunfight last December
+# ::snt The unit achieved a 3,000-man anti-terrorist police unit  greatest success against drug traffickers when a 3,000-man anti-terrorist police unit  killed a Medellin cartel leader , Gonzalo Rodriguez Gacha , in a gunfight last December
 (x3 / achieve-01
 	:ARG0 (x2 / unit)
 	:ARG1 (x8 / unit
@@ -671,7 +666,7 @@
 		:null_edge 12))
 
 # ::id 32
-# ::snt Both Barco and his party's presidential candidate, Cesar Gaviria, have linked Colombia's salvation to constitutional reform
+# ::snt Both Barco and his party's presidential candidate , Cesar Gaviria , have linked Colombia's salvation to constitutional reform
 (x14 / link-01
 	:ARG1 (x3 / and
 		:mod (x1 / both)
@@ -694,7 +689,7 @@
 		:ARG0 (x19 / constitution)))
 
 # ::id 33
-# ::snt Through such reforms Both Barco and his party's presidential candidate , Cesar Gaviria hope to reform the corrupted Congress, strengthen the judicial system and provide more political representation for minority parties
+# ::snt Through such reforms Both Barco and his party's presidential candidate , Cesar Gaviria  hope to reform the corrupted Congress , strengthen the judicial system and provide more political representation for minority parties
 (x15 / hope-01
 	:ARG0 (x6 / and
 		:op2 (x3 / reform-01
@@ -726,7 +721,7 @@
 				:mod (x32 / minority)))))
 
 # ::id 34
-# ::snt According to recent polls, Gaviria is heavily favored to win the presidential elections
+# ::snt According to recent polls , Gaviria is heavily favored to win the presidential elections
 (x9 / favor-01
 	:ARG0 (x4 / poll-01
 		:time (x3 / recent))

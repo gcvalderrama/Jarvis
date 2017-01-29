@@ -45,35 +45,35 @@
 						:time (x21 / before)))))))
 
 # ::id 3
-# ::snt " Joan is one of a kind, " said Jim Gross, a meteorologist at the National Hurricane Center
-(x10 / say-01
-	:ARG0 (x2 / person
+# ::snt Joan is one of a kind , said Jim Gross , a meteorologist at the National Hurricane Center
+(x8 / say-01
+	:ARG0 (x1 / person
 		:name (n / name
 			:op1 "Joan")
-		:mod (x7 / kind))
-	:ARG0 (x11 / newspaper
+		:mod (x6 / kind))
+	:ARG0 (x9 / newspaper
 		:name (n1 / name
 			:op1 "Jim"
 			:op2 "Gross")
-		:ARG0-of (x15 / meteorologist
-			:location (x20 / center
-				:null_edge (x18 / nation)
-				:null_edge (x19 / null_tag)))))
+		:ARG0-of (x13 / meteorologist
+			:location (x18 / center
+				:null_edge (x16 / nation)
+				:null_edge (x17 / null_tag)))))
 
 # ::id 4
-# ::snt " You just do n't see many hurricanes that take this course and hug the coast .
-(x6 / see-01
-	:ARG0 (x2 / you)
-	:mod (x3 / just)
-	:ARG1 (x8 / hurricane
-		:quant (x7 / many))
-	:ARG1 (x13 / and
-		:op1 (x10 / take-01)
-		:op2 (x14 / hug
-			:ARG1 (x16 / coast))))
+# ::snt You just do not see many hurricanes that take this course and hug the coast
+(x5 / see-01
+	:ARG0 (x1 / you)
+	:mod (x2 / just)
+	:ARG1 (x7 / hurricane
+		:quant (x6 / many))
+	:ARG1 (x12 / and
+		:op1 (x9 / take-01)
+		:op2 (x13 / hug
+			:ARG1 (x15 / coast))))
 
 # ::id 5
-# ::snt In Colombia, an official of the state of Bolivar in the northern part of the country said the storm triggered flooding in the town of Carmen de Bolivar, about 360 miles north of the capital of Bogota
+# ::snt In Colombia , an official of the state of Bolivar in the northern part of the country said the storm triggered flooding in the town of Carmen de Bolivar , about 360 miles north of the capital of Bogota
 (x18 / say-01
 	:location (x2 / country
 		:name (n / name
@@ -114,7 +114,7 @@
 						:op1 "northern"))))))
 
 # ::id 6
-# ::snt Water roared down three gullies in the town as the storm passed Monday, Victor Leon Mendoza, a state government administrator, told the Colombian radio chain RCN
+# ::snt Water roared down three gullies in the town as the storm passed Monday , Victor Leon Mendoza , a state government administrator , told the Colombian radio chain RCN
 (x24 / tell-01
 	:time (x2 / roar
 		:ARG1 (x1 / water)
@@ -145,35 +145,35 @@
 			:mod (x27 / radio))))
 
 # ::id 7
-# ::snt " Preliminary reports from the mayor's office indicate that about 50 persons are dead or missing " in the town, Victor Leon Mendoza said
-(x26 / say-01
-	:ARG1 (x9 / indicate-01
-		:ARG0 (x3 / report-01
-			:mod (x2 / preliminary)
-			:ARG0 (x8 / office
+# ::snt Preliminary reports from the mayor's office indicate that about 50 persons are dead or missing in the town , Victor Leon Mendoza  said
+(x24 / say-01
+	:ARG1 (x8 / indicate-01
+		:ARG0 (x2 / report-01
+			:mod (x1 / preliminary)
+			:ARG0 (x7 / office
 				:poss (xap0 / person
-					:ARG0-of (x6 / have-org-role-91
+					:ARG0-of (x5 / have-org-role-91
 						:ARG2 (m / mayor)))))
-		:ARG1 (x16 / or
-			:op2 (x17 / missing
-				:ARG1 (x13 / person
-					:quant (x11 / about
+		:ARG1 (x15 / or
+			:op2 (x16 / miss-01
+				:ARG0 (x12 / person
+					:quant (x10 / about
 						:op1 50)))
 			:op1 (xap1 / person
-				:ARG1-of (x15 / die-01
+				:ARG1-of (x14 / die-01
 					:op (d / dead)
-					:domain x13
-					:location (x21 / town)))))
-	:ARG0 (x24 / newspaper
+					:domain x12
+					:location (x19 / town)))))
+	:ARG0 (x22 / newspaper
 		:name (n / name
 			:op1 "Leon"
 			:op2 "Mendoza")
-		:ARG0-of (x23 / person
+		:ARG0-of (x21 / person
 			:name (n1 / name
 				:op1 "Victor"))))
 
 # ::id 8
-# ::snt At noon EDT today, Joan's center was near latitude 11.1 north and longitude 76.3 west, about 70 miles west of the Colombian coast and about 380 miles east of the island of San Andres off the coast of Nicaragua
+# ::snt At noon EDT today , Joan's center was near latitude 11.1 north and longitude 76.3 west , about 70 miles west of the Colombian coast and about 380 miles east of the island of San Andres off the coast of Nicaragua
 (x / xconcept
 	:x (x14 / and
 		:op2 (x13 / north
@@ -226,7 +226,7 @@
 			:time (x17 / today))))
 
 # ::id 10
-# ::snt Panama issued a hurricane watch for Panama north coast, and Colombia issued a hurricane watch for San Andres, which is part of Colombia even though part of Colombia is located close to Nicaragua
+# ::snt Panama issued a hurricane watch for Panama  north coast , and Colombia issued a hurricane watch for San Andres , which is part of Colombia even though part of Colombia  is located close to Nicaragua
 (x11 / and
 	:op1 (x2 / issue-01
 		:ARG0 (x1 / country
@@ -266,7 +266,7 @@
 					:op1 "San")))))
 
 # ::id 11
-# ::snt Joan, the Atlantic season's fifth hurricane, is expected to bring 4 to 8 inches of rain along its path
+# ::snt Joan , the Atlantic season's fifth hurricane , is expected to bring 4 to 8 inches of rain along its path
 (x11 / expect-01
 	:ARG1 (x13 / bring-01
 		:ARG0 (x1 / person
@@ -281,7 +281,7 @@
 			:op1 (x22 / path))))
 
 # ::id 12
-# ::snt As a tropical storm with 45 mph winds, Joan slowly built a tropical storm with 45 mph winds strength as a tropical storm with 45 mph winds skimmed Colombia's coast, baffling forecasters who had predicted it to weaken
+# ::snt As a tropical storm with 45 mph winds , Joan slowly built a tropical storm with 45 mph winds  strength as a tropical storm with 45 mph winds  skimmed Colombia's coast , baffling forecasters who had predicted it to weaken
 (x29 / skim-01
 	:time (x12 / build-01
 		:ARG0 (x4 / storm
@@ -314,7 +314,7 @@
 				:ARG1 (x41 / weaken-01)))))
 
 # ::id 13
-# ::snt a tropical storm with 45 mph winds reached hurricane force Monday night and a tropical storm with 45 mph winds center began to become better defined, a sign the system could intensify over open water into the western Caribbean, forecasters said
+# ::snt a tropical storm with 45 mph winds  reached hurricane force Monday night and a tropical storm with 45 mph winds  center began to become better defined , a sign the system could intensify over open water into the western Caribbean , forecasters said
 (x43 / say-01
 	:ARG1 (x13 / and
 		:op1 (x8 / reach-01
@@ -355,7 +355,7 @@
 	:ARG0 (x42 / forecaster))
 
 # ::id 14
-# ::snt On a tropical storm with 45 mph winds present path, it would be at least 48 hours before the main part of the hurricane reached Central America, Gross said late Monday
+# ::snt On a tropical storm with 45 mph winds  present path , it would be at least 48 hours before the main part of the hurricane reached Central America , Gross said late Monday
 (x31 / say-01
 	:ARG1 (x4 / storm
 		:mod (x3 / tropic)
@@ -398,7 +398,7 @@
 				:op1 "Joan"))))
 
 # ::id 16
-# ::snt Normally, prevailing winds and upper-level atmospheric conditions push tropical storms northward as baffling forecasters who had predicted it to weaken move from the Atlantic, said Gross
+# ::snt Normally , prevailing winds and upper-level atmospheric conditions push tropical storms northward as baffling forecasters who had predicted it to weaken  move from the Atlantic , said Gross
 (x9 / push-02
 	:mod (x1 / normal)
 	:ARG0 (x5 / and
@@ -417,7 +417,7 @@
 			:ARG1 (x27 / say-01))))
 
 # ::id 17
-# ::snt 
+# ::snt Also , Central America , Gross  said hurricanes are often sapped of strength in the far southern Caribbean due to trade winds that push colder deep-ocean water to the surface , said Gross
 (x32 / say-01
 	:mod (x1 / also)
 	:ARG0 (x4 / country
@@ -469,7 +469,7 @@
 	:quant 74)
 
 # ::id 20
-# ::snt Gilbert, the most devastating hurricane in recent years, left more than 300 people dead and caused billions of dollars damage as the most devastating hurricane in recent years tore through Jamaica, the Cayman Islands and Mexico's Yucatan peninsula last month
+# ::snt Gilbert , the most devastating hurricane in recent years , left more than 300 people dead and caused billions of dollars damage as the most devastating hurricane in recent years  tore through Jamaica , the Cayman Islands and Mexico's Yucatan peninsula last month
 (x17 / and
 	:op1 (x16 / die-01
 		:op (d / dead)

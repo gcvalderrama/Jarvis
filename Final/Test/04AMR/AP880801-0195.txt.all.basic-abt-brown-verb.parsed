@@ -1,5 +1,5 @@
 # ::id 1
-# ::snt A split, charred tree stump is a clue that lightning was to blame for a forest fire
+# ::snt A split , charred tree stump is a clue that lightning was to blame for a forest fire
 (x9 / clue
 	:domain (x6 / stump
 		:ARG1-of (x2 / split-01)
@@ -28,28 +28,29 @@
 				:domain (x9 / fire-01)))))
 
 # ::id 4
-# ::snt " You eliminate all those causes, you 're down to arson, " said Dale Smallwood, a criminal investigator for Missouri's Mark Twain National Forest
-(x15 / say-01
-	:ARG1 (x3 / eliminate-01
-		:ARG0 (x2 / you)
-		:ARG1 (x6 / cause-01
-			:quant (x4 / all)))
-	:ARG1 (x12 / arson)
-	:ARG0 (x16 / newspaper
+# ::snt You eliminate all those causes , you are down to arson , said Dale Smallwood , a criminal investigator for Missouri's Mark Twain National Forest
+(x13 / say-01
+	:ARG1 (x2 / eliminate-01
+		:ARG0 (x1 / you)
+		:ARG1 (x5 / cause-01
+			:quant (x3 / all))
+		:ARG1 (x11 / arson
+			:ARG1 (x7 / you)))
+	:ARG0 (x14 / newspaper
 		:name (n / name
 			:op1 "Dale"
 			:op2 "Smallwood")
-		:ARG0-of (x21 / person
+		:ARG0-of (x19 / person
 			:ARG0-of (i / investigate-01)
-			:mod (x20 / crime)
-			:poss (x28 / organization
+			:mod (x18 / crime)
+			:poss (x26 / organization
 				:name (n1 / name
 					:op1 "Forest")
-				:null_edge (x25 / null_tag
-					:mod (x26 / organization
+				:null_edge (x23 / null_tag
+					:mod (x24 / organization
 						:name (n2 / name
 							:op1 "Twain")))
-				:null_edge (x27 / null_tag)))))
+				:null_edge (x25 / null_tag)))))
 
 # ::id 5
 # ::snt He comes down to arson in most of his investigations _ and he and other forest officials believe the problem is often rooted in some regional traditions that are as hard to quell as flames
@@ -80,7 +81,7 @@
 					:quant (x7 / most))))))
 
 # ::id 6
-# ::snt 
+# ::snt A psychologist's study found economic and even aesthetic reasons why some people light woods aflame
 (x5 / find-02
 	:ARG0 (x4 / study
 		:ARG0 (x2 / psychologist))
@@ -95,7 +96,7 @@
 				:mod (x16 / aflame)))))
 
 # ::id 7
-# ::snt Arsonists set 172 of the 296 Mark Twain fires that have broken out so far this year, burning more than 9,000 acres, Smallwood said
+# ::snt Arsonists set 172 of the 296 Mark Twain fires that have broken out so far this year , burning more than 9,000 acres , Smallwood said
 (x26 / say-01
 	:ARG1 (x9 / fire-02
 		:ARG0 (x1 / newspaper
@@ -120,7 +121,7 @@
 			:op1 "Smallwood")))
 
 # ::id 8
-# ::snt A total of 14,200 acres of the forest, which covers 1.5 million acres mostly in southern Missouri, were burned during a spring fire season made more volatile by drought
+# ::snt A total of 14,200 acres of the forest , which covers 1.5 million acres mostly in southern Missouri , were burned during a spring fire season made more volatile by drought
 (x21 / burn-01
 	:ARG1 (x2 / total-01)
 	:ARG1 (x8 / forest
@@ -144,7 +145,7 @@
 			:season (x24 / spring))))
 
 # ::id 9
-# ::snt On average, Smallwood estimates, 70 percent of the forest fires each year in Missouri are deliberately set
+# ::snt On average , Smallwood estimates , 70 percent of the forest fires each year in Missouri are deliberately set
 (x19 / set-03
 	:consist-of (x5 / estimate-01
 		:ARG1 (x2 / average)
@@ -161,36 +162,35 @@
 	:manner (x18 / deliberate))
 
 # ::id 10
-# ::snt " Missouri's Mark Twain National Forest's probably 90 percent higher than the national average, " said Ron McDonald, Mark Twain's fire control officer
-(x19 / say-01
-	:ARG1 (x12 / high
-		:compared-to (x16 / average
-			:mod (x15 / nation))
-		:degree (xap0 / more
-			:ARG1 (x11 / percentage-entity
-				:poss (x4 / person
-					:name (n2 / name
-						:op1 "Mark"
-						:op2 "Twain"
-						:op3 "National"
-						:op4 "Forest"))
-				:mod (x9 / probable
-					:op1 90))))
-	:ARG0 (x20 / newspaper
+# ::snt Missouri's Mark Twain National Forest  is probably 90 percent higher than the national average , said Ron McDonald , Mark Twain's fire control officer
+(x17 / say-01
+	:ARG1 (x11 / high
+		:domain (x3 / person
+			:name (n1 / name
+				:op1 "Mark"
+				:op2 "Twain"
+				:op3 "National"
+				:op4 "Forest"))
+		:domain (x8 / probable
+			:null_edge 90
+			:extent (x10 / percentage-entity))
+		:compared-to (x15 / average
+			:mod (x14 / nation)))
+	:ARG0 (x18 / newspaper
 		:name (n / name
 			:op1 "Ron"
 			:op2 "McDonald")
-		:ARG0-of (x28 / have-org-role-91
+		:ARG0-of (x26 / have-org-role-91
 			:ARG2 (o / officer)
-			:ARG1 (x23 / person
-				:name (n1 / name
+			:ARG1 (x21 / person
+				:name (n2 / name
 					:op1 "Mark"
 					:op2 "Twain"))
-			:ARG1 (x26 / fire-arm)
-			:ARG1 (x27 / control-01))))
+			:ARG1 (x24 / fire-arm)
+			:ARG1 (x25 / control-01))))
 
 # ::id 11
-# ::snt Ron McDonald said Mark Twain consistently is among the five forest districts with the worst arson problem
+# ::snt Ron McDonald  said Mark Twain consistently is among the five forest districts with the worst arson problem
 (x3 / say-01
 	:ARG0 (x1 / newspaper
 		:name (n / name
@@ -209,23 +209,23 @@
 				:mod (x16 / arson)))))
 
 # ::id 12
-# ::snt " It's just been an Ozark tradition of incendiary (deliberately set )fires, " McDonald said
-(x19 / say-01
-	:ARG1 (x8 / tradition
-		:mod (x4 / just)
-		:mod (x7 / world-region
+# ::snt It is just been an Ozark tradition of incendiary (deliberately set )fires , McDonald said
+(x17 / say-01
+	:ARG1 (x7 / tradition
+		:mod (x3 / just)
+		:mod (x6 / world-region
 			:name (n1 / name
 				:op1 "Ozark"))
-		:ARG1 (x15 / fire
-			:mod (x10 / incendiary)
-			:ARG1-of (x13 / set-08
-				:manner (x12 / deliberate))))
-	:ARG0 (x18 / person
+		:ARG1 (x14 / fire
+			:mod (x9 / incendiary)
+			:ARG1-of (x12 / set-08
+				:manner (x11 / deliberate))))
+	:ARG0 (x16 / person
 		:name (n / name
 			:op1 "McDonald")))
 
 # ::id 13
-# ::snt The tradition seems to stretch across the southern United States, according to Smallwood
+# ::snt The tradition seems to stretch across the southern United States , according to Smallwood
 (x3 / seem-01
 	:ARG1 (x2 / tradition)
 	:ARG1 (x5 / stretch-01
@@ -251,7 +251,7 @@
 		:op2 (x16 / carelessness)))
 
 # ::id 15
-# ::snt As one of the Forest Service's 125 special law enforcement agents, Smallwood has spent most of the past 16 years investigating fires in the forests Dale Smallwood loves
+# ::snt As one of the Forest Service's 125 special law enforcement agents , Smallwood has spent most of the past 16 years investigating fires in the forests Dale Smallwood  loves
 (x16 / spend-01
 	:ARG1 (x3 / include-91
 		:ARG2 (xap0 / person
@@ -282,28 +282,26 @@
 						:op2 "Smallwood"))))))
 
 # ::id 16
-# ::snt " Dale Smallwood consider Dale Smallwood an Ozark hillbilly, " Dale Smallwood said
-(x14 / say-01
-	:ARG1 (x4 / consider-02
-		:ARG0 (x2 / newspaper
-			:name (n1 / name
-				:op1 "Dale"
-				:op2 "Smallwood"))
-		:ARG1 (x9 / hillbilly
-			:ARG0 (x5 / newspaper
-				:name (n2 / name
-					:op1 "Dale"
-					:op2 "Smallwood"))
-			:mod (x8 / world-region
-				:name (n3 / name
-					:op1 "Ozark"))))
-	:ARG0 (x12 / newspaper
+# ::snt Dale Smallwood  consider Dale Smallwood  an Ozark hillbilly , Dale Smallwood  said
+(x12 / say-01
+	:ARG0 (x1 / person
 		:name (n / name
 			:op1 "Dale"
-			:op2 "Smallwood")))
+			:op2 "Smallwood"
+			:op3 "consider"
+			:op4 "Dale"
+			:op5 "Smallwood")
+		:ARG1-of (x3 / consider-01
+			:ARG1 (x8 / hillbilly
+				:mod (x7 / world-region
+					:name (n1 / name
+						:op1 "Ozark"))
+				:name (x10 / name
+					:op1 "Dale"
+					:op2 "Smallwood")))))
 
 # ::id 17
-# ::snt The Forest Service is charged with protecting wildlands, and balancing recreational needs with commercial interests in timber and mineral resources
+# ::snt The Forest Service is charged with protecting wildlands , and balancing recreational needs with commercial interests in timber and mineral resources
 (x5 / charge-05
 	:ARG1 (x2 / government-organization
 		:name (n / name
@@ -323,7 +321,7 @@
 							:mod (x20 / mineral))))))))
 
 # ::id 18
-# ::snt Smallwood's job includes investigating marijuana growing in the forest, timber theft and theft of other federal property
+# ::snt Smallwood's job includes investigating marijuana growing in the forest , timber theft and theft of other federal property
 (x4 / include-01
 	:ARG2 (x3 / job
 		:poss (x1 / person
@@ -342,7 +340,7 @@
 							:op1 "federal")))))))
 
 # ::id 19
-# ::snt Dale Smallwood military-neat office at the Forest Service headquarters in Rolla is decorated with game bird feathers, a picture of Smokey Bear and a glass-doored bookcase lined with reports and text books
+# ::snt Dale Smallwood  military-neat office at the Forest Service headquarters in Rolla is decorated with game bird feathers , a picture of Smokey Bear and a glass-doored bookcase lined with reports and text books
 (x13 / decorate-01
 	:ARG1 (x4 / office
 		:poss (x1 / person
@@ -374,7 +372,7 @@
 						:mod (x32 / text)))))))
 
 # ::id 20
-# ::snt The Forest Service has called on psychologists, sociologists and archaeologists to determine why fires are set
+# ::snt The Forest Service has called on psychologists , sociologists and archaeologists to determine why fires are set
 (x5 / call-01
 	:ARG0 (x2 / government-organization
 		:name (n / name
@@ -390,32 +388,32 @@
 			:ARG1 (x15 / fire))))
 
 # ::id 21
-# ::snt " Part of Missouri's Mark Twain National Forest is tradition, " Smallwood said
-(x15 / say-01
-	:ARG1 (x11 / tradition
-		:ARG0 (x2 / part
-			:null_edge (x6 / person
+# ::snt Part of Missouri's Mark Twain National Forest  is tradition , Smallwood said
+(x13 / say-01
+	:ARG1 (x10 / tradition
+		:ARG0 (x1 / part
+			:null_edge (x5 / person
 				:name (n1 / name
 					:op1 "Mark"
 					:op2 "Twain"
 					:op3 "National"
 					:op4 "Forest"))))
-	:ARG0 (x14 / person
+	:ARG0 (x12 / person
 		:name (n / name
 			:op1 "Smallwood")))
 
 # ::id 22
-# ::snt " In the springtime, people used to burn the woods to allow grass to grow .
-(x7 / use-01
-	:ARG2 (x4 / springtime)
-	:ARG2 (x9 / burn-01
-		:ARG1 (x11 / wood)
-		:purpose (x13 / allow-01
-			:ARG1 (x16 / grow-03
-				:ARG1 (x14 / grass)))))
+# ::snt In the springtime , people used to burn the woods to allow grass to grow
+(x6 / use-01
+	:ARG2 (x3 / springtime)
+	:ARG2 (x8 / burn-01
+		:ARG1 (x10 / wood)
+		:purpose (x12 / allow-01
+			:ARG1 (x15 / grow-03
+				:ARG1 (x13 / grass)))))
 
 # ::id 23
-# ::snt A policy of open grazing, with cattle free to feed on any unfenced land, was allowed in the Ozarks until the 1960s, longer than in other wooded areas, Smallwood said
+# ::snt A policy of open grazing , with cattle free to feed on any unfenced land , was allowed in the Ozarks until the 1960s , longer than in other wooded areas , Smallwood said
 (x34 / say-01
 	:null_edge (x18 / allow-01
 		:ARG1 (x2 / policy
@@ -457,7 +455,7 @@
 				:ARG1 (x17 / arson)))))
 
 # ::id 25
-# ::snt Subsistence farmers in the rural South who were interviewed by Shea and his researchers claimed fire helped control ticks, snakes and disease and controlled the encroachment of trees on land where ticks , snakes and disease wanted to graze cattle
+# ::snt Subsistence farmers in the rural South who were interviewed by Shea and his researchers claimed fire helped control ticks , snakes and disease and controlled the encroachment of trees on land where ticks , snakes and disease  wanted to graze cattle
 (x2 / person
 	:ARG0-of (f / farm-01)
 	:mod (x1 / subsistence)
@@ -494,34 +492,32 @@
 									:ARG1 (x41 / cattle))))))))))
 
 # ::id 26
-# ::snt " Subsistence farmers in the rural South who were interviewed by Shea and his researchers ways are those of frontiersmen living in an arrested frontier, " Shea wrote
-(x29 / write-01
-	:ARG1 (x3 / person
+# ::snt Subsistence farmers in the rural South who were interviewed by Shea and his researchers  ways are those of frontiersmen living in an arrested frontier , Shea wrote
+(x27 / write-01
+	:ARG1 (x2 / person
 		:ARG0-of (f / farm-01)
-		:mod (x2 / world-region
-			:name (n1 / name
-				:op1 "Subsistence"))
-		:null_edge (x4 / null_tag
-			:null_edge (x7 / null_tag
-				:location (x6 / rural)))
-		:ARG1-of (x10 / interview-01
-			:ARG0 (x13 / and
-				:op1 (x12 / person
-					:name (n2 / name
+		:mod (x1 / subsistence)
+		:null_edge (x3 / null_tag
+			:null_edge (x6 / null_tag
+				:location (x5 / rural)))
+		:ARG1-of (x9 / interview-01
+			:ARG0 (x12 / and
+				:op1 (x11 / person
+					:name (n1 / name
 						:op1 "Shea"))
-				:op2 (x16 / way
-					:null_edge (x15 / null_tag))))
-		:ARG0-of (x20 / frontiersman
-			:ARG0-of (x21 / live-01
-				:location (x25 / frontier
-					:ARG1 (x24 / person
+				:op2 (x15 / way
+					:null_edge (x14 / null_tag))))
+		:ARG0-of (x19 / frontiersman
+			:ARG0-of (x20 / live-01
+				:location (x24 / frontier
+					:ARG1 (x23 / person
 						:ARG1-of (a / arrest-01))))))
-	:ARG0 (x28 / person
+	:ARG0 (x26 / person
 		:name (n / name
 			:op1 "Shea")))
 
 # ::id 27
-# ::snt Aesthetics even played a part : Shea and other researchers found that people living in areas where arson was common enjoyed the smell of smoke in the spring air, and believed the woods looked better " burned clean .
+# ::snt Aesthetics even played a part : Shea and other researchers found that people living in areas where arson was common enjoyed the smell of smoke in the spring air , and believed the woods looked better burned clean
 (xap1 / multi-sentence
 	:ARG1 (x3 / play-07
 		:mod (x2 / even)
@@ -548,9 +544,9 @@
 			:op2 (x32 / believe-01
 				:ARG1 (x35 / look-02
 					:ARG0 (x34 / wood)
-					:mod (x36 / good)
-					:ARG1 (x38 / burn-01
-						:ARG1 (x39 / clean-02)))))))
+					:manner (x36 / good)
+					:ARG1 (x37 / burn-01
+						:ARG1 (x38 / clean-02)))))))
 
 # ::id 28
 # ::snt The Forest Service has attempted to counter the lore that can lead to burning
@@ -567,7 +563,7 @@
 				:ARG2 (x14 / burn-01)))))
 
 # ::id 29
-# ::snt Over the years, timber has been touted as a cash crop that is as worthy of protection as grassland
+# ::snt Over the years , timber has been touted as a cash crop that is as worthy of protection as grassland
 (x8 / tout
 	:time (x1 / over
 		:op1 (x3 / temporal-quantity
@@ -607,77 +603,76 @@
 		:ARG1 (x12 / hard)))
 
 # ::id 32
-# ::snt " There's no cut-and-dried way to prevent the tradition of using fire to manage the woods, " McDonald said
-(x21 / say-01
-	:time (x5 / cut-and-dried
+# ::snt There is no cut-and-dried way to prevent the tradition of using fire to manage the woods  , McDonald said
+(x19 / say-01
+	:purpose (x7 / prevent-01
 		:polarity -
-		:purpose (x8 / prevent-01
-			:ARG1 (x10 / tradition
-				:ARG1 (x12 / use-01
-					:ARG1 (x13 / fire-01)
-					:ARG2 (x15 / manage-01
-						:ARG1 (x17 / wood))))))
-	:ARG0 (x20 / person
+		:ARG1 (x9 / tradition
+			:ARG1 (x11 / use-01
+				:ARG1 (x12 / fire-01)
+				:ARG2 (x14 / manage-01
+					:ARG1 (x16 / wood)))))
+	:ARG0 (x18 / person
 		:name (n / name
 			:op1 "McDonald")))
 
 # ::id 33
-# ::snt " Smokey Bear and other programs had one case (in 1984 )where two men went to Sunday school and after school two men started a fire with two men Sunday school literature, " Smallwood said
-(x38 / say-01
-	:ARG1 (x7 / have-03
-		:ARG0 (x4 / and
-			:op1 (x2 / newspaper
+# ::snt Smokey Bear and other programs  had one case (in 1984 )where two men went to Sunday school and after school two men  started a fire with two men  Sunday school literature , Smallwood said
+(x36 / say-01
+	:ARG1 (x6 / have-03
+		:ARG0 (x3 / and
+			:op1 (x1 / newspaper
 				:name (n1 / name
 					:op1 "Smokey"
 					:op2 "Bear"))
-			:op2 (x6 / program
-				:mod (x5 / other)))
-		:ARG1 (x9 / case
+			:op2 (x5 / program
+				:mod (x4 / other)))
+		:ARG1 (x8 / case
 			:quant 1
-			:time (x12 / date-entity
+			:time (x11 / date-entity
 				:year 1984)
-			:mod (x21 / and
-				:op1 (x17 / person
+			:mod (x20 / and
+				:op1 (x16 / person
 					:ARG1-of (g / go-12)
-					:ARG0 (x16 / man
+					:ARG0 (x15 / man
 						:quant 2)
-					:ARG1 (x20 / school
+					:ARG1 (x19 / school
 						:time (xap0 / date-entity
-							:null_edge (x19 / null_tag))))
-				:op2 (x26 / start-01
-					:ARG0 x16
-					:time (x22 / after
-						:op1 (x23 / school))
-					:ARG0 (x25 / man
+							:null_edge (x18 / null_tag))))
+				:op2 (x25 / start-01
+					:ARG0 x15
+					:time (x21 / after
+						:op1 (x22 / school))
+					:ARG0 (x24 / man
 						:quant 2)
-					:ARG1 (x28 / fire-01)
-					:accompanier (x31 / man
+					:ARG1 (x27 / fire-01)
+					:accompanier (x30 / man
 						:quant 2)
-					:ARG1 (x34 / literature
-						:mod (x33 / school)
+					:ARG1 (x33 / literature
+						:mod (x32 / school)
 						:time (xap1 / date-entity
-							:null_edge (x32 / null_tag)))))))
-	:ARG0 (x37 / person
+							:null_edge (x31 / null_tag)))))))
+	:ARG0 (x35 / person
 		:name (n / name
 			:op1 "Smallwood")))
 
 # ::id 34
-# ::snt " two men just happened to be driving through an area two men thought needed to be burned out .
-(x5 / happen-01
-	:ARG1 (x3 / man
+# ::snt two men  just happened to be driving through an area two men  thought needed to be burned out
+(x4 / happen-01
+	:ARG1 (x2 / man
 		:quant 2)
-	:time (x4 / just)
-	:ARG1 (x8 / drive-02
-		:ARG0 x3
-		:ARG1 (x11 / area
-			:ARG1-of (x14 / think-01
-				:ARG0 (x13 / man
+	:time (x3 / just)
+	:ARG1 (x7 / drive-02
+		:ARG0 x2
+		:ARG1 (x10 / area
+			:ARG1-of (x13 / think-01
+				:ARG0 (x12 / man
 					:quant 2)
-				:ARG1 (x15 / need-01
-					:ARG1 (x18 / burn-01))))))
+				:ARG1 (x14 / need-01
+					:ARG1 (x17 / burn-01))))))
 
 # ::id 35
-# ::snt Still, the arsonist does not always fit the profile of a simply misguided citizen
+# ::snt Still , the arsonist does not always fit the profile of a simply misguided citizen
 (x8 / fit-01
 	:ARG1 (x4 / arsonist)
 	:time (x7 / always)
@@ -687,82 +682,83 @@
 				:mod (x13 / simple)))))
 
 # ::id 36
-# ::snt " Part of the problem is people driving around drinking and shooting road signs, " Smallwood said
-(x18 / say-01
-	:ARG1 (x2 / part
-		:ARG1 (x5 / problem)
-		:ARG1-of (x8 / drive-02
-			:location (x9 / around)
-			:ARG1 (x11 / and
-				:op1 (x10 / drink-01
-					:ARG1 (x14 / signal-01
-						:mod (x13 / road)))
-				:op2 (x12 / shooting))))
-	:ARG0 (x17 / person
+# ::snt Part of the problem is people driving around drinking and shooting road signs , Smallwood said
+(x16 / say-01
+	:ARG1 (x1 / part
+		:ARG1 (x4 / problem)
+		:ARG1-of (x7 / drive-02
+			:location (x8 / around)
+			:ARG1 (x10 / and
+				:op1 (x9 / drink-01
+					:ARG1 (x13 / signal-01
+						:mod (x12 / road)))
+				:op2 (x11 / shooting))))
+	:ARG0 (x15 / person
 		:name (n / name
 			:op1 "Smallwood")))
 
 # ::id 37
-# ::snt " When people driving around drinking and shooting road signs get bored with that, people driving around drinking and shooting road signs set fires
-(x12 / bore
-	:ARG1 (x4 / drive-02
-		:location (x5 / around)
-		:ARG1 (x7 / and
-			:op1 (x6 / drink-01
-				:ARG1 (x10 / signal-01
-					:mod (x9 / road)))
-			:op2 (x8 / shooting)))
-	:ARG2 (x14 / that)
-	:ARG1 (x17 / drive-02
-		:direction (x18 / around)
-		:ARG1 (x20 / and
-			:op1 (x19 / drink-01)
-			:op2 (x21 / shooting)
-			:op1 (x24 / set-08
-				:ARG0 (x23 / sign-01
-					:ARG1 (x22 / road))
-				:ARG1 (x25 / fire)))))
+# ::snt When people driving around drinking and shooting road signs  get bored with that , people driving around drinking and shooting road signs  set fires
+(x23 / set-03
+	:time (x11 / bore
+		:ARG1 (x3 / drive-02
+			:location (x4 / around)
+			:ARG1 (x6 / and
+				:op1 (x5 / drink-01
+					:ARG1 (x9 / signal-01
+						:mod (x8 / road)))
+				:op2 (x7 / shooting)))
+		:ARG2 (x13 / that))
+	:ARG1 (x16 / drive-02
+		:location (x17 / around)
+		:ARG1 (x19 / and
+			:op1 (x18 / drink-01
+				:ARG1 (x22 / signal-01
+					:mod (x21 / road)))
+			:op2 (x20 / shooting)))
+	:ARG1 (x24 / fire))
 
 # ::id 38
-# ::snt Part of the problem's malicious mischief
+# ::snt Part of the problem  is malicious mischief
 (x7 / mischief
-	:ARG1 (x4 / problem)
+	:ARG0 (x1 / part
+		:ARG1 (x4 / problem))
 	:mod (x6 / malicious))
 
 # ::id 39
-# ::snt " Sometimes Dale Smallwood hear that someone is angry at the Forest Service because of some administrative action _ because people driving around drinking and shooting road signs closed a road or disallowed something
-(x5 / hear-01
-	:frequency (x2 / sometimes)
-	:ARG0 (x3 / newspaper
+# ::snt Sometimes Dale Smallwood  hear that someone is angry at the Forest Service because of some administrative action _ because people driving around drinking and shooting road signs  closed a road or disallowed something
+(x4 / hear-01
+	:frequency (x1 / sometimes)
+	:ARG0 (x2 / newspaper
 		:name (n / name
 			:op1 "Dale"
 			:op2 "Smallwood"))
-	:ARG1 (x9 / angry
-		:ARG0 (x7 / someone)
-		:location (x12 / government-organization
+	:ARG1 (x8 / angry
+		:ARG0 (x6 / someone)
+		:location (x11 / government-organization
 			:name (n1 / name
 				:op1 "Forest"
 				:op2 "Service"))
-		:ARG1-of (x14 / cause-01
-			:ARG0 (x19 / _
-				:quant (x16 / some)
-				:mod (x17 / administrate-01)
-				:ARG1-of (x20 / cause-01
-					:ARG0 (x32 / or
-						:op1 (x29 / close-01
-							:ARG1 (x22 / drive-02
-								:location (x23 / around)
-								:ARG1 (x25 / and
-									:op1 (x24 / drink-01
-										:ARG1 (x28 / signal-01
-											:mod (x27 / road)))
-									:op2 (x26 / shooting)))
-							:ARG1 (x31 / road))
-						:op2 (x33 / disallow-01
-							:ARG1 (x34 / something))))))))
+		:ARG1-of (x13 / cause-01
+			:ARG0 (x18 / _
+				:quant (x15 / some)
+				:mod (x16 / administrate-01)
+				:ARG1-of (x19 / cause-01
+					:ARG0 (x31 / or
+						:op1 (x28 / close-01
+							:ARG1 (x21 / drive-02
+								:location (x22 / around)
+								:ARG1 (x24 / and
+									:op1 (x23 / drink-01
+										:ARG1 (x27 / signal-01
+											:mod (x26 / road)))
+									:op2 (x25 / shooting)))
+							:ARG1 (x30 / road))
+						:op2 (x32 / disallow-01
+							:ARG1 (x33 / something))))))))
 
 # ::id 40
-# ::snt And they do n't necessarily have to be mad at the Forest Service
+# ::snt And they do not necessarily have to be mad at the Forest Service
 (x1 / and
 	:op2 (x2 / they)
 	:op2 (x9 / mad
@@ -772,7 +768,7 @@
 				:op2 "Service"))))
 
 # ::id 41
-# ::snt They could be mad at government, period .
+# ::snt They could be mad at government , period
 (x2 / possible
 	:domain (x4 / mad
 		:domain (x1 / they)
@@ -781,46 +777,46 @@
 				:ARG0-of (g / govern-01)))))
 
 # ::id 42
-# ::snt Then, " fire is used as retaliation .
-(x6 / use-01
+# ::snt Then , fire is used as retaliation
+(x5 / use-01
 	:time (x1 / then)
-	:ARG1 (x4 / fire-01)
-	:ARG2 (x8 / retaliate-01))
+	:ARG1 (x3 / fire-01)
+	:ARG2 (x7 / retaliate-01))
 
 # ::id 43
-# ::snt " government , period's so senseless, " he said
-(x11 / say-01
-	:ARG1 (x7 / senseless
-		:domain (x4 / period
-			:mod (x2 / government-organization
+# ::snt government , period  is so senseless , he said
+(x9 / say-01
+	:ARG1 (x6 / senseless
+		:domain (x3 / period
+			:mod (x1 / government-organization
 				:ARG0-of (g / govern-01))))
-	:ARG0 (x10 / he))
+	:ARG0 (x8 / he))
 
 # ::id 44
-# ::snt " government , period just costs a lot of money to put these fires out and government , period's coming right out of our tax dollars .
-(x16 / and
-	:op1 (x6 / cost-01
-		:ARG1 (x4 / period
-			:mod (x2 / government-organization
+# ::snt government , period  just costs a lot of money to put these fires out and government , period  is coming right out of our tax dollars
+(x15 / and
+	:op1 (x5 / cost-01
+		:ARG1 (x3 / period
+			:mod (x1 / government-organization
 				:ARG0-of (g1 / govern-01)))
-		:mod (x5 / just)
-		:ARG1 (x10 / money
-			:quant (x8 / lot))
-		:ARG2 (x12 / put-01
-			:ARG1 (x14 / fire)
-			:ARG2 (x15 / out)))
-	:op2 (x21 / come-01
-		:ARG1 (x17 / government-organization
+		:mod (x4 / just)
+		:ARG1 (x9 / money
+			:quant (x7 / lot))
+		:ARG2 (x11 / put-01
+			:ARG1 (x13 / fire)
+			:ARG2 (x14 / out)))
+	:op2 (x20 / come-01
+		:ARG1 (x16 / government-organization
 			:ARG0-of (g / govern-01))
-		:ARG1 (x19 / period)
-		:direction (x22 / right)
-		:direction (x23 / out
-			:op1 (x27 / monetary-quantity
+		:ARG1 (x18 / period)
+		:direction (x21 / right)
+		:direction (x22 / out
+			:op1 (x26 / monetary-quantity
 				:unit (d / dollar)
-				:ARG1-of (x26 / tax-01)))))
+				:ARG1-of (x25 / tax-01)))))
 
 # ::id 45
-# ::snt McDonald, who oversees about 125 Mark Twain employees trained as firefighters, said forest fires cost $ 25 to $ 30 an acre to suppress
+# ::snt McDonald , who oversees about 125 Mark Twain employees trained as firefighters , said forest fires cost $ 25 to $ 30 an acre to suppress
 (x14 / say-01
 	:ARG0 (x1 / person
 		:name (n / name
@@ -842,32 +838,18 @@
 		:ARG2 (x26 / suppress-01)))
 
 # ::id 46
-# ::snt In the rare case of a conviction, the arsonist is likely to be put on probation or ordered to pay the costs of fighting the fire and replacing timber that was destroyed, Smallwood said
-(x36 / say-01
-	:ARG1 (x12 / likely
-		:time (x4 / case
+# ::snt In the rare case of a conviction , the arsonist is likely to be put on probation or ordered to pay the costs of fighting the fire and replacing timber that was destroyed , Smallwood said
+(x18 / or
+	:op1 (x12 / likely
+		:topic (x4 / case
 			:mod (x3 / rare)
 			:topic (x7 / convict-01))
-		:domain (x10 / arsonist)
-		:domain (x18 / or
-			:op1 (x15 / put-01)
-			:op2 (x17 / probation)
-			:op2 (x19 / order-01
-				:ARG2 (x21 / pay-01
-					:ARG3 (xap0 / monetary-quantity
-						:ARG2-of (x23 / cost-01
-							:ARG2 (x28 / and
-								:op1 (x25 / fight-01
-									:ARG1 (x27 / fire-01))
-								:op2 (x29 / replace-01
-									:ARG1 (x30 / timber)))
-							:ARG1 (x33 / destroy-01)))))))
-	:ARG0 (x35 / person
-		:name (n / name
-			:op1 "Smallwood")))
+		:domain (x15 / put-01
+			:ARG1 (x10 / arsonist)
+			:ARG2 (x17 / probation))))
 
 # ::id 47
-# ::snt Last year, a judge ordered two arsonists to work weekends for the Forest Service
+# ::snt 
 (x6 / order-02
 	:time (x2 / year
 		:mod (x1 / last))
@@ -884,52 +866,51 @@
 			:ARG3 (x5 / judge-01))))
 
 # ::id 48
-# ::snt " An arson case in the forest is very hard to make, " a judge said
-(x17 / say-01
-	:ARG1 (x10 / hard
-		:domain (x4 / case
-			:mod (x3 / arson)
-			:location (x7 / forest))
-		:degree (x9 / very)
-		:domain (x12 / make-01))
+# ::snt An arson case in the forest is very hard to make , a judge  said
+(x15 / say-01
+	:ARG1 (x9 / hard
+		:domain (x3 / case
+			:mod (x2 / arson)
+			:location (x6 / forest))
+		:degree (x8 / very)
+		:domain (x11 / make-01))
 	:ARG0 (xap1 / person
 		:ARG0-of (xap0 / have-org-role-91
-			:ARG3 (x16 / judge-01))))
+			:ARG3 (x14 / judge-01))))
 
 # ::id 49
-# ::snt " When you go out in the middle of the forest to a blackened area to begin an investigation, the middle of the forest to a blackened area to begin an investigation's very difficult and frustrating
-(x37 / and
-	:op1 (x36 / difficult
-		:domain (x31 / begin-01
-			:time (x4 / go-02
-				:ARG0 (x3 / you)
-				:ARG2 (x8 / middle
-					:part-of (x11 / forest))
-				:ARG4 (x15 / area
-					:ARG1-of (x14 / blacken)
-					:purpose (x17 / begin-01
-						:ARG1 (x19 / investigate-01))))
-			:ARG1 (x22 / middle
-				:part-of (x25 / forest)
-				:part-of (x29 / area
-					:ARG1-of (x28 / blacken)))
-			:ARG1 (x33 / investigate-01
-				:ARG1 x22))
-		:degree (x35 / very))
-	:op2 (x38 / frustrating))
+# ::snt When you go out in the middle of the forest to a blackened area to begin an investigation , the middle of the forest to a blackened area to begin an investigation  is very difficult and frustrating
+(x36 / and
+	:time (x3 / go-02
+		:ARG0 (x2 / you)
+		:ARG2 (x7 / middle
+			:part-of (x10 / forest))
+		:ARG4 (x14 / area
+			:ARG1-of (x13 / blacken)
+			:purpose (x16 / begin-01
+				:ARG1 (x18 / investigate-01))))
+	:op1 (x35 / difficult
+		:domain (x21 / middle
+			:part-of (x24 / forest
+				:extent (x28 / area
+					:ARG1-of (x27 / blacken)
+					:purpose (x30 / begin-01
+						:ARG1 (x32 / investigate-01)))))
+		:degree (x34 / very))
+	:op2 (x37 / frustrating))
 
 # ::id 50
-# ::snt No. 1, you usually do n't have any witnesses .
+# ::snt No. 1 , you usually do not have any witnesses
 (x1 / no.
-	:quant 1
-	:null_edge (x4 / you)
-	:mod (x5 / usual)
+	:null_edge 1
 	:null_edge (x10 / person
 		:ARG0-of (w / witness-01)
+		:ARG0 (x4 / you)
+		:mod (x5 / usual)
 		:mod (x9 / any)))
 
 # ::id 51
-# ::snt He noted that in some cases, people who have evidence withhold No. 1 for fear of being burned out themselves
+# ::snt He noted that in some cases , people who have evidence withhold No. 1  for fear of being burned out themselves
 (x2 / note-01
 	:ARG0 (x1 / he)
 	:ARG1 (x12 / withhold-01
@@ -943,7 +924,7 @@
 			:ARG1 (x19 / burn-01))))
 
 # ::id 52
-# ::snt Beyond the cost in dollars of forest fires, there's risk to those who fight them
+# ::snt Beyond the cost in dollars of forest fires , there is risk to those who fight them
 (x12 / risk-01
 	:ARG1 (x3 / cost-01
 		:ARG1 (x8 / fire
@@ -951,36 +932,36 @@
 	:ARG1 (x16 / fight-01))
 
 # ::id 53
-# ::snt " We had an employee die of a heart attack fighting an arson fire, " Smallwood said, referring to a 1976 blaze
-(x18 / say-01
-	:ARG1 (x3 / have-03
-		:ARG0 (x2 / we)
-		:ARG1 (x6 / die-01
-			:mod (x5 / person
+# ::snt We had an employee die of a heart attack fighting an arson fire , Smallwood said , referring to a 1976 blaze
+(x16 / say-01
+	:ARG1 (x2 / have-03
+		:ARG0 (x1 / we)
+		:ARG1 (x5 / die-01
+			:mod (x4 / person
 				:ARG1-of (e / employ-01))
-			:ARG1 (x10 / attack-01
-				:ARG1 (x9 / heart)
-				:ARG1 (x14 / fire-01
-					:ARG1 (x13 / arson)))))
-	:ARG0 (x17 / person
+			:ARG1 (x9 / attack-01
+				:ARG1 (x8 / heart)
+				:ARG1 (x13 / fire-01
+					:ARG1 (x12 / arson)))))
+	:ARG0 (x15 / person
 		:name (n / name
 			:op1 "Smallwood"))
-	:ARG1 (x20 / refer-01
-		:ARG1 (x24 / blaze
-			:time (x23 / date-entity
+	:ARG1 (x18 / refer-01
+		:ARG1 (x22 / blaze
+			:time (x21 / date-entity
 				:year 1976))))
 
 # ::id 54
-# ::snt " We would have liked to have prosecuted someone in that case
-(x5 / like-01
-	:ARG0 (x2 / we)
-	:ARG1 (x8 / prosecute-01
-		:ARG1 (x9 / someone)
-		:time (x12 / case
-			:mod (x11 / that))))
+# ::snt We would have liked to have prosecuted someone in that case
+(x4 / like-01
+	:ARG0 (x1 / we)
+	:ARG1 (x7 / prosecute-01
+		:ARG1 (x8 / someone)
+		:time (x11 / case
+			:mod (x10 / that))))
 
 # ::id 55
-# ::snt And Dale Smallwood would have also liked to have known if the prosecutor would have considered a manslaughter charge against the arsonist .
+# ::snt And Dale Smallwood  would have also liked to have known if the prosecutor would have considered a manslaughter charge against the arsonist
 (x1 / and
 	:op2 (x7 / like-01
 		:ARG0 (x2 / newspaper

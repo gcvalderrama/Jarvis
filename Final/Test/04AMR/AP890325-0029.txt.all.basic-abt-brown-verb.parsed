@@ -1,5 +1,5 @@
 # ::id 1
-# ::snt The calm waters of Prince William Sound have stymied efforts to disperse the largest oil spill in U.S. history, which spewed from a ship that ran aground trying to avoid chunks of ice, officials said
+# ::snt The calm waters of Prince William Sound have stymied efforts to disperse the largest oil spill in U.S. history , which spewed from a ship that ran aground trying to avoid chunks of ice , officials said
 (x9 / stymie-01
 	:ARG0 (x3 / water
 		:mod (x2 / calm)
@@ -33,7 +33,7 @@
 														:ARG2 (o / official)))))))))))))))
 
 # ::id 2
-# ::snt The spill of some 270,000 barrels _ or 11.3 million gallons _ occurred early Friday when the 987-foot tanker Exxon Valdez went hard aground on Bligh Reef, about 25 miles outside Valdez, the northermost ice-free port in the United States
+# ::snt The spill of some 270,000 barrels _ or 11.3 million gallons _ occurred early Friday when the 987-foot tanker Exxon Valdez went hard aground on Bligh Reef , about 25 miles outside Valdez , the northermost ice-free port in the United States
 (x2 / spill-01
 	:ARG1 (x8 / or
 		:op1 (x6 / volume-quantity
@@ -110,7 +110,7 @@
 						:ARG1 (x35 / oil)))))))
 
 # ::id 4
-# ::snt Coast Guard spokesman Ed Wieliczkiewicz said Exxon officials plan to pump the oil remaining aboard the Exxon Valdez onto the Exxon Baton Rouge, another tanker
+# ::snt Coast Guard spokesman Ed Wieliczkiewicz  said Exxon officials plan to pump the oil remaining aboard the Exxon Valdez onto the Exxon Baton Rouge , another tanker
 (x6 / say-01
 	:ARG0 (x4 / newspaper
 		:name (n / name
@@ -148,7 +148,7 @@
 		:ARG0 xap0))
 
 # ::id 5
-# ::snt Early Friday the Exxon Valdez was losing 20,000 gallons of oil per hour, but the flow slowed to a trickle later
+# ::snt Early Friday the Exxon Valdez was losing 20,000 gallons of oil per hour , but the flow slowed to a trickle later
 (x15 / contrast-01
 	:ARG1 (x7 / lose-02
 		:time (x1 / early
@@ -187,51 +187,50 @@
 				:ARG1 (x25 / shore)))))
 
 # ::id 7
-# ::snt " This is the largest oil spill in U.S. history and it unfortunately took place in an enclosed water body with numerous islands, channels, bays and fiords, " said Richard Golob, publisher of the Golob Oil Pollution Bulletin
-(x32 / say-01
-	:ARG1 (x11 / and
-		:op1 (x7 / spill-01
-			:ARG1 (x2 / this)
-			:mod (x5 / large
-				:degree (m / most))
-			:ARG1 (x6 / oil)
-			:time (x10 / history
-				:poss (x9 / country
-					:name (n1 / name
-						:op1 "U.S.")))
-			:ARG1 (x20 / body
-				:mod (x13 / fortunate-41
-					:polarity -)
-				:mod (x18 / enclosed)
-				:mod (x19 / water)
-				:null_edge (x28 / and
-					:op2 (x25 / channel
-						:quant (x22 / numerous))
-					:op2 (x27 / bay)
-					:op2 (x29 / fiord)))))
-	:ARG0 (x34 / person
-		:name (n / name
-			:op1 "Golob")
-		:null_edge (x33 / null_tag)
-		:null_edge (x36 / publish-01
-			:ARG1 (x42 / bulletin
-				:mod (x41 / pollution
-					:mod (x40 / oil))))))
+# ::snt This is the largest oil spill in U.S. history and it unfortunately took place in an enclosed water body with numerous islands , channels , bays and fiords , said Richard Golob , publisher of the Golob Oil Pollution Bulletin
+(x10 / and
+	:op1 (x6 / spill-01
+		:domain (x1 / this)
+		:mod (x4 / large
+			:degree (m / most))
+		:ARG1 (x5 / oil)
+		:time (x9 / history
+			:poss (x8 / country
+				:name (n / name
+					:op1 "U.S.")))
+		:ARG1 (x19 / body
+			:mod (x12 / fortunate-41
+				:polarity -)
+			:mod (x17 / enclosed)
+			:mod (x18 / water)
+			:null_edge (x27 / and
+				:op2 (x24 / channel
+					:quant (x21 / numerous)
+					:ARG1-of (x30 / say-01)
+					:name (x31 / name
+						:op1 "Richard"
+						:op2 "Golob"
+						:ARG0-of (x34 / publish-01
+							:ARG1 (x40 / bulletin
+								:mod (x39 / pollution
+									:mod (x38 / oil))))))
+				:op2 (x26 / bay)
+				:op2 (x28 / fiord)))))
 
 # ::id 8
-# ::snt Gov. Steve Cowper said the ship was " impaled on the reef .
+# ::snt Gov. Steve Cowper said the ship was impaled on the reef
 (x4 / say-01
 	:ARG0 (x2 / newspaper
 		:name (n / name
 			:op1 "Steve"
 			:op2 "Cowper")
 		:ARG0-of (x1 / gov.))
-	:ARG1 (x9 / impale
+	:ARG1 (x8 / impale
 		:ARG1 (x6 / ship)
-		:time (x12 / reef)))
+		:time (x11 / reef)))
 
 # ::id 9
-# ::snt Gov. Steve Cowper said the vessel steered from the vessel course to avoid chunks of ice and did not return to the vessel normal traffic lane
+# ::snt Gov. Steve Cowper  said the vessel steered from the vessel  course to avoid chunks of ice and did not return to the vessel  normal traffic lane
 (x4 / say-01
 	:ARG0 (x2 / newspaper
 		:name (n / name
@@ -252,7 +251,7 @@
 				:mod (x25 / traffic)))))
 
 # ::id 10
-# ::snt Dan Lawn, an engineer for the state Department of Environmental Conservation, said the captain could not steer the Exxon Valdez back on course in time to avoid a collision
+# ::snt Dan Lawn , an engineer for the state Department of Environmental Conservation , said the captain could not steer the Exxon Valdez back on course in time to avoid a collision
 (x14 / say-01
 	:ARG0 (x2 / newspaper
 		:name (n / name
@@ -280,21 +279,19 @@
 					:ARG1 (x31 / collide-01))))))
 
 # ::id 11
-# ::snt Lawn likened the ship's situation to " trying to park a Cadillac in a Volkswagen spot .
+# ::snt Lawn likened the ship's situation to trying to park a Cadillac in a Volkswagen spot
 (x2 / liken
 	:ARG0 (x1 / lawn)
 	:ARG1 (x6 / situation
 		:poss (x4 / ship))
 	:ARG1-of (xap0 / cause-01
-		:ARG0 (x9 / try-01
-			:ARG1 (x11 / park-01
-				:ARG1 (x13 / publication
-					:name (n / name
-						:op1 "Cadillac"))
-				:ARG2 (x17 / spot)))))
+		:ARG0 (x8 / try-01
+			:ARG1 (x10 / park-01
+				:ARG1 (x12 / cadillac)
+				:location (x16 / spot)))))
 
 # ::id 12
-# ::snt 
+# ::snt Divers were to check the ship's hull and Divers  findings were to be used in making plans for the removal of crude oil still aboard the vessel
 (x9 / and
 	:op2 (x1 / diver
 		:ARG1 (x11 / thing
@@ -315,38 +312,38 @@
 			:poss (x6 / ship))))
 
 # ::id 13
-# ::snt " A spill of this size in such a complex environment promises to be a cleanup nightmare, " said Golob, a Cambridge, Mass.-based consultant whose firm has studied oil spills and environmental disasters for 15 years
-(x20 / say-01
-	:ARG1 (x12 / promise-01
-		:ARG0 (x3 / spill-01
-			:ARG1 (x6 / size
-				:mod (x5 / this))
-			:location (x11 / environment
-				:location (x10 / complex
-					:mod (x8 / such))))
-		:ARG2 (x17 / nightmare
-			:mod (x16 / cleanup)))
-	:ARG0 (x21 / person
+# ::snt A spill of this size in such a complex environment promises to be a cleanup nightmare , said Golob , a Cambridge , Mass.-based consultant whose firm has studied oil spills and environmental disasters for 15 years
+(x18 / say-01
+	:ARG1 (x11 / promise-01
+		:ARG0 (x2 / spill-01
+			:ARG1 (x5 / size
+				:mod (x4 / this))
+			:location (x10 / environment
+				:location (x9 / complex
+					:mod (x7 / such))))
+		:ARG2 (x16 / nightmare
+			:mod (x15 / cleanup)))
+	:ARG0 (x19 / person
 		:name (n / name
 			:op1 "Golob")
-		:ARG0-of (x27 / person
+		:ARG0-of (x25 / person
 			:ARG0-of (c / consult-01)
-			:location (x24 / country
+			:location (x22 / country
 				:name (n1 / name
 					:op1 "Cambridge"))
-			:location-of (x31 / study-01
-				:ARG0 (x29 / firm)
-				:ARG1 (x34 / and
-					:op1 (x33 / spill-01
-						:mod (x32 / oil))
-					:op2 (x36 / disaster
-						:ARG1 (x35 / environment)))
-				:duration (x39 / temporal-quantity
+			:location-of (x29 / study-01
+				:ARG0 (x27 / firm)
+				:ARG1 (x32 / and
+					:op1 (x31 / spill-01
+						:mod (x30 / oil))
+					:op2 (x34 / disaster
+						:ARG1 (x33 / environment)))
+				:duration (x37 / temporal-quantity
 					:unit (y / year)
 					:quant 15)))))
 
 # ::id 14
-# ::snt In Washington, Interior Department spokesman Steve Goldstein said efforts had begun to evacuate waterfowl, sea otters and other wildlife from the danger area
+# ::snt In Washington , Interior Department spokesman Steve Goldstein said efforts had begun to evacuate waterfowl , sea otters and other wildlife from the danger area
 (x9 / say-01
 	:location (x2 / city
 		:name (n / name
@@ -370,7 +367,7 @@
 			:ARG2 (x25 / area))))
 
 # ::id 15
-# ::snt The Exxon Valdez had loaded 1.2 million barrels of oil at the Alyeska Pipeline Service Co. marine terminal at Valdez and was en route to Long Beach, Calif., when the Exxon Valdez crunched onto the reef
+# ::snt The Exxon Valdez had loaded 1.2 million barrels of oil at the Alyeska Pipeline Service Co. marine terminal at Valdez and was en route to Long Beach , Calif. , when the Exxon Valdez  crunched onto the reef
 (x21 / and
 	:op1 (x5 / load-01
 		:ARG0 (x3 / valdez)
@@ -405,7 +402,7 @@
 				:ARG2 (x38 / reef)))))
 
 # ::id 16
-# ::snt The ship marks the second aniversary of a ship that ran aground trying to avoid chunks of ice maiden voyage today
+# ::snt The ship marks the second aniversary of a ship that ran aground trying to avoid chunks of ice  maiden voyage today
 (x3 / mark-01
 	:ARG0 (x2 / ship)
 	:ARG1 (x6 / aniversary
@@ -451,7 +448,7 @@
 		:unit (b1 / barrel)))
 
 # ::id 19
-# ::snt Alyeska spokesman Tom Brennan said that, at the reduced rate, the marine terminal's capacity would allow nine days of operation before the line would have to be shut down
+# ::snt Alyeska spokesman Tom Brennan said that , at the reduced rate , the marine terminal's capacity would allow nine days of operation before the line would have to be shut down
 (x5 / say-01
 	:ARG0 (x3 / newspaper
 		:name (n / name
@@ -478,7 +475,7 @@
 			:op1 (x31 / shut-05))))
 
 # ::id 20
-# ::snt Valdez, a town of about 3,000 year-round residents that grows to more than 4,000 with a summer influx of fishing industry workers and travelers, is a picturesque community about 125 miles east of Anchorage
+# ::snt Valdez , a town of about 3,000 year-round residents that grows to more than 4,000 with a summer influx of fishing industry workers and travelers , is a picturesque community about 125 miles east of Anchorage
 (x30 / community
 	:ARG0 (x1 / person
 		:name (n / name
@@ -511,7 +508,7 @@
 						:op1 "Anchorage"))))))
 
 # ::id 21
-# ::snt the Exxon Valdez relies on the fishing, oil and tourism industries
+# ::snt 
 (x4 / rely-01
 	:ARG0 (x3 / valdez)
 	:ARG1 (x10 / and
@@ -521,7 +518,7 @@
 			:mod (x11 / tourism))))
 
 # ::id 22
-# ::snt The sound is considered a playground for kayakers, sport fishermen and tourists
+# ::snt The sound is considered a playground for kayakers , sport fishermen and tourists
 (x4 / consider-01
 	:ARG1 (x2 / sound)
 	:ARG1 (x6 / playground
@@ -533,7 +530,7 @@
 				:ARG0-of (t / tour-01)))))
 
 # ::id 23
-# ::snt Jason Wells, executive director of the Valdez Fisheries Development Association, said Jason Wells believed the oil slick would cause little damage unless wind pushes Valdez Fisheries Development Association back toward Valdez
+# ::snt Jason Wells , executive director of the Valdez Fisheries Development Association , said Jason Wells  believed the oil slick would cause little damage unless wind pushes Valdez Fisheries Development Association  back toward Valdez
 (x13 / say-01
 	:ARG0 (x1 / newspaper
 		:name (n / name
@@ -578,7 +575,7 @@
 		:unit (x6 / season)))
 
 # ::id 25
-# ::snt Wells said the black cod fishery is scheduled to begin April 1, but the region's major herring fishery is not expected to get under way until mid-April
+# ::snt Wells said the black cod fishery is scheduled to begin April 1 , but the region's major herring fishery is not expected to get under way until mid-April
 (x14 / contrast-01
 	:ARG1 (x2 / say-01
 		:ARG0 (x1 / person
@@ -632,40 +629,38 @@
 										:op1 "Arctic"))))))))))
 
 # ::id 27
-# ::snt " the mammoth spill's of concern for two reasons : one is the size of the spill and that this is such a sensitive, very productive area, " said Lisa Speer, senior staff scientist with the Natural Resources Defense Council in New York
-(x32 / say-01
-	:ARG1 (x19 / and
-		:op1 (x15 / size
-			:domain (x4 / spill-01
-				:mod (x3 / mammoth)
-				:ARG1 (x7 / concern-01
-					:ARG1 (x10 / reason
-						:quant 2
-						:quant 1))))
-		:op2 (x29 / area
-			:domain (x21 / this)
-			:mod (x23 / such)
-			:mod (x25 / sensitive)
-			:mod (x28 / productive
-				:degree (x27 / very))))
-	:ARG0 (x33 / newspaper
-		:name (n / name
-			:op1 "Lisa"
-			:op2 "Speer")
-		:ARG0-of (x38 / scientist
-			:mod (x36 / senior)
-			:mod (x37 / person
-				:ARG2-of (s / staff-01))
-			:ARG1 (x41 / government-organization
-				:name (n1 / name
-					:op1 "Natural"
-					:op2 "Resources"
-					:op3 "Defense"
-					:op4 "Council")
-				:location (x47 / country
-					:name (n2 / name
-						:op1 "York")
-					:null_edge (x46 / null_tag))))))
+# ::snt the mammoth spill  is of concern for two reasons : one is the size of the spill and that this is such a sensitive , very productive area , said Lisa Speer , senior staff scientist with the Natural Resources Defense Council in New York
+(x30 / say-01
+	:ARG1 (x3 / spill-01
+		:mod (x2 / mammoth)
+		:ARG1 (x18 / and
+			:op2 (x6 / concern-01
+				:ARG1 (x9 / reason
+					:quant 2
+					:quant 1)
+				:ARG1 (x28 / area
+					:domain (x20 / this)
+					:mod (x22 / such)
+					:mod (x24 / sensitive)
+					:mod (x27 / productive
+						:degree (x26 / very)))
+				:ARG0 (x31 / name
+					:op1 "Lisa"
+					:op2 "Speer"
+					:ARG0-of (x36 / scientist
+						:mod (x34 / senior)
+						:mod (x35 / person
+							:ARG2-of (s / staff-01))
+						:ARG1 (x39 / government-organization
+							:name (n / name
+								:op1 "Natural"
+								:op2 "Resources"
+								:op3 "Defense"
+								:op4 "Council")
+							:location (x45 / country
+								:name (n1 / name
+									:op1 "York")
+								:null_edge (x44 / null_tag)))))))))
 
 # ::id 28
 # ::snt Valdez City Manager Doug Griffin said the 800-mile trans-Alaska pipeline which carries oil from Prudhoe Bay to Valdez and the marine terminal have an enviable environmental record
@@ -701,7 +696,7 @@
 			:mod (x26 / environment))))
 
 # ::id 29
-# ::snt But Valdez City Manager Doug Griffin added : " Living in Valdez, environmentalists sensitive about the trans-Alaska pipeline and efforts to open the Arctic National Wildlife Refuge to oil development 've always worried that sometime something like this could happen .
+# ::snt But Valdez City Manager Doug Griffin  added : Living in Valdez , environmentalists sensitive about the trans-Alaska pipeline and efforts to open the Arctic National Wildlife Refuge to oil development  have always worried that sometime something like this could happen
 (x1 / contrast-01
 	:ARG2 (x7 / add-01
 		:ARG0 (x5 / newspaper
@@ -710,39 +705,40 @@
 				:op2 "Griffin")
 			:ARG0-of (x2 / valdez)
 			:ARG0-of (x3 / city)
-			:ARG0-of (x4 / manager))
-		:ARG1 (x20 / and
-			:null_edge (x10 / null_tag
-				:location (x12 / country
-					:name (n1 / name
-						:op1 "Valdez")))
-			:op2 (x19 / pipeline
-				:mod (x18 / world-region
+			:ARG0-of (x4 / manager)))
+	:ARG2 (x19 / and
+		:op3 (x9 / live-01
+			:location (x11 / country
+				:name (n1 / name
+					:op1 "Valdez")))
+		:op1 (x14 / sensitive-41
+			:topic (x18 / pipeline
+				:mod (x17 / world-region
 					:name (n2 / name
-						:op1 "trans-Alaska")))
-			:op2 (x34 / worry-01
-				:ARG1 x10
-				:time (x33 / always)
-				:ARG1 (x40 / possible
-					:domain (x37 / something
-						:mod (x36 / sometime)
-						:ARG1-of (xap1 / resemble-01
-							:ARG2 (x39 / this))))
-				:ARG1 (xap0 / try-01
-					:op1 (x23 / open-01
-						:ARG1 (x26 / government-organization
-							:name (n4 / name
-								:op1 "National"
-								:op2 "Wildlife"
-								:op3 "Refuge"))
-						:ARG3 (x31 / develop-02
-							:ARG1 (x30 / oil)))
-					:op1 (x25 / organization
-						:name (n3 / name
-							:op1 "Arctic")))))))
+						:op1 "trans-Alaska"))))
+		:op2 (x33 / worry-01
+			:null_edge x19
+			:time (x32 / always)
+			:ARG1 (x39 / possible
+				:domain (x36 / something
+					:mod (x35 / sometime)
+					:ARG1-of (xap1 / resemble-01
+						:ARG2 (x38 / this))))
+			:ARG1 (xap0 / try-01
+				:op1 (x22 / open-01
+					:ARG1 (x25 / government-organization
+						:name (n4 / name
+							:op1 "National"
+							:op2 "Wildlife"
+							:op3 "Refuge"))
+					:ARG3 (x30 / develop-02
+						:ARG1 (x29 / oil)))
+				:op1 (x24 / organization
+					:name (n3 / name
+						:op1 "Arctic"))))))
 
 # ::id 30
-# ::snt Previously, the largest U.S. tanker spill was the Dec. 15, 1976, grounding of the Argo Merchant tanker off the Nantucket shoals off Massachusetts, in which 7.6 million gallons of oil spilled, Golob said
+# ::snt Previously , the largest U.S. tanker spill was the Dec. 15 , 1976 , grounding of the Argo Merchant tanker off the Nantucket shoals off Massachusetts , in which 7.6 million gallons of oil spilled , Golob said
 (x38 / say-01
 	:ARG1 (x15 / grounding
 		:time (x1 / previous)
@@ -777,7 +773,7 @@
 			:op1 "Golob")))
 
 # ::id 31
-# ::snt The largest tanker spill in history was in the July 19, 1979, collision off Tobago of the supertankers Atlantic Empress and Aegean Captain, in which 300,000 tons _ more than 80 million gallons _ of oil was lost
+# ::snt The largest tanker spill in history was in the July 19 , 1979 , collision off Tobago of the supertankers Atlantic Empress and Aegean Captain , in which 300,000 tons _ more than 80 million gallons _ of oil was lost
 (x4 / spill-01
 	:mod (x2 / large
 		:degree (m / most))

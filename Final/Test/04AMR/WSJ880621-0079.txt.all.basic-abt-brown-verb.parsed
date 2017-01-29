@@ -1,5 +1,5 @@
 # ::id 1
-# ::snt World Bank President Barber Conable was so well regarded during World Bank President Barber Conable 20-year career as a Republican congressman from New York that some journalists nicknamed World Bank President Barber Conable " H.R. " -- for " highly respected .
+# ::snt World Bank President Barber Conable was so well regarded during World Bank President Barber Conable  20-year career as a Republican congressman from New York that some journalists nicknamed World Bank President Barber Conable  H.R. for highly respected
 (x9 / regard-01
 	:ARG1 (x1 / company
 		:name (n / name
@@ -24,23 +24,22 @@
 		:source (x24 / country
 			:name (n2 / name
 				:op1 "York")
-			:null_edge (x23 / null_tag)))
-	:ARG1 (x28 / nickname-01
-		:ARG0 (x27 / journalist
-			:quant (x26 / some))
-		:ARG2 (x29 / name
-			:op1 "World"
-			:op2 "Bank"
-			:op3 "President"
-			:op4 "Barber"
-			:op5 "Conable"
-			:op6 "''"
-			:op7 "H.R.")
-		:purpose (x41 / respect-01
-			:degree (x40 / high))))
+			:null_edge (x23 / null_tag))
+		:ARG1-of (x28 / nickname-01
+			:ARG0 (x27 / journalist
+				:quant (x26 / some))
+			:ARG2 (x29 / name
+				:op1 "World"
+				:op2 "Bank"
+				:op3 "President"
+				:op4 "Barber"
+				:op5 "Conable"
+				:op6 "H.R.")
+			:duration (x37 / respect-01
+				:degree (x36 / high)))))
 
 # ::id 2
-# ::snt And to many on Capitol Hill, Mr. Conable still is
+# ::snt And to many on Capitol Hill , Mr. Conable still is
 (x1 / and
 	:op2 (x6 / country
 		:name (n / name
@@ -53,7 +52,7 @@
 	:mod (x10 / still))
 
 # ::id 3
-# ::snt Rep. Tom Foley, a liberal Democrat from Washington State, calls Tom Foley " a very strong asset " to the 151-nation institution " because of the enormous respect Tom Foley has on both sides of the aisle .
+# ::snt Rep. Tom Foley , a liberal Democrat from Washington State , calls Tom Foley  a very strong asset to the 151-nation institution because of the enormous respect Tom Foley  has on both sides of the aisle
 (x12 / call-03
 	:ARG0 (x2 / newspaper
 		:name (n / name
@@ -68,24 +67,24 @@
 		:name (n1 / name
 			:op1 "Tom"
 			:op2 "Foley"))
-	:ARG1 (x19 / asset
-		:mod (x18 / strong
-			:degree (x17 / very))
-		:ARG2 (x24 / institution
-			:mod (x23 / 151-nation))
-		:ARG1-of (x26 / cause-01
-			:ARG0 (x30 / respect-01
-				:mod (x29 / enormous)
-				:ARG0 (x36 / side
-					:ARG0 (x31 / newspaper
+	:ARG2 (x18 / asset
+		:mod (x17 / strong
+			:degree (x16 / very))
+		:ARG2 (x22 / institution
+			:mod (x21 / 151-nation))
+		:ARG1-of (x23 / cause-01
+			:ARG0 (x27 / respect-01
+				:mod (x26 / enormous)
+				:ARG0 (x33 / side
+					:ARG0 (x28 / newspaper
 						:name (n3 / name
 							:op1 "Tom"
 							:op2 "Foley"))
-					:mod (x35 / both)
-					:poss (x39 / aisle))))))
+					:mod (x32 / both)
+					:poss (x36 / aisle))))))
 
 # ::id 4
-# ::snt But at the World Bank, Mr. Conable finds World Bank President Barber Conable under fire
+# ::snt But at the World Bank , Mr. Conable finds World Bank President Barber Conable  under fire
 (x1 / contrast-01
 	:ARG2 (x9 / find-01
 		:location (x4 / organization
@@ -108,7 +107,7 @@
 		:location (x16 / fire-01)))
 
 # ::id 5
-# ::snt After a year and a half in office, World Bank President Barber Conable has failed to move the bank into a leadership role on the Third World debt problem
+# ::snt After a year and a half in office , World Bank President Barber Conable  has failed to move the bank into a leadership role on the Third World debt problem
 (x16 / fail-01
 	:time (x1 / after
 		:op1 (x4 / and
@@ -136,42 +135,44 @@
 				:mod (x29 / debt)))))
 
 # ::id 6
-# ::snt " The World Bank has been reluctant to step out on this issue in confrontation and conflict with the Treasury, " charges Sen. Bill Bradley, a New Jersey Democrat and Congress's leading voice on the debt problem
-(x23 / charge-05
-	:ARG1 (x7 / reluctant
-		:ARG1 (x9 / step-04
-			:ARG0 (x3 / organization
-				:name (n1 / name
-					:op1 "World"
-					:op2 "Bank"))
-			:ARG2 (x13 / issue
-				:mod (x12 / this))
-			:ARG2 (x16 / and
-				:op1 (x15 / confront-01
-					:ARG1 (x20 / organization
+# ::snt The World Bank has been reluctant to step out on this issue in confrontation and conflict with the Treasury , charges Sen. Bill Bradley , a New Jersey Democrat and Congress's leading voice on the debt problem
+(x6 / reluctant
+	:ARG0 (x2 / organization
+		:name (n / name
+			:op1 "World"
+			:op2 "Bank"))
+	:ARG1 (x8 / step-04
+		:ARG0 x2
+		:ARG2 (x12 / issue
+			:mod (x11 / this))
+		:ARG2 (x15 / and
+			:op1 (x14 / confront-01
+				:ARG1 (x19 / organization
+					:name (n1 / name
+						:op1 "Treasury")))
+			:op2 (x16 / conflict-01)))
+	:ARG1-of (xap0 / cause-01
+		:ARG0 (x21 / charge-05
+			:ARG1 (x23 / name
+				:op1 "Bill"
+				:op2 "Bradley"
+				:ARG0-of (x22 / sen.))
+			:ARG2 (x30 / and
+				:op2 (x27 / city
+					:name (n2 / name
+						:op1 "New"
+						:op2 "Jersey"
+						:op3 "Democrat"))
+				:op2 (x34 / voice
+					:poss (x31 / government-organization
 						:name (n3 / name
-							:op1 "Treasury")))
-				:op2 (x17 / conflict-01))))
-	:ARG1 (x25 / name
-		:op1 "Bill"
-		:op2 "Bradley"
-		:ARG0-of (x24 / sen.))
-	:ARG2 (x32 / and
-		:op2 (x29 / city
-			:name (n / name
-				:op1 "New"
-				:op2 "Jersey"
-				:op3 "Democrat"))
-		:op2 (x36 / voice
-			:poss (x33 / government-organization
-				:name (n2 / name
-					:op1 "Congress"))
-			:mod (x35 / leading)
-			:ARG1 (x40 / problem
-				:mod (x39 / debt)))))
+							:op1 "Congress"))
+					:mod (x33 / leading)
+					:ARG1 (x38 / problem
+						:mod (x37 / debt)))))))
 
 # ::id 7
-# ::snt Rep. John LaFalce, a New York Democrat and another leader on the issue, agrees
+# ::snt Rep. John LaFalce , a New York Democrat and another leader on the issue , agrees
 (x16 / agree-01
 	:ARG0 (x2 / person
 		:name (n / name
@@ -189,56 +190,56 @@
 			:ARG1 (x14 / issue))))
 
 # ::id 8
-# ::snt " There surely is a much larger role for the World Bank in the debt problem than a much larger role for the World Bank in the debt problem has played so far, but Rep. John LaFalce , a New York Democrat and another leader on the issue just ca n't get out ahead of the administration, " John LaFalce says
-(x63 / say-01
-	:ARG1 (x3 / sure
-		:domain (x8 / role
-			:mod (x7 / large
+# ::snt There surely is a much larger role for the World Bank in the debt problem than a much larger role for the World Bank in the debt problem  has played so far , but Rep. John LaFalce , a New York Democrat and another leader on the issue  just ca not get out ahead of the administration , John LaFalce  says
+(x61 / say-01
+	:ARG1 (x2 / sure
+		:domain (x7 / role
+			:mod (x6 / large
 				:degree (xap0 / more
-					:degree (x6 / much)))
-			:concession (x16 / problem
-				:poss (x11 / organization
+					:degree (x5 / much)))
+			:concession (x15 / problem
+				:poss (x10 / organization
 					:name (n1 / name
 						:op1 "World"
 						:op2 "Bank"))
-				:mod (x15 / debt))
-			:time (x31 / play-08
-				:ARG1 (x29 / problem
-					:mod (x20 / large
+				:mod (x14 / debt))
+			:time (x30 / play-08
+				:ARG1 (x28 / problem
+					:mod (x19 / large
 						:degree (xap1 / more
-							:degree (x19 / much)))
-					:poss (x24 / organization
+							:degree (x18 / much)))
+					:poss (x23 / organization
 						:name (n3 / name
 							:op1 "World"
 							:op2 "Bank"))
-					:topic (x28 / debt))))
-		:domain (x53 / get-05
-			:ARG1 (x44 / and
-				:op1 (x37 / person
+					:topic (x27 / debt))))
+		:domain (x52 / get-05
+			:ARG1 (x43 / and
+				:op1 (x36 / person
 					:name (n2 / name
 						:op1 "John"
 						:op2 "LaFalce")
-					:ARG0-of (x36 / rep.)
-					:ARG0-of (x43 / have-org-role-91
+					:ARG0-of (x35 / rep.)
+					:ARG0-of (x42 / have-org-role-91
 						:ARG1 (p / political-party
 							:name (n4 / name
 								:op1 "Democrat"))
-						:null_edge (x42 / country
+						:null_edge (x41 / country
 							:name (n5 / name
 								:op1 "York")))
-					:ARG0-of (x46 / lead-02
-						:mod (x45 / another)
-						:ARG1 (x49 / issue))))
+					:ARG0-of (x45 / lead-02
+						:mod (x44 / another)
+						:ARG1 (x48 / issue))))
 			:ARG2 (xap2 / government-organization
-				:ARG0-of (x58 / administrate-01
-					:mod (x50 / just)))))
-	:ARG0 (x61 / person
+				:ARG0-of (x57 / administrate-01
+					:mod (x49 / just)))))
+	:ARG0 (x59 / person
 		:name (n / name
 			:op1 "John"
 			:op2 "LaFalce")))
 
 # ::id 9
-# ::snt While the debt morass has deepened, Mr. Conable's World Bank has looked inward, shuffling the debt morass organization charts around in a disruptive reorganization and then campaigning for a $ 74.8 billion increase in its capital
+# ::snt While the debt morass has deepened , Mr. Conable's World Bank has looked inward , shuffling the debt morass  organization charts around in a disruptive reorganization and then campaigning for a $ 74.8 billion increase in its capital
 (x14 / look-01
 	:time (x6 / deepen
 		:ARG1 (x4 / morass
@@ -266,7 +267,7 @@
 				:ARG1 (x39 / capital)))))
 
 # ::id 10
-# ::snt As Congress considers the increase, liberal critics on Capitol Hill are demanding that Mr. Conable show World Bank President Barber Conable is ready to use the bank's vast resources to make some direct impact on reducing the huge burden of Third World debt
+# ::snt As Congress considers the increase , liberal critics on Capitol Hill are demanding that Mr. Conable show World Bank President Barber Conable  is ready to use the bank's vast resources to make some direct impact on reducing the huge burden of Third World debt
 (x13 / demand-01
 	:condition (x3 / consider-01
 		:ARG0 (x2 / government-organization
@@ -310,7 +311,7 @@
 							:null_edge (x44 / null_tag))))))))
 
 # ::id 11
-# ::snt House Democrats, in fact, cut out of the foreign-aid bill passed last month all $ 70 million the administration had sought for the first year of the U.S. share of the increase in capital
+# ::snt House Democrats , in fact , cut out of the foreign-aid bill passed last month all $ 70 million the administration had sought for the first year of the U.S. share of the increase in capital
 (x7 / cut-01
 	:prep-in (x5 / fact)
 	:ARG2 (x12 / bill
@@ -347,7 +348,7 @@
 					:topic (x18 / debt))))))
 
 # ::id 13
-# ::snt So far, Mr. Conable has approached the debt crisis more like a cautious financier than a bold politician
+# ::snt So far , Mr. Conable has approached the debt crisis more like a cautious financier than a bold politician
 (x7 / approach-02
 	:ARG0 (x5 / person
 		:name (n / name
@@ -361,7 +362,7 @@
 			:mod (x18 / bold))))
 
 # ::id 14
-# ::snt World Bank President Barber Conable has clung to the bank's traditional role of a conventional lender and adviser to developing nations and has deferred on ideas about the debt to the man who picked World Bank President Barber Conable for World Bank President Barber Conable job -- U.S. Treasury Secretary James Baker
+# ::snt World Bank President Barber Conable  has clung to the bank's traditional role of a conventional lender and adviser to developing nations and has deferred on ideas about the debt to the man who picked World Bank President Barber Conable  for World Bank President Barber Conable  job U.S. Treasury Secretary James Baker
 (x23 / and
 	:op1 (x7 / cling
 		:ARG0 (x4 / newspaper
@@ -396,54 +397,60 @@
 							:op3 "President"
 							:op4 "Barber"
 							:op5 "Conable")
-						:ARG1 (x47 / job
-							:poss (x42 / organization
-								:name (n2 / name
-									:op1 "World"))
-							:null_edge (x43 / null_tag)
+						:beneficiary (x52 / person
+							:name (n2 / name
+								:op1 "Baker")
+							:null_edge (x43 / null_tag
+								:mod (x42 / organization
+									:name (n6 / name
+										:op1 "World")))
 							:null_edge (x44 / have-org-role-91
 								:ARG2 (p2 / president))
-							:mod (x46 / person
+							:null_edge (x45 / person
 								:name (n3 / name
+									:op1 "Barber"))
+							:null_edge (x46 / person
+								:name (n4 / name
 									:op1 "Conable"))
-							:name (x52 / name
-								:op1 "James"
-								:op2 "Baker"
-								:ARG0-of (x51 / have-org-role-91
-									:ARG2 (s / secretary)
-									:mod (x50 / treasury
-										:ARG1 (x49 / country
-											:name (n4 / name
-												:op1 "U.S."))))))))))))
+							:null_edge (x47 / job)
+							:null_edge (x50 / have-org-role-91
+								:ARG2 (s / secretary)
+								:mod (x49 / treasury
+									:ARG1 (x48 / country
+										:name (n7 / name
+											:op1 "U.S."))))
+							:null_edge (x51 / person
+								:name (n5 / name
+									:op1 "James")))))))))
 
 # ::id 15
-# ::snt Mr. Conable subscribes to the " Baker Plan, " which stresses new lending by commercial banks and the World Bank to debtor countries that adopt growth-oriented, market-based economic reforms
+# ::snt Mr. Conable subscribes to the Baker Plan , which stresses new lending by commercial banks and the World Bank to debtor countries that adopt growth-oriented , market-based economic reforms
 (x3 / subscribe-01
 	:ARG0 (x2 / person
 		:name (n / name
 			:op1 "Conable")
 		:null_edge (x1 / null_tag))
-	:ARG2 (x8 / plan
-		:ARG0-of (x12 / stress-01
-			:ARG1 (x14 / lending
-				:mod (x13 / new)
-				:ARG0 (x18 / and
-					:op1 (x17 / bank
-						:mod (x16 / commerce))
-					:op2 (x20 / organization
+	:ARG2 (x7 / plan
+		:ARG0-of (x10 / stress-01
+			:ARG1 (x12 / lending
+				:mod (x11 / new)
+				:ARG0 (x16 / and
+					:op1 (x15 / bank
+						:mod (x14 / commerce))
+					:op2 (x18 / organization
 						:name (n1 / name
 							:op1 "World"
 							:op2 "Bank")))
-				:ARG2 (x24 / country
-					:mod (x23 / debtor)
-					:ARG0-of (x26 / adopt-01
-						:ARG1 (x31 / reform-01
-							:duration (x27 / growth-oriented)
-							:mod (x29 / market-based)
-							:ARG1 (x30 / economy))))))))
+				:ARG2 (x22 / country
+					:mod (x21 / debtor)
+					:ARG0-of (x24 / adopt-01
+						:ARG1 (x29 / reform-01
+							:duration (x25 / growth-oriented)
+							:mod (x27 / market-based)
+							:ARG1 (x28 / economy))))))))
 
 # ::id 16
-# ::snt The bank has tried to help the countries by tiding a conventional lender and adviser over with some new loans
+# ::snt The bank has tried to help the countries by tiding a conventional lender and adviser  over with some new loans
 (x4 / try-01
 	:ARG0 (x2 / bank)
 	:ARG1 (x6 / help-01
@@ -462,7 +469,7 @@
 						:mod (x19 / new)))))))
 
 # ::id 17
-# ::snt 
+# ::snt That policy contrasts sharply with some of the more aggressive debt-reduction plans
 (x3 / contrast-01
 	:ARG0 (x2 / policy
 		:mod (x1 / that))
@@ -475,7 +482,7 @@
 				:mod (x11 / debt-reduction)))))
 
 # ::id 18
-# ::snt Sen. Bradley, worried that the debt burden stalls growth and threatens political stability in developing countries, proposes that Third World debtors be required to make certain economic reforms ; in return, Third World debtors lending banks would forgive some of the loans and write Third World debtors down on Third World debtors books
+# ::snt Sen. Bradley , worried that the debt burden stalls growth and threatens political stability in developing countries , proposes that Third World debtors be required to make certain economic reforms ; in return , Third World debtors  lending banks would forgive some of the loans and write Third World debtors  down on Third World debtors  books
 (x / xconcept
 	:x (x31 / and
 		:op2 (x19 / propose-01
@@ -529,53 +536,54 @@
 						:source-of (x55 / debtor)))))))
 
 # ::id 19
-# ::snt 
-(x27 / propose-01
-	:time (x14 / quit-01
-		:mod (x1 / even)
-		:ARG0 (x3 / organization
-			:name (n / name
-				:op1 "World"
-				:op2 "Bank"))
-		:mod (x6 / longtime)
-		:mod (x7 / finance)
-		:ARG1 (x16 / bank
-			:name (x10 / name
-				:op1 "Eugene"
-				:op2 "Rotberg"))
-		:ARG1 (x18 / government-organization
-			:name (n1 / name
-				:op1 "Merrill"
-				:op2 "Lynch"))
-		:ARG1 (x25 / plan-01
-			:ARG0 (x24 / reorganization)))
-	:ARG1 (x34 / guarantee-01
-		:time (x29 / month
-			:mod (x28 / last))
-		:ARG0 (x32 / organization
-			:name (n2 / name
-				:op1 "World"
-				:op2 "Bank"))
-		:ARG1 (x38 / loan-01
-			:mod (x35 / new))
-		:ARG2 (x42 / country
-			:null_edge (x41 / null_tag))))
+# ::snt Even the World Bank's longtime financial wizard , Eugene Rotberg who quit the bank for Merrill Lynch over Mr. Conable's reorganization plan proposed last month that the World Bank guarantee new 20-year commercial-bank loans to Third World countries
+(x8 / wizard
+	:mod (x1 / even)
+	:poss (x3 / organization
+		:name (n / name
+			:op1 "World"
+			:op2 "Bank"))
+	:mod (x6 / longtime)
+	:mod (x7 / finance)
+	:name (x10 / name
+		:op1 "Eugene"
+		:op2 "Rotberg"
+		:ARG0-of (x13 / quit-01
+			:ARG1 (x15 / bank)
+			:ARG1 (x17 / government-organization
+				:name (n1 / name
+					:op1 "Merrill"
+					:op2 "Lynch"))
+			:ARG1 (x24 / plan-01
+				:ARG0 (x23 / reorganization)
+				:ARG1-of (x25 / propose-01
+					:time (x27 / month
+						:mod (x26 / last)
+						:ARG0-of (x32 / guarantee-01
+							:ARG0 (x30 / organization
+								:name (n2 / name
+									:op1 "World"
+									:op2 "Bank"))
+							:ARG1 (x36 / loan-01
+								:mod (x33 / new))
+							:ARG2 (x40 / country
+								:null_edge (x39 / null_tag)))))))))
 
 # ::id 20
-# ::snt Other experts advocate a " debt facility " to buy and refinance the debts
+# ::snt Other experts advocate a debt facility to buy and refinance the debts
 (x3 / advocate-01
 	:ARG0 (x2 / person
 		:ARG1-of (e / expert-41)
 		:mod (x1 / other))
-	:ARG1 (x7 / facility
-		:mod (x6 / debt))
-	:ARG1 (x11 / and
-		:op1 (x10 / buy-01
-			:ARG1 (x14 / debt))
-		:op2 (x12 / refinance)))
+	:ARG1 (x6 / facility
+		:mod (x5 / debt)
+		:ARG1 (x9 / and
+			:op1 (x8 / buy-01
+				:ARG1 (x12 / debt))
+			:op2 (x10 / refinance))))
 
 # ::id 21
-# ::snt Defending Eugene Rotberg approach to the debt problem, Mr. Conable explains : " Other experts are n't a financial institution but a development institution
+# ::snt Defending Eugene Rotberg  approach to the debt problem , Mr. Conable explains : Other experts  are not a financial institution but a development institution
 (x12 / explain-01
 	:ARG0 (x1 / defend-01
 		:ARG1 (x4 / approach-02
@@ -588,17 +596,17 @@
 		:name (n / name
 			:op1 "Conable")
 		:null_edge (x10 / null_tag))
-	:ARG1 (x22 / contrast-01
-		:ARG2 (x21 / institution
-			:ARG0 (x16 / person
+	:ARG1 (x21 / contrast-01
+		:ARG2 (x20 / institution
+			:domain (x15 / person
 				:ARG1-of (e / expert-41)
-				:mod (x15 / other))
-			:mod (x20 / finance))
-		:ARG2 (x25 / institution
-			:ARG1 (x24 / develop-02))))
+				:mod (x14 / other))
+			:mod (x19 / finance))
+		:ARG2 (x24 / institution
+			:ARG1 (x23 / develop-02))))
 
 # ::id 22
-# ::snt Other experts ca n't go to our member countries and say, ` Give Other experts a tremendous capital increase so Other experts can assume the obligations of all these other creditors that a developing country owes .
+# ::snt Other experts  ca not go to our member countries and say , Give Other experts  a tremendous capital increase so Other experts  can assume the obligations of all these other creditors that a developing country owes
 (x10 / and
 	:op1 (x5 / go-01
 		:ARG0 (x2 / person
@@ -609,27 +617,27 @@
 				:ARG2 (m / member))))
 	:op2 (x11 / say-01
 		:ARG0 x2
-		:ARG1 (x16 / person
+		:ARG1 (x15 / person
 			:ARG1-of (e1 / expert-41)
-			:mod (x15 / other)
-			:ARG2 (x20 / increase-01
-				:ARG1 (x19 / capital
-					:mod (x18 / tremendous)
-					:mod (x24 / possible
-						:domain (x25 / assume-01
-							:ARG0 (x23 / person
+			:mod (x14 / other)
+			:ARG2 (x19 / increase-01
+				:ARG1 (x18 / capital
+					:mod (x17 / tremendous)
+					:mod (x23 / possible
+						:domain (x24 / assume-01
+							:ARG0 (x22 / person
 								:ARG1-of (e2 / expert-41)
-								:mod (x22 / other))
-							:ARG1 (x27 / obligate-01
-								:ARG1 (x32 / creditor
-									:quant (x29 / all)
-									:mod (x31 / other)
-									:ARG1-of (x37 / owe-01
-										:ARG0 (x36 / country
-											:ARG1-of (x35 / develop-02))))))))))))
+								:mod (x21 / other))
+							:ARG1 (x26 / obligate-01
+								:ARG1 (x31 / creditor
+									:quant (x28 / all)
+									:mod (x30 / other)
+									:ARG1-of (x36 / owe-01
+										:ARG0 (x35 / country
+											:ARG1-of (x34 / develop-02))))))))))))
 
 # ::id 23
-# ::snt Obviously, that would be viewed as Other experts not performing a development function but Other experts simply accepting other people's risks .
+# ::snt Obviously , that would be viewed as Other experts  not performing a development function but Other experts  simply accepting other people's risks
 (x6 / view-02
 	:mod (x1 / obvious-41)
 	:ARG1 (x15 / contrast-01
@@ -656,8 +664,8 @@
 		:ARG1 (x5 / view-02)))
 
 # ::id 25
-# ::snt Jeffrey Sachs, a Harvard economist who has offered one of many debt-reduction plans, says the World Bank's officials " have the great potential to play a central role in the problem, but the World Bank's officials 're basically ducking
-(x36 / contrast-01
+# ::snt Jeffrey Sachs , a Harvard economist who has offered one of many debt-reduction plans , says the World Bank's officials have the great potential to play a central role in the problem , but the World Bank's officials  are basically ducking
+(x35 / contrast-01
 	:ARG1 (x16 / say-01
 		:ARG0 (x1 / newspaper
 			:name (n / name
@@ -672,11 +680,11 @@
 						:ARG2 (x14 / plan-01
 							:quant (x12 / many)
 							:mod (x13 / debt-reduction))))))
-		:ARG1 (x28 / play-01
-			:degree (x25 / great)
-			:ARG1 (x31 / role
-				:mod (x30 / central))
-			:ARG1 (x34 / problem)
+		:ARG1 (x27 / play-01
+			:mod (x24 / great)
+			:ARG1 (x30 / role
+				:mod (x29 / central)
+				:topic (x33 / problem))
 			:ARG0 (xap0 / person
 				:ARG0-of (x21 / have-org-role-91
 					:ARG2 (o / official)
@@ -684,17 +692,17 @@
 						:name (n2 / name
 							:op1 "World"
 							:op2 "Bank")))
-				:op3 (x44 / duck
+				:op3 (x43 / duck
 					:ARG0 (xap1 / person
-						:ARG0-of (x41 / have-org-role-91
+						:ARG0-of (x40 / have-org-role-91
 							:ARG2 (o1 / official)
-							:ARG1 (x38 / organization
+							:ARG1 (x37 / organization
 								:name (n3 / name
 									:op1 "World"
 									:op2 "Bank")))))))))
 
 # ::id 26
-# ::snt There is a lack of intellectual leadership within the bank Harvard .
+# ::snt There is a lack of intellectual leadership within the bank Harvard
 (x4 / lack-01
 	:ARG1 (x7 / lead-02
 		:mod (x6 / intellectual)
@@ -704,7 +712,7 @@
 					:op1 "Harvard")))))
 
 # ::id 27
-# ::snt Even some Reagan administration officials privately despair of Mr. Conable's leadership and fear that despair of Mr. Conable's leadership and may have been a mistake to appoint President Reagan
+# ::snt Even some Reagan administration officials privately despair of Mr. Conable's leadership and fear that despair of Mr. Conable's leadership and  may have been a mistake to appoint President Reagan
 (x / xconcept
 	:x (x13 / and
 		:op1 (x7 / despair-01
@@ -734,7 +742,7 @@
 	:x (x22 / and))
 
 # ::id 28
-# ::snt While financial experts often urge the bank to do more, the ponderous institution has intervened only about half a dozen times in debt crises, usually just to guarantee a small portion of a commercial-bank loan package
+# ::snt While financial experts often urge the bank to do more , the ponderous institution has intervened only about half a dozen times in debt crises , usually just to guarantee a small portion of a commercial-bank loan package
 (x16 / intervene-01
 	:purpose (x5 / urge-01
 		:ARG0 (x3 / person
@@ -760,7 +768,7 @@
 				:ARG1-of (x37 / loan-01)))))
 
 # ::id 29
-# ::snt Mr. Conable makes World Bank clear that World Bank wo n't do that often
+# ::snt Mr. Conable makes World Bank  clear that World Bank  wo not do that often
 (x3 / make-02
 	:ARG0 (x2 / person
 		:name (n / name
@@ -778,7 +786,7 @@
 		:frequency (x14 / often)))
 
 # ::id 30
-# ::snt Recently, commercial-bank lenders to Brazil tried to get the World Bank to insure a portion of a big new loan package commercial-bank lenders to Brazil were negotiating
+# ::snt Recently , commercial-bank lenders to Brazil tried to get the World Bank to insure a portion of a big new loan package commercial-bank lenders to Brazil  were negotiating
 (x7 / try-01
 	:time (x1 / recent)
 	:ARG0 (x4 / lender
@@ -806,7 +814,7 @@
 									:op1 "Brazil")))))))))
 
 # ::id 31
-# ::snt But the U.S. Treasury was firmly opposed to the idea, saying the U.S. Treasury was unnecessary in Brazil's case and might foster the impression that such guarantees should be common
+# ::snt But the U.S. Treasury was firmly opposed to the idea , saying the U.S. Treasury  was unnecessary in Brazil's case and might foster the impression that such guarantees should be common
 (x1 / contrast-01
 	:ARG2 (x7 / oppose-01
 		:ARG0 (x4 / organization
@@ -833,7 +841,7 @@
 									:mod (x28 / such))))))))))
 
 # ::id 32
-# ::snt Secretary Baker says Mr. Conable is being criticized largely by legislators and academicians who favor grand debt-relief schemes that would " take the debt and put Third World debt on the backs of the taxpayers
+# ::snt Secretary Baker says Mr. Conable is being criticized largely by legislators and academicians who favor grand debt-relief schemes that would take the debt and put Third World debt  on the backs of the taxpayers
 (x3 / say-01
 	:ARG0 (x2 / person
 		:name (n / name
@@ -849,19 +857,19 @@
 		:ARG0 (x12 / and
 			:op1 (x11 / legislator)
 			:op2 (x13 / academician)
-			:op1 (x15 / favor-01
-				:ARG1 (x18 / scheme
-					:mod (x16 / grand)
-					:mod (x17 / debt-relief))
-				:ARG1 (x25 / and
-					:op2 (x24 / debt)
-					:op1 (x29 / debt
-						:null_edge (x28 / null_tag)
-						:ARG1 (x32 / back
-							:ARG1-of (x33 / include-91))))))))
+			:op2 (x24 / and
+				:op1 (x15 / favor-01
+					:ARG1 (x18 / scheme
+						:mod (x16 / grand)
+						:mod (x17 / debt-relief))
+					:ARG1 (x23 / debt)
+					:ARG1 (x28 / debt
+						:null_edge (x27 / null_tag)
+						:ARG2 (x31 / back
+							:ARG1-of (x32 / include-91))))))))
 
 # ::id 33
-# ::snt U.S. Treasury Secretary James Baker 'll tell you who 'll pay for Third World debt : you and me when legislators and academicians who favor grand debt-relief schemes that would " take the debt file legislators and academicians who favor grand debt-relief schemes that would " take the debt 1040s
+# ::snt U.S. Treasury Secretary James Baker  will tell you who will pay for Third World debt  : you and me when legislators and academicians who favor grand debt-relief schemes that would take the debt  file legislators and academicians who favor grand debt-relief schemes that would take the debt  1040s
 (x7 / tell-01
 	:ARG0 (x4 / newspaper
 		:name (n / name
@@ -873,7 +881,7 @@
 				:ARG1 (x1 / country
 					:name (n2 / name
 						:op1 "U.S.")))))
-	:ARG1 (x8 / you)
+	:ARG2 (x8 / you)
 	:ARG1 (x11 / pay-01
 		:ARG0 x8
 		:ARG3 (x13 / company
@@ -883,34 +891,33 @@
 		:ARG3 (x15 / debt))
 	:ARG1 (x18 / and
 		:op1 (x17 / you))
-	:ARG1 (x37 / and
-		:op2 (x22 / and
-			:op1 (x21 / legislator)
-			:op2 (x23 / academician
+	:ARG1 (x34 / file
+		:ARG1 (x22 / and
+			:op1 (x21 / legislator
 				:ARG0-of (x25 / favor-01
 					:ARG1 (x28 / scheme
 						:mod (x26 / grand)
-						:mod (x27 / debt-relief)))))
-		:op1 (x36 / legislator
-			:mod (x35 / file
-				:ARG1 (x34 / debt))
-			:ARG0-of (x40 / favor-01
-				:ARG1 (x43 / scheme
-					:mod (x41 / grand)
-					:mod (x42 / debt-relief)
-					:ARG0-of (x45 / would
-						:null_edge (x49 / debt)))))
-		:op2 (x38 / academician)))
+						:mod (x27 / debt-relief))
+					:ARG1 (x33 / debt)))
+			:op2 (x23 / academician))
+		:ARG1 (x36 / and
+			:op1 (x35 / legislator
+				:ARG0-of (x39 / favor-01
+					:ARG1 (x42 / scheme
+						:mod (x40 / grand)
+						:mod (x41 / debt-relief)
+						:mod (x47 / debt))))
+			:op2 (x37 / academician))))
 
 # ::id 34
-# ::snt Third World debt's a bad idea
+# ::snt Third World debt  is a bad idea
 (x7 / idea
 	:domain (x3 / debt
 		:null_edge (x2 / null_tag))
 	:mod (x6 / bad))
 
 # ::id 35
-# ::snt They want Barber to subscribe to Third World debt, and U.S. Treasury Secretary James Baker think that World Bank President Barber Conable sees that Third World debt's a bad idea .
+# ::snt They want Barber to subscribe to Third World debt  , and U.S. Treasury Secretary James Baker  think that World Bank President Barber Conable  sees that Third World debt  is a bad idea
 (x11 / and
 	:op2 (x2 / want-01
 		:ARG0 (x1 / they)
@@ -918,7 +925,7 @@
 			:ARG0 x1
 			:ARG1 (x9 / debt
 				:mod (x8 / country
-					:name (n1 / name
+					:name (n2 / name
 						:op1 "World")))))
 	:op2 (x17 / think-01
 		:ARG0 x1
@@ -928,69 +935,67 @@
 				:op2 "Baker")
 			:ARG0-of (x13 / treasury
 				:ARG1 (x12 / country
-					:name (n2 / name
+					:name (n3 / name
 						:op1 "U.S.")))
 			:ARG0-of (x14 / have-org-role-91
 				:ARG2 (s / secretary)))
-		:ARG1 (x32 / idea
-			:domain (x28 / debt
-				:mod (x18 / that)
-				:poss (x19 / organization
-					:name (n3 / name
-						:op1 "World"))
-				:null_edge (x20 / null_tag)
-				:null_edge (x21 / have-org-role-91
-					:ARG2 (p / president))
-				:poss (x22 / person
-					:name (n4 / name
-						:op1 "Barber"))
-				:null_edge (x23 / person
-					:name (n5 / name
-						:op1 "Conable"))
-				:null_edge (x24 / see-01)
-				:mod (x25 / that)
-				:null_edge (x27 / null_tag))
-			:mod (x31 / bad))))
+		:ARG1 (x24 / see-01
+			:ARG0 (x22 / newspaper
+				:name (n1 / name
+					:op1 "Barber"
+					:op2 "Conable")
+				:null_edge (x20 / null_tag
+					:mod (x19 / organization
+						:name (n4 / name
+							:op1 "World")))
+				:ARG0-of (x21 / have-org-role-91
+					:ARG2 (p / president)))
+			:ARG1 (x32 / idea
+				:domain (x28 / debt
+					:null_edge (x27 / null_tag))
+				:mod (x31 / bad)))))
 
 # ::id 36
-# ::snt Yet even inside the bank, there is increasing worry that the Third World debt -- totaling $ 1.19 trillion last year -- frustrates the bank's goals
+# ::snt Yet even inside the bank , there is increasing worry that the Third World debt totaling $ 1.19 trillion last year frustrates the bank's goals
 (x10 / worry-01
 	:location (x3 / inside
 		:op1 (x5 / bank
 			:mod (x2 / even)))
 	:ARG1-of (x9 / increase-01)
-	:ARG1 (x24 / frustrate-01
+	:ARG1 (x22 / frustrate-01
 		:ARG0 (x15 / debt
-			:poss (x14 / country
-				:name (n / name
-					:op1 "World"))
-			:time (x22 / year
-				:quant (x19 / monetary-quantity
-					:unit (y / yuan))
-				:mod (x21 / last)))
-		:ARG1 (x28 / goal)))
+			:null_edge (x14 / null_tag)
+			:ARG1-of (x16 / total-01
+				:ARG1 (x17 / country
+					:name (n / name
+						:op1 "$")
+					:null_edge (x18 / monetary-quantity
+						:unit (y / yuan)))
+				:time (x21 / year
+					:mod (x20 / last))))
+		:ARG1 (x26 / goal)))
 
 # ::id 37
-# ::snt Because of " chronic debt problems ... the development process in these countries has stalled, " the World Bank said earlier this year
-(x21 / say-01
-	:ARG1 (x15 / stall-01
+# ::snt Because of chronic debt problems ... the development process in these countries has stalled , the World Bank said earlier this year
+(x19 / say-01
+	:ARG1 (x14 / stall-01
 		:ARG1-of (x1 / cause-01
-			:ARG0 (x6 / problem
-				:mod (x4 / chronic)
-				:mod (x5 / debt)))
-		:ARG1 (x10 / process
-			:mod (x9 / develop-02)
-			:location (x13 / country)))
-	:ARG0 (x19 / organization
+			:ARG0 (x5 / problem
+				:mod (x3 / chronic)
+				:mod (x4 / debt)))
+		:ARG1 (x9 / process
+			:mod (x8 / develop-02)
+			:location (x12 / country)))
+	:ARG0 (x17 / organization
 		:name (n / name
 			:op1 "World"
 			:op2 "Bank"))
-	:time (x22 / early
-		:op1 (x24 / year
-			:mod (x23 / this))))
+	:time (x20 / early
+		:op1 (x22 / year
+			:mod (x21 / this))))
 
 # ::id 38
-# ::snt Also within the bank's own ranks, there is talk that could lead to a more aggressive role on debt once President Reagan leaves office
+# ::snt Also within the bank's own ranks , there is talk that could lead to a more aggressive role on debt once President Reagan leaves office
 (x11 / talk-01
 	:ARG1 (x14 / lead-03
 		:mod (x13 / possible
@@ -1012,38 +1017,38 @@
 				:poss x24))))
 
 # ::id 39
-# ::snt " Baker's approach has to be adapted to the circumstances of today, " says the bank's No. 2 man, Operations Vice President Moeen Qureshi
-(x16 / say-01
-	:ARG1 (x5 / have-03
-		:ARG2 (x8 / adapt-01
-			:ARG1 (x4 / approach-02
-				:ARG0 (x2 / person
+# ::snt Baker's approach has to be adapted to the circumstances of today , says the bank's No. 2 man , Operations Vice President Moeen Qureshi
+(x14 / say-01
+	:ARG1 (x4 / have-03
+		:ARG2 (x7 / adapt-01
+			:ARG1 (x3 / approach-02
+				:ARG0 (x1 / person
 					:name (n / name
 						:op1 "Baker")))
-			:ARG2 (x11 / circumstance
-				:time (x13 / today))))
-	:ARG0 (x22 / man
-		:poss (x18 / bank)
-		:null_edge (x20 / null_tag)
+			:ARG2 (x10 / circumstance
+				:time (x12 / today))))
+	:ARG0 (x20 / man
+		:poss (x16 / bank)
+		:null_edge (x18 / null_tag)
 		:quant 2
-		:name (x27 / name
+		:name (x25 / name
 			:op1 "Moeen"
 			:op2 "Qureshi"
-			:ARG0-of (x24 / operations)
-			:ARG0-of (x25 / vice)
-			:ARG0-of (x26 / have-org-role-91
+			:ARG0-of (x22 / operations)
+			:ARG0-of (x23 / vice)
+			:ARG0-of (x24 / have-org-role-91
 				:ARG2 (p / president)))))
 
 # ::id 40
-# ::snt " Perhaps we have excessively underplayed our own role .
-(x6 / underplayed
-	:ARG0 (x3 / we)
-	:manner (x5 / excessive)
-	:ARG1 (x9 / role
-		:poss x3))
+# ::snt Perhaps we have excessively underplayed our own role
+(x5 / underplayed
+	:ARG0 (x2 / we)
+	:manner (x4 / excessive)
+	:ARG1 (x8 / role
+		:poss x2))
 
 # ::id 41
-# ::snt U.S. Treasury Secretary James Baker adds, " our own role seems to U.S. Treasury Secretary James Baker it will be desirable, in the present environment, to see what can be done " to reduce debt, rather than just lend new money
+# ::snt U.S. Treasury Secretary James Baker  adds , our own role  seems to U.S. Treasury Secretary James Baker  it will be desirable , in the present environment , to see what can be done to reduce debt , rather than just lend new money
 (x6 / add-02
 	:ARG0 (x4 / newspaper
 		:name (n / name
@@ -1055,32 +1060,32 @@
 				:ARG1 (x1 / country
 					:name (n1 / name
 						:op1 "U.S.")))))
-	:ARG0 (x12 / seem-01
-		:ARG2 (x17 / name
+	:ARG0 (x11 / seem-01
+		:ARG2 (x16 / name
 			:op1 "James"
 			:op2 "Baker"
-			:ARG0-of (x16 / have-org-role-91
+			:ARG0-of (x15 / have-org-role-91
 				:ARG2 (s1 / secretary)
-				:ARG1 (x11 / role)
-				:mod (x15 / treasury
-					:ARG1 (x14 / country
+				:ARG1 (x10 / role)
+				:mod (x14 / treasury
+					:ARG1 (x13 / country
 						:name (n2 / name
 							:op1 "U.S.")))))
-		:ARG1 (x22 / desirable)
-		:condition (x27 / environment
-			:time (x26 / present)))
-	:purpose (x30 / see-01
-		:ARG1 (x32 / possible
-			:domain (x34 / do-02
-				:ARG2 (x37 / reduce-01
-					:ARG1 (x38 / debt)
-					:ARG4 (x43 / lend-01
-						:mod (x42 / just)
-						:ARG1 (x45 / money
-							:mod (x44 / new))))))))
+		:ARG1 (x21 / desirable)
+		:condition (x26 / environment
+			:time (x25 / present)))
+	:purpose (x29 / see-01
+		:ARG1 (x31 / possible
+			:domain (x33 / do-02
+				:ARG1 (x35 / reduce-01
+					:ARG1 (x36 / debt)
+					:ARG4 (x41 / lend-01
+						:mod (x40 / just)
+						:ARG1 (x43 / money
+							:mod (x42 / new))))))))
 
 # ::id 42
-# ::snt Partly in response to the external and internal pressures, Mr. Conable sent a debt study to World Bank President Barber Conable board early in April
+# ::snt Partly in response to the external and internal pressures , Mr. Conable sent a debt study to World Bank President Barber Conable  board early in April
 (x13 / send-01
 	:ARG2-of (x3 / respond-01
 		:ARG1 (x9 / pressure-01
@@ -1105,73 +1110,72 @@
 		:op1 (x26 / date-entity)))
 
 # ::id 43
-# ::snt " The likelihood is that the bank will need to play a more extensive and diversified role in two areas : new money packages and facilitating other forms of financial relief, including debt-reduction schemes, " declares the study, which was drafted by David Bock, a vice president and the bank's debt expert
-(x38 / declare-01
-	:ARG1 (x3 / likelihood
-		:domain (x9 / need-01
-			:ARG0 (x7 / bank)
-			:ARG1 (x11 / play-01
-				:ARG1 (x15 / and
-					:op1 (x14 / extensive
-						:degree (x13 / more))
-					:op2 (x16 / diversify-01))
-				:location (x20 / area
-					:quant 2
-					:mod (x24 / package
-						:mod (x22 / new)
-						:mod (x23 / money)))
-				:ARG1 (x25 / and
-					:op2 (x26 / facilitate-01
-						:ARG1 (x28 / form
-							:mod (x27 / other)
-							:instrument-of (x31 / relieve-01
-								:mod (x30 / finance)
-								:ARG1 (x35 / scheme-01
-									:mod (x34 / debt-reduction)))))))))
-	:ARG0 (x40 / study
-		:ARG1-of (x44 / draft-01
-			:ARG1 (x52 / and
-				:op2 (x51 / have-org-role-91
-					:ARG2 (p / president)
-					:ARG0 (x46 / name
-						:op1 "David"
-						:op2 "Bock")
-					:mod (x50 / vice))
-				:op2 (x57 / expert-41
-					:ARG2 (x56 / debt))))))
+# ::snt The likelihood is that the bank will need to play a more extensive and diversified role in two areas : new money packages and facilitating other forms of financial relief , including debt-reduction schemes , declares the study , which was drafted by David Bock , a vice president and the bank's debt expert
+(x2 / likelihood
+	:domain (x8 / need-01
+		:ARG0 (x6 / bank)
+		:ARG1 (x10 / play-01
+			:ARG1 (x14 / and
+				:op1 (x13 / extensive
+					:degree (x12 / more))
+				:op2 (x15 / diversify-01))
+			:ARG1 (x24 / and
+				:op1 (x19 / area
+					:quant 2)
+				:op2 (x23 / package
+					:mod (x21 / new)
+					:mod (x22 / money))
+				:op2 (x25 / facilitate-01
+					:ARG1 (x27 / form
+						:mod (x26 / other)
+						:instrument-of (x30 / relieve-01
+							:mod (x29 / finance)
+							:ARG1 (x34 / scheme-01
+								:mod (x33 / debt-reduction)
+								:ARG1-of (x36 / declare-02
+									:ARG1 (x38 / study-01))
+								:ARG1-of (x42 / draft-01
+									:ARG0 (x44 / name
+										:op1 "David"
+										:op2 "Bock")
+									:ARG0 (x50 / and
+										:op2 (x49 / have-org-role-91
+											:ARG2 (p / president)
+											:mod (x48 / vice))
+										:op2 (x55 / expert-41
+											:ARG2 (x54 / debt))))))))))))
 
 # ::id 44
-# ::snt The document even says that for a few debtors, " consensual debt relief, " including " outright forgiveness, " might be the only workable solution, but The document stresses that the bank must avoid moves that threaten the " preservation of the bank's prime standing in financial markets .
-(x30 / contrast-01
+# ::snt The document even says that for a few debtors , consensual debt relief , including outright forgiveness , might be the only workable solution , but The document  stresses that the bank must avoid moves that threaten the preservation of the bank's prime standing in financial markets
+(x26 / contrast-01
 	:ARG1 (x4 / say-01
 		:ARG0 (x2 / document)
 		:mod (x3 / even)
-		:ARG1 (x28 / solution
+		:ARG1 (x24 / solution
 			:prep-for (x9 / debtor
 				:quant (x8 / few))
-			:domain (x14 / relieve-01
-				:mod (x12 / consensual)
-				:ARG1 (x13 / debt)
-				:ARG2-of (x17 / include-91
-					:ARG1 (x20 / forgiveness
-						:mod (x19 / outright))))
-			:null_edge (x26 / only)
-			:mod (x27 / workable)))
-	:ARG2 (x33 / stress-01
-		:ARG0 (x32 / document)
-		:ARG1 (x38 / avoid-01
-			:ARG0 (x36 / bank)
-			:ARG1 (x39 / move-02
-				:ARG0-of (x41 / threaten-01
-					:ARG1 (x44 / preservation
-						:ARG1 (x50 / standing
-							:ARG0 (x47 / bank)
-							:mod (x49 / prime)
-							:location (x53 / market
-								:mod (x52 / finance)))))))))
+			:domain (x13 / relieve-01
+				:mod (x11 / consensual)
+				:ARG1 (x12 / debt)
+				:ARG1 (x17 / forgiveness
+					:mod (x16 / outright)))
+			:null_edge (x22 / only)
+			:mod (x23 / workable)))
+	:ARG2 (x29 / stress-01
+		:ARG0 (x28 / document)
+		:ARG1 (x34 / avoid-01
+			:ARG0 (x32 / bank)
+			:ARG1 (x35 / move-02
+				:ARG0-of (x37 / threaten-01
+					:ARG1 (x39 / preservation
+						:ARG1 (x45 / standing
+							:ARG0 (x42 / bank)
+							:mod (x44 / prime)
+							:location (x48 / market
+								:mod (x47 / finance)))))))))
 
 # ::id 45
-# ::snt The bank's own annual world-debt report illustrates The bank's own annual world-debt report determination to stick to a back-seat role on the issue
+# ::snt The bank's own annual world-debt report illustrates The bank's own annual world-debt report  determination to stick to a back-seat role on the issue
 (x8 / illustrate
 	:ARG0 (x7 / report
 		:ARG0 (x2 / bank)
@@ -1187,38 +1191,35 @@
 				:topic (x25 / issue)))))
 
 # ::id 46
-# ::snt Published early this year, the report noted that the debtor countries ' position " has stubbornly failed to improve, " said " imagination and resolve are needed, " and emphasized that " leadership will the debtor countries ' position be crucially important .
-(x32 / and
+# ::snt Published early this year , the report noted that the debtor countriesposition has stubbornly failed to improve , said imagination and resolve are needed , and emphasized that leadership will the debtor countriesposition  be crucially important
+(x26 / and
 	:op1 (x8 / note-01
 		:ARG0 (x1 / publish-01
 			:time (x2 / early
 				:op1 (x4 / year
 					:mod (x3 / this))))
-		:ARG0 (x7 / report))
-	:op1 (x18 / fail-01
-		:ARG1 (x14 / position
-			:poss (x12 / country
-				:mod (x11 / debtor)))
-		:manner (x17 / stubbornly)
-		:ARG2 (x20 / improve-01
-			:ARG0 x14
-			:ARG0 (x23 / say-01
-				:ARG1 (x29 / need-01
-					:ARG1 (x26 / and
-						:op2 x23
-						:op1 (x25 / imagination)
-						:op2 (x27 / resolve-01))))))
-	:op2 (x33 / emphasize-01
-		:ARG1 (x45 / important
-			:domain (x36 / person
+		:ARG0 (x7 / report)
+		:ARG1 (x15 / fail-01
+			:ARG1 (x12 / countriesposition
+				:mod (x11 / debtor))
+			:manner (x14 / stubbornly)
+			:ARG1 (x19 / say-01
+				:ARG0 x12
+				:ARG1 (x17 / improve-01)
+				:ARG1 (x24 / need-01
+					:ARG1 (x21 / and
+						:op1 (x20 / imagination)
+						:op2 (x22 / resolve-01))))))
+	:op2 (x27 / emphasize-01
+		:ARG1 (x36 / important
+			:domain (x29 / person
 				:ARG0-of (l / lead-02))
-			:ARG1 (x42 / position
-				:ARG1 (x40 / country
-					:mod (x39 / debtor)))
-			:manner (x44 / crucially))))
+			:ARG1 (x33 / countriesposition
+				:mod (x32 / debtor))
+			:manner (x35 / crucially))))
 
 # ::id 47
-# ::snt But conspicuously absent from the report, which discussed debt-relief proposals from Secretary Baker, Sen. Bradley and others, were any ideas from the bank the report
+# ::snt But conspicuously absent from the report , which discussed debt-relief proposals from Secretary Baker , Sen. Bradley and others , were any ideas from the bank the report
 (x1 / contrast-01
 	:ARG1 (x23 / idea
 		:null_edge (x3 / absent-01
@@ -1253,7 +1254,7 @@
 	:manner (x7 / decidedly))
 
 # ::id 49
-# ::snt Founded in 1944, it has evolved into a well-paid bureaucracy of 6,000 working in 17 buildings a few blocks from the White House, ignored by tourists but a mandatory stop for finance ministers and bankers visiting Washington
+# ::snt Founded in 1944 , it has evolved into a well-paid bureaucracy of 6,000 working in 17 buildings a few blocks from the White House , ignored by tourists but a mandatory stop for finance ministers and bankers visiting Washington
 (x7 / evolve-01
 	:ARG1 (x1 / found-01
 		:time (x3 / date-entity
@@ -1287,7 +1288,7 @@
 								:mod (x34 / finance)))))))))
 
 # ::id 50
-# ::snt The bank earns more than $ 1 billion annually, sports a top credit rating in securities markets and lent nearly $ 18 billion last year
+# ::snt The bank earns more than $ 1 billion annually , sports a top credit rating in securities markets and lent nearly $ 18 billion last year
 (x19 / and
 	:op1 (x3 / earn-01
 		:ARG0 (x2 / bank)
@@ -1304,7 +1305,7 @@
 			:mod (x25 / last))))
 
 # ::id 51
-# ::snt The U.S. is The U.S. biggest shareholder and controls the president's job
+# ::snt The U.S. is The U.S.  biggest shareholder and controls the president's job
 (x8 / and
 	:op1 (x5 / country
 		:name (n / name
@@ -1321,7 +1322,7 @@
 				:ARG2 (p / president)))))
 
 # ::id 52
-# ::snt The idea of the bank was to finance a wide range of economically basic construction across the developing world : roads in Africa, power projects in Asia, schools in Latin America, irrigation in India
+# ::snt The idea of the bank was to finance a wide range of economically basic construction across the developing world : roads in Africa , power projects in Asia , schools in Latin America , irrigation in India
 (x2 / idea
 	:poss (x5 / bank)
 	:topic (x8 / finance-01
@@ -1354,7 +1355,7 @@
 							:op1 "India")))))))
 
 # ::id 53
-# ::snt Under Robert McNamara, the bank began aiding efforts to alleviate rural poverty, control population growth and fight illiteracy
+# ::snt Under Robert McNamara , the bank began aiding efforts to alleviate rural poverty , control population growth and fight illiteracy
 (x7 / begin-01
 	:ARG0 (x6 / bank
 		:name (x2 / name
@@ -1374,7 +1375,7 @@
 					:ARG1 (x20 / illiteracy))))))
 
 # ::id 54
-# ::snt Under A.W. Clausen, A.W. Clausen successor, World Bank increased World Bank loans to finance structural adjustments -- rather than specific development projects -- in Third World economies and also disbursed money more quickly
+# ::snt Under A.W. Clausen , A.W. Clausen  successor , World Bank  increased World Bank  loans to finance structural adjustments rather than specific development projects in Third World economies and also disbursed money more quickly
 (x11 / increase-01
 	:accompanier (x2 / name
 		:op1 "A.W."
@@ -1395,22 +1396,20 @@
 	:purpose (x16 / finance-01
 		:ARG1 (x18 / adjust-01
 			:mod (x17 / structure)
-			:ARG1 (x24 / project
-				:mod (x22 / specific)
-				:topic (x23 / develop-02))
-			:location (x29 / economy
-				:mod (x28 / country
-					:name (n3 / name
-						:op1 "World"))))
-		:ARG1 (x30 / and)
-		:mod (x31 / also)
-		:ARG1 (x32 / disburse
-			:ARG1 (x33 / money)
-			:manner (x35 / quick
-				:degree (x34 / more)))))
+			:ARG1 (x23 / project
+				:mod (x21 / specific)
+				:topic (x22 / develop-02)
+				:location (x27 / economy
+					:null_edge (x26 / null_tag))))
+		:ARG1 (x28 / and)
+		:mod (x29 / also)
+		:ARG1 (x30 / disburse
+			:ARG1 (x31 / money)
+			:manner (x33 / quick
+				:degree (x32 / more)))))
 
 # ::id 55
-# ::snt Under Mr. Conable, a low-key, thoughtful man with a self-deprecating sense of humor, new policies have been harder to discern
+# ::snt Under Mr. Conable , a low-key , thoughtful man with a self-deprecating sense of humor , new policies have been harder to discern
 (x9 / man
 	:mod (x3 / person
 		:name (n / name
@@ -1427,7 +1426,7 @@
 		:domain (x23 / discern)))
 
 # ::id 56
-# ::snt World Bank President Barber Conable has continued to increase the quick-disbursing, non-project loans but has n't introduced any new type of lending
+# ::snt World Bank President Barber Conable  has continued to increase the quick-disbursing , non-project loans but has not introduced any new type of lending
 (x15 / contrast-01
 	:ARG1 (x7 / continue-01
 		:ARG0 (x4 / newspaper
@@ -1451,7 +1450,7 @@
 					:mod (x19 / any))))))
 
 # ::id 57
-# ::snt World Bank President Barber Conable also has set a goal for alleviating poverty in Asia and has won new financing to help the poor countries of Africa
+# ::snt World Bank President Barber Conable  also has set a goal for alleviating poverty in Asia and has won new financing to help the poor countries of Africa
 (x16 / and
 	:op1 (x8 / set-03
 		:ARG0 (x4 / newspaper
@@ -1481,7 +1480,7 @@
 						:op1 "Africa"))))))
 
 # ::id 58
-# ::snt But World Bank President Barber Conable main achievements have been bureaucratic
+# ::snt But World Bank President Barber Conable  main achievements have been bureaucratic
 (x1 / contrast-01
 	:ARG2 (x11 / bureaucrat
 		:domain (x8 / thing
@@ -1499,7 +1498,7 @@
 			:mod (x7 / main))))
 
 # ::id 59
-# ::snt World Bank President Barber Conable set up staffs to handle environmental and women's issues
+# ::snt World Bank President Barber Conable  set up staffs to handle environmental and women's issues
 (x6 / set-03
 	:ARG0 (x4 / newspaper
 		:name (n / name
@@ -1520,18 +1519,18 @@
 					:mod (x11 / environment))))))
 
 # ::id 60
-# ::snt One of these is the " Safe Motherhood Initiative, " a project designed to lower the high rate of deaths during childbirth, especially in Africa
-(x9 / initiative
-	:null_edge (x7 / safe)
-	:null_edge (x8 / motherhood)
-	:null_edge (x13 / project
-		:ARG1-of (x14 / design-01
-			:ARG3 (x16 / lower-01
-				:ARG1 (x19 / rate
-					:mod (x18 / high)
-					:time (x23 / childbirth
-						:location (x25 / especially
-							:name (x27 / name
+# ::snt One of these is the Safe Motherhood Initiative , a project designed to lower the high rate of deaths during childbirth , especially in Africa
+(x8 / initiative
+	:null_edge (x6 / safe)
+	:null_edge (x7 / motherhood)
+	:null_edge (x11 / project
+		:ARG1-of (x12 / design-01
+			:ARG3 (x14 / lower-01
+				:ARG1 (x17 / rate
+					:mod (x16 / high)
+					:time (x21 / childbirth
+						:location (x23 / especially
+							:name (x25 / name
 								:op1 "Africa"))))))))
 
 # ::id 61
@@ -1567,7 +1566,7 @@
 				:degree (x19 / more)))))
 
 # ::id 63
-# ::snt The new organization is more in tune with current Third World problems, but the change paralyzed the bank for months and delayed loan processing
+# ::snt The new organization is more in tune with current Third World problems , but the change paralyzed the bank for months and delayed loan processing
 (x3 / organization
 	:mod (x2 / new)
 	:ARG1-of (x7 / tune-01
@@ -1587,118 +1586,118 @@
 				:op1 (x21 / month)))))
 
 # ::id 64
-# ::snt Mr. Conable contends that the reorganization " has helped a great deal in recapturing the support of project experts member countries, " which had refused to approve the bank's budget just before World Bank President Barber Conable took office
+# ::snt Mr. Conable contends that the reorganization has helped a great deal in recapturing the support of project experts  member countries , which had refused to approve the bank's budget just before World Bank President Barber Conable  took office
 (x3 / contend-00
 	:ARG0 (x2 / person
 		:name (n / name
 			:op1 "Conable")
 		:null_edge (x1 / null_tag))
-	:ARG1 (x9 / help-01
+	:ARG1 (x8 / help-01
 		:ARG0 (x6 / reorganization)
-		:ARG1 (x12 / deal-01
-			:mod (x11 / great)
-			:ARG1 (x14 / recapture
-				:ARG1 (x16 / support-01
-					:ARG1 (x18 / project)
-					:ARG0 (x21 / country
-						:ARG0-of (x20 / have-org-role-91
+		:ARG1 (x11 / deal-01
+			:mod (x10 / great)
+			:ARG1 (x13 / recapture
+				:ARG1 (x15 / support-01
+					:ARG1 (x17 / project)
+					:ARG0 (x20 / country
+						:ARG0-of (x19 / have-org-role-91
 							:ARG2 (m / member)
-							:ARG1 (x19 / person
+							:ARG1 (x18 / person
 								:ARG1-of (e / expert-41)))
-						:ARG0-of (x26 / refuse-01
-							:ARG1 (x28 / approve-01
-								:ARG1 (x32 / budget
-									:poss (x30 / bank))
-								:time (x34 / before
-									:mod (x33 / just))
-								:ARG1 (x40 / take-01
-									:ARG0 (x38 / newspaper
+						:ARG0-of (x24 / refuse-01
+							:ARG1 (x26 / approve-01
+								:ARG1 (x30 / budget
+									:poss (x28 / bank))
+								:time (x32 / before
+									:mod (x31 / just))
+								:ARG1 (x38 / take-01
+									:ARG0 (x36 / newspaper
 										:name (n1 / name
 											:op1 "Barber"
 											:op2 "Conable")
-										:null_edge (x36 / null_tag
-											:mod (x35 / organization
+										:null_edge (x34 / null_tag
+											:mod (x33 / organization
 												:name (n2 / name
 													:op1 "World")))
-										:ARG0-of (x37 / have-org-role-91
+										:ARG0-of (x35 / have-org-role-91
 											:ARG2 (p / president)))
-									:ARG1 (x41 / office))))))))))
+									:ARG1 (x39 / office))))))))))
 
 # ::id 65
-# ::snt " project experts have had a pretty good year, " World Bank President Barber Conable says
-(x17 / say-01
-	:ARG1 (x5 / person
+# ::snt project experts  have had a pretty good year , World Bank President Barber Conable  says
+(x15 / say-01
+	:ARG1 (x4 / person
 		:ARG0-of (h / have-org-role-91)
-		:ARG0 (x3 / person
+		:ARG0 (x2 / person
 			:ARG1-of (e / expert-41)
-			:ARG2 (x2 / project))
-		:time (x9 / year
-			:mod (x8 / good
-				:degree (x7 / pretty))))
-	:ARG0 (x15 / newspaper
+			:ARG2 (x1 / project))
+		:time (x8 / year
+			:mod (x7 / good
+				:degree (x6 / pretty))))
+	:ARG0 (x13 / newspaper
 		:name (n / name
 			:op1 "Barber"
 			:op2 "Conable")
-		:null_edge (x13 / null_tag
-			:mod (x12 / organization
+		:null_edge (x11 / null_tag
+			:mod (x10 / organization
 				:name (n1 / name
 					:op1 "World")))
-		:ARG0-of (x14 / have-org-role-91
+		:ARG0-of (x12 / have-org-role-91
 			:ARG2 (p / president))))
 
 # ::id 66
-# ::snt " project experts had a 100 % support of project experts budget ... and project experts are well on the way toward a substantial general capital increase .
-(x14 / and
-	:op4 (x3 / person
+# ::snt project experts  had a 100 % support of project experts  budget ... and project experts  are well on the way toward a substantial general capital increase
+(x13 / and
+	:op4 (x2 / person
 		:ARG1-of (e / expert-41)
-		:ARG2 (x2 / project))
-	:op1 (x8 / support-01
-		:ARG1 (x10 / project)
-		:ARG1 (x12 / budget
-			:consist-of (x11 / person
+		:ARG2 (x1 / project))
+	:op1 (x7 / support-01
+		:ARG1 (x9 / project)
+		:ARG1 (x11 / budget
+			:consist-of (x10 / person
 				:ARG1-of (e2 / expert-41))
 			:ARG1-of (xap0 / percentage-entity
 				:value 100)))
-	:op4 (x16 / person
+	:op4 (x15 / person
 		:ARG1-of (e1 / expert-41)
-		:ARG2 (x15 / project)
-		:ARG2 (x21 / way
-			:purpose (x27 / increase-01
-				:mod (x24 / substantial)
-				:mod (x25 / general)
-				:mod (x26 / capital)))))
+		:ARG2 (x14 / project)
+		:ARG2 (x20 / way
+			:purpose (x26 / increase-01
+				:mod (x23 / substantial)
+				:mod (x24 / general)
+				:mod (x25 / capital)))))
 
 # ::id 67
-# ::snt And, World Bank President Barber Conable adds, " World Bank President Barber Conable have changed a lot of emphasis in our programs .
-(x1 / and
-	:op2 (x8 / add-02
-		:ARG0 (x6 / newspaper
-			:name (n / name
-				:op1 "Barber"
-				:op2 "Conable")
-			:null_edge (x4 / null_tag
-				:mod (x3 / organization
-					:name (n2 / name
-						:op1 "World")))
-			:ARG0-of (x5 / have-org-role-91
-				:ARG2 (p / president)))
-		:ARG1 (x17 / change-01
-			:ARG0 (x14 / newspaper
+# ::snt And , World Bank President Barber Conable  adds , World Bank President Barber Conable  have changed a lot of emphasis in our programs
+(x16 / change-01
+	:null_edge (x1 / and
+		:op2 (x8 / add-02
+			:ARG0 (x6 / newspaper
 				:name (n1 / name
 					:op1 "Barber"
 					:op2 "Conable")
-				:null_edge (x12 / null_tag
-					:mod (x11 / organization
+				:null_edge (x4 / null_tag
+					:mod (x3 / organization
 						:name (n3 / name
 							:op1 "World")))
-				:ARG0-of (x13 / have-org-role-91
-					:ARG2 (p1 / president)
-					:ARG1 (x21 / emphasize-01)))
-			:ARG2 (x24 / program
-				:poss x14))))
+				:ARG0-of (x5 / have-org-role-91
+					:ARG2 (p1 / president)))))
+	:ARG0 (x13 / newspaper
+		:name (n / name
+			:op1 "Barber"
+			:op2 "Conable")
+		:null_edge (x11 / null_tag
+			:mod (x10 / organization
+				:name (n2 / name
+					:op1 "World")))
+		:ARG0-of (x12 / have-org-role-91
+			:ARG2 (p / president)))
+	:ARG1 (x20 / emphasize-01
+		:quant (x18 / lot))
+	:ARG2 (x23 / program))
 
 # ::id 68
-# ::snt Traditionally, conservatives have criticized the bank, charging that World Bank policies promote central planning and thus discourages market forces
+# ::snt Traditionally , conservatives have criticized the bank , charging that World Bank  policies promote central planning and thus discourages market forces
 (x5 / criticize-01
 	:mod (x1 / tradition)
 	:ARG0 (x3 / political-party
@@ -1733,23 +1732,23 @@
 				:ARG1-of (x16 / differ-02)))))
 
 # ::id 70
-# ::snt " Who is calling the shots on debt policy in the administration
-(x4 / call-03
-	:ARG0 (x2 / organization
+# ::snt Who is calling the shots on debt policy in the administration ?
+(x3 / call-03
+	:ARG0 (x1 / organization
 		:name (n / name
 			:op1 "Who"))
-	:ARG1 (x6 / shot)
-	:ARG1 (x9 / policy
-		:mod (x8 / debt)
+	:ARG1 (x5 / shot)
+	:ARG1 (x8 / policy
+		:mod (x7 / debt)
 		:topic (xap0 / government-organization
-			:ARG0-of (x12 / administrate-01))))
+			:ARG0-of (x11 / administrate-01))))
 
 # ::id 71
 # ::snt The Treasury
 (x2 / treasury)
 
 # ::id 72
-# ::snt And who was responsible for appointing Conable
+# ::snt And who was responsible for appointing Conable ?
 (x1 / and
 	:op2 (x4 / responsible-41
 		:ARG2 (x6 / appoint-01
@@ -1758,28 +1757,26 @@
 					:op1 "Conable")))))
 
 # ::id 73
-# ::snt The Treasury, " Sen. Bradley contends
-(x7 / contend-00
-	:ARG0 (x2 / government-organization
+# ::snt The Treasury , Sen. Bradley contends
+(x6 / contend-00
+	:ARG0 (x5 / person
 		:name (n / name
-			:op1 "Treasury"))
-	:ARG0 (x6 / person
-		:name (n1 / name
 			:op1 "Bradley")
-		:null_edge (x5 / sen.)))
+		:null_edge (x2 / treasury)
+		:null_edge (x4 / sen.)))
 
 # ::id 74
-# ::snt " They appointed somebody that they knew they could control
-(x3 / appoint-01
-	:ARG0 (x2 / they)
-	:ARG1 (x4 / somebody
-		:ARG1-of (x7 / know-01
-			:ARG1 (x9 / possible
-				:domain (x10 / control-01
-					:ARG0 (x8 / they))))))
+# ::snt They appointed somebody that they knew they could control
+(x2 / appoint-01
+	:ARG0 (x1 / they)
+	:ARG1 (x3 / somebody
+		:ARG1-of (x6 / know-01
+			:ARG1 (x8 / possible
+				:domain (x9 / control-01
+					:ARG0 (x7 / they))))))
 
 # ::id 75
-# ::snt Maybe Conable genuinely agrees with Baker, in which case World Bank President Barber Conable should be lumped in with Baker for criticism
+# ::snt Maybe Conable genuinely agrees with Baker , in which case World Bank President Barber Conable  should be lumped in with Baker for criticism
 (x4 / agree-01
 	:ARG0 (x2 / organization
 		:name (n / name
@@ -1804,7 +1801,7 @@
 				:purpose (x23 / criticize-01)))))
 
 # ::id 76
-# ::snt If World Bank President Barber Conable disagrees, maybe we 'll see some new ideas at the World Bank .
+# ::snt If World Bank President Barber Conable  disagrees , maybe we will see some new ideas at the World Bank
 (x12 / see-01
 	:null_edge (x7 / disagree-01
 		:ARG0 (x5 / newspaper
@@ -1828,7 +1825,7 @@
 			:op2 "Bank")))
 
 # ::id 77
-# ::snt Mr. Conable insists that even though World Bank President Barber Conable backs the Baker debt strategy, World Bank President Barber Conable and the Treasury secretary " have had strategic disagreements .
+# ::snt Mr. Conable insists that even though World Bank President Barber Conable  backs the Baker debt strategy , World Bank President Barber Conable  and the Treasury secretary have had strategic disagreements
 (x3 / insist-01
 	:ARG0 (x2 / person
 		:name (n / name
@@ -1863,8 +1860,8 @@
 			:ARG1 (x25 / government-organization
 				:name (n3 / name
 					:op1 "Treasury")))
-		:op1 (x31 / disagree-01
-			:mod (x30 / strategy))))
+		:op1 (x30 / disagree-01
+			:mod (x29 / strategy))))
 
 # ::id 78
 # ::snt Bank staffers cite a loan to Chile last year over U.S. opposition
@@ -1894,7 +1891,7 @@
 				:degree (x10 / heavily)))))
 
 # ::id 80
-# ::snt But the new money is being swamped by interest payments, and commercial banks are putting up little new money of Bank staffers own
+# ::snt But the new money is being swamped by interest payments , and commercial banks are putting up little new money of Bank staffers  own
 (x / xconcept
 	:x (x1 / contrast-01
 		:ARG2 (x7 / swamp
@@ -1913,7 +1910,7 @@
 	:x (x12 / and))
 
 # ::id 81
-# ::snt In 1986, the 17 nations paid back lenders $ 18 billion more than lenders $ 18 billion more got in new loans
+# ::snt In 1986 , the 17 nations paid back lenders $ 18 billion more than lenders $ 18 billion more  got in new loans
 (x7 / pay-01
 	:time (x2 / date-entity
 		:year 1986)
@@ -1927,7 +1924,7 @@
 		:mod (x22 / new)))
 
 # ::id 82
-# ::snt Also that year, the World Bank took back in repayments $ 291 million more than earlier this year pumped into the three largest Latin debtors -- Brazil, Mexico and Argentina
+# ::snt Also that year , the World Bank took back in repayments $ 291 million more than earlier this year  pumped into the three largest Latin debtors Brazil , Mexico and Argentina
 (x11 / repay-01
 	:mod (x1 / also)
 	:time (x3 / year
@@ -1949,24 +1946,25 @@
 			:time (x19 / year
 				:time (x17 / early)
 				:mod (x18 / this))
-			:null_edge (x26 / debtor
-				:quant 3
-				:mod (x24 / large
-					:degree (m1 / most))
-				:mod (x25 / latin)
-				:location-of (x31 / and
-					:op1 (x28 / country
-						:name (n2 / name
-							:op1 "Brazil"))
-					:op5 (x30 / country
-						:name (n3 / name
-							:op1 "Mexico"))
-					:op4 (x32 / country
-						:name (n4 / name
-							:op1 "Argentina")))))))
+			:ARG1 (x30 / and
+				:op1 (x27 / country
+					:name (n2 / name
+						:op1 "Brazil")
+					:null_edge 3
+					:mod (x24 / large
+						:degree (m1 / most))
+					:location-of (x26 / debtor))
+				:op2 (x29 / country
+					:name (n3 / name
+						:op1 "Mexico"))
+				:op2 (x31 / country
+					:name (n4 / name
+						:op1 "Argentina"))
+				:op1 (xap0 / region
+					:mod (x25 / latin))))))
 
 # ::id 83
-# ::snt Last year, that was reversed ; the three countries received a $ 719 million inflow
+# ::snt Last year , that was reversed ; the three countries received a $ 719 million inflow
 (x / xconcept
 	:x (x7 / and
 		:op2 (x6 / reverse-01
@@ -1983,7 +1981,7 @@
 						:unit (y / yuan)))))))
 
 # ::id 84
-# ::snt However, that again was more than offset by commercial-bank outflows
+# ::snt However , that again was more than offset by commercial-bank outflows
 (x8 / offset-01
 	:ARG1 (x3 / that)
 	:mod (x4 / again)
@@ -1992,7 +1990,7 @@
 		:mod (x10 / commercial-bank)))
 
 # ::id 85
-# ::snt Rep. Joseph Kennedy III, a Massachusetts Democrat, charges that " the World Bank is just laundering funds that go back to the banks .
+# ::snt Rep. Joseph Kennedy III , a Massachusetts Democrat , charges that the World Bank is just laundering funds that go back to the banks
 (x10 / charge-05
 	:ARG0 (x2 / person
 		:name (n / name
@@ -2004,20 +2002,20 @@
 			:ARG1 (p / political-party
 				:name (n1 / name
 					:op1 "Democrat"))))
-	:ARG1 (x19 / thing
+	:ARG1 (x18 / thing
 		:manner-of (f / fund-01)
-		:ARG0 (x14 / organization
+		:ARG0 (x13 / organization
 			:name (n2 / name
 				:op1 "World"
 				:op2 "Bank"))
-		:mod (x17 / just)
-		:ARG2 (x18 / launder-01)
-		:instrument-of (x21 / go-02
-			:direction (x22 / back)
-			:ARG4 (x25 / bank))))
+		:mod (x16 / just)
+		:ARG2 (x17 / launder-01)
+		:instrument-of (x20 / go-02
+			:direction (x21 / back)
+			:ARG4 (x24 / bank))))
 
 # ::id 86
-# ::snt Like Secretary Baker, Mr. Conable instinctively dismisses sweeping debt-relief plans as coercive or non-market-oriented
+# ::snt Like Secretary Baker , Mr. Conable instinctively dismisses sweeping debt-relief plans as coercive or non-market-oriented
 (x8 / dismiss-02
 	:ARG0 (x3 / person
 		:name (n / name
@@ -2036,7 +2034,7 @@
 		:op2 (x15 / non-market-oriented)))
 
 # ::id 87
-# ::snt U.S. Treasury Secretary James Baker rejects any notion that the bank might get involved in directly refinancing or providing security for debt on a broad scale
+# ::snt U.S. Treasury Secretary James Baker  rejects any notion that the bank might get involved in directly refinancing or providing security for debt on a broad scale
 (x6 / reject-01
 	:ARG0 (x4 / newspaper
 		:name (n / name
@@ -2062,71 +2060,75 @@
 				:op2 (x19 / provide-01)))))
 
 # ::id 88
-# ::snt 
-(x57 / say-01
-	:ARG1 (x19 / and
-		:op1 (x5 / newspaper
-			:name (n / name
+# ::snt U.S. Treasury Secretary James Baker  are not there to try and handle their short-term debt problems , and if Rep. Joseph Kennedy III  think U.S. Treasury Secretary James Baker  are , then World Bank President Barber Conable  think Rep. Joseph Kennedy III  misunderstand the nature of this institution , World Bank President Barber Conable  says
+(x55 / say-01
+	:ARG1 (x18 / and
+		:op1 (x4 / newspaper
+			:name (n1 / name
 				:op1 "James"
 				:op2 "Baker")
-			:ARG0-of (x4 / have-org-role-91
+			:ARG0-of (x3 / have-org-role-91
 				:ARG2 (s / secretary)
-				:ARG1 (x3 / treasury
-					:ARG1 (x2 / country
-						:name (n5 / name
-							:op1 "U.S.")))))
-		:op2 (x12 / and
-			:op1 (x11 / try-01
-				:ARG1 (x17 / problem
-					:mod (x15 / short-term)
-					:mod (x16 / debt)))
-			:op2 (x13 / handle-01))
-		:op2 (x39 / think-01
-			:ARG1 (x25 / think-01
-				:ARG0 (x22 / person
-					:name (n2 / name
-						:op1 "Joseph"
-						:op2 "Kennedy"
-						:op3 "III")
-					:ARG0-of (x21 / rep.))
-				:ARG1 (x29 / newspaper
-					:name (n3 / name
-						:op1 "James"
-						:op2 "Baker")
-					:ARG0-of (x28 / have-org-role-91
-						:ARG2 (s1 / secretary)
-						:ARG1 (x27 / treasury
-							:ARG1 (x26 / country
-								:name (n7 / name
-									:op1 "U.S."))))))
-			:ARG0 (x37 / newspaper
-				:name (n1 / name
-					:op1 "Barber"
-					:op2 "Conable")
-				:time (x33 / then)
-				:null_edge (x35 / null_tag
-					:mod (x34 / organization
+				:ARG1 (x2 / treasury
+					:ARG1 (x1 / country
 						:name (n6 / name
-							:op1 "World")))
-				:ARG0-of (x36 / have-org-role-91
-					:ARG2 (p1 / president)))
-			:ARG1 (x44 / misunderstand
-				:ARG0 (x41 / person
+							:op1 "U.S.")))))
+		:op2 (x11 / and
+			:op1 (x10 / try-01
+				:ARG1 (x16 / problem
+					:mod (x14 / short-term)
+					:mod (x15 / debt)))
+			:op2 (x12 / handle-01))
+		:op2 (x43 / misunderstand
+			:null_edge (x24 / think-01
+				:ARG0 (x21 / person
 					:name (n4 / name
 						:op1 "Joseph"
 						:op2 "Kennedy"
 						:op3 "III")
-					:ARG0-of (x40 / rep.))
-				:ARG1 (x46 / nature
-					:poss x41
-					:poss (x49 / institution
-						:mod (x48 / this))))))
-	:null_edge (x52 / null_tag
-		:ARG0-of (x54 / have-org-role-91
+					:ARG0-of (x20 / rep.))
+				:ARG1 (x28 / newspaper
+					:name (n5 / name
+						:op1 "James"
+						:op2 "Baker")
+					:ARG0-of (x27 / have-org-role-91
+						:ARG2 (s1 / secretary)
+						:ARG1 (x26 / treasury
+							:ARG1 (x25 / country
+								:name (n7 / name
+									:op1 "U.S."))))))
+			:ARG0 (x33 / government-organization
+				:name (n2 / name
+					:op1 "World"
+					:op2 "Bank"
+					:op3 "President"
+					:op4 "Barber"
+					:op5 "Conable"
+					:op6 "think"
+					:op7 "Rep."
+					:op8 "Joseph"
+					:op9 "Kennedy"
+					:op10 "III")
+				:mod (x32 / then)
+				:null_edge (x35 / have-org-role-91
+					:ARG2 (p1 / president))
+				:null_edge (x38 / think-01))
+			:ARG1 (x45 / nature
+				:poss (x48 / institution
+					:mod (x47 / this)))))
+	:ARG0 (x53 / newspaper
+		:name (n / name
+			:op1 "Barber"
+			:op2 "Conable")
+		:null_edge (x51 / null_tag
+			:mod (x50 / organization
+				:name (n3 / name
+					:op1 "World")))
+		:ARG0-of (x52 / have-org-role-91
 			:ARG2 (p / president))))
 
 # ::id 89
-# ::snt But Mr. Conable's own nature still is n't clear, Rep. LaFalce argues
+# ::snt But Mr. Conable's own nature still is not clear , Rep. LaFalce argues
 (x1 / contrast-01
 	:ARG2 (x10 / clear
 		:domain (x6 / nature
@@ -2139,53 +2141,53 @@
 			:null_edge (x12 / rep.))))
 
 # ::id 90
-# ::snt " Barber Conable is an outstanding person, " Rep. John LaFalce says
-(x13 / say-01
-	:ARG0 (x7 / person
-		:domain (x2 / newspaper
+# ::snt Barber Conable is an outstanding person , Rep. John LaFalce  says
+(x11 / say-01
+	:ARG1 (x6 / person
+		:domain (x1 / newspaper
 			:name (n1 / name
 				:op1 "Barber"
 				:op2 "Conable"))
-		:mod (x6 / outstanding))
-	:ARG0 (x11 / person
+		:mod (x5 / outstanding))
+	:ARG0 (x9 / person
 		:name (n / name
 			:op1 "John"
 			:op2 "LaFalce")
-		:ARG0-of (x10 / rep.)))
+		:ARG0-of (x8 / rep.)))
 
 # ::id 91
-# ::snt " World Bank President Barber Conable had a strong identity here in Congress, which World Bank President Barber Conable earned
-(x7 / have-03
-	:ARG0 (x5 / newspaper
+# ::snt World Bank President Barber Conable  had a strong identity here in Congress , which World Bank President Barber Conable  earned
+(x6 / have-03
+	:ARG0 (x4 / newspaper
 		:name (n / name
 			:op1 "Barber"
 			:op2 "Conable")
-		:null_edge (x3 / null_tag
-			:mod (x2 / organization
+		:null_edge (x2 / null_tag
+			:mod (x1 / organization
 				:name (n2 / name
 					:op1 "World")))
-		:ARG0-of (x4 / have-org-role-91
+		:ARG0-of (x3 / have-org-role-91
 			:ARG2 (p / president)))
-	:ARG1 (x10 / identity
-		:mod (x9 / strong)
-		:location (x11 / here)
-		:poss (x13 / government-organization
+	:ARG1 (x9 / identity
+		:mod (x8 / strong)
+		:location (x10 / here)
+		:poss (x12 / government-organization
 			:name (n1 / name
 				:op1 "Congress"))
-		:ARG1-of (x21 / earn-01
-			:ARG0 (x19 / newspaper
+		:ARG1-of (x20 / earn-01
+			:ARG0 (x18 / newspaper
 				:name (n3 / name
 					:op1 "Barber"
 					:op2 "Conable")
-				:null_edge (x17 / null_tag
-					:mod (x16 / organization
+				:null_edge (x16 / null_tag
+					:mod (x15 / organization
 						:name (n4 / name
 							:op1 "World")))
-				:ARG0-of (x18 / have-org-role-91
+				:ARG0-of (x17 / have-org-role-91
 					:ARG2 (p1 / president))))))
 
 # ::id 92
-# ::snt But World Bank President Barber Conable does n't have World Bank President Barber Conable own identity as president of the World Bank
+# ::snt But World Bank President Barber Conable  does not have World Bank President Barber Conable  own identity as president of the World Bank
 (x1 / contrast-01
 	:ARG2 (x9 / have-03
 		:null_edge (x2 / null_tag
@@ -2209,7 +2211,7 @@
 					:op2 "Bank")))))
 
 # ::id 93
-# ::snt World Bank President Barber Conable was created by Jim Baker and George Bush in this job
+# ::snt World Bank President Barber Conable  was created by Jim Baker and George Bush in this job
 (x7 / create-01
 	:ARG1 (x1 / company
 		:name (n / name
@@ -2231,7 +2233,7 @@
 		:mod (x15 / this)))
 
 # ::id 94
-# ::snt World Bank President Barber Conable reputation now rests on how World Bank President Barber Conable defines World Bank President Barber Conable .
+# ::snt World Bank President Barber Conable  reputation now rests on how World Bank President Barber Conable  defines World Bank President Barber Conable
 (x8 / rest-01
 	:ARG0 (x6 / reputation
 		:poss (x1 / organization

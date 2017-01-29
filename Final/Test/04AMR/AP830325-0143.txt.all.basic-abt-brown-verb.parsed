@@ -1,5 +1,5 @@
 # ::id 1
-# ::snt Millions of gallons of crude oil that spilled when a tanker ran aground spread across a wildlife-rich stretch of ocean Saturday, and Alaska's chief environmental officer criticized cleanup efforts as too slow
+# ::snt Millions of gallons of crude oil that spilled when a tanker ran aground spread across a wildlife-rich stretch of ocean Saturday , and Alaska's chief environmental officer criticized cleanup efforts as too slow
 (x1 / million
 	:ARG1 (x6 / oil
 		:quant (x3 / volume-quantity
@@ -88,49 +88,51 @@
 		:ARG0 (x20 / slick)))
 
 # ::id 4
-# ::snt " This situation, Dennis Kelso , commissioner of the Alaska Department of Environmental Conservation think, was everyone's secret nightmare about what could happen with oil traffic in the sound, " said Dennis Kelso, commissioner of the Alaska Department of Environmental Conservation
-(x35 / say-01
-	:ARG1 (x22 / nightmare
-		:domain (x3 / situation
-			:mod (x2 / this))
-		:ARG0 (x5 / newspaper
+# ::snt This situation , Dennis Kelso , commissioner of the Alaska Department of Environmental Conservation  think , was everyone's secret nightmare about what could happen with oil traffic in the sound , said Dennis Kelso , commissioner of the Alaska Department of Environmental Conservation
+(x33 / say-01
+	:ARG1 (x21 / nightmare
+		:domain (x2 / situation
+			:mod (x1 / this))
+		:ARG0 (x4 / newspaper
 			:name (n1 / name
 				:op1 "Dennis"
 				:op2 "Kelso")
-			:ARG0-of (x8 / commissioner
-				:poss (x12 / government-organization
+			:ARG0-of (x7 / commissioner
+				:poss (x11 / government-organization
 					:name (n3 / name
 						:op1 "Department"
 						:op2 "of"
 						:op3 "Environmental"
 						:op4 "Conservation")
-					:mod (x11 / state
+					:mod (x10 / state
 						:name (n5 / name
 							:op1 "Alaska"))
-					:null_edge (x16 / think-01))))
-		:ARG0 (x19 / everyone)
-		:mod (x21 / secret)
-		:null_edge (x25 / possible
-			:domain (x32 / sound
-				:ARG2 (x29 / traffic
-					:mod (x28 / oil)))))
-	:ARG0 (x36 / newspaper
+					:null_edge (x15 / think-01))))
+		:ARG0 (x18 / everyone)
+		:mod (x20 / secret)
+		:ARG2 (x25 / thing
+			:ARG1-of (h / happen-01)
+			:mod (x24 / possible)
+			:ARG1 (x28 / traffic
+				:mod (x27 / oil)
+				:location (x31 / sound))))
+	:ARG0 (x34 / newspaper
 		:name (n / name
 			:op1 "Dennis"
 			:op2 "Kelso")
-		:ARG0-of (x39 / commissioner
-			:poss (x43 / government-organization
+		:ARG0-of (x37 / commissioner
+			:poss (x41 / government-organization
 				:name (n2 / name
 					:op1 "Department"
 					:op2 "of"
 					:op3 "Environmental"
 					:op4 "Conservation")
-				:mod (x42 / state
+				:mod (x40 / state
 					:name (n4 / name
 						:op1 "Alaska"))))))
 
 # ::id 5
-# ::snt Some 240,000 barrels _ about 10,080,000 gallons _ of crude oil from Alaska's North Slope spilled early Friday when the 987-foot tanker Exxon Valdez ran hard aground on Bligh Reef, about 25 miles outside Valdez, where the 987-foot tanker Exxon Valdez had taken on a total cargo of 1.2 million barrels
+# ::snt Some 240,000 barrels _ about 10,080,000 gallons _ of crude oil from Alaska's North Slope spilled early Friday when the 987-foot tanker Exxon Valdez ran hard aground on Bligh Reef , about 25 miles outside Valdez , where the 987-foot tanker Exxon Valdez  had taken on a total cargo of 1.2 million barrels
 (x4 / _
 	:ARG0 (x3 / volume-quantity
 		:unit (b / barrel)
@@ -181,7 +183,7 @@
 										:unit (b1 / barrel)))))))))))
 
 # ::id 6
-# ::snt Initial reports indicated 270,000 barrels had spilled
+# ::snt 
 (x3 / indicate-01
 	:ARG0 (x2 / report-01
 		:mod (x1 / initial))
@@ -191,128 +193,127 @@
 			:quant (x4 / 270,000))))
 
 # ::id 7
-# ::snt " What we have here is a major environmental catastrophe, " said one oil spill expert, Richard Golob of Boston, publisher of Golob Oil Pollution Bulletin
-(x13 / say-01
-	:ARG1 (x10 / catastrophe
-		:domain (x3 / we
-			:location (x5 / here))
-		:mod (x8 / major)
-		:mod (x9 / environment))
-	:ARG1 (x15 / oil)
-	:ARG0 (x17 / person
+# ::snt What we have here is a major environmental catastrophe , said one oil spill expert , Richard Golob of Boston , publisher of Golob Oil Pollution Bulletin
+(x11 / say-01
+	:ARG0 (x2 / we)
+	:location (x4 / here)
+	:mod (x7 / major)
+	:ARG1 (x8 / environment)
+	:ARG1 (x15 / person
 		:ARG1-of (e / expert-41)
-		:quant 1
-		:name (x19 / name
-			:op1 "Richard"
-			:op2 "Golob"
-			:ARG0-of (x22 / city
-				:name (n / name
-					:op1 "Boston"))
-			:ARG0-of (x24 / publish-01
-				:ARG1 (x26 / government-organization
-					:name (n1 / name
-						:op1 "Golob"
-						:op2 "Oil"
-						:op3 "Pollution"
-						:op4 "Bulletin"))))))
+		:ARG2 (x13 / oil
+			:quant 1))
+	:name (x17 / name
+		:op1 "Richard"
+		:op2 "Golob"
+		:location (x20 / city
+			:name (n / name
+				:op1 "Boston"))
+		:ARG0-of (x22 / publish-01
+			:ARG1 (x24 / government-organization
+				:name (n1 / name
+					:op1 "Golob"
+					:op2 "Oil"
+					:op3 "Pollution"
+					:op4 "Bulletin")))))
 
 # ::id 8
-# ::snt Golob said cleanup equipment at the site was " grossly inadequate " but added that even under ideal circumstances cleanup efforts would not have significantly reduced the spill's impact
-(x13 / contrast-01
+# ::snt Golob said cleanup equipment at the site was grossly inadequate but added that even under ideal circumstances cleanup efforts would not have significantly reduced the spill's impact
+(x11 / contrast-01
 	:ARG1 (x2 / say-01
 		:ARG0 (x1 / person
 			:name (n / name
 				:op1 "Golob"))
-		:ARG1 (x11 / adequate
+		:ARG1 (x10 / adequate
 			:polarity -
 			:domain (x4 / equipment
 				:mod (x3 / cleanup)
 				:location (x7 / site))
-			:degree (x10 / gross)))
-	:ARG2 (x14 / add-01
-		:ARG1 (x26 / reduce-01
-			:manner (x19 / circumstance
-				:mod (x16 / even)
-				:mod (x18 / ideal))
-			:ARG0 (x21 / effort
-				:mod (x20 / cleanup))
-			:degree (x25 / significant)
-			:ARG1 (x30 / impact-01))))
+			:degree (x9 / gross)))
+	:ARG2 (x12 / add-01
+		:ARG1 (x24 / reduce-01
+			:manner (x17 / circumstance
+				:mod (x14 / even)
+				:mod (x16 / ideal))
+			:ARG0 (x19 / effort
+				:mod (x18 / cleanup))
+			:degree (x23 / significant)
+			:ARG1 (x28 / impact-01))))
 
 # ::id 9
-# ::snt " an enclosed body of water is an enclosed body of water, " Richard Golob of Boston , publisher of Golob Oil Pollution Bulletin said
-(x26 / say-01
-	:ARG1 (x10 / body
-		:domain (x4 / body
-			:ARG1-of (x3 / enclose)
-			:consist-of (x6 / water))
-		:mod (x9 / enclosed)
-		:consist-of (x12 / water))
-	:ARG0 (x16 / person
+# ::snt an enclosed body of water  is an enclosed body of water , Richard Golob of Boston , publisher of Golob Oil Pollution Bulletin  said
+(x24 / say-01
+	:ARG1 (x9 / body
+		:domain (x3 / body
+			:ARG1-of (x2 / enclose)
+			:consist-of (x5 / water))
+		:mod (x8 / enclosed)
+		:consist-of (x11 / water))
+	:ARG0 (x14 / person
 		:name (n / name
 			:op1 "Golob")
-		:null_edge (x15 / null_tag)
-		:null_edge (x18 / city
+		:null_edge (x13 / null_tag)
+		:null_edge (x16 / city
 			:name (n1 / name
-				:op1 "Boston")
-			:null_edge (x20 / publish-01
-				:ARG1 (x22 / government-organization
-					:name (n2 / name
-						:op1 "Golob"
-						:op2 "Oil"
-						:op3 "Pollution"
-						:op4 "Bulletin"))))))
+				:op1 "Boston"))
+		:null_edge (x18 / publish-01
+			:ARG1 (x20 / government-organization
+				:name (n2 / name
+					:op1 "Golob"
+					:op2 "Oil"
+					:op3 "Pollution"
+					:op4 "Bulletin")))))
 
 # ::id 10
-# ::snt " The only way for this oil to ecape out to the sea is by traversing the entire length of Prince William Sound with all The only way for this oil to ecape out to the sea islands, fjords and bays and channels
-(x9 / ecape
-	:mod (x3 / only)
-	:ARG0 (x7 / oil
-		:mod (x6 / this))
-	:ARG2 (x13 / sea)
-	:ARG0 (x16 / traverse
-		:ARG1 (x19 / length
-			:mod (x18 / entire)
-			:poss (x23 / person
+# ::snt The only way for this oil to ecape out to the sea is by traversing the entire length of Prince William Sound with all The only way for this oil to ecape out to the sea  islands , fjords and bays and channels
+(x8 / ecape
+	:mod (x2 / only)
+	:ARG0 (x6 / oil
+		:mod (x5 / this))
+	:ARG2 (x12 / sea)
+	:ARG0 (x15 / traverse
+		:ARG1 (x18 / length
+			:mod (x17 / entire)
+			:poss (x22 / person
 				:name (n / name
 					:op1 "Sound")
-				:null_edge (x21 / prince)
-				:null_edge (x22 / person
+				:null_edge (x20 / prince)
+				:null_edge (x21 / person
 					:name (n1 / name
 						:op1 "William"))))
-		:manner (x28 / way
-			:mod (x25 / all)
-			:mod (x27 / only)
-			:null_edge (x43 / and
-				:op3 (x31 / oil
-					:mod (x30 / this))
-				:op1 (x37 / sea)
-				:op1 (x41 / and
-					:op2 (x40 / fjord))
-				:op1 (x42 / bay)
-				:op2 (x44 / channel)))))
+		:manner (x27 / way
+			:mod (x24 / all)
+			:mod (x26 / only)
+			:null_edge (x42 / and
+				:op3 (x30 / oil
+					:mod (x29 / this))
+				:op1 (x36 / sea)
+				:op1 (x40 / and
+					:op2 (x39 / fjord))
+				:op1 (x41 / bay)
+				:op2 (x43 / channel)))))
 
 # ::id 11
-# ::snt " And during that transit, undoubtedly a large stretch of shoreline will be contaminated, " Richard Golob of Boston , publisher of Golob Oil Pollution Bulletin said
-(x2 / and
-	:op1 (x29 / say-01
-		:ARG1 (x15 / contaminate
-			:time (x5 / transit-01
-				:mod (x4 / that))
-			:ARG1 (x10 / thing
+# ::snt And during that transit , undoubtedly a large stretch of shoreline will be contaminated , Richard Golob of Boston , publisher of Golob Oil Pollution Bulletin  said
+(x1 / and
+	:op1 (x27 / say-01
+		:ARG1 (x14 / contaminate
+			:time (x4 / transit-01
+				:mod (x3 / that))
+			:ARG1 (x9 / thing
 				:ARG1-of (s / stretch-01)
-				:mod (x7 / doubt-01)
-				:mod (x9 / large)
-				:location (x12 / shoreline)))
-		:ARG0 (x19 / person
+				:mod (x6 / doubt-01)
+				:mod (x8 / large)
+				:location (x11 / shoreline)))
+		:ARG0 (x17 / person
 			:name (n / name
 				:op1 "Golob")
-			:null_edge (x18 / null_tag)
-			:null_edge (x21 / city
+			:null_edge (x16 / null_tag)
+			:null_edge (x19 / city
 				:name (n1 / name
 					:op1 "Boston"))
-			:null_edge (x23 / publish-01
-				:ARG1 (x25 / government-organization
+			:null_edge (x21 / publish-01
+				:ARG1 (x23 / government-organization
 					:name (n2 / name
 						:op1 "Golob"
 						:op2 "Oil"
@@ -320,7 +321,7 @@
 						:op4 "Bulletin"))))))
 
 # ::id 12
-# ::snt Divers Saturday said Divers had found six to eight holes in the vessel's hull large enough to swim through, said Frank Iarossi, president of Exxon Shipping Co.
+# ::snt Divers Saturday said Divers  had found six to eight holes in the vessel's hull large enough to swim through , said Frank Iarossi , president of Exxon Shipping Co.
 (x22 / say-01
 	:ARG1 (x3 / say-01
 		:ARG0 (x1 / diver)
@@ -361,7 +362,7 @@
 		:location (x14 / reef)))
 
 # ::id 14
-# ::snt Efforts to begin pumping 200,000 gallons of oil off the Exxon Valdez onto another tanker, the Exxon Baton Rouge, were halted early Saturday when authorities noticed that oil appeared to leaking as the pumping operation proceeded
+# ::snt Efforts to begin pumping 200,000 gallons of oil off the Exxon Valdez onto another tanker , the Exxon Baton Rouge , were halted early Saturday when authorities noticed that oil appeared to leaking as the pumping operation proceeded
 (x23 / halt-01
 	:ARG1 (x1 / effort
 		:purpose (x3 / begin-01
@@ -392,7 +393,7 @@
 						:mod (x36 / pump-01)))))))
 
 # ::id 15
-# ::snt Eleven of 17 tanks that lie forward of the ship's masthead were ruptured in the accident, causing concern over removal of the oil, said Coast Guard Lt. Ed Wieliczkiewicz
+# ::snt Eleven of 17 tanks that lie forward of the ship's masthead were ruptured in the accident , causing concern over removal of the oil , said Coast Guard Lt. Ed Wieliczkiewicz
 (x27 / say-01
 	:ARG1 (x14 / rupture
 		:ARG1 (x4 / tank
@@ -421,34 +422,35 @@
 					:op1 "Guard")))))
 
 # ::id 16
-# ::snt " Whenever you start removing oil from a vessel this size Whenever you has to be done in a controlled manner, " Wieliczkiewicz said
-(x25 / say-01
-	:ARG1 (x4 / start-01
-		:ARG2 (x2 / whenever)
-		:ARG0 (x3 / you)
-		:ARG1 (x5 / remove-01
-			:ARG0 x3
-			:ARG1 (x6 / oil)
-			:ARG2 (x9 / vessel)
-			:ARG1 (x11 / size
-				:mod (x10 / this))
-			:ARG1 (x17 / do-02
-				:ARG1 (x12 / whenever)
-				:ARG1 (x13 / you)
-				:ARG2 (x21 / manner
-					:ARG1-of (x20 / controlled)))))
-	:ARG0 (x24 / person
+# ::snt Whenever you start removing oil from a vessel this size Whenever you  has to be done in a controlled manner , Wieliczkiewicz said
+(x23 / say-01
+	:time (x3 / start-01
+		:ARG2 (x1 / whenever)
+		:ARG0 (x2 / you)
+		:ARG1 (x4 / remove-01
+			:ARG0 x1
+			:ARG0 x2
+			:ARG1 (x5 / oil)
+			:ARG2 (x8 / vessel)
+			:ARG1 (x10 / size
+				:mod (x9 / this))
+			:ARG1 (x16 / do-02
+				:ARG1 (x11 / whenever)
+				:ARG1 (x12 / you)
+				:ARG2 (x20 / manner
+					:ARG1-of (x19 / controlled)))))
+	:ARG0 (x22 / person
 		:name (n / name
 			:op1 "Wieliczkiewicz")))
 
 # ::id 17
-# ::snt " If Whenever you's not ... you endanger the stability of the vessel .
-(x3 / whenever
-	:ARG0 (x4 / you)
-	:snt4 (x9 / endanger-01
-		:ARG0 (x8 / you)
-		:ARG1 (x11 / stability
-			:poss (x14 / vessel))))
+# ::snt If Whenever you  is not ... you endanger the stability of the vessel
+(x8 / endanger-01
+	:ARG1 (x2 / whenever
+		:ARG0 (x3 / you))
+	:ARG0 (x7 / you)
+	:ARG1 (x10 / stability
+		:poss (x13 / vessel)))
 
 # ::id 18
 # ::snt Wieliczkiewicz said a boom was placed around the Exxon Valdez and the Exxon Baton Rouge to help contain oil around the vessels
@@ -473,7 +475,7 @@
 					:op1 (x22 / vessel))))))
 
 # ::id 19
-# ::snt Coast Guard Lt. Ed Wieliczkiewicz also said four members of the Coast Guard's Pacific Strike Team from San Francisco, specially trained to deal with pollution and oil spills, arrived Saturday and were helping to rig pumps and assemble equipment needed to transfer oil to the Baton Rouge
+# ::snt Coast Guard Lt. Ed Wieliczkiewicz  also said four members of the Coast Guard's Pacific Strike Team from San Francisco , specially trained to deal with pollution and oil spills , arrived Saturday and were helping to rig pumps and assemble equipment needed to transfer oil to the Baton Rouge
 (x7 / say-01
 	:ARG0 (x4 / newspaper
 		:name (n / name
@@ -534,7 +536,7 @@
 											:op1 "Baton")))))))))))
 
 # ::id 20
-# ::snt Kelso was highly critical of what Dennis Kelso said was a slow response to the spill
+# ::snt Kelso was highly critical of what Dennis Kelso  said was a slow response to the spill
 (x9 / say-01
 	:ARG0 (x1 / person
 		:name (n / name
@@ -550,27 +552,27 @@
 		:manner (x12 / slow)))
 
 # ::id 21
-# ::snt " The initial reponse was inadequate and unacceptable, " Dennis Kelso said before a news conference Saturday
-(x13 / say-01
-	:ARG1 (x7 / and
-		:op1 (x6 / adequate
+# ::snt The initial reponse was inadequate and unacceptable , Dennis Kelso  said before a news conference Saturday
+(x11 / say-01
+	:ARG1 (x6 / and
+		:op1 (x5 / adequate
 			:polarity -
-			:domain (x4 / reponse
-				:mod (x3 / initial)))
+			:domain (x3 / reponse
+				:mod (x2 / initial)))
 		:op2 (xap0 / possible
-			:domain (x8 / accept-01)))
-	:ARG0 (x11 / newspaper
+			:domain (x7 / accept-01)))
+	:ARG0 (x9 / newspaper
 		:name (n / name
 			:op1 "Dennis"
 			:op2 "Kelso"))
-	:time (x14 / before
-		:op1 (x17 / conference
-			:mod (x16 / news)))
+	:time (x12 / before
+		:op1 (x15 / conference
+			:mod (x14 / news)))
 	:time (xap1 / date-entity
-		:weekday (x18 / saturday)))
+		:weekday (x16 / saturday)))
 
 # ::id 22
-# ::snt Kelso said the efforts should have been under way in five hours, but took much longer
+# ::snt Kelso said the efforts should have been under way in five hours , but took much longer
 (x2 / say-01
 	:ARG0 (x1 / person
 		:name (n / name
@@ -586,20 +588,20 @@
 			:ARG0 x1)))
 
 # ::id 23
-# ::snt 
-(x10 / and
-	:op1 (x3 / miss-03
-		:ARG0 (x2 / you)
-		:ARG1 (x5 / opportunity)
-		:location (x6 / right
-			:ARG1-of (x9 / begin-01)))
-	:op2 (x13 / miss-02
-		:ARG0 (x11 / you)
-		:ARG1 (x16 / opportunity
-			:mod (x15 / good
+# ::snt You miss the opportunity right at the beginning and you have missed our best opportunity to do something
+(x9 / and
+	:op1 (x2 / miss-03
+		:ARG0 (x1 / you)
+		:ARG1 (x4 / opportunity)
+		:location (x5 / right
+			:ARG1-of (x8 / begin-01)))
+	:op2 (x12 / miss-02
+		:ARG0 (x10 / you)
+		:ARG1 (x15 / opportunity
+			:mod (x14 / good
 				:degree (m / most))
-			:prep-to (x18 / do-04
-				:ARG1 (x19 / something)))))
+			:prep-to (x17 / do-04
+				:ARG1 (x18 / something)))))
 
 # ::id 24
 # ::snt Kelso said Alaska has a plan for oil spills that calls for action within five hours of a spill
@@ -622,7 +624,7 @@
 					:ARG1-of (x17 / include-91))))))
 
 # ::id 25
-# ::snt Alaska's took several hours longer, Dennis Kelso said, and only two of seven skimmers available to the Alyeska Pipeline Service Co. were used at the outset
+# ::snt Alaska's  took several hours longer , Dennis Kelso  said , and only two of seven skimmers available to the Alyeska Pipeline Service Co. were used at the outset
 (x12 / and
 	:op2 (x10 / say-01
 		:ARG0 (x8 / newspaper
@@ -652,7 +654,7 @@
 		:ARG2 (x6 / long)))
 
 # ::id 26
-# ::snt Alyeska spokesman Chuck O'Donnel said Alyeska spokesman Chuck O'Donnel was satisfied with Alyeska spokesman Chuck O'Donnel company's actions
+# ::snt Alyeska spokesman Chuck O'Donnel said Alyeska spokesman Chuck O'Donnel  was satisfied with Alyeska spokesman Chuck O'Donnel  company's actions
 (x5 / say-01
 	:ARG0 (x3 / newspaper
 		:name (n / name
@@ -688,33 +690,33 @@
 						:op1 "O'Donnel"))))))
 
 # ::id 27
-# ::snt " Alyeska spokesman Chuck O'Donnel think our people did an excellent job, " Alyeska spokesman Chuck O'Donnel said
-(x19 / say-01
-	:ARG1 (x6 / think-01
-		:ARG0 (x4 / newspaper
+# ::snt Alyeska spokesman Chuck O'Donnel  think our people did an excellent job , Alyeska spokesman Chuck O'Donnel  said
+(x17 / say-01
+	:ARG1 (x5 / think-01
+		:ARG0 (x3 / newspaper
 			:name (n1 / name
 				:op1 "Chuck"
 				:op2 "O'Donnel")
-			:ARG0-of (x3 / have-org-role-91
+			:ARG0-of (x2 / have-org-role-91
 				:ARG2 (s1 / spokesman)
-				:ARG1 (x2 / organization
+				:ARG1 (x1 / organization
 					:name (n3 / name
 						:op1 "Alyeska"))))
-		:ARG1 (x9 / do-02
-			:ARG1 (x12 / job
-				:mod (x11 / excellent))))
-	:ARG0 (x17 / newspaper
+		:ARG1 (x8 / do-02
+			:ARG1 (x11 / job
+				:mod (x10 / excellent))))
+	:ARG0 (x15 / newspaper
 		:name (n / name
 			:op1 "Chuck"
 			:op2 "O'Donnel")
-		:ARG0-of (x16 / have-org-role-91
+		:ARG0-of (x14 / have-org-role-91
 			:ARG2 (s / spokesman)
-			:ARG1 (x15 / organization
+			:ARG1 (x13 / organization
 				:name (n2 / name
 					:op1 "Alyeska")))))
 
 # ::id 28
-# ::snt The spill's effect on wildlife had not yet been assessed, but commercial fishermen who depend on the sound for a catch worth millions of dollars were outraged and said a key herring spawning area had been polluted
+# ::snt The spill's effect on wildlife had not yet been assessed , but commercial fishermen who depend on the sound for a catch worth millions of dollars were outraged and said a key herring spawning area had been polluted
 (x13 / contrast-01
 	:ARG1 (x11 / assess-01
 		:ARG1 (x4 / effect-01
@@ -739,115 +741,114 @@
 						:location-of (x35 / spawn)))))))
 
 # ::id 29
-# ::snt " The whole food chain could be affected by the spill, " said Alan Reichman, ocean ecology coordinator for the environmental group Greenpeace, in Seattle
-(x14 / say-01
-	:ARG1 (x6 / possible
-		:domain (x8 / affect-01
-			:ARG1 (x5 / chain
-				:mod (x3 / whole)
-				:consist-of (x4 / food))))
-	:ARG0 (x15 / newspaper
+# ::snt The whole food chain could be affected by the spill , said Alan Reichman , ocean ecology coordinator for the environmental group Greenpeace , in Seattle
+(x12 / say-01
+	:ARG1 (x5 / possible
+		:domain (x7 / affect-01
+			:ARG1 (x4 / chain
+				:mod (x2 / whole)
+				:consist-of (x3 / food))
+			:ARG0 (x13 / name
+				:op1 "Alan"
+				:op2 "Reichman"
+				:ARG0-of (x18 / coordinator
+					:mod (x16 / ocean)
+					:mod (x17 / ecology)
+					:ARG1 (x22 / group
+						:mod (x21 / environment)
+						:part-of (x23 / organization
+							:name (n1 / name
+								:op1 "Greenpeace")))))))
+	:location (x26 / country
 		:name (n / name
-			:op1 "Alan"
-			:op2 "Reichman")
-		:ARG0-of (x20 / coordinator
-			:mod (x18 / ocean)
-			:mod (x19 / ecology)
-			:ARG1 (x24 / group
-				:mod (x23 / environment)
-				:part-of (x25 / organization
-					:name (n2 / name
-						:op1 "Greenpeace")))))
-	:location (x28 / country
-		:name (n1 / name
 			:op1 "Seattle")))
 
 # ::id 30
-# ::snt " There's a high concentration of sea otter, waterfowl, sea birds and pink salmon in that area, " said Steve Goldstein, a spokesman for the Interior Department in Washington
-(x23 / say-01
-	:ARG1 (x6 / concentrate-02
-		:mod (x5 / high)
-		:ARG1 (x15 / and
-			:op2 (x11 / waterfowl
-				:mod (x8 / sea)
-				:domain (x17 / salmon
-					:mod (x16 / pink)
-					:location (x20 / area
-						:mod (x19 / that))))))
-	:ARG0 (x24 / newspaper
+# ::snt There is a high concentration of sea otter , waterfowl , sea birds and pink salmon in that area , said Steve Goldstein , a spokesman for the Interior Department in Washington
+(x21 / say-01
+	:ARG1 (x5 / concentrate-02
+		:mod (x4 / high)
+		:ARG1 (x14 / and
+			:op2 (x10 / waterfowl
+				:mod (x7 / sea)
+				:domain (x16 / salmon
+					:mod (x15 / pink)
+					:location (x19 / area
+						:mod (x18 / that))))))
+	:ARG0 (x22 / newspaper
 		:name (n / name
 			:op1 "Steve"
 			:op2 "Goldstein")
-		:ARG0-of (x28 / have-org-role-91
+		:ARG0-of (x26 / have-org-role-91
 			:ARG2 (s / spokesman)
-			:null_edge (x29 / null_tag
-				:null_edge (x32 / null_tag
-					:null_edge (x31 / null_tag)
-					:location (x34 / city
+			:null_edge (x27 / null_tag
+				:null_edge (x30 / null_tag
+					:null_edge (x29 / null_tag)
+					:location (x32 / city
 						:name (n1 / name
 							:op1 "Washington")))))))
 
 # ::id 31
-# ::snt " Some birds have already died, and commercial fishermen who depend on the sound for a catch worth millions of dollars were outraged and said a key herring spawning area are doing commercial fishermen who depend on the sound for a catch worth millions of dollars were outraged and said a key herring spawning area best to try to save the fish by containing the oil to the area where this oil to ecape out to the sea presently is and by trying to skim this oil to ecape out to the sea .
-(x8 / and
-	:op1 (x6 / die-01
-		:ARG1 (x3 / bird
-			:quant (x2 / some))
-		:time (x5 / already))
-	:op3 (x33 / do-02
-		:ARG0 x3
-		:ARG0 (x10 / fisherman
-			:mod (x9 / commerce)
-			:ARG0-of (x12 / depend-01
-				:ARG1 (x15 / sound)
-				:purpose (x18 / catch-04
-					:time (x25 / and
-						:op1 (x24 / outraged)
-						:op2 (x26 / say-01)
+# ::snt Some birds have already died , and commercial fishermen who depend on the sound for a catch worth millions of dollars were outraged and said a key herring spawning area  are doing commercial fishermen who depend on the sound for a catch worth millions of dollars were outraged and said a key herring spawning area  best to try to save the fish by containing the oil to the area where this oil to ecape out to the sea  presently is and by trying to skim this oil to ecape out to the sea
+(x7 / and
+	:op1 (x5 / die-01
+		:ARG1 (x2 / bird
+			:quant (x1 / some))
+		:time (x4 / already))
+	:op3 (x32 / do-02
+		:ARG0 x2
+		:ARG0 (x9 / fisherman
+			:mod (x8 / commerce)
+			:ARG0-of (x11 / depend-01
+				:ARG1 (x14 / sound)
+				:purpose (x17 / catch-04
+					:time (x24 / and
+						:op1 (x23 / outraged)
+						:op2 (x25 / say-01)
 						:op1 (xap0 / multiple
-							:op1 (x22 / monetary-quantity
+							:op1 (x21 / monetary-quantity
 								:unit (d / dollar))))
-					:ARG1 (x31 / area
-						:mod (x28 / key)
-						:location-of (x30 / spawn
-							:ARG1 (x29 / herr))))))
-		:ARG1 (x35 / fisherman
-			:mod (x34 / commerce)
-			:ARG0-of (x37 / depend-01
-				:ARG1 (x40 / sound)
-				:ARG1 (x43 / catch-04
-					:time (x50 / and
-						:op1 (x49 / outraged)
-						:op2 (x51 / say-01
-							:manner (x57 / good
+					:ARG1 (x30 / area
+						:mod (x27 / key)
+						:location-of (x29 / spawn
+							:ARG1 (x28 / herr))))))
+		:ARG1 (x34 / fisherman
+			:mod (x33 / commerce)
+			:ARG0-of (x36 / depend-01
+				:ARG1 (x39 / sound)
+				:ARG1 (x42 / catch-04
+					:time (x49 / and
+						:op1 (x48 / outraged)
+						:op2 (x50 / say-01
+							:manner (x56 / good
 								:degree (m / most))
-							:ARG1 (x59 / try-01
-								:ARG1 (x61 / save-02
-									:ARG1 (x63 / fish)
-									:manner (x65 / contain-01
-										:ARG1 (x67 / oil)
-										:ARG1 (x70 / area
-											:location-of (x73 / oil
-												:mod (x72 / this)
-												:purpose (x75 / ecape
-													:ARG2 (x79 / sea)
-													:manner (x80 / present))))
-										:ARG0 (x84 / try-01
-											:ARG1 (x86 / skim-02
-												:ARG1 (x88 / oil
-													:mod (x87 / this))
-												:purpose (x90 / ecape
-													:ARG2 (x94 / sea))))))))
+							:ARG1 (x58 / try-01
+								:ARG1 (x60 / save-02
+									:ARG1 (x62 / fish)
+									:manner (x64 / contain-01
+										:ARG1 (x66 / oil)
+										:ARG1 (x69 / area
+											:location-of (x72 / oil
+												:mod (x71 / this)
+												:purpose (x74 / ecape
+													:ARG2 (x78 / sea)
+													:manner (x79 / present))))
+										:ARG0 (x83 / try-01
+											:ARG1 (x85 / skim-02
+												:ARG1 (x87 / oil
+													:mod (x86 / this))
+												:purpose (x89 / ecape
+													:ARG2 (x93 / sea))))))))
 						:op1 (xap1 / multiple
-							:op1 (x47 / monetary-quantity
+							:op1 (x46 / monetary-quantity
 								:unit (d1 / dollar))))
-					:ARG1 (x56 / area
-						:mod (x53 / key)
-						:location-of (x55 / spawn
-							:ARG1 (x54 / herr))))))))
+					:ARG1 (x55 / area
+						:mod (x52 / key)
+						:location-of (x54 / spawn
+							:ARG1 (x53 / herr))))))))
 
 # ::id 32
-# ::snt Whales, porpoises and seals are also common in Prince William Sound
+# ::snt Whales , porpoises and seals are also common in Prince William Sound
 (x8 / common
 	:ARG0 (x4 / and
 		:op1 (x1 / whales)
@@ -865,26 +866,25 @@
 				:op1 "William"))))
 
 # ::id 33
-# ::snt " Whales's kind of like sailing through a zoo, " said Jim Lethcoe, who lives on a boat in the sound and operates a sailing business
-(x13 / say-01
-	:ARG1 (x7 / sailing
-		:mod (x4 / kind
-			:domain (x2 / whales))
-		:ARG2 (x10 / zoo))
-	:ARG0 (x14 / newspaper
-		:name (n / name
-			:op1 "Jim"
-			:op2 "Lethcoe")
-		:ARG0-of (x25 / and
-			:op1 (x18 / live-01
-				:ARG1 (x21 / boat)
-				:location (x24 / sound))
-			:op2 (x26 / operate-01
-				:ARG1 (x29 / business
-					:mod (x28 / sailing))))))
+# ::snt Whales  is kind of like sailing through a zoo , said Jim Lethcoe , who lives on a boat in the sound and operates a sailing business
+(x11 / say-01
+	:ARG0 (x1 / whales
+		:null_edge (x6 / sailing
+			:ARG2 (x9 / zoo
+				:mod (x3 / kind))))
+	:ARG1 (x23 / and
+		:op1 (x16 / live-01
+			:ARG0 (x12 / name
+				:op1 "Jim"
+				:op2 "Lethcoe")
+			:ARG1 (x19 / boat)
+			:location (x22 / sound))
+		:op2 (x24 / operate-01
+			:ARG1 (x27 / business
+				:mod (x26 / sailing)))))
 
 # ::id 34
-# ::snt An animal cleanup station was set up in a building at the community college in Valdez, but volunteers there said volunteers had no animals to work on by midafternoon
+# ::snt An animal cleanup station was set up in a building at the community college in Valdez , but volunteers there said volunteers  had no animals to work on by midafternoon
 (x18 / contrast-01
 	:ARG1 (x6 / set-03
 		:ARG1 (x4 / station
@@ -927,37 +927,37 @@
 				:op1 "Alaska"))))
 
 # ::id 36
-# ::snt " the 12,000-member United Fishermen of Alaska feel that this should have been the easiest oil spill in the world to clean up, " said Riki Ott, chairman of the organization's habitat committee
-(x26 / say-01
-	:ARG1 (x11 / recommend-01
-		:ARG1 (x8 / feel-01
-			:ARG0 (x5 / organization
+# ::snt the 12,000-member United Fishermen of Alaska  feel that this should have been the easiest oil spill in the world to clean up , said Riki Ott , chairman of the organization's habitat committee
+(x24 / say-01
+	:ARG1 (x10 / recommend-01
+		:ARG1 (x7 / feel-01
+			:ARG0 (x4 / organization
 				:name (n1 / name
 					:op1 "Fishermen")
-				:null_edge (x3 / 12,000-member)
-				:null_edge (x4 / null_tag)
-				:null_edge (x7 / state
+				:null_edge (x2 / 12,000-member)
+				:null_edge (x3 / null_tag)
+				:null_edge (x6 / state
 					:name (n2 / name
 						:op1 "Alaska"))))
-		:ARG1 (x17 / spill-01
-			:domain (x10 / this)
-			:mod (x15 / easiest)
-			:ARG1 (x16 / oil)
-			:location (x20 / world)
-			:ARG1 (x22 / clean-02
-				:ARG0 x10)))
-	:ARG0 (x27 / newspaper
+		:ARG1 (x16 / spill-01
+			:domain (x9 / this)
+			:mod (x14 / easiest)
+			:ARG1 (x15 / oil)
+			:location (x19 / world)
+			:ARG1 (x21 / clean-02
+				:ARG0 x9)))
+	:ARG0 (x25 / newspaper
 		:name (n / name
 			:op1 "Riki"
 			:op2 "Ott")
-		:ARG0-of (x30 / have-org-role-91
+		:ARG0-of (x28 / have-org-role-91
 			:ARG2 (c / chairman)
-			:ARG1 (x36 / committee
-				:mod (x35 / habitat
-					:ARG1 (x33 / organization))))))
+			:ARG1 (x34 / committee
+				:mod (x33 / habitat
+					:ARG1 (x31 / organization))))))
 
 # ::id 37
-# ::snt the 12,000-member United Fishermen of Alaska noted that the spill had occurred in a protected area close to the Valdez marine terminal and the water was calm
+# ::snt the 12,000-member United Fishermen of Alaska  noted that the spill had occurred in a protected area close to the Valdez marine terminal and the water was calm
 (x7 / note-01
 	:ARG0 (x4 / organization
 		:name (n / name
@@ -1007,7 +1007,7 @@
 	:ARG2 (x9 / sound))
 
 # ::id 40
-# ::snt Last year, they were paid about $ 85 million for their catches, the 12,000-member United Fishermen of Alaska said
+# ::snt Last year , they were paid about $ 85 million for their catches , the 12,000-member United Fishermen of Alaska  said
 (x21 / say-01
 	:ARG1 (x6 / pay-01
 		:ARG3 (x8 / country
@@ -1067,7 +1067,7 @@
 							:op1 "Alaska")))))))
 
 # ::id 43
-# ::snt The Coast Guard said the Exxon Valdez struck the reef when the 987-foot tanker Exxon Valdez maneuvered outside normal tanker traffic lanes to avoid icebergs
+# ::snt The Coast Guard said the Exxon Valdez struck the reef when the 987-foot tanker Exxon Valdez  maneuvered outside normal tanker traffic lanes to avoid icebergs
 (x4 / say-01
 	:ARG0 (x2 / military
 		:name (n / name
@@ -1092,7 +1092,7 @@
 				:ARG1 (x25 / iceberg)))))
 
 # ::id 44
-# ::snt The vessel's captain, Joseph Hazelwood, has worked for Exxon for 20 years, at least 10 as a ship's master
+# ::snt The vessel's captain , Joseph Hazelwood , has worked for Exxon for 20 years , at least 10 as a ship's master
 (x10 / work-01
 	:ARG0 (x4 / have-org-role-91
 		:ARG2 (c / captain)
@@ -1112,7 +1112,7 @@
 		:poss (x22 / ship)))
 
 # ::id 45
-# ::snt It was unclear if a pilot was aboard the Exxon Valdez when the 987-foot tanker Exxon Valdez grounded
+# ::snt It was unclear if a pilot was aboard the Exxon Valdez when the 987-foot tanker Exxon Valdez  grounded
 (x3 / clear-01
 	:polarity -
 	:ARG1 (x6 / person
@@ -1125,7 +1125,7 @@
 				:null_edge (x15 / tanker)))))
 
 # ::id 46
-# ::snt There was no decision Saturday on whether to use chemicals to disperse the oil, but a test of the dispersal method was being conducted Saturday afternoon, as was a test to determine whether at least some of the crude oil could be burned
+# ::snt There was no decision Saturday on whether to use chemicals to disperse the oil , but a test of the dispersal method was being conducted Saturday afternoon , as was a test to determine whether at least some of the crude oil could be burned
 (x16 / contrast-01
 	:ARG2 (x4 / thing
 		:ARG1-of (d / decide-01)
@@ -1183,7 +1183,7 @@
 				:weekday (x16 / sunday)))))
 
 # ::id 48
-# ::snt Coast Guard Cmdr. Steven McCall said one or more blood-alcohol tests were administered after the grounding, but Coast Guard Cmdr. Steven McCall said Coast Guard Cmdr. Steven McCall did n't know know how many people were tested or the results
+# ::snt Coast Guard Cmdr. Steven McCall  said one or more blood-alcohol tests were administered after the grounding , but Coast Guard Cmdr. Steven McCall  said Coast Guard Cmdr. Steven McCall  did not know know how many people were tested or the results
 (x18 / contrast-01
 	:ARG1 (x6 / say-01
 		:ARG0 (x4 / newspaper
@@ -1280,7 +1280,7 @@
 				:ARG1 (x19 / crew)))))
 
 # ::id 51
-# ::snt The subpoenas require the ship's master and two crew members to make the ship's master and two crew members available to NTSB investigators arriving Sunday
+# ::snt The subpoenas require the ship's master and two crew members  to make the ship's master and two crew members  available to NTSB investigators arriving Sunday
 (x3 / require-01
 	:ARG2 (x2 / subpoena)
 	:ARG1 (x8 / and
@@ -1323,7 +1323,7 @@
 		:domain (x6 / supoena)))
 
 # ::id 53
-# ::snt Previously, the largest U.S. tanker spill was the Dec. 15, 1976, grounding of the Argo Merchant tanker off the Nantucket shoals off Massachusetts, in which 7.6 million gallons of oil spilled, Golob said
+# ::snt Previously , the largest U.S. tanker spill was the Dec. 15 , 1976 , grounding of the Argo Merchant tanker off the Nantucket shoals off Massachusetts , in which 7.6 million gallons of oil spilled , Golob said
 (x38 / say-01
 	:ARG1 (x15 / grounding
 		:time (x1 / previous)
@@ -1358,7 +1358,7 @@
 			:op1 "Golob")))
 
 # ::id 54
-# ::snt Up to 10.7 million gallons of oil was lost on Nov. 1, 1979, when the tanker Burmah Agate collided with another ship in Galveston Bay, Texas
+# ::snt Up to 10.7 million gallons of oil was lost on Nov. 1 , 1979 , when the tanker Burmah Agate collided with another ship in Galveston Bay , Texas
 (x9 / lose-02
 	:ARG1 (x7 / oil
 		:quant (x5 / volume-quantity
@@ -1384,14 +1384,14 @@
 							:op1 "Texas")))))))
 
 # ::id 55
-# ::snt However, that oil burned as well as spilled
+# ::snt However , that oil burned as well as spilled
 (x5 / burn-01
 	:ARG1 (x4 / oil)
 	:concession-of (x9 / spill-01
 		:ARG0 x4))
 
 # ::id 56
-# ::snt The largest tanker spill in history resulted from the July 19, 1979, collision off Tobago of the supertankers Atlantic Empress and Aegean Captain, in which 300,000 tons _ more than 80 million gallons _ of oil was lost
+# ::snt The largest tanker spill in history resulted from the July 19 , 1979 , collision off Tobago of the supertankers Atlantic Empress and Aegean Captain , in which 300,000 tons _ more than 80 million gallons _ of oil was lost
 (x7 / result-01
 	:ARG1 (x4 / spill-01
 		:mod (x2 / large

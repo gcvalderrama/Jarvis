@@ -1,5 +1,5 @@
 # ::id 1
-# ::snt Authorities questioned the badly injured pilot of a crashed Boeing 737 Wednesday, but revealed no clues as to why the jet's undamaged right engine was shut down well before the crash while the other engine burned
+# ::snt Authorities questioned the badly injured pilot of a crashed Boeing 737 Wednesday , but revealed no clues as to why the jet's undamaged right engine was shut down well before the crash while the other engine burned
 (x15 / reveal-01
 	:ARG1 (x2 / question-01
 		:ARG0 (x1 / authority)
@@ -26,7 +26,7 @@
 					:mod (x36 / other))))))
 
 # ::id 2
-# ::snt The Civil Aviation Authority, meanwhile, ordered increased inspections on 37 airplanes with CFM56 engines, the type on the Midland Airways jet that crashed Sunday
+# ::snt The Civil Aviation Authority , meanwhile , ordered increased inspections on 37 airplanes with CFM56 engines , the type on the Midland Airways jet that crashed Sunday
 (x8 / order-02
 	:ARG0 (x2 / government-organization
 		:name (n / name
@@ -51,7 +51,7 @@
 						:weekday (x27 / sunday)))))))
 
 # ::id 3
-# ::snt Investigators said much more work was needed to pinpoint the cause of the crash, which killed 44 people and injured 82
+# ::snt Investigators said much more work was needed to pinpoint the cause of the crash , which killed 44 people and injured 82
 (x2 / say-01
 	:ARG0 (x1 / person
 		:ARG0-of (i / investigate-01))
@@ -68,7 +68,7 @@
 							:quant 82)))))))
 
 # ::id 4
-# ::snt The government also ordered immediate checks of engine monitoring systems on similar aircraft to verify that Investigators correctly indicate right and left, prompting speculation that a malfunctioning alarm system could have misled the flight crew
+# ::snt The government also ordered immediate checks of engine monitoring systems on similar aircraft to verify that Investigators  correctly indicate right and left , prompting speculation that a malfunctioning alarm system could have misled the flight crew
 (x4 / order-02
 	:ARG0 (x2 / government-organization
 		:ARG0-of (g / govern-01))
@@ -101,7 +101,7 @@
 										:op (f / flight)))))))))))
 
 # ::id 5
-# ::snt Freddie Yetman, technical secretary of the British Airline Pilots Association, said this showed that investigators " must have some suspicion of these circuits .
+# ::snt Freddie Yetman , technical secretary of the British Airline Pilots Association , said this showed that investigators must have some suspicion of these circuits
 (x13 / say-01
 	:ARG0 (x1 / newspaper
 		:name (n / name
@@ -117,15 +117,15 @@
 				:null_edge (x10 / null_tag))))
 	:ARG1 (x15 / show-01
 		:ARG0 (x14 / this)
-		:ARG1 (x20 / have-03
+		:ARG1 (x19 / have-03
 			:ARG0 (x17 / person
 				:ARG0-of (i / investigate-01))
-			:ARG1 (x22 / suspect-01
-				:mod (x21 / some)
-				:ARG1 (x25 / circuit)))))
+			:ARG1 (x21 / suspect-01
+				:mod (x20 / some)
+				:ARG1 (x24 / circuit)))))
 
 # ::id 6
-# ::snt In the United States, the Federal Aviation Administration ordered inspections of 300 Boeing 737s for possible cross-wiring of engine warning systems
+# ::snt In the United States , the Federal Aviation Administration ordered inspections of 300 Boeing 737s for possible cross-wiring of engine warning systems
 (x10 / order-02
 	:location (x3 / country
 		:name (n / name
@@ -149,7 +149,7 @@
 				:ARG1 (x20 / engine)))))
 
 # ::id 7
-# ::snt U.S. media reported that the crew of the jet shut down the wrong engine, and Britain's tabloid newspapers drew similar conclusions in banner headlines
+# ::snt U.S. media reported that the crew of the jet shut down the wrong engine , and Britain's tabloid newspapers drew similar conclusions in banner headlines
 (x16 / and
 	:op1 (x3 / report-01
 		:ARG0 (x2 / media
@@ -175,58 +175,59 @@
 			:mod (x25 / banner))))
 
 # ::id 8
-# ::snt " Error on the Flight Deck, " the Today newspaper said
-(x12 / say-01
-	:ARG1 (x2 / error
-		:ARG1 (x6 / deck
-			:mod (x5 / fly-01
+# ::snt Error on the Flight Deck , the Today newspaper said
+(x10 / say-01
+	:ARG1 (x1 / error
+		:ARG1 (x5 / deck
+			:mod (x4 / fly-01
 				:op (f / flight))))
-	:ARG0 (x11 / newspaper
-		:null_edge (x10 / null_tag)))
+	:ARG0 (x9 / newspaper
+		:null_edge (x8 / null_tag)))
 
 # ::id 9
-# ::snt " Fatal Error " said the Daily Star
-(x5 / say-01
-	:ARG0 (x3 / error
-		:mod (x2 / fatal))
-	:ARG1 (x8 / star
-		:null_edge (x7 / null_tag)))
+# ::snt Fatal Error said the Daily Star
+(x3 / say-01
+	:ARG0 (x2 / error
+		:mod (x1 / fatal))
+	:ARG1 (x6 / star
+		:null_edge (x5 / null_tag)))
 
 # ::id 10
-# ::snt " Pilot Shut Off the Wrong Engine " said the Sun
-(x9 / say-01
-	:null_edge (x3 / null_tag
-		:ARG0-of (x2 / person
-			:ARG0-of (p / pilot-01))
-		:ARG1 (x7 / engine
-			:mod (x6 / wrong-41)))
-	:ARG1 (x11 / country
-		:name (n / name
-			:op1 "Sun")))
+# ::snt Pilot Shut Off the Wrong Engine said the Sun
+(x2 / shut-05
+	:ARG0 (x1 / person
+		:ARG0-of (p / pilot-01))
+	:direction (x3 / off)
+	:ARG1 (x6 / engine
+		:mod (x5 / wrong-41)
+		:ARG1-of (x7 / say-01
+			:ARG1 (x9 / country
+				:name (n / name
+					:op1 "Sun")))))
 
 # ::id 11
-# ::snt The Transport Department said that " evidence obtained early in the investigation " indicated both of the plane's engines " might have suffered a related failure " and that possibility was still being examined
+# ::snt The Transport Department said that evidence obtained early in the investigation indicated both of the plane's engines might have suffered a related failure and that possibility was still being examined
 (x4 / say-01
 	:ARG0 (x3 / department
 		:null_edge (x2 / null_tag))
-	:ARG1 (x14 / indicate-01
-		:ARG0 (x7 / thing
-			:ARG0-of (e / evidence-01)
-			:ARG1-of (x8 / obtain-01
-				:ARG0 (x12 / investigate-01
-					:time (x9 / early))))
-		:ARG1 (x24 / suffer-01
-			:ARG1 (x20 / engine
-				:poss (x18 / plane))
-			:ARG1 (x27 / fail-01
-				:ARG1-of (x26 / relate-01)
-				:ARG1 (x29 / and
-					:op1 (x35 / examine-01
-						:ARG1 (x31 / possible)
-						:mod (x33 / still)))))))
+	:ARG1 (x25 / and
+		:op1 (x12 / indicate-01
+			:ARG0 (x6 / thing
+				:ARG0-of (e / evidence-01)
+				:ARG1-of (x7 / obtain-01
+					:time (x8 / early
+						:ARG2 (x11 / investigate-01))))
+			:ARG1 (x21 / suffer-01
+				:ARG1 (x18 / engine
+					:poss (x16 / plane))
+				:ARG1 (x24 / fail-01
+					:ARG1-of (x23 / relate-01))))
+		:op2 (x31 / examine-01
+			:ARG1 (x27 / possible)
+			:mod (x29 / still))))
 
 # ::id 12
-# ::snt The statement from the department's Air Accidents Investigation Branch also confirmed that the airplane's left engine caught fire and the right engine was shut down, and that pilot Kevin Hunt had told ground control the fire was in the right engine
+# ::snt The statement from the department's Air Accidents Investigation Branch also confirmed that the airplane's left engine caught fire and the right engine was shut down , and that pilot Kevin Hunt had told ground control the fire was in the right engine
 (x12 / confirm-01
 	:ARG0 (x2 / state-01
 		:time (x3 / from
@@ -263,23 +264,23 @@
 						:mod (x43 / right)))))))
 
 # ::id 13
-# ::snt The reasons for shutting down the engine " are not yet clear and are still under investigation, " the airplane's left engine said
-(x25 / say-01
-	:ARG1 (x13 / and
-		:op1 (x12 / clear
-			:time (x11 / yet)
-			:domain (x17 / investigate-01
-				:mod (x15 / still)))
+# ::snt The reasons for shutting down the engine are not yet clear and are still under investigation , the airplane's left engine  said
+(x23 / say-01
+	:ARG1 (x12 / and
+		:op1 (x11 / clear
+			:time (x10 / yet)
+			:domain (x16 / investigate-01
+				:mod (x14 / still)))
 		:ARG1-of (xap0 / cause-01
 			:ARG0 (x2 / reason
 				:purpose (x4 / shut-05
 					:ARG1 (x7 / engine)))))
-	:ARG0 (x24 / engine
-		:poss (x21 / airplane)
-		:mod (x23 / left)))
+	:ARG0 (x22 / engine
+		:poss (x19 / airplane)
+		:mod (x21 / left)))
 
 # ::id 14
-# ::snt The jet, en route from London to Belfast with 126 people aboard, plunged into an embankment a half-mile short of the runway at East Midlands Airport in central England as the jet's was trying to make an emergency landing Sunday night
+# ::snt The jet , en route from London to Belfast with 126 people aboard , plunged into an embankment a half-mile short of the runway at East Midlands Airport in central England as the jet's  was trying to make an emergency landing Sunday night
 (x15 / plunge
 	:ARG1 (x2 / jet)
 	:ARG1 (x5 / route
@@ -315,7 +316,7 @@
 					:null_edge (x43 / null_tag))))))
 
 # ::id 15
-# ::snt Hunt, whose back and legs were broken in the crash, was interviewed for 45 minutes at the intensive care unit of Leicester Royal Infirmary, said the hospital's deputy general manager Carol Henshall
+# ::snt Hunt , whose back and legs were broken in the crash , was interviewed for 45 minutes at the intensive care unit of Leicester Royal Infirmary , said the hospital's deputy general manager Carol Henshall
 (x28 / say-01
 	:ARG1 (x14 / interview-01
 		:ARG1 (x1 / hunt
@@ -344,30 +345,27 @@
 			:op2 "Henshall")))
 
 # ::id 16
-# ::snt Mrs. Henshall said some of the " wilder headlines " had been kept from Hunt, but friends and colleagues had told him of the news reports
-(x17 / contrast-01
-	:ARG1 (x3 / say-01
-		:ARG0 (x2 / person
-			:name (n / name
-				:op1 "Henshall")
-			:ARG0-of (x1 / mrs.))
-		:ARG1 (x13 / keep-01
-			:null_edge (x4 / some
-				:null_edge (x5 / include-91
-					:ARG2 (x9 / headline-01
-						:mod (x8 / wilder))))
-			:source (x15 / person
-				:name (n1 / name
-					:op1 "Hunt"))))
-	:ARG2 (x22 / tell-01
-		:ARG1 (x19 / and
-			:op1 (x18 / friend)
-			:op2 (x20 / colleague))
-		:ARG1 (x27 / report-01
-			:mod (x26 / news))))
+# ::snt Mrs. Henshall said some of the wilder headlines had been kept from Hunt , but friends and colleagues had told him of the news reports
+(x3 / say-01
+	:ARG0 (x2 / person
+		:name (n / name
+			:op1 "Henshall")
+		:ARG0-of (x1 / mrs.))
+	:ARG1 (x11 / keep-01
+		:null_edge (x4 / some
+			:null_edge (x5 / include-91
+				:ARG2 (x8 / headline-01
+					:mod (x7 / wilder))))
+		:ARG2 (x20 / tell-01
+			:ARG1 x4
+			:ARG1 (x17 / and
+				:op1 (x16 / friend)
+				:op2 (x18 / colleague))
+			:ARG1 (x25 / report-01
+				:mod (x24 / news)))))
 
 # ::id 17
-# ::snt In the United States, NBC News quoted unidentified U.S. government sources as saying " the plane's flight recorders, which monitor engine performance and the pilots ' conversations, indicate the crew shut down the wrong engine
+# ::snt In the United States , NBC News quoted unidentified U.S. government sources as saying the plane's flight recorders , which monitor engine performance and the pilotsconversations , indicate the crew shut down the wrong engine
 (x8 / quote-01
 	:location (x3 / country
 		:name (n / name
@@ -388,27 +386,23 @@
 	:ARG2 (x14 / say-01
 		:ARG0 x3
 		:ARG0 x12
-		:ARG1 (x32 / indicate-01
-			:ARG0 (x20 / recorder
-				:poss (x17 / plane)
-				:mod (x19 / fly-01
+		:ARG1 (x29 / indicate-01
+			:ARG0 (x19 / recorder
+				:poss (x16 / plane)
+				:mod (x18 / fly-01
 					:op (f / flight))
-				:ARG0-of (x23 / monitor-01
-					:ARG1 (x26 / and
-						:op1 (x25 / perform-01
-							:ARG1 (x24 / engine))
-						:op2 (x30 / converse-01
-							:ARG1 (xap0 / person
-								:ARG0-of (x28 / have-org-role-91
-									:ARG2 (p / person
-										:ARG0-of (p1 / pilot-01))))))))
-			:ARG1 (x35 / shut-05
-				:ARG0 (x34 / crew)
-				:ARG1 (x39 / engine
-					:mod (x38 / wrong-41))))))
+				:ARG0-of (x22 / monitor-01
+					:ARG1 (x25 / and
+						:op1 (x24 / perform-01
+							:ARG1 (x23 / engine))
+						:op2 (x27 / pilotsconversation))))
+			:ARG1 (x32 / shut-05
+				:ARG0 (x31 / crew)
+				:ARG1 (x36 / engine
+					:mod (x35 / wrong-41))))))
 
 # ::id 18
-# ::snt The trouble was in one _ unidentified U.S. government sources as saying " the plane's flight recorders , which monitor engine performance and the pilots ' conversations shut down the other .
+# ::snt The trouble was in one _ unidentified U.S. government sources as saying the plane's flight recorders , which monitor engine performance and the pilotsconversations  shut down the other
 (x2 / trouble-01
 	:location (x10 / source
 		:mod (x6 / _)
@@ -420,21 +414,16 @@
 				:name (n / name
 					:op1 "U.S.")))
 		:example (x12 / say-01
-			:ARG1 (x18 / recorder
-				:poss (x15 / plane)
-				:mod (x17 / fly-01
-					:op (f / flight)))
-			:ARG1 (x24 / and
-				:op1 (x21 / monitor-01
-					:ARG1 (x23 / perform-01
-						:ARG1 (x22 / engine))
-					:ARG0 (xap0 / person
-						:ARG0-of (x26 / have-org-role-91
-							:ARG2 (p / person
-								:ARG0-of (p1 / pilot-01)))))
-				:op2 (x29 / shut-05
-					:ARG0 (x28 / converse-01)
-					:mod (x32 / other))))))
+			:ARG1 (x23 / and
+				:op2 (x17 / recorder
+					:poss (x14 / plane)
+					:mod (x16 / fly-01
+						:op (f / flight)))
+				:op1 (x20 / monitor-01
+					:ARG1 (x22 / perform-01
+						:ARG1 (x21 / engine)))
+				:op2 (x26 / shut-05
+					:mod (x29 / other))))))
 
 # ::id 19
 # ::snt But the network said investigators had yet to detemine whether faulty instruments contributed to the crash
@@ -451,7 +440,7 @@
 				:ARG2 (x16 / crash-01)))))
 
 # ::id 20
-# ::snt The Washington Post, quoting unidentified accident investigators, said the crew believed unidentified accident investigators were making a routine, one-engine emergency landing, and apparently thought unidentified accident investigators had solved the problem when unidentified accident investigators shut down an engine
+# ::snt The Washington Post , quoting unidentified accident investigators , said the crew believed unidentified accident investigators  were making a routine , one-engine emergency landing , and apparently thought unidentified accident investigators  had solved the problem when unidentified accident investigators  shut down an engine
 (x10 / say-01
 	:ARG0 (x2 / newspaper
 		:name (n / name
@@ -496,7 +485,7 @@
 						:ARG1 (x43 / engine)))))))
 
 # ::id 21
-# ::snt Spokesmen for both the FAA and the National Transportation Board said Spokesmen for both the FAA and the National Transportation Board knew of no information reaching U.S. officials about the flight recorders ' contents
+# ::snt Spokesmen for both the FAA and the National Transportation Board said Spokesmen for both the FAA and the National Transportation Board  knew of no information reaching U.S. officials about the flight recorderscontents
 (x11 / say-01
 	:ARG0 (x1 / have-org-role-91
 		:ARG2 (s / spokesman)
@@ -521,51 +510,49 @@
 								:op1 "National"
 								:op2 "Transportation"
 								:op3 "Board"))))
-				:ARG1 (x26 / reach-01
-					:ARG0 (x25 / information
-						:polarity -)
-					:ARG1 (x34 / thing
-						:ARG1-of (c / contain-01)
-						:poss (x32 / recorder
-							:mod (x31 / fly-01
-								:op (f / flight))))
-					:ARG1 (xap0 / person
-						:ARG0-of (x28 / have-org-role-91
-							:ARG2 (o / official)
-							:ARG1 (x27 / country
-								:name (n4 / name
-									:op1 "U.S.")))))))))
+				:ARG1 (x25 / information
+					:polarity -
+					:ARG0-of (x26 / reach-01
+						:ARG1 (xap0 / person
+							:ARG0-of (x28 / have-org-role-91
+								:ARG2 (o / official)
+								:ARG1 (x27 / country
+									:name (n4 / name
+										:op1 "U.S."))
+								:ARG1 (x32 / recorderscontent
+									:mod (x31 / fly-01
+										:op (f / flight)))))))))))
 
 # ::id 22
-# ::snt The airplane's two " black boxes, " the cockpit voice recorder and digital flight data recorder, are being examined at the government's laboratory in Farnborough, outside London
-(x22 / examine-01
-	:ARG1 (x7 / box
+# ::snt The airplane's two black boxes , the cockpit voice recorder and digital flight data recorder , are being examined at the government's laboratory in Farnborough , outside London
+(x20 / examine-01
+	:ARG1 (x6 / box
 		:mod (x2 / airplane)
 		:quant 2
-		:mod (x6 / black)
-		:example (x14 / and
-			:op1 (x12 / voice)
-			:op1 (x13 / recorder
-				:mod (x11 / cockpit))
-			:op2 (x18 / recorder
-				:mod x11
-				:mod (x15 / digital)
-				:mod (x17 / data
-					:mod (x16 / fly-01
-						:op (f / flight))))))
-	:location (x27 / laboratory
-		:poss (x25 / government-organization
+		:mod (x5 / black))
+	:ARG1 (x12 / and
+		:op1 (x10 / voice
+			:mod (x9 / cockpit))
+		:op2 (x11 / recorder)
+		:op2 (x16 / recorder
+			:mod x9
+			:mod (x13 / digital)
+			:mod (x15 / data
+				:mod (x14 / fly-01
+					:op (f / flight)))))
+	:location (x25 / laboratory
+		:poss (x23 / government-organization
 			:ARG0-of (g / govern-01))
-		:location (x29 / country
+		:location (x27 / country
 			:name (n / name
 				:op1 "Farnborough"))
-		:location (x31 / outside
-			:op1 (x32 / city
+		:location (x29 / outside
+			:op1 (x30 / city
 				:name (n1 / name
 					:op1 "London")))))
 
 # ::id 23
-# ::snt According to court documents and federal officials in America, the FBI is investigating a General Electric Co. admission that test records may have been falsified at a factory which made parts for the CFM56 engine that failed here
+# ::snt According to court documents and federal officials in America , the FBI is investigating a General Electric Co. admission that test records may have been falsified at a factory which made parts for the CFM56 engine that failed here
 (x14 / investigate-01
 	:ARG1 (x5 / and
 		:op2 (xap0 / person
@@ -602,7 +589,7 @@
 								:location (x39 / here)))))))))
 
 # ::id 24
-# ::snt The Seattle factory also made a check and flow valve for the F404 engine aboard the Navy's FA-18 fighter, GE spokesman Richard Kennedy said Wednesday
+# ::snt The Seattle factory also made a check and flow valve for the F404 engine aboard the Navy's FA-18 fighter , GE spokesman Richard Kennedy said Wednesday
 (x26 / say-01
 	:ARG1 (x5 / make-02
 		:ARG0 (x3 / factory
@@ -654,7 +641,7 @@
 						:ARG1 (x18 / fight-01)))))))
 
 # ::id 26
-# ::snt The timer valve made by GE for the CFM56 engine could not have caused the turbine to fail even if the valve malfunctioned, Kennedy said
+# ::snt The timer valve made by GE for the CFM56 engine could not have caused the turbine to fail even if the valve malfunctioned , Kennedy said
 (x26 / say-01
 	:ARG1 (x11 / possible
 		:domain (x14 / cause-01
@@ -681,7 +668,7 @@
 		:weekday (x8 / sunday)))
 
 # ::id 28
-# ::snt Government sources, speaking on condition of anonymity, said Hunt reported at 8:06 p.m. that " unidentified U.S. government sources as saying " the plane's flight recorders , which monitor engine performance and the pilots ' conversations have an engine on fire .
+# ::snt Government sources , speaking on condition of anonymity , said Hunt reported at 8:06 p.m. that unidentified U.S. government sources as saying the plane's flight recorders , which monitor engine performance and the pilotsconversations  have an engine on fire
 (x10 / say-01
 	:ARG0 (x2 / source
 		:mod (x1 / government-organization
@@ -693,87 +680,74 @@
 			:name (n / name
 				:op1 "Hunt"))
 		:null_edge (x14 / include-91)
-		:ARG0 (x21 / source
-			:ARG1-of (x18 / identify-01
-				:polarity -)
-			:mod (x19 / country
-				:name (n1 / name
-					:op1 "U.S."))
-			:mod (x20 / government-organization
-				:ARG0-of (g1 / govern-01)))
-		:ARG2 (x23 / say-01
-			:ARG1 (x35 / and
-				:op2 (x29 / recorder
-					:poss (x26 / plane)
-					:mod (x28 / fly-01
-						:op (f / flight)))
-				:op1 (x32 / monitor-01
-					:ARG1 (x34 / perform-01
-						:ARG1 (x33 / engine))
-					:ARG1 (x39 / converse-01
-						:ARG1 (x42 / engine
-							:topic (x44 / fire-01)))
-					:ARG0 (xap0 / person
-						:ARG0-of (x37 / have-org-role-91
-							:ARG2 (p / person
-								:ARG0-of (p1 / pilot-01)))))))))
+		:ARG1 (x36 / have-03
+			:ARG0 (x20 / source
+				:ARG1-of (x17 / identify-01
+					:polarity -)
+				:mod (x19 / government-organization
+					:ARG0-of (g1 / govern-01)
+					:ARG1 (x18 / country
+						:name (n1 / name
+							:op1 "U.S."))
+					:ARG1-of (x22 / say-01
+						:ARG1 (x27 / recorder
+							:poss (x24 / plane)
+							:mod (x26 / fly-01
+								:op (f / flight))
+							:ARG0-of (x30 / monitor-01
+								:ARG1 (x33 / and
+									:op1 (x32 / perform-01
+										:ARG1 (x31 / engine))
+									:op2 (x35 / pilotsconversation)))))))
+			:ARG1 (x38 / engine
+				:topic (x40 / fire-01)))))
 
 # ::id 29
-# ::snt Then, at 8:14 p.m., the sources said unidentified U.S. government sources as saying " the plane's flight recorders , which monitor engine performance and the pilots ' conversations told traffic control : " unidentified U.S. government sources as saying " the plane's flight recorders , which monitor engine performance and the pilots ' conversations am shutting down the starboard (right )engine .
+# ::snt Then , at 8:14 p.m. , the sources said unidentified U.S. government sources as saying the plane's flight recorders , which monitor engine performance and the pilotsconversations  told traffic control : unidentified U.S. government sources as saying the plane's flight recorders , which monitor engine performance and the pilotsconversations  am shutting down the starboard (right )engine
 (x9 / say-01
 	:time (x1 / then)
 	:null_edge (x4 / include-91)
 	:ARG0 (x8 / source)
-	:ARG1 (x13 / source
+	:ARG1 (x26 / and
 		:ARG1-of (x10 / identify-01
 			:polarity -)
-		:mod (x12 / government-organization
+		:op1 (x12 / government-organization
 			:ARG0-of (g / govern-01)
 			:ARG1 (x11 / country
-				:name (n / name
+				:name (n1 / name
 					:op1 "U.S.")))
-		:ARG0-of (x15 / say-01
-			:ARG1 (x21 / recorder
-				:poss (x18 / plane)
-				:mod (x20 / fly-01
-					:op (f / flight))
-				:example (x42 / say-01
-					:ARG1 (x27 / and
-						:op1 (x24 / monitor-01
-							:ARG1 (x26 / perform-01
-								:ARG1 (x25 / engine)))
-						:op2 (x32 / tell-01
-							:ARG0 (x31 / converse-01
-								:ARG1 (xap0 / person
-									:ARG0-of (x29 / have-org-role-91
-										:ARG2 (p2 / person
-											:ARG0-of (p3 / pilot-01)))))
-							:ARG2 (x34 / control-01
-								:ARG1 (x33 / traffic))))
-					:ARG1 (x40 / source
-						:ARG1-of (x37 / identify-01
-							:polarity -)
-						:mod (x38 / country
-							:name (n1 / name
-								:op1 "U.S."))
-						:mod (x39 / government-organization
-							:ARG0-of (g1 / govern-01)))
-					:ARG1 (x54 / and
-						:op2 (x48 / recorder
-							:poss (x45 / plane)
-							:mod (x47 / fly-01
-								:op (f1 / flight)))
-						:op1 (x51 / monitor-01
-							:ARG1 (x53 / perform-01
-								:ARG1 (x52 / engine))
-							:ARG0 (xap1 / person
-								:ARG0-of (x56 / have-org-role-91
-									:ARG2 (p / person
-										:ARG0-of (p1 / pilot-01)))))
-						:op2 (x60 / shut-05
-							:ARG0 (x58 / converse-01)
-							:ARG1 (x67 / engine
-								:mod (x65 / right)))))))))
+		:op1 (x15 / say-01
+			:ARG1 (x20 / recorder
+				:poss (x17 / plane)
+				:mod (x19 / fly-01
+					:op (f / flight))))
+		:op1 (x23 / monitor-01
+			:ARG1 (x25 / perform-01
+				:ARG1 (x24 / engine)))
+		:op2 (x29 / tell-01
+			:ARG0 (x28 / pilotsconversation)
+			:ARG2 (x31 / control-01
+				:ARG1 (x30 / traffic))))
+	:ARG0 (x36 / source
+		:ARG1-of (x33 / identify-01
+			:polarity -)
+		:mod (x34 / country
+			:name (n / name
+				:op1 "U.S."))
+		:mod (x35 / government-organization
+			:ARG0-of (g1 / govern-01))
+		:ARG0-of (x38 / say-01
+			:ARG1 (x49 / and
+				:op2 (x43 / recorder
+					:poss (x40 / plane)
+					:mod (x42 / fly-01
+						:op (f1 / flight)))
+				:op1 (x46 / monitor-01
+					:ARG1 (x48 / perform-01
+						:ARG1 (x47 / engine)))
+				:op2 (x53 / shut-05
+					:ARG1 (x60 / engine
+						:mod (x58 / right)))))))
 
 # ::id 30
 # ::snt The plane crashed 12 minutes later at 8:26 p.m.
@@ -784,7 +758,7 @@
 	:null_edge (x8 / include-91))
 
 # ::id 31
-# ::snt The Civil Aviation Authority said that on the advice of investigators, the advice of investigators was issuing new instructions for the inspection and monitoring of Boeing 737-300, Boeing 737-400 and Airbus A320 airplanes, all of which use the CFM56 engine
+# ::snt The Civil Aviation Authority said that on the advice of investigators , the advice of investigators  was issuing new instructions for the inspection and monitoring of Boeing 737-300 , Boeing 737-400 and Airbus A320 airplanes , all of which use the CFM56 engine
 (x5 / say-01
 	:ARG0 (x2 / government-organization
 		:name (n / name
@@ -824,7 +798,7 @@
 					:mod (x42 / cfm56))))))
 
 # ::id 32
-# ::snt The engines are made jointly by U.S.-based GE and a French company, SNECMA
+# ::snt The engines are made jointly by U.S.-based GE and a French company , SNECMA
 (x4 / make-02
 	:ARG1 (x2 / engine)
 	:manner (x5 / joint)
@@ -845,7 +819,7 @@
 					:op1 "SNECMA")))))
 
 # ::id 33
-# ::snt Boeing Commercial Airplanes spokesman Craig Martin said in Seattle of the FAA's inspection order, " Investigators certainly believe Boeing Commercial Airplanes's a prudent measure to go out and check to make sure there's nothing wrong with the fleet
+# ::snt Boeing Commercial Airplanes spokesman Craig Martin said in Seattle of the FAA's inspection order , Investigators  certainly believe Boeing Commercial Airplanes  is a prudent measure to go out and check to make sure there is nothing wrong with the fleet
 (x7 / say-01
 	:ARG0 (x5 / newspaper
 		:name (n / name
@@ -867,27 +841,27 @@
 		:ARG0 (x12 / organization
 			:name (n3 / name
 				:op1 "FAA")))
-	:ARG1 (x20 / believe-01
-		:ARG0 (x18 / person
+	:ARG1 (x19 / believe-01
+		:ARG0 (x17 / person
 			:ARG0-of (i / investigate-01))
-		:mod (x19 / certain)
-		:ARG1 (x27 / measure
-			:domain (x21 / government-organization
+		:mod (x18 / certain)
+		:ARG1 (x26 / measure
+			:domain (x20 / government-organization
 				:name (n5 / name
 					:op1 "Boeing"
 					:op2 "Commercial"
 					:op3 "Airplanes"))
-			:mod (x26 / prudent)
-			:purpose (x31 / and
-				:op1 (x29 / go-06)
-				:op2 (x32 / check-07
-					:ARG1 (x34 / make-01
-						:ARG1 (x38 / nothing
-							:mod (x39 / wrong-41
-								:part-of (x42 / fleet)))))))))
+			:mod (x25 / prudent)
+			:purpose (x30 / and
+				:op1 (x28 / go-06)
+				:op2 (x31 / check-07
+					:ARG1 (x33 / make-01
+						:ARG1 (x37 / nothing
+							:mod (x38 / wrong-41
+								:part-of (x41 / fleet)))))))))
 
 # ::id 34
-# ::snt But certainly this precautionary measure does not imply there has been any cause identified (for the crash . )
+# ::snt But certainly this precautionary measure does not imply there has been any cause identified (for the crash )
 (x1 / contrast-01
 	:ARG2 (x8 / imply-01
 		:mod (x2 / certain)
@@ -898,5 +872,5 @@
 			:mod (x12 / any)
 			:ARG1-of (x14 / person
 				:ARG1-of (i / identify-01)
-				:ARG2 (x18 / crash-01)))))
+				:ARG1 (x18 / crash-01)))))
 

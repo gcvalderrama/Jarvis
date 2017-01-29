@@ -1,5 +1,5 @@
 # ::id 1
-# ::snt A steady decline in tuberculosis has all but stopped amid the continuing threat of TB for the AIDS-infected, federal health researchers say
+# ::snt A steady decline in tuberculosis has all but stopped amid the continuing threat of TB for the AIDS-infected , federal health researchers say
 (x8 / contrast-01
 	:ARG1 (x7 / all)
 	:ARG1 (x9 / stop-01
@@ -21,7 +21,7 @@
 								:op1 "federal"))))))))
 
 # ::id 2
-# ::snt In 1988, the last year for which complete statistics are available, 22,436 U.S. tuberculosis cases were reported, down 0.4 percent from 1987, the national Centers for Disease Control reported Thursday
+# ::snt In 1988 , the last year for which complete statistics are available , 22,436 U.S. tuberculosis cases were reported , down 0.4 percent from 1987 , the national Centers for Disease Control reported Thursday
 (x33 / report-01
 	:ARG1 (x19 / report-01
 		:ARG1 (x17 / case
@@ -63,31 +63,35 @@
 			:year 1984)))
 
 # ::id 4
-# ::snt One reason for the slowing of progress in wiping out TB is " the increasing occurrence of TB in persons infected with ... HIV, " the virus that causes acquired immune deficiency syndrome, the CDC said
-(x38 / say-01
-	:ARG1 (x16 / occur-01
+# ::snt One reason for the slowing of progress in wiping out TB is the increasing occurrence of TB in persons infected with ... HIV , the virus that causes acquired immune deficiency syndrome , the CDC said
+(x36 / say-01
+	:ARG1 (x15 / occur-01
 		:ARG1-of (x5 / slowing
 			:quant 1
 			:ARG1 (x7 / progress-01
 				:manner (x9 / wipe-02
 					:ARG1 (x11 / tb))))
-		:ARG1-of (x15 / increase-01)
-		:ARG1 (x18 / tb)
-		:domain (x20 / person
-			:ARG1-of (x21 / infect-01
-				:ARG2 (x28 / virus
-					:ARG0-of (x30 / cause-01
-						:ARG1 (x34 / syndrome
-							:ARG1-of (x31 / acquire-01)
-							:mod (x32 / immune)
-							:mod (x33 / person
-								:prep-with (d / deficiency))))))))
-	:ARG0 (x37 / organization
+		:ARG1-of (x14 / increase-01)
+		:ARG1 (x17 / tb)
+		:domain (x19 / person
+			:ARG1-of (x20 / infect-01
+				:ARG2 (xap0 / and
+					:ARG0 (x23 / disease
+						:name (n1 / name
+							:op1 "HIV"))
+					:ARG2 (x26 / virus
+						:ARG0-of (x28 / cause-01
+							:ARG1 (x32 / syndrome
+								:ARG1-of (x29 / acquire-01)
+								:mod (x30 / immune)
+								:mod (x31 / person
+									:prep-with (d / deficiency)))))))))
+	:ARG0 (x35 / organization
 		:name (n / name
 			:op1 "CDC")))
 
 # ::id 5
-# ::snt AIDS leaves the body susceptible to a number of serious illnesses, including TB, and studies have found that about 4 percent of AIDS patients also are listed as TB patients
+# ::snt AIDS leaves the body susceptible to a number of serious illnesses , including TB , and studies have found that about 4 percent of AIDS patients also are listed as TB patients
 (x16 / and
 	:op1 (x2 / leave-01
 		:ARG0 (x1 / disease
@@ -116,7 +120,7 @@
 				:mod (x31 / tb)))))
 
 # ::id 6
-# ::snt If the 6.7 percent average annual decline had kept up through the late 1980s, an estimated 14,768 fewer TB cases would have been expected during 1985-1988, the CDC said in the late 1980s weekly report
+# ::snt If the 6.7 percent average annual decline had kept up through the late 1980s , an estimated 14,768 fewer TB cases would have been expected during 1985-1988 , the CDC said in the late 1980s  weekly report
 (x31 / say-01
 	:ARG1 (x25 / expect-01
 		:time (x9 / keep-01
@@ -144,7 +148,7 @@
 				:unit (w / week)))))
 
 # ::id 7
-# ::snt Tuberculosis was down 8.7 percent among whites in 1988, as compared with 1985, but up 9.1 percent among blacks and 17.6 percent among Hispanics _ two groups with proportionately higher rates of AIDS cases
+# ::snt Tuberculosis was down 8.7 percent among whites in 1988 , as compared with 1985 , but up 9.1 percent among blacks and 17.6 percent among Hispanics _ two groups with proportionately higher rates of AIDS cases
 (x / xconcept
 	:x (x1 / tuberculosis
 		:domain (x5 / percentage-entity
@@ -173,7 +177,7 @@
 							:op1 "AIDS")))))))
 
 # ::id 8
-# ::snt In 1988, 7,720 new tuberculosis cases were reported in whites, compared with 8,280 in blacks and 3,637 in Hispanics
+# ::snt In 1988 , 7,720 new tuberculosis cases were reported in whites , compared with 8,280 in blacks and 3,637 in Hispanics
 (x9 / report-01
 	:time (x2 / date-entity
 		:year 1988)
@@ -189,7 +193,7 @@
 			:null_edge (x21 / hispanics))))
 
 # ::id 9
-# ::snt The TB rate among blacks was 28.3 per 100,000, compared with 18.3 for Hispanics and 4.1 for whites
+# ::snt The TB rate among blacks was 28.3 per 100,000 , compared with 18.3 for Hispanics and 4.1 for whites
 (x7 / 28.3
 	:ARG1-of (x11 / compare-01
 		:ARG1 (x3 / rate
@@ -205,7 +209,7 @@
 				:quant 4.1))))
 
 # ::id 10
-# ::snt Another 2,371 TB cases were reported among Asians and Pacific Islanders in the United States, for a rate of 36.3 per 100,000
+# ::snt Another 2,371 TB cases were reported among Asians and Pacific Islanders in the United States , for a rate of 36.3 per 100,000
 (x6 / report-01
 	:ARG1 (x4 / case
 		:mod (x1 / another)
@@ -227,7 +231,7 @@
 		:mod (x21 / 36.3)))
 
 # ::id 11
-# ::snt The CDC estimates that 10 million Americans are infected with the bacteria that cause tuberculosis, an infection of the lungs
+# ::snt The CDC estimates that 10 million Americans are infected with the bacteria that cause tuberculosis , an infection of the lungs
 (x3 / estimate-01
 	:ARG0 (x2 / organization
 		:name (n / name
@@ -250,7 +254,7 @@
 	:ARG2 (x7 / ill))
 
 # ::id 13
-# ::snt But the number of new cases is only part of the toll from tuberculosis, the CDC said
+# ::snt But the number of new cases is only part of the toll from tuberculosis , the CDC said
 (x18 / say-01
 	:ARG1 (x1 / contrast-01
 		:ARG2 (x6 / case
@@ -264,7 +268,7 @@
 			:op1 "CDC")))
 
 # ::id 14
-# ::snt In 1987, more than 115,000 Americans were under TB treatment : 20,000 new patients plus 95,000 people labeled high-risk and on preventive therapy
+# ::snt In 1987 , more than 115,000 Americans were under TB treatment : 20,000 new patients plus 95,000 people labeled high-risk and on preventive therapy
 (x2 / date-entity
 	:year 1987
 	:time-of (x19 / label-01
@@ -283,7 +287,7 @@
 					:mod (x23 / prevent-01))))))
 
 # ::id 15
-# ::snt Tuberculosis, which is curable in most cases with drug treatment, killed 1,755 Americans in 1987
+# ::snt Tuberculosis , which is curable in most cases with drug treatment , killed 1,755 Americans in 1987
 (x13 / kill-01
 	:ARG0 (x1 / tuberculosis
 		:mod (x5 / curable

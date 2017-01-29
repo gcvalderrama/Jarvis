@@ -1,5 +1,5 @@
 # ::id 1
-# ::snt MR Lewis Preston, World Bank president, yesterday promised to strengthen the bank's efforts to reduce poverty in developing countries
+# ::snt MR Lewis Preston , World Bank president , yesterday promised to strengthen the bank's efforts to reduce poverty in developing countries
 (x10 / promise-01
 	:ARG0 (x1 / military
 		:name (n / name
@@ -23,21 +23,22 @@
 					:ARG1-of (x21 / develop-02))))))
 
 # ::id 2
-# ::snt ` Poverty reduction must be the benchmark against which our performance as a development institution is judged, ' MR Lewis Preston said
-(x23 / say-01
-	:ARG1 (x7 / benchmark
-		:domain (x3 / reduce-01)
-		:domain (x17 / judge-01
-			:ARG1 (x11 / perform-01
-				:ARG1 (x15 / institution
-					:mod (x14 / develop-02)))))
-	:ARG0 (x21 / newspaper
+# ::snt Poverty reduction must be the benchmark against which our performance as a development institution is judged , MR Lewis Preston  said
+(x21 / say-01
+	:ARG1 (x6 / benchmark
+		:domain (x2 / reduce-01)
+		:domain (x16 / judge-01
+			:ARG1 (x10 / perform-01
+				:ARG1 (x14 / institution
+					:mod (x13 / develop-02)))))
+	:ARG0 (x18 / military
 		:name (n / name
-			:op1 "Lewis"
-			:op2 "Preston")))
+			:op1 "MR"
+			:op2 "Lewis"
+			:op3 "Preston")))
 
 # ::id 3
-# ::snt However, MR Lewis Preston failed to respond to demands from the Clinton administration for the bank to set more precise targets for the proportion of lending that should have an explicit poverty focus
+# ::snt However , MR Lewis Preston  failed to respond to demands from the Clinton administration for the bank to set more precise targets for the proportion of lending that should have an explicit poverty focus
 (x6 / fail-01
 	:ARG1 (x3 / military
 		:name (n / name
@@ -66,7 +67,7 @@
 											:ARG1 (x33 / poverty))))))))))))
 
 # ::id 4
-# ::snt In congressional testimony this week, Mr Lloyd Bentsen, US treasury secretary, said the US wanted to see more funding that ` will create social and economic safety nets ' for poor people most affected by war, civil strife and economic mismanagement
+# ::snt In congressional testimony this week , Mr Lloyd Bentsen , US treasury secretary , said the US wanted to see more funding that will create social and economic safety netsfor poor people most affected by war , civil strife and economic mismanagement
 (x15 / say-01
 	:topic (x3 / testify-01
 		:ARG0 (x2 / government-organization
@@ -92,35 +93,34 @@
 		:ARG1 (x20 / see-01
 			:ARG1 (x22 / fund-01
 				:degree (x21 / more)
-				:ARG1 (x26 / create-01
-					:ARG1 (x31 / net
-						:topic (x28 / and
-							:op1 (x27 / society)
-							:op2 (x29 / economy))
-						:mod (x30 / safe-41))
-					:ARG1-of (x37 / affect-01
-						:ARG1 (x34 / poor)
-						:degree (x36 / most)
-						:ARG0 (x43 / and
-							:op1 (x39 / war)
-							:op2 (x42 / strife
-								:mod (x41 / civil))
-							:op2 (x45 / mismanage-01
-								:mod (x44 / economy)))))))))
+				:ARG1 (x25 / create-01
+					:ARG1-of (x34 / affect-01
+						:ARG1 (x31 / poor
+							:name (x30 / netsfor
+								:null_edge (x27 / and
+									:op1 (x26 / society)
+									:op2 (x28 / economy))
+								:mod (x29 / safe-41)))
+						:degree (x33 / most)
+						:ARG1 (x40 / and
+							:op1 (x36 / war)
+							:op2 (x39 / strife
+								:mod (x38 / civil))
+							:op2 (x42 / mismanage-01
+								:mod (x41 / economy)))))))))
 
 # ::id 5
-# ::snt ` We will look for specific increases in the share of lending going for these purposes .
-(x4 / look-01
-	:ARG0 (x2 / we)
-	:ARG1 (x7 / increase-01
-		:mod (x6 / specific)
-		:ARG1 (x10 / share
-			:ARG1 (x12 / lending))
-		:ARG1-of (x13 / go-15
-			:ARG2 (x16 / purpose))))
+# ::snt We will look for specific increases in the share of lending going for these purposes
+(x3 / look-01
+	:ARG0 (x1 / we)
+	:ARG1 (x6 / increase-01
+		:mod (x5 / specific)
+		:ARG1 (x9 / share
+			:mod (x11 / lending
+				:ARG2 (x15 / purpose)))))
 
 # ::id 6
-# ::snt In fiscal 1992, nearly half of all World Bank adjustment loans failed to include specific poverty reduction measures, in spite of calls from Mr Preston to put greater emphasis on poverty relief
+# ::snt In fiscal 1992 , nearly half of all World Bank adjustment loans failed to include specific poverty reduction measures , in spite of calls from Mr Preston to put greater emphasis on poverty relief
 (x13 / fail-01
 	:time (x3 / date-entity
 		:year 1992
@@ -151,28 +151,28 @@
 					:ARG1 (x33 / poverty))))))
 
 # ::id 7
-# ::snt The share of bank lending allocated for ` human resource development ' is still only 14 per cent, in spite of repeated calls from Mr Preston for an increased emphasis on investment in people
+# ::snt The share of bank lending allocated for human resource development is still only 14 per cent , in spite of repeated calls from Mr Preston for an increased emphasis on investment in people
 (x5 / lending
 	:ARG1 (x2 / share
 		:ARG1-of (x6 / allocate-01
-			:ARG2 (x11 / develop-02
-				:ARG1 (x10 / resource
-					:mod (x9 / human)))))
+			:ARG2 (x10 / develop-02
+				:ARG1 (x9 / resource
+					:mod (x8 / human)))))
 	:mod (x4 / bank)
-	:null_edge (x14 / still
-		:null_edge (x18 / monetary-quantity
-			:unit (c / cent)
-			:mod (x15 / only)
-			:null_edge 14
-			:time (x21 / spite
-				:ARG1 (x24 / call-02
-					:ARG1-of (x23 / repeat-01)
-					:ARG0 (x27 / person
-						:name (n / name
-							:op1 "Preston"))
-					:ARG2 (x30 / increase-01
-						:ARG1 (x31 / emphasize-01
-							:ARG1 (x33 / invest-01))))))))
+	:null_edge (x16 / monetary-quantity
+		:unit (c / cent)
+		:null_edge (x12 / still
+			:null_edge 14)
+		:mod (x13 / only)
+		:time (x19 / spite
+			:ARG1 (x22 / call-02
+				:ARG1-of (x21 / repeat-01)
+				:ARG0 (x25 / person
+					:name (n / name
+						:op1 "Preston"))
+				:ARG2 (x28 / increase-01
+					:ARG1 (x29 / emphasize-01
+						:ARG1 (x31 / invest-01)))))))
 
 # ::id 8
 # ::snt At a news conference Mr Preston said the bank was making progress : a decade ago only 5 per cent of bank lending went for human resource development and only 5 per cent of structural adjustment loans had a explicit focus on poverty
@@ -209,20 +209,20 @@
 				:ARG1 (x43 / poverty)))))
 
 # ::id 9
-# ::snt But a news conference Mr said the bank had a ` long, long way to go '
+# ::snt But a news conference Mr  said the bank had a long , long way to go
 (x1 / contrast-01
 	:ARG2 (x6 / say-01
 		:ARG0 (x4 / conference
 			:mod (x3 / news))
 		:ARG1 (x9 / have-03
 			:ARG0 (x8 / bank)
-			:ARG1 (x15 / way
-				:duration (x12 / long)
-				:duration (x14 / long)
-				:instrument-of (x17 / go-06)))))
+			:ARG1 (x14 / way
+				:duration (x11 / long)
+				:duration (x13 / long)
+				:instrument-of (x16 / go-06)))))
 
 # ::id 10
-# ::snt 
+# ::snt While a news conference Mr  expected an increase in the share of bank lending aimed at poverty relief , a news conference Mr  declined to set precise targets for bank staff
 (x24 / decline-02
 	:ARG1 (x6 / expect-01
 		:ARG0 (x4 / conference
@@ -245,7 +245,7 @@
 				:mod (x30 / bank)))))
 
 # ::id 11
-# ::snt Mr Preston, however, does intend to take several new steps to sharpen the bank's focus on poverty
+# ::snt Mr Preston , however , does intend to take several new steps to sharpen the bank's focus on poverty
 (x7 / intend-01
 	:ARG0 (x2 / person
 		:name (n / name
@@ -260,7 +260,7 @@
 				:ARG1 (x20 / poverty)))))
 
 # ::id 12
-# ::snt The bank will publish annual progress reports charting the World Bank's progress in poverty reduction
+# ::snt 
 (x4 / publish-01
 	:ARG0 (x2 / bank)
 	:ARG1 (x7 / report-01
@@ -275,7 +275,7 @@
 					:ARG1 (x15 / poverty))))))
 
 # ::id 13
-# ::snt the World Bank's will also seek the participation of the poor in the design as well as the implemention of projects
+# ::snt the World Bank's  will also seek the participation of the poor in the design as well as the implemention of projects
 (x7 / seek-01
 	:ARG0 (x2 / organization
 		:name (n / name
@@ -290,24 +290,24 @@
 			:ARG1 (x22 / project))))
 
 # ::id 14
-# ::snt ` We want this to become the norm for our operations in the years to come, ' Mr Preston said
-(x21 / say-01
-	:ARG1 (x3 / want-01
-		:ARG0 (x2 / we)
-		:ARG1 (x6 / become-01
-			:ARG2 (x8 / norm
-				:domain (x4 / this)
-				:purpose (x11 / operation))
-			:duration (x14 / temporal-quantity
+# ::snt We want this to become the norm for our operations in the years to come , Mr Preston said
+(x19 / say-01
+	:ARG1 (x2 / want-01
+		:ARG0 (x1 / we)
+		:ARG1 (x5 / become-01
+			:ARG2 (x7 / norm
+				:domain (x3 / this)
+				:purpose (x10 / operation))
+			:duration (x13 / temporal-quantity
 				:unit (y / year)
-				:ARG1-of (x16 / come-01))))
-	:ARG0 (x20 / person
+				:ARG1-of (x15 / come-01))))
+	:ARG0 (x18 / person
 		:name (n / name
 			:op1 "Preston")
-		:null_edge (x19 / mr)))
+		:null_edge (x17 / mr)))
 
 # ::id 15
-# ::snt MR Lewis Preston also released a report, ` Implementing the World Bank's Strategy to Reduce Poverty - Progress and Challenges, ' that outlines progress to date
+# ::snt MR Lewis Preston  also released a report , Implementing the World Bank's Strategy to Reduce Poverty - Progress and Challenges , that outlines progress to date
 (x7 / report-01
 	:ARG0 (x1 / military
 		:name (n / name
@@ -315,17 +315,11 @@
 			:op2 "Lewis"
 			:op3 "Preston"))
 	:mod (x4 / also)
-	:ARG1 (x10 / implement-01
-		:ARG1 (x17 / reduce-01
-			:ARG1 (x15 / strategy
-				:poss (x12 / organization
-					:name (n1 / name
-						:op1 "World"
-						:op2 "Bank")))))
-	:ARG0-of (x26 / outline-01
-		:ARG1 (x27 / progress-01
-			:null_edge (x28 / null_tag
-				:op1 (x29 / date-entity)))))
+	:null_edge (x9 / null_tag)
+	:ARG0-of (x24 / outline-01
+		:ARG1 (x25 / progress-01
+			:null_edge (x26 / null_tag
+				:op1 (x27 / date-entity)))))
 
 # ::id 16
 # ::snt This highlights the diversity of performance on poverty reduction in the third world
@@ -357,7 +351,7 @@
 					:null_edge 10)))))
 
 # ::id 18
-# ::snt Sub-Saharan Africa, however, had seen an increase in poverty which now affected half the people in the region
+# ::snt Sub-Saharan Africa , however , had seen an increase in poverty which now affected half the people in the region
 (x7 / see-01
 	:ARG0 (x1 / organization
 		:name (n / name
@@ -389,7 +383,7 @@
 				:ARG1 (x15 / co-operate-00)))))
 
 # ::id 20
-# ::snt Officials cited Indonesia, China, Mexico, and El Salvador as examples of countries that were co-operating well but declined to name poor performers
+# ::snt Officials cited Indonesia , China , Mexico , and El Salvador as examples of countries that were co-operating well but declined to name poor performers
 (x2 / cite-01
 	:ARG1 (x9 / and
 		:op1 (x5 / country
@@ -414,7 +408,7 @@
 			:ARG2 (o / official))))
 
 # ::id 21
-# ::snt MR Lewis Preston said hoped for a clear signal from this week's meeting of the Group of Seven leading industrial countries that Officials would deliver on commitments for a Dollars 18bn replenishment of resources for the International Development Agency (IDA -RRB-, the centrepiece of bank efforts to reduce poverty
+# ::snt MR Lewis Preston  said hoped for a clear signal from this week's meeting of the Group of Seven leading industrial countries that Officials  would deliver on commitments for a Dollars 18bn replenishment of resources for the International Development Agency (IDA ), the centrepiece of bank efforts to reduce poverty
 (x4 / say-01
 	:ARG0 (x1 / military
 		:name (n / name

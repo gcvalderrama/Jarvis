@@ -1,26 +1,26 @@
 # ::id 1
-# ::snt President Bill Clinton's pledge to ` end welfare as we know it ' was one of the most popular lines in last year's election campaign
+# ::snt President Bill Clinton's pledge to end welfare as we know it was one of the most popular lines in last year's election campaign
 (x5 / pledge-01
-	:ARG0 (x2 / name
+	:name (x2 / name
 		:op1 "Bill"
 		:op2 "Clinton"
 		:ARG0-of (x1 / have-org-role-91
 			:ARG2 (p / president)))
-	:ARG2 (x8 / end-01
+	:ARG2 (x7 / end-01
 		:ARG0 x2
-		:ARG1 (x9 / welfare)
-		:ARG1 (x12 / know-01
-			:ARG0 (x11 / we)))
-	:ARG0 (x21 / line
-		:mod (x20 / popular-41
-			:degree (x19 / most))
-		:ARG0-of (x27 / campaign-01
-			:time (x24 / year
-				:mod (x23 / last))
-			:ARG1 (x26 / elect-01))))
+		:ARG1 (x8 / welfare)
+		:ARG1 (x11 / know-01
+			:ARG0 (x10 / we)
+			:ARG1 (x19 / line
+				:mod (x18 / popular-41
+					:degree (x17 / most))
+				:ARG0-of (x25 / campaign-01
+					:time (x22 / year
+						:mod (x21 / last))
+					:ARG1 (x24 / elect-01))))))
 
 # ::id 2
-# ::snt President Bill Clinton's idea of a strict two-year time limit on welfare cheques appealed to voters (especially ` Reagan democrats ' )not just as a way of cutting government spending and thus reducing taxes, but as a solution to the nation's most pressing social problems
+# ::snt President Bill Clinton's  idea of a strict two-year time limit on welfare cheques appealed to voters (especially Reagan democrats)not just as a way of cutting government spending and thus reducing taxes , but as a solution to the nation's most pressing social problems
 (x15 / appeal-02
 	:ARG0 (x5 / idea
 		:name (x2 / name
@@ -38,24 +38,24 @@
 			:ARG1 (x14 / cheque
 				:mod (x13 / welfare))))
 	:ARG1 (x17 / vote-01
-		:null_edge (x22 / democrat
-			:mod (x19 / especially)
-			:example (x34 / and
-				:op1 (x31 / cut-01
-					:ARG1 (x33 / spend-01
-						:mod (x32 / government-organization
-							:ARG0-of (g / govern-01))))
-				:op2 (x36 / reduce-01
-					:ARG1 (x37 / tax-01))))
-		:example (x42 / solution
-			:null_edge (x48 / press-01
-				:degree (x47 / most)
-				:ARG1 (x50 / problem
-					:poss (x45 / nation)
-					:mod (x49 / society))))))
+		:null_edge (x21 / democrat
+			:mod (x19 / especially))
+		:example (x40 / solution
+			:null_edge (x46 / press-01
+				:degree (x45 / most)
+				:ARG1 (x48 / problem
+					:poss (x43 / nation)
+					:mod (x47 / society)))))
+	:ARG1 (x32 / and
+		:op1 (x29 / cut-01
+			:ARG1 (x31 / spend-01
+				:mod (x30 / government-organization
+					:ARG0-of (g / govern-01))))
+		:op2 (x34 / reduce-01
+			:ARG1 (x35 / tax-01))))
 
 # ::id 3
-# ::snt In the American mind, welfare has become synonymous with such evils as urban decay, fatherless children, drug abuse and violent crime
+# ::snt In the American mind , welfare has become synonymous with such evils as urban decay , fatherless children , drug abuse and violent crime
 (x8 / become-01
 	:ARG2 (x4 / mind
 		:mod (x3 / country
@@ -76,7 +76,7 @@
 					:mod (x23 / violent))))))
 
 # ::id 4
-# ::snt By promising radical welfare reform, Mr Clinton was sending a powerful subliminal message : Mr Clinton would wage war on all the diseases that are ravaging urban society
+# ::snt By promising radical welfare reform , Mr Clinton was sending a powerful subliminal message : Mr Clinton  would wage war on all the diseases that are ravaging urban society
 (x10 / send-01
 	:ARG2 (x2 / promise-01
 		:ARG1 (x5 / reform-01
@@ -102,7 +102,7 @@
 						:mod (x28 / urban)))))))
 
 # ::id 5
-# ::snt Since becoming president, Mr Clinton has barely mentioned the word welfare, raising fears that Mr Clinton grandiose promise will prove as cynical as former President George Bush's ` read my lips : no new taxes ' pledge
+# ::snt Since becoming president , Mr Clinton has barely mentioned the word welfare , raising fears that Mr Clinton  grandiose promise will prove as cynical as former President George Bush's read my lips : no new taxespledge
 (x9 / mention-01
 	:time (x1 / since
 		:op1 (x2 / become-01
@@ -123,23 +123,23 @@
 						:name (n1 / name
 							:op1 "Clinton"))
 					:mod (x19 / grandiose))
-				:ARG1 (x24 / cynical
-					:example (x40 / pledge-01
-						:name (x28 / name
+				:ARG1 (x24 / cynical)
+				:ARG1 (x31 / thing
+					:ARG1-of (r / read-01)
+					:ARG0 (x28 / newspaper
+						:name (n2 / name
 							:op1 "George"
-							:op2 "Bush"
-							:mod (x26 / former)
-							:ARG0-of (x27 / have-org-role-91
-								:ARG2 (p1 / president)))
-						:null_edge (x32 / read-01
-							:ARG0 x28
-							:ARG1 (x34 / lips)
-							:null_edge (x38 / tax-01
-								:polarity -
-								:mod (x37 / new)))))))))
+							:op2 "Bush")
+						:mod (x26 / former)
+						:ARG0-of (x27 / have-org-role-91
+							:ARG2 (p1 / president)))
+					:ARG1 (x33 / lips)
+					:null_edge (x37 / taxespledge
+						:polarity -
+						:mod (x36 / new)))))))
 
 # ::id 6
-# ::snt The White House insists that welfare reform is not forgotten but has just had to take welfare reform turn behind two even more urgent priorities : the deficit reduction plan finally approved this month and the healthcare reform scheduled for September
+# ::snt The White House insists that welfare reform is not forgotten but has just had to take welfare reform  turn behind two even more urgent priorities : the deficit reduction plan finally approved this month and the healthcare reform scheduled for September
 (x4 / insist-01
 	:ARG0 (x3 / government-organization
 		:name (n / name
@@ -174,7 +174,7 @@
 									:ARG3 (x41 / date-entity))))))))))
 
 # ::id 7
-# ::snt The White House claims both measures will help shift people off welfare by ` making work pay .
+# ::snt The White House  claims both measures will help shift people off welfare by making work pay
 (x4 / claim-01
 	:ARG0 (x3 / government-organization
 		:name (n / name
@@ -186,8 +186,8 @@
 		:ARG1 (x9 / shift-01)
 		:path (x11 / off
 			:op1 (x12 / welfare))
-		:ARG1 (x17 / pay-01
-			:mod (x16 / work-01))))
+		:ARG1 (x16 / pay-01
+			:mod (x15 / work-01))))
 
 # ::id 8
 # ::snt The budget advanced this cause by expanding the earned income tax credit (a kind of negative income tax )
@@ -206,7 +206,7 @@
 					:ARG1 (x18 / income))))))
 
 # ::id 9
-# ::snt This gives poor working families a cash bonus of up to Dollars 2,500 a year, increasing the incentive to take low paid jobs
+# ::snt This gives poor working families a cash bonus of up to Dollars 2,500 a year , increasing the incentive to take low paid jobs
 (x2 / give-01
 	:ARG0 (x1 / this)
 	:ARG2 (x5 / family
@@ -222,7 +222,7 @@
 					:ARG1-of (x23 / pay-01))))))
 
 # ::id 10
-# ::snt If healthcare reform guarantees health insurance for all workers, welfare recipients will no longer be able to reject jobs on the grounds that welfare recipients stand to lose their health care benefits
+# ::snt If healthcare reform guarantees health insurance for all workers , welfare recipients will no longer be able to reject jobs on the grounds that welfare recipients  stand to lose their health care benefits
 (x17 / possible
 	:condition (x4 / guarantee-01
 		:ARG0 (x3 / reform-01
@@ -246,7 +246,7 @@
 						:mod (x31 / health)))))))
 
 # ::id 11
-# ::snt In addition, the administration promises to bolster the economic position of welfare mothers by strictly enforcing laws requiring absent fathers to support absent fathers children financially
+# ::snt In addition , the administration promises to bolster the economic position of welfare mothers by strictly enforcing laws requiring absent fathers to support absent fathers  children financially
 (x6 / promise-01
 	:ARG2 (x8 / bolster
 		:ARG1 (x11 / position
@@ -275,7 +275,7 @@
 			:mod (x1 / such))))
 
 # ::id 13
-# ::snt But welfare mothers are hardly going to solve America's welfare problem, which differs substantially from that in Europe
+# ::snt But welfare mothers  are hardly going to solve America's welfare problem , which differs substantially from that in Europe
 (x1 / contrast-01
 	:ARG2 (x6 / go-02
 		:ARG0 (x3 / mother
@@ -295,7 +295,7 @@
 							:op1 "Europe")))))))
 
 # ::id 14
-# ::snt 
+# ::snt In keeping with Franklin Roosevelt's dictum that a permanent dole is a narcotic , a subtle destroyer of the human spirit , the US has never provided permanent welfare support for single , able-bodied adults
 (x2 / keep-02
 	:ARG2 (x11 / dole-01
 		:ARG0 (x7 / dictum
@@ -303,46 +303,46 @@
 				:op1 "Franklin"
 				:op2 "Roosevelt"))
 		:mod (x10 / permanent)
-		:ARG2 (x15 / narcotics
-			:null_edge (x19 / destroyer
-				:mod (x18 / subtle)
-				:ARG1 (x23 / spirit
-					:mod (x22 / human)))))
-	:ARG0 (x27 / country
+		:ARG1 (x14 / narcotics
+			:null_edge (x18 / destroyer
+				:mod (x17 / subtle)
+				:ARG1 (x22 / spirit
+					:mod (x21 / human)))))
+	:ARG0 (x25 / country
 		:name (n / name
 			:op1 "US"))
-	:ARG1 (x33 / support-01
-		:mod (x31 / permanent)
-		:mod (x32 / welfare)
-		:ARG1 (x38 / adult
-			:mod (x35 / single)
-			:mod (x37 / able-bodied))))
+	:ARG1 (x31 / support-01
+		:mod (x29 / permanent)
+		:mod (x30 / welfare)
+		:ARG1 (x36 / adult
+			:mod (x33 / single)
+			:mod (x35 / able-bodied))))
 
 # ::id 15
-# ::snt When pundits talk of a ` culture of welfare ' single , able-bodied adults are referring mainly to the Dollars 20bn spent on Aid for Families with Dependent Children, a benefit received by 5m single-parent families
-(x16 / refer-01
+# ::snt When pundits talk of a culture of welfare single , able-bodied adults  are referring mainly to the Dollars 20bn spent on Aid for Families with Dependent Children , a benefit received by 5m single-parent families
+(x14 / refer-01
 	:time (x3 / talk-01
 		:ARG0 (x2 / pundit)
-		:ARG1 (x7 / culture
-			:mod (x9 / welfare)))
-	:ARG0 (x14 / adult
-		:mod (x11 / single)
-		:mod (x13 / able-bodied))
-	:mod (x17 / main)
-	:null_edge (x22 / spend-01
-		:ARG2 (x24 / disease
+		:ARG1 (x6 / culture
+			:poss (x12 / adult
+				:mod (x8 / welfare)
+				:mod (x9 / single)
+				:mod (x11 / able-bodied))))
+	:mod (x15 / main)
+	:null_edge (x20 / spend-01
+		:ARG2 (x22 / disease
 			:name (n / name
 				:op1 "Aid")
-			:ARG2 (x26 / family
-				:ARG1 (x29 / child))
-			:ARG0-of (x32 / benefit-01
-				:ARG1-of (x33 / receive-01
-					:ARG0 (x37 / family
-						:mod (x35 / 5m)
-						:mod (x36 / single-parent)))))))
+			:ARG2 (x24 / family
+				:ARG1 (x27 / child))
+			:ARG0-of (x30 / benefit-01
+				:ARG1-of (x31 / receive-01
+					:ARG0 (x35 / family
+						:mod (x33 / 5m)
+						:mod (x34 / single-parent)))))))
 
 # ::id 16
-# ::snt The objection is not that some families in straitened circumstances need AFDC as a short-term prop, but that half of those on welfare behave as though some families in straitened circumstances have a meal ticket for life
+# ::snt The objection is not that some families in straitened circumstances need AFDC as a short-term prop , but that half of those on welfare behave as though some families in straitened circumstances  have a meal ticket for life
 (x2 / object-01
 	:ARG1-of (x11 / need-01
 		:ARG0 (x7 / family
@@ -361,7 +361,7 @@
 					:purpose (x38 / life))))))
 
 # ::id 17
-# ::snt So what should Mr Clinton do
+# ::snt So what should Mr Clinton do ?
 (x3 / recommend-01
 	:ARG1 (x6 / do-02
 		:ARG0 (x5 / person
@@ -383,7 +383,7 @@
 			:ARG1 (x9 / time))))
 
 # ::id 19
-# ::snt Once people accept that benefits are not going to be paid indefinitely, people argue, behaviour will change
+# ::snt Once people accept that benefits are not going to be paid indefinitely , people  argue , behaviour will change
 (x19 / change-01
 	:condition (x3 / accept-01
 		:null_edge (x1 / null_tag)
@@ -440,7 +440,7 @@
 					:mod (x19 / destroy-01))))))
 
 # ::id 23
-# ::snt With its economic life support system (welfare )ripped away, the underclass will shrivel
+# ::snt With its economic life support system (welfare )ripped away , the underclass will shrivel
 (x16 / shrivel
 	:time (x10 / rip-01
 		:ARG0 (x6 / system
@@ -465,7 +465,7 @@
 				:mod (x3 / modern)))))
 
 # ::id 25
-# ::snt If welfare stops, something has to take so brutal a social experiment place
+# ::snt If welfare stops , something has to take so brutal a social experiment  place
 (x6 / have-03
 	:condition (x3 / stop-01
 		:ARG0 (x2 / welfare)
@@ -510,7 +510,7 @@
 								:mod (x31 / public)))))))))
 
 # ::id 27
-# ::snt After two years, welfare cheques would thus be replaced by the offer of a government job at slightly below the private sector minimum wage
+# ::snt After two years , welfare cheques would thus be replaced by the offer of a government job at slightly below the private sector minimum wage
 (x10 / replace-01
 	:time (x1 / after
 		:op1 (x3 / temporal-quantity
@@ -542,7 +542,7 @@
 		:topic (x11 / care-01)))
 
 # ::id 29
-# ::snt According to one advocate, this would amount to replacing the welfare state by the ` work ethic state '
+# ::snt According to one advocate , this would amount to replacing the welfare state by the work ethic state
 (xap0 / say-01
 	:snt1 (x4 / advocate-01
 		:quant 1)
@@ -550,10 +550,10 @@
 		:domain (x6 / this)
 		:ARG2 (x10 / replace-01
 			:ARG1 (x13 / state
-				:mod (x12 / welfare)))
-		:ARG0 (x19 / state
-			:mod (x17 / work-01)
-			:mod (x18 / ethic))))
+				:mod (x12 / welfare)
+				:ARG0 (x18 / state
+					:mod (x16 / work-01)
+					:mod (x17 / ethic))))))
 
 # ::id 30
 # ::snt This solution is more appealing than a mere cessation of benefits
@@ -566,7 +566,7 @@
 		:ARG1 (x11 / benefit-01)))
 
 # ::id 31
-# ::snt But a solution to the nation's most pressing social problems would involve a huge expansion of public sector employment and cost perhaps Dollars 50-60bn a year, far more than the Clinton administration is willing to spend on welfare reform
+# ::snt But a solution to the nation's most pressing social problems  would involve a huge expansion of public sector employment and cost perhaps Dollars 50-60bn a year , far more than the Clinton administration is willing to spend on welfare reform
 (x / xconcept
 	:x (x1 / contrast-01
 		:ARG2 (x13 / involve-01
@@ -595,7 +595,7 @@
 	:x (x21 / and))
 
 # ::id 32
-# ::snt Fortunately there is a fall back position for Mr Clinton : the bipartisan Family Support Act of 1988, which Mr Clinton helped steer through Congress
+# ::snt Fortunately there is a fall back position for Mr Clinton : the bipartisan Family Support Act of 1988 , which Mr Clinton  helped steer through Congress
 (x1 / fortunate-41
 	:ARG1 (x7 / position
 		:null_edge (x5 / null_tag)
@@ -620,7 +620,7 @@
 						:op1 "Congress"))))))
 
 # ::id 33
-# ::snt 
+# ::snt This recognised the impossibility of ending welfare overnight and instead set targets for the gradual introduction of workfare
 (x9 / and
 	:op1 (x2 / recognize-02
 		:ARG0 (x1 / this)
@@ -632,12 +632,12 @@
 		:ARG1 (x12 / target
 			:purpose (x16 / introduce-02
 				:manner (x15 / gradual)
-				:ARG1 (x19 / workfare)))))
+				:ARG1 (x18 / workfare)))))
 
 # ::id 34
-# ::snt Next year states will receive federal assistance only if they ensure that at least 15 per cent of the 'em ployable ' welfare case load is working or in training programmes ; by 1995 the required ratio rises to 20 per cent
+# ::snt Next year states will receive federal assistance only if they ensure that at least 15 per cent of the 'em ployable welfare case load is working or in training programmes ; by 1995 the required ratio rises to 20 per cent
 (x / xconcept
-	:x (x32 / and
+	:x (x31 / and
 		:time (x2 / year
 			:mod (x1 / next))
 		:op1 (x5 / receive-01
@@ -647,24 +647,24 @@
 					:name (n / name
 						:op1 "federal")))
 			:condition (x11 / ensure-01
-				:ARG1 (x28 / or
-					:op2 (x27 / work-01
-						:ARG0 (x17 / monetary-quantity
-							:unit (c / cent)
-							:null_edge (x25 / load-01
-								:mod (x23 / welfare)
-								:ARG1 (x24 / case)))))))
+				:ARG1 (x27 / or
+					:op2 (x26 / work-01
+						:null_edge (x24 / load-01
+							:null_edge 15
+							:mod (x22 / welfare)
+							:ARG1 (x23 / case))))))
 		:mod (x8 / only)
-		:op2 (x38 / rise-01
-			:ARG1 (x31 / program
-				:mod (x30 / train-01))
-			:null_edge (x34 / date-entity
+		:op2 (x37 / rise-01
+			:null_edge x24
+			:ARG1 (x30 / program
+				:mod (x29 / train-01))
+			:null_edge (x33 / date-entity
 				:year 1995)
-			:ARG1 (x37 / ratio
-				:ARG1-of (x36 / require-01))
+			:ARG1 (x36 / ratio
+				:ARG1-of (x35 / require-01))
 			:ARG4 20)
-		:op2 (x42 / monetary-quantity
-			:unit (c1 / cent))))
+		:op2 (x41 / monetary-quantity
+			:unit (c / cent))))
 
 # ::id 35
 # ::snt These seemingly undemanding targets require a much larger fraction of the welfare population to take jobs at some point during the year
@@ -685,7 +685,7 @@
 			:time (x20 / during))))
 
 # ::id 36
-# ::snt Mr Clinton could tighten the definition of 'em ployable ', so as to include mothers with children under the age of three, and set more demanding workfare participation targets, for example that 50 per cent of welfare recipients should be working or in training by the year 2000
+# ::snt Mr Clinton could tighten the definition of 'em ployable , so as to include mothers with children under the age of three , and set more demanding workfare participation targets , for example that 50 per cent of welfare recipients should be working or in training by the year 2000
 (x3 / possible
 	:domain (x4 / tighten-01
 		:ARG0 (x2 / person
@@ -693,30 +693,29 @@
 				:op1 "Clinton")
 			:null_edge (x1 / mr))
 		:ARG1 (x6 / definition)
-		:null_edge (x15 / include-01
-			:ARG1 (x12 / so)
-			:ARG1 (x16 / mother
-				:ARG1 (x18 / child
-					:time (x21 / age
-						:ARG0 (x23 / person
-							:op (t / three)))))
-			:ARG2 (x26 / set-03
-				:ARG1 (x28 / demand-01
-					:degree (x27 / more)
-					:ARG1 (x31 / target
-						:mod (x29 / workfare)
-						:mod (x30 / participate-01)
-						:ARG1 (x45 / or
-							:op2 (x42 / recommend-01
-								:ARG1 (x44 / work-01
-									:ARG1 (x41 / recipient
+		:ARG1 (x24 / and
+			:op1 (x14 / include-01
+				:ARG1 (x15 / mother
+					:ARG1 (x17 / child
+						:time (x20 / age
+							:ARG0 (x22 / person
+								:op (t / three))))))
+			:op2 (x25 / set-03
+				:ARG1 (x27 / demand-01
+					:degree (x26 / more)
+					:ARG1 (x30 / target
+						:mod (x28 / workfare)
+						:mod (x29 / participate-01)
+						:ARG1 (x44 / or
+							:op2 (x41 / recommend-01
+								:ARG1 (x43 / work-01
+									:ARG1 (x40 / recipient
 										:quant 50
-										:mod (x40 / welfare))))
-							:op2 (x47 / train-01
-								:time (x48 / by
-									:op1 (x51 / date-entity
-										:year 2000)))))))))
-	:domain (x25 / and))
+										:mod (x39 / welfare))))
+							:op2 (x46 / train-01
+								:time (x47 / by
+									:op1 (x50 / date-entity
+										:year 2000))))))))))
 
 # ::id 37
 # ::snt Such a gradualist approach would be both humane and cost effective
@@ -729,7 +728,7 @@
 				:mod (x1 / such)))))
 
 # ::id 38
-# ::snt The only trouble is that The only trouble falls far short of the presidential promise to ` end welfare as we know The only trouble '
+# ::snt The only trouble is that The only trouble  falls far short of the presidential promise to end welfare as we know The only trouble
 (x3 / trouble-01
 	:mod (x2 / only)
 	:condition (x9 / fall-04
@@ -741,15 +740,15 @@
 				:ARG0 (xap0 / person
 					:ARG0-of (x14 / have-org-role-91
 						:ARG2 (p / president)))))
-		:ARG2 (x18 / end-01
-			:ARG1 (x19 / welfare)
-			:ARG1 (x22 / know-01
-				:ARG0 (x21 / we)
-				:ARG1 (x25 / trouble
-					:mod (x24 / only))))))
+		:purpose (x17 / end-01
+			:ARG1 (x18 / welfare)
+			:ARG1 (x21 / know-01
+				:ARG0 (x20 / we)
+				:ARG1 (x24 / trouble
+					:mod (x23 / only))))))
 
 # ::id 39
-# ::snt Like Mr Bush, Mr Clinton may have raised expecta-tions that simply can not be met
+# ::snt Like Mr Bush , Mr Clinton may have raised expecta-tions that simply can not be met
 (x7 / possible
 	:domain (x9 / raise-01
 		:ARG0 (x3 / person

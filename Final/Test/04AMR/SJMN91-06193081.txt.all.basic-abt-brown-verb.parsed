@@ -1,55 +1,55 @@
 # ::id 1
-# ::snt Shortly before 10:30 this morning California time, nature turned off the sun's light switch and darkness over Hawaii and Mexico signaled the beginning of the " The Eclipse of the Millennium .
-(x10 / turn-02
-	:time (x2 / before
-		:mod (x1 / shortly)
-		:op1 (x3 / date-entity))
-	:ARG0 (x6 / state
-		:name (n / name
-			:op1 "California")
-		:mod (x4 / this))
-	:ARG0 (x9 / nature)
-	:ARG1 (x23 / signal
-		:ARG1 (x17 / and
-			:op1 (x16 / switch-01
-				:ARG1 (x13 / sun)
-				:mod (x15 / light)
-				:ARG2 (x21 / and
-					:op1 (x20 / name
-						:op1 "Hawaii")
-					:op2 (x22 / country
+# ::snt Shortly before 10:30 this morning California time , nature turned off the sun's light switch and darkness over Hawaii and Mexico signaled the beginning of the The Eclipse of the Millennium
+(x17 / and
+	:op1 (x10 / turn-02
+		:time (x2 / before
+			:mod (x1 / shortly)
+			:op1 (x3 / date-entity
+				:dayperiod (x5 / morning
+					:mod (x4 / this)
+					:name (x6 / state
 						:name (n2 / name
-							:op1 "Mexico"))))
-			:op2 (x18 / darkness))
+							:op1 "California")))))
+		:ARG0 (x9 / nature)
+		:ARG1 (x16 / switch
+			:ARG1 (x13 / sun)
+			:mod (x15 / light)))
+	:op2 (x23 / signal
+		:ARG1 (x21 / and
+			:op2 (x18 / darkness)
+			:op1 (x20 / name
+				:op1 "Hawaii")
+			:op2 (x22 / country
+				:name (n / name
+					:op1 "Mexico")))
 		:ARG1 (x25 / begin-01
-			:ARG1 (x33 / event
+			:ARG1 (x32 / event
 				:name (n1 / name
-					:op1 "Millennium"))))
-	:time (xap0 / date-entity
-		:dayperiod (x5 / morning)))
+					:op1 "Millennium")
+				:poss (x28 / the)))))
 
 # ::id 2
-# ::snt ; " Oh, the " The Eclipse exclaimed one spectator after another at a mountaintop observatory atop Mauna Kea as the sky went dark
+# ::snt ; Oh , the The Eclipse  exclaimed one spectator after another at a mountaintop observatory atop Mauna Kea as the sky went dark
 (x / xconcept
 	:x (x1 / and
-		:op1 (x9 / exclaim
-			:ARG0 (x8 / country
-				:name (n / name
-					:op1 "Eclipse"))
-			:ARG1 (x11 / spectator
+		:op1 (x2 / oh)
+		:op1 (x7 / exclaim
+			:ARG0 (x6 / eclipse
+				:null_edge (x5 / null_tag))
+			:ARG1 (x9 / spectator
 				:quant 1)
-			:time (x12 / after
-				:op1 (x13 / another))
-			:location (x17 / observatory
-				:mod (x16 / mountaintop))
-			:time (x24 / go-02
-				:ARG1 (x23 / sky)
-				:ARG2 (x25 / dark)))
-		:op1 (x20 / kea
-			:mod (x19 / mauna))))
+			:time (x10 / after
+				:op1 (x11 / another))
+			:location (x15 / observatory
+				:mod (x14 / mountaintop))
+			:time (x22 / go-02
+				:ARG1 (x21 / sky)
+				:ARG2 (x23 / dark)))
+		:op1 (x18 / kea
+			:mod (x17 / mauna))))
 
 # ::id 3
-# ::snt From Hawaii to Mexico to Central America, more than 40 million people saw the moon obscure so much of the sun that only a blazing ring was visible
+# ::snt From Hawaii to Mexico to Central America , more than 40 million people saw the moon obscure so much of the sun that only a blazing ring was visible
 (x14 / see-01
 	:name (x2 / name
 		:op1 "Hawaii"
@@ -70,7 +70,7 @@
 			:mod (x18 / so))))
 
 # ::id 4
-# ::snt In Hawaii, Mauna Loa erupted for the first time in six years, stunning scientists by releasing a dazzling fountain of lava at the height of the eclipse. ; And in the Bay Area, more than half the sun was covered when the eclipse peaked at 11:20 a.m.
+# ::snt In Hawaii , Mauna Loa erupted for the first time in six years , stunning scientists by releasing a dazzling fountain of lava at the height of the eclipse. ; And in the Bay Area , more than half the sun was covered when the eclipse peaked at 11:20 a.m.
 (x32 / and
 	:op2 (x6 / erupt-01
 		:name (x2 / name
@@ -101,7 +101,7 @@
 			:null_edge (x50 / include-91))))
 
 # ::id 5
-# ::snt The world will not see such a long-lasting eclipse for another 151 years. ; Few people who saw The world today will forget " The Big One .
+# ::snt The world will not see such a long-lasting eclipse for another 151 years. ; Few people who saw The world  today will forget The Big One
 (x / xconcept
 	:x (x15 / and
 		:op3 (x5 / see-01
@@ -117,65 +117,62 @@
 				:ARG1 (x16 / few)
 				:ARG1 (x21 / world)
 				:time (x22 / today))
-			:quant 1)))
+			:null_edge (x25 / null_tag
+				:null_edge 1))))
 
 # ::id 6
-# ::snt ; " The world looks neat
+# ::snt ; The world  looks neat
 (x / xconcept
 	:x (x1 / and
-		:op3 (x5 / look-02
-			:ARG0 (x4 / world)
-			:ARG1 (x6 / neat))))
+		:op3 (x4 / look-02
+			:ARG0 (x3 / world)
+			:ARG1 (x5 / neat))))
 
 # ::id 7
-# ::snt The world looks like someone took a bite out of an apple, " said Matthew Mauranoh, 8, of Mountain View, who peered through a homemade black box at the Foothill Observatory. ; The view was diminished for many in Hawaii and Mexico, where low cloud cover obscured the celestial display
+# ::snt The world  looks like someone took a bite out of an apple , said Matthew Mauranoh , 8 , of Mountain View , who peered through a homemade black box at the Foothill Observatory. ; The view was diminished for many in Hawaii and Mexico , where low cloud cover obscured the celestial display
 (x / xconcept
-	:x (x37 / and
-		:op2 (x8 / bite)
-		:op1 (x15 / say-01
-			:ARG1 (x3 / look-02
-				:ARG0 (x2 / world)
-				:ARG0 (x5 / someone
-					:mod (x12 / apple)))
-			:ARG0 (x16 / newspaper
-				:name (n / name
-					:op1 "Matthew"
-					:op2 "Mauranoh")
-				:quant 8
-				:ARG0-of (x26 / peer
-					:ARG2 (x31 / box
-						:location (x23 / country
-							:name (n2 / name
-								:op1 "View")
-							:null_edge (x22 / country
-								:name (n3 / name
-									:op1 "Mountain")))
-						:mod (x29 / homemade)
-						:mod (x30 / black))
-					:location (x34 / government-organization
-						:name (n1 / name
-							:op1 "Foothill"
-							:op2 "Observatory")))))
-		:op2 (x41 / diminish-01
-			:ARG1 (x39 / view-02)
-			:duration (x43 / many
-				:location (x46 / and
-					:op1 (x45 / name
-						:op1 "Hawaii")
-					:op5 (x47 / country
-						:name (n4 / name
-							:op1 "Mexico"))
-					:ARG0-of (x53 / obscure
-						:ARG0 (x52 / thing
-							:ARG0-of (c / cover-01)
-							:ARG1 (x51 / cloud
-								:mod (x50 / low)))
-						:ARG1 (x56 / display)))))))
+	:x (x36 / and
+		:op2 (x3 / look-02
+			:ARG0 (x2 / world)
+			:ARG1 (x5 / someone
+				:ARG1-of (x12 / apple
+					:name (x15 / name
+						:op1 "Matthew"
+						:op2 "Mauranoh"
+						:ARG0-of (x25 / peer
+							:time (x18 / person
+								:op 8)
+							:ARG0 (x21 / country
+								:name (n / name
+									:op1 "Mountain"))
+							:ARG2 (x30 / box
+								:mod (x28 / homemade)
+								:mod (x29 / black))
+							:location (x33 / government-organization
+								:name (n1 / name
+									:op1 "Foothill"
+									:op2 "Observatory")))
+						:ARG1-of (x40 / diminish-01
+							:ARG1 (x38 / view-02)
+							:duration (x42 / many
+								:location (x45 / and
+									:op1 (x44 / name
+										:op1 "Hawaii")
+									:op5 (x46 / country
+										:name (n2 / name
+											:op1 "Mexico"))
+									:ARG0-of (x52 / obscure
+										:ARG0 (x51 / thing
+											:ARG0-of (c / cover-01)
+											:ARG1 (x50 / cloud
+												:mod (x49 / low)))
+										:ARG1 (x55 / display)))))))))
+		:op2 (x8 / bite)))
 
 # ::id 8
-# ::snt In the 160-mile-wide swath from Hawaii to Baja to Mexico to Brazil, the morning turned into night -- the only region where the eclipse made the Earth totally dark. ; Clouds obscured eclipse ; As totality arrived at sea level on the Big Island, the sun was hidden by a cloud layer
+# ::snt In the 160-mile-wide swath from Hawaii to Baja to Mexico to Brazil , the morning turned into night the only region where the eclipse made the Earth totally dark. ; Clouds obscured eclipse ; As totality arrived at sea level on the Big Island , the sun was hidden by a cloud layer
 (x / xconcept
-	:x (x32 / and
+	:x (x35 / and
 		:op1 (x16 / turn-02
 			:ARG2 (x4 / swath
 				:name (x6 / name
@@ -190,29 +187,29 @@
 					:name (n1 / name
 						:op1 "Brazil")))
 			:ARG0 (x15 / morning)
-			:time (x18 / night
-				:mod (x22 / region
-					:mod (x21 / only)
-					:ARG0-of (x26 / make-02
-						:ARG0 (x25 / eclipse-01)
-						:ARG1 (x30 / dark
-							:degree (x29 / total))))))
-		:op1 (x34 / obscure
-			:ARG1 (x33 / cloud)
-			:ARG1 (x35 / eclipse-01))
-		:op2 (x51 / hide-01
-			:condition (x39 / arrive-01
-				:ARG1 (x38 / totality)
-				:ARG4 (x42 / level
-					:mod (x41 / sea))
-				:ARG4 (x46 / island
-					:null_edge (x45 / big)))
-			:ARG1 (x49 / sun)
-			:ARG0 (x55 / layer
-				:mod (x54 / cloud)))))
+			:time (x18 / night)
+			:ARG1 (x21 / region
+				:mod (x20 / only)
+				:location-of (x50 / hide-01
+					:ARG1-of (x25 / make-02
+						:ARG0 (x24 / eclipse-01)
+						:ARG1 (x29 / dark
+							:degree (x28 / total)))
+					:condition (x38 / arrive-01
+						:ARG1 (x37 / totality)
+						:ARG4 (x41 / level
+							:mod (x40 / sea))
+						:ARG4 (x45 / island
+							:null_edge (x44 / big)))
+					:ARG1 (x48 / sun)
+					:ARG0 (x54 / layer
+						:mod (x53 / cloud)))))
+		:op1 (x33 / obscure
+			:ARG1 (x32 / cloud)
+			:ARG1 (x34 / eclipse-01))))
 
 # ::id 9
-# ::snt At the astronomy observatory at the top of 13,800-foot Mauna Kea, high cirrus clouds thwarted three of the 10 scientific experiments. ; the astronomy observatory at the top of 13,800-foot Mauna Kea still got dark, but the clouds disappointed about 500 people gathered on the driving range at the Mauna Lani resort in south Kohala
+# ::snt At the astronomy observatory at the top of 13,800-foot Mauna Kea , high cirrus clouds thwarted three of the 10 scientific experiments. ; the astronomy observatory at the top of 13,800-foot Mauna Kea  still got dark , but the clouds disappointed about 500 people gathered on the driving range at the Mauna Lani resort in south Kohala
 (x / xconcept
 	:x (x24 / and
 		:op1 (x36 / get-03)
@@ -262,106 +259,149 @@
 								:op1 "Kohala"))))))))
 
 # ::id 10
-# ::snt 500 people gathered on the driving range at the Mauna Lani resort in south Kohala hopes had fallen and risen in the previous hour as the clouds came and went. ; " Margaret MacLeod , a mathematics and science teacher from Manhattan Beach shortly before the eclipse in Hawaii came especially for this, and hope 500 people gathered on the driving range at the Mauna Lani resort in south Kohala get to see the previous hour as the clouds came, " said Margaret MacLeod, a mathematics and science teacher from Manhattan Beach shortly before the eclipse in Hawaii
-(x85 / say-01
-	:ARG1 (x56 / and
-		:op1 (x3 / gather-01
-			:null_edge 500
-			:ARG1 (x7 / range
-				:manner (x6 / drive-02))
-			:manner (x45 / short)
-			:time (x46 / before
-				:mod (x52 / especially)
-				:purpose (x54 / this)))
-		:op2 (x16 / hope-01
+# ::snt 500 people gathered on the driving range at the Mauna Lani resort in south Kohala  hopes had fallen and risen in the previous hour as the clouds came and went. ; Margaret MacLeod , a mathematics and science teacher from Manhattan Beach shortly before the eclipse in Hawaii  came especially for this , and hope 500 people gathered on the driving range at the Mauna Lani resort in south Kohala  get to see the previous hour as the clouds came  , said Margaret MacLeod , a mathematics and science teacher from Manhattan Beach shortly before the eclipse in Hawaii
+(x / xconcept
+	:x (x32 / and
+		:op1 (x7 / range
+			:manner (x6 / drive-02))
+		:op1 (x16 / hope-01
 			:ARG1 (x10 / country
-				:name (n1 / name
+				:name (n2 / name
 					:op1 "Mauna"))
 			:ARG1 (x11 / country
-				:name (n2 / name
+				:name (n3 / name
 					:op1 "Lani"))
 			:ARG0 (x15 / country
-				:name (n3 / name
+				:name (n4 / name
 					:op1 "Kohala"))
-			:name (x34 / name
-				:op1 "Margaret"
-				:op2 "MacLeod")
-			:ARG1 (x39 / and
-				:op2 (x38 / mathematics)
-				:op2 (x41 / person
-					:ARG0-of (t1 / teach-01)
-					:mod (x40 / science))))
-		:op2 (x57 / hope-01
-			:ARG1 (x73 / get-01
-				:ARG1 500
-				:ARG1 (x75 / see-01
-					:ARG1 (x78 / temporal-quantity
-						:unit (h / hour)
-						:mod (x77 / previous))))))
-	:ARG1 (x91 / and
-		:op1 (x86 / newspaper
-			:name (n / name
+			:name (x33 / name
 				:op1 "Margaret"
 				:op2 "MacLeod"))
-		:op2 (x90 / mathematics
-			:time (x98 / before
-				:mod (x97 / short)))
-		:op2 (x93 / person
-			:ARG0-of (t / teach-01)
-			:mod (x92 / science))))
+		:op2 (x19 / and
+			:op1 (x18 / fall-01
+				:time (x24 / temporal-quantity
+					:unit (h / hour)
+					:time (x23 / previous))
+				:ARG2 (x29 / and
+					:op1 (x28 / come-03
+						:ARG1 (x27 / cloud))
+					:op2 (x30 / go-02)))
+			:op2 (x20 / rise-01))
+		:op2 (x38 / and
+			:op2 (x37 / mathematics)
+			:op2 (x40 / person
+				:ARG0-of (t / teach-01)
+				:mod (x39 / science)))
+		:op1 (x50 / come-01
+			:purpose (x3 / gather-01
+				:quant 500
+				:source (x43 / country
+					:name (n / name
+						:op1 "Beach")
+					:null_edge (x42 / country
+						:name (n1 / name
+							:op1 "Manhattan")))
+				:manner (x44 / short)
+				:time (x45 / before)
+				:name (x49 / name
+					:op1 "Hawaii"))
+			:mod (x51 / especially)
+			:purpose (x53 / this)
+			:manner (x55 / and
+				:op2 (x56 / hope-01
+					:ARG1 (x72 / get-01
+						:ARG1 500
+						:ARG1 (x74 / see-01
+							:ARG1 (x77 / temporal-quantity
+								:unit (h1 / hour)
+								:mod (x76 / previous))
+							:ARG1 (x83 / say-01
+								:ARG0 (x80 / cloud)
+								:name (x84 / name
+									:op1 "Margaret"
+									:op2 "MacLeod")
+								:ARG1 (x89 / and
+									:op1 (x88 / mathematics)
+									:op2 (x91 / person
+										:ARG0-of (t1 / teach-01)
+										:mod (x90 / science)))
+								:time (x96 / before
+									:mod (x95 / short))))))))
+		:op2 (x59 / gather-01
+			:location (x68 / resort-01
+				:location (x66 / country
+					:name (n7 / name
+						:op1 "Mauna"))
+				:mod (x67 / country
+					:name (n8 / name
+						:op1 "Lani"))
+				:location (x71 / country
+					:name (n9 / name
+						:op1 "Kohala"))))
+		:op1 (x63 / range
+			:manner (x62 / drive-02))
+		:source (x94 / country
+			:name (n5 / name
+				:op1 "Beach")
+			:null_edge (x93 / country
+				:name (n6 / name
+					:op1 "Manhattan")))
+		:op1 (x98 / eclipse-01
+			:name (x100 / name
+				:op1 "Hawaii"))))
 
 # ::id 11
-# ::snt " If 500 people gathered on the driving range at the Mauna Lani resort in south Kohala do n't get to see the previous hour as the clouds came, Margaret MacLeod , a mathematics and science teacher from Manhattan Beach shortly before the eclipse in Hawaii may have to go to Iraq for the next one .
-(x20 / get-03
-	:ARG1 (x5 / gather-01
+# ::snt If 500 people gathered on the driving range at the Mauna Lani resort in south Kohala  do not get to see the previous hour as the clouds came  , Margaret MacLeod , a mathematics and science teacher from Manhattan Beach shortly before the eclipse in Hawaii  may have to go to Iraq for the next one
+(x19 / get-01
+	:ARG1 (x4 / gather-01
 		:quant 500
-		:ARG1 (x9 / range
-			:manner (x8 / drive-02))
-		:location (x14 / resort-01
-			:location (x12 / country
+		:ARG1 (x8 / range
+			:manner (x7 / drive-02))
+		:location (x13 / resort-01
+			:location (x11 / country
 				:name (n1 / name
 					:op1 "Mauna"))
-			:mod (x13 / country
+			:mod (x12 / country
 				:name (n2 / name
 					:op1 "Lani"))
-			:location (x17 / country
+			:location (x16 / country
 				:name (n3 / name
 					:op1 "Kohala"))))
-	:ARG1 (x22 / see-01
-		:ARG1 (x25 / temporal-quantity
+	:ARG1 (x21 / see-01
+		:ARG1 (x24 / temporal-quantity
 			:unit (h / hour)
-			:mod (x24 / previous))
-		:time (x29 / come-03
-			:ARG1 (x28 / cloud))
-		:ARG2 (x31 / name
+			:mod (x23 / previous))
+		:time (x28 / come-03
+			:ARG1 (x27 / cloud))
+		:ARG2 (x30 / name
 			:op1 "Margaret"
 			:op2 "MacLeod"))
-	:ARG2 x31
-	:ARG1 (x36 / and
-		:op2 (x35 / mathematics
-			:time (x43 / before
-				:mod (x42 / short)
-				:op1 (x51 / go-02
-					:mod (x48 / possible
-						:domain (x45 / eclipse-01
-							:name (x47 / name
+	:name x30
+	:ARG1 (x35 / and
+		:op2 (x34 / mathematics
+			:time (x42 / before
+				:mod (x41 / short)
+				:op1 (x50 / go-02
+					:mod (x47 / possible
+						:domain (x44 / eclipse-01
+							:name (x46 / name
 								:op1 "Hawaii")))
-					:ARG4 (x53 / country
+					:ARG4 (x52 / country
 						:name (n5 / name
 							:op1 "Iraq"))
-					:location (x56 / next))))
-		:op2 (x38 / person
+					:location (x55 / next))))
+		:op2 (x37 / person
 			:ARG0-of (t / teach-01)
-			:mod (x37 / science))
-		:source (x41 / country
+			:mod (x36 / science))
+		:source (x40 / country
 			:name (n / name
 				:op1 "Beach")
-			:null_edge (x40 / country
+			:null_edge (x39 / country
 				:name (n4 / name
 					:op1 "Manhattan")))))
 
 # ::id 12
-# ::snt ; Because of the clouds, most were unable to see the stages of the eclipse until it got totally dark. ; In the Bay Area, though, mostly sunny skies made eclipse watching a treat, except along the coast, where Bay Area was obscured by fog. ; Parks, parking lots, shopping centers, back yards and planetariums became Eclipsefests as the peak approached. ; More than a hundred sun gazers showed up at the Branham Lane Park in south San Jose with almost as many gizmos to help More than a hundred sun gazers spot sunspots and watch the moon cross the sun. ; There were funny Mylar glasses, big pinhole cameras, small pinhole cameras, welder's glass, welder's masks, binoculars projecting images onto cardboard and telescopes. ; None was as impressive as Ralph Reeves ' interference birefrigent hydrogen alpha filter telescope
+# ::snt ; Because of the clouds , most were unable to see the stages of the eclipse until it got totally dark. ; In the Bay Area , though , mostly sunny skies made eclipse watching a treat , except along the coast , where Bay Area  was obscured by fog. ; Parks , parking lots , shopping centers , back yards and planetariums became Eclipsefests as the peak approached. ; More than a hundred sun gazers showed up at the Branham Lane Park in south San Jose with almost as many gizmos to help More than a hundred sun gazers  spot sunspots and watch the moon cross the sun. ; There were funny Mylar glasses , big pinhole cameras , small pinhole cameras , welder's glass , welder's masks , binoculars projecting images onto cardboard and telescopes. ; None was as impressive as Ralph Reevesinterference birefrigent hydrogen alpha filter telescope
 (xap0 / possible
 	:ARG1-of (x2 / cause-01
 		:ARG0 (x5 / cloud))
@@ -382,7 +422,7 @@
 										:ARG1-of (x49 / obscure
 											:ARG1 (x46 / have-org-role-91
 												:ARG1 (c / country
-													:name (n / name
+													:name (n1 / name
 														:op1 "Bay"
 														:op2 "Area")))
 											:ARG0 (x51 / fog))
@@ -404,16 +444,16 @@
 												:ARG1 (x79 / gazer)
 												:ARG1 (x95 / gizmo
 													:location (x84 / country
-														:name (n1 / name
+														:name (n2 / name
 															:op1 "Branham"))
 													:poss (x85 / country
-														:name (n2 / name
+														:name (n3 / name
 															:op1 "Lane"))
 													:location (x90 / country
-														:name (n3 / name
+														:name (n4 / name
 															:op1 "Jose")
 														:mod (x89 / country
-															:name (n4 / name
+															:name (n5 / name
 																:op1 "San")))
 													:quant (x94 / many
 														:degree (x92 / almost))))
@@ -432,16 +472,14 @@
 			:ARG1 (x142 / and
 				:op1 (x141 / cardboard))))
 	:domain (x149 / impressive
-		:ARG2 (x159 / telescope
+		:ARG2 (x157 / telescope
 			:poss (x146 / none)
-			:name (x151 / name
-				:op1 "Ralph"
-				:op2 "Reeves")
-			:mod (x154 / interference)
-			:null_edge (x155 / birefrigent)
-			:mod (x156 / hydrogen)
-			:mod (x157 / alpha)
-			:ARG0-of (x158 / filter-02))))
+			:null_edge (x152 / person
+				:name (n / name
+					:op1 "Reevesinterference"))
+			:mod (x154 / hydrogen)
+			:mod (x155 / alpha)
+			:ARG0-of (x156 / filter-02))))
 
 # ::id 13
 # ::snt All most of us need to know is that it takes electricity (provided by a gas generator )to run
@@ -467,92 +505,89 @@
 		:ARG1 (x9 / eclipse-01)))
 
 # ::id 15
-# ::snt That is, if you have film. ; " Reeves , a retired Lockheed instrument builder did n't bring any film with Reeves , a retired Lockheed instrument builder, " said Reeves, a retired Lockheed instrument builder
-(x33 / say-01
-	:ARG1 (x20 / bring-01
-		:ARG2 (x1 / that)
-		:null_edge (x6 / have-03
-			:ARG0 (x5 / you)
-			:ARG1 (x7 / film))
-		:ARG0 (x11 / person
-			:name (n1 / name
-				:op1 "Reeves"))
-		:ARG0 (x17 / builder
-			:ARG0-of (x14 / retire-01)
-			:ARG1 (x16 / instrument
-				:ARG1 (x15 / company
+# ::snt That is , if you have film. ; Reeves , a retired Lockheed instrument builder  did not bring any film with Reeves , a retired Lockheed instrument builder  , said Reeves , a retired Lockheed instrument builder
+(x31 / say-01
+	:ARG2 (x1 / that)
+	:ARG0 (x10 / person
+		:name (n / name
+			:op1 "Reeves"))
+	:ARG1 (x19 / bring-01
+		:ARG0 (x16 / builder
+			:ARG0-of (x13 / retire-01)
+			:ARG1 (x15 / instrument
+				:ARG1 (x14 / company
 					:name (n3 / name
 						:op1 "Lockheed"))))
-		:ARG1 (x22 / film
-			:mod (x21 / any))
-		:ARG2 (x24 / person
+		:ARG1 (x21 / film
+			:mod (x20 / any))
+		:ARG2 (x23 / person
 			:name (n2 / name
 				:op1 "Reeves")
-			:ARG0-of (x30 / builder
-				:ARG0-of (x27 / retire-01)
-				:ARG2 (x28 / company
+			:ARG0-of (x29 / builder
+				:ARG0-of (x26 / retire-01)
+				:ARG2 (x27 / company
 					:name (n4 / name
 						:op1 "Lockheed"))
-				:purpose (x29 / instrument))))
-	:ARG0 (x34 / person
-		:name (n / name
+				:purpose (x28 / instrument))))
+	:ARG0 (x32 / person
+		:name (n1 / name
 			:op1 "Reeves")
-		:ARG0-of (x40 / builder
-			:purpose (x39 / instrument
-				:ARG0-of (x38 / company
+		:ARG0-of (x38 / builder
+			:ARG0-of (x35 / retire-01)
+			:purpose (x37 / instrument
+				:ARG0-of (x36 / company
 					:name (n5 / name
-						:op1 "Lockheed")
-					:ARG0-of (x37 / retire-01))))))
+						:op1 "Lockheed"))))))
 
 # ::id 16
-# ::snt " Is n't that awful ?
-(x5 / awful
-	:domain (x4 / that))
+# ::snt Is not that awful ?
+(x4 / awful
+	:domain (x3 / that))
 
 # ::id 17
-# ::snt ; At the Children's Discovery Museum in downtown San Jose, hundreds of youngsters and adults made cardboard telescopes, which projected the eclipse on white cards through a needle hole opening. ; Paul Stonecipher, a discovery museum staff guide, said, " hundreds of youngsters and adults wanted to make little theaters for all of the kids to see the eclipse without burning their eyes .
-(x53 / want-01
-	:ARG1 (x51 / and
-		:op1 (x45 / say-01
-			:ARG1 (x16 / and
-				:op1 (x7 / museum
-					:location (x11 / country
-						:name (n1 / name
-							:op1 "Jose")
-						:mod (x10 / country
-							:name (n2 / name
-								:op1 "San")
-							:mod (x9 / downtown)))
-					:name (xap0 / name
-						:op2 "Children's"))
-				:op1 (x15 / youngster)
-				:op2 (x17 / adult))
-			:ARG1 (x20 / telescope
-				:mod (x19 / cardboard)
-				:ARG1-of (x23 / project-02))
-			:ARG0 (x37 / person
-				:name (n / name
-					:op1 "Stonecipher")
-				:null_edge (x36 / null_tag)
-				:ARG0-of (x43 / guide-01
-					:ARG0 (x40 / discover-01)
-					:ARG1 (x41 / museum)
-					:ARG1 (x42 / person
-						:ARG2-of (s / staff-01)))))
-		:op1 (x50 / youngster)
-		:op2 (x52 / adult))
-	:null_edge (x64 / see-01
-		:ARG1 (x57 / theater
-			:mod (x56 / little))
-		:ARG0 (x62 / kid
-			:quant (x59 / all))
-		:ARG1 (x66 / eclipse-01)
-		:manner (x68 / burn-01
-			:ARG0 x62
-			:ARG1 (x70 / eye))))
+# ::snt ; At the Children's Discovery Museum in downtown San Jose , hundreds of youngsters and adults made cardboard telescopes , which projected the eclipse on white cards through a needle hole opening. ; Paul Stonecipher , a discovery museum staff guide , said , hundreds of youngsters and adults  wanted to make little theaters for all of the kids to see the eclipse without burning their eyes
+(x45 / say-01
+	:ARG1 (x20 / telescope
+		:poss (x7 / museum
+			:location (x11 / country
+				:name (n1 / name
+					:op1 "Jose")
+				:mod (x10 / country
+					:name (n2 / name
+						:op1 "San")
+					:mod (x9 / downtown)))
+			:name (xap0 / name
+				:op2 "Children's"))
+		:topic (x16 / and
+			:op1 (x15 / youngster)
+			:op2 (x17 / adult))
+		:mod (x19 / cardboard)
+		:ARG1-of (x23 / project-02))
+	:ARG0 (x37 / person
+		:name (n / name
+			:op1 "Stonecipher")
+		:null_edge (x36 / null_tag)
+		:ARG0-of (x43 / guide-01
+			:ARG0 (x40 / discover-01)
+			:ARG1 (x41 / museum)
+			:ARG1 (x42 / person
+				:ARG2-of (s / staff-01))))
+	:ARG1 (x52 / want-01
+		:ARG1 (x50 / and
+			:op1 (x49 / youngster)
+			:op2 (x51 / adult))
+		:time (x63 / see-01
+			:ARG1 (x56 / theater
+				:mod (x55 / little))
+			:ARG0 (x61 / kid
+				:quant (x58 / all))
+			:ARG1 (x65 / eclipse-01)
+			:manner (x67 / burn-01
+				:ARG0 x61
+				:ARG1 (x69 / eye)))))
 
 # ::id 18
-# ::snt ; Using mirrors, the eclipse also was projected on the exterior walls of the lavendar-colored museum. ; Eclipse theme park ; For nearly a week now, Hawaii turned into an eclipse theme park
+# ::snt ; Using mirrors , the eclipse also was projected on the exterior walls of the lavendar-colored museum. ; Eclipse theme park ; For nearly a week now , Hawaii turned into an eclipse theme park
 (x / xconcept
 	:x (x1 / and
 		:op1 (x2 / use-01
@@ -580,7 +615,7 @@
 					:ARG1 (x34 / eclipse-01))))))
 
 # ::id 19
-# ::snt More than 500 astronomers and tens of thousands of amateurs flocked to the islands to sell nearly everything under the sun. ; Sun-minded entrepreneurs hawked eclipse T-shirts (60 different designs -RRB-, hats, posters and cookies
+# ::snt More than 500 astronomers and tens of thousands of amateurs flocked to the islands to sell nearly everything under the sun. ; Sun-minded entrepreneurs hawked eclipse T-shirts (60 different designs ), hats , posters and cookies
 (x / xconcept
 	:x (x23 / and
 		:op1 (x11 / flock-01
@@ -609,7 +644,7 @@
 		:op3 (x39 / cookie)))
 
 # ::id 20
-# ::snt There was even an eclipse haircut and, of course, an eclipse drink at the Eclipse restaurant in Kailua-Kona. ; " Everything is selling pretty well except for the eclipse Frisbees
+# ::snt There was even an eclipse haircut and , of course , an eclipse drink at the Eclipse restaurant in Kailua-Kona. ; Everything is selling pretty well except for the eclipse Frisbees
 (x7 / and
 	:op2 (x6 / haircut
 		:mod (x5 / eclipse-01
@@ -617,26 +652,26 @@
 		:ARG1-of (x9 / include-91)))
 
 # ::id 21
-# ::snt Nobody wants eclipse Frisbees, " said " Wild Bill " Lawrence, who helped out at Moonshadows, one of many small shops set up to
-(x7 / say-01
+# ::snt Nobody wants eclipse Frisbees , said Wild Bill Lawrence , who helped out at Moonshadows , one of many small shops set up to
+(x6 / say-01
 	:ARG1 (x2 / want-01
 		:ARG0 (x1 / nobody)
 		:ARG1 (x3 / eclipse-01
 			:ARG1 (x4 / frisbees)))
-	:ARG0 (x12 / person
+	:ARG0 (x9 / person
 		:name (n / name
 			:op1 "Lawrence")
-		:ARG0-of (x15 / help-01
-			:ARG0 (x10 / person
-				:name (n1 / name
-					:op1 "Bill")
-				:null_edge (x9 / null_tag))
-			:ARG2 (x18 / country
+		:null_edge (x7 / null_tag)
+		:null_edge (x8 / person
+			:name (n1 / name
+				:op1 "Bill"))
+		:ARG0-of (x12 / help-01
+			:ARG2 (x15 / country
 				:name (n2 / name
 					:op1 "Moonshadows")
-				:ARG2-of (x21 / include-91
-					:ARG2 (x24 / shop
-						:quant (x22 / many)
-						:mod (x23 / small)
-						:ARG1-of (x25 / set-08)))))))
+				:ARG2-of (x18 / include-91
+					:ARG2 (x21 / shop
+						:quant (x19 / many)
+						:mod (x20 / small)
+						:ARG1-of (x22 / set-08)))))))
 

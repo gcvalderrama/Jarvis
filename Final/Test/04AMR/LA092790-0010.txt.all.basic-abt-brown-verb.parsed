@@ -1,5 +1,5 @@
 # ::id 1
-# ::snt Proposals to limit the terms of members of Congress and of state legislators are popular and getting more so, according to the pundits and the polls
+# ::snt Proposals to limit the terms of members of Congress and of state legislators are popular and getting more so , according to the pundits and the polls
 (x16 / and
 	:op2 (x1 / thing
 		:ARG1-of (p / propose-01)
@@ -22,7 +22,7 @@
 			:op2 (x27 / poll-01))))
 
 # ::id 2
-# ::snt Students of government like me find government like me hard to understand why
+# ::snt 
 (x6 / find-02
 	:ARG0 (x1 / person
 		:ARG0-of (s / study-01)
@@ -35,7 +35,7 @@
 			:ARG0 x7)))
 
 # ::id 3
-# ::snt Contrary to most of the propaganda on the subject, these constitutional changes wo n't do what their proponents say their proponents want to accomplish
+# ::snt Contrary to most of the propaganda on the subject , these constitutional changes wo not do what their proponents say their proponents  want to accomplish
 (x16 / do-02
 	:null_edge (x1 / contrary-41
 		:degree (x3 / most
@@ -51,7 +51,7 @@
 				:ARG0 x22))))
 
 # ::id 4
-# ::snt For example, term limitations will not decrease the influence of interest groups and interest groups money on elections
+# ::snt For example , term limitations will not decrease the influence of interest groups and interest groups  money on elections
 (x8 / decrease-01
 	:ARG1 (x5 / limit-01
 		:mod (x4 / term))
@@ -112,34 +112,35 @@
 					:mod (x16 / possible))))))
 
 # ::id 8
-# ::snt Veteran members -- proven vote-getters -- are much more powerful in relation to special interests than candidates who have to prove Veteran members -- proven vote-getters -- in an uncertain and expensive campaign environment
-(x10 / powerful
-	:degree (x9 / more
-		:degree (x8 / much))
-	:ARG1-of (x12 / relate-01
-		:ARG1 (x15 / interest
-			:mod (x14 / special)
-			:ARG1 (x17 / candidate
-				:ARG0-of (x21 / prove-01
-					:ARG1 (x23 / have-org-role-91
-						:ARG2 (m / member)
-						:mod (x22 / veteran)
-						:ARG1 (x26 / vote-getter
-							:ARG1-of (x25 / proven)))
-					:location (x31 / and
-						:op1 (x30 / uncertain)
-						:op2 (x32 / expensive)
-						:op2 (x34 / environment
-							:mod (x33 / campaign-01))
-						:op2 (xap0 / person
-							:ARG0-of (x2 / have-org-role-91
-								:ARG2 (m1 / member)
-								:ARG1 (x1 / veteran)
-								:ARG1 (x5 / vote-getter
-									:ARG1-of (x4 / proven))))))))))
+# ::snt Veteran members proven vote-getters are much more powerful in relation to special interests than candidates who have to prove Veteran members proven vote-getters  in an uncertain and expensive campaign environment
+(x8 / powerful
+	:domain (x4 / vote-getter
+		:ARG1-of (x3 / prove-01))
+	:degree (x7 / more
+		:degree (x6 / much))
+	:ARG1-of (x10 / relate-01
+		:ARG1 (x13 / interest
+			:mod (x12 / special)
+			:ARG1 (x15 / candidate
+				:ARG0-of (x19 / prove-01
+					:null_edge (x22 / prove-01
+						:ARG1 (x23 / vote-getter)
+						:location (x27 / and
+							:op1 (x26 / uncertain)
+							:op2 (x28 / expensive)
+							:op2 (x30 / environment
+								:mod (x29 / campaign-01))
+							:op2 (xap0 / person
+								:ARG0-of (x2 / have-org-role-91
+									:ARG2 (m / member)
+									:ARG1 (x1 / veteran)))
+							:op2 (xap1 / person
+								:ARG0-of (x21 / have-org-role-91
+									:ARG2 (m1 / member)
+									:ARG1 (x20 / veteran))))))))))
 
 # ::id 9
-# ::snt Term limitations wo n't improve the functioning of the legislature, either
+# ::snt Term limitations wo not improve the functioning of the legislature , either
 (x5 / improve-01
 	:ARG0 (x2 / limit-01
 		:mod (x1 / term))
@@ -149,7 +150,7 @@
 	:mod (x12 / either))
 
 # ::id 10
-# ::snt People need time to learn People jobs
+# ::snt People need time to learn People  jobs
 (x2 / need-01
 	:ARG0 (x1 / people)
 	:ARG1 (x3 / time
@@ -168,7 +169,7 @@
 			:mod (x1 / term))))
 
 # ::id 12
-# ::snt Inexperienced legislators are less powerful in relation to legislative staff, executive branch bureaucrats and interest-group lobbyists from whom Inexperienced legislators must learn the customs and routines of legislative operations and the stories behind policy proposals
+# ::snt Inexperienced legislators are less powerful in relation to legislative staff , executive branch bureaucrats and interest-group lobbyists from whom Inexperienced legislators  must learn the customs and routines of legislative operations and the stories behind policy proposals
 (x5 / powerful
 	:domain (x2 / legislator
 		:ARG1-of (x1 / experience-01
@@ -211,7 +212,7 @@
 			:mod (x18 / complex))))
 
 # ::id 14
-# ::snt Term limitations just shift power from elected officials to the relatively inaccessible officials, bureaucrats and influence peddlers who surround elected officials to the relatively inaccessible officials , bureaucrats
+# ::snt Term limitations just shift power from elected officials to the relatively inaccessible officials , bureaucrats and influence peddlers who surround elected officials to the relatively inaccessible officials , bureaucrats
 (x4 / shift-01
 	:ARG0 (x2 / limit-01
 		:mod (x1 / term))
@@ -246,16 +247,15 @@
 					:ARG2 (o1 / official))))))
 
 # ::id 15
-# ::snt Why do we assume that new blood is automatically better than old
-(x2 / do-02
-	:ARG1 (x4 / assume-01
-		:ARG0 (x3 / we)
-		:ARG1 (x10 / good
-			:domain (x7 / blood
-				:mod (x6 / new))
-			:mod (x9 / automatic)
-			:mod (x12 / person
-				:mod (o / old)))))
+# ::snt Why do we assume that new blood is automatically better than old ?
+(x4 / assume-01
+	:ARG0 (x3 / we)
+	:ARG1 (x10 / good
+		:domain (x7 / blood
+			:mod (x6 / new))
+		:mod (x9 / automatic)
+		:compared-to (x12 / person
+			:mod (o / old))))
 
 # ::id 16
 # ::snt Of course we should pay attention to the quality of our legislators and vote against those whose performance we find wanting
@@ -284,7 +284,7 @@
 			:op1 (x13 / bad-42))))
 
 # ::id 18
-# ::snt Finally, term limitations wo n't enhance representative democracy
+# ::snt Finally , term limitations wo not enhance representative democracy
 (x7 / enhance-01
 	:time (x1 / final)
 	:ARG0 (x4 / limit-01
@@ -293,7 +293,7 @@
 		:ARG0-of (x8 / represent-01)))
 
 # ::id 19
-# ::snt Just the opposite, since our legislators and vote create an artificial barrier preventing voters from returning to office legislators our legislators and vote might otherwise favor
+# ::snt Just the opposite , since our legislators and vote  create an artificial barrier preventing voters from returning to office legislators our legislators and vote  might otherwise favor
 (x3 / opposite
 	:mod (x1 / just)
 	:time (x5 / since
@@ -315,44 +315,44 @@
 												:op2 (x24 / vote-01)))))))))))))
 
 # ::id 20
-# ::snt Why are we so certain that voters have such terrible judgment that voters need a constitutional restriction keeping voters from voting for incumbents they know and like
-(x3 / country
-	:name (n / name
-		:op1 "we")
-	:mod (x5 / certain
-		:domain (x11 / judge-01
+# ::snt Why are we so certain that voters have such terrible judgment that voters  need a constitutional restriction keeping voters  from voting for incumbents they know and like ?
+(x5 / certain
+	:domain (x3 / we)
+	:ARG1 (x14 / need-01
+		:ARG0 x3
+		:ARG0 (x7 / person
+			:ARG0-of (v / vote-01))
+		:ARG1 (x11 / judge-01
 			:mod (x10 / terrible
-				:mod (x9 / such))
-			:ARG1-of (x14 / need-01
-				:ARG0 (x13 / person
-					:ARG0-of (v / vote-01))
-				:ARG1 (x17 / restrict-01
-					:ARG0 (x16 / constitution)
-					:ARG0-of (x18 / keep-04
-						:ARG1 (x19 / vote-01))
-					:ARG1 (x21 / vote-01
-						:ARG1 (x26 / and
-							:op1 (x25 / know-01
-								:ARG1 (xap0 / and
-									:mod (x27 / like-01))))))))))
+				:mod (x9 / such)))
+		:ARG0 (x13 / person
+			:ARG0-of (v1 / vote-01))
+		:ARG1 (x17 / restrict-01
+			:ARG0 (x16 / constitution)
+			:ARG0-of (x18 / keep-04
+				:ARG1 (x19 / vote-01))
+			:ARG1 (x21 / vote-01
+				:ARG1 (x26 / and
+					:op1 (x25 / know-01
+						:ARG1 (xap0 / and
+							:mod (x27 / like-02))))))))
 
 # ::id 21
-# ::snt It is hard to see how restricting voters ' alternatives in this arbitrary way can be proposed in the name of representative government or of democracy
+# ::snt It is hard to see how restricting votersalternatives in this arbitrary way can be proposed in the name of representative government or of democracy
 (x3 / hard
 	:domain (x5 / see-01
-		:ARG1 (x15 / possible
-			:domain (x17 / propose-01
+		:ARG1 (x13 / possible
+			:domain (x15 / propose-01
 				:ARG1 (x7 / restrict-01
-					:ARG1 (x10 / alternative
-						:ARG0 (x8 / vote-01))
-					:concession (x13 / arbitrary
-						:mod (x12 / this)))
-				:time (x20 / name
-					:ARG1 (x24 / or
-						:op1 (x23 / government-organization
+					:ARG1 (x8 / votersalternative)
+					:ARG1 (x11 / arbitrary
+						:mod (x10 / this)))
+				:time (x18 / name
+					:ARG1 (x22 / or
+						:op1 (x21 / government-organization
 							:ARG0-of (g / govern-01)
-							:ARG0-of (x22 / represent-01)
-							:mod (x26 / democracy))))))))
+							:ARG0-of (x20 / represent-01)
+							:mod (x24 / democracy))))))))
 
 # ::id 22
 # ::snt One must conclude that other forces are at work
@@ -363,7 +363,7 @@
 			:mod (x5 / other))))
 
 # ::id 23
-# ::snt More likely, groups and interests that now have a hard time winning against incumbents are seeking term limitations to improve groups and interests that now have a hard time winning against incumbents chances of winning office
+# ::snt More likely , groups and interests that now have a hard time winning against incumbents are seeking term limitations to improve groups and interests that now have a hard time winning against incumbents  chances of winning office
 (x17 / seek-01
 	:ARG1 (x2 / likely
 		:degree (x1 / more))
@@ -390,7 +390,7 @@
 			:op2 (x24 / interest))))
 
 # ::id 24
-# ::snt groups and interests that now have a hard time winning against incumbents are undoubtedly calculating that non-incumbents are easier to beat, or buy
+# ::snt groups and interests that now have a hard time winning against incumbents  are undoubtedly calculating that non-incumbents are easier to beat , or buy
 (x15 / calculate-01
 	:ARG0 (x2 / and
 		:op1 (x1 / group
@@ -407,7 +407,7 @@
 			:op2 (x24 / buy-01))))
 
 # ::id 25
-# ::snt groups and interests that now have a hard time winning against incumbents 're probably right about that
+# ::snt groups and interests that now have a hard time winning against incumbents  are probably right about that
 (x15 / right-41
 	:ARG1 (x2 / and
 		:op1 (x1 / group

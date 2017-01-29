@@ -1,5 +1,5 @@
 # ::id 1
-# ::snt Riga, Feb. 4
+# ::snt Riga , Feb. 4
 (x1 / country
 	:name (n / name
 		:op1 "Riga")
@@ -18,7 +18,7 @@
 			:mod (x13 / past))))
 
 # ::id 3
-# ::snt In comparison with 1992, tuberculosis morbidity has increased by 14.8 %, and mortality -- by 44 %
+# ::snt In comparison with 1992 , tuberculosis morbidity has increased by 14.8 % , and mortality by 44 %
 (xap0 / multi-sentence
 	:ARG2 (x2 / compare-01
 		:accompanier (x4 / date-entity
@@ -32,10 +32,10 @@
 		:op2 (x15 / mortality
 			:ARG0 x7
 			:ARG2 (xap2 / percentage-entity
-				:value (x18 / percentage-entity)))))
+				:value (x17 / percentage-entity)))))
 
 # ::id 4
-# ::snt The total number of tuberculosis cases in 1993 was 868, while in the 1992 -- it was 771
+# ::snt The total number of tuberculosis cases in 1993 was 868 , while in the 1992 it was 771
 (x / xconcept
 	:x (x2 / total-01)
 	:x (x6 / case
@@ -43,13 +43,12 @@
 			:time (x8 / date-entity
 				:year 1993))
 		:mod (x5 / tuberculosis)
-		:quant (x10 / 868
-			:null_edge (x19 / 771
-				:null_edge (x15 / date-entity
-					:year 1992)))))
+		:time (x15 / date-entity
+			:year 1992
+			:null_edge (x18 / 771))))
 
 # ::id 5
-# ::snt Inta Pavlovska, director of the data processing and registry division of the State Tuberculosis and Lung Disease Center informed DIENA that the increase in tuberculosis morbidity could be related to the poor socioeconomic conditions in the nation, as well as shortcomings in the legislative process
+# ::snt Inta Pavlovska , director of the data processing and registry division of the State Tuberculosis and Lung Disease Center informed DIENA that the increase in tuberculosis morbidity could be related to the poor socioeconomic conditions in the nation , as well as shortcomings in the legislative process
 (x20 / inform-01
 	:ARG0 (x1 / newspaper
 		:name (n / name
@@ -83,7 +82,7 @@
 						:mod (x46 / legislate-01)))))))
 
 # ::id 6
-# ::snt At the present time, there are no laws in Latvia that would require infectious cases of tuberculosis to undergo mandatory treatment
+# ::snt At the present time , there are no laws in Latvia that would require infectious cases of tuberculosis to undergo mandatory treatment
 (x9 / law
 	:time (x4 / time
 		:mod (x3 / present))
@@ -100,7 +99,7 @@
 				:mod (x21 / mandatory)))))
 
 # ::id 7
-# ::snt In November of the past year, the Department of Health of the Ministry of Welfare submitted a medical legislative proposal to the Cabinet of Ministers, which would require infectious cases of tuberculosis to undergo mandatory treatment, explained I. Pavlovska
+# ::snt In November of the past year , the Department of Health of the Ministry of Welfare submitted a medical legislative proposal to the Cabinet of Ministers , which would require infectious cases of tuberculosis to undergo mandatory treatment , explained I. Pavlovska
 (x17 / submit-01
 	:time (x2 / date-entity
 		:mod (x6 / year
@@ -137,7 +136,7 @@
 							:op2 "Pavlovska")))))))
 
 # ::id 8
-# ::snt To this day, the proposal to the Cabinet of Ministers has still not been reviewed
+# ::snt To this day , the proposal to the Cabinet of Ministers has still not been reviewed
 (x16 / review-01
 	:time (x3 / day
 		:mod (x2 / this))
@@ -150,7 +149,7 @@
 	:mod (x13 / still))
 
 # ::id 9
-# ::snt At present, Latvia has 11 state tuberculosis hospitals, providing treatment for tuberculosis cases free of charge
+# ::snt At present , Latvia has 11 state tuberculosis hospitals , providing treatment for tuberculosis cases free of charge
 (x5 / have-03
 	:time (x2 / present)
 	:ARG0 (x4 / country
@@ -168,20 +167,21 @@
 					:ARG2 (x18 / charge-05))))))
 
 # ::id 10
-# ::snt The newest of these -- Ceplisi (in Ogre rayon -RRB-, only started operations in January of this year
-(x2 / new
-	:degree (m / most)
-	:ARG1-of (x14 / start-01
-		:ARG1 (x15 / operation
-			:location (x10 / rayon
-				:mod (x9 / ogre))
-			:mod (x13 / only))
-		:time (x17 / date-entity
-			:part-of (x20 / year
-				:mod (x19 / this)))))
+# ::snt The newest of these Ceplisi (in Ogre rayon ), only started operations in January of this year
+(x13 / start-01
+	:ARG1 (x5 / ceplisus
+		:mod (x2 / new
+			:degree (m / most))
+		:location (x9 / rayon
+			:mod (x8 / ogre)))
+	:ARG1 (x14 / operation
+		:mod (x12 / only))
+	:time (x16 / date-entity
+		:part-of (x19 / year
+			:mod (x18 / this))))
 
 # ::id 11
-# ::snt Most of the patients there, however, are chronic alcoholics who suffer from tuberculosis
+# ::snt Most of the patients there , however , are chronic alcoholics who suffer from tuberculosis
 (x11 / alcohol
 	:ARG2 (x4 / patient
 		:quant (x1 / most)

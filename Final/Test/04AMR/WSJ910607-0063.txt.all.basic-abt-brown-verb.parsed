@@ -1,5 +1,5 @@
 # ::id 1
-# ::snt You think it would be utter folly to lend money to a Third World nation
+# ::snt You think it would be utter folly to lend money to a Third World nation ?
 (x2 / think-01
 	:ARG0 (x1 / you)
 	:ARG1 (x7 / folly
@@ -10,11 +10,11 @@
 				:null_edge (x14 / null_tag)))))
 
 # ::id 2
-# ::snt So, how about a Third World vegetable stand
+# ::snt So , how about a Third World vegetable stand ?
 (x1 / so
 	:ARG1 (x9 / stand
 		:null_edge (x7 / null_tag)
-		:mod (x8 / vegetable)))
+		:ARG1 (x8 / vegetable)))
 
 # ::id 3
 # ::snt U.S. development organizations are finding that some of the world's poorest entrepreneurs repay their debts at rates approaching 100 %
@@ -37,7 +37,7 @@
 					:value 100)))))
 
 # ::id 4
-# ::snt To encourage grass-roots private business in Latin America, Asia and Africa, these organizations are expanding programs that already lend thousands of these struggling entrepreneurs amounts ranging from $ 50 to several hundred dollars
+# ::snt To encourage grass-roots private business in Latin America , Asia and Africa , these organizations are expanding programs that already lend thousands of these struggling entrepreneurs amounts ranging from $ 50 to several hundred dollars
 (x17 / expand-01
 	:purpose (x2 / encourage-01
 		:ARG1 (x5 / business
@@ -75,65 +75,66 @@
 								:unit (d / dollar)))))))))
 
 # ::id 5
-# ::snt Tiny Third World businesses commonly repay these " microloans " faithfully because these " microloans " crave the security of a favorable credit rating
+# ::snt Tiny Third World businesses commonly repay these microloans faithfully because these microloans  crave the security of a favorable credit rating
 (x6 / repay-01
 	:ARG0 (x4 / business
 		:mod (x1 / tiny)
 		:null_edge (x3 / null_tag))
 	:manner (x5 / commonly)
-	:ARG1 (x9 / microloan)
-	:manner (x11 / faithfully)
-	:ARG1-of (x12 / cause-01
-		:ARG0 (x17 / crave
-			:ARG0 (x15 / microloan)
-			:ARG1 (x19 / security
-				:ARG1 (x24 / rate-01
-					:mod (x22 / favorable)
-					:mod (x23 / credit-02))))))
+	:ARG1 (x8 / microloan)
+	:manner (x9 / faithfully)
+	:ARG1-of (x10 / cause-01
+		:ARG0 (x13 / crave
+			:ARG0 (x12 / microloan)
+			:ARG1 (x15 / security
+				:ARG1 (x20 / rate-01
+					:mod (x18 / favorable)
+					:mod (x19 / credit-02))))))
 
 # ::id 6
-# ::snt This rescues them from the clutches of loan sharks -- microloans typically charge the prevailing local commercial loan rate -- and lets them borrow again in hard times
-(x21 / and
+# ::snt This rescues them from the clutches of loan sharks microloans typically charge the prevailing local commercial loan rate and lets them borrow again in hard times
+(x19 / and
 	:op1 (x2 / rescue-01
 		:ARG0 (x1 / this)
 		:ARG2 (x6 / clutch
 			:poss (x9 / shark
-				:mod (x8 / loan-01))))
-	:op2 (x13 / charge-01
-		:ARG2 (x19 / rate
-			:mod (x12 / typical)
-			:mod (x15 / prevail-02)
-			:mod (x16 / local)
-			:mod (x17 / commerce)
-			:mod (x18 / loan-01)))
-	:op2 (x22 / let-01
+				:mod (x8 / loan-01)
+				:ARG0-of (x12 / charge-01
+					:ARG2 (x10 / microloan)
+					:mod (x11 / typical)
+					:ARG2 (x18 / rate
+						:poss x10
+						:mod (x14 / prevail-02)
+						:mod (x15 / local)
+						:mod (x16 / commerce)
+						:mod (x17 / loan-01))))))
+	:op2 (x20 / let-01
 		:ARG0 x1
-		:ARG1 (x24 / borrow-01
-			:mod (x25 / again))))
+		:ARG1 (x22 / borrow-01
+			:mod (x23 / again))))
 
 # ::id 7
-# ::snt The money helps them start or expand their businesses -- selling vegetables, sewing, repairing shoes, making furniture and the like -- and boosts their local economies
-(x25 / and
-	:op1 (x3 / help-01
-		:ARG0 (x2 / money)
-		:ARG1 (x6 / or
-			:op1 (x5 / start-01
-				:ARG1 (x9 / business
-					:ARG0-of (x11 / sell-01
-						:ARG1 (x14 / sewing
-							:null_edge (x21 / and
-								:op1 (x12 / vegetable)
-								:op1 (x16 / repair-01
-									:ARG1 (x17 / shoe-01))
-								:op2 (x20 / furniture
-									:ARG0-of (x19 / make-02))
-								:op1 (xap0 / and
-									:mod (x23 / like-02)))))))
-			:op2 (x7 / expand-01)))
-	:op2 (x26 / boost-01
-		:ARG0 x2
-		:ARG1 (x29 / economy
-			:mod (x28 / local))))
+# ::snt The money helps them start or expand their businesses selling vegetables , sewing , repairing shoes , making furniture and the like and boosts their local economies
+(x3 / help-01
+	:ARG1 (x2 / money)
+	:ARG1 (x6 / or
+		:op1 (x5 / start-01
+			:ARG1 (x9 / business
+				:ARG0-of (x10 / sell-01
+					:ARG1 (x11 / vegetable)))
+			:ARG1 (x13 / sewing)
+			:ARG1 (x15 / repair-01
+				:ARG1 (x16 / shoe-01)
+				:ARG1 (x23 / and
+					:op2 (x18 / make-02
+						:ARG1 (x20 / and
+							:op1 (x19 / furniture)
+							:op1 (xap0 / and
+								:mod (x22 / like-02))))
+					:op2 (x24 / boost-01
+						:ARG1 (x27 / economy
+							:mod (x26 / local))))))
+		:op2 (x7 / expand-01)))
 
 # ::id 8
 # ::snt Their repayment performance shines when compared with that of many sovereign nations
@@ -146,7 +147,7 @@
 			:mod (x11 / sovereign))))
 
 # ::id 9
-# ::snt Their repayment performance also looks good compared with a default rate of 17 % by U.S. recipients of federally guaranteed student loans
+# ::snt Their repayment performance  also looks good compared with a default rate of 17 % by U.S. recipients of federally guaranteed student loans
 (x5 / look-02
 	:ARG0 (x3 / perform-01
 		:ARG1 (x2 / repay-01))
@@ -167,7 +168,7 @@
 				:value 17))))
 
 # ::id 10
-# ::snt Though microlending has been around for years, years is now booming
+# ::snt Though microlending has been around for years , years  is now booming
 (x12 / boom-02
 	:ARG1 (x2 / microlending
 		:duration (x9 / temporal-quantity
@@ -179,7 +180,7 @@
 	:time (x11 / now))
 
 # ::id 11
-# ::snt With the decline of communism, U.S. development groups believe U.S. development groups are exporting free-market economics to tiny businesses that can fuel growth in the developing world
+# ::snt With the decline of communism , U.S. development groups believe U.S. development groups  are exporting free-market economics to tiny businesses that can fuel growth in the developing world
 (x10 / believe-01
 	:ARG1 (x3 / decline-01
 		:ARG1 (x5 / communism))
@@ -205,21 +206,21 @@
 						:ARG1-of (x27 / develop-02)))))))
 
 # ::id 12
-# ::snt " Micro-enterprise lending is the hottest thing in development since the Green Revolution
-(x9 / develop-02
-	:ARG1 (x3 / lending
-		:mod (x2 / micro-enterprise))
-	:mod (x6 / hot
+# ::snt Micro-enterprise lending is the hottest thing in development since the Green Revolution
+(x8 / develop-02
+	:ARG1 (x2 / lending
+		:mod (x1 / micro-enterprise))
+	:mod (x5 / hot
 		:degree (m / most))
-	:time (x10 / since
-		:op1 (x13 / revolution
-			:mod (x12 / political-party
+	:time (x9 / since
+		:op1 (x12 / revolution
+			:mod (x11 / political-party
 				:name (n / name
 					:op1 "Green")))))
 
 # ::id 13
-# ::snt Everybody does the hottest thing in development since the Green Revolution, " says Accion International spokeswoman Gabriela Romanow
-(x14 / say-01
+# ::snt Everybody does the hottest thing in development since the Green Revolution  , says Accion International spokeswoman Gabriela Romanow
+(x13 / say-01
 	:ARG1 (x2 / do-02
 		:ARG0 (x1 / everybody)
 		:ARG1 (x5 / thing
@@ -231,15 +232,15 @@
 					:mod (x10 / political-party
 						:name (n2 / name
 							:op1 "Green"))))))
-	:ARG0 (x18 / newspaper
+	:ARG0 (x17 / newspaper
 		:name (n / name
 			:op1 "Gabriela"
 			:op2 "Romanow")
-		:ARG0-of (x15 / organization
+		:ARG0-of (x14 / organization
 			:name (n1 / name
 				:op1 "Accion"))
-		:null_edge (x16 / null_tag)
-		:ARG0-of (x17 / have-org-role-91
+		:null_edge (x15 / null_tag)
+		:ARG0-of (x16 / have-org-role-91
 			:ARG2 (s / spokeswoman))))
 
 # ::id 14
@@ -257,7 +258,7 @@
 			:mod (x10 / poor))))
 
 # ::id 15
-# ::snt Ms. Romanow cites the case of Aaron Aguilar, an unemployed factory worker in Monterrey, Mexico, who borrowed $ 100 to buy clay and glazes for making figurines with Aaron Aguilar wife in their back yard
+# ::snt Ms. Romanow cites the case of Aaron Aguilar , an unemployed factory worker in Monterrey , Mexico , who borrowed $ 100 to buy clay and glazes for making figurines with Aaron Aguilar  wife in their back yard
 (x3 / cite-01
 	:ARG0 (x2 / person
 		:name (n / name
@@ -290,7 +291,7 @@
 							:mod (x37 / back))))))))
 
 # ::id 16
-# ::snt In six years, the couple took out and repaid five loans and built their business to 18 full-time employees
+# ::snt In six years , the couple took out and repaid five loans and built their business to 18 full-time employees
 (x9 / and
 	:op1 (x7 / take-01
 		:ARG0 (x6 / couple)
@@ -325,7 +326,7 @@
 				:ARG0-of (x14 / prosper-01)))))
 
 # ::id 18
-# ::snt One group of women in Cameroon received $ 100 from New York agency Trickle Up to start a rabbit-breeding business, but the rabbit ate the couple offspring, recalls Mildred Leet, co-founder of the U.S. agency
+# ::snt One group of women in Cameroon received $ 100 from New York agency Trickle Up to start a rabbit-breeding business , but the rabbit ate the couple  offspring , recalls Mildred Leet , co-founder of the U.S. agency
 (x22 / contrast-01
 	:ARG1 (x7 / receive-01
 		:ARG0 (x2 / group
@@ -357,7 +358,7 @@
 								:op1 "U.S."))))))))
 
 # ::id 19
-# ::snt Undaunted, the women switched to chickens and made enough money selling eggs to branch out into tomatoes and tailoring, ultimately opening two shops, Ms. Leet says
+# ::snt Undaunted , the women switched to chickens and made enough money selling eggs to branch out into tomatoes and tailoring , ultimately opening two shops , Ms. Leet says
 (x29 / say-01
 	:ARG1 (x8 / and
 		:op1 (x5 / switch-01
@@ -382,7 +383,7 @@
 		:null_edge (x27 / ms.)))
 
 # ::id 20
-# ::snt Some Third World commercial banks are taking note of poor entrepreneurs ' repayment rates
+# ::snt Some Third World commercial banks are taking note of poor entrepreneursrepayment rates
 (x7 / take-01
 	:ARG0 (x5 / bank
 		:quant (x1 / some)
@@ -392,13 +393,12 @@
 					:op1 "Third")))
 		:mod (x4 / commerce))
 	:ARG1 (x8 / note-02
-		:ARG1 (x14 / rate
-			:poss (x11 / entrepreneur
-				:mod (x10 / poor))
-			:ARG1 (x13 / repay-01))))
+		:ARG1 (x12 / rate
+			:mod (x10 / poor)
+			:mod (x11 / entrepreneursrepayment))))
 
 # ::id 21
-# ::snt Accion persuaded family-owned Multi Credit Bank of Panama City, Panama, to start making microloans two months ago
+# ::snt Accion persuaded family-owned Multi Credit Bank of Panama City , Panama , to start making microloans two months ago
 (x2 / persuade-01
 	:ARG0 (x1 / person
 		:name (n / name
@@ -421,7 +421,7 @@
 			:time (x17 / date-entity))))
 
 # ::id 22
-# ::snt Isaac Btesh, a director and son of the founder, says the bank has lent $ 80,000 to 100 people so far on 60-day, rotating lines of credit -- with a 100 % repayment rate
+# ::snt Isaac Btesh , a director and son of the founder , says the bank has lent $ 80,000 to 100 people so far on 60-day , rotating lines of credit with a 100 % repayment rate
 (x12 / say-01
 	:ARG0 (x1 / newspaper
 		:name (n / name
@@ -448,50 +448,50 @@
 				:mod (x30 / credit-02)
 				:ARG0-of (xap0 / percentage-entity
 					:value 100
-					:instrument-of (x36 / repay-01))))))
+					:instrument-of (x35 / repay-01))))))
 
 # ::id 23
-# ::snt " When Isaac Btesh , a director and son of the founder got in touch with Accion, a director and son of the founder were incredulous, " Mr. Btesh says
-(x32 / say-01
-	:ARG1 (x27 / incredulous
-		:domain (x20 / have-org-role-91
+# ::snt When Isaac Btesh , a director and son of the founder  got in touch with Accion , a director and son of the founder  were incredulous , Mr. Btesh says
+(x30 / say-01
+	:ARG1 (x26 / incredulous
+		:domain (x19 / have-org-role-91
 			:ARG2 (d / director)
-			:topic (x21 / and
-				:op2 (x15 / touch-03
-					:ARG0 (x3 / newspaper
+			:topic (x20 / and
+				:op2 (x14 / touch-03
+					:ARG0 (x2 / newspaper
 						:name (n1 / name
 							:op1 "Isaac"
 							:op2 "Btesh")
-						:ARG0-of (x7 / have-org-role-91
+						:ARG0-of (x6 / have-org-role-91
 							:ARG2 (d1 / director)
-							:topic (x8 / and
-								:op2 (x9 / son))
-							:ARG1 (x12 / found-01)))
-					:ARG1 (x17 / person
+							:topic (x7 / and
+								:op2 (x8 / son))
+							:ARG1 (x11 / found-01)))
+					:ARG1 (x16 / person
 						:name (n2 / name
 							:op1 "Accion")))
-				:op2 (x22 / son))
-			:ARG1 (x25 / found-01)))
-	:ARG0 (x31 / person
+				:op2 (x21 / son))
+			:ARG1 (x24 / found-01)))
+	:ARG0 (x29 / person
 		:name (n / name
 			:op1 "Btesh")
-		:null_edge (x30 / null_tag)))
+		:null_edge (x28 / null_tag)))
 
 # ::id 24
-# ::snt " a director and son of the founder could n't believe 100 people so far on 60-day figures
-(x11 / believe-01
-	:ARG1 (x4 / and
-		:op1 (x3 / have-org-role-91
+# ::snt a director and son of the founder  could not believe 100 people so far on 60-day  figures
+(x10 / believe-01
+	:ARG1 (x3 / and
+		:op1 (x2 / have-org-role-91
 			:ARG2 (d / director)
-			:ARG1 (x8 / found-01))
-		:op2 (x5 / son))
-	:mod (x9 / possible)
+			:ARG1 (x7 / found-01))
+		:op2 (x4 / son))
+	:mod (x8 / possible)
 	:ARG1 100
-	:mod (x15 / far)
-	:ARG1 (x18 / figure))
+	:mod (x14 / far)
+	:ARG1 (x17 / figure))
 
 # ::id 25
-# ::snt 
+# ::snt But everything 100 people so far on 60-day  said is true
 (x11 / true
 	:null_edge (x1 / contrast-01)
 	:domain (x2 / everything
@@ -503,7 +503,7 @@
 					:null_edge 100)))))
 
 # ::id 26
-# ::snt Poverty lending has such promise that Multi Credit plans to make Multi Credit Bank of Panama City the bank's number one activity, ahead of trade financing, consumer loans and merchant loans, the official adds
+# ::snt Poverty lending has such promise that Multi Credit plans to make Multi Credit Bank of Panama City  the bank's number one activity , ahead of trade financing , consumer loans and merchant loans , the official adds
 (x5 / promise-01
 	:ARG0 (x2 / lending)
 	:mod (x4 / such)
@@ -542,7 +542,7 @@
 					:ARG2 (o / official))))))
 
 # ::id 27
-# ::snt Accion, a Cambridge, Mass.-based nonprofit international development group and a leader in the U.S. microloan movement, says Accion plans to increase Accion microlending this year to $ 66.5 million from $ 37.8 million in 1990 and $ 9.8 million five years ago
+# ::snt Accion , a Cambridge , Mass.-based nonprofit international development group and a leader in the U.S. microloan movement , says Accion  plans to increase Accion  microlending this year to $ 66.5 million from $ 37.8 million in 1990 and $ 9.8 million five years ago
 (x20 / say-01
 	:ARG0 (x1 / accion
 		:topic (x11 / and
@@ -586,7 +586,7 @@
 							:unit (y3 / yuan))))))))
 
 # ::id 28
-# ::snt Accion says Accion plans to add 64,000 new clients, up from 40,000 last year and 9,000 five years ago
+# ::snt Accion  says Accion  plans to add 64,000 new clients , up from 40,000 last year and 9,000 five years ago
 (x2 / say-01
 	:ARG0 (x1 / accion)
 	:ARG1 (x4 / plan-01
@@ -605,7 +605,7 @@
 						:null_edge (x18 / null_tag)))))))
 
 # ::id 29
-# ::snt Accion average loan is $ 303
+# ::snt Accion  average loan is $ 303
 (xap0 / monetary-quantity
 	:ARG1-of (x3 / loan-01
 		:mod (x1 / accion)
@@ -614,7 +614,7 @@
 		:unit (y / yuan)))
 
 # ::id 30
-# ::snt Accion's Ms. Romanow says the group, which serves Latin America, plans to expand the lending to a total of between $ 500 million and $ 1 billion over the next five years
+# ::snt Accion's Ms. Romanow says the group , which serves Latin America , plans to expand the lending to a total of between $ 500 million and $ 1 billion over the next five years
 (x5 / say-01
 	:ARG0 (x4 / person
 		:name (n / name
@@ -649,7 +649,7 @@
 		:value 98))
 
 # ::id 32
-# ::snt CARE, New York, perhaps the world's largest private international-development group, says small economic-activity development -- primarily microlending -- is CARE fastest-growing portfolio
+# ::snt CARE , New York , perhaps the world's largest private international-development group , says small economic-activity development primarily microlending is CARE  fastest-growing portfolio
 (x15 / say-01
 	:ARG0 (x13 / group
 		:domain (x1 / care
@@ -662,34 +662,35 @@
 			:compared-to x4
 			:compared-to (x8 / world))
 		:mod (x11 / private))
-	:ARG1 (x24 / care
-		:ARG1 (x26 / portfolio
-			:mod (x25 / fastest-growing
-				:compared-to (x18 / develop-02
-					:mod (x16 / small)
-					:mod (x17 / economic-activity)
-					:ARG1 (x21 / microlending
-						:mod (x20 / primary)))))))
+	:ARG1 (x22 / care
+		:ARG1 (x18 / develop-02
+			:mod (x16 / small)
+			:mod (x17 / economic-activity)
+			:ARG1 (x20 / microlending
+				:mod (x19 / primary)))
+		:ARG1 (x24 / portfolio
+			:mod (x23 / fastest-growing))))
 
 # ::id 33
-# ::snt " There's energy and creativity out there, people bootstrapping who are n't waiting for the next handout, " says Larry Frankel of CARE
-(x22 / say-01
-	:ARG1 (x5 / and
-		:op1 (x4 / energy)
-		:op2 (x6 / creativity)
-		:direction (x7 / out)
-		:ARG0-of (x11 / bootstrapp
-			:ARG1 (x15 / wait-01
-				:ARG2 (x19 / handout
-					:mod (x18 / next)))))
-	:ARG0 (x23 / newspaper
-		:name (n / name
-			:op1 "Larry"
-			:op2 "Frankel")
-		:ARG1-of (x25 / include-91)))
+# ::snt There is energy and creativity out there , people bootstrapping who are not waiting for the next handout , says Larry Frankel of CARE
+(x20 / say-01
+	:ARG1 (x10 / bootstrapp
+		:ARG0 (x4 / and
+			:op1 (x3 / energy)
+			:op2 (x5 / creativity))
+		:direction (x6 / out
+			:op1 (x7 / there))
+		:ARG1 (x14 / wait-01
+			:ARG1 x4
+			:ARG2 (x18 / handout
+				:mod (x17 / next))))
+	:ARG1 (x21 / name
+		:op1 "Larry"
+		:op2 "Frankel"
+		:ARG1-of (x23 / include-91)))
 
 # ::id 34
-# ::snt Trickle Up, which makes thousands of $ 100 loans annually, says its budget rose to $ 1 million this year from $ 800,000 in 1989 after doubling almost every year throughout the 1980s
+# ::snt Trickle Up , which makes thousands of $ 100 loans annually , says its budget rose to $ 1 million this year from $ 800,000 in 1989 after doubling almost every year throughout the 1980s
 (x13 / say-01
 	:ARG1 (x1 / trickle
 		:ARG1 (x5 / make-02
@@ -712,7 +713,7 @@
 						:time (x35 / date-entity)))))))
 
 # ::id 35
-# ::snt 
+# ::snt Trickle Up makes $ 100 loans in two installments of $ 50 each to small groups of individuals
 (x3 / make-02
 	:ARG0 (x1 / trickle)
 	:ARG1 (x6 / loan-01
@@ -728,27 +729,27 @@
 				:consist-of (x18 / individual)))))
 
 # ::id 36
-# ::snt " We feel private enterprise is the way to help the poor, " says Mrs. Leet, who founded Trickle Up with her husband in 1979
-(x15 / say-01
-	:ARG1 (x3 / feel-01
-		:ARG0 (x2 / we)
-		:ARG1 (x8 / way
-			:domain (x5 / enterprise
-				:mod (x4 / private))
-			:instrument-of (x10 / help-01
-				:ARG1 (x12 / poor))))
-	:ARG0 (x17 / person
-		:name (n / name
-			:op1 "Leet")
-		:ARG0-of (x16 / mrs.)
-		:ARG0-of (x20 / found-01
-			:ARG1 (x21 / trickle)
-			:ARG2 (x25 / husband)
-			:time (x27 / date-entity
-				:year 1979))))
+# ::snt We feel private enterprise is the way to help the poor , says Mrs. Leet , who founded Trickle Up with her husband in 1979
+(x2 / feel-01
+	:ARG0 (x1 / we)
+	:ARG1 (x7 / way
+		:domain (x4 / enterprise
+			:mod (x3 / private))
+		:instrument-of (x9 / help-01
+			:ARG1 (x13 / say-01
+				:ARG1 (x11 / poor
+					:prep-with (x23 / husband
+						:ARG0-of (x18 / found-01
+							:ARG1 (x19 / trickle)
+							:time (x25 / date-entity
+								:year 1979))))
+				:ARG0 (x15 / person
+					:name (n / name
+						:op1 "Leet")
+					:null_edge (x14 / mrs.))))))
 
 # ::id 37
-# ::snt The group started a program in China in 1989 and moved into Laos, Vietnam and Namibia last year
+# ::snt The group started a program in China in 1989 and moved into Laos , Vietnam and Namibia last year
 (x10 / and
 	:op1 (x3 / start-01
 		:ARG0 (x2 / group)
@@ -774,7 +775,7 @@
 			:mod (x18 / last))))
 
 # ::id 38
-# ::snt Betsy Campbell, economic-development manager of Westport, Conn.-based Save the Children, says Betsy Campbell group underwent a shift in the 1980s " from being primarily a charitable organization " to being one oriented towards helping profit-making activities
+# ::snt Betsy Campbell , economic-development manager of Westport , Conn.-based Save the Children , says Betsy Campbell  group underwent a shift in the 1980s from being primarily a charitable organization to being one oriented towards helping profit-making activities
 (x14 / say-01
 	:ARG0 (x1 / newspaper
 		:name (n / name
@@ -797,17 +798,17 @@
 					:op1 "Campbell")))
 		:ARG1 (x20 / shift-01
 			:time (xap1 / date-entity
-				:decade 1980))
-		:ARG2 (x30 / organization
-			:mod (x27 / primary)
-			:mod (x29 / charitable)
-			:ARG1-of (x35 / orient-01
-				:ARG2 (x37 / help-01
-					:ARG1 (x39 / activity
-						:mod (x38 / profit-making)))))))
+				:time (x23 / date-entity)))
+		:ARG2 (x29 / organization
+			:mod (x26 / primary)
+			:mod (x28 / charitable)
+			:ARG1-of (x33 / orient-01
+				:ARG2 (x35 / help-01
+					:ARG1 (x37 / activity
+						:mod (x36 / profit-making)))))))
 
 # ::id 39
-# ::snt Betsy Campbell says microlending to individuals in 20 nations is rising sharply, with more than $ 3 million in circulation at the moment
+# ::snt Betsy Campbell  says microlending to individuals in 20 nations is rising sharply , with more than $ 3 million in circulation at the moment
 (x3 / say-01
 	:ARG0 (x1 / newspaper
 		:name (n / name
@@ -824,7 +825,7 @@
 			:location (x24 / moment))))
 
 # ::id 40
-# ::snt Repayment rates in most nations exceed 90 %, Betsy Campbell says
+# ::snt Repayment rates in most nations exceed 90 % , Betsy Campbell  says
 (x12 / say-01
 	:ARG1 (x6 / exceed-01
 		:ARG0 (x2 / rate
@@ -839,23 +840,23 @@
 			:op2 "Campbell")))
 
 # ::id 41
-# ::snt " These people value access to credit so highly that default is n't really a problem, " Betsy Campbell says
-(x21 / say-01
-	:ARG1 (x4 / value-01
-		:ARG1 (x5 / access-01
-			:ARG1 (x7 / credit-02))
-		:degree (x9 / high
-			:degree (x8 / so))
-		:ARG1 (x16 / problem
-			:domain (x11 / default)
-			:mod (x14 / really)))
-	:ARG0 (x19 / newspaper
+# ::snt These people value access to credit so highly that default is not really a problem , Betsy Campbell  says
+(x19 / say-01
+	:ARG1 (x3 / value-01
+		:ARG1 (x4 / access-01
+			:ARG1 (x6 / credit-02))
+		:degree (x8 / high
+			:degree (x7 / so))
+		:ARG1 (x15 / problem
+			:domain (x10 / default)
+			:mod (x13 / really)))
+	:ARG0 (x17 / newspaper
 		:name (n / name
 			:op1 "Betsy"
 			:op2 "Campbell")))
 
 # ::id 42
-# ::snt Some Third World banks, notably in Asia, have been making microloans for years
+# ::snt Some Third World banks , notably in Asia , have been making microloans for years
 (x13 / microloan
 	:ARG0 (x4 / bank
 		:quant (x1 / some)
@@ -885,7 +886,7 @@
 					:op1 "Bangladesh")))))
 
 # ::id 44
-# ::snt However, most such banks were set up with state support specifically to target the poor
+# ::snt However , most such banks were set up with state support specifically to target the poor
 (x7 / set-03
 	:ARG1 (x5 / bank
 		:quant (x3 / most)
@@ -909,7 +910,7 @@
 		:mod (x11 / microloan)))
 
 # ::id 46
-# ::snt The Christian Children's Fund of Richmond, Va., sticks to relief efforts and to person-to-person sponsorships, in which a U.S. donor makes regular payments to an impoverished Third World child, for example, while Africare House in Washington, D.C., focuses on helping cooperatives improve food production and health care
+# ::snt The Christian Children's Fund of Richmond , Va. , sticks to relief efforts and to person-to-person sponsorships , in which a U.S. donor makes regular payments to an impoverished Third World child , for example , while Africare House in Washington , D.C. , focuses on helping cooperatives improve food production and health care
 (x46 / focus-01
 	:ARG2 (x11 / stick-01
 		:ARG1 (x5 / fund-01
@@ -951,86 +952,83 @@
 					:ARG1 (x54 / health))))))
 
 # ::id 47
-# ::snt Nor is the booming field of microlending without its detractors -- or microlending without its detractors controversies
+# ::snt Nor is the booming field of microlending without its detractors or microlending without its detractors  controversies
 (x5 / field
 	:mod (x4 / booming)
-	:domain (x12 / or
+	:domain (x11 / or
 		:op1 (x7 / microlending)
 		:op2 (x10 / detractor)
-		:op2 (x13 / microlend
-			:manner (x17 / controversy
-				:ARG0 (x16 / detractor)))))
+		:op2 (x16 / controversy
+			:ARG0 (x15 / detractor))))
 
 # ::id 48
-# ::snt David Munro, an official with TechnoServe of Norwalk, Conn., says David Munro prefers to work " on a larger scale, and David Munro also do n't see -LCB- microlending -RCB- as passing on much in the way of skills .
-(x25 / and
-	:op1 (x13 / say-01
-		:ARG0 (x1 / newspaper
-			:name (n / name
-				:op1 "David"
-				:op2 "Munro")
-			:ARG0-of (x5 / have-org-role-91
-				:ARG2 (o / official)
-				:ARG1 (x9 / country
-					:name (n3 / name
-						:op1 "Norwalk")
-					:location (x11 / country
-						:name (n4 / name
-							:op1 "Conn.")))))
-		:ARG1 (x16 / prefer-01
+# ::snt David Munro , an official with TechnoServe of Norwalk , Conn. , says David Munro  prefers to work on a larger scale , and David Munro  also do not see -LCB- microlending -RCB- as passing on much in the way of skills
+(x13 / say-01
+	:ARG0 (x1 / newspaper
+		:name (n / name
+			:op1 "David"
+			:op2 "Munro")
+		:ARG0-of (x5 / have-org-role-91
+			:ARG2 (o / official)
+			:ARG1 (x9 / country
+				:name (n1 / name
+					:op1 "Norwalk")
+				:location (x11 / country
+					:name (n4 / name
+						:op1 "Conn.")))))
+	:ARG1 (x24 / and
+		:op1 (x16 / prefer-01
 			:ARG0 (x14 / newspaper
 				:name (n2 / name
 					:op1 "David"
 					:op2 "Munro"))
 			:ARG1 (x18 / work-01
 				:ARG0 x14
-				:manner (x23 / scale
-					:mod (x22 / large)))))
-	:op2 (x31 / see-01
-		:ARG0 (x26 / newspaper
-			:name (n1 / name
-				:op1 "David"
-				:op2 "Munro"))
-		:mod (x28 / also)
-		:ARG1 (x33 / microlend)
-		:ARG1 (x36 / pass-04
-			:degree (x38 / much)
-			:ARG1 (x43 / skill))))
+				:manner (x22 / scale
+					:mod (x21 / large))))
+		:op2 (x30 / see-01
+			:ARG0 (x25 / newspaper
+				:name (n3 / name
+					:op1 "David"
+					:op2 "Munro"))
+			:mod (x27 / also)
+			:ARG1 (x32 / microlend)
+			:ARG1 (x35 / pass-04
+				:degree (x37 / much)
+				:ARG1 (x42 / skill)))))
 
 # ::id 49
-# ::snt And officials at the U.S. Agency for International Development, which finances a big chunk of many private groups ' overseas operations, say officials at the U.S. Agency for International Development , which finances a big chunk of many private groups ' overseas operations support the principle of expanding poverty lending but oppose congressional efforts to mandate minimum levels
-(x24 / say-01
+# ::snt And officials at the U.S. Agency for International Development , which finances a big chunk of many private groupsoverseas operations , say officials at the U.S. Agency for International Development , which finances a big chunk of many private groupsoverseas operations  support the principle of expanding poverty lending but oppose congressional efforts to mandate minimum levels
+(x22 / say-01
 	:null_edge (x1 / and
-		:op2 (x54 / oppose-01
-			:ARG1 (x46 / support-01
-				:ARG1 (x48 / principle
-					:mod (x50 / expand-01
-						:ARG1 (x52 / lending
-							:ARG1 (x51 / poverty))))
+		:op2 (x50 / oppose-01
+			:ARG1 (x42 / support-01
+				:ARG1 (x44 / principle
+					:topic (x46 / expand-01
+						:ARG1 (x48 / lending
+							:ARG1 (x47 / poverty))))
 				:ARG0 (xap1 / person
-					:ARG0-of (x25 / have-org-role-91
+					:ARG0-of (x23 / have-org-role-91
 						:ARG2 (o1 / official)
-						:ARG1 (x29 / government-organization
+						:ARG1 (x27 / government-organization
 							:name (n2 / name
 								:op1 "Agency"
 								:op2 "for"
 								:op3 "International"
 								:op4 "Development"))
-						:ARG1 (x35 / finance-01
-							:ARG1 (x38 / chunk
-								:mod (x37 / big)
-								:part-of (x45 / operation
-									:poss (x42 / group
-										:quant (x40 / many)
-										:mod (x41 / private))
-									:location (x44 / overseas)))))))
-			:ARG1 (x56 / effort
-				:mod (x55 / government-organization
+						:ARG1 (x33 / finance-01
+							:ARG1 (x36 / chunk
+								:mod (x35 / big)
+								:ARG1 (x41 / operation
+									:quant (x38 / many)
+									:mod (x39 / private)))))))
+			:ARG1 (x52 / effort
+				:mod (x51 / government-organization
 					:name (n1 / name
 						:op1 "congressional"))
-				:purpose (x58 / mandate
-					:ARG1 (x60 / level
-						:mod (x59 / minimum))))))
+				:purpose (x54 / mandate
+					:ARG1 (x56 / level
+						:mod (x55 / minimum))))))
 	:ARG0 (xap0 / person
 		:ARG0-of (x2 / have-org-role-91
 			:ARG2 (o / official)
@@ -1043,14 +1041,12 @@
 			:ARG1 (x12 / finance-01
 				:ARG1 (x15 / chunk
 					:mod (x14 / big)
-					:part-of (x22 / operation
-						:poss (x19 / group
-							:quant (x17 / many)
-							:mod (x18 / private))
-						:location (x21 / overseas)))))))
+					:ARG1 (x20 / operation
+						:quant (x17 / many)
+						:mod (x18 / private)))))))
 
 # ::id 50
-# ::snt AID has more than doubled U.S. Agency for International Development micro-enterprise budget, which includes microlending, training and other activities, to an estimated $ 114 million this year from $ 58 million in 1988
+# ::snt AID has more than doubled U.S. Agency for International Development  micro-enterprise budget , which includes microlending , training and other activities , to an estimated $ 114 million this year from $ 58 million in 1988
 (x5 / double-01
 	:ARG0 (x1 / disease
 		:name (n / name

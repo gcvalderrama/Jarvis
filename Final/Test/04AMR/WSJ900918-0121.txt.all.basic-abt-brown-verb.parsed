@@ -1,25 +1,24 @@
 # ::id 1
-# ::snt MEMPHIS, Tenn. -- Friday nights used to be slow at The Fault Line, a nightclub here on busy Poplar Avenue
-(x1 / country
-	:name (n / name
-		:op1 "MEMPHIS")
-	:null_edge (x3 / country
-		:name (n1 / name
-			:op1 "Tenn."))
+# ::snt MEMPHIS , Tenn. Friday nights used to be slow at The Fault Line , a nightclub here on busy Poplar Avenue
+(x7 / use-01
+	:time (x6 / night
+		:name (x1 / name
+			:op1 "MEMPHIS"
+			:op2 ","
+			:op3 "Tenn."))
+	:ARG2 (x10 / slow)
+	:location (x14 / line
+		:mod (x13 / fault)
+		:ARG1-of (xap1 / club
+			:op2 (x17 / night
+				:location (x18 / here))
+			:location (x22 / avenue
+				:mod (x20 / busy))))
 	:time (xap0 / date-entity
-		:null_edge (x5 / null_tag)
-		:ARG0 (x7 / use-01
-			:ARG2 (x10 / slow)
-			:ARG2 (x14 / line
-				:mod (x13 / fault)
-				:ARG1-of (xap1 / club
-					:op2 (x17 / night
-						:location (x18 / here))
-					:location (x22 / avenue
-						:mod (x20 / busy)))))))
+		:null_edge (x5 / null_tag)))
 
 # ::id 2
-# ::snt But after word spread that a major earthquake was forecast for Dec. 3 in the Midwest, The Fault Line began throwing earthquake parties
+# ::snt But after word spread that a major earthquake was forecast for Dec. 3 in the Midwest , The Fault Line began throwing earthquake parties
 (x1 / contrast-01
 	:ARG2 (x21 / begin-01
 		:time (x2 / after
@@ -39,42 +38,41 @@
 				:mod (x23 / earthquake)))))
 
 # ::id 3
-# ::snt On Friday nights now, hundreds of patrons pour into the club to swig " Earthquake shooters " and sign up to win Dec. 3 Earthquake Escape Packages to the Bahamas or Hot Springs, Ark.
+# ::snt On Friday nights now , hundreds of patrons pour into the club to swig Earthquake shooters and sign up to win Dec. 3 Earthquake Escape Packages to the Bahamas or Hot Springs , Ark.
 (x9 / pour-01
 	:time (x4 / now)
 	:ARG0 (x8 / patron)
 	:ARG4 (x12 / club)
-	:ARG1 (x14 / swig
-		:ARG1 (x19 / and
-			:op1 (x17 / person
+	:ARG1 (x17 / and
+		:op1 (x14 / swig
+			:ARG1 (x16 / person
 				:ARG0-of (s / shoot-02)
-				:mod (x16 / earthquake))
-			:op2 (x20 / sign-02
-				:ARG0 x14
-				:ARG2 (x23 / win-01
-					:ARG1 (x28 / package
-						:null_edge (x24 / event
-							:name (n / name
-								:op1 "Dec."))
-						:null_edge (x25 / null_tag)
-						:mod (x27 / person
-							:ARG0-of (e / escape-01)
-							:mod (x26 / earthquake))
-						:ARG2 (x32 / or
-							:op1 (x31 / organization
-								:name (n1 / name
-									:op1 "Bahamas"))
-							:op2 (x34 / person
-								:name (n2 / name
-									:op1 "Springs")
-								:null_edge (x36 / country
-									:name (n3 / name
-										:op1 "Ark.")))))))))
+				:mod (x15 / earthquake)))
+		:op2 (x18 / sign-02
+			:ARG1 (x21 / win-01
+				:ARG1 (x26 / package
+					:null_edge (x22 / event
+						:name (n / name
+							:op1 "Dec."))
+					:null_edge (x23 / null_tag)
+					:mod (x25 / person
+						:ARG0-of (e / escape-01)
+						:mod (x24 / earthquake))
+					:ARG2 (x30 / or
+						:op1 (x29 / organization
+							:name (n1 / name
+								:op1 "Bahamas"))
+						:op2 (x32 / person
+							:name (n2 / name
+								:op1 "Springs")
+							:null_edge (x34 / country
+								:name (n3 / name
+									:op1 "Ark."))))))))
 	:time (xap0 / date-entity
 		:null_edge (x2 / null_tag)))
 
 # ::id 4
-# ::snt But even as Memphians whoop Memphians up, the prediction that the Big One may come in December is triggering tremors up and down the Mississippi Valley
+# ::snt But even as Memphians whoop Memphians  up , the prediction that the Big One may come in December is triggering tremors up and down the Mississippi Valley
 (x1 / contrast-01
 	:ARG2 (x20 / trigger-01
 		:mod (x2 / even
@@ -104,7 +102,7 @@
 							:op1 "Mississippi")))))))
 
 # ::id 5
-# ::snt Shaken, thousands of people are crowding into earthquake survival classes
+# ::snt Shaken , thousands of people are crowding into earthquake survival classes
 (x7 / crowd-00
 	:ARG1 (x1 / shake-03)
 	:ARG2 (x11 / class
@@ -112,7 +110,7 @@
 			:ARG1 (x9 / earthquake))))
 
 # ::id 6
-# ::snt In Arnold, Mo., 3,000 people showed up for one course
+# ::snt In Arnold , Mo. , 3,000 people showed up for one course
 (x8 / show-01
 	:location (x2 / country
 		:name (n / name
@@ -123,7 +121,7 @@
 	:ARG1 (x6 / 3,000))
 
 # ::id 7
-# ::snt In Missouri and Arkansas, some schools and businesses have announced plans to close in early December
+# ::snt 
 (x11 / announce-01
 	:ARG0 (x8 / and
 		:location (x3 / and
@@ -144,7 +142,7 @@
 				:op1 (x17 / date-entity)))))
 
 # ::id 8
-# ::snt Entrepreneurs are hawking quake insurance, survival kits and gas-line safety gadgets
+# ::snt Entrepreneurs are hawking quake insurance , survival kits and gas-line safety gadgets
 (x3 / hawk
 	:ARG1 (x9 / and
 		:op1 (x5 / insurance
@@ -162,50 +160,49 @@
 		:ARG0 x1))
 
 # ::id 10
-# ::snt " You ca n't run from everything, " says Tammy McCormick, a nurse in Blytheville, Ark., who will take her two youngsters and spend several days with relatives in North Carolina
-(x10 / say-01
-	:ARG1 (x5 / run-01
-		:ARG0 (x2 / you)
-		:ARG1 (x7 / everything))
-	:ARG0 (x11 / newspaper
+# ::snt You ca not run from everything , says Tammy McCormick , a nurse in Blytheville , Ark. , who will take her two youngsters and spend several days with relatives in North Carolina
+(x8 / say-01
+	:ARG1 (x4 / run-01
+		:ARG0 (x1 / you)
+		:ARG1 (x6 / everything))
+	:ARG0 (x9 / newspaper
 		:name (n / name
 			:op1 "Tammy"
 			:op2 "McCormick")
-		:ARG0-of (x15 / have-org-role-91
+		:ARG0-of (x13 / have-org-role-91
 			:ARG2 (n1 / nurse)
-			:location (x17 / country
+			:location (x15 / country
 				:name (n2 / name
 					:op1 "Blytheville")
-				:location (x19 / country
+				:location (x17 / country
 					:name (n3 / name
 						:op1 "Ark.")))
-			:ARG1 (x27 / and
-				:op1 (x23 / take-01
-					:ARG1 (x26 / youngster
+			:ARG1 (x25 / and
+				:op1 (x21 / take-01
+					:ARG1 (x24 / youngster
 						:quant 2))
-				:op2 (x28 / spend-01
-					:ARG1 (x29 / several
-						:op1 (x30 / temporal-quantity
+				:op2 (x26 / spend-01
+					:ARG1 (x27 / several
+						:op1 (x28 / temporal-quantity
 							:unit (d / day)))
-					:ARG1 (x32 / relative
-						:location (x34 / country
+					:ARG1 (x30 / relative
+						:location (x32 / country
 							:name (n4 / name
 								:op1 "North"
 								:op2 "Carolina"))))))))
 
 # ::id 11
-# ::snt " But Ark. seems stupid to stay on a fault line with a prediction like this .
-(x5 / stupid
-	:domain (x3 / ark.
-		:null_edge (x2 / contrast-01
-			:ARG2 (x4 / seem-01)))
-	:ARG1 (x7 / stay-01
-		:ARG0 x3
-		:ARG1 (x11 / line
-			:mod (x10 / fault))
-		:manner (x14 / predict-01
-			:ARG1-of (xap0 / resemble-01
-				:ARG2 (x16 / this)))))
+# ::snt But Ark.  seems stupid to stay on a fault line with a prediction like this
+(x1 / contrast-01
+	:ARG2 (x4 / seem-01)
+	:ARG2 (x5 / stupid
+		:domain (x2 / ark.)
+		:domain (x7 / stay-01
+			:ARG1 (x11 / line
+				:mod (x10 / fault
+					:accompanier (x14 / predict-01
+						:ARG1-of (xap0 / resemble-01
+							:ARG2 (x16 / this))))))))
 
 # ::id 12
 # ::snt Everybody talks about the San Andreas fault in California
@@ -223,7 +220,7 @@
 				:op1 "California"))))
 
 # ::id 13
-# ::snt 
+# ::snt But the Midwest actually has had three of the most powerful earthquakes on this continent
 (x1 / contrast-01
 	:ARG1-of (x6 / have-03
 		:ARG0 (x3 / country
@@ -237,7 +234,7 @@
 				:mod (x14 / this)))))
 
 # ::id 14
-# ::snt In 1811 and 1812, along a 120-mile zig-zag formation called the New Madrid fault, a series of quakes ravaged the Midwest
+# ::snt In 1811 and 1812 , along a 120-mile zig-zag formation called the New Madrid fault , a series of quakes ravaged the Midwest
 (x21 / ravage
 	:time (x2 / date-entity
 		:year 1811)
@@ -258,7 +255,7 @@
 			:op1 "Midwest")))
 
 # ::id 15
-# ::snt Researchers estimate those earthquakes ranked stronger than 8 on the Richter Scale, which had n't been invented yet
+# ::snt Researchers estimate those earthquakes ranked stronger than 8 on the Richter Scale , which had not been invented yet
 (x2 / estimate-01
 	:ARG0 (x1 / person
 		:ARG0-of (r / research-01))
@@ -266,17 +263,13 @@
 		:ARG1 (x4 / earthquake)
 		:ARG1 (x6 / strong
 			:quant 8)
-		:ARG2 (x12 / organization
-			:name (n / name
-				:op1 "Scale")
-			:mod (x11 / organization
-				:name (n1 / name
-					:op1 "Richter"))
-			:null_edge (x18 / invent-01
+		:ARG2 (x12 / scale
+			:mod (x11 / richter)
+			:ARG1-of (x18 / invent-01
 				:time (x19 / yet)))))
 
 # ::id 16
-# ::snt Researchers were more than 10 times greater than the 7.1 quake that rocked California's Bay Area last October
+# ::snt Researchers  were more than 10 times greater than the 7.1 quake that rocked California's Bay Area last October
 (x1 / person
 	:ARG0-of (r / research-01)
 	:quant (x3 / more-than)
@@ -315,7 +308,7 @@
 			:op1 "Cincinnati")))
 
 # ::id 19
-# ::snt And as tons of soil and rock bed pitched and rolled in a seismic frenzy, new waterfalls spiked up, causing part of the mighty Mississippi River to flow backward for several hours
+# ::snt And as tons of soil and rock bed pitched and rolled in a seismic frenzy , new waterfalls spiked up , causing part of the mighty Mississippi River to flow backward for several hours
 (x1 / and
 	:op2 (x19 / spike
 		:ARG1 (x6 / and
@@ -345,7 +338,7 @@
 						:unit (h / hour)))))))
 
 # ::id 20
-# ::snt The New Madrid (pronounced MAD-rid )fault still has 150 small, mostly unfelt, earthquakes a year
+# ::snt The New Madrid (pronounced MAD-rid )fault still has 150 small , mostly unfelt , earthquakes a year
 (x17 / earthquake
 	:location (x2 / city
 		:name (n / name
@@ -367,7 +360,7 @@
 		:manner (x14 / most)))
 
 # ::id 21
-# ::snt In the next 10 years, experts warn, the area has a 33 % chance of a quake measuring 7.1
+# ::snt In the next 10 years , experts warn , the area has a 33 % chance of a quake measuring 7.1
 (x16 / chance
 	:null_edge (x8 / warn-01
 		:ARG0 (x7 / person
@@ -394,31 +387,31 @@
 				:unit (d / dollar)))))
 
 # ::id 23
-# ::snt " experts 're overdue for one in the 6s and low 7s, " says David Stewart, an earthquake expert at Southeast Missouri State University
-(x15 / say-01
-	:ARG1 (x4 / overdue
-		:ARG0 (x2 / person
+# ::snt experts  are overdue for one in the 6s and low 7s , says David Stewart , an earthquake expert at Southeast Missouri State University
+(x13 / say-01
+	:ARG1 (x3 / overdue
+		:ARG0 (x1 / person
 			:ARG1-of (e / expert-41))
-		:ARG1 (x10 / and
+		:ARG1 (x9 / and
 			:op1 6
-			:null_edge (x11 / low
+			:null_edge (x10 / low
 				:null_edge 7)))
-	:ARG0 (x16 / newspaper
+	:ARG0 (x14 / newspaper
 		:name (n / name
 			:op1 "David"
 			:op2 "Stewart")
-		:ARG1-of (x21 / person
+		:ARG1-of (x19 / person
 			:ARG1-of (e1 / expert-41)
-			:ARG2 (x20 / earthquake)
-			:location (x26 / university
-				:null_edge (x23 / null_tag)
-				:null_edge (x24 / state
+			:ARG2 (x18 / earthquake)
+			:location (x24 / university
+				:null_edge (x21 / null_tag)
+				:null_edge (x22 / state
 					:name (n1 / name
 						:op1 "Missouri"))
-				:null_edge (x25 / null_tag)))))
+				:null_edge (x23 / null_tag)))))
 
 # ::id 24
-# ::snt Over the years, a few pinpoint-on-the map towns have tried to capitalize on the little-known fault
+# ::snt Over the years , a few pinpoint-on-the map towns have tried to capitalize on the little-known fault
 (x11 / try-01
 	:time (x1 / over
 		:op1 (x3 / temporal-quantity
@@ -433,7 +426,7 @@
 			:degree (x16 / little))))
 
 # ::id 25
-# ::snt New Madrid, Mo., the fault's namesake, draws tourists to a museum with exhibits on the 19th century devastation
+# ::snt New Madrid , Mo. , the fault's namesake , draws tourists to a museum with exhibits on the 19th century devastation
 (x11 / draw-02
 	:ARG1 (x9 / namesake
 		:location (x1 / city
@@ -451,7 +444,7 @@
 			:time (x22 / date-entity))))
 
 # ::id 26
-# ::snt And Paragould, Ark., has held earthquake festivals with events like the " Miss Faultless " beauty contest
+# ::snt And Paragould , Ark. , has held earthquake festivals with events like the Miss Faultless beauty contest
 (x1 / and
 	:op2 (x7 / hold-04
 		:ARG0 (x2 / country
@@ -463,17 +456,17 @@
 		:ARG1 (x9 / festival
 			:mod (x8 / earthquake))
 		:prep-with (x11 / event
-			:example (x19 / contest-00
-				:ARG2 (x15 / country
+			:ARG1-of (x17 / contest-00
+				:null_edge (x14 / country
 					:name (n2 / name
 						:op1 "Miss"))
-				:null_edge (x16 / country
+				:mod (x15 / organization
 					:name (n3 / name
 						:op1 "Faultless"))
-				:ARG2 (x18 / beauty)))))
+				:ARG2 (x16 / beauty)))))
 
 # ::id 27
-# ::snt But as Monday, Dec. 3, approaches, the whole matter is becoming more serious
+# ::snt But as Monday , Dec. 3 , approaches , the whole matter is becoming more serious
 (x1 / contrast-01
 	:ARG2 (x14 / become-01
 		:ARG2 (x8 / approach-01
@@ -487,23 +480,22 @@
 			:degree (x15 / more))))
 
 # ::id 28
-# ::snt That's because the predictor has gained credibility in some important circles for the fault's namesake work on the climate
-(x2 / be-02
-	:null_edge (x3 / cause-01
-		:ARG1 (x1 / that)
-		:ARG0 (x7 / gain-02
-			:ARG0 (x5 / predictor)
-			:ARG1 (x8 / credibility)
-			:ARG2 (x12 / circle
-				:quant (x10 / some)
-				:mod (x11 / important)
-				:ARG0-of (x18 / work-01
-					:ARG0 (x15 / fault-01)
-					:ARG1 (x17 / namesake)
-					:ARG1 (x21 / climate))))))
+# ::snt That is because the predictor has gained credibility in some important circles for the fault's namesake  work on the climate
+(x3 / cause-01
+	:ARG1 (x1 / that)
+	:ARG0 (x7 / gain-02
+		:ARG0 (x5 / predictor)
+		:ARG1 (x8 / credibility)
+		:ARG2 (x12 / circle
+			:quant (x10 / some)
+			:mod (x11 / important)
+			:ARG0-of (x18 / work-01
+				:ARG0 (x15 / fault-01)
+				:ARG1 (x17 / namesake)
+				:ARG1 (x21 / climate)))))
 
 # ::id 29
-# ::snt Iben Browning, a 72-year-old scientist, predicted October's Bay Area quake a week before October's Bay Area quake happened, say people who heard Iben Browning speak to the Equipment Manufacturers Institute
+# ::snt Iben Browning , a 72-year-old scientist , predicted October's Bay Area quake a week before October's Bay Area quake  happened , say people who heard Iben Browning  speak to the Equipment Manufacturers Institute
 (x8 / predict-01
 	:ARG0 (x1 / newspaper
 		:name (n / name
@@ -546,31 +538,31 @@
 							:op3 "Institute")))))))
 
 # ::id 30
-# ::snt And Iben Browning predicted " geological danger " on Sept. 19, 1985, along a band of latitude that included Mexico City -- where a massive quake struck on that day
+# ::snt And Iben Browning  predicted geological danger on Sept. 19 , 1985 , along a band of latitude that included Mexico City where a massive quake struck on that day
 (x1 / and
 	:op2 (x4 / predict-01
 		:ARG0 (x2 / newspaper
 			:name (n / name
 				:op1 "Iben"
 				:op2 "Browning"))
-		:ARG1 (x7 / danger
-			:mod (x6 / geology))
-		:time (x10 / date-entity
+		:ARG1 (x6 / danger
+			:mod (x5 / geology))
+		:time (x8 / date-entity
 			:year 1985)
-		:location (x15 / along
-			:op1 (x17 / band
-				:consist-of (x19 / latitude)
-				:ARG2-of (x21 / include-91
-					:ARG1 (x23 / city
-						:null_edge (x22 / country
+		:location (x13 / along
+			:op1 (x15 / band
+				:consist-of (x17 / latitude)
+				:ARG2-of (x19 / include-91
+					:ARG1 (x21 / city
+						:null_edge (x20 / country
 							:name (n1 / name
 								:op1 "Mexico"))
-						:ARG0-of (x29 / strike-01
-							:ARG0 (x28 / quake
-								:mod (x27 / massive)))))))))
+						:ARG0-of (x26 / strike-01
+							:ARG0 (x25 / quake
+								:mod (x24 / massive)))))))))
 
 # ::id 31
-# ::snt Mr. Browning, who has a Ph.D. in physiology, genetics and bacteriology, writes a climate newsletter out of New Mexico
+# ::snt Mr. Browning , who has a Ph.D. in physiology , genetics and bacteriology , writes a climate newsletter out of New Mexico
 (x15 / write-01
 	:ARG0 (x2 / person
 		:name (n / name
@@ -589,7 +581,7 @@
 			:op1 "Mexico")))
 
 # ::id 32
-# ::snt Iben Browning has clients, such as PaineWebber Inc., who have long paid for Iben Browning wisdom on how the weather will affect clients agricultural investments
+# ::snt Iben Browning  has clients , such as PaineWebber Inc. , who have long paid for Iben Browning  wisdom on how the weather will affect clients  agricultural investments
 (x3 / have-03
 	:ARG0 (x1 / newspaper
 		:name (n / name
@@ -614,7 +606,7 @@
 					:mod (x26 / agriculture))))))
 
 # ::id 33
-# ::snt Since 1971, Mr. Browning says, Iben Browning has picked the correct dates of four large earthquakes, two volcanoes -- and one day with both a volcano and an earthquake
+# ::snt Since 1971 , Mr. Browning says , Iben Browning  has picked the correct dates of four large earthquakes , two volcanoes and one day with both a volcano and an earthquake
 (x6 / say-01
 	:ARG0 (x5 / person
 		:name (n / name
@@ -630,21 +622,21 @@
 				:op2 "Browning"))
 		:ARG1 (x14 / date
 			:mod (x13 / correct)
-			:ARG1 (x23 / and
+			:ARG1 (x22 / and
 				:op1 (x18 / earthquake
 					:quant 4
 					:mod (x17 / large))
 				:op2 (x21 / volcano
 					:quant 2)
-				:op1 (x25 / temporal-quantity
+				:op1 (x24 / temporal-quantity
 					:unit (d / day)
 					:quant 1
-					:accompanier (x30 / and
-						:op1 (x29 / volcano)
-						:op2 (x32 / earthquake)))))))
+					:accompanier (x29 / and
+						:op1 (x28 / volcano)
+						:op2 (x31 / earthquake)))))))
 
 # ::id 34
-# ::snt Iben Browning bases Iben Browning forecasts on tidal forces caused by the positions of the sun and the moon -- an old theory, critics say, that does n't wash
+# ::snt Iben Browning  bases Iben Browning  forecasts on tidal forces caused by the positions of the sun and the moon an old theory , critics say , that does not wash
 (x3 / base
 	:ARG0 (x1 / newspaper
 		:name (n / name
@@ -657,18 +649,18 @@
 					:ARG0 (x13 / position
 						:ARG0 (x17 / and
 							:op1 (x16 / sun)
-							:op3 (x23 / theory
-								:mod (x22 / old)
-								:ARG1-of (x26 / say-01
-									:ARG0 (x25 / person
-										:ARG0-of (c / criticize-01)))
-								:ARG0-of (x31 / wash-01))
 							:op1 (xap0 / and
-								:op3 (x19 / moon))))))))
+								:op3 (x19 / moon))))
+					:ARG1 (x22 / theory
+						:mod (x21 / old)
+						:ARG1-of (x25 / say-01
+							:ARG0 (x24 / person
+								:ARG0-of (c / criticize-01)))
+						:ARG0-of (x30 / wash-01))))))
 	:domain x6)
 
 # ::id 35
-# ::snt On Dec. 3, those forces are expected to be at a 27-year high
+# ::snt On Dec. 3 , those forces are expected to be at a 27-year high
 (x8 / expect-01
 	:time (x2 / date-entity)
 	:source (x14 / high
@@ -692,7 +684,7 @@
 					:ARG2 (x15 / fail-01))))))
 
 # ::id 37
-# ::snt The New Madrid area has a 50-50 chance of producing at least a 7 quake on Dec. 3, give or take a day or two on either side, Mr. Browning says
+# ::snt The New Madrid area has a 50-50 chance of producing at least a 7 quake on Dec. 3 , give or take a day or two on either side , Mr. Browning says
 (x33 / say-01
 	:ARG1 (x5 / have-03
 		:ARG0 (x2 / city
@@ -723,7 +715,7 @@
 		:null_edge (x31 / null_tag)))
 
 # ::id 38
-# ::snt At that time, a similar quake has a lesser chance of occurring on California's San Andreas or Hayward faults, according to Mr. Browning, and an 8.2 quake in Tokyo has a greater chance
+# ::snt At that time , a similar quake has a lesser chance of occurring on California's San Andreas or Hayward faults , according to Mr. Browning , and an 8.2 quake in Tokyo has a greater chance
 (x11 / chance
 	:time (x3 / time
 		:mod (x2 / that))
@@ -761,35 +753,34 @@
 	:ARG0 (x1 / skepticism))
 
 # ::id 40
-# ::snt " No responsible scientist can predict an exact day for an earthquake, " says Brian Mitchell, a quake expert at St. Louis University, echoing the majority opinion
-(x15 / say-01
-	:ARG1 (x5 / possible
-		:domain (x6 / predict-01
-			:ARG0 (x4 / have-org-role-91
-				:ARG2 (s / scientist)
-				:ARG1-of (x3 / responsible-41))
-			:ARG1 (x9 / day
-				:mod (x8 / exact))
-			:ARG1 (x12 / earthquake)))
-	:ARG0 (x16 / newspaper
-		:name (n / name
-			:op1 "Brian"
-			:op2 "Mitchell")
-		:ARG1-of (x21 / person
-			:ARG1-of (e / expert-41)
-			:ARG2 (x20 / quake)
-			:location (x23 / government-organization
-				:name (n1 / name
-					:op1 "St."
-					:op2 "Louis"
-					:op3 "University"))))
-	:ARG1 (x27 / echo
-		:ARG1 (x30 / thing
-			:ARG1-of (o / opine-01)
-			:mod (x29 / majority))))
+# ::snt No responsible scientist can predict an exact day for an earthquake , says Brian Mitchell , a quake expert at St. Louis University , echoing the majority opinion
+(x4 / possible
+	:domain (x5 / predict-01
+		:ARG0 (x3 / have-org-role-91
+			:ARG2 (s / scientist)
+			:ARG1-of (x2 / responsible-41))
+		:ARG1 (x8 / day
+			:mod (x7 / exact))
+		:ARG1 (x13 / say-01
+			:name (x14 / name
+				:op1 "Brian"
+				:op2 "Mitchell"
+				:ARG0-of (x19 / person
+					:ARG1-of (e / expert-41)
+					:ARG2 (x18 / quake)
+					:location (x21 / government-organization
+						:name (n / name
+							:op1 "St."
+							:op2 "Louis"
+							:op3 "University"))))
+			:ARG1 (x25 / echo
+				:ARG0 x14
+				:ARG1 (x28 / thing
+					:ARG1-of (o / opine-01)
+					:mod (x27 / majority))))))
 
 # ::id 41
-# ::snt But Mr. Browning should n't be written off so quickly, says Southeast Missouri State's Mr. Stewart, who recently spent four days with Mr. Browning
+# ::snt But Mr. Browning should not be written off so quickly , says Southeast Missouri State's Mr. Stewart , who recently spent four days with Mr. Browning
 (x12 / say-01
 	:ARG1 (x4 / recommend-01
 		:ARG1 (x7 / write-01
@@ -817,109 +808,107 @@
 				:null_edge (x26 / null_tag)))))
 
 # ::id 42
-# ::snt " Iben Browning has a methodology that can determine, plus or minus a window of a day or two, an enhanced probability of a volcano or an earthquake in certain latitudes, " says Mr. Stewart
-(x36 / say-01
-	:ARG1 (x4 / have-03
-		:ARG0 (x2 / newspaper
-			:name (n1 / name
-				:op1 "Iben"
-				:op2 "Browning"))
-		:ARG1 (x6 / methodology
-			:ARG0-of (x9 / determine-01
-				:mod (x8 / possible)
-				:ARG1 (x12 / or
-					:op2 (x13 / minus)
-					:op2 (x15 / window
-						:duration (x18 / temporal-quantity
-							:unit (d / day)
-							:time (x19 / or
-								:op2 2))))
-				:ARG1 (x24 / probable
-					:ARG1-of (x23 / enhance-01)
-					:poss (x28 / or
-						:op1 (x27 / volcano)
-						:op2 (x30 / earthquake
-							:ARG1 (x33 / latitudes
-								:mod (x32 / certain))))))))
-	:ARG0 (x38 / person
+# ::snt Iben Browning  has a methodology that can determine , plus or minus a window of a day or two , an enhanced probability of a volcano or an earthquake in certain latitudes , says Mr. Stewart
+(x3 / have-03
+	:ARG0 (x1 / newspaper
 		:name (n / name
-			:op1 "Stewart")
-		:null_edge (x37 / null_tag)))
+			:op1 "Iben"
+			:op2 "Browning"))
+	:ARG1 (x5 / methodology
+		:ARG0-of (x8 / determine-01
+			:mod (x7 / possible)
+			:ARG1 (x11 / or
+				:op2 (x12 / minus)
+				:op2 (x14 / window
+					:duration (x17 / temporal-quantity
+						:unit (d / day)
+						:time (x18 / or
+							:op2 2))))
+			:ARG1 (x23 / probable
+				:ARG1-of (x22 / enhance-01)
+				:time-of (x29 / earthquake
+					:ARG1 (x34 / say-01
+						:ARG1 (x27 / or
+							:op1 (x26 / volcano))
+						:mod (x31 / certain)
+						:ARG0 (x36 / person
+							:name (n1 / name
+								:op1 "Stewart")
+							:null_edge (x35 / null_tag))))))))
 
 # ::id 43
-# ::snt " No one else has been able to replicate No one else, but that does n't mean No one else's wrong .
-(x14 / contrast-01
-	:ARG1 (x7 / possible
-		:domain (x9 / replicate-01
+# ::snt No one else has been able to replicate No one else  , but that does not mean No one else  is wrong
+(x13 / contrast-01
+	:ARG1 (x6 / possible
+		:domain (x8 / replicate-01
 			:ARG1 (xap1 / no-one
-				:mod (x12 / else)))
+				:mod (x11 / else)))
 		:domain (xap0 / no-one
-			:mod (x4 / else)))
-	:ARG2 (x18 / mean-01
+			:mod (x3 / else)))
+	:ARG2 (x17 / mean-01
 		:ARG1 (xap2 / no-one
-			:mod (x21 / else))))
+			:mod (x20 / else))))
 
 # ::id 44
-# ::snt Mr. Browning says No one else's not easy being on record with predictions that few other scientists will support
+# ::snt Mr. Browning says No one else  is not easy being on record with predictions that few other scientists will support
 (x3 / say-01
 	:ARG0 (x2 / person
 		:name (n / name
 			:op1 "Browning")
 		:null_edge (x1 / null_tag))
-	:ARG1 (x9 / easy
+	:ARG1 (xap0 / no-one
+		:mod (x6 / else)
+		:mod (x9 / easy)
 		:mod (x12 / record
-			:domain (x14 / predict-01
+			:prep-with (x14 / predict-01
 				:ARG1 (x20 / support-01
 					:ARG0 (x18 / scientist
 						:quant (x16 / few)
-						:mod (x17 / other)))))
-		:domain (xap0 / no-one
-			:mod (x6 / else))))
+						:mod (x17 / other)))))))
 
 # ::id 45
-# ::snt " Iben Browning feel like a lonely little petunia in a cabbage patch, " Iben Browning says
-(x18 / say-01
-	:ARG1 (x4 / feel-01
-		:ARG0 (x2 / newspaper
+# ::snt Iben Browning  feel like a lonely little petunia in a cabbage patch , Iben Browning  says
+(x16 / say-01
+	:ARG1 (x3 / feel-01
+		:ARG0 (x1 / newspaper
 			:name (n1 / name
 				:op1 "Iben"
 				:op2 "Browning"))
-		:null_edge (x9 / petunia
-			:mod (x7 / lonely)
-			:mod (x8 / little)
-			:ARG2 (x13 / patch-02
-				:mod (x12 / cabbage))))
-	:ARG0 (x16 / newspaper
+		:null_edge (x8 / petunia
+			:mod (x6 / lonely)
+			:mod (x7 / little)
+			:ARG2 (x12 / patch-02
+				:mod (x11 / cabbage))))
+	:ARG0 (x14 / newspaper
 		:name (n / name
 			:op1 "Iben"
 			:op2 "Browning")))
 
 # ::id 46
-# ::snt But asked if Iben Browning enjoys being right, Iben Browning says, " a lonely little petunia in a cabbage patch's the only damn thing that matters
+# ::snt But asked if Iben Browning  enjoys being right , Iben Browning  says , a lonely little petunia in a cabbage patch  is the only damn thing that matters
 (x1 / contrast-01
-	:ARG2 (x12 / thing
-		:ARG1-of (s / say-01)
-		:ARG1 (x2 / ask-02
-			:time (x6 / enjoy-01
-				:ARG0 (x4 / newspaper
-					:name (n1 / name
-						:op1 "Iben"
-						:op2 "Browning"))))
+	:ARG2 (x2 / ask-02
+		:condition (x6 / enjoy-01
+			:ARG0 (x4 / newspaper
+				:name (n1 / name
+					:op1 "Iben"
+					:op2 "Browning"))))
+	:ARG2 (x12 / say-01
 		:ARG0 (x10 / newspaper
 			:name (n / name
 				:op1 "Iben"
 				:op2 "Browning")))
-	:ARG2 (x18 / petunia
-		:mod (x16 / lonely)
-		:mod (x17 / little)
-		:ARG1 (x22 / patch-02
-			:mod (x21 / cabbage))
-		:mod (x25 / only))
-	:ARG2 (x29 / matter-01
-		:topic (x26 / damn)))
+	:ARG2 (x17 / petunia
+		:mod (x15 / lonely)
+		:mod (x16 / little)
+		:ARG1 (x21 / patch-02
+			:mod (x20 / cabbage))
+		:mod (x24 / only))
+	:ARG2 (x25 / damn)
+	:ARG2 (x28 / matter-01))
 
 # ::id 47
-# ::snt If one is a business consultant, few other scientists do n't pay you for being wrong .
+# ::snt If one is a business consultant , few other scientists  do not pay you for being wrong
 (x13 / pay-01
 	:ARG3 (x6 / person
 		:ARG0-of (c / consult-01)
@@ -933,7 +922,7 @@
 		:ARG1 x14))
 
 # ::id 48
-# ::snt Plenty of other business people are cashing in on a business consultant prediction
+# ::snt Plenty of other business people are cashing in on a business consultant  prediction
 (x7 / cash
 	:ARG0 (x1 / plenty
 		:mod (x4 / business
@@ -988,17 +977,17 @@
 				:op1 "Memphis"))))
 
 # ::id 52
-# ::snt One says, " I 'm staying, " the other, " I 'm leaving .
-(x16 / leave-01
-	:ARG1 (x2 / thing
-		:ARG1-of (s / say-01))
-	:ARG1 (x7 / stay-01
-		:ARG0 (x5 / i)
-		:ARG1 (x11 / other))
-	:ARG0 (x14 / i))
+# ::snt One says , I am staying , the other , I am leaving
+(x2 / say-01
+	:ARG0 (x1 / one)
+	:ARG1 (x6 / stay-01
+		:ARG1 (x4 / i)
+		:null_edge (x13 / leave-06
+			:ARG0 (x9 / other)
+			:ARG0 (x11 / i))))
 
 # ::id 53
-# ::snt All of this has changed life in places like Blytheville, Ark. (pop : 24,314 -RRB-, tucked amid vast flat farmland, right at the corner of the Arkansas, Tennessee and Missouri borders
+# ::snt All of this has changed life in places like Blytheville , Ark. (pop : 24,314 ), tucked amid vast flat farmland , right at the corner of the Arkansas , Tennessee and Missouri borders
 (x5 / change-01
 	:ARG1 (x3 / this
 		:quant (x1 / all))
@@ -1029,7 +1018,7 @@
 						:op1 "Missouri"))))))
 
 # ::id 54
-# ::snt So many people plan to skip town on Dec. 3 that the Flexible Technologies tubing plant already plans to shut down for two days, at a cost of thousands of dollars
+# ::snt So many people plan to skip town on Dec. 3 that the Flexible Technologies tubing plant already plans to shut down for two days , at a cost of thousands of dollars
 (x4 / plan-01
 	:ARG0 (x2 / many
 		:degree (x1 / so))
@@ -1055,24 +1044,27 @@
 							:unit (d1 / dollar))))))))
 
 # ::id 55
-# ::snt Says Jimmy Connell, plant superintendent, " Dec. 3 in the Midwest's going to be a ghost town around here .
-(x20 / town
-	:domain (x2 / newspaper
-		:name (n / name
-			:op1 "Jimmy"
-			:op2 "Connell")
-		:ARG0-of (x6 / superintendent
-			:ARG1 (x5 / plant))
-		:name (x9 / name
-			:op1 "Dec."
-			:op2 "3"))
-	:location (x13 / midwest)
-	:mod (x19 / ghost)
-	:location (x21 / around
-		:op1 (x22 / here)))
+# ::snt Says Jimmy Connell , plant superintendent , Dec. 3 in the Midwest  is going to be a ghost town around here
+(x1 / say-01
+	:ARG1 (x19 / town
+		:domain (x2 / newspaper
+			:name (n / name
+				:op1 "Jimmy"
+				:op2 "Connell")
+			:ARG0-of (x6 / superintendent
+				:ARG1 (x5 / plant)
+				:name (x8 / name
+					:op1 "Dec."
+					:op2 "3")
+				:location (x12 / country
+					:name (n1 / name
+						:op1 "Midwest"))))
+		:mod (x18 / ghost)
+		:location (x20 / around
+			:op1 (x21 / here))))
 
 # ::id 56
-# ::snt Robert Edwards, a Blytheville fireman who teaches seminars in earthquake survival, has become a hot property
+# ::snt Robert Edwards , a Blytheville fireman who teaches seminars in earthquake survival , has become a hot property
 (x15 / become-01
 	:ARG2 (x18 / property
 		:null_edge (x1 / newspaper
@@ -1089,7 +1081,7 @@
 		:mod (x17 / hot)))
 
 # ::id 57
-# ::snt For five years, most of Robert Edwards classes were lightly attended
+# ::snt For five years , most of Robert Edwards  classes were lightly attended
 (x12 / attend-01
 	:duration (x3 / temporal-quantity
 		:unit (y / year)
@@ -1102,7 +1094,7 @@
 	:manner (x11 / light))
 
 # ::id 58
-# ::snt Now Robert Edwards phone-answering machine says Robert Edwards is almost completely booked through October
+# ::snt Now Robert Edwards  phone-answering machine says Robert Edwards  is almost completely booked through October
 (x6 / say-01
 	:time (x1 / now)
 	:ARG0 (x2 / newspaper
@@ -1121,7 +1113,7 @@
 		:time (x14 / date-entity)))
 
 # ::id 59
-# ::snt For one recent class, Robert Edwards was in Osceola, Ark.
+# ::snt For one recent class , Robert Edwards  was in Osceola , Ark.
 (x6 / newspaper
 	:name (n / name
 		:op1 "Robert"
@@ -1136,7 +1128,7 @@
 				:op1 "Ark."))))
 
 # ::id 60
-# ::snt 9 a.m. on a rainy Saturday is 9 a.m. on a rainy Saturday, and 325 Osceolans, gripping legal pads and spiral notebooks, fill the high school auditorium for an all-day session on earthquake preparedness
+# ::snt 9 a.m. on a rainy Saturday  is 9 a.m. on a rainy Saturday , and 325 Osceolans , gripping legal pads and spiral notebooks , fill the high school auditorium for an all-day session on earthquake preparedness
 (x15 / and
 	:time (xap0 / date-entity
 		:null_edge (x1 / null_tag)
@@ -1163,7 +1155,7 @@
 					:ARG0 (x36 / earthquake))))))
 
 # ::id 61
-# ::snt With Osceolans booming voice, Mr. Edwards lays out a grim scenario : " One hundred and fifty thousand dead in Memphis instantly -- instantly
+# ::snt With Osceolans  booming voice , Mr. Edwards lays out a grim scenario : One hundred and fifty thousand dead in Memphis instantly instantly
 (x8 / lay-01
 	:ARG2 (x2 / have-org-role-91
 		:ARG1 (o / organization
@@ -1176,18 +1168,17 @@
 		:null_edge (x6 / null_tag))
 	:direction (x9 / out)
 	:ARG1 (x12 / scenario
-		:mod (x11 / grim))
-	:ARG1 (x20 / die-01
-		:op (d / dead)
-		:ARG1 (x17 / and
-			:quant 1
-			:op1 (x16 / hundreds)
-			:op2 (x19 / thousands))
-		:location (x22 / country
-			:name (n2 / name
-				:op1 "Memphis"))
-		:manner (x23 / instant))
-	:manner (x25 / instant))
+		:mod (x11 / grim)
+		:ARG1-of (x19 / die-01
+			:op (d / dead)
+			:ARG2 (x16 / and
+				:op1 (x15 / hundreds)
+				:op2 (x18 / thousands))
+			:location (x21 / country
+				:name (n2 / name
+					:op1 "Memphis"))
+			:manner (x22 / instant)
+			:ARG2 (x23 / instant))))
 
 # ::id 62
 # ::snt And all the federal emergency help is going to go there and St. Louis
@@ -1223,7 +1214,7 @@
 				:quant 2))))
 
 # ::id 64
-# ::snt You may be five to six months without power .
+# ::snt You may be five to six months without power
 (x2 / possible
 	:domain (x1 / you)
 	:domain (x9 / power
@@ -1233,7 +1224,7 @@
 			:quant 6)))
 
 # ::id 65
-# ::snt After the seminar, two elderly sisters, both widows, split on what to do
+# ::snt After the seminar , two elderly sisters , both widows , split on what to do
 (x12 / split-01
 	:time (x1 / after)
 	:ARG1 (x7 / sister
@@ -1243,7 +1234,7 @@
 			:mod (x9 / both))))
 
 # ::id 66
-# ::snt 
+# ::snt Fearing their home will be looted , Bess Mann , 86 years old , wants to ride their home  out
 (x15 / want-01
 	:ARG1 (x1 / fear-01
 		:ARG1 (x6 / loot
@@ -1264,7 +1255,7 @@
 		:direction (x20 / out)))
 
 # ::id 67
-# ::snt But her sister, Hallie Peterson, 83, wants to stay with two elderly sisters nephew in Mississippi
+# ::snt But her sister , Hallie Peterson , 83 , wants to stay with two elderly sisters  nephew in Mississippi
 (x1 / contrast-01
 	:ARG2 (x10 / want-01
 		:ARG0 (x3 / sister
@@ -1283,7 +1274,7 @@
 						:op1 "Mississippi"))))))
 
 # ::id 68
-# ::snt Scared that the big Memphis-Arkansas bridge that spans the Mississippi River will collapse in a quake, Hallie Peterson , 83's charting an alternate route two hours out of Hallie Peterson , 83 way
+# ::snt Scared that the big Memphis-Arkansas bridge that spans the Mississippi River will collapse in a quake , Hallie Peterson , 83  is charting an alternate route two hours out of Hallie Peterson , 83  way
 (x1 / scare-01
 	:ARG1 (x13 / collapse-01
 		:ARG1 (x6 / bridge
@@ -1296,23 +1287,22 @@
 		:ARG1 (x16 / quake
 			:name (x18 / name
 				:op1 "Hallie"
-				:op2 "Peterson"
-				:ARG0-of (x23 / chart-01
-					:ARG1 (x26 / route
-						:mod (x25 / alternate))
-					:ARG1 (x28 / temporal-quantity
-						:unit (h / hour)
-						:quant 2
-						:mod (x32 / person
-							:name (n / name
-								:op1 "Peterson")
-							:null_edge (x31 / person
-								:name (n1 / name
-									:op1 "Hallie"))))))
-			:quant 83)))
+				:op2 "Peterson")
+			:ARG0-of (x23 / chart-01
+				:quant 83
+				:ARG1 (x26 / route
+					:mod (x25 / alternate))
+				:ARG1 (x28 / temporal-quantity
+					:unit (h / hour)
+					:quant 2)
+				:name (x31 / name
+					:op1 "Hallie"
+					:op2 "Peterson"
+					:ARG0-of (x35 / way
+						:quant 83))))))
 
 # ::id 69
-# ::snt School districts in Earle and Wilson, Ark., have announced closings around Dec. 3
+# ::snt School districts in Earle and Wilson , Ark. , have announced closings around Dec. 3
 (x11 / announce-01
 	:ARG0 (x2 / district
 		:mod (x1 / school)
@@ -1331,7 +1321,7 @@
 		:op1 (x14 / date-entity)))
 
 # ::id 70
-# ::snt Some schools practice earthquake drills, while others sponsor cake sales to buy survival kits for classrooms, with items like blankets, flashlights and radios
+# ::snt Some schools practice earthquake drills , while others sponsor cake sales to buy survival kits for classrooms , with items like blankets , flashlights and radios
 (x3 / practice
 	:ARG0 (x2 / school
 		:quant (x1 / some))
@@ -1350,7 +1340,7 @@
 					:op2 (x26 / radio))))))
 
 # ::id 71
-# ::snt Michael Prince, a child psychologist in Jonesboro, says Michael Prince knows of 10 to 15 children, age four to nine, so unnerved that 10 to 15 children 've reverted to bed-wetting or extreme anxiety about being separated from 10 to 15 children parents
+# ::snt Michael Prince , a child psychologist in Jonesboro , says Michael Prince  knows of 10 to 15 children , age four to nine , so unnerved that 10 to 15 children  have reverted to bed-wetting or extreme anxiety about being separated from 10 to 15 children  parents
 (x10 / say-01
 	:ARG0 (x1 / newspaper
 		:name (n / name
@@ -1387,7 +1377,7 @@
 								:mod (x46 / child)))))))))
 
 # ::id 72
-# ::snt Trying to calm the fear, the National Earthquake Prediction Evaluation Council, a panel of academic and government seismic experts, will review the Browning claim at a meeting in a few weeks
+# ::snt Trying to calm the fear , the National Earthquake Prediction Evaluation Council , a panel of academic and government seismic experts , will review the Browning claim at a meeting in a few weeks
 (x24 / review-01
 	:time (x1 / try-01
 		:ARG1 (x3 / calm
@@ -1414,7 +1404,7 @@
 		:op1 (x34 / week)))
 
 # ::id 73
-# ::snt In 11 years of studying prediction methods, the panel has found no bona fide approach
+# ::snt In 11 years of studying prediction methods , the panel has found no bona fide approach
 (x12 / find-02
 	:duration (x3 / temporal-quantity
 		:unit (y / year)
@@ -1427,7 +1417,7 @@
 		:polarity -))
 
 # ::id 74
-# ::snt The group usually ignores claims that are n't scientifically documented (like the one by the California man who said his goldfish helped him predict quakes )
+# ::snt The group usually ignores claims that are not scientifically documented (like the one by the California man who said his goldfish helped him predict quakes )
 (x4 / ignore-01
 	:ARG0 (x2 / group)
 	:mod (x3 / usual)
@@ -1442,50 +1432,50 @@
 							:ARG1 (x26 / quake))))))))
 
 # ::id 75
-# ::snt " But this one, " says Randall Updike, the executive secretary, " has created such chaos in the mid-continent region that academic and government seismic experts felt academic and government seismic experts had to give academic and government seismic experts advice .
-(x / xconcept
-	:x (x2 / contrast-01
-		:ARG2 (x4 / one
-			:mod (x3 / this))
-		:ARG2 (x17 / create-01
-			:null_edge (x7 / say-01
-				:name (x8 / name
+# ::snt But this one , says Randall Updike , the executive secretary , has created such chaos in the mid-continent region that academic and government seismic experts  felt academic and government seismic experts  had to give academic and government seismic experts  advice
+(x1 / contrast-01
+	:ARG2 (x5 / say-01
+		:ARG0 (x3 / one
+			:mod (x2 / this))
+		:ARG1 (x14 / create-01
+			:ARG0 (x6 / newspaper
+				:name (n / name
 					:op1 "Randall"
-					:op2 "Updike"
-					:ARG0-of (x13 / have-org-role-91
-						:ARG2 (s / secretary)
-						:mod (x12 / executive))))
-			:ARG1 (x19 / chaos
-				:mod (x18 / such))))
-	:x (x30 / feel-01
-		:time (x22 / mid-continent)
-		:ARG0 (x29 / person
-			:ARG1-of (e / expert-41)
-			:ARG2 (x26 / and
-				:op1 (x25 / academia)
-				:op2 (x27 / government-organization
-					:ARG0-of (g / govern-01)
-					:mod (x28 / seismic))))
-		:ARG1 (x36 / have-03
-			:ARG0 (x35 / person
-				:ARG1-of (e1 / expert-41)
-				:ARG2 (x32 / and
-					:op1 (x31 / academia)
-					:op2 (x33 / government-organization
-						:ARG0-of (g1 / govern-01)
-						:mod (x34 / seismic))
-					:op2 (x38 / give-01
-						:ARG2 (x43 / person
-							:ARG1-of (e2 / expert-41)
-							:ARG2 (x40 / and
-								:op1 (x39 / academia)
-								:op2 (x41 / government-organization
-									:ARG0-of (g2 / govern-01)
-									:mod (x42 / seismic))))
-						:ARG1 (x44 / advise-01)))))))
+					:op2 "Updike")
+				:ARG0-of (x11 / have-org-role-91
+					:ARG2 (s / secretary)
+					:mod (x10 / executive)))
+			:ARG1 (x16 / chaos
+				:mod (x15 / such))
+			:ARG1-of (x27 / feel-01
+				:time (x19 / mid-continent)
+				:ARG0 (x26 / person
+					:ARG1-of (e / expert-41)
+					:ARG2 (x23 / and
+						:op1 (x22 / academia)
+						:op2 (x24 / government-organization
+							:ARG0-of (g / govern-01)
+							:mod (x25 / seismic))))
+				:ARG1 (x33 / have-03
+					:ARG0 (x32 / person
+						:ARG1-of (e1 / expert-41)
+						:ARG2 (x29 / and
+							:op1 (x28 / academia)
+							:op2 (x30 / government-organization
+								:ARG0-of (g1 / govern-01)
+								:mod (x31 / seismic))
+							:op2 (x35 / give-01
+								:ARG2 (x40 / person
+									:ARG1-of (e2 / expert-41)
+									:ARG2 (x37 / and
+										:op1 (x36 / academia)
+										:op2 (x38 / government-organization
+											:ARG0-of (g2 / govern-01)
+											:mod (x39 / seismic))))
+								:ARG1 (x41 / advise-01)))))))))
 
 # ::id 76
-# ::snt Mr. Browning says Iben Browning is tentatively booked to give a talk in Minneapolis on Dec. 3 and Iben Browning does n't plan to go there via St. Louis
+# ::snt Mr. Browning says Iben Browning  is tentatively booked to give a talk in Minneapolis on Dec. 3 and Iben Browning  does not plan to go there via St. Louis
 (x3 / say-01
 	:ARG0 (x2 / person
 		:name (n / name
@@ -1519,23 +1509,23 @@
 							:op1 "St.")))))))
 
 # ::id 77
-# ::snt But Iben Browning adds : " Iben Browning highly recommend against panic
+# ::snt But Iben Browning  adds : Iben Browning  highly recommend against panic
 (x1 / contrast-01
 	:ARG2 (x4 / add-02
 		:ARG0 (x2 / newspaper
 			:name (n / name
 				:op1 "Iben"
 				:op2 "Browning"))
-		:name (x7 / name
-			:op1 "Iben"
-			:op2 "Browning")
-		:null_edge (x10 / recommend-01
-			:ARG0 x7
-			:mod (x9 / high)
-			:ARG1 (x12 / panic-01))))
+		:null_edge (x9 / recommend-01
+			:ARG0 (x6 / newspaper
+				:name (n1 / name
+					:op1 "Iben"
+					:op2 "Browning"))
+			:mod (x8 / high)
+			:ARG1 (x11 / panic-01))))
 
 # ::id 78
-# ::snt That will kill more people than earthquakes .
+# ::snt That will kill more people than earthquakes
 (x3 / kill-01
 	:ARG0 (x1 / that)
 	:ARG1 (x4 / more

@@ -1,5 +1,5 @@
 # ::id 1
-# ::snt The Agriculture Department says The Agriculture Department has been on top of the drought since March 1, monitoring the situation, setting up hotlines to handle worried callers and issuing enough statements to paper a thousand bird cages, easy
+# ::snt The Agriculture Department says The Agriculture Department  has been on top of the drought since March 1 , monitoring the situation , setting up hotlines to handle worried callers and issuing enough statements to paper a thousand bird cages , easy
 (x4 / say-01
 	:ARG0 (x3 / department
 		:null_edge (x2 / null_tag))
@@ -26,56 +26,56 @@
 		:mod (x41 / easy)))
 
 # ::id 2
-# ::snt One of the latest informational gimmicks is a " USDA Backgrounder " listing the department's " drought-related actions " since the blotter-like furnaces began roaring across most of the nation
-(x13 / list-01
-	:ARG1 (x6 / gimmick
-		:time (x4 / late
-			:degree (m / most))
-		:mod (x5 / informational))
-	:ARG0 (x10 / organization
-		:name (n / name
-			:op1 "USDA"))
-	:ARG1 (x11 / backgrounder)
-	:manner (x18 / drought-related
-		:ARG1 (x15 / department)
-		:time (x21 / since
-			:op1 (x25 / begin-01
-				:ARG1 (x24 / furnace
-					:mod (x23 / blotter-like))
-				:ARG1 (x26 / roar
-					:location (x27 / across
-						:op1 (x31 / nation
-							:quant (x28 / most))))))))
+# ::snt One of the latest informational gimmicks is a USDA Backgrounder listing the department's drought-related actions since the blotter-like furnaces began roaring across most of the nation
+(x9 / government-organization
+	:name (n / name
+		:op1 "USDA"
+		:op2 "Backgrounder")
+	:ARG0-of (x11 / list-01
+		:ARG1 (x16 / action
+			:topic (x6 / gimmick
+				:time (x4 / late
+					:degree (m / most))
+				:mod (x5 / informational))
+			:poss (x13 / department)
+			:mod (x15 / drought-related)
+			:null_edge (x17 / since
+				:op1 (x21 / begin-01
+					:ARG1 (x20 / furnace
+						:mod (x19 / blotter-like))
+					:ARG1 (x22 / roar
+						:location (x23 / across
+							:op1 (x27 / nation
+								:quant (x24 / most)))))))))
 
 # ::id 3
-# ::snt " It was my idea, my memory is n't what my memory used to be, " quipped Sally Michael, the department's deputy director of information
-(x19 / quip
-	:ARG1 (x5 / idea
-		:domain (x8 / memory)
-		:ARG1-of (x14 / use-01
-			:ARG0 (x13 / memory)))
-	:ARG0 (x20 / newspaper
-		:name (n / name
-			:op1 "Sally"
-			:op2 "Michael")
-		:ARG0-of (x27 / have-org-role-91
-			:ARG2 (d / director)
-			:ARG1 (x24 / department)
-			:mod (x26 / deputy)
-			:ARG1 (x29 / information))))
+# ::snt It was my idea , my memory is not what my memory  used to be , quipped Sally Michael , the department's deputy director of information
+(x4 / idea
+	:ARG1 (x7 / memory
+		:ARG1-of (x17 / quip
+			:ARG1 (x13 / use-01
+				:ARG0 (x12 / memory))
+			:name (x18 / name
+				:op1 "Sally"
+				:op2 "Michael"
+				:ARG0-of (x25 / have-org-role-91
+					:ARG2 (d / director)
+					:ARG1 (x22 / department)
+					:mod (x24 / deputy)
+					:ARG1 (x27 / information))))))
 
 # ::id 4
-# ::snt " This helps Sally Michael keep track of what hotlines 've done .
-(x3 / help-01
-	:ARG0 (x2 / this)
-	:ARG1 (x6 / keep-10
-		:ARG0 (x4 / newspaper
+# ::snt This helps Sally Michael  keep track of what hotlines  have done
+(x2 / help-01
+	:ARG0 (x1 / this)
+	:ARG1 (x5 / keep-10
+		:ARG0 (x3 / newspaper
 			:name (n / name
 				:op1 "Sally"
 				:op2 "Michael"))
-		:ARG2 (x7 / track
-			:ARG1 (x12 / do-02
-				:ARG1 (x10 / hotline)))))
+		:ARG2 (x6 / track
+			:ARG1 (x11 / do-02
+				:ARG1 (x9 / hotline)))))
 
 # ::id 5
 # ::snt Michael agreed during questioning by a reporter that the action list is lean on actual dollars going into the drought aid
@@ -130,25 +130,25 @@
 		:quant 2))
 
 # ::id 9
-# ::snt The first lists 22 separate drought " actions " by USDA or its people, beginning more than four months ago
-(x3 / list-01
-	:ARG1 (x6 / drought
+# ::snt The first lists 22 separate drought actions by USDA or its people , beginning more than four months ago
+(x10 / or
+	:op1 (x3 / list-01
+		:ARG1-of (x14 / begin-01
+			:time (x18 / temporal-quantity
+				:unit (m / month)
+				:quant (x15 / more-than))))
+	:mod (x5 / separate
 		:quant (x4 / person
-			:op 22)
-		:mod (x5 / separate)
-		:ARG0 (x12 / or
-			:op1 (x11 / organization
-				:name (n / name
-					:op1 "USDA"))))
-	:ARG1-of (x16 / begin-01
-		:time (x20 / temporal-quantity
-			:unit (m / month)
-			:quant (x17 / more-than))))
+			:op 22))
+	:op1 (x6 / drought)
+	:op1 (x9 / organization
+		:name (n / name
+			:op1 "USDA")))
 
 # ::id 10
-# ::snt First item : " March 1
+# ::snt First item : March 1
 (x2 / item
-	:name (x5 / name
+	:name (x4 / name
 		:op1 "March"
 		:op2 "1"))
 
@@ -181,7 +181,7 @@
 				:mod (x16 / deputy)))))
 
 # ::id 12
-# ::snt Members _ agency administrators and key USDA personnel _ will constantly monitor the potential drought situation .
+# ::snt Members _ agency administrators and key USDA personnel _ will constantly monitor the potential drought situation
 (x12 / monitor-01
 	:ARG1 (x2 / _
 		:ARG0-of (x1 / member)
@@ -200,7 +200,7 @@
 		:mod (x15 / drought)))
 
 # ::id 13
-# ::snt The blurb also gave the number of the USDA press release that formally announced the task force creation, but not the task force creation date
+# ::snt The blurb also gave the number of the USDA press release that formally announced the task force creation , but not the task force creation  date
 (x4 / give-01
 	:ARG0 (x2 / blurb)
 	:mod (x3 / also)
@@ -222,7 +222,7 @@
 		:ARG1 (x10 / press)))
 
 # ::id 14
-# ::snt In reality, though the drought panel was set up by Lyng on March 1, the press release announcing the action was not issued until April 22
+# ::snt In reality , though the drought panel was set up by Lyng on March 1 , the press release announcing the action was not issued until April 22
 (x25 / issue-01
 	:condition (x9 / set-08
 		:ARG1 (x7 / panel
@@ -239,7 +239,7 @@
 	:time (x27 / date-entity))
 
 # ::id 15
-# ::snt 
+# ::snt Department officials questioned at the time said they attached no significance to keeping the task force secret for seven weeks before announcing it
 (x3 / question-01
 	:ARG1 (x7 / say-01
 		:ARG1 (x9 / attach-01
@@ -294,7 +294,7 @@
 		:op2 (x14 / grazing)))
 
 # ::id 18
-# ::snt At this time, haying and grazing do not apply to Conservation Reserve Program (CRP )acreage
+# ::snt At this time , haying and grazing do not apply to Conservation Reserve Program (CRP )acreage
 (x10 / apply-02
 	:time (x3 / time
 		:mod (x2 / this))
@@ -361,7 +361,7 @@
 		:op2 "14"))
 
 # ::id 22
-# ::snt Lyng briefs Senate and House Agriculture Committees on the drought and offers to cooperate with the Congressional Relief Task Force announced by Sen. Patrich Leahy, D-Vt., and Rep. Kika de la Garza, D-Texas
+# ::snt Lyng briefs Senate and House Agriculture Committees on the drought and offers to cooperate with the Congressional Relief Task Force announced by Sen. Patrich Leahy , D-Vt. , and Rep. Kika de la Garza , D-Texas
 (x11 / and
 	:op1 (x2 / briefs
 		:ARG0 (x1 / person
@@ -387,14 +387,14 @@
 					:op3 "Task"
 					:op4 "Force")
 				:ARG1-of (x21 / announce-01
-					:ARG0 (x29 / and
+					:ARG0 (x30 / and
 						:op1 (x24 / name
 							:op1 "Patrich"
 							:op2 "Leahy"
 							:ARG0-of (x23 / sen.))
 						:op2 (x27 / country
 							:name (n4 / name
-								:op1 "D-Vt."))))))))
+								:op1 "D-Vt"))))))))
 
 # ::id 23
 # ::snt _ June 15
@@ -404,7 +404,7 @@
 		:op2 "15"))
 
 # ::id 24
-# ::snt The White House announces a new Interagency Drought Policy Committee made up of USDA, Interior, the Office of the Vice President and several other agencies
+# ::snt The White House announces a new Interagency Drought Policy Committee made up of USDA , Interior , the Office of the Vice President and several other agencies
 (x4 / announce-01
 	:ARG0 (x3 / government-organization
 		:name (n / name
@@ -433,7 +433,7 @@
 					:mod (x26 / other))))))
 
 # ::id 25
-# ::snt Departments of State and Transportation, and the Council of Economic Advisers were subsequently added
+# ::snt Departments of State and Transportation , and the Council of Economic Advisers were subsequently added
 (x15 / add-02
 	:ARG1 (x7 / and
 		:op1 (x1 / department
@@ -478,7 +478,7 @@
 				:null_edge (x20 / reserve)))))
 
 # ::id 28
-# ::snt Haying will be allowed for 30 days if farmers give up part of farmers in designated drought counties CRP payments
+# ::snt Haying will be allowed for 30 days if farmers give up part of farmers in designated drought counties  CRP payments
 (x4 / allow-01
 	:ARG1 (x1 / haying)
 	:duration (x7 / temporal-quantity
@@ -588,12 +588,12 @@
 		:op2 "22"))
 
 # ::id 37
-# ::snt Lyng meets with the Congressional Drought Relief Task Force, which issues a " statement of general agreements " calling on the secretary to implement various forms of disaster assistance
+# ::snt Lyng meets with the Congressional Drought Relief Task Force , which issues a statement of general agreements calling on the secretary to implement various forms of disaster assistance
 (x2 / meet-03
 	:ARG0 (x1 / person
 		:name (n / name
 			:op1 "Lyng"))
-	:ARG1 (x15 / state-01
+	:ARG1 (x14 / state-01
 		:ARG0 (x5 / government-organization
 			:name (n1 / name
 				:op1 "Congressional"
@@ -601,16 +601,16 @@
 				:op3 "Relief"
 				:op4 "Task"
 				:op5 "Force"))
-		:ARG1 (x18 / agree-01
-			:mod (x17 / general)
-			:ARG1 (x20 / call-03
-				:purpose (x25 / implement-01
-					:ARG0 (x23 / have-org-role-91
-						:ARG2 (s / secretary))
-					:ARG1 (x27 / form
-						:mod (x26 / various)
-						:domain (x30 / assist-01
-							:ARG1 (x29 / disaster))))))))
+		:ARG1 (x17 / agree-01
+			:mod (x16 / general))
+		:ARG1 (x18 / call-03
+			:ARG1 (x23 / implement-01
+				:ARG0 (x21 / have-org-role-91
+					:ARG2 (s / secretary))
+				:ARG1 (x25 / form
+					:mod (x24 / various)
+					:domain (x28 / assist-01
+						:ARG1 (x27 / disaster)))))))
 
 # ::id 38
 # ::snt _ June 23
@@ -620,7 +620,7 @@
 		:op2 "23"))
 
 # ::id 39
-# ::snt Lyng and other USDA officials meet in Chicago with the National Governors ' Association Committee on Agriculture and Rural Development
+# ::snt Lyng and other USDA officials meet in Chicago with the National GovernorsAssociation Committee on Agriculture and Rural Development
 (x6 / meet-03
 	:ARG0 (x2 / and
 		:op1 (x1 / person
@@ -638,13 +638,11 @@
 	:ARG1 (x11 / government-organization
 		:name (n1 / name
 			:op1 "National"
-			:op2 "Governors"
-			:op3 "'"
-			:op4 "Association"
-			:op5 "Committee"))
-	:ARG0 (x18 / and
-		:null_edge (x17 / null_tag)
-		:op2 (x19 / rural)))
+			:op2 "GovernorsAssociation"
+			:op3 "Committee"))
+	:ARG0 (x16 / and
+		:null_edge (x15 / null_tag)
+		:op2 (x17 / rural)))
 
 # ::id 40
 # ::snt _ June 23
@@ -654,7 +652,7 @@
 		:op2 "23"))
 
 # ::id 41
-# ::snt While in Chicago, Lyng announces a toll-free hotline to answer questions about federal services available in drought areas
+# ::snt While in Chicago , Lyng announces a toll-free hotline to answer questions about federal services available in drought areas
 (x6 / announce-01
 	:location (x3 / country
 		:name (n / name
@@ -683,7 +681,7 @@
 		:op2 "23"))
 
 # ::id 43
-# ::snt Returning to Washington, Lyng briefs the president and vice president on the drought and says that there is agreement among congressmen, senators, farm groups and governors that agreement among congressmen , senators , farm groups and governors is too early for emergency relief measures
+# ::snt Returning to Washington , Lyng briefs the president and vice president on the drought and says that there is agreement among congressmen , senators , farm groups and governors that agreement among congressmen , senators , farm groups and governors  is too early for emergency relief measures
 (x15 / and
 	:op1 (x6 / briefs
 		:ARG1 (x9 / and
@@ -736,7 +734,7 @@
 		:op2 "23"))
 
 # ::id 45
-# ::snt After the White House meeting, the Interagency Drought Policy Committee meets for the second time at USDA
+# ::snt After the White House meeting , the Interagency Drought Policy Committee meets for the second time at USDA
 (x12 / meet-03
 	:time (x1 / after
 		:op1 (x5 / meet-03
@@ -763,7 +761,7 @@
 		:op2 "24"))
 
 # ::id 47
-# ::snt In its first day of operation, USDA's hotline logs more than 600 calls in 10 hours
+# ::snt In its first day of operation , USDA's hotline logs more than 600 calls in 10 hours
 (x11 / log
 	:duration (x4 / temporal-quantity
 		:unit (d / day)
@@ -780,7 +778,7 @@
 		:quant 10))
 
 # ::id 48
-# ::snt Lyng orders another eight lines installed, raising total to 18 lines
+# ::snt 
 (x6 / install-01
 	:ARG0 (x2 / order-01
 		:null_edge (x1 / null_tag))
@@ -793,7 +791,7 @@
 			:quant 18)))
 
 # ::id 49
-# ::snt Greatest number of calls the first day are from Iowa, Wisconsin and North Dakota
+# ::snt Greatest number of calls the first day are from Iowa , Wisconsin and North Dakota
 (x4 / call-01
 	:ARG2 (x13 / and
 		:op1 (x10 / state
@@ -822,7 +820,7 @@
 		:op2 "27"))
 
 # ::id 51
-# ::snt USDA announces that special crop surveys in several states and other steps will be taken to update the department's July 12 crop report and supply-and-demand projections for fall harvets, including corn and soybeans
+# ::snt USDA announces that special crop surveys in several states and other steps will be taken to update the department's July 12 crop report and supply-and-demand projections for fall harvets , including corn and soybeans
 (x2 / announce-01
 	:ARG0 (x1 / organization
 		:name (n / name
@@ -860,7 +858,7 @@
 		:op2 "27"))
 
 # ::id 53
-# ::snt An additional $ 50 million has been set aside to buy bulk ground beef for donation to schools lunch and other feeding programs, to help cattle producers hurt by drought
+# ::snt An additional $ 50 million has been set aside to buy bulk ground beef for donation to schools lunch and other feeding programs , to help cattle producers hurt by drought
 (x8 / set-03
 	:ARG1 (x3 / country
 		:name (n / name
@@ -892,7 +890,7 @@
 		:op2 "27"))
 
 # ::id 55
-# ::snt Lyng authorizes additional emergency provisions in drought counties, including permission for selling hay to anyone, and the harvest of ACR, CUA and CRP land as green chop for immediate feeding to livestock or silage
+# ::snt Lyng authorizes additional emergency provisions in drought counties , including permission for selling hay to anyone , and the harvest of ACR , CUA and CRP land as green chop for immediate feeding to livestock or silage
 (x2 / authorize-01
 	:ARG0 (x1 / person
 		:name (n / name
@@ -951,7 +949,7 @@
 		:op2 "28"))
 
 # ::id 59
-# ::snt Federal and state officials set up a national hay information network, or HayNet, to assist in locating forage supplies
+# ::snt Federal and state officials set up a national hay information network , or HayNet , to assist in locating forage supplies
 (x5 / set-03
 	:ARG1 (x13 / or
 		:op1 (x11 / network

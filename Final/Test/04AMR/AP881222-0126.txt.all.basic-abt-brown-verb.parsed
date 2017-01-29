@@ -31,7 +31,7 @@
 		:manner (x9 / safe)))
 
 # ::id 3
-# ::snt The Pentagon was the second crash of a Thunderbolt jet in Europe in two weeks
+# ::snt The Pentagon  was the second crash of a Thunderbolt jet in Europe in two weeks
 (x6 / crash-01
 	:ARG0 (x2 / government-organization
 		:name (n / name
@@ -46,7 +46,7 @@
 		:quant 2))
 
 # ::id 4
-# ::snt Another A-10 crashed Dec. 8 in Tracy, Ariz.
+# ::snt Another A-10 crashed Dec. 8 in Tracy , Ariz.
 (x3 / crash-01
 	:ARG0 (x2 / newspaper
 		:name (n / name
@@ -63,7 +63,7 @@
 				:op1 "Ariz."))))
 
 # ::id 5
-# ::snt Dan Howard, the Pentagon's chief spokesman, originally identified the plane as an A-10 aircraft from the 81st Tactical Fighter Wing at RAF Bentwaters, England
+# ::snt Dan Howard , the Pentagon's chief spokesman , originally identified the plane as an A-10 aircraft from the 81st Tactical Fighter Wing at RAF Bentwaters , England
 (x11 / identify-01
 	:ARG0 (x2 / person
 		:name (n / name
@@ -99,7 +99,7 @@
 						:op1 "England"))))))
 
 # ::id 6
-# ::snt The Air Force later corrected that statement, saying the A-10 was assigned to the 10th Tactical Fighter Wing at RAF Alconbury
+# ::snt The Air Force later corrected that statement , saying the A-10 was assigned to the 10th Tactical Fighter Wing at RAF Alconbury
 (x5 / correct-01
 	:ARG0 (x3 / force
 		:null_edge (x2 / null_tag))
@@ -122,73 +122,73 @@
 							:op2 "Alconbury")))))))
 
 # ::id 7
-# ::snt Howard said the plane " crashed at 9:53 a.m. EST about four miles south of St. Ives, or about 25 miles north of Cambridge .
+# ::snt Howard said the plane crashed at 9:53 a.m. EST about four miles south of St. Ives , or about 25 miles north of Cambridge
 (x2 / say-01
 	:ARG0 (x1 / person
 		:name (n / name
 			:op1 "Howard"))
-	:ARG1 (x6 / crash-01
+	:ARG1 (x5 / crash-01
 		:ARG1 (x4 / plane)
-		:time (x10 / date-entity
-			:null_edge (x8 / include-91))
-		:ARG2 (x11 / about
-			:op1 (x13 / distance-quantity
+		:time (x9 / date-entity
+			:null_edge (x7 / include-91))
+		:ARG2 (x10 / about
+			:op1 (x12 / distance-quantity
 				:unit (m / mile)
 				:quant 4
-				:quant (x22 / distance-quantity
+				:quant (x21 / distance-quantity
 					:unit (m1 / mile)
-					:null_edge (x20 / about
+					:null_edge (x19 / about
 						:null_edge 25)
-					:null_edge (x23 / north
-						:null_edge (x25 / country
+					:null_edge (x22 / north
+						:null_edge (x24 / country
 							:name (n1 / name
 								:op1 "Cambridge")))
 					:frequency (xap0 / relative-position
-						:direction (x14 / south)
-						:ARG1 (x17 / country
+						:direction (x13 / south)
+						:ARG1 (x16 / country
 							:name (n2 / name
 								:op1 "Ives")
-							:null_edge (x16 / country
+							:null_edge (x15 / country
 								:name (n3 / name
 									:op1 "St.")))))))))
 
 # ::id 8
-# ::snt " The pilot ejected and the pilot chute was sighted but we do n't know the pilot status, " Howard said
-(x22 / say-01
-	:ARG1 (x5 / and
-		:op1 (x4 / eject-01
-			:ARG0 (x3 / person
+# ::snt The pilot ejected and the pilot  chute was sighted but we do not know the pilot  status , Howard said
+(x20 / say-01
+	:ARG1 (x4 / and
+		:op1 (x3 / eject-01
+			:ARG0 (x2 / person
 				:ARG0-of (p / pilot-01)))
-		:op2 (x10 / sight-01
-			:ARG1 x3
-			:ARG1 (x8 / chute
-				:ARG1-of (x7 / pilot-01)))
-		:op2 (x15 / know-01
-			:ARG0 x3
-			:ARG0 (x12 / we)
-			:ARG1 (x18 / status
-				:mod (x17 / pilot-01))))
-	:ARG1 (x11 / contrast-01)
-	:ARG0 (x21 / person
+		:op2 (x9 / sight-01
+			:ARG1 x2
+			:ARG1 (x7 / chute
+				:ARG1-of (x6 / pilot-01)))
+		:op2 (x14 / know-01
+			:ARG0 x2
+			:ARG0 (x11 / we)
+			:ARG1 (x17 / status
+				:mod (x16 / pilot-01))))
+	:ARG1 (x10 / contrast-01)
+	:ARG0 (x19 / person
 		:name (n / name
 			:op1 "Howard")))
 
 # ::id 9
-# ::snt The aircraft was carrying " dummy bombs and practice 33mm ammunition, " the spokesman said
-(x16 / say-01
+# ::snt The aircraft was carrying dummy bombs and practice 33mm ammunition , the spokesman said
+(x14 / say-01
 	:ARG1 (x4 / carry-01
 		:ARG1 (x2 / aircraft)
-		:ARG1 (x8 / and
-			:op1 (x7 / bomb
-				:mod (x6 / dummy))
-			:op2 (x11 / ammunition))
-		:ARG1 (x9 / practice-01))
+		:ARG1 (x7 / and
+			:op1 (x6 / bomb
+				:mod (x5 / dummy))
+			:op2 (x10 / ammunition))
+		:ARG1 (x8 / practice-01))
 	:ARG0 (xap0 / person
-		:ARG0-of (x15 / have-org-role-91
+		:ARG0-of (x13 / have-org-role-91
 			:ARG2 (s / spokesman))))
 
 # ::id 10
-# ::snt Dan Howard said Dan Howard had no information about damage on the ground
+# ::snt Dan Howard  said Dan Howard  had no information about damage on the ground
 (x3 / say-01
 	:ARG0 (x2 / person
 		:name (n / name
@@ -205,7 +205,7 @@
 			:topic (x13 / ground))))
 
 # ::id 11
-# ::snt The A-10, a twin-engine jet designed to support troops by killing enemy tanks and other ground targets, is an older model plane designed to be highly maneuverable at low speeds and low altitude and to carry a lot of bombs and ammunition
+# ::snt The A-10 , a twin-engine jet designed to support troops by killing enemy tanks and other ground targets , is an older model plane designed to be highly maneuverable at low speeds and low altitude and to carry a lot of bombs and ammunition
 (x6 / jet
 	:domain (x2 / a-10)
 	:mod (x5 / twin-engine)
@@ -238,7 +238,7 @@
 							:op2 (x44 / ammunition))))))))
 
 # ::id 12
-# ::snt The Thunderbolt II is also one of the safest planes, statistically, in the Air Force inventory
+# ::snt The Thunderbolt II is also one of the safest planes , statistically , in the Air Force inventory
 (x18 / inventory-00
 	:null_edge (x2 / thunderbolt
 		:null_edge (x10 / plane
@@ -250,7 +250,7 @@
 	:null_edge (x17 / null_tag))
 
 # ::id 13
-# ::snt Nonetheless, today's crash comes just two weeks to the day after another A-10 slammed into the West German city of Remscheid, killing five and injuring dozens
+# ::snt Nonetheless , today's crash comes just two weeks to the day after another A-10 slammed into the West German city of Remscheid , killing five and injuring dozens
 (x6 / come-01
 	:ARG1 (x5 / crash-01
 		:time (x3 / today))
@@ -280,7 +280,7 @@
 				:op2 (x28 / injure-01)))))
 
 # ::id 14
-# ::snt That crash prompted the United States and United States NATO allies to agree to suspend all A-10 flights over West Germany until Jan. 2
+# ::snt That crash prompted the United States and United States  NATO allies to agree to suspend all A-10 flights over West Germany until Jan. 2
 (x3 / prompt-02
 	:ARG0 (x2 / crash-01
 		:mod (x1 / that))
@@ -313,7 +313,7 @@
 				:op1 (x23 / date-entity)))))
 
 # ::id 15
-# ::snt 
+# ::snt The suspension was ordered as German political parties and public interest groups increased public interest groups  demands for an end to low-level flight training in Germany
 (x4 / order-01
 	:ARG1 (x2 / suspend-01)
 	:time (x13 / increase-01
@@ -339,7 +339,7 @@
 							:op1 "Germany")))))))
 
 # ::id 16
-# ::snt On the same day as the crash in Remscheid, an A-10 crashed near the heart of the Tohono O'Odham Indian Reservation, about 80 miles west of Tuscon, but the pilot ejected safely
+# ::snt On the same day as the crash in Remscheid , an A-10 crashed near the heart of the Tohono O'Odham Indian Reservation , about 80 miles west of Tuscon , but the pilot ejected safely
 (x31 / contrast-01
 	:ARG1 (x13 / crash-01
 		:time (x4 / day
@@ -377,7 +377,7 @@
 		:manner (x35 / safe)))
 
 # ::id 17
-# ::snt Howard refused today to discuss the possible cause of the crash in England, saying the Pentagon was still awaiting initial reports from the scene and confirmation that the pilot survived
+# ::snt Howard refused today to discuss the possible cause of the crash in England , saying the Pentagon was still awaiting initial reports from the scene and confirmation that the pilot survived
 (x2 / refuse-01
 	:ARG0 (x1 / person
 		:name (n / name
@@ -420,7 +420,7 @@
 			:year 1977)))
 
 # ::id 19
-# ::snt The plane is no longer in production, but the Air Force has more than 700 of them in U.S. Air Force inventory
+# ::snt The plane is no longer in production , but the Air Force has more than 700 of them in U.S. Air Force  inventory
 (x9 / contrast-01
 	:ARG2 (x2 / plane
 		:ARG0-of (x7 / produce-01)
@@ -433,7 +433,7 @@
 			:null_edge (x22 / null_tag))))
 
 # ::id 20
-# ::snt Statistically, the A-10 over time has been the safest fighter or attack plane currently in the inventory
+# ::snt Statistically , the A-10 over time has been the safest fighter or attack plane currently in the inventory
 (x12 / or
 	:op2 (x10 / safest)
 	:op1 (x11 / fight-01
@@ -448,7 +448,7 @@
 		:ARG1 (x13 / attack-01)))
 
 # ::id 21
-# ::snt The aircraft has chalked up a major accident rate of less than 4 Class A mishaps per 100,000 flying hours over an A-10 aircraft lifetime _ which now consists of more than 1.75 million flight hours
+# ::snt The aircraft has chalked up a major accident rate of less than 4 Class A mishaps per 100,000 flying hours over an A-10 aircraft  lifetime _ which now consists of more than 1.75 million flight hours
 (x4 / chalk
 	:ARG1 (x2 / aircraft)
 	:ARG1 (x9 / rate
@@ -493,35 +493,34 @@
 			:ARG2 (x21 / aircraft))))
 
 # ::id 23
-# ::snt The Air Force describes the A-10 as " a simple, effective and survivable twin-engine jet aircraft that can be used against all ground targets ... The aircraft has excellent maneuverability at low air speeds and altitude and highly accurate weapons delivery .
+# ::snt The Air Force describes the A-10 as a simple , effective and survivable twin-engine jet aircraft that can be used against all ground targets ... The aircraft has excellent maneuverability at low air speeds and altitude and highly accurate weapons delivery
 (x4 / describe-01
 	:ARG0 (x3 / force
 		:null_edge (x2 / null_tag))
 	:ARG1 (x6 / a-10)
-	:ARG2 (x13 / and
-		:op1 (x10 / simple)
-		:op2 (x12 / effective)
-		:op2 (x14 / survivable)
-		:op1 (x17 / aircraft
-			:mod (x16 / jet
-				:mod (x15 / twin-engine))
-			:ARG1-of (x21 / use-01
-				:mod (x19 / possible)
-				:ARG2 (x25 / target
-					:quant (x23 / all)
-					:mod (x24 / ground)))))
-	:ARG2 (x36 / and
-		:op1 (x29 / have-03
-			:ARG1 (x31 / maneuverability
-				:ARG1 (x28 / aircraft)
-				:mod (x30 / excellent)))
-		:op1 (x35 / speed
-			:mod (x33 / low)
-			:mod (x34 / air))
-		:op2 (x37 / altitude)
-		:op2 (x38 / and)
-		:op2 (x42 / deliver-01
-			:ARG1 (x41 / weapon
-				:mod (x40 / accurate
-					:degree (x39 / high))))))
+	:ARG2 (x12 / and
+		:op1 (x9 / simple)
+		:op2 (x11 / effective)
+		:op2 (x13 / survivable)
+		:op1 (x16 / aircraft
+			:mod (x15 / jet
+				:mod (x14 / twin-engine))
+			:ARG1-of (x20 / use-01
+				:mod (x18 / possible)
+				:ARG2 (x24 / target
+					:quant (x22 / all)
+					:mod (x23 / ground)
+					:ARG1 (x35 / and
+						:op1 (x27 / aircraft)
+						:op1 (x30 / maneuverability
+							:mod (x29 / excellent))
+						:op1 (x34 / speed
+							:mod (x32 / low)
+							:mod (x33 / air))
+						:op2 (x36 / altitude)
+						:op2 (x37 / and)
+						:op2 (x41 / deliver-01
+							:ARG1 (x40 / weapon
+								:mod (x39 / accurate
+									:degree (x38 / high))))))))))
 

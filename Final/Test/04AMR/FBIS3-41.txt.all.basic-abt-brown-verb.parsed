@@ -1,6 +1,6 @@
 # ::id 1
-# ::snt Although La Republica, a prominent anti-Fujimori daily, provided little information on the origins of the " important and unusual " document that La Republica published in a special 25 January supplement, La Republica assured La Republica readers that the lengthy ideological tract explaining the Shining Path's " struggle for a peace agreement " was a genuine Shining Path statement
-(x37 / assure-01
+# ::snt Although La Republica , a prominent anti-Fujimori daily , provided little information on the origins of the important and unusual document that La Republica  published in a special 25 January supplement , La Republica  assured La Republica  readers that the lengthy ideological tract explaining the Shining Path's struggle for a peace agreement was a genuine Shining Path statement
+(x35 / assure-01
 	:ARG2 (x10 / provide-01
 		:ARG0 (x3 / person
 			:name (n1 / name
@@ -13,84 +13,83 @@
 		:ARG1 (x12 / information
 			:mod (x11 / little)
 			:topic (x15 / originate-01
-				:ARG1 (x23 / document
-					:ARG1-of (x27 / publish-01
-						:ARG0 (x20 / and
-							:op1 (x19 / important)
-							:op2 (x21 / usual
-								:polarity -))
-						:ARG0 (x25 / government-organization
-							:name (n5 / name
-								:op1 "La"
-								:op2 "Republica"))
-						:manner (x33 / thing
-							:ARG2-of (s / supplement-01)
-							:mod (x30 / special)
-							:null_edge (x31 / null_tag)
-							:null_edge 1))))))
-	:ARG0 (x35 / government-organization
+				:ARG2 (x19 / and
+					:op1 (x18 / important)
+					:op2 (x20 / usual
+						:polarity -)
+					:op2 (x21 / document
+						:ARG1-of (x25 / publish-01
+							:ARG0 (x23 / government-organization
+								:name (n5 / name
+									:op1 "La"
+									:op2 "Republica"))
+							:manner (x31 / thing
+								:ARG2-of (s / supplement-01)
+								:mod (x28 / special)
+								:null_edge (x29 / null_tag)
+								:null_edge 1)))))))
+	:ARG0 (x33 / government-organization
 		:name (n / name
 			:op1 "La"
 			:op2 "Republica"))
-	:ARG1 (x40 / person
+	:ARG1 (x38 / person
 		:ARG0-of (r / read-01)
-		:mod (x38 / organization
+		:mod (x36 / organization
 			:name (n2 / name
 				:op1 "La"))
-		:mod (x39 / organization
+		:mod (x37 / organization
 			:name (n3 / name
 				:op1 "Republica")))
-	:ARG1 (x63 / state-01
-		:ARG0 (x52 / struggle-01
-			:domain (x46 / explain-01
-				:mod (x45 / tract
-					:mod (x43 / lengthy)
-					:ARG1 (x44 / ideology))
-				:ARG1 (x49 / path
-					:ARG0-of (x48 / shine)))
-			:ARG1 (x56 / agree-01
-				:ARG1 (x55 / peace)))
-		:mod (x60 / genuine)
-		:ARG0 (x61 / shine
-			:ARG0 x52)
-		:ARG0 (x62 / path)))
+	:ARG1 (x59 / state-01
+		:ARG0 (x43 / tract
+			:duration (x41 / lengthy)
+			:mod (x42 / ideology)
+			:domain (x44 / explain-01
+				:ARG1 (x49 / struggle-01
+					:ARG0 (x47 / path
+						:ARG0-of (x46 / shine)))
+				:ARG1 (x53 / agree-01
+					:ARG1 (x52 / peace))))
+		:mod (x56 / genuine)
+		:ARG0 (x57 / shine)
+		:ARG0 (x58 / path)))
 
 # ::id 2
-# ::snt The paper claimed that the " anonymous sources " who supplied the " secret " document provided " full authentication " and that " experts " consulted by the paper also " agreed " that the document was the handiwork of imprisoned Shining Path leader Abimael Guzman (La Republica, 26 January )
+# ::snt The paper claimed that the anonymous sources who supplied the secret document provided full authentication and that experts consulted by the paper also agreed that the document was the handiwork of imprisoned Shining Path leader Abimael Guzman (La Republica , 26 January )
 (x3 / claim-01
 	:ARG0 (x2 / paper)
-	:ARG1 (x22 / and
-		:op1 (x17 / provide-01
-			:ARG0 (x8 / source
-				:mod (x7 / anonymous)
-				:ARG1-of (x11 / supply-01
-					:ARG1 (x16 / document
-						:mod (x14 / secret))))
-			:ARG1 (x20 / authentication
-				:degree (x19 / full)))
-		:op2 (x27 / consult-01
-			:ARG0 x8
-			:ARG0 (x25 / person
-				:ARG1-of (e / expert-41))
-			:ARG0 (x30 / paper)
-			:mod (x31 / also)
-			:ARG2 (x33 / agree-01
-				:ARG1 (x40 / handiwork
-					:ARG1 (x37 / document)
-					:name (x46 / name
-						:op1 "Abimael"
-						:op2 "Guzman"
-						:ARG1-of (x42 / imprison-01)
-						:ARG0-of (x43 / shine)
-						:ARG0-of (x45 / lead-02
-							:ARG1 (x44 / path)
-							:ARG1 (x50 / country
-								:name (n / name
-									:op1 "Republica")
-								:null_edge (x49 / country
-									:name (n1 / name
-										:op1 "La"))
-								:time (x52 / date-entity)))))))))
+	:ARG1 (x16 / and
+		:op1 (x13 / provide-01
+			:ARG0 (x7 / source
+				:mod (x6 / anonymous)
+				:ARG0-of (x9 / supply-01
+					:ARG1 (x12 / document
+						:mod (x11 / secret))))
+			:ARG1 (x15 / authentication
+				:mod (x14 / full)))
+		:op2 (x24 / agree-01
+			:ARG0 x7
+			:ARG0 (x18 / person
+				:ARG1-of (e / expert-41)
+				:ARG1-of (x19 / consult-01
+					:ARG0 (x22 / paper)))
+			:mod (x23 / also)
+			:ARG1 (x30 / handiwork
+				:ARG1 (x27 / document)
+				:name (x36 / name
+					:op1 "Abimael"
+					:op2 "Guzman"
+					:ARG1-of (x32 / imprison-01)
+					:ARG0-of (x33 / shine)
+					:ARG0-of (x35 / lead-02
+						:ARG1 (x34 / path)
+						:ARG1 (x40 / country
+							:name (n / name
+								:op1 "Republica")
+							:null_edge (x39 / country
+								:name (n1 / name
+									:op1 "La"))
+							:time (x42 / date-entity))))))))
 
 # ::id 3
 # ::snt (See Note 1 )(Note 1 )La Republica did not assert that the document was actually signed by Guzman
@@ -112,47 +111,50 @@
 				:op1 "Guzman"))))
 
 # ::id 4
-# ::snt However, the paper did claim that the document was " approved " by imprisoned Shining Path Central Committee members Elena Iparraguirre Revoredo, Osman Morote Barrionuevo, Marta Huatay Ruiz, Maria Pantoja Sanchez and Rosa Angelica Salas de la Cruz (25 January )
+# ::snt However , the paper did claim that the document was approved by imprisoned Shining Path Central Committee members Elena Iparraguirre Revoredo , Osman Morote Barrionuevo , Marta Huatay Ruiz , Maria Pantoja Sanchez and Rosa Angelica Salas de la Cruz (25 January )
 (x6 / claim-02
 	:ARG1 (x4 / paper)
-	:ARG1-of (x12 / approve-01
+	:ARG1-of (x11 / approve-01
 		:ARG1 (x9 / document)
-		:ARG0 (x36 / and
-			:ARG0-of (x20 / have-org-role-91
-				:ARG2 (m / member)
-				:ARG1-of (x15 / imprison-01)
-				:ARG0-of (x16 / newspaper
-					:name (n / name
-						:op1 "Shining"))
-				:null_edge (x17 / null_tag)
-				:null_edge (x18 / null_tag))
-			:name (x21 / name
-				:op1 "Elena"
-				:op2 "Iparraguirre"
-				:op3 "Revoredo")
-			:name (x25 / name
-				:op1 "Osman"
-				:op2 "Morote"
-				:op3 "Barrionuevo")
-			:op2 (x29 / name
-				:op1 "Marta"
-				:op2 "Huatay"
-				:op3 "Ruiz")
-			:op2 (x33 / name
-				:op1 "Maria"
-				:op2 "Pantoja"
-				:op3 "Sanchez")
-			:op2 (x37 / name
-				:op1 "Rosa"
-				:op2 "Angelica"
-				:op3 "Salas"
-				:op4 "de"
-				:op5 "la"
-				:op6 "Cruz"))
-		:time (x44 / date-entity)))
+		:ARG0 (x15 / path
+			:ARG1-of (x13 / imprison-01)
+			:ARG0-of (x14 / newspaper
+				:name (n / name
+					:op1 "Shining")))
+		:ARG1 (x34 / and
+			:op1 (x16 / government-organization
+				:name (n1 / name
+					:op1 "Central"
+					:op2 "Committee"
+					:op3 "members"
+					:op4 "Elena"
+					:op5 "Iparraguirre"
+					:op6 "Revoredo")
+				:ARG0-of (x18 / have-org-role-91
+					:ARG2 (m / member))
+				:name (x23 / name
+					:op1 "Osman"
+					:op2 "Morote"
+					:op3 "Barrionuevo")
+				:name (x27 / name
+					:op1 "Marta"
+					:op2 "Huatay"
+					:op3 "Ruiz")
+				:name (x31 / name
+					:op1 "Maria"
+					:op2 "Pantoja"
+					:op3 "Sanchez")
+				:name (x35 / name
+					:op1 "Rosa"
+					:op2 "Angelica"
+					:op3 "Salas"
+					:op4 "de"
+					:op5 "la"
+					:op6 "Cruz")))
+		:time (x42 / date-entity)))
 
 # ::id 5
-# ::snt While the anti-Fujimori daily may have, at least in part, published the document to discredit President Fujimori, the anti-Fujimori daily contended that it was motivated by a desire to provide Peruvians with information on the peace proposal that had not been made available by the government
+# ::snt While the anti-Fujimori daily may have , at least in part , published the document to discredit President Fujimori , the anti-Fujimori daily  contended that it was motivated by a desire to provide Peruvians with information on the peace proposal that had not been made available by the government
 (x24 / contend-01
 	:time (x13 / publish-01
 		:ARG0 (x3 / organization
@@ -185,25 +187,25 @@
 								:ARG0-of (g / govern-01)))))))))
 
 # ::id 6
-# ::snt The paper declared that it was " clearly " The paper " duty " to publish the document " given the mantle of silence that the government has cast " over the peace negotiations (26 January )
+# ::snt The paper declared that it was clearly The paper  duty to publish the document given the mantle of silence that the government has cast over the peace negotiations (26 January )
 (x3 / declare-01
 	:ARG0 (x2 / paper)
-	:ARG1 (x13 / duty
-		:manner (x8 / clear)
-		:mod (x11 / paper)
-		:ARG2 (x16 / publish-01
-			:ARG1 (x18 / document)
-			:ARG0 (x22 / mantle
-				:ARG1 (x24 / silence-01)
-				:ARG1-of (x29 / cast-01
-					:ARG0 (x27 / government-organization
-						:ARG0-of (g / govern-01))
-					:ARG2 (x34 / negotiate-01
-						:ARG2 (x33 / peace)
-						:time (x36 / date-entity)))))))
+	:ARG1 (x10 / duty
+		:manner (x7 / clear)
+		:mod (x9 / paper)
+		:ARG2 (x12 / publish-01
+			:ARG1 (x14 / document
+				:mod (x17 / mantle
+					:ARG1 (x19 / silence-01)
+					:ARG1-of (x24 / cast-01
+						:ARG0 (x22 / government-organization
+							:ARG0-of (g / govern-01))
+						:ARG3 (x28 / negotiate-01
+							:ARG2 (x27 / peace)
+							:time (x30 / date-entity))))))))
 
 # ::id 7
-# ::snt La Republica's publication of the Shining Path strategy statement follows by three months the October 1993 release by the Fujimori government of letters from Guzman calling for peace talks with the government (Radio Programs del Peru, 1 October 1993 ; Radio and TV, 4 October 1993 ; Global de Television, 10 October 1993 ; Panamericana Television, 30 October 1993 )
+# ::snt La Republica's publication of the Shining Path strategy statement follows by three months the October 1993 release by the Fujimori government of letters from Guzman calling for peace talks with the government (Radio Programs del Peru , 1 October 1993 ; Radio and TV , 4 October 1993 ; Global de Television , 10 October 1993 ; Panamericana Television , 30 October 1993 )
 (x11 / follow-01
 	:ARG1 (x4 / publication
 		:name (x1 / name
@@ -228,7 +230,7 @@
 					:op1 "Guzman")))))
 
 # ::id 8
-# ::snt The Shining Path leadership's sudden willingness to pursue peace talks with the government, just as the 31 October national referendum vote was approaching, raised questions in the media about whether the letters really represented authoritative Shining Path policy -LSB- see box -RSB-
+# ::snt The Shining Path leadership's sudden willingness to pursue peace talks with the government , just as the 31 October national referendum vote was approaching , raised questions in the media about whether the letters really represented authoritative Shining Path policy -LSB- see box -RSB-
 (x27 / raise-01
 	:ARG0 (x7 / will-02
 		:ARG0 (x4 / person
@@ -262,7 +264,7 @@
 					:ARG1 (x44 / box))))))
 
 # ::id 9
-# ::snt (See Note 2 )(Note 2 )Among other objectives, the narrowly successful referendum was designed to allow the president to serve a second successive term
+# ::snt (See Note 2 )(Note 2 )Among other objectives , the narrowly successful referendum was designed to allow the president to serve a second successive term
 (x7 / note-01
 	:null_edge (x2 / see-01
 		:quant 2)
@@ -281,7 +283,7 @@
 						:ARG1-of (x28 / succeed-03)))))))
 
 # ::id 10
-# ::snt Tactical Retreat for Guzman Implicitly rejecting Fujimori's claim that the Shining Path's call for a negotiated peace represented an admission of political defeat by the insurgents, La Republica concluded that the movement's leadership saw the movement's leadership call for peace as nothing more than a " temporary ceasefire " (25 January )
+# ::snt Tactical Retreat for Guzman Implicitly rejecting Fujimori's claim that the Shining Path's call for a negotiated peace represented an admission of political defeat by the insurgents , La Republica concluded that the movement's leadership saw the movement's leadership  call for peace as nothing more than a temporary ceasefire (25 January )
 (x2 / retreat
 	:ARG1 (x1 / tactical)
 	:ARG2 (x6 / reject-01
@@ -318,44 +320,44 @@
 						:ARG1 (x42 / lead-02)
 						:ARG1 (x45 / peace))
 					:degree (x48 / more
-						:compared-to (x53 / ceasefire
-							:time (x56 / date-entity))))))))
+						:compared-to (x52 / ceasefire
+							:time (x54 / date-entity))))))))
 
 # ::id 11
-# ::snt (See Note 3 )According to the daily's 26 January editorial, the Shining Path tract " makes it clear " that in the eyes of Abimael Guzman a " peace agreement " is simply an " armed truce " until after the year 2OOO, at which time the Shining Path " would resume the Shining Path's bloodbath .
-(x20 / make-02
-	:medium (x13 / editorial
-		:purpose (x2 / see-01
-			:null_edge (x4 / null_tag))
-		:time (x11 / date-entity)
-		:null_edge 1)
-	:ARG0 (x18 / tract
+# ::snt (See Note 3 )According to the daily's 26 January editorial , the Shining Path tract makes it clear that in the eyes of Abimael Guzman a peace agreement is simply an armed truce until after the year 2OOO , at which time the Shining Path would resume the Shining Path's  bloodbath
+(x13 / editorial
+	:mod (x3 / note-01
+		:null_edge (x2 / see-01)
+		:null_edge (x4 / null_tag))
+	:time (x11 / date-entity)
+	:null_edge 1
+	:mod (x17 / path
 		:ARG0-of (x16 / shine)
-		:mod (x17 / path))
-	:ARG1 (x41 / truce
-		:mod (x22 / clear)
-		:location (x27 / eye
-			:name (x29 / name
-				:op1 "Abimael"
-				:op2 "Guzman"))
-		:domain (x34 / agree-01
-			:ARG1 (x33 / peace))
-		:mod (x37 / simple)
-		:mod (x40 / person
-			:ARG1-of (a / arm-01))
-		:time (x43 / until
-			:op1 (x44 / after
-				:op1 (x47 / 2ooo
-					:null_edge (x46 / null_tag))
-				:op1 (x57 / resume-01
-					:ARG1 (x54 / path
-						:ARG0-of (x53 / shine))
-					:ARG1 (x62 / bloodbath
-						:ARG0 (x60 / path
-							:ARG0-of (x59 / shine))))))))
+		:ARG0-of (x19 / make-02
+			:ARG0 (x18 / tract)
+			:ARG1 (x36 / truce
+				:null_edge (x21 / clear)
+				:location (x25 / eye
+					:name (x27 / name
+						:op1 "Abimael"
+						:op2 "Guzman"))
+				:domain (x31 / agree-01
+					:ARG1 (x30 / peace))
+				:mod (x33 / simple)
+				:ARG1-of (x35 / arm-01)
+				:time (x37 / until
+					:op1 (x38 / after
+						:op1 (x41 / 2ooo
+							:null_edge (x40 / null_tag))
+						:op1 (x50 / resume-01
+							:ARG0 (x48 / path
+								:ARG0-of (x47 / shine))
+							:ARG1 (x55 / bloodbath
+								:ARG0 (x53 / path
+									:ARG0-of (x52 / shine))))))))))
 
 # ::id 12
-# ::snt La Republica offered a possible explanation for the insurgents ' tactical retreat in a 3O January interview with a " military and subversion analyst, " who suggested-that a temporary withdrawal may offer Guzman an opportunity to preserve Path leader Abimael Guzman -LRB- La Republica , 26 January -RRB- authority as political leader despite the obvious limitations of beings imprisoned
+# ::snt La Republica offered a possible explanation for the insurgentstactical retreat in a 3O January interview with a military and subversion analyst , who suggested-that a temporary withdrawal may offer Guzman an opportunity to preserve Path leader Abimael Guzman (La Republica , 26 January ) authority as political leader despite the obvious limitations of beings imprisoned
 (x3 / offer-01
 	:ARG0 (x1 / government-organization
 		:name (n / name
@@ -363,69 +365,63 @@
 			:op2 "Republica"))
 	:ARG1 (x6 / explain-01
 		:mod (x5 / possible)
-		:ARG1 (x12 / retreat
-			:poss (x9 / insurgency)
-			:mod (x11 / tactical)
-			:medium (x17 / interview-01
-				:mod (x15 / 3o)
-				:null_edge 1
-				:ARG1 (x22 / and
-					:op1 (x21 / military)
-					:op2 (x24 / person
-						:ARG0-of (a / analyze-01)
-						:ARG1 (x23 / subversion))
-					:op1 (x28 / suggested-that
-						:mod (x32 / possible
-							:domain (x33 / offer-01
-								:ARG0 (x31 / withdraw-01
-									:duration (x30 / temporary))
-								:ARG0 (x34 / person
-									:name (n1 / name
-										:op1 "Guzman"))
-								:ARG1 (x36 / opportunity
-									:mod (x38 / preserve-01
-										:ARG1 (x50 / authority
-											:name (x41 / name
-												:op1 "Abimael"
-												:op2 "Guzman"
-												:ARG0-of (x39 / path)
-												:ARG0-of (x40 / lead-02
-													:ARG1 (x45 / country
-														:name (n2 / name
-															:op1 "Republica")
-														:null_edge (x44 / country
-															:name (n3 / name
-																:op1 "La"))))))
-										:ARG2 (x53 / lead-02
-											:mod (x52 / politics))
-										:concession (x57 / limit-01
-											:ARG1-of (x56 / obvious-41)
-											:ARG1 (x59 / being
-												:ARG1-of (x60 / imprison-01))))
-									:mod (x47 / date-entity))))))))))
+		:ARG1 (x10 / retreat))
+	:ARG3 (x21 / analyze-01
+		:ARG1 (x13 / 3o)
+		:null_edge 1
+		:ARG1 (x24 / suggested-that
+			:mod (x28 / possible
+				:domain (x19 / and
+					:op1 (x18 / military)
+					:op2 (x20 / subversion))
+				:domain (x29 / offer-01
+					:ARG0 (x27 / withdraw-01
+						:duration (x26 / temporary))
+					:ARG0 (x30 / person
+						:name (n1 / name
+							:op1 "Guzman"))
+					:ARG1 (x32 / opportunity
+						:mod (x34 / preserve-01
+							:ARG1 (x46 / authority
+								:name (x37 / name
+									:op1 "Abimael"
+									:op2 "Guzman"
+									:ARG0-of (x35 / path)
+									:ARG0-of (x36 / lead-02
+										:ARG1 (x41 / country
+											:name (n2 / name
+												:op1 "Republica")
+											:null_edge (x40 / country
+												:name (n3 / name
+													:op1 "La"))))))
+							:ARG2 (x49 / lead-02
+								:mod (x48 / politics))
+							:concession (x53 / limit-01
+								:ARG1-of (x52 / obvious-41)
+								:ARG1 (x55 / being
+									:ARG1-of (x56 / imprison-01))))
+						:mod (x43 / date-entity)))))))
 
 # ::id 13
-# ::snt Thee analyst concluded, therefore, that the insurgents ' peace strategy represents " an ideological reaffirmation of Guzman's leadership " and " recognition that circumstances have changed .
+# ::snt Thee analyst concluded , therefore , that the insurgentspeace strategy represents an ideological reaffirmation of Guzman's leadership and recognition that circumstances have changed
 (x3 / conclude-01
 	:ARG0 (x2 / analyze-01)
-	:ARG1 (x13 / represent-01
-		:ARG0 (x12 / strategy
-			:poss (x9 / insurgency)
-			:mod (x11 / peace))
-		:ARG1 (x23 / and
-			:op1 (x17 / reaffirmation
-				:mod (x16 / ideology)
-				:ARG1 (x21 / lead-02
-					:poss (x19 / person
+	:ARG1 (x11 / represent-01
+		:ARG0 (x10 / strategy
+			:mod (x9 / insurgentspeace))
+		:ARG1 (x14 / reaffirmation
+			:manner (x13 / ideology)
+			:ARG1 (x19 / and
+				:op1 (x18 / lead-02
+					:poss (x16 / person
 						:name (n / name
-							:op1 "Guzman"))))
-			:op2 (x25 / recognize-01
-				:ARG1 x16
-				:ARG1-of (x29 / change-01
-					:ARG1 (x27 / circumstance))))))
+							:op1 "Guzman")))
+				:op2 (x20 / recognize-01))
+			:ARG1-of (x24 / change-01
+				:ARG1 (x22 / circumstance)))))
 
 # ::id 14
-# ::snt (Note 3 )For example, in Thee analyst presentation of the video recording of Guzman's first call for peace talks, Fujimori claimed that the Shining Path " political " leadership " has tacitly admitted that the Peruvian state has totally recovered the initiative in confronting the Shining Path " (Lima Radio and TV, 4 October 1993 )
+# ::snt (Note 3 )For example , in Thee analyst  presentation of the video recording of Guzman's first call for peace talks , Fujimori claimed that the Shining Path political leadership has tacitly admitted that the Peruvian state has totally recovered the initiative in confronting the Shining Path (Lima Radio and TV , 4 October 1993 )
 (x26 / claim-01
 	:ARG1 (x2 / note-02
 		:quant 3
@@ -439,36 +435,38 @@
 			:mod (x14 / video)
 			:ARG1 (x20 / call-01
 				:ARG0 (x17 / person
-					:name (n1 / name
+					:name (n2 / name
 						:op1 "Guzman"))
 				:ARG1 (x23 / talk-01
 					:ARG0 x17
 					:ARG1 (x22 / peace)))))
 	:ARG0 x25
-	:ARG1 (x38 / admit-01
-		:ARG0 (x34 / person
+	:ARG1 (x35 / admit-01
+		:ARG0 (x30 / path
+			:ARG0-of (x29 / newspaper
+				:name (n1 / name
+					:op1 "Shining")))
+		:ARG0 (x32 / person
 			:ARG0-of (l / lead-02)
-			:ARG0-of (x29 / shine)
-			:ARG1 (x30 / path)
-			:mod (x32 / politics))
-		:frequency (x37 / tacitly)
-		:ARG1 (x45 / recover-01
-			:ARG0 (x42 / state
-				:mod (x41 / organization
-					:name (n2 / name
+			:mod (x31 / politics))
+		:frequency (x34 / tacitly)
+		:ARG1 (x42 / recover-01
+			:ARG0 (x39 / state
+				:mod (x38 / organization
+					:name (n3 / name
 						:op1 "Peruvian")))
-			:degree (x44 / total)
-			:ARG1 (x47 / initiative)
-			:ARG2 (x49 / person
+			:degree (x41 / total)
+			:ARG1 (x44 / initiative)
+			:ARG2 (x46 / person
 				:ARG0-of (c / confront-01)
-				:ARG1 (x57 / and
-					:op1 (x51 / shine)
-					:op2 (x55 / name
+				:ARG1 (x53 / and
+					:op1 (x48 / shine)
+					:op2 (x51 / name
 						:op1 "Lima"
 						:op2 "Radio")
-					:op2 (x58 / tv)
-					:op1 (x60 / date-entity
-						:time (x62 / date-entity
+					:op2 (x54 / tv)
+					:op1 (x56 / date-entity
+						:time (x58 / date-entity
 							:year 1993)))))))
 
 # ::id 15
@@ -498,7 +496,7 @@
 					:mod (x29 / top))))))
 
 # ::id 16
-# ::snt At the same time, however, by concluding that the published strategy statement is merely the Shining Path's declaration of temporary retreat, the daily has raised new questions about the credibility of Fujimori's claim that the call for peace represents a victory for the government
+# ::snt At the same time , however , by concluding that the published strategy statement is merely the Shining Path's declaration of temporary retreat , the daily has raised new questions about the credibility of Fujimori's claim that the call for peace represents a victory for the government
 (x29 / raise-01
 	:time (x4 / time
 		:ARG1-of (x3 / same-41))
@@ -530,7 +528,7 @@
 							:ARG0-of (g / govern-01))))))))
 
 # ::id 17
-# ::snt While such doubts are unlikely to seriously affect Fujimori's prospects for reelection next year, Fujimori's prospects for reelection may have further tarnished the image of the Peruvian president, already damaged by the Peruvian president narrow victory in the constitutional referendum last October
+# ::snt While such doubts are unlikely to seriously affect Fujimori's prospects for reelection next year , Fujimori's prospects for reelection  may have further tarnished the image of the Peruvian president , already damaged by the Peruvian president  narrow victory in the constitutional referendum last October
 (x5 / likely
 	:polarity -
 	:domain (x3 / doubt-01
@@ -574,103 +572,105 @@
 								:null_edge 10))))))))
 
 # ::id 18
-# ::snt Media Doubts over Earlier Shining Path Peace Letters -- Following the first Guzman letter calling for peace talks, announced by Fujimori at thee United Nations last October (Radio Programas del Peru, 1 October 1993 -RRB-, the conservative daily El Comercio reported that one seasoned political observer had warned " that Guzman's " reported " desire " to reach a peace agreement " does not mean there is reason " to claim a victory in the ongoing struggle against terrorism " since, according to the observer, the imprisoned insurgent leader may no longer control the Shining Path (2 October 1993 )
-(x45 / report-01
-	:ARG0 (x2 / doubt-01
-		:mod (x1 / media))
-	:time (x3 / over
-		:null_edge (x8 / null_tag
-			:null_edge (x4 / null_tag)
-			:null_edge (x5 / newspaper
-				:name (n1 / name
-					:op1 "Shining"))
-			:null_edge (x6 / null_tag)
-			:null_edge (x7 / null_tag)))
-	:ARG1-of (x10 / follow-01
-		:ARG1 (x14 / letter
-			:ARG0 (x13 / person
-				:name (n2 / name
-					:op1 "Guzman"))
-			:ARG1-of (x15 / call-03
-				:ARG0 x13
-				:ARG1 (x18 / talk-01
-					:topic (x17 / peace)
-					:ARG1-of (x20 / announce-01
-						:ARG0 (x22 / person
-							:name (n4 / name
-								:op1 "Fujimori"))
-						:null_edge (x23 / null_tag
-							:null_edge (x26 / null_tag
-								:null_edge (x24 / thee)
-								:null_edge (x25 / null_tag)))
-						:time (x28 / date-entity
-							:mod (x27 / last)))))
-			:mod (x32 / del
-				:mod (x31 / programas
-					:mod (x30 / radio)))
-			:time (x35 / date-entity
-				:year 1993)))
-	:ARG0 (x43 / government-organization
+# ::snt Media Doubts over Earlier Shining Path Peace Letters Following the first Guzman letter calling for peace talks , announced by Fujimori at thee United Nations last October (Radio Programas del Peru , 1 October 1993 ), the conservative daily El Comercio reported that one seasoned political observer had warned that Guzman's reported desire to reach a peace agreement does not mean there is reason to claim a victory in the ongoing struggle against terrorism since , according to the observer , the imprisoned insurgent leader may no longer control the Shining Path (2 October 1993 )
+(x44 / report-01
+	:ARG0 (x6 / path
+		:mod (x1 / media)
+		:null_edge (x4 / null_tag)
+		:null_edge (x5 / newspaper
+			:name (n1 / name
+				:op1 "Shining")))
+	:ARG0 (x8 / letter
+		:null_edge (x7 / null_tag)
+		:ARG1-of (x9 / follow-01
+			:ARG2 (x13 / letter
+				:ARG0 (x12 / person
+					:name (n3 / name
+						:op1 "Guzman"))
+				:ARG1-of (x14 / call-03
+					:ARG0 x12
+					:ARG1 (x17 / talk-01
+						:topic (x16 / peace)
+						:ARG1-of (x19 / announce-01
+							:ARG0 (x21 / person
+								:name (n4 / name
+									:op1 "Fujimori"))
+							:null_edge (x22 / null_tag
+								:null_edge (x25 / null_tag
+									:null_edge (x23 / thee)
+									:null_edge (x24 / null_tag)))
+							:time (x27 / date-entity
+								:mod (x26 / last)))))
+				:mod (x31 / del
+					:mod (x30 / programas
+						:mod (x29 / radio)))
+				:time (x34 / date-entity
+					:year 1993))))
+	:ARG0 (x42 / government-organization
 		:name (n / name
 			:op1 "El"
 			:op2 "Comercio")
-		:mod (x41 / conservative))
-	:ARG1 (x52 / warn-01
-		:ARG0 (x50 / observe-01
+		:mod (x40 / conservative))
+	:ARG1 (x51 / warn-01
+		:ARG0 (x49 / observe-01
 			:quant 1
-			:mod (x48 / seasoned)
-			:mod (x49 / politics))
-		:ARG1 (x58 / report-01
-			:ARG0 (x55 / person
-				:name (n3 / name
+			:mod (x47 / seasoned)
+			:mod (x48 / politics))
+		:ARG1 (x55 / report-01
+			:ARG0 (x53 / person
+				:name (n2 / name
 					:op1 "Guzman"))
-			:ARG1 (x63 / reach-01
-				:ARG0 (x60 / desire-01)
-				:ARG1 (x66 / agree-01
-					:ARG1 (x65 / peace))
-				:ARG0-of (x70 / mean-01
-					:ARG1 (x76 / claim-01
-						:ARG1 (x78 / win-01
-							:op (v / victory)
-							:time (x86 / since
-								:op1 (x97 / possible
-									:domain (x100 / control-01
-										:manner (x82 / struggle-01
-											:ARG1 (x84 / terrorism))
-										:ARG0 (x91 / observe-01)
-										:ARG0 (x96 / person
-											:ARG0-of (l / lead-02)
-											:ARG1-of (x94 / imprison-01)
-											:mod (x95 / insurgent))
-										:ARG0 (x102 / political-party
-											:name (n5 / name
-												:op1 "Shining"
-												:op2 "Path"
-												:op3 "-LRB-"
-												:op4 "2"
-												:op5 "October"
-												:op6 "1993"))))))))))))
+			:ARG1 (x64 / mean-01
+				:ARG0 (x56 / desire-01
+					:ARG1 (x58 / reach-01
+						:ARG1 (x61 / agree-01
+							:ARG1 (x60 / peace))))
+				:ARG1 (x69 / claim-01
+					:ARG0 x49
+					:ARG1 (x71 / win-01
+						:op (v / victory)
+						:time (x78 / since
+							:op1 (x89 / possible
+								:domain (x92 / control-01
+									:manner (x75 / struggle-01
+										:ARG1 (x77 / terrorism))
+									:ARG0 (x83 / observe-01)
+									:ARG0 (x88 / person
+										:ARG0-of (l / lead-02)
+										:ARG1-of (x86 / imprison-01)
+										:mod (x87 / insurgent))
+									:ARG0 (x94 / political-party
+										:name (n5 / name
+											:op1 "Shining"
+											:op2 "Path"
+											:op3 "-LRB-"
+											:op4 "2"
+											:op5 "October"
+											:op6 "1993")))))))))))
 
 # ::id 19
-# ::snt -- Following the second Guzman letter, which supplemented the call for peace talks with what seemed to be praise for Fujimori's economic and political program (Lima Global de Television, 1O October 1993 -RRB-, a commentator for the anti-Fujimori weekly Caretas wrote that the government was using a " broken " Guzman " in the campaign for the ` yes ' vote " for the upcoming referendum, adding that " the second Guzman letter is no coincidence that the letters ... have come out during the 3O days prior " to the 31 October vote (14 October 1993 )
-(x88 / come-01
-	:time (x2 / follow-01
-		:ARG2 (x6 / letter
-			:ARG1-of (x9 / thing
+# ::snt Following the second Guzman letter , which supplemented the call for peace talks with what seemed to be praise for Fujimori's economic and political program (Lima Global de Television , 1O October 1993 ), a commentator for the anti-Fujimori weekly Caretas wrote that the government was using a broken Guzman in the campaign for the yes vote for the upcoming referendum , adding that the second Guzman letter  is no coincidence that the letters ... have come out during the 3O days prior to the 31 October vote (14 October 1993 )
+(x80 / come-01
+	:ARG1-of (x1 / follow-01
+		:ARG2 (x5 / letter
+			:ARG0 (x4 / person
+				:name (n / name
+					:op1 "Guzman"))
+			:ARG1-of (x8 / thing
 				:ARG2-of (s / supplement-01)
-				:ARG1 (x11 / call-03
-					:ARG1 (x14 / talk-01
-						:ARG1 (x13 / peace))
-					:ARG1-of (x17 / seem-01
-						:ARG1 (x20 / praise-01
-							:ARG1 (x25 / and
-								:op1 (x24 / economy)
-								:op2 (x26 / politics)
-								:op2 (x27 / program
-									:poss (x22 / person
-										:name (n / name
+				:ARG1 (x10 / call-03
+					:ARG1 (x13 / talk-01
+						:ARG1 (x12 / peace))
+					:ARG1-of (x16 / seem-01
+						:ARG1 (x19 / praise-01
+							:ARG1 (x24 / and
+								:op1 (x23 / economy)
+								:op2 (x25 / politics)
+								:op2 (x26 / program
+									:poss (x21 / person
+										:name (n1 / name
 											:op1 "Fujimori"))
-									:name (x29 / name
+									:name (x28 / name
 										:op1 "Lima"
 										:op2 "Global"
 										:op3 "de"
@@ -678,130 +678,134 @@
 										:op5 ","
 										:op6 "1O"
 										:op7 "October"
-										:time (x36 / date-entity
+										:time (x35 / date-entity
 											:year 1993))
-									:poss (x43 / organization
-										:name (n1 / name
+									:poss (x42 / organization
+										:name (n2 / name
 											:op1 "anti-Fujimori")
-										:null_edge (x73 / add-02
-											:ARG1 (x46 / write-01
-												:ARG0 (x45 / person
-													:name (n2 / name
+										:null_edge (x66 / add-02
+											:ARG1 (x45 / write-01
+												:ARG0 (x44 / person
+													:name (n3 / name
 														:op1 "Caretas")
 													:frequency (xap0 / rate-entity-91
-														:ARG3 (x44 / temporal-quantity
+														:ARG3 (x43 / temporal-quantity
 															:unit (w / week))))
-												:ARG1 (x51 / use-01
-													:ARG0 (x49 / government-organization
+												:ARG1 (x50 / use-01
+													:ARG0 (x48 / government-organization
 														:ARG0-of (g / govern-01))
-													:name (x52 / name
-														:op1 "a")
-													:null_edge (x54 / break-01
-														:ARG1 x52
-														:ARG1 (x60 / campaign-01
-															:ARG1 (x66 / vote-01)))
-													:ARG2 (x71 / referendum
-														:mod (x70 / upcome))))
-											:ARG1 (x82 / coincidence
-												:mod (x79 / letter
-													:ARG0 (x78 / person
-														:name (n3 / name
+													:ARG1 (x53 / person
+														:name (n4 / name
+															:op1 "Guzman")
+														:null_edge (x52 / break-02))
+													:purpose (x56 / campaign-01
+														:ARG1 (x60 / vote-01
+															:ARG1 (x64 / referendum
+																:mod (x63 / upcome))))))
+											:ARG1 (x74 / coincidence
+												:ARG0 (x71 / letter
+													:ARG0 (x70 / person
+														:name (n5 / name
 															:op1 "Guzman")))
 												:polarity -
-												:mod (x85 / letter))))))))))))
-	:time (x92 / 3o
-		:op1 (x93 / temporal-quantity
+												:ARG1 (x77 / letter))))))))))))
+	:time (x84 / 3o
+		:op1 (x85 / temporal-quantity
 			:unit (d / day)))
-	:time (x94 / prior-to
-		:op1 (x100 / vote-01
-			:null_edge (x98 / null_tag)
-			:null_edge (x99 / null_tag)
-			:time (x102 / date-entity
+	:time (x86 / prior-to
+		:op1 (x91 / vote-01
+			:null_edge (x89 / null_tag)
+			:null_edge (x90 / null_tag)
+			:time (x93 / date-entity
 				:year 1993))))
 
 # ::id 20
-# ::snt -- Responding similarly to the second Guzman letter, an editorial in La Republica wondered whether " government representatives, " working to promote the " yes " vote on the referendum, had not " fallen into a trap " by thinking that Shining Path militants would take seriously such an " unctuous " call for peace talks as appeared in the letter (14 October 1993 )
-(x15 / wonder-01
-	:ARG1 (x2 / respond-01
-		:ARG1 (x8 / letter))
-	:ARG0 (x11 / editorial
-		:location (x13 / government-organization
+# ::snt Responding similarly to the second Guzman letter , an editorial in La Republica wondered whether government representatives , working to promote the yes vote on the referendum , had not fallen into a trap by thinking that Shining Path militants would take seriously such an unctuous call for peace talks as appeared in the letter (14 October 1993 )
+(x14 / wonder-01
+	:ARG1 (x1 / respond-01
+		:ARG1 (x7 / letter))
+	:ARG0 (x10 / editorial
+		:location (x12 / government-organization
 			:name (n / name
 				:op1 "La"
 				:op2 "Republica")))
-	:ARG1 (x37 / fall-01
-		:ARG1 (x19 / person
+	:ARG1 (x31 / fall-01
+		:ARG1 (x17 / person
 			:ARG0-of (r / represent-01)
-			:ARG1 (x18 / government-organization
+			:ARG1 (x16 / government-organization
 				:ARG0-of (g / govern-01)))
-		:ARG1 (x22 / work-01
-			:ARG0 x19
-			:ARG1 (x24 / promote-01
-				:ARG1 (x29 / vote-01
-					:time (x32 / referendum))))
-		:ARG4 (x40 / person
+		:ARG1 (x19 / work-01
+			:ARG0 x17
+			:ARG1 (x21 / promote-01
+				:ARG1 (x24 / vote-01
+					:ARG1 (x27 / referendum))))
+		:ARG4 (x34 / person
 			:ARG1-of (t / trap-01))
-		:manner (x43 / think-01
-			:ARG0 x19
-			:ARG1 (x49 / take-01
-				:ARG0 (x47 / militant
-					:null_edge (x45 / newspaper
+		:manner (x36 / think-01
+			:ARG0 x17
+			:ARG1 (x42 / take-01
+				:ARG0 (x40 / militant
+					:null_edge (x38 / newspaper
 						:name (n1 / name
 							:op1 "Shining"))
-					:null_edge (x46 / null_tag))
-				:manner (x50 / serious)
-				:ARG1 (x56 / call-03
-					:mod (x51 / such)
-					:mod (x54 / unctuous)
-					:ARG1 (x59 / talk-01
-						:topic (x58 / peace)
-						:ARG1-of (x61 / appear-01
-							:location (x64 / letter
-								:time (x66 / date-entity
-									:year 1993)))))))))
+					:null_edge (x39 / null_tag))
+				:manner (x43 / serious)
+				:ARG1 (x47 / call-03
+					:mod (x44 / such)
+					:mod (x46 / unctuous)
+					:ARG1 (x52 / appear-02
+						:ARG1 (x50 / talk-01
+							:ARG1 (x49 / peace))
+						:location (x55 / letter
+							:time (x57 / date-entity
+								:year 1993))))))))
 
 # ::id 21
-# ::snt -- Also in response to the second letter, Caretas on 14 October claimed that Fujimori was " using " Guzman " in the campaign " to win the 31 October referendum, noting that " with Guzman's letters " calling for peace talks, Fujimori's " promise " to wipe out the Shining Path by 1995 " may gain credibility .
-(x14 / claim-01
-	:ARG2-of (x4 / respond-01
-		:ARG1 (x8 / letter)
-		:ARG0 (x10 / person
+# ::snt Also in response to the second letter , Caretas on 14 October claimed that Fujimori was using Guzman in the campaign to win the 31 October referendum , noting that with Guzman's letters calling for peace talks , Fujimori's promise to wipe out the Shining Path by 1995 may gain credibility
+(x13 / claim-01
+	:mod (x1 / also)
+	:ARG2-of (x3 / respond-01
+		:ARG1 (x7 / letter)
+		:ARG0 (x9 / person
 			:name (n / name
-				:op1 "Caretas"))
-		:ARG0 (x16 / person
-			:name (n1 / name
-				:op1 "Fujimori")
-			:ARG0-of (x19 / use-01
-				:ARG1 (x21 / guzman)
-				:purpose (x25 / campaign-01
-					:ARG1 (x28 / win-01
-						:ARG1 (x32 / referendum
-							:null_edge (x30 / null_tag)
-							:null_edge (x31 / null_tag)))
-					:ARG0-of (x34 / note-01
-						:ARG1 (x61 / possible
-							:domain (x62 / gain-02
-								:ARG1 (x40 / letter
-									:poss (x38 / person
-										:name (n2 / name
-											:op1 "Guzman"))
-									:ARG2 (x42 / call-03
-										:ARG0 x38
-										:ARG1 (x45 / talk-01
-											:ARG1 (x44 / peace))))
-								:ARG0 (x50 / promise-01
-									:ARG0 (x47 / person
-										:name (n3 / name
-											:op1 "Fujimori"))
-									:ARG1 (x53 / wipe-02
-										:ARG0 x47
-										:ARG1 (x57 / path
-											:ARG0-of (x56 / shine))
-										:time (x59 / date-entity
-											:year 1995)))
-								:ARG1 (x63 / credibility))))))))
-	:ARG0 x10
+				:op1 "Caretas")))
+	:ARG0 x9
 	:time 14
 	:ARG0 10
-	:ARG0 x16)
+	:ARG1 (x17 / use-01
+		:ARG0 (x15 / person
+			:name (n1 / name
+				:op1 "Fujimori"))
+		:ARG1 (x18 / person
+			:name (n2 / name
+				:op1 "Guzman"))
+		:ARG1 (x21 / campaign-01
+			:ARG0 x15)
+		:ARG2 (x23 / win-01
+			:ARG0 x15
+			:ARG1 (x27 / referendum
+				:null_edge (x25 / null_tag)
+				:null_edge (x26 / null_tag)
+				:ARG0-of (x29 / note-01
+					:ARG0 x15
+					:ARG1 (x52 / gain-02
+						:prep-with (x34 / letter
+							:poss (x32 / person
+								:name (n3 / name
+									:op1 "Guzman"))
+							:ARG0-of (x35 / call-03
+								:ARG0 x32
+								:ARG1 (x38 / talk-01
+									:ARG1 (x37 / peace))))
+						:ARG0 (x42 / promise-01
+							:ARG0 (x40 / person
+								:name (n4 / name
+									:op1 "Fujimori"))
+							:ARG1 (x44 / wipe-02
+								:ARG1 (x48 / path
+									:ARG0-of (x47 / shine))
+								:time (x50 / date-entity
+									:year 1995)))
+						:null_edge (x51 / null_tag)
+						:ARG1 (x53 / credibility)))))))
 

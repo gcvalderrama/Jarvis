@@ -1,5 +1,5 @@
 # ::id 1
-# ::snt A single-engine airplane crashed Tuesday into a ditch beside a dirt road on the outskirts of Albuquerque, killing all five people aboard, authorities said
+# ::snt A single-engine airplane crashed Tuesday into a ditch beside a dirt road on the outskirts of Albuquerque , killing all five people aboard , authorities said
 (x26 / say-01
 	:ARG1 (x4 / crash-01
 		:ARG1 (x3 / airplane
@@ -22,7 +22,7 @@
 	:ARG0 (x25 / authority))
 
 # ::id 2
-# ::snt Four adults and one child died in the crash, which witnesses said occurred about 5 p.m., when it was raining, Albuquerque police Sgt. R.C. Porter said
+# ::snt Four adults and one child died in the crash , which witnesses said occurred about 5 p.m. , when it was raining , Albuquerque police Sgt. R.C. Porter said
 (x29 / say-01
 	:ARG1 (x6 / die-01
 		:ARG1 (x3 / and
@@ -46,7 +46,7 @@
 		:ARG0-of (x26 / sgt.)))
 
 # ::id 3
-# ::snt The airplane was attempting to land at nearby Coronado Airport, Porter said
+# ::snt The airplane was attempting to land at nearby Coronado Airport , Porter said
 (x13 / say-01
 	:ARG1 (x4 / attempt-01
 		:ARG0 (x2 / airplane)
@@ -61,7 +61,7 @@
 			:op1 "Porter")))
 
 # ::id 4
-# ::snt very high _ maybe 100 feet aborted very high _ maybe 100 feet first attempt and was coming in for a second try when very high _ maybe 100 feet crashed, Albuquerque police Sgt. R.C. Porter said
+# ::snt very high _ maybe 100 feet  aborted very high _ maybe 100 feet  first attempt and was coming in for a second try when very high _ maybe 100 feet  crashed , Albuquerque police Sgt. R.C. Porter  said
 (x38 / say-01
 	:ARG1 (x16 / and
 		:op1 (x7 / aborted
@@ -96,7 +96,7 @@
 		:ARG0-of (x35 / sgt.)))
 
 # ::id 5
-# ::snt State police said the red-and-white Cessna P210, which seats six people, was from Salt Lake City
+# ::snt State police said the red-and-white Cessna P210 , which seats six people , was from Salt Lake City
 (x3 / say-01
 	:ARG0 (x2 / police
 		:mod (x1 / state))
@@ -134,7 +134,7 @@
 			:op1 "Albuquerque")))
 
 # ::id 8
-# ::snt Walter Ramazzini Jr., 17, of Albuquerque, said Walter Ramazzini Jr. was sitting about 100 yards from the airplane when it crashed
+# ::snt Walter Ramazzini Jr. , 17 , of Albuquerque , said Walter Ramazzini Jr.  was sitting about 100 yards from the airplane when it crashed
 (x10 / say-01
 	:ARG0 (x1 / name
 		:op1 "Walter"
@@ -144,43 +144,43 @@
 	:ARG0 (x8 / country
 		:name (n / name
 			:op1 "Albuquerque"))
-	:ARG1 (x15 / sit-01
+	:name (x11 / name
+		:op1 "Walter"
+		:op2 "Ramazzini"
+		:op3 "Jr.")
+	:ARG1 (x16 / sit-01
 		:ARG0 x1
-		:ARG1 (x18 / yard
-			:null_edge (x16 / about
-				:op1 (x11 / name
-					:op1 "Walter"
-					:op2 "Ramazzini"
-					:op3 "Jr.")
+		:ARG0 x11
+		:ARG1 (x19 / yard
+			:null_edge (x17 / about
 				:null_edge 100))
-		:ARG2 (x21 / airplane)
-		:time (x24 / crash-01)))
+		:ARG2 (x22 / airplane)
+		:time (x25 / crash-01)))
 
 # ::id 9
-# ::snt " Walter Ramazzini Jr. was going east, making a left turn from the airport, " Ramazzini said
-(x19 / say-01
-	:name (x2 / name
+# ::snt Walter Ramazzini Jr.  was going east , making a left turn from the airport , Ramazzini said
+(x18 / say-01
+	:name (x1 / name
 		:op1 "Walter"
 		:op2 "Ramazzini"
 		:op3 "Jr.")
 	:ARG1 (x6 / go-02
-		:ARG0 x2
+		:ARG0 x1
 		:direction (x7 / east)
 		:null_edge (x9 / make-02
-			:ARG2 x2
 			:ARG1 (x12 / turn-14
 				:mod (x11 / left))
 			:ARG2 (x15 / airport)))
-	:ARG0 (x18 / person
+	:ARG0 (x17 / person
 		:name (n / name
 			:op1 "Ramazzini")))
 
 # ::id 10
-# ::snt " A gust of wind hit Walter Ramazzini Jr. from right to left
-(x6 / hit-01
-	:ARG0 (x3 / gust
-		:ARG1 (x5 / wind))
-	:ARG1 (x7 / name
+# ::snt A gust of wind hit Walter Ramazzini Jr.  from right to left
+(x5 / hit-01
+	:ARG0 (x2 / gust
+		:ARG1 (x4 / wind))
+	:ARG1 (x6 / name
 		:op1 "Walter"
 		:op2 "Ramazzini"
 		:op3 "Jr.")
@@ -188,88 +188,85 @@
 		:mod (x11 / right)))
 
 # ::id 11
-# ::snt 
-(x5 / do-02
-	:ARG0 (x2 / name
-		:op1 "Walter"
-		:op2 "Ramazzini"
-		:op3 "Jr.")
-	:ARG1 (x7 / bank
+# ::snt Walter Ramazzini Jr.  did three banks
+(x1 / name
+	:op1 "Walter"
+	:op2 "Ramazzini"
+	:op3 "Jr."
+	:ARG0-of (x7 / bank
 		:quant 3))
 
 # ::id 12
-# ::snt The wind made Walter Ramazzini Jr. bank to the left 30 degrees or so
-(x13 / or
+# ::snt The wind made Walter Ramazzini Jr.  bank to the left 30 degrees or so
+(x14 / or
 	:op1 (x2 / wind)
-	:op2 (x7 / bank
+	:op2 (x8 / bank
 		:name (x4 / name
 			:op1 "Walter"
 			:op2 "Ramazzini"
 			:op3 "Jr."))
-	:mod (x10 / left)
+	:mod (x11 / left)
 	:op2 30
-	:op2 (x14 / so))
+	:op2 (x15 / so))
 
 # ::id 13
-# ::snt To correct for that, Walter Ramazzini Jr. banked right and Walter Ramazzini Jr. kept going and passed level flight as if to turn right, " Ramazzini said
-(x29 / say-01
+# ::snt To correct for that , Walter Ramazzini Jr.  banked right and Walter Ramazzini Jr.  kept going and passed level flight as if to turn right , Ramazzini said
+(x30 / say-01
 	:name (x6 / name
 		:op1 "Walter"
 		:op2 "Ramazzini"
 		:op3 "Jr.")
-	:ARG1 (x11 / and
-		:op1 (x9 / bank-01
-			:ARG2 (x2 / correct-01
-				:ARG2 (x4 / that))
-			:ARG0 (x17 / and
-				:op1 (x15 / keep-01
-					:ARG0 (x12 / name
-						:op1 "Walter"
-						:op2 "Ramazzini"
-						:op3 "Jr.")
-					:ARG1 (x16 / go-02
-						:ARG0 x12))
-				:op2 (x18 / pass-05
-					:ARG1 (x20 / fly-01
-						:op (f / flight)
-						:mod (x19 / level))
-					:time (x24 / turn-02
-						:manner (x25 / right)))))
-		:op2 (x10 / right-41))
-	:ARG0 (x28 / person
+	:ARG1 (x12 / and
+		:op1 (x2 / correct-01
+			:ARG2 (x4 / that))
+		:op1 (x10 / banked)
+		:op2 (x11 / right)
+		:op2 (x17 / keep-01
+			:ARG0 (x13 / name
+				:op1 "Walter"
+				:op2 "Ramazzini"
+				:op3 "Jr.")
+			:ARG1 (x19 / and
+				:op2 (x20 / pass-05)
+				:op1 (x22 / fly-01
+					:op (f / flight)
+					:mod (x21 / level))
+				:op1 (x26 / turn-02
+					:time (x27 / right)))))
+	:ARG0 (x29 / person
 		:name (n / name
 			:op1 "Ramazzini")))
 
 # ::id 14
-# ::snt " To correct again for that, Walter Ramazzini Jr. went again to the left ... and went nose-first into the ground, " said Ramazzini, a student pilot
-(x25 / say-01
-	:name (x8 / name
+# ::snt To correct again for that , Walter Ramazzini Jr.  went again to the left ... and went nose-first into the ground , said Ramazzini , a student pilot
+(x24 / say-01
+	:name (x7 / name
 		:op1 "Walter"
 		:op2 "Ramazzini"
 		:op3 "Jr.")
 	:ARG1 (x17 / and
 		:op1 (x11 / go-02
-			:purpose (x3 / correct-01
-				:mod (x4 / again)
-				:ARG2 (x6 / that)
-				:ARG0 x8)
+			:purpose (x2 / correct-01
+				:mod (x3 / again)
+				:ARG2 (x5 / that)
+				:ARG0 x7)
 			:mod (x12 / again)
 			:ARG2 (x15 / left))
 		:op2 (x18 / go-02
-			:direction (x19 / nose-first)
+			:ARG2 (x19 / nose-first)
 			:ARG4 (x22 / ground)))
-	:ARG0 (x26 / person
+	:ARG0 (x25 / person
 		:name (n / name
 			:op1 "Ramazzini")
-		:ARG1-of (x30 / pilot-01
-			:mod (x29 / person
+		:ARG1-of (x29 / pilot-01
+			:mod (x28 / person
 				:ARG0-of (s / study-01)))))
 
 # ::id 15
-# ::snt 
+# ::snt Walter Ramazzini Jr.  hit the ground and cartwheeled over
 (x8 / and
 	:op1 (x5 / hit-01
-		:ARG0 (x2 / name
+		:ARG0 (x1 / name
 			:op1 "Walter"
 			:op2 "Ramazzini"
 			:op3 "Jr.")
@@ -278,43 +275,43 @@
 		:mod (x10 / over)))
 
 # ::id 16
-# ::snt " All Ramazzini saw was a puff of smoke, " Ramazzini said
-(x13 / say-01
-	:ARG1 (x7 / puff-01
-		:ARG0 (x3 / person
+# ::snt All Ramazzini  saw was a puff of smoke , Ramazzini  said
+(x11 / say-01
+	:ARG1 (x6 / puff-01
+		:ARG0 (x2 / person
 			:name (n1 / name
 				:op1 "Ramazzini")
-			:quant (x2 / all))
-		:consist-of (x9 / smoke))
-	:ARG0 (x12 / person
+			:quant (x1 / all))
+		:consist-of (x8 / smoke))
+	:ARG0 (x10 / person
 		:name (n / name
 			:op1 "Ramazzini")))
 
 # ::id 17
-# ::snt 
-(x15 / say-01
-	:ARG1 (x11 / foot
-		:domain (x2 / airplane)
-		:mod (x7 / high
-			:degree (x6 / very))
+# ::snt The airplane was not very high _ maybe 100 feet , Ramazzini said
+(x13 / say-01
+	:ARG1 (x10 / foot
+		:null_edge (x2 / airplane)
+		:mod (x6 / high
+			:degree (x5 / very))
 		:quant 100)
-	:ARG0 (x14 / person
+	:ARG0 (x12 / person
 		:name (n / name
 			:op1 "Ramazzini")))
 
 # ::id 18
-# ::snt " The weather was gusty and showery
-(x6 / and
-	:op1 (x5 / gusty
-		:domain (x3 / weather)))
+# ::snt The weather was gusty and showery
+(x5 / and
+	:op1 (x4 / gusty
+		:domain (x2 / weather)))
 
 # ::id 19
-# ::snt The weather was sprinkling .
+# ::snt The weather  was sprinkling
 (x4 / sprinkle
 	:ARG0 (x2 / weather))
 
 # ::id 20
-# ::snt Ramazzini said Ramazzini was among the first four people at the crash site
+# ::snt Ramazzini  said Ramazzini  was among the first four people at the crash site
 (x2 / say-01
 	:ARG0 (x1 / person
 		:name (n / name
@@ -327,37 +324,37 @@
 			:purpose (x12 / crash-01))))
 
 # ::id 21
-# ::snt " the first four people went up there and there was nobody alive, " Ramazzini said
-(x17 / say-01
-	:ARG1 (x9 / and
+# ::snt the first four people  went up there and there was nobody alive , Ramazzini said
+(x15 / say-01
+	:ARG1 (x8 / and
 		:ARG1-of (xap0 / cause-01
-			:ARG1 (x6 / go-02
+			:ARG1 (x5 / go-02
 				:ARG2 4
-				:direction (x7 / up
-					:op1 (x8 / there))
-				:ARG1 (x12 / nobody
-					:mod (x13 / live-01
+				:direction (x6 / up
+					:op1 (x7 / there))
+				:ARG1 (x11 / nobody
+					:mod (x12 / live-01
 						:op (a / alive))))))
-	:ARG0 (x16 / person
+	:ARG0 (x14 / person
 		:name (n / name
 			:op1 "Ramazzini")))
 
 # ::id 22
-# ::snt " You could smell fuel
-(x3 / possible
-	:domain (x4 / smell
-		:ARG0 (x2 / you)
-		:ARG1 (x5 / fuel)))
+# ::snt You could smell fuel
+(x2 / possible
+	:domain (x3 / smell
+		:ARG0 (x1 / you)
+		:ARG1 (x4 / fuel)))
 
 # ::id 23
-# ::snt the first four people were looking for fire extinguishers .
+# ::snt the first four people  were looking for fire extinguishers
 (x6 / look-01
 	:ARG1 4
 	:ARG1 (x9 / extinguisher
 		:mod (x8 / fire-arm)))
 
 # ::id 24
-# ::snt He said the witnesses thought the airplane might blow up, so the witnesses retreated
+# ::snt He said the witnesses thought the airplane might blow up , so the witnesses  retreated
 (x2 / say-01
 	:ARG0 (x1 / he)
 	:ARG1 (x5 / think-01

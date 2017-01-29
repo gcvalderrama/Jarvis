@@ -1,55 +1,55 @@
 # ::id 1
-# ::snt LJUBLJANA, Yugoslavia -- As federal army tanks and jets pounded the breakaway republic of Slovenia last week, the pin-striped brokers of the Ljubljana Stock Exchange defied air-raid dangers and gathered in the pin-striped brokers of the Ljubljana Stock Exchange sixth-floor trading room
-(x31 / and
-	:op1 (x28 / defy-01
-		:ARG0 (x3 / country
+# ::snt LJUBLJANA , Yugoslavia As federal army tanks and jets pounded the breakaway republic of Slovenia last week , the pin-striped brokers of the Ljubljana Stock Exchange defied air-raid dangers and gathered in the pin-striped brokers of the Ljubljana Stock Exchange  sixth-floor trading room
+(x30 / and
+	:op1 (x27 / defy-01
+		:ARG0 (x1 / country
 			:name (n / name
-				:op1 "Yugoslavia"))
-		:ARG1 (x9 / and
-			:op2 (x1 / country
+				:op1 "LJUBLJANA")
+			:null_edge (x3 / country
 				:name (n1 / name
-					:op1 "LJUBLJANA"))
-			:op1 (x8 / tank
-				:mod (x7 / army
-					:mod (x6 / government-organization
+					:op1 "Yugoslavia")))
+		:ARG1 (x8 / and
+			:op1 (x7 / tank
+				:mod (x6 / army
+					:mod (x5 / government-organization
 						:name (n3 / name
 							:op1 "federal"))))
-			:op2 (x10 / jet)
-			:op1 (x11 / mass-quantity
+			:op2 (x9 / jet)
+			:op1 (x10 / mass-quantity
 				:unit (p / pound)
-				:ARG1 (x14 / republic
-					:ARG0-of (x13 / break-14)
+				:ARG1 (x13 / republic
+					:ARG0-of (x12 / break-14)
 					:ARG1-of (xap0 / enter-01
-						:ARG0 (x16 / country
+						:ARG0 (x15 / country
 							:name (n5 / name
 								:op1 "Slovenia"))))
-				:time (x18 / week
-					:mod (x17 / last))))
-		:ARG0 (x22 / person
+				:time (x17 / week
+					:mod (x16 / last))))
+		:ARG0 (x21 / person
 			:ARG0-of (b / broker-01)
-			:mod (x21 / pin-striped)
-			:ARG1 (x25 / government-organization
+			:mod (x20 / pin-striped)
+			:ARG1 (x24 / government-organization
 				:name (n2 / name
 					:op1 "Ljubljana"
 					:op2 "Stock"
 					:op3 "Exchange")))
-		:ARG1 (x30 / danger
-			:mod (x29 / air-raid)))
-	:op2 (x32 / gather-01
-		:location (x36 / person
+		:ARG1 (x29 / danger
+			:mod (x28 / air-raid)))
+	:op2 (x31 / gather-01
+		:location (x35 / person
 			:ARG0-of (b1 / broker-01)
-			:mod (x35 / pin-striped)
-			:topic (x43 / trade-01
-				:null_edge (x40 / null_tag
-					:location (x39 / organization
+			:mod (x34 / pin-striped)
+			:topic (x42 / trade-01
+				:null_edge (x39 / null_tag
+					:location (x38 / organization
 						:name (n4 / name
 							:op1 "Ljubljana")))
-				:null_edge (x41 / null_tag)
-				:mod (x42 / sixth-floor)))
-		:ARG1 (x44 / room)))
+				:null_edge (x40 / null_tag)
+				:mod (x41 / sixth-floor)))
+		:ARG1 (x43 / room)))
 
 # ::id 2
-# ::snt LJUBLJANA , Yugoslavia was one of their best days ever
+# ::snt LJUBLJANA , Yugoslavia  was one of their best days ever
 (x1 / country
 	:name (n / name
 		:op1 "LJUBLJANA")
@@ -75,21 +75,21 @@
 		:ARG4 (x12 / record)))
 
 # ::id 4
-# ::snt A full 100 % of the corporate stocks -- all two of them -- held steady or rose
-(x15 / hold-04
+# ::snt A full 100 % of the corporate stocks all two of them held steady or rose
+(xap0 / percentage-entity
 	:mod (x2 / full)
+	:value 100
 	:ARG1 (x8 / stock
-		:mod (x7 / corporation))
-	:ARG2 (x17 / or
-		:null_edge (x10 / all
-			:null_edge 2)
-		:op1 (x16 / steady)
-		:op2 (x18 / rise-01)
-		:op2 (xap0 / percentage-entity
-			:value 100)))
+		:mod (x7 / corporation)
+		:quant (x9 / all)
+		:quant (x15 / or
+			:op1 (x14 / steady
+				:null_edge (x11 / include-91
+					:null_edge 2))
+			:op2 (x16 / rise-01))))
 
 # ::id 5
-# ::snt The price of vouchers to obtain foreign exchange jumped 10 %, even though Slovene banks had stopped issuing foreign currency
+# ::snt The price of vouchers to obtain foreign exchange jumped 10 % , even though Slovene banks had stopped issuing foreign currency
 (x9 / jump-06
 	:purpose (x6 / obtain-01
 		:ARG1 (x4 / voucher)
@@ -109,7 +109,7 @@
 	:ARG2 xap0)
 
 # ::id 6
-# ::snt Yesterday, with a tenuous peace settling over Slovenia, the exchange panicked
+# ::snt Yesterday , with a tenuous peace settling over Slovenia , the exchange panicked
 (x13 / panic-01
 	:time (x1 / yesterday)
 	:ARG0 (x12 / exchange-01)
@@ -145,37 +145,37 @@
 	:ARG1 (x6 / beg-01))
 
 # ::id 10
-# ::snt " There is a certain logic to this, " says Drasko Veselinovic, the exchange's chief executive
-(x11 / say-01
-	:ARG1 (x6 / logic
-		:mod (x5 / certain)
-		:mod (x8 / this))
-	:ARG0 (x12 / newspaper
+# ::snt There is a certain logic to this , says Drasko Veselinovic , the exchange's chief executive
+(x9 / say-01
+	:ARG1 (x5 / logic
+		:mod (x4 / certain)
+		:mod (x7 / this))
+	:ARG0 (x10 / newspaper
 		:name (n / name
 			:op1 "Drasko"
 			:op2 "Veselinovic")
-		:ARG0-of (x19 / have-org-role-91
+		:ARG0-of (x17 / have-org-role-91
 			:ARG2 (e / executive)
-			:mod (x18 / chief))))
+			:mod (x16 / chief))))
 
 # ::id 11
-# ::snt " Slovenes are now beginning to see the costs of independence more clearly than when we were at war .
-(x5 / begin-01
-	:ARG0 (x2 / newspaper
+# ::snt Slovenes are now beginning to see the costs of independence more clearly than when we were at war
+(x4 / begin-01
+	:ARG0 (x1 / newspaper
 		:name (n / name
 			:op1 "Slovenes"))
-	:time (x4 / now)
-	:ARG1 (x7 / see-01
-		:ARG1 (x9 / cost-01
-			:ARG1 (x11 / depend-01
+	:time (x3 / now)
+	:ARG1 (x6 / see-01
+		:ARG1 (x8 / cost-01
+			:ARG1 (x10 / depend-01
 				:polarity -))
-		:manner (x13 / clear
-			:degree (x12 / more))
-		:ARG0 (x16 / we
-			:location (x19 / war))))
+		:manner (x12 / clear
+			:degree (x11 / more))
+		:ARG0 (x15 / we
+			:location (x18 / war))))
 
 # ::id 12
-# ::snt The two million people of this picturesque Alpine republic are waking up from The two million people of this picturesque Alpine republic two-week nightmare sobered by the implications of The two million people of this picturesque Alpine republic intoxicating declaration of secession from Yugoslavia on June 25
+# ::snt The two million people of this picturesque Alpine republic are waking up from The two million people of this picturesque Alpine republic  two-week nightmare sobered by the implications of The two million people of this picturesque Alpine republic  intoxicating declaration of secession from Yugoslavia on June 25
 (x11 / wake-02
 	:ARG2 (x9 / republic
 		:mod (x6 / this)
@@ -207,7 +207,7 @@
 						:time (x46 / date-entity)))))))
 
 # ::id 13
-# ::snt The two million people of this picturesque Alpine republic bravado is undiminished, reflected in the almost unanimous feeling that there can be no going back now that blood has been spilled in defense of independence
+# ::snt The two million people of this picturesque Alpine republic  bravado is undiminished , reflected in the almost unanimous feeling that there can be no going back now that blood has been spilled in defense of independence
 (x9 / republic
 	:mod (x6 / this)
 	:mod (x7 / picturesque)
@@ -232,7 +232,7 @@
 									:polarity -)))))))))
 
 # ::id 14
-# ::snt But there is also a growing unease about going forward, because no one knows where Slovenia is headed
+# ::snt But there is also a growing unease about going forward , because no one knows where Slovenia is headed
 (x1 / contrast-01
 	:mod (x4 / also)
 	:ARG2 (x7 / unease
@@ -248,7 +248,7 @@
 								:op1 "Slovenia"))))))))
 
 # ::id 15
-# ::snt For the moment, the Slovenes are feeling lonely, unrecognized by the nations of the world
+# ::snt For the moment , the Slovenes are feeling lonely , unrecognized by the nations of the world
 (x8 / feel-01
 	:time (x3 / moment)
 	:ARG0 (x6 / newspaper
@@ -259,7 +259,7 @@
 	:location (x17 / world))
 
 # ::id 16
-# ::snt Their considerable trade with the rest of Yugoslavia, which helped make them the country's richest people, is vanishing
+# ::snt Their considerable trade with the rest of Yugoslavia , which helped make them the country's richest people , is vanishing
 (x21 / vanish
 	:ARG0 (x3 / trade-01
 		:quant (x2 / considerable)
@@ -274,40 +274,45 @@
 								:degree (m / most)))))))))
 
 # ::id 17
-# ::snt The two million people of this picturesque Alpine republic identity is being turned upside down ; once known as Yugoslavia's " developed north, " Slovenia will now be lumped together with Western Europe's " underdeveloped south .
+# ::snt The two million people of this picturesque Alpine republic  identity is being turned upside down ; once known as Yugoslavia's developed north , Slovenia will now be lumped together with Western Europe's underdeveloped south
 (x / xconcept
 	:x (x16 / and
-		:op2 (x31 / lump-01
-			:null_edge (x18 / know-01
-				:ARG2 (x9 / republic
-					:mod (x6 / this)
-					:mod (x7 / picturesque)
-					:mod (x8 / world-region
-						:name (n / name
-							:op1 "Alpine"))
-					:ARG1-of (x13 / turn-02
-						:direction (x14 / upside)))
-				:ARG2 (x20 / country
-					:name (n4 / name
-						:op1 "Yugoslavia")
-					:ARG1-of (x23 / develop-02
-						:location (x24 / north))))
-			:ARG1 (x27 / country
-				:name (n2 / name
-					:op1 "Slovenia"))
-			:time (x29 / now)
-			:mod (x32 / together)
-			:null_edge (x39 / south
-				:mod (x38 / underdeveloped)))
-		:op1 (x35 / continent
-			:name (n1 / name
+		:op2 (x9 / republic
+			:mod (x6 / this)
+			:mod (x7 / picturesque)
+			:mod (x8 / world-region
+				:name (n / name
+					:op1 "Alpine")))
+		:op1 (x13 / turn-01
+			:ARG1 (x10 / identity)
+			:direction (x15 / down
+				:mod (x14 / upside))
+			:null_edge (x29 / lump-01
+				:ARG1-of (x18 / know-01
+					:ARG2 (xap1 / country
+						:ARG0-of (xap0 / relative-position
+							:ARG1 (x20 / country
+								:name (n2 / name
+									:op1 "Yugoslavia"))
+							:op1 (x23 / north
+								:mod (x22 / develop-02)))))
+				:time (x27 / now)
+				:mod (x30 / together)
+				:null_edge (x36 / south
+					:mod (x35 / underdeveloped))
+				:ARG1 (xap2 / enter-01
+					:ARG0 (x25 / country
+						:name (n1 / name
+							:op1 "Slovenia")))))
+		:op1 (x33 / continent
+			:name (n3 / name
 				:op1 "Europe")
-			:null_edge (x34 / country
-				:name (n3 / name
+			:null_edge (x32 / country
+				:name (n4 / name
 					:op1 "Western")))))
 
 # ::id 18
-# ::snt Nationalism overshadows pragmatism, a quality that once distinguished Slovenia from the rest of the often bewildering Balkans
+# ::snt Nationalism overshadows pragmatism , a quality that once distinguished Slovenia from the rest of the often bewildering Balkans
 (x2 / overshadow
 	:ARG0 (x1 / newspaper
 		:name (n / name
@@ -326,23 +331,23 @@
 							:frequency (x16 / often))))))))
 
 # ::id 19
-# ::snt " We 've decided to be our own country, " says Mr. Veselinovic, " but we really do n't know how we will execute our own country .
-(x17 / contrast-01
-	:ARG1 (x12 / say-01
-		:ARG1 (x4 / decide-01
-			:ARG0 (x2 / we)
-			:ARG1 (x9 / country))
-		:ARG0 (x14 / person
+# ::snt We have decided to be our own country , says Mr. Veselinovic , but we really do not know how we will execute our own country
+(x14 / contrast-01
+	:ARG1 (x3 / decide-01
+		:ARG0 (x1 / we)
+		:ARG1 (x8 / country))
+	:ARG1 (x10 / say-01
+		:ARG0 (x12 / person
 			:name (n / name
 				:op1 "Veselinovic")
-			:null_edge (x13 / null_tag)))
-	:ARG2 (x22 / know-01
-		:ARG0 x14
-		:ARG0 (x18 / we)
-		:mod (x19 / really)
-		:ARG1 (x26 / execute-01
-			:ARG0 (x24 / we)
-			:ARG1 (x29 / country))))
+			:null_edge (x11 / null_tag)))
+	:ARG2 (x19 / know-01
+		:ARG0 x1
+		:ARG0 (x15 / we)
+		:mod (x16 / really)
+		:ARG1 (x23 / execute-01
+			:ARG0 (x21 / we)
+			:ARG1 (x26 / country))))
 
 # ::id 20
 # ::snt The Balkanization of this Balkan country has also become Europe's worst nightmare
@@ -362,7 +367,7 @@
 		:mod (x12 / bad)))
 
 # ::id 21
-# ::snt Almost every country on the continent has Almost every country on the continent own disenchanted minorities, from the Soviet Baltics to French Corsica, that could be encouraged by the independence declarations of Slovenia and the neighboring republic of Croatia
+# ::snt Almost every country on the continent has Almost every country on the continent  own disenchanted minorities , from the Soviet Baltics to French Corsica , that could be encouraged by the independence declarations of Slovenia and the neighboring republic of Croatia
 (x7 / have-03
 	:ARG0 (x3 / country
 		:mod (x2 / every
@@ -402,7 +407,7 @@
 										:op1 "Slovenia"))))))))))
 
 # ::id 22
-# ::snt Soviet leader Mikhail Gorbachev has held up recent events here -- the Yugoslav army assault on Slovenia and the bitter ethnic clashes between Croats and Serbs -- as a warning to Soviet leader Mikhail Gorbachev land of what can happen when nationalism fractures a country
+# ::snt Soviet leader Mikhail Gorbachev has held up recent events here the Yugoslav army assault on Slovenia and the bitter ethnic clashes between Croats and Serbs as a warning to Soviet leader Mikhail Gorbachev  land of what can happen when nationalism fractures a country
 (x6 / hold-04
 	:ARG0 (x3 / newspaper
 		:name (n / name
@@ -411,47 +416,47 @@
 		:ARG0-of (x2 / lead-02)
 		:ARG0-of (xap0 / name
 			:op1 "Soviet"))
-	:ARG1 (x9 / event
-		:time (x8 / recent)
-		:ARG1 (x18 / and
-			:op1 (x15 / assault-01
-				:mod (x13 / country
-					:name (n1 / name
-						:op1 "Yugoslav"))
-				:mod (x14 / army))
-			:op2 (x22 / clash-01
-				:manner (x20 / bitter)
-				:mod (x21 / ethnic)
-				:ARG1 (x25 / and
-					:op1 (x24 / publication
-						:name (n3 / name
-							:op1 "Croats"))
-					:op2 (x26 / newspaper
-						:name (n4 / name
-							:op1 "Serbs"))))
-			:op1 (xap1 / enter-01
-				:ARG0 (x17 / country
-					:name (n2 / name
-						:op1 "Slovenia")))))
 	:location (x10 / here)
-	:null_edge (x30 / warn-01
-		:ARG1 (x36 / land
-			:name (x34 / name
+	:ARG1 (x17 / and
+		:op1 (x9 / event
+			:time (x8 / recent))
+		:op2 (x14 / assault-01
+			:mod (x12 / country
+				:name (n1 / name
+					:op1 "Yugoslav"))
+			:mod (x13 / army)
+			:ARG1 (xap1 / enter-01
+				:ARG0 (x16 / country
+					:name (n2 / name
+						:op1 "Slovenia"))))
+		:op2 (x21 / clash-01
+			:mod (x19 / bitter)
+			:mod (x20 / ethnic)
+			:ARG1 (x24 / and
+				:op1 (x23 / publication
+					:name (n3 / name
+						:op1 "Croats"))
+				:op2 (x25 / newspaper
+					:name (n4 / name
+						:op1 "Serbs")))))
+	:null_edge (x28 / warn-01
+		:ARG1 (x34 / land
+			:name (x32 / name
 				:op1 "Mikhail"
 				:op2 "Gorbachev"
-				:ARG0-of (x33 / lead-02)
+				:ARG0-of (x31 / lead-02)
 				:ARG0-of (xap3 / country
 					:ARG0-of (xap2 / name
 						:op1 "Soviet")))
-			:location-of (x39 / possible
-				:domain (x40 / thing
+			:location-of (x37 / possible
+				:domain (x38 / thing
 					:ARG1-of (h / happen-01)
-					:condition (x43 / fracture
-						:ARG0 (x42 / nationalism)
-						:ARG1 (x45 / country)))))))
+					:condition (x41 / fracture
+						:ARG0 (x40 / nationalism)
+						:ARG1 (x43 / country)))))))
 
 # ::id 23
-# ::snt While the European Community is counting on the peace plan the European Community brokered to defuse tensions (the European Community calls for a three-month period of negotiations in Yugoslavia -RRB-, most governments concede that the country's breakup is inevitable
+# ::snt While the European Community is counting on the peace plan the European Community  brokered to defuse tensions (the European Community  calls for a three-month period of negotiations in Yugoslavia ), most governments concede that the country's breakup is inevitable
 (x35 / concede-01
 	:condition (x6 / count-01
 		:ARG0 (x3 / organization
@@ -503,56 +508,56 @@
 					:mod (x14 / various))))))
 
 # ::id 25
-# ::snt 
-(x29 / tell-01
-	:ARG1 (x5 / have-03
-		:ARG1 (x3 / and
-			:op2 (x4 / newspaper
+# ::snt Croats and Serbs  have every sympathy for small peoples who aspire to affirm small peoples  national identity by democratic methods , the Swiss foreign minister reportedly told a European conference on national minorities
+(x27 / tell-01
+	:ARG1 (x4 / have-03
+		:ARG1 (x2 / and
+			:op2 (x3 / newspaper
 				:name (n2 / name
 					:op1 "Serbs")))
-		:ARG1 (x7 / sympathy
-			:mod (x6 / every)
-			:ARG1 (x10 / people
-				:mod (x9 / small)
-				:ARG1-of (x12 / aspire-01
-					:ARG1 (x14 / affirm
-						:null_edge (x16 / null_tag
-							:mod (x15 / small))
-						:ARG1 (x18 / identity
-							:mod (x17 / nation))
-						:instrument (x21 / method
-							:mod (x20 / democracy)))))))
-	:ARG0 (x27 / have-org-role-91
+		:ARG1 (x6 / sympathy
+			:mod (x5 / every)
+			:ARG1 (x9 / people
+				:mod (x8 / small)
+				:ARG1-of (x11 / aspire-01
+					:ARG1 (x13 / affirm
+						:null_edge (x15 / null_tag
+							:mod (x14 / small))
+						:ARG1 (x17 / identity
+							:mod (x16 / nation))
+						:instrument (x20 / method
+							:mod (x19 / democracy)))))))
+	:ARG0 (x25 / have-org-role-91
 		:ARG2 (m / minister)
-		:ARG1 (x25 / country
+		:ARG1 (x23 / country
 			:name (n / name
 				:op1 "Switzerland"))
-		:mod (x26 / foreign))
-	:ARG1-of (x28 / report-01)
-	:ARG2 (x32 / conference
-		:mod (x31 / continent
+		:mod (x24 / foreign))
+	:ARG1-of (x26 / report-01)
+	:ARG2 (x30 / conference
+		:mod (x29 / continent
 			:name (n1 / name
 				:op1 "European"))
-		:topic (x35 / minority
-			:mod (x34 / nation))))
+		:topic (x33 / minority
+			:mod (x32 / nation))))
 
 # ::id 26
-# ::snt " But that does n't mean Croats and Serbs can accept the unilateral alteration of frontiers .
-(x2 / contrast-01
-	:ARG2 (x6 / mean-01
-		:ARG1 (x10 / possible
-			:domain (x11 / accept-01
-				:ARG1 (x8 / and
-					:op2 (x3 / that)
-					:op2 (x9 / newspaper
+# ::snt But that does not mean Croats and Serbs  can accept the unilateral alteration of frontiers
+(x1 / contrast-01
+	:ARG2 (x5 / mean-01
+		:ARG0 (x2 / that)
+		:ARG1 (x9 / possible
+			:domain (x10 / accept-01
+				:ARG1 (x7 / and
+					:op2 (x8 / newspaper
 						:name (n / name
 							:op1 "Serbs")))
-				:ARG1 (x14 / alteration
-					:manner (x13 / unilateral)
-					:ARG0 (x16 / frontier))))))
+				:ARG1 (x13 / alteration
+					:manner (x12 / unilateral)
+					:ARG0 (x15 / frontier))))))
 
 # ::id 27
-# ::snt This shunning by Western Europe, and the U.S., is particularly disillusioning for a people who enjoy their BMWs, Peugeots and Fiats, their shopping trips to Munich and Venice and their vacation chalets in the Alps
+# ::snt This shunning by Western Europe , and the U.S. , is particularly disillusioning for a people who enjoy their BMWs , Peugeots and Fiats , their shopping trips to Munich and Venice and their vacation chalets in the Alps
 (x13 / disillusion-01
 	:ARG1 (x7 / and
 		:op1 (x2 / shun)
@@ -588,7 +593,7 @@
 							:location (x39 / alps))))))))
 
 # ::id 28
-# ::snt The Slovenes, from their days in the Austro-Hungarian empire, have always considered themselves to be Westerners
+# ::snt The Slovenes , from their days in the Austro-Hungarian empire , have always considered themselves to be Westerners
 (x14 / consider-01
 	:ARG0 (x2 / newspaper
 		:name (n / name
@@ -606,7 +611,7 @@
 				:op1 "Westerners"))))
 
 # ::id 29
-# ::snt Nestled between the Alps and the Adriatic, Slovenia became the most prosperous patch of communist Europe
+# ::snt Nestled between the Alps and the Adriatic , Slovenia became the most prosperous patch of communist Europe
 (x10 / become-01
 	:ARG1 (x1 / country
 		:name (n / name
@@ -643,7 +648,7 @@
 				:op1 "Yugoslavia"))))
 
 # ::id 31
-# ::snt But as Slovenes measure themselves with Western Europe, it is they who are the poorer cousins
+# ::snt But as Slovenes measure themselves with Western Europe , it is they who are the poorer cousins
 (x1 / contrast-01
 	:ARG2 (x4 / measure-01
 		:ARG0 (x3 / newspaper
@@ -659,7 +664,7 @@
 		:mod (x16 / poor)))
 
 # ::id 32
-# ::snt Joze Mencinger, an economist and former finance minister of Slovenia, illustrates the republic's economic resilience by noting that while Yugoslavia's industrial output fell 18 % so far this year, Slovenia's declined only 10 %
+# ::snt Joze Mencinger , an economist and former finance minister of Slovenia , illustrates the republic's economic resilience by noting that while Yugoslavia's industrial output fell 18 % so far this year , Slovenia's declined only 10 %
 (x13 / illustrate
 	:ARG1 (x6 / and
 		:op1 (x1 / newspaper
@@ -699,7 +704,7 @@
 				:value 10))))
 
 # ::id 33
-# ::snt When reminded by a visitor that Austria, in contrast, is posting robust growth, a visitor that Austria , in contrast , is posting robust growth grows somber
+# ::snt When reminded by a visitor that Austria , in contrast , is posting robust growth , a visitor that Austria , in contrast , is posting robust growth  grows somber
 (x29 / grow-01
 	:concession (x2 / remind-01)
 	:ARG0 (x18 / person
@@ -723,63 +728,60 @@
 	:ARG2 (x30 / somber))
 
 # ::id 34
-# ::snt " Okay, Joze Mencinger , an economist and former finance minister of Slovenia must realize that Joze Mencinger , an economist and former finance minister of Slovenia will be the less-developed part of Europe, " a visitor that Austria , in contrast , is posting robust growth says
-(x50 / say-01
-	:ARG1 (x16 / realize-02
-		:mod (x2 / okay)
-		:ARG0 (x9 / and
-			:op1 (x4 / person
-				:name (n / name
-					:op1 "Joze")
-				:ARG0-of (x12 / have-org-role-91
-					:ARG2 (m / minister)
-					:mod (x10 / former)
-					:mod (x11 / finance)
-					:ARG1 (xap0 / enter-01
-						:ARG0 (x14 / country
-							:name (n4 / name
-								:op1 "Slovenia")))))
-			:op2 (x8 / economist))
-		:ARG1 (x23 / and
-			:op1 (x18 / newspaper
+# ::snt Okay , Joze Mencinger , an economist and former finance minister of Slovenia  must realize that Joze Mencinger , an economist and former finance minister of Slovenia  will be the less-developed part of Europe , a visitor that Austria , in contrast , is posting robust growth  says
+(x15 / realize-01
+	:mod (x1 / okay)
+	:ARG1 (x8 / and
+		:op2 (x7 / economist
+			:ARG0-of (x11 / have-org-role-91
+				:ARG2 (m / minister)
+				:mod (x9 / former)
+				:mod (x10 / finance)
+				:ARG1 (xap0 / enter-01
+					:ARG0 (x13 / country
+						:name (n3 / name
+							:op1 "Slovenia"))))))
+	:ARG1 (x22 / and
+		:op1 (x17 / newspaper
+			:name (n / name
+				:op1 "Joze"
+				:op2 "Mencinger")
+			:ARG0-of (x25 / have-org-role-91
+				:ARG2 (m1 / minister)
+				:mod (x23 / former)
+				:mod (x24 / finance)
+				:ARG1 (xap1 / enter-01
+					:ARG0 (x27 / country
+						:name (n4 / name
+							:op1 "Slovenia")))))
+		:op2 (x21 / economist)
+		:mod (x31 / less-developed)
+		:op2 (x42 / contrast-01
+			:location (x34 / continent
 				:name (n1 / name
-					:op1 "Joze"
-					:op2 "Mencinger")
-				:ARG0-of (x26 / have-org-role-91
-					:ARG2 (m1 / minister)
-					:mod (x24 / former)
-					:mod (x25 / finance)
-					:ARG1 (xap1 / enter-01
-						:ARG0 (x28 / country
-							:name (n5 / name
-								:op1 "Slovenia")))))
-			:op2 (x22 / economist)
-			:mod (x32 / less-developed
-				:poss (x35 / continent
-					:name (n3 / name
-						:op1 "Europe")))))
-	:ARG0 (x39 / person
-		:ARG0-of (v / visit-01)
-		:ARG0-of (x47 / post-01
-			:ARG0 (x41 / country
-				:name (n2 / name
-					:op1 "Austria"))
-			:ARG1 (x49 / grow-01
-				:topic (x44 / contrast-01)
-				:manner (x48 / robust)))))
+					:op1 "Europe"))
+			:null_edge (x37 / person
+				:ARG0-of (v / visit-01))
+			:ARG0-of (x45 / post-01
+				:ARG0 (x39 / country
+					:name (n2 / name
+						:op1 "Austria"))
+				:ARG1 (x47 / grow-01
+					:manner (x46 / robust)
+					:ARG1 (x48 / say-01))))))
 
 # ::id 35
-# ::snt " Unfortunately, in times of transition like this, people's expectations are often wrong
-(x16 / wrong-41
-	:mod (x2 / unfortunate)
-	:ARG2 (x7 / transition-01
+# ::snt Unfortunately , in times of transition like this , people's expectations are often wrong
+(x15 / wrong-41
+	:mod (x1 / unfortunate)
+	:ARG2 (x6 / transition-01
 		:ARG1-of (xap0 / resemble-01
-			:ARG2 (x9 / this)))
-	:ARG1 (x13 / expect-01)
-	:frequency (x15 / often))
+			:ARG2 (x8 / this)))
+	:ARG1 (x12 / expect-01)
+	:frequency (x14 / often))
 
 # ::id 36
-# ::snt Everybody expected that Joze Mencinger , an economist and former finance minister of Slovenia could become Austria and Switzerland overnight .
+# ::snt Everybody expected that Joze Mencinger , an economist and former finance minister of Slovenia  could become Austria and Switzerland overnight
 (x2 / expect-01
 	:ARG0 (x1 / everybody)
 	:ARG1 (x15 / possible
@@ -815,7 +817,7 @@
 			:mod (x5 / even))))
 
 # ::id 38
-# ::snt Slovenia's exports of assembled cars, pharmaceuticals, refrigerators and furniture account for a third of the total value of the goods and services it produces
+# ::snt Slovenia's exports of assembled cars , pharmaceuticals , refrigerators and furniture account for a third of the total value of the goods and services it produces
 (x20 / value-01
 	:ARG2 (x13 / account
 		:domain (x3 / export-01
@@ -857,7 +859,7 @@
 									:op1 "European")))))))))
 
 # ::id 40
-# ::snt Slovenia is counting on expanding its already extensive ties with Austria (a joint venture between Austrian and Slovene companies recently completed a high-tech Alpine tunnel opening another border crossing )as well as courting more business with Slovenia other old Austro-Hungarian partners, Czechoslovakia and Hungary
+# ::snt Slovenia is counting on expanding its already extensive ties with Austria (a joint venture between Austrian and Slovene companies recently completed a high-tech Alpine tunnel opening another border crossing )as well as courting more business with Slovenia  other old Austro-Hungarian partners , Czechoslovakia and Hungary
 (x3 / count-02
 	:ARG2 (x5 / expand-01
 		:ARG1 (x9 / tie-01
@@ -930,58 +932,55 @@
 				:quant 1))))
 
 # ::id 42
-# ::snt 
-(x15 / say-01
-	:ARG1 (x3 / dream-01
-		:ARG0 (x2 / newspaper
-			:name (n1 / name
+# ::snt Slovenes dream of  is not size that makes a country successful , says Josip Skoberne , head of the international division of the Slovene Chamber of Economy , citing EC-member Luxembourg , far smaller in population and area than Slovenia
+(x13 / say-01
+	:ARG1 (x6 / size
+		:null_edge (x1 / world-region
+			:name (n / name
 				:op1 "Slovenes"))
-		:ARG1 (x7 / size
-			:ARG1 (x9 / make-02
-				:ARG1 (x12 / succeed-01
-					:ARG0 (x11 / country)))))
-	:ARG0 (x16 / newspaper
-		:name (n / name
-			:op1 "Josip"
-			:op2 "Skoberne")
-		:ARG0-of (x19 / head-01
-			:ARG1 (x23 / division
-				:mod (x22 / international)
-				:part-of (x27 / government-organization
-					:name (n2 / name
-						:op1 "Chamber"
-						:op2 "of"
-						:op3 "Economy")
-					:mod (x26 / organization
-						:name (n3 / name
-							:op1 "Slovene")))
-				:ARG0-of (x31 / cite-01
-					:ARG1 (x33 / country
-						:name (n4 / name
-							:op1 "Luxembourg")
-						:mod (x32 / ec-member)))
-				:mod (x36 / small
-					:compared-to (xap0 / enter-01
-						:ARG1 (x39 / and
-							:op1 (x38 / population)
-							:op2 (x40 / area))
-						:ARG0 (x42 / country
-							:name (n5 / name
-								:op1 "Slovenia"))))))))
+		:ARG0-of (x8 / make-02
+			:ARG1 (x11 / succeed-01
+				:ARG0 (x10 / country
+					:name (x14 / name
+						:op1 "Josip"
+						:op2 "Skoberne"
+						:ARG0-of (x17 / head-01
+							:ARG1 (x21 / division
+								:mod (x20 / international)
+								:part-of (x25 / government-organization
+									:name (n3 / name
+										:op1 "Chamber"
+										:op2 "of"
+										:op3 "Economy")
+									:mod (x24 / organization
+										:name (n4 / name
+											:op1 "Slovene"))))))))))
+	:instrument (x29 / cite-01
+		:ARG1 (x31 / country
+			:name (n1 / name
+				:op1 "Luxembourg")
+			:mod (x30 / ec-member)
+			:mod (x34 / small
+				:compared-to (xap0 / enter-01
+					:ARG1 (x37 / and
+						:op1 (x36 / population)
+						:op2 (x38 / area))
+					:ARG0 (x40 / country
+						:name (n2 / name
+							:op1 "Slovenia")))))))
 
 # ::id 43
-# ::snt " Slovenes dream of's your ability to engage in international trade that makes you viable .
+# ::snt Slovenes dream of  is your ability to engage in international trade that makes you viable
 (xap0 / capable-41
-	:ARG0 (x2 / newspaper
+	:mod (x1 / world-region
 		:name (n / name
 			:op1 "Slovenes"))
-	:snt2 (x3 / dream-01)
-	:ARG1 (x9 / engage-01
-		:ARG2 (x12 / trade-01
-			:mod (x11 / international)
-			:ARG0-of (x14 / make-02
-				:ARG1 (x16 / viable
-					:domain (x15 / you))))))
+	:ARG1 (x8 / engage-01
+		:ARG2 (x11 / trade-01
+			:mod (x10 / international)
+			:ARG0-of (x13 / make-02
+				:ARG1 (x15 / viable
+					:domain (x14 / you))))))
 
 # ::id 44
 # ::snt Finding new markets in the West is all the more urgent with the certain decline in Slovenia's trade with the rest of Yugoslavia
@@ -1006,7 +1005,7 @@
 						:op1 "Yugoslavia"))))))
 
 # ::id 45
-# ::snt A quarter of all goods produced in Slovenia are purchased by other Yugoslavs, and Slovene leaders counted on maintaining these ties even after declaring independence
+# ::snt A quarter of all goods produced in Slovenia are purchased by other Yugoslavs , and Slovene leaders counted on maintaining these ties even after declaring independence
 (x15 / and
 	:op2 (x18 / count-03
 		:ARG1 (x10 / purchase-01
@@ -1032,7 +1031,7 @@
 							:polarity -)))))))
 
 # ::id 46
-# ::snt But the recent fighting, Slovene leaders believe, ended all hope of economic union
+# ::snt But the recent fighting , Slovene leaders  believe , ended all hope of economic union
 (x1 / contrast-01
 	:ARG2 (x10 / end-01
 		:ARG1 (x4 / fight-01
@@ -1049,72 +1048,73 @@
 				:mod (x14 / economy)))))
 
 # ::id 47
-# ::snt " Unbelievable, " scoffs Mr. Skoberne as Josip Skoberne reads a letter telefaxed from the council of Banja Luka, a town with a large Serbian population in the province of Bosnia-Hercegovina, decreeing that all Slovene-owned assets in the city are to be inventoried and frozen
-(x5 / scoff
-	:ARG0 (x7 / person
-		:name (n / name
-			:op1 "Skoberne")
-		:null_edge (x6 / null_tag))
-	:null_edge (x11 / read-01
-		:ARG0 (x9 / newspaper
-			:name (n1 / name
-				:op1 "Josip"
-				:op2 "Skoberne"))
-		:ARG1 (x13 / letter
-			:ARG1-of (x14 / telefax
-				:ARG2 (x17 / council
-					:mod (x23 / town
-						:location (x19 / country
-							:name (n3 / name
-								:op1 "Banja"))
-						:location (x20 / country
-							:name (n4 / name
-								:op1 "Luka"))
-						:prep-with (x28 / population
-							:mod (x26 / large)
-							:mod (x27 / country
-								:name (n5 / name
-									:op1 "Serbia"))
-							:location (x31 / province
-								:poss (x33 / country
-									:name (n6 / name
-										:op1 "Bosnia-Hercegovina"))))))))
-		:ARG1 (x35 / decree-01
-			:ARG1 (x39 / asset
-				:quant (x37 / all)
-				:mod (x38 / organization
-					:name (n2 / name
-						:op1 "Slovene-owned"))
-				:location (x42 / city)
-				:poss (x47 / and
-					:op1 (x46 / inventory-00)
-					:op2 (x48 / freeze-01)))))
-	:ARG1 (xap0 / possible
-		:domain (x2 / believe-01)))
+# ::snt Unbelievable , scoffs Mr. Skoberne as Josip Skoberne  reads a letter telefaxed from the council of Banja Luka , a town with a large Serbian population in the province of Bosnia-Hercegovina , decreeing that all Slovene-owned assets in the city are to be inventoried and frozen
+(xap0 / possible
+	:domain (x1 / believe-01
+		:ARG1 (x3 / scoff
+			:ARG1 (x5 / person
+				:name (n / name
+					:op1 "Skoberne")
+				:null_edge (x4 / null_tag))
+			:condition (x9 / read-01
+				:ARG0 (x7 / newspaper
+					:name (n1 / name
+						:op1 "Josip"
+						:op2 "Skoberne"))
+				:ARG1 (x11 / letter
+					:ARG1-of (x12 / telefax
+						:ARG2 (x15 / council
+							:mod (x21 / town
+								:location (x17 / country
+									:name (n3 / name
+										:op1 "Banja"))
+								:location (x18 / country
+									:name (n4 / name
+										:op1 "Luka"))
+								:prep-with (x26 / population
+									:mod (x24 / large)
+									:mod (x25 / country
+										:name (n5 / name
+											:op1 "Serbia"))
+									:location (x29 / province
+										:poss (x31 / country
+											:name (n6 / name
+												:op1 "Bosnia-Hercegovina"))))))))
+				:ARG1 (x33 / decree-01
+					:ARG0 x7
+					:ARG1 (x37 / asset
+						:quant (x35 / all)
+						:mod (x36 / organization
+							:name (n2 / name
+								:op1 "Slovene-owned"))
+						:location (x40 / city)
+						:poss (x45 / and
+							:op1 (x44 / inventory-00)
+							:op2 (x46 / freeze-01))))))))
 
 # ::id 48
-# ::snt 
+# ::snt One of the major motivations behind Slovenia's independence grab was to free itself from the Yugoslav risk that hampered most attempts to attract foreign investment
 (x13 / free-41
-	:ARG1-of (x2 / include-91
+	:ARG2-of (x2 / include-91
 		:ARG2 (xap0 / enter-01
 			:mod (x4 / major)
 			:ARG0 (x7 / country
 				:name (n1 / name
 					:op1 "Slovenia"))
 			:ARG1 (x10 / grab-01)))
-	:ARG2 (x19 / risk-01
-		:mod (x18 / country
+	:ARG2 (x18 / risk-01
+		:mod (x17 / country
 			:name (n / name
-				:op1 "Yugoslav")))
-	:time (x22 / hamper
-		:ARG1 (x24 / attempt-01
-			:mod (x23 / most)
-			:ARG1 (x26 / attract-01
-				:ARG1 (x28 / invest-01
-					:mod (x27 / foreign))))))
+				:op1 "Yugoslav"))
+		:ARG0-of (x20 / hamper
+			:ARG1 (x22 / attempt-01
+				:mod (x21 / most)
+				:ARG1 (x24 / attract-01
+					:ARG1 (x26 / invest-01
+						:mod (x25 / foreign)))))))
 
 # ::id 49
-# ::snt Now, Mr. Skoberne and others worry about an emerging " Slovene risk .
+# ::snt Now , Mr. Skoberne and others worry about an emerging Slovene risk
 (x7 / worry-01
 	:time (x1 / now)
 	:ARG0 (x5 / and
@@ -1123,14 +1123,14 @@
 				:op1 "Skoberne")
 			:null_edge (x3 / null_tag))
 		:op2 (x6 / other))
-	:ARG1 (x13 / risk-01
+	:ARG1 (x12 / risk-01
 		:ARG0-of (x10 / emerge-01)
-		:mod (x12 / world-region
+		:mod (x11 / world-region
 			:name (n1 / name
 				:op1 "Slovene"))))
 
 # ::id 50
-# ::snt At the stock exchange, Mr. Veselinovic frets that Drasko Veselinovic post-independence plans to trade in gold, commodities and foreign currencies are jeopardized by the uncertainty engulfing Slovenia
+# ::snt At the stock exchange , Mr. Veselinovic frets that Drasko Veselinovic  post-independence plans to trade in gold , commodities and foreign currencies are jeopardized by the uncertainty engulfing Slovenia
 (x8 / fret
 	:topic (x4 / exchange-01
 		:ARG1 (x3 / stock))
@@ -1158,38 +1158,38 @@
 						:op1 "Slovenia"))))))
 
 # ::id 51
-# ::snt " Mr. Skoberne and others had been getting a lot of interest from abroad, but others wo n't invest now while things are so unsettled, " Drasko Veselinovic says
-(x31 / say-01
-	:ARG1 (x8 / get-01
-		:ARG0 (x4 / and
-			:op1 (x3 / person
+# ::snt 
+(x29 / say-01
+	:ARG1 (x7 / get-01
+		:ARG0 (x3 / and
+			:op1 (x2 / person
 				:name (n1 / name
 					:op1 "Skoberne")
-				:null_edge (x2 / null_tag))
-			:op2 (x5 / other))
-		:ARG1 (x12 / interest-01
-			:quant (x10 / lot)
-			:ARG1 (x20 / invest-01
-				:ARG0 (x17 / other)
-				:time (x21 / now)
-				:null_edge (x26 / unsettled
-					:ARG1 (x23 / thing))))
-		:source (x14 / abroad
-			:prep-by x20))
-	:ARG0 (x29 / newspaper
+				:null_edge (x1 / null_tag))
+			:op2 (x4 / other))
+		:ARG1 (x11 / interest-01
+			:quant (x9 / lot)
+			:ARG1 (x19 / invest-01
+				:ARG0 (x16 / other)
+				:time (x20 / now)
+				:null_edge (x25 / unsettled
+					:ARG1 (x22 / thing))))
+		:source (x13 / abroad
+			:prep-by x19))
+	:ARG0 (x27 / newspaper
 		:name (n / name
 			:op1 "Drasko"
 			:op2 "Veselinovic")))
 
 # ::id 52
-# ::snt " But this is only logical
-(x2 / contrast-01
-	:ARG2 (x6 / logic
-		:domain (x3 / this)
-		:mod (x5 / only)))
+# ::snt But this is only logical
+(x1 / contrast-01
+	:ARG2 (x5 / logic
+		:domain (x2 / this)
+		:mod (x4 / only)))
 
 # ::id 53
-# ::snt Drasko Veselinovic would n't do it, either .
+# ::snt Drasko Veselinovic  would not do it , either
 (x5 / do-02
 	:ARG0 (x1 / newspaper
 		:name (n / name

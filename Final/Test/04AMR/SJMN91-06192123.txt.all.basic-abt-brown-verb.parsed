@@ -1,19 +1,24 @@
 # ::id 1
-# ::snt One by one the customers filtered out of the Orion Telescope Center, eclipsing personal dignity in the customers zeal to view the sun through geeky, fluorescent-green paper eyeshades. ; " It works : I see the sun, " exclaimed customer Jim Maurer as he peered at the Cupertino sky through his five-buck Startrap Eclipse Viewers
+# ::snt One by one the customers filtered out of the Orion Telescope Center , eclipsing personal dignity in the customers  zeal to view the sun through geeky , fluorescent-green paper eyeshades. ; It works : I see the sun , exclaimed customer Jim Maurer as he peered at the Cupertino sky through his five-buck Startrap Eclipse Viewers
 (x / xconcept
 	:x (x32 / and
 		:op1 (x6 / filter-02
 			:ARG0 (x1 / one)
 			:ARG0 (x3 / one)
 			:ARG0 (x5 / customer)
-			:ARG1 (x10 / government-organization
+			:direction (x7 / out)
+			:ARG1 (x12 / organization
 				:name (n / name
-					:op1 "Orion"
-					:op2 "Telescope"
-					:op3 "Center"))
-			:null_edge (x38 / see-01
-				:ARG0 (x37 / i)
-				:ARG1 (x40 / sun)))
+					:op1 "Center")
+				:null_edge (x10 / organization
+					:name (n1 / name
+						:op1 "Orion"))
+				:null_edge (x11 / organization
+					:name (n2 / name
+						:op1 "Telescope")))
+			:null_edge (x37 / see-01
+				:ARG0 (x36 / i)
+				:ARG1 (x39 / sun)))
 		:op1 (x14 / eclipse-01
 			:ARG0 x1
 			:ARG1 (x16 / dignity
@@ -25,33 +30,32 @@
 				:ARG2 (x30 / eyeshade
 					:mod (x28 / fluorescent-green)
 					:mod (x29 / paper))))
-		:op1 (x35 / work-09)
-		:op2 (x43 / exclaim
-			:ARG0 (x45 / newspaper
-				:name (n1 / name
+		:op1 (x34 / work-09)
+		:op2 (x41 / exclaim
+			:ARG0 (x42 / customer)
+			:time (x47 / peer
+				:ARG0 (x43 / name
 					:op1 "Jim"
 					:op2 "Maurer")
-				:ARG0-of (x44 / customer)))
-		:op2 (x49 / peer
-			:location (x53 / sky
-				:mod (x52 / country
-					:name (n2 / name
-						:op1 "Cupertino")))
-			:instrument (x59 / viewer
-				:mod (x56 / five-buck)
-				:mod (x57 / startrap)
-				:mod (x58 / eclipse)))))
+				:location (x51 / sky
+					:mod (x50 / country
+						:name (n3 / name
+							:op1 "Cupertino")))
+				:instrument (x57 / viewer
+					:mod (x54 / five-buck)
+					:mod (x55 / startrap)
+					:mod (x56 / eclipse))))))
 
 # ::id 2
-# ::snt " But I ca n't see anything else ...
-(x2 / contrast-01
-	:ARG2 (x6 / see-01
-		:ARG0 (x3 / i)
-		:ARG1 (x7 / anything)
-		:mod (x8 / else)))
+# ::snt But I ca not see anything else ...
+(x1 / contrast-01
+	:ARG2 (x5 / see-01
+		:ARG0 (x2 / i)
+		:ARG1 (x6 / anything)
+		:mod (x7 / else)))
 
 # ::id 3
-# ::snt You know, I do n't think it's safe to drive in these .
+# ::snt You know , I do not think it is safe to drive in these
 (x2 / know-01
 	:ARG0 (x1 / you)
 	:null_edge (x7 / think-01
@@ -60,7 +64,7 @@
 			:ARG1 (x12 / drive-02))))
 
 # ::id 4
-# ::snt Sure, he 'll be able to see Thursday's solar eclipse
+# ::snt Sure , he will be able to see Thursday's solar eclipse
 (x6 / possible
 	:mod (x1 / sure)
 	:domain (x8 / see-01
@@ -71,7 +75,7 @@
 				:weekday (x9 / thursday)))))
 
 # ::id 5
-# ::snt But, oh, if only he and the hundreds of other customers could see themselves in the mirror, looking like an audience for a 3-D horror flick. ; the mirror appears from the way people in the Golden State have been acting these days that they have been in the sun too long
+# ::snt But , oh , if only he and the hundreds of other customers could see themselves in the mirror , looking like an audience for a 3-D horror flick. ; the mirror  appears from the way people in the Golden State have been acting these days that they have been in the sun too long
 (x / xconcept
 	:x (x31 / and
 		:op2 (x34 / appear-02
@@ -101,7 +105,7 @@
 					:mod (x55 / too))))))
 
 # ::id 6
-# ::snt Actually, they ca n't wait to get into the shadow
+# ::snt Actually , they ca not wait to get into the shadow
 (x6 / wait-01
 	:mod (x1 / actual)
 	:ARG0 (x3 / they)
@@ -109,7 +113,7 @@
 		:ARG4 (x11 / shadow-01)))
 
 # ::id 7
-# ::snt Millions of Californians will pause Thursday morning to join in an international ritual : watching the longest-lasting solar eclipse until 2132. ; " What other natural phenomenon can you be involved in and not get killed ?
+# ::snt Millions of Californians will pause Thursday morning to join in an international ritual : watching the longest-lasting solar eclipse until 2132. ; What other natural phenomenon can you be involved in and not get killed ?
 (x / xconcept
 	:x (x23 / and
 		:op1 (x5 / pause
@@ -117,9 +121,10 @@
 				:null_edge (x3 / publication
 					:name (n / name
 						:op1 "Californians")))
-			:ARG1 (x9 / join-01
-				:ARG0 x1
-				:time (x7 / morning)
+			:time (x7 / morning
+				:time (xap0 / date-entity
+					:null_edge (x6 / null_tag)))
+			:purpose (x9 / join-01
 				:ARG1 (x13 / ritual
 					:mod (x12 / international))))
 		:op2 (x15 / watch-01
@@ -129,19 +134,17 @@
 			:time (x20 / until
 				:op1 (x21 / date-entity
 					:year 2132)))
-		:op3 (x29 / possible
-			:domain (x32 / involve-01
-				:ARG1 (x28 / phenomenon
-					:mod (x26 / other)
-					:mod (x27 / natural))
-				:ARG1 (x30 / you)
-				:ARG1 (x34 / and
-					:op2 (x37 / kill-01))))
-		:op2 (xap0 / date-entity
-			:null_edge (x6 / null_tag))))
+		:op3 (x28 / possible
+			:domain (x31 / involve-01
+				:ARG1 (x27 / phenomenon
+					:mod (x25 / other)
+					:mod (x26 / natural))
+				:ARG1 (x29 / you)
+				:ARG1 (x33 / and
+					:op2 (x36 / kill-01))))))
 
 # ::id 8
-# ::snt said Bert Beecher, spokesman for the Minolta Planetarium at De Anza College
+# ::snt said Bert Beecher , spokesman for the Minolta Planetarium at De Anza College
 (x1 / say-01
 	:ARG0 (x2 / newspaper
 		:name (n / name
@@ -162,15 +165,12 @@
 						:op3 "College"))))))
 
 # ::id 9
-# ::snt " the Minolta Planetarium's a lot safer than being in a volcano .
-(x3 / government-organization
-	:name (n / name
-		:op1 "Minolta"
-		:op2 "Planetarium")
-	:mod (x8 / safe
-		:location (x13 / volcano)
-		:degree (xap0 / more
-			:quant (x7 / lot))))
+# ::snt the Minolta Planetarium  is a lot safer than being in a volcano
+(x7 / safe
+	:domain (x3 / planetarium)
+	:domain (x12 / volcano)
+	:degree (xap0 / more
+		:quant (x6 / lot)))
 
 # ::id 10
 # ::snt ; Eyeshades a hot item ; Bay Area people Tuesday were desperately seeking eyeshades
@@ -191,7 +191,7 @@
 				:weekday (x10 / tuesday)))))
 
 # ::id 11
-# ::snt a hot item took 24 hours for Orion Telescope in Cupertino to sell a hot item stock of 900 Eclipse Viewers, which are made with Mylar plastic lenses and supposedly safe for eclipse viewing
+# ::snt a hot item  took 24 hours for Orion Telescope in Cupertino to sell a hot item  stock of 900 Eclipse Viewers , which are made with Mylar plastic lenses and supposedly safe for eclipse viewing
 (x4 / take-01
 	:ARG0 (x3 / item
 		:mod (x2 / hot))
@@ -224,8 +224,8 @@
 			:manner (x32 / safe))))
 
 # ::id 12
-# ::snt Welding supply stores were inundated with calls for welder's glasses made with the same plastic. ; Local planetariums and observatories were deluged with requests from people wanting to attend solar viewing sessions, even though the Bay Area will be privy only to a partial eclipse -- 63 percent coverage of the sun by the moon from 10:10 a.m. to 12:34 p.m. ; Some Bay Area " umbraphiles " -- lovers of the shadow -- were leaving few details to chance. ; Flights heavily booked ; Flights from here to Mexico and Hawaii -- where the eclipse can be seen in total -- were heavily booked by sunstruck people spending thousands of dollars to stand in 6 minutes, 53 seconds of darkness. ; Scott Wiener, a computer company executive from Saratoga, is flying with two buddies to Baja, where thousands will toast the corona with Coronas. ; " Eyeshades a hot item ; Bay Area people Tuesday figure 900 Eclipse Viewers 'll get there in time to see the eclipse from a cab, " said Wiener, who stood in line at the telescope store Tuesday for the Eclipse Viewers
-(x185 / say-01
+# ::snt Welding supply stores were inundated with calls for welder's glasses made with the same plastic. ; Local planetariums and observatories were deluged with requests from people wanting to attend solar viewing sessions , even though the Bay Area will be privy only to a partial eclipse 63 percent coverage of the sun by the moon from 10:10 a.m. to 12:34 p.m. ; Some Bay Area umbraphiles lovers of the shadow were leaving few details to chance. ; Flights heavily booked ; Flights from here to Mexico and Hawaii where the eclipse can be seen in total were heavily booked by sunstruck people spending thousands of dollars to stand in 6 minutes , 53 seconds of darkness. ; Scott Wiener , a computer company executive from Saratoga , is flying with two buddies to Baja , where thousands will toast the corona with Coronas. ; Eyeshades a hot item ; Bay Area people Tuesday  figure 900 Eclipse Viewers  will get there in time to see the eclipse from a cab , said Wiener , who stood in line at the telescope store Tuesday for the Eclipse Viewers
+(x176 / say-01
 	:ARG1 (x5 / inundate
 		:ARG1 (x3 / store
 			:mod (x1 / welding)
@@ -241,74 +241,81 @@
 					:ARG1 (x31 / attend-01
 						:ARG1 (x34 / session
 							:mod (x32 / solar)
-							:mod (x33 / view-01)))))))
+							:mod (x33 / view-01))
+						:purpose (x164 / get-01
+							:mod (x36 / even)
+							:ARG2 (x165 / there)
+							:condition (x169 / see-01
+								:ARG0 (x167 / time)
+								:ARG1 (x171 / eclipse-01)
+								:ARG2 (x174 / cab))))))))
 	:ARG1 (x21 / and
 		:op1 (x20 / planetarium
 			:mod (x19 / local))
 		:op2 (x22 / observatory))
-	:ARG0 (x186 / person
+	:ARG0 (x177 / person
 		:name (n / name
 			:op1 "Wiener")
-		:ARG1-of (x189 / stand-01
-			:ARG2 (x191 / line)
-			:ARG2 (x195 / store
-				:mod (x194 / telescope))
-			:ARG2 (x200 / viewer
-				:mod (x199 / eclipse))
-			:time (xap2 / date-entity
-				:weekday (x196 / tuesday)))))
+		:ARG0-of (x180 / stand-01
+			:ARG2 (x182 / line)
+			:ARG2 (x186 / store
+				:mod (x185 / telescope))
+			:ARG2 (x191 / viewer
+				:mod (x190 / eclipse))
+			:time (xap3 / date-entity
+				:weekday (x187 / tuesday)))))
 
 # ::id 13
-# ::snt " Eyeshades a hot item ; Bay Area people Tuesday 'll put on the glasses and stick Eyeshades a hot item ; Bay Area people Tuesday heads out the window. ; " Eyeshades a hot item ; Bay Area people Tuesday figure the window.'s worth the window.
+# ::snt Eyeshades a hot item ; Bay Area people Tuesday  will put on the glasses and stick Eyeshades a hot item ; Bay Area people Tuesday  heads out the window. ; Eyeshades a hot item ; Bay Area people Tuesday  figure the window.  is worth the window.
 (x / xconcept
-	:x (x6 / and
-		:op2 (x5 / item
-			:mod (x4 / hot))
-		:op2 (x7 / have-org-role-91
+	:x (x5 / and
+		:op2 (x4 / item
+			:mod (x3 / hot))
+		:op2 (x6 / have-org-role-91
 			:ARG1 (c / country
 				:name (n / name
 					:op1 "Bay"
-					:op2 "Area"))
-			:ARG0-of (xap4 / mean-01
-				:ARG1 (x50 / window))))
-	:x (x22 / and
-		:op2 (x23 / country
-			:name (n1 / name
-				:op1 "Bay")))
-	:x (x32 / and
-		:op9 (x16 / and
-			:op1 (x12 / put-01
+					:op2 "Area"))))
+	:x (x21 / and
+		:op2 (x15 / and
+			:op1 (x11 / put-01
+				:ARG1 (x20 / item
+					:mod (x19 / hot))
+				:ARG1 (x48 / window)
 				:time (xap0 / date-entity
-					:weekday (x10 / tuesday)))
-			:op1 (x15 / glass)
-			:op2 (x17 / stick-03
-				:ARG1 (x21 / item
-					:mod (x20 / hot))))
-		:op4 (x27 / head-01
-			:ARG1 (x30 / window))
-		:op3 (xap1 / date-entity
-			:weekday (x26 / tuesday
-				:null_edge (x24 / country
-					:name (n2 / name
-						:op1 "Area"))
-				:null_edge (x25 / null_tag))))
-	:x (x38 / and
-		:op2 (x37 / item
-			:mod (x36 / hot))
-		:op4 (x43 / figure
-			:mod (x39 / country
-				:name (n3 / name
-					:op1 "Bay"))
-			:poss (x40 / country
+					:weekday (x9 / tuesday)))
+			:op1 (x14 / glass)
+			:op1 (x16 / stick-03
+				:ARG1 (x17 / eyeshade)))
+		:op2 (x22 / country
+			:name (n1 / name
+				:op1 "Bay"))
+		:op4 (x26 / head-01
+			:ARG1 (x23 / country
+				:name (n2 / name
+					:op1 "Area"))
+			:ARG1 (x29 / window)))
+	:x (x31 / and
+		:op1 (x32 / eyeshade
+			:ARG1 (x35 / item
+				:mod (x34 / hot))))
+	:x (x36 / and
+		:op2 (x37 / country
+			:name (n3 / name
+				:op1 "Bay"))
+		:op4 (x41 / figure
+			:poss (x38 / country
 				:name (n4 / name
 					:op1 "Area"))
-			:time (xap2 / date-entity
-				:weekday (x42 / tuesday))
 			:ARG0-of (xap3 / mean-01
-				:ARG1 (x45 / window)))))
+				:ARG1 (x43 / window)))
+		:op3 (xap1 / date-entity
+			:weekday (x25 / tuesday))
+		:op2 (xap2 / date-entity
+			:weekday (x40 / tuesday))))
 
 # ::id 14
-# ::snt 
+# ::snt Eyeshades a hot item ; Bay Area people Tuesday  do not know if Eyeshades a hot item ; Bay Area people Tuesday  will be around for the next one in 150 years
 (x / xconcept
 	:x (x5 / and
 		:op2 (x4 / item
@@ -341,7 +348,7 @@
 			:weekday (x22 / tuesday))))
 
 # ::id 15
-# ::snt ; WHERE TO WATCH ; Here are places to view Thursday's solar eclipse : ; (box )The San Jose Astronomical Association will set up special telescopes at Branham Lane Park, near the intersection of Branham and Camden Avenue, from 9 a.m. to 2 p.m. For information, call the association's recorded message at -LRB-408-RRB- 997-3347
+# ::snt ; WHERE TO WATCH ; Here are places to view Thursday's solar eclipse : ; (box )The San Jose Astronomical Association will set up special telescopes at Branham Lane Park , near the intersection of Branham and Camden Avenue , from 9 a.m. to 2 p.m. For information , call the association's recorded message at -LRB-408-RRB- 997-3347
 (x / xconcept
 	:x (x1 / and
 		:op5 (x8 / place
@@ -393,7 +400,7 @@
 					:op1 "Camden")))))
 
 # ::id 16
-# ::snt ; (box )In Berkeley, the Lawrence Hall of Science will offer safe viewing
+# ::snt ; (box )In Berkeley , the Lawrence Hall of Science will offer safe viewing
 (x / xconcept
 	:x (x1 / and
 		:op1 (xap0 / and
@@ -411,14 +418,14 @@
 					:mod (x15 / safe))))))
 
 # ::id 17
-# ::snt For information, call -LRB-415-RRB- 642-5133
+# ::snt For information , call -LRB-415-RRB- 642-5133
 (x4 / call-01
 	:ARG1 (x2 / information)
 	:ARG1 (x6 / 415-rrb)
 	:ARG2 (x8 / 642-5133))
 
 # ::id 18
-# ::snt ; (box )At Foothill College, the Foothill Observatory will be open for public viewing
+# ::snt ; (box )At Foothill College , the Foothill Observatory will be open for public viewing
 (x / xconcept
 	:x (x1 / and
 		:op1 (xap0 / and
@@ -436,7 +443,7 @@
 					:mod (x16 / public))))))
 
 # ::id 19
-# ::snt For information call (415 )949-7334. ; (box )In Cupertino, viewing will be offered from 10 a.m. to 1 p.m. at the Orion Telescope Center store at 10555 S. De Anza Blvd.
+# ::snt For information call (415 )949-7334. ; (box )In Cupertino , viewing will be offered from 10 a.m. to 1 p.m. at the Orion Telescope Center store at 10555 S. De Anza Blvd.
 (x / xconcept
 	:x (x9 / and
 		:op1 (x19 / offer-01
@@ -475,7 +482,7 @@
 				:op1 "S."))))
 
 # ::id 20
-# ::snt Call (408 )255-8770 for information. ; (box )California State University, Hayward is hosting a " Safe Solar Eclipse " viewing from 10 a.m. to noon in front of the Student Union
+# ::snt Call (408 )255-8770 for information. ; (box )California State University , Hayward is hosting a Safe Solar Eclipse viewing from 10 a.m. to noon in front of the Student Union
 (x / xconcept
 	:x (x9 / and
 		:op1 (x1 / call-03
@@ -486,21 +493,27 @@
 				:ARG0 (x17 / person
 					:name (n / name
 						:op1 "Hayward"))
-				:ARG1 (x26 / view-01
-					:ARG1 (x22 / safe)
-					:ARG1 (x23 / solar)
-					:ARG1 (x24 / eclipse))
+				:ARG1 (x24 / view-01
+					:ARG1 (x21 / country
+						:name (n1 / name
+							:op1 "Safe"))
+					:ARG1 (x22 / country
+						:name (n2 / name
+							:op1 "Solar"))
+					:ARG1 (x23 / country
+						:name (n3 / name
+							:op1 "Eclipse")))
 				:quant 10
-				:location (x33 / front)
+				:location (x31 / front)
 				:ARG1 (xap0 / and
 					:op2 (x11 / box)
 					:ARG1 (x15 / university
 						:null_edge (x13 / null_tag)
 						:null_edge (x14 / null_tag)))))
-		:time (x31 / noon)))
+		:time (x29 / noon)))
 
 # ::id 21
-# ::snt The Society of Physics Students will set up several 6-inch telescopes, and a video camera will record the eclipse for viewing on television
+# ::snt The Society of Physics Students will set up several 6-inch telescopes , and a video camera will record the eclipse for viewing on television
 (x13 / and
 	:op1 (x7 / set-03
 		:ARG0 (x2 / government-organization
@@ -521,7 +534,7 @@
 				:ARG2 (x24 / television)))))
 
 # ::id 22
-# ::snt For information, call Kenton White or Charlie Harper at the physics department, -LRB-415-RRB- 881-3401
+# ::snt For information , call Kenton White or Charlie Harper at the physics department , -LRB-415-RRB- 881-3401
 (x4 / call-01
 	:ARG1 (x2 / information)
 	:ARG1 (x7 / or
@@ -537,7 +550,7 @@
 			:time (x18 / date-entity))))
 
 # ::id 23
-# ::snt ; (box )In Santa Cruz, a telescope will be set up in front of the Orion Telescope Center at 2450 17th Ave., and at the Seabright Brewery, 519 Seabright Ave. For information, call -LRB-408-RRB- 464-0465
+# ::snt ; (box )In Santa Cruz , a telescope will be set up in front of the Orion Telescope Center at 2450 17th Ave. , and at the Seabright Brewery , 519 Seabright Ave. For information , call -LRB-408-RRB- 464-0465
 (x / xconcept
 	:x (x1 / and
 		:op3 (x3 / box)

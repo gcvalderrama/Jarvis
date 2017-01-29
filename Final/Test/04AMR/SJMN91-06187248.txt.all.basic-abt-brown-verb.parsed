@@ -1,5 +1,5 @@
 # ::id 1
-# ::snt Fire long ago destroyed the house where Clarence Thomas spent Judge Clarence Thomas of the U.S. Court of Appeals boyhood
+# ::snt Fire long ago destroyed the house where Clarence Thomas spent Judge Clarence Thomas of the U.S. Court of Appeals  boyhood
 (x4 / destroy-01
 	:ARG0 (x1 / fire-02)
 	:null_edge (x2 / long)
@@ -21,7 +21,7 @@
 						:op3 "Appeals"))))))
 
 # ::id 2
-# ::snt But nearby, down a woodsy, one-lane, white-sand road outside Savannah, Ga., sits a reminder of what might have been -- the tired cottage where Judge Clarence Thomas of the U.S. Court of Appeals sister still lives, by a broad, shining marsh called Moon River. ; Down shore sits the defunct packing factory where Judge Clarence Thomas of the U.S. Court of Appeals family and most of the rest of the people in the semirural cluster of houses and trailer-homes known as Pin Point used to pick the meat from crabs and chop the heads off shrimp
+# ::snt But nearby , down a woodsy , one-lane , white-sand road outside Savannah , Ga. , sits a reminder of what might have been the tired cottage where Judge Clarence Thomas of the U.S. Court of Appeals  sister still lives , by a broad , shining marsh called Moon River. ; Down shore sits the defunct packing factory where Judge Clarence Thomas of the U.S. Court of Appeals  family and most of the rest of the people in the semirural cluster of houses and trailer-homes known as Pin Point used to pick the meat from crabs and chop the heads off shrimp
 (x1 / contrast-01
 	:ARG2 (x17 / sit-01
 		:mod (x2 / nearby)
@@ -35,10 +35,58 @@
 					:location (x15 / country
 						:name (n1 / name
 							:op1 "Ga.")))))
-		:ARG1 (x19 / remind-01)))
+		:ARG1 (x19 / remind-01
+			:ARG1 (x27 / cottage
+				:mod (x26 / tire-01)
+				:ARG0-of (x40 / live-01
+					:location (x38 / sister
+						:poss (x30 / person
+							:name (n2 / name
+								:op1 "Clarence"
+								:op2 "Thomas")
+							:ARG0-of (x29 / judge-01))
+						:poss (x35 / court)
+						:mod (x37 / organization
+							:name (n3 / name
+								:op1 "Appeals")))
+					:mod (x39 / still))
+				:mod (x44 / broad)
+				:ARG0-of (x46 / shine
+					:ARG1 (x47 / marsh
+						:ARG1-of (x48 / call-01)))))
+		:null_edge (x55 / sit-01
+			:ARG1 (x54 / shore
+				:mod (x53 / down))
+			:ARG1 (x59 / factory
+				:mod (x57 / defunct)
+				:mod (x58 / packing)
+				:ARG1-of (x91 / use-01
+					:ARG2 (x71 / and
+						:op1 (x63 / person
+							:name (n4 / name
+								:op1 "Thomas")
+							:null_edge (x61 / judge-01)
+							:null_edge (x62 / person
+								:name (n5 / name
+									:op1 "Clarence"))
+							:null_edge (x67 / court
+								:part-of (x70 / family
+									:mod (x69 / organization
+										:name (n6 / name
+											:op1 "Appeals"))))
+							:ARG2-of (x75 / rest
+								:degree (x72 / most))))
+					:ARG2 (x98 / and
+						:op2 (x93 / pick-01
+							:ARG1 (x95 / meat
+								:source (x97 / crab)))
+						:op2 (x99 / chop
+							:ARG1 (x101 / person
+								:ARG0-of (h / head-01)
+								:ARG1 (x103 / shrimp)))))))))
 
 # ::id 3
-# ::snt There, in the segregated black Georgia of four decades past, began the toughening of Clarence Thomas, nominee to the United States Supreme Court. ; Abandoned by Judge Clarence Thomas of the U.S. Court of Appeals father, driven by Judge Clarence Thomas of the U.S. Court of Appeals hard-eyed grandfather and a band of nuns sent south to teach black children, young Clarence learned sharecropping and scholarship, hard labor and the Latin mass, and how to survive the walk home through black Savannah in Judge Clarence Thomas of the U.S. Court of Appeals Catholic school uniform. ; From these roots, Judge Clarence Thomas of the U.S. Court of Appeals might have become one of any number of bright, activist black men to rise out of Southern poverty and press a politically aggressive liberal agenda of civil rights and affirmative action -- as did men like Thurgood Marshall, the retiring justice whose Supreme Court seat Thomas might take. ; Instead, Thomas, now 43, became something else -- a hybrid product of harsh Southern history and baby-boom ambition, a proponent of personal strength over dependence, of individualism over government activism. ; By the time Judge Clarence Thomas of the U.S. Court of Appeals arrived in Washington with the Reagan administration, Judge Clarence Thomas of the U.S. Court of Appeals had developed into a rare breed -- a black conservative so impressive to Republican presidents that Judge Clarence Thomas of the U.S. Court of Appeals was set on the road to the highest court in the land
+# ::snt There , in the segregated black Georgia of four decades past , began the toughening of Clarence Thomas , nominee to the United States Supreme Court. ; Abandoned by Judge Clarence Thomas of the U.S. Court of Appeals  father , driven by Judge Clarence Thomas of the U.S. Court of Appeals  hard-eyed grandfather and a band of nuns sent south to teach black children , young Clarence learned sharecropping and scholarship , hard labor and the Latin mass , and how to survive the walk home through black Savannah in Judge Clarence Thomas of the U.S. Court of Appeals  Catholic school uniform. ; From these roots , Judge Clarence Thomas of the U.S. Court of Appeals  might have become one of any number of bright , activist black men to rise out of Southern poverty and press a politically aggressive liberal agenda of civil rights and affirmative action as did men like Thurgood Marshall , the retiring justice whose Supreme Court seat Thomas might take. ; Instead , Thomas , now 43 , became something else a hybrid product of harsh Southern history and baby-boom ambition , a proponent of personal strength over dependence , of individualism over government activism. ; By the time Judge Clarence Thomas of the U.S. Court of Appeals  arrived in Washington with the Reagan administration , Judge Clarence Thomas of the U.S. Court of Appeals  had developed into a rare breed a black conservative so impressive to Republican presidents that Judge Clarence Thomas of the U.S. Court of Appeals  was set on the road to the highest court in the land
 (x13 / begin-01
 	:location (x7 / country
 		:name (n / name
@@ -98,14 +146,13 @@
 				:name (n5 / name
 					:op1 "Clarence")
 				:mod (x67 / young))
-			:ARG1 (x70 / sharecropping
-				:ARG1 (x71 / and
-					:op2 (x76 / and
-						:op1 (x72 / scholarship)
-						:op2 (x75 / labor-01
-							:manner (x74 / hard))
-						:op2 (x79 / mass
-							:mod (x78 / latin))))))
+			:ARG1 (x71 / and
+				:op2 (x76 / and
+					:op1 (x72 / scholarship)
+					:op2 (x75 / labor-01
+						:manner (x74 / hard))
+					:op2 (x79 / mass
+						:mod (x78 / latin)))))
 		:ARG1 (x108 / root)
 		:ARG1 (x111 / person
 			:name (n2 / name
@@ -113,16 +160,10 @@
 				:op2 "Thomas")
 			:ARG0-of (x110 / judge-01))
 		:ARG1 (x125 / number
-			:mod (x124 / any)
-			:null_edge (x126 / include-91
-				:ARG2 (x131 / man
-					:mod (x127 / bright)
-					:ARG0-of (x129 / have-org-role-91
-						:ARG2 (a / activist))
-					:mod (x130 / black))))))
+			:mod (x124 / any))))
 
 # ::id 4
-# ::snt But Judge Clarence Thomas of the U.S. Court of Appeals was so disturbing to traditional liberals that traditional liberals are eager to deprive Judge Clarence Thomas of the U.S. Court of Appeals in September. ; Historically, trying to predict Supreme Court nominees has been extremely risky
+# ::snt But Judge Clarence Thomas of the U.S. Court of Appeals  was so disturbing to traditional liberals that traditional liberals  are eager to deprive Judge Clarence Thomas of the U.S. Court of Appeals  in September. ; Historically , trying to predict Supreme Court nominees has been extremely risky
 (x1 / contrast-01
 	:ARG2 (x13 / disturbing
 		:domain (x4 / person
@@ -155,177 +196,214 @@
 			:degree (x47 / extreme))))
 
 # ::id 5
-# ::snt Still, many liberals are convinced that Thomas ' past clearly shows Thomas ' past future
+# ::snt Still , many liberals are convinced that Thomaspast clearly shows Thomaspast  future
 (x6 / convince-01
 	:ARG1 (x4 / liberalism
 		:quant (x3 / many))
-	:ARG1 (x12 / show-01
-		:time (x10 / past
-			:null_edge (x8 / person
-				:name (n / name
-					:op1 "Thomas")))
-		:manner (x11 / clear)
-		:ARG1 (x16 / future
-			:poss (x13 / person
+	:ARG1 (x10 / show-01
+		:ARG0 (x8 / person
+			:name (n / name
+				:op1 "Thomaspast"))
+		:manner (x9 / clear)
+		:ARG1 (x12 / future
+			:mod (x11 / military
 				:name (n1 / name
-					:op1 "Thomas"))
-			:mod (x15 / past))))
+					:op1 "Thomaspast")))))
 
 # ::id 6
-# ::snt Thomas ' past would, many liberals say, oppose abortion rights, school busing plans and affirmative action programs
+# ::snt 
 (xap0 / contrast-01
-	:time (x3 / past
-		:poss (x1 / person
-			:name (n / name
-				:op1 "Thomas")))
-	:snt2 (x8 / say-01
-		:ARG0 (x7 / liberalism
-			:quant (x6 / many)))
-	:ARG1 (x17 / and
-		:op1 (x12 / right
-			:mod (x11 / abort-01))
-		:op2 (x16 / plan-01
-			:ARG1 (x14 / school)
-			:ARG1 (x15 / busing))
-		:op2 (x20 / program
-			:mod (x18 / affirm-01)
-			:mod (x19 / action))))
+	:ARG1 (x1 / person
+		:name (n / name
+			:op1 "Thomaspast"))
+	:snt2 (x6 / say-01
+		:ARG0 (x5 / liberalism
+			:quant (x4 / many)))
+	:ARG1 (x15 / and
+		:op1 (x10 / right
+			:mod (x9 / abort-01))
+		:op2 (x14 / plan-01
+			:ARG1 (x12 / school)
+			:ARG1 (x13 / busing))
+		:op2 (x18 / program
+			:mod (x16 / affirm-01)
+			:mod (x17 / action))))
 
 # ::id 7
-# ::snt Thomas ' past would also weaken the wall separating government and religion and further restrict the rights of criminal suspects and defendants. ; Not surprisingly, Thomas ' many friends and supporters draw different conclusions
-(x13 / and
-	:op1 (x6 / weaken-01
-		:time (x3 / past
-			:poss (x1 / person
-				:name (n / name
-					:op1 "Thomas")))
-		:mod (x5 / also)
-		:ARG1 (x8 / wall
-			:ARG0-of (x9 / separate-01
-				:ARG1 (x11 / and
-					:op1 (x10 / government-organization
+# ::snt Thomaspast  would also weaken the wall separating government and religion and further restrict the rights of criminal suspects and defendants. ; Not surprisingly , Thomasmany friends and supporters draw different conclusions
+(x11 / and
+	:op1 (x4 / weaken-01
+		:ARG0 (x1 / person
+			:name (n / name
+				:op1 "Thomaspast"))
+		:mod (x3 / also)
+		:ARG1 (x6 / wall
+			:ARG0-of (x7 / separate-01
+				:ARG1 (x9 / and
+					:op1 (x8 / government-organization
 						:ARG0-of (g / govern-01))
-					:op2 (x12 / religion)))))
-	:op2 (x15 / restrict-01
-		:degree (x14 / further)
-		:ARG1 (x21 / and
-			:op1 (x20 / person
+					:op2 (x10 / religion)))))
+	:op2 (x13 / restrict-01
+		:ARG0 x1
+		:degree (x12 / further)
+		:ARG1 (x19 / and
+			:op1 (x18 / person
 				:ARG2-of (s / suspect-01)
-				:mod (x19 / crime))
-			:op2 (x22 / defendant))))
+				:mod (x17 / crime))
+			:op2 (x20 / defendant))))
 
 # ::id 8
-# ::snt criminal suspects see Thomas ' past as an independent spirit, a probable centrist on a court that has been steering rightward for several years. ; The Georgia beginning ; But any attempt to understand the potential successor to the revered Thurgood Marshall must begin in Georgia. ; There, just the other day, Leola Williams, Thomas ' mother, talked about how the force of family worked on Leola Williams son : ; " Clarence was surrounded by all our older parents
-(x46 / begin-01
-	:ARG0 (x3 / see-01
-		:ARG0 (x2 / person
-			:ARG2-of (s / suspect-01)
-			:mod (x1 / crime))
-		:ARG1 (x6 / past
-			:poss (x4 / person
+# ::snt criminal suspects  see Thomaspast  as an independent spirit , a probable centrist on a court that has been steering rightward for several years. ; The Georgia beginning ; But any attempt to understand the potential successor to the revered Thurgood Marshall must begin in Georgia. ; There , just the other day , Leola Williams , Thomasmother , talked about how the force of family worked on Leola Williams  son : ; Clarence was surrounded by all our older parents
+(x / xconcept
+	:x (x29 / and
+		:op2 (x28 / begin-01
+			:ARG1 (x27 / country
 				:name (n1 / name
-					:op1 "Thomas")))
-		:ARG1 (x10 / spirit
-			:ARG0-of (x9 / depend-01
-				:polarity -)
-			:mod (x13 / probable
-				:location (x17 / court)
-				:domain (x21 / steer-01
-					:ARG1 (x22 / rightward)
-					:duration (x24 / several
-						:op1 (x25 / temporal-quantity
-							:unit (y / year))))))
-		:null_edge (x32 / contrast-01))
-	:location (x48 / country
-		:name (n / name
-			:op1 "Georgia")))
+					:op1 "Georgia")))
+		:op2 (x32 / attempt-01)
+		:op4 (x34 / understand-01
+			:ARG1 (x37 / succeed-02
+				:mod (x36 / potential))))
+	:x (x48 / and
+		:op2 (x3 / see-01
+			:ARG0 (x2 / person
+				:ARG2-of (s / suspect-01)
+				:mod (x1 / crime))
+			:ARG1 (x4 / person
+				:name (n / name
+					:op1 "Thomaspast")))
+		:op1 (x49 / there
+			:null_edge (x54 / day
+				:mod (x51 / just)
+				:mod (x53 / other))
+			:name (x56 / name
+				:op1 "Leola"
+				:op2 "Williams")))
+	:x (x74 / and
+		:op1 (x44 / begin-01
+			:ARG1 (x8 / spirit
+				:ARG0-of (x7 / depend-01
+					:polarity -)
+				:mod (x11 / probable
+					:compared-to (x15 / court
+						:ARG0-of (x19 / steer-01
+							:mod (x20 / rightward)
+							:duration (x22 / several
+								:op1 (x23 / temporal-quantity
+									:unit (y / year))))))
+				:null_edge (x30 / contrast-01)
+				:name (x41 / name
+					:op1 "Thurgood"
+					:op2 "Marshall"
+					:ARG0-of (x40 / revered)))
+			:location (x46 / country
+				:name (n2 / name
+					:op1 "Georgia")))
+		:op3 (x59 / person
+			:name (n4 / name
+				:op1 "Thomasmother"))
+		:op1 (x61 / talk-01
+			:ARG0 x4
+			:ARG1 (x68 / work-01
+				:ARG0 (x65 / force
+					:poss (x67 / family))
+				:location (x72 / son
+					:mod (x70 / person
+						:name (n3 / name
+							:op1 "Leola")))))
+		:op2 (x77 / surround-01
+			:ARG1 (x75 / person
+				:name (n5 / name
+					:op1 "Clarence"))
+			:ARG0 (x82 / parent
+				:quant (x79 / all)
+				:mod (x81 / old)))))
 
 # ::id 9
-# ::snt Thomas ' past saw how our family and other people struggled to make a living. ; " Thomas ' past guess Clarence wanted to prove to Judge Clarence Thomas of the U.S. Court of Appeals Judge Clarence Thomas of the U.S. Court of Appeals could be what Judge Clarence Thomas of the U.S. Court of Appeals wanted to be -- and prove to his grandfather Judge Clarence Thomas of the U.S. Court of Appeals could be the kind of person (Judge Clarence Thomas of the U.S. Court of Appeals grandfather )wanted his grandfather to be .
+# ::snt Thomaspast  saw how our family and other people struggled to make a living. ; Thomaspast  guess Clarence wanted to prove to Judge Clarence Thomas of the U.S. Court of Appeals  Judge Clarence Thomas of the U.S. Court of Appeals  could be what Judge Clarence Thomas of the U.S. Court of Appeals  wanted to be and prove to his grandfather Judge Clarence Thomas of the U.S. Court of Appeals  could be the kind of person (Judge Clarence Thomas of the U.S. Court of Appeals  grandfather )wanted his grandfather  to be
 (x / xconcept
-	:x (x17 / and
-		:op1 (x4 / saw
-			:time (x3 / past
-				:null_edge (x1 / person
-					:name (n / name
-						:op1 "Thomas")))
-			:null_edge (x24 / want-01
-				:ARG0 (x23 / person
-					:name (n1 / name
-						:op1 "Clarence")
-					:null_edge (x19 / person
-						:name (n2 / name
-							:op1 "Thomas"))
-					:mod (x21 / past)
-					:ARG0-of (x22 / guess-01))
-				:ARG1 (x62 / and
-					:op1 (x26 / prove-01
-						:ARG2 (x30 / person
-							:name (n3 / name
-								:op1 "Thomas")
-							:null_edge (x28 / judge-01)
-							:null_edge (x34 / court
-								:null_edge (x39 / person
-									:name (n5 / name
-										:op1 "Thomas")
-									:null_edge (x36 / null_tag)
-									:null_edge (x37 / judge-01)
-									:null_edge (x38 / person
-										:name (n7 / name
-											:op1 "Clarence")))
-								:null_edge (x46 / possible))))
-					:op2 (x63 / prove-01
-						:ARG2 (x69 / person
-							:name (n4 / name
-								:op1 "Thomas")
-							:null_edge (x67 / judge-01
-								:mod (x66 / grandfather)))
-						:ARG1 (x76 / possible
-							:domain (x79 / kind
-								:null_edge (x84 / person
-									:name (n6 / name
+	:x (x15 / and
+		:op1 (x2 / see-01
+			:ARG0 (x1 / person
+				:name (n / name
+					:op1 "Thomaspast")))
+		:op1 (x9 / struggle-02
+			:ARG1 (x6 / and
+				:op1 (x5 / family
+					:mod (x7 / other)))
+			:ARG1 (x11 / make-01
+				:ARG0 x6
+				:ARG1 (x13 / living)))
+		:op1 (x17 / guess-01
+			:ARG1 (x19 / want-01
+				:ARG1 (x16 / country
+					:name (n5 / name
+						:op1 "Thomaspast"))
+				:ARG0 (x18 / person
+					:name (n6 / name
+						:op1 "Clarence"))
+				:ARG1 (x21 / prove-01
+					:ARG0 x18
+					:ARG2 (x25 / person
+						:name (n8 / name
+							:op1 "Thomas")
+						:null_edge (x23 / judge-01)
+						:null_edge (x24 / person
+							:name (n9 / name
+								:op1 "Clarence"))
+						:null_edge (x29 / court
+							:null_edge (x34 / person
+								:name (n10 / name
+									:op1 "Thomas")
+								:null_edge (x31 / null_tag)
+								:null_edge (x32 / judge-01)
+								:null_edge (x33 / person
+									:name (n11 / name
+										:op1 "Clarence")))))
+					:ARG1 (x41 / possible))))
+		:op4 (x40 / organization
+			:name (n1 / name
+				:op1 "Appeals"))
+		:op1 (x53 / want-01
+			:ARG0 (x46 / person
+				:name (n3 / name
+					:op1 "Thomas")
+				:null_edge (x44 / judge-01)
+				:null_edge (x45 / person
+					:name (n7 / name
+						:op1 "Clarence")))
+			:ARG1 (x52 / organization
+				:name (n4 / name
+					:op1 "Appeals"))
+			:ARG1 (x56 / and
+				:op2 (x57 / prove-01
+					:ARG2 (x60 / grandfather)
+					:ARG1 (x70 / possible
+						:domain (x75 / person
+							:mod (x73 / kind
+								:ARG0 (x62 / person
+									:name (n12 / name
 										:op1 "Clarence"
 										:op2 "Thomas")
-									:poss (x81 / person
-										:mod (x89 / court
-											:null_edge (x92 / grandfather
-												:null_edge (x91 / null_tag))))
-									:ARG0-of (x83 / judge-01))))))))
-		:op2 (x11 / struggle-02
-			:ARG1 (x8 / and
-				:op1 (x7 / family
-					:mod (x9 / other)))
-			:ARG1 (x13 / make-01
-				:ARG0 x8
-				:ARG1 (x15 / living)))
-		:op4 (x29 / person
-			:name (n8 / name
-				:op1 "Clarence"))
-		:op4 (x45 / organization
-			:name (n9 / name
-				:op1 "Appeals"))
-		:op1 (x58 / want-01
-			:ARG0 (x51 / person
-				:name (n12 / name
-					:op1 "Thomas")
-				:null_edge (x49 / judge-01)
-				:null_edge (x50 / person
-					:name (n14 / name
-						:op1 "Clarence")))
-			:ARG1 (x57 / organization
-				:name (n13 / name
-					:op1 "Appeals")))
-		:op4 (x68 / person
-			:name (n10 / name
-				:op1 "Clarence"))
-		:op4 (x75 / organization
-			:name (n11 / name
-				:op1 "Appeals"))
-		:op1 (x94 / want-01
-			:ARG1 (x96 / grandfather))))
+									:ARG0-of (x61 / judge-01)))
+							:ARG1-of (x88 / want-01
+								:ARG0 (x79 / person
+									:name (n13 / name
+										:op1 "Thomas")
+									:null_edge (x77 / judge-01)
+									:null_edge (x78 / person
+										:name (n14 / name
+											:op1 "Clarence"))
+									:null_edge (x83 / court
+										:null_edge (x86 / grandfather
+											:null_edge (x85 / null_tag))))
+								:ARG1 (x90 / grandfather)))))))
+		:op2 (x69 / organization
+			:name (n2 / name
+				:op1 "Appeals"))))
 
 # ::id 10
-# ::snt ; The grandfather, the late Myers Anderson, began training Thomas in earnest when the boy was 9 and Leola Williams ' life suddenly began coming apart
+# ::snt ; The grandfather , the late Myers Anderson , began training Thomas in earnest when the boy was 9 and Leola Williamslife suddenly began coming apart
 (x10 / begin-01
 	:ARG1 (x3 / grandfather
 		:name (x7 / name
@@ -340,17 +418,17 @@
 		:ARG0 (x17 / boy)
 		:ARG1 (x20 / and
 			:op1 9
-			:op2 (x26 / begin-01
-				:ARG1 (x24 / life
-					:name (x21 / name
+			:op2 (x24 / begin-01
+				:ARG0 (x21 / newspaper
+					:name (n1 / name
 						:op1 "Leola"
-						:op2 "Williams"))
-				:manner (x25 / sudden)
-				:ARG1 (x27 / come-01
-					:ARG1 x24)))))
+						:op2 "Williamslife"))
+				:manner (x23 / sudden)
+				:ARG1 (x25 / come-01
+					:ARG1 x21)))))
 
 # ::id 11
-# ::snt Leola Williams house off Pin Point Avenue had gone up in smoke, and some months later, Leola Williams husband went north to Philadelphia, leaving Leola Williams with two young children and a third on the way. ; Williams took Leola Williams daughter, Emma Mae, and moved in with an aunt while Leola Williams awaited the birth of Leola Williams second son, Myers
+# ::snt Leola Williams  house off Pin Point Avenue had gone up in smoke , and some months later , Leola Williams  husband went north to Philadelphia , leaving Leola Williams  with two young children and a third on the way. ; Williams took Leola Williams  daughter , Emma Mae , and moved in with an aunt while Leola Williams  awaited the birth of Leola Williams  second son , Myers
 (x14 / and
 	:op1 (x9 / go-01
 		:ARG0 (x2 / newspaper
@@ -394,19 +472,12 @@
 				:op1 "Philadelphia"))))
 
 # ::id 12
-# ::snt Clarence went to live with Judge Clarence Thomas of the U.S. Court of Appeals grandparents in Savannah, to help with Anderson's year-round oil and ice delivery business. ; Judge Clarence Thomas of the U.S. Court of Appeals grandfather proved to be a profound force in Thomas ' life -- a mentor, a role model, an unrelenting taskmaster and the embodiment of a personal philosophy that Thomas once recalled this way : ; " Judge Clarence Thomas of the U.S. Court of Appeals used to tell his grandfather that there was no problem that elbow grease could n't solve
+# ::snt Clarence went to live with Judge Clarence Thomas of the U.S. Court of Appeals  grandparents in Savannah , to help with Anderson's year-round oil and ice delivery business. ; Judge Clarence Thomas of the U.S. Court of Appeals  grandfather proved to be a profound force in Thomaslife a mentor , a role model , an unrelenting taskmaster and the embodiment of a personal philosophy that Thomas once recalled this way : ; Judge Clarence Thomas of the U.S. Court of Appeals  used to tell his grandfather  that there was no problem that elbow grease could not solve
 (x / xconcept
 	:x (x31 / and
 		:op2 (x27 / ice)
-		:op3 (x29 / business)
-		:op2 (x63 / and
-			:op1 (x54 / mentor)
-			:op2 (x62 / taskmaster
-				:mod (x61 / unrelenting))
-			:op2 (x65 / embodiment
-				:ARG1 (x69 / philosophy
-					:mod (x68 / personal)))))
-	:x (x77 / and
+		:op3 (x29 / business))
+	:x (x74 / and
 		:op1 (x2 / go-02
 			:ARG1 (x1 / person
 				:name (n / name
@@ -424,14 +495,14 @@
 					:null_edge (x15 / grandparent
 						:null_edge (x14 / null_tag)
 						:location (x17 / country
-							:name (n5 / name
+							:name (n6 / name
 								:op1 "Savannah")))))
 			:purpose (x20 / help-01
 				:ARG0 x1
 				:ARG2 (x26 / and
 					:op1 (x25 / oil
 						:poss (x22 / person
-							:name (n6 / name
+							:name (n7 / name
 								:op1 "Anderson"))
 						:mod (x24 / year-round))))
 			:null_edge (x42 / prove-01
@@ -447,58 +518,67 @@
 							:null_edge (x40 / null_tag))))
 				:ARG1 (x47 / force
 					:mod (x46 / profound)
-					:domain (x51 / life
-						:poss (x49 / person
-							:name (n7 / name
-								:op1 "Thomas"))))))
-		:op3 (x58 / model
-			:mod (x57 / role))
-		:op2 (x73 / recall-02
-			:ARG0 (x71 / person
-				:name (n8 / name
+					:location (x49 / country
+						:name (n5 / name
+							:op1 "Thomaslife"))
+					:ARG2 (x60 / and
+						:op1 (x51 / mentor)
+						:op2 (x59 / taskmaster
+							:mod (x58 / unrelenting))
+						:op2 (x62 / embodiment
+							:ARG1 (x66 / philosophy
+								:mod (x65 / personal)))
+						:op2 (x84 / use-01
+							:ARG0 (x76 / person
+								:name (n8 / name
+									:op1 "Clarence"
+									:op2 "Thomas")
+								:ARG0-of (x75 / judge-01
+									:ARG1 (x83 / organization
+										:name (n9 / name
+											:op1 "Appeals"))))
+							:ARG2 (x86 / tell-01
+								:ARG1 (x88 / grandfather)))))))
+		:op3 (x55 / model
+			:mod (x54 / role))
+		:op2 (x70 / recall-02
+			:ARG0 (x68 / person
+				:name (n10 / name
 					:op1 "Thomas"))
-			:time (x72 / once)
-			:ARG1 (x75 / way
-				:mod (x74 / this)))
-		:op2 (x88 / use-01
-			:ARG0 (x80 / person
-				:name (n9 / name
-					:op1 "Clarence"
-					:op2 "Thomas")
-				:ARG0-of (x79 / judge-01
-					:ARG1 (x87 / organization
-						:name (n10 / name
-							:op1 "Appeals"))))
-			:ARG2 (x90 / tell-01
-				:ARG1 (x92 / grandfather)
-				:ARG1 (x101 / possible
-					:domain (x103 / solve-01
-						:polarity -
-						:ARG1 (x97 / problem
-							:topic (x100 / grease
-								:mod (x99 / elbow)))))))))
+			:time (x69 / once)
+			:ARG1 (x72 / way
+				:mod (x71 / this)))
+		:op2 (x97 / possible
+			:domain (x99 / solve-01
+				:polarity -
+				:ARG1 (x93 / problem
+					:topic (x96 / grease
+						:mod (x95 / elbow)))))))
 
 # ::id 13
-# ::snt Then Judge Clarence Thomas of the U.S. Court of Appeals 'd say, ` Old Man Ca n't is dead
-(x12 / say-01
-	:time (x1 / then)
-	:ARG0 (x4 / person
-		:name (n / name
-			:op1 "Thomas")
-		:null_edge (x2 / judge-01)
-		:null_edge (x3 / person
-			:name (n2 / name
-				:op1 "Clarence")))
-	:ARG0 (x10 / organization
-		:name (n1 / name
-			:op1 "Appeals"))
-	:ARG1 (x20 / die-01
-		:op (d / dead)
-		:ARG1 (x16 / man
-			:mod (x15 / old))))
+# ::snt Then Judge Clarence Thomas of the U.S. Court of Appeals  would say , Old Man Ca not is dead
+(xap0 / multi-sentence
+	:snt1 (x16 / possible
+		:domain (x15 / man
+			:mod (x14 / old))
+		:domain (x19 / die-01
+			:op (d / dead)
+			:ARG1 (x12 / thing
+				:ARG1-of (s / say-01)
+				:time (x1 / then)
+				:ARG0 (x4 / person
+					:name (n / name
+						:op1 "Thomas")
+					:null_edge (x2 / judge-01)
+					:null_edge (x3 / person
+						:name (n2 / name
+							:op1 "Clarence")))
+				:ARG0 (x10 / organization
+					:name (n1 / name
+						:op1 "Appeals"))))))
 
 # ::id 14
-# ::snt his grandfather helped bury Judge Clarence Thomas of the U.S. Court of Appeals . '
+# ::snt his grandfather  helped bury Judge Clarence Thomas of the U.S. Court of Appeals
 (x3 / help-01
 	:ARG0 (x2 / grandfather)
 	:ARG1 (x4 / bury-01
@@ -512,7 +592,7 @@
 						:op1 "Appeals"))))))
 
 # ::id 15
-# ::snt ; When Anderson was n't coaching Thomas, in Judge Clarence Thomas of the U.S. Court of Appeals farm fields or on Judge Clarence Thomas of the U.S. Court of Appeals delivery truck, Judge Clarence Thomas of the U.S. Court of Appeals made sure the lessons continued, in the hands of the Franciscan nuns of all-black St. Benedict the Moor School. ; Thomas, who had experienced racial mistreatment by white seminarians in Georgia, ultimately rejected seminary life
+# ::snt ; When Anderson was not coaching Thomas , in Judge Clarence Thomas of the U.S. Court of Appeals  farm fields or on Judge Clarence Thomas of the U.S. Court of Appeals  delivery truck , Judge Clarence Thomas of the U.S. Court of Appeals  made sure the lessons continued , in the hands of the Franciscan nuns of all-black St. Benedict the Moor School. ; Thomas , who had experienced racial mistreatment by white seminarians in Georgia , ultimately rejected seminary life
 (x / xconcept
 	:x (x1 / and
 		:op4 (x43 / organization
@@ -588,7 +668,7 @@
 			:mod (x19 / farm))))
 
 # ::id 16
-# ::snt Judge Clarence Thomas of the U.S. Court of Appeals has identified an episode at Immaculate Conception Seminary in Conception, Mo., in 1968 as the final humiliation
+# ::snt Judge Clarence Thomas of the U.S. Court of Appeals  has identified an episode at Immaculate Conception Seminary in Conception , Mo. , in 1968 as the final humiliation
 (x11 / identify-01
 	:ARG0 (x3 / person
 		:name (n / name
@@ -614,7 +694,7 @@
 		:mod (x27 / final)))
 
 # ::id 17
-# ::snt Judge Clarence Thomas of the U.S. Court of Appeals said Judge Clarence Thomas of the U.S. Court of Appeals heard a seminarian there react to the shooting of Dr. Martin Luther King Jr. by saying, " Good, Judge Clarence Thomas of the U.S. Court of Appeals hope the son of a bitch dies .
+# ::snt Judge Clarence Thomas of the U.S. Court of Appeals  said Judge Clarence Thomas of the U.S. Court of Appeals  heard a seminarian there react to the shooting of Dr. Martin Luther King Jr. by saying , Good , Judge Clarence Thomas of the U.S. Court of Appeals  hope the son of a bitch dies
 (x10 / say-01
 	:ARG0 (x3 / person
 		:name (n / name
@@ -635,36 +715,32 @@
 				:ARG1 (x19 / organization
 					:name (n4 / name
 						:op1 "Appeals"))))
-		:ARG1 (x22 / seminarian)
-		:null_edge (x23 / there)
-		:ARG1 (x24 / react-01
-			:ARG1 (x27 / shooting
-				:ARG0 (x30 / company
-					:name (n5 / name
-						:op1 "Martin"
-						:op2 "Luther"
-						:op3 "King"
-						:op4 "Jr.")))
-			:instrument (x35 / say-01
-				:ARG1 (x49 / hope-01
-					:ARG0 (x42 / person
+		:ARG1 (x22 / seminarian
+			:ARG0-of (x24 / react-01
+				:ARG1 (x27 / shooting
+					:ARG0 (x30 / company
+						:name (n5 / name
+							:op1 "Martin"
+							:op2 "Luther"
+							:op3 "King"
+							:op4 "Jr.")))
+				:ARG1 (x48 / hope-01
+					:ARG0 (x41 / person
 						:name (n6 / name
 							:op1 "Thomas")
-						:null_edge (x38 / good)
-						:null_edge (x41 / person
-							:name (n7 / name
-								:op1 "Clarence"))
-						:ARG0-of (xap0 / have-org-role-91
-							:ARG3 (x40 / judge-01)
-							:ARG1 (x48 / organization
-								:name (n8 / name
-									:op1 "Appeals"))))
-					:ARG1 (x55 / die-01
-						:ARG1 (x51 / son
-							:consist-of (x54 / bitch))))))))
+						:null_edge (x39 / judge-01)
+						:null_edge (x40 / person
+							:name (n8 / name
+								:op1 "Clarence")))
+					:ARG0 (x47 / organization
+						:name (n7 / name
+							:op1 "Appeals"))
+					:ARG1 (x54 / die-01
+						:ARG1 (x50 / son
+							:consist-of (x53 / bitch))))))))
 
 # ::id 18
-# ::snt ; Thomas left the seminary and went north to enroll at Holy Cross College in the gritty New England factory city of Worcester, Mass. ; A Southerner in New England ; The Southern farm boy was forced to endure not only the harsh winters of New England, but also the chilly atmosphere of a white college just beginning to widen opportunities for blacks. ; Within days of King's assassination, the school created a scholarship fund named after the civil-rights leader and stepped up the recruiting of blacks
+# ::snt ; Thomas left the seminary and went north to enroll at Holy Cross College in the gritty New England factory city of Worcester , Mass. ; A Southerner in New England ; The Southern farm boy was forced to endure not only the harsh winters of New England , but also the chilly atmosphere of a white college just beginning to widen opportunities for blacks. ; Within days of King's assassination , the school created a scholarship fund named after the civil-rights leader and stepped up the recruiting of blacks
 (x6 / and
 	:op1 (x3 / leave-01
 		:ARG0 (x2 / person
@@ -723,7 +799,7 @@
 							:op1 "Worcester")))))))
 
 # ::id 19
-# ::snt And so Thomas, who was driven from the Missouri seminary by racism, became one of the beneficiaries of an effort to combat it. ; Thomas, who paid for Judge Clarence Thomas of the U.S. Court of Appeals college education with loans, jobs and the newly raised scholarship funds, soon was drawn into the turbulence of Vietnam War and " black power " politics. ; Judge Clarence Thomas of the U.S. Court of Appeals helped found a Black Student Union, writing and typing a Black Student Union constitution
+# ::snt And so Thomas , who was driven from the Missouri seminary by racism , became one of the beneficiaries of an effort to combat it. ; Thomas , who paid for Judge Clarence Thomas of the U.S. Court of Appeals  college education with loans , jobs and the newly raised scholarship funds , soon was drawn into the turbulence of Vietnam War and black power politics. ; Judge Clarence Thomas of the U.S. Court of Appeals  helped found a Black Student Union , writing and typing a Black Student Union  constitution
 (x1 / and
 	:mod (x2 / so)
 	:op2 (x3 / person
@@ -742,11 +818,11 @@
 				:op1 "Thomas")
 			:ARG0-of (x31 / pay-01
 				:ARG2 (x35 / person
-					:name (n4 / name
+					:name (n3 / name
 						:op1 "Thomas")
 					:null_edge (x33 / judge-01)
 					:null_edge (x34 / person
-						:name (n6 / name
+						:name (n4 / name
 							:op1 "Clarence")))))
 		:time (x55 / soon)
 		:ARG2 (x60 / turbulence
@@ -754,30 +830,18 @@
 			:ARG1 (x64 / and
 				:op1 (x63 / war
 					:location (x62 / country
-						:name (n7 / name
-							:op1 "Vietnam"))))))
-	:op2 (x73 / person
+						:name (n5 / name
+							:op1 "Vietnam")))
+				:op2 (x67 / politics
+					:mod (x65 / black)
+					:mod (x66 / power)))))
+	:op2 (x71 / person
 		:name (n1 / name
 			:op1 "Clarence"
-			:op2 "Thomas")
-		:ARG1-of (x75 / include-91)
-		:ARG0-of (x81 / help-01
-			:ARG0 (x80 / organization
-				:name (n3 / name
-					:op1 "Appeals"))
-			:ARG1 (x89 / and
-				:op2 (x86 / political-party
-					:name (n5 / name
-						:op1 "Union")
-					:null_edge (x84 / black)
-					:null_edge (x85 / null_tag))
-				:ARG1-of (x88 / write-01
-					:ARG1 (x95 / constitution
-						:mod (x92 / black)))
-				:op2 (x90 / type-01)))))
+			:op2 "Thomas")))
 
 # ::id 20
-# ::snt In December 1969, Judge Clarence Thomas of the U.S. Court of Appeals and other black students resigned to protest the suspensions of black students who had blocked a General Electric recruiter on campus
+# ::snt In December 1969 , Judge Clarence Thomas of the U.S. Court of Appeals  and other black students resigned to protest the suspensions of black students who had blocked a General Electric recruiter on campus
 (x18 / resign-01
 	:time (x2 / date-entity
 		:year 1969)
@@ -809,7 +873,7 @@
 				:location (x34 / campus)))))
 
 # ::id 21
-# ::snt Stung, school officials granted a blanket amnesty and the students returned. ; Thomas went on to run track and write for the campus newspaper
+# ::snt 
 (x9 / and
 	:op1 (x5 / grant-01
 		:ARG2 (x1 / sting)
@@ -831,21 +895,20 @@
 			:ARG0-of (s / study-01))))
 
 # ::id 22
-# ::snt Judge Clarence Thomas of the U.S. Court of Appeals graduated from Holy Cross with honors and left for Yale University Law School in New Haven, Conn. ; Freewheeling liberalism ; " Judge Clarence Thomas of the U.S. Court of Appeals came into law school espousing liberal views from Judge Clarence Thomas of the U.S. Court of Appeals freewheeling, unattached undergraduate days, " said Harry Singleton, a black classmate, close friend and a former civil rights official in the Reagan Education Department. ; " But Judge Clarence Thomas of the U.S. Court of Appeals became more conservative as Judge Clarence Thomas of the U.S. Court of Appeals went through the process of legal education .
-(x100 / become-01
-	:ARG2 (x102 / conservative
+# ::snt Judge Clarence Thomas of the U.S. Court of Appeals  graduated from Holy Cross with honors and left for Yale University Law School in New Haven , Conn. ; Freewheeling liberalism ; Judge Clarence Thomas of the U.S. Court of Appeals  came into law school espousing liberal views from Judge Clarence Thomas of the U.S. Court of Appeals  freewheeling , unattached undergraduate days , said Harry Singleton , a black classmate , close friend and a former civil rights official in the Reagan Education Department. ; But Judge Clarence Thomas of the U.S. Court of Appeals  became more conservative as Judge Clarence Thomas of the U.S. Court of Appeals  went through the process of legal education
+(x97 / become-01
+	:ARG2 (x99 / conservative
 		:domain (x3 / person
 			:name (n / name
 				:op1 "Thomas")
 			:null_edge (x1 / judge-01)
 			:null_edge (x2 / person
 				:name (n1 / name
-					:op1 "Clarence"))
-			:null_edge (x94 / include-91))
-		:degree (x101 / more)))
+					:op1 "Clarence")))
+		:degree (x98 / more)))
 
 # ::id 23
-# ::snt ; Yale law students, Singleton explained, were exposed to conservative law professors with powerful minds. ; " Harry Singleton used to discuss conservative ideas with Clarence and Judge Clarence Thomas of the U.S. Court of Appeals was interested in Yale law students, " Singleton said
+# ::snt ; Yale law students , Singleton explained , were exposed to conservative law professors with powerful minds. ; Harry Singleton  used to discuss conservative ideas with Clarence and Judge Clarence Thomas of the U.S. Court of Appeals  was interested in Yale law students  , Singleton said
 (x / xconcept
 	:x (x1 / and
 		:op2 (x2 / organization
@@ -853,7 +916,7 @@
 				:op1 "Yale"))
 		:op2 (x7 / explain-01
 			:ARG0 (x6 / person
-				:name (n1 / name
+				:name (n2 / name
 					:op1 "Singleton")))
 		:op2 (x10 / expose-01
 			:ARG1 (x4 / person
@@ -866,71 +929,70 @@
 					:ARG2 (p / professor)
 					:mod (x12 / conservative)
 					:mod (x13 / law))))
-		:op2 (x30 / and
-			:op1 (x29 / person
-				:name (n2 / name
+		:op2 (x29 / and
+			:op1 (x28 / person
+				:name (n3 / name
 					:op1 "Clarence")
 				:ARG0-of (xap1 / have-org-role-91
-					:ARG3 (x31 / judge-01))))
-		:op2 (x49 / say-01
-			:ARG1 (x41 / interest-01
-				:ARG1-of (x23 / use-01
-					:ARG0 (x21 / newspaper
-						:name (n4 / name
+					:ARG3 (x30 / judge-01))))
+		:op4 (x38 / organization
+			:name (n1 / name
+				:op1 "Appeals"))
+		:op2 (x47 / say-01
+			:ARG1 (x40 / interest-01
+				:ARG1-of (x22 / use-01
+					:ARG0 (x20 / newspaper
+						:name (n5 / name
 							:op1 "Harry"
 							:op2 "Singleton"))
-					:ARG2 (x25 / discuss-01
-						:ARG0 x21
-						:ARG1 (x27 / idea
-							:mod (x26 / conservative))
-						:ARG2 (x33 / person
-							:name (n5 / name
-								:op1 "Thomas")
-							:null_edge (x32 / person
-								:name (n7 / name
-									:op1 "Clarence")))))
-				:ARG2 (x45 / person
-					:ARG0-of (s1 / study-01)
-					:mod (x44 / law
-						:name (x43 / organization
+					:ARG2 (x24 / discuss-01
+						:ARG0 x20
+						:ARG1 (x26 / idea
+							:mod (x25 / conservative))
+						:ARG2 (x32 / person
 							:name (n6 / name
+								:op1 "Thomas")
+							:null_edge (x31 / person
+								:name (n8 / name
+									:op1 "Clarence")))))
+				:ARG2 (x44 / person
+					:ARG0-of (s1 / study-01)
+					:mod (x43 / law
+						:name (x42 / organization
+							:name (n7 / name
 								:op1 "Yale")))))
-			:ARG0 (x48 / person
-				:name (n3 / name
-					:op1 "Singleton"))))
-	:x (x19 / and
-		:op4 (x39 / organization
-			:name (n8 / name
-				:op1 "Appeals"))))
+			:ARG0 (x46 / person
+				:name (n4 / name
+					:op1 "Singleton")))))
 
 # ::id 24
-# ::snt " Yale law students were about the dangers of big government trying to solve all the ills of society and how every time you do that you take away from the liberties of the people .
+# ::snt Yale law students  were about the dangers of big government trying to solve all the ills of society and how every time you do that you take away from the liberties of the people
 (x / xconcept
-	:x (x4 / person
+	:x (x3 / person
 		:ARG0-of (s / study-01)
-		:source (x2 / organization
+		:source (x1 / organization
 			:name (n / name
 				:op1 "Yale"))
-		:mod (x3 / law)
-		:source (x8 / danger
-			:poss (x11 / government-organization
+		:mod (x2 / law)
+		:source (x7 / danger
+			:poss (x10 / government-organization
 				:ARG0-of (g / govern-01)
-				:mod (x10 / big))
-			:ARG1-of (x12 / try-01
-				:ARG1 (x14 / solve-01
-					:ARG1 (x17 / ill
-						:quant (x15 / all)
-						:poss (x19 / society))))
-			:ARG1-of (x25 / do-02
-				:ARG1 (x22 / every)
-				:ARG0 (x24 / you)
-				:ARG1 (x32 / liberty
-					:poss (x27 / you)
-					:ARG1-of (x33 / include-91)))))
-	:x (x20 / and))
+				:mod (x9 / big))
+			:ARG1-of (x11 / try-01
+				:ARG1 (x13 / solve-01
+					:ARG1 (x16 / ill
+						:quant (x14 / all)
+						:poss (x18 / society))))
+			:ARG1-of (x24 / do-02
+				:ARG1 (x21 / every)
+				:ARG0 (x23 / you)
+				:ARG1 (x31 / liberty
+					:poss (x26 / you)
+					:ARG1-of (x32 / include-91)))))
+	:x (x19 / and))
 
 # ::id 25
-# ::snt ; But it was Thomas Sowell, the conservative black economist now at Stanford University's Hoover Institution, whose work came to grip Thomas ' mind. ; Shortly after his arrival at Yale, Thomas remembered when someone gave grip Thomas ' mind. one of Sowell's books and " Judge Clarence Thomas of the U.S. Court of Appeals threw his arrival at Yale in the trash " because " his arrival at Yale really went against all the things Yale law students 'd been indoctrinated to believe about the radical movement and the peace movement .
+# ::snt ; But it was Thomas Sowell , the conservative black economist now at Stanford University's Hoover Institution , whose work came to grip Thomasmind. ; Shortly after his arrival at Yale , Thomas remembered when someone gave grip Thomasmind.  one of Sowell's books and Judge Clarence Thomas of the U.S. Court of Appeals  threw his arrival at Yale  in the trash because his arrival at Yale  really went against all the things Yale law students  would been indoctrinated to believe about the radical movement and the peace movement
 (x2 / contrast-01
 	:ARG2 (x5 / name
 		:op1 "Thomas"
@@ -946,52 +1008,51 @@
 					:op2 "University"
 					:op3 "'s"
 					:op4 "Hoover"
-					:op5 "Institution"))
-			:ARG1 (x24 / grip
-				:ARG1 (x27 / mind
-					:ARG0 (x25 / person
-						:name (n6 / name
-							:op1 "Thomas")))))
-		:ARG0-of (x38 / remember-01
-			:time (x31 / after
-				:mod (x30 / shortly)
-				:op1 (x33 / arrive-01
-					:ARG1 (x35 / organization
+					:op5 "Institution")
+				:ARG1-of (x22 / come-01
+					:ARG2 (x24 / grip
+						:ARG1 (x25 / thing
+							:name (n8 / name
+								:op1 "Thomasmind"))))))
+		:ARG0-of (x36 / remember-01
+			:time (x29 / after
+				:mod (x28 / shortly)
+				:op1 (x31 / arrive-01
+					:ARG1 (x33 / organization
 						:name (n7 / name
 							:op1 "Yale"))))
-			:ARG0 (x37 / person
+			:ARG0 (x35 / person
 				:name (n1 / name
 					:op1 "Thomas"))
-			:ARG2 (x42 / grip
-				:ARG0 (x40 / someone)
-				:ARG1 (x45 / mind
-					:ARG0 (x43 / person
-						:name (n8 / name
-							:op1 "Thomas")))))
-		:quant 1
-		:ARG0-of (x51 / book
-			:poss (x49 / person
+			:ARG1 (x41 / person
 				:name (n2 / name
-					:op1 "Sowell")))
-		:ARG0-of (x63 / throw-06
-			:ARG0 (x55 / person
+					:op1 "Thomasmind")
+				:ARG0-of (x40 / grip
+					:ARG1 (x38 / someone))))
+		:quant 1
+		:ARG0-of (x47 / book
+			:poss (x45 / person
 				:name (n3 / name
+					:op1 "Sowell")))
+		:ARG0-of (x58 / throw-06
+			:ARG0 (x50 / person
+				:name (n4 / name
 					:op1 "Clarence"
 					:op2 "Thomas")
-				:ARG0-of (x54 / judge-01)
-				:ARG0-of (x62 / organization
-					:name (n4 / name
+				:ARG0-of (x49 / judge-01)
+				:ARG0-of (x57 / organization
+					:name (n6 / name
 						:op1 "Appeals")))
-			:ARG1 (x65 / arrive-01
-				:ARG1 (x67 / organization
-					:name (n5 / name
-						:op1 "Yale")))
-			:ARG2 (x70 / trash)
-			:ARG1-of (x72 / cause-01)))
-	:ARG2 (x52 / and))
+			:ARG1 (x60 / arrive-01)
+			:ARG2 (x62 / organization
+				:name (n5 / name
+					:op1 "Yale"))
+			:ARG2 (x65 / trash)
+			:ARG1-of (x66 / cause-01)))
+	:ARG2 (x48 / and))
 
 # ::id 26
-# ::snt ; But after law school, Thomas rediscovered one of Sowell's books
+# ::snt ; But after law school , Thomas rediscovered one of Sowell's books
 (x2 / contrast-01
 	:ARG2 (x8 / rediscover
 		:ARG0 (x7 / person
@@ -1004,85 +1065,60 @@
 					:op1 "Sowell")))))
 
 # ::id 27
-# ::snt Sowell's provocative 1983 work, " The Economics and Politics of Race, " was " manna from heaven, " Thomas said. ; In that book, Sowell, arguing from a laissez-faire perspective, endorsed the notion that blacks would benefit more from pursuing economic achievement than political agitation. ; From Yale to Washington ; Thomas, always a top student, was recruited out of Yale in 1974 by John Danforth, R-Mo., then Missouri attorney general, a Yale trustee and a frequent campus visitor
-(x / xconcept
-	:x (x26 / and
-		:op2 (x18 / manna
-			:ARG0 (x20 / heaven))
-		:op2 (x24 / say-01
+# ::snt Sowell's provocative 1983 work , The Economics and Politics of Race , was manna from heaven , Thomas said. ; In that book , Sowell , arguing from a laissez-faire perspective , endorsed the notion that blacks would benefit more from pursuing economic achievement than political agitation. ; From Yale to Washington ; Thomas , always a top student , was recruited out of Yale in 1974 by John Danforth , R-Mo. , then Missouri attorney general , a Yale trustee and a frequent campus visitor
+(x20 / say-01
+	:ARG1 (x15 / manna
+		:ARG1 (x5 / work-01
 			:ARG0 (x1 / person
-				:name (n / name
-					:op1 "Sowell"))
-			:ARG1 (x5 / work-01
-				:ARG0 x1
-				:time (x4 / date-entity
-					:year 1983
-					:mod (x3 / provocative))
-				:ARG1 (x10 / and
-					:op1 (x9 / economics
-						:poss (x13 / race))))
-			:ARG0 (x23 / person
 				:name (n1 / name
-					:op1 "Thomas"))
-			:ARG1 (x69 / recruit-01
-				:ARG2 (x57 / organization
-					:name (n2 / name
-						:op1 "Yale")
-					:location (x59 / city
-						:name (n6 / name
-							:op1 "Washington")))
-				:ARG2 (x61 / person
-					:name (n3 / name
-						:op1 "Thomas")
-					:ARG0-of (x66 / person
-						:ARG0-of (s / study-01)
-						:time (x63 / always)
-						:mod (x65 / top)))
-				:ARG2 (x72 / organization
-					:name (n4 / name
-						:op1 "Yale"))
-				:time (x74 / date-entity
-					:year 1974)
-				:ARG0 (x76 / event
-					:name (n5 / name
-						:op1 "John"
-						:op2 "Danforth"))))
-		:op1 (x31 / sowell)
-		:op1 (x33 / argue-01
-			:source (x37 / perspective
-				:mod (x36 / laissez-faire)))
-		:op2 (x89 / and
-			:op2 (x84 / general
-				:time (x81 / then)
-				:mod (x83 / attorney))
-			:op2 (x88 / trustee-00
-				:mod (x87 / organization
+					:op1 "Sowell"))
+			:mod (x3 / provocative)
+			:time (x4 / date-entity
+				:year 1983)
+			:ARG1 (x9 / and
+				:op2 (x8 / economics
+					:poss (x12 / race))))
+		:source (x17 / heaven))
+	:ARG0 (x19 / person
+		:name (n / name
+			:op1 "Thomas"))
+	:ARG1 (x86 / and
+		:op1 (x65 / recruit-01
+			:ARG2 (x53 / organization
+				:name (n2 / name
+					:op1 "Yale")
+				:location (x55 / city
 					:name (n7 / name
-						:op1 "Yale")))))
-	:x (x55 / and
-		:op1 (x39 / endorse-01
-			:ARG0 (x29 / book
-				:mod (x28 / that))
-			:ARG1 (x41 / notion
-				:ARG0-of (x45 / benefit-01
-					:ARG0 (x43 / person
-						:mod (b / black))
-					:degree (x46 / more)
-					:ARG2 (x48 / pursue-01
-						:ARG1 (x50 / achieve-01
-							:mod (x49 / economy)
-							:ARG0 (x53 / agitation
-								:mod (x52 / politics)))))))
-		:op2 (x79 / country
-			:name (n8 / name
-				:op1 "R-Mo."))
-		:op5 (x93 / person
+						:op1 "Washington")))
+			:ARG2 (x57 / person
+				:name (n3 / name
+					:op1 "Thomas")
+				:ARG0-of (x62 / person
+					:ARG0-of (s / study-01)
+					:time (x59 / always)
+					:mod (x61 / top)))
+			:ARG2 (x68 / organization
+				:name (n4 / name
+					:op1 "Yale"))
+			:time (x70 / date-entity
+				:year 1974)
+			:ARG0 (x72 / event
+				:name (n5 / name
+					:op1 "John"
+					:op2 "Danforth")))
+		:op1 (x81 / general
+			:mod (x78 / then))
+		:op2 (x85 / trustee-00
+			:mod (x84 / organization
+				:name (n6 / name
+					:op1 "Yale")))
+		:op2 (x90 / person
 			:ARG0-of (v / visit-01)
-			:frequency (x91 / frequent)
-			:ARG1 (x92 / campus))))
+			:frequency (x88 / frequent)
+			:ARG1 (x89 / campus))))
 
 # ::id 28
-# ::snt Danforth brought Thomas to Jefferson City, Mo., to work in the attorney general's office. ; When Danforth became a U.S. senator in 1977, Thomas stayed in St. Louis to work as an assistant counsel for the Monsanto Corp., then in 1979 joined Danforth in Washington as a legislative aide. ; Reagan administration officials were so impressed by Thomas and Reagan new conservative leanings that Reagan administration officials appointed Reagan assistant secretary for civil rights in the Department of Education
+# ::snt Danforth brought Thomas to Jefferson City , Mo. , to work in the attorney general's office. ; When Danforth became a U.S. senator in 1977 , Thomas stayed in St. Louis to work as an assistant counsel for the Monsanto Corp. , then in 1979 joined Danforth in Washington as a legislative aide. ; Reagan administration officials were so impressed by Thomas and Reagan  new conservative leanings that Reagan administration officials  appointed Reagan  assistant secretary for civil rights in the Department of Education
 (x / xconcept
 	:x (x19 / and
 		:op1 (x22 / become-01
@@ -1188,7 +1224,7 @@
 									:op1 "Reagan")))))))))
 
 # ::id 29
-# ::snt In 1982, Reagan administration officials promoted John Danforth to the more visible post of chairman of the Equal Employment Opportunity Commission
+# ::snt In 1982 , Reagan administration officials  promoted John Danforth  to the more visible post of chairman of the Equal Employment Opportunity Commission
 (x7 / promote-01
 	:time (x2 / date-entity
 		:year 1982)
@@ -1216,7 +1252,7 @@
 							:op1 "Reagan")))))))
 
 # ::id 30
-# ::snt There controversy dogged him for the next eight years. ; Congress learned in 1989 that the EEOC under Thomas ' direction had permitted more than 13,000 age discrimination claims to lapse. ; Civil-rights groups accused Thomas of failing to enforce other anti-discrimination laws as well, and of retaliating against employees who disagreed with Judge Clarence Thomas of the U.S. Court of Appeals policies. ; Thomas concentrated on winning relief for victims of actual discrimination
+# ::snt There controversy dogged him for the next eight years. ; Congress learned in 1989 that the EEOC under Thomasdirection had permitted more than 13,000 age discrimination claims to lapse. ; Civil-rights groups accused Thomas of failing to enforce other anti-discrimination laws as well , and of retaliating against employees who disagreed with Judge Clarence Thomas of the U.S. Court of Appeals  policies. ; Thomas concentrated on winning relief for victims of actual discrimination
 (x / xconcept
 	:x (x11 / and
 		:op2 (x3 / dog
@@ -1233,61 +1269,60 @@
 				:ARG2 (x18 / organization
 					:name (n1 / name
 						:op1 "EEOC"))
-				:ARG1 (x24 / permit-01
-					:ARG0 (x22 / direction
-						:ARG0 (x20 / person
-							:name (n2 / name
-								:op1 "Thomas")))
-					:ARG1 (x30 / claim-01
-						:quant (x25 / more-than
-							:op1 (x27 / 13,000))
-						:ARG0 (x28 / age)
-						:ARG1 (x29 / discriminate-02))
-					:ARG2 (x32 / lapse)))))
-	:x (x34 / and
-		:op1 (x37 / accuse-01
-			:ARG0 (x36 / group
-				:mod (x35 / country
+				:ARG1 (x22 / permit-01
+					:ARG0 (x20 / person
+						:name (n2 / name
+							:op1 "Thomasdirection"))
+					:ARG1 (x28 / claim-01
+						:quant (x23 / more-than
+							:op1 (x25 / 13,000))
+						:ARG0 (x26 / age)
+						:ARG1 (x27 / discriminate-02))
+					:ARG2 (x30 / lapse)))))
+	:x (x32 / and
+		:op1 (x35 / accuse-01
+			:ARG0 (x34 / group
+				:mod (x33 / country
 					:name (n4 / name
 						:op1 "Civil-rights")))
-			:ARG1 (x38 / person
+			:ARG1 (x36 / person
 				:name (n3 / name
 					:op1 "Thomas"))
-			:ARG2 (x40 / fail-01
-				:ARG2 (x42 / enforce-01
-					:ARG1 (x45 / law
-						:mod (x43 / other)
-						:mod (x44 / anti-discrimination)
-						:example (x49 / and
-							:op1 (x47 / well)
-							:op1 (x51 / retaliate-01
-								:ARG1 (x53 / person
+			:ARG2 (x38 / fail-01
+				:ARG2 (x40 / enforce-01
+					:ARG1 (x43 / law
+						:mod (x41 / other)
+						:mod (x42 / anti-discrimination)
+						:example (x47 / and
+							:op1 (x45 / well)
+							:op1 (x49 / retaliate-01
+								:ARG1 (x51 / person
 									:ARG1-of (e / employ-01)
-									:ARG0-of (x55 / disagree-01
-										:ARG2 (x59 / person
+									:ARG0-of (x53 / disagree-01
+										:ARG2 (x57 / person
 											:name (n5 / name
 												:op1 "Thomas")
-											:null_edge (x57 / judge-01)
-											:null_edge (x58 / person
+											:null_edge (x55 / judge-01)
+											:null_edge (x56 / person
 												:name (n6 / name
 													:op1 "Clarence"))
-											:null_edge (x63 / court
-												:ARG1 (x66 / policy
-													:null_edge (x65 / null_tag)))))))))))))
-	:x (x68 / and
-		:op1 (x70 / concentrate
-			:ARG0 (x69 / person
+											:null_edge (x61 / court
+												:ARG1 (x64 / policy
+													:null_edge (x63 / null_tag)))))))))))))
+	:x (x66 / and
+		:op1 (x68 / concentrate
+			:ARG0 (x67 / person
 				:name (n7 / name
 					:op1 "Thomas"))
-			:ARG1 (x72 / win-01
-				:ARG0 x69
-				:ARG1 (x73 / relieve-01)))
-		:op1 (x75 / victim
-			:mod (x78 / discriminate-02
-				:mod (x77 / actual)))))
+			:ARG1 (x70 / win-01
+				:ARG0 x67
+				:ARG1 (x71 / relieve-01)))
+		:op1 (x73 / victim
+			:mod (x76 / discriminate-02
+				:mod (x75 / actual)))))
 
 # ::id 31
-# ::snt He steered away from lawsuits based on statistical evidence and remedies that included timetables for future hiring. ; But he was unwilling to go along with more strident voices in the Reagan administration who opposed most legal remedies for discrimination, so he often felt isolated from both the administration and the civil rights establishment. ; Several years ago, a top Reagan domestic adviser who wanted his coffee cup refilled at a black-tie dinner looked up and spotted a black man in a tuxedo hovering near the table
+# ::snt He steered away from lawsuits based on statistical evidence and remedies that included timetables for future hiring. ; But he was unwilling to go along with more strident voices in the Reagan administration who opposed most legal remedies for discrimination , so he often felt isolated from both the administration and the civil rights establishment. ; Several years ago , a top Reagan domestic adviser who wanted his coffee cup refilled at a black-tie dinner looked up and spotted a black man in a tuxedo hovering near the table
 (x / xconcept
 	:x (x19 / and
 		:op1 (x65 / person
@@ -1354,7 +1389,7 @@
 						:unit (y / year)))))))
 
 # ::id 32
-# ::snt Holding the cup aloft, the official asked for more coffee
+# ::snt Holding the cup aloft , the official asked for more coffee
 (x8 / ask-01
 	:ARG2 (x1 / hold-01
 		:ARG1 (x3 / cup)
@@ -1367,7 +1402,7 @@
 	:ARG0 xap0)
 
 # ::id 33
-# ::snt The black man reached past the cup to shake hands and said evenly : " Perhaps Civil-rights groups have n't met
+# ::snt The black man reached past the cup to shake hands and said evenly : Perhaps Civil-rights groups  have not met
 (x11 / and
 	:op1 (x4 / reach-01
 		:ARG0 (x3 / man
@@ -1375,18 +1410,18 @@
 		:null_edge (x5 / null_tag
 			:op1 (x7 / cup))
 		:ARG1 (x9 / shake-01
-			:ARG1 (x10 / hand))
-		:null_edge (x21 / meet-01
-			:ARG0 (x18 / group
-				:mod (x17 / world-region
-					:name (n / name
-						:op1 "Civil-rights")))))
+			:ARG1 (x10 / hand)))
 	:op2 (x12 / say-01
 		:ARG0 x3
-		:manner (x13 / evenly)))
+		:manner (x13 / evenly)
+		:ARG1 (x20 / meet-01
+			:ARG0 (x17 / group
+				:mod (x16 / world-region
+					:name (n / name
+						:op1 "Civil-rights"))))))
 
 # ::id 34
-# ::snt a black man 'm Clarence Thomas .
+# ::snt a black man  am Clarence Thomas
 (x5 / person
 	:name (n / name
 		:op1 "Clarence"
@@ -1395,26 +1430,16 @@
 		:mod (x2 / black)))
 
 # ::id 35
-# ::snt ; SUNDAY IN PERSPECTIVE : A reporter who saw Clarence Thomas at his most candid writes about the nominee's opinions, fears and frustrations. ; Nomination Of Clarence Thomas ; President Bush has chosen Judge Clarence Thomas of the U.S. Court of Appeals to replace Justice Thurgood Marshall, who is retiring from the Supreme Court. ; Nominee's background ; Age : 43 ; Birthplace : Savannah, Ga. ; Family : Married to Virginia Lamp Thomas ; A reporter who saw Clarence Thomas at his most candid has one son, Jamal ; Education : Bachelor's degree, 1971, Holy Cross College ; law degree, Yale Law School, 1974 ; Professional experience : Missouri assistant attorney general, 1974 - ' 77 ; chairman of Equal Employment Opportunity Commission, 1982 - ' 89 ; judge on U.S. Court of Appeals for District of Columbia since
+# ::snt ; SUNDAY IN PERSPECTIVE : A reporter who saw Clarence Thomas at his most candid writes about the nominee's opinions , fears and frustrations. ; Nomination Of Clarence Thomas ; President Bush has chosen Judge Clarence Thomas of the U.S. Court of Appeals to replace Justice Thurgood Marshall , who is retiring from the Supreme Court. ; Nominee's background ; Age : 43 ; Birthplace : Savannah , Ga. ; Family : Married to Virginia Lamp Thomas ; A reporter who saw Clarence Thomas at his most candid  has one son , Jamal ; Education : Bachelor's degree , 1971 , Holy Cross College ; law degree , Yale Law School , 1974 ; Professional experience : Missouri assistant attorney general , 1974 - 77 ; chairman of Equal Employment Opportunity Commission , 1982 - 89 ; judge on U.S. Court of Appeals for District of Columbia since
 (x / xconcept
 	:x (x1 / and
 		:op2 (x4 / perspective)
-		:op3 (xap0 / have-org-role-91
-			:ARG3 (x145 / judge-01
-				:null_edge (x150 / have-org-role-91
-					:ARG1 (g / government-organization
-						:name (n / name
-							:op1 "Appeals"
-							:op2 "for"
-							:op3 "District")))
-				:time (x155 / since))))
-	:x (x132 / and
-		:op2 (x124 / assist-01)
-		:time (x128 / date-entity
-			:year 1974)
-		:op2 77
-		:op2 (x133 / chairman
-			:ARG1 (x135 / government-organization
+		:op2 (xap0 / date-entity
+			:value 77))
+	:x (x131 / and
+		:op4 (x126 / general)
+		:op2 (x132 / chairman
+			:ARG1 (x134 / government-organization
 				:name (n14 / name
 					:op1 "Equal"
 					:op2 "Employment"
@@ -1422,14 +1447,14 @@
 					:op4 "Commission"))))
 	:x (x27 / and
 		:op5 (x34 / person
-			:name (n4 / name
+			:name (n3 / name
 				:op1 "Bush")
 			:ARG0-of (x33 / have-org-role-91
 				:ARG2 (p / president)))
 		:op6 (x36 / choose-01
 			:ARG1 (x47 / replace-01
 				:ARG0 (x38 / person
-					:name (n5 / name
+					:name (n4 / name
 						:op1 "Clarence"
 						:op2 "Thomas")
 					:ARG0-of (x37 / judge-01))
@@ -1439,13 +1464,17 @@
 					:op2 "Marshall"))))
 	:x (x32 / and
 		:op2 (x45 / organization
-			:name (n6 / name
+			:name (n5 / name
 				:op1 "Appeals"))
 		:op6 (x84 / report-01)
-		:op7 (x126 / general)
-		:op1 (x154 / organization
-			:name (n7 / name
+		:op1 (x152 / organization
+			:name (n6 / name
 				:op1 "Columbia")))
+	:x (x74 / and
+		:op2 (x73 / country
+			:name (n11 / name
+				:op1 "Ga."))
+		:op2 (x75 / family))
 	:x (x60 / and
 		:op3 (x63 / background
 			:poss (x61 / nominee)))
@@ -1453,33 +1482,26 @@
 		:op2 43
 		:op2 (x69 / birthplace)
 		:op3 (x71 / country
-			:name (n11 / name
+			:name (n10 / name
 				:op1 "Savannah"))
 		:op6 (x77 / married))
-	:x (x74 / and
-		:op2 (x73 / country
-			:name (n12 / name
-				:op1 "Ga."))
-		:op2 (x75 / family))
-	:x (x144 / and
-		:time (x140 / date-entity
-			:year 1982)
-		:op2 (x143 / date-entity))
+	:x (x142 / and
+		:op2 (x141 / date-entity))
 	:x (x98 / and
 		:op1 (x95 / son
 			:ARG0-of (x86 / see-01
 				:ARG0 (x65 / age
 					:ARG2 (x81 / person
-						:name (n8 / name
+						:name (n7 / name
 							:op1 "Thomas")
 						:null_edge (x79 / country
-							:name (n9 / name
+							:name (n8 / name
 								:op1 "Virginia"))
 						:null_edge (x80 / country
-							:name (n10 / name
+							:name (n9 / name
 								:op1 "Lamp"))))
 				:ARG1 (x87 / person
-					:name (n13 / name
+					:name (n12 / name
 						:op1 "Clarence"
 						:op2 "Thomas"))
 				:location (x92 / candid
@@ -1490,7 +1512,7 @@
 				:ARG0-of (x9 / see-01
 					:ARG0 (x7 / report-01)
 					:ARG1 (x10 / person
-						:name (n1 / name
+						:name (n / name
 							:op1 "Clarence"
 							:op2 "Thomas"))
 					:location (x15 / candid
@@ -1500,73 +1522,83 @@
 								:op1 (x21 / thing
 									:ARG1-of (o / opine-01)
 									:ARG0 (x19 / have-org-role-91
-										:ARG2 (n3 / nominee)))
+										:ARG2 (n2 / nominee)))
 								:op2 (x23 / fear-01)
 								:op2 (x25 / frustrate-01))))
 					:ARG0-of (x54 / retire-01
 						:ARG1 (x57 / government-organization
-							:name (n2 / name
+							:name (n1 / name
 								:op1 "Supreme")))))
 			:time (x105 / date-entity
-				:year 1971)))
+				:year 1971)
+			:name (x114 / name
+				:op1 "Yale"
+				:op2 "Law"
+				:op3 "School")
+			:time (x118 / date-entity
+				:year 1974)
+			:null_edge (xap1 / have-org-role-91
+				:ARG3 (x143 / judge-01
+					:null_edge (x148 / have-org-role-91
+						:ARG1 (g / government-organization
+							:name (n13 / name
+								:op1 "Appeals"
+								:op2 "for"
+								:op3 "District")))
+					:time (x153 / since)))))
 	:x (x110 / and
 		:op3 (x107 / name
 			:op1 "Holy"
 			:op2 "Cross"
-			:op3 "College"
-			:op4 ";"
-			:op5 "law"
-			:op6 "degree"
-			:op7 ","
-			:op8 "Yale"
-			:op9 "Law"
-			:op10 "School")
+			:op3 "College")
 		:op3 (x112 / degree
 			:mod (x111 / law)))
 	:x (x119 / and
-		:op2 (x121 / experience-01
-			:mod (x120 / professional))))
+		:op2 (x120 / professional)
+		:op2 (x124 / assist-01)))
 
 # ::id 36
-# ::snt 1990 ; ... ; On quotas : ; " Federal enforcement agencies ... turned the statutes on Civil-rights groups heads by requiring discrimination in the form of hiring and promotion quotas, so-called goals and timetables .
+# ::snt 1990 ; ... ; On quotas : ; Federal enforcement agencies ... turned the statutes on Civil-rights groups  heads by requiring discrimination in the form of hiring and promotion quotas , so-called goals and timetables
 (x / xconcept
 	:x (x4 / and
-		:op1 (x6 / quota))
+		:op3 (x6 / quota))
 	:x (x8 / and
-		:op1 (x14 / turn-02
+		:op1 (x13 / turn-02
 			:time (x1 / date-entity
 				:year 1990)
-			:ARG0 (x12 / agency
-				:mod (x10 / federal)
-				:ARG0-of (x11 / enforce-01))
-			:ARG1 (x16 / statute
-				:ARG1 (x19 / group
-					:mod (x18 / country
+			:ARG0 (x11 / agency
+				:mod (x9 / federal)
+				:ARG0-of (x10 / enforce-01))
+			:ARG1 (x15 / statute
+				:location (x19 / person
+					:ARG0-of (h / head-01)
+					:mod (x17 / country
 						:name (n / name
-							:op1 "Civil-rights"))))
-			:ARG1 (x20 / person
-				:ARG0-of (h / head-01))
-			:instrument (x22 / require-01
-				:ARG1 (x23 / discriminate-02)
-				:ARG2 (x29 / and
-					:op1 (x28 / hire-01)
-					:op2 (x30 / promote-02)
-					:op2 (x31 / quota))))
-		:op2 (x36 / timetable)))
+							:op1 "Civil-rights"))
+					:null_edge (x18 / null_tag)))
+			:instrument (x21 / require-01
+				:ARG1 (x22 / discriminate-02)
+				:ARG1 (x34 / and
+					:op2 (x28 / and
+						:op1 (x27 / hire-01)
+						:op2 (x29 / promote-02))
+					:op1 (x30 / quota)
+					:op2 (x33 / goal)
+					:op2 (x35 / timetable))))))
 
 # ::id 37
-# ::snt ; ... ; On affirmative action : ; He referred to it as " social engineering ...
+# ::snt ; ... ; On affirmative action : ; He referred to it as social engineering ...
 (x / xconcept
 	:x (x8 / and
 		:op2 (x10 / refer-01
 			:ARG1 (x6 / action
 				:null_edge (x5 / affirm-01))
 			:ARG0 (x9 / he)
-			:ARG2 (x16 / engineer-01
-				:mod (x15 / society)))))
+			:ARG2 (x15 / engineer-01
+				:mod (x14 / society)))))
 
 # ::id 38
-# ::snt We 're standing the principle of non-discrimination on the principle of non-discrimination head .
+# ::snt We are standing the principle of non-discrimination on the principle of non-discrimination  head
 (x3 / stand-01
 	:ARG1 (x1 / we)
 	:ARG1 (x5 / principle
@@ -1578,7 +1610,7 @@
 				:mod (x12 / non-discrimination)))))
 
 # ::id 39
-# ::snt ; ... ; How justice is chosen ; President : The president nominates Supreme Court justices. ; Senate : Senate holds hearings into qualifications of a nominee prior to confirming, rejecting or failing to act upon the nomination. ; Qualifications : The Constitution sets no qualifications for justices
+# ::snt ; ... ; How justice is chosen ; President : The president nominates Supreme Court justices. ; Senate : Senate holds hearings into qualifications of a nominee prior to confirming , rejecting or failing to act upon the nomination. ; Qualifications : The Constitution sets no qualifications for justices
 (x / xconcept
 	:x (x8 / and
 		:op2 (x7 / choose-01
@@ -1620,8 +1652,12 @@
 				:ARG1 (x51 / justice)))))
 
 # ::id 40
-# ::snt Traditionally, justices have had some legal training and most have been judges, lawyers or law teachers. ; ... ; Past Nominees ; David Souter : Confirmed by Senate, 1990, despite concerns of some Democrats about law teachers. views on the right to privacy ; Anthony M. Kennedy : Confirmed unanimously, 1988 ; Robert H. Bork : Rejected, 1987, because of law teachers. strict interpretation of the Constitution, which critics said would have set back progress on individual rights ; Douglas H. Ginsburg : Ginsburg asked that law teachers. nomination be withdrawn, 1987, after law teachers. admitted having smoked marijuana as recently as 1979 ; ... ; Sources : Chicago Tribune, World Book Encyclopedia, Compton's Encyclopedia, Who's Who Among Black Americans, news reports
+# ::snt Traditionally , justices have had some legal training and most have been judges , lawyers or law teachers. ; ... ; Past Nominees ; David Souter : Confirmed by Senate , 1990 , despite concerns of some Democrats about law teachers.  views on the right to privacy ; Anthony M. Kennedy : Confirmed unanimously , 1988 ; Robert H. Bork : Rejected , 1987 , because of law teachers.  strict interpretation of the Constitution , which critics said would have set back progress on individual rights ; Douglas H. Ginsburg : Ginsburg asked that law teachers.  nomination be withdrawn , 1987 , after law teachers.  admitted having smoked marijuana as recently as 1979 ; ... ; Sources : Chicago Tribune , World Book Encyclopedia , Compton's Encyclopedia , Who is Who Among Black Americans , news reports ;
 (x / xconcept
+	:x (x20 / and
+		:op2 (x18 / person
+			:ARG0-of (t3 / teach-01)
+			:mod (x17 / law)))
 	:x (x25 / and
 		:op2 (x26 / name
 			:op1 "David"
@@ -1631,73 +1667,73 @@
 				:name (n2 / name
 					:op1 "Senate"))))
 	:x (x50 / and
+		:op3 (x44 / view-02)
 		:op2 (x51 / person
 			:name (n3 / name
-				:op1 "Anthony"))
-		:op3 (x53 / person
-			:name (n4 / name
-				:op1 "Kennedy")
-			:null_edge (x52 / null_tag)))
+				:op1 "Anthony")))
 	:x (x59 / and
 		:op2 (x55 / confirm-01
 			:mod (x56 / unanimous))
 		:op2 (x60 / person
-			:name (n5 / name
+			:name (n4 / name
 				:op1 "Robert"))
 		:op2 (x64 / reject-01))
 	:x (x90 / and
+		:op2 (x89 / right
+			:mod (x88 / individual))
 		:op1 (x96 / ask-02
 			:ARG2 (x91 / name
 				:op1 "Douglas"
 				:op2 "H."
 				:op3 "Ginsburg")
 			:ARG0 (x95 / person
-				:name (n6 / name
+				:name (n5 / name
 					:op1 "Ginsburg"))
 			:ARG2 (x99 / person
 				:ARG0-of (t4 / teach-01)
 				:mod (x98 / law))))
 	:x (x119 / and
 		:op1 (x113 / smoke-02
-			:ARG1 (x16 / or
+			:ARG0 (x16 / or
+				:mod (x1 / tradition)
 				:op2 (x3 / justice)
 				:op2 (x9 / and
 					:op1 (x8 / train-01
 						:mod (x6 / some))
 					:op2 (x10 / most))
-				:op1 (x15 / lawyer
-					:ARG0-of (xap0 / have-org-role-91
-						:ARG3 (x13 / judge-01)))
-				:op2 (x18 / person
-					:ARG0-of (t / teach-01)
-					:mod (x17 / law))
-				:null_edge (x24 / null_tag
-					:name (x23 / name
-						:op1 "Past"))
-				:op1 (x33 / date-entity
-					:year 1990)
 				:op2 (x36 / concern-01
+					:ARG0 (x15 / lawyer
+						:null_edge (x24 / null_tag
+							:name (x23 / name
+								:op1 "Past")
+							:time (x33 / date-entity
+								:year 1990))
+						:null_edge (xap0 / have-org-role-91
+							:ARG3 (x13 / judge-01)))
 					:ARG0 (x42 / person
-						:ARG0-of (t1 / teach-01)
-						:mod (x41 / law))
-					:ARG0 (xap3 / have-org-role-91
-						:ARG0-of (xap2 / political-party
-							:ARG0-of (xap1 / name
-								:op1 (x39 / political-party
-									:name (n1 / name
-										:op1 "Democrats")
-									:null_edge (x38 / some))))))
+						:ARG0-of (t / teach-01)
+						:mod (x41 / law
+							:ARG1-of (xap3 / have-org-role-91
+								:ARG0-of (xap2 / political-party
+									:ARG0-of (xap1 / name
+										:op1 (x39 / political-party
+											:name (n1 / name
+												:op1 "Democrats")
+											:null_edge (x38 / some))))))))
 				:op2 (x49 / privacy)
+				:name (x52 / name
+					:op1 "M."
+					:op2 "Kennedy")
 				:op1 (x58 / date-entity
 					:year 1988)
 				:time (x66 / date-entity
 					:year 1987)
 				:op1 (x68 / cause-01
 					:ARG0 (x71 / person
-						:ARG0-of (t2 / teach-01)
+						:ARG0-of (t1 / teach-01)
 						:mod (x70 / law)))
+				:op2 (x73 / strict)
 				:op1 (x74 / interpret-01
-					:mod (x73 / strict)
 					:ARG1 (x77 / law
 						:name (n / name
 							:op1 "Constitution")
@@ -1705,44 +1741,41 @@
 							:ARG0 (x80 / person
 								:ARG0-of (c / criticize-01))
 							:ARG1 (x84 / set-08
-								:ARG1 (x86 / progress-01
-									:ARG1 (x89 / right
-										:mod (x88 / individual))))
-							:ARG1 (x103 / withdraw-01
-								:ARG1 (x101 / nominate-01)
-								:time (x105 / date-entity
-									:year 1987)
-								:time (x107 / after
-									:op1 (x109 / person
-										:ARG0-of (t3 / teach-01)
-										:mod (x108 / law))))))
-					:ARG1-of (x111 / admit-01)
-					:ARG0-of (x112 / have-03)))
+								:ARG1 (x86 / progress-01)))
+						:ARG1-of (x103 / withdraw-01
+							:ARG1 (x101 / nominate-01)
+							:time (x105 / date-entity
+								:year 1987)
+							:time (x107 / after
+								:op1 (x109 / person
+									:ARG0-of (t2 / teach-01)
+									:mod (x108 / law))))
+						:ARG1-of (x111 / admit-01))))
 			:ARG1 (x114 / marijuana)
-			:time (x116 / recent)
-			:time (x118 / date-entity
-				:year 1979)))
+			:time (x116 / recent
+				:op1 (x118 / date-entity
+					:year 1979))))
 	:x (x121 / and
 		:op2 (x122 / source)
 		:op5 (x133 / country
-			:name (n7 / name
+			:name (n6 / name
 				:op1 "Encyclopedia")
 			:null_edge (x131 / person
-				:name (n8 / name
+				:name (n7 / name
 					:op1 "Compton")))
 		:op3 (xap4 / and
 			:location (x124 / government-organization
-				:name (n9 / name
+				:name (n8 / name
 					:op1 "Chicago"
 					:op2 "Tribune")
 				:location (x129 / country
-					:name (n10 / name
+					:name (n9 / name
 						:op1 "Encyclopedia")
 					:null_edge (x127 / country
-						:name (n11 / name
+						:name (n10 / name
 							:op1 "World"))
 					:null_edge (x128 / country
-						:name (n12 / name
+						:name (n11 / name
 							:op1 "Book"))))
 			:op1 (x139 / black)
 			:op2 (x143 / report-01

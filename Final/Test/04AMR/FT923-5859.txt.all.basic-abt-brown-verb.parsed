@@ -1,5 +1,5 @@
 # ::id 1
-# ::snt MR HARRY Oppenheimer, whose family effectively controls the Anglo American Corporation of South Africa and De Beers, is to visit Russia next week at a time when the republic is considering a big shake-up in the republic diamond industry
+# ::snt MR HARRY Oppenheimer , whose family effectively controls the Anglo American Corporation of South Africa and De Beers , is to visit Russia next week at a time when the republic is considering a big shake-up in the republic  diamond industry
 (x22 / visit-01
 	:ARG0 (x1 / military
 		:name (n / name
@@ -34,7 +34,7 @@
 			:mod (x35 / big))))
 
 # ::id 2
-# ::snt MR HARRY Oppenheimer visit also comes at a time when the beleaguered diamond industry is rife with rumours about unofficial exports from Russia contributing to the present market turmoil which might force De Beers to cut De Beers dividend payment this year
+# ::snt MR HARRY Oppenheimer  visit also comes at a time when the beleaguered diamond industry is rife with rumours about unofficial exports from Russia contributing to the present market turmoil which might force De Beers to cut De Beers  dividend payment this year
 (x6 / come-01
 	:ARG1 (x2 / person
 		:name (n / name
@@ -67,7 +67,7 @@
 								:mod (x41 / this)))))))))
 
 # ::id 3
-# ::snt Some industry observers suggest that the presence in Russia of Mr Oppenheimer, who will be 84 in October, will be timely
+# ::snt Some industry observers suggest that the presence in Russia of Mr Oppenheimer , who will be 84 in October , will be timely
 (x4 / suggest-01
 	:ARG0 (x3 / observe-01
 		:quant (x1 / some)
@@ -84,30 +84,29 @@
 					:null_edge 84)))))
 
 # ::id 4
-# ::snt ` It appears to be another sign that the former De Beers ' chairman is taking a more active role in guiding the company through the company current difficulties, ' says the Diamantaire newsletter today
-(x32 / say-01
-	:ARG1 (x3 / appear-02
-		:ARG1 (x7 / signal-01
-			:mod (x6 / another)
-			:mod (x19 / active
-				:domain (x14 / have-org-role-91
-					:ARG2 (c / chairman)
-					:name (x11 / name
-						:op1 "De"
-						:op2 "Beers"
-						:mod (x10 / former)))
-				:degree (x18 / more)
-				:topic (x22 / guide-01
-					:ARG1 (x24 / company)
-					:instrument (x29 / difficulty
-						:mod (x27 / company)
-						:time (x28 / current))))))
-	:ARG0 (x35 / newsletter
-		:mod (x34 / diamantaire)
-		:time (x36 / today)))
+# ::snt It appears to be another sign that the former De Beerschairman is taking a more active role in guiding the company through the company  current difficulties , says the Diamantaire newsletter today
+(x2 / appear-02
+	:ARG1 (x6 / signal-01
+		:mod (x5 / another)
+		:mod (x16 / active
+			:domain (x11 / person
+				:name (n / name
+					:op1 "Beerschairman")
+				:null_edge (x9 / former)
+				:null_edge (x10 / null_tag))
+			:degree (x15 / more)
+			:topic (x19 / guide-01
+				:ARG1 (x21 / company)
+				:instrument (x26 / difficulty
+					:mod (x24 / company)
+					:time (x25 / current))
+				:ARG0-of (x28 / say-01
+					:ARG1 (x31 / newsletter
+						:mod (x30 / diamantaire))
+					:time (x32 / today))))))
 
 # ::id 5
-# ::snt De Beers said yesterday that the visit by Mr Oppenheimer, accompanied by MR HARRY Oppenheimer son Nicholas, was a private one originally arranged for August last year but postponed because of the coup d'etat in the former Soviet Union
+# ::snt De Beers said yesterday that the visit by Mr Oppenheimer , accompanied by MR HARRY Oppenheimer  son Nicholas , was a private one originally arranged for August last year but postponed because of the coup d'etat in the former Soviet Union
 (x3 / say-01
 	:ARG0 (x2 / person
 		:name (n / name
@@ -145,7 +144,7 @@
 				:mod (x39 / former)))))
 
 # ::id 6
-# ::snt However, De Beers admitted that Mr Oppenheimer would be meeting senior officials from the Russian diamond industry during MR HARRY Oppenheimer stay because MR HARRY Oppenheimer would be going to some of the big mines in Siberia and would be present when De Beers held the formal opening of De Beers Moscow office on September 8
+# ::snt However , De Beers  admitted that Mr Oppenheimer would be meeting senior officials from the Russian diamond industry during MR HARRY Oppenheimer  stay because MR HARRY Oppenheimer  would be going to some of the big mines in Siberia and would be present when De Beers held the formal opening of De Beers  Moscow office on September 8
 (x5 / admit-01
 	:ARG0 (x3 / newspaper
 		:name (n / name
@@ -197,44 +196,40 @@
 					:null_edge (x17 / null_tag))))))
 
 # ::id 7
-# ::snt De Beers ' London-based Central Selling Organisation, which controls about 80 per cent of world trade in rough (uncut )diamonds, in 1990 signed a Dollars 5bn, five-year sales contract with the former Soviet Union and at the same time advanced a loan of Dollars 1bn
-(x40 / and
-	:op1 (x27 / sign-02
-		:ARG0 (x5 / government-organization
-			:name (n / name
-				:op1 "Central"
-				:op2 "Selling"
-				:op3 "Organisation")
-			:ARG1-of (x10 / control-01
-				:ARG1 (x11 / about
-					:null_edge (x17 / trade-01
-						:null_edge 80
-						:mod (x16 / world)
-						:ARG2 (x23 / diamond
-							:mod (x19 / rough)
-							:mod (x21 / uncut)))))
-			:ARG1-of (xap0 / base-01
-				:location (x4 / city
-					:name (n1 / name
-						:op1 "London-based"))))
-		:time (x26 / date-entity
+# ::snt De BeersLondon-based Central Selling Organisation , which controls about 80 per cent of world trade in rough (uncut )diamonds , in 1990 signed a Dollars 5bn , five-year sales contract with the former Soviet Union and at the same time advanced a loan of Dollars 1bn
+(x38 / and
+	:op1 (x25 / sign-02
+		:ARG0 (x5 / organisation
+			:null_edge (x1 / de)
+			:null_edge (x2 / beerslondon-based)
+			:mod (x3 / central)
+			:topic (x4 / selling)
+			:ARG1-of (x8 / control-01
+				:ARG3 (x9 / about)
+				:ARG1 (x15 / trade-01
+					:mod (x14 / world)
+					:ARG2 (x21 / diamond
+						:mod (x17 / rough)
+						:mod (x19 / uncut)))))
+		:time (x24 / date-entity
 			:year 1990)
-		:ARG1 (x30 / 5bn
-			:ARG1-of (x34 / contract-02
-				:mod (x32 / person
-					:name (n2 / name
+		:ARG1 (x28 / 5bn
+			:ARG1-of (x32 / contract-02
+				:mod (x30 / person
+					:name (n / name
 						:op1 "five-year"))
-				:ARG1 (x38 / country
-					:name (n3 / name
+				:ARG1 (x36 / country
+					:name (n1 / name
 						:op1 "Soviet"
 						:op2 "Union")
-					:mod (x37 / former)))))
-	:op2 (x45 / advance-01
-		:time (x44 / time
-			:ARG1-of (x43 / same-41
-				:ARG2 (x47 / loan-01
-					:ARG2 (x49 / dollars))
-				:ARG2 (x50 / 1bn)))))
+					:mod (x35 / former)))))
+	:op2 (x43 / advance-01
+		:ARG0 x5
+		:time (x42 / time
+			:ARG1-of (x41 / same-41
+				:ARG2 (x45 / loan-01
+					:ARG2 (x47 / dollars))
+				:ARG2 (x48 / 1bn)))))
 
 # ::id 8
 # ::snt Diamond stocks were moved from Moscow to London as collateral for the loan
@@ -249,7 +244,7 @@
 	:ARG2 (x13 / loan))
 
 # ::id 9
-# ::snt After the break-up of the Soviet Union the contract was continued with Rosalmazzoloto, the Russian gold and diamond organisation, and an exclusive sales agreement was later signed with Yukutia, the area in eastern Siberia where most Russian diamonds are mined and which is now an autonomous republic in the Russian Federation
+# ::snt After the break-up of the Soviet Union the contract was continued with Rosalmazzoloto , the Russian gold and diamond organisation , and an exclusive sales agreement was later signed with Yukutia , the area in eastern Siberia where most Russian diamonds are mined and which is now an autonomous republic in the Russian Federation
 (x22 / and
 	:op1 (x11 / continue-01
 		:time (x1 / after
@@ -292,12 +287,12 @@
 						:op2 "Federation"))))))
 
 # ::id 10
-# ::snt A CSO spokesman said yesterday : ` The Russian contract is working
+# ::snt A CSO spokesman said yesterday : The Russian contract is working
 (x4 / say-01
 	:time (x5 / yesterday)
-	:ARG1 (x12 / work-01
-		:ARG1 (x10 / contract-02
-			:mod (x9 / country
+	:ARG1 (x11 / work-01
+		:ARG0 (x9 / contract-02
+			:mod (x8 / country
 				:name (n / name
 					:op1 "Russia"))))
 	:ARG0 (xap0 / person
@@ -308,12 +303,12 @@
 					:op1 "CSO")))))
 
 # ::id 11
-# ::snt Everything is normal .
+# ::snt 
 (x3 / normal
 	:domain (x1 / everything))
 
 # ::id 12
-# ::snt Diamantaire points out that the Russian parliament is to consider next month a plan to set up a state diamond centre under the control of the finance ministry and Komdragmet, formerly know as Gokhran, the Moscow depository of diamonds
+# ::snt Diamantaire points out that the Russian parliament is to consider next month a plan to set up a state diamond centre under the control of the finance ministry and Komdragmet , formerly know as Gokhran , the Moscow depository of diamonds
 (x2 / point
 	:ARG0 (x1 / organization
 		:name (n / name
@@ -352,7 +347,7 @@
 									:ARG1 (x41 / diamond))))))))))
 
 # ::id 13
-# ::snt Reports suggest that the diamond centre would have exclusive rights to buy all rough diamonds mined in the Russian Federation and a state diamond centre would also have a monopoly of sorting gem diamonds
+# ::snt Reports suggest that the diamond centre would have exclusive rights to buy all rough diamonds mined in the Russian Federation and a state diamond centre  would also have a monopoly of sorting gem diamonds
 (x2 / suggest-01
 	:ARG0 (x1 / report-01)
 	:ARG1 (x21 / and
@@ -379,7 +374,7 @@
 						:mod (x33 / gem)))))))
 
 # ::id 14
-# ::snt These proposals are being opposed by the Yakut government, which is backing a joint-stock company, Almazy Rossli (Diamonds of Russia -RRB-, being set up with Mr Valery Rudakov, formerly in charge of Rosalmazzoloto, at a joint-stock company head
+# ::snt These proposals are being opposed by the Yakut government , which is backing a joint-stock company , Almazy Rossli (Diamonds of Russia ), being set up with Mr Valery Rudakov , formerly in charge of Rosalmazzoloto , at a joint-stock company  head
 (x5 / oppose-01
 	:ARG1 (x2 / propose-01)
 	:ARG0 (x9 / government-organization
@@ -417,7 +412,7 @@
 	:null_edge (x5 / break-08))
 
 # ::id 16
-# ::snt Almazy Rossli proposes to bring all the diamond industry's operations under one roof, says Diamantaire
+# ::snt Almazy Rossli proposes to bring all the diamond industry's operations under one roof , says Diamantaire
 (x16 / say-01
 	:ARG1 (x3 / propose-01
 		:ARG0 (x2 / person
@@ -435,7 +430,7 @@
 	:ARG1 (x17 / diamantaire))
 
 # ::id 17
-# ::snt Observers expect Mr Oppenheimer to bring MR HARRY Oppenheimer formidable negotiating skills to bear to ensure that De Beers grip on the diamond market is in no way weakened by any changes in Russia
+# ::snt Observers expect Mr Oppenheimer to bring MR HARRY Oppenheimer  formidable negotiating skills to bear to ensure that De Beers grip on the diamond market is in no way weakened by any changes in Russia
 (x2 / expect-01
 	:ARG0 (x1 / observe-01)
 	:ARG1 (x6 / bring-01
@@ -464,7 +459,7 @@
 								:op1 "Russia"))))))))
 
 # ::id 18
-# ::snt Meanwhile, the newsletter, which is available only to subscribers to Diamond International magazine, also says that reports in Antwerp suggest that two of the Belgian diamond trading organisations with which the CSO has a special relationship have been punished by temporarily being excluded from the CSO's ` sights ' or diamond sales
+# ::snt Meanwhile , the newsletter , which is available only to subscribers to Diamond International magazine , also says that reports in Antwerp suggest that two of the Belgian diamond trading organisations with which the CSO has a special relationship have been punished by temporarily being excluded from the CSO's sightsor diamond sales
 (x18 / say-01
 	:time (x1 / meanwhile)
 	:ARG0 (x4 / newsletter
@@ -499,14 +494,15 @@
 					:mod (x38 / special))
 				:ARG1-of (x46 / exclude-01
 					:duration (x44 / temporary)
-					:ARG2 (x54 / or
-						:op1 (x52 / sight-01
-							:poss (x49 / organization
-								:name (n4 / name
-									:op1 "CSO")))))))))
+					:ARG1 (xap0 / sell-01
+						:ARG0 (x49 / organization
+							:name (n4 / name
+								:op1 "CSO"))
+						:mod (x51 / sightsor)
+						:null_edge (x52 / null_tag)))))))
 
 # ::id 19
-# ::snt The CSO invites only about 160 privileged merchants to Central Selling Organisation ten ` sights ' a year in London, Lucerne and Kimberley
+# ::snt The CSO invites only about 160 privileged merchants to Central Selling Organisation  ten sightsa year in London , Lucerne and Kimberley
 (x3 / invite-01
 	:ARG0 (x2 / organization
 		:name (n / name
@@ -515,18 +511,17 @@
 		:mod (x4 / only
 			:op1 160)
 		:mod (x7 / privileged))
-	:ARG2 (x15 / sight-01
-		:mod (x10 / central)
-		:location (x23 / and
-			:op1 (x12 / organisation
-				:mod (x11 / selling))
-			:op1 (x20 / city
+	:ARG2 (x12 / organisation
+		:ARG0-of (x11 / selling
+			:ARG1 (x10 / central))
+		:topic (x20 / and
+			:op1 (x17 / city
 				:name (n1 / name
 					:op1 "London"))
-			:op2 (x22 / country
+			:op2 (x19 / country
 				:name (n2 / name
 					:op1 "Lucerne"))
-			:op2 (x24 / country
+			:op2 (x21 / country
 				:name (n3 / name
 					:op1 "Kimberley")))))
 
@@ -552,7 +547,7 @@
 				:op1 20))))
 
 # ::id 21
-# ::snt Diamond International and Diamantaire, from CRU Publishing, 31 Mount Pleasant, London WC1X 0AD, UK
+# ::snt Diamond International and Diamantaire , from CRU Publishing , 31 Mount Pleasant , London WC1X 0AD , UK
 (x3 / and
 	:op1 (x1 / government-organization
 		:name (n / name

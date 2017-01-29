@@ -1,5 +1,5 @@
 # ::id 1
-# ::snt The chairman of the House Agriculture Committee says hearings are planned next year into how the U.S. Forest Service handled last summer's stubborn wildfires that scorched the West, including one-third of Yellowstone National Park
+# ::snt The chairman of the House Agriculture Committee says hearings are planned next year into how the U.S. Forest Service handled last summer's stubborn wildfires that scorched the West , including one-third of Yellowstone National Park
 (x8 / say-01
 	:ARG0 (x2 / have-org-role-91
 		:ARG2 (c / chairman)
@@ -39,56 +39,46 @@
 							:null_edge (x35 / null_tag))))))))
 
 # ::id 2
-# ::snt " The major problem is that in speaking to people from the area, you speak to two and you get three opinions, " says Rep. Kika de la Garza, a Texas Democrat
-(x26 / say-01
-	:ARG1 (x19 / and
-		:domain (x4 / problem
-			:mod (x3 / major))
-		:op1 (x16 / speak-01
-			:ARG1 (x13 / area)
-			:ARG0 (x15 / you)
-			:ARG2 2)
-		:op2 (x21 / get-05
-			:ARG0 (x20 / you)
-			:ARG1 (x23 / thing
+# ::snt The major problem is that in speaking to people from the area , you speak to two and you get three opinions , says Rep. Kika de la Garza , a Texas Democrat
+(x18 / and
+	:domain (x3 / problem
+		:mod (x2 / major))
+	:op1 (x15 / speak-01
+		:ARG1 (x12 / area)
+		:ARG0 (x14 / you)
+		:ARG2 2)
+	:op2 (x20 / get-05
+		:ARG0 (x19 / you)
+		:ARG1 (x24 / say-01
+			:ARG1 (x22 / thing
 				:ARG1-of (o / opine-01)
-				:quant 3)))
-	:ARG0 (x28 / person
-		:name (n / name
-			:op1 "Kika"
-			:op2 "de"
-			:op3 "la"
-			:op4 "Garza")
-		:ARG0-of (x27 / rep.)
-		:ARG0-of (x35 / have-org-role-91
-			:ARG1 (p / political-party
-				:name (n1 / name
-					:op1 "Democrat"))
-			:mod (x34 / country
-				:name (n2 / name
-					:op1 "Texas")))))
+				:quant 3)
+			:ARG1 (x25 / rep.
+				:location (x32 / country
+					:name (n / name
+						:op1 "Texas"))))))
 
 # ::id 3
-# ::snt " The best thing to do is to sit down and have them all put it on the record and then sift through what happened and see if anything needs to be done .
-(x6 / do-02
-	:mod (x3 / good
+# ::snt The best thing to do is to sit down and have them all put it on the record and then sift through what happened and see if anything needs to be done
+(x5 / do-02
+	:mod (x2 / good
 		:degree (m / most))
-	:condition (x11 / and
-		:op1 (x9 / sit-02
-			:ARG1 (x20 / and
-				:op1 (x15 / put-01
-					:ARG2 (x19 / record
-						:quant (x14 / all)))
-				:op2 (x22 / sift
-					:time (x21 / then)))
-			:ARG1 (x26 / and
-				:op2 (x27 / see-01
-					:ARG1 (x30 / need-01
-						:ARG1 (x33 / do-02
-							:ARG1 (x29 / anything))))))))
+	:condition (x10 / and
+		:op1 (x8 / sit-02
+			:ARG1 (x19 / and
+				:op1 (x14 / put-01
+					:ARG2 (x18 / record
+						:quant (x13 / all))
+					:ARG0 (x25 / and
+						:op2 (x26 / see-01
+							:concession (x29 / need-01
+								:ARG1 (x32 / do-02
+									:ARG1 (x28 / anything))))))
+				:op2 (x21 / sift
+					:time (x20 / then))))))
 
 # ::id 4
-# ::snt De la Garza said the hearings would focus on forest fire practices, and " can a catastrophe of that nature be avoided or was a catastrophe a catastrophe ?
+# ::snt De la Garza said the hearings would focus on forest fire practices , and can a catastrophe of that nature be avoided or was a catastrophe  a catastrophe ?
 (x4 / say-01
 	:ARG0 (x3 / person
 		:name (n / name
@@ -101,50 +91,50 @@
 			:ARG2 (x12 / practice
 				:mod (x10 / forest)
 				:mod (x11 / fire-arm)))
-		:op2 (x16 / possible
-			:domain (x24 / or
-				:op2 (x23 / avoid-01
-					:ARG1 (x18 / catastrophe
-						:poss (x21 / nature
-							:mod (x20 / that))))
-				:op2 (x27 / catastrophe)))))
+		:op2 (x15 / possible
+			:domain (x23 / or
+				:op2 (x22 / avoid-01
+					:ARG1 (x17 / catastrophe
+						:poss (x20 / nature
+							:mod (x19 / that))))
+				:op2 (x26 / catastrophe)))))
 
 # ::id 5
-# ::snt " last week was in Montana and last week visited with some people and last week have some concern over some of the practices of the Forest Service, " de la Garza said in an interview last week
-(x34 / say-01
-	:ARG1 (x7 / and
-		:op2 (x10 / visit-01
-			:time (x9 / week
-				:mod (x8 / last))
-			:ARG1 (x13 / people
-				:null_edge (x12 / some)))
-		:op2 (x14 / and
-			:time (x3 / week
-				:mod (x2 / last)
-				:mod (x6 / country
+# ::snt last week  was in Montana and last week  visited with some people and last week  have some concern over some of the practices of the Forest Service , de la Garza said in an interview last week
+(x32 / say-01
+	:ARG1 (x6 / and
+		:op2 (x9 / visit-01
+			:time (x8 / week
+				:mod (x7 / last))
+			:ARG1 (x12 / people
+				:null_edge (x11 / some)))
+		:op2 (x13 / and
+			:time (x2 / week
+				:mod (x1 / last)
+				:mod (x5 / country
 					:name (n1 / name
 						:op1 "Montana")))
-			:op2 (x17 / have-03
-				:time (x16 / week
-					:mod (x15 / last))
-				:ARG1 (x19 / concern-01
-					:mod (x18 / some)
-					:ARG0 (x24 / practice
-						:poss (x27 / government-organization
+			:op2 (x16 / have-03
+				:time (x15 / week
+					:mod (x14 / last))
+				:ARG1 (x18 / concern-01
+					:mod (x17 / some)
+					:ARG0 (x23 / practice
+						:poss (x26 / government-organization
 							:name (n2 / name
 								:op1 "Forest"
 								:op2 "Service")))))))
-	:ARG0 (x33 / person
+	:ARG0 (x31 / person
 		:name (n / name
 			:op1 "Garza")
-		:null_edge (x31 / null_tag)
-		:null_edge (x32 / la))
-	:time (x37 / interview-01)
-	:time (x39 / week
-		:mod (x38 / last)))
+		:null_edge (x29 / null_tag)
+		:null_edge (x30 / la))
+	:time (x35 / interview-01)
+	:time (x37 / week
+		:mod (x36 / last)))
 
 # ::id 6
-# ::snt The hearings will focus on fire fighting policies, rehabilitation of charred areas and on scientific research being done on the summer fires, said a subcommittee staff member
+# ::snt The hearings will focus on fire fighting policies , rehabilitation of charred areas and on scientific research being done on the summer fires , said a subcommittee staff member
 (x25 / say-01
 	:ARG1 (x4 / focus-01
 		:ARG0 (x2 / hearing)
@@ -198,7 +188,7 @@
 						:mod (x32 / this)))))))
 
 # ::id 8
-# ::snt The committee will consider a uniform pesticide labeling law and legislation to protect ground water from agricultural pesticides and fertilizers, de la Garza said
+# ::snt The committee will consider a uniform pesticide labeling law and legislation to protect ground water from agricultural pesticides and fertilizers , de la Garza said
 (x25 / say-01
 	:ARG1 (x4 / consider-02
 		:ARG0 (x2 / committee)
@@ -223,7 +213,7 @@
 		:null_edge (x23 / la)))
 
 # ::id 9
-# ::snt De la Garza said Kika de la Garza hopes the House Interior Committee, which has jurisdiction over the National Park Service, and the Agriculture subcommittee on forests, with jurisdiction over the U.S. Forest Service, will hold joint hearings on last summer's wildfires, the worst in a century
+# ::snt De la Garza said Kika de la Garza  hopes the House Interior Committee , which has jurisdiction over the National Park Service , and the Agriculture subcommittee on forests , with jurisdiction over the U.S. Forest Service , will hold joint hearings on last summer's wildfires , the worst in a century
 (x4 / say-01
 	:ARG0 (x3 / person
 		:name (n / name
@@ -272,7 +262,7 @@
 					:mod (x50 / bad))))))
 
 # ::id 10
-# ::snt The U.S. Forest Service said 5 million acres were charred in the raging blazes, including 706,000 acres in Yellowstone
+# ::snt The U.S. Forest Service said 5 million acres were charred in the raging blazes , including 706,000 acres in Yellowstone
 (x5 / say-01
 	:ARG0 (x3 / government-organization
 		:name (n / name
@@ -291,7 +281,7 @@
 						:op1 "Yellowstone"))))))
 
 # ::id 11
-# ::snt The Forest and National Park Service spent a combined $ 300 million fighting the summer fires, the Forest Service said
+# ::snt The Forest and National Park Service spent a combined $ 300 million fighting the summer fires , the Forest Service said
 (x21 / say-01
 	:ARG1 (x7 / spend-00
 		:ARG1 (x3 / and
@@ -312,7 +302,7 @@
 			:op2 "Service")))
 
 # ::id 12
-# ::snt The most severe were in and around Yellowstone and Alaska, although there were fires in the South, California and the Pacific Northwest
+# ::snt The most severe were in and around Yellowstone and Alaska , although there were fires in the South , California and the Pacific Northwest
 (x15 / fire
 	:null_edge (x3 / severe
 		:degree (x2 / most))
@@ -336,28 +326,28 @@
 				:op1 "Northwest"))))
 
 # ::id 13
-# ::snt Drought conditions, high winds and a " tremendous build-up " of tinder, in Yellowstone in particular, helped make the 1988 fires the worst in a hundred years, officials said
-(x33 / say-01
-	:ARG1 (x20 / help-01
+# ::snt Drought conditions , high winds and a tremendous build-up of tinder , in Yellowstone in particular , helped make the 1988 fires the worst in a hundred years , officials said
+(x31 / say-01
+	:ARG1 (x18 / help-01
 		:ARG0 (x6 / and
 			:op1 (x2 / condition
 				:mod (x1 / drought))
 			:op2 (x5 / wind
 				:mod (x4 / high))
-			:op3 (x10 / build-05
-				:degree (x9 / tremendous)
-				:ARG1 (x13 / tinder)))
-		:ARG2 (x16 / country
+			:op2 (x9 / build-05
+				:degree (x8 / tremendous)
+				:ARG1 (x11 / tinder)))
+		:ARG2 (x14 / country
 			:name (n / name
 				:op1 "Yellowstone")
-			:mod (x18 / particular))
-		:ARG1 (x24 / fire
-			:time (x23 / date-entity
+			:mod (x16 / particular))
+		:ARG1 (x22 / fire
+			:time (x21 / date-entity
 				:year 1988)
-			:mod (x26 / bad)
-			:duration (x30 / temporal-quantity
+			:mod (x24 / bad)
+			:duration (x28 / temporal-quantity
 				:unit (y / year))))
 	:ARG0 (xap0 / person
-		:ARG0-of (x32 / have-org-role-91
+		:ARG0-of (x30 / have-org-role-91
 			:ARG2 (o / official))))
 

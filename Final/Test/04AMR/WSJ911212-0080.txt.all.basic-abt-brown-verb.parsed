@@ -1,5 +1,5 @@
 # ::id 1
-# ::snt Congress has been dismayingly inconsistent in the First Congress of the United States voting on gun-control legislation this year, first passing the Brady Bill, then moving in the opposite direction by defeating a provision to ban certain assault weapons and ammunition
+# ::snt Congress has been dismayingly inconsistent in the First Congress of the United States  voting on gun-control legislation this year , first passing the Brady Bill , then moving in the opposite direction by defeating a provision to ban certain assault weapons and ammunition
 (x5 / inconsistent
 	:ARG1 (x1 / government-organization
 		:name (n / name
@@ -34,7 +34,7 @@
 						:op2 (x43 / ammunition)))))))
 
 # ::id 2
-# ::snt But in one respect members of Congress are consistent : one respect members of Congress demand respect for our " constitutional right to own a gun .
+# ::snt But in one respect members of Congress are consistent : one respect members of Congress  demand respect for our constitutional right to own a gun
 (x1 / contrast-01
 	:ARG2 (x4 / respect-01
 		:quant 1)
@@ -42,10 +42,10 @@
 		:quant 1
 		:ARG0 (x16 / demand-01
 			:ARG1 (x17 / respect-01
-				:ARG1 (x22 / right
-					:mod (x21 / constitution)
-					:null_edge (x24 / own-01
-						:ARG1 (x26 / gun))))
+				:ARG1 (xap2 / entitle-01
+					:mod (x20 / constitution)
+					:ARG0-of (x23 / own-01
+						:ARG1 (x25 / gun))))
 			:ARG0 (xap1 / country
 				:ARG0-of (x13 / have-org-role-91
 					:ARG2 (m1 / member)
@@ -60,7 +60,7 @@
 					:op1 "Congress")))))
 
 # ::id 3
-# ::snt one respect members of Congress cite the Constitution's Second Amendment and argue the Second Amendment prohibits effective national regulation of the private ownership of guns
+# ::snt one respect members of Congress  cite the Constitution's Second Amendment and argue the Second Amendment  prohibits effective national regulation of the private ownership of guns
 (x2 / respect-01
 	:quant 1
 	:ARG1 (x12 / and
@@ -96,7 +96,7 @@
 					:mod (x16 / gun-control))))))
 
 # ::id 5
-# ::snt In my opinion, my opinion even provides a solid constitutional basis for effective national legislation to regulate guns and gun owners
+# ::snt In my opinion , my opinion  even provides a solid constitutional basis for effective national legislation to regulate guns and gun owners
 (x6 / opine-01
 	:mod (x3 / opine-01)
 	:mod (x7 / even)
@@ -159,14 +159,33 @@
 					:ARG0-of (x20 / ratify-01))))))
 
 # ::id 9
-# ::snt Virginia's version, later copied by New York and North Carolina, brought together three elements in one article -- affirmation of a right to bear arms, reliance on state militia, and opposition to a standing army : " That the people have a right to keep and bear arms ; that a well-regulated militia, composed of the body of the people trained to arms, is the proper, natural, and safe defense of a free state ; that standing armies, in times of peace, are dangerous to liberty, and therefore ought to be avoided ... .
+# ::snt Virginia's version , later copied by New York and North Carolina , brought together three elements in one article affirmation of a right to bear arms , reliance on state militia , and opposition to a standing army : That the people have a right to keep and bear arms ; that a well-regulated militia , composed of the body of the people trained to arms , is the proper , natural , and safe defense of a free state ; that standing armies , in times of peace , are dangerous to liberty , and therefore ought to be avoided ...
 (x / xconcept
-	:x (x54 / and
-		:op2 (x60 / compose-01
-			:ARG2 (x63 / body
-				:ARG1-of (x67 / train-02
-					:ARG2 (x69 / arm)))))
-	:x (x84 / and
+	:x (x52 / and
+		:op2 (x49 / and
+			:op1 (x48 / keep-04
+				:ARG1 (x51 / arm)
+				:ARG2 (x75 / and
+					:op2 (x73 / natural
+						:domain (x56 / militia
+							:mod (x55 / well-regulated)
+							:ARG1-of (x58 / compose-01
+								:ARG2 (x61 / body
+									:ARG1-of (x65 / train-02
+										:ARG2 (x67 / arm)))))
+						:mod (x71 / proper))
+					:op2 (x77 / defend-01
+						:mod (x76 / safe)
+						:ARG1 (x81 / state
+							:ARG1-of (x80 / free-41))))
+				:ARG2 (x97 / and
+					:op1 (x93 / dangerous
+						:ARG2 (x95 / liberty))
+					:op2 (x102 / avoid-01
+						:ARG0 (x85 / army
+							:ARG1-of (x84 / stand-01)))))
+			:op2 (x50 / bear-02)))
+	:x (x82 / and
 		:op1 (x14 / bring-01
 			:ARG0 (x3 / version
 				:mod (x1 / country
@@ -184,45 +203,27 @@
 							:op1 "North"
 							:op2 "Carolina"))))
 			:ARG1 (x17 / element
-				:quant 3
-				:ARG1 (x22 / affirm-01
-					:ARG1 (x25 / right
-						:location (x20 / article
-							:quant 1))))
-			:ARG1 (x77 / and
-				:op1 (x48 / right)
-				:op2 (x51 / and
-					:op1 (x50 / keep-04
-						:ARG1 (x53 / arm))
-					:op2 (x52 / bear-02))
-				:op2 (x75 / natural
-					:domain (x58 / militia
-						:mod (x57 / well-regulated))
-					:mod (x73 / proper))
-				:op2 (x79 / defend-01
-					:mod (x78 / safe)
-					:ARG1 (x83 / state
-						:ARG1-of (x82 / free-41)
-						:ARG1 (x99 / and
-							:op2 (x104 / avoid-01)
-							:op1 (xap0 / include-91
-								:manner (x92 / peace)
-								:ARG0 (x95 / dangerous
-									:domain (x87 / army
-										:mod (x86 / standing))
-									:ARG2 (x97 / liberty))))))))
-		:op2 (x35 / and
-			:op1 (x28 / arm
-				:ARG0-of (x27 / bear-02))
-			:op2 (x30 / reliance
-				:ARG0 (x33 / militia
-					:mod (x32 / state)))
-			:op2 (x36 / oppose-01
-				:ARG1 (x40 / army
-					:ARG1-of (x39 / stand-01))))))
+				:quant 3)
+			:ARG1 (x21 / affirm-01
+				:quant 1
+				:ARG1 (x20 / article)
+				:ARG1 (x24 / right)))
+		:op2 (x34 / and
+			:op1 (x27 / arm
+				:ARG0-of (x26 / bear-02))
+			:op2 (x29 / reliance
+				:ARG0 (x32 / militia
+					:mod (x31 / state)))
+			:op2 (x35 / oppose-01
+				:ARG1 (x39 / army
+					:ARG1-of (x38 / stand-01))))
+		:op1 (x44 / have-03
+			:ARG1 (x46 / right))
+		:op1 x85
+		:op2 (x90 / peace)))
 
 # ::id 10
-# ::snt The purpose was to limit the power of the new Congress to establish a standing army, and instead to rely on state militias under command of governors
+# ::snt The purpose was to limit the power of the new Congress to establish a standing army , and instead to rely on state militias under command of governors
 (x5 / limit-01
 	:ARG1 (x7 / power
 		:poss (x11 / government-organization
@@ -265,7 +266,7 @@
 				:ARG0 (x12 / amend-01)))))
 
 # ::id 13
-# ::snt Soon after the First Congress met, James Madison, elected as a congressman from Virginia on the basis of such a pledge, proposed a number of amendments resembling yet different from articles proposed by states
+# ::snt Soon after the First Congress met , James Madison , elected as a congressman from Virginia on the basis of such a pledge , proposed a number of amendments resembling yet different from articles proposed by states
 (x25 / propose-01
 	:time (x2 / after
 		:op1 (x6 / meet-03
@@ -302,7 +303,7 @@
 		:mod (x7 / right)))
 
 # ::id 15
-# ::snt In the version of the arms amendment a congressman from Virginia presented, Madison dropped mention of a standing army and added a conscientious objector clause
+# ::snt In the version of the arms amendment a congressman from Virginia  presented , Madison dropped mention of a standing army and added a conscientious objector clause
 (x21 / and
 	:op1 (x3 / version
 		:mod (x7 / amend-01
@@ -326,55 +327,55 @@
 		:ARG1 (x26 / clause)))
 
 # ::id 16
-# ::snt " The right of the people to keep and bear arms shall not be infringed, a well armed and well regulated militia being the best security of a free country, but no person religiously scrupulous of bearing arms shall be compelled to render military service in person .
-(x33 / contrast-01
-	:ARG1 (x9 / and
-		:op1 (x8 / keep-02
-			:ARG1 (x11 / arm))
-		:op2 (x10 / bear-02))
-	:ARG1 (x15 / infringe-01
-		:ARG1 (x3 / right
-			:null_edge (x4 / include-91))
-		:ARG1 (x20 / and
-			:ARG1-of (x19 / arm-01)
-			:op2 (x22 / regulate-01))
-		:ARG1 (x23 / militia
-			:purpose (x27 / security
-				:mod (x26 / good
+# ::snt The right of the people to keep and bear arms shall not be infringed , a well armed and well regulated militia being the best security of a free country , but no person religiously scrupulous of bearing arms shall be compelled to render military service in person
+(x32 / contrast-01
+	:ARG1 (x14 / infringe-01
+		:ARG1 (x2 / right
+			:null_edge (x3 / include-91)
+			:ARG1 (x8 / and
+				:op1 (x7 / keep-02
+					:ARG1 (x10 / arm))
+				:op2 (x9 / bear-02)))
+		:ARG1 (x19 / and
+			:ARG1-of (x18 / arm-01)
+			:op2 (x21 / regulate-01))
+		:ARG1 (x22 / militia
+			:purpose (x26 / security
+				:mod (x25 / good
 					:degree (m / most))
-				:poss (x31 / country
-					:ARG1-of (x30 / free-41))))
+				:poss (x30 / country
+					:ARG1-of (x29 / free-41))))
 		:polarity -
-		:ARG1 (x35 / person
-			:mod (x37 / scrupulous
-				:mod (x36 / religiously)
-				:ARG1 (x39 / bear-02
-					:ARG1 (x40 / arm)))
-			:ARG1-of (x43 / compel-01
-				:null_edge (x45 / render-01
-					:ARG0 x35
-					:ARG1 (x47 / service
-						:mod (x46 / military)
-						:ARG1 (x49 / person)))))))
+		:ARG1 (x34 / person
+			:mod (x36 / scrupulous
+				:mod (x35 / religiously)
+				:ARG1 (x38 / bear-02
+					:ARG1 (x39 / arm)))
+			:ARG1-of (x42 / compel-01
+				:null_edge (x44 / render-01
+					:ARG0 x34
+					:ARG1 (x46 / service
+						:mod (x45 / military)
+						:ARG1 (x48 / person)))))))
 
 # ::id 17
-# ::snt 
-(x10 / mean-01
-	:ARG1 (x6 / bear-02
+# ::snt In this version , bearing arms must mean to render military service , or why else would there have to be an exemption for religious reasons ?
+(x8 / mean-01
+	:ARG1 (x5 / bear-02
 		:ARG1 (x3 / version
 			:mod (x2 / this))
-		:ARG1 (x7 / arm))
-	:ARG1 (x13 / render-01
-		:ARG1 (x15 / service
-			:mod (x14 / military)))
-	:ARG1 (x18 / or)
-	:ARG1 (x27 / exempt-01
-		:mod (x20 / else)
-		:beneficiary (x30 / reason
-			:mod (x29 / religion))))
+		:ARG1 (x6 / arm))
+	:ARG1 (x10 / render-01
+		:ARG1 (x12 / service
+			:mod (x11 / military)))
+	:ARG1 (x14 / or)
+	:ARG1 (x23 / exempt-01
+		:mod (x16 / else)
+		:poss (x26 / reason
+			:mod (x25 / religion))))
 
 # ::id 18
-# ::snt What right must not be infringed
+# ::snt What right must not be infringed ?
 (x6 / infringe-01
 	:time (x2 / right))
 
@@ -385,7 +386,7 @@
 		:ARG1 (x10 / militia)))
 
 # ::id 20
-# ::snt This militia amendment was referred to a congressional committee, and came out of committee in this form : " A well regulated militia, composed of the body of the people, being the best security of a free state, the right of the people to keep and bear arms shall not be infringed ; but no person religiously scrupulous shall be compelled to bear arms .
+# ::snt This militia amendment was referred to a congressional committee , and came out of committee in this form : A well regulated militia , composed of the body of the people , being the best security of a free state , the right of the people to keep and bear arms shall not be infringed ; but no person religiously scrupulous shall be compelled to bear arms
 (x11 / and
 	:op1 (x5 / refer-01
 		:ARG1 (x3 / amend-01
@@ -397,55 +398,41 @@
 					:op1 "congressional")))
 		:ARG1 (x18 / form
 			:ARG0 (x15 / committee)
-			:mod (x17 / this))
-		:ARG1 (x56 / infringe-01
-			:ARG2 (x37 / security
-				:domain (x24 / militia
-					:ARG1-of (x23 / regulate-01)
-					:ARG1-of (x26 / compose-01
-						:ARG2 (x29 / body
-							:ARG1-of (x30 / include-91))))
-				:mod (x36 / good
-					:degree (m / most))
-				:poss (x41 / state
-					:ARG1-of (x40 / free-41)))
-			:ARG1 (x44 / right
-				:null_edge (x45 / include-91))
-			:polarity -)))
+			:mod (x17 / this))))
 
 # ::id 21
-# ::snt Two significant changes had been made : first, the phrase " to render military service in person " was replaced by the phrase " to bear arms, " again indicating that the people are two ways to say the same thing ; second, an explanation was added, that the " militia " is " composed of the body of the people .
+# ::snt Two significant changes had been made : first , the phrase to render military service in person was replaced by the phrase to bear arms , again indicating that the people  are two ways to say the same thing ; second , an explanation was added , that the militia is composed of the body of the people
 (x / xconcept
-	:x (x44 / and
+	:x (x40 / and
 		:op1 (x3 / change-01
 			:quant 2
 			:mod (x2 / significant))
-		:op2 (x14 / render-01
-			:ARG1 (x16 / service
-				:mod (x15 / military)
-				:ARG1 (x18 / person)))
-		:op2 (x21 / replace-01
+		:op1 (x13 / render-01
+			:ARG1 (x15 / service
+				:mod (x14 / military)
+				:ARG1 (x17 / person)))
+		:op2 (x19 / replace-01
 			:ARG1 (x11 / phrase)
-			:purpose (x27 / bear-02
-				:ARG0 (x24 / phrase)
-				:ARG1 (x28 / arm))
-			:ARG0-of (x32 / indicate-01
-				:mod (x31 / again)
-				:ARG1 (x40 / say-01
-					:ARG1 (x38 / way
+			:ARG0 (x22 / phrase)
+			:ARG1 (x24 / bear-01
+				:ARG1 (x25 / arm))
+			:ARG0-of (x28 / indicate-01
+				:mod (x27 / again)
+				:ARG1 (x36 / say-01
+					:ARG1 (x34 / way
 						:quant 2)
-					:ARG1 (x43 / thing
-						:ARG1-of (x42 / same-41)))))
+					:ARG1 (x39 / thing
+						:ARG1-of (x38 / same-41)))))
 		:op1 (xap0 / multi-sentence
-			:snt2 (x48 / explain-01)
-			:snt2 (x50 / add-01
-				:ARG1 (x59 / compose-01
-					:ARG0 (x55 / militia)
-					:ARG2 (x62 / body
-						:ARG1-of (x63 / include-91)))))))
+			:snt2 (x44 / explain-01)
+			:snt2 (x46 / add-01
+				:ARG1 (x52 / compose-01
+					:ARG1 (x50 / militia)
+					:ARG2 (x55 / body
+						:ARG1-of (x56 / include-91)))))))
 
 # ::id 22
-# ::snt The House then debated this new version in committee of the whole and, surprisingly, considering the subsequent history of the provision, never once did any member mention the private uses of arms, for self-protection, or hunting, or any other personal purpose
+# ::snt The House then debated this new version in committee of the whole and , surprisingly , considering the subsequent history of the provision , never once did any member mention the private uses of arms , for self-protection , or hunting , or any other personal purpose
 (x13 / and
 	:op1 (x4 / debate-01
 		:ARG0 (x2 / government-organization
@@ -496,41 +483,44 @@
 	:manner (x7 / narrowly))
 
 # ::id 25
-# ::snt The Senate in turn gave The Senate in turn The Senate in turn final form, briefer, unfortunately more elliptical, and with the exemption for conscientious objectors deleted : " A well-regulated militia, being necessary to the security of a free state, the right of the people to keep and bear arms, shall not be infringed .
-(x61 / infringe-01
-	:ARG1 (x54 / and
-		:op1 (x53 / keep-02
-			:ARG0 (x2 / government-organization
-				:name (n / name
-					:op1 "Senate")
-				:null_edge (x3 / null_tag))
-			:ARG1 (x7 / government-organization
-				:name (n1 / name
-					:op1 "Senate")
-				:ARG1 (x11 / government-organization
-					:name (n2 / name
-						:op1 "Senate")))
-			:null_edge (x23 / and
-				:mod (x14 / final)
-				:mod (x17 / briefer)
-				:ARG1-of (x21 / elliptical
-					:degree (x20 / more
-						:degree (x19 / fortunate-41
-							:polarity -)))
-				:op2 (x30 / delete-01
-					:ARG0 (x26 / exempt-01
-						:ARG1 (x29 / objector
-							:mod (x28 / conscientious))))
-				:op2 (x35 / militia
-					:mod (x34 / well-regulated)))
-			:ARG1 (x41 / security
-				:ARG1 (x45 / state
-					:ARG1-of (x44 / free-41)))
-			:ARG1 (x56 / arm))
-		:op2 (x55 / bear-02)))
+# ::snt The Senate in turn gave The Senate in turn  The Senate in turn  final form , briefer , unfortunately more elliptical , and with the exemption for conscientious objectors deleted : A well-regulated militia , being necessary to the security of a free state , the right of the people to keep and bear arms , shall not be infringed
+(x11 / government-organization
+	:name (n / name
+		:op1 "Senate")
+	:poss (x2 / government-organization
+		:name (n1 / name
+			:op1 "Senate"))
+	:poss (x7 / government-organization
+		:name (n2 / name
+			:op1 "Senate"))
+	:location-of (x23 / and
+		:op1 (x17 / briefer
+			:domain (x30 / delete-01
+				:ARG1 (x15 / form
+					:poss x2
+					:poss x7
+					:mod (x14 / final))
+				:ARG1 (x26 / exempt-01
+					:ARG1 (x29 / objector
+						:mod (x28 / conscientious)))
+				:ARG1 (x53 / and
+					:op1 (x52 / keep-02
+						:ARG0 (x34 / militia
+							:mod (x33 / well-regulated))
+						:ARG1 (x40 / security
+							:ARG1 (x44 / state
+								:ARG1-of (x43 / free-41)))
+						:ARG1 (x55 / arm)
+						:ARG1 (x60 / infringe-01))
+					:op2 (x54 / bear-02
+						:ARG0 x34))))
+		:op2 (x21 / elliptical
+			:mod (x19 / fortunate-41
+				:polarity -)
+			:degree (x20 / more))))
 
 # ::id 26
-# ::snt Certain explanations were lost or buried in this legislative process : that the right to bear arms meant the right to serve in the militia ; that just about everybody was included in the militia ; and that the amendment as a whole sought to minimize if not eliminate reliance on a standing army by emphasizing the role of the state militia, which would require that everyone be ready to be called to serve
+# ::snt Certain explanations were lost or buried in this legislative process : that the right to bear arms meant the right to serve in the militia ; that just about everybody was included in the militia ; and that the amendment as a whole sought to minimize if not eliminate reliance on a standing army by emphasizing the role of the state militia , which would require that everyone be ready to be called to serve
 (x5 / or
 	:op1 (x4 / lose-02
 		:ARG1 (x2 / explain-01
@@ -542,28 +532,28 @@
 		:ARG1 x2))
 
 # ::id 27
-# ::snt But what about the private right " to keep and bear arms, " to own a gun for self-defense and hunting
+# ::snt But what about the private right to keep and bear arms , to own a gun for self-defense and hunting ?
 (x1 / contrast-01
-	:ARG2 (x10 / and
-		:op1 (x9 / keep-04
-			:ARG1 (x12 / arm))
-		:op2 (x11 / bear-02))
-	:ARG2 (xap0 / entitle-01
+	:ARG2 (x6 / right
 		:mod (x5 / private)
-		:ARG0-of (x16 / own-01
-			:ARG1 (x18 / gun
-				:purpose (x21 / and
-					:op1 (x20 / self)
-					:op2 (x22 / hunting))))))
+		:ARG1 (x9 / and
+			:op1 (x8 / keep-04
+				:ARG1 (x11 / arm)
+				:null_edge (x14 / own-01
+					:ARG1 (x16 / gun
+						:purpose (x19 / and
+							:op1 (x18 / self)
+							:op2 (x20 / hunting)))))
+			:op2 (x10 / bear-02))))
 
 # ::id 28
-# ::snt Is n't that clearly protected by the amendment
+# ::snt Is not that clearly protected by the amendment ?
 (x5 / protect-01
 	:manner (x4 / clear)
 	:ARG0 (x8 / amend-01))
 
 # ::id 29
-# ::snt Did n't just about everyone own a gun in 1791
+# ::snt Did not just about everyone own a gun in 1791 ?
 (x6 / own-01
 	:ARG0 (x5 / everyone
 		:mod (x3 / just)
@@ -573,13 +563,13 @@
 		:year 1791))
 
 # ::id 30
-# ::snt Would n't that right go without saying
+# ::snt Would not that right go without saying ?
 (x5 / go-01
 	:manner (x4 / right)
 	:ARG2 (x7 / say-01))
 
 # ::id 31
-# ::snt Yes, of course, a gun in 1791 would go without saying, especially then when there were no organized police forces and when hunting was essential to the food supply
+# ::snt Yes , of course , a gun in 1791  would go without saying , especially then when there were no organized police forces and when hunting was essential to the food supply
 (x15 / especially
 	:ARG1 (x11 / go-01
 		:ARG1 (x7 / gun)
@@ -657,17 +647,17 @@
 	:ARG2 (x8 / regulate-01))
 
 # ::id 38
-# ::snt The right to bear arms protected in the Second Amendment has to do directly with " a well-regulated militia .
+# ::snt The right to bear arms protected in the Second Amendment has to do directly with a well-regulated militia
 (x13 / do-02
 	:ARG1-of (x6 / protect-01
 		:ARG2 (x5 / arm
 			:ARG0-of (x4 / bear-02)))
 	:manner (x14 / direct)
-	:ARG2 (x19 / militia
-		:mod (x18 / well-regulated)))
+	:ARG2 (x18 / militia
+		:mod (x17 / well-regulated)))
 
 # ::id 39
-# ::snt 
+# ::snt More evidence of the connection can be found in the Militia Act of 1792
 (x6 / possible
 	:domain (x8 / find-02
 		:ARG1 (x2 / evidence-01
@@ -679,30 +669,30 @@
 				:year 1792))))
 
 # ::id 40
-# ::snt " Every free able-bodied white male citizen " (it was 1792, after all )was required by the act to " enroll " in the militia for training and active service in case of need
-(x18 / require-01
-	:ARG1 (x7 / citizen
-		:mod (x2 / every)
-		:ARG1-of (x3 / free-41)
-		:mod (x4 / able-bodied)
-		:mod (x5 / white)
-		:mod (x6 / male))
-	:time (x14 / after
-		:op1 (x12 / date-entity
+# ::snt Every free able-bodied white male citizen (it was 1792 , after all )was required by the act to enroll in the militia for training and active service in case of need
+(x16 / require-01
+	:ARG1 (x6 / citizen
+		:mod (x1 / every)
+		:ARG1-of (x2 / free-41)
+		:mod (x3 / able-bodied)
+		:mod (x4 / white)
+		:mod (x5 / male))
+	:time (x12 / after
+		:op1 (x10 / date-entity
 			:year 1792)
-		:quant (x15 / all))
-	:ARG0 (x21 / act-02)
-	:ARG1 (x24 / enroll
-		:ARG2 (x28 / militia
-			:purpose (x31 / and
-				:op1 (x30 / train-01
-					:ARG2 (x35 / case
-						:topic (x37 / need-01)))
-				:op2 (x33 / service
-					:mod (x32 / active))))))
+		:quant (x13 / all))
+	:ARG0 (x19 / act-02)
+	:ARG1 (x21 / enroll
+		:ARG2 (x24 / militia
+			:purpose (x27 / and
+				:op1 (x26 / train-01
+					:ARG2 (x31 / case
+						:topic (x33 / need-01)))
+				:op2 (x29 / service
+					:mod (x28 / active))))))
 
 # ::id 41
-# ::snt When reporting for service, every militiaman was required to provide a prescribed rifle or musket, and ammunition
+# ::snt When reporting for service , every militiaman was required to provide a prescribed rifle or musket , and ammunition
 (x9 / require-01
 	:time (x2 / report-01
 		:ARG1 (x4 / serve-01))
@@ -730,24 +720,24 @@
 				:ARG1 (x14 / arm)))))
 
 # ::id 43
-# ::snt The expectation was that every man would have " Every free able-bodied white male citizen " -LRB- it was 1792 , after all -RRB- own firearms
+# ::snt The expectation was that every man would have Every free able-bodied white male citizen (it was 1792 , after all ) own firearms
 (x2 / expect-01
 	:ARG1 (x8 / have-03
 		:ARG0 (x6 / man
 			:mod (x5 / every))
-		:ARG1 (x25 / own
-			:domain (x15 / citizen
-				:mod (x10 / every)
-				:ARG1-of (x11 / free-41)
-				:mod (x12 / able-bodied)
-				:mod (x13 / white)
-				:mod (x14 / male)
-				:time (x22 / after
-					:op1 (x20 / date-entity
-						:year 1792)
-					:op1 (x23 / all)))
-			:ARG1 (x26 / firearm
-				:poss x15))))
+		:ARG0 (x14 / citizen
+			:mod (x9 / every)
+			:ARG1-of (x10 / free-41)
+			:mod (x11 / able-bodied)
+			:mod (x12 / white)
+			:mod (x13 / male)
+			:ARG0-of (x23 / own
+				:null_edge (x24 / firearm
+					:poss x14
+					:time (x20 / after
+						:op1 (x18 / date-entity
+							:year 1792)
+						:quant (x21 / all)))))))
 
 # ::id 44
 # ::snt But the aspect that was raised to the level of constitutional concern was the public interest in those arms
@@ -762,16 +752,16 @@
 		:ARG2 (x19 / arm)))
 
 # ::id 45
-# ::snt What does this mean for the question of gun control today
+# ::snt What does this mean for the question of gun control today ?
 (x4 / mean-01
 	:ARG0 (x3 / this)
 	:ARG1 (x7 / question-01
 		:ARG1 (x10 / control-01
-			:ARG1 (x9 / gun)
-			:time (x11 / today))))
+			:ARG1 (x9 / gun)))
+	:time (x11 / today))
 
 # ::id 46
-# ::snt 
+# ::snt Well , for example , it means that Congress has the constitutional power to enact a Militia Act of 1992 , to require every person who owns a gun or aspires to own one to enroll in the militia
 (x7 / mean-01
 	:mod (x1 / well)
 	:ARG0 (x6 / it)
@@ -793,11 +783,11 @@
 				:ARG1 (x29 / gun))
 			:op2 (x31 / aspire-01
 				:ARG1 (x33 / own-01
-					:purpose (x37 / enroll
-						:ARG2 (x41 / militia)))))))
+					:purpose (x36 / enroll
+						:ARG2 (x39 / militia)))))))
 
 # ::id 47
-# ::snt 
+# ::snt In plain 1990s English , if you want to own a gun , sign up with the National Guard
 (x14 / sign-02
 	:condition (x8 / want-01
 		:ARG0 (x7 / you)
@@ -812,7 +802,7 @@
 		:decade 1990))
 
 # ::id 48
-# ::snt Requiring every gun owner to register with the National Guard (as we require 18-year-olds to register with the Selective Service )would provide the information about gun owners sought by the Brady and Staggers bills, and much more
+# ::snt Requiring every gun owner to register with the National Guard (as we require 18-year-olds to register with the Selective Service )would provide the information about gun owners sought by the Brady and Staggers bills , and much more
 (x24 / provide-01
 	:time (x1 / require-01
 		:ARG2 (x4 / person
@@ -850,7 +840,7 @@
 						:quant (x39 / much)))))))
 
 # ::id 49
-# ::snt Standards could be set for purchase or ownership of guns, and penalties could be established
+# ::snt Standards could be set for purchase or ownership of guns , and penalties could be established
 (x / xconcept
 	:x (x2 / possible
 		:domain (x4 / set-03
@@ -864,7 +854,7 @@
 				:ARG1 (x13 / penalize-01)))))
 
 # ::id 50
-# ::snt Restoring a 200-year-old understanding of the Constitution may be difficult, but there is n't time to dawdle
+# ::snt Restoring a 200-year-old understanding of the Constitution may be difficult , but there is not time to dawdle
 (x8 / possible
 	:ARG1-of (x12 / contrast-01
 		:ARG1 (x10 / difficult
@@ -880,7 +870,7 @@
 				:purpose (x18 / dawdle)))))
 
 # ::id 51
-# ::snt Americans now own more than 200 million guns, and opinion polls show Americans want gun control
+# ::snt Americans now own more than 200 million guns , and opinion polls show Americans want gun control
 (x10 / and
 	:op1 (x3 / own-01
 		:ARG0 (x1 / person
@@ -904,22 +894,18 @@
 				:ARG1 (x16 / gun)))))
 
 # ::id 52
-# ::snt Why not avail ourselves of the Second Amendment remedy
+# ::snt Why not avail ourselves of the Second Amendment remedy ?
 (xap0 / have-condition-91
 	:ARG1 (x3 / avail-01
-		:ARG1 (x5 / include-91
-			:null_edge (x8 / null_tag
-				:mod (x7 / event
-					:name (n / name
-						:op1 "Second"))))))
+		:ARG1 (x9 / remedy-01)))
 
 # ::id 53
-# ::snt Call in the militia, which is, after all, " composed of the body of the people .
+# ::snt Call in the militia , which is , after all , composed of the body of the people
 (x1 / call-03
 	:ARG2 (x4 / militia
-		:ARG2-of (x13 / compose-01
-			:mod (x9 / after-all
+		:ARG2-of (x12 / compose-01
+			:time (x9 / after
 				:quant (x10 / all))
-			:ARG2 (x16 / body
-				:ARG1-of (x17 / include-91)))))
+			:ARG2 (x15 / body
+				:ARG1-of (x16 / include-91)))))
 

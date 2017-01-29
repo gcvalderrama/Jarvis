@@ -1,22 +1,22 @@
 # ::id 1
-# ::snt In his " Gun Control Is his " Gun Control Is, is to deny that the right to keep and bear arms precludes the power to regulate gun ownership and use
-(x15 / deny-01
-	:ARG1 (x24 / preclude
-		:ARG0 (x18 / right
-			:ARG1 (x21 / and
-				:op1 (x5 / control-01
-					:mod (x4 / gun))
-				:op1 (x10 / control-01
-					:mod (x9 / gun))
-				:op1 (x20 / keep-04
-					:ARG1 (x23 / arm))
-				:op2 (x22 / bear-02)))
-		:ARG1 (x26 / power
-			:ARG0-of (x28 / regulate-01
-				:ARG1 (x31 / and
-					:op1 (x30 / ownership
-						:mod (x29 / gun))
-					:op2 (x32 / use-01))))))
+# ::snt In his Gun Control Is his Gun Control Is  , is to deny that the right to keep and bear arms precludes the power to regulate gun ownership and use
+(x13 / deny-01
+	:ARG1 (x22 / preclude
+		:ARG0 (x16 / right
+			:ARG1 (x19 / and
+				:op1 (x4 / control-01
+					:mod (x3 / gun))
+				:op1 (x8 / control-01
+					:mod (x7 / gun))
+				:op1 (x18 / keep-04
+					:ARG1 (x21 / arm))
+				:op2 (x20 / bear-02)))
+		:ARG1 (x24 / power
+			:ARG0-of (x26 / regulate-01
+				:ARG1 (x29 / and
+					:op1 (x28 / ownership
+						:mod (x27 / gun))
+					:op2 (x30 / use-01))))))
 
 # ::id 2
 # ::snt Few would disagree
@@ -34,7 +34,7 @@
 			:ARG0 (x17 / other))))
 
 # ::id 4
-# ::snt But Mr. Goldwin also writes that " The right to bear arms protected in the Second Amendment has to do directly with ` a well-regulated militia ' " ; thus, arguably, the American Enterprise Institute's Robert A. Goldwin's continues, " if you want to own a gun, sign up with the National Guard .
+# ::snt But Mr. Goldwin also writes that The right to bear arms protected in the Second Amendment has to do directly with a well-regulated militia ; thus , arguably , the American Enterprise Institute's Robert A. Goldwin's  continues , if you want to own a gun , sign up with the National Guard
 (x1 / contrast-01
 	:ARG2 (x5 / write-01
 		:ARG0 (x3 / person
@@ -42,19 +42,32 @@
 				:op1 "Goldwin")
 			:null_edge (x2 / null_tag))
 		:mod (x4 / also)
-		:ARG1 (x43 / continue-01
-			:ARG1 (xap0 / entitle-01
-				:ARG1 (x11 / bear-02
-					:ARG1 (x13 / protect-01
-						:ARG1 (x12 / arm)
-						:null_edge (x20 / do-02
-							:ARG0 x12
-							:manner (x21 / direct)
-							:ARG2 (x26 / militia
-								:mod (x25 / well-regulated)))))))))
+		:ARG1 (x39 / continue-01
+			:name (x35 / name
+				:op1 "Robert"
+				:op2 "A."
+				:op3 "Goldwin"
+				:ARG0-of (x26 / thus-far)
+				:ARG0-of (x28 / arguably)
+				:ARG0-of (x43 / want-01
+					:ARG1 (x32 / government-organization
+						:name (n1 / name
+							:op1 "Enterprise"
+							:op2 "Institute"))
+					:ARG0 (x42 / you)
+					:ARG1 (x45 / own-01
+						:ARG1 (x47 / gun)))))
+		:ARG1 (xap0 / entitle-01
+			:ARG1 (x10 / bear-02
+				:ARG0 (x8 / right)
+				:ARG1 (x11 / arm
+					:ARG1-of (x12 / protect-01)))
+			:mod (x20 / direct)
+			:ARG2 (x24 / militia
+				:mod (x23 / well-regulated)))))
 
 # ::id 5
-# ::snt Clearly, this goes well beyond regulating to protect the rights of others
+# ::snt Clearly , this goes well beyond regulating to protect the rights of others
 (x4 / go-10
 	:mod (x1 / clear)
 	:ARG0 (x3 / this)
@@ -65,22 +78,22 @@
 					:poss (x13 / other))))))
 
 # ::id 6
-# ::snt This would condition the " right " to keep and bear arms on joining the National Guard
+# ::snt This would condition the right to keep and bear arms on joining the National Guard
 (x3 / condition
 	:domain (x1 / this)
-	:ARG1 (x6 / right
-		:ARG1 (x10 / and
-			:op1 (x9 / keep-04
-				:ARG1 (x12 / arm)
-				:ARG1 (x14 / join-01
-					:ARG1 (x17 / government-organization
+	:ARG1 (x5 / right
+		:ARG1 (x8 / and
+			:op1 (x7 / keep-04
+				:ARG1 (x10 / arm)
+				:ARG1 (x12 / join-01
+					:ARG1 (x15 / government-organization
 						:name (n / name
 							:op1 "Guard")
-						:null_edge (x16 / null_tag))))
-			:op2 (x11 / bear-02))))
+						:null_edge (x14 / null_tag))))
+			:op2 (x9 / bear-02))))
 
 # ::id 7
-# ::snt Mr. Goldwin's mistake stems from the American Enterprise Institute's Robert A. Goldwin's having confused a necessary with a sufficient condition
+# ::snt 
 (x12 / name
 	:op1 "Robert"
 	:op2 "A."
@@ -98,7 +111,7 @@
 		:ARG2 (x22 / suffice-01)))
 
 # ::id 8
-# ::snt The Second Amendment, in the Second Amendment language and the Second Amendment history, makes plain that the need for a well-regulated militia is a sufficient condition for the right to keep and bear arms
+# ::snt The Second Amendment , in the Second Amendment  language and the Second Amendment  history , makes plain that the need for a well-regulated militia is a sufficient condition for the right to keep and bear arms
 (x16 / make-02
 	:name (x1 / name
 		:op1 "The"
@@ -132,7 +145,7 @@
 				:ARG0 x31))))
 
 # ::id 9
-# ::snt Yet Mr. Goldwin treats the Second Amendment as a necessary condition, which enables the American Enterprise Institute's Robert A. Goldwin's to conclude that Congress could deny an individual the right to own a gun if he did not join the National Guard
+# ::snt Yet Mr. Goldwin treats the Second Amendment  as a necessary condition , which enables the American Enterprise Institute's Robert A. Goldwin's  to conclude that Congress could deny an individual the right to own a gun if he did not join the National Guard
 (x4 / treat-01
 	:ARG0 (x3 / person
 		:name (n / name
@@ -165,7 +178,7 @@
 										:null_edge (x44 / null_tag)))))))))))
 
 # ::id 10
-# ::snt Mr. Goldwin makes this mistake, in turn, because the American Enterprise Institute's Robert A. Goldwin's has misread Madison's original version of the Second Amendment, which exempted conscientious objectors from military service
+# ::snt Mr. Goldwin makes this mistake , in turn , because the American Enterprise Institute's Robert A. Goldwin's  has misread Madison's original version of the Second Amendment , which exempted conscientious objectors from military service
 (x5 / mistake
 	:ARG0 (x2 / person
 		:name (n / name
@@ -196,44 +209,45 @@
 						:mod (x36 / military)))))))
 
 # ::id 11
-# ::snt Thus the American Enterprise Institute's Robert A. Goldwin's says that " In this version, ` bearing arms ' must mean ` to render military service, ' or why else would there have to be an exemption for religious reasons
-(x23 / mean-01
-	:ARG0 (x4 / government-organization
-		:name (n / name
-			:op1 "Enterprise"
-			:op2 "Institute"))
-	:ARG0 (x7 / person
-		:name (n1 / name
-			:op1 "Robert"
-			:op2 "A."
-			:op3 "Goldwin")
-		:ARG0-of (x11 / say-01
-			:ARG0 (x16 / version
-				:mod (x15 / this))
-			:ARG1 (x19 / bear-01
-				:ARG1 (x20 / arm))))
-	:ARG1 (x26 / render-01
-		:ARG1 (x28 / service
-			:mod (x27 / military))
-		:ARG1 (x31 / or))
-	:ARG1 (x40 / exempt-01
-		:mod (x33 / else)
-		:beneficiary (x43 / reason
-			:mod (x42 / religion))))
+# ::snt Thus the American Enterprise Institute's Robert A. Goldwin's  says that In this version , bearing armsmust mean to render military service , or why else would there have to be an exemption for religious reasons ?
+(x25 / or
+	:op1 (x11 / say-01
+		:ARG0 (x7 / person
+			:name (n / name
+				:op1 "Robert"
+				:op2 "A."
+				:op3 "Goldwin")
+			:poss (x4 / government-organization
+				:name (n1 / name
+					:op1 "Enterprise"
+					:op2 "Institute")))
+		:ARG1 (x19 / thing
+			:ARG1-of (m / mean-01)
+			:ARG1 (x21 / render-01
+				:ARG1 (x15 / version
+					:mod (x14 / this)
+					:ARG1-of (x17 / bear-02
+						:ARG1 (x18 / armsmust)))
+				:ARG1 (x23 / service
+					:mod (x22 / military))))
+		:ARG1 (x34 / exempt-01
+			:time (x27 / else)
+			:poss (x37 / reason
+				:mod (x36 / religion)))))
 
 # ::id 12
-# ::snt What right must not be infringed
+# ::snt What right must not be infringed ?
 (x6 / infringe-01
 	:time (x2 / right))
 
 # ::id 13
-# ::snt The right of the people to serve in the militia .
-(x7 / serve-01
-	:ARG1 (x3 / include-91)
-	:ARG1 (x10 / militia))
+# ::snt The right of the people to serve in the militia
+(x2 / right
+	:purpose (x7 / serve-01
+		:ARG1 (x10 / militia)))
 
 # ::id 14
-# ::snt Plainly, any conscientious-objector provision would arise not from a right but from a duty to serve in the militia
+# ::snt Plainly , any conscientious-objector provision would arise not from a right but from a duty to serve in the militia
 (x7 / arise-01
 	:mod (x1 / plainly)
 	:ARG0 (x5 / provision
@@ -245,7 +259,7 @@
 				:ARG2 (x20 / militia)))))
 
 # ::id 15
-# ::snt Yet Mr. Goldwin believes the amendment means, as the American Enterprise Institute's Robert A. Goldwin's later says, " that the right to bear arms meant the right to serve in the militia .
+# ::snt Yet Mr. Goldwin believes the amendment means , as the American Enterprise Institute's Robert A. Goldwin's  later says , that the right to bear arms meant the right to serve in the militia
 (x4 / believe-01
 	:ARG0 (x3 / person
 		:name (n / name
@@ -264,15 +278,15 @@
 					:op2 "A."
 					:op3 "Goldwin"))
 			:ARG1 (x19 / late))
-		:ARG1 (x29 / mean-01
-			:purpose (x33 / serve-01
-				:ARG1 (x36 / militia))
+		:ARG1 (x28 / mean-01
+			:purpose (x32 / serve-01
+				:ARG1 (x35 / militia))
 			:ARG1 (xap0 / entitle-01
-				:ARG1 (x27 / bear-02
-					:ARG1 (x28 / arm))))))
+				:ARG1 (x26 / bear-02
+					:ARG1 (x27 / arm))))))
 
 # ::id 16
-# ::snt Thus does the American Enterprise Institute's Robert A. Goldwin's reduce the first of these rights to the second, when clearly it is much broader
+# ::snt Thus does the American Enterprise Institute's Robert A. Goldwin's  reduce the first of these rights to the second , when clearly it is much broader
 (x12 / reduce-01
 	:ARG0 (x8 / person
 		:name (n / name
@@ -290,9 +304,9 @@
 				:quant (x26 / much)))))
 
 # ::id 17
-# ::snt Roger Pilon Senior Fellow and Director Center for Constitutional Studies CATO Institute Washington -- The militia is not the National Guard but rather the people of the original states
-(x22 / contrast-01
-	:ARG1 (x5 / and
+# ::snt Roger Pilon Senior Fellow and Director Center for Constitutional Studies CATO Institute Washington The militia is not the National Guard but rather the people of the original states
+(x21 / contrast-01
+	:ARG2 (x5 / and
 		:op1 (x1 / person
 			:name (n / name
 				:op1 "Roger"
@@ -300,25 +314,26 @@
 				:op3 "Senior"
 				:op4 "Fellow")
 			:ARG0-of (x3 / senior)
-			:ARG0-of (x16 / militia
-				:mod (x20 / nation)
-				:location (x29 / state
-					:mod (x28 / original))))
-		:op2 (x6 / government-organization
+			:ARG0-of (x15 / militia
+				:mod (x9 / treaty
+					:name (n2 / name
+						:op1 "Constitutional"
+						:op2 "Studies"
+						:op3 "CATO"
+						:op4 "Institute"))
+				:mod (x13 / government-organization
+					:name (n3 / name
+						:op1 "Washington"))
+				:null_edge (x14 / null_tag)))
+		:op2 (x7 / organization
 			:name (n1 / name
-				:op1 "Director"
-				:op2 "Center"
-				:op3 "for"
-				:op4 "Constitutional"
-				:op5 "Studies"
-				:op6 "CATO"
-				:op7 "Institute")
-			:location (x13 / city
-				:name (n2 / name
-					:op1 "Washington")))))
+				:op1 "Center")
+			:null_edge (x6 / null_tag)))
+	:ARG1 (x28 / state
+		:mod (x27 / original)))
 
 # ::id 18
-# ::snt In Ohio, we have an Ohio militia that is not a part of the National Guard
+# ::snt In Ohio , we have an Ohio militia that is not a part of the National Guard
 (x5 / have-03
 	:location (x2 / country
 		:name (n / name
@@ -332,7 +347,7 @@
 			:mod (x16 / nation))))
 
 # ::id 19
-# ::snt The fear of standing armies and the control these armed men gave a central government was foremost in the Framers ' minds when writing the Bill of Rights
+# ::snt The fear of standing armies and the control these armed men gave a central government was foremost in the Framersminds when writing the Bill of Rights
 (x2 / fear-01
 	:ARG1 (x6 / and
 		:op1 (x5 / army
@@ -345,10 +360,12 @@
 					:ARG0-of (g / govern-01)
 					:mod (x14 / central)
 					:mod (x17 / foremost)
-					:ARG1-of (x24 / write-01
-						:ARG1 (x22 / mind)
-						:ARG1 (x26 / bill
-							:mod (x28 / right))))))))
+					:null_edge (x20 / publication
+						:name (n / name
+							:op1 "Framersminds"))
+					:ARG1-of (x22 / write-01
+						:ARG1 (x24 / bill
+							:mod (x26 / right))))))))
 
 # ::id 20
 # ::snt Thomas Jefferson moved to prevent this type of power in a few people's hands by the Second Amendment
@@ -366,21 +383,21 @@
 			:quant (x12 / few))))
 
 # ::id 21
-# ::snt Thomas Jefferson stated, " No free man shall ever be debarred the use of arms .
+# ::snt Thomas Jefferson  stated , No free man shall ever be debarred the use of arms
 (x3 / state-01
 	:ARG0 (x1 / newspaper
 		:name (n / name
 			:op1 "Thomas"
 			:op2 "Jefferson"))
-	:ARG1 (x12 / debar
-		:ARG1 (x8 / man
-			:ARG1-of (x7 / free-41))
-		:time (x10 / ever)
-		:ARG1 (x14 / use-01
-			:ARG1 (x16 / arm))))
+	:ARG1 (x11 / debar
+		:ARG1 (x7 / man
+			:ARG1-of (x6 / free-41))
+		:time (x9 / ever)
+		:ARG1 (x13 / use-01
+			:ARG1 (x15 / arm))))
 
 # ::id 22
-# ::snt The addition in the early drafts of a conscientious-objector clause was added for the preservation of religious freedoms, which the Colonists had not had in England
+# ::snt The addition in the early drafts of a conscientious-objector clause was added for the preservation of religious freedoms , which the Colonists had not had in England
 (x12 / add-02
 	:ARG1 (x2 / addition
 		:ARG1-of (x6 / draft-01
@@ -399,31 +416,29 @@
 						:op1 "England"))))))
 
 # ::id 23
-# ::snt It is unfortunate today's " scholars " seem to spend today's " scholars " time picking apart history and the great thoughts of the visionary men who formed this country
-(x9 / seem-01
-	:ARG1 (x11 / spend-01
-		:ARG0 (x7 / scholar
-			:null_edge (x4 / today
+# ::snt It is unfortunate today's scholars seem to spend today's scholars  time picking apart history and the great thoughts of the visionary men who formed this country
+(x7 / seem-01
+	:ARG1 (x9 / spend-01
+		:ARG0 (x6 / scholar
+			:time (x4 / today
 				:mod (x3 / fortunate-41
 					:domain (x1 / it))))
-		:ARG3 (x15 / scholar
-			:time (x12 / today))
-		:ARG1 (x18 / pick-01
-			:ARG0 x15
-			:ARG1 (x21 / and
-				:op1 (x20 / history
-					:mod (x23 / great
-						:domain (x28 / man
-							:mod (x27 / visionary)
-							:ARG0-of (x30 / form-02
-								:ARG1 (x32 / country
-									:mod (x31 / this))))))))))
+		:ARG1 (x14 / pick-01
+			:ARG1 (x12 / scholar
+				:time (x10 / today))
+			:ARG1 (x17 / and
+				:op1 (x16 / history
+					:mod (x19 / great
+						:domain (x24 / man
+							:mod (x23 / visionary)
+							:ARG0-of (x26 / form-02
+								:ARG1 (x28 / country
+									:mod (x27 / this))))))))))
 
 # ::id 24
-# ::snt In No free man personal celebration of this 200-year-old document, No free man have pledged the following : No free man will give up No free man freedom of speech when today's " scholars " cut out No free man tongue ; No free man will give up No free man right to worship when today's " scholars " have slain No free man God and No free man ; No free man will assemble with the people of my choice even when the people of my choice are imprisoned, and No free man will give up my rifle when today's " scholars " pry No free man cold dead fingers from around my rifle
+# ::snt In No free man  personal celebration of this 200-year-old document , No free man  have pledged the following : No free man  will give up No free man  freedom of speech when today's scholars  cut out No free man  tongue ; No free man  will give up No free man  right to worship when today's scholars  have slain No free man  God and No free man  ; No free man  will assemble with the people of my choice even when the people of my choice  are imprisoned , and No free man  will give up my rifle when today's scholars  pry No free man  cold dead fingers from around my rifle
 (x16 / pledge-01
 	:time (x6 / celebrate-02
-		:ARG1-of (x3 / free-41)
 		:mod (x5 / personal)
 		:ARG1 (x10 / document
 			:mod (x8 / this)
@@ -434,95 +449,93 @@
 		:ARG1-of (x13 / free-41))
 	:ARG2 (x18 / thing
 		:ARG1-of (f / follow-04))
-	:ARG2 (x95 / and
+	:ARG2 (x91 / and
 		:op1 (x24 / give-07
 			:ARG0 (x22 / man
 				:ARG1-of (x21 / free-41))
 			:ARG1 (x29 / free-41
 				:mod (x27 / free-41)
 				:mod (x28 / man)
-				:ARG2 (x31 / speech)))
-		:op2 (x100 / give-01
+				:ARG2 (x31 / speech))
+			:null_edge (x34 / null_tag
+				:null_edge (x33 / today)))
+		:op2 (x96 / give-01
 			:ARG0 x22
-			:ARG0 (x38 / cut-01
-				:ARG0 (x36 / scholar
-					:null_edge (x33 / today))
-				:ARG1 (x43 / tongue
-					:poss x36
-					:ARG1-of (x41 / free-41)
-					:mod (x42 / man)))
-			:ARG0 (x98 / man
-				:ARG1-of (x97 / free-41))
-			:ARG1 (x103 / rifle)
-			:condition (x110 / pry
-				:ARG0 (x108 / scholar
-					:time (x105 / today))
-				:ARG2 (x113 / man
-					:ARG1-of (x112 / free-41))
-				:ARG1 (x116 / finger
-					:poss x108
-					:poss x113
-					:mod (x114 / cold)
-					:ARG1-of (x115 / die-01
+			:ARG0 (x94 / man
+				:ARG1-of (x93 / free-41))
+			:ARG1 (x99 / rifle)
+			:condition (x104 / pry
+				:ARG0 (x103 / scholar
+					:time (x101 / today))
+				:ARG2 (x107 / man
+					:ARG1-of (x106 / free-41))
+				:ARG1 (x110 / finger
+					:poss x103
+					:poss x107
+					:mod (x108 / cold)
+					:ARG1-of (x109 / die-01
 						:op (d / dead)))
-				:ARG2 (x118 / around
-					:op1 (x120 / rifle))))))
+				:ARG2 (x112 / around
+					:op1 (x114 / rifle))))))
 
 # ::id 25
-# ::snt Samuel R. Bush III Cincinnati -- Let those who want guns join the National Guard, says Mr. Goldwin
-(x1 / person
-	:name (n / name
-		:op1 "Samuel"
-		:op2 "R."
-		:op3 "Bush"
-		:op4 "III"
-		:op5 "Cincinnati")
-	:ARG0-of (x4 / iii)
-	:ARG0-of (x12 / join-02
-		:null_edge (x10 / want-01
-			:ARG1 (x11 / gun))
-		:ARG1 (x15 / government-organization
+# ::snt Samuel R. Bush III Cincinnati Let those who want guns join the National Guard , says Mr. Goldwin
+(x16 / say-01
+	:ARG1 (x6 / let-01
+		:ARG0 (x5 / country
 			:name (n1 / name
-				:op1 "Guard")
-			:null_edge (x14 / null_tag)
-			:null_edge (x17 / say-01
-				:ARG0 (x19 / person
-					:name (n2 / name
-						:op1 "Goldwin")
-					:null_edge (x18 / null_tag))))))
-
-# ::id 26
-# ::snt Ah, the sanctimonious arrogance of Samuel R. Bush III Cincinnati -- Let those who want guns join the National Guard , says Mr. Goldwin .
-(x23 / say-01
-	:ARG1 (x13 / let-01
-		:ARG1 (x5 / arrogance
-			:null_edge (x1 / Ah)
-			:mod (x4 / sanctimonious)
-			:ARG0 (x7 / person
-				:name (n1 / name
-					:op1 "Samuel"))
-			:poss (x11 / country
+				:op1 "Cincinnati")
+			:null_edge (x1 / person
 				:name (n2 / name
-					:op1 "Cincinnati")
-				:null_edge (x8 / null_tag
-					:mod (x9 / person
-						:name (n4 / name
-							:op1 "Bush")))
-				:mod (x10 / iii)))
-		:ARG1 (x18 / join-02
-			:null_edge (x16 / want-01
-				:ARG1 (x17 / gun))
-			:ARG1 (x21 / government-organization
+					:op1 "Samuel"))
+			:null_edge (x2 / null_tag
+				:mod (x3 / person
+					:name (n4 / name
+						:op1 "Bush")))
+			:mod (x4 / iii))
+		:ARG1 (x11 / join-02
+			:null_edge (x9 / want-01
+				:ARG1 (x10 / gun))
+			:ARG1 (x14 / government-organization
 				:name (n3 / name
 					:op1 "Guard")
-				:null_edge (x20 / null_tag))))
-	:ARG0 (x25 / person
+				:null_edge (x13 / null_tag))))
+	:ARG0 (x18 / person
 		:name (n / name
 			:op1 "Goldwin")
-		:null_edge (x24 / null_tag)))
+		:null_edge (x17 / null_tag)))
+
+# ::id 26
+# ::snt Ah , the sanctimonious arrogance of Samuel R. Bush III Cincinnati Let those who want guns join the National Guard , says Mr. Goldwin
+(x22 / say-01
+	:ARG1 (x5 / arrogance
+		:mod (x1 / Ah)
+		:mod (x4 / sanctimonious)
+		:ARG0 (x7 / person
+			:name (n1 / name
+				:op1 "Samuel"))
+		:poss (x11 / country
+			:name (n2 / name
+				:op1 "Cincinnati")
+			:null_edge (x8 / null_tag
+				:mod (x9 / person
+					:name (n4 / name
+						:op1 "Bush")))
+			:mod (x10 / iii))
+		:domain (x17 / join-02
+			:null_edge (x15 / want-01
+				:ARG1 (x16 / gun))
+			:ARG1 (x20 / government-organization
+				:name (n3 / name
+					:op1 "Guard")
+				:null_edge (x19 / null_tag))))
+	:ARG0 (x24 / person
+		:name (n / name
+			:op1 "Goldwin")
+		:null_edge (x23 / null_tag)))
 
 # ::id 27
-# ::snt What gives Mr. Goldwin the right to deny mine when No free man abide by the laws
+# ::snt What gives Mr. Goldwin the right to deny mine when No free man  abide by the laws ?
 (x2 / give-01
 	:null_edge (x3 / null_tag)
 	:ARG1 (x6 / right
@@ -533,7 +546,7 @@
 				:ARG1 (x17 / law)))))
 
 # ::id 28
-# ::snt the American Enterprise Institute's Robert A. Goldwin's stresses the differences between the world of 1791 and today to suit the American Enterprise Institute's Robert A. Goldwin's prejudice
+# ::snt the American Enterprise Institute's Robert A. Goldwin's  stresses the differences between the world of 1791 and today to suit the American Enterprise Institute's Robert A. Goldwin's  prejudice
 (x10 / stress-01
 	:ARG0 (x6 / person
 		:name (n / name
@@ -563,7 +576,7 @@
 							:op3 "Goldwin")))))))
 
 # ::id 29
-# ::snt the American Enterprise Institute's Robert A. Goldwin's studiously ignores other major differences between 1791 and today
+# ::snt the American Enterprise Institute's Robert A. Goldwin's  studiously ignores other major differences between 1791 and today
 (x11 / ignore-01
 	:ARG0 (x6 / person
 		:name (n / name
@@ -586,7 +599,7 @@
 					:op2 (x18 / today))))))
 
 # ::id 30
-# ::snt In 1791, punishment was swifter and surer
+# ::snt In 1791 , punishment was swifter and surer
 (x7 / and
 	:time (x2 / date-entity
 		:year 1791)
@@ -621,7 +634,7 @@
 				:ARG2 (x13 / public)))))
 
 # ::id 33
-# ::snt If anything, the reasons for citizens to own weapons for self-defense are more compelling today than citizens to own weapons for self-defense were in 1791
+# ::snt If anything , the reasons for citizens to own weapons for self-defense are more compelling today than citizens to own weapons for self-defense  were in 1791
 (x15 / compelling
 	:compared-to (x2 / anything)
 	:domain (x5 / reason
@@ -641,7 +654,7 @@
 			:year 1791)))
 
 # ::id 34
-# ::snt Let Mr. Goldwin show us how the American Enterprise Institute's Robert A. Goldwin's would make us safer in our homes and we might understand the American Enterprise Institute's Robert A. Goldwin's wish to strip away our only sure defense
+# ::snt Let Mr. Goldwin show us how the American Enterprise Institute's Robert A. Goldwin's  would make us safer in our homes and we might understand the American Enterprise Institute's Robert A. Goldwin's  wish to strip away our only sure defense
 (x4 / show-01
 	:ARG0 (x3 / person
 		:name (n / name
@@ -677,24 +690,21 @@
 						:mod (x41 / only)))))))
 
 # ::id 35
-# ::snt Carl Roessler San Francisco -- Mr. Goldwin's article is a casebook example of convoluted logic
-(x1 / person
-	:name (n / name
-		:op1 "Carl"
-		:op2 "Roessler"
-		:op3 "San"
-		:op4 "Francisco")
-	:ARG0-of (x16 / logic
-		:ARG1 (x9 / article
-			:ARG1 (x3 / country
-				:name (n1 / name
-					:op1 "San"))
-			:null_edge (x6 / null_tag))
-		:mod (x12 / casebook)
-		:mod (x15 / convoluted)))
+# ::snt Carl Roessler San Francisco Mr. Goldwin's article is a casebook example of convoluted logic
+(x15 / logic
+	:ARG1 (x8 / article
+		:name (x1 / name
+			:op1 "Carl"
+			:op2 "Roessler"
+			:op3 "San"
+			:op4 "Francisco"
+			:op5 "Mr."
+			:op6 "Goldwin"))
+	:mod (x11 / casebook)
+	:mod (x14 / convoluted))
 
 # ::id 36
-# ::snt Consider that George Mason (1725-1792 -RRB-, the great Virginia constitutionalist, defined quite clearly the meaning of the word " militia " during a debate in 1788
+# ::snt Consider that George Mason (1725-1792 ), the great Virginia constitutionalist , defined quite clearly the meaning of the word militia during a debate in 1788
 (x1 / consider-02
 	:ARG1 (x14 / define-01
 		:ARG0 (x3 / newspaper
@@ -710,25 +720,25 @@
 		:manner (x16 / clear
 			:degree (x15 / quite))
 		:ARG1 (x18 / mean-01
-			:ARG1 (x23 / militia
+			:ARG1 (x22 / militia
 				:mod (x21 / word-01)))
-		:time (x27 / debate-01
-			:time (x29 / date-entity
+		:time (x25 / debate-01
+			:time (x27 / date-entity
 				:year 1788))))
 
 # ::id 37
-# ::snt " that George Mason -LRB- 1725-1792 -RRB- ask who are the militia ?
-(x8 / ask-01
-	:ARG0 (x3 / newspaper
+# ::snt that George Mason (1725-1792 ) ask who are the militia ?
+(x7 / ask-01
+	:ARG0 (x2 / newspaper
 		:name (n / name
 			:op1 "George"
 			:op2 "Mason")
-		:mod (x2 / that))
-	:time (x6 / date-entity)
-	:ARG1 (x12 / militia))
+		:mod (x1 / that))
+	:time (x5 / date-entity)
+	:ARG1 (x11 / militia))
 
 # ::id 38
-# ::snt that George Mason -LRB- 1725-1792 -RRB- said, and then answered that George Mason -LRB- 1725-1792 -RRB- own question with the words : " They consist now of the whole people " (emphasis added )
+# ::snt that George Mason (1725-1792 ) said , and then answered that George Mason (1725-1792 ) own question with the words : They consist now of the whole people (emphasis added )
 (x9 / and
 	:op1 (x7 / say-01
 		:ARG0 (x2 / newspaper
@@ -744,16 +754,16 @@
 				:name (n1 / name
 					:op1 "George"))
 			:time (x16 / date-entity))
-		:ARG1 (x22 / word))
-	:op2 (x26 / consist-01
-		:ARG1 (x25 / they)
-		:time (x27 / now)
-		:ARG2 (x34 / emphasize-01
-			:mod (x30 / whole)
-			:ARG1-of (x35 / add-03))))
+		:ARG1 (x22 / word)
+		:ARG1 (x25 / consist-01
+			:ARG1 (x24 / they)
+			:time (x26 / now)
+			:null_edge (x33 / add-03
+				:ARG1 (x29 / whole)
+				:ARG1 (x32 / emphasize-01)))))
 
 # ::id 39
-# ::snt Mason's credentials are reliable : that George Mason -LRB- 1725-1792 -RRB- is the author of the first 10 amendments to our Constitution
+# ::snt Mason's credentials are reliable : that George Mason (1725-1792 ) is the author of the first 10 amendments to our Constitution
 (x5 / reliable
 	:domain (x3 / credential
 		:poss (x1 / person
@@ -773,19 +783,19 @@
 					:op1 "Constitution")))))
 
 # ::id 40
-# ::snt -LCB- There is a debate about who actually drafted the amendments -- Mason or Madison -RCB-
+# ::snt -LCB- There is a debate about who actually drafted the amendments Mason or Madison -RCB-
 (x5 / debate-01
 	:ARG1-of (x9 / draft-01
 		:mod (x8 / actual)
-		:ARG1 (x11 / amend-01
-			:ARG2 (x14 / or
-				:op1 (x13 / person
-					:name (n / name
-						:op1 "Mason"))
-				:op2 (x15 / madison)))))
+		:ARG1 (x13 / or
+			:op2 (x11 / amend-01)
+			:op1 (x12 / person
+				:name (n / name
+					:op1 "Mason"))
+			:op2 (x14 / madison))))
 
 # ::id 41
-# ::snt Further, a 1903 U.S. law defined the militia as not only the National Guard, but all able-bodied males between 18 and 45
+# ::snt Further , a 1903 U.S. law defined the militia as not only the National Guard , but all able-bodied males between 18 and 45
 (x7 / define-01
 	:time (x1 / further)
 	:ARG0 (x6 / law
@@ -809,7 +819,7 @@
 				:op2 45))))
 
 # ::id 42
-# ::snt No free man, along with millions of other Americans, am not against sensible gun control, i.e., licensing, character searches, etc.
+# ::snt No free man  , along with millions of other Americans , am not against sensible gun control , i.e. , licensing , character searches , etc.
 (x3 / man
 	:ARG1-of (x2 / free-41)
 	:location (x5 / along
@@ -823,7 +833,7 @@
 			:mod (x23 / character))))
 
 # ::id 43
-# ::snt What No free man resent is Mr. Goldwin's agenda, which is removal of all guns from American citizens through the implementation of total regulations ; a direct violation of the Second Amendment through nefarious means
+# ::snt What No free man  resent is Mr. Goldwin's agenda , which is removal of all guns from American citizens through the implementation of total regulations ; a direct violation of the Second Amendment through nefarious means
 (x / xconcept
 	:x (x27 / and
 		:op1 (x5 / resent
@@ -850,7 +860,7 @@
 			:mod (x29 / direct))))
 
 # ::id 44
-# ::snt Edward F. Menninger Sterling Heights, Mich.
+# ::snt Edward F. Menninger Sterling Heights , Mich.
 (x1 / name
 	:op1 "Edward"
 	:op2 "F."
@@ -865,24 +875,23 @@
 			:op1 "Mich.")))
 
 # ::id 45
-# ::snt -- Mr. Goldwin suggests gun control via enlistment in the National Guard
-(x3 / country
-	:name (n / name
-		:op1 "Goldwin")
-	:null_edge (x2 / null_tag)
-	:null_edge (x4 / suggest-01
-		:ARG1 (x6 / control-01
-			:ARG1 (x5 / gun))
-		:ARG0 (x8 / enlistment
-			:location (x12 / guard
-				:mod (x11 / nation)))))
+# ::snt Mr. Goldwin suggests gun control via enlistment in the National Guard
+(x3 / suggest-01
+	:ARG0 (x2 / person
+		:name (n / name
+			:op1 "Goldwin")
+		:null_edge (x1 / null_tag))
+	:ARG1 (x5 / control-01
+		:ARG1 (x4 / gun))
+	:location (x11 / guard
+		:mod (x10 / nation)))
 
 # ::id 46
 # ::snt Swell idea
 (x2 / idea)
 
 # ::id 47
-# ::snt Updating the right to bear arms from 1791 to 1991, when No free man report for service No free man 'll bring, as required, a few items consistent with the current infantryman's inventory : a Barett Light .50 semiautomatic sniper rifle, so No free man can reach out and touch people half a mile away ; a Squad Automatic Weapon firing 5.56 mm rounds at the rate of a whole lot per second out of 30-round clips or hundred-round belts ; a 40mm grenade launcher ... but you get the idea
+# ::snt Updating the right to bear arms from 1791 to 1991 , when No free man  report for service No free man  will bring , as required , a few items consistent with the current infantryman's inventory : a Barett Light .50 semiautomatic sniper rifle , so No free man  can reach out and touch people half a mile away ; a Squad Automatic Weapon firing 5.56 mm rounds at the rate of a whole lot per second out of 30-round clips or hundred-round belts ; a 40mm grenade launcher ... but you get the idea
 (x / xconcept
 	:x (x61 / and
 		:op1 (x1 / update-01
@@ -919,7 +928,13 @@
 					:op1 "Weapon"))
 			:manner (x72 / rate
 				:mod (x76 / lot
-					:mod (x75 / whole))))
+					:mod (x75 / whole))
+				:ARG2 (x78 / temporal-quantity
+					:unit (s / second)
+					:ARG2 (x83 / or
+						:op1 (x82 / clip
+							:mod (x81 / 30-round))
+						:op1 (x85 / belt)))))
 		:op7 (x90 / thing
 			:ARG0-of (l / launch-01)
 			:mod (x89 / grenade)))
@@ -938,16 +953,12 @@
 				:op2 (x55 / touch-04
 					:ARG0 x50)))
 		:op1 (x69 / round)
-		:prep-with (x83 / or
-			:op1 (x82 / clip
-				:mod (x81 / 30-round))
-			:op1 (x85 / belt))
 		:op2 (x94 / get-05
 			:ARG0 (x93 / you)
 			:ARG1 (x96 / idea))))
 
 # ::id 48
-# ::snt Then, as a thoroughly modern, well-regulated militiaman, No free man 'll take my weapons home, just as did Morgan's riflemen, and the musket bearers of Lexington and Concord, and the Colonial light artillerists
+# ::snt Then , as a thoroughly modern , well-regulated militiaman , No free man  will take my weapons home , just as did Morgan's riflemen , and the musket bearers of Lexington and Concord , and the Colonial light artillerists
 (x15 / take-01
 	:time (x1 / then)
 	:ARG2 (x9 / militiaman

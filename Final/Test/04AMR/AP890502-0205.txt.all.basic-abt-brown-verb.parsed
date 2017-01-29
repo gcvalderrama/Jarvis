@@ -26,7 +26,7 @@
 		:weekday (x8 / tuesday)))
 
 # ::id 2
-# ::snt Consumers, politicians and environmentalists expressed Consumers , politicians and environmentalists anger in a one-day " Boycott Exxon " campaign
+# ::snt Consumers , politicians and environmentalists expressed Consumers , politicians and environmentalists  anger in a one-day Boycott Exxon campaign
 (x6 / express-01
 	:ARG0 (x4 / and
 		:op1 (x1 / person
@@ -42,15 +42,14 @@
 			:ARG2 (e1 / environmentalist)))
 	:ARG1 (x12 / anger-01
 		:ARG1 x10)
-	:time (x20 / campaign-01
+	:ARG1 (x18 / campaign-01
 		:ARG0 x10
-		:mod (x17 / boycott
-			:mod (x15 / person
-				:name (n / name
-					:op1 "one-day")))))
+		:duration (x15 / person
+			:name (n / name
+				:op1 "one-day"))))
 
 # ::id 3
-# ::snt Yost, the top federal official tracking the environmental disaster, said Exxon's plan was poorly drafted and lacking in specifics
+# ::snt Yost , the top federal official tracking the environmental disaster , said Exxon's plan was poorly drafted and lacking in specifics
 (x12 / say-01
 	:ARG0 (x1 / person
 		:name (n / name
@@ -75,7 +74,7 @@
 			:ARG1 (x22 / specifics))))
 
 # ::id 4
-# ::snt But Yost , the top federal official tracking the environmental disaster stopped short of rejecting the environmental disaster, saying Yost , the top federal official tracking the environmental disaster wanted to meet with Exxon and state officials
+# ::snt But Yost , the top federal official tracking the environmental disaster  stopped short of rejecting the environmental disaster  , saying Yost , the top federal official tracking the environmental disaster  wanted to meet with Exxon and state officials
 (x1 / contrast-01
 	:ARG2 (x12 / stop-01
 		:ARG0 (x2 / person
@@ -120,7 +119,7 @@
 						:mod (x10 / environment)))))))
 
 # ::id 5
-# ::snt In Washington, consumer activist Ralph Nader said Exxon " should not be allowed to forget " the spill and that a boycott would send the oil giant a message
+# ::snt In Washington , consumer activist Ralph Nader said Exxon should not be allowed to forget the spill and that a boycott would send the oil giant a message
 (x8 / say-01
 	:location (x2 / city
 		:name (n / name
@@ -132,17 +131,17 @@
 		:ARG0-of (x5 / activist
 			:ARG1 (x4 / person
 				:ARG0-of (c / consume-01))))
-	:ARG1 (x11 / recommend-01
-		:ARG1 (x14 / allow-01
+	:ARG1 (x10 / recommend-01
+		:ARG1 (x13 / allow-01
 			:ARG1 (x9 / organization
 				:name (n2 / name
 					:op1 "Exxon"))
-			:ARG1 (x16 / forget-01)
-			:ARG1 (x20 / and)
-			:ARG1 (x30 / message-01
-				:ARG1 (x23 / boycott-01)
-				:ARG1 (x28 / giant
-					:mod (x27 / oil))))))
+			:ARG1 (x15 / forget-01)
+			:ARG1 (x28 / message-01
+				:ARG1 (x21 / boycott-01)
+				:ARG1 (x26 / giant
+					:mod (x25 / oil))))
+		:ARG1 (x18 / and)))
 
 # ::id 6
 # ::snt He and others blasted Exxon for failing to be prepared for the spill and not rapidly responding to the accident that fouled hundreds of miles of Alaska's coast
@@ -176,42 +175,42 @@
 			:ARG1 (x7 / gas))))
 
 # ::id 8
-# ::snt " We are beginning the war of words and actions against any oil company that does n't understand the war of words and actions responsibility to protect the environment, " Massachusetts state Sen. Carol Amick told a boycott rally in Boston
-(x37 / tell-01
-	:ARG1 (x4 / begin-01
-		:ARG0 (x2 / we)
-		:ARG1 (x6 / war
-			:ARG1 (x9 / and
-				:op1 (x8 / word)
-				:op2 (x10 / action)))
-		:ARG1 (x14 / company
-			:mod (x12 / any)
-			:mod (x13 / oil)
-			:ARG0-of (x18 / understand-01
-				:ARG1 (x20 / war
-					:ARG1 (x23 / and
-						:op1 (x22 / word)
-						:op2 (x24 / action)))
-				:ARG1 (x25 / responsible-41
-					:ARG1 (x27 / protect-01
-						:ARG1 (x29 / environment))))))
-	:ARG0 (x35 / newspaper
+# ::snt We are beginning the war of words and actions against any oil company that does not understand the war of words and actions  responsibility to protect the environment , Massachusetts state Sen. Carol Amick told a boycott rally in Boston
+(x35 / tell-01
+	:ARG1 (x3 / begin-01
+		:ARG0 (x1 / we)
+		:ARG1 (x5 / war
+			:ARG1 (x8 / and
+				:op1 (x7 / word)
+				:op2 (x9 / action)))
+		:ARG1 (x13 / company
+			:mod (x11 / any)
+			:mod (x12 / oil)
+			:ARG0-of (x17 / understand-01
+				:ARG1 (x19 / war
+					:ARG1 (x22 / and
+						:op1 (x21 / word)
+						:op2 (x23 / action)))
+				:ARG1 (x24 / responsible-41)
+				:purpose (x26 / protect-01
+					:ARG1 (x28 / environment)))))
+	:ARG0 (x33 / newspaper
 		:name (n / name
 			:op1 "Carol"
 			:op2 "Amick")
-		:ARG0-of (x34 / sen.
-			:ARG1 (x33 / state
-				:ARG1 (x32 / state
+		:ARG0-of (x32 / sen.
+			:ARG1 (x31 / state
+				:ARG1 (x30 / state
 					:name (n2 / name
 						:op1 "Massachusetts")))))
-	:ARG2 (x40 / rally-01
-		:mod (x39 / boycott-01)
-		:location (x42 / city
+	:ARG2 (x38 / rally-01
+		:mod (x37 / boycott-01)
+		:location (x40 / city
 			:name (n1 / name
 				:op1 "Boston"))))
 
 # ::id 9
-# ::snt In Anchorage, about 400 chanting and sign-waving protesters rallied in front of Exxon's Alaskan headquarters to urge a consumer boycott
+# ::snt In Anchorage , about 400 chanting and sign-waving protesters rallied in front of Exxon's Alaskan headquarters to urge a consumer boycott
 (x7 / and
 	:op1 (x6 / chanting
 		:location (x2 / country
@@ -236,7 +235,7 @@
 					:ARG0-of (c / consume-01))))))
 
 # ::id 10
-# ::snt J. Edward Surette Jr., executive director of the Bay State Gasoline Retailers Association in Billerica, Mass., said it was too early to assess the boycott's impact
+# ::snt J. Edward Surette Jr. , executive director of the Bay State Gasoline Retailers Association in Billerica , Mass. , said it was too early to assess the boycott's impact
 (x20 / say-01
 	:ARG0 (x1 / person
 		:name (n / name
@@ -303,7 +302,7 @@
 			:ARG2 (x16 / effect))))
 
 # ::id 13
-# ::snt Yost said Yost , the top federal official tracking the environmental disaster would make a decision on the proposal within a week
+# ::snt Yost said Yost , the top federal official tracking the environmental disaster  would make a decision on the proposal within a week
 (x2 / say-01
 	:ARG0 (x1 / person
 		:name (n / name
@@ -327,35 +326,35 @@
 			:unit (w / week))))
 
 # ::id 14
-# ::snt " The plan is very thin, " Yost , the top federal official tracking the environmental disaster told a news briefing
-(x19 / tell-01
-	:ARG1 (x6 / thin
-		:domain (x3 / plan-01)
-		:degree (x5 / very))
-	:ARG0 (x9 / person
+# ::snt The plan is very thin , Yost , the top federal official tracking the environmental disaster  told a news briefing
+(x17 / tell-01
+	:ARG1 (x5 / thin
+		:domain (x2 / plan-01)
+		:degree (x4 / very))
+	:ARG0 (x7 / newspaper
 		:name (n / name
 			:op1 "Yost"))
-	:ARG1 (x15 / track-01
-		:ARG0-of (x14 / have-org-role-91
+	:ARG1 (x13 / track-01
+		:ARG0-of (x12 / have-org-role-91
 			:ARG2 (o / official)
-			:mod (x12 / top))
-		:ARG1 (x18 / disaster
-			:mod (x13 / government-organization
+			:mod (x10 / top))
+		:ARG1 (x16 / disaster
+			:mod (x11 / government-organization
 				:name (n1 / name
 					:op1 "federal"))
-			:mod (x17 / environment)))
-	:time (x22 / briefing
-		:mod (x21 / news)))
+			:mod (x15 / environment)))
+	:time (x20 / briefing
+		:mod (x19 / news)))
 
 # ::id 15
-# ::snt " There's not a lot of backup or substantiation
-(x9 / or
-	:quant (x6 / lot)
-	:op1 (x8 / backup)
-	:op2 (x10 / substantiation))
+# ::snt There is not a lot of backup or substantiation
+(x8 / or
+	:quant (x5 / lot)
+	:op1 (x7 / backup)
+	:op2 (x9 / substantiation))
 
 # ::id 16
-# ::snt a lot of backup or substantiation was quite light, very thin
+# ::snt a lot of backup or substantiation  was quite light , very thin
 (x12 / thin
 	:ARG1 (x5 / or
 		:quant (x2 / lot)
@@ -366,7 +365,7 @@
 	:degree (x11 / very))
 
 # ::id 17
-# ::snt There must have been a lot of figures there that Yost , the top federal official tracking the environmental disaster have n't seen
+# ::snt There must have been a lot of figures there that Yost , the top federal official tracking the environmental disaster  have not seen
 (x23 / see-01
 	:ARG0 (x8 / figure)
 	:location (x9 / there)
@@ -384,27 +383,27 @@
 					:mod (x19 / environment))))))
 
 # ::id 18
-# ::snt " We are going to be done this summer, " Yost said
-(x13 / say-01
-	:ARG1 (x7 / do-02
-		:ARG0 (x2 / we)
-		:time (x9 / summer
-			:mod (x8 / this)))
-	:ARG0 (x12 / person
+# ::snt We are going to be done this summer , Yost said
+(x11 / say-01
+	:ARG1 (x6 / do-02
+		:ARG0 (x1 / we)
+		:time (x8 / summer
+			:mod (x7 / this)))
+	:ARG0 (x10 / person
 		:name (n / name
 			:op1 "Yost")))
 
 # ::id 19
-# ::snt " Some beaches are going to be sparkling, some beaches are going to be far from sparkling .
-(x8 / sparkling
-	:domain (x3 / beach
-		:quant (x2 / some))
-	:domain (x11 / beach
-		:quant (x10 / some))
-	:concession-of (x18 / sparkling))
+# ::snt Some beaches are going to be sparkling , some beaches are going to be far from sparkling
+(x7 / sparkling
+	:domain (x2 / beach
+		:quant (x1 / some))
+	:domain (x10 / beach
+		:quant (x9 / some))
+	:concession-of (x17 / sparkling))
 
 # ::id 20
-# ::snt Transportation Secretary Samuel Skinner, who is to make Samuel Skinner second trip to Alaska on Wednesday as overall coordinator for the cleanup, said Samuel Skinner expected the size of the operation to double or triple by the end of the month
+# ::snt Transportation Secretary Samuel Skinner , who is to make Samuel Skinner  second trip to Alaska on Wednesday as overall coordinator for the cleanup , said Samuel Skinner  expected the size of the operation to double or triple by the end of the month
 (x25 / say-01
 	:ARG0 (x3 / newspaper
 		:name (n / name
@@ -439,7 +438,7 @@
 			:op2 (x37 / triple))))
 
 # ::id 21
-# ::snt In a speech at the National Press Club in Washington, Skinner called the spill " the most significant environmental disaster this nation has ever faced .
+# ::snt In a speech at the National Press Club in Washington , Skinner called the spill the most significant environmental disaster this nation has ever faced
 (x13 / call-03
 	:medium (x3 / speech
 		:location (x8 / organization
@@ -453,17 +452,18 @@
 	:ARG0 (x12 / person
 		:name (n / name
 			:op1 "Skinner"))
-	:ARG1 (x21 / disaster
-		:mod (x19 / significant
-			:degree (x18 / most))
-		:mod (x20 / environment)
-		:ARG1-of (x26 / face-01
-			:ARG0 (x23 / nation
-				:mod (x22 / this))
-			:time (x25 / ever))))
+	:ARG1 (x20 / disaster
+		:mod (x15 / spill-01)
+		:mod (x18 / significant
+			:degree (x17 / most))
+		:mod (x19 / environment)
+		:ARG1-of (x25 / face-01
+			:ARG0 (x22 / nation
+				:mod (x21 / this))
+			:time (x24 / ever))))
 
 # ::id 22
-# ::snt However, Samuel Skinner said the cleanup, to be paid for by the oil industry, could add $ 100 million to $ 500 million to Alaska's economy, which Samuel Skinner said is more than the effect of the fishing industry
+# ::snt However , Samuel Skinner  said the cleanup , to be paid for by the oil industry , could add $ 100 million to $ 500 million to Alaska's economy , which Samuel Skinner  said is more than the effect of the fishing industry
 (x5 / say-01
 	:ARG0 (x3 / newspaper
 		:name (n / name
@@ -498,7 +498,7 @@
 		:ARG1 (x8 / boycott-01)))
 
 # ::id 24
-# ::snt Exxon President William D. Stevens said the company was " turning heaven and Earth to set things right .
+# ::snt Exxon President William D. Stevens said the company was turning heaven and Earth to set things right
 (x6 / say-01
 	:ARG0 (x3 / person
 		:name (n / name
@@ -507,16 +507,20 @@
 			:op3 "Stevens")
 		:ARG0-of (x2 / have-org-role-91
 			:ARG2 (p / president)))
-	:ARG0 (x8 / company
-		:ARG0-of (x11 / turn-02
-			:ARG1 (x13 / and
-				:op1 (x12 / heaven))
-			:purpose (x16 / set-06
-				:ARG2 (x18 / right
-					:ARG1 (x17 / thing))))))
+	:ARG1 (x10 / turn-02
+		:ARG0 (x8 / company)
+		:ARG1 (x12 / and
+			:op1 (x11 / heaven)
+			:op2 (x13 / planet
+				:name (n1 / name
+					:op1 "Earth")))
+		:ARG2 (x15 / set-06
+			:ARG0 x12
+			:ARG2 (x17 / right
+				:ARG1 (x16 / thing)))))
 
 # ::id 25
-# ::snt Exxon's 60-page, two-part revised strategy to cleanse some 364 miles of Alaska's coastline of the oil spilled March 24 by the tanker Exxon Valdez was released Monday
+# ::snt Exxon's 60-page , two-part revised strategy to cleanse some 364 miles of Alaska's coastline of the oil spilled March 24 by the tanker Exxon Valdez was released Monday
 (x7 / strategy
 	:poss (x1 / organization
 		:name (n / name
@@ -542,7 +546,7 @@
 							:time (x30 / monday))))))))
 
 # ::id 26
-# ::snt The tanker struck a reef 25 miles from Valdez, spilling more than 10 million gallons of crude oil into Prince William Sound
+# ::snt The tanker struck a reef 25 miles from Valdez , spilling more than 10 million gallons of crude oil into Prince William Sound
 (x3 / person
 	:name (n / name
 		:op1 "struck")
@@ -568,7 +572,7 @@
 					:op1 "William")))))
 
 # ::id 27
-# ::snt About 300 miles from the spill site, an observer saw thousands of dead birds in a wide tidal basin in the Hallo Bay area
+# ::snt About 300 miles from the spill site , an observer saw thousands of dead birds in a wide tidal basin in the Hallo Bay area
 (x3 / distance-quantity
 	:unit (m / mile)
 	:quant (x1 / about
@@ -589,18 +593,18 @@
 							:op2 "Bay")))))))
 
 # ::id 28
-# ::snt " thousands of dead birds saw 2,000 to 3,000 dead birds
-(x6 / see-01
-	:ARG0 (x5 / bird
-		:ARG1-of (x4 / die-01
+# ::snt thousands of dead birds  saw 2,000 to 3,000 dead birds
+(x5 / see-01
+	:ARG0 (x4 / bird
+		:ARG1-of (x3 / die-01
 			:op (d / dead)))
-	:ARG1 (x11 / bird
-		:quant (x9 / 3,000)
-		:ARG1-of (x10 / die-01
+	:ARG1 (x10 / bird
+		:quant (x8 / 3,000)
+		:ARG1-of (x9 / die-01
 			:op (d1 / dead))))
 
 # ::id 29
-# ::snt ... Exxon President William D. Stevens ca n't really tell what they are
+# ::snt ... Exxon President William D. Stevens  ca not really tell what they are
 (x10 / tell-01
 	:ARG0 (x4 / person
 		:name (n / name
@@ -612,80 +616,80 @@
 	:mod (x9 / really))
 
 # ::id 30
-# ::snt They 're one big blob of oil, " said Ray Bane, superintendent of Katmai National Park, about 275 miles southwest of Valdez
-(x10 / say-01
+# ::snt They are one big blob of oil , said Ray Bane , superintendent of Katmai National Park , about 275 miles southwest of Valdez
+(x9 / say-01
 	:ARG1 (x5 / blob
 		:domain (x1 / they)
 		:quant 1
 		:mod (x4 / big)
 		:mod (x7 / oil))
-	:ARG0 (x11 / newspaper
+	:ARG0 (x10 / newspaper
 		:name (n / name
 			:op1 "Ray"
 			:op2 "Bane")
-		:ARG0-of (x14 / superintendent
-			:ARG1 (x18 / country
+		:ARG0-of (x13 / superintendent
+			:ARG1 (x17 / country
 				:name (n1 / name
 					:op1 "Park")
-				:null_edge (x16 / country
+				:null_edge (x15 / country
 					:name (n2 / name
 						:op1 "Katmai"))
-				:null_edge (x23 / southwest
-					:null_edge (x22 / null_tag)
-					:poss (x25 / country
+				:null_edge (x22 / southwest
+					:null_edge (x21 / null_tag)
+					:poss (x24 / country
 						:name (n3 / name
 							:op1 "Valdez")))))))
 
 # ::id 31
-# ::snt " We found large oil debris washing and slopping up on our shores
-(x3 / find-02
-	:ARG0 (x2 / we)
-	:ARG1 (x6 / debris
-		:mod (x4 / large)
-		:mod (x5 / oil)
-		:consist-of (x8 / and
-			:op1 (x7 / wash-01
-				:ARG1 (x13 / shore))
-			:op2 (x9 / slop))))
+# ::snt We found large oil debris washing and slopping up on our shores
+(x2 / find-02
+	:ARG0 (x1 / we)
+	:ARG1 (x5 / debris
+		:mod (x3 / large)
+		:mod (x4 / oil)
+		:consist-of (x7 / and
+			:op1 (x6 / wash-01
+				:ARG1 (x12 / shore))
+			:op2 (x8 / slop))))
 
 # ::id 32
-# ::snt ... one big blob of oil was very bad, " Bane said
-(x13 / say-01
+# ::snt ... one big blob of oil  was very bad , Bane said
+(x12 / say-01
 	:ARG1 (x9 / bad-42
 		:domain (x4 / blob
 			:quant 1
 			:mod (x3 / big)
 			:ARG1 (x6 / oil))
 		:degree (x8 / very))
-	:ARG0 (x12 / person
+	:ARG0 (x11 / person
 		:name (n / name
 			:op1 "Bane")))
 
 # ::id 33
-# ::snt " We saw eagles carrying oil-covered birds
-(x3 / see-01
-	:ARG0 (x2 / we)
-	:ARG1 (x4 / eagle
-		:ARG0-of (x5 / carry-01
-			:ARG1 (x7 / bird
-				:mod (x6 / oil-covered)))))
+# ::snt We saw eagles carrying oil-covered birds
+(x2 / see-01
+	:ARG0 (x1 / we)
+	:ARG1 (x3 / eagle
+		:ARG0-of (x4 / carry-01
+			:ARG1 (x6 / bird
+				:mod (x5 / oil-covered)))))
 
 # ::id 34
-# ::snt We saw one eagle so coated in oil that one eagle so coated could n't fly .
+# ::snt We saw one eagle so coated in oil that one eagle so coated  could not fly
 (x2 / see-01
 	:ARG0 (x1 / we)
 	:ARG1 (x4 / eagle
 		:quant 1)
 	:ARG1 (x8 / oil
 		:mod (x6 / coat-01)
-		:ARG1-of (x16 / fly-01
-			:ARG1 (x11 / eagle
-				:quant 1
-				:mod (x13 / coat-01))
-			:mod (x14 / possible))))
+		:quant (x14 / possible
+			:domain (x16 / fly-01
+				:ARG1 (x11 / eagle
+					:quant 1
+					:mod (x13 / coat-01))))))
 
 # ::id 35
-# ::snt State and federal officials said the focus of the cleanup is moving southwest, following the drifting oil along the Alaska Peninsula through the Shelikof Strait east of Kodiak Island
+# ::snt State and federal officials said the focus of the cleanup is moving southwest , following the drifting oil along the Alaska Peninsula through the Shelikof Strait east of Kodiak Island
 (x5 / say-01
 	:ARG1 (x2 / and
 		:op1 (x1 / state)
@@ -719,7 +723,7 @@
 			:ARG2 (o / official))))
 
 # ::id 36
-# ::snt Oil has tainted the coast at least as far as Chignik, 525 miles southwest of Valdez
+# ::snt Oil has tainted the coast at least as far as Chignik , 525 miles southwest of Valdez
 (x3 / taint
 	:ARG0 (x1 / oil)
 	:ARG1 (x5 / coast)
@@ -733,7 +737,7 @@
 				:op1 "Valdez"))))
 
 # ::id 37
-# ::snt The tanker is undergoing preliminary repairs in the sound, and is to be moved next month to Portland, Ore., home of the only drydock on the West Coast capable of handling the 987-foot ship
+# ::snt The tanker is undergoing preliminary repairs in the sound , and is to be moved next month to Portland , Ore. , home of the only drydock on the West Coast capable of handling the 987-foot ship
 (x11 / and
 	:op1 (x4 / undergo-01
 		:ARG1 (x2 / tanker)
@@ -762,7 +766,7 @@
 								:mod (x36 / 987-foot)))))))))
 
 # ::id 38
-# ::snt In the tanker proposal, Exxon said the proposal within a week wants to burn or bury the sludge recovered in the cleanup, which may require exemptions from Alaska environmental law
+# ::snt In the tanker  proposal , Exxon said the proposal within a week  wants to burn or bury the sludge recovered in the cleanup , which may require exemptions from Alaska environmental law
 (x4 / thing
 	:ARG1-of (p / propose-01)
 	:topic (x3 / tanker)
@@ -788,7 +792,7 @@
 			:op2 (x17 / bury-01))))
 
 # ::id 39
-# ::snt But Bill Lamoreaux, the ranking state environmental officer at the spill, said the laws would not be relaxed
+# ::snt But Bill Lamoreaux , the ranking state environmental officer at the spill , said the laws would not be relaxed
 (x1 / contrast-01
 	:ARG2 (x14 / say-01
 		:ARG0 (x3 / person
@@ -806,63 +810,66 @@
 			:ARG1 (x16 / law))))
 
 # ::id 40
-# ::snt " The general feeling is that we would expect that they would comply with the environmental laws, " Lamoreaux said
-(x21 / say-01
-	:ARG1 (x4 / feel-01
-		:mod (x3 / general)
-		:ARG1-of (x9 / expect-01
-			:ARG0 (x7 / we)
-			:ARG1 (x13 / comply-01
-				:ARG1 (x17 / law
-					:mod (x16 / environment)))))
-	:ARG0 (x20 / person
+# ::snt The general feeling is that we would expect that they would comply with the environmental laws , Lamoreaux said
+(x19 / say-01
+	:ARG1 (x3 / feel-01
+		:mod (x2 / general)
+		:ARG1-of (x8 / expect-01
+			:ARG0 (x6 / we)
+			:ARG1 (x12 / comply-01
+				:ARG1 (x16 / law
+					:mod (x15 / environment)))))
+	:ARG0 (x18 / person
 		:name (n / name
 			:op1 "Lamoreaux")))
 
 # ::id 41
-# ::snt Exxon's plan also notes that 191 miles of coastline it describes as " lightly oiled " may be left untouched to be cleansed naturally by wind and water
+# ::snt Exxon's plan also notes that 191 miles of coastline it describes as lightly oiled may be left untouched to be cleansed naturally by wind and water
 (x5 / note-01
 	:ARG0 (x3 / plan-01
 		:ARG0 (x1 / organization
 			:name (n / name
 				:op1 "Exxon")))
 	:mod (x4 / also)
-	:ARG1 (x18 / possible
-		:domain (x20 / leave-06
+	:ARG1 (x16 / possible
+		:domain (x18 / leave-06
 			:ARG0 (x10 / coastline
 				:mod (x8 / distance-quantity
 					:unit (m / mile))
 				:ARG0-of (x12 / describe-01
-					:ARG2 (x16 / oil
-						:mod (x15 / light))))
-			:ARG0 (x28 / and
-				:manner (x25 / natural)
-				:op1 (x27 / wind)
-				:op2 (x29 / water)))))
+					:ARG2 (x15 / oil
+						:mod (x14 / light))))
+			:ARG0 (x26 / and
+				:manner (x23 / natural)
+				:op1 (x25 / wind)
+				:op2 (x27 / water)))))
 
 # ::id 42
-# ::snt 
-(x19 / mean-01
-	:ARG1 (x2 / say-01
-		:ARG0 (x1 / person
-			:name (n / name
-				:op1 "Lamoreaux"))
-		:time (x7 / talk-01
-			:ARG0 (x6 / we)
-			:ARG1 (x11 / oiling
-				:mod (x10 / light))))
-	:ARG0 (x16 / plan-01)
-	:ARG1 (x25 / have-03
-		:ARG1 (x28 / effect-01
-			:ARG1 (x22 / plan-01
-				:ARG0 (x20 / organization
-					:name (n1 / name
-						:op1 "Exxon")))
-			:mod (x27 / devastate-01)
-			:ARG1 (x30 / wildlife))))
+# ::snt Lamoreaux said , When we talk about light oiling , Exxon's plan  does not mean Exxon's plan  wo not have a devastating effect on wildlife
+(x2 / say-01
+	:ARG0 (x1 / person
+		:name (n / name
+			:op1 "Lamoreaux"))
+	:ARG1 (x16 / mean-01
+		:time (x6 / talk-01
+			:ARG0 (x5 / we)
+			:ARG1 (x9 / oiling
+				:mod (x8 / light)))
+		:ARG0 (x13 / plan-01
+			:ARG0 (x11 / organization
+				:name (n1 / name
+					:op1 "Exxon")))
+		:ARG1 (x22 / have-03
+			:ARG1 (x25 / effect-01
+				:ARG1 (x19 / plan-01
+					:ARG0 (x17 / organization
+						:name (n2 / name
+							:op1 "Exxon")))
+				:mod (x24 / devastate-01)
+				:ARG1 (x27 / wildlife)))))
 
 # ::id 43
-# ::snt U.S. Sens. James Exon and Bob Kerrey, both Nebraska Democrats, called on U.S. Attorney General Dick Thornburgh to investigate potential price gouging by the oil industry
+# ::snt U.S. Sens. James Exon and Bob Kerrey , both Nebraska Democrats , called on U.S. Attorney General Dick Thornburgh to investigate potential price gouging by the oil industry
 (x13 / call-01
 	:ARG0 (x5 / and
 		:op1 (x3 / newspaper
@@ -899,7 +906,7 @@
 				:mod (x27 / oil)))))
 
 # ::id 44
-# ::snt U.S. Sens. James Exon and Bob Kerrey , both Nebraska Democrats noted that gas prices in Nebraska rose 20 percent from the first of March until mid-April
+# ::snt U.S. Sens. James Exon and Bob Kerrey , both Nebraska Democrats  noted that gas prices in Nebraska rose 20 percent from the first of March until mid-April
 (x12 / note-01
 	:ARG0 (x5 / and
 		:op1 (x3 / newspaper
@@ -931,7 +938,7 @@
 		:ARG4 (x27 / mid-april)))
 
 # ::id 45
-# ::snt State attorneys general in Washington, Oregon and Idaho echoed the call
+# ::snt State attorneys general in Washington , Oregon and Idaho echoed the call
 (x10 / echo
 	:ARG0 (x2 / attorney
 		:mod (x1 / state)
@@ -949,7 +956,7 @@
 	:ARG1 (x12 / call-03))
 
 # ::id 46
-# ::snt Since the Exxon Valdez accident, gas prices have increased an average 10 percent nationally, while the Northwest saw surges as high as 25 percent in less than a month, said Marla Rae, executive assistant to Oregon Attorney General Dave Frohnmayer
+# ::snt Since the Exxon Valdez accident , gas prices have increased an average 10 percent nationally , while the Northwest saw surges as high as 25 percent in less than a month , said Marla Rae , executive assistant to Oregon Attorney General Dave Frohnmayer
 (x10 / increase-01
 	:time (x1 / since
 		:op1 (x5 / accident
@@ -990,7 +997,7 @@
 			:ARG1 (x7 / gas))))
 
 # ::id 47
-# ::snt At a news conference in Houston, Exxon President Stevens said a news conference in Houston showed " shocking naivete " to blame the price hikes on Exxon President William D. Stevens company
+# ::snt At a news conference in Houston , Exxon President Stevens said a news conference in Houston  showed shocking naivete to blame the price hikes on Exxon President William D. Stevens  company
 (x11 / say-01
 	:time (x4 / conference
 		:mod (x3 / news)
@@ -1011,52 +1018,52 @@
 			:location (x16 / country
 				:name (n3 / name
 					:op1 "Houston")))
-		:ARG1 (x23 / blame-01
-			:ARG0 (x20 / naivete
-				:mod (x19 / shock-01))
-			:ARG2 (x26 / hike
-				:ARG1-of (x25 / price-01))
-			:ARG2 (x33 / company
-				:mod (x28 / organization
+		:ARG1 (x19 / naivete
+			:mod (x18 / shock-01))
+		:ARG1 (x21 / blame-01
+			:ARG2 (x24 / hike
+				:ARG1-of (x23 / price-01))
+			:ARG2 (x31 / company
+				:mod (x26 / organization
 					:name (n4 / name
 						:op1 "Exxon"))
-				:null_edge (x29 / have-org-role-91
+				:null_edge (x27 / have-org-role-91
 					:ARG2 (p1 / president))
-				:mod (x30 / person
+				:mod (x28 / person
 					:name (n5 / name
 						:op1 "William"))
-				:mod (x31 / person
+				:mod (x29 / person
 					:name (n6 / name
 						:op1 "D."))
-				:mod (x32 / person
+				:mod (x30 / person
 					:name (n7 / name
 						:op1 "Stevens"))))))
 
 # ::id 48
-# ::snt " As Exxon President William D. Stevens know, " Exxon Valdez told reporters, " the market for petroleum products is set by thousands of markets, thousands of independent dealers across the nation .
-(x23 / set-03
-	:ARG2 (x13 / tell-01
-		:ARG1 (x8 / know-01
-			:ARG0 (x5 / person
-				:name (n1 / name
-					:op1 "William"
-					:op2 "D."
-					:op3 "Stevens")
-				:ARG0-of (x4 / have-org-role-91
-					:ARG2 (p / president))))
-		:ARG0 (x12 / person
+# ::snt As Exxon President William D. Stevens  know , Exxon Valdez  told reporters , the market for petroleum products is set by thousands of markets , thousands of independent dealers across the nation
+(x20 / set-03
+	:ARG2 (x11 / tell-01
+		:ARG0 (x10 / person
 			:name (n / name
-				:op1 "Valdez"))
-		:ARG2 (x14 / person
+				:op1 "Valdez")
+			:condition (x7 / know-01
+				:ARG0 (x4 / person
+					:name (n1 / name
+						:op1 "William"
+						:op2 "D."
+						:op3 "Stevens")
+					:ARG0-of (x3 / have-org-role-91
+						:ARG2 (p / president)))))
+		:ARG2 (x12 / person
 			:ARG0-of (r / report-01)))
-	:ARG1 (x18 / market
-		:ARG1 (x21 / product
-			:mod (x20 / petroleum)))
-	:location (x27 / market
-		:example (x32 / person
+	:ARG1 (x15 / market
+		:ARG1 (x18 / product
+			:mod (x17 / petroleum)))
+	:location (x24 / market
+		:example (x29 / person
 			:ARG0-of (d / deal-01)
-			:ARG0-of (x31 / depend-01
+			:ARG0-of (x28 / depend-01
 				:polarity -)
-			:location (x33 / across
-				:op1 (x35 / nation)))))
+			:location (x30 / across
+				:op1 (x32 / nation)))))
 

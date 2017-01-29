@@ -1,5 +1,5 @@
 # ::id 1
-# ::snt A Long Beach-bound Exxon oil tanker ran aground on a reef Friday and spilled an estimated 8.4 million gallons of crude oil into Alaska's Prince William Sound, a pristine Pacific waterway heavily used by kayakers, fishermen and tourists
+# ::snt A Long Beach-bound Exxon oil tanker ran aground on a reef Friday and spilled an estimated 8.4 million gallons of crude oil into Alaska's Prince William Sound , a pristine Pacific waterway heavily used by kayakers , fishermen and tourists
 (x13 / and
 	:op1 (x7 / run-02
 		:ARG0 (x6 / tanker
@@ -49,7 +49,7 @@
 	:time (x8 / ever))
 
 # ::id 3
-# ::snt The Exxon Valdez, a 987-foot tanker owned by Exxon Shipping Co., rammed the reef about 25 miles from the city of Valdez, the northernmost ice-free port in the United States, at 12:30 a.m. Coast Guard officers speculated that the ship's captain may have been trying to avoid icebergs from the nearby Columbia Glacier when the accident occurred
+# ::snt The Exxon Valdez , a 987-foot tanker owned by Exxon Shipping Co. , rammed the reef about 25 miles from the city of Valdez , the northernmost ice-free port in the United States , at 12:30 a.m. Coast Guard officers speculated that the ship's captain may have been trying to avoid icebergs from the nearby Columbia Glacier when the accident occurred
 (x14 / ram
 	:ARG0 (x3 / valdez
 		:null_edge (x7 / tanker
@@ -102,7 +102,7 @@
 					:time (x61 / accident))))))
 
 # ::id 4
-# ::snt Leak a Mere Trickle A representative of the U.S. Fish and Wildlife Service said the tanker had been spilling oil at a rate of 10,000 barrels an hour but the Coast Guard said the leak had become a mere trickle by 2:30 p.m., Alaska time
+# ::snt Leak a Mere Trickle A representative of the U.S. Fish and Wildlife Service said the tanker had been spilling oil at a rate of 10,000 barrels an hour but the Coast Guard said the leak had become a mere trickle by 2:30 p.m. , Alaska time
 (x1 / leak-01
 	:ARG1 (x4 / trickle
 		:ARG0-of (x14 / say-01
@@ -135,7 +135,7 @@
 								:null_edge (x42 / include-91)))))))))
 
 # ::id 5
-# ::snt U.S. Coast Guard Petty Officer John Gonzales said in a telephone interview from Valdez that the spill was staying " in the mid-channel " and did not seem to be moving toward the shore
+# ::snt 
 (x8 / say-01
 	:ARG0 (x6 / person
 		:name (n / name
@@ -155,44 +155,42 @@
 		:ARG0 (x14 / country
 			:name (n2 / name
 				:op1 "Valdez")))
-	:ARG1 (x25 / and
+	:ARG1 (x23 / and
 		:op1 (x19 / stay-01
-			:location (x23 / mid-channel))
-		:op2 (x28 / seem-01
-			:ARG1 (x31 / move-01
-				:ARG1 (x34 / shore)))))
+			:location (x22 / mid-channel))
+		:op2 (x26 / seem-01
+			:ARG1 (x29 / move-01
+				:ARG1 (x32 / shore)))))
 
 # ::id 6
-# ::snt " Guard officers 've had no report of any wildlife hurt at this time, " U.S. Coast Guard Petty Officer John Gonzales said
-(x24 / say-01
-	:ARG0 (x3 / have-org-role-91
+# ::snt Guard officers  have had no report of any wildlife hurt at this time , U.S. Coast Guard Petty Officer John Gonzales  said
+(x22 / say-01
+	:ARG0 (x2 / have-org-role-91
 		:ARG2 (o / officer)
-		:mod (x2 / guard))
-	:ARG1 (x5 / person
+		:mod (x1 / guard))
+	:ARG1 (x4 / person
 		:ARG0-of (h / have-org-role-91)
-		:ARG1 (x7 / report-01
+		:ARG1 (x6 / report-01
 			:polarity -
-			:mod (x10 / wildlife
-				:mod (x9 / any)
-				:ARG1-of (x11 / hurt-01
-					:time (x14 / time
-						:mod (x13 / this))))))
-	:ARG0 (x22 / person
+			:mod (x9 / wildlife
+				:mod (x8 / any)
+				:ARG1-of (x10 / hurt-01
+					:time (x13 / time
+						:mod (x12 / this))))))
+	:ARG0 (x17 / guard
+		:null_edge (x15 / country
+			:name (n1 / name
+				:op1 "U.S."))
+		:mod (x16 / coast))
+	:ARG0 (x20 / person
 		:name (n / name
 			:op1 "John"
 			:op2 "Gonzales")
-		:ARG0-of (x18 / have-org-role-91
-			:ARG1 (m / military
-				:name (n1 / name
-					:op1 "Coast")))
-		:ARG0-of (x20 / petty
-			:ARG1 (x19 / organization
-				:name (n2 / name
-					:op1 "Guard")))
-		:ARG0-of (x21 / officer)))
+		:ARG0-of (x18 / petty)
+		:ARG0-of (x19 / officer)))
 
 # ::id 7
-# ::snt But environmentalists feared that if the oil reached the shore, marine birds would be threatened
+# ::snt 
 (x1 / contrast-01
 	:ARG2 (x3 / fear-01
 		:ARG0 (x2 / have-org-role-91
@@ -221,7 +219,7 @@
 			:beneficiary (x17 / feast))))
 
 # ::id 9
-# ::snt Environmentalists also expressed concern about whales, sea lions and other wildlife
+# ::snt Environmentalists also expressed concern about whales , sea lions and other wildlife
 (x3 / express-01
 	:ARG0 (x1 / have-org-role-91
 		:ARG2 (e / environmentalist))
@@ -235,7 +233,7 @@
 				:mod (x11 / other)))))
 
 # ::id 10
-# ::snt Twenty people were aboard the ship but there were no immediate reports of injuries, said Dave Parish, a spokesman for Exxon USA, in a telephone interview from Anchorage
+# ::snt Twenty people were aboard the ship but there were no immediate reports of injuries , said Dave Parish , a spokesman for Exxon USA , in a telephone interview from Anchorage
 (x16 / say-01
 	:ARG1 (x7 / contrast-01
 		:ARG2 (x4 / aboard
@@ -260,7 +258,7 @@
 				:op1 "Anchorage"))))
 
 # ::id 11
-# ::snt Dave Parish said three planes from British Columbia, California and England had been dispatched to the scene for aerial spraying to dilute the oil
+# ::snt Dave Parish  said three planes from British Columbia , California and England had been dispatched to the scene for aerial spraying to dilute the oil
 (x3 / say-01
 	:ARG0 (x1 / newspaper
 		:name (n / name
@@ -300,7 +298,7 @@
 		:ARG2 (x8 / sea)))
 
 # ::id 13
-# ::snt Another Exxon tanker was attempting to pump the oil out of the crippled vessel, and two Coast Guard investigators were on board the Valdez, U.S. Coast Guard Petty Officer John Gonzales said
+# ::snt Another Exxon tanker was attempting to pump the oil out of the crippled vessel , and two Coast Guard investigators were on board the Valdez , U.S. Coast Guard Petty Officer John Gonzales  said
 (x34 / say-01
 	:ARG1 (x16 / and
 		:op1 (x5 / attempt-01
@@ -337,7 +335,7 @@
 		:ARG0-of (x31 / officer)))
 
 # ::id 14
-# ::snt Jon Nelson, a deputy regional director of the U.S. Fish and Wildlife Service in Anchorage, said the reef ripped a 150-foot gash in the vessel, which was carrying 1.2 million barrels of oil, and there was fear that the tanker could break apart further
+# ::snt Jon Nelson , a deputy regional director of the U.S. Fish and Wildlife Service in Anchorage , said the reef ripped a 150-foot gash in the vessel , which was carrying 1.2 million barrels of oil , and there was fear that the tanker could break apart further
 (x18 / say-01
 	:ARG0 (x1 / newspaper
 		:name (n / name
@@ -373,24 +371,24 @@
 						:degree (x48 / further)))))))
 
 # ::id 15
-# ::snt " If the U.S. Fish breaks up on the rocks, then anything could happen, " Jon Nelson said in a telephone interview
-(x20 / say-01
-	:ARG1 (x14 / possible
-		:domain (x15 / happen-01
-			:condition (x6 / break-01
-				:ARG0 (x5 / fish
-					:mod (x4 / country
+# ::snt If the U.S. Fish  breaks up on the rocks , then anything could happen , Jon Nelson  said in a telephone interview
+(x18 / say-01
+	:ARG1 (x13 / possible
+		:domain (x14 / happen-01
+			:condition (x5 / break-01
+				:ARG0 (x4 / fish
+					:mod (x3 / country
 						:name (n1 / name
 							:op1 "U.S.")))
-				:ARG1 (x10 / rock))
-			:ARG1 (x13 / anything
-				:time (x12 / then))))
-	:ARG0 (x18 / newspaper
+				:ARG1 (x9 / rock))
+			:ARG1 (x12 / anything
+				:time (x11 / then))))
+	:ARG0 (x16 / newspaper
 		:name (n / name
 			:op1 "Jon"
 			:op2 "Nelson"))
-	:time (x24 / interview-01
-		:mod (x23 / telephone)))
+	:time (x22 / interview-01
+		:mod (x21 / telephone)))
 
 # ::id 16
 # ::snt The seas were calm Friday and the forecast was for continued calm until Sunday
@@ -421,15 +419,16 @@
 		:ARG1 (x13 / cleanup)))
 
 # ::id 18
-# ::snt Critical of Efforts " Where was the crackerjack response team that was supposed to be out there
-(x10 / team
-	:ARG0-of (x9 / respond-01
-		:ARG1 (x3 / effort))
-	:ARG0-of (x13 / suppose-02))
+# ::snt Critical of Efforts Where was the crackerjack response team that was supposed to be out there ?
+(x1 / criticize-01
+	:ARG1 (x3 / effort)
+	:ARG1 (x9 / team
+		:ARG0-of (x8 / respond-01)
+		:ARG1-of (x12 / suppose-02)))
 
 # ::id 19
-# ::snt local residents and environmentalists are moving way too slowly, " said University of Alaska professor Richard Steiner, who flew over the slick Friday
-(x12 / say-01
+# ::snt local residents and environmentalists  are moving way too slowly , said University of Alaska professor Richard Steiner , who flew over the slick Friday
+(x11 / say-01
 	:ARG1 (x6 / move-01
 		:ARG0 (x3 / and
 			:op1 (x2 / person
@@ -440,69 +439,70 @@
 		:ARG1 (x7 / way)
 		:manner (x9 / slow
 			:degree (x8 / too)))
-	:ARG0 (x18 / person
+	:ARG0 (x17 / person
 		:name (n / name
 			:op1 "Steiner")
-		:null_edge (x13 / null_tag
-			:location (x15 / state
+		:null_edge (x12 / null_tag
+			:location (x14 / state
 				:name (n1 / name
 					:op1 "Alaska")))
-		:null_edge (x16 / have-org-role-91
+		:null_edge (x15 / have-org-role-91
 			:ARG2 (p / professor))
-		:null_edge (x17 / null_tag)
-		:ARG1-of (x21 / fly-01
-			:ARG2 (x24 / slick)
+		:null_edge (x16 / null_tag)
+		:ARG1-of (x20 / fly-01
+			:ARG2 (x23 / slick)
 			:time (xap0 / date-entity
-				:weekday (x25 / friday)))))
+				:weekday (x24 / friday)))))
 
 # ::id 20
-# ::snt " There (was )no oil (cleanup equipment )out there and 14 hours's been 14 hours since 14 hours happened
-(x14 / and
-	:location (x12 / out
-		:op1 (x13 / there))
-	:op2 (x24 / happen-01
-		:ARG1 (x16 / temporal-quantity
-			:unit (h / hour)
-			:quant 14)
-		:ARG1 (x20 / temporal-quantity
+# ::snt There (was )no oil (cleanup equipment )out there and 14 hours  is been 14 hours since 14 hours  happened
+(x13 / and
+	:location (x11 / out
+		:op1 (x12 / there))
+	:op2 (x19 / temporal-quantity
+		:unit (h / hour)
+		:ARG1 (x15 / temporal-quantity
 			:unit (h1 / hour)
 			:quant 14)
-		:time (x21 / since
-			:op1 (x23 / temporal-quantity
-				:unit (h2 / hour)
-				:quant 14)))
+		:quant 14
+		:time (x20 / since
+			:op1 (x23 / thing
+				:ARG1-of (h2 / happen-01)
+				:ARG1 (x22 / temporal-quantity
+					:unit (h3 / hour)
+					:quant 14))))
 	:op1 (xap0 / and
-		:ARG1 (x9 / cleanup)
-		:ARG1 (x10 / equipment
-			:domain (x7 / oil
+		:ARG1 (x8 / cleanup)
+		:ARG1 (x9 / equipment
+			:domain (x6 / oil
 				:polarity -))))
 
 # ::id 21
-# ::snt " 14 hours is huge, literally huge, " Richard Steiner said in a telephone interview from Cordova
-(x13 / say-01
-	:ARG1 (x8 / huge
-		:domain (x3 / temporal-quantity
+# ::snt 14 hours  is huge , literally huge , Richard Steiner  said in a telephone interview from Cordova
+(x11 / say-01
+	:ARG1 (x7 / huge
+		:domain (x2 / temporal-quantity
 			:unit (h / hour)
 			:quant 14)
-		:mod (x5 / huge)
-		:mod (x7 / literal))
-	:ARG0 (x12 / person
+		:mod (x4 / huge)
+		:mod (x6 / literal))
+	:ARG0 (x10 / person
 		:name (n / name
 			:op1 "Steiner")
-		:null_edge (x11 / null_tag))
-	:time (x17 / interview-01
-		:mod (x16 / telephone)
-		:ARG0 (x19 / person
+		:null_edge (x9 / null_tag))
+	:time (x15 / interview-01
+		:mod (x14 / telephone)
+		:ARG0 (x17 / person
 			:name (n1 / name
 				:op1 "Cordova"))))
 
 # ::id 22
-# ::snt " 14 hours looks devastating
-(x4 / look-02
-	:ARG1 (x3 / temporal-quantity
+# ::snt 14 hours  looks devastating
+(x3 / look-02
+	:ARG1 (x2 / temporal-quantity
 		:unit (h / hour)
 		:quant 14)
-	:ARG1 (x5 / devastate-01))
+	:ARG1 (x4 / devastate-01))
 
 # ::id 23
 # ::snt The slick is probably five miles long by three miles wide
@@ -518,13 +518,13 @@
 			:quant 3)))
 
 # ::id 24
-# ::snt Fortunately, there is no wind ...
+# ::snt Fortunately , there is no wind ...
 (x6 / wind
 	:time (x1 / fortunate-41)
 	:polarity -)
 
 # ::id 25
-# ::snt We saw six sea lions inside the slick, swimming, trying to avoid it, and they had no idea which way to go .
+# ::snt We saw six sea lions inside the slick , swimming , trying to avoid it , and they had no idea which way to go
 (x17 / and
 	:op1 (x2 / see-01
 		:ARG0 (x1 / we)
@@ -545,7 +545,7 @@
 				:instrument-of (x25 / go-02)))))
 
 # ::id 26
-# ::snt Cindy Lowry, Alaska regional director for Greenpeace, also complained about the pace of the cleanup
+# ::snt Cindy Lowry , Alaska regional director for Greenpeace , also complained about the pace of the cleanup
 (x11 / complain-01
 	:ARG0 (x1 / newspaper
 		:name (n / name
@@ -562,23 +562,23 @@
 		:ARG1 (x17 / cleanup)))
 
 # ::id 27
-# ::snt " Alaska's is more than 12 hours later and there is no (cleanup )boom, no sweepers
-(x10 / and
-	:op2 (x2 / state
-		:name (n / name
-			:op1 "Alaska")
-		:location-of (x17 / boom-02
+# ::snt Alaska's  is more than 12 hours later and there is no (cleanup )boom , no sweepers
+(x9 / and
+	:op1 (x7 / temporal-quantity
+		:unit (h / hour)
+		:domain (x1 / state
+			:name (n / name
+				:op1 "Alaska"))
+		:time (x8 / late
+			:op1 (x4 / date-entity))
+		:time-of (x16 / boom-02
 			:polarity -
-			:ARG1 (x15 / cleanup)
-			:ARG1 (x20 / sweeper
-				:polarity -)))
-	:time (x9 / late
-		:op1 (x5 / date-entity)
-		:op1 (x8 / temporal-quantity
-			:unit (h / hour))))
+			:ARG1 (x14 / cleanup)
+			:ARG1 (x19 / sweeper
+				:polarity -))))
 
 # ::id 28
-# ::snt no sweepers are bringing equipment from as far away as England
+# ::snt no sweepers  are bringing equipment from as far away as England
 (x4 / bring-01
 	:ARG0 (x2 / sweeper
 		:polarity -)
@@ -589,7 +589,7 @@
 		:mod (x8 / far)))
 
 # ::id 29
-# ::snt 
+# ::snt It is just absurd that the equipment is not here already ...
 (x4 / absurd
 	:mod (x3 / just)
 	:ARG1 (x7 / equipment
@@ -597,7 +597,7 @@
 		:time (x11 / already)))
 
 # ::id 30
-# ::snt This will affect everything in the food chain, from crab larvae to orca whales .
+# ::snt This will affect everything in the food chain , from crab larvae to orca whales
 (x3 / affect-01
 	:ARG0 (x1 / this)
 	:ARG1 (x4 / everything
@@ -620,21 +620,21 @@
 			:mod (x6 / possible))))
 
 # ::id 32
-# ::snt " Dave Parish , a spokesman for Exxon USA takes time to get activated, " he said
-(x18 / say-01
-	:ARG1 (x14 / activate-01
-		:ARG1 (x10 / take-04
-			:ARG0 (x2 / newspaper
+# ::snt Dave Parish , a spokesman for Exxon USA  takes time to get activated , he said
+(x16 / say-01
+	:ARG1 (x13 / activate-01
+		:ARG1 (x9 / take-04
+			:ARG0 (x1 / newspaper
 				:name (n / name
 					:op1 "Dave"
 					:op2 "Parish")
-				:ARG0-of (x6 / have-org-role-91
+				:ARG0-of (x5 / have-org-role-91
 					:ARG2 (s / spokesman)
-					:ARG1 (x8 / government-organization
+					:ARG1 (x7 / government-organization
 						:name (n1 / name
 							:op1 "Exxon"
 							:op2 "USA"))))))
-	:ARG0 (x17 / he))
+	:ARG0 (x15 / he))
 
 # ::id 33
 # ::snt The immediate response to the spill was handled by crews from the terminal at Valdez
@@ -648,7 +648,7 @@
 					:op1 "Valdez")))))
 
 # ::id 34
-# ::snt Floating Oil Booms Gonzales, the Coast Guard spokesman, said the terminal has cleanup equipment on site for minor spills
+# ::snt Floating Oil Booms Gonzales , the Coast Guard spokesman , said the terminal has cleanup equipment on site for minor spills
 (x11 / say-01
 	:ARG0 (x4 / person
 		:name (n / name
@@ -674,7 +674,7 @@
 				:mod (x20 / minor)))))
 
 # ::id 35
-# ::snt U.S. Coast Guard Petty Officer John Gonzales said employees of the Alyeska Pipeline Service Co., which operates the trans-Alaska oil pipeline for a consortium of oil companies, were getting floating oil booms in place by late afternoon
+# ::snt U.S. Coast Guard Petty Officer John Gonzales  said employees of the Alyeska Pipeline Service Co. , which operates the trans-Alaska oil pipeline for a consortium of oil companies , were getting floating oil booms in place by late afternoon
 (x8 / say-01
 	:ARG0 (x6 / person
 		:name (n / name
@@ -715,7 +715,7 @@
 				:dayperiod (x39 / afternoon)))))
 
 # ::id 36
-# ::snt Prince William Sound, home to orcas, sea otters and fur seals, is important to both the fishing and the recreation industries
+# ::snt Prince William Sound , home to orcas , sea otters and fur seals , is important to both the fishing and the recreation industries
 (x16 / important
 	:domain (x3 / person
 		:name (n / name
@@ -739,60 +739,59 @@
 			:mod (x23 / recreation))))
 
 # ::id 37
-# ::snt " a pretty well-established tourist attraction's a gorgeous marine environment and ecosystem, with lots of little islands and inlets and bays, " said Emily Barneet, Alaska issues specialist for the Sierra Club in Anchorage
-(x26 / say-01
-	:ARG1 (x12 / and
-		:op1 (x11 / environment
-			:domain (x6 / attract-01
-				:mod (x5 / person
+# ::snt a pretty well-established tourist attraction  is a gorgeous marine environment and ecosystem , with lots of little islands and inlets and bays , said Emily Barneet , Alaska issues specialist for the Sierra Club in Anchorage
+(x24 / say-01
+	:ARG1 (x11 / and
+		:op1 (x10 / environment
+			:domain (x5 / attract-01
+				:mod (x4 / person
 					:ARG0-of (t / tour-01)
-					:mod (x4 / well-established
-						:null_edge (x3 / pretty))))
-			:mod (x10 / have-org-role-91
+					:mod (x3 / well-established
+						:null_edge (x2 / pretty))))
+			:mod (x9 / have-org-role-91
 				:ARG2 (m / marine))
-			:location-of (x16 / lots)
-			:location-of (x22 / and
-				:mod (x18 / little)
-				:op1 (x20 / and)
-				:op1 (x21 / inlet)
-				:op2 (x23 / bay)))
-		:op2 (x13 / ecosystem))
-	:ARG0 (x27 / newspaper
-		:name (n / name
-			:op1 "Emily"
-			:op2 "Barneet")
-		:ARG0-of (x32 / person
+			:location-of (x15 / lots)
+			:location-of (x21 / and
+				:mod (x17 / little)
+				:op1 (x19 / and)
+				:op1 (x20 / inlet)
+				:op2 (x22 / bay)))
+		:op2 (x12 / ecosystem))
+	:name (x25 / name
+		:op1 "Emily"
+		:op2 "Barneet"
+		:ARG0-of (x30 / person
 			:ARG0-of (s / specialize-01)
-			:ARG1 (x31 / issue)
-			:ARG2 (x35 / government-organization
-				:name (n1 / name
+			:ARG1 (x29 / issue)
+			:ARG2 (x33 / government-organization
+				:name (n / name
 					:op1 "Sierra"
 					:op2 "Club")
-				:location (x38 / country
-					:name (n2 / name
+				:location (x36 / country
+					:name (n1 / name
 						:op1 "Anchorage"))))))
 
 # ::id 38
-# ::snt " a pretty well-established tourist attraction's also a pretty well-established tourist attraction, with sailing and glacier viewing trips
-(x13 / attract-01
-	:domain (x6 / attract-01
-		:mod (x5 / person
+# ::snt a pretty well-established tourist attraction  is also a pretty well-established tourist attraction , with sailing and glacier viewing trips
+(x12 / attract-01
+	:domain (x5 / attract-01
+		:mod (x4 / person
 			:ARG0-of (t1 / tour-01)
-			:mod (x4 / well-established
-				:null_edge (x3 / pretty))))
-	:mod (x8 / also)
-	:mod (x12 / person
+			:mod (x3 / well-established
+				:null_edge (x2 / pretty))))
+	:mod (x7 / also)
+	:mod (x11 / person
 		:ARG0-of (t / tour-01)
-		:mod (x11 / well-established
-			:degree (x10 / pretty)))
-	:ARG1 (x20 / trip
-		:location (x17 / and
-			:op1 (x16 / sailing)
-			:op2 (x18 / glacier)
-			:op1 (x19 / viewing))))
+		:mod (x10 / well-established
+			:degree (x9 / pretty)))
+	:ARG1 (x19 / trip
+		:location (x16 / and
+			:op1 (x15 / sailing)
+			:op2 (x17 / glacier)
+			:op1 (x18 / viewing))))
 
 # ::id 39
-# ::snt Prince William is a gem .
+# ::snt Prince William is a gem
 (x5 / gem
 	:domain (x2 / person
 		:name (n / name
@@ -800,7 +799,7 @@
 		:null_edge (x1 / prince)))
 
 # ::id 40
-# ::snt The spill is expected to add fuel to a campaign by environmentalists to prevent further oil development in Alaska, particularly in the Arctic National Wildlife Refuge
+# ::snt The spill is expected to add fuel to a campaign by environmentalists to prevent further oil development in Alaska , particularly in the Arctic National Wildlife Refuge
 (x4 / expect-01
 	:ARG1 (x6 / add-04
 		:ARG1 (x7 / fuel)
@@ -821,57 +820,56 @@
 			:mod (x21 / particular))))
 
 # ::id 41
-# ::snt " the largest Alaskan oil spill's of concern for two reasons : one is the size of the spill and that this is such a sensitive, very productive area, " said Lisa Speer, senior staff scientist with the Natural Resources Defense Council in New York
-(x34 / say-01
-	:ARG1 (x6 / spill-01
-		:mod (x3 / large
+# ::snt the largest Alaskan oil spill  is of concern for two reasons : one is the size of the spill and that this is such a sensitive , very productive area , said Lisa Speer , senior staff scientist with the Natural Resources Defense Council in New York
+(x32 / say-01
+	:ARG1 (x5 / spill-01
+		:mod (x2 / large
 			:degree (m / most))
-		:ARG1 (x4 / organization
-			:name (n1 / name
-				:op1 "Alaskan"))
-		:ARG1 (x5 / oil)
-		:ARG1 (x21 / and
-			:op2 (x9 / concern-01
-				:ARG1 (x12 / reason
+		:ARG1 (x4 / oil
+			:mod (x3 / organization
+				:name (n / name
+					:op1 "Alaskan")))
+		:ARG1 (x20 / and
+			:op2 (x8 / concern-01
+				:ARG1 (x11 / reason
 					:quant 2
-					:quant 1))
-			:op2 (x31 / area
-				:domain (x23 / this)
-				:mod (x25 / such)
-				:mod (x27 / sensitive)
-				:mod (x30 / productive
-					:degree (x29 / very)))))
-	:ARG0 (x35 / newspaper
-		:name (n / name
-			:op1 "Lisa"
-			:op2 "Speer")
-		:ARG0-of (x40 / scientist
-			:mod (x38 / senior)
-			:mod (x39 / person
-				:ARG2-of (s / staff-01))
-			:ARG1 (x43 / government-organization
-				:name (n2 / name
-					:op1 "Natural"
-					:op2 "Resources"
-					:op3 "Defense"
-					:op4 "Council")
-				:location (x49 / country
-					:name (n3 / name
-						:op1 "York")
-					:null_edge (x48 / null_tag))))))
+					:quant 1)
+				:ARG1 (x30 / area
+					:domain (x22 / this)
+					:mod (x24 / such)
+					:mod (x26 / sensitive)
+					:mod (x29 / productive
+						:degree (x28 / very)))
+				:ARG0 (x33 / name
+					:op1 "Lisa"
+					:op2 "Speer"
+					:ARG0-of (x38 / scientist
+						:mod (x36 / senior)
+						:mod (x37 / person
+							:ARG2-of (s / staff-01))
+						:ARG1 (x41 / government-organization
+							:name (n1 / name
+								:op1 "Natural"
+								:op2 "Resources"
+								:op3 "Defense"
+								:op4 "Council")
+							:location (x47 / country
+								:name (n2 / name
+									:op1 "York")
+								:null_edge (x46 / null_tag)))))))))
 
 # ::id 42
-# ::snt " This is a consequence of North Slope oil development that is rarely mentioned .
-(x5 / consequence
-	:domain (x2 / this)
-	:ARG1 (x10 / develop-02
-		:null_edge (x7 / null_tag)
-		:ARG1 (x9 / oil))
-	:ARG1-of (x14 / mention-01
-		:frequency (x13 / rare)))
+# ::snt This is a consequence of North Slope oil development that is rarely mentioned
+(x4 / consequence
+	:domain (x1 / this)
+	:ARG1 (x9 / develop-02
+		:null_edge (x6 / null_tag)
+		:ARG1 (x8 / oil))
+	:ARG1-of (x13 / mention-01
+		:frequency (x12 / rare)))
 
 # ::id 43
-# ::snt Valdez City Manager Doug Griffen told the Associated Press that the 800-mile trans-Alaska pipeline, which carries oil from Prudhoe Bay to Valdez and the marine terminal, has a good environmental record
+# ::snt Valdez City Manager Doug Griffen told the Associated Press that the 800-mile trans-Alaska pipeline , which carries oil from Prudhoe Bay to Valdez and the marine terminal , has a good environmental record
 (x6 / tell-01
 	:ARG0 (x4 / newspaper
 		:name (n / name
@@ -906,39 +904,42 @@
 			:mod (x32 / environment))))
 
 # ::id 44
-# ::snt Expected Worst " But this could be a catastrophic occurrence, so we 're concerned, " Valdez City Manager Doug Griffen said
-(x / xconcept
-	:x (x4 / contrast-01
-		:ARG2 (x2 / bad))
-	:x (x23 / say-01
-		:ARG1 (x6 / possible
-			:domain (x10 / occur-01
-				:domain (x5 / this)
-				:mod (x9 / catastrophic)))
-		:ARG1 (x15 / concern-01
-			:ARG0 (x1 / expect-01))
-		:ARG0 (x21 / newspaper
-			:name (n / name
-				:op1 "Doug"
-				:op2 "Griffen")
-			:ARG0-of (x18 / valdez)
-			:ARG0-of (x19 / city)
-			:ARG0-of (x20 / manager))))
+# ::snt Expected Worst But this could be a catastrophic occurrence , so we are concerned , Valdez City Manager Doug Griffen  said
+(x21 / say-01
+	:ARG1 (x5 / possible
+		:domain (x9 / occur-01
+			:domain (x2 / bad
+				:null_edge (x3 / contrast-01
+					:ARG2 (x1 / expect-01)
+					:op2 (x4 / this)))
+			:mod (x8 / catastrophic)
+			:ARG1-of (x14 / concern-01
+				:ARG1 x2
+				:ARG1 (x12 / we))))
+	:ARG0 (x19 / newspaper
+		:name (n / name
+			:op1 "Doug"
+			:op2 "Griffen")
+		:ARG0-of (x17 / city
+			:ARG1 (x16 / country
+				:name (n1 / name
+					:op1 "Valdez")))
+		:ARG0-of (x18 / manager)))
 
 # ::id 45
-# ::snt " Living in Valdez, we 've always worried that sometime something like this could happen .
-(x9 / worry-02
-	:ARG1 (x2 / live-01
-		:location (x4 / country
+# ::snt Living in Valdez , we have always worried that sometime something like this could happen
+(x8 / worry-02
+	:ARG1 (x1 / live-01
+		:location (x3 / country
 			:name (n / name
 				:op1 "Valdez")))
-	:ARG1 (x6 / we)
-	:time (x8 / always)
-	:ARG1 (x15 / possible
-		:domain (x12 / something
-			:mod (x11 / sometime)
+	:ARG1 (x5 / we)
+	:time (x7 / always)
+	:ARG1 (x14 / possible
+		:domain (x11 / something
+			:mod (x10 / sometime)
 			:ARG1-of (xap0 / resemble-01
-				:ARG2 (x14 / this)))))
+				:ARG2 (x13 / this)))))
 
 # ::id 46
 # ::snt Alaska Gov. Steve Cowper arrived in Valdez on Friday to evaluate the spill
@@ -960,7 +961,7 @@
 		:weekday (x9 / friday)))
 
 # ::id 47
-# ::snt Alaska Gov. Steve Cowper said that state officials were considering the use of chemicals to disperse and sink the oil
+# ::snt Alaska Gov. Steve Cowper  said that state officials were considering the use of chemicals to disperse and sink the oil
 (x5 / say-01
 	:ARG0 (x3 / newspaper
 		:name (n / name
@@ -983,37 +984,37 @@
 				:ARG1 (x7 / state)))))
 
 # ::id 48
-# ::snt " The problem is that chemical use can have a bad effect on marine life, " Alaska Gov. Steve Cowper said
-(x22 / say-01
-	:ARG0 (x20 / newspaper
+# ::snt The problem is that chemical use can have a bad effect on marine life , Alaska Gov. Steve Cowper  said
+(x20 / say-01
+	:ARG0 (x18 / newspaper
 		:name (n / name
 			:op1 "Steve"
 			:op2 "Cowper")
-		:ARG0-of (x19 / gov.
-			:ARG1 (x18 / state
+		:ARG0-of (x17 / gov.
+			:ARG1 (x16 / state
 				:name (n1 / name
 					:op1 "Alaska"))))
 	:ARG1 (xap0 / cause-01
-		:ARG1 (x8 / possible
-			:domain (x3 / problem)
-			:domain (x9 / have-03
-				:ARG0 (x7 / use-01
-					:ARG1 (x6 / chemical))
-				:ARG1 (x12 / effect-01
-					:mod (x11 / bad)
-					:ARG1 (x15 / life
-						:mod (x14 / have-org-role-91
+		:ARG1 (x7 / possible
+			:domain (x2 / problem)
+			:domain (x8 / have-03
+				:ARG0 (x6 / use-01
+					:ARG1 (x5 / chemical))
+				:ARG1 (x11 / effect-01
+					:mod (x10 / bad)
+					:ARG1 (x14 / life
+						:mod (x13 / have-org-role-91
 							:ARG2 (m / marine))))))))
 
 # ::id 49
-# ::snt " The problem's going to be a tough judgment call .
-(x11 / call-01
-	:domain (x3 / problem)
-	:mod (x9 / tough)
-	:ARG1 (x10 / judge-01))
+# ::snt The problem  is going to be a tough judgment call
+(x10 / call-01
+	:domain (x2 / problem)
+	:mod (x8 / tough)
+	:ARG1 (x9 / judge-01))
 
 # ::id 50
-# ::snt Cowper said that conventional responses, such as booms, probably would not work because the spill is so large
+# ::snt Cowper said that conventional responses , such as booms , probably would not work because the spill is so large
 (x2 / say-01
 	:ARG0 (x1 / person
 		:name (n / name
@@ -1028,26 +1029,26 @@
 				:ARG0 (x20 / large)))))
 
 # ::id 51
-# ::snt " You probably could n't do the largest Alaskan oil spill (contain the spill )with all the equipment available in North America
-(x3 / probable
-	:domain (x4 / possible
-		:domain (x6 / do-02
-			:ARG0 (x2 / you)
-			:ARG1 (x11 / spill-01
-				:mod (x8 / large
+# ::snt You probably could not do the largest Alaskan oil spill  (contain the spill )with all the equipment available in North America
+(x2 / probable
+	:domain (x3 / possible
+		:domain (x5 / do-02
+			:ARG0 (x1 / you)
+			:ARG1 (x10 / spill-01
+				:mod (x7 / large
 					:degree (m / most))
-				:ARG1 (x10 / oil
-					:mod (x9 / organization
+				:ARG1 (x9 / oil
+					:mod (x8 / organization
 						:name (n / name
 							:op1 "Alaskan")))
-				:ARG1 (x13 / contain-01))
-			:prep-with (x20 / equipment
-				:mod (x18 / all)
-				:mod (x21 / available
-					:location (x24 / country
+				:ARG1 (x12 / contain-01))
+			:prep-with (x19 / equipment
+				:mod (x17 / all)
+				:mod (x20 / available
+					:location (x23 / country
 						:name (n1 / name
 							:op1 "America")
-						:null_edge (x23 / null_tag)))))))
+						:null_edge (x22 / null_tag)))))))
 
 # ::id 52
 # ::snt This is a major spill by any reckoning
@@ -1058,19 +1059,20 @@
 		:mod (x7 / any)))
 
 # ::id 53
-# ::snt " We 've been able to brag for a long time that there's never been a major oil spill in Valdez Harbor
-(x5 / possible
-	:domain (x7 / brag
-		:ARG0 (x2 / we))
-	:domain (x20 / spill-01
-		:mod (x18 / major)
-		:ARG1 (x23 / harbor-01
-			:null_edge (x22 / country
+# ::snt We have been able to brag for a long time that there is never been a major oil spill in Valdez Harbor
+(x4 / possible
+	:domain (x6 / brag
+		:ARG0 (x1 / we))
+	:domain (x19 / spill-01
+		:mod (x17 / major)
+		:ARG1 (x18 / oil)
+		:ARG1 (x22 / harbor-01
+			:null_edge (x21 / country
 				:name (n / name
 					:op1 "Valdez")))))
 
 # ::id 54
-# ::snt Now, we ca n't do that anymore .
+# ::snt Now , we ca not do that anymore
 (x6 / do-02
 	:null_edge (x1 / now)
 	:ARG0 (x3 / we)

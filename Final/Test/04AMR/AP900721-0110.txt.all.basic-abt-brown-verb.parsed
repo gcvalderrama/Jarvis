@@ -26,7 +26,7 @@
 		:weekday (x3 / saturday)))
 
 # ::id 2
-# ::snt The weather forecast took a turn for the worse in the evening, when the Finnish Meteorological Services predicted cloudy weather with a chance of showers for eastern Finland on Sunday
+# ::snt The weather forecast took a turn for the worse in the evening , when the Finnish Meteorological Services predicted cloudy weather with a chance of showers for eastern Finland on Sunday
 (x3 / forecast-01
 	:ARG1 (x2 / weather)
 	:ARG1 (x6 / turn-14
@@ -46,7 +46,7 @@
 			:weekday (x31 / sunday))))
 
 # ::id 3
-# ::snt In the eastern town of Joensuu, a television news broadcast late Saturday showed the eastern town of Joensuu was already cloudy there with a light drizzle falling
+# ::snt In the eastern town of Joensuu , a television news broadcast late Saturday showed the eastern town of Joensuu  was already cloudy there with a light drizzle falling
 (x14 / show-01
 	:ARG0 (x11 / broadcast-01
 		:mod (x10 / news
@@ -86,7 +86,7 @@
 			:weekday (x10 / sunday))))
 
 # ::id 5
-# ::snt At that time, the moon will begin gradually moving between the Earth and the sun
+# ::snt At that time , the moon will begin gradually moving between the Earth and the sun
 (x8 / begin-01
 	:time (x3 / time
 		:mod (x2 / that))
@@ -114,7 +114,7 @@
 		:ARG1 (x13 / date-entity)))
 
 # ::id 7
-# ::snt After the total phase of the eclipse, the moon will move away, uncovering more and more of the sun
+# ::snt After the total phase of the eclipse , the moon will move away , uncovering more and more of the sun
 (xap0 / and
 	:op3 (x10 / moon)
 	:domain (x12 / move-01
@@ -139,7 +139,7 @@
 			:op1 "Helsinki")))
 
 # ::id 9
-# ::snt About 10,000 people _ including 3,000 foreigners _ have converged on Joensuu, about 50 miles from the Soviet border
+# ::snt About 10,000 people _ including 3,000 foreigners _ have converged on Joensuu , about 50 miles from the Soviet border
 (x4 / _
 	:ARG0 (x3 / people
 		:null_edge (x1 / about))
@@ -173,7 +173,7 @@
 					:mod (x12 / _))))))
 
 # ::id 11
-# ::snt In Helsinki, the total eclipse phase will occur 16 minutes after sunrise, when the sun is only 1 degree above the horizon
+# ::snt In Helsinki , the total eclipse phase will occur 16 minutes after sunrise , when the sun is only 1 degree above the horizon
 (x7 / phase
 	:location (x2 / city
 		:name (n / name
@@ -192,7 +192,7 @@
 					:op1 (x24 / horizon))))))
 
 # ::id 12
-# ::snt At Joensuu, 310 miles northeast of Helsinki, the sun will be 5 degrees above the horizon in the total phase at a better angle for watchers
+# ::snt At Joensuu , 310 miles northeast of Helsinki , the sun will be 5 degrees above the horizon in the total phase at a better angle for watchers
 (x11 / sun
 	:location (x2 / country
 		:name (n / name
@@ -238,7 +238,7 @@
 	:time (x8 / winter))
 
 # ::id 15
-# ::snt Ten months ago, Joensuu hired an " eclipse secretary " to handle arrangements for the expected influx of visitors
+# ::snt Ten months ago , Joensuu hired an eclipse secretary to handle arrangements for the expected influx of visitors
 (x6 / hire-01
 	:time (x2 / temporal-quantity
 		:unit (m / month)
@@ -246,18 +246,18 @@
 	:ARG0 (x5 / person
 		:name (n / name
 			:op1 "Joensuu"))
-	:ARG1 (x9 / eclipse-01
-		:ARG1 (x10 / have-org-role-91
-			:ARG2 (s / secretary)
-			:ARG1 (x13 / handle-01
-				:ARG1 (x14 / arrange-01
-					:ARG1 (x18 / flux-01
-						:ARG1-of (x17 / expect-01)
-						:ARG0 (x20 / person
-							:ARG0-of (v / visit-01))))))))
+	:ARG1 (x9 / have-org-role-91
+		:ARG2 (s / secretary)
+		:mod (x8 / eclipse-01)
+		:ARG1 (x11 / handle-01
+			:ARG1 (x12 / arrange-01
+				:ARG1 (x16 / flux-01
+					:ARG1-of (x15 / expect-01)
+					:ARG0 (x18 / person
+						:ARG0-of (v / visit-01)))))))
 
 # ::id 16
-# ::snt But that official, Marjut Cadia, said Joensuu had underestimated the interest in the event
+# ::snt But that official , Marjut Cadia , said Joensuu  had underestimated the interest in the event
 (x8 / say-01
 	:null_edge (x1 / contrast-01)
 	:ARG1 (x11 / underestimate-01
@@ -275,35 +275,37 @@
 				:op2 "Cadia"))))
 
 # ::id 17
-# ::snt " visitors completely sold out the 10,000 special eyeglasses visitors made for this event, and visitors extra stock is finished too, " Joensuu said in a television interview Saturday
-(x26 / say-01
-	:ARG1 (x16 / and
-		:op1 (x4 / sell-01
-			:ARG0 (x2 / person
-				:ARG0-of (v / visit-01))
-			:degree (x3 / complete)
-			:ARG1 (x10 / person
-				:ARG0-of (v1 / visit-01)
-				:mod (x8 / special)
-				:mod (x9 / eyeglass)
-				:subevent-of (x14 / event
-					:mod (x13 / this))))
-		:op2 (x21 / finish-01
-			:ARG1 (x19 / stock
-				:mod (x17 / person
+# ::snt visitors  completely sold out the 10,000 special eyeglasses visitors  made for this event , and visitors  extra stock is finished too , Joensuu  said in a television interview Saturday
+(x15 / and
+	:op1 (x3 / sell-01
+		:ARG0 (x1 / person
+			:ARG0-of (v / visit-01))
+		:manner (x2 / complete)
+		:ARG1 (x9 / person
+			:ARG0-of (v1 / visit-01)
+			:mod (x7 / special)
+			:mod (x8 / eyeglass)
+			:subevent-of (x13 / event
+				:mod (x12 / this))))
+	:op2 (x24 / say-01
+		:ARG0 x1
+		:ARG1 (x20 / finish-01
+			:ARG1 (x18 / stock
+				:mod (x16 / person
 					:ARG0-of (v2 / visit-01))
-				:mod (x18 / extra))
-			:degree (x22 / too)))
-	:ARG0 (x25 / person
-		:name (n / name
-			:op1 "Joensuu"))
-	:time (x30 / interview-01
-		:mod (x29 / television))
-	:time (xap0 / date-entity
-		:weekday (x31 / saturday)))
+				:mod (x17 / extra))
+			:mod (x21 / too))
+		:ARG0 (x23 / person
+			:name (n / name
+				:op1 "Joensuu"))
+		:medium (x28 / interview-01
+			:ARG1 x23
+			:mod (x27 / television))
+		:time (xap0 / date-entity
+			:weekday (x29 / saturday))))
 
 # ::id 18
-# ::snt During the past week, newspapers, television and radio have been full of information about solar eclipses, as well as advice for spectators not to stare directly into the sun
+# ::snt During the past week , newspapers , television and radio have been full of information about solar eclipses , as well as advice for spectators not to stare directly into the sun
 (x13 / full
 	:time (x4 / week
 		:mod (x3 / past))
@@ -321,7 +323,7 @@
 				:ARG2 (x32 / sun)))))
 
 # ::id 19
-# ::snt Some eclipse viewers wo n't have to worry about the clouds, because Some eclipse viewers will be above Some eclipse viewers
+# ::snt Some eclipse viewers wo not have to worry about the clouds , because Some eclipse viewers  will be above Some eclipse viewers
 (x13 / cause-01
 	:ARG0 (x2 / eclipse-01
 		:ARG0 (x3 / viewer
@@ -337,7 +339,7 @@
 			:mod (x21 / eclipse-01))))
 
 # ::id 20
-# ::snt Finnair, the national airline, has arranged a dozen special flights for eclipse watchers, and private companies with small planes will provide more
+# ::snt Finnair , the national airline , has arranged a dozen special flights for eclipse watchers , and private companies with small planes will provide more
 (x17 / and
 	:op1 (x8 / arrange-01
 		:ARG0 (x1 / finnair
@@ -355,7 +357,7 @@
 					:mod (x21 / small))))))
 
 # ::id 21
-# ::snt The eclipse will be total in an arc about 125 miles wide from the northern Baltic Sea and southeast Finland, across the Kola Peninsula and northeast Soviet Union, to the Aleutian Islands near Alaska
+# ::snt The eclipse will be total in an arc about 125 miles wide from the northern Baltic Sea and southeast Finland , across the Kola Peninsula and northeast Soviet Union , to the Aleutian Islands near Alaska
 (x5 / total-01
 	:ARG2 (x2 / eclipse-01)
 	:ARG2 (x8 / arc)
@@ -394,7 +396,7 @@
 	:location (x35 / near))
 
 # ::id 22
-# ::snt Scientists will conduct several experiments during the eclipse, including gravity test measurements of the radius of the sun
+# ::snt Scientists will conduct several experiments during the eclipse , including gravity test measurements of the radius of the sun
 (x3 / conduct-01
 	:ARG0 (x1 / have-org-role-91
 		:ARG2 (s / scientist))
@@ -409,7 +411,7 @@
 					:poss (x19 / sun))))))
 
 # ::id 23
-# ::snt However, scientific interest in this eclipse has been less than in longer eclipses, such as the seven-minute eclipse seen from northern Kenya on June 30, 1973
+# ::snt However , scientific interest in this eclipse has been less than in longer eclipses , such as the seven-minute eclipse seen from northern Kenya on June 30 , 1973
 (x10 / less
 	:domain (x4 / interest-01
 		:manner (x3 / science)

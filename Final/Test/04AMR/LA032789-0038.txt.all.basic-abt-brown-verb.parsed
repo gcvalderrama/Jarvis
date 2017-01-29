@@ -1,42 +1,44 @@
 # ::id 1
-# ::snt An unqualified mate was piloting the Exxon Valdez -- violating both Coast Guard regulations and company policy -- when the tanker crashed into rocks, unleashing the worst oil spill in U.S. history, Exxon Shipping Co. said Sunday
-(x38 / say-01
+# ::snt An unqualified mate was piloting the Exxon Valdez violating both Coast Guard regulations and company policy when the tanker crashed into rocks , unleashing the worst oil spill in U.S. history , Exxon Shipping Co. said Sunday
+(x36 / say-01
 	:ARG1 (x5 / pilot-01
 		:ARG0 (x3 / mate
 			:mod (x2 / unqualified))
 		:ARG1 (x8 / valdez)
-		:ARG1 (x10 / violate-01
-			:ARG1 (x15 / and
-				:op1 (x14 / regulate-01
-					:poss (x12 / have-org-role-91
+		:ARG1 (x9 / person
+			:ARG0-of (v / violate-01)
+			:ARG1 (x14 / and
+				:op1 (x13 / regulate-01
+					:poss (x11 / have-org-role-91
 						:ARG1 (m / military
 							:name (n2 / name
 								:op1 "Coast")))
-					:poss (x13 / organization
+					:poss (x12 / organization
 						:name (n3 / name
 							:op1 "Guard"))
-					:poss (x16 / company))
-				:op2 (x17 / policy)))
-		:time (x22 / crash-01
-			:ARG1 (x21 / tanker)
-			:ARG2 (x24 / rock)
-			:ARG1 (x26 / unleash
-				:ARG1 (x30 / spill-01
-					:mod (x28 / bad)
-					:ARG1 (x29 / oil)
-					:time (x33 / history
-						:poss (x32 / country
-							:name (n4 / name
-								:op1 "U.S.")))))))
-	:ARG0 (x36 / government-organization
+					:poss (x15 / company))
+				:op2 (x16 / policy))
+			:time (x20 / crash-01
+				:ARG1 (x19 / tanker)
+				:ARG2 (x22 / rock)
+				:ARG1 (x24 / unleash
+					:ARG0 x19
+					:ARG1 (x28 / spill-01
+						:mod (x26 / bad)
+						:ARG1 (x27 / oil)
+						:time (x31 / history
+							:poss (x30 / country
+								:name (n4 / name
+									:op1 "U.S."))))))))
+	:ARG0 (x34 / government-organization
 		:name (n / name
 			:op1 "Shipping"
 			:op2 "Co.")
-		:mod (x35 / organization
+		:mod (x33 / organization
 			:name (n1 / name
 				:op1 "Exxon")))
 	:time (xap0 / date-entity
-		:weekday (x39 / sunday)))
+		:weekday (x37 / sunday)))
 
 # ::id 2
 # ::snt Exxon also disclosed that the Long Beach-bound tanker actually was involved in two separate accidents that night in pristine Prince William Sound
@@ -66,7 +68,7 @@
 					:op1 "William")))))
 
 # ::id 3
-# ::snt Meanwhile, winds kicked up around the crippled ship, stirring fears that choppy waters could destabilize the Exxon Valdez and sweep the slick ashore
+# ::snt Meanwhile , winds kicked up around the crippled ship , stirring fears that choppy waters could destabilize the Exxon Valdez and sweep the slick ashore
 (x4 / kick-01
 	:time (x1 / meanwhile)
 	:ARG0 (x3 / wind)
@@ -87,7 +89,7 @@
 						:mod (x25 / ashore)))))))
 
 # ::id 4
-# ::snt Wildlife experts were summoned from California to coordinate any efforts to rescue birds and sea otters, whose feathers and fur make Wildlife experts the most vulnerable to oil contamination
+# ::snt Wildlife experts were summoned from California to coordinate any efforts to rescue birds and sea otters , whose feathers and fur make Wildlife experts  the most vulnerable to oil contamination
 (x4 / summon
 	:ARG1 (x2 / person
 		:ARG1-of (e / expert-41)
@@ -116,7 +118,7 @@
 					:ARG1 (x15 / sea))))))
 
 # ::id 5
-# ::snt Oil-Covered Birds, Otters Biologists already have counted 95 birds and two otters covered with oil but were unable to capture Wildlife experts for cleaning
+# ::snt Oil-Covered Birds , Otters Biologists already have counted 95 birds and two otters covered with oil but were unable to capture Wildlife experts  for cleaning
 (x2 / bird
 	:mod (x1 / organization
 		:name (n / name
@@ -140,7 +142,7 @@
 		:ARG1 (x16 / oil)))
 
 # ::id 6
-# ::snt Killer whales, sea lions and ducks also have been spotted swimming in the muck
+# ::snt Killer whales , sea lions and ducks also have been spotted swimming in the muck
 (x11 / spotted
 	:ARG1 (x6 / and
 		:op1 (x2 / whale
@@ -153,7 +155,7 @@
 		:location (x15 / muck)))
 
 # ::id 7
-# ::snt Cleanup efforts continued slowly, and Alaska Gov. Steve Cowper declared Prince William Sound a disaster area, freeing state resources for cleanup and paving the way for a federal disaster declaration
+# ::snt Cleanup efforts continued slowly , and Alaska Gov. Steve Cowper declared Prince William Sound a disaster area , freeing state resources for cleanup and paving the way for a federal disaster declaration
 (x6 / and
 	:op1 (x3 / continue-01
 		:ARG0 (x2 / effort
@@ -198,7 +200,7 @@
 		:polarity -))
 
 # ::id 9
-# ::snt Still unexplained is why Third Mate Gregory Cousins was steering the 987-foot vessel through the tricky, iceberg-dotted waters on Friday
+# ::snt Still unexplained is why Third Mate Gregory Cousins was steering the 987-foot vessel through the tricky , iceberg-dotted waters on Friday
 (x10 / steer-01
 	:null_edge (x2 / unexplained)
 	:ARG0 (x5 / government-organization
@@ -214,7 +216,7 @@
 			:weekday (x21 / friday))))
 
 # ::id 10
-# ::snt Frank Iarossi, president of Exxon Shipping, told reporters that Capt. Joseph Hazelwood was one flight below the bridge in his cabin when the Exxon Valdez hit the first jagged rock pinnacle about a mile outside shipping lanes
+# ::snt Frank Iarossi , president of Exxon Shipping , told reporters that Capt. Joseph Hazelwood was one flight below the bridge in his cabin when the Exxon Valdez hit the first jagged rock pinnacle about a mile outside shipping lanes
 (x9 / tell-01
 	:ARG0 (x1 / newspaper
 		:name (n / name
@@ -254,28 +256,28 @@
 						:mod (x38 / ship-01)))))))
 
 # ::id 11
-# ::snt The ship then " slid about two miles " under full power and hit more underwater rocks, Iarossi said
-(x20 / say-01
-	:ARG1 (x13 / and
-		:op1 (x5 / slide-01
+# ::snt The ship then slid about two miles under full power and hit more underwater rocks , Iarossi said
+(x18 / say-01
+	:ARG1 (x11 / and
+		:op1 (x4 / slide-01
 			:ARG1 (x2 / ship)
 			:time (x3 / then)
-			:ARG2 (x8 / distance-quantity
+			:ARG2 (x7 / distance-quantity
 				:unit (m / mile)
-				:null_edge (x6 / about
+				:null_edge (x5 / about
 					:null_edge 2)))
-		:op2 (x12 / power
-			:mod (x11 / full))
-		:op2 (x14 / hit-02
-			:ARG1 (x17 / rock
-				:mod (x16 / under
-					:degree (x15 / more)))))
-	:ARG0 (x19 / person
+		:op2 (x10 / power
+			:mod (x9 / full))
+		:op2 (x12 / hit-02
+			:ARG1 (x15 / rock
+				:mod (x14 / under
+					:degree (x13 / more)))))
+	:ARG0 (x17 / person
 		:name (n / name
 			:op1 "Iarossi")))
 
 # ::id 12
-# ::snt At no time did the ship lose steering, Frank Iarossi added
+# ::snt At no time did the ship lose steering , Frank Iarossi  added
 (x12 / add-01
 	:ARG1 (x7 / lose-02
 		:polarity -
@@ -287,7 +289,7 @@
 			:op2 "Iarossi")))
 
 # ::id 13
-# ::snt Iarossi said Frank Iarossi did not know whether Hazelwood took the wheel after the first accident, or how much time elapsed between the two incidents
+# ::snt Iarossi said Frank Iarossi  did not know whether Hazelwood took the wheel after the first accident , or how much time elapsed between the two incidents
 (x2 / say-01
 	:ARG0 (x1 / person
 		:name (n / name
@@ -313,7 +315,7 @@
 					:quant 2)))))
 
 # ::id 14
-# ::snt There would have been no reason for the 42-year-old captain to go below to use the bathroom or get coffee, since both are available on the bridge, Iarossi said
+# ::snt There would have been no reason for the 42-year-old captain to go below to use the bathroom or get coffee , since both are available on the bridge , Iarossi said
 (x31 / say-01
 	:ARG1 (x6 / reason
 		:polarity -
@@ -337,29 +339,29 @@
 			:op1 "Iarossi")))
 
 # ::id 15
-# ::snt " Frank Iarossi agree something is missing, " Iarossi told reporters and local residents at a press conference
-(x11 / tell-01
-	:ARG0 (x10 / person
+# ::snt Frank Iarossi  agree something is missing , Iarossi told reporters and local residents at a press conference
+(x9 / tell-01
+	:ARG0 (x8 / organization
 		:name (n / name
 			:op1 "Iarossi"))
-	:ARG1 (x13 / and
-		:op1 (x12 / person
+	:ARG1 (x11 / and
+		:op1 (x10 / person
 			:ARG0-of (r / report-01))
-		:op2 (x15 / person
+		:op2 (x13 / person
 			:ARG0-of (r1 / reside-01)
-			:mod (x14 / local)))
-	:location (x19 / conference
-		:mod (x18 / press))
+			:mod (x12 / local)))
+	:location (x17 / conference
+		:mod (x16 / press))
 	:ARG1 (xap0 / obligate-01
-		:ARG1 (x2 / newspaper
+		:ARG1 (x1 / newspaper
 			:name (n1 / name
 				:op1 "Frank"
 				:op2 "Iarossi"))
-		:ARG2 (x7 / miss-03
-			:ARG1 (x5 / something))))
+		:ARG2 (x6 / miss-03
+			:ARG1 (x4 / something))))
 
 # ::id 16
-# ::snt Cousins, a three-year employee of Exxon, did not have the Coast Guard certification required to pilot through the sound but was qualified under other circumstances to steer the ship, Iarossi said
+# ::snt Cousins , a three-year employee of Exxon , did not have the Coast Guard certification required to pilot through the sound but was qualified under other circumstances to steer the ship , Iarossi said
 (x34 / say-01
 	:ARG1 (x22 / contrast-01
 		:null_edge (x1 / cousin
@@ -392,97 +394,95 @@
 			:op1 "Iarossi")))
 
 # ::id 17
-# ::snt Puts Off Filing Charges Third Mate Gregory Cousins 're not going to file any charges until Third Mate Gregory Cousins are done with Third Mate Gregory Cousins investigation, " said Coast Guard spokesman Todd Nelson
-(x31 / say-01
+# ::snt Puts Off Filing Charges Third Mate Gregory Cousins  are not going to file any charges until Third Mate Gregory Cousins  are done with Third Mate Gregory Cousins  investigation , said Coast Guard spokesman Todd Nelson
+(x30 / say-01
 	:ARG1 (x1 / put-01
+		:ARG2 (x2 / off)
 		:ARG2 (x4 / charge-05)
-		:ARG1 (x6 / mate
-			:ARG1 (x13 / file-01
-				:ARG0 (x8 / cousins
-					:null_edge (x7 / gregory))
-				:ARG1 (x15 / charge-05
-					:mod (x14 / any))
-				:time (x16 / until
-					:op1 (x22 / do-02
-						:ARG1 (x20 / cousin
-							:mod (x18 / mate)
-							:mod (x19 / gregory))
-						:ARG2 (x28 / investigate-01
-							:ARG0 (x24 / organization
-								:name (n3 / name
-									:op1 "Third"))
-							:ARG0 (x25 / organization
-								:name (n4 / name
-									:op1 "Mate"))
-							:ARG0 (x26 / organization
-								:name (n5 / name
-									:op1 "Gregory"))
-							:ARG1 (x27 / organization
-								:name (n6 / name
-									:op1 "Cousins"))))))))
-	:ARG0 (x35 / newspaper
-		:name (n / name
-			:op1 "Todd"
-			:op2 "Nelson")
-		:ARG0-of (x32 / have-org-role-91
-			:ARG1 (m / military
-				:name (n1 / name
-					:op1 "Coast")))
-		:ARG0-of (x34 / have-org-role-91
-			:ARG2 (s / spokesman)
-			:ARG1 (x33 / organization
-				:name (n2 / name
-					:op1 "Guard")))))
+		:ARG1 (x6 / mate)
+		:ARG1 (x13 / file-01
+			:ARG0 (x8 / cousin
+				:mod (x7 / gregory))
+			:ARG1 (x15 / charge-05
+				:mod (x14 / any))
+			:time (x16 / until
+				:op1 (x22 / do-02
+					:ARG1 (x20 / cousin
+						:mod (x18 / mate)
+						:mod (x19 / gregory))
+					:ARG2 (x28 / investigate-01
+						:ARG0 (x24 / organization
+							:name (n2 / name
+								:op1 "Third"))
+						:ARG0 (x25 / organization
+							:name (n3 / name
+								:op1 "Mate"))
+						:ARG0 (x26 / organization
+							:name (n4 / name
+								:op1 "Gregory"))
+						:ARG1 (x27 / organization
+							:name (n5 / name
+								:op1 "Cousins")))))))
+	:name (x34 / name
+		:op1 "Todd"
+		:op2 "Nelson"
+		:ARG0-of (xap0 / person
+			:ARG0-of (x33 / have-org-role-91
+				:ARG2 (s / spokesman)
+				:ARG1 (x32 / organization
+					:name (n / name
+						:op1 "Guard")
+					:mod (x31 / have-org-role-91
+						:ARG1 (m / military
+							:name (n1 / name
+								:op1 "Coast"))))))))
 
 # ::id 18
-# ::snt " The Coast Guard may seem slow and plodding at times, but if Third Mate Gregory Cousins file charges, Third Mate Gregory Cousins 're going to make Cousins , a three-year employee of Exxon stick, " Coast Guard spokesman Todd Nelson added
-(x45 / add-01
-	:ARG1 (x5 / possible
-		:domain (x7 / slow
-			:domain (x6 / seem-01
-				:ARG1 (x3 / military
+# ::snt The Coast Guard may seem slow and plodding at times , but if Third Mate Gregory Cousins  file charges , Third Mate Gregory Cousins  are going to make Cousins , a three-year employee of Exxon  stick , Coast Guard spokesman Todd Nelson  added
+(x43 / add-01
+	:ARG1 (x4 / possible
+		:domain (x6 / slow
+			:domain (x5 / seem-01
+				:ARG1 (x2 / military
 					:name (n3 / name
 						:op1 "Coast"
 						:op2 "Guard"))
-				:ARG1 (x9 / plod))
-			:condition (x19 / file
-				:ARG0 (x18 / cousins
-					:null_edge (x16 / mate)
-					:mod (x17 / gregory))
-				:ARG1 (x20 / charge-05)
-				:ARG0 (x22 / government-organization
-					:name (n4 / name
-						:op1 "Third"
-						:op2 "Mate"
-						:op3 "Gregory"
-						:op4 "Cousins"))
-				:ARG1 (x29 / make-01
-					:ARG1 (x37 / stick
-						:ARG0 (x34 / person
+				:ARG1 (x8 / plod))
+			:condition (x18 / file
+				:ARG0 (x17 / cousins
+					:null_edge (x15 / mate)
+					:mod (x16 / gregory))
+				:ARG1 (x19 / charge-05)
+				:ARG0 (x24 / cousin
+					:null_edge (x22 / mate)
+					:mod (x23 / gregory))
+				:ARG1 (x28 / make-01
+					:ARG1 (x36 / stick
+						:ARG0 (x33 / person
 							:ARG1-of (e / employ-01)
-							:mod (x33 / person
-								:name (n5 / name
+							:mod (x32 / person
+								:name (n4 / name
 									:op1 "three-year"))
-							:poss (x36 / organization
-								:name (n6 / name
+							:poss (x35 / organization
+								:name (n5 / name
 									:op1 "Exxon"))))))))
-	:ARG1 (x8 / and)
-	:ARG0 (x43 / newspaper
+	:ARG1 (x7 / and)
+	:ARG0 (x41 / newspaper
 		:name (n / name
 			:op1 "Todd"
 			:op2 "Nelson")
-		:ARG0-of (x40 / have-org-role-91
+		:ARG0-of (x38 / have-org-role-91
 			:ARG1 (m / military
 				:name (n1 / name
 					:op1 "Coast")))
-		:ARG0-of (x42 / have-org-role-91
+		:ARG0-of (x40 / have-org-role-91
 			:ARG2 (s / spokesman)
-			:ARG1 (x41 / organization
+			:ARG1 (x39 / organization
 				:name (n2 / name
 					:op1 "Guard")))))
 
 # ::id 19
-# ::snt Nelson said piloting a ship without proper certification is a civil, not criminal, violation, which ultimately could result in suspension or revocation of the captain's license
+# ::snt Nelson said piloting a ship without proper certification is a civil , not criminal , violation , which ultimately could result in suspension or revocation of the captain's license
 (x2 / say-01
 	:ARG0 (x1 / person
 		:name (n / name
@@ -523,7 +523,7 @@
 		:purpose (x16 / interview-01)))
 
 # ::id 21
-# ::snt The Coast Guard served subpoenas Saturday on the captain, helmsman and third mate to ensure that the captain , helmsman and third mate make the captain , helmsman and third mate available to investigators
+# ::snt The Coast Guard served subpoenas Saturday on the captain , helmsman and third mate to ensure that the captain , helmsman and third mate  make the captain , helmsman and third mate  available to investigators
 (x4 / serve-01
 	:ARG0 (x2 / military
 		:name (n / name
@@ -570,7 +570,7 @@
 		:weekday (x10 / sunday)))
 
 # ::id 23
-# ::snt Experts from the International Bird Rescue Center in Berkeley, Calif., set up a rehabilitation center here Sunday in case oiled birds are captured
+# ::snt Experts from the International Bird Rescue Center in Berkeley , Calif. , set up a rehabilitation center here Sunday in case oiled birds are captured
 (x13 / set-03
 	:ARG0 (x1 / person
 		:ARG1-of (e / expert-41)
@@ -619,7 +619,7 @@
 		:time (x18 / today)))
 
 # ::id 25
-# ::snt But even if animals turn up in distress, rescues may not be feasible
+# ::snt But even if animals turn up in distress , rescues may not be feasible
 (x1 / contrast-01
 	:ARG2 (x11 / possible
 		:domain (x14 / feasible
@@ -630,27 +630,27 @@
 			:domain (x10 / rescue-01))))
 
 # ::id 26
-# ::snt " Human life and safety is more important, " said Pamela Bergmann, the Department of the Interior representative assessing the situation
-(x11 / say-01
-	:ARG1 (x8 / important
-		:domain (x4 / and
-			:op1 (x3 / life
-				:mod (x2 / human))
-			:op2 (x5 / safe-41))
-		:degree (x7 / more))
-	:ARG0 (x12 / newspaper
+# ::snt Human life and safety is more important , said Pamela Bergmann , the Department of the Interior representative assessing the situation
+(x9 / say-01
+	:ARG1 (x7 / important
+		:domain (x3 / and
+			:op1 (x2 / life
+				:mod (x1 / human))
+			:op2 (x4 / safe-41))
+		:degree (x6 / more))
+	:ARG0 (x10 / newspaper
 		:name (n / name
 			:op1 "Pamela"
 			:op2 "Bergmann")
-		:ARG0-of (x16 / department
-			:ARG1 (x20 / person
+		:ARG0-of (x14 / department
+			:ARG1 (x18 / person
 				:ARG0-of (r / represent-01)
-				:null_edge (x19 / null_tag)
-				:ARG0-of (x21 / assess-01
-					:ARG1 (x23 / situation))))))
+				:null_edge (x17 / null_tag)
+				:ARG0-of (x19 / assess-01
+					:ARG1 (x21 / situation))))))
 
 # ::id 27
-# ::snt Pamela Bergmann said it might be too perilous to try to capture panicky birds and otters from boats in the frigid water, and there is no road access to the shores where Otter experts from Hubbs Marine Research Institute at Sea World in San Diego are likely to show up
+# ::snt Pamela Bergmann  said it might be too perilous to try to capture panicky birds and otters from boats in the frigid water , and there is no road access to the shores where Otter experts from Hubbs Marine Research Institute at Sea World in San Diego  are likely to show up
 (x3 / say-01
 	:ARG0 (x1 / newspaper
 		:name (n / name
@@ -693,7 +693,7 @@
 												:op1 "San"))))))))))))
 
 # ::id 28
-# ::snt A monitor from the U.S. Fish and Wildlife Service said the Interior representative assessing the situation felt encouraged about impact on the area's abundant marine life after patrolling the 50-square-mile slick by boat Saturday
+# ::snt A monitor from the U.S. Fish and Wildlife Service said the Interior representative assessing the situation  felt encouraged about impact on the area's abundant marine life after patrolling the 50-square-mile slick by boat Saturday
 (x10 / say-01
 	:ARG0 (x2 / monitor-01
 		:source (x7 / and
@@ -727,85 +727,83 @@
 									:mod (x34 / boat))))))))))
 
 # ::id 29
-# ::snt " The reason Otter experts from Hubbs Marine Research Institute at Sea World in San Diego have n't seen a large number of birds affected so far is that the oil is out in the middle of the sound, " said Everett Robinson-Wilson, the agency's environmental contaminant coordinator
-(x42 / say-01
-	:ARG1 (x19 / see-01
-		:ARG0 (x5 / person
-			:ARG1-of (e / expert-41)
-			:ARG2 (x7 / government-organization
+# ::snt The reason Otter experts from Hubbs Marine Research Institute at Sea World in San Diego  have not seen a large number of birds affected so far is that the oil is out in the middle of the sound , said Everett Robinson-Wilson , the agency's environmental contaminant coordinator
+(x18 / see-01
+	:ARG0 (x4 / person
+		:ARG1-of (e / expert-41)
+		:ARG2 (x6 / government-organization
+			:name (n / name
+				:op1 "Hubbs"
+				:op2 "Marine"
+				:op3 "Research"
+				:op4 "Institute")
+			:location (x12 / country
 				:name (n1 / name
-					:op1 "Hubbs"
-					:op2 "Marine"
-					:op3 "Research"
-					:op4 "Institute")
-				:location (x13 / country
-					:name (n2 / name
-						:op1 "World"))
-				:location (x16 / country
+					:op1 "World"))
+			:location (x15 / country
+				:name (n2 / name
+					:op1 "Diego")
+				:location (x14 / country
 					:name (n3 / name
-						:op1 "Diego")
-					:location (x15 / country
-						:name (n4 / name
-							:op1 "San")))))
-		:ARG1 (x25 / affect-01
-			:ARG2 (x24 / bird
-				:quant (x22 / number
-					:mod (x21 / large))))
-		:ARG1 (x31 / oil
-			:location (x36 / middle
-				:part-of (x39 / sound))))
-	:ARG0 (x43 / newspaper
-		:name (n / name
-			:op1 "Everett"
-			:op2 "Robinson-Wilson")
-		:ARG0-of (x51 / coordinator
-			:ARG1 (x49 / environment)
-			:ARG1 (x50 / contaminant))))
+						:op1 "San")))))
+	:ARG0 (x23 / bird
+		:quant (x21 / number
+			:mod (x20 / large))
+		:ARG1-of (x24 / affect-01))
+	:ARG1 (x30 / oil
+		:location (x35 / middle
+			:part-of (x38 / sound)
+			:name (x41 / name
+				:op1 "Everett"
+				:op2 "Robinson-Wilson"
+				:ARG0-of (x49 / coordinator
+					:ARG1 (x47 / environment)
+					:ARG1 (x48 / contaminant))))))
 
 # ::id 30
-# ::snt " The weather will help Otter experts from Hubbs Marine Research Institute at Sea World in San Diego or kill Otter experts from Hubbs Marine Research Institute at Sea World in San Diego, " Everett Robinson-Wilson added
-(x38 / add-01
-	:ARG1 (x19 / or
-		:op1 (x5 / help-01
-			:ARG0 (x3 / weather)
-			:ARG1 (x7 / person
+# ::snt The weather will help Otter experts from Hubbs Marine Research Institute at Sea World in San Diego  or kill Otter experts from Hubbs Marine Research Institute at Sea World in San Diego  , Everett Robinson-Wilson  added
+(x36 / add-01
+	:ARG1 (x18 / or
+		:op1 (x4 / help-01
+			:ARG0 (x2 / weather)
+			:ARG1 (x6 / person
 				:ARG1-of (e / expert-41)
-				:ARG2 (x9 / government-organization
+				:ARG2 (x8 / government-organization
 					:name (n1 / name
 						:op1 "Hubbs"
 						:op2 "Marine"
 						:op3 "Research"
 						:op4 "Institute")
-					:location (x15 / country
+					:location (x14 / country
 						:name (n3 / name
 							:op1 "World"))
-					:location (x18 / country
+					:location (x17 / country
 						:name (n4 / name
 							:op1 "Diego")
-						:location (x17 / country
+						:location (x16 / country
 							:name (n7 / name
 								:op1 "San"))))))
-		:op2 (x20 / kill-01
-			:ARG0 x3
-			:ARG0 x7
-			:ARG1 (x22 / person
+		:op2 (x19 / kill-01
+			:ARG0 x2
+			:ARG0 x6
+			:ARG1 (x21 / person
 				:ARG1-of (e1 / expert-41)
-				:ARG2 (x24 / government-organization
+				:ARG2 (x23 / government-organization
 					:name (n2 / name
 						:op1 "Hubbs"
 						:op2 "Marine"
 						:op3 "Research"
 						:op4 "Institute")
-					:location (x30 / country
+					:location (x29 / country
 						:name (n5 / name
 							:op1 "World"))
-					:location (x33 / country
+					:location (x32 / country
 						:name (n6 / name
 							:op1 "Diego")
-						:location (x32 / country
+						:location (x31 / country
 							:name (n8 / name
 								:op1 "San")))))))
-	:ARG0 (x36 / newspaper
+	:ARG0 (x34 / newspaper
 		:name (n / name
 			:op1 "Everett"
 			:op2 "Robinson-Wilson")))
@@ -850,7 +848,7 @@
 	:ARG2 (x15 / water))
 
 # ::id 34
-# ::snt Another 1 million barrels remain aboard the damaged ship, but no new leakage has been reported
+# ::snt Another 1 million barrels remain aboard the damaged ship , but no new leakage has been reported
 (x11 / contrast-01
 	:ARG1 (x5 / remain-01
 		:ARG3 (x1 / another
@@ -865,7 +863,7 @@
 			:mod (x13 / new))))
 
 # ::id 35
-# ::snt Pumps were being used to siphon the remaining oil into a sister tanker Sunday, an operation expected to take up to a week
+# ::snt Pumps were being used to siphon the remaining oil into a sister tanker Sunday , an operation expected to take up to a week
 (x4 / use-01
 	:ARG1 (x1 / pump-01)
 	:ARG2 (x6 / siphon
@@ -883,7 +881,7 @@
 								:unit (w / week)))))))))
 
 # ::id 36
-# ::snt Salvagers hope the two-year-old Exxon Valdez will be able to float free once the Exxon Valdez's load is lightened
+# ::snt Salvagers hope the two-year-old Exxon Valdez will be able to float free once the Exxon Valdez's  load is lightened
 (x2 / hope-01
 	:ARG0 (x1 / salvager)
 	:ARG1 (x6 / person
@@ -914,7 +912,7 @@
 					:op1 "125-million")))))
 
 # ::id 38
-# ::snt Videotapes filmed by divers revealed 10 sizable holes in the ship's hull, ranging from 8 feet by 15 feet to 20 feet by 6 feet, Iarossi said
+# ::snt Videotapes filmed by divers revealed 10 sizable holes in the ship's hull , ranging from 8 feet by 15 feet to 20 feet by 6 feet , Iarossi said
 (x30 / say-01
 	:ARG1 (x5 / reveal-01
 		:ARG0 (x1 / videotape
@@ -936,7 +934,7 @@
 			:op1 "Iarossi")))
 
 # ::id 39
-# ::snt Rocks Charted Frank Iarossi indicated that the rocks the ship hit were charted and well within range of the Exxon Valdez's navigational equipment
+# ::snt Rocks Charted Frank Iarossi  indicated that the rocks the ship hit were charted and well within range of the Exxon Valdez's navigational equipment
 (x2 / chart-01
 	:ARG0 (x1 / rock)
 	:ARG1 (x14 / and
@@ -955,7 +953,7 @@
 					:ARG0 (x10 / ship))))))
 
 # ::id 40
-# ::snt No disciplinary action has been taken against any crew members, Iarossi said
+# ::snt No disciplinary action has been taken against any crew members , Iarossi said
 (x13 / say-01
 	:ARG0 (x12 / person
 		:name (n / name
@@ -987,7 +985,7 @@
 						:ARG1 (x15 / crew)))))))
 
 # ::id 42
-# ::snt 
+# ::snt So far , oil has washed ashore only on two tiny islands in the sound , and beach cleanup efforts were under way
 (x17 / and
 	:op1 (x6 / wash-01
 		:degree (x2 / far)
@@ -1005,81 +1003,76 @@
 				:op1 (x23 / way)))))
 
 # ::id 43
-# ::snt Has n't Seen Plan " the Exxon Valdez's 20 crew members have been told by Exxon that they will come up with an organized cleanup plan, but the Exxon Valdez's 20 crew members 've yet to see one, " said Barbara Holian, spokeswoman for the state Department of Environmental Conservation
-(x44 / say-01
-	:ARG1 (x3 / see-01
-		:ARG1 (x4 / plan)
-		:ARG2 (x15 / tell-01
-			:ARG2 (x12 / have-org-role-91
+# ::snt Has not Seen Plan the Exxon Valdez's 20 crew members  have been told by Exxon that they will come up with an organized cleanup plan , but the Exxon Valdez's 20 crew members  have yet to see one , said Barbara Holian , spokeswoman for the state Department of Environmental Conservation
+(x3 / see-01
+	:ARG1 (x4 / plan-01
+		:ARG1-of (x14 / tell-01
+			:ARG2 (x11 / have-org-role-91
 				:ARG2 (m / member)
-				:ARG1 (x7 / government-organization
-					:name (n2 / name
-						:op1 "Exxon"
-						:op2 "Valdez"))
+				:ARG1 (x7 / person
+					:name (n1 / name
+						:op1 "Valdez"))
 				:quant 20
-				:mod (x11 / crew))
-			:ARG0 (x17 / organization
-				:name (n1 / name
+				:mod (x10 / crew))
+			:ARG0 (x16 / organization
+				:name (n / name
 					:op1 "Exxon"))
-			:ARG1 (x21 / come-01
-				:ARG1 (x27 / plan-01
-					:ARG1-of (x25 / organize-01)
-					:mod (x26 / cleanup)))
-			:null_edge (x37 / have-03
-				:ARG0-of (x36 / have-org-role-91
+			:ARG1 (x20 / come-01
+				:ARG1 (x26 / plan-01
+					:ARG1-of (x24 / organize-01)
+					:mod (x25 / cleanup)))
+			:ARG1 (x39 / see-01
+				:ARG1 (x35 / have-org-role-91
 					:ARG2 (m1 / member)
-					:ARG1 (x31 / government-organization
-						:name (n3 / name
+					:ARG1 (x30 / government-organization
+						:name (n2 / name
 							:op1 "Exxon"
 							:op2 "Valdez"))
 					:null_edge 20
-					:mod (x35 / crew))
-				:null_edge (x40 / see-01
-					:ARG2 x36
-					:time (x38 / yet)
-					:ARG1 1))))
-	:ARG1 (x29 / contrast-01)
-	:ARG0 (x45 / newspaper
-		:name (n / name
-			:op1 "Barbara"
-			:op2 "Holian")
-		:ARG0-of (x48 / have-org-role-91
-			:ARG2 (s / spokeswoman)
-			:null_edge (x49 / null_tag
-				:null_edge (x52 / null_tag
-					:mod (x51 / state)
-					:poss (x55 / organization
-						:name (n4 / name
-							:op1 "Conservation")
-						:mod (x54 / organization
-							:name (n5 / name
-								:op1 "Environmental"))))))))
+					:mod (x34 / crew))
+				:time (x37 / yet))
+			:ARG2 (x43 / name
+				:op1 "Barbara"
+				:op2 "Holian"
+				:ARG1-of (x42 / say-01)
+				:ARG0-of (x46 / have-org-role-91
+					:ARG2 (s / spokeswoman)
+					:null_edge (x47 / null_tag
+						:null_edge (x50 / null_tag
+							:mod (x49 / state)
+							:poss (x53 / organization
+								:name (n3 / name
+									:op1 "Conservation")
+								:mod (x52 / organization
+									:name (n4 / name
+										:op1 "Environmental")))))))))
+	:ARG1 (x28 / contrast-01))
 
 # ::id 44
-# ::snt The agency is studying the agency's " legal options " and may ask the Coast Guard to take over the cleanup from Exxon, Barbara Holian said
-(x28 / say-01
-	:ARG1 (x12 / and
+# ::snt The agency is studying the agency's  legal options and may ask the Coast Guard to take over the cleanup from Exxon , Barbara Holian  said
+(x26 / say-01
+	:ARG1 (x10 / and
 		:op1 (x4 / study-01
-			:ARG1 (x10 / option))
-		:op2 (x13 / possible
-			:domain (x14 / ask-02
-				:ARG2 (x16 / military
+			:ARG1 (x9 / option))
+		:op2 (x11 / possible
+			:domain (x12 / ask-02
+				:ARG2 (x14 / military
 					:name (n1 / name
 						:op1 "Coast"
 						:op2 "Guard"))
-				:ARG1 (x19 / take-01
-					:ARG0 x16
-					:ARG1 (x22 / cleanup)
-					:ARG2 (x24 / organization
+				:ARG1 (x17 / take-01
+					:ARG0 x14
+					:ARG1 (x20 / cleanup)
+					:ARG2 (x22 / organization
 						:name (n2 / name
 							:op1 "Exxon"))))))
-	:ARG0 (x26 / newspaper
+	:ARG0 (x24 / newspaper
 		:name (n / name
 			:op1 "Barbara"
 			:op2 "Holian")))
 
 # ::id 45
-# ::snt At Coast Guard offices here, Nelson said such a move was unlikely
+# ::snt At Coast Guard offices here , Nelson said such a move was unlikely
 (x8 / say-01
 	:ARG0 (x4 / office
 		:mod (x2 / have-org-role-91
@@ -1099,59 +1092,62 @@
 			:mod (x9 / such))))
 
 # ::id 46
-# ::snt " The Coast Guard does n't have tons and tons of its own equipment, and its own equipment would have to hire the same people Exxon has, " Nelson said
-(x32 / say-01
-	:ARG1 (x16 / and
-		:op1 (x7 / have-03
-			:ARG0 (x3 / military
+# ::snt 
+(x30 / say-01
+	:ARG1 (x15 / and
+		:op1 (x6 / have-03
+			:ARG0 (x2 / military
 				:name (n1 / name
 					:op1 "Coast"
 					:op2 "Guard"))
-			:ARG1 (x9 / and)
-			:ARG1 (x14 / equipment
-				:quant (x8 / mass-quantity
+			:ARG1 (x8 / and)
+			:ARG1 (x13 / equipment
+				:quant (x7 / mass-quantity
 					:unit (t / ton))
-				:quant (x10 / mass-quantity
+				:quant (x9 / mass-quantity
 					:unit (t1 / ton))))
-		:op2 (x21 / have-03
-			:ARG0 (x19 / equipment)
-			:ARG1 (x23 / hire-01
-				:ARG1 (x28 / have-03
-					:ARG1-of (x25 / same-41)
-					:ARG0 (x27 / organization
+		:op2 (x20 / have-03
+			:ARG0 (x18 / equipment)
+			:ARG1 (x22 / hire-01
+				:ARG1 (x27 / have-03
+					:ARG1-of (x24 / same-41)
+					:ARG0 (x26 / organization
 						:name (n2 / name
 							:op1 "Exxon"))))))
-	:ARG0 (x31 / person
+	:ARG0 (x29 / person
 		:name (n / name
 			:op1 "Nelson")))
 
 # ::id 47
-# ::snt " That would just slow things down
-(x5 / slow-03
-	:ARG1 (x2 / that)
-	:mod (x4 / just)
-	:ARG1 (x6 / thing))
+# ::snt That would just slow things down
+(x4 / slow-03
+	:ARG1 (x1 / that)
+	:mod (x3 / just)
+	:ARG1 (x5 / thing))
 
 # ::id 48
-# ::snt " Right now, Exxon is the oil company with the deep pockets, and Exxon's cleaning up Exxon own spill within federal guidelines .
-(x15 / and
-	:op1 (x9 / company
-		:mod (x3 / now
-			:mod (x2 / right))
-		:domain (x5 / organization
+# ::snt Right now , Exxon is the oil company with the deep pockets , and Exxon  is cleaning up Exxon  own spill within federal guidelines
+(x14 / and
+	:op1 (x8 / company
+		:mod (x2 / now
+			:mod (x1 / right))
+		:domain (x4 / organization
 			:name (n / name
 				:op1 "Exxon"))
-		:mod (x8 / oil)
-		:prep-with (x13 / pocket
-			:mod (x12 / deep))
-		:ARG0-of (x18 / cleaning
-			:ARG1 (x22 / spill-01
-				:ARG1 (x20 / organization
-					:name (n1 / name
-						:op1 "Exxon")))
-			:location (x23 / within
-				:op1 (x25 / guideline
-					:ARG0 (x24 / government-organization
-						:name (n2 / name
-							:op1 "federal")))))))
+		:mod (x7 / oil)
+		:prep-with (x12 / pocket
+			:mod (x11 / deep)))
+	:op2 (x17 / clean-02
+		:ARG0 (x15 / organization
+			:name (n1 / name
+				:op1 "Exxon"))
+		:ARG1 (x21 / spill-01
+			:ARG1 (x19 / organization
+				:name (n2 / name
+					:op1 "Exxon")))
+		:time (x22 / within
+			:op1 (x24 / guideline
+				:ARG0 (x23 / government-organization
+					:name (n3 / name
+						:op1 "federal"))))))
 

@@ -23,7 +23,7 @@
 				:mod (x10 / dry-02)))))
 
 # ::id 3
-# ::snt All that after five years of drought parched the landscape. ; Unless an unusually cool summer intervenes, these are the ingredients for what could become one of the worst wildfire seasons in California's history
+# ::snt All that after five years of drought parched the landscape. ; Unless an unusually cool summer intervenes , these are the ingredients for what could become one of the worst wildfire seasons in California's history
 (x / xconcept
 	:x (x12 / and
 		:op2 (x2 / that
@@ -49,180 +49,149 @@
 		:time (x37 / history)))
 
 # ::id 4
-# ::snt " Right now the rains have caused everything to green up, but that can change in a few weeks, " Lisa Boyd, a spokeswoman for the California Department of Forestry and Fire Protection in Sacramento, said Monday
-(x / xconcept
-	:x (x13 / contrast-01)
-	:x (x40 / say-01
-		:ARG0 (x23 / newspaper
+# ::snt Right now the rains have caused everything to green up , but that can change in a few weeks , Lisa Boyd , a spokeswoman for the California Department of Forestry and Fire Protection in Sacramento , said Monday
+(x12 / contrast-01
+	:ARG1 (x6 / cause-01
+		:time (x2 / now
+			:mod (x1 / right))
+		:ARG0 (x4 / rain)
+		:ARG1 (x7 / everything))
+	:ARG2 (x38 / say-01
+		:ARG0 x4
+		:ARG1 (x14 / possible
+			:domain (x15 / change-01
+				:ARG0 (x13 / that)
+				:null_edge (x18 / few
+					:op1 (x19 / week))))
+		:ARG0 (x21 / newspaper
 			:name (n / name
 				:op1 "Lisa"
 				:op2 "Boyd")
-			:ARG0-of (x27 / have-org-role-91
+			:ARG0-of (x25 / have-org-role-91
 				:ARG2 (s / spokeswoman)
-				:purpose (x34 / and
-					:op1 (x15 / possible
-						:domain (x7 / cause-01
-							:null_edge (x3 / now
-								:mod (x2 / right))
-							:ARG0 (x5 / rain)
-							:ARG1 (x8 / everything))
-						:domain (x16 / change-01
-							:ARG0 (x14 / that)
-							:null_edge (x19 / few
-								:op1 (x20 / week))))
-					:null_edge (x31 / null_tag
-						:null_edge (x30 / null_tag)
-						:poss (x33 / organization
+				:purpose (x32 / and
+					:null_edge (x29 / null_tag
+						:null_edge (x28 / null_tag)
+						:poss (x31 / organization
 							:name (n1 / name
 								:op1 "Forestry")))
-					:op2 (x36 / protect-01
-						:mod (x35 / fire)
-						:location (x38 / country
+					:op2 (x34 / protect-01
+						:mod (x33 / fire)
+						:location (x36 / country
 							:name (n2 / name
 								:op1 "Sacramento"))))))
-		:time (x41 / monday)))
+		:time (xap0 / date-entity
+			:weekday (x39 / monday))))
 
 # ::id 5
-# ::snt 
-(x7 / tinderbox
-	:ARG1 (x3 / state)
-	:null_edge (x5 / really)
-	:time (x9 / year
-		:mod (x8 / this)))
+# ::snt The state's really a tinderbox this year
+(x6 / tinderbox
+	:domain (x2 / state)
+	:mod (x4 / really)
+	:time (x8 / year
+		:mod (x7 / this)))
 
 # ::id 6
-# ::snt Everyone's going to have to be extra careful .
+# ::snt Everyone's going to have to be extra careful
 (x9 / careful
 	:domain (x1 / everyone)
 	:mod (x8 / extra))
 
 # ::id 7
-# ::snt ; In Santa Clara County, the conditions are not yet extreme ; March storms probably delayed fire season until mid-June. ; But the county's wild lands are littered with heavy fuel -- brush and trees -- killed by the drought or the December freeze. ; " The late rains have given us a real good grass crop, the catalyst to ignite heavier fuels, " said fire prevention officer Dick Mauldin at the forestry department's Morgan Hill ranger unit. ; Particularly vulnerable are the eucalyptus groves that did not survive the freeze, Mauldin said
-(x71 / say-01
-	:ARG1 (x72 / fire-arm
-		:ARG1 (x73 / prevent-01)
-		:ARG0-of (x74 / officer)
-		:poss (x75 / person
+# ::snt ; In Santa Clara County , the conditions are not yet extreme ; March storms probably delayed fire season until mid-June. ; But the county's wild lands are littered with heavy fuel brush and trees killed by the drought or the December freeze. ; The late rains have given us a real good grass crop , the catalyst to ignite heavier fuels , said fire prevention officer Dick Mauldin at the forestry department's Morgan Hill ranger unit. ; Particularly vulnerable are the eucalyptus groves that did not survive the freeze , Mauldin said
+(x67 / say-01
+	:ARG1 (x63 / ignite-01
+		:ARG1 (x61 / catalyze-01)
+		:ARG1 (x65 / fuel
+			:mod (x64 / heavier)))
+	:ARG1 (x68 / fire-arm
+		:ARG1 (x69 / prevent-01)
+		:ARG0-of (x70 / officer)
+		:poss (x71 / person
 			:name (n / name
 				:op1 "Dick")))
-	:ARG0 (x85 / unit
-		:poss (x80 / department
-			:mod (x79 / forestry))
-		:poss (x82 / country
+	:ARG0 (x81 / unit
+		:poss (x76 / department
+			:mod (x75 / forestry))
+		:poss (x78 / country
 			:name (n1 / name
 				:op1 "Morgan"))
-		:null_edge (x83 / country
+		:null_edge (x79 / country
 			:name (n2 / name
 				:op1 "Hill"))
-		:mod (x84 / ranger)))
+		:mod (x80 / ranger)))
 
 # ::id 8
-# ::snt " Fires in there are going to be particularly hot, hard to put out, " the December freeze. said. ; Statewide, according to the U.S. Forest Service, 10 percent of the trees in the 18 national forests have been killed by the drought or the insect infestations Statewide spawned. ; State forestry officials estimate 10 million trees -- Boyd called State forestry officials " standing kindling " -- have died in California's wooded areas since the drought began. ; California's worst fire year was 1987, when 900,000 acres burned
-(x / xconcept
-	:x (x24 / and
-		:op1 (x2 / fire-01
-			:ARG1 (x38 / tree
-				:location (x43 / forest
-					:quant 18
-					:mod (x42 / nation))))
-		:op3 (x22 / say-01))
-	:x (x57 / and
-		:op6 (x20 / freeze-02
-			:condition (x14 / put-01)
-			:null_edge 12)
-		:op2 (x55 / spawn
-			:ARG0 (x53 / infestation
-				:mod (x52 / insect)))
-		:op2 (x61 / estimate-01
-			:ARG1 (x64 / tree
-				:ARG1-of (x67 / call-01
-					:ARG2 (x66 / person
-						:name (n1 / name
-							:op1 "Boyd"))
-					:ARG0 (xap1 / person
-						:ARG0-of (x70 / have-org-role-91
-							:ARG2 (o1 / official)
-							:ARG1 (x69 / forestry
-								:mod (x68 / state))))))
-			:ARG0 (xap0 / person
-				:ARG0-of (x60 / have-org-role-91
-					:ARG2 (o / official)
-					:ARG1 (x58 / state)
-					:ARG1 (x59 / forestry)))))
-	:x (x88 / and
-		:op1 (x10 / hot
-			:mod (x9 / particular)
-			:domain (x12 / hard))
-		:op2 (x46 / kill-01
-			:location (x25 / statewide)
-			:ARG0 (x31 / government-organization
-				:name (n / name
-					:op1 "Forest"
-					:op2 "Service"))
-			:ARG1 (x35 / percentage-entity
-				:value 10)
-			:ARG1 (x50 / or
-				:op1 (x49 / drought)))
-		:op2 (x72 / stand-02
-			:ARG2 (x73 / kindling
-				:ARG1 (x77 / die-01
-					:location (x79 / state
-						:name (n2 / name
-							:op1 "California"))
-					:ARG1 (x82 / area
-						:mod (x81 / wooded))
-					:time (x83 / since
-						:op1 (x86 / begin-01
-							:ARG1 (x85 / drought)
-							:ARG1 (x92 / fire-arm
-								:mod (x91 / bad))
-							:time (x100 / burn-01
-								:ARG0 (x99 / area-quantity
-									:unit (a / acre)
-									:quant (x98 / 900,000))))))))))
+# ::snt Fires in there are going to be particularly hot , hard to put out , the December freeze.  said. ; Statewide , according to the U.S. Forest Service , 10 percent of the trees in the 18 national forests have been killed by the drought or the insect infestations Statewide  spawned. ; State forestry officials estimate 10 million trees Boyd called State forestry officials  standing kindling have died in California's wooded areas since the drought began. ; California's worst fire year was 1987 , when 900,000 acres burned
+(x20 / say-01
+	:ARG0 (x1 / fire-01)
+	:ARG1 (x36 / tree
+		:location (x41 / forest
+			:quant 18
+			:mod (x40 / nation))))
 
 # ::id 9
-# ::snt Summer weather will be the key to how severe this fire season is. ; " If State forestry officials get into a period of temperatures in the 90s and 100s and a period of temperatures in the 90s and 100s stays that way for a week or so, there is some real potential for major fires, " Mauldin said. ; Firefighters are most concerned about rural areas of the South Bay and East Bay where people have built homes among heavy vegetation. ; " State forestry officials preach every year for homeowners to take precautions (such as clearing brush from around homeowners to take precautions houses -RRB-, and a lot of people do n't do a lot of people, " Mauldin said
-(x130 / say-01
-	:ARG1 (x6 / key
-		:domain (x2 / weather
-			:null_edge (x1 / null_tag)))
-	:ARG0 (x129 / person
+# ::snt Summer weather will be the key to how severe this fire season is. ; If State forestry officials  get into a period of temperatures in the 90s and 100s and a period of temperatures in the 90s and 100s  stays that way for a week or so , there is some real potential for major fires , Mauldin said. ; Firefighters are most concerned about rural areas of the South Bay and East Bay where people have built homes among heavy vegetation. ; State forestry officials  preach every year for homeowners to take precautions (such as clearing brush from around homeowners to take precautions  houses ), and a lot of people do not do a lot of people  , Mauldin said
+(x126 / say-01
+	:ARG1 (x112 / and
+		:op1 (x6 / key
+			:domain (x2 / weather
+				:null_edge (x1 / null_tag))
+			:domain (x60 / say-01
+				:ARG0 (x59 / person
+					:name (n1 / name
+						:op1 "Mauldin"))
+				:ARG1 (x66 / concern-01
+					:ARG0 (x63 / firefighter)
+					:degree (x65 / most)
+					:ARG0 (x69 / area
+						:mod (x68 / rural)
+						:location-of (x80 / build-01
+							:ARG0 (x74 / and
+								:op1 (x73 / country
+									:name (n2 / name
+										:op1 "Bay")
+									:null_edge (x72 / null_tag))
+								:op2 (x76 / country
+									:name (n3 / name
+										:op1 "Bay")))
+							:ARG1 (x81 / home)))))))
+	:ARG0 (x125 / person
 		:name (n / name
 			:op1 "Mauldin")))
 
 # ::id 10
-# ::snt " the 90s and 100s think ` Summer weather's never going to happen to fire prevention officer Dick Mauldin, ' and when Summer weather does the 90s and 100s start pointing fingers .
-(x6 / think-01
-	:ARG1 (x4 / and
+# ::snt the 90s and 100s  think Summer weather  is never going to happen to fire prevention officer Dick Mauldin  , and when Summer weather  does the 90s and 100s  start pointing fingers
+(x5 / think-01
+	:ARG1 (x3 / and
 		:op1 90
 		:quant (xap0 / multiple
 			:op2 100))
-	:ARG1 (x23 / and
-		:op1 (x12 / go-00
-			:ARG4 (x16 / fire-02
-				:name (x19 / name
+	:ARG1 (x20 / and
+		:op1 (x10 / go-00
+			:ARG4 (x14 / fire-02
+				:name (x17 / name
 					:op1 "Dick"
 					:op2 "Mauldin"
-					:ARG0-of (x18 / officer
-						:ARG1 (x17 / prevent-01
-							:ARG0 (x9 / weather
-								:null_edge (x8 / null_tag)))))))
-		:op3 (x32 / start
-			:ARG1 (x30 / and
-				:op1 (x29 / 90s)
+					:ARG0-of (x16 / officer
+						:ARG1 (x15 / prevent-01
+							:ARG0 (x7 / weather
+								:null_edge (x6 / null_tag)))))))
+		:op3 (x29 / start
+			:ARG1 (x27 / and
+				:op1 (x26 / 90s)
 				:op1 (xap2 / multiple
 					:op1 100))
-			:ARG1 (x34 / finger
-				:ARG0-of (x33 / point-02))
+			:ARG1 (x31 / finger
+				:ARG0-of (x30 / point-02))
 			:ARG1-of (xap1 / resemble-01
-				:ARG2 (x26 / weather
-					:mod (x25 / event
+				:ARG2 (x23 / weather
+					:mod (x22 / event
 						:name (n / name
 							:op1 "Summer")))))))
 
 # ::id 11
-# ::snt ; Mauldin said the Morgan Hill ranger unit will begin manning some of its seasonal stations Monday, begin hiring summer season firefighters June 3, and have all of the back-country stations opened by July 1. ; The Morgan Hill unit covers parts of Santa Clara, Alameda, Contra Costa, Stanislaus, San Joaquin and Merced counties. ; In Alameda and Contra Costa counties, officials also are bracing for a long, hot summer
+# ::snt ; Mauldin said the Morgan Hill ranger unit will begin manning some of its seasonal stations Monday , begin hiring summer season firefighters June 3 , and have all of the back-country stations opened by July 1. ; The Morgan Hill unit covers parts of Santa Clara , Alameda , Contra Costa , Stanislaus , San Joaquin and Merced counties. ; In Alameda and Contra Costa counties , officials also are bracing for a long , hot summer
 (x / xconcept
 	:x (x1 / and
 		:op2 (x3 / say-01
@@ -312,212 +281,209 @@
 		:op2 (x69 / county)))
 
 # ::id 12
-# ::snt " We do n't want to say this is the worst fire season in X years, but we are gearing up for the worst fire season in X years, " said Ned MacKay, spokesman for the East Bay Regional Park District
-(x33 / say-01
-	:ARG1 (x5 / want-01
-		:ARG0 (x2 / we)
-		:ARG1 (x7 / say-01
-			:ARG1 (x12 / fire-arm
-				:domain (x8 / this)
-				:mod (x11 / bad)
-				:time (x16 / temporal-quantity
+# ::snt We do not want to say this is the worst fire season in X years , but we are gearing up for the worst fire season in X years  , said Ned MacKay , spokesman for the East Bay Regional Park District
+(x31 / say-01
+	:ARG1 (x4 / want-01
+		:ARG0 (x1 / we)
+		:ARG1 (x6 / say-01
+			:ARG1 (x11 / fire-arm
+				:domain (x7 / this)
+				:mod (x10 / bad)
+				:time (x15 / temporal-quantity
 					:unit (y / year)
-					:mod (x15 / x))))
-		:concession (x21 / gear-01
-			:ARG0 (x19 / we)
-			:ARG2 (x27 / season
-				:mod (x25 / bad)
-				:mod (x26 / fire-arm
-					:time (x30 / temporal-quantity
+					:mod (x14 / x))))
+		:concession (x20 / gear-01
+			:ARG0 (x18 / we)
+			:ARG2 (x26 / season
+				:mod (x24 / bad)
+				:mod (x25 / fire-arm
+					:time (x29 / temporal-quantity
 						:unit (y1 / year)
-						:mod (x29 / x))))))
-	:ARG0 (x34 / newspaper
-		:name (n / name
-			:op1 "Ned"
-			:op2 "MacKay")
-		:ARG0-of (x37 / have-org-role-91
-			:ARG2 (s / spokesman)
-			:ARG1 (x44 / district
-				:null_edge (x40 / null_tag)
-				:null_edge (x41 / bay
-					:mod (x42 / region))
-				:null_edge (x43 / null_tag)))))
+						:mod (x28 / x))))
+			:ARG0 (x32 / name
+				:op1 "Ned"
+				:op2 "MacKay"
+				:ARG0-of (x35 / have-org-role-91
+					:ARG2 (s / spokesman)
+					:ARG1 (x42 / district
+						:null_edge (x38 / null_tag)
+						:null_edge (x39 / bay
+							:mod (x40 / region))
+						:null_edge (x41 / null_tag)))))))
 
 # ::id 13
-# ::snt " We have to be prepared .
-(x3 / have-03
-	:null_edge (x2 / we)
-	:ARG1 (x6 / prepare-02))
+# ::snt 
+(x2 / have-03
+	:null_edge (x1 / we)
+	:ARG1 (x5 / prepare-02))
 
 # ::id 14
-# ::snt ; Statewide, the biggest fire threat looms in the chaparral-covered coastal mountains south of Santa Barbara, where the moisture content of trees and shrubs is the lowest ever recorded for this time of year, Boyd said. ; " Every year the drought continues, the conditions get more explosive, but we ca n't say for sure what is going to happen this year, " Boyd said. ; Two of the forestry department's 22 ranger units -- both in Southern California -- are fully staffed for the fire season now, Boyd said, and all are expected to be ready by mid-June. ; California does n't face the fire threat alone. ; Officials at the federal Boise Interagency Fire Center in Idaho, which coordinates firefighting efforts throughout the West, said parts of 11 states in the far West, and North Dakota and Minnesota, also face major fire danger this year. ; Wildfire precautions ; The California Department of Forestry and Fire Protection advises residents of rural areas to take special precautions to protect their homes from wildfires this summer : ; (box )Clear at least a 30-foot defensible space of brush and dry grass around your house
+# ::snt ; Statewide , the biggest fire threat looms in the chaparral-covered coastal mountains south of Santa Barbara , where the moisture content of trees and shrubs is the lowest ever recorded for this time of year , Boyd said. ; Every year the drought continues , the conditions get more explosive , but we ca not say for sure what is going to happen this year , Boyd said. ; Two of the forestry department's 22 ranger units both in Southern California are fully staffed for the fire season now , Boyd said , and all are expected to be ready by mid-June. ; California does not face the fire threat alone. ; Officials at the federal Boise Interagency Fire Center in Idaho , which coordinates firefighting efforts throughout the West , said parts of 11 states in the far West , and North Dakota and Minnesota , also face major fire danger this year. ; Wildfire precautions ; The California Department of Forestry and Fire Protection advises residents of rural areas to take special precautions to protect their homes from wildfires this summer : ; (box )Clear at least a 30-foot defensible space of brush and dry grass around your house
 (x / xconcept
 	:x (x1 / and
-		:op1 (x53 / explode-01
-			:degree (x52 / more))
-		:op2 (x55 / contrast-01
-			:ARG1 (x8 / loom-01
-				:ARG0 (x7 / threaten-01
-					:mod (x5 / big
-						:degree (m / most))
-					:mod (x6 / fire-arm))
-				:location (x13 / mountain
-					:mod (x11 / chaparral-covered)
-					:location (x12 / coast))
-				:ARG1 (x175 / and
-					:op1 (x172 / department
-						:null_edge (x171 / null_tag)
-						:poss (x174 / organization
-							:name (n1 / name
-								:op1 "Forestry"))
-						:null_edge (x177 / protect-01
-							:mod (x176 / fire)))
-					:op1 (x178 / advise-01
-						:ARG2 (x184 / take-01
-							:ARG0 x175
-							:ARG0 (x179 / person
-								:ARG0-of (r / reside-01)
-								:ARG1 (x182 / area
-									:mod (x181 / rural)))
-							:ARG1 (x186 / precaution-00
-								:mod (x185 / special))
-							:purpose (x188 / protect-01
-								:ARG0 x179
-								:ARG1 (x190 / home)
-								:ARG2 (x192 / wildfire)
-								:ARG0 (x209 / and
-									:op1 (x206 / space
-										:mod (x205 / defensible)
-										:mod (x208 / brush))
-									:op2 (x211 / grass
-										:ARG1-of (x210 / dry-02)
-										:location (x212 / around
-											:op1 (x214 / house)))
-									:op1 (xap2 / date-entity
-										:season (x194 / summer
-											:mod (x193 / this)))))))))
-			:ARG2 (x59 / say-01
-				:ARG0 x7
-				:ARG0 (x56 / we)
-				:ARG1 (x72 / say-01
-					:time (x68 / year
-						:mod (x67 / this))
-					:ARG0 (x71 / person
-						:name (n / name
-							:op1 "Boyd"))
-					:ARG1 (x168 / precaution-00
-						:mod (x167 / wildfire)))))
-		:op6 (x198 / box))
+		:op6 (x194 / box))
 	:x (x41 / and
-		:op1 (x39 / say-01
-			:ARG0 (x17 / country
-				:name (n2 / name
-					:op1 "Barbara")
-				:null_edge (x16 / country
-					:name (n3 / name
-						:op1 "Santa")))
-			:ARG1 (x22 / contain-01
-				:mod (x21 / moisture)
-				:ARG2 (x25 / and
-					:op1 (x24 / tree)
-					:op2 (x26 / shrub))
-				:ARG1-of (x31 / record-01
-					:ARG0 (x29 / low)
-					:time (x30 / ever)
-					:time (x36 / year
-						:mod (x33 / this))))
-			:ARG0 (x38 / person
-				:name (n4 / name
-					:op1 "Boyd")))
-		:op1 (x47 / continue-01
-			:ARG1 (x46 / drought)
+		:op2 (x46 / continue-01
+			:ARG1 (x45 / drought)
 			:frequency (xap0 / rate-entity-91
-				:ARG2 (x44 / temporal-quantity
+				:ARG2 (x43 / temporal-quantity
 					:unit (y / year)))))
-	:x (x74 / and
-		:op1 (x81 / person
-			:op 22)
-		:op2 (x82 / ranger
-			:ARG1 (x83 / unit
-				:ARG1-of (x76 / include-91)
-				:poss (x79 / department
-					:mod (x78 / forestry)))
-			:ARG1 (x85 / both
-				:location (x88 / state
-					:name (n5 / name
-						:op1 "California")
-					:location (x87 / country
-						:name (n6 / name
-							:op1 "Southern"))))))
-	:x (x122 / and
-		:op3 (x116 / face-01
-			:ARG0 (x113 / state
-				:name (n11 / name
-					:op1 "California"))
-			:ARG1 (x119 / threaten-01
-				:mod (x118 / fire-arm))
-			:manner (x120 / alone))
-		:op2 (x126 / government-organization
-			:name (n12 / name
-				:op1 "federal"
-				:op2 "Boise"
-				:op3 "Interagency"
-				:op4 "Fire"
-				:op5 "Center")
-			:location (x132 / country
+	:x (x72 / and
+		:op2 (x70 / say-01
+			:ARG0 (x69 / person
+				:name (n3 / name
+					:op1 "Boyd"))
+			:ARG1 (x171 / and
+				:op1 (x174 / advise-01
+					:ARG0 (x164 / precaution-00
+						:ARG1-of (x96 / say-01
+							:location (x85 / state
+								:name (n4 / name
+									:op1 "California")
+								:location (x80 / ranger
+									:ARG1 (x81 / unit
+										:ARG1-of (x74 / include-91)
+										:poss (x77 / department
+											:mod (x76 / forestry))))
+								:location (x84 / country
+									:name (n6 / name
+										:op1 "Southern")))
+							:ARG0 (x95 / person
+								:name (n5 / name
+									:op1 "Boyd"))
+							:ARG1 (x98 / and
+								:op2 (x101 / expect-01
+									:ARG1 (x104 / ready-01))
+								:op1 (x155 / face-01
+									:ARG0 (x148 / and
+										:op1 (x119 / have-org-role-91
+											:ARG2 (o / official)
+											:null_edge (x122 / government-organization
+												:name (n7 / name
+													:op1 "federal"
+													:op2 "Boise"
+													:op3 "Interagency"
+													:op4 "Fire"
+													:op5 "Center")
+												:location (x128 / country
+													:name (n11 / name
+														:op1 "Idaho"))
+												:ARG1-of (x131 / coordinate-01
+													:ARG1 (x133 / effort
+														:purpose (x132 / firefighting))
+													:location (x136 / world-region
+														:name (n12 / name
+															:op1 "West")))))
+										:ARG1-of (x138 / say-01
+											:ARG1 (x139 / part)
+											:ARG0 (x142 / state
+												:quant 11)
+											:location (x146 / world-region
+												:name (n8 / name
+													:op1 "West")
+												:mod (x145 / far)))
+										:op2 (x151 / and
+											:op2 (x149 / state
+												:name (n9 / name
+													:op1 "North"
+													:op2 "Dakota"))
+											:op2 (x152 / state
+												:name (n10 / name
+													:op1 "Minnesota"))))
+									:mod (x154 / also)
+									:ARG1 (x158 / danger
+										:mod (x156 / major)
+										:mod (x157 / fire-arm))
+									:time (x160 / year
+										:mod (x159 / this)))))
+						:quant (x99 / all)
+						:mod (x163 / wildfire))
+					:ARG2 (x180 / take-01
+						:ARG0 (x175 / person
+							:ARG0-of (r / reside-01)
+							:ARG1 (x178 / area
+								:mod (x177 / rural)))
+						:ARG1 (x182 / precaution-00
+							:mod (x181 / special))
+						:purpose (x184 / protect-01
+							:ARG0 x175
+							:ARG1 (x186 / home)
+							:ARG2 (x188 / wildfire)
+							:ARG0 (x205 / and
+								:op1 (x202 / space
+									:mod (x201 / defensible)
+									:mod (x204 / brush))
+								:op2 (x207 / grass
+									:ARG1-of (x206 / dry-02)
+									:location (x208 / around
+										:op1 (x210 / house)))
+								:op1 (xap1 / date-entity
+									:season (x190 / summer
+										:mod (x189 / this)))))))))
+		:op1 (x79 / person
+			:op 22))
+	:x (x108 / and
+		:op1 (x112 / face-01
+			:ARG0 (x109 / state
 				:name (n13 / name
-					:op1 "Idaho"))
-			:ARG1-of (x135 / coordinate-01
-				:ARG1 (x137 / effort
-					:purpose (x136 / firefighting))
-				:location (x140 / world-region
-					:name (n14 / name
-						:op1 "West")))))
-	:x (x166 / and
-		:op5 (x159 / face-01
-			:ARG0 (x102 / and
-				:op1 (x100 / say-01
-					:ARG1 (x92 / staff-01
-						:degree (x91 / full)
-						:beneficiary (x96 / season
-							:mod (x95 / fire-arm))
-						:time (x97 / now))
-					:ARG0 (x99 / person
-						:name (n7 / name
-							:op1 "Boyd")))
-				:op2 (x105 / expect-01
-					:ARG0 x99
-					:ARG1 (x108 / ready-01
-						:ARG2 (x152 / and
-							:quant (x103 / all)
-							:op2 (x155 / and
-								:op2 (x153 / state
-									:name (n8 / name
-										:op1 "North"
-										:op2 "Dakota"))
-								:op2 (x156 / state
-									:name (n9 / name
-										:op1 "Minnesota")))
-							:op1 (xap1 / person
-								:ARG0-of (x123 / have-org-role-91
-									:ARG2 (o / official)
-									:ARG1-of (x142 / say-01
-										:ARG1 (x143 / part)
-										:ARG0 (x146 / state
-											:quant 11)
-										:location (x150 / world-region
-											:name (n10 / name
-												:op1 "West")
-											:mod (x149 / far)))))))))
-			:mod (x158 / also)
-			:ARG1 (x162 / danger
-				:mod (x160 / major)
-				:mod (x161 / fire-arm))
-			:time (x164 / year
-				:mod (x163 / this)))))
+					:op1 "California"))
+			:ARG1 (x115 / threaten-01
+				:mod (x114 / fire-arm))
+			:manner (x116 / alone)))
+	:x (x162 / and
+		:op4 (x167 / government-organization
+			:name (n14 / name
+				:op1 "California"
+				:op2 "Department"
+				:op3 "of"
+				:op4 "Forestry")))
+	:x (x192 / and
+		:op1 (x22 / contain-01
+			:mod (x21 / moisture)
+			:ARG2 (x25 / and
+				:op1 (x24 / tree)
+				:op2 (x26 / shrub)))
+		:op2 (x54 / contrast-01
+			:ARG1 (x39 / say-01
+				:ARG1 (x8 / loom-01
+					:ARG1 (x7 / threaten-01
+						:mod (x5 / big
+							:degree (m / most))
+						:mod (x6 / fire-arm))
+					:location (x13 / mountain
+						:mod (x11 / chaparral-covered)
+						:location (x12 / coast)
+						:poss (x17 / country
+							:name (n / name
+								:op1 "Barbara")
+							:null_edge (x16 / country
+								:name (n1 / name
+									:op1 "Santa"))
+							:ARG1-of (x31 / record-01
+								:ARG0 (x29 / low)
+								:time (x30 / ever)
+								:time (x36 / year
+									:mod (x33 / this))))))
+				:ARG0 (x38 / person
+					:name (n2 / name
+						:op1 "Boyd"))
+				:ARG1 (x52 / explode-01
+					:degree (x51 / more))
+				:ARG1 (x60 / sure
+					:ARG2 (x65 / happen-01
+						:ARG0 (x55 / we)
+						:time (x67 / year
+							:mod (x66 / this))))))
+		:op1 (x88 / staff-01
+			:degree (x87 / full)
+			:beneficiary (x92 / season
+				:mod (x91 / fire-arm))
+			:time (x93 / now))
+		:op4 (x173 / protect-01
+			:null_edge (x172 / fire))))
 
 # ::id 15
-# ::snt On some properties, such as those on the ridge tops, the clear area should be as much as 100 feet wide
+# ::snt On some properties , such as those on the ridge tops , the clear area should be as much as 100 feet wide
 (x16 / recommend-01
 	:ARG1 (x23 / wide
 		:prep-for (x3 / property
@@ -535,7 +501,7 @@
 				:null_edge 100))))
 
 # ::id 16
-# ::snt The break does n't have to be bare dirt, but could be planted with fire-resistant vegetation. ; (box )Remove all pine needles and leaves from your roof, eaves and rain gutters. ; (box )Trim tree limbs within 10 feet of your chimney and trim all dead limbs hanging over your house or garage. ; (box )Install a spark arrester on your chimney
+# ::snt The break does not have to be bare dirt , but could be planted with fire-resistant vegetation. ; (box )Remove all pine needles and leaves from your roof , eaves and rain gutters. ; (box )Trim tree limbs within 10 feet of your chimney and trim all dead limbs hanging over your house or garage. ; (box )Install a spark arrester on your chimney
 (x / xconcept
 	:x (x19 / and
 		:op2 (x11 / contrast-01
@@ -586,7 +552,7 @@
 			:op2 (x61 / garage))))
 
 # ::id 17
-# ::snt They are available at hardware stores. ; (box )Treat wood shingle roofs with fire retardant on a regular basis. ; (box )Make sure there is adequate access for firefighters to get to your home, and ensure that neighborhood streets are clearly identified. ; (box )Further information can be obtained from the California Department of Forestry and Fire Protection's fire prevention unit in Morgan Hill, -LRB-408-RRB- 779-2121
+# ::snt They are available at hardware stores. ; (box )Treat wood shingle roofs with fire retardant on a regular basis. ; (box )Make sure there is adequate access for firefighters to get to your home , and ensure that neighborhood streets are clearly identified. ; (box )Further information can be obtained from the California Department of Forestry and Fire Protection's fire prevention unit in Morgan Hill , -LRB-408-RRB- 779-2121
 (x3 / available
 	:domain (x1 / they)
 	:location (x6 / store

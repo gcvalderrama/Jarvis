@@ -25,7 +25,7 @@
 					:op2 (x31 / racism))))))
 
 # ::id 2
-# ::snt Terry D. Barnes, 24, was shot between the eyes in his apartment
+# ::snt Terry D. Barnes , 24 , was shot between the eyes in his apartment
 (x8 / shoot-02
 	:ARG1 (x1 / name
 		:op1 "Terry"
@@ -61,7 +61,7 @@
 						:ARG1 (x30 / wrong-41)))))))
 
 # ::id 4
-# ::snt the seventh shooting death involving Kansas City police officers this year was the seventh shooting death involving Kansas City police officers this year
+# ::snt the seventh shooting death involving Kansas City police officers this year  was the seventh shooting death involving Kansas City police officers this year
 (x17 / involve-01
 	:ARG1 (x4 / die-01
 		:ARG1-of (x3 / shooting)
@@ -84,7 +84,7 @@
 		:ARG1 (x20 / police)))
 
 # ::id 5
-# ::snt In the previous three years, five people were shot and killed
+# ::snt In the previous three years , five people were shot and killed
 (x11 / and
 	:op1 (x10 / shoot-02
 		:duration (x5 / temporal-quantity
@@ -95,23 +95,24 @@
 	:op2 (x12 / kill-01))
 
 # ::id 6
-# ::snt " an officer investigating a report of a prowler just hope that this case will draw the line on where the police can kill an innocent man
-(x11 / hope-01
-	:ARG0 (x3 / have-org-role-91
-		:ARG2 (o / officer)
-		:ARG1-of (x4 / investigate-01
-			:ARG1 (x6 / report-01
-				:ARG1 (x9 / prowler))))
-	:mod (x10 / just)
-	:ARG1 (x16 / draw-02
-		:ARG1 (x14 / case
-			:mod (x13 / this))
-		:purpose (x24 / kill-01
-			:ARG0 (x22 / police)
-			:mod (x23 / possible)
-			:ARG1 (x27 / man
-				:ARG1-of (x26 / person
-					:ARG1-of (i / innocent-41))))))
+# ::snt an officer investigating a report of a prowler  just hope that this case will draw the line on where the police can kill an innocent man
+(x2 / have-org-role-91
+	:ARG2 (o / officer)
+	:ARG1 (x3 / investigate-01
+		:ARG1 (x5 / report-01
+			:ARG1 (x8 / prowler
+				:ARG0-of (x10 / hope-01
+					:mod (x9 / just)
+					:ARG1 (x15 / draw-02
+						:ARG1 (x13 / case
+							:mod (x12 / this))
+						:purpose (x23 / kill-01
+							:ARG0 x13
+							:ARG0 (x21 / police)
+							:mod (x22 / possible)
+							:ARG1 (x26 / man
+								:ARG1-of (x25 / person
+									:ARG1-of (i / innocent-41))))))))))
 
 # ::id 7
 # ::snt Where do you draw the line ?
@@ -119,7 +120,7 @@
 	:ARG1 (x6 / line))
 
 # ::id 8
-# ::snt said roommate Andy Brez, 23, who was sleeping in another bedroom when police entered on Saturday
+# ::snt said roommate Andy Brez , 23 , who was sleeping in another bedroom when police entered on Saturday
 (x1 / say-01
 	:ARG0 (x3 / newspaper
 		:name (n / name
@@ -136,14 +137,14 @@
 					:weekday (x18 / saturday))))))
 
 # ::id 9
-# ::snt Barnes was white, as is the officer who shot him ; however, other recent incidents of alleged excessive force involved black citizens
+# ::snt 
 (x3 / white
 	:domain (x1 / person
 		:name (n / name
 			:op1 "Barnes")))
 
 # ::id 10
-# ::snt Police said the police were told the prowler might have run to the floor on which Barnes lived
+# ::snt Police said the police  were told the prowler might have run to the floor on which Barnes lived
 (x2 / say-01
 	:ARG0 (x1 / police)
 	:ARG1 (x6 / tell-01
@@ -157,7 +158,7 @@
 							:op1 "Barnes")))))))
 
 # ::id 11
-# ::snt Two police officers, whose names were not disclosed, noticed the door to a prowler apartment was not tightly shut and entered, authorities said
+# ::snt Two police officers , whose names were not disclosed , noticed the door to a prowler  apartment was not tightly shut and entered , authorities said
 (x26 / say-01
 	:ARG1 (x11 / notice-01
 		:ARG1 (x22 / and
@@ -178,7 +179,7 @@
 	:ARG0 (x25 / authority))
 
 # ::id 12
-# ::snt An officer encountered Barnes, unarmed, in a T-shirt and boxer shorts, standing in An officer bedroom, police spokesman Sgt. Greg Mills said
+# ::snt An officer encountered Barnes , unarmed , in a T-shirt and boxer shorts , standing in An officer  bedroom , police spokesman Sgt. Greg Mills said
 (x26 / say-01
 	:ARG1 (x3 / encounter-01
 		:ARG1 (x4 / person
@@ -204,28 +205,28 @@
 		:ARG0-of (x23 / sgt.)))
 
 # ::id 13
-# ::snt Barnes made " a kind of lunging motion, " and the officer fired from about 5 to 8 feet, Mills said
-(x23 / say-01
-	:ARG1 (x11 / and
+# ::snt 
+(x21 / say-01
+	:ARG1 (x9 / and
 		:op1 (x2 / make-02
 			:ARG0 (x1 / person
 				:name (n1 / name
 					:op1 "Barnes"))
-			:ARG1 (x8 / motion
-				:mod (x5 / kind)
-				:ARG1-of (x7 / lunge)))
-		:op2 (x14 / fire-01
+			:ARG1 (x7 / motion
+				:mod (x4 / kind)
+				:ARG1-of (x6 / lunge)))
+		:op2 (x12 / fire-01
 			:ARG0 x1
-			:ARG0 (x13 / have-org-role-91
+			:ARG0 (x11 / have-org-role-91
 				:ARG2 (o / officer))
-			:time (x15 / from
-				:op1 (x19 / date-entity))))
-	:ARG0 (x22 / person
+			:time (x13 / from
+				:op1 (x17 / date-entity))))
+	:ARG0 (x20 / person
 		:name (n / name
 			:op1 "Mills")))
 
 # ::id 14
-# ::snt Friends of Barnes questioned whether his apartment door was ajar and whether Terry D. Barnes would have lunged at the officer
+# ::snt Friends of Barnes questioned whether his apartment door was ajar and whether Terry D. Barnes  would have lunged at the officer
 (x4 / question-01
 	:ARG0 (x3 / person
 		:name (n / name
@@ -246,36 +247,36 @@
 					:ARG2 (o / officer))))))
 
 # ::id 15
-# ::snt " Friends of Barnes are defending the officers being in that apartment, " Mills said
-(x16 / say-01
-	:ARG1 (x6 / defend-01
-		:ARG0 (x4 / person
+# ::snt Friends of Barnes  are defending the officers being in that apartment , Mills said
+(x14 / say-01
+	:ARG1 (x5 / defend-01
+		:ARG0 (x3 / person
 			:name (n1 / name
 				:op1 "Barnes"))
 		:ARG0 (xap0 / person
-			:ARG0-of (x8 / have-org-role-91
+			:ARG0-of (x7 / have-org-role-91
 				:ARG2 (o / officer)
-				:ARG1 (x12 / apartment))))
-	:ARG0 (x15 / person
+				:ARG1 (x11 / apartment))))
+	:ARG0 (x13 / person
 		:name (n / name
 			:op1 "Mills")))
 
 # ::id 16
-# ::snt " As for the shooting his apartment, Friends of Barnes will make no assessment of the propriety of that until after the investigation .
-(x13 / make-02
-	:ARG1 (x5 / shoot-02
-		:ARG1 (x7 / apartment))
-	:ARG1 (x11 / person
+# ::snt 
+(x12 / make-02
+	:ARG1 (x4 / shoot-02
+		:ARG1 (x6 / apartment))
+	:ARG1 (x10 / person
 		:name (n / name
 			:op1 "Barnes"))
-	:ARG1 (x15 / assess-01
-		:ARG1 x11
+	:ARG1 (x14 / assess-01
+		:ARG1 x10
 		:polarity -
-		:ARG1 (x18 / propriety
-			:mod (x20 / that)))
-	:time (x21 / until
-		:op1 (x22 / after
-			:op1 (x24 / investigate-01))))
+		:ARG1 (x17 / propriety
+			:mod (x19 / that)))
+	:time (x20 / until
+		:op1 (x21 / after
+			:op1 (x23 / investigate-01))))
 
 # ::id 17
 # ::snt The department has suffered a string of complaints about excessive force and racism since the spring
@@ -293,7 +294,7 @@
 			:season (x16 / spring))))
 
 # ::id 18
-# ::snt Police Chief Steven Bishop said before the latest slaying that the department's standing has fallen in the community, and a " behavior modification " program is being developed for offending officers
+# ::snt Police Chief Steven Bishop said before the latest slaying that the department's standing has fallen in the community , and a behavior modification program is being developed for offending officers
 (x5 / say-01
 	:ARG0 (x4 / person
 		:name (n / name
@@ -312,45 +313,44 @@
 			:ARG1 (x14 / standing
 				:ARG1 (x12 / department))
 			:location (x19 / community))
-		:op2 (x30 / develop-02
-			:ARG1 (x27 / program
-				:mod (x24 / behave-01)
-				:mod (x25 / modify-01))
-			:ARG3 (x32 / offend-01
+		:op2 (x28 / develop-02
+			:ARG1 (x25 / program
+				:mod (x23 / behave-01)
+				:mod (x24 / modify-01))
+			:ARG3 (x30 / offend-01
 				:ARG1 (xap0 / person
-					:ARG0-of (x33 / have-org-role-91
+					:ARG0-of (x31 / have-org-role-91
 						:ARG2 (o / officer)))))))
 
 # ::id 19
-# ::snt " officers 're part of the problem out there on the street, and officers 've got to get back to good, basic police work, " Bishop said after Barnes ' death
-(x30 / say-01
-	:ARG1 (x14 / and
-		:op1 (x7 / problem)
-		:null_edge (x8 / out)
-		:op1 (x12 / street)
-		:op2 (x19 / get-01
-			:ARG2 (x20 / back)
-			:ARG2 (x26 / work-01
-				:mod (x22 / good)
-				:mod (x24 / basic)
-				:ARG0 (x25 / police))
+# ::snt officers  are part of the problem out there on the street , and officers  have got to get back to good , basic police work , Bishop said after Barnesdeath
+(x28 / say-01
+	:ARG1 (x13 / and
+		:op1 (x6 / problem)
+		:null_edge (x7 / out)
+		:op1 (x11 / street)
+		:op2 (x18 / get-01
+			:ARG2 (x19 / back)
+			:ARG2 (x25 / work-01
+				:mod (x21 / good)
+				:mod (x23 / basic)
+				:ARG0 (x24 / police))
 			:ARG2 (xap1 / person
-				:ARG0-of (x15 / have-org-role-91
+				:ARG0-of (x14 / have-org-role-91
 					:ARG2 (o1 / officer))))
 		:op1 (xap0 / person
-			:ARG0-of (x2 / have-org-role-91
+			:ARG0-of (x1 / have-org-role-91
 				:ARG2 (o / officer))))
-	:ARG0 (x29 / person
+	:ARG0 (x27 / person
 		:name (n / name
 			:op1 "Bishop"))
-	:time (x31 / after
-		:op1 (x34 / die-01
-			:ARG1 (x32 / person
-				:name (n1 / name
-					:op1 "Barnes")))))
+	:time (x29 / after
+		:op1 (x30 / person
+			:name (n1 / name
+				:op1 "Barnesdeath"))))
 
 # ::id 20
-# ::snt In June, several white officers bloodied a Nigerian-born Roman Catholic priest with nightsticks as a Nigerian-born Roman Catholic priest lay on the ground
+# ::snt In June , several white officers bloodied a Nigerian-born Roman Catholic priest with nightsticks as a Nigerian-born Roman Catholic priest  lay on the ground
 (x7 / bloody-01
 	:time (x2 / date-entity)
 	:ARG1 (x12 / priest
@@ -382,7 +382,7 @@
 			:mod (x5 / white))))
 
 # ::id 21
-# ::snt The Rev. Joseph Okoye said officers who stopped The Rev. Joseph Okoye on suspicion of drunken driving mistook The Rev. Joseph Okoye foreign accent for drunken speech
+# ::snt The Rev. Joseph Okoye said officers who stopped The Rev. Joseph Okoye  on suspicion of drunken driving mistook The Rev. Joseph Okoye  foreign accent for drunken speech
 (x5 / say-01
 	:ARG0 (x3 / person
 		:name (n / name
@@ -411,7 +411,7 @@
 							:mod (x16 / drunken))))))))
 
 # ::id 22
-# ::snt In May, another black clergyman was hit on the head with a shotgun by a white officer while lying on the ground
+# ::snt In May , another black clergyman was hit on the head with a shotgun by a white officer while lying on the ground
 (x8 / hit-01
 	:time (x2 / date-entity)
 	:ARG1 (x6 / have-org-role-91
@@ -477,7 +477,7 @@
 								:time (x15 / date-entity)))))))))
 
 # ::id 26
-# ::snt In another case, three undercover officers were suspended for a shooting this spring that left a young black man crippled
+# ::snt In another case , three undercover officers were suspended for a shooting this spring that left a young black man crippled
 (x9 / suspend-01
 	:time (x3 / case
 		:mod (x2 / another))
@@ -511,7 +511,7 @@
 				:ARG1 (x17 / shooting)))))
 
 # ::id 28
-# ::snt Also this year, four oficers riddled a man brandishing a barbecue fork with 15 bullets, killing the victim
+# ::snt Also this year , four oficers riddled a man brandishing a barbecue fork with 15 bullets , killing the victim
 (x7 / riddled
 	:mod (x1 / also)
 	:time (x3 / year
@@ -529,7 +529,7 @@
 		:ARG1 (x20 / victim)))
 
 # ::id 29
-# ::snt And an officer killed a man who was spraying An officer with a fire extinguisher
+# ::snt And an officer killed a man who was spraying An officer  with a fire extinguisher
 (x1 / and
 	:op2 (x4 / kill-01
 		:ARG1 (x6 / man
@@ -563,7 +563,7 @@
 		:ARG1 (x12 / force)))
 
 # ::id 32
-# ::snt a two-year veteran of the force was placed on paid leave pending a police investigation and that of a grand jury
+# ::snt a two-year veteran of the force  was placed on paid leave pending a police investigation and that of a grand jury
 (x8 / place-01
 	:ARG2 (x3 / veteran
 		:poss (x6 / force))
@@ -576,53 +576,52 @@
 				:mod (x20 / grand)))))
 
 # ::id 33
-# ::snt " This is a tragic chain of events that is regrettable for Mr. Barnes ' family and for this officer, " Bishop said
-(x24 / say-01
-	:ARG1 (x6 / chain
-		:domain (x2 / this)
-		:mod (x5 / tragic)
-		:consist-of (x8 / event)
-		:ARG1-of (x11 / regret-01
-			:ARG1 (x17 / and
-				:op1 (x16 / family
-					:poss (x14 / person
-						:name (n1 / name
-							:op1 "Barnes")
-						:null_edge (x13 / null_tag)))
-				:op2 (x20 / have-org-role-91
-					:ARG2 (o / officer)
-					:mod (x19 / this)))))
-	:ARG0 (x23 / person
+# ::snt This is a tragic chain of events that is regrettable for Mr. Barnesfamily and for this officer , Bishop said
+(x20 / say-01
+	:ARG1 (x5 / chain
+		:domain (x1 / this)
+		:mod (x4 / tragic)
+		:consist-of (x7 / event)
+		:ARG1-of (x10 / regret-01
+			:ARG1 (x14 / and
+				:op1 (x13 / person
+					:name (n1 / name
+						:op1 "Barnesfamily")
+					:null_edge (x12 / null_tag)
+					:ARG0-of (x17 / have-org-role-91
+						:ARG2 (o / officer)
+						:mod (x16 / this))))))
+	:ARG0 (x19 / person
 		:name (n / name
 			:op1 "Bishop")))
 
 # ::id 34
-# ::snt " The officers were reacting appropriately to a number of circumstances which together led Two police officers to that apartment .
-(x5 / react-01
-	:manner (x6 / appropriate)
-	:ARG1 (x11 / circumstance
-		:quant (x9 / number
-			:ARG1-of (x14 / lead-02
-				:ARG1 (x17 / have-org-role-91
+# ::snt The officers were reacting appropriately to a number of circumstances which together led Two police officers  to that apartment
+(x4 / react-01
+	:manner (x5 / appropriate)
+	:ARG1 (x10 / circumstance
+		:quant (x8 / number
+			:ARG1-of (x13 / lead-02
+				:ARG1 (x16 / have-org-role-91
 					:ARG2 (o1 / officer)
 					:quant 2
-					:ARG1 (x16 / police))
-				:ARG2 (x20 / apartment))))
+					:ARG1 (x15 / police))
+				:ARG2 (x19 / apartment))))
 	:ARG0 (xap0 / person
-		:ARG0-of (x3 / have-org-role-91
+		:ARG0-of (x2 / have-org-role-91
 			:ARG2 (o / officer))))
 
 # ::id 35
-# ::snt " Terry was a good man
-(x6 / man
-	:domain (x2 / person
+# ::snt Terry was a good man
+(x5 / man
+	:domain (x1 / person
 		:name (n / name
 			:op1 "Terry"))
-	:mod (x5 / good))
+	:mod (x4 / good))
 
 # ::id 36
-# ::snt 
-(x14 / say-01
+# ::snt Terry  would have been a good husband and a good father , said Barnesfiancee , Alison Brady
+(x13 / say-01
 	:ARG1 (x8 / and
 		:op2 (x7 / husband
 			:poss (x1 / person
@@ -631,16 +630,15 @@
 			:mod (x6 / good))
 		:op2 (x11 / father
 			:mod (x10 / good)))
-	:ARG0 (x17 / fiancee
-		:poss (x15 / person
-			:name (n / name
-				:op1 "Barnes"))
-		:name (x19 / name
-			:op1 "Alison"
-			:op2 "Brady")))
+	:ARG0 (x14 / person
+		:name (n / name
+			:op1 "Barnesfiancee"
+			:op2 ","
+			:op3 "Alison"
+			:op4 "Brady")))
 
 # ::id 37
-# ::snt a good husband and a good father had planned to marry in June
+# ::snt a good husband and a good father  had planned to marry in June
 (x9 / plan-01
 	:ARG0 (x4 / and
 		:op2 (x3 / husband

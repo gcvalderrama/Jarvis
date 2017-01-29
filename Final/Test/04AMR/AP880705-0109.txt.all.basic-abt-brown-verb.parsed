@@ -1,5 +1,5 @@
 # ::id 1
-# ::snt Firefighters in California, Michigan, Montana, Wyoming and Utah battled holiday weekend fires which blackened more than 6,000 acres of forest and wilderness areas
+# ::snt Firefighters in California , Michigan , Montana , Wyoming and Utah battled holiday weekend fires which blackened more than 6,000 acres of forest and wilderness areas
 (x12 / battle-01
 	:ARG0 (x1 / firefighter)
 	:ARG1 (x10 / and
@@ -32,7 +32,7 @@
 					:mod (x25 / wilderness))))))
 
 # ::id 2
-# ::snt Illegal fireworks were blamed for a blaze that swept over 2,200 rugged acres of Stanislaus National Forest in California, 10 miles west of Yosemite National Park
+# ::snt Illegal fireworks were blamed for a blaze that swept over 2,200 rugged acres of Stanislaus National Forest in California , 10 miles west of Yosemite National Park
 (x4 / blame-01
 	:ARG1 (x2 / firework
 		:mod (x1 / law))
@@ -62,52 +62,55 @@
 								:op1 "Yosemite"))))))))
 
 # ::id 3
-# ::snt The fire, which began Saturday, was declared contained this morning, " Firefighters in California , Michigan , Montana , Wyoming and Utah have evidence confirming that a bottle rocket was a bottle rocket, " said Mary Hale, a spokeswoman for the California Department of Forestry
-(x39 / say-01
-	:ARG1 (x9 / declare-02
-		:ARG1 (x2 / fire-01
-			:ARG1-of (x5 / begin-01
-				:time (xap0 / date-entity
-					:weekday (x6 / saturday))))
-		:ARG1 (x10 / contain-01
-			:time (x12 / morning
-				:mod (x11 / this)))
-		:ARG0 (x15 / firefighters)
-		:ARG1 (x27 / thing
-			:ARG0-of (e / evidence-01)
-			:location (x24 / and
-				:op1 (x17 / state
-					:name (n2 / name
+# ::snt The fire , which began Saturday , was declared contained this morning , Firefighters in California , Michigan , Montana , Wyoming and Utah  have evidence confirming that a bottle rocket  was a bottle rocket , said Mary Hale , a spokeswoman for the California Department of Forestry
+(x9 / declare-01
+	:ARG1 (x2 / fire-01
+		:ARG1-of (x5 / begin-01
+			:time (xap0 / date-entity
+				:weekday (x6 / saturday))))
+	:ARG1 (x10 / contain-01
+		:time (x12 / morning
+			:mod (x11 / this)))
+	:null_edge (x25 / have-03
+		:ARG0 (x14 / firefighter
+			:location (x23 / and
+				:op1 (x16 / state
+					:name (n / name
 						:op1 "California"))
-				:op2 (x19 / country
-					:name (n3 / name
+				:op2 (x18 / country
+					:name (n1 / name
 						:op1 "Michigan"))
-				:op3 (x21 / country
-					:name (n4 / name
+				:op3 (x20 / country
+					:name (n2 / name
 						:op1 "Montana"))
-				:op2 (x23 / country
-					:name (n5 / name
+				:op2 (x22 / country
+					:name (n3 / name
 						:op1 "Wyoming"))
-				:op2 (x25 / country
-					:name (n6 / name
-						:op1 "Utah")))
-			:ARG0-of (x28 / confirm-01
-				:ARG1 (x36 / rocket
-					:domain (x32 / rocket
-						:mod (x31 / bottle))
-					:ARG0-of (x35 / bottle)))))
-	:ARG0 (x41 / person
-		:name (n / name
-			:op1 "Hale")
-		:null_edge (x40 / null_tag)
-		:null_edge (x44 / have-org-role-91
-			:ARG2 (s / spokeswoman)
-			:ARG1 (x47 / government-organization
-				:name (n1 / name
-					:op1 "California"
-					:op2 "Department"
-					:op3 "of"
-					:op4 "Forestry")))))
+				:op2 (x24 / country
+					:name (n4 / name
+						:op1 "Utah"))
+				:op1 (x26 / thing
+					:ARG0-of (e / evidence-01)
+					:ARG0-of (x27 / confirm-01
+						:ARG1 (x35 / rocket
+							:domain (x31 / rocket
+								:mod (x30 / bottle))
+							:ARG0-of (x34 / bottle)
+							:ARG1-of (x37 / say-01
+								:ARG0 x31
+								:ARG0 x34
+								:ARG0 (x39 / person
+									:name (n5 / name
+										:op1 "Hale")
+									:null_edge (x38 / null_tag)
+									:null_edge (x42 / have-org-role-91
+										:ARG2 (s / spokeswoman)
+										:ARG1 (x45 / government-organization
+											:name (n6 / name
+												:op1 "California"
+												:op2 "Department"
+												:op3 "of"
+												:op4 "Forestry"))))))))))))
 
 # ::id 4
 # ::snt The fire was the largest in the forest this year
@@ -130,7 +133,7 @@
 		:mod (x8 / last)))
 
 # ::id 6
-# ::snt In southern Utah's scenic Zion National Park, firefighters tried today to contain a 600-acre fire that was ignited by lightning June 19 but had been allowed to burn in a small area
+# ::snt In southern Utah's scenic Zion National Park , firefighters tried today to contain a 600-acre fire that was ignited by lightning June 19 but had been allowed to burn in a small area
 (x11 / try-01
 	:location (x8 / park
 		:null_edge (x3 / country
@@ -156,7 +159,7 @@
 								:mod (x33 / small)))))))))
 
 # ::id 7
-# ::snt However, on Sunday, winds ranging from 30 mph to 60 mph fanned the flames out of control, Chief Ranger Bob Andrew said
+# ::snt However , on Sunday , winds ranging from 30 mph to 60 mph fanned the flames out of control , Chief Ranger Bob Andrew said
 (x25 / say-01
 	:ARG1 (x14 / fan
 		:ARG0 (x6 / wind
@@ -180,7 +183,7 @@
 				:op1 "Bob"))))
 
 # ::id 8
-# ::snt Firefighters, assisted by water-carrying aircraft, expected to have the blaze contained by midday
+# ::snt Firefighters , assisted by water-carrying aircraft , expected to have the blaze contained by midday
 (x8 / expect-01
 	:ARG0 (x1 / firefighter
 		:ARG1-of (x3 / assist-01
@@ -197,7 +200,7 @@
 			:ARG1 (x4 / property))))
 
 # ::id 10
-# ::snt A four-day fire in 1,100 acres of Hiawatha National Park in the Upper Peninsula of Michigan was also said to be under control, although continued hot dry weather could mean weeks before the fire is extinguished
+# ::snt A four-day fire in 1,100 acres of Hiawatha National Park in the Upper Peninsula of Michigan was also said to be under control , although continued hot dry weather could mean weeks before the fire is extinguished
 (x19 / say-01
 	:ARG1 (x3 / fire-01
 		:duration (x2 / person
@@ -231,79 +234,79 @@
 					:ARG1 (x35 / fire-01))))))
 
 # ::id 11
-# ::snt " A four-day fire in 1,100 acres of Hiawatha National Park in the Upper Peninsula of Michigan's been real quiet out there, " Sgt. Terry Leisening of the Delta County Sheriff's Department said today
-(x36 / say-01
-	:ARG1 (x4 / fire-01
-		:duration (x3 / person
+# ::snt A four-day fire in 1,100 acres of Hiawatha National Park in the Upper Peninsula of Michigan  is been real quiet out there , Sgt. Terry Leisening of the Delta County Sheriff's Department said today
+(x34 / say-01
+	:ARG1 (x3 / fire-01
+		:duration (x2 / person
 			:name (n1 / name
 				:op1 "four-day"))
-		:location (x7 / area-quantity
+		:location (x6 / area-quantity
 			:unit (a / acre)
-			:quant (x6 / 1,100)
-			:null_edge (x11 / country
+			:quant (x5 / 1,100)
+			:null_edge (x10 / country
 				:name (n3 / name
 					:op1 "Park")
-				:null_edge (x9 / country
-					:name (n6 / name
-						:op1 "Hiawatha"))))
-		:location (x15 / peninsula
-			:mod (x14 / country
-				:name (n4 / name
-					:op1 "Upper"))
-			:part-of (x17 / country
-				:name (n5 / name
-					:op1 "Michigan")))
-		:mod (x20 / real)
-		:location (x22 / out
-			:op1 (x23 / there)))
-	:ARG0 (x27 / newspaper
+				:null_edge (x8 / country
+					:name (n4 / name
+						:op1 "Hiawatha"))
+				:location (x14 / peninsula
+					:mod (x13 / country
+						:name (n5 / name
+							:op1 "Upper"))
+					:part-of (x16 / country
+						:name (n6 / name
+							:op1 "Michigan")))))
+		:mod (x19 / real)
+		:location (x21 / out
+			:op1 (x22 / there)))
+	:ARG0 (x25 / newspaper
 		:name (n / name
 			:op1 "Terry"
 			:op2 "Leisening")
-		:ARG0-of (x26 / sgt.)
-		:ARG0-of (x31 / government-organization
+		:ARG0-of (x24 / sgt.)
+		:ARG0-of (x29 / government-organization
 			:name (n2 / name
 				:op1 "Delta"
 				:op2 "County"
 				:op3 "Sheriff"
 				:op4 "'s"
 				:op5 "Department")))
-	:time (x37 / today))
+	:time (x35 / today))
 
 # ::id 12
-# ::snt " Sgt. Terry Leisening of the Delta County Sheriff's Department think they 've got A four-day fire in 1,100 acres of Hiawatha National Park in the Upper Peninsula of Michigan just about out .
-(x12 / think-01
-	:ARG0 (x3 / newspaper
+# ::snt Sgt. Terry Leisening of the Delta County Sheriff's Department  think they have got A four-day fire in 1,100 acres of Hiawatha National Park in the Upper Peninsula of Michigan  just about out
+(x11 / think-01
+	:ARG0 (x2 / newspaper
 		:name (n / name
 			:op1 "Terry"
 			:op2 "Leisening")
-		:ARG0-of (x2 / sgt.)
-		:ARG0-of (x7 / government-organization
+		:ARG0-of (x1 / sgt.)
+		:ARG0-of (x6 / government-organization
 			:name (n1 / name
 				:op1 "Delta"
 				:op2 "County"
 				:op3 "Sheriff"
 				:op4 "'s"
 				:op5 "Department")))
-	:ARG1 (x18 / fire-01
-		:quant (x20 / 1,100)
-		:poss (x25 / country
+	:ARG1 (x17 / fire-01
+		:quant (x19 / 1,100)
+		:poss (x24 / country
 			:name (n2 / name
 				:op1 "Park")
-			:null_edge (x23 / country
+			:null_edge (x22 / country
 				:name (n3 / name
 					:op1 "Hiawatha")))
-		:location (x29 / peninsula
-			:mod (x28 / country
+		:location (x28 / peninsula
+			:mod (x27 / country
 				:name (n4 / name
 					:op1 "Upper"))
-			:location (x31 / country
+			:location (x30 / country
 				:name (n5 / name
 					:op1 "Michigan")))
-		:mod (x32 / just)))
+		:mod (x31 / just)))
 
 # ::id 13
-# ::snt U.S. Forest Service spokesman Dale Bluedorn agreed, but said they will continue to keep patrolling
+# ::snt U.S. Forest Service spokesman Dale Bluedorn agreed , but said they will continue to keep patrolling
 (x9 / contrast-01
 	:ARG1 (x7 / agree-01
 		:ARG0 (x5 / newspaper
@@ -324,31 +327,31 @@
 				:ARG1 (x16 / patrol-01)))))
 
 # ::id 14
-# ::snt " It may not be declared out until there's a three-day rain, " U.S. Forest Service spokesman Dale Bluedorn said Monday
-(x22 / say-01
-	:ARG1 (x3 / possible
-		:domain (x6 / declare-02
-			:time (x8 / until
-				:op1 (x13 / rain
-					:mod (x12 / person
+# ::snt It may not be declared out until there is a three-day rain , U.S. Forest Service spokesman Dale Bluedorn  said Monday
+(x20 / say-01
+	:ARG1 (x2 / possible
+		:domain (x5 / declare-02
+			:time (x7 / until
+				:op1 (x12 / rain
+					:mod (x11 / person
 						:name (n3 / name
 							:op1 "three-day"))))))
-	:ARG0 (x20 / newspaper
+	:ARG0 (x18 / newspaper
 		:name (n / name
 			:op1 "Dale"
 			:op2 "Bluedorn")
-		:ARG0-of (x19 / have-org-role-91
+		:ARG0-of (x17 / have-org-role-91
 			:ARG2 (s / spokesman)
-			:ARG1 (x18 / organization
+			:ARG1 (x16 / organization
 				:name (n1 / name
 					:op1 "Service")
-				:mod (x17 / organization
+				:mod (x15 / organization
 					:name (n2 / name
 						:op1 "Forest")))))
-	:time (x23 / monday))
+	:time (x21 / monday))
 
 # ::id 15
-# ::snt A small contingent of firefighters who hiked into the Absaroka-Beartooth Wilderness on Monday in south-central Montana contained portions of a 2,000-acre fire that has been burning there since June 19, forest officials said
+# ::snt A small contingent of firefighters who hiked into the Absaroka-Beartooth Wilderness on Monday in south-central Montana contained portions of a 2,000-acre fire that has been burning there since June 19 , forest officials said
 (x34 / say-01
 	:ARG1 (x17 / contain-01
 		:ARG0 (x3 / contingent
@@ -381,7 +384,7 @@
 			:ARG1 (x32 / forest))))
 
 # ::id 16
-# ::snt Forest Service policy allows wilderness fires to burn unless The firefighters threaten trails or structures, or threaten to burn outside the wilderness boundary
+# ::snt Forest Service policy allows wilderness fires to burn unless The firefighters  threaten trails or structures , or threaten to burn outside the wilderness boundary
 (x4 / allow-01
 	:ARG1 (x1 / organization
 		:name (n / name
@@ -406,7 +409,7 @@
 									:mod (x23 / wilderness))))))))))
 
 # ::id 17
-# ::snt The firefighters were called in to stop the flames as The firefighters neared the Stillwater River Trail inside the wilderness area
+# ::snt The firefighters were called in to stop the flames as The firefighters  neared the Stillwater River Trail inside the wilderness area
 (x4 / call-01
 	:ARG1 (x2 / firefighter)
 	:time (x13 / near-01
@@ -431,7 +434,7 @@
 		:weekday (x3 / saturday)))
 
 # ::id 19
-# ::snt Phil Jaquith, Beartooth District ranger for the Custer National Forest, said the bulk of the fire on the east banks of the Stillwater River was not being suppressed
+# ::snt Phil Jaquith , Beartooth District ranger for the Custer National Forest , said the bulk of the fire on the east banks of the Stillwater River was not being suppressed
 (x13 / say-01
 	:ARG0 (x1 / newspaper
 		:name (n / name
@@ -457,7 +460,7 @@
 							:op1 "Stillwater")))))))
 
 # ::id 20
-# ::snt Cooler temperatures and calmer wind played a role in getting the blaze contained on the west riverbank, which is about two miles from the trail, Jaquith said
+# ::snt Cooler temperatures and calmer wind played a role in getting the blaze contained on the west riverbank , which is about two miles from the trail , Jaquith said
 (x29 / say-01
 	:ARG1 (x6 / play-02
 		:ARG0 (x3 / and
@@ -481,7 +484,7 @@
 			:op1 "Jaquith")))
 
 # ::id 21
-# ::snt Three-quarters of an inch of rain on Monday helped slow a fire on 1,650 acres in the Shoshone National Forest in Wyoming, and rain also damped fires in Yellowstone National Park
+# ::snt Three-quarters of an inch of rain on Monday helped slow a fire on 1,650 acres in the Shoshone National Forest in Wyoming , and rain also damped fires in Yellowstone National Park
 (x24 / and
 	:op1 (x9 / help-01
 		:ARG1 (x4 / distance-quantity
@@ -533,7 +536,7 @@
 				:ARG1 (x23 / fire-01)))))
 
 # ::id 23
-# ::snt Firefighters concentrated on keeping the fire entering the Du Noir Special Management Area a few miles to the north, Damron said
+# ::snt Firefighters concentrated on keeping the fire entering the Du Noir Special Management Area a few miles to the north , Damron said
 (x22 / say-01
 	:ARG1 (x2 / concentrate
 		:ARG0 (x1 / firefighter)
@@ -555,7 +558,7 @@
 			:op1 "Damron")))
 
 # ::id 24
-# ::snt Meanwhile, a fire which burned 8,700 acres in the Tonto National Forest north of Phoenix, Ariz., was reported extinguished on Monday
+# ::snt Meanwhile , a fire which burned 8,700 acres in the Tonto National Forest north of Phoenix , Ariz. , was reported extinguished on Monday
 (x21 / report-01
 	:time (x1 / meanwhile)
 	:ARG1 (x4 / fire-01

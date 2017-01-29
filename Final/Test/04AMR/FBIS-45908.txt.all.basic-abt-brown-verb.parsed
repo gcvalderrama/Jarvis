@@ -1,5 +1,5 @@
 # ::id 1
-# ::snt a multi-million pound disaster for British agriculture is already a multi-million pound disaster for British agriculture and now a multi-million pound disaster for British agriculture threatens to erupt into a major political row between European governments
+# ::snt a multi-million pound disaster for British agriculture  is already a multi-million pound disaster for British agriculture and now a multi-million pound disaster for British agriculture  threatens to erupt into a major political row between European governments
 (x17 / and
 	:op1 (x13 / disaster
 		:domain (x4 / disaster
@@ -37,38 +37,37 @@
 							:op1 "European")))))))
 
 # ::id 2
-# ::snt a multi-million pound disaster for British agriculture is bovine spongiform encephalopathy (BSE )-- " mad cow " disease -- and few would be prepared to say exactly when and where a multi-million pound disaster for British agriculture will end
-(x22 / and
-	:op1 (x11 / encephalopathy
-		:domain (x4 / disaster
-			:mod (x2 / multi-million)
-			:mod (x3 / mass-quantity
-				:unit (p / pound))
-			:mod (x7 / agriculture
-				:mod (x6 / country
-					:name (n1 / name
-						:op1 "Britain")))
-			:mod (x9 / bovine))
-		:mod (x10 / spongiform)
-		:null_edge (x13 / person
-			:name (n / name
-				:op1 "BSE")))
-	:op2 (x20 / disease
-		:mod (x17 / mad)
-		:mod (x18 / cow))
-	:op2 (x26 / prepare-02
-		:ARG1 x13
-		:ARG1 (x28 / say-01
-			:ARG1 (x23 / few)
-			:time (x41 / end-01
-				:manner (x29 / exact
-					:ARG1 (x31 / and))
-				:ARG1 (x36 / disaster
-					:mod (x34 / multi-million)
-					:mod (x35 / mass-quantity
+# ::snt a multi-million pound disaster for British agriculture  is bovine spongiform encephalopathy (BSE )mad cow disease and few would be prepared to say exactly when and where a multi-million pound disaster for British agriculture  will end
+(x11 / encephalopathy
+	:domain (x4 / disaster
+		:mod (x2 / multi-million)
+		:mod (x3 / mass-quantity
+			:unit (p / pound))
+		:mod (x7 / agriculture
+			:mod (x6 / country
+				:name (n1 / name
+					:op1 "Britain")))
+		:mod (x9 / bovine))
+	:mod (x10 / spongiform)
+	:null_edge (x13 / person
+		:name (n / name
+			:op1 "BSE"))
+	:ARG1-of (x22 / prepare-02
+		:ARG1 (x18 / and
+			:op2 (x17 / disease
+				:mod (x15 / mad)
+				:mod (x16 / cow))
+			:op2 (x19 / few))
+		:ARG1 (x24 / say-01
+			:time (x37 / end-01
+				:manner (x25 / exact
+					:ARG1 (x27 / and))
+				:ARG1 (x32 / disaster
+					:mod (x30 / multi-million)
+					:mod (x31 / mass-quantity
 						:unit (p1 / pound))
-					:mod (x39 / agriculture
-						:mod (x38 / country
+					:mod (x35 / agriculture
+						:mod (x34 / country
 							:name (n2 / name
 								:op1 "Britain"))))))))
 
@@ -101,7 +100,7 @@
 			:mod (x5 / health))))
 
 # ::id 4
-# ::snt Some German politicians say Some German politicians country should risk breaking Single Market free trade rules because the potential health risks are so grave
+# ::snt Some German politicians say Some German politicians  country should risk breaking Single Market free trade rules because the potential health risks are so grave
 (x4 / say-01
 	:ARG0 (x3 / politician
 		:null_edge (x1 / some)
@@ -129,7 +128,7 @@
 						:mod (x20 / health)))))))
 
 # ::id 5
-# ::snt Nonsense, say British government scientists
+# ::snt Nonsense , say British government scientists
 (x3 / say-01
 	:ARG0 (x1 / nonsense)
 	:ARG1 (x6 / scientist
@@ -140,7 +139,7 @@
 					:op1 "Britain")))))
 
 # ::id 6
-# ::snt Meanwhile, the controversy in Britain is reaching new heights
+# ::snt Meanwhile , the controversy in Britain is reaching new heights
 (x8 / reach-01
 	:time (x1 / meanwhile)
 	:ARG0 (x4 / controversy
@@ -151,70 +150,74 @@
 		:mod (x9 / new)))
 
 # ::id 7
-# ::snt Last week, the scientific journal Nature called for a start to be made on replacing the British cattle population with animals free from the infection -- which the magazine estimate would cost & pound ; 30 billion
+# ::snt Last week , the scientific journal Nature called for a start to be made on replacing the British cattle population with animals free from the infection which the magazine estimate would cost & pound ; 30 billion
 (x / xconcept
-	:x (x36 / and
-		:op1 (x8 / call-03
-			:time (x2 / week
-				:mod (x1 / last))
-			:ARG0 (x6 / journal
-				:mod (x5 / science))
-			:ARG1 (x11 / start-01)
-			:ARG2 (x16 / replace-01
-				:ARG1 (x20 / population
-					:null_edge (x18 / country
-						:name (n / name
-							:op1 "Britain"))
-					:ARG1 (x19 / cattle))
-				:ARG1 (x22 / animal
-					:ARG1-of (x23 / free-41
-						:ARG2 (x26 / infect-01)))))
-		:op2 (x31 / estimate-01
-			:mod (x30 / magazine))
-		:op2 (x33 / cost-01)))
+	:x (x35 / and
+		:op1 (x2 / week
+			:mod (x1 / last))
+		:op2 (x6 / journal
+			:mod (x5 / science)
+			:ARG1-of (x8 / call-01
+				:ARG1-of (xap0 / cause-01
+					:ARG0 (x11 / start-01
+						:ARG1-of (x14 / make-01
+							:ARG1 (x16 / replace-01
+								:ARG1 (x20 / population
+									:null_edge (x18 / country
+										:name (n / name
+											:op1 "Britain"))
+									:ARG1 (x19 / cattle))
+								:ARG1 (x22 / animal
+									:ARG1-of (x23 / free-41
+										:ARG2 (x26 / infect-01)))))))))
+		:op2 (x30 / estimate-01
+			:mod (x29 / magazine))
+		:op2 (x32 / cost-01)))
 
 # ::id 8
-# ::snt Next day, one of the farming industry's loudest voices, the magazine Farmers Weekly hit back at what Next day called " a diet of speculation, half-truths and downright lies " and denounced what Next day called " certain publicity-hungry scientists promoted by the media more interested in fiction than fact .
-(x17 / hit-01
-	:time (x2 / day
-		:mod (x1 / next))
-	:ARG0 (x5 / include-91
-		:ARG2 (x11 / voice
-			:poss (x8 / industry
-				:mod (x7 / farm-01))
-			:mod (x10 / loud
-				:degree (m / most))))
-	:ARG1 (x15 / person
+# ::snt Next day , one of the farming industry's loudest voices , the magazine Farmers Weekly hit back at what Next day  called a diet of speculation , half-truths and downright lies and denounced what Next day  called certain publicity-hungry scientists promoted by the media more interested in fiction than fact
+(x2 / day
+	:mod (x1 / next)
+	:null_edge (x15 / person
 		:ARG0-of (f / farm-01)
-		:mod (x14 / magazine))
-	:direction (x18 / back)
-	:time (x22 / day
-		:mod (x21 / next)
-		:time-of (x35 / and
-			:op1 (x23 / call-01
-				:ARG1 (x26 / diet
-					:poss x22
-					:ARG1 (x31 / and
-						:op1 (x28 / speculate-01)
-						:op2 (x30 / half-truth)
-						:op2 (x33 / lie-01
-							:mod (x32 / downright)))))
-			:op2 (x36 / denounce-01
-				:ARG2 (x40 / call-03
-					:ARG0 (x39 / day
-						:mod (x38 / next))
-					:ARG2 (x44 / scientist
-						:mod (x42 / certain)
-						:mod (x43 / publicity-hungry)
-						:ARG1-of (x45 / promote-02
-							:ARG0 (x48 / media
-								:mod (x50 / interest-01
-									:degree (x49 / more)
-									:ARG2 (x52 / fiction)
-									:ARG2 (x54 / fact))))))))))
+		:mod (x14 / magazine)
+		:ARG1-of (x17 / hit-01
+			:direction (x18 / back)
+			:time (x22 / day
+				:mod (x21 / next)
+				:time-of (x33 / and
+					:op1 (x23 / call-02
+						:ARG1 (x25 / diet
+							:poss x22
+							:ARG1 (x30 / and
+								:op1 (x27 / speculate-01)
+								:op2 (x29 / half-truth)
+								:op2 (x32 / lie-01
+									:mod (x31 / downright)))))
+					:op2 (x34 / denounce-01
+						:ARG2 (x38 / call-03
+							:ARG0 (x37 / day
+								:mod (x36 / next))
+							:ARG2 (x47 / interest-01
+								:ARG2 (x41 / scientist
+									:mod (x39 / certain)
+									:mod (x40 / publicity-hungry)
+									:ARG1-of (x42 / promote-02
+										:ARG0 (x45 / media)))
+								:degree (x46 / more)
+								:ARG2 (x49 / fiction)
+								:ARG2 (x51 / fact))))))))
+	:ord (xap0 / ordinal-entity
+		:value (x4 / one
+			:ARG1-of (x5 / include-91
+				:ARG2 (x11 / voice
+					:poss (x8 / industry
+						:mod (x7 / farm-01))
+					:mod (x10 / loud
+						:degree (m / most)))))))
 
 # ::id 9
-# ::snt Calling on the Ministry of Agriculture, Fisheries and Food (MAFF )to do more to explain the disease, the magazine concluded : " The alternative is to exacerbate the current climate of fear and uncertainty ... " The fear is not just that shared by farmers worried about their livelihood
+# ::snt Calling on the Ministry of Agriculture , Fisheries and Food (MAFF )to do more to explain the disease , the magazine concluded : The alternative is to exacerbate the current climate of fear and uncertainty ... The fear is not just that shared by farmers worried about their livelihood
 (x1 / call-01
 	:ARG2 (x9 / and
 		:op1 (x4 / government-organization
@@ -230,23 +233,23 @@
 		:ARG1 (x16 / more)
 		:ARG1 (x20 / disease
 			:ARG0 (x23 / magazine
-				:ARG1-of (x24 / conclude-01))))
-	:ARG1 (x28 / alternative)
-	:ARG2 (x31 / exacerbate-01
-		:ARG1 (x34 / climate
-			:time (x33 / current)
-			:ARG1 (x37 / and
-				:op1 (x36 / fear-01)
-				:op2 (x38 / certain
-					:polarity -))))
-	:ARG1 (x42 / fear-01
-		:mod (x45 / just)
-		:ARG1 (x47 / share-01
-			:ARG2 (x50 / worry-02
-				:ARG1 (x53 / livelihood)))))
+				:ARG1-of (x24 / conclude-01
+					:ARG1 (x27 / alternative
+						:ARG0-of (x30 / exacerbate-01
+							:ARG1 (x33 / climate
+								:time (x32 / current)
+								:ARG1 (x36 / and
+									:op1 (x35 / fear-01)
+									:op2 (x37 / certain
+										:polarity -)
+									:op1 (x40 / fear-01
+										:mod (x43 / just)
+										:ARG1 (x45 / share-01
+											:ARG2 (x48 / worry-02
+												:ARG1 (x51 / livelihood)))))))))))))
 
 # ::id 10
-# ::snt Could The Ministry of Agriculture transfer The Ministry of Agriculture from cows to humans
+# ::snt Could The Ministry of Agriculture  transfer The Ministry of Agriculture  from cows to humans ?
 (x6 / transfer-01
 	:mod (x1 / possible)
 	:ARG0 (x3 / government-organization
@@ -259,32 +262,32 @@
 		:ARG2 (x14 / human)))
 
 # ::id 11
-# ::snt " Mad Cow " disease was probably first observed on a farm in Kent in 1985, when four animals were put down after humans were observed drooling, staggering before collapsing
-(x7 / probable
-	:domain (x9 / observe-01
-		:ARG1 (x5 / disease
+# ::snt Mad Cow disease was probably first observed on a farm in Kent in 1985 , when four animals were put down after humans  were observed drooling , staggering before collapsing
+(x5 / probable
+	:domain (x7 / observe-01
+		:ARG1 (x3 / disease
 			:mod "Mad"
-			:mod (x3 / cow))
-		:ARG2 (x12 / farm
-			:location (x14 / country
+			:mod (x2 / cow))
+		:ARG2 (x10 / farm
+			:location (x12 / country
 				:name (n / name
 					:op1 "Kent")))
-		:time (x16 / date-entity
+		:time (x14 / date-entity
 			:year 1985
-			:time-of (x22 / put-01
-				:ARG1 (x20 / animal
+			:time-of (x20 / put-01
+				:ARG1 (x18 / animal
 					:quant 4)
-				:time (x24 / after
-					:op1 (x27 / person
+				:time (x22 / after
+					:op1 (x25 / person
 						:ARG1-of (o / observe-01)
-						:ARG1 (x25 / human)
-						:ARG1 (x28 / drool
-							:ARG1 (x30 / stagger
-								:time (x31 / before
-									:op1 (x32 / collapse-01))))))))))
+						:ARG1 (x23 / human)
+						:ARG1 (x26 / drool
+							:ARG1 (x28 / stagger
+								:time (x29 / before
+									:op1 (x30 / collapse-01))))))))))
 
 # ::id 12
-# ::snt Scientists at the Central Veterinary Laboratory in Surrey found that the animals ' brains had become holed and spongelike -- similar symptoms to the disease scrapie in sheep and the rare Creutzfeldt-Jakob disease (CJD -RRB-, in humans
+# ::snt Scientists at the Central Veterinary Laboratory in Surrey found that the animalsbrains had become holed and spongelike similar symptoms to the disease scrapie in sheep and the rare Creutzfeldt-Jakob disease (CJD ), in humans
 (x9 / find-02
 	:ARG0 (x1 / have-org-role-91
 		:ARG2 (s / scientist)
@@ -294,29 +297,28 @@
 			:location (x8 / country
 				:name (n / name
 					:op1 "Surrey"))))
-	:ARG1 (x16 / become-01
-		:ARG2 (x14 / brain
-			:ARG1 (x12 / animal))
-		:ARG2 (x18 / and
-			:op1 (x17 / hole
-				:ARG1 x14
-				:ARG1 (x22 / symptom
-					:ARG1-of (x21 / resemble-01
-						:op (s1 / similar))
-					:ARG2 (x29 / and
-						:op1 (x26 / scrapie
-							:ARG1 (x25 / disease))
-						:op2 (x28 / sheep)
-						:op2 (x33 / disease
-							:mod (x31 / rare)
-							:mod (x32 / organization
-								:name (n1 / name
-									:op1 "Creutzfeldt-Jakob"))
-							:ARG0 (x35 / person
-								:name (n2 / name
-									:op1 "CJD")))))
-				:location (x39 / human))
-			:op2 (x19 / spongelike))))
+	:ARG1 (x14 / become-01
+		:ARG1 (x12 / animalsbrain)
+		:ARG2 (x16 / and
+			:op1 (x15 / hole
+				:ARG1 x12)
+			:op2 (x17 / spongelike
+				:ARG1 (x19 / symptom
+					:ARG1-of (x18 / resemble-01
+						:op (s1 / similar)))
+				:ARG2 (x26 / and
+					:op1 (x23 / scrapie
+						:ARG1 (x22 / disease))
+					:op2 (x25 / sheep)
+					:op2 (x30 / disease
+						:mod (x28 / rare)
+						:mod (x29 / organization
+							:name (n1 / name
+								:op1 "Creutzfeldt-Jakob"))
+						:ARG0 (x32 / person
+							:name (n2 / name
+								:op1 "CJD")))
+					:location (x36 / human))))))
 
 # ::id 13
 # ::snt MAFF scientists concluded that BSE had appeared in cattle given processed feed that included remains of diseased sheep
@@ -339,7 +341,7 @@
 							:mod (x17 / diseased))))))))
 
 # ::id 14
-# ::snt New rendering methods, reducing the temperature at which the feed was prepared, were enabling the infective agent to survive, MAFF scientists concluded
+# ::snt New rendering methods , reducing the temperature at which the feed was prepared , were enabling the infective agent to survive , MAFF scientists  concluded
 (x25 / conclude-01
 	:ARG1 (x16 / enable-01
 		:ARG1 (x5 / reduce-01
@@ -358,7 +360,7 @@
 				:op1 "MAFF"))))
 
 # ::id 15
-# ::snt Acting on this advice, in July 1988, John MacGregor, then Agriculture Minister, introduced a ban on such ruminant protein being used in feed
+# ::snt Acting on this advice , in July 1988 , John MacGregor , then Agriculture Minister , introduced a ban on such ruminant protein being used in feed
 (x17 / introduce-02
 	:purpose (x1 / acting
 		:ARG1 (x4 / advise-01
@@ -382,7 +384,7 @@
 					:ARG2 (x27 / feed-01))))))
 
 # ::id 16
-# ::snt Cattle confirmed as having BSE have been put down and incinerated, with the ashes being buried
+# ::snt 
 (x10 / and
 	:op1 (x2 / confirm-01
 		:ARG1 (x1 / cattle)
@@ -399,7 +401,7 @@
 	:op2 (x11 / incinerate-01))
 
 # ::id 17
-# ::snt In 1989 a further ban was introduced, on cattle offal sold for human consumption
+# ::snt In 1989 a further ban was introduced , on cattle offal sold for human consumption
 (x7 / introduce-01
 	:time (x2 / date-entity
 		:year 1989)
@@ -412,7 +414,7 @@
 					:mod (x14 / human))))))
 
 # ::id 18
-# ::snt That year it was officially predicted that 20,000 animals would be affected before the feed ban, together with the drying up of any supplies already on farms, had That year effect
+# ::snt That year it was officially predicted that 20,000 animals would be affected before the feed ban , together with the drying up of any supplies already on farms , had That year  effect
 (x6 / predict-01
 	:ARG1 (x2 / year
 		:mod (x1 / that))
@@ -446,7 +448,7 @@
 			:mod (x8 / original))))
 
 # ::id 20
-# ::snt The Ministry of Agriculture said yesterday that by the beginning of last week the total number of cattle diagnosed since November 1986 as having BSE had risen to 121,898 -- six times the original prediction
+# ::snt The Ministry of Agriculture said yesterday that by the beginning of last week the total number of cattle diagnosed since November 1986 as having BSE had risen to 121,898 six times the original prediction
 (x5 / say-01
 	:ARG0 (x2 / government-organization
 		:name (n / name
@@ -467,9 +469,9 @@
 				:ARG1 (x25 / country
 					:name (n1 / name
 						:op1 "BSE"))))
-		:ARG1 (x35 / predict-01
+		:ARG4 (x34 / predict-01
 			:quant 6
-			:mod (x34 / original))))
+			:mod (x33 / original))))
 
 # ::id 21
 # ::snt The ministry believes that the reason more cattle have died is that farmers or food renderers kept using infected feed after the ban
@@ -492,34 +494,35 @@
 			:op1 (x23 / ban-01))))
 
 # ::id 22
-# ::snt Last week, MAFF said that the numbers of confirmed BSE cases in the first two months of this year showed a 20 per cent drop over the same period in 1993 -- proof, the ministry says, that the epidemic is waning
+# ::snt Last week , MAFF said that the numbers of confirmed BSE cases in the first two months of this year showed a 20 per cent drop over the same period in 1993 proof , the ministry says , that the epidemic is waning
 (x5 / say-01
 	:time (x2 / week
 		:mod (x1 / last))
 	:ARG0 (x4 / organization
 		:name (n / name
 			:op1 "MAFF"))
-	:ARG1 (x21 / show-01
-		:ARG0 (x8 / number
-			:quant-of (x12 / case
-				:ARG1-of (x10 / confirm-01)
-				:mod (x11 / world-region
-					:name (n1 / name
-						:op1 "BSE"))
-				:time (x16 / date-entity
-					:mod (x15 / first)
-					:part-of (x20 / year
-						:mod (x19 / this)))))
-		:ARG1 (x26 / drop-01
-			:quant 20
-			:ARG1 (x30 / period
-				:ARG1-of (x29 / same-41)))
-		:time (x32 / date-entity
-			:year 1993)
-		:ARG1 (x38 / say-01
-			:ARG0 (x37 / ministry)
-			:ARG1 (x44 / wane-01
-				:ARG1 (x42 / epidemic)))))
+	:ARG1 (x37 / say-01
+		:ARG1 (x21 / show-01
+			:ARG0 (x8 / number
+				:quant-of (x12 / case
+					:ARG1-of (x10 / confirm-01)
+					:mod (x11 / world-region
+						:name (n1 / name
+							:op1 "BSE"))
+					:time (x16 / date-entity
+						:mod (x15 / first)
+						:part-of (x20 / year
+							:mod (x19 / this)))))
+			:ARG1 (x26 / drop-01
+				:quant 20
+				:ARG1 (x30 / period
+					:ARG1-of (x29 / same-41))
+				:ARG1 (x33 / proof
+					:time (x32 / date-entity
+						:year 1993))))
+		:ARG0 (x36 / ministry)
+		:ARG1 (x43 / wane-01
+			:ARG0 (x41 / epidemic))))
 
 # ::id 23
 # ::snt Yet there is still controversy
@@ -541,7 +544,7 @@
 					:ARG1 (x13 / feed-01))))))
 
 # ::id 25
-# ::snt MAFF says 5,767 of these were born before the end of 1988, and were probably fed from remaining infected supplies
+# ::snt MAFF says 5,767 of these were born before the end of 1988 , and were probably fed from remaining infected supplies
 (x2 / say-01
 	:ARG0 (x1 / organization
 		:name (n / name
@@ -568,7 +571,7 @@
 		:ARG1 (x10 / ministry)))
 
 # ::id 27
-# ::snt Mark Purdey, a Somerset farmer and independent researcher, believes that the use of organophosphate pesticides, used from the 1980s as a sheep dip and to treat warble-fly infestation in cattle, could have damaged the animals ' immune system, exposing Mark Purdey , a Somerset farmer and independent researcher to the disease
+# ::snt Mark Purdey , a Somerset farmer and independent researcher , believes that the use of organophosphate pesticides , used from the 1980s as a sheep dip and to treat warble-fly infestation in cattle , could have damaged the animalsimmune system , exposing Mark Purdey , a Somerset farmer and independent researcher  to the disease
 (x11 / believe-01
 	:ARG1 (x7 / and
 		:op1 (x2 / person
@@ -598,27 +601,26 @@
 									:ARG1 (x33 / cattle))))
 						:ARG2 (xap0 / date-entity
 							:decade 1980))))
-			:ARG1 (x42 / system
-				:poss (x39 / animal)
-				:mod (x41 / immune))
-			:ARG0 (x44 / expose-01
-				:ARG1 (x45 / person
+			:ARG1 (x40 / system
+				:mod (x39 / animalsimmune))
+			:ARG0 (x42 / expose-01
+				:ARG1 (x43 / person
 					:name (n2 / name
 						:op1 "Mark"
 						:op2 "Purdey")))
-			:ARG0 (x51 / and
-				:op1 (x50 / person
+			:ARG0 (x49 / and
+				:op1 (x48 / person
 					:ARG0-of (f1 / farm-01)
-					:mod (x49 / country
+					:mod (x47 / country
 						:name (n3 / name
 							:op1 "Somerset")))
-				:op2 (x53 / research-01
-					:ARG0-of (x52 / depend-01
+				:op2 (x51 / research-01
+					:ARG0-of (x50 / depend-01
 						:polarity -)
-					:ARG2 (x56 / disease))))))
+					:ARG2 (x54 / disease))))))
 
 # ::id 28
-# ::snt Ministry scientists, originally dismissive, are now reassessing Mark Purdey theories
+# ::snt Ministry scientists , originally dismissive , are now reassessing Mark Purdey  theories
 (x9 / reassess
 	:ARG0 (x2 / scientist
 		:source (x1 / ministry))
@@ -632,24 +634,24 @@
 				:op1 "Purdey"))))
 
 # ::id 29
-# ::snt More recently, researchers have suggested that in some cattle, BSE has been " vertically " transmitted from cow to calf
+# ::snt More recently , researchers have suggested that in some cattle , BSE has been vertically transmitted from cow to calf
 (x6 / suggest-01
 	:null_edge (x1 / more
 		:time (x2 / recent))
 	:ARG0 (x4 / person
 		:ARG0-of (r / research-01))
-	:ARG1 (x18 / transmit-01
+	:ARG1 (x16 / transmit-01
 		:ARG2 (x10 / cattle
 			:quant (x9 / some))
 		:ARG1 (x12 / country
 			:name (n / name
 				:op1 "BSE"))
-		:manner (x16 / vertically)
-		:ARG2 (x20 / cow
-			:ARG1 (x22 / calf))))
+		:manner (x15 / vertically)
+		:ARG2 (x18 / cow
+			:ARG1 (x20 / calf))))
 
 # ::id 30
-# ::snt Given a long incubation period, such a possibility could make the disease harder to eradicate
+# ::snt Given a long incubation period , such a possibility could make the disease harder to eradicate
 (x10 / possible
 	:domain (x11 / make-02
 		:ARG1 (x5 / period
@@ -679,7 +681,7 @@
 						:op1 "seven-year"))))))
 
 # ::id 32
-# ::snt This month is a daunting possibility for the farming industry, which has responded angrily
+# ::snt 
 (x6 / possible
 	:domain (x2 / month
 		:mod (x1 / this))
@@ -690,71 +692,70 @@
 			:manner (x15 / angry))))
 
 # ::id 33
-# ::snt " There is no evidence that this disturbing disease can be transferred from cow to calf, " Farmers Weekly insisted last week
-(x21 / insist-01
-	:ARG1 (x5 / thing
+# ::snt There is no evidence that this disturbing disease can be transferred from cow to calf , Farmers Weekly insisted last week
+(x19 / insist-01
+	:ARG1 (x4 / thing
 		:ARG0-of (e / evidence-01)
 		:polarity -
-		:ARG1 (x10 / possible
-			:domain (x12 / transfer-01
-				:ARG1 (x9 / disease
-					:mod (x7 / this)
-					:mod (x8 / disturbing))
-				:ARG3 (x14 / cow)
-				:ARG2 (x16 / calf))))
-	:time (x23 / week
-		:mod (x22 / last)))
+		:ARG1 (x9 / possible
+			:domain (x11 / transfer-01
+				:ARG1 (x8 / disease
+					:mod (x6 / this)
+					:mod (x7 / disturbing))
+				:ARG3 (x13 / cow)
+				:ARG2 (x15 / calf))))
+	:time (x21 / week
+		:mod (x20 / last)))
 
 # ::id 34
-# ::snt More cautiously, MAFF told The Sunday Telegraph : " We have never said we have ruled out the possibility of maternal transmission, but even if the possibility of maternal transmission occurs, our scientists do not believe the possibility of maternal transmission will do anything other than lengthen the time before the disease is eradicated .
-(x25 / contrast-01
-	:ARG2 (x5 / tell-01
-		:manner (x2 / cautious
-			:degree (x1 / more))
-		:ARG0 (x4 / organization
-			:name (n / name
-				:op1 "MAFF"))
-		:ARG2 (x8 / publication
-			:name (n1 / name
-				:op1 "Telegraph")
-			:time (xap0 / date-entity
-				:null_edge (x7 / null_tag)))
-		:ARG1 (x14 / thing
-			:ARG1-of (s / say-01)
-			:ARG0 (x11 / we)
-			:ARG1 (x17 / rule-03
-				:ARG0 (x15 / we)
-				:ARG1 (x20 / possible
-					:domain (x23 / thing
-						:ARG1-of (t2 / transmit-01))))))
-	:ARG2 (x39 / believe-01
-		:mod (x26 / even
-			:op1 (x29 / possible
-				:domain (x32 / thing
+# ::snt More cautiously , MAFF told The Sunday Telegraph : We have never said we have ruled out the possibility of maternal transmission , but even if the possibility of maternal transmission  occurs , our scientists do not believe the possibility of maternal transmission  will do anything other than lengthen the time before the disease is eradicated
+(x5 / tell-01
+	:manner (x2 / cautious
+		:degree (x1 / more))
+	:ARG0 (x4 / organization
+		:name (n / name
+			:op1 "MAFF"))
+	:ARG2 (x8 / publication
+		:name (n1 / name
+			:op1 "Telegraph")
+		:time (xap0 / date-entity
+			:null_edge (x7 / null_tag)))
+	:ARG1 (x13 / say-01
+		:ARG0 (x10 / we)
+		:ARG1 (x16 / rule-03
+			:ARG0 (x14 / we)
+			:ARG1 (x19 / possible
+				:domain (x22 / thing
 					:ARG1-of (t / transmit-01))))
-		:ARG0 (x36 / scientist)
-		:ARG1 (x50 / lengthen
-			:ARG0 (x41 / possible
-				:domain (x44 / thing
-					:ARG1-of (t1 / transmit-01)))
-			:ARG1 (x47 / anything)
-			:ARG1 (x52 / time)
-			:time (x53 / before
-				:op1 (x57 / eradicate-01
-					:ARG1 (x55 / disease))))))
+		:ARG1 (x38 / believe-01
+			:ARG0 x10
+			:mod (x25 / even
+				:op1 (x28 / possible
+					:domain (x31 / thing
+						:ARG1-of (t1 / transmit-01))))
+			:ARG0 (x35 / scientist)
+			:ARG1 (x49 / lengthen
+				:ARG0 (x40 / possible
+					:domain (x43 / thing
+						:ARG1-of (t2 / transmit-01)))
+				:ARG1 (x46 / anything)
+				:ARG1 (x51 / time)
+				:time (x52 / before
+					:op1 (x56 / eradicate-01
+						:ARG1 (x54 / disease)))))))
 
 # ::id 35
-# ::snt So how long will MAFF be before the epidemic is ended
-(x1 / so
-	:null_edge (x5 / government-organization
-		:name (n / name
-			:op1 "MAFF")
-		:time (x7 / before
-			:op1 (x11 / end-01
-				:ARG1 (x9 / epidemic)))))
+# ::snt So how long will MAFF  be before the epidemic is ended ?
+(x5 / organization
+	:name (n / name
+		:op1 "MAFF")
+	:time (x7 / before
+		:mod (x3 / long)
+		:op1 (x11 / end-01
+			:ARG1 (x9 / epidemic))))
 
 # ::id 36
-# ::snt Richard North, a former environmental health officer turned consultant, and a contributor to The Sunday Telegraph, believes that MAFF's statistics are being skewed to produce more optimistic figures -- claims not surprisingly rejected by the ministry
+# ::snt Richard North , a former environmental health officer turned consultant , and a contributor to The Sunday Telegraph , believes that MAFF's statistics are being skewed to produce more optimistic figures claims not surprisingly rejected by the ministry
 (x20 / believe-01
 	:ARG0 (x1 / newspaper
 		:name (n / name
@@ -786,32 +787,32 @@
 			:ARG1 (x32 / figure
 				:mod (x31 / optimistic
 					:degree (x30 / more))
-				:ARG0-of (x37 / reject-01
-					:ARG1-of (x34 / claim-01)
-					:ARG0-of (x36 / surprise-01)
-					:ARG0 (x40 / ministry))))))
+				:ARG0-of (x36 / reject-01
+					:ARG1-of (x33 / claim-01)
+					:ARG0-of (x35 / surprise-01)
+					:ARG0 (x39 / ministry))))))
 
 # ::id 37
-# ::snt Mr North said : " We have more than 8,000 cattle born after the feed ban that have subsequently contracted BSE
+# ::snt Mr North said : We have more than 8,000 cattle born after the feed ban that have subsequently contracted BSE
 (x3 / say-01
 	:null_edge (x2 / null_tag
 		:null_edge (x1 / mr))
-	:ARG1 (x7 / have-03
-		:ARG0 (x6 / we)
-		:ARG1 (x11 / cattle
-			:quant (x8 / more-than)
-			:ARG1-of (x12 / bear-02
-				:time (x13 / after
-					:op1 (x16 / ban-01
-						:ARG1 (x15 / feed-01)
-						:ARG1-of (x20 / contract-02
-							:time (x19 / subsequent)
-							:ARG1 (x21 / law
+	:ARG1 (x6 / have-03
+		:ARG0 (x5 / we)
+		:ARG1 (x10 / cattle
+			:quant (x7 / more-than)
+			:ARG1-of (x11 / bear-02
+				:time (x12 / after
+					:op1 (x15 / ban-01
+						:ARG1 (x14 / feed-01)
+						:ARG1-of (x19 / contract-02
+							:time (x18 / subsequent)
+							:ARG1 (x20 / law
 								:name (n / name
 									:op1 "BSE")))))))))
 
 # ::id 38
-# ::snt The claim that all of these are affected by illegally retained infected feed gets less credible by the hour .
+# ::snt The claim that all of these are affected by illegally retained infected feed gets less credible by the hour
 (x16 / credible
 	:domain (x2 / claim-01
 		:ARG1 (x8 / affect-01
@@ -825,73 +826,74 @@
 		:unit (h / hour)))
 
 # ::id 39
-# ::snt One question -- perhaps the most important -- remains
-(x9 / remain-01
-	:ARG1 (x2 / question-01
-		:quant 1
-		:mod (x7 / important
-			:degree (x6 / most))))
+# ::snt One question perhaps the most important remains
+(x2 / question-01
+	:quant 1
+	:ARG1 (x7 / remains
+		:mod (x6 / important
+			:degree (x5 / most))))
 
 # ::id 40
-# ::snt If the disease has jumped from sheep to cattle -- and cases have also been reported in kudu antelope at London Zoo -- could " mad cow " disease affect humans
-(x24 / possible
-	:domain (x16 / report-01
-		:ARG1 (x11 / and
-			:op1 (x5 / jump-01
-				:ARG1 (x3 / disease)
-				:ARG2 (x7 / sheep)
-				:ARG2 (x9 / cattle)))
-		:ARG1 (x12 / case)
-		:mod (x14 / also)
-		:ARG2 (x19 / antelope)
-		:location (x22 / zoo
-			:location (x21 / city
-				:name (n / name
-					:op1 "London"))))
-	:domain (x30 / affect-01
-		:ARG1 (x29 / disease
-			:mod (x26 / mad)
-			:mod (x27 / cow))
-		:ARG1 (x31 / human)))
+# ::snt If the disease has jumped from sheep to cattle and cases have also been reported in kudu antelope at London Zoo could mad cow disease  affect humans ?
+(x22 / possible
+	:domain (x26 / affect-01
+		:ARG1 (x5 / jump-01
+			:ARG1 (x3 / disease)
+			:ARG2 (x7 / sheep)
+			:ARG1-of (x15 / report-01
+				:ARG1 (x10 / and
+					:op1 (x9 / cattle)
+					:op2 (x11 / case))
+				:mod (x13 / also)
+				:ARG2 (x18 / antelope
+					:location (x21 / zoo
+						:location (x20 / city
+							:name (n / name
+								:op1 "London"))))))
+		:ARG1 (x25 / disease
+			:mod (x23 / mad)
+			:mod (x24 / cow))
+		:ARG1 (x27 / human)))
 
 # ::id 41
-# ::snt That prospect, discounted by most scientists -- including MAFF critics such as Mr Purdey -- is considered a possibility by Richard Lacey, a Leeds University microbiologist who has been studying cases of CJD, a disease with a long incubation period
-(x18 / consider-01
-	:ARG1 (x20 / possible
+# ::snt That prospect , discounted by most scientists including MAFF critics such as Mr Purdey is considered a possibility by Richard Lacey , a Leeds University microbiologist who has been studying cases of CJD , a disease with a long incubation period
+(x16 / consider-01
+	:ARG1 (x18 / possible
 		:domain (x2 / prospect
 			:mod (x1 / that)
 			:ARG1-of (x4 / discount
 				:ARG0 (x7 / scientist
-					:quant (x6 / most))
-				:ARG1 (x11 / person
-					:ARG0-of (c / criticize-01)
-					:null_edge (x10 / company
-						:name (n2 / name
-							:op1 "MAFF"))
-					:ARG1 (x15 / person
-						:name (n3 / name
-							:op1 "Purdey"))))))
-	:ARG0 (x23 / person
+					:quant (x6 / most)
+					:ARG1 (x10 / person
+						:ARG0-of (c / criticize-01)
+						:ARG0-of (x9 / have-org-role-91
+							:ARG1 (o / organization
+								:name (n2 / name
+									:op1 "MAFF")))
+						:ARG1 (x14 / person
+							:name (n3 / name
+								:op1 "Purdey")))))))
+	:ARG0 (x21 / person
 		:name (n / name
 			:op1 "Lacey")
-		:null_edge (x22 / null_tag)
-		:null_edge (x28 / microbiologist
-			:ARG1 (x26 / organization
+		:null_edge (x20 / null_tag)
+		:null_edge (x26 / microbiologist
+			:ARG1 (x24 / organization
 				:name (n1 / name
 					:op1 "Leeds"))
-			:null_edge (x27 / null_tag)
-			:ARG0-of (x32 / study-01
-				:ARG1 (x33 / case
-					:poss (x38 / disease
-						:mod (x35 / organization
+			:null_edge (x25 / null_tag)
+			:ARG0-of (x30 / study-01
+				:ARG1 (x31 / case
+					:poss (x36 / disease
+						:mod (x33 / organization
 							:name (n4 / name
 								:op1 "CJD"))
-						:time (x43 / period
-							:mod (x41 / long)
-							:mod (x42 / incubation))))))))
+						:time (x41 / period
+							:mod (x39 / long)
+							:mod (x40 / incubation))))))))
 
 # ::id 42
-# ::snt Reviled by the farming industry and privately disparaged by MAFF, Mr Purdey nevertheless insists that there may be a threat
+# ::snt Reviled by the farming industry and privately disparaged by MAFF , Mr Purdey  nevertheless insists that there may be a threat
 (x15 / insist-01
 	:ARG1 (x6 / and
 		:op1 (x1 / revile
@@ -912,36 +914,36 @@
 		:domain (x21 / threaten-01)))
 
 # ::id 43
-# ::snt " Mr Purdey 'd expect an increase in cases of CJD by the early years of the next century, " Mr Purdey says
-(x24 / say-01
-	:ARG1 (x5 / expect-01
-		:ARG0 (x3 / person
+# ::snt Mr Purdey  would expect an increase in cases of CJD by the early years of the next century , Mr Purdey  says
+(x22 / say-01
+	:ARG1 (x4 / expect-01
+		:ARG0 (x2 / person
 			:name (n1 / name
 				:op1 "Purdey")
-			:null_edge (x2 / mr))
-		:ARG1 (x7 / increase-01
-			:ARG1 (x9 / case)
-			:time (x19 / temporal-quantity
+			:null_edge (x1 / mr))
+		:ARG1 (x6 / increase-01
+			:ARG1 (x8 / case)
+			:time (x18 / temporal-quantity
 				:unit (c / century)
-				:op1 (x15 / year
-					:mod (x14 / early))
-				:mod (x18 / next))))
-	:ARG0 (x23 / person
+				:op1 (x14 / year
+					:mod (x13 / early))
+				:mod (x17 / next))))
+	:ARG0 (x21 / person
 		:name (n / name
 			:op1 "Purdey")
-		:null_edge (x22 / mr)))
+		:null_edge (x20 / mr)))
 
 # ::id 44
-# ::snt " The bottom line is most scientists just do n't know what risks most scientists may be running .
-(x4 / line
-	:mod (x3 / bottom)
-	:domain (x11 / know-01
-		:ARG0 (x7 / scientist
-			:quant (x6 / most))
-		:manner (x8 / just)
-		:ARG1 (x16 / possible
-			:domain (x18 / run-01
-				:ARG1 (x13 / risk-01)
-				:ARG0 (x15 / scientist
-					:quant (x14 / most))))))
+# ::snt The bottom line is most scientists  just do not know what risks most scientists  may be running
+(x3 / line
+	:mod (x2 / bottom)
+	:domain (x10 / know-01
+		:ARG0 (x6 / scientist
+			:quant (x5 / most))
+		:manner (x7 / just)
+		:ARG1 (x15 / possible
+			:domain (x17 / run-01
+				:ARG1 (x12 / risk-01)
+				:ARG0 (x14 / scientist
+					:quant (x13 / most))))))
 
