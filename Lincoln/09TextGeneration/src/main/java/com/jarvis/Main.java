@@ -66,11 +66,20 @@ public class Main {
         public ArrayList<ArrayList<CGVerbTerm>> Themes;
         public ArrayList<ArrayList<CGVerbTerm>> Goal;
         public ArrayList<ArrayList<CGVerbTerm>> Attributes;
+
+
+        public CGVerb()
+        {
+            this.VerbAttributes = new ArrayList<CGVerbTerm>();
+            this.Agents = new ArrayList<ArrayList<CGVerbTerm>>();
+            this.Patients = new ArrayList<ArrayList<CGVerbTerm>>();
+            this.Themes  = new ArrayList<ArrayList<CGVerbTerm>>();
+            this.Goal = new ArrayList<ArrayList<CGVerbTerm>>();
+        }
+
     }
 
-    public static void main(String[] args) throws IOException {
-
-
+    public static void SimpleNLGGenerator()  throws IOException {
         String inputDir = "D:/Tesis2016/Jarvis/Final/Training/07NLGMetadata/";
 
         String outputDir =  "D:/Tesis2016/Jarvis/Final/Training/08NLGParagraph/";
@@ -81,6 +90,14 @@ public class Main {
         Lexicon lexicon = Lexicon.getDefaultLexicon();
         NLGFactory nlgFactory = new NLGFactory(lexicon);
         Realiser realiser = new Realiser(lexicon);
+
+
+        List<File> newlist = new ArrayList<File>();
+
+        for (int i = 0; i < 3 ; i++) {
+            newlist.add(listOfFiles[i]);
+        }
+        //newlist.toArray(listOfFiles);
 
         for (File file : listOfFiles) {
             if (file.isFile()) {
@@ -104,46 +121,74 @@ public class Main {
                     SPhraseSpec p = nlgFactory.createClause();
                     p.setFeature(Feature.TENSE, Tense.PAST);
 
+                    CoordinatedPhraseElement coordinateSubject = nlgFactory.createCoordinatedPhrase();
+
                     for (ArrayList<CGVerbTerm> tmpArray: verb.Agents ) {
+                        StringBuilder sbagents = new StringBuilder();
                         for (CGVerbTerm tmp: tmpArray ) {
-                            p.setSubject(tmp.Node.nosuffix);
+                            sbagents.append(tmp.Node.nosuffix + " ");
                         }
+                        NPPhraseSpec subagent = nlgFactory.createNounPhrase(sbagents.toString());
+                        coordinateSubject.addCoordinate(subagent);
                     }
+
+                    p.setSubject(coordinateSubject);
 
                     p.setVerb( verb.Verb.nosuffix);
 
+                    CoordinatedPhraseElement coordinateIndirectObject = nlgFactory.createCoordinatedPhrase();
+
                     for (ArrayList<CGVerbTerm> tmpArray: verb.Patients ) {
+                        StringBuilder sbpatients = new StringBuilder();
                         for (CGVerbTerm tmp: tmpArray ) {
-                            p.setObject(tmp.Node.nosuffix);
+                            sbpatients.append(tmp.Node.nosuffix + " ");
                         }
+                        NPPhraseSpec subpatient = nlgFactory.createNounPhrase(sbpatients.toString());
+                        coordinateIndirectObject.addCoordinate(subpatient);
                     }
+
+                    p.setIndirectObject(coordinateIndirectObject);
+
+                    CoordinatedPhraseElement coordinateObject = nlgFactory.createCoordinatedPhrase();
+
                     for (ArrayList<CGVerbTerm> tmpArray: verb.Themes ) {
-                        p.setObject("related with");
+                        StringBuilder sbthemes = new StringBuilder();
+                        sbthemes.append(" related with ");
                         for (CGVerbTerm tmp: tmpArray ) {
-                            p.setObject(tmp.Node.nosuffix);
+                            sbthemes.append(tmp.Node.nosuffix + " ");
                         }
+                        NPPhraseSpec subtheme = nlgFactory.createNounPhrase(sbthemes.toString());
+                        coordinateObject.addCoordinate(subtheme);
                     }
                     for (ArrayList<CGVerbTerm> tmpArray: verb.Goal ) {
-                        p.setObject("with target of");
+                        StringBuilder sbgoal = new StringBuilder();
+                        sbgoal.append(" with objective of ");
                         for (CGVerbTerm tmp: tmpArray ) {
-                            p.setObject(tmp.Node.nosuffix);
+                            sbgoal.append(tmp.Node.nosuffix + " ");
                         }
+                        NPPhraseSpec subgoal = nlgFactory.createNounPhrase(sbgoal.toString());
+                        coordinateObject.addCoordinate(subgoal);
                     }
                     for (ArrayList<CGVerbTerm> tmpArray: verb.Attributes ) {
-                        p.setObject("with");
+                        StringBuilder sbattributes = new StringBuilder();
+                        sbattributes.append(" with attribute of ");
                         for (CGVerbTerm tmp: tmpArray ) {
-                            p.setObject(tmp.Node.nosuffix);
+                            sbattributes.append(tmp.Node.nosuffix + " ");
                         }
+                        NPPhraseSpec subattribute = nlgFactory.createNounPhrase(sbattributes.toString());
+                        coordinateObject.addCoordinate(subattribute);
                     }
+
+                    p.setObject(coordinateObject);
                     c.addCoordinate(p);
-                    //String output =  realiser.realiseSentence(p);
-                    //sb.append(output);
-                    //sb.append(System.getProperty("line.separator"));
+                  //  String output =  realiser.realiseSentence(p);
+                  //  sb.append(output);
+                  //  sb.append(System.getProperty("line.separator"));
                 }
                 String output =  realiser.realiseSentence(c);
                 sb.append(output);
                 String ta = outputDir + file.getName();
-                System.out.println(ta);
+                //System.out.println(ta);
                 Writer writer = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(ta), "utf-8"));
                 writer.write(sb.toString());
                 writer.close();
@@ -178,7 +223,49 @@ public class Main {
 */
         //Father dedicates thing.
         //Father brings nation for this continent.
+    }
 
+    public static void main(String[] args) throws IOException {
+
+        SimpleNLGGenerator();
+        /*
+        Lexicon lexicon = Lexicon.getDefaultLexicon();
+        NLGFactory nlgFactory = new NLGFactory(lexicon);
+        Realiser realiser = new Realiser(lexicon);
+        SPhraseSpec p = nlgFactory.createClause();
+        p = nlgFactory.createClause();
+        p.setFeature(Feature.TENSE, Tense.PAST);
+
+        NPPhraseSpec subjectA = nlgFactory.createNounPhrase("Mery");
+        NPPhraseSpec subjectB = nlgFactory.createNounPhrase("Helen");
+        NPPhraseSpec subjectC = nlgFactory.createNounPhrase("Alisson");
+
+        CoordinatedPhraseElement coord = nlgFactory.createCoordinatedPhrase();
+        coord.addCoordinate(subjectA);
+        //coord.addCoordinate(subjectB);
+        //coord.addCoordinate(subjectC);
+
+
+
+        p.setSubject(coord);
+
+
+        //NPPhraseSpec subject = nlgFactory.createNounPhrase("father");
+        VPPhraseSpec verb = nlgFactory.createVerbPhrase("bring");
+
+        AdjPhraseSpec adj = nlgFactory.createAdjectivePhrase("nation");
+        //p.setSubject(subject);
+        p.setVerb(verb);
+
+        p.setObject(adj);
+
+        //p.addComplement("continent");
+        String output =  realiser.realiseSentence(p);
+        System.out.println(output);
+
+        //Father dedicates thing.
+        //Father brings nation for this continent.
+*/
     }
 }
 
