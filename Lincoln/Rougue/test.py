@@ -207,5 +207,12 @@ rouge_v2('/Users/gregory/Documents/Github/Jarvis/Final/Training/09ManualSummarie
 rouge_v2('/Users/gregory/Documents/Github/Jarvis/Final/Training/09ManualSummaries/*.txt',
          '/Users/gregory/Documents/Github/Jarvis/Final/Training/08NLGParagraph/', 'NLGParagraph')
 
+
+rouge_v2('/Users/gregory/Documents/Github/Jarvis/Final/Training/09ManualSummaries/*.txt',
+         '/Users/gregory/Documents/Github/Jarvis/Final/Training/08NLGSentenceNoAux2/', '08NLGSentenceNoAux2')
+
+rouge_v2('/Users/gregory/Documents/Github/Jarvis/Final/Training/09ManualSummaries/*.txt',
+         '/Users/gregory/Documents/Github/Jarvis/Final/Training/08NLGSentenceNoCom/', '08NLGSentenceNoCom')
+
 if write_excel:
     workbook.close()
