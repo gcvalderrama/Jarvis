@@ -261,7 +261,7 @@ namespace JarvisSummarization
             //ClearDirectory(ConceptualSummaryDir2);
             //ConceptualRSTSummary(ManualSummaryDir,
             //    @"D:\Tesis2016\Jarvis\Final\Test\04RST",
-            //    @"D:\Tesis2016\Jarvis\Final\Test\05AMRXML", 
+            //    @"D:\Tesis2016\Jarvis\Final\Test\05AMRXML",
             //    null,
             //    ConceptualSummaryDir2);
 
@@ -278,17 +278,12 @@ namespace JarvisSummarization
 
 
 
-            //var AMRRSTInputDir = @"D:\Tesis2016\Jarvis\Lincoln\05AMRParsing\Output2";
-            //var AMRRSTOutputDir = @"D:\Tesis2016\Jarvis\Lincoln\LAB\AMRRSTSummaries65V70";
-            //ClearDirectory(AMRRSTOutputDir);
-            //ConceptualRSTSummary(ManualSummaryDir, AMRRSTInputDir, AMRRSTOutputDir);
-            
             var AMRRSTOutputNLGDir = @"D:\Tesis2016\Jarvis\Final\Test\07NLGMetadata";
             ClearDirectory(AMRRSTOutputNLGDir);
             ConceptualRSTNLG(ManualSummaryDir,
                 @"D:\Tesis2016\Jarvis\Final\Test\04RST",
                 @"D:\Tesis2016\Jarvis\Final\Test\05AMRXML",
-                AMRRSTOutputNLGDir);           
+                AMRRSTOutputNLGDir);
 
         }
     }
