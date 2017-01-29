@@ -7,7 +7,7 @@ import xlsxwriter
 ROUGE = './RELEASE-1.5.5/ROUGE-1.5.5.pl'
 DATA_PATH = './RELEASE-1.5.5/data'
 write_excel = True
-workbook = xlsxwriter.Workbook('rouge_test_recall_final.xlsx')
+workbook = xlsxwriter.Workbook('rouge_test_pres_final.xlsx')
 
 
 def excel_init(name):
