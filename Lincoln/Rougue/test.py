@@ -7,7 +7,7 @@ import xlsxwriter
 ROUGE = './RELEASE-1.5.5/ROUGE-1.5.5.pl'
 DATA_PATH = './RELEASE-1.5.5/data'
 write_excel = True
-workbook = xlsxwriter.Workbook('rouge_v3_nlg.xlsx')
+workbook = xlsxwriter.Workbook('rouge_training_final.xlsx')
 
 
 def excel_init(name):
@@ -191,6 +191,15 @@ def rouge_files_test():
 # split_summaries()
 # lemmatizing_files()
 write_excel = True
+
+rouge_v2('/Users/gregory/Documents/Github/Jarvis/Final/Training/09ManualSummaries/*.txt',
+         '/Users/gregory/Documents/Github/Jarvis/Final/Training/04RSTSummaries/', 'RST')
+
+rouge_v2('/Users/gregory/Documents/Github/Jarvis/Final/Training/09ManualSummaries/*.txt',
+         '/Users/gregory/Documents/Github/Jarvis/Final/Training/06ConceptualSummaries/', 'Conceptual')
+
+rouge_v2('/Users/gregory/Documents/Github/Jarvis/Final/Training/09ManualSummaries/*.txt',
+         '/Users/gregory/Documents/Github/Jarvis/Final/Training/06ConceptualRSTSummaries/', 'ConceptualRST')
 
 rouge_v2('/Users/gregory/Documents/Github/Jarvis/Final/Training/09ManualSummaries/*.txt',
          '/Users/gregory/Documents/Github/Jarvis/Final/Training/08NLGSentence/', 'NLGSentence')
