@@ -729,6 +729,7 @@ namespace JarvisSummarization.CG
                 cgverb.GeneratePatients(this);
                 cgverb.GenerateThemes(this);
                 cgverb.GenerateGoal(this);
+                cgverb.GenerateAttribute(this);
                 temporal.Add(cgverb);
             }
 

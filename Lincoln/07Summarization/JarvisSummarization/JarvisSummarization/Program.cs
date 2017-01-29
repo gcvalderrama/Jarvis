@@ -243,15 +243,15 @@ namespace JarvisSummarization
             string ManualSummaryDir = @"D:\Tesis2016\Jarvis\Final\Training\09ManualSummaries\";
 
             //rst summaries
-            //var rstSummariesDir = @"D:\Tesis2016\Jarvis\Lincoln\LAB\Final\RSTSummary";
-            //string RstInputDIr = @"D:\Tesis2016\Jarvis\Final\Training\04RSTExpantionV2";
-            //ClearDirectory(rstSummariesDir);
-            //RSTSummary(ManualSummaryDir, RstInputDIr, rstSummariesDir);
+            var rstSummariesDir = @"D:\Tesis2016\Jarvis\Lincoln\LAB\Final\RSTSummary";
+            string RstInputDIr = @"D:\Tesis2016\Jarvis\Final\Training\04RSTExpantionV2";
+            ClearDirectory(rstSummariesDir);
+            RSTSummary(ManualSummaryDir, RstInputDIr, rstSummariesDir);
 
-            //var ConceptualSummaryDir = @"D:\Tesis2016\Jarvis\Lincoln\LAB\Final\ConceptualNoExpantionNoVERBSymmary";
+            //var ConceptualSummaryDir = @"D:\Tesis2016\Jarvis\Lincoln\LAB\Final\ConceptualSummaries";
             //ClearDirectory(ConceptualSummaryDir);
             //ConceptualSummary(ManualSummaryDir,
-            //    @"D:\Tesis2016\Jarvis\Final\Training\06AMRNOEXPANTIONXMLV2",
+            //    @"D:\Tesis2016\Jarvis\Final\Training\06AMREXPANTIONXMLV2",
             //    ConceptualSummaryDir);
 
             //var ConceptualSummaryDir2 = @"D:\Tesis2016\Jarvis\Lincoln\LAB\FinalV3\ConceptualRSTNoExpantion50";
@@ -282,12 +282,12 @@ namespace JarvisSummarization
 
 
             
-            var AMRRSTOutputNLGDir = @"D:\Tesis2016\Jarvis\Final\Training\07NLGMetadata";
-            ClearDirectory(AMRRSTOutputNLGDir);
-            ConceptualRSTNLG(ManualSummaryDir,
-                @"D:\Tesis2016\Jarvis\Final\Training\04RSTExpantionV2",
-                @"D:\Tesis2016\Jarvis\Final\Training\06AMREXPANTIONXMLV2",
-                AMRRSTOutputNLGDir);
+            //var AMRRSTOutputNLGDir = @"D:\Tesis2016\Jarvis\Final\Training\07NLGMetadata";
+            //ClearDirectory(AMRRSTOutputNLGDir);
+            //ConceptualRSTNLG(ManualSummaryDir,
+            //    @"D:\Tesis2016\Jarvis\Final\Training\04RSTExpantionV2",
+            //    @"D:\Tesis2016\Jarvis\Final\Training\06AMREXPANTIONXMLV2",
+            //    AMRRSTOutputNLGDir);
         }
     }
 }
