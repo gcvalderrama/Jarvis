@@ -199,11 +199,11 @@ namespace GenerateDocsFromSintacticParser
         }
         private static void NER()
         {
-            var Debug = true;  
+            var Debug = false;  
             var ValidTarget_Pos = new List<String>() { "PRP", "PRP$" };
             var ValidReplace_Pos = new List<String>() { "NN", "NNS", "NNP", "NNPS" };
-            string InputDir = @"D:\Tesis2016\Jarvis\Final\Training\01CoreferenceOutput\";
-            string OutputDir = @"D:\Tesis2016\Jarvis\Final\Training\02000ExpantionDebug\";
+            string InputDir = @"D:\Tesis2016\Jarvis\Final\Test\01CoreferenceOutput";
+            string OutputDir = @"D:\Tesis2016\Jarvis\Final\Test\02DocumentExpantion\";
             foreach (var item in Directory.GetFiles(InputDir))
             {
                 var sb_document = new StringBuilder();

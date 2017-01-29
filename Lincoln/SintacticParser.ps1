@@ -2,25 +2,24 @@ param (
     $inputDir = 'D:\Tesis2016\Jarvis\Lincoln\00Input\Input'    
 )
 
-
 $msbuild = "C:\Windows\Microsoft.NET\Framework\v4.0.30319\msbuild.exe"
 $stdcore = "D:\Tesis2016\CORENLP\stanford-corenlp-full-2015-12-09\*"
 $Output00Dir = 'D:\Tesis2016\Jarvis\Lincoln\00Input\Output'
 $java= "java.exe"
 
-#Get-ChildItem $Output00Dir -Filter *.xml | 
-#Foreach-Object { Remove-Item $_.FullName  }
+Get-ChildItem $Output00Dir -Filter *.xml | 
+Foreach-Object { Remove-Item $_.FullName  }
 
-#Get-ChildItem $inputDir -Filter *.txt | 
-#Foreach-Object {
-    #$filename = $_.FullName    
-    #& $java -cp $stdcore -Xmx2g edu.stanford.nlp.pipeline.StanfordCoreNLP -annotators tokenize,ssplit,pos,lemma,ner,parse,dcoref -file $filename -outputFormat xml  -outputDirectory $Output00Dir -replaceExtension        
-#}
+Get-ChildItem $inputDir -Filter *.txt | 
+Foreach-Object {
+    $filename = $_.FullName    
+    & $java -cp $stdcore -Xmx2g edu.stanford.nlp.pipeline.StanfordCoreNLP -annotators tokenize,ssplit,pos,lemma,ner,parse,dcoref -file $filename -outputFormat xml  -outputDirectory $Output00Dir -replaceExtension        
+}
 
 
-&$msbuild  "D:\Tesis2016\Jarvis\Lincoln\01DocumentExpansion\Jarvis\Jarvis.sln" /verbosity:q /p:configuration=Release /t:Clean,Build
+#&$msbuild  "D:\Tesis2016\Jarvis\Lincoln\01DocumentExpansion\Jarvis\Jarvis.sln" /verbosity:q /p:configuration=Release /t:Clean,Build
 
-$Output01Dir = 'D:\Tesis2016\Jarvis\Lincoln\01DocumentExpansion\Output'
+#$Output01Dir = 'D:\Tesis2016\Jarvis\Lincoln\01DocumentExpansion\Output'
 
 #Get-ChildItem $Output01Dir -Filter *.txt | 
   #  Foreach-Object {
@@ -31,18 +30,18 @@ $Output01Dir = 'D:\Tesis2016\Jarvis\Lincoln\01DocumentExpansion\Output'
 #-d
 
 
-$OutputSintactic = 'D:\Tesis2016\Jarvis\Lincoln\02SintacticAnalysis\Output'
+#$OutputSintactic = 'D:\Tesis2016\Jarvis\Lincoln\02SintacticAnalysis\Output'
 
-Get-ChildItem $OutputSintactic -Filter *.xml | 
-Foreach-Object {
-    Remove-Item $_.FullName        
-}
+#Get-ChildItem $OutputSintactic -Filter *.xml | 
+#Foreach-Object {
+ #   Remove-Item $_.FullName        
+#}
 
-Get-ChildItem $Output01Dir -Filter *.txt | 
-Foreach-Object {
-    $filename = $_.FullName
-    & $java -cp $stdcore -Xmx2g edu.stanford.nlp.pipeline.StanfordCoreNLP -annotators tokenize,ssplit,pos,lemma,ner,parse,dcoref -file $filename -outputFormat xml  -outputDirectory $OutputSintactic -replaceExtension        
-}
+#Get-ChildItem $Output01Dir -Filter *.txt | 
+#Foreach-Object {
+    #$filename = $_.FullName
+    #& $java -cp $stdcore -Xmx2g edu.stanford.nlp.pipeline.StanfordCoreNLP -annotators tokenize,ssplit,pos,lemma,ner,parse,dcoref -file $filename -outputFormat xml  -outputDirectory $OutputSintactic -replaceExtension        
+#}
 
 
 
