@@ -257,13 +257,13 @@ namespace JarvisSummarization
             //    ConceptualSummaryDir);
 
             //conceptual rst
-            //var ConceptualSummaryDir2 = @"D:\Tesis2016\Jarvis\Final\Test\06ConceptualRSTSummaries";
-            //ClearDirectory(ConceptualSummaryDir2);
-            //ConceptualRSTSummary(ManualSummaryDir,
-            //    @"D:\Tesis2016\Jarvis\Final\Test\04RST",
-            //    @"D:\Tesis2016\Jarvis\Final\Test\05AMRXML",
-            //    null,
-            //    ConceptualSummaryDir2);
+            var ConceptualSummaryDir2 = @"D:\Tesis2016\Jarvis\Final\Test\06ConceptualRSTSummaries5055";
+            ClearDirectory(ConceptualSummaryDir2);  
+            ConceptualRSTSummary(ManualSummaryDir,
+                @"D:\Tesis2016\Jarvis\Final\Test\04RST",
+                @"D:\Tesis2016\Jarvis\Final\Test\05AMRXML",
+                null,
+                ConceptualSummaryDir2);
 
 
             //var ConceptualSummaryDir2 = @"D:\Tesis2016\Jarvis\Lincoln\LAB\ConceptualSummariesNONERV2";
@@ -278,12 +278,12 @@ namespace JarvisSummarization
 
 
 
-            var AMRRSTOutputNLGDir = @"D:\Tesis2016\Jarvis\Final\Test\07NLGMetadata";
-            ClearDirectory(AMRRSTOutputNLGDir);
-            ConceptualRSTNLG(ManualSummaryDir,
-                @"D:\Tesis2016\Jarvis\Final\Test\04RST",
-                @"D:\Tesis2016\Jarvis\Final\Test\05AMRXML",
-                AMRRSTOutputNLGDir);
+            //var AMRRSTOutputNLGDir = @"D:\Tesis2016\Jarvis\Final\Test\07NLGMetadata";
+            //ClearDirectory(AMRRSTOutputNLGDir);
+            //ConceptualRSTNLG(ManualSummaryDir,
+            //    @"D:\Tesis2016\Jarvis\Final\Test\04RST",
+            //    @"D:\Tesis2016\Jarvis\Final\Test\05AMRXML",
+            //    AMRRSTOutputNLGDir);
 
         }
     }
