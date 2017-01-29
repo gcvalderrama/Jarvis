@@ -1,0 +1,1065 @@
+# ::id 1
+# ::snt The City Council today asked county prosecutors to investigate the conduct of a white policeman who was secretly filmed while he pushed an off-duty black policeman through a plate-glass window
+(x5 / ask-01
+	:ARG0 (x3 / council
+		:null_edge (x2 / null_tag))
+	:time (x4 / today)
+	:ARG2 (x7 / person
+		:ARG0-of (p / prosecute-01)
+		:mod (x6 / county))
+	:ARG1 (x9 / investigate-01
+		:ARG0 x7
+		:ARG0 (x15 / policeman
+			:mod (x14 / white)
+			:ARG1-of (x19 / film
+				:manner (x18 / secret)
+				:time (x22 / push-01
+					:ARG1 (x26 / policeman
+						:mod (x24 / off-duty)
+						:mod (x25 / black))
+					:ARG2 (x30 / window
+						:mod (x29 / plate-glass)))))))
+
+# ::id 2
+# ::snt county prosecutors  are certainly not happy to have an incident like this occurring , but county prosecutors  need all the information , said Councilman Thomas J. Clark of the council's request for an investigation
+(x23 / say-01
+	:ARG1 (x6 / happy
+		:ARG0 (x2 / person
+			:ARG0-of (p / prosecute-01)
+			:mod (x1 / county))
+		:mod (x4 / certain)
+		:ARG1 (x10 / incident
+			:ARG1-of (x13 / occur-01)
+			:ARG1-of (xap0 / resemble-01
+				:ARG2 (x12 / this)))
+		:null_edge (x15 / contrast-01
+			:ARG2 (x18 / need-01
+				:ARG0 x2
+				:ARG0 (x17 / person
+					:ARG0-of (p1 / prosecute-01)
+					:mod (x16 / county))
+				:ARG1 (x21 / information
+					:quant (x19 / all)))))
+	:ARG1 (x32 / request-01
+		:ARG2 (x24 / councilman)
+		:ARG0 (x25 / person
+			:name (n / name
+				:op1 "Thomas"))
+		:null_edge (x26 / null_tag)
+		:ARG0 (x30 / council)
+		:ARG2 (x35 / investigate-01)))
+
+# ::id 3
+# ::snt Curt Livesay , an assisant Los Angeles County district attorney and head of the office's Special Investigations Division , will lead the probe , said district attorney spokesman Andy Reynolds
+(x26 / say-01
+	:ARG1 (x22 / lead-03
+		:ARG0 (x1 / newspaper
+			:name (n1 / name
+				:op1 "Curt"
+				:op2 "Livesay")
+			:ARG0-of (x11 / and
+				:op3 (x12 / head-01
+					:ARG1 (x19 / division
+						:poss (x15 / office)
+						:mod (x17 / special)
+						:null_edge (x18 / null_tag)))
+				:op1 (xap0 / and
+					:op2 (x10 / attorney
+						:ARG1 (x6 / country
+							:name (n2 / name
+								:op1 "Los"))
+						:ARG1 (x7 / country
+							:name (n3 / name
+								:op1 "Angeles"))
+						:ARG1 (x9 / district)))))
+		:ARG1 (x24 / probe-01))
+	:ARG0 (x28 / attorney
+		:mod (x27 / district))
+	:ARG0 (x30 / person
+		:name (n / name
+			:op1 "Andy")
+		:ARG0-of (x29 / have-org-role-91
+			:ARG2 (s / spokesman))))
+
+# ::id 4
+# ::snt The black Hawthorne policeman , Sgt. Don Jackson , said Sgt. Don Jackson  set up the self-styled sting in Long Beach to expose alleged police racism in the Los Angeles area
+(x10 / say-01
+	:ARG0 (x4 / policeman
+		:mod (x2 / black)
+		:name (x7 / name
+			:op1 "Don"
+			:op2 "Jackson"
+			:ARG0-of (x6 / sgt.)))
+	:ARG0 (x12 / newspaper
+		:name (n / name
+			:op1 "Don"
+			:op2 "Jackson")
+		:ARG0-of (x11 / sgt.))
+	:ARG1 (x14 / set-08
+		:ARG1 (x18 / sting
+			:mod (x17 / self-styled)
+			:location (x20 / organization
+				:name (n1 / name
+					:op1 "Long"
+					:op2 "Beach")))
+		:purpose (x23 / expose-01
+			:ARG0 x12
+			:ARG1 (x26 / racism
+				:ARG1-of (x24 / allege-01)
+				:ARG0 (x25 / police
+					:location (x31 / area
+						:location (x29 / country
+							:name (n2 / name
+								:op1 "Los"))
+						:mod (x30 / country
+							:name (n3 / name
+								:op1 "Angeles"))))))))
+
+# ::id 5
+# ::snt An NBC-TV news camera crew arranged to follow Jackson during the sting Saturday night
+(x6 / arrange-00
+	:ARG0 (x5 / crew
+		:poss (x2 / organization
+			:name (n / name
+				:op1 "NBC-TV"))
+		:mod (x4 / camera
+			:mod (x3 / news)))
+	:ARG2 (x8 / follow-02
+		:ARG2 (x9 / person
+			:name (n1 / name
+				:op1 "Jackson"))
+		:time (x14 / night
+			:mod (x12 / sting)
+			:time (xap0 / date-entity
+				:weekday (x13 / saturday)))))
+
+# ::id 6
+# ::snt The incident was broadcast on NBC's national news Monday night
+(x4 / broadcast-01
+	:ARG1 (x2 / incident)
+	:time (x11 / night
+		:null_edge (x6 / publication
+			:name (n / name
+				:op1 "NBC"))
+		:mod (x8 / nation)
+		:mod (x9 / news)
+		:mod (xap0 / date-entity
+			:null_edge (x10 / null_tag))))
+
+# ::id 7
+# ::snt We have never been able to come forth before with enough evidence (of alleged police racism )
+(x5 / possible
+	:domain (x1 / we)
+	:domain (x12 / evidence-01
+		:time (x9 / before)
+		:quant (x11 / enough)
+		:ARG1 (x17 / racism
+			:ARG1-of (x15 / allege-01)
+			:mod (x16 / police))))
+
+# ::id 8
+# ::snt Now , alleged police racism  is brought to Sgt. Don Jackson  living room in living color , said Frank Berry , president of the Long Beach chapter of the National Association for the Advancement of Colored People
+(x18 / say-01
+	:ARG1 (x7 / bring-01
+		:time (x1 / now)
+		:ARG1 (x5 / racism
+			:ARG1-of (x3 / allege-01)
+			:mod (x4 / police))
+		:ARG2 (x13 / room
+			:ARG0 (x10 / person
+				:name (n / name
+					:op1 "Don")
+				:mod (x9 / sgt.))
+			:mod (x11 / person
+				:name (n1 / name
+					:op1 "Jackson"))
+			:ARG0-of (x12 / live-01)
+			:location (x16 / colour
+				:ARG0-of (x15 / live-01
+					:ARG0 (x19 / name
+						:op1 "Frank"
+						:op2 "Berry"
+						:ARG0-of (x22 / have-org-role-91
+							:ARG2 (p / president)
+							:ARG1 (x27 / chapter
+								:mod (x25 / country
+									:name (n2 / name
+										:op1 "Long"))
+								:location (x26 / country
+									:name (n3 / name
+										:op1 "Beach"))
+								:part-of (x31 / organization
+									:name (n4 / name
+										:op1 "Association")
+									:null_edge (x30 / null_tag)
+									:null_edge (x34 / advancement
+										:ARG1 (x37 / people
+											:mod (x36 / colored))))))))))))
+
+# ::id 9
+# ::snt The police chief in Long Beach declined to comment pending an investigation
+(x7 / decline-02
+	:ARG0 (x3 / have-org-role-91
+		:ARG2 (c / chief)
+		:ARG1 (x2 / police)
+		:ARG1 (x5 / organization
+			:name (n / name
+				:op1 "Long"
+				:op2 "Beach")))
+	:ARG1 (x9 / comment-01
+		:ARG0 x3
+		:manner (x10 / pend-01
+			:ARG1 (x12 / investigate-01))))
+
+# ::id 10
+# ::snt City officials promised a thorough inquiry
+(x3 / promise-01
+	:ARG0 (x2 / have-org-role-91
+		:ARG2 (o / official)
+		:ARG1 (x1 / city))
+	:ARG1 (x6 / inquire-01
+		:manner (x5 / thorough)))
+
+# ::id 11
+# ::snt City officials  will pursue a thorough inquiry  aggressively , said Long Beach City Manager James Hanklad
+(x10 / say-01
+	:ARG1 (x4 / pursue-01
+		:ARG0 (x2 / have-org-role-91
+			:ARG2 (o / official)
+			:ARG1 (x1 / city))
+		:ARG1 (x7 / inquire-01
+			:mod (x6 / thorough))
+		:manner (x8 / aggressive))
+	:ARG0 (x15 / newspaper
+		:name (n / name
+			:op1 "James"
+			:op2 "Hanklad")
+		:ARG0-of (x14 / manager
+			:ARG1 (x12 / country
+				:name (n1 / name
+					:op1 "Beach")
+				:ARG1 (x11 / country
+					:name (n2 / name
+						:op1 "Long")))
+			:ARG1 (x13 / city))))
+
+# ::id 12
+# ::snt If there is evidence of brutality , City officials  will act accordingly
+(x11 / act-02
+	:ARG1 (x4 / thing
+		:ARG0-of (e / evidence-01)
+		:ARG1 (x6 / brutality))
+	:manner (x12 / accordingly)
+	:ARG0 (xap0 / person
+		:ARG0-of (x9 / have-org-role-91
+			:ARG2 (o / official)
+			:ARG1 (x8 / city))))
+
+# ::id 13
+# ::snt Long Beach Mayor Ernie Kell said on NBC's Today show this morning that Long Beach Mayor Ernie Kell  was disturbed by the videotape
+(x6 / say-01
+	:ARG0 (x4 / newspaper
+		:name (n / name
+			:op1 "Ernie"
+			:op2 "Kell")
+		:ARG0-of (x1 / long)
+		:ARG0-of (x2 / beach)
+		:ARG0-of (x3 / have-org-role-91
+			:ARG2 (m / mayor)))
+	:time (x11 / show
+		:null_edge (x8 / publication
+			:name (n1 / name
+				:op1 "NBC"))
+		:null_edge (x10 / null_tag))
+	:time (x13 / morning
+		:mod (x12 / this))
+	:ARG1 (x21 / disturb-01
+		:ARG0 (x15 / country
+			:name (n2 / name
+				:op1 "Long"))
+		:ARG1 (x18 / name
+			:op1 "Ernie"
+			:op2 "Kell"
+			:ARG0-of (x17 / have-org-role-91
+				:ARG2 (m1 / mayor)
+				:ARG1 (x16 / country
+					:name (n3 / name
+						:op1 "Beach"))))
+		:ARG0 (x24 / videotape)))
+
+# ::id 14
+# ::snt Long Beach Mayor Ernie Kell  ... do not support racism or police brutality , nor do the vast majority of the citizens of Long Beach , and City officials  are a caring , thinking community and police brutality  disturbed City officials  very much to see the tape , Long Beach Mayor Ernie Kell  said
+(x54 / say-01
+	:name (x4 / name
+		:op1 "Ernie"
+		:op2 "Kell"
+		:ARG0-of (x1 / long)
+		:ARG0-of (x3 / have-org-role-91
+			:ARG2 (m / mayor)))
+	:ARG1 (x27 / and
+		:op1 (x9 / support-01
+			:ARG1 (x11 / or
+				:op1 (x10 / racism)
+				:op2 (x12 / police)
+				:op2 (x13 / brutality)
+				:op2 (x16 / do-02
+					:ARG0 (x22 / citizen
+						:quant (x19 / majority
+							:mod (x18 / vast))
+						:poss (x25 / country
+							:name (n1 / name
+								:op1 "Beach")
+							:null_edge (x24 / long)))))
+			:ARG1 (x36 / and
+				:op1 (x35 / community
+					:mod (x32 / caring)
+					:mod (x34 / think-01))
+				:op2 (x38 / brutality
+					:ARG0 (x37 / police)
+					:ARG2 (x41 / have-org-role-91
+						:ARG2 (o / official)
+						:ARG1 (x40 / city)))
+				:op2 (x39 / disturbed
+					:degree (x43 / much
+						:degree (x42 / very))
+					:purpose (x45 / see-01
+						:ARG2 x36
+						:ARG1 (x47 / tape))
+					:ARG0 (xap0 / person
+						:ARG0-of (x29 / have-org-role-91
+							:ARG2 (o1 / official)
+							:ARG1 (x28 / city)))))))
+	:ARG0 (x52 / newspaper
+		:name (n / name
+			:op1 "Ernie"
+			:op2 "Kell")
+		:ARG0-of (x49 / long)
+		:ARG0-of (x50 / beach)
+		:ARG0-of (x51 / have-org-role-91
+			:ARG2 (m1 / mayor))))
+
+# ::id 15
+# ::snt Long Beach , about 20 miles south of downtown Los Angeles , has about 450,000 people , including a sizeable black population
+(x13 / have-03
+	:ARG0 (x1 / organization
+		:name (n / name
+			:op1 "Long"
+			:op2 "Beach")
+		:location (xap0 / relative-position
+			:direction (x7 / south
+				:op1 (x6 / distance-quantity
+					:unit (m / mile)
+					:null_edge (x4 / about
+						:null_edge 20
+						:op1 (x11 / country
+							:name (n1 / name
+								:op1 "Angeles")
+							:null_edge (x9 / downtown)
+							:null_edge (x10 / country
+								:name (n2 / name
+									:op1 "Los"))))))))
+	:ARG1 (x14 / about
+		:op1 (x15 / 450,000
+			:compared-to (x22 / population
+				:mod (x20 / sizeable)
+				:mod (x21 / black)))))
+
+# ::id 16
+# ::snt Jackson and a companion were driving through a high-crime area of the city when their car was pulled over and Jackson got out
+(x6 / drive-02
+	:ARG0 (x2 / and
+		:op1 (x1 / person
+			:name (n / name
+				:op1 "Jackson"))
+		:op2 (x4 / companion))
+	:ARG1 (x10 / area
+		:mod (x9 / high-crime)
+		:part-of (x13 / city))
+	:ARG1 (x20 / and
+		:op1 (x18 / pull-01
+			:ARG1 (x16 / car)
+			:mod (x19 / over))
+		:op2 (x22 / get-00
+			:ARG0 (x21 / person
+				:name (n1 / name
+					:op1 "Jackson")))))
+
+# ::id 17
+# ::snt The NBC-TV videotape shows a white officer attempting to search Jackson
+(x4 / show-01
+	:ARG0 (x3 / videotape
+		:mod (x2 / organization
+			:name (n / name
+				:op1 "NBC-TV")))
+	:ARG1 (x7 / have-org-role-91
+		:ARG2 (o / officer)
+		:null_edge (x6 / white)
+		:ARG1 (x8 / attempt-01
+			:ARG1 (x10 / search-01
+				:ARG1 (x11 / person
+					:name (n1 / name
+						:op1 "Jackson"))))))
+
+# ::id 18
+# ::snt The officer unleashed a stream of profanity and roughed up Jackson after a white officer attempting to search Jackson  demanded to know why a white officer attempting to search Jackson  was being searched
+(x8 / and
+	:op1 (x3 / unleash
+		:ARG1 (x5 / stream-02
+			:mod (x7 / profanity))
+		:ARG0 (xap0 / person
+			:ARG0-of (x2 / have-org-role-91
+				:ARG2 (o / officer))))
+	:op2 (x9 / rough
+		:ARG1 (x11 / person
+			:name (n / name
+				:op1 "Jackson"))
+		:time (x12 / after
+			:op1 (x20 / demand-01
+				:ARG0 (x15 / have-org-role-91
+					:ARG2 (o1 / officer)
+					:null_edge (x14 / white)
+					:ARG1 (x16 / attempt-01
+						:ARG1 (x18 / search-01
+							:ARG1 (x19 / person
+								:name (n1 / name
+									:op1 "Jackson")))))
+				:ARG1 (x22 / know-01
+					:ARG0 x15
+					:ARG1 (x33 / search-01
+						:ARG1 (x26 / have-org-role-91
+							:ARG2 (o2 / officer)
+							:ARG1 (x25 / white)
+							:ARG1 (x27 / attempt-01
+								:ARG1 (x29 / search-01
+									:ARG1 (x30 / person
+										:name (n2 / name
+											:op1 "Jackson")))))))))))
+
+# ::id 19
+# ::snt The incident renewed calls for a citizen board to review the Police Department
+(x3 / renew-01
+	:ARG1 (x2 / incident)
+	:ARG1 (x4 / call
+		:ARG1 (x10 / review-01
+			:location (x8 / board
+				:ARG1 (x7 / citizen)))))
+
+# ::id 20
+# ::snt The idea first was debated last year amid allegations of police brutality
+(x5 / debate-01
+	:ARG1 (x2 / idea)
+	:time (x3 / first)
+	:time (x7 / year
+		:mod (x6 / last))
+	:ARG1-of (xap0 / cause-01
+		:ARG1 (x9 / thing
+			:ARG1-of (a / allege-01)
+			:ARG1 (x12 / brutality
+				:ARG0 (x11 / police)))))
+
+# ::id 21
+# ::snt But Jackson's boss said the black officer was looking for trouble
+(x1 / contrast-01
+	:ARG2 (x5 / say-01
+		:ARG0 (x4 / boss
+			:poss (x2 / person
+				:name (n / name
+					:op1 "Jackson")))
+		:ARG1 (x10 / look-04
+			:ARG1 (x12 / trouble)
+			:ARG0 (xap0 / person
+				:mod (x7 / black)
+				:ARG0-of (x8 / have-org-role-91
+					:ARG2 (o / officer))))))
+
+# ::id 22
+# ::snt Hawthorne Police Chief Kenneth R. Stonebraker  submit that if Mr. Jackson had stayed in the vehicle , as did the driver , this incident would not have occurred , Hawthorne Police Chief Kenneth R. Stonebraker said at a news conference Monday
+(x36 / say-01
+	:ARG0 (x1 / organization
+		:name (n / name
+			:op1 "Hawthorne"))
+	:ARG1 (x7 / submit-01
+		:ARG0 (x2 / government-organization
+			:name (n2 / name
+				:op1 "Police"
+				:op2 "Chief"
+				:op3 "Kenneth"
+				:op4 "R."
+				:op5 "Stonebraker")
+			:mod (x3 / chief
+				:ARG3 x1))
+		:time (x13 / stay-01
+			:ARG0 (x11 / person
+				:name (n5 / name
+					:op1 "Jackson")
+				:null_edge (x10 / null_tag))
+			:location (x16 / vehicle)
+			:ARG3 (x19 / do-02
+				:ARG0 x11
+				:ARG1 (x21 / person
+					:ARG0-of (d / drive-01)))
+			:ARG1 (x24 / incident
+				:mod (x23 / this))))
+	:ARG0 (x35 / person
+		:name (n1 / name
+			:op1 "Stonebraker")
+		:null_edge (x30 / organization
+			:name (n3 / name
+				:op1 "Hawthorne"))
+		:null_edge (x31 / null_tag)
+		:null_edge (x32 / chief)
+		:null_edge (x33 / person
+			:name (n4 / name
+				:op1 "Kenneth"))
+		:null_edge (x34 / null_tag))
+	:ARG2 (x40 / conference
+		:mod (x39 / news))
+	:time (x41 / monday))
+
+# ::id 23
+# ::snt Since the incident apparently was timed by Jackson to coincide with the birthday of Dr. Martin Luther King Jr. the confrontation should be considered nothing short of timed sensationalism at the risk of serious injury to all of the parties involved , Stonebraker said
+(x44 / say-01
+	:ARG1 (x22 / recommend-01
+		:ARG1 (x24 / consider-01
+			:ARG1 (x6 / time
+				:time (x1 / since)
+				:ARG1 (x3 / incident)
+				:manner (x4 / apparent)
+				:ARG0 (x8 / person
+					:name (n1 / name
+						:op1 "Jackson"))
+				:ARG2 (x10 / coincide-01
+					:ARG1 (x13 / birthday
+						:poss (x16 / company
+							:name (n2 / name
+								:op1 "Martin"
+								:op2 "Luther"
+								:op3 "King"
+								:op4 "Jr.")))
+					:ARG1 (x21 / confront-01)))
+			:ARG1 (x25 / nothing
+				:mod (x26 / short-41
+					:ARG1 (x29 / sensationalism
+						:ARG1-of (x28 / time))))
+			:ARG1 (x32 / risk-01
+				:ARG0 (x35 / injure-01
+					:mod (x34 / serious)
+					:ARG1 (x40 / party
+						:quant (x37 / all)
+						:ARG1-of (x41 / involve-01))))))
+	:ARG0 (x43 / person
+		:name (n / name
+			:op1 "Stonebraker")))
+
+# ::id 24
+# ::snt As a police chief , Sgt. Don Jackson  added , Sgt. Don Jackson  do not for one minute condone the unlawful use of force or police brutality
+(x19 / condone-01
+	:ARG2 (x4 / chief
+		:mod (x3 / police))
+	:null_edge (x9 / add-01
+		:ARG0 (x7 / newspaper
+			:name (n1 / name
+				:op1 "Don"
+				:op2 "Jackson")
+			:ARG0-of (x6 / sgt.)))
+	:ARG0 (x12 / newspaper
+		:name (n / name
+			:op1 "Don"
+			:op2 "Jackson")
+		:ARG0-of (x11 / sgt.))
+	:ARG3 (x18 / temporal-quantity
+		:unit (m / minute)
+		:quant 1)
+	:ARG1 (x22 / use-01
+		:ARG1 (x27 / brutality
+			:ARG1 (x25 / or
+				:op1 (x24 / force)
+				:op2 (x26 / police)))))
+
+# ::id 25
+# ::snt The 30-year-old Jackson , who has been on a stress-related disability leave from Sgt. Don Jackson  Hawthorne job for 22 months , contends the incident is typical of a pattern of racism by white officers in the Los Angeles area
+(x23 / contend-00
+	:ARG0 (x3 / person
+		:name (n / name
+			:op1 "Jackson")
+		:null_edge (x2 / person
+			:name (n1 / name
+				:op1 "30-year-old"))
+		:ARG1-of (x12 / left
+			:mod (x11 / disability
+				:mod (x10 / stress-related))
+			:ARG2 (x18 / job
+				:null_edge (x14 / sgt.)
+				:poss (x15 / person
+					:name (n2 / name
+						:op1 "Don"))
+				:poss (x16 / person
+					:name (n3 / name
+						:op1 "Jackson")))
+			:duration (x21 / temporal-quantity
+				:unit (m / month)
+				:quant (x20 / person
+					:op 22))))
+	:ARG1 (x27 / typify-01
+		:domain (x25 / incident)
+		:ARG1 (x30 / pattern
+			:mod (x32 / racism
+				:ARG0 (xap0 / person
+					:ARG0-of (x35 / have-org-role-91
+						:ARG2 (o / officer)
+						:mod (x34 / white)
+						:location (x40 / area
+							:location (x38 / country
+								:name (n4 / name
+									:op1 "Los"))
+							:mod (x39 / country
+								:name (n5 / name
+									:op1 "Angeles")))))))))
+
+# ::id 26
+# ::snt Jackson alleges racist slurs and actions forced Sgt. Don Jackson  from the Hawthorne department
+(x2 / allege-01
+	:ARG0 (x1 / person
+		:name (n / name
+			:op1 "Jackson"))
+	:ARG1 (x7 / force-01
+		:ARG0 (x5 / and
+			:op1 (x4 / slur
+				:mod (x3 / racist))
+			:op2 (x6 / action))
+		:ARG1 (x9 / name
+			:op1 "Don"
+			:op2 "Jackson"
+			:ARG0-of (x8 / sgt.))
+		:ARG2 (x14 / department)))
+
+# ::id 27
+# ::snt Sgt. Don Jackson  has a disability lawsuit pending , has filed racism complaints against the department and conducted a similar personal sting operation against Los Angeles police
+(x4 / have-03
+	:ARG0 (x2 / newspaper
+		:name (n / name
+			:op1 "Don"
+			:op2 "Jackson")
+		:ARG0-of (x1 / sgt.))
+	:ARG1 (x17 / and
+		:op1 (x7 / lawsuit
+			:mod (x6 / disability)
+			:ARG1-of (x8 / pend-01))
+		:op2 (x18 / conduct-01
+			:ARG1 (x23 / operation
+				:ARG1-of (x20 / resemble-01
+					:op (s / similar))
+				:mod (x22 / sting
+					:mod (x21 / personal))
+				:ARG1 (x27 / police
+					:mod (x25 / country
+						:name (n1 / name
+							:op1 "Los"))
+					:mod (x26 / country
+						:name (n2 / name
+							:op1 "Angeles")))))
+		:op1 (xap0 / multi-sentence
+			:ARG1 (x11 / file-02
+				:ARG1 (x13 / complain-01
+					:mod (x12 / racism)
+					:ARG1 (x16 / department))))))
+
+# ::id 28
+# ::snt Jackson was riding as a passenger with Jeffrey Hill , a 30-year-old off-duty state corrections officer , when white officers in the Los Angeles area  were pulled over allegedly for straddling lanes , which white officers in the Los Angeles area  denied
+(x3 / ride-01
+	:ARG0 (x1 / person
+		:name (n / name
+			:op1 "Jackson"))
+	:ARG1 (x6 / passenger
+		:name (x8 / name
+			:op1 "Jeffrey"
+			:op2 "Hill"
+			:ARG0-of (x16 / have-org-role-91
+				:ARG2 (o / officer)
+				:ARG1 (x12 / person
+					:name (n1 / name
+						:op1 "30-year-old"))
+				:ARG1 (x14 / state
+					:mod (x13 / off-duty))
+				:ARG1 (x15 / correct-01))
+			:ARG0-of (x27 / pull-01
+				:ARG2 (x28 / over)
+				:ARG2 (x31 / straddle-01
+					:ARG1 (x32 / lane
+						:ARG1-of (x42 / deny-01
+							:ARG0 (xap1 / person
+								:ARG0-of (x36 / have-org-role-91
+									:ARG2 (o1 / officer)
+									:mod (x35 / white)
+									:location (x41 / area
+										:location (x39 / country
+											:name (n4 / name
+												:op1 "Los"))
+										:mod (x40 / country
+											:name (n5 / name
+												:op1 "Angeles"))))))))
+				:ARG1 (xap0 / person
+					:ARG0-of (x20 / officer
+						:mod (x19 / white)
+						:location (x25 / area
+							:location (x23 / country
+								:name (n2 / name
+									:op1 "Los"))
+							:mod (x24 / country
+								:name (n3 / name
+									:op1 "Angeles")))))))))
+
+# ::id 29
+# ::snt Jackson got out after the car stopped and police approached
+(x2 / get-01
+	:ARG0 (x1 / person
+		:name (n / name
+			:op1 "Jackson"))
+	:time (x4 / after
+		:op1 (x8 / and
+			:op1 (x7 / stop-01
+				:ARG0 (x6 / car))
+			:op2 (x10 / approach-02
+				:ARG0 x6
+				:ARG0 (x9 / police)))))
+
+# ::id 30
+# ::snt During an argument , Long Beach Officer Mark Dickey ordered Jackson to face a building and put his hands behind Long Beach Officer Mark Dickey  head
+(x16 / and
+	:op1 (x10 / order-02
+		:ARG2 (x3 / argument)
+		:ARG0 (x5 / organization
+			:name (n / name
+				:op1 "Long"
+				:op2 "Beach"))
+		:ARG0 (x8 / person
+			:name (n1 / name
+				:op1 "Mark"
+				:op2 "Dickey")
+			:ARG0-of (x7 / officer))
+		:ARG1 (x11 / person
+			:name (n2 / name
+				:op1 "Jackson")))
+	:op1 (x13 / face-01
+		:ARG0 x11
+		:ARG1 (x15 / building))
+	:op2 (x17 / put-01
+		:ARG0 x11
+		:ARG1 (x19 / hand)
+		:ARG2 (x20 / behind
+			:op1 (x25 / person
+				:name (n3 / name
+					:op1 "Dickey")
+				:null_edge (x21 / long)
+				:null_edge (x22 / beach)
+				:null_edge (x23 / officer)
+				:null_edge (x24 / null_tag)))
+		:ARG1 (x26 / head)))
+
+# ::id 31
+# ::snt Jackson complied , and moments later was pushed through a plate-glass store window
+(x4 / and
+	:op1 (x2 / comply-01
+		:ARG0 (x1 / person
+			:name (n / name
+				:op1 "Jackson")))
+	:op2 (x8 / push-01
+		:time (x6 / late)
+		:ARG1 (x13 / window
+			:mod (x12 / store
+				:mod (x11 / plate-glass)))))
+
+# ::id 32
+# ::snt no problem  am all right
+(x2 / problem
+	:topic (x5 / right
+		:mod (x4 / all
+			:polarity -)))
+
+# ::id 33
+# ::snt OK , no problem , said Jackson on the videotape
+(x6 / say-01
+	:ARG1 (x4 / problem
+		:mod (x1 / ok
+			:polarity -))
+	:ARG0 (x7 / person
+		:name (n / name
+			:op1 "Jackson"))
+	:ARG1 (x10 / videotape))
+
+# ::id 34
+# ::snt Police booked Jackson for investigation of interfering with police and challenging a police officer
+(x2 / book
+	:ARG0 (x1 / police)
+	:ARG1 (x3 / person
+		:name (n / name
+			:op1 "Jackson"))
+	:ARG2 (x5 / investigate-01
+		:ARG1 x3
+		:ARG1 (x10 / and
+			:op1 (x7 / interfere
+				:ARG1 (x9 / police))
+			:op2 (x11 / challenge-01
+				:ARG1 (x14 / have-org-role-91
+					:ARG2 (o / officer)
+					:ARG1 (x13 / police))))))
+
+# ::id 35
+# ::snt Hill was issued a traffic citation
+(x3 / issue-01
+	:ARG1 (x1 / person
+		:name (n / name
+			:op1 "Hill"))
+	:ARG1 (x6 / citation
+		:mod (x5 / traffic)))
+
+# ::id 36
+# ::snt The officer simply used violence , Jackson said Monday
+(x8 / say-01
+	:ARG1 (x4 / use-01
+		:ARG0 (x2 / have-org-role-91
+			:ARG2 (o / officer))
+		:mod (x3 / simple)
+		:ARG1 (x5 / violence))
+	:ARG0 (x7 / person
+		:name (n / name
+			:op1 "Jackson"))
+	:time (x9 / monday))
+
+# ::id 37
+# ::snt Sgt. Don Jackson  already cooperated and told a white officer attempting to search Jackson  a white officer attempting to search Jackson  could search Sgt. Don Jackson  , Jackson said
+(x29 / say-01
+	:ARG1 (x6 / and
+		:op1 (x5 / cooperate-01
+			:ARG0 (x2 / newspaper
+				:name (n1 / name
+					:op1 "Don"
+					:op2 "Jackson")
+				:ARG0-of (x1 / sgt.))
+			:time (x4 / already))
+		:op2 (x7 / tell-01
+			:ARG2 (x10 / have-org-role-91
+				:ARG2 (o / officer)
+				:null_edge (x9 / white)
+				:ARG1 (x11 / attempt-01
+					:ARG1 (x13 / search-01
+						:ARG2 (x17 / have-org-role-91
+							:ARG2 (o1 / officer)
+							:poss (x14 / person
+								:name (n2 / name
+									:op1 "Jackson"))
+							:ARG1 (x16 / white)
+							:ARG0-of (x18 / attempt-01
+								:ARG0 x14
+								:ARG1 (x20 / search-01
+									:ARG1 (x22 / possible
+										:domain (x23 / search-01
+											:ARG0 (x21 / person
+												:name (n3 / name
+													:op1 "Jackson"))
+											:ARG1 (x25 / name
+												:op1 "Don"
+												:op2 "Jackson"
+												:ARG0-of (x24 / sgt.))))))))))))
+	:ARG0 (x28 / person
+		:name (n / name
+			:op1 "Jackson")))
+
+# ::id 38
+# ::snt Sgt. Don Jackson  had already had Sgt. Don Jackson  hands up and was turned to the window and a white officer attempting to search Jackson  slammed my face in my face
+(x12 / and
+	:op1 (x2 / newspaper
+		:name (n / name
+			:op1 "Don"
+			:op2 "Jackson")
+		:ARG0-of (x1 / sgt.))
+	:time (x5 / already)
+	:op2 (x10 / hand
+		:mod (x8 / person
+			:name (n1 / name
+				:op1 "Don"))
+		:mod (x9 / person
+			:name (n2 / name
+				:op1 "Jackson")))
+	:mod (x11 / up)
+	:op2 (x14 / turn-01
+		:ARG2 (x17 / window))
+	:op2 (x18 / and)
+	:op2 (x26 / slam
+		:ARG1 (x28 / face)
+		:time (x31 / face)
+		:ARG0 (xap0 / person
+			:ARG0-of (x21 / have-org-role-91
+				:ARG2 (o / officer)
+				:ARG1 (x20 / white)
+				:ARG1 (x22 / attempt-01
+					:ARG1 (x24 / search-01
+						:ARG1 (x25 / person
+							:name (n3 / name
+								:op1 "Jackson"))))))))
+
+# ::id 39
+# ::snt Jackson received support at a Monday night ceremony in Los Angeles commemorating King's birthday
+(x2 / receive-01
+	:ARG0 (x1 / person
+		:name (n / name
+			:op1 "Jackson"))
+	:ARG1 (x3 / support-01)
+	:location (x8 / ceremony
+		:time (x7 / night)
+		:location (x11 / country
+			:name (n1 / name
+				:op1 "Angeles")
+			:null_edge (x10 / country
+				:name (n2 / name
+					:op1 "Los")))
+		:purpose (x12 / commemorate-01
+			:ARG1 (x15 / birthday))
+		:time (xap0 / date-entity
+			:null_edge (x6 / null_tag))))
+
+# ::id 40
+# ::snt Mark Ridley-Thomas  am deeply concerned since a Monday night ceremony  strikes Mark Ridley-Thomas  as a period when police violence and excessive force is rampant , said Mark Ridley-Thomas , executive director of the Southern Christian Leadership Conference's Los Angeles chapter
+(x26 / say-01
+	:ARG1 (x5 / concern-01
+		:ARG0 (x2 / person
+			:name (n1 / name
+				:op1 "Ridley-Thomas")
+			:null_edge (x1 / null_tag))
+		:extent (x4 / deep)
+		:time (x6 / since
+			:op1 (x11 / person
+				:name (n2 / name
+					:op1 "strikes")
+				:ARG0 (x10 / ceremony
+					:time (x9 / night)
+					:time (xap0 / date-entity
+						:null_edge (x8 / null_tag)))
+				:ARG0 (x12 / person
+					:name (n3 / name
+						:op1 "Mark"
+						:op2 "Ridley-Thomas"))
+				:ARG1 (x16 / period
+					:null_edge (x20 / and
+						:op1 (x19 / violence
+							:mod (x18 / police))
+						:op2 (x22 / force
+							:degree (x21 / excessive)))))))
+	:ARG0 (x28 / person
+		:name (n / name
+			:op1 "Ridley-Thomas")
+		:null_edge (x27 / null_tag)
+		:ARG0-of (x31 / have-org-role-91
+			:ARG2 (d / director)
+			:mod (x30 / executive)
+			:ARG1 (x41 / chapter
+				:poss (x34 / company
+					:name (n4 / name
+						:op1 "Southern"
+						:op2 "Christian"
+						:op3 "Leadership"
+						:op4 "Conference"))
+				:mod (x39 / country
+					:name (n5 / name
+						:op1 "Los"))
+				:mod (x40 / country
+					:name (n6 / name
+						:op1 "Angeles"))))))
+
+# ::id 41
+# ::snt Mark Ridley-Thomas  am more so offended since the Hawthorne Police Department , which has no jurisdiction , is making judgment
+(x6 / offended
+	:ARG1 (x1 / person
+		:name (n / name
+			:op1 "Mark"
+			:op2 "Ridley-Thomas"))
+	:degree (x5 / so
+		:degree (x4 / more))
+	:ARG0-of (x19 / make-02
+		:ARG0 (x9 / government-organization
+			:name (n1 / name
+				:op1 "Hawthorne"
+				:op2 "Police"
+				:op3 "Department")
+			:location-of (x16 / jurisdiction
+				:polarity -))
+		:ARG1 (x20 / judge-01)))
+
+# ::id 42
+# ::snt Jackson said Sgt. Don Jackson  chose Long Beach police because of complaints to the Police Misconduct Lawyer's Referral Service of Los Angeles
+(x2 / say-01
+	:ARG0 (x1 / person
+		:name (n / name
+			:op1 "Jackson"))
+	:ARG1 (x6 / choose-01
+		:ARG0 (x4 / newspaper
+			:name (n1 / name
+				:op1 "Don"
+				:op2 "Jackson")
+			:ARG0-of (x3 / sgt.))
+		:ARG1 (x9 / police
+			:mod (x7 / country
+				:name (n2 / name
+					:op1 "Long"))
+			:mod (x8 / country
+				:name (n3 / name
+					:op1 "Beach")))
+		:ARG1-of (x10 / cause-01
+			:ARG0 (x12 / complain-01
+				:ARG1 (x19 / government-organization
+					:name (n4 / name
+						:op1 "Referral"
+						:op2 "Service")
+					:mod (x15 / police)
+					:mod (x16 / misconduct)
+					:mod (x17 / lawyer)
+					:mod (x23 / country
+						:name (n5 / name
+							:op1 "Angeles")
+						:null_edge (x22 / country
+							:name (n6 / name
+								:op1 "Los"))))))))
+
+# ::id 43
+# ::snt David Lynn of the referral service said 50 misconduct complaints were filed with David Lynn of the referral service  group against the Long Beach police
+(x7 / say-01
+	:ARG0 (x2 / person
+		:name (n / name
+			:op1 "Lynn")
+		:null_edge (x1 / person
+			:name (n1 / name
+				:op1 "David"))
+		:ARG0-of (x6 / serve-01
+			:mod (x5 / refer-02)))
+	:ARG1 (x12 / file-01
+		:ARG1 (x10 / complain-01
+			:quant 50
+			:mod (x9 / misconduct))
+		:ARG2 (x14 / name
+			:op1 "David"
+			:op2 "Lynn"
+			:ARG2-of (x20 / group
+				:ARG0-of (x19 / service
+					:mod (x18 / refer-02))))
+		:prep-against (x25 / police
+			:mod (x23 / country
+				:name (n2 / name
+					:op1 "Long"))
+			:mod (x24 / country
+				:name (n3 / name
+					:op1 "Beach")))))
+
+# ::id 44
+# ::snt Of those , 27 were filed by minorities , and 24 of those involved confrontations with white officers
+(x10 / and
+	:op1 (x6 / file-01
+		:ARG1 27
+		:ARG0 (x8 / minority))
+	:op2 (x14 / involve-01
+		:ARG1 27
+		:ARG1 (x15 / confront-01
+			:ARG1 (xap0 / person
+				:ARG0-of (x18 / have-org-role-91
+					:ARG2 (o / officer)
+					:mod (x17 / white))))))
+

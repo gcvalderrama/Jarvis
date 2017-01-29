@@ -1,0 +1,182 @@
+# ::id 1
+# ::snt GENERAL ACCIDENT , the leading British insurer , said yesterday that insurance claims arising from Hurricane Andrew could cost yesterday  as much as Dollars 40m
+(x9 / say-01
+	:ARG0 (x2 / accident
+		:mod (x1 / general)
+		:mod (x7 / insurer
+			:ARG0-of (x5 / lead-02)
+			:mod (xap1 / country
+				:ARG0-of (xap0 / name
+					:ARG1 (x6 / country
+						:name (n1 / name
+							:op1 "Britain"))))))
+	:time (x10 / yesterday)
+	:ARG1 (x18 / possible
+		:domain (x19 / cost-01
+			:ARG1-of (x13 / claim-01
+				:ARG1 (x12 / insure-02)
+				:ARG1-of (x14 / arise-01)
+				:ARG0 (x17 / person
+					:name (n / name
+						:op1 "Andrew")
+					:null_edge (x16 / null_tag)))
+			:time (x20 / yesterday)
+			:ARG2 (x25 / 40m))))
+
+# ::id 2
+# ::snt Lord Airlie , the chairman who was addressing an extraordinary shareholdersmeeting , said : On the basis of emerging information , General Accident advise that the losses to their US operations arising from Hurricane Andrew , which struck Florida and Louisiana , might in total reach the level at which external catastrophe reinsurance covers would become exposed
+(x13 / say-01
+	:ARG0 (x1 / person
+		:name (n / name
+			:op1 "Lord"
+			:op2 "Airlie")
+		:ARG0-of (x5 / have-org-role-91
+			:ARG2 (c / chairman)
+			:ARG1 (x8 / address-02
+				:ARG1 (x11 / shareholdersmeeting
+					:mod (x10 / extraordinary)))
+			:ARG1 (x24 / advise-01
+				:ARG1 (x20 / information
+					:ARG0-of (x19 / emerge-01))
+				:ARG0 (x23 / accident
+					:mod (x22 / general))
+				:ARG1 (x46 / reach-01
+					:instrument (x31 / operation
+						:ARG0-of (x38 / strike-01
+							:ARG1-of (x32 / arise-01
+								:ARG0 (x34 / country
+									:name (n2 / name
+										:op1 "Hurricane")))
+							:ARG1 x34
+							:ARG1 (x40 / and
+								:op1 (x39 / country
+									:name (n3 / name
+										:op1 "Florida"))
+								:op2 (x41 / country
+									:name (n4 / name
+										:op1 "Louisiana")))))
+					:ARG2-of (x45 / company
+						:name (n1 / name
+							:op1 "total"))
+					:ARG1 (x48 / level
+						:ARG1-of (x57 / expose-01
+							:ARG1 (x53 / reinsurance
+								:mod (x51 / external)
+								:mod (x52 / catastrophe)
+								:ARG1-of (x54 / cover-01)))))))))
+
+# ::id 3
+# ::snt What this means is that GA is able to pass on its losses to external reinsurers once a certain claims threshold has been breached
+(x3 / mean-01
+	:ARG0 (x2 / this)
+	:ARG1 (x8 / possible
+		:domain (x10 / pass-01
+			:ARG1 (x13 / loss)
+			:ARG2 (x16 / reinsurer
+				:mod (x15 / external)))
+		:time (x24 / breach-01
+			:ARG1 (x21 / threshold
+				:mod (x19 / certain)
+				:mod (x20 / claim-02)))))
+
+# ::id 4
+# ::snt It believes this threshold may be breached in respect of Hurricane Andrew claims
+(x2 / believe-01
+	:ARG1 (x5 / possible
+		:domain (x7 / breach-01
+			:ARG1 (x4 / threshold
+				:mod (x3 / this))
+			:manner (x9 / respect-01
+				:ARG1 (x13 / claim-01
+					:ARG0 (x12 / andrew
+						:null_edge (x11 / null_tag)))))))
+
+# ::id 5
+# ::snt However , if this happens , it would suffer a post-tax loss of Dollars 40m (Pounds 20m )
+(x9 / suffer-01
+	:time (x5 / happen-01
+		:ARG1 (x4 / this))
+	:ARG0 (x7 / it)
+	:ARG1 (x11 / post-tax
+		:ARG1 (x14 / dollars))
+	:ARG0 (x15 / 40m)
+	:ARG1 (x18 / 20m
+		:null_edge (x17 / null_tag)))
+
+# ::id 6
+# ::snt Mr Nelson Robertson , GA's chief general manager , explained later that the company has a 1/2 per cent share of the Florida market
+(x11 / explain-01
+	:ARG0 (x2 / newspaper
+		:name (n / name
+			:op1 "Nelson"
+			:op2 "Robertson")
+		:ARG0-of (x1 / mr)
+		:ARG0-of (x9 / manage-01
+			:mod (x7 / chief)
+			:mod (x8 / general)))
+	:time (x12 / late)
+	:ARG1 (x16 / have-03
+		:ARG0 (x15 / company)
+		:ARG1 (x21 / share
+			:quant (x20 / monetary-quantity
+				:unit (c / cent))
+			:ARG1-of (x22 / include-91
+				:ARG2 (x25 / market
+					:mod (x24 / country
+						:name (n1 / name
+							:op1 "Florida")))))))
+
+# ::id 7
+# ::snt GA's  has a branch in Orlando
+(x3 / have-03
+	:ARG1 (x5 / branch
+		:location (x7 / city
+			:name (n / name
+				:op1 "Orlando"))))
+
+# ::id 8
+# ::snt The company's loss adjusters are in the area trying to estimate the losses
+(x10 / try-01
+	:ARG0 (x5 / adjuster
+		:poss (x2 / company))
+	:location (x9 / area)
+	:ARG1 (x12 / estimate-01
+		:ARG0 x5))
+
+# ::id 9
+# ::snt The company's loss adjusters  guess is that losses to be faced by all insurers may total more than Dollars 8bn
+(x6 / guess-01
+	:ARG0 (x2 / company)
+	:ARG1 (x5 / adjuster)
+	:ARG1 (x16 / possible
+		:domain (x17 / total-01
+			:ARG0 (x9 / loss
+				:ARG1-of (x12 / face-01
+					:ARG0 (x15 / insurer
+						:quant (x14 / all))))
+			:ARG1 (x18 / more))))
+
+# ::id 10
+# ::snt Not all damaged property in the area is insured and there have been estimates that the storm caused more than Dollars 20bn of damage
+(x10 / and
+	:op1 (x9 / insure-02
+		:ARG1 (x4 / property
+			:quant (x2 / all)
+			:ARG1-of (x3 / damage-01)
+			:location (x7 / area)))
+	:op2 (x14 / thing
+		:ARG1-of (e / estimate-01)
+		:ARG0-of (x18 / cause-01
+			:ARG0 (x17 / storm)
+			:ARG1 (x19 / more-than))
+		:ARG1 (x24 / damage-01)))
+
+# ::id 11
+# ::snt However , other insurers have estimated that losses could be as low as Dollars 1bn in total
+(x6 / estimate-01
+	:ARG0 (x4 / insurer
+		:mod (x3 / other))
+	:ARG2 (x9 / possible
+		:domain (x12 / low))
+	:ARG1 (x17 / total-01))
+

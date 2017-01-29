@@ -1,0 +1,485 @@
+# ::id 1
+# ::snt The focus of the drought plaguing much of the nation has shifted eastward , but little relief is in sight for most areas , the National Weather Service reported Thursday
+(x29 / report-01
+	:ARG1 (x12 / shift-00
+		:ARG1 (x2 / focus-01
+			:ARG1 (x5 / drought
+				:ARG0-of (x6 / plague-01
+					:ARG0 (x10 / nation
+						:quant (x7 / much)))))
+		:degree (x13 / east)
+		:ARG1 (x17 / relieve-01
+			:mod (x16 / little)
+			:ARG1 (x20 / sight-01)
+			:ARG2 (x23 / area
+				:quant (x22 / most))))
+	:ARG0 (x26 / government-organization
+		:name (n / name
+			:op1 "National"
+			:op2 "Weather"
+			:op3 "Service"))
+	:time (xap0 / date-entity
+		:weekday (x30 / thursday)))
+
+# ::id 2
+# ::snt The new short-range forecast through next Monday calls for hot , dry weather to expand eastward from the Rockies through the Ohio Valley to the Mid-Atlantic states
+(x8 / call-03
+	:ARG0 (x4 / forecast-01
+		:mod (x2 / new)
+		:null_edge (x3 / short)
+		:null_edge (x7 / monday
+			:mod (x6 / next)))
+	:ARG1 (x13 / weather
+		:mod (x10 / hot)
+		:ARG1-of (x12 / dry-02))
+	:ARG1 (x15 / expand-01
+		:direction (x16 / east
+			:op1 (x19 / organization
+				:name (n1 / name
+					:op1 "Rockies")))
+		:ARG2 (x23 / country
+			:name (n / name
+				:op1 "Valley")
+			:null_edge (x22 / country
+				:name (n2 / name
+					:op1 "Ohio")))
+		:ARG4 (x27 / state
+			:mod (x26 / country
+				:name (n3 / name
+					:op1 "Mid-Atlantic")))))
+
+# ::id 3
+# ::snt Rapidly moving weather systems are expected to drag weak fronts along the U.S.-Canadian border , possibly triggering scattered showers in the extreme northern Plains and upper Mississippi Valley
+(x6 / expect-01
+	:ARG1 (x2 / move-01
+		:manner (x1 / rapid)
+		:ARG1 (x4 / system
+			:mod (x3 / weather)))
+	:ARG1 (x8 / drag-01
+		:ARG1 (x10 / front
+			:mod (x9 / weak)
+			:location (x11 / along
+				:op1 (x14 / border-01
+					:null_edge (x13 / world-region
+						:name (n / name
+							:op1 "U.S.-Canadian")))))
+		:purpose (x17 / trigger-01
+			:mod (x16 / possible)
+			:ARG1 (x19 / shower
+				:ARG1-of (x18 / scatter-01
+					:location (x25 / and
+						:op1 (x24 / plain
+							:mod (x22 / extreme)
+							:name (x23 / name
+								:op1 "northern"))
+						:op2 (x28 / country
+							:name (n1 / name
+								:op1 "Valley")
+							:null_edge (x26 / upper)
+							:null_edge (x27 / country
+								:name (n2 / name
+									:op1 "Mississippi")))))))))
+
+# ::id 4
+# ::snt The heavy rain which has hit portions of Texas is expected to diminish
+(x11 / expect-01
+	:ARG1 (x13 / diminish-01
+		:ARG0 (x3 / rain
+			:mod (x2 / heavy)
+			:ARG1-of (x6 / hit-01
+				:ARG1 (x7 / portion
+					:part-of (x9 / country
+						:name (n / name
+							:op1 "Texas")))))))
+
+# ::id 5
+# ::snt Long-term drought conditions now cover a large area of the Great Lakes region and the Ohio and Tennessee valleys , the agency's Climate Analysis Center reported
+(x27 / report-01
+	:ARG1 (x5 / cover-01
+		:ARG0 (x3 / condition
+			:duration (x1 / long)
+			:mod (x2 / drought))
+		:time (x4 / now)
+		:ARG1 (x8 / area
+			:mod (x7 / large)
+			:location-of (x14 / and
+				:location (x12 / country
+					:name (n / name
+						:op1 "Lakes"))
+				:op2 (x19 / valley
+					:ARG1 (x17 / and
+						:op1 (x16 / country
+							:name (n1 / name
+								:op1 "Ohio"))
+						:op2 (x18 / country
+							:name (n2 / name
+								:op1 "Tennessee")))))))
+	:ARG0 (x26 / center
+		:null_edge (x22 / agency)
+		:null_edge (x24 / climate)
+		:null_edge (x25 / null_tag)))
+
+# ::id 6
+# ::snt In addition , drought conditions persist over large areas of the northern Great Plains and Rocky Mountains
+(x6 / persist-01
+	:ARG0 (x5 / condition
+		:mod (x4 / drought))
+	:ARG1 (x15 / and
+		:mod (x8 / large)
+		:name (x12 / name
+			:op1 "northern"
+			:op2 "Great"
+			:op3 "Plains")
+		:op2 (x17 / mountain
+			:mod (x16 / country
+				:name (n / name
+					:op1 "Rocky")))))
+
+# ::id 7
+# ::snt A 30-day weather forecast issued Wednesday held little hope for improvement
+(x7 / hold-04
+	:ARG0 (x4 / forecast-01
+		:mod (x2 / person
+			:name (n / name
+				:op1 "30-day"))
+		:mod (x3 / weather)
+		:ARG1-of (x5 / issue-01
+			:time (x6 / wednesday)))
+	:ARG1 (x9 / hope-01
+		:degree (x8 / little)
+		:ARG1 (x11 / improve-01)))
+
+# ::id 8
+# ::snt And a separate climate assessment added that many areas now experiencing extreme drought have less than a 4 percent chance of recovering from the drought within 3 months
+(x1 / and
+	:op2 (x6 / add-01
+		:ARG0 (x5 / assess-01
+			:mod (x3 / separate)
+			:mod (x4 / climate))
+		:ARG1 (x15 / less
+			:domain (x9 / area
+				:quant (x8 / many)
+				:ARG0-of (x11 / experience-01
+					:time (x10 / now)
+					:ARG1 (x13 / drought
+						:mod (x12 / extreme))))
+			:compared-to (x20 / chance
+				:mod (x19 / percentage-entity
+					:value 4)
+				:topic (x22 / recover-01
+					:ARG1 (x25 / drought)
+					:time (x26 / within
+						:op1 (x28 / temporal-quantity
+							:unit (m / month)
+							:quant 3)))))))
+
+# ::id 9
+# ::snt At the beginning of July , 29 percent of the nation was undergoing severe or extreme drought , the agency said
+(x21 / say-01
+	:ARG1 (x13 / undergo-01
+		:time (x3 / begin-01
+			:op1 (x5 / date-entity))
+		:ARG2 (x8 / percentage-entity
+			:value 29
+			:poss (x11 / nation))
+		:ARG1 (x17 / drought
+			:ARG1 (x15 / or
+				:op1 (x14 / severe)
+				:op2 (x16 / extreme)))))
+
+# ::id 10
+# ::snt On Tuesday , the Agriculture Department announced sharp reductions in the anticipated harvest of many crops because of the water shortage _ and those projections were based on the assumption of normal weather from here on , according to department officials
+(x23 / and
+	:op1 (x7 / announce-01
+		:ARG0 (x6 / department
+			:null_edge (x5 / null_tag))
+		:ARG1 (x9 / reduce-01
+			:manner (x8 / sharp)
+			:location (x13 / harvest-01
+				:mod (x12 / anticipated)
+				:ARG1 (x16 / crop
+					:quant (x15 / many))))
+		:ARG1-of (x17 / cause-01
+			:ARG0 (x21 / short-41
+				:mod (x20 / water)))
+		:ARG1 (x22 / _)
+		:time (xap0 / date-entity
+			:weekday (x2 / tuesday))
+		:ARG0 (xap1 / person
+			:ARG0-of (x41 / have-org-role-91
+				:ARG2 (o / official)
+				:ARG1 (x40 / department))))
+	:op1 (x27 / base-02
+		:ARG0 x6
+		:ARG1 (x25 / project-01)
+		:ARG2 (x33 / weather
+			:mod (x32 / normal)
+			:location (x35 / here))))
+
+# ::id 11
+# ::snt The new National Weather Service forecasts cast a dark cloud over that assumption
+(x7 / cast-01
+	:ARG0 (x6 / forecast-01
+		:ARG0 (x3 / government-organization
+			:name (n / name
+				:op1 "National"
+				:op2 "Weather"
+				:op3 "Service")
+			:mod (x2 / new)))
+	:ARG1 (x10 / cloud
+		:mod (x9 / dark))
+	:duration (x11 / over))
+
+# ::id 12
+# ::snt The drought region now extends well into West Virginia and includes nearly all of Ohio and Indiana and much of Kentucky and Tennessee , the weather service drought advisory said
+(x30 / say-01
+	:ARG1 (x10 / and
+		:op1 (x5 / extend-01
+			:ARG0 (x3 / region
+				:mod (x2 / drought))
+			:time (x4 / now)
+			:mod (x6 / well)
+			:ARG2 (x9 / country
+				:name (n / name
+					:op1 "Virginia")
+				:location (x8 / world-region
+					:name (n1 / name
+						:op1 "West"))))
+		:op2 (x11 / include-01
+			:ARG2 (x12 / nearly
+				:op1 (x18 / and
+					:op2 (x16 / and
+						:op1 (x15 / country
+							:name (n2 / name
+								:op1 "Ohio"))
+						:op2 (x17 / country
+							:name (n3 / name
+								:op1 "Indiana")))
+					:op2 (x22 / and
+						:op1 (x21 / country
+							:name (n4 / name
+								:op1 "Kentucky"))
+						:op2 (x23 / country
+							:name (n5 / name
+								:op1 "Tennessee")))))))
+	:ARG0 (x29 / advise-01
+		:topic (x27 / service
+			:mod (x26 / weather))
+		:topic (x28 / drought)))
+
+# ::id 13
+# ::snt On the other hand , western portions of the Mississippi Valley have received some relief due to recent rains
+(x13 / receive-01
+	:manner (x4 / hand
+		:mod (x3 / other))
+	:ARG0 (x7 / portion
+		:mod (x6 / world-region
+			:name (n / name
+				:op1 "western"))
+		:poss (x11 / country
+			:name (n1 / name
+				:op1 "Valley")
+			:null_edge (x10 / country
+				:name (n2 / name
+					:op1 "Mississippi"))))
+	:ARG1 (x15 / relieve-01
+		:quant (x14 / some)
+		:ARG1 (x19 / rain
+			:time (x18 / recent))))
+
+# ::id 14
+# ::snt The drought has been accompanied by higher than normal temperatures over much of the nation , most notably over the western Great Lakes region
+(x5 / accompany-01
+	:ARG1 (x2 / drought)
+	:ARG0 (x10 / temperature
+		:quant (x7 / high
+			:compared-to (x9 / normal))
+		:ARG0 (x15 / nation)
+		:quant (x19 / over
+			:mod (x18 / notably
+				:degree (x17 / most)))))
+
+# ::id 15
+# ::snt The national picture shows the current drought to be about equivalent to that of 1911 , and still somewhat less severe than in several years in the 1930s or 1956
+(x4 / show-01
+	:ARG0 (x3 / picture
+		:mod (x2 / nation))
+	:ARG1 (x7 / drought
+		:time (x6 / current)
+		:ARG1 (x17 / and
+			:time (x10 / about
+				:null_edge (x15 / date-entity
+					:year 1911)
+				:null_edge (x21 / severe
+					:degree (x19 / somewhat
+						:mod (x18 / still))
+					:degree (x20 / less)
+					:time (xap0 / date-entity
+						:time (x27 / date-entity)
+						:year (x30 / date-entity
+							:year 1956)))))))
+
+# ::id 16
+# ::snt However , in the Midwest , the weather service reported that large areas have experienced the driest April-June period on record since 1895
+(x10 / report-01
+	:location (x5 / country
+		:name (n / name
+			:op1 "Midwest"))
+	:ARG0 (x9 / service
+		:mod (x8 / weather))
+	:ARG1 (x15 / experience-01
+		:ARG0 (x13 / area
+			:mod (x12 / large))
+		:ARG1 (x19 / period
+			:mod (x17 / driest)
+			:mod (x21 / record))
+		:time (x22 / since
+			:op1 (x23 / date-entity
+				:year 1895))))
+
+# ::id 17
+# ::snt Recent rains have resulted in local flooding in Texas , but nationally streamflows are below normal , and even in Texas are expected to fall back to below average levels
+(x11 / contrast-01
+	:ARG2 (x18 / and
+		:op1 (x4 / result-01
+			:ARG1 (x2 / rain
+				:time (x1 / recent))
+			:ARG2 (x7 / flooding
+				:mod (x6 / local)
+				:location (x9 / country
+					:name (n1 / name
+						:op1 "Texas")))
+			:ARG1 (x13 / streamflow
+				:mod (x12 / nationally)
+				:quant (x15 / below
+					:op1 (x16 / normal))))
+		:op2 (x23 / expect-01
+			:location (x21 / country
+				:name (n / name
+					:op1 "Texas")
+				:mod (x19 / even))
+			:ARG1 (x25 / fall-01
+				:ARG4 (x26 / back)
+				:ARG4 (x28 / below
+					:op1 (x30 / level
+						:mod (x29 / average-01)))))))
+
+# ::id 18
+# ::snt Flows in many major rivers remain low and continue to restrict navigation
+(x / xconcept
+	:x (x6 / remain-01
+		:ARG3 (x7 / low
+			:name (x1 / name
+				:op1 "Flows"
+				:location (x5 / river
+					:quant (x3 / many)
+					:mod (x4 / major)))
+			:null_edge (x9 / continue-01
+				:ARG1 (x11 / restrict-01
+					:ARG1 (x12 / navigation)))))
+	:x (x8 / and))
+
+# ::id 19
+# ::snt Reservoir levels remain close to average in much of the nation , however , the weather service noted
+(x3 / remain-01
+	:ARG1 (x2 / level)
+	:ARG3 (x4 / close-41
+		:ARG2 (x6 / average))
+	:ARG3 (x11 / nation)
+	:ARG3 (x18 / note-01
+		:ARG0 (x17 / service
+			:mod (x16 / weather))))
+
+# ::id 20
+# ::snt In addition to Thursday's short-range forecast , the medium-range outlook through July 23 anticipates much of the nation will remain hotter than normal , particularly the Tennessee Valley , lower Midwest , central and northern Great Plains , northern Rockies and Great Basin
+(x15 / anticipate-01
+	:ARG1 (x7 / forecast-01
+		:null_edge (x6 / short)
+		:time (xap0 / date-entity
+			:weekday (x4 / thursday)))
+	:ARG0 (x11 / outlook
+		:mod (xap1 / range
+			:mod (x10 / medium)))
+	:time (x13 / date-entity)
+	:ARG1 (x22 / hotter
+		:domain (x19 / nation
+			:quant (x16 / much))
+		:domain (x21 / remain-01
+			:ARG1 x19)
+		:compared-to (x24 / normal
+			:compared-to (x42 / and
+				:op2 (x29 / country
+					:name (n / name
+						:op1 "Valley")
+					:mod (x26 / particular)
+					:null_edge (x28 / country
+						:name (n3 / name
+							:op1 "Tennessee"))
+					:null_edge (x35 / and
+						:op2 (x32 / country
+							:name (n4 / name
+								:op1 "Midwest")
+							:mod (x31 / low))
+						:op1 (x34 / central)
+						:op2 (x36 / name
+							:op1 "northern")))
+				:op2 (x41 / country
+					:name (n1 / name
+						:op1 "Rockies")
+					:name (x40 / name
+						:op1 "northern"))
+				:op2 (x44 / country
+					:name (n2 / name
+						:op1 "Basin"))))))
+
+# ::id 21
+# ::snt The only areas escaping heat in the forecast are the nation's northwestern and northeastern corners and the Louisiana-Texas-New Mexico area
+(x4 / person
+	:ARG0-of (e / escape-01)
+	:ARG1 (x3 / area
+		:mod (x2 / only))
+	:ARG1 (x5 / heat)
+	:location (x8 / forecast-01)
+	:ARG1 (x17 / and
+		:op2 (x14 / and
+			:op1 (x13 / northwest)
+			:op2 (x15 / northeast))
+		:op1 (x16 / corner
+			:poss (x11 / nation))
+		:op2 (x21 / area
+			:location (x19 / country
+				:name (n / name
+					:op1 "Louisiana-Texas-New"))
+			:mod (x20 / country
+				:name (n1 / name
+					:op1 "Mexico")))))
+
+# ::id 22
+# ::snt Most of the hot area is expected to be drier than normal , although some significant rain could penetrate northwestward from Texas into New Mexico , Colorado and eastern Wyoming
+(x7 / expect-01
+	:ARG1 (x5 / area
+		:mod (x1 / most)
+		:mod (x4 / hot))
+	:ARG1 (x10 / drier
+		:compared-to (x12 / normal))
+	:condition (x18 / possible
+		:domain (x19 / penetrate-01
+			:ARG0 (x17 / rain
+				:mod (x15 / some)
+				:mod (x16 / significant))
+			:direction (x20 / northwestward)
+			:ARG2 (x22 / country
+				:name (n / name
+					:op1 "Texas"))
+			:ARG1 (x28 / and
+				:op1 (x25 / country
+					:name (n1 / name
+						:op1 "Mexico"))
+				:op2 (x27 / country
+					:name (n2 / name
+						:op1 "Colorado"))
+				:op2 (x30 / country
+					:name (n3 / name
+						:op1 "Wyoming")
+					:mod (x29 / east))))))
+

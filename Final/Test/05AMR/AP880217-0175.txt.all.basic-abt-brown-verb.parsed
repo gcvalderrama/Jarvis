@@ -1,0 +1,250 @@
+# ::id 1
+# ::snt A coalition of members of Congress announced Wednesday that members of Congress  plan to sue the Census Bureau in an effort to force the agency to delete illegal aliens from the Census Bureau  count in 1990
+(x7 / announce-01
+	:ARG0 (x2 / coalition
+		:ARG0-of (x4 / have-org-role-91
+			:ARG2 (m / member)
+			:ARG1 (x6 / government-organization
+				:name (n / name
+					:op1 "Congress"))))
+	:null_edge (x8 / wednesday)
+	:ARG1 (x13 / plan-01
+		:ARG2-of (x11 / include-91
+			:ARG2 (xap0 / country
+				:ARG0-of (x10 / have-org-role-91
+					:ARG2 (m1 / member)
+					:ARG1 (x12 / government-organization
+						:name (n2 / name
+							:op1 "Congress")))))
+		:ARG1 (x15 / sue-01
+			:ARG0 x11
+			:ARG1 (x17 / government-organization
+				:name (n1 / name
+					:op1 "Census"
+					:op2 "Bureau"))
+			:ARG2 (x21 / effort
+				:purpose (x23 / force-01
+					:ARG2 (x27 / delete-01
+						:ARG1 (x29 / alien
+							:mod (x28 / law
+								:polarity -))
+						:null_edge (x34 / count-01
+							:ARG0 (x32 / organization
+								:name (n3 / name
+									:op1 "Census")
+								:name (x33 / government-organization
+									:name (n4 / name
+										:op1 "Bureau")))
+							:time (x36 / date-entity
+								:year 1990))))))))
+
+# ::id 2
+# ::snt Some 40 members of the House joined the Federation for American Immigration Reform in announcing that the suit would be filed Thursday in U.S. District Court in Pittsburgh , spokesmen said at a news conference here
+(x7 / join-01
+	:purpose (x15 / announce-01
+		:ARG1 (x21 / file-01
+			:ARG1 (x18 / suit-01)
+			:location (x25 / government-organization
+				:name (n / name
+					:op1 "District"
+					:op2 "Court"))
+			:location (x28 / country
+				:name (n1 / name
+					:op1 "Pittsburgh"))
+			:ARG1-of (x31 / say-01
+				:ARG2 (x35 / conference
+					:mod (x34 / news)
+					:location (x36 / here))
+				:ARG0 (xap1 / date-entity
+					:weekday (x22 / thursday))
+				:ARG0 (xap2 / person
+					:ARG0-of (x30 / have-org-role-91
+						:ARG2 (s / spokesman))))
+			:time xap1))
+	:ARG1 (xap0 / person
+		:quant (x1 / some
+			:op1 40)
+		:ARG0-of (x3 / have-org-role-91
+			:ARG2 (m / member)
+			:ARG1 (x6 / government-organization
+				:name (n2 / name
+					:op1 "House")))))
+
+# ::id 3
+# ::snt The group contends that including the estimated 2 million or more illegal aliens in the national head count , which is used to distribute seats in the House of Representatives , will cause unfair shifts of seats from one state to another
+(x3 / contend-00
+	:ARG0 (x2 / group)
+	:ARG1 (x33 / cause-01
+		:ARG0 (x5 / include-91
+			:ARG1 (x13 / alien
+				:ARG1-of (x7 / estimate-01)
+				:quant (x11 / more)
+				:mod (x12 / law
+					:polarity -))
+			:ARG1 (x18 / count-01
+				:mod (x16 / nation)
+				:mod (x17 / head-01)
+				:ARG1-of (x22 / use-01
+					:ARG2 (x24 / distribute-01
+						:ARG1 (x25 / seat)
+						:location (x28 / have-org-role-91
+							:ARG1 (g / government-organization
+								:name (n / name
+									:op1 "House"
+									:op2 "of"
+									:op3 "Representatives")))))))
+		:ARG1 (x35 / shift-01
+			:manner (x34 / fair
+				:polarity -)
+			:ARG1 (x37 / seat)
+			:source (x40 / state
+				:quant 1
+				:mod (x42 / another)))))
+
+# ::id 4
+# ::snt Census officials say Census officials  are required to count everyone by the U.S. Constitution , which does not mention citizenship but only instructs that the House apportionment be based on the whole number of persons residing in the various states
+(x3 / say-01
+	:ARG1 (x7 / require-01
+		:ARG1 (x9 / count-04
+			:ARG1 (x10 / everyone)
+			:ARG0 (x14 / law
+				:name (n / name
+					:op1 "Constitution")
+				:mod (x13 / country
+					:name (n1 / name
+						:op1 "U.S.")))
+			:ARG1 (x19 / mention-01
+				:ARG1 (x20 / citizenship)
+				:ARG1 (x23 / instruct-01
+					:mod (x22 / only)
+					:ARG1 (x29 / base-02
+						:ARG1 (x27 / apportionment
+							:ARG1 (x26 / government-organization
+								:name (n2 / name
+									:op1 "House")))
+						:ARG2 (x35 / person
+							:quant (x33 / number
+								:mod (x32 / whole))
+							:ARG1-of (x36 / person
+								:ARG0-of (r / reside-01)
+								:ARG2 (x40 / state
+									:mod (x39 / various)))))))
+			:ARG0 (xap1 / person
+				:ARG0-of (x5 / have-org-role-91
+					:ARG2 (o1 / official)
+					:ARG1 (x4 / census))))
+		:ARG0 xap1)
+	:ARG0 (xap0 / person
+		:ARG0-of (x2 / have-org-role-91
+			:ARG2 (o / official)
+			:ARG1 (x1 / census))))
+
+# ::id 5
+# ::snt That approach was upheld by a federal court in a similar suit , brought by the same immigration reform group , before the 1980 Census
+(x4 / uphold-01
+	:ARG1 (x2 / approach-02
+		:mod (x1 / that))
+	:ARG0 (x8 / court
+		:mod (x7 / government-organization
+			:name (n / name
+				:op1 "federal")))
+	:time (x12 / suit-01
+		:ARG1-of (x11 / resemble-01
+			:op (s / similar))
+		:ARG1-of (x14 / bring-05
+			:ARG0 (x20 / group
+				:ARG1-of (x17 / same-41)
+				:mod (x18 / immigrate-01)
+				:ARG0-of (x19 / reform-01))))
+	:time (x22 / before
+		:op1 (x25 / census
+			:time (x24 / date-entity
+				:year 1980))))
+
+# ::id 6
+# ::snt Nonetheless , Dan Stein of the immigration reform federation contended that illegal aliens should not be allowed to be part of determining the political structure of the United States
+(x10 / contend-01
+	:ARG1 (x9 / federation
+		:poss (x4 / person
+			:name (n / name
+				:op1 "Stein")
+			:null_edge (x3 / null_tag))
+		:mod (x8 / reform-01
+			:ARG1 (x7 / immigrate-01)))
+	:ARG1 (x14 / recommend-01
+		:ARG1 (x17 / allow-01
+			:ARG1 (x13 / alien
+				:mod (x12 / law
+					:polarity -))
+			:ARG1 (x22 / determine-01
+				:ARG1 (x25 / structure
+					:mod (x24 / politics)
+					:poss (x28 / country
+						:name (n1 / name
+							:op1 "United"
+							:op2 "States")))))))
+
+# ::id 7
+# ::snt Rep. Tom Ridge , R-Pa. , said the Census Bureau should actually count everyone but that the Census Bureau  should develop a method to determine how many people are illegally in the country , and illegal aliens  deduct that number from the figures used for reapportioning Congress
+(x8 / say-01
+	:ARG0 (x2 / newspaper
+		:name (n / name
+			:op1 "Tom"
+			:op2 "Ridge")
+		:ARG0-of (x1 / rep.))
+	:ARG1 (x12 / recommend-01
+		:ARG1 (x14 / count-04
+			:ARG0 (x10 / government-organization
+				:name (n1 / name
+					:op1 "Census"
+					:op2 "Bureau"))
+			:mod (x13 / actual)
+			:ARG1 (x15 / everyone)
+			:null_edge (x21 / recommend-01
+				:ARG1 (x22 / develop-02
+					:ARG0 (x19 / government-organization
+						:name (n2 / name
+							:op1 "Census"
+							:op2 "Bureau"))
+					:ARG1 (x24 / method
+						:instrument-of (x26 / determine-01
+							:ARG1 (x28 / many
+								:location (x34 / country))))
+					:ARG1 (x36 / and
+						:op2 (x39 / deduct
+							:ARG0 (x38 / alien
+								:mod (x37 / law
+									:polarity -))
+							:ARG1 (x41 / number)
+							:ARG2 (x44 / figure
+								:ARG1-of (x45 / use-01
+									:ARG2 (x47 / reapportion
+										:ARG1 (x48 / government-organization
+											:name (n3 / name
+												:op1 "Congress"))))))))))))
+
+# ::id 8
+# ::snt Rep. Jan Meyers , R-Kan. , suggested including a question on the Census form asking whether respondents are U.S. citizerns
+(x8 / suggest-01
+	:ARG0 (x2 / newspaper
+		:name (n / name
+			:op1 "Jan"
+			:op2 "Meyers")
+		:ARG0-of (x1 / rep.)
+		:mod (x5 / country
+			:name (n1 / name
+				:op1 "R-Kan")))
+	:ARG1 (x9 / include-91
+		:ARG1 (x11 / question-01
+			:ARG1 (x15 / form
+				:mod (x14 / country
+					:name (n2 / name
+						:op1 "Census"))
+				:ARG0-of (x16 / ask-02
+					:ARG1 (x21 / citizern
+						:domain (x18 / person
+							:ARG0-of (r / respond-01))
+						:mod (x20 / country
+							:name (n3 / name
+								:op1 "U.S."))))))))
+

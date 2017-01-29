@@ -1,0 +1,526 @@
+# ::id 1
+# ::snt Firefighters got the upper hand Friday on an 8,200-acre brush fire in Cleveland National Forest that destroyed 11 structures near Lake Elsinore in Riverside County
+(x2 / get-01
+	:ARG0 (x1 / firefighter)
+	:ARG1 (x5 / hand
+		:mod (x4 / upper))
+	:purpose (x10 / brush
+		:mod (x9 / 8,200-acre)
+		:ARG0 (x13 / organization
+			:name (n / name
+				:op1 "Cleveland"))
+		:location (x15 / organization
+			:name (n1 / name
+				:op1 "Forest")
+			:null_edge (x14 / null_tag))
+		:ARG0-of (x17 / destroy-01
+			:ARG1 (x19 / structure
+				:quant 11)
+			:location (x20 / near
+				:op1 (x22 / country
+					:name (n2 / name
+						:op1 "Elsinore")
+					:null_edge (x21 / country
+						:name (n4 / name
+							:op1 "Lake"))))
+			:location (x25 / county
+				:mod (x24 / country
+					:name (n3 / name
+						:op1 "Riverside")))))
+	:time (xap0 / date-entity
+		:weekday (x6 / friday)))
+
+# ::id 2
+# ::snt Aided by higher humidity and a decrease in wind , fire crews had more than 85 % of the blaze surrounded late Friday afternoon and began releasing many of the 2,300 people who had been fighting the fire
+(x13 / have-03
+	:ARG0 (x12 / crew
+		:ARG1-of (x1 / aid-01
+			:ARG2 (x5 / and
+				:op1 (x4 / humid
+					:mod (x3 / high))
+				:op2 (x7 / decrease-01
+					:ARG1 (x9 / wind))))
+		:mod (x11 / fire-arm))
+	:ARG1 (x20 / blaze
+		:null_edge (x25 / and
+			:quant (x14 / more-than
+				:op1 (xap0 / percentage-entity
+					:value 85))
+			:op1 (x21 / surround-01
+				:time (xap1 / date-entity
+					:time (x22 / late)
+					:null_edge (x23 / null_tag)))
+			:op2 (x26 / begin-01
+				:ARG1 (x27 / release-01
+					:ARG1 (x28 / many
+						:null_edge (x31 / 2,300
+							:ARG0-of (x36 / fight-01
+								:ARG1 (x38 / fire-01)))))))))
+
+# ::id 3
+# ::snt Officials predicted that the blaze would be completely under control by Saturday morning but would not be extinguished until midday Sunday
+(x2 / predict-01
+	:ARG1 (x5 / blaze
+		:degree (x8 / complete)
+		:topic (x10 / control-01)
+		:time (x13 / morning
+			:time (xap1 / date-entity
+				:weekday (x12 / saturday)))
+		:ARG1-of (x18 / extinguish
+			:duration (x19 / until
+				:op1 (xap2 / date-entity
+					:weekday (x21 / sunday)))))
+	:ARG0 (xap0 / person
+		:ARG0-of (x1 / have-org-role-91
+			:ARG2 (o / official))))
+
+# ::id 4
+# ::snt 2,000 Acres Burned Meanwhile , a brush fire that burned more than 2,000 acres of mostly rugged terrain in the Antelope Valley this week was contained by firefighters Friday morning , authorities said
+(x33 / say-01
+	:ARG1 (x26 / contain-01
+		:ARG1-of (x3 / burn-01
+			:ARG1 (x2 / area-quantity
+				:unit (a / acre)
+				:null_edge (x1 / 2,000))
+			:time (x4 / meanwhile))
+		:ARG1 (x8 / fire-01
+			:ARG1 (x7 / brush)
+			:ARG0-of (x10 / burn-01
+				:ARG1 (x18 / terrain
+					:op1 (x14 / area-quantity
+						:unit (a1 / acre)
+						:quant (x11 / more-than
+							:op1 (x13 / 2,000)))
+					:mod (x17 / rugged
+						:manner (x16 / most))
+					:ARG2 (x21 / country
+						:name (n / name
+							:op1 "Antelope")))
+				:time (x24 / week
+					:mod (x23 / this))))
+		:ARG0 (x28 / firefighter)
+		:time (x30 / morning
+			:time (xap0 / date-entity
+				:weekday (x29 / null_tag))))
+	:ARG0 (x32 / authority))
+
+# ::id 5
+# ::snt Authorities estimated that fighting the fire near Lake Elsinore will wind up costing $ 1.5 million
+(x2 / estimate-01
+	:ARG0 (x1 / authority)
+	:ARG1 (x11 / wind-04
+		:time (x4 / fight-01
+			:ARG1 (x6 / fire-01)
+			:location (x7 / near
+				:op1 (x9 / country
+					:name (n / name
+						:op1 "Elsinore")
+					:null_edge (x8 / country
+						:name (n1 / name
+							:op1 "Lake")))))
+		:ARG1 (x13 / cost-01)))
+
+# ::id 6
+# ::snt Authorities  said the blaze resulted in more than $ 1.1 million damage to various structures in remote canyons and to the watershed that feeds Lake Elsinore
+(x2 / say-01
+	:ARG0 (x1 / authority)
+	:ARG1 (x5 / result-01
+		:ARG1 (x4 / blaze)
+		:ARG2 (x12 / damage-01
+			:quant (x7 / more-than)
+			:ARG1 (x18 / canyon
+				:mod (x14 / various)
+				:mod (x17 / remote)
+				:ARG2 (x22 / watershed
+					:ARG0-of (x24 / feed-02
+						:name (x25 / name
+							:op1 "Lake"
+							:op2 "Elsinore")))))))
+
+# ::id 7
+# ::snt Investigators said the fire appears to have been caused by people near a roadside store just across the Orange County line , near the crest of Ortega Highway
+(x2 / say-01
+	:ARG0 (x1 / person
+		:ARG0-of (i / investigate-01))
+	:ARG1 (x5 / appear-02
+		:ARG1 (x4 / fire-01)
+		:ARG1-of (x9 / cause-01
+			:ARG0 (x11 / people
+				:null_edge (x12 / near
+					:op1 (x15 / store
+						:mod (x14 / roadside)
+						:location (x17 / across
+							:mod (x16 / just)
+							:op1 (x21 / line
+								:poss (x19 / country
+									:name (n / name
+										:op1 "Orange"))))
+						:location (x23 / near
+							:op1 (x25 / crest
+								:poss (x28 / highway
+									:ARG1 (x27 / person
+										:name (n1 / name
+											:op1 "Ortega")))))))))))
+
+# ::id 8
+# ::snt Investigators  again appealed to the public for help in identifying those responsible
+(x3 / appeal-02
+	:ARG0 (x1 / person
+		:ARG0-of (i / investigate-01))
+	:mod (x2 / again)
+	:ARG2 (x6 / public)
+	:ARG2 (x8 / help-01
+		:ARG1 (x10 / identify-01
+			:ARG1 (x12 / responsible-41))))
+
+# ::id 9
+# ::snt Charred Landscape Dean McAlister , a U.S. Forest Service spokesman , said fire crews late Friday were hiking into the rugged , charred landscape along the Orange-Riverside county line to do battle with sections of the fire still consuming brush and timber
+(x12 / say-01
+	:ARG0 (x4 / person
+		:name (n / name
+			:op1 "McAlister")
+		:null_edge (x1 / char)
+		:null_edge (x2 / landscape)
+		:null_edge (x3 / dean)
+		:ARG0-of (x10 / have-org-role-91
+			:ARG2 (s / spokesman)
+			:ARG1 (x8 / organization
+				:name (n1 / name
+					:op1 "Forest"))
+			:ARG1 (x9 / organization
+				:name (n2 / name
+					:op1 "Service"))))
+	:ARG1 (x18 / hike
+		:ARG0 (x14 / crew
+			:mod (x13 / fire-arm))
+		:time (x15 / late
+			:op1 (xap0 / date-entity
+				:weekday (x16 / friday)))
+		:ARG2 (x24 / landscape
+			:mod (x21 / rugged)
+			:ARG1-of (x23 / char)
+			:location (x25 / along
+				:op1 (x32 / battle-01
+					:ARG1-of (x29 / line
+						:mod (x27 / country
+							:name (n3 / name
+								:op1 "Orange-Riverside")))
+					:ARG1 (x37 / fire-01
+						:mod (x38 / still)
+						:null_edge (x41 / and
+							:op1 (x40 / brush)
+							:op2 (x42 / timber))))))))
+
+# ::id 10
+# ::snt Officials said Officials  hope to salvage some of the unaffected terrain , which can act as habitat islands for birds and other wildlife
+(x2 / say-01
+	:ARG1 (x4 / hope-01
+		:ARG0 (x3 / officials)
+		:ARG1 (x6 / salvage-01
+			:ARG0 x3
+			:ARG1 (x11 / terrain
+				:mod (x7 / some)
+				:mod (x10 / affect-01
+					:polarity -)
+				:ARG0-of (x15 / act-02
+					:mod (x14 / possible)
+					:ARG2 (x18 / island
+						:mod (x17 / habitat)
+						:purpose (x21 / and
+							:op1 (x20 / bird)
+							:op2 (x23 / wildlife
+								:mod (x22 / other))))))))
+	:ARG0 (xap0 / person
+		:ARG0-of (x1 / have-org-role-91
+			:ARG2 (o / official))))
+
+# ::id 11
+# ::snt Although officials first believed that the fire would be contained by late Friday afternoon , Officials  revised Officials  estimates because of troubles battling lingering flames on the southern edge of the blaze , inside the rugged , 3,400-acre San Mateo Wilderness
+(x4 / believe-01
+	:ARG1 (x10 / contain-01
+		:ARG1 (x7 / fire-01)
+		:time (xap1 / date-entity
+			:weekday (x13 / friday)))
+	:ARG1 (x17 / revise-01
+		:ARG1 (x19 / thing
+			:ARG1-of (e / estimate-01)
+			:ARG0-of (x18 / have-org-role-91
+				:ARG2 (o1 / official)))
+		:ARG1-of (x20 / cause-01
+			:ARG0 (x22 / trouble
+				:ARG0-of (x23 / battle-01
+					:ARG1 (x25 / flame
+						:ARG0-of (x24 / linger)
+						:ARG1 (x29 / edge
+							:mod (x28 / south)
+							:ARG1 (x32 / blaze)
+							:poss (x41 / country
+								:name (n / name
+									:op1 "Wilderness")
+								:null_edge (x36 / rugged)
+								:null_edge (x38 / 3,400-acre)
+								:null_edge (x39 / country
+									:name (n1 / name
+										:op1 "San"))
+								:null_edge (x40 / country
+									:name (n2 / name
+										:op1 "Mateo"))))))))
+		:ARG0 (xap2 / person
+			:ARG0-of (x16 / have-org-role-91
+				:ARG2 (o2 / official))))
+	:ARG0 (xap0 / person
+		:ARG0-of (x2 / have-org-role-91
+			:ARG2 (o / official))))
+
+# ::id 12
+# ::snt Fire crews were forced to work mostly with shovels , picks and other hand equipment to cut fire lines in that area
+(x4 / force-01
+	:ARG1 (x2 / crew
+		:mod (x1 / fire-02))
+	:ARG2 (x6 / work-01
+		:ARG0 x2
+		:manner (x7 / most)
+		:ARG2 (x12 / and
+			:op1 (x9 / shovel-01)
+			:op2 (x11 / pick-01)
+			:op2 (x15 / equipment
+				:mod (x13 / other)))
+		:ARG1 (x17 / cut-04
+			:ARG0 x12
+			:ARG1 (x19 / line
+				:mod (x18 / fire-arm)
+				:location (x22 / area
+					:mod (x21 / that))))))
+
+# ::id 13
+# ::snt that area  is down to the hard grunt work , the stuff for the guys who like to sweat , said Stephen Guarino , a Riverside County Fire Department spokesman
+(x21 / say-01
+	:ARG1 (x2 / area
+		:mod (x1 / that))
+	:ARG1 (xap0 / and
+		:ARG2 (x9 / work-01
+			:ARG1 (x8 / grunt
+				:mod (x7 / hard))
+			:ARG0 (x22 / name
+				:op1 "Stephen"
+				:op2 "Guarino"
+				:ARG0-of (x30 / have-org-role-91
+					:ARG2 (s / spokesman)
+					:ARG1 (x26 / organization
+						:name (n / name
+							:op1 "Riverside"))
+					:null_edge (x27 / null_tag)
+					:ARG1 (x28 / organization
+						:name (n1 / name
+							:op1 "Fire"))
+					:null_edge (x29 / null_tag))))
+		:op2 (x12 / stuff
+			:ARG2 (x15 / guy
+				:ARG0-of (x17 / like-01
+					:ARG1 (x19 / sweat-02))))))
+
+# ::id 14
+# ::snt Residents Return Residents evacuated from 200 homes near Lake Elsinore on Wednesday evening have returned to Residents Return Residents evacuated from 200 homes near Lake Elsinore on Wednesday evening  houses , authorities said
+(x33 / say-01
+	:ARG1 (x15 / return-01
+		:ARG1 (x3 / person
+			:ARG0-of (r / reside-01)
+			:null_edge (x1 / person
+				:ARG0-of (r1 / reside-01))
+			:mod (x2 / return-01)
+			:ARG1-of (x4 / evacuate
+				:ARG1 (x7 / home
+					:quant 200
+					:location (x8 / near
+						:op1 (x10 / country
+							:name (n / name
+								:op1 "Elsinore")
+							:null_edge (x9 / country
+								:name (n1 / name
+									:op1 "Lake")))))
+				:time (x13 / evening
+					:time (xap0 / date-entity
+						:null_edge (x12 / null_tag)))))
+		:null_edge (x16 / null_tag
+			:null_edge (x19 / null_tag
+				:null_edge (x17 / null_tag)
+				:null_edge (x18 / null_tag)
+				:ARG1-of (x20 / evacuate
+					:ARG4 (x23 / home
+						:quant 200
+						:location (x24 / near
+							:op1 (x26 / country
+								:name (n2 / name
+									:op1 "Elsinore")
+								:null_edge (x25 / country
+									:name (n3 / name
+										:op1 "Lake")))))
+					:ARG0 (x30 / house
+						:mod (xap1 / date-entity
+							:null_edge (x28 / null_tag)))))))
+	:ARG0 (x32 / authority))
+
+# ::id 15
+# ::snt The Ortega Highway will remain closed through the weekend as crews continue to work , effectively shutting down several popular campgrounds and picnic spots over the busy holiday
+(x5 / remain-01
+	:ARG3 (x6 / close-01
+		:ARG1 (x3 / highway
+			:prep-under (x2 / person
+				:name (n / name
+					:op1 "Ortega"))))
+	:time (x9 / weekend)
+	:condition (x12 / continue-01
+		:ARG0 (x11 / crew)
+		:ARG1 (x14 / work-01
+			:ARG0 x11
+			:ARG1 (x17 / shut-05
+				:manner (x16 / effective)
+				:ARG1 (x22 / and
+					:op1 (x21 / camp-01
+						:quant (x19 / several)
+						:mod (x20 / popular-41))
+					:op2 (x24 / spot
+						:mod (x23 / picnic)))
+				:time (x28 / holiday
+					:mod (x27 / busy))))))
+
+# ::id 16
+# ::snt Four firefighters were injured fighting the blaze , one of them seriously , authorities said
+(x15 / say-01
+	:ARG1 (x4 / injure-01
+		:ARG1 (x2 / firefighter
+			:quant 4)
+		:ARG1 (x5 / fight-01
+			:ARG1 (x7 / blaze))
+		:manner (x12 / serious))
+	:ARG0 (x14 / authority))
+
+# ::id 17
+# ::snt U.S. Forest Service spokesman Robert Brady said the Antelope Valley fire was 100 % contained at 8 a.m. Friday
+(x7 / say-01
+	:ARG0 (x6 / person
+		:name (n / name
+			:op1 "Brady")
+		:null_edge (x4 / have-org-role-91
+			:ARG2 (s / spokesman)
+			:ARG1 (x3 / organization
+				:name (n3 / name
+					:op1 "Service")
+				:mod (x2 / organization
+					:name (n4 / name
+						:op1 "Forest"))))
+		:null_edge (x5 / person
+			:name (n1 / name
+				:op1 "Robert")))
+	:ARG1 (x15 / contain-01
+		:ARG1 (x9 / have-org-role-91
+			:ARG1 (c / country
+				:name (n2 / name
+					:op1 "Antelope"
+					:op2 "Valley")))
+		:null_edge 100
+		:time (xap0 / date-entity
+			:op1 (x17 / date-entity))))
+
+# ::id 18
+# ::snt All Los Angeles County firefighters were released from the fire lines , and a crew of 95 Forest Service firefighters were left to mop up , Brady said
+(x28 / say-01
+	:ARG1 (x13 / and
+		:op1 (x7 / release-01
+			:ARG1 (x5 / firefighter
+				:quant (x1 / all)
+				:mod (x2 / country
+					:name (n1 / name
+						:op1 "Los"))
+				:ARG1 (x3 / country
+					:name (n2 / name
+						:op1 "Angeles")))
+			:ARG2 (x11 / line
+				:mod (x10 / fire-arm)))
+		:op1 (x22 / leave-01
+			:ARG1 (x15 / crew
+				:poss (x20 / firefighter
+					:null_edge 95
+					:ARG1 (x19 / organization
+						:name (n3 / name
+							:op1 "Service")
+						:mod (x18 / organization
+							:name (n4 / name
+								:op1 "Forest")))))
+			:purpose (x24 / mop)))
+	:ARG0 (x27 / person
+		:name (n / name
+			:op1 "Brady")))
+
+# ::id 19
+# ::snt Home Burned The fire claimed 2,250 acres along the outskirts of Elizabeth Lake and Green Valley
+(x2 / burn-01
+	:ARG1 (x1 / home)
+	:ARG1 (x5 / claim-01
+		:ARG0 (x4 / fire-01)
+		:ARG1 (x7 / area-quantity
+			:unit (a / acre)
+			:quant (x6 / 2,250))
+		:location (x8 / along
+			:op1 (x10 / outskirt
+				:null_edge (x14 / and
+					:op1 (x12 / name
+						:op1 "Elizabeth"
+						:op2 "Lake")
+					:op2 (x15 / have-org-role-91
+						:ARG1 (c / country
+							:name (n / name
+								:op1 "Green"
+								:op2 "Valley"))))))))
+
+# ::id 20
+# ::snt Six structures were burned , including one home , and more than 1,000 people were forced to temporarily evacuate on Wednesday
+(x10 / and
+	:op1 (x4 / burn-01
+		:ARG1 (x2 / structure
+			:quant 6)
+		:ARG1 (x8 / home
+			:quant 1))
+	:op2 (x16 / force-01
+		:ARG2 (x11 / more-than)
+		:ARG2 (x19 / evacuate
+			:duration (x18 / temporary)
+			:null_edge (x21 / wednesday))))
+
+# ::id 21
+# ::snt More than 300 firefighters battled the blaze during the three days
+(x5 / battle-01
+	:ARG0 (x4 / firefighter
+		:quant (x1 / more-than
+			:op1 300))
+	:ARG1 (x7 / blaze)
+	:time (x11 / temporal-quantity
+		:unit (d / day)
+		:quant 3))
+
+# ::id 22
+# ::snt Brady said there were no injuries reported
+(x7 / report-01
+	:ARG0 (x1 / person
+		:name (n / name
+			:op1 "Brady"))
+	:ARG0 (x6 / injure-01
+		:polarity -))
+
+# ::id 23
+# ::snt Times staff writer Michael Connelly contributed to this article
+(x6 / contribute-01
+	:ARG0 (x4 / newspaper
+		:name (n / name
+			:op1 "Michael"
+			:op2 "Connelly")
+		:ARG0-of (x1 / newspaper
+			:name (n1 / name
+				:op1 "Times"))
+		:ARG0-of (x3 / person
+			:ARG0-of (w / write-01)
+			:ARG1 (x2 / person
+				:ARG2-of (s / staff-01))))
+	:ARG2 (x9 / article
+		:mod (x8 / this)))
+

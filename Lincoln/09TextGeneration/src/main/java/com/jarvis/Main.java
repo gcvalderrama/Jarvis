@@ -80,9 +80,9 @@ public class Main {
     }
 
     public static void SimpleNLGGenerator()  throws IOException {
-        String inputDir = "D:/Tesis2016/Jarvis/Final/Training/07NLGMetadata/";
+        String inputDir = "D:/Tesis2016/Jarvis/Final/Test/07NLGMetadata/";
 
-        String outputDir =  "D:/Tesis2016/Jarvis/Final/Training/08NLGSentenceNoAux2/";
+        String outputDir =  "D:/Tesis2016/Jarvis/Final/Test/08NLGSummaries/";
 
         File folder = new File(inputDir);
         File[] listOfFiles = folder.listFiles();
@@ -90,14 +90,6 @@ public class Main {
         Lexicon lexicon = Lexicon.getDefaultLexicon();
         NLGFactory nlgFactory = new NLGFactory(lexicon);
         Realiser realiser = new Realiser(lexicon);
-
-
-        List<File> newlist = new ArrayList<File>();
-
-        for (int i = 0; i < 3 ; i++) {
-            newlist.add(listOfFiles[i]);
-        }
-        //newlist.toArray(listOfFiles);
 
         for (File file : listOfFiles) {
             if (file.isFile()) {
@@ -153,7 +145,7 @@ public class Main {
 
                     for (ArrayList<CGVerbTerm> tmpArray: verb.Themes ) {
                         StringBuilder sbthemes = new StringBuilder();
-                  //      sbthemes.append(" related with ");
+                        //sbthemes.append(" related with ");
                         for (CGVerbTerm tmp: tmpArray ) {
                             sbthemes.append(tmp.Node.nosuffix + " ");
                         }

@@ -1,0 +1,276 @@
+# ::id 1
+# ::snt NEW YORK Actress Elizabeth Taylor and the National Enquirer said Actress Elizabeth Taylor and the National Enquirer  reached a settlement of Miss Taylor's lawsuit against the newspaper tabloid
+(x10 / say-01
+	:ARG1 (x6 / and
+		:op1 (x4 / newspaper
+			:name (n / name
+				:op1 "Elizabeth"
+				:op2 "Taylor")
+			:mod (x1 / country
+				:name (n2 / name
+					:op1 "NEW"))
+			:ARG0-of (x3 / actress
+				:ARG1 (x2 / country
+					:name (n3 / name
+						:op1 "YORK"))))
+		:op2 (x9 / organization
+			:name (n1 / name
+				:op1 "Enquirer")
+			:null_edge (x8 / null_tag))
+		:op1 (x18 / reach-01
+			:ARG0 (x14 / and
+				:op1 (x12 / newspaper
+					:name (n4 / name
+						:op1 "Elizabeth"
+						:op2 "Taylor")
+					:ARG0-of (x11 / actress))
+				:op2 (x16 / government-organization
+					:name (n5 / name
+						:op1 "National"
+						:op2 "Enquirer")))
+			:ARG1 (x20 / settlement
+				:ARG1 (x25 / lawsuit
+					:ARG0 (x23 / person
+						:name (n6 / name
+							:op1 "Taylor"))
+					:prep-against (x29 / tabloid
+						:mod (x28 / newspaper)))))))
+
+# ::id 2
+# ::snt Terms were not disclosed
+(x4 / disclose-01
+	:ARG1 (x1 / term))
+
+# ::id 3
+# ::snt The paper said The paper  made an appropriate monetary payment to Miss Taylor and apologized to Elizabeth Taylor
+(x3 / say-01
+	:ARG0 (x2 / paper)
+	:ARG1 (x14 / and
+		:op1 (x6 / make-02
+			:ARG0 (x5 / paper)
+			:ARG1 (x10 / payment
+				:mod (x8 / appropriate)
+				:mod (x9 / monetary))
+			:ARG2 (x13 / person
+				:name (n / name
+					:op1 "Taylor")
+				:null_edge (x12 / miss)))
+		:op2 (x15 / apologize-01
+			:ARG1 (x17 / name
+				:op1 "Elizabeth"
+				:op2 "Taylor"))))
+
+# ::id 4
+# ::snt The lawsuit , which has been pending for nine months , arose out of two articles published by the Enquirer in June 1990 reporting on Miss Taylor's condition and activities at St. John's Hospital , Santa Monica , Calif. , where Elizabeth Taylor  was treated last spring for pneumonia
+(x12 / arise-01
+	:ARG1 (x2 / lawsuit
+		:ARG1-of (x7 / pend-01
+			:duration (x10 / temporal-quantity
+				:unit (m / month)
+				:quant 9)))
+	:ARG2 (x16 / article
+		:quant 2
+		:ARG1-of (x17 / publish-01
+			:ARG0 (x20 / country
+				:name (n / name
+					:op1 "Enquirer"))
+			:time (x22 / date-entity
+				:year 1990))
+		:ARG1-of (x24 / report-01
+			:ARG1 (x30 / and
+				:op1 (x29 / condition
+					:poss (x27 / person
+						:name (n1 / name
+							:op1 "Taylor")))
+				:op2 (x31 / activity
+					:location (x33 / government-organization
+						:name (n2 / name
+							:op1 "St."
+							:op2 "John"
+							:op3 "'s"
+							:op4 "Hospital")
+						:location (x39 / country
+							:name (n3 / name
+								:op1 "Monica")
+							:null_edge (x38 / country
+								:name (n4 / name
+									:op1 "Santa"))
+							:null_edge (x41 / country
+								:name (n5 / name
+									:op1 "Calif.")))
+						:name (x44 / name
+							:op1 "Elizabeth"
+							:op2 "Taylor"
+							:season (x49 / spring
+								:mod (x48 / last)))))))))
+
+# ::id 5
+# ::snt The Enquirer said that after gaining access to all of Miss Taylor's medical records , it is satisfied that the articles reporting on the actress's medical condition and the report that she was drinking were in error
+(x3 / say-01
+	:ARG0 (x2 / enquirer)
+	:ARG1 (x19 / satisfied
+		:ARG1 (x22 / article
+			:ARG1-of (x23 / report-01
+				:time (x5 / after
+					:op1 (x6 / gain-02
+						:ARG1 (x7 / access-01
+							:ARG1 (x15 / record
+								:poss (x12 / person
+									:name (n / name
+										:op1 "Taylor"))
+								:mod (x14 / medicine)))))
+				:ARG1 (x30 / and
+					:op1 (x29 / condition
+						:poss (x26 / actress)
+						:mod (x28 / medicine))
+					:op2 (x32 / report-01
+						:ARG1 (x36 / drink-01))))
+			:location (x39 / error))))
+
+# ::id 6
+# ::snt The paper said The paper  published the articles in good faith reliance on information provided to The paper  , but the information was inaccurate
+(x3 / say-01
+	:ARG0 (x2 / paper)
+	:ARG1 (x8 / article
+		:ARG1-of (x20 / contrast-01
+			:ARG2 (x6 / publish-01
+				:ARG0 (x5 / paper)
+				:time (x12 / reliance
+					:mod (x10 / good)
+					:ARG1 (x11 / faith)
+					:ARG1 (x14 / information
+						:ARG1-of (x15 / provide-01
+							:ARG1 (x18 / paper)))))
+			:ARG2 (x24 / inaccurate
+				:domain (x22 / information)))))
+
+# ::id 7
+# ::snt Iain Calder , Enquirer editor , said in a statement , we regret the inaccuracies in the articles but are pleased that this dispute has come to an amicable end
+(x10 / state-01
+	:ARG0 (x1 / newspaper
+		:name (n / name
+			:op1 "Iain"
+			:op2 "Calder")
+		:ARG0-of (x5 / editor
+			:ARG1 (x4 / enquirer)))
+	:ARG1 (x13 / regret-01
+		:ARG0 (x12 / we)
+		:ARG1 (x15 / inaccuracy
+			:location (x18 / article
+				:ARG1-of (x26 / come-01
+					:ARG1 (x24 / dispute-01
+						:mod (x23 / this))
+					:ARG2 (x30 / end
+						:mod (x29 / amicable)))))))
+
+# ::id 8
+# ::snt Miss Taylor said Elizabeth Taylor  feels completely vindicated , and that after the newspaper's management determined the articles were in error , the Enquirer acted promptly and in good faith
+(x3 / say-01
+	:ARG0 (x2 / person
+		:name (n / name
+			:op1 "Taylor")
+		:null_edge (x1 / miss))
+	:ARG1 (x10 / and
+		:op1 (x6 / feel-01
+			:ARG0 (x4 / newspaper
+				:name (n1 / name
+					:op1 "Elizabeth"
+					:op2 "Taylor"))
+			:degree (x7 / complete))
+		:op2 (x26 / act-02
+			:time (x12 / after
+				:op1 (x17 / determine-01
+					:ARG0 (x16 / manage-01
+						:poss (x14 / have-org-role-91
+							:ARG1 (n3 / newspaper)))
+					:ARG1 (x19 / article
+						:ARG1-of (x22 / error))))
+			:ARG0 (x25 / country
+				:name (n2 / name
+					:op1 "Enquirer"))
+			:manner (x28 / and
+				:op1 (x27 / prompt
+					:manner (x31 / faith
+						:mod (x30 / good)))))))
+
+# ::id 9
+# ::snt Miss Taylor initially sought damages of $ 20 million in Los Angeles Superior Court , according to Neil Papiano , Elizabeth Taylor  attorney
+(x4 / seek-01
+	:ARG0 (x2 / person
+		:name (n / name
+			:op1 "Taylor")
+		:ARG0-of (x1 / miss))
+	:time (x3 / initial)
+	:ARG1 (x5 / damage
+		:ARG1-of (x6 / include-91))
+	:ARG2 (x11 / government-organization
+		:name (n1 / name
+			:op1 "Los"
+			:op2 "Angeles"
+			:op3 "Superior"
+			:op4 "Court"))
+	:ARG1 (xap0 / and
+		:name (x18 / name
+			:op1 "Neil"
+			:op2 "Papiano")
+		:op2 (x23 / attorney
+			:name (x21 / name
+				:op1 "Elizabeth"
+				:op2 "Taylor"))))
+
+# ::id 10
+# ::snt Although Mr. Papiano would not specify the size of the settlement , Neil Papiano  said we were persuaded that it was certainly large enough that we should not go to trial
+(x15 / say-01
+	:time (x6 / specify-01
+		:ARG0 (x3 / person
+			:name (n1 / name
+				:op1 "Papiano")
+			:null_edge (x2 / null_tag))
+		:ARG1 (x8 / size
+			:mod (x11 / settle-02)))
+	:ARG0 (x13 / newspaper
+		:name (n / name
+			:op1 "Neil"
+			:op2 "Papiano"))
+	:ARG1 (x18 / persuade-01
+		:ARG1 (x16 / we)
+		:ARG2 (x23 / large
+			:mod (x22 / certain)
+			:mod (x24 / enough)))
+	:ARG1 (x27 / recommend-01
+		:ARG1 (x29 / go-01
+			:ARG0 (x26 / we))))
+
+# ::id 11
+# ::snt As previously reported , G.P. Group Inc. , the Lantana , Fla. , publisher of the Enquirer and Star tabloids , plans to raise $ 350 million by offering 43 % of the firm in an initial public offering
+(x22 / plan-01
+	:time (x3 / report-01
+		:time (x2 / previous))
+	:ARG0 (x5 / government-organization
+		:name (n / name
+			:op1 "G.P."
+			:op2 "Group"
+			:op3 "Inc."))
+	:ARG0 (x14 / publish-01
+		:topic (x18 / and
+			:op2 (x10 / country
+				:name (n1 / name
+					:op1 "Lantana")
+				:null_edge (x12 / country
+					:name (n3 / name
+						:op1 "Fla.")))
+			:op1 (x17 / enquirer)
+			:op2 (x19 / organization
+				:name (n2 / name
+					:op1 "Star"))
+			:op2 (x20 / tabloid)))
+	:ARG1 (x24 / raise-01
+		:ARG0 x5
+		:ARG0 x14
+		:ARG3 (xap0 / percentage-entity
+			:value 43
+			:ARG1 (x34 / firm)
+			:ARG2 (x39 / offer-01
+				:mod (x37 / initial)
+				:mod (x38 / public)))))
+

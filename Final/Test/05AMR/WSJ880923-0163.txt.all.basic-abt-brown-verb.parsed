@@ -1,0 +1,2207 @@
+# ::id 1
+# ::snt Wearing a bright yellow flame-retardant shirt , Donald Despain crouches down to study the ash-covered forest floor
+(x10 / crouch
+	:ARG0-of (x1 / wear-01
+		:ARG1 (x6 / shirt
+			:mod (x3 / bright)
+			:mod (x4 / yellow)
+			:mod (x5 / flame-retardant)))
+	:ARG0 (x8 / newspaper
+		:name (n / name
+			:op1 "Donald"
+			:op2 "Despain"))
+	:ARG1 (x13 / study-01
+		:ARG0 x8
+		:ARG1 (x17 / floor
+			:mod (x15 / ash-covered)
+			:mod (x16 / forest))))
+
+# ::id 2
+# ::snt The scorched hillside around him appears utterly lifeless
+(x6 / appear-02
+	:ARG1 (x8 / lifeless
+		:domain (x3 / hillside
+			:mod (x2 / scorched)
+			:location (x4 / around))
+		:manner (x7 / utterly)))
+
+# ::id 3
+# ::snt Almost everything in sight is black , from the tips of trees 40 feet above the ground to the powdered ash blanketing the earth
+(xap1 / and
+	:domain (x6 / black
+		:domain (x2 / everything
+			:degree (x1 / almost)
+			:location (x4 / sight-01)))
+	:op1 (x10 / tip-05
+		:ARG1 (x12 / tree)
+		:ARG1 (xap0 / relative-position
+			:quant (x14 / distance-quantity
+				:unit (f / foot)
+				:quant 40)
+			:direction (x15 / above
+				:op1 (x17 / ground))))
+	:ARG2 (x21 / name
+		:op1 "ash"
+		:mod (x20 / powder-01)
+		:ARG0-of (x22 / blanket
+			:ARG1 (x24 / planet
+				:name (n / name
+					:op1 "earth")))))
+
+# ::id 4
+# ::snt The firestorm that raged through here in recent weeks was driven by 60-mile-an-hour winds that fanned temperatures to more than 1,600 degrees Fahrenheit
+(x11 / drive-02
+	:ARG1 (x2 / firestorm
+		:ARG0-of (x4 / rage
+			:location (x6 / here)
+			:time (x9 / week
+				:mod (x8 / recent))))
+	:ARG0 (x14 / wind
+		:ARG0-of (x16 / fan
+			:ARG1 (x17 / temperature
+				:quant (x19 / more-than
+					:op1 (x21 / 1,600))))))
+
+# ::id 5
+# ::snt The fire was so intense that a gray shadow on the forest floor is all that remains of a fallen log
+(x5 / intense
+	:domain (x2 / fire-01)
+	:degree (x4 / so)
+	:domain (x9 / shadow-01
+		:mod (x8 / gray)
+		:location (x13 / floor
+			:mod (x12 / forest))
+		:condition (x17 / remain-01
+			:ARG3 (x15 / all)
+			:ARG1 (x21 / log
+				:ARG1-of (x20 / fall-01)))))
+
+# ::id 6
+# ::snt Where many people recoil at the sweep of nature's destructive power , the 47-year-old Mr. Despain marvels at the tiny steps life is already taking to renew the sweep of nature's destructive power
+(x18 / marvel
+	:condition (x4 / recoil
+		:ARG1 (x2 / many)
+		:instrument (x7 / sweep-01
+			:ARG1 (x12 / power
+				:poss (x9 / nature)
+				:mod (x11 / destroy-01))))
+	:ARG0 (x17 / person
+		:name (n / name
+			:op1 "Despain")
+		:null_edge (x15 / person
+			:name (n1 / name
+				:op1 "47-year-old"))
+		:null_edge (x16 / null_tag))
+	:domain (x23 / life
+		:mod (x22 / step-01
+			:mod (x21 / tiny))
+		:null_edge (x28 / renew-01
+			:time (x25 / already)
+			:ARG1 (x30 / sweep-01
+				:ARG1 (x35 / power
+					:poss (x32 / nature)
+					:mod (x34 / destroy-01))))))
+
+# ::id 7
+# ::snt As Yellowstone National Park's research biologist , Yellowstone National Park's research biologist  has already begun to monitor the forest's rebirth from the worst fire on record
+(x17 / begin-01
+	:prep-under (x7 / biologist
+		:mod (x6 / research-01))
+	:ARG0 (x14 / biologist
+		:ARG0 (x9 / company
+			:name (n / name
+				:op1 "Yellowstone"
+				:op2 "National"
+				:op3 "Park"))
+		:mod (x13 / research-01))
+	:time (x16 / already)
+	:ARG1 (x19 / monitor-01
+		:ARG1 (x23 / rebirth
+			:poss (x21 / forest)
+			:poss (x27 / fire-01
+				:mod (x26 / bad)
+				:medium (x29 / record)))))
+
+# ::id 8
+# ::snt Yellowstone National Park's research biologist  eyes red from the blowing ash , Mr. Despain patiently counts the quarter-inch lodgepole pine seed wings within a rectangular frame Lodgepole  places on the hillside
+(x17 / count-01
+	:ARG1 (x7 / eye
+		:poss (x1 / company
+			:name (n1 / name
+				:op1 "Yellowstone"
+				:op2 "National"
+				:op3 "Park"))
+		:mod (x5 / research-01)
+		:mod (x6 / biologist)
+		:mod (x8 / red
+			:name (x12 / name
+				:op1 "ash"
+				:ARG1-of (x11 / blow-01))))
+	:ARG0 (x15 / person
+		:name (n / name
+			:op1 "Despain")
+		:null_edge (x14 / null_tag))
+	:manner (x16 / patiently)
+	:ARG1 (x23 / wing
+		:mod (x22 / seed
+			:ARG1 (x21 / pine)))
+	:time (x24 / within
+		:op1 (x27 / frame
+			:mod (x26 / rectangular)))
+	:ARG1 (x29 / place
+		:mod (x28 / lodgepole)
+		:location (x32 / hillside)))
+
+# ::id 9
+# ::snt The tiny seeds are slowly released from rock-hard pine cones only after the cones have been seared by the passing flames ; indeed , they require a fire to propagate themselves
+(x6 / release-01
+	:ARG1 (x3 / seed
+		:mod (x2 / tiny))
+	:manner (x5 / slow)
+	:ARG2 (x10 / cone
+		:mod (x8 / rock-hard)
+		:ARG1 (x9 / pine))
+	:time (x12 / after
+		:mod (x11 / only)
+		:op1 (x17 / sear
+			:ARG1 (x14 / cone)
+			:ARG0 (x21 / flame
+				:ARG1-of (x20 / pass-03))))
+	:null_edge (x26 / require-01
+		:mod (x23 / indeed)
+		:ARG1 (x28 / fire-01)
+		:ARG1 (x30 / propagate)))
+
+# ::id 10
+# ::snt The little wings act like the rotary blades of a helicopter in dispersing the seeds
+(x4 / act-02
+	:ARG0 (x3 / wing
+		:mod (x2 / little))
+	:ARG1 (x8 / blade
+		:mod (x7 / rotary)
+		:topic (x11 / helicopter
+			:topic (x13 / disperse-01
+				:ARG1 (x15 / seed)))))
+
+# ::id 11
+# ::snt This is amazing , says Mr. Despain , reflecting on Donald Despain  count
+(x5 / say-01
+	:ARG1 (x3 / amaze-01
+		:ARG0 (x1 / this))
+	:ARG0 (x7 / person
+		:name (n / name
+			:op1 "Despain")
+		:null_edge (x6 / null_tag)
+		:ARG0-of (x9 / reflect-01
+			:ARG1 (x13 / count-01
+				:ARG0 (x11 / person
+					:name (n1 / name
+						:op1 "Donald"))
+				:ARG0 (x12 / person
+					:name (n2 / name
+						:op1 "Despain"))))))
+
+# ::id 12
+# ::snt This works out to one million seeds an acre
+(x2 / work-01
+	:ARG0 (x1 / this)
+	:ARG1 (x7 / seed))
+
+# ::id 13
+# ::snt Only about 500 mature trees were on an acre of hillside here before the fire
+(x5 / tree
+	:mod (x1 / only
+		:op1 500)
+	:mod (x4 / mature-01)
+	:location (x11 / hillside
+		:time (x13 / before
+			:location (x12 / here)
+			:op1 (x15 / fire-01))))
+
+# ::id 14
+# ::snt Of course , not all the seeds will become trees
+(x9 / become-01
+	:ARG1 (x7 / seed
+		:quant (x5 / all))
+	:ARG2 (x10 / tree))
+
+# ::id 15
+# ::snt Deer mice will eat some of them
+(x4 / eat-01
+	:ARG0 (x2 / mouse)
+	:ARG1 (x5 / some
+		:null_edge (x6 / include-91)))
+
+# ::id 16
+# ::snt Others wo not take root
+(x4 / take-01
+	:ARG0 (x1 / person
+		:mod (o / other))
+	:ARG1 (x5 / root))
+
+# ::id 17
+# ::snt But next spring many of the seeds , fertilized by nutrients leaching into the soil from the snow-packed ash , will sprout , along with a bouquet of grasses , flowers and shrubs , as burnt areas of the park erupt with life
+(x1 / contrast-01
+	:ARG2 (x22 / sprout
+		:ARG1 (x7 / seed
+			:season (x3 / spring
+				:mod (x2 / next))
+			:ARG1-of (x9 / fertilize
+				:ARG0 (x11 / nutrient
+					:ARG0-of (x12 / leach
+						:ARG2 (x15 / soil)
+						:name (x19 / name
+							:op1 "ash")))))
+		:location (x24 / along
+			:op1 (x27 / bouquet
+				:consist-of (x32 / and
+					:op1 (x29 / grass)
+					:op2 (x31 / flower)
+					:op2 (x33 / shrub))))
+		:purpose (x41 / erupt-01
+			:ARG1 (x37 / area
+				:mod (x36 / burnt)
+				:mod (x40 / park))
+			:ARG1 (x43 / life))))
+
+# ::id 18
+# ::snt The profusion of pine seeds is just one of the rejuvenating forces at work in Yellowstone even as the fires , largely quenched this week by rain and snow , still smolder
+(x12 / force
+	:ARG1 (x5 / seed
+		:quant (x2 / profusion
+			:mod (x7 / just))
+		:mod (x4 / pine))
+	:mod (x11 / rejuvenating)
+	:location (x14 / work-01
+		:location (x16 / country
+			:name (n / name
+				:op1 "Yellowstone"))
+		:time (x32 / smolder
+			:mod (x17 / even)
+			:ARG1 (x20 / fire
+				:ARG1-of (x23 / quench
+					:degree (x22 / largely)
+					:time (x25 / week
+						:mod (x24 / this))
+					:ARG0 (x28 / and
+						:op1 (x27 / rain)
+						:op2 (x29 / snow))))
+			:mod (x31 / still))))
+
+# ::id 19
+# ::snt Grasses and several types of wildflowers , ranging from fireweed to wild geraniums , are already sprouting less than seven weeks after fire roared past Grant Village near Yellowstone Lake
+(x17 / sprout
+	:ARG0 (x2 / and
+		:op1 (x1 / grass
+			:poss (x6 / wildflower
+				:mod (x4 / type
+					:quant (x3 / several))
+				:ARG1-of (x8 / range-01
+					:ARG3 (x10 / fireweed
+						:destination (x13 / geranium
+							:mod (x12 / wild)))))))
+	:time (x16 / already)
+	:time (x22 / after
+		:op1 (x24 / roar
+			:duration (x21 / temporal-quantity
+				:unit (w / week)
+				:null_edge (x18 / less-than
+					:null_edge 7))
+			:ARG0 (x23 / fire-01)
+			:ARG1 (x27 / country
+				:name (n / name
+					:op1 "Village")
+				:null_edge (x26 / country
+					:name (n1 / name
+						:op1 "Grant"))
+				:location (x28 / near
+					:op1 (x30 / country
+						:name (n2 / name
+							:op1 "Lake")
+						:mod (x29 / country
+							:name (n3 / name
+								:op1 "Yellowstone"))))))))
+
+# ::id 20
+# ::snt Next year , the ground cover replacing the park's burnt stands of aging lodgepole pines should provide a 30-fold increase in plant species
+(x2 / year
+	:mod (x1 / next)
+	:ARG1-of (x6 / cover-04
+		:ARG1 (x5 / ground)
+		:ARG2-of (x7 / replace-01
+			:ARG1 (x17 / recommend-01
+				:ARG1 (x18 / provide-01
+					:ARG0 (x12 / stand
+						:poss (x9 / park)
+						:ARG1-of (x11 / burnt)
+						:ARG1 (x16 / pine
+							:mod (x14 / age-01)))
+					:ARG2 (x21 / increase-01
+						:mod (x20 / 30-fold)
+						:ARG1 (x24 / specie
+							:location (x23 / plant))))))))
+
+# ::id 21
+# ::snt More edible plants , in turn , support larger , and more various populations of birds and other animals
+(x8 / support-01
+	:domain (x3 / plant
+		:mod (x2 / edible
+			:null_edge (x1 / more)))
+	:ARG1 (x11 / and
+		:op1 (x9 / large)
+		:op2 (x13 / various
+			:degree (x12 / more)))
+	:ARG1 (x14 / population
+		:consist-of (x17 / and
+			:op1 (x16 / bird)
+			:op2 (x19 / animal
+				:mod (x18 / other)))))
+
+# ::id 22
+# ::snt We see what is going on here not as devastation and destruction , but , rather , rebirth and renewal of these ecosystems , says John Varley , Yellowstone's chief of research and Mr. Despain's boss
+(xap0 / multi-sentence
+	:ARG2 (x2 / see-01
+		:ARG0 (x1 / we))
+	:ARG1 (x5 / go-02
+		:location (x7 / here)
+		:ARG2 (x11 / and
+			:op1 (x10 / devastation)
+			:op4 (x12 / destroy-01)
+			:op2 (x19 / and
+				:op1 (x18 / rebirth
+					:ARG1 (x25 / say-01
+						:ARG1 (x23 / ecosystem)
+						:name (x26 / name
+							:op1 "John"
+							:op2 "Varley"
+							:ARG0-of (x31 / have-org-role-91
+								:ARG2 (c / chief)
+								:ARG1 (x29 / organization
+									:name (n / name
+										:op1 "Yellowstone"))
+								:topic (x33 / research-01)
+								:topic (x34 / and)
+								:ARG1 (x36 / person
+									:name (n1 / name
+										:op1 "Despain")
+									:null_edge (x35 / null_tag)
+									:ARG0-of (x38 / boss))))))
+				:op2 (x20 / renewal)))))
+
+# ::id 23
+# ::snt Mr. Despain's research should play a major role in a new debate over whether to reforest burnt areas of Yellowstone or to let nature take Yellowstone Lake  course
+(x5 / recommend-01
+	:ARG1 (x6 / play-01
+		:ARG0 (x4 / research
+			:ARG1 (x2 / person
+				:name (n / name
+					:op1 "Despain")
+				:null_edge (x1 / null_tag)))
+		:ARG1 (x9 / role
+			:mod (x8 / major))
+		:ARG1 (x13 / debate-01
+			:mod (x12 / new)
+			:topic (x22 / or
+				:op1 (x17 / reforest
+					:ARG1 (x19 / area
+						:mod (x18 / burnt)
+						:mod (x21 / country
+							:name (n1 / name
+								:op1 "Yellowstone"))))
+				:op2 (x24 / let-01
+					:ARG1 (x26 / take-01
+						:ARG1 (x29 / course
+							:ARG1 (x25 / nature)
+							:mod (x28 / organization
+								:name (n2 / name
+									:op1 "Lake")))))))))
+
+# ::id 24
+# ::snt In recent years , environmentalists have for the most part succeeded in promoting the natural processes of the parks
+(x11 / succeed-01
+	:duration (x3 / temporal-quantity
+		:unit (y / year)
+		:mod (x2 / recent))
+	:ARG0 (x5 / have-org-role-91
+		:ARG2 (e / environmentalist))
+	:purpose (x10 / part
+		:quant (x9 / most))
+	:ARG1 (x13 / promote-02
+		:ARG1 (x16 / process
+			:mod (x15 / natural)
+			:mod (x19 / park-01))))
+
+# ::id 25
+# ::snt But the approach is again under attack
+(x1 / contrast-01
+	:ARG2 (x3 / approach-02
+		:mod (x5 / again))
+	:ARG2 (x7 / attack-01))
+
+# ::id 26
+# ::snt The National Park Service has already been at the center of a much-publicized political firestorm over The National Park Service  16-year-old natural burn policy , which allows lightning-caused fires to burn environmentalists  out , except where environmentalists  threaten towns or park buildings
+(x10 / center
+	:time (x6 / already
+		:domain (x4 / organization
+			:name (n / name
+				:op1 "Service")
+			:null_edge (x2 / null_tag)
+			:null_edge (x3 / person
+				:name (n3 / name
+					:op1 "Park"))))
+	:mod (x15 / firestorm
+		:mod (x13 / much-publicized)
+		:mod (x14 / politics))
+	:part-of (x24 / policy
+		:poss (x18 / government-organization
+			:name (n1 / name
+				:op1 "National"
+				:op2 "Park"
+				:op3 "Service"))
+		:mod (x21 / person
+			:name (n2 / name
+				:op1 "16-year-old"))
+		:mod (x22 / natural)
+		:ARG0-of (x27 / allow-01
+			:ARG1 (x23 / burn-01)
+			:ARG1 (x28 / lightning-caused
+				:ARG1 (x29 / fire)
+				:purpose (x31 / burn-01
+					:ARG1 (x32 / have-org-role-91
+						:ARG2 (e / environmentalist))
+					:ARG2 (x33 / out-01))
+				:topic (x38 / threaten-01
+					:ARG0 (x37 / have-org-role-91
+						:ARG2 (e1 / environmentalist))
+					:ARG2 (x40 / or
+						:op1 (x39 / town)
+						:op2 (x42 / building
+							:null_edge (x41 / null_tag))))))))
+
+# ::id 27
+# ::snt Critics , including elected officials from Western states and the logging and tourist industries , have grabbed headlines by blaming that policy for fueling the inferno that this summer raged over half of Yellowstone's 2.2 million acres and cost more than $ 100 million to fight and clean up
+(x17 / grab-01
+	:ARG0 (x1 / person
+		:ARG0-of (c / criticize-01)
+		:ARG1-of (x3 / include-91
+			:ARG1 (x9 / and
+				:op2 (x8 / state
+					:mod (x7 / world-region
+						:name (n / name
+							:op1 "Western")))
+				:op3 (x14 / industry
+					:example (x12 / and
+						:op1 (x11 / log)
+						:op2 (x13 / person
+							:ARG0-of (t / tour-01))))
+				:op1 (xap0 / person
+					:ARG0-of (x5 / have-org-role-91
+						:ARG2 (o / official)
+						:ARG1-of (x4 / elect-01))))))
+	:ARG1 (x18 / headline)
+	:instrument (x20 / blame-01
+		:ARG1 (x22 / policy)
+		:ARG2 (x24 / fuel-01
+			:ARG1 (x26 / inferno
+				:ARG1 (x39 / and
+					:op1 (x30 / rage
+						:time (xap1 / date-entity
+							:season (x29 / summer
+								:mod (x28 / this))))
+					:op1 (x31 / over
+						:op1 (x38 / area-quantity
+							:unit (a / acre)
+							:poss (x34 / organization
+								:name (n1 / name
+									:op1 "Yellowstone"))))
+					:op2 (x40 / cost-01
+						:ARG2 (x41 / more-than)
+						:ARG2 (x48 / and
+							:op1 (x47 / fight-01)
+							:op2 (x49 / clean-02))))))))
+
+# ::id 28
+# ::snt Reforestation would give wooded areas in Yellowstone a five-year jump on natural regrowth of the woods and would get Yellowstone Lake  green again , says John Davis , Willamette Industries Inc.'s general manager for Western timber logging operations in Lewiston , Idaho
+(x25 / say-01
+	:ARG1 (x17 / and
+		:op1 (x3 / give-07
+			:ARG0 (x1 / reforestation)
+			:ARG2 (x5 / area
+				:mod (x4 / wooded)
+				:location (x7 / country
+					:name (n2 / name
+						:op1 "Yellowstone")))
+			:ARG1 (x10 / jump-03
+				:mod (x9 / person
+					:name (n3 / name
+						:op1 "five-year"))
+				:ARG1 (x13 / regrowth
+					:mod (x12 / natural)
+					:ARG1 (x16 / wood))))
+		:op2 (x19 / get-05
+			:ARG0 x1
+			:ARG0 x5
+			:ARG2 (x22 / green
+				:domain (x21 / organization
+					:name (n4 / name
+						:op1 "Lake")
+					:mod (x20 / organization
+						:name (n7 / name
+							:op1 "Yellowstone")))
+				:mod (x23 / again))))
+	:ARG0 (x26 / person
+		:name (n / name
+			:op1 "John"
+			:op2 "Davis")
+		:ARG0-of (x34 / manage-01
+			:poss (x29 / company
+				:name (n1 / name
+					:op1 "Willamette"
+					:op2 "Industries"
+					:op3 "Inc."))
+			:mod (x33 / general)
+			:ARG1 (x37 / timber)
+			:purpose (x39 / operation
+				:location (x36 / world-region
+					:name (n5 / name
+						:op1 "Western"))
+				:ARG0-of (x38 / log)
+				:location (x41 / country
+					:name (n6 / name
+						:op1 "Lewiston")
+					:null_edge (x43 / country
+						:name (n8 / name
+							:op1 "Idaho")))))))
+
+# ::id 29
+# ::snt Gerald M. Freeman , the president and chief operating officer of Stone Forest Industries Inc. , agrees : Controlled burning , selective logging and reforestation are a much better way to manage the forests
+(x17 / agree-01
+	:ARG0 (x1 / person
+		:name (n / name
+			:op1 "Gerald"
+			:op2 "M."
+			:op3 "Freeman"))
+	:ARG1 (x7 / and
+		:op2 (x6 / have-org-role-91
+			:ARG2 (p / president)
+			:ARG1 (x12 / government-organization
+				:name (n1 / name
+					:op1 "Stone"
+					:op2 "Forest"
+					:op3 "Industries"
+					:op4 "Inc.")))
+		:op1 (xap0 / person
+			:ARG0-of (x10 / have-org-role-91
+				:ARG2 (o / officer)
+				:ARG1 (x8 / have-org-role-91
+					:ARG2 (c / chief))
+				:ARG1 (x9 / operate-01))))
+	:ARG1 (x24 / and
+		:op1 (x20 / burn-01
+			:ARG1 (x19 / control-01))
+		:op2 (x22 / selective
+			:ARG1 (x23 / log))
+		:op2 (x25 / reforestation
+			:manner (x30 / way
+				:mod (x29 / good
+					:degree (xap1 / more
+						:degree (x28 / much)))
+				:instrument-of (x32 / manage-01
+					:ARG1 (x34 / forest))))))
+
+# ::id 30
+# ::snt The pressure to bring back Yellowstone's forest through reforestation may get intense
+(x11 / possible
+	:domain (x13 / intense
+		:domain (x2 / pressure-01
+			:ARG2 (x4 / bring-01
+				:ARG1 (x8 / forest
+					:poss (x6 / organization
+						:name (n / name
+							:op1 "Yellowstone")))
+				:ARG2 (x10 / reforestation)))
+		:domain (x12 / get-03)))
+
+# ::id 31
+# ::snt In an average year , 2.5 million tourists visit the huge park , and a drop-off because of the fire damage could severely hurt business
+(x14 / and
+	:op1 (x9 / visit-01
+		:ARG0 (x8 / person
+			:ARG0-of (t / tour-01))
+		:ARG1 (x12 / park
+			:mod (x11 / huge)))
+	:op2 (x22 / possible
+		:domain (x24 / hurt-01
+			:ARG1 (x16 / drop-off
+				:ARG1-of (x17 / cause-01
+					:ARG0 (x21 / damage-01
+						:ARG1 (x20 / fire-arm))))
+			:manner (x23 / severe)
+			:ARG1 (x25 / business))))
+
+# ::id 32
+# ::snt In August , with fires out of control , the tourist trade was off 30 % here
+(x12 / trade-01
+	:time (x2 / date-entity)
+	:ARG1 (x5 / fire)
+	:mod (x11 / person
+		:ARG0-of (t / tour-01))
+	:location (x17 / here)
+	:ARG2 (xap0 / out-of
+		:op1 (x8 / control-01))
+	:ARG2 (xap1 / percentage-entity
+		:value 30))
+
+# ::id 33
+# ::snt The emotional appeal of replanting the parks already has led to some reforestation proposals some of 2.5 million tourists
+(x10 / lead-02
+	:ARG0 (x3 / appeal-02
+		:mod (x2 / emotion)
+		:ARG2 (x5 / replant-01
+			:ARG1 (x7 / park-01)))
+	:time (x8 / already)
+	:ARG2 (x14 / thing
+		:ARG1-of (p / propose-01)
+		:quant (x12 / some)
+		:ARG1 (x13 / reforestation))
+	:ARG1 (x15 / some
+		:null_edge (x16 / include-91
+			:ARG2 (x19 / person
+				:ARG0-of (t / tour-01)))))
+
+# ::id 34
+# ::snt New Jersey's governor , Thomas Kean , for instance , announced that his state planned to donate thousands of evergreen seedlings to replant Yellowstone , apparently without realizing that none of the proffered species are indigenous to the park
+(x12 / announce-01
+	:ARG1 (x16 / plan-01
+		:ARG0 (x15 / state)
+		:ARG1 (x18 / donate-01
+			:ARG0 x15
+			:ARG1 (x22 / seedling
+				:mod (x21 / evergreen)
+				:purpose (x24 / replant-01
+					:ARG1 (x25 / government-organization
+						:name (n1 / name
+							:op1 "Yellowstone"))
+					:ARG2 (x29 / realize-02
+						:ARG0 (x35 / specie
+							:quant (x31 / none)
+							:ARG1-of (x34 / proffer
+								:ARG2 (x40 / park))))))))
+	:ARG0 (xap0 / person
+		:ARG0-of (x4 / have-org-role-91
+			:ARG2 (g / governor)
+			:ARG1 (x1 / city
+				:name (n / name
+					:op1 "New"
+					:op2 "Jersey"))
+			:name (x6 / name
+				:op1 "Thomas"
+				:op2 "Kean"))))
+
+# ::id 35
+# ::snt Although the offer was later amended to include native varieties , the park service politely declined
+(x16 / decline-02
+	:ARG1 (x6 / amend-01
+		:time (x5 / late)
+		:ARG1 (x10 / variety
+			:mod (x9 / native)))
+	:ARG0 (x14 / service
+		:null_edge (x13 / null_tag))
+	:manner (x15 / politely))
+
+# ::id 36
+# ::snt Mr. Despain hopes that the scientific evidence that park researchers are gathering will testify to the forest's ability to renew the scientific evidence that park researchers are gathering  , while countering emotional calls for human help
+(x3 / hope-01
+	:ARG0 (x2 / person
+		:name (n / name
+			:op1 "Despain")
+		:null_edge (x1 / null_tag))
+	:ARG1 (x14 / testify-01
+		:ARG1 (x7 / thing
+			:ARG0-of (e / evidence-01)
+			:mod (x6 / science)
+			:ARG1 (x12 / gather-01
+				:ARG0 (x10 / person
+					:ARG0-of (r / research-01)
+					:null_edge (x9 / null_tag))))
+		:ARG2 (x19 / ability
+			:null_edge (x17 / forest)
+			:null_edge (x21 / renew-01
+				:ARG0 x17
+				:ARG1 (x24 / thing
+					:ARG0-of (e1 / evidence-01)
+					:manner (x23 / science)
+					:ARG1 (x29 / gather-01
+						:ARG0 (x27 / person
+							:ARG0-of (r1 / research-01)
+							:null_edge (x26 / null_tag))
+						:ARG1 (x32 / counter-01
+							:ARG1 (x34 / call
+								:mod (x33 / emotion)
+								:ARG1 (x37 / help-01
+									:mod (x36 / human))))))))))
+
+# ::id 37
+# ::snt When Donald Despain  hear the word are - vegetation , Donald Despain  blood runs cold , Donald Despain  says
+(x19 / say-01
+	:ARG1 (x14 / run-01
+		:purpose (x4 / hear-01
+			:ARG0 (x2 / newspaper
+				:name (n2 / name
+					:op1 "Donald"
+					:op2 "Despain"))
+			:ARG1 (x9 / vegetation
+				:mod (x6 / word-01)))
+		:ARG0 (x11 / person
+			:name (n1 / name
+				:op1 "Donald"))
+		:ARG1 (x13 / blood
+			:mod (x12 / person
+				:name (n3 / name
+					:op1 "Despain"))
+			:mod (x15 / cold)))
+	:ARG0 (x17 / newspaper
+		:name (n / name
+			:op1 "Donald"
+			:op2 "Despain")))
+
+# ::id 38
+# ::snt Mr. Despain joined the park's research department in 1971 after finishing Donald Despain  doctorate at the University of Alberta on the plants of the Bighorn Mountains in northern Wyoming
+(x3 / join-01
+	:ARG0 (x2 / person
+		:name (n / name
+			:op1 "Despain")
+		:null_edge (x1 / null_tag))
+	:ARG1 (x8 / department
+		:poss (x5 / park)
+		:mod (x7 / research-01))
+	:time (x10 / date-entity
+		:year 1971)
+	:time (x11 / after
+		:op1 (x12 / finish-01
+			:ARG1 (x15 / doctorate
+				:mod (x13 / person
+					:name (n2 / name
+						:op1 "Donald"))
+				:mod (x14 / person
+					:name (n3 / name
+						:op1 "Despain")))
+			:location (x18 / government-organization
+				:name (n1 / name
+					:op1 "University"
+					:op2 "of"
+					:op3 "Alberta")
+				:location (x23 / plant
+					:location (x27 / mountain
+						:mod (x26 / country
+							:name (n5 / name
+								:op1 "Bighorn")))
+					:location (x30 / country
+						:name (n4 / name
+							:op1 "Wyoming")
+						:name (x29 / name
+							:op1 "northern")))))))
+
+# ::id 39
+# ::snt Donald Despain  worked under Glen Cole , the park's head of research from 1968 to 1976 and a leading advocate of letting natural processes prevail in the park
+(x3 / work-01
+	:ARG0 (x1 / newspaper
+		:name (n / name
+			:op1 "Donald"
+			:op2 "Despain"))
+	:prep-under (x5 / name
+		:op1 "Glen"
+		:op2 "Cole"
+		:ARG0-of (x11 / head-01
+			:ARG1 (x9 / park)
+			:ARG1 (x13 / research-01
+				:time (x17 / date-entity
+					:year 1976))
+			:topic (x18 / and
+				:op3 (x21 / advocate-01
+					:ARG1 (x20 / lead-02)
+					:ARG1 (x23 / let-01
+						:ARG1 (x26 / prevail-01
+							:ARG0 (x25 / process
+								:mod (x24 / natural))
+							:ARG1 (x29 / park))))))))
+
+# ::id 40
+# ::snt Alston Chase , an author and park critic , describes Mr. Despain as one of the park's most orthodox believers in the official natural management policy
+(x10 / describe-01
+	:ARG0 (x1 / newspaper
+		:name (n / name
+			:op1 "Alston"
+			:op2 "Chase")
+		:ARG0-of (x8 / person
+			:ARG0-of (c / criticize-01)
+			:ARG1 (x6 / and
+				:op1 (x5 / person
+					:ARG0-of (a / author-01))
+				:op2 (x7 / park))))
+	:null_edge (x11 / null_tag)
+	:ARG1 (x21 / believe-01
+		:poss (x17 / park)
+		:mod (x20 / orthodox
+			:degree (x19 / most))
+		:part-of (x27 / policy
+			:mod (x24 / official)
+			:mod (x25 / natural)
+			:mod (x26 / manage-01))))
+
+# ::id 41
+# ::snt Mr. Despain has set up or is planning several long-term research projects to study the effects of this year's fires
+(x6 / or
+	:op1 (x4 / set-03
+		:ARG0 (x2 / person
+			:name (n / name
+				:op1 "Despain")
+			:null_edge (x1 / null_tag)))
+	:op2 (x8 / plan-01
+		:ARG0 x2
+		:ARG1 (x12 / project
+			:quant (x9 / several)
+			:duration (x10 / long)
+			:mod (x11 / research-01))
+		:ARG1 (x14 / study-01
+			:ARG1 (x16 / effect-01
+				:ARG1 (x21 / fire
+					:time (x19 / year
+						:mod (x18 / this)))))))
+
+# ::id 42
+# ::snt In addition to his seed-counting , Mr. Despain has created nine before and after study plots to gauge effects of the fire
+(x18 / gauge-01
+	:ARG0 (x8 / person
+		:name (n / name
+			:op1 "Despain")
+		:null_edge (x7 / null_tag))
+	:purpose-of (x10 / create-01
+		:purpose (x5 / seed-counting)
+		:ARG0 x8
+		:ARG1 9
+		:time (x12 / before
+			:op1 (x14 / after)
+			:op1 (x16 / plot
+				:mod (x15 / study-01))))
+	:ARG1 (x19 / effect-01
+		:mod (x22 / fire-01)))
+
+# ::id 43
+# ::snt Within these 15-by-25-meter plots , his seed-counting  and other researchers cataloged the size and the number of lodgepole pines , as well as the variety of plant growth on the forest floor
+(x11 / catalog-01
+	:ARG2 (x4 / plot
+		:mod (x3 / 15-by-25-meter))
+	:ARG0 (x8 / and
+		:op1 (x7 / seed-counting)
+		:op2 (x10 / person
+			:ARG0-of (r / research-01)
+			:mod (x9 / other)))
+	:ARG1 (x14 / and
+		:op1 (x13 / size
+			:poss (x19 / pine
+				:quant (x16 / number)
+				:mod (x25 / variety
+					:mod (x28 / grow-01
+						:ARG1 (x27 / plant)
+						:ARG1 (x32 / floor
+							:mod (x31 / forest))))))))
+
+# ::id 44
+# ::snt (his seed-counting  had to abandon one such study area two weeks ago
+(x4 / have-03
+	:ARG0 (x3 / seed-counting)
+	:null_edge (x6 / abandon-01
+		:ARG0 x3
+		:ARG1 (x10 / area
+			:location-of (x9 / study
+				:quant 1
+				:mod (x8 / such))
+			:time (xap0 / before
+				:quant (x12 / temporal-quantity
+					:unit (w / week)
+					:null_edge (x11 / null_tag))))))
+
+# ::id 45
+# ::snt Fire licked at one such study area  corners even as his seed-counting  was mapping the trees within )
+(x2 / lick
+	:ARG0 (x1 / fire-02)
+	:concession (x9 / even
+		:op1 (x14 / map-01
+			:ARG0 (x12 / seed-counting
+				:location (x8 / corner
+					:quant 1
+					:mod (x5 / such)
+					:part-of (x6 / study-01)
+					:location (x7 / area))))))
+
+# ::id 46
+# ::snt After the fire is out , his seed-counting  surveys damage to a plot
+(x10 / damage-01
+	:ARG1 (x3 / fire-01
+		:time (x1 / after))
+	:ARG0 (x9 / survey-01
+		:quant-of (x8 / seed-counting))
+	:ARG1 (x13 / plot-01))
+
+# ::id 47
+# ::snt Next spring his seed-counting  will chronicle rebirth
+(x6 / chronicle
+	:time (x2 / spring
+		:mod (x1 / next))
+	:domain (x4 / seed-counting)
+	:ARG1 (x7 / rebirth))
+
+# ::id 48
+# ::snt Some of the impulse to reforest Yellowstone may be based on a misapprehension of just how much damage has been done here
+(x8 / possible
+	:domain (x10 / base-01
+		:ARG1 (x4 / impulse
+			:mod (x1 / some)
+			:purpose (x6 / reforest
+				:ARG1 (x7 / government-organization
+					:name (n / name
+						:op1 "Yellowstone"))))
+		:ARG2 (x21 / do-02
+			:ARG1 (x18 / damage-01
+				:quant (x17 / much
+					:mod (x15 / just)))
+			:location (x22 / here))))
+
+# ::id 49
+# ::snt Television pictures of the Yellowstone's fires at their height made things look worse than they are
+(x2 / picture
+	:mod (x1 / television)
+	:ARG1 (x7 / fire
+		:poss (x5 / organization
+			:name (n / name
+				:op1 "Yellowstone"))
+		:location (x10 / height))
+	:ARG1 (x13 / look-02
+		:ARG1 (x12 / thing)
+		:ARG1 (x14 / worsen-01)))
+
+# ::id 50
+# ::snt True , fire boundaries within the park cover about half the park's acreage
+(x8 / cover-04
+	:ARG1 (x1 / true-41)
+	:ARG1 (x7 / park
+		:mod (x3 / fire-arm))
+	:ARG1 (x14 / acreage
+		:null_edge (x10 / null_tag)
+		:poss (x12 / park)))
+
+# ::id 51
+# ::snt Yet only 10 % to 15 % of land within these boundaries was scorched by raging crown fires that burn everything in sight , Mr. Varley estimates
+(x14 / scorch
+	:ARG2 (x16 / rage
+		:ARG1 (x18 / fire
+			:mod (x17 / crown)
+			:ARG0-of (x20 / burn-01
+				:ARG1 (x21 / everything)
+				:manner (x23 / sight-01)
+				:ARG1 (x27 / estimate-01
+					:null_edge (x25 / null_tag)
+					:ARG0 (x26 / person
+						:name (n / name
+							:op1 "Varley"))))))
+	:ARG2 (xap0 / percentage-entity
+		:mod (x2 / only)
+		:value 10
+		:ARG1 (x9 / land)
+		:range (x10 / within
+			:op1 (x12 / boundary))
+		:ARG0-of (xap1 / percentage-entity
+			:value 15)))
+
+# ::id 52
+# ::snt In fact , nearly half the area within the fire zones remains untouched by fire
+(x12 / remain-01
+	:ARG1 (x15 / fire-01
+		:null_edge (x5 / null_tag
+			:mod (x4 / nearly)
+			:location (x8 / within
+				:op1 (x11 / zone
+					:location-of (x10 / fire-arm))))))
+
+# ::id 53
+# ::snt Driving along the 140 miles of the park's upper and lower scenic loop on roads open to park visitors one sees a Yellowstone that is a patchwork of green , brown and blackened forest and meadow
+(x1 / drive-02
+	:ARG1 (x11 / and
+		:op1 (x10 / upper)
+		:op2 (x12 / low)
+		:op2 (x14 / loop
+			:poss (x8 / park)
+			:mod (x13 / scenic)
+			:ARG1 (x16 / road
+				:mod (x17 / open
+					:ARG3 (x20 / person
+						:ARG0-of (v / visit-01)
+						:null_edge (x19 / null_tag)
+						:ARG0-of (x22 / see-01
+							:ARG0 (x21 / one)
+							:ARG1 (x36 / and
+								:op1 (x28 / patchwork)
+								:op2 (x33 / and
+									:op1 (x30 / green)
+									:op2 (x32 / brown)
+									:op2 (x34 / blacken))
+								:op1 (x35 / forest)
+								:op2 (x37 / meadow)))))))
+		:op1 (xap0 / multiple
+			:op1 (x5 / distance-quantity
+				:unit (m / mile)))))
+
+# ::id 54
+# ::snt The burnt snags , as charred tree trunks are called , creak in the wind above Mr. Despain and are all that remain of a forest section that sprouted after a fire swept through here about the time of the Civil War
+(x19 / and
+	:op1 (x10 / call-01
+		:ARG1 (x8 / trunk
+			:mod (x6 / char)
+			:mod (x7 / tree)))
+	:op1 (x12 / creak
+		:ARG1 (x3 / snag
+			:ARG1-of (x2 / burnt))
+		:instrument (x15 / wind
+			:location (x16 / above
+				:op1 (x18 / person
+					:name (n / name
+						:op1 "Despain")
+					:null_edge (x17 / null_tag))))
+		:ARG1 (x23 / remain-01
+			:quant (x21 / all)
+			:ARG1 (x27 / section
+				:mod (x26 / forest)
+				:ARG0-of (x29 / sprout
+					:time (x30 / after
+						:op1 (x33 / sweep-02
+							:ARG0 (x32 / fire-01)
+							:ARG2 (x35 / here)
+							:ARG1 (x42 / war))))))))
+
+# ::id 55
+# ::snt The slow-growing trees , only seven to 10 inches in diameter , were relatively young by Yellowstone standards
+(x15 / young
+	:domain (x3 / tree
+		:mod (x2 / slow-growing)
+		:mod (x5 / only)
+		:location (x11 / diameter
+			:ARG2 (x9 / distance-quantity
+				:unit (i / inch)
+				:quant 10)))
+	:degree (x14 / relative)
+	:ARG0 (x18 / standard))
+
+# ::id 56
+# ::snt Most of the lodgepole stands here that burned this summer were 250 to 400 years old
+(xap0 / age-01
+	:quant (x1 / most
+		:ARG2 (x4 / lodgepole
+			:ARG0-of (x5 / stand-06
+				:ARG1-of (x8 / burn-01
+					:time (x10 / summer
+						:mod (x9 / this))))
+			:location (x6 / here)))
+	:ARG2 (x15 / temporal-quantity
+		:unit (y / year)
+		:quant 400))
+
+# ::id 57
+# ::snt Mr. Despain says no coincidence that most burnt trees here were senior citizens  is no coincidence that most burnt trees here were senior citizens , relatively speaking , and highly susceptible to fire
+(x3 / say-01
+	:ARG0 (x2 / person
+		:name (n / name
+			:op1 "Despain")
+		:null_edge (x1 / null_tag))
+	:ARG1 (x5 / coincidence
+		:polarity -
+		:ARG1 (x16 / coincidence
+			:ARG0 (x13 / citizen
+				:location (x10 / here
+					:op1 (x9 / tree
+						:quant (x7 / most)
+						:ARG1-of (x8 / burnt)))
+				:mod (x12 / senior))
+			:polarity -
+			:ARG1 (x33 / fire-01
+				:poss (x24 / citizen
+					:domain (x20 / tree
+						:quant (x18 / most)
+						:ARG1-of (x19 / burnt))
+					:location (x21 / here)
+					:mod (x23 / senior)
+					:ARG1-of (x27 / speak-01
+						:degree (x26 / relative)))
+				:degree (x30 / high)))))
+
+# ::id 58
+# ::snt As lodgepoles age , senior citizens  lose some of senior citizens  natural resistance to disease and insects
+(x7 / lose-02
+	:time (x3 / age
+		:ARG0 (x2 / lodgepole))
+	:ARG0 (x6 / citizen
+		:mod (x5 / senior))
+	:ARG0 (x11 / citizen
+		:quant (x8 / some)
+		:mod (x10 / senior))
+	:ARG1 (x13 / resist-01
+		:mod (x12 / natural)
+		:ARG2 (x16 / and
+			:op2 (x15 / disease)
+			:op2 (x17 / insect))))
+
+# ::id 59
+# ::snt Dead trees fall to the forest floor , joined by others blown over by the strong winds howling down from surrounding peaks
+(x3 / fall-01
+	:ARG1 (x2 / tree
+		:mod (x1 / die-01
+			:op (d / dead)))
+	:ARG2 (x7 / floor
+		:mod (x6 / forest)
+		:ARG1-of (x9 / join-01
+			:ARG0 (x11 / other
+				:ARG1-of (x12 / blow-01
+					:ARG0 (x17 / wind
+						:mod (x16 / strong)
+						:ARG0-of (x18 / howl
+							:source (x22 / peak-01
+								:ARG1-of (x21 / surround-01)))))))))
+
+# ::id 60
+# ::snt The thinning canopy then lets more light through to the forest floor
+(x5 / let-01
+	:ARG0 (x3 / canopy
+		:mod (x2 / thin))
+	:time (x4 / then)
+	:ARG1 (x7 / light
+		:degree (x6 / more))
+	:ARG2 (x12 / floor
+		:mod (x11 / forest)))
+
+# ::id 61
+# ::snt Grasses and shrubs , some of others blown over by the strong winds howling down from surrounding peaks  seeds having lain dormant for 100 years or more , fill in the open spaces between the trees
+(x29 / fill-05
+	:ARG0 (x2 / and
+		:op1 (x1 / grass
+			:mod (x7 / other
+				:quant (x5 / some
+					:ARG1-of (x8 / blow-01
+						:ARG0 (x13 / wind
+							:mod (x12 / strong)
+							:ARG0-of (x14 / howl
+								:ARG2 (x22 / dormant
+									:ARG1 (x19 / seed
+										:ARG1-of (x17 / surround-01)
+										:ARG1 (x18 / peak-01))
+									:purpose (x26 / or
+										:op1 (x25 / temporal-quantity
+											:unit (y / year)
+											:quant 100)
+										:op1 (x27 / more-than
+											:op1 x25)))))))))
+		:op2 (x3 / shrub))
+	:location (x33 / space
+		:ARG1-of (x32 / open)
+		:consist-of (x36 / tree)))
+
+# ::id 62
+# ::snt The ground clutter thickens , more trees fall , and , with the help of a prolonged drought , the old forest creates the old forest  own funeral pyre
+(x10 / and
+	:op1 (x4 / thicken
+		:ARG0 (x3 / clutter
+			:mod (x2 / ground)))
+	:op1 (x8 / fall-01
+		:ARG1 (x7 / tree
+			:quant (x6 / more)))
+	:op2 (x23 / create-01
+		:ARG0 x3
+		:ARG2 (x14 / help-01
+			:ARG1 (x18 / drought
+				:mod (x17 / prolonged)))
+		:ARG0 (x22 / forest
+			:mod (x21 / old))
+		:ARG1 (x29 / pyre
+			:mod (x25 / old)
+			:mod (x26 / forest)
+			:mod (x28 / funeral))))
+
+# ::id 63
+# ::snt The last fire to rival this year's in intensity roared across much of Yellowstone in the early 1700s
+(x11 / roar
+	:ARG0 (x3 / fire-01
+		:ARG0-of (x5 / rival-01
+			:mod (x2 / last)
+			:time (x7 / year
+				:mod (x6 / this))))
+	:ARG1 (x10 / intense)
+	:location (x12 / across
+		:quant (x13 / much
+			:part-of (x15 / country
+				:name (n / name
+					:op1 "Yellowstone"))))
+	:time (x18 / early
+		:op1 (xap0 / date-entity
+			:decade 1700)))
+
+# ::id 64
+# ::snt Fires have been an integral force in the Yellowstone ecosystem for the past 10,000 years since the glaciers left , Mr. Varley says
+(x23 / say-01
+	:ARG1 (x6 / force
+		:domain (x1 / fire-01)
+		:mod (x5 / integral)
+		:domain (x10 / ecosystem)
+		:duration (x15 / temporal-quantity
+			:unit (y / year)
+			:mod (x13 / past)
+			:quant (x14 / more-than))
+		:time (x16 / since
+			:op1 (x18 / glacier
+				:ARG1-of (x19 / leave-01))))
+	:ARG0 (x22 / person
+		:name (n / name
+			:op1 "Varley")
+		:null_edge (x21 / null_tag)))
+
+# ::id 65
+# ::snt Most plant species have adopted one means or another to ensure their survival
+(x5 / adopt-01
+	:ARG0 (x3 / specie
+		:quant (x1 / most)
+		:mod (x2 / plant))
+	:ARG1 (x8 / or
+		:op1 (x7 / mean-01
+			:quant 1)
+		:op2 (x9 / another))
+	:purpose (x11 / ensure-01
+		:ARG1 (x13 / survive-01)))
+
+# ::id 66
+# ::snt Mr. Despain takes a Swiss army knife from Donald Despain  pocket and digs into the forest floor
+(x12 / and
+	:op1 (x3 / take-01
+		:ARG0 (x2 / person
+			:name (n / name
+				:op1 "Despain")
+			:null_edge (x1 / null_tag))
+		:ARG1 (x7 / knife
+			:mod (x6 / army))
+		:ARG1 (x11 / pocket
+			:poss (x9 / person
+				:name (n1 / name
+					:op1 "Donald"))
+			:mod (x10 / person
+				:name (n2 / name
+					:op1 "Despain"))))
+	:op2 (x13 / dig
+		:ARG2 (x17 / floor
+			:mod (x16 / forest))))
+
+# ::id 67
+# ::snt The top layer of the sandy brown soil has been seared by flames
+(x11 / sear
+	:ARG1 (x3 / layer
+		:mod (x2 / top)
+		:consist-of (x8 / soil
+			:mod (x6 / sandy)
+			:mod (x7 / brown)))
+	:ARG0 (x13 / flame))
+
+# ::id 68
+# ::snt But less than an inch beneath the surface the searing stops
+(x1 / contrast-01
+	:ARG2 (x11 / stop-01
+		:degree (x2 / less
+			:op1 (x5 / distance-quantity
+				:unit (i / inch)))
+		:location (x6 / beneath
+			:op1 (x8 / surface))
+		:ARG0 (x10 / searing)))
+
+# ::id 69
+# ::snt Seeds that have been dormant for decades beneath the soil appear to be triggered by the passing fire , Donald Despain  says , and will germinate next spring
+(x24 / and
+	:op1 (x11 / appear-02
+		:ARG1 (x1 / seed
+			:mod (x5 / dormant
+				:location (x8 / beneath
+					:op1 (x10 / soil))
+				:ARG2 (xap0 / multiple
+					:op1 (x7 / temporal-quantity
+						:unit (d / decade)))))
+		:ARG1 (x14 / trigger-01
+			:ARG0 (x18 / fire-01
+				:ARG1-of (x17 / pass-03))))
+	:op1 (x22 / say-01
+		:ARG0 (x20 / newspaper
+			:name (n / name
+				:op1 "Donald"
+				:op2 "Despain")))
+	:op2 (x26 / germinate
+		:time (x28 / spring
+			:mod (x27 / next))))
+
+# ::id 70
+# ::snt Meanwhile , nutrients that were bound up in the cells of mature pines for hundreds of years have been returned in the form of ash to the soil as fertilizer for next year's growth
+(x20 / return-01
+	:time (x1 / meanwhile)
+	:ARG1 (x3 / nutrient
+		:ARG0-of (x6 / bind-01
+			:location (x10 / cell
+				:part-of (x13 / pine
+					:mod (x12 / mature-01)))
+			:duration (xap0 / multiple
+				:op1 (x15 / hundreds
+					:op1 (x17 / temporal-quantity
+						:unit (y / year))))))
+	:ARG4 (x25 / name
+		:op1 "ash")
+	:ARG4 (x28 / soil)
+	:null_edge (x30 / thing
+		:ARG0-of (f / fertilize-01)
+		:purpose (x35 / grow-01
+			:time (x33 / year
+				:mod (x32 / next)))))
+
+# ::id 71
+# ::snt Carol Shively , a park ranger-naturalist at Grant Village in Yellowstone , says , Next spring is going to be a spectacular one for wildflowers
+(x13 / say-01
+	:ARG0 (x1 / newspaper
+		:name (n / name
+			:op1 "Carol"
+			:op2 "Shively")
+		:ARG0-of (x6 / ranger-naturalist
+			:null_edge (x5 / null_tag)
+			:location (x9 / country
+				:name (n1 / name
+					:op1 "Village")
+				:null_edge (x8 / country
+					:name (n2 / name
+						:op1 "Grant"))
+				:location (x11 / country
+					:name (n3 / name
+						:op1 "Yellowstone")))))
+	:ARG0 (x16 / spring
+		:mod (x15 / next))
+	:ARG1 (x18 / go-02
+		:null_edge (x22 / spectacle
+			:ARG1 (x25 / wildflower))))
+
+# ::id 72
+# ::snt For the first five years after a fire , while surrounding vegetation is still relatively low , there will be a proliferation of wildflowers in the park , Carol Shively  says
+(x31 / say-01
+	:ARG1 (x22 / proliferate-01
+		:duration (x5 / temporal-quantity
+			:unit (y / year)
+			:quant 5
+			:time (x6 / after
+				:op1 (x8 / fire-01)))
+		:ARG3 (x16 / low
+			:domain (x11 / surround-01
+				:ARG1 (x12 / vegetation))
+			:mod (x14 / still)
+			:degree (x15 / relative))
+		:ARG0 (x24 / wildflower)
+		:location (x27 / park))
+	:ARG0 (x29 / newspaper
+		:name (n / name
+			:op1 "Carol"
+			:op2 "Shively")))
+
+# ::id 73
+# ::snt In addition to fireweed and wild geraniums , lupen , yarrow , mountain dandelion and arnica have already been spotted this year among the ashes
+(x20 / spot-01
+	:ARG1 (x15 / and
+		:op2 (x5 / and
+			:op1 (x4 / fireweed)
+			:op2 (x6 / wild)
+			:op1 (x7 / geranium)
+			:op2 (x9 / lupen)
+			:op2 (x11 / yarrow))
+		:op2 (x13 / mountain)
+		:op1 (x14 / dandelion)
+		:op2 (x16 / arnica))
+	:time (x18 / already)
+	:time (x22 / year
+		:mod (x21 / this))
+	:ARG2 (x25 / name
+		:op1 "ashes"))
+
+# ::id 74
+# ::snt Aspen trees , whose paper-white bark and yellow leaves punctuate the evergreen forests this time of year , also thrive after a fire
+(x20 / thrive-01
+	:ARG0 (x2 / tree
+		:mod (x1 / country
+			:name (n / name
+				:op1 "Aspen"))
+		:ARG0-of (x10 / punctuate
+			:ARG0 (x7 / and
+				:op1 (x6 / bark-01)
+				:op2 (x8 / yellow)
+				:op1 (x9 / leaf
+					:mod (x5 / paper-white))
+				:op2 (x13 / forest
+					:mod (x12 / evergreen)))
+			:time (x17 / year
+				:mod (x14 / this))))
+	:mod (x19 / also)
+	:time (x21 / after
+		:op1 (x23 / fire-01)))
+
+# ::id 75
+# ::snt With their roots undamaged by the flames , aspen trees return to their juvenile phase for three to four years , and will add as much as four feet in a 90-day growing season
+(x22 / and
+	:op1 (x11 / return-01
+		:time (x4 / undamaged
+			:ARG1 (x3 / root)
+			:ARG0 (x7 / flame))
+		:ARG1 (x10 / tree
+			:mod (x9 / aspen))
+		:ARG4 (x15 / phase
+			:mod (x14 / juvenile))
+		:duration (x20 / temporal-quantity
+			:unit (y / year)
+			:null_edge 3
+			:quant 4))
+	:op2 (x24 / add-04
+		:ARG1 (x29 / distance-quantity
+			:unit (f / foot)
+			:mod (x27 / product
+				:name (n / name
+					:op1 "as")
+				:degree (x26 / much)))
+		:time (x34 / season
+			:mod (x32 / person
+				:name (n1 / name
+					:op1 "90-day"))
+			:ARG1-of (x33 / grow-01))))
+
+# ::id 76
+# ::snt Yellowstone's meadows rebound the fastest after a fire
+(x4 / rebind
+	:ARG0 (x3 / meadow
+		:poss (x1 / organization
+			:name (n / name
+				:op1 "Yellowstone")))
+	:ARG1 (x6 / fast
+		:degree (m / most))
+	:time (x7 / after
+		:op1 (x9 / fire-01)))
+
+# ::id 77
+# ::snt By next July , one will find next July  difficult to tell which meadows burned in 1988
+(x7 / find-02
+	:time (x1 / by
+		:op1 (x3 / date-entity
+			:mod (x2 / next)))
+	:ARG0 (x5 / one)
+	:ARG1 (x12 / tell-01
+		:null_edge (x8 / next
+			:null_edge 7)
+		:ARG1 (x10 / difficult)
+		:ARG1 (x15 / burn-01
+			:ARG1 (x14 / meadow)
+			:time (x17 / date-entity
+				:year 1988))))
+
+# ::id 78
+# ::snt One clue will be that the Idaho fescue , blue bunch wheat grass and pine grass growing in fields where fire returned nutrients to the soil will be as much as a foot taller than the meadows that escaped the flames
+(x2 / clue
+	:quant 1
+	:ARG1 (x14 / and
+		:op1 (x8 / fescue
+			:mod (x7 / country
+				:name (n / name
+					:op1 "Idaho")))
+		:op2 (x13 / grass
+			:mod (x10 / blue)
+			:mod (x12 / wheat
+				:mod (x11 / bunch)))
+		:op2 (x16 / grass
+			:mod (x15 / pine))
+		:ARG1-of (x17 / grow-03
+			:time (x22 / return-01
+				:ARG1 (x21 / fire-01)
+				:ARG1 (x23 / nutrient)
+				:ARG4 (x26 / soil
+					:poss x21)))
+		:quant (x30 / much
+			:ARG2 (x33 / foot
+				:mod (x34 / taller
+					:compared-to (x37 / meadow
+						:ARG0-of (x39 / escape-01
+							:ARG1 (x41 / flame))))))))
+
+# ::id 79
+# ::snt Forests visited only by ground fires will rebound almost as quickly
+(x8 / rebind
+	:ARG0 (x1 / forest
+		:ARG1-of (x2 / visit-01
+			:ARG0 (x6 / fire
+				:mod (x5 / ground
+					:mod (x3 / only)))))
+	:manner (x11 / quick
+		:degree (x9 / almost)))
+
+# ::id 80
+# ::snt Shrubs and grasses cover what is left of the burnt undergrowth , although fire scars will be visible on some trees for years
+(x4 / cover-01
+	:ARG0 (x2 / and
+		:op1 (x1 / shrub)
+		:op2 (x3 / grass)
+		:op1 (x7 / leave-06
+			:ARG1 (x11 / undergrowth
+				:ARG1-of (x10 / burnt))
+			:condition (x18 / visible
+				:ARG1 (x15 / scar
+					:mod (x14 / fire-arm))
+				:prep-on (x21 / tree
+					:quant (x20 / some))
+				:ARG2 (xap0 / multiple
+					:op1 (x23 / temporal-quantity
+						:unit (y / year)))))))
+
+# ::id 81
+# ::snt The completely burned forests will remain a mixture of meadow and snags for several years
+(x6 / remain-01
+	:ARG1 (x4 / forest
+		:ARG1-of (x3 / burn-01
+			:manner (x2 / complete)))
+	:ARG3 (x8 / mixture
+		:null_edge (x11 / and
+			:op1 (x10 / meadow)
+			:op2 (x12 / snag))
+		:null_edge (x14 / several
+			:op1 (x15 / temporal-quantity
+				:unit (y / year)))))
+
+# ::id 82
+# ::snt Insects begin attacking the snags almost immediately after a fire , and the charred trunks are likely to be toppled by the wind
+(x12 / and
+	:op1 (x2 / begin-01
+		:ARG0 (x1 / insect)
+		:ARG1 (x3 / attack-01
+			:ARG0 x1
+			:ARG1 (x5 / snag)
+			:time (x8 / after
+				:mod (x7 / immediate
+					:mod (x6 / almost))
+				:op1 (x10 / fire-01))))
+	:op2 (x17 / likely
+		:domain (x20 / topple-01
+			:ARG0 (x15 / trunk
+				:mod (x14 / char))
+			:ARG0 (x23 / wind))))
+
+# ::id 83
+# ::snt But many snags , weathering to fence-post gray , will remain as monuments to the fire of 1988 for years to come
+(x1 / contrast-01
+	:ARG2 (x11 / remain-01
+		:ARG1 (x3 / snag
+			:quant (x2 / many))
+		:ARG3 (x5 / weather
+			:ARG1 (x7 / fence-post
+				:mod (x8 / gray)))
+		:ARG3 (x16 / fire-01
+			:time (x18 / date-entity
+				:year 1988))
+		:duration (x20 / temporal-quantity
+			:unit (y / year)
+			:ARG1-of (x22 / come-01))))
+
+# ::id 84
+# ::snt Lodgepole pine seedlings grow as much as a foot a year in the open , although a few inches per year is more common at first
+(x4 / grow-01
+	:ARG1 (x3 / seedling
+		:mod (x2 / pine
+			:mod (x1 / lodgepole)))
+	:degree (x6 / much)
+	:manner (x9 / foot
+		:ARG1-of (x14 / open))
+	:frequency (xap0 / rate-entity-91
+		:ARG2 (x21 / year
+			:prep-to (x24 / common
+				:domain (x19 / distance-quantity
+					:unit (i / inch)
+					:null_edge (x18 / few))
+				:degree (x23 / more)))))
+
+# ::id 85
+# ::snt Hundreds of plant species proliferate after a fire until canopy closure is achieved in about 40 years
+(x5 / proliferate-01
+	:time (x6 / after
+		:location-of (x4 / specie
+			:mod (x3 / plant))
+		:op1 (x8 / fire-01))
+	:time (x9 / until
+		:op1 (x13 / achieve-01
+			:ARG1 (x11 / closure
+				:mod (x10 / canopy))
+			:duration (x17 / temporal-quantity
+				:unit (y / year)
+				:quant (x15 / about
+					:op1 40)))))
+
+# ::id 86
+# ::snt At that point , the pines still less than 15 feet tall begin to choke off light reaching the forest floor as Hundreds of plant species  limbs grow together
+(x13 / begin-01
+	:ARG1 (x6 / pine
+		:quant (x11 / distance-quantity
+			:unit (f / foot)
+			:null_edge (x8 / less-than
+				:null_edge 15)
+			:mod (x12 / tall
+				:mod (x7 / still))))
+	:ARG1 (x15 / choke
+		:ARG1 x6
+		:ARG1 (x17 / light
+			:ARG0-of (x18 / reach-01
+				:ARG1 (x21 / floor
+					:mod (x20 / forest)))))
+	:time (x28 / grow-01
+		:ARG1 x6
+		:ARG1 (x27 / limb
+			:mod (x26 / specie
+				:ARG1 (x25 / plant)))))
+
+# ::id 87
+# ::snt As lodgepoles come to dominate the ecosystem , other plant species decline in number , reaching a low of no more than a dozen in the mature forest
+(x12 / decline-01
+	:time (x3 / come-01
+		:ARG1 (x2 / lodgepole)
+		:purpose (x5 / dominate-01
+			:ARG0 x2
+			:ARG1 (x7 / ecosystem))
+		:ARG1 (x11 / specie
+			:mod (x9 / other)
+			:location (x10 / plant)))
+	:ARG1 x11
+	:ARG1 (x14 / number)
+	:ARG1 (x16 / reach-01
+		:ARG0 x11
+		:ARG1 (x18 / low
+			:quant (x21 / more-than
+				:polarity -))
+		:ARG0 (x28 / forest
+			:mod (x27 / mature-01))))
+
+# ::id 88
+# ::snt The mature forest has the least biological diversity of any habitat in the park , Mr. Varley says
+(x18 / say-01
+	:ARG1 (x4 / have-03
+		:ARG1 (x8 / diverse
+			:ARG1 (x3 / forest
+				:mod (x2 / mature-01))
+			:ARG0 (x7 / biology)
+			:ARG1 (x11 / habitat
+				:mod (x10 / any))
+			:location (x14 / park)))
+	:ARG0 (x17 / person
+		:name (n / name
+			:op1 "Varley")
+		:null_edge (x16 / null_tag)))
+
+# ::id 89
+# ::snt Then the forest thins as the forest's  ages , trees fall , underbrush grows , and the forest is primed for a fire to start the forest's  life cycle over again
+(x17 / and
+	:op1 (x12 / fall-01
+		:ARG4 (x4 / thin
+			:ARG0 (x3 / forest)
+			:prep-as (x9 / age-01
+				:mod (x7 / forest)))
+		:ARG1 (x11 / tree))
+	:op1 (x15 / grow-01
+		:ARG1 (x14 / underbrush))
+	:op2 (x21 / prime
+		:ARG1 (x19 / forest)
+		:ARG1 (x24 / fire-01)
+		:ARG1 (x26 / start-01
+			:ARG0 x19
+			:ARG1 (x31 / cycle
+				:poss (x28 / forest)
+				:mod (x30 / life))
+			:mod (x33 / again
+				:mod (x32 / over)))))
+
+# ::id 90
+# ::snt Mark Palmer , the chairman of the Sierra Club's national wildlife committee , sees another virtue in the aftermath of a fire : Meadows are much more valuable to wildlife than dense forests
+(x15 / see-01
+	:ARG0 (x2 / person
+		:name (n / name
+			:op1 "Palmer")
+		:null_edge (x1 / null_tag)
+		:null_edge (x5 / have-org-role-91
+			:ARG2 (c / chairman)
+			:ARG1 (x13 / committee
+				:poss (x8 / government-organization
+					:name (n1 / name
+						:op1 "Sierra"
+						:op2 "Club"))
+				:mod (x11 / nation)
+				:mod (x12 / wildlife))))
+	:ARG1 (x17 / virtue
+		:mod (x16 / another))
+	:ARG1 (x23 / fire-01)
+	:null_edge (x29 / value-01
+		:domain (x25 / meadows)
+		:degree (x28 / more
+			:degree (x27 / much))
+		:ARG2 (x31 / wildlife)
+		:compared-to (x34 / forest
+			:mod (x33 / dense))))
+
+# ::id 91
+# ::snt Three to five additional bird species are likely to migrate into Yellowstone next year , attracted to the new plants and insects thriving in the meadows
+(x8 / likely
+	:domain (x10 / migrate
+		:ARG0 (x6 / specie
+			:quant 5
+			:mod (x4 / additional)
+			:mod (x5 / bird))
+		:ARG2 (x12 / organization
+			:name (n / name
+				:op1 "Yellowstone"))
+		:time (x14 / year
+			:mod (x13 / next)))
+	:domain (x16 / attract-01
+		:ARG2 (x21 / and
+			:op1 (x20 / plant
+				:mod (x19 / new)
+				:ARG0-of (x23 / thrive-01
+					:ARG2 (x26 / meadow)))
+			:op2 (x22 / insect))))
+
+# ::id 92
+# ::snt Among the new arrivals may be the three-toed and blackbacked woodpeckers , the mountain blue bird and the Western wood phoebe
+(x9 / and
+	:op1 (x5 / possible
+		:domain (x11 / woodpecker
+			:ARG0 (x4 / arrive-01
+				:mod (x3 / new)))
+		:time (x17 / and
+			:op2 (x16 / bird
+				:mod (x14 / mountain)
+				:mod (x15 / blue))
+			:op2 (x21 / phoebe
+				:null_edge (x19 / world-region
+					:name (n / name
+						:op1 "Western"))
+				:ARG1 (x20 / wood)))))
+
+# ::id 93
+# ::snt Memories of Bambi and Smokey the Bear notwithstanding , Yellowstone's large animals do not appear to have suffered from the fire
+(x16 / appear-02
+	:ARG1 (x1 / memories
+		:null_edge (x4 / and
+			:op1 (x3 / person
+				:name (n1 / name
+					:op1 "Bambi"))
+			:op2 (x5 / name
+				:op1 "Smokey"
+				:op2 "the"
+				:op3 "Bear"))
+		:null_edge (x8 / notwithstanding))
+	:ARG1 (x13 / animal
+		:poss (x10 / organization
+			:name (n / name
+				:op1 "Yellowstone"))
+		:mod (x12 / large))
+	:ARG1 (x19 / suffer-01
+		:ARG4 (x22 / fire-01)))
+
+# ::id 94
+# ::snt There has yet to be a confirmed report of a large animal killed by the flames , although a few deaths are almost inevitable , park officials say
+(x28 / say-01
+	:ARG1 (x8 / report-01
+		:ARG1 (x7 / confirm-01
+			:time (x3 / yet))
+		:ARG1 (x12 / animal
+			:mod (x11 / large)
+			:ARG1-of (x13 / person
+				:ARG1-of (k / kill-01)
+				:ARG0 (x16 / flame)))
+		:ARG1 (xap0 / possible
+			:quant (x20 / few)
+			:degree (x23 / almost)))
+	:ARG0 (xap1 / person
+		:ARG0-of (x27 / have-org-role-91
+			:ARG2 (o / official)
+			:null_edge (x26 / null_tag))))
+
+# ::id 95
+# ::snt Yellowstone's elk and bison herds , as well as moose , should benefit from the additional forage in the park next year
+(x13 / recommend-01
+	:ARG1 (x14 / benefit-01
+		:ARG0 (x4 / and
+			:op1 (x3 / elk
+				:poss (x1 / organization
+					:name (n / name
+						:op1 "Yellowstone")))
+			:op2 (x6 / herd
+				:mod (x5 / bison))
+			:op2 (x11 / moose))
+		:ARG0 (x18 / forage
+			:mod (x17 / additional)
+			:location (x21 / park)
+			:time (x23 / year
+				:mod (x22 / next)))))
+
+# ::id 96
+# ::snt Yellowstone Lake  is too early to tell whether the fires , which burned some lower pastures , affected the herdsability to weather Yellowstone's long winter
+(x5 / early
+	:domain (x2 / country
+		:name (n / name
+			:op1 "Lake")
+		:mod (x1 / country
+			:name (n1 / name
+				:op1 "Yellowstone")))
+	:degree (x4 / too)
+	:purpose (x7 / tell-01
+		:ARG0 x2
+		:ARG1 (x18 / affect-01
+			:ARG1 (x10 / fire
+				:ARG1-of (x13 / burn-01
+					:ARG1 (x16 / pasture
+						:quant (x14 / some)
+						:mod (x15 / low))))
+			:ARG1 (x20 / herdsability)
+			:ARG1 (x22 / weather
+				:season (x26 / winter
+					:poss (x23 / organization
+						:name (n2 / name
+							:op1 "Yellowstone"))
+					:mod (x25 / long))))))
+
+# ::id 97
+# ::snt More winterkill among the herds might be expected this year in any case , since animal populations are now near park officials  historical upper limits
+(x8 / expect-01
+	:ARG1 (x2 / winterkill
+		:quant (x1 / more))
+	:ARG1 (x5 / herd)
+	:time (x10 / year
+		:mod (x9 / this))
+	:time (x13 / case
+		:mod (x12 / any))
+	:ARG0 (x17 / population
+		:mod (x16 / animal)
+		:time (x19 / now)
+		:location (x20 / near
+			:op1 (x25 / thing
+				:ARG2-of (l / limit-01)
+				:mod (x23 / history)
+				:mod (x24 / upper)
+				:ARG0 (xap0 / person
+					:ARG0-of (x22 / have-org-role-91
+						:ARG2 (o / official)
+						:null_edge (x21 / null_tag)))))))
+
+# ::id 98
+# ::snt The park service is under unwelcome political pressure to feed the herds if the winter is severe
+(x3 / service
+	:null_edge (x2 / null_tag)
+	:prep-under (x8 / pressure-01
+		:ARG1-of (x6 / unwelcome)
+		:mod (x7 / politics))
+	:domain (x10 / feed-01
+		:ARG1 (x12 / herd)
+		:time (x17 / severe
+			:season (x15 / winter))))
+
+# ::id 99
+# ::snt Moving up a link in the food chain , Yellowstone's grizzly bear and mountain lion populations would be the obvious beneficiaries of an increase in winterkill among the grazing animals , according to Mr. Varley
+(x22 / beneficiary
+	:ARG1 (x14 / and
+		:op1 (x1 / move-01
+			:ARG1 (x4 / link-01
+				:ARG1 (x8 / chain
+					:consist-of (x7 / food))))
+		:mod (x12 / grizzly)
+		:op1 (x13 / person
+			:ARG1-of (b / bear-02)
+			:ARG0 (x10 / organization
+				:name (n1 / name
+					:op1 "Yellowstone")))
+		:op2 (x17 / population
+			:mod (x15 / mountain)
+			:mod (x16 / lion)))
+	:ARG1-of (x21 / obvious-41)
+	:ARG1 (x25 / increase-01
+		:ARG1 (x27 / winterkill)
+		:ARG1 (x31 / animal
+			:mod (x30 / grazing)))
+	:null_edge (x36 / person
+		:name (n / name
+			:op1 "Varley")
+		:null_edge (x35 / null_tag)))
+
+# ::id 100
+# ::snt Ecologically , there is no down side to the fire , winterkill among the grazing animals  adds , conceding that similar statements by park officials may have sounded cavalier when the fires were raging
+(x17 / add-02
+	:null_edge (x1 / person
+		:name (n / name
+			:op1 "Ecologically"))
+	:ARG0 (x7 / side
+		:polarity -
+		:null_edge (x6 / null_tag)
+		:ARG1 (x10 / fire-01))
+	:ARG0 (x12 / winterkill
+		:ARG1 (x16 / animal
+			:mod (x15 / grazing)))
+	:ARG1 (x19 / concede-01
+		:ARG1 (x26 / possible
+			:domain (x28 / sound-01
+				:ARG0 (x22 / thing
+					:ARG1-of (s / state-01)
+					:ARG1-of (x21 / resemble-01
+						:op (s1 / similar))
+					:ARG0 (xap0 / person
+						:ARG0-of (x25 / have-org-role-91
+							:ARG2 (o / official)
+							:null_edge (x24 / null_tag))))
+				:ARG2 (x29 / cavalier)
+				:condition (x34 / rage
+					:ARG1 (x32 / fire))))))
+
+# ::id 101
+# ::snt park officials  certainly did seem that way to some people
+(xap0 / person
+	:ARG0-of (x2 / have-org-role-91
+		:ARG2 (o / official)
+		:null_edge (x1 / null_tag))
+	:mod (x3 / certain)
+	:ARG0 (x5 / seem-01)
+	:mod (x6 / that)
+	:ARG2 (x10 / people
+		:null_edge (x9 / some)))
+
+# ::id 102
+# ::snt Wyoming's U.S. senators , Republicans Malcolm Wallop and Alan K. Simpson , are mindful of the damage the fires caused the state's tourist industry this year , as well as the threat to gateway towns near the park
+(x15 / mindful
+	:ARG1 (x18 / damage-01
+		:ARG1-of (x21 / cause-01
+			:ARG0 (x9 / and
+				:poss (x1 / country
+					:name (n / name
+						:op1 "Wyoming"))
+				:op1 (x3 / country
+					:name (n1 / name
+						:op1 "U.S."))
+				:op2 (x7 / name
+					:op1 "Malcolm"
+					:op2 "Wallop"
+					:ARG0-of (x6 / have-org-role-91
+						:ARG1 (p / political-party
+							:name (n2 / name
+								:op1 "Republicans"))))
+				:op2 (x10 / name
+					:op1 "Alan"
+					:op2 "K."
+					:op3 "Simpson"))
+			:ARG0 (x20 / fire)
+			:ARG1 (x26 / industry
+				:poss (x23 / state)
+				:mod (x25 / person
+					:ARG0-of (t / tour-01))
+				:time (x28 / year
+					:mod (x27 / this))
+				:mod (x34 / threaten-01
+					:ARG2 (x37 / town
+						:mod (x36 / gateway)
+						:location (x38 / near
+							:op1 (x40 / park))))))))
+
+# ::id 103
+# ::snt Alan K. Simpson  have called for the resignation of William Penn Mott Jr. , who heads the park service
+(x5 / call-01
+	:ARG0 (x1 / person
+		:name (n / name
+			:op1 "Alan"
+			:op2 "K."
+			:op3 "Simpson"))
+	:ARG1 (x8 / resignation
+		:ARG1 (x10 / company
+			:name (n1 / name
+				:op1 "William"
+				:op2 "Penn"
+				:op3 "Mott"
+				:op4 "Jr.")
+			:ARG0-of (x16 / head-02
+				:ARG1 (x19 / service
+					:null_edge (x18 / null_tag))))))
+
+# ::id 104
+# ::snt So far , Mr. Mott , who did not return calls for comment , does not appear in danger of losing Mott  job , park service officials say
+(x17 / appear-02
+	:ARG1 (x21 / lose-02
+		:ARG1 (x23 / job
+			:ARG1-of (x28 / say-01
+				:ARG0 (x5 / person
+					:name (n / name
+						:op1 "Mott")
+					:null_edge (x4 / null_tag
+						:mod (x2 / far))
+					:null_edge (x10 / return-01
+						:ARG1 (x11 / call
+							:ARG1 (x13 / comment-01))))
+				:ARG1 (x26 / service
+					:null_edge (x25 / null_tag))
+				:ARG0 (xap0 / person
+					:ARG0-of (x27 / have-org-role-91
+						:ARG2 (o / official)))))))
+
+# ::id 105
+# ::snt But Interior Secretary Donald P. Hodel says Interior Secretary Donald P. Hodel  favors certain , unspecified changes in the natural-burn policy
+(x1 / contrast-01
+	:ARG2 (x7 / say-01
+		:ARG0 (x4 / person
+			:name (n / name
+				:op1 "Donald"
+				:op2 "P."
+				:op3 "Hodel")
+			:ARG0-of (x3 / have-org-role-91
+				:ARG2 (s / secretary)
+				:ARG1 (x2 / interior)))
+		:ARG1 (x13 / favor-01
+			:ARG0 (x8 / government-organization
+				:name (n1 / name
+					:op1 "Interior"
+					:op2 "Secretary"
+					:op3 "Donald"
+					:op4 "P."
+					:op5 "Hodel")
+				:ARG0-of (x9 / have-org-role-91
+					:ARG2 (s1 / secretary)))
+			:ARG1 (x17 / change-01
+				:mod (x14 / certain)
+				:ARG1-of (x16 / specify-01
+					:polarity -)
+				:ARG1 (x21 / policy)))))
+
+# ::id 106
+# ::snt A panel of academics and scientists is being assembled to study this year's fires and make recommendations on what changes might be in order
+(x9 / assemble-01
+	:ARG1 (x2 / panel
+		:consist-of (x5 / and
+			:op1 (x4 / academic)
+			:op2 (x6 / scientist)))
+	:ARG1 (x16 / and
+		:op1 (x11 / study-01
+			:ARG1 (x15 / fire
+				:time (x13 / year
+					:mod (x12 / this))))
+		:op2 (x17 / make-01
+			:ARG1 (x18 / recommend-01
+				:ARG0 (x21 / change-01
+					:location (x25 / order))))))
+
+# ::id 107
+# ::snt Congressional hearings are also likely
+(x5 / likely
+	:domain (x2 / hearing
+		:mod (x1 / government-organization
+			:name (n / name
+				:op1 "Congressional")))
+	:mod (x4 / also))
+
+# ::id 108
+# ::snt Beautiful as academics and scientists  are , trees are not the reason most people come to Yellowstone National Park
+(xap0 / cause-01
+	:snt2 (x1 / beautiful)
+	:ARG1 (x4 / and
+		:op1 (x3 / academic)
+		:op2 (x5 / scientist))
+	:ARG1 (x15 / come-01
+		:degree (x13 / most)
+		:ARG1 (x17 / organization
+			:name (n / name
+				:op1 "Yellowstone"))
+		:ARG4 (x19 / organization
+			:name (n1 / name
+				:op1 "Park")
+			:null_edge (x18 / null_tag))))
+
+# ::id 109
+# ::snt On a recent evening , about a hundred park visitors made the pilgrimage to one of the world's natural wonders the largest concentration of geysers to be found anywhere on earth
+(x11 / make-02
+	:time (x4 / evening
+		:time (x3 / recent))
+	:ARG0 (x10 / person
+		:ARG0-of (v / visit-01)
+		:quant (x6 / about)
+		:null_edge (x9 / null_tag))
+	:ARG1 (x13 / pilgrimage)
+	:null_edge (x16 / include-91
+		:ARG2 (x21 / wonder-01
+			:location (x18 / world)
+			:mod (x20 / natural)
+			:ARG1 (x29 / find-01
+				:ARG1 (x24 / concentrate-02
+					:mod (x23 / large
+						:degree (m / most))
+					:ARG1 (x26 / geyser))
+				:location (x30 / anywhere)
+				:location (x32 / earth)))))
+
+# ::id 110
+# ::snt These and the rest of the park's thermal features remain unscathed by the fires
+(x11 / remain-01
+	:ARG3 (x12 / unscathed
+		:ARG1 (x2 / and
+			:op2 (x4 / rest
+				:part-of (x10 / feature-01
+					:poss (x7 / park)
+					:mod (x9 / thermal))))
+		:ARG0 (x15 / fire)))
+
+# ::id 111
+# ::snt The sun had just set with an ash-tinted tangerine glow behind the hills to the west
+(x5 / set-03
+	:ARG0 (x2 / sun)
+	:mod (x4 / just)
+	:ARG2 (x10 / glow
+		:mod (x8 / ash-tinted)
+		:mod (x9 / tangerine)
+		:location (x11 / behind
+			:op1 (x13 / hill
+				:ARG4 (x16 / world-region
+					:name (n / name
+						:op1 "west"))))))
+
+# ::id 112
+# ::snt A quarter moon was visible as well
+(x5 / visible
+	:domain (x3 / moon))
+
+# ::id 113
+# ::snt At exactly 7:24 , as predicted by the sign in the window of the tourist-information office , Old Faithful sputtered once , twice and shot plumes of white steam high into the fading light
+(x6 / predict-01
+	:ARG1 (x9 / sign)
+	:ARG1 (x12 / window
+		:poss (x16 / office))
+	:ARG0 (x24 / and
+		:op1 (x20 / sputter
+			:time (x3 / date-entity
+				:mod (x2 / exact))
+			:ARG0 (x19 / faithful
+				:null_edge (x18 / null_tag))
+			:time (x21 / once))
+		:op2 (x25 / shoot-02
+			:ARG0 x19
+			:ARG1 (x26 / plume
+				:ARG1 (x29 / steam
+					:mod (x28 / white)))
+			:mod (x30 / high)
+			:ARG2 (x34 / light
+				:mod (x33 / fading)))))
+
+# ::id 114
+# ::snt Tourists will be back next year for this ... and perhaps to see how nature is restoring the forest
+(x1 / person
+	:ARG0-of (t / tour-01)
+	:time (x6 / year
+		:mod (x5 / next)
+		:condition (x13 / see-01
+			:ARG1 (x10 / and
+				:op1 (x17 / restore-01
+					:ARG1 (x15 / nature)
+					:ARG1 (x19 / forest))))))
+

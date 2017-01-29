@@ -1,0 +1,309 @@
+# ::id 1
+# ::snt A U.S. Air Force F-111 fighter-bomber crashed today in Saudi Arabia , killing both crew members , U.S. military officials reported
+(x21 / report-01
+	:ARG1 (x7 / crash-01
+		:ARG0 (x6 / fighter-bomber
+			:null_edge (x3 / null_tag)
+			:null_edge (x4 / null_tag)
+			:mod (x5 / f-111))
+		:time (x8 / today)
+		:null_edge (x10 / null_tag
+			:null_edge "Arabia")
+		:ARG1 (x13 / person
+			:ARG1-of (k / kill-01)
+			:ARG1 (xap0 / person
+				:ARG0-of (x16 / have-org-role-91
+					:ARG2 (m / member)
+					:mod (x15 / crew)))))
+	:ARG0 (xap1 / person
+		:ARG0-of (x20 / have-org-role-91
+			:ARG2 (o / official)
+			:ARG1 (x18 / country
+				:name (n / name
+					:op1 "U.S."))
+			:ARG1 (x19 / military))))
+
+# ::id 2
+# ::snt It was the fourth American aircraft to crash in three days among those deployed to this kingdom for Operation Desert Shield
+(x8 / crash-01
+	:ARG1 (x6 / aircraft
+		:domain (x1 / it)
+		:mod (x5 / country
+			:name (n / name
+				:op1 "American")))
+	:time (x10 / date-entity
+		:ARG1-of (x14 / deploy-01
+			:location (x17 / kingdom
+				:mod (x16 / this))
+			:purpose (x21 / shield
+				:null_edge (x19 / null_tag)
+				:mod (x20 / desert)))))
+
+# ::id 3
+# ::snt Eight Marines are missing in the crash of two helicopters in the northern Arabian Sea on Monday
+(x4 / miss-03
+	:location (x7 / crash-01
+		:ARG1 (x10 / helicopter
+			:quant 2)
+		:name (x13 / name
+			:op1 "northern"
+			:op2 "Arabian"
+			:op3 "Sea"
+			:part-of (x14 / country
+				:name (n1 / name
+					:op1 "Arabian")))
+		:time (xap1 / date-entity
+			:weekday (x17 / monday)))
+	:ARG0 (xap0 / person
+		:quant 8
+		:ARG0-of (x2 / have-org-role-91
+			:ARG1 (m / military
+				:name (n / name
+					:op1 "Marines")))))
+
+# ::id 4
+# ::snt An Air Force F-4 reconnaissance jet also went down that day , killing both crew members
+(x8 / go-02
+	:ARG1 (x6 / jet
+		:null_edge (x2 / null_tag)
+		:null_edge (x3 / null_tag)
+		:mod (x4 / f-4)
+		:mod (x5 / reconnaissance))
+	:mod (x7 / also)
+	:time (x11 / day
+		:mod (x10 / that))
+	:ARG2 (x13 / person
+		:ARG1-of (k / kill-01)
+		:ARG1 (xap0 / person
+			:ARG0-of (x16 / have-org-role-91
+				:ARG2 (m / member)
+				:mod (x15 / crew)))))
+
+# ::id 5
+# ::snt Lt. Cmdr. J.D. van Sickle , a military spokesman , said the F-111 crashed in the southern Arabian peninsula while on a training mission and that the incident was under investigation
+(x11 / say-01
+	:ARG0 (x3 / person
+		:name (n / name
+			:op1 "J.D."
+			:op2 "van"
+			:op3 "Sickle")
+		:ARG0-of (x1 / lt.)
+		:ARG0-of (x2 / cmdr.)
+		:ARG0-of (x9 / have-org-role-91
+			:ARG2 (s / spokesman)
+			:ARG1 (x8 / military)))
+	:ARG1 (x14 / crash-01
+		:ARG0 (x13 / newspaper
+			:name (n1 / name
+				:op1 "F-111"))
+		:location (x19 / peninsula
+			:mod (x17 / south)
+			:mod (x18 / world-region
+				:name (n2 / name
+					:op1 "Arabian")))
+		:ARG1 (x25 / and
+			:op1 (x24 / mission
+				:mod (x23 / train-01))
+			:op1 (xap0 / be-temporally-at-91
+				:ARG1 (x28 / incident)
+				:ARG1 (x31 / investigate-01)))))
+
+# ::id 6
+# ::snt The names of the flyers were withheld pending notification of next of kin
+(x7 / withhold-01
+	:ARG1 (x2 / thing
+		:ARG2-of (n / name-01)
+		:ARG1 (x5 / flyer))
+	:ARG1 (x9 / notification
+		:ARG1 (x13 / kin
+			:mod (x11 / next))))
+
+# ::id 7
+# ::snt The aircraft was attached the 48th Tactical Fighter Wing based at RAF Lakenheath Air Base in Britain
+(x4 / attach-01
+	:ARG1 (x2 / aircraft)
+	:ARG1 (x9 / wing
+		:mod (x7 / country
+			:name (n / name
+				:op1 "Tactical"))
+		:null_edge (x8 / fight-01)
+		:ARG1-of (x10 / base-02
+			:location (x15 / organization
+				:name (n1 / name
+					:op1 "Base")
+				:null_edge (x12 / have-org-role-91
+					:ARG1 (o / organization
+						:name (n2 / name
+							:op1 "RAF")))
+				:null_edge (x13 / organization
+					:name (n3 / name
+						:op1 "Lakenheath"))
+				:null_edge (x14 / null_tag)
+				:location (x17 / country
+					:name (n4 / name
+						:op1 "Britain"))))))
+
+# ::id 8
+# ::snt The wing was sent to Turkey as U.S. forces massed in the region in response to Iraq's Aug. 2 takeover of Kuwait
+(x4 / send-01
+	:ARG1 (x2 / wing)
+	:ARG2 (x6 / country
+		:name (n / name
+			:op1 "Turkey"))
+	:time (x10 / mass-01
+		:ARG0 (x9 / force
+			:mod (x8 / country
+				:name (n1 / name
+					:op1 "U.S.")))
+		:location (x13 / region)
+		:ARG2-of (x15 / respond-01
+			:ARG1 (x21 / take-12
+				:ARG0 (x17 / country
+					:name (n2 / name
+						:op1 "Iraq"))
+				:null_edge (x19 / event
+					:name (n3 / name
+						:op1 "Aug."))
+				:null_edge (x20 / null_tag)
+				:ARG1 (x23 / country
+					:name (n4 / name
+						:op1 "Kuwait"))))))
+
+# ::id 9
+# ::snt Today's crash brought to at least nine the number of Americans killed in the Persian Gulf region since Operation Desert Shield began
+(x4 / bring-01
+	:ARG1 (x3 / crash-01
+		:time (x1 / today))
+	:purpose (x13 / kill-01
+		:null_edge 9
+		:ARG0 (x12 / person
+			:mod (c / country
+				:name (n / name
+					:op1 "Americans")))
+		:location (x17 / world-region
+			:name (n1 / name
+				:op1 "Gulf")
+			:mod (x16 / country
+				:name (n2 / name
+					:op1 "Persian")))
+		:time (x19 / since
+			:op1 (x23 / begin-01
+				:ARG1 (x22 / shield
+					:null_edge (x20 / null_tag)
+					:mod (x21 / desert))))))
+
+# ::id 10
+# ::snt The eight Marines aboard the two UH-1 Huey helicopters that vanished Monday are still officially listed as missing
+(x16 / list-01
+	:mod (x14 / still)
+	:mod (x15 / official)
+	:ARG2 (x18 / miss-01)
+	:ARG0 (xap1 / person
+		:quant 8
+		:ARG0-of (x3 / have-org-role-91
+			:ARG1 (m / military
+				:name (n / name
+					:op1 "Marines")))
+		:ARG2 (x4 / aboard
+			:op1 (x9 / helicopter
+				:quant 2
+				:mod (x7 / uh-1)
+				:mod (x8 / person
+					:name (n1 / name
+						:op1 "Huey"))
+				:ARG0-of (x11 / vanish
+					:time (xap0 / date-entity
+						:weekday (x12 / monday)))))))
+
+# ::id 11
+# ::snt In addition to those killed in Saudi Arabia , 13 other Air Force personnel were killed in a crash of a C-5 jet cargo plane in Germany
+(x16 / kill-01
+	:ARG1 (x5 / person
+		:ARG1-of (k / kill-01)
+		:null_edge (x7 / null_tag
+			:null_edge "Arabia"))
+	:ARG1 (x14 / have-org-role-91
+		:ARG2 (p / personnel)
+		:quant 13
+		:mod (x11 / other)
+		:null_edge (x12 / null_tag)
+		:null_edge (x13 / null_tag))
+	:location (x19 / crash-01
+		:ARG1 (x25 / plane
+			:mod (x22 / c-5
+				:mod (x23 / jet))
+			:mod (x24 / cargo))
+		:location (x27 / country
+			:name (n / name
+				:op1 "Germany"))))
+
+# ::id 12
+# ::snt That aircraft was ferrying supplies and equipment to the Saudi peninsula
+(x4 / ferry-01
+	:ARG1 (x2 / aircraft
+		:mod (x1 / that))
+	:ARG1 (x6 / and
+		:op1 (x5 / supply-01)
+		:op2 (x7 / equipment))
+	:ARG2 (x11 / peninsula
+		:mod (xap1 / country
+			:ARG0-of (xap0 / name
+				:op1 "Saudi"))))
+
+# ::id 13
+# ::snt Officials said the F-111 crashed at dawn
+(x2 / say-01
+	:ARG1 (x5 / crash-01
+		:ARG0 (x4 / newspaper
+			:name (n / name
+				:op1 "F-111")))
+	:ARG0 (xap0 / person
+		:ARG0-of (x1 / have-org-role-91
+			:ARG2 (o / official))))
+
+# ::id 14
+# ::snt The aircraft was an F-model , the latest version of the 23-year-old swing-wing jet that first saw action in Vietnam
+(x14 / jet
+	:mod (x5 / f-model
+		:domain (x2 / aircraft))
+	:mod (x9 / version
+		:mod (x8 / late
+			:degree (m / most)))
+	:mod (x12 / person
+		:name (n / name
+			:op1 "23-year-old"))
+	:mod (x13 / swing-wing)
+	:ARG1-of (x17 / see-01
+		:location (x20 / country
+			:name (n1 / name
+				:op1 "Vietnam"))))
+
+# ::id 15
+# ::snt The F-model has more powerful engines , and state-of-the-art equipment to operate against enemy targets at night
+(x3 / have-03
+	:ARG0 (x2 / newspaper
+		:name (n / name
+			:op1 "F-model"))
+	:ARG1 (x8 / and
+		:op1 (x6 / engine
+			:mod (x5 / powerful
+				:degree (x4 / more)))
+		:op1 (x12 / operate-01
+			:ARG1 (x10 / equipment
+				:mod (x9 / state-of-the-art))
+			:ARG1 (x15 / target
+				:ARG1 (x14 / enemy)
+				:time (x17 / night)))))
+
+# ::id 16
+# ::snt The plane can carry up to 12 tons of bombs and missiles and has a crew of two , a pilot and a weapons systems officer
+(x2 / plane
+	:mod (x3 / possible
+		:domain (x11 / and
+			:op1 (x8 / mass-quantity
+				:unit (t / ton)
+				:quant 12)
+			:op1 (x10 / bomb)
+			:op2 (x12 / missile)))
+	:domain (x13 / and))
+

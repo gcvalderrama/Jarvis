@@ -1,0 +1,574 @@
+# ::id 1
+# ::snt The Senate today confirmed conservative civil rights official Clarence Thomas as a federal appeals judge , brushing aside complaints about his record from some liberal and senior citizens groups
+(x4 / confirm-01
+	:time (x3 / today
+		:poss (x2 / government-organization
+			:name (n1 / name
+				:op1 "Senate")))
+	:ARG1 (x7 / right
+		:mod (x5 / conservative)
+		:mod (x6 / civil))
+	:ARG1 (x9 / person
+		:name (n / name
+			:op1 "Clarence"
+			:op2 "Thomas")
+		:ARG0-of (x8 / official))
+	:ARG1 (x17 / brushing
+		:ARG1 (x19 / complain-01)
+		:ARG2 (x26 / and
+			:op1 (x22 / record)
+			:op1 (x25 / liberal
+				:null_edge (x24 / some))
+			:op2 (x29 / group
+				:mod (x27 / senior)
+				:mod (x28 / citizen))))
+	:ARG0 (xap1 / person
+		:ARG0-of (xap0 / have-org-role-91
+			:ARG3 (x15 / judge-01
+				:ARG2-of (x14 / appeal-01
+					:mod (x13 / government-organization
+						:name (n2 / name
+							:op1 "federal")))))))
+
+# ::id 2
+# ::snt The Senate had planned to take a roll call on the nomination but changed course at the last minute and confirmed Thomas on a voice vote
+(x13 / contrast-01
+	:ARG1 (x4 / plan-01
+		:ARG0 (x2 / government-organization
+			:name (n / name
+				:op1 "Senate"))
+		:ARG1 (x6 / take-01
+			:ARG1 (x9 / call-03
+				:mod (x8 / roll))
+			:ARG2 (x12 / nominate-01)
+			:ARG0 (x20 / and
+				:op1 (x14 / change-01
+					:time (x19 / temporal-quantity
+						:unit (m / minute)
+						:mod (x18 / last)))
+				:op2 (x21 / confirm-01
+					:ARG1 (x26 / vote-01
+						:ARG0 (x22 / person
+							:name (n1 / name
+								:op1 "Thomas"))
+						:ARG1 (x25 / voice))))
+			:ARG0 x22)
+		:ARG1 x20
+		:ARG0 x22))
+
+# ::id 3
+# ::snt Thomas , 41 , will be a judge on the U.S. Circuit Court of Appeals in the District of Columbia
+(xap1 / person
+	:ARG0-of (xap0 / have-org-role-91
+		:ARG3 (x8 / judge-01
+			:domain (x1 / person
+				:name (n / name
+					:op1 "Thomas")
+				:quant 41)
+			:ARG1 (x12 / government-organization
+				:name (n1 / name
+					:op1 "Circuit"
+					:op2 "Court")
+				:part-of (x15 / organization
+					:name (n2 / name
+						:op1 "Appeals"))
+				:location (x20 / country
+					:name (n3 / name
+						:op1 "Columbia"))))))
+
+# ::id 4
+# ::snt As chairman of the Equal Employment Opportunity Commission over the last eight years , chairman of the Equal Employment Opportunity Commission over the last eight years  has been one of the most visible black officials in the Reagan and Bush administrations
+(xap1 / person
+	:ARG2 (x2 / have-org-role-91
+		:ARG2 (c / chairman)
+		:ARG1 (x5 / government-organization
+			:name (n / name
+				:op1 "Equal"
+				:op2 "Employment"
+				:op3 "Opportunity"
+				:op4 "Commission")))
+	:unit (x13 / year
+		:mod (x11 / last)
+		:null_edge (x12 / null_tag))
+	:ARG0-of (x15 / have-org-role-91
+		:ARG2 (c1 / chairman)
+		:ARG1 (x18 / government-organization
+			:name (n1 / name
+				:op1 "Equal"
+				:op2 "Employment"
+				:op3 "Opportunity"
+				:op4 "Commission")))
+	:ARG2 (x22 / over
+		:op1 (x26 / year
+			:mod (x24 / last)
+			:null_edge (x25 / null_tag)))
+	:ARG0-of (x35 / have-org-role-91
+		:ARG2 (o / official)
+		:mod (x33 / visible
+			:degree (x32 / most))
+		:mod (x34 / black)
+		:ARG1 (xap0 / government-organization
+			:ARG0-of (x41 / administer-01
+				:ARG1 (x39 / and
+					:op1 (x38 / person
+						:name (n2 / name
+							:op1 "Reagan"))
+					:op2 (x40 / person
+						:name (n3 / name
+							:op1 "Bush")))))))
+
+# ::id 5
+# ::snt Thomas , a critic of quotas and affirmative action to fight hiring discrimination , has been highly praised by conservatives
+(x18 / praise-01
+	:ARG1 (x1 / person
+		:name (n / name
+			:op1 "Thomas")
+		:null_edge (x4 / person
+			:ARG0-of (c / criticize-01)
+			:ARG1 (x7 / and
+				:op1 (x6 / quota)
+				:op2 (x9 / action
+					:mod (x8 / affirm-01)))
+			:purpose (x11 / fight-01
+				:ARG0 x7
+				:ARG1 (x13 / discriminate-02
+					:ARG0-of (x12 / hire-01)))))
+	:degree (x17 / high)
+	:ARG0 (x20 / political-party
+		:name (n1 / name
+			:op1 "conservatives")))
+
+# ::id 6
+# ::snt But liberals have criticized official Clarence Thomas  record
+(x1 / contrast-01
+	:ARG2 (x4 / criticize-01
+		:ARG0 (x2 / liberalism)
+		:ARG1 (x8 / record
+			:ARG0 (x6 / person
+				:name (n / name
+					:op1 "Clarence"
+					:op2 "Thomas")
+				:ARG0-of (x5 / official)))))
+
+# ::id 7
+# ::snt It became clear Monday night that Thomascritics had failed to muster enough support to defeat official Clarence Thomas  nomination
+(x2 / become-01
+	:ARG2 (x3 / clear
+		:time (x5 / night
+			:mod (xap0 / date-entity
+				:null_edge (x4 / null_tag)))
+		:domain (x9 / fail-01
+			:ARG0 (x7 / newspaper
+				:name (n / name
+					:op1 "Thomascritics"))
+			:ARG2 (x11 / muster-01
+				:ARG0 x7
+				:ARG1 (x13 / support-01
+					:manner (x12 / enough)
+					:ARG1 (x15 / defeat-01
+						:ARG1 (x19 / nominate-01
+							:mod (x16 / official)
+							:poss (x17 / person
+								:name (n1 / name
+									:op1 "Clarence"))
+							:mod (x18 / person
+								:name (n2 / name
+									:op1 "Thomas")))))))))
+
+# ::id 8
+# ::snt Sen. Howard M. Metzenbaum  am prepared to concede that Mr. Thomas is going to be confirmed , said Sen. Howard M. Metzenbaum , D-Ohio , a leading critic
+(x6 / prepare-02
+	:ARG0 (x2 / person
+		:name (n / name
+			:op1 "Howard"
+			:op2 "M."
+			:op3 "Metzenbaum")
+		:ARG0-of (x1 / sen.))
+	:ARG2 (x8 / concede-01
+		:ARG0 x2
+		:ARG1 (x18 / say-01
+			:ARG0 (x11 / person
+				:name (n1 / name
+					:op1 "Thomas")
+				:null_edge (x10 / null_tag))
+			:ARG1 (x16 / confirm-01)
+			:ARG0 (x28 / person
+				:ARG0-of (c / criticize-01)
+				:ARG0-of (x27 / lead-02)))))
+
+# ::id 9
+# ::snt The only other opponent to materialize in the debate was Sen. David Pryor , D-Ark. , chairman of the Senate Special Committee on Aging , who complained that the statute of limitations on 15,000 age-discrimination cases before the EEOC ran out without any action being taken while Thomas was in charge
+(x4 / person
+	:ARG0-of (o / oppose-01)
+	:mod (x2 / only)
+	:mod (x3 / other
+		:ARG0 (x6 / materialize
+			:ARG1 (x9 / debate-01)
+			:ARG0 (x12 / name
+				:op1 "David"
+				:op2 "Pryor"
+				:ARG0-of (x11 / sen.)
+				:null_edge (x15 / country
+					:name (n / name
+						:op1 "D-Ark")
+					:ARG0-of (x18 / have-org-role-91
+						:ARG2 (c / chairman)
+						:ARG1 (x23 / organization
+							:name (n1 / name
+								:op1 "Committee")
+							:null_edge (x21 / government-organization
+								:name (n2 / name
+									:op1 "Senate"))
+							:null_edge (x22 / null_tag)
+							:null_edge (x25 / country
+								:name (n3 / name
+									:op1 "Aging")))))
+				:ARG0-of (x28 / complain-01
+					:ARG1 (x41 / run-02
+						:ARG1 (x31 / statute
+							:consist-of (x33 / limit-01)
+							:topic (x37 / case
+								:mod (x36 / age-discrimination)
+								:mod (x38 / before
+									:op1 (x40 / organization
+										:name (n5 / name
+											:op1 "EEOC")))))
+						:ARG1-of (x47 / take-01
+							:mod (x44 / any)
+							:ARG0 (x49 / person
+								:name (n4 / name
+									:op1 "Thomas")
+								:ARG0-of (x52 / charge-05)))))))))
+
+# ::id 10
+# ::snt Those cases might as well have been sent to Beijing , Pryor said
+(x13 / say-01
+	:ARG1 (x8 / send-01
+		:ARG1 (x2 / case)
+		:ARG2 (x10 / city
+			:name (n1 / name
+				:op1 "Beijing")))
+	:ARG0 (x12 / person
+		:name (n / name
+			:op1 "Pryor")))
+
+# ::id 11
+# ::snt Sen. David Pryor , D-Ark. , chairman of the Senate Special Committee on Aging , who complained that the statute of limitations on 15,000 age-discrimination cases before the EEOC ran out without any action being taken while Thomas was in charge  might as well have been sent to Bulgaria
+(x2 / name
+	:op1 "David"
+	:op2 "Pryor"
+	:ARG0-of (x1 / sen.)
+	:null_edge (x5 / country
+		:name (n / name
+			:op1 "D-Ark")
+		:ARG0-of (x8 / have-org-role-91
+			:ARG2 (c / chairman)
+			:ARG1 (x13 / organization
+				:name (n1 / name
+					:op1 "Committee")
+				:null_edge (x11 / government-organization
+					:name (n2 / name
+						:op1 "Senate"))
+				:null_edge (x12 / null_tag)
+				:null_edge (x15 / country
+					:name (n3 / name
+						:op1 "Aging"))
+				:null_edge (x18 / complain-01
+					:ARG0 (x31 / run-02
+						:ARG1 (x21 / statute
+							:consist-of (x23 / limit-01)
+							:topic (x27 / case
+								:mod (x26 / age-discrimination)
+								:mod (x28 / before
+									:op1 (x30 / organization
+										:name (n5 / name
+											:op1 "EEOC")))))
+						:ARG1-of (x37 / take-01
+							:mod (x34 / any)
+							:ARG0 (x39 / person
+								:name (n4 / name
+									:op1 "Thomas")
+								:ARG0-of (x42 / charge-05
+									:ARG1-of (x48 / send-01
+										:ARG2 (x50 / country
+											:name (n6 / name
+												:op1 "Bulgaria"))))))))))))
+
+# ::id 12
+# ::snt They might as well have been sent to Romania
+(x7 / send-01
+	:ARG1 (x1 / they)
+	:ARG2 (x9 / country
+		:name (n / name
+			:op1 "Romania")))
+
+# ::id 13
+# ::snt ... Romania  is too much to overlook
+(x7 / overlook-01
+	:ARG0 (x2 / country
+		:name (n / name
+			:op1 "Romania"))
+	:mod (x4 / too))
+
+# ::id 14
+# ::snt Pryor said , however , that Thomas was virtually guaranteed to win confirmation and added that official Clarence Thomas  wished the nominee well in official Clarence Thomas  new post
+(x2 / say-01
+	:ARG0 (x1 / person
+		:name (n / name
+			:op1 "Pryor"))
+	:ARG1 (x14 / and
+		:op1 (x10 / guarantee-01
+			:ARG1 (x7 / person
+				:name (n1 / name
+					:op1 "Thomas"))
+			:mod (x9 / virtual)
+			:ARG1 (x12 / win-01
+				:ARG1 x7
+				:ARG1 (x13 / confirm-01)))
+		:op2 (x15 / add-01
+			:ARG1 x7
+			:ARG1 (x20 / wish-01
+				:ARG0 (x19 / person
+					:name (n2 / name
+						:op1 "Thomas")
+					:ARG0-of (x17 / official)
+					:null_edge (x18 / person
+						:name (n3 / name
+							:op1 "Clarence")))
+				:ARG1 (x22 / nominate-01)
+				:time (x29 / post
+					:mod (x26 / person
+						:name (n4 / name
+							:op1 "Clarence"))
+					:mod (x27 / person
+						:name (n5 / name
+							:op1 "Thomas"))
+					:mod (x28 / new)
+					:mod (xap0 / person
+						:mod (x25 / official)))))))
+
+# ::id 15
+# ::snt Danforth , Thomaschief Senate supporter and former employer , said Danforth  could vouch for the nominee's abilities as a lawyer
+(x10 / say-01
+	:ARG0 (x1 / person
+		:name (n / name
+			:op1 "Danforth")
+		:null_edge (x6 / and
+			:op2 (x5 / support-01
+				:ARG1 (x3 / thomaschief)
+				:ARG1 (x4 / government-organization
+					:name (n2 / name
+						:op1 "Senate")))
+			:op2 (x8 / employ-01
+				:mod (x7 / former))))
+	:ARG1 (x12 / possible
+		:domain (x13 / vouch
+			:ARG0 (x11 / person
+				:name (n1 / name
+					:op1 "Danforth"))
+			:ARG0 (x21 / lawyer
+				:poss (x16 / have-org-role-91
+					:ARG2 (n3 / nominee))))))
+
+# ::id 16
+# ::snt Danforth  hired Thomaschief Senate supporter  twice , Danforth said
+(x9 / say-01
+	:ARG1 (x2 / hire-01
+		:ARG0 (x1 / person
+			:name (n1 / name
+				:op1 "Danforth"))
+		:ARG2 (x3 / thomaschief)
+		:ARG1 (x5 / support-01
+			:ARG1 (x4 / government-organization
+				:name (n2 / name
+					:op1 "Senate"))))
+	:ARG0 (x8 / person
+		:name (n / name
+			:op1 "Danforth")))
+
+# ::id 17
+# ::snt People say , Do not you ever make a mistake ?
+(x2 / say-01
+	:ARG0 (x1 / people)
+	:ARG1 (x10 / mistake
+		:ARG0 (x6 / you)
+		:time (x7 / ever)))
+
+# ::id 18
+# ::snt Well , yeah , but not twice
+(x5 / contrast-01
+	:ARG1 (x7 / twice
+		:ARG0-of (xap0 / cause-01
+			:mod (x1 / well))))
+
+# ::id 19
+# ::snt Sen. Alan Simpson , R-Wyo. , dismissed complaints that Thomas had failed to cooperate with the Aging Committee several years ago when former Sen. John Melcher , D-Mont. , was chairman
+(x8 / dismiss-01
+	:ARG0 (x2 / newspaper
+		:name (n / name
+			:op1 "Alan"
+			:op2 "Simpson")
+		:ARG0-of (x1 / sen.
+			:ARG1 (x5 / country
+				:name (n1 / name
+					:op1 "R-Wyo"))))
+	:ARG1 (x9 / complain-01
+		:ARG1-of (x13 / fail-01
+			:ARG1 (x11 / person
+				:name (n2 / name
+					:op1 "Thomas"))
+			:ARG2 (x15 / cooperate-01
+				:ARG0 x11
+				:ARG1 (x18 / government-organization
+					:name (n3 / name
+						:op1 "Aging"
+						:op2 "Committee")
+					:null_edge (x20 / several
+						:op1 (x21 / temporal-quantity
+							:unit (y / year)))
+					:mod (x26 / person
+						:name (n4 / name
+							:op1 "John"
+							:op2 "Melcher")
+						:mod (x24 / former)
+						:ARG0-of (x25 / sen.)
+						:ARG0-of (x29 / d-mont)
+						:ARG0-of (x33 / have-org-role-91
+							:ARG2 (c / chairman))))))))
+
+# ::id 20
+# ::snt Simpson said the panel's investigation of the employment commission was flawed to begin with
+(x2 / say-01
+	:ARG0 (x1 / person
+		:name (n / name
+			:op1 "Simpson"))
+	:ARG1 (x12 / flaw-01
+		:ARG1 (x6 / investigate-01
+			:ARG1 (x4 / panel)
+			:ARG1 (x10 / commission
+				:mod (x9 / person
+					:ARG1-of (e / employ-01))))
+		:domain (x14 / begin-01)))
+
+# ::id 21
+# ::snt They wasted a lot of time trying to nail Clarence Thomas , Alan Simpson  said
+(x15 / say-01
+	:ARG1 (x2 / waste-01
+		:ARG0 (x1 / they)
+		:purpose (x7 / try-01
+			:ARG1 (x6 / time
+				:quant (x4 / lot))
+			:ARG1 (x9 / nail
+				:ARG1 (x10 / person
+					:name (n1 / name
+						:op1 "Clarence"
+						:op2 "Thomas")))))
+	:ARG0 (x13 / newspaper
+		:name (n / name
+			:op1 "Alan"
+			:op2 "Simpson")))
+
+# ::id 22
+# ::snt Thomas was born in poverty in rural Georgia , worked official Clarence Thomas  way through college and is a graduate of Yale Law School
+(x17 / and
+	:op1 (x3 / bear-02
+		:ARG1 (x1 / person
+			:name (n / name
+				:op1 "Thomas"))
+		:ARG2 (x5 / poverty)
+		:location (x8 / country
+			:name (n1 / name
+				:op1 "Georgia")
+			:mod (x7 / rural)))
+	:op2 (x10 / work-01
+		:ARG0 (x12 / person
+			:name (n2 / name
+				:op1 "Clarence"
+				:op2 "Thomas")
+			:ARG0-of (x11 / official))
+		:ARG2 (x16 / college))
+	:op3 (x20 / person
+		:ARG0-of (g / graduate-01)
+		:poss (x24 / school
+			:null_edge (x22 / organization
+				:name (n3 / name
+					:op1 "Yale"))
+			:null_edge (x23 / null_tag))))
+
+# ::id 23
+# ::snt Before becoming chairman of the commission , chairman of the Equal Employment Opportunity Commission over the last eight years  worked under Danforth in the Missouri attorney general's office and in the Senate as well for the Monsanto Corp.
+(x30 / and
+	:op1 (x20 / work-01
+		:time (x1 / before
+			:op1 (x2 / become-01
+				:ARG2 (x3 / chairman
+					:ARG1 (x6 / commission))))
+		:ARG0 (x8 / have-org-role-91
+			:ARG2 (c / chairman)
+			:ARG1 (x11 / government-organization
+				:name (n3 / name
+					:op1 "Equal"
+					:op2 "Employment"
+					:op3 "Opportunity"
+					:op4 "Commission"))
+			:time (x19 / year
+				:mod (x17 / last)
+				:null_edge (x18 / null_tag)))
+		:ARG3 (x22 / person
+			:name (n / name
+				:op1 "Danforth"))
+		:location (x29 / office
+			:mod (x27 / general))
+		:location (x33 / government-organization
+			:name (n1 / name
+				:op1 "Senate"))
+		:ARG3 (x39 / organization
+			:name (n2 / name
+				:op1 "Corp.")
+			:null_edge (x38 / organization
+				:name (n4 / name
+					:op1 "Monsanto")))))
+
+# ::id 24
+# ::snt Civil rights forces have been divided over the nomination
+(x6 / divide-02
+	:ARG1 (x3 / force
+		:mod (x1 / civil)
+		:mod (x2 / right))
+	:ARG2 (x9 / nominate-01))
+
+# ::id 25
+# ::snt The Alliance for Justice , a liberal court-watcher group based in Washington , and several senior citizens groups have been critical
+(x21 / criticize-01
+	:ARG1 (x2 / alliance
+		:null_edge (x4 / justice)
+		:null_edge (x7 / liberal)
+		:ARG1-of (x10 / base-02
+			:location (x12 / city
+				:name (n / name
+					:op1 "Washington")))
+		:null_edge (x14 / and)
+		:null_edge (x18 / group
+			:null_edge x2
+			:quant (x15 / several)
+			:mod (x16 / senior)
+			:mod (x17 / citizen))))
+
+# ::id 26
+# ::snt But the National Association for the Advancement of Colored People did not take a stand on the issue
+(x13 / take-01
+	:null_edge (x1 / contrast-01
+		:ARG1 (x3 / government-organization
+			:name (n / name
+				:op1 "National"
+				:op2 "Association"
+				:op3 "for"
+				:op4 "the"
+				:op5 "Advancement")
+			:poss (x9 / government-organization
+				:name (n1 / name
+					:op1 "Colored"
+					:op2 "People"))))
+	:ARG1 (x15 / stand
+		:topic (x18 / issue)))
+

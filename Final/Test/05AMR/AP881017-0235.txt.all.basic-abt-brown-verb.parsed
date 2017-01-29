@@ -1,0 +1,926 @@
+# ::id 1
+# ::snt A colossal tunneling machine is boring beneath the English Channel from the white cliffs of Dover , pursuing a dream born in Napoleon's time that is coming true at last
+(x6 / bore-02
+	:domain (x4 / machine
+		:mod (x2 / colossal)
+		:mod (x3 / tunneling))
+	:location (x7 / beneath
+		:op1 (x10 / country
+			:name (n / name
+				:op1 "Channel")
+			:name (x9 / name
+				:op1 "English")))
+	:ARG2 (x14 / cliff
+		:mod (x13 / white)
+		:source (x16 / country
+			:name (n1 / name
+				:op1 "Dover")))
+	:condition (x18 / pursue-01
+		:ARG1 (x20 / dream-01
+			:ARG1-of (x21 / bear-02)
+			:ARG1-of (x29 / true))
+		:mod (x31 / last)))
+
+# ::id 2
+# ::snt Another is digging from the French coast in what the tunnel builders call the largest civil engineering project now under way in the world
+(x3 / dig-01
+	:ARG0 (x1 / person
+		:mod (a / another))
+	:ARG2 (x7 / coast
+		:mod (x6 / country
+			:name (n / name
+				:op1 "France"))
+		:part-of (x13 / call-01
+			:ARG0 (x12 / builder
+				:mod (x11 / tunnel))
+			:ARG1 (x18 / project
+				:mod (x15 / large
+					:degree (m / most))
+				:mod (x16 / civil)
+				:mod (x17 / engineer-01)
+				:location (x20 / under
+					:op1 (x21 / way
+						:time (x19 / now)
+						:location (x24 / world)))))))
+
+# ::id 3
+# ::snt The 31-mile tunnel , 24 miles of it underwater , will cut the London-Paris journey from six hours to three , as fast as a scheduled airline
+(x12 / cut-02
+	:ARG0 (x3 / tunnel
+		:mod (x2 / 31-mile)
+		:ARG1-of (xap0 / target
+			:location (x9 / under)))
+	:ARG1 (x15 / journey-01
+		:mod (x14 / country
+			:name (n / name
+				:op1 "London-Paris"))
+		:mod (x23 / fast
+			:compared-to (x27 / airline
+				:ARG1-of (x26 / schedule-01
+					:ARG3 (x20 / person
+						:op (t / three))))))
+	:ARG1 (x18 / temporal-quantity
+		:unit (h / hour)
+		:quant 6))
+
+# ::id 4
+# ::snt The 31-mile tunnel  will enable freight to travel on one train instead of being shifted to trucks for a cross-channel ferry trip subject to weather and shipping strikes
+(x5 / enable-01
+	:ARG0 (x3 / tunnel
+		:mod (x2 / 31-mile))
+	:ARG1 (x6 / freight)
+	:ARG1 (x8 / travel-01
+		:ARG1 (x15 / shift-01
+			:null_edge 1
+			:ARG2 (x17 / truck)
+			:purpose (x22 / trip
+				:ARG1 (x21 / ferry-01
+					:mod (x20 / cross-channel))
+				:ARG1-of (x23 / subject
+					:ARG2 (x28 / person
+						:name (n / name
+							:op1 "strikes")
+						:ARG1 (x26 / and
+							:op1 (x25 / weather)
+							:op2 (x27 / ship-01))))))))
+
+# ::id 5
+# ::snt Tunneling speed at the Dover end is less than 15 feet an hour and the machine boring from the geologically more complex French end moves even slower , which is why the tunnel will not open until 1993
+(x14 / and
+	:op1 (x11 / distance-quantity
+		:unit (f / foot)
+		:domain (x1 / tunnel
+			:ARG1 (x2 / speed-01)
+			:time (x6 / end))
+		:null_edge (x8 / less-than
+			:null_edge 15))
+	:op2 (x13 / temporal-quantity
+		:unit (h / hour))
+	:op2 (x25 / move-01
+		:ARG1 (x16 / machine
+			:ARG0-of (x17 / bore-02
+				:mod (x22 / complex
+					:mod (x20 / geologically)
+					:degree (x21 / more)
+					:op1 (x24 / end
+						:ARG1 (x23 / country
+							:name (n / name
+								:op1 "France"))))))
+		:mod (x27 / slow
+			:mod (x26 / even))
+		:purpose (x36 / open-01
+			:ARG1 (x33 / tunnel)
+			:time (x37 / until
+				:op1 (x38 / date-entity
+					:year 1993)))))
+
+# ::id 6
+# ::snt For continental Europeans , accustomed to long-distance rail travel , the tunnel is but a small spur on a vast network stretching to Moscow and beyond
+(x12 / tunnel
+	:ARG1-of (x5 / accustom
+		:ARG2 (x8 / rail
+			:mod (x2 / continental)
+			:mod (x7 / long-distance)
+			:mod (x9 / travel-01)))
+	:ARG1-of (x14 / contrast-01
+		:ARG2 (x17 / spur
+			:ARG1 (x21 / network
+				:mod (x16 / small)
+				:mod (x20 / vast)
+				:ARG1-of (x22 / stretch-01
+					:ARG2 (x24 / city
+						:name (n / name
+							:op1 "Moscow")))
+				:location (x26 / beyond)))))
+
+# ::id 7
+# ::snt For the British , the change wrought by what many call the chunnel will be enormous
+(x10 / many
+	:mod (x16 / enormous
+		:condition (x11 / call-01
+			:ARG1 (x7 / work-01
+				:ARG0 (x6 / change-01)
+				:ARG0 (xap1 / country
+					:ARG0-of (xap0 / name
+						:ARG1 (x3 / country
+							:name (n / name
+								:op1 "Britain")))))
+			:ARG1 xap1)
+		:domain (x13 / chunnel)))
+
+# ::id 8
+# ::snt Some wonder whether Britain will be ready for Britain
+(x2 / wonder-01
+	:ARG0 (x1 / some)
+	:ARG1 (x7 / ready-01
+		:ARG1 (x4 / country
+			:name (n / name
+				:op1 "Britain"))
+		:ARG2 (x9 / country
+			:name (n1 / name
+				:op1 "Britain"))))
+
+# ::id 9
+# ::snt People still question whether the tunnel will be complete in May 1993 and that is ridiculous , says Kathy Watson , co-author of a book on the project
+(x13 / and
+	:op1 (x3 / question-01
+		:ARG0 (x1 / people)
+		:mod (x2 / still)
+		:name (x19 / name
+			:op1 "Kathy"
+			:op2 "Watson"
+			:ARG0-of (x22 / co-author
+				:ARG1 (x25 / book
+					:topic (x28 / project)))))
+	:op1 (x9 / complete-01
+		:ARG0 (x6 / tunnel)
+		:time (x11 / date-entity
+			:year 1993))
+	:op2 (x16 / ridicule-01
+		:domain x1
+		:ARG1 (x18 / say-01)))
+
+# ::id 10
+# ::snt People  are still arguing about whether a small spur on a vast network stretching to Moscow and beyond  will introduce rabies into this country , or let in terrorists
+(x4 / argue-01
+	:ARG0 (x1 / people)
+	:mod (x3 / still)
+	:ARG1 (x17 / and
+		:op1 (x9 / spur
+			:mod (x8 / small)
+			:ARG1 (x13 / network
+				:mod (x12 / vast)
+				:ARG1-of (x14 / stretch-01
+					:ARG2 (x16 / city
+						:name (n / name
+							:op1 "Moscow"))))
+			:purpose (x26 / or)
+			:ARG1 (x29 / terrorist))
+		:op2 (x20 / introduce-02
+			:location (x18 / beyond)
+			:ARG1 (x21 / rabies)
+			:ARG2 (x24 / country
+				:mod (x23 / this)))))
+
+# ::id 11
+# ::snt People  discuss a small spur on a vast network stretching to Moscow and beyond  in terms of People  being an island race , with a channel that has kept out invaders , Kathy Watson  said in an interview
+(x35 / say-01
+	:ARG1 (x13 / and
+		:op1 (x2 / discuss-01
+			:ARG0 (x1 / people)
+			:ARG1 (x5 / spur
+				:mod (x4 / small))
+			:ARG1 (x9 / network
+				:mod (x8 / vast)
+				:ARG1-of (x10 / stretch-01
+					:ARG2 (x12 / city
+						:name (n1 / name
+							:op1 "Moscow"))))
+			:ARG1 (x26 / channel
+				:ARG1-of (x29 / keep-01
+					:ARG1 (x31 / invader))))
+		:op2 (x14 / beyond
+			:op1 (x16 / term
+				:purpose (x22 / race-02
+					:ARG2 (x21 / island)))))
+	:ARG0 (x33 / newspaper
+		:name (n / name
+			:op1 "Kathy"
+			:op2 "Watson"))
+	:time (x38 / interview-01))
+
+# ::id 12
+# ::snt State-owned British Rail will not commit British Rail  to building a high-speed link from London to the tunnel in time to make the three-hour journey a reality in 1993
+(x6 / commit-02
+	:ARG0 (x3 / rail
+		:mod "Britain")
+	:ARG1 (x8 / rail
+		:mod "Britain")
+	:ARG2 (x10 / build-01
+		:ARG1 (x13 / link-01
+			:ARG1 (x18 / tunnel
+				:location (x15 / city
+					:name (n / name
+						:op1 "London"))
+				:purpose (x22 / make-01
+					:ARG1 (x27 / reality
+						:domain (x25 / journey-01
+							:mod (x24 / person
+								:name (n1 / name
+									:op1 "three-hour")))
+						:time (x29 / date-entity
+							:year 1993))))
+			:mod (xap0 / speed
+				:mod (x12 / high)))))
+
+# ::id 13
+# ::snt British Rail  intends instead to improve existing tracks
+(x3 / intend-01
+	:ARG0 (x2 / rail
+		:mod "Britain")
+	:ARG1 (x6 / improve-01
+		:ARG0 x2
+		:mod (x4 / instead)
+		:ARG1 (x8 / track
+			:ARG1-of (x7 / exist-01))))
+
+# ::id 14
+# ::snt Eurotunnel , the Anglo-French consortium that will own the tunnel , is urging British Rail to speed Eurotunnel  plans
+(x13 / urge-01
+	:ARG2 (x5 / consortium
+		:domain (x1 / organization
+			:name (n1 / name
+				:op1 "Eurotunnel"))
+		:mod (x4 / country
+			:name (n2 / name
+				:op1 "Anglo-French"))
+		:ARG0-of (x8 / own-01
+			:ARG1 (x10 / tunnel)))
+	:ARG1 (x15 / government-organization
+		:name (n / name
+			:op1 "Rail")
+		:mod "Britain")
+	:ARG1 (x17 / speed-02
+		:ARG0 x5
+		:ARG1 (x19 / plan-01
+			:mod (x18 / organization
+				:name (n3 / name
+					:op1 "Eurotunnel")))))
+
+# ::id 15
+# ::snt Critics say the tangle of commuter lines in southeast England , so obsolete that trains can be delayed by a sudden fall of autumn leaves , will delay tunnel traffic
+(x2 / say-01
+	:ARG0 (x1 / person
+		:ARG0-of (c / criticize-01))
+	:ARG1 (x28 / delay-01
+		:ARG1 (x4 / tangle
+			:ARG1 (x7 / line
+				:mod (x6 / person
+					:ARG0-of (c1 / commute-01))
+				:location (x10 / country
+					:name (n / name
+						:op1 "England")
+					:null_edge (x9 / null_tag)))
+			:topic (x16 / possible
+				:mod (x12 / so)
+				:domain (x18 / delay-01
+					:ARG1 (x15 / train)
+					:ARG0 (x22 / fall
+						:null_edge (x25 / left
+							:ARG0 (x21 / sudden)
+							:time (xap0 / date-entity
+								:season (x24 / thing
+									:name (n1 / name
+										:op1 "autumn"))))))))
+		:ARG1 (x30 / traffic
+			:mod (x29 / tunnel))))
+
+# ::id 16
+# ::snt The consortium forecasts 16.5 million passengers in 1993 but the railroad says that figure will not be reached before 1998
+(x9 / contrast-01
+	:ARG1 (x3 / forecast-01
+		:ARG0 (x2 / consortium)
+		:ARG1 (x6 / passenger)
+		:time (x8 / date-entity
+			:year 1993))
+	:ARG2 (x12 / say-01
+		:ARG0 x2
+		:ARG0 (x11 / railroad)
+		:ARG1 (x18 / reach-01
+			:ARG1 (x14 / figure)
+			:time (x19 / before
+				:op1 (x20 / date-entity
+					:year 1998)))))
+
+# ::id 17
+# ::snt Arriving channel trains will terminate at Waterloo station in south London , at a large customs and immigration terminal
+(x5 / terminate-01
+	:ARG0 (x3 / train
+		:ARG0-of (x1 / arrive-01)
+		:mod (x2 / channel))
+	:location (x8 / station
+		:mod (x7 / country
+			:name (n1 / name
+				:op1 "Waterloo")))
+	:location (x11 / city
+		:name (n / name
+			:op1 "London"))
+	:time (x17 / and
+		:op1 (x16 / custom
+			:mod (x15 / large))
+		:op1 (x19 / terminal
+			:mod (x18 / immigrate-01))))
+
+# ::id 18
+# ::snt Critics say this will waste time and Britain should follow the continental practice of handling such matters on the train during the journey
+(x2 / say-01
+	:ARG0 (x1 / person
+		:ARG0-of (c / criticize-01))
+	:ARG1 (x7 / and
+		:op2 (x5 / waste-01
+			:mod (x3 / this)
+			:frequency (x6 / time))
+		:op2 (x9 / recommend-01
+			:ARG1 (x10 / follow-02
+				:ARG0 (x8 / country
+					:name (n / name
+						:op1 "Britain"))
+				:ARG1 (x13 / practice-01
+					:poss x8
+					:mod (x12 / continental)
+					:ARG1 (x15 / handle-01
+						:ARG1 (x17 / matter
+							:mod (x16 / such))
+						:ARG1 (x20 / train
+							:mod (x23 / journey-01))))))))
+
+# ::id 19
+# ::snt British stations , bridges and tunnels are not built for the tall loads commonly carried across the channel
+(x9 / build-01
+	:ARG1 (x5 / and
+		:op1 (x2 / station
+			:mod (xap1 / country
+				:ARG0-of (xap0 / name
+					:ARG1 (x1 / country
+						:name (n / name
+							:op1 "Britain")))))
+		:op2 (x4 / bridge)
+		:op2 (x6 / tunnel))
+	:purpose (x13 / load-01
+		:mod (x12 / tall)
+		:ARG1-of (x15 / carry-01
+			:manner (x14 / commonly)
+			:location (x16 / across
+				:op1 (x18 / channel)))))
+
+# ::id 20
+# ::snt That means many loads will have to be repacked or transferred to trucks unless the facilities are rebuilt
+(xap0 / multi-sentence
+	:snt3 (x2 / mean-01
+		:ARG0 (x1 / that)
+		:ARG1 (x6 / have-03
+			:ARG0 (x4 / load-01
+				:quant (x3 / many))
+			:ARG1 (x10 / or
+				:op1 (x9 / repack
+					:ARG2 (x13 / truck))
+				:op2 (x11 / transfer-01))
+			:condition (x18 / rebuild-01
+				:ARG1 (x16 / facility)))))
+
+# ::id 21
+# ::snt The grandiose project has been on and off the drawing boards for more than 200 years
+(x11 / board
+	:mod (x10 / draw-02
+		:ARG1 (x3 / project
+			:mod (x2 / grandiose)))
+	:duration (x16 / temporal-quantity
+		:unit (y / year)
+		:quant (x13 / more-than
+			:op1 200)))
+
+# ::id 22
+# ::snt Napoleon wanted to bore a tunnel in 1802 but Britain's generals warned Napoleon's  off
+(x2 / want-01
+	:ARG0 (x1 / person
+		:name (n / name
+			:op1 "Napoleon"))
+	:ARG1 (x4 / bear-01
+		:ARG0 x1
+		:ARG1 (x6 / tunnel)
+		:time (x8 / date-entity
+			:year 1802))
+	:null_edge (x13 / warn-01
+		:ARG0 x1
+		:ARG2 (x14 / person
+			:name (n1 / name
+				:op1 "Napoleon"))
+		:ARG0 (xap0 / person
+			:ARG0-of (x12 / have-org-role-91
+				:ARG2 (g / general)
+				:mod (x10 / country
+					:name (n2 / name
+						:op1 "Britain"))))))
+
+# ::id 23
+# ::snt Digging began in 1882 but was halted by British fears of French invasion through the tunnel
+(x5 / contrast-01
+	:ARG1 (x2 / begin-01
+		:ARG0 (x1 / dig-01)
+		:time (x4 / date-entity
+			:year 1882))
+	:ARG2 (x7 / halt-01
+		:ARG0 x1
+		:ARG0 (x10 / fear-01
+			:ARG1 (x13 / invade-01
+				:ARG1 (x12 / country
+					:name (n / name
+						:op1 "France")))
+			:ARG0 (xap1 / country
+				:ARG0-of (xap0 / name
+					:ARG1 (x9 / country
+						:name (n1 / name
+							:op1 "Britain")))))
+		:path (x16 / tunnel)))
+
+# ::id 24
+# ::snt Britain's entry into the European Economic Community engendered a spirit of unity and the digging began again in 1974 , but two years later a new British government shelved the project
+(x22 / contrast-01
+	:ARG2 (x14 / and
+		:op1 (x9 / engender
+			:ARG0 (x3 / entry
+				:ARG0 (x1 / country
+					:name (n / name
+						:op1 "Britain"))
+				:ARG2 (x8 / organization
+					:name (n1 / name
+						:op1 "Community")
+					:null_edge (x6 / null_tag)
+					:null_edge (x7 / null_tag)))
+			:ARG1 (x11 / spirit
+				:name (x13 / name
+					:op1 "unity")))
+		:op2 (x17 / begin-01
+			:ARG1 (x16 / dig-01)
+			:mod (x18 / again)
+			:time (x20 / date-entity
+				:year 1974))
+		:op2 (x30 / shelve-01
+			:time (x25 / late
+				:op1 (x23 / date-entity))
+			:ARG0 (x29 / government-organization
+				:ARG0-of (g / govern-01)
+				:mod (x27 / new)
+				:ARG1 (xap1 / country
+					:ARG0-of (xap0 / name
+						:ARG1 (x28 / country
+							:name (n2 / name
+								:op1 "Britain")))))
+			:ARG1 (x32 / project))))
+
+# ::id 25
+# ::snt With trade barriers among the 12 EEC countries set to fall in 1992 , Colin Kirkland , technical director of Eurotunnel's on the British side , says the tunnel will be completed this time
+(x28 / say-01
+	:ARG1 (x3 / barrier
+		:mod (x2 / trade-01)
+		:topic (x8 / country
+			:quant 12
+			:ARG0-of (x7 / have-org-role-91
+				:ARG1 (o / organization
+					:name (n1 / name
+						:op1 "EEC")))
+			:ARG1-of (x9 / set-08
+				:ARG2 (x11 / fall-01
+					:null_edge (x13 / date-entity
+						:year 1992)))))
+	:ARG0 (x15 / newspaper
+		:name (n / name
+			:op1 "Colin"
+			:op2 "Kirkland")
+		:ARG0-of (x19 / have-org-role-91
+			:ARG2 (d / director)
+			:mod (x18 / technical)
+			:time (x26 / side
+				:part-of (x21 / organization
+					:name (n2 / name
+						:op1 "Eurotunnel"))
+				:mod (x25 / country
+					:name (n3 / name
+						:op1 "Britain")))))
+	:ARG1 (x33 / complete-01
+		:ARG1 (x30 / tunnel)
+		:ARG1 (x35 / time
+			:mod (x34 / this))))
+
+# ::id 26
+# ::snt Colin Kirkland  says the entire cost of 5.2 billion pound ($ 8.8 billion )project is privately financed and cancellation would cost the governments enormous penalties to shareholders
+(x3 / say-01
+	:ARG0 (x1 / newspaper
+		:name (n / name
+			:op1 "Colin"
+			:op2 "Kirkland"))
+	:ARG1 (x19 / thing
+		:manner-of (f / finance-01)
+		:mod (x18 / privately)
+		:ARG1 (x23 / cost-01
+			:ARG1 (x21 / cancellation)
+			:ARG2 (x25 / government-organization
+				:ARG0-of (g / govern-01))
+			:ARG1 (x27 / penalize-01
+				:mod (x26 / enormous))
+			:ARG2 (x29 / shareholder))
+		:ARG1 (xap1 / repay-01
+			:ARG0-of (xap0 / monetary-quantity
+				:ARG2-of (x6 / cost-01
+					:mod (x5 / entire)
+					:ARG1 (x16 / project
+						:null_edge (x8 / monetary-quantity
+							:unit (y / yuan))))))))
+
+# ::id 27
+# ::snt Also , the governments signed a tunnel treaty in February 1986 and both would have to agree to cancellation
+(x12 / and
+	:op1 (x5 / sign-02
+		:mod (x1 / also)
+		:ARG0 (x4 / government-organization
+			:ARG0-of (g / govern-01))
+		:ARG1 (x8 / treaty
+			:topic (x7 / tunnel))
+		:time (x10 / date-entity
+			:year 1986)
+		:ARG2 (x17 / agree-01
+			:ARG0 x4
+			:ARG0 (x13 / both)
+			:ARG1 (x19 / cancellation))))
+
+# ::id 28
+# ::snt There is no way that politicians will cancel this project , Kirkland said in an interview
+(x13 / say-01
+	:concession-of (x4 / way
+		:instrument-of (x8 / cancel-01
+			:polarity -
+			:ARG0 (x6 / politician)
+			:ARG1 (x10 / project
+				:mod (x9 / this))))
+	:ARG0 (x12 / person
+		:name (n / name
+			:op1 "Kirkland"))
+	:time (x16 / interview-01))
+
+# ::id 29
+# ::snt the largest civil engineering project  is quite difficult to get one government to agree
+(x8 / difficult
+	:domain (x5 / project
+		:mod (x2 / large
+			:degree (m / most))
+		:mod (x4 / engineer-01
+			:mod (x3 / civil)))
+	:mod (x7 / quite)
+	:domain (x10 / get-01
+		:ARG2 (x14 / agree-01
+			:ARG0 (x12 / government-organization
+				:ARG0-of (g / govern-01)
+				:quant 1))))
+
+# ::id 30
+# ::snt To get two is bloody nigh impossible
+(x7 / impossible
+	:null_edge (x2 / get-01
+		:ARG1 2)
+	:null_edge (x6 / nigh
+		:mod (x5 / bloody-01)))
+
+# ::id 31
+# ::snt Money's power to move the tunnel forward was demonstrated in August , when drilling fell behind schedule
+(x10 / demonstrate-01
+	:ARG1 (x3 / power
+		:poss (x1 / money)
+		:domain (x5 / move-01
+			:ARG1 (x7 / tunnel)
+			:direction (x8 / forward)))
+	:time (x12 / date-entity
+		:ARG1-of (xap1 / cause-01
+			:time-of (x16 / fall-01
+				:ARG1 (x15 / drill-01)
+				:ARG4 (x17 / behind
+					:op1 (xap0 / time
+						:ARG3-of (x18 / schedule-01)))))))
+
+# ::id 32
+# ::snt Eurotunnel ordered a management shakeup and threatened Trans-Manche Link , the consortium of 10 British and French engineering companies building the tunnel , with penalties of $ 25 million if the diggers did not pass the three-mile mark by Nov. 1
+(x6 / and
+	:op1 (x2 / order-02
+		:ARG0 (x1 / organization
+			:name (n / name
+				:op1 "Eurotunnel"))
+		:ARG1 (x5 / shakeup
+			:mod (x4 / manage-01)))
+	:op2 (x7 / threaten-01
+		:ARG2 (x8 / trans-manche
+			:poss (x19 / company
+				:quant 10
+				:mod (x17 / country
+					:name (n1 / name
+						:op1 "France"))
+				:mod (x18 / engineer-01)
+				:ARG0-of (x20 / build-01
+					:ARG1 (x22 / tunnel))))
+		:ARG2 (x25 / penalize-01
+			:ARG1-of (x26 / include-91))
+		:condition (x35 / pass-01
+			:ARG0 (x32 / digger)
+			:ARG1 (x38 / mark-01
+				:mod (x37 / three-mile))
+			:time (x39 / by
+				:op1 (x40 / date-entity)))))
+
+# ::id 33
+# ::snt From a a rate of 380 feet a week , the pace quickly accelerated and recently achieved a week's record of 480 feet , Kirkland said
+(x27 / say-01
+	:ARG1 (x15 / and
+		:op1 (x14 / accelerate-01
+			:ARG1 (x4 / rate
+				:mod (x7 / foot
+					:quant 380))
+			:ARG0 (x12 / pace)
+			:manner (x13 / quick))
+		:op2 (x17 / achieve-01
+			:ARG0 x12
+			:time (x16 / recent)
+			:ARG1 (x21 / record
+				:poss (x24 / foot
+					:quant 480))))
+	:ARG0 (x26 / person
+		:name (n / name
+			:op1 "Kirkland")))
+
+# ::id 34
+# ::snt The timetable calls for 650 feet a week and Kirkland is confident of reaching The timetable
+(x9 / and
+	:op1 (x3 / call-03
+		:ARG0 (x2 / timetable)
+		:ARG1 (x6 / foot
+			:quant (x5 / 650)))
+	:op2 (x12 / confident-41
+		:ARG1 (x10 / country
+			:name (n / name
+				:op1 "Kirkland"))
+		:ARG2 (x14 / reach-01
+			:ARG1 (x16 / timetable))))
+
+# ::id 35
+# ::snt The tunnel , 80-130 feet below the seabed , was 2 miles into the channel from this end Oct. 9 , the most recent measurement available , and the French had progressed about 1,300 feet
+(x12 / distance-quantity
+	:unit (m / mile)
+	:domain (x2 / tunnel
+		:null_edge (x5 / foot
+			:quant (x4 / 80-130)
+			:null_edge (x6 / below
+				:op1 (x8 / seab))))
+	:null_edge (x15 / channel)
+	:time (x18 / end
+		:mod (x17 / this))
+	:null_edge (x19 / person
+		:name (n / name
+			:op1 "Oct.")
+		:null_edge (x20 / null_tag))
+	:null_edge (x25 / measurement
+		:time (x24 / recent
+			:degree (x23 / most))
+		:mod (x26 / available))
+	:null_edge (x32 / progress-01
+		:ARG0 (x30 / country
+			:name (n1 / name
+				:op1 "France"))
+		:ARG1 (x35 / distance-quantity
+			:unit (f / foot)
+			:quant (x33 / about))))
+
+# ::id 36
+# ::snt Digging began last December
+(x2 / begin-01
+	:ARG0 (x1 / dig-01)
+	:null_edge (x3 / last
+		:null_edge 12))
+
+# ::id 37
+# ::snt At the digging  peak , the project will employ about 11,000 workers and 11 tunneling machines
+(x9 / employ-02
+	:time (x4 / peak-01
+		:ARG1 (x3 / dig-01))
+	:ARG0 (x7 / project)
+	:ARG1 (x13 / and
+		:op1 (x12 / person
+			:ARG0-of (w / work-01)
+			:quant (x10 / about
+				:op1 (x11 / 11,000)))
+		:op2 (x16 / machine
+			:quant 11
+			:mod (x15 / tunneling))))
+
+# ::id 38
+# ::snt Construction of the two one-way train tunnels begins in December
+(x8 / begin-01
+	:ARG1 (x1 / construct-01
+		:ARG1 (x7 / tunnel
+			:quant 2
+			:mod (x5 / one-way)
+			:mod (x6 / train)))
+	:time (x10 / date-entity))
+
+# ::id 39
+# ::snt A smaller service tunnel running between 11,000 workers  now is being dug
+(x12 / dig
+	:ARG1 (x4 / tunnel
+		:mod (x2 / small)
+		:mod (x3 / service)
+		:ARG0-of (x5 / run-02
+			:ARG1 (x6 / between
+				:op2 (x7 / 11,000)
+				:op1 (x8 / person
+					:ARG0-of (w / work-01)))
+			:time (x9 / now))))
+
+# ::id 40
+# ::snt Tunneling machines simultaneously dig , remove rock and put up tunnel walls
+(x8 / and
+	:op1 (x4 / dig
+		:ARG0 (x2 / machine
+			:mod (x1 / tunneling))
+		:manner (x3 / simultaneous))
+	:op2 (x6 / remove-01
+		:ARG0 x2
+		:ARG1 (x7 / rock))
+	:op2 (x9 / put-01
+		:ARG0 x2
+		:ARG1 (x12 / wall
+			:mod (x11 / tunnel))))
+
+# ::id 41
+# ::snt With a laser beam to keep the driver on course , the 700-foot-long behemoth creeps along , pressing curved slabs of Scottish granite and pulverized ash into the newly exposed tunnel wall
+(x15 / creep-01
+	:purpose (x6 / keep-04
+		:ARG1 (x3 / laser)
+		:ARG1 (x8 / person
+			:ARG0-of (d / drive-01)))
+	:ARG0 (x14 / behemoth
+		:mod (x13 / 700-foot-long))
+	:ARG1 (x18 / press-01
+		:ARG0 x14
+		:ARG1 (x20 / slab
+			:mod (x19 / curved)
+			:consist-of (x24 / and
+				:op1 (x23 / granite
+					:mod (x22 / country
+						:name (n / name
+							:op1 "Scotland")))
+				:op2 (x26 / name
+					:op1 "ash"
+					:ARG1-of (x25 / pulverize-01))))
+		:ARG2 (x32 / wall
+			:ARG1-of (x30 / expose-01)
+			:mod (x31 / tunnel))))
+
+# ::id 42
+# ::snt In an emergency like flooding , the cylindrical head of the machine can expand to become a cork , blocking off the water and spraying concrete into the cavity to seal the leak
+(x13 / possible
+	:domain (x14 / expand-01
+		:ARG4 (x16 / become-01
+			:time (x3 / emergency
+				:ARG1 (x5 / flooding)
+				:ARG0-of (x9 / head-01
+					:mod (x8 / cylindrical)
+					:ARG1 (x12 / machine)))
+			:ARG1 x9
+			:ARG2 (x18 / cork))
+		:ARG1 (x24 / and
+			:op1 (x20 / block-01
+				:ARG1 (x23 / water))
+			:op2 (x25 / spray
+				:ARG1 (x26 / concrete)
+				:ARG2 (x29 / cavity)
+				:ARG1 (x31 / military
+					:name (n / name
+						:op1 "seal")
+					:ARG1 (x33 / leak-01))))))
+
+# ::id 43
+# ::snt Once the all-clear is given , the two-story-high rotating blade with the all-clear  tungsten teeth resumes chewing ahead
+(x16 / resume-01
+	:time (x5 / give-01
+		:ARG2 (x3 / all-clear))
+	:ARG1 (x10 / blade
+		:mod (x8 / two-story-high)
+		:mod (x9 / rotate-01)
+		:prep-with (x15 / tooth
+			:mod (x13 / all-clear)
+			:mod (x14 / tungsten)))
+	:ARG1 (x17 / chew
+		:time (x18 / ahead)))
+
+# ::id 44
+# ::snt Because the machines are too large to be removed , when the digging is complete they will be rolled aside and walled in
+(x1 / cause-01
+	:ARG0 (x6 / large
+		:domain (x3 / machine)
+		:degree (x5 / too)
+		:domain (x9 / remove-01
+			:time (x15 / complete-01
+				:ARG1 (x21 / and
+					:op1 (x13 / dig-01)
+					:op1 (x19 / roll-01))))))
+
+# ::id 45
+# ::snt The tunnels are to be completed in 1991 , then the railroad tracks will be laid
+(x2 / tunnel
+	:ARG1-of (x6 / complete-01
+		:time (x8 / date-entity
+			:year 1991))
+	:ARG1-of (x16 / lay-02
+		:ARG1 (x13 / track
+			:ARG1 (x12 / railroad))))
+
+# ::id 46
+# ::snt Eurotunnel will run shuttle trains once every three minutes at peak times between terminals near Folkestone and Calais , and British Rail and the Frenh state railroad will operate trains from London and Paris
+(x20 / and
+	:op1 (x3 / run-01
+		:ARG0 (x1 / organization
+			:name (n / name
+				:op1 "Eurotunnel"))
+		:ARG1 (x5 / train
+			:mod (x4 / shuttle))
+		:null_edge (x6 / null_tag
+			:null_edge (x11 / peak-01
+				:ARG1 (x9 / temporal-quantity
+					:unit (m / minute)
+					:quant 3)
+				:ARG1 (x14 / terminal
+					:location (x15 / near
+						:op1 (x17 / and
+							:op1 (x16 / country
+								:name (n5 / name
+									:op1 "Folkestone"))
+							:op2 (x18 / country
+								:name (n6 / name
+									:op1 "Calais"))))))))
+	:op2 (x29 / operate-01
+		:ARG0 x1
+		:ARG1 (x23 / and
+			:op1 (x22 / organization
+				:name (n1 / name
+					:op1 "Rail")
+				:mod "Britain")
+			:op2 (x27 / railroad
+				:null_edge (x25 / world-region
+					:name (n2 / name
+						:op1 "Frenh"))
+				:mod (x26 / state)))
+		:ARG1 (x30 / train
+			:source (x33 / and
+				:op1 (x32 / city
+					:name (n3 / name
+						:op1 "London")
+					:null_edge (x34 / city
+						:name (n4 / name
+							:op1 "Paris")))))))
+
+# ::id 47
+# ::snt Cars and trucks will drive onto the shuttle trains and be able to stay in their vehicles or stroll about during the 35-minute tunnel passage
+(x10 / and
+	:op1 (x5 / drive-02
+		:ARG0 (x2 / and
+			:op1 (x1 / car)
+			:op2 (x3 / truck))
+		:ARG1 (x9 / train
+			:mod (x8 / shuttle)))
+	:op2 (x12 / possible
+		:domain (x18 / or
+			:op1 (x14 / stay-01
+				:ARG1 (x17 / vehicle))
+			:op2 (x19 / stroll-01
+				:time (x25 / pass-01
+					:mod (x23 / person
+						:name (n / name
+							:op1 "35-minute"))
+					:ARG1 (x24 / tunnel))))))
+

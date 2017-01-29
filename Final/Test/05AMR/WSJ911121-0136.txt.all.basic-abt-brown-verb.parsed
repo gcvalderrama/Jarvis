@@ -1,0 +1,767 @@
+# ::id 1
+# ::snt What irony
+(x2 / irony)
+
+# ::id 2
+# ::snt Most black leaders (as distinct from rank-and-file blacks )are supporters , at least in public , of the gun control really , prohibition movement
+(x12 / person
+	:ARG0-of (s / support-01)
+	:ARG1 (x3 / person
+		:ARG0-of (l / lead-02)
+		:quant (x1 / most)
+		:mod (x2 / black)
+		:mod (x6 / distinct
+			:ARG2 (x9 / person
+				:mod (b / black)
+				:null_edge (x8 / rank-and-file))))
+	:manner (x17 / public)
+	:ARG0-of (x22 / control-01
+		:ARG1 (x21 / gun)
+		:mod (x23 / really))
+	:ARG1 (x26 / movement
+		:mod (x25 / prohibit-01)))
+
+# ::id 3
+# ::snt Do Most black leaders  realize that America's gun-control movement sprouted from the soil of Roger B. Taney , the racist chief justice who wrote the infamous Dred Scott decision of 1857 ?
+(x5 / realize-01
+	:ARG0 (x4 / person
+		:ARG0-of (l / lead-02)
+		:quant (x2 / most)
+		:mod (x3 / black))
+	:ARG1 (x11 / sprout
+		:ARG0 (x10 / movement
+			:poss (x7 / country
+				:name (n / name
+					:op1 "America"))
+			:mod (x9 / gun-control))
+		:ARG2 (x14 / soil
+			:name (x16 / name
+				:op1 "Roger"
+				:op2 "B."
+				:op3 "Taney"
+				:ARG0-of (x23 / justice
+					:mod (x21 / racist)
+					:mod (x22 / have-org-role-91
+						:ARG2 (c / chief))
+					:ARG1-of (x25 / write-01
+						:ARG1 (x30 / decide-01
+							:null_edge (x27 / infamous)
+							:null_edge (x28 / dred)
+							:ARG0 (x29 / person
+								:name (n1 / name
+									:op1 "Scott"))
+							:time (x32 / date-entity
+								:year 1857))))))))
+
+# ::id 4
+# ::snt In the early part of the 19th century , Dred Scott , a black slave , had been taken by his owner from Missouri , a slave state , to Illinois , a free state
+(x19 / take-01
+	:time (x3 / early)
+	:ARG1 (x11 / person
+		:name (n / name
+			:op1 "Scott")
+		:ARG0-of (x10 / dred)
+		:null_edge (x15 / slave
+			:mod (x14 / black)))
+	:ARG0 (x22 / person
+		:ARG0-of (o / own-01))
+	:source (xap0 / and
+		:ARG2 (x28 / state
+			:location (x24 / state
+				:name (n1 / name
+					:op1 "Missouri"))
+			:mod (x27 / slave))
+		:ARG2 (x35 / state
+			:location (x31 / country
+				:name (n2 / name
+					:op1 "Illinois"))
+			:ARG1-of (x34 / free-41))))
+
+# ::id 5
+# ::snt From there Dred Scott , a black slave  was taken into the Wisconsin territory , free territory above the 36 30 latitude of the Missouri Compromise
+(x14 / territory
+	:location (x2 / there)
+	:poss (x4 / person
+		:name (n / name
+			:op1 "Scott")
+		:ARG0-of (x3 / dred)
+		:null_edge (x8 / slave
+			:mod (x7 / black)))
+	:part-of (x17 / territory
+		:mod (x16 / free-41)
+		:location (x18 / above
+			:op1 (x22 / latitude
+				:quant 30
+				:ARG1 (x26 / compromise-01
+					:mod (x25 / state
+						:name (n1 / name
+							:op1 "Missouri")))))))
+
+# ::id 6
+# ::snt After living in free territory for a while , Dred Scott , a black slave  returned with Dred Scott , a black slave  owner to Missouri
+(x16 / return-01
+	:time (x1 / after
+		:op1 (x2 / live-01
+			:location (x5 / territory
+				:ARG1-of (x4 / free-41))
+			:duration (x8 / while)))
+	:ARG1 (x11 / person
+		:name (n / name
+			:op1 "Scott")
+		:ARG0-of (x10 / dred)
+		:null_edge (x15 / slave
+			:mod (x14 / black)))
+	:ARG1 (x19 / person
+		:name (n1 / name
+			:op1 "Scott")
+		:null_edge (x18 / person
+			:name (n2 / name
+				:op1 "Dred"))
+		:null_edge (x24 / person
+			:ARG0-of (o / own-01)
+			:mod (x22 / black)
+			:ARG1 (x23 / slave))))
+
+# ::id 7
+# ::snt When Dred Scott , a black slave  owner died in 1846 , Scott sued in the state courts of Missouri for his owner  freedom , on the ground that his owner  had lived in free territory
+(x14 / sue-01
+	:time (x9 / die-01
+		:ARG1 (x3 / person
+			:name (n1 / name
+				:op1 "Scott")
+			:null_edge (x2 / dred)
+			:null_edge (x8 / person
+				:ARG0-of (o / own-01)
+				:ARG1 (x7 / slave
+					:mod (x6 / black))))
+		:time (x11 / date-entity
+			:year 1846))
+	:ARG0 (x13 / person
+		:name (n / name
+			:op1 "Scott"))
+	:ARG2 (x18 / court
+		:mod (x17 / state)
+		:ARG1-of (x19 / include-91))
+	:ARG2 (x24 / free-41
+		:ARG2 (x23 / own-01)
+		:ARG2 (x28 / ground
+			:location-of (x33 / live-01
+				:ARG0 (x31 / person
+					:ARG0-of (o1 / own-01))
+				:location (x36 / territory
+					:ARG1-of (x35 / free-41))))))
+
+# ::id 8
+# ::snt his owner  won his case , but his case  was reversed in the Missouri Supreme Court
+(x7 / contrast-01
+	:ARG1 (x3 / win-01
+		:ARG0 (x2 / person
+			:ARG0-of (o / own-01))
+		:ARG1 (x5 / case))
+	:ARG2 (x11 / reverse-01
+		:ARG1 (x9 / case)
+		:location (x15 / government-organization
+			:name (n / name
+				:op1 "Supreme"
+				:op2 "Court")
+			:mod (x14 / state
+				:name (n1 / name
+					:op1 "Missouri")))))
+
+# ::id 9
+# ::snt Scott appealed to the federal courts , since the person the person  was actually suing , John Sanford , the executor of the estate that owned Scott , lived in New York
+(x29 / live-01
+	:ARG1 (x2 / appeal-02
+		:ARG0 (x1 / person
+			:name (n2 / name
+				:op1 "Scott"))
+		:ARG2 (x6 / court
+			:mod (x5 / government-organization
+				:name (n3 / name
+					:op1 "federal")))
+		:time (x8 / since
+			:op1 (x15 / sue-01
+				:ARG0 (x10 / person
+					:domain (x12 / person))
+				:mod (x14 / actual))))
+	:ARG0 (x17 / person
+		:name (n / name
+			:op1 "John"
+			:op2 "Sanford")
+		:ARG0-of (x21 / executor
+			:mod (x24 / estate)
+			:ARG1-of (x26 / own-01
+				:ARG1 (x27 / person
+					:name (n4 / name
+						:op1 "Scott")))))
+	:location (x32 / country
+		:name (n1 / name
+			:op1 "York")
+		:null_edge (x31 / null_tag)))
+
+# ::id 10
+# ::snt the estate that owned Scott  was in that setting that Chief Justice Taney made Dred Scott Chief Justice Taney  infamous rulings : 1
+(x2 / estate
+	:ARG1-of (x4 / own-01
+		:ARG0 (x5 / person
+			:name (n / name
+				:op1 "Scott")
+			:ARG0-of (x9 / setting
+				:mod (x8 / that))
+			:ARG0-of (x14 / make-02
+				:ARG0 (x13 / person
+					:name (n1 / name
+						:op1 "Taney")
+					:null_edge (x11 / chief)
+					:topic (x12 / justice))
+				:ARG1 (x19 / person
+					:name (n2 / name
+						:op1 "Taney")
+					:null_edge (x15 / dred)
+					:null_edge (x16 / scott)
+					:null_edge (x17 / chief)
+					:topic (x18 / justice))
+				:ARG1 (x21 / thing
+					:ARG1-of (r / rule-01)
+					:mod (x20 / infamous
+						:li 1))))))
+
+# ::id 11
+# ::snt That black people , whether free or slave , were not citizens of the U.S. ; therefore , That black people  had no standing in court
+(x7 / or
+	:op2 (x2 / black)
+	:op1 (x6 / free-01)
+	:op2 (x8 / slave)
+	:op5 (x12 / citizen
+		:poss (x15 / country
+			:name (n / name
+				:op1 "U.S."))
+		:mod (x20 / black
+			:ARG1 (x24 / standing
+				:polarity -
+				:location (x26 / court)))))
+
+# ::id 12
+# ::snt 2
+(x / xconcept
+	:x 2)
+
+# ::id 13
+# ::snt Scott was denied freedom
+(x3 / deny-01
+	:ARG1 (x1 / person
+		:name (n / name
+			:op1 "Scott"))
+	:ARG1 (x4 / free-41))
+
+# ::id 14
+# ::snt 3
+(x / xconcept
+	:x 3)
+
+# ::id 15
+# ::snt The Missouri Compromise was ruled unconstitutional
+(x5 / rule-03
+	:ARG1 (x3 / compromise-01
+		:mod (x2 / state
+			:name (n / name
+				:op1 "Missouri")))
+	:ARG2 (x6 / unconstitutional))
+
+# ::id 16
+# ::snt Well known to most students of race relations is the former attorney general and secretary of the Treasury's pre-civil war dictum that black people being of an inferior order had no right which any white man was bound to respect
+(x2 / know-01
+	:ARG2 (x8 / relation
+		:ARG0-of (x5 / person
+			:ARG0-of (s / study-01)
+			:quant (x4 / most))
+		:mod (x7 / race-02))
+	:ARG1 (x14 / and
+		:op2 (x12 / attorney)
+		:op1 (x13 / general
+			:mod (x11 / former))
+		:op2 (x15 / secretary
+			:ARG2-of (x22 / dictum
+				:poss (x18 / organization
+					:name (n / name
+						:op1 "Treasury"))
+				:mod (x20 / pre-civil)
+				:mod (x21 / war)
+				:topic (x33 / right
+					:mod (x24 / black)
+					:mod (x29 / inferior-41)
+					:polarity -
+					:ARG2 (x41 / respect-01
+						:ARG1 (x37 / man
+							:mod (x35 / any)
+							:mod (x36 / white))))))))
+
+# ::id 17
+# ::snt Much less known are his equally racist pronouncements denying black people , whether slave or free , specific constitutional protections enjoyed by whites
+(x9 / deny-01
+	:ARG1 (x8 / pronouncement
+		:domain (x2 / less
+			:degree (x1 / much)
+			:ARG1-of (x3 / know-01))
+		:mod (x7 / racist
+			:degree (x6 / equal))
+		:ARG2 (x15 / or
+			:op1 (x14 / slave)
+			:op2 (x16 / free-41)
+			:op1 (x20 / protect-01
+				:mod (x18 / specific)
+				:mod (x19 / constitution)
+				:ARG1-of (x21 / enjoy-01
+					:ARG0 (x23 / whites)))))
+	:ARG1 (x11 / people
+		:mod (x10 / black)))
+
+# ::id 18
+# ::snt In Dred Scott Chief Justice Taney , writing for the court's majority , stated that if blacks were entitled to the privileges and immunities of citizens , ... -LCB- i -RCB- t would give persons of the negro race , who were recognized as citizens in any one state of the union , the right ... to keep and carry arms wherever rank-and-file blacks  went
+(x15 / state-01
+	:ARG1 (x8 / write-01
+		:ARG0 (x6 / person
+			:name (n / name
+				:op1 "Taney")
+			:null_edge (x2 / dred
+				:mod (x3 / scott))
+			:null_edge (x4 / chief)
+			:topic (x5 / justice))
+		:purpose (x13 / majority
+			:ARG0 (x11 / court)))
+	:ARG1 (x35 / give-07
+		:condition (x20 / entitle-02
+			:ARG1 (x18 / person
+				:mod (b / black))
+			:ARG2 (x24 / and
+				:op1 (x23 / privilege-01)
+				:op2 (x25 / immunity)
+				:op2 (x27 / citizen))
+			:ARG0 (x31 / i))
+		:ARG1 (x36 / person
+			:ARG0-of x31)
+		:ARG0 (x40 / race-02
+			:ARG0 x31
+			:ARG0 x36
+			:ARG2 (x39 / negro)
+			:ARG1-of (x44 / recognize-02
+				:ARG2 (x46 / citizen
+					:location (x50 / state
+						:mod (x48 / any)
+						:quant 1
+						:part-of (x53 / union)
+						:ARG1 (x60 / and
+							:op1 (x59 / keep-04
+								:ARG1 (x62 / arm)
+								:time (x66 / go-02
+									:ARG0 (x65 / person
+										:mod (b1 / black)
+										:location (x63 / wherever)
+										:mod (x64 / rank-and-file))))
+							:op2 (x61 / carry-01))))))))
+
+# ::id 19
+# ::snt And all of this would be done in the face of the subject race of the same color , both free and slaves , and inevitably producing discontent and insubordination among slaves  , and endangering the peace and safety of the state ... Although much of Justice Taney's overtly racist legal reasoning was repudiated by events that followed such as the Civil War and Reconstruction the subliminal effects were felt throughout that era
+(x1 / and
+	:op2 (x7 / do-02
+		:ARG1 (x4 / this
+			:quant (x2 / all))
+		:location (x10 / face
+			:ARG0 (x14 / race-02
+				:ARG1-of (x13 / subject-01)
+				:ARG1 (x25 / and
+					:op1 (x18 / colour
+						:ARG1-of (x17 / same-41))
+					:op2 (x22 / and
+						:op1 (x21 / free-41)
+						:op2 (x23 / slave))
+					:op2 (x34 / and
+						:op1 (x27 / produce-01
+							:manner (x26 / inevitably)
+							:ARG1 (x29 / and
+								:op1 (x28 / discontent
+									:ARG1 (x32 / slave))
+								:op2 (x30 / insubordination)))
+						:op2 (x35 / endanger-01
+							:ARG1 (x38 / and
+								:op1 (x37 / peace
+									:poss (x42 / state))
+								:op2 (x39 / safe-41)))))))
+		:null_edge (x55 / repudiate
+			:quant (x45 / much
+				:part-of (x53 / reason-01
+					:poss (x47 / government-organization
+						:name (n / name
+							:op1 "Justice"
+							:op2 "Taney"))
+					:mod (x51 / racist
+						:degree (x50 / overtly))))
+			:ARG0 (x57 / event
+				:ARG1-of (x59 / follow-01
+					:ARG2 (x65 / and
+						:op1 (x64 / war)
+						:op2 (x66 / reconstruct-01
+							:ARG1 (x71 / feel-01
+								:ARG1 (x69 / thing
+									:ARG1-of (e / effect-01)
+									:mod (x68 / subliminal))
+								:time (x74 / era)))))))))
+
+# ::id 20
+# ::snt In the post-Reconstruction period , when the pendulum swung back to overt racism , Justice Taney's philosophy resurfaced
+(x19 / resurface-02
+	:time (x4 / period
+		:mod (x3 / organization
+			:name (n / name
+				:op1 "post-Reconstruction"))
+		:time-of (x9 / swing-03
+			:ARG0 (x8 / pendulum)
+			:direction (x10 / back)
+			:ARG2 (x13 / racism
+				:mod (x12 / overt))))
+	:ARG1 (x18 / philosophy
+		:poss (x16 / person
+			:name (n1 / name
+				:op1 "Taney")
+			:ARG0-of (x15 / justice))))
+
+# ::id 21
+# ::snt the post-Reconstruction period  was during this period that racial paranoia about black men with guns intensified
+(x3 / period
+	:mod (x2 / organization
+		:name (n / name
+			:op1 "post-Reconstruction"))
+	:time (x7 / period
+		:mod (x6 / this))
+	:ARG1-of (x16 / intensify-01
+		:ARG0 (x10 / paranoia
+			:ARG1 (x13 / man
+				:mod (x12 / black)
+				:instrument (x15 / gun)))))
+
+# ::id 22
+# ::snt It was potent enough to cause the infringement on the Second Amendment to the Constitution's right ... to keep and bear arms
+(x3 / potent
+	:degree (x4 / enough)
+	:ARG1-of (x6 / cause-01
+		:ARG1 (x8 / infringe-01)
+		:ARG1 (x17 / right
+			:poss (x15 / law
+				:name (n / name
+					:op1 "Constitution")))
+		:ARG1 (x21 / and
+			:op1 (x20 / keep-02
+				:ARG1 (x23 / arm))
+			:op2 (x22 / bear-02))))
+
+# ::id 23
+# ::snt Under natural law , a freeman's right to obtain and maintain the implements of self-defense has always been sacred
+(x20 / sacred
+	:prep-under (x3 / law
+		:mod (x2 / natural))
+	:domain (x8 / right
+		:ARG1 (x11 / and
+			:op1 (x10 / obtain-01
+				:ARG1 (x14 / implement-01
+					:ARG1 (x16 / self
+						:mod (x6 / freeman))))
+			:op2 (x12 / maintain-01)))
+	:time (x18 / always))
+
+# ::id 24
+# ::snt This right was restricted or prohibited for serfs , peasants and slaves
+(x5 / or
+	:op1 (x4 / restrict-01
+		:ARG1 (x2 / right
+			:mod (x1 / this)))
+	:op2 (x6 / prohibit-01)
+	:op2 (x11 / and
+		:op1 (x8 / serf)
+		:op2 (x10 / peasant)
+		:op2 (x12 / slave)))
+
+# ::id 25
+# ::snt Gun control was never an issue in America until after the Civil War when black slaves were freed
+(x6 / issue
+	:domain (x2 / control-01
+		:ARG0 (x1 / gun))
+	:topic (x8 / country
+		:name (n / name
+			:op1 "America"))
+	:time (x9 / until
+		:op1 (x10 / after
+			:op1 (x13 / war
+				:ARG1-of (x18 / free-01
+					:ARG1 (x16 / slave
+						:mod (x15 / black)))))))
+
+# ::id 26
+# ::snt Gun control  was this change in the status of the black man , from slave to freeman , that caused racist elements in the country (North and South )to agitate for restrictions on guns ignoring long established customs and understanding of the Second Amendment
+(x5 / change-01
+	:ARG0 (x2 / control-01
+		:ARG0 (x1 / gun))
+	:mod (x4 / this)
+	:ARG1 (x8 / status
+		:poss (x12 / man
+			:mod (x11 / black)))
+	:ARG1 (x17 / freeman)
+	:ARG0-of (x20 / cause-01
+		:ARG1 (x32 / agitate
+			:ARG1 (x22 / element
+				:mod (x21 / racist)
+				:location (x25 / country
+					:name (x27 / country
+						:name (n / name
+							:op1 "North"
+							:op2 "and"
+							:op3 "South"))))
+			:ARG1 (x28 / and
+				:op1 (x34 / restrict-01
+					:ARG1 (x36 / gun
+						:ARG0-of (x37 / ignore-01
+							:ARG1 (x41 / and
+								:op1 (x40 / custom
+									:duration (x38 / long)
+									:ARG2-of (x43 / include-91))
+								:op2 (x42 / understand-01)))))))))
+
+# ::id 27
+# ::snt The specter of a black man with rights of a freeman , bearing arms , was too much for the early heirs of Roger Taney to bear
+(x18 / much
+	:ARG0 (x2 / specter
+		:poss (x6 / man
+			:mod (x5 / black)
+			:null_edge (x11 / freeman)))
+	:condition (x13 / bear-02
+		:ARG1 (x14 / arm))
+	:degree (x17 / too)
+	:null_edge (x27 / bear-02
+		:ARG0 (x22 / heir
+			:mod (x21 / early)
+			:name (x24 / name
+				:op1 "Roger"
+				:op2 "Taney"))))
+
+# ::id 28
+# ::snt The 14th and 15th Amendments to the Constitution , along with the various Reconstruction civil rights acts , prevented gun prohibitionists from making laws that were explicitly racist and that would overtly deny black people the right to bear arms
+(x19 / prevent-01
+	:ARG0 (x8 / law
+		:name (n / name
+			:op1 "Constitution"))
+	:ARG1 (x17 / act-01
+		:mod (x13 / various)
+		:mod (x16 / right
+			:mod (x15 / civil)))
+	:ARG1 (x21 / prohibitionist
+		:mod (x20 / gun))
+	:ARG1 (x24 / law
+		:topic (x29 / and
+			:op1 (x28 / racist
+				:manner (x27 / explicit))
+			:op2 (x33 / deny-01
+				:manner (x32 / overtly)
+				:null_edge (x35 / null_tag
+					:mod (x34 / black))
+				:ARG0 (xap0 / entitle-01
+					:ARG1 (x39 / bear-02
+						:ARG1 (x40 / arm)))))))
+
+# ::id 29
+# ::snt The end of Reconstruction signaled the return of Taneyism overtly among the masses and covertly on the Supreme Court
+(x5 / signal
+	:ARG0 (x2 / end-01
+		:ARG1 (x4 / reconstruct-01))
+	:ARG1 (x7 / return-02
+		:ARG1 x2
+		:null_edge (x9 / taneyism))
+	:ARG1 (x14 / and
+		:manner (x10 / overtly)
+		:op1 (x13 / mass)
+		:manner (x15 / covertly
+			:op1 (x18 / government-organization
+				:name (n / name
+					:op1 "Supreme"
+					:op2 "Court")))))
+
+# ::id 30
+# ::snt Gun-control legislation of the late 19th and early 20th centuries , enacted at the state and local levels , were implicitly racist in conception
+(x22 / racist
+	:domain (x2 / legislation
+		:mod (x1 / gun-control)
+		:time (x5 / late
+			:quant-of (x7 / and
+				:op2 (x8 / early)))
+		:ARG1-of (x12 / enact-01
+			:location (x16 / and
+				:op1 (x15 / state)
+				:op2 (x18 / level
+					:mod (x17 / local)))))
+	:degree (x21 / implicitly)
+	:ARG2 (x24 / conception))
+
+# ::id 31
+# ::snt And in operation , those laws invidiously targeted blacks
+(x1 / and
+	:op2 (x8 / target-01
+		:time (x3 / operation)
+		:ARG0 (x6 / law)
+		:manner (x7 / invidiously)
+		:ARG1 (x9 / person
+			:mod (b / black))))
+
+# ::id 32
+# ::snt With the influx of large numbers of Irish , Italian and Jewish immigrants into the country , gun laws now also targeted whites from the underprivileged classes of immigrants
+(x22 / target-01
+	:purpose (x6 / number
+		:mod (x5 / large)
+		:quant-of (x11 / and
+			:op1 (x8 / military
+				:name (n / name
+					:op1 "Irish"))
+			:op2 (x10 / country
+				:name (n1 / name
+					:op1 "Italy"))
+			:op2 (x12 / religious-group
+				:name (n2 / name
+					:op1 "Jewish"))
+			:op2 (x13 / person
+				:ARG0-of (i / immigrate-01)))
+		:location (x16 / country))
+	:ARG0 (x19 / law
+		:topic (x18 / gun))
+	:time (x20 / now)
+	:mod (x21 / also)
+	:ARG1 (x23 / whites
+		:source (x27 / class
+			:mod (x26 / underprivileged)
+			:part-of (x29 / person
+				:ARG0-of (i1 / immigrate-01)))))
+
+# ::id 33
+# ::snt Eventually these oppressive gun laws were extended to affect all but a privileged few
+(x7 / extend-01
+	:time (x1 / eventual)
+	:ARG1 (x5 / law
+		:mod (x3 / oppressive)
+		:mod (x4 / gun))
+	:ARG2 (x9 / affect-01
+		:ARG1 (x10 / all
+			:null_edge (x14 / few
+				:mod (x13 / privileged)))))
+
+# ::id 34
+# ::snt Throughout the history of New York state's Sullivan law , enacted at the start of the 20th century , mainly the rich and powerful have had easy access to licenses to carry handguns
+(x27 / have-03
+	:ARG1 (x29 / access-01
+		:ARG1 (x24 / and
+			:duration (x1 / throughout
+				:op1 (x3 / history
+					:poss (x10 / law
+						:poss (x7 / state
+							:location (x6 / country
+								:name (n / name
+									:op1 "York")))
+						:ARG1-of (x12 / enact-01
+							:time (x15 / start
+								:null_edge (x16 / null_tag))))))
+			:op1 (x23 / person
+				:mod (r / rich)
+				:mod (x21 / main))
+			:op2 (x25 / powerful))
+		:mod (x28 / easy)
+		:purpose (x33 / carry-03
+			:ARG1 (x31 / license)
+			:ARG1 (x34 / handgun))))
+
+# ::id 35
+# ::snt Some of the notables who have received that privilege include Eleanor Roosevelt , John Lindsay , Donald Trump , Arthur Sulzberger , Joan Rivers and disk jockey Howard Stern
+(x10 / include-01
+	:ARG2 (x4 / notable
+		:quant (x1 / some)
+		:ARG1-of (x7 / receive-01
+			:ARG1 (x9 / privilege-01
+				:mod (x8 / that))))
+	:ARG1 (x25 / and
+		:name (x11 / name
+			:op1 "Eleanor"
+			:op2 "Roosevelt"
+			:name (x17 / name
+				:op1 "Donald"
+				:op2 "Trump")
+			:name (x23 / name
+				:op1 "Joan"
+				:op2 "Rivers")
+			:name (x28 / name
+				:op1 "Howard"
+				:op2 "Stern"
+				:ARG0-of (x27 / jockey
+					:mod (x26 / disk))))
+		:op2 (x14 / name
+			:op1 "John"
+			:op2 "Lindsay")
+		:name (x20 / name
+			:op1 "Arthur"
+			:op2 "Sulzberger")))
+
+# ::id 36
+# ::snt Of the 27,000 handgun carry permits in New York City , fewer than 2 % are issued to blacks who live and work in high-crime areas and really are in need of protection
+(x17 / issue-01
+	:condition (x6 / permit-01
+		:quant (x3 / 27,000)
+		:ARG1 (x5 / carry-01
+			:ARG1 (x4 / handgun))
+		:location (x10 / city
+			:null_edge (x8 / null_tag)
+			:null_edge (x9 / country
+				:name (n / name
+					:op1 "York"))))
+	:ARG1 (x12 / few)
+	:null_edge 2
+	:ARG2 (x22 / and
+		:op1 (x21 / live-01
+			:location (x26 / area
+				:mod (x25 / high-crime))
+			:ARG0 (x27 / and)
+			:time (x31 / need-01
+				:mod (x28 / really)
+				:ARG1 (x33 / protect-01)))
+		:op2 (x23 / work-01)))
+
+# ::id 37
+# ::snt And what of the origins of the National Rifle Association , which is wrongly viewed as a racist organization by the black supporters of gun prohibition ?
+(x1 / and
+	:op2 (x5 / origin
+		:poss (x8 / government-organization
+			:name (n / name
+				:op1 "National"
+				:op2 "Rifle"
+				:op3 "Association"))
+		:ARG1-of (x15 / view-01
+			:mod (x14 / wrong)
+			:ARG2 (x19 / organization
+				:mod (x18 / racist))
+			:ARG0 (x23 / person
+				:ARG0-of (s / support-01)
+				:mod (x22 / black)
+				:ARG1 (x26 / prohibit-01
+					:ARG1 (x25 / gun))))))
+
+# ::id 38
+# ::snt National Rifle Association  was inspired and organized by Union Army officers after the Civil War
+(x6 / and
+	:op1 (x5 / inspire-01
+		:ARG1 (x1 / government-organization
+			:name (n / name
+				:op1 "National"
+				:op2 "Rifle"
+				:op3 "Association"))
+		:time (x12 / after
+			:op1 (x15 / war))
+		:ARG0 (xap0 / person
+			:ARG0-of (x11 / have-org-role-91
+				:ARG2 (o / officer)
+				:ARG1 (x10 / military
+					:name (n1 / name
+						:op1 "Army")))))
+	:op2 (x7 / organize-01))
+

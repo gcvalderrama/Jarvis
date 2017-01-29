@@ -3,12 +3,12 @@ library(readxl)
 rouge_conceptual <- read_excel("D:/Tesis2016/Jarvis/Final/rouge_training_final.xlsx", 
                                sheet = "ConceptualRST")
 rouge_no_expantion_conceptual <- read_excel("D:/Tesis2016/Jarvis/Final/rouge_training_final.xlsx", 
-                               sheet = "NLGSentence")
+                               sheet = "08NLGSentenceNoAux2")
 #View(rouge_final_conceptual)
 #View(rouge_conceptual)
 
-first_vector <- rouge_conceptual[,2]
-second_vector <- rouge_no_expantion_conceptual[,2]
+first_vector <- rouge_conceptual[,6]
+second_vector <- rouge_no_expantion_conceptual[,6]
 wilconxon = wilcox.test(first_vector, second_vector)
 print(wilconxon)
 

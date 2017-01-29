@@ -1,0 +1,427 @@
+# ::id 1
+# ::snt The 1990 Atlantic hurricane season had more storms than usual and some forecasters predict that is just a hint of more frequent and more forceful hurricanes in the coming years
+(x / xconcept
+	:x (x11 / and
+		:op2 (x8 / storm
+			:ARG0 (x5 / season
+				:time (x2 / date-entity
+					:year 1990)
+				:mod (x4 / hurricane))
+			:quant (x7 / more)
+			:ARG1-of (xap0 / more
+				:compared-to (x10 / usual)))
+		:op2 (x14 / predict-01
+			:ARG0 (x13 / forecaster
+				:quant (x12 / some))))
+	:x (xap1 / multi-sentence
+		:snt2 (x19 / hint-01
+			:ARG1 (x15 / that)
+			:mod (x17 / just)
+			:ARG1 (x23 / and
+				:op1 (x22 / frequent
+					:degree (x21 / more))
+				:op2 (x25 / force-01
+					:degree (x24 / more))
+				:op2 (x26 / hurricane)
+				:time (x30 / year
+					:null_edge (x29 / null_tag))))))
+
+# ::id 2
+# ::snt But this year's batch did not include the devastating storms of years past and at least one forecaster thinks 1991 will be a calmer year
+(x1 / contrast-01
+	:ARG2 (x8 / include-01
+		:ARG2 (x5 / person
+			:source (b / batch)
+			:time (x3 / year
+				:mod (x2 / this)))
+		:ARG1 (x11 / storm
+			:mod (x10 / devastate-01))
+		:ARG1 (x13 / temporal-quantity
+			:unit (y / year)
+			:mod (x14 / past))
+		:ARG1 (x15 / and
+			:op2 (x20 / think-01
+				:ARG0 (x19 / forecaster
+					:quant 1)
+				:ARG1 (x26 / year
+					:null_edge (x21 / date-entity
+						:year 1991)
+					:mod (x25 / calmer))))))
+
+# ::id 3
+# ::snt The season ends today
+(x3 / end-01
+	:ARG0 (x2 / season)
+	:time (x4 / today))
+
+# ::id 4
+# ::snt Dr. William Gray , a professor of atmospheric science at Colorado State University , thinks a dry spell in West Africa during the past two decades explained the reduction of storms along the eastern seaboard in the last 20 years
+(x15 / think-01
+	:ARG0 (x3 / person
+		:name (n / name
+			:op1 "Gray")
+		:null_edge (x2 / person
+			:name (n1 / name
+				:op1 "William"))
+		:ARG0-of (x6 / have-org-role-91
+			:ARG2 (p / professor)
+			:ARG1 (x9 / science)
+			:location (x11 / government-organization
+				:name (n2 / name
+					:op1 "Colorado"
+					:op2 "State"
+					:op3 "University"))))
+	:ARG1 (x27 / explain-01
+		:ARG1 (x18 / spell-03
+			:ARG1-of (x17 / dry-02)
+			:location (x20 / world-region
+				:name (n3 / name
+					:op1 "West"
+					:op2 "Africa"))
+			:time (x26 / temporal-quantity
+				:unit (d / decade)
+				:time (x24 / past)
+				:quant 2))
+		:ARG1 (x29 / reduce-01
+			:ARG1 (x31 / storm
+				:ARG1 (x35 / seaboard
+					:mod (x34 / east))))
+		:time (x40 / year
+			:mod (x38 / last)
+			:null_edge (x39 / null_tag))))
+
+# ::id 5
+# ::snt In 1988 and 1989 , there was near normal rainfall in the Sahel , the semi-arid land on the southern fringe of the Sahara Desert
+(x2 / date-entity
+	:year 1988
+	:location (x8 / near
+		:op1 (xap0 / and
+			:ARG0 (x10 / rain
+				:op2 (x4 / date-entity
+					:year 1989)
+				:mod (x9 / normal))
+			:op2 (x17 / land
+				:mod (x16 / semi-arid))
+			:ARG1 (x21 / fringe
+				:mod (x20 / south)
+				:poss (x25 / country
+					:name (n / name
+						:op1 "Desert")
+					:null_edge (x24 / country
+						:name (n1 / name
+							:op1 "Sahara")))))))
+
+# ::id 6
+# ::snt Some meteorological experts think the rainfall signaled the end of a 20-year drought - and may have spawned Gilbert in 1988 and Hugo in 1989
+(x4 / think-01
+	:ARG0 (x3 / person
+		:ARG1-of (e / expert-41)
+		:quant (x1 / some)
+		:mod (x2 / meteorological))
+	:ARG1 (x15 / and
+		:op1 (x7 / signal
+			:ARG0 (x6 / rain)
+			:ARG1 (x9 / end-01
+				:ARG1 (x13 / drought)))
+		:op2 (x16 / possible
+			:domain (x18 / spawn
+				:ARG1 (x19 / person
+					:name (n / name
+						:op1 "Gilbert"))
+				:time (x21 / date-entity
+					:year 1988)
+				:ARG1 (x22 / and)
+				:time (x25 / date-entity
+					:year 1989)))))
+
+# ::id 7
+# ::snt Gray on Thursday predicted a below-average hurricane season in 1991
+(x4 / predict-01
+	:ARG0 (x1 / person
+		:name (n / name
+			:op1 "Gray"))
+	:ARG1 (x8 / season
+		:mod (x6 / below-average)
+		:mod (x7 / hurricane))
+	:time (x10 / date-entity
+		:year 1991)
+	:time (xap0 / date-entity
+		:weekday (x3 / thursday)))
+
+# ::id 8
+# ::snt William Gray  based William Gray  forecast on several factors , including an anticipated below-average rainfall in the Sahel
+(x3 / base-01
+	:ARG0 (x1 / newspaper
+		:name (n / name
+			:op1 "William"
+			:op2 "Gray"))
+	:ARG1 (x4 / name
+		:op1 "William"
+		:op2 "Gray")
+	:location (x6 / forecast-01
+		:ARG1 (x9 / factor
+			:quant (x8 / several)
+			:ARG2-of (x11 / include-91
+				:ARG1 (x15 / rain
+					:ARG1-of (x13 / anticipated)
+					:mod (x14 / below-average))))))
+
+# ::id 9
+# ::snt But Gray and other forecasters agree that the general outlook for the 1990s and the early years of the next century is for more intense hurricanes than those of the last two decades
+(x1 / contrast-01
+	:ARG2 (x6 / agree-01
+		:ARG0 (x3 / and
+			:op1 (x2 / person
+				:name (n / name
+					:op1 "Gray"))
+			:op2 (x5 / forecaster
+				:mod (x4 / other)))
+		:ARG1 (x14 / and
+			:op1 (x10 / outlook
+				:mod (x9 / general)
+				:duration (xap0 / date-entity
+					:decade 1990))
+			:op2 (x17 / year
+				:mod (x16 / early)
+				:mod (x21 / temporal-quantity
+					:unit (c / century)
+					:mod (x20 / next)))
+			:op2 (x26 / hurricane
+				:mod (x25 / intense
+					:degree (x24 / more))
+				:time (x33 / decade
+					:mod (x31 / last)
+					:null_edge (x32 / null_tag))))))
+
+# ::id 10
+# ::snt Gray and other forecasters  have been through a real long period of hurricane inactivity in the 70s and 80s up until 1985 , and Bob Sheets , director of the National Hurricane Center in Coral Gables  think Gray and other forecasters  are coming out of that , said Bob Sheets , director of the National Hurricane Center in Coral Gables
+(x24 / and
+	:op2 (x2 / and
+		:op1 (x1 / city
+			:name (n / name
+				:op1 "Gray"))
+		:op2 (x4 / forecaster
+			:mod (x3 / other)))
+	:time (x11 / period
+		:mod (x9 / real)
+		:mod (x10 / long)
+		:null_edge (x14 / inactivity
+			:mod (x13 / hurricane))
+		:null_edge (x18 / and
+			:op1 (xap0 / date-entity
+				:decade (x17 / 70s))))
+	:time (x21 / until
+		:op1 (x22 / date-entity
+			:year 1985))
+	:op2 (x37 / think-01
+		:ARG0 (x25 / newspaper
+			:name (n1 / name
+				:op1 "Bob"
+				:op2 "Sheets")
+			:ARG0-of (x28 / have-org-role-91
+				:ARG2 (d / director)
+				:ARG1 (x31 / government-organization
+					:name (n2 / name
+						:op1 "National"
+						:op2 "Hurricane"
+						:op3 "Center")
+					:location (x36 / country
+						:name (n3 / name
+							:op1 "Gables")
+						:null_edge (x35 / country
+							:name (n6 / name
+								:op1 "Coral"))))))
+		:ARG1 (x48 / say-01
+			:ARG1 (x43 / come-01
+				:ARG0 (x39 / and
+					:op1 (x38 / person
+						:name (n4 / name
+							:op1 "Gray"))
+					:op2 (x41 / forecaster
+						:mod (x40 / other)))
+				:direction (x44 / out)
+				:ARG1 (x46 / that))
+			:name (x49 / name
+				:op1 "Bob"
+				:op2 "Sheets"
+				:ARG0-of (x52 / have-org-role-91
+					:ARG2 (d1 / director)
+					:ARG1 (x55 / government-organization
+						:name (n5 / name
+							:op1 "National"
+							:op2 "Hurricane"
+							:op3 "Center")
+						:location (x60 / country
+							:name (n7 / name
+								:op1 "Gables")
+							:null_edge (x59 / country
+								:name (n8 / name
+									:op1 "Coral")))))))))
+
+# ::id 11
+# ::snt Perhaps the Gilberts and the Hugos were signaling that , Bob Sheets , director of the National Hurricane Center in Coral Gables  said , recalling Hurricane Gilbert that wracked the Caribbean and Hurricane Hugo that devastated South Carolina - two of the most destructive Atlantic hurricanes ever
+(x23 / say-01
+	:ARG1 (x8 / signaling
+		:ARG1 (x4 / and))
+	:ARG0 (x11 / newspaper
+		:name (n / name
+			:op1 "Bob"
+			:op2 "Sheets")
+		:ARG0-of (x14 / have-org-role-91
+			:ARG2 (d / director)
+			:ARG1 (x17 / government-organization
+				:name (n2 / name
+					:op1 "National"
+					:op2 "Hurricane"
+					:op3 "Center")
+				:location (x22 / country
+					:name (n3 / name
+						:op1 "Gables")
+					:null_edge (x21 / country
+						:name (n4 / name
+							:op1 "Coral"))))))
+	:ARG1 (x25 / recall-02
+		:ARG0 x11
+		:ARG1 (x27 / person
+			:name (n1 / name
+				:op1 "Gilbert")
+			:null_edge (x26 / null_tag)
+			:ARG0-of (x29 / wrack-01
+				:ARG1 (x32 / and
+					:op1 (x31 / country
+						:name (n5 / name
+							:op1 "Caribbean"))
+					:op2 (x34 / hugo
+						:null_edge (x33 / null_tag)
+						:ARG0-of (x36 / devastate-01
+							:ARG1 (x37 / country
+								:name (n6 / name
+									:op1 "South"
+									:op2 "Carolina")
+								:poss (x46 / hurricane
+									:mod (x44 / destroy-01
+										:degree (x43 / most))
+									:ARG0-of (x47 / ever))))))))))
+
+# ::id 12
+# ::snt Hurricanes have been recorded in the Atlantic every month except April , but are rare outside the hurricane season , June 1 to Nov. 30
+(x13 / contrast-01
+	:ARG1 (x4 / record-01
+		:ARG1 (x1 / hurricanes)
+		:time (x11 / date-entity)
+		:ARG1 (xap0 / rate-entity-91
+			:ARG2 (x9 / temporal-quantity
+				:unit (m / month)
+				:null_edge (x8 / every))))
+	:ARG2 (x15 / rare
+		:ARG1 x1
+		:ARG2 (x16 / outside
+			:op1 (x19 / season
+				:mod (x18 / hurricane
+					:time (x21 / date-entity))))))
+
+# ::id 13
+# ::snt In this year's season , there were 14 named storms , eight of them hurricanes
+(x11 / storm
+	:time (x5 / season
+		:part-of (x3 / year
+			:mod (x2 / this)))
+	:quant 14
+	:ARG1-of (x10 / name-01)
+	:quant 8
+	:ARG1 (x16 / hurricane))
+
+# ::id 14
+# ::snt The average number of storms is nine , with about six becoming hurricanes
+(x / xconcept
+	:x (x5 / storm
+		:quant (x3 / number
+			:ARG2-of (x2 / average-01))
+		:quant 9)
+	:x (x12 / become-01
+		:ARG1 (x13 / hurricane
+			:quant (x10 / about
+				:op1 6))))
+
+# ::id 15
+# ::snt Usually only a couple of those storms strike the U.S.
+(x8 / person
+	:name (n / name
+		:op1 "strike")
+	:mod (x1 / usual)
+	:ARG1 (x7 / storm
+		:quant (x4 / couple
+			:mod (x2 / only)))
+	:ARG1 (x10 / country
+		:name (n1 / name
+			:op1 "U.S.")))
+
+# ::id 16
+# ::snt While many of the storms spun harmlessly through the Atlantic , several caused their share of destruction
+(x13 / cause-01
+	:time (x6 / spin-03
+		:ARG1 (x5 / storm
+			:quant (x2 / many))
+		:manner (x7 / harmlessly))
+	:ARG0 (x12 / several)
+	:ARG1 (x15 / share
+		:ARG2-of (x17 / destroy-01)))
+
+# ::id 17
+# ::snt The most deadly storm was Hurricane Diana , which swept into Mexico in early August , resulting in flash floods and mudslides that killed 96 people and caused extensive damage to roads , property and agriculture , the weather service reported
+(x41 / report-01
+	:null_edge (x6 / null_tag
+		:domain (x4 / storm
+			:mod (x3 / kill-01
+				:op (d / deadly)
+				:degree (x2 / most)))
+		:ARG1-of (x10 / sweep-02
+			:ARG2 (x12 / country
+				:name (n / name
+					:op1 "Mexico"))
+			:time (x14 / early
+				:op1 (x15 / date-entity))
+			:ARG2-of (x17 / result-01
+				:ARG2 (x21 / and
+					:op1 (x20 / flood-01
+						:mod (x19 / flash-02))
+					:op2 (x22 / mudslide)
+					:op2 (x27 / and
+						:op1 (x24 / kill-01
+							:ARG1 (x25 / 96))
+						:op2 (x28 / cause-01
+							:ARG1 (x30 / damage-01
+								:mod (x29 / extensive)
+								:ARG1 (x35 / and
+									:op1 (x32 / road)
+									:op2 (x34 / property)
+									:op2 (x36 / agriculture)))))))))
+	:ARG0 (x40 / service
+		:mod (x39 / weather)))
+
+# ::id 18
+# ::snt A weather disturbance becomes a tropical storm , and is given a name , if its sustained winds reach 39 mph
+(x9 / and
+	:op1 (x4 / become-01
+		:ARG1 (x3 / disturbance
+			:mod (x2 / weather))
+		:ARG2 (x7 / storm
+			:mod (x6 / tropic)
+			:name (x13 / name
+				:condition (x19 / reach-01
+					:ARG0 (x18 / wind
+						:ARG1-of (x17 / sustain-01))
+					:ARG1 (x21 / mph
+						:quant 39))))))
+
+# ::id 19
+# ::snt Storms become hurricanes if winds reach 74 mph
+(x2 / become-01
+	:ARG1 (x1 / storm)
+	:ARG2 (x3 / hurricane)
+	:time (x6 / reach-01
+		:ARG0 x1
+		:ARG0 (x5 / wind)
+		:ARG1 (x8 / mph
+			:quant 74)))
+
