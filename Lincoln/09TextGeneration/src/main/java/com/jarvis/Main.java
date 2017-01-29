@@ -82,7 +82,7 @@ public class Main {
     public static void SimpleNLGGenerator()  throws IOException {
         String inputDir = "D:/Tesis2016/Jarvis/Final/Training/07NLGMetadata/";
 
-        String outputDir =  "D:/Tesis2016/Jarvis/Final/Training/08NLGParagraph/";
+        String outputDir =  "D:/Tesis2016/Jarvis/Final/Training/08NLGSentenceNoAux2/";
 
         File folder = new File(inputDir);
         File[] listOfFiles = folder.listFiles();
@@ -153,7 +153,7 @@ public class Main {
 
                     for (ArrayList<CGVerbTerm> tmpArray: verb.Themes ) {
                         StringBuilder sbthemes = new StringBuilder();
-                        sbthemes.append(" related with ");
+                  //      sbthemes.append(" related with ");
                         for (CGVerbTerm tmp: tmpArray ) {
                             sbthemes.append(tmp.Node.nosuffix + " ");
                         }
@@ -180,13 +180,13 @@ public class Main {
                     }
 
                     p.setObject(coordinateObject);
-                    c.addCoordinate(p);
-                  //  String output =  realiser.realiseSentence(p);
-                  //  sb.append(output);
-                  //  sb.append(System.getProperty("line.separator"));
+                   // c.addCoordinate(p);
+                    String output =  realiser.realiseSentence(p);
+                    sb.append(output);
+                    sb.append(System.getProperty("line.separator"));
                 }
-                String output =  realiser.realiseSentence(c);
-                sb.append(output);
+                //String output =  realiser.realiseSentence(c);
+                //sb.append(output);
                 String ta = outputDir + file.getName();
                 //System.out.println(ta);
                 Writer writer = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(ta), "utf-8"));

@@ -1,9 +1,9 @@
 library(readxl)
 
-rouge_conceptual <- read_excel("D:/Tesis2016/Jarvis/Lincoln/Rougue/rouge_v3_nlg.xlsx", 
+rouge_conceptual <- read_excel("D:/Tesis2016/Jarvis/Final/rouge_training_final.xlsx", 
+                               sheet = "ConceptualRST")
+rouge_no_expantion_conceptual <- read_excel("D:/Tesis2016/Jarvis/Final/rouge_training_final.xlsx", 
                                sheet = "NLGSentence")
-rouge_no_expantion_conceptual <- read_excel("D:/Tesis2016/Jarvis/Lincoln/Rougue/rouge_v3_nlg.xlsx", 
-                               sheet = "NLGSentenceNoAux")
 #View(rouge_final_conceptual)
 #View(rouge_conceptual)
 
