@@ -1,0 +1,645 @@
+# ::id 1
+# ::snt a coincidence of cosmic proportions  is a coincidence of cosmic proportions
+(x8 / coincidence
+	:domain (x2 / coincidence
+		:ARG1 (x5 / proportion
+			:mod (x4 / cosmic)))
+	:ARG1 (x11 / proportion
+		:mod (x10 / cosmic)))
+
+# ::id 2
+# ::snt The sun is 400 times wider than the moon
+(xap0 / and
+	:ARG2 (x6 / wide
+		:domain (x2 / sun)
+		:frequency 400)
+	:op3 (x9 / moon))
+
+# ::id 3
+# ::snt But the sun also happens to be about 400 times as far away from Earth as the moon. ; The result : From Earth both orbs look almost exactly the same size
+(x1 / contrast-01
+	:ARG2 (x5 / happen-01
+		:ARG1 (x3 / sun)
+		:mod (x4 / also)
+		:ARG2 (x12 / far
+			:quant 400)))
+
+# ::id 4
+# ::snt And when the moon's orbit happens to carry maybe the greatest natural occurrence one can witness  directly across the face of the sun , as maybe the greatest natural occurrence one can witness  will Thursday , the effect is stunning a total solar eclipse
+(x / xconcept
+	:x (x1 / and)
+	:x (x41 / stunning
+		:condition (x7 / happen-01
+			:ARG1 (x9 / carry-01
+				:ARG1 (x14 / occur-01
+					:mod (x10 / maybe)
+					:mod (x12 / great
+						:degree (m / most))
+					:mod (x13 / natural)
+					:poss (x17 / person
+						:ARG0-of (w / witness-01)
+						:ARG0 (x15 / one)
+						:mod (x16 / possible)
+						:manner (x18 / direct)
+						:location (x19 / across
+							:op1 (x21 / face
+								:ARG1 (x24 / sun)))
+						:ARG1 (x33 / possible
+							:domain (x34 / person
+								:ARG0-of (w1 / witness-01)
+								:ARG1 (x31 / occur-01
+									:mod (x30 / natural))
+								:time (xap1 / date-entity
+									:weekday (x36 / thursday)))))))
+			:ARG1 (xap0 / and
+				:op3 (x4 / moon)
+				:ARG1 (x6 / orbit-01)))
+		:domain (x39 / effect-01)
+		:domain (x45 / eclipse-01
+			:ARG1 (xap2 / source
+				:mod (x44 / solar
+					:ARG2-of (x43 / total-01))))))
+
+# ::id 5
+# ::snt maybe the greatest natural occurrence one can witness  is maybe the greatest natural occurrence one can witness , said Larry Toy , a Chabot College astronomy professor
+(x19 / say-01
+	:ARG1 (x14 / occur-01
+		:domain (x5 / occur-01
+			:mod (x3 / great
+				:degree (m1 / most))
+			:mod (x4 / natural)
+			:poss (x8 / person
+				:ARG0-of (w1 / witness-01)
+				:ARG0 (x6 / one)
+				:mod (x7 / possible)))
+		:mod (x12 / great
+			:degree (m / most))
+		:mod (x13 / natural)
+		:ARG0-of (x17 / person
+			:ARG0-of (w / witness-01)
+			:ARG0 (x15 / one)
+			:mod (x16 / possible)))
+	:ARG0 (x20 / newspaper
+		:name (n / name
+			:op1 "Larry"
+			:op2 "Toy")
+		:ARG0-of (x27 / have-org-role-91
+			:ARG2 (p / professor)
+			:ARG1 (x24 / organization
+				:name (n1 / name
+					:op1 "Chabot"))
+			:null_edge (x25 / null_tag)
+			:mod (x26 / astronomy))))
+
+# ::id 6
+# ::snt The phenomenon is just awe-inspiring
+(x5 / awe-inspiring
+	:domain (x2 / phenomenon)
+	:mod (x4 / just))
+
+# ::id 7
+# ::snt ; Solar eclipses occur twice a year , when the sun , moon and earth line up
+(x / xconcept
+	:x (x1 / and
+		:op1 (x3 / eclipse-01
+			:mod (x2 / solar)
+			:time (x7 / year)
+			:ARG1-of (xap1 / cause-01
+				:ARG2 (x16 / line
+					:null_edge (x14 / and
+						:op1 (x11 / sun)
+						:op2 (x15 / planet
+							:name (n / name
+								:op1 "earth"))
+						:op1 (xap0 / and
+							:op3 (x13 / moon))))))))
+
+# ::id 8
+# ::snt (This line-up would occur at every new moon , except that the moon's orbit is tilted so maybe the greatest natural occurrence one can witness  only crosses the sun's path every six months )
+(xap1 / and
+	:ARG1 (x3 / line-up
+		:mod (x2 / this)
+		:location (xap0 / and
+			:op3 (x9 / moon
+				:mod (x7 / every)
+				:mod (x8 / new))))
+	:op3 (x14 / moon)
+	:snt3 (x16 / orbit-01)
+	:ARG1 (x18 / tilted)
+	:op2 (x29 / cross-02
+		:ARG1 (x24 / occur-01
+			:mod (x22 / great
+				:degree (m1 / most))
+			:mod (x23 / natural)
+			:poss (x27 / person
+				:ARG0-of (w / witness-01)
+				:ARG0 (x25 / one)
+				:mod (x26 / possible)
+				:mod (x28 / only)))
+		:ARG1 (x33 / path
+			:poss (x31 / sun))
+		:duration (x36 / temporal-quantity
+			:unit (m / month)
+			:quant 6)))
+
+# ::id 9
+# ::snt ; Because of variations in the moon's orbit , fewer than a third of the solar eclipses are total eclipses
+(x / xconcept
+	:x (x1 / and
+		:op1 (x21 / eclipse-01
+			:ARG1-of (x2 / cause-01
+				:ARG0 (x4 / variation
+					:location (xap0 / and
+						:op3 (x7 / moon)
+						:ARG1 (x9 / orbit-01))))
+			:quant (x11 / few
+				:op1 (x18 / eclipse-01
+					:mod (x17 / solar)))
+			:ARG2-of (x20 / total-01))))
+
+# ::id 10
+# ::snt In these cases the moon's shadow , up to 200 miles wide on the earth's surface , races west to east along the ground at 1,000 to 5,000 miles per hour for a few thousand miles. ; Most total eclipses get little public attention
+(xap0 / and
+	:op3 (x5 / moon)
+	:snt2 (x7 / shadow-01)
+	:op1 (x12 / distance-quantity
+		:unit (m / mile)
+		:topic (x3 / case)
+		:null_edge (x9 / up
+			:null_edge 200)
+		:mod (x13 / wide)
+		:null_edge (x44 / get-05
+			:ARG1 (x47 / attention
+				:poss (x43 / eclipse-01
+					:quant (x41 / most)
+					:ARG2-of (x42 / total-01))
+				:quant (x45 / little)
+				:mod (x46 / public))))
+	:op1 (xap1 / and
+		:location (x18 / surface)
+		:op1 (x20 / race-02
+			:mod (x21 / west
+				:null_edge (x23 / east)))))
+
+# ::id 11
+# ::snt They occur over water , over the poles or in difficult-to-reach terrain
+(x9 / or
+	:op1 (x1 / they)
+	:op2 (x4 / water
+		:location (x12 / terrain))
+	:op2 (x8 / pole))
+
+# ::id 12
+# ::snt On average , any point on Earth is eclipsed just once every 360 years. ; But when the shadow's narrow path does cross inhabited areas , people flock there to experience totality to watch the light snap off and the stars snap on , and to gaze at the sun's shaggy corona hanging in the dark sky for a few minutes before daylight abruptly returns. ; In the United States , the opportunity has come twice in the past couple of decades along the East Coast in 1970 and across the Northwest and Northern Plains in 1979. ; This Thursday the moon's shadow will be back for another performance , one of the century's best. ; the earth's  is unusual for several reasons
+(x17 / contrast-01
+	:ARG2 (x9 / eclipse-01
+		:ARG2 (x2 / average)
+		:ARG1 (x5 / point
+			:mod (x4 / any))
+		:time (x11 / once
+			:mod (x10 / just)))
+	:ARG2 (x33 / experience-01
+		:ARG1 (x25 / cross-02
+			:ARG0 (x23 / path
+				:poss (x20 / shadow-01)
+				:mod (x22 / narrow))
+			:ARG1 (x27 / area
+				:ARG1-of (x26 / inhabit-01)))
+		:ARG0 (x30 / flock-01
+			:null_edge (x29 / null_tag))
+		:null_edge (x31 / there)
+		:ARG1 (x36 / watch-01
+			:ARG1 (x39 / snap
+				:mod (x38 / light))
+			:ARG1 (x41 / and
+				:op1 (x44 / snap
+					:ARG1 (x43 / star)
+					:ARG1 (x47 / and
+						:op2 (x49 / gaze
+							:location (x60 / sky
+								:location (x56 / hang-01
+									:ARG1 (x52 / sun)
+									:ARG1 (x54 / shaggy)
+									:mod (x55 / corona))
+								:mod (x59 / dark)
+								:duration (x63 / few
+									:op1 (x64 / temporal-quantity
+										:unit (m1 / minute)
+										:null_edge (x65 / null_tag
+											:op1 (x68 / return-01
+												:ARG1 (x66 / person
+													:name (n / name
+														:op1 "daylight"))
+												:manner (x67 / abrupt)
+												:ARG1 (xap0 / multiple
+													:location (x73 / country
+														:name (n1 / name
+															:op1 "United"
+															:op2 "States"))
+													:snt1 (x77 / opportunity)
+													:time (x83 / past)
+													:op1 (x86 / temporal-quantity
+														:unit (d / decade))
+													:location (x87 / along
+														:op1 (x90 / country
+															:name (n2 / name
+																:op1 "Coast")
+															:null_edge "East"))
+													:time (x92 / date-entity
+														:year 1970)))))))
+							:mod (x112 / back
+								:beneficiary (x115 / perform-01
+									:mod (x114 / another)
+									:time (xap2 / and
+										:op3 (x107 / moon
+											:time (xap1 / date-entity
+												:null_edge (x105 / null_tag
+													:mod (x104 / this))))
+										:ARG1 (x109 / shadow-01))))))
+					:mod (x122 / good
+						:degree (m / most))))))
+	:ARG2 (x129 / usual
+		:polarity -
+		:beneficiary (x132 / reason
+			:quant (x131 / several))))
+
+# ::id 13
+# ::snt At its peak , observers will see one of the longest-lasting eclipses this century six minutes , 53 seconds
+(x7 / see-01
+	:time (x3 / peak-01)
+	:ARG0 (x5 / observe-01)
+	:ARG1 (x12 / eclipse-01
+		:quant 1
+		:mod (x11 / longest-lasting))
+	:ARG1 (x14 / century
+		:mod (x13 / this))
+	:ARG1 (x16 / temporal-quantity
+		:unit (m / minute)
+		:quant 6
+		:ARG1-of (xap0 / resemble-01
+			:ARG2 (x19 / temporal-quantity
+				:unit (s / second)
+				:quant 53))))
+
+# ::id 14
+# ::snt Also , its 150-mile-wide path across Hawaii , Baja California , Mexico City and four Central American capital cities puts more people in the moon's shadow than any other eclipse in history , says Alan Dyer , an editor of Astronomy magazine. ; Finally , since the center of the shadow will pass right across the world's largest cluster of astronomical observatories , the audience will include several dozen solar scientists intent on getting the best view several dozen solar scientists intent  have ever had. ; its 150-mile-wide path across Hawaii , Baja California , Mexico City and four Central American capital cities  is going to be great from up there on the mountain , said Harold Zirin , a California Institute of Technology astronomer who will be at one of the observatories atop Mauna Kea , a dormant volcano that makes up a large piece of the island of Hawaii. ; Historic events ; For science , two eclipses have proved especially historic : In 1868 , spectroscopic study of the sun's halo turned up evidence of a new element , which was named helium , from Helios , the Greek sun god
+(x / xconcept
+	:x (x160 / and
+		:op2 (x10 / state
+			:name (n1 / name
+				:op1 "California")
+			:mod (x9 / country
+				:name (n2 / name
+					:op1 "Baja")))
+		:op4 (x13 / city
+			:null_edge (x12 / country
+				:name (n3 / name
+					:op1 "Mexico")))
+		:op1 (x20 / put-01
+			:mod (x1 / also)
+			:ARG0 (x5 / path
+				:mod (x4 / 150-mile-wide)
+				:location (x6 / across
+					:op1 (x14 / and
+						:op1 (x7 / name
+							:op1 "Hawaii")
+						:op2 (x19 / city
+							:quant 4
+							:null_edge (x17 / country
+								:name (n / name
+									:op1 "American"))
+							:mod (x18 / capital)))))
+			:degree (x21 / more)
+			:time (x46 / final)
+			:time (x48 / since
+				:op1 (x55 / pass-01
+					:ARG1 (x50 / center
+						:poss (x53 / shadow-01))
+					:location (x57 / across
+						:degree (x56 / right-41)
+						:op1 (x62 / cluster
+							:mod (x61 / large
+								:degree (m / most)
+								:compared-to (x59 / world)
+								:compared-to (x65 / observatory
+									:mod (x64 / astronomical)
+									:duration (x72 / dozen
+										:null_edge (x71 / several))))))))
+			:location (xap0 / and
+				:op3 (x25 / moon)
+				:mod (x27 / shadow-01
+					:name (x36 / name
+						:op1 "Alan"
+						:op2 "Dyer"
+						:ARG0-of (x40 / editor
+							:ARG1 (x43 / magazine))))))
+		:op5 (x35 / say-01
+			:ARG1 (x31 / eclipse-01)
+			:topic (x33 / history))
+		:op1 (x68 / audience)
+		:op2 (x74 / scientist
+			:mod (x73 / solar)
+			:mod (x75 / intend-01
+				:ARG1 (x77 / get-01
+					:ARG1 (x80 / view-02
+						:mod (x79 / good
+							:degree (m1 / most))
+						:ARG0 (x85 / intend-01
+							:null_edge (x81 / several)
+							:mod (x83 / solar)
+							:null_edge (x84 / null_tag)
+							:mod (x87 / ever)
+							:mod (x112 / great
+								:domain (x93 / path
+									:mod (x92 / 150-mile-wide)
+									:location (x94 / across
+										:op1 (x95 / name
+											:op1 "Hawaii")))
+								:domain (x102 / and
+									:domain (x98 / state
+										:name (n4 / name
+											:op1 "California")
+										:mod (x97 / country
+											:name (n6 / name
+												:op1 "Baja")))
+									:op1 (x100 / country
+										:name (n5 / name
+											:op1 "Mexico"))
+									:op1 (x101 / city)
+									:op2 (x107 / city
+										:quant 4
+										:null_edge (x105 / country
+											:name (n7 / name
+												:op1 "American"))
+										:mod (x106 / capital)))
+								:mod (x114 / up
+									:op1 (x115 / there))))))))
+		:op2 (x120 / say-01)
+		:op9 (x129 / astronomer
+			:null_edge (x128 / null_tag)
+			:ARG1-of (x137 / observatory
+				:quant (x134 / one)
+				:location (x140 / country
+					:name (n8 / name
+						:op1 "Kea")
+					:null_edge (x139 / country
+						:name (n9 / name
+							:op1 "Mauna")))
+				:time (x172 / date-entity
+					:year 1868)))
+		:op3 (x144 / volcano
+			:mod (x143 / dormant)
+			:ARG0-of (x146 / make-02
+				:ARG1 (x150 / piece
+					:mod (x149 / large)
+					:part-of (x153 / island
+						:name (x155 / name
+							:op1 "Hawaii")))))
+		:op2 (x159 / event
+			:mod (x158 / history))
+		:op2 (x162 / science)
+		:op1 (x165 / eclipse-01
+			:quant 2)
+		:op1 (x167 / prove-01
+			:ARG1 (x169 / history
+				:mod (x168 / especially)))
+		:op1 (x180 / halo
+			:poss (x178 / sun))
+		:op1 (x181 / turn-02
+			:ARG0 (x175 / study
+				:name (x121 / name
+					:op1 "Harold"
+					:op2 "Zirin"
+					:name (x125 / name
+						:op1 "California"
+						:op2 "Institute"))
+				:mod (x174 / spectroscopic))
+			:direction (xap2 / result-01
+				:ARG0-of (x183 / thing
+					:ARG0-of (e / evidence-01))
+				:ARG2 (x187 / element
+					:mod (x186 / new)
+					:ARG1-of (x191 / name-01
+						:ARG1 (x192 / helium)
+						:ARG2 (xap1 / exist-01
+							:ARG1 (x200 / god
+								:mod (x198 / organization
+									:name (n10 / name
+										:op1 "Greek"))))))))
+		:op1 (x199 / sun)))
+
+# ::id 15
+# ::snt And in 1919 , astronomers spotted a star , which should have been behind the sun , instead peeking around the edge of the sun
+(x1 / and
+	:op2 (x6 / spot-01
+		:time (x3 / date-entity
+			:year 1919)
+		:ARG0 (x5 / astronomer)
+		:ARG1 (x11 / recommend-01
+			:ARG1 (x8 / star)
+			:ARG1 (x14 / behind
+				:op1 (x16 / sun))
+			:ARG1 (x19 / peek
+				:mod (x18 / instead)
+				:ARG2 (x20 / around
+					:op1 (x22 / edge
+						:op1 (x25 / sun)))))))
+
+# ::id 16
+# ::snt That was the first confirmation of Albert Einstein's prediction that a star's gravity will bend the path of light. ; But in recent years solar eclipses have declined in significance for researchers. ; For one thing , chasing eclipses by trekking to remote regions with delicate astronomical instruments to capture a few minutes of data has lost much of one thing  glamour , especially in times of tight budgets. ; For another , some of the information now can be gathered any day of the year by using instruments that simulate a solar eclipse. ; But this time , the eclipse is coming to them , and they ca not resist a look
+(x / xconcept
+	:x (x37 / and
+		:op2 (x29 / eclipse-01
+			:mod (x28 / solar))
+		:op2 (x31 / decline-01
+			:duration (x27 / temporal-quantity
+				:unit (y / year)
+				:mod (x26 / recent))
+			:ARG1 (x33 / significant)
+			:ARG1 (x35 / person
+				:ARG0-of (r / research-01)))
+		:op1 (x61 / lose-02
+			:ARG0 (x59 / data)
+			:ARG1 (x66 / glamour
+				:quant (x62 / much)
+				:quant 1
+				:mod (x65 / thing)
+				:location (x68 / especially))))
+	:x (x75 / and
+		:op3 (x5 / confirm-01
+			:domain (x1 / that)
+			:ARG1 (x10 / predict-01
+				:name (x7 / name
+					:op1 "Albert"
+					:op2 "Einstein")
+				:ARG1 (x17 / bend
+					:ARG0 (x15 / gravity
+						:consist-of (x13 / star))
+					:ARG1 (x19 / path
+						:mod (x21 / light))
+					:null_edge (x24 / contrast-01
+						:ARG2 (x40 / thing
+							:quant 1))))
+			:ARG0-of (x42 / chase-01
+				:ARG1 (x43 / eclipse-01)))
+		:op1 (x45 / trek
+			:ARG2 (x48 / region
+				:mod (x47 / remote)
+				:prep-with (x52 / instrument
+					:mod (x50 / delicate)
+					:mod (x51 / astronomical))
+				:ARG1-of (x54 / capture-01
+					:null_edge (x56 / few))))
+		:op2 (x73 / budget
+			:mod (x72 / tight)))
+	:x (x101 / and
+		:op3 (x84 / possible
+			:domain (x86 / gather-01
+				:null_edge (x77 / another)
+				:ARG1 (x82 / information
+					:mod (x79 / some))
+				:time (x83 / now)
+				:time (x88 / day
+					:mod (x87 / any))
+				:time (x91 / year)
+				:null_edge (x102 / contrast-01)
+				:source (x113 / and
+					:op2 (x109 / come-01
+						:time (x104 / time
+							:mod (x103 / this))
+						:ARG1 (x107 / eclipse-01))
+					:op2 (x117 / resist-01
+						:ARG1 (x119 / look-01)))))
+		:op4 (x94 / instrument
+			:ARG0-of (x93 / use-01)
+			:ARG0-of (x96 / simulate-01))
+		:op1 (x99 / eclipse-01
+			:mod (x98 / solar))))
+
+# ::id 17
+# ::snt At 13,800 feet , Mauna Kea is the world's tallest island mountain
+(x13 / mountain
+	:prep-on (x3 / foot
+		:quant (x2 / 13,800))
+	:domain (x6 / kea
+		:mod (x5 / mauna))
+	:poss (x9 / world)
+	:mod (x11 / tallest)
+	:location (x12 / island))
+
+# ::id 18
+# ::snt The air above it is still , dry and clean , making The air above it  one of the world's choicest spots for viewing the cosmos. ; The air above it  is so high that oxygen deprivation is a serious concern
+(x9 / and
+	:op1 (x8 / dry
+		:domain (x2 / air
+			:location (x3 / above))
+		:mod (x6 / still))
+	:op2 (x10 / clean-02)
+	:ARG0-of (x12 / make-02
+		:ARG1 (x14 / air
+			:ARG1-of (x18 / include-91
+				:ARG2 (x23 / spot
+					:poss (x20 / world)
+					:mod (x22 / choicest))))))
+
+# ::id 19
+# ::snt And , unlike most people headed for Hawaii , astronomers will be packing long underwear and down jackets in case , as sometimes happens even in July , the temperature at the summit drops below freezing. ; 7 observatories in use ; Seven of the nine observatories atop Mauna Kea will be used Thursday morning
+(x1 / and
+	:op2 (x13 / pack-01
+		:ARG1 (x6 / head-01
+			:degree (x4 / most)
+			:name (x8 / name
+				:op1 "Hawaii"))
+		:ARG0 (x10 / astronomer)
+		:ARG1 (x16 / and
+			:op1 (x15 / underwear
+				:mod (x14 / long))
+			:op2 (x18 / jacket)))
+	:op2 (x54 / use-02
+		:ARG1 (x40 / observatory
+			:quant 7)
+		:ARG2 (x48 / observatory
+			:quant 7
+			:quant 9)
+		:time (x56 / morning)))
+
+# ::id 20
+# ::snt (The Keck Observatory , being built by the University of California and the California Institute of Technology , is behind Keck Observatory  original construction schedule and will not be completed in time for the eclipse )
+(x27 / and
+	:op1 (x26 / schedule-01
+		:domain (x4 / observatory
+			:mod (x3 / keck)
+			:ARG1-of (x7 / build-01
+				:ARG0 (x12 / government-organization
+					:name (n / name
+						:op1 "California"
+						:op2 "and"
+						:op3 "the"
+						:op4 "California"
+						:op5 "Institute"
+						:op6 "of"
+						:op7 "Technology"))
+				:ARG0 (x13 / and
+					:op2 (x21 / behind
+						:op1 (x22 / government-organization
+							:name (n1 / name
+								:op1 "Keck"
+								:op2 "Observatory"))))))
+		:mod (x24 / original)
+		:ARG1 (x25 / construct-01))
+	:op2 (x31 / complete-01
+		:ARG1 x4))
+
+# ::id 21
+# ::snt ; What most people  want to know is more about the temperature and composition of the sun's upper atmosphere layers called the chromosphere and the corona which normally is difficult to examine against the glare of the sun. ; most people  hope the information will provide clues to what causes the sun's 11-year cycle of sunspots and flares (now near Keck Observatory  peak ), what propels the solar wind and why the sun's outer atmosphere is , paradoxically , so much hotter than Keck Observatory  lower atmosphere. ; Solar wind studies ; At some observatories , astronomers will take repeated photographs of the corona during the eclipse to study Keck Observatory  close up and to watch for material accelerating outward to become solar wind. ; Others will use telescopes to study the sun's emissions at microwave frequencies to learn more details about how Keck Observatory  temperature varies with altitude. ; But , frankly , the astronomers also want to watch the lights go out. ; most people  will be fighting the temptation to abandon most people  instruments and go outside to watch. ; The biggest problem , Zirin said , is whether most people  are going to see the eclipse
+(x201 / say-01
+	:ARG0 (x200 / person
+		:name (n / name
+			:op1 "Zirin"))
+	:ARG1 (x210 / see-01
+		:ARG1 (x205 / most)
+		:ARG1 (x212 / eclipse-01))
+	:ARG1 (xap0 / multi-sentence
+		:snt2 (x44 / hope-01
+			:ARG1 (x42 / most)
+			:ARG1 (x52 / cause-01
+				:ARG0 (x46 / information)
+				:ARG1 (x49 / clue)
+				:ARG1 (x57 / cycle
+					:poss (x54 / sun)
+					:mod (x56 / thing
+						:name (n1 / name
+							:op1 "11-year")))
+				:ARG1 (x60 / and
+					:op1 (x59 / sunspot
+						:location (x64 / near
+							:op1 (x63 / now)
+							:op1 (x67 / peak-01
+								:null_edge (x65 / have-org-role-91
+									:ARG1 (c / country
+										:name (n2 / name
+											:op1 "Keck"
+											:op2 "Observatory"))))))
+					:op2 (x61 / flare))))
+		:ARG1 (x75 / and
+			:op2 (x5 / want-01
+				:ARG1 (x3 / most)
+				:ARG1 (x7 / know-01
+					:ARG1 (x9 / more))
+				:ARG0 (x81 / atmosphere
+					:poss (x78 / sun)
+					:mod (x80 / outer))
+				:ARG1 (x93 / atmosphere
+					:mod (x92 / low)))
+			:op2 (x71 / propel-01
+				:ARG1 (x74 / wind))))
+	:ARG1 (xap2 / contrast-01
+		:null_edge (x98 / null_tag
+			:mod (x96 / solar)
+			:mod (x97 / wind)
+			:ARG1-of (x102 / observatory
+				:quant (x101 / some))
+			:ARG1 (x198 / problem
+				:mod (x197 / big
+					:degree (m / most))))))
+

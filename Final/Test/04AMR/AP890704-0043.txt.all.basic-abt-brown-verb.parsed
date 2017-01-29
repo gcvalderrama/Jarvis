@@ -1,0 +1,467 @@
+# ::id 1
+# ::snt Suspected communist rebels today killed the police chief of the Philippinesmajor financial center in an escalation of street violence sweeping the capital area , police said
+(x26 / say-01
+	:ARG1 (x5 / kill-01
+		:ARG0 (x3 / person
+			:ARG0-of (r / rebel-01)
+			:ARG1-of (x1 / suspect-01)
+			:mod (x2 / communism))
+		:time (x4 / today)
+		:ARG1 (x8 / have-org-role-91
+			:ARG2 (c / chief)
+			:ARG1 (x7 / police)
+			:ARG1 (x13 / center
+				:mod (x11 / philippinesmajor)
+				:mod (x12 / finance)))
+		:time (x16 / escalation
+			:ARG1 (x19 / violence
+				:mod (x18 / street))
+			:ARG1 (x20 / sweep-01
+				:ARG1 (x23 / area
+					:mod (x22 / capital)))))
+	:ARG0 (x25 / police))
+
+# ::id 2
+# ::snt Col. Herminio Taylo , 54 , police chief of Makati , had just finished jogging and was buying fruit in a public market when two assassins opened fire with .45 - caliber pistols , police said
+(x36 / say-01
+	:ARG1 (x16 / and
+		:op1 (x14 / finish-01
+			:ARG0 (x2 / newspaper
+				:name (n / name
+					:op1 "Herminio"
+					:op2 "Taylo")
+				:ARG0-of (x1 / col.)
+				:quant (x5 / 54)
+				:ARG0-of (x8 / have-org-role-91
+					:ARG2 (c / chief)
+					:ARG1 (x7 / police)
+					:ARG1 (x10 / country
+						:name (n1 / name
+							:op1 "Makati"))))
+			:mod (x13 / just)
+			:ARG1 (x15 / jogging))
+		:op2 (x18 / buy-01
+			:ARG1 (x19 / fruit)
+			:location (x23 / market
+				:mod (x22 / public))
+			:time (x27 / open-01
+				:ARG0 (x26 / assassin
+					:quant 2)
+				:ARG1 (x28 / fire-01)
+				:ARG1 (x33 / pistol
+					:mod (x32 / caliber)))))
+	:ARG0 (x35 / police))
+
+# ::id 3
+# ::snt Herminio Taylo  died an hour later in a hospital
+(x3 / die-01
+	:ARG1 (x1 / newspaper
+		:name (n / name
+			:op1 "Herminio"
+			:op2 "Taylo"))
+	:time (x6 / late
+		:op1 (x5 / temporal-quantity
+			:unit (h / hour)))
+	:location (x9 / hospital))
+
+# ::id 4
+# ::snt Police Sgt. Lydio Zeta quoted witnesses as saying the gunmen shouted witnesses  are NPAs , referring to the rebel New People's Army , and warned bystanders not to interfere
+(x25 / and
+	:op1 (x5 / quote-01
+		:ARG0 (x3 / newspaper
+			:name (n / name
+				:op1 "Lydio"
+				:op2 "Zeta")
+			:ARG0-of (x2 / sgt.
+				:ARG1 (x1 / police)))
+		:ARG1 (x6 / person
+			:ARG0-of (w / witness-01))
+		:ARG2 (x11 / shout
+			:ARG0 (x10 / gunman)
+			:ARG1 (x14 / npa
+				:ARG0 (x12 / person
+					:ARG0-of (w1 / witness-01))))
+		:ARG1 (x16 / refer-01
+			:ARG0 x3
+			:ARG1 (x23 / military
+				:name (n1 / name
+					:op1 "Army")
+				:null_edge (x19 / person
+					:ARG0-of (r / rebel-01))
+				:null_edge (x22 / null_tag
+					:null_edge (x20 / null_tag
+						:null_edge "People's")))))
+	:op2 (x26 / warn-01
+		:ARG1 (x27 / bystander)
+		:ARG1 (x30 / interfere
+			:ARG0 x27)))
+
+# ::id 5
+# ::snt witnesses  fled in a commandeered passenger jeep after taking Taylo's pistol , Zeta said
+(x15 / say-01
+	:ARG1 (x2 / flee-01
+		:ARG0 (x1 / person
+			:ARG0-of (w / witness-01))
+		:location (x7 / jeep
+			:ARG1-of (x5 / commandeer)
+			:mod (x6 / passenger))
+		:time (x8 / after
+			:op1 (x9 / take-01
+				:ARG1 (x12 / pistol
+					:ARG0 (x10 / person
+						:name (n1 / name
+							:op1 "Taylo"))))))
+	:ARG0 (x14 / person
+		:name (n / name
+			:op1 "Zeta")))
+
+# ::id 6
+# ::snt Makati , a twin city of Manila with a population of about 440,000 , is the country's major banking and financial center and is also the home of numerous foreign embassies
+(x24 / and
+	:op2 (x21 / and
+		:op1 (x20 / bank-01
+			:mod (x5 / city
+				:location (x1 / country
+					:name (n / name
+						:op1 "Makati"))
+				:mod (x4 / twin)
+				:prep-with (x10 / population
+					:quant (x12 / about
+						:op1 (x7 / city
+							:name (n1 / name
+								:op1 "Manila"))
+						:op1 (x13 / 440,000))))
+			:poss (x17 / country)
+			:mod (x19 / major)
+			:mod (x26 / also))
+		:op2 (x23 / center
+			:mod (x22 / finance))
+		:op2 (x28 / home
+			:poss (x32 / embassy
+				:quant (x30 / numerous)
+				:mod (x31 / foreign)))))
+
+# ::id 7
+# ::snt Taylo was the 10th soldier or policeman slain in the Manila area in the last two weeks
+(x6 / or
+	:op1 (x5 / soldier
+		:name (x1 / person
+			:name (n / name
+				:op1 "Taylo")))
+	:op2 (x7 / policeman
+		:ARG1-of (x8 / slay-01
+			:location (x12 / area
+				:mod (x11 / city
+					:name (n1 / name
+						:op1 "Manila")))
+			:time (x17 / week
+				:mod (x15 / last)
+				:null_edge (x16 / null_tag)))))
+
+# ::id 8
+# ::snt The military says communist rebels have killed up to 65 soldiers and police in the capital region since January
+(x3 / say-01
+	:ARG0 (x2 / military)
+	:ARG1 (x7 / kill-01
+		:ARG0 (x5 / person
+			:ARG0-of (r / rebel-01)
+			:mod (x4 / communism))
+		:ARG1 (x12 / and
+			:op1 (x11 / soldier
+				:quant 65)
+			:op2 (x13 / police))
+		:location (x17 / region
+			:mod (x16 / capital))
+		:time (x18 / since
+			:op1 (x19 / date-entity))))
+
+# ::id 9
+# ::snt The New People's Army also claimed responsibility for the April 21 assassination of U.S. Army Col. James Nick Rowe , who was slain on Nick Rowe  way to work at the Joint U.S. Military Assistance Group headquarters in suburban Quezon City
+(x7 / claim-01
+	:ARG0 (x2 / government-organization
+		:name (n / name
+			:op1 "New"
+			:op2 "People"
+			:op3 "'s"
+			:op4 "Army"))
+	:mod (x6 / also)
+	:ARG1 (x8 / responsible-41
+		:ARG2 (x13 / assassinate-01
+			:null_edge (x12 / null_tag)
+			:ARG1 (x16 / military
+				:name (n1 / name
+					:op1 "Army"))
+			:name (x18 / name
+				:op1 "James"
+				:op2 "Nick"
+				:op3 "Rowe"
+				:ARG0-of (x17 / col.)
+				:ARG1-of (x24 / slay-01
+					:ARG2 (x30 / work-01
+						:ARG0 (x26 / person
+							:name (n2 / name
+								:op1 "Nick"))
+						:ARG0 (x27 / person
+							:name (n3 / name
+								:op1 "Rowe"))
+						:location (x38 / headquarters
+							:mod (x33 / joint)
+							:location (x42 / city
+								:null_edge (x41 / country
+									:name (n4 / name
+										:op1 "Quezon")
+									:mod (x40 / suburb))))))))))
+
+# ::id 10
+# ::snt Taylo was slain one day after Brig. Gen. Alexander Aguirre , Capital Region commander , announced formation of a special task force to track down rebel assassins in the capital
+(x3 / slay-01
+	:ARG1 (x1 / person
+		:name (n / name
+			:op1 "Taylo"))
+	:time (x6 / after
+		:op1 (x16 / announce-01
+			:ARG0 (x9 / newspaper
+				:name (n1 / name
+					:op1 "Alexander"
+					:op2 "Aguirre")
+				:ARG0-of (x7 / brig.)
+				:ARG0-of (x14 / have-org-role-91
+					:ARG2 (c / commander)
+					:null_edge (x12 / null_tag)
+					:ARG1 (x13 / organization
+						:name (n2 / name
+							:op1 "Region"))))
+			:ARG1 (x17 / form-01
+				:ARG1 (x22 / force
+					:mod (x20 / special)
+					:ARG2-of (x21 / task-01)
+					:domain (x24 / track-01
+						:ARG1 (x27 / assassin
+							:ARG1 (x26 / person
+								:ARG0-of (r / rebel-01))
+							:location (x30 / capital)))))
+			:ARG1 (xap0 / rate-entity-91
+				:ARG2 (x5 / temporal-quantity
+					:unit (d / day)
+					:quant 1)))))
+
+# ::id 11
+# ::snt President Corazon Aquino deplored the latest killing but said public officials must learn to live with the threat of assassination
+(x8 / contrast-01
+	:ARG1 (x4 / deplore
+		:ARG0 (x2 / newspaper
+			:name (n / name
+				:op1 "Corazon"
+				:op2 "Aquino")
+			:ARG0-of (x1 / have-org-role-91
+				:ARG2 (p / president)))
+		:ARG1 (x7 / kill-01
+			:time (x6 / late
+				:degree (m / most))))
+	:ARG2 (x9 / say-01
+		:ARG1 (x13 / learn-01
+			:ARG1 (x15 / live-01
+				:prep-with (x18 / threaten-01
+					:ARG0 (x20 / assassinate-01)))
+			:ARG0 (xap0 / person
+				:ARG0-of (x11 / have-org-role-91
+					:ARG2 (o / official)
+					:mod (x10 / public))))))
+
+# ::id 12
+# ::snt President Corazon Aquino  said the government had provided bodyguards to Cabinet members who have requested bodyguards  or who have received death threats
+(x4 / say-01
+	:ARG0 (x2 / newspaper
+		:name (n / name
+			:op1 "Corazon"
+			:op2 "Aquino")
+		:ARG0-of (x1 / have-org-role-91
+			:ARG2 (p / president)))
+	:ARG1 (x8 / provide-01
+		:ARG0 (x6 / government-organization
+			:ARG0-of (g / govern-01))
+		:ARG2 (x9 / bodyguard)
+		:ARG2 (x12 / have-org-role-91
+			:ARG2 (m / member)
+			:ARG1 (x11 / government-organization
+				:name (n1 / name
+					:op1 "Cabinet")
+				:example (x17 / or
+					:op2 (x15 / request-01
+						:ARG1 (x16 / bodyguard)
+						:ARG1 (x22 / threaten-01
+							:ARG2 (x21 / die-01))))))))
+
+# ::id 13
+# ::snt the government  is really very unfortunate and Mrs. Aquino  do sympathize with the family of Col. Taylo , said Mrs. Aquino , whose husband Benigno was slain in a political assassination in 1983
+(x19 / say-01
+	:ARG1 (x7 / and
+		:op1 (x6 / fortunate-41
+			:ARG1 (x2 / government-organization
+				:ARG0-of (g / govern-01))
+			:mod (x4 / really)
+			:degree (x5 / very))
+		:op2 (x11 / sympathize
+			:ARG0 x2
+			:ARG0 (x9 / person
+				:name (n1 / name
+					:op1 "Aquino")
+				:ARG0-of (x8 / mrs.))
+			:ARG1 (x14 / family
+				:poss (x17 / person
+					:name (n3 / name
+						:op1 "Taylo")
+					:null_edge (x16 / col.)))))
+	:ARG0 (x21 / person
+		:name (n / name
+			:op1 "Aquino")
+		:ARG0-of (x20 / mrs.)
+		:ARG1-of (x27 / slay-01
+			:ARG1 (x24 / husband)
+			:ARG1 (x25 / person
+				:name (n2 / name
+					:op1 "Benigno"))
+			:ARG2 (x31 / assassinate-01
+				:mod (x30 / politics))
+			:time (x33 / date-entity
+				:year 1983))))
+
+# ::id 14
+# ::snt And Mrs. Aquino  hope that this , perhaps , could be a reminder to all our people in the military and police that Cabinet members  should take necessary precautions to ward off these assasination attempts
+(x1 / and
+	:op2 (x4 / hope-01
+		:ARG0 (x3 / person
+			:name (n / name
+				:op1 "Aquino")
+			:ARG0-of (x2 / mrs.))
+		:ARG1 (x10 / possible
+			:domain (x13 / remind-01
+				:domain (x6 / this)
+				:null_edge (x21 / and
+					:quant (x15 / all)
+					:op1 (x20 / military)
+					:op2 (x22 / police))
+				:ARG1 (x26 / recommend-01
+					:ARG2 (x25 / have-org-role-91
+						:ARG2 (m / member)
+						:ARG1 (x24 / government-organization
+							:name (n1 / name
+								:op1 "Cabinet"))
+						:ARG1 (x29 / precaution-00)))))))
+
+# ::id 15
+# ::snt National Security Adviser Rafael Ileto said the killing of Taylo showed that every soldier and policeman was a potential target of assassination
+(x6 / say-01
+	:ARG0 (x4 / newspaper
+		:name (n / name
+			:op1 "Rafael"
+			:op2 "Ileto")
+		:mod (x2 / security
+			:mod (x1 / nation))
+		:ARG0-of (x3 / advise-01))
+	:ARG1 (x11 / show-01
+		:ARG0 (x8 / kill-01
+			:ARG1 (x10 / person
+				:name (n1 / name
+					:op1 "Taylo")))
+		:ARG0 (x22 / assassinate-01
+			:ARG1 (x20 / target-01
+				:ARG1 (x15 / and
+					:op1 (x14 / soldier
+						:mod (x13 / every))
+					:op2 (x16 / policeman))
+				:mod (x19 / potential)))))
+
+# ::id 16
+# ::snt This is war and somebody is bound to get hurt in the process , Ileto said
+(x16 / say-01
+	:ARG1 (x4 / and
+		:op1 (x1 / this)
+		:op1 (x3 / war)
+		:op2 (x7 / bind-01
+			:ARG1 (x5 / somebody)
+			:ARG1 (x10 / hurt-01
+				:ARG2 (x13 / process))))
+	:ARG0 (x15 / person
+		:name (n / name
+			:op1 "Ileto")))
+
+# ::id 17
+# ::snt National Security Adviser Rafael Ileto  am sure all the major unit commanders are doing bodyguards  best not only to protect bodyguards  men but to counter such acts
+(x4 / newspaper
+	:name (n / name
+		:op1 "Rafael"
+		:op2 "Ileto")
+	:ARG0-of (x3 / advise-01
+		:ARG1 (x2 / security
+			:mod (x1 / nation))))
+
+# ::id 18
+# ::snt Despite the escalating violence , Mrs. Aquino said Mrs. Aquino  still plans to go ahead with a visit to Western Europe this month
+(x8 / say-01
+	:ARG1 (x4 / violence
+		:mod (x3 / escalate-01))
+	:ARG0 (x7 / person
+		:name (n / name
+			:op1 "Aquino")
+		:ARG0-of (x6 / mrs.))
+	:ARG1 (x12 / plan-01
+		:ARG0 (x10 / person
+			:name (n1 / name
+				:op1 "Aquino")
+			:null_edge (x9 / mrs.))
+		:mod (x11 / still)
+		:ARG1 (x14 / go-02
+			:ARG0 x10
+			:ARG2 (x15 / ahead)
+			:ARG4 (x18 / visit-01
+				:ARG1 (x21 / continent
+					:name (n2 / name
+						:op1 "Europe")
+					:null_edge (x20 / country
+						:name (n3 / name
+							:op1 "Western")))
+				:time (x23 / month
+					:mod (x22 / this))))))
+
+# ::id 19
+# ::snt Mrs. Aquino leaves Saturday for an official visit to West Germany
+(x3 / leave-01
+	:ARG0 (x2 / person
+		:name (n / name
+			:op1 "Aquino")
+		:null_edge (x1 / mrs.))
+	:purpose (x8 / visit-01
+		:mod (x7 / official)
+		:ARG1 (x11 / country
+			:name (n1 / name
+				:op1 "Germany")
+			:location (x10 / world-region
+				:name (n2 / name
+					:op1 "West"))))
+	:time (xap0 / date-entity
+		:weekday (x4 / saturday)))
+
+# ::id 20
+# ::snt Mrs. Aquino  will also visit France and Belgium before departing Brussels for home on July 15
+(x5 / visit-01
+	:ARG0 (x2 / person
+		:name (n / name
+			:op1 "Aquino")
+		:ARG0-of (x1 / mrs.))
+	:mod (x4 / also)
+	:ARG1 (x7 / and
+		:op1 (x6 / country
+			:name (n1 / name
+				:op1 "France"))
+		:op2 (x8 / country
+			:name (n2 / name
+				:op1 "Belgium")))
+	:time (x9 / before
+		:op1 (x10 / depart-01
+			:ARG1 (x11 / city
+				:name (n3 / name
+					:op1 "Brussels"))
+			:ARG4 (x13 / home)
+			:time (x15 / date-entity))))
+

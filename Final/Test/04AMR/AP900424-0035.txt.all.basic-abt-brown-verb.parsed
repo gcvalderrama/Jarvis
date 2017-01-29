@@ -1,0 +1,505 @@
+# ::id 1
+# ::snt A seriously ill Elizabeth Taylor battled pneumonia at her hospital , A seriously ill Elizabeth Taylor  breathing assisted by a ventilator , doctors say
+(x24 / say-01
+	:ARG1 (x6 / battle-01
+		:ARG0 (x4 / newspaper
+			:name (n / name
+				:op1 "Elizabeth"
+				:op2 "Taylor")
+			:ARG0-of (x3 / ill
+				:manner (x2 / serious)))
+		:ARG1 (x7 / pneumonia)
+		:location (x10 / hospital
+			:poss (x15 / person
+				:name (n1 / name
+					:op1 "Elizabeth")
+				:ARG1-of (x14 / ill
+					:manner (x13 / serious))
+				:ARG1-of (x18 / assist-01
+					:ARG0 (x21 / ventilator)))))
+	:ARG0 (x23 / doctor))
+
+# ::id 2
+# ::snt Hospital officials described her condition late Monday as stabilizing after a lung biopsy to determine the cause of the pneumonia
+(x3 / describe-01
+	:ARG1 (x5 / condition)
+	:time (x6 / late
+		:op1 (x7 / monday))
+	:ARG2 (x9 / stabilize-01
+		:time (x10 / after
+			:op1 (x13 / biopsy
+				:mod (x12 / lung)
+				:ARG1-of (x15 / determine-01
+					:ARG1 (x17 / cause
+						:ARG1 (x20 / pneumonia))))))
+	:ARG1 (xap0 / person
+		:ARG0-of (x2 / have-org-role-91
+			:ARG2 (o / official)
+			:ARG1 (x1 / hospital))))
+
+# ::id 3
+# ::snt Analysis of the tissue sample was expected to take until Thursday , said A seriously ill Elizabeth Taylor  spokeswoman , Chen Sam
+(x13 / say-01
+	:ARG1 (x7 / expect-01
+		:ARG1 (x9 / take-01
+			:ARG0 (x1 / analyze-01
+				:ARG1 (x5 / thing
+					:ARG1-of (s1 / sample-01)
+					:mod (x4 / tissue)))
+			:time (x10 / until
+				:op1 (xap0 / date-entity
+					:weekday (x11 / thursday)))))
+	:name (x17 / name
+		:op1 "Elizabeth"
+		:op2 "Taylor"
+		:op3 "spokeswoman"
+		:op4 ","
+		:op5 "Chen"
+		:op6 "Sam"
+		:ARG1-of (x16 / ill
+			:manner (x15 / serious))
+		:ARG0-of (x19 / have-org-role-91
+			:ARG2 (s / spokeswoman)
+			:ARG1 (x18 / person
+				:name (n / name
+					:op1 "Taylor")))))
+
+# ::id 4
+# ::snt The 58-year-old actress , who won best-actress Oscars for Butterfield 8 and Who is Afraid of Virginia Woolf , has been hospitalized more than two weeks
+(x22 / hospitalize-01
+	:ARG1 (x3 / actress
+		:mod (x2 / person
+			:name (n / name
+				:op1 "58-year-old"))
+		:ARG0-of (x6 / win-01
+			:beneficiary (x10 / organization
+				:name (n1 / name
+					:op1 "Butterfield"))
+			:quant 8
+			:ARG1 (x12 / and)
+			:ARG0 (x18 / country
+				:name (n2 / name
+					:op1 "Woolf")
+				:mod (x17 / country
+					:name (n3 / name
+						:op1 "Virginia")))))
+	:ARG1 (x23 / more-than)
+	:time (x26 / week
+		:quant 2))
+
+# ::id 5
+# ::snt The 58-year-old actress  was in the intensive care unit at St. John's Hospital and Health Center
+(x3 / actress
+	:mod (x2 / person
+		:name (n / name
+			:op1 "58-year-old"))
+	:ARG1 (x9 / unit
+		:ARG0-of (x8 / care-01
+			:manner (x7 / intensive))
+		:location (x11 / government-organization
+			:name (n1 / name
+				:op1 "St."
+				:op2 "John"
+				:op3 "'s"
+				:op4 "Hospital"
+				:op5 "and"
+				:op6 "Health"
+				:op7 "Center"))))
+
+# ::id 6
+# ::snt The 58-year-old actress  is seriously ill , her doctors said in a statement
+(x13 / state-01
+	:ARG1 (x6 / ill-41
+		:domain (x3 / actress
+			:mod (x2 / person
+				:name (n / name
+					:op1 "58-year-old")))
+		:manner (x5 / serious))
+	:ARG0 (x9 / doctor))
+
+# ::id 7
+# ::snt After surgery , The 58-year-old actress  breathing is now being assisted by a ventilator
+(x11 / assist-01
+	:time (x1 / after
+		:op1 (x2 / surgery))
+	:ARG1 (x7 / breathe-01
+		:mod (x5 / person
+			:name (n / name
+				:op1 "58-year-old"))
+		:ARG0-of (x6 / actress))
+	:time (x9 / now)
+	:ARG0 (x14 / ventilator))
+
+# ::id 8
+# ::snt The 58-year-old actress  condition is presently stabilizing and The 58-year-old actress  physicians are pleased with her progress
+(x8 / and
+	:op1 (x7 / stabilize-01
+		:ARG1 (x4 / condition
+			:mod (x3 / actress
+				:mod (x2 / person
+					:name (n1 / name
+						:op1 "58-year-old"))))
+		:manner (x6 / present))
+	:op2 (x14 / please-01
+		:ARG1 x4
+		:ARG1 (x12 / physician
+			:mod (x10 / person
+				:name (n / name
+					:op1 "58-year-old"))
+			:ARG0-of (x11 / actress))
+		:ARG1 (x17 / progress-01)))
+
+# ::id 9
+# ::snt Another spokewoman for the actress , Lisa Del Favaro , said Miss Taylor's family was at Miss Taylor's family  bedside
+(x11 / say-01
+	:time (x2 / spokewoman
+		:ARG3 (x5 / actress)
+		:name (x7 / name
+			:op1 "Lisa"
+			:op2 "Del"
+			:op3 "Favaro"))
+	:ARG0 (x15 / family
+		:name (x12 / name
+			:op1 "Miss"
+			:op2 "Taylor")
+		:location (x22 / bedside
+			:poss (x19 / person
+				:name (n / name
+					:op1 "Taylor"))
+			:mod (x21 / family))))
+
+# ::id 10
+# ::snt Another spokewoman for the actress , Lisa Del Favaro  did not identify the family members
+(x12 / identify-01
+	:ARG0 (x7 / person
+		:name (n / name
+			:op1 "Lisa"
+			:op2 "Del"
+			:op3 "Favaro")
+		:ARG0-of (x2 / spokewoman
+			:ARG1 (x5 / actress
+				:mod (x1 / another))))
+	:ARG1 (x15 / have-org-role-91
+		:ARG2 (m / member)
+		:ARG1 (x14 / family)))
+
+# ::id 11
+# ::snt Miss Taylor entered Daniel Freeman Marina Hospital on April 9 with a persistent fever and sinus infection , doctors said
+(x20 / say-01
+	:ARG1 (x3 / enter-01
+		:ARG0 (x2 / person
+			:name (n / name
+				:op1 "Taylor")
+			:null_edge (x1 / miss))
+		:ARG1 (x4 / person
+			:name (n1 / name
+				:op1 "Daniel"
+				:op2 "Freeman"
+				:op3 "Marina"
+				:op4 "Hospital"))
+		:time (x9 / date-entity)
+		:ARG0 (x15 / and
+			:op1 (x14 / fever
+				:mod (x13 / persist-01))
+			:op2 (x17 / infect-01
+				:mod (x16 / sinus))))
+	:ARG0 (x19 / doctor))
+
+# ::id 12
+# ::snt A seriously ill Elizabeth Taylor  condition worsened and A seriously ill Elizabeth Taylor  was transferred April 16 to St. John's and moved into intensive care on Friday
+(x8 / and
+	:op1 (x7 / worsen-01
+		:ARG0 (x6 / condition
+			:mod (x3 / ill
+				:manner (x2 / serious))
+			:mod (x5 / person
+				:name (n / name
+					:op1 "Taylor")
+				:mod (x4 / person
+					:name (n2 / name
+						:op1 "Elizabeth")))))
+	:op2 (x22 / and
+		:op1 (x15 / transfer-01
+			:ARG1 (x12 / name
+				:op1 "Elizabeth"
+				:op2 "Taylor"
+				:ARG0-of (x11 / ill
+					:manner (x10 / serious)))
+			:ARG1 (x16 / name
+				:op1 "April"
+				:op2 "16")
+			:ARG2 (x20 / person
+				:name (n1 / name
+					:op1 "John")
+				:null_edge (x19 / null_tag)))
+		:op2 (x23 / move-01
+			:ARG2 (x26 / care
+				:mod (x25 / intensive))
+			:time (xap0 / date-entity
+				:weekday (x28 / friday)))))
+
+# ::id 13
+# ::snt her condition  is serious , but her doctors  are really pleased with A seriously ill Elizabeth Taylor  progress
+(x6 / contrast-01
+	:ARG1 (x4 / serious-41
+		:domain (x2 / condition))
+	:ARG2 (x11 / please-01
+		:ARG1 x2
+		:ARG0 (x8 / doctor)
+		:mod (x10 / really)
+		:ARG1 (x18 / progress-01
+			:manner (x15 / ill
+				:manner (x14 / serious)
+				:ARG1 (x16 / person
+					:name (n / name
+						:op1 "Elizabeth"))))))
+
+# ::id 14
+# ::snt A seriously ill Elizabeth Taylor  is not well
+(x4 / newspaper
+	:name (n / name
+		:op1 "Elizabeth"
+		:op2 "Taylor")
+	:mod (x3 / ill
+		:manner (x2 / serious)))
+
+# ::id 15
+# ::snt A seriously ill Elizabeth Taylor  is not on A seriously ill Elizabeth Taylor  deathbed or anything , Ms. Sam said late Monday
+(x20 / say-01
+	:ARG0 (x4 / newspaper
+		:name (n / name
+			:op1 "Elizabeth"
+			:op2 "Taylor")
+		:mod (x3 / ill
+			:manner (x2 / serious))
+		:ARG0-of (x15 / or
+			:op1 (x14 / deathb
+				:mod (x11 / ill
+					:manner (x10 / serious))
+				:ARG0 (x12 / person
+					:name (n2 / name
+						:op1 "Elizabeth")))
+			:op2 (x16 / anything)))
+	:ARG0 (x19 / person
+		:name (n1 / name
+			:op1 "Sam")
+		:null_edge (x18 / ms.))
+	:time (x21 / late
+		:op1 (x22 / monday)))
+
+# ::id 16
+# ::snt While it is unusual to put a pneumonia patient on a ventilator , a ventilator  does not mean that person is near death , said Dr. John G. Mohler , a University of Southern California lung disease expert who emphasized a pneumonia patient  had no direct knowledge of Miss Taylor's condition
+(x25 / say-01
+	:ARG1 (x18 / mean-01
+		:mod (x4 / usual
+			:polarity -
+			:ARG1 (x12 / ventilator
+				:ARG0 (x9 / patient
+					:mod (x8 / pneumonia))))
+		:ARG0 (x15 / ventilator)
+		:ARG0 (x20 / person)
+		:ARG1 (x21 / be-02
+			:null_edge (x22 / near
+				:op1 (x23 / die-01)))
+		:ARG0 (x27 / name
+			:op1 "John"
+			:op2 "G."
+			:op3 "Mohler"
+			:ARG1-of (x38 / person
+				:ARG1-of (e / expert-41)
+				:null_edge (x32 / null_tag)
+				:ARG1 (x35 / state
+					:name (n / name
+						:op1 "California")
+					:location (x34 / organization
+						:name (n1 / name
+							:op1 "Southern")))
+				:ARG2 (x36 / lung)
+				:ARG2 (x37 / disease)
+				:ARG0-of (x40 / emphasize-01
+					:ARG0 x27
+					:ARG1 (x44 / have-03
+						:ARG0 (x43 / patient
+							:mod (x42 / pneumonia))
+						:ARG0 (x52 / condition
+							:ARG0-of (x47 / know-01
+								:polarity -
+								:manner (x46 / direct))
+							:poss (x50 / person
+								:name (n2 / name
+									:op1 "Taylor")))))))))
+
+# ::id 17
+# ::snt Doctors may put a patient on a ventilator simply to restore oxygen in the blood to proper levels if pneumonia-related breathing difficulties have reduced those levels , Mohler said
+(x29 / say-01
+	:ARG1 (x2 / possible
+		:domain (x3 / put-01
+			:ARG0 (x1 / doctor)
+			:ARG1 (x5 / patient)
+			:ARG2 (x8 / ventilator)
+			:purpose (x11 / restore-01
+				:ARG1 (x12 / oxygen)
+				:ARG2 (x15 / blood)
+				:ARG4 (x18 / level
+					:mod (x17 / proper))
+				:time (x24 / reduce-01
+					:ARG0 (x22 / difficulty
+						:mod (x20 / pneumonia-related)
+						:mod (x21 / breathe-01))
+					:ARG1 (x26 / level))))
+		:mod (x9 / simple))
+	:ARG0 (x28 / person
+		:name (n / name
+			:op1 "Mohler")))
+
+# ::id 18
+# ::snt a ventilator  may be that because a patient on a ventilator  is such a prominent person , her doctors  are taking a conservative course , John G. Mohler  added
+(x29 / add-01
+	:ARG1 (x2 / ventilator
+		:mod (x3 / possible)
+		:ARG1-of (x6 / cause-01
+			:ARG0 (x8 / patient
+				:ARG1 (x11 / ventilator))
+			:ARG0 (x16 / person
+				:mod (x13 / such)
+				:mod (x15 / prominent)))
+		:ARG0-of (x21 / take-01
+			:ARG0 (x19 / doctor)
+			:ARG1 (x24 / course
+				:mod (x23 / conservative))))
+	:ARG0 (x26 / person
+		:name (n / name
+			:op1 "John"
+			:op2 "G."
+			:op3 "Mohler")))
+
+# ::id 19
+# ::snt Miss Taylor has been plagued with health problems for years , particularly back troubles from filming of National Velvetin 1945 , when A seriously ill Elizabeth Taylor  fell off a horse
+(x5 / plague-01
+	:ARG1 (x2 / person
+		:name (n / name
+			:op1 "Taylor")
+		:ARG0-of (x1 / miss))
+	:ARG1 (x8 / problem
+		:mod (x7 / health))
+	:ARG1 (x14 / trouble
+		:mod (x12 / particular)
+		:mod (x13 / back))
+	:ARG2 (x16 / film
+		:time-of (x28 / fall-01
+			:ARG1 (x18 / nation)
+			:ARG1 (x26 / newspaper
+				:name (n1 / name
+					:op1 "Elizabeth"
+					:op2 "Taylor")
+				:ARG0-of (x25 / ill
+					:manner (x24 / serious)))
+			:ARG4 (x29 / off
+				:op1 (x31 / horse))))
+	:duration (xap0 / multiple
+		:op1 (x10 / temporal-quantity
+			:unit (y / year))))
+
+# ::id 20
+# ::snt In 1983 A seriously ill Elizabeth Taylor  acknowledged a 35-year addiction to sleeping pills and painkillers
+(x8 / acknowledge-01
+	:time (x2 / date-entity
+		:year 1983)
+	:ARG0 (x6 / newspaper
+		:name (n / name
+			:op1 "Elizabeth"
+			:op2 "Taylor")
+		:ARG0-of (x5 / ill
+			:manner (x4 / serious)))
+	:ARG1 (x11 / addict-01
+		:mod (x10 / person
+			:name (n1 / name
+				:op1 "35-year"))
+		:ARG2 (x15 / and
+			:op1 (x14 / pill
+				:mod (x13 / sleep-01))
+			:op2 (x16 / painkiller))))
+
+# ::id 21
+# ::snt Miss Taylor has been treated for alcohol and drug abuse at the Betty Ford Clinic
+(x5 / treat-01
+	:ARG1 (x2 / person
+		:name (n / name
+			:op1 "Taylor")
+		:null_edge (x1 / miss))
+	:ARG1 (x8 / and
+		:op1 (x7 / alcohol)
+		:op2 (x10 / abuse-01
+			:ARG1 (x9 / drug)))
+	:location (x13 / government-organization
+		:name (n1 / name
+			:op1 "Betty"
+			:op2 "Ford"
+			:op3 "Clinic")))
+
+# ::id 22
+# ::snt During a nearly fatal bout with pneumonia in 1961 , Miss Taylor underwent a tracheotomy , an incision into A seriously ill Elizabeth Taylor  windpipe to help A seriously ill Elizabeth Taylor  breathe
+(x13 / undergo-01
+	:ARG2 (x5 / bout
+		:mod (x4 / fatal
+			:degree (x3 / nearly))
+		:prep-with (x7 / pneumonia)
+		:time (x9 / date-entity
+			:year 1961))
+	:ARG0 (x11 / newspaper
+		:name (n / name
+			:op1 "Miss"
+			:op2 "Taylor"))
+	:ARG1 (x18 / incision
+		:ARG1 (x15 / tracheotomy)
+		:part-of (x25 / windpipe
+			:mod (x22 / ill
+				:manner (x21 / serious)
+				:ARG1 (x23 / person
+					:name (n1 / name
+						:op1 "Elizabeth")))
+			:ARG0-of (x27 / help-01
+				:ARG1 (x33 / breathe-01
+					:ARG0 (x31 / newspaper
+						:name (n2 / name
+							:op1 "Elizabeth"
+							:op2 "Taylor")
+						:mod (x30 / ill
+							:manner (x29 / serious))))))))
+
+# ::id 23
+# ::snt A seriously ill Elizabeth Taylor  appeared at the 1961 Academy Awards with a bandage over A seriously ill Elizabeth Taylor  scar as A seriously ill Elizabeth Taylor  accepted the Butterfield 8 Oscar
+(x6 / appear-01
+	:ARG1 (x4 / newspaper
+		:name (n / name
+			:op1 "Elizabeth"
+			:op2 "Taylor")
+		:ARG0-of (x3 / ill
+			:manner (x2 / serious)))
+	:time (x11 / thing
+		:ARG1-of (a / award-01)
+		:null_edge (x9 / date-entity
+			:year 1961)
+		:null_edge (x10 / country
+			:name (n1 / name
+				:op1 "Academy")))
+	:ARG1 (x14 / bandage)
+	:ARG1 (x21 / scar
+		:mod (x18 / ill
+			:manner (x17 / serious))
+		:mod (x19 / person
+			:name (n2 / name
+				:op1 "Elizabeth"))
+		:mod (x20 / person
+			:name (n3 / name
+				:op1 "Taylor"))
+		:ARG1-of (x28 / accept-01
+			:ARG0 (x26 / newspaper
+				:name (n4 / name
+					:op1 "Elizabeth"
+					:op2 "Taylor")
+				:ARG0-of (x25 / ill
+					:manner (x24 / serious)))
+			:ARG1 (x32 / oscar
+				:quant 8))))
+

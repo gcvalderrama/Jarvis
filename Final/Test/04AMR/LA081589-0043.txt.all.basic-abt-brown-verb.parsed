@@ -1,0 +1,815 @@
+# ::id 1
+# ::snt Freshman congressman Larkin Smith (R-Miss )
+(x3 / name
+	:op1 "Larkin"
+	:op2 "Smith"
+	:ARG0-of (x2 / have-org-role-91
+		:ARG2 (c / congressman)
+		:ARG1 (x1 / world-region
+			:name (n / name
+				:op1 "Freshman"))))
+
+# ::id 2
+# ::snt died in a light plane crash in Mississippi , authorities said Monday , making Freshman congressman Larkin Smith (R-Miss ) the second member of the House killed in an aviation accident in a week
+(x11 / say-01
+	:ARG1 (x1 / die-01
+		:location (x6 / crash-01
+			:mod (x4 / light)
+			:ARG1 (x5 / plane))
+		:location (x8 / country
+			:name (n / name
+				:op1 "Mississippi"))
+		:ARG0-of (x14 / make-02
+			:ARG2 (x24 / member
+				:ARG0 (x17 / newspaper
+					:name (n1 / name
+						:op1 "Larkin"
+						:op2 "Smith")
+					:ARG0-of (x16 / have-org-role-91
+						:ARG2 (c / congressman)
+						:ARG1 (x15 / world-region
+							:name (n3 / name
+								:op1 "Freshman")))
+					:ARG0-of (x20 / r-miss))
+				:ARG1 (x27 / government-organization
+					:name (n2 / name
+						:op1 "House"))
+				:ARG2-of (x28 / kill-01
+					:ARG0 x17
+					:time (x32 / accident
+						:mod (x31 / aviation)
+						:duration (x35 / temporal-quantity
+							:unit (w / week)))))))
+	:ARG0 (x10 / authority)
+	:time (xap0 / date-entity
+		:weekday (x12 / monday)))
+
+# ::id 3
+# ::snt The single-engine Cessna 177 crashed Sunday night in thick woods near the tiny community of Janice
+(x5 / crash-01
+	:ARG0 (x3 / organization
+		:name (n / name
+			:op1 "Cessna")
+		:mod (x2 / single-engine)
+		:null_edge 177)
+	:time (x7 / night
+		:mod (xap0 / date-entity
+			:null_edge (x6 / null_tag)))
+	:location (x10 / wood
+		:mod (x9 / thick)
+		:location (x11 / near
+			:op1 (x14 / community
+				:mod (x13 / tiny)
+				:mod (x16 / person
+					:name (n1 / name
+						:op1 "Janice"))))))
+
+# ::id 4
+# ::snt Smith and the pilot , Charles Vierling , who also was killed , were flying from Hattiesburg to Gulfport , according to federal and local officials
+(x15 / fly-01
+	:ARG0 (x2 / and
+		:op1 (x1 / person
+			:name (n2 / name
+				:op1 "Smith"))
+		:op2 (x4 / pilot-01
+			:name (x6 / name
+				:op1 "Charles"
+				:op2 "Vierling"
+				:ARG0-of (x12 / kill-01
+					:mod (x10 / also)))))
+	:destination (x17 / country
+		:name (n / name
+			:op1 "Hattiesburg"))
+	:destination (x19 / country
+		:name (n1 / name
+			:op1 "Gulfport"))
+	:ARG0 (xap1 / person
+		:ARG0-of (x26 / have-org-role-91
+			:ARG2 (o / official)
+			:ARG1 (x24 / and
+				:op1 (x23 / government-organization
+					:name (n3 / name
+						:op1 "federal"))
+				:op1 (xap0 / press
+					:mod (x25 / local))))))
+
+# ::id 5
+# ::snt Searchers combed the heavily wooded DeSoto National Forest through the night but were unable to find the wreckage until Monday morning , when Searchers  spotted the heavily wooded DeSoto National Forest  from the air
+(x12 / contrast-01
+	:ARG1 (x1 / searcher)
+	:ARG2 (x2 / comb
+		:name (x6 / name
+			:op1 "DeSoto"
+			:op2 "National"
+			:op3 "Forest"
+			:mod (x5 / wooded
+				:degree (x4 / heavily)))
+		:time (x11 / night))
+	:ARG2 (x16 / find-01
+		:ARG0 x6
+		:ARG1 (x18 / wreckage)
+		:time (x19 / until
+			:op1 (x21 / morning
+				:ARG0-of (x25 / spot-01
+					:ARG0 (x24 / searchers)
+					:ARG1 (x29 / name
+						:op1 "DeSoto"
+						:op2 "National"
+						:op3 "Forest"
+						:mod (x28 / wooded
+							:degree (x27 / heavily)))
+					:ARG2 (x34 / air))
+				:time (xap0 / date-entity
+					:null_edge (x20 / null_tag))))))
+
+# ::id 6
+# ::snt There was a 300-foot-long path cut by the plane , Harrison County Sheriff's Department Capt. Rick Gaston said in a telephone interview
+(x19 / say-01
+	:ARG0 (x5 / path
+		:mod (x4 / 300-foot-long)
+		:consist-of (x6 / cut-01
+			:ARG0 (x9 / plane)))
+	:ARG0 (x18 / person
+		:name (n / name
+			:op1 "Gaston")
+		:ARG0-of (x11 / company
+			:name (n1 / name
+				:op1 "Harrison"
+				:op2 "County"
+				:op3 "Sheriff"))
+		:null_edge (x15 / null_tag)
+		:null_edge (x16 / capt.)
+		:null_edge (x17 / person
+			:name (n2 / name
+				:op1 "Rick")))
+	:time (x23 / interview-01
+		:mod (x22 / telephone)))
+
+# ::id 7
+# ::snt Smith , 45 , died the same day the wreckage of a plane carrying Rep. Mickey Leland (D-Tex )
+(x5 / die-01
+	:ARG1 (x1 / person
+		:name (n / name
+			:op1 "Smith")
+		:null_edge 45)
+	:time (x8 / day
+		:ARG1-of (x7 / same-41))
+	:ARG1 (x10 / wreckage
+		:ARG1 (x13 / plane
+			:ARG0-of (x14 / carry-01
+				:ARG1 (x16 / name
+					:op1 "Mickey"
+					:op2 "Leland"
+					:ARG0-of (x15 / rep.)
+					:ARG0-of (x19 / d-tex))))))
+
+# ::id 8
+# ::snt and 15 others was found on an Ethiopian mountainside
+(x1 / and
+	:op1 (x5 / find-02
+		:ARG1 (x3 / other
+			:quant 15)
+		:location (x9 / mountainside
+			:mod (x8 / organization
+				:name (n / name
+					:op1 "Ethiopian")))))
+
+# ::id 9
+# ::snt Leland's plane had been missing almost a week after Rep. Mickey Leland (D-Tex ) took off on a fact-finding mission to combat hunger
+(xap1 / obligate-01
+	:ARG2 (x6 / miss-03
+		:ARG0 (x3 / plane
+			:poss (x1 / person
+				:name (n / name
+					:op1 "Leland")))
+		:mod (x7 / almost
+			:time (x9 / week))
+		:time (x10 / after
+			:op1 (x17 / take-01
+				:ARG0 (x13 / person
+					:name (n1 / name
+						:op1 "Leland")
+					:null_edge (x11 / rep.)
+					:null_edge (x12 / null_tag)
+					:null_edge (x15 / d-tex)
+					:ARG0-of (x22 / mission
+						:poss x13
+						:purpose (x24 / combat-01
+							:ARG1 (x25 / hunger-01))
+						:purpose (xap0 / find-01
+							:ARG1 (x21 / fact))))))))
+
+# ::id 10
+# ::snt News of Smith's death was followed by an outpouring of sympathy from Mississippi to Washington , even as Smith's colleagues were still mourning Leland's death
+(x7 / follow-01
+	:ARG1 (x1 / news
+		:topic (x5 / die-01
+			:ARG1 (x3 / person
+				:name (n / name
+					:op1 "Smith"))))
+	:ARG2 (x10 / outpouring
+		:mod (x12 / sympathy
+			:source (x14 / country
+				:name (n1 / name
+					:op1 "Mississippi")
+				:location (x16 / city
+					:name (n2 / name
+						:op1 "Washington")))))
+	:concession (x18 / even
+		:op1 (x25 / mourn
+			:ARG0 (x22 / colleague
+				:ARG0 (x20 / person
+					:name (n3 / name
+						:op1 "Smith")))
+			:mod (x24 / still)
+			:ARG1 (x28 / die-01
+				:ARG1 (x26 / person
+					:name (n4 / name
+						:op1 "Leland"))))))
+
+# ::id 11
+# ::snt At the White House , spokesman Marlin Fitzwater said President and Mrs. Bush deeply regret Smith's death , adding that Smith , who was elected to a seat vacated by Sen. Trent Lott (R-Miss )
+(x9 / say-01
+	:location (x4 / government-organization
+		:name (n / name
+			:op1 "House")
+		:null_edge (x3 / null_tag))
+	:ARG0 (x8 / person
+		:name (n1 / name
+			:op1 "Fitzwater")
+		:null_edge (x6 / have-org-role-91
+			:ARG2 (s / spokesman)))
+	:ARG1 (x15 / regret-01
+		:ARG1 (x11 / and
+			:op1 (x10 / have-org-role-91
+				:ARG2 (p / president))
+			:op2 (x12 / mrs.))
+		:degree (x14 / deep)
+		:ARG1 (x18 / die-01
+			:ARG1 (x16 / person
+				:name (n2 / name
+					:op1 "Smith"))
+			:ARG0-of (x20 / add-02
+				:ARG1 (x22 / person
+					:name (n3 / name
+						:op1 "Smith")
+					:mod (x21 / that)
+					:ARG1-of (x26 / elect-01
+						:ARG2 (x29 / seat-01
+							:ARG1-of (x30 / vacate
+								:ARG0 (x33 / name
+									:op1 "Trent"
+									:op2 "Lott"
+									:ARG0-of (x32 / sen.))))))))))
+
+# ::id 12
+# ::snt , was just beginning a promising career in the Congress
+(x4 / begin-01
+	:mod (x3 / just)
+	:ARG1 (x7 / career
+		:mod (x6 / promising))
+	:ARG1 (x10 / government-organization
+		:name (n / name
+			:op1 "Congress")))
+
+# ::id 13
+# ::snt Smith , a former sheriff and police chief , was already developing a reputation on the House Judiciary Committee as a zealous opponent of illegal drugs
+(x12 / develop-02
+	:ARG1 (x6 / and
+		:op2 (x5 / sheriff
+			:mod (x4 / former)
+			:mod (x8 / chief
+				:ARG1 (x7 / police))))
+	:time (x11 / already)
+	:ARG1 (x14 / reputation
+		:poss (x19 / organization
+			:name (n / name
+				:op1 "Committee")
+			:null_edge (x17 / have-org-role-91
+				:ARG1 (g / government-organization
+					:name (n1 / name
+						:op1 "House")))
+			:null_edge (x18 / null_tag)))
+	:ARG2 (x23 / person
+		:ARG0-of (o / oppose-01)
+		:mod (x22 / zeal)
+		:ARG1 (x26 / drug
+			:mod (x25 / law
+				:polarity -))))
+
+# ::id 14
+# ::snt Smith , a former sheriff and police chief  (the congressional delegation )had come to depend on Smith  in the fight against drugs , said Rep. G. V. (Sonny )Montgomery (D-Miss )
+(x26 / say-01
+	:ARG1 (x6 / and
+		:op1 (x1 / person
+			:name (n / name
+				:op1 "Smith"))
+		:op2 (x5 / sheriff
+			:mod (x4 / former)
+			:mod (x8 / chief
+				:ARG1 (x7 / police))
+			:ARG1-of (x15 / come-01
+				:ARG1 (x12 / delegation
+					:mod (x11 / government-organization
+						:name (n1 / name
+							:op1 "congressional")))
+				:purpose (x17 / depend-01
+					:ARG1 (x19 / person
+						:name (n2 / name
+							:op1 "Smith"))
+					:ARG2 (x22 / fight-01
+						:ARG0 x19
+						:ARG1 (x24 / drug))
+					:ARG0 (x28 / name
+						:op1 "G."
+						:op2 "V."
+						:op3 "-LRB-"
+						:op4 "Sonny"
+						:op5 "-RRB-"
+						:op6 "Montgomery"
+						:ARG0-of (x27 / rep.)
+						:ARG0-of (x35 / d-miss)))))))
+
+# ::id 15
+# ::snt This is a tremendous loss to his family , his state , and the nation
+(x5 / loss
+	:domain (x1 / this)
+	:degree (x4 / tremendous)
+	:ARG2 (x13 / and
+		:op1 (x8 / family)
+		:op2 (x11 / state)
+		:op2 (x15 / nation)))
+
+# ::id 16
+# ::snt Smith had thrown out the first ball at the Dixie Youth World Series baseball tournament Sunday and was heading home to Gulfport , taking off at about 9:10 p.m. for the 35-minute flight
+(x17 / and
+	:op1 (x3 / throw-01
+		:ARG0 (x1 / person
+			:name (n / name
+				:op1 "Smith"))
+		:ARG1 (x7 / ball
+			:location (x15 / tournament
+				:mod (x10 / country
+					:name (n2 / name
+						:op1 "Dixie"))
+				:mod (x11 / country
+					:name (n3 / name
+						:op1 "Youth"))
+				:mod (x12 / country
+					:name (n4 / name
+						:op1 "World"))
+				:mod (x13 / country
+					:name (n5 / name
+						:op1 "Series"))
+				:mod (x14 / baseball)
+				:time (xap0 / date-entity
+					:weekday (x16 / sunday)))))
+	:op2 (x19 / head-01
+		:ARG0 x1
+		:ARG4 (x20 / home)
+		:ARG1 (x22 / country
+			:name (n1 / name
+				:op1 "Gulfport")
+			:ARG0-of (x24 / take-01
+				:null_edge (x28 / include-91)
+				:purpose (x33 / fly-01
+					:op (f / flight)
+					:mod (x32 / person
+						:name (n6 / name
+							:op1 "35-minute")))))))
+
+# ::id 17
+# ::snt Jack Barker , a Federal Aviation Administration spokesman here , said the plane lost radar contact at 9:25
+(x11 / say-01
+	:ARG0 (x1 / newspaper
+		:name (n / name
+			:op1 "Jack"
+			:op2 "Barker")
+		:ARG0-of (x8 / have-org-role-91
+			:ARG2 (s / spokesman)
+			:null_edge (x5 / null_tag)
+			:ARG1 (x6 / organization
+				:name (n1 / name
+					:op1 "Aviation"))
+			:ARG1 (x7 / government-organization
+				:name (n2 / name
+					:op1 "Administration"))
+			:location (x9 / here)))
+	:ARG1 (x14 / lose-02
+		:ARG0 (x13 / plane)
+		:ARG1 (x16 / contact-01
+			:poss x13
+			:mod (x15 / radar))
+		:time (x18 / date-entity)))
+
+# ::id 18
+# ::snt Jack Barker  said area residents heard the airplane crash and notified officials
+(x3 / say-01
+	:ARG0 (x1 / newspaper
+		:name (n / name
+			:op1 "Jack"
+			:op2 "Barker"))
+	:ARG1 (x10 / and
+		:op1 (x6 / hear-01
+			:ARG0 (x5 / person
+				:ARG0-of (r / reside-01)
+				:ARG1 (x4 / area))
+			:ARG1 (x9 / crash-01
+				:mod (x8 / airplane)))
+		:op2 (x11 / notify-01
+			:ARG1 (xap0 / person
+				:ARG0-of (x12 / have-org-role-91
+					:ARG2 (o / official))))))
+
+# ::id 19
+# ::snt Barker said visibility was 4 to 6 miles , and rain was reported , but not heavy
+(x2 / say-01
+	:ARG0 (x1 / person
+		:name (n / name
+			:op1 "Barker"))
+	:ARG2 (x8 / distance-quantity
+		:unit (m / mile)
+		:domain (x3 / visibility)
+		:null_edge 4
+		:quant 6
+		:ARG1-of (x13 / report-01
+			:ARG1 (x11 / rain)
+			:manner (x17 / heavy))))
+
+# ::id 20
+# ::snt Lamar Breland told the Associated Press that Lamar Breland  wife was preparing to go to bed , and area residents  heard a plane coming over
+(x3 / tell-01
+	:ARG0 (x1 / newspaper
+		:name (n / name
+			:op1 "Lamar"
+			:op2 "Breland"))
+	:ARG2 (x5 / publication
+		:name (n1 / name
+			:op1 "Associated"
+			:op2 "Press"))
+	:ARG1 (x18 / and
+		:op1 (x12 / prepare-02
+			:ARG0 (x10 / wife
+				:poss (x8 / person
+					:name (n2 / name
+						:op1 "Lamar"))
+				:mod (x9 / person
+					:name (n3 / name
+						:op1 "Breland"))))
+		:op1 (x14 / go-02
+			:ARG1 x10
+			:ARG4 (x16 / bed))
+		:op2 (x21 / hear-01
+			:ARG0 x10
+			:ARG0 (x20 / person
+				:ARG0-of (r / reside-01)
+				:ARG1 (x19 / area))
+			:ARG1 (x23 / plane
+				:ARG1-of (x24 / come-01
+					:path (x25 / over))))))
+
+# ::id 21
+# ::snt Lamar Breland  thought at the time the Associated Press  was unusual for a plane to be in the area at night
+(x3 / think-01
+	:ARG0 (x1 / newspaper
+		:name (n / name
+			:op1 "Lamar"
+			:op2 "Breland"))
+	:ARG2 (x11 / usual
+		:polarity -
+		:ARG0 (x9 / press
+			:null_edge (x8 / null_tag))
+		:ARG1 (x14 / plane
+			:location (x19 / area)
+			:time (x21 / night))))
+
+# ::id 22
+# ::snt Lamar Breland  said Lamar Breland  heard a revving sound and then a crash
+(x3 / say-01
+	:ARG0 (x1 / newspaper
+		:name (n / name
+			:op1 "Lamar"
+			:op2 "Breland"))
+	:ARG1 (x6 / hear-01
+		:ARG0 (x4 / newspaper
+			:name (n1 / name
+				:op1 "Lamar"
+				:op2 "Breland"))
+		:ARG1 (x10 / and
+			:op1 (x9 / sound
+				:ARG0-of (x8 / rev))
+			:op2 (x13 / crash-01))))
+
+# ::id 23
+# ::snt In Miami , Jorge Prellezo , regional director of the National Transportation Safety Board , said a team of investigators had been dispatched to the scene
+(x16 / say-01
+	:location (x2 / country
+		:name (n / name
+			:op1 "Miami"))
+	:ARG0 (x4 / newspaper
+		:name (n1 / name
+			:op1 "Jorge"
+			:op2 "Prellezo")
+		:ARG0-of (x8 / have-org-role-91
+			:ARG2 (d / director)
+			:mod (x7 / region)
+			:ARG1 (x11 / government-organization
+				:name (n2 / name
+					:op1 "National"
+					:op2 "Transportation"
+					:op3 "Safety"
+					:op4 "Board"))))
+	:ARG1 (x23 / dispatch-01
+		:ARG1 (x18 / team
+			:consist-of (x20 / person
+				:ARG0-of (i / investigate-01)))
+		:ARG2 (x26 / scene)))
+
+# ::id 24
+# ::snt Investigators generally take months to establish a probable cause of such incidents
+(x3 / take-01
+	:ARG0 (x1 / person
+		:ARG0-of (i / investigate-01))
+	:manner (x2 / general)
+	:ARG0 (x6 / establish-01
+		:ARG1 (x9 / cause
+			:mod (x8 / probable)
+			:ARG1 (x12 / incident
+				:mod (x11 / such))))
+	:ARG1 (xap0 / multiple
+		:op1 (x4 / temporal-quantity
+			:unit (m / month))))
+
+# ::id 25
+# ::snt The plane belonged to the Institute for Marine Mammal Studies Inc. in Gulfport
+(x3 / belong-01
+	:ARG1 (x2 / plane)
+	:ARG1 (x6 / government-organization
+		:name (n / name
+			:op1 "Institute"
+			:op2 "for"
+			:op3 "Marine"
+			:op4 "Mammal"
+			:op5 "Studies"
+			:op6 "Inc.")
+		:location (x13 / country
+			:name (n1 / name
+				:op1 "Gulfport"))))
+
+# ::id 26
+# ::snt The institute immediately issued a statement saying that Smith had requested use of the plane to accommodate Smith  busy schedule
+(x6 / state-01
+	:ARG0 (x2 / institute)
+	:time (x3 / immediate)
+	:ARG0-of (x7 / say-01
+		:ARG0 x2
+		:ARG1 (x11 / request-01
+			:ARG0 (x9 / person
+				:name (n / name
+					:op1 "Smith"))
+			:purpose (x17 / accommodate-01
+				:ARG0 x9
+				:ARG2 (x18 / person
+					:name (n1 / name
+						:op1 "Smith"))
+				:ARG1 (x20 / schedule-01
+					:mod (x19 / busy))))))
+
+# ::id 27
+# ::snt Jody Canady , a spokeswoman , said Smith was to reimburse the institute
+(x7 / say-01
+	:ARG0 (x1 / newspaper
+		:name (n / name
+			:op1 "Jody"
+			:op2 "Canady")
+		:ARG0-of (x5 / have-org-role-91
+			:ARG2 (s / spokeswoman)))
+	:ARG0 (x8 / person
+		:name (n1 / name
+			:op1 "Smith")
+		:null_edge (x11 / reimburse
+			:ARG1 (x13 / institute))))
+
+# ::id 28
+# ::snt The statement said the plane , manufactured in 1973 , and purchased by the institute last year , had a current inspection
+(x2 / state-01
+	:ARG1 (x11 / and
+		:op1 (x5 / plane
+			:ARG0-of (x22 / inspect-01
+				:time (x21 / current)))
+		:op1 (x7 / manufacture-01
+			:time (x9 / date-entity
+				:year 1973))
+		:op2 (x12 / purchase-01
+			:ARG0 (x15 / institute)
+			:time (x17 / year
+				:mod (x16 / last)))))
+
+# ::id 29
+# ::snt The pilot received the pilot  license in 1964 and had a physical examination on June 28 , the statement said
+(x19 / state-01
+	:ARG1 (x9 / and
+		:op1 (x3 / receive-01
+			:ARG1 (x6 / license-01
+				:ARG1 (x2 / person
+					:ARG0-of (p / pilot-01))
+				:mod (x5 / pilot-01)))
+		:time (x8 / date-entity
+			:year 1964)
+		:op2 (x10 / have-03
+			:ARG0 x2
+			:ARG1 (x13 / examine-01
+				:mod (x12 / physical))
+			:time (x15 / date-entity))))
+
+# ::id 30
+# ::snt Smith was elected last November to represent Mississippi's 5th congressional district
+(x3 / elect-01
+	:ARG1 (x1 / person
+		:name (n / name
+			:op1 "Smith"))
+	:time (x5 / date-entity
+		:mod (x4 / last))
+	:ARG2 (x7 / represent-01
+		:ARG1 (x12 / district
+			:poss (x8 / country
+				:name (n1 / name
+					:op1 "Mississippi"))
+			:mod (x11 / government-organization
+				:name (n2 / name
+					:op1 "congressional")))))
+
+# ::id 31
+# ::snt Smith  was Harrison County Sheriff from 1984 to 1989 , and was Gulfport police chief from 1977 to 1983
+(x11 / and
+	:op1 (x3 / country
+		:name (n / name
+			:op1 "Harrison"))
+	:op1 (x5 / sheriff
+		:ARG0 (x1 / person
+			:name (n1 / name
+				:op1 "Smith"))
+		:null_edge (x7 / date-entity
+			:year 1984
+			:year 1989))
+	:op2 (x15 / chief
+		:ARG1 (x13 / country
+			:name (n2 / name
+				:op1 "Gulfport"))
+		:ARG1 (x14 / police)
+		:time (x19 / date-entity
+			:year 1983)))
+
+# ::id 32
+# ::snt As sheriff , Smith coordinated anti-drug efforts of federal , local and state agencies across five states
+(x5 / coordinate-01
+	:ARG2 (x2 / sheriff)
+	:ARG0 (x4 / person
+		:name (n / name
+			:op1 "Smith"))
+	:ARG1 (x7 / effort
+		:prep-at (x12 / and
+			:op1 (x9 / government-organization
+				:name (n1 / name
+					:op1 "federal"))
+			:op2 (x13 / state)
+			:op2 (x14 / agency)
+			:op1 (xap0 / press
+				:mod (x11 / local))))
+	:location (x15 / across
+		:op1 (x17 / state
+			:quant 5)))
+
+# ::id 33
+# ::snt Smith , survived by a wife and one child , was lauded by Mississippi Gov. Ray Mabus , who called Smith  death a tragic loss for the state and ordered flags on state property flown at half staff
+(x12 / laud
+	:ARG1 (x1 / person
+		:name (n / name
+			:op1 "Smith")
+		:ARG1-of (x3 / survive-01
+			:ARG0 (x7 / and
+				:op1 (x6 / wife)
+				:op2 (x9 / child
+					:quant 1))))
+	:ARG0 (x16 / name
+		:op1 "Ray"
+		:op2 "Mabus"
+		:mod (x14 / country
+			:name (n1 / name
+				:op1 "Mississippi"))
+		:ARG0-of (x15 / gov.)
+		:ARG0-of (x29 / and
+			:op1 (x20 / call-01
+				:ARG1 (x22 / die-01
+					:ARG1 (x21 / person
+						:name (n2 / name
+							:op1 "Smith"))
+					:mod (x24 / tragic)
+					:prep-for (x28 / state)))
+			:op2 (x30 / order-01
+				:ARG2 (x35 / fly-01
+					:ARG1 (x31 / flag
+						:ARG1 (x34 / property
+							:mod (x33 / state)))
+					:part-of (x38 / person
+						:ARG2-of (s / staff-01)
+						:mod (x37 / half)))))))
+
+# ::id 34
+# ::snt Friends and former associates in Gulfport were stunned and saddened
+(x9 / and
+	:op1 (x8 / stunned
+		:ARG1 (x2 / and
+			:op1 (x1 / friend)
+			:op2 (x4 / associate
+				:mod (x3 / former)
+				:location (x6 / country
+					:name (n / name
+						:op1 "Gulfport")))))
+	:op2 (x10 / saddened))
+
+# ::id 35
+# ::snt Gaston , who worked for Smith nine years both in the sheriff's department and earlier when Smith was Gulfport police chief , called Smith a pillar of strength
+(x1 / country
+	:name (n / name
+		:op1 "Gaston")
+	:ARG0-of (x4 / work-01
+		:duration (x8 / temporal-quantity
+			:unit (y / year)
+			:quant 9)
+		:location (x14 / department
+			:part-of (x12 / sheriff)
+			:time (x16 / early))
+		:time (x22 / have-org-role-91
+			:ARG2 (c / chief)
+			:ARG0 (x18 / person
+				:name (n1 / name
+					:op1 "Smith"))
+			:ARG1 (x20 / country
+				:name (n2 / name
+					:op1 "Gulfport"))
+			:mod (x21 / police)
+			:ARG1-of (x24 / call-01
+				:ARG2 (x25 / name
+					:op1 "Smith"
+					:op2 "a"
+					:op3 "pillar"
+					:ARG0-of (x29 / strength))))))
+
+# ::id 36
+# ::snt Harrison County Sheriff's Department Capt. Rick Gaston  was progressive , and above all , honest
+(x12 / and
+	:op1 (x10 / progressive
+		:domain (x7 / newspaper
+			:name (n / name
+				:op1 "Rick"
+				:op2 "Gaston")
+			:ARG0-of (x1 / company
+				:name (n1 / name
+					:op1 "Harrison"
+					:op2 "County"
+					:op3 "Sheriff"))
+			:null_edge (x5 / null_tag)
+			:ARG0-of (x6 / capt.)))
+	:op2 (x13 / above
+		:quant (x14 / all))
+	:op2 (x16 / honest))
+
+# ::id 37
+# ::snt You just never thought something like this would happen
+(x4 / think-01
+	:ARG0 (x1 / you)
+	:time (x2 / just)
+	:ARG1 (x9 / happen-01
+		:ARG1 (x5 / something
+			:ARG1-of (xap0 / resemble-01
+				:ARG2 (x7 / this)))))
+
+# ::id 38
+# ::snt Researcher Edith M. Stanley in Atlanta and staff writer Lori Silver in Washington contributed to this story
+(x14 / contribute-01
+	:ARG0 (x7 / and
+		:op1 (x4 / person
+			:name (n / name
+				:op1 "Stanley")
+			:null_edge (x1 / research-01)
+			:null_edge (x2 / person
+				:name (n1 / name
+					:op1 "Edith"))
+			:null_edge (x3 / null_tag)
+			:location (x6 / country
+				:name (n2 / name
+					:op1 "Atlanta")))
+		:op2 (x10 / name
+			:op1 "Lori"
+			:op2 "Silver"
+			:ARG0-of (x9 / person
+				:ARG0-of (w / write-01)
+				:mod (x8 / person
+					:ARG2-of (s / staff-01)))
+			:location (x13 / city
+				:name (n3 / name
+					:op1 "Washington"))))
+	:ARG1 (x17 / story
+		:mod (x16 / this)))
+

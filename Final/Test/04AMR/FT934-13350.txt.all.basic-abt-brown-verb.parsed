@@ -1,0 +1,412 @@
+# ::id 1
+# ::snt THE Clinton administration will soon announce support for a North American Development Bank , which would fund projects in communities hit by job losses resulting from the North American Free Trade Agreement
+(x6 / announce-01
+	:time (x5 / soon)
+	:ARG1 (x7 / support-01
+		:ARG1 (x13 / bank
+			:null_edge (x10 / null_tag)
+			:null_edge (x12 / null_tag)
+			:null_edge (x17 / fund-01
+				:ARG1 (x18 / project)
+				:ARG2 (x20 / community
+					:ARG1-of (x21 / hit-01
+						:ARG1 (x23 / job
+							:ARG1-of (x25 / result-01
+								:ARG2 (x32 / country
+									:name (n1 / name
+										:op1 "Agreement")
+									:null_edge (x28 / null_tag)
+									:null_edge (x29 / country
+										:name (n2 / name
+											:op1 "American"))
+									:null_edge (x30 / country
+										:name (n3 / name
+											:op1 "Free"))
+									:null_edge (x31 / null_tag)))))))))
+	:ARG0 (xap0 / government-organization
+		:mod (x2 / person
+			:name (n / name
+				:op1 "Clinton"))
+		:ARG0-of (x3 / administrate-01)))
+
+# ::id 2
+# ::snt The so-called NADBank has been strongly supported by Congressman Esteban Torres , who has insisted on some sort of lending institution to support adjustment throughout the continent
+(x7 / support-01
+	:ARG1 (x3 / organization
+		:name (n / name
+			:op1 "NADBank")
+		:null_edge (x2 / so-called))
+	:degree (x6 / strong)
+	:ARG0 (x10 / name
+		:op1 "Esteban"
+		:op2 "Torres"
+		:ARG0-of (x9 / congressman)
+		:ARG0-of (x15 / insist-01
+			:ARG1 (x21 / institution
+				:mod (x18 / sort
+					:mod (x17 / some))
+				:mod (x20 / lending)
+				:purpose (x23 / support-01
+					:ARG1 (x24 / adjust-01)
+					:path (x25 / throughout
+						:op1 (x27 / continent)))))))
+
+# ::id 3
+# ::snt Agreement by the administration is expected to bring Mr Torres and at least 7 other Hispanic congressmen into the pro-Nafta fold
+(x6 / expect-01
+	:ARG1 (x8 / bring-01
+		:ARG0 (x1 / agreement
+			:ARG0 (xap0 / government-organization
+				:ARG0-of (x4 / administrate-01)))
+		:ARG1 (x11 / and
+			:op1 (x10 / person
+				:name (n / name
+					:op1 "Torres"))
+			:op2 (x17 / have-org-role-91
+				:ARG2 (c / congressman)
+				:quant 7
+				:mod (x15 / other)
+				:mod (x16 / world-region
+					:name (n2 / name
+						:op1 "Hispanic"))))
+		:ARG1 (x21 / fold
+			:time (x20 / organization
+				:name (n1 / name
+					:op1 "pro-Nafta")))))
+
+# ::id 4
+# ::snt The administration believes THE Clinton administration  can garner 200-210 pro-Nafta votes , out of the 218 needed
+(x3 / believe-01
+	:ARG1 (x7 / possible
+		:domain (x8 / garner-01
+			:ARG1 (x11 / vote-01
+				:quant (x9 / 200-210)
+				:mod (x10 / organization
+					:name (n / name
+						:op1 "pro-Nafta")))
+			:ARG2 (x16 / 218
+				:ARG1-of (x17 / need-01))
+			:ARG0 (xap1 / government-organization
+				:mod (x5 / person
+					:name (n1 / name
+						:op1 "Clinton"))
+				:ARG0-of (x6 / administrate-01))))
+	:ARG0 (xap0 / government-organization
+		:ARG0-of (x2 / administrate-01)))
+
+# ::id 5
+# ::snt THE Clinton administration  is assuming that every undecided congressman only wants a reason - favourable constituent mail - to vote for the pact , and THE Clinton administration  is pushing feverishly to turn anti-Nafta public opinion around
+(x25 / and
+	:op1 (x5 / assume-02
+		:ARG1 (x11 / want-01
+			:ARG0 (x9 / have-org-role-91
+				:ARG2 (c / congressman)
+				:mod (x7 / every)
+				:mod (x8 / decide-01
+					:polarity -))
+			:mod (x10 / only)
+			:ARG1 (x13 / reason
+				:ARG1 (x17 / mail
+					:mod (x15 / favourable)
+					:mod (x16 / constituent))
+				:ARG1 (x20 / vote-01
+					:ARG1 (x23 / pact))))
+		:ARG0 (xap0 / government-organization
+			:mod (x2 / person
+				:name (n / name
+					:op1 "Clinton"))
+			:ARG0-of (x3 / administrate-01)))
+	:op2 (x30 / push-02
+		:manner (x31 / feverishly)
+		:ARG2 (x33 / turn-02
+			:ARG1 (x36 / thing
+				:ARG1-of (o / opine-01)
+				:ARG0 (x34 / organization
+					:name (n2 / name
+						:op1 "anti-Nafta"))
+				:ARG0 (x35 / public))
+			:location (x37 / around))
+		:ARG0 (xap1 / government-organization
+			:mod (x27 / person
+				:name (n1 / name
+					:op1 "Clinton"))
+			:ARG0-of (x28 / administrate-01))))
+
+# ::id 6
+# ::snt The White House war room believes the vote currently breaks down into 110 Republicans in favour , 65-75 Democrats in favour ; and 20-30 leaning towards it
+(x6 / believe-01
+	:ARG0 (x5 / room
+		:mod (x4 / war
+			:mod (x3 / government-organization
+				:name (n / name
+					:op1 "House")
+				:mod (x2 / white)))))
+
+# ::id 7
+# ::snt Under this hopeful scenario , the White House will use the last few days before the November 17 House vote to cajole , bargain and twist arms to get the remaining 8 votes
+(x10 / use-01
+	:ARG2 (x4 / scenario
+		:mod (x2 / this)
+		:mod (x3 / hope-01))
+	:ARG0 (x8 / government-organization
+		:name (n / name
+			:op1 "House")
+		:null_edge (x7 / null_tag))
+	:ARG2 (x13 / few
+		:op1 (x14 / temporal-quantity
+			:unit (d / day)
+			:mod (x12 / last)
+			:time (x15 / before
+				:op1 (x20 / vote-01
+					:null_edge (x17 / null_tag)
+					:time (x18 / date-entity)
+					:ARG0-of (x19 / have-org-role-91
+						:ARG1 (g / government-organization
+							:name (n1 / name
+								:op1 "House")))))))
+	:ARG1 (x25 / and
+		:op1 (x22 / cajole)
+		:op2 (x24 / thing
+			:ARG1-of (b / bargain-01))
+		:op2 (x26 / twist-01
+			:ARG1 (x27 / arm)
+			:ARG1 (x33 / vote-01
+				:ARG1-of (x31 / remain-01)
+				:quant 8))))
+
+# ::id 8
+# ::snt However the anti-Nafta forces expect a different outcome
+(x5 / expect-01
+	:ARG0 (x3 / organization
+		:name (n / name
+			:op1 "anti-Nafta"))
+	:ARG1 (x8 / outcome
+		:ARG1-of (x7 / differ-02)))
+
+# ::id 9
+# ::snt 110 Republicans in favour , 65-75 Democrats in favour ; and 20-30  count 190-200 Democrats against , 10-15 Democrats leaning against , and 5-10 Republicans opposed
+(x / xconcept
+	:x (x10 / and
+		:op2 (x11 / and
+			:op1 (x2 / have-org-role-91
+				:ARG1 (p / political-party
+					:name (n / name
+						:op1 "Republicans"))
+				:null_edge 110
+				:null_edge (x12 / date-entity))
+			:op2 (x9 / favor-01
+				:ARG1 (x4 / favor-01)))
+		:op3 (x13 / count-01
+			:ARG1 (x23 / and
+				:op2 (xap0 / person
+					:quant (x24 / 5-10)
+					:ARG0-of (x25 / have-org-role-91
+						:ARG1 (p1 / political-party
+							:name (n1 / name
+								:op1 "Republicans"))
+						:ARG0-of (x26 / oppose-01)))
+				:op1 (xap1 / name
+					:op1 (x15 / democrat
+						:quant (x14 / 190-200)
+						:ARG0-of (x20 / lean
+							:quant (x18 / 10-15)
+							:ARG0-of (x19 / have-org-role-91
+								:ARG1 (p2 / political-party
+									:name (n2 / name
+										:op1 "Democrats")))))
+					:direction (x16 / against))))))
+
+# ::id 10
+# ::snt The pro-Nafta campaign this week began moving into high gear
+(x6 / begin-01
+	:ARG0 (x3 / campaign-01
+		:mod (x2 / organization
+			:name (n / name
+				:op1 "pro-Nafta")))
+	:time (x5 / week
+		:mod (x4 / this))
+	:ARG1 (x7 / move-01
+		:ARG2 (x10 / gear-01
+			:mod (x9 / high))))
+
+# ::id 11
+# ::snt State by state , undecided congressmen are being lured to the White House for intimate briefings , as are business leaders and journalists
+(x9 / lure-01
+	:ARG1 (x1 / state)
+	:ARG0 (x3 / state)
+	:ARG2 (x13 / government-organization
+		:name (n / name
+			:op1 "House")
+		:mod (x12 / white))
+	:purpose (x16 / brief-01
+		:mod (x15 / intimate))
+	:ARG1 (x22 / and
+		:op1 (x21 / person
+			:ARG0-of (l / lead-02)
+			:ARG1 (x20 / business))
+		:op2 (x23 / journalist))
+	:ARG0 (xap0 / person
+		:mod (x5 / decide-01
+			:polarity -)
+		:ARG0-of (x6 / have-org-role-91
+			:ARG2 (c / congressman))))
+
+# ::id 12
+# ::snt Members of the cabinet are being sent to congressional districts , where Members of the cabinet  visit and publicise factories that are expected to gain jobs if Nafta passes
+(x7 / send-01
+	:ARG1 (x2 / include-91
+		:ARG2 (x1 / member
+			:ARG1 (x4 / government-organization
+				:name (n1 / name
+					:op1 "cabinet"))))
+	:ARG4 (x10 / district
+		:mod (x9 / government-organization
+			:name (n / name
+				:op1 "congressional"))
+		:example (x18 / and
+			:op1 (x17 / visit-01
+				:ARG0 (x13 / member
+					:ARG1 (x16 / government-organization
+						:name (n2 / name
+							:op1 "cabinet")))
+				:ARG1-of (x14 / include-91))
+			:op2 (x19 / publicise
+				:ARG0 x13
+				:ARG1 (x20 / factory
+					:ARG1-of (x23 / expect-01
+						:condition (x29 / pass-01
+							:ARG1 (x26 / job)
+							:ARG0 (x28 / organization
+								:name (n3 / name
+									:op1 "Nafta")))))))))
+
+# ::id 13
+# ::snt President Bill Clinton on Wednesday gave President Bill Clinton on Wednesday  second impassioned speech on Nafta at an exhibit on the White House lawn of products likely to benefit from Nafta
+(x19 / exhibit-01
+	:ARG0 (x2 / newspaper
+		:name (n / name
+			:op1 "Bill"
+			:op2 "Clinton")
+		:ARG0-of (x1 / have-org-role-91
+			:ARG2 (p / president)))
+	:time (x5 / wednesday)
+	:name (x8 / name
+		:op1 "Bill"
+		:op2 "Clinton"
+		:ARG0-of (x7 / have-org-role-91
+			:ARG2 (p1 / president)))
+	:time (x11 / wednesday)
+	:ARG1 (x14 / speech
+		:poss x2
+		:poss x8
+		:mod (x13 / impassioned)
+		:ARG2 (x16 / organization
+			:name (n1 / name
+				:op1 "Nafta")))
+	:ARG1 (x24 / lawn
+		:mod (x22 / white)
+		:ARG1 (x23 / government-organization
+			:name (n2 / name
+				:op1 "House"))
+		:ARG1 (x26 / product
+			:mod (x27 / likely
+				:domain (x29 / benefit-01
+					:source (x31 / country
+						:name (n3 / name
+							:op1 "Nafta")))))))
+
+# ::id 14
+# ::snt President Bill Clinton on Wednesday  envisioned continent-wide free trade when we will have over 700m people in this trading bloc , united in believing that we can help one another grow and flourish , President Bill Clinton on Wednesday  said
+(x40 / say-01
+	:ARG1 (x6 / envision-01
+		:ARG0 (x2 / newspaper
+			:name (n1 / name
+				:op1 "Bill"
+				:op2 "Clinton")
+			:ARG0-of (x1 / have-org-role-91
+				:ARG2 (p1 / president))
+			:null_edge (x5 / wednesday))
+		:ARG1 (x9 / trade-01
+			:mod (x7 / continent-wide)
+			:ARG1-of (x8 / free-41))
+		:ARG1 (x13 / have-03
+			:null_edge (x11 / we)
+			:ARG1 (x14 / over
+				:op1 (x15 / 700m))
+			:purpose (x22 / unite-01
+				:mod (x18 / this)
+				:topic (x19 / trade-01)
+				:prep-in (x24 / believe-01
+					:ARG1 (x27 / possible
+						:domain (x28 / help-01
+							:ARG0 (x26 / we)
+							:ARG1 (x32 / and
+								:op1 (x31 / grow-01
+									:null_edge (x30 / another))
+								:op2 (x33 / flourish-01))))))))
+	:ARG0 (x37 / person
+		:name (n / name
+			:op1 "Clinton")
+		:null_edge (x35 / have-org-role-91
+			:ARG2 (p / president))
+		:null_edge (x36 / person
+			:name (n2 / name
+				:op1 "Bill")))
+	:time (x39 / wednesday))
+
+# ::id 15
+# ::snt The Nafta opposition has been just as busy
+(x3 / person
+	:ARG0-of (o / oppose-01)
+	:ARG1 (x2 / organization
+		:name (n / name
+			:op1 "Nafta"))
+	:domain (x8 / busy
+		:time (x6 / just)))
+
+# ::id 16
+# ::snt Across town , the AFL-CIO trade union grouping on Wednesday had the AFL-CIO trade union grouping on Wednesday  own products exhibit , but those were likely to be hurt by Nafta
+(x23 / contrast-01
+	:ARG2 (x8 / group-01
+		:location (x1 / across
+			:op1 (x2 / town))
+		:mod (x6 / trade-01
+			:ARG1 (x5 / organization
+				:name (n1 / name
+					:op1 "AFL-CIO")))
+		:ARG0-of (x7 / union)
+		:time (x10 / wednesday))
+	:ARG2 (x16 / group-01
+		:mod (x13 / organization
+			:name (n / name
+				:op1 "AFL-CIO"))
+		:ARG0-of (x15 / union
+			:mod (x14 / trade-01)))
+	:ARG1 (x21 / exhibit-01
+		:ARG1 (x20 / product)
+		:time (xap0 / date-entity
+			:null_edge (x18 / null_tag)))
+	:ARG2 (x26 / likely
+		:domain (x29 / hurt-01
+			:ARG0 (x31 / have-org-role-91
+				:ARG1 (o / organization
+					:name (n2 / name
+						:op1 "Nafta"))))))
+
+# ::id 17
+# ::snt The speakers were workers who had lost their jobs when The speakers  employers moved to Mexico
+(x4 / person
+	:ARG0-of (w / work-01)
+	:ARG0 (x2 / person
+		:ARG0-of (s / speak-01))
+	:ARG1-of (x7 / person
+		:ARG0-of (l / lose-02)
+		:ARG1 (x9 / job)
+		:time (x14 / move-01
+			:ARG0 (x13 / employ-01
+				:ARG0-of (x12 / person
+					:ARG0-of (s1 / speak-01)))
+			:ARG2 (x16 / country
+				:name (n / name
+					:op1 "Mexico")))))
+

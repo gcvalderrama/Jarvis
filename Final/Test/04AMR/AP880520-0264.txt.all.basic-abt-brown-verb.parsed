@@ -1,0 +1,453 @@
+# ::id 1
+# ::snt An official statement issued Friday confirmed that federal military commanders met in March and considered ways to quell dissent in Slovenia
+(x6 / confirm-01
+	:ARG0 (x3 / state-01
+		:mod (x2 / official)
+		:ARG1-of (x4 / issue-01
+			:time (xap0 / date-entity
+				:weekday (x5 / friday))))
+	:ARG1 (x14 / and
+		:op1 (x11 / meet-03
+			:ARG0 (x10 / person
+				:ARG0-of (c / command-02)
+				:mod (x9 / military
+					:mod (x8 / government-organization
+						:name (n / name
+							:op1 "federal"))))
+			:time (x13 / date-entity))
+		:op3 (x15 / consider-01
+			:ARG0 x10
+			:ARG1 (x16 / way
+				:instrument-of (x18 / quell
+					:ARG1 (x19 / dissent-01)
+					:ARG1 (xap1 / enter-01
+						:ARG0 (x21 / country
+							:name (n1 / name
+								:op1 "Slovenia"))))))))
+
+# ::id 2
+# ::snt The statement by Slovenia's Information Ministry followed reports published by the Slovenian youth magazine Mladina that there had been plans for a military takeover of the republic
+(x8 / follow-01
+	:ARG1 (x2 / state-01
+		:ARG0 (x7 / government-organization
+			:name (n / name
+				:op1 "Ministry")
+			:null_edge (x4 / country
+				:name (n1 / name
+					:op1 "Slovenia"))
+			:null_edge (x6 / null_tag)))
+	:ARG1 (x9 / report-01
+		:ARG1-of (x10 / publish-01
+			:ARG0 (x16 / person
+				:name (n2 / name
+					:op1 "Mladina")
+				:ARG0-of (x15 / magazine
+					:mod (x14 / youth
+						:ARG1 (x13 / organization
+							:name (n3 / name
+								:op1 "Slovenian"))))))
+		:ARG0 (x21 / plan-01
+			:ARG1 (x25 / take-12
+				:mod (x24 / military)
+				:ARG1 (x28 / republic)))))
+
+# ::id 3
+# ::snt Slovenia is considered the most liberal of Yugoslavia's six republics and two autonomous provinces
+(x3 / consider-01
+	:ARG1 (x12 / and
+		:domain (x1 / country
+			:name (n / name
+				:op1 "Slovenia"))
+		:degree (x5 / most)
+		:op1 (x11 / republic
+			:mod (x8 / country
+				:name (n1 / name
+					:op1 "Yugoslavia"))
+			:quant 6)
+		:op2 (x15 / province
+			:quant 2
+			:mod (x14 / autonomy))))
+
+# ::id 4
+# ::snt The ministry statement said the federal military council met on March 25 and concluded that dissident tendencies in Slovenia were part of a foreign-backed conspiracy to overthrow the country's Communist government
+(x3 / state-01
+	:ARG0 (x2 / ministry)
+	:ARG1 (x13 / and
+		:op1 (x9 / meet-03
+			:ARG0 (x8 / council
+				:mod (x6 / government-organization
+					:name (n / name
+						:op1 "federal"))
+				:mod (x7 / military))
+			:time (x11 / date-entity))
+		:op2 (x14 / conclude-01
+			:ARG0 x8
+			:ARG1 (xap0 / enter-01
+				:mod (x16 / dissident)
+				:ARG0 (x19 / country
+					:name (n1 / name
+						:op1 "Slovenia"))
+				:ARG1 (x25 / conspiracy
+					:mod (x24 / foreign-backed)
+					:ARG1-of (x27 / overthrow-01
+						:ARG1 (x32 / government-organization
+							:ARG0-of (g / govern-01)
+							:ARG1 (x29 / country)
+							:mod (x31 / communism))))))))
+
+# ::id 5
+# ::snt But The ministry statement  said there was no discussion at the meeting about a plan for action against special warfare in Slovenia
+(x1 / contrast-01
+	:ARG2 (x4 / state-01
+		:ARG0 (x3 / ministry)
+		:ARG1 (x9 / discuss-01
+			:polarity -
+			:ARG0 (x12 / meet-03)
+			:ARG1 (x15 / plan-01
+				:ARG1 (x20 / warfare
+					:mod (x19 / special)
+					:ARG1-of (xap0 / enter-01
+						:ARG0 (x22 / country
+							:name (n / name
+								:op1 "Slovenia"))))))))
+
+# ::id 6
+# ::snt The term special warfare refers to subversive actions
+(x5 / refer-01
+	:ARG0 (x2 / term)
+	:ARG1 (x4 / warfare
+		:mod (x3 / special)))
+
+# ::id 7
+# ::snt The statement did not identify the foreign elements and said Slovenia police later challenged the claim that there was such a conspiracy
+(x9 / and
+	:op1 (x5 / identify-01
+		:ARG0 (x2 / state-01)
+		:ARG1 (x8 / element
+			:mod (x7 / foreign)))
+	:op2 (x10 / say-01
+		:ARG0 x2
+		:ARG1 (x14 / challenge-01
+			:ARG0 (x12 / police
+				:ARG1-of (xap0 / enter-01
+					:ARG0 (x11 / country
+						:name (n / name
+							:op1 "Slovenia"))))
+			:time (x13 / late)
+			:ARG1 (x16 / claim-02
+				:ARG1 (x22 / conspiracy
+					:mod (x20 / such))))))
+
+# ::id 8
+# ::snt The ministry statement  said the police disputed the military council's conclusion at a later meeting between the republic's police authorities and Ljubljana's military command
+(x3 / state-01
+	:ARG0 (x2 / ministry)
+	:ARG1 (x7 / dispute-01
+		:ARG0 (x6 / police)
+		:ARG1 (x12 / conclude-01
+			:ARG0 (x10 / council
+				:mod (x9 / military)))
+		:time (x16 / meet-03
+			:time (x15 / late)
+			:topic (x23 / and
+				:op2 (x19 / republic)
+				:op1 (x22 / authority
+					:mod (x21 / police))
+				:op1 (x27 / command-02
+					:ARG0 (x24 / country
+						:name (n / name
+							:op1 "Ljubljana"))
+					:ARG0 (x26 / military))))))
+
+# ::id 9
+# ::snt The police said the republic's police authorities  had no available data which would justify such evaluations , according to the ministry statement
+(x3 / say-01
+	:ARG0 (x2 / police)
+	:ARG1 (xap0 / say-01
+		:ARG1 (x8 / authority
+			:mod (x7 / police
+				:poss (x5 / republic)))
+		:ARG0 (x12 / data
+			:polarity -
+			:mod (x11 / available)
+			:ARG0-of (x15 / justify-01
+				:ARG1 (x17 / evaluate-01
+					:mod (x16 / such))))
+		:ARG0 (x23 / state-01
+			:ARG0 (x22 / ministry))))
+
+# ::id 10
+# ::snt The ministry statement  reported the police also said there were no subversive forces behind articles carried in the Slovenian news media
+(x3 / state-01
+	:ARG0 (x2 / ministry)
+	:ARG1-of (x4 / report-01
+		:ARG1 (x6 / police)
+		:ARG0 (x13 / force
+			:polarity -
+			:mod (x12 / subversive)
+			:location (x14 / behind
+				:op1 (x15 / article
+					:source (x21 / media
+						:mod (x19 / organization
+							:name (n / name
+								:op1 "Slovenian"))
+						:mod (x20 / news))))))
+	:mod (x7 / also)
+	:ARG0 x13)
+
+# ::id 11
+# ::snt Slovenia's Communist Party presidium also expressed disagreement with part of the military council's opinions , said the statement
+(x20 / state-01
+	:ARG1 (x7 / express-01
+		:ARG0 (x3 / government-organization
+			:name (n / name
+				:op1 "Communist"
+				:op2 "Party"
+				:op3 "presidium")
+			:poss (xap0 / enter-01
+				:ARG0 (x1 / country
+					:name (n1 / name
+						:op1 "Slovenia"))))
+		:mod (x6 / also)
+		:ARG1 (x8 / disagree-01
+			:ARG1 (x16 / thing
+				:ARG1-of (o / opine-01)
+				:ARG0 (x14 / council
+					:mod (x13 / military))))))
+
+# ::id 12
+# ::snt Some army commanders have been increasingly critical of Slovenia's leadership , saying Slovenia's leadership  should act firmly against political dissidents
+(x7 / criticize-01
+	:domain (x3 / person
+		:ARG0-of (c / command-02)
+		:quant (x1 / some)
+		:mod (x2 / army))
+	:ARG1-of (x6 / increase-01)
+	:ARG1 (x11 / lead-02
+		:ARG0 (x9 / country
+			:name (n / name
+				:op1 "Slovenia")))
+	:domain (x13 / say-01
+		:ARG0 x3
+		:ARG1 (x17 / recommend-01
+			:ARG1 (x18 / act-02
+				:ARG0 (x16 / person
+					:ARG0-of (l / lead-02)
+					:ARG0 (x14 / country
+						:name (n1 / name
+							:op1 "Slovenia")))
+				:manner (x19 / firm)
+				:ARG1 (x22 / dissident
+					:mod (x21 / politics))))))
+
+# ::id 13
+# ::snt And Slovenian Communists have frequently criticized the way the federal government is dealing with the country's economic and social problems
+(x1 / and
+	:op2 (x6 / criticize-01
+		:ARG0 (x2 / organization
+			:name (n / name
+				:op1 "Slovenian"
+				:op2 "Communists"))
+		:frequency (x5 / frequent)
+		:ARG1 (x8 / way
+			:ARG0-of (x13 / deal-01
+				:ARG0 (x11 / government-organization
+					:ARG0-of (g / govern-01)
+					:ARG1 (x10 / government-organization
+						:name (n1 / name
+							:op1 "federal")))
+				:ARG1 (x21 / problem
+					:poss (x16 / country)
+					:topic (x19 / and
+						:op1 (x18 / economy)
+						:op2 (x20 / society)))))))
+
+# ::id 14
+# ::snt Mladina , the official publication of the Socialist Youth organization , wrote of possible military intervention in the official publication of the Socialist Youth organization  current issue
+(x12 / write-01
+	:ARG1 (x5 / publication
+		:ARG0 (x1 / person
+			:name (n / name
+				:op1 "Mladina"))
+		:mod (x4 / official)
+		:ARG1 (x10 / organization
+			:poss x1
+			:mod (x8 / political-party
+				:name (n1 / name
+					:op1 "Socialist"))
+			:mod (x9 / organization
+				:name (n2 / name
+					:op1 "Youth"))))
+	:ARG1 (x16 / intervene-01
+		:mod (x14 / possible)
+		:ARG0 (x15 / military)
+		:ARG1 (x20 / publication
+			:mod (x19 / official)
+			:ARG1 (x25 / organization
+				:mod (x23 / political-party
+					:name (n3 / name
+						:op1 "Socialist"))
+				:mod (x24 / organization
+					:name (n4 / name
+						:op1 "Youth")))
+			:ARG1 (x27 / issue
+				:time (x26 / current)))))
+
+# ::id 15
+# ::snt the official publication of the Socialist Youth organization  published a letter to Slovenia's Communist Party leader Milan Kucan from two student unions that said military action had been planned earlier this year , including the arrests of nonconformist journalists , writers and officials
+(x9 / publish-01
+	:ARG0 (x3 / publication
+		:mod (x2 / official)
+		:ARG1 (x8 / organization
+			:mod (x6 / political-party
+				:name (n1 / name
+					:op1 "Socialist"))
+			:mod (x7 / organization
+				:name (n2 / name
+					:op1 "Youth"))))
+	:ARG1 (x11 / letter
+		:ARG2 (x15 / political-party
+			:name (n / name
+				:op1 "Communist"
+				:op2 "Party"
+				:op3 "leader"
+				:op4 "Milan"
+				:op5 "Kucan")
+			:poss (x13 / country
+				:name (n3 / name
+					:op1 "Slovenia")))
+		:source (x23 / union
+			:quant 2
+			:mod (x22 / person
+				:ARG0-of (s / study-01))
+			:ARG0-of (x25 / say-01
+				:ARG1 (x30 / plan-01
+					:ARG1 (x27 / action
+						:mod (x26 / military))
+					:time (x31 / early
+						:op1 (x33 / year
+							:mod (x32 / this)))
+					:ARG1 (x37 / arrest-01
+						:ARG1 (x43 / and
+							:op1 (x40 / journalist
+								:mod (x39 / nonconformist))
+							:op2 (x42 / person
+								:ARG0-of (w / write-01))
+							:op1 (xap0 / person
+								:ARG0-of (x44 / have-org-role-91
+									:ARG2 (o / official))))))))))
+
+# ::id 16
+# ::snt The letter said military units would be used to crush demonstrations that were expected to be called to protest the arrests
+(x3 / say-01
+	:ARG0 (x2 / letter)
+	:ARG1 (x8 / use-01
+		:ARG1 (x5 / unit
+			:mod (x4 / military))
+		:ARG2 (x10 / crush
+			:ARG1 (x11 / demonstrate-01
+				:ARG1-of (x14 / expect-01
+					:ARG1 (x17 / call-01
+						:ARG1 (x19 / protest-01
+							:ARG1 (x21 / arrest-01))))))))
+
+# ::id 17
+# ::snt a letter  also said the army did not notify Slovenia's civilian leadership of the planned intervention
+(x4 / say-01
+	:ARG0 (x2 / letter)
+	:mod (x3 / also)
+	:ARG1 (x9 / notify-01
+		:ARG0 (x6 / army)
+		:ARG1 (x13 / lead-02
+			:mod (x12 / civilian)
+			:ARG1 (x17 / intervene-01
+				:ARG0 (x16 / plan-01))
+			:ARG1 (xap0 / enter-01
+				:ARG0 (x10 / country
+					:name (n / name
+						:op1 "Slovenia"))))))
+
+# ::id 18
+# ::snt The plan was blocked by Kucan and Stane Dolanc , Slovenia's member in Yugoslavia's collective presidency , after Kucan and Stane Dolanc  were told about a plan for action against special warfare in Slovenia  by Slovenian security organizations , the letter said
+(x44 / say-01
+	:ARG1 (x4 / block-01
+		:ARG1 (x2 / plan-01)
+		:ARG0 (x7 / and
+			:op1 (x6 / person
+				:name (n / name
+					:op1 "Kucan"))
+			:op2 (x8 / name
+				:op1 "Stane"
+				:op2 "Dolanc"
+				:ARG1-of (xap0 / enter-01
+					:ARG0 (x11 / country
+						:name (n1 / name
+							:op1 "Slovenia"))
+					:time (x18 / presidency
+						:location (x15 / country
+							:name (n3 / name
+								:op1 "Yugoslavia"))
+						:mod (x17 / collective)))))
+		:time (x20 / after
+			:op1 (x26 / tell-01
+				:ARG1 (x22 / and
+					:op1 (x21 / person
+						:name (n2 / name
+							:op1 "Kucan"))
+					:op2 (x23 / name
+						:op1 "Stane"
+						:op2 "Dolanc"))
+				:ARG1 (x29 / plan-01
+					:ARG1-of (xap1 / enter-01
+						:mod (x33 / special)
+						:ARG0 (x36 / country
+							:name (n4 / name
+								:op1 "Slovenia"))
+						:ARG0 (x40 / organization
+							:mod (x38 / organization
+								:name (n5 / name
+									:op1 "Slovenian"))
+							:mod (x39 / security)))))))
+	:ARG0 (x43 / letter))
+
+# ::id 19
+# ::snt Svetozar Visnjic , commander of Ljubljana's military command , dismissed the reports of planned military action as nonsense and a fabrication
+(x11 / dismiss-01
+	:ARG0 (x1 / newspaper
+		:name (n / name
+			:op1 "Svetozar"
+			:op2 "Visnjic")
+		:ARG0-of (x4 / have-org-role-91
+			:ARG2 (c / commander)
+			:ARG1 (x9 / command-02
+				:ARG0 (x6 / country
+					:name (n1 / name
+						:op1 "Ljubljana"))
+				:mod (x8 / military))))
+	:ARG1 (x13 / report-01
+		:ARG1 (x15 / plan-01
+			:ARG1 (x17 / action
+				:mod (x16 / military))))
+	:ARG2 (x20 / and
+		:op1 (x19 / nonsense)
+		:op2 (x22 / fabricate-01)))
+
+# ::id 20
+# ::snt Svetozar Visnjic  made the comment in an interview with the Belgrade Politika Ekspres newspaper
+(x5 / comment-01
+	:ARG0 (x1 / newspaper
+		:name (n / name
+			:op1 "Svetozar"
+			:op2 "Visnjic"))
+	:medium (x8 / interview-01
+		:ARG0 (x14 / newspaper
+			:poss (x12 / organization
+				:name (n1 / name
+					:op1 "Politika")
+				:name (x11 / organization
+					:name (n3 / name
+						:op1 "Belgrade")))
+			:mod (x13 / organization
+				:name (n2 / name
+					:op1 "Ekspres")))))
+

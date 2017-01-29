@@ -1,0 +1,603 @@
+# ::id 1
+# ::snt CONSIDER THE following case : A suspect involved in a high-speed chase refuses to stop. ; At the end of the chase the officer takes the officer  baton and brutally hits the suspect on the back eight to 10 times , then kicks the officer  in the face
+(x / xconcept
+	:x (x17 / and
+		:op1 (x7 / suspect-01
+			:ARG2 (x1 / consider)
+			:ARG1 (x8 / involve-01
+				:ARG2 (x13 / refuse-01
+					:ARG1 (x12 / chase-01
+						:ARG1-of (xap0 / speed
+							:ARG1-of (x3 / follow-04)
+							:mod (x11 / high)))
+					:ARG1 (x15 / stop-01
+						:ARG0 x12))))
+		:time (x20 / end
+			:ARG1 (x23 / chase-01
+				:ARG0-of (x25 / have-org-role-91
+					:ARG2 (o / officer)
+					:ARG1 (x29 / baton
+						:ARG0-of (x28 / officer)))))
+		:op2 (x32 / hit-02
+			:manner (x31 / brutal)
+			:ARG1 (x34 / suspect)
+			:ARG2 (x37 / back
+				:quant 8
+				:null_edge 10))
+		:op1 (x44 / kick-01
+			:ARG2 (x49 / face
+				:ARG0 (x46 / have-org-role-91
+					:ARG2 (o1 / officer))))))
+
+# ::id 2
+# ::snt CONSIDER THE following case : A suspect involved in a high-speed chase  is then picked up by CONSIDER THE following case : A suspect involved in a high-speed chase  shoulders and CONSIDER THE following case : A suspect involved in a high-speed chase  face is slammed into the pavement
+(x1 / consider
+	:ARG1-of (x3 / follow-04)
+	:ARG1 (x4 / case)
+	:null_edge (x15 / pick-05
+		:ARG1-of (x8 / involve-01
+			:ARG1 (x7 / suspect-01)
+			:ARG2 (x12 / chase-01
+				:ARG1 (xap0 / speed
+					:mod (x11 / high))))
+		:ARG0 (x31 / and
+			:op1 (x18 / consider
+				:ARG1 (x21 / case
+					:ARG1-of (x20 / follow-04)))
+			:op2 (x25 / involve-01
+				:ARG1 (x24 / suspect-01)
+				:ARG2 (x30 / shoulder
+					:mod (x28 / high)
+					:mod (x29 / chase-01)))
+			:op3 (x32 / consider-01
+				:ARG1 (x35 / case
+					:ARG1-of (x34 / follow-04)
+					:topic (x46 / slam
+						:ARG1 (x39 / involve-01
+							:ARG1 (x38 / suspect-01)
+							:ARG2 (x44 / face
+								:mod (x43 / chase-01
+									:mod (xap1 / speed
+										:mod (x42 / high)))))
+						:ARG2 (x49 / pavement)))))))
+
+# ::id 3
+# ::snt The suspect , unconscious , is taken to Valley Medical Center where The suspect , unconscious  is found to have a dislocated shoulder , a concussion , and numerous cuts , bruises and contusions
+(x7 / take-01
+	:ARG1 (x2 / suspect
+		:ARG1 (x4 / conscious
+			:polarity -))
+	:destination (x9 / government-organization
+		:name (n / name
+			:op1 "Valley"
+			:op2 "Medical"
+			:op3 "Center")
+		:ARG1-of (x18 / find-01
+			:ARG1-of (x14 / suspect-01)
+			:ARG1 (x20 / have-03
+				:ARG1 (x23 / shoulder
+					:ARG1-of (x22 / dislocate-01)
+					:ARG0 (x28 / and
+						:op2 (x26 / concussion))
+					:ARG0 (x33 / and
+						:op1 (x30 / cut-02
+							:quant (x29 / numerous))
+						:op2 (x32 / bruise)
+						:op2 (x34 / contusion)))))))
+
+# ::id 4
+# ::snt This was a real case involving a Santa Clara County police agency
+(x5 / case
+	:domain (x1 / this)
+	:mod (x4 / real)
+	:ARG2-of (x6 / involve-01
+		:ARG1 (x12 / agency
+			:poss (x8 / country
+				:name (n / name
+					:op1 "Santa"))
+			:poss (x9 / country
+				:name (n1 / name
+					:op1 "Clara"))
+			:mod (x11 / police))))
+
+# ::id 5
+# ::snt I represented the suspect. ; The offending officer's police report indicated that the suspect's injuries were due to a fall from The suspect , unconscious  bike and that The suspect , unconscious  appeared unconscious , although The suspect , unconscious  had also struggled against being handcuffed. ; There is no mention of police brutality
+(xap1 / multi-sentence
+	:ARG1 (x55 / mention-01
+		:polarity -
+		:ARG1 (x58 / brutality
+			:ARG0 (x57 / police))))
+
+# ::id 6
+# ::snt None of the back-up officers reported any brutality
+(x6 / report-01
+	:ARG1 (x8 / brutality
+		:mod (x7 / any))
+	:ARG0 (xap0 / person
+		:ARG0-of (x5 / have-org-role-91
+			:ARG2 (o / officer)
+			:mod (x4 / back-up))))
+
+# ::id 7
+# ::snt One sergeant reported that the suspect kept trying to move around and had to be told to remain lying down
+(x3 / report-01
+	:ARG0 (x2 / sergeant
+		:quant 1)
+	:ARG1 (x12 / and
+		:op1 (x7 / keep-01
+			:ARG0 (x6 / suspect-01)
+			:ARG1 (x8 / try-01
+				:ARG0 x6
+				:ARG1 (x10 / move-01
+					:ARG2 (x11 / around))))
+		:op2 (x13 / have-03
+			:ARG0 x6
+			:ARG2 (x16 / tell-01
+				:ARG1 (x18 / remain-01
+					:ARG1 (x19 / lie-01))))))
+
+# ::id 8
+# ::snt Another officer reported that the only verbal abuse was by the suspect toward officers. ; The suspect subsequently complained of brutality
+(x / xconcept
+	:x (x16 / and
+		:op2 (x3 / report-01
+			:ARG1 (x8 / abuse-01
+				:mod (x6 / only)
+				:mod (x7 / verbal)
+				:ARG0 (x12 / suspect-01
+					:ARG0 (xap1 / person
+						:ARG0-of (x14 / have-org-role-91
+							:ARG2 (o1 / officer)))))
+			:ARG0 (xap0 / person
+				:mod (x1 / another)
+				:ARG0-of (x2 / have-org-role-91
+					:ARG2 (o / officer))))
+		:op1 (x20 / complain-01
+			:ARG0 (x18 / suspect-01)
+			:time (x19 / subsequent)
+			:ARG1 (x22 / brutality))))
+
+# ::id 9
+# ::snt The internal affairs department determined that the complaint was unsubstantiated and the matter was dropped. ; But four citizens called to complain that the back-up officers  had witnessed the arrest and that the suspect not only was not struggling but also had been brutally beaten. ; According to the witnesses , the officer taunted the suspect , knelt on the suspect's stomach , beat The suspect , unconscious  numerous times with The suspect , unconscious  club and kicked The suspect , unconscious  in The suspect , unconscious  face. ; The witnesses also said : ; The suspect at no time resisted
+(x18 / contrast-01
+	:ARG2 (x11 / and
+		:op1 (x5 / determine-01
+			:ARG0 (x4 / department
+				:mod (x2 / internal)
+				:mod (x3 / affair))
+			:null_edge (x105 / resist-01
+				:ARG1 (x101 / suspect-01)))
+		:op1 (x10 / unsubstantiated
+			:domain (x8 / complain-01))
+		:op2 (x15 / drop-01
+			:ARG0 x4
+			:ARG1 (x13 / matter))
+		:op2 (x21 / call-01
+			:ARG0 x4
+			:ARG0 (x20 / citizen
+				:quant 4)
+			:ARG1 (x23 / complain-01))))
+
+# ::id 10
+# ::snt The only words from the suspect were pleas for help
+(x8 / plead-02
+	:ARG1 (x3 / word
+		:mod (x2 / only)
+		:ARG1-of (x6 / suspect-01))
+	:ARG2 (x10 / help-01))
+
+# ::id 11
+# ::snt In response to another officer's inquiry , the original officer picked up the suspect , let the original officer  head fall to the pavement and said , response to another officer's inquiry  looks like another officer's  is dead
+(x26 / and
+	:op1 (x12 / pick-04
+		:ARG2-of (x2 / respond-01
+			:ARG1 (x7 / inquire-01
+				:ARG0 (xap0 / person
+					:ARG0-of (x5 / have-org-role-91
+						:ARG2 (o2 / officer)
+						:mod (x4 / another)))))
+		:ARG1 (x15 / suspect)
+		:ARG0 (xap1 / person
+			:ARG0-of (x11 / have-org-role-91
+				:ARG2 (o / officer)
+				:mod (x10 / original))))
+	:op2 (x17 / let-01
+		:ARG1 (x22 / fall-01
+			:null_edge (x21 / head-01
+				:mod (x19 / original)
+				:part-of (x20 / officer))
+			:ARG4 (x25 / pavement)))
+	:op2 (x27 / say-01
+		:ARG1 (x35 / look-02
+			:ARG0 (x29 / respond-01
+				:ARG1 (x34 / inquire-01
+					:ARG0 (xap2 / person
+						:ARG0-of (x32 / have-org-role-91
+							:ARG2 (o3 / officer)
+							:mod (x31 / another)))))
+			:ARG0 (x38 / have-org-role-91
+				:ARG2 (o1 / officer)
+				:mod (x37 / another))
+			:ARG1 (x41 / die-01
+				:op (d / dead)
+				:ARG1 x38))))
+
+# ::id 12
+# ::snt Both officers smirked and laughed. ; The offending officer was later arrested and prosecuted by the district attorney. ; What if there had not been four citizens who observed the brutal beating of my client ?
+(x4 / and
+	:op1 (x3 / smirk
+		:ARG1 (x14 / and
+			:op1 (x13 / arrest-01
+				:ARG1 (x10 / have-org-role-91
+					:ARG2 (o1 / officer)
+					:ARG0-of (x9 / offend-01))
+				:time (x12 / late)
+				:ARG0 (x19 / attorney
+					:mod (x18 / district)))
+			:op3 (x15 / prosecute-01
+				:ARG1 x10)
+			:op1 (x29 / citizen
+				:quant 4
+				:ARG1-of (x31 / observe-01
+					:ARG1 (x34 / beating
+						:mod (x33 / brutal)
+						:ARG1 (x37 / client)))))
+		:ARG0 (xap0 / person
+			:ARG0-of (x2 / have-org-role-91
+				:ARG2 (o / officer)
+				:mod (x1 / both))))
+	:op2 (x5 / laugh-01))
+
+# ::id 13
+# ::snt ; One of the problems in monitoring police brutality is that almost all victims of police abuse have almost all victims of police abuse  committed some kind of law violation
+(x / xconcept
+	:x (x1 / and
+		:op2 (x25 / commit-01
+			:ARG1 (x5 / problem
+				:quant (x2 / one)
+				:topic (x7 / monitor-01
+					:ARG1 (x9 / brutality
+						:ARG0 (x8 / police))))
+			:ARG1 (x14 / victim
+				:quant (x12 / almost)
+				:quant (x13 / all)
+				:ARG1 (x17 / abuse-01
+					:ARG0 (x16 / police)))
+			:ARG1 (x21 / victim
+				:quant (x19 / almost)
+				:quant (x20 / all)
+				:ARG1 (x24 / abuse-01
+					:ARG0 (x23 / police)))
+			:ARG2 (x30 / violate-01
+				:mod (x27 / kind
+					:mod (x26 / some))
+				:ARG1 (x29 / law)))))
+
+# ::id 14
+# ::snt This makes their complaints difficult to sustain. ; But there is another problem : a police discipline system that is cloaked in secrecy. ; San Jose Police Chief Joseph MacNamara recently referred to the Los Angeles incident as disgusting brutality and pointed out that the disturbing aspect was the failure of leadership and the code of silence
+(x10 / contrast-01
+	:ARG2 (x2 / make-02
+		:ARG0 (x1 / this)
+		:ARG1 (x5 / difficult
+			:domain (x4 / complain-01)
+			:domain (x7 / sustain))
+		:ARG0 (x19 / system
+			:domain (x14 / problem
+				:mod (x13 / another))
+			:mod (x17 / police)
+			:mod (x18 / discipline)
+			:ARG1-of (x22 / cloak-01
+				:ARG2 (x24 / secrecy)))
+		:ARG0 (x27 / organization
+			:name (n / name
+				:op1 "San"))
+		:null_edge (x43 / and
+			:op1 (x34 / refer-01
+				:ARG0 (x31 / person
+					:name (n1 / name
+						:op1 "Joseph"
+						:op2 "MacNamara")
+					:ARG0-of (x28 / organization
+						:name (n2 / name
+							:op1 "Jose"))
+					:null_edge (x29 / null_tag)
+					:ARG0-of (x30 / chief))
+				:time (x33 / recent)
+				:ARG1 (x39 / incident
+					:mod (x37 / country
+						:name (n3 / name
+							:op1 "Los"))
+					:mod (x38 / country
+						:name (n4 / name
+							:op1 "Angeles")))
+				:ARG1 (x42 / brutality
+					:ARG1-of (x41 / disgusting)))
+			:op2 (x44 / point-02
+				:ARG1 (x55 / and
+					:op1 (x52 / fail-01
+						:ARG1 (x49 / aspect
+							:mod (x48 / disturbing))
+						:ARG1 (x54 / lead-02))
+					:op2 (x57 / code
+						:part-of (x59 / silence-01)))))))
+
+# ::id 15
+# ::snt MacNamara diagnosed the problem as an organizational attitude for which the leadership must take responsibility
+(x2 / diagnose-01
+	:ARG0 (x1 / person
+		:name (n / name
+			:op1 "MacNamara"))
+	:ARG1 (x4 / problem)
+	:ARG2 (x8 / attitude
+		:mod (x7 / organize-01)
+		:ARG1-of (x14 / take-01
+			:ARG0 (x12 / person
+				:ARG0-of (l / lead-02))
+			:ARG1 (x15 / responsible-41))))
+
+# ::id 16
+# ::snt San Jose Police Chief Joseph MacNamara  correctly notes that it is important for police credibility that police chiefs break the code of silence and repudiate such acts and attitudes. ; Unfortunately , MacNamara also believes that San Jose does not need a citizensreview board
+(x / xconcept
+	:x (x31 / and
+		:op1 (x8 / note-01
+			:ARG0 (x1 / government-organization
+				:name (n / name
+					:op1 "San"
+					:op2 "Jose"
+					:op3 "Police"
+					:op4 "Chief"
+					:op5 "Joseph"
+					:op6 "MacNamara")
+				:mod (x4 / chief))
+			:manner (x7 / correct)
+			:ARG1 (x12 / important
+				:beneficiary (x15 / credibility
+					:mod (x14 / police))
+				:domain (x24 / and
+					:op1 (x19 / break-01
+						:ARG0 (x18 / have-org-role-91
+							:ARG2 (c / chief)
+							:ARG1 (x17 / police))
+						:ARG1 (x21 / code
+							:part-of (x23 / silence-01)))
+					:op2 (x25 / repudiate
+						:ARG0 x18
+						:ARG1 (x28 / and
+							:op1 (x27 / act-02
+								:mod (x26 / such))
+							:op2 (x29 / attitude))))
+				:domain (x36 / believe-01
+					:ARG0 (x34 / person
+						:name (n1 / name
+							:op1 "MacNamara"))
+					:mod (x35 / also)
+					:ARG1 (x42 / need-01
+						:ARG0 (x39 / country
+							:name (n2 / name
+								:op1 "Jose")
+							:mod (x38 / country
+								:name (n3 / name
+									:op1 "San")))
+						:ARG1 (x45 / board
+							:ARG0-of (x44 / citizensreview))))))))
+
+# ::id 17
+# ::snt I respectfully disagree
+(x3 / disagree-01
+	:ARG0 (x1 / i)
+	:manner (x2 / respectfully))
+
+# ::id 18
+# ::snt That is precisely what we need
+(x1 / that
+	:mod (x3 / precise)
+	:time (x6 / need-01
+		:ARG0 (x5 / we)))
+
+# ::id 19
+# ::snt Communities often do not know the extent and the nature of police misconduct
+(x5 / know-01
+	:ARG0 (x1 / community)
+	:frequency (x2 / often)
+	:ARG1 (x8 / and
+		:op1 (x7 / extent)
+		:op2 (x10 / nature
+			:mod (x13 / misconduct
+				:mod (x12 / police)))))
+
+# ::id 20
+# ::snt State privacy laws combined with investigation and reporting procedures keep brutality complaints sealed. ; This is bad public policy
+(x / xconcept
+	:x (x15 / and
+		:op1 (x4 / combine-01
+			:ARG0 (x3 / law
+				:mod (x1 / state)
+				:mod (x2 / privacy))
+			:ARG1 (x9 / procedure
+				:topic (x7 / and
+					:op1 (x6 / investigate-01
+						:ARG1 (x8 / report-01)))))
+		:op4 (x10 / keep-02
+			:ARG1 (x13 / seal-01
+				:ARG1 (x12 / complain-01
+					:mod (x11 / brutality))))
+		:op2 (x20 / policy
+			:domain (x16 / this)
+			:mod (x18 / bad)
+			:mod (x19 / public))))
+
+# ::id 21
+# ::snt Government must remain accountable to its citizens
+(x3 / remain-01
+	:ARG3 (x4 / accountable-41
+		:ARG1 (x1 / government-organization
+			:ARG0-of (g / govern-01))
+		:ARG2 (x7 / citizen)))
+
+# ::id 22
+# ::snt Those government employees who are given the right and the power to use force against citizens should be the most accountable
+(x17 / recommend-01
+	:ARG1 (x21 / accountable-41
+		:ARG1 (x3 / person
+			:ARG1-of (e / employ-01)
+			:ARG0 (x2 / government-organization
+				:ARG0-of (g / govern-01))
+			:ARG1-of (x6 / person
+				:ARG0-of (g1 / give-07)
+				:purpose (x13 / use-01
+					:ARG0 (x9 / and
+						:op1 (x8 / right)
+						:op2 (x11 / power))
+					:ARG1 (x14 / force)
+					:prep-against (x16 / citizen))))
+		:degree (x20 / most)))
+
+# ::id 23
+# ::snt As MacNamara points out , police are public servants
+(x9 / person
+	:ARG0-of (s / serve-01)
+	:condition (x3 / point-02
+		:ARG0 (x2 / person
+			:name (n / name
+				:op1 "MacNamara")))
+	:ARG0 (x6 / police)
+	:mod (x8 / public))
+
+# ::id 24
+# ::snt A minimal invasion of their privacy is a small price to pay for the power to maim and kill. ; Monitoring police brutality is further complicated by the fact that local communities leave police brutality  to the police departments to investigate citizen complaints
+(x / xconcept
+	:x (x21 / and
+		:op2 (x10 / price-01
+			:ARG1 (x3 / invade-01
+				:ARG1-of (x2 / minimal)
+				:ARG1 (x6 / privacy))
+			:mod (x9 / small)
+			:ARG1-of (x12 / pay-01
+				:ARG1 x3
+				:ARG3 (x17 / maim-01
+					:ARG1 (x15 / power)))
+			:condition (x34 / leave-01
+				:ARG0 (x33 / community
+					:mod (x32 / local))
+				:ARG1 (x36 / brutality
+					:ARG1 (x35 / police))
+				:ARG2 (x40 / department
+					:mod (x39 / police)
+					:ARG0-of (x42 / investigate-01
+						:ARG1 (x44 / complain-01
+							:mod (x43 / citizen))))))
+		:op2 (x19 / kill-01
+			:ARG0 x15)
+		:op1 (x22 / monitor-01)
+		:op2 (x27 / complicate-01
+			:ARG1 x3
+			:ARG1 (x24 / brutality
+				:mod (x23 / police))
+			:degree (x26 / further))))
+
+# ::id 25
+# ::snt Although the penal code makes the findings of investigations confidential , investigations public servants  can be conducted by the public and can be open to the public. ; Complaints of police brutality should be handled in an open process that is neutral and thorough
+(x / xconcept
+	:x (x21 / and
+		:op2 (x15 / possible
+			:domain (x17 / conduct-01
+				:null_edge (x5 / make-02
+					:ARG0 (x4 / code
+						:mod (x3 / penal))
+					:ARG1 (x10 / confidence
+						:ARG1 (x7 / thing
+							:ARG1-of (f / find-01)
+							:ARG1 (x9 / investigate-01))))
+				:ARG1 (x12 / investigate-01)
+				:ARG1 (x14 / person
+					:ARG0-of (s / serve-01)
+					:mod (x13 / public))
+				:ARG0 (x20 / public)))
+		:op2 (x22 / possible
+			:domain (x24 / open-01
+				:ARG3 (x27 / public))))
+	:x (x34 / recommend-01
+		:ARG1 (x36 / handle-01
+			:ARG1 (x30 / complain-01
+				:ARG1 (x33 / brutality
+					:ARG0 (x32 / police)))
+			:time (x40 / process
+				:mod (x39 / open)))))
+
+# ::id 26
+# ::snt Having the fox guard the chicken house fails to provide that assurance. ; The attitude of the public will determine the effectiveness of the police discipline system
+(x21 / determine-01
+	:null_edge (x1 / have-03
+		:ARG1 (x4 / guard-01
+			:ARG1 (x3 / fox)
+			:ARG1-of (x8 / fail-01
+				:ARG0 (x7 / government-organization
+					:name (n / name
+						:op1 "house")
+					:mod (x6 / chicken))
+				:ARG2 (x12 / assure-01))))
+	:ARG0 (x16 / attitude
+		:consist-of (x19 / public))
+	:ARG1 (x23 / effective
+		:ARG1 (x28 / system
+			:mod (x26 / police)
+			:mod (x27 / discipline))))
+
+# ::id 27
+# ::snt A system can be theoretically sound , but A system  must be respected by the public. ; I agree with Councilwoman Blanca Alvarado's suggestion and the San Jose City Council's decision to create a system where a city official will receive and track citizen complaints about the police
+(x8 / contrast-01
+	:ARG1 (x3 / possible
+		:domain (x6 / sound
+			:domain (x2 / system)
+			:mod (x5 / theoretically)
+			:null_edge (x20 / agree-01
+				:ARG1 (x27 / and
+					:op1 (x26 / suggest-01
+						:ARG0 (x22 / military
+							:name (n / name
+								:op1 "Councilwoman"
+								:op2 "Blanca"
+								:op3 "Alvarado"))))))))
+
+# ::id 28
+# ::snt I would further recommend that local communities establish citizen review boards. ; Police accountability includes the right of the public to review records of investigations of complaints
+(x4 / recommend-01
+	:ARG0 (x1 / i)
+	:degree (x3 / further)
+	:ARG1 (x8 / establish-01
+		:ARG0 (x7 / community
+			:mod (x6 / local))
+		:ARG1 (x11 / board
+			:mod (x10 / review-01
+				:ARG1 (x9 / citizen))))
+	:null_edge (x16 / include-01
+		:ARG2 (x15 / accountability
+			:ARG1 (x14 / police))
+		:ARG1 (x18 / right
+			:mod (x21 / public)
+			:ARG1 (x23 / review-01
+				:ARG1 (x24 / record
+					:poss (x26 / investigate-01
+						:ARG1 (x28 / complain-01)))))))
+
+# ::id 29
+# ::snt Any loss of police confidentiality is a fair and necessary trade-off for the right to carry and use a club
+(x11 / trade-off
+	:ARG1 (x5 / confidentiality
+		:mod (x1 / any)
+		:mod (x4 / police))
+	:ARG1 (x9 / and
+		:op1 (x8 / fair))
+	:ARG1 (x17 / and
+		:op1 (x14 / right)
+		:op1 (x16 / carry-03
+			:ARG1 (x20 / club))
+		:op2 (x18 / use-01
+			:ARG0 x14)))
+
+# ::id 30
+# ::snt Or a .45
+(x / xconcept
+	:x (x1 / or)
+	:x (x3 / .45))
+

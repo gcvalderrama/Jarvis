@@ -1,0 +1,604 @@
+# ::id 1
+# ::snt There is a recurring temptation in American politics to wreak vengeance on one's adversaries by overhauling the political institutions that one's adversaries  dominate
+(x5 / temptation
+	:mod (x4 / recur)
+	:ARG0 (x8 / politics)
+	:purpose (x10 / wreak-01
+		:ARG1 (x11 / vengeance)
+		:ARG1 (x15 / adversary
+			:poss (x13 / one))
+		:ARG0 (x17 / overhaul
+			:ARG1 (x20 / institution
+				:mod (x19 / politics)
+				:ARG0-of (x25 / dominate-01
+					:ARG0 (x24 / adversary))))))
+
+# ::id 2
+# ::snt What usually results from this ill-considered radical surgery is that the very people who scheduled the operations end up in the recovery room
+(x3 / result-01
+	:mod (x2 / usual)
+	:ARG2 (x8 / surgery
+		:mod (x5 / this)
+		:mod (x6 / ill-considered)
+		:null_edge (x7 / null_tag))
+	:ARG2 (x18 / end-01
+		:ARG1 (x15 / schedule-01
+			:degree (x12 / very)
+			:ARG1 (x17 / operation))
+		:ARG1 (x23 / room
+			:part-of (x22 / recover-01))))
+
+# ::id 3
+# ::snt Franklin D. Roosevelt's plan to expand the Supreme Court in 1937 to dilute the votes of conservatives resulted in the creation of an opposing political coalition that lived on after the controversy to plague every subsequent Democratic President
+(x5 / plan-01
+	:name (x1 / name
+		:op1 "Franklin"
+		:op2 "D."
+		:op3 "Roosevelt")
+	:ARG1 (x7 / expand-01
+		:ARG0 x1
+		:ARG1 (x9 / government-organization
+			:name (n / name
+				:op1 "Supreme"
+				:op2 "Court"))
+		:time (x12 / date-entity
+			:year 1937)
+		:purpose (x14 / dilute
+			:ARG1 (x16 / vote-01
+				:ARG1 (x18 / political-party
+					:name (n1 / name
+						:op1 "conservatives")
+					:ARG1-of (x19 / result-01
+						:ARG2 (x22 / create-01
+							:ARG1 (x27 / coalition
+								:ARG0-of (x25 / oppose-01)
+								:mod (x26 / politics)
+								:ARG0-of (x29 / live-01
+									:ARG1 (x35 / plague-01
+										:time (x31 / after)
+										:ARG0 (x33 / controversy)
+										:ARG0 (xap0 / person
+											:ARG0-of (x39 / have-org-role-91
+												:ARG2 (p / president)
+												:mod (x36 / every)
+												:time (x37 / subsequent)))))))))))))
+
+# ::id 4
+# ::snt The Republicans in 1951 wanted to ensure that there would never be another F.D.R. , so conservatives  pushed through the 22nd Amendment limiting presidents to two terms
+(x5 / want-01
+	:ARG1 (x7 / ensure-01
+		:ARG1 (x14 / f.d.r.
+			:mod (x13 / another)))
+	:concession-of (x18 / push-01
+		:ARG0 (x17 / political-party
+			:name (n / name
+				:op1 "conservatives"))
+		:ARG2 (x22 / amend-01
+			:ARG0-of (x23 / limit-01
+				:ARG1 (x27 / term
+					:quant 2)
+				:ARG0 (xap1 / person
+					:ARG0-of (x24 / have-org-role-91
+						:ARG2 (p / president))))))
+	:ARG1 (xap0 / person
+		:null_edge (x4 / date-entity
+			:year 1951
+			:null_edge "Republican")))
+
+# ::id 5
+# ::snt The first President to come under the restriction was Dwight D. Eisenhower , a Republican who might very well have won a third term
+(xap3 / have-org-role-91
+	:ARG0-of (xap2 / political-party
+		:ARG1 (xap1 / name
+			:name (x10 / name
+				:op1 "Dwight"
+				:op2 "D."
+				:op3 "Eisenhower")
+			:op1 (x15 / political-party
+				:name (n / name
+					:op1 "Republican")
+				:null_edge (x21 / win-01
+					:degree (x18 / very)
+					:ARG1 (x24 / term)
+					:time (xap0 / person
+						:ARG0-of (x3 / have-org-role-91
+							:ARG2 (p / president)
+							:ARG1 (x5 / come-01
+								:manner (x8 / restrict-01)))))))))
+
+# ::id 6
+# ::snt The latest institutional patients to be wheeled into the shock-trauma unit are the state legislatures
+(x15 / legislate-01
+	:domain (x4 / patient
+		:time (x2 / late
+			:degree (m / most))
+		:mod (x3 / institution)
+		:ARG1-of (x7 / wheel
+			:ARG2 (x11 / unit
+				:mod (x10 / shock-trauma))))
+	:mod (x14 / state))
+
+# ::id 7
+# ::snt The quack therapy being performed on them is the imposition of limits on the number of terms that state lawmakers can serve
+(x10 / imposition
+	:domain (x3 / therapy
+		:mod (x2 / quack)
+		:ARG1-of (x5 / perform-01))
+	:ARG1 (x12 / thing
+		:ARG2-of (l / limit-01)
+		:ARG1 (x17 / term
+			:quant (x15 / number
+				:ARG0-of (x22 / serve-01
+					:ARG0 (x19 / state-01)
+					:mod (x21 / possible))))))
+
+# ::id 8
+# ::snt The first cut took place on Sept. 18 , when Oklahoma voters endorsed overwhelmingly a ballot initiative limiting state lawmakers to 12 yearsservice
+(x4 / take-01
+	:ARG0 (x3 / cut-02)
+	:time (x7 / date-entity
+		:ARG0-of (x13 / endorse-01
+			:ARG0 (x12 / person
+				:ARG0-of (v / vote-01)
+				:mod (x11 / country
+					:name (n / name
+						:op1 "Oklahoma")))
+			:ARG1 (x17 / initiative
+				:mod (x14 / overwhelm-01)
+				:mod (x16 / ballot)
+				:ARG0-of (x18 / limit-01
+					:ARG1 (x20 / lawmaker
+						:mod (x19 / state))
+					:ARG2 (x23 / yearsservice
+						:quant 12))))))
+
+# ::id 9
+# ::snt By The first cut  , the term limitation in Oklahoma might be written off as a cranky act of vengeance in a state not renowned as a political trend-setter , but similar measures will be voted on in November in California and Colorado
+(x31 / contrast-01
+	:ARG2 (x4 / cut-02)
+	:ARG1 (x13 / write-01
+		:ARG1 (x8 / limit-01
+			:mod (x7 / term)
+			:location (x10 / country
+				:name (n / name
+					:op1 "Oklahoma")))
+		:time (x20 / vengeance
+			:mod (x17 / cranky)
+			:location (x23 / state
+				:ARG1 (x25 / renowned
+					:ARG2 (x29 / trend-setter
+						:mod (x28 / politics))))))
+	:ARG2 (x36 / vote-02
+		:ARG1 x8
+		:ARG1 (x33 / measure
+			:ARG1-of (x32 / resemble-01
+				:op (s / similar)))
+		:time (x39 / date-entity)
+		:location (x42 / and
+			:op1 (x41 / state
+				:name (n1 / name
+					:op1 "California"))
+			:op2 (x43 / country
+				:name (n2 / name
+					:op1 "Colorado")))))
+
+# ::id 10
+# ::snt Eager for straws in the wind in an otherwise trendless political year , some journalists have seen in the Oklahoma vote a backlash against incumbents , a manifestation of public alienation and an ominous sign to the Democrats , the party that holds the largest number of legislative seats
+(x17 / see-01
+	:ARG1 (x1 / eager
+		:ARG3 (x3 / straw
+			:purpose (x6 / wind)
+			:time (x12 / year
+				:mod (x10 / trendless
+					:time (x9 / otherwise))
+				:mod (x11 / politics))))
+	:ARG0 (x15 / journalist
+		:quant (x14 / some))
+	:location (x32 / and
+		:op1 (x21 / vote-01
+			:ARG0 (x20 / country
+				:name (n / name
+					:op1 "Oklahoma"))
+			:ARG1 (x23 / backlash
+				:prep-against (x25 / incumbent))
+			:ARG1 (x41 / party
+				:null_edge (x38 / have-org-role-91
+					:ARG1 (p / political-party
+						:name (n1 / name
+							:op1 "Democrats")))
+				:ARG0-of (x43 / hold-01
+					:ARG1 (x49 / seat
+						:quant (x46 / number
+							:mod (x45 / large
+								:degree (m / most)))
+						:ARG0-of (x48 / legislate-01)))))
+		:op2 (x28 / manifestation
+			:mod (x31 / alienation
+				:mod (x30 / public)))
+		:op2 (x35 / sign-02
+			:mod (x34 / ominous))))
+
+# ::id 11
+# ::snt The Oklahoma referendum is none of these
+(x5 / none
+	:domain (x3 / referendum
+		:mod (x2 / country
+			:name (n / name
+				:op1 "Oklahoma"))))
+
+# ::id 12
+# ::snt The Oklahoma referendum  is , rather , the kind of minor political tempest that gets highlighted briefly by the media , is copied in a few places and then disappears
+(x13 / tempest
+	:mod (x9 / kind
+		:domain (x3 / referendum
+			:mod (x2 / country
+				:name (n / name
+					:op1 "Oklahoma")))
+		:domain (x28 / and
+			:op1 (x16 / highlight-01
+				:degree (x17 / briefly)
+				:ARG0 (x20 / media))
+			:op2 (x23 / copy-01
+				:location (x27 / place
+					:quant (x26 / few)))
+			:op2 (x30 / disappear-01)))
+	:mod (x11 / minor)
+	:mod (x12 / politics))
+
+# ::id 13
+# ::snt It is Republicans , naturally enough , who seem to be the most enthusiastic puffers of term limitation , since the most enthusiastic puffers of term limitation  have the most to gain , at least in the short term , from an indiscriminate clean-out of the nation's deliberative bodies
+(xap2 / name
+	:ARG0-of (x3 / have-org-role-91
+		:ARG1 (p / political-party
+			:name (n / name
+				:op1 "Republicans"))
+		:domain (x1 / it)
+		:null_edge (x9 / seem-01
+			:ARG1 (x15 / puffer
+				:quant (x6 / enough
+					:manner (x5 / natural))
+				:mod (x14 / enthusiastic
+					:degree (x13 / most))
+				:ARG1-of (xap0 / cause-01
+					:ARG0 (x18 / limit-01
+						:mod (x17 / term))))
+			:time (x20 / since
+				:op1 (x24 / puffer
+					:mod (x23 / enthusiastic
+						:degree (x22 / most))
+					:ARG1-of (xap1 / cause-01
+						:ARG0 (x27 / limit-01
+							:mod (x26 / term))))
+				:op1 (x30 / most
+					:purpose (x32 / gain-02
+						:ARG0 (x44 / clean-out
+							:mod (x43 / indiscriminate)
+							:part-of (x50 / body
+								:poss (x47 / nation)
+								:mod (x49 / deliberative)))))))))
+
+# ::id 14
+# ::snt What makes term limitation such a singularly inappropriate tool is the almost total lack of connection between the fancied sins of the lawmakers and the discipline proposed
+(x14 / lack-01
+	:ARG2-of (x13 / total-01
+		:degree (x12 / almost))
+	:ARG1 (x16 / connect-01
+		:ARG1 (x20 / sin-01
+			:mod (x19 / fancied)
+			:ARG1 (x24 / and
+				:op1 (x23 / lawmaker)
+				:op2 (x26 / discipline
+					:ARG1-of (x27 / propose-01)))))
+	:ARG1-of (xap0 / cause-01
+		:ARG0 (x4 / limit-01
+			:mod (x3 / term))
+		:op1 (x9 / tool
+			:mod (x5 / such)
+			:mod (x8 / inappropriate
+				:mod (x7 / singularly)))))
+
+# ::id 15
+# ::snt The very weakness and vulnerability to corruption that have often plagued state legislatures usually result from the amateurism of lawmakers the quality that term-limitation backers now assert as a virtue
+(x4 / and
+	:op1 (x3 / weak-41
+		:degree (x2 / very)
+		:ARG1 (x7 / corrupt-01)
+		:ARG1 (x15 / result-01
+			:ARG1 (x11 / plague-01
+				:frequency (x10 / often))
+			:ARG2 (x13 / legislate-01
+				:mod (x12 / state))
+			:mod (x14 / usual)
+			:ARG2 (x18 / amateurism)
+			:ARG1 (x22 / quality
+				:ARG0-of (x27 / assert-02
+					:ARG0 (x25 / backer
+						:mod (x24 / term-limitation))
+					:time (x26 / now)
+					:ARG1 (x30 / virtue)))))
+	:op2 (x5 / vulnerability))
+
+# ::id 16
+# ::snt Where state legislators are underpaid , have no professional staffs and meet rarely , state legislators  usually come under the sway of full-time governors , executive-branch bureaucrats and highly paid lobbyists
+(x18 / come-01
+	:ARG1 (x11 / and
+		:op1 (x5 / underpaid)
+		:op2 (x7 / have-03
+			:ARG1 (x3 / legislator
+				:mod (x2 / state))
+			:polarity -
+			:ARG1 (x10 / have-org-role-91
+				:ARG2 (s / staff)
+				:mod (x9 / professional)))
+		:op2 (x12 / meet-01
+			:ARG0 x3
+			:frequency (x13 / rare)))
+	:ARG1 (x16 / legislator
+		:mod (x15 / state))
+	:mod (x17 / usual)
+	:purpose (x21 / sway-01
+		:ARG0 (x28 / and
+			:null_edge (x24 / null_tag
+				:mod (x23 / full-time))
+			:op3 (x27 / bureaucrat)
+			:op2 (x31 / lobbyist
+				:ARG1-of (x30 / pay-01
+					:degree (x29 / high))))))
+
+# ::id 17
+# ::snt Indeed , the goal of legislative reformers for the past 50 years has been more professionalism in the state assemblies , not less
+(x16 / professionalism
+	:mod (x1 / indeed)
+	:degree (x15 / more
+		:ARG3-of (x7 / reformer
+			:ARG0-of (x6 / legislate-01)
+			:duration (x12 / temporal-quantity
+				:unit (y / year)
+				:mod (x10 / past)
+				:quant 50))
+		:ARG3-of (x20 / assembly
+			:mod (x19 / state)))
+	:degree (x23 / less))
+
+# ::id 18
+# ::snt By turning out the legislators every 12 years or even worse , every six years you pretty much guarantee that those who are elected wo not have much of a stake in their jobs
+(xap0 / before
+	:op1 (x2 / turn-02
+		:ARG2 (x9 / or
+			:op2 (x5 / legislator)
+			:op1 (x8 / temporal-quantity
+				:unit (y1 / year)
+				:null_edge (x7 / null_tag))
+			:op2 (x11 / worsen-01
+				:mod (x10 / even))))
+	:op1 (x15 / temporal-quantity
+		:unit (y / year)
+		:quant 6
+		:ARG0-of (x19 / guarantee-01
+			:ARG1 (x16 / you)
+			:degree (x18 / much
+				:degree (x17 / pretty))
+			:ARG1-of (x24 / elect-01
+				:ARG1 (x31 / stake-01
+					:quant (x28 / much)
+					:ARG1 (x34 / job))))))
+
+# ::id 19
+# ::snt legislators  will use legislators  as temporary hitching posts on legislators  way to other offices without term limitations
+(x3 / use-01
+	:ARG0 (x1 / legislator)
+	:ARG1 (x4 / legislator)
+	:ARG1 (x10 / legislator
+		:ARG1-of (x8 / post-01
+			:mod (x6 / temporary)
+			:mod (x7 / hitch
+				:ARG1 (x14 / office
+					:mod (x13 / other)
+					:prep-without (x17 / limit-01
+						:mod (x16 / term)))))))
+
+# ::id 20
+# ::snt Not every state lawmaker has his eye on a seat in the U.S. Senate or House of Representatives
+(x5 / have-03
+	:ARG0 (x4 / lawmaker
+		:mod (x2 / every)
+		:mod (x3 / state))
+	:ARG1 (x7 / eye-01
+		:ARG1 (x10 / seat-01
+			:location (x15 / or
+				:op1 (x14 / government-organization
+					:name (n / name
+						:op1 "Senate")
+					:mod (x13 / country
+						:name (n2 / name
+							:op1 "U.S.")))
+				:op2 (x16 / government-organization
+					:name (n1 / name
+						:op1 "House")
+					:null_edge (x18 / represent-01))))))
+
+# ::id 21
+# ::snt But a safe bet that more people will be using state seats to groom for higher office if they know that the law will force them out soon  is a safe bet that more people will be using state seats to groom for higher office if they know that the law will force them out soon
+(x1 / contrast-01
+	:ARG2 (x32 / bet
+		:ARG0 (x4 / bet
+			:mod (x3 / safe)
+			:ARG1 (x10 / use-01
+				:degree (x6 / more)
+				:ARG1 (x12 / seat
+					:ARG1-of (x11 / state))
+				:ARG2 (x14 / groom)
+				:ARG2 (x17 / office
+					:mod (x16 / high))))
+		:null_edge (x20 / know-01
+			:ARG1 (x25 / force-01
+				:ARG0 (x23 / law)
+				:time (x28 / soon)))
+		:mod (x31 / safe)
+		:ARG1 (x38 / use-01
+			:ARG1 (x34 / more)
+			:ARG1 (x40 / seat
+				:mod (x39 / state))
+			:ARG2 (x42 / groom)
+			:ARG2 (x45 / office
+				:mod (x44 / high))
+			:null_edge (x48 / know-01
+				:ARG1 (x53 / force-01
+					:ARG0 (x51 / law)
+					:time (x56 / soon))))))
+
+# ::id 22
+# ::snt Lobbyists , of course , will rejoice
+(x7 / rejoice
+	:ARG0 (x1 / lobbyist))
+
+# ::id 23
+# ::snt highly paid lobbyists  influence over these legislative birds of passage will grow because highly paid lobbyists  will be guaranteed a perennial crop of callow and ignorant lawmakers
+(x4 / influence-01
+	:ARG0 (x3 / lobbyist
+		:ARG1-of (x2 / pay-01
+			:degree (x1 / high)))
+	:purpose (x12 / grow-01
+		:ARG1 (x10 / pass-01
+			:ARG1 (x8 / bird
+				:ARG0-of (x7 / legislate-01))))
+	:ARG1-of (x13 / cause-01
+		:ARG0 (x19 / guarantee-01
+			:ARG1 (x16 / lobbyist
+				:ARG1-of (x15 / pay-01
+					:degree (x14 / high)))
+			:ARG1 (x22 / crop
+				:mod (x21 / perennial)
+				:ARG0 (x25 / and
+					:op1 (x24 / callow)
+					:op2 (x26 / ignorant))))))
+
+# ::id 24
+# ::snt One thing that legislators now have going for legislators  is that legislators  can become conversant with public issues and so challenge , if legislators  care to , the self-serving propaganda of the special interests
+(x13 / possible
+	:domain (x2 / thing
+		:quant 1
+		:ARG0 (x4 / legislator))
+	:time (x5 / now)
+	:ARG3 (x9 / legislator)
+	:domain (x12 / legislator)
+	:domain (x14 / become-01
+		:ARG1 x9
+		:ARG1 x12)
+	:domain (x19 / and
+		:op1 (x15 / conversant
+			:ARG2 (x18 / issue
+				:mod (x17 / public)))
+		:op2 (x21 / challenge-01
+			:ARG0 x12
+			:mod (x20 / so)
+			:ARG1 (x25 / care-01
+				:ARG1 (x24 / legislator))
+			:ARG1 (x30 / propaganda
+				:mod (x29 / self-serving)
+				:ARG1 (x34 / interest
+					:mod (x33 / special))))))
+
+# ::id 25
+# ::snt Celebrating , along with the lobbyists , will be the legislative staffs whose tenure would be unaffected
+(x12 / have-org-role-91
+	:ARG2 (s / staff)
+	:ARG0-of (x11 / legislate-01)
+	:ARG1-of (x17 / affect-01
+		:polarity -
+		:ARG1 (x14 / tenure))
+	:ARG1-of (xap0 / conform-01
+		:ARG0 (x6 / lobbyist)))
+
+# ::id 26
+# ::snt These unelected officials are permanent and beyond the reach of voters , while the very people who are in some measure accountable will be hustled out of office
+(x6 / and
+	:op1 (x5 / permanent)
+	:op2 (x7 / beyond
+		:op1 (x9 / reach-02
+			:ARG0 (x11 / vote-01)))
+	:op1 (xap0 / person
+		:ARG0-of (x3 / have-org-role-91
+			:ARG2 (o / official)
+			:mod (x2 / unelected)
+			:condition (x25 / hustle
+				:degree (x15 / very
+					:ARG0-of (x22 / accountable-41
+						:ARG2 (x21 / measure
+							:mod (x20 / some))))
+				:ARG4 (x26 / out
+					:op1 (x28 / office))))))
+
+# ::id 27
+# ::snt Ultimately , what the term limit amounts to is an indictment of citizenship
+(x6 / limit-01
+	:mod (x5 / term)
+	:ARG1-of (x7 / amount-01
+		:ARG2 (x11 / indictment
+			:time (x1 / ultimate)
+			:ARG1 (x13 / citizenship))))
+
+# ::id 28
+# ::snt the term limit  is an admission that the voters are civic imbeciles who can not discriminate between bad lawmakers and good ones
+(x6 / admit-02
+	:domain (x3 / limit-01
+		:mod (x2 / term))
+	:ARG1 (x12 / imbecile
+		:ARG0 (x9 / person
+			:ARG0-of (v / vote-01))
+		:mod (x11 / civic))
+	:ARG1 (x14 / possible
+		:domain (x16 / discriminate-02
+			:ARG0 (x19 / lawmaker
+				:mod (x18 / bad)
+				:null_edge (x20 / and)
+				:mod (x21 / good)))))
+
+# ::id 29
+# ::snt Where surgical strikes are needed to eliminate the incompetent or corrupt , the term limitation uses carpet bombing in the hope that in the resulting carnage , some of the guilty will suffer along with the innocent
+(x16 / use-01
+	:time (x5 / need-01
+		:ARG1 (x3 / strike-01)
+		:purpose (x7 / eliminate-01
+			:ARG1 (x10 / or
+				:op1 (x9 / person
+					:ARG1-of (c / competent-41))
+				:op2 (x11 / corrupt-01))))
+	:ARG0 (x15 / limit-01
+		:mod (x14 / term))
+	:ARG1 (x18 / bomb-01
+		:mod (x17 / carpet))
+	:ARG2 (x21 / hope-01
+		:ARG1 (x33 / suffer-01
+			:ARG1 (x31 / guilty-41
+				:location (x26 / carnage
+					:ARG2-of (x25 / result-01))
+				:quant (x28 / some))
+			:ARG1 (x37 / person
+				:ARG1-of (i / innocent-41)))))
+
+# ::id 30
+# ::snt At the most basic level , term limitation is just flat-out wrongheaded and illogical : To throw everybody out when all you want to do is throw out the rascals is like burning down your house in order to get rid of the rats
+(x13 / and
+	:op1 (x12 / wrongheaded
+		:ARG0 (x8 / limit-01
+			:source (x5 / level
+				:mod (x4 / basic
+					:degree (x3 / most)))
+			:mod (x7 / term))
+		:null_edge (x11 / flat-out
+			:mod (x10 / just)))
+	:op2 (x14 / illogical)
+	:op1 (x17 / throw-06
+		:ARG1 (x18 / everybody)
+		:condition (x23 / want-01
+			:ARG0 (x22 / you
+				:quant (x21 / all))
+			:ARG1 (x25 / do-02
+				:ARG1 (x27 / throw-06
+					:ARG1 (x30 / rascal))))
+		:ARG1 (x33 / burn-01
+			:ARG1 (x36 / house)
+			:time (x41 / rid-01
+				:ARG1 (x44 / rat)))))
+

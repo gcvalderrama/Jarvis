@@ -1,0 +1,489 @@
+# ::id 1
+# ::snt Ben Johnson , the world-class sprinter knocked off track and field's pedestal after testing positive for steroids , says field's pedestal  is wrong for athletes to use the muscle-building substance
+(x20 / say-01
+	:ARG0 (x1 / newspaper
+		:name (n / name
+			:op1 "Ben"
+			:op2 "Johnson")
+		:ARG0-of (x6 / sprinter
+			:mod (x5 / world-class)
+			:ARG1-of (x7 / knock-02
+				:location (x8 / off
+					:op1 (x13 / pedestal
+						:location-of (x10 / and
+							:op2 (x9 / track)
+							:op2 (x11 / field))))
+				:time (x14 / after
+					:op1 (x15 / test-01
+						:manner (x16 / positive)
+						:ARG1 (x18 / steroid))))))
+	:ARG1 (x25 / wrong-41
+		:ARG1 (x23 / pedestal
+			:mod (x21 / field))
+		:ARG2 (x29 / use-01
+			:ARG0 (x27 / athletes)
+			:ARG1 (x32 / substance
+				:mod (x31 / muscle-building)))))
+
+# ::id 2
+# ::snt I got caught in Seoul
+(x3 / catch-01
+	:ARG1 (x1 / i)
+	:location (x5 / city
+		:name (n / name
+			:op1 "Seoul")))
+
+# ::id 3
+# ::snt I lost my gold medal , the Canadian told reporters as legislation to classify anabolic steroids as a controlled substance was introduced Thursday
+(x9 / tell-01
+	:ARG1 (x2 / lose-02
+		:ARG0 (x1 / i)
+		:ARG1 (x5 / medal
+			:mod (x4 / gold)))
+	:ARG0 (x8 / country
+		:name (n / name
+			:op1 "Canada"))
+	:ARG2 (x10 / person
+		:ARG0-of (r / report-01))
+	:time (x22 / introduce-02
+		:ARG1 (x12 / legislation
+			:ARG0-of (x14 / classify-01
+				:ARG1 (x16 / steroid
+					:mod (x15 / anabolic)
+					:mod (x20 / substance
+						:ARG1-of (x19 / controlled)))))
+		:time (xap0 / date-entity
+			:weekday (x23 / thursday))))
+
+# ::id 4
+# ::snt I am here to tell the people of this country this country  is wrong to cheat , not to take this country  , this country  is bad for your health
+(x5 / tell-01
+	:ARG0 (x1 / i)
+	:location (x3 / here)
+	:location (x10 / country
+		:mod (x9 / this))
+	:ARG1 (x14 / wrong-41
+		:ARG2 (x16 / cheat-02
+			:ARG0 (x12 / country
+				:mod (x11 / this))
+			:ARG1 (x20 / take-01
+				:ARG1 (x22 / country
+					:mod (x21 / this)))
+			:ARG1 (x27 / bad
+				:ARG0 (x25 / country
+					:mod (x24 / this))
+				:compared-to (x30 / health)))))
+
+# ::id 5
+# ::snt Watching Johnson was Ben Johnson  chief nemesis : Carl Lewis , the man who was awarded the Olympic gold medals Johnson lost
+(x1 / watch-01
+	:ARG1 (x2 / person
+		:name (n / name
+			:op1 "Johnson"))
+	:null_edge (x4 / name
+		:op1 "Ben"
+		:op2 "Johnson")
+	:ARG0 (x13 / man
+		:ARG0-of (x7 / nemesis
+			:mod (x6 / have-org-role-91
+				:ARG2 (c / chief)))
+		:name (x9 / name
+			:op1 "Carl"
+			:op2 "Lewis")
+		:ARG1-of (x16 / award-01
+			:ARG2 (x22 / person
+				:ARG0-of (l / lose-02)
+				:ARG1 (x20 / medal
+					:null_edge (x18 / game
+						:name (n2 / name
+							:op1 "Olympic")))
+				:ARG0 (x21 / person
+					:name (n1 / name
+						:op1 "Johnson"))))))
+
+# ::id 6
+# ::snt the flamboyant , pony-tailed Lewis  think Olympic  is great , Lewis said of the legislation
+(x12 / say-01
+	:ARG1 (x9 / great
+		:domain (x5 / person
+			:name (n1 / name
+				:op1 "Lewis"
+				:op2 "think"
+				:op3 "Olympic")
+			:mod (x2 / flamboyant)
+			:mod (x4 / pony-tailed)
+			:ARG0-of (x6 / think-01)))
+	:ARG0 (x11 / person
+		:name (n / name
+			:op1 "Lewis"))
+	:ARG0 (x15 / legislate-01))
+
+# ::id 7
+# ::snt the people of this country  are making a move and a move  is very positive
+(x10 / and
+	:op1 (x7 / make-02
+		:ARG2 (x5 / country
+			:mod (x4 / this))
+		:ARG1 (x9 / move-02))
+	:op2 (x15 / positive
+		:domain (x12 / move-02)
+		:degree (x14 / very)))
+
+# ::id 8
+# ::snt the flamboyant , pony-tailed Lewis  am happy to see a move
+(x7 / happy
+	:ARG0 (x5 / person
+		:name (n / name
+			:op1 "Lewis")
+		:null_edge (x2 / flamboyant)
+		:null_edge (x4 / pony-tailed))
+	:null_edge (x9 / see-01
+		:ARG0 x5
+		:ARG1 (x11 / move-02)))
+
+# ::id 9
+# ::snt However , the flamboyant , pony-tailed Lewis told reporters : the flamboyant , pony-tailed Lewis  do not understand why Ben Johnson's here
+(x8 / tell-01
+	:ARG0 (x7 / person
+		:name (n / name
+			:op1 "Lewis")
+		:null_edge (x4 / flamboyant)
+		:null_edge (x6 / pony-tailed))
+	:ARG2 (x9 / person
+		:ARG0-of (r / report-01))
+	:null_edge (x18 / understand-01
+		:ARG0 (x15 / person
+			:name (n1 / name
+				:op1 "Lewis")
+			:null_edge (x12 / flamboyant)
+			:null_edge (x14 / pony-tailed))
+		:null_edge (x22 / null_tag
+			:null_edge (x20 / newspaper
+				:name (n2 / name
+					:op1 "Ben"
+					:op2 "Johnson"))
+			:location (x23 / here))))
+
+# ::id 10
+# ::snt Lewis said the flamboyant , pony-tailed Lewis  attended the news conference because the flamboyant , pony-tailed Lewis  was working on the flamboyant , pony-tailed Lewis  autobiography and one of the chapters deals with steroids
+(x2 / say-01
+	:ARG0 (x1 / person
+		:name (n / name
+			:op1 "Lewis"))
+	:ARG1 (x8 / attend-01
+		:ARG0 (x7 / person
+			:name (n1 / name
+				:op1 "Lewis")
+			:null_edge (x4 / flamboyant)
+			:null_edge (x6 / pony-tailed))
+		:ARG1 (x11 / conference
+			:mod (x10 / news))
+		:ARG1-of (x12 / cause-01
+			:ARG0 (x19 / work-01
+				:ARG0 (x17 / person
+					:name (n2 / name
+						:op1 "Lewis")
+					:null_edge (x14 / flamboyant)
+					:null_edge (x16 / pony-tailed))
+				:ARG1 (x27 / and
+					:op1 (x26 / autobiography
+						:mod (x22 / flamboyant)
+						:mod (x24 / pony-tailed)
+						:poss (x25 / person
+							:name (n3 / name
+								:op1 "Lewis"))
+						:poss (x31 / chapter
+							:quant 1
+							:ARG0-of (x32 / deal-01
+								:accompanier (x34 / steroid)))))))))
+
+# ::id 11
+# ::snt the flamboyant , pony-tailed Lewis  said the flamboyant , pony-tailed Lewis  did not intend to upstage Johnson
+(x6 / say-01
+	:ARG0 (x5 / person
+		:name (n / name
+			:op1 "Lewis")
+		:null_edge (x2 / flamboyant)
+		:null_edge (x4 / pony-tailed))
+	:ARG1 (x14 / intend-01
+		:ARG0 (x11 / person
+			:name (n1 / name
+				:op1 "Lewis")
+			:null_edge (x8 / flamboyant)
+			:null_edge (x10 / pony-tailed))
+		:ARG1 (x16 / upstage
+			:ARG0 x11
+			:ARG1 (x17 / person
+				:name (n2 / name
+					:op1 "Johnson")))))
+
+# ::id 12
+# ::snt Reps. Mel Levine , D-Calif. , Henry Waxman , D-Calif. , and Benjamin Gilman , R-N.Y. , invited Johnson to attend as Reps. Mel Levine , D-Calif. , Henry Waxman , D-Calif. , and Benjamin Gilman , R-N.Y.  presented the legislation that would make anabolic steroids a controlled substance , similar to the designation given cocaine and heroin
+(x43 / present-01
+	:ARG0 (x38 / and
+		:op1 (x2 / newspaper
+			:name (n / name
+				:op1 "Mel"
+				:op2 "Levine")
+			:ARG0-of (x1 / reps.)
+			:name (x32 / name
+				:op1 "Henry"
+				:op2 "Waxman"
+				:location (x5 / country
+					:name (n2 / name
+						:op1 "D-Calif"))
+				:ARG1-of (x20 / invite-01
+					:ARG1 (x14 / and
+						:op1 (x8 / newspaper
+							:name (n5 / name
+								:op1 "Henry"
+								:op2 "Waxman"))
+						:op2 (x11 / country
+							:name (n6 / name
+								:op1 "D-Calif"))
+						:op2 (x15 / name
+							:op1 "Benjamin"
+							:op2 "Gilman"
+							:location (x18 / country
+								:name (n7 / name
+									:op1 "R-N.Y."))))
+					:ARG1 (x21 / person
+						:name (n4 / name
+							:op1 "Johnson"))
+					:purpose (x23 / attend-01
+						:ARG0 x14
+						:ARG0 x21
+						:example (x26 / name
+							:op1 "Mel"
+							:op2 "Levine"
+							:ARG0-of (x25 / reps.)
+							:null_edge (x29 / country
+								:name (n8 / name
+									:op1 "D-Calif")))))
+				:location (x35 / country
+					:name (n3 / name
+						:op1 "D-Calif"))))
+		:op2 (x39 / name
+			:op1 "Benjamin"
+			:op2 "Gilman"
+			:location (x42 / country
+				:name (n1 / name
+					:op1 "R-N.Y."))))
+	:ARG1 (x45 / legislate-01
+		:ARG1 (x50 / steroid
+			:mod (x49 / anabolic)
+			:ARG1 (x53 / substance
+				:ARG1-of (x52 / controlled)
+				:ARG1-of (x55 / resemble-01
+					:op (s / similar)
+					:ARG2 (x58 / designate-01
+						:ARG1 (x61 / and
+							:op1 (x60 / cocaine)
+							:op2 (x62 / heroin))))))))
+
+# ::id 13
+# ::snt The lawmakers emphasized the increasing abuse of steroids by college , high school and even junior high school athletes who believe the substance will enhance their performance
+(x3 / emphasize-01
+	:ARG1 (x6 / abuse-01
+		:ARG1-of (x5 / increase-01)
+		:ARG0 (x14 / and
+			:op1 (x8 / steroid)
+			:op1 (x10 / college)
+			:op4 (x13 / school
+				:mod (x12 / high))
+			:op2 (x19 / athletes
+				:mod (x16 / junior
+					:mod (x15 / even))
+				:mod (x17 / high)
+				:mod (x18 / school)
+				:ARG0-of (x21 / believe-01
+					:ARG1 (x25 / enhance-01
+						:ARG0 (x23 / substance)
+						:ARG1 (x27 / perform-01)))))))
+
+# ::id 14
+# ::snt America is about to have an adolescent time-bomb explode in an adolescent time-bomb  hands , Levine said
+(x17 / say-01
+	:ARG1 (x5 / have-03
+		:ARG0 (x1 / country
+			:name (n1 / name
+				:op1 "America"))
+		:ARG1 (x9 / explode-02
+			:ARG0 (x8 / time-bomb
+				:mod (x7 / adolescent))
+			:instrument (x14 / hand
+				:mod (x12 / adolescent)
+				:part-of (x13 / time-bomb))))
+	:ARG0 (x16 / person
+		:name (n / name
+			:op1 "Levine")))
+
+# ::id 15
+# ::snt But if The lawmakers  act quickly enough to restrict steroid distribution , and to increase the penalties for illicit distribution , The lawmakers  can prevent this plague from spreading
+(x1 / contrast-01
+	:ARG2 (x5 / act-02
+		:degree (x7 / enough
+			:mod (x6 / quick))
+		:ARG1 (x9 / restrict-01
+			:ARG1 (x11 / distribute-01
+				:ARG2 (x10 / steroid))
+			:ARG2 (x15 / increase-01
+				:ARG1 (x17 / penalize-01
+					:ARG1 (x20 / distribute-01)))))
+	:ARG2 (x24 / possible
+		:domain (x25 / prevent-01
+			:ARG1 (x26 / this)))
+	:ARG2 (x27 / plague-01)
+	:ARG2 (x29 / spread-03))
+
+# ::id 16
+# ::snt Levine referred to the abuse of steroids as the silent side of the drug disease in this country
+(x2 / refer-01
+	:ARG0 (x1 / person
+		:name (n / name
+			:op1 "Levine"))
+	:ARG1 (x5 / abuse-01
+		:ARG0 (x7 / steroid))
+	:ARG2 (x11 / side
+		:mod (x10 / silence)
+		:poss (x15 / disease
+			:mod (x14 / drug)
+			:location (x18 / country
+				:mod (x17 / this)))))
+
+# ::id 17
+# ::snt Mel Levine  applauded Johnson's courage for attending the news conference
+(x3 / applaud-01
+	:ARG0 (x1 / newspaper
+		:name (n / name
+			:op1 "Mel"
+			:op2 "Levine"))
+	:ARG1 (x6 / courage
+		:ARG0 (x4 / person
+			:name (n1 / name
+				:op1 "Johnson"))
+		:purpose (x8 / attend-01
+			:ARG0 x4
+			:ARG1 (x11 / conference
+				:mod (x10 / news)))))
+
+# ::id 18
+# ::snt Johnson later stepped up to the microphones and in a quiet voice with a slight stutter told other athletes not to make the same mistake Ben Johnson  did , urging other athletes  to come forward , to come clean
+(x8 / and
+	:op1 (x3 / step-01
+		:ARG0 (x1 / person
+			:name (n / name
+				:op1 "Johnson"))
+		:time (x2 / late)
+		:direction (x4 / up)
+		:ARG2 (x7 / microphone))
+	:op2 (x17 / tell-01
+		:ARG0 x1
+		:ARG2 (x16 / stutter
+			:mod (x11 / quiet)
+			:mod (x15 / slight))
+		:ARG2 (x19 / athletes
+			:mod (x18 / other))
+		:ARG1 (x22 / make-01
+			:ARG1 (x25 / mistake
+				:ARG1-of (x24 / same-41)
+				:ARG1 (x30 / urge-01
+					:ARG0 (x26 / newspaper
+						:name (n1 / name
+							:op1 "Ben"
+							:op2 "Johnson"))
+					:ARG2 (x32 / athletes
+						:mod (x31 / other))
+					:ARG2 (x34 / come-04
+						:direction (x35 / forward)
+						:purpose (x38 / come-04
+							:ARG1 (x39 / clean-02))))))))
+
+# ::id 19
+# ::snt Lewis dismissed reportersquestions that the flamboyant , pony-tailed Lewis  had used steroids , indicating the flamboyant , pony-tailed Lewis  would be willing to run against Johnson if Ben Johnson  comes back and Ben Johnson  is clean
+(x2 / dismiss-01
+	:ARG0 (x1 / person
+		:name (n / name
+			:op1 "Lewis"))
+	:ARG1 (x3 / reportersquestion
+		:ARG1 (x11 / use-01
+			:ARG0 (x9 / person
+				:name (n1 / name
+					:op1 "Lewis")
+				:null_edge (x6 / flamboyant)
+				:null_edge (x8 / pony-tailed))
+			:ARG1 (x12 / steroid)))
+	:ARG0-of (x14 / indicate-01
+		:ARG1 (x22 / will-02
+			:ARG0 (x19 / person
+				:name (n2 / name
+					:op1 "Lewis")
+				:null_edge (x16 / flamboyant)
+				:null_edge (x18 / pony-tailed))
+			:ARG1 (x24 / run-01
+				:prep-under (x26 / person
+					:name (n3 / name
+						:op1 "Johnson")))
+			:ARG1 (x32 / and
+				:op1 (x30 / come-01
+					:ARG1 (x28 / newspaper
+						:name (n4 / name
+							:op1 "Ben"
+							:op2 "Johnson")))
+				:op2 (x36 / clean-02
+					:ARG0 (x33 / newspaper
+						:name (n5 / name
+							:op1 "Ben"
+							:op2 "Johnson")))))))
+
+# ::id 20
+# ::snt While Lewis held the spotlight , Johnson slipped away to adjoining congressional offices
+(x8 / slip-02
+	:time (x3 / hold-04
+		:ARG0 (x2 / person
+			:name (n1 / name
+				:op1 "Lewis"))
+		:ARG1 (x5 / spotlight))
+	:ARG0 (x7 / person
+		:name (n / name
+			:op1 "Johnson"))
+	:direction (x9 / away)
+	:ARG2 (x13 / office
+		:mod (x11 / adjoin-01)
+		:mod (x12 / government-organization
+			:name (n2 / name
+				:op1 "congressional"))))
+
+# ::id 21
+# ::snt the flamboyant , pony-tailed Lewis  is not here to compete with Carl Lewis
+(x5 / person
+	:name (n / name
+		:op1 "Lewis")
+	:null_edge (x2 / flamboyant)
+	:null_edge (x4 / pony-tailed)
+	:location (x8 / here)
+	:null_edge (x10 / compete-01
+		:ARG2 (x12 / name
+			:op1 "Carl"
+			:op2 "Lewis")))
+
+# ::id 22
+# ::snt Ed Futerman  hope the flamboyant , pony-tailed Lewis  will someday , said Ed Futerman , Johnson's lawyer
+(x12 / say-01
+	:ARG1 (x3 / hope-01
+		:ARG0 (x1 / newspaper
+			:name (n1 / name
+				:op1 "Ed"
+				:op2 "Futerman"))
+		:ARG0 (x8 / person
+			:name (n2 / name
+				:op1 "Lewis")
+			:null_edge (x5 / flamboyant)
+			:null_edge (x7 / pony-tailed)
+			:null_edge (x10 / someday)))
+	:ARG0 (x13 / newspaper
+		:name (n / name
+			:op1 "Ed"
+			:op2 "Futerman")
+		:ARG0-of (x18 / lawyer)))
+

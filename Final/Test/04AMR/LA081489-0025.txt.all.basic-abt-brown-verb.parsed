@@ -1,0 +1,1607 @@
+# ::id 1
+# ::snt U.S. military helicopters on Sunday located the wreckage of a plane that crashed last Monday with Texas congressman Mickey Leland and 15 others aboard
+(x3 / helicopter
+	:mod (x2 / military
+		:mod (x1 / country
+			:name (n / name
+				:op1 "U.S.")))
+	:ARG1 (x8 / wreckage
+		:ARG1 (x11 / plane
+			:ARG0-of (x13 / crash-01
+				:time (x15 / monday
+					:mod (x14 / last))
+				:ARG1 (x21 / and
+					:op1 (x20 / person
+						:name (n1 / name
+							:op1 "Leland")
+						:null_edge (x18 / have-org-role-91
+							:ARG2 (c / congressman)
+							:location (x17 / country
+								:name (n2 / name
+									:op1 "Texas")))
+						:null_edge (x19 / null_tag))
+					:op2 (x23 / other
+						:quant 15
+						:location (x24 / aboard)))))
+		:time (xap0 / date-entity
+			:weekday (x5 / sunday))))
+
+# ::id 2
+# ::snt Witnesses who visited the site said there were no survivors
+(x6 / say-01
+	:ARG0 (x1 / person
+		:ARG0-of (w / witness-01)
+		:ARG0-of (x3 / visit-01
+			:ARG1 (x5 / site)))
+	:ARG1 (x10 / person
+		:ARG0-of (s / survive-01)
+		:polarity -))
+
+# ::id 3
+# ::snt U.S. rescue and recovery teams said that the plane hit a mountain about 4,300 feet above sea level , having missed clearing the peak by about 300 feet
+(x6 / say-01
+	:ARG1 (x3 / and
+		:op1 (x2 / rescue-01
+			:ARG0 (x1 / country
+				:name (n / name
+					:op1 "U.S.")))
+		:op2 (x5 / team
+			:ARG0-of (x4 / recover-01))
+		:op1 (x10 / hit-01
+			:ARG0 (x9 / plane)
+			:ARG1 (x12 / mountain)
+			:ARG1 (x15 / distance-quantity
+				:unit (f / foot)
+				:quant (x13 / about))
+			:ARG0 (x16 / above
+				:op1 (x18 / level
+					:mod (x17 / sea)))
+			:ARG1-of (x21 / miss-02
+				:ARG1 (x22 / clear-04
+					:ARG1 (x24 / peak-01)
+					:manner (x28 / foot
+						:quant (x26 / about
+							:op1 300)))))))
+
+# ::id 4
+# ::snt The crash site is about 75 miles east of the Fugnido refugee camp that Leland was flying to visit when the plane vanished in heavy weather last Monday
+(x3 / site
+	:mod (x2 / crash-01)
+	:location (x8 / east
+		:quant (x7 / distance-quantity
+			:unit (m / mile)
+			:null_edge (x5 / about
+				:null_edge 75
+				:op1 (x13 / camp
+					:mod (x12 / refugee)))))
+	:location-of (x17 / fly-01
+		:ARG0 (x15 / person
+			:name (n / name
+				:op1 "Leland"))
+		:purpose (x19 / visit-01
+			:ARG0 x15
+			:time (x23 / vanish
+				:ARG1 (x22 / plane)
+				:ARG2 (x26 / weather
+					:mod (x25 / heavy))
+				:time (x28 / monday
+					:mod (x27 / last))))))
+
+# ::id 5
+# ::snt If U.S. rescue and recovery teams  would have flown over that peak U.S. rescue and recovery teams  would have been home free , said Rep. Gary L. Ackerman (D-N.Y. ), a colleague of Leland's who has accompanied search crews for the last two days and was aboard the helicopter that first spotted the wreckage Sunday
+(x24 / say-01
+	:ARG1 (x4 / and
+		:op1 (x3 / rescue-01
+			:ARG0 (x2 / country
+				:name (n / name
+					:op1 "U.S.")))
+		:op2 (x6 / team
+			:ARG0-of (x5 / recover-01))
+		:op1 (x9 / fly-01
+			:duration (x12 / peak-01
+				:ARG1 (x22 / free-41
+					:ARG2 (x15 / and
+						:op1 (x14 / rescue-01
+							:ARG0 (x13 / country
+								:name (n1 / name
+									:op1 "U.S.")))
+						:op2 (x17 / team
+							:ARG0-of (x16 / recover-01)))
+					:mod (x21 / home)
+					:ARG0 (x26 / name
+						:op1 "Gary"
+						:op2 "L."
+						:op3 "Ackerman"
+						:ARG0-of (x25 / rep.)
+						:ARG0-of (x34 / colleague
+							:ARG1 (x36 / person
+								:name (n2 / name
+									:op1 "Leland"))
+							:ARG0-of (x40 / accompany-01
+								:ARG1 x36
+								:ARG1 (x42 / crew
+									:mod (x41 / search-01))
+								:time (x46 / date-entity
+									:mod (x45 / last))
+								:ARG0 (x48 / and)
+								:location (x50 / aboard
+									:op1 (x52 / helicopter
+										:ARG0-of (x55 / spot-01
+											:ARG1 (x57 / wreckage)
+											:time (xap0 / date-entity
+												:weekday (x58 / sunday)))))))))))))
+
+# ::id 6
+# ::snt Ackerman said that the plane appeared to have hit nose first , right into the rocks ; Leland's plane  two wings sheared off , Leland's plane  engines melted , Leland's plane  fuselage gone
+(x2 / say-01
+	:ARG0 (x1 / person
+		:name (n / name
+			:op1 "Ackerman"))
+	:ARG1 (x6 / appear-02
+		:ARG1 (x5 / plane)
+		:ARG1 (x9 / hit-01
+			:ARG1 (x10 / nose)
+			:time (x11 / first)
+			:ARG2 (x13 / right))
+		:time (x30 / melt-01
+			:ARG1 (x29 / engine
+				:poss (x26 / person
+					:name (n1 / name
+						:op1 "Leland"))))
+		:ARG1 (x36 / go-01
+			:ARG0 (x35 / fuselage
+				:poss (x32 / person
+					:name (n2 / name
+						:op1 "Leland"))
+				:topic (x34 / plane)))))
+
+# ::id 7
+# ::snt Wreckage Examined Ackerman said that military paratroopers lowered military paratroopers  from Rep. Gary L. Ackerman (D-N.Y. ), a colleague of Leland's who has accompanied search crews for the last two days and was aboard the helicopter that first spotted the wreckage Sunday  helicopter on ropes to examine the wreckage
+(x4 / say-01
+	:ARG0 (x1 / wreckage)
+	:ARG1 (x8 / lower-01
+		:ARG0 (x7 / paratrooper
+			:mod (x6 / military))
+		:ARG1 (x10 / paratrooper
+			:mod (x9 / military)
+			:name (x13 / name
+				:op1 "Gary"
+				:op2 "L."
+				:op3 "Ackerman"
+				:ARG0-of (x12 / rep.)
+				:ARG0-of (x21 / colleague
+					:ARG1 (x23 / person
+						:name (n / name
+							:op1 "Leland"))
+					:ARG0-of (x27 / accompany-01
+						:ARG1 x23
+						:ARG1 (x29 / crew
+							:mod (x28 / search-01))
+						:time (x33 / date-entity
+							:mod (x32 / last))))))
+		:ARG0 (x35 / and)
+		:location (x37 / aboard
+			:op1 (x39 / helicopter
+				:ARG0-of (x42 / spot-01
+					:ARG1 (x46 / helicopter
+						:ARG0-of (xap0 / date-entity
+							:null_edge (x45 / null_tag)))
+					:location (x48 / rope
+						:purpose (x50 / examine-01
+							:ARG1 (x52 / wreckage))))))))
+
+# ::id 8
+# ::snt military paratroopers  told search crews  everyone had died instantaneously , Ackerman said
+(x12 / say-01
+	:ARG1 (x3 / tell-01
+		:ARG0 (x2 / paratrooper
+			:mod (x1 / military))
+		:ARG2 (x5 / crew
+			:mod (x4 / search-01))
+		:ARG1 (x8 / die-01
+			:ARG1 (x6 / everyone)
+			:manner (x9 / instantaneously)))
+	:ARG0 (x11 / person
+		:name (n / name
+			:op1 "Ackerman")))
+
+# ::id 9
+# ::snt The 44-year-old Leland , a Democrat , was making The 44-year-old Leland , a Democrat  sixth tour of refugee camps along the Ethiopia-Sudan border as chairman of the House Select Committee on Hunger , a panel The 44-year-old Leland , a Democrat  had helped to establish five years ago
+(x9 / make-02
+	:ARG0 (x3 / person
+		:name (n / name
+			:op1 "Leland")
+		:null_edge (x2 / person
+			:name (n2 / name
+				:op1 "44-year-old"))
+		:null_edge (x6 / have-org-role-91
+			:ARG1 (p / political-party
+				:name (n3 / name
+					:op1 "Democrat"))))
+	:ARG1 (x12 / person
+		:name (n1 / name
+			:op1 "Leland")
+		:null_edge (x11 / person
+			:name (n4 / name
+				:op1 "44-year-old")))
+	:ARG1 (x17 / tour
+		:ARG0 (x15 / have-org-role-91
+			:ARG1 (p1 / political-party
+				:name (n5 / name
+					:op1 "Democrat")))
+		:ARG1 (x20 / camp
+			:mod (x19 / refugee)
+			:location (x21 / along
+				:op1 (x24 / border-01
+					:ARG2 (x23 / country
+						:name (n7 / name
+							:op1 "Ethiopia-Sudan"))))
+			:ARG2 (x26 / have-org-role-91
+				:ARG2 (c / chairman)
+				:ARG1 (x31 / organization
+					:name (n6 / name
+						:op1 "Committee")
+					:null_edge (x29 / have-org-role-91
+						:ARG1 (g / government-organization
+							:name (n8 / name
+								:op1 "House")))
+					:null_edge (x30 / null_tag)
+					:null_edge (x36 / panel
+						:ARG0-of (x44 / help-01
+							:ARG0 (x33 / hunger)
+							:ARG0 (x39 / person
+								:name (n9 / name
+									:op1 "Leland")
+								:null_edge (x38 / person
+									:name (n10 / name
+										:op1 "44-year-old"))
+								:null_edge (x42 / have-org-role-91
+									:ARG1 (p2 / political-party
+										:name (n11 / name
+											:op1 "Democrat"))))
+							:ARG1 (x46 / establish-01
+								:time (xap0 / before
+									:quant (x48 / temporal-quantity
+										:unit (y / year)
+										:null_edge (x47 / null_tag)))))))))))
+
+# ::id 10
+# ::snt Also aboard the plane were Hugh Anderson Johnson Jr. and Patrice Yvonne Johnson , both aides to Leland (who were not related ); Joyce Francine Williams , an aide to Rep. Ronald V. Dellums (D-Berkeley ), and an expert on child nutrition ; Y. Ivan Tillen , a New York businessman and friend of Leland's ; Robert Woods , a political and economic officer at the American Embassy in Addis Ababa ; Gladys Gilbert , a special projects officer for the mission of the U.S. Agency for International Development attached to the embassy ; Thomas Worrick , the acting AID representative in Ethiopia , and Worrick's wife , Roberta
+(x / xconcept
+	:x (x25 / and
+		:op2 (x10 / and
+			:op3 (x4 / plane)
+			:op1 (x6 / person
+				:name (n / name
+					:op1 "Hugh"
+					:op2 "Anderson"
+					:op3 "Johnson"
+					:op4 "Jr.")
+				:mod (x1 / also))
+			:op2 (x110 / and
+				:name (x11 / name
+					:op1 "Patrice"
+					:op2 "Yvonne"
+					:op3 "Johnson"
+					:ARG0-of (x95 / attach-01
+						:ARG2 (x98 / embassy))
+					:name (x100 / name
+						:op1 "Thomas"
+						:op2 "Worrick"
+						:ARG0-of (x106 / person
+							:ARG0-of (r / represent-01)
+							:ARG1 (x104 / act-01)
+							:mod (x105 / disease
+								:name (n3 / name
+									:op1 "AID"))
+							:location (x108 / country
+								:name (n4 / name
+									:op1 "Ethiopia")))))
+				:op2 (x111 / person
+					:name (n1 / name
+						:op1 "Worrick"))
+				:op2 (x113 / wife
+					:poss (x115 / person
+						:name (n2 / name
+							:op1 "Roberta")))))
+		:op2 (x26 / person
+			:name (n5 / name
+				:op1 "Joyce"))
+		:op3 (x28 / person
+			:name (n6 / name
+				:op1 "Williams")
+			:null_edge (x18 / person
+				:name (n7 / name
+					:op1 "Leland"))
+			:ARG1-of (x23 / relate-01)
+			:null_edge (x27 / person
+				:name (n8 / name
+					:op1 "Francine"))
+			:null_edge (x31 / have-org-role-91
+				:ARG2 (a / aide)
+				:ARG2 (x41 / and
+					:op1 (x34 / name
+						:op1 "Ronald"
+						:op2 "V."
+						:op3 "Dellums"
+						:ARG0-of (x33 / rep.)))
+				:name (x49 / name
+					:op1 "Ivan"
+					:op2 "Tillen")
+				:ARG1 (x73 / organization
+					:name (n9 / name
+						:op1 "Embassy")
+					:location (x76 / country
+						:name (n10 / name
+							:op1 "Ababa")
+						:location (x75 / country
+							:name (n11 / name
+								:op1 "Addis"))))
+				:ARG0-of (xap0 / mean-01
+					:ARG0-of (x69 / have-org-role-91
+						:ARG2 (o / officer)
+						:ARG1 (x67 / and
+							:op1 (x66 / politics)
+							:op2 (x68 / economy)))))))
+	:x (x47 / and
+		:op2 (x43 / expert-41
+			:ARG1 (x46 / nutrition
+				:mod (x45 / child)))
+		:op2 (x48 / person
+			:name (n12 / name
+				:op1 "Y.")))
+	:x (x61 / and
+		:op2 (x62 / name
+			:op1 "Robert"
+			:op2 "Woods"))
+	:x (x77 / and
+		:op2 (x78 / name
+			:op1 "Gladys"
+			:op2 "Gilbert"
+			:ARG0-of (x84 / have-org-role-91
+				:ARG2 (o1 / officer)
+				:ARG1 (x82 / special)
+				:null_edge (x83 / null_tag)
+				:ARG1 (x87 / mission
+					:poss (x91 / government-organization
+						:name (n15 / name
+							:op1 "Agency"
+							:op2 "for"
+							:op3 "International"
+							:op4 "Development"))))))
+	:x (x99 / and
+		:op3 (x38 / d-berkeley)
+		:op9 (x56 / and
+			:op2 (x55 / businessman
+				:mod (x54 / country
+					:name (n13 / name
+						:op1 "York"))
+				:poss (x59 / person
+					:name (n14 / name
+						:op1 "Leland")))
+			:op2 (x57 / friend
+				:mod x54))))
+
+# ::id 11
+# ::snt 7 Ethiopians Killed Also on board were Debebe Agonofer , an Ethiopian agricultural economist with the AID mission , and six other Ethiopians , including the plane's crew of three
+(x20 / and
+	:op1 (x8 / name
+		:op1 "Debebe"
+		:op2 "Agonofer"
+		:ARG0-of (x3 / kill-01
+			:ARG1 (x2 / ethiopians
+				:quant 7)
+			:mod (x4 / also)
+			:location (x6 / board))
+		:ARG0-of (x14 / economist
+			:ARG1 (x12 / organization
+				:name (n1 / name
+					:op1 "Ethiopian"))
+			:mod (x13 / agriculture)
+			:ARG1 (x18 / mission)))
+	:op2 (x23 / newspaper
+		:name (n / name
+			:op1 "Ethiopians")
+		:quant 6
+		:mod (x22 / other)
+		:prep-with (x29 / crew
+			:poss (x27 / plane)
+			:consist-of (x31 / person
+				:op (t / three)))))
+
+# ::id 12
+# ::snt Reaction to the news in the United States was one of sadness coupled with an outpouring of praise for Leland's work
+(x1 / react-01
+	:ARG1 (x4 / news)
+	:location (x7 / country
+		:name (n / name
+			:op1 "United"
+			:op2 "States"))
+	:ARG1 (x12 / sadness
+		:ARG1-of (x13 / couple-01
+			:ARG2 (x18 / praise-01
+				:ARG1 (x22 / work-01
+					:ARG0 (x20 / person
+						:name (n1 / name
+							:op1 "Leland")))))))
+
+# ::id 13
+# ::snt A statement issued by President Bush said that Mickey Leland and the other members of The 44-year-old Leland , a Democrat  traveling party , both Americans and Ethiopians , were engaged in a noble cause trying to feed the hungry
+(x2 / state-01
+	:ARG1-of (x3 / issue-01
+		:ARG0 (x6 / person
+			:name (n / name
+				:op1 "Bush")
+			:ARG0-of (x5 / have-org-role-91
+				:ARG2 (p / president))))
+	:ARG1 (x31 / engage-01
+		:ARG2 (x11 / and
+			:op1 (x9 / name
+				:op1 "Mickey"
+				:op2 "Leland"
+				:ARG0-of (x14 / have-org-role-91
+					:ARG2 (m / member)
+					:mod (x13 / other)
+					:ARG1 (x18 / person
+						:name (n2 / name
+							:op1 "Leland")
+						:null_edge (x17 / person
+							:name (n3 / name
+								:op1 "44-year-old"))
+						:null_edge (x21 / have-org-role-91
+							:ARG1 (p1 / political-party
+								:name (n4 / name
+									:op1 "Democrat"))
+							:ARG0-of (x22 / travel-01)))))
+			:op2 (x27 / and
+				:op2 (x28 / newspaper
+					:name (n1 / name
+						:op1 "Ethiopians"))))
+		:ARG2 (x35 / cause
+			:mod (x34 / noble)
+			:consist-of (x36 / try-01
+				:ARG1 (x38 / feed-01
+					:ARG2 (x40 / hunger-01))))))
+
+# ::id 14
+# ::snt Dellums spoke of Rep. Ronald V. Dellums (D-Berkeley ) staff aide who lost the Americans  life in the crash as a close personal friend for over a decade and said that everyone on the plane shared a common commitment to helping the poor , the starving and the dispossessed in that war-torn , drought-stricken land
+(x2 / speak-01
+	:ARG0 (x1 / person
+		:name (n / name
+			:op1 "Dellums"))
+	:medium (x12 / have-org-role-91
+		:ARG2 (a / aide)
+		:ARG1 (x11 / person
+			:ARG2-of (s / staff-01))
+		:ARG1 (x30 / and
+			:op1 (x14 / person
+				:ARG0-of (l / lose-02)
+				:ARG1 (x17 / life
+					:location (x20 / crash-01)
+					:poss (x25 / friend
+						:mod (x23 / close)
+						:mod (x24 / personal))))
+			:op2 x25
+			:op2 (x31 / say-01
+				:ARG1 (x37 / share-01
+					:ARG0 (x33 / everyone
+						:topic (x36 / plane))
+					:ARG1 (x40 / commit-01
+						:mod (x39 / common)
+						:ARG2 (x42 / help-01
+							:ARG1 (x48 / and
+								:op1 (x44 / poor)
+								:op2 (x50 / dispossessed
+									:location (x56 / land
+										:mod (x52 / that)
+										:mod (x55 / drought-stricken)))))))))))
+
+# ::id 15
+# ::snt the Americans  deaths are a collective loss to all humanity , Dellums said
+(x13 / say-01
+	:ARG1 (x6 / collective
+		:ARG2 (x10 / humanity
+			:mod (x9 / all)))
+	:ARG0 (x12 / person
+		:name (n / name
+			:op1 "Dellums")))
+
+# ::id 16
+# ::snt Discovery of the crash site ended what had been one of the most extensive American search and rescue operations ever conducted in a Third World country
+(x6 / end-01
+	:ARG1 (x11 / include-91
+		:ARG2 (x17 / and
+			:op1 (x1 / discovery
+				:ARG1 (x5 / site
+					:mod (x4 / crash-01)))
+			:op1 (x16 / search-01
+				:mod (x14 / extensive
+					:degree (x13 / most))
+				:mod (x15 / country
+					:name (n / name
+						:op1 "American"))
+				:ARG1-of (x21 / conduct-01
+					:time (x20 / ever)
+					:location (x26 / country
+						:null_edge (x25 / null_tag))))
+			:op2 (x18 / rescue-01))))
+
+# ::id 17
+# ::snt By Sunday , 18 aircraft , including four American helicopters , two American C-130 airplanes and 12 Ethiopian aircraft , were involved in the search
+(x22 / involve-01
+	:time (x1 / by
+		:op1 (xap0 / date-entity
+			:weekday (x2 / sunday)))
+	:ARG1 (x5 / aircraft
+		:quant 18
+		:ARG2-of (x7 / include-91
+			:ARG1 (x16 / and
+				:op1 (x10 / helicopter
+					:quant 4
+					:mod (x9 / country
+						:name (n / name
+							:op1 "American")))
+				:op2 (x15 / airplane
+					:quant 2
+					:null_edge (x13 / country
+						:name (n1 / name
+							:op1 "American")))
+				:op2 (x19 / aircraft
+					:mod x9
+					:quant 12
+					:mod (x18 / organization
+						:name (n2 / name
+							:op1 "Ethiopian"))))))
+	:ARG2 (x25 / search-01))
+
+# ::id 18
+# ::snt 
+(x6 / report-01
+	:ARG1 (x4 / helicopter
+		:quant 3
+		:mod (x2 / more)
+		:mod (x3 / country
+			:name (n / name
+				:op1 "American")))
+	:ARG1 (x10 / route
+		:source (x15 / organization
+			:name (n1 / name
+				:op1 "Base")
+			:null_edge (x12 / organization
+				:name (n2 / name
+					:op1 "Eglin"))
+			:null_edge (x13 / null_tag)
+			:null_edge (x14 / null_tag)
+			:location (x17 / country
+				:name (n3 / name
+					:op1 "Florida")))
+		:mod (x19 / word
+			:ARG0 (x22 / discover-01))))
+
+# ::id 19
+# ::snt The search on Sunday was hampered again by thunderstorms , poor visibility and other conditions that characterized many of the previous days of search
+(x6 / hamper
+	:ARG1 (x2 / search-01
+		:time (xap0 / date-entity
+			:weekday (x4 / sunday)))
+	:mod (x7 / again)
+	:ARG0 (x13 / and
+		:op1 (x9 / thunderstorm)
+		:op2 (x12 / visibility
+			:mod (x11 / poor))
+		:op2 (x15 / condition
+			:mod (x14 / other)
+			:ARG0-of (x17 / characterize
+				:purpose (x24 / search-01
+					:quant (x18 / many)
+					:quant (x22 / day
+						:time (x21 / previous)))))))
+
+# ::id 20
+# ::snt The terrain was fairly rugged and the weather conditions were bad getting there , said Capt. Clair M. Gilk , commander of one of the two helicopters that were the first to spot the wreckage
+(x15 / say-01
+	:ARG1 (x6 / and
+		:op1 (x5 / rugged
+			:domain (x2 / terrain)
+			:degree (x4 / fair))
+		:op2 (x12 / get-04
+			:ARG1 x2
+			:ARG1 (x9 / condition
+				:mod (x8 / weather
+					:mod (x11 / bad-42)))))
+	:ARG1 (x16 / capt.
+		:ARG0-of (x21 / have-org-role-91
+			:ARG2 (c / commander)
+			:ARG1 (x27 / helicopter
+				:quant 2
+				:ARG0-of (x33 / spot-01
+					:ARG1 (x35 / wreckage))))))
+
+# ::id 21
+# ::snt Gilk said that the crash site , in a mountainous and heavily wooded region , is so remote and inaccessible that the nearest landing site for helicopters is half a mile away , a distance that Clair M. Gilk  said could take as much as three hours to cover on foot
+(x2 / say-01
+	:ARG0 (x1 / person
+		:name (n / name
+			:op1 "Gilk"))
+	:ARG1 (x19 / and
+		:op1 (x18 / remote
+			:domain (x6 / site
+				:mod (x5 / crash-01))
+			:location (x14 / region
+				:mod (x10 / mountain)
+				:mod (x13 / wooded
+					:degree (x12 / heavily)))
+			:domain (x31 / distance-quantity
+				:unit (m / mile)
+				:domain (x25 / site
+					:mod (x23 / nearest)
+					:location-of (x24 / land-01)
+					:location-of (x27 / helicopter
+						:ARG0-of (x40 / say-01
+							:ARG0 (x39 / person
+								:name (n1 / name
+									:op1 "Gilk")
+								:null_edge (x37 / person
+									:name (n2 / name
+										:op1 "Clair"))
+								:null_edge (x38 / null_tag))
+							:ARG1 (x41 / possible
+								:domain (x42 / take-01
+									:ARG1 (x47 / temporal-quantity
+										:unit (h / hour)
+										:duration-of (x45 / product
+											:name (n3 / name
+												:op1 "as")
+											:degree (x44 / much)))
+									:purpose (x49 / cover-01
+										:ARG2 (x51 / foot)))))))))
+		:op2 (xap0 / possible
+			:domain (x20 / access-01))))
+
+# ::id 22
+# ::snt Recovery Planned for Today Air Force personnel were assigned to remain near the site Sunday night to keep the site Sunday  secure
+(x11 / remain-01
+	:ARG3 (x2 / country
+		:name (n / name
+			:op1 "Planned")
+		:null_edge (x1 / null_tag))
+	:ARG1 (x7 / have-org-role-91
+		:ARG2 (p / personnel)
+		:poss (x4 / organization
+			:name (n1 / name
+				:op1 "Today"))
+		:null_edge (x5 / null_tag)
+		:null_edge (x6 / null_tag))
+	:ARG1 (x9 / assign-01
+		:ARG1 x7)
+	:time (x16 / night)
+	:purpose (x18 / keep-04
+		:ARG2 (x22 / secure
+			:ARG1 (x20 / site
+				:location (x12 / near
+					:op1 (x14 / site)))
+			:time (xap1 / date-entity
+				:null_edge (x21 / null_tag))))
+	:time (xap0 / date-entity
+		:null_edge (x15 / null_tag)))
+
+# ::id 23
+# ::snt Recovery of the remains of those aboard the plane , a twin-engine Twin Otter , was to commence at first light today
+(x1 / recovery
+	:ARG1 (x4 / remains
+		:topic (x9 / plane
+			:name (x14 / otter
+				:null_edge (x13 / twin
+					:mod (x12 / twin-engine)))))
+	:ARG1 (x18 / commence-01
+		:time (x21 / light)
+		:time (x22 / today)))
+
+# ::id 24
+# ::snt Because of the site's inaccessibility , the site's inaccessibility  could take at least two days to recover all of the bodies , according to Maj. Gen. James F. Record , who came here from Washington to oversee the search effort
+(x / xconcept
+	:x (x1 / cause-01)
+	:x (x12 / possible
+		:domain (x13 / take-01
+			:ARG2 (x6 / inaccessibility
+				:ARG1 (x4 / site))
+			:ARG0 (x11 / inaccessibility
+				:ARG1 (x9 / site))
+			:ARG1 (x14 / person
+				:name (n / name
+					:op1 "at"))
+			:ARG1 (x17 / temporal-quantity
+				:unit (d / day)
+				:quant 2)
+			:purpose (x19 / recover-02
+				:ARG1 (x23 / body
+					:quant (x20 / all)))
+			:null_edge (x29 / name
+				:op1 "James"
+				:op2 "F."
+				:op3 "Record"
+				:ARG0-of (x27 / maj.)
+				:ARG1-of (x34 / come-01
+					:location (x35 / here)
+					:ARG4 (x37 / city
+						:name (n1 / name
+							:op1 "Washington"))
+					:purpose (x39 / oversee-01
+						:ARG1 (x42 / effort
+							:mod (x41 / search-01))))))))
+
+# ::id 25
+# ::snt Record arrived in Addis Ababa about 10 minutes after the first reports were received of the sighting of the crash site
+(x2 / arrive-01
+	:ARG1 (x1 / record-01)
+	:ARG4 (x5 / country
+		:name (n / name
+			:op1 "Ababa")
+		:location (x4 / country
+			:name (n1 / name
+				:op1 "Addis")))
+	:ARG1 (x6 / about
+		:op1 (x8 / temporal-quantity
+			:unit (m / minute)
+			:quant 10))
+	:time (x9 / after
+		:op1 (x14 / receive-01
+			:ARG1 (x12 / report-01)
+			:ARG1 (x17 / sighting
+				:ARG1 (x21 / site
+					:mod (x20 / crash-01))))))
+
+# ::id 26
+# ::snt In Washington , a Pentagon spokesman , Navy Capt. Stan Bloyer , said that the remains of the Americans will probably be returned to the United States through Torrejon Air Base near Madrid , where the American armed forces maintains full mortuary facilities
+(x13 / say-01
+	:location (x2 / city
+		:name (n / name
+			:op1 "Washington"))
+	:ARG1 (x23 / return-01
+		:ARG1 (x19 / person
+			:mod (c / country
+				:name (n1 / name
+					:op1 "Americans")))
+		:mod (x21 / probable)
+		:ARG4 (x26 / country
+			:name (n2 / name
+				:op1 "United"
+				:op2 "States"))
+		:time (x40 / maintain-01
+			:ARG0 (x29 / country
+				:name (n3 / name
+					:op1 "Torrejon"))
+			:location (x32 / near
+				:op1 (x33 / city
+					:name (n6 / name
+						:op1 "Madrid")))
+			:ARG0 (x39 / force
+				:null_edge (x37 / country
+					:name (n7 / name
+						:op1 "American"))
+				:ARG1-of (x38 / arm-01))
+			:ARG1 (x43 / facility
+				:mod (x41 / full)
+				:mod (x42 / mortuary))))
+	:ARG0 (xap0 / person
+		:ARG0-of (x6 / have-org-role-91
+			:ARG2 (s / spokesman)
+			:ARG1 (x5 / government-organization
+				:name (n4 / name
+					:op1 "Pentagon"))
+			:ARG1 (x8 / military
+				:name (n5 / name
+					:op1 "Navy"))
+			:name (x10 / name
+				:op1 "Stan"
+				:op2 "Bloyer"
+				:ARG0-of (x9 / capt.)))))
+
+# ::id 27
+# ::snt Dellums to Accompany Bodies Dellums , House Majority Whip William H. Gray III (D-Pa )
+(x3 / accompany-01
+	:ARG0 (x1 / person
+		:name (n / name
+			:op1 "Dellums"))
+	:name (x5 / name
+		:op1 "Dellums"
+		:op2 ","
+		:op3 "House"
+		:op4 "Majority"
+		:op5 "Whip"
+		:op6 "William"
+		:op7 "H."
+		:op8 "Gray"
+		:op9 "III"
+		:ARG0-of (x4 / body)
+		:ARG0-of (x7 / have-org-role-91
+			:ARG1 (g / government-organization
+				:name (n1 / name
+					:op1 "House")))
+		:ARG0-of (x8 / majority)
+		:ARG0-of (x9 / whip)))
+
+# ::id 28
+# ::snt and Republican Reps. Bill Emerson of Missouri and Jack Fields of Texas plan to fly to Addis Ababa to accompany the bodies back to the United States
+(x1 / and
+	:op1 (x13 / plan-01
+		:ARG0 (x8 / and
+			:op1 (x4 / newspaper
+				:name (n / name
+					:op1 "Bill"
+					:op2 "Emerson")
+				:mod "Republican"
+				:null_edge (x3 / null_tag)
+				:ARG1-of (x6 / include-91))
+			:op2 (x9 / name
+				:op1 "Jack"
+				:op2 "Fields"
+				:mod (x12 / country
+					:name (n2 / name
+						:op1 "Texas"))))
+		:ARG1 (x15 / fly-01
+			:ARG1 (x18 / country
+				:name (n1 / name
+					:op1 "Ababa")
+				:mod (x17 / country
+					:name (n3 / name
+						:op1 "Addis")))
+			:purpose (x20 / accompany-01
+				:ARG1 (x22 / body)
+				:ARG0 (x26 / country
+					:name (n4 / name
+						:op1 "United"
+						:op2 "States"))))))
+
+# ::id 29
+# ::snt Discovery of the crash site came at about 1:15 p.m. local time Sunday
+(x6 / come-01
+	:ARG1 (x1 / discovery
+		:ARG1 (x5 / site
+			:mod (x4 / crash-01)))
+	:time (xap0 / date-entity
+		:time (x12 / time
+			:mod (x11 / local))
+		:weekday (x13 / sunday)))
+
+# ::id 30
+# ::snt Ackerman said that the helicopter Rep. Gary L. Ackerman (D-N.Y. ), a colleague of Leland's who has accompanied search crews for the last two days and was aboard the helicopter that first spotted the wreckage Sunday  was traveling in set down during the morning at an airstrip near the village of Dembi Dolo
+(x2 / say-01
+	:ARG0 (x1 / person
+		:name (n / name
+			:op1 "Ackerman"))
+	:name (x7 / name
+		:op1 "Gary"
+		:op2 "L."
+		:op3 "Ackerman"
+		:ARG0-of (x6 / rep.
+			:mod (x5 / helicopter))
+		:ARG0-of (x15 / colleague
+			:ARG1 (x17 / person
+				:name (n1 / name
+					:op1 "Leland"))
+			:ARG0-of (x21 / accompany-01
+				:ARG1 x17
+				:ARG1 (x23 / crew
+					:mod (x22 / search-01))
+				:time (x27 / date-entity
+					:mod (x26 / last))
+				:ARG0 (x29 / and)
+				:location (x31 / aboard
+					:op1 (x33 / helicopter
+						:ARG0-of (x36 / spot-01
+							:ARG1 (x38 / wreckage)
+							:ARG1 (x41 / travel-01
+								:time (xap0 / date-entity
+									:weekday (x39 / sunday)
+									:ARG2 (x43 / set-08
+										:time (x47 / morning
+											:location (x50 / airstrip
+												:location (x51 / near
+													:op1 (x53 / village
+														:poss (x56 / country
+															:name (n2 / name
+																:op1 "Dolo")
+															:null_edge (x55 / country
+																:name (n3 / name
+																	:op1 "Dembi")))))))))))))))))
+
+# ::id 31
+# ::snt There , the crew came upon a Roman Catholic missionary who told them that he had heard reports from local villagers that a plane had been heard nearby last week
+(x5 / come-01
+	:mod (x1 / there)
+	:ARG1 (x4 / crew)
+	:ARG2 (x12 / tell-01
+		:ARG2 (x8 / world-region
+			:name (n / name
+				:op1 "Roman"))
+		:ARG2 (x10 / missionary)
+		:ARG1 (x17 / hear-01
+			:ARG0 (x15 / he)
+			:ARG1 (x18 / report-01
+				:ARG1 (x21 / villager
+					:mod (x20 / local))
+				:ARG1 (x27 / hear-01
+					:ARG1 (x24 / plane)
+					:manner (x28 / nearby)
+					:time (x30 / week
+						:mod (x29 / last)))))))
+
+# ::id 32
+# ::snt Presently , the crew found an Ethiopian surveyor who said he could guide them to an area near where the plane had been heard
+(x5 / find-02
+	:time (x1 / present)
+	:ARG0 (x4 / crew)
+	:ARG1 (x8 / surveyor
+		:mod (x7 / organization
+			:name (n / name
+				:op1 "Ethiopian"))
+		:ARG0-of (x10 / say-01
+			:ARG1 (x12 / possible
+				:domain (x13 / guide-01
+					:ARG2 (x17 / area
+						:location (x18 / near
+							:op1 (x24 / hear-01
+								:ARG1 (x21 / plane)))))))))
+
+# ::id 33
+# ::snt The surveyor was taken aboard , crew members said , but on crew members  way toward crew members  destination crew members  spotted the crash site
+(x9 / say-01
+	:ARG1 (x11 / contrast-01
+		:ARG1 (x4 / take-01
+			:ARG1 (x2 / surveyor))
+		:ARG2 (x22 / spot-01
+			:ARG1 (x25 / site
+				:mod (x24 / crash-01))
+			:ARG1 (xap1 / person
+				:ARG0-of (x18 / have-org-role-91
+					:ARG2 (m1 / member)
+					:ARG1 (x17 / crew))
+				:ARG0-of (xap2 / person
+					:ARG0-of (x14 / have-org-role-91
+						:ARG2 (m3 / member)
+						:ARG1 (x13 / crew))))
+			:ARG0 (xap3 / person
+				:ARG0-of (x21 / have-org-role-91
+					:ARG2 (m2 / member)
+					:ARG1 (x19 / destination)
+					:ARG1 (x20 / crew)))))
+	:ARG0 (xap0 / person
+		:mod (x5 / aboard)
+		:ARG0-of (x8 / have-org-role-91
+			:ARG2 (m / member)
+			:ARG1 (x7 / crew))))
+
+# ::id 34
+# ::snt The location was described as very steep , with the plane resting on land that was pitched at an angle of about 60 degrees
+(x4 / describe-01
+	:ARG1 (x2 / location)
+	:ARG2 (x7 / steep
+		:degree (x6 / very))
+	:ARG2 (x12 / rest-01
+		:ARG1 (x11 / plane)
+		:location (x14 / land
+			:ARG1-of (x17 / pitch)
+			:location-of (x24 / degree
+				:quant (x22 / about
+					:op1 60)))))
+
+# ::id 35
+# ::snt Mostly Rocks and BrushCrew members described the site as mostly rocks and brush and indicated that the pilot of Leland's plane may have been trying to escape bad weather on Monday by following the pathway of a river flowing through a valley
+(x14 / and
+	:op1 (x6 / describe-01
+		:ARG1 (x3 / and
+			:op1 (xap0 / person
+				:ARG0-of (x5 / have-org-role-91
+					:ARG2 (m / member))))
+		:ARG1 (x8 / site)
+		:ARG2 (x12 / and
+			:op1 (x11 / rock
+				:mod (x10 / most))
+			:op2 (x13 / brush)))
+	:op2 (x15 / indicate-01
+		:ARG1 (x23 / possible
+			:domain (x26 / try-01
+				:ARG0 (x18 / person
+					:ARG0-of (p / pilot-01)
+					:ARG1 (x22 / plane
+						:poss (x20 / person
+							:name (n / name
+								:op1 "Leland"))))
+				:ARG1 (x28 / escape-01
+					:ARG0 x18
+					:ARG1 (x30 / weather
+						:mod (x29 / bad))
+					:time (xap1 / date-entity
+						:weekday (x32 / monday)))
+				:manner (x34 / follow-01
+					:ARG0 x18
+					:ARG2 (x36 / pathway
+						:poss (x39 / river
+							:name (x40 / name
+								:op1 "flowing"
+								:ARG2 (x43 / valley)))))))))
+
+# ::id 36
+# ::snt Before the plane reached safety , Leland's plane  ran into the mountainside
+(x10 / run-02
+	:time (x4 / reach-01
+		:time (x1 / before)
+		:ARG0 (x3 / plane)
+		:ARG1 (x5 / safe-41)
+		:ARG0 (x9 / plane
+			:poss (x7 / person
+				:name (n / name
+					:op1 "Leland"))))
+	:ARG1 x9
+	:ARG4 (x13 / mountainside))
+
+# ::id 37
+# ::snt Rep. Alan Wheat (D-Mo )
+(x2 / name
+	:op1 "Alan"
+	:op2 "Wheat"
+	:ARG0-of (x1 / rep.))
+
+# ::id 38
+# ::snt , who with Ackerman had been flying with search crews for the last two days , said Rep. Alan Wheat (D-Mo ) telephoned House Speaker Thomas S. Foley (D-Wash )
+(x17 / say-01
+	:time (x7 / fly-01
+		:ARG0 (x4 / person
+			:name (n / name
+				:op1 "Ackerman"))
+		:ARG2 (x10 / crew
+			:mod (x9 / search-01))
+		:time (x14 / date-entity
+			:mod (x13 / last)))
+	:ARG1 (x24 / telephone-01
+		:ARG0 (x19 / newspaper
+			:name (n1 / name
+				:op1 "Alan"
+				:op2 "Wheat")
+			:ARG0-of (x18 / rep.))
+		:ARG1 (x27 / name
+			:op1 "Thomas"
+			:op2 "S."
+			:op3 "Foley"
+			:ARG0-of (x25 / have-org-role-91
+				:ARG1 (g / government-organization
+					:name (n2 / name
+						:op1 "House")))
+			:ARG0-of (x26 / speaker)
+			:ARG0-of (x31 / d-wash))))
+
+# ::id 39
+# ::snt from Addis Ababa soon after the discovery was made
+(x7 / discover-01
+	:ARG2 (x3 / country
+		:name (n / name
+			:op1 "Ababa")
+		:location (x2 / country
+			:name (n1 / name
+				:op1 "Addis")))
+	:time (x5 / after
+		:mod (x4 / soon)))
+
+# ::id 40
+# ::snt Rep. Alan Wheat (D-Mo ) said that Foley was heartbroken at the news
+(x7 / say-01
+	:ARG0 (x2 / newspaper
+		:name (n / name
+			:op1 "Alan"
+			:op2 "Wheat")
+		:ARG0-of (x1 / rep.))
+	:ARG1 (x11 / heartbroken
+		:ARG1 (x9 / person
+			:name (n1 / name
+				:op1 "Foley"))
+		:time (x14 / news)))
+
+# ::id 41
+# ::snt The crash site was described by U.S. authorities as being about 20 nautical miles due east of the town of Gambela and 230 nautical miles west-southwest of Addis Ababa
+(x5 / describe-01
+	:ARG1 (x3 / site
+		:purpose (x2 / crash-01))
+	:ARG0 (x8 / authority
+		:mod (x7 / country
+			:name (n1 / name
+				:op1 "U.S.")))
+	:ARG0 (x29 / country
+		:name (n / name
+			:op1 "Ababa")
+		:null_edge (x11 / about
+			:null_edge 20)
+		:null_edge (x16 / east
+			:null_edge (x15 / due)
+			:null_edge (x22 / and
+				:op1 (x19 / town
+					:location (x21 / country
+						:name (n3 / name
+							:op1 "Gambela"))))
+			:null_edge (x26 / west-southwest))
+		:mod (x28 / country
+			:name (n2 / name
+				:op1 "Addis"))))
+
+# ::id 42
+# ::snt The crash site  appeared to be near the village of Bure
+(x4 / appear-01
+	:ARG1 (x3 / site
+		:mod (x2 / crash-01))
+	:location (x7 / near
+		:op1 (x9 / village
+			:ARG1-of (x10 / include-91))))
+
+# ::id 43
+# ::snt Area Had Been Covered The area of the site had apparently been searched within the first two days after the crash by American aircraft using electronic devices in an attempt to detect an emergency signal from the downed craft
+(x4 / cover-01
+	:ARG1 (x1 / country
+		:name (n / name
+			:op1 "Area"))
+	:ARG1 (x6 / area
+		:mod (x9 / site
+			:location-of (x13 / search-01
+				:manner (x11 / apparent)
+				:time (x14 / within
+					:op1 (x19 / after
+						:quant (x18 / temporal-quantity
+							:unit (d / day)
+							:quant 2)
+						:op1 (x21 / crash-01)))
+				:ARG0 (x24 / aircraft
+					:ARG0-of (x25 / use-01
+						:ARG1 (x27 / device
+							:mod (x26 / electronic))
+						:ARG2 (x30 / attempt-01
+							:ARG1 (x32 / detect-01
+								:ARG1 (x35 / signal
+									:mod (x34 / emergency)
+									:ARG1 (x39 / craft-01
+										:ARG1-of (x38 / down-02)))))))))))
+
+# ::id 44
+# ::snt However , Sunday was the first day that helicopters flew over the area to make visual inspections
+(x7 / temporal-quantity
+	:unit (d / day)
+	:ARG1-of (x10 / fly-01
+		:ARG0 (x9 / helicopter)
+		:path (x11 / over
+			:op1 (x13 / area))
+		:purpose (x15 / make-01
+			:ARG0 x9
+			:ARG1 (x17 / inspect-01
+				:mod (x16 / visual))))
+	:time (xap0 / date-entity
+		:weekday (x3 / sunday)))
+
+# ::id 45
+# ::snt The discovery , and indications that the passengers had died instantly , brought an end to charges that the American military response to the emergency was inadequate and tardy
+(x13 / bring-01
+	:ARG1 (x4 / and
+		:op1 (x2 / discover-01)
+		:op2 (x5 / indicate-01
+			:ARG1 (x10 / die-01
+				:ARG1 (x8 / passenger)
+				:manner (x11 / instant))))
+	:ARG2 (x17 / charge-05
+		:ARG2 (x28 / and
+			:op1 (x15 / end-01)
+			:op1 (x27 / adequate
+				:polarity -
+				:domain (x22 / respond-01
+					:null_edge (x20 / country
+						:name (n / name
+							:op1 "American"))
+					:ARG0 (x21 / military)
+					:ARG1 (x25 / emergency)))
+			:op2 (x29 / tardy))))
+
+# ::id 46
+# ::snt 
+(x23 / say-01
+	:ARG0 (x1 / wheat
+		:ARG1-of (x9 / press-01
+			:ARG0-of (x12 / have-org-role-91
+				:ARG2 (o / official)
+				:null_edge (x10 / null_tag)
+				:null_edge (x11 / null_tag))
+			:ARG2 (x15 / deploy-01
+				:location (x21 / search-01
+					:degree (x17 / more)))))
+	:time (x24 / after
+		:op1 (x26 / discover-01))
+	:ARG1 (x30 / possible
+		:domain (x32 / bring-03
+			:ARG0 (x29 / we)
+			:ARG1 (x34 / plane
+				:mod (x33 / every))
+			:ARG2 (x37 / world)
+			:ARG1 (x42 / and
+				:op1 (x40 / have-03
+					:ARG0 (x39 / we)))
+			:ARG1 (x50 / differ-02
+				:ARG0 (x43 / government-organization
+					:name (n / name
+						:op1 "Third"
+						:op2 "World")))))
+	:time (xap0 / date-entity
+		:weekday (x27 / sunday)))
+
+# ::id 47
+# ::snt President Bush , in President Bush  Sunday statement , said : President Bush  have known , admired and worked with Mickey Leland for many years
+(x8 / state-01
+	:ARG0 (x2 / person
+		:name (n / name
+			:op1 "Bush")
+		:ARG0-of (x1 / have-org-role-91
+			:ARG2 (p1 / president)))
+	:null_edge (x5 / have-org-role-91
+		:ARG2 (p / president))
+	:ARG0 (x6 / person
+		:name (n1 / name
+			:op1 "Bush"))
+	:ARG1 (x18 / and
+		:op1 (x15 / know-01
+			:ARG0 (x13 / person
+				:name (n2 / name
+					:op1 "Bush")
+				:ARG0-of (x12 / have-org-role-91
+					:ARG2 (p2 / president))))
+		:op2 (x17 / admire-01)
+		:op2 (x19 / work-01
+			:ARG3 (x22 / person
+				:name (n3 / name
+					:op1 "Leland")
+				:null_edge (x21 / null_tag))
+			:duration (x24 / many
+				:op1 (x25 / temporal-quantity
+					:unit (y / year)))))
+	:time (xap0 / date-entity
+		:null_edge (x7 / null_tag)))
+
+# ::id 48
+# ::snt Mickey Leland for many years  sense of compassion and desire to help those in need has aided millions of people from Houston to Addis Ababa
+(x17 / aid-01
+	:ARG0 (x2 / person
+		:name (n / name
+			:op1 "Leland")
+		:null_edge (x1 / null_tag)
+		:null_edge (x4 / many
+			:op1 (x5 / temporal-quantity
+				:unit (y / year)
+				:ARG1-of (x12 / help-01
+					:ARG2 (x6 / sense
+						:ARG1 (x9 / and
+							:op1 (x8 / compassion)
+							:op2 (x10 / desire-01)
+							:op1 (x15 / need-01)))))))
+	:ARG0 (x20 / people
+		:null_edge (x22 / country
+			:name (n1 / name
+				:op1 "Houston")
+			:ARG2 (x25 / country
+				:name (n2 / name
+					:op1 "Ababa")
+				:mod (x24 / country
+					:name (n3 / name
+						:op1 "Addis"))))))
+
+# ::id 49
+# ::snt Our hearts go out to (Mickey Leland for many years  widow )and to the families and friends of the congressional staff members , State Department , Agency for International Development and Ethiopian officials who joined Mickey on his important mission and who died with Mickey on his important mission  trying to carry his important mission  out
+(x3 / go-02
+	:ARG0 (x2 / heart)
+	:ARG1 (x18 / and
+		:null_edge (x7 / null_tag)
+		:duration (x10 / many
+			:op1 (x11 / temporal-quantity
+				:unit (y / year)))
+		:op2 (x12 / widow)
+		:op1 (x17 / family
+			:poss (xap1 / person
+				:ARG0-of (x24 / have-org-role-91
+					:ARG2 (m / member)
+					:ARG1 (x22 / government-organization
+						:name (n / name
+							:op1 "congressional"))
+					:ARG1 (x23 / person
+						:ARG2-of (s / staff-01))
+					:ARG1 (x33 / and
+						:op2 (x26 / government-organization
+							:name (n1 / name
+								:op1 "State"
+								:op2 "Department")
+							:null_edge (x29 / null_tag
+								:null_edge (x30 / null_tag
+									:null_edge (x32 / null_tag
+										:null_edge (x31 / null_tag)))))
+						:op1 (xap0 / person
+							:ARG0-of (x35 / have-org-role-91
+								:ARG2 (o / official)
+								:ARG1 (x34 / country
+									:name (n2 / name
+										:op1 "Ethiopia"))
+								:null_edge (x37 / join-01
+									:ARG1 (x43 / and
+										:op2 (x42 / mission
+											:mod (x41 / important))
+										:op2 (x45 / die-01
+											:location (x51 / mission
+												:mod (x50 / important
+													:ARG1-of (x52 / try-01
+														:ARG1 (x54 / carry-01
+															:ARG1 (x57 / mission
+																:mod (x56 / important)))))))))))))))
+		:op2 (x19 / friend)))
+
+# ::id 50
+# ::snt Best in CompassionFoley said that in House Speaker Thomas S. Foley (D-Wash ) search to look into the plight of the world's most desperate and hungry individuals , Rep. Leland represented the best in compassion that we as a nation possess
+(x4 / say-01
+	:ARG0 (x3 / person
+		:name (n / name
+			:op1 "CompassionFoley"))
+	:ARG1 (x33 / represent-01
+		:purpose (x15 / search-01
+			:ARG2 (x17 / look-01
+				:ARG1 (x20 / plight
+					:ARG1 (x27 / and
+						:op1 (x26 / desperate
+							:compared-to (x23 / world)
+							:degree (x25 / most))
+						:op2 (x28 / hunger-01)
+						:op2 (x29 / individual)))))
+		:ARG0 (x32 / person
+			:name (n1 / name
+				:op1 "Leland")
+			:null_edge (x31 / rep.))
+		:ARG0 (x43 / possess-01
+			:location (x37 / compassion
+				:mod (x35 / good
+					:degree (m / most)))
+			:ARG0 (x39 / we
+				:prep-as (x42 / nation)))))
+
+# ::id 51
+# ::snt Secretary of State James A. Baker III praised the congressman as an outstanding statesman and humanitarian who died serving the congressman  country
+(x8 / praise-01
+	:ARG0 (x4 / person
+		:name (n / name
+			:op1 "James"
+			:op2 "A."
+			:op3 "Baker"
+			:op4 "III")
+		:ARG0-of (x1 / have-org-role-91
+			:ARG2 (s / secretary)
+			:ARG1 (x3 / state)))
+	:ARG1 (x10 / have-org-role-91
+		:ARG2 (c / congressman))
+	:ARG1 (x15 / and
+		:op1 (x14 / statesman
+			:mod (x13 / outstanding))
+		:op3 (x19 / serve-01
+			:mod (x16 / humanitarian)
+			:ARG1 (x18 / die-01)
+			:ARG1 (x22 / country
+				:mod (x21 / have-org-role-91
+					:ARG2 (c1 / congressman))))))
+
+# ::id 52
+# ::snt Baker also thanked Ethiopia , a Soviet-allied country with which Washington has had strained relations for several years , for Ethiopia  outstanding support in the search for Leland's party
+(x3 / thank-01
+	:ARG0 (x1 / person
+		:name (n / name
+			:op1 "Baker"))
+	:mod (x2 / also)
+	:ARG1 (x4 / country
+		:name (n1 / name
+			:op1 "Ethiopia")
+		:null_edge (x8 / null_tag
+			:mod (x7 / organization
+				:name (n2 / name
+					:op1 "Soviet-allied"))
+			:ARG0-of (x15 / relation
+				:ARG1-of (x14 / strain)
+				:duration (x17 / several
+					:op1 (x18 / temporal-quantity
+						:unit (y / year)))
+				:ARG1 (x21 / country
+					:name (n3 / name
+						:op1 "Ethiopia"))
+				:mod (x23 / support-01
+					:manner (x22 / outstanding))
+				:mod (x26 / search-01
+					:ARG2 (x30 / party
+						:poss (x28 / person
+							:name (n4 / name
+								:op1 "Leland"))))))))
+
+# ::id 53
+# ::snt Bush offered U.S. help to the Ethiopian government for Ethiopia  investigation into the crash of the plane
+(x2 / offer-01
+	:ARG0 (x1 / person
+		:name (n / name
+			:op1 "Bush"))
+	:ARG1 (x4 / help-01
+		:ARG0 (x3 / country
+			:name (n1 / name
+				:op1 "U.S."))
+		:ARG2 (x8 / government-organization
+			:ARG0-of (g / govern-01)
+			:ARG1 (x7 / country
+				:name (n3 / name
+					:op1 "Ethiopia"))))
+	:ARG3 (x11 / investigate-01
+		:ARG0 (x10 / country
+			:name (n2 / name
+				:op1 "Ethiopia"))
+		:ARG1 (x14 / crash-01
+			:ARG1 (x17 / plane))))
+
+# ::id 54
+# ::snt Leland was a former Houston pharmacist who called the fight against hunger The 44-year-old Leland , a Democrat  passion
+(x19 / passion
+	:mod (x6 / pharmacist
+		:domain (x1 / person
+			:name (n1 / name
+				:op1 "Leland"))
+		:mod (x4 / former)
+		:location (x5 / country
+			:name (n2 / name
+				:op1 "Houston"))
+		:ARG1-of (x8 / call-01
+			:ARG1 (x10 / fight-01
+				:mod (x12 / hunger-01))
+			:ARG2 (x15 / person
+				:name (n3 / name
+					:op1 "Leland")
+				:null_edge (x14 / person
+					:name (n4 / name
+						:op1 "44-year-old")))))
+	:mod (x18 / have-org-role-91
+		:ARG1 (p / political-party
+			:name (n / name
+				:op1 "Democrat"))))
+
+# ::id 55
+# ::snt The 44-year-old Leland , a Democrat  leaves a wife , Alison Walton Leland , and a 3-year-old son , Jarrett
+(x7 / leave-01
+	:ARG0 (x3 / person
+		:name (n / name
+			:op1 "Leland")
+		:null_edge (x2 / person
+			:name (n1 / name
+				:op1 "44-year-old"))
+		:null_edge (x6 / have-org-role-91
+			:ARG1 (p / political-party
+				:name (n2 / name
+					:op1 "Democrat"))))
+	:ARG1 (x15 / and
+		:op1 (x9 / wife
+			:name (x11 / name
+				:op1 "Alison"
+				:op2 "Walton"
+				:op3 "Leland"))
+		:op2 (x18 / son)))
+
+# ::id 56
+# ::snt Mrs. Leland is pregnant with the couple's second child
+(x4 / pregnant
+	:ARG0 (x2 / person
+		:name (n / name
+			:op1 "Leland")
+		:ARG0-of (x1 / mrs.))
+	:prep-with (x10 / child))
+
+# ::id 57
+# ::snt First elected to Congress in 1978 , The 44-year-old Leland , a Democrat  represented a mostly black and Hispanic section of Houston after the retirement of Rep. Barbara Jordan , a fellow Democrat
+(x14 / represent-01
+	:ARG1-of (x2 / elect-01
+		:ARG2 (x4 / government-organization
+			:name (n1 / name
+				:op1 "Congress"))
+		:time (x6 / date-entity
+			:year 1978))
+	:ARG0 (x10 / person
+		:name (n / name
+			:op1 "Leland")
+		:mod (x9 / person
+			:name (n2 / name
+				:op1 "44-year-old"))
+		:null_edge (x13 / have-org-role-91
+			:ARG1 (p / political-party
+				:name (n3 / name
+					:op1 "Democrat"))))
+	:ARG0 (x18 / and
+		:op1 (x17 / black
+			:degree (x16 / most)))
+	:ARG1 (x20 / section
+		:mod (x19 / organization
+			:name (n4 / name
+				:op1 "Hispanic"))
+		:poss (x22 / country
+			:name (n5 / name
+				:op1 "Houston")))
+	:time (x23 / after
+		:op1 (x25 / retire-01
+			:name (x28 / name
+				:op1 "Barbara"
+				:op2 "Jordan"
+				:ARG0-of (x27 / rep.)
+				:null_edge (x33 / have-org-role-91
+					:ARG1 (p1 / political-party
+						:name (n6 / name
+							:op1 "Democrat"))
+					:mod (x32 / fellow))))))
+
+# ::id 58
+# ::snt Leland had no significant opposition for The 44-year-old Leland , a Democrat  congressional seat since The 44-year-old Leland , a Democrat  was first elected , winning The 44-year-old Leland , a Democrat  most recent election with 96 % of the vote
+(x2 / have-03
+	:ARG0 (x1 / person
+		:name (n / name
+			:op1 "Leland"))
+	:ARG1 (x5 / oppose-01
+		:polarity -
+		:mod (x4 / significant)
+		:ARG1 (x9 / person
+			:name (n1 / name
+				:op1 "Leland")
+			:null_edge (x8 / person
+				:name (n2 / name
+					:op1 "44-year-old"))
+			:null_edge (x14 / seat-01
+				:ARG2 (x12 / have-org-role-91
+					:ARG1 (p / political-party
+						:name (n4 / name
+							:op1 "Democrat")))
+				:ARG2 (x13 / government-organization
+					:name (n5 / name
+						:op1 "congressional")))))
+	:time (x15 / since
+		:op1 (x24 / elect-01
+			:ARG1 (x18 / person
+				:name (n3 / name
+					:op1 "Leland")
+				:mod (x17 / person
+					:name (n6 / name
+						:op1 "44-year-old"))
+				:null_edge (x21 / have-org-role-91
+					:ARG1 (p1 / political-party
+						:name (n7 / name
+							:op1 "Democrat"))))
+			:ARG1 (x26 / win-01
+				:ARG2 (x29 / person
+					:name (n8 / name
+						:op1 "Leland")
+					:mod (x28 / person
+						:name (n9 / name
+							:op1 "44-year-old"))
+					:null_edge (x32 / have-org-role-91
+						:ARG1 (p2 / political-party
+							:name (n10 / name
+								:op1 "Democrat"))))
+				:ARG1 (x35 / elect-01
+					:time (x34 / recent
+						:degree (x33 / most)))
+				:ARG1 (xap0 / percentage-entity
+					:value (x37 / percentage-entity)
+					:ARG1 (x41 / vote-01))))))
+
+# ::id 59
+# ::snt Times staff writer Melissa Healy , in Washington , contributed to this story
+(x10 / contribute-01
+	:ARG0 (x4 / newspaper
+		:name (n / name
+			:op1 "Melissa"
+			:op2 "Healy")
+		:ARG0-of (x1 / newspaper
+			:name (n2 / name
+				:op1 "Times"))
+		:ARG0-of (x3 / person
+			:ARG0-of (w / write-01)
+			:ARG1 (x2 / person
+				:ARG2-of (s / staff-01))))
+	:location (x8 / city
+		:name (n1 / name
+			:op1 "Washington"))
+	:ARG1 (x13 / story
+		:mod (x12 / this)))
+

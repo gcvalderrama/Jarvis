@@ -1,0 +1,411 @@
+# ::id 1
+# ::snt If the two sides trying to force changes in the 1990 census both get their way , the results would nearly balance one another , a population expert said Wednesday
+(x29 / say-01
+	:ARG1 (x22 / balance-01
+		:time (x5 / try-01
+			:ARG0 (x4 / side
+				:quant 2)
+			:ARG1 (x7 / force-01
+				:ARG0 x4
+				:ARG1 (x8 / change-01
+					:location (x12 / census
+						:time (x11 / date-entity
+							:year 1990)))
+				:null_edge (x14 / get-05
+					:ARG1 (x16 / way))))
+		:ARG1 (x19 / thing
+			:ARG2-of (r / result-01))
+		:mod (x21 / nearly))
+	:ARG0 (x28 / person
+		:ARG1-of (e / expert-41)
+		:ARG2 (x27 / population))
+	:time (x30 / wednesday))
+
+# ::id 2
+# ::snt The Census Bureau is under pressure to exclude illegal aliens from The Census Bureau  national head count
+(x6 / pressure-01
+	:ARG1 (x2 / government-organization
+		:name (n / name
+			:op1 "Census"
+			:op2 "Bureau"))
+	:ARG2 (x8 / exclude-01
+		:ARG1 (x10 / alien
+			:mod (x9 / law
+				:polarity -))
+		:ARG2 (x17 / count-01
+			:ARG0 (x13 / organization
+				:name (n1 / name
+					:op1 "Census")
+				:name (x14 / government-organization
+					:name (n2 / name
+						:op1 "Bureau")))
+			:mod (x15 / nation)
+			:mod (x16 / head-01))))
+
+# ::id 3
+# ::snt Traditionally , The Census Bureau  counts everyone living in the country
+(x6 / count-01
+	:ARG0 (x4 / government-organization
+		:name (n / name
+			:op1 "Census"
+			:op2 "Bureau"))
+	:ARG1 (x8 / live-01
+		:null_edge (x7 / everyone)
+		:location (x11 / country)))
+
+# ::id 4
+# ::snt Groups which have filed suit to ignore the aliens contend large concentrations of Groups which have filed suit to ignore the aliens  could result in in some states gaining seats in the House of Representatives at the expense of other states
+(x10 / contend-01
+	:ARG0 (x1 / group
+		:ARG1-of (x4 / file-01
+			:ARG1 (x5 / suit-01
+				:ARG0-of (x7 / ignore-01
+					:ARG1 (x9 / alien)))))
+	:ARG1 (x23 / possible
+		:domain (x24 / result-01
+			:ARG2 (x12 / concentrate-02
+				:mod (x11 / large)
+				:ARG1 (x14 / group
+					:ARG1-of (x17 / file-01
+						:ARG1 (x18 / suit-01)
+						:purpose (x20 / ignore-01
+							:ARG1 (x22 / alien)))))
+			:ARG2 (x29 / gain-02
+				:location (x28 / state
+					:quant (x27 / some))
+				:ARG1 (x30 / seat
+					:location (x33 / have-org-role-91
+						:ARG1 (g / government-organization
+							:name (n / name
+								:op1 "House"
+								:op2 "of"
+								:op3 "Representatives"))))
+				:location (x38 / expend-01
+					:location (x41 / state
+						:mod (x40 / other)))))))
+
+# ::id 5
+# ::snt Meanwhile , other groups want the final census totals to be increased to account for people who may be overlooked in the census _ most often blacks and Hispanics living in urban areas
+(x5 / want-01
+	:time (x1 / meanwhile)
+	:ARG0 (x4 / group
+		:mod (x3 / other))
+	:ARG1 (x12 / increase-01
+		:ARG1 (x9 / company
+			:name (n / name
+				:op1 "totals")
+			:mod (x7 / final)
+			:ARG1 (x8 / census))
+		:ARG1 (x14 / account-01
+			:ARG1-of (x20 / overlook-01
+				:mod (x18 / possible)
+				:location (x23 / census)
+				:frequency (x26 / often
+					:degree (x25 / most))
+				:ARG1 (x30 / live-01
+					:location (x33 / area
+						:example (x28 / and
+							:op1 (x27 / person
+								:mod (b / black))
+							:op2 (x29 / newspaper
+								:name (n1 / name
+									:op1 "Hispanics")))
+						:mod (x32 / urban)))))))
+
+# ::id 6
+# ::snt At stake are the 435 seats in the House , which are distributed among the states on the basis of population
+(x6 / seat
+	:ARG1-of (x2 / stake-01)
+	:quant (x5 / 435)
+	:location (x9 / government-organization
+		:name (n / name
+			:op1 "House")
+		:ARG1-of (x13 / distribute-01
+			:location (x14 / among
+				:op1 (x16 / state))
+			:topic (x21 / population))))
+
+# ::id 7
+# ::snt If both sides get other groups  way , the only change would be a flip-flop of one seat from California to Georgia , said William O'Hare , director of policy studies for the independent Population Reference Bureau
+(x24 / say-01
+	:ARG1 (x15 / flip-flop
+		:condition (x4 / get-01
+			:ARG0 (x3 / side
+				:mod (x2 / both))
+			:ARG1 (x6 / group
+				:mod (x5 / other)))
+		:domain (x11 / change-01
+			:mod (x10 / only))
+		:ARG1 (x18 / seat-01
+			:quant 1)
+		:source (x20 / state
+			:name (n1 / name
+				:op1 "California")
+			:location (x22 / country
+				:name (n3 / name
+					:op1 "Georgia"))))
+	:ARG0 (x26 / person
+		:name (n / name
+			:op1 "O'Hare")
+		:null_edge (x25 / person
+			:name (n2 / name
+				:op1 "William"))
+		:ARG0-of (x28 / have-org-role-91
+			:ARG2 (d / director)
+			:ARG1 (x31 / study-01
+				:mod (x30 / policy))
+			:ARG1 (x36 / government-organization
+				:name (n4 / name
+					:op1 "Reference"
+					:op2 "Bureau")
+				:ARG0-of (x34 / depend-01
+					:polarity -)
+				:null_edge (x35 / null_tag)))))
+
+# ::id 8
+# ::snt O'Hare told a breakfast briefing for Northeast and Midwest members of Congress that William O'Hare  estimates Northeast and Midwest members of Congress  region will lose 14 House seats following the 1990 census
+(x2 / tell-01
+	:ARG0 (x1 / country
+		:name (n / name
+			:op1 "O'Hare"))
+	:time (x5 / briefing
+		:mod (x4 / breakfast))
+	:ARG2 (x8 / and
+		:op1 (x7 / organization
+			:name (n1 / name
+				:op1 "Northeast"))
+		:op2 (x9 / country
+			:name (n2 / name
+				:op1 "Midwest"))
+		:op1 (xap1 / country
+			:ARG0-of (x10 / have-org-role-91
+				:ARG2 (m / member)
+				:ARG1 (x12 / government-organization
+					:name (n3 / name
+						:op1 "Congress")))
+			:ARG0 (x16 / estimate-01
+				:ARG0 (x14 / newspaper
+					:name (n4 / name
+						:op1 "William"
+						:op2 "O'Hare"))
+				:ARG1 (x25 / lose-02
+					:ARG0 (x18 / and
+						:op1 (x17 / organization
+							:name (n5 / name
+								:op1 "Northeast"))
+						:op2 (x19 / country
+							:name (n6 / name
+								:op1 "Midwest"))
+						:op1 (xap0 / person
+							:ARG0-of (x20 / have-org-role-91
+								:ARG2 (m1 / member)
+								:ARG1 (x23 / region))))
+					:ARG1 (x28 / seat
+						:quant 14
+						:part-of (x27 / government-organization
+							:name (n7 / name
+								:op1 "House"))
+						:ARG1-of (x29 / follow-01
+							:ARG2 (x32 / census
+								:time (x31 / date-entity
+									:year 1990)))))))))
+
+# ::id 9
+# ::snt That would continue a trend evident over the last several decades , William O'Hare  noted
+(x15 / note-01
+	:ARG1 (x3 / continue-01
+		:ARG0 (x1 / that)
+		:ARG1 (x5 / trend-01
+			:mod (x6 / evident
+				:null_edge (x10 / several
+					:op1 (x11 / decade
+						:mod (x9 / last))))))
+	:ARG0 (x14 / person
+		:name (n / name
+			:op1 "O'Hare")
+		:null_edge (x13 / person
+			:name (n1 / name
+				:op1 "William"))))
+
+# ::id 10
+# ::snt Using estimates of the number of illegal aliens and undercounted minorities , William O'Hare  said that deleting the one group and adding in the other would make little difference in the long run
+(x15 / say-01
+	:ARG0 (x1 / use-01
+		:ARG1 (x2 / thing
+			:ARG1-of (e / estimate-01)
+			:ARG1 (x5 / number
+				:quant-of (x9 / and
+					:op1 (x8 / alien
+						:mod (x7 / law
+							:polarity -))
+					:op1 (xap0 / and
+						:op2 (x11 / minority
+							:ARG1-of (x10 / undercount)))))))
+	:ARG0 (x14 / person
+		:name (n / name
+			:op1 "O'Hare")
+		:null_edge (x13 / person
+			:name (n1 / name
+				:op1 "William")))
+	:ARG1 (x27 / make-01
+		:ARG0 (x21 / and
+			:op1 (x17 / delete-01
+				:ARG1 (x20 / group
+					:quant 1))
+			:op2 (x22 / add-04
+				:mod (x25 / other)))
+		:ARG1 (x29 / differ-02
+			:degree (x28 / little)
+			:topic (x33 / run
+				:extent (x32 / long)))))
+
+# ::id 11
+# ::snt The only change , William O'Hare  said , would be that California would gain five new seats instead of six , while Georgia would add two rather than just one
+(x7 / say-01
+	:ARG1 (x3 / change-01
+		:mod (x2 / only))
+	:ARG0 (x6 / person
+		:name (n / name
+			:op1 "O'Hare")
+		:null_edge (x5 / person
+			:name (n1 / name
+				:op1 "William")))
+	:ARG1 (x14 / gain-02
+		:ARG1 (x17 / seat
+			:quant 5
+			:mod (x16 / new)
+			:quant 6)
+		:condition (x25 / add-01
+			:ARG0 (x23 / country
+				:name (n2 / name
+					:op1 "Georgia"))
+			:null_edge (x29 / just
+				:null_edge 2))))
+
+# ::id 12
+# ::snt That is easy to understand , since there are so many undocumented aliens in California , William O'Hare  commented
+(x3 / easy
+	:domain (x1 / that)
+	:domain (x5 / understand-01)
+	:domain (x13 / alien
+		:quant (x11 / many
+			:degree (x10 / so))
+		:mod (x12 / undocumented)
+		:location (x15 / state
+			:name (n / name
+				:op1 "California")
+			:null_edge (x17 / name
+				:op1 "William"
+				:op2 "O'Hare"
+				:ARG1-of (x19 / comment-01)))))
+
+# ::id 13
+# ::snt O'Hare's study of potential changes in House seats _ based on 1990 projections with no adjustments _ calls for California to be the big gainer , adding six House seats , followed by Florida with a gain of four and Texas adding three
+(x10 / _
+	:ARG0 (x3 / study
+		:ARG0 (x6 / change-01
+			:mod (x5 / potential)
+			:ARG1 (x9 / seat
+				:part-of (x8 / have-org-role-91
+					:ARG1 (g / government-organization
+						:name (n / name
+							:op1 "House"))))))
+	:ARG1-of (x11 / base-02
+		:ARG2 (x14 / project-01
+			:time (x13 / date-entity
+				:year 1990)
+			:ARG1 (x17 / adjust-01
+				:polarity -
+				:ARG0-of (x19 / thing
+					:ARG1-of (c / call-01)
+					:ARG0 (x21 / state
+						:name (n1 / name
+							:op1 "California")
+						:mod (x25 / big))
+					:ARG0-of (x28 / add-02
+						:ARG1 (x31 / seat
+							:quant 6
+							:ARG0-of (x30 / have-org-role-91
+								:ARG1 (g1 / government-organization
+									:name (n2 / name
+										:op1 "House")))
+							:ARG1-of (x33 / follow-01
+								:ARG2 (x41 / and
+									:op1 (x35 / country
+										:name (n3 / name
+											:op1 "Florida"))
+									:op1 (x38 / gain-02
+										:quant 4)
+									:op2 (x42 / country
+										:name (n4 / name
+											:op1 "Texas")
+										:ARG0-of (x43 / add-02
+											:ARG1 (x44 / person
+												:op (t / three)))))))))))))
+
+# ::id 14
+# ::snt Expected to pick up one seat each are Virginia , North Carolina , Georgia , and Arizona
+(x1 / expect-01
+	:ARG1 (x3 / pick-01
+		:ARG1 (x6 / seat-01
+			:quant 1
+			:ARG2 (x16 / and
+				:op1 (x9 / country
+					:name (n / name
+						:op1 "Virginia")
+					:mod (x7 / each))
+				:op2 (x11 / country
+					:name (n1 / name
+						:op1 "North"
+						:op2 "Carolina"))
+				:op2 (x14 / country
+					:name (n2 / name
+						:op1 "Georgia"))
+				:op2 (x17 / country
+					:name (n3 / name
+						:op1 "Arizona"))))))
+
+# ::id 15
+# ::snt On the other hand New York would lose three seats
+(x8 / lose-02
+	:ARG0 (x4 / hand
+		:mod (x3 / other))
+	:ARG0 (x6 / country
+		:name (n / name
+			:op1 "York")
+		:null_edge (x5 / null_tag))
+	:ARG1 (x10 / seat
+		:quant 3))
+
+# ::id 16
+# ::snt States losing two apiece would be Pennsylvania , Ohio , Illinois and Michigan
+(x12 / and
+	:op1 (x2 / lose-02
+		:ARG0 (x1 / state
+			:mod (x11 / country
+				:name (n / name
+					:op1 "Illinois"))
+			:mod (x13 / country
+				:name (n1 / name
+					:op1 "Michigan")))
+		:ARG1 2
+		:location (x4 / apiece)))
+
+# ::id 17
+# ::snt Expected to lose one house seat are Massachusetts , Wisconsin , Iowa , Kansas , West Virginia and Montana
+(x1 / expect-01
+	:ARG1 (x3 / lose-03
+		:ARG1 (x6 / seat-01
+			:quant 1
+			:mod (x5 / house)))
+	:ARG1 (x18 / and
+		:op1 (x14 / country
+			:name (n / name
+				:op1 "Kansas"
+				:op2 ","
+				:op3 "West"
+				:op4 "Virginia"))
+		:op3 (x19 / country
+			:name (n1 / name
+				:op1 "Montana"))))
+
