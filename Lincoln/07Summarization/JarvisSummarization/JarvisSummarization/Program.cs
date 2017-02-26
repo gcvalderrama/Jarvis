@@ -164,69 +164,7 @@ namespace JarvisSummarization
             Console.ReadLine();
         }
 
-        //public static void All()
-        //{
-        //    NEO.NEOManager manager = new NEO.NEOManager();
-
-        //    var files = Directory.GetFiles(InputDir, "*.txt");
-        //    bool neo = false;
-        //    if (neo) manager.DeleteAllNodes();
-        //    foreach (var file in files)
-        //    {
-        //        Console.WriteLine("============================File with " + Path.GetFileNameWithoutExtension(file));
-        //        POS.POSReader posreader = new POS.POSReader();
-        //        var document = posreader.Load(Path.Combine(SintacticDir, Path.GetFileNameWithoutExtension(file) + ".xml"));
-
-        //        if (neo) manager.SaveDocument(document);
-
-        //        var sanity = SanityXml.Sanity(File.ReadAllText(Path.Combine(RSTDir, Path.GetFileNameWithoutExtension(file) + ".txt.xml.jarvis")));
-        //        File.WriteAllText(Path.Combine(RSTSanityDir, Path.GetFileNameWithoutExtension(file) + ".txt.xml.jarvis"), sanity);
-
-
-
-        //        RST.RSTReader rstreader = new RST.RSTReader();
-        //        var rstdocument = rstreader.ReadDocument(Path.Combine(RSTSanityDir, Path.GetFileNameWithoutExtension(file) + ".txt.xml.jarvis"), Path.GetFileNameWithoutExtension(file));
-        //        rstdocument.EvaluateODonell(false);
-        //        File.WriteAllText(Path.Combine(RSTSummaryDir, Path.GetFileNameWithoutExtension(file) + ".txt"), rstdocument.SummaryLemma());
-
-        //        if (neo) manager.DeleteAllRST();
-        //        if (neo) manager.SaveDocumentRST(rstdocument);
-
-        //        var rstdummydocument = rstreader.ReadDocument(Path.Combine(RSTSanityDir, Path.GetFileNameWithoutExtension(file) + ".txt.xml.jarvis"), Path.GetFileNameWithoutExtension(file));
-        //        rstdummydocument.EvaluateODonell(true);
-
-        //        var sanityAMR = SanityXml.Sanity(File.ReadAllText(Path.Combine(AMRDir, Path.GetFileNameWithoutExtension(file) + ".txt.all.basic-abt-brown-verb.parsed")));
-        //        File.WriteAllText(Path.Combine(AMRSanityDir, Path.GetFileNameWithoutExtension(file) + ".txt.all.basic-abt-brown-verb.parsed"), sanityAMR);
-
-        //        var reader = new AMR.AMRReader();
-        //        var amrdoc = reader.ReadXML(Path.Combine(AMRSanityDir, Path.GetFileNameWithoutExtension(file) + ".txt.all.basic-abt-brown-verb.parsed"));
-        //        amrdoc.LoadRSTInformation(rstdocument);
-
-        //        var amrnorstdoc = reader.ReadXML(Path.Combine(AMRSanityDir, Path.GetFileNameWithoutExtension(file) + ".txt.all.basic-abt-brown-verb.parsed"));
-
-        //        if (neo) manager.DeleteAllAMR();
-        //        if (neo) manager.SaveAMR(amrdoc);
-
-        //        CGGraph cgraph = new CGGraph(Path.GetFileNameWithoutExtension(file), @"D:\Tesis2016\Propbank\frames", document.NumberOfWords);
-        //        cgraph.ReadAMR(amrdoc);
-        //        cgraph.Digest();
-
-        //        if (neo) manager.DeleteAllCG();
-        //        if (neo) manager.SaveCG(cgraph);
-
-        //        File.WriteAllText(Path.Combine(ConceptualGraphDir, Path.GetFileNameWithoutExtension(file) + ".txt"), cgraph.Summary());
-        //        File.WriteAllText(Path.Combine(ConceptualLogGraphDir, Path.GetFileNameWithoutExtension(file) + ".txt"), cgraph.GenerateInformativeAspectsv2());
-
-        //        CGGraph cgraphnorst = new CGGraph(Path.GetFileNameWithoutExtension(file), @"D:\Tesis2016\Propbank\frames", document.NumberOfWords);
-        //        cgraphnorst.ReadAMR(amrnorstdoc);
-        //        cgraphnorst.Digest();
-        //        File.WriteAllText(Path.Combine(ConceptualGraphNoRSTDir, Path.GetFileNameWithoutExtension(file) + ".txt"), cgraphnorst.Summary());
-        //        File.WriteAllText(Path.Combine(ConceptualLogGraphNoRSTDir, Path.GetFileNameWithoutExtension(file) + ".txt"), cgraphnorst.GenerateInformativeAspectsv2());
-
-        //        Console.WriteLine("========================================================================");
-        //    }
-        //    Console.ReadLine();
-        //}
+    
         static void ClearDirectory(string dir)
         {
             if (!Directory.Exists(dir)) Directory.CreateDirectory(dir);
@@ -236,11 +174,27 @@ namespace JarvisSummarization
                 File.Delete(item);
             }
         }
+
+        public static void SaveRSTODonellGraph(string file)
+        {    
+            if (File.Exists(file))
+            {
+                var sanity = SanityXml.Sanity(File.ReadAllText(file));
+                RST.RSTReader rstreader = new RST.RSTReader();
+                var rstdocument = rstreader.ReadDocumentContent(sanity, Path.GetFileNameWithoutExtension(file));
+                rstdocument.EvaluateODonell(false);
+
+                var str =  rstdocument.SaveToBasicXML();
+
+                File.WriteAllText(@"D:\Tesis2016\Jarvis\graphview\" + Path.GetFileNameWithoutExtension(file) + ".xml", str);
+
+            }                        
+        }
         
         static void Main(string[] args)
         {
-
-            string ManualSummaryDir = @"D:\Tesis2016\Jarvis\Final\Test\09Summaries\";
+            SaveRSTODonellGraph(@"D:\Tesis2016\Jarvis\Final\Training\04RSTExpantionV2\LA091790-0041.txt.xml.jarvis");
+//            string ManualSummaryDir = @"D:\Tesis2016\Jarvis\Final\Test\09Summaries\";
 
             //rst summaries
             //var rstSummariesDir = @"D:\Tesis2016\Jarvis\Final\Test\04RSTSummaries";
@@ -257,13 +211,13 @@ namespace JarvisSummarization
             //    ConceptualSummaryDir);
 
             //conceptual rst
-            var ConceptualSummaryDir2 = @"D:\Tesis2016\Jarvis\Final\Test\06ConceptualRSTSummaries5055";
-            ClearDirectory(ConceptualSummaryDir2);  
-            ConceptualRSTSummary(ManualSummaryDir,
-                @"D:\Tesis2016\Jarvis\Final\Test\04RST",
-                @"D:\Tesis2016\Jarvis\Final\Test\05AMRXML",
-                null,
-                ConceptualSummaryDir2);
+            //var ConceptualSummaryDir2 = @"D:\Tesis2016\Jarvis\Final\Test\06ConceptualRSTSummaries5055";
+            //ClearDirectory(ConceptualSummaryDir2);  
+            //ConceptualRSTSummary(ManualSummaryDir,
+            //    @"D:\Tesis2016\Jarvis\Final\Test\04RST",
+            //    @"D:\Tesis2016\Jarvis\Final\Test\05AMRXML",
+            //    null,
+            //    ConceptualSummaryDir2);
 
 
             //var ConceptualSummaryDir2 = @"D:\Tesis2016\Jarvis\Lincoln\LAB\ConceptualSummariesNONERV2";

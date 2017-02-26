@@ -1,8 +1,10 @@
-﻿using System;
+﻿using JarvisSummarization.Common;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 
 namespace JarvisSummarization.RST
 {
@@ -73,6 +75,10 @@ namespace JarvisSummarization.RST
         {
             this.Tokens = new List<Common.Token>();
         }
+
+
+
+
         public void EvaluateODonell(bool dummy)
         {
             if (dummy)
@@ -158,6 +164,61 @@ namespace JarvisSummarization.RST
             }
             return sb.ToString();
         }
-        
+
+
+        public string SaveToBasicXML()
+        {
+            List<SimpleGraphNode> nodes = new List<SimpleGraphNode>();
+            List<SimpleGraphRelation> relations = new List<SimpleGraphRelation>();
+
+            SimpleGraphNode child = new SimpleGraphNode() { Id = nodes.Count + 1, Label = string.Format("root weight:{0}", 1) };
+            nodes.Add(child); 
+            NavigateSaveToBasicXML(child, this.root, nodes, relations);
+            var xml = new XElement("rst");
+            var xmlnodes = new XElement("nodes");
+            var xmlrelations = new XElement("nodes");
+            xml.Add(xmlnodes);
+            xml.Add(xmlrelations);
+            foreach (var item in nodes)
+            {
+                xmlnodes.Add(new XElement("node", new XAttribute("id", item.Id), new XAttribute("label", item.Label)));
+            }
+            foreach (var item in relations)
+            {
+                xmlrelations.Add(new XElement("relation", new XAttribute("start", item.Start), new XAttribute("end", item.End), new XAttribute("label", item.Label)));
+            }
+            return xml.ToString();
+        }
+        private void NavigateSaveToBasicXML(SimpleGraphNode parent, RSTNode node, List<SimpleGraphNode> nodes, List<SimpleGraphRelation> relations)
+        {
+            
+            foreach (var item in node.children)
+            {
+                if (item.children.Count == 0)
+                {
+                    SimpleGraphNode child = new SimpleGraphNode() { Id = nodes.Count + 1, Label = string.Format("weight:{0}", item.edu.weight) };
+                    nodes.Add(child);
+                    relations.Add(new SimpleGraphRelation() { Start = parent.Id, End = child.Id, Label = "-" });
+                    NavigateSaveToBasicXMLTokens(child, item.edu , nodes, relations);
+                }
+                else
+                {
+                    SimpleGraphNode child = new SimpleGraphNode() { Id = nodes.Count + 1, Label = string.Format("weight:{0},form:{1},relation:{2}", item.weight, item.form, item.relation) };
+                    nodes.Add(child);
+                    relations.Add(new SimpleGraphRelation() { Start = parent.Id, End = child.Id, Label = item.relation });
+                    NavigateSaveToBasicXML(child, item, nodes, relations);
+                }
+            }
+            
+        }
+        private void NavigateSaveToBasicXMLTokens(SimpleGraphNode parent, RSTEdu edu,  List<SimpleGraphNode> nodes, List<SimpleGraphRelation> relations)
+        {            
+            //foreach (var item in edu.tokens)
+            //{
+            //    var target = new SimpleGraphNode() { Id = nodes.Count + 1, Label = item.lemma };
+            //    nodes.Add(target);
+            //    relations.Add(new SimpleGraphRelation() { Start = parent.Id, End = target.Id, Label = "-" });
+            //}                       
+        }
     }
 }
