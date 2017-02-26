@@ -171,7 +171,7 @@ namespace JarvisSummarization.RST
             List<SimpleGraphNode> nodes = new List<SimpleGraphNode>();
             List<SimpleGraphRelation> relations = new List<SimpleGraphRelation>();
 
-            SimpleGraphNode child = new SimpleGraphNode() { Id = nodes.Count + 1, Label = string.Format("root weight:{0}", 1) };
+            SimpleGraphNode child = new SimpleGraphNode() { Id = nodes.Count + 1, Label = string.Format("root({0})", 1) };
             nodes.Add(child); 
             NavigateSaveToBasicXML(child, this.root, nodes, relations);
             var xml = new XElement("rst");
@@ -196,16 +196,16 @@ namespace JarvisSummarization.RST
             {
                 if (item.children.Count == 0)
                 {
-                    SimpleGraphNode child = new SimpleGraphNode() { Id = nodes.Count + 1, Label = string.Format("weight:{0}", item.edu.weight) };
+                    SimpleGraphNode child = new SimpleGraphNode() { Id = nodes.Count + 1, Label = string.Format("{0}({1})", item.relation == "textualorganization" ? "same-unit": item.relation, item.weight) };
                     nodes.Add(child);
                     relations.Add(new SimpleGraphRelation() { Start = parent.Id, End = child.Id, Label = "-" });
                     NavigateSaveToBasicXMLTokens(child, item.edu , nodes, relations);
                 }
                 else
                 {
-                    SimpleGraphNode child = new SimpleGraphNode() { Id = nodes.Count + 1, Label = string.Format("weight:{0},form:{1},relation:{2}", item.weight, item.form, item.relation) };
+                    SimpleGraphNode child = new SimpleGraphNode() { Id = nodes.Count + 1, Label = string.Format("{1}-{2}({0})", item.weight, item.form, item.relation == "textualorganization" ? "same-unit" : item.relation) };
                     nodes.Add(child);
-                    relations.Add(new SimpleGraphRelation() { Start = parent.Id, End = child.Id, Label = item.relation });
+                    relations.Add(new SimpleGraphRelation() { Start = parent.Id, End = child.Id, Label = item.relation == "textualorganization" ? "same-unit" : item.relation  });
                     NavigateSaveToBasicXML(child, item, nodes, relations);
                 }
             }
