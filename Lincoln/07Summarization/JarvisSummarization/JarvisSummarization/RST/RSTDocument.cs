@@ -196,14 +196,14 @@ namespace JarvisSummarization.RST
             {
                 if (item.children.Count == 0)
                 {
-                    SimpleGraphNode child = new SimpleGraphNode() { Id = nodes.Count + 1, Label = string.Format("{0}({1})", item.relation == "textualorganization" ? "same-unit": item.relation, item.weight) };
+                    SimpleGraphNode child = new SimpleGraphNode() { Id = nodes.Count + 1, Label = string.Format("{0} ({1})", item.relation == "textualorganization" ? "same-unit": item.relation, item.weight) };
                     nodes.Add(child);
                     relations.Add(new SimpleGraphRelation() { Start = parent.Id, End = child.Id, Label = "-" });
                     NavigateSaveToBasicXMLTokens(child, item.edu , nodes, relations);
                 }
                 else
                 {
-                    SimpleGraphNode child = new SimpleGraphNode() { Id = nodes.Count + 1, Label = string.Format("{1}-{2}({0})", item.weight, item.form, item.relation == "textualorganization" ? "same-unit" : item.relation) };
+                    SimpleGraphNode child = new SimpleGraphNode() { Id = nodes.Count + 1, Label = string.Format("{1}-{2} ({0})", item.weight, item.form, item.relation == "textualorganization" ? "same-unit" : item.relation) };
                     nodes.Add(child);
                     relations.Add(new SimpleGraphRelation() { Start = parent.Id, End = child.Id, Label = item.relation == "textualorganization" ? "same-unit" : item.relation  });
                     NavigateSaveToBasicXML(child, item, nodes, relations);
@@ -212,13 +212,17 @@ namespace JarvisSummarization.RST
             
         }
         private void NavigateSaveToBasicXMLTokens(SimpleGraphNode parent, RSTEdu edu,  List<SimpleGraphNode> nodes, List<SimpleGraphRelation> relations)
-        {            
-            //foreach (var item in edu.tokens)
-            //{
-            //    var target = new SimpleGraphNode() { Id = nodes.Count + 1, Label = item.lemma };
-            //    nodes.Add(target);
-            //    relations.Add(new SimpleGraphRelation() { Start = parent.Id, End = target.Id, Label = "-" });
-            //}                       
+        {
+
+            var texto = new StringBuilder();
+
+            foreach (var item in edu.tokens)
+            {
+                texto.Append(item.lemma + " ");                
+            }
+            var target = new SimpleGraphNode() { Id = nodes.Count + 1, Label = texto.ToString()};
+            nodes.Add(target);
+            relations.Add(new SimpleGraphRelation() { Start = parent.Id, End = target.Id, Label = "-" });
         }
     }
 }
